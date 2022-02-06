@@ -1,0 +1,74 @@
+[
+    {
+        "content": "<p>Under what conditions do finitary monads have terminal coalgebras?</p>",
+        "id": 207905589,
+        "sender_full_name": "Mike Stay",
+        "timestamp": 1598308604
+    },
+    {
+        "content": "<p>There are more general answers, but perhaps your situation is nice enough that this works. If your monads are <a href=\"https://ncatlab.org/nlab/show/free+monad#algebraicallyfree_monads\">algebraically-free</a>, then: </p>\n<ul>\n<li>If your category is <a href=\"https://ncatlab.org/nlab/show/algebraically+compact+category\">algebraically compact</a>, all finitary monads will have terminal coalgebras (which will furthermore coincide with the initial algebras).</li>\n<li>If the monad T preserves limits of <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>ω</mi></mrow><annotation encoding=\"application/x-tex\">\\omega</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.43056em;vertical-align:0em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.03588em;\">ω</span></span></span></span>-cochains <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>0</mn><mo>←</mo><mi>T</mi><mn>0</mn><mo>←</mo><msup><mi>T</mi><mn>2</mn></msup><mn>0</mn><mo>←</mo><mo>⋯</mo></mrow><annotation encoding=\"application/x-tex\">0 \\leftarrow T0 \\leftarrow T^20 \\leftarrow \\cdots</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.64444em;vertical-align:0em;\"></span><span class=\"mord\">0</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">←</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.13889em;\">T</span><span class=\"mord\">0</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">←</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.8141079999999999em;vertical-align:0em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.13889em;\">T</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.8141079999999999em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">2</span></span></span></span></span></span></span></span><span class=\"mord\">0</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">←</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.31em;vertical-align:0em;\"></span><span class=\"minner\">⋯</span></span></span></span> (for which it suffices that T be cofinitary), then T has a terminal coalgebra.</li>\n</ul>",
+        "id": 207967522,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1598364706
+    },
+    {
+        "content": "<p><span class=\"user-mention\" data-user-id=\"276092\">@Nathanael Arkor</span> Thanks!  I'm particularly interested in Lawvere theories with models in CompSet (computably enumerable sets and computable functions).  The specific theory I'm looking at is the theory of Heyting algebras, with binary function symbols for ∧, ∨, and →, nullary symbols for ⊤ and ⊥, and the equations relating them; it's not clear to me whether the corresponding monad has a terminal coalgebra.  </p>\n<p>Does algebraic freedom mean that presentations of the theory lack equations (that is, the theory is generated only by an algebraic signature rather than a signature plus equations)?  If so, that wouldn't apply to this case.</p>",
+        "id": 207993079,
+        "sender_full_name": "Mike Stay",
+        "timestamp": 1598376232
+    },
+    {
+        "content": "<p>I should clarify what you mean by \"coalgebra for a monad\", as this is not well-defined in general. You could mean a coalgebra for the underlying endofunctor, but in this case algebraic freeness seems like a reasonable assumption, or you are knowingly losing information by passing to the underlying endofunctor.</p>",
+        "id": 208031449,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1598393996
+    },
+    {
+        "content": "<p>Finitary functors may be presented by operators and \"flat\" equations (i.e. equations involving non-nested terms), as described in Adámek–Milius–Moss–Urbat's <em>On finitary functors and their presentations</em>. I think this means that the Lawvere theories corresponding to algebraically free monads are precisely those with flat equations, which discounts Heyting algebras.</p>",
+        "id": 208032347,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1598394606
+    },
+    {
+        "content": "<p><span class=\"user-mention\" data-user-id=\"276092\">@Nathanael Arkor</span> Thanks again! You say the notion of coalgebra for a monad is not well-defined in general.  On the nlab page <a href=\"https://ncatlab.org/nlab/show/coalgebra+for+an+endofunctor\">\"coalgebra for an endofunctor\"</a>, I just found this statement: \"If <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>F</mi></mrow><annotation encoding=\"application/x-tex\">F</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.13889em;\">F</span></span></span></span> is equipped with the structure of a monad, then a coalgebra for it is equivalently an endomorphism in the corresponding Kleisli category. In this case the canonical monoidal category structure on endomorphisms induces a tensor product on those coalgebras.\"  That makes it sound like monads always have coalgebras (though it says nothing about finality). Can you expand on what you meant?</p>",
+        "id": 208102842,
+        "sender_full_name": "Mike Stay",
+        "timestamp": 1598453864
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276048\">Mike Stay</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/Terminal.20coalgebras.20of.20finitary.20monads.3F/near/208102842\">said</a>:</p>\n<blockquote>\n<p><span class=\"user-mention silent\" data-user-id=\"276092\">Nathanael Arkor</span> Thanks again! You say the notion of coalgebra for a monad is not well-defined in general.  On the nlab page <a href=\"https://ncatlab.org/nlab/show/coalgebra+for+an+endofunctor\">\"coalgebra for an endofunctor\"</a>, I just found this statement: \"If <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>F</mi></mrow><annotation encoding=\"application/x-tex\">F</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.13889em;\">F</span></span></span></span> is equipped with the structure of a monad, then a coalgebra for it is equivalently an endomorphism in the corresponding Kleisli category. In this case the canonical monoidal category structure on endomorphisms induces a tensor product on those coalgebras.\"  That makes it sound like monads always have coalgebras (though it says nothing about finality). Can you expand on what you meant?</p>\n</blockquote>\n<p>This is still only a coalgebra for the underlying functor and doesn't interact with the  structural isomorphisms of the monad... unlike the a coalgebra for a comonad or an algebra for a monad.</p>",
+        "id": 208103722,
+        "sender_full_name": "Cole Comfort",
+        "timestamp": 1598454190
+    },
+    {
+        "content": "<p><span class=\"user-mention\" data-user-id=\"277391\">@Cole Comfort</span> Thanks!</p>",
+        "id": 208112212,
+        "sender_full_name": "Mike Stay",
+        "timestamp": 1598457969
+    },
+    {
+        "content": "<p>Yes, this confused me for a while, reading <a href=\"http://www.cs.ru.nl/B.Jacobs/PAPERS/quantum-monad.pdf\">Jacobs' paper</a> on coalgebras for certain monads.  I think that it is terrible that the term is overloaded.</p>",
+        "id": 208114857,
+        "sender_full_name": "Cole Comfort",
+        "timestamp": 1598459277
+    },
+    {
+        "content": "<blockquote>\n<p>Does algebraic freedom mean that presentations of the theory lack equations (that is, the theory is generated only by an algebraic signature rather than a signature plus equations)? If so, that wouldn't apply to this case.</p>\n</blockquote>\n<p>Looking at the definition on the nLab, I see algebraic freedom for a monad means that its category of algebras (the Eilenberg-Moore category) is equivalent to the category of free algebras <em>of its underlying functor</em>.  So the only examples I can think of coming from Lawvere theories are those from theories with no equations.</p>",
+        "id": 208116452,
+        "sender_full_name": "John Baez",
+        "timestamp": 1598460092
+    },
+    {
+        "content": "<p>Not the category of <em>free</em> algebras: the category of <em>all</em> algebras for the underlying endofunctor, in which case you may have (a restricted class) of equations.</p>",
+        "id": 208117014,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1598460373
+    },
+    {
+        "content": "<p>Oh.</p>",
+        "id": 208122741,
+        "sender_full_name": "John Baez",
+        "timestamp": 1598463165
+    }
+]

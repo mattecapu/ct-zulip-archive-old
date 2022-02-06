@@ -1,0 +1,320 @@
+[
+    {
+        "content": "<p>In the eighth talk of the <a href=\"https://sites.google.com/ucr.edu/actucr/\">ACT@UCR seminar</a>, <a href=\"http://homepages.inf.ed.ac.uk/gdp/\">Gordon Plotkin</a> will tell us about partial differentiation, viewed as a logical theory.</p>\n<p>He will give his talk on Wednesday May 20th at 5 pm UTC, which is 10 am in California, or 1 pm on the east coast of the United States, or 6 pm in England.  It will be held online via Zoom, here:</p>\n<p><a href=\"https://ucr.zoom.us/j/607160601\">https://ucr.zoom.us/j/607160601</a></p>\n<p>You can <a href=\"http://math.ucr.edu/home/baez/mathematical/ACTUCR/Plotkin_Partial_Differentiation.pdf\">see his slides here</a>.</p>\n<ul>\n<li>Gordon Plotkin, A complete axiomatisation of partial differentiation.</li>\n</ul>\n<blockquote>\n<p><strong>Abstract.</strong> We formalise the well-known rules of partial differentiation in a version of equational logic with function variables and binding constructs. We prove the resulting theory is complete with respect to polynomial interpretations. The proof makes use of Severi’s theorem that all multivariate Hermite problems are solvable. We also hope to present a number of related results, such as decidability and Hilbert-Post completeness.</p>\n</blockquote>",
+        "id": 198001987,
+        "sender_full_name": "John Baez",
+        "timestamp": 1589840016
+    },
+    {
+        "content": "<p>Sweet!</p>",
+        "id": 198002121,
+        "sender_full_name": "Cody Roux",
+        "timestamp": 1589840103
+    },
+    {
+        "content": "<p>Ok I have a second question, but I don't want to overwhelm the talk: Is there a way to orient all the equations, except the commutativity one, and get a normalizing rewrite system?</p>",
+        "id": 198234415,
+        "sender_full_name": "Cody Roux",
+        "timestamp": 1589997415
+    },
+    {
+        "content": "<p><a href=\"https://groups.csail.mit.edu/mac/users/gjs/6946/sicm-html/book.html\">https://groups.csail.mit.edu/mac/users/gjs/6946/sicm-html/book.html</a> This is the classical mechanics book referenced. It's available free online</p>",
+        "id": 198234465,
+        "sender_full_name": "Philip Zucker",
+        "timestamp": 1589997450
+    },
+    {
+        "content": "<p>You could also give a \"canonical\" ordering of the variables and then order the commutativity one so that the small variables \"go outward\"</p>",
+        "id": 198234467,
+        "sender_full_name": "Cody Roux",
+        "timestamp": 1589997452
+    },
+    {
+        "content": "<p><span class=\"user-mention\" data-user-id=\"277684\">@Gordon Plotkin</span> can you see a link to this comment?</p>",
+        "id": 198234638,
+        "sender_full_name": "Cody Roux",
+        "timestamp": 1589997543
+    },
+    {
+        "content": "<p>Hi, Gordon!</p>",
+        "id": 198234720,
+        "sender_full_name": "John Baez",
+        "timestamp": 1589997591
+    },
+    {
+        "content": "<p>OK ask a question</p>",
+        "id": 198235212,
+        "sender_full_name": "Gordon Plotkin",
+        "timestamp": 1589997809
+    },
+    {
+        "content": "<p>So Cody asked: \"I have a second question, but I don't want to overwhelm the talk: Is there a way to orient all the equations, except the commutativity one, and get a normalizing rewrite system?\"</p>",
+        "id": 198235217,
+        "sender_full_name": "John Baez",
+        "timestamp": 1589997810
+    },
+    {
+        "content": "<p>Hmm, it is not simple, there are also the ring axioms, and it won't be normalising (think about polynomials which don't have natural normal forms)</p>",
+        "id": 198235543,
+        "sender_full_name": "Gordon Plotkin",
+        "timestamp": 1589997925
+    },
+    {
+        "content": "<p>Hi Cody!  For the notation for CDCs by Blute, Cockett, Seely, a rewriting system is possible.  You do get sort of rewriting system, but you need to make the chain rule oriented the \"wrong way\"  That is the chain rule becomes an expansion rewrite, and you get what's known as an expansion reduction system.  This normalizes in the sense of an expansion reduction system, in fact in that language it's strongly normalizing.    It's also Church-Rosser modulo the symmetry axiom and the axioms of a commutative monoid.  Sadly, I don't think this has been published.</p>",
+        "id": 198235714,
+        "sender_full_name": "Jonathan Gallagher",
+        "timestamp": 1589997981
+    },
+    {
+        "content": "<p>How about with Grobner orderings?</p>",
+        "id": 198235725,
+        "sender_full_name": "Cody Roux",
+        "timestamp": 1589997987
+    },
+    {
+        "content": "<p>For addition you also have to combine the axiom with the chain rule. canonicalisation is trying to do something of this kind</p>",
+        "id": 198235763,
+        "sender_full_name": "Gordon Plotkin",
+        "timestamp": 1589998005
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"303968\">Jonathan Gallagher</span> <a href=\"#narrow/stream/229966-ACT.40UCR-seminar/topic/May.2020th.3A.20Gordon.20Plotkin/near/198235714\">said</a>:</p>\n<blockquote>\n<p>Hi Cody!  For the notation for CDCs by Blute, Cockett, Seely, a rewriting system is possible.  You do get sort of rewriting system, but you need to make the chain rule oriented the \"wrong way\"  That is the chain rule becomes an expansion rewrite, and you get what's known as an expansion reduction system.  This normalizes in the sense of an expansion reduction system, in fact in that language it's strongly normalizing.    It's also Church-Rosser modulo the symmetry axiom and the axioms of a commutative monoid.  Sadly, I don't think this has been published.</p>\n</blockquote>\n<p>Cool!</p>",
+        "id": 198235779,
+        "sender_full_name": "Cody Roux",
+        "timestamp": 1589998016
+    },
+    {
+        "content": "<p><span class=\"user-mention\" data-user-id=\"277684\">@Gordon Plotkin</span> thanks! That makes sense. It's natural to wonder what the pragmatic decision procedure would be. It sounds like it's this stratified interpolation trick right now.</p>",
+        "id": 198235874,
+        "sender_full_name": "Cody Roux",
+        "timestamp": 1589998067
+    },
+    {
+        "content": "<p>Thats very nice for CDCs!</p>",
+        "id": 198236017,
+        "sender_full_name": "Gordon Plotkin",
+        "timestamp": 1589998112
+    },
+    {
+        "content": "<p>So, did you present the \"theory of differentiation\" as a second-order algebraic theory (Fiore et al)? I thought I heard you say toward the end that it wasn't fully second-order, but I'm not sure what you meant.</p>",
+        "id": 198236116,
+        "sender_full_name": "Christian Williams",
+        "timestamp": 1589998181
+    },
+    {
+        "content": "<p>I think Gordon said he was deliberately <em>avoiding</em> second-order approach.  Right?</p>",
+        "id": 198236290,
+        "sender_full_name": "John Baez",
+        "timestamp": 1589998250
+    },
+    {
+        "content": "<p>I did present it as a theory in the sense of Fiore et al, I was speaking vaguely at the end, contrasting with a predicate calculus theory with comprehension</p>",
+        "id": 198236321,
+        "sender_full_name": "Gordon Plotkin",
+        "timestamp": 1589998269
+    },
+    {
+        "content": "<p>Now I'm confused.</p>",
+        "id": 198236388,
+        "sender_full_name": "John Baez",
+        "timestamp": 1589998313
+    },
+    {
+        "content": "<p>(Or rather, I always was but now I realize it.)</p>",
+        "id": 198236466,
+        "sender_full_name": "John Baez",
+        "timestamp": 1589998341
+    },
+    {
+        "content": "<p>If I understood correctly, the calculus is a one-sorted second-order algebraic theory à la Fiore–Plotkin–Turi's <a href=\"http://homepages.inf.ed.ac.uk/gdp/publications/Abstract_Syn.pdf\">Abstract Syntax and Variable Binding</a>.</p>",
+        "id": 198236545,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1589998378
+    },
+    {
+        "content": "<p>Oh, cool.</p>",
+        "id": 198236609,
+        "sender_full_name": "John Baez",
+        "timestamp": 1589998407
+    },
+    {
+        "content": "<p>By using second-order theories instead of some lambda abstraction, you can interpret the calculus in more models (e.g. categories that aren't cartesian-closed).</p>",
+        "id": 198236622,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1589998411
+    },
+    {
+        "content": "<p>Yes, that last part of the discussion went by too quickly for me. Is the main contrast that predicates with comprehension undecidable? But it's still second-order, right -- so I'm wondering what exactly makes it so expressive. (Maybe there are other factors besides expressiveness, I don't know about this stuff.)</p>",
+        "id": 198236636,
+        "sender_full_name": "Christian Williams",
+        "timestamp": 1589998422
+    },
+    {
+        "content": "<p>You understand correctly, Nathanael. <br>\nRe second order , I am finding it difficult to sort out the different senses of the word in real time, they will include second-order logic, concrete and nonconcrete models (of the equational theory) and standard and non-standard models of the logic.</p>",
+        "id": 198236828,
+        "sender_full_name": "Gordon Plotkin",
+        "timestamp": 1589998523
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"275899\">Christian Williams</span> <a href=\"#narrow/stream/229966-ACT.40UCR-seminar/topic/May.2020th.3A.20Gordon.20Plotkin/near/198236636\">said</a>:</p>\n<blockquote>\n<p>Yes, that last part of the discussion went by too quickly for me. Is the main contrast that predicates with comprehension undecidable? But it's still second-order, right -- so I'm wondering what exactly makes it so expressive. (Maybe there are other factors besides expressiveness, I don't know about this stuff.)</p>\n</blockquote>\n<p>Expressive can mean \"can <em>talk</em> about many things\" or \"can <em>prove</em> many things\". In general, logics with binding constructs are of the first sort, and HOL is of the second sort.</p>",
+        "id": 198237004,
+        "sender_full_name": "Cody Roux",
+        "timestamp": 1589998599
+    },
+    {
+        "content": "<p>Where were the slides posted, by the way?</p>",
+        "id": 198237087,
+        "sender_full_name": "Christian Williams",
+        "timestamp": 1589998657
+    },
+    {
+        "content": "<p>Here's a theorem that I use a lot for intuition: Martin-Lof type theory without universes is a <em>conservative</em> extension of first-order logic, even though it can quantify over arbitrary function spaces.</p>",
+        "id": 198237246,
+        "sender_full_name": "Cody Roux",
+        "timestamp": 1589998712
+    },
+    {
+        "content": "<p><a href=\"http://math.ucr.edu/home/baez/mathematical/ACTUCR/Plotkin_Partial_Differentiation.pdf\">http://math.ucr.edu/home/baez/mathematical/ACTUCR/Plotkin_Partial_Differentiation.pdf</a></p>",
+        "id": 198237248,
+        "sender_full_name": "Jonathan Gallagher",
+        "timestamp": 1589998713
+    },
+    {
+        "content": "<p>Re implications <br>\nconjunctions of e=e''s  implies e'' = e''' <br>\ntrue over the smooth functions they must surely be undecidable, as partial differential equations can be equations in this calculus.</p>",
+        "id": 198237324,
+        "sender_full_name": "Gordon Plotkin",
+        "timestamp": 1589998753
+    },
+    {
+        "content": "<p>I'm trying to understand the interpretation of <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mrow><mi mathvariant=\"normal\">P</mi><mi mathvariant=\"normal\">D</mi><mi mathvariant=\"normal\">i</mi><mi mathvariant=\"normal\">f</mi><mi mathvariant=\"normal\">f</mi></mrow><mo stretchy=\"false\">(</mo><mi>x</mi><mi mathvariant=\"normal\">.</mi><msub><mi>e</mi><mn>0</mn></msub><mo separator=\"true\">,</mo><msub><mi>e</mi><mn>1</mn></msub><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">\\mathrm{PDiff}(x.e_0,e_1)</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord\"><span class=\"mord mathrm\">P</span><span class=\"mord mathrm\">D</span><span class=\"mord mathrm\">i</span><span class=\"mord mathrm\" style=\"margin-right:0.07778em;\">f</span><span class=\"mord mathrm\" style=\"margin-right:0.07778em;\">f</span></span><span class=\"mopen\">(</span><span class=\"mord mathdefault\">x</span><span class=\"mord\">.</span><span class=\"mord\"><span class=\"mord mathdefault\">e</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.30110799999999993em;\"><span style=\"top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">0</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mord\"><span class=\"mord mathdefault\">e</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.30110799999999993em;\"><span style=\"top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">1</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span><span class=\"mclose\">)</span></span></span></span>. What does it mean for <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi>e</mi><mn>1</mn></msub></mrow><annotation encoding=\"application/x-tex\">e_1</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.58056em;vertical-align:-0.15em;\"></span><span class=\"mord\"><span class=\"mord mathdefault\">e</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.30110799999999993em;\"><span style=\"top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">1</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span></span></span></span> be a compound expression rather than a variable?</p>",
+        "id": 198238109,
+        "sender_full_name": "Christian Williams",
+        "timestamp": 1589999141
+    },
+    {
+        "content": "<p>IIRC a restriction on PDEs to \"primitive PDEs\" i.e. Shannon's GPAC, were shown to be equivalent to Turing machines by a polynomial time reduction.</p>",
+        "id": 198238262,
+        "sender_full_name": "Jonathan Gallagher",
+        "timestamp": 1589999206
+    },
+    {
+        "content": "<p>Oh, I can see through the example theorem for chain rule.</p>",
+        "id": 198238327,
+        "sender_full_name": "Christian Williams",
+        "timestamp": 1589999236
+    },
+    {
+        "content": "<p>A class of PDE equivalent to Turing machines - cool!</p>",
+        "id": 198238328,
+        "sender_full_name": "John Baez",
+        "timestamp": 1589999237
+    },
+    {
+        "content": "<p>Jonathan, I would love a reference, please.</p>",
+        "id": 198238599,
+        "sender_full_name": "Gordon Plotkin",
+        "timestamp": 1589999347
+    },
+    {
+        "content": "<p>Can the theory of differentiation be understood as a fragment of the internal logic of cartesian differential categories?</p>",
+        "id": 198238814,
+        "sender_full_name": "Christian Williams",
+        "timestamp": 1589999446
+    },
+    {
+        "content": "<p>See theorem 14 -- 17 of <a href=\"https://reader.elsevier.com/reader/sd/pii/S0885064X07000246?token=72278894AD328E44CE53742FB6E94226C9198B12975776D18A7CA56CE853A273EADE09C6DEE593632B05F585924B3BC5\">https://reader.elsevier.com/reader/sd/pii/S0885064X07000246?token=72278894AD328E44CE53742FB6E94226C9198B12975776D18A7CA56CE853A273EADE09C6DEE593632B05F585924B3BC5</a></p>",
+        "id": 198238854,
+        "sender_full_name": "Jonathan Gallagher",
+        "timestamp": 1589999481
+    },
+    {
+        "content": "<p>Thanks, Jonathan.<br>\nChristian, if by internal logic we take it to be the second-order theory I have at the end (which should be essentially equivalent to the type theory Jonathan mentioned), then it can be interpreted in my second-order theory, by interpreting the single sort there as a product of sorts of my theory (this just formalises the definitions of Jacobians). I think the converse may not hold (ie I think it is not a fragment, as you asked)</p>",
+        "id": 198239439,
+        "sender_full_name": "Gordon Plotkin",
+        "timestamp": 1589999757
+    },
+    {
+        "content": "<p>I think I'll sign off, Gordon.  I'm a bit out of my depth here.   Thanks for a great talk!</p>",
+        "id": 198239666,
+        "sender_full_name": "John Baez",
+        "timestamp": 1589999859
+    },
+    {
+        "content": "<p>You are welcome, John. I will sign off too, if there are no more questions. Thanks everyone!</p>",
+        "id": 198239921,
+        "sender_full_name": "Gordon Plotkin",
+        "timestamp": 1589999957
+    },
+    {
+        "content": "<p>Thank you for the talk!</p>",
+        "id": 198239952,
+        "sender_full_name": "Jonathan Gallagher",
+        "timestamp": 1589999972
+    },
+    {
+        "content": "<p>Re the theory of differentiation: it may a fragment of the theory used by Wolfgang Betram.  <a href=\"http://www.iecl.univ-lorraine.fr/~Wolfgang.Bertram/simfin.pdf\">http://www.iecl.univ-lorraine.fr/~Wolfgang.Bertram/simfin.pdf</a></p>",
+        "id": 198240035,
+        "sender_full_name": "Jonathan Gallagher",
+        "timestamp": 1590000004
+    },
+    {
+        "content": "<p>You can <a href=\"http://math.ucr.edu/home/baez/mathematical/ACTUCR/Plotkin_Partial_Differentiation.pdf\">see Gordon's slides here</a>, or <a href=\"http://math.ucr.edu/home/baez/mathematical/ACTUCR/Plotkin_Partial_Differentiation.mp4\">download a video of his talk here</a>, or watch his video here:</p>\n<p><a href=\"https://www.youtube.com/watch?v=j_w6GNUIQDo&amp;w=560&amp;h=315\">https://www.youtube.com/watch?v=j_w6GNUIQDo&amp;w=560&amp;h=315</a></p>\n<div class=\"youtube-video message_inline_image\"><a data-id=\"j_w6GNUIQDo\" href=\"https://www.youtube.com/watch?v=j_w6GNUIQDo&amp;w=560&amp;h=315\"><img src=\"https://i.ytimg.com/vi/j_w6GNUIQDo/default.jpg\"></a></div>",
+        "id": 198267293,
+        "sender_full_name": "John Baez",
+        "timestamp": 1590015102
+    },
+    {
+        "content": "<p><span class=\"user-mention\" data-user-id=\"277684\">@Gordon Plotkin</span>: you said you were looking for examples in mathematics of operators that take multiple binding arguments? One (multisorted) example is the case-splitting operation in the STLC with sums, where we have an operator <code>case : Sum(A, B), (A)C, (B)C -&gt; C</code>.</p>",
+        "id": 198269346,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1590016736
+    },
+    {
+        "content": "<p>(I missed this comment whilst watching earlier.)</p>",
+        "id": 198269396,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1590016793
+    },
+    {
+        "content": "<p>Since people were wondering about applications of derivatives of boolean functions <a href=\"https://pdfs.semanticscholar.org/a9c8/7568463a5ce8c2cd15ec17e9a54e1158db2b.pdf\">https://pdfs.semanticscholar.org/a9c8/7568463a5ce8c2cd15ec17e9a54e1158db2b.pdf</a><br>\n<a href=\"https://books.google.com/books?id=DgC7IuDGvMQC&amp;printsec=copyright#v=onepage&amp;q&amp;f=false\">https://books.google.com/books?id=DgC7IuDGvMQC&amp;printsec=copyright#v=onepage&amp;q&amp;f=false</a></p>",
+        "id": 198279123,
+        "sender_full_name": "Erik Meijer",
+        "timestamp": 1590026775
+    },
+    {
+        "content": "<p>Great!  I'm gonna have to learn about this.  I want to freak people out by taking the derivative of \"and\".</p>",
+        "id": 198374322,
+        "sender_full_name": "John Baez",
+        "timestamp": 1590093641
+    },
+    {
+        "content": "<p>it better obey a leibniz rule or i want my money back</p>",
+        "id": 198382952,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1590098623
+    },
+    {
+        "content": "<p>actually wait maybe it's xor that would obey a leibniz rule</p>",
+        "id": 198383114,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1590098728
+    },
+    {
+        "content": "<p>There are all sorts of interesting things about boolean derivatives in \"Conservative retractions of propositional logic theories  by  means  of  boolean  derivatives. Theoretical  foundations\" <a href=\"https://core.ac.uk/download/pdf/158965834.pdf\">https://core.ac.uk/download/pdf/158965834.pdf</a></p>",
+        "id": 198383659,
+        "sender_full_name": "Jacques Carette",
+        "timestamp": 1590099017
+    },
+    {
+        "content": "<p>Hey, that looks nice!</p>",
+        "id": 198383803,
+        "sender_full_name": "John Baez",
+        "timestamp": 1590099112
+    },
+    {
+        "content": "<p>So would a fair characterization of the talk (for a non logician) be that one can decide whether a single equality involving partial derivatives, +, *,  composition, and uninterpreted smooth function symbols,  is a consequence of the basic rules of arithmetic and differentiation by considering interpretations of those functions as polynomials of bounded degree? And that I can't use the method to ask questions like is y'' = y' a consequence of y' = y?</p>",
+        "id": 198438825,
+        "sender_full_name": "Philip Zucker",
+        "timestamp": 1590152885
+    }
+]

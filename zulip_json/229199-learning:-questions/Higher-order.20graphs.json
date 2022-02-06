@@ -1,0 +1,26 @@
+[
+    {
+        "content": "<p>I've been learning about higher categories and thinking about representing them in data structures. </p>\n<p>This has led me to ask whether there is a name for the mathematical structure that is like a regular graph, but which allows n_edges between (n - 1)_edges. </p>\n<p>E.g., a 2-category corresponds to a graph structure with vertices, edges between vertices, and edges between such edges. My question is, have such structures been defined and studied in graph theory? </p>\n<p>My attempts to Google  higher graph structures has turned up hypergraphs and multigraphs, but neither of these (at least on their face) are the same as graphs with higher-order edges. </p>\n<p>Of course, you could model these higher-order edges with a regular graph, just make every k_edge of the higher-order graph into a vertex of a normal graph and have directed edges to indicate its source and target. But then you'd have to enforce extra constrains to ensure that you don't gets edges between different levels of the hierarchy. i.e., you have to explicitly disallow an edge from going between an n_edge to a m_edge, where n  ≠ m. It would be nicer to have a structure in which the edge hierarchy emerges naturally.</p>",
+        "id": 216363549,
+        "sender_full_name": "Avi Craimer",
+        "timestamp": 1605110151
+    },
+    {
+        "content": "<p>I think this is what globular sets are (with a caveat about directedness): <a href=\"https://ncatlab.org/nlab/show/globular+set\">https://ncatlab.org/nlab/show/globular+set</a></p>",
+        "id": 216364481,
+        "sender_full_name": "Jules Hedges",
+        "timestamp": 1605110553
+    },
+    {
+        "content": "<p>Yeah: I don't know if graph theorists study them, but category theorists use <a href=\"https://en.wikipedia.org/wiki/Globular_set\">globular sets</a> to describe structures with vertices, directed edges going between vertices, directed \"2-edges\" going between directed edges, etc.</p>",
+        "id": 216365767,
+        "sender_full_name": "John Baez",
+        "timestamp": 1605111228
+    },
+    {
+        "content": "<p>Thanks. If I'm understanding the Wikipedia page right, globular sets are sub-class of the higher-order graph structure where there can only be higher order edges between \"parallel\" edges. This makes sense for higher-order categories. If you take away those extra equations that constrain the source and target functions, then you'd just have the general idea of a higher-order edge. It is surprising to me that this is not studied outside of category theory. It seems like a natural type of network structure that you might find in lots of different contexts.</p>",
+        "id": 216369288,
+        "sender_full_name": "Avi Craimer",
+        "timestamp": 1605112997
+    }
+]

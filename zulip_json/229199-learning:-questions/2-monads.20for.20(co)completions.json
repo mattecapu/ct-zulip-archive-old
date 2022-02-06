@@ -1,0 +1,134 @@
+[
+    {
+        "content": "<p>Where is there a proof in the literature that there is a 2-monad for finite (co)limit completion? (As opposed to a pseudomonad.) I've seen assertions in several papers, but the strictness seems subtle, and it would be good to know where to find it explicitly.<br>\n(It would be even better if there was a reference for <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>ϕ</mi></mrow><annotation encoding=\"application/x-tex\">\\phi</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8888799999999999em;vertical-align:-0.19444em;\"></span><span class=\"mord mathnormal\">ϕ</span></span></span></span>-(co)completion, for some suitable class of (co)limits <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>ϕ</mi></mrow><annotation encoding=\"application/x-tex\">\\phi</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8888799999999999em;vertical-align:-0.19444em;\"></span><span class=\"mord mathnormal\">ϕ</span></span></span></span>.)</p>",
+        "id": 210802480,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1600723695
+    },
+    {
+        "content": "<p>A fairly explicit construction of the finite colimit completion of <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"script\">C</mi></mrow><annotation encoding=\"application/x-tex\">\\cal C</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord\"><span class=\"mord mathcal\" style=\"margin-right:0.05834em;\">C</span></span></span></span></span> is given in \"The symmetric topos\", where Bunge-Carboni give a two-step recipe to build first the (co)product and then the (co)equaliser completion of <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"script\">C</mi></mrow><annotation encoding=\"application/x-tex\">\\cal C</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord\"><span class=\"mord mathcal\" style=\"margin-right:0.05834em;\">C</span></span></span></span></span>. But maybe there are better references where the completion is performed in a single step. They seem to refer to Kock's original definition of KZ-monad.</p>\n<p>This said, is the finite colimit completion KZ-monad really strictifiable to a 2-monad? I find this surprising: up to size issues, the cocompletion under all colimits of <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"script\">C</mi></mrow><annotation encoding=\"application/x-tex\">\\cal C</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord\"><span class=\"mord mathcal\" style=\"margin-right:0.05834em;\">C</span></span></span></span></span> (so, the coequaliser and small-coproduct completion of <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"script\">C</mi></mrow><annotation encoding=\"application/x-tex\">\\cal C</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord\"><span class=\"mord mathcal\" style=\"margin-right:0.05834em;\">C</span></span></span></span></span>) is genuinely pseudo-. Please, tell us more!</p>",
+        "id": 210804001,
+        "sender_full_name": "fosco",
+        "timestamp": 1600724561
+    },
+    {
+        "content": "<p>Right, the construction in Bunge–Carboni is pseudomonadic, though they note that several authors have pointed out that it can be made 2-monadic. The free cocompletion is actually the reason I ask: I want to understand whether the arguments for finite colimits apply for small colimits, or where the obstruction is, if not.</p>",
+        "id": 210804705,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1600724939
+    },
+    {
+        "content": "<p>An example of a source that mentions that finite limits are 2-monadic without proof is <em>Two-dimensional monad theory</em>.</p>",
+        "id": 210804816,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1600725003
+    },
+    {
+        "content": "<p>I was just asking Todd Trimble this question!  I would like to know the answer!</p>",
+        "id": 210826786,
+        "sender_full_name": "John Baez",
+        "timestamp": 1600748186
+    },
+    {
+        "content": "<p>I see; very interesting question indeed. Let me know! </p>\n<p>This comment is a shot in the dark, because I probably remember too little about it, but try have a look at <span class=\"user-mention\" data-user-id=\"275989\">@Paolo Perrone</span> MIT talk <a href=\"https://www.youtube.com/watch?v=wTjdEzFGuOg\">https://www.youtube.com/watch?v=wTjdEzFGuOg</a></p>\n<div class=\"youtube-video message_inline_image\"><a data-id=\"wTjdEzFGuOg\" href=\"https://www.youtube.com/watch?v=wTjdEzFGuOg\"><img src=\"https://i.ytimg.com/vi/wTjdEzFGuOg/default.jpg\"></a></div><p>There's a 2-monad on Cat whose algebras are cocomplete categories <strong>with a choice of colimits</strong>: if this 2-monad is strict, it is believable this works as a strictification of the presheaf construction. But probably (as always) this messes up your algebra morphisms: now cocontinuous functors are \"pointed\" in that they have to preserve the choice of colimits you made.</p>",
+        "id": 210841568,
+        "sender_full_name": "fosco",
+        "timestamp": 1600763883
+    },
+    {
+        "content": "<p>In my talk, (see <a href=\"https://youtu.be/wTjdEzFGuOg?t=510\">minute 8:30</a>), I actually use <em>pseudo</em>monads. While I don't delve into higher coherence issues in the talk, they are there (you'll see in the paper, in preparation). <br>\nAfaik, I don't know how to \"strictify\" those monads, and I'm not even sure it's possible. I'd be happy to see a reference where it's explicitly done.</p>\n<div class=\"youtube-video message_inline_image\"><a data-id=\"wTjdEzFGuOg\" href=\"https://youtu.be/wTjdEzFGuOg?t=510\"><img src=\"https://i.ytimg.com/vi/wTjdEzFGuOg/default.jpg\"></a></div>",
+        "id": 210882771,
+        "sender_full_name": "Paolo Perrone",
+        "timestamp": 1600786885
+    },
+    {
+        "content": "<p>Do the papers definitely say strict, and it's not some kind of situation where people used to say \"2-monad\" to (sometimes) mean the same thing as what is now called \"pseudomonad\"?</p>",
+        "id": 210883346,
+        "sender_full_name": "Dan Doel",
+        "timestamp": 1600787062
+    },
+    {
+        "content": "<p>I think people like Hyland and Power sometimes use 2-monads for categories with certain specified choices of colimits along with 'pseudomorphisms' between their algebras, to avoid the problem Fosco mentions.</p>",
+        "id": 210892939,
+        "sender_full_name": "John Baez",
+        "timestamp": 1600790820
+    },
+    {
+        "content": "<p>A simpler example is this: I think there's a 2-monad on Cat whose algebras are strict monoidal categories  and whose morphisms are strict monoidal functors... but whose pseudomorphisms are <em>strong</em> monoidal functors.  So the pseudomorphisms are useful.</p>",
+        "id": 210893197,
+        "sender_full_name": "John Baez",
+        "timestamp": 1600790927
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"275920\">John Baez</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/2-monads.20for.20(co)completions/near/210893197\">said</a>:</p>\n<blockquote>\n<p>A simpler example is this: I think there's a 2-monad on Cat whose algebras are strict monoidal categories  and whose morphisms are strict monoidal functors... but whose pseudomorphisms are <em>strong</em> monoidal functors.  So the pseudomorphisms are useful.</p>\n</blockquote>\n<p>Yes, and the pseudoalgebras are unbiased monoidal categories rather than the usual monoidal categories (which afaik are the strict algebras of an altogether different monad), so at times strict algebras + pseudomorphisms is more convenient than going fully strict/fully pseudo.</p>",
+        "id": 210913407,
+        "sender_full_name": "Martti Karvonen",
+        "timestamp": 1600799864
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"277270\">Dan Doel</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/2-monads.20for.20(co)completions/near/210883346\">said</a>:</p>\n<blockquote>\n<p>Do the papers definitely say strict, and it's not some kind of situation where people used to say \"2-monad\" to (sometimes) mean the same thing as what is now called \"pseudomonad\"?</p>\n</blockquote>\n<p>Yes, they're definitely Cat-enriched monads. For example, in <em>Two-dimensional monad theory</em>, they explicitly say they're leaving the pseudo setting to a later paper.</p>",
+        "id": 210920389,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1600803259
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"275920\">John Baez</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/2-monads.20for.20(co)completions/near/210892939\">said</a>:</p>\n<blockquote>\n<p>I think people like Hyland and Power sometimes use 2-monads for categories with certain specified choices of colimits along with 'pseudomorphisms' between their algebras, to avoid the problem Fosco mentions.</p>\n</blockquote>\n<p>This is the case here: Lex is a category of algebras and pseudomorphisms for a 2-monad on Cat, for instance.</p>",
+        "id": 210920581,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1600803366
+    },
+    {
+        "content": "<p>(Although the 2-monad is finitary, so we can take the flexible replacement.)</p>",
+        "id": 210923421,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1600804744
+    },
+    {
+        "content": "<p>Where is \"here\"?   <em>Two-Dimensional Monad Theory</em>?</p>",
+        "id": 210924394,
+        "sender_full_name": "John Baez",
+        "timestamp": 1600805178
+    },
+    {
+        "content": "<p>\"Here\" as in \"for the 2-monad for categories with finite limits\", though it appears as an example in <em>Two-dimensional monad theory</em>, yes.</p>",
+        "id": 210924584,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1600805283
+    },
+    {
+        "content": "<p>I suddenly realized I'd like to use this version of Lex, or actually Rex, in a paper of mine.</p>",
+        "id": 210925136,
+        "sender_full_name": "John Baez",
+        "timestamp": 1600805577
+    },
+    {
+        "content": "<p>Is the 2-monad for categories with finite colimits called T-Rex?</p>",
+        "id": 210925493,
+        "sender_full_name": "Reid Barton",
+        "timestamp": 1600805749
+    },
+    {
+        "content": "<p>That reminds me of my own bad joke: \"What's the opposite of <em>Tyrannosaurus rex</em>?\"</p>",
+        "id": 210945742,
+        "sender_full_name": "John Baez",
+        "timestamp": 1600819295
+    },
+    {
+        "content": "<p>A T-Lex? <span aria-label=\"big smile\" class=\"emoji emoji-1f604\" role=\"img\" title=\"big smile\">:big_smile:</span></p>",
+        "id": 210945960,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1600819467
+    },
+    {
+        "content": "<p>Right!  <em>Tyrannosaurus lex</em>.</p>",
+        "id": 210946660,
+        "sender_full_name": "John Baez",
+        "timestamp": 1600820236
+    },
+    {
+        "content": "<p>John Bourke <a href=\"https://mathoverflow.net/a/372428\">gave references</a> for this question. Kelly–Lack's paper <a href=\"http://www.tac.mta.ca/tac/volumes/7/n7/n7.pdf\">On the monadicity of categories with chosen colimits</a> establishes this result in a very general setting (including for small cocompletion).</p>",
+        "id": 211033677,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1600881201
+    }
+]

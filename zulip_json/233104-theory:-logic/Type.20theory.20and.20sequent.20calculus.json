@@ -1,0 +1,80 @@
+[
+    {
+        "content": "<p>I have two questions concerning the relation between Sequent Calculus and Type  Theory</p>\n<p>A) In a typical type theory like HoTT there are four kinds of inference rules: type formation, term introduction, term elimination, and computation rules. The last rule type has a different status than the first three so I will ignore it for now.<br>\nHoTT is based on Natural Deduction. If instead of Natural Deduction we take the Sequent calculus perspective we replace term intro rules with Right rules, and the term elimination rules with Left Rules. <br>\nWhat about type formation rules? Conceptually they should be term introduction rules (= Right rules in the sequent calculus) for the Universe U.<br>\nIf we continue this train there should also be right rules for the Universe U? What are they?</p>\n<p>B) The term introduction and elimination rules corresponds in categorical semantics to structure morphisms  and universal properties (or the other way around depending on the polarity of the type, i.e. whether it is a (co)limit). In this way we can deduce the rules from the categorical structure.<br>\nCan we do a similar thing with sequent calculus? How do we guess the left rules?</p>\n<p>Literature: it seems the following paper might be relevant, but it doesn't talk about categorical semantics at all<br>\n<a href=\"https://www.irif.fr/~emiquey/tmp/dL.pdf\">https://www.irif.fr/~emiquey/tmp/dL.pdf</a></p>",
+        "id": 213896394,
+        "sender_full_name": "Alexander Gietelink Oldenziel",
+        "timestamp": 1603187617
+    },
+    {
+        "content": "<p>Type formation rules are usually not the same as term formation rules for the universe. Types are introduced prior to any universes containing them. And it would be impossible to say that the universe itself (if you only have one) is a type (which it is) using judgments of its own terms, because it doesn't usually contain itself.</p>\n<p>Anyhow, most logics just take for granted which propositions are well-formed, probably because the rules for them are pretty simple. In first-order logic they'd mostly need to talk about variable scoping, and most presentations neglect to even keep track of that. The well-formed types in dependent type theory are not so trivial, so it's more useful to present them as rules that can be checked like all the rest.</p>",
+        "id": 213929624,
+        "sender_full_name": "Dan Doel",
+        "timestamp": 1603205110
+    },
+    {
+        "content": "<p>I have seen natural deduction presentations that do have proposition formation rules, but those were probably inspired by type theory.</p>",
+        "id": 213929793,
+        "sender_full_name": "Dan Doel",
+        "timestamp": 1603205173
+    },
+    {
+        "content": "<p>Generally in sequent calculus, right rules correspond almost exactly to something from ND, so the left rule corresponds to whatever is the dual of that.</p>",
+        "id": 213930388,
+        "sender_full_name": "Dan Doel",
+        "timestamp": 1603205459
+    },
+    {
+        "content": "<p>I think left rules are all eliminations, but it might depend on presentation.</p>",
+        "id": 213931433,
+        "sender_full_name": "Dan Doel",
+        "timestamp": 1603205906
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"277270\">Dan Doel</span> <a href=\"#narrow/stream/233104-theory.3A-logic/topic/Type.20theory.20and.20sequent.20calculus/near/213931433\">said</a>:</p>\n<blockquote>\n<p>I think left rules are all eliminations, but it might depend on presentation.</p>\n</blockquote>\n<p>Left rules coupled with cut make for eliminations inherently, no?</p>",
+        "id": 213931943,
+        "sender_full_name": "Shea Levy",
+        "timestamp": 1603206123
+    },
+    {
+        "content": "<p>I've seen El mentioned as the eliminator for the (Tarski-style) universe, but I don't know how formal that intuition can be made. μμ̃̃ is perhaps a good framework to formalise that in.</p>",
+        "id": 213932799,
+        "sender_full_name": "James Wood",
+        "timestamp": 1603206469
+    },
+    {
+        "content": "<p>I'm not sure that really makes sense. El isn't much like the other eliminators.</p>",
+        "id": 213932978,
+        "sender_full_name": "Dan Doel",
+        "timestamp": 1603206532
+    },
+    {
+        "content": "<p>Also there are presentations of MLTT that actually have an induction principle for the universe.</p>",
+        "id": 213933023,
+        "sender_full_name": "Dan Doel",
+        "timestamp": 1603206550
+    },
+    {
+        "content": "<p>I think the only real difference is that it targets types rather than terms, and in μμ̃̃ you don't have to target eliminators as much as you do in natural deduction.</p>",
+        "id": 213933346,
+        "sender_full_name": "James Wood",
+        "timestamp": 1603206690
+    },
+    {
+        "content": "<p>Well, that in itself is a huge difference. It's a type formation rule, not a term rule.</p>",
+        "id": 213933655,
+        "sender_full_name": "Dan Doel",
+        "timestamp": 1603206769
+    },
+    {
+        "content": "<p>But there are still computation rules between El and the constructors of the universe. For example, <code>El (A '+ B) ↝ El A + El B</code>, where <code>'+</code> is the code for the sum type former, and <code>+</code> is the actual type former.</p>",
+        "id": 213934344,
+        "sender_full_name": "James Wood",
+        "timestamp": 1603207011
+    },
+    {
+        "content": "<p>Mike Shulman's <a href=\"https://mikeshulman.github.io/catlog/catlog.pdf\">https://mikeshulman.github.io/catlog/catlog.pdf</a> has quite a few mentions of sequent calculi, including this passage (page 48):</p>\n<blockquote>\n<p>... sequent calculus and natural deduction make <em>different</em> choices of which properties to ensure by their definitions of composition. Roughly speaking, sequent calculus chooses to make the <em>defining equations</em> of universal properties hold exactly (e.g. the composites of a paired morphism <code>&lt;f,g&gt; : X -&gt; A x B</code> with <code>pi_1</code>and <code>pi_2</code> are exactly <code>f</code> and <code>g</code> respectively); this is what the “principal case” of its cut-admissibility proof does.  On the other hand, natural deduction chooses to make the <em>naturality</em> of universal properties hold exactly; the equality between the two distinct sequent calculus derivations above expresses the naturality of pairing <code>&lt;f,g&gt; : X -&gt; A x B</code> with respect to precomposition by <code>pi_1</code>.</p>\n</blockquote>",
+        "id": 214507356,
+        "sender_full_name": "Alex Gryzlov",
+        "timestamp": 1603653915
+    }
+]

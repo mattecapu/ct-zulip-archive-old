@@ -1,0 +1,1118 @@
+[
+    {
+        "content": "<p>Very basic question: I have a lens (S,T) -&gt; (A,B) and I'm depicting it as a comb.  So the inside of the comb has a A wire on the left, and a B wire on the right. now suppose I have a function f:A -&gt; B. I'd like to put this function <em>inside</em> the comb, that is, I'd like to use it to connect the A and the B wires. Is this possible using profunctor optics? I saw I can lift functions to getters and setters but I don't know if this helps me to achieve what I want <span aria-label=\"confused\" class=\"emoji emoji-1f615\" role=\"img\" title=\"confused\">:confused:</span></p>",
+        "id": 194544867,
+        "sender_full_name": "Fabrizio Genovese",
+        "timestamp": 1587216789
+    },
+    {
+        "content": "<p>yes it is! Hom is always a tambara module</p>\n<p>EDIT: ...as long as you're considering your category with the same action on both sides of the Hom</p>",
+        "id": 194545296,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1587217380
+    },
+    {
+        "content": "<p>So I dn't need getters or anything?</p>",
+        "id": 194545415,
+        "sender_full_name": "Fabrizio Genovese",
+        "timestamp": 1587217506
+    },
+    {
+        "content": "<p>I can just pick my favourite function and stick it in?</p>",
+        "id": 194545428,
+        "sender_full_name": "Fabrizio Genovese",
+        "timestamp": 1587217527
+    },
+    {
+        "content": "<p>yup!</p>",
+        "id": 194545436,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1587217552
+    },
+    {
+        "content": "<p>Great!</p>",
+        "id": 194545440,
+        "sender_full_name": "Fabrizio Genovese",
+        "timestamp": 1587217561
+    },
+    {
+        "content": "<p>Thanks :D</p>",
+        "id": 194545478,
+        "sender_full_name": "Fabrizio Genovese",
+        "timestamp": 1587217564
+    },
+    {
+        "content": "<p>oh, but do note</p>",
+        "id": 194545480,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1587217569
+    },
+    {
+        "content": "<p>the result of the diagram will then itself be a morphism of the original category, rather than an optic or something</p>",
+        "id": 194545486,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1587217583
+    },
+    {
+        "content": "<p>Absolutely, that's precisely what I need :D</p>",
+        "id": 194545513,
+        "sender_full_name": "Fabrizio Genovese",
+        "timestamp": 1587217648
+    },
+    {
+        "content": "<p>The problem was that I was keeping to compose combs ad infinitum, but in the end a fucntion is exactly what I needed</p>",
+        "id": 194545523,
+        "sender_full_name": "Fabrizio Genovese",
+        "timestamp": 1587217675
+    },
+    {
+        "content": "<p>So I have a f: A -&gt; B that represents my \"initial policy\" and I keep plugging it into lenses, and so on and so on updating the policy</p>",
+        "id": 194545568,
+        "sender_full_name": "Fabrizio Genovese",
+        "timestamp": 1587217708
+    },
+    {
+        "content": "<p>Also, am I wrong or I can view a function A -&gt; B as a lens (A,B) -&gt; (*, *) ?</p>",
+        "id": 194545571,
+        "sender_full_name": "Fabrizio Genovese",
+        "timestamp": 1587217725
+    },
+    {
+        "content": "<p>That is, I see f as a \"trivial\" comb with no inner wires whatsoever</p>",
+        "id": 194545580,
+        "sender_full_name": "Fabrizio Genovese",
+        "timestamp": 1587217753
+    },
+    {
+        "content": "<p>umm</p>",
+        "id": 194545654,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1587217880
+    },
+    {
+        "content": "<p>my initial impulse was that that was correct, but something sounds slightly off about it when i think about another kind of optic i use, so now i'm trying to resolve that—one sec</p>",
+        "id": 194545661,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1587217919
+    },
+    {
+        "content": "<p>wait, what is * there</p>",
+        "id": 194545731,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1587218005
+    },
+    {
+        "content": "<p>some kind of terminal object or what</p>",
+        "id": 194545735,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1587218011
+    },
+    {
+        "content": "<p>The terminal object, yes</p>",
+        "id": 194545737,
+        "sender_full_name": "Fabrizio Genovese",
+        "timestamp": 1587218016
+    },
+    {
+        "content": "<p>kk</p>",
+        "id": 194545744,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1587218023
+    },
+    {
+        "content": "<p>So I'd have: <br>\nview: <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mo>→</mo><mo>∗</mo></mrow><annotation encoding=\"application/x-tex\">A \\to *</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathdefault\">A</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">→</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.46528em;vertical-align:0em;\"></span><span class=\"mord\">∗</span></span></span></span>, hence something useless<br>\nupdate: <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mo>×</mo><mo>∗</mo><mo>→</mo><mi>B</mi></mrow><annotation encoding=\"application/x-tex\">A \\times * \\to B</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.76666em;vertical-align:-0.08333em;\"></span><span class=\"mord mathdefault\">A</span><span class=\"mspace\" style=\"margin-right:0.2222222222222222em;\"></span><span class=\"mbin\">×</span><span class=\"mspace\" style=\"margin-right:0.2222222222222222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.46528em;vertical-align:0em;\"></span><span class=\"mord\">∗</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">→</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathdefault\" style=\"margin-right:0.05017em;\">B</span></span></span></span>, hence any  function <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mo>→</mo><mi>B</mi></mrow><annotation encoding=\"application/x-tex\">A \\to B</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathdefault\">A</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">→</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathdefault\" style=\"margin-right:0.05017em;\">B</span></span></span></span></p>",
+        "id": 194545822,
+        "sender_full_name": "Fabrizio Genovese",
+        "timestamp": 1587218101
+    },
+    {
+        "content": "<p>And then, at least in the case of lenses, composing a lens (X,Y) -&gt; (A,B) with this  effectively \"closes\" the comb</p>",
+        "id": 194545882,
+        "sender_full_name": "Fabrizio Genovese",
+        "timestamp": 1587218173
+    },
+    {
+        "content": "<p>oh sorry i was taking so long to reply—it's definitely true that for lenses we have A → B ~ (A, B) → (1, 1)</p>",
+        "id": 194545918,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1587218260
+    },
+    {
+        "content": "<p>but something definitely seems wrong about that when you generalize to other kinds of optics...</p>",
+        "id": 194545923,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1587218273
+    },
+    {
+        "content": "<p>or... maybe not... uh</p>",
+        "id": 194545971,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1587218305
+    },
+    {
+        "content": "<p>Well other optics seem to be combs with different shapes</p>",
+        "id": 194545976,
+        "sender_full_name": "Fabrizio Genovese",
+        "timestamp": 1587218326
+    },
+    {
+        "content": "<p>So probably if you compose that with something else you just maim your original shape in other abhorrent ways</p>",
+        "id": 194545996,
+        "sender_full_name": "Fabrizio Genovese",
+        "timestamp": 1587218386
+    },
+    {
+        "content": "<p>ok no yeah so im pretty sure this hinges on lenses being cartesian</p>",
+        "id": 194546056,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1587218412
+    },
+    {
+        "content": "<p>but with linear lenses, for example, you can still insert a morphism into a comb</p>",
+        "id": 194546068,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1587218426
+    },
+    {
+        "content": "<p>the morphism itself just doesnt count as an optic of the kind you describe</p>",
+        "id": 194546072,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1587218434
+    },
+    {
+        "content": "<p>Ok. So is there a \"general\" way to close combs?</p>",
+        "id": 194546085,
+        "sender_full_name": "Fabrizio Genovese",
+        "timestamp": 1587218459
+    },
+    {
+        "content": "<p>This actually entails another question: Are all optics combs of some sort?</p>",
+        "id": 194546094,
+        "sender_full_name": "Fabrizio Genovese",
+        "timestamp": 1587218472
+    },
+    {
+        "content": "<p>NO WAIT hold on im thinking about a thing</p>",
+        "id": 194546097,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1587218477
+    },
+    {
+        "content": "<p>ugh sorry</p>",
+        "id": 194546104,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1587218483
+    },
+    {
+        "content": "<p>ok actually if we have a morphism A → B that does give a linear lens (A, B) → (I, I), where I is the <em>tensor unit</em> rather than the terminal object</p>",
+        "id": 194546174,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1587218578
+    },
+    {
+        "content": "<p>makes sense :)</p>",
+        "id": 194546179,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1587218586
+    },
+    {
+        "content": "<p>Yes, that seems reasonable</p>",
+        "id": 194546191,
+        "sender_full_name": "Fabrizio Genovese",
+        "timestamp": 1587218614
+    },
+    {
+        "content": "<p>Which actually means that everything your comb can do is multiply that function by a scalar</p>",
+        "id": 194546222,
+        "sender_full_name": "Fabrizio Genovese",
+        "timestamp": 1587218637
+    },
+    {
+        "content": "<p>where a scalar is any morphism <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>I</mi><mo>→</mo><mi>I</mi></mrow><annotation encoding=\"application/x-tex\">I \\to I</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathdefault\" style=\"margin-right:0.07847em;\">I</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">→</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathdefault\" style=\"margin-right:0.07847em;\">I</span></span></span></span></p>",
+        "id": 194546268,
+        "sender_full_name": "Fabrizio Genovese",
+        "timestamp": 1587218649
+    },
+    {
+        "content": "<p>anyway yes i think it's fair to say that optics are combs in general</p>",
+        "id": 194546274,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1587218669
+    },
+    {
+        "content": "<p>you plug tambara module heteromorphisms into them if you want to close them</p>",
+        "id": 194546281,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1587218684
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276072\">sarahzrf</span> <a href=\"#narrow/stream/229199-learning.3A-basic.20questions/topic/Composing.20optics/near/194546281\" title=\"#narrow/stream/229199-learning.3A-basic.20questions/topic/Composing.20optics/near/194546281\">said</a>:</p>\n<blockquote>\n<p>you plug tambara module heteromorphisms into them if you want to close them</p>\n</blockquote>\n<p>That's a scary name :D</p>",
+        "id": 194546297,
+        "sender_full_name": "Fabrizio Genovese",
+        "timestamp": 1587218706
+    },
+    {
+        "content": "<p>;)</p>",
+        "id": 194546303,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1587218725
+    },
+    {
+        "content": "<p>how much do you know about profunctors</p>",
+        "id": 194546306,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1587218734
+    },
+    {
+        "content": "<p>I know that Hom is a profunctor. Then three years ago Neil Ghani explained ends and coends to me in a superclear way, it was amazing. But I forgot everything.</p>",
+        "id": 194546362,
+        "sender_full_name": "Fabrizio Genovese",
+        "timestamp": 1587218779
+    },
+    {
+        "content": "<p>Long story short assume you are speaking with a potato.</p>",
+        "id": 194546366,
+        "sender_full_name": "Fabrizio Genovese",
+        "timestamp": 1587218791
+    },
+    {
+        "content": "<p><span aria-label=\"potato\" class=\"emoji emoji-1f954\" role=\"img\" title=\"potato\">:potato:</span></p>",
+        "id": 194546372,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1587218807
+    },
+    {
+        "content": "<p>Yes, that's me</p>",
+        "id": 194546373,
+        "sender_full_name": "Fabrizio Genovese",
+        "timestamp": 1587218813
+    },
+    {
+        "content": "<p>:(</p>",
+        "id": 194546374,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1587218818
+    },
+    {
+        "content": "<p>don't be so hard on yourself</p>",
+        "id": 194546380,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1587218823
+    },
+    {
+        "content": "<p>anyway</p>",
+        "id": 194546384,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1587218826
+    },
+    {
+        "content": "<p>What, being a potato is amazing. And as a bonus I taste great when fried!</p>",
+        "id": 194546387,
+        "sender_full_name": "Fabrizio Genovese",
+        "timestamp": 1587218841
+    },
+    {
+        "content": "<p>:D</p>",
+        "id": 194546390,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1587218846
+    },
+    {
+        "content": "<p>Nice, the fact that functions <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mo>→</mo><mi>B</mi></mrow><annotation encoding=\"application/x-tex\">A \\to B</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathdefault\">A</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">→</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathdefault\" style=\"margin-right:0.05017em;\">B</span></span></span></span> are the same as optics <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"false\">(</mo><mi>A</mi><mo separator=\"true\">,</mo><mi>B</mi><mo stretchy=\"false\">)</mo><mo>→</mo><mi>I</mi></mrow><annotation encoding=\"application/x-tex\">(A, B) \\to I</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mopen\">(</span><span class=\"mord mathdefault\">A</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mord mathdefault\" style=\"margin-right:0.05017em;\">B</span><span class=\"mclose\">)</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">→</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathdefault\" style=\"margin-right:0.07847em;\">I</span></span></span></span> is one of the magic tricks behind how open games work... happy to see this fact getting some love</p>",
+        "id": 194546391,
+        "sender_full_name": "Jules Hedges",
+        "timestamp": 1587218847
+    },
+    {
+        "content": "<p>a profunctor C ⇸ D is a functor D^op × C → Set, or maybe a functor C^op × D → Set, depending on your convention</p>",
+        "id": 194546399,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1587218877
+    },
+    {
+        "content": "<p>the former one does look backward, but it also makes it so that C ⇸ D is the same as C → PSh(D) if you flip the args and curry</p>",
+        "id": 194546439,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1587218902
+    },
+    {
+        "content": "<p>Yup</p>",
+        "id": 194546442,
+        "sender_full_name": "Fabrizio Genovese",
+        "timestamp": 1587218920
+    },
+    {
+        "content": "<p>im more used to the former convention, but ill use the latter one for now i guess</p>",
+        "id": 194546451,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1587218953
+    },
+    {
+        "content": "<p>Both are fine for me</p>",
+        "id": 194546454,
+        "sender_full_name": "Fabrizio Genovese",
+        "timestamp": 1587218968
+    },
+    {
+        "content": "<p>so a good way to think about profunctors is that a profunctor P : C ⇸ D gives a notion of \"heteromorphism\" from objects of C to objects of D</p>",
+        "id": 194546503,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1587219005
+    },
+    {
+        "content": "<p>given A in C and B in D, think of P(A, B) as a kind of hom-set</p>",
+        "id": 194546505,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1587219018
+    },
+    {
+        "content": "<p>Yes, that's what you use to do profunctor collage too</p>",
+        "id": 194546510,
+        "sender_full_name": "Fabrizio Genovese",
+        "timestamp": 1587219030
+    },
+    {
+        "content": "<p>i thought i was talking to a potato</p>",
+        "id": 194546516,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1587219040
+    },
+    {
+        "content": "<p>I am! But I've been explained many things many times, so I have a shaky memory where every time you say something I may incorrectly recall something else</p>",
+        "id": 194546525,
+        "sender_full_name": "Fabrizio Genovese",
+        "timestamp": 1587219078
+    },
+    {
+        "content": "<p>kk</p>",
+        "id": 194546529,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1587219094
+    },
+    {
+        "content": "<p>Potato + random oracle maybe</p>",
+        "id": 194546530,
+        "sender_full_name": "Fabrizio Genovese",
+        "timestamp": 1587219097
+    },
+    {
+        "content": "<p>Anyway, I'm following up to now</p>",
+        "id": 194546532,
+        "sender_full_name": "Fabrizio Genovese",
+        "timestamp": 1587219103
+    },
+    {
+        "content": "<p>so i'll write f : A ~&gt; B to mean f ∈ P(A, B)</p>",
+        "id": 194546533,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1587219106
+    },
+    {
+        "content": "<p>Ok</p>",
+        "id": 194546535,
+        "sender_full_name": "Fabrizio Genovese",
+        "timestamp": 1587219114
+    },
+    {
+        "content": "<p>It's literally like a hom but now hom is a P</p>",
+        "id": 194546578,
+        "sender_full_name": "Fabrizio Genovese",
+        "timestamp": 1587219124
+    },
+    {
+        "content": "<p>then, the action of P on <em>morphisms</em> gives \"composition\" of heteromorphisms with real morphisms</p>",
+        "id": 194546579,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1587219125
+    },
+    {
+        "content": "<p>and functoriality tells you that this is still associative and unital</p>",
+        "id": 194546586,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1587219145
+    },
+    {
+        "content": "<p>Yes. So in the trivial case of hom this is pre- and post- composing, but for profunctors it may be anything as long as it's compositional</p>",
+        "id": 194546604,
+        "sender_full_name": "Fabrizio Genovese",
+        "timestamp": 1587219168
+    },
+    {
+        "content": "<p>however, note that it doesn't give you composition of heteromorphisms with each other, even if that were well-typed cuz u had an endoprofunctor</p>",
+        "id": 194546618,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1587219186
+    },
+    {
+        "content": "<p>anyway this generalizes both presheaves and copresheaves</p>",
+        "id": 194546627,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1587219213
+    },
+    {
+        "content": "<p>a presheaf is a profunctor C ⇸ 1 in the convention i just picked</p>",
+        "id": 194546632,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1587219231
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276072\">sarahzrf</span> <a href=\"#narrow/stream/229199-learning.3A-basic.20questions/topic/Composing.20optics/near/194546618\" title=\"#narrow/stream/229199-learning.3A-basic.20questions/topic/Composing.20optics/near/194546618\">said</a>:</p>\n<blockquote>\n<p>however, note that it doesn't give you composition of heteromorphisms with each other, even if that were well-typed cuz u had an endoprofunctor</p>\n</blockquote>\n<p>I didn't notice that</p>",
+        "id": 194546634,
+        "sender_full_name": "Fabrizio Genovese",
+        "timestamp": 1587219236
+    },
+    {
+        "content": "<p>Yes</p>",
+        "id": 194546686,
+        "sender_full_name": "Fabrizio Genovese",
+        "timestamp": 1587219246
+    },
+    {
+        "content": "<p>so:</p>",
+        "id": 194546717,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1587219310
+    },
+    {
+        "content": "<p>(and now im just giving you the optics crash course ;) )</p>",
+        "id": 194546726,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1587219328
+    },
+    {
+        "content": "<p>given a monoidal category M, an <em>action</em> of M on some other category C is a strong monoidal functor M → End(C)</p>",
+        "id": 194546790,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1587219368
+    },
+    {
+        "content": "<p>a category equipped with an action of M is an <em>M-actegory</em> (not a typo)</p>",
+        "id": 194546796,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1587219394
+    },
+    {
+        "content": "<p>Okz</p>",
+        "id": 194546824,
+        "sender_full_name": "Fabrizio Genovese",
+        "timestamp": 1587219469
+    },
+    {
+        "content": "<p>so, fix some monoidal M. we'll think of it as a category whose objects are \"contexts\" to extend objects of other categories by</p>",
+        "id": 194546830,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1587219477
+    },
+    {
+        "content": "<p>so an M-actegory is a category whose objects can be enlarged by being placed into a context drawn from M</p>",
+        "id": 194546881,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1587219502
+    },
+    {
+        "content": "<p>if we have a profunctor P : C ⇸ D between M-actegories C and D</p>",
+        "id": 194546899,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1587219552
+    },
+    {
+        "content": "<p>So for each object C every element of m is giving me an \"update\" on C</p>",
+        "id": 194546908,
+        "sender_full_name": "Fabrizio Genovese",
+        "timestamp": 1587219581
+    },
+    {
+        "content": "<p>i dunno about an \"update\" as much as an \"extension\"—\"update\" sounds to me like it'd be a morphism</p>",
+        "id": 194546957,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1587219611
+    },
+    {
+        "content": "<p>So wait, who are the objects of End(C)? Morphisms C -&gt; C for some C?</p>",
+        "id": 194546966,
+        "sender_full_name": "Fabrizio Genovese",
+        "timestamp": 1587219631
+    },
+    {
+        "content": "<p>oh!! sorry!!!</p>",
+        "id": 194546968,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1587219637
+    },
+    {
+        "content": "<p>End(C) is the category of endofunctors on C, monoidal under composition</p>",
+        "id": 194546971,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1587219649
+    },
+    {
+        "content": "<p>so this is a direct categorification of monoid actions on sets</p>",
+        "id": 194546975,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1587219659
+    },
+    {
+        "content": "<p>Oh, ok, the same one where monads live</p>",
+        "id": 194546979,
+        "sender_full_name": "Fabrizio Genovese",
+        "timestamp": 1587219663
+    },
+    {
+        "content": "<p>gr8</p>",
+        "id": 194546980,
+        "sender_full_name": "Fabrizio Genovese",
+        "timestamp": 1587219664
+    },
+    {
+        "content": "<p>yup</p>",
+        "id": 194546986,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1587219668
+    },
+    {
+        "content": "<p>in fact, lax monoidal functors turn monoids into monoids, so if you have a monoid object in M, you get a monad on any M-actegory :)</p>",
+        "id": 194546992,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1587219689
+    },
+    {
+        "content": "<p>cool</p>",
+        "id": 194546997,
+        "sender_full_name": "Fabrizio Genovese",
+        "timestamp": 1587219701
+    },
+    {
+        "content": "<p>now, if X is an object of M and A is an object of the M-actegory (C, F), i'll write X . A to denote F(X)(A)</p>",
+        "id": 194547044,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1587219762
+    },
+    {
+        "content": "<p>F is the functor M -&gt; End(C)?</p>",
+        "id": 194547057,
+        "sender_full_name": "Fabrizio Genovese",
+        "timestamp": 1587219799
+    },
+    {
+        "content": "<p>yeah</p>",
+        "id": 194547060,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1587219801
+    },
+    {
+        "content": "<p>Ok</p>",
+        "id": 194547061,
+        "sender_full_name": "Fabrizio Genovese",
+        "timestamp": 1587219808
+    },
+    {
+        "content": "<p>so, if we have M-actegories C and D, and a profunctor C ⇸ D</p>",
+        "id": 194547065,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1587219829
+    },
+    {
+        "content": "<p>to equip P as a <em>Tambara module</em> is to give a way of lifting its heteromorphisms thru context extension</p>",
+        "id": 194547132,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1587219878
+    },
+    {
+        "content": "<p>that is, whenever we have f : A ~&gt; B, we need to be able to get f' : X . A ~&gt; X . B</p>",
+        "id": 194547141,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1587219900
+    },
+    {
+        "content": "<p>That's a very fancy way to say \"monoidal products don't have to get in the way\" :D</p>",
+        "id": 194547145,
+        "sender_full_name": "Fabrizio Genovese",
+        "timestamp": 1587219905
+    },
+    {
+        "content": "<p>and this needs to be subject to a whole boatload of diagrams</p>",
+        "id": 194547147,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1587219910
+    },
+    {
+        "content": "<p>well, monoidal product is only one very particular case of an actegory :)</p>",
+        "id": 194547157,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1587219933
+    },
+    {
+        "content": "<p>True</p>",
+        "id": 194547160,
+        "sender_full_name": "Fabrizio Genovese",
+        "timestamp": 1587219939
+    },
+    {
+        "content": "<p>Action is probably the right word</p>",
+        "id": 194547167,
+        "sender_full_name": "Fabrizio Genovese",
+        "timestamp": 1587219945
+    },
+    {
+        "content": "<p>but yes, I get what you are saying</p>",
+        "id": 194547168,
+        "sender_full_name": "Fabrizio Genovese",
+        "timestamp": 1587219953
+    },
+    {
+        "content": "<p>:)</p>",
+        "id": 194547171,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1587219956
+    },
+    {
+        "content": "<p>so then there's a key result which says</p>",
+        "id": 194547217,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1587219967
+    },
+    {
+        "content": "<p>So tambara means exactly that I can lift stupid morphisms to context-aware morphisms</p>",
+        "id": 194547218,
+        "sender_full_name": "Fabrizio Genovese",
+        "timestamp": 1587219968
+    },
+    {
+        "content": "<p>something like that?</p>",
+        "id": 194547229,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1587219994
+    },
+    {
+        "content": "<p>it's a kind of structure you can add to the profunctor</p>",
+        "id": 194547232,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1587220012
+    },
+    {
+        "content": "<p>Well they are well behaved wrt the action, so</p>",
+        "id": 194547235,
+        "sender_full_name": "Fabrizio Genovese",
+        "timestamp": 1587220019
+    },
+    {
+        "content": "<p>Oh, it's a structure</p>",
+        "id": 194547240,
+        "sender_full_name": "Fabrizio Genovese",
+        "timestamp": 1587220029
+    },
+    {
+        "content": "<p>so there's more than one way to do it</p>",
+        "id": 194547245,
+        "sender_full_name": "Fabrizio Genovese",
+        "timestamp": 1587220034
+    },
+    {
+        "content": "<p>ok</p>",
+        "id": 194547246,
+        "sender_full_name": "Fabrizio Genovese",
+        "timestamp": 1587220035
+    },
+    {
+        "content": "<p>welllllll, it's kind of like a functor's morphism mapping</p>",
+        "id": 194547247,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1587220041
+    },
+    {
+        "content": "<p>in the sense that it's technically structure, but there's usually really one obvious way to do it</p>",
+        "id": 194547249,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1587220052
+    },
+    {
+        "content": "<p>Yea, ok</p>",
+        "id": 194547252,
+        "sender_full_name": "Fabrizio Genovese",
+        "timestamp": 1587220060
+    },
+    {
+        "content": "<p>and plenty of mappings of objects have no morphism mapping that will work, so \"being functorial\" is also sort of a property</p>",
+        "id": 194547304,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1587220098
+    },
+    {
+        "content": "<p>many profunctors cannot be equipped as tambara modules</p>",
+        "id": 194547307,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1587220105
+    },
+    {
+        "content": "<p>Ok</p>",
+        "id": 194547313,
+        "sender_full_name": "Fabrizio Genovese",
+        "timestamp": 1587220123
+    },
+    {
+        "content": "<p>but anyway so</p>",
+        "id": 194547316,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1587220130
+    },
+    {
+        "content": "<p>[one of] the key result[s] is</p>",
+        "id": 194547325,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1587220145
+    },
+    {
+        "content": "<p>well, first: given M-actegories C and D, we have a general definition of a category of optics whose objects are pairs (S ∈ C, T ∈ D) in terms of coends</p>",
+        "id": 194547337,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1587220186
+    },
+    {
+        "content": "<p>and then:</p>",
+        "id": 194547339,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1587220190
+    },
+    {
+        "content": "<p>Yes, I remember that definition :D</p>",
+        "id": 194547402,
+        "sender_full_name": "Fabrizio Genovese",
+        "timestamp": 1587220236
+    },
+    {
+        "content": "<p>[one of] the key result[s] is: optics (S, T) → (A, B) are equivalent to transformations P(A, B) → P(S, T), natural in P, which ranges over Tambara modules C ⇸ D</p>",
+        "id": 194547418,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1587220288
+    },
+    {
+        "content": "<p>i.e.: an optic is something that can take context-liftable heteromorphisms A ~&gt; B and lift them to ones S ~&gt; T</p>",
+        "id": 194547424,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1587220317
+    },
+    {
+        "content": "<p>Oh!</p>",
+        "id": 194547469,
+        "sender_full_name": "Fabrizio Genovese",
+        "timestamp": 1587220353
+    },
+    {
+        "content": "<p>Is this the profunctor representation theorem in <a href=\"https://arxiv.org/pdf/2001.07488.pdf\" title=\"https://arxiv.org/pdf/2001.07488.pdf\">https://arxiv.org/pdf/2001.07488.pdf</a>?</p>",
+        "id": 194547473,
+        "sender_full_name": "Fabrizio Genovese",
+        "timestamp": 1587220367
+    },
+    {
+        "content": "<p>yup!</p>",
+        "id": 194547477,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1587220376
+    },
+    {
+        "content": "<p>Great, so that theorem is exactly saying to me that I can close combs?</p>",
+        "id": 194547485,
+        "sender_full_name": "Fabrizio Genovese",
+        "timestamp": 1587220389
+    },
+    {
+        "content": "<p>exactly!</p>",
+        "id": 194547488,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1587220402
+    },
+    {
+        "content": "<p>well, one direction is saying that you can close combs with heteromorphisms of any tambara module</p>",
+        "id": 194547502,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1587220431
+    },
+    {
+        "content": "<p><span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>∗</mo><mi mathvariant=\"normal\">_</mi><mo>∗</mo></mrow><annotation encoding=\"application/x-tex\"><em>\\_</em></annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.77528em;vertical-align:-0.31em;\"></span><span class=\"mord\">∗</span><span class=\"mord\" style=\"margin-right:0.02778em;\">_</span><span class=\"mord\">∗</span></span></span></span></p>",
+        "id": 194547507,
+        "sender_full_name": "Fabrizio Genovese",
+        "timestamp": 1587220434
+    },
+    {
+        "content": "<p>the other direction is saying that if you have a comb which you can close with heteromorphisms of any tambara module, <em>that's an optic</em></p>",
+        "id": 194547548,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1587220445
+    },
+    {
+        "content": "<p>Yup. So all my headaches were due to the fact that I was working with the frong side of the theorem</p>",
+        "id": 194547592,
+        "sender_full_name": "Fabrizio Genovese",
+        "timestamp": 1587220499
+    },
+    {
+        "content": "<p>Cool :D</p>",
+        "id": 194547593,
+        "sender_full_name": "Fabrizio Genovese",
+        "timestamp": 1587220500
+    },
+    {
+        "content": "<p><span aria-label=\"thumbs up\" class=\"emoji emoji-1f44d\" role=\"img\" title=\"thumbs up\">:thumbs_up:</span></p>",
+        "id": 194547599,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1587220510
+    },
+    {
+        "content": "<p>Well, this was immensely helpful</p>",
+        "id": 194547601,
+        "sender_full_name": "Fabrizio Genovese",
+        "timestamp": 1587220517
+    },
+    {
+        "content": "<p>Thank you very much :D</p>",
+        "id": 194547602,
+        "sender_full_name": "Fabrizio Genovese",
+        "timestamp": 1587220521
+    },
+    {
+        "content": "<p><span aria-label=\"heart\" class=\"emoji emoji-2764\" role=\"img\" title=\"heart\">:heart:</span> <span aria-label=\"heart\" class=\"emoji emoji-2764\" role=\"img\" title=\"heart\">:heart:</span> <span aria-label=\"heart\" class=\"emoji emoji-2764\" role=\"img\" title=\"heart\">:heart:</span></p>",
+        "id": 194547603,
+        "sender_full_name": "Fabrizio Genovese",
+        "timestamp": 1587220523
+    },
+    {
+        "content": "<p>no problem!</p>",
+        "id": 194547604,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1587220524
+    },
+    {
+        "content": "<p>this is an explanation i've been rehearsing lol</p>",
+        "id": 194547606,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1587220534
+    },
+    {
+        "content": "<p>it's basically the amped-up version of what's going into my talk</p>",
+        "id": 194547610,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1587220544
+    },
+    {
+        "content": "<p>(in there im gonna talk about preordered monoids &amp; stuff rather than monoidal categories, since everything im doing is depleted)</p>",
+        "id": 194547656,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1587220573
+    },
+    {
+        "content": "<p>Well, on behalf of the people(?) of the potato nation I say thank you</p>",
+        "id": 194547657,
+        "sender_full_name": "Fabrizio Genovese",
+        "timestamp": 1587220575
+    },
+    {
+        "content": "<p>you may also find it helpful to know that uh</p>",
+        "id": 194547678,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1587220615
+    },
+    {
+        "content": "<p>Tambara modules form the 1-cells of a bicategory Tamb whose objects are M-actegories</p>",
+        "id": 194547692,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1587220643
+    },
+    {
+        "content": "<p>this is the M-equivariant version of the bicategory Prof</p>",
+        "id": 194547698,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1587220655
+    },
+    {
+        "content": "<p>It's not immediately useful for me, but I'll try to not forget it in case I'll need it :D</p>",
+        "id": 194547746,
+        "sender_full_name": "Fabrizio Genovese",
+        "timestamp": 1587220701
+    },
+    {
+        "content": "<p>and Hom is the identity in Tamb just like it is in Prof</p>",
+        "id": 194547748,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1587220707
+    },
+    {
+        "content": "<p>it's always a tambara module C ⇸ C</p>",
+        "id": 194547754,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1587220721
+    },
+    {
+        "content": "<p>anyway here's a quick example of an action which you might find plausible that isn't just plain ⊗</p>",
+        "id": 194547764,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1587220756
+    },
+    {
+        "content": "<p>given a monoidal category C, let M be C × C, but put a monoidal structure on it by setting (A, B) ⊗ (A', B') = (A ⊗ A', B' ⊗ B)</p>",
+        "id": 194547818,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1587220803
+    },
+    {
+        "content": "<p>(this is actually a vast generalization of an example i use in my talk <span aria-label=\"wink\" class=\"emoji emoji-1f609\" role=\"img\" title=\"wink\">:wink:</span>)</p>",
+        "id": 194547833,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1587220822
+    },
+    {
+        "content": "<p>(where the monoidal category in question is... the discrete monoidal category of strings)</p>",
+        "id": 194547842,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1587220847
+    },
+    {
+        "content": "<p>so here acting on something with a context can put something before it <em>and</em> after it</p>",
+        "id": 194547856,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1587220881
+    },
+    {
+        "content": "<p>which you can't do with just acting on the left, if your ⊗ is not braided</p>",
+        "id": 194547860,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1587220891
+    },
+    {
+        "content": "<p>uh, right, and let the action of M on C be given by (X, Y) . A = X ⊗ A ⊗ Y</p>",
+        "id": 194547917,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1587220933
+    },
+    {
+        "content": "<p>I'll be at your talk :D</p>",
+        "id": 194547937,
+        "sender_full_name": "Fabrizio Genovese",
+        "timestamp": 1587220984
+    },
+    {
+        "content": "<p>^_^</p>",
+        "id": 194547950,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1587221013
+    },
+    {
+        "content": "<p>hope you like program verification lol</p>",
+        "id": 194548027,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1587221099
+    },
+    {
+        "content": "<p>No, I hate it but I work with this stuff, so...</p>",
+        "id": 194548149,
+        "sender_full_name": "Fabrizio Genovese",
+        "timestamp": 1587221304
+    },
+    {
+        "content": "<p>hah</p>",
+        "id": 194548159,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1587221318
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276438\">Fabrizio Genovese</span> <a href=\"#narrow/stream/229199-learning.3A-basic.20questions/topic/Composing.20optics/near/194546530\" title=\"#narrow/stream/229199-learning.3A-basic.20questions/topic/Composing.20optics/near/194546530\">said</a>:</p>\n<blockquote>\n<p>Potato + random oracle maybe</p>\n</blockquote>\n<p>GLaDOS!?</p>",
+        "id": 194552782,
+        "sender_full_name": "[Mod] Morgan Rogers",
+        "timestamp": 1587227460
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276072\">sarahzrf</span> <a href=\"#narrow/stream/229199-learning.3A-basic.20questions/topic/Composing.20optics/near/194546726\" title=\"#narrow/stream/229199-learning.3A-basic.20questions/topic/Composing.20optics/near/194546726\">said</a>:</p>\n<blockquote>\n<p>(and now im just giving you the optics crash course ;) )</p>\n</blockquote>\n<p>I was hoping the discussion would go this way, I hope this gives me the opportunity to ask some much more basic questions myself, like... what's a lens? And what's an optic? I've now read the nLab pages, but I want to hear what you would tell someone if they asked you about these things in person <span aria-label=\"wink\" class=\"emoji emoji-1f609\" role=\"img\" title=\"wink\">:wink:</span></p>",
+        "id": 194552869,
+        "sender_full_name": "[Mod] Morgan Rogers",
+        "timestamp": 1587227579
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"277473\">Morgan Rogers</span> <a href=\"#narrow/stream/229199-learning.3A-basic.20questions/topic/Composing.20optics/near/194552869\" title=\"#narrow/stream/229199-learning.3A-basic.20questions/topic/Composing.20optics/near/194552869\">said</a>:</p>\n<blockquote>\n<p><span class=\"user-mention silent\" data-user-id=\"276072\">sarahzrf</span> <a href=\"#narrow/stream/229199-learning.3A-basic.20questions/topic/Composing.20optics/near/194546726\" title=\"#narrow/stream/229199-learning.3A-basic.20questions/topic/Composing.20optics/near/194546726\">said</a>:</p>\n<blockquote>\n<p>(and now im just giving you the optics crash course ;) )</p>\n</blockquote>\n<p>I was hoping the discussion would go this way, I hope this gives me the opportunity to ask some much more basic questions myself, like... what's a lens? And what's an optic? I've now read the nLab pages, but I want to hear what you would tell someone if they asked you about these things in person <span aria-label=\"wink\" class=\"emoji emoji-1f609\" role=\"img\" title=\"wink\">:wink:</span></p>\n</blockquote>\n<p>i would probably give the same lecture i just did above <span aria-label=\"mischievous\" class=\"emoji emoji-1f61b\" role=\"img\" title=\"mischievous\">:mischievous:</span></p>",
+        "id": 194572354,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1587258432
+    },
+    {
+        "content": "<p>I was hoping you could give me a little more insight into optics than the nLab's spiel, though:</p>\n<blockquote>\n<p>Optics are constructions used in computer science as bidirectional data accessors. They include lenses and prisms, used to access, respectively, components of product data types and components of coproduct data types.</p>\n</blockquote>\n<p>If there's no further insight to be had (is it just a cool name for typification of universal morphisms to limits/colimits?) then never mind</p>",
+        "id": 194590548,
+        "sender_full_name": "[Mod] Morgan Rogers",
+        "timestamp": 1587292211
+    },
+    {
+        "content": "<p>i mean, the lecture i gave above involved considerably more than that...</p>",
+        "id": 194620553,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1587334708
+    },
+    {
+        "content": "<p>Your lecture contains plenty of information, but as someone who didn't know any of the concepts beyond what a profunctor is beforehand, I'm trying to say \"your lecture made this subject sound cool, but what is it about?\" For example, what is the motivation for studying optics, and why is the representation theorem that was mentioned [one of] the key result[s]?<br>\nThis is <a class=\"stream\" data-stream-id=\"229199\" href=\"/#narrow/stream/229199-learning.3A-basic-questions\">#learning: basic questions</a>, after all, I'm not just being facetious!</p>",
+        "id": 194654553,
+        "sender_full_name": "[Mod] Morgan Rogers",
+        "timestamp": 1587376932
+    },
+    {
+        "content": "<p>functional programming, database views and schemas: bidirectional data accessors, used to lift transformations of small things to transformations of bigger things the small things are inside</p>\n<p>supervised learning (brendan fong): <a href=\"https://arxiv.org/abs/1903.03671\" title=\"https://arxiv.org/abs/1903.03671\">https://arxiv.org/abs/1903.03671</a></p>\n<p>compositional game theory (jules hedges): <a href=\"https://arxiv.org/search/cs?searchtype=author&amp;query=Hedges%2C+J\" title=\"https://arxiv.org/search/cs?searchtype=author&amp;query=Hedges%2C+J\">https://arxiv.org/search/cs?searchtype=author&amp;query=Hedges%2C+J</a></p>",
+        "id": 194656710,
+        "sender_full_name": "Pastel Raschke",
+        "timestamp": 1587378287
+    },
+    {
+        "content": "<p>note learners and open games are lenses, not optics in general (unless someone would like to correct me on that)</p>",
+        "id": 194657972,
+        "sender_full_name": "Pastel Raschke",
+        "timestamp": 1587379160
+    },
+    {
+        "content": "<p>I'd like to correct you on that</p>",
+        "id": 194658079,
+        "sender_full_name": "Jules Hedges",
+        "timestamp": 1587379218
+    },
+    {
+        "content": "<p>Open games are not lenses. The other way round is true, but that's not conceptually very interesting (open games are indexed families of lenses plus a bit more, so a lens is an open game via a singleton family). Open learners turn out to be <em>symmetric lenses</em> which is an existing thing that turns out to be more or less spans of ordinary lenses (but with a slightly different composition). That trick fails for open games though</p>",
+        "id": 194658275,
+        "sender_full_name": "Jules Hedges",
+        "timestamp": 1587379334
+    },
+    {
+        "content": "<p>Also open games (and probably also open learners) can be easily generalised from lenses to optics. I now take that as the basic definition because it's so useful</p>",
+        "id": 194658321,
+        "sender_full_name": "Jules Hedges",
+        "timestamp": 1587379375
+    },
+    {
+        "content": "<p>In any case, the <em>real</em> motivation for studying optics is as bidirectional transformations of data. The other applications very much come out of nowhere. I wrote an <em>extremely</em> revisionist history here: <a href=\"https://julesh.com/2018/08/16/lenses-for-philosophers/\" title=\"https://julesh.com/2018/08/16/lenses-for-philosophers/\">https://julesh.com/2018/08/16/lenses-for-philosophers/</a></p>",
+        "id": 194658508,
+        "sender_full_name": "Jules Hedges",
+        "timestamp": 1587379527
+    },
+    {
+        "content": "<p>those applications came out of category ether, but are now their own sources of motivation for people who may not be as interested in database schema transformation</p>",
+        "id": 194658829,
+        "sender_full_name": "Pastel Raschke",
+        "timestamp": 1587379767
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"277473\">Morgan Rogers</span> <a href=\"#narrow/stream/229199-learning.3A-basic.20questions/topic/Composing.20optics/near/194654553\" title=\"#narrow/stream/229199-learning.3A-basic.20questions/topic/Composing.20optics/near/194654553\">said</a>:</p>\n<blockquote>\n<p>Your lecture contains plenty of information, but as someone who didn't know any of the concepts beyond what a profunctor is beforehand, I'm trying to say \"your lecture made this subject sound cool, but what is it about?\" For example, what is the motivation for studying optics, and why is the representation theorem that was mentioned [one of] the key result[s]?<br>\nThis is <a class=\"stream\" data-stream-id=\"229199\" href=\"/#narrow/stream/229199-learning.3A-basic-questions\">#learning: basic questions</a>, after all, I'm not just being facetious!</p>\n</blockquote>\n<p>right, sorry!</p>",
+        "id": 194746141,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1587425920
+    },
+    {
+        "content": "<p>i'll post more l8r, rn i have split attention</p>",
+        "id": 194746157,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1587425933
+    },
+    {
+        "content": "<p>o i see jules has already covered it actually :&gt;</p>",
+        "id": 194746229,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1587426002
+    },
+    {
+        "content": "<p>Yep, I'm referring to bayesian open games, and yep, it hasn't been written up for open learners</p>",
+        "id": 195089188,
+        "sender_full_name": "Jules Hedges",
+        "timestamp": 1587660605
+    }
+]

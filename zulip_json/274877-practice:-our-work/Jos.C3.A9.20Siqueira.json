@@ -1,0 +1,278 @@
+[
+    {
+        "content": "<p>I thought it'd be a good idea to tell you what I've been up to as well!</p>\n<p>I submitted a couple of papers last year, in collaboration with <span class=\"user-mention\" data-user-id=\"386922\">@Graham Manuell</span>  and <span class=\"user-mention\" data-user-id=\"386925\">@Peter Faul</span> :</p>\n<p>1) In <a href=\"https://arxiv.org/abs/2010.07926\">https://arxiv.org/abs/2010.07926</a>  we prove an extension of a classical theorem on collations of families of functors into a bifunctor, which turns out to also generalize the process of composing monads via a distributive law. This provides a notion of  \"distributive law\" for lax functors.</p>\n<p>2) In <a href=\"https://arxiv.org/abs/2012.04963\">https://arxiv.org/abs/2012.04963</a>,  we show that Artin glueings of toposes correspond to a 2-categorical notion of adjoint split extensions in the 2-category of toposes,  cartesian functors, and natural transformations. This is another instance of a statement for frames/locales carrying over to the topos level, although the process wasn't easy.</p>\n<p>I've also just submitted my PhD thesis, which doesn't really have to do with those papers; it is a new attempt to categorify nonstandard analysis, going through the route of Internal Set Theory and using Tripos Theory as the main tool. The idea is to show that if you start with a model of ZFC (with the language including a st(x) symbol), then the satisfaction of the additional axioms of IST that make nonstandard proofs work (Idealization, Standardization, and Transfer) correspond to certain relationships holding between 3  triposes you can build. This then<br>\nsuggests a notion of \"tripos model of IST\" which abstracts away what is necessary to make the machinery work, so that you can replicate the nonstandard proof methods in any such model. We can then describe what Standardization and Idealization (and not just Transfer) mean in contexts such as the one studied by A. Kock and C. J. Mikkelsen in their old paper on nonstandard extensions, for example.</p>\n<p>Now that it is submitted, I'll probably  think about how to structure some of the material (plus some extra stuff) into paper form and look for postdocs and collaborations. Please do get in touch if you think you can help with that :)</p>",
+        "id": 239075184,
+        "sender_full_name": "José Siqueira",
+        "timestamp": 1621252796
+    },
+    {
+        "content": "<p><em>2-dimensional bifunctor theorems and distributive laws</em> is a really nice paper. It seems very much in the vein of Street's <em>Two constructions on Lax functors</em>; I think it's surprising, but very satisfying, how many constructions on monads can be generalised to constructions on lax functors.</p>",
+        "id": 239112511,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1621266230
+    },
+    {
+        "content": "<p>I'm curious what other generalizations of constructions on monads to lax functors you have in mind?</p>",
+        "id": 239120238,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1621269014
+    },
+    {
+        "content": "<p>E.g. every adjunction gives rise to a monad; the Kleisli and Eilenberg–Moore constructions; the monadicity theorem; the structure–semantics adjunction.</p>",
+        "id": 239120685,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1621269204
+    },
+    {
+        "content": "<p>The Kleisli and EM constructions are just certain 2-categorical limits and colimits, so it's not surprising that they can be generalized.  I'm not sure what generalizations you are referring to for the others, can you give references?</p>",
+        "id": 239120925,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1621269297
+    },
+    {
+        "content": "<p>I ask because I recently noticed a way to interpret lax functors as literally being monads in an appropriate place, so I'm wondering how many of these generalizations can be viewed conversely as <em>specializations</em> of formal monad notions to lax functors from that viewpoint.</p>",
+        "id": 239121192,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1621269415
+    },
+    {
+        "content": "<blockquote>\n<p>The Kleisli and EM constructions are just certain 2-categorical limits and colimits, so it's not surprising that they can be generalized.</p>\n</blockquote>\n<p>If you have the right way of looking at things, nothing is surprising – but I think phrasing them as lax colimits and limits in the first place is a surprising fact when one first encounters it.</p>",
+        "id": 239121476,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1621269522
+    },
+    {
+        "content": "<blockquote>\n<p>I'm not sure what generalizations you are referring to for the others, can you give references?</p>\n</blockquote>\n<p>All the other generalisations I mentioned are in <em>Two constructions on Lax functors</em>.</p>",
+        "id": 239121501,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1621269540
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276777\">Mike Shulman</span> <a href=\"#narrow/stream/274877-practice.3A-our.20work/topic/Jos.C3.A9.20Siqueira/near/239121192\">said</a>:</p>\n<blockquote>\n<p>I ask because I recently noticed a way to interpret lax functors as literally being monads in an appropriate place, so I'm wondering how many of these generalizations can be viewed conversely as <em>specializations</em> of formal monad notions to lax functors from that viewpoint.</p>\n</blockquote>\n<p>That sounds very interesting! Can you say any more?</p>",
+        "id": 239121553,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1621269566
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276777\">Mike Shulman</span> <a href=\"#narrow/stream/274877-practice.3A-our.20work/topic/Jos.C3.A9.20Siqueira/near/239121192\">said</a>:</p>\n<blockquote>\n<p>I ask because I recently noticed a way to interpret lax functors as literally being monads in an appropriate place, so I'm wondering how many of these generalizations can be viewed conversely as <em>specializations</em> of formal monad notions to lax functors from that viewpoint.</p>\n</blockquote>\n<p>I'd also be interested to hear about this, because I thought about it a bit when we were writing the paper, but I couldn't see how to make it work. Later at a talk I gave, <span class=\"user-mention\" data-user-id=\"277067\">@Tom Leinster</span> suggested trying to generalise the result that monoidal functors from C to D are monoids in the category of all functors from C to D with Day convolution as the tensor product. This suggests a rather weird generalisation to some kind of 2-category of maps between 2-categories that don't need to preserve the 1-dimensional structure, but I haven't had time to think exactly how this would work.</p>",
+        "id": 239149412,
+        "sender_full_name": "Graham Manuell",
+        "timestamp": 1621281144
+    },
+    {
+        "content": "<p>I'll send a note by email.</p>",
+        "id": 239174773,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1621293984
+    },
+    {
+        "content": "<p>Or I would, if I knew your email addresses.  I have Nathanael's.</p>",
+        "id": 239175072,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1621294223
+    },
+    {
+        "content": "<p>I'd love to hear about that too (<a href=\"mailto:jvp27@cam.ac.uk\">jvp27@cam.ac.uk</a>). I can forward it to Graham.</p>",
+        "id": 239221224,
+        "sender_full_name": "José Siqueira",
+        "timestamp": 1621328889
+    },
+    {
+        "content": "<p><span class=\"user-mention\" data-user-id=\"276777\">@Mike Shulman</span>  Could you also send it to me? <a href=\"mailto:chetanv2801@gmail.com\">chetanv2801@gmail.com</a></p>",
+        "id": 239227888,
+        "sender_full_name": "Chetan Vuppulury",
+        "timestamp": 1621332201
+    },
+    {
+        "content": "<p>Will do.</p>",
+        "id": 239264115,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1621348547
+    },
+    {
+        "content": "<p>I'd also be interested in seeing this if you wouldn't mind Mike (<a href=\"mailto:nick.hu@cs.ox.ac.uk\">nick.hu@cs.ox.ac.uk</a>)</p>",
+        "id": 239266026,
+        "sender_full_name": "Nick Hu",
+        "timestamp": 1621349179
+    },
+    {
+        "content": "<p>It may be easier to create a list of people who don't want to see it.  I don't want to see it.</p>",
+        "id": 239281873,
+        "sender_full_name": "John Baez",
+        "timestamp": 1621354559
+    },
+    {
+        "content": "<p>The final version of my thesis (\"Tripos models of Internal Set Theory\") has been approved. For now I plan to start some joint work with <span class=\"user-mention\" data-user-id=\"386561\">@Hugo Luiz Mariano</span>  and <span class=\"user-mention\" data-user-id=\"276656\">@Valeria de Paiva</span>, and should stay in Cambridge for another term to lecture a course. No idea of what else the future will bring, but I'm open to suggestions!</p>",
+        "id": 264217993,
+        "sender_full_name": "José Siqueira",
+        "timestamp": 1638996491
+    },
+    {
+        "content": "<p>Congrats!!</p>",
+        "id": 264218417,
+        "sender_full_name": "Valeria de Paiva",
+        "timestamp": 1638996708
+    },
+    {
+        "content": "<p><span class=\"user-mention\" data-user-id=\"276691\">@José Siqueira</span>, congrats! Is there a PDF version of your thesis online? I couldn't find it.</p>",
+        "id": 264219767,
+        "sender_full_name": "Sam Staton",
+        "timestamp": 1638997289
+    },
+    {
+        "content": "<p>Thanks! It seems that the deposited copy is not live yet, but it should be available to access from the repository soon.</p>",
+        "id": 264286250,
+        "sender_full_name": "José Siqueira",
+        "timestamp": 1639048500
+    },
+    {
+        "content": "<p><span class=\"user-mention\" data-user-id=\"276691\">@José Siqueira</span> Congratulations, José!</p>",
+        "id": 264295650,
+        "sender_full_name": "Alexander Campbell",
+        "timestamp": 1639054241
+    },
+    {
+        "content": "<p><span class=\"user-mention\" data-user-id=\"276691\">@José Siqueira</span> Does that make you PTJ’s final student?</p>",
+        "id": 264296257,
+        "sender_full_name": "Alexander Campbell",
+        "timestamp": 1639054579
+    },
+    {
+        "content": "<p>Thanks! I suppose it does; the department doesn't seem keen on letting him have new students after his retirement.</p>",
+        "id": 264299999,
+        "sender_full_name": "José Siqueira",
+        "timestamp": 1639056336
+    },
+    {
+        "content": "<p>Congratulations! I didn't know Peter took a new student.</p>",
+        "id": 264300807,
+        "sender_full_name": "Zhen Lin Low",
+        "timestamp": 1639056698
+    },
+    {
+        "content": "<p>He actually took <span class=\"user-mention\" data-user-id=\"386925\">@Peter Faul</span> as a student as well, who was my office mate (and collaborator on a couple of papers, along with <span class=\"user-mention\" data-user-id=\"386922\">@Graham Manuell</span> ). Peter defended his thesis in April, I believe.</p>",
+        "id": 264302053,
+        "sender_full_name": "José Siqueira",
+        "timestamp": 1639057261
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276691\">José Siqueira</span> <a href=\"#narrow/stream/274877-practice.3A-our.20work/topic/Jos.C3.A9.20Siqueira/near/264286250\">said</a>:</p>\n<blockquote>\n<p>Thanks! It seems that the deposited copy is not live yet, but it should be available to access from the repository soon.</p>\n</blockquote>\n<p>Congratulations!  It would be wise to put it on the arXiv, since that way more people will find it.  I require all my students to put their theses on the arXiv.</p>",
+        "id": 264384495,
+        "sender_full_name": "John Baez",
+        "timestamp": 1639094037
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"275920\">John Baez</span> <a href=\"#narrow/stream/274877-practice.3A-our.20work/topic/Jos.C3.A9.20Siqueira/near/264384495\">said</a>:</p>\n<blockquote>\n<p>It would be wise to put it on the arXiv, since that way more people will find it.  I require all my students to put their theses on the arXiv.</p>\n</blockquote>\n<p>This is a little off topic, but I was wondering if you have any advice about how to go about doing this. It seems to me that it would require an inordinate amount of effort to get my thesis into a form that would compile properly on the arXiv. I'd happily upload the resulting pdf, but this is against their policy (for reasons that I don't understand) and I'm worried they will ban me or something if I try to circumvent the restrictions.</p>",
+        "id": 264475696,
+        "sender_full_name": "Graham Manuell",
+        "timestamp": 1639155549
+    },
+    {
+        "content": "<p>You can contact arXiv directly, and they may be willing to make an exception for the \"no PDF\" rule. I know others who have done this.</p>",
+        "id": 264476467,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1639155843
+    },
+    {
+        "content": "<p>I have that exact problem with arXiv too. I'll try getting in touch with them.</p>",
+        "id": 264517127,
+        "sender_full_name": "José Siqueira",
+        "timestamp": 1639174894
+    },
+    {
+        "content": "<p>That's precisely the reason why I haven't uploaded my thesis to arXiv, but I figured if it's on dSpace then that's good enough...</p>",
+        "id": 264518704,
+        "sender_full_name": "Zhen Lin Low",
+        "timestamp": 1639175905
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"386922\">Graham Manuell</span> <a href=\"#narrow/stream/274877-practice.3A-our.20work/topic/Jos.C3.A9.20Siqueira/near/264475696\">said</a>:</p>\n<blockquote>\n<p><span class=\"user-mention silent\" data-user-id=\"275920\">John Baez</span> <a href=\"#narrow/stream/274877-practice.3A-our.20work/topic/Jos.C3.A9.20Siqueira/near/264384495\">said</a>:</p>\n<blockquote>\n<p>It would be wise to put it on the arXiv, since that way more people will find it.  I require all my students to put their theses on the arXiv.</p>\n</blockquote>\n<p>This is a little off topic, but I was wondering if you have any advice about how to go about doing this. It seems to me that it would require an inordinate amount of effort to get my thesis into a form that would compile properly on the arXiv. I'd happily upload the resulting pdf, but this is against their policy (for reasons that I don't understand) and I'm worried they will ban me or something if I try to circumvent the restrictions.</p>\n</blockquote>\n<p>If your document is written in <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mtext>LaTeX</mtext></mrow><annotation encoding=\"application/x-tex\">\\LaTeX</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8988em;vertical-align:-0.2155em;\"></span><span class=\"mord text\"><span class=\"mord textrm\">L</span><span class=\"mspace\" style=\"margin-right:-0.36em;\"></span><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.6833em;\"><span style=\"top:-2.905em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"mord\"><span class=\"mord textrm mtight sizing reset-size6 size3\">A</span></span></span></span></span></span><span class=\"mspace\" style=\"margin-right:-0.15em;\"></span><span class=\"mord text\"><span class=\"mord textrm\">T</span><span class=\"mspace\" style=\"margin-right:-0.1667em;\"></span><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.4678em;\"><span style=\"top:-2.7845em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"mord\"><span class=\"mord textrm\">E</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.2155em;\"><span></span></span></span></span><span class=\"mspace\" style=\"margin-right:-0.125em;\"></span><span class=\"mord textrm\">X</span></span></span></span></span></span> but you worry about packages incompatibilities, you can use this: <a href=\"https://github.com/djsutherland/arxiv-collector\">https://github.com/djsutherland/arxiv-collector</a></p>",
+        "id": 264533513,
+        "sender_full_name": "Fabrizio Genovese",
+        "timestamp": 1639187143
+    },
+    {
+        "content": "<p>In my case it's written in LaTeX but with unicode-math (so requiring lualatex or xelatex) and (gasp) commercial fonts, so many hurdles to get it to compile...</p>",
+        "id": 264538770,
+        "sender_full_name": "Zhen Lin Low",
+        "timestamp": 1639194210
+    },
+    {
+        "content": "<p>At the very least, it seems to be live on Apollo now: <a href=\"https://www.repository.cam.ac.uk/handle/1810/331351\">https://www.repository.cam.ac.uk/handle/1810/331351</a></p>",
+        "id": 264557664,
+        "sender_full_name": "José Siqueira",
+        "timestamp": 1639222447
+    },
+    {
+        "content": "<p>That looks interesting! The proposal to replace the standard-element predicate with modified quantifiers seems clever. Is there a quick summary / presentation / talk I can look at?</p>",
+        "id": 264562298,
+        "sender_full_name": "Zhen Lin Low",
+        "timestamp": 1639228562
+    },
+    {
+        "content": "<p>I'm actually giving a quick talk on this at the Brazil-Colombia Logic Meeting next Thursday. Would you like me to email you the slides?</p>",
+        "id": 264562932,
+        "sender_full_name": "José Siqueira",
+        "timestamp": 1639229348
+    },
+    {
+        "content": "<p>Sure, thanks! You can email me at my @cantab.net address (discoverable on arXiv, by autoresponder at my old @cam.ac.uk or @dpmms address, etc.)</p>",
+        "id": 264562997,
+        "sender_full_name": "Zhen Lin Low",
+        "timestamp": 1639229504
+    },
+    {
+        "content": "<p>Done!</p>",
+        "id": 264563321,
+        "sender_full_name": "José Siqueira",
+        "timestamp": 1639229966
+    },
+    {
+        "content": "<p>Got it, thanks!</p>",
+        "id": 264563329,
+        "sender_full_name": "Zhen Lin Low",
+        "timestamp": 1639229992
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276438\">Fabrizio Genovese</span> <a href=\"#narrow/stream/274877-practice.3A-our.20work/topic/Jos.C3.A9.20Siqueira/near/264533513\">said</a>:</p>\n<blockquote>\n<p>If your document is written in <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mtext>LaTeX</mtext></mrow><annotation encoding=\"application/x-tex\">\\LaTeX</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8988em;vertical-align:-0.2155em;\"></span><span class=\"mord text\"><span class=\"mord textrm\">L</span><span class=\"mspace\" style=\"margin-right:-0.36em;\"></span><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.6833em;\"><span style=\"top:-2.905em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"mord\"><span class=\"mord textrm mtight sizing reset-size6 size3\">A</span></span></span></span></span></span><span class=\"mspace\" style=\"margin-right:-0.15em;\"></span><span class=\"mord text\"><span class=\"mord textrm\">T</span><span class=\"mspace\" style=\"margin-right:-0.1667em;\"></span><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.4678em;\"><span style=\"top:-2.7845em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"mord\"><span class=\"mord textrm\">E</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.2155em;\"><span></span></span></span></span><span class=\"mspace\" style=\"margin-right:-0.125em;\"></span><span class=\"mord textrm\">X</span></span></span></span></span></span> but you worry about packages incompatibilities, you can use this: <a href=\"https://github.com/djsutherland/arxiv-collector\">https://github.com/djsutherland/arxiv-collector</a></p>\n</blockquote>\n<p>Thanks. That looks like it could be generally useful. I'd have to play around a bit to see if this is sufficient.</p>",
+        "id": 264567990,
+        "sender_full_name": "Graham Manuell",
+        "timestamp": 1639236275
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"386922\">Graham Manuell</span> <a href=\"#narrow/stream/274877-practice.3A-our.20work/topic/Jos.C3.A9.20Siqueira/near/264475696\">said</a>:</p>\n<blockquote>\n<p><span class=\"user-mention silent\" data-user-id=\"275920\">John Baez</span> <a href=\"#narrow/stream/274877-practice.3A-our.20work/topic/Jos.C3.A9.20Siqueira/near/264384495\">said</a>:</p>\n<blockquote>\n<p>It would be wise to put it on the arXiv, since that way more people will find it.  I require all my students to put their theses on the arXiv.</p>\n</blockquote>\n<p>This is a little off topic, but I was wondering if you have any advice about how to go about doing this. It seems to me that it would require an inordinate amount of effort to get my thesis into a form that would compile properly on the arXiv. </p>\n</blockquote>\n<p>If you're going into academia in mathematics, you need to start preparing documents in LaTeX in ways that compile on the arXiv: this is just a fact of life now.   So if it helps, you can think of this effort as work that you probably should have already done, which you are doing now.</p>",
+        "id": 264574998,
+        "sender_full_name": "John Baez",
+        "timestamp": 1639244997
+    },
+    {
+        "content": "<p>Most of my grad students write papers in LaTeX, publish them (or at least submit them to journals) - and then when it comes time to write their thesis, they take these papers and turn them into a thesis.   By that time they're already used to the arXiv, so it doesn't take a vast amount of work to make their thesis arXiv-ready.</p>\n<p>By the way, you can upload LaTeX packages in your arXiv submission.</p>",
+        "id": 264575223,
+        "sender_full_name": "John Baez",
+        "timestamp": 1639245263
+    },
+    {
+        "content": "<p><span class=\"user-mention\" data-user-id=\"416301\">@Zhen Lin Low</span>, I tried to use unicode-math and newunicodechar, but they were buggy for me and I found their innards too hard to understand... now I use this trick here, that is non-standard but only uses \\ifluatex, \\DeclareUnicodeChar and \\catcode:<br>\n<a href=\"http://angg.twu.net/LATEX/2021composes-hash.tex.html\">http://angg.twu.net/LATEX/2021composes-hash.tex.html</a><br>\n<a href=\"http://angg.twu.net/LATEX/2021composes-hash.tex.html#test\">http://angg.twu.net/LATEX/2021composes-hash.tex.html#test</a></p>",
+        "id": 264601439,
+        "sender_full_name": "Eduardo Ochs",
+        "timestamp": 1639281227
+    },
+    {
+        "content": "<p><span class=\"user-mention\" data-user-id=\"276773\">@Eduardo Ochs</span> That's not what I meant by I use <code>unicode-math</code>. I don't input Unicode mathematical symbols directly, but I do use Unicode mathematical fonts (specifically, STIX-Math) in the output, instead of traditional TeX fonts. I don't know what the situation is now, but 6 years ago when I was writing my thesis STIX-Math had excellent coverage of symbols in a single font, which helped visual consistency. Times Roman is not my favourite typeface but STIX-Math was compelling enough that I typeset the running text in Times Roman for consistency.</p>",
+        "id": 264602780,
+        "sender_full_name": "Zhen Lin Low",
+        "timestamp": 1639282964
+    },
+    {
+        "content": "<p>Oops! Ok, then I can't help you... =(</p>",
+        "id": 264602996,
+        "sender_full_name": "Eduardo Ochs",
+        "timestamp": 1639283290
+    },
+    {
+        "content": "<p>Thanks for the link, José!</p>\n<p>Recently I had a paper that wouldn't compile on arxiv. I went through the \"contact us\" link to get to technical support, and they immediately granted an exception to allow us to submit a pdf on its own. It's perhaps not ideal but I think it's much better than sweating over it for days or putting it off. (I think my recent issue was that we had used xetex or luatex for some reason... I understand John's point but I also understand why some people want to experiment with different/better typesetting tools.)</p>",
+        "id": 264697846,
+        "sender_full_name": "Sam Staton",
+        "timestamp": 1639397915
+    }
+]

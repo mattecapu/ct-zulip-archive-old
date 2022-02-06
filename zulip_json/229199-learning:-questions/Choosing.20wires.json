@@ -1,0 +1,92 @@
+[
+    {
+        "content": "<p>Wiring diagrams are great at representing a sequence of actions (boxes from left to right) and actions being performed in parallel (boxes above each other). What would be the most natural way to represent performing one of multiple actions? One could think of a box which takes input wires and directs them to one of possible boxes, the output would be a coproduct of possible outputs. One way to represent this without a new box type is to choose output after performing all parallel actions, but this has wrong semantics.</p>\n<p>This seems useful to represent recursion-free program execution.</p>",
+        "id": 196124748,
+        "sender_full_name": "keorn",
+        "timestamp": 1588541997
+    },
+    {
+        "content": "<p>Hi!</p>\n<p>I think the \"parallel dimensions\" topic addresses this obliquely:<br>\n<a href=\"#narrow/stream/229199-learning.3A-basic.20questions/topic/parallel.20dimensions\" title=\"#narrow/stream/229199-learning.3A-basic.20questions/topic/parallel.20dimensions\">https://categorytheory.zulipchat.com/#narrow/stream/229199-learning.3A-basic.20questions/topic/parallel.20dimensions</a></p>\n<p>There's also a way of thinking about flow charts in terms of coproducts  --- see Remark 6.7 of Selinger's <code>Survey of Graphical Languages for Monoidal Categories</code> for an example with a while loop that has a branch similar to what you mention.  Chapter 9 of the same deals with multiple monoidal operations at once, e.g. product and coproduct.</p>\n<p>I think part of what you're saying when you say that performing a choice after all the parallel actions is that <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>+</mo></mrow><annotation encoding=\"application/x-tex\">+</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.66666em;vertical-align:-0.08333em;\"></span><span class=\"mord\">+</span></span></span></span> and <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>×</mo></mrow><annotation encoding=\"application/x-tex\">\\times</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.66666em;vertical-align:-0.08333em;\"></span><span class=\"mord\">×</span></span></span></span> should only distribute one way in the category we're trying to construct: <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mo>+</mo><mo stretchy=\"false\">(</mo><mi>B</mi><mo>×</mo><mi>C</mi><mo stretchy=\"false\">)</mo><mo mathvariant=\"normal\">≠</mo><mo stretchy=\"false\">(</mo><mi>A</mi><mo>+</mo><mi>B</mi><mo stretchy=\"false\">)</mo><mo>×</mo><mo stretchy=\"false\">(</mo><mi>A</mi><mo>+</mo><mi>C</mi><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">A + (B \\times C) \\neq (A + B) \\times (A + C)</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.76666em;vertical-align:-0.08333em;\"></span><span class=\"mord mathdefault\">A</span><span class=\"mspace\" style=\"margin-right:0.2222222222222222em;\"></span><span class=\"mbin\">+</span><span class=\"mspace\" style=\"margin-right:0.2222222222222222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mopen\">(</span><span class=\"mord mathdefault\" style=\"margin-right:0.05017em;\">B</span><span class=\"mspace\" style=\"margin-right:0.2222222222222222em;\"></span><span class=\"mbin\">×</span><span class=\"mspace\" style=\"margin-right:0.2222222222222222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord mathdefault\" style=\"margin-right:0.07153em;\">C</span><span class=\"mclose\">)</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\"><span class=\"mrel\"><span class=\"mord\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.69444em;\"><span style=\"top:-3em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"rlap\"><span class=\"strut\" style=\"height:0.8888799999999999em;vertical-align:-0.19444em;\"></span><span class=\"inner\"><span class=\"mrel\"></span></span><span class=\"fix\"></span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.19444em;\"><span></span></span></span></span></span></span><span class=\"mrel\">=</span></span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mopen\">(</span><span class=\"mord mathdefault\">A</span><span class=\"mspace\" style=\"margin-right:0.2222222222222222em;\"></span><span class=\"mbin\">+</span><span class=\"mspace\" style=\"margin-right:0.2222222222222222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord mathdefault\" style=\"margin-right:0.05017em;\">B</span><span class=\"mclose\">)</span><span class=\"mspace\" style=\"margin-right:0.2222222222222222em;\"></span><span class=\"mbin\">×</span><span class=\"mspace\" style=\"margin-right:0.2222222222222222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mopen\">(</span><span class=\"mord mathdefault\">A</span><span class=\"mspace\" style=\"margin-right:0.2222222222222222em;\"></span><span class=\"mbin\">+</span><span class=\"mspace\" style=\"margin-right:0.2222222222222222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord mathdefault\" style=\"margin-right:0.07153em;\">C</span><span class=\"mclose\">)</span></span></span></span>.  Depending on the situation, there is a whole range of possible ways we might want our two monoidal operations to interact.  Perhaps it would be illuminating to specify exactly what sorts of distributivity axioms your intuition demands for the case at hand <span aria-label=\"slight smile\" class=\"emoji emoji-1f642\" role=\"img\" title=\"slight smile\">:slight_smile:</span></p>",
+        "id": 196126737,
+        "sender_full_name": "Sam Tenka",
+        "timestamp": 1588545606
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"284625\">keorn</span> <a href=\"#narrow/stream/229199-learning.3A-basic.20questions/topic/Choosing.20wires/near/196124748\" title=\"#narrow/stream/229199-learning.3A-basic.20questions/topic/Choosing.20wires/near/196124748\">said</a>:</p>\n<blockquote>\n<p>Wiring diagrams are great at representing a sequence of actions (boxes from left to right) and actions being performed in parallel (boxes above each other). What would be the most natural way to represent performing one of multiple actions? One could think of a box which takes input wires and directs them to one of possible boxes, the output would be a coproduct of possible outputs. One way to represent this without a new box type is to choose output after performing all parallel actions, but this has wrong semantics.</p>\n<p>This seems useful to represent recursion-free program execution.</p>\n</blockquote>\n<p>As you said,  choice can be represented with coproducts. Coproducts define a monoidal structure, so if your monoidal structure is a coproduct parallel wires will already represent choices. Moreover you get a monoid for free, meaning that you can always merge two wires with the same type into one:  <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mo>+</mo><mi>A</mi><mo>→</mo><mi>A</mi></mrow><annotation encoding=\"application/x-tex\">A + A \\to A</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.76666em;vertical-align:-0.08333em;\"></span><span class=\"mord mathdefault\">A</span><span class=\"mspace\" style=\"margin-right:0.2222222222222222em;\"></span><span class=\"mbin\">+</span><span class=\"mspace\" style=\"margin-right:0.2222222222222222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathdefault\">A</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">→</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathdefault\">A</span></span></span></span></p>",
+        "id": 196127838,
+        "sender_full_name": "Fabrizio Genovese",
+        "timestamp": 1588547409
+    },
+    {
+        "content": "<p>I guess what you want is representing choice _while_ already having another monoidal structure around. That is, you are already using parallel wires to represent something. In this case the underlying categorical structure you want is probably the one of a bimonoidal category, that is, a category with two monoidal structures that interact with each other.</p>",
+        "id": 196127854,
+        "sender_full_name": "Fabrizio Genovese",
+        "timestamp": 1588547473
+    },
+    {
+        "content": "<p><span class=\"user-mention\" data-user-id=\"281272\">@Sam Tenka (naive student)</span> already referenced some relevant discussion that have happened here before about this. In general, the idea is that a graphical calculus for cats with two monoidal structures should be thought of as 3-d diagrams, where lines can be parallel in a surface, and surfaces can be parallel with each other.</p>",
+        "id": 196127937,
+        "sender_full_name": "Fabrizio Genovese",
+        "timestamp": 1588547611
+    },
+    {
+        "content": "<p>The precise details of how to formalise this graphical calculus are a work in progres, and various people are working on some flavors of it,such as <span class=\"user-mention\" data-user-id=\"275901\">@Jules Hedges</span> and <span class=\"user-mention\" data-user-id=\"276320\">@Antonin Delpeuch</span> .</p>",
+        "id": 196127977,
+        "sender_full_name": "Fabrizio Genovese",
+        "timestamp": 1588547644
+    },
+    {
+        "content": "<p>yes we are on it! hopefully it should be written up soon :)</p>",
+        "id": 196146195,
+        "sender_full_name": "Antonin Delpeuch",
+        "timestamp": 1588575598
+    },
+    {
+        "content": "<p>Thanks a lot for the pointers, looking forward to the writeup <span class=\"user-mention\" data-user-id=\"276320\">@Antonin Delpeuch</span> . 3-d diagrams sound like a bit of a hassle though. Since each box can contain another wiring diagram in it, would it not be possible to simply have another box type where vertical axis is assumed to point into that 3rd dimension? (I know that would require a proper examination, but wondering if this sounds like the right intuition)</p>",
+        "id": 196149216,
+        "sender_full_name": "keorn",
+        "timestamp": 1588578003
+    },
+    {
+        "content": "<p>Yes that sort of idea has been used before, although I cannot find the paper which does that anymore, perhaps <span class=\"user-mention\" data-user-id=\"275901\">@Jules Hedges</span> or <span class=\"user-mention\" data-user-id=\"277391\">@Cole Comfort</span> remember what it was? (the one which flattened 3D structure as thickened wires)</p>",
+        "id": 196151175,
+        "sender_full_name": "Antonin Delpeuch",
+        "timestamp": 1588579454
+    },
+    {
+        "content": "<p>Backtracking to 2-dimensional case because my brain hasn't finished booting up yet: If you want to \"promote\" flowcharts into string diagrams, the usual start would be the category of finite sets and partial functions with <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>⊗</mo><mo>=</mo><mo>+</mo></mrow><annotation encoding=\"application/x-tex\">\\otimes = +</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.66666em;vertical-align:-0.08333em;\"></span><span class=\"mord\">⊗</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.66666em;vertical-align:-0.08333em;\"></span><span class=\"mord\">+</span></span></span></span>. That admits a trace, where a particle goes around the loop repeatedly until it comes out, if ever. If you apply the Int construction then it no longer has to be strictly oriented, and then you pretty much have flowcharts. This is mostly in Abramsky's \"retracing some paths in process algebra\"</p>",
+        "id": 196160729,
+        "sender_full_name": "Jules Hedges",
+        "timestamp": 1588586060
+    },
+    {
+        "content": "<p>This is \"particle style geometry of interaction\", where \"particle style\" means you imagine a token moving around your string diagram, it can only be in one wire at a time, generally when <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>⊗</mo></mrow><annotation encoding=\"application/x-tex\">\\otimes</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.66666em;vertical-align:-0.08333em;\"></span><span class=\"mord\">⊗</span></span></span></span> is a coproduct or kinda looks like one</p>",
+        "id": 196160849,
+        "sender_full_name": "Jules Hedges",
+        "timestamp": 1588586158
+    },
+    {
+        "content": "<p>In quantum computing, we tensor on an extra hilbert space and draw the choice as a unitary operation \"controlled\" by the extra factor</p>",
+        "id": 196175530,
+        "sender_full_name": "Jalex Stark",
+        "timestamp": 1588596627
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"284625\">keorn</span> <a href=\"#narrow/stream/229199-learning.3A-basic.20questions/topic/Choosing.20wires/near/196149216\" title=\"#narrow/stream/229199-learning.3A-basic.20questions/topic/Choosing.20wires/near/196149216\">said</a>:</p>\n<blockquote>\n<p>Thanks a lot for the pointers, looking forward to the writeup <span class=\"user-mention silent\" data-user-id=\"276320\">Antonin Delpeuch</span> . 3-d diagrams sound like a bit of a hassle though. Since each box can contain another wiring diagram in it, would it not be possible to simply have another box type where vertical axis is assumed to point into that 3rd dimension? (I know that would require a proper examination, but wondering if this sounds like the right intuition)</p>\n</blockquote>\n<p>Ross does this sort of flattening of the 2.5th dimension in his paper Generalised Proof-Nets for Compact Categories with Biproducts treating the coproduct as a bifunctorial box in the graphical calculus.  This is what people are implicitly doing when they are summing over diagrams.</p>",
+        "id": 196182838,
+        "sender_full_name": "Cole Comfort",
+        "timestamp": 1588600625
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"277391\">Cole Comfort</span> <a href=\"#narrow/stream/229199-learning.3A-basic.20questions/topic/Choosing.20wires/near/196182838\" title=\"#narrow/stream/229199-learning.3A-basic.20questions/topic/Choosing.20wires/near/196182838\">said</a>:</p>\n<blockquote>\n<p>Ross does this sort of flattening of the 2.5th dimension in his paper Generalised Proof-Nets for Compact Categories with Biproducts treating the coproduct as a bifunctorial box in the graphical calculus.  This is what people are implicitly doing when they are summing over diagrams.</p>\n</blockquote>\n<p>Cheers, that paper looks spot on, let me digest it.</p>",
+        "id": 196230384,
+        "sender_full_name": "keorn",
+        "timestamp": 1588621325
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276320\">Antonin Delpeuch</span> <a href=\"#narrow/stream/229199-learning.3A-basic.20questions/topic/Choosing.20wires/near/196146195\" title=\"#narrow/stream/229199-learning.3A-basic.20questions/topic/Choosing.20wires/near/196146195\">said</a>:</p>\n<blockquote>\n<p>yes we are on it! hopefully it should be written up soon :)</p>\n</blockquote>\n<p>aaaaaaaa no time no time no time</p>",
+        "id": 196242873,
+        "sender_full_name": "Jules Hedges",
+        "timestamp": 1588628103
+    }
+]

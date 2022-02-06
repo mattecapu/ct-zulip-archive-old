@@ -1,0 +1,128 @@
+[
+    {
+        "content": "<p>I hope it is not against the rules of this community to start one topic about future of software development. It will be one very broad discussion where I plan to put list of questions I collected over some period of time and I feel strong temptation to do so because there are very deep knowledge in this community so some answers might occur. In this post I ask for approval whether I have green light to do it?</p>",
+        "id": 212985303,
+        "sender_full_name": "Uroš Nedić",
+        "timestamp": 1602456559
+    },
+    {
+        "content": "<p>Starting <em>topics</em> is something everyone should do freely.  Starting <em>streams</em> should be done more cautiously. </p>\n<p>You might start your topic in the stream <a class=\"stream\" data-stream-id=\"229125\" href=\"/#narrow/stream/229125-practice.3A-software\">#practice: software</a>.</p>",
+        "id": 212985481,
+        "sender_full_name": "John Baez",
+        "timestamp": 1602456852
+    },
+    {
+        "content": "<p>This topic was moved here from <a class=\"stream-topic\" data-stream-id=\"229199\" href=\"/#narrow/stream/229199-learning.3A-questions/topic/Topos.20theory\">#learning: questions &gt; Topos theory</a> by <span class=\"user-mention silent\" data-user-id=\"275920\">John Baez</span></p>",
+        "id": 212985505,
+        "sender_full_name": "Notification Bot",
+        "timestamp": 1602456934
+    },
+    {
+        "content": "<p>In fact I just started a topic \"software development\" in the stream <a class=\"stream\" data-stream-id=\"229125\" href=\"/#narrow/stream/229125-practice.3A-software\">#practice: software</a>, and moved your question there!</p>\n<p>So, fire away!</p>",
+        "id": 212985568,
+        "sender_full_name": "John Baez",
+        "timestamp": 1602457012
+    },
+    {
+        "content": "<p>As someone who is practicing software development and reading papers in this field (from conferences and journals but never wrote one) and recently started to read papers in mathematics (CT mostly and know less than 10% of whole field but hopefully plan to improve it to 30% at the end of next year if I learn hard) I started to think about some broad questions mainly to be able to coordinate my learning and do my own knowledge management. Answers to these questions will put some structure in my learning, I hope, but also might help someone else, who knows.</p>\n<p>As we all know we are now at the beginning of one very big transition in software development. Reason are well known - number of bugs in software synthesis is growing exponentially from number of lines of code. Put simply, code bases are (or soon will be) unmaintainable using current techniques and languages to write them.</p>\n<p>Current paradigm of design programs incorporates three phases:</p>\n<ol>\n<li><em>Modelling software</em> (or writing informal specification)</li>\n<li><em>Writing code</em> </li>\n<li><em>Testing code</em></li>\n</ol>\n<p>After all phases are completed we can conclude that software works as expected and it can be deployed (or delivered).</p>\n<p>All three phases in this process have big pitfalls:</p>\n<p><em>i. Modelling phase.</em> Here we use real world language to describe what we want and then transform it to many different theories either from mathematics (like graph theory, matrix, number theory, etc.) either we invent them ad-hoc during this phase. All these theories together inconsistently describe our future program. Upon these theories we write algorithms that make our future program. These algorithms are also written in so-called pseudo-code which is also very unreliable syntax and semantics.</p>\n<p><em>ii. Writing code phase.</em> Cocktail of theories and pseudo-codes then we transform into one of known programming languages. These languages are also lacking exact theory because many of them started one paradigm then incorporate many others to be more attractive and usable. In this phase we encounter inconsistency in ability to express our already inconsistent models from former phase.</p>\n<p><em>iii. Testing phase.</em> At the end of the whole process we cannot do anything else but to end our journey to this phase i.e. to test our software and to check whether our fragile construction works. </p>\n<p>After we finish it we cannot tell much more than our program runs on inputs we tested and that we have some vision how much memory (space) our software consumes and how fast (complex) it is. Answering how secure is even worse. Many developers even do not think about it!</p>\n<p>To be able to address all these issues we have to bring consistency in all these phases. This is place where my questions start:</p>\n<ol>\n<li>\n<p>If mathematics model our real world and CT model mathematics itself, does it mean that CT is a good candidate to reason in it about any task in software development we have.</p>\n</li>\n<li>\n<p>Are there other theories? Are they better or worse than CT for reasoning about software design? How many of them up to isomorphism are there?</p>\n</li>\n<li>\n<p>After we have one such theory is it possible to design our new programming language as some sort of internal logic of that theory but also satisfying following requirements:</p>\n<p>a. High level programming capability</p>\n<p>b. Low level programming capability</p>\n<p>c. Efficient (it makes sense to develop programs in it - counterexample is machine language)</p>\n<p>d. Fast (compiled version of code has to be comparable in speed as compiled version of corresponding C code)</p>\n<p>e. Specification capability (ability to write specifications i.e. phase  i.  models)</p>\n<p>f. Proof capability - Here we have to be able to write several types of proofs</p>\n<p><em>I. Space (how much MEM/HDD/CPU program consumes)</em></p>\n<p><em>II. Time (how long computation lasts, i.e. how complex it is)</em></p>\n<p><em>III. Correctness - Here we have two cases</em><br>\n<em>i. Algorithms - to prove correctness of algorithms.</em><br>\n<em>ii.  Heuristics - to prove how heuristics are precise depending on input data, available memory, CPU power, and execution time.</em></p>\n<p><em>IV. Security (prove that system is secure and in case of breaking security how much of data are affected)</em></p>\n<p><em>Each proof has to deliver proofs about space/time/correctness/security of particular program AS IS and to provide additional proofs  that these space/time/correctness (in case of heuristics)/security are the best possible for given specification.</em></p>\n<p>g. General purpose - ability to write any program for any CPU (standard, FPGA, Quantum, some not existing yet, etc).</p>\n</li>\n<li>\n<p>Can we synthesise programs from Specifications automatically using AI?</p>\n</li>\n<li>\n<p>Can we prove f.I f.II f.II and f.IV requirements automatically using AI?</p>\n</li>\n<li>\n<p>Does it make sense to design CPU based on CT primitives (CT-based CPU/ASIC)?</p>\n</li>\n</ol>",
+        "id": 212988519,
+        "sender_full_name": "Uroš Nedić",
+        "timestamp": 1602462840
+    },
+    {
+        "content": "<p>The fundamental problem here is that you are missing the most important phase [of course, you're not alone in this, way too much of software development misses it too]:</p>\n<ol start=\"0\">\n<li><em>Modeling the Problem</em></li>\n</ol>\n<p>As long as the knowledge about the problem space, its specification and constraints, is informal, all the rest of the steps are built on quicksand. For some software, once you've modeled the problem adequately, a series of refinement steps will much more clearly give you a viable solution.  Doug Smith's team at the Kestrel Institute already used a lot of CT starting in the mid-80s with exactly that in mind. In my opinion, they were too far ahead of their time, which is why the ideas did not catch on.</p>\n<p>Put another way: as long as you focus on software as being about code, you're doomed. Software is a tool for obtain solutions to problems. You need to refocus on the problem, and its solution space as abstract entities first, then the realization of that as software.</p>\n<p>Note that a number of people in software engineering are using different words to say the same thing. Some people in the Models community are slowly abstracting themselves from the mess that UML created (because it modeled software, not the problem). A lot of people who do DSLs understand this. Look up \"domain modeling\" and \"domain engineering\"; Dines Bjorner is a good one to look up there.</p>",
+        "id": 213044082,
+        "sender_full_name": "Jacques Carette",
+        "timestamp": 1602512329
+    },
+    {
+        "content": "<p>Thank you for your post but I somehow merged your 0. phase and my i.phase.</p>\n<p>I also was wondering whether Topoi are good candidates for this?</p>",
+        "id": 213051045,
+        "sender_full_name": "Uroš Nedić",
+        "timestamp": 1602515579
+    },
+    {
+        "content": "<p>Also UML is not my cup of tea.</p>",
+        "id": 213051198,
+        "sender_full_name": "Uroš Nedić",
+        "timestamp": 1602515645
+    },
+    {
+        "content": "<p>Asking \"is X a good solution for Y\" only makes sense to me once the structure of Y has really been sufficiently  investigated. So I have no idea if Topoi are good/bad/irrelevant here.</p>\n<p>[Also, note that I disagree with your statement that \"number of bugs are growing exponentially from number of lines of code\". Yes, it grows. What the rate of growth is, AFAIK, is unknown. It is definitely not exponential. It may not even be as bad as linear! The reason for that is <em>code bloat</em>, not anything smart. ]</p>\n<p>Category Theory and software development do relate to each other. CT, at its very foundations, is about compositionality. Scalable software development needs a way to break things up into reusable, well-understood pieces that can be assembled into larger pieces.</p>\n<p>Note that we have far from explored all the meanings of 'pieces' and 'assembled' in software. In my personal opinion, we have been very narrow-minded about all of the different ways that one can break things up and assemble software. [That's why I've spent a lot of time doing meta-programming!]  I don't actually think that meta-programming is a <strong>good</strong> solution. It's just a way to get outside the current constraints of the narrow modes of 'piece' and 'composition' offered by current languages.</p>",
+        "id": 213053603,
+        "sender_full_name": "Jacques Carette",
+        "timestamp": 1602516862
+    },
+    {
+        "content": "<p>One of my friends works in Microsoft  - Windows team. He says it is almost unmaintainable.</p>\n<p>Linux already has ~30M LoC.</p>\n<p>Regarding bugs, my estimation is not about discovered ones but for total number of them.</p>",
+        "id": 213058068,
+        "sender_full_name": "Uroš Nedić",
+        "timestamp": 1602519197
+    },
+    {
+        "content": "<p>Ah, Microsoft, neat place.  I worked there, a long time ago (1988-89). I have friends who have retired from there, rich.</p>\n<p>Much has been written about the un-maintainability of Windows. One huge part: backwards compatibility. It kills all good designs. [I can't quite find the exact blog posts, but they were on MSDN.]  Entropy is a big deal in software.  Apple manages it differently than Microsoft, and that's a big deal.</p>\n<p>I am 100% convinced that, from a pure information-theoretic point of view, there is much much less than 30M LoC's worth of information in the code base of Linux. I think Alan Kay's work at the Viewpoints Institute is a good entry point for thinking along the lines of needing 4 orders of magnitude less code to get the job done.</p>",
+        "id": 213059357,
+        "sender_full_name": "Jacques Carette",
+        "timestamp": 1602519878
+    },
+    {
+        "content": "<p>I'm also starting to see the value of that 0th step of Modeling The Problem. I'm starting to see it crop its head more and more. Conal Elliot tackles it when he talks about denotational design. Sandy Maguire is talking about it in Algebra Driven Design book.</p>\n<p>I'm finding it hard to get into these better practices of think about the problem and design first. </p>\n<ol>\n<li>I think one issue is because I don't have tools to help me work through the solution. I can use pen and paper but I dunno when I make a mistake.</li>\n<li>I think the second issue is that I need to have a notation or way of communicating the design back to my colleagues.</li>\n<li>I have to convince others that THIS IS FEATURE WORK. <span aria-label=\"sweat smile\" class=\"emoji emoji-1f605\" role=\"img\" title=\"sweat smile\">:sweat_smile:</span></li>\n</ol>",
+        "id": 213082534,
+        "sender_full_name": "Fintan Halpenny",
+        "timestamp": 1602534394
+    },
+    {
+        "content": "<p>I've started to use a theorem prover (Agda in my case) for modeling. But you can use TLA+, Epsilon or Alloy too. I think Jay Parlar has some nice videos of what he was able to do with Alloy (at a company that first didn't believe in doing that).</p>",
+        "id": 213143864,
+        "sender_full_name": "Jacques Carette",
+        "timestamp": 1602590760
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"343030\">Fintan Halpenny</span> <a href=\"#narrow/stream/229125-practice.3A-software/topic/Future.20of.20Software.20Development/near/213082534\">said</a>:</p>\n<blockquote>\n<p>I'm also starting to see the value of that 0th step of Modeling The Problem. I'm starting to see it crop its head more and more. Conal Elliot tackles it when he talks about denotational design. Sandy Maguire is talking about it in Algebra Driven Design book.</p>\n<p>I'm finding it hard to get into these better practices of think about the problem and design first. </p>\n<ol>\n<li>I think one issue is because I don't have tools to help me work through the solution. I can use pen and paper but I dunno when I make a mistake.</li>\n<li>I think the second issue is that I need to have a notation or way of communicating the design back to my colleagues.</li>\n<li>I have to convince others that THIS IS FEATURE WORK. <span aria-label=\"sweat smile\" class=\"emoji emoji-1f605\" role=\"img\" title=\"sweat smile\">:sweat_smile:</span></li>\n</ol>\n</blockquote>\n<p>Actually, the whole idea of categorical graphical languages is exactly Problem Modelling</p>",
+        "id": 213147919,
+        "sender_full_name": "Fabrizio Genovese",
+        "timestamp": 1602593070
+    },
+    {
+        "content": "<p>There are also implementations. At Statebox the idea is to use Petri nets and string diagrams as modelling tools, and then having a whole infrastructure that turns these models into code</p>",
+        "id": 213148006,
+        "sender_full_name": "Fabrizio Genovese",
+        "timestamp": 1602593114
+    },
+    {
+        "content": "<p>So this should, in the long run, solve the problem of having only pen and paper to model a problem</p>",
+        "id": 213148033,
+        "sender_full_name": "Fabrizio Genovese",
+        "timestamp": 1602593131
+    },
+    {
+        "content": "<p>I'll have to look into these more. I know of a few listed above but haven't dug in. The other thing I suppose is that modelling something in a different language and then having to translate it to Rust seems error prone</p>",
+        "id": 213192518,
+        "sender_full_name": "Fintan Halpenny",
+        "timestamp": 1602611553
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"296322\">Jacques Carette</span> <a href=\"#narrow/stream/229125-practice.3A-software/topic/Future.20of.20Software.20Development/near/213143864\">said</a>:</p>\n<blockquote>\n<p>I've started to use a theorem prover (Agda in my case) for modeling. But you can use TLA+, Epsilon or Alloy too. I think Jay Parlar has some nice videos of what he was able to do with Alloy (at a company that first didn't believe in doing that).</p>\n</blockquote>\n<ol>\n<li>\n<p>Do you mean Epsilon calculus?</p>\n</li>\n<li>\n<p>It would be nice to lift Alloy mathematical foundations into Topoi and TLA+ and to see how they relate and does it make sense to combine them.</p>\n</li>\n</ol>",
+        "id": 213418546,
+        "sender_full_name": "Uroš Nedić",
+        "timestamp": 1602765953
+    },
+    {
+        "content": "<ol>\n<li>No, I meant <a href=\"http://www.eclipse.org/epsilon/\">http://www.eclipse.org/epsilon/</a> for model-based engineering.</li>\n<li>There was a paper recently on the arxiv doing something quite similar (i.e. CT and TLA+). Sorry, can't find it right now.</li>\n</ol>",
+        "id": 213657946,
+        "sender_full_name": "Jacques Carette",
+        "timestamp": 1602950284
+    },
+    {
+        "content": "<p>This one - <a href=\"http://eptcs.web.cse.unsw.edu.au/paper.cgi?ACT2019.11\">http://eptcs.web.cse.unsw.edu.au/paper.cgi?ACT2019.11</a> ?</p>",
+        "id": 213673411,
+        "sender_full_name": "Uroš Nedić",
+        "timestamp": 1602973146
+    },
+    {
+        "content": "<p>Yes!</p>",
+        "id": 213794923,
+        "sender_full_name": "Jacques Carette",
+        "timestamp": 1603118257
+    }
+]

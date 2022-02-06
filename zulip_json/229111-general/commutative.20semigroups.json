@@ -1,0 +1,542 @@
+[
+    {
+        "content": "<p>I know category theorists prefer commutative <em>monoids</em>, and I do too, but people who study them intensively seem to prefer commutative semigroups, so that's what I talked about today on Twitter:</p>\n<ul>\n<li><a href=\"https://twitter.com/johncarlosbaez/status/1246470112321953792\" title=\"https://twitter.com/johncarlosbaez/status/1246470112321953792\">Commutative semigroups</a>.</li>\n</ul>\n<p>I outlined what could be called the \"fundamental structure theorem of commutative semigroups\".</p>\n<p>You can always stick a unit in a commutative semigroup without damaging it too much: if it already had a unit it'll be dethroned by the new one, but the commutative monoid you had will sit inside the new one.  So maybe let's think about commutative monoids.</p>\n<p>Various questions that I'll pose as puzzles, regardless of whether I know the answers or not:</p>\n<p><strong>Puzzle 1.</strong>  You can take the nerve of a category, so you can take the nerve of a commutative monoid <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>C</mi></mrow><annotation encoding=\"application/x-tex\">C</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathdefault\" style=\"margin-right:0.07153em;\">C</span></span></span></span>.  What sort of space <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>N</mi><mi>C</mi></mrow><annotation encoding=\"application/x-tex\">NC</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathdefault\" style=\"margin-right:0.10903em;\">N</span><span class=\"mord mathdefault\" style=\"margin-right:0.07153em;\">C</span></span></span></span> do you get?  (Here I'm calling a simplicial set a \"space\": if you don't like that, do geometric realization and get a topological space.)</p>\n<p><strong>Puzzle 2.</strong> Any commutative monoid <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>C</mi></mrow><annotation encoding=\"application/x-tex\">C</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathdefault\" style=\"margin-right:0.07153em;\">C</span></span></span></span> maps to a semilattice <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msup><mi>C</mi><mo lspace=\"0em\" mathvariant=\"normal\" rspace=\"0em\">′</mo></msup></mrow><annotation encoding=\"application/x-tex\">C'</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.751892em;vertical-align:0em;\"></span><span class=\"mord\"><span class=\"mord mathdefault\" style=\"margin-right:0.07153em;\">C</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.751892em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\">′</span></span></span></span></span></span></span></span></span></span></span></span> formed by imposing the relations <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>x</mi><mo>+</mo><mi>x</mi><mo>=</mo><mi>x</mi></mrow><annotation encoding=\"application/x-tex\">x + x = x</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.66666em;vertical-align:-0.08333em;\"></span><span class=\"mord mathdefault\">x</span><span class=\"mspace\" style=\"margin-right:0.2222222222222222em;\"></span><span class=\"mbin\">+</span><span class=\"mspace\" style=\"margin-right:0.2222222222222222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.43056em;vertical-align:0em;\"></span><span class=\"mord mathdefault\">x</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.43056em;vertical-align:0em;\"></span><span class=\"mord mathdefault\">x</span></span></span></span> for all <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>x</mi><mo>∈</mo><mi>C</mi></mrow><annotation encoding=\"application/x-tex\">x \\in C</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.5782em;vertical-align:-0.0391em;\"></span><span class=\"mord mathdefault\">x</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">∈</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathdefault\" style=\"margin-right:0.07153em;\">C</span></span></span></span>.  What sort of space do you get by taking the nerve of a semilattice?   What can you say about the map <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>N</mi><mi>C</mi><mo>→</mo><mi>N</mi><msup><mi>C</mi><mo lspace=\"0em\" mathvariant=\"normal\" rspace=\"0em\">′</mo></msup></mrow><annotation encoding=\"application/x-tex\">NC \\to NC'</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathdefault\" style=\"margin-right:0.10903em;\">N</span><span class=\"mord mathdefault\" style=\"margin-right:0.07153em;\">C</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">→</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.751892em;vertical-align:0em;\"></span><span class=\"mord mathdefault\" style=\"margin-right:0.10903em;\">N</span><span class=\"mord\"><span class=\"mord mathdefault\" style=\"margin-right:0.07153em;\">C</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.751892em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\">′</span></span></span></span></span></span></span></span></span></span></span></span>?</p>\n<p><strong>Puzzle 3.</strong> The fundamental theorem says the fibers of the map <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>C</mi><mo>→</mo><msup><mi>C</mi><mo lspace=\"0em\" mathvariant=\"normal\" rspace=\"0em\">′</mo></msup></mrow><annotation encoding=\"application/x-tex\">C \\to C'</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathdefault\" style=\"margin-right:0.07153em;\">C</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">→</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.751892em;vertical-align:0em;\"></span><span class=\"mord\"><span class=\"mord mathdefault\" style=\"margin-right:0.07153em;\">C</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.751892em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\">′</span></span></span></span></span></span></span></span></span></span></span></span> are 'archimedean monoids' (defined in my tweet more generally for semigroups).  What sort of space do you get by taking the nerve of an archimedean monoid?    </p>\n<p><strong>Puzzle 4.</strong> What topological picture of  <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>N</mi><mi>C</mi></mrow><annotation encoding=\"application/x-tex\">NC</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathdefault\" style=\"margin-right:0.10903em;\">N</span><span class=\"mord mathdefault\" style=\"margin-right:0.07153em;\">C</span></span></span></span> do you get from the fundamental theorem?</p>\n<div class=\"inline-preview-twitter\"><div class=\"twitter-tweet\"><a href=\"https://twitter.com/johncarlosbaez/status/1246470112321953792\"><img class=\"twitter-avatar\" src=\"https://pbs.twimg.com/profile_images/1224941370885828608/Ktaz9JLB_normal.jpg\"></a><p>I stand up for all downtrodden, oppressed mathematical objects.   Consider the humble \"commutative semigroup\".  This is a set with a binary operation + obeying\n\na+b = b+a\n(a+b)+c = a+(b+c)\n\nToo simple for any interesting theorems?   No!\n\n(1/n) <a href=\"https://t.co/nApe5FCPWa\" title=\"https://t.co/nApe5FCPWa\">https://twitter.com/johncarlosbaez/status/1246470112321953792/photo/1</a></p><span>- John Carlos Baez (@johncarlosbaez)</span><div class=\"twitter-image\"><a href=\"https://t.co/nApe5FCPWa\" title=\"https://t.co/nApe5FCPWa\"><img src=\"https://pbs.twimg.com/media/EUxZvKvU8AYT5lU.jpg:medium\"></a></div></div></div>",
+        "id": 192923376,
+        "sender_full_name": "John Baez",
+        "timestamp": 1586028745
+    },
+    {
+        "content": "<p>Ooh!  I wonder how this compares to Krohn Rhodes Decomposition?  (Noncommutative structure theorem I've long tried to grok without yet success)</p>",
+        "id": 192932905,
+        "sender_full_name": "Sam Tenka",
+        "timestamp": 1586044676
+    },
+    {
+        "content": "<p>Thanks for reminding me of <a href=\"https://en.wikipedia.org/wiki/Krohn%E2%80%93Rhodes_theory\" title=\"https://en.wikipedia.org/wiki/Krohn%E2%80%93Rhodes_theory\">Krohn-Rhodes theory</a>.  I ran into it in a strange book by Rhodes, sometimes called <a href=\"https://books.google.com/books?id=IgO0PQAACAAJ\" title=\"https://books.google.com/books?id=IgO0PQAACAAJ\">The Wild Book</a>:</p>\n<blockquote>\n<p>This book was originally written in 1969 by Berkeley mathematician John Rhodes. It is the founding work in what is now called algebraic engineering, an emerging field created by using the unifying scheme of finite state machine models and their complexity to tie together many fields: finite group theory, semigroup theory, automata and sequential machine theory, finite phase space physics, metabolic and evolutionary biology, epistemology, mathematical theory of psychoanalysis, philosophy, and game theory. The author thus introduced a completely original algebraic approach to complexity and the understanding of finite systems. The unpublished manuscript, often referred to as \"The Wild Book,\" became an underground classic, continually requested in manuscript form, and read by many leading researchers in mathematics, complex systems, artificial intelligence, and systems biology. Yet it has never been available in print until now. </p>\n</blockquote>\n<p>But I don't really understand the Krohn-Rhodes decomposition, though I understand most of the words by now.</p>",
+        "id": 192933072,
+        "sender_full_name": "John Baez",
+        "timestamp": 1586044939
+    },
+    {
+        "content": "<p>It's a very entertainingly written book!  For example, the first few pages motivate the structure problem for semigroups as philosophical quest to understand time.   When I tried to read it in undergrad, I got lost.  Maybe I'm more mature now.</p>",
+        "id": 192933182,
+        "sender_full_name": "Sam Tenka",
+        "timestamp": 1586045144
+    },
+    {
+        "content": "<p>For this, am I supposed to think of a commutative monoid as a one object monoidal category? Making it a semilattice seems to make it compact closed? I don't know much about nerves besides the definitions, what are some ways those are usually described?</p>",
+        "id": 192933345,
+        "sender_full_name": "vikraman",
+        "timestamp": 1586045412
+    },
+    {
+        "content": "<p>I'm in similar boat as you, <span class=\"user-mention\" data-user-id=\"276098\">@vikraman</span>.  I'm not sure how nerves are usually described.  Here, though, I think that the nerves we get are especially nice as (geometrically realized) spaces.  [For example, commutativity of the semigroup means that every square fills: ab = ba, meaning that the fundamental group is a bit simpler than otherwise (not trivial, like I said before)</p>\n<p>(Unlike in normal math, each of my statements is false with some probability, so the overall correctness decays with length of comment.  I might be totally wrong)</p>",
+        "id": 192933421,
+        "sender_full_name": "Sam Tenka",
+        "timestamp": 1586045612
+    },
+    {
+        "content": "<p>It decayed: the nerve of the abelian group A is a space whose fundamental group is A.</p>",
+        "id": 192933603,
+        "sender_full_name": "John Baez",
+        "timestamp": 1586045918
+    },
+    {
+        "content": "<p>Ah!  Thanks!  Yeah we don't have the 2 cell relations for general a and b, just for ab=ba and likewise.</p>",
+        "id": 192933612,
+        "sender_full_name": "Sam Tenka",
+        "timestamp": 1586045978
+    },
+    {
+        "content": "<p>The nerve of any group G, thought of as a category, is called the <a href=\"https://en.wikipedia.org/wiki/Eilenberg%E2%80%93MacLane_space\" title=\"https://en.wikipedia.org/wiki/Eilenberg%E2%80%93MacLane_space\">Eilenberg-Mac Lane space</a> K(G,1).  It's good to think about these.</p>",
+        "id": 192933658,
+        "sender_full_name": "John Baez",
+        "timestamp": 1586046084
+    },
+    {
+        "content": "<p>To form the nerve of G you start with a point, add an edge from it to itself for each element of G, add a triangle with edges g,h,gh for each pair of group elements... and so on, with an n-simplex for each n-tuple of group elements.</p>",
+        "id": 192933776,
+        "sender_full_name": "John Baez",
+        "timestamp": 1586046312
+    },
+    {
+        "content": "<p>You get a space with fundamental group G and all higher homotopy groups being trivial.</p>",
+        "id": 192933826,
+        "sender_full_name": "John Baez",
+        "timestamp": 1586046367
+    },
+    {
+        "content": "<p>Hmm okay so if monoid C maps to monoid G then we should have NC mapping to NG, since hopefully N is functorial.  I'd like to say that when G is the abelian group generated by C, NC and NG are homotopic.  I can see that I'm not equipped to think well about this, though.  Off to learn about nerves and basic alg top!</p>",
+        "id": 192934047,
+        "sender_full_name": "Sam Tenka",
+        "timestamp": 1586046897
+    },
+    {
+        "content": "<p>For monoids that aren't groups, the nerve is less famous... hmm, this looks good:</p>\n<ul>\n<li>O. U. Lenz,  <em><a href=\"https://www.math.leidenuniv.nl/scripties/LenzMaster.pdf\" title=\"https://www.math.leidenuniv.nl/scripties/LenzMaster.pdf\">The Classifying Space of a Monoid</a></em>.</li>\n</ul>",
+        "id": 192934162,
+        "sender_full_name": "John Baez",
+        "timestamp": 1586047172
+    },
+    {
+        "content": "<p>The geometric realization of the nerve is often called the \"classifying space\".</p>",
+        "id": 192934206,
+        "sender_full_name": "John Baez",
+        "timestamp": 1586047218
+    },
+    {
+        "content": "<p>Yes, N is a functor.  The thesis above shows the nerve of a <em>free</em> monoid is homotopy equivalent to the corresponding free group.</p>",
+        "id": 192934221,
+        "sender_full_name": "John Baez",
+        "timestamp": 1586047317
+    },
+    {
+        "content": "<p>So for example, <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>N</mi><mi mathvariant=\"double-struck\">N</mi><mo>≃</mo><mi>N</mi><mi mathvariant=\"double-struck\">Z</mi><mo>≃</mo><msup><mi mathvariant=\"double-struck\">S</mi><mn>1</mn></msup></mrow><annotation encoding=\"application/x-tex\">N\\mathbb{N} \\simeq N\\mathbb{Z} \\simeq \\mathbb{S}^1</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.68889em;vertical-align:0em;\"></span><span class=\"mord mathdefault\" style=\"margin-right:0.10903em;\">N</span><span class=\"mord\"><span class=\"mord mathbb\">N</span></span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">≃</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.68889em;vertical-align:0em;\"></span><span class=\"mord mathdefault\" style=\"margin-right:0.10903em;\">N</span><span class=\"mord\"><span class=\"mord mathbb\">Z</span></span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">≃</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.8141079999999999em;vertical-align:0em;\"></span><span class=\"mord\"><span class=\"mord\"><span class=\"mord mathbb\">S</span></span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.8141079999999999em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">1</span></span></span></span></span></span></span></span></span></span></span></p>",
+        "id": 192934347,
+        "sender_full_name": "vikraman",
+        "timestamp": 1586047545
+    },
+    {
+        "content": "<p>Yeah, and that's about all there is to it, morally speaking....</p>",
+        "id": 192934392,
+        "sender_full_name": "John Baez",
+        "timestamp": 1586047600
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"275920\">John Baez</span> <a href=\"#narrow/stream/229111-general/topic/commutative.20semigroups/near/192934221\" title=\"#narrow/stream/229111-general/topic/commutative.20semigroups/near/192934221\">said</a>:</p>\n<blockquote>\n<p>Yes, N is a functor.  The thesis above shows the nerve of a <em>free</em> monoid is homotopy equivalent to the corresponding free group.</p>\n</blockquote>\n<p>There's something to be said here about group completion, I imagine, but I can't think of it off the top of my head. I do know that the classifying space of a category has as fundamental group the localisation of the category that inverts all morphisms (this is due to Quillen).</p>",
+        "id": 192934767,
+        "sender_full_name": "David Michael Roberts",
+        "timestamp": 1586048330
+    },
+    {
+        "content": "<p>So the fundamental group of the classifying space of a monoid is the group completion of that monoid.  That's nice!   But maybe you were talking about group completions of <em>topological</em> monoids.</p>",
+        "id": 192935812,
+        "sender_full_name": "John Baez",
+        "timestamp": 1586050509
+    },
+    {
+        "content": "<p>The group completion of a semilattice (thought of as a monoid) is trivial, since <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>x</mi><mo>+</mo><mi>x</mi><mo>=</mo><mi>x</mi></mrow><annotation encoding=\"application/x-tex\">x + x = x</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.66666em;vertical-align:-0.08333em;\"></span><span class=\"mord mathdefault\">x</span><span class=\"mspace\" style=\"margin-right:0.2222222222222222em;\"></span><span class=\"mbin\">+</span><span class=\"mspace\" style=\"margin-right:0.2222222222222222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.43056em;vertical-align:0em;\"></span><span class=\"mord mathdefault\">x</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.43056em;vertical-align:0em;\"></span><span class=\"mord mathdefault\">x</span></span></span></span> in the semilattice forces <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>x</mi><mo>=</mo><mn>0</mn></mrow><annotation encoding=\"application/x-tex\">x = 0</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.43056em;vertical-align:0em;\"></span><span class=\"mord mathdefault\">x</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.64444em;vertical-align:0em;\"></span><span class=\"mord\">0</span></span></span></span> in the corresponding group.  So, the fundamental group of the classifying space of a semilattice is trivial - that's a partial answer to <a href=\"#narrow/stream/229111-general/topic/commutative.20semigroups/near/192923376\" title=\"#narrow/stream/229111-general/topic/commutative.20semigroups/near/192923376\">Puzzle 2</a>.</p>\n<p>I have a vague feeling that the classifying space of a semilattice is contractible, but I don't know if that's true.</p>",
+        "id": 192935863,
+        "sender_full_name": "John Baez",
+        "timestamp": 1586050676
+    },
+    {
+        "content": "<p>And I just got some insight into <a href=\"#narrow/stream/229111-general/topic/commutative.20semigroups/near/192923376\" title=\"#narrow/stream/229111-general/topic/commutative.20semigroups/near/192923376\">Puzzle 1</a> from <a href=\"https://mathoverflow.net/questions/122221/is-there-a-discrete-monoid-m-injecting-into-its-group-completion-g-for-which-b\" title=\"https://mathoverflow.net/questions/122221/is-there-a-discrete-monoid-m-injecting-into-its-group-completion-g-for-which-b\">MathOverflow</a>:</p>\n<blockquote>\n<p>If <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>G</mi></mrow><annotation encoding=\"application/x-tex\">G</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathdefault\">G</span></span></span></span> is the group completion of a <em>commutative</em> monoid <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>M</mi></mrow><annotation encoding=\"application/x-tex\">M</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathdefault\" style=\"margin-right:0.10903em;\">M</span></span></span></span>, the<br>\n   canonical map <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>B</mi><mi>M</mi><mo>→</mo><mi>B</mi><mi>G</mi></mrow><annotation encoding=\"application/x-tex\">BM \\to BG</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathdefault\" style=\"margin-right:0.05017em;\">B</span><span class=\"mord mathdefault\" style=\"margin-right:0.10903em;\">M</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">→</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathdefault\" style=\"margin-right:0.05017em;\">B</span><span class=\"mord mathdefault\">G</span></span></span></span> is a homotopy equivalence; even if <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>M</mi><mo>→</mo><mi>G</mi></mrow><annotation encoding=\"application/x-tex\">M \\to G</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathdefault\" style=\"margin-right:0.10903em;\">M</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">→</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathdefault\">G</span></span></span></span><br>\n   is <em>not</em> injective. (This is easy to prove: think of <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>M</mi><mo>→</mo><mi>G</mi></mrow><annotation encoding=\"application/x-tex\">M \\to G</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathdefault\" style=\"margin-right:0.10903em;\">M</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">→</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathdefault\">G</span></span></span></span> as a<br>\n   functor between one object categories and apply <a href=\"https://en.wikipedia.org/wiki/Quillen%27s_theorems_A_and_B\" title=\"https://en.wikipedia.org/wiki/Quillen%27s_theorems_A_and_B\">Quillen's Theorem A</a> to<br>\n   it. There is only one slice category to check and using commutativity<br>\n   it is easy to see this category is filtered and thus contractible.)</p>\n</blockquote>",
+        "id": 192936012,
+        "sender_full_name": "John Baez",
+        "timestamp": 1586050956
+    },
+    {
+        "content": "<p>Here <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>B</mi><mi>M</mi></mrow><annotation encoding=\"application/x-tex\">BM</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathdefault\" style=\"margin-right:0.05017em;\">B</span><span class=\"mord mathdefault\" style=\"margin-right:0.10903em;\">M</span></span></span></span> is the geometric realization of the nerve of <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>M</mi></mrow><annotation encoding=\"application/x-tex\">M</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathdefault\" style=\"margin-right:0.10903em;\">M</span></span></span></span>.</p>",
+        "id": 192936037,
+        "sender_full_name": "John Baez",
+        "timestamp": 1586051021
+    },
+    {
+        "content": "<p><span class=\"user-mention\" data-user-id=\"275920\">@John Baez</span> yes, topological monoids. So in this case it's even easier!</p>",
+        "id": 192937239,
+        "sender_full_name": "David Michael Roberts",
+        "timestamp": 1586053382
+    },
+    {
+        "content": "<p>So the remarks above let us solve this puzzle:</p>\n<p><strong>Puzzle 2.</strong> Any commutative monoid <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>C</mi></mrow><annotation encoding=\"application/x-tex\">C</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathdefault\" style=\"margin-right:0.07153em;\">C</span></span></span></span> maps to a semilattice <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msup><mi>C</mi><mo lspace=\"0em\" mathvariant=\"normal\" rspace=\"0em\">′</mo></msup></mrow><annotation encoding=\"application/x-tex\">C'</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.751892em;vertical-align:0em;\"></span><span class=\"mord\"><span class=\"mord mathdefault\" style=\"margin-right:0.07153em;\">C</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.751892em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\">′</span></span></span></span></span></span></span></span></span></span></span></span> formed by imposing the relations <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>x</mi><mo>+</mo><mi>x</mi><mo>=</mo><mi>x</mi></mrow><annotation encoding=\"application/x-tex\">x + x = x</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.66666em;vertical-align:-0.08333em;\"></span><span class=\"mord mathdefault\">x</span><span class=\"mspace\" style=\"margin-right:0.2222222222222222em;\"></span><span class=\"mbin\">+</span><span class=\"mspace\" style=\"margin-right:0.2222222222222222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.43056em;vertical-align:0em;\"></span><span class=\"mord mathdefault\">x</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.43056em;vertical-align:0em;\"></span><span class=\"mord mathdefault\">x</span></span></span></span> for all <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>x</mi><mo>∈</mo><mi>C</mi></mrow><annotation encoding=\"application/x-tex\">x \\in C</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.5782em;vertical-align:-0.0391em;\"></span><span class=\"mord mathdefault\">x</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">∈</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathdefault\" style=\"margin-right:0.07153em;\">C</span></span></span></span>.  What sort of space do you get by taking the nerve of a semilattice?   What can you say about the map <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>N</mi><mi>C</mi><mo>→</mo><mi>N</mi><msup><mi>C</mi><mo lspace=\"0em\" mathvariant=\"normal\" rspace=\"0em\">′</mo></msup></mrow><annotation encoding=\"application/x-tex\">NC \\to NC'</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathdefault\" style=\"margin-right:0.10903em;\">N</span><span class=\"mord mathdefault\" style=\"margin-right:0.07153em;\">C</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">→</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.751892em;vertical-align:0em;\"></span><span class=\"mord mathdefault\" style=\"margin-right:0.10903em;\">N</span><span class=\"mord\"><span class=\"mord mathdefault\" style=\"margin-right:0.07153em;\">C</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.751892em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\">′</span></span></span></span></span></span></span></span></span></span></span></span>?</p>\n<p>I'll talk in terms of the geometric realizations of these nerves.   The classifying space of a commutative monoid is homotopy equivalent to its group completion, and the group completion of a semilattice is the trivial group, so the classifying space of a semilattice is contractible!   My guess was right!  <span aria-label=\"+1\" class=\"emoji emoji-1f44d\" role=\"img\" title=\"+1\">:+1:</span></p>\n<p>Thus, <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>B</mi><msup><mi>C</mi><mo lspace=\"0em\" mathvariant=\"normal\" rspace=\"0em\">′</mo></msup></mrow><annotation encoding=\"application/x-tex\">BC'</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.751892em;vertical-align:0em;\"></span><span class=\"mord mathdefault\" style=\"margin-right:0.05017em;\">B</span><span class=\"mord\"><span class=\"mord mathdefault\" style=\"margin-right:0.07153em;\">C</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.751892em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\">′</span></span></span></span></span></span></span></span></span></span></span></span> is contractible, while <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>B</mi><mi>C</mi></mrow><annotation encoding=\"application/x-tex\">BC</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathdefault\" style=\"margin-right:0.05017em;\">B</span><span class=\"mord mathdefault\" style=\"margin-right:0.07153em;\">C</span></span></span></span> is homotopy equivalent to <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>B</mi><mi>G</mi></mrow><annotation encoding=\"application/x-tex\">BG</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathdefault\" style=\"margin-right:0.05017em;\">B</span><span class=\"mord mathdefault\">G</span></span></span></span> where <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>G</mi></mrow><annotation encoding=\"application/x-tex\">G</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathdefault\">G</span></span></span></span> is the group completion of <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>C</mi></mrow><annotation encoding=\"application/x-tex\">C</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathdefault\" style=\"margin-right:0.07153em;\">C</span></span></span></span>.  So the natural map <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>B</mi><mi>C</mi><mo>→</mo><mi>B</mi><msup><mi>C</mi><mo lspace=\"0em\" mathvariant=\"normal\" rspace=\"0em\">′</mo></msup></mrow><annotation encoding=\"application/x-tex\">BC \\to BC'</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathdefault\" style=\"margin-right:0.05017em;\">B</span><span class=\"mord mathdefault\" style=\"margin-right:0.07153em;\">C</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">→</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.751892em;vertical-align:0em;\"></span><span class=\"mord mathdefault\" style=\"margin-right:0.05017em;\">B</span><span class=\"mord\"><span class=\"mord mathdefault\" style=\"margin-right:0.07153em;\">C</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.751892em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\">′</span></span></span></span></span></span></span></span></span></span></span></span> is homotopy equivalent to the map from <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>B</mi><mi>G</mi></mrow><annotation encoding=\"application/x-tex\">BG</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathdefault\" style=\"margin-right:0.05017em;\">B</span><span class=\"mord mathdefault\">G</span></span></span></span> to a point.</p>",
+        "id": 192942349,
+        "sender_full_name": "John Baez",
+        "timestamp": 1586063303
+    },
+    {
+        "content": "<p>I never really got the point of Quillen's Theorem A before, but now that I've used it to solve this puzzle I like it!</p>",
+        "id": 192942404,
+        "sender_full_name": "John Baez",
+        "timestamp": 1586063452
+    },
+    {
+        "content": "<p>Yes, Quillen's Theorem A is really nice. As a student I once worked out a version for categories internal to Top (and used it to prove the geometric realisation of a weak equivalence is a homotopy equivalence), but it was probably already known or quickly surpassed by infinity-category techniques.</p>",
+        "id": 192951000,
+        "sender_full_name": "David Michael Roberts",
+        "timestamp": 1586079893
+    },
+    {
+        "content": "<p>fyi I made a monoid stream not too long ago. If this topic ends up expanding, please feel free to carry it over there!</p>",
+        "id": 192953716,
+        "sender_full_name": "Morgan Rogers (he/him)",
+        "timestamp": 1586084231
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"277473\">Morgan Rogers</span> <a href=\"#narrow/stream/229111-general/topic/commutative.20semigroups/near/192953716\" title=\"#narrow/stream/229111-general/topic/commutative.20semigroups/near/192953716\">said</a>:</p>\n<blockquote>\n<p>fyi I made a monoid stream not too long ago. If this topic ends up expanding, please feel free to carry it over there!</p>\n</blockquote>\n<p>But semigroups do not have an identity! <span aria-label=\"grinning face with smiling eyes\" class=\"emoji emoji-1f601\" role=\"img\" title=\"grinning face with smiling eyes\">:grinning_face_with_smiling_eyes:</span></p>",
+        "id": 192953830,
+        "sender_full_name": "Matteo Capucci (he/him)",
+        "timestamp": 1586084443
+    },
+    {
+        "content": "<p>Fun fact: The category of semigroups is a full reflective subcategory of the category of monoids. This sounds the wrong way around, so it makes you think.</p>",
+        "id": 192954041,
+        "sender_full_name": "Morgan Rogers (he/him)",
+        "timestamp": 1586084776
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"277473\">Morgan Rogers</span> <a href=\"#narrow/stream/229111-general/topic/commutative.20semigroups/near/192954041\" title=\"#narrow/stream/229111-general/topic/commutative.20semigroups/near/192954041\">said</a>:</p>\n<blockquote>\n<p>Fun fact: The category of semigroups is a full reflective subcategory of the category of monoids. This sounds the wrong way around, so it makes you think.</p>\n</blockquote>\n<p>How does this work? The forgetful functor does not have a right adjoint.</p>",
+        "id": 192958726,
+        "sender_full_name": "Paolo Capriotti",
+        "timestamp": 1586092152
+    },
+    {
+        "content": "<p>No, it has a left adjoint <span aria-label=\"stuck out tongue\" class=\"emoji emoji-1f61d\" role=\"img\" title=\"stuck out tongue\">:stuck_out_tongue:</span></p>",
+        "id": 192959283,
+        "sender_full_name": "Morgan Rogers (he/him)",
+        "timestamp": 1586092796
+    },
+    {
+        "content": "<p>I'm having second thoughts about it being a full subcategory, though, you should definitely check whether my claim was right or not <span aria-label=\"wink\" class=\"emoji emoji-1f609\" role=\"img\" title=\"wink\">:wink:</span></p>",
+        "id": 192959450,
+        "sender_full_name": "Morgan Rogers (he/him)",
+        "timestamp": 1586093005
+    },
+    {
+        "content": "<p>The best I can see is that the category of monoids is comonadic over the category of semigroups (classically).</p>",
+        "id": 192959732,
+        "sender_full_name": "Paolo Capriotti",
+        "timestamp": 1586093408
+    },
+    {
+        "content": "<p>And the category of semigroups is monadic over the category of monoids, since the functor adding an identity element preserves coequalizers.</p>",
+        "id": 192961072,
+        "sender_full_name": "Morgan Rogers (he/him)",
+        "timestamp": 1586095452
+    },
+    {
+        "content": "<p>PS: why \"classically\"?</p>",
+        "id": 192961082,
+        "sender_full_name": "Morgan Rogers (he/him)",
+        "timestamp": 1586095490
+    },
+    {
+        "content": "<p>I meant you need excluded middle to prove that the adjunction is comonadic: given a monoid <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>M</mi></mrow><annotation encoding=\"application/x-tex\">M</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathdefault\" style=\"margin-right:0.10903em;\">M</span></span></span></span>, you want to construct a coalgebra map <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>M</mi><mo>→</mo><mi>M</mi><mo>+</mo><mn>1</mn></mrow><annotation encoding=\"application/x-tex\">M \\to M + 1</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathdefault\" style=\"margin-right:0.10903em;\">M</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">→</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.76666em;vertical-align:-0.08333em;\"></span><span class=\"mord mathdefault\" style=\"margin-right:0.10903em;\">M</span><span class=\"mspace\" style=\"margin-right:0.2222222222222222em;\"></span><span class=\"mbin\">+</span><span class=\"mspace\" style=\"margin-right:0.2222222222222222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.64444em;vertical-align:0em;\"></span><span class=\"mord\">1</span></span></span></span> that maps the unit to the second component, and you need decidable equality on <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>M</mi></mrow><annotation encoding=\"application/x-tex\">M</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathdefault\" style=\"margin-right:0.10903em;\">M</span></span></span></span> (at least for the unit) to do that.</p>",
+        "id": 192961179,
+        "sender_full_name": "Paolo Capriotti",
+        "timestamp": 1586095668
+    },
+    {
+        "content": "<p>Would you mind giving more detail? I can't see where one needs to decide equality here, given that the units of internal monoids in a category are specified by morphisms <span aria-label=\"thinking\" class=\"emoji emoji-1f914\" role=\"img\" title=\"thinking\">:thinking:</span></p>",
+        "id": 192961383,
+        "sender_full_name": "Morgan Rogers (he/him)",
+        "timestamp": 1586096017
+    },
+    {
+        "content": "<p>sorry, that was backwards, let me try again</p>",
+        "id": 192961407,
+        "sender_full_name": "Paolo Capriotti",
+        "timestamp": 1586096042
+    },
+    {
+        "content": "<p>To show that the functor from semigroups to coalgebras is essentially surjective, given a monoid with a coalgebra structure, you need to construct the corresponding semigroup. Classically, you do that by removing the unit from the monoid, but that does not work constructively.</p>",
+        "id": 192961532,
+        "sender_full_name": "Paolo Capriotti",
+        "timestamp": 1586096231
+    },
+    {
+        "content": "<p>You need that <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>M</mi><mo>≅</mo><mi>M</mi><mi mathvariant=\"normal\">\\</mi><mo stretchy=\"false\">{</mo><mi>e</mi><mo stretchy=\"false\">}</mo><mo>+</mo><mn>1</mn></mrow><annotation encoding=\"application/x-tex\">M \\cong M \\backslash \\{e\\} + 1</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathdefault\" style=\"margin-right:0.10903em;\">M</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">≅</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord mathdefault\" style=\"margin-right:0.10903em;\">M</span><span class=\"mord\">\\</span><span class=\"mopen\">{</span><span class=\"mord mathdefault\">e</span><span class=\"mclose\">}</span><span class=\"mspace\" style=\"margin-right:0.2222222222222222em;\"></span><span class=\"mbin\">+</span><span class=\"mspace\" style=\"margin-right:0.2222222222222222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.64444em;vertical-align:0em;\"></span><span class=\"mord\">1</span></span></span></span> as sets.</p>",
+        "id": 192961561,
+        "sender_full_name": "Paolo Capriotti",
+        "timestamp": 1586096281
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"277002\">Paolo Capriotti</span> <a href=\"#narrow/stream/229111-general/topic/commutative.20semigroups/near/192959732\" title=\"#narrow/stream/229111-general/topic/commutative.20semigroups/near/192959732\">said</a>:</p>\n<blockquote>\n<p>The best I can see is that the category of monoids is comonadic over the category of semigroups (classically).</p>\n</blockquote>\n<p>Oops, I meant it the other way, sorry for the confusion. <span aria-label=\"blush\" class=\"emoji emoji-1f60a\" role=\"img\" title=\"blush\">:blush:</span> </p>\n<blockquote>\n<p>And the category of semigroups is monadic over the category of monoids, since the functor adding an identity element preserves coequalizers.</p>\n</blockquote>\n<p>This I don't see, because the functor adding an identity does not have a left adjoint. It has a right adjoint, so of course it preserves coqualisers.</p>",
+        "id": 192961888,
+        "sender_full_name": "Paolo Capriotti",
+        "timestamp": 1586096745
+    },
+    {
+        "content": "<p><em>mild embarrassment</em> I... may have drawn my adjunction upside down at the start of this discussion, and you making the same mistake re which is comonadic over which meant I didn't notice until now <span aria-label=\"scream\" class=\"emoji emoji-1f631\" role=\"img\" title=\"scream\">:scream:</span></p>",
+        "id": 192962051,
+        "sender_full_name": "Morgan Rogers (he/him)",
+        "timestamp": 1586097001
+    },
+    {
+        "content": "<p>This has been way more confusing than I expected it would be. <span aria-label=\"smile\" class=\"emoji emoji-263a\" role=\"img\" title=\"smile\">:smile:</span><br>\nHave we reached an agreement, though? The adjunction between monoids and semigroups is both monadic and comonadic. Is that right?</p>",
+        "id": 192962270,
+        "sender_full_name": "Paolo Capriotti",
+        "timestamp": 1586097272
+    },
+    {
+        "content": "<p>So the counit at a monoid <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>M</mi></mrow><annotation encoding=\"application/x-tex\">M</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathdefault\" style=\"margin-right:0.10903em;\">M</span></span></span></span> is the map <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>M</mi><mo>+</mo><mn>1</mn><mo>→</mo><mi>M</mi></mrow><annotation encoding=\"application/x-tex\">M+1 \\to M</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.76666em;vertical-align:-0.08333em;\"></span><span class=\"mord mathdefault\" style=\"margin-right:0.10903em;\">M</span><span class=\"mspace\" style=\"margin-right:0.2222222222222222em;\"></span><span class=\"mbin\">+</span><span class=\"mspace\" style=\"margin-right:0.2222222222222222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.64444em;vertical-align:0em;\"></span><span class=\"mord\">1</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">→</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathdefault\" style=\"margin-right:0.10903em;\">M</span></span></span></span> which identifies the added unit with the original one, while the unit at a semigroup <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>S</mi></mrow><annotation encoding=\"application/x-tex\">S</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathdefault\" style=\"margin-right:0.05764em;\">S</span></span></span></span> is the inclusion into <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>S</mi><mo>+</mo><mn>1</mn></mrow><annotation encoding=\"application/x-tex\">S+1</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.76666em;vertical-align:-0.08333em;\"></span><span class=\"mord mathdefault\" style=\"margin-right:0.05764em;\">S</span><span class=\"mspace\" style=\"margin-right:0.2222222222222222em;\"></span><span class=\"mbin\">+</span><span class=\"mspace\" style=\"margin-right:0.2222222222222222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.64444em;vertical-align:0em;\"></span><span class=\"mord\">1</span></span></span></span>. Both functors are conservative, adding a unit preserves equalisers, and the forgetful functor preserves coequalizers (as far as I can tell), so yes, the adjunction is both monadic and comonadic. <span aria-label=\"tada\" class=\"emoji emoji-1f389\" role=\"img\" title=\"tada\">:tada:</span></p>",
+        "id": 192962284,
+        "sender_full_name": "Morgan Rogers (he/him)",
+        "timestamp": 1586097303
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"281272\">Sam Tenka (naive student)</span> <a href=\"#narrow/stream/229111-general/topic/commutative.20semigroups/near/192933182\" title=\"#narrow/stream/229111-general/topic/commutative.20semigroups/near/192933182\">said</a>:</p>\n<blockquote>\n<p>It's a very entertainingly written book!  For example, the first few pages motivate the structure problem for semigroups as philosophical quest to understand time.   When I tried to read it in undergrad, I got lost.  Maybe I'm more mature now.</p>\n</blockquote>\n<p>Sorry for the off-topic, but holy moly. I just realized that I must have taken a very strange seminar for undergraduates from Rhodes at Berkeley, and not known much about him at the time. I remember being given runoffs from a manuscript of his to read (must have been the Wild Book!), and thinking they were the oddest things I'd ever seen a professor write and hand out to students. I did learn a fair amount about automata in that class, along with some very confusing discussions about how they could explain consciousness...</p>",
+        "id": 193013436,
+        "sender_full_name": "Gershom",
+        "timestamp": 1586163820
+    },
+    {
+        "content": "<p>Out of curiosity - Has anyone ever studied \"colored\" semigroups, (or categories without unities)? I wonder what category theory results break when removing unity. I can envision the concept of adjunction, but there wouldn't be unit and counit, so probably no monad and comonad associated to an adjunction. Sorry if this is too off-topic, the \"commutative\" part doesn't fit well with colors</p>",
+        "id": 193021580,
+        "sender_full_name": "Thibaut Benjamin",
+        "timestamp": 1586168759
+    },
+    {
+        "content": "<p>All I know is that it's called a “semicategory”. <a href=\"https://ncatlab.org/nlab/show/semicategory\" title=\"https://ncatlab.org/nlab/show/semicategory\">https://ncatlab.org/nlab/show/semicategory</a></p>",
+        "id": 193021779,
+        "sender_full_name": "James Wood",
+        "timestamp": 1586168894
+    },
+    {
+        "content": "<p>What do the unit and counit of an adjunction have to do with the presence of identity morphisms?</p>",
+        "id": 193050429,
+        "sender_full_name": "Amar Hadzihasanovic",
+        "timestamp": 1586183597
+    },
+    {
+        "content": "<p>^structures without identity elements still have an identity automorphism!</p>",
+        "id": 193052368,
+        "sender_full_name": "Morgan Rogers (he/him)",
+        "timestamp": 1586184347
+    },
+    {
+        "content": "<p><span class=\"user-mention\" data-user-id=\"276363\">@Amar Hadzihasanovic</span> isn't the unit of the adjunction obtained as being the image of the identity morphism through the isomorphism <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mrow><mi mathvariant=\"normal\">H</mi><mi mathvariant=\"normal\">o</mi><mi mathvariant=\"normal\">m</mi></mrow><mo stretchy=\"false\">(</mo><mi>F</mi><mi>A</mi><mo separator=\"true\">,</mo><mi>F</mi><mi>A</mi><mo stretchy=\"false\">)</mo><mo>≃</mo><mrow><mi mathvariant=\"normal\">H</mi><mi mathvariant=\"normal\">o</mi><mi mathvariant=\"normal\">m</mi></mrow><mo stretchy=\"false\">(</mo><mi>A</mi><mo separator=\"true\">,</mo><mi>G</mi><mi>F</mi><mi>A</mi><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">\\mathrm{Hom}(FA,FA) \\simeq \\mathrm{Hom}(A,GFA)</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord\"><span class=\"mord mathrm\">H</span><span class=\"mord mathrm\">o</span><span class=\"mord mathrm\">m</span></span><span class=\"mopen\">(</span><span class=\"mord mathdefault\" style=\"margin-right:0.13889em;\">F</span><span class=\"mord mathdefault\">A</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mord mathdefault\" style=\"margin-right:0.13889em;\">F</span><span class=\"mord mathdefault\">A</span><span class=\"mclose\">)</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">≃</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord\"><span class=\"mord mathrm\">H</span><span class=\"mord mathrm\">o</span><span class=\"mord mathrm\">m</span></span><span class=\"mopen\">(</span><span class=\"mord mathdefault\">A</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mord mathdefault\">G</span><span class=\"mord mathdefault\" style=\"margin-right:0.13889em;\">F</span><span class=\"mord mathdefault\">A</span><span class=\"mclose\">)</span></span></span></span>? if there is no identity morphism I can't see where the unit comes from. To be fair, maybe I should have said that there are two notions of adjunction - one stating the equivalence of Homs and the other one being a pair of functor with unit and counit satisfying the correct coherence. Without identity morphism, I don't see a reason why with two notions would coincide</p>",
+        "id": 193053546,
+        "sender_full_name": "Thibaut Benjamin",
+        "timestamp": 1586184816
+    },
+    {
+        "content": "<p>Oh I see what you meant there, my bad!</p>",
+        "id": 193053697,
+        "sender_full_name": "Thibaut Benjamin",
+        "timestamp": 1586184869
+    },
+    {
+        "content": "<p>I mixed up between the internal and eternal part</p>",
+        "id": 193053802,
+        "sender_full_name": "Thibaut Benjamin",
+        "timestamp": 1586184918
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"279935\">Thibaut Benjamin</span> <a href=\"#narrow/stream/229111-general/topic/commutative.20semigroups/near/193053546\" title=\"#narrow/stream/229111-general/topic/commutative.20semigroups/near/193053546\">said</a>:</p>\n<blockquote>\n<p><span class=\"user-mention silent\" data-user-id=\"276363\">Amar Hadzihasanovic</span> isn't the unit of the adjunction obtained as being the image of the identity morphism through the isomorphism <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mrow><mi mathvariant=\"normal\">H</mi><mi mathvariant=\"normal\">o</mi><mi mathvariant=\"normal\">m</mi></mrow><mo stretchy=\"false\">(</mo><mi>F</mi><mi>A</mi><mo separator=\"true\">,</mo><mi>F</mi><mi>A</mi><mo stretchy=\"false\">)</mo><mo>≃</mo><mrow><mi mathvariant=\"normal\">H</mi><mi mathvariant=\"normal\">o</mi><mi mathvariant=\"normal\">m</mi></mrow><mo stretchy=\"false\">(</mo><mi>A</mi><mo separator=\"true\">,</mo><mi>G</mi><mi>F</mi><mi>A</mi><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">\\mathrm{Hom}(FA,FA) \\simeq \\mathrm{Hom}(A,GFA)</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord\"><span class=\"mord mathrm\">H</span><span class=\"mord mathrm\">o</span><span class=\"mord mathrm\">m</span></span><span class=\"mopen\">(</span><span class=\"mord mathdefault\" style=\"margin-right:0.13889em;\">F</span><span class=\"mord mathdefault\">A</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mord mathdefault\" style=\"margin-right:0.13889em;\">F</span><span class=\"mord mathdefault\">A</span><span class=\"mclose\">)</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">≃</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord\"><span class=\"mord mathrm\">H</span><span class=\"mord mathrm\">o</span><span class=\"mord mathrm\">m</span></span><span class=\"mopen\">(</span><span class=\"mord mathdefault\">A</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mord mathdefault\">G</span><span class=\"mord mathdefault\" style=\"margin-right:0.13889em;\">F</span><span class=\"mord mathdefault\">A</span><span class=\"mclose\">)</span></span></span></span>? if there is no identity morphism I can't see where the unit comes from. To be fair, maybe I should have said that there are two notions of adjunction - one stating the equivalence of Homs and the other one being a pair of functor with unit and counit satisfying the correct coherence. Without identity morphism, I don't see a reason why with two notions would coincide</p>\n</blockquote>\n<p>This is a good point, perhaps I spoke too quickly. <span aria-label=\"hushed\" class=\"emoji emoji-1f62f\" role=\"img\" title=\"hushed\">:hushed:</span></p>",
+        "id": 193061845,
+        "sender_full_name": "Morgan Rogers (he/him)",
+        "timestamp": 1586188274
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"275920\">John Baez</span> <a href=\"#narrow/stream/229111-general/topic/commutative.20semigroups/near/192933072\" title=\"#narrow/stream/229111-general/topic/commutative.20semigroups/near/192933072\">said</a>:</p>\n<blockquote>\n<p>But I don't really understand the Krohn-Rhodes decomposition, though I understand most of the words by now.</p>\n</blockquote>\n<p>One intuitive way to see it is in automata-theoretic terms. A <em>Mealy machine</em> is like a deterministic finite automaton, but each transition also outputs a letter; it computes the function obtained by concatenating the ouputted letters for a run over some input word. Then the Krohn-Rhodes theorem says that a string-to-string function computable by a Mealy machine (called a <em>synchronous function</em>) can be obtained by composing (by ordinary function composition) simpler Mealy machines:</p>\n<ul>\n<li>machines whose transition monoid is a <em>group</em>,</li>\n<li>machines with only <em>2 states</em> and whose transitions cannot swap the two states (you are only allowed \"stay in the same state\", \"go to state 1 independently of where you were\", \"go to state 2\").<br>\nThe \"wreath product\" involved in the semigroup version is just a way to give an algebraic account of the function composition of Mealy machines.</li>\n</ul>",
+        "id": 193063537,
+        "sender_full_name": "Nguyễn Lê Thành Dũng",
+        "timestamp": 1586189073
+    },
+    {
+        "content": "<p>This version can also be extended to more general automata models (e.g. sequential transducers) and is now a common workhorse of algebraic language theory (as someone who is not really an automata theorist I get the feeling that there are two intensively used results on semigroups, one is Krohn-Rhodes and the other is Simon's factorization forest theorem). I recommend looking at <a href=\"https://www.mimuw.edu.pl/~bojan/2019-2020/transducers-and-their-krohn-rhodes-decompositions\" title=\"https://www.mimuw.edu.pl/~bojan/2019-2020/transducers-and-their-krohn-rhodes-decompositions\">https://www.mimuw.edu.pl/~bojan/2019-2020/transducers-and-their-krohn-rhodes-decompositions</a></p>",
+        "id": 193063979,
+        "sender_full_name": "Nguyễn Lê Thành Dũng",
+        "timestamp": 1586189282
+    },
+    {
+        "content": "<p>Let me take this opportunity to do some self promotion :p Pierre Pradic and I used Krohn-Rhodes to relate star-free languages to a non-commutative lambda-calculus in a recent preprint: <a href=\"https://hal.archives-ouvertes.fr/hal-02476219/document\" title=\"https://hal.archives-ouvertes.fr/hal-02476219/document\">https://hal.archives-ouvertes.fr/hal-02476219/document</a><br>\nAbout star-free languages, there have been some blog posts recently on Gödel's Last Letter, <a href=\"https://rjlipton.wordpress.com/2020/03/21/star-free-regular-languages-and-logic/\" title=\"https://rjlipton.wordpress.com/2020/03/21/star-free-regular-languages-and-logic/\">https://rjlipton.wordpress.com/2020/03/21/star-free-regular-languages-and-logic/</a> and <a href=\"https://rjlipton.wordpress.com/2020/03/29/logic-and-star-free-part-deux/\" title=\"https://rjlipton.wordpress.com/2020/03/29/logic-and-star-free-part-deux/\">https://rjlipton.wordpress.com/2020/03/29/logic-and-star-free-part-deux/</a></p>",
+        "id": 193064793,
+        "sender_full_name": "Nguyễn Lê Thành Dũng",
+        "timestamp": 1586189590
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"279935\">Thibaut Benjamin</span> <a href=\"#narrow/stream/229111-general/topic/commutative.20semigroups/near/193021580\" title=\"#narrow/stream/229111-general/topic/commutative.20semigroups/near/193021580\">said</a>:</p>\n<blockquote>\n<p>Out of curiosity - Has anyone ever studied \"colored\" semigroups, (or categories without unities)? I wonder what category theory results break when removing unity. I can envision the concept of adjunction, but there wouldn't be unit and counit, so probably no monad and comonad associated to an adjunction. Sorry if this is too off-topic, the \"commutative\" part doesn't fit well with colors</p>\n</blockquote>\n<p>Not quite the same, but in \"A remark on the theory of semi-functors\" Hoofman and Moerdijk study categories and semifunctors (i.e. \"functors\" that preserve composition but not necessarily identity morphisms), and show that the resulting 2-category is equivalent to the 2-category of Karoubi-complete categories and ordinary functors. Perhaps this equivalence extends to an adjunction between semicategories and categories? Edit: indeed, this is more or less said in the nlab article linked above.</p>",
+        "id": 193066641,
+        "sender_full_name": "Martti Karvonen",
+        "timestamp": 1586190451
+    },
+    {
+        "content": "<p>I think I've heard these categories without identity maps called semi-categories...</p>",
+        "id": 193076726,
+        "sender_full_name": "Joe Moeller",
+        "timestamp": 1586195173
+    },
+    {
+        "content": "<p>They're also called semigroupoids.</p>",
+        "id": 193076988,
+        "sender_full_name": "Dan Doel",
+        "timestamp": 1586195305
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"278835\">Nguyễn Lê Thành Dũng</span> <a href=\"#narrow/stream/229111-general/topic/commutative.20semigroups/near/193063979\" title=\"#narrow/stream/229111-general/topic/commutative.20semigroups/near/193063979\">said</a>:</p>\n<blockquote>\n<p>This version can also be extended to more general automata models (e.g. sequential transducers) and is now a common workhorse of algebraic language theory (as someone who is not really an automata theorist I get the feeling that there are two intensively used results on semigroups, one is Krohn-Rhodes and the other is Simon's factorization forest theorem). I recommend looking at <a href=\"https://www.mimuw.edu.pl/~bojan/2019-2020/transducers-and-their-krohn-rhodes-decompositions\" title=\"https://www.mimuw.edu.pl/~bojan/2019-2020/transducers-and-their-krohn-rhodes-decompositions\">https://www.mimuw.edu.pl/~bojan/2019-2020/transducers-and-their-krohn-rhodes-decompositions</a></p>\n</blockquote>\n<p>Thanks!  I should learn these theorems well, then.   I'll never be an expert on semigroups, but as a category theorist I should not be ignorant of them!</p>",
+        "id": 193077123,
+        "sender_full_name": "John Baez",
+        "timestamp": 1586195372
+    },
+    {
+        "content": "<p>Since that follows the algebra-oid naming scheme.</p>",
+        "id": 193077141,
+        "sender_full_name": "Dan Doel",
+        "timestamp": 1586195381
+    },
+    {
+        "content": "<p>Unfortunately this name is quite difficult for category theorists I think because \"groupoid\" is about 100x as common as \"semigroup\", so it looks like a unit.</p>",
+        "id": 193077252,
+        "sender_full_name": "Reid Barton",
+        "timestamp": 1586195415
+    },
+    {
+        "content": "<p>While the intended parsing is \"(semigroup)oid\".</p>",
+        "id": 193077306,
+        "sender_full_name": "Reid Barton",
+        "timestamp": 1586195446
+    },
+    {
+        "content": "<p>Yeah.</p>",
+        "id": 193077310,
+        "sender_full_name": "Dan Doel",
+        "timestamp": 1586195446
+    },
+    {
+        "content": "<p>What would a semi(groupoid) be, though? Groupoid is the categorification of group, right? So wouldn't it be expected to work out given what a semigroup is (although that might not be well known)?</p>",
+        "id": 193077556,
+        "sender_full_name": "Dan Doel",
+        "timestamp": 1586195552
+    },
+    {
+        "content": "<p>right, it can't be anything so my brain just goes <span aria-label=\"boom\" class=\"emoji emoji-1f4a5\" role=\"img\" title=\"boom\">:boom:</span> and doesn't backtrack to the other parsing.</p>",
+        "id": 193077608,
+        "sender_full_name": "Reid Barton",
+        "timestamp": 1586195578
+    },
+    {
+        "content": "<p>or well that's not quite what you said, hmm</p>",
+        "id": 193077635,
+        "sender_full_name": "Reid Barton",
+        "timestamp": 1586195596
+    },
+    {
+        "content": "<p>Semigroup might be a bad name already.</p>",
+        "id": 193077672,
+        "sender_full_name": "Dan Doel",
+        "timestamp": 1586195615
+    },
+    {
+        "content": "<p>I think \"semi-\" has been co-opted to mean \"nonunital\" (really, \"nonunital category\" is the safest name) and so... yeah. You can't have a semigroup in that sense because it's no longer a group.</p>",
+        "id": 193077705,
+        "sender_full_name": "Reid Barton",
+        "timestamp": 1586195636
+    },
+    {
+        "content": "<p>Anyhow, a lot of hits for 'semigroupoid' will probably be functional programmers, because they're good at coming up with structures where composition makes sense, but where there's no unit unless you formally add one (which just causes you more bookkeeping work). But I did see at least one paper that sounded more like examining the theory of 'semigroupoids.'</p>",
+        "id": 193078417,
+        "sender_full_name": "Dan Doel",
+        "timestamp": 1586195958
+    },
+    {
+        "content": "<p>The only thing I remember theory-wise from the programming context is that the Yoneda lemma probably doesn't work anymore.</p>",
+        "id": 193078591,
+        "sender_full_name": "Dan Doel",
+        "timestamp": 1586196008
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"277270\">Dan Doel</span> <a href=\"#narrow/stream/229111-general/topic/commutative.20semigroups/near/193077556\" title=\"#narrow/stream/229111-general/topic/commutative.20semigroups/near/193077556\">said</a>:</p>\n<blockquote>\n<p>What would a semi(groupoid) be, though? </p>\n</blockquote>\n<p>For better or worse, <a href=\"https://www.sciencedirect.com/science/article/pii/0040938379900223\" title=\"https://www.sciencedirect.com/science/article/pii/0040938379900223\">here</a> Dusa McDuff defined semigroupoids to be non-empty, small, discrete categories in which all objects are isomorphic.</p>",
+        "id": 193089123,
+        "sender_full_name": "John Baez",
+        "timestamp": 1586201128
+    },
+    {
+        "content": "<p>If it's discrete and all objects are isomorphic, can it only have one object?</p>",
+        "id": 193090317,
+        "sender_full_name": "Dan Doel",
+        "timestamp": 1586201725
+    },
+    {
+        "content": "<p>I guess not.</p>",
+        "id": 193090440,
+        "sender_full_name": "Dan Doel",
+        "timestamp": 1586201793
+    },
+    {
+        "content": "<p>why not?</p>",
+        "id": 193090674,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1586201918
+    },
+    {
+        "content": "<p>Because 'discrete' doesn't necessarily mean 'all maps are identities' like I thought.</p>",
+        "id": 193090719,
+        "sender_full_name": "Dan Doel",
+        "timestamp": 1586201941
+    },
+    {
+        "content": "<p>What does 'discrete' mean here?</p>",
+        "id": 193090733,
+        "sender_full_name": "Oscar Cunningham",
+        "timestamp": 1586201948
+    },
+    {
+        "content": "<p>Sorry: she means discrete in the topological sense.  She's a topologist.</p>",
+        "id": 193090752,
+        "sender_full_name": "John Baez",
+        "timestamp": 1586201962
+    },
+    {
+        "content": "<p>So category theorists can leave out the word \"discrete\" here.</p>",
+        "id": 193090785,
+        "sender_full_name": "John Baez",
+        "timestamp": 1586201981
+    },
+    {
+        "content": "<p>So, is this a contractible groupoid with a small set of objects or something?</p>",
+        "id": 193090901,
+        "sender_full_name": "Dan Doel",
+        "timestamp": 1586202026
+    },
+    {
+        "content": "<p>So up to equivalence we're talking about the deloopings of (EDIT: small) monoids</p>",
+        "id": 193090928,
+        "sender_full_name": "Oscar Cunningham",
+        "timestamp": 1586202036
+    },
+    {
+        "content": "<p>Or is it groupoids that are equivalent to groups?</p>",
+        "id": 193091356,
+        "sender_full_name": "Dan Doel",
+        "timestamp": 1586202248
+    },
+    {
+        "content": "<blockquote>\n<p>So, is this a contractible groupoid with a small set of objects or something?</p>\n</blockquote>\n<p>No, McDuff is not demanding that all morphisms be invertible: she said \"non-empty, small category in which all objects are isomorphic.\"   So it's a small category that's equivalent to a monoid.</p>",
+        "id": 193092486,
+        "sender_full_name": "John Baez",
+        "timestamp": 1586202840
+    },
+    {
+        "content": "<p>I don't think this is a good thing to call a \"semigroupoid\" - I'm just warning y'all that she did it.</p>",
+        "id": 193092588,
+        "sender_full_name": "John Baez",
+        "timestamp": 1586202879
+    },
+    {
+        "content": "<p>Oh, I see. It needn't be a groupoid.</p>",
+        "id": 193092863,
+        "sender_full_name": "Dan Doel",
+        "timestamp": 1586202992
+    },
+    {
+        "content": "<p>Great. :)</p>",
+        "id": 193092876,
+        "sender_full_name": "Dan Doel",
+        "timestamp": 1586202998
+    },
+    {
+        "content": "<p>This seems like it's using the algebra-oid version though: <a href=\"https://arxiv.org/pdf/1902.09375.pdf\" title=\"https://arxiv.org/pdf/1902.09375.pdf\">https://arxiv.org/pdf/1902.09375.pdf</a></p>",
+        "id": 193093093,
+        "sender_full_name": "Dan Doel",
+        "timestamp": 1586203111
+    },
+    {
+        "content": "<p>So I guess they're both in use in actual category theory papers.</p>",
+        "id": 193093117,
+        "sender_full_name": "Dan Doel",
+        "timestamp": 1586203126
+    },
+    {
+        "content": "<p>Oh wait, I guess it isn't? Because it says categories are semigroupoids. This may even be a third definition of 'semigroupoid'.</p>",
+        "id": 193093306,
+        "sender_full_name": "Dan Doel",
+        "timestamp": 1586203203
+    },
+    {
+        "content": "<p><span class=\"user-mention\" data-user-id=\"278835\">@Nguyễn Lê Thành Dũng</span>  Thanks!  This is clarifying.  It seems that KR morally reveals that those 2 state machines are the \"source of all non-invertibility\" --- neat!</p>",
+        "id": 193122867,
+        "sender_full_name": "Sam Tenka",
+        "timestamp": 1586222902
+    }
+]

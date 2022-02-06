@@ -1,0 +1,188 @@
+[
+    {
+        "content": "<p>Indeed, thanks for the pointers.</p>",
+        "id": 262793216,
+        "sender_full_name": "Jacques Carette",
+        "timestamp": 1637930740
+    },
+    {
+        "content": "<p>While sketches have an appealing diagrammatic flavor, my guess is that they are not much used because they are extremely verbose compared to equivalent formalisms. Try writing down the theory of categories, or even just the theory of monoids, as a finite limit or finite product sketch, including all the axioms, and compare with the equivalent (generalized) algebraic theories.</p>",
+        "id": 262904389,
+        "sender_full_name": "Evan Patterson",
+        "timestamp": 1638066120
+    },
+    {
+        "content": "<p>I'm a big fan of generalized algebraic theories. Thanks for giving me an incentive to just stick with them!</p>",
+        "id": 262933356,
+        "sender_full_name": "Jacques Carette",
+        "timestamp": 1638112015
+    },
+    {
+        "content": "<p>I feel that sketches become very useful when it is too complex to carefully present things syntactically. GATs are near the upper limit of feasible complexity for working in a precise way, but they are still within possibility --- which is why they have been so successful.</p>\n<p>I like to take the \"best of both worlds\": writing things down syntactically in nice notations, and claim that it can be sketched. This way I am at least using a \"loose notation to make a precise mathematical statement\" --- whereas, I find attempts to work entirely \"type theoretically\" from top to bottom to be more of \"using a loose notation to make an imprecise mathematical statement\", unless things are done with a level of care that is usually prohibitive.</p>",
+        "id": 262995517,
+        "sender_full_name": "Jonathan Sterling",
+        "timestamp": 1638185033
+    },
+    {
+        "content": "<p>So, when I do 'real' work, these days I pretty much always use Agda. Is that a sufficient level of care?</p>\n<p><span class=\"user-mention\" data-user-id=\"297784\">@Jonathan Sterling</span> can you give me concrete examples of when things are too complex to present syntactically? If I were to guess, maybe you mean when something is given by a construction, and it's easier to 'output' a sketch than a proper definition in type theory? Or is that not it at all?</p>",
+        "id": 263015556,
+        "sender_full_name": "Jacques Carette",
+        "timestamp": 1638196434
+    },
+    {
+        "content": "<p>If you want to prove that the category of models of an algebraic theory is cocomplete (or better yet, locally presentable) then writing it as the category of models of a limit sketch is a useful \"intermediate representation\".</p>",
+        "id": 263016269,
+        "sender_full_name": "Reid Barton",
+        "timestamp": 1638196756
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"277473\">Morgan Rogers (he/him)</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/sketches.3F/near/262706971\">said</a>:</p>\n<blockquote>\n<p>In Johnstone's <em>Sketches of an Elephant</em> there is a nice comparison with other logical frameworks.</p>\n</blockquote>\n<p>As one might expect from the book’s title ;-)</p>",
+        "id": 263097677,
+        "sender_full_name": "Alexander Campbell",
+        "timestamp": 1638242322
+    },
+    {
+        "content": "<p><span class=\"user-mention\" data-user-id=\"296322\">@Jacques Carette</span> The difficulty is usually not \"presenting it in type theory\" vs. \"sketching\" --- this is usually just a matter of taste. The difficulty lies rather in the choice between \"constructing a finitary 2-monad for some new kind of structure\" vs. \"constructing the type theory / logical framework for this structure and showing that it is sound and complete for the desired category of models\". The former can often be done very easily by virtue of some nice math and general results, whereas the latter is even in the \"easy\" cases almost beyond what we can rigorously do by hand --- see Streicher's syntactical initiality argument, for instance, a variant of which was recently formalized in Agda.</p>",
+        "id": 263111813,
+        "sender_full_name": "Jonathan Sterling",
+        "timestamp": 1638260135
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"277459\">Alexander Campbell</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/sketches.3F/near/263097677\">said</a>:</p>\n<blockquote>\n<p><span class=\"user-mention silent\" data-user-id=\"277473\">Morgan Rogers (he/him)</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/sketches.3F/near/262706971\">said</a>:</p>\n<blockquote>\n<p>In Johnstone's <em>Sketches of an Elephant</em> there is a nice comparison with other logical frameworks.</p>\n</blockquote>\n<p>As one might expect from the book’s title ;-)</p>\n</blockquote>\n<p>Disappointingly, a sketch for the theory of Elephants is not provided...</p>",
+        "id": 263117422,
+        "sender_full_name": "Morgan Rogers (he/him)",
+        "timestamp": 1638263854
+    },
+    {
+        "content": "<p><span class=\"user-mention\" data-user-id=\"297784\">@Jonathan Sterling</span> Just so that I understand fully, let me rephrase: the difficulty is not in defining  and using particular theories via a presentation (in either setting), but rather in doing the meta-theory of that newly defined item.</p>",
+        "id": 263132759,
+        "sender_full_name": "Jacques Carette",
+        "timestamp": 1638272918
+    },
+    {
+        "content": "<p><span class=\"user-mention\" data-user-id=\"296322\">@Jacques Carette</span> That's right! So what I do in practice is write down \"type theoretic\" presentations of theories, and then point out that they correspond to sketches for a certain 2-monad. This way I avoid needing to develop the metatheory of the logical framework.</p>",
+        "id": 263132992,
+        "sender_full_name": "Jonathan Sterling",
+        "timestamp": 1638273066
+    },
+    {
+        "content": "<p>Btw. It is perhaps worth explaining why this doesn't \"beg the question\" of syntactic initiality --- one only has to interpret finitely many \"type theoretically defined\" constants into the abstract internal language determined by the doctrine, which can be thought of as a \"read-time\" procedure to be executed by the mathematical reader. One is not relying on the (true, but harder to establish rigorously) fact that some formal syntax that is notated with turnstiles is sound and complete.</p>",
+        "id": 263157351,
+        "sender_full_name": "Jonathan Sterling",
+        "timestamp": 1638284599
+    },
+    {
+        "content": "<p>(It is much like how one can work with groups without developing the formal syntax of groups.)</p>",
+        "id": 263157424,
+        "sender_full_name": "Jonathan Sterling",
+        "timestamp": 1638284640
+    },
+    {
+        "content": "<p>To flesh out the analogy: you only need the axiomatic description of groups, not reason over actual presentations in terms of generators and relations. </p>\n<p>Note that although I am familiar with the idea of 'doctrine' (and some generalizations), I have yet to see a definition that is formal enough that I can \"write it down in Agda\". Do you know if it is indeed a fuzzy idea, or something that can be properly formalized?</p>",
+        "id": 263161481,
+        "sender_full_name": "Jacques Carette",
+        "timestamp": 1638286372
+    },
+    {
+        "content": "<blockquote>\n<p>Do you know if it is indeed a fuzzy idea, or something that can be properly formalized?</p>\n</blockquote>\n<p>It is a fuzzy idea (see <a href=\"https://ncatlab.org/nlab/show/doctrine\">[[doctrine]]</a> for some suggestions as to what it could mean, none of which are particularly satisfactory).</p>",
+        "id": 263165334,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1638287997
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"296322\">Jacques Carette</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/sketches.3F/near/263161481\">said</a>:</p>\n<blockquote>\n<p>To flesh out the analogy: you only need the axiomatic description of groups, not reason over actual presentations in terms of generators and relations. </p>\n<p>Note that although I am familiar with the idea of 'doctrine' (and some generalizations), I have yet to see a definition that is formal enough that I can \"write it down in Agda\". Do you know if it is indeed a fuzzy idea, or something that can be properly formalized?</p>\n</blockquote>\n<p>It is both a fuzzy idea and several precise ideas. One of the precise ideas is \"2-monad\", and with this version you can develop a number of important things: the presentation of doctrines by generators and relations, and the presentations of <em>theories</em> in the doctrine by sketches. Based on the exposition of Kinoshita, Power, and Takeyama (<a href=\"https://www.sciencedirect.com/science/article/pii/S0022404998001145?via%3Dihub\">https://www.sciencedirect.com/science/article/pii/S0022404998001145?via%3Dihub</a>), Daniel Gratzer and I wrote some elementary tutorial examples here: <a href=\"https://www.jonmsterling.com/abstracts.html#gratzer-sterling:2020\">https://www.jonmsterling.com/abstracts.html#gratzer-sterling:2020</a></p>",
+        "id": 263172174,
+        "sender_full_name": "Jonathan Sterling",
+        "timestamp": 1638290638
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"296322\">Jacques Carette</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/sketches.3F/near/263161481\">said</a>:</p>\n<blockquote>\n<p>To flesh out the analogy: you only need the axiomatic description of groups, not reason over actual presentations in terms of generators and relations. </p>\n<p>Note that although I am familiar with the idea of 'doctrine' (and some generalizations), I have yet to see a definition that is formal enough that I can \"write it down in Agda\". Do you know if it is indeed a fuzzy idea, or something that can be properly formalized?</p>\n</blockquote>\n<p>Maybe to be a little more precise: it is always important / non-optional to be able to present groups in terms of generators and relations, but the generators and relations are still just treated as ordinary mathematical objects and not as syntax. For algebraic theories there is actually very little difference (which is why it is easy in a second-semester categorical logic course to have the students derive the syntactic metatheory of algebraic theories completely from scratch), the difference between \"generators and relations\" and \"the entire syntax of the language of XXX theories\" becomes quite large. This is the difference between presenting MLTT by a number of constants in the Logical Framework, vs. presenting it as dozens of rules (including congruence rules, etc.).</p>",
+        "id": 263172550,
+        "sender_full_name": "Jonathan Sterling",
+        "timestamp": 1638290765
+    },
+    {
+        "content": "<p>So there are two layers of presentation, which in much of the literature get squashed into one. There is the presentation of the logical framework by rules of deduction (unnecessary but sometimes useful) and there is the presentation of the theory by constants in the logical framework (almost always necessary). In mainstream type theoretic literature, people do both steps at once --- and therefore lose the opportunity to skip unnecessary work.</p>",
+        "id": 263172702,
+        "sender_full_name": "Jonathan Sterling",
+        "timestamp": 1638290833
+    },
+    {
+        "content": "<p>If I understand the distinction you're making, my feeling is that, in practice, people tend not to use logical frameworks at all, and usually instead choose to informally write down some rules they know will be generally understood by their audience. Papers using logical frameworks are typically being more rigorous than most.</p>",
+        "id": 263173424,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1638291129
+    },
+    {
+        "content": "<p>In the case of groups, guess there's really three layers!</p>\n<p>1) You can present the doctrine of algebraic theories by judgments and rules of deduction.<br>\n2) You can present the theory of groups by a (non-unique choice of) generators and equations in the language of algebraic theories.<br>\n3) You can present a single group in the language of groups by generators and relations. </p>\n<p>Anyway, it's good to be able to decide for yourself where you are getting mileage out of presentations. My experience is that presentations play an crucial role in all three levels, but that \"mathematical\" versions of presentations are better in all cases than the \"turnstiles and horizontal lines\" presentations --- what makes a presentation \"mathematical\" in my view is that it doesn't require you to specify silly congruence rules, etc., which tend to just blow up your theory in ways that make it too unwieldy to prove anything about rigorously.</p>\n<p>So I am not against presentations... But I am very much against presentations in languages where you must manually close your language under \"substitution of equals for equals\". There is absolutely no need for this anywhere, but it is something that people often insist on...</p>",
+        "id": 263173501,
+        "sender_full_name": "Jonathan Sterling",
+        "timestamp": 1638291170
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276092\">Nathanael Arkor</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/sketches.3F/near/263173424\">said</a>:</p>\n<blockquote>\n<p>If I understand the distinction you're making, my feeling is that, in practice, people tend not to use logical frameworks at all, and usually instead choose to informally write down some rules they know will be generally understood by their audience. Papers using logical frameworks are typically being more rigorous than most.</p>\n</blockquote>\n<p>Right. People who don't use LFs like to make mountains out of the molehill of things like initiality etc., in particular because their ill-equipped methods truly do turn it into Mount Everest... My preference is to just work informally, but make sure everything I am doing corresponds to something mathematically meaningful on its own, as opposed to building up these immense sand-castles and then making sure that every turret has an even number of grains.</p>",
+        "id": 263173698,
+        "sender_full_name": "Jonathan Sterling",
+        "timestamp": 1638291248
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"297784\">Jonathan Sterling</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/sketches.3F/near/263172174\">said</a>:</p>\n<blockquote>\n<p><span class=\"user-mention silent\" data-user-id=\"296322\">Jacques Carette</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/sketches.3F/near/263161481\">said</a>:</p>\n<blockquote>\n<p>To flesh out the analogy: you only need the axiomatic description of groups, not reason over actual presentations in terms of generators and relations. </p>\n<p>Note that although I am familiar with the idea of 'doctrine' (and some generalizations), I have yet to see a definition that is formal enough that I can \"write it down in Agda\". Do you know if it is indeed a fuzzy idea, or something that can be properly formalized?</p>\n</blockquote>\n<p>It is both a fuzzy idea and several precise ideas. One of the precise ideas is \"2-monad\", and with this version you can develop a number of important things: the presentation of doctrines by generators and relations, and the presentations of <em>theories</em> in the doctrine by sketches.</p>\n</blockquote>\n<p>Right: it's a fuzzy idea which has been formalized in a number of very fruitful ways.    There are a number of ways of describing algebraic structures on sets (or objects in other categories): monads is one, and Lawvere theories is another, and there are plenty more.  We can categorify any one of these concepts and get a way of describing algebraic structures on categories (or objects in other 2-categories).   Any of these ways of describing algebraic structures on categories can loosely be called a 'doctrine'.</p>\n<p>But we can be precise too: we can categorify the concept of monad and get the concept of 2-monad or more generally pseudomonad, and there's a huge wonderful literature on pseudomonads.</p>",
+        "id": 263217165,
+        "sender_full_name": "John Baez",
+        "timestamp": 1638310770
+    },
+    {
+        "content": "<p>James Dolan prefers to categorify the concept of Lawvere theory, and he's been doing a bunch of work on doctrines using that approach.</p>",
+        "id": 263217192,
+        "sender_full_name": "John Baez",
+        "timestamp": 1638310801
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"275920\">John Baez</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/sketches.3F/near/263217192\">said</a>:</p>\n<blockquote>\n<p>James Dolan prefers to categorify the concept of Lawvere theory, and he's been doing a bunch of work on doctrines using that approach.</p>\n</blockquote>\n<p>Is this his <a href=\"https://ncatlab.org/jamesdolan/published/Algebraic+Geometry\">work on algebraic geometry</a>? Do you have any idea when we might be able to read about his ideas in more detail? I'm very intrigued by what I've read on the nLab.</p>",
+        "id": 263218254,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1638311376
+    },
+    {
+        "content": "<p>One reason for there being different notions of doctrine is that just as each doctrine (= 2-theory) comes with its own separate class of (1-)-theories (e.g. finite product theories, finite limit theories, ...), each 3-theory comes with its own separate class of 2-theories!  I wrote some about this <a href=\"https://golem.ph.utexas.edu/category/2018/04/what_is_an_ntheory.html\">here</a>.</p>",
+        "id": 263236477,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1638324806
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276092\">Nathanael Arkor</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/sketches.3F/near/263218254\">said</a>:</p>\n<blockquote>\n<p>Is this his <a href=\"https://ncatlab.org/jamesdolan/published/Algebraic+Geometry\">work on algebraic geometry</a>? </p>\n</blockquote>\n<p>Yes, and maybe other things - I haven't been talking to him for quite a while.  Todd Trimble has.</p>\n<blockquote>\n<p>Do you have any idea when we might be able to read about his ideas in more detail?</p>\n</blockquote>\n<p>I doubt you ever will!   I wrote <a href=\"https://ncatlab.org/johnbaez/show/Algebraic+geometric+theories\">some notes</a> about the doctrine of algebraic geometric theories, but that covered just a short stretch of our conversations back in 2010.</p>",
+        "id": 263245990,
+        "sender_full_name": "John Baez",
+        "timestamp": 1638336237
+    },
+    {
+        "content": "<p>If you really want to learn what he's doing, it'd be best to talk to him.</p>",
+        "id": 263246048,
+        "sender_full_name": "John Baez",
+        "timestamp": 1638336261
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"297784\">Jonathan Sterling</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/sketches.3F/near/263173698\">said</a>:</p>\n<blockquote>\n<p>People who don't use LFs like to make mountains out of the molehill of things like initiality etc., in particular because their ill-equipped methods truly do turn it into Mount Everest... My preference is to just work informally, but make sure everything I am doing corresponds to something mathematically meaningful on its own, as opposed to building up these immense sand-castles and then making sure that every turret has an even number of grains.</p>\n</blockquote>\n<p>Sometimes there be gold in them mountains!</p>",
+        "id": 263263475,
+        "sender_full_name": "Morgan Rogers (he/him)",
+        "timestamp": 1638351040
+    },
+    {
+        "content": "<p><span class=\"user-mention\" data-user-id=\"276777\">@Mike Shulman</span> Thanks. In the wording of that essay, I am equally interested in the fully syntactic and the fully semantic approaches.</p>\n<p>And as <span class=\"user-mention\" data-user-id=\"297784\">@Jonathan Sterling</span> mentions, for groups there are (at least) 3 layers to be seen, and that hints that indeed there will be situations with <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>n</mi></mrow><annotation encoding=\"application/x-tex\">n</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.4306em;\"></span><span class=\"mord mathnormal\">n</span></span></span></span> layers. And I'd like to be able to be quite precise about that (i.e. by formalizing what others have written down as 'precise', inventing when I have no other choice).</p>",
+        "id": 263282182,
+        "sender_full_name": "Jacques Carette",
+        "timestamp": 1638361949
+    },
+    {
+        "content": "<p><span class=\"user-mention\" data-user-id=\"296322\">@Jacques Carette</span> I believe that the recent categorical databases stuff is all secretly based on sketches</p>",
+        "id": 267297064,
+        "sender_full_name": "Asad Saeeduddin",
+        "timestamp": 1641649985
+    },
+    {
+        "content": "<p>Secretly?</p>",
+        "id": 267442075,
+        "sender_full_name": "Jacques Carette",
+        "timestamp": 1641823295
+    }
+]

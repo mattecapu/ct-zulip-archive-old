@@ -1,0 +1,272 @@
+[
+    {
+        "content": "<p>I'm wondering how to formalize equalizers in a category with finite limits, in the simplest way possible. Mike led me to think that it is given by the subobject fibration having fibered equality, but I can't find what that actually looks like in inference rules.</p>",
+        "id": 235788964,
+        "sender_full_name": "Christian Williams",
+        "timestamp": 1619155511
+    },
+    {
+        "content": "<p>writing it naively by the universal property:<br>\nformation <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"false\">(</mo><mi mathvariant=\"normal\">Γ</mi><mo>⊢</mo><mi>f</mi><mo separator=\"true\">,</mo><mi>g</mi><mo>:</mo><mi>S</mi><mo stretchy=\"false\">)</mo><mi mathvariant=\"normal\">∣</mi><mo stretchy=\"false\">(</mo><mi mathvariant=\"normal\">Γ</mi><mo>⊢</mo><mi>e</mi><mi>q</mi><mo stretchy=\"false\">(</mo><mi>f</mi><mo separator=\"true\">,</mo><mi>g</mi><mo stretchy=\"false\">)</mo><mo>:</mo><mi>P</mi><mi>r</mi><mi>o</mi><mi>p</mi><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">(\\Gamma\\vdash f,g:S) | (\\Gamma\\vdash eq(f,g):Prop)</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mopen\">(</span><span class=\"mord\">Γ</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">⊢</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.8888799999999999em;vertical-align:-0.19444em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.10764em;\">f</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.03588em;\">g</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">:</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.05764em;\">S</span><span class=\"mclose\">)</span><span class=\"mord\">∣</span><span class=\"mopen\">(</span><span class=\"mord\">Γ</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">⊢</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord mathnormal\">e</span><span class=\"mord mathnormal\" style=\"margin-right:0.03588em;\">q</span><span class=\"mopen\">(</span><span class=\"mord mathnormal\" style=\"margin-right:0.10764em;\">f</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.03588em;\">g</span><span class=\"mclose\">)</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">:</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.13889em;\">P</span><span class=\"mord mathnormal\" style=\"margin-right:0.02778em;\">r</span><span class=\"mord mathnormal\">o</span><span class=\"mord mathnormal\">p</span><span class=\"mclose\">)</span></span></span></span></p>",
+        "id": 235789093,
+        "sender_full_name": "Christian Williams",
+        "timestamp": 1619155637
+    },
+    {
+        "content": "<p>introduction <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"false\">(</mo><mi mathvariant=\"normal\">Δ</mi><mo>⊢</mo><mi>t</mi><mo>:</mo><mi mathvariant=\"normal\">Γ</mi><mo stretchy=\"false\">)</mo><mo separator=\"true\">,</mo><mo stretchy=\"false\">(</mo><mi mathvariant=\"normal\">Δ</mi><mo>⊢</mo><mi>f</mi><mo stretchy=\"false\">(</mo><mi>t</mi><mo stretchy=\"false\">)</mo><mo>=</mo><mi>g</mi><mo stretchy=\"false\">(</mo><mi>t</mi><mo stretchy=\"false\">)</mo><mo>:</mo><mi>S</mi><mo stretchy=\"false\">)</mo><mi mathvariant=\"normal\">∣</mi><mo stretchy=\"false\">(</mo><mi mathvariant=\"normal\">Δ</mi><mo>⊢</mo><msub><mi>e</mi><mi>t</mi></msub><mo>:</mo><mi>e</mi><mi>q</mi><mo stretchy=\"false\">(</mo><mi>f</mi><mo separator=\"true\">,</mo><mi>g</mi><mo stretchy=\"false\">)</mo><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">(\\Delta \\vdash t:\\Gamma),(\\Delta\\vdash f(t)=g(t):S) | (\\Delta \\vdash e_t:eq(f,g))</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mopen\">(</span><span class=\"mord\">Δ</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">⊢</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.61508em;vertical-align:0em;\"></span><span class=\"mord mathnormal\">t</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">:</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord\">Γ</span><span class=\"mclose\">)</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mopen\">(</span><span class=\"mord\">Δ</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">⊢</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.10764em;\">f</span><span class=\"mopen\">(</span><span class=\"mord mathnormal\">t</span><span class=\"mclose\">)</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.03588em;\">g</span><span class=\"mopen\">(</span><span class=\"mord mathnormal\">t</span><span class=\"mclose\">)</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">:</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.05764em;\">S</span><span class=\"mclose\">)</span><span class=\"mord\">∣</span><span class=\"mopen\">(</span><span class=\"mord\">Δ</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">⊢</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.58056em;vertical-align:-0.15em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\">e</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.2805559999999999em;\"><span style=\"top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathnormal mtight\">t</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">:</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord mathnormal\">e</span><span class=\"mord mathnormal\" style=\"margin-right:0.03588em;\">q</span><span class=\"mopen\">(</span><span class=\"mord mathnormal\" style=\"margin-right:0.10764em;\">f</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.03588em;\">g</span><span class=\"mclose\">)</span><span class=\"mclose\">)</span></span></span></span></p>",
+        "id": 235789095,
+        "sender_full_name": "Christian Williams",
+        "timestamp": 1619155646
+    },
+    {
+        "content": "<p>but for whatever reason I'm sure that introduction isn't right.</p>",
+        "id": 235789107,
+        "sender_full_name": "Christian Williams",
+        "timestamp": 1619155679
+    },
+    {
+        "content": "<p>I want to know how to work out these rules for limits and colimits in the simplest systematic way.</p>",
+        "id": 235789173,
+        "sender_full_name": "Christian Williams",
+        "timestamp": 1619155738
+    },
+    {
+        "content": "<p>Having finite limits corresponds to having dependent sums and extensional identity types, so you can restrict the usual rules for MLTT to those ones.</p>",
+        "id": 235821631,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1619175684
+    },
+    {
+        "content": "<p>I think you may want to take a look at <a href=\"https://arxiv.org/abs/2004.14731\">Kock's paper</a> on this</p>",
+        "id": 235821989,
+        "sender_full_name": "Fawzi Hreiki",
+        "timestamp": 1619175848
+    },
+    {
+        "content": "<p>Type theoretically you're probably better off working with dependent types and substitution (i.e. pullbacks) rather than a non-dependent language with equaliser types since that could probably get quite fiddly (having to verify domains and codomains, etc..).</p>",
+        "id": 235822131,
+        "sender_full_name": "Fawzi Hreiki",
+        "timestamp": 1619175936
+    },
+    {
+        "content": "<p>Pullbacks also give you products (via the dependent sum over the constant family) so you wont need separate rules for those.</p>",
+        "id": 235822222,
+        "sender_full_name": "Fawzi Hreiki",
+        "timestamp": 1619175975
+    },
+    {
+        "content": "<p>The usual J-eliminator for identity types corresponds categorically to \"Lawvere equality for a hyperdoctrine\".  I don't have time to write more now, but you could try that as keywords...</p>",
+        "id": 235836839,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1619183256
+    },
+    {
+        "content": "<p>Any presentation of finite-limit logic, such as in Sketches of an Elephant, should give rules for an equality proposition.</p>",
+        "id": 235860299,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1619191384
+    },
+    {
+        "content": "<p>For the benefit of others present, based on the other thread I think Christian really does want a logic over a <em>non</em>-dependent type theory here, because he also wants to add function-types to the underlying type theory in order to model a CCC with finite limits that is not LCCC.</p>",
+        "id": 235860530,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1619191472
+    },
+    {
+        "content": "<p>Jacobs also has rules for an equality proposition.</p>",
+        "id": 235860557,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1619191488
+    },
+    {
+        "content": "<p>Without dependent types, you can't use an equality <em>proposition</em> to construct an equalizer <em>type</em>.  But the subobject fibration having equality propositions still corresponds to the category having finite limits.</p>",
+        "id": 235860808,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1619191579
+    },
+    {
+        "content": "<p>The Lawvere reference is <a href=\"https://ncatlab.org/nlab/show/Equality+in+hyperdoctrines+and+comprehension+schema+as+an+adjoint+functor\">https://ncatlab.org/nlab/show/Equality+in+hyperdoctrines+and+comprehension+schema+as+an+adjoint+functor</a></p>",
+        "id": 235860868,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1619191611
+    },
+    {
+        "content": "<p>There's partial horn logic (I think by Palmgren &amp; Vickers) which models also corresponds to finite limit categories and is simpler than Johnstone's presentation of Cartesian logic (since it avoids having to put a well-ordering on the partial operations).</p>",
+        "id": 235862563,
+        "sender_full_name": "Fawzi Hreiki",
+        "timestamp": 1619192259
+    },
+    {
+        "content": "<p>thanks for all the help. I do want to stick with just CCCs+equalizers without getting fancier, partly for popular accessibility.</p>",
+        "id": 235876172,
+        "sender_full_name": "Christian Williams",
+        "timestamp": 1619197916
+    },
+    {
+        "content": "<p>I'm wondering if I can just combine the syntax of <a href=\"https://ncatlab.org/nlab/show/generalized+algebraic+theory\">generalized algebraic theories</a> with that of STLC</p>",
+        "id": 235876421,
+        "sender_full_name": "Christian Williams",
+        "timestamp": 1619198031
+    },
+    {
+        "content": "<p>I feel like that might be simplest on the reader.</p>",
+        "id": 235876488,
+        "sender_full_name": "Christian Williams",
+        "timestamp": 1619198045
+    },
+    {
+        "content": "<p>I believe the GAT syntax has the Eq predicate built-in...</p>",
+        "id": 235876556,
+        "sender_full_name": "Christian Williams",
+        "timestamp": 1619198084
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"275899\">Christian Williams</span> <a href=\"#narrow/stream/229952-theory.3A-type.20theory/topic/equalizers/near/235876556\">said</a>:</p>\n<blockquote>\n<p>I believe the GAT syntax has the Eq predicate built-in...</p>\n</blockquote>\n<p>It does not. It has to be declared as an additional family of type constructors.</p>",
+        "id": 235876646,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1619198123
+    },
+    {
+        "content": "<p>hm, okay</p>",
+        "id": 235876724,
+        "sender_full_name": "Christian Williams",
+        "timestamp": 1619198159
+    },
+    {
+        "content": "<p>why is that?</p>",
+        "id": 235876819,
+        "sender_full_name": "Christian Williams",
+        "timestamp": 1619198182
+    },
+    {
+        "content": "<p>Because the syntax of GATs does not allow equations to appear in the premiss of a rule, unlike in an essentially algebraic theory. So you have to add a type constructor for Eq, and equality reflection, to capture it.</p>",
+        "id": 235877249,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1619198374
+    },
+    {
+        "content": "<p>Cartmell mentions this in one of the chapters of his paper.</p>",
+        "id": 235877271,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1619198389
+    },
+    {
+        "content": "<p>yes, I see it in section 4</p>",
+        "id": 235878660,
+        "sender_full_name": "Christian Williams",
+        "timestamp": 1619198985
+    },
+    {
+        "content": "<p>not sure what you mean by reflection though.</p>",
+        "id": 235878757,
+        "sender_full_name": "Christian Williams",
+        "timestamp": 1619199006
+    },
+    {
+        "content": "<p>Equality reflection means having a rule:<br>\n<span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mfrac><mrow><mi mathvariant=\"normal\">Γ</mi><mo>⊢</mo><mi>e</mi><mo>:</mo><msub><mrow><mi mathvariant=\"normal\">E</mi><mi mathvariant=\"normal\">q</mi></mrow><mi>A</mi></msub><mo stretchy=\"false\">(</mo><mi>s</mi><mo separator=\"true\">,</mo><mi>t</mi><mo stretchy=\"false\">)</mo></mrow><mrow><mi mathvariant=\"normal\">Γ</mi><mo>⊢</mo><mi>s</mi><mo>=</mo><mi>t</mi><mo>:</mo><mi>A</mi></mrow></mfrac></mrow><annotation encoding=\"application/x-tex\">\\frac{\\Gamma \\vdash e : \\mathrm{Eq}_A(s, t)}{\\Gamma \\vdash s = t : A}</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:1.3661079999999999em;vertical-align:-0.345em;\"></span><span class=\"mord\"><span class=\"mopen nulldelimiter\"></span><span class=\"mfrac\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:1.021108em;\"><span style=\"top:-2.6550000000000002em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\">Γ</span><span class=\"mrel mtight\">⊢</span><span class=\"mord mathnormal mtight\">s</span><span class=\"mrel mtight\">=</span><span class=\"mord mathnormal mtight\">t</span><span class=\"mrel mtight\">:</span><span class=\"mord mathnormal mtight\">A</span></span></span></span><span style=\"top:-3.23em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"frac-line\" style=\"border-bottom-width:0.04em;\"></span></span><span style=\"top:-3.496108em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\">Γ</span><span class=\"mrel mtight\">⊢</span><span class=\"mord mathnormal mtight\">e</span><span class=\"mrel mtight\">:</span><span class=\"mord mtight\"><span class=\"mord mtight\"><span class=\"mord mathrm mtight\">E</span><span class=\"mord mathrm mtight\">q</span></span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.2222242857142857em;\"><span style=\"top:-2.2341314285714287em;margin-right:0.07142857142857144em;\"><span class=\"pstrut\" style=\"height:2.5em;\"></span><span class=\"sizing reset-size3 size1 mtight\"><span class=\"mord mathnormal mtight\">A</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.26586857142857145em;\"><span></span></span></span></span></span></span><span class=\"mopen mtight\">(</span><span class=\"mord mathnormal mtight\">s</span><span class=\"mpunct mtight\">,</span><span class=\"mord mathnormal mtight\">t</span><span class=\"mclose mtight\">)</span></span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.345em;\"><span></span></span></span></span></span><span class=\"mclose nulldelimiter\"></span></span></span></span></span><br>\nso that the formal equality coincides with external equality.</p>",
+        "id": 235879503,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1619199303
+    },
+    {
+        "content": "<p>also, I guess it's possible that just the default syntax of GATs, using pullbacks, is enough for what I need. I was just thinking \"oh from a CCC I'm adding equalizers\", but there's already a syntax for pullbacks and it's easy to add function types to that, like Fawzi was saying in the other thread. I guess I'm just surprised I haven't seen this combination before (though of course it's contained in higher-powered languages)</p>",
+        "id": 235880036,
+        "sender_full_name": "Christian Williams",
+        "timestamp": 1619199501
+    },
+    {
+        "content": "<p>Note that you don't have all pullbacks in a GAT, only pullbacks of display maps.</p>",
+        "id": 235881046,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1619199872
+    },
+    {
+        "content": "<p>So what is the semantics of GAT? Because it's a little hard to pin down in the literature</p>",
+        "id": 235891670,
+        "sender_full_name": "Fawzi Hreiki",
+        "timestamp": 1619204247
+    },
+    {
+        "content": "<p>A contextual category.</p>",
+        "id": 235891887,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1619204346
+    },
+    {
+        "content": "<p>Remember that if there are dependent types and you have a function-type former <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>→</mo></mrow><annotation encoding=\"application/x-tex\">\\to</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.36687em;vertical-align:0em;\"></span><span class=\"mrel\">→</span></span></span></span> that can be applied in any context (as is usual for any type former in a dependent type theory), then the semantics becomes at least very close to <em>locally</em> cartesian closed even if you don't assert the usual sort of <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"normal\">Π</mi></mrow><annotation encoding=\"application/x-tex\">\\Pi</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord\">Π</span></span></span></span>-types.  I suppose you could put some restriction on the function-types to only be applicable to types defined in the empty context, but I think a logic over a simple type theory is really a better way to go.</p>",
+        "id": 235893393,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1619205002
+    },
+    {
+        "content": "<p><span class=\"user-mention\" data-user-id=\"276777\">@Mike Shulman</span>: to clarify, are you saying that STLC + identity types must be modelled by something stronger than a finitely complete category with exponentials, or that finitely complete categories with exponentials are already very close to being fully locally cartesian closed?</p>",
+        "id": 235894922,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1619205654
+    },
+    {
+        "content": "<p>If by \"STLC + identity types\" you mean a <em>dependent</em> type theory with \"non-dependent function types\" in arbitrary contexts:</p>\n<p><span class=\"katex-display\"><span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mfrac><mrow><mi mathvariant=\"normal\">Γ</mi><mo>⊢</mo><mi>A</mi><mtext>  </mtext><mrow><mi mathvariant=\"sans-serif\">t</mi><mi mathvariant=\"sans-serif\">y</mi><mi mathvariant=\"sans-serif\">p</mi><mi mathvariant=\"sans-serif\">e</mi></mrow><mspace width=\"1em\"/><mi mathvariant=\"normal\">Γ</mi><mo>⊢</mo><mi>B</mi><mtext>  </mtext><mrow><mi mathvariant=\"sans-serif\">t</mi><mi mathvariant=\"sans-serif\">y</mi><mi mathvariant=\"sans-serif\">p</mi><mi mathvariant=\"sans-serif\">e</mi></mrow></mrow><mrow><mi mathvariant=\"normal\">Γ</mi><mo>⊢</mo><mi>A</mi><mo>→</mo><mi>B</mi><mtext>  </mtext><mrow><mi mathvariant=\"sans-serif\">t</mi><mi mathvariant=\"sans-serif\">y</mi><mi mathvariant=\"sans-serif\">p</mi><mi mathvariant=\"sans-serif\">e</mi></mrow></mrow></mfrac></mrow><annotation encoding=\"application/x-tex\">\\frac{\\Gamma \\vdash A \\;\\mathsf{type} \\quad \\Gamma \\vdash B\\; \\mathsf{type}}{\\Gamma \\vdash A\\to B \\; \\mathsf{type}}</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:2.25188em;vertical-align:-0.8804400000000001em;\"></span><span class=\"mord\"><span class=\"mopen nulldelimiter\"></span><span class=\"mfrac\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:1.3714399999999998em;\"><span style=\"top:-2.314em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"mord\"><span class=\"mord\">Γ</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">⊢</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mord mathnormal\">A</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">→</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.05017em;\">B</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mord\"><span class=\"mord mathsf\">t</span><span class=\"mord mathsf\" style=\"margin-right:0.01389em;\">y</span><span class=\"mord mathsf\">p</span><span class=\"mord mathsf\">e</span></span></span></span><span style=\"top:-3.23em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"frac-line\" style=\"border-bottom-width:0.04em;\"></span></span><span style=\"top:-3.677em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"mord\"><span class=\"mord\">Γ</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">⊢</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mord mathnormal\">A</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mord\"><span class=\"mord mathsf\">t</span><span class=\"mord mathsf\" style=\"margin-right:0.01389em;\">y</span><span class=\"mord mathsf\">p</span><span class=\"mord mathsf\">e</span></span><span class=\"mspace\" style=\"margin-right:1em;\"></span><span class=\"mord\">Γ</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">⊢</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.05017em;\">B</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mord\"><span class=\"mord mathsf\">t</span><span class=\"mord mathsf\" style=\"margin-right:0.01389em;\">y</span><span class=\"mord mathsf\">p</span><span class=\"mord mathsf\">e</span></span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.8804400000000001em;\"><span></span></span></span></span></span><span class=\"mclose nulldelimiter\"></span></span></span></span></span></span></p>\n<p>then yes, this requires more than a finitely complete cartesian closed category.  If you try to model it in the naive way where all morphisms are display maps, then it requires a <em>locally</em> cartesian closed category, because the above rule demans that each <em>slice</em> category is cartesian closed, which is an equivalent formulation of LCCC.  If you have fewer display maps you may be able to get away with less, but you can't just use the simple fibration if you want to have identity types too.</p>",
+        "id": 235896812,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1619206457
+    },
+    {
+        "content": "<p>Hmm. Is some kind of compatibility condition between exponentials and pullbacks the sort of thing you have in mind?</p>",
+        "id": 235897442,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1619206771
+    },
+    {
+        "content": "<p>Not really, just the fact that all slice categories <em>have</em> exponentials.</p>",
+        "id": 235897550,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1619206816
+    },
+    {
+        "content": "<p>Their compatibility with pullbacks is automatic.</p>",
+        "id": 235897608,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1619206842
+    },
+    {
+        "content": "<p>I mean to identify the class of categories modelling (the dependent type theory) STLC + identity types.</p>",
+        "id": 235897882,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1619206985
+    },
+    {
+        "content": "<p>I really object to calling it \"<em>simply</em> typed lambda calculus with identity types\" when it is dependently typed, not simply typed.</p>",
+        "id": 235898039,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1619207047
+    },
+    {
+        "content": "<p>Ah, sorry <span aria-label=\"sweat smile\" class=\"emoji emoji-1f605\" role=\"img\" title=\"sweat smile\">:sweat_smile:</span> \"Lambda-calculus with identity types\", then.</p>",
+        "id": 235898152,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1619207101
+    },
+    {
+        "content": "<p>For a category <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>C</mi></mrow><annotation encoding=\"application/x-tex\">C</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.07153em;\">C</span></span></span></span> with pullbacks, its codomain fibration models dependent type theory with identity types and non-dependent function types if and only if <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>C</mi></mrow><annotation encoding=\"application/x-tex\">C</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.07153em;\">C</span></span></span></span> is locally cartesian closed.</p>",
+        "id": 235898175,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1619207109
+    },
+    {
+        "content": "<p>There isn't going to be as simple a description of the class of general display-map categories that model this type theory, but there isn't any clear way to construct such a thing from a finitely complete cartesian closed category.</p>",
+        "id": 235898381,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1619207188
+    },
+    {
+        "content": "<p>Lambek and Scott (Sec 0.5) gave an equational presentation of equalizers, which I transcribed into Catlab <a href=\"https://github.com/AlgebraicJulia/Catlab.jl/blob/9f3297b6757804269ce7af3ae46d26f84b22cdf4/src/theories/Limits.jl#L49\">here</a>. I don't find it particularly transparent, but it does have the virtue of being generalized algebraic/essentially algebraic.</p>\n<p>A lot of this discussion is about equality/identity types, so I may be answering the wrong question.</p>",
+        "id": 235933313,
+        "sender_full_name": "Evan Patterson",
+        "timestamp": 1619230842
+    },
+    {
+        "content": "<p>I had to decypher section 0.5 of Lambek and Scott's book some months ago, too... here's a diagram that I drew to help it fit in my tiny brain. Hope it helps. <a href=\"/user_uploads/21317/ippmbjzH71MHcbLgZ0b65vtH/sshot.png\">sshot.png</a></p>\n<div class=\"message_inline_image\"><a href=\"/user_uploads/21317/ippmbjzH71MHcbLgZ0b65vtH/sshot.png\" title=\"sshot.png\"><img src=\"/user_uploads/21317/ippmbjzH71MHcbLgZ0b65vtH/sshot.png\"></a></div>",
+        "id": 236031653,
+        "sender_full_name": "Eduardo Ochs",
+        "timestamp": 1619319370
+    }
+]

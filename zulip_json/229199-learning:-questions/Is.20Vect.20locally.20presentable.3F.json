@@ -1,0 +1,206 @@
+[
+    {
+        "content": "<p>Vect is bicomplete (<a href=\"https://en.wikipedia.org/wiki/Complete_category\">https://en.wikipedia.org/wiki/Complete_category</a>) so it has all colimits. It is locally small: there is a set of linear transformations between any two vector spaces.  Every object in Vect is the colimit of copies of the one-dimensional vector space isomorphic to the field k: any basis for the vector space picks out a set of copies of k and the coproduct of these is isomorphic to the vector space.  So it looks locally presentable to me.</p>\n<p>Is that right?  If so, is FinVect locally finitely presentable?</p>",
+        "id": 223549497,
+        "sender_full_name": "Mike Stay",
+        "timestamp": 1611253207
+    },
+    {
+        "content": "<p>Yes. Any category of models of a Lawvere theory is locally finitely presentable.</p>",
+        "id": 223550099,
+        "sender_full_name": "Fawzi Hreiki",
+        "timestamp": 1611253509
+    },
+    {
+        "content": "<p>FinVect isn't locally finitely presentable though</p>",
+        "id": 223550251,
+        "sender_full_name": "Reid Barton",
+        "timestamp": 1611253575
+    },
+    {
+        "content": "<p><span class=\"user-mention\" data-user-id=\"341237\">@Fawzi Hreiki</span> </p>\n<blockquote>\n<p>Yes. Any category of models of a Lawvere theory is locally finitely presentable.</p>\n</blockquote>\n<p>Are vector spaces models of a Lawvere theory?  I can see how modules could be, but how do you restrict to modules over a field?</p>",
+        "id": 223550987,
+        "sender_full_name": "Mike Stay",
+        "timestamp": 1611253918
+    },
+    {
+        "content": "<p>According to Adámek–Milius–Moss's <a href=\"https://coalg.org/cmcs12/papers/00010051.pdf\">On Finitary Functors and Their Presentations</a>, <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mrow><mi mathvariant=\"bold\">V</mi><mi mathvariant=\"bold\">e</mi><mi mathvariant=\"bold\">c</mi><mi mathvariant=\"bold\">t</mi></mrow><mi>K</mi></msub></mrow><annotation encoding=\"application/x-tex\">\\mathbf{Vect}_K</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.83611em;vertical-align:-0.15em;\"></span><span class=\"mord\"><span class=\"mord\"><span class=\"mord mathbf\" style=\"margin-right:0.01597em;\">V</span><span class=\"mord mathbf\">e</span><span class=\"mord mathbf\">c</span><span class=\"mord mathbf\">t</span></span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.32833099999999993em;\"><span style=\"top:-2.5500000000000003em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathnormal mtight\" style=\"margin-right:0.07153em;\">K</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span></span></span></span> is locally finitely presentable for any field <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>K</mi></mrow><annotation encoding=\"application/x-tex\">K</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.07153em;\">K</span></span></span></span>.</p>",
+        "id": 223551751,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1611254221
+    },
+    {
+        "content": "<p>Ah actually my mistake. Yes finite dimensional vector spaces aren’t a Lawvere theory.</p>",
+        "id": 223552123,
+        "sender_full_name": "Fawzi Hreiki",
+        "timestamp": 1611254396
+    },
+    {
+        "content": "<p>(Accordingly, <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mrow><mi mathvariant=\"bold\">F</mi><mi mathvariant=\"bold\">i</mi><mi mathvariant=\"bold\">n</mi><mi mathvariant=\"bold\">V</mi><mi mathvariant=\"bold\">e</mi><mi mathvariant=\"bold\">c</mi><mi mathvariant=\"bold\">t</mi></mrow><mi>K</mi></msub></mrow><annotation encoding=\"application/x-tex\">\\mathbf{FinVect}_K</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.84444em;vertical-align:-0.15em;\"></span><span class=\"mord\"><span class=\"mord\"><span class=\"mord mathbf\">F</span><span class=\"mord mathbf\">i</span><span class=\"mord mathbf\">n</span><span class=\"mord mathbf\" style=\"margin-right:0.01597em;\">V</span><span class=\"mord mathbf\">e</span><span class=\"mord mathbf\">c</span><span class=\"mord mathbf\">t</span></span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.32833099999999993em;\"><span style=\"top:-2.5500000000000003em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathnormal mtight\" style=\"margin-right:0.07153em;\">K</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span></span></span></span> is not, because it's not cocomplete.)</p>",
+        "id": 223552127,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1611254399
+    },
+    {
+        "content": "<p>Thanks!</p>",
+        "id": 223553167,
+        "sender_full_name": "Mike Stay",
+        "timestamp": 1611254825
+    },
+    {
+        "content": "<p><span class=\"user-mention\" data-user-id=\"276048\">@Mike Stay</span> Finite dimensional vector spaces aren’t an algebraic theory but general vector spaces are.</p>",
+        "id": 223563514,
+        "sender_full_name": "Fawzi Hreiki",
+        "timestamp": 1611259567
+    },
+    {
+        "content": "<p>In fact, the Lawvere theory for vector spaces is (a skeleton of) the category of finite dimensional vector spaces.</p>",
+        "id": 223563587,
+        "sender_full_name": "Fawzi Hreiki",
+        "timestamp": 1611259616
+    },
+    {
+        "content": "<p>iirc you have a different theory for each field, right?</p>",
+        "id": 223563626,
+        "sender_full_name": "Joe Moeller",
+        "timestamp": 1611259638
+    },
+    {
+        "content": "<p>Yes</p>",
+        "id": 223563638,
+        "sender_full_name": "Fawzi Hreiki",
+        "timestamp": 1611259645
+    },
+    {
+        "content": "<p>You need a scaling operation for each element of the base field?</p>",
+        "id": 223563654,
+        "sender_full_name": "Joe Moeller",
+        "timestamp": 1611259661
+    },
+    {
+        "content": "<p>You need a constant for each element of the field basically</p>",
+        "id": 223563662,
+        "sender_full_name": "Fawzi Hreiki",
+        "timestamp": 1611259664
+    },
+    {
+        "content": "<p>Actually, a scaling operation as you said.</p>",
+        "id": 223563730,
+        "sender_full_name": "Fawzi Hreiki",
+        "timestamp": 1611259690
+    },
+    {
+        "content": "<p>I guess it's been settled by now, but:</p>\n<p>FinVect is <em>not</em> locally finitely presentable, because it doesn't have all small colimits.  </p>\n<p>Vect <em>is</em> locally finitely presentable: </p>\n<p>1) a category is locally finitely presentable iff it's equivalent to the category of models of a finite limits theory.</p>\n<p>2) every category of models of a Lawvere theory is also the category of a models of a finite limits theory. </p>\n<p>3)  Vect is the category of models of a Lawvere theory.</p>",
+        "id": 223570403,
+        "sender_full_name": "John Baez",
+        "timestamp": 1611263215
+    },
+    {
+        "content": "<p>And here of course Vect means the category of vector spaces over some arbitrary but fixed field that we've chosen.</p>",
+        "id": 223570457,
+        "sender_full_name": "John Baez",
+        "timestamp": 1611263255
+    },
+    {
+        "content": "<blockquote>\n<p>Vect is the category of models of a Lawvere theory.</p>\n</blockquote>\n<p>So if I'm understanding correctly, the Lawvere theory has </p>\n<ul>\n<li>\n<p>a sort (say V)</p>\n</li>\n<li>\n<p>for each element z of the base field, a function symbol <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"false\">(</mo><mi>z</mi><mo>⋅</mo><mo>−</mo><mo stretchy=\"false\">)</mo><mspace></mspace><mspace width=\"0.1111111111111111em\"></mspace><mo lspace=\"0em\" rspace=\"0.17em\"></mo><mtext> ⁣</mtext><mo lspace=\"0em\" rspace=\"0em\">:</mo><mspace width=\"0.3333333333333333em\"></mspace><mi>V</mi><mo>→</mo><mi>V</mi></mrow><annotation encoding=\"application/x-tex\">(z\\cdot -)\\colon V \\to V</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mopen\">(</span><span class=\"mord mathnormal\" style=\"margin-right:0.04398em;\">z</span><span class=\"mspace\" style=\"margin-right:0.2222222222222222em;\"></span><span class=\"mbin\">⋅</span><span class=\"mspace\" style=\"margin-right:0.2222222222222222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord\">−</span><span class=\"mclose\">)</span><span class=\"mspace nobreak\"></span><span class=\"mspace\" style=\"margin-right:0.1111111111111111em;\"></span><span class=\"mpunct\"></span><span class=\"mspace\" style=\"margin-right:-0.16666666666666666em;\"></span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mord\"><span class=\"mrel\">:</span></span><span class=\"mspace\" style=\"margin-right:0.3333333333333333em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.22222em;\">V</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">→</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.22222em;\">V</span></span></span></span> that scales the given vector by z</p>\n</li>\n<li>\n<p>and for each pair z, z' of elements of the base field, an equation <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"false\">(</mo><mi>z</mi><mo>⋅</mo><mo stretchy=\"false\">(</mo><msup><mi>z</mi><mo lspace=\"0em\" mathvariant=\"normal\" rspace=\"0em\">′</mo></msup><mo>⋅</mo><mo>−</mo><mo stretchy=\"false\">)</mo><mo stretchy=\"false\">)</mo><mo>=</mo><mo stretchy=\"false\">(</mo><mi>z</mi><msup><mi>z</mi><mo lspace=\"0em\" mathvariant=\"normal\" rspace=\"0em\">′</mo></msup><mo>⋅</mo><mo>−</mo><mo stretchy=\"false\">)</mo><mi mathvariant=\"normal\">.</mi></mrow><annotation encoding=\"application/x-tex\">(z\\cdot (z'\\cdot -)) = (zz'\\cdot -).</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mopen\">(</span><span class=\"mord mathnormal\" style=\"margin-right:0.04398em;\">z</span><span class=\"mspace\" style=\"margin-right:0.2222222222222222em;\"></span><span class=\"mbin\">⋅</span><span class=\"mspace\" style=\"margin-right:0.2222222222222222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1.001892em;vertical-align:-0.25em;\"></span><span class=\"mopen\">(</span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.04398em;\">z</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.751892em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\">′</span></span></span></span></span></span></span></span></span><span class=\"mspace\" style=\"margin-right:0.2222222222222222em;\"></span><span class=\"mbin\">⋅</span><span class=\"mspace\" style=\"margin-right:0.2222222222222222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord\">−</span><span class=\"mclose\">)</span><span class=\"mclose\">)</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1.001892em;vertical-align:-0.25em;\"></span><span class=\"mopen\">(</span><span class=\"mord mathnormal\" style=\"margin-right:0.04398em;\">z</span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.04398em;\">z</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.751892em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\">′</span></span></span></span></span></span></span></span></span><span class=\"mspace\" style=\"margin-right:0.2222222222222222em;\"></span><span class=\"mbin\">⋅</span><span class=\"mspace\" style=\"margin-right:0.2222222222222222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord\">−</span><span class=\"mclose\">)</span><span class=\"mord\">.</span></span></span></span></p>\n</li>\n</ul>\n<p>Is that right?  For an infinite field, how is that finitely presentable?</p>",
+        "id": 223575543,
+        "sender_full_name": "Mike Stay",
+        "timestamp": 1611265810
+    },
+    {
+        "content": "<p>Well you also need to add the operations making <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>V</mi></mrow><annotation encoding=\"application/x-tex\">V</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.22222em;\">V</span></span></span></span> into an abelian group.</p>",
+        "id": 223579181,
+        "sender_full_name": "Fawzi Hreiki",
+        "timestamp": 1611267596
+    },
+    {
+        "content": "<p>I don't think local finite presentability is referring to the presentation of the algebraic theory.</p>",
+        "id": 223579444,
+        "sender_full_name": "Joe Moeller",
+        "timestamp": 1611267713
+    },
+    {
+        "content": "<p>Yeah it doesn't. It's about presentability of the objects of the category itself.</p>",
+        "id": 223579530,
+        "sender_full_name": "Fawzi Hreiki",
+        "timestamp": 1611267739
+    },
+    {
+        "content": "<p>Hence the 'locally'.</p>",
+        "id": 223579622,
+        "sender_full_name": "Fawzi Hreiki",
+        "timestamp": 1611267786
+    },
+    {
+        "content": "<p>OK, thanks.</p>\n<p><span class=\"user-mention silent\" data-user-id=\"341237\">Fawzi Hreiki</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/Is.20Vect.20locally.20presentable.3F/near/223579181\">said</a>:</p>\n<blockquote>\n<p>Well you also need to add the operations making <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>V</mi></mrow><annotation encoding=\"application/x-tex\">V</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.22222em;\">V</span></span></span></span> into an abelian group.</p>\n</blockquote>\n<p>Yes, sorry.</p>",
+        "id": 223582721,
+        "sender_full_name": "Mike Stay",
+        "timestamp": 1611269667
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276048\">Mike Stay</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/Is.20Vect.20locally.20presentable.3F/near/223575543\">said</a>:</p>\n<blockquote>\n<blockquote>\n<p>Vect is the category of models of a Lawvere theory.</p>\n</blockquote>\n<p>So if I'm understanding correctly, the Lawvere theory has </p>\n<ul>\n<li>\n<p>a sort (say V)</p>\n</li>\n<li>\n<p>for each element z of the base field, a function symbol <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"false\">(</mo><mi>z</mi><mo>⋅</mo><mo>−</mo><mo stretchy=\"false\">)</mo><mspace></mspace><mspace width=\"0.1111111111111111em\"></mspace><mo lspace=\"0em\" rspace=\"0.17em\"></mo><mtext> ⁣</mtext><mo lspace=\"0em\" rspace=\"0em\">:</mo><mspace width=\"0.3333333333333333em\"></mspace><mi>V</mi><mo>→</mo><mi>V</mi></mrow><annotation encoding=\"application/x-tex\">(z\\cdot -)\\colon V \\to V</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mopen\">(</span><span class=\"mord mathnormal\" style=\"margin-right:0.04398em;\">z</span><span class=\"mspace\" style=\"margin-right:0.2222222222222222em;\"></span><span class=\"mbin\">⋅</span><span class=\"mspace\" style=\"margin-right:0.2222222222222222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord\">−</span><span class=\"mclose\">)</span><span class=\"mspace nobreak\"></span><span class=\"mspace\" style=\"margin-right:0.1111111111111111em;\"></span><span class=\"mpunct\"></span><span class=\"mspace\" style=\"margin-right:-0.16666666666666666em;\"></span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mord\"><span class=\"mrel\">:</span></span><span class=\"mspace\" style=\"margin-right:0.3333333333333333em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.22222em;\">V</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">→</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.22222em;\">V</span></span></span></span> that scales the given vector by z</p>\n</li>\n<li>\n<p>and for each pair z, z' of elements of the base field, an equation <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"false\">(</mo><mi>z</mi><mo>⋅</mo><mo stretchy=\"false\">(</mo><msup><mi>z</mi><mo lspace=\"0em\" mathvariant=\"normal\" rspace=\"0em\">′</mo></msup><mo>⋅</mo><mo>−</mo><mo stretchy=\"false\">)</mo><mo stretchy=\"false\">)</mo><mo>=</mo><mo stretchy=\"false\">(</mo><mi>z</mi><msup><mi>z</mi><mo lspace=\"0em\" mathvariant=\"normal\" rspace=\"0em\">′</mo></msup><mo>⋅</mo><mo>−</mo><mo stretchy=\"false\">)</mo><mi mathvariant=\"normal\">.</mi></mrow><annotation encoding=\"application/x-tex\">(z\\cdot (z'\\cdot -)) = (zz'\\cdot -).</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mopen\">(</span><span class=\"mord mathnormal\" style=\"margin-right:0.04398em;\">z</span><span class=\"mspace\" style=\"margin-right:0.2222222222222222em;\"></span><span class=\"mbin\">⋅</span><span class=\"mspace\" style=\"margin-right:0.2222222222222222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1.001892em;vertical-align:-0.25em;\"></span><span class=\"mopen\">(</span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.04398em;\">z</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.751892em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\">′</span></span></span></span></span></span></span></span></span><span class=\"mspace\" style=\"margin-right:0.2222222222222222em;\"></span><span class=\"mbin\">⋅</span><span class=\"mspace\" style=\"margin-right:0.2222222222222222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord\">−</span><span class=\"mclose\">)</span><span class=\"mclose\">)</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1.001892em;vertical-align:-0.25em;\"></span><span class=\"mopen\">(</span><span class=\"mord mathnormal\" style=\"margin-right:0.04398em;\">z</span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.04398em;\">z</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.751892em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\">′</span></span></span></span></span></span></span></span></span><span class=\"mspace\" style=\"margin-right:0.2222222222222222em;\"></span><span class=\"mbin\">⋅</span><span class=\"mspace\" style=\"margin-right:0.2222222222222222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord\">−</span><span class=\"mclose\">)</span><span class=\"mord\">.</span></span></span></span></p>\n</li>\n</ul>\n</blockquote>\n<p>Right, and of course you also get operations coming from addition of vectors.  So the n-ary operations in this Lawevere theory are all the operations of taking n-ary  linear combinations: they look like this in a model:</p>\n<p><span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mstyle displaystyle=\"true\" scriptlevel=\"0\"><mrow><mo stretchy=\"false\">(</mo><msub><mi>v</mi><mn>1</mn></msub><mo separator=\"true\">,</mo><mo>…</mo><mo separator=\"true\">,</mo><msub><mi>v</mi><mi>n</mi></msub><mo stretchy=\"false\">)</mo><mo>↦</mo><munderover><mo>∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></munderover><msub><mi>z</mi><mi>i</mi></msub><msub><mi>v</mi><mi>i</mi></msub></mrow></mstyle></mrow><annotation encoding=\"application/x-tex\"> \\displaystyle{ (v_1, \\dots, v_n) \\mapsto \\sum_{i=1}^n z_i v_i  }</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:2.929066em;vertical-align:-1.277669em;\"></span><span class=\"mord\"><span class=\"mopen\">(</span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.03588em;\">v</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.30110799999999993em;\"><span style=\"top:-2.5500000000000003em;margin-left:-0.03588em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">1</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"minner\">…</span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.03588em;\">v</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.151392em;\"><span style=\"top:-2.5500000000000003em;margin-left:-0.03588em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathnormal mtight\">n</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span><span class=\"mclose\">)</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">↦</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mop op-limits\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:1.6513970000000002em;\"><span style=\"top:-1.872331em;margin-left:0em;\"><span class=\"pstrut\" style=\"height:3.05em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mathnormal mtight\">i</span><span class=\"mrel mtight\">=</span><span class=\"mord mtight\">1</span></span></span></span><span style=\"top:-3.050005em;\"><span class=\"pstrut\" style=\"height:3.05em;\"></span><span><span class=\"mop op-symbol large-op\">∑</span></span></span><span style=\"top:-4.3000050000000005em;margin-left:0em;\"><span class=\"pstrut\" style=\"height:3.05em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathnormal mtight\">n</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:1.277669em;\"><span></span></span></span></span></span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.04398em;\">z</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.31166399999999994em;\"><span style=\"top:-2.5500000000000003em;margin-left:-0.04398em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathnormal mtight\">i</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.03588em;\">v</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.31166399999999994em;\"><span style=\"top:-2.5500000000000003em;margin-left:-0.03588em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathnormal mtight\">i</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span></span></span></span></span></p>\n<p>for some elements <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi>z</mi><mn>1</mn></msub><mo separator=\"true\">,</mo><mo>…</mo><mo separator=\"true\">,</mo><msub><mi>z</mi><mi>n</mi></msub></mrow><annotation encoding=\"application/x-tex\">z_1, \\dots, z_n</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.625em;vertical-align:-0.19444em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.04398em;\">z</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.30110799999999993em;\"><span style=\"top:-2.5500000000000003em;margin-left:-0.04398em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">1</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"minner\">…</span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.04398em;\">z</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.151392em;\"><span style=\"top:-2.5500000000000003em;margin-left:-0.04398em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathnormal mtight\">n</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span></span></span></span> in the field.</p>\n<blockquote>\n<p>Is that right?  For an infinite field, how is that finitely presentable?</p>\n</blockquote>\n<p>I said Vect was <a href=\"https://ncatlab.org/nlab/show/locally+finitely+presentable+category\">locally finitely presentable</a>.  Click the link to read a bunch of equivalent definitions of this concept.  My favorite is that a category is locally finitely presentable iff it is equivalent to the category of models of a finite limits theory.   Vect is, because any category of models of a finite products theory, e.g. a Lawvere theory, is also equivalent to a category of models of a finite limits theory.</p>",
+        "id": 223603976,
+        "sender_full_name": "John Baez",
+        "timestamp": 1611291436
+    },
+    {
+        "content": "<p>There are also other definitions, which might make the term \"locally finitely presentable category\" more clear.   </p>\n<p>There's a concept of a <strong>finitely presentable</strong> object in a category, which is an object <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>x</mi></mrow><annotation encoding=\"application/x-tex\">x</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.43056em;vertical-align:0em;\"></span><span class=\"mord mathnormal\">x</span></span></span></span> such that the representable functor <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mrow><mi mathvariant=\"normal\">h</mi><mi mathvariant=\"normal\">o</mi><mi mathvariant=\"normal\">m</mi></mrow><mo stretchy=\"false\">(</mo><mo>−</mo><mo separator=\"true\">,</mo><mi>x</mi><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">\\mathrm{hom}(-,x)</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord\"><span class=\"mord mathrm\">h</span><span class=\"mord mathrm\">o</span><span class=\"mord mathrm\">m</span></span><span class=\"mopen\">(</span><span class=\"mord\">−</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mord mathnormal\">x</span><span class=\"mclose\">)</span></span></span></span> preserves filtered colimits.  This takes a while to get used to, but a finitely presentable object in Set is a finite set, a finitely presentable object in Vect is a finite-dimensional vector space, and a finitely presentable group is a group with a finite presentation in the usual sense. So it's a good general concept of what it means for an object to be finitely presentable.  I could explain it intuitively if I had a bit more energy - \"preserving filtered colimits\" really does make sense if you think about it a while!</p>",
+        "id": 223604350,
+        "sender_full_name": "John Baez",
+        "timestamp": 1611291931
+    },
+    {
+        "content": "<p>Then a category is <strong>locally finitely presentable</strong> iff it's essentially small, it has colimits, and each object is a  filtered colimit of finitely presentable objects.</p>",
+        "id": 223604410,
+        "sender_full_name": "John Baez",
+        "timestamp": 1611291991
+    },
+    {
+        "content": "<p>So, not every object needs to be finitely presentable, but it needs to be \"built out of finitely presentable objects\".</p>\n<p>For example, every vector space is a union of finite-dimensional subspaces!</p>",
+        "id": 223604547,
+        "sender_full_name": "John Baez",
+        "timestamp": 1611292199
+    },
+    {
+        "content": "<p>(You should think of a filtered colimit as being like a \"union\".)</p>",
+        "id": 223604675,
+        "sender_full_name": "John Baez",
+        "timestamp": 1611292396
+    },
+    {
+        "content": "<p>I find all this harder to remember than the other equivalent definition: a category is <strong>locally finitely presentable</strong> if it's equivalent to the category of models of a finite limits theory (in Set, of course).</p>",
+        "id": 223604728,
+        "sender_full_name": "John Baez",
+        "timestamp": 1611292462
+    },
+    {
+        "content": "<p>Well the other definition is really a quite nontrivial theorem (namely Gabriel-Ulmer duality)</p>",
+        "id": 223622237,
+        "sender_full_name": "Fawzi Hreiki",
+        "timestamp": 1611309999
+    },
+    {
+        "content": "<p>It’s in the same vein as the characterisations of algebraic categories (which are categories of models for finite product theories) and of stone spaces (which are spaces of models for classical propositional theories).</p>",
+        "id": 223622420,
+        "sender_full_name": "Fawzi Hreiki",
+        "timestamp": 1611310105
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"275920\">John Baez</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/Is.20Vect.20locally.20presentable.3F/near/223604350\">said</a>:</p>\n<blockquote>\n<p>There are also other definitions, which might make the term \"locally finitely presentable category\" more clear.   </p>\n<p>There's a concept of a <strong>finitely presentable</strong> object in a category, which is an object <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>x</mi></mrow><annotation encoding=\"application/x-tex\">x</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.43056em;vertical-align:0em;\"></span><span class=\"mord mathnormal\">x</span></span></span></span> such that the representable functor <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mrow><mi mathvariant=\"normal\">h</mi><mi mathvariant=\"normal\">o</mi><mi mathvariant=\"normal\">m</mi></mrow><mo stretchy=\"false\">(</mo><mo>−</mo><mo separator=\"true\">,</mo><mi>x</mi><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">\\mathrm{hom}(-,x)</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord\"><span class=\"mord mathrm\">h</span><span class=\"mord mathrm\">o</span><span class=\"mord mathrm\">m</span></span><span class=\"mopen\">(</span><span class=\"mord\">−</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mord mathnormal\">x</span><span class=\"mclose\">)</span></span></span></span> preserves filtered colimits.  This takes a while to get used to, but a finitely presentable object in Set is a finite set, a finitely presentable object in Vect is a finite-dimensional vector space, and a finitely presentable group is a group with a finite presentation in the usual sense. So it's a good general concept of what it means for an object to be finitely presentable.  I could explain it intuitively if I had a bit more energy - \"preserving filtered colimits\" really does make sense if you think about it a while!</p>\n</blockquote>\n<p>You mean <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>hom</mi><mo>⁡</mo><mo stretchy=\"false\">(</mo><mi>x</mi><mo separator=\"true\">,</mo><mo>−</mo><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">\\hom(x, -)</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mop\">hom</span><span class=\"mopen\">(</span><span class=\"mord mathnormal\">x</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mord\">−</span><span class=\"mclose\">)</span></span></span></span>.</p>",
+        "id": 223648690,
+        "sender_full_name": "Todd Trimble",
+        "timestamp": 1611326223
+    },
+    {
+        "content": "<p>Yes.</p>",
+        "id": 223660050,
+        "sender_full_name": "John Baez",
+        "timestamp": 1611331134
+    },
+    {
+        "content": "<p>Thanks!</p>",
+        "id": 224196624,
+        "sender_full_name": "Mike Stay",
+        "timestamp": 1611761008
+    }
+]

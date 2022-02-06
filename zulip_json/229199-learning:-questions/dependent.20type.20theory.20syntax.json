@@ -1,0 +1,590 @@
+[
+    {
+        "content": "<p>What are the levels about? From the previous paragraph the levels seem to be related to one another by questions that reduces more complicated structures to simpler ones. It's said 'what homotopy type theory<br>\ndoes is take observations such as these not merely as an analogy, but as the first steps of a<br>\nseries of levels.' which seems to be talking about the very fundamental of how intuitionistic mathematics work. <a href=\"/user_uploads/21317/uAu9nqZFET3Fk7TS-0BenyOu/image.png\">image.png</a></p>\n<div class=\"message_inline_image\"><a href=\"/user_uploads/21317/uAu9nqZFET3Fk7TS-0BenyOu/image.png\" title=\"image.png\"><img src=\"/user_uploads/21317/uAu9nqZFET3Fk7TS-0BenyOu/image.png\"></a></div>",
+        "id": 266886870,
+        "sender_full_name": "Peiyuan Zhu",
+        "timestamp": 1641345808
+    },
+    {
+        "content": "<p>I find it very confusing to have a single topic called \"beginner questions\" in which lots of very different questions and their answers get mixed together.  Wouldn't it make more sense to open a separate topic for each question?</p>",
+        "id": 266888459,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1641347513
+    },
+    {
+        "content": "<p>Yea I guess maybe I can open a new topic for dependent types?</p>",
+        "id": 266890597,
+        "sender_full_name": "Peiyuan Zhu",
+        "timestamp": 1641349809
+    },
+    {
+        "content": "<p>I've moved this discussion to such a topic on your behalf :)</p>",
+        "id": 266923343,
+        "sender_full_name": "Morgan Rogers (he/him)",
+        "timestamp": 1641381645
+    },
+    {
+        "content": "<p>You have a lot of questions; I'll try to answer some of them.</p>",
+        "id": 266965869,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1641404415
+    },
+    {
+        "content": "<p><span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>x</mi><mo>:</mo><mi>A</mi><mo>⊢</mo><mi>t</mi><mo>:</mo><mi>B</mi></mrow><annotation encoding=\"application/x-tex\">x:A \\vdash t:B</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.4306em;\"></span><span class=\"mord mathnormal\">x</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">:</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6944em;\"></span><span class=\"mord mathnormal\">A</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">⊢</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6151em;\"></span><span class=\"mord mathnormal\">t</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">:</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.05017em;\">B</span></span></span></span> should be parsed as <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"false\">(</mo><mi>x</mi><mo>:</mo><mi>A</mi><mo stretchy=\"false\">)</mo><mo>⊢</mo><mo stretchy=\"false\">(</mo><mi>t</mi><mo>:</mo><mi>B</mi><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">(x:A) \\vdash (t:B)</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mopen\">(</span><span class=\"mord mathnormal\">x</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">:</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord mathnormal\">A</span><span class=\"mclose\">)</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">⊢</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mopen\">(</span><span class=\"mord mathnormal\">t</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">:</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.05017em;\">B</span><span class=\"mclose\">)</span></span></span></span>.</p>",
+        "id": 266965892,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1641404432
+    },
+    {
+        "content": "<p>More generally, <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>x</mi><mo>:</mo><mi>A</mi><mo separator=\"true\">,</mo><mi>y</mi><mo>:</mo><mi>B</mi><mo>⊢</mo><mi>t</mi><mo>:</mo><mi>C</mi></mrow><annotation encoding=\"application/x-tex\">x:A, y:B \\vdash t:C</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.4306em;\"></span><span class=\"mord mathnormal\">x</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">:</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.8778em;vertical-align:-0.1944em;\"></span><span class=\"mord mathnormal\">A</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.03588em;\">y</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">:</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6944em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.05017em;\">B</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">⊢</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6151em;\"></span><span class=\"mord mathnormal\">t</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">:</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.07153em;\">C</span></span></span></span> should be parsed as <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"false\">(</mo><mo stretchy=\"false\">(</mo><mi>x</mi><mo>:</mo><mi>A</mi><mo stretchy=\"false\">)</mo><mo separator=\"true\">,</mo><mo stretchy=\"false\">(</mo><mi>y</mi><mo>:</mo><mi>B</mi><mo stretchy=\"false\">)</mo><mo stretchy=\"false\">)</mo><mo>⊢</mo><mo stretchy=\"false\">(</mo><mi>t</mi><mo>:</mo><mi>C</mi><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">((x:A), (y:B))\\vdash (t:C)</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mopen\">((</span><span class=\"mord mathnormal\">x</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">:</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord mathnormal\">A</span><span class=\"mclose\">)</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mopen\">(</span><span class=\"mord mathnormal\" style=\"margin-right:0.03588em;\">y</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">:</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.05017em;\">B</span><span class=\"mclose\">))</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">⊢</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mopen\">(</span><span class=\"mord mathnormal\">t</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">:</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.07153em;\">C</span><span class=\"mclose\">)</span></span></span></span>.</p>",
+        "id": 266965923,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1641404449
+    },
+    {
+        "content": "<p>The standard interface to Agda is the Emacs mode.</p>",
+        "id": 266965959,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1641404469
+    },
+    {
+        "content": "<p>The colon in type theory is like the set-membership sign <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>∈</mo></mrow><annotation encoding=\"application/x-tex\">\\in</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.5782em;vertical-align:-0.0391em;\"></span><span class=\"mrel\">∈</span></span></span></span>, but differs in that it is a judgment rather than a proposition.  That means that the type an element belongs to is an intrinsic property of it, and (with certain exceptions) is unique, whereas in set theory one can consider elements separately from sets and ask which set or sets an element might belong to.</p>",
+        "id": 266966128,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1641404542
+    },
+    {
+        "content": "<p>What text are you reading?  What others have you looked at?  There are plenty of good introductions to dependent type theory out there that would answer many of your other questions.</p>",
+        "id": 266966187,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1641404578
+    },
+    {
+        "content": "<p>I'm currently reading modal HoTT by David Corfield, I think philosophy is a good context that I can grasp, but when he talked about algebraic geometry I had no idea how logic and geometry are related to one another, and how to write this in program</p>",
+        "id": 267003660,
+        "sender_full_name": "Peiyuan Zhu",
+        "timestamp": 1641423345
+    },
+    {
+        "content": "<p>My primary interest in to understand imprecise probabilities with modal HoTT <a href=\"https://www.researchgate.net/publication/328494616_Visions_of_a_generalized_probability_theory\">https://www.researchgate.net/publication/328494616_Visions_of_a_generalized_probability_theory</a></p>",
+        "id": 267003933,
+        "sender_full_name": "Peiyuan Zhu",
+        "timestamp": 1641423526
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276777\">Mike Shulman</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/dependent.20type.20theory.20syntax/near/266966128\">said</a>:</p>\n<blockquote>\n<p>The colon in type theory is like the set-membership sign <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>∈</mo></mrow><annotation encoding=\"application/x-tex\">\\in</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.5782em;vertical-align:-0.0391em;\"></span><span class=\"mrel\">∈</span></span></span></span>, but differs in that it is a judgment rather than a proposition.  That means that the type an element belongs to is an intrinsic property of it, and (with certain exceptions) is unique, whereas in set theory one can consider elements separately from sets and ask which set or sets an element might belong to.</p>\n</blockquote>\n<p>So for imprecise probability, a judgement is exactly an assertion that the truth is in some subset of a set, except the judgement is probabilistic. The Dempster-Shafer rule combines the judgements into one assuming probabilistic independence. The combined outcome is accessed upper-and-lower intervals by taking a set of interest that intersects or contains these sets. There's also this fibre bundle structure in the projection algorithm that I believe is highly similar to what I read in Modal HoTT.</p>",
+        "id": 267004500,
+        "sender_full_name": "Peiyuan Zhu",
+        "timestamp": 1641423871
+    },
+    {
+        "content": "<blockquote>\n<p>when he talked about algebraic geometry I had no idea how logic and geometry are related to one another, and how to write this in program</p>\n</blockquote>\n<p>This connection is what topos theory is all about.</p>",
+        "id": 267005109,
+        "sender_full_name": "John Baez",
+        "timestamp": 1641424246
+    },
+    {
+        "content": "<p>Mac Lane and Moerdijk's book <em>Sheaves in Geometry and Logic</em> is the obvious book on that.</p>",
+        "id": 267005624,
+        "sender_full_name": "John Baez",
+        "timestamp": 1641424554
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"275920\">John Baez</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/dependent.20type.20theory.20syntax/near/267005624\">said</a>:</p>\n<blockquote>\n<p>Mac Lane and Moerdijk's book <em>Sheaves in Geometry and Logic</em> is the obvious book on that.</p>\n</blockquote>\n<p>What kind of geometry background is assumed for a book like this? I only know bit of Riemanian geometry and Euclidean geometry, which can be very different I think. Also what kind of logic background? I only know standard math curriculum such as Boolean logic, set theory, truth table, and quantifier. I guess I shouldn't assume somehow Euclidean geometry has some deep connection with Boolean logic.</p>",
+        "id": 267006270,
+        "sender_full_name": "Peiyuan Zhu",
+        "timestamp": 1641424954
+    },
+    {
+        "content": "<p>Looking at the book, it seems you'll only need to know some basic stuff about manifolds.</p>",
+        "id": 267006881,
+        "sender_full_name": "John Baez",
+        "timestamp": 1641425383
+    },
+    {
+        "content": "<p>I don't think you even really need to know manifolds, just topological spaces.</p>",
+        "id": 267006952,
+        "sender_full_name": "Zhen Lin Low",
+        "timestamp": 1641425408
+    },
+    {
+        "content": "<p>Well, in Section II.3, \"Sheaves and manifolds\", the book gives examples of sheaves on manifolds.   One could skip that section but it's a bit sad to study sheaves without many interesting examples.   Luckily, since Peiyuan says he knows some Riemannian geometry he presumably knows a bit about manifolds.</p>",
+        "id": 267007061,
+        "sender_full_name": "John Baez",
+        "timestamp": 1641425508
+    },
+    {
+        "content": "<p>Looking a bit harder at this book, I see it doesn't spend a lot of time explaining how topos theory is connected to algebraic geometry, but it also doesn't assume prior knowledge of algebraic geometry.   There's a brief introduction in section III.3, \"The Zariski site\".</p>",
+        "id": 267007383,
+        "sender_full_name": "John Baez",
+        "timestamp": 1641425710
+    },
+    {
+        "content": "<p>I think that's about as much as you could hope to cover without prerequisite knowledge about schemes...</p>",
+        "id": 267007566,
+        "sender_full_name": "Zhen Lin Low",
+        "timestamp": 1641425849
+    },
+    {
+        "content": "<p>Yeah.   And I don't think Peiyuan actually wants to learn algebraic geometry, which is sort of a serious job in itself.</p>",
+        "id": 267007733,
+        "sender_full_name": "John Baez",
+        "timestamp": 1641425991
+    },
+    {
+        "content": "<p>It's been close to 10 years since I read the book, but what I am sure about is that it is far more important to have a solid grounding in category theory – limits, colimits, functors, concrete categories of common algebraic structures – than detailed knowledge of general topology or manifolds or logic.</p>",
+        "id": 267007957,
+        "sender_full_name": "Zhen Lin Low",
+        "timestamp": 1641426135
+    },
+    {
+        "content": "<p>I see. I guess when I read it the question that I should ask about is whether imprecise probability can be written in this language like this but also whether there shall be some new mathematical device to be invented to talk about it</p>",
+        "id": 267008180,
+        "sender_full_name": "Peiyuan Zhu",
+        "timestamp": 1641426318
+    },
+    {
+        "content": "<p>Just this murder trial example of imprecise probability make it a lot like what topos theory is about <a href=\"/user_uploads/21317/G87H_e19GRVlHj0BFndYdjOA/image.png\">image.png</a></p>\n<div class=\"message_inline_image\"><a href=\"/user_uploads/21317/G87H_e19GRVlHj0BFndYdjOA/image.png\" title=\"image.png\"><img src=\"/user_uploads/21317/G87H_e19GRVlHj0BFndYdjOA/image.png\"></a></div>",
+        "id": 267008219,
+        "sender_full_name": "Peiyuan Zhu",
+        "timestamp": 1641426353
+    },
+    {
+        "content": "<p>It would be more efficient to talk to someone who knows topos theory, how topos theory has been used in fuzzy logic, etc.</p>",
+        "id": 267009409,
+        "sender_full_name": "John Baez",
+        "timestamp": 1641427183
+    },
+    {
+        "content": "<p>However, finding the right people and convincing them to talk can be a bit hard sometimes.</p>",
+        "id": 267009577,
+        "sender_full_name": "John Baez",
+        "timestamp": 1641427246
+    },
+    {
+        "content": "<p>Interesting. Are you saying someone must have done this already?</p>",
+        "id": 267009634,
+        "sender_full_name": "Peiyuan Zhu",
+        "timestamp": 1641427291
+    },
+    {
+        "content": "<p>No, I'm just saying that there exist people who could figure this out 100 times faster than you, so talking to them - repeatedly, not just once - could greatly accelerate your project.</p>",
+        "id": 267009962,
+        "sender_full_name": "John Baez",
+        "timestamp": 1641427444
+    },
+    {
+        "content": "<p>I see, thanks!</p>",
+        "id": 267010002,
+        "sender_full_name": "Peiyuan Zhu",
+        "timestamp": 1641427474
+    },
+    {
+        "content": "<p>(This is true of many people's projects - I'm not trying to be mean to you!)</p>",
+        "id": 267010015,
+        "sender_full_name": "John Baez",
+        "timestamp": 1641427477
+    },
+    {
+        "content": "<p>Is this paper at all helpful?</p>\n<p><a href=\"https://www.sipta.org/isipta19/contributions/crane19.pdf\">https://www.sipta.org/isipta19/contributions/crane19.pdf</a></p>",
+        "id": 267010226,
+        "sender_full_name": "John Baez",
+        "timestamp": 1641427625
+    },
+    {
+        "content": "<p>I'm not claiming it is... it's just what showed up when I did a one-minute search.</p>",
+        "id": 267010251,
+        "sender_full_name": "John Baez",
+        "timestamp": 1641427646
+    },
+    {
+        "content": "<p>Yeah that sounds like it, I guess I didn't expect a paper with such title would be relevant (also might have filtered out a lot of formal reasoning paper because I'm not familiar with the syntax, but it doesn't mean I don't need to get familiar with it)</p>",
+        "id": 267010581,
+        "sender_full_name": "Peiyuan Zhu",
+        "timestamp": 1641427856
+    },
+    {
+        "content": "<p>Thanks a lot</p>",
+        "id": 267010602,
+        "sender_full_name": "Peiyuan Zhu",
+        "timestamp": 1641427869
+    },
+    {
+        "content": "<p>It really speeds up 5e10 times faster</p>",
+        "id": 267010655,
+        "sender_full_name": "Peiyuan Zhu",
+        "timestamp": 1641427901
+    },
+    {
+        "content": "<p>Topos theory relates to geometry insofar as it gives a language in which to talk about local behaviour and glueing</p>",
+        "id": 267011055,
+        "sender_full_name": "Fawzi Hreiki",
+        "timestamp": 1641428143
+    },
+    {
+        "content": "<p>Which is of course prevalent all throughout topology and geometry.</p>",
+        "id": 267011160,
+        "sender_full_name": "Fawzi Hreiki",
+        "timestamp": 1641428189
+    },
+    {
+        "content": "<p>A good starting point is the definition of a smooth manifold as a certain kind of locally ringed space.</p>",
+        "id": 267011409,
+        "sender_full_name": "Fawzi Hreiki",
+        "timestamp": 1641428347
+    },
+    {
+        "content": "<p>Hmm... this sounds like what you mean <a href=\"/user_uploads/21317/7d5bsFhhtrzVCWXEefwdXTvg/image.png\">image.png</a></p>\n<div class=\"message_inline_image\"><a href=\"/user_uploads/21317/7d5bsFhhtrzVCWXEefwdXTvg/image.png\" title=\"image.png\"><img src=\"/user_uploads/21317/7d5bsFhhtrzVCWXEefwdXTvg/image.png\"></a></div>",
+        "id": 267011759,
+        "sender_full_name": "Peiyuan Zhu",
+        "timestamp": 1641428638
+    },
+    {
+        "content": "<p>Yes it seems to be. The reason this approach is important is that it generalises very quickly to many different kinds of ‘glued spaces’ such as complex-analytic spaces, schemes, etc</p>",
+        "id": 267011882,
+        "sender_full_name": "Fawzi Hreiki",
+        "timestamp": 1641428698
+    },
+    {
+        "content": "<p>The correct framework for such ‘function structured spaces’ is the theory of ringed toposes.</p>",
+        "id": 267012009,
+        "sender_full_name": "Fawzi Hreiki",
+        "timestamp": 1641428784
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"275920\">John Baez</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/dependent.20type.20theory.20syntax/near/267007733\">said</a>:</p>\n<blockquote>\n<p>Yeah.   And I don't think Peiyuan actually wants to learn algebraic geometry, which is sort of a serious job in itself.</p>\n</blockquote>\n<p>When I'm reading HoTT, I found it hard to understand the 'homotopy' part. How come topology, paths, groupoid, fiber section one of a sudden become relevant? (there hasn't been a definition of manifold appearing yet) Are we saying a program is really different algebraic structures? I think to understand this better I'll have to seriously study algebraic geometry, although it can be of lower priority for now before I pick up/formalized the basics. For example, I would ask where is topology when I'm proving a fibonacci sequence, and what are the paths are they just flow of inference or intuitions, and why use groupoid instead of group, what's the use of fiber section here... I think these cannot be explained easily without algebraic geometry? I found this discussion really helpful, so I can really pinpoint what I don't know. I think another good starting point for me is to write Boole's Investigation into Laws of thoughts in the language of algebraic geometry.</p>",
+        "id": 267037781,
+        "sender_full_name": "Peiyuan Zhu",
+        "timestamp": 1641459224
+    },
+    {
+        "content": "<p>It is an analogy (that can be made precise). You don't have to think too hard about it now. Algebraic geometry is not relevant.</p>",
+        "id": 267038039,
+        "sender_full_name": "Zhen Lin Low",
+        "timestamp": 1641459433
+    },
+    {
+        "content": "<p>I think it can be relevant some day no? What if thermodynamics can be written in the language of algebraic geometry? That would make all the difference.</p>",
+        "id": 267038154,
+        "sender_full_name": "Peiyuan Zhu",
+        "timestamp": 1641459523
+    },
+    {
+        "content": "<p>Let me add some words. Algebraic geometry is not relevant to the interpretation of HoTT in ∞-groupoids.</p>",
+        "id": 267038342,
+        "sender_full_name": "Zhen Lin Low",
+        "timestamp": 1641459633
+    },
+    {
+        "content": "<p>I think it may still be important to really understand it no? By understanding it kinda means that all things considered.</p>",
+        "id": 267038545,
+        "sender_full_name": "Peiyuan Zhu",
+        "timestamp": 1641459791
+    },
+    {
+        "content": "<p>For example, I cannot see why group is not enough</p>",
+        "id": 267038581,
+        "sender_full_name": "Peiyuan Zhu",
+        "timestamp": 1641459822
+    },
+    {
+        "content": "<p>Algebraic geometry does not (alone) hold the answer to that. Algebraic topology would be a better place to look.</p>",
+        "id": 267038669,
+        "sender_full_name": "Zhen Lin Low",
+        "timestamp": 1641459889
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"416301\">Zhen Lin Low</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/dependent.20type.20theory.20syntax/near/267038039\">said</a>:</p>\n<blockquote>\n<p>It is an analogy (that can be made precise). You don't have to think too hard about it now. Algebraic geometry is not relevant.</p>\n</blockquote>\n<p>I was hoping analogy will end-up being something fundamental, but maybe this is not true, at least at this point in time</p>",
+        "id": 267038817,
+        "sender_full_name": "Peiyuan Zhu",
+        "timestamp": 1641460036
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"416301\">Zhen Lin Low</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/dependent.20type.20theory.20syntax/near/267038669\">said</a>:</p>\n<blockquote>\n<p>Algebraic geometry does not (alone) hold the answer to that. Algebraic topology would be a better place to look.</p>\n</blockquote>\n<p>Can you elaborate on the difference? Are they trying to answer fundamentally different questions, if so what are the questions that they're trying to answer that are different</p>",
+        "id": 267038896,
+        "sender_full_name": "Peiyuan Zhu",
+        "timestamp": 1641460089
+    },
+    {
+        "content": "<p>Algebraic geometry and algebraic topology are different subjects, and fundamentally about different things (varieties vs topological spaces). In modern research they use some of the same tools so you will see the same language being used, but the roots are different.</p>",
+        "id": 267039096,
+        "sender_full_name": "Zhen Lin Low",
+        "timestamp": 1641460309
+    },
+    {
+        "content": "<p>A simple explanation is that algebraic topology studies spaces by associating to them algebraic invariants, while algebraic geometry builds spaces from algebraic equations and structures.</p>",
+        "id": 267055850,
+        "sender_full_name": "Fawzi Hreiki",
+        "timestamp": 1641472566
+    },
+    {
+        "content": "<p>Ahh I think Galois theory might have much more to do with this question than the theories that I just looked at</p>",
+        "id": 267105071,
+        "sender_full_name": "Peiyuan Zhu",
+        "timestamp": 1641498345
+    },
+    {
+        "content": "<p><a href=\"https://link.springer.com/chapter/10.1007/978-1-4020-1898-5_1\">https://link.springer.com/chapter/10.1007/978-1-4020-1898-5_1</a></p>",
+        "id": 267105094,
+        "sender_full_name": "Peiyuan Zhu",
+        "timestamp": 1641498361
+    },
+    {
+        "content": "<p>Peiyuan wrote:</p>\n<blockquote>\n<p>When I'm reading HoTT, I found it hard to understand the 'homotopy' part. How come topology, paths, groupoid, fiber, section one of a sudden become relevant? (there hasn't been a definition of manifold appearing yet) Are we saying a program is really different algebraic structures? I think to understand this better I'll have to seriously study algebraic geometry [...]</p>\n</blockquote>\n<p>That's a strange last sentence, because all the concept you just mentioned are about <em>topology</em>: topology, paths, groupoid, fiber, section.  To understand homotopy type theory you need to understand how <em>topology</em> is connected to logic.  Algebraic geometry is not so relevant here!</p>",
+        "id": 267136558,
+        "sender_full_name": "John Baez",
+        "timestamp": 1641516231
+    },
+    {
+        "content": "<blockquote>\n<p>(there hasn't been a definition of manifold appearing yet)</p>\n</blockquote>\n<p>To be more specific, to understand HoTT you need to understand how a specific aspect of topology is connected to logic: <em>homotopy theory</em>.   Homotopy theory is not primarily about manifolds, so you shouldn't care about manifolds too much when learning HoTT.</p>\n<p>I imagine the HoTT book talks quite a lot about homotopy theory and logic, and how they're connected.</p>",
+        "id": 267136942,
+        "sender_full_name": "John Baez",
+        "timestamp": 1641516400
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"275920\">John Baez</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/dependent.20type.20theory.20syntax/near/267136558\">said</a>:</p>\n<blockquote>\n<p>Peiyuan wrote:</p>\n<blockquote>\n<p>When I'm reading HoTT, I found it hard to understand the 'homotopy' part. How come topology, paths, groupoid, fiber, section one of a sudden become relevant? (there hasn't been a definition of manifold appearing yet) Are we saying a program is really different algebraic structures? I think to understand this better I'll have to seriously study algebraic geometry [...]</p>\n</blockquote>\n<p>That's a strange last sentence, because all the concept you just mentioned are about <em>topology</em>: topology, paths, groupoid, fiber, section.  To understand homotopy type theory you need to understand how <em>topology</em> is connected to logic.  Algebraic geometry is not so relevant here!</p>\n</blockquote>\n<p>Is there something like 'how algebra is connected to logic'? I didn't find anything like this but the book I found in the previous post in Galois theory seems to included all important people, or is this assumed to be known by everyone, because logic IS algebra?</p>",
+        "id": 267142368,
+        "sender_full_name": "Peiyuan Zhu",
+        "timestamp": 1641520854
+    },
+    {
+        "content": "<p>I wouldn't say that. Algebra is a tool used to study logic. Logic is sometimes used to study algebra.</p>",
+        "id": 267145020,
+        "sender_full_name": "Zhen Lin Low",
+        "timestamp": 1641523657
+    },
+    {
+        "content": "<p>I notice you are asking a lot of \"how is X connected to Y\" questions. Here's some unsolicited advice: you should first spend some time learning the basics of either X or Y, or better yet, both. Because if you don't, honest answers are likely to fly over your head and not be very convincing.</p>",
+        "id": 267145378,
+        "sender_full_name": "Zhen Lin Low",
+        "timestamp": 1641523983
+    },
+    {
+        "content": "<blockquote>\n<p>Is there something like 'how algebra is connected to logic'?</p>\n</blockquote>\n<p>Yes, there are several subjects that study this.   You can probably name any two big subjects like algebra, geometry, logic, topology, analysis and find a bunch of work connecting them.   E.g. algebraic geometry, geometric algebra, etc. etc. etc.</p>",
+        "id": 267148289,
+        "sender_full_name": "John Baez",
+        "timestamp": 1641527149
+    },
+    {
+        "content": "<p>Hmm… I see, I’m just trying to find out which one is the most important to give a solid understanding of semiotics… because by looking at that book it seems that some people might just say they’re ‘obviously’ consisting of one lines of thought in history, just in the way how they’re written makes me think that there’s a very deep reason that they’re put together</p>",
+        "id": 267148851,
+        "sender_full_name": "Peiyuan Zhu",
+        "timestamp": 1641527777
+    },
+    {
+        "content": "<p><a href=\"/user_uploads/21317/B_V1hTRirKx2dXwy1Q3X1bc9/7CFAE4B1-5636-4FC4-B0E4-5ECD5B889D7D.png\">7CFAE4B1-5636-4FC4-B0E4-5ECD5B889D7D.png</a></p>\n<div class=\"message_inline_image\"><a href=\"/user_uploads/21317/B_V1hTRirKx2dXwy1Q3X1bc9/7CFAE4B1-5636-4FC4-B0E4-5ECD5B889D7D.png\" title=\"7CFAE4B1-5636-4FC4-B0E4-5ECD5B889D7D.png\"><img src=\"/user_uploads/21317/B_V1hTRirKx2dXwy1Q3X1bc9/7CFAE4B1-5636-4FC4-B0E4-5ECD5B889D7D.png\"></a></div>",
+        "id": 267148858,
+        "sender_full_name": "Peiyuan Zhu",
+        "timestamp": 1641527789
+    },
+    {
+        "content": "<p>What book is this from?  This page is just a long list of related ideas.  I think it's better to focus on something concrete.  For example, most of the ideas on this list are connected to 'adjoint functors' - one of the most important concepts in category theory.    If you want to do anything with category theory you need to understand adjoint functors.   So you might try to learn about those.</p>",
+        "id": 267148978,
+        "sender_full_name": "John Baez",
+        "timestamp": 1641527951
+    },
+    {
+        "content": "<p>It’s from a book with topic: Adjunctions and Galois Connections: Origins, History and Development <a href=\"https://link.springer.com/chapter/10.1007/978-1-4020-1898-5_1\">https://link.springer.com/chapter/10.1007/978-1-4020-1898-5_1</a></p>\n<p>The reason that I encountered this chapter is while reading Laws of Thoughts on probabilities by George Boole, there are sets of probabilistic algebraic equations that comes from everyday language that needs to be approximated by intervals, so I was thinking whether there is such a numerical method that is well-known in mathematics that give these interval estimates to large sets of algebraic equations or whether anyone has studied the algebraic structures of these type of equations. </p>\n<p>The theory of imprecise probabilities talks a lot about lattices but the algebraic side is not discussed very often (not even was pointed out in any papers I read, mostly dived directly into a setting of a power set and probabilistic mappings into the power set). Galois connection seems to be the basis of any numerical algorithms (I even saw a paper on second law of thermodynamics being a special Galois connection), or at least in my superficial knowledge has something to do with solving algebraic equations. So somehow this paper is wrapping everything together. But I also don’t know how complex a math topic like this is and whether it will be helpful for my understanding. Not sure if my approach is the best to do this. </p>\n<p>While the HoTT book (along with the book John sent yesterday) seems has a lot to say about algebraic geometry (or topology?), I wonder if that ‘algebraic’ really has anything to do with the systems of probabilistic equations that I’m trying to understand. There’s also this book Geometry of Uncertainty that talks about geometry but I’m still trying to see if it has anything to do with the ‘geometry’ or ‘topology’ in HoTT. </p>\n<p>But what seems certain is that imprecise probabilities such as possibility theory must be something to do with toposes, I’m just trying to dig that out.</p>",
+        "id": 267149810,
+        "sender_full_name": "Peiyuan Zhu",
+        "timestamp": 1641528943
+    },
+    {
+        "content": "<p>It’s astonishing that these fields have a lot of shared structures, but I haven’t yet found a unifying theory, which I think is where category theory can be helpful</p>",
+        "id": 267150432,
+        "sender_full_name": "Peiyuan Zhu",
+        "timestamp": 1641529818
+    },
+    {
+        "content": "<p>Or even just a unifying story</p>",
+        "id": 267150436,
+        "sender_full_name": "Peiyuan Zhu",
+        "timestamp": 1641529841
+    },
+    {
+        "content": "<blockquote>\n<p>While the HoTT book (along with the book John sent yesterday) seems has a lot to say about algebraic geometry (or topology?)</p>\n</blockquote>\n<p>I haven't read the HoTT book carefully, but my impression is that it says almost nothing about algebraic geometry.</p>",
+        "id": 267220257,
+        "sender_full_name": "John Baez",
+        "timestamp": 1641578210
+    },
+    {
+        "content": "<p>In case it's not clear yet, algebraic topology and algebraic geometry are quite different subjects.</p>",
+        "id": 267220318,
+        "sender_full_name": "John Baez",
+        "timestamp": 1641578259
+    },
+    {
+        "content": "<blockquote>\n<p>But what seems certain is that imprecise probabilities such as possibility theory must be something to do with toposes, I’m just trying to dig that out.</p>\n</blockquote>\n<p>Have you seen Michael Barr's paper on <a href=\"https://www.math.mcgill.ca/barr/papers/fuzzy.pdf\">toposes in fuzzy set theory</a>?   If I had to invent a way to use topos theory for \"imprecise probabilities\", I might start there.   (Of course I already know some basic topos theory.  If you don't, you should start by learning that.)</p>",
+        "id": 267220490,
+        "sender_full_name": "John Baez",
+        "timestamp": 1641578328
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"275920\">John Baez</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/dependent.20type.20theory.20syntax/near/267220257\">said</a>:</p>\n<blockquote>\n<blockquote>\n<p>While the HoTT book (along with the book John sent yesterday) seems has a lot to say about algebraic geometry (or topology?)</p>\n</blockquote>\n<p>I haven't read the HoTT book carefully, but my impression is that it says almost nothing about algebraic geometry.</p>\n</blockquote>\n<p>As mentioned previously by <span class=\"user-mention\" data-user-id=\"416301\">@Zhen Lin Low</span>  it has more to do with algebraic topology. Why is this analogy important? Why do people like this idea for programming languages? Do people expect some day this language to be used for programming quantum computers?</p>",
+        "id": 267257899,
+        "sender_full_name": "Peiyuan Zhu",
+        "timestamp": 1641598735
+    },
+    {
+        "content": "<p>The analogy is important if you want to do HoTT, because we – the collective body of all mathematicians – know a lot more about algebraic topology than HoTT right now. The situation may change in the future. But it is not by any means necessary: conceivably, a genius could appear who could discover great things in HoTT directly without relying on the crutch of foreknowledge of algebraic topology.</p>",
+        "id": 267258850,
+        "sender_full_name": "Zhen Lin Low",
+        "timestamp": 1641599134
+    },
+    {
+        "content": "<p>I would not say people like this idea for programming languages. You may get that impression if all you read is the writing of HoTT or computer verification advocates, but I guarantee if you go talk to actual software engineers most will not even have heard of dependent types.</p>",
+        "id": 267259140,
+        "sender_full_name": "Zhen Lin Low",
+        "timestamp": 1641599268
+    },
+    {
+        "content": "<p>As for quantum computers, I don't think type theory as usually conceived is suitable. Linear type theory is probably more appropriate.</p>",
+        "id": 267259478,
+        "sender_full_name": "Zhen Lin Low",
+        "timestamp": 1641599439
+    },
+    {
+        "content": "<p>How about Modal type? It just came to me because I heard of the 'possible world interpretation' of quantum mechanics, which I think has some correspondence with the philosophical 'possible world', which was referenced many times in Modal HoTT</p>",
+        "id": 267260036,
+        "sender_full_name": "Peiyuan Zhu",
+        "timestamp": 1641599860
+    },
+    {
+        "content": "<p>I think those turn out to be quite different if you look into the underlying mathematics.</p>",
+        "id": 267260187,
+        "sender_full_name": "Zhen Lin Low",
+        "timestamp": 1641599942
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"416301\">Zhen Lin Low</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/dependent.20type.20theory.20syntax/near/267258850\">said</a>:</p>\n<blockquote>\n<p>conceivably, a genius could appear who could discover great things in HoTT directly without relying on the crutch of foreknowledge of algebraic topology.</p>\n</blockquote>\n<p>In fact, there are already students who learned HoTT without much prior exposure to classical algebraic topology, and who've discovered new things about it that us oldsters didn't notice.</p>",
+        "id": 267268009,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1641607419
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"416301\">Zhen Lin Low</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/dependent.20type.20theory.20syntax/near/267259140\">said</a>:</p>\n<blockquote>\n<p>I would not say people like this idea for programming languages. You may get that impression if all you read is the writing of HoTT or computer verification advocates, but I guarantee if you go talk to actual software engineers most will not even have heard of dependent types.</p>\n</blockquote>\n<p>In other words, <em>some</em> people like this idea, while others haven't learned to like it yet.  (-:O</p>",
+        "id": 267268069,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1641607465
+    },
+    {
+        "content": "<p>In my mind homotopy type theory is mainly important as part of the ongoing homotopification of mathematics.  As <a href=\"https://golem.ph.utexas.edu/category/2009/11/interview_with_manin.html\">Yuri Manin said</a>:</p>\n<blockquote>\n<p>Instead of sets, clouds of discrete elements, we<br>\nenvisage some sorts of vague spaces, which can be<br>\nvery severely deformed, mapped one to another,<br>\nand all the while the specific space is not important,<br>\nbut only the space up to deformation. If we<br>\nreally want to return to discrete objects, we see<br>\ncontinuous components, the pieces whose form or<br>\neven dimension does not matter. Earlier, all these<br>\nspaces were thought of as Cantor sets with topology,<br>\ntheir maps were Cantor maps, some of them<br>\nwere homotopies that should have been factored<br>\nout, and so on.</p>\n</blockquote>\n<blockquote>\n<p>I am pretty strongly convinced that there is an<br>\nongoing reversal in the collective consciousness of<br>\nmathematicians: the right hemispherical and <br>\nhomotopical picture of the world becomes the basic<br>\nintuition, and if you want to get a discrete set, then<br>\nyou pass to the set of connected components of a<br>\nspace defined only up to homotopy.</p>\n</blockquote>\n<blockquote>\n<p>That is, the Cantor points become continuous<br>\ncomponents, or attractors, and so on—almost from<br>\nthe start. Cantor’s problems of the infinite recede<br>\nto the background: from the very start, our images<br>\nare so infinite that if you want to make something<br>\nfinite out of them, you must divide them by another<br>\ninfinity.</p>\n</blockquote>",
+        "id": 267274146,
+        "sender_full_name": "John Baez",
+        "timestamp": 1641615317
+    },
+    {
+        "content": "<p>Thus, in homotopy type theory the basic entities are not sets but homotopy types.</p>",
+        "id": 267274256,
+        "sender_full_name": "John Baez",
+        "timestamp": 1641615480
+    },
+    {
+        "content": "<p>Seems like Modal Homotopy Type is used in geometry:<br>\n[1] <a href=\"https://arxiv.org/pdf/1806.05966.pdf\">https://arxiv.org/pdf/1806.05966.pdf</a><br>\n[2] <a href=\"http://nlab-pages.s3.us-east-2.amazonaws.com/nlab/show/geometric+homotopy+type+theory\">http://nlab-pages.s3.us-east-2.amazonaws.com/nlab/show/geometric+homotopy+type+theory</a></p>\n<p>Also algebra<br>\n<a href=\"http://nlab-pages.s3.us-east-2.amazonaws.com/nlab/show/Galois+theory#GaloisInTopos\">http://nlab-pages.s3.us-east-2.amazonaws.com/nlab/show/Galois+theory#GaloisInTopos</a></p>",
+        "id": 267276547,
+        "sender_full_name": "Peiyuan Zhu",
+        "timestamp": 1641618161
+    },
+    {
+        "content": "<p>So it's not just topology</p>",
+        "id": 267276801,
+        "sender_full_name": "Peiyuan Zhu",
+        "timestamp": 1641618583
+    },
+    {
+        "content": "<p>Yes, but now you're talking about the use of modalities to capture \"cohesion\".</p>",
+        "id": 267276848,
+        "sender_full_name": "John Baez",
+        "timestamp": 1641618612
+    },
+    {
+        "content": "<p>I'll admit I'm getting a bit tired of talking about things in such a vague, sketchy manner.  It's like flying over the country at an altitude of 100,000 feet, where even the biggest mountains look tiny, and all the smaller details are lost.</p>",
+        "id": 267276889,
+        "sender_full_name": "John Baez",
+        "timestamp": 1641618704
+    },
+    {
+        "content": "<p>I think I already have enough to start, Thanks! I also have found the word 'sheaf' being mentioned in the book that I'm reading so I'll have a very concrete example to work on.</p>",
+        "id": 267276956,
+        "sender_full_name": "Peiyuan Zhu",
+        "timestamp": 1641618782
+    },
+    {
+        "content": "<p>To me it's been good to first sort unknown subjects by complexity &amp; relevancy, before digging in. I think this is the most resource-efficient way than dig in and then realize there's something fundamental missing, so all the knowledge semantics needs to be reconstructed somehow to fit the most relevant narrative, or that spending so much time pursuing something and then realize it is trivial in another discipline, which can be frustrating and inefficient. My charts have been university mathematics, so I've been operating in this 'possible world' of mathematics with cardinality 2^n where n in the number of subjects of advanced mathematics, which is huge.</p>",
+        "id": 267277315,
+        "sender_full_name": "Peiyuan Zhu",
+        "timestamp": 1641619257
+    },
+    {
+        "content": "<p>It really is better to just dive in, and learn the Grand Narratives once you have some context for them.</p>",
+        "id": 267294399,
+        "sender_full_name": "Jonathan Sterling",
+        "timestamp": 1641646248
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"394227\">Peiyuan Zhu</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/dependent.20type.20theory.20syntax/near/267277315\">said</a>:</p>\n<blockquote>\n<p>To me it's been good to first sort unknown subjects by complexity &amp; relevancy, before digging in. I think this is the most resource-efficient way...</p>\n</blockquote>\n<p>For what it's worth, I feel that focusing on something in detail (even near-randomly chosen!) can sometimes substantially accelerate the process of characterizing unknown subjects. Sometimes authors assume prerequisites that they don't list anywhere, and you'll only realize that you needed to know something after you've already learned it. For example, I really underestimated the value of knowing some basic topology, and I was only able to recognize this once I learned some!</p>",
+        "id": 267327205,
+        "sender_full_name": "David Egolf",
+        "timestamp": 1641691291
+    },
+    {
+        "content": "<p>Thanks for the great advices. So I started writing a proof of category theory, and I began with the category of relations, thinking that it's going to be useful later on. Is it possible to do this proof in HoTT, since there're existential quantifiers? <a href=\"/user_uploads/21317/69PLL_dFzp8lwrPCFJssUGPh/image.png\">image.png</a> If this is possible I'll try to find a way to do it, but just wanted to make sure it's something possible.</p>\n<div class=\"message_inline_image\"><a href=\"/user_uploads/21317/69PLL_dFzp8lwrPCFJssUGPh/image.png\" title=\"image.png\"><img src=\"/user_uploads/21317/69PLL_dFzp8lwrPCFJssUGPh/image.png\"></a></div>",
+        "id": 267333026,
+        "sender_full_name": "Peiyuan Zhu",
+        "timestamp": 1641699014
+    },
+    {
+        "content": "<p>Good start, just catching a small misnomer in ther: what you call <em>commutativity</em> is actually <em>associativity</em></p>",
+        "id": 267346956,
+        "sender_full_name": "Matteo Capucci (he/him)",
+        "timestamp": 1641718802
+    },
+    {
+        "content": "<p>Ah good catch my math really got rusty :)</p>",
+        "id": 267366184,
+        "sender_full_name": "Peiyuan Zhu",
+        "timestamp": 1641746886
+    },
+    {
+        "content": "<p>A stack exchange post: does type theory have a concept of relation: <a href=\"https://math.stackexchange.com/questions/1265598/does-type-theory-have-a-concept-of-relation\">https://math.stackexchange.com/questions/1265598/does-type-theory-have-a-concept-of-relation</a></p>",
+        "id": 267366198,
+        "sender_full_name": "Peiyuan Zhu",
+        "timestamp": 1641746917
+    },
+    {
+        "content": "<p>Questions like this are tricky to answer because \"type theory\" doesn't refer to a single specific thing. (\"Set theory\" isn't necessarily a single specific thing either, but most people would assume you mean ZFC.)<br>\nIn a type theory which is intended to be used as a language for ordinary mathematics, the answer is yes because a relation is a notion of ordinary mathematics.</p>",
+        "id": 267367795,
+        "sender_full_name": "Reid Barton",
+        "timestamp": 1641748876
+    },
+    {
+        "content": "<p>Typically you would have a universe of propositions <code>Prop</code> and define a relation between <code>A</code> and <code>B</code> to be something of type <code>A -&gt; B -&gt; Prop</code>.</p>",
+        "id": 267367808,
+        "sender_full_name": "Reid Barton",
+        "timestamp": 1641748905
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276480\">Reid Barton</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/dependent.20type.20theory.20syntax/near/267367795\">said</a>:</p>\n<blockquote>\n<p>Questions like this are tricky to answer because \"type theory\" doesn't refer to a single specific thing. (\"Set theory\" isn't necessarily a single specific thing either, but most people would assume you mean ZFC.)<br>\nIn a type theory which is intended to be used as a language for ordinary mathematics, the answer is yes because a relation is a notion of ordinary mathematics.</p>\n</blockquote>\n<p>Would I get a different answer if I restrict myself to HoTT?</p>",
+        "id": 267531835,
+        "sender_full_name": "Peiyuan Zhu",
+        "timestamp": 1641870849
+    },
+    {
+        "content": "<p>What's the difference between \"|-\" versus \"-|\" and \"|=\" and \"|-&gt;\"in type theory? I head the third means forcing and the fourth means transportation, but not sure about the first two. Are they referring to adjointness?</p>",
+        "id": 267531982,
+        "sender_full_name": "Peiyuan Zhu",
+        "timestamp": 1641870967
+    },
+    {
+        "content": "<p>Even restricting to HoTT, you'll have to worry about propositional resizing and (im)predicativity. The most basic answer (i.e, Book HoTT with none of the optional axioms) is that relations become large, and you have to keep track of their size (universe level). But I think it still basically works to have relations be binary maps into a universe of h-propositions.</p>",
+        "id": 268001514,
+        "sender_full_name": "James Wood",
+        "timestamp": 1642159709
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"394227\">Peiyuan Zhu</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/dependent.20type.20theory.20syntax/near/267531982\">said</a>:</p>\n<blockquote>\n<p>What's the difference between \"|-\" versus \"-|\" and \"|=\" and \"|-&gt;\"in type theory? I head the third means forcing and the fourth means transportation, but not sure about the first two. Are they referring to adjointness?</p>\n</blockquote>\n<p><span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>⊢</mo></mrow><annotation encoding=\"application/x-tex\">\\vdash</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6944em;\"></span><span class=\"mrel\">⊢</span></span></span></span> is part of the judgement syntax of type theory, roughly saying “in the given context, this judgement holds”. It gives a way to divide the context from the judgement in question. <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>⊣</mo></mrow><annotation encoding=\"application/x-tex\">\\dashv</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6944em;\"></span><span class=\"mrel\">⊣</span></span></span></span> is used in category theory as <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>F</mi><mo>⊣</mo><mi>G</mi></mrow><annotation encoding=\"application/x-tex\">F \\dashv G</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6944em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.13889em;\">F</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">⊣</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\">G</span></span></span></span> to say that functors <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>F</mi></mrow><annotation encoding=\"application/x-tex\">F</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.13889em;\">F</span></span></span></span> and <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>G</mi></mrow><annotation encoding=\"application/x-tex\">G</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\">G</span></span></span></span> are <a href=\"https://ncatlab.org/nlab/show/adjoint%20functor\">[[adjoint functor]]</a> s. <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>⊨</mo></mrow><annotation encoding=\"application/x-tex\">\\vDash</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6922em;\"></span><span class=\"mrel amsrm\">⊨</span></span></span></span> has domain-specific meaning, usually in logic. Often it's a semantic counterpart to the syntactic <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>⊢</mo></mrow><annotation encoding=\"application/x-tex\">\\vdash</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6944em;\"></span><span class=\"mrel\">⊢</span></span></span></span>, in one way or another. <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>↦</mo></mrow><annotation encoding=\"application/x-tex\">\\mapsto</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.522em;vertical-align:-0.011em;\"></span><span class=\"mrel\">↦</span></span></span></span> is usually part of the judgemental syntax of a theory, stating that, when we are constructing something function-like, we want it to map the thing on the left to the thing on the right (judgementally). It might also have some other (propositional) meanings, but I think they usually have a “maps to” reading.</p>",
+        "id": 268002604,
+        "sender_full_name": "James Wood",
+        "timestamp": 1642160386
+    }
+]

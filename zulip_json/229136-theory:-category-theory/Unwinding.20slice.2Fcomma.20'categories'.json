@@ -1,0 +1,176 @@
+[
+    {
+        "content": "<p>I'm going to be speaking about slice categories here, but I'm aware that they are a special case of comma categories. Any answer that covers either/both would be welcome.</p>\n<p>Context: one of the (old) lessons of category theory is the groupoid idea, i.e. don't actually take quotients, just go up a dimension, so that you don't need to squish things down uncomfortably. One can somewhat extend this idea to not pairing together things that naturally live in different universes. This shows up awkwardly in 'set'-based category theory (small, locally small, large, huge, etc), but is rather elegant when universes have names and/or are polymorphic, such as in Martin-L$$\\\"{o}$$f type theory.  So objects and homs can live in different 'universes', and things work swimmingly.</p>\n<p>But slice categories 'break' that: they pair up objects and morphisms, thus mixing universes. So the temptation is to try to make things larger (bicategories? double categories? something else?) where all the data that make up slice categories is still there, but not all squished together.</p>\n<p>This feels like something that's probably been done already, though perhaps the motivation might have been quite different. </p>\n<p>If someone wants a precise question: is there a 'home' for the data of a slice category that ends up being equivalent when everything is 'small', but does not mix objects with arrows.</p>",
+        "id": 250145487,
+        "sender_full_name": "Jacques Carette",
+        "timestamp": 1629479395
+    },
+    {
+        "content": "<p>Can you elaborate on how things 'break'? It seems to me that one could afford to just put aside the universe that the objects live in when constructing slices, since the objects of the new category are morphisms of the old one.</p>",
+        "id": 250146659,
+        "sender_full_name": "Morgan Rogers (he/him)",
+        "timestamp": 1629479983
+    },
+    {
+        "content": "<p>I don't see how the slice category construction (or combining entities residing in different places) is analogous to quotienting. In the latter, you are throwing away information, but you aren't doing anything of the sort in the former.</p>",
+        "id": 250146690,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1629480001
+    },
+    {
+        "content": "<p>In addition, comma categories <a href=\"https://ncatlab.org/nlab/show/comma+object\">can be described</a> as a kind of 2-limit, which is surely evidence that they're entirely natural when considered in their own right.</p>",
+        "id": 250146861,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1629480086
+    },
+    {
+        "content": "<p>Nothing 'breaks'.  And it isn't necessarily analogous to quotienting, that's just the best I could come up with. It's a general malaise on my part, where I don't like mixing things from different universes. And for sure, comma categories are entirely natural! That's why I didn't dismiss my malaise, but dug in, to understand better.</p>\n<p>The comma object, as a 2-limit, was helpful, thanks. It's definitely along the lines of what I was hoping for.</p>",
+        "id": 250148102,
+        "sender_full_name": "Jacques Carette",
+        "timestamp": 1629480689
+    },
+    {
+        "content": "<p>Another observation that may be helpful is that slices arise as hom-categories in bicategories of spans: if you consider the 2-cells of Span(E), you'll see that they correspond to morphisms between slices.</p>",
+        "id": 250151574,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1629482328
+    },
+    {
+        "content": "<p>I would say the reason it's not a problem is that it only brings things \"down\" in level, rather than up.  You can always consider a set to be a discrete category, or a category to be a locally discrete 2-category, etc.  In this case, the <em>objects</em> of a slice/comma category involve both (1) objects of the original category, at the same level, and (2) morphisms of the original category, which are at a higher level — they form a set, which we can always consider to be a discrete category.  Similarly, the morphisms of a slice category involve morphisms of the original category and equalities of morphisms in the original category, which again are at a higher level.  What forces a construction to go up a categorical dimension is if you lift data to a <em>higher</em> level, e.g. spans, where the <em>morphisms</em> in the category of spans involve <em>objects</em> in the original category.</p>",
+        "id": 250151611,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1629482346
+    },
+    {
+        "content": "<p>So I'm working with unsaturated E-categories, so there really are 3 distinct levels, with no a priori relation on the sizes.  My Homs are (unsaturated) Setoids.  That's why I'm even able to see that there's mixing going on!</p>\n<p>That is indeed why my doodling seems to indicate double categories might be an even better home than bicategories.</p>\n<p>I also want to repeat: I am not claiming there is a problem. I know that many constructions in category theory have a lot of different ways to look at them, so I was looking for such for slice/comma.</p>",
+        "id": 250156919,
+        "sender_full_name": "Jacques Carette",
+        "timestamp": 1629484947
+    },
+    {
+        "content": "<p>It's important to distinguish between <em>size</em> (in the sense of how big a universe is) and categorical <em>dimension</em>: they're really unrelated.</p>",
+        "id": 250157587,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1629485344
+    },
+    {
+        "content": "<p>You're right, and I know this, I was indeed a little sloppy there.</p>",
+        "id": 250157671,
+        "sender_full_name": "Jacques Carette",
+        "timestamp": 1629485395
+    },
+    {
+        "content": "<p>I don't see why things would be any different with E-categories: just as a set can be regarded as a discrete category, a setoid can be regarded as an (essentially) discrete E-category.</p>",
+        "id": 250157741,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1629485415
+    },
+    {
+        "content": "<p>Things are not different in E-categories, and indeed the <code>DiscreteSetoid</code> functor in <code>agda-categories</code> works exactly as you say. The only thing I'm saying is that I can 'see' the 3 arbitrary universes involved getting intertwined in a slice category, and I was wondering if there was an equivalent construction that doesn't do that.</p>\n<p>The same way the unit/counit construction of Adjoints is fully universe polymorphic, but the equivalence-of-Hom-Setoids version (which is classically equivalent) is not.</p>",
+        "id": 250158722,
+        "sender_full_name": "Jacques Carette",
+        "timestamp": 1629485959
+    },
+    {
+        "content": "<p>Why are the two definitions of adjunction not equivalent constructively? They can be proven equivalent in any 2-category, which includes Setoid-enriched categories.</p>",
+        "id": 250159996,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1629486604
+    },
+    {
+        "content": "<p>Ah, finally I see what you're getting at by talking about universes and size.  You're saying that the type of E-categories can be parametrized over three unrelated universes, for the types of objects, morphisms, and equalities respectively, and that the slice/comma construction doesn't act on such E-categories leaving all the universes fixed.  So it could either be an endomorphism of (in Coq notation) <code>ECat@{i j k}</code> with extra constraints <code>k &lt;= j &lt;= i</code>, or it could take input in <code>ECat@{i j k}</code> and yield output in <code>ECat@{max(i,j) max(j,k) k}</code>.</p>",
+        "id": 250160669,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1629486996
+    },
+    {
+        "content": "<p><span class=\"user-mention\" data-user-id=\"276092\">@Nathanael Arkor</span>  They are still equivalent. They just need some extra work, because the Hom-Setoids naturally live in different universes, so can't be linked via a natural isomorphism 'on the nose'. You first need to inject both into the same universe, then things go through.  Gory details near the end of <a href=\"https://agda.github.io/agda-categories/Categories.Adjoint.html\">this file</a> if you read Agda.</p>",
+        "id": 250160701,
+        "sender_full_name": "Jacques Carette",
+        "timestamp": 1629487016
+    },
+    {
+        "content": "<p><span class=\"user-mention\" data-user-id=\"276777\">@Mike Shulman</span> Exactly!</p>",
+        "id": 250160752,
+        "sender_full_name": "Jacques Carette",
+        "timestamp": 1629487055
+    },
+    {
+        "content": "<p>I suppose I would argue that one should <em>always</em> impose the constraint <code>k &lt;= j &lt;= i</code>.</p>",
+        "id": 250160791,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1629487082
+    },
+    {
+        "content": "<p>How could I have said this to make myself clearer? [I avoided Agda-specific lingo on purpose]</p>",
+        "id": 250160852,
+        "sender_full_name": "Jacques Carette",
+        "timestamp": 1629487098
+    },
+    {
+        "content": "<p>Well, I probably would have understood more quickly if you'd said it the way I did (-:</p>\n<blockquote>\n<p>...the type of E-categories can be parametrized over three unrelated universes, for the types of objects, morphisms, and equalities respectively, and that the slice/comma construction doesn't act on such E-categories leaving all the universes fixed.  So it could either be an endomorphism of (in Coq notation) <code>ECat@{i j k}</code> with extra constraints <code>k &lt;= j &lt;= i</code>, or it could take input in <code>ECat@{i j k}</code> and yield output in <code>ECat@{max(i,j) max(j,k) k}</code>.</p>\n</blockquote>\n<p>But I don't think you were deficient in clarity by not saying exactly this to start with.  Different people naturally think and phrase things in different ways, and bridging those gaps is why we communicate.  (-:</p>",
+        "id": 250161632,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1629487304
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276777\">Mike Shulman</span> <a href=\"#narrow/stream/229136-theory.3A-category.20theory/topic/Unwinding.20slice.2Fcomma.20'categories'/near/250160791\">said</a>:</p>\n<blockquote>\n<p>I suppose I would argue that one should <em>always</em> impose the constraint <code>k &lt;= j &lt;= i</code>.</p>\n</blockquote>\n<p>There's certainly a solid case to be made there, yes. It's both 1) too bad that it's really hard to actually say/do that, and 2) fascinating that almost all of category doesn't actually 'need' that.</p>",
+        "id": 250161658,
+        "sender_full_name": "Jacques Carette",
+        "timestamp": 1629487309
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"296322\">Jacques Carette</span> <a href=\"#narrow/stream/229136-theory.3A-category.20theory/topic/Unwinding.20slice.2Fcomma.20'categories'/near/250161658\">said</a>:</p>\n<blockquote>\n<p>too bad that it's really hard to actually say/do that</p>\n</blockquote>\n<p>Maybe in Agda, but not I think in Coq, where constraints on universes are inferred automatically and carried through everything.</p>",
+        "id": 250161784,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1629487377
+    },
+    {
+        "content": "<p>Oh, Agda infers them just fine! You just can't <strong>say</strong> that you have those extra constraints, i.e. <code>k &lt;= j &lt;= i</code>. You'll get the Agda-equivalent of <code>ECat@{max(i,j) max(j,k) k}</code> automatically. Can you say <code>k &lt;= j &lt;= i</code> in Coq?</p>",
+        "id": 250161996,
+        "sender_full_name": "Jacques Carette",
+        "timestamp": 1629487547
+    },
+    {
+        "content": "<p>you can specify constraints between universe levels in Coq, e.g.</p>\n<div class=\"codehilite\" data-code-language=\"Coq\"><pre><span></span><code><span class=\"kn\">Record</span> <span class=\"n\">ECat</span><span class=\"o\">@{</span> <span class=\"n\">i</span> <span class=\"n\">j</span> <span class=\"n\">k</span> <span class=\"o\">|</span> <span class=\"n\">i</span> <span class=\"o\">&lt;=</span> <span class=\"n\">j</span><span class=\"o\">,</span> <span class=\"n\">j</span> <span class=\"o\">&lt;=</span> <span class=\"n\">k</span> <span class=\"o\">}</span> <span class=\"o\">:=</span> <span class=\"o\">{</span> <span class=\"c\">(*to be filled *)</span> <span class=\"o\">}.</span>\n</code></pre></div>",
+        "id": 250163005,
+        "sender_full_name": "Kenji Maillard",
+        "timestamp": 1629488115
+    },
+    {
+        "content": "<p>I didn't know that!  We used to have to create constraints with manual hacks like <a href=\"https://github.com/HoTT/HoTT/blob/master/theories/Basics/Overture.v#L115\">this</a>.</p>",
+        "id": 250163177,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1629488214
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"296322\">Jacques Carette</span> <a href=\"#narrow/stream/229136-theory.3A-category.20theory/topic/Unwinding.20slice.2Fcomma.20'categories'/near/250161658\">said</a>:</p>\n<blockquote>\n<p>fascinating that almost all of category doesn't actually 'need' that.</p>\n</blockquote>\n<p>Of course, there's a substantial part of category theory that requires a strict inequality <code>j &lt; i</code>, namely the theory of small limits and colimits in locally small categories.  Of course you can define limits and colimits of any size in a category of any size, but things get significantly nicer when you're talking about categories that have limits and colimits of a size that can be indexed by their hom-sets.</p>",
+        "id": 250172950,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1629493836
+    },
+    {
+        "content": "<p>I haven't thought about how that generalizes to E-categories, e.g. do you need <code>k &lt; j &lt; i</code> or is <code>k &lt;= j &lt; i</code> enough, or even just <code>k &lt; i, j &lt; i</code> separately.</p>",
+        "id": 250172997,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1629493872
+    },
+    {
+        "content": "<p>As far as <a href=\"https://agda.github.io/agda-categories/Categories.Diagram.Limit.html\">agda is concerned</a>, a limit (i.e. all the data, not just the object) lives in the largest universe you name, of the ones involved in the category and the indexing category. I need to open up Agda to see where the limit object itself wants to live.</p>",
+        "id": 250181452,
+        "sender_full_name": "Jacques Carette",
+        "timestamp": 1629499977
+    },
+    {
+        "content": "<p>Right, but the point is that, for instance, to prove an adjoint functor theorem you need the categories involved to have limits of the size of their hom-sets, and in concrete examples this requires their type of objects to be one universe higher than that of their hom-sets.</p>",
+        "id": 250183228,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1629501602
+    },
+    {
+        "content": "<p>Jason did the AFT proof, and I'm having a difficult time reading the levels involved to know how to read off the right things.  Interestingly, it all revolves around... comma categories.</p>",
+        "id": 250186434,
+        "sender_full_name": "Jacques Carette",
+        "timestamp": 1629505029
+    }
+]

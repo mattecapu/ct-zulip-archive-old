@@ -1,0 +1,164 @@
+[
+    {
+        "content": "<p>Lately I've been learning about computability/recursion theory, and how it relates to propositional and first-order logic. I'm also aware that there are connections between computational complexity and logic, more specifically the theory of finite models of variants of first- and second-order logic (such as Fagin's theorem: \"the set of all properties expressible in existential second-order logic is precisely the complexity class NP\").</p>\n<p>I know nothing about categorical logic, but given that I'm loving everything I learn about logic, I'm interested in learning about it too. My question is: can I expect these links with complexity and computability to be approachable or at least expressible from the point of view of categorical logic? Or is the latter about completely different stuff?</p>",
+        "id": 192968148,
+        "sender_full_name": "Gabriel Goren",
+        "timestamp": 1586106171
+    },
+    {
+        "content": "<p>I think categorical descriptive complexity is very much a new area of research: as far as I'm aware, <em>The pebbling comonad in finite model theory</em> (<a href=\"https://arxiv.org/abs/1704.05124\" title=\"https://arxiv.org/abs/1704.05124\">https://arxiv.org/abs/1704.05124</a>) is one of the first forays into the area</p>",
+        "id": 192969399,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1586108196
+    },
+    {
+        "content": "<p>so this is very much an open question</p>",
+        "id": 192969403,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1586108204
+    },
+    {
+        "content": "<p>Yes, it's the Saint Graal of categorical computability</p>",
+        "id": 192969678,
+        "sender_full_name": "Matteo Capucci",
+        "timestamp": 1586108640
+    },
+    {
+        "content": "<p>I know the group studying Turing categories is trying to develop some complexity theory in that framework, but it's been a long time since I last checked the progress</p>",
+        "id": 192969729,
+        "sender_full_name": "Matteo Capucci",
+        "timestamp": 1586108680
+    },
+    {
+        "content": "<p>Yes, I think this is almost entirely an open question, that quite a lot of people are interested in. There's the Canadian approach with Turing categories, and there's a rival approach by Dusko Pavlovic, the \"monoidal computer\"</p>",
+        "id": 192972430,
+        "sender_full_name": "Jules Hedges",
+        "timestamp": 1586112676
+    },
+    {
+        "content": "<p>Capturing complexity theory categorically is really, really hard. I am not familiar with Turing categories but I am not a fan of the monoidal computer approach. It feels like complexity concepts have been translated to category theory, but in a way that does not give any categorical insight on what is happening. I see no clear advantage coming from using categories in that approach. This said, the question may even be unsolvable by state-of-the-art CT.  Complexity theory is highly non-compositional, and we are not able to answer even many super basic questions in complexity, nor to say much about the complexity of an algorithm looking at its parts. Given that these are the circumstances, and that (A)CT amounts to be the study of compositionality, at the moment I see very little room for categorical techniques in complexity</p>",
+        "id": 192973064,
+        "sender_full_name": "Fabrizio Genovese",
+        "timestamp": 1586113570
+    },
+    {
+        "content": "<p>That's a field with very few low hanging fruits and we really need a big breakthrough to make progress there, imho.</p>",
+        "id": 192973101,
+        "sender_full_name": "Fabrizio Genovese",
+        "timestamp": 1586113660
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"275901\">Jules Hedges</span> <a href=\"#narrow/stream/229199-basic-questions/topic/Categorical.20logic.20and.20CS/near/192972430\" title=\"#narrow/stream/229199-basic-questions/topic/Categorical.20logic.20and.20CS/near/192972430\">said</a>:</p>\n<blockquote>\n<p>Yes, I think this is almost entirely an open question</p>\n</blockquote>\n<p>Closed questions are <em>so</em> 20th Century.</p>",
+        "id": 192973282,
+        "sender_full_name": "Joachim Kock",
+        "timestamp": 1586113837
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276438\">Fabrizio Genovese</span> <a href=\"#narrow/stream/229199-basic-questions/topic/Categorical.20logic.20and.20CS/near/192973064\" title=\"#narrow/stream/229199-basic-questions/topic/Categorical.20logic.20and.20CS/near/192973064\">said</a>:</p>\n<blockquote>\n<p>Complexity theory is highly non-compositional</p>\n</blockquote>\n<p>I feel that there's some truth to this, but people have managed to make type systems which capture exactly the polynomial-time algorithms, which suggests some basic level of compositionality.</p>",
+        "id": 192976763,
+        "sender_full_name": "James Wood",
+        "timestamp": 1586118710
+    },
+    {
+        "content": "<p>Yes, it's very difficult to say if this means \"really non-compositional\" or \"compositional, but in a way we are in no way close to grasp at the moment\"</p>",
+        "id": 192979781,
+        "sender_full_name": "Fabrizio Genovese",
+        "timestamp": 1586123116
+    },
+    {
+        "content": "<p>a little bit tangential, but ive wondered before whether itd be possible to do like</p>",
+        "id": 192988858,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1586138543
+    },
+    {
+        "content": "<p>\"synthetic complexity theory\"</p>",
+        "id": 192988860,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1586138547
+    },
+    {
+        "content": "<p>in some kind of radically intensional setting</p>",
+        "id": 192988861,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1586138553
+    },
+    {
+        "content": "<p>where you can prove that two functions agree at all points, but you can also prove that they're non-equal, because they have different time complexities</p>",
+        "id": 192988871,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1586138581
+    },
+    {
+        "content": "<p>Thank you for all these very interesting answers! Based on them, I will try to turn the question around (or rather, focus on the last part of my original question).</p>\n<p>If describing complexity classes from a categorical perspective is hard and an open question, then I expect categorical logic to be about completely different stuff. That is, I expect it would be hard to capture categorically the aspects of traditional logic that have more or less clear correspondences with complexity classes. So, from that perspective, what is it that categorical logic <em>is</em> about, instead of those that? Maybe categorical logic is more about proof theory than about models, or something like that?</p>\n<p>(This is a super vague question and I feel that, therefore, it might be very hard to answer)</p>",
+        "id": 192993638,
+        "sender_full_name": "Gabriel Goren",
+        "timestamp": 1586145999
+    },
+    {
+        "content": "<p>It's also likely CT alone cannot capture complexity theory, and that we'll need more of an hybrid approach</p>",
+        "id": 193004848,
+        "sender_full_name": "Matteo Capucci",
+        "timestamp": 1586158898
+    },
+    {
+        "content": "<p>I'm each day more convinced this is the answer to many applications</p>",
+        "id": 193004879,
+        "sender_full_name": "Matteo Capucci",
+        "timestamp": 1586158914
+    },
+    {
+        "content": "<p><span class=\"user-mention\" data-user-id=\"278867\">@Gabriel Goren</span> Yes, categorical logic is kind of more about proofs than models, and it tends to be about logics that are much, much stronger than the ones that are used in descriptive complexity, in particular they tend to be higher order logics. It's not my field, but I'd say that the 2 main branches of categorical logic are (1) the study of internal logic of toposes, which is higher order intuitionistic logic, and (2) the other sort that has lots of fibrations in it, which builds up to intuitionistic type theory</p>",
+        "id": 193016865,
+        "sender_full_name": "Jules Hedges",
+        "timestamp": 1586165897
+    },
+    {
+        "content": "<blockquote>\n<p>Maybe categorical logic is more about proof theory than about models, or something like that?</p>\n</blockquote>\n<p>my understanding is that descriptive complexity theory is a branch of finite model theory, and finite model theory in particular has not been tackled in category theory to a significant extent</p>",
+        "id": 193030010,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1586174030
+    },
+    {
+        "content": "<p>though from what I've seen, there are a number of results in finite model theory that look like they could have a category theoretic flavour, if finite model theorists decided that was useful</p>",
+        "id": 193030118,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1586174079
+    },
+    {
+        "content": "<p>The field of <em>Implicit computational complexity</em> is concerned with finding programing languages / proof systems such that execution or cut-reduction lies in some complexity class. This is often done directly on the syntax, but there is some work by Martin Hofmann and Ugo Dal Lago that works towards using categorical definitions, though not quite getting to the level of having an axiomatic  presentation in CT. See, for instance, their paper \"Realizability models and implicit complexity\" <a href=\"https://www.tcs.ifi.lmu.de/mitarbeiter/martin-hofmann/publikationen-pdfs/j32-RealizabilityModelsImplicitComplexity.pdf\" title=\"https://www.tcs.ifi.lmu.de/mitarbeiter/martin-hofmann/publikationen-pdfs/j32-RealizabilityModelsImplicitComplexity.pdf\">https://www.tcs.ifi.lmu.de/mitarbeiter/martin-hofmann/publikationen-pdfs/j32-RealizabilityModelsImplicitComplexity.pdf</a> which considers various extensions of SMCCs with modalities that capture elementary and polynomial time.</p>",
+        "id": 193043370,
+        "sender_full_name": "Bob Atkey",
+        "timestamp": 1586180738
+    },
+    {
+        "content": "<p>I've been working on extending this work to dependent types.</p>",
+        "id": 193043409,
+        "sender_full_name": "Bob Atkey",
+        "timestamp": 1586180755
+    },
+    {
+        "content": "<p>There is interesting and suggestive work on _algebraic topology_ and complexity theory <a href=\"https://arxiv.org/pdf/1701.02302.pdf\" title=\"https://arxiv.org/pdf/1701.02302.pdf\">https://arxiv.org/pdf/1701.02302.pdf</a></p>",
+        "id": 193095264,
+        "sender_full_name": "Gershom",
+        "timestamp": 1586204124
+    },
+    {
+        "content": "<p>Wow!!</p>",
+        "id": 193095800,
+        "sender_full_name": "Jules Hedges",
+        "timestamp": 1586204330
+    },
+    {
+        "content": "<p>As a total outsider to both AT and complexity theory, it's easy and fun to daydream about the big conjectures being solved with some crazy topological machinery</p>",
+        "id": 193096162,
+        "sender_full_name": "Jules Hedges",
+        "timestamp": 1586204477
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276650\">Gershom</span> <a href=\"#narrow/stream/229199-learning.3A-basic.20questions/topic/Categorical.20logic.20and.20CS/near/193095264\" title=\"#narrow/stream/229199-learning.3A-basic.20questions/topic/Categorical.20logic.20and.20CS/near/193095264\">said</a>:</p>\n<blockquote>\n<p>There is interesting and suggestive work on _algebraic topology_ and complexity theory <a href=\"https://arxiv.org/pdf/1701.02302.pdf\" title=\"https://arxiv.org/pdf/1701.02302.pdf\">https://arxiv.org/pdf/1701.02302.pdf</a></p>\n</blockquote>\n<p>Woa, the idea seems really interesting</p>",
+        "id": 193098777,
+        "sender_full_name": "Fabrizio Genovese",
+        "timestamp": 1586205691
+    }
+]

@@ -1,0 +1,92 @@
+[
+    {
+        "content": "<p>Hi, <br>\ndoes anybody know about a category which looks like this : <br>\n-objects are natural numbers,  considered as finite sets (no order structure on them)<br>\n-a morphism between m and n is the number of ways we can place m identical objects in n identical  boxes<br>\nThis is similar to the simplex category. But with two differences:  objects do not carry an order structure and  we do not want to distinguish, for instance,  the morphism which places 3=°°° in 2= °°  via<br>\n °°    °<br>\n from that which acts as<br>\n°         °°<br>\nSo in this example Hom(°°°,°°)={°°°  ,  °°   °}<br>\nNotice also that accordingly, morphisms between m and n are not counted by the Vandermonde identity, but some variant of it (which I should work out). <br>\nCan someone also suggest an accesible paper which treats connections between elementary category theory and combinatorics (the field seems interesting, but I only found technical accounts). <br>\nI beg your pardon in advance if the question is uninteresting or ill posed, I am only a novice</p>",
+        "id": 238986724,
+        "sender_full_name": "Francesco Bilotta",
+        "timestamp": 1621179059
+    },
+    {
+        "content": "<p>I need to remember what \"a way to place m identical objects in n identical boxes\" really is, in terms of set theory.</p>",
+        "id": 239000465,
+        "sender_full_name": "John Baez",
+        "timestamp": 1621193166
+    },
+    {
+        "content": "<p>Can you describe it in terms of standard concepts like sets, functions, relations, equivalence classes, etc.?   Just saying things like \"it's similar to, but with two differences... we do not want to distinguish...\" is not enough for me.</p>",
+        "id": 239000510,
+        "sender_full_name": "John Baez",
+        "timestamp": 1621193245
+    },
+    {
+        "content": "<p>I'm sorry, I probably once knew what this concept was, but I don't right now.  (There are lots of similar concepts.)</p>",
+        "id": 239000523,
+        "sender_full_name": "John Baez",
+        "timestamp": 1621193281
+    },
+    {
+        "content": "<p>If I really understand what \"a way to place m identical objects in n identical boxes\", I'd probably have something to say about the category where this is a morphism from m to n.</p>",
+        "id": 239000595,
+        "sender_full_name": "John Baez",
+        "timestamp": 1621193349
+    },
+    {
+        "content": "<p>I think this is a quite gentle introduction to some ideas involving combinatorics and category theory:</p>\n<ul>\n<li>François Bergeron, Gilbert Labelle, and Pierre Leroux, <em><a href=\"http://bergeron.math.uqam.ca/wp-content/uploads/2013/11/book.pdf\">Introduction to the Theory of Species of Structure</a></em>.</li>\n</ul>",
+        "id": 239000707,
+        "sender_full_name": "John Baez",
+        "timestamp": 1621193460
+    },
+    {
+        "content": "<p>Hi Francesco,</p>\n<p>for an accessible paper treating some basic enumerative combinatorics from a categorical perspective, you could have a look at [Anders Claesson, <em>A species approach to Rota's twelvefold way</em> <a href=\"https://arxiv.org/abs/1903.11580]\">https://arxiv.org/abs/1903.11580]</a>. It's all about putting balls in boxes.</p>\n<p>For the relationship between posets, categories, face complex (simplicial complex) and nerve (simplicial set) (and also fat nerve (simplicial groupoid)), there is Appendix B of [Gálvez-Kock-Tonks, <em>Decomposition spaces in combinatorics</em>, <a href=\"https://arxiv.org/abs/1612.09225]\">https://arxiv.org/abs/1612.09225]</a>. Although there is a risk the paper itself will count as technical, the appendix is supposed to be elementary.</p>\n<p>Regarding the category you ask for, I think it is not easy to get, and maybe it does not exist. If I understand you correctly, the hom set hom(m,n) should be the set of isoclasses of maps m -&gt; n (where an isomorphism between two maps is a pair consisting of an isomorphism between the domains and an isomorphism beteween the codomains), so that hom(3,2) would have 2 elements instead of 8. But then I think there is no longer any well-defined composition law. (If something like this is needed, it might be easier to obtain as a category object internal to groupoids, starting with the fat nerve of the category of finite sets, and modifying it a bit. The fat nerve is defined just as the nerve, but instead of building a simplicial set whose set of n-simplices is the set Fun([n],C), it is a simplicial groupoid whose groupoid of n-simplices is Map([n],C), consisting of functors [n]-&gt;C and their invertible natural transformations.)</p>\n<p>Regarding a category of sequences of arrows, as already mentioned there is the free category on the underlying directed graph. As you observe this does not take into account the category structure. There is a different object which does (and as you suggested it has the sequence of composable arrows as objects instead of as morphisms), namely the category of elements of the nerve of the category. Its objects are the composable sequences, and a morphism between two sequences of length n and m is a map a:n-&gt;m in Delta, such that the length-m sequence composed according to the map a is equal to the length-n sequence. There is an extensive introductory nlab entry on the category of elements.</p>",
+        "id": 239002031,
+        "sender_full_name": "Joachim Kock",
+        "timestamp": 1621194953
+    },
+    {
+        "content": "<p>Thanks a lot to both for valuable comments and references: I will definitely look at everything. The notion of morphism I was searching is precisely that which <span class=\"user-mention\" data-user-id=\"276625\">@Joachim Kock</span>  explains, sadly I do not know a combinatorics name for it. Maybe it may help also to think, pictorially, a morphism between m and n as the isomorphism class of a depth one forest with m leaves and n roots.<br>\n Anyhow, for my application it is probably better to drop the \"up to isomorphism\", and simply consider morphisms of finite sets:<br>\nI am trying, mostly for fun, to categorify the notion of arrangement, in Spencer-Brown's Laws of Form, after having read a bit of Kauffman's work on it. And the thing is that an arrangement is basically a  (finite) number of nonintersecting closed curves in the plane. Then I thought about the above putative category, where a composable sequence of morphisms should correspond precisely to an arrangement. Dropping the \"up to isomorphism\" should not be much damage. <br>\nThis is also what actually links my two questions. <br>\nThanks again.</p>",
+        "id": 239003475,
+        "sender_full_name": "Francesco Bilotta",
+        "timestamp": 1621196412
+    },
+    {
+        "content": "<p>It may help to think of the balls as identical bosons and the boxes as eigenstates with the same eigenvalue.</p>",
+        "id": 239067482,
+        "sender_full_name": "Javier Prieto",
+        "timestamp": 1621248603
+    },
+    {
+        "content": "<p>Thanks! Sadly I do not know much fundamental physics, just some rudiments of quantum mechanics. So I should work a bit. Anyway do you know where I may find some category theoretic treatment of (some aspects) of your idea?</p>",
+        "id": 239068606,
+        "sender_full_name": "Francesco Bilotta",
+        "timestamp": 1621249223
+    },
+    {
+        "content": "<p>There's a vast literature on categorical quantum mechanics, but I don't think that would be useful here. I mostly pointed out the analogy in case you already had some intuition about the physics side of things, but if that's not the case then trying to attack the problem from this angle might be unnecessarily roundabout-y and confusing.</p>",
+        "id": 239074812,
+        "sender_full_name": "Javier Prieto",
+        "timestamp": 1621252599
+    },
+    {
+        "content": "<p>At the same time it may be linked, the number of putative \"morphisms\" in my putative \"category \" is counted via the Gaussian Binomial Coefficient, which is the q-analog of the binomial coefficient... I remember seeing q-analogs mentioned in a coruse where quantum groups where mentioned. Anyway, without expertise this is extremely vague</p>",
+        "id": 239097938,
+        "sender_full_name": "Francesco Bilotta",
+        "timestamp": 1621261449
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276060\">Javier Prieto</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/A.20category.20similar.20to.20the.20simplex.20category/near/239067482\">said</a>:</p>\n<blockquote>\n<p>It may help to think of the balls as identical bosons and the boxes as eigenstates with the same eigenvalue.</p>\n</blockquote>\n<p>I don't think that's going to help figure out how to compose the morphisms that Francesco was trying to work with.</p>",
+        "id": 239200795,
+        "sender_full_name": "John Baez",
+        "timestamp": 1621316317
+    },
+    {
+        "content": "<p><span class=\"user-mention\" data-user-id=\"276625\">@Joachim Kock</span> said:</p>\n<blockquote>\n<p>Regarding the category you ask for, I think it is not easy to get, and maybe it does not exist. If I understand you correctly, the hom set hom(m,n) should be the set of isoclasses of maps m -&gt; n (where an isomorphism between two maps is a pair consisting of an isomorphism between the domains and an isomorphism beteween the codomains), so that hom(3,2) would have 2 elements instead of 8. But then I think there is no longer any well-defined composition law.</p>\n</blockquote>",
+        "id": 239200830,
+        "sender_full_name": "John Baez",
+        "timestamp": 1621316379
+    },
+    {
+        "content": "<p>Oh!  Yes, if that's what Francesco was talking about, you're right: you can't compose these things.</p>",
+        "id": 239200901,
+        "sender_full_name": "John Baez",
+        "timestamp": 1621316425
+    }
+]

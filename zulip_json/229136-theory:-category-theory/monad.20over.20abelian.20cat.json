@@ -1,0 +1,152 @@
+[
+    {
+        "content": "<p>Is the Kleisli category of a monad over an abelian category abelian? We can assume the monad is carried by an additive endofunctor.</p>",
+        "id": 215714550,
+        "sender_full_name": "Matteo Capucci",
+        "timestamp": 1604584808
+    },
+    {
+        "content": "<p>It's always the kernels/equalizers that are difficult to construct in this situation</p>",
+        "id": 215843677,
+        "sender_full_name": "[Mod] Morgan Rogers",
+        "timestamp": 1604668521
+    },
+    {
+        "content": "<p>Is it even true for the <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>R</mi><mo>⊗</mo><mo>−</mo></mrow><annotation encoding=\"application/x-tex\">R \\otimes -</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.76666em;vertical-align:-0.08333em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.00773em;\">R</span><span class=\"mspace\" style=\"margin-right:0.2222222222222222em;\"></span><span class=\"mbin\">⊗</span><span class=\"mspace\" style=\"margin-right:0.2222222222222222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.66666em;vertical-align:-0.08333em;\"></span><span class=\"mord\">−</span></span></span></span> monad on Ab (or on k-Vect for a k-algebra R)? Kleisli categories are categories of free algebras, and the free R-modules usually aren't closed under much of anything, and I don't there is a \"free-ification\" functor to fix that.</p>",
+        "id": 215847148,
+        "sender_full_name": "Reid Barton",
+        "timestamp": 1604670346
+    },
+    {
+        "content": "<p>I misread the question as being about the category of algebras at first, and that has much better chances to be abelian.</p>",
+        "id": 215847311,
+        "sender_full_name": "Reid Barton",
+        "timestamp": 1604670431
+    },
+    {
+        "content": "<p>They are often closed under finite biproducts, right? Hence my comment about kernels being the hard part</p>",
+        "id": 215848977,
+        "sender_full_name": "[Mod] Morgan Rogers",
+        "timestamp": 1604671254
+    },
+    {
+        "content": "<p>Kernels and quotients and, once you have them, exactness</p>",
+        "id": 215849834,
+        "sender_full_name": "Reid Barton",
+        "timestamp": 1604671671
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"277473\">[Mod] Morgan Rogers</span> <a href=\"#narrow/stream/229136-theory.3A-category.20theory/topic/monad.20over.20abelian.20cat/near/215843677\">said</a>:</p>\n<blockquote>\n<p>It's always the kernels/equalizers that are difficult to construct in this situation</p>\n</blockquote>\n<p>I guess <span aria-label=\"thinking\" class=\"emoji emoji-1f914\" role=\"img\" title=\"thinking\">:thinking:</span>  I was hoping some general abstract nonsense would come to the rescue</p>",
+        "id": 215919741,
+        "sender_full_name": "Matteo Capucci",
+        "timestamp": 1604707891
+    },
+    {
+        "content": "<p>Then I'll think I'll go down with the computations as soon as I have the guts to do them</p>",
+        "id": 215919768,
+        "sender_full_name": "Matteo Capucci",
+        "timestamp": 1604707921
+    },
+    {
+        "content": "<p>kleisli categories tend to be rather ill-behaved</p>",
+        "id": 215920132,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1604708317
+    },
+    {
+        "content": "<p>This is what people always say, but then they don't give concrete examples of what goes wrong, so everyone has to bang their heads against the same wall to find out if they're ill-behaved in the specific way they're interested in.</p>",
+        "id": 215948833,
+        "sender_full_name": "[Mod] Morgan Rogers",
+        "timestamp": 1604745276
+    },
+    {
+        "content": "<p>Well from the perspective of someone who would make that statement, basically everything goes wrong, and almost anything you try will be a counterexample, unless there's something very special about it.</p>",
+        "id": 215952664,
+        "sender_full_name": "Reid Barton",
+        "timestamp": 1604751801
+    },
+    {
+        "content": "<p>But I guess if you wanted to point a finger at one \"root cause\" of what goes wrong, it would be the lack of colimits, specifically (reflexive) coequalizers. Because every algebra for a monad is a reflexive coequalizer of free algebras and so, in a sense, if you repair this lack of colimits, you turn the Kleisli category into the category of algebras, which is a lot better behaved with respect to inheriting (co)limits from the original category.</p>",
+        "id": 215952771,
+        "sender_full_name": "Reid Barton",
+        "timestamp": 1604751973
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276480\">Reid Barton</span> <a href=\"#narrow/stream/229136-theory.3A-category.20theory/topic/monad.20over.20abelian.20cat/near/215952664\">said</a>:</p>\n<blockquote>\n<p>Well from the perspective of someone who would make that statement, basically everything goes wrong, and almost anything you try will be a counterexample, unless there's something very special about it.</p>\n</blockquote>\n<p>In trying to build \"nice\" Kleisli categories myself, I've found that if the underlying category has products and the functor carrying the monad preserves them, then the Kleisli category has products; more generally, the free functor in the Kleisli adjunction preserves any limits which the monad preserves. This is certainly less bad than your claim seems to imply <span aria-label=\"stuck out tongue wink\" class=\"emoji emoji-1f61c\" role=\"img\" title=\"stuck out tongue wink\">:stuck_out_tongue_wink:</span></p>",
+        "id": 215962732,
+        "sender_full_name": "[Mod] Morgan Rogers",
+        "timestamp": 1604767195
+    },
+    {
+        "content": "<p>The free functor preserves limits, but most diagrams in the Kleisli category that you might want to take a limit over aren't in the image of the free functor, and those ones might not have limits.</p>",
+        "id": 215962803,
+        "sender_full_name": "Reid Barton",
+        "timestamp": 1604767279
+    },
+    {
+        "content": "<p>And the same for colimits, without assumptions on the monad. As you noted earlier, this means coproducts are fine because they don't have any maps which could fail to be in the image of the free functor.</p>",
+        "id": 215962880,
+        "sender_full_name": "Reid Barton",
+        "timestamp": 1604767379
+    },
+    {
+        "content": "<p>I just don't think \"quotients of free modules might not be free\" is some esoteric, hidden knowledge. <span aria-label=\"shrug\" class=\"emoji emoji-1f937\" role=\"img\" title=\"shrug\">:shrug:</span></p>",
+        "id": 215962978,
+        "sender_full_name": "Reid Barton",
+        "timestamp": 1604767513
+    },
+    {
+        "content": "<p>But yeah, it would be certainly nice if the nLab points out that Kleisli categories typically lack coequalizers because of examples like this one, if it doesn't already.</p>",
+        "id": 215963051,
+        "sender_full_name": "Reid Barton",
+        "timestamp": 1604767582
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"277473\">[Mod] Morgan Rogers</span> <a href=\"#narrow/stream/229136-theory.3A-category.20theory/topic/monad.20over.20abelian.20cat/near/215962732\">said</a>:</p>\n<blockquote>\n<p>In trying to build \"nice\" Kleisli categories myself, I've found that if the underlying category has products and the functor carrying the monad preserves them, then the Kleisli category has products; more generally, the free functor in the Kleisli adjunction preserves any limits which the monad preserves. This is certainly less bad than your claim seems to imply <span aria-label=\"stuck out tongue wink\" class=\"emoji emoji-1f61c\" role=\"img\" title=\"stuck out tongue wink\">:stuck_out_tongue_wink:</span></p>\n</blockquote>\n<p>which examples of a product preserving free functor do you have in mind? if T1=1, then TX = X for every X generated by 1, since the free functor surely preserves all colimits. so the only monad on Set that preserves products is the identity. and since U is a subobject of 1 iff its diagonal is an iso, T must preserve the subobjects of 1 as well, so it must be the identity on everything generated by the subobjects of 1... oh i see you are talking about monads over abelian cats. but there the products piggyback on the coproducts. do you have a nice example where the product is preserved and it isn't a biproduct?</p>",
+        "id": 215992929,
+        "sender_full_name": "dusko",
+        "timestamp": 1604818414
+    },
+    {
+        "content": "<p>It's very easy to make monads on Set boring, indeed. But any geometric morphism between toposes induces a monad on the codomain topos, and I was curious what one could say about the Kleisli categories of such monads; I suspect it's more than I have discovered, but I haven't gotten much further than my observations above in proving as much.</p>",
+        "id": 216017429,
+        "sender_full_name": "[Mod] Morgan Rogers",
+        "timestamp": 1604857828
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"277473\">[Mod] Morgan Rogers</span> <a href=\"#narrow/stream/229136-theory.3A-category.20theory/topic/monad.20over.20abelian.20cat/near/216017429\">said</a>:</p>\n<blockquote>\n<p>It's very easy to make monads on Set boring, indeed. But any geometric morphism between toposes induces a monad on the codomain topos, and I was curious what one could say about the Kleisli categories of such monads; I suspect it's more than I have discovered, but I haven't gotten much further than my observations above in proving as much.</p>\n</blockquote>\n<p>why boring? since the surjective-injective factorization of a geometric morphism goes through the category of coalgebras for the comonad induced by the geometric morphism, the monad on the other side should give the topology with respect to which surjection part is a localic topos. it sounds like following your idea through might give a handy tool :)</p>",
+        "id": 216178598,
+        "sender_full_name": "dusko",
+        "timestamp": 1604993037
+    },
+    {
+        "content": "<p>incidentally, FWIW,  the relation between the monad and the comonad on the two sides of the same adjunction is quite tight in general, not just wrt geometric morphisms: <a href=\"https://arxiv.org/abs/2004.07353\">https://arxiv.org/abs/2004.07353</a></p>",
+        "id": 216179083,
+        "sender_full_name": "dusko",
+        "timestamp": 1604993752
+    },
+    {
+        "content": "<p>(i don't mean to plug my own work, but this is such an easy and general tool for such questions that it would be silly to consider it anyone's \"own\" work, and i certainly don't.)</p>",
+        "id": 216179207,
+        "sender_full_name": "dusko",
+        "timestamp": 1604993893
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"294557\">dusko</span> <a href=\"#narrow/stream/229136-theory.3A-category.20theory/topic/monad.20over.20abelian.20cat/near/216178598\">said</a>:</p>\n<blockquote>\n<p><span class=\"user-mention silent\" data-user-id=\"277473\">[Mod] Morgan Rogers</span> <a href=\"#narrow/stream/229136-theory.3A-category.20theory/topic/monad.20over.20abelian.20cat/near/216017429\">said</a>:</p>\n<blockquote>\n<p>It's very easy to make monads on Set boring, indeed.</p>\n</blockquote>\n<p>why boring?</p>\n</blockquote>\n<p>I meant that due to the observation you made, the monad on Set induced by any geometric morphism is the identity (unless the domain topos is degenerate, in which case we end up with the monad sending everything to <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>1</mn></mrow><annotation encoding=\"application/x-tex\">1</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.64444em;vertical-align:0em;\"></span><span class=\"mord\">1</span></span></span></span>)</p>",
+        "id": 216197417,
+        "sender_full_name": "[Mod] Morgan Rogers",
+        "timestamp": 1605006876
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"294557\">dusko</span> <a href=\"#narrow/stream/229136-theory.3A-category.20theory/topic/monad.20over.20abelian.20cat/near/216179083\">said</a>:</p>\n<blockquote>\n<p>incidentally, FWIW,  the relation between the monad and the comonad on the two sides of the same adjunction is quite tight in general, not just wrt geometric morphisms: <a href=\"https://arxiv.org/abs/2004.07353\">https://arxiv.org/abs/2004.07353</a></p>\n</blockquote>\n<p>I'll check it out in the future! Thanks for the reference!</p>",
+        "id": 216197513,
+        "sender_full_name": "[Mod] Morgan Rogers",
+        "timestamp": 1605006956
+    },
+    {
+        "content": "<p><span class=\"user-mention\" data-user-id=\"294557\">@dusko</span> That is a beautiful pair of observations on page 71 of your article you just mentioned, that continuous maps of topological spaces and maps of sets are the same thing as adjunctions betwen the appropriate lattices!</p>",
+        "id": 216325980,
+        "sender_full_name": "Peter Arndt",
+        "timestamp": 1605088799
+    }
+]

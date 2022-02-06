@@ -1,0 +1,104 @@
+[
+    {
+        "content": "<p>I have a new volunteer job working for <span class=\"user-mention\" data-user-id=\"276143\">@David Tanzer</span> and <span class=\"user-mention\" data-user-id=\"275920\">@John Baez</span> at the Azimuth Project. I've been tasked to look at modeling epidemiology. Honestly, I've felt overwhelmed, but then I reflected on the mathematical talent in this community. ACT - compositionality -  stochastic differential equations - open systems like Petri networks - and I chilled out. <br>\nI attended a colloquium at Sonoma State U about a mathematician who helped epidemiologist model SARS. I was amazed at how simple the useful math was. <br>\nThis is a long term project that has already been going on for ten years, but needs to be re-energized because because of the Coronavirus. I think this is a particularly good area to do applied Petri net research.</p>",
+        "id": 197865483,
+        "sender_full_name": "Daniel Geisler",
+        "timestamp": 1589744334
+    },
+    {
+        "content": "<p>Thanks <span class=\"user-mention\" data-user-id=\"276867\">@Daniel Geisler</span> for starting this conversation here.   For more background, see this <a href=\"https://forum.azimuthproject.org/discussion/2510/petri-nets-at-azimuth-in-a-new-context\">strategy posting</a> on the Forum, where I propose a focus to investigate  Petri nets in the 'Corona Age.'</p>",
+        "id": 197883705,
+        "sender_full_name": "David Tanzer",
+        "timestamp": 1589770499
+    },
+    {
+        "content": "<p>Part of this involves a general suggestion for research exploration:   to search for new applications of stochastic Petri nets to stochastic epidemiology.   Ditto for deterministic/continuous Petri nets and deterministic epidemiology.  That might become cool math for the social planet, Azimuth math.</p>",
+        "id": 197883816,
+        "sender_full_name": "David Tanzer",
+        "timestamp": 1589770748
+    },
+    {
+        "content": "<p>Along these lines, I have a <a href=\"https://forum.azimuthproject.org/discussion/2512/petri-nets-research-concept-a\">suggestion</a> to explore whether the compositional framework for open Petri nets  developed by <span class=\"user-mention\" data-user-id=\"275920\">@John Baez</span>, <span class=\"user-mention\" data-user-id=\"275953\">@Blake Pollard</span> and <span class=\"user-mention\" data-user-id=\"276037\">@Jade Master</span> can apply in any interesting way to the composition of a compartmental network for a global pandemic out of regional subnets.</p>",
+        "id": 197888581,
+        "sender_full_name": "David Tanzer",
+        "timestamp": 1589776904
+    },
+    {
+        "content": "<p>Currently the worlds most powerful supercomputer is all the home computers tied together with the <a href=\"http://foldingathome.org\">folding at home org</a> looking to find the structure of COVID-19.</p>",
+        "id": 197889147,
+        "sender_full_name": "Daniel Geisler",
+        "timestamp": 1589777998
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276143\">David Tanzer</span> <a href=\"#narrow/stream/229156-practice.3A-applied.20ct/topic/epidemiology.20and.20Petri.20nets/near/197888581\">said</a>:</p>\n<blockquote>\n<p>Along these lines, I have a <a href=\"https://forum.azimuthproject.org/discussion/2512/petri-nets-research-concept-a\">suggestion</a> to explore whether the compositional framework for open Petri nets  developed by <span class=\"user-mention silent\" data-user-id=\"275920\">John Baez</span>, <span class=\"user-mention silent\" data-user-id=\"275953\">Blake Pollard</span> and <span class=\"user-mention silent\" data-user-id=\"276037\">Jade Master</span> can apply in any interesting way to the composition of a compartmental network for a global pandemic out of regional subnets.</p>\n</blockquote>\n<p>Certainly the framework is applicable.  The ones I've looked at, like the SIRS model, fit nicely into the \"Petri nets with rates\" framework that Blake and I wrote about, without any generalization.   For others one might need to generalize the framework to cover whatever dynamics people like to use in these compartmental models.   For example if the rate of infection was proportional to the number of infected people to the 1.5 power times the number of susceptible people, the fact that 1.5 is not an integer takes you out of the realm of \"Petri nets with rates\".</p>",
+        "id": 197992800,
+        "sender_full_name": "John Baez",
+        "timestamp": 1589834440
+    },
+    {
+        "content": "<p><span class=\"user-mention\" data-user-id=\"275927\">@James Fairbanks</span>  and collaborators have implemented open Petri nets and used them to generate ODE solvers for the SIR and other epidemiology models, e.g., see this <a href=\"https://aske.gtri.gatech.edu/docs/latest/examples/html/malaria.html#Semantic-Modeling-Software-Demo\">notebook</a>. This work was done before COVID-19, but needless to say there is a pressing new interest in epidemiology!</p>",
+        "id": 197998335,
+        "sender_full_name": "Evan Patterson",
+        "timestamp": 1589837615
+    },
+    {
+        "content": "<p>I think <span class=\"user-mention\" data-user-id=\"275927\">@James Fairbanks</span> was doing something along those lines (SEIRD=Susceptible, Exposed, Infected, Recovered, Dead) in SemanticModels.jl Julia library. <a href=\"https://github.com/jpfairbanks/SemanticModels.jl/pull/241/files\">https://github.com/jpfairbanks/SemanticModels.jl/pull/241/files</a><br>\nIt definitely would be interesting to build an 'open' SEIRD (or simpler) regional model (county, state, country) where the parameters (rate constants, initial conditions, total number of people, probably some other stuff) are estimated from local data. It already sounds like you need someone who actually knows a bit about epidemiological modeling for this parameter estimation. The 'open' ness are then the flows between regions: susceptible people traveling, infected people traveling, less dead people traveling. This steps outside the setup John and I developed for open reaction networks, as two regional susceptible populations connected by an interface shouldn't get identified under composition, you just want to model the flows. It is more like you have a transportation network of one type which has some probabilities/rates on the edges and this determines the additional flows or deviations from the regional SEIRD models. To me it sounds more like a big wiring diagram coming from transit data and each 'hole' or component is a regional SEIRD model. Then you'd want to do all kind of mode switching on both as interventions are implemented and this sounds like something calling for David and David Spivak and Jaz Myers mode-dependent dynamical systems setup.</p>",
+        "id": 197998907,
+        "sender_full_name": "Blake Pollard",
+        "timestamp": 1589837991
+    },
+    {
+        "content": "<p>Yeah we did the open network approach to connect multiple cities/countries too. It totally works. We submitted a nonproceedings track talk for the ACT conference</p>",
+        "id": 197999568,
+        "sender_full_name": "James Fairbanks",
+        "timestamp": 1589838413
+    },
+    {
+        "content": "<p>Great!</p>",
+        "id": 198000300,
+        "sender_full_name": "John Baez",
+        "timestamp": 1589838904
+    },
+    {
+        "content": "<p>Any idea where to get a global set of COVIDS-19 data I can use for a Petri net simulation?</p>",
+        "id": 198002133,
+        "sender_full_name": "Daniel Geisler",
+        "timestamp": 1589840115
+    },
+    {
+        "content": "<p>I'm not an expert on this stuff <em>at all</em>, but here's a tweet about COVID-19 data:</p>\n<p><a href=\"https://twitter.com/MaxCRoser/status/1262152381153841158\">https://twitter.com/MaxCRoser/status/1262152381153841158</a></p>\n<div class=\"inline-preview-twitter\"><div class=\"twitter-tweet\"><a href=\"https://twitter.com/MaxCRoser/status/1262152381153841158\"><img class=\"twitter-avatar\" src=\"https://pbs.twimg.com/profile_images/1253298247222939649/SoK3GsLv_normal.jpg\"></a><p>*Testing for COVID-19*\n\nThe only global database on testing for COVID19 is maintained by us at Our World in Data.\n\nYou find the regularly updated data, several visualizations and detailed descriptions of the sources here <a href=\"https://t.co/Ioa2q2rKLN\">https://ourworldindata.org/coronavirus-testing</a></p><span>- Max Roser (@MaxCRoser)</span></div></div>",
+        "id": 198002322,
+        "sender_full_name": "John Baez",
+        "timestamp": 1589840257
+    },
+    {
+        "content": "<p>I don't know if what he's saying is true, but you can at least look at what he's got.</p>",
+        "id": 198002388,
+        "sender_full_name": "John Baez",
+        "timestamp": 1589840286
+    },
+    {
+        "content": "<p>A couple of sites I've run into with data (haven't looked closely):<br>\n<a href=\"https://covid19.healthdata.org/\">https://covid19.healthdata.org/</a>    - US and other countries<br>\n<a href=\"https://covidtracking.com\">https://covidtracking.com</a>                - just US</p>",
+        "id": 198007429,
+        "sender_full_name": "Rich Hilliard",
+        "timestamp": 1589844293
+    },
+    {
+        "content": "<ul>\n<li>Maia Martcheva, An Introduction to Mathematical Epidemiology, Springer Texts in Applied Mathematics, Volume 61, 2015.</li>\n</ul>\n<blockquote>\n<p>This book is an introductory text to the methods and tools that are nowadays widely used an accepted in the mathematical epidemiology literature.   It is intended to start from a beginner level and accelerate to research level.<br>\n...<br>\nThis textbook is a comprehensive, self-contained introduction to the mathematical modeling and analysis of infectious diseases.   It includes model building, fitting to data, local and global analysis techniques.  Various types of deterministic dynamical models are considered: ordinary differential equation models, delay-differential equation models, difference equation models, age-structured PDE models and diffusion models.   It includes various techniques for the computation of the basis reproduction number as well as approaches to the epidemiological interpretation of the reproduction number.</p>\n</blockquote>\n<p>It's clearly written and gives a survey of the landscape.   Caveat:  it doesn't cover any stochastic models.</p>",
+        "id": 204176813,
+        "sender_full_name": "David Tanzer",
+        "timestamp": 1594970275
+    },
+    {
+        "content": "<p>Chapters:</p>\n<p>Introduction to Epidemic Modeling<br>\nThe SIR Model with Demography: General Properties of Planar Systems<br>\nVector-Borne Diseases<br>\nTechniques for Computing R0<br>\nFitting Models to Data<br>\nAnalysis of Complex ODE Epidemic Models: Global Stability<br>\nMultistrain Disease Dynamics<br>\nControl Strategies<br>\nEcological Context of Epidemiology<br>\nZoonotic Disease, Avian Influenza, and Nonautonomous Models<br>\nAge-Structured Epidemic Models<br>\nClass-Age Structured Epidemic Models<br>\nImmuno-Epidemiological Modeling<br>\nSpatial Heterogeneity in Epidemiological Models<br>\nDiscrete Epidemic Models</p>",
+        "id": 204176876,
+        "sender_full_name": "David Tanzer",
+        "timestamp": 1594970311
+    },
+    {
+        "content": "<p>Includes substantive problem sets.</p>",
+        "id": 204176889,
+        "sender_full_name": "David Tanzer",
+        "timestamp": 1594970329
+    }
+]

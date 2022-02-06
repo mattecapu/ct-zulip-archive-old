@@ -1,0 +1,50 @@
+[
+    {
+        "content": "<p>Hello all! This is the thread of discussion for the talk of Vladimir Zamdzhiev, \"Computational Adequacy for Substructural Lambda Calculi\".<br>\nDate and time: Friday July 10, 16:40 UTC.<br>\nZoom meeting: <a href=\"https://mit.zoom.us/j/7488874897\">https://mit.zoom.us/j/7488874897</a><br>\nYouTube live stream: <a href=\"https://www.youtube.com/watch?v=EVNjVmjJtrs&amp;list=PLCOXjXDLt3pZDHGYOIqtg1m1lLOURjl1Q\">https://www.youtube.com/watch?v=EVNjVmjJtrs&amp;list=PLCOXjXDLt3pZDHGYOIqtg1m1lLOURjl1Q</a></p>\n<div class=\"youtube-video message_inline_image\"><a data-id=\"EVNjVmjJtrs\" href=\"https://www.youtube.com/watch?v=EVNjVmjJtrs&amp;list=PLCOXjXDLt3pZDHGYOIqtg1m1lLOURjl1Q\"><img src=\"https://i.ytimg.com/vi/EVNjVmjJtrs/default.jpg\"></a></div>",
+        "id": 202619820,
+        "sender_full_name": "Paolo Perrone",
+        "timestamp": 1593635092
+    },
+    {
+        "content": "<p>Hello all. Please note the \"new\" Zoom address: <a href=\"https://mit.zoom.us/j/7488874897\">https://mit.zoom.us/j/7488874897</a></p>",
+        "id": 203519867,
+        "sender_full_name": "Paolo Perrone",
+        "timestamp": 1594394459
+    },
+    {
+        "content": "<p>The talk will start in 10 minutes! <a href=\"https://mit.zoom.us/j/7488874897\">https://mit.zoom.us/j/7488874897</a></p>",
+        "id": 203528651,
+        "sender_full_name": "Paolo Perrone",
+        "timestamp": 1594398622
+    },
+    {
+        "content": "<p>hi @Vladimir, the question I had was to do with the fact that whenever you have recursion, you already have lost your logical Curry-Howard connection, as every type needs to be inhabited, so the logic is inconsistent.(this was the traditional view, spelled out by Gordon Plotkin in his 1993 LICS invited talk) so the argument in your paper seems to me a bit back to front when you say<br>\n\"We also show, under basic assumptions, that interpreting lambda abstractions via a monoidal closed structure (a popular method for linear type systems) necessarily leads to degenerate and inadequate models for call-by-value affine type systems\". there's nothing degenerate and inadequate about monoidal closed structure, it's the non-terminating object that causes the problem, which it already caused in the intuitionistic setting.</p>",
+        "id": 203543231,
+        "sender_full_name": "Valeria de Paiva",
+        "timestamp": 1594406497
+    },
+    {
+        "content": "<p>Video here!<br>\n<a href=\"https://www.youtube.com/watch?v=rcBg24AjWWk&amp;list=PLCOXjXDLt3pYot9VNdLlZqGajHyZUywdI\">https://www.youtube.com/watch?v=rcBg24AjWWk&amp;list=PLCOXjXDLt3pYot9VNdLlZqGajHyZUywdI</a></p>\n<div class=\"youtube-video message_inline_image\"><a data-id=\"rcBg24AjWWk\" href=\"https://www.youtube.com/watch?v=rcBg24AjWWk&amp;list=PLCOXjXDLt3pYot9VNdLlZqGajHyZUywdI\"><img src=\"https://i.ytimg.com/vi/rcBg24AjWWk/default.jpg\"></a></div>",
+        "id": 203558521,
+        "sender_full_name": "Paolo Perrone",
+        "timestamp": 1594415670
+    },
+    {
+        "content": "<p>Hi Valeria,</p>\n<p>The degeneration in the categorical model is caused by the combination of the following:</p>\n<ol>\n<li>Weakening</li>\n<li>Recursion</li>\n<li>Interpreting lambda abstractions via monoidal closure</li>\n</ol>\n<p>This is proven in my paper. If you take any two of the above, then it is possible to construct non-degenerate models. In particular, there are adequate models for linear type systems with recursion where lambda abstractions are interpreted by monoidal closure. I list several such examples in my paper.</p>\n<p>But I see how what I wrote in the abstract can be a little confusing. I will reword it to:</p>\n<p>\"We also show, under basic assumptions, that interpreting lambda abstractions via a monoidal closed structure (a popular method for linear type systems) necessarily leads to degenerate and inadequate models for call-by-value affine type systems <strong>with recursion</strong>.\"</p>\n<p>Hopefully this should clear any confusion. Thanks for the feedback!</p>",
+        "id": 203653931,
+        "sender_full_name": "Vladimir Zamdzhiev",
+        "timestamp": 1594576783
+    },
+    {
+        "content": "<p>Hi Vladimir, thanks! the rewriting of the sentence already improves things for me! But I don't think you can have non-degenerate models of Weakening and Recursion. Recursion and a totally linear system work together for some version of \"work together\" as in the thesis of Torben Brauner (<a href=\"http://citeseerx.ist.psu.edu/viewdoc/download;jsessionid=33C5FEC7DFE2B8A62B235D53BC6913E5?doi=10.1.1.71.7991&amp;rep=rep1&amp;type=pdf\">http://citeseerx.ist.psu.edu/viewdoc/download;jsessionid=33C5FEC7DFE2B8A62B235D53BC6913E5?doi=10.1.1.71.7991&amp;rep=rep1&amp;type=pdf</a>,  <a href=\"https://www.seas.upenn.edu/~sweirich/types/archive/1995/msg00375.html\">https://www.seas.upenn.edu/~sweirich/types/archive/1995/msg00375.html</a>), but this is a kind of a degenerate way too, as the whole of domain theory works by moving into a logic that is inconsistent: every type needs to be inhabited, as the non-terminating element is an element of every type. But  I haven't read your paper carefully enough, I will check it.</p>",
+        "id": 203665521,
+        "sender_full_name": "Valeria de Paiva",
+        "timestamp": 1594595310
+    },
+    {
+        "content": "<p>By \"degenerate model\" I mean a category which is categorically equivalent to <strong>1</strong>, i.e., every homset has only one morphism. Obviously, when recursion is allowed, the corresponding logic is inconsistent. But the categorical model may still be non-degenerate in the sense I just described.</p>",
+        "id": 203702435,
+        "sender_full_name": "Vladimir Zamdzhiev",
+        "timestamp": 1594638920
+    }
+]

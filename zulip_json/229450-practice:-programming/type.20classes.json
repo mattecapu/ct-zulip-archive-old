@@ -1,0 +1,86 @@
+[
+    {
+        "content": "<p>Some sort of motivation for asking this question. There's quite simple way to typecheck programs expressed as natural transformations, besides doing that seem to clarify some things about bidirectional type checking. Plus focused proof search becomes a simple concept and because of identity natural transformations you can relate it to type inference. Then continue this route little bit further and CAM can be thought as an NbE for  categorical combinators.</p>",
+        "id": 195208998,
+        "sender_full_name": "Henri Tuhola",
+        "timestamp": 1587744019
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"296269\">Henri Tuhola</span> <a href=\"#narrow/stream/229450-practice.3A-programming/topic/type.20classes/near/195208998\" title=\"#narrow/stream/229450-practice.3A-programming/topic/type.20classes/near/195208998\">said</a>:</p>\n<blockquote>\n<p>Some sort of motivation for asking this question. There's quite simple way to typecheck programs expressed as natural transformations, besides doing that seem to clarify some things about bidirectional type checking. Plus focused proof search becomes a simple concept and because of identity natural transformations you can relate it to type inference. Then continue this route little bit further and CAM can be thought as an NbE for  categorical combinators.</p>\n</blockquote>\n<p>Where can I read more about that?<br>\n(Thanks in advance =))</p>",
+        "id": 195216415,
+        "sender_full_name": "Eduardo Ochs",
+        "timestamp": 1587747568
+    },
+    {
+        "content": "<p>You might need to specify what type classes you're talking about. Most things that have 'type classes' are not exactly implementing the same thing as the original, and it might affect how you view them.</p>",
+        "id": 195217947,
+        "sender_full_name": "Dan Doel",
+        "timestamp": 1587748203
+    },
+    {
+        "content": "<p>In Haskell, there is a requirement that if there is an instance for a a type, it is uniquely chosen. But quite a lot of implementations that are called 'type classes' do not have that requirement.</p>",
+        "id": 195218349,
+        "sender_full_name": "Dan Doel",
+        "timestamp": 1587748383
+    },
+    {
+        "content": "<p>I'm only speaking for haskell, but I always considered type classes as convenient syntaxic sugar : a type class is simply a tuple of functions, and you could implement them simply by adding the different functions as arguments. The constraint of them being uniquely chosen is so that the compiler can know which one to use (and all the other constraints on typeclasses are mostly there to make sure the algorithm to find them is decidable). So if you're not studying how the typeclasses themselves are resolved, you can rewrite them to code that does not use them.</p>",
+        "id": 195221741,
+        "sender_full_name": "Luc Chabassier",
+        "timestamp": 1587749995
+    },
+    {
+        "content": "<p>When I say \"type classes\" I'd think people immediately think of Haskell's type classes. There are quite few systems that are similar. Miranda has \"abstract datatypes\" and ML has modules. In C# traits perhaps are close as an idea. In general: Looking for a concept that abstracts things such as operations of addition/subtraction such that you can use the same thing to refer to addition in natural numbers, real numbers, vectors, etc..</p>\n<p>If I think of what typeclasses denote, that'd be dictionary passing in Haskell. You define addition for (+) : a → a → a, then the 'a' is found from the context. (Num a) =&gt; a becomes (Num a) -&gt; a. I know there's more details about how Haskell handles these, eg. the orphan instances being disallowed. But perhaps that's not important for finding a match in category theory for the concept.</p>",
+        "id": 195222234,
+        "sender_full_name": "Henri Tuhola",
+        "timestamp": 1587750239
+    },
+    {
+        "content": "<p>There are implementations of type classes that don't pass dictionaries, though. For instance, JHC just used representations of types at runtime, because you can instead imagine that type classes are doing case analysis on the particular type. And that might influence how you think about them for this, too. Like, you can view them as defining a subkind of all types with chosen extra structure.</p>",
+        "id": 195224126,
+        "sender_full_name": "Dan Doel",
+        "timestamp": 1587751237
+    },
+    {
+        "content": "<p>Although that view becomes less tenable with multi-parameter classes.</p>",
+        "id": 195224208,
+        "sender_full_name": "Dan Doel",
+        "timestamp": 1587751283
+    },
+    {
+        "content": "<p>The constructions of \"abstract datatypes\" \"modules\" and \"type classes\" (with and without uniqueness) are all very different, even though they are used in practice sometimes for similar things, such as overloading syntax to take different meanings over different classes of data.</p>\n<p>Because they are different, if you try to look at them through categorical semantics you will get different things. On modules, Moggi's \"Category-Theoretic Account of Program Modules\" is a good place to start: <a href=\"http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.41.3812&amp;rank=3\" title=\"http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.41.3812&amp;rank=3\">http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.41.3812&amp;rank=3</a></p>\n<p>On abstract datatypes, see the classic \"Abstract Types have Existential type\" <a href=\"http://homepages.inf.ed.ac.uk/gdp/publications/Abstract_existential.pdf\" title=\"http://homepages.inf.ed.ac.uk/gdp/publications/Abstract_existential.pdf\">http://homepages.inf.ed.ac.uk/gdp/publications/Abstract_existential.pdf</a> from which one can then proceed to standard accounts of the semantics of existential quantification (which looks sort of like a coend).</p>\n<p>As for the question of what abastracts a typeclass _with laws_ (i.e. when one is trying to get at the essence of an algebraic structure) then we can ignore the mechanics of implementation, and say maybe we are interested in the algebraic structures being presented, which leads to the study of lawvere theories.</p>\n<p>Dictionary passing is an implementation detail, and taking it into account will lend more confusion than clarity.</p>",
+        "id": 195224258,
+        "sender_full_name": "Gershom",
+        "timestamp": 1587751311
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276773\">Eduardo Ochs</span> <a href=\"#narrow/stream/229450-practice.3A-programming/topic/type.20classes/near/195216415\" title=\"#narrow/stream/229450-practice.3A-programming/topic/type.20classes/near/195216415\">said</a>:</p>\n<blockquote>\n<p>Where can I read more about that?</p>\n</blockquote>\n<p>This is something I figured out, but I don't know if it's new idea. You can carve holes into natural transformations, such that they start looking like functors that take morphisms in and produce another morphism. Eg. pair(f) would mean for (f x f).pair and pair.f. Likewise if you take product counit, fst and snd. They also form fst(f,g) = f.fst = fst.(f x g) and likewise. Now the typechecking of these is trivial. You just construct \"identity natural transformations\" for them in each end. They're simple enough that you can match them up to \"typecheck\" the expression.</p>\n<p>It's fairly cool because there is already the categorical abstract machine. It consists of 7 rules that defines \"evaluation\" in cartesian closed categories. That's a matching \"typechecking\" algorithm that is equally simple and encodes the type entirely in the expression it types.</p>\n<p>Natural transformation in category theory encodes a family of morphisms such that another morphisms can \"leap\" over it. This has been related to in Wadler's \"Theorems for free\" -paper. And every adjoint functor pair forms a pair of natural transformations and \"reduction rules\" for them.</p>",
+        "id": 195224508,
+        "sender_full_name": "Henri Tuhola",
+        "timestamp": 1587751427
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276650\">Gershom</span> <a href=\"#narrow/stream/229450-practice.3A-programming/topic/type.20classes/near/195224258\" title=\"#narrow/stream/229450-practice.3A-programming/topic/type.20classes/near/195224258\">said</a>:</p>\n<blockquote>\n<p>Dictionary passing is an implementation detail, and taking it into account will lend more confusion than clarity.</p>\n</blockquote>\n<p>Dictionary passing resembles the use of de-bruijn indices to give denotational semantics to lambda calculus. It should not be disregarded. But you're right that it could be worthwhile to put it aside.</p>\n<p>I've been already examining final tagless encoding and Conal Elliott's \"compiling to categories\". If you stick to dictionary passing as denotational semantics for typeclasses, it'd seem to reveal that just the categorical combinators such as \"fst, snd, pair\" can be thought of as parameters into the expression. Though it gets quite weird. Since they're defined as units/counits in adjoint functors, they still would have reduction rules even if they were treated as parameters that you can fill in.</p>\n<p>Following your advice and examining those papers and lawvere theories next.</p>",
+        "id": 195228688,
+        "sender_full_name": "Henri Tuhola",
+        "timestamp": 1587753763
+    },
+    {
+        "content": "<p>I think that <a href=\"https://www.doc.ic.ac.uk/~dorchard/drafts/tfp-structures-orchard12.pdf\" title=\"https://www.doc.ic.ac.uk/~dorchard/drafts/tfp-structures-orchard12.pdf\">here</a>  there was some discussion about type classes and a possible categorical interpretation.</p>",
+        "id": 195229690,
+        "sender_full_name": "Exequiel Rivas",
+        "timestamp": 1587754316
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"296269\">Henri Tuhola</span> <a href=\"#narrow/stream/229450-practice.3A-programming/topic/type.20classes/near/195224508\" title=\"#narrow/stream/229450-practice.3A-programming/topic/type.20classes/near/195224508\">said</a>:</p>\n<blockquote>\n<p><span class=\"user-mention silent\" data-user-id=\"276773\">Eduardo Ochs</span> <a href=\"#narrow/stream/229450-practice.3A-programming/topic/type.20classes/near/195216415\" title=\"#narrow/stream/229450-practice.3A-programming/topic/type.20classes/near/195216415\">said</a>:</p>\n<blockquote>\n<p>Where can I read more about that?</p>\n</blockquote>\n<p>This is something I figured out, but I don't know if it's new idea. You can carve holes into natural transformations, such that they start looking like functors that take morphisms in and produce another morphism. Eg. pair(f) would mean for (f x f).pair and pair.f. Likewise if you take product counit, fst and snd. They also form fst(f,g) = f.fst = fst.(f x g) and likewise. Now the typechecking of these is trivial. You just construct \"identity natural transformations\" for them in each end. They're simple enough that you can match them up to \"typecheck\" the expression.</p>\n<p>It's fairly cool because there is already the categorical abstract machine. It consists of 7 rules that defines \"evaluation\" in cartesian closed categories. That's a matching \"typechecking\" algorithm that is equally simple and encodes the type entirely in the expression it types.</p>\n<p>Natural transformation in category theory encodes a family of morphisms such that another morphisms can \"leap\" over it. This has been related to in Wadler's \"Theorems for free\" -paper. And every adjoint functor pair forms a pair of natural transformations and \"reduction rules\" for them.</p>\n</blockquote>\n<p>Nifty! Thanks! =)</p>",
+        "id": 195235246,
+        "sender_full_name": "Eduardo Ochs",
+        "timestamp": 1587757064
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276773\">Eduardo Ochs</span> <a href=\"#narrow/stream/229450-practice.3A-programming/topic/type.20classes/near/195235246\" title=\"#narrow/stream/229450-practice.3A-programming/topic/type.20classes/near/195235246\">said</a>:</p>\n<blockquote>\n<p><span class=\"user-mention silent\" data-user-id=\"296269\">Henri Tuhola</span> <a href=\"#narrow/stream/229450-practice.3A-programming/topic/type.20classes/near/195224508\" title=\"#narrow/stream/229450-practice.3A-programming/topic/type.20classes/near/195224508\">said</a>:</p>\n<blockquote>\n<p><span class=\"user-mention silent\" data-user-id=\"276773\">Eduardo Ochs</span> <a href=\"#narrow/stream/229450-practice.3A-programming/topic/type.20classes/near/195216415\" title=\"#narrow/stream/229450-practice.3A-programming/topic/type.20classes/near/195216415\">said</a>:</p>\n<blockquote>\n<p>Where can I read more about that?</p>\n</blockquote>\n<p>This is something I figured out, but I don't know if it's new idea. You can carve holes into natural transformations, such that they start looking like functors that take morphisms in and produce another morphism. Eg. pair(f) would mean for (f x f).pair and pair.f. Likewise if you take product counit, fst and snd. They also form fst(f,g) = f.fst = fst.(f x g) and likewise. Now the typechecking of these is trivial. You just construct \"identity natural transformations\" for them in each end. They're simple enough that you can match them up to \"typecheck\" the expression.</p>\n<p>It's fairly cool because there is already the categorical abstract machine. It consists of 7 rules that defines \"evaluation\" in cartesian closed categories. That's a matching \"typechecking\" algorithm that is equally simple and encodes the type entirely in the expression it types.</p>\n<p>Natural transformation in category theory encodes a family of morphisms such that another morphisms can \"leap\" over it. This has been related to in Wadler's \"Theorems for free\" -paper. And every adjoint functor pair forms a pair of natural transformations and \"reduction rules\" for them.</p>\n</blockquote>\n<p>Nifty! Thanks! =)</p>\n</blockquote>\n<p>I just published a <a href=\"http://boxbase.org/entries/2020/apr/27/cam_mk2/\" title=\"http://boxbase.org/entries/2020/apr/27/cam_mk2/\">blog post</a> on this.</p>",
+        "id": 195347192,
+        "sender_full_name": "Henri Tuhola",
+        "timestamp": 1587926858
+    }
+]

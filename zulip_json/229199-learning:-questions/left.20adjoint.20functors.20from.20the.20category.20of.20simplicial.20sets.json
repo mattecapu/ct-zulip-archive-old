@@ -1,0 +1,62 @@
+[
+    {
+        "content": "<p>Is every left adjoint functor from the category of simplicial sets to a cocomplete category <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"script\">C</mi></mrow><annotation encoding=\"application/x-tex\">\\mathcal C</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathcal\" style=\"margin-right:0.05834em;\">C</span></span></span></span> the left Kan extension of some functor <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"normal\">Δ</mi><mo>→</mo><mi mathvariant=\"script\">C</mi></mrow><annotation encoding=\"application/x-tex\">\\Delta\\to\\mathcal C</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord\">Δ</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">→</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathcal\" style=\"margin-right:0.05834em;\">C</span></span></span></span> along the Yoneda embedding? I found this claim in the title (but not in the actual text) of section 4 in <a href=\"https://math.jhu.edu/~eriehl/ssets.pdf\">this document</a>. The title also seems to claim that there is a unified presentation of all left adjoint functors from the category of simplicial sets to <em>any</em> (not necessarily cocomplete) category <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"script\">C</mi></mrow><annotation encoding=\"application/x-tex\">\\mathcal C</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathcal\" style=\"margin-right:0.05834em;\">C</span></span></span></span> (for which I can find no indication whatsoever).</p>",
+        "id": 258740564,
+        "sender_full_name": "Leopold Schlicht",
+        "timestamp": 1634921944
+    },
+    {
+        "content": "<p>Yes, because left adjoints are cocontinuous, and presheaf categories are <a href=\"https://ncatlab.org/nlab/show/free%20cocompletions\">[[free cocompletions]]</a>.</p>",
+        "id": 258741107,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1634922145
+    },
+    {
+        "content": "<p>Thanks, so one just has to precompose with the Yoneda embedding to obtain the desired functor <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"normal\">Δ</mi><mo>→</mo><mi mathvariant=\"script\">C</mi></mrow><annotation encoding=\"application/x-tex\">\\Delta\\to \\mathcal C</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord\">Δ</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">→</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathcal\" style=\"margin-right:0.05834em;\">C</span></span></span></span>. I think it's a bit surprising that each cocontinuous functor <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mrow><mi mathvariant=\"bold\">s</mi><mi mathvariant=\"bold\">S</mi><mi mathvariant=\"bold\">e</mi><mi mathvariant=\"bold\">t</mi></mrow><mo>→</mo><mi mathvariant=\"script\">C</mi></mrow><annotation encoding=\"application/x-tex\">\\mathbf{sSet}\\to\\mathcal C</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.68611em;vertical-align:0em;\"></span><span class=\"mord\"><span class=\"mord mathbf\">sSet</span></span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">→</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathcal\" style=\"margin-right:0.05834em;\">C</span></span></span></span> is left adjoint.</p>",
+        "id": 258748899,
+        "sender_full_name": "Leopold Schlicht",
+        "timestamp": 1634925503
+    },
+    {
+        "content": "<p>Yes, the adjoint functor theorem is a bit magic.</p>",
+        "id": 258750335,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1634926076
+    },
+    {
+        "content": "<p>But also, cocontinous functors <em>should</em> be left adjoints, so we're just saying here that nothing horrible happens.  Which is of course a bit surprising, but only like </p>\n<p><strong>DISASTER DID NOT STRIKE TODAY!!!</strong></p>",
+        "id": 258750705,
+        "sender_full_name": "John Baez",
+        "timestamp": 1634926259
+    },
+    {
+        "content": "<p>(The headline you never see in the paper, because it hasn't happened yet.)</p>",
+        "id": 258750900,
+        "sender_full_name": "John Baez",
+        "timestamp": 1634926357
+    },
+    {
+        "content": "<p>Why \"should\" cocontinuous functors be left adjoints unless you believe in the adjoint functor theorem?</p>",
+        "id": 258760066,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1634930273
+    },
+    {
+        "content": "<p>Also, this is true for any <a href=\"https://ncatlab.org/nlab/show/total%20category\">[[total category]]</a>.</p>",
+        "id": 258770703,
+        "sender_full_name": "Fawzi Hreiki",
+        "timestamp": 1634934954
+    },
+    {
+        "content": "<p>I believe in the adjoint functor theorem.</p>",
+        "id": 258801216,
+        "sender_full_name": "John Baez",
+        "timestamp": 1634960942
+    },
+    {
+        "content": "<p>I just meant to tell Leopold, who may just be starting to learn about this stuff, that when you see a cocontinuous functor you should expect it to be a left adjoint, because in most situations you come across, it will be.</p>",
+        "id": 258801529,
+        "sender_full_name": "John Baez",
+        "timestamp": 1634961499
+    }
+]

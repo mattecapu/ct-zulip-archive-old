@@ -1,0 +1,86 @@
+[
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"281126\">Henry Story</span> <a href=\"#narrow/stream/229111-general/topic/Philosophy/near/193500941\" title=\"#narrow/stream/229111-general/topic/Philosophy/near/193500941\">said</a>:</p>\n<blockquote>\n<p>Re.linear logic, I have an idea in the back of my head that it is particularly appropriate for dealing with speech acts. (since many acts are unique. Eg. buying something is a unique act. buying it twice would get one two items not one.)</p>\n</blockquote>\n<p>How does this compare to the ideas behind session types?</p>",
+        "id": 193503390,
+        "sender_full_name": "James Wood",
+        "timestamp": 1586463215
+    },
+    {
+        "content": "<p>Argh, session types are on my reading list too...</p>",
+        "id": 193503830,
+        "sender_full_name": "Henry Story",
+        "timestamp": 1586463425
+    },
+    {
+        "content": "<p>Any particular articles? Unless you have something specific in mind, Phil Wadler's paper is the one that normally gets recommended, and I think it's quite good.</p>",
+        "id": 193504133,
+        "sender_full_name": "James Wood",
+        "timestamp": 1586463601
+    },
+    {
+        "content": "<p>You mean this one by Wadler <a href=\"https://www.cambridge.org/core/journals/journal-of-functional-programming/article/propositions-as-sessions/0985539E5D607AC00FB00FF900BA1C86\" title=\"https://www.cambridge.org/core/journals/journal-of-functional-programming/article/propositions-as-sessions/0985539E5D607AC00FB00FF900BA1C86\">Propositions as Sessions</a>? Actually I had been pointed to session types for protocols a few times, and was watching an video <a href=\"https://www.youtube.com/watch?v=px38U3jsOLQ\" title=\"https://www.youtube.com/watch?v=px38U3jsOLQ\">Two sides of the Same coin: Session Types and Game Semantics</a> when I must have gotten somehow lost into reading more about dialogical reasoning. :-) Thanks for reminding me.</p>\n<div class=\"youtube-video message_inline_image\"><a data-id=\"px38U3jsOLQ\" href=\"https://www.youtube.com/watch?v=px38U3jsOLQ\" title=\"https://www.youtube.com/watch?v=px38U3jsOLQ\"><img src=\"https://i.ytimg.com/vi/px38U3jsOLQ/default.jpg\"></a></div>",
+        "id": 193504741,
+        "sender_full_name": "Henry Story",
+        "timestamp": 1586463968
+    },
+    {
+        "content": "<p>Yeah, that one. Though I don't know about this video, and if there's a paper associated with it, it sounds promising.</p>",
+        "id": 193505327,
+        "sender_full_name": "James Wood",
+        "timestamp": 1586464243
+    },
+    {
+        "content": "<p>IIRC, Phil's paper is concerned with quite syntactic matters, so your mileage with it may vary.</p>",
+        "id": 193505681,
+        "sender_full_name": "James Wood",
+        "timestamp": 1586464394
+    },
+    {
+        "content": "<p>Oh wait, was I there for this talk...? <span aria-label=\"rolling on the floor laughing\" class=\"emoji emoji-1f923\" role=\"img\" title=\"rolling on the floor laughing\">:rolling_on_the_floor_laughing:</span></p>",
+        "id": 193505850,
+        "sender_full_name": "James Wood",
+        "timestamp": 1586464473
+    },
+    {
+        "content": "<p>What's the basic idea behind the word \"sessions\" here?</p>",
+        "id": 193508894,
+        "sender_full_name": "Joe Moeller",
+        "timestamp": 1586466172
+    },
+    {
+        "content": "<p>I'm not really an expert, but I think “session” refers to a synchronous communication between two processes. Information is sent via the additive connectives – a process satisfying session type <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mo>⊕</mo><mi>B</mi></mrow><annotation encoding=\"application/x-tex\">A \\oplus B</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.76666em;vertical-align:-0.08333em;\"></span><span class=\"mord mathdefault\">A</span><span class=\"mspace\" style=\"margin-right:0.2222222222222222em;\"></span><span class=\"mbin\">⊕</span><span class=\"mspace\" style=\"margin-right:0.2222222222222222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathdefault\" style=\"margin-right:0.05017em;\">B</span></span></span></span> sends a bit and continues as either <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi></mrow><annotation encoding=\"application/x-tex\">A</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathdefault\">A</span></span></span></span> or <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>B</mi></mrow><annotation encoding=\"application/x-tex\">B</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathdefault\" style=\"margin-right:0.05017em;\">B</span></span></span></span> (according to that bit), and dually, this bit can be received by a process satisfying session type <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msup><mi>A</mi><mi mathvariant=\"normal\">⊥</mi></msup><mtext> </mtext><mi mathvariant=\"normal\">&amp;</mi><mtext> </mtext><msup><mi>B</mi><mi mathvariant=\"normal\">⊥</mi></msup></mrow><annotation encoding=\"application/x-tex\">A^\\bot~\\&amp;~B^\\bot</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.849108em;vertical-align:0em;\"></span><span class=\"mord\"><span class=\"mord mathdefault\">A</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.849108em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">⊥</span></span></span></span></span></span></span></span><span class=\"mspace nobreak\"> </span><span class=\"mord\">&amp;</span><span class=\"mspace nobreak\"> </span><span class=\"mord\"><span class=\"mord mathdefault\" style=\"margin-right:0.05017em;\">B</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.849108em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">⊥</span></span></span></span></span></span></span></span></span></span></span>, which branches on the bit it receives and continues in the relevant way. I can't remember what the multiplicative connectives do.</p>",
+        "id": 193509810,
+        "sender_full_name": "James Wood",
+        "timestamp": 1586466671
+    },
+    {
+        "content": "<p>the \"CS\" motivation behind \"session\" is you think of it as wanting to encode the protocol for interaction between a client and server. So the mail client sends to the server HELO to initiate, but it may also send EHLO to initiate, which opens an \"extended\" protocol, after which more commands are available than otherwise. The server responds from a defined set of choices to each message, and at certain branch points either the client or server may choose from a number of different things to send next, and the things that may be sent next should be related to the things that were sent before in a specified way, etc.</p>\n<p>So it is a very formalized notion of \"each side\" of a conversation, with the nice property that if you know only one side's protocol you can \"flip\" it (or negate it) and figure out the protocol on the other side, and given two such gadgets you can formally ensure they match up -- that the server has some branch for responding to every client request, etc.</p>",
+        "id": 193510389,
+        "sender_full_name": "Gershom",
+        "timestamp": 1586467034
+    },
+    {
+        "content": "<p>That makes sense, thanks.</p>",
+        "id": 193516180,
+        "sender_full_name": "Joe Moeller",
+        "timestamp": 1586470403
+    },
+    {
+        "content": "<p>can't believe i missed the opportunity to say \"you put that type down, flip it and reverse it.\"</p>",
+        "id": 193516350,
+        "sender_full_name": "Gershom",
+        "timestamp": 1586470502
+    },
+    {
+        "content": "<p>In case anyone didn't get that allusion:</p>\n<p><a href=\"https://www.youtube.com/watch?v=cjIvu7e6Wq8\" title=\"https://www.youtube.com/watch?v=cjIvu7e6Wq8\">Missy Elliot - Work It</a></p>\n<div class=\"youtube-video message_inline_image\"><a data-id=\"cjIvu7e6Wq8\" href=\"https://www.youtube.com/watch?v=cjIvu7e6Wq8\" title=\"https://www.youtube.com/watch?v=cjIvu7e6Wq8\"><img src=\"https://i.ytimg.com/vi/cjIvu7e6Wq8/default.jpg\"></a></div>",
+        "id": 193517095,
+        "sender_full_name": "John Baez",
+        "timestamp": 1586471039
+    },
+    {
+        "content": "<p>This topic should be in <a class=\"stream\" data-stream-id=\"229952\" href=\"/#narrow/stream/229952-theory.3A-type-theory\">#theory: type theory</a>.</p>",
+        "id": 193523525,
+        "sender_full_name": "Christian Williams",
+        "timestamp": 1586475576
+    }
+]

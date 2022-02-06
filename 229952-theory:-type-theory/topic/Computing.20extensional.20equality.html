@@ -1,0 +1,210 @@
+---
+layout: archive
+title: Zulip Chat Archive
+permalink: /stream/229952-theory:-type-theory/topic/Computing.20extensional.20equality.html
+---
+
+<h2>Stream: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229952-theory:-type-theory/index.html">theory: type theory</a></h2>
+<h3>Topic: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229952-theory:-type-theory/topic/Computing.20extensional.20equality.html">Computing extensional equality</a></h3>
+
+<hr>
+
+<base href="https://categorytheory.zulipchat.com/">
+
+<head><link href="https://mattecapu.github.io/ct-zulip-archive/style.css" rel="stylesheet"></head>
+
+{% raw %}
+
+<a name="255152540"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229952-theory%3A%20type%20theory/topic/Computing%20extensional%20equality/near/255152540" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nick Smith <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229952-theory:-type-theory/topic/Computing.20extensional.20equality.html#255152540">(Sep 28 2021 at 02:42)</a>:</h4>
+<p>Hi folks, I'm interested in the problem of computing whether two functions are extensionally equal. I don't know much type theory, so I'm trying to establish an intuition about the problem, and what is possible.</p>
+<p>I know that the problem is undecidable for Turing-complete programming languages, but I'm not interested in those. I'm interested in suitably restricted languages. In particular, I'm interested in (purely functional) languages that include:</p>
+<ul>
+<li>first-class functions</li>
+<li>sum types and product types</li>
+<li>branching and pattern-matching</li>
+<li>integer arithmetic<ul>
+<li>Assume the standard integer operations are built-in, and that they obey all the standard laws of arithmetic.</li>
+</ul>
+</li>
+</ul>
+<p>But (perhaps unconventionally), I only want to consider languages <strong>without</strong> inductive/recursive types. (Integers are built-in, so they need not be treated as an inductive type.) I've recently been considering alternative approaches to structuring data wherein functions also fulfil the role of finite maps (a.k.a. dictionaries, associative arrays...), and I believe this can serve as an adequate alternative to inductive types for an everyday programming language. (Lookups would be statically-checked.)</p>
+<p>As for recursive functions, they might exist in a very constrained form, or be banned entirely. (Is it reasonable to have this discussion without establishing what kind of recursion is permitted?)</p>
+<p>So, back to our problem: determining <strong>extensional equality</strong> of functions. Thinking about this for a while, I've noticed there are actually several related problems:</p>
+<ul>
+<li>Computing a "canonical form" for a function<ul>
+<li>This one seems tricky: the process might need to include all kinds of elaborate manipulations, e.g. factorization and expansion of polynomial expressions.</li>
+</ul>
+</li>
+<li>Computing a canonical "identifier" for a function (two functions share the identifier iff they are extensionally equal)<ul>
+<li>Perhaps this is an easier problem? The identifier need not contain all the information required to (efficiently) reconstruct the function definition itself.</li>
+</ul>
+</li>
+<li>Testing two functions for extensional equality<ul>
+<li>This is an easier problem than the above problems, since equality testing is trivial if you have canonical forms/identifiers. But perhaps there are other methods to test equality that are more practical (and more decidable) than computing canonical forms/identifiers.</li>
+</ul>
+</li>
+</ul>
+<p>My questions include:</p>
+<ul>
+<li>How feasible is it to solve any of these problems in a suitably constrained language such as the one I described earlier?</li>
+<li>What is the most powerful language in which extensional equality is decidable? Has this been established?</li>
+<li>Are there some good resources for learning the basics of all this?</li>
+</ul>
+<p>I've been utterly entranced by this problem lately. I've stumbled onto type-theoretic discussions about extensional equality such as the recent buzz around cubical type theory, but:</p>
+<ul>
+<li>The design of these type systems seems to be centered around inductive types, which I'm not very interested in. Perhaps all the relevant facts and motivations no longer apply in the absence of inductive types?</li>
+<li>From what I can tell, the idea seems to be that the programmer has to <strong>manually prove</strong> extensional equality of functions (by computing some kind of "path"). There's no built-in true/false test? That doesn't seem like the approach to equality you'd want in a general-purpose programming language.</li>
+</ul>
+
+
+
+<a name="255209668"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229952-theory%3A%20type%20theory/topic/Computing%20extensional%20equality/near/255209668" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> James Wood <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229952-theory:-type-theory/topic/Computing.20extensional.20equality.html#255209668">(Sep 28 2021 at 12:44)</a>:</h4>
+<p>I guess you have to avoid being able to state all Diophantine equations, otherwise equality of open terms (i.e, polynomials) will be undecidable. Probably the most natural restriction is to <em>linear</em> integer arithmetic, but of course this may be a strong restriction.</p>
+
+
+
+<a name="255329123"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229952-theory%3A%20type%20theory/topic/Computing%20extensional%20equality/near/255329123" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nick Smith <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229952-theory:-type-theory/topic/Computing.20extensional.20equality.html#255329123">(Sep 29 2021 at 01:51)</a>:</h4>
+<p>Let me see if I understand this problem. We can write a function <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>:</mo><msup><mi mathvariant="double-struck">Z</mi><mi>n</mi></msup><mo>→</mo><mi mathvariant="double-struck">B</mi></mrow><annotation encoding="application/x-tex">f: \Z^n \to \mathbb{B}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span class="mord mathnormal" style="margin-right:0.10764em;">f</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">:</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.68889em;vertical-align:0em;"></span><span class="mord"><span class="mord mathbb">Z</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.664392em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">n</span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.68889em;vertical-align:0em;"></span><span class="mord mathbb">B</span></span></span></span> that tests whether <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mo>∈</mo><msup><mi mathvariant="double-struck">Z</mi><mi>n</mi></msup></mrow><annotation encoding="application/x-tex">p \in \Z^n</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.7335400000000001em;vertical-align:-0.19444em;"></span><span class="mord mathnormal">p</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">∈</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.68889em;vertical-align:0em;"></span><span class="mord"><span class="mord mathbb">Z</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.664392em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">n</span></span></span></span></span></span></span></span></span></span></span> is a solution to a Diophantine equation (returning a Boolean), and we can write a function <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>g</mi><mo>:</mo><msup><mi mathvariant="double-struck">Z</mi><mi>n</mi></msup><mo>→</mo><mi mathvariant="double-struck">B</mi></mrow><annotation encoding="application/x-tex">g: \Z^n \to \mathbb{B}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.625em;vertical-align:-0.19444em;"></span><span class="mord mathnormal" style="margin-right:0.03588em;">g</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">:</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.68889em;vertical-align:0em;"></span><span class="mord"><span class="mord mathbb">Z</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.664392em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">n</span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.68889em;vertical-align:0em;"></span><span class="mord mathbb">B</span></span></span></span> that always returns false. An algorithm that told us whether <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>=</mo><mi>g</mi></mrow><annotation encoding="application/x-tex">f = g</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span class="mord mathnormal" style="margin-right:0.10764em;">f</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.625em;vertical-align:-0.19444em;"></span><span class="mord mathnormal" style="margin-right:0.03588em;">g</span></span></span></span> for any such pair of functions (containing only integer addition, multiplication, and equality tests) would be solving an undecidable problem.</p>
+<p>Is that right?</p>
+
+
+
+<a name="255336220"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229952-theory%3A%20type%20theory/topic/Computing%20extensional%20equality/near/255336220" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229952-theory:-type-theory/topic/Computing.20extensional.20equality.html#255336220">(Sep 29 2021 at 03:30)</a>:</h4>
+<p>Sounds right to me.  By the way, we can take <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>=</mo><mn>11</mn></mrow><annotation encoding="application/x-tex">n = 11</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathnormal">n</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">11</span></span></span></span>.  That's the current smallest known value that works.</p>
+
+
+
+<a name="255336899"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229952-theory%3A%20type%20theory/topic/Computing%20extensional%20equality/near/255336899" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229952-theory:-type-theory/topic/Computing.20extensional.20equality.html#255336899">(Sep 29 2021 at 03:38)</a>:</h4>
+<p>What's the largest known <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi></mrow><annotation encoding="application/x-tex">n</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathnormal">n</span></span></span></span> that <em>doesn't</em> work?</p>
+
+
+
+<a name="255341459"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229952-theory%3A%20type%20theory/topic/Computing%20extensional%20equality/near/255341459" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229952-theory:-type-theory/topic/Computing.20extensional.20equality.html#255341459">(Sep 29 2021 at 04:47)</a>:</h4>
+<p>It seems like most serious work has been done for natural number solutions of Diophantine equations, not integer solutions.  Matiyasevich  showed the best upper bound: there's no decision procedure for Diophantine equations in 9 natural number variables.    Wikipedia says even 3 cannot now be excluded as a possible upper bound.    I assume that means for natural numbers solutions there's a decision procedure for 2-variable Diophantine equations.</p>
+
+
+
+<a name="255341512"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229952-theory%3A%20type%20theory/topic/Computing%20extensional%20equality/near/255341512" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229952-theory:-type-theory/topic/Computing.20extensional.20equality.html#255341512">(Sep 29 2021 at 04:48)</a>:</h4>
+<p>The difficulty of settling Fermat's last theorem must have something to do with how problems kick in at n = 3.</p>
+
+
+
+<a name="255357742"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229952-theory%3A%20type%20theory/topic/Computing%20extensional%20equality/near/255357742" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nick Smith <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229952-theory:-type-theory/topic/Computing.20extensional.20equality.html#255357742">(Sep 29 2021 at 08:01)</a>:</h4>
+<p>Ok, it seems I can throw extensional equality in the dustbin then. It seems utterly unrealistic even for "basic" functions <span aria-label="sweat smile" class="emoji emoji-1f605" role="img" title="sweat smile">:sweat_smile:</span>.</p>
+<p>The only way forward (apart from having no concept of function equality whatsoever) seems to be treating functions as pieces of syntax, and comparing them for syntactic equality. I think type theorists call this "definitional equality". I suppose that must suffice!</p>
+
+
+
+<a name="255358484"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229952-theory%3A%20type%20theory/topic/Computing%20extensional%20equality/near/255358484" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229952-theory:-type-theory/topic/Computing.20extensional.20equality.html#255358484">(Sep 29 2021 at 08:08)</a>:</h4>
+<p>Yes, that's the reason why, as you said, a programmer or mathematician has to manually prove extensional equality of functions.  The only kind of equality check for functions that we can expect a computer to do is intensional.</p>
+
+
+
+<a name="255366284"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229952-theory%3A%20type%20theory/topic/Computing%20extensional%20equality/near/255366284" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nick Smith <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229952-theory:-type-theory/topic/Computing.20extensional.20equality.html#255366284">(Sep 29 2021 at 09:12)</a>:</h4>
+<p>Does the quick appearance of undecidability have something to do with (non-)continuity? If my language hypothetically had <strong>only</strong> rational arithmetic (no <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="double-struck">Z</mi></mrow><annotation encoding="application/x-tex">\Z</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68889em;vertical-align:0em;"></span><span class="mord mathbb">Z</span></span></span></span> or <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="double-struck">N</mi></mrow><annotation encoding="application/x-tex">\N</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68889em;vertical-align:0em;"></span><span class="mord mathbb">N</span></span></span></span> types, or any inductive type), can we have more expressive languages whilst retaining decidable equality?</p>
+
+
+
+<a name="255366376"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229952-theory%3A%20type%20theory/topic/Computing%20extensional%20equality/near/255366376" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nick Smith <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229952-theory:-type-theory/topic/Computing.20extensional.20equality.html#255366376">(Sep 29 2021 at 09:13)</a>:</h4>
+<p>Or are there other simple counter-examples...</p>
+
+
+
+<a name="255379801"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229952-theory%3A%20type%20theory/topic/Computing%20extensional%20equality/near/255379801" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> James Deikun <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229952-theory:-type-theory/topic/Computing.20extensional.20equality.html#255379801">(Sep 29 2021 at 11:10)</a>:</h4>
+<p>Having only real arithmetic would work, rational not so much.  The theory of a real closed field is decidable.  You can't have trigonometric functions though.</p>
+
+
+
+<a name="255388023"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229952-theory%3A%20type%20theory/topic/Computing%20extensional%20equality/near/255388023" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229952-theory:-type-theory/topic/Computing.20extensional.20equality.html#255388023">(Sep 29 2021 at 12:16)</a>:</h4>
+<p>That result about real closed fields is due to Tarski; it's good to read <a href="https://en.wikipedia.org/wiki/Real_closed_field#Decidability_and_quantifier_elimination">this</a> to see what he did.</p>
+
+
+
+<a name="255389072"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229952-theory%3A%20type%20theory/topic/Computing%20extensional%20equality/near/255389072" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229952-theory:-type-theory/topic/Computing.20extensional.20equality.html#255389072">(Sep 29 2021 at 12:24)</a>:</h4>
+<p>It seems that while it's decidable, the best decision procedure is very slow.  I don't know how slow!  But if I had to wildly guess, I'd say double exponential time, something like <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mn>2</mn><msup><mn>2</mn><mrow><mi>c</mi><mi>n</mi></mrow></msup></msup></mrow><annotation encoding="application/x-tex">2^{2^{cn}}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.87998em;vertical-align:0em;"></span><span class="mord"><span class="mord">2</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.87998em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight"><span class="mord mtight">2</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.7385428571428572em;"><span style="top:-2.931em;margin-right:0.07142857142857144em;"><span class="pstrut" style="height:2.5em;"></span><span class="sizing reset-size3 size1 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">c</span><span class="mord mathnormal mtight">n</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span>.  So this raises the question: is decidability useful if you have to wait billions of years to decide the equality of two functions?</p>
+
+
+
+<a name="255396608"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229952-theory%3A%20type%20theory/topic/Computing%20extensional%20equality/near/255396608" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> James Deikun <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229952-theory:-type-theory/topic/Computing.20extensional.20equality.html#255396608">(Sep 29 2021 at 13:17)</a>:</h4>
+<p>The really bad slowdown is in quantifier alternation depth, making results like this quite practical for many purposes though...</p>
+
+
+
+<a name="255415047"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229952-theory%3A%20type%20theory/topic/Computing%20extensional%20equality/near/255415047" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Jacques Carette <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229952-theory:-type-theory/topic/Computing.20extensional.20equality.html#255415047">(Sep 29 2021 at 15:04)</a>:</h4>
+<p>If you stick to the world of arithmetic, indeed things go sideways quite quickly. But if you instead look at <em>holonomic functions</em> (functions that satisfy a linear ode with polynomial coefficients, which almost all special functions do), then things look bright again. See for example <a href="https://www.csd.uwo.ca/~mmorenom/Publications/A_new_zero-test_for_formal_power_series.pdf">this paper</a> from Joris van der Hoeven.</p>
+
+
+
+<a name="255500290"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229952-theory%3A%20type%20theory/topic/Computing%20extensional%20equality/near/255500290" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nick Smith <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229952-theory:-type-theory/topic/Computing.20extensional.20equality.html#255500290">(Sep 30 2021 at 00:55)</a>:</h4>
+<p>I don't understand... how are holonomic functions not "sticking to the world of arithmetic"? It seems like they're still defined in terms of addition, multiplication, etc.</p>
+
+
+
+<a name="255500459"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229952-theory%3A%20type%20theory/topic/Computing%20extensional%20equality/near/255500459" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nick Smith <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229952-theory:-type-theory/topic/Computing.20extensional.20equality.html#255500459">(Sep 30 2021 at 00:57)</a>:</h4>
+<p>Perhaps I'm missing the "big picture" of how holonomic functions are different to traditional functions.</p>
+
+
+
+<a name="255501716"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229952-theory%3A%20type%20theory/topic/Computing%20extensional%20equality/near/255501716" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Jacques Carette <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229952-theory:-type-theory/topic/Computing.20extensional.20equality.html#255501716">(Sep 30 2021 at 01:13)</a>:</h4>
+<p>They are 'different' because they are defined by a finite amount of data that has a very large amount of regularity properties, even though they are 'infinite' objects defined over continuous spaces. The resulting solutions are analytic with well-behaved, locatable singularities.</p>
+<p>One thing to remember is that these are defined implicitly, as the solution of an LODE.  So they really live in the world of analysis, not arithmetic.</p>
+
+
+
+<a name="255503635"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229952-theory%3A%20type%20theory/topic/Computing%20extensional%20equality/near/255503635" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nick Smith <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229952-theory:-type-theory/topic/Computing.20extensional.20equality.html#255503635">(Sep 30 2021 at 01:40)</a>:</h4>
+<p>They do seem to be pretty exciting, from what I can comprehend. It's a shame that there is not a drop of introductory material about them. Every resource I can find assumes you are a mathematician. It's hard for me to discern whether they are a useful construct for more than just niche applications.</p>
+
+
+
+<a name="255503842"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229952-theory%3A%20type%20theory/topic/Computing%20extensional%20equality/near/255503842" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nick Smith <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229952-theory:-type-theory/topic/Computing.20extensional.20equality.html#255503842">(Sep 30 2021 at 01:43)</a>:</h4>
+<p>From what I can tell, some operations on holonomic functions might also be computationally intractable...</p>
+
+
+
+<a name="255504077"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229952-theory%3A%20type%20theory/topic/Computing%20extensional%20equality/near/255504077" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nick Smith <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229952-theory:-type-theory/topic/Computing.20extensional.20equality.html#255504077">(Sep 30 2021 at 01:46)</a>:</h4>
+<p>For example, it seems like you need to compute Gröbner bases, which is doubly exponential:</p>
+<blockquote>
+<p>The complexity of Gröbner bases has been the object of extensive studies. It is well-known that in the worst-case, the complexity is doubly exponential in the number of variables.</p>
+</blockquote>
+
+
+
+<a name="255567707"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229952-theory%3A%20type%20theory/topic/Computing%20extensional%20equality/near/255567707" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Jacques Carette <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229952-theory:-type-theory/topic/Computing.20extensional.20equality.html#255567707">(Sep 30 2021 at 12:52)</a>:</h4>
+<p>Most operations on holonomic functions don't need Gröbner bases, in fact they can mostly be done via straightforward linear algebra. Furthermore, Gröbner bases are quite remarkable in that their running time is often nowhere near the worst case (we do know that in degenerate cases, Gröbner bases exactly correspond to Gaussian Elimination and to the Euclidean algorithm). The work on understanding when Gröbner bases are fast and when they are not is still ongoing, and appears to be extremely deep.</p>
+<p>I find Bruno Salvy's <a href="https://perso.ens-lyon.fr/bruno.salvy/talks/lindiffocm">talk</a> that goes along with the paper <a href="https://arxiv.org/abs/1811.08616">Linear Differential Equations as a Data Structure</a> to be a really good entry point. The audience were mathematically-oriented computer scientists.</p>
+<p>Manuel Kauer's <a href="https://www3.risc.jku.at/publications/download/risc_4710/author.pdf">The Holonomic Toolkit</a> is rather good, but was written for an audience of people who do Symbolic Computation. YMMV.</p>
+
+
+
+<a name="255681904"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229952-theory%3A%20type%20theory/topic/Computing%20extensional%20equality/near/255681904" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nick Smith <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229952-theory:-type-theory/topic/Computing.20extensional.20equality.html#255681904">(Oct 01 2021 at 02:50)</a>:</h4>
+<p>Thank you for these references! I'll see if they help me <span aria-label="smile" class="emoji emoji-1f642" role="img" title="smile">:smile:</span>. I am very much on board with treating equations as data structures. It's an approach I've been investigating for a while now...</p>
+
+
+
+{% endraw %}
+
+<hr><p>Last updated: Jan 30 2022 at 00:30 UTC</p>

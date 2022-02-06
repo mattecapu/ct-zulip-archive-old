@@ -1,0 +1,170 @@
+[
+    {
+        "content": "<p>Structured cospans are useful for constructing categories of networks in which there is no distinction between inputs and outputs, such as electrical networks.</p>\n<p>Has anyone considered a more general kind of cospan where the two legs would be restricted to two separate subcategories, therefore allowing for the construction of categories of networks for which inputs and outputs do play different roles?</p>\n<p><em>Background:</em> I'm currently working with a summer student on constructing free Markov categories, and it seems to be possible to do so using a construction very similar to structured cospans, and in particular to the construction of <a href=\"https://arxiv.org/abs/1712.09495\">free hypergraph categories</a>, modulo this directionality issue (related to the fact that Markov categories are almost never compact closed). It would be very helpful if we could employ an already existing framework for this problem rather than either developing it ourselves first or doing our particular case \"by hand\".</p>",
+        "id": 240853526,
+        "sender_full_name": "Tobias Fritz",
+        "timestamp": 1622479925
+    },
+    {
+        "content": "<p>Suppose we have a situation with spans of the form <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>F</mi><mi>X</mi><mo>←</mo><mi>A</mi><mo>→</mo><mi>G</mi><mi>Y</mi></mrow><annotation encoding=\"application/x-tex\">F X \\leftarrow A \\rightarrow G Y </annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.07847em;\">FX</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">←</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathnormal\">A</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">→</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathnormal\">G</span><span class=\"mord mathnormal\" style=\"margin-right:0.22222em;\">Y</span></span></span></span>,  for <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>F</mi><mo>:</mo><mi mathvariant=\"double-struck\">X</mi><mo>→</mo><mi mathvariant=\"double-struck\">A</mi></mrow><annotation encoding=\"application/x-tex\">F: \\mathbb X \\to \\mathbb A</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.13889em;\">F</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">:</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.68889em;vertical-align:0em;\"></span><span class=\"mord mathbb\">X</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">→</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.68889em;vertical-align:0em;\"></span><span class=\"mord mathbb\">A</span></span></span></span>,  <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>G</mi><mo>:</mo><mi mathvariant=\"double-struck\">Y</mi><mo>→</mo><mi mathvariant=\"double-struck\">A</mi></mrow><annotation encoding=\"application/x-tex\">G: \\mathbb Y \\to \\mathbb A</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathnormal\">G</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">:</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.68889em;vertical-align:0em;\"></span><span class=\"mord mathbb\">Y</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">→</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.68889em;vertical-align:0em;\"></span><span class=\"mord mathbb\">A</span></span></span></span>. Then in order for composition to be well defined, the objects in <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>F</mi><mi mathvariant=\"double-struck\">X</mi></mrow><annotation encoding=\"application/x-tex\">F \\mathbb X</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.68889em;vertical-align:0em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.13889em;\">F</span><span class=\"mord mathbb\">X</span></span></span></span>  and <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>G</mi><mi mathvariant=\"double-struck\">Y</mi></mrow><annotation encoding=\"application/x-tex\">G \\mathbb Y </annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.68889em;vertical-align:0em;\"></span><span class=\"mord mathnormal\">G</span><span class=\"mord mathbb\">Y</span></span></span></span> must be the same, so I don't know quite exactly how this would work.</p>\n<p>I have worked with some categories of structured cospans where the left legs are monics and the right legs are arbitrary maps, the structure-functor being the inclusion of the full subcategory: such categories being discrete cartesian restriction categories (which are not compact closed).  But I don't know if this is what you want.  In a sense, the left and right legs are in different subcategories, however, the feet are both in the same subcategory.</p>",
+        "id": 240867521,
+        "sender_full_name": "Cole Comfort",
+        "timestamp": 1622491796
+    },
+    {
+        "content": "<p>I've also come across spans where the left and right legs have different restrictions on them, probably in a different situation (for symmetric lenses)</p>",
+        "id": 240868242,
+        "sender_full_name": "Jules Hedges",
+        "timestamp": 1622492428
+    },
+    {
+        "content": "<p><span class=\"user-mention\" data-user-id=\"276702\">@Tobias Fritz</span> - I have not seen anyone develop a theory of structured cospans that's generalized in the way you describe.  So, your student can the pleasure of being the first to do it.   It's always fun to learn something while generalizing it.</p>",
+        "id": 240880016,
+        "sender_full_name": "John Baez",
+        "timestamp": 1622504784
+    },
+    {
+        "content": "<p>Thanks, all, for the useful input!</p>\n<p><span class=\"user-mention silent\" data-user-id=\"277391\">Cole Comfort</span> <a href=\"#narrow/stream/229136-theory.3A-category.20theory/topic/directional.20structured.20cospans.3F/near/240867521\">said</a>:</p>\n<blockquote>\n<p>I have worked with some categories of structured cospans where the left legs are monics and the right legs are arbitrary maps, the structure-functor being the inclusion of the full subcategory: such categories being discrete cartesian restriction categories (which are not compact closed).  But I don't know if this is what you want.  In a sense, the left and right legs are in different subcategories, however, the feet are both in the same subcategory.</p>\n</blockquote>\n<p>Yes, that's the sort of thing I have in mind. <span class=\"user-mention\" data-user-id=\"277391\">@Cole Comfort</span>, <span class=\"user-mention\" data-user-id=\"275901\">@Jules Hedges</span>, are those works of yours already out? That could possibly still save us some time, even if nobody has yet worked out the general abstract framework as indicated by John.</p>",
+        "id": 240900153,
+        "sender_full_name": "Tobias Fritz",
+        "timestamp": 1622529523
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"277391\">Cole Comfort</span> <a href=\"#narrow/stream/229136-theory.3A-category.20theory/topic/directional.20structured.20cospans.3F/near/240867521\">said</a>:</p>\n<blockquote>\n<p>I have worked with some categories of structured cospans where the left legs are monics and the right legs are arbitrary maps, the structure-functor being the inclusion of the full subcategory: such categories being discrete cartesian restriction categories (which are not compact closed).  But I don't know if this is what you want.  In a sense, the left and right legs are in different subcategories, however, the feet are both in the same subcategory.</p>\n</blockquote>\n<p>A small correction: discrete cartesian restriction categories arise as categories of <em>spans</em> with monic left leg.</p>",
+        "id": 240904201,
+        "sender_full_name": "Chad Nester",
+        "timestamp": 1622532674
+    },
+    {
+        "content": "<p>It might not go in the direction you need, but the dual of the situation you're describing appeared in a paper I finished <a href=\"https://arxiv.org/pdf/2101.04015.pdf\">earlier this year</a>; see Section 2.2 in that preprint: it involves spans where the right leg is arbitrary and the left leg is in a \"stable class\" of morphisms.</p>",
+        "id": 240909135,
+        "sender_full_name": "Morgan Rogers (he/him)",
+        "timestamp": 1622535727
+    },
+    {
+        "content": "<p>Such spans correspond to (or at least are sufficient data to encode) morphisms in the topos of sheaves on a corresponding site.</p>",
+        "id": 240909211,
+        "sender_full_name": "Morgan Rogers (he/him)",
+        "timestamp": 1622535787
+    },
+    {
+        "content": "<p>There's a bunch of info in that section (certainly more than I ever needed) about the correspondence between such spans and morphisms in the topos. This might be useful to you if you are thinking of your cospans as morphisms up to some notion of equivalence: taking sheaves on the opposite of your category could give a neat way to recover the resulting category.</p>",
+        "id": 240909885,
+        "sender_full_name": "Morgan Rogers (he/him)",
+        "timestamp": 1622536193
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276114\">Chad Nester</span> <a href=\"#narrow/stream/229136-theory.3A-category.20theory/topic/directional.20structured.20cospans.3F/near/240904201\">said</a>:</p>\n<blockquote>\n<p><span class=\"user-mention silent\" data-user-id=\"277391\">Cole Comfort</span> <a href=\"#narrow/stream/229136-theory.3A-category.20theory/topic/directional.20structured.20cospans.3F/near/240867521\">said</a>:</p>\n<blockquote>\n<p>I have worked with some categories of structured cospans where the left legs are monics and the right legs are arbitrary maps, the structure-functor being the inclusion of the full subcategory: such categories being discrete cartesian restriction categories (which are not compact closed).  But I don't know if this is what you want.  In a sense, the left and right legs are in different subcategories, however, the feet are both in the same subcategory.</p>\n</blockquote>\n<p>A small correction: discrete cartesian restriction categories arise as categories of <em>spans</em> with monic left leg.</p>\n</blockquote>\n<p>Yes it works for <em>structured spans</em>.  I guess I should have said where the left leg is epic <span aria-label=\"sweat smile\" class=\"emoji emoji-1f605\" role=\"img\" title=\"sweat smile\">:sweat_smile:</span> .</p>",
+        "id": 240910329,
+        "sender_full_name": "Cole Comfort",
+        "timestamp": 1622536465
+    },
+    {
+        "content": "<p><a href=\"https://arxiv.org/pdf/2102.04386.pdf\">My work</a> probably isn't very enlightening,  but <a href=\"https://www.sciencedirect.com/science/article/pii/S0304397500003820\">partial map categories</a> are just plain old categories of spans where the left leg is monic and this generalized to the structured span case.</p>",
+        "id": 240910745,
+        "sender_full_name": "Cole Comfort",
+        "timestamp": 1622536733
+    },
+    {
+        "content": "<p>With a stability condition on the pullback of monics.</p>",
+        "id": 240910777,
+        "sender_full_name": "Cole Comfort",
+        "timestamp": 1622536752
+    },
+    {
+        "content": "<p>My motivation is to give complete monoidal theories for these partial map categories, which fail to be props, so I look at a full subcategory thereof instead.</p>",
+        "id": 240912417,
+        "sender_full_name": "Cole Comfort",
+        "timestamp": 1622537596
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"277473\">Morgan Rogers (he/him)</span> <a href=\"#narrow/stream/229136-theory.3A-category.20theory/topic/directional.20structured.20cospans.3F/near/240909135\">said</a>:</p>\n<blockquote>\n<p>It might not go in the direction you need, but the dual of the situation you're describing appeared in a paper I finished <a href=\"https://arxiv.org/pdf/2101.04015.pdf\">earlier this year</a>; see Section 2.2 in that preprint: it involves spans where the right leg is arbitrary and the left leg is in a \"stable class\" of morphisms.</p>\n</blockquote>\n<p>Thanks, that is nice, and it's interesting to know that this gives a way to describe the hom-sets between objects of the original site in a sheaf topos. But as far as I understand, those spans are unstructured spans, so it isn't quite what we need.</p>\n<p>BTW, I'm a bit shocked to learn that the canonical functor <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"script\">C</mi><mo>→</mo><mrow><mi mathvariant=\"normal\">S</mi><mi mathvariant=\"normal\">h</mi></mrow><mo stretchy=\"false\">(</mo><mi mathvariant=\"script\">C</mi><mo separator=\"true\">,</mo><mi>J</mi><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">\\mathcal{C} \\to \\mathrm{Sh}(\\mathcal{C}, J)</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathcal\" style=\"margin-right:0.05834em;\">C</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">→</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord\"><span class=\"mord mathrm\">Sh</span></span><span class=\"mopen\">(</span><span class=\"mord mathcal\" style=\"margin-right:0.05834em;\">C</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.09618em;\">J</span><span class=\"mclose\">)</span></span></span></span> is neither full nor faithful in general! Taking indicator sheaves on a topological space is clearly fully faithful, right? So this seems to be an issue that distinguishes general sites from topological spaces (and locales I guess).</p>",
+        "id": 240912462,
+        "sender_full_name": "Tobias Fritz",
+        "timestamp": 1622537627
+    },
+    {
+        "content": "<p>The canonical functor is a fully faithful embedding iff the coverage is subcanonical.</p>",
+        "id": 240912678,
+        "sender_full_name": "Zhen Lin Low",
+        "timestamp": 1622537726
+    },
+    {
+        "content": "<p>Oh yes, that makes sense! Then it's clear by Yoneda.</p>",
+        "id": 240912789,
+        "sender_full_name": "Tobias Fritz",
+        "timestamp": 1622537782
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276702\">Tobias Fritz</span> <a href=\"#narrow/stream/229136-theory.3A-category.20theory/topic/directional.20structured.20cospans.3F/near/240912462\">said</a>:</p>\n<blockquote>\n<p><span class=\"user-mention silent\" data-user-id=\"277473\">Morgan Rogers (he/him)</span> <a href=\"#narrow/stream/229136-theory.3A-category.20theory/topic/directional.20structured.20cospans.3F/near/240909135\">said</a>:</p>\n<blockquote>\n<p>It might not go in the direction you need, but the dual of the situation you're describing appeared in a paper I finished <a href=\"https://arxiv.org/pdf/2101.04015.pdf\">earlier this year</a>; see Section 2.2 in that preprint: it involves spans where the right leg is arbitrary and the left leg is in a \"stable class\" of morphisms.</p>\n</blockquote>\n<p>Thanks, that is nice, and it's interesting to know that this gives a way to describe the hom-sets between objects of the original site in a sheaf topos. But as far as I understand, those spans are unstructured spans, so it isn't quite what we need.</p>\n</blockquote>\n<p>Ah fair enough, from the request it wasn't clear that you still were leaning on structured things. That said, it could well be possible to translate the (dual of) the structured cospan construction to a topos-theoretic setting via morphisms of sites. I don't have enough insight into the nature of applications of these things to comment on whether that would be a worthwhile endeavour <span aria-label=\"wink\" class=\"emoji emoji-1f609\" role=\"img\" title=\"wink\">:wink:</span></p>",
+        "id": 240917082,
+        "sender_full_name": "Morgan Rogers (he/him)",
+        "timestamp": 1622540264
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"277391\">Cole Comfort</span> <a href=\"#narrow/stream/229136-theory.3A-category.20theory/topic/directional.20structured.20cospans.3F/near/240910745\">said</a>:</p>\n<blockquote>\n<p><a href=\"https://arxiv.org/pdf/2102.04386.pdf\">My work</a> probably isn't very enlightening,  but <a href=\"https://www.sciencedirect.com/science/article/pii/S0304397500003820\">partial map categories</a> are just plain old categories of spans where the left leg is monic and this generalized to the structured span case.</p>\n</blockquote>\n<p>Yep, I suspect that the construction that we're looking for and your particular categories of structured spans would be instances of the same general framework. In any case, that's a very cool paper!</p>",
+        "id": 240919863,
+        "sender_full_name": "Tobias Fritz",
+        "timestamp": 1622541927
+    },
+    {
+        "content": "<p>The first study of span categories with legs in distinct classes of maps is probably Quillen's Q-constrcution from 1972 (but it is not unlikely that Bénabou and Yoneda considered this earlier, even if they didn't write about it).</p>",
+        "id": 240923978,
+        "sender_full_name": "Joachim Kock",
+        "timestamp": 1622544655
+    },
+    {
+        "content": "<p>The Feynman category of graphs in the sense of Kaufmann and Ward is actually a category of directional structured cospans. They define it using the Borisov-Manin category of graphs by restricting the objects to be disjoint unions of corollas. This is a bit intricate, mostly because the Borisov-Manin category is very ad hoc.</p>\n<p>The point is that in the BM category, every morphism factors as a grafting followed by a compression, so in the KW category, the arrows can be described as being grafting-followed-by-compression, where the end objects are disjoint unions of corollas but the middle object is allowed to be a general graph.</p>\n<p>Now by a theorem of mine [Cospan construction of the graph category of Borisov and Manin, <a href=\"https://arxiv.org/abs/1611.10342]\">https://arxiv.org/abs/1611.10342]</a> the BM category is the category of cospans in the Joyal-Kock category of graphs in which the right leg is active and the left leg is inert (generic and free in the original terminology). Now the BM graftings correspond to JK inert maps, and the BM compressions correspond to JK active maps backwards, and altogether the BM category is the JK category with the active maps 'reversed', so that the grafting-followed-by-compression become inert-active cospans.</p>\n<p>In conclusion, the Kaufmann-Ward Feynman category of graphs is the directional structured cospan category obtained from the JK category by taking inert-active cospans and allowing only disjoint-unions-of-corollas as 'feet'. This is an example of structured cospans via the inclusion of disjoint-unions-of-corollas into the category if all graphs. (The notion of structured cospans did not exist at that time (I think), but the example is mentioned in Remark 6.7 of the paper.)</p>",
+        "id": 240924691,
+        "sender_full_name": "Joachim Kock",
+        "timestamp": 1622545099
+    },
+    {
+        "content": "<p>What about categories of fractions? NLab points me to an article from 1967 (Gabriel and Zisman).</p>",
+        "id": 240924931,
+        "sender_full_name": "Chad Nester",
+        "timestamp": 1622545244
+    },
+    {
+        "content": "<p>It’s entirely possible that they don’t consider categories of spans — I haven’t read it!</p>",
+        "id": 240925019,
+        "sender_full_name": "Chad Nester",
+        "timestamp": 1622545294
+    },
+    {
+        "content": "<p>I don't think GZ used categories of spans explicitly, but you could certainly use them in a calculus of fractions situation. Jardine calls them \"cocycles\" in this context.</p>",
+        "id": 240930389,
+        "sender_full_name": "Zhen Lin Low",
+        "timestamp": 1622548766
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276702\">Tobias Fritz</span> <a href=\"#narrow/stream/229136-theory.3A-category.20theory/topic/directional.20structured.20cospans.3F/near/240919863\">said</a>:</p>\n<blockquote>\n<p><span class=\"user-mention silent\" data-user-id=\"277391\">Cole Comfort</span> <a href=\"#narrow/stream/229136-theory.3A-category.20theory/topic/directional.20structured.20cospans.3F/near/240910745\">said</a>:</p>\n<blockquote>\n<p><a href=\"https://arxiv.org/pdf/2102.04386.pdf\">My work</a> probably isn't very enlightening,  but <a href=\"https://www.sciencedirect.com/science/article/pii/S0304397500003820\">partial map categories</a> are just plain old categories of spans where the left leg is monic and this generalized to the structured span case.</p>\n</blockquote>\n<p>Yep, I suspect that the construction that we're looking for and your particular categories of structured spans would be instances of the same general framework. In any case, that's a very cool paper!</p>\n</blockquote>\n<p>Yes, one thing I have thought about is that there is a certain condition regarding the factorization of monics which allows one to glue a (structured) partial map  category with its opposite, up to structured spans of monics in order to obtain the full structured span category.</p>",
+        "id": 240933142,
+        "sender_full_name": "Cole Comfort",
+        "timestamp": 1622550371
+    },
+    {
+        "content": "<p>Is what you want achievable by just constructing the whole bicategory of structured cospans and then restricting to a sub-bicategory consisting of the cospans whose legs live where you want them to?</p>",
+        "id": 240948482,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1622557013
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276702\">Tobias Fritz</span> <a href=\"#narrow/stream/229136-theory.3A-category.20theory/topic/directional.20structured.20cospans.3F/near/240900153\">said</a>:</p>\n<blockquote>\n<p>Yes, that's the sort of thing I have in mind. <span class=\"user-mention silent\" data-user-id=\"277391\">Cole Comfort</span>, <span class=\"user-mention silent\" data-user-id=\"275901\">Jules Hedges</span>, are those works of yours already out? That could possibly still save us some time, even if nobody has yet worked out the general abstract framework as indicated by John.</p>\n</blockquote>\n<p>It took me a while to figure out what paper I was thinking of - it was <a href=\"https://arxiv.org/abs/1903.03671\">https://arxiv.org/abs/1903.03671</a> by Mike Johnson and Brendan Fong, specifically the main results from around section 5 involve spans in a certain category whose left legs satisfy an extra condition</p>",
+        "id": 240962952,
+        "sender_full_name": "Jules Hedges",
+        "timestamp": 1622562791
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276777\">Mike Shulman</span> <a href=\"#narrow/stream/229136-theory.3A-category.20theory/topic/directional.20structured.20cospans.3F/near/240948482\">said</a>:</p>\n<blockquote>\n<p>Is what you want achievable by just constructing the whole bicategory of structured cospans and then restricting to a sub-bicategory consisting of the cospans whose legs live where you want them to?</p>\n</blockquote>\n<p>Probably yes, and I'm thinking that this is what we'll most likely end up doing, although it does feel like a bit of a hack. In our case, this amounts to constructing free Markov categories (more precisely, actually free <a href=\"https://arxiv.org/abs/1709.00322\">CD categories</a>) as subcategories of the corresponding <a href=\"https://arxiv.org/abs/1712.09495\">free hypergraph categories</a>.</p>",
+        "id": 241063261,
+        "sender_full_name": "Tobias Fritz",
+        "timestamp": 1622575713
+    },
+    {
+        "content": "<p>I think that there is this menagerie of different subcategories of bicategories of relations whose relationships to each other are relatively unexplored.</p>",
+        "id": 241078832,
+        "sender_full_name": "Cole Comfort",
+        "timestamp": 1622583173
+    }
+]

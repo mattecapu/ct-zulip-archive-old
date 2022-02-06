@@ -1,0 +1,290 @@
+[
+    {
+        "content": "<p>Hello all! This is the thread of discussion for the talk of Micah Halter, Evan Patterson, Andrew Baas and James Fairbanks, \"Compositional Scientific Computing with Catlab and SemanticModels\".<br>\nDate and time: Wednesday July 8, 16:00 UTC.<br>\nZoom meeting: <a href=\"https://mit.zoom.us/j/7055345747\">https://mit.zoom.us/j/7055345747</a><br>\nYouTube live stream: <a href=\"https://www.youtube.com/watch?v=jCOi0kCYCeU&amp;list=PLCOXjXDLt3pZDHGYOIqtg1m1lLOURjl1Q\">https://www.youtube.com/watch?v=jCOi0kCYCeU&amp;list=PLCOXjXDLt3pZDHGYOIqtg1m1lLOURjl1Q</a></p>\n<div class=\"youtube-video message_inline_image\"><a data-id=\"jCOi0kCYCeU\" href=\"https://www.youtube.com/watch?v=jCOi0kCYCeU&amp;list=PLCOXjXDLt3pZDHGYOIqtg1m1lLOURjl1Q\"><img src=\"https://i.ytimg.com/vi/jCOi0kCYCeU/default.jpg\"></a></div>",
+        "id": 202643641,
+        "sender_full_name": "Paolo Perrone",
+        "timestamp": 1593655730
+    },
+    {
+        "content": "<p>We start again in 4 minutes!</p>",
+        "id": 203285496,
+        "sender_full_name": "Paolo Perrone",
+        "timestamp": 1594223761
+    },
+    {
+        "content": "<p>I think it's worth talking more about the similarity between Catlab and DisCoPy. People have Opinions about which language features are better than others and can argue in circles forever. Maybe it's a good idea to have multiple implementations of the same thing for that reason. But I worry about large scale duplicated effort between them</p>",
+        "id": 203293900,
+        "sender_full_name": "Jules Hedges",
+        "timestamp": 1594227700
+    },
+    {
+        "content": "<p>Is anyone implementing category theory in a statically typed language?  I'm surprised that so many category theorists are using languages with dynamic types, which seem to me to be the opposite of the way category theory teaches us to think.</p>",
+        "id": 203295476,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1594228461
+    },
+    {
+        "content": "<p>Yes, Statebox have a big library in Idris called idris-ct</p>",
+        "id": 203295604,
+        "sender_full_name": "Jules Hedges",
+        "timestamp": 1594228544
+    },
+    {
+        "content": "<p>Jules beat me to it: <a href=\"https://github.com/statebox/idris-ct\">https://github.com/statebox/idris-ct</a></p>",
+        "id": 203295672,
+        "sender_full_name": "Eigil Rischel",
+        "timestamp": 1594228568
+    },
+    {
+        "content": "<p>Yes, open games are currently prototyped in Haskell, but I'm considering porting to Julia for various reasons</p>",
+        "id": 203295710,
+        "sender_full_name": "Jules Hedges",
+        "timestamp": 1594228589
+    },
+    {
+        "content": "<p>can you do coends in Julia?</p>",
+        "id": 203295733,
+        "sender_full_name": "Toby Smithe",
+        "timestamp": 1594228603
+    },
+    {
+        "content": "<p>No, I don't think the question even really makes sense, but you can for sure fake it enough to work</p>",
+        "id": 203295771,
+        "sender_full_name": "Jules Hedges",
+        "timestamp": 1594228628
+    },
+    {
+        "content": "<p>In haskell, the typesystem statically prevents you from accessing the bound type in an invalid way. In any other language you can make it private and just trust the programmer not to do anything nasty</p>",
+        "id": 203295894,
+        "sender_full_name": "Jules Hedges",
+        "timestamp": 1594228691
+    },
+    {
+        "content": "<p>I'm with Mike. I wish Julia had dependent types! Otherwise, it's such a nice language. A proper type theory would make it perfect.</p>",
+        "id": 203295895,
+        "sender_full_name": "Toby Smithe",
+        "timestamp": 1594228692
+    },
+    {
+        "content": "<p>Hi Jules and Toby, let's talk more about open games in Catlab, I think we need to do more with optics in general.</p>",
+        "id": 203295897,
+        "sender_full_name": "James Fairbanks",
+        "timestamp": 1594228694
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"275927\">James Fairbanks</span> <a href=\"#narrow/stream/243068-ACT-2020/topic/July.208.3A.20Micah.20Halter.20et.20al.2E's.20talk/near/203295897\">said</a>:</p>\n<blockquote>\n<p>Hi Jules and Toby, let's talk more about open games in Catlab, I think we need to do more with optics in general.</p>\n</blockquote>\n<p>yes I'd love to think about this!</p>",
+        "id": 203295919,
+        "sender_full_name": "Toby Smithe",
+        "timestamp": 1594228710
+    },
+    {
+        "content": "<p>This twitter thread has a bunch of discussion about the mechanics of open games in dynamic languages: <a href=\"https://twitter.com/_julesh_/status/1247115077079228422\">https://twitter.com/_julesh_/status/1247115077079228422</a></p>\n<div class=\"inline-preview-twitter\"><div class=\"twitter-tweet\"><a href=\"https://twitter.com/_julesh_/status/1247115077079228422\"><img class=\"twitter-avatar\" src=\"https://pbs.twimg.com/profile_images/972424350736486401/RyVTQIgf_normal.jpg\"></a><p>So here's a recurring question. My open games tool (<a href=\"https://t.co/3BAqOHIaSI\">https://github.com/jules-hedges/open-games-hs</a>) is written for Haskell, but obviously I don't expect my target users to pick up Haskell. Ideally it would target something like Python. I have no idea how easy or hard that would be, but I'd guess hard</p><span>- julesh (@_julesh_)</span></div></div>",
+        "id": 203296051,
+        "sender_full_name": "Eigil Rischel",
+        "timestamp": 1594228801
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276777\">Mike Shulman</span> <a href=\"#narrow/stream/243068-ACT-2020/topic/July.208.3A.20Micah.20Halter.20et.20al.2E's.20talk/near/203295476\">said</a>:</p>\n<blockquote>\n<p>Is anyone implementing category theory in a statically typed language?  I'm surprised that so many category theorists are using languages with dynamic types, which seem to me to be the opposite of the way category theory teaches us to think.</p>\n</blockquote>\n<p>As others have mentioned, doing CT in a statically typed language is the standard approach, and there is a long tradition of that in the Haskell community, for example. In principle, I'm not opposed at all to that approach, but where I come from (statistics and traditional applied math generally), the need to support scientific and numerical computation in a practical way is a paramount. Right now, Julia seems like the best compromise for a scientific computing language with reasonable programming language features.</p>",
+        "id": 203296606,
+        "sender_full_name": "Evan Patterson",
+        "timestamp": 1594229092
+    },
+    {
+        "content": "<p><span class=\"user-mention\" data-user-id=\"275965\">@Evan Patterson</span>, what do you think are Python's main disadvantages compared to Julia?</p>",
+        "id": 203296811,
+        "sender_full_name": "Aleksandar Makelov",
+        "timestamp": 1594229190
+    },
+    {
+        "content": "<p>For us the most important thing is reliability instead. This is why we shoose to implement our libraries using formally verified languages. Idris is a good compromise here because it has dependent types, but it's really aimed at industry strength production</p>",
+        "id": 203296816,
+        "sender_full_name": "Fabrizio Genovese",
+        "timestamp": 1594229192
+    },
+    {
+        "content": "<p>Right, if formal verification is your prime directive, then Julia is not going to help you much. So I think a lot depends on what you're trying to accomplish. There is definitely room for multiple approaches.</p>",
+        "id": 203297032,
+        "sender_full_name": "Evan Patterson",
+        "timestamp": 1594229305
+    },
+    {
+        "content": "<p>It' not my prime directive, it's our customer's <span aria-label=\"grinning\" class=\"emoji emoji-1f600\" role=\"img\" title=\"grinning\">:grinning:</span></p>",
+        "id": 203297126,
+        "sender_full_name": "Fabrizio Genovese",
+        "timestamp": 1594229342
+    },
+    {
+        "content": "<p>Right, but Python and Julia seem very similar to each other. They are both dynamic and both used for heavy numerics</p>",
+        "id": 203297167,
+        "sender_full_name": "Jules Hedges",
+        "timestamp": 1594229354
+    },
+    {
+        "content": "<p>Right, there are two separate threads going on here, one about Julia vs static/dependently typed languages and one about Julia vs Python. Let me try to give my perspective on the second.</p>",
+        "id": 203297373,
+        "sender_full_name": "Evan Patterson",
+        "timestamp": 1594229450
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"275965\">Evan Patterson</span> <a href=\"#narrow/stream/243068-ACT-2020/topic/July.208.3A.20Micah.20Halter.20et.20al.2E's.20talk/near/203296606\">said</a>:</p>\n<blockquote>\n<p>As others have mentioned, doing CT in a statically typed language is the standard approach, and there is a long tradition of that in the Haskell community, for example. In principle, I'm not opposed at all to that approach, but where I come from (statistics and traditional applied math generally), the need to support scientific and numerical computation in a practical way is a paramount. Right now, Julia seems like the best compromise for a scientific computing language with reasonable programming language features.</p>\n</blockquote>\n<p>Is there some reason that \"supporting scientific and numerical computation in a practical way\" leads to the use of dynamic types?  A priori they don't seem related to me; in fact it seems on a quick reading that part of what makes Julia performant is the ability of its compiler to optimize away the dynamic types!</p>",
+        "id": 203299429,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1594230456
+    },
+    {
+        "content": "<p>As Jules says, both Python and Julia are commonly used for numerical computing. Python has going for it that it is easy to use and is popular in the (huge) ML community, so it has lots of mindshare. But Python suffers badly from what is sometimes called the \"two language problem\": it is too slow to directly support intensive computing, and so numerical code and data structures are written in languages like C, C++, and Fortran and wrapped for use in vectorized computing in Python. Julia was created to solve this problem, to have an easy-to-use language that is fast enough that your inner loops don't have to be written in C. Moreover, in ACT, a lot of the computing is also over discrete structures like graphs, for which farming out to other languages for speed becomes even more tedious.</p>\n<p>Julia also has a number of language features, not possessed by Python, that are surprisingly well matched to ACT. One is its system for multiple type dispatch, so you can have a single generic function <code>compose</code> that works across any category. Good support for Unicode operators allows nice syntactic sugar for these functions, which matches the standard mathematical notation. Julia also has support for Lisp-style metaprogramming, which we use extensively. For example, the system for GATs (generalized algebraic theories) in Catlab effectively implements a simple form of dependent typing in Julia using metaprogramming.</p>",
+        "id": 203299438,
+        "sender_full_name": "Evan Patterson",
+        "timestamp": 1594230459
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276777\">Mike Shulman</span> <a href=\"#narrow/stream/243068-ACT-2020/topic/July.208.3A.20Micah.20Halter.20et.20al.2E's.20talk/near/203299429\">said</a>:</p>\n<blockquote>\n<p>Is there some reason that \"supporting scientific and numerical computation in a practical way\" leads to the use of dynamic types?  A priori they don't seem related to me; in fact it seems on a quick reading that part of what makes Julia performant is the ability of its compiler to optimize away the dynamic types!</p>\n</blockquote>\n<p>I totally agree. There is no reason that this should necessarily lead to dynamic types and is in some ways opposed to it. Historically scientists and engineers have resisted types, but probably that's just because the classic languages with static types, like C, are really unpleasant.</p>\n<p>Scientific computing currently seems to be converging not to dynamic typing but towards \"gradual tying,\" where types are optional but recommended, in part because people have gradually realized that types are actually good for avoiding programming errors. Types in Julia are like this. In fact, if you look at the Catlab codebase, you'll see that basically every function is annotated with types, because we like to write in that style.</p>",
+        "id": 203300085,
+        "sender_full_name": "Evan Patterson",
+        "timestamp": 1594230777
+    },
+    {
+        "content": "<p>My understanding of \"gradual typing\" is that when the optional types are given, they should be static, i.e. checked at compile time.  But my brief reading and experiments with Julia suggest that even when type annotations are given they are only checked at runtime.  Is that correct?</p>",
+        "id": 203300308,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1594230886
+    },
+    {
+        "content": "<p>I would second all of Evan's points. We find that multiple dispatch really lets you write code that looks like the math and we heavily exploit the lisp style macros to create DSLs embedded in Julia. Dynamic types are really popular in scientific computing because the users are scientists first and programmers seconds. You have to really think about types a lot in statically typed languages and in dynamic languages you can just write code without thinking about types too much. Julia gives you the best of both worlds because of gradual typing.</p>",
+        "id": 203300324,
+        "sender_full_name": "James Fairbanks",
+        "timestamp": 1594230897
+    },
+    {
+        "content": "<p>julia has a complicated relationship with \"compile time\" and \"run time\"</p>",
+        "id": 203300358,
+        "sender_full_name": "James Fairbanks",
+        "timestamp": 1594230915
+    },
+    {
+        "content": "<p>because it uses a just in time compiler, there is more than one compile time during the execution of the program. so yes the gradual types are static at compile time. There is just more than one compile time per execution</p>",
+        "id": 203300486,
+        "sender_full_name": "James Fairbanks",
+        "timestamp": 1594230968
+    },
+    {
+        "content": "<p>this is really important for us, because things like CSet{C} can be generated by runtime values of C.</p>",
+        "id": 203300744,
+        "sender_full_name": "James Fairbanks",
+        "timestamp": 1594231095
+    },
+    {
+        "content": "<p>Yes, everything I've seen about Julia seems pretty great except for the dynamicness of its typing.  (Well, and maybe the 1-based array indexing.)</p>",
+        "id": 203301457,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1594231447
+    },
+    {
+        "content": "<p>I thought mathematicians liked 1-based indexing? <span aria-label=\"slight smile\" class=\"emoji emoji-1f642\" role=\"img\" title=\"slight smile\">:slight_smile:</span></p>",
+        "id": 203301568,
+        "sender_full_name": "Evan Patterson",
+        "timestamp": 1594231498
+    },
+    {
+        "content": "<p>Maybe you're thinking of those people who call themselves mathematicians but don't admit 0 as a natural number?</p>",
+        "id": 203301647,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1594231537
+    },
+    {
+        "content": "<p>I think I see what you mean about the JIT.  But in practice it seems to me that this is less useful than true static typing.  Consider the following example:</p>\n<div class=\"codehilite\"><pre><span></span><code>function foo(x::Int)\n  x\nend\n\nfunction bar(y::String)\n  foo(y)\nend\n</code></pre></div>\n\n\n<p>It seems that this doesn't produce an error until <code>bar</code> is called.  Maybe that's technically \"compile time\" because I guess the code isn't compiled until it's used, but it seems to me that it means that instead of being able to write my program, compile it, and be sure as soon as it compiles that I didn't make any type errors, I need to carefully write tests that cover all possible execution paths in order to be sure that \"all the code is compiled\" and therefore typechecked.  That doesn't feel like static typing to me.</p>",
+        "id": 203302010,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1594231720
+    },
+    {
+        "content": "<p>Ok let's take the flame war about natural numbers elsewhere, it is definitely off-topic here.  (-:O</p>",
+        "id": 203302087,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1594231778
+    },
+    {
+        "content": "<p>Sorry.</p>",
+        "id": 203302094,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1594231782
+    },
+    {
+        "content": "<p>yeah, it definitely is a compromise relative to statically typed language for your purposes. But in scientific computing if you want to run at the largest scales aka \"the petaflop club\", your options are C/C++, Fortran, and Julia  <a href=\"https://juliacomputing.com/case-studies/celeste.html\">https://juliacomputing.com/case-studies/celeste.html</a></p>",
+        "id": 203302312,
+        "sender_full_name": "James Fairbanks",
+        "timestamp": 1594231887
+    },
+    {
+        "content": "<p>is there currently a Julia library comparable to pytorch/tensorflow/etc in capability?</p>",
+        "id": 203302431,
+        "sender_full_name": "Aleksandar Makelov",
+        "timestamp": 1594231956
+    },
+    {
+        "content": "<p>Given the huge amount of money Google has spent on TF, there is not an equally powerful library in Julia. You can use TF from Julia with Tensorflow.jl which links against the standard TF tools, and you can use a pure julia implementation DNNs with Flux.jl which is better for doing DNN research because it is pure julia with no dependence on black box C++ libs.</p>",
+        "id": 203302734,
+        "sender_full_name": "James Fairbanks",
+        "timestamp": 1594232126
+    },
+    {
+        "content": "<p>Maybe at ACT 2021 we will have a Catlab implementation of ParaParaEuc or <span class=\"user-mention\" data-user-id=\"277554\">@Toby Smithe</span>'s optics of learning framework</p>",
+        "id": 203302948,
+        "sender_full_name": "James Fairbanks",
+        "timestamp": 1594232246
+    },
+    {
+        "content": "<p>Given that Julia <em>does</em> know how to compile and to check types when it compiles, couldn't there be some flag one could pass to it instructing it to compile (and hence typecheck) everything rather than waiting for JIT?  (I suppose probably this wouldn't catch everything since with parametrized types etc. there might always be some code that has to be compiled JIT, but it would be better than nothing.)</p>",
+        "id": 203302955,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1594232249
+    },
+    {
+        "content": "<p>People are working on that for embedded platforms.</p>",
+        "id": 203302994,
+        "sender_full_name": "James Fairbanks",
+        "timestamp": 1594232268
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"275927\">James Fairbanks</span> <a href=\"#narrow/stream/243068-ACT-2020/topic/July.208.3A.20Micah.20Halter.20et.20al.2E's.20talk/near/203302948\">said</a>:</p>\n<blockquote>\n<p>Maybe at ACT 2021 we will have a Catlab implementation of ParaParaEuc or <span class=\"user-mention silent\" data-user-id=\"277554\">Toby Smithe</span>'s optics of learning framework</p>\n</blockquote>\n<p>It would be great if we can make that happen!</p>",
+        "id": 203303013,
+        "sender_full_name": "Toby Smithe",
+        "timestamp": 1594232273
+    },
+    {
+        "content": "<p>You want to hit the AACT jitsi and chat?</p>",
+        "id": 203303066,
+        "sender_full_name": "James Fairbanks",
+        "timestamp": 1594232287
+    },
+    {
+        "content": "<p><a href=\"https://meet.jit.si/ACT2020-AppliedApplied\">https://meet.jit.si/ACT2020-AppliedApplied</a></p>",
+        "id": 203303137,
+        "sender_full_name": "James Fairbanks",
+        "timestamp": 1594232327
+    },
+    {
+        "content": "<p>Yes, but right now I'm due to have supper..! (It's evening in Oxford now) Let's arrange something :-)</p>",
+        "id": 203303279,
+        "sender_full_name": "Toby Smithe",
+        "timestamp": 1594232396
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"275927\">James Fairbanks</span> <a href=\"#narrow/stream/243068-ACT-2020/topic/July.208.3A.20Micah.20Halter.20et.20al.2E's.20talk/near/203302994\">said</a>:</p>\n<blockquote>\n<p>People are working on that for embedded platforms.</p>\n</blockquote>\n<p>Yes, it's a practical problem for certain kinds of deployments. Work in progress on this is happening at <a href=\"https://github.com/JuliaLang/PackageCompiler.jl\">PackageCompiler.jl</a>.</p>",
+        "id": 203303399,
+        "sender_full_name": "Evan Patterson",
+        "timestamp": 1594232444
+    },
+    {
+        "content": "<p>Building off what <span class=\"user-mention\" data-user-id=\"275927\">@James Fairbanks</span> presented in our talk this afternoon, I am going to drop some links here of working examples using Catlab and other AlgebraicJulia packages as a way to rapidly develop different types of models specifically on using open petri nets and decorated cospans. AlgebraicPetri.jl is the package that connects Catlab as a categorical interface for the Petri net simulation library in Julia Petri.jl. A few basic examples can be found in the AlgebraicPetri.jl documentation:</p>\n<ul>\n<li><a href=\"https://algebraicjulia.github.io/AlgebraicPetri.jl/dev/examples/predation/lotka-volterra/\">Lotka-Volterra Ecology Model</a></li>\n<li><a href=\"https://algebraicjulia.github.io/AlgebraicPetri.jl/dev/examples/covid/epidemiology/\">Basic Epidemiology Models</a></li>\n<li><a href=\"https://algebraicjulia.github.io/AlgebraicPetri.jl/dev/examples/covid/covid/\">Multi-City COVID-19 Model</a></li>\n</ul>\n<p>And lastly, here are a couple links to the repositories for <a href=\"https://github.com/AlgebraicJulia/Catlab.jl\">Catlab.jl</a> and <a href=\"https://github.com/AlgebraicJulia/AlgebraicPetri.jl\">AlgebraicPetri.jl</a></p>",
+        "id": 203319923,
+        "sender_full_name": "Micah Halter",
+        "timestamp": 1594240757
+    },
+    {
+        "content": "<p>Here's the video!<br>\n<a href=\"https://www.youtube.com/watch?v=Q5BzzkNDpPE&amp;list=PLCOXjXDLt3pYot9VNdLlZqGajHyZUywdI\">https://www.youtube.com/watch?v=Q5BzzkNDpPE&amp;list=PLCOXjXDLt3pYot9VNdLlZqGajHyZUywdI</a></p>\n<div class=\"youtube-video message_inline_image\"><a data-id=\"Q5BzzkNDpPE\" href=\"https://www.youtube.com/watch?v=Q5BzzkNDpPE&amp;list=PLCOXjXDLt3pYot9VNdLlZqGajHyZUywdI\"><img src=\"https://i.ytimg.com/vi/Q5BzzkNDpPE/default.jpg\"></a></div>",
+        "id": 203335249,
+        "sender_full_name": "Paolo Perrone",
+        "timestamp": 1594250058
+    }
+]

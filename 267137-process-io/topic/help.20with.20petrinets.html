@@ -1,0 +1,77 @@
+---
+layout: archive
+title: Zulip Chat Archive
+permalink: /stream/267137-process-io/topic/help.20with.20petrinets.html
+---
+
+<h2>Stream: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/267137-process-io/index.html">process-io</a></h2>
+<h3>Topic: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/267137-process-io/topic/help.20with.20petrinets.html">help with petrinets</a></h3>
+
+<hr>
+
+<base href="https://categorytheory.zulipchat.com/">
+
+<head><link href="https://mattecapu.github.io/ct-zulip-archive/style.css" rel="stylesheet"></head>
+
+{% raw %}
+
+<a name="218945640"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/267137-process-io/topic/help%20with%20petrinets/near/218945640" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> zkao <a href="https://mattecapu.github.io/ct-zulip-archive/stream/267137-process-io/topic/help.20with.20petrinets.html#218945640">(Dec 05 2020 at 18:00)</a>:</h4>
+<p>Early disco partygoer here with limited knowledge of petrinets, wiring diagrams or category theory.</p>
+<p>Say there is a transition <code>g</code> that just needs to know that place <code>B</code> is occupied in order to be enabled. But it does not need to "consume" <code>B</code> permanently. </p>
+<p>What is the best way to represent this?</p>
+<p>(1)</p>
+<div class="codehilite"><pre><span></span><code>f: A -&gt; B.
+g: B -&gt; C B.        ;; uses B and returns it back
+h: B -&gt; D.           ;; consumes B
+</code></pre></div>
+<p>Mostly works but in this case<code>g</code> can be called many times, producing many <code>C</code> and <code>h</code>may never called. If <code>g</code> could be called only once this would be good. </p>
+<p>And this problem can be fixed by creating a new place <code>Once</code> and initializing it with 1 token:</p>
+<div class="codehilite"><pre><span></span><code>f: A -&gt; B.
+g: B Once -&gt; C B.        ;; uses B and returns it back
+h: B -&gt; D.                       ;; consumes B
+</code></pre></div>
+<p>This works good</p>
+<p>(2)</p>
+<div class="codehilite"><pre><span></span><code>f: A -&gt; B.
+copy: B -&gt; B0 B1. ;; specialize types
+g: B0 -&gt; C.
+h: B1 -&gt; D.
+</code></pre></div>
+<p>always work but verbose -- make petrinets large, very quick</p>
+<p>(3)</p>
+<div class="codehilite"><pre><span></span><code>f: A -&gt; B B.       ;; creates 2 tokens
+g: B -&gt; C.
+h: B -&gt; D.
+</code></pre></div>
+<p>weird because <code>h</code> (or <code>g</code>) can be called twice</p>
+
+
+
+<a name="219190474"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/267137-process-io/topic/help%20with%20petrinets/near/219190474" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Jelle Herold <a href="https://mattecapu.github.io/ct-zulip-archive/stream/267137-process-io/topic/help.20with.20petrinets.html#219190474">(Dec 08 2020 at 10:18)</a>:</h4>
+<p>You want to avoid case 1 because it makes the state space infinite as you noted.<br>
+Essentially you would need to copy, and 2 or 3 is therefor better.<br>
+There are subtleties, like which combination of <code>g;h</code>, <code>h;g</code>, <code>h;h</code>, <code>g;g</code>  can you fire?</p>
+<div class="codehilite"><pre><span></span><code>1 = h or g;h or g;g;h or g;h;g;g;g etc
+1&#39; = h or g;h (with Once)
+2 = g;h or h;g
+</code></pre></div>
+<p>What do you want the behavior to be? Can you explain the use case here, to see if there is another way to deal with it?</p>
+
+
+
+<a name="219197857"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/267137-process-io/topic/help%20with%20petrinets/near/219197857" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Fabrizio Genovese <a href="https://mattecapu.github.io/ct-zulip-archive/stream/267137-process-io/topic/help.20with.20petrinets.html#219197857">(Dec 08 2020 at 11:51)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="365296">zkao</span> <a href="#narrow/stream/267137-process-io/topic/help.20with.20petrinets/near/218945640">said</a>:</p>
+<blockquote>
+<p>Early disco partygoer here with limited knowledge of petrinets, wiring diagrams or category theory.</p>
+<p>Say there is a transition <code>g</code> that just needs to know that place <code>B</code> is occupied in order to be enabled. But it does not need to "consume" <code>B</code> permanently. </p>
+</blockquote>
+<p>There's a way to represent this as a guarded net on a particularly "strange" semantics. We are writing a paper about it. Eventually this will be implemented in the software one day. For now I'd follow <span class="user-mention" data-user-id="277920">@Jelle Herold</span> 's suggestion, he has great experience in modelling all sorts of stuff using nets <span aria-label="smile" class="emoji emoji-1f642" role="img" title="smile">:smile:</span></p>
+
+
+
+{% endraw %}
+
+<hr><p>Last updated: Jan 30 2022 at 00:30 UTC</p>

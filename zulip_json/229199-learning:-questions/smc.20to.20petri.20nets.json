@@ -1,0 +1,572 @@
+[
+    {
+        "content": "<p>What's the right (or left?) part of the adjunction between SMCs and Petri nets? I mean <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>U</mi></mrow><annotation encoding=\"application/x-tex\">U</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.10903em;\">U</span></span></span></span> functor going  <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>S</mi><mi>M</mi><mi>C</mi><mo>→</mo><mi>P</mi><mi>N</mi></mrow><annotation encoding=\"application/x-tex\">SMC \\to PN</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.05764em;\">S</span><span class=\"mord mathnormal\" style=\"margin-right:0.10903em;\">M</span><span class=\"mord mathnormal\" style=\"margin-right:0.07153em;\">C</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">→</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.13889em;\">P</span><span class=\"mord mathnormal\" style=\"margin-right:0.10903em;\">N</span></span></span></span>.<br>\nI readily find the construction of <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>F</mi><mo>:</mo><mi>P</mi><mi>N</mi><mo>→</mo><mi>S</mi><mi>M</mi><mi>C</mi></mrow><annotation encoding=\"application/x-tex\">F : PN \\to SMC</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.13889em;\">F</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">:</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.13889em;\">P</span><span class=\"mord mathnormal\" style=\"margin-right:0.10903em;\">N</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">→</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.05764em;\">S</span><span class=\"mord mathnormal\" style=\"margin-right:0.10903em;\">M</span><span class=\"mord mathnormal\" style=\"margin-right:0.07153em;\">C</span></span></span></span> but I couldn't quickly find a reference to the other part</p>",
+        "id": 235824679,
+        "sender_full_name": "Matteo Capucci (he/him)",
+        "timestamp": 1619177276
+    },
+    {
+        "content": "<p>Because it's not an easy question</p>",
+        "id": 235831901,
+        "sender_full_name": "Fabrizio Genovese",
+        "timestamp": 1619181105
+    },
+    {
+        "content": "<p>There are multiple possible answers, one of them is: <br>\nUse the net to generate a commutative monoidal category, which is a particular case of SMC</p>",
+        "id": 235832023,
+        "sender_full_name": "Fabrizio Genovese",
+        "timestamp": 1619181164
+    },
+    {
+        "content": "<p>The other is: Use a Petri net to generate a pre-net, and use this pre-net to generate the SMC</p>",
+        "id": 235832079,
+        "sender_full_name": "Fabrizio Genovese",
+        "timestamp": 1619181188
+    },
+    {
+        "content": "<p>If you check here: <a href=\"https://arxiv.org/abs/2101.04238\">https://arxiv.org/abs/2101.04238</a> just look at the diagram, all the paths from Petri to SMC answer your questions</p>",
+        "id": 235832147,
+        "sender_full_name": "Fabrizio Genovese",
+        "timestamp": 1619181217
+    },
+    {
+        "content": "<p>all the adjunctions are spelled out in great detail in the paper</p>",
+        "id": 235832168,
+        "sender_full_name": "Fabrizio Genovese",
+        "timestamp": 1619181226
+    },
+    {
+        "content": "<p>Yes. My opinion is that the strict commutativity of Petri nets means that they most naturally present commutative monoidal categories. If you're fine with using that adjunction then still the right adjoint is kind of hairy. It sends a CMC <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>s</mi><mo separator=\"true\">,</mo><mi>t</mi><mo>:</mo><mi>M</mi><mi>o</mi><mi>r</mi><mo>→</mo><mi>O</mi><mi>b</mi></mrow><annotation encoding=\"application/x-tex\">s,t : Mor \\to Ob</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.80952em;vertical-align:-0.19444em;\"></span><span class=\"mord mathnormal\">s</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mord mathnormal\">t</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">:</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.10903em;\">M</span><span class=\"mord mathnormal\">o</span><span class=\"mord mathnormal\" style=\"margin-right:0.02778em;\">r</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">→</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.69444em;vertical-align:0em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.02778em;\">O</span><span class=\"mord mathnormal\">b</span></span></span></span> to the Petri net with transitions <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>E</mi><mo>=</mo><mo stretchy=\"false\">{</mo><mo stretchy=\"false\">(</mo><mi>τ</mi><mo separator=\"true\">,</mo><mi>x</mi><mo separator=\"true\">,</mo><mi>y</mi><mo stretchy=\"false\">)</mo><mo>∈</mo><mi>M</mi><mi>o</mi><mi>r</mi><mo>×</mo><mi mathvariant=\"double-struck\">N</mi><mo stretchy=\"false\">(</mo><mi>O</mi><mi>b</mi><mo stretchy=\"false\">)</mo><mo>×</mo><mi mathvariant=\"double-struck\">N</mi><mo stretchy=\"false\">(</mo><mi>O</mi><mi>b</mi><mo stretchy=\"false\">)</mo><mtext> </mtext><mi mathvariant=\"normal\">∣</mi><mtext> </mtext><mi>s</mi><mo stretchy=\"false\">(</mo><mi>τ</mi><mo stretchy=\"false\">)</mo><mo separator=\"true\">,</mo><mi>t</mi><mo stretchy=\"false\">(</mo><mi>τ</mi><mo stretchy=\"false\">)</mo><mtext>reduce to x and y</mtext><mo stretchy=\"false\">}</mo></mrow><annotation encoding=\"application/x-tex\">E=\\{(\\tau,x,y) \\in Mor \\times \\mathbb{N}(Ob) \\times \\mathbb{N}(Ob) \\, | \\, s(\\tau), t(\\tau) \\text{reduce to x and y}\\}</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.05764em;\">E</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mopen\">{</span><span class=\"mopen\">(</span><span class=\"mord mathnormal\" style=\"margin-right:0.1132em;\">τ</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mord mathnormal\">x</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.03588em;\">y</span><span class=\"mclose\">)</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">∈</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.76666em;vertical-align:-0.08333em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.10903em;\">M</span><span class=\"mord mathnormal\">o</span><span class=\"mord mathnormal\" style=\"margin-right:0.02778em;\">r</span><span class=\"mspace\" style=\"margin-right:0.2222222222222222em;\"></span><span class=\"mbin\">×</span><span class=\"mspace\" style=\"margin-right:0.2222222222222222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord\"><span class=\"mord mathbb\">N</span></span><span class=\"mopen\">(</span><span class=\"mord mathnormal\" style=\"margin-right:0.02778em;\">O</span><span class=\"mord mathnormal\">b</span><span class=\"mclose\">)</span><span class=\"mspace\" style=\"margin-right:0.2222222222222222em;\"></span><span class=\"mbin\">×</span><span class=\"mspace\" style=\"margin-right:0.2222222222222222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord\"><span class=\"mord mathbb\">N</span></span><span class=\"mopen\">(</span><span class=\"mord mathnormal\" style=\"margin-right:0.02778em;\">O</span><span class=\"mord mathnormal\">b</span><span class=\"mclose\">)</span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mord\">∣</span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mord mathnormal\">s</span><span class=\"mopen\">(</span><span class=\"mord mathnormal\" style=\"margin-right:0.1132em;\">τ</span><span class=\"mclose\">)</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mord mathnormal\">t</span><span class=\"mopen\">(</span><span class=\"mord mathnormal\" style=\"margin-right:0.1132em;\">τ</span><span class=\"mclose\">)</span><span class=\"mord text\"><span class=\"mord\">reduce to x and y</span></span><span class=\"mclose\">}</span></span></span></span>.</p>",
+        "id": 235848707,
+        "sender_full_name": "Jade Master",
+        "timestamp": 1619187848
+    },
+    {
+        "content": "<p>Thanks Fab, that's where I went to look immediately but I don't see where the adjunctions are spelled out</p>",
+        "id": 235867879,
+        "sender_full_name": "Matteo Capucci (he/him)",
+        "timestamp": 1619194410
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"275932\">Matteo Capucci (he/him)</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/smc.20to.20petri.20nets/near/235824679\">said</a>:</p>\n<blockquote>\n<p>What's the right (or left?) part of the adjunction between SMCs and Petri nets? I mean <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>U</mi></mrow><annotation encoding=\"application/x-tex\">U</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.10903em;\">U</span></span></span></span> functor going  <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>S</mi><mi>M</mi><mi>C</mi><mo>→</mo><mi>P</mi><mi>N</mi></mrow><annotation encoding=\"application/x-tex\">SMC \\to PN</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.05764em;\">S</span><span class=\"mord mathnormal\" style=\"margin-right:0.10903em;\">M</span><span class=\"mord mathnormal\" style=\"margin-right:0.07153em;\">C</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">→</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.13889em;\">P</span><span class=\"mord mathnormal\" style=\"margin-right:0.10903em;\">N</span></span></span></span>.<br>\nI readily find the construction of <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>F</mi><mo>:</mo><mi>S</mi><mi>M</mi><mi>C</mi><mo>→</mo><mi>P</mi><mi>N</mi></mrow><annotation encoding=\"application/x-tex\">F : SMC \\to PN</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.13889em;\">F</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">:</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.05764em;\">S</span><span class=\"mord mathnormal\" style=\"margin-right:0.10903em;\">M</span><span class=\"mord mathnormal\" style=\"margin-right:0.07153em;\">C</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">→</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.13889em;\">P</span><span class=\"mord mathnormal\" style=\"margin-right:0.10903em;\">N</span></span></span></span> but I couldn't quickly find a reference to the other part</p>\n</blockquote>\n<p>You mean <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>F</mi><mo>:</mo><mi>P</mi><mi>N</mi><mo>→</mo><mi>S</mi><mi>M</mi><mi>C</mi></mrow><annotation encoding=\"application/x-tex\">F: PN \\to SMC</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.13889em;\">F</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">:</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.13889em;\">P</span><span class=\"mord mathnormal\" style=\"margin-right:0.10903em;\">N</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">→</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.05764em;\">S</span><span class=\"mord mathnormal\" style=\"margin-right:0.10903em;\">M</span><span class=\"mord mathnormal\" style=\"margin-right:0.07153em;\">C</span></span></span></span>, of course.</p>\n<p>One useful realization is that Petri nets as traditionally defined naturally generate <em>commutative</em> monoidal categories, which are a very special class of symmetric strict monoidal categories where the symmetry is the identity.    </p>\n<p>So, <span class=\"user-mention\" data-user-id=\"276037\">@Jade Master</span> and I worked out an adjunction between a rather obvious category <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"sans-serif\">P</mi><mi mathvariant=\"sans-serif\">e</mi><mi mathvariant=\"sans-serif\">t</mi><mi mathvariant=\"sans-serif\">r</mi><mi mathvariant=\"sans-serif\">i</mi></mrow><annotation encoding=\"application/x-tex\">\\mathsf{Petri}</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.69444em;vertical-align:0em;\"></span><span class=\"mord\"><span class=\"mord mathsf\">P</span><span class=\"mord mathsf\">e</span><span class=\"mord mathsf\">t</span><span class=\"mord mathsf\" style=\"margin-right:0.01389em;\">r</span><span class=\"mord mathsf\">i</span></span></span></span></span> and the category <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"sans-serif\">C</mi><mi mathvariant=\"sans-serif\">M</mi><mi mathvariant=\"sans-serif\">C</mi></mrow><annotation encoding=\"application/x-tex\">\\mathsf{CMC}</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.69444em;vertical-align:0em;\"></span><span class=\"mord\"><span class=\"mord mathsf\">C</span><span class=\"mord mathsf\">M</span><span class=\"mord mathsf\">C</span></span></span></span></span> of commutative monoidal categories and strict symmetric monoidal functors.  We guessed the correct left adjoint  <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>F</mi><mo>:</mo><mrow><mi mathvariant=\"sans-serif\">P</mi><mi mathvariant=\"sans-serif\">e</mi><mi mathvariant=\"sans-serif\">t</mi><mi mathvariant=\"sans-serif\">r</mi><mi mathvariant=\"sans-serif\">i</mi></mrow><mo>→</mo><mrow><mi mathvariant=\"sans-serif\">C</mi><mi mathvariant=\"sans-serif\">M</mi><mi mathvariant=\"sans-serif\">C</mi></mrow></mrow><annotation encoding=\"application/x-tex\">F: \\mathsf{Petri} \\to \\mathsf{CMC}</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.13889em;\">F</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">:</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.69444em;vertical-align:0em;\"></span><span class=\"mord\"><span class=\"mord mathsf\">P</span><span class=\"mord mathsf\">e</span><span class=\"mord mathsf\">t</span><span class=\"mord mathsf\" style=\"margin-right:0.01389em;\">r</span><span class=\"mord mathsf\">i</span></span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">→</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.69444em;vertical-align:0em;\"></span><span class=\"mord\"><span class=\"mord mathsf\">C</span><span class=\"mord mathsf\">M</span><span class=\"mord mathsf\">C</span></span></span></span></span> easily but we got stuck on the right adjoint  <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>U</mi><mo>:</mo><mrow><mi mathvariant=\"sans-serif\">C</mi><mi mathvariant=\"sans-serif\">M</mi><mi mathvariant=\"sans-serif\">C</mi></mrow><mo>→</mo><mrow><mi mathvariant=\"sans-serif\">P</mi><mi mathvariant=\"sans-serif\">e</mi><mi mathvariant=\"sans-serif\">t</mi><mi mathvariant=\"sans-serif\">r</mi><mi mathvariant=\"sans-serif\">i</mi></mrow></mrow><annotation encoding=\"application/x-tex\">U: \\mathsf{CMC} \\to \\mathsf{Petri}</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.10903em;\">U</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">:</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.69444em;vertical-align:0em;\"></span><span class=\"mord\"><span class=\"mord mathsf\">C</span><span class=\"mord mathsf\">M</span><span class=\"mord mathsf\">C</span></span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">→</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.69444em;vertical-align:0em;\"></span><span class=\"mord\"><span class=\"mord mathsf\">P</span><span class=\"mord mathsf\">e</span><span class=\"mord mathsf\">t</span><span class=\"mord mathsf\" style=\"margin-right:0.01389em;\">r</span><span class=\"mord mathsf\">i</span></span></span></span></span> - the part you're wondering - until <span class=\"user-mention\" data-user-id=\"276777\">@Mike Shulman</span> helped us.   Jade explained it all here:</p>\n<p>&bull; Jade Master, <a href=\"https://arxiv.org/abs/1904.09091\">Petri nets based on Lawvere theories</a> - Section 4, Generating free commutative monoidal categories from Petri nets.</p>\n<p>The title of the section emphasizes the left adjoint, but I promise that your question about the right adjoint is answered.  In fact, in one passage she mentions the reason we got stuck:</p>\n<blockquote>\n<p>The reader at this point may guess a simpler formula for the right adjoint... Unfortunately this construction is doomed to fail.</p>\n</blockquote>",
+        "id": 235868844,
+        "sender_full_name": "John Baez",
+        "timestamp": 1619194847
+    },
+    {
+        "content": "<p>Indeed, this experience made me realize that besides a <em>right</em> adjoint, sometimes a functor will have a <em>wrong</em> adjoint.</p>",
+        "id": 235869122,
+        "sender_full_name": "John Baez",
+        "timestamp": 1619194969
+    },
+    {
+        "content": "<p>Later we teamed up with <span class=\"user-mention\" data-user-id=\"276777\">@Mike Shulman</span> and <span class=\"user-mention\" data-user-id=\"276438\">@Fabrizio Genovese</span> and worked out a more elaborate story involving adjunctions between 3 kinds of nets and 3 kinds of monoidal categories: </p>\n<ul>\n<li>strict monoidal categories, <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"sans-serif\">S</mi><mi mathvariant=\"sans-serif\">t</mi><mi mathvariant=\"sans-serif\">r</mi><mi mathvariant=\"sans-serif\">M</mi><mi mathvariant=\"sans-serif\">C</mi></mrow><annotation encoding=\"application/x-tex\">\\mathsf{StrMC}</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.69444em;vertical-align:0em;\"></span><span class=\"mord\"><span class=\"mord mathsf\">S</span><span class=\"mord mathsf\">t</span><span class=\"mord mathsf\" style=\"margin-right:0.01389em;\">r</span><span class=\"mord mathsf\">M</span><span class=\"mord mathsf\">C</span></span></span></span></span></li>\n<li>symmetric strict monoidal categories, <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"sans-serif\">S</mi><mi mathvariant=\"sans-serif\">S</mi><mi mathvariant=\"sans-serif\">M</mi><mi mathvariant=\"sans-serif\">C</mi></mrow><annotation encoding=\"application/x-tex\">\\mathsf{SSMC}</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.69444em;vertical-align:0em;\"></span><span class=\"mord\"><span class=\"mord mathsf\">S</span><span class=\"mord mathsf\">S</span><span class=\"mord mathsf\">M</span><span class=\"mord mathsf\">C</span></span></span></span></span></li>\n<li>commutative monoidal categories, <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"sans-serif\">C</mi><mi mathvariant=\"sans-serif\">M</mi><mi mathvariant=\"sans-serif\">C</mi></mrow><annotation encoding=\"application/x-tex\">\\mathsf{CMC}</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.69444em;vertical-align:0em;\"></span><span class=\"mord\"><span class=\"mord mathsf\">C</span><span class=\"mord mathsf\">M</span><span class=\"mord mathsf\">C</span></span></span></span></span>.</li>\n</ul>\n<p><span class=\"user-mention\" data-user-id=\"276438\">@Fabrizio Genovese</span> mentioned it already:</p>\n<ul>\n<li>John Baez, Fabrizio Genovese, Jade Master and Mike Shulman, <a href=\"http://math.ucr.edu/home/baez/p-nets_lics.pdf\">Categories of nets</a>.</li>\n</ul>",
+        "id": 235869623,
+        "sender_full_name": "John Baez",
+        "timestamp": 1619195191
+    },
+    {
+        "content": "<p>Fabrizio gave a link to the arXiv version, but this minute I just made a newer, better version available on my website and linked to that.</p>",
+        "id": 235870255,
+        "sender_full_name": "John Baez",
+        "timestamp": 1619195495
+    },
+    {
+        "content": "<p><a href=\"/user_uploads/21317/xDrOfeX6uUa6NyxBQxW2PSJJ/diagram.jpg\">Here are the adjunctions we describe.</a></p>\n<div class=\"message_inline_image\"><a href=\"/user_uploads/21317/xDrOfeX6uUa6NyxBQxW2PSJJ/diagram.jpg\" title=\"Here are the adjunctions we describe.\"><img src=\"/user_uploads/21317/xDrOfeX6uUa6NyxBQxW2PSJJ/diagram.jpg\"></a></div>",
+        "id": 235870671,
+        "sender_full_name": "John Baez",
+        "timestamp": 1619195666
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"275920\">John Baez</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/smc.20to.20petri.20nets/near/235868844\">said</a>:</p>\n<blockquote>\n<p><span class=\"user-mention silent\" data-user-id=\"275932\">Matteo Capucci (he/him)</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/smc.20to.20petri.20nets/near/235824679\">said</a>:</p>\n<blockquote>\n<p>What's the right (or left?) part of the adjunction between SMCs and Petri nets? I mean <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>U</mi></mrow><annotation encoding=\"application/x-tex\">U</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.10903em;\">U</span></span></span></span> functor going  <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>S</mi><mi>M</mi><mi>C</mi><mo>→</mo><mi>P</mi><mi>N</mi></mrow><annotation encoding=\"application/x-tex\">SMC \\to PN</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.05764em;\">S</span><span class=\"mord mathnormal\" style=\"margin-right:0.10903em;\">M</span><span class=\"mord mathnormal\" style=\"margin-right:0.07153em;\">C</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">→</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.13889em;\">P</span><span class=\"mord mathnormal\" style=\"margin-right:0.10903em;\">N</span></span></span></span>.<br>\nI readily find the construction of <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>F</mi><mo>:</mo><mi>S</mi><mi>M</mi><mi>C</mi><mo>→</mo><mi>P</mi><mi>N</mi></mrow><annotation encoding=\"application/x-tex\">F : SMC \\to PN</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.13889em;\">F</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">:</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.05764em;\">S</span><span class=\"mord mathnormal\" style=\"margin-right:0.10903em;\">M</span><span class=\"mord mathnormal\" style=\"margin-right:0.07153em;\">C</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">→</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.13889em;\">P</span><span class=\"mord mathnormal\" style=\"margin-right:0.10903em;\">N</span></span></span></span> but I couldn't quickly find a reference to the other part</p>\n</blockquote>\n<p>You mean <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>F</mi><mo>:</mo><mi>P</mi><mi>N</mi><mo>→</mo><mi>S</mi><mi>M</mi><mi>C</mi></mrow><annotation encoding=\"application/x-tex\">F: PN \\to SMC</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.13889em;\">F</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">:</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.13889em;\">P</span><span class=\"mord mathnormal\" style=\"margin-right:0.10903em;\">N</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">→</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.05764em;\">S</span><span class=\"mord mathnormal\" style=\"margin-right:0.10903em;\">M</span><span class=\"mord mathnormal\" style=\"margin-right:0.07153em;\">C</span></span></span></span>, of course.<br>\n</p>\n</blockquote>\n<p>Ha, yes, haha</p>",
+        "id": 235870679,
+        "sender_full_name": "Matteo Capucci (he/him)",
+        "timestamp": 1619195668
+    },
+    {
+        "content": "<p>Ok I'm digging the literature</p>",
+        "id": 235872292,
+        "sender_full_name": "Matteo Capucci (he/him)",
+        "timestamp": 1619196369
+    },
+    {
+        "content": "<p><span class=\"user-mention\" data-user-id=\"275920\">@John Baez</span> in the LICS version I still only see the construction of the left adjoints. Did I miss the other?</p>",
+        "id": 235872413,
+        "sender_full_name": "Matteo Capucci (he/him)",
+        "timestamp": 1619196424
+    },
+    {
+        "content": "<p>Proposition 2.4 of 'Functorial semantics of Petri nets' says that there is an 'obvious forgetful functor' from <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>F</mi><mi>S</mi><mi>S</mi><mi>M</mi><mi>C</mi></mrow><annotation encoding=\"application/x-tex\">FSSMC</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.13889em;\">F</span><span class=\"mord mathnormal\" style=\"margin-right:0.05764em;\">S</span><span class=\"mord mathnormal\" style=\"margin-right:0.05764em;\">S</span><span class=\"mord mathnormal\" style=\"margin-right:0.10903em;\">M</span><span class=\"mord mathnormal\" style=\"margin-right:0.07153em;\">C</span></span></span></span> to <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>P</mi><mi>r</mi><mi>e</mi><mi>N</mi><mi>e</mi><mi>t</mi></mrow><annotation encoding=\"application/x-tex\">PreNet</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.13889em;\">P</span><span class=\"mord mathnormal\" style=\"margin-right:0.02778em;\">r</span><span class=\"mord mathnormal\">e</span><span class=\"mord mathnormal\" style=\"margin-right:0.10903em;\">N</span><span class=\"mord mathnormal\">e</span><span class=\"mord mathnormal\">t</span></span></span></span>.<br>\nSo I guess what <span class=\"user-mention\" data-user-id=\"276037\">@Jade Master</span> suggested above 'works' for ITP Petri nets (prenets?) too?</p>",
+        "id": 235873000,
+        "sender_full_name": "Matteo Capucci (he/him)",
+        "timestamp": 1619196672
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276037\">Jade Master</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/smc.20to.20petri.20nets/near/235848707\">said</a>:</p>\n<blockquote>\n<p>Yes. My opinion is that the strict commutativity of Petri nets means that they most naturally present commutative monoidal categories. If you're fine with using that adjunction then still the right adjoint is kind of hairy. It sends a CMC <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>s</mi><mo separator=\"true\">,</mo><mi>t</mi><mo>:</mo><mi>M</mi><mi>o</mi><mi>r</mi><mo>→</mo><mi>O</mi><mi>b</mi></mrow><annotation encoding=\"application/x-tex\">s,t : Mor \\to Ob</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.80952em;vertical-align:-0.19444em;\"></span><span class=\"mord mathnormal\">s</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mord mathnormal\">t</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">:</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.10903em;\">M</span><span class=\"mord mathnormal\">o</span><span class=\"mord mathnormal\" style=\"margin-right:0.02778em;\">r</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">→</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.69444em;vertical-align:0em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.02778em;\">O</span><span class=\"mord mathnormal\">b</span></span></span></span> to the Petri net with transitions <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>E</mi><mo>=</mo><mo stretchy=\"false\">{</mo><mo stretchy=\"false\">(</mo><mi>τ</mi><mo separator=\"true\">,</mo><mi>x</mi><mo separator=\"true\">,</mo><mi>y</mi><mo stretchy=\"false\">)</mo><mo>∈</mo><mi>M</mi><mi>o</mi><mi>r</mi><mo>×</mo><mi mathvariant=\"double-struck\">N</mi><mo stretchy=\"false\">(</mo><mi>O</mi><mi>b</mi><mo stretchy=\"false\">)</mo><mo>×</mo><mi mathvariant=\"double-struck\">N</mi><mo stretchy=\"false\">(</mo><mi>O</mi><mi>b</mi><mo stretchy=\"false\">)</mo><mtext> </mtext><mi mathvariant=\"normal\">∣</mi><mtext> </mtext><mi>s</mi><mo stretchy=\"false\">(</mo><mi>τ</mi><mo stretchy=\"false\">)</mo><mo separator=\"true\">,</mo><mi>t</mi><mo stretchy=\"false\">(</mo><mi>τ</mi><mo stretchy=\"false\">)</mo><mtext>reduce to x and y</mtext><mo stretchy=\"false\">}</mo></mrow><annotation encoding=\"application/x-tex\">E=\\{(\\tau,x,y) \\in Mor \\times \\mathbb{N}(Ob) \\times \\mathbb{N}(Ob) \\, | \\, s(\\tau), t(\\tau) \\text{reduce to x and y}\\}</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.05764em;\">E</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mopen\">{</span><span class=\"mopen\">(</span><span class=\"mord mathnormal\" style=\"margin-right:0.1132em;\">τ</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mord mathnormal\">x</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.03588em;\">y</span><span class=\"mclose\">)</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">∈</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.76666em;vertical-align:-0.08333em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.10903em;\">M</span><span class=\"mord mathnormal\">o</span><span class=\"mord mathnormal\" style=\"margin-right:0.02778em;\">r</span><span class=\"mspace\" style=\"margin-right:0.2222222222222222em;\"></span><span class=\"mbin\">×</span><span class=\"mspace\" style=\"margin-right:0.2222222222222222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord\"><span class=\"mord mathbb\">N</span></span><span class=\"mopen\">(</span><span class=\"mord mathnormal\" style=\"margin-right:0.02778em;\">O</span><span class=\"mord mathnormal\">b</span><span class=\"mclose\">)</span><span class=\"mspace\" style=\"margin-right:0.2222222222222222em;\"></span><span class=\"mbin\">×</span><span class=\"mspace\" style=\"margin-right:0.2222222222222222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord\"><span class=\"mord mathbb\">N</span></span><span class=\"mopen\">(</span><span class=\"mord mathnormal\" style=\"margin-right:0.02778em;\">O</span><span class=\"mord mathnormal\">b</span><span class=\"mclose\">)</span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mord\">∣</span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mord mathnormal\">s</span><span class=\"mopen\">(</span><span class=\"mord mathnormal\" style=\"margin-right:0.1132em;\">τ</span><span class=\"mclose\">)</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mord mathnormal\">t</span><span class=\"mopen\">(</span><span class=\"mord mathnormal\" style=\"margin-right:0.1132em;\">τ</span><span class=\"mclose\">)</span><span class=\"mord text\"><span class=\"mord\">reduce to x and y</span></span><span class=\"mclose\">}</span></span></span></span>.</p>\n</blockquote>\n<p>If I understand correctly, this treats objects of <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>C</mi></mrow><annotation encoding=\"application/x-tex\">C</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.07153em;\">C</span></span></span></span> (a SMC) as places and morphisms as transitions</p>",
+        "id": 235873113,
+        "sender_full_name": "Matteo Capucci (he/him)",
+        "timestamp": 1619196721
+    },
+    {
+        "content": "<p>Right, it is obvious indeed...</p>",
+        "id": 235873236,
+        "sender_full_name": "Matteo Capucci (he/him)",
+        "timestamp": 1619196761
+    },
+    {
+        "content": "<p>This might be the answer to this tweet of mine then:<br>\n<a href=\"https://twitter.com/mattecapu/status/1364139727964811264?s=20\">https://twitter.com/mattecapu/status/1364139727964811264?s=20</a></p>\n<div class=\"inline-preview-twitter\"><div class=\"twitter-tweet\"><a href=\"https://twitter.com/mattecapu/status/1364139727964811264?s=20\"><img class=\"twitter-avatar\" src=\"https://pbs.twimg.com/profile_images/1336408408094896134/xd3-1Q9g_normal.jpg\"></a><p>Can I read every string diagram in an SMC as a Petri net whose places are wires and transitions are boxes? Summoning the Petri gang <a href=\"https://twitter.com/JadeMasterMath\">@JadeMasterMath</a> <a href=\"https://twitter.com/fabgenovese\">@fabgenovese</a></p><span>- hom(—, matteo) (@mattecapu)</span></div></div>",
+        "id": 235873416,
+        "sender_full_name": "Matteo Capucci (he/him)",
+        "timestamp": 1619196842
+    },
+    {
+        "content": "<p>The idea would be to regard a string diagram as a presentation itself of an SMC, then run this SMC through the adjunction SMC-PN and voilà</p>",
+        "id": 235873638,
+        "sender_full_name": "Matteo Capucci (he/him)",
+        "timestamp": 1619196926
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"275932\">Matteo Capucci (he/him)</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/smc.20to.20petri.20nets/near/235872413\">said</a>:</p>\n<blockquote>\n<p><span class=\"user-mention silent\" data-user-id=\"275920\">John Baez</span> in the LICS version I still only see the construction of the left adjoints. Did I miss the other?</p>\n</blockquote>\n<p>You need to read Jade's paper to see the right adjoint from <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"sans-serif\">S</mi><mi mathvariant=\"sans-serif\">S</mi><mi mathvariant=\"sans-serif\">M</mi><mi mathvariant=\"sans-serif\">C</mi></mrow><annotation encoding=\"application/x-tex\">\\mathsf{SSMC}</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.69444em;vertical-align:0em;\"></span><span class=\"mord\"><span class=\"mord mathsf\">S</span><span class=\"mord mathsf\">S</span><span class=\"mord mathsf\">M</span><span class=\"mord mathsf\">C</span></span></span></span></span> to <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"sans-serif\">P</mi><mi mathvariant=\"sans-serif\">e</mi><mi mathvariant=\"sans-serif\">t</mi><mi mathvariant=\"sans-serif\">r</mi><mi mathvariant=\"sans-serif\">i</mi></mrow><annotation encoding=\"application/x-tex\">\\mathsf{Petri}</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.69444em;vertical-align:0em;\"></span><span class=\"mord\"><span class=\"mord mathsf\">P</span><span class=\"mord mathsf\">e</span><span class=\"mord mathsf\">t</span><span class=\"mord mathsf\" style=\"margin-right:0.01389em;\">r</span><span class=\"mord mathsf\">i</span></span></span></span></span>  worked out in detail.   That's why I pointed you to Section 4 of that paper:</p>\n<p>&bull; Jade Master, <a href=\"https://arxiv.org/abs/1904.09091\">Petri nets based on Lawvere theories</a> - Section 4, Generating free commutative monoidal categories from Petri nets.</p>\n<p>She also does the right adjoint from <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"sans-serif\">S</mi><mi mathvariant=\"sans-serif\">t</mi><mi mathvariant=\"sans-serif\">r</mi><mi mathvariant=\"sans-serif\">M</mi><mi mathvariant=\"sans-serif\">C</mi></mrow><annotation encoding=\"application/x-tex\">\\mathsf{StrMC}</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.69444em;vertical-align:0em;\"></span><span class=\"mord\"><span class=\"mord mathsf\">S</span><span class=\"mord mathsf\">t</span><span class=\"mord mathsf\" style=\"margin-right:0.01389em;\">r</span><span class=\"mord mathsf\">M</span><span class=\"mord mathsf\">C</span></span></span></span></span> to <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"sans-serif\">P</mi><mi mathvariant=\"sans-serif\">r</mi><mi mathvariant=\"sans-serif\">e</mi><mi mathvariant=\"sans-serif\">N</mi><mi mathvariant=\"sans-serif\">e</mi><mi mathvariant=\"sans-serif\">t</mi></mrow><annotation encoding=\"application/x-tex\">\\mathsf{PreNet}</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.69444em;vertical-align:0em;\"></span><span class=\"mord\"><span class=\"mord mathsf\">P</span><span class=\"mord mathsf\" style=\"margin-right:0.01389em;\">r</span><span class=\"mord mathsf\">e</span><span class=\"mord mathsf\">N</span><span class=\"mord mathsf\">e</span><span class=\"mord mathsf\">t</span></span></span></span></span> in that paper - but it's a corollary of a more general result.</p>",
+        "id": 235874493,
+        "sender_full_name": "John Baez",
+        "timestamp": 1619197254
+    },
+    {
+        "content": "<p>Our LiCS paper, \"Categories of nets\", just cites Jade's work for those results.</p>",
+        "id": 235874560,
+        "sender_full_name": "John Baez",
+        "timestamp": 1619197285
+    },
+    {
+        "content": "<p>Thanks for the great description John. Regarding your question <span class=\"user-mention\" data-user-id=\"275932\">@Matteo Capucci (he/him)</span> the answer is yes, at least informally you can write every string diagram as a Petri net (but you'd probably be better off with a pre-net if you want to keep the ordering on the strings). If you want something more formal, I'd first ask how you are defining string diagrams.</p>",
+        "id": 235901720,
+        "sender_full_name": "Jade Master",
+        "timestamp": 1619208606
+    },
+    {
+        "content": "<p>i'm happy with this atm... but... I think the best way to define a string diagram for this problem is as an hypergraph?</p>",
+        "id": 235902011,
+        "sender_full_name": "Matteo Capucci (he/him)",
+        "timestamp": 1619208762
+    },
+    {
+        "content": "<p>A hypergraph is already very close to a Petri net so you don't need to do anything with the adjunction to get from hypergraphs to Petri nets.</p>",
+        "id": 235902313,
+        "sender_full_name": "Jade Master",
+        "timestamp": 1619208923
+    },
+    {
+        "content": "<p>I was expecting you to say \"a morphism of a smc\". If that's your definition of string diagram then the adjunction will help.</p>",
+        "id": 235902521,
+        "sender_full_name": "Jade Master",
+        "timestamp": 1619209032
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"275932\">Matteo Capucci (he/him)</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/smc.20to.20petri.20nets/near/235873638\">said</a>:</p>\n<blockquote>\n<p>The idea would be to regard a string diagram as a presentation itself of an SMC, then run this SMC through the adjunction SMC-PN and voilà</p>\n</blockquote>\n<p>I agree with Jade,you want a pre-net</p>",
+        "id": 235902672,
+        "sender_full_name": "Fabrizio Genovese",
+        "timestamp": 1619209104
+    },
+    {
+        "content": "<p>You take an SMC. At that point, you can build a Pre-net from the smc: All objects of the SMC become places, all morphisms become transitions</p>",
+        "id": 235902750,
+        "sender_full_name": "Fabrizio Genovese",
+        "timestamp": 1619209152
+    },
+    {
+        "content": "<p>So you have this HUGE pre-net</p>",
+        "id": 235902762,
+        "sender_full_name": "Fabrizio Genovese",
+        "timestamp": 1619209162
+    },
+    {
+        "content": "<p>When you do the free SMC on it, you are essentially promoting each object/morphism of the original SMC to a generator</p>",
+        "id": 235902805,
+        "sender_full_name": "Fabrizio Genovese",
+        "timestamp": 1619209185
+    },
+    {
+        "content": "<p>So what you get is something like \"execution trees\" i guess</p>",
+        "id": 235902827,
+        "sender_full_name": "Fabrizio Genovese",
+        "timestamp": 1619209197
+    },
+    {
+        "content": "<p>That is, you have string diagrams that de facto combine string diagrams</p>",
+        "id": 235902896,
+        "sender_full_name": "Fabrizio Genovese",
+        "timestamp": 1619209219
+    },
+    {
+        "content": "<p>bingo, but why trees? i was thinking of execution traces</p>",
+        "id": 235902920,
+        "sender_full_name": "Matteo Capucci (he/him)",
+        "timestamp": 1619209231
+    },
+    {
+        "content": "<p>Because for me they are the same thing, I'm a mathematician not a programmer lol</p>",
+        "id": 235902945,
+        "sender_full_name": "Fabrizio Genovese",
+        "timestamp": 1619209250
+    },
+    {
+        "content": "<p>as you can already guess, there is a natural algebra operation that evaluates this traces, or whatever you wanna call them</p>",
+        "id": 235902965,
+        "sender_full_name": "Fabrizio Genovese",
+        "timestamp": 1619209264
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276037\">Jade Master</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/smc.20to.20petri.20nets/near/235902521\">said</a>:</p>\n<blockquote>\n<p>I was expecting you to say \"a morphism of a smc\". If that's your definition of string diagram then the adjunction will help.</p>\n</blockquote>\n<p>yeah but would this help to transform it into a petri net (or pre net as you and fabrizio pointed out)?</p>",
+        "id": 235903027,
+        "sender_full_name": "Matteo Capucci (he/him)",
+        "timestamp": 1619209290
+    },
+    {
+        "content": "<p>This is related by the fact that composing the adjunctions gives you a monad or a comonad, I always have to think a good thirty seconds to figure out in which case I am</p>",
+        "id": 235903055,
+        "sender_full_name": "Fabrizio Genovese",
+        "timestamp": 1619209309
+    },
+    {
+        "content": "<p>yeah, it'd be the action of the one of those lol</p>",
+        "id": 235903124,
+        "sender_full_name": "Matteo Capucci (he/him)",
+        "timestamp": 1619209327
+    },
+    {
+        "content": "<p>Yes</p>",
+        "id": 235903130,
+        "sender_full_name": "Fabrizio Genovese",
+        "timestamp": 1619209331
+    },
+    {
+        "content": "<p>even though something less might suffice. I mean, I really care about turning one morphism into a prenet into a SMC, not a whole SMC</p>",
+        "id": 235903190,
+        "sender_full_name": "Matteo Capucci (he/him)",
+        "timestamp": 1619209383
+    },
+    {
+        "content": "<p>so maybe the progression is more like: take an SMC, map it into a category of 'diagrammatic realizations' of its morphisms (hence its hom-sets are sets of hypergraphs), then map this category into a category of open pre-nets, then finally apply <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>U</mi><mo>:</mo><mi>P</mi><mi>r</mi><mi>e</mi><mi>N</mi><mi>e</mi><mi>t</mi><mo>→</mo><mi>S</mi><mi>M</mi><mi>C</mi></mrow><annotation encoding=\"application/x-tex\">U:PreNet \\to SMC</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.10903em;\">U</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">:</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.13889em;\">P</span><span class=\"mord mathnormal\" style=\"margin-right:0.02778em;\">r</span><span class=\"mord mathnormal\">e</span><span class=\"mord mathnormal\" style=\"margin-right:0.10903em;\">N</span><span class=\"mord mathnormal\">e</span><span class=\"mord mathnormal\">t</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">→</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.05764em;\">S</span><span class=\"mord mathnormal\" style=\"margin-right:0.10903em;\">M</span><span class=\"mord mathnormal\" style=\"margin-right:0.07153em;\">C</span></span></span></span> hom-wise to this category to get a category enriched in SMC (i.e. use the base-change along <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>U</mi></mrow><annotation encoding=\"application/x-tex\">U</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.10903em;\">U</span></span></span></span>)</p>",
+        "id": 235903605,
+        "sender_full_name": "Matteo Capucci (he/him)",
+        "timestamp": 1619209596
+    },
+    {
+        "content": "<p>the category you get has the same objects and morphisms are replaced by 'execution traces'</p>",
+        "id": 235903663,
+        "sender_full_name": "Matteo Capucci (he/him)",
+        "timestamp": 1619209637
+    },
+    {
+        "content": "<p>Mhhhh, I guess you may have problems with objects</p>",
+        "id": 235904140,
+        "sender_full_name": "Fabrizio Genovese",
+        "timestamp": 1619209892
+    },
+    {
+        "content": "<p>pre-nets always generate a SMC with a free monoid of objects</p>",
+        "id": 235904316,
+        "sender_full_name": "Fabrizio Genovese",
+        "timestamp": 1619209985
+    },
+    {
+        "content": "<p>you see that if your SMC has a non-free monoid of objects (so you have equations like <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mo>⊗</mo><mi>B</mi><mo>=</mo><mi>C</mi></mrow><annotation encoding=\"application/x-tex\">A \\otimes B = C</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.76666em;vertical-align:-0.08333em;\"></span><span class=\"mord mathnormal\">A</span><span class=\"mspace\" style=\"margin-right:0.2222222222222222em;\"></span><span class=\"mbin\">⊗</span><span class=\"mspace\" style=\"margin-right:0.2222222222222222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.05017em;\">B</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.07153em;\">C</span></span></span></span> floating around) than this approach won't work</p>",
+        "id": 235904381,
+        "sender_full_name": "Fabrizio Genovese",
+        "timestamp": 1619210012
+    },
+    {
+        "content": "<p>the only way of making it work is to promote _any_ object to a place in the pre-net</p>",
+        "id": 235904412,
+        "sender_full_name": "Fabrizio Genovese",
+        "timestamp": 1619210029
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276438\">Fabrizio Genovese</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/smc.20to.20petri.20nets/near/235904316\">said</a>:</p>\n<blockquote>\n<p>pre-nets always generate a SMC with a free monoid of objects</p>\n</blockquote>\n<p>yes this is needed to get executions from markings with many tokens, i.e. representing 'sending many values along a wire of the given string diagrams'</p>",
+        "id": 235904748,
+        "sender_full_name": "Matteo Capucci (he/him)",
+        "timestamp": 1619210164
+    },
+    {
+        "content": "<p>the rest I don't understand what you mean in the context of the construction I sketched <span aria-label=\"thinking\" class=\"emoji emoji-1f914\" role=\"img\" title=\"thinking\">:thinking:</span></p>",
+        "id": 235904795,
+        "sender_full_name": "Matteo Capucci (he/him)",
+        "timestamp": 1619210194
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"275932\">Matteo Capucci (he/him)</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/smc.20to.20petri.20nets/near/235903605\">said</a>:</p>\n<blockquote>\n<p>so maybe the progression is more like: take an SMC, map it into a category of 'diagrammatic realizations' of its morphisms (hence its hom-sets are sets of hypergraphs), then map this category into a category of open pre-nets, then finally apply <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>U</mi><mo>:</mo><mi>P</mi><mi>r</mi><mi>e</mi><mi>N</mi><mi>e</mi><mi>t</mi><mo>→</mo><mi>S</mi><mi>M</mi><mi>C</mi></mrow><annotation encoding=\"application/x-tex\">U:PreNet \\to SMC</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.10903em;\">U</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">:</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.13889em;\">P</span><span class=\"mord mathnormal\" style=\"margin-right:0.02778em;\">r</span><span class=\"mord mathnormal\">e</span><span class=\"mord mathnormal\" style=\"margin-right:0.10903em;\">N</span><span class=\"mord mathnormal\">e</span><span class=\"mord mathnormal\">t</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">→</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.05764em;\">S</span><span class=\"mord mathnormal\" style=\"margin-right:0.10903em;\">M</span><span class=\"mord mathnormal\" style=\"margin-right:0.07153em;\">C</span></span></span></span> hom-wise to this category to get a category enriched in SMC (i.e. use the base-change along <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>U</mi></mrow><annotation encoding=\"application/x-tex\">U</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.10903em;\">U</span></span></span></span>)</p>\n</blockquote>\n<p>Oh, you are applying this hom-wise</p>",
+        "id": 235904947,
+        "sender_full_name": "Fabrizio Genovese",
+        "timestamp": 1619210270
+    },
+    {
+        "content": "<p>mhhh</p>",
+        "id": 235904950,
+        "sender_full_name": "Fabrizio Genovese",
+        "timestamp": 1619210271
+    },
+    {
+        "content": "<p>I don't sure if everything stays coherent working hom-wise</p>",
+        "id": 235905043,
+        "sender_full_name": "Fabrizio Genovese",
+        "timestamp": 1619210307
+    },
+    {
+        "content": "<p>Does it explode?</p>",
+        "id": 235905048,
+        "sender_full_name": "Fabrizio Genovese",
+        "timestamp": 1619210310
+    },
+    {
+        "content": "<p>probably <span aria-label=\"laughter tears\" class=\"emoji emoji-1f602\" role=\"img\" title=\"laughter tears\">:laughter_tears:</span> i just made it up so there's a high chance of nonsense</p>",
+        "id": 235905086,
+        "sender_full_name": "Matteo Capucci (he/him)",
+        "timestamp": 1619210337
+    },
+    {
+        "content": "<p>Those are usually the things that work best</p>",
+        "id": 235905117,
+        "sender_full_name": "Fabrizio Genovese",
+        "timestamp": 1619210354
+    },
+    {
+        "content": "<p>modulo some fiddling</p>",
+        "id": 235905128,
+        "sender_full_name": "Fabrizio Genovese",
+        "timestamp": 1619210360
+    },
+    {
+        "content": "<p>But I don't really understand why you want to leave your object fixed</p>",
+        "id": 235905150,
+        "sender_full_name": "Fabrizio Genovese",
+        "timestamp": 1619210380
+    },
+    {
+        "content": "<p>It feels strange to change the morphisms but not the objects</p>",
+        "id": 235905171,
+        "sender_full_name": "Fabrizio Genovese",
+        "timestamp": 1619210393
+    },
+    {
+        "content": "<p>i'll think about it... in my head it makes sense but i really don't know if it's the thing I want</p>",
+        "id": 235905398,
+        "sender_full_name": "Matteo Capucci (he/him)",
+        "timestamp": 1619210484
+    },
+    {
+        "content": "<p>It feels quite unnatural from a net perspective, but maybe your application requires it</p>",
+        "id": 235905435,
+        "sender_full_name": "Fabrizio Genovese",
+        "timestamp": 1619210511
+    },
+    {
+        "content": "<p>in simple terms, i'd like to turn a diagram of a morphism <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>X</mi><mo>→</mo><mi>Y</mi></mrow><annotation encoding=\"application/x-tex\">X \\to Y</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.07847em;\">X</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">→</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.22222em;\">Y</span></span></span></span> into a stream transformer <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msup><mi>X</mi><mi>ω</mi></msup><mo>→</mo><msup><mi>Y</mi><mi>ω</mi></msup></mrow><annotation encoding=\"application/x-tex\">X^\\omega \\to Y^\\omega</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.07847em;\">X</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.664392em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathnormal mtight\" style=\"margin-right:0.03588em;\">ω</span></span></span></span></span></span></span></span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">→</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.22222em;\">Y</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.664392em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathnormal mtight\" style=\"margin-right:0.03588em;\">ω</span></span></span></span></span></span></span></span></span></span></span></p>",
+        "id": 235905506,
+        "sender_full_name": "Matteo Capucci (he/him)",
+        "timestamp": 1619210539
+    },
+    {
+        "content": "<p>The standard way to get something aking to what you want (that can be found in the literature) is by looking at adjunctions between categories of nets and categories of _free_ SMCs</p>",
+        "id": 235905520,
+        "sender_full_name": "Fabrizio Genovese",
+        "timestamp": 1619210549
+    },
+    {
+        "content": "<p>What is a stream transformer? It's like you take infinite sequences of X and infinite sequences of Y and turn one into the other applying <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>f</mi><mo>:</mo><mi>X</mi><mo>→</mo><mi>Y</mi></mrow><annotation encoding=\"application/x-tex\">f: X \\to Y</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8888799999999999em;vertical-align:-0.19444em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.10764em;\">f</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">:</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.07847em;\">X</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">→</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.22222em;\">Y</span></span></span></span> to the head of the stream (co?)recursively?</p>",
+        "id": 235905594,
+        "sender_full_name": "Fabrizio Genovese",
+        "timestamp": 1619210606
+    },
+    {
+        "content": "<p>you take a stream of <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>X</mi></mrow><annotation encoding=\"application/x-tex\">X</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.07847em;\">X</span></span></span></span> and turn it into a stream of <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>Y</mi></mrow><annotation encoding=\"application/x-tex\">Y</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.22222em;\">Y</span></span></span></span></p>",
+        "id": 235905740,
+        "sender_full_name": "Matteo Capucci (he/him)",
+        "timestamp": 1619210679
+    },
+    {
+        "content": "<p>Yeah, I'm thinking about streams as infinite sequences of things from <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>X</mi></mrow><annotation encoding=\"application/x-tex\">X</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.07847em;\">X</span></span></span></span> or <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>Y</mi></mrow><annotation encoding=\"application/x-tex\">Y</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.22222em;\">Y</span></span></span></span></p>",
+        "id": 235905772,
+        "sender_full_name": "Fabrizio Genovese",
+        "timestamp": 1619210705
+    },
+    {
+        "content": "<p>Not really infinite sequences, I'm being handwavy</p>",
+        "id": 235905800,
+        "sender_full_name": "Fabrizio Genovese",
+        "timestamp": 1619210720
+    },
+    {
+        "content": "<p>yes infinite sequences works</p>",
+        "id": 235905838,
+        "sender_full_name": "Matteo Capucci (he/him)",
+        "timestamp": 1619210735
+    },
+    {
+        "content": "<p>though I guess prenets really give you <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msup><mi>X</mi><mo>∗</mo></msup><mo>→</mo><msup><mi>Y</mi><mo>∗</mo></msup></mrow><annotation encoding=\"application/x-tex\">X^* \\to Y^*</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.688696em;vertical-align:0em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.07847em;\">X</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.688696em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mbin mtight\">∗</span></span></span></span></span></span></span></span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">→</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.688696em;vertical-align:0em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.22222em;\">Y</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.688696em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mbin mtight\">∗</span></span></span></span></span></span></span></span></span></span></span></p>",
+        "id": 235905869,
+        "sender_full_name": "Matteo Capucci (he/him)",
+        "timestamp": 1619210752
+    },
+    {
+        "content": "<p>I'm not sure</p>",
+        "id": 235905943,
+        "sender_full_name": "Fabrizio Genovese",
+        "timestamp": 1619210776
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276438\">Fabrizio Genovese</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/smc.20to.20petri.20nets/near/235905594\">said</a>:</p>\n<blockquote>\n<p>What is a stream transformer? It's like you take infinite sequences of X and infinite sequences of Y and turn one into the other applying <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>f</mi><mo>:</mo><mi>X</mi><mo>→</mo><mi>Y</mi></mrow><annotation encoding=\"application/x-tex\">f: X \\to Y</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8888799999999999em;vertical-align:-0.19444em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.10764em;\">f</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">:</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.07847em;\">X</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">→</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.22222em;\">Y</span></span></span></span> to the head of the stream (co?)recursively?</p>\n</blockquote>\n<p>anyway, it could happen you have loops so this is non-trivial</p>",
+        "id": 235906016,
+        "sender_full_name": "Matteo Capucci (he/him)",
+        "timestamp": 1619210813
+    },
+    {
+        "content": "<p>So suppose you have the morphism <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>X</mi><mover><mo stretchy=\"true\">→</mo><mpadded lspace=\"0.3em\" width=\"+0.6em\"><mi>f</mi></mpadded></mover><mi>Y</mi><mover><mo stretchy=\"true\">→</mo><mpadded lspace=\"0.3em\" width=\"+0.6em\"><mi>g</mi></mpadded></mover><mi>Z</mi></mrow><annotation encoding=\"application/x-tex\">X \\xrightarrow{f} Y \\xrightarrow{g} Z</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:1.1191079999999998em;vertical-align:-0.010999999999999899em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.07847em;\">X</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel x-arrow\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:1.1081079999999999em;\"><span style=\"top:-3.322em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight x-arrow-pad\"><span class=\"mord mtight\"><span class=\"mord mathnormal mtight\" style=\"margin-right:0.10764em;\">f</span></span></span></span><span class=\"svg-align\" style=\"top:-2.689em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"hide-tail\" style=\"height:0.522em;min-width:1.469em;\"><svg height=\"0.522em\" preserveAspectRatio=\"xMaxYMin slice\" viewBox=\"0 0 400000 522\" width=\"400em\"><path d=\"M0 241v40h399891c-47.3 35.3-84 78-110 128 -16.7 32-27.7 63.7-33 95 0 1.3-.2 2.7-.5 4-.3 1.3-.5 2.3-.5 3 0 7.3 6.7 11 20  11 8 0 13.2-.8 15.5-2.5 2.3-1.7 4.2-5.5 5.5-11.5 2-13.3 5.7-27 11-41 14.7-44.7  39-84.5 73-119.5s73.7-60.2 119-75.5c6-2 9-5.7 9-11s-3-9-9-11c-45.3-15.3-85 -40.5-119-75.5s-58.3-74.8-73-119.5c-4.7-14-8.3-27.3-11-40-1.3-6.7-3.2-10.8-5.5 -12.5-2.3-1.7-7.5-2.5-15.5-2.5-14 0-21 3.7-21 11 0 2 2 10.3 6 25 20.7 83.3 67  151.7 139 205zm0 0v40h399900v-40z\"></path></svg></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.010999999999999899em;\"><span></span></span></span></span></span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.934392em;vertical-align:-0.01100000000000001em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.22222em;\">Y</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel x-arrow\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.923392em;\"><span style=\"top:-3.322em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight x-arrow-pad\"><span class=\"mord mtight\"><span class=\"mord mathnormal mtight\" style=\"margin-right:0.03588em;\">g</span></span></span></span><span class=\"svg-align\" style=\"top:-2.689em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"hide-tail\" style=\"height:0.522em;min-width:1.469em;\"><svg height=\"0.522em\" preserveAspectRatio=\"xMaxYMin slice\" viewBox=\"0 0 400000 522\" width=\"400em\"><path d=\"M0 241v40h399891c-47.3 35.3-84 78-110 128 -16.7 32-27.7 63.7-33 95 0 1.3-.2 2.7-.5 4-.3 1.3-.5 2.3-.5 3 0 7.3 6.7 11 20  11 8 0 13.2-.8 15.5-2.5 2.3-1.7 4.2-5.5 5.5-11.5 2-13.3 5.7-27 11-41 14.7-44.7  39-84.5 73-119.5s73.7-60.2 119-75.5c6-2 9-5.7 9-11s-3-9-9-11c-45.3-15.3-85 -40.5-119-75.5s-58.3-74.8-73-119.5c-4.7-14-8.3-27.3-11-40-1.3-6.7-3.2-10.8-5.5 -12.5-2.3-1.7-7.5-2.5-15.5-2.5-14 0-21 3.7-21 11 0 2 2 10.3 6 25 20.7 83.3 67  151.7 139 205zm0 0v40h399900v-40z\"></path></svg></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.01100000000000001em;\"><span></span></span></span></span></span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.07153em;\">Z</span></span></span></span></p>",
+        "id": 235906045,
+        "sender_full_name": "Fabrizio Genovese",
+        "timestamp": 1619210830
+    },
+    {
+        "content": "<p>Now you say: I consider this as a hypergraph, and I turn this hypergraph into a pre-net</p>",
+        "id": 235906090,
+        "sender_full_name": "Fabrizio Genovese",
+        "timestamp": 1619210846
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276438\">Fabrizio Genovese</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/smc.20to.20petri.20nets/near/235905943\">said</a>:</p>\n<blockquote>\n<p>I'm not sure</p>\n</blockquote>\n<p>you can only represent finitely many tokens in any given place right? bc you use the free monoid on the places</p>",
+        "id": 235906126,
+        "sender_full_name": "Matteo Capucci (he/him)",
+        "timestamp": 1619210867
+    },
+    {
+        "content": "<p>This pre-net will have places <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>X</mi><mo separator=\"true\">,</mo><mi>Y</mi><mo separator=\"true\">,</mo><mi>Z</mi></mrow><annotation encoding=\"application/x-tex\">X, Y , Z</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8777699999999999em;vertical-align:-0.19444em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.07847em;\">X</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.22222em;\">Y</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.07153em;\">Z</span></span></span></span></p>",
+        "id": 235906140,
+        "sender_full_name": "Fabrizio Genovese",
+        "timestamp": 1619210875
+    },
+    {
+        "content": "<p>and transitions <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>f</mi><mo separator=\"true\">,</mo><mi>g</mi></mrow><annotation encoding=\"application/x-tex\">f, g</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8888799999999999em;vertical-align:-0.19444em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.10764em;\">f</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.03588em;\">g</span></span></span></span></p>",
+        "id": 235906190,
+        "sender_full_name": "Fabrizio Genovese",
+        "timestamp": 1619210883
+    },
+    {
+        "content": "<p>So in the resulting SMC you can also consider just the morphism <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>g</mi><mo>:</mo><mi>Y</mi><mo>→</mo><mi>Z</mi></mrow><annotation encoding=\"application/x-tex\">g: Y \\to Z</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.625em;vertical-align:-0.19444em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.03588em;\">g</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">:</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.22222em;\">Y</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">→</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.07153em;\">Z</span></span></span></span>, say</p>",
+        "id": 235906247,
+        "sender_full_name": "Fabrizio Genovese",
+        "timestamp": 1619210908
+    },
+    {
+        "content": "<p>which doesn't match your domain</p>",
+        "id": 235906261,
+        "sender_full_name": "Fabrizio Genovese",
+        "timestamp": 1619210917
+    },
+    {
+        "content": "<p>And yes, monoids are finite</p>",
+        "id": 235906280,
+        "sender_full_name": "Fabrizio Genovese",
+        "timestamp": 1619210929
+    },
+    {
+        "content": "<p>oooh...</p>",
+        "id": 235906284,
+        "sender_full_name": "Matteo Capucci (he/him)",
+        "timestamp": 1619210932
+    },
+    {
+        "content": "<p>i didn't realize you could mark in perverse ways like that</p>",
+        "id": 235906313,
+        "sender_full_name": "Matteo Capucci (he/him)",
+        "timestamp": 1619210952
+    },
+    {
+        "content": "<p>You can mark on _any_ place, as you like</p>",
+        "id": 235906336,
+        "sender_full_name": "Fabrizio Genovese",
+        "timestamp": 1619210965
+    },
+    {
+        "content": "<p>Instead, in the approach me and Jade were sketching, you are _not_ allowed to decompose morphisms that way</p>",
+        "id": 235906349,
+        "sender_full_name": "Fabrizio Genovese",
+        "timestamp": 1619210974
+    },
+    {
+        "content": "<p>each string diagram gets promoted to an atomic transition</p>",
+        "id": 235906360,
+        "sender_full_name": "Fabrizio Genovese",
+        "timestamp": 1619210981
+    },
+    {
+        "content": "<p>So I will only be able to apply <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>f</mi><mo separator=\"true\">;</mo><mi>g</mi></mrow><annotation encoding=\"application/x-tex\">f;g</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8888799999999999em;vertical-align:-0.19444em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.10764em;\">f</span><span class=\"mpunct\">;</span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.03588em;\">g</span></span></span></span> as an atomic event</p>",
+        "id": 235906379,
+        "sender_full_name": "Fabrizio Genovese",
+        "timestamp": 1619210998
+    },
+    {
+        "content": "<p>Jade and I are still (on and off) working out whether these adjunctions are monadic. Maybe I'll work on that some more next week since you guys are discussing it...</p>",
+        "id": 235906452,
+        "sender_full_name": "Morgan Rogers (he/him)",
+        "timestamp": 1619211015
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276438\">Fabrizio Genovese</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/smc.20to.20petri.20nets/near/235906349\">said</a>:</p>\n<blockquote>\n<p>Instead, in the approach me and Jade were sketching, you are _not_ allowed to decompose morphisms that way</p>\n</blockquote>\n<p>i guess then this is what i want</p>",
+        "id": 235906646,
+        "sender_full_name": "Matteo Capucci (he/him)",
+        "timestamp": 1619211127
+    },
+    {
+        "content": "<p>But then you will appreciate the necessity of ballooning up objects as well! <span aria-label=\"grinning\" class=\"emoji emoji-1f600\" role=\"img\" title=\"grinning\">:grinning:</span></p>",
+        "id": 235906693,
+        "sender_full_name": "Fabrizio Genovese",
+        "timestamp": 1619211151
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"277473\">Morgan Rogers (he/him)</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/smc.20to.20petri.20nets/near/235906452\">said</a>:</p>\n<blockquote>\n<p>Jade and I are still (on and off) working out whether these adjunctions are monadic. Maybe I'll work on that some more next week since you guys are discussing it...</p>\n</blockquote>\n<p>so this might be an opportunity to ask... what does monadicity buy you?</p>",
+        "id": 235906705,
+        "sender_full_name": "Matteo Capucci (he/him)",
+        "timestamp": 1619211159
+    },
+    {
+        "content": "<p>Ha, not a great deal, besides some formal nonsense about how the category of SMCs is structured over the category of nets (everything is a coequalizer of free things) which isn't much of an improvement over the existing results about these categories</p>",
+        "id": 235907039,
+        "sender_full_name": "Morgan Rogers (he/him)",
+        "timestamp": 1619211345
+    },
+    {
+        "content": "<p>It will confirm that SMC homs are the \"right\" morphisms in the Kleisli category, which people have been assuming anyway.</p>",
+        "id": 235907165,
+        "sender_full_name": "Morgan Rogers (he/him)",
+        "timestamp": 1619211402
+    },
+    {
+        "content": "<p>More likely it will come in handy later when someone has a monad on the category of nets and they want to argue that it lifts to the category of SMCs: knowing that the latter is a category of algebras will provide an efficient abstract path to making that deduction. (Also we're doing it for Q-nets, so maybe there is a variant of nets where that will be more important).</p>",
+        "id": 235907363,
+        "sender_full_name": "Morgan Rogers (he/him)",
+        "timestamp": 1619211516
+    },
+    {
+        "content": "<p>To be honest, failure of monadicity would be a lot more work but a lot more interesting. I'll let you know which way the cookie crumbles when we get there <span aria-label=\"joy\" class=\"emoji emoji-1f602\" role=\"img\" title=\"joy\">:joy:</span></p>",
+        "id": 235907480,
+        "sender_full_name": "Morgan Rogers (he/him)",
+        "timestamp": 1619211600
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"277473\">Morgan Rogers (he/him)</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/smc.20to.20petri.20nets/near/235906452\">said</a>:</p>\n<blockquote>\n<p>Jade and I are still (on and off) working out whether these adjunctions are monadic. Maybe I'll work on that some more next week since you guys are discussing it...</p>\n</blockquote>\n<p>Yay!</p>",
+        "id": 235919638,
+        "sender_full_name": "John Baez",
+        "timestamp": 1619217895
+    },
+    {
+        "content": "<p>Jade is at that stage where work on the thesis becomes a somewhat panicky rush to meet the deadline... so it may be mainly you doing this for a while.</p>",
+        "id": 235919762,
+        "sender_full_name": "John Baez",
+        "timestamp": 1619217968
+    },
+    {
+        "content": "<p>I don't know exactly what monadicity buys you, but it seems like a really natural question, so once it's answered I bet people will start figuring out things to do with it.   <span class=\"user-mention\" data-user-id=\"275965\">@Evan Patterson</span> and <span class=\"user-mention\" data-user-id=\"275927\">@James Fairbanks</span> and I have a bunch of things we can do with the Kleisli category, for example.  A bunch of these may work even if the adjunction between Petri nets and commutative monoidal categories is <em>not</em> monadic - as we discussed earlier here, there's still a Kleisli-like category.</p>",
+        "id": 235919978,
+        "sender_full_name": "John Baez",
+        "timestamp": 1619218122
+    }
+]

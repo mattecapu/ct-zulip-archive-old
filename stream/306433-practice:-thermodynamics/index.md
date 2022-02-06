@@ -1,0 +1,40 @@
+---
+layout: archive
+title: Zulip Chat Archive
+permalink: /stream/306433-practice:-thermodynamics/index.html
+---
+
+## Stream: [practice: thermodynamics](https://mattecapu.github.io/ct-zulip-archive/stream/306433-practice:-thermodynamics/index.html)
+---
+
+### Topics:
+
+* [geometry of thermodynamics](topic/geometry.20of.20thermodynamics.html) (2 messages, latest: Jan 29 2022 at 19:15)
+* [Hamiltonian puzzle](topic/Hamiltonian.20puzzle.html) (16 messages, latest: Jan 28 2022 at 18:02)
+* [port-Hamiltonian mechanics](topic/port-Hamiltonian.20mechanics.html) (34 messages, latest: Jan 28 2022 at 16:34)
+* [Geometry of Thermodynamics](topic/Geometry.20of.20Thermodynamics.html) (2 messages, latest: Jan 28 2022 at 15:14)
+* [Symplecticization of Contact Geometry for Thermodynamics](topic/Symplecticization.20of.20Contact.20Geometry.20for.20Thermodynamics.html) (2 messages, latest: Jan 25 2022 at 23:53)
+* [Hong Qian](topic/Hong.20Qian.html) (95 messages, latest: Jan 17 2022 at 18:42)
+* [flow of molecules](topic/flow.20of.20molecules.html) (16 messages, latest: Jan 10 2022 at 03:56)
+* [Operads from Operad Algebra](topic/Operads.20from.20Operad.20Algebra.html) (8 messages, latest: Dec 31 2021 at 21:40)
+* [bifrobenius algebras](topic/bifrobenius.20algebras.html) (6 messages, latest: Dec 30 2021 at 03:42)
+* [categories in thermodynamics](topic/categories.20in.20thermodynamics.html) (11 messages, latest: Dec 30 2021 at 00:49)
+* [conservation in thermodynamics](topic/conservation.20in.20thermodynamics.html) (9 messages, latest: Dec 06 2021 at 21:17)
+* [exterior differential systems](topic/exterior.20differential.20systems.html) (20 messages, latest: Dec 06 2021 at 10:46)
+* [statistical mechanical Fock space](topic/statistical.20mechanical.20Fock.20space.html) (41 messages, latest: Dec 02 2021 at 18:19)
+* [limitations of thermodynamics](topic/limitations.20of.20thermodynamics.html) (15 messages, latest: Nov 24 2021 at 23:56)
+* [compositional thermostatics](topic/compositional.20thermostatics.html) (24 messages, latest: Nov 24 2021 at 21:33)
+* [linear irreversible thermodynamics](topic/linear.20irreversible.20thermodynamics.html) (4 messages, latest: Nov 23 2021 at 17:49)
+* [Infinite-Dimensional Convex Spaces](topic/Infinite-Dimensional.20Convex.20Spaces.html) (3 messages, latest: Nov 17 2021 at 15:42)
+* [Legendre-Fenchel transform](topic/Legendre-Fenchel.20transform.html) (15 messages, latest: Nov 14 2021 at 14:24)
+* [heat bath in Markov chains](topic/heat.20bath.20in.20Markov.20chains.html) (3 messages, latest: Nov 14 2021 at 13:27)
+* [analogies between classical mechanics and thermodynamics](topic/analogies.20between.20classical.20mechanics.20and.20thermodynamics.html) (1 message, latest: Nov 14 2021 at 00:24)
+* [Analogies between Classical Mechanics and Thermodynamics](topic/Analogies.20between.20Classical.20Mechanics.20and.20Thermodynamics.html) (3 messages, latest: Nov 12 2021 at 18:32)
+* [stat mech of the Carnot engine](topic/stat.20mech.20of.20the.20Carnot.20engine.html) (38 messages, latest: Nov 12 2021 at 18:31)
+* [Heat Bath in Markov Chains](topic/Heat.20Bath.20in.20Markov.20Chains.html) (1 message, latest: Nov 12 2021 at 15:13)
+* [extending concave functions](topic/extending.20concave.20functions.html) (17 messages, latest: Nov 11 2021 at 00:01)
+* [Caratheodory](topic/Caratheodory.html) (8 messages, latest: Nov 10 2021 at 23:59)
+* [Stat Mech of the Carnot Engine](topic/Stat.20Mech.20of.20the.20Carnot.20Engine.html) (2 messages, latest: Nov 10 2021 at 23:58)
+* [stream events](topic/stream.20events.html) (13 messages, latest: Nov 09 2021 at 19:58)
+
+<hr><p>Last updated: Jan 30 2022 at 00:30 UTC</p>

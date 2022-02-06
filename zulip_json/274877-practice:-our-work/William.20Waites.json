@@ -1,0 +1,110 @@
+[
+    {
+        "content": "<p>We've just made this paper: <em>Compositional modelling of immune response and virus transmission dynamics</em> <a href=\"https://arxiv.org/abs/2111.02510\">https://arxiv.org/abs/2111.02510</a></p>\n<p>It's at the extreme end of applied CT in the sense that it's built on stochastic graph rewriting, and we know and emphasise that because of general abstract nonsense the approach is sound. It's nice to have that in the background, but more than that, it means that we can formulate a pretty complicated model in simple terms and don't have to worry about writing in the assembly language of differential equations with giant sums and unmanageable numbers of dimensions. But we don't actually <em>do</em> any CT in the paper.</p>\n<p>We start by asking, what is the simplest, biologically reasonable process that could produce some data about Ct values for PCR tests from health workers with the COVID? The simple model reproduces two interesting things: heterogeneity in viral load, which has been observed before in the statistics leading to what is called \"over-dispersion\" where a minority of people are far more infectious than most, and shifts in the expected distribution of viral load depending on whether an epidemic is rising, falling or stationary.</p>\n<p>One interesting thing is the extent to which it's really necessary to have multi-disciplinary collaboration to do something like this. A few of us are computer scientists, and I've been working on epidemics for a while so know a little about that. But before doing this, I knew nothing at all about the immune system. So coauthors include people who do epidemic models too and people who know immunology. That's important to keep it on the rails.</p>\n<p>There are also a few ideas at the end, mentioned obliquely, about things that I don't think we know how to do properly yet in Open Systems. The question of what to do with rates when you compose together stochastic rewriting systems like these rule-based models or Petri nets. These are basically done by hand here. And a possible answer which might be completely wrong about how maybe we could do something similar to what happens in Open Games with the utility functions. And, could we figure out a way to compose models that have both games and nets or rules? That would be very powerful.</p>",
+        "id": 260373687,
+        "sender_full_name": "ww",
+        "timestamp": 1636098051
+    },
+    {
+        "content": "<p>Also, don't even ask how long it took to get TikZ and pgfplots to do that...</p>",
+        "id": 260373936,
+        "sender_full_name": "ww",
+        "timestamp": 1636098326
+    },
+    {
+        "content": "<p>Cool!   It'll be great to hear more about this in our little \"categorical epidemiological modeling\" group the week after next.   I'll read the paper ahead of time.   I'm curious what you actually mean by what to do with rates when you compose Petri nets with rates.   I can imagine this having an elegant sort of obvious answer that I've already written about, or being a big mess, depending on how you intend to compose those Petri nets (with rates).</p>",
+        "id": 260417802,
+        "sender_full_name": "John Baez",
+        "timestamp": 1636124899
+    },
+    {
+        "content": "<p>(I distinguish Petri nets with rates from \"plain\" Petri nets - the latter being popular in computer science.)</p>",
+        "id": 260417866,
+        "sender_full_name": "John Baez",
+        "timestamp": 1636124935
+    },
+    {
+        "content": "<p>I'd like to know what this elegant sort of obvious answer that you've written about is!</p>",
+        "id": 260569239,
+        "sender_full_name": "ww",
+        "timestamp": 1636285422
+    },
+    {
+        "content": "<p>Well, it's this:</p>\n<ul>\n<li>John Baez and Blake Pollard, <a href=\"https://arxiv.org/abs/1704.02051\">A compositional framework for reaction networks</a>, <em>Reviews in Mathematical Physics</em> 29 (2017): 1750028.</li>\n</ul>",
+        "id": 260600365,
+        "sender_full_name": "John Baez",
+        "timestamp": 1636325754
+    },
+    {
+        "content": "<p>A reaction network is just an equivalent way of presenting data in a Petri net with rates, and this paper actually uses Petri nets with rates, but we say \"reaction networks\" since chemists prefer that terminology.</p>",
+        "id": 260600436,
+        "sender_full_name": "John Baez",
+        "timestamp": 1636325812
+    },
+    {
+        "content": "<p>The form of composition here may or may not be general enough for your purposes.  It's what Evan Patterson is using in his software:</p>\n<ul>\n<li>Micah Halter and Evan Patterson, <a href=\"https://www.algebraicjulia.org/blog/post/2020/10/structured-cospans\">Compositional epidemiological modeling using structured cospans</a>, October 17, 2020.</li>\n</ul>",
+        "id": 260600515,
+        "sender_full_name": "John Baez",
+        "timestamp": 1636325917
+    },
+    {
+        "content": "<p>We've been talking about it a bunch in our seminar... not that this helps you much!</p>",
+        "id": 260600534,
+        "sender_full_name": "John Baez",
+        "timestamp": 1636325961
+    },
+    {
+        "content": "<p>There are lots of videos of me explaining this compositional framework reaction networks, which may be easier than the paper.  Here's one:</p>\n<ul>\n<li><a href=\"https://www.youtube.com/watch?v=IyJP_7ucwWo\">The mathematics of networks</a>.<div class=\"youtube-video message_inline_image\"><a data-id=\"IyJP_7ucwWo\" href=\"https://www.youtube.com/watch?v=IyJP_7ucwWo\"><img src=\"https://uploads.zulipusercontent.net/c700bfd2047d424c50a91dcfdedba4a09e38bb20/68747470733a2f2f692e7974696d672e636f6d2f76692f49794a505f37756377576f2f64656661756c742e6a7067\"></a></div></li>\n</ul>",
+        "id": 260600690,
+        "sender_full_name": "John Baez",
+        "timestamp": 1636326092
+    },
+    {
+        "content": "<p>The elegant obvious solution is elegant and obvious because it tackles a fairly unambitious problem - so if you're thinking about something difficult, it's probably something else.</p>",
+        "id": 260600761,
+        "sender_full_name": "John Baez",
+        "timestamp": 1636326182
+    },
+    {
+        "content": "<p>Aha, yes, I remember discussion of that in the meeting before the one that I missed because GWB changed the time when the time changes. But I thought where that has most recently landed is basically carrying along a tuple of rates from each reaction/transition that are being composed together. That's nice because it doesn't lose any information. But rate for the composite reaction needs to be a number, probably some function of those things in the tuple. So to actually perform the composition and get an instance of something that I can simulate, I need to supply extra information. Is that right?</p>",
+        "id": 260654548,
+        "sender_full_name": "ww",
+        "timestamp": 1636377171
+    },
+    {
+        "content": "<p>I don't completely understand the term \"composite reaction\" - mainly because in my setup, when you compose Petri nets with rates you don't compose reactions.</p>",
+        "id": 260686865,
+        "sender_full_name": "John Baez",
+        "timestamp": 1636391170
+    },
+    {
+        "content": "<p>Petri nets with rates have \"transitions\" (= reactions) and \"places\" (= species).  When you compose two Petri nets with rates in my setup, you identify some places in one with some places in the other, and that's all.</p>",
+        "id": 260687029,
+        "sender_full_name": "John Baez",
+        "timestamp": 1636391251
+    },
+    {
+        "content": "<p>Sorry, I was mixing this up with the type of composition of nets using a pullback that we were talking about a few weeks ago.</p>",
+        "id": 260690265,
+        "sender_full_name": "ww",
+        "timestamp": 1636392558
+    },
+    {
+        "content": "<p>I tend to think of these things as more reaction-shaped because it's easier to think of the graph rewriting rules that way. With rules you can sort of make a graph that corresponds to what a Petri net is out of the possible sequences of rule applications, but that makes my head hurt.</p>",
+        "id": 260691374,
+        "sender_full_name": "ww",
+        "timestamp": 1636393015
+    },
+    {
+        "content": "<p>It ought to be useful to think about that though, despite the headache, because it does say something about causality. In the sense that things towards the input of a Petri net \"cause\" things towards the output. Same for the corresponding dependency graph for rules.</p>",
+        "id": 260691938,
+        "sender_full_name": "ww",
+        "timestamp": 1636393238
+    },
+    {
+        "content": "<p>Maybe I'll understand this a bit better when you give your talk, esp. if I ask about it.</p>",
+        "id": 260702000,
+        "sender_full_name": "John Baez",
+        "timestamp": 1636397645
+    }
+]

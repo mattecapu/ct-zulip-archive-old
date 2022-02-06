@@ -1,0 +1,992 @@
+[
+    {
+        "content": "<p>What sort of additional equipment is necessary on top of a monoidal structure in order to be able to talk about \"idempotent monoid objects\"?</p>",
+        "id": 194340232,
+        "sender_full_name": "Asad Saeeduddin",
+        "timestamp": 1587058490
+    },
+    {
+        "content": "<p>probably something along these lines <a href=\"https://ncatlab.org/nlab/show/monoidal+category+with+diagonals\" title=\"https://ncatlab.org/nlab/show/monoidal+category+with+diagonals\">https://ncatlab.org/nlab/show/monoidal+category+with+diagonals</a></p>",
+        "id": 194340573,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1587058642
+    },
+    {
+        "content": "<p>what you want to say is that the identity is equal to the squaring map, so you need to be able to define a squaring map</p>",
+        "id": 194340736,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1587058710
+    },
+    {
+        "content": "<p>hence you need to be able to \"duplicate elements of the monoid\", in internal phrasing</p>",
+        "id": 194340872,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1587058773
+    },
+    {
+        "content": "<p>I was looking at that, but I couldn't figure out when we have such a \"monoidal category with diagonals\" besides when the category is fully cartesian</p>",
+        "id": 194340988,
+        "sender_full_name": "Asad Saeeduddin",
+        "timestamp": 1587058809
+    },
+    {
+        "content": "<p>it does say that the monoidal product will be cartesian if it has both diagonals and deletion</p>",
+        "id": 194341076,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1587058851
+    },
+    {
+        "content": "<p>The nLab page gives an example: pointed sets with the smash product.</p>",
+        "id": 194341128,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1587058876
+    },
+    {
+        "content": "<p>the monoidal product on Rel w/ the graph of Set's diagonal might qualify for this—lemme think about it</p>",
+        "id": 194341209,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1587058915
+    },
+    {
+        "content": "<p>What is \"idempotent monoid object\" supposed to mean? Are idempotent monads supposed to be an example?</p>",
+        "id": 194341226,
+        "sender_full_name": "Reid Barton",
+        "timestamp": 1587058920
+    },
+    {
+        "content": "<p>ooh</p>",
+        "id": 194341297,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1587058945
+    },
+    {
+        "content": "<p><span class=\"user-mention\" data-user-id=\"276092\">@Nathanael Arkor</span> isn't that category still cartesian?</p>",
+        "id": 194341332,
+        "sender_full_name": "Asad Saeeduddin",
+        "timestamp": 1587058964
+    },
+    {
+        "content": "<p>i just assumed something which would specialize to the ordinary notion of an idempotent monoid in Set</p>",
+        "id": 194341339,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1587058967
+    },
+    {
+        "content": "<p>it isnt cartesian</p>",
+        "id": 194341349,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1587058976
+    },
+    {
+        "content": "<p>no, that's what I'm trying to avoid. I don't want to be specific to Set, or even to cartesian monoidal categories, because I suspect I have an example of this, but the category is not cartesian monoidal</p>",
+        "id": 194341396,
+        "sender_full_name": "Asad Saeeduddin",
+        "timestamp": 1587059006
+    },
+    {
+        "content": "<p>I know the point of the question is that you are looking for a definition, but it would be nice to have some more clues about what it is you are trying to define <span aria-label=\"upside down\" class=\"emoji emoji-1f643\" role=\"img\" title=\"upside down\">:upside_down:</span></p>",
+        "id": 194341445,
+        "sender_full_name": "Reid Barton",
+        "timestamp": 1587059034
+    },
+    {
+        "content": "<p>you want to <em>avoid</em> your definition producing ordinary idempotent monoids when you interpret it in Set? <span aria-label=\"mischievous\" class=\"emoji emoji-1f61b\" role=\"img\" title=\"mischievous\">:mischievous:</span></p>",
+        "id": 194341463,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1587059041
+    },
+    {
+        "content": "<p>For example: at least one example of a category in which you know how to define the object, and what the object is supposed to be there.</p>",
+        "id": 194341603,
+        "sender_full_name": "Reid Barton",
+        "timestamp": 1587059098
+    },
+    {
+        "content": "<p>Since we apparently have two entirely different interpretations already.</p>",
+        "id": 194341644,
+        "sender_full_name": "Reid Barton",
+        "timestamp": 1587059117
+    },
+    {
+        "content": "<p>Or at least, I think they're entirely different.</p>",
+        "id": 194341666,
+        "sender_full_name": "Reid Barton",
+        "timestamp": 1587059129
+    },
+    {
+        "content": "<p>mm, yeah i think they are different</p>",
+        "id": 194342168,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1587059374
+    },
+    {
+        "content": "<p>idempotence in reference to a Set monoid is talking about the multiplication, whereas idempotence in reference to a monad is talking about application of the monad</p>",
+        "id": 194342360,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1587059461
+    },
+    {
+        "content": "<p>Sorry, let me start at the beginning. I have a category of functors <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>F</mi><mo>:</mo><mrow><mi mathvariant=\"bold\">S</mi><mi mathvariant=\"bold\">e</mi><mi mathvariant=\"bold\">t</mi></mrow><mo>→</mo><mrow><mi mathvariant=\"bold\">S</mi><mi mathvariant=\"bold\">e</mi><mi mathvariant=\"bold\">t</mi></mrow></mrow><annotation encoding=\"application/x-tex\">F : \\mathbf{Set} \\to \\mathbf{Set}</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathdefault\" style=\"margin-right:0.13889em;\">F</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">:</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.68611em;vertical-align:0em;\"></span><span class=\"mord\"><span class=\"mord mathbf\">S</span><span class=\"mord mathbf\">e</span><span class=\"mord mathbf\">t</span></span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">→</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.68611em;vertical-align:0em;\"></span><span class=\"mord\"><span class=\"mord mathbf\">S</span><span class=\"mord mathbf\">e</span><span class=\"mord mathbf\">t</span></span></span></span></span> which are monoids with respect to the Day convolution monoidal structure on <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"false\">[</mo><mrow><mi mathvariant=\"bold\">S</mi><mi mathvariant=\"bold\">e</mi><mi mathvariant=\"bold\">t</mi></mrow><mo separator=\"true\">,</mo><mrow><mi mathvariant=\"bold\">S</mi><mi mathvariant=\"bold\">e</mi><mi mathvariant=\"bold\">t</mi></mrow><mo stretchy=\"false\">]</mo></mrow><annotation encoding=\"application/x-tex\">[\\mathbf{Set}, \\mathbf{Set}]</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mopen\">[</span><span class=\"mord\"><span class=\"mord mathbf\">S</span><span class=\"mord mathbf\">e</span><span class=\"mord mathbf\">t</span></span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mord\"><span class=\"mord mathbf\">S</span><span class=\"mord mathbf\">e</span><span class=\"mord mathbf\">t</span></span><span class=\"mclose\">]</span></span></span></span>. Moreover, the monoidal structure on <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"bold\">S</mi><mi mathvariant=\"bold\">e</mi><mi mathvariant=\"bold\">t</mi></mrow><annotation encoding=\"application/x-tex\">\\mathbf{Set}</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.68611em;vertical-align:0em;\"></span><span class=\"mord\"><span class=\"mord mathbf\">S</span><span class=\"mord mathbf\">e</span><span class=\"mord mathbf\">t</span></span></span></span></span> which induces the Day convolution monoidal structure on the functor category admits a \"diagonal map\" just as you mentioned.</p>",
+        "id": 194342388,
+        "sender_full_name": "Asad Saeeduddin",
+        "timestamp": 1587059473
+    },
+    {
+        "content": "<p>is this some kind of infinitary generalization of species? <span aria-label=\"thinking\" class=\"emoji emoji-1f914\" role=\"img\" title=\"thinking\">:thinking:</span></p>",
+        "id": 194342452,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1587059509
+    },
+    {
+        "content": "<p>oh wait ur not using the groupoid core either, thats fairly different</p>",
+        "id": 194342592,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1587059560
+    },
+    {
+        "content": "<p>let's call that monoidal structure <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>⊗</mo><mo>:</mo><mrow><mi mathvariant=\"bold\">S</mi><mi mathvariant=\"bold\">e</mi><mi mathvariant=\"bold\">t</mi></mrow><mo>×</mo><mrow><mi mathvariant=\"bold\">S</mi><mi mathvariant=\"bold\">e</mi><mi mathvariant=\"bold\">t</mi></mrow><mo>→</mo><mrow><mi mathvariant=\"bold\">S</mi><mi mathvariant=\"bold\">e</mi><mi mathvariant=\"bold\">t</mi></mrow></mrow><annotation encoding=\"application/x-tex\">\\otimes : \\mathbf{Set} \\times \\mathbf{Set} \\to \\mathbf{Set}</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.66666em;vertical-align:-0.08333em;\"></span><span class=\"mord\">⊗</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">:</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.76944em;vertical-align:-0.08333em;\"></span><span class=\"mord\"><span class=\"mord mathbf\">S</span><span class=\"mord mathbf\">e</span><span class=\"mord mathbf\">t</span></span><span class=\"mspace\" style=\"margin-right:0.2222222222222222em;\"></span><span class=\"mbin\">×</span><span class=\"mspace\" style=\"margin-right:0.2222222222222222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.68611em;vertical-align:0em;\"></span><span class=\"mord\"><span class=\"mord mathbf\">S</span><span class=\"mord mathbf\">e</span><span class=\"mord mathbf\">t</span></span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">→</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.68611em;vertical-align:0em;\"></span><span class=\"mord\"><span class=\"mord mathbf\">S</span><span class=\"mord mathbf\">e</span><span class=\"mord mathbf\">t</span></span></span></span></span>, and its diagonal map <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi mathvariant=\"normal\">Δ</mi><mo lspace=\"0em\" rspace=\"0em\">⊗</mo></msub><mo>:</mo><mi>X</mi><mo>→</mo><mi>X</mi><mo>⊗</mo><mi>X</mi></mrow><annotation encoding=\"application/x-tex\">\\Delta_{\\otimes} : X \\to X \\otimes X</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.891661em;vertical-align:-0.208331em;\"></span><span class=\"mord\"><span class=\"mord\">Δ</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.25833100000000003em;\"><span style=\"top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\">⊗</span></span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.208331em;\"><span></span></span></span></span></span></span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">:</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathdefault\" style=\"margin-right:0.07847em;\">X</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">→</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.76666em;vertical-align:-0.08333em;\"></span><span class=\"mord mathdefault\" style=\"margin-right:0.07847em;\">X</span><span class=\"mspace\" style=\"margin-right:0.2222222222222222em;\"></span><span class=\"mbin\">⊗</span><span class=\"mspace\" style=\"margin-right:0.2222222222222222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathdefault\" style=\"margin-right:0.07847em;\">X</span></span></span></span></p>",
+        "id": 194342808,
+        "sender_full_name": "Asad Saeeduddin",
+        "timestamp": 1587059658
+    },
+    {
+        "content": "<p>which monoidal structure on Set are you using?</p>",
+        "id": 194342871,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1587059689
+    },
+    {
+        "content": "<p>just the cartesian one?</p>",
+        "id": 194342890,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1587059695
+    },
+    {
+        "content": "<p>no, it's a different one besides the cartesian one</p>",
+        "id": 194342921,
+        "sender_full_name": "Asad Saeeduddin",
+        "timestamp": 1587059705
+    },
+    {
+        "content": "<p>(was thinking that cocartesian seemed plausible in this context)</p>",
+        "id": 194342922,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1587059705
+    },
+    {
+        "content": "<p>it's actually literally the coproduct of the cartesian and cocartesian structures</p>",
+        "id": 194342953,
+        "sender_full_name": "Asad Saeeduddin",
+        "timestamp": 1587059724
+    },
+    {
+        "content": "<p>o.O</p>",
+        "id": 194342962,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1587059729
+    },
+    {
+        "content": "<p>coproduct in which category?</p>",
+        "id": 194342979,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1587059742
+    },
+    {
+        "content": "<p>in <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"bold\">S</mi><mi mathvariant=\"bold\">e</mi><mi mathvariant=\"bold\">t</mi></mrow><annotation encoding=\"application/x-tex\">\\mathbf{Set}</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.68611em;vertical-align:0em;\"></span><span class=\"mord\"><span class=\"mord mathbf\">S</span><span class=\"mord mathbf\">e</span><span class=\"mord mathbf\">t</span></span></span></span></span></p>",
+        "id": 194343014,
+        "sender_full_name": "Asad Saeeduddin",
+        "timestamp": 1587059758
+    },
+    {
+        "content": "<p>the cartesian and cocartesian structures aren't sets, so how can you take their coproduct in set...?</p>",
+        "id": 194343086,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1587059775
+    },
+    {
+        "content": "<p>you mean pointwise, or</p>",
+        "id": 194343094,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1587059779
+    },
+    {
+        "content": "<p>Yes, the functor category <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"false\">[</mo><mrow><mi mathvariant=\"bold\">S</mi><mi mathvariant=\"bold\">e</mi><mi mathvariant=\"bold\">t</mi></mrow><mo>×</mo><mrow><mi mathvariant=\"bold\">S</mi><mi mathvariant=\"bold\">e</mi><mi mathvariant=\"bold\">t</mi></mrow><mo separator=\"true\">,</mo><mrow><mi mathvariant=\"bold\">S</mi><mi mathvariant=\"bold\">e</mi><mi mathvariant=\"bold\">t</mi></mrow><mo stretchy=\"false\">]</mo></mrow><annotation encoding=\"application/x-tex\">[\\mathbf{Set} \\times \\mathbf{Set}, \\mathbf{Set}]</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mopen\">[</span><span class=\"mord\"><span class=\"mord mathbf\">S</span><span class=\"mord mathbf\">e</span><span class=\"mord mathbf\">t</span></span><span class=\"mspace\" style=\"margin-right:0.2222222222222222em;\"></span><span class=\"mbin\">×</span><span class=\"mspace\" style=\"margin-right:0.2222222222222222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord\"><span class=\"mord mathbf\">S</span><span class=\"mord mathbf\">e</span><span class=\"mord mathbf\">t</span></span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mord\"><span class=\"mord mathbf\">S</span><span class=\"mord mathbf\">e</span><span class=\"mord mathbf\">t</span></span><span class=\"mclose\">]</span></span></span></span> admits \"pointwise\" coproducts</p>",
+        "id": 194343165,
+        "sender_full_name": "Asad Saeeduddin",
+        "timestamp": 1587059811
+    },
+    {
+        "content": "<p>ah</p>",
+        "id": 194343196,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1587059823
+    },
+    {
+        "content": "<p>wasnt sure if maybe there was some fancy category of monoidal structures that might have different coproducts or sth</p>",
+        "id": 194343265,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1587059838
+    },
+    {
+        "content": "<p>so A ⊗ B is A × B + A + B, then...</p>",
+        "id": 194343302,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1587059852
+    },
+    {
+        "content": "<p>interesting... is this supposed to be something like \"one of A and B, but maybe both\"</p>",
+        "id": 194343360,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1587059879
+    },
+    {
+        "content": "<p>Right. And now we're talking about that tensor on <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"bold\">S</mi><mi mathvariant=\"bold\">e</mi><mi mathvariant=\"bold\">t</mi></mrow><annotation encoding=\"application/x-tex\">\\mathbf{Set}</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.68611em;vertical-align:0em;\"></span><span class=\"mord\"><span class=\"mord mathbf\">S</span><span class=\"mord mathbf\">e</span><span class=\"mord mathbf\">t</span></span></span></span></span> lifted via Day convolution to the endofunctor category on <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"bold\">S</mi><mi mathvariant=\"bold\">e</mi><mi mathvariant=\"bold\">t</mi></mrow><annotation encoding=\"application/x-tex\">\\mathbf{Set}</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.68611em;vertical-align:0em;\"></span><span class=\"mord\"><span class=\"mord mathbf\">S</span><span class=\"mord mathbf\">e</span><span class=\"mord mathbf\">t</span></span></span></span></span></p>",
+        "id": 194343446,
+        "sender_full_name": "Asad Saeeduddin",
+        "timestamp": 1587059899
+    },
+    {
+        "content": "<p>right, exactly</p>",
+        "id": 194343475,
+        "sender_full_name": "Asad Saeeduddin",
+        "timestamp": 1587059908
+    },
+    {
+        "content": "<p>in other words, we're talking about the category of lax monoidal functors that cohere the monoidal structure of <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>⊗</mo></mrow><annotation encoding=\"application/x-tex\">\\otimes</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.66666em;vertical-align:-0.08333em;\"></span><span class=\"mord\">⊗</span></span></span></span> on <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"bold\">S</mi><mi mathvariant=\"bold\">e</mi><mi mathvariant=\"bold\">t</mi></mrow><annotation encoding=\"application/x-tex\">\\mathbf{Set}</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.68611em;vertical-align:0em;\"></span><span class=\"mord\"><span class=\"mord mathbf\">S</span><span class=\"mord mathbf\">e</span><span class=\"mord mathbf\">t</span></span></span></span></span> with the monoidal structure of the product on <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"bold\">S</mi><mi mathvariant=\"bold\">e</mi><mi mathvariant=\"bold\">t</mi></mrow><annotation encoding=\"application/x-tex\">\\mathbf{Set}</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.68611em;vertical-align:0em;\"></span><span class=\"mord\"><span class=\"mord mathbf\">S</span><span class=\"mord mathbf\">e</span><span class=\"mord mathbf\">t</span></span></span></span></span></p>",
+        "id": 194343670,
+        "sender_full_name": "Asad Saeeduddin",
+        "timestamp": 1587059993
+    },
+    {
+        "content": "<p>wait what</p>",
+        "id": 194343730,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1587060003
+    },
+    {
+        "content": "<p>where did that \"in other words\" come from? i didnt notice anything about lax monoidal functors so far</p>",
+        "id": 194343827,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1587060041
+    },
+    {
+        "content": "<p>A monoid with respect to Day convolution is the same as a lax monoidal functor</p>",
+        "id": 194343885,
+        "sender_full_name": "Asad Saeeduddin",
+        "timestamp": 1587060065
+    },
+    {
+        "content": "<p>ooooooh right</p>",
+        "id": 194343919,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1587060074
+    },
+    {
+        "content": "<p>ok, hold on a moment</p>",
+        "id": 194343927,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1587060079
+    },
+    {
+        "content": "<p>lemme think about what day convolution looks like in this case</p>",
+        "id": 194343947,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1587060089
+    },
+    {
+        "content": "<p>so a representative of an element (F ⊗ G)(S) is elements F(A), G(B), and functions A × B → S, A → S, B → S...</p>",
+        "id": 194344274,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1587060228
+    },
+    {
+        "content": "<p>yup, exactly</p>",
+        "id": 194344376,
+        "sender_full_name": "Asad Saeeduddin",
+        "timestamp": 1587060255
+    },
+    {
+        "content": "<p><span aria-label=\"thinking\" class=\"emoji emoji-1f914\" role=\"img\" title=\"thinking\">:thinking:</span></p>",
+        "id": 194344379,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1587060256
+    },
+    {
+        "content": "<p>or you could just say <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mo>⊗</mo><mi>B</mi><mo>→</mo><mi>S</mi></mrow><annotation encoding=\"application/x-tex\">A \\otimes B \\to S</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.76666em;vertical-align:-0.08333em;\"></span><span class=\"mord mathdefault\">A</span><span class=\"mspace\" style=\"margin-right:0.2222222222222222em;\"></span><span class=\"mbin\">⊗</span><span class=\"mspace\" style=\"margin-right:0.2222222222222222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathdefault\" style=\"margin-right:0.05017em;\">B</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">→</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathdefault\" style=\"margin-right:0.05764em;\">S</span></span></span></span></p>",
+        "id": 194344409,
+        "sender_full_name": "Asad Saeeduddin",
+        "timestamp": 1587060272
+    },
+    {
+        "content": "<p>yeah but i wanted to expand it</p>",
+        "id": 194344428,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1587060280
+    },
+    {
+        "content": "<p>is this for haskell purposes by any chance <span aria-label=\"upside down\" class=\"emoji emoji-1f643\" role=\"img\" title=\"upside down\">:upside_down:</span></p>",
+        "id": 194344530,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1587060330
+    },
+    {
+        "content": "<p>so the monoid here takes a little getting used to, but now what I want to talk about is \"idempotent\" monoids. because we have an obvious diagonal map <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mo>→</mo><mi>A</mi><mo>⊗</mo><mi>A</mi></mrow><annotation encoding=\"application/x-tex\">A \\to A \\otimes A</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathdefault\">A</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">→</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.76666em;vertical-align:-0.08333em;\"></span><span class=\"mord mathdefault\">A</span><span class=\"mspace\" style=\"margin-right:0.2222222222222222em;\"></span><span class=\"mbin\">⊗</span><span class=\"mspace\" style=\"margin-right:0.2222222222222222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathdefault\">A</span></span></span></span></p>",
+        "id": 194344541,
+        "sender_full_name": "Asad Saeeduddin",
+        "timestamp": 1587060336
+    },
+    {
+        "content": "<p>i smell some kind of zipping</p>",
+        "id": 194344563,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1587060347
+    },
+    {
+        "content": "<p>busted :)</p>",
+        "id": 194344571,
+        "sender_full_name": "Asad Saeeduddin",
+        "timestamp": 1587060351
+    },
+    {
+        "content": "<p>i'm formalizing \"alignable\" functors</p>",
+        "id": 194344624,
+        "sender_full_name": "Asad Saeeduddin",
+        "timestamp": 1587060365
+    },
+    {
+        "content": "<p>hmm, well, i was already suspicious when i saw your ⊗</p>",
+        "id": 194344637,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1587060370
+    },
+    {
+        "content": "<p>but this clinches it</p>",
+        "id": 194344648,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1587060373
+    },
+    {
+        "content": "<p>right, ⊗ is <code>These</code></p>",
+        "id": 194344731,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1587060424
+    },
+    {
+        "content": "<p>I went through the laws for the <code>Semialign</code> class and some of them I was able to dismiss as free theorems, most of the others follow from having a symmetric monoidal functor, but the \"idempotent\" law is what I'm trying to unravel</p>",
+        "id": 194344930,
+        "sender_full_name": "Asad Saeeduddin",
+        "timestamp": 1587060502
+    },
+    {
+        "content": "<p>/me looks up <code>Semialign</code></p>",
+        "id": 194344982,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1587060523
+    },
+    {
+        "content": "<div class=\"codehilite\"><pre><span></span><span class=\"nf\">zip</span> <span class=\"ow\">::</span> <span class=\"n\">f</span> <span class=\"n\">a</span> <span class=\"ow\">-&gt;</span> <span class=\"n\">f</span> <span class=\"n\">b</span> <span class=\"ow\">-&gt;</span> <span class=\"p\">(</span><span class=\"kt\">These</span> <span class=\"n\">a</span> <span class=\"n\">b</span> <span class=\"ow\">-&gt;</span> <span class=\"n\">c</span><span class=\"p\">)</span> <span class=\"ow\">-&gt;</span> <span class=\"n\">f</span> <span class=\"n\">c</span>\n</pre></div>",
+        "id": 194345106,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1587060583
+    },
+    {
+        "content": "<p>HA</p>",
+        "id": 194345149,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1587060599
+    },
+    {
+        "content": "<p>i typed that before actually opening the haddock</p>",
+        "id": 194345245,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1587060622
+    },
+    {
+        "content": "<p>ok im not quite seeing how this corresponds to a monoid object though</p>",
+        "id": 194345573,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1587060769
+    },
+    {
+        "content": "<p>you mean you don't get how a lax monoidal functor corresponds to a monoid in some structure?</p>",
+        "id": 194345656,
+        "sender_full_name": "Asad Saeeduddin",
+        "timestamp": 1587060817
+    },
+    {
+        "content": "<p>no wait</p>",
+        "id": 194345672,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1587060825
+    },
+    {
+        "content": "<p>sorry i think i had some things backwards in my head</p>",
+        "id": 194345681,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1587060831
+    },
+    {
+        "content": "<p>lemme chew on it for another minute</p>",
+        "id": 194345692,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1587060835
+    },
+    {
+        "content": "<p><code>align :: f a -&gt; f b -&gt; f (These a b) </code></p>",
+        "id": 194345766,
+        "sender_full_name": "Asad Saeeduddin",
+        "timestamp": 1587060859
+    },
+    {
+        "content": "<p>this is the fundamental operation of the <code>Semialign</code> class</p>",
+        "id": 194345794,
+        "sender_full_name": "Asad Saeeduddin",
+        "timestamp": 1587060877
+    },
+    {
+        "content": "<p>we can make the laxity more obvious if we write it as <code>align :: (f a, f b) -&gt; f (These a b)</code></p>",
+        "id": 194345838,
+        "sender_full_name": "Asad Saeeduddin",
+        "timestamp": 1587060899
+    },
+    {
+        "content": "<p>no sorry yeah i got it</p>",
+        "id": 194345893,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1587060923
+    },
+    {
+        "content": "<p>(i wasnt thinking of it in lax functor terms)</p>",
+        "id": 194345917,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1587060935
+    },
+    {
+        "content": "<p>ok, <code>join align</code></p>",
+        "id": 194346061,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1587060995
+    },
+    {
+        "content": "<p>ha, obnoxious phrasing</p>",
+        "id": 194346068,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1587061000
+    },
+    {
+        "content": "<p>hmm, interesting</p>",
+        "id": 194346137,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1587061038
+    },
+    {
+        "content": "<p>i think this is <code>align . dup</code>, where <code>dup</code> is the diagonal map for the cartesian monoidal structure</p>",
+        "id": 194346139,
+        "sender_full_name": "Asad Saeeduddin",
+        "timestamp": 1587061041
+    },
+    {
+        "content": "<p>and <code>join These</code> is the diagonal map for the other monoidal structure</p>",
+        "id": 194346168,
+        "sender_full_name": "Asad Saeeduddin",
+        "timestamp": 1587061054
+    },
+    {
+        "content": "<p>yeah</p>",
+        "id": 194346204,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1587061067
+    },
+    {
+        "content": "<p>but</p>",
+        "id": 194346209,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1587061069
+    },
+    {
+        "content": "<p>um, one sec</p>",
+        "id": 194346281,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1587061088
+    },
+    {
+        "content": "<p>okay, this is interesting... so <code>align</code> isn't the monoid multiplication, <code>alignWith</code> is</p>",
+        "id": 194346397,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1587061168
+    },
+    {
+        "content": "<p>yes</p>",
+        "id": 194346429,
+        "sender_full_name": "Asad Saeeduddin",
+        "timestamp": 1587061195
+    },
+    {
+        "content": "<p><code>align</code> is the laxity of a monoidal functor, which is equivalent to a monoid wrt Day convolution. <code>alignWith</code> is the append operation of that monoid</p>",
+        "id": 194346515,
+        "sender_full_name": "Asad Saeeduddin",
+        "timestamp": 1587061217
+    },
+    {
+        "content": "<p>hence <code>(align | alignWith)</code> as the minimal complete definition</p>",
+        "id": 194346711,
+        "sender_full_name": "Asad Saeeduddin",
+        "timestamp": 1587061322
+    },
+    {
+        "content": "<p>i bet we have duplication for the day convolution</p>",
+        "id": 194346756,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1587061325
+    },
+    {
+        "content": "<p>have you checked that already?</p>",
+        "id": 194346767,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1587061330
+    },
+    {
+        "content": "<p>I haven't</p>",
+        "id": 194346798,
+        "sender_full_name": "Asad Saeeduddin",
+        "timestamp": 1587061345
+    },
+    {
+        "content": "<p>I did think about it a bit, but it didn't seem to work</p>",
+        "id": 194346897,
+        "sender_full_name": "Asad Saeeduddin",
+        "timestamp": 1587061398
+    },
+    {
+        "content": "<p>oh really</p>",
+        "id": 194346905,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1587061403
+    },
+    {
+        "content": "<p>hm, ok, so we have x in F(A) and we need to give an element of (F ⊗ F)(A)</p>",
+        "id": 194346925,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1587061411
+    },
+    {
+        "content": "<p>which we can do by giving some F(X), F(Y), and These X Y → A</p>",
+        "id": 194347020,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1587061443
+    },
+    {
+        "content": "<p>I have a duplication for the These monoidal structure, but that's the opposite of what it seems I need to obtain a natural transformation from F to its Day convolution with itself</p>",
+        "id": 194347025,
+        "sender_full_name": "Asad Saeeduddin",
+        "timestamp": 1587061445
+    },
+    {
+        "content": "<p>yea</p>",
+        "id": 194347056,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1587061457
+    },
+    {
+        "content": "<p>i see what u mean</p>",
+        "id": 194347062,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1587061460
+    },
+    {
+        "content": "<p>hmmm</p>",
+        "id": 194347077,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1587061465
+    },
+    {
+        "content": "<p>im tempted to say what if we just went with F(A), F(A), and These A A → A by being left-biased</p>",
+        "id": 194347325,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1587061573
+    },
+    {
+        "content": "<p>but that gives me a bad vibe</p>",
+        "id": 194347331,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1587061578
+    },
+    {
+        "content": "<p>maybe i'm approaching this the wrong way in trying to somehow involve the Day convolution monoid in my search for an \"idempotent monoid\"</p>",
+        "id": 194347397,
+        "sender_full_name": "Asad Saeeduddin",
+        "timestamp": 1587061610
+    },
+    {
+        "content": "<p>maybe what we have instead is that the duplication is preserved by the functor</p>",
+        "id": 194347468,
+        "sender_full_name": "Asad Saeeduddin",
+        "timestamp": 1587061647
+    },
+    {
+        "content": "<p>uh, what's that thing with bimonoids</p>",
+        "id": 194347539,
+        "sender_full_name": "Asad Saeeduddin",
+        "timestamp": 1587061678
+    },
+    {
+        "content": "<p>no idea</p>",
+        "id": 194347590,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1587061685
+    },
+    {
+        "content": "<p>the comultiplication is a monoid homomorphism and the multiplication is a comonoid homomorphism</p>",
+        "id": 194347615,
+        "sender_full_name": "Asad Saeeduddin",
+        "timestamp": 1587061700
+    },
+    {
+        "content": "<p>or something like that</p>",
+        "id": 194347623,
+        "sender_full_name": "Asad Saeeduddin",
+        "timestamp": 1587061702
+    },
+    {
+        "content": "<p>oh</p>",
+        "id": 194347633,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1587061706
+    },
+    {
+        "content": "<p>frobenius algebra?</p>",
+        "id": 194347647,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1587061711
+    },
+    {
+        "content": "<p>i'm not sure if frobenius algebra is the same thing, but i remember seeing that name somewhere. \"bimonoid\" is what I read about</p>",
+        "id": 194347701,
+        "sender_full_name": "Asad Saeeduddin",
+        "timestamp": 1587061738
+    },
+    {
+        "content": "<p>oh looks like they arent the same</p>",
+        "id": 194347746,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1587061765
+    },
+    {
+        "content": "<p>i just saw \"both monoid &amp; comonoid structures\" &amp; jumped to conclusions :-)</p>",
+        "id": 194347764,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1587061776
+    },
+    {
+        "content": "<p>does <code>join These :: a -&gt; These a a</code> work as an associative cosemigroup?</p>",
+        "id": 194347972,
+        "sender_full_name": "Asad Saeeduddin",
+        "timestamp": 1587061864
+    },
+    {
+        "content": "<p>yeah</p>",
+        "id": 194348615,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1587062143
+    },
+    {
+        "content": "<p>A bimonoid is really different from a Frobenius monoid.    The most exciting bimonoid axiom is this one:</p>\n<p><a href=\"/user_uploads/21317/B9jLTT0VWbYqY3STO9Ot_s9U/bimonoid-eq1.png\" title=\"bimonoid-eq1.png\">multiplication is a homomorphism for comultiplication (and vice versa)</a> </p>\n<div class=\"message_inline_image\"><a href=\"/user_uploads/21317/B9jLTT0VWbYqY3STO9Ot_s9U/bimonoid-eq1.png\" title=\"multiplication is a homomorphism for comultiplication (and vice versa)\"><img src=\"/user_uploads/21317/B9jLTT0VWbYqY3STO9Ot_s9U/bimonoid-eq1.png\"></a></div><p>The most exciting Frobenius monoid axiom is this one:</p>\n<p><a href=\"/user_uploads/21317/akC6qCfyFKoTTvQgr2EKr1JM/frobenius_laws.jpg\" title=\"frobenius_laws.jpg\">comultiplication commutes with left and right multiplication (and vice versa) </a></p>\n<div class=\"message_inline_image\"><a href=\"/user_uploads/21317/akC6qCfyFKoTTvQgr2EKr1JM/frobenius_laws.jpg\" title=\"comultiplication commutes with left and right multiplication (and vice versa) \"><img src=\"/user_uploads/21317/akC6qCfyFKoTTvQgr2EKr1JM/frobenius_laws.jpg\"></a></div>",
+        "id": 194348737,
+        "sender_full_name": "John Baez",
+        "timestamp": 1587062193
+    },
+    {
+        "content": "<p>and <code>dup :: a -&gt; (a, a)</code> is obviously also one. So maybe:</p>\n<div class=\"codehilite\"><pre><span></span>uncurry align . dup ≡ fmap (join These)\n</pre></div>\n\n\n<p>is talking about some kind of comonoid homomorphism</p>",
+        "id": 194348795,
+        "sender_full_name": "Asad Saeeduddin",
+        "timestamp": 1587062228
+    },
+    {
+        "content": "<p>hmm, you know what</p>",
+        "id": 194349027,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1587062320
+    },
+    {
+        "content": "<p>now im getting distracted by the fact that there <em>is</em> a canonical <em>partial</em> monoid structure on every type for ⊗ = These</p>",
+        "id": 194349115,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1587062365
+    },
+    {
+        "content": "<p>one that's useful in separation logic, even :3c</p>",
+        "id": 194349133,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1587062374
+    },
+    {
+        "content": "<p>actually, well, the one i've seen in separation logic is with ⊗ = × and uses Maybe instead, but it's basically the same idea</p>",
+        "id": 194349444,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1587062521
+    },
+    {
+        "content": "<p>\"if you only get one input then thats your result; if you get two equal inputs thats your result; if you get conflicting inputs, no result\"</p>",
+        "id": 194349534,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1587062540
+    },
+    {
+        "content": "<p>hmmm well maybe that's not as canonical as it could be, i guess you could also go for no result period on two inputs</p>",
+        "id": 194349619,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1587062579
+    },
+    {
+        "content": "<p>aha</p>",
+        "id": 194350588,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1587063036
+    },
+    {
+        "content": "<p>if we go from x ∈ F(A) to the representative (x, x, id_{A ⊗ A}), then i believe we get a transformation F → F ∘ (-)²</p>",
+        "id": 194350714,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1587063105
+    },
+    {
+        "content": "<p>Sorry, I'm not following. Are you talking about <code>join (alignWith id) :: f a -&gt; f (These a a)</code>?</p>",
+        "id": 194350866,
+        "sender_full_name": "Asad Saeeduddin",
+        "timestamp": 1587063167
+    },
+    {
+        "content": "<p>where that's the tensor power i mean</p>",
+        "id": 194350868,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1587063169
+    },
+    {
+        "content": "<p>umm i might be, lemme see</p>",
+        "id": 194350888,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1587063182
+    },
+    {
+        "content": "<p>no im not</p>",
+        "id": 194350974,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1587063238
+    },
+    {
+        "content": "<p>this doesnt require any monoid structure or anything</p>",
+        "id": 194351027,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1587063247
+    },
+    {
+        "content": "<p>actually wait wtf am i saying</p>",
+        "id": 194351081,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1587063271
+    },
+    {
+        "content": "<p>/me stops and thinks</p>",
+        "id": 194351086,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1587063274
+    },
+    {
+        "content": "<p>OH i did miswrite sorry :((</p>",
+        "id": 194351101,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1587063284
+    },
+    {
+        "content": "<p>setwise, the type of the family is F(A) → (F ⊗ F)(A ⊗ A)</p>",
+        "id": 194351159,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1587063311
+    },
+    {
+        "content": "<p>sorry, do those two <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>⊗</mo></mrow><annotation encoding=\"application/x-tex\">\\otimes</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.66666em;vertical-align:-0.08333em;\"></span><span class=\"mord\">⊗</span></span></span></span> symbols stand for different things?</p>",
+        "id": 194351241,
+        "sender_full_name": "Asad Saeeduddin",
+        "timestamp": 1587063356
+    },
+    {
+        "content": "<p>yeah</p>",
+        "id": 194351264,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1587063362
+    },
+    {
+        "content": "<p>the first one is day convolution, the second one is <code>These</code></p>",
+        "id": 194351308,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1587063374
+    },
+    {
+        "content": "<p>ok, thanks</p>",
+        "id": 194351317,
+        "sender_full_name": "Asad Saeeduddin",
+        "timestamp": 1587063379
+    },
+    {
+        "content": "<p>so what is the definition of this morphism F(A) → (F ⊗ F)(A ⊗ A)?</p>",
+        "id": 194351395,
+        "sender_full_name": "Asad Saeeduddin",
+        "timestamp": 1587063413
+    },
+    {
+        "content": "<p>so that's <em>almost</em> the type of a duplication map in the functor category, except that it's changing the argument</p>",
+        "id": 194351402,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1587063417
+    },
+    {
+        "content": "<p>and we can instead see it as F → F² ∘ (-)², where (-)² is the <em>tensor</em> power, not the literal power</p>",
+        "id": 194351445,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1587063442
+    },
+    {
+        "content": "<p>the definition is</p>",
+        "id": 194351498,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1587063466
+    },
+    {
+        "content": "<p>for an element x of F(A)</p>",
+        "id": 194351527,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1587063477
+    },
+    {
+        "content": "<p>ok, I understand</p>",
+        "id": 194351626,
+        "sender_full_name": "Asad Saeeduddin",
+        "timestamp": 1587063502
+    },
+    {
+        "content": "<p>:)</p>",
+        "id": 194351641,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1587063508
+    },
+    {
+        "content": "<p>so i think the law is that, uh...</p>",
+        "id": 194351774,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1587063572
+    },
+    {
+        "content": "<p>ok so we have this thing that is presumably a natural transformation. but we don't have a trivial monoid to get rid of the (-)², instead we have a comonoid on every A</p>",
+        "id": 194351808,
+        "sender_full_name": "Asad Saeeduddin",
+        "timestamp": 1587063589
+    },
+    {
+        "content": "<p>well we don't even have a comonoid do we</p>",
+        "id": 194351890,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1587063607
+    },
+    {
+        "content": "<p>we do have a monoid to get rid of the F^2</p>",
+        "id": 194351900,
+        "sender_full_name": "Asad Saeeduddin",
+        "timestamp": 1587063609
+    },
+    {
+        "content": "<p>yeah</p>",
+        "id": 194351911,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1587063613
+    },
+    {
+        "content": "<p>we have a cosemigroup, I haven't thought about the unit</p>",
+        "id": 194351933,
+        "sender_full_name": "Asad Saeeduddin",
+        "timestamp": 1587063624
+    },
+    {
+        "content": "<p>most sets don't have a function to the empty set</p>",
+        "id": 194351979,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1587063646
+    },
+    {
+        "content": "<p>that half of it doesn't appear in the semialign class anyway</p>",
+        "id": 194352007,
+        "sender_full_name": "Asad Saeeduddin",
+        "timestamp": 1587063653
+    },
+    {
+        "content": "<p>yeah but the deletion map of a comonoid has to go to the tensor unit</p>",
+        "id": 194352063,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1587063680
+    },
+    {
+        "content": "<p>anyway i believe the law is uh.... doing the weird \"duplication\" in the functor category and then the monoid multiplication is equal to the whiskering of Set's actual duplication</p>",
+        "id": 194352320,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1587063788
+    },
+    {
+        "content": "<p>\"the whiskering of Set's actual duplication\" = <code>fmap (join These)</code></p>",
+        "id": 194352395,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1587063824
+    },
+    {
+        "content": "<p>i think this is basically like... taking the hypothetical \"doing duplication in the functor category and then monoid multiplication is the identity\" law, removing a term from the hypothetical definition of duplication in the functor category, and moving it to the other side of the equation</p>",
+        "id": 194353067,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1587064137
+    },
+    {
+        "content": "<p>instead of putting an inverse to the Set duplication into the functor duplication, we put the Set duplication on the right-hand side</p>",
+        "id": 194353219,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1587064207
+    },
+    {
+        "content": "<p>interesting</p>",
+        "id": 194353485,
+        "sender_full_name": "Asad Saeeduddin",
+        "timestamp": 1587064324
+    },
+    {
+        "content": "<p>i gotta go tho :T</p>",
+        "id": 194353498,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1587064334
+    },
+    {
+        "content": "<p>good luck, this seems neat</p>",
+        "id": 194353515,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1587064341
+    },
+    {
+        "content": "<p>the more i think about this the more the law seems to be a statement about bimonoids. a monoidal functor is so called because it carries every monoid on the source category to a monoid on the target category. i think all this law is saying is that it sends a bimonoid to a bimonoid</p>",
+        "id": 194353567,
+        "sender_full_name": "Asad Saeeduddin",
+        "timestamp": 1587064374
+    },
+    {
+        "content": "<p><span class=\"user-mention\" data-user-id=\"276072\">@sarahzrf</span> Thanks for all the help and insights! <span aria-label=\"wave\" class=\"emoji emoji-1f44b\" role=\"img\" title=\"wave\">:wave:</span></p>",
+        "id": 194353601,
+        "sender_full_name": "Asad Saeeduddin",
+        "timestamp": 1587064388
+    },
+    {
+        "content": "<p><span class=\"user-mention\" data-user-id=\"275920\">@John Baez</span> Do you know if there is a concept like a weakened bimonoid where one structure is only a (co)semigroup? Are these well studied?</p>",
+        "id": 194353988,
+        "sender_full_name": "Asad Saeeduddin",
+        "timestamp": 1587064568
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276050\">Asad Saeeduddin</span> <a href=\"#narrow/stream/229199-learning.3A-basic.20questions/topic/Idempotent.20monoid.20objects/near/194353988\" title=\"#narrow/stream/229199-learning.3A-basic.20questions/topic/Idempotent.20monoid.20objects/near/194353988\">said</a>:</p>\n<blockquote>\n<p><span class=\"user-mention silent\" data-user-id=\"275920\">John Baez</span> Do you know if there is a concept like a weakened bimonoid where one structure is only a (co)semigroup? Are these well studied?</p>\n</blockquote>\n<p>The concept certainly <em>exists</em>: it sounds like you're talking about a semigroup in the category of comonoids (in some symmetric monoidal category), which will be the same as a comonoid in the category of semigroups (in that same symmetric monoidal category).   Using theorems about internalization one can quickly prove a lot of basic facts about these gadgets.  But I've never heard anyone talk about them!</p>",
+        "id": 194362136,
+        "sender_full_name": "John Baez",
+        "timestamp": 1587068526
+    }
+]

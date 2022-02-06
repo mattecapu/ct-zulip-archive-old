@@ -1,0 +1,110 @@
+[
+    {
+        "content": "<p>The usual way to interpret forall or exists or even (A -&gt; B) is \"you give me an A, I'll give you a B\". I've only ever seen games between two players.</p>\n<p>Is there a logic that can make productive use of 3-player (or more) games? Or alternatively, a proof that adding more than 2-players reduces to the 2 case?</p>",
+        "id": 266939527,
+        "sender_full_name": "Haskell",
+        "timestamp": 1641391746
+    },
+    {
+        "content": "<p>Taken very loosely, I guess composition of strategies in game semantics may be understood as reducing any 3-player interaction to some 2-player one?</p>",
+        "id": 266942639,
+        "sender_full_name": "Tom Hirschowitz",
+        "timestamp": 1641393559
+    },
+    {
+        "content": "<p>In Semantics of Interaction, Abramsky says:</p>\n<p>Why the number 2? The key feature of games, by comparison with the many extant models of computation (labelled transition systems, event structures, etc. etc.) is that they provide an explicit representation of the environment, and hence model interaction in an intrinsic fashion. (By contrast, interaction is modelled in, say, labelled transition systems using some additional structure, typically a “synchronization algebra” on the labels.) One-person games would degenerate to transition systems; it seems that multi-party interaction can be adequately modeled by two-person games, in much the same way that functions with multiple arguments can be reduced to one-place functions and tupling.</p>",
+        "id": 266963593,
+        "sender_full_name": "Sam Speight",
+        "timestamp": 1641403237
+    },
+    {
+        "content": "<p>In terms of logic/type theory, I guess this has to do with the fact that we have the things to the left of the turnstile and the things to the right of the turnstile, ie. the turnstile separates things into two parts: the environment and the system, the hypotheses (context) and the conclusion, or whatever you want to call them.</p>",
+        "id": 266964182,
+        "sender_full_name": "Sam Speight",
+        "timestamp": 1641403520
+    },
+    {
+        "content": "<p>I suppose this doesn't rule out 3-player games being useful for something, but I don't know what.</p>\n<p><span class=\"user-mention\" data-user-id=\"383799\">@Tom Hirschowitz</span> composition understood this way is a particular kind of 3-player game, right? One in which the third player is \"in the middle\" of the other two. So it is not like all three of them are involved in a single game, each taking a turn going round in a circle. Is it this more \"equal-footing\" 3-player game you had in mind, <span class=\"user-mention\" data-user-id=\"279635\">@Haskell</span>?</p>",
+        "id": 266964478,
+        "sender_full_name": "Sam Speight",
+        "timestamp": 1641403688
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"280312\">Sam Speight</span> <a href=\"#narrow/stream/233104-theory.3A-logic/topic/3-player.20game.20semantics.3F/near/266964182\">said</a>:</p>\n<blockquote>\n<p>In terms of logic/type theory, I guess this has to do with the fact that we have the things to the left of the turnstile and the things to the right of the turnstile, ie. the turnstile separates things into two parts: the environment and the system, the hypotheses (context) and the conclusion, or whatever you want to call them.</p>\n</blockquote>\n<p>There's nothing preventing other shapes of expression, though! 2 is just one of the simplest cases.</p>",
+        "id": 266964590,
+        "sender_full_name": "Morgan Rogers (he/him)",
+        "timestamp": 1641403776
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"277473\">Morgan Rogers (he/him)</span> <a href=\"#narrow/stream/233104-theory.3A-logic/topic/3-player.20game.20semantics.3F/near/266964590\">said</a>:</p>\n<blockquote>\n<p><span class=\"user-mention silent\" data-user-id=\"280312\">Sam Speight</span> <a href=\"#narrow/stream/233104-theory.3A-logic/topic/3-player.20game.20semantics.3F/near/266964182\">said</a>:</p>\n<blockquote>\n<p>In terms of logic/type theory, I guess this has to do with the fact that we have the things to the left of the turnstile and the things to the right of the turnstile, ie. the turnstile separates things into two parts: the environment and the system, the hypotheses (context) and the conclusion, or whatever you want to call them.</p>\n</blockquote>\n<p>There's nothing preventing other shapes of expression, though! 2 is just one of the simplest cases.</p>\n</blockquote>\n<p>Sure! But what kind of thing are you thinking of? I can't think of any examples off the top of my head.</p>",
+        "id": 266964886,
+        "sender_full_name": "Sam Speight",
+        "timestamp": 1641403925
+    },
+    {
+        "content": "<p>The bra-ket expression that physicists manipulate, like <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"false\">⟨</mo><mi>x</mi><mo>∣</mo><mi>A</mi><mo>∣</mo><mi>y</mi><mo stretchy=\"false\">⟩</mo></mrow><annotation encoding=\"application/x-tex\">\\langle x \\mid A \\mid y \\rangle</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mopen\">⟨</span><span class=\"mord mathnormal\">x</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">∣</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord mathnormal\">A</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">∣</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.03588em;\">y</span><span class=\"mclose\">⟩</span></span></span></span> spring to mind, as a syntax with 3 parts. It's not a direct link to logic, but OP seemed curious about general instances.</p>",
+        "id": 266965571,
+        "sender_full_name": "Morgan Rogers (he/him)",
+        "timestamp": 1641404279
+    },
+    {
+        "content": "<p>There's also the evident caveat that most formal logic and math is quite 1-dimensional in its presentation; a syntax for a symmetric \"3-player logic\" wouldn't sit very naturally in 1-d</p>",
+        "id": 266965741,
+        "sender_full_name": "Morgan Rogers (he/him)",
+        "timestamp": 1641404364
+    },
+    {
+        "content": "<p>Interesting. I'm finding it hard to break out of that \"two things separated by a turnstile\" or \"1-d\" paradigm. Generally I'm used to thinking of things as morphisms in a category, and there we fall into the same paradigm. Like arrows go from something to something - that's two things. Then multicategories reduce to this paradigm by tupling, as in the Abramsky quote.</p>",
+        "id": 266967964,
+        "sender_full_name": "Sam Speight",
+        "timestamp": 1641405494
+    },
+    {
+        "content": "<p>But I'm curious as to what kind of computational process (if any) could be modeled by an \"equal-footing\" 3-player game - which is the kind of game I took the OP to be asking about. So P1 moves first, then P2, then P3, then back to P1, etc..</p>",
+        "id": 266968681,
+        "sender_full_name": "Sam Speight",
+        "timestamp": 1641405780
+    },
+    {
+        "content": "<p>You also get \"3-way sequents\" in focused sequent calculi like μμ~: <a href=\"https://ix.cs.uoregon.edu/~pdownen/publications/sequent-intro.pdf\">https://ix.cs.uoregon.edu/~pdownen/publications/sequent-intro.pdf</a></p>",
+        "id": 266970357,
+        "sender_full_name": "Alex Gryzlov",
+        "timestamp": 1641406597
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"280312\">Sam Speight</span> <a href=\"#narrow/stream/233104-theory.3A-logic/topic/3-player.20game.20semantics.3F/near/266967964\">said</a>:</p>\n<blockquote>\n<p>Interesting. I'm finding it hard to break out of that \"two things separated by a turnstile\" or \"1-d\" paradigm. Generally I'm used to thinking of things as morphisms in a category, and there we fall into the same paradigm. Like arrows go from something to something - that's two things. Then multicategories reduce to this paradigm by tupling, as in the Abramsky quote.</p>\n</blockquote>\n<p>Maybe a better way of putting this is in your 1-d terms: an arrow is 1-d; information flows in one direction.</p>",
+        "id": 266970398,
+        "sender_full_name": "Sam Speight",
+        "timestamp": 1641406620
+    },
+    {
+        "content": "<p>My intuition of 2-player was also something like the 'Cartesian boundary' as in Abramsky (ie. there's just you and an environment in an adversarial context).</p>\n<p>In that same setting, if a part of the environment is also adversarial against another part of the environment, maybe then modeling it as 3-player would be natural. Lumping \"everything that isn't you\" into a single 'Environment' would be less useful (again, unless we have a reduction).</p>",
+        "id": 267034569,
+        "sender_full_name": "Haskell",
+        "timestamp": 1641456252
+    },
+    {
+        "content": "<p>I guess this 2 is the same 2 as in 'how many ends of an arrow in a category' and 'how many variances are there for a functor'</p>",
+        "id": 267038382,
+        "sender_full_name": "Matteo Capucci (he/him)",
+        "timestamp": 1641459674
+    },
+    {
+        "content": "<p>btw there's a dedicated <a href=\"#narrow/stream/233273-theory.3A-game.20semantics\">https://categorytheory.zulipchat.com/#narrow/stream/233273-theory.3A-game.20semantics</a> stream on this server</p>",
+        "id": 267066299,
+        "sender_full_name": "Alex Gryzlov",
+        "timestamp": 1641479215
+    },
+    {
+        "content": "<p><span class=\"user-mention\" data-user-id=\"280312\">@Sam Speight</span> I've never been too sure about how to interpret composition of strategies as a 3-player game. I'd rather say that in a composition of strategies <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mo>→</mo><mi>B</mi><mo>→</mo><mi>C</mi></mrow><annotation encoding=\"application/x-tex\">A \\to B \\to C</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\">A</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">→</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.05017em;\">B</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">→</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.07153em;\">C</span></span></span></span>, there are three boards (<span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi></mrow><annotation encoding=\"application/x-tex\">A</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\">A</span></span></span></span>, <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>B</mi></mrow><annotation encoding=\"application/x-tex\">B</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.05017em;\">B</span></span></span></span>, and <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>C</mi></mrow><annotation encoding=\"application/x-tex\">C</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.07153em;\">C</span></span></span></span>), and </p>\n<ul>\n<li>\n<p>Player 1 plays on <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi></mrow><annotation encoding=\"application/x-tex\">A</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\">A</span></span></span></span> (as Opponent) and <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>B</mi></mrow><annotation encoding=\"application/x-tex\">B</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.05017em;\">B</span></span></span></span> (as Player),</p>\n</li>\n<li>\n<p>Player 2 plays on <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>B</mi></mrow><annotation encoding=\"application/x-tex\">B</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.05017em;\">B</span></span></span></span> (as Opponent) and <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>C</mi></mrow><annotation encoding=\"application/x-tex\">C</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.07153em;\">C</span></span></span></span> (as Player), and</p>\n</li>\n<li>\n<p>there is a third, external player, called Opponent, who plays on <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi></mrow><annotation encoding=\"application/x-tex\">A</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\">A</span></span></span></span> (as Player) and <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>C</mi></mrow><annotation encoding=\"application/x-tex\">C</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.07153em;\">C</span></span></span></span> (as Opponent).</p>\n</li>\n</ul>\n<p>Alternatively, depending on the considered variant of game semantics, there could be two external players, one playing as Player on <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi></mrow><annotation encoding=\"application/x-tex\">A</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\">A</span></span></span></span>, the other playing as Opponent on <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>C</mi></mrow><annotation encoding=\"application/x-tex\">C</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.07153em;\">C</span></span></span></span>.</p>",
+        "id": 267548510,
+        "sender_full_name": "Tom Hirschowitz",
+        "timestamp": 1641888527
+    },
+    {
+        "content": "<p>I could imagine it might be natural to model certain self-dual phenomenon in terms of a third, neutral, player. For example, perhaps probabilistic or non-deterministic choice might be decisions made by such a neutral player.</p>",
+        "id": 269702839,
+        "sender_full_name": "Chris Barrett",
+        "timestamp": 1643359176
+    }
+]

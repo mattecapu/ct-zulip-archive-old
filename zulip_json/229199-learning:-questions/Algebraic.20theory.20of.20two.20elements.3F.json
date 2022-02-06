@@ -1,0 +1,38 @@
+[
+    {
+        "content": "<p>Is there a way to have an algebraic theory of a set with at least two elements?  Just pointing twice doesn't work, because there are models where the two point function symbols pick out the same element of the set.  If not, what's the weakest kind of theory that allows you to say \"these two points are distinct\"?</p>",
+        "id": 235715902,
+        "sender_full_name": "Mike Stay",
+        "timestamp": 1619112227
+    },
+    {
+        "content": "<p>Every algebraic theory has the 1-element set as its terminal model, right?   </p>\n<p>The overall moral is that you can't express inequalities in a Lawvere theory, a prop, an algebraic theory, or even an essentially algebraic theory.    <em>Negation</em> is a fairly high-powered concept.   We get it in a topos, for sure, since in a Heyting algebra we can define not(P) as \"P implies false\".   I don't know the answer to your second question, though: the weakest kind of theory that allows you to express inequalities.</p>",
+        "id": 235716358,
+        "sender_full_name": "John Baez",
+        "timestamp": 1619112416
+    },
+    {
+        "content": "<p>I would say, the internal language of a category with finite limits and a strict initial object.  This is like coherent logic, but with only <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"normal\">⊥</mi></mrow><annotation encoding=\"application/x-tex\">\\bot</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.69444em;vertical-align:0em;\"></span><span class=\"mord\">⊥</span></span></span></span> and not <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>∨</mo></mrow><annotation encoding=\"application/x-tex\">\\vee</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.55556em;vertical-align:0em;\"></span><span class=\"mord\">∨</span></span></span></span>.</p>",
+        "id": 235718661,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1619113278
+    },
+    {
+        "content": "<p>Not really an answer, but the question reminds me a bit of the dual logic in this paper:<br>\n<a href=\"https://arxiv.org/abs/0902.1950\">https://arxiv.org/abs/0902.1950</a><br>\nIt builds up the (dual) logical theory of quotients starting from the notion of a distinction or \"dit\".</p>",
+        "id": 235718773,
+        "sender_full_name": "Spencer Breiner",
+        "timestamp": 1619113323
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276777\">Mike Shulman</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/Algebraic.20theory.20of.20two.20elements.3F/near/235718661\">said</a>:</p>\n<blockquote>\n<p>I would say, the internal language of a category with finite limits and a strict initial object.  </p>\n</blockquote>\n<p>Nice!  What goes wrong if your initial object isn't strict?   Negation gets sort of funny then...</p>\n<p>(For those not in the know, \"strict\" means that any object <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>x</mi></mrow><annotation encoding=\"application/x-tex\">x</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.43056em;vertical-align:0em;\"></span><span class=\"mord mathnormal\">x</span></span></span></span> with a morphism <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>x</mi><mo>→</mo><mn>0</mn></mrow><annotation encoding=\"application/x-tex\">x \\to 0</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.43056em;vertical-align:0em;\"></span><span class=\"mord mathnormal\">x</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">→</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.64444em;vertical-align:0em;\"></span><span class=\"mord\">0</span></span></span></span> is itself initial.)</p>",
+        "id": 235719500,
+        "sender_full_name": "John Baez",
+        "timestamp": 1619113605
+    },
+    {
+        "content": "<p>Well, the idea would be that when interpreting predicates in the subobject fibration, we use the initial object for bottom elements of the posets of subobjects.  Strictness ensures that those bottom elements are stable under pullback.  You get pretty weird \"logic\" if you start giving up preservation of connectives under substitution.</p>",
+        "id": 235778226,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1619145640
+    }
+]

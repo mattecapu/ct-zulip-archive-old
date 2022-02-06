@@ -1,0 +1,200 @@
+[
+    {
+        "content": "<p>Is there some way in which the relationship of enrichment forms some kind of category like structure? Like, where self-enrichment is an identity and if C is enriched in D, and D is enriched in E, the structure of E still somehow transitively \"shows up\" in C</p>",
+        "id": 210088708,
+        "sender_full_name": "Asad Saeeduddin",
+        "timestamp": 1600142872
+    },
+    {
+        "content": "<p>the transitivity doesn't quite seem to work out, but this prompts the question of whether there is some sense in which it is possible to \"dissolve\" intermediate enrichments and consider a category C that is enriched in D which is in turn enriched in E to merely be enriched in E</p>",
+        "id": 210088924,
+        "sender_full_name": "Asad Saeeduddin",
+        "timestamp": 1600143150
+    },
+    {
+        "content": "<p>Identities don't seem to work either, really. I guess this is a nonsense</p>",
+        "id": 210089209,
+        "sender_full_name": "Asad Saeeduddin",
+        "timestamp": 1600143639
+    },
+    {
+        "content": "<p>It sounds like you might enjoy understanding \"change of base\".   A category can only be enriched in a <em>monoidal</em> category V.  If you have a monoidal functor f: V <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>→</mo></mrow><annotation encoding=\"application/x-tex\">\\to</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.36687em;vertical-align:0em;\"></span><span class=\"mrel\">→</span></span></span></span> W between monoidal categories, you can take any category enriched in V and turn it into a category enriched in W.   This is called <strong>change of base</strong>.   It gives a 2-functor from VCat (the 2-category of categories enriched in V) to WCat.</p>",
+        "id": 210089437,
+        "sender_full_name": "John Baez",
+        "timestamp": 1600144014
+    },
+    {
+        "content": "<p>For example there's a monoidal functor f: Set <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>→</mo></mrow><annotation encoding=\"application/x-tex\">\\to</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.36687em;vertical-align:0em;\"></span><span class=\"mrel\">→</span></span></span></span> Vect sending any set to the vector space having that set as basis.  Change of base using this turns categories into <strong>linear categories</strong> (that is, categories enriched in Vect).</p>",
+        "id": 210089495,
+        "sender_full_name": "John Baez",
+        "timestamp": 1600144092
+    },
+    {
+        "content": "<p>that sounds really interesting, thanks!</p>",
+        "id": 210089507,
+        "sender_full_name": "Asad Saeeduddin",
+        "timestamp": 1600144109
+    },
+    {
+        "content": "<p>I think there's a lot about change of base in <a href=\"http://www.tac.mta.ca/tac/reprints/articles/10/tr10.pdf\">Kelly's book</a>.</p>",
+        "id": 210089538,
+        "sender_full_name": "John Baez",
+        "timestamp": 1600144180
+    },
+    {
+        "content": "<p>this is probably a question for a different thread, but I was wondering if there is such a thing as a \"free pseudofunctor to the bicategory of pseudomonoids\" for any monoidal bicategory. if so, since Cat is a monoidal bicategory, does the free pseudofunctor to the bicategory of monoids of Cat give us on 1-cells (functors) the corresponding \"free monoidal functor\" in some sense?</p>",
+        "id": 210089597,
+        "sender_full_name": "Asad Saeeduddin",
+        "timestamp": 1600144203
+    },
+    {
+        "content": "<p>this is only tangentially related to what you just explained, i guess i'll ask it in a different thread</p>",
+        "id": 210089609,
+        "sender_full_name": "Asad Saeeduddin",
+        "timestamp": 1600144227
+    },
+    {
+        "content": "<p>more strictly related to what you just explained, by monoidal functor do you mean a strong/strict monoidal functor?</p>",
+        "id": 210089635,
+        "sender_full_name": "Asad Saeeduddin",
+        "timestamp": 1600144279
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"275920\">John Baez</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/Enrichment.20relations.20categorically/near/210089538\">said</a>:</p>\n<blockquote>\n<p>I think there's a lot about change of base in <a href=\"http://www.tac.mta.ca/tac/reprints/articles/10/tr10.pdf\">Kelly's book</a>.</p>\n</blockquote>\n<p>No, there's not: in the introduction he says he doesn't discuss this at all!</p>",
+        "id": 210089643,
+        "sender_full_name": "John Baez",
+        "timestamp": 1600144301
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276050\">Asad Saeeduddin</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/Enrichment.20relations.20categorically/near/210089635\">said</a>:</p>\n<blockquote>\n<p>more strictly related to what you just explained, by monoidal functor do you mean a strong/strict monoidal functor?</p>\n</blockquote>\n<p>Strong or even lax (which are more general).  Only an evil clown would say \"monoidal functor\" to mean \"strict monoidal functor\", because most monoidal functors aren't strict.</p>",
+        "id": 210089703,
+        "sender_full_name": "John Baez",
+        "timestamp": 1600144375
+    },
+    {
+        "content": "<p>Most people use \"monoidal functor\" to mean strong, and that's what I do, but I just remembered that base change works fine for lax monoidal functors.</p>",
+        "id": 210089718,
+        "sender_full_name": "John Baez",
+        "timestamp": 1600144429
+    },
+    {
+        "content": "<p>i see, so there is actually no difference in the end product if you only have a lax monoidal functor?</p>",
+        "id": 210089764,
+        "sender_full_name": "Asad Saeeduddin",
+        "timestamp": 1600144458
+    },
+    {
+        "content": "<p>that's somewhat surprising</p>",
+        "id": 210089766,
+        "sender_full_name": "Asad Saeeduddin",
+        "timestamp": 1600144463
+    },
+    {
+        "content": "<p>or do you somehow manage to transport less stuff given the weaker relationship?</p>",
+        "id": 210089770,
+        "sender_full_name": "Asad Saeeduddin",
+        "timestamp": 1600144474
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276050\">Asad Saeeduddin</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/Enrichment.20relations.20categorically/near/210089597\">said</a>:</p>\n<blockquote>\n<p>this is probably a question for a different thread, but I was wondering if there is such a thing as a \"free pseudofunctor to the bicategory of pseudomonoids\" for any monoidal bicategory. if so, since Cat is a monoidal bicategory, does the free pseudofunctor to the bicategory of monoids of Cat give us on 1-cells (functors) the corresponding \"free monoidal functor\" in some sense?</p>\n</blockquote>\n<p>I'm not sure I understand this.  Let's see.  In any monoidal bicategory C we can define pseudomonoids, and we get a bicategory (not monoidal!) of pseudomonoids in C - call it Ps(C).  </p>\n<p>There's always a forgetful functor U: Ps(C) <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>→</mo></mrow><annotation encoding=\"application/x-tex\">\\to</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.36687em;vertical-align:0em;\"></span><span class=\"mrel\">→</span></span></span></span> C since any pseudomonoid has an underlying object: it's an object together with some other stuff.  </p>\n<p>I imagine you're asking if U has a left adjoint F: C <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>→</mo></mrow><annotation encoding=\"application/x-tex\">\\to</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.36687em;vertical-align:0em;\"></span><span class=\"mrel\">→</span></span></span></span> Ps(C) sending any object to the free pseudomonoid on that object.</p>\n<p>This clearly won't work unless C has enough 2-colimits!</p>\n<p>It's probably best to start one level down: in any monoidal category C we can define monoids, and we get a category Mon(C) and a forgetful functor U: Mon(C) <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>→</mo></mrow><annotation encoding=\"application/x-tex\">\\to</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.36687em;vertical-align:0em;\"></span><span class=\"mrel\">→</span></span></span></span> C, and we can ask if this has a left adjoint F: C <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>→</mo></mrow><annotation encoding=\"application/x-tex\">\\to</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.36687em;vertical-align:0em;\"></span><span class=\"mrel\">→</span></span></span></span> Mon(C).   </p>\n<p>If C = Set with its cartesian monoidal structure, the answer is \"yes\", and we have</p>\n<p><span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>F</mi><mo stretchy=\"false\">(</mo><mi>S</mi><mo stretchy=\"false\">)</mo><mo>=</mo><mn>1</mn><mo>+</mo><mi>S</mi><mo>+</mo><msup><mi>S</mi><mn>2</mn></msup><mo>+</mo><msup><mi>S</mi><mn>3</mn></msup><mo>⋯</mo></mrow><annotation encoding=\"application/x-tex\">F(S) = 1 + S + S^2 + S^3 \\cdots </annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.13889em;\">F</span><span class=\"mopen\">(</span><span class=\"mord mathnormal\" style=\"margin-right:0.05764em;\">S</span><span class=\"mclose\">)</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.72777em;vertical-align:-0.08333em;\"></span><span class=\"mord\">1</span><span class=\"mspace\" style=\"margin-right:0.2222222222222222em;\"></span><span class=\"mbin\">+</span><span class=\"mspace\" style=\"margin-right:0.2222222222222222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.76666em;vertical-align:-0.08333em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.05764em;\">S</span><span class=\"mspace\" style=\"margin-right:0.2222222222222222em;\"></span><span class=\"mbin\">+</span><span class=\"mspace\" style=\"margin-right:0.2222222222222222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.897438em;vertical-align:-0.08333em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.05764em;\">S</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.8141079999999999em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">2</span></span></span></span></span></span></span></span><span class=\"mspace\" style=\"margin-right:0.2222222222222222em;\"></span><span class=\"mbin\">+</span><span class=\"mspace\" style=\"margin-right:0.2222222222222222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.8141079999999999em;vertical-align:0em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.05764em;\">S</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.8141079999999999em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">3</span></span></span></span></span></span></span></span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"minner\">⋯</span></span></span></span></p>\n<p>So here we are taking a <em>coproduct</em>.   In the category of finite sets this wouldn't work!</p>",
+        "id": 210089941,
+        "sender_full_name": "John Baez",
+        "timestamp": 1600144755
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276050\">Asad Saeeduddin</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/Enrichment.20relations.20categorically/near/210089764\">said</a>:</p>\n<blockquote>\n<p>i see, so there is actually no difference in the end product if you only have a lax monoidal functor?</p>\n</blockquote>\n<p>I don't know what that means.  The base change you get depends on the lax monoidal functor you use, so clearly the \"end product\" will be different if I use some strong monoidal functor and you use some lax one.   </p>\n<p>But if you just look at what base change does, you'll see a lax monoidal functor is all you need.</p>",
+        "id": 210089993,
+        "sender_full_name": "John Baez",
+        "timestamp": 1600144862
+    },
+    {
+        "content": "<p><span class=\"user-mention\" data-user-id=\"275920\">@John Baez</span> Is this the appropriate definition of base change: <a href=\"https://ncatlab.org/nlab/show/base+change\">https://ncatlab.org/nlab/show/base+change</a>?</p>",
+        "id": 210090052,
+        "sender_full_name": "Asad Saeeduddin",
+        "timestamp": 1600144942
+    },
+    {
+        "content": "<p>I can't recognize anything about monoidal categories or functors in there, I guess I'd need to appropriately substitute some definitions</p>",
+        "id": 210090059,
+        "sender_full_name": "Asad Saeeduddin",
+        "timestamp": 1600144966
+    },
+    {
+        "content": "<p>ah it's this: <a href=\"https://ncatlab.org/nlab/show/change+of+enriching+category\">https://ncatlab.org/nlab/show/change+of+enriching+category</a></p>",
+        "id": 210090072,
+        "sender_full_name": "Asad Saeeduddin",
+        "timestamp": 1600145020
+    },
+    {
+        "content": "<p>Yes, that sounds better.   The first page is about a completely unrelated thing called \"base change\".  There are a number of things in math called \"base change\".</p>",
+        "id": 210090120,
+        "sender_full_name": "John Baez",
+        "timestamp": 1600145070
+    },
+    {
+        "content": "<p>now the thing I'm wondering is, are <code>V1-Cat</code> and <code>V2-Cat</code> as referenced in that page referring to strict 2-categories?</p>",
+        "id": 210090124,
+        "sender_full_name": "Asad Saeeduddin",
+        "timestamp": 1600145085
+    },
+    {
+        "content": "<p>Yes, the 2-category of V-enriched categories is strict since V-functors compose associatively - they work pretty much just like ordinary functors.   The only difference is that V-categories have \"hom-objects\" which are objects in V instead of \"hom-sets\".</p>",
+        "id": 210090139,
+        "sender_full_name": "John Baez",
+        "timestamp": 1600145142
+    },
+    {
+        "content": "<p>I see, ok. Does anything change if we have further structure in the category that we're enriching in? i.e. we don't have monoidal _categories_ that we're enriching in, but instead monoidal _bicategories_, and presumably we want a change of base _pseudofunctor_ instead of a 2-functor. Does something like that still work? If so, do we perhaps end up needing a strong monoidal functor instead of a lax one?</p>",
+        "id": 210090295,
+        "sender_full_name": "Asad Saeeduddin",
+        "timestamp": 1600145401
+    },
+    {
+        "content": "<p>I'll try and witness some of this in Agda, maybe the answer will fall out after I play with it a bit. In any case, thanks for the pointer!</p>",
+        "id": 210090360,
+        "sender_full_name": "Asad Saeeduddin",
+        "timestamp": 1600145478
+    },
+    {
+        "content": "<blockquote>\n<p>If so, do we perhaps end up needing a strong monoidal functor instead of a lax one?</p>\n</blockquote>\n<p>actually this question is malformed. what i meant to ask is whether we end up needing equivalences where the laxators for a lax monoidal functor go</p>",
+        "id": 210090422,
+        "sender_full_name": "Asad Saeeduddin",
+        "timestamp": 1600145583
+    },
+    {
+        "content": "<blockquote>\n<p>i.e. we don't have monoidal _categories_ that we're enriching in, but instead monoidal _bicategories_, and presumably we want a change of base _pseudofunctor_ instead of a 2-functor. </p>\n</blockquote>\n<p>Yes, that must work too, though I don't know if anyone has written it up yet.  Someone should have.... but there's so much of this stuff to do, some things remain undone.</p>",
+        "id": 210090427,
+        "sender_full_name": "John Baez",
+        "timestamp": 1600145610
+    },
+    {
+        "content": "<blockquote>\n<p>If so, do we perhaps end up needing a strong monoidal functor instead of a lax one?</p>\n</blockquote>\n<p>You later changed your mind about this, but anyway: a lax monoidal pseudofunctor will certainly suffice for this 2-categorical version of base change.</p>",
+        "id": 210090473,
+        "sender_full_name": "John Baez",
+        "timestamp": 1600145671
+    },
+    {
+        "content": "<p>It's best to really dig into how base change works - it's not very complicated - and then you can guess how all this stuff is gonna go.</p>",
+        "id": 210090484,
+        "sender_full_name": "John Baez",
+        "timestamp": 1600145711
+    },
+    {
+        "content": "<p>will do. thanks again</p>",
+        "id": 210090486,
+        "sender_full_name": "Asad Saeeduddin",
+        "timestamp": 1600145720
+    },
+    {
+        "content": "<p>Sure!</p>",
+        "id": 210090494,
+        "sender_full_name": "John Baez",
+        "timestamp": 1600145756
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"275920\">John Baez</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/Enrichment.20relations.20categorically/near/210089643\">said</a>:</p>\n<blockquote>\n<p><span class=\"user-mention silent\" data-user-id=\"275920\">John Baez</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/Enrichment.20relations.20categorically/near/210089538\">said</a>:</p>\n<blockquote>\n<p>I think there's a lot about change of base in <a href=\"http://www.tac.mta.ca/tac/reprints/articles/10/tr10.pdf\">Kelly's book</a>.</p>\n</blockquote>\n<p>No, there's not: in the introduction he says he doesn't discuss this at all!</p>\n</blockquote>\n<p>RE change of base: look here instead <a href=\"http://www.tac.mta.ca/tac/volumes/10/10/10-10.pdf\">http://www.tac.mta.ca/tac/volumes/10/10/10-10.pdf</a></p>",
+        "id": 210112678,
+        "sender_full_name": "fosco",
+        "timestamp": 1600165895
+    }
+]

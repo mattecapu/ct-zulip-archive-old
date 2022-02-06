@@ -1,0 +1,158 @@
+[
+    {
+        "content": "<p>I'm looking for help finding, or if necessary creating, the best formalization of 1-category theory.  In the past I have run into some nearly insurmountable problems dealing with 1-category theory in Agda or Coq with existing libraries:</p>\n<ul>\n<li>If you have quotients as an axiom, and do everything with sets, everything is stuck all over the place.</li>\n<li>If you use setoids for homsets, then constructions like functor categories and arrow categories don't work correctly because they have too strict an equality on objects.</li>\n<li>If you use setoids for homsets and for the collection of objects, there are an unmanageable number of proof obligations for creating a category and equality of objects is too weak to provide coherent composition of diagrams fused along equalities.</li>\n</ul>\n<p>So getting this right involves either a trick I don't know about, or a proof assistant that can provide better support for quotient types in the metatheory ... does anyone have suggestions/experience with this?</p>",
+        "id": 254122349,
+        "sender_full_name": "James Deikun",
+        "timestamp": 1632173793
+    },
+    {
+        "content": "<p>agda-categories takes the second approach, but seems to handle those examples well enough. I'm not sure what the problem with functor categories would be, and arrow categories are at <a href=\"https://github.com/agda/agda-categories/blob/master/src/Categories/Category/Construction/Arrow.agda\">https://github.com/agda/agda-categories/blob/master/src/Categories/Category/Construction/Arrow.agda</a>.</p>",
+        "id": 254124471,
+        "sender_full_name": "James Wood",
+        "timestamp": 1632174900
+    },
+    {
+        "content": "<p>If there's a trick to these sorts of categories, I think it's that, surprisingly, it's not the equality of <em>objects</em> from 𝓒 that you have to worry about in Arr(𝓒), but rather the equality of <em>equations</em> from 𝓒. But equality of such equations is trivial, so there is nothing to worry about.</p>",
+        "id": 254126103,
+        "sender_full_name": "James Wood",
+        "timestamp": 1632175711
+    },
+    {
+        "content": "<p>Take a look at <a href=\"https://arend-lang.github.io/\">https://arend-lang.github.io/</a> maybe? It's based on HoTT and has some categorical stuff in stdlib</p>",
+        "id": 254126166,
+        "sender_full_name": "Alex Gryzlov",
+        "timestamp": 1632175767
+    },
+    {
+        "content": "<p>The problem with arrow categories is that equal arrows in <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"script\">C</mi></mrow><annotation encoding=\"application/x-tex\">\\mathcal{C}</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathcal\" style=\"margin-right:0.05834em;\">C</span></span></span></span> become unequal objects in <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mi>r</mi><mi>r</mi><mo stretchy=\"false\">(</mo><mi mathvariant=\"script\">C</mi><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">Arr(\\mathcal{C})</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord mathnormal\">A</span><span class=\"mord mathnormal\" style=\"margin-right:0.02778em;\">rr</span><span class=\"mopen\">(</span><span class=\"mord mathcal\" style=\"margin-right:0.05834em;\">C</span><span class=\"mclose\">)</span></span></span></span> ... with functor categories it's that the proofs can become part of what is compared for equality (Agda has ways around that, Coq doesn't particularly).</p>",
+        "id": 254126336,
+        "sender_full_name": "James Deikun",
+        "timestamp": 1632175859
+    },
+    {
+        "content": "<p>In almost all cases these problems don't prevent you from doing a basic construction, but once you start doing proofs around it you find that you are demanded to prove equalities that either shouldn't be necessary, or that should be necessary but aren't true.</p>",
+        "id": 254126712,
+        "sender_full_name": "James Deikun",
+        "timestamp": 1632176085
+    },
+    {
+        "content": "<p>Ah, yeah, it makes you really commit to working up to equivalence of categories. But it should be possible to maintain that invariant. agda-categories has some decent experience behind it these days.</p>",
+        "id": 254126950,
+        "sender_full_name": "James Wood",
+        "timestamp": 1632176212
+    },
+    {
+        "content": "<p>My latest case was trying to prove the nerve theorem for categories in Coq, where I could extract all the arrows in the spine of a horn but couldn't prove that they connect into a composable string.</p>",
+        "id": 254127026,
+        "sender_full_name": "James Deikun",
+        "timestamp": 1632176250
+    },
+    {
+        "content": "<p>Can you prove the nerve theorem in agda-categories?  I don't recall it being in there.</p>",
+        "id": 254131555,
+        "sender_full_name": "James Deikun",
+        "timestamp": 1632178935
+    },
+    {
+        "content": "<p>The nerve theorem has not been proved in agda-categories.  Do you have a canonical reference?</p>",
+        "id": 254217383,
+        "sender_full_name": "Jacques Carette",
+        "timestamp": 1632234950
+    },
+    {
+        "content": "<p>I don't understand your problem with <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"sans-serif\">A</mi><mi mathvariant=\"sans-serif\">r</mi><mi mathvariant=\"sans-serif\">r</mi></mrow><annotation encoding=\"application/x-tex\">\\mathsf{Arr}</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.69444em;vertical-align:0em;\"></span><span class=\"mord\"><span class=\"mord mathsf\" style=\"margin-right:0.01389em;\">Arr</span></span></span></span></span>? Equivalent arrows before equivalent arrows, which is all you can ask for in <em>weak</em> category theory. And agda-categories takes the weak approach throughout.</p>",
+        "id": 254217857,
+        "sender_full_name": "Jacques Carette",
+        "timestamp": 1632235141
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"296322\">Jacques Carette</span> <a href=\"#narrow/stream/229125-practice.3A-software/topic/formalizations.20of.20categories/near/254217383\">said</a>:</p>\n<blockquote>\n<p>The nerve theorem has not been proved in agda-categories.  Do you have a canonical reference?</p>\n</blockquote>\n<p>The reference I've been using is Lurie, <a href=\"https://www.math.ias.edu/~lurie/papers/HTT.pdf\">Higher Topos Theory</a> Proposition 1.1.2.2 (pp. 9-11) but it's hardly canonical.  I've worked on it a bit at <a href=\"https://github.com/xplat/agda-categories/tree/nerve-theorem\">https://github.com/xplat/agda-categories/tree/nerve-theorem</a> but I've run into some trouble getting the levels to match up in the definition \"<span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"normal\">Δ</mi></mrow><annotation encoding=\"application/x-tex\">\\Delta</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord\">Δ</span></span></span></span>-yoneda\" without reproving the Yoneda lemma from scratch, and the part that will use it is just a mess for now ...</p>",
+        "id": 254427025,
+        "sender_full_name": "James Deikun",
+        "timestamp": 1632339959
+    },
+    {
+        "content": "<p>Thanks for the link.  Some of the local fixes you've done in that branch are nice, and would be worth a PR on their own (please!).  Otherwise, I'm not seeing anything obvious, I'd need to bring it up in Agda to dig a bit deeper. If you want a hand, shout, I'll see what I can do.</p>",
+        "id": 254457890,
+        "sender_full_name": "Jacques Carette",
+        "timestamp": 1632354632
+    },
+    {
+        "content": "<p>The more I look at it the more it looks to me like I can't use the existing proof of the Yoneda lemma and I can't generalize the existing proof without restructuring it so that it's originally proved with an explicitly universe-lifted Yoneda embedding and the proof for the bare Yoneda embedding is backed out of that.  It would be really nice to have universe cumulativity in Agda so that Agda wouldn't (and you wouldn't have to) keep track of how many times you lifted things to a higher universe ...</p>",
+        "id": 254471148,
+        "sender_full_name": "James Deikun",
+        "timestamp": 1632364402
+    },
+    {
+        "content": "<p>Jason proved some lifted version - maybe in Yoneda.Properties?</p>\n<p>Yoneda is so important that having alternate proofs is not a bad idea, especially with slightly different assumptions on universes.</p>",
+        "id": 254523533,
+        "sender_full_name": "Jacques Carette",
+        "timestamp": 1632398913
+    },
+    {
+        "content": "<p>The nerve theorem is about small categories. Of course if you accept the universe axiom then every category is small in some universe, but the point is that the nerve theorem describes those simplicial sets which arise as the nerves of <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"script\">U</mi></mrow><annotation encoding=\"application/x-tex\">\\mathcal{U}</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathcal\" style=\"margin-right:0.09931em;\">U</span></span></span></span>-small categories; it doesn't say anything about the nerves of <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"script\">U</mi></mrow><annotation encoding=\"application/x-tex\">\\mathcal{U}</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathcal\" style=\"margin-right:0.09931em;\">U</span></span></span></span>-small and locally <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"script\">V</mi></mrow><annotation encoding=\"application/x-tex\">\\mathcal{V}</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathcal\" style=\"margin-right:0.08222em;\">V</span></span></span></span>-small categories. This is kind of intrinsic in the whole idea of the nerve (and the simplicial approach to (higher) category theory in general), which puts strings of <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>n</mi></mrow><annotation encoding=\"application/x-tex\">n</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.43056em;vertical-align:0em;\"></span><span class=\"mord mathnormal\">n</span></span></span></span> composable arrows on the same footing for all <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>n</mi></mrow><annotation encoding=\"application/x-tex\">n</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.43056em;vertical-align:0em;\"></span><span class=\"mord mathnormal\">n</span></span></span></span>, including <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>n</mi><mo>=</mo><mn>0</mn></mrow><annotation encoding=\"application/x-tex\">n = 0</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.43056em;vertical-align:0em;\"></span><span class=\"mord mathnormal\">n</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.64444em;vertical-align:0em;\"></span><span class=\"mord\">0</span></span></span></span> and <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>n</mi><mo>=</mo><mn>1</mn></mrow><annotation encoding=\"application/x-tex\">n = 1</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.43056em;vertical-align:0em;\"></span><span class=\"mord mathnormal\">n</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.64444em;vertical-align:0em;\"></span><span class=\"mord\">1</span></span></span></span>.<br>\nSo, for formalization it would be appropriate to assume from the start that all the universes parameterizing your categories are equal.</p>",
+        "id": 254529545,
+        "sender_full_name": "Reid Barton",
+        "timestamp": 1632401633
+    },
+    {
+        "content": "<p>The next issue would be: how do you even define the nerve of a category whose \"homsets\" are actually setoids, if you can't form quotients?</p>\n<p>You could just ignore the relations between morphisms, but then the nerve won't satisfy the unique lifting condition (for <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>n</mi><mo>=</mo><mn>3</mn></mrow><annotation encoding=\"application/x-tex\">n = 3</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.43056em;vertical-align:0em;\"></span><span class=\"mord mathnormal\">n</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.64444em;vertical-align:0em;\"></span><span class=\"mord\">3</span></span></span></span>) of the nerve theorem, and in any case it seems like the wrong thing to do.</p>\n<p>A better idea would be to recognize that we actually have a simple kind of 2-category and define the nerve to be the <a href=\"https://kerodon.net/tag/009P\">Duskin nerve</a>. Then I guess you should be able to prove <em>a</em> nerve theorem, but it won't be the same as the one for 1-categories: the filler of a horn <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msubsup><mi mathvariant=\"normal\">Λ</mi><mn>1</mn><mn>2</mn></msubsup></mrow><annotation encoding=\"application/x-tex\">\\Lambda^2_1</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1.0622159999999998em;vertical-align:-0.24810799999999997em;\"></span><span class=\"mord\"><span class=\"mord\">Λ</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.8141079999999999em;\"><span style=\"top:-2.4518920000000004em;margin-left:0em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">1</span></span></span><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">2</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.24810799999999997em;\"><span></span></span></span></span></span></span></span></span></span> won't be unique.</p>\n<p>It might also be preferable/necessary to regard the nerve as taking values in simplicial setoids, although there is something a bit strange here, because the objects of your category (which will be the 0-simplices of the nerve) actually do form a set. But a set is a special kind of setoid, so this isn't necessarily a deal-breaker.</p>",
+        "id": 254532181,
+        "sender_full_name": "Reid Barton",
+        "timestamp": 1632402663
+    },
+    {
+        "content": "<p>This is basically all to say: this is one of the foundational places where all the differences between the notion of category in classical mathematics and the one in agda-categories really play a big role, and you'd better begin by figuring out what nerve construction is even possible and what the correct nerve theorem will be for this new concept.</p>",
+        "id": 254532577,
+        "sender_full_name": "Reid Barton",
+        "timestamp": 1632402826
+    },
+    {
+        "content": "<p>Essentially the same issues arise when you want to define the equivalence between the two descriptions of categories, one in the \"dependently typed\" style with sets <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mrow><mi mathvariant=\"normal\">H</mi><mi mathvariant=\"normal\">o</mi><mi mathvariant=\"normal\">m</mi></mrow><mo stretchy=\"false\">(</mo><mi>A</mi><mo separator=\"true\">,</mo><mi>B</mi><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">\\mathrm{Hom}(A, B)</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord\"><span class=\"mord mathrm\">Hom</span></span><span class=\"mopen\">(</span><span class=\"mord mathnormal\">A</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.05017em;\">B</span><span class=\"mclose\">)</span></span></span></span> of morphisms for each pair of objects <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi></mrow><annotation encoding=\"application/x-tex\">A</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathnormal\">A</span></span></span></span>, <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>B</mi></mrow><annotation encoding=\"application/x-tex\">B</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.05017em;\">B</span></span></span></span>, and one with a single set containing all the morphisms of the category (the description of Cat as the models of an essentially algebraic theory).</p>",
+        "id": 254533143,
+        "sender_full_name": "Reid Barton",
+        "timestamp": 1632403048
+    },
+    {
+        "content": "<p>The nerve construction is very close to the latter description.</p>",
+        "id": 254533290,
+        "sender_full_name": "Reid Barton",
+        "timestamp": 1632403096
+    },
+    {
+        "content": "<p>I went with having simplicial setoids.  I figure the extra universe level for objects might result in needing a smallness side condition of some kind on the nerve theorem but I'm hoping I can figure that out as I go.</p>",
+        "id": 254533567,
+        "sender_full_name": "James Deikun",
+        "timestamp": 1632403242
+    },
+    {
+        "content": "<p>Fortunately for this approach simplicial \"sets\" in agda-categories are already simplicial setoids!  But I was using the same approach in Coq when I was defining simplicial sets from scratch.</p>",
+        "id": 254533813,
+        "sender_full_name": "James Deikun",
+        "timestamp": 1632403343
+    },
+    {
+        "content": "<p>By simplicial setoids do you mean <em>strictly</em> simplicial setoids, or \"pseudosimplicial setoids\"? i.e. when we compose the actions of maps of <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"normal\">Δ</mi></mrow><annotation encoding=\"application/x-tex\">\\Delta</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord\">Δ</span></span></span></span>, we could require commutativity only up to the relation.</p>",
+        "id": 254533973,
+        "sender_full_name": "Reid Barton",
+        "timestamp": 1632403417
+    },
+    {
+        "content": "<p>If I understand your meaning correctly, the latter.  The actions take values in maps of setoids.</p>",
+        "id": 254534199,
+        "sender_full_name": "James Deikun",
+        "timestamp": 1632403510
+    },
+    {
+        "content": "<p>Then in the nerve theorem, I guess you have to interpret \"unique\" lift as meaning unique in the setoid-sense, i.e., there is a lift and every lift is related to that one.</p>",
+        "id": 254535058,
+        "sender_full_name": "Reid Barton",
+        "timestamp": 1632403843
+    },
+    {
+        "content": "<p>(As a very interested bystander: thanks <span class=\"user-mention\" data-user-id=\"276480\">@Reid Barton</span> for a very illuminating description of the issues)</p>",
+        "id": 254535290,
+        "sender_full_name": "Jacques Carette",
+        "timestamp": 1632403926
+    }
+]

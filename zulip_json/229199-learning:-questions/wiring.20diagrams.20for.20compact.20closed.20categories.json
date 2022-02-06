@@ -1,0 +1,104 @@
+[
+    {
+        "content": "<p>Wiring diagrams are a combinatorial version of string diagrams for symmetric monoidal categories (for instance see <a href=\"https://arxiv.org/abs/2101.12046\">https://arxiv.org/abs/2101.12046</a>). Has anyone already defined somewhere a variant of this notion for compact closed categories? Maybe <span class=\"user-mention\" data-user-id=\"275965\">@Evan Patterson</span> , <span class=\"user-mention\" data-user-id=\"276049\">@David Spivak</span> <span class=\"user-mention\" data-user-id=\"461917\">@Dmitry V.</span> know?</p>",
+        "id": 267628390,
+        "sender_full_name": "Antonin Delpeuch",
+        "timestamp": 1641927235
+    },
+    {
+        "content": "<p>For <em>self-dual</em> compact closed categories (<a href=\"http://ncatlab.org/nlab/show/hypergraph+category\">hypergraph categories</a>), there is the <a href=\"https://arxiv.org/abs/1305.0297\">operad of undirected wiring diagrams</a>. UWDs are actually much simpler than directed wiring diagrams, and we use them all the time in AlgebraicJulia as an unbiased syntax for composing relations, spans, structured cospans, and so on.</p>\n<p>I am not sure about general compact closed categories. I figure you could handle them by adding some extra data to a UWD but I don't remember seeing that written down.</p>",
+        "id": 267633403,
+        "sender_full_name": "Evan Patterson",
+        "timestamp": 1641929663
+    },
+    {
+        "content": "<p>Just by the way, every hypergraph category is self-dual compact closed, but 'hypergraph' means more.   (I know Evan knows this, this remark is just for the newbies out there....)</p>",
+        "id": 267634181,
+        "sender_full_name": "John Baez",
+        "timestamp": 1641930017
+    },
+    {
+        "content": "<p>Thanks for clarifying that. I should have said that UWDs are a syntax for hypergraph categories. For a self-dual compact closed category that is not a hypergraph category, not every UWD would give a valid way of composing morphisms.</p>",
+        "id": 267642916,
+        "sender_full_name": "Evan Patterson",
+        "timestamp": 1641934229
+    },
+    {
+        "content": "<p>I remembered a more relevant reference: <a href=\"https://arxiv.org/abs/1508.01069\">String diagrams for traced and compact categories are oriented 1-cobordisms</a> by Spivak, Schultz, and Rupel.</p>",
+        "id": 267644785,
+        "sender_full_name": "Evan Patterson",
+        "timestamp": 1641935128
+    },
+    {
+        "content": "<p>Also, last year at the Topos Colloquium, Marcy Robertson talked about the combinatorics of modular operads:</p>\n<p><a href=\"https://topos.site/topos-colloquium/slides/2021-07-29.pdf\">https://topos.site/topos-colloquium/slides/2021-07-29.pdf</a><br>\n<a href=\"https://www.youtube.com/watch?v=a88dtP1CGT8\">https://www.youtube.com/watch?v=a88dtP1CGT8</a></p>\n<div class=\"youtube-video message_inline_image\"><a data-id=\"a88dtP1CGT8\" href=\"https://www.youtube.com/watch?v=a88dtP1CGT8\"><img src=\"https://uploads.zulipusercontent.net/ab59cc544075ce795f6a02c299f7c286dbb7a0b8/68747470733a2f2f692e7974696d672e636f6d2f76692f61383864745031434754382f64656661756c742e6a7067\"></a></div><p>I think that this is related to giving a combinatorial description of composition in compact closed categories, but I haven't understood the details.</p>",
+        "id": 267645660,
+        "sender_full_name": "Evan Patterson",
+        "timestamp": 1641935531
+    },
+    {
+        "content": "<p>I thought modular operads described ways of gluing together Riemann surfaces (which are 2-dimensional gadgets, a kind of souped-up version of string diagrams in a way).</p>",
+        "id": 267645951,
+        "sender_full_name": "John Baez",
+        "timestamp": 1641935672
+    },
+    {
+        "content": "<p>Oh, never mind - the word 'modular' is connected to Riemann surface theory, but that's probably just one application of modular operads.   Getzler and Kapranov started this subject with a paper <a href=\"https://arxiv.org/abs/dg-ga/9408003\">Modular operads</a>, and their abstract says </p>\n<blockquote>\n<p>Modular operads are a special type of operad: in fact, they bear the same relationship to operads that graphs do to trees (i.e. simply connected graphs). One of the basic examples of a modular operad is the collection of Deligne-Mumford-Knudsen moduli spaces <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi>M</mi><mrow><mi>g</mi><mo separator=\"true\">,</mo><mi>n</mi></mrow></msub></mrow><annotation encoding=\"application/x-tex\">M_{g,n}</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.9694em;vertical-align:-0.2861em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.10903em;\">M</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.1514em;\"><span style=\"top:-2.55em;margin-left:-0.109em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mathnormal mtight\" style=\"margin-right:0.03588em;\">g</span><span class=\"mpunct mtight\">,</span><span class=\"mord mathnormal mtight\">n</span></span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.2861em;\"><span></span></span></span></span></span></span></span></span></span> of stable pointed algebraic curves; hence the word \"modular.''</p>\n</blockquote>",
+        "id": 267646296,
+        "sender_full_name": "John Baez",
+        "timestamp": 1641935853
+    },
+    {
+        "content": "<p>So they were interested in the Riemann surface (<span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>∼</mo></mrow><annotation encoding=\"application/x-tex\">\\sim</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.3669em;\"></span><span class=\"mrel\">∼</span></span></span></span> algebraic curve) example, but the basic idea is that \"modular operads are to graphs as operads are to trees\".</p>",
+        "id": 267646414,
+        "sender_full_name": "John Baez",
+        "timestamp": 1641935907
+    },
+    {
+        "content": "<p>I was just going on slides 8-10 in that talk, where the description of a modular operad looks a lot like what you can do in a compact closed category: there is an involution on objects, you can compose morphisms, and there are \"contraction\" operations that look like the cap/cup.</p>",
+        "id": 267646851,
+        "sender_full_name": "Evan Patterson",
+        "timestamp": 1641936137
+    },
+    {
+        "content": "<p>Okay, maybe the idea is that once you can build up trees (as in an ordinary operad) and you've got caps and cups, you can build up graphs.</p>",
+        "id": 267650193,
+        "sender_full_name": "John Baez",
+        "timestamp": 1641937765
+    },
+    {
+        "content": "<p>Thanks Evan! Ok then I will write up a definition, indeed I do not think it is particularly difficult, I just wanted to cite any relevant work that already got it right :)</p>",
+        "id": 267688115,
+        "sender_full_name": "Antonin Delpeuch",
+        "timestamp": 1641970629
+    },
+    {
+        "content": "<p>Cool, those are the references I know. Looking forward to seeing your definitions.</p>",
+        "id": 267691125,
+        "sender_full_name": "Evan Patterson",
+        "timestamp": 1641973932
+    },
+    {
+        "content": "<p>In <a href=\"https://arxiv.org/abs/1602.06771\">Rewriting modulo symmetric monoidal structure</a>, Bonchi et al have characterized string diagrams in symmetric monoidal categories as cospans of acyclic hypergraphs in which the legs satisfy a suitable monogamy condition. This matches up nicely with the structured cospan approach to networks in general.</p>\n<p>I bet that their characterization can be adapted to the compact closed case relatively easily by relaxing the conditions on the cospans involved a bit. My guess would be that one can do it by dropping the acyclicity entirely and replacing their monogamy condition, which applies to each of the two legs separately (Defn 3.6), by a \"joint <del>monogamy</del>bigamy\" condition: <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>f</mi></mrow><annotation encoding=\"application/x-tex\">f</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8889em;vertical-align:-0.1944em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.10764em;\">f</span></span></span></span> and <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>g</mi></mrow><annotation encoding=\"application/x-tex\">g</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.625em;vertical-align:-0.1944em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.03588em;\">g</span></span></span></span> still need to be injective, and every node in <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>G</mi></mrow><annotation encoding=\"application/x-tex\">G</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\">G</span></span></span></span> must be the source or target of an edge plus being in the image of <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>f</mi></mrow><annotation encoding=\"application/x-tex\">f</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8889em;vertical-align:-0.1944em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.10764em;\">f</span></span></span></span> or <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>g</mi></mrow><annotation encoding=\"application/x-tex\">g</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.625em;vertical-align:-0.1944em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.03588em;\">g</span></span></span></span> in exactly two ways overall. This would formalize the idea that every wire connects exactly two ports, and each port is either incident to a box or an overall input or output interface.</p>",
+        "id": 267705552,
+        "sender_full_name": "Tobias Fritz",
+        "timestamp": 1641982945
+    },
+    {
+        "content": "<p>Actually this is not quite right yet: my proposed definition does not allow for two input interfaces to be wired together by a cap, or two output interfaces to be wired together by a cup. But something along these lines must be possible.</p>",
+        "id": 267706188,
+        "sender_full_name": "Tobias Fritz",
+        "timestamp": 1641983373
+    },
+    {
+        "content": "<p>Sorry for the delay. The wiring diagrams for traced and for compact closed categories are basically the same: they're oriented 1-cobordisms. I wrote a paper with Schultz and Rupel on it <a href=\"https://arxiv.org/abs/1508.01069\">String diagrams for traced and compact categories are oriented 1-cobordisms</a></p>",
+        "id": 267956516,
+        "sender_full_name": "David Spivak",
+        "timestamp": 1642123625
+    },
+    {
+        "content": "<p>Thanks! In the end just went for a simple combinatorial description, it did not feel like a lot of overhead. I needed it to construct the free compact closed category generated by a symmetric monoidal category: <a href=\"https://arxiv.org/abs/2201.07527\">https://arxiv.org/abs/2201.07527</a></p>",
+        "id": 268675579,
+        "sender_full_name": "Antonin Delpeuch",
+        "timestamp": 1642676526
+    }
+]

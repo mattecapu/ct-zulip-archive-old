@@ -1,0 +1,44 @@
+[
+    {
+        "content": "<p>nlab:pullback (fibre product) refers to fibres of bundles over generalized elements (aren't those also just bundles?)</p>\n<p>nlab:fibre refers to fibres of bundles over points</p>\n<p>nlab:pushout (cofibre coproduct) doesn't refer explicitly to cofibres or cobundles (which i assume can be considered as generalized coelements, maps out of your object)</p>\n<p>nlab:cofibre refers to cofibres of cobundles under... the map to the terminal object? this seems to not follow the typical 'co-' rule. i would think cofibres (in the specific sense) would be cofibres of cobundles under copoints (maps to the initial object)</p>\n<p>is this due to the definition of fibre/kernel and cofibre/cokernel of an arrow in a category of pointed objects with finite limits and colimits? nlab:fibre refers to the base as being equipped with the structure of a pointed object, nlab:cofibre refers to the category having a terminal object. but the point in a category of pointed objects is a zero object. why is the generalization of (co)fibre to a category wrt what its category of pointed objects would call a (co)fibre, instead of the typical 'co-' rule?</p>",
+        "id": 197685740,
+        "sender_full_name": "Pastel Raschke",
+        "timestamp": 1589547260
+    },
+    {
+        "content": "<p>I'm not entirely sure I understand the question, but mainly these concepts come from situations where the category has a zero object (like pointed topological spaces, or an abelian category).</p>",
+        "id": 197687324,
+        "sender_full_name": "Reid Barton",
+        "timestamp": 1589548033
+    },
+    {
+        "content": "<p>Also, lots of categories of interest (like Set) work a lot differently from their opposite categories, so directly dualizing notions may not be that useful. For example the terminal object of Set is a generator, meaning a morphism is determined by what it does on maps out of a point, so it's reasonable to hope that a map of sets is determined by all its fibers, while the initial object of Set is definitely not a cogenerator (most objects don't have any maps to it at all).</p>",
+        "id": 197688049,
+        "sender_full_name": "Reid Barton",
+        "timestamp": 1589548361
+    },
+    {
+        "content": "<p><a href=\"https://ncatlab.org/nlab/show/fiber\">https://ncatlab.org/nlab/show/fiber</a><br>\n<a href=\"https://ncatlab.org/nlab/show/cofiber\">https://ncatlab.org/nlab/show/cofiber</a></p>\n<p>(in additive categories) fibres over the zero object are called kernels, and cofibres 'over' (shouldn't that be under?) the zero object are called cokernels. the generalization of (co)fibre on nlab is to categories with a terminal object, instead of wrt points/copoints, or to categories with a zero object. this makes the 'co-' inconsistent with typical uses of 'co-', which makes my brain itch</p>\n<p>i am interested in categories like Setop on their own terms. i think it's valid at the very least as a concept with attitude. it's probably a natural place for cointuitionistic and codependent languages, possibly a starting point for applying the microcosm principle to coalgebras and cocategories. i am also worried about the shaky status of contravariance and duality in higher/enriched settings.</p>\n<p>i might be too confused to collapse a symmetry. there's that possibility too. either way, i think the inconsistency in notation is unfortunate.</p>",
+        "id": 197696240,
+        "sender_full_name": "Pastel Raschke",
+        "timestamp": 1589551768
+    },
+    {
+        "content": "<p>I guess my answer would be</p>\n<ul>\n<li>in pointed categories, the notions really are dual,</li>\n<li>in Set (which is not pointed), both notions have to involve <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>∗</mo></mrow><annotation encoding=\"application/x-tex\">*</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.46528em;vertical-align:0em;\"></span><span class=\"mord\">∗</span></span></span></span>: it's useless to take the fiber over the empty set, and usually impossible to push out by a map to the empty set.</li>\n</ul>\n<p>Set really does play a special role, since it's the category that every category is enriched over. For instance it appears in the Yoneda lemma for this reason.</p>",
+        "id": 197698178,
+        "sender_full_name": "Reid Barton",
+        "timestamp": 1589552544
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276480\">Reid Barton</span> <a href=\"#narrow/stream/229199-learning.3A-basic.20questions/topic/why.20are.20cofibres.20not.20fibres.20in.20the.20opposite.20category.3F/near/197698178\">said</a>:</p>\n<blockquote>\n<p>Set really does play a special role, since it's the category that every category is enriched over.</p>\n</blockquote>\n<p><span aria-label=\"scream\" class=\"emoji emoji-1f631\" role=\"img\" title=\"scream\">:scream:</span> all categories are locally small now?</p>",
+        "id": 197711380,
+        "sender_full_name": "[Mod] Morgan Rogers",
+        "timestamp": 1589557618
+    },
+    {
+        "content": "<p>Well, for some value of small, anyway</p>",
+        "id": 197716095,
+        "sender_full_name": "Reid Barton",
+        "timestamp": 1589559797
+    }
+]

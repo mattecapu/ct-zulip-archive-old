@@ -1,0 +1,110 @@
+[
+    {
+        "content": "<p>AFAIK, there are two main approaches of defining categorical semantics for a type theory:</p>\n<ul>\n<li>interpret types as objects, and sequents x : A |- M(x) : B (or more generally, typing judgments) as morphisms (the naive approach of lambdas as morphisms can be considered a subcase);</li>\n<li>contexts as objects, and context maps/substitutions as morphisms.</li>\n</ul>\n<p>I have seen both styles for STLC, but for MLTT and more complex cases (particularly presheaf semantics of dependent TT), it seems that almost everybody uses the context-based approach. The question is, why do people do this?</p>\n<p>I personally prefer the first style as it is more direct. I understand that the context-based style and nameless syntax fix problems like closedness and substitution, but I wonder if those are deal-breakers. For me, the more direct style is much easier to understand and to present.</p>\n<p>If anyone has a \"direct\" presentation of the presheaf semantics of MLTT/intuitionistic type theory, please let me know! Almost everything I have seen are based on contexts and substitutions.</p>",
+        "id": 243959626,
+        "sender_full_name": "Xuanrui Qi",
+        "timestamp": 1624649215
+    },
+    {
+        "content": "<p>Hm, I guess the presheaf semantics part of my question makes little sense, but the rest of the question seems to be valid.</p>",
+        "id": 243964759,
+        "sender_full_name": "Xuanrui Qi",
+        "timestamp": 1624651797
+    },
+    {
+        "content": "<p>How does this relate to ordinary Propositions As Types (Curry–Howard)?</p>",
+        "id": 243984819,
+        "sender_full_name": "Jon Awbrey",
+        "timestamp": 1624667801
+    },
+    {
+        "content": "<p>I don't know much about the categorical semantics of predicate logic, but I guess you get something like propositions as objects? I guess they're related in this way.</p>",
+        "id": 243995858,
+        "sender_full_name": "Xuanrui Qi",
+        "timestamp": 1624684898
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"411666\">Xuanrui Qi</span> <a href=\"#narrow/stream/229952-theory.3A-type.20theory/topic/Presenting.20categorical.20semantics/near/243959626\">said</a>:</p>\n<blockquote>\n<p>AFAIK, there are two main approaches of defining categorical semantics for a type theory:</p>\n<ul>\n<li>interpret types as objects, and sequents x : A |- M(x) : B (or more generally, typing judgments) as morphisms (the naive approach of lambdas as morphisms can be considered a subcase);</li>\n<li>contexts as objects, and context maps/substitutions as morphisms.</li>\n</ul>\n<p>I have seen both styles for STLC, but for MLTT and more complex cases (particularly presheaf semantics of dependent TT), it seems that almost everybody uses the context-based approach. The question is, why do people do this?</p>\n<p>I personally prefer the first style as it is more direct. I understand that the context-based style and nameless syntax fix problems like closedness and substitution, but I wonder if those are deal-breakers. For me, the more direct style is much easier to understand and to present.</p>\n<p>If anyone has a \"direct\" presentation of the presheaf semantics of MLTT/intuitionistic type theory, please let me know! Almost everything I have seen are based on contexts and substitutions.</p>\n</blockquote>\n<p>These two are usually combined: the second kind (called the 'syntactic category') is the base of a fibration whose fibers are of the first kind</p>",
+        "id": 244009444,
+        "sender_full_name": "Matteo Capucci (he/him)",
+        "timestamp": 1624705441
+    },
+    {
+        "content": "<p>The two things get combined by constructions like the tripos-to-topos construction, which build a category whose internal logic is the one expressed by the fibration</p>",
+        "id": 244009521,
+        "sender_full_name": "Matteo Capucci (he/him)",
+        "timestamp": 1624705514
+    },
+    {
+        "content": "<p>I don't think it has anything to do with fibrations.  You can use either style in either the base or the fibers of a fibration.</p>",
+        "id": 244019490,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1624720141
+    },
+    {
+        "content": "<p>I also don't think it has anything to do with namelessness of syntax.  You could use either style with any kind of variables (named, de Bruijn, locally nameless, ...).</p>",
+        "id": 244019952,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1624720789
+    },
+    {
+        "content": "<p>The problem with your first style is that it doesn't correspond very well to syntax.  In syntax we <em>have</em> contexts, so the more direct way of interpreting syntax into a category is to have the contexts correspond to something in the category.  What your first style essentially does is to implicitly take the product of all the types in a context to make them into one type.  So the contexts are still really being interpreted as objects, it's just that there's an extra level of indirection.</p>",
+        "id": 244020034,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1624720893
+    },
+    {
+        "content": "<p>There's a third style, which I prefer over either one, which is to take semantics as occurring in a <em>multicategory</em>.  Then you can interpret types as objects and still have something to send the contexts to without implicitly taking products: the list of types in a context corresponds to the list of objects in the domain of a morphism in a multicategory.</p>",
+        "id": 244020101,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1624720960
+    },
+    {
+        "content": "<p>This also has the advantage that the rules of type theory for connectives often correspond more directly to the universal properties of the corresponding objects in a multicategory.</p>",
+        "id": 244020127,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1624720997
+    },
+    {
+        "content": "<p>The issue with dependent type theory is that contexts are much more complicated, with a lot more structure, because some types in the context can depend on earlier types in the context.  So it's hard to get away without interpreting them as something in the semantics.</p>",
+        "id": 244020197,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1624721099
+    },
+    {
+        "content": "<p>The most common way to interpret dependent type theory is in a categorical structure that has two kinds of \"objects\", one that's used to represent contexts and one that's used to represet types.  Since types can be dependent on contexts, the type-objects occur in a fibration over the category of context-objects.  This is a \"category with families\" or \"comprehension category\" (and lots of other names).  So this is really more of a mix of your two styles.  (In fact, even for simple type theory the contexts-as-objects approach is arguably mixing the styles as well, because the types <em>also</em> get interpreted as objects, and it doesn't necessarily need to be the same class of objects; it could be a category with families in which the type-objects are constant over the context-objects.)</p>",
+        "id": 244020343,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1624721291
+    },
+    {
+        "content": "<p>There is also a more \"multicategorical\" approach to the semantics of dependent type theory in which \"contexts\" are not just a separate class of objects, but really are \"lists of types\" just as they are in syntax.  But it's more complicated because of dependency: you can't first specify a collection of type-objects and then just say the contexts are lists of them, since the type-objects may depend on some context, i.e. list of prior type-objects.  So the \"contexts\" still have to occur as \"things\" in the semantics, but the rules specify that each of them is built up in a unique way as a list of types.  This is called a \"contextual category\".</p>",
+        "id": 244020435,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1624721411
+    },
+    {
+        "content": "<p>Say you're taking the multicategorical approach to algebraic or predicate theories. How do you define the notion of a model then? Because usually a model is a structure preserving functor from the syntactic category to the background category (e.g. Sets).</p>",
+        "id": 244020595,
+        "sender_full_name": "Fawzi Hreiki",
+        "timestamp": 1624721661
+    },
+    {
+        "content": "<p>Do you need to pass to the free finite-product category on the multicategory?</p>",
+        "id": 244020608,
+        "sender_full_name": "Fawzi Hreiki",
+        "timestamp": 1624721681
+    },
+    {
+        "content": "<p>A model is a structure-preserving functor from the syntactic <em>multicategory</em> to the background <em>multicategory</em>.</p>",
+        "id": 244020688,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1624721799
+    },
+    {
+        "content": "<p>If your semantic category like Set is a monoidal category, you pass to its underlying multicategory.</p>",
+        "id": 244020699,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1624721856
+    }
+]

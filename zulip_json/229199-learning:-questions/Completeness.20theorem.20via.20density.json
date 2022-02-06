@@ -1,0 +1,62 @@
+[
+    {
+        "content": "<p>I've been learning about density and I can't help but notice the analogy with completeness theorems in logic - I was hoping this could be made precise in some way. </p>\n<p>For example, any small category <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>C</mi></mrow><annotation encoding=\"application/x-tex\">C</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.07153em;\">C</span></span></span></span> can be regarded as a diagrammatic theory (just sorts and function symbols) and the UMP of the Yoneda embedding tells us that <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>C</mi></mrow><annotation encoding=\"application/x-tex\">C</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.07153em;\">C</span></span></span></span> is dense in its category of models. Likewise, any Lawvere theory is dense in its category of algebras. More generally, the Kleisli category of any monad is dense in the Eilenberg-Moore category. When the monad has arities, the free algebras on just those arities are dense in the Eilenberg-Moore category (e.g. how the first three walking ordinals are dense in <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mtext>Cat</mtext></mrow><annotation encoding=\"application/x-tex\">\\text{Cat}</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord text\"><span class=\"mord\">Cat</span></span></span></span></span>).</p>\n<p>These could all be seen as 'completeness theorems'. Can this be extended to other forms of logic (e.g. regular, geometric, etc...) and how does this connect to the traditional formulation of the completeness theorem (if a statement is true in all models then its true from the theory).</p>",
+        "id": 229460315,
+        "sender_full_name": "Fawzi Hreiki",
+        "timestamp": 1615288644
+    },
+    {
+        "content": "<p>That's an interesting question.  I guess to extend the idea one wants to get a \"purely syntactic\" model of a theory where the model is built directly from the theory itself.</p>",
+        "id": 229498088,
+        "sender_full_name": "John Baez",
+        "timestamp": 1615305145
+    },
+    {
+        "content": "<p>Sounds like a universal model to me <span aria-label=\"+1\" class=\"emoji emoji-1f44d\" role=\"img\" title=\"+1\">:+1:</span></p>",
+        "id": 229498194,
+        "sender_full_name": "Morgan Rogers (he/him)",
+        "timestamp": 1615305187
+    },
+    {
+        "content": "<p>This is exactly how the completeness theorems work in categorical logic. You have a syntactic category carrying the universal model (interpret sorts as themselves etc), a class of categories with enough structure to carry models of/interpret the theory, and functors between these preserving the structure required to interpret the theory, so that a model is the image under such a functor of the universal model.</p>\n<p>Then the completeness theorem has a trivial version which says \"true in all models iff provable in the theory\" because the syntactic category carries the universal model, but non-trivial completeness results such as \"true in all set-models iff provable in the theory\" are recovered as soon as there are 'enough' Set-models for the corresponding functors to be jointly conservative.</p>",
+        "id": 229499150,
+        "sender_full_name": "Morgan Rogers (he/him)",
+        "timestamp": 1615305538
+    },
+    {
+        "content": "<p>Nice.</p>",
+        "id": 229500222,
+        "sender_full_name": "John Baez",
+        "timestamp": 1615305743
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"277473\">Morgan Rogers (he/him)</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/Completeness.20theorem.20via.20density/near/229499150\">said</a>:</p>\n<blockquote>\n<p>This is exactly how the completeness theorems work in categorical logic. You have a syntactic category carrying the universal model (interpret sorts as themselves etc), a class of categories with enough structure to carry models of/interpret the theory, and functors between these preserving the structure required to interpret the theory, so that a model is the image under such a functor of the universal model.</p>\n<p>Then the completeness theorem has a trivial version which says \"true in all models iff provable in the theory\" because the syntactic category carries the universal model, but non-trivial completeness results such as \"true in all set-models iff provable in the theory\" are recovered as soon as there are 'enough' Set-models for the corresponding functors to be jointly conservative.</p>\n</blockquote>\n<p>Sure I know that, but I was wondering if (assuming completeness) this syntactic category always embeds/maps densely into the category of models</p>",
+        "id": 229502315,
+        "sender_full_name": "Fawzi Hreiki",
+        "timestamp": 1615306199
+    },
+    {
+        "content": "<p>Unfortunately not, that's kind of a special feature of essentially algebraic theories</p>",
+        "id": 229502687,
+        "sender_full_name": "Morgan Rogers (he/him)",
+        "timestamp": 1615306286
+    },
+    {
+        "content": "<p>Yeah that makes sense I suppose, since the hom-functor need not be regular/geometric/etc.. so we usually don't get a 'copy' of the theory in the category of models</p>",
+        "id": 229503098,
+        "sender_full_name": "Fawzi Hreiki",
+        "timestamp": 1615306411
+    },
+    {
+        "content": "<p>If you're aware of Caramello's book, her approach is to embed the classifying topos of a given theory into a presheaf topos, in part because what you're saying is true of theories of presheaf type (geometric theories classified by presheaf toposes)</p>",
+        "id": 229503696,
+        "sender_full_name": "Morgan Rogers (he/him)",
+        "timestamp": 1615306537
+    },
+    {
+        "content": "<p>I've only briefly glanced at the book but I'll check that section out. Thanks</p>",
+        "id": 229503999,
+        "sender_full_name": "Fawzi Hreiki",
+        "timestamp": 1615306613
+    }
+]

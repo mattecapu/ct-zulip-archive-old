@@ -1,0 +1,74 @@
+[
+    {
+        "content": "<p>Hi all</p>\n<p>I'm wondering if there's a good reference / introduction to the various notions of functor between (weak) double categories. <a href=\"https://ncatlab.org/nlab/show/double+functor\">nlab</a> mentions that they come in various flavours (strict, lax, oplax etc.) as for bicategories, which makes sense, but it doesn't get very far in terms of defining them.</p>\n<p>Mostly what I'm looking for is just the definitions spelt out explicitly enough that I (being a person without much sophistication) can work my way through them step-by-step in the context of some example double categories that I'm familiar with and get a feel for what they're like.</p>\n<p>I'm also very interested to know what the corresponding notion(s) of natural transformations are for the various notions of functor between double categories, so if there is something that goes into detail about that as wel it would be great.</p>\n<p>Does a resource like that exist?</p>",
+        "id": 243280457,
+        "sender_full_name": "Nathaniel Virgo",
+        "timestamp": 1624154483
+    },
+    {
+        "content": "<p>My <a href=\"http://www.tac.mta.ca/tac/volumes/20/18/20-18abs.html\">Framed bicategories and monoidal fibrations</a> has more than the nLab, at least, plus a number of examples.  Another good reference is Grandis &amp; Pare <em>Adjoints for double categories</em>, which assembles lax and oplax double functors into a double category of double categories.</p>",
+        "id": 243284513,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1624161558
+    },
+    {
+        "content": "<p>Also as a self-answer, I found a nicely explicit treatment in the book \"Higher Dimensional Categories: From Double to Multiple Categories\" by Marco Grandis. (Weak double categories are defined in definition 3.3.1 and the various notions of functor in definition 3.5.1)</p>",
+        "id": 243294150,
+        "sender_full_name": "Nathaniel Virgo",
+        "timestamp": 1624179581
+    },
+    {
+        "content": "<p>The appendix to <a href=\"https://arxiv.org/abs/1911.04630\">Structured cospans</a> has nice, spelled out basic double categorical definitions.</p>",
+        "id": 243400728,
+        "sender_full_name": "Daniel Plácido",
+        "timestamp": 1624289774
+    },
+    {
+        "content": "<p>Thanks!   Even better is the appendix to Kenny Courser's thesis <em><a href=\"https://arxiv.org/abs/2008.02394\">Open Systems: A Double Categorical Perspective</a></em>.   It's not mainly about different kinds of double functors, but it has a lot of basic definitions in double category theory.</p>",
+        "id": 243408502,
+        "sender_full_name": "John Baez",
+        "timestamp": 1624293227
+    },
+    {
+        "content": "<p>for a different flavour, <span class=\"user-mention\" data-user-id=\"281258\">@Ed Morehouse</span> has a nice presentation using string diagrams in <a href=\"https://www.ioc.ee/~ed/research/articles/morehouse-2020-companion_preservation.pdf\">this preprint</a></p>",
+        "id": 243415905,
+        "sender_full_name": "Matt Earnshaw",
+        "timestamp": 1624296748
+    },
+    {
+        "content": "<p>Oh, great, that Ed Morehouse paper is going to save me a lot of time working out the string diagrams for myself!</p>",
+        "id": 243467801,
+        "sender_full_name": "Nathaniel Virgo",
+        "timestamp": 1624331239
+    },
+    {
+        "content": "<p>All of these resources seem to assume that the double functors are strict in the one direction. Is there a reason for this? I would have naively assumed it would be better for compositions in both directions to be preserved only up to isomorphism.</p>",
+        "id": 243514024,
+        "sender_full_name": "Graham Manuell",
+        "timestamp": 1624367810
+    },
+    {
+        "content": "<p>I guess because double categories themselves are strict in one direction, so you sort of have to be strict along that direction. <a href=\"https://ncatlab.org/nlab/show/double+category#double_bicategories\">nlab</a> mentions a few ways to change that, though.</p>",
+        "id": 243517672,
+        "sender_full_name": "Nathaniel Virgo",
+        "timestamp": 1624369368
+    },
+    {
+        "content": "<p>Thanks, though I don't know why that would mean you have to be strict along that direction. When dealing strict 2-categories it is still usual to consider pseudofunctors instead of only strict 2-functors.</p>",
+        "id": 243518680,
+        "sender_full_name": "Graham Manuell",
+        "timestamp": 1624369791
+    },
+    {
+        "content": "<p>I might have spoken too soon. (I am still learning this stuff.) That makes sense. Now I have the same question and I hope someone with more expertise can answer it.</p>",
+        "id": 243523957,
+        "sender_full_name": "Nathaniel Virgo",
+        "timestamp": 1624371779
+    },
+    {
+        "content": "<p>It's possible to define \"double pseudofunctors\", e.g. in my <a href=\"http://nyjm.albany.edu/j/2011/17-5.html\">Comparing composites of left and right derived functors</a>, or in Verity's <a href=\"http://tac.mta.ca/tac/reprints/articles/20/tr20abs.html\">Enriched categories, internal categories and change of base</a> (where the double categories are weak in both directions as well).  I think double pseudofunctors aren't as common in the literature because, perhaps surprisingly, they don't come up in practice all that often.  Also, double categories are the algebras for a 2-monad on <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"normal\">C</mi><mi mathvariant=\"normal\">a</mi><msup><mi mathvariant=\"normal\">t</mi><mo lspace=\"0em\" rspace=\"0em\">⇉</mo></msup></mrow><annotation encoding=\"application/x-tex\">\\rm Cat^{\\rightrightarrows}</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8354999999999999em;vertical-align:0em;\"></span><span class=\"mord\"><span class=\"mord mathrm\">Ca</span><span class=\"mord\"><span class=\"mord mathrm\">t</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.8354999999999999em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mrel amsrm mtight\">⇉</span></span></span></span></span></span></span></span></span></span></span></span></span>, and the pseudo/lax/colax morphisms for that 2-monad are the double functors that are strict in one direction, so the 2-categories of double categories and those morphisms have good formal properties.</p>",
+        "id": 243536245,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1624376726
+    }
+]

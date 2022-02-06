@@ -1,0 +1,48 @@
+---
+layout: archive
+title: Zulip Chat Archive
+permalink: /stream/229199-learning:-questions/topic/Higher-order.20graphs.html
+---
+
+<h2>Stream: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/index.html">learning: questions</a></h2>
+<h3>Topic: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/Higher-order.20graphs.html">Higher-order graphs</a></h3>
+
+<hr>
+
+<base href="https://categorytheory.zulipchat.com/">
+
+<head><link href="https://mattecapu.github.io/ct-zulip-archive/style.css" rel="stylesheet"></head>
+
+{% raw %}
+
+<a name="216363549"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/Higher-order%20graphs/near/216363549" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Avi Craimer <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/Higher-order.20graphs.html#216363549">(Nov 11 2020 at 15:55)</a>:</h4>
+<p>I've been learning about higher categories and thinking about representing them in data structures. </p>
+<p>This has led me to ask whether there is a name for the mathematical structure that is like a regular graph, but which allows n_edges between (n - 1)_edges. </p>
+<p>E.g., a 2-category corresponds to a graph structure with vertices, edges between vertices, and edges between such edges. My question is, have such structures been defined and studied in graph theory? </p>
+<p>My attempts to Google  higher graph structures has turned up hypergraphs and multigraphs, but neither of these (at least on their face) are the same as graphs with higher-order edges. </p>
+<p>Of course, you could model these higher-order edges with a regular graph, just make every k_edge of the higher-order graph into a vertex of a normal graph and have directed edges to indicate its source and target. But then you'd have to enforce extra constrains to ensure that you don't gets edges between different levels of the hierarchy. i.e., you have to explicitly disallow an edge from going between an n_edge to a m_edge, where n  ≠ m. It would be nicer to have a structure in which the edge hierarchy emerges naturally.</p>
+
+
+
+<a name="216364481"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/Higher-order%20graphs/near/216364481" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Jules Hedges <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/Higher-order.20graphs.html#216364481">(Nov 11 2020 at 16:02)</a>:</h4>
+<p>I think this is what globular sets are (with a caveat about directedness): <a href="https://ncatlab.org/nlab/show/globular+set">https://ncatlab.org/nlab/show/globular+set</a></p>
+
+
+
+<a name="216365767"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/Higher-order%20graphs/near/216365767" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/Higher-order.20graphs.html#216365767">(Nov 11 2020 at 16:13)</a>:</h4>
+<p>Yeah: I don't know if graph theorists study them, but category theorists use <a href="https://en.wikipedia.org/wiki/Globular_set">globular sets</a> to describe structures with vertices, directed edges going between vertices, directed "2-edges" going between directed edges, etc.</p>
+
+
+
+<a name="216369288"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/Higher-order%20graphs/near/216369288" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Avi Craimer <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/Higher-order.20graphs.html#216369288">(Nov 11 2020 at 16:43)</a>:</h4>
+<p>Thanks. If I'm understanding the Wikipedia page right, globular sets are sub-class of the higher-order graph structure where there can only be higher order edges between "parallel" edges. This makes sense for higher-order categories. If you take away those extra equations that constrain the source and target functions, then you'd just have the general idea of a higher-order edge. It is surprising to me that this is not studied outside of category theory. It seems like a natural type of network structure that you might find in lots of different contexts.</p>
+
+
+
+{% endraw %}
+
+<hr><p>Last updated: Jan 30 2022 at 00:30 UTC</p>

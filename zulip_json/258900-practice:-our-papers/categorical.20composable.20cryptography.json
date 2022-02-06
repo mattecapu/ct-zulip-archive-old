@@ -1,0 +1,26 @@
+[
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"278549\">Bas Spitters</span> <a href=\"#narrow/stream/258900-practice.3A-our.20papers/topic/Categorical.20composable.20cryptography/near/239091152\">said</a>:</p>\n<blockquote>\n<p>Hi <span class=\"user-mention silent\" data-user-id=\"277285\">Martti Karvonen</span> I had briefly looked a similar approach before, but it seems that the Kleisli category of state+probability is not a SMC, as state is not a commutative monad. It's possible that I overlooked something, but it looks like this does not directly fit in your framework.<br>\nPlease correct me if I'm wrong.</p>\n</blockquote>\n<p><span class=\"user-mention\" data-user-id=\"278549\">@Bas Spitters</span>  isn't state lax monoidal for +, and similarly for Giry? Using + as the monoidal structure seems to be what they do for constructive crypto in cryptHOL in the paper you linked, so I think this should fit the framework just fine after all.</p>",
+        "id": 266991976,
+        "sender_full_name": "Martti Karvonen",
+        "timestamp": 1641417270
+    },
+    {
+        "content": "<p>Hi <span class=\"user-mention\" data-user-id=\"277285\">@Martti Karvonen</span> State gives a symmetric <em>pre</em>monoidal category of stateful programs. See e.g. the work by <span class=\"user-mention\" data-user-id=\"308397\">@Sam Staton</span> <br>\n<a href=\"https://www.cs.ox.ac.uk/people/samuel.staton/papers/popl13.pdf\">https://www.cs.ox.ac.uk/people/samuel.staton/papers/popl13.pdf</a></p>\n<p>I'm not entirely sure what you mean by +.<br>\nIndeed, cryptHOL does not use state in the base category, but uses resumption monads to pass state around. Do you claim that's related to what you  are doing?<br>\nThat would be interesting.</p>",
+        "id": 266999256,
+        "sender_full_name": "Bas Spitters",
+        "timestamp": 1641420893
+    },
+    {
+        "content": "<p><span class=\"user-mention\" data-user-id=\"278549\">@Bas Spitters</span>  I meant taking coproducts as giving the monoidal structure on our base category rather than cartesian products. That's clearly the monoidal structure at play in <a href=\"https://ieeexplore.ieee.org/document/8823694\">https://ieeexplore.ieee.org/document/8823694</a> that you mentioned earlier, and seems to play well both with the distribution and state monads.</p>",
+        "id": 267000642,
+        "sender_full_name": "Martti Karvonen",
+        "timestamp": 1641421590
+    },
+    {
+        "content": "<p>That could work. Did you check that it does form a monoidal category? And if so, how does your approach connect to the use of resumption monads?</p>",
+        "id": 267049591,
+        "sender_full_name": "Bas Spitters",
+        "timestamp": 1641467793
+    }
+]

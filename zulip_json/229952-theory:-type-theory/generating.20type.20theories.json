@@ -1,0 +1,152 @@
+[
+    {
+        "content": "<p>Hello, hope your holiday is going well enough. I had a question about references, existing literature and implementations:<br>\nWhat has been done toward general methods of taking a programming language and <em>generating a type system</em> for it automatically? Any thoughts are appreciated.</p>",
+        "id": 220715460,
+        "sender_full_name": "Christian Williams",
+        "timestamp": 1608659074
+    },
+    {
+        "content": "<p>Could you clarify what you mean by \"programming language\" if that doesn't already include the type system?</p>",
+        "id": 220715567,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1608659147
+    },
+    {
+        "content": "<p>The language may already have a type system of its own; but a motivating example would be a language which does not already have a prominent type system, and could still benefit from one, such as Javascript.</p>",
+        "id": 220715981,
+        "sender_full_name": "Christian Williams",
+        "timestamp": 1608659409
+    },
+    {
+        "content": "<p>Would a motivating example be automatically generating the rules for the STLC, based on the rules for the untyped LC?</p>",
+        "id": 220716235,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1608659549
+    },
+    {
+        "content": "<p>In terms of generating a type system, I'm mainly thinking of the idea of \"a logic over a type theory\" from Jacobs' Categorical Logic. I am really impressed by the idea and I don't know how much it has been implemented in practice. But also, there may be other versions of the idea of generating a type system, and I'm wondering what people may know.</p>",
+        "id": 220716246,
+        "sender_full_name": "Christian Williams",
+        "timestamp": 1608659558
+    },
+    {
+        "content": "<p>Yes, I would say that's a good example.</p>",
+        "id": 220716265,
+        "sender_full_name": "Christian Williams",
+        "timestamp": 1608659567
+    },
+    {
+        "content": "<p>Why would STLC be automatically generated and not any of dozens of other possible type systems?</p>",
+        "id": 220718040,
+        "sender_full_name": "Dan Doel",
+        "timestamp": 1608660581
+    },
+    {
+        "content": "<p>It just depends on the method of generating. I think I know one that would produce that system, but I would need to work it out.</p>",
+        "id": 220718435,
+        "sender_full_name": "Christian Williams",
+        "timestamp": 1608660841
+    },
+    {
+        "content": "<p>This is meant to be a very open-ended question, so any answers are good. There may be many things that exist under different names than what I'm describing, like some tool that gives languages pattern-matching.</p>",
+        "id": 220718480,
+        "sender_full_name": "Christian Williams",
+        "timestamp": 1608660846
+    },
+    {
+        "content": "<p>I'm just wondering about any general-purpose ideas/tools that provide a broad class of programming languages with higher-level reasoning.</p>",
+        "id": 220718573,
+        "sender_full_name": "Christian Williams",
+        "timestamp": 1608660935
+    },
+    {
+        "content": "<p>I think in general a type system that correctly describes untyped code that people end up writing ends up being extremely complex. For instance, years ago, there was this one person working on a lisp dialect that had a very programmable type system. They ended up crafting a type system for the Tk bindings (UI toolkit), and it was extremely complicated.</p>",
+        "id": 220719838,
+        "sender_full_name": "Dan Doel",
+        "timestamp": 1608661791
+    },
+    {
+        "content": "<p>That isn't because you <em>couldn't</em> do the same thing in a way that would be less complicated with respect to types, but when people don't think about simple types from the start, they end up doing ad hoc things that end up very complicated to describe.</p>",
+        "id": 220719961,
+        "sender_full_name": "Dan Doel",
+        "timestamp": 1608661852
+    },
+    {
+        "content": "<p>But maybe you don't care about rejecting some things that people have written.</p>",
+        "id": 220720314,
+        "sender_full_name": "Dan Doel",
+        "timestamp": 1608662069
+    },
+    {
+        "content": "<p>I think I understand what you mean, but I'm not sure what it means to \"correctly describe\" untyped code.</p>",
+        "id": 220742929,
+        "sender_full_name": "Christian Williams",
+        "timestamp": 1608677073
+    },
+    {
+        "content": "<p>If an auto-generated type system is meant to be general-purpose, I think probably it should be purely descriptive/agnostic. The main examples I have in mind are akin to pattern-matching, regular expressions, predicate logic.</p>",
+        "id": 220743566,
+        "sender_full_name": "Christian Williams",
+        "timestamp": 1608677544
+    },
+    {
+        "content": "<p>For example in a concurrent language, we can specify the single-threaded processes by <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"normal\">¬</mi><mo stretchy=\"false\">[</mo><mn>0</mn><mo stretchy=\"false\">]</mo><mo>∧</mo><mi mathvariant=\"normal\">¬</mi><mo stretchy=\"false\">[</mo><mi>p</mi><mi>a</mi><mi>r</mi><mo stretchy=\"false\">(</mo><mi mathvariant=\"normal\">¬</mi><mo stretchy=\"false\">[</mo><mn>0</mn><mo stretchy=\"false\">]</mo><mo separator=\"true\">,</mo><mi mathvariant=\"normal\">¬</mi><mo stretchy=\"false\">[</mo><mn>0</mn><mo stretchy=\"false\">]</mo><mo stretchy=\"false\">)</mo><mo stretchy=\"false\">]</mo></mrow><annotation encoding=\"application/x-tex\">\\neg[0]\\land \\neg[par(\\neg[0],\\neg[0])]</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord\">¬</span><span class=\"mopen\">[</span><span class=\"mord\">0</span><span class=\"mclose\">]</span><span class=\"mspace\" style=\"margin-right:0.2222222222222222em;\"></span><span class=\"mbin\">∧</span><span class=\"mspace\" style=\"margin-right:0.2222222222222222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord\">¬</span><span class=\"mopen\">[</span><span class=\"mord mathnormal\">p</span><span class=\"mord mathnormal\">a</span><span class=\"mord mathnormal\" style=\"margin-right:0.02778em;\">r</span><span class=\"mopen\">(</span><span class=\"mord\">¬</span><span class=\"mopen\">[</span><span class=\"mord\">0</span><span class=\"mclose\">]</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mord\">¬</span><span class=\"mopen\">[</span><span class=\"mord\">0</span><span class=\"mclose\">]</span><span class=\"mclose\">)</span><span class=\"mclose\">]</span></span></span></span>: not the null process, and not the parallel of two non-null processes. This is a type (predicate) that's just built up from language constructors and logical constructors.</p>",
+        "id": 220744063,
+        "sender_full_name": "Christian Williams",
+        "timestamp": 1608677919
+    },
+    {
+        "content": "<p>Do I understand the example correctly: you're defining a predicate that expresses something like the following pseudo-code <code>single_threaded(term) := !matches(term, 0) &amp;&amp; !(matches(term, par(x, y)) &amp;&amp; !matches(x, 0) &amp;&amp; !matches(y, 0))</code>?</p>",
+        "id": 220744465,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1608678223
+    },
+    {
+        "content": "<p>Adding pattern-matching along with a specified logic to a type theory automatically seems much more constrained and feasible than trying to construct a nontrivial type theory corresponding to an arbitrary single-sorted type theory.</p>",
+        "id": 220744575,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1608678304
+    },
+    {
+        "content": "<p>(I know I've seen this example before, but I think I hadn't understood exactly what it was intended to express previously.)</p>",
+        "id": 220744635,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1608678362
+    },
+    {
+        "content": "<p>In that case, it seems like it could be sufficient to add the operators <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>=</mo></mrow><annotation encoding=\"application/x-tex\">=</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.36687em;vertical-align:0em;\"></span><span class=\"mrel\">=</span></span></span></span>, <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"normal\">¬</mi></mrow><annotation encoding=\"application/x-tex\">\\neg</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.43056em;vertical-align:0em;\"></span><span class=\"mord\">¬</span></span></span></span>, <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"normal\">∃</mi></mrow><annotation encoding=\"application/x-tex\">\\exists</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.69444em;vertical-align:0em;\"></span><span class=\"mord\">∃</span></span></span></span>, <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>∧</mo></mrow><annotation encoding=\"application/x-tex\">\\land</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.55556em;vertical-align:0em;\"></span><span class=\"mord\">∧</span></span></span></span> to the type theory, since that predicate can be expressed as <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>t</mi><mo mathvariant=\"normal\">≠</mo><mn>0</mn><mo>∧</mo><mi mathvariant=\"normal\">∄</mi><mi>x</mi><mo separator=\"true\">,</mo><mi>y</mi><mtext> </mtext><mi mathvariant=\"normal\">.</mi><mtext> </mtext><mo stretchy=\"false\">(</mo><mi>t</mi><mo>=</mo><mrow><mi mathvariant=\"sans-serif\">p</mi><mi mathvariant=\"sans-serif\">a</mi><mi mathvariant=\"sans-serif\">r</mi></mrow><mo stretchy=\"false\">(</mo><mi>x</mi><mo separator=\"true\">,</mo><mi>y</mi><mo stretchy=\"false\">)</mo><mo>∧</mo><mi>x</mi><mo mathvariant=\"normal\">≠</mo><mn>0</mn><mo>∧</mo><mi>y</mi><mo mathvariant=\"normal\">≠</mo><mn>0</mn><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">t \\neq 0 \\land \\nexists x, y\\ .\\ (t = \\mathsf{par}(x, y) \\land x \\neq 0 \\land y \\neq 0)</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8888799999999999em;vertical-align:-0.19444em;\"></span><span class=\"mord mathnormal\">t</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\"><span class=\"mrel\"><span class=\"mord vbox\"><span class=\"thinbox\"><span class=\"rlap\"><span class=\"strut\" style=\"height:0.8888799999999999em;vertical-align:-0.19444em;\"></span><span class=\"inner\"><span class=\"mrel\"></span></span><span class=\"fix\"></span></span></span></span></span><span class=\"mrel\">=</span></span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.64444em;vertical-align:0em;\"></span><span class=\"mord\">0</span><span class=\"mspace\" style=\"margin-right:0.2222222222222222em;\"></span><span class=\"mbin\">∧</span><span class=\"mspace\" style=\"margin-right:0.2222222222222222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord amsrm\">∄</span><span class=\"mord mathnormal\">x</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.03588em;\">y</span><span class=\"mspace\"> </span><span class=\"mord\">.</span><span class=\"mspace\"> </span><span class=\"mopen\">(</span><span class=\"mord mathnormal\">t</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord\"><span class=\"mord mathsf\">p</span><span class=\"mord mathsf\">a</span><span class=\"mord mathsf\" style=\"margin-right:0.01389em;\">r</span></span><span class=\"mopen\">(</span><span class=\"mord mathnormal\">x</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.03588em;\">y</span><span class=\"mclose\">)</span><span class=\"mspace\" style=\"margin-right:0.2222222222222222em;\"></span><span class=\"mbin\">∧</span><span class=\"mspace\" style=\"margin-right:0.2222222222222222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.8888799999999999em;vertical-align:-0.19444em;\"></span><span class=\"mord mathnormal\">x</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\"><span class=\"mrel\"><span class=\"mord vbox\"><span class=\"thinbox\"><span class=\"rlap\"><span class=\"strut\" style=\"height:0.8888799999999999em;vertical-align:-0.19444em;\"></span><span class=\"inner\"><span class=\"mrel\"></span></span><span class=\"fix\"></span></span></span></span></span><span class=\"mrel\">=</span></span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.64444em;vertical-align:0em;\"></span><span class=\"mord\">0</span><span class=\"mspace\" style=\"margin-right:0.2222222222222222em;\"></span><span class=\"mbin\">∧</span><span class=\"mspace\" style=\"margin-right:0.2222222222222222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.8888799999999999em;vertical-align:-0.19444em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.03588em;\">y</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\"><span class=\"mrel\"><span class=\"mord vbox\"><span class=\"thinbox\"><span class=\"rlap\"><span class=\"strut\" style=\"height:0.8888799999999999em;vertical-align:-0.19444em;\"></span><span class=\"inner\"><span class=\"mrel\"></span></span><span class=\"fix\"></span></span></span></span></span><span class=\"mrel\">=</span></span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord\">0</span><span class=\"mclose\">)</span></span></span></span>.</p>",
+        "id": 220745215,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1608678820
+    },
+    {
+        "content": "<p>In the case of something like Tk, if things are completely untyped, the most basic thing would be calling functions with the correct number of arguments. However, the way people do that in untyped settings could in itself be complicated to describe. There might be multiple acceptable numbers of arguments, and the total number expected might depend on the values of earlier arguments.</p>",
+        "id": 220746550,
+        "sender_full_name": "Dan Doel",
+        "timestamp": 1608679925
+    },
+    {
+        "content": "<p>And the types of arguments expected might depend on earlier or later values.</p>",
+        "id": 220746592,
+        "sender_full_name": "Dan Doel",
+        "timestamp": 1608679958
+    },
+    {
+        "content": "<p>For a more academic example, you might say that the 'correct' untyped lambda terms are the ones that normalize, and then a type system for that is not simple types, but intersection/union types on top of that.</p>",
+        "id": 220746746,
+        "sender_full_name": "Dan Doel",
+        "timestamp": 1608680065
+    },
+    {
+        "content": "<p>Like, you mentioned JavaScript, but that is in some ways less well structured than even untyped lambda calculus.</p>",
+        "id": 220746934,
+        "sender_full_name": "Dan Doel",
+        "timestamp": 1608680207
+    },
+    {
+        "content": "<p>Yes, those are good examples. I think there is a certain reasonable class of \"correctness checking\" that would not be overly complicated to derive, in the right framework.</p>",
+        "id": 220747402,
+        "sender_full_name": "Christian Williams",
+        "timestamp": 1608680595
+    }
+]

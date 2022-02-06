@@ -1,0 +1,56 @@
+[
+    {
+        "content": "<p>I just came across the notion of self-types in this paper: <a href=\"https://homepage.divms.uiowa.edu/~astump/papers/fu-stump-rta-tlca-14.pdf\">https://homepage.divms.uiowa.edu/~astump/papers/fu-stump-rta-tlca-14.pdf</a></p>\n<p>As far as I understand, they are dependent types where a type can depend on the value it types. Their introduction/elimination rules are on p.4 of the paper. The authors show that this allows typing dependent elimination from lambda encodings (avoiding the addition of specific rules for inductive types on top of vanilla CoC for example). </p>\n<p>Does anyone have any idea what a (categorical) model of a dependent type theory with self-types would look like? I'm struggling with what they mean...</p>",
+        "id": 228206305,
+        "sender_full_name": "Robin Piedeleu",
+        "timestamp": 1614593821
+    },
+    {
+        "content": "<p>I haven’t gone through the details of the paper thoroughly, but isn’t the simplest option just to model self types by the corresponding inductive types? Maybe with W types in general?</p>",
+        "id": 228286622,
+        "sender_full_name": "Nick Scheel",
+        "timestamp": 1614625124
+    },
+    {
+        "content": "<p>In some sense, my thinking on the matter is that inductive types are models of parametric functions (namely, of the shape of their induction principles). For example, there are cases where the inductive type inhabits a lower universe than the type of the recursor. And so if we have those inductive types, we can use that to make the functions more polymorphic over universes or something like that. (Vague thoughts.)</p>",
+        "id": 228287264,
+        "sender_full_name": "Nick Scheel",
+        "timestamp": 1614625342
+    },
+    {
+        "content": "<p>Perhaps you would ask that the recursors of the inductive types are the identity or the identity up to conversion or something. (I’m not too familiar with the particulars of constructing models.)</p>",
+        "id": 228302586,
+        "sender_full_name": "Nick Scheel",
+        "timestamp": 1614631367
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276057\">Nick Scheel</span> <a href=\"#narrow/stream/229952-theory.3A-type.20theory/topic/self-types/near/228286622\">said</a>:</p>\n<blockquote>\n<p>I haven’t gone through the details of the paper thoroughly, but isn’t the simplest option just to model self types by the corresponding inductive types? Maybe with W types in general?</p>\n</blockquote>\n<p>I guess you're right if all self-types have a corresponding inductive version in a canonical way. It is not clear to me that this is the case but I'm very much a type theory noob so a lot of this goes over my head.</p>",
+        "id": 228390312,
+        "sender_full_name": "Robin Piedeleu",
+        "timestamp": 1614682768
+    },
+    {
+        "content": "<p>This is the part where the details I skipped would matter, but I think they were restricting self types to shapes that made sense as inductive types. (Strictly positive, etc.) I’m not sure the translation to Fω would have worked otherwise.</p>",
+        "id": 228394836,
+        "sender_full_name": "Nick Scheel",
+        "timestamp": 1614684939
+    },
+    {
+        "content": "<p>You may already be aware but the <a href=\"https://github.com/uwu-tech/Kind\">Kind</a> language (recently renamed from “Formality”) has an implementation of self types if it helps at all. The language targets JS, Haskell and also an experimental interaction net (optimal reduction) based backend. </p>\n<p>I am also interested in a categorical interpretation of self types but that is beyond my abilities at the moment.</p>",
+        "id": 229089367,
+        "sender_full_name": "Sam Kuhn",
+        "timestamp": 1615029143
+    },
+    {
+        "content": "<p>This is quite a nice informal summary from Victor Maia (the main author of Kind): </p>\n<blockquote>\n<p>The main insight behind self types is easy to explain. Simple functions can be written as A -&gt; B, and an application f a has type B. Dependent functions can be written as (x: A) -&gt; B x, and an application f a has type B a. The insight is that the type returned by an application has access to the value of the argument a. Self dependent functions can be written as s(x: A) -&gt; B s x, and an application f a has type B f a. The insight is that the type returned by an application can also access the value of the function f! This simple, elegant extension allow us to construct inductive datatypes with lambdas.</p>\n</blockquote>\n<p>Original article <a href=\"https://medium.com/@maiavictor/funext-from-self-cc738b441050\">here</a>.</p>",
+        "id": 229089979,
+        "sender_full_name": "Sam Kuhn",
+        "timestamp": 1615029728
+    },
+    {
+        "content": "<p>But the problem is that this \"insight\" doesn't make much sense in category theory, where you have to have the codomain of a morphism before you can talk about the morphism.</p>",
+        "id": 229104654,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1615043291
+    }
+]

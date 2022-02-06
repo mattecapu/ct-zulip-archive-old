@@ -1,0 +1,32 @@
+[
+    {
+        "content": "<p>I would like something similar to shortest path/k-shortest paths algorithm, but with support for product and coproduct types. First question is probably how can such problem be framed category theoretically and secondly are there already some fields where similar algorithms have been worked out?</p>\n<p>Thinking about it in wiring diagrams the question is roughly.<br>\nGiven: input wires, output wires, boxes with weight/cost and with ports which accept wires of specific types<br>\nLooking for an arrangement of boxes that gets me from input wires to output wires with the least cost. Boxes can accept products or coproducts of wires.</p>\n<p>Sorry if things are not precise here, just learning.</p>",
+        "id": 199139453,
+        "sender_full_name": "keorn",
+        "timestamp": 1590750255
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"284625\">keorn</span> <a href=\"#narrow/stream/229199-learning.3A-basic.20questions/topic/Assembling.20a.20bimonoidal.20category/near/199139453\">said</a>:</p>\n<blockquote>\n<p>I would like something similar to shortest path/k-shortest paths algorithm, but with support for product and coproduct types. First question is probably how can such problem be framed category theoretically and secondly are there already some fields where similar algorithms have been worked out?</p>\n<p>Thinking about it in wiring diagrams the question is roughly.<br>\nGiven: input wires, output wires, boxes with weight/cost and with ports which accept wires of specific types<br>\nLooking for an arrangement of boxes that gets me from input wires to output wires with the least cost. Boxes can accept products or coproducts of wires.</p>\n<p>Sorry if things are not precise here, just learning.</p>\n</blockquote>\n<p>Well, you can define a functor $F$ to the monoid of natural numbers, that is, the category that has only one object *, and natural numbers as morphisms. Identity is 0, while  composition is addition. This functor  maps every box to its cost, and functorial laws tell you that: </p>\n<ol>\n<li>The image of a morphism will be the sum of the costs of all the boxes;</li>\n<li>Identity boxes have cost 0. </li>\n</ol>\n<p>Then your question becomes \"given objects A, B, find the morphisms A -&gt; B such that $F(A -&gt; B)$ is minimized.\" I don't think saying things like I did can help you in any way practically, but it's probably a \"less messy way\" to formulate what you want</p>",
+        "id": 199142497,
+        "sender_full_name": "Fabrizio Genovese",
+        "timestamp": 1590752529
+    },
+    {
+        "content": "<p>Thanks, makes sense. Now the question is about an algorithm. Seems to me that such problem would be fairly useful in any process optimisation.</p>",
+        "id": 199247582,
+        "sender_full_name": "keorn",
+        "timestamp": 1590830859
+    },
+    {
+        "content": "<p>alexander gray has described a (somewhat) <a href=\"https://www.cs.cmu.edu/~agray/nbody.html\">general solution to generalized n-body problems</a>, one class of which is <a href=\"https://www.cs.cmu.edu/~agray/proximity.html\">proximity search/various nearest neighbor problems.</a> not sure how applicable</p>",
+        "id": 199299925,
+        "sender_full_name": "Pastel Raschke",
+        "timestamp": 1590919983
+    },
+    {
+        "content": "<p>Nice, will read around.<br>\nOf course I would be also interested in a similar problem by just for a monoidal category with products.</p>",
+        "id": 199301544,
+        "sender_full_name": "keorn",
+        "timestamp": 1590923163
+    }
+]

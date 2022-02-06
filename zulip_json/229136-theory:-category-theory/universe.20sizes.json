@@ -1,0 +1,26 @@
+[
+    {
+        "content": "<p>In a different thread:<br>\n<span class=\"user-mention silent\" data-user-id=\"276777\">Mike Shulman</span> <a href=\"#narrow/stream/229136-theory.3A-category.20theory/topic/Unwinding.20slice.2Fcomma.20'categories'/near/250160669\">said</a>:</p>\n<blockquote>\n<p>You're saying that the type of E-categories can be parametrized over three unrelated universes, for the types of objects, morphisms, and equalities respectively, and that the slice/comma construction doesn't act on such E-categories leaving all the universes fixed.  So it could either be an endomorphism of (in Coq notation) <code>ECat@{i j k}</code> with extra constraints <code>k &lt;= j &lt;= i</code>, or it could take input in <code>ECat@{i j k}</code> and yield output in <code>ECat@{max(i,j) max(j,k) k}</code>.</p>\n<p>I suppose I would argue that one should always impose the constraint <code>k &lt;= j &lt;= i</code>.</p>\n</blockquote>\n<p>Hmm, I now have serious doubts about the latter. Let's just consider <code>i</code> and <code>j</code> for objects and homs (locally).</p>\n<ol>\n<li>for 1-object categories, we can take <code>i</code> to be 0, and <code>j</code> can be as large as we want</li>\n<li>we can also have discrete categories, with <code>i</code> as large as one wants, and <code>j</code> can be 0.</li>\n</ol>\n<p>So it appears to me that they really ought to be completely independent from each other.</p>",
+        "id": 250218555,
+        "sender_full_name": "Jacques Carette",
+        "timestamp": 1629553697
+    },
+    {
+        "content": "<p>Well, there's a one-element set in every universe, so 1-object categories can also fit in <code>j &lt;= i</code>.</p>",
+        "id": 250218827,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1629554135
+    },
+    {
+        "content": "<p>If you're allowing yourself to modify the native universe that objects live in by injecting them into something large enough (like, say, <code>j</code>), then yes, of course. That doesn't feel... elegant?</p>",
+        "id": 250219007,
+        "sender_full_name": "Jacques Carette",
+        "timestamp": 1629554395
+    },
+    {
+        "content": "<p>Isn't your unit type universe-polymorphic?</p>",
+        "id": 250244241,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1629590598
+    }
+]

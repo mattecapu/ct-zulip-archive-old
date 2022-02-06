@@ -1,0 +1,230 @@
+[
+    {
+        "content": "<p>how would you determine if two morphisms in a braided monoidal category are equal up to the braided monoidal axioms? I was surprised not to be able to find any algorithm for it. So far I have only been able to show that it is at least as hard as untying knots (<a href=\"https://arxiv.org/abs/2105.04237\">https://arxiv.org/abs/2105.04237</a>). Any ideas?</p>",
+        "id": 238258792,
+        "sender_full_name": "Antonin Delpeuch",
+        "timestamp": 1620715104
+    },
+    {
+        "content": "<p>Hi Antonin, nice work (although I've only looked at it quickly)! But I'm not convinced by the implication on the word problem for tricategories. The reason is that while braided monoidal categories are in a sense equivalent to doubly degenerate tricategories, it is not true that a free braided monoidal category is a free tricategory through the comparison functors. So you can't reduce the word problem for braided monoidal categories to the word problem for tricategories.</p>",
+        "id": 238429608,
+        "sender_full_name": "Amar Hadzihasanovic",
+        "timestamp": 1620802545
+    },
+    {
+        "content": "<p>What you can certainly do is reduce the word problem for braided strict monoidal categories to the one for Gray-categories.</p>",
+        "id": 238429689,
+        "sender_full_name": "Amar Hadzihasanovic",
+        "timestamp": 1620802585
+    },
+    {
+        "content": "<p>I imagine that the one for non-strict monoidal reduces to the one for strict monoidal, so you do have the implication (w.p. for braided monoidal cats) -&gt; (w.p. for Gray-cats).</p>",
+        "id": 238430044,
+        "sender_full_name": "Amar Hadzihasanovic",
+        "timestamp": 1620802812
+    },
+    {
+        "content": "<p>If you look at Cheng-Gurski Theorem 2.1 you'll see that a doubly degenerate tricategory has a lot more \"weak\" structure that's declared to be identites when you turn a braided monoidal category into a tricategory, whence the loss of freeness...</p>",
+        "id": 238430725,
+        "sender_full_name": "Amar Hadzihasanovic",
+        "timestamp": 1620803225
+    },
+    {
+        "content": "<p>Ah interesting! Then there is a subtlety I haven't grasped here. I took Gray-categories and tricategories as equivalent, but I guess I don't understand that equivalence well enough to understand why one word problem in one is not equivalent to a word problem in the other?</p>",
+        "id": 238643638,
+        "sender_full_name": "Antonin Delpeuch",
+        "timestamp": 1620922535
+    },
+    {
+        "content": "<p>Maybe something due to <a href=\"https://arxiv.org/abs/math/0612299\">Bicat is not triequivalent to Gray</a>?</p>",
+        "id": 238643922,
+        "sender_full_name": "David Michael Roberts",
+        "timestamp": 1620922653
+    },
+    {
+        "content": "<p>Amar wrote:</p>\n<blockquote>\n<p>The reason is that while braided monoidal categories are in a sense equivalent to doubly degenerate tricategories, it is not true that a free braided monoidal category is a free tricategory through the comparison functors. So you can't reduce the word problem for braided monoidal categories to the word problem for tricategories.</p>\n</blockquote>",
+        "id": 238653041,
+        "sender_full_name": "John Baez",
+        "timestamp": 1620926924
+    },
+    {
+        "content": "<p>Let's think about this a minute.  Let X be a tricategory given by finitely many generators and relations, and X' its equivalent Gray-category.  Let f and g be two 3-morphisms in X, described in terms of generators.  We're trying to see if they're equal.  We map them via our equivalence to 3-morphisms f' and g' in X'.   f and g will be equal iff f' and g' are equal.  Say we know how to solve the word problem for Gray-categories.  Then we can decide if f' and g' are equal if we have a presentation of X' with finitely many generators and relations, and we know how to express f' and g' in terms of these generators.  </p>\n<p>But how do we get this presentation, and this way of expressing f' and g'?</p>",
+        "id": 238653901,
+        "sender_full_name": "John Baez",
+        "timestamp": 1620927322
+    },
+    {
+        "content": "<p>At the very least it seems there's some work to be done here.</p>",
+        "id": 238653976,
+        "sender_full_name": "John Baez",
+        "timestamp": 1620927358
+    },
+    {
+        "content": "<p><span class=\"user-mention\" data-user-id=\"275920\">@John Baez</span> Yes, I agree. I think the 'standard' semi-strictification of a tricategory, just like the strictification of a monoidal category, will certainly not be finitely generated except in very simple cases (e.g. the strictification of a monoidal category has one generating object for each <em>finite sequence</em> of objects of the original monoidal category).</p>",
+        "id": 238661940,
+        "sender_full_name": "Amar Hadzihasanovic",
+        "timestamp": 1620931141
+    },
+    {
+        "content": "<p>Besides, even if we could make this work (i.e. solve the w.p. for a tricategory by embedding it into a Gray-category and using a solution for the w.p. of the Gray-category), it would only tell us that the word problem for tricategories is <em>not harder</em> than the word problem for Gray-categories (which is <em>at least as hard</em> as the word problem for braided strict monoidal categories). So we still would not have the intended implication.</p>",
+        "id": 238662243,
+        "sender_full_name": "Amar Hadzihasanovic",
+        "timestamp": 1620931308
+    },
+    {
+        "content": "<p>That said, I do think it is likely, given Jamie's and Antonin's result, that one can solve unknotting from the w.p. for tricategories. It's just that it's not a corollary of their result: I'm afraid one may have to rephrase their proofs directly in terms of tricategorical diagrams...</p>",
+        "id": 238662820,
+        "sender_full_name": "Amar Hadzihasanovic",
+        "timestamp": 1620931615
+    },
+    {
+        "content": "<p>Okay, so maybe one needs to handle the word problem for such infinitely generated structures; the generators and relations are certainly <em>recursively enumerable</em>.</p>",
+        "id": 238664262,
+        "sender_full_name": "John Baez",
+        "timestamp": 1620932288
+    },
+    {
+        "content": "<p>Actually it is not clear to me why it makes a difference whether the corresponding tricategory is finitely or countably generated. As long as the structures are freely generated, without any axioms between the generators, then as far as word problems are concerned, why do we care? To define an instance of the word problem you only need to consider the generators that occur in the word problem instance (plus their domains/codomains recursively, but that only adds a finitely many generators).<br>\nFor me the important question is whether the equivalence mapping from Gray categories to tricategories (I think that's the only direction we need, no?) is something that can be computed polynomially on 3-morphisms.</p>",
+        "id": 238666911,
+        "sender_full_name": "Antonin Delpeuch",
+        "timestamp": 1620933449
+    },
+    {
+        "content": "<p>I have to admit that I don't actually have any idea what this mapping looks like in practice, I should have checked before claiming this corollary…</p>",
+        "id": 238667046,
+        "sender_full_name": "Antonin Delpeuch",
+        "timestamp": 1620933508
+    },
+    {
+        "content": "<p>I thought the idea was to convert a problem for tricategories into a simpler problem for Gray categories; if so we'd need the map going that way, right?</p>",
+        "id": 238667473,
+        "sender_full_name": "John Baez",
+        "timestamp": 1620933720
+    },
+    {
+        "content": "<p>Either way it does, we don't need this reduction to be computable in polynomial time is we're just asking about the \"solvability of the word problem\", which is about computability, not polynomial time computability.</p>\n<p>But if we want solvability in polynomial time, then we'd need the reduction to be doable in polynomial time.</p>",
+        "id": 238667612,
+        "sender_full_name": "John Baez",
+        "timestamp": 1620933781
+    },
+    {
+        "content": "<p>If the goal is to say that the w.p. for tricategories is at least as hard as the unknotting problem (which is what we claim), then I believe we only need to be able to convert a braided monoidal morphism (so a 3-cell in a Gray category) to a 3-cell in a tricategory.</p>",
+        "id": 238667649,
+        "sender_full_name": "Antonin Delpeuch",
+        "timestamp": 1620933803
+    },
+    {
+        "content": "<p>I assumed that that conversion was straightforward but maybe it's indeed not, I need to look into it :)</p>",
+        "id": 238667804,
+        "sender_full_name": "Antonin Delpeuch",
+        "timestamp": 1620933884
+    },
+    {
+        "content": "<p>Right.   I was talking about something else: proving that the word problem is solvable for tricategories, by reducing it to the perhaps easier word problem for Gray-categories.</p>",
+        "id": 238667846,
+        "sender_full_name": "John Baez",
+        "timestamp": 1620933907
+    },
+    {
+        "content": "<p>One thing to keep in mind is that a Gray category is not a special case of a tricategory.</p>",
+        "id": 238667919,
+        "sender_full_name": "John Baez",
+        "timestamp": 1620933949
+    },
+    {
+        "content": "<p>ok! I have literally no intuition as to why the w.p. for one might be easier than the other, really.</p>",
+        "id": 238667979,
+        "sender_full_name": "Antonin Delpeuch",
+        "timestamp": 1620933968
+    },
+    {
+        "content": "<p>I don't either, except that the definition of tricategory is a <em>lot</em> longer than the definition of Gray category: there's just a lot more stuff to keep track of.</p>",
+        "id": 238668130,
+        "sender_full_name": "John Baez",
+        "timestamp": 1620934064
+    },
+    {
+        "content": "<p>I think I'll just correct the claim to be about the w.p. of Gray categories rather than tricategories, because that's what I really meant…</p>",
+        "id": 238668739,
+        "sender_full_name": "Antonin Delpeuch",
+        "timestamp": 1620934337
+    },
+    {
+        "content": "<p>I also can't remember the specifics of the Gray strictification of tricategories but, again, I'm afraid it's safe to assume that it won't produce a free Gray-category from a free tricategory. Thinking of the simpler monoidal category strictification, it must contain <em>isomorphisms</em> between the “free” tensor product <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"false\">(</mo><mi>A</mi><mo separator=\"true\">,</mo><mi>B</mi><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">(A,B)</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mopen\">(</span><span class=\"mord mathnormal\">A</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.05017em;\">B</span><span class=\"mclose\">)</span></span></span></span> and the original tensor product <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mo>⊗</mo><mi>B</mi></mrow><annotation encoding=\"application/x-tex\">A \\otimes B</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.76666em;vertical-align:-0.08333em;\"></span><span class=\"mord mathnormal\">A</span><span class=\"mspace\" style=\"margin-right:0.2222222222222222em;\"></span><span class=\"mbin\">⊗</span><span class=\"mspace\" style=\"margin-right:0.2222222222222222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.05017em;\">B</span></span></span></span>, and a free strict monoidal category cannot contain any isomorphisms except the structural ones.</p>",
+        "id": 238673558,
+        "sender_full_name": "Amar Hadzihasanovic",
+        "timestamp": 1620936513
+    },
+    {
+        "content": "<p>Of course it's not impossible that, while not <em>free</em>, the resulting Gray-category still has a decidable word problem; but it's still more work to do.</p>",
+        "id": 238673695,
+        "sender_full_name": "Amar Hadzihasanovic",
+        "timestamp": 1620936591
+    },
+    {
+        "content": "<p>OK! But then again the direction I care about is the reverse one that you have in mind: I have a free Gray category and I want to turn that into a tricategory. Perhaps that has more chances of resulting in a free tricategory?</p>",
+        "id": 238721351,
+        "sender_full_name": "Antonin Delpeuch",
+        "timestamp": 1620970736
+    },
+    {
+        "content": "<p>So, iirc there are two different embeddings of Gray-categories into tricategories: a \"left-handed\" one and a \"right-handed\" one, let's call them <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi>T</mi><mi>L</mi></msub></mrow><annotation encoding=\"application/x-tex\">T_L</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.83333em;vertical-align:-0.15em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.13889em;\">T</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.32833099999999993em;\"><span style=\"top:-2.5500000000000003em;margin-left:-0.13889em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathnormal mtight\">L</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span></span></span></span> and <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi>T</mi><mi>R</mi></msub></mrow><annotation encoding=\"application/x-tex\">T_R</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.83333em;vertical-align:-0.15em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.13889em;\">T</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.32833099999999993em;\"><span style=\"top:-2.5500000000000003em;margin-left:-0.13889em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathnormal mtight\" style=\"margin-right:0.00773em;\">R</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span></span></span></span>. Restricted to doubly degenerate Gray-cats, the ones that correspond to braided strict monoidal categories, they correspond to a choice of whether to interpret a braiding as the \"clockwise\" or \"counterclockwise\" exchange of wires in 3d.</p>",
+        "id": 238744639,
+        "sender_full_name": "Amar Hadzihasanovic",
+        "timestamp": 1620987061
+    },
+    {
+        "content": "<p>Neither <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi>T</mi><mi>L</mi></msub></mrow><annotation encoding=\"application/x-tex\">T_L</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.83333em;vertical-align:-0.15em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.13889em;\">T</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.32833099999999993em;\"><span style=\"top:-2.5500000000000003em;margin-left:-0.13889em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathnormal mtight\">L</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span></span></span></span> nor <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi>T</mi><mi>R</mi></msub></mrow><annotation encoding=\"application/x-tex\">T_R</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.83333em;vertical-align:-0.15em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.13889em;\">T</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.32833099999999993em;\"><span style=\"top:-2.5500000000000003em;margin-left:-0.13889em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathnormal mtight\" style=\"margin-right:0.00773em;\">R</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span></span></span></span> send free Gray-cats to free tricats.</p>",
+        "id": 238744677,
+        "sender_full_name": "Amar Hadzihasanovic",
+        "timestamp": 1620987100
+    },
+    {
+        "content": "<p>Something you <em>can</em> do, I'm pretty sure, is construct both a free tricategory and a free Gray-category (in fact a free braided strict monoidal category) on the same data, i.e. a monoidal signature. Let's call <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi>F</mi><mi>T</mi></msub></mrow><annotation encoding=\"application/x-tex\">F_T</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.83333em;vertical-align:-0.15em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.13889em;\">F</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.32833099999999993em;\"><span style=\"top:-2.5500000000000003em;margin-left:-0.13889em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathnormal mtight\" style=\"margin-right:0.13889em;\">T</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span></span></span></span> and <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi>F</mi><mi>G</mi></msub></mrow><annotation encoding=\"application/x-tex\">F_G</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.83333em;vertical-align:-0.15em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.13889em;\">F</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.32833099999999993em;\"><span style=\"top:-2.5500000000000003em;margin-left:-0.13889em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathnormal mtight\">G</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span></span></span></span> the two functors that do this, defined on an appropriate category of monoidal signatures.</p>",
+        "id": 238744932,
+        "sender_full_name": "Amar Hadzihasanovic",
+        "timestamp": 1620987281
+    },
+    {
+        "content": "<p>A free braided monoidal category is isomorphic to its \"dual\" where braidings and inverse braidings are exchanged, so you will have that <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi>T</mi><mi>L</mi></msub><mo>∘</mo><msub><mi>F</mi><mi>G</mi></msub></mrow><annotation encoding=\"application/x-tex\">T_L \\circ F_G</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.83333em;vertical-align:-0.15em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.13889em;\">T</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.32833099999999993em;\"><span style=\"top:-2.5500000000000003em;margin-left:-0.13889em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathnormal mtight\">L</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span><span class=\"mspace\" style=\"margin-right:0.2222222222222222em;\"></span><span class=\"mbin\">∘</span><span class=\"mspace\" style=\"margin-right:0.2222222222222222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.83333em;vertical-align:-0.15em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.13889em;\">F</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.32833099999999993em;\"><span style=\"top:-2.5500000000000003em;margin-left:-0.13889em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathnormal mtight\">G</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span></span></span></span> and <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi>T</mi><mi>R</mi></msub><mo>∘</mo><msub><mi>F</mi><mi>G</mi></msub></mrow><annotation encoding=\"application/x-tex\">T_R \\circ F_G</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.83333em;vertical-align:-0.15em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.13889em;\">T</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.32833099999999993em;\"><span style=\"top:-2.5500000000000003em;margin-left:-0.13889em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathnormal mtight\" style=\"margin-right:0.00773em;\">R</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span><span class=\"mspace\" style=\"margin-right:0.2222222222222222em;\"></span><span class=\"mbin\">∘</span><span class=\"mspace\" style=\"margin-right:0.2222222222222222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.83333em;vertical-align:-0.15em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.13889em;\">F</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.32833099999999993em;\"><span style=\"top:-2.5500000000000003em;margin-left:-0.13889em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathnormal mtight\">G</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span></span></span></span> are naturally isomorphic functors.</p>",
+        "id": 238745124,
+        "sender_full_name": "Amar Hadzihasanovic",
+        "timestamp": 1620987409
+    },
+    {
+        "content": "<p>Now I think it's plausible that you can quotient the free tricategory to get the free Gray-category (as embedded through one of <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi>T</mi><mi>R</mi></msub></mrow><annotation encoding=\"application/x-tex\">T_R</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.83333em;vertical-align:-0.15em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.13889em;\">T</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.32833099999999993em;\"><span style=\"top:-2.5500000000000003em;margin-left:-0.13889em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathnormal mtight\" style=\"margin-right:0.00773em;\">R</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span></span></span></span> or <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi>T</mi><mi>L</mi></msub></mrow><annotation encoding=\"application/x-tex\">T_L</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.83333em;vertical-align:-0.15em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.13889em;\">T</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.32833099999999993em;\"><span style=\"top:-2.5500000000000003em;margin-left:-0.13889em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathnormal mtight\">L</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span></span></span></span>) on the same signature, and that this quotient should be a weak equivalence.</p>",
+        "id": 238745307,
+        "sender_full_name": "Amar Hadzihasanovic",
+        "timestamp": 1620987546
+    },
+    {
+        "content": "<p>So let's assume that the best possible thing is true, that is, we have a natural transformation <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi>F</mi><mi>T</mi></msub><mo>⇒</mo><msub><mi>T</mi><mi>L</mi></msub><mo>∘</mo><msub><mi>F</mi><mi>G</mi></msub></mrow><annotation encoding=\"application/x-tex\">F_T \\Rightarrow T_L \\circ F_G</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.83333em;vertical-align:-0.15em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.13889em;\">F</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.32833099999999993em;\"><span style=\"top:-2.5500000000000003em;margin-left:-0.13889em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathnormal mtight\" style=\"margin-right:0.13889em;\">T</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">⇒</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.83333em;vertical-align:-0.15em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.13889em;\">T</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.32833099999999993em;\"><span style=\"top:-2.5500000000000003em;margin-left:-0.13889em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathnormal mtight\">L</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span><span class=\"mspace\" style=\"margin-right:0.2222222222222222em;\"></span><span class=\"mbin\">∘</span><span class=\"mspace\" style=\"margin-right:0.2222222222222222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.83333em;vertical-align:-0.15em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.13889em;\">F</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.32833099999999993em;\"><span style=\"top:-2.5500000000000003em;margin-left:-0.13889em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathnormal mtight\">G</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span></span></span></span> whose components are all weak equivalences.</p>",
+        "id": 238745500,
+        "sender_full_name": "Amar Hadzihasanovic",
+        "timestamp": 1620987658
+    },
+    {
+        "content": "<p>This is still going in the wrong direction for what your goal is. There's no way there are functors going the other way.</p>",
+        "id": 238745752,
+        "sender_full_name": "Amar Hadzihasanovic",
+        "timestamp": 1620987832
+    },
+    {
+        "content": "<p>No matter how you put it, I'm afraid Gray-categories have \"more equations\" than tricategories so their word problem is going to be at least as hard as the one for tricategories.</p>",
+        "id": 238745928,
+        "sender_full_name": "Amar Hadzihasanovic",
+        "timestamp": 1620987956
+    },
+    {
+        "content": "<p>Nevertheless I think there is a decent chance that the encoding of the unknot problem into the w.p. for braided strict monoidal categories can be tweaked to an encoding into the w.p. for tricategories. I'm pretty confident that that is the best course of action, even though it is more work.</p>",
+        "id": 238746321,
+        "sender_full_name": "Amar Hadzihasanovic",
+        "timestamp": 1620988190
+    },
+    {
+        "content": "<p>By the way, the adjunctions between Gray-categories, braided strict monoidal categories, and coloured probs (which include in particular free braided strict monoidal cats) and their main properties are spelled out in Section 2 of my most recent paper. I don't discuss tricategories though.</p>",
+        "id": 238748203,
+        "sender_full_name": "Amar Hadzihasanovic",
+        "timestamp": 1620989459
+    }
+]

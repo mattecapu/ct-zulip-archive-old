@@ -1,0 +1,164 @@
+[
+    {
+        "content": "<p>Is there a preexisting notion for morphisms between more than two objects? I know you can do (marginally) fancy things in (marginally) fancy categories using products and adjunctions and whatnot to juggle various parts of your domain and codomain objects, but without bringing that into the mix — without “encoding” these generalized morphisms into a more standard category — does the concept stand on its own?</p>",
+        "id": 191569378,
+        "sender_full_name": "Jonathan Castello",
+        "timestamp": 1585029760
+    },
+    {
+        "content": "<p>I’m sure there are other reasons for morphisms between two objects, but the most obvious one to me is that we write in a linear format rather than a graphical one, so we only have the “left” site and the “right” site of a morphism to compose at. I’m wondering if that’s strictly necessary.</p>",
+        "id": 191569457,
+        "sender_full_name": "Jonathan Castello",
+        "timestamp": 1585029850
+    },
+    {
+        "content": "<p>Certainly one notational problem is that the number of open sites grows as you compose such generalized widgets — two widgets with three sites may compose naively to make a widget with four.</p>",
+        "id": 191569490,
+        "sender_full_name": "Jonathan Castello",
+        "timestamp": 1585029922
+    },
+    {
+        "content": "<p>(EDIT: fixed, had to go to the desktop app.) <del>ARGH is there some way to fix my auto”correct” in the topic title from “morphine” to “morphism”?</del></p>",
+        "id": 191569543,
+        "sender_full_name": "Jonathan Castello",
+        "timestamp": 1585029973
+    },
+    {
+        "content": "<p>So are you thinking like graphs → hypergraphs with edges → hyperedges, so categories → \"hypercategories\"(?) with morphisms → hypermorphisms?</p>",
+        "id": 191569875,
+        "sender_full_name": "Vinay Madhusudanan",
+        "timestamp": 1585030462
+    },
+    {
+        "content": "<p>If the \"hypermorphisms\" are undirected, you may be looking for an operad or a cylic operad. If they are directed, maybe a polycategory.</p>",
+        "id": 191570024,
+        "sender_full_name": "Evan Patterson",
+        "timestamp": 1585030664
+    },
+    {
+        "content": "<p>Hmm — unclear whether these would be directed. There’s some sense of orientedness, so that only dual sites can compose, but I’m not sure I’d go so far as to call that directedness.</p>",
+        "id": 191570410,
+        "sender_full_name": "Jonathan Castello",
+        "timestamp": 1585031258
+    },
+    {
+        "content": "<p>Operads seem to have n-ary composition operators, but I still want binary composition between two “hypermorphisms”.</p>",
+        "id": 191570459,
+        "sender_full_name": "Jonathan Castello",
+        "timestamp": 1585031301
+    },
+    {
+        "content": "<p>If I have two “hypermorphisms” with composition sites “left”, “right”, and “center”, where composition is defined between matching left/right sites (as normal) and between matching center sites, I want to be able to compose them on any pair of matching sites.</p>\n<p>(You end up with a four-limbed hypermorphism, and it isn’t clear how to define which pairs of sites compose with which others in a self-consistent way... can any left site compose with any right site? Feels vaguely like cobordisms.)</p>",
+        "id": 191570557,
+        "sender_full_name": "Jonathan Castello",
+        "timestamp": 1585031480
+    },
+    {
+        "content": "<p>Operads can be defined in two equivalent ways. The \"full\" style is what you reference. I believe the \"partial\" style is what you're after.</p>",
+        "id": 191570727,
+        "sender_full_name": "Evan Patterson",
+        "timestamp": 1585031679
+    },
+    {
+        "content": "<p>See Def 11 here: <a href=\"https://arxiv.org/abs/math/0601129\" target=\"_blank\" title=\"https://arxiv.org/abs/math/0601129\">https://arxiv.org/abs/math/0601129</a></p>",
+        "id": 191570741,
+        "sender_full_name": "Evan Patterson",
+        "timestamp": 1585031690
+    },
+    {
+        "content": "<p>If you want to be able to compose along any site, you need a cyclic operad. See Sec 6 of that paper.</p>",
+        "id": 191570775,
+        "sender_full_name": "Evan Patterson",
+        "timestamp": 1585031761
+    },
+    {
+        "content": "<p>I’ll give that a read; thanks!</p>\n<p>Also, props to the authors for using the word “autochthonous”.</p>\n<p>...Haha, get it? PROPs! <span aria-label=\"joy\" class=\"emoji emoji-1f602\" role=\"img\" title=\"joy\">:joy:</span><span aria-label=\"sob\" class=\"emoji emoji-1f62d\" role=\"img\" title=\"sob\">:sob:</span></p>",
+        "id": 191570940,
+        "sender_full_name": "Jonathan Castello",
+        "timestamp": 1585031979
+    },
+    {
+        "content": "<p>No problem. Other things to look at, if you're not familiar with them, are Spivak on undirected wiring diagrams (<a href=\"https://arxiv.org/abs/1305.0297\" target=\"_blank\" title=\"https://arxiv.org/abs/1305.0297\">https://arxiv.org/abs/1305.0297</a>) and Fong and Spivak on graphical regular logic (<a href=\"https://golem.ph.utexas.edu/category/2019/08/graphical_regular_logic.html\" target=\"_blank\" title=\"https://golem.ph.utexas.edu/category/2019/08/graphical_regular_logic.html\">https://golem.ph.utexas.edu/category/2019/08/graphical_regular_logic.html</a>)</p>",
+        "id": 191571136,
+        "sender_full_name": "Evan Patterson",
+        "timestamp": 1585032262
+    },
+    {
+        "content": "<p>Perhaps if we could think of a natural way in which these hypermorphisms arise, then it'd be clear how we would want them to compose, etc.</p>",
+        "id": 191571439,
+        "sender_full_name": "Vinay Madhusudanan",
+        "timestamp": 1585032660
+    },
+    {
+        "content": "<p>A typical example of hypergraph is collaboration networks, where using a graph (in the obvious way) would only tell us which pairs of people have collaborated, but using a hypergraph we can specify which people collaborated on the same project (making them all part of a single hyperedge — so each project corresponds to one hyperedge)</p>",
+        "id": 191571562,
+        "sender_full_name": "Vinay Madhusudanan",
+        "timestamp": 1585032834
+    },
+    {
+        "content": "<p>I'm thinking rather abstractly in terms of software components -- not just functions, but other computational abstractions. I was recently building up a recognizer for JSON documents matching a particular schema, and I was designing the composable \"sub-parsers\" by thinking about the different ways in which I'd want to fit them together (with other parsers, or with other things like the input document itself).</p>",
+        "id": 191571631,
+        "sender_full_name": "Jonathan Castello",
+        "timestamp": 1585032901
+    },
+    {
+        "content": "<p>I'm somewhat familiar with hypergraphs -- specifically \"partitive hypergraphs\" (or \"partitive set families\"). I don't think they're what I'm after, although I could be convinced.</p>",
+        "id": 191571659,
+        "sender_full_name": "Jonathan Castello",
+        "timestamp": 1585032932
+    },
+    {
+        "content": "<p>I somewhat suspect that the \"right\" way to model what I'm thinking of is a category with tensor products and a suitable means of moving object components between the domain and the codomain to isolate the site to compose on. (Like how <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mo>→</mo><msup><mi>C</mi><mi>B</mi></msup></mrow><annotation encoding=\"application/x-tex\">A \\to C^B</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathdefault\">A</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">→</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.8413309999999999em;vertical-align:0em;\"></span><span class=\"mord\"><span class=\"mord mathdefault\" style=\"margin-right:0.07153em;\">C</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.8413309999999999em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathdefault mtight\" style=\"margin-right:0.05017em;\">B</span></span></span></span></span></span></span></span></span></span></span> is isomorphic(*) to <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mo>⊗</mo><mi>B</mi><mo>→</mo><mi>C</mi></mrow><annotation encoding=\"application/x-tex\">A \\otimes B \\to C</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.76666em;vertical-align:-0.08333em;\"></span><span class=\"mord mathdefault\">A</span><span class=\"mspace\" style=\"margin-right:0.2222222222222222em;\"></span><span class=\"mbin\">⊗</span><span class=\"mspace\" style=\"margin-right:0.2222222222222222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathdefault\" style=\"margin-right:0.05017em;\">B</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">→</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathdefault\" style=\"margin-right:0.07153em;\">C</span></span></span></span> in some categories -- you can isolate the component you want to compose on.)</p>\n<p>I'm just trying to see how far I can push things without resorting to an \"encoding\" of this kind.</p>\n<p>(*) I am <em>probably</em> using the wrong word here, because isomorphisms are morphisms and I'm properly referring to hom-sets. I think it's \"adjoint\" but I don't know enough about adjoints <span aria-label=\"sweat smile\" class=\"emoji emoji-1f605\" role=\"img\" title=\"sweat smile\">:sweat_smile:</span></p>",
+        "id": 191572001,
+        "sender_full_name": "Jonathan Castello",
+        "timestamp": 1585033375
+    },
+    {
+        "content": "<p>Yeah. it's adjoint associativity or tensor-hom adjunction. Those hom sets are naturally isomorphic</p>",
+        "id": 191572268,
+        "sender_full_name": "Vinay Madhusudanan",
+        "timestamp": 1585033656
+    },
+    {
+        "content": "<p>Spivak's paper on undirected wiring diagrams is really interesting. So far, it seems like it's unimportant that there's a single \"outer interface\" and multiple \"inner interfaces\" for the diagrams -- you could imagine inverting the outer circle so that you have a graph of holes and cables connecting two or more holes. (Heh, almost a hypergraph, except that cables connect to holes at indexed points on the hole.)</p>",
+        "id": 191573804,
+        "sender_full_name": "Jonathan Castello",
+        "timestamp": 1585035248
+    },
+    {
+        "content": "<p>If one is interested in \"morphisms between more than 2 objects\", one should certainly learn about multicategories, polycategories and cyclic operads.  They're all explained in the nLab, I think.</p>",
+        "id": 191640557,
+        "sender_full_name": "John Baez",
+        "timestamp": 1585068830
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"275967\">Vinay Madhusudanan</span> <a href=\"#narrow/stream/229136-category-theory/topic/Morphism.20between.20more.20than.20two.20objects.3F/near/191569875\" title=\"#narrow/stream/229136-category-theory/topic/Morphism.20between.20more.20than.20two.20objects.3F/near/191569875\">said</a>:</p>\n<blockquote>\n<p>So are you thinking like graphs → hypergraphs with edges → hyperedges, so categories → \"hypercategories\"(?) with morphisms → hypermorphisms?</p>\n</blockquote>\n<p>This intuition can be formalised, and then the missing notion of 'hypercategories' is that of properads. There is a separate discussion thread on <code>properads</code> (although the discussion there eventually went in other directions).</p>",
+        "id": 192119547,
+        "sender_full_name": "Joachim Kock",
+        "timestamp": 1585396461
+    },
+    {
+        "content": "<p>There is one subtle point, which may be worth a remark: when seeing categories as directed graphs with extra structure, the objects are nodes and the arrows are edges. But when we go to more complicated structures such as operads (multicategories) and various generalisations, the objects are the edges and the operations (multi-arrows) are the nodes!<br>\nThis discrepancy is solved when we arrive at (directed) hypergraphs and properads. The point is simply that the notion of hypergraph is self-dual, in the sense that one can interchange the roles played by nodes and hyperedges and get a hypergraph again. This means that the category of ordinary directed graphs admits <em>two</em> embeddings into the category of directed hypergraphs. The most obvious one simply interprets edges as hyperedges. The second embedding sends edges to (1,1)-nodes (and sends nodes to hyperedges). From the viewpoint of categories and properads, this second embedding is more relevant: there is a notion of free properad on a directed hypergraph, defining a free-properad monad on the category of directed hypergraphs. This monad restricts along the <em>second</em> embedding to give precisely the familiar free-category monad on directed graphs.<br>\n(Details can be found in my paper <em>Graphs, hypergraphs, and properads</em>.)</p>",
+        "id": 192120003,
+        "sender_full_name": "Joachim Kock",
+        "timestamp": 1585397186
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276192\">Jonathan Castello</span> <a href=\"#narrow/stream/229136-category-theory/topic/Morphism.20between.20more.20than.20two.20objects.3F/near/191570410\" title=\"#narrow/stream/229136-category-theory/topic/Morphism.20between.20more.20than.20two.20objects.3F/near/191570410\">said</a>:</p>\n<blockquote>\n<p>Hmm — unclear whether these would be directed. There’s some sense of orientedness, so that only dual sites can compose, but I’m not sure I’d go so far as to call that directedness.</p>\n</blockquote>\n<p>Yes, when giving up the notion of directedness, the notion of duality -- involutive structure -- is a very good substitute, in order to keep some control on how building blocks can be put together.</p>",
+        "id": 192120388,
+        "sender_full_name": "Joachim Kock",
+        "timestamp": 1585397805
+    },
+    {
+        "content": "<p>Also go check out <a class=\"stream\" data-stream-id=\"229199\" href=\"/#narrow/stream/229199-basic-questions\">#basic questions</a>&gt;properads</p>",
+        "id": 192121347,
+        "sender_full_name": "Jonathan Beardsley",
+        "timestamp": 1585399401
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276625\">Joachim Kock</span> <a href=\"#narrow/stream/229136-category-theory/topic/Morphism.20between.20more.20than.20two.20objects.3F/near/192120388\" title=\"#narrow/stream/229136-category-theory/topic/Morphism.20between.20more.20than.20two.20objects.3F/near/192120388\">said</a>:</p>\n<blockquote>\n<p>Yes, when giving up the notion of directedness, the notion of duality -- involutive structure -- is a very good substitute, in order to keep some control on how building blocks can be put together.</p>\n</blockquote>\n<p>Sorry, I think that was not a very helpful remark. Let me try to explain it with an example. To any tree T there is associated a free operad: the colours are the edges, and the operations are the T-trees. A T-tree is a morphism from any tree to T. A morphism takes nodes to nodes and edges to edges, respecting all incidences and arities of the nodes. One quickly sees that T-trees are in fact just subtrees in T: because of the direction inherent in the notion of rooted trees, one cannot run backwards. This means that free operads on trees are nice finite objects; they play a crucial role in the theory of operads: for example one can characterise operads a sheaves on the category of (free operads on) trees.</p>\n<p>Suppose now we try to do the same thing for unrooted (hence undirected) trees and (coloured) cyclic operads. The following annoying phenomenon now occurs: T-trees are no longer just subtrees, and are not necessarily finite. As an example, take T to be the 2-corolla, that is, the tree with one vertex and two open-ended edges attached to it. Call these edges i and j. Now a possible T-tree is any linear tree L. This admits a tree morphism to T by mapping the edges of L to i and j alternatingly. The lack of direction (or the lack of distinction between in and out), allows us to run around in T as long as we want. In particular, the free cyclic operad on T is not finite.</p>\n<p>This problem is fixed if we change the whole set-up and demand the set of colours of cyclic operads to be involutive sets, so that each colour has a dual colour. This is very natural also for undirected graphs and trees:</p>\n<p>Define an undirected graph or tree to be a configuration consisting of: a set V of vertices, a set-with-a-fixpoint-free-involution A of arcs, and an incidence relation between them A &lt;- M -&gt; V (and some axioms depending on what you exactly want to model). The upshot is that each undirected edge is encoded by two arcs interchanged by the involution, say a &lt;-&gt; a'. The way an edge connects two vertices v and w is given by v being incident to a and w being incident to a'. Maybe all this looks a bit weird at first sight, but soon it will look quite natural.</p>\n<p>Now let us come back to the 2-corolla T: it has one vertex v, and four arcs i, i', j, j'; the involution is indicated with primes. The arcs i' and j are incident to v. The arcs i and j' are the <em>ports</em>, now explicitly part of the data. Now the involutions prevent us from running back and forth like in the naive set-up. (So see this, try the linear tree L with two vertices v and w, arcs i, i', j, j', k, k', and the following incidences: v is incident to i' and j, while w is incident to j' and k. (This means that the whole tree L has two ports, i and k'.) Since a map of trees must respect the incidence as well as the involution, it is clear that L cannot map to T. In the involutive set-up, the notion of free cyclic operad on a unrooted trees works as desired, and there is again a nerve theorem characterising cyclic operads as sheaves.</p>\n<p>It should be noted that you can still have cyclic operads with ordinary sets of colours: just take involutive sets with trivial involution. The fixpoint-free condition is mostly important to get the combinatorics right.</p>",
+        "id": 192124582,
+        "sender_full_name": "Joachim Kock",
+        "timestamp": 1585403922
+    }
+]

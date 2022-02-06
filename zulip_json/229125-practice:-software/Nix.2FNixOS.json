@@ -1,0 +1,98 @@
+[
+    {
+        "content": "<p>I know there's a big overlap between the Haskell and category theory communities, and a big overlap between the Haskell and Nix/NixOS communities, and I'm kind of curious if there is an overlap between the category theory and Nix/NixOS communities!</p>\n<p>For those who have not heard of Nix, it is a purely functional package manager that enforces reproducability  of software builds: <a href=\"https://nixos.org\">https://nixos.org</a>. Basically, it completely solves the \"well it works on <em>my</em> machine\" problem: if you have told nix how to build your software, it can build your software anywhere. NixOS is an operating system built around the nix package manager.</p>\n<p>There may or may not be any interesting category theory problems in Nix, but from an aesthetic standpoint, it might be attractive to a lot of category theory folks; and I'd love to say hi to anyone else who uses it!</p>",
+        "id": 230121880,
+        "sender_full_name": "Owen Lynch",
+        "timestamp": 1615596826
+    },
+    {
+        "content": "<p>Hi Owen, I'm a regular contributor to nixpkgs. Good to see some love for nixos here!</p>",
+        "id": 230155170,
+        "sender_full_name": "Nick Hu",
+        "timestamp": 1615633223
+    },
+    {
+        "content": "<p>I tried to install NixOS maybe a week ago, it failed for a reason I can't remember and I gave up. But I'm still super interested so I'll give it another spin soon. My main concern is the libraries ecosystem. I won't be able to switch completely until I'm sure there's a good Nix/NixOS replacement for everything I do with apt/Ubuntu.</p>",
+        "id": 230220066,
+        "sender_full_name": "Javier Prieto",
+        "timestamp": 1615706680
+    },
+    {
+        "content": "<p>I run my laptop on NixOS <span aria-label=\"grinning face with smiling eyes\" class=\"emoji emoji-1f601\" role=\"img\" title=\"grinning face with smiling eyes\">:grinning_face_with_smiling_eyes:</span> I followed this guide if it's any help to you <span class=\"user-mention\" data-user-id=\"276060\">@Javier Prieto</span> <br>\n<a href=\"https://github.com/qfpl/blog/blob/master/content/posts/installing-nixos.md\">https://github.com/qfpl/blog/blob/master/content/posts/installing-nixos.md</a></p>",
+        "id": 230220788,
+        "sender_full_name": "Fintan Halpenny",
+        "timestamp": 1615707577
+    },
+    {
+        "content": "<p>I still mostly cargo cult Nix but it's something I'd like to improve on down the line</p>",
+        "id": 230220840,
+        "sender_full_name": "Fintan Halpenny",
+        "timestamp": 1615707608
+    },
+    {
+        "content": "<p>Awesome, thanks! fwiw my issue probably had more to do with the fact that I was trying to install it on virtual box and my laptop RAM couldn't handle it</p>",
+        "id": 230220914,
+        "sender_full_name": "Javier Prieto",
+        "timestamp": 1615707705
+    },
+    {
+        "content": "<p>There is a virtual box appliance available to download instead of an ISO on <a href=\"http://nixos.org\">nixos.org</a>, I would recommend that because there are some gotchas wrt virtualbox</p>",
+        "id": 230315029,
+        "sender_full_name": "Nick Hu",
+        "timestamp": 1615800208
+    },
+    {
+        "content": "<p>What libraries in particular are you concerned about? The coverage of packaged software is very comprehensive these days, which was less true say 5 years ago or so (where you might encounter old blog posts about nix)</p>",
+        "id": 230315162,
+        "sender_full_name": "Nick Hu",
+        "timestamp": 1615800271
+    },
+    {
+        "content": "<blockquote>\n<p>What libraries in particular are you concerned about?</p>\n</blockquote>\n<p>Well, that's the problem with unknown unknowns. I won't miss them until it's too late.</p>",
+        "id": 230326070,
+        "sender_full_name": "Javier Prieto",
+        "timestamp": 1615806076
+    },
+    {
+        "content": "<p>Maybe if you gave me a particular ecosystem you're interested in I can give more specific guidance? For instance, every Haskell library on Hackage is automatically packaged effectively</p>",
+        "id": 230326512,
+        "sender_full_name": "Nick Hu",
+        "timestamp": 1615806302
+    },
+    {
+        "content": "<p>Let's see... Other than haskell:</p>\n<ul>\n<li>I use VSCode, git and a zsh shell for ~everything</li>\n<li>Python stuff: pip, anaconda</li>\n<li>JS stuff: node and friends</li>\n<li>docker and docker-compose</li>\n<li>GUI apps I'd like to keep: anki, calibre, firefox/brave, vcv rack, zotero, zulip</li>\n</ul>",
+        "id": 230328707,
+        "sender_full_name": "Javier Prieto",
+        "timestamp": 1615807386
+    },
+    {
+        "content": "<p>I'm fairly sure all this stuff is packaged (I had to check calibre and vcv-rack because I've never heard of them, but they're there). I don't know how easily the middle three can be used; you sometimes find that Nix doesn't take kindly to other package managers, but sometimes it does.</p>",
+        "id": 230337043,
+        "sender_full_name": "James Wood",
+        "timestamp": 1615811929
+    },
+    {
+        "content": "<p>There actually is anaconda support for Nix! The way it works is through this thing called a \"FHS\", which basically chroots into a more-standard-looking directory setup so that non-nix programs can find their dependencies. I use conda a lot for python stuff, because there are some (not a lot) of python libraries that are not included in NixOS</p>",
+        "id": 230433320,
+        "sender_full_name": "Owen Lynch",
+        "timestamp": 1615848346
+    },
+    {
+        "content": "<p>I just majorly refactored my julia setup to use a FHS environment along with conda support, so basically all of my \"scientific software\" is installed in a non-nixy way, but it plays nicely with the rest of my system which is very nix-y!</p>",
+        "id": 230433476,
+        "sender_full_name": "Owen Lynch",
+        "timestamp": 1615848429
+    },
+    {
+        "content": "<p><span class=\"user-mention\" data-user-id=\"276060\">@Javier Prieto</span> , if you use VSCode, then you always have the option of remoting into a docker container if you are struggling with installing something on nix, which has saved me a couple times!</p>",
+        "id": 230433634,
+        "sender_full_name": "Owen Lynch",
+        "timestamp": 1615848533
+    },
+    {
+        "content": "<p>That's always an option, yeah</p>",
+        "id": 230477568,
+        "sender_full_name": "Javier Prieto",
+        "timestamp": 1615884315
+    }
+]

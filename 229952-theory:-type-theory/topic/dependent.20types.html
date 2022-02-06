@@ -1,0 +1,494 @@
+---
+layout: archive
+title: Zulip Chat Archive
+permalink: /stream/229952-theory:-type-theory/topic/dependent.20types.html
+---
+
+<h2>Stream: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229952-theory:-type-theory/index.html">theory: type theory</a></h2>
+<h3>Topic: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229952-theory:-type-theory/topic/dependent.20types.html">dependent types</a></h3>
+
+<hr>
+
+<base href="https://categorytheory.zulipchat.com/">
+
+<head><link href="https://mattecapu.github.io/ct-zulip-archive/style.css" rel="stylesheet"></head>
+
+{% raw %}
+
+<a name="192925154"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229952-theory%3A%20type%20theory/topic/dependent%20types/near/192925154" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> sarahzrf <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229952-theory:-type-theory/topic/dependent.20types.html#192925154">(Apr 04 2020 at 20:17)</a>:</h4>
+<p><span class="user-mention" data-user-id="275901">@Jules Hedges</span> i'm gonna reply to this here <a href="https://twitter.com/_julesh_/status/1246528993903497222" title="https://twitter.com/_julesh_/status/1246528993903497222">https://twitter.com/_julesh_/status/1246528993903497222</a></p>
+<div class="inline-preview-twitter"><div class="twitter-tweet"><a href="https://twitter.com/_julesh_/status/1246528993903497222"><img class="twitter-avatar" src="https://pbs.twimg.com/profile_images/972424350736486401/RyVTQIgf_normal.jpg"></a><p><a href="https://twitter.com/sarah_zrf" title="https://twitter.com/sarah_zrf">@sarah_zrf</a> A bit... at least I read a bunch of Jacobs' book and I'm generally intimidated and confused by the whole thing, but I know at least some of the basics</p><span>- julesh (@_julesh_)</span></div></div>
+
+
+
+<a name="192925375"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229952-theory%3A%20type%20theory/topic/dependent%20types/near/192925375" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> sarahzrf <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229952-theory:-type-theory/topic/dependent.20types.html#192925375">(Apr 04 2020 at 20:23)</a>:</h4>
+<p>basically the idea is like</p>
+
+
+
+<a name="192925441"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229952-theory%3A%20type%20theory/topic/dependent%20types/near/192925441" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> sarahzrf <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229952-theory:-type-theory/topic/dependent.20types.html#192925441">(Apr 04 2020 at 20:25)</a>:</h4>
+<p>if you're interpreting your type theory in a category <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="script">C</mi></mrow><annotation encoding="application/x-tex">\mathcal{C}</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord"><span class="mord mathcal" style="margin-right:0.05834em;">C</span></span></span></span></span>, and you have a typing judgment <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>⊢</mo><mi>A</mi><mtext> </mtext><mrow><mi mathvariant="sans-serif">t</mi><mi mathvariant="sans-serif">y</mi><mi mathvariant="sans-serif">p</mi><mi mathvariant="sans-serif">e</mi></mrow></mrow><annotation encoding="application/x-tex">\vdash A\ \mathsf{type}</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.69444em;vertical-align:0em;"></span><span class="mrel">⊢</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.8777699999999999em;vertical-align:-0.19444em;"></span><span class="mord mathdefault">A</span><span class="mspace"> </span><span class="mord"><span class="mord mathsf">t</span><span class="mord mathsf" style="margin-right:0.01389em;">y</span><span class="mord mathsf">p</span><span class="mord mathsf">e</span></span></span></span></span>, then you should of course have an object <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo lspace="0em" mathvariant="normal" rspace="0em">⟦</mo><mi>A</mi><mo lspace="0em" mathvariant="normal" rspace="0em">⟧</mo><mo>∈</mo><mi mathvariant="script">C</mi></mrow><annotation encoding="application/x-tex">\llbracket A \rrbracket \in \mathcal{C}</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen"><span class="mopen">[</span><span class="mspace" style="margin-right:-0.17777777777777778em;"></span><span class="mopen">[</span></span><span class="mord mathdefault">A</span><span class="mclose"><span class="mclose">]</span><span class="mspace" style="margin-right:-0.17777777777777778em;"></span><span class="mclose">]</span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">∈</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord"><span class="mord mathcal" style="margin-right:0.05834em;">C</span></span></span></span></span> to act as its semantics</p>
+
+
+
+<a name="192925515"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229952-theory%3A%20type%20theory/topic/dependent%20types/near/192925515" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> sarahzrf <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229952-theory:-type-theory/topic/dependent.20types.html#192925515">(Apr 04 2020 at 20:27)</a>:</h4>
+<p>but say you have a judgment <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>:</mo><mi>A</mi><mo>⊢</mo><mi>B</mi><mtext> </mtext><mrow><mi mathvariant="sans-serif">t</mi><mi mathvariant="sans-serif">y</mi><mi mathvariant="sans-serif">p</mi><mi mathvariant="sans-serif">e</mi></mrow></mrow><annotation encoding="application/x-tex">x : A \vdash B\ \mathsf{type}</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault">x</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">:</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.69444em;vertical-align:0em;"></span><span class="mord mathdefault">A</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">⊢</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.8777699999999999em;vertical-align:-0.19444em;"></span><span class="mord mathdefault" style="margin-right:0.05017em;">B</span><span class="mspace"> </span><span class="mord"><span class="mord mathsf">t</span><span class="mord mathsf" style="margin-right:0.01389em;">y</span><span class="mord mathsf">p</span><span class="mord mathsf">e</span></span></span></span></span>, and your language is dependently typed, so that <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi></mrow><annotation encoding="application/x-tex">x</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault">x</span></span></span></span> may well appear free in <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>B</mi></mrow><annotation encoding="application/x-tex">B</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.05017em;">B</span></span></span></span>—we don't just want an object of <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="script">C</mi></mrow><annotation encoding="application/x-tex">\mathcal{C}</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord"><span class="mord mathcal" style="margin-right:0.05834em;">C</span></span></span></span></span></p>
+
+
+
+<a name="192925535"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229952-theory%3A%20type%20theory/topic/dependent%20types/near/192925535" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> sarahzrf <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229952-theory:-type-theory/topic/dependent.20types.html#192925535">(Apr 04 2020 at 20:27)</a>:</h4>
+<p>rather, the semantics of <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>B</mi></mrow><annotation encoding="application/x-tex">B</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.05017em;">B</span></span></span></span> should be a family of objects of <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="script">C</mi></mrow><annotation encoding="application/x-tex">\mathcal{C}</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord"><span class="mord mathcal" style="margin-right:0.05834em;">C</span></span></span></span></span>, <em>parameterized by</em> <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo lspace="0em" mathvariant="normal" rspace="0em">⟦</mo><mi>A</mi><mo lspace="0em" mathvariant="normal" rspace="0em">⟧</mo></mrow><annotation encoding="application/x-tex">\llbracket A \rrbracket</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen"><span class="mopen">[</span><span class="mspace" style="margin-right:-0.17777777777777778em;"></span><span class="mopen">[</span></span><span class="mord mathdefault">A</span><span class="mclose"><span class="mclose">]</span><span class="mspace" style="margin-right:-0.17777777777777778em;"></span><span class="mclose">]</span></span></span></span></span></p>
+
+
+
+<a name="192925540"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229952-theory%3A%20type%20theory/topic/dependent%20types/near/192925540" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> sarahzrf <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229952-theory:-type-theory/topic/dependent.20types.html#192925540">(Apr 04 2020 at 20:27)</a>:</h4>
+<p>that's an object of the slice category <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="script">C</mi><mi mathvariant="normal">/</mi><mo lspace="0em" mathvariant="normal" rspace="0em">⟦</mo><mi>A</mi><mo lspace="0em" mathvariant="normal" rspace="0em">⟧</mo></mrow><annotation encoding="application/x-tex">\mathcal{C} / \llbracket A \rrbracket</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord"><span class="mord mathcal" style="margin-right:0.05834em;">C</span></span><span class="mord">/</span><span class="mopen"><span class="mopen">[</span><span class="mspace" style="margin-right:-0.17777777777777778em;"></span><span class="mopen">[</span></span><span class="mord mathdefault">A</span><span class="mclose"><span class="mclose">]</span><span class="mspace" style="margin-right:-0.17777777777777778em;"></span><span class="mclose">]</span></span></span></span></span>!</p>
+
+
+
+<a name="192925693"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229952-theory%3A%20type%20theory/topic/dependent%20types/near/192925693" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Stelios Tsampas <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229952-theory:-type-theory/topic/dependent.20types.html#192925693">(Apr 04 2020 at 20:30)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="276072">sarahzrf</span> <a href="#narrow/stream/229952-type-theory/topic/dependent.20types/near/192925154" title="#narrow/stream/229952-type-theory/topic/dependent.20types/near/192925154">said</a>:</p>
+<blockquote>
+<p><span class="user-mention silent" data-user-id="275901">Jules Hedges</span> i'm gonna reply to this here <a href="https://twitter.com/_julesh_/status/1246528993903497222" title="https://twitter.com/_julesh_/status/1246528993903497222">https://twitter.com/_julesh_/status/1246528993903497222</a></p>
+</blockquote>
+<p>What's the context on this? I'm a big Bart Jacobs fan myself!</p>
+
+
+
+<a name="192925858"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229952-theory%3A%20type%20theory/topic/dependent%20types/near/192925858" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> sarahzrf <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229952-theory:-type-theory/topic/dependent.20types.html#192925858">(Apr 04 2020 at 20:34)</a>:</h4>
+<p>click thru &amp; see</p>
+
+
+
+<a name="192925932"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229952-theory%3A%20type%20theory/topic/dependent%20types/near/192925932" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> sarahzrf <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229952-theory:-type-theory/topic/dependent.20types.html#192925932">(Apr 04 2020 at 20:36)</a>:</h4>
+<p>anyway tho, in general if we have a context <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">Γ</mi></mrow><annotation encoding="application/x-tex">\Gamma</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord">Γ</span></span></span></span>, that determines an object in some category, and then <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">Γ</mi><mo>⊢</mo><mi>A</mi><mtext> </mtext><mrow><mi mathvariant="sans-serif">t</mi><mi mathvariant="sans-serif">y</mi><mi mathvariant="sans-serif">p</mi><mi mathvariant="sans-serif">e</mi></mrow></mrow><annotation encoding="application/x-tex">\Gamma \vdash A\ \mathsf{type}</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.69444em;vertical-align:0em;"></span><span class="mord">Γ</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">⊢</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.8777699999999999em;vertical-align:-0.19444em;"></span><span class="mord mathdefault">A</span><span class="mspace"> </span><span class="mord"><span class="mord mathsf">t</span><span class="mord mathsf" style="margin-right:0.01389em;">y</span><span class="mord mathsf">p</span><span class="mord mathsf">e</span></span></span></span></span> determines an object in the slice category over <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo lspace="0em" mathvariant="normal" rspace="0em">⟦</mo><mi mathvariant="normal">Γ</mi><mo lspace="0em" mathvariant="normal" rspace="0em">⟧</mo></mrow><annotation encoding="application/x-tex">\llbracket \Gamma \rrbracket</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen"><span class="mopen">[</span><span class="mspace" style="margin-right:-0.17777777777777778em;"></span><span class="mopen">[</span></span><span class="mord">Γ</span><span class="mclose"><span class="mclose">]</span><span class="mspace" style="margin-right:-0.17777777777777778em;"></span><span class="mclose">]</span></span></span></span></span></p>
+
+
+
+<a name="192925945"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229952-theory%3A%20type%20theory/topic/dependent%20types/near/192925945" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> sarahzrf <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229952-theory:-type-theory/topic/dependent.20types.html#192925945">(Apr 04 2020 at 20:37)</a>:</h4>
+<p>and then if you write a term <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">Γ</mi><mo>⊢</mo><mi>e</mi><mo>:</mo><mi>A</mi></mrow><annotation encoding="application/x-tex">\Gamma \vdash e : A</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.69444em;vertical-align:0em;"></span><span class="mord">Γ</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">⊢</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault">e</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">:</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault">A</span></span></span></span>, that gives a global element of <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo lspace="0em" mathvariant="normal" rspace="0em">⟦</mo><mi>A</mi><mo lspace="0em" mathvariant="normal" rspace="0em">⟧</mo></mrow><annotation encoding="application/x-tex">\llbracket A \rrbracket</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen"><span class="mopen">[</span><span class="mspace" style="margin-right:-0.17777777777777778em;"></span><span class="mopen">[</span></span><span class="mord mathdefault">A</span><span class="mclose"><span class="mclose">]</span><span class="mspace" style="margin-right:-0.17777777777777778em;"></span><span class="mclose">]</span></span></span></span></span></p>
+
+
+
+<a name="192925952"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229952-theory%3A%20type%20theory/topic/dependent%20types/near/192925952" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> sarahzrf <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229952-theory:-type-theory/topic/dependent.20types.html#192925952">(Apr 04 2020 at 20:37)</a>:</h4>
+<p>so, something that i was tweeting about the other day with like 4am brain and which finally clicked for me was like...</p>
+
+
+
+<a name="192925961"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229952-theory%3A%20type%20theory/topic/dependent%20types/near/192925961" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Stelios Tsampas <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229952-theory:-type-theory/topic/dependent.20types.html#192925961">(Apr 04 2020 at 20:37)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="276072">sarahzrf</span> <a href="#narrow/stream/229952-type-theory/topic/dependent.20types/near/192925858" title="#narrow/stream/229952-type-theory/topic/dependent.20types/near/192925858">said</a>:</p>
+<blockquote>
+<p>click thru &amp; see</p>
+</blockquote>
+<p>I tried but the thread is not visible in either profile :/.</p>
+
+
+
+<a name="192926011"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229952-theory%3A%20type%20theory/topic/dependent%20types/near/192926011" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> sarahzrf <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229952-theory:-type-theory/topic/dependent.20types.html#192926011">(Apr 04 2020 at 20:38)</a>:</h4>
+<p>you should be able to click the twitter link itself, not our @</p>
+
+
+
+<a name="192926019"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229952-theory%3A%20type%20theory/topic/dependent%20types/near/192926019" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> sarahzrf <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229952-theory:-type-theory/topic/dependent.20types.html#192926019">(Apr 04 2020 at 20:38)</a>:</h4>
+<p>but i can screenshot it if you want, one sec</p>
+
+
+
+<a name="192926030"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229952-theory%3A%20type%20theory/topic/dependent%20types/near/192926030" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> sarahzrf <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229952-theory:-type-theory/topic/dependent.20types.html#192926030">(Apr 04 2020 at 20:39)</a>:</h4>
+<p><a href="/user_uploads/21317/Z0FXFJb37CwvnQmh0slRXe7B/image.png" title="image.png">image.png</a></p>
+<div class="message_inline_image"><a href="/user_uploads/21317/Z0FXFJb37CwvnQmh0slRXe7B/image.png" title="image.png"><img src="/user_uploads/21317/Z0FXFJb37CwvnQmh0slRXe7B/image.png"></a></div>
+
+
+
+<a name="192926037"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229952-theory%3A%20type%20theory/topic/dependent%20types/near/192926037" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Jules Hedges <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229952-theory:-type-theory/topic/dependent.20types.html#192926037">(Apr 04 2020 at 20:39)</a>:</h4>
+<p>I still think we're talking at cross purposes..... the idea behind what I originally said is that the <em>syntax</em> of languages ought to reflect the categorical semantics</p>
+
+
+
+<a name="192926081"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229952-theory%3A%20type%20theory/topic/dependent%20types/near/192926081" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Jules Hedges <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229952-theory:-type-theory/topic/dependent.20types.html#192926081">(Apr 04 2020 at 20:40)</a>:</h4>
+<p>Inspired by mixed linear-nonlinear logic, really</p>
+
+
+
+<a name="192926085"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229952-theory%3A%20type%20theory/topic/dependent%20types/near/192926085" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> sarahzrf <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229952-theory:-type-theory/topic/dependent.20types.html#192926085">(Apr 04 2020 at 20:40)</a>:</h4>
+<p>and im claiming that it does :&gt;</p>
+
+
+
+<a name="192926086"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229952-theory%3A%20type%20theory/topic/dependent%20types/near/192926086" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> sarahzrf <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229952-theory:-type-theory/topic/dependent.20types.html#192926086">(Apr 04 2020 at 20:40)</a>:</h4>
+<p>in this case</p>
+
+
+
+<a name="192926089"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229952-theory%3A%20type%20theory/topic/dependent%20types/near/192926089" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Jules Hedges <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229952-theory:-type-theory/topic/dependent.20types.html#192926089">(Apr 04 2020 at 20:40)</a>:</h4>
+<p>Hm, I don't see that</p>
+
+
+
+<a name="192926092"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229952-theory%3A%20type%20theory/topic/dependent%20types/near/192926092" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> sarahzrf <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229952-theory:-type-theory/topic/dependent.20types.html#192926092">(Apr 04 2020 at 20:40)</a>:</h4>
+<p>it was a bit tongue in cheek, but i actually kinda like this viewpoint</p>
+
+
+
+<a name="192926094"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229952-theory%3A%20type%20theory/topic/dependent%20types/near/192926094" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> sarahzrf <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229952-theory:-type-theory/topic/dependent.20types.html#192926094">(Apr 04 2020 at 20:40)</a>:</h4>
+<p>lemme continue</p>
+
+
+
+<a name="192926127"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229952-theory%3A%20type%20theory/topic/dependent%20types/near/192926127" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> sarahzrf <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229952-theory:-type-theory/topic/dependent.20types.html#192926127">(Apr 04 2020 at 20:41)</a>:</h4>
+<p>if you have <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">Γ</mi><mo>⊢</mo><mi>x</mi><mo>:</mo><mi>A</mi></mrow><annotation encoding="application/x-tex">\Gamma \vdash x : A</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.69444em;vertical-align:0em;"></span><span class="mord">Γ</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">⊢</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault">x</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">:</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault">A</span></span></span></span>—i.e., <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi></mrow><annotation encoding="application/x-tex">x</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault">x</span></span></span></span> is a variable of <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">Γ</mi></mrow><annotation encoding="application/x-tex">\Gamma</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord">Γ</span></span></span></span>—then that's still <em>a global element in a slice category</em></p>
+
+
+
+<a name="192926168"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229952-theory%3A%20type%20theory/topic/dependent%20types/near/192926168" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> sarahzrf <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229952-theory:-type-theory/topic/dependent.20types.html#192926168">(Apr 04 2020 at 20:42)</a>:</h4>
+<p>a slice category over <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo lspace="0em" mathvariant="normal" rspace="0em">⟦</mo><mi mathvariant="normal">Γ</mi><mo lspace="0em" mathvariant="normal" rspace="0em">⟧</mo></mrow><annotation encoding="application/x-tex">\llbracket \Gamma \rrbracket</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen"><span class="mopen">[</span><span class="mspace" style="margin-right:-0.17777777777777778em;"></span><span class="mopen">[</span></span><span class="mord">Γ</span><span class="mclose"><span class="mclose">]</span><span class="mspace" style="margin-right:-0.17777777777777778em;"></span><span class="mclose">]</span></span></span></span></span> is the category where there is a global parameter of <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo lspace="0em" mathvariant="normal" rspace="0em">⟦</mo><mi mathvariant="normal">Γ</mi><mo lspace="0em" mathvariant="normal" rspace="0em">⟧</mo></mrow><annotation encoding="application/x-tex">\llbracket \Gamma \rrbracket</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen"><span class="mopen">[</span><span class="mspace" style="margin-right:-0.17777777777777778em;"></span><span class="mopen">[</span></span><span class="mord">Γ</span><span class="mclose"><span class="mclose">]</span><span class="mspace" style="margin-right:-0.17777777777777778em;"></span><span class="mclose">]</span></span></span></span></span></p>
+
+
+
+<a name="192926172"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229952-theory%3A%20type%20theory/topic/dependent%20types/near/192926172" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Stelios Tsampas <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229952-theory:-type-theory/topic/dependent.20types.html#192926172">(Apr 04 2020 at 20:42)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="275901">Jules Hedges</span> <a href="#narrow/stream/229952-type-theory/topic/dependent.20types/near/192926037" title="#narrow/stream/229952-type-theory/topic/dependent.20types/near/192926037">said</a>:</p>
+<blockquote>
+<p>I still think we're talking at cross purposes..... the idea behind what I originally said is that the <em>syntax</em> of languages ought to reflect the categorical semantics</p>
+</blockquote>
+<p>What exactly do you mean by "reflect"?</p>
+
+
+
+<a name="192926179"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229952-theory%3A%20type%20theory/topic/dependent%20types/near/192926179" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> sarahzrf <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229952-theory:-type-theory/topic/dependent.20types.html#192926179">(Apr 04 2020 at 20:43)</a>:</h4>
+<p>so <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi></mrow><annotation encoding="application/x-tex">x</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault">x</span></span></span></span>'s categorical semantics is "one of the components of the global parameter"</p>
+
+
+
+<a name="192926231"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229952-theory%3A%20type%20theory/topic/dependent%20types/near/192926231" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> sarahzrf <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229952-theory:-type-theory/topic/dependent.20types.html#192926231">(Apr 04 2020 at 20:44)</a>:</h4>
+<p>i contend, at least semiseriously and for the purpose of this conversation, that having free variables at all is a syntax that reflects working in a slice category!</p>
+
+
+
+<a name="192926237"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229952-theory%3A%20type%20theory/topic/dependent%20types/near/192926237" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Jules Hedges <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229952-theory:-type-theory/topic/dependent.20types.html#192926237">(Apr 04 2020 at 20:44)</a>:</h4>
+<p>Ok, I can buy that</p>
+
+
+
+<a name="192926239"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229952-theory%3A%20type%20theory/topic/dependent%20types/near/192926239" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> sarahzrf <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229952-theory:-type-theory/topic/dependent.20types.html#192926239">(Apr 04 2020 at 20:44)</a>:</h4>
+<p>whenever you add a free variable, you move up a slice, or at least base change</p>
+
+
+
+<a name="192926248"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229952-theory%3A%20type%20theory/topic/dependent%20types/near/192926248" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> sarahzrf <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229952-theory:-type-theory/topic/dependent.20types.html#192926248">(Apr 04 2020 at 20:45)</a>:</h4>
+<p>and whenever you bind a variable, you're applying an adjunction</p>
+
+
+
+<a name="192926252"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229952-theory%3A%20type%20theory/topic/dependent%20types/near/192926252" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> sarahzrf <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229952-theory:-type-theory/topic/dependent.20types.html#192926252">(Apr 04 2020 at 20:45)</a>:</h4>
+<p><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>∑</mo><mo>⊣</mo><mi mathvariant="normal">Δ</mi><mo>⊣</mo><mo>∏</mo></mrow><annotation encoding="application/x-tex">\sum \dashv \Delta \dashv \prod</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:1.00001em;vertical-align:-0.25001em;"></span><span class="mop op-symbol small-op" style="position:relative;top:-0.0000050000000000050004em;">∑</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">⊣</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.69444em;vertical-align:0em;"></span><span class="mord">Δ</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">⊣</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1.00001em;vertical-align:-0.25001em;"></span><span class="mop op-symbol small-op" style="position:relative;top:-0.0000050000000000050004em;">∏</span></span></span></span></p>
+
+
+
+<a name="192926296"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229952-theory%3A%20type%20theory/topic/dependent%20types/near/192926296" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Jules Hedges <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229952-theory:-type-theory/topic/dependent.20types.html#192926296">(Apr 04 2020 at 20:46)</a>:</h4>
+<p>Then I need to refine what I said a bit. We have lexical scoping (??) for slice categories, and then another example is how do-notation drops you into the internal syntax of a kleisli category.... but my crazy idea is that all these things should be programmer-definable instead of having a fixed-for-all-time collection of adjunctions provided by the language</p>
+
+
+
+<a name="192926303"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229952-theory%3A%20type%20theory/topic/dependent%20types/near/192926303" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> sarahzrf <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229952-theory:-type-theory/topic/dependent.20types.html#192926303">(Apr 04 2020 at 20:47)</a>:</h4>
+<p>yeah that would be sick as hell</p>
+
+
+
+<a name="192926306"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229952-theory%3A%20type%20theory/topic/dependent%20types/near/192926306" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> sarahzrf <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229952-theory:-type-theory/topic/dependent.20types.html#192926306">(Apr 04 2020 at 20:47)</a>:</h4>
+<p>but i just mean like</p>
+
+
+
+<a name="192926308"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229952-theory%3A%20type%20theory/topic/dependent%20types/near/192926308" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> sarahzrf <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229952-theory:-type-theory/topic/dependent.20types.html#192926308">(Apr 04 2020 at 20:47)</a>:</h4>
+<p>the story behind that tweet was basically just</p>
+
+
+
+<a name="192926311"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229952-theory%3A%20type%20theory/topic/dependent%20types/near/192926311" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Jules Hedges <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229952-theory:-type-theory/topic/dependent.20types.html#192926311">(Apr 04 2020 at 20:47)</a>:</h4>
+<p>Another example that was really the motivating one is the language based on call by push value, where you have a strict language and a lazy language and operators that go between them</p>
+
+
+
+<a name="192926375"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229952-theory%3A%20type%20theory/topic/dependent%20types/near/192926375" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Jules Hedges <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229952-theory:-type-theory/topic/dependent.20types.html#192926375">(Apr 04 2020 at 20:48)</a>:</h4>
+<p>One of my zen principles is that if you make your language strict you went wrong, and if you make it lazy you went wrong, the only true path is to put them on exactly equal footing with neither preferred</p>
+
+
+
+<a name="192926387"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229952-theory%3A%20type%20theory/topic/dependent%20types/near/192926387" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> sarahzrf <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229952-theory:-type-theory/topic/dependent.20types.html#192926387">(Apr 04 2020 at 20:49)</a>:</h4>
+<p>i had a shower thought like "hmm... modalities are [co]monads b/c youre, like, really talking about something in another category thru the lens of this one, so ur moving thru an adjunction... what if u had a type constructor that really <em>was</em> an adjoint instead of a monad... wait a second, didnt jules tweet something like that before... wait a second, <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>∑</mo><mo>⊣</mo><mi mathvariant="normal">Δ</mi><mo>⊣</mo><mo>∏</mo></mrow><annotation encoding="application/x-tex">\sum \dashv \Delta \dashv \prod</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:1.00001em;vertical-align:-0.25001em;"></span><span class="mop op-symbol small-op" style="position:relative;top:-0.0000050000000000050004em;">∑</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">⊣</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.69444em;vertical-align:0em;"></span><span class="mord">Δ</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">⊣</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1.00001em;vertical-align:-0.25001em;"></span><span class="mop op-symbol small-op" style="position:relative;top:-0.0000050000000000050004em;">∏</span></span></span></span>... lmao im gonna tweet this"</p>
+
+
+
+<a name="192926392"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229952-theory%3A%20type%20theory/topic/dependent%20types/near/192926392" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Dan Doel <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229952-theory:-type-theory/topic/dependent.20types.html#192926392">(Apr 04 2020 at 20:49)</a>:</h4>
+<p>All the things I've seen that do that have a lot of extra boilerplate.</p>
+
+
+
+<a name="192926452"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229952-theory%3A%20type%20theory/topic/dependent%20types/near/192926452" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Jules Hedges <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229952-theory:-type-theory/topic/dependent.20types.html#192926452">(Apr 04 2020 at 20:50)</a>:</h4>
+<p>Ah, I get it</p>
+
+
+
+<a name="192926481"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229952-theory%3A%20type%20theory/topic/dependent%20types/near/192926481" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Jules Hedges <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229952-theory:-type-theory/topic/dependent.20types.html#192926481">(Apr 04 2020 at 20:51)</a>:</h4>
+<p>And yeah. I guess nobody knows how to make it work, otherwise someone would have done it already</p>
+
+
+
+<a name="192926489"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229952-theory%3A%20type%20theory/topic/dependent%20types/near/192926489" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Dan Doel <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229952-theory:-type-theory/topic/dependent.20types.html#192926489">(Apr 04 2020 at 20:51)</a>:</h4>
+<p>By the way, have you read Compiling with Classical Connectives?</p>
+
+
+
+<a name="192926492"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229952-theory%3A%20type%20theory/topic/dependent%20types/near/192926492" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> sarahzrf <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229952-theory:-type-theory/topic/dependent.20types.html#192926492">(Apr 04 2020 at 20:51)</a>:</h4>
+<p>nope, whats it about</p>
+
+
+
+<a name="192926538"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229952-theory%3A%20type%20theory/topic/dependent%20types/near/192926538" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Dan Doel <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229952-theory:-type-theory/topic/dependent.20types.html#192926538">(Apr 04 2020 at 20:52)</a>:</h4>
+<p>I don't know CBPV very well, but CwCC seems like it's probably that on steroids.</p>
+
+
+
+<a name="192926546"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229952-theory%3A%20type%20theory/topic/dependent%20types/near/192926546" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Dan Doel <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229952-theory:-type-theory/topic/dependent.20types.html#192926546">(Apr 04 2020 at 20:52)</a>:</h4>
+<p>It kind of has a bunch of somewhat different ideas crammed into one paper, but they're all cool.</p>
+
+
+
+<a name="192926554"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229952-theory%3A%20type%20theory/topic/dependent%20types/near/192926554" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> sarahzrf <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229952-theory:-type-theory/topic/dependent.20types.html#192926554">(Apr 04 2020 at 20:53)</a>:</h4>
+<p>CwCC looks like an emoticon</p>
+
+
+
+<a name="192926558"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229952-theory%3A%20type%20theory/topic/dependent%20types/near/192926558" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Jules Hedges <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229952-theory:-type-theory/topic/dependent.20types.html#192926558">(Apr 04 2020 at 20:53)</a>:</h4>
+<p>The thing that really started me on that train of thought was linear-nonlinear logic. So you start with linear logic, where the ! modality looks like a comonad. Then in the categorical semantics it really is a comonad, but after a lot of work in the 90s everyone agreed that the "right" categorical semantics of linear logic is a "linear-nonlinear adjunction" between a *-autonomous category and a cartesian category, where ! gets decomposed. And then Benton invented linear-nonlinear logic, which is a syntactic reformulation of linear logic that directly reflects the categorical semantics</p>
+
+
+
+<a name="192926565"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229952-theory%3A%20type%20theory/topic/dependent%20types/near/192926565" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> sarahzrf <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229952-theory:-type-theory/topic/dependent.20types.html#192926565">(Apr 04 2020 at 20:53)</a>:</h4>
+<p>waittttt i thought the "right" categorical semantics <em>was</em> a comonad <span aria-label="cold sweat" class="emoji emoji-1f630" role="img" title="cold sweat">:cold_sweat:</span></p>
+
+
+
+<a name="192926604"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229952-theory%3A%20type%20theory/topic/dependent%20types/near/192926604" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> sarahzrf <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229952-theory:-type-theory/topic/dependent.20types.html#192926604">(Apr 04 2020 at 20:54)</a>:</h4>
+<p>"seely comonad" or sth</p>
+
+
+
+<a name="192926611"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229952-theory%3A%20type%20theory/topic/dependent%20types/near/192926611" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> sarahzrf <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229952-theory:-type-theory/topic/dependent.20types.html#192926611">(Apr 04 2020 at 20:54)</a>:</h4>
+<p>i havent looked into categorical semantics of linear logic much</p>
+
+
+
+<a name="192926637"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229952-theory%3A%20type%20theory/topic/dependent%20types/near/192926637" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Jules Hedges <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229952-theory:-type-theory/topic/dependent.20types.html#192926637">(Apr 04 2020 at 20:55)</a>:</h4>
+<p>I kinda cut my teeth in category theory reading "categorical semantics of linear logic" by Melliès, so I always take his word on this</p>
+
+
+
+<a name="192926638"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229952-theory%3A%20type%20theory/topic/dependent%20types/near/192926638" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Dan Doel <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229952-theory:-type-theory/topic/dependent.20types.html#192926638">(Apr 04 2020 at 20:55)</a>:</h4>
+<p>Anyhow, one of the things in CwCC is a type theory that's like sequent calculus, with multiple consequents. It has all the linear connectives, but I think the sequents are not linear.</p>
+
+
+
+<a name="192926683"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229952-theory%3A%20type%20theory/topic/dependent%20types/near/192926683" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Dan Doel <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229952-theory:-type-theory/topic/dependent.20types.html#192926683">(Apr 04 2020 at 20:56)</a>:</h4>
+<p>Instead the connectives are distinguished by their inherent polarity, which maps to an evaluation strategy that makes the reduction deterministic, and you can shift between them.</p>
+
+
+
+<a name="192926702"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229952-theory%3A%20type%20theory/topic/dependent%20types/near/192926702" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Jules Hedges <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229952-theory:-type-theory/topic/dependent.20types.html#192926702">(Apr 04 2020 at 20:57)</a>:</h4>
+<p>I don't think I read that paper, but I love this stuff.... if I wasn't doing game theory I'd like to be a French logician</p>
+
+
+
+<a name="192926707"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229952-theory%3A%20type%20theory/topic/dependent%20types/near/192926707" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> sarahzrf <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229952-theory:-type-theory/topic/dependent.20types.html#192926707">(Apr 04 2020 at 20:57)</a>:</h4>
+<p>be a french PL theorist instead</p>
+
+
+
+<a name="192926710"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229952-theory%3A%20type%20theory/topic/dependent%20types/near/192926710" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Dan Doel <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229952-theory:-type-theory/topic/dependent.20types.html#192926710">(Apr 04 2020 at 20:57)</a>:</h4>
+<p>So <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>+</mo></mrow><annotation encoding="application/x-tex">+</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.66666em;vertical-align:-0.08333em;"></span><span class="mord">+</span></span></span></span> is a positive connective whose values are a choice of two positive values, and <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext>⅋</mtext></mrow><annotation encoding="application/x-tex">⅋</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0em;vertical-align:0em;"></span><span class="mord">⅋</span></span></span></span> is a negative connective whose covalues are pairs of two negative covalues.</p>
+
+
+
+<a name="192926711"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229952-theory%3A%20type%20theory/topic/dependent%20types/near/192926711" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> sarahzrf <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229952-theory:-type-theory/topic/dependent.20types.html#192926711">(Apr 04 2020 at 20:57)</a>:</h4>
+<p>well, is there a difference</p>
+
+
+
+<a name="192926762"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229952-theory%3A%20type%20theory/topic/dependent%20types/near/192926762" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Jules Hedges <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229952-theory:-type-theory/topic/dependent.20types.html#192926762">(Apr 04 2020 at 20:58)</a>:</h4>
+<p>French programming languages = French logic + naming things to make English speakers uncomfortable</p>
+
+
+
+<a name="192926770"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229952-theory%3A%20type%20theory/topic/dependent%20types/near/192926770" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> sarahzrf <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229952-theory:-type-theory/topic/dependent.20types.html#192926770">(Apr 04 2020 at 20:58)</a>:</h4>
+<p>have you seen abramsky's <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mrow><mi mathvariant="normal">P</mi><mi mathvariant="normal">E</mi></mrow><mn>2</mn></msub></mrow><annotation encoding="application/x-tex">\mathrm{PE}_2</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.83333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord"><span class="mord mathrm">P</span><span class="mord mathrm">E</span></span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span>?</p>
+
+
+
+<a name="192926780"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229952-theory%3A%20type%20theory/topic/dependent%20types/near/192926780" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Dan Doel <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229952-theory:-type-theory/topic/dependent.20types.html#192926780">(Apr 04 2020 at 20:59)</a>:</h4>
+<p>Positive values are built out of constructors, and negative covalues are built out of projections. Negative values are built by copattern matching and positive covalues are built by pattern matching.</p>
+
+
+
+<a name="192926786"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229952-theory%3A%20type%20theory/topic/dependent%20types/near/192926786" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> sarahzrf <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229952-theory:-type-theory/topic/dependent.20types.html#192926786">(Apr 04 2020 at 20:59)</a>:</h4>
+<p>its what im most familiar with, given that ive been working with it for my degree project</p>
+
+
+
+<a name="192926787"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229952-theory%3A%20type%20theory/topic/dependent%20types/near/192926787" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Dan Doel <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229952-theory:-type-theory/topic/dependent.20types.html#192926787">(Apr 04 2020 at 20:59)</a>:</h4>
+<p>But, it also has semantics for call-by-need, and call-by-<em>coneed</em>. The latter avoids duplicate work when capturing continuations.</p>
+
+
+
+<a name="192926839"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229952-theory%3A%20type%20theory/topic/dependent%20types/near/192926839" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> sarahzrf <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229952-theory:-type-theory/topic/dependent.20types.html#192926839">(Apr 04 2020 at 21:00)</a>:</h4>
+<p>hmmmm that sounds like the dual calculus <span aria-label="thinking" class="emoji emoji-1f914" role="img" title="thinking">:thinking:</span></p>
+
+
+
+<a name="192926875"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229952-theory%3A%20type%20theory/topic/dependent%20types/near/192926875" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Dan Doel <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229952-theory:-type-theory/topic/dependent.20types.html#192926875">(Apr 04 2020 at 21:01)</a>:</h4>
+<p>Then in a later section it also shows how to have arbitrary (co)data definitions whose constructors/projections are specified by sequents.</p>
+
+
+
+<a name="192926883"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229952-theory%3A%20type%20theory/topic/dependent%20types/near/192926883" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Dan Doel <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229952-theory:-type-theory/topic/dependent.20types.html#192926883">(Apr 04 2020 at 21:01)</a>:</h4>
+<p>And how to compile it back to the linear logic set of connectives.</p>
+
+
+
+<a name="192926887"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229952-theory%3A%20type%20theory/topic/dependent%20types/near/192926887" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Jules Hedges <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229952-theory:-type-theory/topic/dependent.20types.html#192926887">(Apr 04 2020 at 21:01)</a>:</h4>
+<p>Ok, I'd like to know what "coneed" is, but I'd like to go to bed even more</p>
+
+
+
+<a name="192926896"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229952-theory%3A%20type%20theory/topic/dependent%20types/near/192926896" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> sarahzrf <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229952-theory:-type-theory/topic/dependent.20types.html#192926896">(Apr 04 2020 at 21:01)</a>:</h4>
+<p>imagine going to bed at only 10pm</p>
+
+
+
+<a name="192926899"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229952-theory%3A%20type%20theory/topic/dependent%20types/near/192926899" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> sarahzrf <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229952-theory:-type-theory/topic/dependent.20types.html#192926899">(Apr 04 2020 at 21:02)</a>:</h4>
+<p>when there is PL to be done</p>
+
+
+
+<a name="192926969"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229952-theory%3A%20type%20theory/topic/dependent%20types/near/192926969" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Jules Hedges <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229952-theory:-type-theory/topic/dependent.20types.html#192926969">(Apr 04 2020 at 21:03)</a>:</h4>
+<p>I'm normally more of a night person, but I'm living with my dad who is a morning person with far more determination than me. And also I don't have enough enthusiasm to work on weekends</p>
+
+
+
+<a name="192927030"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229952-theory%3A%20type%20theory/topic/dependent%20types/near/192927030" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> sarahzrf <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229952-theory:-type-theory/topic/dependent.20types.html#192927030">(Apr 04 2020 at 21:04)</a>:</h4>
+<p>the week is a principal homogeneous space for the action of <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi mathvariant="double-struck">Z</mi><mn>7</mn></msub></mrow><annotation encoding="application/x-tex">\mathbb{Z}_7</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.83889em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord"><span class="mord mathbb">Z</span></span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">7</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span></p>
+
+
+
+<a name="192927118"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229952-theory%3A%20type%20theory/topic/dependent%20types/near/192927118" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> sarahzrf <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229952-theory:-type-theory/topic/dependent.20types.html#192927118">(Apr 04 2020 at 21:07)</a>:</h4>
+<p>at least, when i'm at home and lying in bed all day <span aria-label="disappointed" class="emoji emoji-1f61e" role="img" title="disappointed">:disappointed:</span></p>
+
+
+
+<a name="192927167"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229952-theory%3A%20type%20theory/topic/dependent%20types/near/192927167" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nathanael Arkor <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229952-theory:-type-theory/topic/dependent.20types.html#192927167">(Apr 04 2020 at 21:08)</a>:</h4>
+<blockquote>
+<p>do-notation drops you into the internal syntax of a kleisli category.... but my crazy idea is that all these things should be programmer-definable</p>
+</blockquote>
+<p>isn't this the idea behind embedded domain specific languages?</p>
+
+
+
+<a name="192927176"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229952-theory%3A%20type%20theory/topic/dependent%20types/near/192927176" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nathanael Arkor <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229952-theory:-type-theory/topic/dependent.20types.html#192927176">(Apr 04 2020 at 21:08)</a>:</h4>
+<p>Racket is particularly big on this</p>
+
+
+
+<a name="192931767"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229952-theory%3A%20type%20theory/topic/dependent%20types/near/192931767" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Andre Knispel <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229952-theory:-type-theory/topic/dependent.20types.html#192931767">(Apr 04 2020 at 23:19)</a>:</h4>
+<p>I have a couple of cool demos that might be relevant to this discussion, I'll probably show them soon-ish. Just have to do a bit more polish first...</p>
+
+
+
+<a name="210132596"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229952-theory%3A%20type%20theory/topic/dependent%20types/near/210132596" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Avi Craimer <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229952-theory:-type-theory/topic/dependent.20types.html#210132596">(Sep 15 2020 at 13:57)</a>:</h4>
+<p>I've been trying to wrap my head around Sigma and Pi types for a while now. I find that the hardest part is understanding how the type level and value level interact in a kind of zigzagging way. I finally think I understand, and I drew this diagram to try to make it clear what is going on. Would be happy to hear if I'm on the right track.</p>
+<p><a href="https://drive.google.com/file/d/19qfBnTk0e7AxMBCGGi9QEZ_ZXjAPpQ80/view?usp=drivesdk">https://drive.google.com/file/d/19qfBnTk0e7AxMBCGGi9QEZ_ZXjAPpQ80/view?usp=drivesdk</a></p>
+
+
+
+<a name="210136778"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229952-theory%3A%20type%20theory/topic/dependent%20types/near/210136778" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Dan Doel <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229952-theory:-type-theory/topic/dependent.20types.html#210136778">(Sep 15 2020 at 14:28)</a>:</h4>
+<p>That looks right.</p>
+
+
+
+{% endraw %}
+
+<hr><p>Last updated: Jan 30 2022 at 00:30 UTC</p>

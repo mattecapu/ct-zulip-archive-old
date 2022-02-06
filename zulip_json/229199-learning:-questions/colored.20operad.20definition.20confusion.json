@@ -1,0 +1,44 @@
+[
+    {
+        "content": "<p>I've been trying to work with colored operads in a typed language. I was basing my work on the following definition <a href=\"https://ncatlab.org/nlab/show/operad\">from this ncatlab page</a>:</p>\n<p><a href=\"/user_uploads/21317/k6LWtH_MDfczlOWXfSmqEF8R/image.png\">image.png</a> </p>\n<div class=\"message_inline_image\"><a href=\"/user_uploads/21317/k6LWtH_MDfczlOWXfSmqEF8R/image.png\" title=\"image.png\"><img src=\"/user_uploads/21317/k6LWtH_MDfczlOWXfSmqEF8R/image.png\"></a></div><p>after spending a couple evenings locked in combat with the typechecker i decided to give up and draw some stuff on a whiteboard. now that i've done so, i don't understand how this definition should work. specifically, regarding this bit:</p>\n<p><a href=\"/user_uploads/21317/xFV2Hd7num4pSnTX0KHdFTYr/image.png\">image.png</a> </p>\n<div class=\"message_inline_image\"><a href=\"/user_uploads/21317/xFV2Hd7num4pSnTX0KHdFTYr/image.png\" title=\"image.png\"><img src=\"/user_uploads/21317/xFV2Hd7num4pSnTX0KHdFTYr/image.png\"></a></div><p>the definition seems to suggest that the composition of a 1-tuple (c) should exist. but i can't figure out how to make this work in a graphical interpretation as a tree (presumably this represents some kind of disembodied root with no children). when composing, it seems to be impossible to do anything sensible with the composition of any tree with a forest involving a \"disembodied root\". i suppose this is also how i should interpret the typechecker's resistance</p>\n<p>so my main question here is, am i reading the definition wrong or thinking about it/implementing it wrong? is the composition operation supposed to be defined for empty forests?</p>",
+        "id": 253539589,
+        "sender_full_name": "Asad Saeeduddin",
+        "timestamp": 1631776854
+    },
+    {
+        "content": "<p>For a 1-tuple <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"false\">(</mo><mi>c</mi><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">(c)</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mopen\">(</span><span class=\"mord mathnormal\">c</span><span class=\"mclose\">)</span></span></span></span>, you get a “composition operation” <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>P</mi><mo stretchy=\"false\">(</mo><mo separator=\"true\">;</mo><mi>c</mi><mo stretchy=\"false\">)</mo><mo>→</mo><mi>P</mi><mo stretchy=\"false\">(</mo><mo separator=\"true\">;</mo><mi>c</mi><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">P( ; c) \\to P( ; c)</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.13889em;\">P</span><span class=\"mopen\">(</span><span class=\"mpunct\">;</span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mord mathnormal\">c</span><span class=\"mclose\">)</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">→</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.13889em;\">P</span><span class=\"mopen\">(</span><span class=\"mpunct\">;</span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mord mathnormal\">c</span><span class=\"mclose\">)</span></span></span></span>, which the axioms should ensure is just the identity. Algebraically you should think of <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>P</mi><mo stretchy=\"false\">(</mo><mo separator=\"true\">;</mo><mi>c</mi><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">P( ; c)</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.13889em;\">P</span><span class=\"mopen\">(</span><span class=\"mpunct\">;</span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mord mathnormal\">c</span><span class=\"mclose\">)</span></span></span></span> as the “constants of colour/type/sort <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>c</mi></mrow><annotation encoding=\"application/x-tex\">c</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.43056em;vertical-align:0em;\"></span><span class=\"mord mathnormal\">c</span></span></span></span>”.</p>",
+        "id": 253540228,
+        "sender_full_name": "Amar Hadzihasanovic",
+        "timestamp": 1631777280
+    },
+    {
+        "content": "<p>That is, they are operations without any inputs.</p>",
+        "id": 253540293,
+        "sender_full_name": "Amar Hadzihasanovic",
+        "timestamp": 1631777302
+    },
+    {
+        "content": "<p>Because of that, you can't plug anything “into” them, but they can be plugged “into” other operations; in the tree picture, the latter will reduce the number of leaves of the tree...</p>",
+        "id": 253540410,
+        "sender_full_name": "Amar Hadzihasanovic",
+        "timestamp": 1631777391
+    },
+    {
+        "content": "<p><span class=\"user-mention\" data-user-id=\"276363\">@Amar Hadzihasanovic</span> thank you for explaining. so the composition operation when the tree has no inputs works out very nicely, just as you say (you simply discard the forest you are to compose it onto and return the tree). where i run into difficulties is when these \"no-input\" trees show up in the forest side of the composition.</p>\n<p>if i imagine the free colored operad generated by any given directed hypergraph, a multimorphism represents:</p>\n<ul>\n<li>a tree</li>\n<li>whose forks are labeled with hyperedges</li>\n<li>whose edges are colored with vertices that agree with the hyperedges at the forks</li>\n<li>whose \"root edge\" is colored with the vertex corresponding to the codomain object of the multimorphism</li>\n<li>whose \"leaf edges\" are colored with vertices corresponding to the domain objects of the multimorphism</li>\n</ul>\n<p>note that unless i ask for additional equipment, it seems that this doesn't give me any way of \"capping off\" or \"duplicating\" links in the tree. roughly speaking, what we're describing pertains to a symmetric monoidal category, not a cartesian one (at least yet).</p>\n<p>so this is a multicategory. this means, given a forest of such trees, and another tree, such that the roots of the former match the leaves of the latter, i'm supposed to construct a tree representing their composition. but when one of the trees in the forest is a \"no-input\" tree, what exactly should be the result? specifically, what is supposed to happen to the \"leaf link\" that agreed with the no-input tree's root?</p>",
+        "id": 253543276,
+        "sender_full_name": "Asad Saeeduddin",
+        "timestamp": 1631779177
+    },
+    {
+        "content": "<p>sorry, i'm being incredibly long winded here: a more concise way to say this is that if composition is defined on a nullary list of predecessors, we essentially get what looks like the \"weakening\" of a cartesian multicategory, allowing you to drop arbitrary parts of the \"context\". requiring this to exist in an arbitrary multicategory seems wrong (or at least \"non-linear\")</p>",
+        "id": 253544936,
+        "sender_full_name": "Asad Saeeduddin",
+        "timestamp": 1631780100
+    },
+    {
+        "content": "<p>You don't need to drop arbitrary parts of the context; the nullary operation itself provides a way to drop the specific part of the context in question.</p>",
+        "id": 253554260,
+        "sender_full_name": "James Deikun",
+        "timestamp": 1631785523
+    }
+]

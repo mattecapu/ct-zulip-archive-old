@@ -1,0 +1,50 @@
+[
+    {
+        "content": "<p>Is there a classification/embedding theorem for abelian categories with closed monoidal structure? Something similar to the Freyd-Mitchell embedding theorem?</p>",
+        "id": 232978630,
+        "sender_full_name": "Chetan Vuppulury",
+        "timestamp": 1617422945
+    },
+    {
+        "content": "<p>That's an interesting question!  Since Freyd-Mitchell says any abelian category is sort of like a category of modules of a ring, I'd guess any monoidal abelian category is sort of like the category of modules of a Hopf ring, with the comultiplication in the Hopf ring providing the monoidal structure.</p>",
+        "id": 232984639,
+        "sender_full_name": "John Baez",
+        "timestamp": 1617430207
+    },
+    {
+        "content": "<p>The category of modules over a <em>commutative</em> ring is always a closed monoidal abelian category, right?  Is it also the category of modules of a Hopf ring?</p>",
+        "id": 233006872,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1617456884
+    },
+    {
+        "content": "<p>The modules of a Hopf ring should actually have duals, because a Hopf ring has an antipode.   I say \"should\" because I guess I only know a weaker result: the finite-dimensional modules of a finite-dimensional Hopf algebra over a field have duals.</p>",
+        "id": 233014293,
+        "sender_full_name": "John Baez",
+        "timestamp": 1617464852
+    },
+    {
+        "content": "<p>So, in my original reply I should have left out the antipode and worked with a \"biring\" rather than a Hopf ring... but \"biring\" also has another meaning, so I should have said \"bialgebra over <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"double-struck\">Z</mi></mrow><annotation encoding=\"application/x-tex\">\\mathbb{Z}</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.68889em;vertical-align:0em;\"></span><span class=\"mord\"><span class=\"mord mathbb\">Z</span></span></span></span></span>\", and then</p>\n<p>Since Freyd-Mitchell says any abelian category is sort of like a category of modules of a ring, I'd guess any monoidal abelian category is sort of like the category of modules of a bialgebra over <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"double-struck\">Z</mi></mrow><annotation encoding=\"application/x-tex\">\\mathbb{Z}</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.68889em;vertical-align:0em;\"></span><span class=\"mord\"><span class=\"mord mathbb\">Z</span></span></span></span></span>, with the comultiplication in this bialgebra providing the monoidal structure.</p>",
+        "id": 233014387,
+        "sender_full_name": "John Baez",
+        "timestamp": 1617464978
+    },
+    {
+        "content": "<p>Nosing around for better information on this, I found a nice article:</p>\n<ul>\n<li>Joost Vercruysse, <a href=\"https://arxiv.org/abs/1202.3613\">Hopf algebras - variant notions and reconstruction theorems</a>.</li>\n</ul>\n<p>It has a bunch of theorems, none of them analogous to a Freyd-Mitchell theorem unfortunately, but still nice.  The basic one is Tannaka reconstruction: </p>\n<blockquote>\n<p>Hopf algebras over a field <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>k</mi></mrow><annotation encoding=\"application/x-tex\">k</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.69444em;vertical-align:0em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.03148em;\">k</span></span></span></span> can be characterized as those algebras whose category of finite dimensional modules is an autonomous monoidal category such that the forgetful functor to <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>k</mi></mrow><annotation encoding=\"application/x-tex\">k</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.69444em;vertical-align:0em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.03148em;\">k</span></span></span></span>-vector spaces is a strict monoidal functor.</p>\n</blockquote>\n<p>Here \"autonomous\" means that every module has a left dual, or maybe right dual, depending on whether we're talking about left or right modules (and I forget how the first left/right pair matches up with the second one here).</p>",
+        "id": 233014834,
+        "sender_full_name": "John Baez",
+        "timestamp": 1617465441
+    },
+    {
+        "content": "<p>But one nice thing is that this paper strips off the trappings of linear algebra and gives some pure category theory results.  Like this:</p>\n<blockquote>\n<p>Theorem 4.1 Let T be a monad on a monoidal category C. Then there is a bijective correspondence between</p>\n</blockquote>\n<blockquote>\n<p>(i) bimonad structures on the monad T </p>\n</blockquote>\n<blockquote>\n<p>and</p>\n</blockquote>\n<blockquote>\n<p>(ii) monoidal structures on the Eilenberg-Moore category of the monad T such that the forgetful functor to C is a strict monoidal functor.</p>\n</blockquote>",
+        "id": 233014950,
+        "sender_full_name": "John Baez",
+        "timestamp": 1617465553
+    },
+    {
+        "content": "<p>Here's another nice one:</p>\n<blockquote>\n<p>Theorem 4.7 - Let B be a monoid in a closed braided monoidal category A.  Suppose that the unit of A is a regular generator of A and that − ⊗X and X⊗ − preserve colimits in A for all X∈ A. Then there is a bijective correspondence between</p>\n</blockquote>\n<blockquote>\n<p>(i) right closed monoidal structures on the category BMod of B-modules such that the forgetful functor BMod <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>→</mo></mrow><annotation encoding=\"application/x-tex\">\\to</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.36687em;vertical-align:0em;\"></span><span class=\"mrel\">→</span></span></span></span> A is strict monoidal and right closed, and</p>\n</blockquote>\n<blockquote>\n<p>(ii) Hopf monoid structures on B.</p>\n</blockquote>\n<p>This shows that we can eliminate the finite-dimensionality conditions I mentioned earlier if we settle for \"closed monoidal\" instead of \"monoidal with duals\" (= autonomous).</p>",
+        "id": 233015508,
+        "sender_full_name": "John Baez",
+        "timestamp": 1617466086
+    }
+]

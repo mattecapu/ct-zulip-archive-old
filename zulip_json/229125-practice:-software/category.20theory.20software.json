@@ -1,0 +1,56 @@
+[
+    {
+        "content": "<p>Continuing the topic from over here:<br>\n<a href=\"#narrow/stream/229111-general/topic/category.20theory.20software/\">https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/category.20theory.20software/</a></p>",
+        "id": 216763024,
+        "sender_full_name": "Avi Craimer",
+        "timestamp": 1605405311
+    },
+    {
+        "content": "<p>I've started working on web based tool to visualize category theory diagrams of the sort used in introductory teaching texts. My goal is to make something that could be used to build interactive educational materials for learning category theory. </p>\n<p>To start I want to support support higher-order network diagrams up to 3rd order edges (it seems that most proofs only use up to 2-edges for natural transformations).  I also want to allow a single universe of conceptual relationships be visualized in a variety of different ways, with some kind of highlighting to show common elements across between different visualizations. </p>\n<p>In terms of the programming, I'm using Typescript,  with D3 for the force simulation and React for the user interface. I haven't given much thought to any kind of backend (for now I'll probably make the whole app state saveable as JSON in local storage). </p>\n<p>If anybody wants to help out let me know.</p>",
+        "id": 216763577,
+        "sender_full_name": "Avi Craimer",
+        "timestamp": 1605406203
+    },
+    {
+        "content": "<p>Cool</p>",
+        "id": 216786297,
+        "sender_full_name": "Jules Hedges",
+        "timestamp": 1605438854
+    },
+    {
+        "content": "<p>I don't see what you mean about \"3rd order\".... by that do you mean that the faces / 2-cells of the graph are first class things?</p>",
+        "id": 216786301,
+        "sender_full_name": "Jules Hedges",
+        "timestamp": 1605438878
+    },
+    {
+        "content": "<p>I might suggest that for commutative diagrams snapping to a grid might produce better results than force simulation. Everybody is familiar with grid-based diagrams produced by tikzcd etc, and force simulation might produce some weird shapes</p>",
+        "id": 216786372,
+        "sender_full_name": "Jules Hedges",
+        "timestamp": 1605438977
+    },
+    {
+        "content": "<p>Great! Do you a public repo one can join/snoop?</p>",
+        "id": 216787814,
+        "sender_full_name": "Matteo Capucci",
+        "timestamp": 1605440835
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"275932\">Matteo Capucci</span> <a href=\"#narrow/stream/229125-practice.3A-software/topic/category.20theory.20software/near/216787814\">said</a>:</p>\n<blockquote>\n<p>Great! Do you a public repo one can join/snoop?</p>\n</blockquote>\n<p>The public repo is here. <br>\n<a href=\"https://github.com/AviCraimer/category-theory-diagrams\">https://github.com/AviCraimer/category-theory-diagrams</a><br>\nThere isn't much besides the boiler-plate yet. I've just started writing the data structures for the higher order networks.</p>",
+        "id": 216800993,
+        "sender_full_name": "Avi Craimer",
+        "timestamp": 1605458157
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"275901\">Jules Hedges</span> <a href=\"#narrow/stream/229125-practice.3A-software/topic/category.20theory.20software/near/216786301\">said</a>:</p>\n<blockquote>\n<p>I don't see what you mean about \"3rd order\".... by that do you mean that the faces / 2-cells of the graph are first class things?</p>\n</blockquote>\n<p>So, in a regular graph you have vertexes and edges. I am defining a 2-edge as an edge between edges, and 3-edge as an edge between 2-edges. <br>\nOver in <a href=\"#narrow/stream/229199-learning.3A-questions/topic/Higher-order.20graphs\">this topic</a>  I asked whether the concept of a higher order graph existed in mathematical discourse. To my surprise the answer was that it doesn't exactly exist. Something called a globular set comes close, but adds extra equational constrains onto the higher order network structure. </p>\n<p>I am thinking of this from the point of view of visual diagrams. So what matters in practice is how many levels of edges between edges one needs to lay out graphically. Since most category theory proofs only use edges between edges (e.g., for natural transformations), my hope is that supporting up to 3-edges should be sufficient. If it turns out that support for more levels is needed, that can always be added later.</p>",
+        "id": 216801404,
+        "sender_full_name": "Avi Craimer",
+        "timestamp": 1605458539
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"275901\">Jules Hedges</span> <a href=\"#narrow/stream/229125-practice.3A-software/topic/category.20theory.20software/near/216786372\">said</a>:</p>\n<blockquote>\n<p>I might suggest that for commutative diagrams snapping to a grid might produce better results than force simulation. Everybody is familiar with grid-based diagrams produced by tikzcd etc, and force simulation might produce some weird shapes</p>\n</blockquote>\n<p>That's a good suggestion. I think I'll provide the option to do either kind of layout. It is useful to have a force layout to get things started so at least your elements are not all on top of each other. Then you could move things around and pin them to a grid if you like. </p>\n<p>I imagine it might be useful to pin certain elements and then allow other elements to be automatically positioned with a force simulation that respects the fixed elements. Ideally, this gives the best of both worlds and avoids the need to manually position everything.</p>",
+        "id": 216801564,
+        "sender_full_name": "Avi Craimer",
+        "timestamp": 1605458706
+    }
+]

@@ -1,0 +1,986 @@
+[
+    {
+        "content": "<p>Can standard finite-dimensional linear algebra techniques (particularly vectors and matrices) be generalised to work in arbitrary symmetric monoidal categories? In particular, do they generalise to Rel? See the link below for some more background.</p>\n<p>I think this should be a simple question, but I came across an odd coherence problem when working out the details, so I wanted to check that I'm not on a wild goose chase. <a href=\"https://math.stackexchange.com/questions/3608344/linear-algebra-in-rel\" title=\"https://math.stackexchange.com/questions/3608344/linear-algebra-in-rel\">https://math.stackexchange.com/questions/3608344/linear-algebra-in-rel</a></p>",
+        "id": 193871279,
+        "sender_full_name": "James Wood",
+        "timestamp": 1586856757
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"281583\">James Wood</span> <a href=\"#narrow/stream/229199-learning.3A-basic.20questions/topic/Linear.20algebra.20in.20Rel/near/193871279\" title=\"#narrow/stream/229199-learning.3A-basic.20questions/topic/Linear.20algebra.20in.20Rel/near/193871279\">said</a>:</p>\n<blockquote>\n<p>Can standard finite-dimensional linear algebra techniques (particularly vectors and matrices) be generalised to work in arbitrary symmetric monoidal categories? In particular, do they generalise to Rel? See the link below for some more background.</p>\n<p>I think this should be a simple question, but I came across an odd coherence problem when working out the details, so I wanted to check that I'm not on a wild goose chase. <a href=\"https://math.stackexchange.com/questions/3608344/linear-algebra-in-rel\" title=\"https://math.stackexchange.com/questions/3608344/linear-algebra-in-rel\">https://math.stackexchange.com/questions/3608344/linear-algebra-in-rel</a></p>\n</blockquote>\n<p>Yes. Actually, when you look at stuff like graphical linear algebra, the underlying category is exactly linear relations.</p>",
+        "id": 193873012,
+        "sender_full_name": "Fabrizio Genovese",
+        "timestamp": 1586857700
+    },
+    {
+        "content": "<p>FD-Vect and Rel are extraordinarily similar as categories. Indeed, Rel exhibits many \"quantum-like\" properties that make it similar to FD-Vect (for instance, you have a Frobenius structure on every object, you have a dagger, you have cups/caps, the monoidal product is not a cartesian product etc). These similarities have been extensively studied, from different points of view.</p>",
+        "id": 193873333,
+        "sender_full_name": "Fabrizio Genovese",
+        "timestamp": 1586857868
+    },
+    {
+        "content": "<p>I'd always taken the underlying category there to be (Set-)FDVectₖ, with its biproduct. I guess this makes it a good place to look at generalising, but I'd still need to actually construct the biproduct for Rel-FDVectₖ. Thanks for the tip.</p>",
+        "id": 193873416,
+        "sender_full_name": "James Wood",
+        "timestamp": 1586857919
+    },
+    {
+        "content": "<p>there where? in Rel?</p>",
+        "id": 193873491,
+        "sender_full_name": "Fabrizio Genovese",
+        "timestamp": 1586857946
+    },
+    {
+        "content": "<p>Note: for these purposes, I don't care about the similarity between FDVect and Rel (though they of course exist). Rel-FDVect is potentially quite different to Set-FDVect, and that's what I'm trying to find out.</p>",
+        "id": 193873597,
+        "sender_full_name": "James Wood",
+        "timestamp": 1586858001
+    },
+    {
+        "content": "<p>Well, the product in Rel is the cartesian product of Set, but that's not a cartesian product in Rel <span aria-label=\"slight smile\" class=\"emoji emoji-1f642\" role=\"img\" title=\"slight smile\">:slight_smile:</span></p>",
+        "id": 193873613,
+        "sender_full_name": "Fabrizio Genovese",
+        "timestamp": 1586858011
+    },
+    {
+        "content": "<p>“there” being Graphical Linear Algebra</p>",
+        "id": 193873709,
+        "sender_full_name": "James Wood",
+        "timestamp": 1586858044
+    },
+    {
+        "content": "<p>Oh. I'm quite sure Pawel's graphical linear algebra is over the category of linear relations <span aria-label=\"slight smile\" class=\"emoji emoji-1f642\" role=\"img\" title=\"slight smile\">:slight_smile:</span></p>",
+        "id": 193873779,
+        "sender_full_name": "Fabrizio Genovese",
+        "timestamp": 1586858084
+    },
+    {
+        "content": "<p>Do you have a reference for that?</p>",
+        "id": 193873824,
+        "sender_full_name": "James Wood",
+        "timestamp": 1586858113
+    },
+    {
+        "content": "<p>Quite recently, along with Fabio Zanasi and <span class=\"user-mention\" data-user-id=\"277342\">@Robin Piedeleu</span> , they also started to look into additive relations, that turn out to be very interesting for many reasons</p>",
+        "id": 193873862,
+        "sender_full_name": "Fabrizio Genovese",
+        "timestamp": 1586858143
+    },
+    {
+        "content": "<p><a href=\"https://graphicallinearalgebra.net/2015/12/26/27-linear-relations/\" title=\"https://graphicallinearalgebra.net/2015/12/26/27-linear-relations/\">https://graphicallinearalgebra.net/2015/12/26/27-linear-relations/</a></p>",
+        "id": 193873907,
+        "sender_full_name": "Fabrizio Genovese",
+        "timestamp": 1586858162
+    },
+    {
+        "content": "<p>IIUC, though, linear relations are still too Set-ish for me. I want to work with rings in Rel, rather than rings in Set, and I doubt this lines up with linear relations.</p>",
+        "id": 193874163,
+        "sender_full_name": "James Wood",
+        "timestamp": 1586858291
+    },
+    {
+        "content": "<p>But yeah, this seems like a good refinement of the question: how far can we generalise Graphical Linear Algebra?</p>",
+        "id": 193874452,
+        "sender_full_name": "James Wood",
+        "timestamp": 1586858447
+    },
+    {
+        "content": "<p>Graphical linear algebra seems to study something different than what you're asking: it starts with a semiring R (implicitly in Set) and gives a graphical language for R-linear relations, i.e., relations closed under the relevant operations of the semiring. This delineates a subcategory of Rel in which you can do R-linear algebra. </p>\n<p>I suppose you could start with a semiring object in Rel itself but you would lose some of the axioms (namely the ones encoding the fact that the semiring addition and scalar action are maps, that is, are single valued and total, which guarantee that certain diagrams slide past each other nicely).</p>",
+        "id": 193876556,
+        "sender_full_name": "Robin Piedeleu",
+        "timestamp": 1586859699
+    },
+    {
+        "content": "<p>And, now that I think of it, these axioms allow you to represent matrices in this setting so I'm not sure how you would be doing linear algebra without them. Although, the operations of a Rel semiring object would be lax in the sense of Carboni and Walters' Cartesian bicategories. Perhaps there is still something to say after all...</p>",
+        "id": 193877139,
+        "sender_full_name": "Robin Piedeleu",
+        "timestamp": 1586860057
+    },
+    {
+        "content": "<p>Do you have an example of such a diagram? I came across my problems before when trying to prove associativity of matrix multiplication, which seemed to require single-valuedness. I couldn't think of a counterexample, largely because I can't think of any interesting examples of Rel-semirings.</p>",
+        "id": 193877885,
+        "sender_full_name": "James Wood",
+        "timestamp": 1586860519
+    },
+    {
+        "content": "<p>My guess at the moment would be that vectors still work nicely, but closure is more complicated.</p>",
+        "id": 193878076,
+        "sender_full_name": "James Wood",
+        "timestamp": 1586860640
+    },
+    {
+        "content": "<p>Matrices in graphical linear algebra are represented by diagrams made up of scalars, copying and adding, all going in the same direction (you can find an intro here: <a href=\"https://graphicallinearalgebra.net/2015/06/09/matrices-diagrammatically/\" title=\"https://graphicallinearalgebra.net/2015/06/09/matrices-diagrammatically/\">https://graphicallinearalgebra.net/2015/06/09/matrices-diagrammatically/</a>). And this is a summary of all the axioms for GLA over a field: <a href=\"https://graphicallinearalgebra.files.wordpress.com/2015/11/ih.gif\" title=\"https://graphicallinearalgebra.files.wordpress.com/2015/11/ih.gif\">https://graphicallinearalgebra.files.wordpress.com/2015/11/ih.gif</a>. </p>\n<div class=\"message_inline_image\"><a href=\"https://graphicallinearalgebra.files.wordpress.com/2015/11/ih.gif\" title=\"https://graphicallinearalgebra.files.wordpress.com/2015/11/ih.gif\"><img src=\"https://graphicallinearalgebra.files.wordpress.com/2015/11/ih.gif\"></a></div><p>The following law would, for example, fail in general for a semiring (or just monoid) object in Rel:<br>\n<a href=\"/user_uploads/21317/TyDTBkdCAG9XhMurDdBIkqp3/image.png\" title=\"image.png\">image.png</a> <br>\nAs you say, it would be needed to prove associativity of matrix composition, as you would need to push the layer of additions followed by copy past each other to obtain a layer of copy followed by additions instead.</p>\n<div class=\"message_inline_image\"><a href=\"/user_uploads/21317/TyDTBkdCAG9XhMurDdBIkqp3/image.png\" title=\"image.png\"><img src=\"/user_uploads/21317/TyDTBkdCAG9XhMurDdBIkqp3/image.png\"></a></div>",
+        "id": 193880303,
+        "sender_full_name": "Robin Piedeleu",
+        "timestamp": 1586862113
+    },
+    {
+        "content": "<p>I think this should be part of the definition of a semiring in Rel. The definition contains an extra structure: the comonoid that does copying and discarding, and this structure obeys some homomorphism equations like these.</p>",
+        "id": 193880644,
+        "sender_full_name": "James Wood",
+        "timestamp": 1586862301
+    },
+    {
+        "content": "<p>If you force a monoid in Rel to satisfy these equalities, then it should be a monoid in Set too---they just say that the monoid operation is total and single valued.</p>",
+        "id": 193880805,
+        "sender_full_name": "Robin Piedeleu",
+        "timestamp": 1586862396
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"277342\">Robin Piedeleu</span> <a href=\"#narrow/stream/229199-learning.3A-basic.20questions/topic/Linear.20algebra.20in.20Rel/near/193880805\" title=\"#narrow/stream/229199-learning.3A-basic.20questions/topic/Linear.20algebra.20in.20Rel/near/193880805\">said</a>:</p>\n<blockquote>\n<p>If you force a monoid in Rel to satisfy these equalities, then it should be a monoid in Set too---they just say that the monoid operation is total and single valued.</p>\n</blockquote>\n<p>Yes, this is one of the most useful results in Cartesian Bicategories I if I recall correctly</p>",
+        "id": 193881259,
+        "sender_full_name": "Fabrizio Genovese",
+        "timestamp": 1586862707
+    },
+    {
+        "content": "<p>Even for an otherwise arbitrary comonoid?</p>",
+        "id": 193886277,
+        "sender_full_name": "James Wood",
+        "timestamp": 1586865921
+    },
+    {
+        "content": "<p>It's clear to see for the copy/delete comonoid, but not in general.</p>",
+        "id": 193886377,
+        "sender_full_name": "James Wood",
+        "timestamp": 1586865970
+    },
+    {
+        "content": "<p>Additionally, I don't expect the comonoid to be natural, just that it respects the additive structure (and maybe the multiplicative structure, but I'm not sure).</p>",
+        "id": 193886714,
+        "sender_full_name": "James Wood",
+        "timestamp": 1586866213
+    },
+    {
+        "content": "<p>Yes, basically for a function f being an homomorphism wrt copy means that it's single valued, while being a homomorphism wrt delete means it's total. So if you have both then you have a function.</p>",
+        "id": 193887111,
+        "sender_full_name": "Fabrizio Genovese",
+        "timestamp": 1586866444
+    },
+    {
+        "content": "<p>Right, so when I don't assume that it's copy/delete, I still have a chance of getting interesting (non-Set) stuff.</p>",
+        "id": 193887386,
+        "sender_full_name": "James Wood",
+        "timestamp": 1586866597
+    },
+    {
+        "content": "<p>In fact, by symmetry it must be possible, unless the laws involving multiplication screw things up. Take the addition to be cocopy/codelete, and the comonoid to be the opposite of some non-trivial addition operator from Set. Then this doesn't really have a Set analogue.</p>",
+        "id": 193890656,
+        "sender_full_name": "James Wood",
+        "timestamp": 1586868332
+    },
+    {
+        "content": "<p>That summary of axioms is useful, though. I guess the point is that GLA works in an arbitrary symmetric monoidal category in which all them laws hold.</p>",
+        "id": 193891139,
+        "sender_full_name": "James Wood",
+        "timestamp": 1586868568
+    },
+    {
+        "content": "<p>How important are Copyingᵒᵖ and Addingᵒᵖ?</p>",
+        "id": 193891161,
+        "sender_full_name": "James Wood",
+        "timestamp": 1586868587
+    },
+    {
+        "content": "<p>(And the backwards scalars?)</p>",
+        "id": 193891271,
+        "sender_full_name": "James Wood",
+        "timestamp": 1586868632
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"281583\">James Wood</span> <a href=\"#narrow/stream/229199-learning.3A-basic.20questions/topic/Linear.20algebra.20in.20Rel/near/193887386\" title=\"#narrow/stream/229199-learning.3A-basic.20questions/topic/Linear.20algebra.20in.20Rel/near/193887386\">said</a>:</p>\n<blockquote>\n<p>Right, so when I don't assume that it's copy/delete, I still have a chance of getting interesting (non-Set) stuff.</p>\n</blockquote>\n<p>But it is copy/delete if it acts as an homomorphism for any other morphism composable with it!</p>",
+        "id": 193891650,
+        "sender_full_name": "Fabrizio Genovese",
+        "timestamp": 1586868852
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"281583\">James Wood</span> <a href=\"#narrow/stream/229199-learning.3A-basic.20questions/topic/Linear.20algebra.20in.20Rel/near/193891161\" title=\"#narrow/stream/229199-learning.3A-basic.20questions/topic/Linear.20algebra.20in.20Rel/near/193891161\">said</a>:</p>\n<blockquote>\n<p>How important are Copyingᵒᵖ and Addingᵒᵖ?</p>\n</blockquote>\n<p>Very important since in Rel you don't have a real direction of morphisms, and things can always be flipped!</p>",
+        "id": 193891704,
+        "sender_full_name": "Fabrizio Genovese",
+        "timestamp": 1586868885
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276438\">Fabrizio Genovese</span> <a href=\"#narrow/stream/229199-learning.3A-basic.20questions/topic/Linear.20algebra.20in.20Rel/near/193891650\" title=\"#narrow/stream/229199-learning.3A-basic.20questions/topic/Linear.20algebra.20in.20Rel/near/193891650\">said</a>:</p>\n<blockquote>\n<p><span class=\"user-mention silent\" data-user-id=\"281583\">James Wood</span> <a href=\"#narrow/stream/229199-learning.3A-basic.20questions/topic/Linear.20algebra.20in.20Rel/near/193887386\" title=\"#narrow/stream/229199-learning.3A-basic.20questions/topic/Linear.20algebra.20in.20Rel/near/193887386\">said</a>:</p>\n<blockquote>\n<p>Right, so when I don't assume that it's copy/delete, I still have a chance of getting interesting (non-Set) stuff.</p>\n</blockquote>\n<p>But it is copy/delete if it acts as an homomorphism for any other morphism composable with it!</p>\n</blockquote>\n<p>Right, this was the result I was thinking of, but it's easy enough to stay clear of.</p>",
+        "id": 193892506,
+        "sender_full_name": "James Wood",
+        "timestamp": 1586869274
+    },
+    {
+        "content": "<p>You may be interested in the \"Linear Algebra of Programming\" <a href=\"https://hackage.haskell.org/package/laop-0.1.0.0\" title=\"https://hackage.haskell.org/package/laop-0.1.0.0\">https://hackage.haskell.org/package/laop-0.1.0.0</a></p>",
+        "id": 193904493,
+        "sender_full_name": "Philip Zucker",
+        "timestamp": 1586874097
+    },
+    {
+        "content": "<p>Maybe also my blog post? But it kind of sounds like you're shooting for something more formal <a href=\"http://www.philipzucker.com/linear-relation-algebra-of-circuits-with-hmatrix/\" title=\"http://www.philipzucker.com/linear-relation-algebra-of-circuits-with-hmatrix/\">http://www.philipzucker.com/linear-relation-algebra-of-circuits-with-hmatrix/</a></p>",
+        "id": 193904710,
+        "sender_full_name": "Philip Zucker",
+        "timestamp": 1586874157
+    },
+    {
+        "content": "<p>As far as I understand, this is replacing FDVect by Rel, whereas I want to replace Set by Rel in the definition of FDVect.</p>",
+        "id": 193936414,
+        "sender_full_name": "James Wood",
+        "timestamp": 1586887876
+    },
+    {
+        "content": "<p>What do you mean, \"replace Set by Rel in the definition of FDVect\"?  Can you define the category you're hinting at here?</p>",
+        "id": 193937875,
+        "sender_full_name": "John Baez",
+        "timestamp": 1586888612
+    },
+    {
+        "content": "<p>It might be something I know...</p>",
+        "id": 193937884,
+        "sender_full_name": "John Baez",
+        "timestamp": 1586888618
+    },
+    {
+        "content": "<p>In Set, you can state what a ring is, and take modules over that category of rings to get the usual notion of module. When you take the full subcategory of finite-dimensional modules, it is well behaved in various ways that I'm interested in. Instead of stating what a ring is in Set, I want a notion of ring in Rel, over which I can take modules and focus on the finite-dimensional ones (finite-dimensional in the sense that elements are finite Rel-⊗s of ring elements, similar to how in Set the elements are finite Set-×s of ring elements. This should correspond to something like the FDVect biproduct). I know that the notion of ring in Rel will contain the extra structure of a commutative comonoid (necessarily trivial in Set), and this comonoid will form a bialgebra with the addition monoid.</p>",
+        "id": 193950712,
+        "sender_full_name": "James Wood",
+        "timestamp": 1586894950
+    },
+    {
+        "content": "<p>You can define a ring object in any category with finite products.   The<a href=\"https://ncatlab.org/nlab/show/Rel#limits_and_colimits\" title=\"https://ncatlab.org/nlab/show/Rel#limits_and_colimits\"> category Rel has finite products</a>.  So there's that.  That may not be what you want, but it's probably worth figuring out what it amounts to.</p>",
+        "id": 193955213,
+        "sender_full_name": "John Baez",
+        "timestamp": 1586897365
+    },
+    {
+        "content": "<p>I suspect that instead you may want to use the \"tensor product\" monoidal structure on Rel and define a ring in Rel to be a monoid with respect to this monoidal structure.</p>",
+        "id": 193955397,
+        "sender_full_name": "John Baez",
+        "timestamp": 1586897434
+    },
+    {
+        "content": "<p>For example, an ordinary ring is a monoid in <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"false\">(</mo><mrow><mi mathvariant=\"sans-serif\">A</mi><mi mathvariant=\"sans-serif\">b</mi><mi mathvariant=\"sans-serif\">G</mi><mi mathvariant=\"sans-serif\">p</mi></mrow><mo separator=\"true\">,</mo><mo>⊗</mo><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">(\\mathsf{AbGp}, \\otimes)</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mopen\">(</span><span class=\"mord\"><span class=\"mord mathsf\">A</span><span class=\"mord mathsf\">b</span><span class=\"mord mathsf\">G</span><span class=\"mord mathsf\">p</span></span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mord\">⊗</span><span class=\"mclose\">)</span></span></span></span>.</p>",
+        "id": 193955438,
+        "sender_full_name": "John Baez",
+        "timestamp": 1586897460
+    },
+    {
+        "content": "<p>Feel free to ask me what the hell I mean by all this!</p>",
+        "id": 193955515,
+        "sender_full_name": "John Baez",
+        "timestamp": 1586897505
+    },
+    {
+        "content": "<p>I'm kinda working from the bottom up, and know that ultimately I want to be talking about predicates on tuples of things, so it makes sense to me to just go straight for the Rel tensor product.</p>",
+        "id": 193956626,
+        "sender_full_name": "James Wood",
+        "timestamp": 1586898042
+    },
+    {
+        "content": "<p>And I have some monoids in (Rel, ⊗) lying around which are going to come in handy eventually.</p>",
+        "id": 193956715,
+        "sender_full_name": "James Wood",
+        "timestamp": 1586898103
+    },
+    {
+        "content": "<p>But yeah, I'm with you so far.</p>",
+        "id": 193956876,
+        "sender_full_name": "James Wood",
+        "timestamp": 1586898188
+    },
+    {
+        "content": "<p>(Interesting question whether I can state Rel-rings as monoids in a category of Rel-abelian groups, but it's going to be difficult to prove that the latter is monoidal)</p>",
+        "id": 193957067,
+        "sender_full_name": "James Wood",
+        "timestamp": 1586898303
+    },
+    {
+        "content": "<p>Okay, so I suggest that a monoid in  (Rel, ⊗) might be the best idea of a \"ring in Rel\".</p>",
+        "id": 193957223,
+        "sender_full_name": "John Baez",
+        "timestamp": 1586898385
+    },
+    {
+        "content": "<p>But I don't think they involve \"Rel-abelian groups\".  In fact I have no idea how to define an abelian group in  (Rel, ⊗); I can only do it in a category with finite products, because the group axioms involve duplicating and deleting variables.</p>",
+        "id": 193957342,
+        "sender_full_name": "John Baez",
+        "timestamp": 1586898462
+    },
+    {
+        "content": "<p>The closest thing to a group in a general symmetric monoidal category is a \"Hopf monoid\".</p>",
+        "id": 193957413,
+        "sender_full_name": "John Baez",
+        "timestamp": 1586898486
+    },
+    {
+        "content": "<p>For this, I assume a commutative comonoid structure, just like with Hopf algebras.</p>",
+        "id": 193957436,
+        "sender_full_name": "James Wood",
+        "timestamp": 1586898506
+    },
+    {
+        "content": "<p>Okay, it sounds like your \"Rel-abelian group\" might be a commutative and cocommutative Hopf monoid in (Rel, ⊗).</p>",
+        "id": 193957523,
+        "sender_full_name": "John Baez",
+        "timestamp": 1586898571
+    },
+    {
+        "content": "<p>That's the usual way to try to mimic the concept of abelian group in a symmetric monoidal category.</p>",
+        "id": 193957547,
+        "sender_full_name": "John Baez",
+        "timestamp": 1586898594
+    },
+    {
+        "content": "<p>Now you say it, yeah, that sounds right.</p>",
+        "id": 193957605,
+        "sender_full_name": "James Wood",
+        "timestamp": 1586898607
+    },
+    {
+        "content": "<p>I do imagine that the category of these things is monoidal (in Rel, I imagine you can still form integers and lists and stuff), so that gives a candidate definition of a Rel-ring.</p>",
+        "id": 193957789,
+        "sender_full_name": "James Wood",
+        "timestamp": 1586898725
+    },
+    {
+        "content": "<p>Ultimately, I'd want to work it out in simpler terms, because I don't like working with these explicitly constructed tensor products so much.</p>",
+        "id": 193957959,
+        "sender_full_name": "James Wood",
+        "timestamp": 1586898838
+    },
+    {
+        "content": "<p>The category of Hopf monoids in a symmetric monoidal category with finite colimits is always <em>itself</em> symmetric monoidal.</p>",
+        "id": 193958325,
+        "sender_full_name": "John Baez",
+        "timestamp": 1586899075
+    },
+    {
+        "content": "<p>Nice <span aria-label=\"+1\" class=\"emoji emoji-1f44d\" role=\"img\" title=\"+1\">:+1:</span></p>",
+        "id": 193958378,
+        "sender_full_name": "James Wood",
+        "timestamp": 1586899095
+    },
+    {
+        "content": "<p>To show this, you copy the way people usually define the tensor product of Hopf algebras in (Vect, ⊗).</p>",
+        "id": 193958469,
+        "sender_full_name": "John Baez",
+        "timestamp": 1586899169
+    },
+    {
+        "content": "<p>Though, as an aside, is this commutative Hopf monoids? Because Hopf monoids in Set are just groups, which don't form a monoidal category IIRC.</p>",
+        "id": 193958570,
+        "sender_full_name": "James Wood",
+        "timestamp": 1586899230
+    },
+    {
+        "content": "<p>Or rather, they don't have a tensor product.</p>",
+        "id": 193958618,
+        "sender_full_name": "James Wood",
+        "timestamp": 1586899268
+    },
+    {
+        "content": "<p>Umm, let me see: Hopf monoids in (Set, x) are just groups... yes, that sounds right.   I could be wrong, but I bet their tensor product will work out to be just the cartesian product of groups.</p>",
+        "id": 193958977,
+        "sender_full_name": "John Baez",
+        "timestamp": 1586899473
+    },
+    {
+        "content": "<p>In fact maybe the stuff about \"finite colimits\" was unnecessary.  To form a tensor product of Hopf monoids M and N in a symmetric monoidal category (C, <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>⊗</mo></mrow><annotation encoding=\"application/x-tex\">\\otimes</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.66666em;vertical-align:-0.08333em;\"></span><span class=\"mord\">⊗</span></span></span></span>) you don't need to mod out by any relations.  You just form M <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>⊗</mo></mrow><annotation encoding=\"application/x-tex\">\\otimes</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.66666em;vertical-align:-0.08333em;\"></span><span class=\"mord\">⊗</span></span></span></span> N and show this gets a Hopf monoid structure from those of M and N, right?</p>",
+        "id": 193959171,
+        "sender_full_name": "John Baez",
+        "timestamp": 1586899593
+    },
+    {
+        "content": "<p>In the case of (Set, x), this is just showing that given groups G and H, GxH gets a group structure.</p>",
+        "id": 193959227,
+        "sender_full_name": "John Baez",
+        "timestamp": 1586899636
+    },
+    {
+        "content": "<p>For Abelian groups, that G ⊗ H is something quite complicated (a big quotient of the free group over ×-pairs of the underlying sets). But yeah, I guess that it forms an Abelian group again comes down to that the individual pairs do.</p>",
+        "id": 193959533,
+        "sender_full_name": "James Wood",
+        "timestamp": 1586899813
+    },
+    {
+        "content": "<p>Hence I don't like working with it. <span aria-label=\"stuck out tongue\" class=\"emoji emoji-1f61d\" role=\"img\" title=\"stuck out tongue\">:stuck_out_tongue:</span></p>",
+        "id": 193959599,
+        "sender_full_name": "James Wood",
+        "timestamp": 1586899880
+    },
+    {
+        "content": "<p>But it's good for design.</p>",
+        "id": 193959622,
+        "sender_full_name": "James Wood",
+        "timestamp": 1586899904
+    },
+    {
+        "content": "<p>I'm saying if you've got Hopf monoids in Set coming from abelian groups G and H, their tensor product - the usual tensor product of Hopf monoids - corresponds to the abelian group GxH, not the abelian group G ⊗ H.</p>",
+        "id": 193961112,
+        "sender_full_name": "John Baez",
+        "timestamp": 1586900939
+    },
+    {
+        "content": "<p>So yeah, you may not want to use the tensor product of Hopf monoids!</p>",
+        "id": 193961128,
+        "sender_full_name": "John Baez",
+        "timestamp": 1586900959
+    },
+    {
+        "content": "<p>Yeah, the criterion for all of this is that I'm really thinking in terms of an arbitrary symmetric monoidal category (C, ⊗) (which may have extra structure/properties as long as both Set and Rel have them), and when I specialise this to C = Set and ⊗ = ×, I get back normal linear algebra.</p>",
+        "id": 193961619,
+        "sender_full_name": "James Wood",
+        "timestamp": 1586901293
+    },
+    {
+        "content": "<p>Right.</p>",
+        "id": 193961883,
+        "sender_full_name": "John Baez",
+        "timestamp": 1586901477
+    },
+    {
+        "content": "<p>As a mildly interesting data point, I've worked a lot of this through in (Poset, ×) before (though I bet people take this for granted all the time).</p>",
+        "id": 193962192,
+        "sender_full_name": "James Wood",
+        "timestamp": 1586901668
+    },
+    {
+        "content": "<p>So what do you get there?</p>",
+        "id": 193962316,
+        "sender_full_name": "John Baez",
+        "timestamp": 1586901735
+    },
+    {
+        "content": "<p>Normal linear algebra, but everything is monotonic with respect to the order in the way you'd expect.</p>",
+        "id": 193962392,
+        "sender_full_name": "James Wood",
+        "timestamp": 1586901781
+    },
+    {
+        "content": "<p>Even multiplication...?</p>",
+        "id": 193962431,
+        "sender_full_name": "Reid Barton",
+        "timestamp": 1586901802
+    },
+    {
+        "content": "<p>I was only working with semirings, semimodules, &amp;c, so I didn't even have to consider negation being contravariant.</p>",
+        "id": 193962479,
+        "sender_full_name": "James Wood",
+        "timestamp": 1586901841
+    },
+    {
+        "content": "<p>I didn't really do it as “in Poset”; I just assumed that every basic operation was monotonic, and got out that every derived operation is monotonic too. Maybe linear algebra in Poset is slightly different; I'm not sure.</p>",
+        "id": 193962654,
+        "sender_full_name": "James Wood",
+        "timestamp": 1586901938
+    },
+    {
+        "content": "<p>After all, working in semirings doesn't preclude negative elements. Maybe semirings in Poset do, though.</p>",
+        "id": 193962727,
+        "sender_full_name": "James Wood",
+        "timestamp": 1586901974
+    },
+    {
+        "content": "<p>Then it becomes interesting to ask whether there even are non-trivial rings in Poset.</p>",
+        "id": 193962838,
+        "sender_full_name": "James Wood",
+        "timestamp": 1586902051
+    },
+    {
+        "content": "<p>Right, if + and × are monotonic, but - is contravariantly monotonic, then x ≤ y gives both -y ≤ -x and (-1)×x ≤ (-1)×y, so -x ≤ -y. So -x = -y, and therefore x = y. If - is covariantly monotonic, then there's probably some other silly derivation you can do. I can't think of any non-trivial models, anyway.</p>",
+        "id": 193964018,
+        "sender_full_name": "James Wood",
+        "timestamp": 1586902799
+    },
+    {
+        "content": "<p>It could be better to look at rigs, which are like rings but where addition gives just a commutative monoid, not an abelian group.  For example <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"double-struck\">N</mi></mrow><annotation encoding=\"application/x-tex\">\\mathbb{N}</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.68889em;vertical-align:0em;\"></span><span class=\"mord\"><span class=\"mord mathbb\">N</span></span></span></span></span> is a rig.</p>",
+        "id": 193964335,
+        "sender_full_name": "John Baez",
+        "timestamp": 1586903009
+    },
+    {
+        "content": "<p>I do a lot of work with rigs.</p>",
+        "id": 193964367,
+        "sender_full_name": "John Baez",
+        "timestamp": 1586903022
+    },
+    {
+        "content": "<p>Ah, I actually want rigs. I just say rings because mathematicians usually find them more familiar.</p>",
+        "id": 193964445,
+        "sender_full_name": "James Wood",
+        "timestamp": 1586903061
+    },
+    {
+        "content": "<p>Also rig = semiring in my dialect.</p>",
+        "id": 193964497,
+        "sender_full_name": "James Wood",
+        "timestamp": 1586903111
+    },
+    {
+        "content": "<p>Okay.  If you use rigs you don't need to worry about negation being order-reversing.</p>",
+        "id": 193964644,
+        "sender_full_name": "John Baez",
+        "timestamp": 1586903191
+    },
+    {
+        "content": "<p>I say \"rig\" in part because there's an annoying disanalogy </p>\n<p>group : semigroup ?? ring : semiring</p>",
+        "id": 193964693,
+        "sender_full_name": "John Baez",
+        "timestamp": 1586903229
+    },
+    {
+        "content": "<p>I'm one of these **** who doesn't believe in semigroups. <span aria-label=\"wink\" class=\"emoji emoji-1f609\" role=\"img\" title=\"wink\">:wink:</span></p>",
+        "id": 193964760,
+        "sender_full_name": "James Wood",
+        "timestamp": 1586903282
+    },
+    {
+        "content": "<p>The people I speak to (and audiences I write for) typically want a reminder of the definition, so I don't need a precise word.</p>",
+        "id": 193965111,
+        "sender_full_name": "James Wood",
+        "timestamp": 1586903492
+    },
+    {
+        "content": "<p>Also, if not “semimodule”, what word do you use there? I guess just “module” works, in a sense.</p>",
+        "id": 193965208,
+        "sender_full_name": "James Wood",
+        "timestamp": 1586903553
+    },
+    {
+        "content": "<p>obligatory nlab link <a href=\"https://ncatlab.org/nlab/show/matrix+calculus\" title=\"https://ncatlab.org/nlab/show/matrix+calculus\">https://ncatlab.org/nlab/show/matrix+calculus</a></p>",
+        "id": 193969864,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1586907843
+    },
+    {
+        "content": "<p>haha re: rig rather than ring—i spent a pretty long time thinking that Rel on finite sets was equivalent to FinVect over F₂ before realizing that it was actually over the boolean rig 2 (classically) <span aria-label=\"sweat smile\" class=\"emoji emoji-1f605\" role=\"img\" title=\"sweat smile\">:sweat_smile:</span></p>",
+        "id": 193969932,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1586907910
+    },
+    {
+        "content": "<p>OH lmao i misread what this as about as being, like, interpreting stuff from linear algebra into Rel instead of FinVect, rather than objects internal to Rel instead of Set—sorry, link is not so relevant then i think</p>",
+        "id": 193970079,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1586908052
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"281583\">James Wood</span> <a href=\"#narrow/stream/229199-learning.3A-basic.20questions/topic/Linear.20algebra.20in.20Rel/near/193965208\" title=\"#narrow/stream/229199-learning.3A-basic.20questions/topic/Linear.20algebra.20in.20Rel/near/193965208\">said</a>:</p>\n<blockquote>\n<p>Also, if not “semimodule”, what word do you use there? I guess just “module” works, in a sense.</p>\n</blockquote>\n<p>I speak of \"modules\" of rigs, but I probably would define them if I used that notion in a paper, since it's not really standard yet.</p>",
+        "id": 193988718,
+        "sender_full_name": "John Baez",
+        "timestamp": 1586931744
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276072\">sarahzrf</span> <a href=\"#narrow/stream/229199-learning.3A-basic.20questions/topic/Linear.20algebra.20in.20Rel/near/193969932\" title=\"#narrow/stream/229199-learning.3A-basic.20questions/topic/Linear.20algebra.20in.20Rel/near/193969932\">said</a>:</p>\n<blockquote>\n<p>haha re: rig rather than ring—i spent a pretty long time thinking that Rel on finite sets was equivalent to FinVect over F₂ before realizing that it was actually over the boolean rig 2 (classically) <span aria-label=\"sweat smile\" class=\"emoji emoji-1f605\" role=\"img\" title=\"sweat smile\">:sweat_smile:</span></p>\n</blockquote>\n<p>Yes, that's funny.  But it's not a bad confusion to go through, because <a href=\"https://en.wikipedia.org/wiki/Boolean_ring#Relation_to_Boolean_algebras\" title=\"https://en.wikipedia.org/wiki/Boolean_ring#Relation_to_Boolean_algebras\">turning a Boolean algebra into a Boolean ring and vice versa</a> uses exactly the fact that we can define the rig operations in ({0,1}, <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>∨</mo><mo separator=\"true\">,</mo><mo>∧</mo></mrow><annotation encoding=\"application/x-tex\">\\vee, \\wedge</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.75em;vertical-align:-0.19444em;\"></span><span class=\"mord\">∨</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mord\">∧</span></span></span></span>) in terms of the ring operations in (<span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi mathvariant=\"double-struck\">F</mi><mn>2</mn></msub><mo separator=\"true\">,</mo><mo>+</mo><mo separator=\"true\">,</mo><mo>×</mo></mrow><annotation encoding=\"application/x-tex\">\\mathbb{F}_2,+, \\times</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.88333em;vertical-align:-0.19444em;\"></span><span class=\"mord\"><span class=\"mord\"><span class=\"mord mathbb\">F</span></span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.30110799999999993em;\"><span style=\"top:-2.5500000000000003em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">2</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mord\">+</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mord\">×</span></span></span></span>) and vice versa.</p>\n<p>(Maybe this is obvious to you by now, but I remember being excited by it when I first learned about Boolean rings.)</p>",
+        "id": 193988984,
+        "sender_full_name": "John Baez",
+        "timestamp": 1586932040
+    },
+    {
+        "content": "<p>It's sort of weird how the fact that there are exactly 2 rig structures on a 2-element set, up to isomorphism, has such cosmic implications.</p>",
+        "id": 193990006,
+        "sender_full_name": "John Baez",
+        "timestamp": 1586933008
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276072\">sarahzrf</span> <a href=\"#narrow/stream/229199-learning.3A-basic.20questions/topic/Linear.20algebra.20in.20Rel/near/193969864\" title=\"#narrow/stream/229199-learning.3A-basic.20questions/topic/Linear.20algebra.20in.20Rel/near/193969864\">said</a>:</p>\n<blockquote>\n<p>obligatory nlab link <a href=\"https://ncatlab.org/nlab/show/matrix+calculus\" title=\"https://ncatlab.org/nlab/show/matrix+calculus\">https://ncatlab.org/nlab/show/matrix+calculus</a></p>\n</blockquote>\n<p>Don't worry about misreading; the way I stated the problem must have been a little unclear.</p>\n<p>I think this link is still helpful. In particular, it points out that if I can show that Rel-Vect has biproducts, then I'm well on my way. What I don't understand from this page, though, is how it talks about encoding morphisms without talking about closure. I guess these are, like, metatheoretic/external matrices, and I'd still need to show that these structures can be internalised and that they play well with the tensor product.</p>",
+        "id": 193998514,
+        "sender_full_name": "James Wood",
+        "timestamp": 1586939199
+    },
+    {
+        "content": "<p>I would say they are just ordinary/non-internal matrices. You don't want to go around internalizing all of math into Rel, it's just too alien.</p>",
+        "id": 194016865,
+        "sender_full_name": "Reid Barton",
+        "timestamp": 1586951168
+    },
+    {
+        "content": "<p>I don't think I mean “internalise” too formally here (but maybe I do), but I mean to say that I want matrices to be the witness of the monoidal closed structure of Rel-FDVect, which requires these matrices to live inside Rel, rather than the ambient Set in which that article is written.</p>",
+        "id": 194022497,
+        "sender_full_name": "James Wood",
+        "timestamp": 1586954169
+    },
+    {
+        "content": "<p>I suppose “internal Hom” is why I think of “internalise”.</p>",
+        "id": 194022652,
+        "sender_full_name": "James Wood",
+        "timestamp": 1586954280
+    },
+    {
+        "content": "<p>Another thought: maybe a nice representation of external homs is actually enough for what I'm doing, but I have a strong feeling that internal homs will look exactly the same, given that the objects of (Set, ×) and (Rel, ⊗) are the same.</p>",
+        "id": 194023648,
+        "sender_full_name": "James Wood",
+        "timestamp": 1586954799
+    },
+    {
+        "content": "<p>yeah, they are external matrices</p>",
+        "id": 194054498,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1586967019
+    },
+    {
+        "content": "<p>in general, any morphism A + B + C → X × Y × Z × W in any category can be broken down into a 4×3 matrix</p>",
+        "id": 194054757,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1586967149
+    },
+    {
+        "content": "<p>because a morphism out of A + B + C is the same as a triple of morphisms out of the summands, and a morphism into X × Y × Z × W is the same as a quadruple of morphisms into the factors, so a morphism from the former to the latter is the same as a morphism A → X, A → Y, ... B → Z, ... C → W, and you can handily put those into a matrix</p>",
+        "id": 194054992,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1586967249
+    },
+    {
+        "content": "<p>then if you have a morphism X + Y + Z + W → J × K that's a 2×4 matrix, and if there's a canonical identification of X × Y × Z × W with X + Y + Z + W, then you can compose them, and it'll be given by matrix multiplication</p>",
+        "id": 194055115,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1586967316
+    },
+    {
+        "content": "<p>where the sums of morphisms are meaningful because finite biproducts gives a canonical enrichment over cmon</p>",
+        "id": 194055151,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1586967337
+    },
+    {
+        "content": "<p>in FinVect, a basis is exactly the equipment of an object as a biproduct of copies of the base field k, so morphisms between spaces with bases can be broken into matrices of endomorphisms of k, and the endomorphisms of k in FinVect correspond precisely to scalars—hence, linear algebra <span aria-label=\"sparkles\" class=\"emoji emoji-2728\" role=\"img\" title=\"sparkles\">:sparkles:</span></p>",
+        "id": 194055903,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1586967691
+    },
+    {
+        "content": "<p>Cool, this is a really nice way to break it down. Thanks!</p>",
+        "id": 194058290,
+        "sender_full_name": "James Wood",
+        "timestamp": 1586968692
+    },
+    {
+        "content": "<p>btw, if you're gonna be working a bunch with Rel</p>",
+        "id": 194207813,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1586975378
+    },
+    {
+        "content": "<p>a couple of things which you might already know but which i'll share just because ive found them really useful &amp; if you dont already know then theyre good to keep in mind:</p>",
+        "id": 194207957,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1586975423
+    },
+    {
+        "content": "<p>Rel is equivalent to the Kleisli category of the covariant powerset monad on Set</p>",
+        "id": 194207994,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1586975442
+    },
+    {
+        "content": "<p>covariant powerset monad is powerset on objects and has <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>η</mi><mo>=</mo><mi>x</mi><mo>↦</mo><mo stretchy=\"false\">{</mo><mi>x</mi><mo stretchy=\"false\">}</mo></mrow><annotation encoding=\"application/x-tex\">\\eta = x \\mapsto \\{x\\}</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.625em;vertical-align:-0.19444em;\"></span><span class=\"mord mathdefault\" style=\"margin-right:0.03588em;\">η</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.522em;vertical-align:-0.011em;\"></span><span class=\"mord mathdefault\">x</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">↦</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mopen\">{</span><span class=\"mord mathdefault\">x</span><span class=\"mclose\">}</span></span></span></span> and <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>μ</mi><mo>=</mo><mo>⋃</mo></mrow><annotation encoding=\"application/x-tex\">\\mu = \\bigcup</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.625em;vertical-align:-0.19444em;\"></span><span class=\"mord mathdefault\">μ</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1.00001em;vertical-align:-0.25001em;\"></span><span class=\"mop op-symbol small-op\" style=\"position:relative;top:-0.0000050000000000050004em;\">⋃</span></span></span></span>.<br>\na Rel morphism A → B corresponds to the Set morphism A → P(B) which sends each element of A to the set of everything it's related to</p>",
+        "id": 194208212,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1586975545
+    },
+    {
+        "content": "<p>in line with this, u can think of a relation R : A → B as a \"non-deterministic and potentially partial function A → B\"—\"a R b\" means \"R(a) can be b\", and then this works out because we have \"(R ∘ S)(a) can be b\" iff \"R(S(a)) can be b for some S(a)\"</p>",
+        "id": 194208700,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1586975730
+    },
+    {
+        "content": "<p>i've often found relation composition a lot easier to think about in these terms personally :)</p>",
+        "id": 194208901,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1586975818
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276072\">sarahzrf</span> <a href=\"#narrow/stream/229199-learning.3A-basic.20questions/topic/Linear.20algebra.20in.20Rel/near/194054757\" title=\"#narrow/stream/229199-learning.3A-basic.20questions/topic/Linear.20algebra.20in.20Rel/near/194054757\">said</a>:</p>\n<blockquote>\n<p>in general, any morphism A + B + C → X × Y × Z × W in any category can be broken down into a 4×3 matrix,  because a morphism out of A + B + C is the same as a triple of morphisms out of the summands, and a morphism into X × Y × Z × W is the same as a quadruple of morphisms into the factors, so a morphism from the former to the latter is the same as a morphism A → X, A → Y, ... B → Z, ... C → W, and you can handily put those into a matrix.</p>\n</blockquote>\n<p>I didn't see you reach the punchline here, so I'll give it: in Rel products are the same as coproducts, so this simplifies!   We can call the morphism you wrote down A + B + C → X + Y + Z + W, and now these morphisms are easier to compose.</p>\n<p>You <em>did</em> mention that in Vect products are the same as coproducts.</p>",
+        "id": 194209488,
+        "sender_full_name": "John Baez",
+        "timestamp": 1586976106
+    },
+    {
+        "content": "<p>What's going on is that vector spaces are linear maps between free modules over a <em>field</em>, while relations are linear maps between free modules over a <em>rig</em>, namely the boolean rig {0,1}.</p>",
+        "id": 194209686,
+        "sender_full_name": "John Baez",
+        "timestamp": 1586976203
+    },
+    {
+        "content": "<p>In any category of free modules over a rig, products are the same as coproducts... so we're doing matrix algebra.</p>",
+        "id": 194209747,
+        "sender_full_name": "John Baez",
+        "timestamp": 1586976232
+    },
+    {
+        "content": "<p>A relation is a matrix of booleans.</p>",
+        "id": 194209765,
+        "sender_full_name": "John Baez",
+        "timestamp": 1586976241
+    },
+    {
+        "content": "<p>of <em>truth values</em> <span aria-label=\"weary\" class=\"emoji emoji-1f629\" role=\"img\" title=\"weary\">:weary:</span></p>",
+        "id": 194210238,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1586976436
+    },
+    {
+        "content": "<p>actually, do the relations between infinite sets correspond to linear things?</p>",
+        "id": 194210397,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1586976503
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276072\">sarahzrf</span> <a href=\"#narrow/stream/229199-learning.3A-basic.20questions/topic/Linear.20algebra.20in.20Rel/near/194207994\" title=\"#narrow/stream/229199-learning.3A-basic.20questions/topic/Linear.20algebra.20in.20Rel/near/194207994\">said</a>:</p>\n<blockquote>\n<p>Rel is equivalent to the Kleisli category of the covariant powerset monad on Set</p>\n</blockquote>\n<p>I remember redescovering this one myself. There's also some relationship between (Set-)FDVect and and the Kleisli category of the monad of formal linear combinations (the one that gives rise to free vector spaces from a basis).</p>",
+        "id": 194210418,
+        "sender_full_name": "James Wood",
+        "timestamp": 1586976510
+    },
+    {
+        "content": "<p>there is indeed!</p>",
+        "id": 194210469,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1586976533
+    },
+    {
+        "content": "<p>that's the monad of the adjunction between Set and FinVect</p>",
+        "id": 194210515,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1586976552
+    },
+    {
+        "content": "<p>that adjunction is monadic, i think? actually i'm not 100% sure...</p>",
+        "id": 194210554,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1586976574
+    },
+    {
+        "content": "<p>but if it is, that means that FinVect is equivalent to the eilenberg-moore category, of which the kleisli category is canonically equivalent to a subcategory</p>",
+        "id": 194210639,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1586976602
+    },
+    {
+        "content": "<p>well, actually the kleisli category is initial among adjunctions regardless, so even if the adjunction isn't monadic, you still have a unique functor to FinVect factoring the adjunctions</p>",
+        "id": 194210703,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1586976629
+    },
+    {
+        "content": "<p>also nvm re: the relations between infinite sets question—i realized the issue i was thinking of was—if A is infinite, then it no longer corresponds to the Ω-module Ω^A, because that's no longer the free one on A, exactly like w/ free real vector spaces on infinite bases</p>",
+        "id": 194211032,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1586976773
+    },
+    {
+        "content": "<p>Aah, that's how EM categories come about...</p>",
+        "id": 194211109,
+        "sender_full_name": "James Wood",
+        "timestamp": 1586976817
+    },
+    {
+        "content": "<p>perhaps!</p>",
+        "id": 194211227,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1586976870
+    },
+    {
+        "content": "<p>the adjunctions between Set and most kinds of category of \"algebraic-y object\" are monadic</p>",
+        "id": 194211312,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1586976906
+    },
+    {
+        "content": "<p>then i had second thoughts about blindly saying so for FinVect since, idk, scaling by R sounds sorta infinitary, so i'd want to stop and think about it... but for example, the adjunction thru Mon or Grp is monadic</p>",
+        "id": 194211400,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1586976942
+    },
+    {
+        "content": "<p>maybe i should learn the monadicity theorem <span aria-label=\"thinking\" class=\"emoji emoji-1f914\" role=\"img\" title=\"thinking\">:thinking:</span></p>",
+        "id": 194211563,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1586977012
+    },
+    {
+        "content": "<p>I've checked that it's monadic before, and it's largely for the same reasons as why the covariant powerset functor is monadic.</p>",
+        "id": 194211649,
+        "sender_full_name": "James Wood",
+        "timestamp": 1586977048
+    },
+    {
+        "content": "<p>You can think of these free vector spaces as weighted finite multisets.</p>",
+        "id": 194211718,
+        "sender_full_name": "James Wood",
+        "timestamp": 1586977081
+    },
+    {
+        "content": "<p>wait, which monadic adjunction is covariant powerset part of?</p>",
+        "id": 194211774,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1586977093
+    },
+    {
+        "content": "<p>Ah, sorry, just that it is a monad.</p>",
+        "id": 194211819,
+        "sender_full_name": "James Wood",
+        "timestamp": 1586977121
+    },
+    {
+        "content": "<p>oh! thats not what i meant</p>",
+        "id": 194211862,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1586977139
+    },
+    {
+        "content": "<p>an <em>adjunction</em> is monadic if it is equivalent to the adjunction thru the EM category of its monad</p>",
+        "id": 194211896,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1586977153
+    },
+    {
+        "content": "<p>Aah, okay, I have no idea, then. <span aria-label=\"silence\" class=\"emoji emoji-1f910\" role=\"img\" title=\"silence\">:silence:</span></p>",
+        "id": 194212106,
+        "sender_full_name": "James Wood",
+        "timestamp": 1586977229
+    },
+    {
+        "content": "<p>idea is like: you get a monad (and, of course, a comonad) from any adjunction, but that's in general lossy—there are most likely many adjunctions that produce the same monad</p>",
+        "id": 194212127,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1586977239
+    },
+    {
+        "content": "<p>but forming the kleisli category of the monad <em>and</em> forming the eilenberg-moore category of the monad are the two canonical ways of, like, \"re-slicing\" any monad into an adjunction</p>",
+        "id": 194212211,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1586977287
+    },
+    {
+        "content": "<p>and in fact the kleisli adjunction is <em>initial</em>: it factors thru every other adjunction producing the monad, uniquely</p>",
+        "id": 194212329,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1586977330
+    },
+    {
+        "content": "<p>and the EM adjunction is <em>terminal</em>: every other adjunction producing the monad factors thru it, uniquely</p>",
+        "id": 194212358,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1586977347
+    },
+    {
+        "content": "<p>so a monadic adjunction is one which was already terminal among the adjunctions that had the same monad</p>",
+        "id": 194212420,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1586977373
+    },
+    {
+        "content": "<p>although phrasing it in terms of \"terminal\" is maybe less informative</p>",
+        "id": 194212460,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1586977399
+    },
+    {
+        "content": "<p>but here's a nice example you can extract from this:</p>",
+        "id": 194212876,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1586977595
+    },
+    {
+        "content": "<p>so the free monoid on a set S is lists of elements from S under concatenation. therefore, composing that with the forgetful functor to get the monad on Set gives you just... the list monad</p>",
+        "id": 194213014,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1586977673
+    },
+    {
+        "content": "<p>but i said just earlier that the adjunction thru Mon was monadic</p>",
+        "id": 194213073,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1586977687
+    },
+    {
+        "content": "<p>meaning that it was equivalent to the EM adjunction for its monad, the list monad</p>",
+        "id": 194213147,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1586977715
+    },
+    {
+        "content": "<p>and, dropping the fact that the adjunctions themselves are equivalent, that means that Mon is equivalent to the EM category for the list monad!</p>",
+        "id": 194213376,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1586977762
+    },
+    {
+        "content": "<p>a monoid is a list monad algebra</p>",
+        "id": 194213513,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1586977806
+    },
+    {
+        "content": "<p>Aah, pretty nice, and with the simple example it makes sense.</p>",
+        "id": 194214057,
+        "sender_full_name": "James Wood",
+        "timestamp": 1586978067
+    },
+    {
+        "content": "<p>more broadly, there's sort of a notion that you can encode a theory of some kind, or structure of some kind, as a monad which sends an object to the object of formal constructions over it in the theory</p>",
+        "id": 194214615,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1586978382
+    },
+    {
+        "content": "<p>and then an algebra for such a monad is a morphism which gives interpretation to the formal constructions in a way which is consistent with the laws, so a model of the theory</p>",
+        "id": 194214726,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1586978445
+    },
+    {
+        "content": "<p>then, if you squint at any adjunction, you can wonder whether maybe it's doing something like... \"the left adjoint makes a free object out of all of the formal constructions, and the right adjoint forgets the structure\", in which case the adjunction's monad should summarize the formal constructions in question</p>",
+        "id": 194214844,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1586978520
+    },
+    {
+        "content": "<p>and then you should be able to recover everything as the algebras</p>",
+        "id": 194214900,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1586978532
+    },
+    {
+        "content": "<p>that situation is when the adjunction is monadic</p>",
+        "id": 194214924,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1586978548
+    },
+    {
+        "content": "<p>one example of an adjunction that is <em>not</em> monadic is Disc ⊣ U, where Disc : Set → Top forms the discrete space and U : Top → Set forgets the topology</p>",
+        "id": 194215119,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1586978644
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276072\">sarahzrf</span> <a href=\"#narrow/stream/229199-learning.3A-basic.20questions/topic/Linear.20algebra.20in.20Rel/near/194210515\" title=\"#narrow/stream/229199-learning.3A-basic.20questions/topic/Linear.20algebra.20in.20Rel/near/194210515\">said</a>:</p>\n<blockquote>\n<p>that's the monad of the adjunction between Set and FinVect</p>\n</blockquote>\n<p>There's no adjunction between Set and FinVect... well, at least, not one where the right adjoint sends a finite-dimensional vector space to its underlying set... well, at least not if the field you're working over is infinite!</p>",
+        "id": 194222402,
+        "sender_full_name": "John Baez",
+        "timestamp": 1586982217
+    },
+    {
+        "content": "<p>There's an adjunction between Set and Vect where the right adjoint sends a vector space to its underlying set.</p>",
+        "id": 194222488,
+        "sender_full_name": "John Baez",
+        "timestamp": 1586982254
+    },
+    {
+        "content": "<p>sorry, yeah, i meant Vect</p>",
+        "id": 194222800,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1586982413
+    },
+    {
+        "content": "<p>or rather, i meant FinVect, realized later that actually it needed to be Vect, and forgot to correct myself</p>",
+        "id": 194222864,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1586982454
+    },
+    {
+        "content": "<p>One reason we should all be working with finite fields is that then you get an adjunction between FinSet and FinVect and never need to think about infinity.   <span aria-label=\"slight smile\" class=\"emoji emoji-1f642\" role=\"img\" title=\"slight smile\">:slight_smile:</span></p>",
+        "id": 194228786,
+        "sender_full_name": "John Baez",
+        "timestamp": 1586985436
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276480\">Reid Barton</span> <a href=\"#narrow/stream/229199-learning.3A-basic.20questions/topic/Linear.20algebra.20in.20Rel/near/194016865\" title=\"#narrow/stream/229199-learning.3A-basic.20questions/topic/Linear.20algebra.20in.20Rel/near/194016865\">said</a>:</p>\n<blockquote>\n<p>I would say they are just ordinary/non-internal matrices. You don't want to go around internalizing all of math into Rel, it's just too alien.</p>\n</blockquote>\n<p>Why not?  Alien things can be very interesting!   Of course internalizing <em>all of math</em> would take quite a while... so you have to judiciously choose things that seem likely to have a nice payoff.</p>",
+        "id": 194237313,
+        "sender_full_name": "John Baez",
+        "timestamp": 1586990360
+    }
+]

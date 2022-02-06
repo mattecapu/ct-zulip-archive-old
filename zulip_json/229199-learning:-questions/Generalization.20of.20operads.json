@@ -1,0 +1,74 @@
+[
+    {
+        "content": "<p>Is it possible to substitute the natural numbers that occur in the definition of (non-symmetric, symmetric, colored) operads with some other monoid?</p>",
+        "id": 199965049,
+        "sender_full_name": "Asad Saeeduddin",
+        "timestamp": 1591434988
+    },
+    {
+        "content": "<p>i believe that would fall under <a href=\"https://ncatlab.org/nlab/show/generalized+multicategory\">generalized multicategories</a></p>",
+        "id": 199972215,
+        "sender_full_name": "Pastel Raschke",
+        "timestamp": 1591445839
+    },
+    {
+        "content": "<blockquote>\n<p>Multicategories are monads in a bicategory of spans of shape X←R→Y* where Y* is the set of finite lists of elements of Y. In order to compose spans of this type, one uses the fact that (−)* has itself the structure of a monad on Set, namely the list monad or “free monoid” monad. The idea of a generalized multicategory is to replace this monad by some more general monad T.</p>\n</blockquote>",
+        "id": 199972310,
+        "sender_full_name": "Pastel Raschke",
+        "timestamp": 1591446002
+    },
+    {
+        "content": "<p>agghhhhhh, i was so proud of myself for working out this monad idea</p>",
+        "id": 199973165,
+        "sender_full_name": "Asad Saeeduddin",
+        "timestamp": 1591447045
+    },
+    {
+        "content": "<p>i was doing this in Agda just now:</p>\n<div class=\"codehilite\"><pre><span></span><code>record Monad (m : Set ℓ → Set ℓ) : Set (suc ℓ)\n  where\n  field\n    {{functor}} : Functor m\n    pure : ∀ {a} → a → m a\n    join : ∀ {a} → m (m a) → m a\n    liftA2 : ∀ {a b c} → (a → b → c) → m a → m b → m c\n\nopen Monad {{...}}\n\nrecord Singleton (m : Set (suc ℓ) → Set (suc ℓ)) : Set (suc ℓ)\n  where\n  field\n    sfunctor : m (Set ℓ) → Set ℓ\n\nopen Singleton {{...}}\n\nrecord MultiCategory {m : Set (suc ℓ) → Set (suc ℓ)} (_⇒ₘ_ : m (Set ℓ) → Set ℓ → Set ℓ) : Set (suc (suc ℓ))\n  where\n  field\n    {{mm}} : Monad m\n    {{sm}} : Singleton m\n    idₘ : ∀ {a} → pure a ⇒ₘ a\n    _∘ₘ_ : ∀ {as} {bs} {c} → bs ⇒ₘ c → sfunctor (liftA2 {{mm}} _⇒ₘ_ as bs) → join as ⇒ₘ c\n</code></pre></div>",
+        "id": 199973171,
+        "sender_full_name": "Asad Saeeduddin",
+        "timestamp": 1591447064
+    },
+    {
+        "content": "<p>having started with lists for colored operads</p>",
+        "id": 199973175,
+        "sender_full_name": "Asad Saeeduddin",
+        "timestamp": 1591447069
+    },
+    {
+        "content": "<p>I see no reason not to be proud...</p>",
+        "id": 199973305,
+        "sender_full_name": "Peter Arndt",
+        "timestamp": 1591447217
+    },
+    {
+        "content": "<p>I just meant that I thought it was an original idea, but I've had this experience with ncatlab enough times that I should have known better</p>",
+        "id": 199973389,
+        "sender_full_name": "Asad Saeeduddin",
+        "timestamp": 1591447335
+    },
+    {
+        "content": "<p><span class=\"user-mention\" data-user-id=\"276050\">@Asad Saeeduddin</span>  You should seriously consider contribution to <a href=\"https://github.com/agda/agda-categories\">agda-categories</a> !  Right now, that library has an odd definition of 'Indexed Multicategory' only (<a href=\"https://github.com/agda/agda-categories/blob/master/src/Categories/Multi/Category/Indexed.agda\">https://github.com/agda/agda-categories/blob/master/src/Categories/Multi/Category/Indexed.agda</a>), which was more 'natural' from a type-theoretic point of view.</p>\n<p>Of course, we'll want laws, not just Haskell-style lawless definitions...  And writing down the laws is where all the hard stuff comes in. The usual laws surreptitiously involve using a huge number of theorems as invisible rewrites.</p>",
+        "id": 199973486,
+        "sender_full_name": "Jacques Carette",
+        "timestamp": 1591447528
+    },
+    {
+        "content": "<p>thanks for the pointer. I'm sure there's already law-equipped definitions of functor, monad etc. somewhere in the standard library that I should be relying on, I'll try to thread the evidence from those into it once I get up to at least one instance (probably multifunctions)</p>",
+        "id": 199973565,
+        "sender_full_name": "Asad Saeeduddin",
+        "timestamp": 1591447642
+    },
+    {
+        "content": "<p>We're very open to all sorts of contributions - nothing too small. Last one I merged in was someone fixing a typo in a comment!  Any part of category theory we haven't done yet, we're happy to look at.  Also, some parts we have done can be critiqued-then-improved.</p>",
+        "id": 199973665,
+        "sender_full_name": "Jacques Carette",
+        "timestamp": 1591447794
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276050\">Asad Saeeduddin</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/Generalization.20of.20operads/near/199973565\">said</a>:</p>\n<blockquote>\n<p>I'm sure there's already law-equipped definitions of functor, monad etc. somewhere in the standard library</p>\n</blockquote>\n<p>I don't think there are, but I'm sure there are in agda-categories.</p>",
+        "id": 199974494,
+        "sender_full_name": "James Wood",
+        "timestamp": 1591449201
+    }
+]

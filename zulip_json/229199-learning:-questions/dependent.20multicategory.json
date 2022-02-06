@@ -1,0 +1,866 @@
+[
+    {
+        "content": "<p>What is a dependent multicategory or dependent operad? I've seen this in a few places on this chat, and I haven't the slightest idea what \"dependent\" is supposed to mean in this context. Dependent on what?</p>",
+        "id": 192081551,
+        "sender_full_name": "Jonathan Beardsley",
+        "timestamp": 1585343788
+    },
+    {
+        "content": "<p>cartesian operads model algebraic theories, à la universal algebra</p>",
+        "id": 192082141,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1585344133
+    },
+    {
+        "content": "<p>other notions of operads correspond to other notions of algebraic theory (e.g. symmetric operads correspond to linear algebraic theories)</p>",
+        "id": 192082172,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1585344159
+    },
+    {
+        "content": "<p>so \"cartesian operad\" here means Lawvere theory?</p>",
+        "id": 192082187,
+        "sender_full_name": "Jonathan Beardsley",
+        "timestamp": 1585344167
+    },
+    {
+        "content": "<p>it is equivalent to a Lawvere theory, yes</p>",
+        "id": 192082205,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1585344179
+    },
+    {
+        "content": "<p>Got it.</p>",
+        "id": 192082212,
+        "sender_full_name": "Jonathan Beardsley",
+        "timestamp": 1585344183
+    },
+    {
+        "content": "<p>there is desire for a notion of \"dependent operad\" that captures dependent algebraic theories (à la generalised algebraic theory or essentially algebraic theory)</p>",
+        "id": 192082254,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1585344207
+    },
+    {
+        "content": "<p>whether a definition exists yet is up for debate, but it certainly hasn't been worked out in detail yet</p>",
+        "id": 192082337,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1585344250
+    },
+    {
+        "content": "<p>ah okay. right so I guess that's where i'm stymied, because I don't know what \"dependent algebraic theories\" are, or really even \"linear algebraic theories.\"</p>",
+        "id": 192082357,
+        "sender_full_name": "Jonathan Beardsley",
+        "timestamp": 1585344263
+    },
+    {
+        "content": "<p>linear algebraic theories have a few different names, but they refer to algebraic theories that are presented by equations in which each variable appears on either side of an equation exactly once</p>",
+        "id": 192082392,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1585344297
+    },
+    {
+        "content": "<p>I see, hence the whole \"there is no operad of groups\" thing</p>",
+        "id": 192082411,
+        "sender_full_name": "Jonathan Beardsley",
+        "timestamp": 1585344316
+    },
+    {
+        "content": "<p>right</p>",
+        "id": 192082423,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1585344327
+    },
+    {
+        "content": "<p>there's not one definition of \"dependent algebraic theories\", but I think <span class=\"user-mention\" data-user-id=\"276995\">@Chaitanya Leena Subramaniam</span> and I have generally been referring to generalised algebraic theories in this context</p>",
+        "id": 192082507,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1585344364
+    },
+    {
+        "content": "<p>okay cool. is there a paper with a good definition of \"generalized algebraic theory\"?</p>",
+        "id": 192082544,
+        "sender_full_name": "Jonathan Beardsley",
+        "timestamp": 1585344393
+    },
+    {
+        "content": "<p>no</p>",
+        "id": 192082563,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1585344404
+    },
+    {
+        "content": "<p>unless you like wading through concrete syntax :)</p>",
+        "id": 192082566,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1585344412
+    },
+    {
+        "content": "<p>the standard reference is still the original paper <em>Generalised algebraic theories and contextual categories</em> (<a href=\"https://www.sciencedirect.com/science/article/pii/0168007286900539\" title=\"https://www.sciencedirect.com/science/article/pii/0168007286900539\">https://www.sciencedirect.com/science/article/pii/0168007286900539</a>)</p>",
+        "id": 192082617,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1585344457
+    },
+    {
+        "content": "<p>it gives some reasonable intuition, but the formal definition leaves a lot to be desired</p>",
+        "id": 192082679,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1585344482
+    },
+    {
+        "content": "<p>the examples there should help give an idea of the sorts of structures that are possible to express in it, though</p>",
+        "id": 192082727,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1585344513
+    },
+    {
+        "content": "<p>I was stumped by \"linear algebraic theory\" for a minute, but from context I guess it's an algebraic theory where all the equational laws have a special form: each variable appears exactly once on each side of the equation.  For example monoids are described by a linear algebraic theory, but groups are not because the law <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>g</mi><msup><mi>g</mi><mrow><mo>−</mo><mn>1</mn></mrow></msup><mo>=</mo><mn>1</mn></mrow><annotation encoding=\"application/x-tex\">g g^{-1} = 1</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:1.008548em;vertical-align:-0.19444em;\"></span><span class=\"mord mathdefault\" style=\"margin-right:0.03588em;\">g</span><span class=\"mord\"><span class=\"mord mathdefault\" style=\"margin-right:0.03588em;\">g</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.8141079999999999em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\">−</span><span class=\"mord mtight\">1</span></span></span></span></span></span></span></span></span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.64444em;vertical-align:0em;\"></span><span class=\"mord\">1</span></span></span></span> has <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>g</mi></mrow><annotation encoding=\"application/x-tex\">g</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.625em;vertical-align:-0.19444em;\"></span><span class=\"mord mathdefault\" style=\"margin-right:0.03588em;\">g</span></span></span></span> twice on side and not at all on the other.</p>\n<p>Linear algebraic theories are precisely the algebraic theories whose algebras can also be described by symmetric (colored) operads.</p>\n<p>In other words, there's a nice functor from the category of symmetric operads to the category of algebraic theories, and objects in its essential image are <strong>linear</strong> algebraic theories.</p>\n<p>That's my guess.</p>",
+        "id": 192089775,
+        "sender_full_name": "John Baez",
+        "timestamp": 1585349594
+    },
+    {
+        "content": "<p>Okay - I see I'm late to the conversation as usual.</p>",
+        "id": 192089800,
+        "sender_full_name": "John Baez",
+        "timestamp": 1585349627
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276092\">Nathanael Arkor</span> <a href=\"#narrow/stream/229199-basic-questions/topic/dependent.20multicategory/near/192082392\" title=\"#narrow/stream/229199-basic-questions/topic/dependent.20multicategory/near/192082392\">said</a>:</p>\n<blockquote>\n<p>linear algebraic theories have a few different names, but they refer to algebraic theories that are presented by equations in which each variable appears on either side of an equation exactly once</p>\n</blockquote>\n<p><span class=\"user-mention\" data-user-id=\"275920\">@John Baez</span>: yep; I clarified here</p>",
+        "id": 192089850,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1585349646
+    },
+    {
+        "content": "<p>I've heard other names for them, but they're really unsuggestive to me</p>",
+        "id": 192089867,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1585349673
+    },
+    {
+        "content": "<p>from a type theoretic perspective, \"linear\" is very suggestive, though</p>",
+        "id": 192089884,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1585349697
+    },
+    {
+        "content": "<p>\"strongly regular algebraic theory\" describes those corresponding to (planar) operads, for instance, but \"ordered algebraic theory\" again seems more natural</p>",
+        "id": 192090069,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1585349856
+    },
+    {
+        "content": "<p>I think \"regular\" is another name for \"linear\"</p>",
+        "id": 192090088,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1585349877
+    },
+    {
+        "content": "<p><span class=\"user-mention\" data-user-id=\"276092\">@Nathanael Arkor</span> do you know if there's anything useful on the algebraic theory side associated to semi-cartesian operads?</p>",
+        "id": 192094213,
+        "sender_full_name": "Jonathan Beardsley",
+        "timestamp": 1585353588
+    },
+    {
+        "content": "<p>Also are you familiar with the \"category of operators\" associated to a multicategory?</p>",
+        "id": 192094267,
+        "sender_full_name": "Jonathan Beardsley",
+        "timestamp": 1585353611
+    },
+    {
+        "content": "<p><span class=\"user-mention\" data-user-id=\"276679\">@Jonathan Beardsley</span>: semi-cartesian operads would correspond to what I would call \"affine algebraic theories\", as they're structures that you could describe using a form of affine logic (in comparison to linear logic for symmetric operads), but I imagine algebraicists have a different name for these if they've even been specifically studied</p>",
+        "id": 192094903,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1585354313
+    },
+    {
+        "content": "<p>From what I can tell they have not been studied really</p>",
+        "id": 192095035,
+        "sender_full_name": "Jonathan Beardsley",
+        "timestamp": 1585354391
+    },
+    {
+        "content": "<p>there should be a notion of \"relevance operad\" corresponding to relevant monoidal categories and relevant logic, but I can't find reference to one now (it may just have a completely different name)</p>",
+        "id": 192095338,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1585354745
+    },
+    {
+        "content": "<p>it would be nice to have a table with all the different names for these structures, coming from different fields</p>",
+        "id": 192095344,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1585354757
+    },
+    {
+        "content": "<p>I think there's typically been less interest in allowing only one of weakening or contraction — usually one goes straight from linear theories to algebraic theories from what I've seen</p>",
+        "id": 192095409,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1585354815
+    },
+    {
+        "content": "<blockquote>\n<p>Also are you familiar with the \"category of operators\" associated to a multicategory?</p>\n</blockquote>\n<p>I've read about this construction before, but I'm not very familiar with it</p>",
+        "id": 192095458,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1585354887
+    },
+    {
+        "content": "<p>ah, I think I read the nLab post on it</p>",
+        "id": 192095580,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1585355038
+    },
+    {
+        "content": "<p>I don't quite see now why the category of operators is canonical, and why we couldn't do something similar with a different sort of operad than semicartesian</p>",
+        "id": 192095898,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1585355464
+    },
+    {
+        "content": "<p>Oh sure, it's just that it had been used historically. You could do it with anything.</p>",
+        "id": 192098227,
+        "sender_full_name": "Jonathan Beardsley",
+        "timestamp": 1585358605
+    },
+    {
+        "content": "<p>Okay, so here's a sort of silly question, since I really don't understand \"generalized algebraic theories\" at all, but it seems like one of the basic ideas is that the \"sorts\" are themselves an algebraic type (rather than just a set). So what happens if you do the silly thing of defining something like an \"internal theory\" to something like the category of theories?</p>",
+        "id": 192132446,
+        "sender_full_name": "Jonathan Beardsley",
+        "timestamp": 1585415355
+    },
+    {
+        "content": "<p>you can certainly describe other kinds of theories using generalised algebraic theories, if that's what you mean</p>",
+        "id": 192133561,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1585417037
+    },
+    {
+        "content": "<p>e.g. you can describe essentially algebraic theories as a generalised algebraic theory, whose models will then coincide with the models for essentially algebraic theories in the classical sense</p>",
+        "id": 192133570,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1585417065
+    },
+    {
+        "content": "<p>is that what you meant?</p>",
+        "id": 192133571,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1585417068
+    },
+    {
+        "content": "<p>No so I mean, take some definition like this: <a href=\"/user_uploads/21317/QP7BD0hTZZDgwl2LzNE8U_vR/image.png\" title=\"image.png\">image.png</a></p>\n<div class=\"message_inline_image\"><a href=\"/user_uploads/21317/QP7BD0hTZZDgwl2LzNE8U_vR/image.png\" title=\"image.png\"><img src=\"/user_uploads/21317/QP7BD0hTZZDgwl2LzNE8U_vR/image.png\"></a></div>",
+        "id": 192133620,
+        "sender_full_name": "Jonathan Beardsley",
+        "timestamp": 1585417130
+    },
+    {
+        "content": "<p>or you mean something like \"monoid in a monoidal category\", but \"generalised algebraic theory in a categorified generalised algebraic theory\"?</p>",
+        "id": 192133621,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1585417131
+    },
+    {
+        "content": "<p>And then replace \"set of sort S\" with something that isn't a set.</p>",
+        "id": 192133626,
+        "sender_full_name": "Jonathan Beardsley",
+        "timestamp": 1585417143
+    },
+    {
+        "content": "<p>Yes, something more like the latter thing.</p>",
+        "id": 192133630,
+        "sender_full_name": "Jonathan Beardsley",
+        "timestamp": 1585417156
+    },
+    {
+        "content": "<p>I've seen people look at models of one theory inside a category of models of another, but not models of a theory inside <em>the</em> category of theories</p>",
+        "id": 192133714,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1585417292
+    },
+    {
+        "content": "<p>I'm not quite sure what that would look like</p>",
+        "id": 192133778,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1585417379
+    },
+    {
+        "content": "<p>though it's surely possible, because the category of generalised algebraic theories has good structure — for example, it's locally finitely presentable</p>",
+        "id": 192133797,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1585417409
+    },
+    {
+        "content": "<p>it seems simpler to ask a related question about algebraic theories: e.g. what does a group internal to the category of Lawvere theories look like?</p>",
+        "id": 192133883,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1585417520
+    },
+    {
+        "content": "<p>A group internal to the category of Lawvere theories is the same as a Lawvere theory internal to the category of groups, so if I'm not screwing up it's Lawvere theory where for each pair of natural numbers m,n there's a <em>group</em> of operations hom(m,n), and composition <em>homomorphisms</em> hom(m,n) <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>×</mo></mrow><annotation encoding=\"application/x-tex\">\\times</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.66666em;vertical-align:-0.08333em;\"></span><span class=\"mord\">×</span></span></span></span> hom(n,o) <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>→</mo></mrow><annotation encoding=\"application/x-tex\">\\to</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.36687em;vertical-align:0em;\"></span><span class=\"mrel\">→</span></span></span></span> hom(m,o)<span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo separator=\"true\">,</mo><mi>a</mi><mi>n</mi><mi>d</mi><mi>p</mi><mi>r</mi><mi>o</mi><mi>d</mi><mi>u</mi><mi>c</mi><mi>t</mi><mo>∗</mo><mi>h</mi><mi>o</mi><mi>m</mi><mi>o</mi><mi>m</mi><mi>o</mi><mi>r</mi><mi>p</mi><mi>h</mi><mi>i</mi><mi>s</mi><mi>m</mi><mi>s</mi><mo>∗</mo><mi>h</mi><mi>o</mi><mi>m</mi><mo stretchy=\"false\">(</mo><mi>m</mi><mo separator=\"true\">,</mo><mi>n</mi><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">, and product <em>homomorphisms</em> hom(m,n) </annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8888799999999999em;vertical-align:-0.19444em;\"></span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mord mathdefault\">a</span><span class=\"mord mathdefault\">n</span><span class=\"mord mathdefault\">d</span><span class=\"mord mathdefault\">p</span><span class=\"mord mathdefault\" style=\"margin-right:0.02778em;\">r</span><span class=\"mord mathdefault\">o</span><span class=\"mord mathdefault\">d</span><span class=\"mord mathdefault\">u</span><span class=\"mord mathdefault\">c</span><span class=\"mord mathdefault\">t</span><span class=\"mspace\" style=\"margin-right:0.2222222222222222em;\"></span><span class=\"mbin\">∗</span><span class=\"mspace\" style=\"margin-right:0.2222222222222222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.8888799999999999em;vertical-align:-0.19444em;\"></span><span class=\"mord mathdefault\">h</span><span class=\"mord mathdefault\">o</span><span class=\"mord mathdefault\">m</span><span class=\"mord mathdefault\">o</span><span class=\"mord mathdefault\">m</span><span class=\"mord mathdefault\">o</span><span class=\"mord mathdefault\" style=\"margin-right:0.02778em;\">r</span><span class=\"mord mathdefault\">p</span><span class=\"mord mathdefault\">h</span><span class=\"mord mathdefault\">i</span><span class=\"mord mathdefault\">s</span><span class=\"mord mathdefault\">m</span><span class=\"mord mathdefault\">s</span><span class=\"mspace\" style=\"margin-right:0.2222222222222222em;\"></span><span class=\"mbin\">∗</span><span class=\"mspace\" style=\"margin-right:0.2222222222222222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord mathdefault\">h</span><span class=\"mord mathdefault\">o</span><span class=\"mord mathdefault\">m</span><span class=\"mopen\">(</span><span class=\"mord mathdefault\">m</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mord mathdefault\">n</span><span class=\"mclose\">)</span></span></span></span>\\times$$ hom(m',n') <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>→</mo></mrow><annotation encoding=\"application/x-tex\">\\to</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.36687em;vertical-align:0em;\"></span><span class=\"mrel\">→</span></span></span></span> hom(m+m',n+n'), etc.</p>",
+        "id": 192138088,
+        "sender_full_name": "John Baez",
+        "timestamp": 1585423743
+    },
+    {
+        "content": "<p><span class=\"user-mention\" data-user-id=\"275920\">@John Baez</span>: that's a better perspective to view it from <span aria-label=\"+1\" class=\"emoji emoji-1f44d\" role=\"img\" title=\"+1\">:+1:</span></p>",
+        "id": 192138273,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1585424097
+    },
+    {
+        "content": "<p>are \"internal Lawvere theories\" studied very often? I don't think I've come across them before</p>",
+        "id": 192138280,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1585424119
+    },
+    {
+        "content": "<p>Thanks!</p>",
+        "id": 192138284,
+        "sender_full_name": "John Baez",
+        "timestamp": 1585424130
+    },
+    {
+        "content": "<p>I've never heard about them.  But I know that Lawvere theories are models of a multisorted Lawvere theory.  Once you know this, you can look at Lawvere theories in any category with finite products, and know a bunch of stuff is true about them.</p>\n<p>What I just did was use \"commutativity of internalization\".   If you've got (multisorted) Lawvere theories X and Y, a model of X in the category of models of Y is a model of Y in the category of models of X.</p>",
+        "id": 192138344,
+        "sender_full_name": "John Baez",
+        "timestamp": 1585424277
+    },
+    {
+        "content": "<p>Right. All I was saying is that a GAT is something like an \"algebraic theory whose 'set of colors' is itself an algebraic theory,\" which seemed like it might be formalizable as some kind of double algebraic theory</p>",
+        "id": 192149230,
+        "sender_full_name": "Jonathan Beardsley",
+        "timestamp": 1585442775
+    },
+    {
+        "content": "<p>In the same way that we can think of a category internal to <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>T</mi><mi>o</mi><mi>p</mi></mrow><annotation encoding=\"application/x-tex\">Top</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8777699999999999em;vertical-align:-0.19444em;\"></span><span class=\"mord mathdefault\" style=\"margin-right:0.13889em;\">T</span><span class=\"mord mathdefault\">o</span><span class=\"mord mathdefault\">p</span></span></span></span> as having a <em>space</em> of objects.</p>",
+        "id": 192149238,
+        "sender_full_name": "Jonathan Beardsley",
+        "timestamp": 1585442815
+    },
+    {
+        "content": "<p>I would think of a theory that had a theory of colours being more like a simple type theory, where we have algebraic structure on the types, e.g. products</p>",
+        "id": 192149413,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1585443190
+    },
+    {
+        "content": "<p>a GAT does have more structure on its collection of sorts, but it's not quite algebraic</p>",
+        "id": 192149459,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1585443250
+    },
+    {
+        "content": "<p>it's categorical, but generally not that structured</p>",
+        "id": 192149460,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1585443263
+    },
+    {
+        "content": "<blockquote>\n<p>where we have algebraic structure on the types, e.g. products</p>\n</blockquote>\n<p>actually, this is if we had a model of a theory as the colours, rather than the theory itself, so this isn't quite right</p>",
+        "id": 192149656,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1585443616
+    },
+    {
+        "content": "<blockquote>\n<p>Right. All I was saying is that a GAT is something like an \"algebraic theory whose 'set of colors' is itself an algebraic theory,\" </p>\n</blockquote>\n<p>I'll think about this in more detail when I'm a little more awake</p>",
+        "id": 192149985,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1585444207
+    },
+    {
+        "content": "<p>reading a bit more about GATs</p>",
+        "id": 192152060,
+        "sender_full_name": "Jonathan Beardsley",
+        "timestamp": 1585448498
+    },
+    {
+        "content": "<p>they're pretty cool</p>",
+        "id": 192152061,
+        "sender_full_name": "Jonathan Beardsley",
+        "timestamp": 1585448502
+    },
+    {
+        "content": "<p>the GAT of categories seems like a useful example</p>",
+        "id": 192152062,
+        "sender_full_name": "Jonathan Beardsley",
+        "timestamp": 1585448513
+    },
+    {
+        "content": "<p>it's weird for me, because I'm pretty used to thinking about parameterized things (e.g. parameterized homotopy theory) but say the word \"dependent type\" and I get very anxious. But it seems like it's just, sort of, allowing for \"parameterized types.\"</p>",
+        "id": 192152109,
+        "sender_full_name": "Jonathan Beardsley",
+        "timestamp": 1585448558
+    },
+    {
+        "content": "<p>But I suppose I don't entirely yet understand how to think of an operad as an \"algebraic theory.\" So maybe I need to crack that open a bit to get a sense of what a \"dependent operad\" might look like.</p>",
+        "id": 192152233,
+        "sender_full_name": "Jonathan Beardsley",
+        "timestamp": 1585448822
+    },
+    {
+        "content": "<p>But so here's a possibly silly question: given a GAT that has dependent types as possible inputs to operations, it seems possible that one could, instead, just list all possible types (enumerated over all possible indexing types) and then write down an infinite list of rules, thereby getting a single theory (albeit with an infinite list of types and rules). Am I misunderstanding something by saying this?</p>",
+        "id": 192152461,
+        "sender_full_name": "Jonathan Beardsley",
+        "timestamp": 1585449352
+    },
+    {
+        "content": "<p>I'm reading about them too. I thought a GAT was just another term for \"finite limits theory\" (I thought GATs and EATs were the same), and now I see they're different! but you can describe the theory of categories either way. apparently the two are actually equivalent.</p>",
+        "id": 192152519,
+        "sender_full_name": "Christian Williams",
+        "timestamp": 1585449425
+    },
+    {
+        "content": "<p>Yeah I saw that as well.</p>",
+        "id": 192152524,
+        "sender_full_name": "Jonathan Beardsley",
+        "timestamp": 1585449458
+    },
+    {
+        "content": "<p>Okay essentially algebraic theories are the same as finite limit theories?</p>",
+        "id": 192152573,
+        "sender_full_name": "Jonathan Beardsley",
+        "timestamp": 1585449523
+    },
+    {
+        "content": "<p>yes.</p>",
+        "id": 192152577,
+        "sender_full_name": "Christian Williams",
+        "timestamp": 1585449547
+    },
+    {
+        "content": "<p>I see</p>",
+        "id": 192152581,
+        "sender_full_name": "Jonathan Beardsley",
+        "timestamp": 1585449595
+    },
+    {
+        "content": "<p>Okay so I'm thinking about the following thing:</p>",
+        "id": 192152632,
+        "sender_full_name": "Jonathan Beardsley",
+        "timestamp": 1585449682
+    },
+    {
+        "content": "<p><a href=\"/user_uploads/21317/a_zLgtoxv4yHRJ0BKg-aSrF2/image.png\" title=\"image.png\">image.png</a></p>\n<div class=\"message_inline_image\"><a href=\"/user_uploads/21317/a_zLgtoxv4yHRJ0BKg-aSrF2/image.png\" title=\"image.png\"><img src=\"/user_uploads/21317/a_zLgtoxv4yHRJ0BKg-aSrF2/image.png\"></a></div>",
+        "id": 192152634,
+        "sender_full_name": "Jonathan Beardsley",
+        "timestamp": 1585449684
+    },
+    {
+        "content": "<p>so there's sort of a two-column dictionary happening here</p>",
+        "id": 192152682,
+        "sender_full_name": "Jonathan Beardsley",
+        "timestamp": 1585449738
+    },
+    {
+        "content": "<p><a href=\"/user_uploads/21317/kWLnZ1o5dyfI7dZQo6_o6515/image.png\" title=\"image.png\">image.png</a></p>\n<div class=\"message_inline_image\"><a href=\"/user_uploads/21317/kWLnZ1o5dyfI7dZQo6_o6515/image.png\" title=\"image.png\"><img src=\"/user_uploads/21317/kWLnZ1o5dyfI7dZQo6_o6515/image.png\"></a></div>",
+        "id": 192152763,
+        "sender_full_name": "Jonathan Beardsley",
+        "timestamp": 1585449953
+    },
+    {
+        "content": "<p>apologies for my terrible handwriting (i'm writing on an upright screen, haha)</p>",
+        "id": 192152804,
+        "sender_full_name": "Jonathan Beardsley",
+        "timestamp": 1585449966
+    },
+    {
+        "content": "<p>and there should be a third column</p>",
+        "id": 192152807,
+        "sender_full_name": "Jonathan Beardsley",
+        "timestamp": 1585449975
+    },
+    {
+        "content": "<p>let me fill in a few things</p>",
+        "id": 192152809,
+        "sender_full_name": "Jonathan Beardsley",
+        "timestamp": 1585449982
+    },
+    {
+        "content": "<blockquote>\n<p>apparently the two are actually equivalent.</p>\n</blockquote>\n<p>their models in <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"bold\">S</mi><mi mathvariant=\"bold\">e</mi><mi mathvariant=\"bold\">t</mi></mrow><annotation encoding=\"application/x-tex\">\\mathbf{Set}</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.68611em;vertical-align:0em;\"></span><span class=\"mord\"><span class=\"mord mathbf\">S</span><span class=\"mord mathbf\">e</span><span class=\"mord mathbf\">t</span></span></span></span></span> are equivalent</p>",
+        "id": 192152820,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1585450058
+    },
+    {
+        "content": "<p>I don't think they're equivalent in all settings</p>",
+        "id": 192152823,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1585450081
+    },
+    {
+        "content": "<p>we could call this \"Morita equivalence\", right?</p>",
+        "id": 192152863,
+        "sender_full_name": "Christian Williams",
+        "timestamp": 1585450111
+    },
+    {
+        "content": "<blockquote>\n<p>But it seems like it's just, sort of, allowing for \"parameterized types.\"</p>\n</blockquote>\n<p>yes, (term-)parameterised types are a reasonable way to think of dependent types</p>",
+        "id": 192152866,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1585450139
+    },
+    {
+        "content": "<blockquote>\n<p>we could call this \"Morita equivalence\", right?</p>\n</blockquote>\n<p>that's how I've been thinking of them, yes, though it's a meta-level higher than Morita equivalence is usually considered</p>",
+        "id": 192152870,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1585450181
+    },
+    {
+        "content": "<p><a href=\"/user_uploads/21317/c6Jk303aSwJfYviX8PFNzAmY/image.png\" title=\"image.png\">image.png</a></p>\n<div class=\"message_inline_image\"><a href=\"/user_uploads/21317/c6Jk303aSwJfYviX8PFNzAmY/image.png\" title=\"image.png\"><img src=\"/user_uploads/21317/c6Jk303aSwJfYviX8PFNzAmY/image.png\"></a></div>",
+        "id": 192152916,
+        "sender_full_name": "Jonathan Beardsley",
+        "timestamp": 1585450262
+    },
+    {
+        "content": "<p>yes</p>",
+        "id": 192152922,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1585450287
+    },
+    {
+        "content": "<p>and I'm not entirely sure how EATs fit into the picture</p>",
+        "id": 192152925,
+        "sender_full_name": "Jonathan Beardsley",
+        "timestamp": 1585450320
+    },
+    {
+        "content": "<p>(deleted)</p>",
+        "id": 192152955,
+        "sender_full_name": "Jonathan Beardsley",
+        "timestamp": 1585450322
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276679\">Jonathan Beardsley</span> <a href=\"#narrow/stream/229199-basic-questions/topic/dependent.20multicategory/near/192152461\" title=\"#narrow/stream/229199-basic-questions/topic/dependent.20multicategory/near/192152461\">said</a>:</p>\n<blockquote>\n<p>But so here's a possibly silly question: given a GAT that has dependent types as possible inputs to operations, it seems possible that one could, instead, just list all possible types (enumerated over all possible indexing types) and then write down an infinite list of rules, thereby getting a single theory (albeit with an infinite list of types and rules). Am I misunderstanding something by saying this?</p>\n</blockquote>\n<p>I think you could do this, but I don't think the models for this theory would be the same as the models for the GAT</p>",
+        "id": 192152982,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1585450387
+    },
+    {
+        "content": "<p>because models for algebraic theories just have to be product-preserving, i.e. preserve algebraic structure</p>",
+        "id": 192152986,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1585450413
+    },
+    {
+        "content": "<p>but for GATs, you want to preserve more structure than that, i.e. the dependent structure</p>",
+        "id": 192152987,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1585450426
+    },
+    {
+        "content": "<p>aha, yeah you want to remember what depended on what</p>",
+        "id": 192153028,
+        "sender_full_name": "Jonathan Beardsley",
+        "timestamp": 1585450443
+    },
+    {
+        "content": "<p>interesting</p>",
+        "id": 192153044,
+        "sender_full_name": "Jonathan Beardsley",
+        "timestamp": 1585450449
+    },
+    {
+        "content": "<p><span class=\"user-mention\" data-user-id=\"276092\">@Nathanael Arkor</span> do you have a good reference for seeing the relationship between (symmetric) multicategories and linear algebraic theories?</p>",
+        "id": 192153049,
+        "sender_full_name": "Jonathan Beardsley",
+        "timestamp": 1585450475
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276679\">Jonathan Beardsley</span> <a href=\"#narrow/stream/229199-basic-questions/topic/dependent.20multicategory/near/192152925\" title=\"#narrow/stream/229199-basic-questions/topic/dependent.20multicategory/near/192152925\">said</a>:</p>\n<blockquote>\n<p>and I'm not entirely sure how EATs fit into the picture</p>\n</blockquote>\n<p>in the two rightmost columns, you have \"finitely complete categories\" and \"essentially algebraic theories\"</p>",
+        "id": 192153050,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1585450476
+    },
+    {
+        "content": "<p>aha</p>",
+        "id": 192153051,
+        "sender_full_name": "Jonathan Beardsley",
+        "timestamp": 1585450492
+    },
+    {
+        "content": "<p>the reference that immediately comes to mind is <a href=\"https://arxiv.org/pdf/1002.0879.pdf\" title=\"https://arxiv.org/pdf/1002.0879.pdf\">https://arxiv.org/pdf/1002.0879.pdf</a></p>",
+        "id": 192153061,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1585450514
+    },
+    {
+        "content": "<p>I'm not sure if it's the best introduction</p>",
+        "id": 192153062,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1585450523
+    },
+    {
+        "content": "<p>oh well good though, it's a thesis, so hopefully it will be a bit more explanatory than usual</p>",
+        "id": 192153068,
+        "sender_full_name": "Jonathan Beardsley",
+        "timestamp": 1585450558
+    },
+    {
+        "content": "<p>maybe a better way is to look at the relationship between cartesian multicategories and algebraic theories, and from there, it's easy to see that dropping the weakening and contraction maps in a cartesian multicategory gives you a symmetric multicategory, and this corresponds to ensuring that equations in the theories have the same number of variables on both sides</p>",
+        "id": 192153109,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1585450587
+    },
+    {
+        "content": "<p><a href=\"https://mikeshulman.github.io/catlog/catlog.pdf\" title=\"https://mikeshulman.github.io/catlog/catlog.pdf\">https://mikeshulman.github.io/catlog/catlog.pdf</a> is very thorough as well, so I would imagine this also contains a description of the correspondence</p>",
+        "id": 192153118,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1585450680
+    },
+    {
+        "content": "<blockquote>\n<p>in the two rightmost columns, you have \"finitely complete categories\" and \"essentially algebraic theories\"</p>\n</blockquote>\n<p>and I suppose the lefthand column is what we were discussing :)</p>",
+        "id": 192153160,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1585450705
+    },
+    {
+        "content": "<p>GATs and EATs are very similarly structured, so having an operad for one would probably indicate what an operad for the other should look like</p>",
+        "id": 192153167,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1585450752
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276092\">Nathanael Arkor</span> <a href=\"#narrow/stream/229199-basic-questions/topic/dependent.20multicategory/near/192153160\" title=\"#narrow/stream/229199-basic-questions/topic/dependent.20multicategory/near/192153160\">said</a>:</p>\n<blockquote>\n<blockquote>\n<p>in the two rightmost columns, you have \"finitely complete categories\" and \"essentially algebraic theories\"</p>\n</blockquote>\n<p>and I suppose the lefthand column is what we were discussing :)</p>\n</blockquote>\n<p>yes! very interested in what this lefthand column should be. do we know what the middle column is for GATs?</p>",
+        "id": 192153237,
+        "sender_full_name": "Jonathan Beardsley",
+        "timestamp": 1585450883
+    },
+    {
+        "content": "<p>well, arguably you could take contextual categories/C-systems, but I think this is a bit unsatisfactory</p>",
+        "id": 192153286,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1585450975
+    },
+    {
+        "content": "<p>so, reading this page <a href=\"https://ncatlab.org/nlab/show/categorical+model+of+dependent+types\" title=\"https://ncatlab.org/nlab/show/categorical+model+of+dependent+types\">https://ncatlab.org/nlab/show/categorical+model+of+dependent+types</a><br>\nand they say how the issue is that type substitution is strictly associative, but pullback is not, and so they mess with the categories to make this better. however, i think it's the types that need to be fixed, not the categories.</p>",
+        "id": 192153406,
+        "sender_full_name": "Jonathan Beardsley",
+        "timestamp": 1585451255
+    },
+    {
+        "content": "<p>perhaps this is somehow dealt with by HoTT</p>",
+        "id": 192153445,
+        "sender_full_name": "Jonathan Beardsley",
+        "timestamp": 1585451286
+    },
+    {
+        "content": "<p>there have been quite a few papers dealing with the coherence problem of substitution in dependent type theories</p>",
+        "id": 192153461,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1585451379
+    },
+    {
+        "content": "<p>yeah, sp o</p>",
+        "id": 192153463,
+        "sender_full_name": "Jonathan Beardsley",
+        "timestamp": 1585451393
+    },
+    {
+        "content": "<p>good lord i cannot type tonight</p>",
+        "id": 192153465,
+        "sender_full_name": "Jonathan Beardsley",
+        "timestamp": 1585451398
+    },
+    {
+        "content": "<p>*yeah so i'm seeing</p>",
+        "id": 192153503,
+        "sender_full_name": "Jonathan Beardsley",
+        "timestamp": 1585451404
+    },
+    {
+        "content": "<p><em>The Biequivalence of Locally Cartesian Closed Categories and Martin-Löf Type Theories</em> (<a href=\"https://arxiv.org/pdf/1112.3456.pdf\" title=\"https://arxiv.org/pdf/1112.3456.pdf\">https://arxiv.org/pdf/1112.3456.pdf</a>) is maybe the most modern?</p>",
+        "id": 192153507,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1585451418
+    },
+    {
+        "content": "<p>there's also this: <a href=\"https://arxiv.org/pdf/1211.2851.pdf\" title=\"https://arxiv.org/pdf/1211.2851.pdf\">https://arxiv.org/pdf/1211.2851.pdf</a></p>",
+        "id": 192153562,
+        "sender_full_name": "Jonathan Beardsley",
+        "timestamp": 1585451595
+    },
+    {
+        "content": "<p>specifically section 1.2, and Appendix B (according to the nlab)</p>",
+        "id": 192153566,
+        "sender_full_name": "Jonathan Beardsley",
+        "timestamp": 1585451610
+    },
+    {
+        "content": "<p>It seems to me that this difference is somehow at the heart of the univalence axiom.</p>",
+        "id": 192153791,
+        "sender_full_name": "Jonathan Beardsley",
+        "timestamp": 1585452080
+    },
+    {
+        "content": "<p>I'm not familiar enough to give any sort of opinion on that, but I'd be very interested to see a connection</p>",
+        "id": 192154087,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1585452683
+    },
+    {
+        "content": "<p>well the univalence axiom, very crudely stated by a naif is \"equivalence should behave like equality\"</p>",
+        "id": 192154093,
+        "sender_full_name": "Jonathan Beardsley",
+        "timestamp": 1585452718
+    },
+    {
+        "content": "<p>and the basic issue with pullbacks is that the two ways of pulling back are not equal, they're \"equivalent\" (in this case, isomorphic)</p>",
+        "id": 192154132,
+        "sender_full_name": "Jonathan Beardsley",
+        "timestamp": 1585452743
+    },
+    {
+        "content": "<p>that sounds like any sort of coherence result, e.g. monoidal coherence</p>",
+        "id": 192154135,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1585452769
+    },
+    {
+        "content": "<p>is there a link between univalence and coherence theorems?</p>",
+        "id": 192154143,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1585452817
+    },
+    {
+        "content": "<p>Hm.</p>",
+        "id": 192154146,
+        "sender_full_name": "Jonathan Beardsley",
+        "timestamp": 1585452834
+    },
+    {
+        "content": "<p>Well, okay so it's not quite a coherence type thing.</p>",
+        "id": 192154187,
+        "sender_full_name": "Jonathan Beardsley",
+        "timestamp": 1585452870
+    },
+    {
+        "content": "<p>The issue being that when you pass to the world in which you're doing something like the Univalence Axiom... it's like... \"equality\" doesn't exist anymore</p>",
+        "id": 192154203,
+        "sender_full_name": "Jonathan Beardsley",
+        "timestamp": 1585452900
+    },
+    {
+        "content": "<p>I don't really understand it.</p>",
+        "id": 192154212,
+        "sender_full_name": "Jonathan Beardsley",
+        "timestamp": 1585452920
+    },
+    {
+        "content": "<p>I mean, I guess I don't really understand the Univalence Axiom, like what it's actually saying.</p>",
+        "id": 192154214,
+        "sender_full_name": "Jonathan Beardsley",
+        "timestamp": 1585452944
+    },
+    {
+        "content": "<p>like, stupid question: in intensional type theory, can we say that two things (terms? propositions? types?) are equal?</p>",
+        "id": 192154264,
+        "sender_full_name": "Jonathan Beardsley",
+        "timestamp": 1585453051
+    },
+    {
+        "content": "<p>I don't really know what the \"things\" are called whose equality we're checking</p>",
+        "id": 192154266,
+        "sender_full_name": "Jonathan Beardsley",
+        "timestamp": 1585453065
+    },
+    {
+        "content": "<p>yes, but you have two kinds of equality on terms, so you need to specify which</p>",
+        "id": 192154310,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1585453096
+    },
+    {
+        "content": "<p>terms can be propositionally (i.e. intensionally) equal, or definitionally (i.e. extensionally) equal</p>",
+        "id": 192154312,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1585453116
+    },
+    {
+        "content": "<p>i see. so there's like \"definitional equality\" and..</p>",
+        "id": 192154313,
+        "sender_full_name": "Jonathan Beardsley",
+        "timestamp": 1585453119
+    },
+    {
+        "content": "<p>okay right</p>",
+        "id": 192154314,
+        "sender_full_name": "Jonathan Beardsley",
+        "timestamp": 1585453121
+    },
+    {
+        "content": "<p>(anyway, I think I ought to get some sleep now, especially with the clocks changing — I'll catch up on the conversation tomorrow)</p>",
+        "id": 192154366,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1585453249
+    },
+    {
+        "content": "<p>bye!</p>",
+        "id": 192154370,
+        "sender_full_name": "Jonathan Beardsley",
+        "timestamp": 1585453260
+    },
+    {
+        "content": "<p>Seems like I am really late, but I am extremely interested in this discussion, and I have thought a lot about these kinds of things, so here is my take on it:</p>\n<ul>\n<li>Firstly I believe that <span class=\"user-mention\" data-user-id=\"276679\">@Jonathan Beardsley</span>'s correspondence table is great, but it troubles me a bit to identify cartesian operads with Lawvere theories. They are indeed equivalent, but a cartesian operad is made of operation that have many outputs and just one input, whereas a Lawvere theory is made of operations with many inputs and many outputs. It so happens that in the cartesian case, operations with many outputs are all made out from operations with just one output, hence the equivalence, but that's specific to the cartesian case. So I think there should be (at least) one other column, in which to put a presentation of operations with many inputs and many outputs. As I just discussed, in the cartesian case, this would be Lawvere theories. For the (symmetric) monoidal case, there is no one way of doing, depending on your choice, you get (symmetric) polycategories, (symmetric) PROperads or (symmetric) PROPs. I don't know about the semi-cartesian case</li>\n<li>Secondly, I believe there should be two more columns for the colored such stuff, I know that it was probably implicit in your original correspondence, but as people tend to be vague about colored vs. not colored, I guess it is nice to say non-colored operads, etc... I believe the colored version of Lawvere theories are multisorted Lawvere theories. Then you have colored PROPs, colored PROperads, and also colored operads, colored symmectric operads...</li>\n<li>\n<p>I want to point out that C-systems/contextual categories can be very (very) wild categorically. You don't even need much for that, it suffices to try and describe <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"normal\">Σ</mi></mrow><annotation encoding=\"application/x-tex\">\\Sigma</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord\">Σ</span></span></span></span>-types - they don't come naturally as a limit of anything. The reason being that in the introduction rule <br>\n<span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mfrac><mrow><mi mathvariant=\"normal\">Γ</mi><mo>⊢</mo><mi>A</mi><mo>:</mo><mrow><mi mathvariant=\"bold\">T</mi><mi mathvariant=\"bold\">y</mi><mi mathvariant=\"bold\">p</mi><mi mathvariant=\"bold\">e</mi></mrow><mspace width=\"1em\"></mspace><mi mathvariant=\"normal\">Γ</mi><mo separator=\"true\">,</mo><mi>x</mi><mo>:</mo><mi>A</mi><mo>⊢</mo><mi>B</mi><mo>:</mo><mrow><mi mathvariant=\"bold\">T</mi><mi mathvariant=\"bold\">y</mi><mi mathvariant=\"bold\">p</mi><mi mathvariant=\"bold\">e</mi></mrow></mrow><mrow><mi mathvariant=\"normal\">Γ</mi><mo>⊢</mo><mi mathvariant=\"normal\">Σ</mi><mi>A</mi><mi mathvariant=\"normal\">.</mi><mi>B</mi></mrow></mfrac></mrow><annotation encoding=\"application/x-tex\"> \\frac{\\Gamma\\vdash A : \\mathbf{Type} \\quad \\Gamma,x:A\\vdash B : \\mathbf{Type}}{\\Gamma\\vdash \\Sigma A.B}</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:1.277216em;vertical-align:-0.345em;\"></span><span class=\"mord\"><span class=\"mopen nulldelimiter\"></span><span class=\"mfrac\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.9322159999999999em;\"><span style=\"top:-2.6550000000000002em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\">Γ</span><span class=\"mrel mtight\">⊢</span><span class=\"mord mtight\">Σ</span><span class=\"mord mathdefault mtight\">A</span><span class=\"mord mtight\">.</span><span class=\"mord mathdefault mtight\" style=\"margin-right:0.05017em;\">B</span></span></span></span><span style=\"top:-3.23em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"frac-line\" style=\"border-bottom-width:0.04em;\"></span></span><span style=\"top:-3.446108em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\">Γ</span><span class=\"mrel mtight\">⊢</span><span class=\"mord mathdefault mtight\">A</span><span class=\"mrel mtight\">:</span><span class=\"mord mtight\"><span class=\"mord mathbf mtight\">T</span><span class=\"mord mathbf mtight\" style=\"margin-right:0.01597em;\">y</span><span class=\"mord mathbf mtight\">p</span><span class=\"mord mathbf mtight\">e</span></span><span class=\"mspace mtight\" style=\"margin-right:1.4285714285714286em;\"></span><span class=\"mord mtight\">Γ</span><span class=\"mpunct mtight\">,</span><span class=\"mord mathdefault mtight\">x</span><span class=\"mrel mtight\">:</span><span class=\"mord mathdefault mtight\">A</span><span class=\"mrel mtight\">⊢</span><span class=\"mord mathdefault mtight\" style=\"margin-right:0.05017em;\">B</span><span class=\"mrel mtight\">:</span><span class=\"mord mtight\"><span class=\"mord mathbf mtight\">T</span><span class=\"mord mathbf mtight\" style=\"margin-right:0.01597em;\">y</span><span class=\"mord mathbf mtight\">p</span><span class=\"mord mathbf mtight\">e</span></span></span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.345em;\"><span></span></span></span></span></span><span class=\"mclose nulldelimiter\"></span></span></span></span></span><br>\nthere is one premise which uses $\\Gamma$ and one premise which uses $\\Gamma,x:A$. Limits in category theory are defined as cones (ie a family of maps starting from <em>the same</em> object), which doesn't match well again these two defferent premises.</p>\n</li>\n<li>\n<p>Finally I want to ask : in the dependent case, I know essentially of two ways of doing things. The first is the $T$-operads for a monad $T$ (cf Leinster, Higher operads, higher catetgories), and the second is Lawvere theories with arities (cf Berger-Melliès-Weber). Do you know where these fit in this picture? It looks to me like Lawvere theories with arities are analoguous for the cartesian case, since the condition of preserving the nerve functor says things about generic objects being limits of arities, but I don't know of any notion of \"dependent cartesian operad\". As for $T$-operads, they seem way more general, and at least the monoidal and symmetric monoidal cases are included as special cases, but I don't have any more on that. If you have ideas on these questions, I'd be very interested</p>\n</li>\n</ul>",
+        "id": 193160908,
+        "sender_full_name": "Thibaut Benjamin",
+        "timestamp": 1586252014
+    },
+    {
+        "content": "<p>I think one of the questions we were interested in was whether you could use <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>T</mi></mrow><annotation encoding=\"application/x-tex\">T</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathdefault\" style=\"margin-right:0.13889em;\">T</span></span></span></span>-operads/multicategories for dependency; in some simple cases (e.g. where it coincides with Lawvere theories with arities, e.g. finitary monads on presheaves over inverse categories) you may well be able to, but I personally think it's likely that full dependency (e.g. at the term level) has structure that may well not be capturable by these concepts</p>",
+        "id": 193172376,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1586258982
+    },
+    {
+        "content": "<p>I also think C-systems are not a particularly natural description of dependent syntax, but, for now, that's the best analogue we have</p>",
+        "id": 193172578,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1586259089
+    },
+    {
+        "content": "<blockquote>\n<p>So I think there should be (at least) one other column, in which to put a presentation of operations with many inputs and many outputs.</p>\n</blockquote>\n<p>I agree: if you were making a comprehensive table, then you'd also want to include sequent calculi as well as type theories <span aria-label=\"+1\" class=\"emoji emoji-1f44d\" role=\"img\" title=\"+1\">:+1:</span></p>",
+        "id": 193172754,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1586259175
+    },
+    {
+        "content": "<blockquote>\n<p>Secondly, I believe there should be two more columns for the colored such stuff</p>\n</blockquote>\n<p>yes, really I think we ought not to bother with the single-sorted case and just talk about \"multicategories\" rather than (coloured) operads</p>",
+        "id": 193172921,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1586259256
+    },
+    {
+        "content": "<p>The single-sorted cases are pretty nice, because you are happy to end up in known territory. Lawvere theories, and operads are quite famous examples. Also the single-sorted cases connect more directly with the logical aspect of it : monoids, groups, abelian groups... all are single-sorted theories. I think that's why the single-sorted case is so much cited. But it's also \"nothing special\" and maybe focusing too much of it hides a bit what's really going on. Along the same lines, I remember really understanding the tensor product of vector spaces only when I realised that it was a special case of a tensor product on bimodules!</p>",
+        "id": 193179544,
+        "sender_full_name": "Thibaut Benjamin",
+        "timestamp": 1586262847
+    },
+    {
+        "content": "<blockquote>\n<p>monoids, groups, abelian groups... all are single-sorted theories</p>\n</blockquote>\n<p>actions, modules, vector spaces, etc. are all 2-sorted theories — there are many examples of <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>S</mi></mrow><annotation encoding=\"application/x-tex\">S</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathdefault\" style=\"margin-right:0.05764em;\">S</span></span></span></span>-sorted theories for any <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>S</mi></mrow><annotation encoding=\"application/x-tex\">S</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathdefault\" style=\"margin-right:0.05764em;\">S</span></span></span></span></p>",
+        "id": 193180825,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1586263414
+    },
+    {
+        "content": "<p>however, the constructions on single-sorted algebraic theories are different to the constructions on multisorted algebraic theories and tend to be much less natural from a syntactic point of view</p>",
+        "id": 193180963,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1586263463
+    },
+    {
+        "content": "<p>multisorted Lawvere theories and multicategories are also well-known territory</p>",
+        "id": 193181012,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1586263493
+    },
+    {
+        "content": "<p>so I would argue that the focus on the single-sorted setting has been primarily for historical reasons</p>",
+        "id": 193181108,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1586263543
+    },
+    {
+        "content": "<p>There's definitely a argument for it. But in any case, let's agree on the fact that we should always keep an emphasis on multi-sorted/coloured things</p>",
+        "id": 193185523,
+        "sender_full_name": "Thibaut Benjamin",
+        "timestamp": 1586265517
+    }
+]

@@ -1,0 +1,146 @@
+[
+    {
+        "content": "<p>Hi folks, I'm interested in the problem of computing whether two functions are extensionally equal. I don't know much type theory, so I'm trying to establish an intuition about the problem, and what is possible.</p>\n<p>I know that the problem is undecidable for Turing-complete programming languages, but I'm not interested in those. I'm interested in suitably restricted languages. In particular, I'm interested in (purely functional) languages that include:</p>\n<ul>\n<li>first-class functions</li>\n<li>sum types and product types</li>\n<li>branching and pattern-matching</li>\n<li>integer arithmetic<ul>\n<li>Assume the standard integer operations are built-in, and that they obey all the standard laws of arithmetic.</li>\n</ul>\n</li>\n</ul>\n<p>But (perhaps unconventionally), I only want to consider languages <strong>without</strong> inductive/recursive types. (Integers are built-in, so they need not be treated as an inductive type.) I've recently been considering alternative approaches to structuring data wherein functions also fulfil the role of finite maps (a.k.a. dictionaries, associative arrays...), and I believe this can serve as an adequate alternative to inductive types for an everyday programming language. (Lookups would be statically-checked.)</p>\n<p>As for recursive functions, they might exist in a very constrained form, or be banned entirely. (Is it reasonable to have this discussion without establishing what kind of recursion is permitted?)</p>\n<p>So, back to our problem: determining <strong>extensional equality</strong> of functions. Thinking about this for a while, I've noticed there are actually several related problems:</p>\n<ul>\n<li>Computing a \"canonical form\" for a function<ul>\n<li>This one seems tricky: the process might need to include all kinds of elaborate manipulations, e.g. factorization and expansion of polynomial expressions.</li>\n</ul>\n</li>\n<li>Computing a canonical \"identifier\" for a function (two functions share the identifier iff they are extensionally equal)<ul>\n<li>Perhaps this is an easier problem? The identifier need not contain all the information required to (efficiently) reconstruct the function definition itself.</li>\n</ul>\n</li>\n<li>Testing two functions for extensional equality<ul>\n<li>This is an easier problem than the above problems, since equality testing is trivial if you have canonical forms/identifiers. But perhaps there are other methods to test equality that are more practical (and more decidable) than computing canonical forms/identifiers.</li>\n</ul>\n</li>\n</ul>\n<p>My questions include:</p>\n<ul>\n<li>How feasible is it to solve any of these problems in a suitably constrained language such as the one I described earlier?</li>\n<li>What is the most powerful language in which extensional equality is decidable? Has this been established?</li>\n<li>Are there some good resources for learning the basics of all this?</li>\n</ul>\n<p>I've been utterly entranced by this problem lately. I've stumbled onto type-theoretic discussions about extensional equality such as the recent buzz around cubical type theory, but:</p>\n<ul>\n<li>The design of these type systems seems to be centered around inductive types, which I'm not very interested in. Perhaps all the relevant facts and motivations no longer apply in the absence of inductive types?</li>\n<li>From what I can tell, the idea seems to be that the programmer has to <strong>manually prove</strong> extensional equality of functions (by computing some kind of \"path\"). There's no built-in true/false test? That doesn't seem like the approach to equality you'd want in a general-purpose programming language.</li>\n</ul>",
+        "id": 255152540,
+        "sender_full_name": "Nick Smith",
+        "timestamp": 1632796972
+    },
+    {
+        "content": "<p>I guess you have to avoid being able to state all Diophantine equations, otherwise equality of open terms (i.e, polynomials) will be undecidable. Probably the most natural restriction is to <em>linear</em> integer arithmetic, but of course this may be a strong restriction.</p>",
+        "id": 255209668,
+        "sender_full_name": "James Wood",
+        "timestamp": 1632833074
+    },
+    {
+        "content": "<p>Let me see if I understand this problem. We can write a function <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>f</mi><mo>:</mo><msup><mi mathvariant=\"double-struck\">Z</mi><mi>n</mi></msup><mo>→</mo><mi mathvariant=\"double-struck\">B</mi></mrow><annotation encoding=\"application/x-tex\">f: \\Z^n \\to \\mathbb{B}</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8888799999999999em;vertical-align:-0.19444em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.10764em;\">f</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">:</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.68889em;vertical-align:0em;\"></span><span class=\"mord\"><span class=\"mord mathbb\">Z</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.664392em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathnormal mtight\">n</span></span></span></span></span></span></span></span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">→</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.68889em;vertical-align:0em;\"></span><span class=\"mord mathbb\">B</span></span></span></span> that tests whether <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>p</mi><mo>∈</mo><msup><mi mathvariant=\"double-struck\">Z</mi><mi>n</mi></msup></mrow><annotation encoding=\"application/x-tex\">p \\in \\Z^n</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.7335400000000001em;vertical-align:-0.19444em;\"></span><span class=\"mord mathnormal\">p</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">∈</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.68889em;vertical-align:0em;\"></span><span class=\"mord\"><span class=\"mord mathbb\">Z</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.664392em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathnormal mtight\">n</span></span></span></span></span></span></span></span></span></span></span> is a solution to a Diophantine equation (returning a Boolean), and we can write a function <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>g</mi><mo>:</mo><msup><mi mathvariant=\"double-struck\">Z</mi><mi>n</mi></msup><mo>→</mo><mi mathvariant=\"double-struck\">B</mi></mrow><annotation encoding=\"application/x-tex\">g: \\Z^n \\to \\mathbb{B}</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.625em;vertical-align:-0.19444em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.03588em;\">g</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">:</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.68889em;vertical-align:0em;\"></span><span class=\"mord\"><span class=\"mord mathbb\">Z</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.664392em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathnormal mtight\">n</span></span></span></span></span></span></span></span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">→</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.68889em;vertical-align:0em;\"></span><span class=\"mord mathbb\">B</span></span></span></span> that always returns false. An algorithm that told us whether <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>f</mi><mo>=</mo><mi>g</mi></mrow><annotation encoding=\"application/x-tex\">f = g</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8888799999999999em;vertical-align:-0.19444em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.10764em;\">f</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.625em;vertical-align:-0.19444em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.03588em;\">g</span></span></span></span> for any such pair of functions (containing only integer addition, multiplication, and equality tests) would be solving an undecidable problem.</p>\n<p>Is that right?</p>",
+        "id": 255329123,
+        "sender_full_name": "Nick Smith",
+        "timestamp": 1632880304
+    },
+    {
+        "content": "<p>Sounds right to me.  By the way, we can take <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>n</mi><mo>=</mo><mn>11</mn></mrow><annotation encoding=\"application/x-tex\">n = 11</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.43056em;vertical-align:0em;\"></span><span class=\"mord mathnormal\">n</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.64444em;vertical-align:0em;\"></span><span class=\"mord\">11</span></span></span></span>.  That's the current smallest known value that works.</p>",
+        "id": 255336220,
+        "sender_full_name": "John Baez",
+        "timestamp": 1632886205
+    },
+    {
+        "content": "<p>What's the largest known <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>n</mi></mrow><annotation encoding=\"application/x-tex\">n</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.43056em;vertical-align:0em;\"></span><span class=\"mord mathnormal\">n</span></span></span></span> that <em>doesn't</em> work?</p>",
+        "id": 255336899,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1632886695
+    },
+    {
+        "content": "<p>It seems like most serious work has been done for natural number solutions of Diophantine equations, not integer solutions.  Matiyasevich  showed the best upper bound: there's no decision procedure for Diophantine equations in 9 natural number variables.    Wikipedia says even 3 cannot now be excluded as a possible upper bound.    I assume that means for natural numbers solutions there's a decision procedure for 2-variable Diophantine equations.</p>",
+        "id": 255341459,
+        "sender_full_name": "John Baez",
+        "timestamp": 1632890861
+    },
+    {
+        "content": "<p>The difficulty of settling Fermat's last theorem must have something to do with how problems kick in at n = 3.</p>",
+        "id": 255341512,
+        "sender_full_name": "John Baez",
+        "timestamp": 1632890892
+    },
+    {
+        "content": "<p>Ok, it seems I can throw extensional equality in the dustbin then. It seems utterly unrealistic even for \"basic\" functions <span aria-label=\"sweat smile\" class=\"emoji emoji-1f605\" role=\"img\" title=\"sweat smile\">:sweat_smile:</span>.</p>\n<p>The only way forward (apart from having no concept of function equality whatsoever) seems to be treating functions as pieces of syntax, and comparing them for syntactic equality. I think type theorists call this \"definitional equality\". I suppose that must suffice!</p>",
+        "id": 255357742,
+        "sender_full_name": "Nick Smith",
+        "timestamp": 1632902463
+    },
+    {
+        "content": "<p>Yes, that's the reason why, as you said, a programmer or mathematician has to manually prove extensional equality of functions.  The only kind of equality check for functions that we can expect a computer to do is intensional.</p>",
+        "id": 255358484,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1632902895
+    },
+    {
+        "content": "<p>Does the quick appearance of undecidability have something to do with (non-)continuity? If my language hypothetically had <strong>only</strong> rational arithmetic (no <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"double-struck\">Z</mi></mrow><annotation encoding=\"application/x-tex\">\\Z</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.68889em;vertical-align:0em;\"></span><span class=\"mord mathbb\">Z</span></span></span></span> or <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"double-struck\">N</mi></mrow><annotation encoding=\"application/x-tex\">\\N</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.68889em;vertical-align:0em;\"></span><span class=\"mord mathbb\">N</span></span></span></span> types, or any inductive type), can we have more expressive languages whilst retaining decidable equality?</p>",
+        "id": 255366284,
+        "sender_full_name": "Nick Smith",
+        "timestamp": 1632906730
+    },
+    {
+        "content": "<p>Or are there other simple counter-examples...</p>",
+        "id": 255366376,
+        "sender_full_name": "Nick Smith",
+        "timestamp": 1632906791
+    },
+    {
+        "content": "<p>Having only real arithmetic would work, rational not so much.  The theory of a real closed field is decidable.  You can't have trigonometric functions though.</p>",
+        "id": 255379801,
+        "sender_full_name": "James Deikun",
+        "timestamp": 1632913846
+    },
+    {
+        "content": "<p>That result about real closed fields is due to Tarski; it's good to read <a href=\"https://en.wikipedia.org/wiki/Real_closed_field#Decidability_and_quantifier_elimination\">this</a> to see what he did.</p>",
+        "id": 255388023,
+        "sender_full_name": "John Baez",
+        "timestamp": 1632917776
+    },
+    {
+        "content": "<p>It seems that while it's decidable, the best decision procedure is very slow.  I don't know how slow!  But if I had to wildly guess, I'd say double exponential time, something like <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msup><mn>2</mn><msup><mn>2</mn><mrow><mi>c</mi><mi>n</mi></mrow></msup></msup></mrow><annotation encoding=\"application/x-tex\">2^{2^{cn}}</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.87998em;vertical-align:0em;\"></span><span class=\"mord\"><span class=\"mord\">2</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.87998em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\">2</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.7385428571428572em;\"><span style=\"top:-2.931em;margin-right:0.07142857142857144em;\"><span class=\"pstrut\" style=\"height:2.5em;\"></span><span class=\"sizing reset-size3 size1 mtight\"><span class=\"mord mtight\"><span class=\"mord mathnormal mtight\">c</span><span class=\"mord mathnormal mtight\">n</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span>.  So this raises the question: is decidability useful if you have to wait billions of years to decide the equality of two functions?</p>",
+        "id": 255389072,
+        "sender_full_name": "John Baez",
+        "timestamp": 1632918287
+    },
+    {
+        "content": "<p>The really bad slowdown is in quantifier alternation depth, making results like this quite practical for many purposes though...</p>",
+        "id": 255396608,
+        "sender_full_name": "James Deikun",
+        "timestamp": 1632921446
+    },
+    {
+        "content": "<p>If you stick to the world of arithmetic, indeed things go sideways quite quickly. But if you instead look at <em>holonomic functions</em> (functions that satisfy a linear ode with polynomial coefficients, which almost all special functions do), then things look bright again. See for example <a href=\"https://www.csd.uwo.ca/~mmorenom/Publications/A_new_zero-test_for_formal_power_series.pdf\">this paper</a> from Joris van der Hoeven.</p>",
+        "id": 255415047,
+        "sender_full_name": "Jacques Carette",
+        "timestamp": 1632927879
+    },
+    {
+        "content": "<p>I don't understand... how are holonomic functions not \"sticking to the world of arithmetic\"? It seems like they're still defined in terms of addition, multiplication, etc.</p>",
+        "id": 255500290,
+        "sender_full_name": "Nick Smith",
+        "timestamp": 1632963304
+    },
+    {
+        "content": "<p>Perhaps I'm missing the \"big picture\" of how holonomic functions are different to traditional functions.</p>",
+        "id": 255500459,
+        "sender_full_name": "Nick Smith",
+        "timestamp": 1632963430
+    },
+    {
+        "content": "<p>They are 'different' because they are defined by a finite amount of data that has a very large amount of regularity properties, even though they are 'infinite' objects defined over continuous spaces. The resulting solutions are analytic with well-behaved, locatable singularities.</p>\n<p>One thing to remember is that these are defined implicitly, as the solution of an LODE.  So they really live in the world of analysis, not arithmetic.</p>",
+        "id": 255501716,
+        "sender_full_name": "Jacques Carette",
+        "timestamp": 1632964391
+    },
+    {
+        "content": "<p>They do seem to be pretty exciting, from what I can comprehend. It's a shame that there is not a drop of introductory material about them. Every resource I can find assumes you are a mathematician. It's hard for me to discern whether they are a useful construct for more than just niche applications.</p>",
+        "id": 255503635,
+        "sender_full_name": "Nick Smith",
+        "timestamp": 1632966031
+    },
+    {
+        "content": "<p>From what I can tell, some operations on holonomic functions might also be computationally intractable...</p>",
+        "id": 255503842,
+        "sender_full_name": "Nick Smith",
+        "timestamp": 1632966229
+    },
+    {
+        "content": "<p>For example, it seems like you need to compute Gröbner bases, which is doubly exponential:</p>\n<blockquote>\n<p>The complexity of Gröbner bases has been the object of extensive studies. It is well-known that in the worst-case, the complexity is doubly exponential in the number of variables.</p>\n</blockquote>",
+        "id": 255504077,
+        "sender_full_name": "Nick Smith",
+        "timestamp": 1632966405
+    },
+    {
+        "content": "<p>Most operations on holonomic functions don't need Gröbner bases, in fact they can mostly be done via straightforward linear algebra. Furthermore, Gröbner bases are quite remarkable in that their running time is often nowhere near the worst case (we do know that in degenerate cases, Gröbner bases exactly correspond to Gaussian Elimination and to the Euclidean algorithm). The work on understanding when Gröbner bases are fast and when they are not is still ongoing, and appears to be extremely deep.</p>\n<p>I find Bruno Salvy's <a href=\"https://perso.ens-lyon.fr/bruno.salvy/talks/lindiffocm\">talk</a> that goes along with the paper <a href=\"https://arxiv.org/abs/1811.08616\">Linear Differential Equations as a Data Structure</a> to be a really good entry point. The audience were mathematically-oriented computer scientists.</p>\n<p>Manuel Kauer's <a href=\"https://www3.risc.jku.at/publications/download/risc_4710/author.pdf\">The Holonomic Toolkit</a> is rather good, but was written for an audience of people who do Symbolic Computation. YMMV.</p>",
+        "id": 255567707,
+        "sender_full_name": "Jacques Carette",
+        "timestamp": 1633006330
+    },
+    {
+        "content": "<p>Thank you for these references! I'll see if they help me <span aria-label=\"smile\" class=\"emoji emoji-1f642\" role=\"img\" title=\"smile\">:smile:</span>. I am very much on board with treating equations as data structures. It's an approach I've been investigating for a while now...</p>",
+        "id": 255681904,
+        "sender_full_name": "Nick Smith",
+        "timestamp": 1633056646
+    }
+]

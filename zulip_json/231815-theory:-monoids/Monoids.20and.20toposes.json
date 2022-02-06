@@ -1,0 +1,92 @@
+[
+    {
+        "content": "<p>I'm very curious, in which way do monoids and toposes interact?</p>",
+        "id": 192875415,
+        "sender_full_name": "Fabrizio Genovese",
+        "timestamp": 1585956114
+    },
+    {
+        "content": "<p>For me monoids have always be very \"classical\" objects, or monoidal objects in a category, while I tend to think about toposes as logic/geometric objects</p>",
+        "id": 192875496,
+        "sender_full_name": "Fabrizio Genovese",
+        "timestamp": 1585956154
+    },
+    {
+        "content": "<p>So how does the relationship between the two work? :O</p>",
+        "id": 192875527,
+        "sender_full_name": "Fabrizio Genovese",
+        "timestamp": 1585956175
+    },
+    {
+        "content": "<p>The category of right actions of a monoid on sets is the same as the category of presheaves on the monoid viewed as a category <span aria-label=\"tada\" class=\"emoji emoji-1f389\" role=\"img\" title=\"tada\">:tada:</span></p>",
+        "id": 192875537,
+        "sender_full_name": "[Mod] Morgan Rogers",
+        "timestamp": 1585956185
+    },
+    {
+        "content": "<p>Oh!</p>",
+        "id": 192875552,
+        "sender_full_name": "Fabrizio Genovese",
+        "timestamp": 1585956210
+    },
+    {
+        "content": "<p>Is this the same thing that happens with Gsets being toposes?</p>",
+        "id": 192875557,
+        "sender_full_name": "Fabrizio Genovese",
+        "timestamp": 1585956221
+    },
+    {
+        "content": "<p>Indeed! Except that it turns out that even more topos theoretic properties are relevant when you don't restrict yourself to groups</p>",
+        "id": 192875637,
+        "sender_full_name": "[Mod] Morgan Rogers",
+        "timestamp": 1585956262
+    },
+    {
+        "content": "<p>eg PSh(M) is local if and only if M has a right absorbing element (r such that rm = r for all m in M) <span aria-label=\"grinning face with smiling eyes\" class=\"emoji emoji-1f601\" role=\"img\" title=\"grinning face with smiling eyes\">:grinning_face_with_smiling_eyes:</span></p>",
+        "id": 192875807,
+        "sender_full_name": "[Mod] Morgan Rogers",
+        "timestamp": 1585956430
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"277473\">Morgan Rogers</span> <a href=\"#narrow/stream/231815-monoids/topic/Favourites/near/192874895\" title=\"#narrow/stream/231815-monoids/topic/Favourites/near/192874895\">said</a>:</p>\n<blockquote>\n<p>The current focus of my research in topos theory is to use toposes to understand monoids and vice versa. So I want to know what monoids you use or encounter in your research, monoids you want to understand better, and which are your favourites for whatever reason!</p>\n</blockquote>\n<p>Hey Morgan, are you the guy we gave that talk at TICT2020 about the topos of M-sets?</p>",
+        "id": 192896939,
+        "sender_full_name": "Matteo Capucci",
+        "timestamp": 1585989002
+    },
+    {
+        "content": "<p>(I liked it! Very interesting)</p>",
+        "id": 192896984,
+        "sender_full_name": "Matteo Capucci",
+        "timestamp": 1585989013
+    },
+    {
+        "content": "<p>Indeed, that was me! I've been investigating topological monoids too</p>",
+        "id": 192899473,
+        "sender_full_name": "[Mod] Morgan Rogers",
+        "timestamp": 1585993424
+    },
+    {
+        "content": "<p>That's interesting. Because I was implementing \"Reversible graphs\" from \"Lawvere, Rosebrugh: Sets for Mathematics\", which turn out to be right actions of a (non-trivial) four-element monoid on the two-element set. (P.S. my impl of reversible graphs is available here: <a href=\"https://esapulkkinen.github.io/cifl-math-library/\">https://esapulkkinen.github.io/cifl-math-library/</a>).<br>\nI was actually surprised when I realized I didn't get the normal graph representation with two distinct sets for edges and vertices from that, because the edges and vertices are more tightly bound, so had to combine set of vertices with set of edges, which was strange. Instead I get operation \"isVertex\" to ask if an element of a set is a vertex and needed to construct filtering based on the corresponding fibers.. But could be I'm misunderstanding some fine point.</p>",
+        "id": 203120246,
+        "sender_full_name": "Esa Pulkkinen",
+        "timestamp": 1594136740
+    },
+    {
+        "content": "<p>There are two different representations of reversible graphs from the point of view of topos theory. The reason is that different categories can have the same topos of presheaves on them.</p>\n<p>For example, for the four element monoid that you implemented, the presheaves on this monoid can be identified with reversible graphs.<br>\nOn the other hand, in the book \"Sets for Mathematics\" that you mention, there is also this category:<br>\n<a href=\"/user_uploads/21317/2SzX8zjWiAA3R8GkMiMSFrjD/Screenshot-2020-07-08-at-13.32.31.png\">Screenshot-2020-07-08-at-13.32.31.png</a> </p>\n<div class=\"message_inline_image\"><a href=\"/user_uploads/21317/2SzX8zjWiAA3R8GkMiMSFrjD/Screenshot-2020-07-08-at-13.32.31.png\" title=\"Screenshot-2020-07-08-at-13.32.31.png\"><img src=\"/user_uploads/21317/2SzX8zjWiAA3R8GkMiMSFrjD/Screenshot-2020-07-08-at-13.32.31.png\"></a></div><p>(Note that not every arrow is drawn, there should be four endomorphisms of <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>X</mi></mrow><annotation encoding=\"application/x-tex\">X</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathdefault\" style=\"margin-right:0.07847em;\">X</span></span></span></span>.)</p>\n<p>Presheaves on this category can also be identified with reversible graphs. Here the identification is more obvious. The set associated to <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi>X</mi><mn>0</mn></msub></mrow><annotation encoding=\"application/x-tex\">X_0</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.83333em;vertical-align:-0.15em;\"></span><span class=\"mord\"><span class=\"mord mathdefault\" style=\"margin-right:0.07847em;\">X</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.30110799999999993em;\"><span style=\"top:-2.5500000000000003em;margin-left:-0.07847em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">0</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span></span></span></span> are the vertices, and the set associated to <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>X</mi></mrow><annotation encoding=\"application/x-tex\">X</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathdefault\" style=\"margin-right:0.07847em;\">X</span></span></span></span> are the edges.</p>\n<p>For each category, there is a \"maximal\" category such that presheaves on it are equivalent to presheaves on the original category: the <a href=\"https://ncatlab.org/nlab/show/Cauchy+complete+category\">Cauchy completion</a>.</p>\n<p>For monoids, the Cauchy completion is relatively easy to calculate. The objects are the idempotents of the monoid, and the morphisms <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>e</mi><mo>→</mo><mi>d</mi></mrow><annotation encoding=\"application/x-tex\">e \\to d</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.43056em;vertical-align:0em;\"></span><span class=\"mord mathdefault\">e</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">→</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.69444em;vertical-align:0em;\"></span><span class=\"mord mathdefault\">d</span></span></span></span> are the elements <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>f</mi><mo>∈</mo><mi>M</mi></mrow><annotation encoding=\"application/x-tex\">f \\in M</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8888799999999999em;vertical-align:-0.19444em;\"></span><span class=\"mord mathdefault\" style=\"margin-right:0.10764em;\">f</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">∈</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathdefault\" style=\"margin-right:0.10903em;\">M</span></span></span></span> such that <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>f</mi><mi>e</mi><mo>=</mo><mi>f</mi><mo>=</mo><mi>d</mi><mi>f</mi></mrow><annotation encoding=\"application/x-tex\">fe = f = df</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8888799999999999em;vertical-align:-0.19444em;\"></span><span class=\"mord mathdefault\" style=\"margin-right:0.10764em;\">f</span><span class=\"mord mathdefault\">e</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.8888799999999999em;vertical-align:-0.19444em;\"></span><span class=\"mord mathdefault\" style=\"margin-right:0.10764em;\">f</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.8888799999999999em;vertical-align:-0.19444em;\"></span><span class=\"mord mathdefault\">d</span><span class=\"mord mathdefault\" style=\"margin-right:0.10764em;\">f</span></span></span></span>. This description appears in <span class=\"user-mention\" data-user-id=\"277473\">@[Mod] Morgan Rogers</span> 's paper \"Toposes of Discrete Monoid Actions\".</p>",
+        "id": 203257962,
+        "sender_full_name": "Jens Hemelaer",
+        "timestamp": 1594208923
+    },
+    {
+        "content": "<p>What I thought I should get is (in Haskell) this:</p>\n<p>data Graph m a = Graph {<br>\n  elements :: !(Set a),<br>\n  action_endomorphism :: m -&gt; Endo a }</p>\n<p>Then using the monoid with four elements for \"m\", the graph can compute four operations on each element of the set (which I call \"id\", \"source\", \"target\", \"inverse\", which would be translations of the monoid endomorphisms under the presheave to the set). (some confusion edited out). I was not aware that the Cauchy completion procedure was intended there.</p>\n<p>Ok I understood now that starting either from the monoid,  or from the category produced by Cauchy completion of the monoid I get different results with respect to what sets exist and would be able to separate the vertices. But in either case the result would match the reversible graphs, but in practical implementation I need to choose if I want the vertices separately or in the same set than the edges. So they are both possible and both represent the reversible graphs - in practice, the vertices and edges both need some identification (e.g. names of elements of the sets) and if I want such identification to be similar for edges and vertices, then I would directly use the monoid in the presheave like in my implementation. And if that identification should be independent for those, then I should first split the vertices from the edges using the cauchy completion, then map the whole category with the presheave.</p>",
+        "id": 203270380,
+        "sender_full_name": "Esa Pulkkinen",
+        "timestamp": 1594216778
+    },
+    {
+        "content": "<p>I don't understand enough Haskell for your code example above, but I agree that the two different ways of looking at it give two different Haskell implementations.</p>",
+        "id": 203315961,
+        "sender_full_name": "Jens Hemelaer",
+        "timestamp": 1594238747
+    }
+]

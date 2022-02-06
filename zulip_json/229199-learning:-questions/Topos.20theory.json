@@ -1,0 +1,200 @@
+[
+    {
+        "content": "<p>Does anyone know any good (informal) introductory material about Topoi? To understand motivation and broad view, at least.</p>",
+        "id": 198695247,
+        "sender_full_name": "Uroš Nedić",
+        "timestamp": 1590433755
+    },
+    {
+        "content": "<p>I wrote this:</p>\n<ul>\n<li><a href=\"http://math.ucr.edu/home/baez/topos.html\">Topos theory in a nutshell</a>.</li>\n</ul>",
+        "id": 198699240,
+        "sender_full_name": "John Baez",
+        "timestamp": 1590437458
+    },
+    {
+        "content": "<p>Thank you Dr Baez. I did read it long time ago but I did search for some real world examples how powerful this theory is as tool?</p>",
+        "id": 208218956,
+        "sender_full_name": "Uroš Nedić",
+        "timestamp": 1598536265
+    },
+    {
+        "content": "<p>It depends on what you're trying to do.   At this point I'd say topos theory is only worth learning if you want to understand mathematics and/or logic in a very deep way.  For example if you're doing a lot of work with sheaves, or you want to understand how logic is connected to category theory, topos theory starts getting useful.</p>",
+        "id": 208283271,
+        "sender_full_name": "John Baez",
+        "timestamp": 1598566531
+    },
+    {
+        "content": "<p>David Spivak did <a href=\"https://arxiv.org/abs/1710.10258\">a project on air traffic control systems using topos theory</a>, and it could be used in many other applications, but nobody has actually implemented Spivak's ideas yet... so I think that \"real world\" applications of topos theory have not been carried to fruition yet.</p>",
+        "id": 208283637,
+        "sender_full_name": "John Baez",
+        "timestamp": 1598566730
+    },
+    {
+        "content": "<p>Look for Tom Leinster's introduction, I found it very useful to start</p>",
+        "id": 208441898,
+        "sender_full_name": "Matteo Capucci",
+        "timestamp": 1598718355
+    },
+    {
+        "content": "<p>It's a brid-eye view of various themes in topos theory and their relationships, plus a minimal amount of definitions and motivation, of course</p>",
+        "id": 208441964,
+        "sender_full_name": "Matteo Capucci",
+        "timestamp": 1598718403
+    },
+    {
+        "content": "<p>I did read material from Dr Spivak. However, I still do not understand what are advantages of doing logic in CT (via Topoi) and doing 'classical' logic (first/higher-order) with predicate calculus?</p>\n<p>I am asking this from practical point of view as a software developer interested in verification techniques.</p>",
+        "id": 212274850,
+        "sender_full_name": "Uroš Nedić",
+        "timestamp": 1601889348
+    },
+    {
+        "content": "<p>I don't think topoi are the answer to any question that would come up in the day-to-day activity of software verification. My understanding is that people are interested in topos theory because it gathers many disparate threads of mathematics in a strikingly natural way.</p>",
+        "id": 212283366,
+        "sender_full_name": "Chad Nester",
+        "timestamp": 1601895179
+    },
+    {
+        "content": "<p>(I would be happy to learn otherwise!)</p>",
+        "id": 212283388,
+        "sender_full_name": "Chad Nester",
+        "timestamp": 1601895199
+    },
+    {
+        "content": "<p>Spivak and Schultz famously approached verification through topos theory, you can find talks, a book and a paper by googling 'temporal type theory' next to their name.<br>\nThe idea is to use the internal logic of a topos of 'time-dependent things' to characterize their interactions and put constraints.<br>\nIndeed, the great leverage of the topos-theoretic method is that internal languages are basically the same for every topos, but their semantics can be wildly different. So you can actually write very simple software to deal with very complicated stuff.</p>",
+        "id": 212288680,
+        "sender_full_name": "Matteo Capucci",
+        "timestamp": 1601898847
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"275932\">Matteo Capucci</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/Topos.20theory/near/212288680\">said</a>:</p>\n<blockquote>\n<p>Indeed, the great leverage of the topos-theoretic method is that internal languages are basically the same for every topos, but their semantics can be wildly different.</p>\n</blockquote>\n<p>The most powerful category theoretic \"an X is just a Y in the category of Z\" results that I've personally seen have been of the form \"X is just a Y object in the topos of Z\", but I'm a topos theorist, so heavily biased <span aria-label=\"joy\" class=\"emoji emoji-1f602\" role=\"img\" title=\"joy\">:joy:</span></p>",
+        "id": 212290876,
+        "sender_full_name": "[Mod] Morgan Rogers",
+        "timestamp": 1601900315
+    },
+    {
+        "content": "<p>I do not call myself a topos theorist but I definitely agree with you! :)</p>",
+        "id": 212297239,
+        "sender_full_name": "Matteo Capucci",
+        "timestamp": 1601903868
+    },
+    {
+        "content": "<p>Spivak was using the internal language of a particular presheaf topos to conveniently express predicates involving <em>time</em>, for the design of an air traffic control system.</p>",
+        "id": 212319173,
+        "sender_full_name": "John Baez",
+        "timestamp": 1601913230
+    },
+    {
+        "content": "<p>Oh, I'm repeating what Matteo said.</p>",
+        "id": 212319284,
+        "sender_full_name": "John Baez",
+        "timestamp": 1601913274
+    },
+    {
+        "content": "<p>So yeah, the point of topos theory in Spivak's book on temporal type theory is that if you pick the right topos, instead of propositions being just true or not, they can be \"true now\", \"true for the next 10 minutes\", etc.</p>",
+        "id": 212319399,
+        "sender_full_name": "John Baez",
+        "timestamp": 1601913336
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"275920\">John Baez</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/Topos.20theory/near/212319173\">said</a>:</p>\n<blockquote>\n<p>Spivak was using the internal language of a particular presheaf topos ...</p>\n</blockquote>\n<p>If I remember correctly, there is a sheaf condition involving coverage by end-to-end intervals.</p>",
+        "id": 212320848,
+        "sender_full_name": "Spencer Breiner",
+        "timestamp": 1601913907
+    },
+    {
+        "content": "<p>I understood. It is better theory (Topos) for knowledge organisation and connection with other knowledge.  If you develop something using Topoi you can have a better overview of your theory itself and maybe find connections with other theories or use something already discovered.</p>",
+        "id": 212330360,
+        "sender_full_name": "Uroš Nedić",
+        "timestamp": 1601918545
+    },
+    {
+        "content": "<p>here's a paper i like a lot which applies topos theory to the semantics of programming languages <a href=\"https://arxiv.org/abs/1208.3596\">https://arxiv.org/abs/1208.3596</a></p>",
+        "id": 212374342,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1601945863
+    },
+    {
+        "content": "<p>the concepts involved in it are closely linked to the stuff in <a href=\"https://iris-project.org/\">Iris</a>, which is definitely applicable to actual program verification</p>",
+        "id": 212374411,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1601945920
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"275920\">John Baez</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/Topos.20theory/near/212319399\">said</a>:</p>\n<blockquote>\n<p>So yeah, the point of topos theory in Spivak's book on temporal type theory is that if you pick the right topos, instead of propositions being just true or not, they can be \"true now\", \"true for the next 10 minutes\", etc.</p>\n</blockquote>\n<p>That is a very helpful summary, thanks.<br>\nI had a look at it a few months ago, but could now work out what \"Temporal Type Theory\" was<br>\nMy first thought was that this must be a modal logic, but when I asked <span class=\"user-mention\" data-user-id=\"276049\">@David Spivak</span> he did not seem to make the connection. <span class=\"user-mention\" data-user-id=\"302507\">@David Corfield</span> in \"Modal HoTT\" mentions \"Temporal Type Theory\" in one sentence, but as work to be done relating it to the Modal HoTT project.</p>",
+        "id": 212392927,
+        "sender_full_name": "Henry Story",
+        "timestamp": 1601969254
+    },
+    {
+        "content": "<p>With regard to the question of the practical uses of Topos theory by <span class=\"user-mention silent\" data-user-id=\"278730\">Uroš Nedić</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/Topos.20theory/near/212274850\">said</a>:</p>\n<blockquote>\n<p>I am asking this from practical point of view as a software developer interested in verification techniques.</p>\n</blockquote>\n<p>in his book D. Corfield writes</p>\n<blockquote>\n<p>where HoTT is the internal language of <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"false\">(</mo><mi mathvariant=\"normal\">∞</mi><mo separator=\"true\">,</mo><mn>1</mn><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">(\\infty, 1)</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mopen\">(</span><span class=\"mord\">∞</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mord\">1</span><span class=\"mclose\">)</span></span></span></span>-toposes, _modal_ HoTT is the internal language for collections of  <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"false\">(</mo><mi mathvariant=\"normal\">∞</mi><mo separator=\"true\">,</mo><mn>1</mn><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">(\\infty , 1)</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mopen\">(</span><span class=\"mord\">∞</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mord\">1</span><span class=\"mclose\">)</span></span></span></span>-toposes related by geometric morphisms</p>\n</blockquote>\n<p>The part to highlight here is that \"HoTT is the internal language of <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"false\">(</mo><mi mathvariant=\"normal\">∞</mi><mo separator=\"true\">,</mo><mn>1</mn><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">(\\infty,1)</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mopen\">(</span><span class=\"mord\">∞</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mord\">1</span><span class=\"mclose\">)</span></span></span></span>-toposes\". That is, as I understand, it defined the categorical structure and vice versa.</p>\n<p>Cubical HoTT is a version of HoTT that can be implemented in computers, and there are a number of implementations of cubical  HoTT's now, of which Cubical Agda.  I think of that as the next step for proof assistants,  the step after that being the Modal HoTT ones (allowing one to define graded modalities, linear logic ones, bunched logics, etc, in the language itself -- all of these highly useful in programming).</p>\n<p>So what use is Cubical HoTT? Well most of the proof assistants are built on Martin-Löf type theory, and HoTT is an extension of that. The article <a href=\"https://dl.acm.org/doi/10.1145/3341691\">Cubical Agda: a dependently typed programming language...</a> gives a very interesting example, of how it allows one to take proofs from one domain of mathematics, eg the <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"false\">(</mo><mn>0</mn><mo separator=\"true\">,</mo><mi>s</mi><mi>u</mi><mi>c</mi><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">(0, suc)</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mopen\">(</span><span class=\"mord\">0</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mord mathnormal\">s</span><span class=\"mord mathnormal\">u</span><span class=\"mord mathnormal\">c</span><span class=\"mclose\">)</span></span></span></span> version of numbers and transport it without loss of mathematical rigor to another implementation that may be better suited for computing (e.g. a binary one).  I guess this should lead to these languages creating both efficient and secure programs.  One could prove properties of structures using representations where it is easier to prove them, and just write out the mapping to the structure most effective for the computer to which it needs to be compiled.   <br>\n(note I am a programmer studying this, not a mathematician, so these are my intuitions).</p>",
+        "id": 212397271,
+        "sender_full_name": "Henry Story",
+        "timestamp": 1601972414
+    },
+    {
+        "content": "<p>I think I'm saying a little more than that. We've had temporal logic around for decades as a kind of modal logic (<a href=\"https://plato.stanford.edu/entries/logic-temporal/\">https://plato.stanford.edu/entries/logic-temporal/</a>). It's a fairly obvious move then to think about temporal versions of other logics, such as kinds of type theory: simple type theory, dependent type theory, even HoTT. I say 'obvious' but there's little that's been published on this, so in my chapter I'm just probing some possibilities. </p>\n<p>See Schultz and Spivak \"This book introduces a temporal type theory, the first of its kind as far as we know\", \"we also make very limited use of dependent types\". Huge amounts remain to be done. People should see this as an opportunity, an unmined gold field. Think what might happen as the intricate identity structure of HoTT meets with modal temporal operators.</p>",
+        "id": 212400830,
+        "sender_full_name": "David Corfield",
+        "timestamp": 1601974709
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276072\">sarahzrf</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/Topos.20theory/near/212374342\">said</a>:</p>\n<blockquote>\n<p>here's a paper i like a lot which applies topos theory to the semantics of programming languages <a href=\"https://arxiv.org/abs/1208.3596\">https://arxiv.org/abs/1208.3596</a></p>\n</blockquote>\n<p>Concerning toposes and programming there is also the recent<br>\n<a href=\"http://www.jonmsterling.com/pdfs/lrat.pdf\">http://www.jonmsterling.com/pdfs/lrat.pdf</a><br>\nwhich I haven't actually read but I mention it because I just love how Figure 6 page 26 looks <span aria-label=\"stuck out tongue closed eyes\" class=\"emoji emoji-1f61d\" role=\"img\" title=\"stuck out tongue closed eyes\">:stuck_out_tongue_closed_eyes:</span></p>",
+        "id": 212406786,
+        "sender_full_name": "Nguyễn Lê Thành Dũng",
+        "timestamp": 1601978713
+    },
+    {
+        "content": "<p><strong>Leslie Lamport</strong> discovered <em>Temporal logic of actions (TLA)</em> by combining <em>Temporal Logic</em> and <em>Logic of Actions</em> (<a href=\"https://lamport.azurewebsites.net/tla/tla.html\">https://lamport.azurewebsites.net/tla/tla.html</a>). Is it possible  for <em>TLA</em> to be transformed (connected) to <em>Temporal Type Theory</em>?</p>",
+        "id": 212613904,
+        "sender_full_name": "Uroš Nedić",
+        "timestamp": 1602101888
+    },
+    {
+        "content": "<p>There is a group at Sandia working on a CT view of TLA. Jon Aytac gave a talk about this at ACT2019: <a href=\"http://eptcs.web.cse.unsw.edu.au/paper.cgi?ACT2019.11\">http://eptcs.web.cse.unsw.edu.au/paper.cgi?ACT2019.11</a></p>",
+        "id": 212617638,
+        "sender_full_name": "Spencer Breiner",
+        "timestamp": 1602104004
+    },
+    {
+        "content": "<p>No relation to Temporal Type Theory (yet), as far as I'm aware. At a glance, TLA seems to be principally discrete-time, whereas TTT aims to handle (and mix) discrete- and continuous-time behaviors.</p>",
+        "id": 212618138,
+        "sender_full_name": "Spencer Breiner",
+        "timestamp": 1602104271
+    },
+    {
+        "content": "<p>Thank you for all these helpful comments. I did also look <em>Effectus Theory</em> (<a href=\"https://arxiv.org/abs/1512.05813\">https://arxiv.org/abs/1512.05813</a>). Is it possible to lift this into Topos and to establish relations with other theories?</p>",
+        "id": 212759220,
+        "sender_full_name": "Uroš Nedić",
+        "timestamp": 1602197846
+    },
+    {
+        "content": "<p>Hi Uros. Every topos is an effectus in a quite uninteresting way (in the paper you linked, they are related to \"Boolean effectuses\")</p>",
+        "id": 212759842,
+        "sender_full_name": "John van de Wetering",
+        "timestamp": 1602198069
+    },
+    {
+        "content": "<p>A better version of that paper is Kenta Cho's PhD thesis, if you really want to get into it: <a href=\"https://arxiv.org/abs/1910.12198\">https://arxiv.org/abs/1910.12198</a></p>",
+        "id": 212759881,
+        "sender_full_name": "John van de Wetering",
+        "timestamp": 1602198102
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"278008\">Spencer Breiner</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/Topos.20theory/near/212618138\">said</a>:</p>\n<blockquote>\n<p>No relation to Temporal Type Theory (yet), as far as I'm aware. At a glance, TLA seems to be principally discrete-time, whereas TTT aims to handle (and mix) discrete- and continuous-time behaviors.</p>\n</blockquote>\n<p>Is it possible for <em>Discrete Temporal Type Theory</em> (<a href=\"http://www.brendanfong.com/Spivak_TTT_Outline.pdf\">http://www.brendanfong.com/Spivak_TTT_Outline.pdf</a>)  to compare with <em>TLA+</em>?</p>",
+        "id": 214397010,
+        "sender_full_name": "Uroš Nedić",
+        "timestamp": 1603495827
+    },
+    {
+        "content": "<p>tl;dr: TLA can probably be embedded into TTT, but working through the details would be a research project.</p>\n<p>[Quoting…]<br>\nThat work gives a start, but it's not enough. You would need to do some work to establish the appropriate relationships between TLA and the type theory. How much have you looked at TTT?</p>\n<p>The basic entities in TTT are sets of behaviors, indexed by durations, with a gluing condition that says we can match behaviors as interval enpoints (a sheaf over the \"interval site\"). One thing you might want to do is interpret TLA(+) in TTT, by showing that any TLA specification defines a specific sheaf in TTT. Presumably this mapping would be functorial (for an appropriate notion of TLA arrow?). Writing S for a TLA spec and [S] for the associated sheaf, you would hope that it preserves some other structure as well, like the interpretation of the logic (e.g., [S &amp; T]=[S]x[T]) and, more interestingly, the temporal structure.</p>\n<p>So the first two questions you would need to answer are (i) what set of behaviors correspond to a TLA statement and (ii) how do TLA connectives/quantifies/modalities/etc transform into sheaf-theoretic constructions. From my admittedly limited knowledge of TLA, the main stumbling block is probably as follows.</p>\n<p>I <em>think</em> that the inclusion of discrete behaviors into continuous behaviors in (TTT) is both fixed and regular, but in TLA (I <em>think</em>) neither is true. We can interpret the discrete embedding in a situational way (e.g., stuttering equivalence). That means you probably need to think about multiple discrete embeddings and their relationships (e.g., refinement).</p>\n<p>If I had to guess, the sheaf of behaviors you get out will be something like this: start from a relatively small set of nominal behaviors in discrete time, embed them into the continuous setting,  and then close them under monotone transformations of the duration intervals.</p>",
+        "id": 214592048,
+        "sender_full_name": "Spencer Breiner",
+        "timestamp": 1603727409
+    },
+    {
+        "content": "<p>I should emphasize, again, that I'm basing this off a vague remembrance of a talk a couple of years ago. If you want to pursue this topic seriously, you should talk to <span class=\"user-mention\" data-user-id=\"282835\">@Jon Aytac</span> and collaborators.</p>",
+        "id": 214592469,
+        "sender_full_name": "Spencer Breiner",
+        "timestamp": 1603727564
+    }
+]

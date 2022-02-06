@@ -1,0 +1,158 @@
+[
+    {
+        "content": "<p>Are julia and python the programming languages we want to use for scientific programming?</p>",
+        "id": 198040796,
+        "sender_full_name": "Daniel Geisler",
+        "timestamp": 1589880261
+    },
+    {
+        "content": "<p>who's we?</p>\n<p>julia seems to be a language a lot of people want to use for scientific programming, and its multiple dispatch model and type system feels very elegant to me on a PL level</p>\n<p>this doesn't particularly strike me as applied ct</p>",
+        "id": 198048516,
+        "sender_full_name": "Pastel Raschke",
+        "timestamp": 1589885509
+    },
+    {
+        "content": "<p>Julia makes a lot of sense because of the type system. Having parametric and dependent types is useful for CT and being dynamically typed and fast is good for applications in scientific computing.</p>",
+        "id": 198054697,
+        "sender_full_name": "James Fairbanks",
+        "timestamp": 1589889840
+    },
+    {
+        "content": "<p>Julia doesn't appear to really have dependent types in the sense that most type theories useful for mathematics have them.</p>\n<p>You need to be careful, because some people will describe a programming language as \"having dependent types\" when it just means that you can have types parameterized by static integer numerals, say, because statically sized vectors are a common simple example of dependent types. However, this does not mean that types can depend on values of arbitrary other types, or that there are things like Π, Σ and identity types that allow you to write proofs about the behavior of operations and such.</p>",
+        "id": 198092100,
+        "sender_full_name": "Dan Doel",
+        "timestamp": 1589905897
+    },
+    {
+        "content": "<p>There's an interesting, but al little too hot blooded discussion of the same here <a href=\"https://github.com/JuliaLang/julia/issues/6113\">https://github.com/JuliaLang/julia/issues/6113</a></p>",
+        "id": 198118168,
+        "sender_full_name": "Philip Zucker",
+        "timestamp": 1589918142
+    },
+    {
+        "content": "<p>Interestingly, firing up the repl, it appears you can parametrize types over more values than just ints. It accepts Tuple{1.34, 'a'} as a type for example.</p>",
+        "id": 198118379,
+        "sender_full_name": "Philip Zucker",
+        "timestamp": 1589918259
+    },
+    {
+        "content": "<p>I don't know Julia. Is that supposed to be the type of a pair whose first element is a 1.34 and whose second element is a 'a'?</p>",
+        "id": 198119050,
+        "sender_full_name": "Reid Barton",
+        "timestamp": 1589918549
+    },
+    {
+        "content": "<p>I think it is the analog of a pair whose first type slot is 1.34 and  second type slot is 'a'</p>",
+        "id": 198119535,
+        "sender_full_name": "Philip Zucker",
+        "timestamp": 1589918783
+    },
+    {
+        "content": "<p>I assume such a type can't be inhabitted</p>",
+        "id": 198119568,
+        "sender_full_name": "Philip Zucker",
+        "timestamp": 1589918796
+    },
+    {
+        "content": "<p>So even their types are untyped <span aria-label=\"upside down\" class=\"emoji emoji-1f643\" role=\"img\" title=\"upside down\">:upside_down:</span></p>",
+        "id": 198119594,
+        "sender_full_name": "Reid Barton",
+        "timestamp": 1589918812
+    },
+    {
+        "content": "<p>It is odd</p>",
+        "id": 198119608,
+        "sender_full_name": "Philip Zucker",
+        "timestamp": 1589918818
+    },
+    {
+        "content": "<p>I would guess this capability is rarely used except for typelevel ints, but I'd be interested to see a place where it is</p>",
+        "id": 198119810,
+        "sender_full_name": "Philip Zucker",
+        "timestamp": 1589918919
+    },
+    {
+        "content": "<p>To the original question, yes, python and julia are the leading candidates for a different flavor of category theory than you'll find in proof systems and ML-like languages.</p>",
+        "id": 198120241,
+        "sender_full_name": "Philip Zucker",
+        "timestamp": 1589919132
+    },
+    {
+        "content": "<p>To my taste at least</p>",
+        "id": 198120263,
+        "sender_full_name": "Philip Zucker",
+        "timestamp": 1589919143
+    },
+    {
+        "content": "<p>Category theory is used as a mathematical object to prove things about or used as a method for organizing proofs of other fields in those systems. The end result produced by the computer is mostly \"typechecked\" or \"failed to typecheck\".</p>",
+        "id": 198120415,
+        "sender_full_name": "Philip Zucker",
+        "timestamp": 1589919237
+    },
+    {
+        "content": "<p>But there are different kinds of things one wants to do with a computer. Sometimes computers are useful for calculating something, something numerical in particular. And it seems like category theory can be useful for organizing those computations too</p>",
+        "id": 198120569,
+        "sender_full_name": "Philip Zucker",
+        "timestamp": 1589919322
+    },
+    {
+        "content": "<p>Ideally, systems like Agda and Coq would be so easy to use and fast that one could do heavy duty numerical calculation in them with proof assurance backing the calculations. But the world isn't there yet, and figuring out how to even do simple numerical problems in those systems is still at the edge of my capabilities, despite not being an idiot and trying for a long time.</p>",
+        "id": 198120805,
+        "sender_full_name": "Philip Zucker",
+        "timestamp": 1589919440
+    },
+    {
+        "content": "<p>So it seems like python and julia are the way to go at the moment if your aims are calculation. I actually find it freeing and mind expanding to not even have the _option_ of being a hard ass formalist, because such an approach is  rather silly in a system not built for it.</p>",
+        "id": 198121209,
+        "sender_full_name": "Philip Zucker",
+        "timestamp": 1589919609
+    },
+    {
+        "content": "<p>Also, if you're interested in having wider appeal, the barrier the entry of python and julia is much lower.</p>",
+        "id": 198121251,
+        "sender_full_name": "Philip Zucker",
+        "timestamp": 1589919636
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276867\">Daniel Geisler</span> <a href=\"#narrow/stream/229156-practice.3A-applied.20ct/topic/julia.20and.20python/near/198040796\">said</a>:</p>\n<blockquote>\n<p>Are julia and python the programming languages we want to use for scientific programming?</p>\n</blockquote>\n<p>It depends what you want to do. For sure I wouldn't ever use either for theorem proving, for instance. Python is more or less the standard in AI tho.</p>",
+        "id": 198124194,
+        "sender_full_name": "Fabrizio Genovese",
+        "timestamp": 1589921166
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276480\">Reid Barton</span> <a href=\"#narrow/stream/229156-practice.3A-applied.20ct/topic/julia.20and.20python/near/198119594\">said</a>:</p>\n<blockquote>\n<p>So even their types are untyped <span aria-label=\"upside down\" class=\"emoji emoji-1f643\" role=\"img\" title=\"upside down\">:upside_down:</span></p>\n</blockquote>\n<p>This is not surprising tho. There's plenty of examples of  \"typed languages\" whose types are a mess. Javascript comes to mind, really</p>",
+        "id": 198124429,
+        "sender_full_name": "Fabrizio Genovese",
+        "timestamp": 1589921296
+    },
+    {
+        "content": "<p>All in all, for me a language is typed if you can clearly point me to a formal type theory that the language implements. Otherwise it's not typed, at best \"hacked\".</p>",
+        "id": 198124490,
+        "sender_full_name": "Fabrizio Genovese",
+        "timestamp": 1589921334
+    },
+    {
+        "content": "<blockquote>\n<p>All in all, for me a language is typed if you can clearly point me to a formal type theory that the language implements.</p>\n</blockquote>\n<p>This criterion excludes almost all existing programming languages, including those for proof assistants, so this is a <em>little</em> stricter than common convention.</p>",
+        "id": 198124949,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1589921555
+    },
+    {
+        "content": "<p>Lol, well yes</p>",
+        "id": 198125278,
+        "sender_full_name": "Fabrizio Genovese",
+        "timestamp": 1589921721
+    },
+    {
+        "content": "<p>But c'mon, coming from category theory don't you feel an intrinsic sense of disgust in saying that C is typed? :D</p>",
+        "id": 198125307,
+        "sender_full_name": "Fabrizio Genovese",
+        "timestamp": 1589921748
+    },
+    {
+        "content": "<p>Probably what I said makes more sense if you see things from a functional programming PoV, actually <span aria-label=\"slight smile\" class=\"emoji emoji-1f642\" role=\"img\" title=\"slight smile\">:slight_smile:</span></p>",
+        "id": 198125440,
+        "sender_full_name": "Fabrizio Genovese",
+        "timestamp": 1589921797
+    }
+]

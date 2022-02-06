@@ -1,0 +1,320 @@
+[
+    {
+        "content": "<p>I'm not sure if the HoTT book says that all functions are already continuous or whether the associated functoriality property can fail, but in any case: Given that algebraic-topology notions a conventionally always defined using continuous functions (spaces X in terms of which concepts are defined already carry some topology and we define homotopies with continuous functions etc etc), how can I even expect a good chunk of alg. top. to by captured in HoTT? <br>\nNaively, one would then assume that even in ZF general alg. top definitions in terms of general functions should be just around the corner. Is the \"weaker\" (constructive realizations are more likely to be possible) framework enough to be able to just drop the 'continuous' predicate on all involved functions and we can just define all notions for 'just functions'?!</p>",
+        "id": 204997645,
+        "sender_full_name": "Nikolaj Kuntner",
+        "timestamp": 1595671312
+    },
+    {
+        "content": "<p>There is no notion of \"all functions are continuous\" and it's independent of the question of constructivity. I would explain it a different way.</p>",
+        "id": 205002424,
+        "sender_full_name": "Reid Barton",
+        "timestamp": 1595680775
+    },
+    {
+        "content": "<p>Namely, in HoTT, types (whatever they are) have this kind of \"higher\" structure given by something we call \"paths\" (but are really identity types), paths between paths, etc. These paths are automatically preserved by functions, in the same way that equality between two elements of a set (in ZF say) is automatically preserved by functions.</p>",
+        "id": 205002477,
+        "sender_full_name": "Reid Barton",
+        "timestamp": 1595680849
+    },
+    {
+        "content": "<p>One model/analogy that can give a lot of intuition is to think of a type as a topological space, a function as a continuous map, an equality as a path/homotopy, etc.; the word \"continuous\" is in there because if it isn't you get something else which isn't what we're interested in.</p>",
+        "id": 205002611,
+        "sender_full_name": "Reid Barton",
+        "timestamp": 1595681130
+    },
+    {
+        "content": "<p>The closest internal statement to continuity would be something like <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"normal\">Π</mi><mtext> </mtext><mi>A</mi><mtext> </mtext><mi>B</mi><mtext> </mtext><mo stretchy=\"false\">(</mo><mi>f</mi><mo>:</mo><mi>A</mi><mo>→</mo><mi>B</mi><mo stretchy=\"false\">)</mo><mtext> </mtext><mi>a</mi><mtext> </mtext><msup><mi>a</mi><mo lspace=\"0em\" mathvariant=\"normal\" rspace=\"0em\">′</mo></msup><mi mathvariant=\"normal\">.</mi><mtext> </mtext><mo stretchy=\"false\">(</mo><mi>a</mi><mo>=</mo><msup><mi>a</mi><mo lspace=\"0em\" mathvariant=\"normal\" rspace=\"0em\">′</mo></msup><mo stretchy=\"false\">)</mo><mo>→</mo><mo stretchy=\"false\">(</mo><mi>f</mi><mi>a</mi><mo>=</mo><mi>f</mi><msup><mi>a</mi><mo lspace=\"0em\" mathvariant=\"normal\" rspace=\"0em\">′</mo></msup><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">\\Pi \\, A \\, B \\, (f : A \\to B) \\, a \\, a'. \\, (a = a') \\to (f a = f a')</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord\">Π</span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mord mathnormal\">A</span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.05017em;\">B</span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mopen\">(</span><span class=\"mord mathnormal\" style=\"margin-right:0.10764em;\">f</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">:</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathnormal\">A</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">→</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1.001892em;vertical-align:-0.25em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.05017em;\">B</span><span class=\"mclose\">)</span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mord mathnormal\">a</span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\">a</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.751892em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\">′</span></span></span></span></span></span></span></span></span><span class=\"mord\">.</span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mopen\">(</span><span class=\"mord mathnormal\">a</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1.001892em;vertical-align:-0.25em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\">a</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.751892em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\">′</span></span></span></span></span></span></span></span></span><span class=\"mclose\">)</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">→</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mopen\">(</span><span class=\"mord mathnormal\" style=\"margin-right:0.10764em;\">f</span><span class=\"mord mathnormal\">a</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1.001892em;vertical-align:-0.25em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.10764em;\">f</span><span class=\"mord\"><span class=\"mord mathnormal\">a</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.751892em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\">′</span></span></span></span></span></span></span></span></span><span class=\"mclose\">)</span></span></span></span>.</p>",
+        "id": 205002660,
+        "sender_full_name": "Reid Barton",
+        "timestamp": 1595681201
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"281274\">Nikolaj Kuntner</span> <a href=\"#narrow/stream/241590-theory.3A-algebraic.20topology.20.26.20homological.20algebra/topic/HoTT/near/204997645\">said</a>:</p>\n<blockquote>\n<p>how can I even expect a good chunk of alg. top. to by captured in HoTT? </p>\n</blockquote>\n<p>maybe the answer is that you shouldn't expect it, but it is true anyways?<br>\nHow can you expect the same homotopy theory to be describable using either topological spaces or simplicial sets, for instance?</p>",
+        "id": 205002686,
+        "sender_full_name": "Reid Barton",
+        "timestamp": 1595681282
+    },
+    {
+        "content": "<p>I got an idea of the setup of HoTT, but the question arises why set theoretical homotopy theory would need topologies, then.</p>",
+        "id": 205002959,
+        "sender_full_name": "Nikolaj Kuntner",
+        "timestamp": 1595681774
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276480\">Reid Barton</span> <a href=\"#narrow/stream/241590-theory.3A-algebraic.20topology.20.26.20homological.20algebra/topic/HoTT/near/205002424\">said</a>:</p>\n<blockquote>\n<p>There is no notion of \"all functions are continuous\" and it's independent of the question of constructivity. I would explain it a different way.</p>\n</blockquote>\n<p>The HoTT book definately makes such points, although I'm not sure what \"continuous\" always means in those contexts.</p>",
+        "id": 205002971,
+        "sender_full_name": "Nikolaj Kuntner",
+        "timestamp": 1595681812
+    },
+    {
+        "content": "<p>In set theory you're starting from a mathematical universe where there isn't any of this funny higher \"homotopy\" stuff going on, so you have to put some effort in to model it somehow: topological spaces are one of many ways to do this.</p>",
+        "id": 205003094,
+        "sender_full_name": "Reid Barton",
+        "timestamp": 1595682052
+    },
+    {
+        "content": "<p>For me \"set\" is basically synonymous with \"no higher stuff\", so I'm probably explaining this poorly.</p>",
+        "id": 205003104,
+        "sender_full_name": "Reid Barton",
+        "timestamp": 1595682083
+    },
+    {
+        "content": "<p>Maybe I'm overestimating how easy stuff like CW complex fit into the early HoTT framework. If it works, then I wonder why you can't just require the whole \"higher (not point-setty) structure\" from your sets X, instead of the 3 topology axioms on T\\subset PX and functions continuous w.r.t to T</p>",
+        "id": 205003457,
+        "sender_full_name": "Nikolaj Kuntner",
+        "timestamp": 1595682725
+    },
+    {
+        "content": "<p>The advantage of the topology axioms is being an actual definition and not just intuition or handwaving.</p>",
+        "id": 205003993,
+        "sender_full_name": "Reid Barton",
+        "timestamp": 1595683731
+    },
+    {
+        "content": "<p>I guess a second advantage is that it gives something you can draw a picture of (especially in low dimensions, e.g., we can represent the circle as literally a subset of <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msup><mi mathvariant=\"double-struck\">R</mi><mn>2</mn></msup></mrow><annotation encoding=\"application/x-tex\">\\mathbb{R}^2</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8141079999999999em;vertical-align:0em;\"></span><span class=\"mord\"><span class=\"mord\"><span class=\"mord mathbb\">R</span></span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.8141079999999999em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">2</span></span></span></span></span></span></span></span></span></span></span> and draw it as a circle on a piece of paper).</p>",
+        "id": 205004055,
+        "sender_full_name": "Reid Barton",
+        "timestamp": 1595683848
+    },
+    {
+        "content": "<p>For intuition or high level reasoning, it's can be perfectly sensible to say a space is basically like a set except it also has the right kind of higher structure that makes it into a space.</p>",
+        "id": 205004110,
+        "sender_full_name": "Reid Barton",
+        "timestamp": 1595683958
+    },
+    {
+        "content": "<p>Probably, although the idea that a line is a set of points was always contested.</p>",
+        "id": 205004558,
+        "sender_full_name": "Nikolaj Kuntner",
+        "timestamp": 1595684864
+    },
+    {
+        "content": "<p><a href=\"https://en.wikipedia.org/wiki/Hermann_Weyl#Foundations_of_mathematics\">https://en.wikipedia.org/wiki/Hermann_Weyl#Foundations_of_mathematics</a><br>\n:)</p>",
+        "id": 205004662,
+        "sender_full_name": "Nikolaj Kuntner",
+        "timestamp": 1595685014
+    },
+    {
+        "content": "<p>I think the following two claims are indisputable:</p>\n<ul>\n<li>\"A topological space is a set together with a collection of <em>open</em> subsets satisfying the following axioms: ...\" is a valid definition. (Never mind what the definition might be good for; just that it is a definition of something.)</li>\n<li>\"A space is like a set but with higher (not point-setty) structure\" is not a valid definition of anything.</li>\n</ul>",
+        "id": 205004675,
+        "sender_full_name": "Reid Barton",
+        "timestamp": 1595685058
+    },
+    {
+        "content": "<p>So would you argue that the concept of space isn't yet properly formalized in HoTT?</p>",
+        "id": 205004729,
+        "sender_full_name": "Nikolaj Kuntner",
+        "timestamp": 1595685133
+    },
+    {
+        "content": "<p>In HoTT a \"space\" (in the sense I've been using it) is a fundamental undefined notion in the same way that \"set\" is the fundamental undefined notion of traditional mathematics.</p>",
+        "id": 205004745,
+        "sender_full_name": "Reid Barton",
+        "timestamp": 1595685186
+    },
+    {
+        "content": "<p>Ah okay, that's what you meant. Well as soon as there's a hard formalism to it (first-order logic, formation rules) - i.e. as soon as how to move around symbols associated with a topological space are clear - then I'd not call it handwaving. Even if the intuition is fundamentally up for grabs.</p>",
+        "id": 205004895,
+        "sender_full_name": "Nikolaj Kuntner",
+        "timestamp": 1595685421
+    },
+    {
+        "content": "<p>Traditionally we start from the undefined notion of set and define things like real numbers, groups, manifolds. There are a lot of different ways to define things that behave the way that \"spaces\" ought to behave, and all of them take a fair amount of work.<br>\nIn HoTT we take a space as the undefined notion. It's like you redefined the finish line to be the starting line.</p>",
+        "id": 205004903,
+        "sender_full_name": "Reid Barton",
+        "timestamp": 1595685441
+    },
+    {
+        "content": "<p>Of course HoTT can be made into a well-defined formal system; but the game is different. You cannot get the right answer in ZF by just defining a space to be a set.</p>",
+        "id": 205004977,
+        "sender_full_name": "Reid Barton",
+        "timestamp": 1595685537
+    },
+    {
+        "content": "<p>Well okay, in any case I still have to understand how something that looks like theorems related to CW complexes follow from the rules of the \"higher structures\", as opposed to point-topological formalism.</p>",
+        "id": 205004992,
+        "sender_full_name": "Nikolaj Kuntner",
+        "timestamp": 1595685562
+    },
+    {
+        "content": "<p>The idea is that homotopy type theory lets you do homotopy \"synthetically\" - homotopy types and a sufficient collection of operations on them are <em>built into the formalism from the start</em>, so you can do a lot of homotopy theory without messing with explicit models like CW complexes or topological spaces or simplicial sets.  But you have to work through the details to see how this actually works.  I haven't done much of this myself, but I've seen enough to get the following rough picture:</p>\n<p>A bunch of homotopy theory <em>can</em> be done synthetically in HoTT (for example at least up to and including the proof of the Blakers-Massey theorem, which is supposedly more elegant in HoTT), but there's fancier stuff that nobody knows how to do in HoTT, which may require new ideas.</p>",
+        "id": 205020013,
+        "sender_full_name": "John Baez",
+        "timestamp": 1595708225
+    },
+    {
+        "content": "<p>This fancier stuff is not mainly stuff that people would do with CW complexes; it's stuff involving \"homotopy coherent diagrams\" and the like.   You might like to read Lurie's comment on <a href=\"https://mathematicswithoutapologies.wordpress.com/2015/05/13/univalent-foundations-no-comment/\">this blog article</a>, and subsequent discussion, to see some experts arguing about the significance and current limitations of homotopy type theory.</p>",
+        "id": 205020154,
+        "sender_full_name": "John Baez",
+        "timestamp": 1595708483
+    },
+    {
+        "content": "<p>There seem to be at least a couple camps among the mathematicians studying it, and at least one of them seems to object to the \"synthetic\" thing. And I guess that is the Voevodsky tradition.</p>\n<p>Specifically, people seem to categorize defining \"higher inductive types\" as doing homotopy theory \"synthetically\". For instance, you can give inductive definitions of the homotopy types of spheres. But actually none of that is necessary to define a bunch of homotopical notions in type theory, and very few homotopical assumptions are necessary for people to develop a lot of theorems about the defined structure. Basically, you can give a characterization of something and prove theorems about that characterization without assuming the characterized objects can be constructed (synthetically or otherwise).</p>\n<p>I can't say the distinction really matters to me, but it does to some people.</p>",
+        "id": 205022322,
+        "sender_full_name": "Dan Doel",
+        "timestamp": 1595712451
+    },
+    {
+        "content": "<p>I suppose as an example of the latter, you can define what it means for a type to be <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>n</mi></mrow><annotation encoding=\"application/x-tex\">n</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.43056em;vertical-align:0em;\"></span><span class=\"mord mathnormal\">n</span></span></span></span>-dimensional, and prove that the type of (small) <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>n</mi></mrow><annotation encoding=\"application/x-tex\">n</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.43056em;vertical-align:0em;\"></span><span class=\"mord mathnormal\">n</span></span></span></span>-dimensional types is <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"false\">(</mo><mi>n</mi><mo>+</mo><mn>1</mn><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">(n+1)</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mopen\">(</span><span class=\"mord mathnormal\">n</span><span class=\"mspace\" style=\"margin-right:0.2222222222222222em;\"></span><span class=\"mbin\">+</span><span class=\"mspace\" style=\"margin-right:0.2222222222222222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord\">1</span><span class=\"mclose\">)</span></span></span></span>-dimensional in type theory from the 1970s, I think.</p>",
+        "id": 205022609,
+        "sender_full_name": "Dan Doel",
+        "timestamp": 1595713011
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"275920\">John Baez</span> <a href=\"#narrow/stream/241590-theory.3A-algebraic.20topology.20.26.20homological.20algebra/topic/HoTT/near/205020154\">said</a>:</p>\n<blockquote>\n<p>This fancier stuff is not mainly stuff that people would do with CW complexes; it's stuff involving \"homotopy coherent diagrams\" and the like.   You might like to read Lurie's comment on <a href=\"https://mathematicswithoutapologies.wordpress.com/2015/05/13/univalent-foundations-no-comment/\">this blog article</a>, and subsequent discussion, to see some experts arguing about the significance and current limitations of homotopy type theory.</p>\n</blockquote>\n<p>Beautiful quote from the blog comments: \"The dream is that the computer assistant will eat the spinach for you. The nightmare is that it will force-feed it to you.\" -DT</p>",
+        "id": 205052488,
+        "sender_full_name": "Spencer Breiner",
+        "timestamp": 1595770323
+    },
+    {
+        "content": "<p>We also don't know whether it is possible to define in HoTT many objects of geometric origin, such as the complex cobordism spectrum <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>M</mi><mi>U</mi></mrow><annotation encoding=\"application/x-tex\">MU</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.10903em;\">M</span><span class=\"mord mathnormal\" style=\"margin-right:0.10903em;\">U</span></span></span></span>, which is absolutely central to the modern understanding of stable homotopy theory.</p>",
+        "id": 205053085,
+        "sender_full_name": "Reid Barton",
+        "timestamp": 1595771402
+    },
+    {
+        "content": "<p>Generally these are objects that come from things like classical Lie groups, and topological spaces really are the easiest way to describe their homotopy types.</p>",
+        "id": 205053178,
+        "sender_full_name": "Reid Barton",
+        "timestamp": 1595771558
+    },
+    {
+        "content": "<p>Note that both of these limitations apply to (our current understanding of) \"book HoTT\", and there are proposed extensions in which these kinds of constructions are probably possible.</p>",
+        "id": 205053752,
+        "sender_full_name": "Reid Barton",
+        "timestamp": 1595772719
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"277270\">Dan Doel</span> <a href=\"#narrow/stream/241590-theory.3A-algebraic.20topology.20.26.20homological.20algebra/topic/HoTT/near/205022609\">said</a>:</p>\n<blockquote>\n<p>I suppose as an example of the latter, you can define what it means for a type to be <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>n</mi></mrow><annotation encoding=\"application/x-tex\">n</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.43056em;vertical-align:0em;\"></span><span class=\"mord mathnormal\">n</span></span></span></span>-dimensional, and prove that the type of (small) <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>n</mi></mrow><annotation encoding=\"application/x-tex\">n</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.43056em;vertical-align:0em;\"></span><span class=\"mord mathnormal\">n</span></span></span></span>-dimensional types is <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"false\">(</mo><mi>n</mi><mo>+</mo><mn>1</mn><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">(n+1)</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mopen\">(</span><span class=\"mord mathnormal\">n</span><span class=\"mspace\" style=\"margin-right:0.2222222222222222em;\"></span><span class=\"mbin\">+</span><span class=\"mspace\" style=\"margin-right:0.2222222222222222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord\">1</span><span class=\"mclose\">)</span></span></span></span>-dimensional in type theory from the 1970s, I think.</p>\n</blockquote>\n<p>Not exactly -- in addition to Martin-Lof Type Theory (which I presume is what you mean by \"type theory from the 1970s\") you need the univalence axiom, which was only formulated about a decade ago.  MLTT alone is unable to prove hardly anything about the homotopy type of the universe.  But it's true that you don't need HITs for this.</p>",
+        "id": 205280928,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1595965149
+    },
+    {
+        "content": "<p>Hmm, okay. I didn't trace through the proofs closely enough. So I guess about all you can do is define what it means to be <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>n</mi></mrow><annotation encoding=\"application/x-tex\">n</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.43056em;vertical-align:0em;\"></span><span class=\"mord mathnormal\">n</span></span></span></span>-dimensional.</p>",
+        "id": 205281801,
+        "sender_full_name": "Dan Doel",
+        "timestamp": 1595965621
+    },
+    {
+        "content": "<p>That particularity is kind of irrelevant, anyway, because the actual point is that some people seem to try to see what you can prove with e.g. just univalence, propositional truncation, and hypothetical specifications, rather than extending the type theory with some class of HITs.</p>",
+        "id": 205282672,
+        "sender_full_name": "Dan Doel",
+        "timestamp": 1595966078
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"281274\">Nikolaj Kuntner</span> <a href=\"#narrow/stream/241590-theory.3A-algebraic.20topology.20.26.20homological.20algebra/topic/HoTT/near/205004992\">said</a>:</p>\n<blockquote>\n<p>Well okay, in any case I still have to understand how something that looks like theorems related to CW complexes follow from the rules of the \"higher structures\", as opposed to point-topological formalism.</p>\n</blockquote>\n<p>Can you give an example of the sort of \"theorems related to CW complexes\" that you have in mind?</p>",
+        "id": 205381143,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1596040677
+    },
+    {
+        "content": "<p>I can make one up if desired, but I should let Nikolaj.</p>",
+        "id": 205386190,
+        "sender_full_name": "John Baez",
+        "timestamp": 1596043150
+    },
+    {
+        "content": "<p>I'm seeing in front of me balls being glued together on their boundary and when people ask \"what are those things being operated on\" they would eventually refer back to parametrized blobs that inherit their topology from R^n for some n. If those spaces in a type theory are abstracted further to types with maybe based points or particular boundaries, or maybe characterized by their algebraic-geometry groups (cohomologies etc.), that seems to mean that all the theorems are also abstracter. So it would seem textbook theorems (e.g. about deformation retracts where the standard examples are given in terms of parameters and homotopies where the interval is a genuine [0,1]) spit into abstract and R-parameter ones.</p>",
+        "id": 205484949,
+        "sender_full_name": "Nikolaj Kuntner",
+        "timestamp": 1596119197
+    },
+    {
+        "content": "<p>I don't know if this is going to answer your question, but one thing to keep in mind is that theorems proved in HoTT will not imply the corresponding results in terms of topological spaces up to homeomorphisms, only up to homotopy equivalence. So if you prove in HoTT that two balls glued by their boundaries give a sphere, you will only get the corresponding statement for topological spaces up to homotopy equivalence.</p>\n<p>In fact, it doesn't make that much sense to talk about \"balls\" in HoTT, because they are contractible, hence indistinguishable from points. Therefore, this result is almost a tautology, because \"gluing\" two points on an <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>n</mi></mrow><annotation encoding=\"application/x-tex\">n</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.43056em;vertical-align:0em;\"></span><span class=\"mord mathnormal\">n</span></span></span></span>-sphere is (by definition) the suspension of the <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>n</mi></mrow><annotation encoding=\"application/x-tex\">n</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.43056em;vertical-align:0em;\"></span><span class=\"mord mathnormal\">n</span></span></span></span>-sphere, which is (again by definition) the <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"false\">(</mo><mi>n</mi><mo>+</mo><mn>1</mn><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">(n+1)</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mopen\">(</span><span class=\"mord mathnormal\">n</span><span class=\"mspace\" style=\"margin-right:0.2222222222222222em;\"></span><span class=\"mbin\">+</span><span class=\"mspace\" style=\"margin-right:0.2222222222222222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord\">1</span><span class=\"mclose\">)</span></span></span></span>-sphere.</p>\n<p>As for why HoTT works as a language of spaces, it should really not be that surprising (but of course the details are not entirely trivial). Ultimately, there are some operations on spaces that are well-defined up to homotopy equivalence (like say products, loop spaces, suspensions...), and you can abstract them out in terms of a category equipped with some structure. This is an old story: model categories and similar notions are motivated by the same idea. The new aspect of HoTT is the realisation that these structures can be presented nicely using type theory with some minor additions.</p>",
+        "id": 205512543,
+        "sender_full_name": "Paolo Capriotti",
+        "timestamp": 1596132671
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"277002\">Paolo Capriotti</span> <a href=\"#narrow/stream/241590-theory.3A-algebraic.20topology.20.26.20homological.20algebra/topic/HoTT/near/205512543\">said</a>:</p>\n<blockquote>\n<p>In fact, it doesn't make that much sense to talk about \"balls\" in HoTT, because they are contractible, hence indistinguishable from points. Therefore, this result is almost a tautology, because \"gluing\" two points on an <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>n</mi></mrow><annotation encoding=\"application/x-tex\">n</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.43056em;vertical-align:0em;\"></span><span class=\"mord mathnormal\">n</span></span></span></span>-sphere is (by definition) the suspension of the <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>n</mi></mrow><annotation encoding=\"application/x-tex\">n</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.43056em;vertical-align:0em;\"></span><span class=\"mord mathnormal\">n</span></span></span></span>-sphere, which is (again by definition) the <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"false\">(</mo><mi>n</mi><mo>+</mo><mn>1</mn><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">(n+1)</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mopen\">(</span><span class=\"mord mathnormal\">n</span><span class=\"mspace\" style=\"margin-right:0.2222222222222222em;\"></span><span class=\"mbin\">+</span><span class=\"mspace\" style=\"margin-right:0.2222222222222222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord\">1</span><span class=\"mclose\">)</span></span></span></span>-sphere.</p>\n</blockquote>\n<p>I do not know why is  \" on an <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>n</mi></mrow><annotation encoding=\"application/x-tex\">n</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.43056em;vertical-align:0em;\"></span><span class=\"mord mathnormal\">n</span></span></span></span>-sphere \",  where is <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>n</mi></mrow><annotation encoding=\"application/x-tex\">n</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.43056em;vertical-align:0em;\"></span><span class=\"mord mathnormal\">n</span></span></span></span>-sphere come from?</p>",
+        "id": 205666145,
+        "sender_full_name": "Runlei XIAO",
+        "timestamp": 1596260634
+    },
+    {
+        "content": "<p>The sphere is the boundary of the two balls, which we realise as just points. Gluing means taking the pushout <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>1</mn><mo>←</mo><msup><mi>S</mi><mi>n</mi></msup><mo>→</mo><mn>1</mn></mrow><annotation encoding=\"application/x-tex\">1 \\leftarrow S^n \\to 1</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.64444em;vertical-align:0em;\"></span><span class=\"mord\">1</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">←</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.05764em;\">S</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.664392em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathnormal mtight\">n</span></span></span></span></span></span></span></span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">→</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.64444em;vertical-align:0em;\"></span><span class=\"mord\">1</span></span></span></span>.</p>",
+        "id": 205671684,
+        "sender_full_name": "Paolo Capriotti",
+        "timestamp": 1596271010
+    },
+    {
+        "content": "<p>So because we glued boundary of ball, so it do not contract?</p>",
+        "id": 205680209,
+        "sender_full_name": "Runlei XIAO",
+        "timestamp": 1596286414
+    },
+    {
+        "content": "<p>It's not that simple. You can glue cells in various ways and it's not that easy to show that you get equivalent spaces. For example, you can just attach one 2-cell to a point or glue two 2-cells or three, or whatver number you want in different ways. It's nuch easier with topological spaces.</p>",
+        "id": 205692080,
+        "sender_full_name": "Valery Isaev",
+        "timestamp": 1596305172
+    },
+    {
+        "content": "<p>You might have an easier time understanding HoTT if you forget anything you ever heard about it being related to \"topology\" and instead think about types being <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"normal\">∞</mi></mrow><annotation encoding=\"application/x-tex\">\\infty</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.43056em;vertical-align:0em;\"></span><span class=\"mord\">∞</span></span></span></span>-groupoids.  That's really the proper intuition; the relationship to topological spaces is only by way of how spaces can be used to present <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"normal\">∞</mi></mrow><annotation encoding=\"application/x-tex\">\\infty</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.43056em;vertical-align:0em;\"></span><span class=\"mord\">∞</span></span></span></span>-groupoids.</p>",
+        "id": 205706056,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1596331868
+    },
+    {
+        "content": "<p>I had a few questions about Modal HoTT. It may seem a bit odd as I am only a little familiar with HoTT. This comes from having a background in Modal Logic (Kripke, David Lewis) and so recognizing modalities quite quickly. I read <span class=\"user-mention\" data-user-id=\"302507\">@David Corfield</span>'s book <a href=\"https://medium.com/@bblfish/modal-hott-on-the-web-2f4f7996b41f\">Modal HoTT</a> which is more a philosophical introduction to the area and a few talks on it such as <span class=\"user-mention\" data-user-id=\"276777\">@Mike Shulman</span>'s <a href=\"https://www.youtube.com/watch?v=hEhFeatKchQ\">Type 2 Theories</a> <a href=\"https://www.uwo.ca/math/faculty/kapulkin/seminars/hottestfiles/Shulman-2018-04-12-HoTTEST.pdf\">slides</a>. I keep getting redirected there by David. </p>\n<p>So more surprising is I am coming from a practical application of the Semantic Web, which I believe has a modal aspect. It is quite obvious that it has using it (if one knowns modal logics), and my aim is to find out how to make this clear. So of course being able to bring in the latest research would be helpful.  Also the semantic web came from work on \"<a href=\"https://www.google.com/url?sa=t&amp;rct=j&amp;q=&amp;esrc=s&amp;source=web&amp;cd=&amp;ved=2ahUKEwiOr7Gx-OvrAhXHzaQKHemnA-4QFjABegQIAhAB&amp;url=http%3A%2F%2Fwww-formal.stanford.edu%2Fbuvac%2Fguha-thesis.ps&amp;usg=AOvVaw0UvEzfZzsVof8XgDQkADcM\">Contexts: A Formalization and Some Applications</a>\" by Guha (now at Google), and a number of papers have been written on contexts from various perspectives (<a href=\"https://www.semanticscholar.org/paper/Context-Mereology-Hayes/937432fa25fb963f50006ea296a8a6e3c628d132\">Context Mereology</a> by Pat Hayes, <a href=\"https://eprints.soton.ac.uk/270829/\">Context Representation for the Semantic Web</a> in terms of Insitutions)</p>",
+        "id": 210174899,
+        "sender_full_name": "Henry Story",
+        "timestamp": 1600196802
+    },
+    {
+        "content": "<p>The basic structure of RDF is <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>s</mi><mo separator=\"true\">,</mo><mi>p</mi><mo separator=\"true\">,</mo><mi>o</mi><mo>:</mo><mi>A</mi><mo>→</mo><mi>N</mi></mrow><annotation encoding=\"application/x-tex\">s,p,o: A \\to N</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.625em;vertical-align:-0.19444em;\"></span><span class=\"mord mathnormal\">s</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mord mathnormal\">p</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mord mathnormal\">o</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">:</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathnormal\">A</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">→</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.10903em;\">N</span></span></span></span> which allows one to express 2-graphs, and explains why reasoning happens in 2 categories as shown by <span class=\"user-mention\" data-user-id=\"275965\">@Evan Patterson</span> in <a href=\"https://arxiv.org/abs/1706.00526\">bicategories of relations</a>. But really in order to speak of where graphs come from on the web (who said what, when?, how?) one needs <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>s</mi><mo separator=\"true\">,</mo><mi>p</mi><mo separator=\"true\">,</mo><mi>o</mi><mo separator=\"true\">,</mo><mi>g</mi><mo>:</mo><mi>A</mi><mo>→</mo><mi>N</mi></mrow><annotation encoding=\"application/x-tex\">s,p,o,g: A \\to N</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.625em;vertical-align:-0.19444em;\"></span><span class=\"mord mathnormal\">s</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mord mathnormal\">p</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mord mathnormal\">o</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.03588em;\">g</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">:</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathnormal\">A</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">→</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.10903em;\">N</span></span></span></span>. The <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>g</mi></mrow><annotation encoding=\"application/x-tex\">g</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.625em;vertical-align:-0.19444em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.03588em;\">g</span></span></span></span> acts as an index.<br>\nHence for example the relevance of Index Monads in the saying_that logic of Abadi, used for security reasoning <a href=\"https://dl.acm.org/doi/pdf/10.1145/1159803.1159839\">Access Control in a Core Calculus of Dependency</a>. <br>\nKnowing who said what is essential on the web, since as we all know, everyone can saying anything, and the quality is not always good (<em>British understatement</em>).</p>",
+        "id": 210177712,
+        "sender_full_name": "Henry Story",
+        "timestamp": 1600198046
+    },
+    {
+        "content": "<p>I am probably not going to need a lot of modal HoTT (perhaps even simple HoTT will do). But I was wondering if from those that know there is a minimal part of it that should cover what is needed?</p>\n<p>Say we wanted to take \"Bicategories of Relations\" and index it not perhaps by speaker, but by statement events, which could then be tied to speakers/publishers allowing one to then build more complex logics on top.  I am thinking here that Philosophers such as Robert Brandom start with the basic notion of \"saying that\" as a speech act on which they then build meaning. But we also find that logicians like Per Martin-Lof see speech acts as central to constructive logic.</p>\n<p>I just came across a paper <a href=\"https://arxiv.org/abs/1806.08038\">Indexed Type Theories</a> by the folks from IntelliJ working on the cubical HoTT proof assistant <a href=\"https://research.jetbrains.org/groups/group-for-dependent-types-and-hott\">Arend</a>. Is that the same notion of indexed? It seems to index contexts...</p>",
+        "id": 210178925,
+        "sender_full_name": "Henry Story",
+        "timestamp": 1600198552
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"281126\">Henry Story</span> <a href=\"#narrow/stream/241590-theory.3A-algebraic.20topology.20.26.20homological.20algebra/topic/HoTT/near/210178925\">said</a>:</p>\n<blockquote>\n<p>I just came across a paper <a href=\"https://arxiv.org/abs/1806.08038\">Indexed Type Theories</a> by the folks from IntelliJ working on the cubical HoTT proof assistant <a href=\"https://research.jetbrains.org/groups/group-for-dependent-types-and-hott\">Arend</a>. Is that the same notion of indexed?</p>\n</blockquote>\n<p>David answered on Twitter <a href=\"https://twitter.com/DavidCorfield8/status/1305979965373132803\">https://twitter.com/DavidCorfield8/status/1305979965373132803</a><br>\n(The most unlikely place for mathematical discussions)</p>\n<div class=\"inline-preview-twitter\"><div class=\"twitter-tweet\"><a href=\"https://twitter.com/DavidCorfield8/status/1305979965373132803\"><img class=\"twitter-avatar\" src=\"https://pbs.twimg.com/profile_images/1032571126520668160/J9W0r3KE_normal.jpg\"></a><p><a href=\"https://twitter.com/bblfish\">@bblfish</a> <a href=\"https://twitter.com/intellijidea\">@intellijidea</a> <a href=\"https://twitter.com/ArendLang\">@ArendLang</a> Certainly related. That's looking at syntactic representations of indexed (∞,1)-categories, so a kind of fibration (<a href=\"https://t.co/H6ti72S2rx\">https://ncatlab.org/nlab/show/Cartesian+fibration</a>). Mike et al are looking at things like 2-bifibrations (<a href=\"https://t.co/bX3iT6DfH7\">https://ncatlab.org/nlab/show/bifibration#bifibration_of_bicategories</a>).</p><span>- David Corfield (@DavidCorfield8)</span></div></div>",
+        "id": 210222808,
+        "sender_full_name": "Henry Story",
+        "timestamp": 1600233069
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"281126\">Henry Story</span> <a href=\"#narrow/stream/241590-theory.3A-algebraic.20topology.20.26.20homological.20algebra/topic/HoTT/near/210177712\">said</a>:</p>\n<blockquote>\n<p>The basic structure of RDF is <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>s</mi><mo separator=\"true\">,</mo><mi>p</mi><mo separator=\"true\">,</mo><mi>o</mi><mo>:</mo><mi>A</mi><mo>→</mo><mi>N</mi></mrow><annotation encoding=\"application/x-tex\">s,p,o: A \\to N</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.625em;vertical-align:-0.19444em;\"></span><span class=\"mord mathnormal\">s</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mord mathnormal\">p</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mord mathnormal\">o</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">:</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathnormal\">A</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">→</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.10903em;\">N</span></span></span></span> which allows one to express 2-graphs, and explains why reasoning happens in 2 categories as shown by <span class=\"user-mention silent\" data-user-id=\"275965\">Evan Patterson</span> in <a href=\"https://arxiv.org/abs/1706.00526\">bicategories of relations</a>. But really in order to speak of where graphs come from on the web (who said what, when?, how?) one needs <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>s</mi><mo separator=\"true\">,</mo><mi>p</mi><mo separator=\"true\">,</mo><mi>o</mi><mo separator=\"true\">,</mo><mi>g</mi><mo>:</mo><mi>A</mi><mo>→</mo><mi>N</mi></mrow><annotation encoding=\"application/x-tex\">s,p,o,g: A \\to N</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.625em;vertical-align:-0.19444em;\"></span><span class=\"mord mathnormal\">s</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mord mathnormal\">p</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mord mathnormal\">o</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.03588em;\">g</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">:</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathnormal\">A</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">→</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.10903em;\">N</span></span></span></span>. The <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>g</mi></mrow><annotation encoding=\"application/x-tex\">g</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.625em;vertical-align:-0.19444em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.03588em;\">g</span></span></span></span> acts as an index.<br>\nHence for example the relevance of Index Monads in the saying_that logic of Abadi, used for security reasoning <a href=\"https://dl.acm.org/doi/pdf/10.1145/1159803.1159839\">Access Control in a Core Calculus of Dependency</a>. <br>\nKnowing who said what is essential on the web, since as we all know, everyone can saying anything, and the quality is not always good (<em>British understatement</em>).</p>\n</blockquote>\n<p>hi <span class=\"user-mention\" data-user-id=\"281126\">@Henry Story</span> I think you don't need HoTT for this kind of modality of the style (principal) \"P says_that\" SOMETHING. I think simply lax logic (Fairtlough and Mendler) does it for you easily (I have some slides in <a href=\"https://www.slideshare.net/valeria.depaiva/constructive-access-control\">https://www.slideshare.net/valeria.depaiva/constructive-access-control</a> about it. But they were from before Deepak Garg did his work on that and I expect he did get all the low hanging fruit there. So yes, the categorical modelling uses monads, one for each principal and CCCs for the statements that the principals make. the level is not as sophisticated as HoTT and univalence stuff, but I thought it was plenty sophisticated enough for applications--but maybe I misremember.</p>",
+        "id": 210479310,
+        "sender_full_name": "Valeria de Paiva",
+        "timestamp": 1600405474
+    },
+    {
+        "content": "<p>Thanks for the pointer. In <a href=\"http://co-operating.systems/2019/04/01/PhD_second_year_report.pdf\">my second year report from a year and a half ago</a> I described how Abadi's logic based on Indexed Monads seemed like the right fit, and my next todo was to tie this in with access control for Tim Berners-Lee's Solid project and OWL reasoning adapted to a Guard (So I am happy to see you confirm that I was in going in the right direction).</p>",
+        "id": 210487629,
+        "sender_full_name": "Henry Story",
+        "timestamp": 1600414951
+    },
+    {
+        "content": "<p>What I am currently looking to do is to get from first principles a way to show the continuity between <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>s</mi><mo separator=\"true\">,</mo><mi>p</mi><mo>:</mo><mi>A</mi><mo>→</mo><mi>N</mi></mrow><annotation encoding=\"application/x-tex\">s,p: A \\to N</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.625em;vertical-align:-0.19444em;\"></span><span class=\"mord mathnormal\">s</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mord mathnormal\">p</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">:</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathnormal\">A</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">→</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.10903em;\">N</span></span></span></span> graphs, <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>s</mi><mo separator=\"true\">,</mo><mi>p</mi><mo separator=\"true\">,</mo><mi>o</mi><mo>:</mo><mi>A</mi><mo>→</mo><mi>N</mi></mrow><annotation encoding=\"application/x-tex\">s,p,o: A \\to N</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.625em;vertical-align:-0.19444em;\"></span><span class=\"mord mathnormal\">s</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mord mathnormal\">p</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mord mathnormal\">o</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">:</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathnormal\">A</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">→</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.10903em;\">N</span></span></span></span> 2-graphs,  <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>s</mi><mo separator=\"true\">,</mo><mi>p</mi><mo separator=\"true\">,</mo><mi>o</mi><mo separator=\"true\">,</mo><mi>g</mi><mo>:</mo><mi>A</mi><mo>→</mo><mi>N</mi></mrow><annotation encoding=\"application/x-tex\">s,p,o,g: A \\to N</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.625em;vertical-align:-0.19444em;\"></span><span class=\"mord mathnormal\">s</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mord mathnormal\">p</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mord mathnormal\">o</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.03588em;\">g</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">:</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathnormal\">A</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">→</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.10903em;\">N</span></span></span></span> (hyper-graphs?) to lax logic, in such a way that people with no Category Theory experience can follow the reasoning and so that Category Theorists can understand the semantic Web (I am looking to HoTT and Modal HoTT as guides).</p>",
+        "id": 210489673,
+        "sender_full_name": "Henry Story",
+        "timestamp": 1600416587
+    },
+    {
+        "content": "<p>There is this question that you bring up in your slides of constructive logic being perhaps more apt for security reasoning (RDF has a first order interpretation). James Trafford argues in <a href=\"https://link.springer.com/content/pdf/10.1007/978-3-319-47205-8.pdf\">Meaning in Dialogue</a> that first order logic can be seen as specific coming together of constructive and co-contructive logics, so perhaps that is something that would help here: Someone wanting access to a resource constructs a proof, and the guard tries to disprove it? Perhaps RDF can be seen to be such a coming together of a constructive and co-constructive logic? And it would be useful to split that into two for security reasoning. I wonder what Pat Hayes would make of that ;-)</p>\n<p>In your last slides you mention linear logic, temporal logic, etc... and perhaps this is where Modal HoTT can have a clarifying role, in that I think it may show how all these can be seen from the same framework.  (But it may also take me too long to fully understand)</p>",
+        "id": 210490697,
+        "sender_full_name": "Henry Story",
+        "timestamp": 1600417278
+    },
+    {
+        "content": "<p>ok, glad to hear that Lax Logic was already part of the plan!</p>",
+        "id": 210520879,
+        "sender_full_name": "Valeria de Paiva",
+        "timestamp": 1600437102
+    },
+    {
+        "content": "<p>Indexed Lax Logic is very intriguing as it maps directly to indexed strong monads, for which there are simple libraries in Scala, and it seems to get to the quad structure I described above.</p>",
+        "id": 210527662,
+        "sender_full_name": "Henry Story",
+        "timestamp": 1600439901
+    }
+]
