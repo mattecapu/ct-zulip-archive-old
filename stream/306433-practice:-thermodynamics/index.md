@@ -9,9 +9,11 @@ permalink: /stream/306433-practice:-thermodynamics/index.html
 
 ### Topics:
 
+* [compositional thermostatics blog posts](topic/compositional.20thermostatics.20blog.20posts.html) (1 message, latest: Feb 07 2022 at 21:50)
+* [pressure equilibriation in thermostatics](topic/pressure.20equilibriation.20in.20thermostatics.html) (14 messages, latest: Feb 02 2022 at 15:51)
+* [port-Hamiltonian mechanics](topic/port-Hamiltonian.20mechanics.html) (38 messages, latest: Jan 31 2022 at 15:36)
 * [geometry of thermodynamics](topic/geometry.20of.20thermodynamics.html) (2 messages, latest: Jan 29 2022 at 19:15)
 * [Hamiltonian puzzle](topic/Hamiltonian.20puzzle.html) (16 messages, latest: Jan 28 2022 at 18:02)
-* [port-Hamiltonian mechanics](topic/port-Hamiltonian.20mechanics.html) (34 messages, latest: Jan 28 2022 at 16:34)
 * [Geometry of Thermodynamics](topic/Geometry.20of.20Thermodynamics.html) (2 messages, latest: Jan 28 2022 at 15:14)
 * [Symplecticization of Contact Geometry for Thermodynamics](topic/Symplecticization.20of.20Contact.20Geometry.20for.20Thermodynamics.html) (2 messages, latest: Jan 25 2022 at 23:53)
 * [Hong Qian](topic/Hong.20Qian.html) (95 messages, latest: Jan 17 2022 at 18:42)
@@ -37,4 +39,4 @@ permalink: /stream/306433-practice:-thermodynamics/index.html
 * [Stat Mech of the Carnot Engine](topic/Stat.20Mech.20of.20the.20Carnot.20Engine.html) (2 messages, latest: Nov 10 2021 at 23:58)
 * [stream events](topic/stream.20events.html) (13 messages, latest: Nov 09 2021 at 19:58)
 
-<hr><p>Last updated: Jan 30 2022 at 00:30 UTC</p>
+<hr><p>Last updated: Feb 07 2022 at 21:54 UTC</p>

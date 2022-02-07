@@ -9,6 +9,7 @@ permalink: /stream/232161-learning:-recommendations/index.html
 
 ### Topics:
 
+* [smooth sets](topic/smooth.20sets.html) (17 messages, latest: Feb 07 2022 at 02:40)
 * [categories in computer science](topic/categories.20in.20computer.20science.html) (1 message, latest: Jan 26 2022 at 18:28)
 * [Higher dimensional rewriting](topic/Higher.20dimensional.20rewriting.html) (7 messages, latest: Jan 25 2022 at 08:15)
 * [Global space-time structure](topic/Global.20space-time.20structure.html) (5 messages, latest: Dec 15 2021 at 07:14)
@@ -33,4 +34,4 @@ permalink: /stream/232161-learning:-recommendations/index.html
 * [string diagrams](topic/string.20diagrams.html) (22 messages, latest: Apr 11 2020 at 21:49)
 * [stream events](topic/stream.20events.html) (2 messages, latest: Apr 06 2020 at 18:16)
 
-<hr><p>Last updated: Jan 30 2022 at 00:30 UTC</p>
+<hr><p>Last updated: Feb 07 2022 at 21:54 UTC</p>

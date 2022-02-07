@@ -1,0 +1,66 @@
+---
+layout: archive
+title: Zulip Chat Archive
+permalink: /stream/229199-learning:-questions/topic/Assembling.20a.20bimonoidal.20category.html
+---
+
+<h2>Stream: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/index.html">learning: questions</a></h2>
+<h3>Topic: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/Assembling.20a.20bimonoidal.20category.html">Assembling a bimonoidal category</a></h3>
+
+<hr>
+
+<base href="https://categorytheory.zulipchat.com/">
+
+{% raw %}
+
+<a name="199139453"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/Assembling%20a%20bimonoidal%20category/near/199139453" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> keorn <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/Assembling.20a.20bimonoidal.20category.html#199139453">(May 29 2020 at 11:04)</a>:</h4>
+<p>I would like something similar to shortest path/k-shortest paths algorithm, but with support for product and coproduct types. First question is probably how can such problem be framed category theoretically and secondly are there already some fields where similar algorithms have been worked out?</p>
+<p>Thinking about it in wiring diagrams the question is roughly.<br>
+Given: input wires, output wires, boxes with weight/cost and with ports which accept wires of specific types<br>
+Looking for an arrangement of boxes that gets me from input wires to output wires with the least cost. Boxes can accept products or coproducts of wires.</p>
+<p>Sorry if things are not precise here, just learning.</p>
+
+
+
+<a name="199142497"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/Assembling%20a%20bimonoidal%20category/near/199142497" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Fabrizio Genovese <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/Assembling.20a.20bimonoidal.20category.html#199142497">(May 29 2020 at 11:42)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="284625">keorn</span> <a href="#narrow/stream/229199-learning.3A-basic.20questions/topic/Assembling.20a.20bimonoidal.20category/near/199139453">said</a>:</p>
+<blockquote>
+<p>I would like something similar to shortest path/k-shortest paths algorithm, but with support for product and coproduct types. First question is probably how can such problem be framed category theoretically and secondly are there already some fields where similar algorithms have been worked out?</p>
+<p>Thinking about it in wiring diagrams the question is roughly.<br>
+Given: input wires, output wires, boxes with weight/cost and with ports which accept wires of specific types<br>
+Looking for an arrangement of boxes that gets me from input wires to output wires with the least cost. Boxes can accept products or coproducts of wires.</p>
+<p>Sorry if things are not precise here, just learning.</p>
+</blockquote>
+<p>Well, you can define a functor $F$ to the monoid of natural numbers, that is, the category that has only one object *, and natural numbers as morphisms. Identity is 0, while  composition is addition. This functor  maps every box to its cost, and functorial laws tell you that: </p>
+<ol>
+<li>The image of a morphism will be the sum of the costs of all the boxes;</li>
+<li>Identity boxes have cost 0. </li>
+</ol>
+<p>Then your question becomes "given objects A, B, find the morphisms A -&gt; B such that $F(A -&gt; B)$ is minimized." I don't think saying things like I did can help you in any way practically, but it's probably a "less messy way" to formulate what you want</p>
+
+
+
+<a name="199247582"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/Assembling%20a%20bimonoidal%20category/near/199247582" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> keorn <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/Assembling.20a.20bimonoidal.20category.html#199247582">(May 30 2020 at 09:27)</a>:</h4>
+<p>Thanks, makes sense. Now the question is about an algorithm. Seems to me that such problem would be fairly useful in any process optimisation.</p>
+
+
+
+<a name="199299925"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/Assembling%20a%20bimonoidal%20category/near/199299925" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Pastel Raschke <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/Assembling.20a.20bimonoidal.20category.html#199299925">(May 31 2020 at 10:13)</a>:</h4>
+<p>alexander gray has described a (somewhat) <a href="https://www.cs.cmu.edu/~agray/nbody.html">general solution to generalized n-body problems</a>, one class of which is <a href="https://www.cs.cmu.edu/~agray/proximity.html">proximity search/various nearest neighbor problems.</a> not sure how applicable</p>
+
+
+
+<a name="199301544"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/Assembling%20a%20bimonoidal%20category/near/199301544" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> keorn <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/Assembling.20a.20bimonoidal.20category.html#199301544">(May 31 2020 at 11:06)</a>:</h4>
+<p>Nice, will read around.<br>
+Of course I would be also interested in a similar problem by just for a monoidal category with products.</p>
+
+
+
+{% endraw %}
+
+<hr><p>Last updated: Feb 07 2022 at 21:54 UTC</p>

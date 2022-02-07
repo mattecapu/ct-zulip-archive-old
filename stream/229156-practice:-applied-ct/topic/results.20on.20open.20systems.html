@@ -1,0 +1,269 @@
+---
+layout: archive
+title: Zulip Chat Archive
+permalink: /stream/229156-practice:-applied-ct/topic/results.20on.20open.20systems.html
+---
+
+<h2>Stream: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-practice:-applied-ct/index.html">practice: applied ct</a></h2>
+<h3>Topic: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-practice:-applied-ct/topic/results.20on.20open.20systems.html">results on open systems</a></h3>
+
+<hr>
+
+<base href="https://categorytheory.zulipchat.com/">
+
+{% raw %}
+
+<a name="191868076"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229156-practice%3A%20applied%20ct/topic/results%20on%20open%20systems/near/191868076" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Matteo Capucci <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-practice:-applied-ct/topic/results.20on.20open.20systems.html#191868076">(Mar 26 2020 at 11:05)</a>:</h4>
+<p>Hello folks,<br>
+In the past year I've been thinking a lot about the emerging paradigm of 'open systems' in ACT. Examples from the recent literature are open networks (Baez, Pollard, Fong, etc), open games (Hedges, Ghani, Di Lavore, etc), open dynamical systems (Spivak Myers), open Petri nets (Baez, Master). <em>[Pardon me if I didn't list you or your work, I just wrote down the first things popped out in my mind. Please, feel free to point out additional examples!]</em>.<br>
+I find this concept potentially revolutionary: while scientific modelling has been, from the beginning, reductionist, the open paradigm encourages the investigator to explicitly acknowledge context in their models. This might be of secondary value in hard sciences like physics, or chemistry, but potentially life-changing for softer sciences like biology, medicine, economy.<br>
+However, this view might be too optimistic.<br>
+The incredible organizing power of ACT in engineering, is, I think, now a matter of fact, even if applications in the wild might be not widespread. But can we claim ACT has given new and true insight on the behaviour of interconnected systems? E.g. impossibility results, optimizations, predictions/explanations of observed phenomena.<br>
+I believe this question is intimately tied with <a class="stream-topic" data-stream-id="229156" href="/#narrow/stream/229156-applied-category-theory/topic/measuring.20non-compositionality">#applied category theory &gt; measuring non-compositionality</a>, since emerging behaviour is arguably the most interesting aspect of large scale complex systems. Finally, a very open question: what are some interesting questions we should try to answer?</p>
+
+
+
+<a name="191869017"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229156-practice%3A%20applied%20ct/topic/results%20on%20open%20systems/near/191869017" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Fabrizio Genovese <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-practice:-applied-ct/topic/results.20on.20open.20systems.html#191869017">(Mar 26 2020 at 11:14)</a>:</h4>
+<p>As you point out, for systems that are genuinely complicated your functors end up being Lax, hence measuring quality/quantity of emerging behavior is difficult. I'd like to use some of the thing you point out to illustrate how emerging behavior has different connotations in different systems.</p>
+<ul>
+<li>On one hand, consider the cospan formalism for Petri nets. As we were discussing in <a class="stream-topic" data-stream-id="229156" href="/#narrow/stream/229156-applied-category-theory/topic/measuring.20non-compositionality">#applied category theory &gt; measuring non-compositionality</a> , here the functor giving you the reachability relation is lax. This is because, when glueing nets, you may create loops that weren't there before, making reachability way more complicated.</li>
+<li>On the other hand, you have categorical quantum mechanics (CQM). Here there's a lot of emergin behavior (think about entangled states, non locality, etc): Nearly everything is more than the sum of its parts. Nevertheless, this emerging behavior is completely accounted for in the model itself, so it can be fully described and manipulated. In this sense, I think the real difference is that CQM is describing quantum phenomena almost completely, while our paradigms for Petri nets are still missing something fundamental.</li>
+</ul>
+
+
+
+<a name="191869295"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229156-practice%3A%20applied%20ct/topic/results%20on%20open%20systems/near/191869295" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Fabrizio Genovese <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-practice:-applied-ct/topic/results.20on.20open.20systems.html#191869295">(Mar 26 2020 at 11:17)</a>:</h4>
+<p>I thought about this heavily in the last year or so, and came to the following, empirically-motivated conclusion: Most often than not, when you have lax functors in your model, it means that you are missing something, or leaving something that may end up being important out. Sometimes this is unavoidable, either because we don't know what we are modelling deep enough, or because we don't have access to such information in the general setting. A similar argument holds for monads. One of the uses of monads is to encapsulate emerging/side effects, only exposing parts of them so that they become tractable. Again this is legit in most applications, but could have drawbacks later on. Hence, I try to employ lax functors and monads as little as I can when I'm modelling something new, and tend to resort to them as a last resource. Does this make sense?</p>
+
+
+
+<a name="191869533"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229156-practice%3A%20applied%20ct/topic/results%20on%20open%20systems/near/191869533" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Johannes Drever <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-practice:-applied-ct/topic/results.20on.20open.20systems.html#191869533">(Mar 26 2020 at 11:19)</a>:</h4>
+<p>Would this mean in functional programming terms that you use applicatives rather than monads wherever possible?</p>
+
+
+
+<a name="191869588"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229156-practice%3A%20applied%20ct/topic/results%20on%20open%20systems/near/191869588" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Jules Hedges <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-practice:-applied-ct/topic/results.20on.20open.20systems.html#191869588">(Mar 26 2020 at 11:20)</a>:</h4>
+<p>Open games are an interesting contrast. I claim that open games "correctly" capture inherent non-locality in the application domain in exactly the same sense that CQM does - in this case, Nash equilibria are highly "nonlocal" between players. Despite that, it is very hard to take the next step and exploit this to do useful things that practitioners want - in contrast to CQM, which has the big advantage of strong logical metatheorems about ZX. And (handwaving) it's quite plausible that exploiting compositionality to do what we want in economics is impossible, because it would contradict existing results in complexity theory</p>
+
+
+
+<a name="191869995"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229156-practice%3A%20applied%20ct/topic/results%20on%20open%20systems/near/191869995" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Jules Hedges <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-practice:-applied-ct/topic/results.20on.20open.20systems.html#191869995">(Mar 26 2020 at 11:24)</a>:</h4>
+<p>I like the original question. I'm optimistic that the monoidal categories paradigm can be influential in general systems theory, especially giving a firm foundation to a subject that otherwise tends to vagueness. Setting problems at that high level of generality is hard, my question about describing laxness is one. For all of us (except CQM, who are ahead of the curve), the current challenge is really to <em>do something useful</em>, to demonstrate to everybody else that our tools are useful and not just cute</p>
+
+
+
+<a name="191870688"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229156-practice%3A%20applied%20ct/topic/results%20on%20open%20systems/near/191870688" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Jules Hedges <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-practice:-applied-ct/topic/results.20on.20open.20systems.html#191870688">(Mar 26 2020 at 11:31)</a>:</h4>
+<p>One idea I've thought about is that a similar trick that open games work can be "useful" far more generally. Very loosely it's a sort of continuation passing style, where you explicitly juggle contexts. And it really is a trick, in a sense just smoke and mirrors. I think it can produce monoidal structures where it looks like they should be lax, but not in a useful way that you can exploit to compute things. (This is currently just speculation)</p>
+
+
+
+<a name="191871517"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229156-practice%3A%20applied%20ct/topic/results%20on%20open%20systems/near/191871517" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Jules Hedges <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-practice:-applied-ct/topic/results.20on.20open.20systems.html#191871517">(Mar 26 2020 at 11:40)</a>:</h4>
+<p>We can look to CQM and ZX for inspiration about the best case scenario future. I collected industrial application papers that I was told about here: <a href="https://twitter.com/_julesh_/status/1221793959544049665" title="https://twitter.com/_julesh_/status/1221793959544049665">https://twitter.com/_julesh_/status/1221793959544049665</a></p>
+<div class="inline-preview-twitter"><div class="twitter-tweet"><a href="https://twitter.com/_julesh_/status/1221793959544049665"><img class="twitter-avatar" src="https://pbs.twimg.com/profile_images/972424350736486401/RyVTQIgf_normal.jpg"></a><p>More examples of categories applied to quantum computing. Hat tip to Alex Cowtan from <a href="https://twitter.com/cambridgecqc" title="https://twitter.com/cambridgecqc">@cambridgecqc</a> who emailed me after this last tweet
+<a href="https://t.co/2AiKXJo0PN" title="https://t.co/2AiKXJo0PN">https://arxiv.org/abs/1902.03178</a>
+<a href="https://t.co/eWcoU9AlrY" title="https://t.co/eWcoU9AlrY">https://arxiv.org/abs/1903.10477</a>
+<a href="https://t.co/zVg6k9Mxsg" title="https://t.co/zVg6k9Mxsg">https://arxiv.org/abs/1911.09039</a>
+<a href="https://t.co/LzbgXaHnLo" title="https://t.co/LzbgXaHnLo">https://arxiv.org/abs/1906.01734</a>
+<a href="https://t.co/Q8HGZgj5Y9" title="https://t.co/Q8HGZgj5Y9">https://arxiv.org/abs/1912.11503</a>
+<a href="https://t.co/0g0CHBkCiq" title="https://t.co/0g0CHBkCiq">https://arxiv.org/abs/1904.12817</a> <a href="https://t.co/FxINWN8cHg" title="https://t.co/FxINWN8cHg">https://twitter.com/_julesh_/status/1217216883981799426</a></p><span>- julesh (@_julesh_)</span></div></div>
+
+
+
+<a name="191892625"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229156-practice%3A%20applied%20ct/topic/results%20on%20open%20systems/near/191892625" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Philip Zucker <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-practice:-applied-ct/topic/results.20on.20open.20systems.html#191892625">(Mar 26 2020 at 14:32)</a>:</h4>
+<p>What kind of tool are you thinking? I have been trying to think about some implementations in this direction. I'm somewhat sure one could make a open minimax solver combinators,  convex concave heuristic combinators, and possibly some kind of category-ish interface to bilevel optimization solvers</p>
+
+
+
+<a name="191893752"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229156-practice%3A%20applied%20ct/topic/results%20on%20open%20systems/near/191893752" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Jules Hedges <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-practice:-applied-ct/topic/results.20on.20open.20systems.html#191893752">(Mar 26 2020 at 14:40)</a>:</h4>
+<p>In this case I meant "tool" in the sense of mathematical tools/machinery. I happen to personally believe that software is the main place we will win</p>
+
+
+
+<a name="191894883"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229156-practice%3A%20applied%20ct/topic/results%20on%20open%20systems/near/191894883" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Giorgos Bakirtzis <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-practice:-applied-ct/topic/results.20on.20open.20systems.html#191894883">(Mar 26 2020 at 14:48)</a>:</h4>
+<p><span class="user-mention" data-user-id="275901">@Jules Hedges</span> I think modeling languages is where we will win fwiw, not software.</p>
+
+
+
+<a name="191905282"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229156-practice%3A%20applied%20ct/topic/results%20on%20open%20systems/near/191905282" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> James Fairbanks <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-practice:-applied-ct/topic/results.20on.20open.20systems.html#191905282">(Mar 26 2020 at 15:51)</a>:</h4>
+<p>what do you mean by modeling languages? I think of a modeling language as a piece of software that is like a DSL for building and analyzing models</p>
+
+
+
+<a name="191908368"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229156-practice%3A%20applied%20ct/topic/results%20on%20open%20systems/near/191908368" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Giorgos Bakirtzis <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-practice:-applied-ct/topic/results.20on.20open.20systems.html#191908368">(Mar 26 2020 at 16:09)</a>:</h4>
+<p>The software implementation might have nothing to do with software development using ct, but it might use concepts from CT to organize the information it models like SemanticModels ;)</p>
+
+
+
+<a name="191964451"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229156-practice%3A%20applied%20ct/topic/results%20on%20open%20systems/near/191964451" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-practice:-applied-ct/topic/results.20on.20open.20systems.html#191964451">(Mar 27 2020 at 00:09)</a>:</h4>
+<p>Mateo Capucci wrote:</p>
+<blockquote>
+<p>In the past year I've been thinking a lot about the emerging paradigm of 'open systems' in ACT.   [...] I find this concept potentially revolutionary: while scientific modelling has been, from the beginning, reductionist, the open paradigm encourages the investigator to explicitly acknowledge context in their models. This might be of secondary value in hard sciences like physics, or chemistry, but potentially life-changing for softer sciences like biology, medicine, economy.</p>
+<p>However, this view might be too optimistic.</p>
+<p>The incredible organizing power of ACT in engineering, is, I think, now a matter of fact, even if applications in the wild might be not widespread. But can we claim ACT has given new and true insight on the behaviour of interconnected systems? E.g. impossibility results, optimizations, predictions/explanations of observed phenomena.</p>
+</blockquote>
+<p>Your questions are very much on my mind.  </p>
+<p>In the next couple of years I'm going to be a bit more of a hermit, do a bit less talking, and try to come up with some "new and true insights on the behavior of interconnected systems" using the categorical frameworks that we have recently invented for studying open systems.   Social distancing is already giving me a bit more time to do this.</p>
+<p>I am better at science than engineering, so I will be trying to study systems rather than design them.</p>
+<p>I have a paper on open chemical reaction networks that's just sort of waiting to be written.</p>
+
+
+
+<a name="191964746"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229156-practice%3A%20applied%20ct/topic/results%20on%20open%20systems/near/191964746" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-practice:-applied-ct/topic/results.20on.20open.20systems.html#191964746">(Mar 27 2020 at 00:13)</a>:</h4>
+<blockquote>
+<p>Finally, a very open question: what are some interesting questions we should try to answer?</p>
+</blockquote>
+<p>We should especially try to answer questions that we <em>can</em> answer.  It's very easy to  imagine things that sound exciting.... but are too hard to do.</p>
+<p>But I don't want to talk yet about the questions that I'm actually making progress on.  So anything I said would be sort of useless!</p>
+<p>Well, not quite.  I've written a <a href="http://math.ucr.edu/home/baez/networks/" title="http://math.ucr.edu/home/baez/networks/">bunch of papers</a> about open systems and networks and category theory, and I'm happy to talk about the ideas in those.</p>
+
+
+
+<a name="192430669"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229156-practice%3A%20applied%20ct/topic/results%20on%20open%20systems/near/192430669" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Jade Master <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-practice:-applied-ct/topic/results.20on.20open.20systems.html#192430669">(Mar 31 2020 at 18:30)</a>:</h4>
+<p>What I've started to realize about open systems is that studying things in this way is not entirely new. I think that computer scientists have been thinking about these ideas under different names. I do think that people more comfortable with category theory and science have a lot to contribute to these ideas however but we should try not to reinvent what has already been done.</p>
+
+
+
+<a name="192430913"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229156-practice%3A%20applied%20ct/topic/results%20on%20open%20systems/near/192430913" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Jade Master <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-practice:-applied-ct/topic/results.20on.20open.20systems.html#192430913">(Mar 31 2020 at 18:32)</a>:</h4>
+<p>For example recently I learned about valuation algebras. These seem a lot like a (non-categorical) framework for computing things in a compositional way.</p>
+
+
+
+<a name="192434196"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229156-practice%3A%20applied%20ct/topic/results%20on%20open%20systems/near/192434196" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Matteo Capucci <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-practice:-applied-ct/topic/results.20on.20open.20systems.html#192434196">(Mar 31 2020 at 18:58)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="276037">Jade Master</span> <a href="#narrow/stream/229156-applied-category.20theory/topic/results.20on.20open.20systems/near/192430669" title="#narrow/stream/229156-applied-category.20theory/topic/results.20on.20open.20systems/near/192430669">said</a>:</p>
+<blockquote>
+<p>What I've started to realize about open systems is that studying things in this way is not entirely new. I think that computer scientists have been thinking about these ideas under different names. I do think that people more comfortable with category theory and science have a lot to contribute to these ideas however but we should try not to reinvent what has already been done.</p>
+</blockquote>
+<p>This must be true. It's curious because I often see ACT events calling from 'people from every field' but I've rarely heard of ACT folks reaching to other areas. <br>
+That's also why I think having some kind of 'programme', i.e. a bunch of common goals for the field, might be a good stimulus: if you know what to look for, then it's easy to reach out to other fields, while otherwise it might not feel worthy of the effort.</p>
+
+
+
+<a name="192434240"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229156-practice%3A%20applied%20ct/topic/results%20on%20open%20systems/near/192434240" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Matteo Capucci <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-practice:-applied-ct/topic/results.20on.20open.20systems.html#192434240">(Mar 31 2020 at 18:59)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="276037">Jade Master</span> <a href="#narrow/stream/229156-applied-category.20theory/topic/results.20on.20open.20systems/near/192430913" title="#narrow/stream/229156-applied-category.20theory/topic/results.20on.20open.20systems/near/192430913">said</a>:</p>
+<blockquote>
+<p>For example recently I learned about valuation algebras. These seem a lot like a (non-categorical) framework for computing things in a compositional way.</p>
+</blockquote>
+<p>Valuation algebras like in here <a href="https://link.springer.com/chapter/10.1007/978-1-4471-0009-6_2" title="https://link.springer.com/chapter/10.1007/978-1-4471-0009-6_2">https://link.springer.com/chapter/10.1007/978-1-4471-0009-6_2</a> ?</p>
+
+
+
+<a name="192446238"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229156-practice%3A%20applied%20ct/topic/results%20on%20open%20systems/near/192446238" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Jade Master <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-practice:-applied-ct/topic/results.20on.20open.20systems.html#192446238">(Mar 31 2020 at 20:38)</a>:</h4>
+<p><span class="user-mention" data-user-id="275932">@Matteo Capucci</span> Yes those sort of valuation algebras. I read about them in this book <a href="https://www.amazon.com/Generic-Inference-Unifying-Automated-Reasoning/dp/0470527013" title="https://www.amazon.com/Generic-Inference-Unifying-Automated-Reasoning/dp/0470527013">https://www.amazon.com/Generic-Inference-Unifying-Automated-Reasoning/dp/0470527013</a> when I was reading about the algebraic path problem.</p>
+
+
+
+<a name="192447554"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229156-practice%3A%20applied%20ct/topic/results%20on%20open%20systems/near/192447554" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Jules Hedges <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-practice:-applied-ct/topic/results.20on.20open.20systems.html#192447554">(Mar 31 2020 at 20:49)</a>:</h4>
+<p>I totally agree; and the basic idea of composing open systems sequentially and in parallel is eventually so obvious it wouldn't be believable if nobody had thought of it before 100 times over</p>
+
+
+
+<a name="192447750"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229156-practice%3A%20applied%20ct/topic/results%20on%20open%20systems/near/192447750" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Jade Master <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-practice:-applied-ct/topic/results.20on.20open.20systems.html#192447750">(Mar 31 2020 at 20:50)</a>:</h4>
+<p>Here's the definition: A valuation algebra is a set of observations <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">Φ</mi></mrow><annotation encoding="application/x-tex"> \Phi</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord">Φ</span></span></span></span> with:</p>
+<ul>
+<li>A domain function <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>d</mi><mo>:</mo><mi mathvariant="normal">Φ</mi><mo>→</mo><mi>P</mi><mo stretchy="false">(</mo><mi>X</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">d : \Phi \to P(X)</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.69444em;vertical-align:0em;"></span><span class="mord mathdefault">d</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">:</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord">Φ</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault" style="margin-right:0.13889em;">P</span><span class="mopen">(</span><span class="mord mathdefault" style="margin-right:0.07847em;">X</span><span class="mclose">)</span></span></span></span> where <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>P</mi><mo stretchy="false">(</mo><mi>X</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">P(X)</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault" style="margin-right:0.13889em;">P</span><span class="mopen">(</span><span class="mord mathdefault" style="margin-right:0.07847em;">X</span><span class="mclose">)</span></span></span></span> is the powerset of some set of variables <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>X</mi></mrow><annotation encoding="application/x-tex">X</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.07847em;">X</span></span></span></span>.</li>
+<li>A combination function <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>∗</mo><mo>:</mo><mi mathvariant="normal">Φ</mi><mo>×</mo><mi mathvariant="normal">Φ</mi><mo>→</mo><mi mathvariant="normal">Φ</mi></mrow><annotation encoding="application/x-tex"> * : \Phi \times \Phi \to \Phi</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.46528em;vertical-align:0em;"></span><span class="mord">∗</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">:</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.76666em;vertical-align:-0.08333em;"></span><span class="mord">Φ</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">×</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord">Φ</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord">Φ</span></span></span></span></li>
+<li>A projection function <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">Φ</mi><mo>×</mo><mi>P</mi><mo stretchy="false">(</mo><mi>X</mi><mo stretchy="false">)</mo><mo>→</mo><mi mathvariant="normal">Φ</mi></mrow><annotation encoding="application/x-tex">\Phi \times P(X) \to \Phi</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.76666em;vertical-align:-0.08333em;"></span><span class="mord">Φ</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">×</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault" style="margin-right:0.13889em;">P</span><span class="mopen">(</span><span class="mord mathdefault" style="margin-right:0.07847em;">X</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord">Φ</span></span></span></span><br>
+satisfying axioms. The idea is that combination is about joining your data on the intersection of their domains, and projection is about restricting to a specific domain.</li>
+</ul>
+
+
+
+<a name="192447820"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229156-practice%3A%20applied%20ct/topic/results%20on%20open%20systems/near/192447820" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Jules Hedges <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-practice:-applied-ct/topic/results.20on.20open.20systems.html#192447820">(Mar 31 2020 at 20:51)</a>:</h4>
+<p>Reaching out to other fields is hard. Reading other people's literature is hard, learning the culture of another field is hard. Everything takes a long time. I've been working with economists as my main thing for 7 years now, and I still find economics literature mostly a nightmare to read</p>
+
+
+
+<a name="192449023"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229156-practice%3A%20applied%20ct/topic/results%20on%20open%20systems/near/192449023" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Jade Master <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-practice:-applied-ct/topic/results.20on.20open.20systems.html#192449023">(Mar 31 2020 at 21:02)</a>:</h4>
+<p>Yup it is hard. But I think the rewards are worth it :)</p>
+
+
+
+<a name="192483279"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229156-practice%3A%20applied%20ct/topic/results%20on%20open%20systems/near/192483279" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> (=_=) <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-practice:-applied-ct/topic/results.20on.20open.20systems.html#192483279">(Apr 01 2020 at 04:49)</a>:</h4>
+<p><span class="user-mention" data-user-id="276037">@Jade Master</span> <a href="#narrow/stream/229156-applied-category.20theory/topic/results.20on.20open.20systems/near/192430669" title="#narrow/stream/229156-applied-category.20theory/topic/results.20on.20open.20systems/near/192430669">said</a>:</p>
+<blockquote>
+<p>I think that computer scientists have been thinking about these ideas under different names. [...] we should try not to reinvent what has already been done.</p>
+</blockquote>
+<p>Given that there's two decades (or more) of CT-in-CS literature out there, this is a real risk. </p>
+<p>A few weeks ago, I encountered a concept that was novel to the author (and me), so it was presented with to me no citation. It turns out the exact same notion, <em>with the exact same name</em>, had been written up a few years ago in the CS literature. Thankfully that cropped up in an informal setting, not in something published.</p>
+<p>A word to the wise: Google Scholar is your friend.</p>
+
+
+
+<a name="192483370"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229156-practice%3A%20applied%20ct/topic/results%20on%20open%20systems/near/192483370" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> (=_=) <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-practice:-applied-ct/topic/results.20on.20open.20systems.html#192483370">(Apr 01 2020 at 04:51)</a>:</h4>
+<p><span class="user-mention" data-user-id="275901">@Jules Hedges</span> <a href="#narrow/stream/229156-applied-category.20theory/topic/results.20on.20open.20systems/near/192447820" title="#narrow/stream/229156-applied-category.20theory/topic/results.20on.20open.20systems/near/192447820">said</a>:</p>
+<blockquote>
+<p>I still find economics literature mostly a nightmare to read</p>
+</blockquote>
+<p>Mainly because the field itself is (mostly) a nightmare, its current mainstream being a product of the abuse of mathematics.</p>
+
+
+
+<a name="192505321"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229156-practice%3A%20applied%20ct/topic/results%20on%20open%20systems/near/192505321" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Jules Hedges <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-practice:-applied-ct/topic/results.20on.20open.20systems.html#192505321">(Apr 01 2020 at 09:56)</a>:</h4>
+<p>Fortunately, probably half the people on this server are culturally computer scientists, so you can just ask "have you ever heard of something like this"</p>
+
+
+
+<a name="192536193"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229156-practice%3A%20applied%20ct/topic/results%20on%20open%20systems/near/192536193" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> (=_=) <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-practice:-applied-ct/topic/results.20on.20open.20systems.html#192536193">(Apr 01 2020 at 14:28)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="275901">Jules Hedges</span> <a href="#narrow/stream/229156-applied-category.20theory/topic/results.20on.20open.20systems/near/192505321" title="#narrow/stream/229156-applied-category.20theory/topic/results.20on.20open.20systems/near/192505321">said</a>:</p>
+<blockquote>
+<p>Fortunately, probably half the people on this server are culturally computer scientists</p>
+</blockquote>
+<p>Many here have experience writing code, but I haven't spotted many seasoned theoretical computer scientists yet. And the CT-in-CS papers I've dug up are obscure enough that I don't think the average coder with 1-3 years of industry experience would have heard of it.</p>
+<blockquote>
+<p>so you can just ask "have you ever heard of something like this"</p>
+</blockquote>
+<p>Fortunately, we also have Google.</p>
+
+
+
+<a name="192553367"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229156-practice%3A%20applied%20ct/topic/results%20on%20open%20systems/near/192553367" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Gershom <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-practice:-applied-ct/topic/results.20on.20open.20systems.html#192553367">(Apr 01 2020 at 16:17)</a>:</h4>
+<p>I can volunteer myself and a few other names I recognize (dan doel,  reid barton) as people who are pretty up to date with proper computer science literature. But that said, its a big field! So just as one  might expect many concepts in any given branch of math are unknown to people familiar with literature in their field, the same is doubtless true in computer science, logic, etc. In my experience, trying to understand prior art and making connections is always a process, and never just a waystation.</p>
+
+
+
+<a name="192564313"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229156-practice%3A%20applied%20ct/topic/results%20on%20open%20systems/near/192564313" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> (=_=) <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-practice:-applied-ct/topic/results.20on.20open.20systems.html#192564313">(Apr 01 2020 at 17:32)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="276650">Gershom</span> <a href="#narrow/stream/229156-applied-category.20theory/topic/results.20on.20open.20systems/near/192553367" title="#narrow/stream/229156-applied-category.20theory/topic/results.20on.20open.20systems/near/192553367">said</a>:</p>
+<blockquote>
+<p>I can volunteer myself and a few other names I recognize (<span class="user-mention silent" data-user-id="277270">Dan Doel</span>,  <span class="user-mention silent" data-user-id="276480">Reid Barton</span>  barton) as people who are pretty up to date with proper computer science literature.</p>
+</blockquote>
+<p>Hi, Gershom! Good to know!</p>
+<blockquote>
+<p>But that said, its a big field! So just as one  might expect many concepts in any given branch of math are unknown to people familiar with literature in their field, the same is doubtless true in computer science, logic, etc. In my experience, trying to understand prior art and making connections is always a process, and never just a waystation.</p>
+</blockquote>
+<p>Exactly.</p>
+
+
+
+{% endraw %}
+
+<hr><p>Last updated: Feb 07 2022 at 21:54 UTC</p>

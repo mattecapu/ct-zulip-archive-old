@@ -1,0 +1,222 @@
+---
+layout: archive
+title: Zulip Chat Archive
+permalink: /stream/229125-practice:-software/topic/Catlab.2Ejl.html
+---
+
+<h2>Stream: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229125-practice:-software/index.html">practice: software</a></h2>
+<h3>Topic: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229125-practice:-software/topic/Catlab.2Ejl.html">Catlab.jl</a></h3>
+
+<hr>
+
+<base href="https://categorytheory.zulipchat.com/">
+
+{% raw %}
+
+<a name="197201667"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229125-practice%3A%20software/topic/Catlab.jl/near/197201667" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Sophie Libkind <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229125-practice:-software/topic/Catlab.2Ejl.html#197201667">(May 11 2020 at 20:38)</a>:</h4>
+<p><span class="user-mention" data-user-id="275927">@James Fairbanks</span> <span class="user-mention" data-user-id="275965">@Evan Patterson</span> I've been playing around with Catlab.js and I was wondering how to instantiate something like a Poset. Would it make sense to define a theory that inherits from Category? Or as an instance of a Category?</p>
+
+
+
+<a name="197202106"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229125-practice%3A%20software/topic/Catlab.jl/near/197202106" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> James Fairbanks <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229125-practice:-software/topic/Catlab.2Ejl.html#197202106">(May 11 2020 at 20:42)</a>:</h4>
+<p>you are thinking of a poset as a category where <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>O</mi><mi>b</mi><mo stretchy="false">(</mo><mi>C</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">Ob(C)</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault" style="margin-right:0.02778em;">O</span><span class="mord mathdefault">b</span><span class="mopen">(</span><span class="mord mathdefault" style="margin-right:0.07153em;">C</span><span class="mclose">)</span></span></span></span> is the elements of the set and <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>H</mi><mi>o</mi><mi>m</mi><mo stretchy="false">(</mo><mi>a</mi><mo separator="true">,</mo><mi>b</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">Hom(a,b)</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault" style="margin-right:0.08125em;">H</span><span class="mord mathdefault">o</span><span class="mord mathdefault">m</span><span class="mopen">(</span><span class="mord mathdefault">a</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathdefault">b</span><span class="mclose">)</span></span></span></span> is empty unless <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>≤</mo><mi>b</mi></mrow><annotation encoding="application/x-tex">a\leq b</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.7719400000000001em;vertical-align:-0.13597em;"></span><span class="mord mathdefault">a</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">≤</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.69444em;vertical-align:0em;"></span><span class="mord mathdefault">b</span></span></span></span> right?</p>
+
+
+
+<a name="197202214"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229125-practice%3A%20software/topic/Catlab.jl/near/197202214" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> James Fairbanks <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229125-practice:-software/topic/Catlab.2Ejl.html#197202214">(May 11 2020 at 20:43)</a>:</h4>
+<p>Here is the version for preorders <a href="https://github.com/epatters/Catlab.jl/pull/148/files">https://github.com/epatters/Catlab.jl/pull/148/files</a></p>
+
+
+
+<a name="197202302"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229125-practice%3A%20software/topic/Catlab.jl/near/197202302" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Sophie Libkind <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229125-practice:-software/topic/Catlab.2Ejl.html#197202302">(May 11 2020 at 20:44)</a>:</h4>
+<p>I'm thinking of a poset as a category with <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>H</mi><mi>o</mi><mi>m</mi><mo stretchy="false">(</mo><mi>a</mi><mo separator="true">,</mo><mi>b</mi><mo stretchy="false">)</mo><mo>∈</mo><mi>B</mi><mi>o</mi><mi>o</mi><mi>l</mi></mrow><annotation encoding="application/x-tex">Hom(a,b) \in Bool</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault" style="margin-right:0.08125em;">H</span><span class="mord mathdefault">o</span><span class="mord mathdefault">m</span><span class="mopen">(</span><span class="mord mathdefault">a</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathdefault">b</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">∈</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.69444em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.05017em;">B</span><span class="mord mathdefault">o</span><span class="mord mathdefault">o</span><span class="mord mathdefault" style="margin-right:0.01968em;">l</span></span></span></span></p>
+
+
+
+<a name="197202334"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229125-practice%3A%20software/topic/Catlab.jl/near/197202334" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Sophie Libkind <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229125-practice:-software/topic/Catlab.2Ejl.html#197202334">(May 11 2020 at 20:44)</a>:</h4>
+<p>Ah cool! Thanks!</p>
+
+
+
+<a name="197202378"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229125-practice%3A%20software/topic/Catlab.jl/near/197202378" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> sarahzrf <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229125-practice:-software/topic/Catlab.2Ejl.html#197202378">(May 11 2020 at 20:45)</a>:</h4>
+<p>a poset is a category <em>enriched in</em> truth values, not where the hom sets are the set of truth values</p>
+
+
+
+<a name="197202420"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229125-practice%3A%20software/topic/Catlab.jl/near/197202420" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> sarahzrf <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229125-practice:-software/topic/Catlab.2Ejl.html#197202420">(May 11 2020 at 20:45)</a>:</h4>
+<p>so you want an <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>∈</mo></mrow><annotation encoding="application/x-tex">\in</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.5782em;vertical-align:-0.0391em;"></span><span class="mrel">∈</span></span></span></span> up there, not an <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>=</mo></mrow><annotation encoding="application/x-tex">=</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.36687em;vertical-align:0em;"></span><span class="mrel">=</span></span></span></span></p>
+
+
+
+<a name="197202427"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229125-practice%3A%20software/topic/Catlab.jl/near/197202427" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Evan Patterson <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229125-practice:-software/topic/Catlab.2Ejl.html#197202427">(May 11 2020 at 20:45)</a>:</h4>
+<p>The source file added by that PR is: <a href="https://github.com/epatters/Catlab.jl/blob/master/src/doctrines/Preorders.jl">https://github.com/epatters/Catlab.jl/blob/master/src/doctrines/Preorders.jl</a></p>
+
+
+
+<a name="197202451"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229125-practice%3A%20software/topic/Catlab.jl/near/197202451" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> sarahzrf <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229125-practice:-software/topic/Catlab.2Ejl.html#197202451">(May 11 2020 at 20:45)</a>:</h4>
+<p>also, it's probably a good idea to distinguish between truth values and booleans if you're doing constructive work!</p>
+
+
+
+<a name="197202596"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229125-practice%3A%20software/topic/Catlab.jl/near/197202596" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Evan Patterson <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229125-practice:-software/topic/Catlab.2Ejl.html#197202596">(May 11 2020 at 20:46)</a>:</h4>
+<p>So you can see that we have a thin category, which inherits from category, and also a preorder, which does not. From the comment at the end, you can see that we want to say that these are related, but haven't yet implemented that machinery.</p>
+
+
+
+<a name="197202663"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229125-practice%3A%20software/topic/Catlab.jl/near/197202663" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> James Fairbanks <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229125-practice:-software/topic/Catlab.2Ejl.html#197202663">(May 11 2020 at 20:47)</a>:</h4>
+<p>I think you just need to add antisymmetry to go from preorder to poset. so you could inherit from <code>ThinCategory</code> and add an additional axiom for antisymmetry. We don't really have the machinery for enforcing or testing the axioms, right now they are carried around in the relevant data structures</p>
+
+
+
+<a name="197202873"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229125-practice%3A%20software/topic/Catlab.jl/near/197202873" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> James Fairbanks <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229125-practice:-software/topic/Catlab.2Ejl.html#197202873">(May 11 2020 at 20:49)</a>:</h4>
+<p>following the julia approach we leave a lot of the rule following to the user. since you can't actually enforce anything in julia, haven't spent a lot of effort on implementing enforcement.</p>
+
+
+
+<a name="197203111"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229125-practice%3A%20software/topic/Catlab.jl/near/197203111" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Sophie Libkind <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229125-practice:-software/topic/Catlab.2Ejl.html#197203111">(May 11 2020 at 20:51)</a>:</h4>
+<p>In one experiment, I composed two morphisms <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi></mrow><annotation encoding="application/x-tex">f</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span class="mord mathdefault" style="margin-right:0.10764em;">f</span></span></span></span> and <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>g</mi></mrow><annotation encoding="application/x-tex">g</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.625em;vertical-align:-0.19444em;"></span><span class="mord mathdefault" style="margin-right:0.03588em;">g</span></span></span></span> where the codomain of <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi></mrow><annotation encoding="application/x-tex">f</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span class="mord mathdefault" style="margin-right:0.10764em;">f</span></span></span></span> did not match the domain of <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>g</mi></mrow><annotation encoding="application/x-tex">g</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.625em;vertical-align:-0.19444em;"></span><span class="mord mathdefault" style="margin-right:0.03588em;">g</span></span></span></span> and it composed no problem. Is that an example of leaving the rule following to the user?</p>
+
+
+
+<a name="197203211"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229125-practice%3A%20software/topic/Catlab.jl/near/197203211" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Evan Patterson <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229125-practice:-software/topic/Catlab.2Ejl.html#197203211">(May 11 2020 at 20:52)</a>:</h4>
+<p>That can be enforced. It depends on how the expressions are set up in the <code>@syntax</code> macro.</p>
+
+
+
+<a name="197203314"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229125-practice%3A%20software/topic/Catlab.jl/near/197203314" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Evan Patterson <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229125-practice:-software/topic/Catlab.2Ejl.html#197203314">(May 11 2020 at 20:53)</a>:</h4>
+<p>When <code>strict=true</code>, like <a href="https://github.com/epatters/Catlab.jl/blob/eae7e8f33f568ca0bbcc3eeb3b3f2c9b6e50b5e7/src/doctrines/Preorders.jl#L25">here</a>, it should work. (If it doesn't, it's a bug and please report it.)</p>
+
+
+
+<a name="197203327"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229125-practice%3A%20software/topic/Catlab.jl/near/197203327" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> James Fairbanks <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229125-practice:-software/topic/Catlab.2Ejl.html#197203327">(May 11 2020 at 20:53)</a>:</h4>
+<p>that might be bug i've hit stuff like that before where stuff composes fine and then later you try to convert it to a wiring diagram or something and you get a runtime error in the WD code because it is checking that things match up.</p>
+
+
+
+<a name="197203436"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229125-practice%3A%20software/topic/Catlab.jl/near/197203436" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> James Fairbanks <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229125-practice:-software/topic/Catlab.2Ejl.html#197203436">(May 11 2020 at 20:54)</a>:</h4>
+<p>when strict=true, that means that the syntax system <em>will</em> check for well formedness, right?</p>
+
+
+
+<a name="197203495"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229125-practice%3A%20software/topic/Catlab.jl/near/197203495" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Evan Patterson <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229125-practice:-software/topic/Catlab.2Ejl.html#197203495">(May 11 2020 at 20:54)</a>:</h4>
+<p>It means that it will check that, e.g., domains and codomains match when composing. More generally, it enforces the equalities implied by the GAT term and type constructors.</p>
+
+
+
+<a name="197203523"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229125-practice%3A%20software/topic/Catlab.jl/near/197203523" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Sophie Libkind <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229125-practice:-software/topic/Catlab.2Ejl.html#197203523">(May 11 2020 at 20:55)</a>:</h4>
+<p>In this particular experiment, I believe I had defined an <code>@instance</code> macro.  What are the use case differences between <code>@instance</code> and <code>@syntax</code>?</p>
+
+
+
+<a name="197203532"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229125-practice%3A%20software/topic/Catlab.jl/near/197203532" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> James Fairbanks <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229125-practice:-software/topic/Catlab.2Ejl.html#197203532">(May 11 2020 at 20:55)</a>:</h4>
+<p>i definitely assumed that strict meant <em>strictification</em></p>
+
+
+
+<a name="197203556"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229125-practice%3A%20software/topic/Catlab.jl/near/197203556" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Evan Patterson <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229125-practice:-software/topic/Catlab.2Ejl.html#197203556">(May 11 2020 at 20:55)</a>:</h4>
+<p>OK, maybe we should use a different word.</p>
+
+
+
+<a name="197203663"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229125-practice%3A%20software/topic/Catlab.jl/near/197203663" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Evan Patterson <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229125-practice:-software/topic/Catlab.2Ejl.html#197203663">(May 11 2020 at 20:56)</a>:</h4>
+<p>The reason that this is even an option, BTW, is that if you have nontrivial equations between your objects, then it may be difficult or impossible to verify that the domain and codomain objects are actually equal before composing.</p>
+
+
+
+<a name="197203736"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229125-practice%3A%20software/topic/Catlab.jl/near/197203736" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> James Fairbanks <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229125-practice:-software/topic/Catlab.2Ejl.html#197203736">(May 11 2020 at 20:57)</a>:</h4>
+<p>so an instance is basically a functor into the "category" of julia types and julia functions. You map every object to a julia type and every morphism to a julia function.</p>
+
+
+
+<a name="197203768"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229125-practice%3A%20software/topic/Catlab.jl/near/197203768" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Evan Patterson <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229125-practice:-software/topic/Catlab.2Ejl.html#197203768">(May 11 2020 at 20:57)</a>:</h4>
+<p>Sophie, the short version is that <code>@instance</code> is for regular Julia types and <code>@syntax</code> is for symbolic expressions.</p>
+
+
+
+<a name="197203799"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229125-practice%3A%20software/topic/Catlab.jl/near/197203799" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> James Fairbanks <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229125-practice:-software/topic/Catlab.2Ejl.html#197203799">(May 11 2020 at 20:57)</a>:</h4>
+<p>oh yeah that is shorter than my version.</p>
+
+
+
+<a name="197203901"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229125-practice%3A%20software/topic/Catlab.jl/near/197203901" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Evan Patterson <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229125-practice:-software/topic/Catlab.2Ejl.html#197203901">(May 11 2020 at 20:58)</a>:</h4>
+<p>A long version is <a href="https://epatters.github.io/Catlab.jl/latest/apis/core/">here</a> :)</p>
+
+
+
+<a name="197203913"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229125-practice%3A%20software/topic/Catlab.jl/near/197203913" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Sophie Libkind <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229125-practice:-software/topic/Catlab.2Ejl.html#197203913">(May 11 2020 at 20:58)</a>:</h4>
+<p>Okay! So if I want to work with integers and functions between integers then I use an <code>@instance</code> macro and Julia will do the work of composition etc. for me</p>
+
+
+
+<a name="197203924"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229125-practice%3A%20software/topic/Catlab.jl/near/197203924" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> James Fairbanks <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229125-practice:-software/topic/Catlab.2Ejl.html#197203924">(May 11 2020 at 20:58)</a>:</h4>
+<p>yeah</p>
+
+
+
+<a name="197204020"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229125-practice%3A%20software/topic/Catlab.jl/near/197204020" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Sophie Libkind <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229125-practice:-software/topic/Catlab.2Ejl.html#197204020">(May 11 2020 at 20:59)</a>:</h4>
+<p>vs. if I was to define a more abstract category then I use the @syntax macro and Catlab will keep track of all my expressions</p>
+
+
+
+<a name="197204156"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229125-practice%3A%20software/topic/Catlab.jl/near/197204156" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> James Fairbanks <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229125-practice:-software/topic/Catlab.2Ejl.html#197204156">(May 11 2020 at 21:00)</a>:</h4>
+<p>yeah and you would often do both, like have a syntax where you express things symbolically and then have an instance where "real" computation happens.</p>
+
+
+
+<a name="197204239"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229125-practice%3A%20software/topic/Catlab.jl/near/197204239" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> James Fairbanks <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229125-practice:-software/topic/Catlab.2Ejl.html#197204239">(May 11 2020 at 21:01)</a>:</h4>
+<p>like in the GLA case you want to use symbolic expressions to describe linear operators as composites of small linear operators and then you want to pick some matrices and solve some equations.</p>
+
+
+
+<a name="197204440"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229125-practice%3A%20software/topic/Catlab.jl/near/197204440" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> James Fairbanks <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229125-practice:-software/topic/Catlab.2Ejl.html#197204440">(May 11 2020 at 21:03)</a>:</h4>
+<p>This file shows you a pretty complex example, <a href="https://github.com/epatters/Catlab.jl/blob/master/src/linear_algebra/GLA.jl">https://github.com/epatters/Catlab.jl/blob/master/src/linear_algebra/GLA.jl</a></p>
+
+
+
+<a name="197204468"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229125-practice%3A%20software/topic/Catlab.jl/near/197204468" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> James Fairbanks <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229125-practice:-software/topic/Catlab.2Ejl.html#197204468">(May 11 2020 at 21:03)</a>:</h4>
+<p>the instance comes from LinearMaps.jl which is like a lazy linear algebra library.</p>
+
+
+
+<a name="197204821"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229125-practice%3A%20software/topic/Catlab.jl/near/197204821" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Evan Patterson <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229125-practice:-software/topic/Catlab.2Ejl.html#197204821">(May 11 2020 at 21:06)</a>:</h4>
+<p>Another example says that wiring diagrams are an <a href="https://github.com/epatters/Catlab.jl/blob/eae7e8f33f568ca0bbcc3eeb3b3f2c9b6e50b5e7/src/wiring_diagrams/Algebraic.jl#L81">instance of symmetric monoidal categories</a>.</p>
+
+
+
+{% endraw %}
+
+<hr><p>Last updated: Feb 07 2022 at 21:54 UTC</p>

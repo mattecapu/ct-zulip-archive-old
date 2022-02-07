@@ -1,0 +1,624 @@
+---
+layout: archive
+title: Zulip Chat Archive
+permalink: /stream/229111-general/topic/Category.20of.20Types.html
+---
+
+<h2>Stream: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/index.html">general</a></h2>
+<h3>Topic: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/Category.20of.20Types.html">Category of Types</a></h3>
+
+<hr>
+
+<base href="https://categorytheory.zulipchat.com/">
+
+{% raw %}
+
+<a name="191874066"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/Category%20of%20Types/near/191874066" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Tiago Veras <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/Category.20of.20Types.html#191874066">(Mar 26 2020 at 12:07)</a>:</h4>
+<p>Hello friends, If I consider a category, where objects are types (X, Y for example), what would morphisms look like? Since any f: Id (X, Y) is also a type?</p>
+
+
+
+<a name="191874238"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/Category%20of%20Types/near/191874238" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nathanael Arkor <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/Category.20of.20Types.html#191874238">(Mar 26 2020 at 12:09)</a>:</h4>
+<p>you generally want the objects to be <em>contexts</em>, rather than types (unless you have products), and the morphisms are terms in that context</p>
+
+
+
+<a name="191874262"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/Category%20of%20Types/near/191874262" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nathanael Arkor <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/Category.20of.20Types.html#191874262">(Mar 26 2020 at 12:09)</a>:</h4>
+<p>this is often called a <em>syntactic category</em></p>
+
+
+
+<a name="191874286"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/Category%20of%20Types/near/191874286" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nathanael Arkor <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/Category.20of.20Types.html#191874286">(Mar 26 2020 at 12:10)</a>:</h4>
+<p>the definition on the nLab for this topic is quite readable, I think: <a href="https://ncatlab.org/nlab/show/syntactic+category" title="https://ncatlab.org/nlab/show/syntactic+category">https://ncatlab.org/nlab/show/syntactic+category</a></p>
+
+
+
+<a name="191877973"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/Category%20of%20Types/near/191877973" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Anton Lorenzen <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/Category.20of.20Types.html#191877973">(Mar 26 2020 at 12:45)</a>:</h4>
+<p>Huh, syntactic categories sound like the right approach here. But there also seems to be a category of Haskell types, which (to my knowledge) has never been fully specified but could be understood as having as objects the terms of type * in System Fw and as morphisms between <code>X, Y</code> the terms of type <code>X -&gt; Y</code>, right?</p>
+
+
+
+<a name="191878550"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/Category%20of%20Types/near/191878550" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nathanael Arkor <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/Category.20of.20Types.html#191878550">(Mar 26 2020 at 12:50)</a>:</h4>
+<p>yes, this is an example of a syntactic category, because you can take products of types and thus represent a context by taking the product of the types of the variables in the context</p>
+
+
+
+<a name="191878603"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/Category%20of%20Types/near/191878603" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nathanael Arkor <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/Category.20of.20Types.html#191878603">(Mar 26 2020 at 12:50)</a>:</h4>
+<p>(this ignores the extra structure on kinds themselves)</p>
+
+
+
+<a name="191887552"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/Category%20of%20Types/near/191887552" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Stelios Tsampas <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/Category.20of.20Types.html#191887552">(Mar 26 2020 at 13:55)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="276385">Anton Lorenzen</span> <a href="#narrow/stream/229111-general/topic/Category.20of.20Types/near/191877973" title="#narrow/stream/229111-general/topic/Category.20of.20Types/near/191877973">said</a>:</p>
+<blockquote>
+<p>Huh, syntactic categories sound like the right approach here. But there also seems to be a category of Haskell types, which (to my knowledge) has never been fully specified but could be understood as having as objects the terms of type * in System Fw and as morphisms between <code>X, Y</code> the terms of type <code>X -&gt; Y</code>, right?</p>
+</blockquote>
+<p>Take a look at Hask: <a href="https://wiki.haskell.org/Hask" title="https://wiki.haskell.org/Hask">https://wiki.haskell.org/Hask</a>. By the way being fast, loose and ignoring its liiiiiittle problem with () is OK!</p>
+
+
+
+<a name="191888396"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/Category%20of%20Types/near/191888396" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nathanael Arkor <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/Category.20of.20Types.html#191888396">(Mar 26 2020 at 14:01)</a>:</h4>
+<p>isn't the problem <code>seq</code>rather than <code>()</code>?</p>
+
+
+
+<a name="191888575"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/Category%20of%20Types/near/191888575" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Stelios Tsampas <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/Category.20of.20Types.html#191888575">(Mar 26 2020 at 14:02)</a>:</h4>
+<p>I think its undef, isn't it?</p>
+
+
+
+<a name="191888720"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/Category%20of%20Types/near/191888720" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Stelios Tsampas <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/Category.20of.20Types.html#191888720">(Mar 26 2020 at 14:03)</a>:</h4>
+<p>It's how undef interacts with (), to be more precise (I think).</p>
+
+
+
+<a name="191888856"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/Category%20of%20Types/near/191888856" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nathanael Arkor <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/Category.20of.20Types.html#191888856">(Mar 26 2020 at 14:04)</a>:</h4>
+<p>I'm not sure I've seen it worked out in detail, but <a href="https://www.reddit.com/r/haskell/comments/4wk0gs/hask_is_not_a_category/" title="https://www.reddit.com/r/haskell/comments/4wk0gs/hask_is_not_a_category/">this thread</a> seems to suggest <code>seq</code> is the main problem</p>
+
+
+
+<a name="191889046"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/Category%20of%20Types/near/191889046" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nathanael Arkor <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/Category.20of.20Types.html#191889046">(Mar 26 2020 at 14:06)</a>:</h4>
+<p>well, it seems <code>seq</code> is the obstruction to making <code>Hask</code> a category, and <code>undefined</code> is the obstruction to giving it nice structure</p>
+
+
+
+<a name="191889055"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/Category%20of%20Types/near/191889055" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nathanael Arkor <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/Category.20of.20Types.html#191889055">(Mar 26 2020 at 14:06)</a>:</h4>
+<p>so both :)</p>
+
+
+
+<a name="191889145"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/Category%20of%20Types/near/191889145" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Stelios Tsampas <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/Category.20of.20Types.html#191889145">(Mar 26 2020 at 14:07)</a>:</h4>
+<p>Hahaha OK, that's good to know :).</p>
+
+
+
+<a name="191893289"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/Category%20of%20Types/near/191893289" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Alex Kavvos <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/Category.20of.20Types.html#191893289">(Mar 26 2020 at 14:36)</a>:</h4>
+<p>It is in general good to first understand how to form categories from λ-calculus without nontermination/fixpoints - that part is harder!</p>
+
+
+
+<a name="191893401"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/Category%20of%20Types/near/191893401" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Alex Kavvos <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/Category.20of.20Types.html#191893401">(Mar 26 2020 at 14:37)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="277600">Tiago Veras</span> <a href="#narrow/stream/229111-general/topic/Category.20of.20Types/near/191874066" title="#narrow/stream/229111-general/topic/Category.20of.20Types/near/191874066">said</a>:</p>
+<blockquote>
+<p>Hello friends, If I consider a category, where objects are types (X, Y for example), what would morphisms look like? Since any f: Id (X, Y) is also a type?</p>
+</blockquote>
+<p>It depends on what you want! The standard thing to do is to have x : X |- M : Y be your morphisms X -&gt; Y.</p>
+
+
+
+<a name="191898582"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/Category%20of%20Types/near/191898582" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Dan Doel <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/Category.20of.20Types.html#191898582">(Mar 26 2020 at 15:11)</a>:</h4>
+<p>One way you might want to think about <code>Hom(Γ, Σ)</code> in the syntactic category is that it is a _substitution_ for <code>Σ</code> in a context <code>Γ</code>, where a substitution is made of appropriately typed terms for the variables listed in <code>Σ</code>.</p>
+
+
+
+<a name="191898694"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/Category%20of%20Types/near/191898694" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Paul Blain Levy <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/Category.20of.20Types.html#191898694">(Mar 26 2020 at 15:12)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="276092">Nathanael Arkor</span> <a href="#narrow/stream/229111-general/topic/Category.20of.20Types/near/191889046" title="#narrow/stream/229111-general/topic/Category.20of.20Types/near/191889046">said</a>:</p>
+<blockquote>
+<p>well, it seems <code>seq</code> is the obstruction to making <code>Hask</code> a category, and <code>undefined</code> is the obstruction to giving it nice structure</p>
+</blockquote>
+<p>As <span class="user-mention silent" data-user-id="277109">Alex Kavvos</span>  explained, you can get a category despite the presence of <code>seq</code>.  But here are some curious facts.  Firstly, the reader, state and continuation monads are not monads.  That's because of <code>seq</code>.  Secondly, even if <code>seq</code> is excluded, the Maybe monad transformer applied to the Maybe monad is  not a monad.  That's because of <code>undefined</code>.</p>
+
+
+
+<a name="191899079"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/Category%20of%20Types/near/191899079" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Dan Doel <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/Category.20of.20Types.html#191899079">(Mar 26 2020 at 15:14)</a>:</h4>
+<p>That allows you to make syntactic sense of maps between entire contexts, even though typically terms are given as exactly one thing on the right. The n-ary version of a term is a simultaneous substitution of many things.</p>
+
+
+
+<a name="192048400"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/Category%20of%20Types/near/192048400" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Burak Emir <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/Category.20of.20Types.html#192048400">(Mar 27 2020 at 16:58)</a>:</h4>
+<p>... or, simply an n-tuple of terms.</p>
+
+
+
+<a name="192050601"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/Category%20of%20Types/near/192050601" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Burak Emir <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/Category.20of.20Types.html#192050601">(Mar 27 2020 at 17:13)</a>:</h4>
+<p>I agree it is better to leave out general recursion/non-termination to move towards an understanding.</p>
+<p>CCCs correspond to typed <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>λ</mi></mrow><annotation encoding="application/x-tex">\lambda</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.69444em;vertical-align:0em;"></span><span class="mord mathdefault">λ</span></span></span></span> calculus with surjective pairing, so being able to form pairs is a must for the cartesian part.  And since you want constants, you add 1 and you get arbitrary tuples. The morphisms are the terms, the context gives types to the free variables in the terms.</p>
+<p>Regarding the non-termination piece: If every type A gets an inhabitant <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mrow><mi mathvariant="sans-serif">u</mi><mi mathvariant="sans-serif">n</mi><mi mathvariant="sans-serif">d</mi><mi mathvariant="sans-serif">e</mi><mi mathvariant="sans-serif">f</mi><mi mathvariant="sans-serif">i</mi><mi mathvariant="sans-serif">n</mi><mi mathvariant="sans-serif">e</mi><mi mathvariant="sans-serif">d</mi></mrow><mi>A</mi></msub></mrow><annotation encoding="application/x-tex">\mathsf{undefined}_A</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.84444em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord"><span class="mord mathsf">u</span><span class="mord mathsf">n</span><span class="mord mathsf">d</span><span class="mord mathsf">e</span><span class="mord mathsf" style="margin-right:0.06944em;">f</span><span class="mord mathsf">i</span><span class="mord mathsf">n</span><span class="mord mathsf">e</span><span class="mord mathsf">d</span></span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.32833099999999993em;"><span style="top:-2.5500000000000003em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">A</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span>, then <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mrow><mi mathvariant="sans-serif">u</mi><mi mathvariant="sans-serif">n</mi><mi mathvariant="sans-serif">d</mi><mi mathvariant="sans-serif">e</mi><mi mathvariant="sans-serif">f</mi><mi mathvariant="sans-serif">i</mi><mi mathvariant="sans-serif">n</mi><mi mathvariant="sans-serif">e</mi><mi mathvariant="sans-serif">d</mi></mrow><mi>A</mi></msub><mo>:</mo><mn>1</mn><mo>→</mo><mi>A</mi></mrow><annotation encoding="application/x-tex">\mathsf{undefined}_A:1 \rightarrow A</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.84444em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord"><span class="mord mathsf">u</span><span class="mord mathsf">n</span><span class="mord mathsf">d</span><span class="mord mathsf">e</span><span class="mord mathsf" style="margin-right:0.06944em;">f</span><span class="mord mathsf">i</span><span class="mord mathsf">n</span><span class="mord mathsf">e</span><span class="mord mathsf">d</span></span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.32833099999999993em;"><span style="top:-2.5500000000000003em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">A</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">:</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">1</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault">A</span></span></span></span> makes the terminal object 1 a weakly initial object. Then everything becomes isomorphic which makes the model slightly uninteresting. So I think one can pretend or assume that non-termination does not exist.</p>
+
+
+
+<a name="192051006"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/Category%20of%20Types/near/192051006" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> sarahzrf <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/Category.20of.20Types.html#192051006">(Mar 27 2020 at 17:16)</a>:</h4>
+<p>i think ive heard that multicategories are arguably better-suited to how type systems are presented than ordinary categories, and that's where the pain w/ contexts vs types comes from</p>
+
+
+
+<a name="192051914"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/Category%20of%20Types/near/192051914" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> sarahzrf <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/Category.20of.20Types.html#192051914">(Mar 27 2020 at 17:23)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="276009">Burak Emir</span> <a href="#narrow/stream/229111-general/topic/Category.20of.20Types/near/192050601" title="#narrow/stream/229111-general/topic/Category.20of.20Types/near/192050601">said</a>:</p>
+<blockquote>
+<p>Regarding the non-termination piece: If every type A gets an inhabitant <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mrow><mi mathvariant="sans-serif">u</mi><mi mathvariant="sans-serif">n</mi><mi mathvariant="sans-serif">d</mi><mi mathvariant="sans-serif">e</mi><mi mathvariant="sans-serif">f</mi><mi mathvariant="sans-serif">i</mi><mi mathvariant="sans-serif">n</mi><mi mathvariant="sans-serif">e</mi><mi mathvariant="sans-serif">d</mi></mrow><mi>A</mi></msub></mrow><annotation encoding="application/x-tex">\mathsf{undefined}_A</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.84444em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord"><span class="mord mathsf">u</span><span class="mord mathsf">n</span><span class="mord mathsf">d</span><span class="mord mathsf">e</span><span class="mord mathsf" style="margin-right:0.06944em;">f</span><span class="mord mathsf">i</span><span class="mord mathsf">n</span><span class="mord mathsf">e</span><span class="mord mathsf">d</span></span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.32833099999999993em;"><span style="top:-2.5500000000000003em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">A</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span>, then <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mrow><mi mathvariant="sans-serif">u</mi><mi mathvariant="sans-serif">n</mi><mi mathvariant="sans-serif">d</mi><mi mathvariant="sans-serif">e</mi><mi mathvariant="sans-serif">f</mi><mi mathvariant="sans-serif">i</mi><mi mathvariant="sans-serif">n</mi><mi mathvariant="sans-serif">e</mi><mi mathvariant="sans-serif">d</mi></mrow><mi>A</mi></msub><mo>:</mo><mn>1</mn><mo>→</mo><mi>A</mi></mrow><annotation encoding="application/x-tex">\mathsf{undefined}_A:1 \rightarrow A</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.84444em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord"><span class="mord mathsf">u</span><span class="mord mathsf">n</span><span class="mord mathsf">d</span><span class="mord mathsf">e</span><span class="mord mathsf" style="margin-right:0.06944em;">f</span><span class="mord mathsf">i</span><span class="mord mathsf">n</span><span class="mord mathsf">e</span><span class="mord mathsf">d</span></span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.32833099999999993em;"><span style="top:-2.5500000000000003em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">A</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">:</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">1</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault">A</span></span></span></span> makes the terminal object 1 a weakly initial object. Then everything becomes isomorphic which makes the model slightly uninteresting. So I think one can pretend or assume that non-termination does not exist.</p>
+</blockquote>
+<p>i think this only goes thru if you ask for there to be an initial object! isn't the category of non-empty sets cartesian closed?</p>
+
+
+
+<a name="192055713"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/Category%20of%20Types/near/192055713" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Burak Emir <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/Category.20of.20Types.html#192055713">(Mar 27 2020 at 17:53)</a>:</h4>
+<p>With a terminal object <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn></mrow><annotation encoding="application/x-tex">1</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">1</span></span></span></span> (that role being played by the empty tuple <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">()</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mclose">)</span></span></span></span> and its unique morphisms <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mrow><mi mathvariant="sans-serif">i</mi><mi mathvariant="sans-serif">g</mi><mi mathvariant="sans-serif">n</mi><mi mathvariant="sans-serif">o</mi><mi mathvariant="sans-serif">r</mi><mi mathvariant="sans-serif">e</mi></mrow><mi>A</mi></msub><mo>:</mo><mi>A</mi><mo>→</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">\mathsf{ignore}_A: A \rightarrow 1</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.92351em;vertical-align:-0.24414em;"></span><span class="mord"><span class="mord"><span class="mord mathsf">i</span><span class="mord mathsf" style="margin-right:0.01389em;">g</span><span class="mord mathsf">n</span><span class="mord mathsf">o</span><span class="mord mathsf" style="margin-right:0.01389em;">r</span><span class="mord mathsf">e</span></span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.23419099999999995em;"><span style="top:-2.4558600000000004em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">A</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.24414em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">:</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault">A</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">1</span></span></span></span>), which now also acts as initial object via <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mrow><mi mathvariant="sans-serif">u</mi><mi mathvariant="sans-serif">n</mi><mi mathvariant="sans-serif">d</mi><mi mathvariant="sans-serif">e</mi><mi mathvariant="sans-serif">f</mi><mi mathvariant="sans-serif">i</mi><mi mathvariant="sans-serif">n</mi><mi mathvariant="sans-serif">e</mi><mi mathvariant="sans-serif">d</mi></mrow><mi>A</mi></msub><mo>:</mo><mn>1</mn><mo>→</mo><mi>A</mi></mrow><annotation encoding="application/x-tex">\mathsf{undefined}_A: 1 \rightarrow A</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.84444em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord"><span class="mord mathsf">u</span><span class="mord mathsf">n</span><span class="mord mathsf">d</span><span class="mord mathsf">e</span><span class="mord mathsf" style="margin-right:0.06944em;">f</span><span class="mord mathsf">i</span><span class="mord mathsf">n</span><span class="mord mathsf">e</span><span class="mord mathsf">d</span></span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.32833099999999993em;"><span style="top:-2.5500000000000003em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">A</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">:</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">1</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault">A</span></span></span></span>, we have an object that is both initial and terminal.</p>
+<p>It would be enough for there be a unique arrow <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mo>→</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">1 \rightarrow 0</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">1</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">0</span></span></span></span> to get into this state.  I'm not saying the thing is not a CCC, but it may be an undesirable CCC.</p>
+<p>I admit I did not quite get what you are asking. In the category of non-empty sets, there is no <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">{</mo><mo stretchy="false">}</mo></mrow><annotation encoding="application/x-tex">\{\}</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">{</span><span class="mclose">}</span></span></span></span> that would play the role of initial object, so we won't run the risk of initial and terminal being isomorphic. Is there an <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mrow><mi mathvariant="sans-serif">u</mi><mi mathvariant="sans-serif">n</mi><mi mathvariant="sans-serif">d</mi><mi mathvariant="sans-serif">e</mi><mi mathvariant="sans-serif">f</mi><mi mathvariant="sans-serif">i</mi><mi mathvariant="sans-serif">n</mi><mi mathvariant="sans-serif">e</mi><mi mathvariant="sans-serif">d</mi></mrow><mi>A</mi></msub></mrow><annotation encoding="application/x-tex">\mathsf{undefined}_A</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.84444em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord"><span class="mord mathsf">u</span><span class="mord mathsf">n</span><span class="mord mathsf">d</span><span class="mord mathsf">e</span><span class="mord mathsf" style="margin-right:0.06944em;">f</span><span class="mord mathsf">i</span><span class="mord mathsf">n</span><span class="mord mathsf">e</span><span class="mord mathsf">d</span></span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.32833099999999993em;"><span style="top:-2.5500000000000003em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">A</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span> function from a singleton set to every set $A$?</p>
+
+
+
+<a name="192055990"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/Category%20of%20Types/near/192055990" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> sarahzrf <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/Category.20of.20Types.html#192055990">(Mar 27 2020 at 17:55)</a>:</h4>
+<p>well, it sounded to me like you were claiming that if every object in a CCC has a global element, then the CCC is trivial (in the sense that all objects are isomorphic to each other), so i was offering what i think is probably a counterexample, since the category of non-empty sets is definitely not trivial</p>
+
+
+
+<a name="192056154"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/Category%20of%20Types/near/192056154" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> sarahzrf <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/Category.20of.20Types.html#192056154">(Mar 27 2020 at 17:56)</a>:</h4>
+<p>(but every object has a global element, since the terminal object is still the singleton set)</p>
+
+
+
+<a name="192056559"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/Category%20of%20Types/near/192056559" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Burak Emir <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/Category.20of.20Types.html#192056559">(Mar 27 2020 at 17:59)</a>:</h4>
+<p>Oh, I see now. Every non-empty set has some element, so we can come up with a global element. Aren't these all interchangeable, though?</p>
+
+
+
+<a name="192056935"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/Category%20of%20Types/near/192056935" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Dan Doel <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/Category.20of.20Types.html#192056935">(Mar 27 2020 at 18:02)</a>:</h4>
+<p>There are correspondences between CCCs and typed lambda calculus that do not involve the products corresponding to a type. They are used only for contexts and multi-terms/substitutions/whatever you want to call them.</p>
+
+
+
+<a name="192056983"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/Category%20of%20Types/near/192056983" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Burak Emir <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/Category.20of.20Types.html#192056983">(Mar 27 2020 at 18:02)</a>:</h4>
+<p>So we have arrows <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mrow><mi mathvariant="sans-serif">p</mi><mi mathvariant="sans-serif">i</mi><mi mathvariant="sans-serif">c</mi><mi mathvariant="sans-serif">k</mi></mrow><mi>A</mi></msub><mo>:</mo><mo stretchy="false">{</mo><mo>⋆</mo><mo stretchy="false">}</mo><mo>→</mo><mi>A</mi></mrow><annotation encoding="application/x-tex">\mathsf{pick}_A : \{ \star \} \rightarrow A</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.93858em;vertical-align:-0.24414em;"></span><span class="mord"><span class="mord"><span class="mord mathsf">p</span><span class="mord mathsf">i</span><span class="mord mathsf">c</span><span class="mord mathsf">k</span></span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.23419099999999995em;"><span style="top:-2.4558600000000004em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">A</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.24414em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">:</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">{</span><span class="mord">⋆</span><span class="mclose">}</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault">A</span></span></span></span> for any <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi></mrow><annotation encoding="application/x-tex">A</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault">A</span></span></span></span>. Then  <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>B</mi><msup><mo>→</mo><mo stretchy="false">!</mo></msup><mo stretchy="false">{</mo><mo>⋆</mo><mo stretchy="false">}</mo><msup><mo>→</mo><mrow><mi mathvariant="sans-serif">p</mi><mi mathvariant="sans-serif">i</mi><mi mathvariant="sans-serif">c</mi><mi mathvariant="sans-serif">k</mi></mrow></msup><mi>C</mi></mrow><annotation encoding="application/x-tex">B \rightarrow^! \{ \star \} \rightarrow^\mathsf{pick} C</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.849108em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.05017em;">B</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel"><span class="mrel">→</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.849108em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mclose mtight">!</span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1.0991079999999998em;vertical-align:-0.25em;"></span><span class="mopen">{</span><span class="mord">⋆</span><span class="mclose">}</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel"><span class="mrel">→</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8491079999999999em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathsf mtight">p</span><span class="mord mathsf mtight">i</span><span class="mord mathsf mtight">c</span><span class="mord mathsf mtight">k</span></span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.07153em;">C</span></span></span></span> and   <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>C</mi><msup><mo>→</mo><mo stretchy="false">!</mo></msup><mo stretchy="false">{</mo><mo>⋆</mo><mo stretchy="false">}</mo><msup><mo>→</mo><mrow><mi mathvariant="sans-serif">p</mi><mi mathvariant="sans-serif">i</mi><mi mathvariant="sans-serif">c</mi><mi mathvariant="sans-serif">k</mi></mrow></msup><mi>B</mi></mrow><annotation encoding="application/x-tex">C \rightarrow^! \{ \star \} \rightarrow^\mathsf{pick} B</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.849108em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.07153em;">C</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel"><span class="mrel">→</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.849108em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mclose mtight">!</span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1.0991079999999998em;vertical-align:-0.25em;"></span><span class="mopen">{</span><span class="mord">⋆</span><span class="mclose">}</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel"><span class="mrel">→</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8491079999999999em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathsf mtight">p</span><span class="mord mathsf mtight">i</span><span class="mord mathsf mtight">c</span><span class="mord mathsf mtight">k</span></span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.05017em;">B</span></span></span></span>. (UPDATE: alas, that is not an isomorphism. Indeed, it seems one needs a proper initial object; i'll dig out the exact thing it is about fixpoints collapsing CCCs, it might have been biCCCs)</p>
+
+
+
+<a name="192057916"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/Category%20of%20Types/near/192057916" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Burak Emir <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/Category.20of.20Types.html#192057916">(Mar 27 2020 at 18:09)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="277270">Dan Doel</span> <a href="#narrow/stream/229111-general/topic/Category.20of.20Types/near/192056935" title="#narrow/stream/229111-general/topic/Category.20of.20Types/near/192056935">said</a>:</p>
+<blockquote>
+<p>There are correspondences between CCCs and typed lambda calculus that do not involve the products corresponding to a type. They are used only for contexts and multi-terms/substitutions/whatever you want to call them.</p>
+</blockquote>
+<p>Totally, besides the syntactic category, there are the domain models, dcpo's (the denotational semantics) are also CCCs.</p>
+
+
+
+<a name="192058152"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/Category%20of%20Types/near/192058152" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nathanael Arkor <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/Category.20of.20Types.html#192058152">(Mar 27 2020 at 18:11)</a>:</h4>
+<p>I think <span class="user-mention" data-user-id="277270">@Dan Doel</span> is referring to (closed) cartesian multicategories, where context concatenation is not represented by products</p>
+
+
+
+<a name="192058663"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/Category%20of%20Types/near/192058663" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Burak Emir <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/Category.20of.20Types.html#192058663">(Mar 27 2020 at 18:15)</a>:</h4>
+<p><span class="user-mention" data-user-id="276092">@Nathanael Arkor</span> Right.</p>
+
+
+
+<a name="192058706"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/Category%20of%20Types/near/192058706" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Dan Doel <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/Category.20of.20Types.html#192058706">(Mar 27 2020 at 18:15)</a>:</h4>
+<p>I think what I mean is that the syntactic categories of simply typed lambda calculi _without_ (necessarily) product types (just function types) correspond to free Cartesian closed categories. Whether there are product types might depend on what the CCC is free over.</p>
+
+
+
+<a name="192058882"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/Category%20of%20Types/near/192058882" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Dan Doel <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/Category.20of.20Types.html#192058882">(Mar 27 2020 at 18:16)</a>:</h4>
+<p>And that correspondence works the same sort of way as closed cartesian multicategories.</p>
+
+
+
+<a name="192059110"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/Category%20of%20Types/near/192059110" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Dan Doel <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/Category.20of.20Types.html#192059110">(Mar 27 2020 at 18:18)</a>:</h4>
+<p>I can't find the paper I'm thinking of that exhibits this, though.</p>
+
+
+
+<a name="192130813"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/Category%20of%20Types/near/192130813" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Burak Emir <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/Category.20of.20Types.html#192130813">(Mar 28 2020 at 16:33)</a>:</h4>
+<p>Do you guys agree that it would be nice to have a clear exposition of these matters, i.e. that shows the connection between CCC, typed lambda calculus (typing rules / natural deduction) and syntactic categories?  It seems like a basic thing, yet I think every exposition chooses something else to anchor the basics in.</p>
+
+
+
+<a name="192131373"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/Category%20of%20Types/near/192131373" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Dan Doel <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/Category.20of.20Types.html#192131373">(Mar 28 2020 at 16:46)</a>:</h4>
+<p>Have you seen Mike Shulman's lecture notes on Categorical Logic from a Categorical Point of View? That at least points out the connection between type theories and a syntactic multi-category pretty well, I think. And that's kind of the most straight forward analogy of them all, I think.</p>
+
+
+
+<a name="192131405"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/Category%20of%20Types/near/192131405" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Dan Doel <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/Category.20of.20Types.html#192131405">(Mar 28 2020 at 16:47)</a>:</h4>
+<p>(There's lots of other good nuggets in the notes, too, even if you already know most of the material.)</p>
+
+
+
+<a name="192132269"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/Category%20of%20Types/near/192132269" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Burak Emir <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/Category.20of.20Types.html#192132269">(Mar 28 2020 at 17:05)</a>:</h4>
+<p>Thanks for sharing, no I was not aware. By contrary, I have encountered before the connection between multi-categories and cut/sequent-style reasoning. I had scratched my head over Szabo's "Algebra of Proofs" many times to get an intuitive understanding for the hairy composition rules. </p>
+<p>Would you really consider this the most straightforward correspondence? I vaguely remember my former PL grad student self knowing <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>λ</mi></mrow><annotation encoding="application/x-tex">\lambda</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.69444em;vertical-align:0em;"></span><span class="mord mathdefault">λ</span></span></span></span>-calculus but trying hard to understand plain CCCs (without multi-).</p>
+
+
+
+<a name="192132588"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/Category%20of%20Types/near/192132588" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Burak Emir <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/Category.20of.20Types.html#192132588">(Mar 28 2020 at 17:12)</a>:</h4>
+<p>Wait, I started reading now and Shulman argues this point; that it is more pedagogical to use multi-categories. I should read the whole thing, this is very exciting.</p>
+
+
+
+<a name="192135756"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/Category%20of%20Types/near/192135756" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Gershom <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/Category.20of.20Types.html#192135756">(Mar 28 2020 at 18:31)</a>:</h4>
+<p>as for "classic" expositions for the standard point of view, my view is that Lambek &amp; Scott is pretty good?</p>
+
+
+
+<a name="192138665"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/Category%20of%20Types/near/192138665" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Dan Doel <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/Category.20of.20Types.html#192138665">(Mar 28 2020 at 19:46)</a>:</h4>
+<p>Ah hah. I figured out which paper I was thinking of.</p>
+
+
+
+<a name="192138667"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/Category%20of%20Types/near/192138667" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Dan Doel <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/Category.20of.20Types.html#192138667">(Mar 28 2020 at 19:46)</a>:</h4>
+<p>Normalization and the Yoneda Embedding by Cubric, Dybjer and Scott.</p>
+
+
+
+<a name="192138749"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/Category%20of%20Types/near/192138749" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Dan Doel <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/Category.20of.20Types.html#192138749">(Mar 28 2020 at 19:49)</a>:</h4>
+<p>In section 3, they construct a correspondence between typed lambda calculi with just function types and free Cartesian closed PER-enriched-categories, because they're going to use that for normalization-by-evaluation.</p>
+
+
+
+<a name="192138940"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/Category%20of%20Types/near/192138940" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Dan Doel <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/Category.20of.20Types.html#192138940">(Mar 28 2020 at 19:54)</a>:</h4>
+<p>I imagine having some of the categorical pieces perform double-duty (both contexts and types) makes the correspondence harder to use for this purpose. The function-types-only approach makes the correspondence really on-the-nose, I think.</p>
+
+
+
+<a name="192139242"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/Category%20of%20Types/near/192139242" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Gershom <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/Category.20of.20Types.html#192139242">(Mar 28 2020 at 20:02)</a>:</h4>
+<p>i also like the treatment of cccs and lambda calculi in "The Maximality of the Typed Lambda Calculus and of Cartesian Closed Categories" <a href="https://arxiv.org/abs/math/9911073" title="https://arxiv.org/abs/math/9911073">https://arxiv.org/abs/math/9911073</a> which also proves a very lovely result</p>
+
+
+
+<a name="192140073"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/Category%20of%20Types/near/192140073" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Dan Doel <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/Category.20of.20Types.html#192140073">(Mar 28 2020 at 20:24)</a>:</h4>
+<p>Also, incidentally, the reason I'd push for thinking of context maps as "substitutions" rather than just a tuple of terms is that that can connect up with work on simultaneous substitution and the like, which is a useful thing to think about in type theory, and maybe even a useful concept to have <em>within</em> a type theory.</p>
+
+
+
+<a name="192140138"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/Category%20of%20Types/near/192140138" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Dan Doel <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/Category.20of.20Types.html#192140138">(Mar 28 2020 at 20:26)</a>:</h4>
+<p>Tuples of terms kind of leads you to think there's just some mismatch in the details of how each thing works.</p>
+
+
+
+<a name="192140178"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/Category%20of%20Types/near/192140178" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/Category.20of.20Types.html#192140178">(Mar 28 2020 at 20:27)</a>:</h4>
+<p>What does "PER-enriched" mean?  What's "PER"?</p>
+
+
+
+<a name="192140179"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/Category%20of%20Types/near/192140179" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Dan Doel <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/Category.20of.20Types.html#192140179">(Mar 28 2020 at 20:27)</a>:</h4>
+<p>Partial equivalence relation.</p>
+
+
+
+<a name="192140538"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/Category%20of%20Types/near/192140538" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> sarahzrf <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/Category.20of.20Types.html#192140538">(Mar 28 2020 at 20:36)</a>:</h4>
+<p>named for PER martin-löf</p>
+
+
+
+<a name="192140546"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/Category%20of%20Types/near/192140546" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Dan Doel <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/Category.20of.20Types.html#192140546">(Mar 28 2020 at 20:36)</a>:</h4>
+<p>I think the point is similar to your Enriched Lawvere Theories for Operational Semantics, but the PER lets you have different denotational semantics with the same underlying set. So, α only vs αβη.</p>
+
+
+
+<a name="192140554"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/Category%20of%20Types/near/192140554" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Dan Doel <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/Category.20of.20Types.html#192140554">(Mar 28 2020 at 20:37)</a>:</h4>
+<p>Those can both be different PERs on the same set of lambda terms.</p>
+
+
+
+<a name="192140704"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/Category%20of%20Types/near/192140704" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Dan Doel <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/Category.20of.20Types.html#192140704">(Mar 28 2020 at 20:41)</a>:</h4>
+<p>Somehow that makes their construction easier, because they're 'normalizing' by making a loop on the α category through the αβη category or something.</p>
+
+
+
+<a name="192140813"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/Category%20of%20Types/near/192140813" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Dan Doel <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/Category.20of.20Types.html#192140813">(Mar 28 2020 at 20:44)</a>:</h4>
+<p>Actually, if you used something directed instead (like the enriched Lawvere theory stuff), maybe that would ensure that you actually get the expected normal form.</p>
+
+
+
+<a name="192140827"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/Category%20of%20Types/near/192140827" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Dan Doel <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/Category.20of.20Types.html#192140827">(Mar 28 2020 at 20:44)</a>:</h4>
+<p>Instead of just 'by accident'. :)</p>
+
+
+
+<a name="192158653"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/Category%20of%20Types/near/192158653" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Christian Williams <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/Category.20of.20Types.html#192158653">(Mar 29 2020 at 06:07)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="276009">Burak Emir</span> <a href="#narrow/stream/229111-general/topic/Category.20of.20Types/near/192130813" title="#narrow/stream/229111-general/topic/Category.20of.20Types/near/192130813">said</a>:</p>
+<blockquote>
+<p>Do you guys agree that it would be nice to have a clear exposition of these matters, i.e. that shows the connection between CCC, typed lambda calculus (typing rules / natural deduction) and syntactic categories?  It seems like a basic thing, yet I think every exposition chooses something else to anchor the basics in.</p>
+</blockquote>
+<p>I think the main reference for this is probably <em>Introduction to higher order categorical logic</em>, by Lambek and Scott.</p>
+
+
+
+<a name="192158657"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/Category%20of%20Types/near/192158657" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Christian Williams <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/Category.20of.20Types.html#192158657">(Mar 29 2020 at 06:07)</a>:</h4>
+<p>How did this end up in <a class="stream" data-stream-id="229111" href="/#narrow/stream/229111-general">#general</a>, by the way? This would probably fit best in <a class="stream" data-stream-id="229952" href="/#narrow/stream/229952-type-theory">#type theory</a>. There are many streams to subscribe to - this and other points will have to be made clear when we put together a better guide.</p>
+
+
+
+<a name="192164771"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/Category%20of%20Types/near/192164771" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Burak Emir <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/Category.20of.20Types.html#192164771">(Mar 29 2020 at 09:16)</a>:</h4>
+<p>Agree on L&amp;S, but they do not talk about multicategories. Also agree that moving the conversation there makes sense.</p>
+
+
+
+<a name="192331506"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/Category%20of%20Types/near/192331506" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Eduardo Ochs <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/Category.20of.20Types.html#192331506">(Mar 30 2020 at 23:53)</a>:</h4>
+<p>Anyone has good pointers on why most texts on the Calculus of Constructions written by logicians avoid mentioning dependent sums, like Σa:A.B(a)? When we do Categorical Semantics for DTTs (canonical e.g.: in Bart Jacobs "Categorical Logic and Type Theory") we do the opposite - we explain most concepts on the adjunction Σ⊣π^* first, and leave most properties of π^*⊣Π as exercises...</p>
+<p>Here is my guess: rules for dependent sums _used to be_ given explicitly - for example they appear in the system in Zhaohui Luo's thesis - but then people like Christine Paulin-Mohring showed that dependent sums can be defined as certain initial algebras using inductive types blah blah blah - see <a href="https://hal.inria.fr/hal-01094195/" title="https://hal.inria.fr/hal-01094195/">https://hal.inria.fr/hal-01094195/</a> for an overview...</p>
+<p>Problem: I'm not being able to neither find on the web, nor define myself, a definition of Σa:A.B(a) given in terms of Π! I know that chapter 11 of Girard's "Proofs and Types" - <a href="http://www.paultaylor.eu/stable/prot.pdf" title="http://www.paultaylor.eu/stable/prot.pdf">http://www.paultaylor.eu/stable/prot.pdf</a> - is about System F and about how to define Booleans, naturals, products and inductive types in System F, and I'm rereading it and finding it quite clear, but I'm not being able to adapt its definition of "×" to a definition of a "Σ" - probably because I don't have much practise...</p>
+<p>Any hints? Any pointers?<br>
+Thanks in advance!!!</p>
+
+
+
+<a name="192335450"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/Category%20of%20Types/near/192335450" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nick Scheel <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/Category.20of.20Types.html#192335450">(Mar 31 2020 at 00:57)</a>:</h4>
+<p>An impredicative encoding of Σ in terms of Π is usually like <code>Σ(x : A), B(x) := Π(r : Type), (Π(x : A), B(x) -&gt; r) -&gt; r</code>. In Haskell we usually say <code>type Exists f = forall r. (forall x. f x -&gt; r) -&gt; r</code>. I’m not quite sure if that’s what you’re looking for, but I hope it helps :)</p>
+
+
+
+<a name="192335543"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/Category%20of%20Types/near/192335543" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nick Scheel <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/Category.20of.20Types.html#192335543">(Mar 31 2020 at 00:58)</a>:</h4>
+<p>Of course if your universe is predicative, this construction ends up in the “wrong” universe ...</p>
+
+
+
+<a name="192340343"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/Category%20of%20Types/near/192340343" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Dan Doel <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/Category.20of.20Types.html#192340343">(Mar 31 2020 at 02:38)</a>:</h4>
+<p>It's also not quite the same as a dependent sum, depending on what you mean by that. The Calculus of Constructions doesn't have dependent sums with the full induction principle.</p>
+
+
+
+<a name="192341440"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/Category%20of%20Types/near/192341440" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nick Scheel <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/Category.20of.20Types.html#192341440">(Mar 31 2020 at 03:06)</a>:</h4>
+<p>Right, I suppose you need function extensionality and parametricity to prove that the construction actually does what you want it to do.</p>
+
+
+
+<a name="192349559"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/Category%20of%20Types/near/192349559" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Eduardo Ochs <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/Category.20of.20Types.html#192349559">(Mar 31 2020 at 06:35)</a>:</h4>
+<p><span class="user-mention" data-user-id="276057">@Nicholas Scheel</span>, this looks good but I don't know how to express the second projection...</p>
+<p>Let S = Σx:A.B(x)<br>
+and S' = ΠR:Type. (Πx:A. B(x) → R) → R.<br>
+If s':S' then we can define πs<br>
+as πs' := s A (λa:A. λb:B(a). a),<br>
+but how do I define the second projection π's'?</p>
+
+
+
+<a name="192351240"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/Category%20of%20Types/near/192351240" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nick Scheel <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/Category.20of.20Types.html#192351240">(Mar 31 2020 at 07:02)</a>:</h4>
+<p>it would be <code>s (B(πs')) (λa:A. λb:B(a). coe b)</code>, but <span class="user-mention" data-user-id="277270">@Dan Doel</span> is right, you actually need a parametricity theorem/assumption to prove that <code>a ~ πs'</code>.</p>
+
+
+
+<a name="192351567"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/Category%20of%20Types/near/192351567" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nick Scheel <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/Category.20of.20Types.html#192351567">(Mar 31 2020 at 07:08)</a>:</h4>
+<p>I’m afraid I don’t know exactly how the parametricity result would apply off the top of my head ... you essentially need to prove that <code>forall r. (a -&gt; r) -&gt; r</code> is a “constant” function, by specializing it (applying the identity function), and using parametricity to say that any other result factors through that ... in particular you should be able to get the coercion you need</p>
+
+
+
+<a name="192357162"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/Category%20of%20Types/near/192357162" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Eduardo Ochs <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/Category.20of.20Types.html#192357162">(Mar 31 2020 at 08:14)</a>:</h4>
+<p><span class="user-mention" data-user-id="276057">@Nicholas Scheel</span> What is "coe"? Some kind of coercion operator?<br>
+Anyway: thanks, great! Cleaning up the notation a bit, this works in the naïve models that I have in mind:</p>
+<p>Let S = Σx:A.B(x)<br>
+and S' = ΠR:Type. (Πx:A. B(x) → R) → R.<br>
+If s':S' then we can define πs' and π's' as:<br>
+πs'  := s' A (λa:A. λb:B(a). a) and<br>
+π's' := s' (B(πs')) (λa:A. λb:B(a). b).</p>
+<p>Homework for me for the next months: understand the extra axioms that we need to add to make this work "in general"...</p>
+
+
+
+<a name="192390912"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/Category%20of%20Types/near/192390912" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Dan Doel <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/Category.20of.20Types.html#192390912">(Mar 31 2020 at 13:42)</a>:</h4>
+<p>Here is an Agda proof that parametricity allows you to derive induction for encoded Σ: <a href="https://hub.darcs.net/dolio/agda-share/browse/ParamInduction.agda#139" title="https://hub.darcs.net/dolio/agda-share/browse/ParamInduction.agda#139">https://hub.darcs.net/dolio/agda-share/browse/ParamInduction.agda#139</a></p>
+
+
+
+<a name="192390990"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/Category%20of%20Types/near/192390990" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Dan Doel <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/Category.20of.20Types.html#192390990">(Mar 31 2020 at 13:43)</a>:</h4>
+<p>Although I haven't run it in a very long time, so it's possible the file no longer loads.</p>
+
+
+
+<a name="192391372"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/Category%20of%20Types/near/192391372" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Dan Doel <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/Category.20of.20Types.html#192391372">(Mar 31 2020 at 13:46)</a>:</h4>
+<p>There are probably papers now that give a more systematic treatment of this (for all inductive types), but adding internal parametricity to type theory is still pretty researchy. Another approach is Cedille, which has a type former called "dependent intersection" that allows inductive types with the strong induction principle to be derived for lambda term implementations.</p>
+
+
+
+<a name="192391455"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/Category%20of%20Types/near/192391455" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Dan Doel <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/Category.20of.20Types.html#192391455">(Mar 31 2020 at 13:47)</a>:</h4>
+<p>However, this is all beyond the Calculus of Constructions.</p>
+
+
+
+<a name="192402548"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/Category%20of%20Types/near/192402548" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Reid Barton <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/Category.20of.20Types.html#192402548">(Mar 31 2020 at 15:11)</a>:</h4>
+<p>Parametricity is also just false in some important models of type theory, such as ordinary mathematics.</p>
+
+
+
+<a name="192404720"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/Category%20of%20Types/near/192404720" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Reid Barton <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/Category.20of.20Types.html#192404720">(Mar 31 2020 at 15:24)</a>:</h4>
+<p>So you may not want to take it as an axiom, depending on your goals.</p>
+
+
+
+<a name="192405479"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/Category%20of%20Types/near/192405479" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Dan Doel <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/Category.20of.20Types.html#192405479">(Mar 31 2020 at 15:29)</a>:</h4>
+<p>"Ordinary mathematics" already isn't a model of the calculus of constructions.</p>
+
+
+
+<a name="192406523"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/Category%20of%20Types/near/192406523" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Reid Barton <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/Category.20of.20Types.html#192406523">(Mar 31 2020 at 15:36)</a>:</h4>
+<p>Why not? Are you worried about universes?</p>
+
+
+
+<a name="192406790"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/Category%20of%20Types/near/192406790" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Dan Doel <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/Category.20of.20Types.html#192406790">(Mar 31 2020 at 15:38)</a>:</h4>
+<p>The calculus of constructions doesn't have universes. It has impredicative quantification over all types, so that you can encode weak inductive types.</p>
+
+
+
+<a name="192406878"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/Category%20of%20Types/near/192406878" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Reid Barton <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/Category.20of.20Types.html#192406878">(Mar 31 2020 at 15:39)</a>:</h4>
+<p>Okay, this is some specific system I'm not familiar with then</p>
+
+
+
+<a name="192407064"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/Category%20of%20Types/near/192407064" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Dan Doel <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/Category.20of.20Types.html#192407064">(Mar 31 2020 at 15:40)</a>:</h4>
+<p>So you can construct e.g. <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>μ</mi><mi>X</mi><mi mathvariant="normal">.</mi><mo stretchy="false">(</mo><mi>X</mi><mo>→</mo><mn>2</mn><mo stretchy="false">)</mo><mo>→</mo><mn>2</mn></mrow><annotation encoding="application/x-tex">μ X. (X → 2) → 2</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault">μ</span><span class="mord mathdefault" style="margin-right:0.07847em;">X</span><span class="mord">.</span><span class="mopen">(</span><span class="mord mathdefault" style="margin-right:0.07847em;">X</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">2</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">2</span></span></span></span>. It's like System F with dependent types.</p>
+
+
+
+<a name="192407169"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/Category%20of%20Types/near/192407169" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> sarahzrf <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/Category.20of.20Types.html#192407169">(Mar 31 2020 at 15:41)</a>:</h4>
+<p>i mean, the CoC <em>is</em> a specific system ;p</p>
+
+
+
+<a name="192407219"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/Category%20of%20Types/near/192407219" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> sarahzrf <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/Category.20of.20Types.html#192407219">(Mar 31 2020 at 15:41)</a>:</h4>
+<p>it's not quite the same as CIC, nor is it quite a subsystem of it iirc</p>
+
+
+
+<a name="192407247"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/Category%20of%20Types/near/192407247" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Dan Doel <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/Category.20of.20Types.html#192407247">(Mar 31 2020 at 15:41)</a>:</h4>
+<p>Right.</p>
+
+
+
+<a name="192407594"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/Category%20of%20Types/near/192407594" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Dan Doel <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/Category.20of.20Types.html#192407594">(Mar 31 2020 at 15:43)</a>:</h4>
+<p>I think the original description might not be quite 'the maximal corner of the lambda cube', either, but that's what people usually take it to mean these days.</p>
+
+
+
+<a name="192408899"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/Category%20of%20Types/near/192408899" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Reid Barton <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/Category.20of.20Types.html#192408899">(Mar 31 2020 at 15:51)</a>:</h4>
+<p>Ah I was thinking of CIC (although then the original question would be somewhat odd). I agree in this particular context, my comment is not that relevant.</p>
+
+
+
+<a name="208737285"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/Category%20of%20Types/near/208737285" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nikolaj Kuntner <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/Category.20of.20Types.html#208737285">(Sep 01 2020 at 19:40)</a>:</h4>
+<p>How close or far away from the standard Curry-Howard interpretation of types (with terms being justifications that type-check) are the objects of the Effective Topos? <br>
+I'm tempted to read <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">Ω</mi><mo>=</mo><mi mathvariant="script">P</mi><mi mathvariant="double-struck">N</mi></mrow><annotation encoding="application/x-tex">\Omega={\mathcal P}{\mathbb N}</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord">Ω</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.68889em;vertical-align:0em;"></span><span class="mord"><span class="mord mathcal" style="margin-right:0.08222em;">P</span></span><span class="mord"><span class="mord mathbb">N</span></span></span></span></span> (plus equality on it) as all possible sets of indices for terms (let's write the enumeration of terms that relates numbers and codes as <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>p</mi><mi>n</mi></msub></mrow><annotation encoding="application/x-tex">p_n</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.625em;vertical-align:-0.19444em;"></span><span class="mord"><span class="mord mathnormal">p</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.151392em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">n</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span>) that could make for proofs. So that for any object (type) <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>X</mi></mrow><annotation encoding="application/x-tex">X</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathnormal" style="margin-right:0.07847em;">X</span></span></span></span>, it's really the numbers <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi></mrow><annotation encoding="application/x-tex">x</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathnormal">x</span></span></span></span> with <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>p</mi><mi>x</mi></msub><mo>:</mo><mi>X</mi></mrow><annotation encoding="application/x-tex">p_x:X</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.625em;vertical-align:-0.19444em;"></span><span class="mord"><span class="mord mathnormal">p</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.151392em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">x</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">:</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathnormal" style="margin-right:0.07847em;">X</span></span></span></span> (of which there will be several, corresponding to differently coded up functions, for example).<br>
+Does this make any sense?</p>
+
+
+
+<a name="208756785"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/Category%20of%20Types/near/208756785" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Dan Doel <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/Category.20of.20Types.html#208756785">(Sep 01 2020 at 22:24)</a>:</h4>
+<p>That sounds vaguely correct, although I'm not sure calling it 'Curry-Howard' really makes sense to me. The <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>p</mi><mi>n</mi></msub></mrow><annotation encoding="application/x-tex">p_n</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.625em;vertical-align:-0.19444em;"></span><span class="mord"><span class="mord mathnormal">p</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.151392em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">n</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span> part seems on the right track.</p>
+
+
+
+<a name="208757913"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/Category%20of%20Types/near/208757913" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Dan Doel <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/Category.20of.20Types.html#208757913">(Sep 01 2020 at 22:37)</a>:</h4>
+<p>One way of saying what an object is (I think) is that it's a set <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>S</mi></mrow><annotation encoding="application/x-tex">S</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathnormal" style="margin-right:0.05764em;">S</span></span></span></span> together with a partial function <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mo>:</mo><mi mathvariant="normal">N</mi><mo>⇀</mo><mi>S</mi></mrow><annotation encoding="application/x-tex">p : ℕ \rightharpoonup S</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.625em;vertical-align:-0.19444em;"></span><span class="mord mathnormal">p</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">:</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.68889em;vertical-align:0em;"></span><span class="mord amsrm">N</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">⇀</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathnormal" style="margin-right:0.05764em;">S</span></span></span></span> saying how elements of <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>S</mi></mrow><annotation encoding="application/x-tex">S</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathnormal" style="margin-right:0.05764em;">S</span></span></span></span> are realized by natural numbers. Each element of <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>S</mi></mrow><annotation encoding="application/x-tex">S</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathnormal" style="margin-right:0.05764em;">S</span></span></span></span> must be realized by at least one number. Numbers that realize the same element of <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>S</mi></mrow><annotation encoding="application/x-tex">S</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathnormal" style="margin-right:0.05764em;">S</span></span></span></span> must be mapped by arrows to numbers realizing the same element of the codomain.</p>
+<p>However, you can instead consider the partial equivalence relations on <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">N</mi></mrow><annotation encoding="application/x-tex">ℕ</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.68889em;vertical-align:0em;"></span><span class="mord amsrm">N</span></span></span></span> the are induced by <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi></mrow><annotation encoding="application/x-tex">p</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.625em;vertical-align:-0.19444em;"></span><span class="mord mathnormal">p</span></span></span></span>, I think. The arrows must preserve naturals related by the PER.</p>
+
+
+
+<a name="208758472"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/Category%20of%20Types/near/208758472" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Dan Doel <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/Category.20of.20Types.html#208758472">(Sep 01 2020 at 22:44)</a>:</h4>
+<p>In the first case you'd talk about how the arrows are realizing functions between the sets. In the second you'd talk about how they're respecting the PER structure.</p>
+
+
+
+<a name="208763817"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/Category%20of%20Types/near/208763817" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nikolaj Kuntner <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/Category.20of.20Types.html#208763817">(Sep 01 2020 at 23:57)</a>:</h4>
+<p>Thx. When you say "must be mapped by arrows", which arrows (plural) do you mean? Arrows S to S?</p>
+
+
+
+<a name="208764700"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/Category%20of%20Types/near/208764700" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Dan Doel <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/Category.20of.20Types.html#208764700">(Sep 02 2020 at 00:07)</a>:</h4>
+<p>An arrow <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mi>f</mi><mo separator="true">,</mo><mi>m</mi><mo stretchy="false">)</mo><mo>:</mo><mo stretchy="false">(</mo><mi>S</mi><mo separator="true">,</mo><mi>p</mi><mo stretchy="false">)</mo><mo>→</mo><mo stretchy="false">(</mo><mi>T</mi><mo separator="true">,</mo><mi>q</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(f,m) : (S,p) \to (T,q)</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.10764em;">f</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathnormal">m</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">:</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.05764em;">S</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathnormal">p</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.13889em;">T</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathnormal" style="margin-right:0.03588em;">q</span><span class="mclose">)</span></span></span></span> is a function <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>:</mo><mi>S</mi><mo>→</mo><mi>T</mi></mrow><annotation encoding="application/x-tex">f : S \to T</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span class="mord mathnormal" style="margin-right:0.10764em;">f</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">:</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathnormal" style="margin-right:0.05764em;">S</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathnormal" style="margin-right:0.13889em;">T</span></span></span></span> and a number <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>m</mi><mo>:</mo><mi mathvariant="normal">N</mi></mrow><annotation encoding="application/x-tex">m : ℕ</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathnormal">m</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">:</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.68889em;vertical-align:0em;"></span><span class="mord amsrm">N</span></span></span></span> such that for all <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>:</mo><mi mathvariant="normal">N</mi></mrow><annotation encoding="application/x-tex">n : ℕ</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathnormal">n</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">:</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.68889em;vertical-align:0em;"></span><span class="mord amsrm">N</span></span></span></span> for which <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>p</mi><mi>n</mi></msub></mrow><annotation encoding="application/x-tex">p_n</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.625em;vertical-align:-0.19444em;"></span><span class="mord"><span class="mord mathnormal">p</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.151392em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">n</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span> is well defined, <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>m</mi><mo>⋅</mo><mi>n</mi><mo>=</mo><mi>r</mi></mrow><annotation encoding="application/x-tex">m \cdot n = r</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.44445em;vertical-align:0em;"></span><span class="mord mathnormal">m</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">⋅</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathnormal">n</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathnormal" style="margin-right:0.02778em;">r</span></span></span></span> and <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>q</mi><mi>r</mi></msub></mrow><annotation encoding="application/x-tex">q_r</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.625em;vertical-align:-0.19444em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.03588em;">q</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.151392em;"><span style="top:-2.5500000000000003em;margin-left:-0.03588em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight" style="margin-right:0.02778em;">r</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span> are also well defined, and <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo stretchy="false">(</mo><msub><mi>p</mi><mi>n</mi></msub><mo stretchy="false">)</mo><mo>=</mo><msub><mi>q</mi><mi>r</mi></msub></mrow><annotation encoding="application/x-tex">f(p_n) = q_r</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.10764em;">f</span><span class="mopen">(</span><span class="mord"><span class="mord mathnormal">p</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.151392em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">n</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.625em;vertical-align:-0.19444em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.03588em;">q</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.151392em;"><span style="top:-2.5500000000000003em;margin-left:-0.03588em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight" style="margin-right:0.02778em;">r</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span>. Or something along those lines. <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>m</mi><mo>⋅</mo><mi>n</mi></mrow><annotation encoding="application/x-tex">m \cdot n</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.44445em;vertical-align:0em;"></span><span class="mord mathnormal">m</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">⋅</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathnormal">n</span></span></span></span> is the operation of <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>m</mi></mrow><annotation encoding="application/x-tex">m</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathnormal">m</span></span></span></span> on <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi></mrow><annotation encoding="application/x-tex">n</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathnormal">n</span></span></span></span> in Kleene's first algebra (the (equivalent of the) computation model underlying the effective topos).</p>
+
+
+
+<a name="208764989"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/Category%20of%20Types/near/208764989" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Dan Doel <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/Category.20of.20Types.html#208764989">(Sep 02 2020 at 00:11)</a>:</h4>
+<p>So if you're thinking about something like a numbering of the partial recursive functions <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>⋅</mo></mrow><annotation encoding="application/x-tex">\cdot</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.44445em;vertical-align:0em;"></span><span class="mord">⋅</span></span></span></span> is where that enters in in an essential way.</p>
+
+
+
+<a name="208765421"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/Category%20of%20Types/near/208765421" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Dan Doel <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/Category.20of.20Types.html#208765421">(Sep 02 2020 at 00:18)</a>:</h4>
+<p>Actually, I guess I'm uncertain whether it's the definition there, where two numbers that realize the same function are different arrows, or whether it's properly stated as "functions <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>:</mo><mi>S</mi><mo>→</mo><mi>T</mi></mrow><annotation encoding="application/x-tex">f : S \to T</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span class="mord mathnormal" style="margin-right:0.10764em;">f</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">:</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathnormal" style="margin-right:0.05764em;">S</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathnormal" style="margin-right:0.13889em;">T</span></span></span></span> for which there exists a realizer".</p>
+
+
+
+{% endraw %}
+
+<hr><p>Last updated: Feb 07 2022 at 21:54 UTC</p>

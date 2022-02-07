@@ -14,4 +14,4 @@ permalink: /stream/295092-practice:-pedagogy/index.html
 * [Kan Academy](topic/Kan.20Academy.html) (3 messages, latest: Jul 20 2021 at 07:01)
 * [stream events](topic/stream.20events.html) (1 message, latest: Jul 19 2021 at 17:59)
 
-<hr><p>Last updated: Jan 30 2022 at 00:30 UTC</p>
+<hr><p>Last updated: Feb 07 2022 at 21:54 UTC</p>

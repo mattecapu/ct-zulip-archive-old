@@ -1,0 +1,80 @@
+---
+layout: archive
+title: Zulip Chat Archive
+permalink: /stream/230087-theory:-topos-theory/topic/Bi-interpretability.20of.20categories.html
+---
+
+<h2>Stream: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/230087-theory:-topos-theory/index.html">theory: topos theory</a></h2>
+<h3>Topic: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/230087-theory:-topos-theory/topic/Bi-interpretability.20of.20categories.html">Bi-interpretability of categories</a></h3>
+
+<hr>
+
+<base href="https://categorytheory.zulipchat.com/">
+
+{% raw %}
+
+<a name="195816919"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/230087-theory%3A%20topos%20theory/topic/Bi-interpretability%20of%20categories/near/195816919" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> [Mod] Morgan Rogers <a href="https://mattecapu.github.io/ct-zulip-archive/stream/230087-theory:-topos-theory/topic/Bi-interpretability.20of.20categories.html#195816919">(Apr 30 2020 at 09:43)</a>:</h4>
+<p>Working classically, it suffices to find two theories with no Set models which are not bi-interpretable. Take some non-equivalent Grothendieck toposes having no points and any theories they classify will fail to be bi-interpretable, for example, because any bi-interpretation would induce an equivalence of toposes. But this isn't the really interesting case.</p>
+<p>In Section 2.2.2 of her book, <em>Theories, Sites, Toposes: relating and studying mathematical theories through topos-theoretic 'bridges'</em>, <span class="user-mention" data-user-id="284392">@Olivia Caramello</span> states that:</p>
+<ol>
+<li>Two theories with enough Set-models which can constructively be shown to have equivalent categories of models give Morita-equivalent theories, in the sense of having equivalent classifying toposes.</li>
+<li>There are Morita-equivalent theories which are not bi-interpretable. The example she gives is that of MV-algebras and abelian <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">ℓ</mi></mrow><annotation encoding="application/x-tex">\ell</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.69444em;vertical-align:0em;"></span><span class="mord">ℓ</span></span></span></span>-groups with strong unit, or between perfect MV-algebras and abelian <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">ℓ</mi></mrow><annotation encoding="application/x-tex">\ell</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.69444em;vertical-align:0em;"></span><span class="mord">ℓ</span></span></span></span>-groups.</li>
+</ol>
+<p>A claim in that book that sounds reasonable is that most Morita equivalences are <em>not</em> induced by bi-interpretations, but I don't personally know of many concrete examples, or what general techniques can be used to show that two Morita-equivalent theories are <em>not</em> bi-interpretable. That said, I'm not an expert in categorical logic yet!!</p>
+
+
+
+<a name="195821458"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/230087-theory%3A%20topos%20theory/topic/Bi-interpretability%20of%20categories/near/195821458" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Olivia Caramello <a href="https://mattecapu.github.io/ct-zulip-archive/stream/230087-theory:-topos-theory/topic/Bi-interpretability.20of.20categories.html#195821458">(Apr 30 2020 at 10:34)</a>:</h4>
+<p><span class="user-mention" data-user-id="277473">@Morgan Rogers</span> From a categorical point of view, bi-interpretability  can be expressed as an equivalence between the syntactic categories of the two theories (within a certain fragment of geometric logic); note that these categories, endowed with the syntactic topologies on them, provide sites of definition for their classifying toposes. So bi-interpretability corresponds to trivial equivalence of sites (by this I mean that the categories underlying the two sites are equivalent and the Grothendieck topologies on them correspond to each other under that equivalence), while Morita equivalence corresponds to the condition for the two sites to present the same topos.  The claim in my book that "more Morita equivalences are not induced by bi-interpretations" can be understood, for instance, by considering the case of a topological space X and two bases B_1 and B_2 for it: by Grothendieck's comparison lemma, the topos Sh(X) of sheaves on the space is on the one hand equivalent to the topos of sheaves on B_1 (with respect to the Grothendieck topology induced on it by the canonical topology on the category of open sets of X) and on the other hand equivalent to the topos of sheaves on B_2 (again with respect to the induced topology). The resulting 'Morita equivalences' between B_1 and B_2 are not  induced by bi-interpretations, unless B_1 and B_2 are isomorphic as preorders (which in general is not the case).</p>
+
+
+
+<a name="195822237"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/230087-theory%3A%20topos%20theory/topic/Bi-interpretability%20of%20categories/near/195822237" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> [Mod] Morgan Rogers <a href="https://mattecapu.github.io/ct-zulip-archive/stream/230087-theory:-topos-theory/topic/Bi-interpretability.20of.20categories.html#195822237">(Apr 30 2020 at 10:43)</a>:</h4>
+<p>Yes, it is a very reasonable claim, and I fully believe it. I just don't know how to build the equivalent of "a base for a topological space" for a geometric theory. That is, I don't more know concrete examples of geometric theories whose syntactic categories are <em>not</em> equivalent, but which give equivalent toposes; it seems like a lot more work that finding different bases of opens for a topological space.</p>
+
+
+
+<a name="195822508"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/230087-theory%3A%20topos%20theory/topic/Bi-interpretability%20of%20categories/near/195822508" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> [Mod] Morgan Rogers <a href="https://mattecapu.github.io/ct-zulip-archive/stream/230087-theory:-topos-theory/topic/Bi-interpretability.20of.20categories.html#195822508">(Apr 30 2020 at 10:47)</a>:</h4>
+<p>Oh! Are you saying that different bases for a topological space already constitute the syntactic categories of different but Morita-equivalent theories? (Assuming that they form categories with sufficient structure, say?)</p>
+
+
+
+<a name="195883247"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/230087-theory%3A%20topos%20theory/topic/Bi-interpretability%20of%20categories/near/195883247" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Olivia Caramello <a href="https://mattecapu.github.io/ct-zulip-archive/stream/230087-theory:-topos-theory/topic/Bi-interpretability.20of.20categories.html#195883247">(Apr 30 2020 at 18:39)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="277473">Morgan Rogers</span> <a href="#narrow/stream/230087-theory.3A-topos.20theory/topic/Bi-interpretability.20of.20categories/near/195822508" title="#narrow/stream/230087-theory.3A-topos.20theory/topic/Bi-interpretability.20of.20categories/near/195822508">said</a>:</p>
+<blockquote>
+<p>Oh! Are you saying that different bases for a topological space already constitute the syntactic categories of different but Morita-equivalent theories? (Assuming that they form categories with sufficient structure, say?)</p>
+</blockquote>
+<p>Yes, they could if they have 'enough structure', but note that the correspondence between theories and sites is not exact: to any site corresponds canonically a geometric theory  classified by the topos of sheaves on it (i.e. the theory of continuous flat functors on the site) but in general the category underlying the site will be 'smaller' than the syntactic category of that theory. In fact, the difference between bi-interpretability and Morita-equivalence is much more evident in the context of sites than in that of theories. That being said, also in the context of theories, the majority of Morita equivalences do not come from bi-interpretations. Indeed, the (regular, coherent or geometric) syntactic categories only see the (regular, coherent or geometric) formulae written in the language of the theory, but not the 'imaginaries' (i.e. quotients of formal coproducts of such formulas by definable equivalence relations).</p>
+
+
+
+<a name="195890719"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/230087-theory%3A%20topos%20theory/topic/Bi-interpretability%20of%20categories/near/195890719" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> [Mod] Morgan Rogers <a href="https://mattecapu.github.io/ct-zulip-archive/stream/230087-theory:-topos-theory/topic/Bi-interpretability.20of.20categories.html#195890719">(Apr 30 2020 at 19:39)</a>:</h4>
+<p>This discussion highlights a difficulty, though. While there can be/typically are many different Morita-equivalent theories classified by a given topos, actually constructing interesting examples which are not bi-interpretable is hard work. The canonical geometric theory recovered from a Grothendieck topos (resp. coherent theory when the topos is coherent, etc) admits a canonical interpretation from whatever theory you used to generate the topos, which corresponds to the functor from the syntactic category to the relevant categorical completion (eg to its exact completion in the case of regular logic). But there exist few systematic ways to find other theories with the same completion, just as it's difficult to construct a lot of different bases for a general topological space or a lot of small categories with the same idempotent completion. This is why we don't have a long list of concrete examples of theories which are Morita equivalent but not bi-interpretable.</p>
+
+
+
+<a name="195940222"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/230087-theory%3A%20topos%20theory/topic/Bi-interpretability%20of%20categories/near/195940222" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Matteo Capucci <a href="https://mattecapu.github.io/ct-zulip-archive/stream/230087-theory:-topos-theory/topic/Bi-interpretability.20of.20categories.html#195940222">(May 01 2020 at 08:15)</a>:</h4>
+<p>Mmh recalling the definition of the syntactic topology, axioms might really be a generating coverage</p>
+
+
+
+<a name="195940594"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/230087-theory%3A%20topos%20theory/topic/Bi-interpretability%20of%20categories/near/195940594" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> [Mod] Morgan Rogers <a href="https://mattecapu.github.io/ct-zulip-archive/stream/230087-theory:-topos-theory/topic/Bi-interpretability.20of.20categories.html#195940594">(May 01 2020 at 08:22)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="276424">Rongmin Lu</span> <a href="#narrow/stream/230087-theory.3A-topos.20theory/topic/Bi-interpretability.20of.20categories/near/195926900" title="#narrow/stream/230087-theory.3A-topos.20theory/topic/Bi-interpretability.20of.20categories/near/195926900">said</a>:</p>
+<blockquote>
+<p>As for constructing different bases for a given space, this arises often enough in (the history of) algebraic geometry. A (partial?) list of sites used in algebraic geometry can be found in the Related Concepts section of this <a href="https://ncatlab.org/nlab/show/Nisnevich+site" title="https://ncatlab.org/nlab/show/Nisnevich+site">nLab entry</a>, for example.</p>
+</blockquote>
+<p>But these different sites typically give different toposes; here we're examining when different sites give the same topos, and more precisely when different sites <em>of the same form</em> give the same topos. Some (still not concrete, but more specific) examples have come to me since yesterday: if a theory has a finite axiomatisation, there is rarely a canonical such; in particular, when a theory has multiple sorts or function symbols which are related to one another strongly enough that some can be recovered from the others, the different choices of reduced signature that one can make will typically give Morita-equivalent but not bi-interpretable theories.</p>
+
+
+
+{% endraw %}
+
+<hr><p>Last updated: Feb 07 2022 at 21:54 UTC</p>

@@ -1,0 +1,110 @@
+[
+    {
+        "content": "<p>Say I have a set <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>X</mi></mrow><annotation encoding=\"application/x-tex\">X</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.07847em;\">X</span></span></span></span>, and I want to consider two partial orders on it at once. What kind of category would model this situation?</p>",
+        "id": 270802000,
+        "sender_full_name": "David Egolf",
+        "timestamp": 1644032281
+    },
+    {
+        "content": "<p>(what I have in mind: a topological space where we order open sets by inclusion, and where we also have the image of some net mapping to the open sets which allows us to say some open sets are \"after\" others)</p>",
+        "id": 270802059,
+        "sender_full_name": "David Egolf",
+        "timestamp": 1644032385
+    },
+    {
+        "content": "<p>It seems like a situation where we have different <em>kinds</em> of morphisms - the \"is a subset\" kind, and the \"comes after\" kind. I don't think we want to be able to compose morphisms of different kinds (?).</p>",
+        "id": 270802323,
+        "sender_full_name": "David Egolf",
+        "timestamp": 1644032784
+    },
+    {
+        "content": "<p>Any chance it is a double category?</p>",
+        "id": 270803022,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1644033808
+    },
+    {
+        "content": "<p>Unfortunately, I don't know what a double category is (and all the definitions I can find go over my head currently). However, if a double category does model this kind of setting - with multiple kinds of relationships present at once - that's really interesting and maybe a reason to work on understanding what a double category is!</p>",
+        "id": 270803656,
+        "sender_full_name": "David Egolf",
+        "timestamp": 1644034750
+    },
+    {
+        "content": "<p>The presence of \"vertical\" and \"horizontal\" morphisms <em>does</em> make it sounds like a double category allows us to talk about different kinds of morphisms at once.</p>",
+        "id": 270803731,
+        "sender_full_name": "David Egolf",
+        "timestamp": 1644034853
+    },
+    {
+        "content": "<p>Yes, it does.   </p>\n<p>A preorder is the same as a category where for any pair of objects <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>x</mi><mo separator=\"true\">,</mo><mi>y</mi></mrow><annotation encoding=\"application/x-tex\">x,y</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.625em;vertical-align:-0.1944em;\"></span><span class=\"mord mathnormal\">x</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.03588em;\">y</span></span></span></span> there's at most one morphism from <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>x</mi></mrow><annotation encoding=\"application/x-tex\">x</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.4306em;\"></span><span class=\"mord mathnormal\">x</span></span></span></span> to <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>y</mi></mrow><annotation encoding=\"application/x-tex\">y</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.625em;vertical-align:-0.1944em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.03588em;\">y</span></span></span></span> .  If there's a morphism from <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>x</mi></mrow><annotation encoding=\"application/x-tex\">x</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.4306em;\"></span><span class=\"mord mathnormal\">x</span></span></span></span> to <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>y</mi></mrow><annotation encoding=\"application/x-tex\">y</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.625em;vertical-align:-0.1944em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.03588em;\">y</span></span></span></span> we write <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>x</mi><mo>≤</mo><mi>y</mi></mrow><annotation encoding=\"application/x-tex\">x \\le y</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.7719em;vertical-align:-0.136em;\"></span><span class=\"mord mathnormal\">x</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">≤</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.625em;vertical-align:-0.1944em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.03588em;\">y</span></span></span></span>.</p>\n<p>We can build a double category from a pair of preorders on the same set, say <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>≤</mo></mrow><annotation encoding=\"application/x-tex\">\\le </annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.7719em;vertical-align:-0.136em;\"></span><span class=\"mrel\">≤</span></span></span></span> and <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>◃</mo></mrow><annotation encoding=\"application/x-tex\">\\triangleleft</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.4653em;\"></span><span class=\"mord\">◃</span></span></span></span>.</p>",
+        "id": 270809275,
+        "sender_full_name": "John Baez",
+        "timestamp": 1644042144
+    },
+    {
+        "content": "<p>We say there's a single vertical morphism from <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>x</mi></mrow><annotation encoding=\"application/x-tex\">x</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.4306em;\"></span><span class=\"mord mathnormal\">x</span></span></span></span> to <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>y</mi></mrow><annotation encoding=\"application/x-tex\">y</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.625em;vertical-align:-0.1944em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.03588em;\">y</span></span></span></span> iff <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>x</mi><mo>≤</mo><mi>y</mi></mrow><annotation encoding=\"application/x-tex\">x \\le y</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.7719em;vertical-align:-0.136em;\"></span><span class=\"mord mathnormal\">x</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">≤</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.625em;vertical-align:-0.1944em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.03588em;\">y</span></span></span></span>, and there's a single horizontal morphism from <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>x</mi></mrow><annotation encoding=\"application/x-tex\">x</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.4306em;\"></span><span class=\"mord mathnormal\">x</span></span></span></span> to <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>y</mi></mrow><annotation encoding=\"application/x-tex\">y</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.625em;vertical-align:-0.1944em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.03588em;\">y</span></span></span></span> iff <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>x</mi><mo>◃</mo><mi>y</mi></mrow><annotation encoding=\"application/x-tex\">x \\triangleleft y</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.4653em;\"></span><span class=\"mord mathnormal\">x</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span><span class=\"mbin\">◃</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.625em;vertical-align:-0.1944em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.03588em;\">y</span></span></span></span>.</p>",
+        "id": 270809460,
+        "sender_full_name": "John Baez",
+        "timestamp": 1644042367
+    },
+    {
+        "content": "<p>We also have \"two-morphisms\" in a double category, which in this case seem to describe a sort of interaction between the two preorders (?). I'm not sure why we really need that, but presumably it's important.</p>",
+        "id": 270810143,
+        "sender_full_name": "David Egolf",
+        "timestamp": 1644043553
+    },
+    {
+        "content": "<p>In general 2-morphisms are the most interesting part of a double category, just as morphisms are the most interesting part of a category.  But we can make up examples where they are not so interesting... like the one we're talking about now.</p>\n<p>If I have two perorders on the same set, we can make up a double category where the vertical and horizontal morphisms are as above, and we have a 2-morphism from the horizontal arrow <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>x</mi><mo>◃</mo><mi>y</mi></mrow><annotation encoding=\"application/x-tex\">x \\triangleleft y</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.4653em;\"></span><span class=\"mord mathnormal\">x</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span><span class=\"mbin\">◃</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.625em;vertical-align:-0.1944em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.03588em;\">y</span></span></span></span> to the horizontal arrow <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msup><mi>x</mi><mo mathvariant=\"normal\" lspace=\"0em\" rspace=\"0em\">′</mo></msup><mo>◃</mo><msup><mi>y</mi><mo mathvariant=\"normal\" lspace=\"0em\" rspace=\"0em\">′</mo></msup></mrow><annotation encoding=\"application/x-tex\">x&#x27; \\triangleleft y&#x27;</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.7519em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\">x</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.7519em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\">′</span></span></span></span></span></span></span></span></span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span><span class=\"mbin\">◃</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.9463em;vertical-align:-0.1944em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.03588em;\">y</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.7519em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\">′</span></span></span></span></span></span></span></span></span></span></span></span> whenever we have a vertical arrow <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>x</mi><mo>≤</mo><msup><mi>x</mi><mo mathvariant=\"normal\" lspace=\"0em\" rspace=\"0em\">′</mo></msup></mrow><annotation encoding=\"application/x-tex\">x \\le x&#x27;</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.7719em;vertical-align:-0.136em;\"></span><span class=\"mord mathnormal\">x</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">≤</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.7519em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\">x</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.7519em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\">′</span></span></span></span></span></span></span></span></span></span></span></span> and a vertical arrow <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>y</mi><mo>≤</mo><msup><mi>y</mi><mo mathvariant=\"normal\" lspace=\"0em\" rspace=\"0em\">′</mo></msup></mrow><annotation encoding=\"application/x-tex\">y \\le y&#x27;</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8304em;vertical-align:-0.1944em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.03588em;\">y</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">≤</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.9463em;vertical-align:-0.1944em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.03588em;\">y</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.7519em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\">′</span></span></span></span></span></span></span></span></span></span></span></span>.</p>",
+        "id": 270810415,
+        "sender_full_name": "John Baez",
+        "timestamp": 1644043930
+    },
+    {
+        "content": "<p>(I would draw this as a square if I had the energy.)</p>",
+        "id": 270810451,
+        "sender_full_name": "John Baez",
+        "timestamp": 1644044008
+    },
+    {
+        "content": "<p><a href=\"/user_uploads/21317/FsmsDstaBJEcnkesANwgJrt-/image.png\">2-morphism</a></p>\n<div class=\"message_inline_image\"><a href=\"/user_uploads/21317/FsmsDstaBJEcnkesANwgJrt-/image.png\" title=\"2-morphism\"><img src=\"/user_uploads/21317/FsmsDstaBJEcnkesANwgJrt-/image.png\"></a></div>",
+        "id": 270838850,
+        "sender_full_name": "David Egolf",
+        "timestamp": 1644082102
+    },
+    {
+        "content": "<p>I remember the idea that the composition of morphisms characterizes the objects.<br>\nMaybe the composition of 2-morphisms characterizes the morphisms (and maybe, consequently, also the objects)?<br>\nThat would explain why 2-morphisms could be the most interesting part of a double category.</p>",
+        "id": 270838983,
+        "sender_full_name": "David Egolf",
+        "timestamp": 1644082219
+    },
+    {
+        "content": "<p>I guess a 2-morphism relates four 1-morphisms. If we take the philosophy that the meaningful attributes of things corresponds to how they compare to other things, a 2-morphism can be viewed as saying something about the 1-morphisms.</p>",
+        "id": 270839318,
+        "sender_full_name": "David Egolf",
+        "timestamp": 1644082680
+    },
+    {
+        "content": "<p>As a perhaps related thought.... I was thinking about sequences of real numbers, viewed as maps <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>f</mi><mo>:</mo><mi mathvariant=\"double-struck\">N</mi><mo>→</mo><mi mathvariant=\"double-struck\">R</mi></mrow><annotation encoding=\"application/x-tex\">f: \\mathbb{N} \\to \\mathbb{R}</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8889em;vertical-align:-0.1944em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.10764em;\">f</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">:</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6889em;\"></span><span class=\"mord mathbb\">N</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">→</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6889em;\"></span><span class=\"mord mathbb\">R</span></span></span></span> from a preorder. I know we care a lot about sequences, but thinking of a sequence in this way just makes it sound like a \"redecorating\" of <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"double-struck\">N</mi></mrow><annotation encoding=\"application/x-tex\">\\mathbb{N}</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6889em;\"></span><span class=\"mord mathbb\">N</span></span></span></span>, corresponding to a preorder isomorphic to the one we started with. But maybe we care about these sequences because of how they relate to a standard ordering (or topology?) already present on <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"double-struck\">R</mi></mrow><annotation encoding=\"application/x-tex\">\\mathbb{R}</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6889em;\"></span><span class=\"mord mathbb\">R</span></span></span></span>. In particular, we maybe care about how the preorder induced by a sequence compares to other structure on the real numbers we wish to consider simultaneously.</p>",
+        "id": 270839490,
+        "sender_full_name": "David Egolf",
+        "timestamp": 1644082891
+    },
+    {
+        "content": "<p>Yes. The 2-morphisms totally capture the 1 and 0 morphisms. This is basically by induction.</p>",
+        "id": 270839757,
+        "sender_full_name": "Fawzi Hreiki",
+        "timestamp": 1644083251
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"341237\">Fawzi Hreiki</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/two.20partial.20orders.20at.20once/near/270839757\">said</a>:</p>\n<blockquote>\n<p>Yes. The 2-morphisms totally capture the 1 and 0 morphisms. This is basically by induction.</p>\n</blockquote>\n<p>Cool! It makes me wonder if sometimes it is handy to do all one's reasoning in terms of 2-morphisms, as a result. Maybe this can sometimes allow for a clean restating of arguments involving various horizontal and vertical morphisms.</p>",
+        "id": 270842195,
+        "sender_full_name": "David Egolf",
+        "timestamp": 1644086217
+    },
+    {
+        "content": "<p>I've proved a lot of theorems and done a lot of calculations involving double categories - they get used a lot in my theory of open networks - and I find it useful to talk explicitly about objects, vertical and horizontal 1-morphisms, and 2-morphisms.</p>",
+        "id": 270856209,
+        "sender_full_name": "John Baez",
+        "timestamp": 1644105567
+    }
+]

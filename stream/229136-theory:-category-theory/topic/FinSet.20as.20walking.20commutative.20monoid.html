@@ -1,0 +1,838 @@
+---
+layout: archive
+title: Zulip Chat Archive
+permalink: /stream/229136-theory:-category-theory/topic/FinSet.20as.20walking.20commutative.20monoid.html
+---
+
+<h2>Stream: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/index.html">theory: category theory</a></h2>
+<h3>Topic: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/FinSet.20as.20walking.20commutative.20monoid.html">FinSet as walking commutative monoid</a></h3>
+
+<hr>
+
+<base href="https://categorytheory.zulipchat.com/">
+
+{% raw %}
+
+<a name="214126730"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/FinSet%20as%20walking%20commutative%20monoid/near/214126730" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> sarahzrf <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/FinSet.20as.20walking.20commutative.20monoid.html#214126730">(Oct 21 2020 at 23:17)</a>:</h4>
+<p><span class="user-mention" data-user-id="275920">@John Baez</span> you might remember that a while back i was considering kan extensions along <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ι</mi><mo>:</mo><mrow><mi mathvariant="normal">F</mi><mi mathvariant="normal">i</mi><mi mathvariant="normal">n</mi><mi mathvariant="normal">S</mi><mi mathvariant="normal">e</mi><mi mathvariant="normal">t</mi></mrow><mo>↪</mo><mrow><mi mathvariant="normal">S</mi><mi mathvariant="normal">e</mi><mi mathvariant="normal">t</mi></mrow></mrow><annotation encoding="application/x-tex">\iota : \mathrm{FinSet} \hookrightarrow \mathrm{Set}</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathnormal">ι</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">:</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.69433em;vertical-align:-0.011em;"></span><span class="mord"><span class="mord mathrm">F</span><span class="mord mathrm">i</span><span class="mord mathrm">n</span><span class="mord mathrm">S</span><span class="mord mathrm">e</span><span class="mord mathrm">t</span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">↪</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord"><span class="mord mathrm">S</span><span class="mord mathrm">e</span><span class="mord mathrm">t</span></span></span></span></span> of functors that pick out commutative monoids &amp; that you remarked on an apparent similarity to how one gets finitary monads out of Lawvere theories</p>
+
+
+
+<a name="214126741"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/FinSet%20as%20walking%20commutative%20monoid/near/214126741" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> sarahzrf <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/FinSet.20as.20walking.20commutative.20monoid.html#214126741">(Oct 21 2020 at 23:17)</a>:</h4>
+<p>well, i finally got around to figuring out how those tie together</p>
+
+
+
+<a name="214126842"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/FinSet%20as%20walking%20commutative%20monoid/near/214126842" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> sarahzrf <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/FinSet.20as.20walking.20commutative.20monoid.html#214126842">(Oct 21 2020 at 23:19)</a>:</h4>
+<p>in particular: if you have a lawvere theory <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>Q</mi></mrow><annotation encoding="application/x-tex">Q</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.8777699999999999em;vertical-align:-0.19444em;"></span><span class="mord mathnormal">Q</span></span></span></span>, and you put the cocartesian monoidal structure on the category of models <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>Q</mi><mrow><mi mathvariant="normal">M</mi><mi mathvariant="normal">o</mi><mi mathvariant="normal">d</mi></mrow></mrow><annotation encoding="application/x-tex">Q\mathrm{Mod}</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span class="mord mathnormal">Q</span><span class="mord"><span class="mord mathrm">M</span><span class="mord mathrm">o</span><span class="mord mathrm">d</span></span></span></span></span>, then there's a canonical commutative monoid structure for the free model on one generator <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>Q</mi><mo stretchy="false">(</mo><mn>1</mn><mo separator="true">,</mo><mo>−</mo><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">Q(1, -)</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal">Q</span><span class="mopen">(</span><span class="mord">1</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord">−</span><span class="mclose">)</span></span></span></span> (since there's a canonical commutative monoid structure for <em>every</em> object when the monoidal product is +)</p>
+
+
+
+<a name="214127017"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/FinSet%20as%20walking%20commutative%20monoid/near/214127017" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> sarahzrf <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/FinSet.20as.20walking.20commutative.20monoid.html#214127017">(Oct 21 2020 at 23:22)</a>:</h4>
+<p>then if you use <em>this</em> commutative monoid with the construction i was considering—you take the functor from FinSet that picks it out, and then you take the left Kan extension along the inclusion into Set—you get the free-model-of-Q functor Set → QMod</p>
+
+
+
+<a name="214128128"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/FinSet%20as%20walking%20commutative%20monoid/near/214128128" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/FinSet.20as.20walking.20commutative.20monoid.html#214128128">(Oct 21 2020 at 23:39)</a>:</h4>
+<p>Oh wow, I think this is a different connection than the one I was imagining, or trying to hint at.</p>
+
+
+
+<a name="214128867"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/FinSet%20as%20walking%20commutative%20monoid/near/214128867" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> sarahzrf <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/FinSet.20as.20walking.20commutative.20monoid.html#214128867">(Oct 21 2020 at 23:50)</a>:</h4>
+<p>is it?</p>
+
+
+
+<a name="214128911"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/FinSet%20as%20walking%20commutative%20monoid/near/214128911" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> sarahzrf <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/FinSet.20as.20walking.20commutative.20monoid.html#214128911">(Oct 21 2020 at 23:51)</a>:</h4>
+<p>the main thing that seemed common to <em>me</em> was doing some sort of left kan extension from FinSet to Set and/or the phenomenon of "summing over fibers" that seems to pop up as an action on morphisms</p>
+
+
+
+<a name="214129091"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/FinSet%20as%20walking%20commutative%20monoid/near/214129091" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/FinSet.20as.20walking.20commutative.20monoid.html#214129091">(Oct 21 2020 at 23:54)</a>:</h4>
+<p>I would need to read our original conversation to know what I was thinking, exactly.</p>
+
+
+
+<a name="214129153"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/FinSet%20as%20walking%20commutative%20monoid/near/214129153" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/FinSet.20as.20walking.20commutative.20monoid.html#214129153">(Oct 21 2020 at 23:54)</a>:</h4>
+<p>But I feel on the brink of making up something...</p>
+
+
+
+<a name="214129496"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/FinSet%20as%20walking%20commutative%20monoid/near/214129496" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> sarahzrf <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/FinSet.20as.20walking.20commutative.20monoid.html#214129496">(Oct 21 2020 at 23:58)</a>:</h4>
+<p>here's the end of it, btw <a href="https://twitter.com/johncarlosbaez/status/1291476247290114051">https://twitter.com/johncarlosbaez/status/1291476247290114051</a></p>
+<div class="inline-preview-twitter"><div class="twitter-tweet"><a href="https://twitter.com/johncarlosbaez/status/1291476247290114051"><img class="twitter-avatar" src="https://pbs.twimg.com/profile_images/1224941370885828608/Ktaz9JLB_normal.jpg"></a><p><a href="https://twitter.com/sarah_zrf">@sarah_zrf</a> You mean when your symmetric monoidal category is also cocomplete?   This reminds me a lot of how Lawvere theories induce monads on Set.... but it's different I think.
+
+Definitely worth looking at!  I don't think I've seen it!</p><span>- John Carlos Baez (@johncarlosbaez)</span></div></div>
+
+
+
+<a name="214129538"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/FinSet%20as%20walking%20commutative%20monoid/near/214129538" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> sarahzrf <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/FinSet.20as.20walking.20commutative.20monoid.html#214129538">(Oct 21 2020 at 23:59)</a>:</h4>
+<p>(and this is what you get, at least in the case of a commutative monoid in (Set, ×) <a href="https://twitter.com/sarah_zrf/status/1292140904862625792">https://twitter.com/sarah_zrf/status/1292140904862625792</a>)</p>
+<div class="inline-preview-twitter"><div class="twitter-tweet"><a href="https://twitter.com/sarah_zrf/status/1292140904862625792"><img class="twitter-avatar" src="https://pbs.twimg.com/profile_images/1273496051916460037/zZveP8_p_normal.png"></a><p>for sets A, B and a function f : A → B:
+
+- (Lan_U F)(A) is the set of finitely supported functions A → M, and (Lan_U F)(f) sums over fibers of f
+
+- (Ran_U F)(A) is the set of finitely additive M-valued measures on A, and (Ran_U F)(f) is measure pushforward</p><span>- category fibered in sarahzrfs (@sarah_zrf)</span></div></div>
+
+
+
+<a name="214130223"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/FinSet%20as%20walking%20commutative%20monoid/near/214130223" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> sarahzrf <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/FinSet.20as.20walking.20commutative.20monoid.html#214130223">(Oct 22 2020 at 00:08)</a>:</h4>
+<p>anyway, though, i'm kinda interested in poking a bit further at my original construction anyway—something is intriguing to me about the way a "summing over fibers" operation drops out of doing a left kan extension, when left kan extensions are <em>themselves</em> kind of a categorified "integrating over fibers" operation</p>
+
+
+
+<a name="214130254"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/FinSet%20as%20walking%20commutative%20monoid/near/214130254" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> sarahzrf <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/FinSet.20as.20walking.20commutative.20monoid.html#214130254">(Oct 22 2020 at 00:09)</a>:</h4>
+<p>i'm wondering about, like... hm</p>
+
+
+
+<a name="214130321"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/FinSet%20as%20walking%20commutative%20monoid/near/214130321" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Christian Williams <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/FinSet.20as.20walking.20commutative.20monoid.html#214130321">(Oct 22 2020 at 00:10)</a>:</h4>
+<p>This is nice. It feels like the way that clubs take the free model on 1 and extend it to all categories.</p>
+
+
+
+<a name="214130410"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/FinSet%20as%20walking%20commutative%20monoid/near/214130410" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> sarahzrf <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/FinSet.20as.20walking.20commutative.20monoid.html#214130410">(Oct 22 2020 at 00:12)</a>:</h4>
+<p>well, it's unclear to me whether there's any way of interpreting a summation over fibers like the one above as being <em>itself</em> a left kan extension (as opposed to the image of a morphism under <em>a functor that is</em> a left kan extension)</p>
+
+
+
+<a name="214130510"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/FinSet%20as%20walking%20commutative%20monoid/near/214130510" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> sarahzrf <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/FinSet.20as.20walking.20commutative.20monoid.html#214130510">(Oct 22 2020 at 00:13)</a>:</h4>
+<p>so like... we have something that looks sort of microcosm-y, but i dont see how to interpret the small thing as a case of the same concept as the big thing</p>
+
+
+
+<a name="214130519"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/FinSet%20as%20walking%20commutative%20monoid/near/214130519" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> sarahzrf <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/FinSet.20as.20walking.20commutative.20monoid.html#214130519">(Oct 22 2020 at 00:13)</a>:</h4>
+<p>the pattern here is eluding me</p>
+
+
+
+<a name="214130592"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/FinSet%20as%20walking%20commutative%20monoid/near/214130592" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> sarahzrf <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/FinSet.20as.20walking.20commutative.20monoid.html#214130592">(Oct 22 2020 at 00:14)</a>:</h4>
+<p>um, maybe this sounds incomprehensible outside of my head <span aria-label="sweat smile" class="emoji emoji-1f605" role="img" title="sweat smile">:sweat_smile:</span></p>
+
+
+
+<a name="214130859"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/FinSet%20as%20walking%20commutative%20monoid/near/214130859" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/FinSet.20as.20walking.20commutative.20monoid.html#214130859">(Oct 22 2020 at 00:18)</a>:</h4>
+<p>Okay, thanks.  One thing I was thinking about is that for any Lawvere theory <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>Q</mi></mrow><annotation encoding="application/x-tex">Q</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.8777699999999999em;vertical-align:-0.19444em;"></span><span class="mord mathnormal">Q</span></span></span></span>, the category <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>Q</mi><mtext>op</mtext></msup></mrow><annotation encoding="application/x-tex">Q^\textrm{op}</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.8777699999999999em;vertical-align:-0.19444em;"></span><span class="mord"><span class="mord mathnormal">Q</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.664392em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord text mtight"><span class="mord textrm mtight">op</span></span></span></span></span></span></span></span></span></span></span></span> is the category of free finitely generated models of <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>Q</mi></mrow><annotation encoding="application/x-tex">Q</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.8777699999999999em;vertical-align:-0.19444em;"></span><span class="mord mathnormal">Q</span></span></span></span>.    So, it comes with an embedding </p>
+<p><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>j</mi><mspace></mspace><mspace width="0.1111111111111111em"></mspace><mo lspace="0em" rspace="0.17em"></mo><mtext> ⁣</mtext><mo lspace="0em" rspace="0em">:</mo><mspace width="0.3333333333333333em"></mspace><msup><mi>Q</mi><mtext>op</mtext></msup><mo>→</mo><mi>Q</mi><mtext>Mod</mtext></mrow><annotation encoding="application/x-tex">j \colon Q^\textrm{op} \to Q\textrm{Mod}</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.8777699999999999em;vertical-align:-0.19444em;"></span><span class="mord mathnormal" style="margin-right:0.05724em;">j</span><span class="mspace nobreak"></span><span class="mspace" style="margin-right:0.1111111111111111em;"></span><span class="mpunct"></span><span class="mspace" style="margin-right:-0.16666666666666666em;"></span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord"><span class="mrel">:</span></span><span class="mspace" style="margin-right:0.3333333333333333em;"></span><span class="mord"><span class="mord mathnormal">Q</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.664392em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord text mtight"><span class="mord textrm mtight">op</span></span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span class="mord mathnormal">Q</span><span class="mord text"><span class="mord textrm">Mod</span></span></span></span></span>.</p>
+<p>We also have a functor </p>
+<p><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mo>:</mo><mrow><mi mathvariant="normal">F</mi><mi mathvariant="normal">i</mi><mi mathvariant="normal">n</mi><mi mathvariant="normal">S</mi><mi mathvariant="normal">e</mi><mi mathvariant="normal">t</mi></mrow><mo>→</mo><msup><mi>Q</mi><mtext>op</mtext></msup></mrow><annotation encoding="application/x-tex">F : \mathrm{FinSet} \to Q^\textrm{op}</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathnormal" style="margin-right:0.13889em;">F</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">:</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord"><span class="mord mathrm">F</span><span class="mord mathrm">i</span><span class="mord mathrm">n</span><span class="mord mathrm">S</span><span class="mord mathrm">e</span><span class="mord mathrm">t</span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.8777699999999999em;vertical-align:-0.19444em;"></span><span class="mord"><span class="mord mathnormal">Q</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.664392em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord text mtight"><span class="mord textrm mtight">op</span></span></span></span></span></span></span></span></span></span></span></span> </p>
+<p>sending each finite set to its free <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>Q</mi></mrow><annotation encoding="application/x-tex">Q</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.8777699999999999em;vertical-align:-0.19444em;"></span><span class="mord mathnormal">Q</span></span></span></span>-model.</p>
+<p>Now, if we left Kan extend </p>
+<p><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>j</mi><mo>∘</mo><mi>F</mi><mo>:</mo><mrow><mi mathvariant="normal">F</mi><mi mathvariant="normal">i</mi><mi mathvariant="normal">n</mi><mi mathvariant="normal">S</mi><mi mathvariant="normal">e</mi><mi mathvariant="normal">t</mi></mrow><mo>→</mo><mi>Q</mi><mrow><mi mathvariant="normal">M</mi><mi mathvariant="normal">o</mi><mi mathvariant="normal">d</mi></mrow></mrow><annotation encoding="application/x-tex">j \circ F : \mathrm{FinSet} \to Q \mathrm{Mod}</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.85396em;vertical-align:-0.19444em;"></span><span class="mord mathnormal" style="margin-right:0.05724em;">j</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">∘</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathnormal" style="margin-right:0.13889em;">F</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">:</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord"><span class="mord mathrm">F</span><span class="mord mathrm">i</span><span class="mord mathrm">n</span><span class="mord mathrm">S</span><span class="mord mathrm">e</span><span class="mord mathrm">t</span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span class="mord mathnormal">Q</span><span class="mord"><span class="mord mathrm">M</span><span class="mord mathrm">o</span><span class="mord mathrm">d</span></span></span></span></span> </p>
+<p>along the inclusion </p>
+<p><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>i</mi><mo>:</mo><mtext>FinSet</mtext><mo>→</mo><mrow><mi mathvariant="normal">S</mi><mi mathvariant="normal">e</mi><mi mathvariant="normal">t</mi></mrow></mrow><annotation encoding="application/x-tex">i : \textrm{FinSet} \to \mathrm{Set}</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.65952em;vertical-align:0em;"></span><span class="mord mathnormal">i</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">:</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord text"><span class="mord textrm">FinSet</span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord"><span class="mord mathrm">S</span><span class="mord mathrm">e</span><span class="mord mathrm">t</span></span></span></span></span></p>
+<p>I think we get the functor from <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">S</mi><mi mathvariant="normal">e</mi><mi mathvariant="normal">t</mi></mrow><annotation encoding="application/x-tex">\mathrm{Set}</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord"><span class="mord mathrm">S</span><span class="mord mathrm">e</span><span class="mord mathrm">t</span></span></span></span></span> to <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>Q</mi><mrow><mi mathvariant="normal">M</mi><mi mathvariant="normal">o</mi><mi mathvariant="normal">d</mi></mrow></mrow><annotation encoding="application/x-tex">Q \mathrm{Mod}</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span class="mord mathnormal">Q</span><span class="mord"><span class="mord mathrm">M</span><span class="mord mathrm">o</span><span class="mord mathrm">d</span></span></span></span></span> sending each set to the <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>Q</mi></mrow><annotation encoding="application/x-tex">Q</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.8777699999999999em;vertical-align:-0.19444em;"></span><span class="mord mathnormal">Q</span></span></span></span>-model it freely generates.</p>
+
+
+
+<a name="214130954"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/FinSet%20as%20walking%20commutative%20monoid/near/214130954" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> sarahzrf <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/FinSet.20as.20walking.20commutative.20monoid.html#214130954">(Oct 22 2020 at 00:20)</a>:</h4>
+<p>right, j ∘ F here is exactly the functor that picks out the monoid i mentioned</p>
+
+
+
+<a name="214130989"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/FinSet%20as%20walking%20commutative%20monoid/near/214130989" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/FinSet.20as.20walking.20commutative.20monoid.html#214130989">(Oct 22 2020 at 00:21)</a>:</h4>
+<p>Okay... so do you think you're describing the same thing I just did, but in a slicker way?  (E.g. I didn't offer proofs of some facts which may be obvious in your approach.)</p>
+
+
+
+<a name="214131016"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/FinSet%20as%20walking%20commutative%20monoid/near/214131016" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> sarahzrf <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/FinSet.20as.20walking.20commutative.20monoid.html#214131016">(Oct 22 2020 at 00:21)</a>:</h4>
+<p>yeah, because the reasoning i followed was to work out the same thing you just wrote, and then notice that it preserved finite coproducts :)</p>
+
+
+
+<a name="214131110"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/FinSet%20as%20walking%20commutative%20monoid/near/214131110" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/FinSet.20as.20walking.20commutative.20monoid.html#214131110">(Oct 22 2020 at 00:23)</a>:</h4>
+<p>Okay.  I think the "usual" approach to these things (like in Lawvere's thesis) doesn't use anything about FinSet being the Lawvere theory for commutative monoids, or about how every object in a category with finite coproducts gets to be a commutative monoid.</p>
+
+
+
+<a name="214131139"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/FinSet%20as%20walking%20commutative%20monoid/near/214131139" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> sarahzrf <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/FinSet.20as.20walking.20commutative.20monoid.html#214131139">(Oct 22 2020 at 00:23)</a>:</h4>
+<p>oh sure, i had to go from noticing that it preserved finite coproducts to going "oh huh i guess that means it's the functor corresponding to some monoid in the cocartesian monoidal structure"</p>
+
+
+
+<a name="214131189"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/FinSet%20as%20walking%20commutative%20monoid/near/214131189" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> sarahzrf <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/FinSet.20as.20walking.20commutative.20monoid.html#214131189">(Oct 22 2020 at 00:24)</a>:</h4>
+<p>i dont think this is necessarily a more natural way to think about it!</p>
+
+
+
+<a name="214131198"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/FinSet%20as%20walking%20commutative%20monoid/near/214131198" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> sarahzrf <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/FinSet.20as.20walking.20commutative.20monoid.html#214131198">(Oct 22 2020 at 00:24)</a>:</h4>
+<p>but it certainly connects the two constructions</p>
+
+
+
+<a name="214131239"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/FinSet%20as%20walking%20commutative%20monoid/near/214131239" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/FinSet.20as.20walking.20commutative.20monoid.html#214131239">(Oct 22 2020 at 00:25)</a>:</h4>
+<p>I like to annoy people by telling them the real reason finite sets are important is that FinSet is the free symmetric monoidal category on a commutative monoid object.   Maybe you've found more evidence that this is true!  <span aria-label="upside down" class="emoji emoji-1f643" role="img" title="upside down">:upside_down:</span></p>
+
+
+
+<a name="214131330"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/FinSet%20as%20walking%20commutative%20monoid/near/214131330" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> sarahzrf <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/FinSet.20as.20walking.20commutative.20monoid.html#214131330">(Oct 22 2020 at 00:26)</a>:</h4>
+<p>surely the real reason is that the subcategory of finite sets is where we get β from...?</p>
+
+
+
+<a name="214131335"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/FinSet%20as%20walking%20commutative%20monoid/near/214131335" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> sarahzrf <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/FinSet.20as.20walking.20commutative.20monoid.html#214131335">(Oct 22 2020 at 00:26)</a>:</h4>
+<p><span aria-label="upside down" class="emoji emoji-1f643" role="img" title="upside down">:upside_down:</span></p>
+
+
+
+<a name="214131341"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/FinSet%20as%20walking%20commutative%20monoid/near/214131341" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/FinSet.20as.20walking.20commutative.20monoid.html#214131341">(Oct 22 2020 at 00:27)</a>:</h4>
+<p>Let's fight about it.</p>
+
+
+
+<a name="214131546"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/FinSet%20as%20walking%20commutative%20monoid/near/214131546" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Dan Doel <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/FinSet.20as.20walking.20commutative.20monoid.html#214131546">(Oct 22 2020 at 00:30)</a>:</h4>
+<p>I thought it was important because it's the opposite of the free Cartesian monoidal category on one object.</p>
+
+
+
+<a name="214131568"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/FinSet%20as%20walking%20commutative%20monoid/near/214131568" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> sarahzrf <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/FinSet.20as.20walking.20commutative.20monoid.html#214131568">(Oct 22 2020 at 00:30)</a>:</h4>
+<p>so you're siding with john?</p>
+
+
+
+<a name="214131579"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/FinSet%20as%20walking%20commutative%20monoid/near/214131579" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Dan Doel <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/FinSet.20as.20walking.20commutative.20monoid.html#214131579">(Oct 22 2020 at 00:31)</a>:</h4>
+<p>Oh, am I?</p>
+
+
+
+<a name="214131585"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/FinSet%20as%20walking%20commutative%20monoid/near/214131585" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> sarahzrf <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/FinSet.20as.20walking.20commutative.20monoid.html#214131585">(Oct 22 2020 at 00:31)</a>:</h4>
+<p>possibly</p>
+
+
+
+<a name="214131611"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/FinSet%20as%20walking%20commutative%20monoid/near/214131611" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> sarahzrf <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/FinSet.20as.20walking.20commutative.20monoid.html#214131611">(Oct 22 2020 at 00:31)</a>:</h4>
+<p>youd have to give me a second to decide whether those are the same intension</p>
+
+
+
+<a name="214131658"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/FinSet%20as%20walking%20commutative%20monoid/near/214131658" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Dan Doel <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/FinSet.20as.20walking.20commutative.20monoid.html#214131658">(Oct 22 2020 at 00:32)</a>:</h4>
+<p>It sounds slightly different, although they're important for similar reasons.</p>
+
+
+
+<a name="214131660"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/FinSet%20as%20walking%20commutative%20monoid/near/214131660" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/FinSet.20as.20walking.20commutative.20monoid.html#214131660">(Oct 22 2020 at 00:32)</a>:</h4>
+<p>It's basically the same thing...</p>
+
+
+
+<a name="214131689"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/FinSet%20as%20walking%20commutative%20monoid/near/214131689" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Dan Doel <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/FinSet.20as.20walking.20commutative.20monoid.html#214131689">(Oct 22 2020 at 00:32)</a>:</h4>
+<p>Because it's de Bruijn indexing.</p>
+
+
+
+<a name="214131821"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/FinSet%20as%20walking%20commutative%20monoid/near/214131821" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/FinSet.20as.20walking.20commutative.20monoid.html#214131821">(Oct 22 2020 at 00:34)</a>:</h4>
+<p>In a cocartesian category every object becomes a commutative monoid in a natural way - natural in the technical sense.</p>
+<p>Starting from a symmetric monoidal category, we can form its category of commutative monoid objects, and this is a cocartesian category.</p>
+<p>So, it's not surprising that the free cocartesian category on one object is the free symmetric monoidal category on a commutative monoid object.</p>
+
+
+
+<a name="214131872"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/FinSet%20as%20walking%20commutative%20monoid/near/214131872" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Dan Doel <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/FinSet.20as.20walking.20commutative.20monoid.html#214131872">(Oct 22 2020 at 00:35)</a>:</h4>
+<p>Oh okay.</p>
+
+
+
+<a name="214131883"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/FinSet%20as%20walking%20commutative%20monoid/near/214131883" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/FinSet.20as.20walking.20commutative.20monoid.html#214131883">(Oct 22 2020 at 00:35)</a>:</h4>
+<p>The second description sounds more complicated, but it's nice because the free symmetric monoidal category on a <em>plain old</em> object is the <em>groupoid</em> of finite sets and bijections.</p>
+
+
+
+<a name="214131954"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/FinSet%20as%20walking%20commutative%20monoid/near/214131954" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> sarahzrf <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/FinSet.20as.20walking.20commutative.20monoid.html#214131954">(Oct 22 2020 at 00:36)</a>:</h4>
+<p>/me mumbles something about the schanuel topos</p>
+
+
+
+<a name="214131984"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/FinSet%20as%20walking%20commutative%20monoid/near/214131984" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Dan Doel <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/FinSet.20as.20walking.20commutative.20monoid.html#214131984">(Oct 22 2020 at 00:37)</a>:</h4>
+<p>That's too fancy for starting out.</p>
+
+
+
+<a name="214132069"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/FinSet%20as%20walking%20commutative%20monoid/near/214132069" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> sarahzrf <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/FinSet.20as.20walking.20commutative.20monoid.html#214132069">(Oct 22 2020 at 00:38)</a>:</h4>
+<p>dont you do pl</p>
+
+
+
+<a name="214132072"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/FinSet%20as%20walking%20commutative%20monoid/near/214132072" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> sarahzrf <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/FinSet.20as.20walking.20commutative.20monoid.html#214132072">(Oct 22 2020 at 00:38)</a>:</h4>
+<p>you should like the schanuel topos</p>
+
+
+
+<a name="214132104"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/FinSet%20as%20walking%20commutative%20monoid/near/214132104" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Dan Doel <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/FinSet.20as.20walking.20commutative.20monoid.html#214132104">(Oct 22 2020 at 00:39)</a>:</h4>
+<p>I do. But you think about FinSet first before that.</p>
+
+
+
+<a name="214132147"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/FinSet%20as%20walking%20commutative%20monoid/near/214132147" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> sarahzrf <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/FinSet.20as.20walking.20commutative.20monoid.html#214132147">(Oct 22 2020 at 00:40)</a>:</h4>
+<p>fair enough!</p>
+
+
+
+<a name="214132179"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/FinSet%20as%20walking%20commutative%20monoid/near/214132179" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Dan Doel <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/FinSet.20as.20walking.20commutative.20monoid.html#214132179">(Oct 22 2020 at 00:40)</a>:</h4>
+<p>Or plain FinSet.</p>
+
+
+
+<a name="214133891"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/FinSet%20as%20walking%20commutative%20monoid/near/214133891" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Dan Doel <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/FinSet.20as.20walking.20commutative.20monoid.html#214133891">(Oct 22 2020 at 01:10)</a>:</h4>
+<p>Eventually you can get really fancy with co de Bruijn, which uses semisimplicial types, I think.</p>
+
+
+
+<a name="214134753"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/FinSet%20as%20walking%20commutative%20monoid/near/214134753" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> sarahzrf <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/FinSet.20as.20walking.20commutative.20monoid.html#214134753">(Oct 22 2020 at 01:29)</a>:</h4>
+<p>ooo elaborate</p>
+
+
+
+<a name="214134815"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/FinSet%20as%20walking%20commutative%20monoid/near/214134815" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> sarahzrf <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/FinSet.20as.20walking.20commutative.20monoid.html#214134815">(Oct 22 2020 at 01:30)</a>:</h4>
+<p>oh wait</p>
+
+
+
+<a name="214134827"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/FinSet%20as%20walking%20commutative%20monoid/near/214134827" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> sarahzrf <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/FinSet.20as.20walking.20commutative.20monoid.html#214134827">(Oct 22 2020 at 01:30)</a>:</h4>
+<p>that sounds suspiciously similar to PSh(FinSet_mono^op)</p>
+
+
+
+<a name="214134833"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/FinSet%20as%20walking%20commutative%20monoid/near/214134833" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> sarahzrf <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/FinSet.20as.20walking.20commutative.20monoid.html#214134833">(Oct 22 2020 at 01:30)</a>:</h4>
+<p>what does orderedness give you?</p>
+
+
+
+<a name="214134837"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/FinSet%20as%20walking%20commutative%20monoid/near/214134837" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> sarahzrf <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/FinSet.20as.20walking.20commutative.20monoid.html#214134837">(Oct 22 2020 at 01:30)</a>:</h4>
+<p>dont you want to be able to permute names</p>
+
+
+
+<a name="214134866"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/FinSet%20as%20walking%20commutative%20monoid/near/214134866" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Dan Doel <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/FinSet.20as.20walking.20commutative.20monoid.html#214134866">(Oct 22 2020 at 01:31)</a>:</h4>
+<p>No. Permuting names just gives you redundant representations of the same thing.</p>
+
+
+
+<a name="214134952"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/FinSet%20as%20walking%20commutative%20monoid/near/214134952" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Dan Doel <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/FinSet.20as.20walking.20commutative.20monoid.html#214134952">(Oct 22 2020 at 01:33)</a>:</h4>
+<p>I mean, it is very similar to <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mi>i</mi><mi>n</mi><mi>S</mi><mi>e</mi><msubsup><mi>t</mi><mrow><mi>m</mi><mi>o</mi><mi>n</mi><mi>o</mi></mrow><mrow><mi>o</mi><mi>p</mi></mrow></msubsup></mrow><annotation encoding="application/x-tex">FinSet_{mono}^{op}</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.93033em;vertical-align:-0.247em;"></span><span class="mord mathnormal" style="margin-right:0.13889em;">F</span><span class="mord mathnormal">i</span><span class="mord mathnormal">n</span><span class="mord mathnormal" style="margin-right:0.05764em;">S</span><span class="mord mathnormal">e</span><span class="mord"><span class="mord mathnormal">t</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.664392em;"><span style="top:-2.4530000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">m</span><span class="mord mathnormal mtight">o</span><span class="mord mathnormal mtight">n</span><span class="mord mathnormal mtight">o</span></span></span></span><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">o</span><span class="mord mathnormal mtight">p</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.247em;"><span></span></span></span></span></span></span></span></span></span>, clearly. But more canonical.</p>
+
+
+
+<a name="214135032"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/FinSet%20as%20walking%20commutative%20monoid/near/214135032" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> sarahzrf <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/FinSet.20as.20walking.20commutative.20monoid.html#214135032">(Oct 22 2020 at 01:35)</a>:</h4>
+<p>what does it classify?</p>
+
+
+
+<a name="214135042"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/FinSet%20as%20walking%20commutative%20monoid/near/214135042" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> sarahzrf <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/FinSet.20as.20walking.20commutative.20monoid.html#214135042">(Oct 22 2020 at 01:35)</a>:</h4>
+<p>the topos i mean</p>
+
+
+
+<a name="214135048"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/FinSet%20as%20walking%20commutative%20monoid/near/214135048" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Dan Doel <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/FinSet.20as.20walking.20commutative.20monoid.html#214135048">(Oct 22 2020 at 01:35)</a>:</h4>
+<p>Anyhow, the idea is that instead of keeping track of variables in scope and then saying which one you use at a leaf, you keep track of which variables are used lower in the tree, and progressively thin things out as you go down. Then at the leaf you just say 'variable', because only one is still in scope.</p>
+
+
+
+<a name="214135110"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/FinSet%20as%20walking%20commutative%20monoid/near/214135110" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Dan Doel <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/FinSet.20as.20walking.20commutative.20monoid.html#214135110">(Oct 22 2020 at 01:36)</a>:</h4>
+<p>I don't know what it classifies. I just know it's the structure used. Finite linear orders and monotone injections.</p>
+
+
+
+<a name="214135123"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/FinSet%20as%20walking%20commutative%20monoid/near/214135123" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Dan Doel <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/FinSet.20as.20walking.20commutative.20monoid.html#214135123">(Oct 22 2020 at 01:37)</a>:</h4>
+<p>Apparently homotopy folks care about them, too, though, so they must be important.</p>
+
+
+
+<a name="214135268"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/FinSet%20as%20walking%20commutative%20monoid/near/214135268" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> sarahzrf <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/FinSet.20as.20walking.20commutative.20monoid.html#214135268">(Oct 22 2020 at 01:40)</a>:</h4>
+<p>oh i bet it classifies something like objects w/ decidable equality equipped w/ linear orders</p>
+
+
+
+<a name="214135277"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/FinSet%20as%20walking%20commutative%20monoid/near/214135277" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> sarahzrf <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/FinSet.20as.20walking.20commutative.20monoid.html#214135277">(Oct 22 2020 at 01:40)</a>:</h4>
+<p>or maybe the linear order is decidable too</p>
+
+
+
+<a name="214135427"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/FinSet%20as%20walking%20commutative%20monoid/near/214135427" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> sarahzrf <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/FinSet.20as.20walking.20commutative.20monoid.html#214135427">(Oct 22 2020 at 01:44)</a>:</h4>
+<p>anyway yeah i buy the thing abt subtrees/leaves</p>
+
+
+
+<a name="214135504"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/FinSet%20as%20walking%20commutative%20monoid/near/214135504" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> sarahzrf <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/FinSet.20as.20walking.20commutative.20monoid.html#214135504">(Oct 22 2020 at 01:45)</a>:</h4>
+<p>seems like a pain to have a non-symmetric monoidal structure tho?</p>
+
+
+
+<a name="214135549"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/FinSet%20as%20walking%20commutative%20monoid/near/214135549" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> sarahzrf <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/FinSet.20as.20walking.20commutative.20monoid.html#214135549">(Oct 22 2020 at 01:46)</a>:</h4>
+<p>well okay i guess thats sort of the point?</p>
+
+
+
+<a name="214135950"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/FinSet%20as%20walking%20commutative%20monoid/near/214135950" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Dan Doel <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/FinSet.20as.20walking.20commutative.20monoid.html#214135950">(Oct 22 2020 at 01:55)</a>:</h4>
+<p>The point is to have a unique representation for α-equivalent terms, because that's nice on a computer.</p>
+
+
+
+<a name="214135965"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/FinSet%20as%20walking%20commutative%20monoid/near/214135965" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Dan Doel <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/FinSet.20as.20walking.20commutative.20monoid.html#214135965">(Oct 22 2020 at 01:55)</a>:</h4>
+<p>Just check equality, not equality up to n! possible different representations.</p>
+
+
+
+<a name="214136491"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/FinSet%20as%20walking%20commutative%20monoid/near/214136491" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Dan Doel <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/FinSet.20as.20walking.20commutative.20monoid.html#214136491">(Oct 22 2020 at 02:04)</a>:</h4>
+<p>If you forget about that part, you can probably do the same thing in the Schanuel topos, or species.</p>
+
+
+
+<a name="214155938"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/FinSet%20as%20walking%20commutative%20monoid/near/214155938" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> [Mod] Morgan Rogers <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/FinSet.20as.20walking.20commutative.20monoid.html#214155938">(Oct 22 2020 at 08:12)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="277270">Dan Doel</span> <a href="#narrow/stream/229136-theory.3A-category.20theory/topic/FinSet.20as.20walking.20commutative.20monoid/near/214133891">said</a>:</p>
+<blockquote>
+<p>Eventually you can get really fancy with co de Bruijn, which uses semisimplicial types, I think.</p>
+</blockquote>
+<p>I found a paper by Conor McBride which mentions a certain <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mi mathvariant="normal">Δ</mi><mo>+</mo><mi>K</mi></msubsup></mrow><annotation encoding="application/x-tex">\Delta_+^K</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:1.146662em;vertical-align:-0.305331em;"></span><span class="mord"><span class="mord">Δ</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.8413309999999999em;"><span style="top:-2.4530000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mbin mtight">+</span></span></span><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight" style="margin-right:0.07153em;">K</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.305331em;"><span></span></span></span></span></span></span></span></span></span> category of semisimplicial types. Is that what you're referring to here?</p>
+
+
+
+<a name="214195321"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/FinSet%20as%20walking%20commutative%20monoid/near/214195321" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Dan Doel <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/FinSet.20as.20walking.20commutative.20monoid.html#214195321">(Oct 22 2020 at 14:32)</a>:</h4>
+<p>Yes.</p>
+
+
+
+<a name="214196713"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/FinSet%20as%20walking%20commutative%20monoid/near/214196713" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Cole Comfort <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/FinSet.20as.20walking.20commutative.20monoid.html#214196713">(Oct 22 2020 at 14:41)</a>:</h4>
+<p>I don't know if this is what you guys are talking about, but in the <a href="http://iml.univ-mrs.fr/~lafont/pub/circuits.pdf">seminar paper of Lafont</a>, he shows the (probably folklore) result that the free pro of a monoid represents finite ordinals and monotone maps under the coproduct; and similarly, the free prop of a commutative monoid represents finite ordinals and functions under the coproduct.  Moreover, the free pro(p) on the unit of the monoid are the monics, and the free pro(p) for the multiplication of the monoid are the epics.  And the unit equation is just the epi-mono factorization.</p>
+
+
+
+<a name="214211545"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/FinSet%20as%20walking%20commutative%20monoid/near/214211545" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/FinSet.20as.20walking.20commutative.20monoid.html#214211545">(Oct 22 2020 at 16:24)</a>:</h4>
+<p>This is a famous folklore result, but it's really good to find locations of actual proofs of these results!   I'm currently typing some into the nLab, so thanks!</p>
+<p>Here is what I wrote about descriptions of FinSet, including FinSet as the prop for commutative monoids:</p>
+<ul>
+<li><a href="https://ncatlab.org/nlab/show/FinSet#universal_properties">FinSet - universal properties</a>.</li>
+</ul>
+<p>I'll add the ref to Lafont's paper.</p>
+
+
+
+<a name="214214722"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/FinSet%20as%20walking%20commutative%20monoid/near/214214722" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Cole Comfort <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/FinSet.20as.20walking.20commutative.20monoid.html#214214722">(Oct 22 2020 at 16:47)</a>:</h4>
+<p>I think Lafont's paper is worth mentioning, because he extends this representation to more interesting categories, being motivated by these more simple folklore results.</p>
+<p>I am working on a dictionary for different props and their semantics, because these things quickly build up in terms of structure/computational expressiveness in a very modular way. From commutative monoids:FinSet, special commutative frobenius algebras:CoSpan(FinSet),  commutative bialgebras:Span(FinSet), then quite quickly you get interacting hopf algebras:Linear relations and even more.  All of these results are contained in different papers, and when you put things all together, one realizes that there are gaps in the literature!</p>
+
+
+
+<a name="214215032"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/FinSet%20as%20walking%20commutative%20monoid/near/214215032" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/FinSet.20as.20walking.20commutative.20monoid.html#214215032">(Oct 22 2020 at 16:49)</a>:</h4>
+<p>I consider myself sort of an expert on all these props, and I've decided I had better enter information about them into the nLab before I forget all this stuff.   I also plan to write a paper on a bunch of them.  So I have to ask: how is your dictionary coming along, how will it be organized, and how it will be accessible?  Maybe we could cooperate a bit.</p>
+
+
+
+<a name="214218785"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/FinSet%20as%20walking%20commutative%20monoid/near/214218785" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Cole Comfort <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/FinSet.20as.20walking.20commutative.20monoid.html#214218785">(Oct 22 2020 at 17:18)</a>:</h4>
+<p><span class="user-mention" data-user-id="275920">@John Baez</span> </p>
+<p>We have organized the paper into various different sections (with the help of <span class="user-mention" data-user-id="295673">@Aleks Kissinger</span> ), although it is  nowhere near finished, with most of the proofs not being worked out fully.  For each section, we consider a semantic prop and its syntactic presentation and then  consider the epimorphisms, monomorphisms, as well as things like the partial isomorphisms (spans of monomorphisms), as well as the spans, cospans, relations and corelations---building things up à-la composing props style of Lack, using distributive laws and pushouts and stuff to build larger props.  The idea is to build up the presentations from large to small, so that at each step, only a few new equations are added.</p>
+<p>For the different base categories, we start with <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mrow><mi mathvariant="sans-serif">F</mi><mi mathvariant="sans-serif">i</mi><mi mathvariant="sans-serif">n</mi><mi mathvariant="sans-serif">O</mi><mi mathvariant="sans-serif">r</mi><mi mathvariant="sans-serif">d</mi></mrow><mo separator="true">,</mo><mo>+</mo><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">({\sf FinOrd},+)</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord"><span class="mord"><span class="mord mathsf">F</span><span class="mord mathsf">i</span><span class="mord mathsf">n</span><span class="mord mathsf">O</span><span class="mord mathsf" style="margin-right:0.01389em;">r</span><span class="mord mathsf">d</span></span></span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord">+</span><span class="mclose">)</span></span></span></span>,  then go to <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mrow><mi mathvariant="sans-serif">M</mi><mi mathvariant="sans-serif">a</mi><mi mathvariant="sans-serif">t</mi></mrow><mo stretchy="false">(</mo><mi>k</mi><mo stretchy="false">)</mo><mo separator="true">,</mo><mo>+</mo><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">({\sf Mat}(k),+)</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord"><span class="mord"><span class="mord mathsf">M</span><span class="mord mathsf">a</span><span class="mord mathsf">t</span></span></span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.03148em;">k</span><span class="mclose">)</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord">+</span><span class="mclose">)</span></span></span></span>, and then <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mrow><mi mathvariant="sans-serif">A</mi><mi mathvariant="sans-serif">f</mi><mi mathvariant="sans-serif">f</mi><mi mathvariant="sans-serif">M</mi><mi mathvariant="sans-serif">a</mi><mi mathvariant="sans-serif">t</mi></mrow><mo stretchy="false">(</mo><mi>k</mi><mo stretchy="false">)</mo><mo separator="true">,</mo><mo>+</mo><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">({\sf AffMat}(k),+)</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord"><span class="mord"><span class="mord mathsf">A</span><span class="mord mathsf" style="margin-right:0.06944em;">f</span><span class="mord mathsf" style="margin-right:0.06944em;">f</span><span class="mord mathsf">M</span><span class="mord mathsf">a</span><span class="mord mathsf">t</span></span></span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.03148em;">k</span><span class="mclose">)</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord">+</span><span class="mclose">)</span></span></span></span>, and then <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><msub><mrow><mi mathvariant="sans-serif">F</mi><mi mathvariant="sans-serif">i</mi><mi mathvariant="sans-serif">n</mi><mi mathvariant="sans-serif">O</mi><mi mathvariant="sans-serif">r</mi><mi mathvariant="sans-serif">d</mi></mrow><mi>n</mi></msub><mo separator="true">,</mo><mo>×</mo><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">({\sf FinOrd}_n,\times)</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord"><span class="mord"><span class="mord"><span class="mord mathsf">F</span><span class="mord mathsf">i</span><span class="mord mathsf">n</span><span class="mord mathsf">O</span><span class="mord mathsf" style="margin-right:0.01389em;">r</span><span class="mord mathsf">d</span></span></span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.151392em;"><span style="top:-2.5500000000000003em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">n</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord">×</span><span class="mclose">)</span></span></span></span>, all of these models are strictly included in each other.</p>
+<p>By <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi mathvariant="sans-serif">A</mi><mi mathvariant="sans-serif">f</mi><mi mathvariant="sans-serif">f</mi><mi mathvariant="sans-serif">M</mi><mi mathvariant="sans-serif">a</mi><mi mathvariant="sans-serif">t</mi></mrow><mo stretchy="false">(</mo><mi>k</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">{\sf AffMat}(k)</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord"><span class="mord"><span class="mord mathsf">A</span><span class="mord mathsf" style="margin-right:0.06944em;">f</span><span class="mord mathsf" style="margin-right:0.06944em;">f</span><span class="mord mathsf">M</span><span class="mord mathsf">a</span><span class="mord mathsf">t</span></span></span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.03148em;">k</span><span class="mclose">)</span></span></span></span>, I mean affine matrices over a field <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>k</mi></mrow><annotation encoding="application/x-tex">k</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.69444em;vertical-align:0em;"></span><span class="mord mathnormal" style="margin-right:0.03148em;">k</span></span></span></span>.  And by <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mrow><mi mathvariant="sans-serif">F</mi><mi mathvariant="sans-serif">i</mi><mi mathvariant="sans-serif">n</mi><mi mathvariant="sans-serif">O</mi><mi mathvariant="sans-serif">r</mi><mi mathvariant="sans-serif">d</mi></mrow><mi>n</mi></msub></mrow><annotation encoding="application/x-tex">{\sf FinOrd}_n</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.84444em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord"><span class="mord"><span class="mord mathsf">F</span><span class="mord mathsf">i</span><span class="mord mathsf">n</span><span class="mord mathsf">O</span><span class="mord mathsf" style="margin-right:0.01389em;">r</span><span class="mord mathsf">d</span></span></span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.151392em;"><span style="top:-2.5500000000000003em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">n</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span>, I mean the full subcategory of <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mrow><mi mathvariant="sans-serif">F</mi><mi mathvariant="sans-serif">i</mi><mi mathvariant="sans-serif">n</mi><mi mathvariant="sans-serif">O</mi><mi mathvariant="sans-serif">r</mi><mi mathvariant="sans-serif">d</mi></mrow><mi>n</mi></msub></mrow><annotation encoding="application/x-tex">{\sf FinOrd}_n</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.84444em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord"><span class="mord"><span class="mord mathsf">F</span><span class="mord mathsf">i</span><span class="mord mathsf">n</span><span class="mord mathsf">O</span><span class="mord mathsf" style="margin-right:0.01389em;">r</span><span class="mord mathsf">d</span></span></span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.151392em;"><span style="top:-2.5500000000000003em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">n</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span> with objects generated by <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>n</mi><mi>m</mi></msup></mrow><annotation encoding="application/x-tex">n^m</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.664392em;vertical-align:0em;"></span><span class="mord"><span class="mord mathnormal">n</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.664392em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">m</span></span></span></span></span></span></span></span></span></span></span> for <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>m</mi><mo>∈</mo><mi mathvariant="double-struck">N</mi></mrow><annotation encoding="application/x-tex"> m\in \mathbb N</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.5782em;vertical-align:-0.0391em;"></span><span class="mord mathnormal">m</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">∈</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.68889em;vertical-align:0em;"></span><span class="mord mathbb">N</span></span></span></span>.</p>
+<p>There are some technical problems, like the fact that <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mrow><mi mathvariant="sans-serif">F</mi><mi mathvariant="sans-serif">i</mi><mi mathvariant="sans-serif">n</mi><mi mathvariant="sans-serif">O</mi><mi mathvariant="sans-serif">r</mi><mi mathvariant="sans-serif">d</mi></mrow><mi>k</mi></msub></mrow><annotation encoding="application/x-tex">{\sf FinOrd}_k</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.84444em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord"><span class="mord"><span class="mord mathsf">F</span><span class="mord mathsf">i</span><span class="mord mathsf">n</span><span class="mord mathsf">O</span><span class="mord mathsf" style="margin-right:0.01389em;">r</span><span class="mord mathsf">d</span></span></span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.33610799999999996em;"><span style="top:-2.5500000000000003em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight" style="margin-right:0.03148em;">k</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span> doesn't actually have pullbacks, but these inconsistencies between models can be mostly resolved.</p>
+<p>The motivation is from the ZX-calculus side of things, so so far, most of the paper I have only managed to work out fixing <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>k</mi><mo>=</mo><msub><mi mathvariant="double-struck">F</mi><mn>2</mn></msub></mrow><annotation encoding="application/x-tex"> k = \mathbb{F}_2</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.69444em;vertical-align:0em;"></span><span class="mord mathnormal" style="margin-right:0.03148em;">k</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.83889em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord"><span class="mord mathbb">F</span></span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span> and <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>=</mo><mn>2</mn></mrow><annotation encoding="application/x-tex">n=2</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathnormal">n</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">2</span></span></span></span>, but I am sure that these things will generalize nicely.  But this is not a limiting factor, just where my intuition is coming from.  And many of the gaps come from the fact that lots of the things are only worked out in the "qubit" case.  But the case of <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mrow><mi mathvariant="sans-serif">F</mi><mi mathvariant="sans-serif">i</mi><mi mathvariant="sans-serif">n</mi><mi mathvariant="sans-serif">O</mi><mi mathvariant="sans-serif">r</mi><mi mathvariant="sans-serif">d</mi></mrow><mo separator="true">,</mo><mo>+</mo><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">({\sf FinOrd},+)</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord"><span class="mord"><span class="mord mathsf">F</span><span class="mord mathsf">i</span><span class="mord mathsf">n</span><span class="mord mathsf">O</span><span class="mord mathsf" style="margin-right:0.01389em;">r</span><span class="mord mathsf">d</span></span></span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord">+</span><span class="mclose">)</span></span></span></span>,  and <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mrow><mi mathvariant="sans-serif">M</mi><mi mathvariant="sans-serif">a</mi><mi mathvariant="sans-serif">t</mi></mrow><mo stretchy="false">(</mo><mi>k</mi><mo stretchy="false">)</mo><mo separator="true">,</mo><mo>+</mo><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">({\sf Mat}(k),+)</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord"><span class="mord"><span class="mord mathsf">M</span><span class="mord mathsf">a</span><span class="mord mathsf">t</span></span></span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.03148em;">k</span><span class="mclose">)</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord">+</span><span class="mclose">)</span></span></span></span> are mostly already in the literature.</p>
+<p>Also, we intend to discuss the relation to Lagrangian relations, which I know you are very much farmiliar with, because these when these props get more complicated, they quickly start to resemble things in physics.  And of course, this is closely related to the stabilizer fragment of the ZX-calculus,</p>
+<p>It will be great if we could cooperate, because, I think this is a well-needed resource.  As well as finding more props and their semantics that fit into this picture.</p>
+<p>I don't know where this should go, because this started as an informal talk and has bloated into a massive dictionary.</p>
+
+
+
+<a name="214222088"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/FinSet%20as%20walking%20commutative%20monoid/near/214222088" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nathanael Arkor <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/FinSet.20as.20walking.20commutative.20monoid.html#214222088">(Oct 22 2020 at 17:43)</a>:</h4>
+<p>This sounds very interesting! I'd love to hear a bit more about it. (I also find it frustrating that all the details are spread throughout the literature, and that's true even just for Lawvere theories.)</p>
+
+
+
+<a name="214222168"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/FinSet%20as%20walking%20commutative%20monoid/near/214222168" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nathanael Arkor <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/FinSet.20as.20walking.20commutative.20monoid.html#214222168">(Oct 22 2020 at 17:44)</a>:</h4>
+<p>By "syntax", do you mean string diagrams, or term calculi/type theories?</p>
+
+
+
+<a name="214222176"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/FinSet%20as%20walking%20commutative%20monoid/near/214222176" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nathanael Arkor <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/FinSet.20as.20walking.20commutative.20monoid.html#214222176">(Oct 22 2020 at 17:44)</a>:</h4>
+<p>(Or both.)</p>
+
+
+
+<a name="214224016"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/FinSet%20as%20walking%20commutative%20monoid/near/214224016" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Cole Comfort <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/FinSet.20as.20walking.20commutative.20monoid.html#214224016">(Oct 22 2020 at 17:56)</a>:</h4>
+<p><span class="user-mention" data-user-id="276092">@Nathanael Arkor</span> <br>
+Yes, all of the "base" categories are Lawvere theories, but that is the easy part.</p>
+<p>By syntax I mean props presented in terms of generators and relations... and the way this is written up is with string diagrams for aesthetic reasons.</p>
+
+
+
+<a name="214224415"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/FinSet%20as%20walking%20commutative%20monoid/near/214224415" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Cole Comfort <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/FinSet.20as.20walking.20commutative.20monoid.html#214224415">(Oct 22 2020 at 17:59)</a>:</h4>
+<p><span class="user-mention" data-user-id="275920">@John Baez</span>  I am curious which props you had in mind, and if the ones that we are writing up are largely the same.</p>
+
+
+
+<a name="214228329"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/FinSet%20as%20walking%20commutative%20monoid/near/214228329" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nathanael Arkor <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/FinSet.20as.20walking.20commutative.20monoid.html#214228329">(Oct 22 2020 at 18:27)</a>:</h4>
+<p>By Lawvere theory, I really meant the theory of Lawvere theories, as one very particular kind of PROP. The literature is spread out enough for that kind, so if you're considering many more varieties, I can imagine there are many spots to fill!</p>
+
+
+
+<a name="214229157"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/FinSet%20as%20walking%20commutative%20monoid/near/214229157" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Cole Comfort <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/FinSet.20as.20walking.20commutative.20monoid.html#214229157">(Oct 22 2020 at 18:32)</a>:</h4>
+<p>The motivation is documenting all the syntax and semantics of various props that arise as categories of spans and relations, pretty much.  There are many more props out there, but obviously one can't present them all in one place.</p>
+
+
+
+<a name="214229633"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/FinSet%20as%20walking%20commutative%20monoid/near/214229633" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Cole Comfort <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/FinSet.20as.20walking.20commutative.20monoid.html#214229633">(Oct 22 2020 at 18:36)</a>:</h4>
+<p>Like much of the work on the ZX calculus is closely related to such categories, but the axioms had been discovered in a more-or-less ad hoc way.  But there are "canonical" presentations of the different fragments of the ZX calculus, where the axioms arise in very nice ways.</p>
+
+
+
+<a name="214229955"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/FinSet%20as%20walking%20commutative%20monoid/near/214229955" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Cole Comfort <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/FinSet.20as.20walking.20commutative.20monoid.html#214229955">(Oct 22 2020 at 18:38)</a>:</h4>
+<p>For example, the phase-free fragment of the ZX calculus arises as spans of matrices over <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi mathvariant="double-struck">F</mi><mn>2</mn></msub></mrow><annotation encoding="application/x-tex"> \mathbb{F}_2</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.83889em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord"><span class="mord mathbb">F</span></span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span>, which is a special case of a general presentation of such props in <span class="user-mention" data-user-id="351836">@Fabio Zanasi</span>'s thesis <a href="https://arxiv.org/abs/1805.03032">https://arxiv.org/abs/1805.03032</a></p>
+
+
+
+<a name="214230537"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/FinSet%20as%20walking%20commutative%20monoid/near/214230537" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Cole Comfort <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/FinSet.20as.20walking.20commutative.20monoid.html#214230537">(Oct 22 2020 at 18:43)</a>:</h4>
+<p>And the natural number H-box fragment of the ZH calculus arises as the full subcategory of spans of of finite ordinals and functions where the objects are generated by <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mn>2</mn><mi>n</mi></msup></mrow><annotation encoding="application/x-tex"> 2^n</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.664392em;vertical-align:0em;"></span><span class="mord"><span class="mord">2</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.664392em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">n</span></span></span></span></span></span></span></span></span></span></span> for <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>∈</mo><mi mathvariant="double-struck">N</mi></mrow><annotation encoding="application/x-tex">n \in \mathbb N</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.5782em;vertical-align:-0.0391em;"></span><span class="mord mathnormal">n</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">∈</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.68889em;vertical-align:0em;"></span><span class="mord mathbb">N</span></span></span></span> <a href="https://arxiv.org/abs/2004.05287">https://arxiv.org/abs/2004.05287</a></p>
+
+
+
+<a name="214232599"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/FinSet%20as%20walking%20commutative%20monoid/near/214232599" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nathanael Arkor <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/FinSet.20as.20walking.20commutative.20monoid.html#214232599">(Oct 22 2020 at 18:58)</a>:</h4>
+<p>I'm biased, but having a type theoretic presentation alongside the string diagrams would be very helpful too :)</p>
+
+
+
+<a name="214232886"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/FinSet%20as%20walking%20commutative%20monoid/near/214232886" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nathanael Arkor <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/FinSet.20as.20walking.20commutative.20monoid.html#214232886">(Oct 22 2020 at 19:00)</a>:</h4>
+<p>I think they both give helpful perspectives, which can be non-obvious just by seeing one.</p>
+
+
+
+<a name="214246262"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/FinSet%20as%20walking%20commutative%20monoid/near/214246262" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Fabio Zanasi <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/FinSet.20as.20walking.20commutative.20monoid.html#214246262">(Oct 22 2020 at 20:49)</a>:</h4>
+<p>Indeed as Cole says, in my PhD thesis I documented lots of these syntax -&gt; semantics results for Props, including various that were folklore. So it's probably a good source to look them up. </p>
+<p>Other places where there are others being documented (mostly around spans and cospans) are:</p>
+<ul>
+<li>Gadducci and Bruni - Some algebraic laws of spans (2003) &lt;--- lots of seminal results here!</li>
+<li>Lack - Composing props (2004)</li>
+<li>Me - The algebra of partial equivalence relations (2016)</li>
+</ul>
+
+
+
+<a name="214246651"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/FinSet%20as%20walking%20commutative%20monoid/near/214246651" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Fabio Zanasi <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/FinSet.20as.20walking.20commutative.20monoid.html#214246651">(Oct 22 2020 at 20:53)</a>:</h4>
+<p>Also, <span class="user-mention" data-user-id="275920">@John Baez</span> As you are interested in AffMat, it may be worth checking out this recent paper, which axiomatises Affine linear relations (and so including affine matrices):</p>
+<ul>
+<li>Bonchi et al. - Graphical Affine Algebra (2019) (available here: <a href="http://www.zanasi.com/fabio/files/paperLICS19.pdf">http://www.zanasi.com/fabio/files/paperLICS19.pdf</a>)</li>
+</ul>
+
+
+
+<a name="214247200"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/FinSet%20as%20walking%20commutative%20monoid/near/214247200" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/FinSet.20as.20walking.20commutative.20monoid.html#214247200">(Oct 22 2020 at 20:57)</a>:</h4>
+<p>Cole wrote:</p>
+<blockquote>
+<p>this started as an informal talk and has bloated into a massive dictionary.</p>
+</blockquote>
+<p>How big so far?</p>
+
+
+
+<a name="214247347"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/FinSet%20as%20walking%20commutative%20monoid/near/214247347" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/FinSet.20as.20walking.20commutative.20monoid.html#214247347">(Oct 22 2020 at 20:58)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="277391">Cole Comfort</span> <a href="#narrow/stream/229136-theory.3A-category.20theory/topic/FinSet.20as.20walking.20commutative.20monoid/near/214224415">said</a>:</p>
+<blockquote>
+<p><span class="user-mention silent" data-user-id="275920">John Baez</span>  I am curious which props you had in mind, and if the ones that we are writing up are largely the same.</p>
+</blockquote>
+<p>I'm currently very interested in props that are sub-props of FinRel, FinCorel, FinSpan and FinCospan.  (Maybe I don't need to keep saying "Fin" if we're talking about props, since the objects are always finite numbers.)</p>
+
+
+
+<a name="214247456"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/FinSet%20as%20walking%20commutative%20monoid/near/214247456" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/FinSet.20as.20walking.20commutative.20monoid.html#214247456">(Oct 22 2020 at 20:59)</a>:</h4>
+<p>I have a story I want to tell about these, and I should probably tell it somewhere and then contribute that information to your massive dictionary.</p>
+
+
+
+<a name="214247842"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/FinSet%20as%20walking%20commutative%20monoid/near/214247842" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/FinSet.20as.20walking.20commutative.20monoid.html#214247842">(Oct 22 2020 at 21:02)</a>:</h4>
+<p>By the way, the prop Mat(k) is very nice not only when k is a field, but whenever k is a commutative rig.  I got Wadsley and Woods to write a paper about it:</p>
+<ul>
+<li><a href="https://arxiv.org/abs/1505.00048">PROPs for linear systems</a>.</li>
+</ul>
+<p>I hope you take the information in here and add it to your massive dictionary.</p>
+<p>"We are the Borg. Lower your shields and surrender your ships. We will add your biological and technological distinctiveness to our own."</p>
+
+
+
+<a name="214248024"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/FinSet%20as%20walking%20commutative%20monoid/near/214248024" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/FinSet.20as.20walking.20commutative.20monoid.html#214248024">(Oct 22 2020 at 21:04)</a>:</h4>
+<p>I also hope you suck the juice out of this paper:</p>
+<ul>
+<li>John Baez, Brandon Coya and Franciscus Rebro, <a href="https://arxiv.org/abs/1707.08321">Props in network theory</a>.</li>
+</ul>
+
+
+
+<a name="214248122"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/FinSet%20as%20walking%20commutative%20monoid/near/214248122" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/FinSet.20as.20walking.20commutative.20monoid.html#214248122">(Oct 22 2020 at 21:05)</a>:</h4>
+<p>In particular we say super-precisely what it means to have a presentation of a prop in terms of generators and relations, and say when a symmetric monoidal category is equivalent to a prop (see Appendix A and B).  But also we have some nice examples of props.</p>
+
+
+
+<a name="214248446"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/FinSet%20as%20walking%20commutative%20monoid/near/214248446" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/FinSet.20as.20walking.20commutative.20monoid.html#214248446">(Oct 22 2020 at 21:09)</a>:</h4>
+<blockquote>
+<p>I don't know where this should go...</p>
+</blockquote>
+<p>Where have you considered?  It might make a nice paper for <em>Compositionality</em> if you can't think of anything better.  Is it big enough to become a book?</p>
+
+
+
+<a name="214251730"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/FinSet%20as%20walking%20commutative%20monoid/near/214251730" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Cole Comfort <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/FinSet.20as.20walking.20commutative.20monoid.html#214251730">(Oct 22 2020 at 21:41)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="275920">John Baez</span> <a href="#narrow/stream/229136-theory.3A-category.20theory/topic/FinSet.20as.20walking.20commutative.20monoid/near/214247200">said</a>:</p>
+<blockquote>
+<p>Cole wrote:</p>
+<blockquote>
+<p>this started as an informal talk and has bloated into a massive dictionary.<br>
+How big so far?</p>
+</blockquote>
+</blockquote>
+<p>I mean I think it is starting to turn into my phd thesis.</p>
+<p><span class="user-mention silent" data-user-id="275920">John Baez</span> <a href="#narrow/stream/229136-theory.3A-category.20theory/topic/FinSet.20as.20walking.20commutative.20monoid/near/214247347">said</a>:</p>
+<blockquote>
+<p><span class="user-mention silent" data-user-id="277391">Cole Comfort</span> <a href="#narrow/stream/229136-theory.3A-category.20theory/topic/FinSet.20as.20walking.20commutative.20monoid/near/214224415">said</a>:</p>
+<blockquote>
+<p><span class="user-mention silent" data-user-id="275920">John Baez</span>  I am curious which props you had in mind, and if the ones that we are writing up are largely the same.</p>
+</blockquote>
+<p>I'm currently very interested in props that are sub-props of FinRel, FinCorel, FinSpan and FinCospan.  (Maybe I don't need to keep saying "Fin" if we're talking about props, since the objects are always finite numbers.)</p>
+</blockquote>
+<p>By this do you mean wrt sets and the coproduct?</p>
+
+
+
+<a name="214251835"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/FinSet%20as%20walking%20commutative%20monoid/near/214251835" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Cole Comfort <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/FinSet.20as.20walking.20commutative.20monoid.html#214251835">(Oct 22 2020 at 21:43)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="275920">John Baez</span> <a href="#narrow/stream/229136-theory.3A-category.20theory/topic/FinSet.20as.20walking.20commutative.20monoid/near/214247842">said</a>:</p>
+<blockquote>
+<p>By the way, the prop Mat(k) is very nice not only when k is a field, but whenever k is a commutative rig.  I got Wadsley and Woods to write a paper about it:</p>
+<ul>
+<li><a href="https://arxiv.org/abs/1505.00048">PROPs for linear systems</a>.</li>
+</ul>
+<p>I hope you take the information in here and add it to your massive dictionary.</p>
+<p>"We are the Borg. Lower your shields and surrender your ships. We will add your biological and technological distinctiveness to our own."</p>
+</blockquote>
+<p>The only issue with this is that you can't take pushouts or pullbacks because, as far as I know, according to me reading <span class="user-mention" data-user-id="351836">@Fabio Zanasi</span>'s thesis, you only get these in general when the ring is a PID.</p>
+
+
+
+<a name="214251993"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/FinSet%20as%20walking%20commutative%20monoid/near/214251993" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Cole Comfort <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/FinSet.20as.20walking.20commutative.20monoid.html#214251993">(Oct 22 2020 at 21:44)</a>:</h4>
+<p>Now that I am discovering these gaps it is probably worthwhile separating this classification into different papers, because there is lots of original work to be done.</p>
+
+
+
+<a name="214252875"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/FinSet%20as%20walking%20commutative%20monoid/near/214252875" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/FinSet.20as.20walking.20commutative.20monoid.html#214252875">(Oct 22 2020 at 21:54)</a>:</h4>
+<p>I'm not completely sure what you mean by "the only issue with this".  It's definitely true that Mat(k) is a prop whenever k is a commutative rig.  (Not just a ring - a rig!)</p>
+<p>Other more fancy constructions may require pushouts and pullbacks, and yes, Mat(k) won't have those unless k is reasonably nice.  </p>
+<p>Let's think about when Mat(k) has pullbacks. Mat(k) is equivalent to the category of <em>free</em> finitely generated k-modules, so let's think about that.   I will only try the case where k is a commutative ring, though I love rigs.</p>
+<p>Since the category of free finitely generated k-modules has binary products, it will have pullbacks iff it has equalizers, which when k is a ring are the same as "kernels".  So for k a commutative ring, Mat(k) will have pullbacks iff the kernel of any map between free finitely generated k-modules is a free finitely generated k-module.  <a href="https://mathoverflow.net/questions/16953/are-submodules-of-free-modules-free/16957">If k is a commutative ring, every submodule of a free module is free iff k is a principal ideal domain</a>, and in this case every submodule of a free finitely generated module is also finitely generated.</p>
+<p>From all this we get: if k is a PID, Mat(k) has pullbacks.   </p>
+<p>I'm not sure this is an "if and only if", because I don't know that every submodule is a kernel.</p>
+
+
+
+<a name="214253072"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/FinSet%20as%20walking%20commutative%20monoid/near/214253072" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/FinSet.20as.20walking.20commutative.20monoid.html#214253072">(Oct 22 2020 at 21:56)</a>:</h4>
+<p>Now I am curious about k case of commutative rigs, e.g. <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="double-struck">N</mi></mrow><annotation encoding="application/x-tex">\mathbb{N}</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.68889em;vertical-align:0em;"></span><span class="mord"><span class="mord mathbb">N</span></span></span></span></span>.</p>
+
+
+
+<a name="214253210"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/FinSet%20as%20walking%20commutative%20monoid/near/214253210" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/FinSet.20as.20walking.20commutative.20monoid.html#214253210">(Oct 22 2020 at 21:58)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="277391">Cole Comfort</span> <a href="#narrow/stream/229136-theory.3A-category.20theory/topic/FinSet.20as.20walking.20commutative.20monoid/near/214251730">said</a>:</p>
+<blockquote>
+<p><span class="user-mention silent" data-user-id="275920">John Baez</span>  I am curious which props you had in mind, and if the ones that we are writing up are largely the same.</p>
+<blockquote>
+<p>I'm currently very interested in props that are sub-props of FinRel, FinCorel, FinSpan and FinCospan.  (Maybe I don't need to keep saying "Fin" if we're talking about props, since the objects are always finite numbers.)</p>
+</blockquote>
+<p>By this do you mean wrt sets and the coproduct?</p>
+</blockquote>
+<p>Yes, I mean finite sets and disjoint union.   I'm in the mood for combinatorics these days.</p>
+
+
+
+<a name="214253410"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/FinSet%20as%20walking%20commutative%20monoid/near/214253410" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Cole Comfort <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/FinSet.20as.20walking.20commutative.20monoid.html#214253410">(Oct 22 2020 at 22:00)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="275920">John Baez</span> <a href="#narrow/stream/229136-theory.3A-category.20theory/topic/FinSet.20as.20walking.20commutative.20monoid/near/214252875">said</a>:</p>
+<blockquote>
+<p>I'm not completely sure what you mean by "the only issue with this".  It's definitely true that Mat(k) is a prop whenever k is a commutative rig.  (Not just a ring - a rig!)</p>
+</blockquote>
+<p>Just that it is nice to be able to be able to take pushouts/pullbacks.  I guess the right way to make the dictionary is to start with matrices over a semiring, and then once you want to take pullbacks, then restrict your attention to PIDs.</p>
+
+
+
+<a name="214253518"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/FinSet%20as%20walking%20commutative%20monoid/near/214253518" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Cole Comfort <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/FinSet.20as.20walking.20commutative.20monoid.html#214253518">(Oct 22 2020 at 22:02)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="275920">John Baez</span> <a href="#narrow/stream/229136-theory.3A-category.20theory/topic/FinSet.20as.20walking.20commutative.20monoid/near/214252875">said</a>:</p>
+<blockquote>
+<p>I'm not sure this is an "if and only if", because I don't know that every submodule is a kernel.</p>
+</blockquote>
+<p>Yeah, I am not sure either, but I just don't know what class of (semi)rings you could generalize this to and still get this.</p>
+
+
+
+<a name="214253787"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/FinSet%20as%20walking%20commutative%20monoid/near/214253787" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/FinSet.20as.20walking.20commutative.20monoid.html#214253787">(Oct 22 2020 at 22:04)</a>:</h4>
+<p>It's an interesting question.  The proof that when k is a commutative ring,</p>
+<p>"every submodule of a finitely generated free k-module is free" <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext>  </mtext><mo>⟹</mo><mtext>  </mtext></mrow><annotation encoding="application/x-tex">\implies</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.549em;vertical-align:-0.024em;"></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">⟹</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span></span></span> k is a PID</p>
+<p>is so ridiculously simple (I linked to one) that it should be easy to generalize this direction and discover some sort of "PID rigs".</p>
+
+
+
+<a name="214253841"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/FinSet%20as%20walking%20commutative%20monoid/near/214253841" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/FinSet.20as.20walking.20commutative.20monoid.html#214253841">(Oct 22 2020 at 22:05)</a>:</h4>
+<p>Anyway, I may be more into this sort of algebra than you, so maybe I should do that.</p>
+
+
+
+<a name="214253952"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/FinSet%20as%20walking%20commutative%20monoid/near/214253952" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/FinSet.20as.20walking.20commutative.20monoid.html#214253952">(Oct 22 2020 at 22:06)</a>:</h4>
+<p>I think already for <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="double-struck">N</mi></mrow><annotation encoding="application/x-tex">\mathbb{N}</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.68889em;vertical-align:0em;"></span><span class="mord"><span class="mord mathbb">N</span></span></span></span></span> it breaks down.</p>
+
+
+
+<a name="214253984"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/FinSet%20as%20walking%20commutative%20monoid/near/214253984" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Cole Comfort <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/FinSet.20as.20walking.20commutative.20monoid.html#214253984">(Oct 22 2020 at 22:07)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="275920">John Baez</span> <a href="#narrow/stream/229136-theory.3A-category.20theory/topic/FinSet.20as.20walking.20commutative.20monoid/near/214253210">said</a>:</p>
+<blockquote>
+<p><span class="user-mention silent" data-user-id="277391">Cole Comfort</span> <a href="#narrow/stream/229136-theory.3A-category.20theory/topic/FinSet.20as.20walking.20commutative.20monoid/near/214251730">said</a>:</p>
+<blockquote>
+<p><span class="user-mention silent" data-user-id="275920">John Baez</span>  I am curious which props you had in mind, and if the ones that we are writing up are largely the same.</p>
+<div class="codehilite"><pre><span></span><code>I&#39;m currently very interested in props that are sub-props of FinRel, FinCorel, FinSpan and FinCospan.  (Maybe I don&#39;t need to keep saying &quot;Fin&quot; if we&#39;re talking about props, since the objects are always finite numbers.)
+</code></pre></div>
+
+
+<p>By this do you mean wrt sets and the coproduct?</p>
+</blockquote>
+<p>Yes, I mean finite sets and disjoint union.   I'm in the mood for combinatorics these days.</p>
+</blockquote>
+<p>Aren't these examples relatively simple compared to the linear props.  Is the idea that you use different generators than the usual ones so that, for example, you can consider the category generated by the "cnot gate" in spans, in the sense that you chain together the multiplication and comultiplication?  I am trying to imagine some of the less obvious sub-props.</p>
+
+
+
+<a name="214254053"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/FinSet%20as%20walking%20commutative%20monoid/near/214254053" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Cole Comfort <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/FinSet.20as.20walking.20commutative.20monoid.html#214254053">(Oct 22 2020 at 22:08)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="275920">John Baez</span> <a href="#narrow/stream/229136-theory.3A-category.20theory/topic/FinSet.20as.20walking.20commutative.20monoid/near/214253952">said</a>:</p>
+<blockquote>
+<p>I think already for <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="double-struck">N</mi></mrow><annotation encoding="application/x-tex">\mathbb{N}</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.68889em;vertical-align:0em;"></span><span class="mord"><span class="mord mathbb">N</span></span></span></span></span> it breaks down.</p>
+</blockquote>
+<p>Yes, <span class="user-mention" data-user-id="277342">@Robin Piedeleu</span>  talks about this in his thesis, which is another good resource for such things.</p>
+
+
+
+<a name="214261385"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/FinSet%20as%20walking%20commutative%20monoid/near/214261385" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/FinSet.20as.20walking.20commutative.20monoid.html#214261385">(Oct 22 2020 at 23:55)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="277391">Cole Comfort</span> <a href="#narrow/stream/229136-theory.3A-category.20theory/topic/FinSet.20as.20walking.20commutative.20monoid/near/214253984">said</a>:</p>
+<blockquote>
+<p>Aren't these examples relatively simple compared to the linear props?  </p>
+</blockquote>
+<p>Yes, they're simple and thus they show up throughout mathematics - there's usually an inverse relation between complexity and pervasiveness - but there are some fascinating ways in which they're all related to each other I guess I should fairly quickly write a nice explanation of what I mean here... maybe a blog article or quick paper.</p>
+
+
+
+<a name="214262199"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/FinSet%20as%20walking%20commutative%20monoid/near/214262199" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/FinSet.20as.20walking.20commutative.20monoid.html#214262199">(Oct 23 2020 at 00:11)</a>:</h4>
+<p>As you can see, I feel a bit possessive about my ideas... but once I get them out I'll be glad to contribute them to your massive dictionary.</p>
+<p>By the way: if it becomes a PhD thesis, that's a great thing.  You can put it on the arXiv, then try to publish it as a book or long paper.</p>
+
+
+
+<a name="214293555"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/FinSet%20as%20walking%20commutative%20monoid/near/214293555" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Cole Comfort <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/FinSet.20as.20walking.20commutative.20monoid.html#214293555">(Oct 23 2020 at 09:55)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="275920">John Baez</span> <a href="#narrow/stream/229136-theory.3A-category.20theory/topic/FinSet.20as.20walking.20commutative.20monoid/near/214262199">said</a>:</p>
+<blockquote>
+<p>As you can see, I feel a bit possessive about my ideas... but once I get them out I'll be glad to contribute them to your massive dictionary.</p>
+</blockquote>
+<p>Looking forward to it!</p>
+
+
+
+{% endraw %}
+
+<hr><p>Last updated: Feb 07 2022 at 21:54 UTC</p>

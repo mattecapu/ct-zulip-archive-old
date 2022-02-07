@@ -1,0 +1,69 @@
+---
+layout: archive
+title: Zulip Chat Archive
+permalink: /stream/229136-theory:-category-theory/topic/a.20small.20observation.20about.20E-categories.html
+---
+
+<h2>Stream: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/index.html">theory: category theory</a></h2>
+<h3>Topic: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/a.20small.20observation.20about.20E-categories.html">a small observation about E-categories</a></h3>
+
+<hr>
+
+<base href="https://categorytheory.zulipchat.com/">
+
+{% raw %}
+
+<a name="250220141"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/a%20small%20observation%20about%20E-categories/near/250220141" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Jacques Carette <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/a.20small.20observation.20about.20E-categories.html#250220141">(Aug 21 2021 at 14:25)</a>:</h4>
+<p>In set-based category theory, trying to fit all (small) categories into a (large) <em>category</em> doesn't work so well, in that  you end up with the wrong equality on functors. It works 'better' to <a href="https://ncatlab.org/nlab/show/Cat">consider this as a 2-category</a>, so that one can use natural isomorphisms as the 'correct' notion of functor equivalence.</p>
+<p>But in E-Category theory, this is <a href="https://agda.github.io/agda-categories/Categories.Category.Instance.Cats.html">not needed!</a>. In other words, the (large) E-category of (small) E-categories works, there is no need to go to 2-categories!</p>
+<p>There is a different bonus in the above formalization with explicit universe polymorphism: one can see exactly how large the result ends up being. The 'diversity' of universes gets erased, and then <strong>only</strong> the object universe gets bumped up a size. </p>
+<p>It still ends up being Cartesian closed (see <code>Cats-CCC</code> at the bottom of <a href="http://this%20page">https://agda.github.io/agda-categories/Categories.Category.Instance.Properties.Cats.html</a>) <strong>but</strong> only when <em>all 3 universes coincide</em>. Nevertheless "extremely large" collections of categories are still CCC.</p>
+
+
+
+<a name="250233334"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/a%20small%20observation%20about%20E-categories/near/250233334" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nathanael Arkor <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/a.20small.20observation.20about.20E-categories.html#250233334">(Aug 21 2021 at 19:32)</a>:</h4>
+<p>What do you mean by "the wrong equality on functors"?</p>
+
+
+
+<a name="250240775"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/a%20small%20observation%20about%20E-categories/near/250240775" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Jacques Carette <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/a.20small.20observation.20about.20E-categories.html#250240775">(Aug 21 2021 at 22:36)</a>:</h4>
+<p>Extensional equality. Being 'exactly equal' in both components.</p>
+
+
+
+<a name="250244166"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/a%20small%20observation%20about%20E-categories/near/250244166" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/a.20small.20observation.20about.20E-categories.html#250244166">(Aug 22 2021 at 00:00)</a>:</h4>
+<p>I would argue that that's not really an analogue of Cat but rather of Ho(Cat), the category (which is a sensible 1-category even in set-based category theory) whose morphisms are natural isomorphism classes of functors.</p>
+
+
+
+<a name="250244188"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/a%20small%20observation%20about%20E-categories/near/250244188" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/a.20small.20observation.20about.20E-categories.html#250244188">(Aug 22 2021 at 00:01)</a>:</h4>
+<p>Note that Ho(Cat) is also CCC even in set-based category theory, but it fails to have other good properties like the existence of limits and colimits.  I would expect the same is true for your E-category.</p>
+
+
+
+<a name="250244801"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/a%20small%20observation%20about%20E-categories/near/250244801" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/a.20small.20observation.20about.20E-categories.html#250244801">(Aug 22 2021 at 00:19)</a>:</h4>
+<p>Oh, I was wondering what Jacques was talking about... I guessed he meant Ho(Cat).</p>
+
+
+
+<a name="250281702"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/a%20small%20observation%20about%20E-categories/near/250281702" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Jacques Carette <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/a.20small.20observation.20about.20E-categories.html#250281702">(Aug 22 2021 at 16:18)</a>:</h4>
+<p>And now I have a name for it, thanks. And I'll have to investigate limits and colimits for it, it hasn't been done yet. Any pointers to the literature as to what the obstruction is likely to be?</p>
+
+
+
+<a name="250290120"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/a%20small%20observation%20about%20E-categories/near/250290120" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/a.20small.20observation.20about.20E-categories.html#250290120">(Aug 22 2021 at 19:46)</a>:</h4>
+<p><a href="https://ncatlab.org/nlab/show/Ho%28Cat%29#OtherLimits">https://ncatlab.org/nlab/show/Ho%28Cat%29#OtherLimits</a></p>
+
+
+
+{% endraw %}
+
+<hr><p>Last updated: Feb 07 2022 at 21:54 UTC</p>

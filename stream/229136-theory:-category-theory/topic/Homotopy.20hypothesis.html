@@ -1,0 +1,212 @@
+---
+layout: archive
+title: Zulip Chat Archive
+permalink: /stream/229136-theory:-category-theory/topic/Homotopy.20hypothesis.html
+---
+
+<h2>Stream: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/index.html">theory: category theory</a></h2>
+<h3>Topic: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/Homotopy.20hypothesis.html">Homotopy hypothesis</a></h3>
+
+<hr>
+
+<base href="https://categorytheory.zulipchat.com/">
+
+{% raw %}
+
+<a name="192906371"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/Homotopy%20hypothesis/near/192906371" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Amar Hadzihasanovic <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/Homotopy.20hypothesis.html#192906371">(Apr 04 2020 at 12:54)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="276625">Joachim Kock</span> <a href="#narrow/stream/229111-general/topic/CS.20and.20Math(s)/near/192900456" title="#narrow/stream/229111-general/topic/CS.20and.20Math(s)/near/192900456">said</a>:</p>
+<blockquote>
+<p>Coming back to the KV paper: I worked several years on Simpson's conjecture, and tried hard to understand the KV ideas, but ended up approaching the conjecture with other methods, and eventually drifted to other problems. I did not get deep enough into their proof to understand what went wrong. But now, over the past few years, Simon Henry has made important inroads to the theory, and proved a version of the conjecture. His approach follows the KV idea, but uses a lot of modern machinery. I don't know if he can pinpoint the precise mistake in KV, but in any case Henry's actual results are of course more important than the historical curiosity of what went wrong in the KV proof.</p>
+</blockquote>
+<p>This is going off topic, so I am starting another topic instead, but I think I can say a bit more about this.</p>
+<p>KV's “theorem” is made of two separate parts: “spaces are equivalent to <em>Kan diagrammatic sets</em>” and “Kan diagrammatic sets are equivalent to strict <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ω</mi></mrow><annotation encoding="application/x-tex">\omega</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.03588em;">ω</span></span></span></span>-groupoids”. The proof (or rather proof sketch) of the first one has flaws, while the proof of the second one has at least one fatal mistake.</p>
+<p>This <a href="https://arxiv.org/abs/1909.07639" title="https://arxiv.org/abs/1909.07639">preprint</a> of mine was basically about rescuing the “diagrammatic set” idea as a workable model of weak higher <em>categories</em>, and give a rigorous proof of the first part of KV, so I know both that the idea was generally correct, and that they had chosen the wrong class of diagrams (something that Henry had also realised, although he then diverged more from the KV approach). This was the “flaw” in that part of their paper.</p>
+<p>As for the mistake in the second part, this <a href="https://mathoverflow.net/a/234798" title="https://mathoverflow.net/a/234798">answer</a> on MathOverflow is correct: the “realisation of diagrammatic sets in strict <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ω</mi></mrow><annotation encoding="application/x-tex">\omega</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.03588em;">ω</span></span></span></span>-categories” creates “new” homotopies which cannot be created by the structural operations of diagrammatic sets. KV claim that this is not the case in the proof of their Lemma 3.4. <br>
+The counterexample “is” Eckmann-Hilton (you can have a Kan diagrammatic set where the “left and right braiding” of two 2-cells are not homotopical, but if you realise in strict <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ω</mi></mrow><annotation encoding="application/x-tex">\omega</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.03588em;">ω</span></span></span></span>-categories they are actually identical).</p>
+
+
+
+<a name="192913080"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/Homotopy%20hypothesis/near/192913080" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Joachim Kock <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/Homotopy.20hypothesis.html#192913080">(Apr 04 2020 at 15:32)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="276363">Amar Hadzihasanovic</span> <a href="#narrow/stream/229136-category-theory/topic/Homotopy.20hypothesis/near/192906371" title="#narrow/stream/229136-category-theory/topic/Homotopy.20hypothesis/near/192906371">said</a>:</p>
+<blockquote>
+<p>KV's “theorem” is made of two separate parts: “spaces are equivalent to <em>Kan diagrammatic sets</em>” and “Kan diagrammatic sets are equivalent to strict <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ω</mi></mrow><annotation encoding="application/x-tex">\omega</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.03588em;">ω</span></span></span></span>-groupoids”. The proof (or rather proof sketch) of the first one has flaws, while the proof of the second one has at least one fatal mistake.</p>
+</blockquote>
+<p>Hi Amar, thanks for the details, and thanks for the pointers. I am very impressed with the work both you and Simon have done on this topic, ironing it out while connecting it to other interesting topics.</p>
+
+
+
+<a name="192935818"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/Homotopy%20hypothesis/near/192935818" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Soichiro Fujii <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/Homotopy.20hypothesis.html#192935818">(Apr 05 2020 at 01:35)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="276363">Amar Hadzihasanovic</span> <a href="#narrow/stream/229136-category-theory/topic/Homotopy.20hypothesis/near/192906371" title="#narrow/stream/229136-category-theory/topic/Homotopy.20hypothesis/near/192906371">said</a>:</p>
+<blockquote>
+<p>KV's “theorem” is made of two separate parts: “spaces are equivalent to <em>Kan diagrammatic sets</em>” and “Kan diagrammatic sets are equivalent to strict <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ω</mi></mrow><annotation encoding="application/x-tex">\omega</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.03588em;">ω</span></span></span></span>-groupoids”. The proof (or rather proof sketch) of the first one has flaws, while the proof of the second one has at least one fatal mistake.</p>
+</blockquote>
+<p>What does “equivalent” mean here? Existence of a Quillen equivalence with respect to suitable model structures?</p>
+
+
+
+<a name="192958280"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/Homotopy%20hypothesis/near/192958280" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Amar Hadzihasanovic <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/Homotopy.20hypothesis.html#192958280">(Apr 05 2020 at 12:57)</a>:</h4>
+<p>Hi Soichiro! A bit less: there's</p>
+<ul>
+<li>a notion of homotopy groups of a pointed object in each category,</li>
+<li>adjoint functors between the three categories, pairwise, preserving the terminal object (hence pointed objects),</li>
+<li>natural isomorphisms between the homotopy groups of each pointed object and those of its image through one of the functors.</li>
+</ul>
+<p>So one can “compute homotopy groups in either category and get the same results”. But I think it's very likely that the equivalence of spaces and Kan diagrammatic sets can be extended to a Quillen equivalence.</p>
+
+
+
+<a name="193006644"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/Homotopy%20hypothesis/near/193006644" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Soichiro Fujii <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/Homotopy.20hypothesis.html#193006644">(Apr 06 2020 at 08:00)</a>:</h4>
+<p>I see. Thanks!</p>
+
+
+
+<a name="193015881"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/Homotopy%20hypothesis/near/193015881" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Thibaut Benjamin <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/Homotopy.20hypothesis.html#193015881">(Apr 06 2020 at 09:28)</a>:</h4>
+<p>Hi Amar, (and I guess it makes sense to add <span class="user-mention" data-user-id="277180">@Simon Henry</span>  as well). <br>
+ As far as I understand, Simpson's Conjecture is about correcting KV's paper by changing strict <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ω</mi></mrow><annotation encoding="application/x-tex">\omega</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.03588em;">ω</span></span></span></span>-groupoids by some weaker versions of them. I don't remember exactly which, but as I recall there are some things that are kept strict. The first point I haven't really understood is how did he chose what should be weak, and what can be allowed to be strict? Of course the counter example of KV he found out shows that not everything can be strict but then what motivates his following conjecture?<br>
+Also I believe it is known that Kan complexes are equivalent to spaces (this dates back to Quillen). And I have never really understood why people think that Kan complexes are not good enough. Do you know what's wrong with them, and why people don't accept this correspondence as a proof of the homotopy hypothesis, with weak <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ω</mi></mrow><annotation encoding="application/x-tex">\omega</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.03588em;">ω</span></span></span></span>-groupoids being Kan complexes?</p>
+
+
+
+<a name="193021387"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/Homotopy%20hypothesis/near/193021387" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Amar Hadzihasanovic <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/Homotopy.20hypothesis.html#193021387">(Apr 06 2020 at 10:23)</a>:</h4>
+<p>Hi Thibaut! I think on Simpson's conjecture both Joachim and Simon are more qualified than me to say, but roughly: Simpson interprets the quest for a strict(er) model of homotopy types as the search for a good notion of “higher-dimensional Moore path space”, since e.g. the Moore space of loops on a pointed space is a strict monoid, as opposed to the usual loop space which an <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>A</mi><mi mathvariant="normal">∞</mi></msub></mrow><annotation encoding="application/x-tex">A_\infty</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.83333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathdefault">A</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.151392em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">∞</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span> space, ie only a monoid up to coherent higher homotopy. <br>
+However there are problems with doing “iterated Moore loop spaces” which come from the fact that the function taking a Moore loop to its length (a positive real number) is not a fibration, due to a singularity at “loops of length 0”. But it is if one disallows length 0, which turns the “non-zero Moore loop space” into a weakly unital, strictly associative monoid.</p>
+
+
+
+<a name="193021539"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/Homotopy%20hypothesis/near/193021539" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Amar Hadzihasanovic <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/Homotopy.20hypothesis.html#193021539">(Apr 06 2020 at 10:25)</a>:</h4>
+<p>So I think that motivated him to conjecture that to one can have good notions of higher Moore spaces which are strictly associative but only weakly unital.</p>
+
+
+
+<a name="193021667"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/Homotopy%20hypothesis/near/193021667" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Amar Hadzihasanovic <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/Homotopy.20hypothesis.html#193021667">(Apr 06 2020 at 10:26)</a>:</h4>
+<p>And I would also say that Simon's result on regular polygraphs is a confirmation of the spirit of this conjecture, even though it may not be a proof of more restrictive forms of it.</p>
+
+
+
+<a name="193022596"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/Homotopy%20hypothesis/near/193022596" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Thibaut Benjamin <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/Homotopy.20hypothesis.html#193022596">(Apr 06 2020 at 10:35)</a>:</h4>
+<p>Thanks a lot, that was exactly the kind of intuition I was lacking, this s great, it makes much more sense now</p>
+
+
+
+<a name="193022756"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/Homotopy%20hypothesis/near/193022756" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Amar Hadzihasanovic <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/Homotopy.20hypothesis.html#193022756">(Apr 06 2020 at 10:37)</a>:</h4>
+<p>As for your second question: my point of view is that there is no single “homotopy hypothesis”. The minimum one needs to formulate <em>a</em> homotopy hypothesis is to have</p>
+<ul>
+<li>an algebraic model of spaces, which</li>
+<li>has an underlying collection of “cells”, each with its own dimension, with “boundary/face” operations, together with</li>
+<li>a combinatorial notion of homotopy groups of a space,</li>
+<li>whose underlying sets are defined as “n-cells with certain boundaries, declared to be equivalent if there is an (n+1)-cell of a certain form containing both of them in their boundary”.</li>
+</ul>
+
+
+
+<a name="193022902"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/Homotopy%20hypothesis/near/193022902" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Amar Hadzihasanovic <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/Homotopy.20hypothesis.html#193022902">(Apr 06 2020 at 10:39)</a>:</h4>
+<p>So for example <em>algebraic</em> Kan complexes (in which one has <em>chosen</em> fillers for all required horns) satisfy their homotopy hypothesis.</p>
+
+
+
+<a name="193023089"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/Homotopy%20hypothesis/near/193023089" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Amar Hadzihasanovic <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/Homotopy.20hypothesis.html#193023089">(Apr 06 2020 at 10:40)</a>:</h4>
+<p>However one may add some additional requirements, which are arguably closer to the spirit of Grothendieck's homotopy hypothesis.</p>
+
+
+
+<a name="193023221"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/Homotopy%20hypothesis/near/193023221" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Amar Hadzihasanovic <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/Homotopy.20hypothesis.html#193023221">(Apr 06 2020 at 10:42)</a>:</h4>
+<p>For example, that the model of spaces is “naturally” a special case of a model of higher categories, the way groupoids as models of 1-types are naturally a special case of categories.</p>
+
+
+
+<a name="193023493"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/Homotopy%20hypothesis/near/193023493" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Amar Hadzihasanovic <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/Homotopy.20hypothesis.html#193023493">(Apr 06 2020 at 10:44)</a>:</h4>
+<p>Now, do algebraic Kan complexes satisfy this requirement? Well, you may see them as a special case of algebraic complicial sets: if you accept the latter as a natural model of higher categories, then sure! <br>
+On the other hand, complicial sets have come much later than Kan complexes, you may see it as a retro-fitting: “let's develop a model of higher categories which generalises the Kan complex model of spaces”.</p>
+
+
+
+<a name="193023838"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/Homotopy%20hypothesis/near/193023838" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Amar Hadzihasanovic <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/Homotopy.20hypothesis.html#193023838">(Apr 06 2020 at 10:48)</a>:</h4>
+<p><em>Strict</em> <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi></mrow><annotation encoding="application/x-tex">n</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault">n</span></span></span></span>-categories and <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ω</mi></mrow><annotation encoding="application/x-tex">\omega</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.03588em;">ω</span></span></span></span>-categories are the most obvious thing to “try”, and the first one that came, as a model of higher categories of arbitrary dimension. Of course, these do not work, but one could say: a “natural” model of higher categories is one that at least looks a bit like this one, ie is made of a space of cells, together with unit and composition operations in various “directions”, which satisfy some form of associativity, unitality, and interchange constraints.</p>
+
+
+
+<a name="193024530"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/Homotopy%20hypothesis/near/193024530" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Amar Hadzihasanovic <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/Homotopy.20hypothesis.html#193024530">(Apr 06 2020 at 10:54)</a>:</h4>
+<p>And, arguably, Kan complexes and complicial sets just do not “feel” enough like that. The filler operations feel like composition/division for 1-cells (you give 2 cells and obtain a single one); in dimension n &gt; 1 they become strange mixtures of composition and division taking (n+1) cells to return one...</p>
+
+
+
+<a name="193024882"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/Homotopy%20hypothesis/near/193024882" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Amar Hadzihasanovic <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/Homotopy.20hypothesis.html#193024882">(Apr 06 2020 at 10:59)</a>:</h4>
+<p>TL;DR : There is one homotopy hypothesis per algebraic model of higher groupoids; algebraic Kan complexes satisfy their own homotopy hypothesis; but you may require that your model of higher groupoid is a specialisation of a natural model of higher categories; this is arguably not the case for Kan complexes.</p>
+
+
+
+<a name="193026330"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/Homotopy%20hypothesis/near/193026330" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Thibaut Benjamin <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/Homotopy.20hypothesis.html#193026330">(Apr 06 2020 at 11:14)</a>:</h4>
+<p>Thanks for all these details! I think I get the point. Great</p>
+
+
+
+<a name="193032174"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/Homotopy%20hypothesis/near/193032174" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Joachim Kock <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/Homotopy.20hypothesis.html#193032174">(Apr 06 2020 at 12:16)</a>:</h4>
+<p>I second everything Amar said.</p>
+
+
+
+<a name="193032368"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/Homotopy%20hypothesis/near/193032368" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Joachim Kock <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/Homotopy.20hypothesis.html#193032368">(Apr 06 2020 at 12:18)</a>:</h4>
+<p>And then I think it is also time to rehearse the old joke:</p>
+<p>Q: How do you prove the homotopy hypothesis?</p>
+<p>A: Define space to mean Kan complex. Define <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">∞</mi></mrow><annotation encoding="application/x-tex">\infty</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord">∞</span></span></span></span>-groupoid to mean Kan complex. QED.</p>
+<p>Tom Leinster takes this joke as starting point for a beautiful blog post, now ten years old:</p>
+<p><a href="https://golem.ph.utexas.edu/category/2010/03/a_perspective_on_higher_catego.html" title="https://golem.ph.utexas.edu/category/2010/03/a_perspective_on_higher_catego.html">https://golem.ph.utexas.edu/category/2010/03/a_perspective_on_higher_catego.html</a></p>
+<p>Well, not exactly starting point, because before getting there he takes a very interesting detour to explain us that category theory is not just about categories!</p>
+
+
+
+<a name="193033259"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/Homotopy%20hypothesis/near/193033259" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Joachim Kock <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/Homotopy.20hypothesis.html#193033259">(Apr 06 2020 at 12:27)</a>:</h4>
+<p>While I agree of course that Kan complexes are not algebraic, and that the filler conditions do not really meet our original expectation of what an <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">∞</mi></mrow><annotation encoding="application/x-tex">\infty</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord">∞</span></span></span></span>-groupoid should be, with <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi></mrow><annotation encoding="application/x-tex">n</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault">n</span></span></span></span>-cells between <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mi>n</mi><mo>−</mo><mn>1</mn><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(n-1)</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord mathdefault">n</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">1</span><span class="mclose">)</span></span></span></span>-cells, and so on, I think there is more to it than that. It is not so important what <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">∞</mi></mrow><annotation encoding="application/x-tex">\infty</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord">∞</span></span></span></span>-groupoids should <em>be</em> as it is how they should <em>work</em>. In this respect, Kan complexes fit the role of <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">∞</mi></mrow><annotation encoding="application/x-tex">\infty</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord">∞</span></span></span></span>-groupoids magnificently -- within the non-algebraic context of $$\infty$-categories in the form of quasi-categories, that is! This is Joyal's great insight (and hard-work achievement): that the theory of categories extends to the theory of quasi-categories: there are adjunctions, limits and colimits, factorisation systems, presheaf categories, locally presentable categories, toposes, and so on. In the whole theory, <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">∞</mi></mrow><annotation encoding="application/x-tex">\infty</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord">∞</span></span></span></span>-groupoids (in the form of Kan complexes) play the role of sets. The more you work with it, the better it seems to fit. I think it is beyond expectations, in terms of workability.</p>
+
+
+
+<a name="193038324"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/Homotopy%20hypothesis/near/193038324" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Amar Hadzihasanovic <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/Homotopy.20hypothesis.html#193038324">(Apr 06 2020 at 13:07)</a>:</h4>
+<p>Agreed. I would also add that the perspective that higher groupoids should be a special case of higher categories is not the only one that one can have: for example I think that Voevodsky would have disagreed with that. One of the starting points of univalent foundations is that <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">∞</mi></mrow><annotation encoding="application/x-tex">\infty</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord">∞</span></span></span></span>-groupoids and their hom-spaces are the correct formalisation of the informal mathematical concepts of sets/types and equalities, and should be taken as fundamental, axiomatising their usage. In this kind of foundations higher categories are necessarily “higher groupoids with structure”.</p>
+
+
+
+<a name="193057374"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/Homotopy%20hypothesis/near/193057374" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Thibaut Benjamin <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/Homotopy.20hypothesis.html#193057374">(Apr 06 2020 at 15:19)</a>:</h4>
+<p><span class="user-mention" data-user-id="276363">@Amar Hadzihasanovic</span> Yes, but I far as I know, there is not a single satisfactory definition of any higher stuff internally to HoTT, or in univalent foundations, except for the <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">∞</mi></mrow><annotation encoding="application/x-tex">\infty</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord">∞</span></span></span></span>-groupoids that are primitive... So the moto that higher categories should be higher groupoids with extra structure is more something I am willing to believe and accept than something I am really convinced in. I can see that in practice I could define arbitrarily high categories by just adding enough coherences, but what about <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">∞</mi></mrow><annotation encoding="application/x-tex">\infty</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord">∞</span></span></span></span>-categories. And let alone <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">∞</mi></mrow><annotation encoding="application/x-tex">\infty</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord">∞</span></span></span></span>-categories - even for <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">∞</mi></mrow><annotation encoding="application/x-tex">\infty</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord">∞</span></span></span></span>-monoids I don't know of any internal definition, even though we have the lists as primitives, which are kind of the free <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">∞</mi></mrow><annotation encoding="application/x-tex">\infty</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord">∞</span></span></span></span>-monoids. I know that Hugo Moeneclay has worked out a definition of <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">∞</mi></mrow><annotation encoding="application/x-tex">\infty</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord">∞</span></span></span></span>-monoids in two levels type theory, though, so I believe the existence of models for this theory sort of guarantees that at least <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">∞</mi></mrow><annotation encoding="application/x-tex">\infty</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord">∞</span></span></span></span>-monoids are <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">∞</mi></mrow><annotation encoding="application/x-tex">\infty</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord">∞</span></span></span></span>-groupoids with extra structure</p>
+<p><span class="user-mention" data-user-id="276625">@Joachim Kock</span>  Thanks for the answer, I had quasicategories in mind while Amar said one wants <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">∞</mi></mrow><annotation encoding="application/x-tex">\infty</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord">∞</span></span></span></span>-groupoids to be special case of <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">∞</mi></mrow><annotation encoding="application/x-tex">\infty</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord">∞</span></span></span></span>-categories. So if I get it right : Kan complexes are awesome and fit perfectly in quasicategories, except that they are not algebraic. Trying to make them algebraic and choosing a filler for every inner horn breaks this, and there is no quasicategory with choice of fillers?</p>
+
+
+
+<a name="193058617"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/Homotopy%20hypothesis/near/193058617" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Thibaut Benjamin <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/Homotopy.20hypothesis.html#193058617">(Apr 06 2020 at 15:27)</a>:</h4>
+<p>And thanks for the link to the log post</p>
+
+
+
+<a name="193059746"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/Homotopy%20hypothesis/near/193059746" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Reid Barton <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/Homotopy.20hypothesis.html#193059746">(Apr 06 2020 at 15:35)</a>:</h4>
+<p>This <a href="https://ncatlab.org/nlab/show/model+structure+on+algebraic+fibrant+objects" title="https://ncatlab.org/nlab/show/model+structure+on+algebraic+fibrant+objects">algebraically fibrant object</a> construction works in quite broad generality, and "algebraic quasicategories" are an example on that nlab page.</p>
+
+
+
+{% endraw %}
+
+<hr><p>Last updated: Feb 07 2022 at 21:54 UTC</p>

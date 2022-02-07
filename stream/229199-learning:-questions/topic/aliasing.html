@@ -1,0 +1,144 @@
+---
+layout: archive
+title: Zulip Chat Archive
+permalink: /stream/229199-learning:-questions/topic/aliasing.html
+---
+
+<h2>Stream: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/index.html">learning: questions</a></h2>
+<h3>Topic: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/aliasing.html">aliasing</a></h3>
+
+<hr>
+
+<base href="https://categorytheory.zulipchat.com/">
+
+{% raw %}
+
+<a name="193068994"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/aliasing/near/193068994" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Joe Moeller <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/aliasing.html#193068994">(Apr 06 2020 at 16:46)</a>:</h4>
+<p>I've programmed in C++ a fair amount. What's aliasing? <span class="user-mention" data-user-id="276072">@sarahzrf</span></p>
+
+
+
+<a name="193069291"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/aliasing/near/193069291" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Jules Hedges <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/aliasing.html#193069291">(Apr 06 2020 at 16:48)</a>:</h4>
+<p>That would be references, I guess (and potentially also pointers)</p>
+
+
+
+<a name="193069900"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/aliasing/near/193069900" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Joe Moeller <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/aliasing.html#193069900">(Apr 06 2020 at 16:53)</a>:</h4>
+<p>There was some discussion on it in another stream since it has to do with Sarah's talk. There she said it had to do with pointers, and I guess something about having two distinct pointers point to the same thing.</p>
+
+
+
+<a name="193070377"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/aliasing/near/193070377" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Reid Barton <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/aliasing.html#193070377">(Apr 06 2020 at 16:57)</a>:</h4>
+<p>Yeah, basically it refers to when two pointers point to the same thing or overlapping things, particularly when you didn't expect them to.</p>
+
+
+
+<a name="193070534"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/aliasing/near/193070534" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Joe Moeller <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/aliasing.html#193070534">(Apr 06 2020 at 16:58)</a>:</h4>
+<p>What's the deal with these? What sorts of issues make people say "oh what about aliasing?"</p>
+
+
+
+<a name="193070654"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/aliasing/near/193070654" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Jules Hedges <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/aliasing.html#193070654">(Apr 06 2020 at 16:59)</a>:</h4>
+<p>(the underlying language-independent concept can also be called <em>names</em>, ie. having multiple names for the same thing)</p>
+
+
+
+<a name="193070837"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/aliasing/near/193070837" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Jules Hedges <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/aliasing.html#193070837">(Apr 06 2020 at 17:00)</a>:</h4>
+<p>Aliasing + destructive updates = headache. Somebody can do something to <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi></mrow><annotation encoding="application/x-tex">x</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault">x</span></span></span></span>, and suddenly <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>y</mi></mrow><annotation encoding="application/x-tex">y</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.625em;vertical-align:-0.19444em;"></span><span class="mord mathdefault" style="margin-right:0.03588em;">y</span></span></span></span> has changed. It means you can't reason lexically</p>
+
+
+
+<a name="193070969"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/aliasing/near/193070969" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Reid Barton <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/aliasing.html#193070969">(Apr 06 2020 at 17:02)</a>:</h4>
+<p>For example if you want to optimize a for loop, you might want to know that updates you make in the body of the for loop don't affect the value of the upper bound of the loop.</p>
+
+
+
+<a name="193071802"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/aliasing/near/193071802" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> James Wood <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/aliasing.html#193071802">(Apr 06 2020 at 17:08)</a>:</h4>
+<p>IIRC, copying an array is a classic thing that can be hit by aliasing. If source and target arrays overlap, the naïve algorithm will at some point start copying the start of the source array again, into the end of the target array (because it starts reading from the start of the target array, which has written over values from the source array).</p>
+
+
+
+<a name="193071825"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/aliasing/near/193071825" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Reid Barton <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/aliasing.html#193071825">(Apr 06 2020 at 17:08)</a>:</h4>
+<p>Or imagine you are implementing a function that takes pointers to three matrices <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi></mrow><annotation encoding="application/x-tex">A</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault">A</span></span></span></span>, <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>B</mi></mrow><annotation encoding="application/x-tex">B</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.05017em;">B</span></span></span></span>, <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>C</mi></mrow><annotation encoding="application/x-tex">C</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.07153em;">C</span></span></span></span> and updates <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>C</mi></mrow><annotation encoding="application/x-tex">C</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.07153em;">C</span></span></span></span> according to the rule <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>C</mi><mo>:</mo><mo>=</mo><mi>C</mi><mo>+</mo><mi>A</mi><mi>B</mi></mrow><annotation encoding="application/x-tex">C := C + A B</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.07153em;">C</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">:</span></span><span class="base"><span class="strut" style="height:0.36687em;vertical-align:0em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.76666em;vertical-align:-0.08333em;"></span><span class="mord mathdefault" style="margin-right:0.07153em;">C</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault">A</span><span class="mord mathdefault" style="margin-right:0.05017em;">B</span></span></span></span>.</p>
+
+
+
+<a name="193071926"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/aliasing/near/193071926" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Reid Barton <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/aliasing.html#193071926">(Apr 06 2020 at 17:10)</a>:</h4>
+<p>The obvious implementation won't work as claimed if the reference <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>C</mi></mrow><annotation encoding="application/x-tex">C</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.07153em;">C</span></span></span></span> is the same as either <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi></mrow><annotation encoding="application/x-tex">A</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault">A</span></span></span></span> or <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>B</mi></mrow><annotation encoding="application/x-tex">B</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.05017em;">B</span></span></span></span> (but it's fine if <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi></mrow><annotation encoding="application/x-tex">A</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault">A</span></span></span></span> and <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>B</mi></mrow><annotation encoding="application/x-tex">B</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.05017em;">B</span></span></span></span> are the same reference). A variant of James's example.</p>
+
+
+
+<a name="193071992"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/aliasing/near/193071992" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Joe Moeller <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/aliasing.html#193071992">(Apr 06 2020 at 17:10)</a>:</h4>
+<p>Great, this is all making sense.</p>
+
+
+
+<a name="193072037"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/aliasing/near/193072037" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Joe Moeller <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/aliasing.html#193072037">(Apr 06 2020 at 17:10)</a>:</h4>
+<p>I had the sense that it should be a thing I encountered but just never saw a name put to it, and that's exactly what it was!</p>
+
+
+
+<a name="193101920"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/aliasing/near/193101920" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Paolo Capriotti <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/aliasing.html#193101920">(Apr 06 2020 at 21:06)</a>:</h4>
+<p>the standard issue with aliasing is that if the compiler cannot prove that pointers point to different things, it might have to reload a value from memory even when not necessary, because it cannot be sure that it hasn't been written by previous instructions</p>
+
+
+
+<a name="193102036"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/aliasing/near/193102036" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Paolo Capriotti <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/aliasing.html#193102036">(Apr 06 2020 at 21:07)</a>:</h4>
+<p>so C for example has a keyword (<code>restrict</code> IIRC) to instruct the compiler that it is allowed to assume that two pointers point to non-overlapping areas, so that certain optimisations can be applied</p>
+
+
+
+<a name="193113980"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/aliasing/near/193113980" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> sarahzrf <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/aliasing.html#193113980">(Apr 06 2020 at 23:06)</a>:</h4>
+<p>reid's example ties in great with the kind of thing i would want to illustrate, actually</p>
+
+
+
+<a name="193114025"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/aliasing/near/193114025" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> sarahzrf <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/aliasing.html#193114025">(Apr 06 2020 at 23:07)</a>:</h4>
+<p>the kind of place you use separation logic in practice is generally for writing down specifications of the behavior of programs, such as saying "this program really does add matrices"</p>
+
+
+
+<a name="193114056"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/aliasing/near/193114056" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> sarahzrf <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/aliasing.html#193114056">(Apr 06 2020 at 23:07)</a>:</h4>
+<p>but of course, if you wrote the obvious implementation, that specification just isn't true—what if the matrices you pass in alias?</p>
+
+
+
+<a name="193114136"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/aliasing/near/193114136" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> sarahzrf <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/aliasing.html#193114136">(Apr 06 2020 at 23:08)</a>:</h4>
+<p>except that in separation logic, you can use "separating conjunction" instead of ordinary conjunction when necessary, and when you do so, you implicitly rule out such cases in your premise</p>
+
+
+
+<a name="193114161"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/aliasing/near/193114161" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> sarahzrf <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/aliasing.html#193114161">(Apr 06 2020 at 23:09)</a>:</h4>
+<p>so that the case you naïvely had in mind now really <em>is</em> what you're saying with your specification</p>
+
+
+
+<a name="193114208"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/aliasing/near/193114208" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> sarahzrf <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/aliasing.html#193114208">(Apr 06 2020 at 23:10)</a>:</h4>
+<p>the "separation" is as in "separation of the resources underlying the matrices from one another"</p>
+
+
+
+{% endraw %}
+
+<hr><p>Last updated: Feb 07 2022 at 21:54 UTC</p>
