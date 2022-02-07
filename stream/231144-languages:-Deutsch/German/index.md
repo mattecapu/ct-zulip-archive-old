@@ -15,4 +15,4 @@ permalink: /stream/231144-languages:-Deutsch/German/index.html
 * [stream events](topic/stream.20events.html) (13 messages, latest: Apr 22 2020 at 10:22)
 * [General discussion](topic/General.20discussion.html) (3 messages, latest: Mar 31 2020 at 21:14)
 
-<hr><p>Last updated: Jan 30 2022 at 00:30 UTC</p>
+<hr><p>Last updated: Feb 07 2022 at 21:54 UTC</p>

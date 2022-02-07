@@ -1,0 +1,106 @@
+---
+layout: archive
+title: Zulip Chat Archive
+permalink: /stream/229111-general/topic/From.20proof.20nets.20to.20CT.3F.html
+---
+
+<h2>Stream: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/index.html">general</a></h2>
+<h3>Topic: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/From.20proof.20nets.20to.20CT.3F.html">From proof nets to CT?</a></h3>
+
+<hr>
+
+<base href="https://categorytheory.zulipchat.com/">
+
+{% raw %}
+
+<a name="199366545"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/From%20proof%20nets%20to%20CT%3F/near/199366545" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Henri Tuhola <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/From.20proof.20nets.20to.20CT.3F.html#199366545">(Jun 01 2020 at 13:12)</a>:</h4>
+<p>Plugging in proof nets visually resemble composition in category theory. Though proof nets require a "graphical criterion". I wonder how this connects to CT?</p>
+<p>I recently came up with a variation of proof nets, attempting to solve control node accumulation problem of optimal reduction. <a href="http://boxbase.org/entries/2020/jun/1/cll-normaliser/">http://boxbase.org/entries/2020/jun/1/cll-normaliser/</a></p>
+<p>Though when trying to come up with notions of what is a valid structure, it's getting complicated. I wonder if there is something that'd help in determining that? I think that it'd be particularly useful to identify natural transformations in proof nets.</p>
+
+
+
+<a name="199368789"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/From%20proof%20nets%20to%20CT%3F/near/199368789" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Jules Hedges <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/From.20proof.20nets.20to.20CT.3F.html#199368789">(Jun 01 2020 at 13:30)</a>:</h4>
+<p>I've seen some work on this where you view proof nets as a "shadow" (projection) of a higher dimensional diagram, and the roundtrip condition vanishes and becomes ordinary higher-ish category theory.... let me see if I can find the paper</p>
+
+
+
+<a name="199369019"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/From%20proof%20nets%20to%20CT%3F/near/199369019" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Jules Hedges <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/From.20proof.20nets.20to.20CT.3F.html#199369019">(Jun 01 2020 at 13:32)</a>:</h4>
+<p>Pretty sure the paper I was thinking of is "surface proofs for nonsymmetric linear logic" by Dunn and Vicary: <a href="https://arxiv.org/abs/1701.04917">https://arxiv.org/abs/1701.04917</a></p>
+
+
+
+<a name="199386571"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/From%20proof%20nets%20to%20CT%3F/near/199386571" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Amar Hadzihasanovic <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/From.20proof.20nets.20to.20CT.3F.html#199386571">(Jun 01 2020 at 15:58)</a>:</h4>
+<p>Roughly, the graphical criterion comes from the following:<br>
+The “natural” categorical semantics of MLL natural deduction -- in “representable *-polycategories” -- is partially non-algebraic, in the sense that the 'minimal' model containing only valid proof-objects is not given by “composites of certain generators/diagrams, quotiented by certain relations”.<br>
+Proof nets are one way of “algebraicising” things, by introducing both 'new ways of composing things' and 'new generators', so that to each proof it is possible to assign a unique proof-object, but now there's also spurious proof-objects.<br>
+The “acyclicity” criterion corresponds roughly to preventing misuse of the new  compositions and the “connectedness” criterion to preventing the use of the new generators to connect things that would not otherwise be connected (sorry this is quite handwavy).</p>
+<p>You can think of the following as an analogy: the theory of fields is non-algebraic because the operation of multiplicative inversion is not total. But you can decide to throw in a formal inverse of 0, and go about proving things about this “algebraicised” version of a field (these are called 'meadows' if I recall correctly). For your proofs to be valid for fields, however, you would have to use some “correctness criterion” ensuring that you have never made essential use of the inverse of 0.</p>
+
+
+
+<a name="199387183"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/From%20proof%20nets%20to%20CT%3F/near/199387183" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Amar Hadzihasanovic <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/From.20proof.20nets.20to.20CT.3F.html#199387183">(Jun 01 2020 at 16:02)</a>:</h4>
+<p>So you may want to try to follow this pattern for whatever application you are thinking of: find a 'natural' semantics for your proofs which may involve non-algebraic operations such as factorisations of diagrams, then “algebraicise” and see if you can exclude the spurious proof-objects that you end up creating by some combinatorial criterion.</p>
+
+
+
+<a name="199390552"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/From%20proof%20nets%20to%20CT%3F/near/199390552" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Henri Tuhola <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/From.20proof.20nets.20to.20CT.3F.html#199390552">(Jun 01 2020 at 16:28)</a>:</h4>
+<p>So if I start with sum type, for indexing the type would be: (a+b | ~a), then I'd have to write down how this interacts with ((~a &amp; ~b) | a | b). After that build up the constraints. Well that's true. It's a good idea to write those things down even if the actual criteria for validity is stricter than that.</p>
+
+
+
+<a name="199891721"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/From%20proof%20nets%20to%20CT%3F/near/199891721" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Henri Tuhola <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/From.20proof.20nets.20to.20CT.3F.html#199891721">(Jun 05 2020 at 15:19)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="275901">Jules Hedges</span> <a href="#narrow/stream/229111-general/topic/From.20proof.20nets.20to.20CT.3F/near/199369019">said</a>:</p>
+<blockquote>
+<p>Pretty sure the paper I was thinking of is "surface proofs for nonsymmetric linear logic" by Dunn and Vicary: <a href="https://arxiv.org/abs/1701.04917">https://arxiv.org/abs/1701.04917</a></p>
+</blockquote>
+<p>I've drawn diagrams like in this paper when trying to examine normalisation in cartesian closed categories. The 2D diagrams lines represent functor morphisms and points are types.</p>
+<p>Translations into proof nets present projections or "shadows" and capture the roundtrip condition. That's useful observation, but other than that I feel it doesn't bring out how to proceed after you've produced 3D surface diagrams from proofs.</p>
+
+
+
+<a name="199894631"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/From%20proof%20nets%20to%20CT%3F/near/199894631" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Henri Tuhola <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/From.20proof.20nets.20to.20CT.3F.html#199894631">(Jun 05 2020 at 15:39)</a>:</h4>
+<p>I figured I can assign a justification "stack" for each edge. When they are connected, the justifications should match and when such justification is used, it pops off. Then the roundtrip condition captures the rest of validity conditions.</p>
+<p>Though, it creates a very strict graph. It means that if I have two products that are interacting, then another of them splits into two, for each halve of the other product. But examining it closer, I don't think it would work without being strict in this way.</p>
+
+
+
+<a name="200525950"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/From%20proof%20nets%20to%20CT%3F/near/200525950" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Henri Tuhola <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/From.20proof.20nets.20to.20CT.3F.html#200525950">(Jun 11 2020 at 10:16)</a>:</h4>
+<p>Ended up constructing a *-autonomous monoidal category and "validifier" for that in Haskell. <a href="https://gist.github.com/cheery/c19e0709d92f5ab50c7d7f9ac05235ec">https://gist.github.com/cheery/c19e0709d92f5ab50c7d7f9ac05235ec</a></p>
+<p>So I got these two extremes now. I either have "easy to normalise" structures that are hard to verify correct, or then simple structures that are hard to normalise and hard to convert into proof nets&amp;back, but otherwise easy to study.</p>
+
+
+
+<a name="200526580"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/From%20proof%20nets%20to%20CT%3F/near/200526580" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Henri Tuhola <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/From.20proof.20nets.20to.20CT.3F.html#200526580">(Jun 11 2020 at 10:24)</a>:</h4>
+<p>If I start taking things "apart", I eventually arrive to the proof nets from there. But if I do so the checking for said structures becomes much harder.</p>
+
+
+
+<a name="200591442"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/From%20proof%20nets%20to%20CT%3F/near/200591442" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Cole Comfort <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/From.20proof.20nets.20to.20CT.3F.html#200591442">(Jun 11 2020 at 19:11)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="296269">Henri Tuhola</span> <a href="#narrow/stream/229111-general/topic/From.20proof.20nets.20to.20CT.3F/near/199891721">said</a>:</p>
+<blockquote>
+<p><span class="user-mention silent" data-user-id="275901">Jules Hedges</span> <a href="#narrow/stream/229111-general/topic/From.20proof.20nets.20to.20CT.3F/near/199369019">said</a>:</p>
+<blockquote>
+<p>Pretty sure the paper I was thinking of is "surface proofs for nonsymmetric linear logic" by Dunn and Vicary: <a href="https://arxiv.org/abs/1701.04917">https://arxiv.org/abs/1701.04917</a></p>
+</blockquote>
+<p>I've drawn diagrams like in this paper when trying to examine normalisation in cartesian closed categories. The 2D diagrams lines represent functor morphisms and points are types.</p>
+<p>Translations into proof nets present projections or "shadows" and capture the roundtrip condition. That's useful observation, but other than that I feel it doesn't bring out how to proceed after you've produced 3D surface diagrams from proofs.</p>
+</blockquote>
+<p>The axioms for thinning links in Cockett and Seely's paper is so unintuitive and annoying.  It really is more appropriate to think of the units in this higher dimensional setting, in my opinion.</p>
+
+
+
+{% endraw %}
+
+<hr><p>Last updated: Feb 07 2022 at 21:54 UTC</p>

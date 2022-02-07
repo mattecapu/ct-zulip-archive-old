@@ -9,7 +9,8 @@ permalink: /stream/233104-theory:-logic/index.html
 
 ### Topics:
 
-* [3-player game semantics?](topic/3-player.20game.20semantics.3F.html) (18 messages, latest: Jan 28 2022 at 08:39)
+* [new website: Women in Logic](topic/new.20website.3A.20Women.20in.20Logic.html) (1 message, latest: Feb 06 2022 at 16:28)
+* [3-player game semantics?](topic/3-player.20game.20semantics.3F.html) (19 messages, latest: Feb 05 2022 at 14:35)
 * [fragments of logic](topic/fragments.20of.20logic.html) (58 messages, latest: Jan 21 2022 at 15:50)
 * [LFCS 2022](topic/LFCS.202022.html) (1 message, latest: Jan 10 2022 at 21:55)
 * [Has anyone tried to do domain theory in condensed sets? A...](topic/Has.20anyone.20tried.20to.20do.20domain.20theory.20in.20condensed.20sets.3F.20A.2E.2E.2E.html) (2 messages, latest: Jan 06 2022 at 16:34)
@@ -53,4 +54,4 @@ permalink: /stream/233104-theory:-logic/index.html
 * [Probability as logic](topic/Probability.20as.20logic.html) (63 messages, latest: Apr 15 2020 at 12:33)
 * [stream events](topic/stream.20events.html) (1 message, latest: Apr 10 2020 at 12:32)
 
-<hr><p>Last updated: Jan 30 2022 at 00:30 UTC</p>
+<hr><p>Last updated: Feb 07 2022 at 21:54 UTC</p>

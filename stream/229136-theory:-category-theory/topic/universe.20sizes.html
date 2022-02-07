@@ -1,0 +1,53 @@
+---
+layout: archive
+title: Zulip Chat Archive
+permalink: /stream/229136-theory:-category-theory/topic/universe.20sizes.html
+---
+
+<h2>Stream: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/index.html">theory: category theory</a></h2>
+<h3>Topic: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/universe.20sizes.html">universe sizes</a></h3>
+
+<hr>
+
+<base href="https://categorytheory.zulipchat.com/">
+
+{% raw %}
+
+<a name="250218555"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/universe%20sizes/near/250218555" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Jacques Carette <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/universe.20sizes.html#250218555">(Aug 21 2021 at 13:48)</a>:</h4>
+<p>In a different thread:<br>
+<span class="user-mention silent" data-user-id="276777">Mike Shulman</span> <a href="#narrow/stream/229136-theory.3A-category.20theory/topic/Unwinding.20slice.2Fcomma.20'categories'/near/250160669">said</a>:</p>
+<blockquote>
+<p>You're saying that the type of E-categories can be parametrized over three unrelated universes, for the types of objects, morphisms, and equalities respectively, and that the slice/comma construction doesn't act on such E-categories leaving all the universes fixed.  So it could either be an endomorphism of (in Coq notation) <code>ECat@{i j k}</code> with extra constraints <code>k &lt;= j &lt;= i</code>, or it could take input in <code>ECat@{i j k}</code> and yield output in <code>ECat@{max(i,j) max(j,k) k}</code>.</p>
+<p>I suppose I would argue that one should always impose the constraint <code>k &lt;= j &lt;= i</code>.</p>
+</blockquote>
+<p>Hmm, I now have serious doubts about the latter. Let's just consider <code>i</code> and <code>j</code> for objects and homs (locally).</p>
+<ol>
+<li>for 1-object categories, we can take <code>i</code> to be 0, and <code>j</code> can be as large as we want</li>
+<li>we can also have discrete categories, with <code>i</code> as large as one wants, and <code>j</code> can be 0.</li>
+</ol>
+<p>So it appears to me that they really ought to be completely independent from each other.</p>
+
+
+
+<a name="250218827"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/universe%20sizes/near/250218827" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/universe.20sizes.html#250218827">(Aug 21 2021 at 13:55)</a>:</h4>
+<p>Well, there's a one-element set in every universe, so 1-object categories can also fit in <code>j &lt;= i</code>.</p>
+
+
+
+<a name="250219007"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/universe%20sizes/near/250219007" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Jacques Carette <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/universe.20sizes.html#250219007">(Aug 21 2021 at 13:59)</a>:</h4>
+<p>If you're allowing yourself to modify the native universe that objects live in by injecting them into something large enough (like, say, <code>j</code>), then yes, of course. That doesn't feel... elegant?</p>
+
+
+
+<a name="250244241"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/universe%20sizes/near/250244241" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/universe.20sizes.html#250244241">(Aug 22 2021 at 00:03)</a>:</h4>
+<p>Isn't your unit type universe-polymorphic?</p>
+
+
+
+{% endraw %}
+
+<hr><p>Last updated: Feb 07 2022 at 21:54 UTC</p>

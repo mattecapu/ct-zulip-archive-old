@@ -1,0 +1,63 @@
+---
+layout: archive
+title: Zulip Chat Archive
+permalink: /stream/229199-learning:-questions/topic/encoding.20algebraic.20constraints.20as.20functors.html
+---
+
+<h2>Stream: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/index.html">learning: questions</a></h2>
+<h3>Topic: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/encoding.20algebraic.20constraints.20as.20functors.html">encoding algebraic constraints as functors</a></h3>
+
+<hr>
+
+<base href="https://categorytheory.zulipchat.com/">
+
+{% raw %}
+
+<a name="233630731"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/encoding%20algebraic%20constraints%20as%20functors/near/233630731" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Morgan Rogers (he/him) <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/encoding.20algebraic.20constraints.20as.20functors.html#233630731">(Apr 08 2021 at 10:21)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="312048">Avi Craimer</span> <a href="#narrow/stream/229199-learning.3A-questions/topic/Encoding.20algebraic.20constrains.20as.20functors/near/233492599">said</a>:</p>
+<blockquote>
+<p>In my example,  I start by defining the category of free monoids with 3 generators by taking an index category that has three freely composing non-identity arrows, and taking all functors from this category into Set. </p>
+</blockquote>
+<p>This isn't a category of free monoids..! It's the category of left actions of the free monoid on 3 generators.</p>
+
+
+
+<a name="233667306"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/encoding%20algebraic%20constraints%20as%20functors/near/233667306" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Avi Craimer <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/encoding.20algebraic.20constraints.20as.20functors.html#233667306">(Apr 08 2021 at 14:59)</a>:</h4>
+<p>@_<strong>Morgan Rogers (he&#x2F;him)|277473</strong> <a href="#narrow/stream/229199-learning.3A-questions/topic/Encoding.20algebraic.20constrains.20as.20functors/near/233630731">said</a>:</p>
+<blockquote>
+<p>This isn't a category of free monoids..! It's the category of left actions of the free monoid on 3 generators.</p>
+</blockquote>
+<p>Thanks for this clarification. I know it's not the category of free monoids, but I thought it was the category of free monoids with three generators. Since you can compose the morphisms in either direction, I don't understand the "left actions" part.</p>
+
+
+
+<a name="233672652"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/encoding%20algebraic%20constraints%20as%20functors/near/233672652" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nathanael Arkor <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/encoding.20algebraic.20constraints.20as.20functors.html#233672652">(Apr 08 2021 at 15:18)</a>:</h4>
+<p>A one-object category is a monoid. So if you freely generate a one-object category from 3 arrows, you get the free monoid on 3 generators. Taking presheaves on a monoid gives you the left-actions on that monoid.</p>
+
+
+
+<a name="233675157"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/encoding%20algebraic%20constraints%20as%20functors/near/233675157" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/encoding.20algebraic.20constraints.20as.20functors.html#233675157">(Apr 08 2021 at 15:31)</a>:</h4>
+<p>A <strong>left action</strong> of a monoid M, by the way, is a set S together with a map f(m): S <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>→</mo></mrow><annotation encoding="application/x-tex">\to </annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.36687em;vertical-align:0em;"></span><span class="mrel">→</span></span></span></span> S for each m <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>∈</mo></mrow><annotation encoding="application/x-tex">\in</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.5782em;vertical-align:-0.0391em;"></span><span class="mrel">∈</span></span></span></span> M such that f(mm') = f(m)f(m') and f(1) = <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mn>1</mn><mi>S</mi></msub></mrow><annotation encoding="application/x-tex">1_S</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.79444em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord">1</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.32833099999999993em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight" style="margin-right:0.05764em;">S</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span>.   So, it's a functor from that monoid to Set.   </p>
+<p>(It's a presheaf on the <em>opposite</em> of that monoid.  But a free monoid is isomorphic to its opposite.)</p>
+
+
+
+<a name="233675311"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/encoding%20algebraic%20constraints%20as%20functors/near/233675311" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/encoding.20algebraic.20constraints.20as.20functors.html#233675311">(Apr 08 2021 at 15:32)</a>:</h4>
+<p>So yeah, <span class="user-mention" data-user-id="312048">@Avi Craimer</span> described the category of left actions of the free monoid with 3 generators.</p>
+
+
+
+<a name="233782139"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/encoding%20algebraic%20constraints%20as%20functors/near/233782139" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Morgan Rogers (he/him) <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/encoding.20algebraic.20constraints.20as.20functors.html#233782139">(Apr 09 2021 at 07:55)</a>:</h4>
+<p>The point being that there is no multiplication operation on the set <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>S</mi></mrow><annotation encoding="application/x-tex">S</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathnormal" style="margin-right:0.05764em;">S</span></span></span></span> being acted upon, only operations corresponding to the element of the free monoid.</p>
+
+
+
+{% endraw %}
+
+<hr><p>Last updated: Feb 07 2022 at 21:54 UTC</p>

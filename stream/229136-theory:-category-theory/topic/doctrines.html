@@ -1,0 +1,648 @@
+---
+layout: archive
+title: Zulip Chat Archive
+permalink: /stream/229136-theory:-category-theory/topic/doctrines.html
+---
+
+<h2>Stream: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/index.html">theory: category theory</a></h2>
+<h3>Topic: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/doctrines.html">doctrines</a></h3>
+
+<hr>
+
+<base href="https://categorytheory.zulipchat.com/">
+
+{% raw %}
+
+<a name="236541077"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/doctrines/near/236541077" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Morgan Rogers (he/him) <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/doctrines.html#236541077">(Apr 28 2021 at 16:49)</a>:</h4>
+<p>At present I'm thinking about categories with pullbacks, and pullback-preserving functors between these. I want to construct pushouts of these things. <em>However</em> I realised today that I don't want to be working with 1-pushouts: I want pseudo-pushouts. That is, the universal completion of a span of such categories to a square commuting up to specified natural isomorphism.</p>
+<p>Mildly inconveniently, I want this to be the pseudo-pushout in the (2-/bi-)category I get by including all natural transformations between these functors as 2-morphisms, not just cartesian ones; the latter are in some ways <a href="https://arxiv.org/pdf/0904.2486.pdf">more natural</a>, but that is up for discussion.</p>
+<p>When I was (mistakenly) trying to use 1-pushouts, I was able to prove that they exist abstractly using some classical <a href="https://ncatlab.org/nlab/show/colimits+in+categories+of+algebras">1-categorical results</a> about categories of algebras, thanks to <a href="https://www.cambridge.org/core/journals/canadian-journal-of-mathematics/article/simply-connected-limits/529606C55837A71662D3F9AEA5F2E52F">Paré's result</a> that one can construct free pullback-completions of categories, so that the underlying 1-category is monadic over the 1-category of categories.</p>
+<p>It seems to me that I want to instead consider the "doctrine of pullbacks" (or indeed, of connected simply connected limits) and its <a href="https://ncatlab.org/nlab/show/doctrine#as_2monads">associated 2-monad</a> on the category of categories. Since the liftings of 1-categorical results in this context are sparsely reported, please can someone advise me on:</p>
+<ol>
+<li>whether I should be looking at a <a href="https://ncatlab.org/nlab/show/2-monad#2monad">strict 2-monad</a> or a weaker version, and similarly whether I should be looking at strict or pseudo algebras for this; I expect that whatever the right choice is, it will give me all natural transformations out at the end, but if this is not so or determined by these choices, I would like to understand how;</li>
+<li>any references containing useful abstract results about 2-monads generally, especially as regards to properties of the relevant categories of algebras.</li>
+</ol>
+
+
+
+<a name="236541375"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/doctrines/near/236541375" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Morgan Rogers (he/him) <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/doctrines.html#236541375">(Apr 28 2021 at 16:51)</a>:</h4>
+<p>Alternatively, anything about the equivalent situation for categories with finite limits might help, since that's like to be a more well-document case.</p>
+
+
+
+<a name="236541540"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/doctrines/near/236541540" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nathanael Arkor <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/doctrines.html#236541540">(Apr 28 2021 at 16:53)</a>:</h4>
+<p>There is a strict 2-monad on Cat whose algebras and pseudomorphisms are pullback-complete categories and pullback-preserving functors (in the usual sense), which I imagine is what you're after. See Kelly–Lack's paper <a href="http://www.tac.mta.ca/tac/volumes/7/n7/7-07abs.html">On the monadicity of categories with chosen colimits</a>, for instance.</p>
+
+
+
+<a name="236541643"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/doctrines/near/236541643" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Morgan Rogers (he/him) <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/doctrines.html#236541643">(Apr 28 2021 at 16:54)</a>:</h4>
+<p>Will check that out and report back, thanks!</p>
+
+
+
+<a name="236541840"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/doctrines/near/236541840" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nathanael Arkor <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/doctrines.html#236541840">(Apr 28 2021 at 16:55)</a>:</h4>
+<p>I don't think they discuss limits/colimits in the categories of algebras here, but this can be deduced from the fact the 2-monad is finitary, Cat is LFP, and so the 2-category of algebras will be too.</p>
+
+
+
+<a name="236564046"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/doctrines/near/236564046" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/doctrines.html#236564046">(Apr 28 2021 at 19:25)</a>:</h4>
+<p>But if you want (bi)colimits in the 2-category of algebras and <em>pseudo</em> morphisms, you need to do some more work, such as in Blackwell-Kelly-Power "Two-dimensional monad theory".</p>
+
+
+
+<a name="236564562"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/doctrines/near/236564562" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Morgan Rogers (he/him) <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/doctrines.html#236564562">(Apr 28 2021 at 19:28)</a>:</h4>
+<p>Since I don't know in advance which one I want, I'll need to check both <span aria-label="wink" class="emoji emoji-1f609" role="img" title="wink">:wink:</span></p>
+
+
+
+<a name="236649400"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/doctrines/near/236649400" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Morgan Rogers (he/him) <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/doctrines.html#236649400">(Apr 29 2021 at 10:15)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="276777">Mike Shulman</span> <a href="#narrow/stream/229136-theory.3A-category.20theory/topic/doctrines/near/236564046">said</a>:</p>
+<blockquote>
+<p>But if you want (bi)colimits in the 2-category of algebras and <em>pseudo</em> morphisms, you need to do some more work, such as in Blackwell-Kelly-Power "Two-dimensional monad theory".</p>
+</blockquote>
+<p>This looks like exactly what I needed, thanks! One of their main examples is the 2-category of lex categories with all natural transformations, and they at least cover pseudo-limits; there should be enough detail in there for me to work out how results about pseudo-colimits can be reconstructed <span aria-label="tada" class="emoji emoji-1f389" role="img" title="tada">:tada:</span></p>
+
+
+
+<a name="236673960"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/doctrines/near/236673960" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/doctrines.html#236673960">(Apr 29 2021 at 13:38)</a>:</h4>
+<p>You're welcome.  They do also construct bicolimits (not pseudo-colimits), I think it's via a biadjoint lifting.</p>
+
+
+
+<a name="236675169"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/doctrines/near/236675169" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Morgan Rogers (he/him) <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/doctrines.html#236675169">(Apr 29 2021 at 13:46)</a>:</h4>
+<p>Having read this and three related papers today, I'm seeing that bicolimits are what I wanted all along (and become a lot more comfortable with the meanings of bi-, pseudo-, ... in various contexts!)<br>
+The good news is that, as you've said, this paper demonstrates that they exist in the context I care about <span aria-label="tada" class="emoji emoji-1f389" role="img" title="tada">:tada:</span></p>
+
+
+
+<a name="236807234"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/doctrines/near/236807234" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Morgan Rogers (he/him) <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/doctrines.html#236807234">(Apr 30 2021 at 09:17)</a>:</h4>
+<p>While the above has addressed my own query, by supplementing it with Paré's paper on simply connected limits, there is an abstract step which I haven't been able to find in digging through this material so far. In Kelly and Lack's <a href="http://emis.impa.br/EMIS/journals/TAC/volumes/1997/n9/n9.pdf">On Property-Like Structures</a> it is claimed that 'The prime examples of structures given by lax-idempotent 2-monads are categories with colimits of some class'; while it's clear that everything they say is true as soon as we can identify the category of categories with colimits in a class C as algebras for some 2-monad, how do we know that we can construct a free category with colimits in C?<br>
+Referring to <a href="http://www.tac.mta.ca/tac/volumes/7/n7/n7.pdf">On the monadicity of categories with chosen colimits</a>, the general construction of these (when the category is small, at least) is to close the category of representable presheaves under the desired colimits in the category of presheaves. This sounds neat, but... how does one do it? We need a choice of colimit for each diagram indexed by a category in C, and closing once doesn't seem like it will do the trick, unless we first extend C to its saturation (in the sense of a maximal class of colimits admitted by any category with colimits in C); indeed, as soon as we have to do this in more than one step, the existence of a choice for the colimits is no longer evident.</p>
+
+
+
+<a name="236807821"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/doctrines/near/236807821" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Morgan Rogers (he/him) <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/doctrines.html#236807821">(Apr 30 2021 at 09:22)</a>:</h4>
+<p>So the proof of the existence of the adjoint becomes a matter of finding the saturation of a given class of colimits. I could convince myself that this always exists, but there's bound to be some size restrictions on the classes C. Kelly and Lack's claim that the free cocompletion of a small category under a small class of colimits seems credible, but again is far from obvious. Am I missing something, or is their argument simply non-constructive in nature?</p>
+
+
+
+<a name="236815296"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/doctrines/near/236815296" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Morgan Rogers (he/him) <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/doctrines.html#236815296">(Apr 30 2021 at 10:36)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="277473">Morgan Rogers (he/him)</span> <a href="#narrow/stream/229136-theory.3A-category.20theory/topic/doctrines/near/236807821">said</a>:</p>
+<blockquote>
+<p>Kelly and Lack's claim that the free cocompletion of a small category under a small class of colimits seems credible</p>
+</blockquote>
+<p>I take this back; Paré's construction of the free pullback-completion of a category involves dualizing and constructing the colimits via presheaves in a similar way (after having identified the saturation of the class of pullbacks), and it's pretty clear that the result is only <em>essentially</em> small, contrary to what Kelly and Lack are claiming, just by virtue of not having a categorical way to distinguish isomorphic objects in the presheaf topos.</p>
+
+
+
+<a name="236815591"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/doctrines/near/236815591" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Morgan Rogers (he/him) <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/doctrines.html#236815591">(Apr 30 2021 at 10:39)</a>:</h4>
+<p>On the other hand, the pointwise nature of pullbacks in the presheaf topos means that there is a canonical choice of pullbacks in the resulting essentially small category, so is this the genuine free pullback-completion? Or is it only the right thing up to equivalence?</p>
+
+
+
+<a name="236815786"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/doctrines/near/236815786" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nathanael Arkor <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/doctrines.html#236815786">(Apr 30 2021 at 10:41)</a>:</h4>
+<blockquote>
+<p>Or is it only the right thing up to equivalence?</p>
+</blockquote>
+<p>This doesn't sound like a very categorical question <span aria-label="sweat smile" class="emoji emoji-1f605" role="img" title="sweat smile">:sweat_smile:</span></p>
+
+
+
+<a name="236816567"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/doctrines/near/236816567" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nathanael Arkor <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/doctrines.html#236816567">(Apr 30 2021 at 10:48)</a>:</h4>
+<blockquote>
+<p>Kelly and Lack's claim that the free cocompletion of a small category under a small class of colimits seems credible</p>
+</blockquote>
+<p>Is the statement you're taking objection to Theorem 2.3 of Kelly–Lack's paper?</p>
+
+
+
+<a name="236816611"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/doctrines/near/236816611" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nathanael Arkor <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/doctrines.html#236816611">(Apr 30 2021 at 10:49)</a>:</h4>
+<blockquote>
+<p>If <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">Φ</mi></mrow><annotation encoding="application/x-tex">\Phi</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord">Φ</span></span></span></span> is a small class of weights, then <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">Φ</mi><mi>C</mi></mrow><annotation encoding="application/x-tex">\Phi C</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord">Φ</span><span class="mord mathnormal" style="margin-right:0.07153em;">C</span></span></span></span> is small if <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>C</mi></mrow><annotation encoding="application/x-tex">C</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathnormal" style="margin-right:0.07153em;">C</span></span></span></span> is so.</p>
+</blockquote>
+
+
+
+<a name="236816639"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/doctrines/near/236816639" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Morgan Rogers (he/him) <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/doctrines.html#236816639">(Apr 30 2021 at 10:49)</a>:</h4>
+<p>It's what happens when you try to work in a 2-category of categories... <span aria-label="rolling on the floor laughing" class="emoji emoji-1f923" role="img" title="rolling on the floor laughing">:rolling_on_the_floor_laughing:</span></p>
+
+
+
+<a name="236816699"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/doctrines/near/236816699" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Morgan Rogers (he/him) <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/doctrines.html#236816699">(Apr 30 2021 at 10:50)</a>:</h4>
+<blockquote>
+<p>If <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">Φ</mi></mrow><annotation encoding="application/x-tex">\Phi</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord">Φ</span></span></span></span> is a small class of weights, then <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">Φ</mi><mi>C</mi></mrow><annotation encoding="application/x-tex">\Phi C</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord">Φ</span><span class="mord mathnormal" style="margin-right:0.07153em;">C</span></span></span></span> is small if <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>C</mi></mrow><annotation encoding="application/x-tex">C</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathnormal" style="margin-right:0.07153em;">C</span></span></span></span> is so.</p>
+</blockquote>
+<p>That's the one, indeed</p>
+
+
+
+<a name="236817137"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/doctrines/near/236817137" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nathanael Arkor <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/doctrines.html#236817137">(Apr 30 2021 at 10:54)</a>:</h4>
+<p>Did you take a look at Section 5.7 of <a href="http://www.tac.mta.ca/tac/reprints/articles/10/tr10.pdf">Basic Concepts of Enriched Category Theory</a>? It goes into some detail about size issues.</p>
+
+
+
+<a name="236820079"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/doctrines/near/236820079" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Morgan Rogers (he/him) <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/doctrines.html#236820079">(Apr 30 2021 at 11:22)</a>:</h4>
+<p>Where? All I can see is the same claim that the result is small without justification <span aria-label="speechless" class="emoji emoji-1f636" role="img" title="speechless">:speechless:</span></p>
+
+
+
+<a name="236820429"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/doctrines/near/236820429" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Morgan Rogers (he/him) <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/doctrines.html#236820429">(Apr 30 2021 at 11:26)</a>:</h4>
+<p>For example, they say in the very next section that the idempotent completion of a category <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>C</mi></mrow><annotation encoding="application/x-tex">C</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathnormal" style="margin-right:0.07153em;">C</span></span></span></span> consists of all retract of representables in <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi mathvariant="normal">P</mi><mi mathvariant="normal">S</mi><mi mathvariant="normal">h</mi></mrow><mo stretchy="false">(</mo><mi>C</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">\mathrm{PSh}(C)</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord"><span class="mord mathrm">PSh</span></span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.07153em;">C</span><span class="mclose">)</span></span></span></span> and that this is "clearly small if <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>C</mi></mrow><annotation encoding="application/x-tex">C</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathnormal" style="margin-right:0.07153em;">C</span></span></span></span> is", but again the axiom of replacement makes that false. Is it just that Kelly has a very loose meaning of "small"?</p>
+
+
+
+<a name="236820663"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/doctrines/near/236820663" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Morgan Rogers (he/him) <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/doctrines.html#236820663">(Apr 30 2021 at 11:29)</a>:</h4>
+<p>In section 3.5 he even takes the closure of a full subcategory under colimits to be replete, so it seems like there must be some other subtlety I'm missing</p>
+
+
+
+<a name="236821574"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/doctrines/near/236821574" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nathanael Arkor <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/doctrines.html#236821574">(Apr 30 2021 at 11:38)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="277473">Morgan Rogers (he/him)</span> <a href="#narrow/stream/229136-theory.3A-category.20theory/topic/doctrines/near/236820079">said</a>:</p>
+<blockquote>
+<p>Where? All I can see is the same claim that the result is small without justification <span aria-label="speechless" class="emoji emoji-1f636" role="img" title="speechless">:speechless:</span></p>
+</blockquote>
+<p>Oh, actually 3.5 is where he talks about it in more detail, but I didn't look too closely at it. I agree it doesn't address your concern…</p>
+
+
+
+<a name="236821813"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/doctrines/near/236821813" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nathanael Arkor <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/doctrines.html#236821813">(Apr 30 2021 at 11:41)</a>:</h4>
+<p><a href="/user_uploads/21317/14vhAVtWtUfyWfpdHht9q_jp/image.png">image.png</a></p>
+<div class="message_inline_image"><a href="/user_uploads/21317/14vhAVtWtUfyWfpdHht9q_jp/image.png" title="image.png"><img src="/user_uploads/21317/14vhAVtWtUfyWfpdHht9q_jp/image.png"></a></div>
+
+
+
+<a name="236822544"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/doctrines/near/236822544" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Morgan Rogers (he/him) <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/doctrines.html#236822544">(Apr 30 2021 at 11:49)</a>:</h4>
+<p>Thanks for finding the relevant passage!!</p>
+
+
+
+<a name="236822667"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/doctrines/near/236822667" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nathanael Arkor <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/doctrines.html#236822667">(Apr 30 2021 at 11:50)</a>:</h4>
+<p>I shall eagerly await your upcoming paper, <em>Constructive colimit completions</em>.</p>
+
+
+
+<a name="236822788"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/doctrines/near/236822788" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Morgan Rogers (he/him) <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/doctrines.html#236822788">(Apr 30 2021 at 11:52)</a>:</h4>
+<p>So I just need to work in essentially small categories and try not to worry about their extent... It's an emotional blow, but I'll survive</p>
+
+
+
+<a name="236823415"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/doctrines/near/236823415" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Morgan Rogers (he/him) <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/doctrines.html#236823415">(Apr 30 2021 at 11:58)</a>:</h4>
+<p>I'll bet this breaks all of the results about existence of pseudo-limits and bicolimits in this category too <span aria-label="face palm" class="emoji emoji-1f926" role="img" title="face palm">:face_palm:</span></p>
+
+
+
+<a name="236823450"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/doctrines/near/236823450" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nathanael Arkor <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/doctrines.html#236823450">(Apr 30 2021 at 11:58)</a>:</h4>
+<p>Are you working internally? Is that why you're more careful about these concerns?</p>
+
+
+
+<a name="236824027"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/doctrines/near/236824027" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Morgan Rogers (he/him) <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/doctrines.html#236824027">(Apr 30 2021 at 12:03)</a>:</h4>
+<p>No, it's not of critical importance, I just didn't expect to have to go beyond the 2-category of small categories with pullbacks in order to construct these colimits. I basically wanted to examine (the dual of) Beck-Chevalley conditions, and so needed some pushout squares to hand.</p>
+
+
+
+<a name="236824306"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/doctrines/near/236824306" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nathanael Arkor <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/doctrines.html#236824306">(Apr 30 2021 at 12:06)</a>:</h4>
+<p>If you're happy to use AC, can't you take the essentially small category exhibiting the completion, and then take a small category to which it's equivalent? Then you can continue to work in that 2-category.</p>
+
+
+
+<a name="236824598"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/doctrines/near/236824598" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Morgan Rogers (he/him) <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/doctrines.html#236824598">(Apr 30 2021 at 12:09)</a>:</h4>
+<p>I may be mixing up dimensions here, but I think that still reduces the 2-adjunction to merely being a biadjunction.</p>
+
+
+
+<a name="236824712"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/doctrines/near/236824712" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Morgan Rogers (he/him) <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/doctrines.html#236824712">(Apr 30 2021 at 12:10)</a>:</h4>
+<p>And if so it seems likely I will need different references in order to deduce the (co)completeness properties...</p>
+
+
+
+<a name="236824773"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/doctrines/near/236824773" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nathanael Arkor <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/doctrines.html#236824773">(Apr 30 2021 at 12:11)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="277473">Morgan Rogers (he/him)</span> <a href="#narrow/stream/229136-theory.3A-category.20theory/topic/doctrines/near/236824598">said</a>:</p>
+<blockquote>
+<p>I may be mixing up dimensions here, but I think that still reduces the 2-adjunction to merely being a biadjunction.</p>
+</blockquote>
+<p>Oh, that's probably right…</p>
+
+
+
+<a name="236824959"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/doctrines/near/236824959" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Morgan Rogers (he/him) <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/doctrines.html#236824959">(Apr 30 2021 at 12:13)</a>:</h4>
+<p>I expect the results I need will still hold, it's just a non-trivial amount of work to dig them up. I prefer to accept essential smallness and then sweep the size issues under the rug once I've justified the results I need.</p>
+
+
+
+<a name="236825076"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/doctrines/near/236825076" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nathanael Arkor <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/doctrines.html#236825076">(Apr 30 2021 at 12:14)</a>:</h4>
+<blockquote>
+<p>I expect the results I need will still hold, it's just a non-trivial amount of work to dig them up.</p>
+</blockquote>
+<p>Considering this is supposed to be the main result of Kelly–Lack, I imagine there is a resolution; maybe it'd be worth asking Steve Lack directly.</p>
+
+
+
+<a name="236825540"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/doctrines/near/236825540" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Morgan Rogers (he/him) <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/doctrines.html#236825540">(Apr 30 2021 at 12:19)</a>:</h4>
+<p>Will do; I'll report back later.</p>
+
+
+
+<a name="236832619"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/doctrines/near/236832619" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/doctrines.html#236832619">(Apr 30 2021 at 13:20)</a>:</h4>
+<p>Constructing a free cocompletion as a closure in the presheaf category will generally only give you a pseudomonad rather than a 2-monad; this isn't really related to the fact that you have to construct the closure carefully to get a small category rather than an essentially small one.  The way to get a 2-monad is to consider colimits as an algebraic structure, such as in 5.6 of Lack's <a href="https://arxiv.org/abs/math/0702535">A 2-categories companion</a>.</p>
+
+
+
+<a name="236834027"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/doctrines/near/236834027" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Morgan Rogers (he/him) <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/doctrines.html#236834027">(Apr 30 2021 at 13:31)</a>:</h4>
+<p>Once again, that seems to be what I was looking for, at least in the form of an example. Do you know of a more systematic treatment, <span class="user-mention" data-user-id="276777">@Mike Shulman</span>?</p>
+
+
+
+<a name="236834228"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/doctrines/near/236834228" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Morgan Rogers (he/him) <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/doctrines.html#236834228">(Apr 30 2021 at 13:32)</a>:</h4>
+<p>(I'll scan through the 2-categories companion in case it's actually in there already)</p>
+
+
+
+<a name="236835564"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/doctrines/near/236835564" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nathanael Arkor <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/doctrines.html#236835564">(Apr 30 2021 at 13:41)</a>:</h4>
+<blockquote>
+<p>The way to get a 2-monad is to consider colimits as an algebraic structure, such as in 5.6 of Lack's A 2-categories companion.</p>
+</blockquote>
+<p>But this is exactly the motivation behind the Kelly–Lack paper, so the construction there ought to work.</p>
+
+
+
+<a name="236835773"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/doctrines/near/236835773" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nathanael Arkor <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/doctrines.html#236835773">(Apr 30 2021 at 13:42)</a>:</h4>
+<p>They're not using closure of representables in their proofs, but they are citing Kelly for some standard results about cocompletions which <em>do</em> use closure of representables.</p>
+
+
+
+<a name="236835833"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/doctrines/near/236835833" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nathanael Arkor <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/doctrines.html#236835833">(Apr 30 2021 at 13:43)</a>:</h4>
+<p>And the question is then whether this actually causes problems or not.</p>
+
+
+
+<a name="236838209"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/doctrines/near/236838209" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Morgan Rogers (he/him) <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/doctrines.html#236838209">(Apr 30 2021 at 13:59)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="277473">Morgan Rogers (he/him)</span> <a href="#narrow/stream/229136-theory.3A-category.20theory/topic/doctrines/near/236834228">said</a>:</p>
+<blockquote>
+<p>(I'll scan through the 2-categories companion in case it's actually in there already)</p>
+</blockquote>
+<p>It's not, and at least one of the references to Kelly at the end of the section uses the same <em>small = essentially small</em> convention... Hmmm</p>
+
+
+
+<a name="236841247"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/doctrines/near/236841247" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Morgan Rogers (he/him) <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/doctrines.html#236841247">(Apr 30 2021 at 14:19)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="276092">Nathanael Arkor</span> <a href="#narrow/stream/229136-theory.3A-category.20theory/topic/doctrines/near/236835833">said</a>:</p>
+<blockquote>
+<p>And the question is then whether this actually causes problems or not.</p>
+</blockquote>
+<p>It's certainly causing me a headache. I guess I'm a 1-person after all and hadn't realised it...</p>
+
+
+
+<a name="236842099"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/doctrines/near/236842099" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/doctrines.html#236842099">(Apr 30 2021 at 14:24)</a>:</h4>
+<p>Can you point exactly to where in Kelly-Lack you're worried about?</p>
+
+
+
+<a name="236842392"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/doctrines/near/236842392" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/doctrines.html#236842392">(Apr 30 2021 at 14:26)</a>:</h4>
+<p>Note that in the introduction they mention that Kelly-Cruerer "On the monadicity over graphs of categories with limits" proves the case of ordinary (co)limits.  I don't think I've read that paper, but you could have a look at it too.</p>
+
+
+
+<a name="236842919"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/doctrines/near/236842919" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/doctrines.html#236842919">(Apr 30 2021 at 14:29)</a>:</h4>
+<p>In general, it looks like Kelly-Lack use the closure-of-representables definition, suitably modified to be small, to obtain a left <em>biadjoint</em> to some functor, and then operate on this further to produce a strict left 2-adjoint to the desired functor.  So there shouldn't be any problem.</p>
+
+
+
+<a name="236843695"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/doctrines/near/236843695" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Morgan Rogers (he/him) <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/doctrines.html#236843695">(Apr 30 2021 at 14:35)</a>:</h4>
+<p>So, on the third page of the <a href="http://www.numdam.org/article/CTGDC_1997__38_3_179_0.pdf">Kelly-Creurer paper</a>, they observe that one can present the theory of limits in a class <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>M</mi></mrow><annotation encoding="application/x-tex">M</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathnormal" style="margin-right:0.10903em;">M</span></span></span></span> in terms of operations of arities up to <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>M</mi><mo>×</mo><mn mathvariant="bold">3</mn></mrow><annotation encoding="application/x-tex">M \times \mathbf{3}</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.76666em;vertical-align:-0.08333em;"></span><span class="mord mathnormal" style="margin-right:0.10903em;">M</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">×</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord mathbf">3</span></span></span></span>, which they spell out, and then conclude the monadicity outright without mention of any specific result, although there are a bunch of references crammed into the preceding paragraph.</p>
+
+
+
+<a name="236845640"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/doctrines/near/236845640" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Morgan Rogers (he/him) <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/doctrines.html#236845640">(Apr 30 2021 at 14:48)</a>:</h4>
+<p>The main reference for monadicity there seems to be <a href="https://www.sciencedirect.com/science/article/pii/0022404993900928">this Kelly &amp; Power paper</a> which <em>again</em> sneaks in the essential smallness, in Section 5!</p>
+
+
+
+<a name="236846017"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/doctrines/near/236846017" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/doctrines.html#236846017">(Apr 30 2021 at 14:51)</a>:</h4>
+<p>What exactly are you worried about?  Are you trying to avoid using the axiom of choice to replace an essentially small category by a small one?</p>
+
+
+
+<a name="236846381"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/doctrines/near/236846381" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Morgan Rogers (he/him) <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/doctrines.html#236846381">(Apr 30 2021 at 14:54)</a>:</h4>
+<p>I'm not worried, exactly, it just makes me uncomfortable that I should have to appeal to choice to verify monadicity of even finitary completions of small categories.</p>
+
+
+
+<a name="236846557"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/doctrines/near/236846557" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/doctrines.html#236846557">(Apr 30 2021 at 14:55)</a>:</h4>
+<p>I'm pretty sure that Lack's construction doesn't depend on any of this, as it doesn't make any reference to the construction via closure.</p>
+
+
+
+<a name="236846740"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/doctrines/near/236846740" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Morgan Rogers (he/him) <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/doctrines.html#236846740">(Apr 30 2021 at 14:56)</a>:</h4>
+<p>That's what I think too! In the finitary case at the very least, this theory should be doable constructively. But there's no explicit version of this in the literature that doesn't go through Kelly at some point or other, is there?</p>
+
+
+
+<a name="236847234"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/doctrines/near/236847234" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Morgan Rogers (he/him) <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/doctrines.html#236847234">(Apr 30 2021 at 14:59)</a>:</h4>
+<p>Ultimately it doesn't matter for my application, because I can just take the 2-category of essentially small categories with pullbacks, but I wish there was a neater account of all this that I could refer to.</p>
+
+
+
+<a name="236847742"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/doctrines/near/236847742" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/doctrines.html#236847742">(Apr 30 2021 at 15:01)</a>:</h4>
+<p>You mean, you want someone to have written out explicitly a presentation of a monad for more general limits or colimits in the style of Lack 5.6?</p>
+
+
+
+<a name="236848888"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/doctrines/near/236848888" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/doctrines.html#236848888">(Apr 30 2021 at 15:04)</a>:</h4>
+<p>There's a sketch of the construction for pullbacks in section 3 of Kelly-Dubuc <a href="https://www.sciencedirect.com/science/article/pii/0021869383901977">A presentation of topoi as algebraic relative to categories or graphs</a>.</p>
+
+
+
+<a name="236851820"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/doctrines/near/236851820" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nathanael Arkor <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/doctrines.html#236851820">(Apr 30 2021 at 15:17)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="276777">Mike Shulman</span> <a href="#narrow/stream/229136-theory.3A-category.20theory/topic/doctrines/near/236846557">said</a>:</p>
+<blockquote>
+<p>I'm pretty sure that Lack's construction doesn't depend on any of this, as it doesn't make any reference to the construction via closure.</p>
+</blockquote>
+<p>Doesn't it use the construction via closure (by reference to Kelly) to prove the existence of a left biadjoint, which is valid only because one can use choice to cut an essentially small category down to a small category?</p>
+
+
+
+<a name="236851990"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/doctrines/near/236851990" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nathanael Arkor <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/doctrines.html#236851990">(Apr 30 2021 at 15:17)</a>:</h4>
+<p>(I may very well be completely misinterpreting the proof!)</p>
+
+
+
+<a name="236852212"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/doctrines/near/236852212" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nathanael Arkor <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/doctrines.html#236852212">(Apr 30 2021 at 15:19)</a>:</h4>
+<p>Strictly speaking, shouldn't it follow that it is the 2-category of essentially small categories with <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">Φ</mi></mrow><annotation encoding="application/x-tex">\Phi</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord">Φ</span></span></span></span>-colimits that is pseudomonadic over the 2-category of small categories?</p>
+
+
+
+<a name="236856125"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/doctrines/near/236856125" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/doctrines.html#236856125">(Apr 30 2021 at 15:43)</a>:</h4>
+<p>I'm not talking about the Kelly-Lack paper.  I'm talking about the explicit construction of a 2-monad whose algebras are categories with a chosen terminal object in section 5.6 of Lack's "2-categories companion".  There is no reference to biadjoints or closures there.</p>
+
+
+
+<a name="236857344"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/doctrines/near/236857344" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/doctrines.html#236857344">(Apr 30 2021 at 15:51)</a>:</h4>
+<p>However, in generality these results do depend on choice in a different way, namely in the existence of free monads and colimits of monads.  In general, these facts require <a href="https://ncatlab.org/nlab/show/transfinite+construction+of+free+algebras">transfinite constructions</a>, which -- again, in general -- depend on choice.  Indeed, it's known (at least assuming the consistency of some large cardinal axioms) that there are infinitary algebraic theories that cannot be proven to have free algebras (and hence not monadic) in ZF.  (This is in Blass's paper "Words, coequalizers, and free algebras".)</p>
+
+
+
+<a name="236857534"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/doctrines/near/236857534" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/doctrines.html#236857534">(Apr 30 2021 at 15:52)</a>:</h4>
+<p>Problems like this don't come up for finitary theories, at least on Set, so I would expect that the cases of categories with <em>finite</em> limits or colimits can be constructed more explicitly without any choice.  But I don't know if anyone has done it.</p>
+
+
+
+<a name="236857674"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/doctrines/near/236857674" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nathanael Arkor <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/doctrines.html#236857674">(Apr 30 2021 at 15:53)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="276777">Mike Shulman</span> <a href="#narrow/stream/229136-theory.3A-category.20theory/topic/doctrines/near/236856125">said</a>:</p>
+<blockquote>
+<p>I'm not talking about the Kelly-Lack paper.  I'm talking about the explicit construction of a 2-monad whose algebras are categories with a chosen terminal object in section 5.6 of Lack's "2-categories companion".  There is no reference to biadjoints or closures there.</p>
+</blockquote>
+<p>Oh, I see, yes.</p>
+
+
+
+<a name="236859306"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/doctrines/near/236859306" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Morgan Rogers (he/him) <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/doctrines.html#236859306">(Apr 30 2021 at 16:04)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="276777">Mike Shulman</span> <a href="#narrow/stream/229136-theory.3A-category.20theory/topic/doctrines/near/236848888">said</a>:</p>
+<blockquote>
+<p>There's a sketch of the construction for pullbacks in section 3 of Kelly-Dubuc <a href="https://www.sciencedirect.com/science/article/pii/0021869383901977">A presentation of topoi as algebraic relative to categories or graphs</a>.</p>
+</blockquote>
+<p>Yet another helpful reference, I am very grateful. In the final section they point to paper of Kelly (which doesn't seem to exist?) for showing that an equational presentation of a class of categories is actually monadic; I suspect that Kelly would have resorted to the same appeal to closure in presheaves there.<br>
+But the equational presentation in Section 3 doesn't obviously rely on it, so as you say it should be provably monadic by more elementary means. This is like a 2-categorical lifting of sketches (the paper of Burroni that they reference even more so), which is pleasant.</p>
+
+
+
+<a name="236859407"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/doctrines/near/236859407" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nathanael Arkor <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/doctrines.html#236859407">(Apr 30 2021 at 16:05)</a>:</h4>
+<p>I would have thought the approach by Lack would fit into the "Lawvere 2-theories" framework of Lack–Power. Unfortunately, there are only <a href="http://compose.ioc.ee/git/fouche/prof-semantics/raw/commit/28dab1d1fc37e230320ec90c1d7f361ca18ca3bc/papers/POWER_LACK_lawvere_2_theories.pdf">slides so far</a>.</p>
+
+
+
+<a name="236860314"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/doctrines/near/236860314" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Joe Moeller <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/doctrines.html#236860314">(Apr 30 2021 at 16:11)</a>:</h4>
+<p>I haven't been following this discussion closely, but I was thinking about Lawvere 2-theories a while ago, and these are the two papers I have in my notes for it:</p>
+<ul>
+<li>
+<p>Noson S. Yanofsky, The Syntax of Coherence, Cahiers de Topo. Geom. Diff. Cat. Vol XLI-4 Pgs 255 - 304, 2000. arxiv:9910006</p>
+</li>
+<li>
+<p>Rory B. B. Lucyshyn-Wright, Enriched algebraic theories and monads for a system of arities, Theory and Applications of Categories, Vol. 31, 2016, No. 5, pp 101-137. arXiv:1511.02920</p>
+</li>
+</ul>
+
+
+
+<a name="236860430"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/doctrines/near/236860430" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Morgan Rogers (he/him) <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/doctrines.html#236860430">(Apr 30 2021 at 16:12)</a>:</h4>
+<p>I just came across this one too<br>
+<a href="http://www.tac.mta.ca/tac/volumes/6/n7/n7.pdf">http://www.tac.mta.ca/tac/volumes/6/n7/n7.pdf</a></p>
+
+
+
+<a name="236860677"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/doctrines/near/236860677" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nathanael Arkor <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/doctrines.html#236860677">(Apr 30 2021 at 16:14)</a>:</h4>
+<p>Enriched algebraic theories aren't sufficient, because you want to consider pseudomorphisms.</p>
+
+
+
+<a name="236860761"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/doctrines/near/236860761" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nathanael Arkor <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/doctrines.html#236860761">(Apr 30 2021 at 16:14)</a>:</h4>
+<p>If I remember correctly, Yanofsky only considers strict morphisms too?</p>
+
+
+
+<a name="236860848"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/doctrines/near/236860848" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nathanael Arkor <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/doctrines.html#236860848">(Apr 30 2021 at 16:14)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="276092">Nathanael Arkor</span> <a href="#narrow/stream/229136-theory.3A-category.20theory/topic/doctrines/near/236860677">said</a>:</p>
+<blockquote>
+<p>Enriched algebraic theories aren't sufficient, because you want to consider pseudomorphisms.</p>
+</blockquote>
+<p>(Though maybe these approaches would be a good starting point.)</p>
+
+
+
+<a name="236861021"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/doctrines/near/236861021" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Morgan Rogers (he/him) <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/doctrines.html#236861021">(Apr 30 2021 at 16:15)</a>:</h4>
+<p>No no, as long as I have monadicity for the strict things, I can use Blackwell-Kelly-Power to deduce the results I want for the categories with ordinary morphisms!</p>
+
+
+
+<a name="236866557"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/doctrines/near/236866557" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Morgan Rogers (he/him) <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/doctrines.html#236866557">(Apr 30 2021 at 16:55)</a>:</h4>
+<p>I think all of the pieces are here, even if they aren't explicitly put together by anyone. This isn't so surprising given that there's a lengthy set-up any time someone writes a new paper on 2-category theory; in order to sustain any momentum at all, one must have to lean fairly heavily on existing literature.<br>
+Ultimately, I think there is a lot buried in this abstract treatment. Take Lack's example of the theory of categories with a terminal object, for example: the data required to specify the 2-theory is significantly more voluminous than one might expect, and yet in practice the free terminal-object completion of a category is extremely simple to describe. While I intend to weave a path through the literature in order to extract the general existence results for my case of interest, I intend to get my hands dirty to provide an explicit construction of the free pullback-completion.</p>
+
+
+
+<a name="236877157"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/doctrines/near/236877157" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/doctrines.html#236877157">(Apr 30 2021 at 18:04)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="277473">Morgan Rogers (he/him)</span> <a href="#narrow/stream/229136-theory.3A-category.20theory/topic/doctrines/near/236861021">said</a>:</p>
+<blockquote>
+<p>No no, as long as I have monadicity for the strict things, I can use Blackwell-Kelly-Power to deduce the results I want for the categories with ordinary morphisms!</p>
+</blockquote>
+<p>At least as long as you have <em>enriched</em> monadicity, i.e. 2-monadicity.</p>
+
+
+
+<a name="236892497"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/doctrines/near/236892497" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Morgan Rogers (he/him) <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/doctrines.html#236892497">(Apr 30 2021 at 19:57)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="276092">Nathanael Arkor</span> <a href="#narrow/stream/229136-theory.3A-category.20theory/topic/doctrines/near/236822667">said</a>:</p>
+<blockquote>
+<p>I shall eagerly await your upcoming paper, <em>Constructive colimit completions</em>.</p>
+</blockquote>
+<p>I know this was originally a tongue-in-cheek comment, but would either of you (<span class="user-mention" data-user-id="276777">@Mike Shulman</span>, <span class="user-mention" data-user-id="276092">@Nathanael Arkor</span>) be interested in collaborating in a short paper to this effect in the near future, depending on what Stephen Lack's response is? Since I'm going to be doing it anyway and the two of you seem better-versed in the relevant issues and literature, I figure I might as well ask.</p>
+
+
+
+<a name="236897607"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/doctrines/near/236897607" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Spencer Breiner <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/doctrines.html#236897607">(Apr 30 2021 at 20:35)</a>:</h4>
+<p><a href="https://xkcd.com/2456/">Relevant</a><br>
+<a href="/user_uploads/21317/GfzOEQZkPrLh5IAAbv2ncMrI/image.png">image.png</a></p>
+<div class="message_inline_image"><a href="/user_uploads/21317/GfzOEQZkPrLh5IAAbv2ncMrI/image.png" title="image.png"><img src="/user_uploads/21317/GfzOEQZkPrLh5IAAbv2ncMrI/image.png"></a></div>
+
+
+
+<a name="236924718"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/doctrines/near/236924718" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nathanael Arkor <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/doctrines.html#236924718">(May 01 2021 at 01:31)</a>:</h4>
+<p><span class="user-mention" data-user-id="277473">@Morgan Rogers (he/him)</span>: now that you've pointed it out, it's definitely an issue I'd like to see resolved. I'd be interested in discussing the neatest way to approach this.</p>
+
+
+
+<a name="236924777"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/doctrines/near/236924777" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nathanael Arkor <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/doctrines.html#236924777">(May 01 2021 at 01:32)</a>:</h4>
+<p>I'd also be very interested to know why this theorem holds conceptually: what properties do you need in an arbitrary 2-category K (with enough structure to talk about weighted colimits, e.g. a proarrow equipment, or a KZ doctrine) for objects admitting a class of weighted colimits to be 2-monadic? Is it enough for K to be locally presentable, for instance?</p>
+
+
+
+<a name="236924796"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/doctrines/near/236924796" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nathanael Arkor <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/doctrines.html#236924796">(May 01 2021 at 01:33)</a>:</h4>
+<p>But this is straying quite far from the concrete applications you have in mind :)</p>
+
+
+
+<a name="236957585"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/doctrines/near/236957585" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Morgan Rogers (he/him) <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/doctrines.html#236957585">(May 01 2021 at 10:50)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="277473">Morgan Rogers (he/him)</span> <a href="#narrow/stream/229136-theory.3A-category.20theory/topic/doctrines/near/236892497">said</a>:</p>
+<blockquote>
+<p><span class="user-mention silent" data-user-id="276092">Nathanael Arkor</span> <a href="#narrow/stream/229136-theory.3A-category.20theory/topic/doctrines/near/236822667">said</a>:</p>
+<blockquote>
+<p>I shall eagerly await your upcoming paper, <em>Constructive colimit completions</em>.</p>
+</blockquote>
+<p>I know this was originally a tongue-in-cheek comment, but would either of you (<span class="user-mention silent" data-user-id="276777">Mike Shulman</span>, <span class="user-mention silent" data-user-id="276092">Nathanael Arkor</span>) be interested in collaborating in a short paper to this effect in the near future, depending on what Steve Lack's response is? Since I'm going to be doing it anyway and the two of you seem better-versed in the relevant issues and literature, I figure I might as well ask.</p>
+</blockquote>
+<p>Anyone else reading this who wants to be involved is equally welcome; message me directly if you prefer <span aria-label="grinning face with smiling eyes" class="emoji emoji-1f601" role="img" title="grinning face with smiling eyes">:grinning_face_with_smiling_eyes:</span></p>
+
+
+
+<a name="236966383"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/doctrines/near/236966383" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Tim Campion <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/doctrines.html#236966383">(May 01 2021 at 13:18)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="276092">Nathanael Arkor</span> <a href="#narrow/stream/229136-theory.3A-category.20theory/topic/doctrines/near/236924777">said</a>:</p>
+<blockquote>
+<p>I'd also be very interested to know why this theorem holds conceptually: what properties do you need in an arbitrary 2-category K (with enough structure to talk about weighted colimits, e.g. a proarrow equipment, or a KZ doctrine) for objects admitting a class of weighted colimits to be 2-monadic? Is it enough for K to be locally presentable, for instance?</p>
+</blockquote>
+<p>I have not followed this whole conversation, but you might be interested in Power-Cattani-Winskel's "Representation result for free cocompletions" <a href="https://doi.org/10.1016/S0022-4049(99)00063-8">https://doi.org/10.1016/S0022-4049(99)00063-8</a> which shows that under some additional hypotheses, <em>every</em> KZ doctrine is a free cocompletion.</p>
+
+
+
+<a name="236966397"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/doctrines/near/236966397" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Tim Campion <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/doctrines.html#236966397">(May 01 2021 at 13:19)</a>:</h4>
+<p>Sort of the opposite direction from what you're asking, I suppose.</p>
+
+
+
+<a name="236968163"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/doctrines/near/236968163" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nathanael Arkor <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/doctrines.html#236968163">(May 01 2021 at 13:47)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="277991">Tim Campion</span> <a href="#narrow/stream/229136-theory.3A-category.20theory/topic/doctrines/near/236966383">said</a>:</p>
+<blockquote>
+<p><span class="user-mention silent" data-user-id="276092">Nathanael Arkor</span> <a href="#narrow/stream/229136-theory.3A-category.20theory/topic/doctrines/near/236924777">said</a>:</p>
+<blockquote>
+<p>I'd also be very interested to know why this theorem holds conceptually: what properties do you need in an arbitrary 2-category K (with enough structure to talk about weighted colimits, e.g. a proarrow equipment, or a KZ doctrine) for objects admitting a class of weighted colimits to be 2-monadic? Is it enough for K to be locally presentable, for instance?</p>
+</blockquote>
+<p>I have not followed this whole conversation, but you might be interested in Power-Cattani-Winskel's "Representation result for free cocompletions" <a href="https://doi.org/10.1016/S0022-4049(99)00063-8">https://doi.org/10.1016/S0022-4049(99)00063-8</a> which shows that under some additional hypotheses, <em>every</em> KZ doctrine is a free cocompletion.</p>
+</blockquote>
+<p>Yes, this is just as interesting. It would be good to be able to have an exact correspondence between cocompletions and nice KZ doctrines on a nice 2-category.</p>
+
+
+
+<a name="237012524"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/doctrines/near/237012524" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/doctrines.html#237012524">(May 02 2021 at 00:21)</a>:</h4>
+<p>I'm happy to continue chatting about it, whatever is helpful.  I doubt I'll have the time to invest in being a coauthor, but once it's finished you can ask again if you think I contributed a lot.  (-:</p>
+
+
+
+<a name="237170963"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/doctrines/near/237170963" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Morgan Rogers (he/him) <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/doctrines.html#237170963">(May 03 2021 at 14:41)</a>:</h4>
+<p>Nathanael and I have taken it to private messages, but we might report back sooner or later :-)</p>
+
+
+
+<a name="237450884"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/doctrines/near/237450884" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Morgan Rogers (he/him) <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/doctrines.html#237450884">(May 05 2021 at 07:14)</a>:</h4>
+<p>I got a reply from Steve Lack; I'm awaiting his permission to share it here <span aria-label="smile" class="emoji emoji-1f642" role="img" title="smile">:smile:</span></p>
+
+
+
+{% endraw %}
+
+<hr><p>Last updated: Feb 07 2022 at 21:54 UTC</p>

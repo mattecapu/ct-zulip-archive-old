@@ -1,0 +1,122 @@
+---
+layout: archive
+title: Zulip Chat Archive
+permalink: /stream/229199-learning:-questions/topic/Generalization.20of.20operads.html
+---
+
+<h2>Stream: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/index.html">learning: questions</a></h2>
+<h3>Topic: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/Generalization.20of.20operads.html">Generalization of operads</a></h3>
+
+<hr>
+
+<base href="https://categorytheory.zulipchat.com/">
+
+{% raw %}
+
+<a name="199965049"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/Generalization%20of%20operads/near/199965049" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Asad Saeeduddin <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/Generalization.20of.20operads.html#199965049">(Jun 06 2020 at 09:16)</a>:</h4>
+<p>Is it possible to substitute the natural numbers that occur in the definition of (non-symmetric, symmetric, colored) operads with some other monoid?</p>
+
+
+
+<a name="199972215"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/Generalization%20of%20operads/near/199972215" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Pastel Raschke <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/Generalization.20of.20operads.html#199972215">(Jun 06 2020 at 12:17)</a>:</h4>
+<p>i believe that would fall under <a href="https://ncatlab.org/nlab/show/generalized+multicategory">generalized multicategories</a></p>
+
+
+
+<a name="199972310"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/Generalization%20of%20operads/near/199972310" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Pastel Raschke <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/Generalization.20of.20operads.html#199972310">(Jun 06 2020 at 12:20)</a>:</h4>
+<blockquote>
+<p>Multicategories are monads in a bicategory of spans of shape X←R→Y* where Y* is the set of finite lists of elements of Y. In order to compose spans of this type, one uses the fact that (−)* has itself the structure of a monad on Set, namely the list monad or “free monoid” monad. The idea of a generalized multicategory is to replace this monad by some more general monad T.</p>
+</blockquote>
+
+
+
+<a name="199973165"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/Generalization%20of%20operads/near/199973165" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Asad Saeeduddin <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/Generalization.20of.20operads.html#199973165">(Jun 06 2020 at 12:37)</a>:</h4>
+<p>agghhhhhh, i was so proud of myself for working out this monad idea</p>
+
+
+
+<a name="199973171"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/Generalization%20of%20operads/near/199973171" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Asad Saeeduddin <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/Generalization.20of.20operads.html#199973171">(Jun 06 2020 at 12:37)</a>:</h4>
+<p>i was doing this in Agda just now:</p>
+<div class="codehilite"><pre><span></span><code>record Monad (m : Set ℓ → Set ℓ) : Set (suc ℓ)
+  where
+  field
+    {{functor}} : Functor m
+    pure : ∀ {a} → a → m a
+    join : ∀ {a} → m (m a) → m a
+    liftA2 : ∀ {a b c} → (a → b → c) → m a → m b → m c
+
+open Monad {{...}}
+
+record Singleton (m : Set (suc ℓ) → Set (suc ℓ)) : Set (suc ℓ)
+  where
+  field
+    sfunctor : m (Set ℓ) → Set ℓ
+
+open Singleton {{...}}
+
+record MultiCategory {m : Set (suc ℓ) → Set (suc ℓ)} (_⇒ₘ_ : m (Set ℓ) → Set ℓ → Set ℓ) : Set (suc (suc ℓ))
+  where
+  field
+    {{mm}} : Monad m
+    {{sm}} : Singleton m
+    idₘ : ∀ {a} → pure a ⇒ₘ a
+    _∘ₘ_ : ∀ {as} {bs} {c} → bs ⇒ₘ c → sfunctor (liftA2 {{mm}} _⇒ₘ_ as bs) → join as ⇒ₘ c
+</code></pre></div>
+
+
+
+<a name="199973175"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/Generalization%20of%20operads/near/199973175" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Asad Saeeduddin <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/Generalization.20of.20operads.html#199973175">(Jun 06 2020 at 12:37)</a>:</h4>
+<p>having started with lists for colored operads</p>
+
+
+
+<a name="199973305"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/Generalization%20of%20operads/near/199973305" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Peter Arndt <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/Generalization.20of.20operads.html#199973305">(Jun 06 2020 at 12:40)</a>:</h4>
+<p>I see no reason not to be proud...</p>
+
+
+
+<a name="199973389"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/Generalization%20of%20operads/near/199973389" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Asad Saeeduddin <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/Generalization.20of.20operads.html#199973389">(Jun 06 2020 at 12:42)</a>:</h4>
+<p>I just meant that I thought it was an original idea, but I've had this experience with ncatlab enough times that I should have known better</p>
+
+
+
+<a name="199973486"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/Generalization%20of%20operads/near/199973486" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Jacques Carette <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/Generalization.20of.20operads.html#199973486">(Jun 06 2020 at 12:45)</a>:</h4>
+<p><span class="user-mention" data-user-id="276050">@Asad Saeeduddin</span>  You should seriously consider contribution to <a href="https://github.com/agda/agda-categories">agda-categories</a> !  Right now, that library has an odd definition of 'Indexed Multicategory' only (<a href="https://github.com/agda/agda-categories/blob/master/src/Categories/Multi/Category/Indexed.agda">https://github.com/agda/agda-categories/blob/master/src/Categories/Multi/Category/Indexed.agda</a>), which was more 'natural' from a type-theoretic point of view.</p>
+<p>Of course, we'll want laws, not just Haskell-style lawless definitions...  And writing down the laws is where all the hard stuff comes in. The usual laws surreptitiously involve using a huge number of theorems as invisible rewrites.</p>
+
+
+
+<a name="199973565"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/Generalization%20of%20operads/near/199973565" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Asad Saeeduddin <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/Generalization.20of.20operads.html#199973565">(Jun 06 2020 at 12:47)</a>:</h4>
+<p>thanks for the pointer. I'm sure there's already law-equipped definitions of functor, monad etc. somewhere in the standard library that I should be relying on, I'll try to thread the evidence from those into it once I get up to at least one instance (probably multifunctions)</p>
+
+
+
+<a name="199973665"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/Generalization%20of%20operads/near/199973665" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Jacques Carette <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/Generalization.20of.20operads.html#199973665">(Jun 06 2020 at 12:49)</a>:</h4>
+<p>We're very open to all sorts of contributions - nothing too small. Last one I merged in was someone fixing a typo in a comment!  Any part of category theory we haven't done yet, we're happy to look at.  Also, some parts we have done can be critiqued-then-improved.</p>
+
+
+
+<a name="199974494"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/Generalization%20of%20operads/near/199974494" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> James Wood <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/Generalization.20of.20operads.html#199974494">(Jun 06 2020 at 13:13)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="276050">Asad Saeeduddin</span> <a href="#narrow/stream/229199-learning.3A-questions/topic/Generalization.20of.20operads/near/199973565">said</a>:</p>
+<blockquote>
+<p>I'm sure there's already law-equipped definitions of functor, monad etc. somewhere in the standard library</p>
+</blockquote>
+<p>I don't think there are, but I'm sure there are in agda-categories.</p>
+
+
+
+{% endraw %}
+
+<hr><p>Last updated: Feb 07 2022 at 21:54 UTC</p>

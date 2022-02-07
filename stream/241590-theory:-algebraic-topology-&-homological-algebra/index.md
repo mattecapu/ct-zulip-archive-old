@@ -9,7 +9,10 @@ permalink: /stream/241590-theory:-algebraic-topology-&-homological-algebra/index
 
 ### Topics:
 
-* [formal properties of the bar construction](topic/formal.20properties.20of.20the.20bar.20construction.html) (144 messages, latest: Jan 21 2022 at 17:33)
+* [non-normal group "extensions"](topic/non-normal.20group.20.22extensions.22.html) (3 messages, latest: Feb 07 2022 at 21:46)
+* [maximal nondegenerate simplices](topic/maximal.20nondegenerate.20simplices.html) (6 messages, latest: Feb 07 2022 at 12:56)
+* [Non-normal group "extensions"](topic/Non-normal.20group.20.22extensions.22.html) (1 message, latest: Feb 07 2022 at 01:40)
+* [formal properties of the bar construction](topic/formal.20properties.20of.20the.20bar.20construction.html) (145 messages, latest: Feb 04 2022 at 06:13)
 * [adjoint of the construction "graph of a simplicial set"](topic/adjoint.20of.20the.20construction.20.22graph.20of.20a.20simplicial.20set.22.html) (23 messages, latest: Jan 12 2022 at 18:04)
 * [trivial Kan fibrations](topic/trivial.20Kan.20fibrations.html) (8 messages, latest: Dec 28 2021 at 10:39)
 * [name for this variant of simplicial sets](topic/name.20for.20this.20variant.20of.20simplicial.20sets.html) (9 messages, latest: Dec 26 2021 at 18:56)
@@ -56,4 +59,4 @@ permalink: /stream/241590-theory:-algebraic-topology-&-homological-algebra/index
 * [simplicial sets](topic/simplicial.20sets.html) (1 message, latest: Jul 02 2020 at 11:05)
 * [Secondary algebraic K-theory](topic/Secondary.20algebraic.20K-theory.html) (13 messages, latest: Jun 01 2020 at 16:14)
 
-<hr><p>Last updated: Jan 30 2022 at 00:30 UTC</p>
+<hr><p>Last updated: Feb 07 2022 at 21:54 UTC</p>
