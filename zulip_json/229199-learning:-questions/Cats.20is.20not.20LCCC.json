@@ -1,0 +1,32 @@
+[
+    {
+        "content": "<p>I'm trying to work through that the category of categories is not locally cartesian closed.  One such <a href=\"https://ncatlab.org/michaelshulman/show/exponentials+in+a+2-category\">explicit proof</a> makes use of the fact that in LCCCs \"pullbacks preserve colimits\" (fourth paragraph of Definition section on <a href=\"https://ncatlab.org/nlab/show/locally+cartesian+closed+category\">nLab page on LCCC</a>.  My problem is, I don't see why that latter 'fact' is the case, and I can't find another source that is more explicit about that.</p>\n<p>I should not that proving that the first diagram in the above proof is actually a pushout is... tedious. The definition of the universal arrow and that it has the right properties is quite a bit of work. Furthermore, it's not even obvious, in the sense that this is real data in that arrow that can be defined incorrectly!</p>",
+        "id": 222865990,
+        "sender_full_name": "Jacques Carette",
+        "timestamp": 1610721922
+    },
+    {
+        "content": "<p>Pullbacks preserve colimits in a LCCC because each pullback functor <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msup><mi>f</mi><mo>∗</mo></msup></mrow><annotation encoding=\"application/x-tex\">f^*</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8888799999999999em;vertical-align:-0.19444em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.10764em;\">f</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.688696em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mbin mtight\">∗</span></span></span></span></span></span></span></span></span></span></span> has a right adjoint <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi mathvariant=\"normal\">Π</mi><mi>f</mi></msub></mrow><annotation encoding=\"application/x-tex\">\\Pi_f</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.969438em;vertical-align:-0.286108em;\"></span><span class=\"mord\"><span class=\"mord\">Π</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.3361079999999999em;\"><span style=\"top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathnormal mtight\" style=\"margin-right:0.10764em;\">f</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.286108em;\"><span></span></span></span></span></span></span></span></span></span>, and left adjoints preserve colimits.</p>",
+        "id": 222869484,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1610723183
+    },
+    {
+        "content": "<p>Ah, indeed. I'll need to make sure that the proof of all those pieces are around too. I think I've seen some of them [where by 'proof', I always mean fully formalized.]</p>",
+        "id": 222871661,
+        "sender_full_name": "Jacques Carette",
+        "timestamp": 1610723868
+    },
+    {
+        "content": "<p><span class=\"user-mention\" data-user-id=\"296322\">@Jacques Carette</span> To relieve the tedium of verifying that pushout, one thing to do is verify that the obvious analogue in the category of directed graphs is clearly a pushout (pushouts are computed \"pointwise\" or \"objectwise\" because directed graphs form a presheaf topos), and then apply the free category construction (taking paths in directed graphs). That free construction, being a left adjoint, preserves pushouts.</p>",
+        "id": 222872287,
+        "sender_full_name": "Todd Trimble",
+        "timestamp": 1610723998
+    },
+    {
+        "content": "<p>I will indeed try to do just that. Let's see if enough of these things are already implemented in agda-categories. I know some are. And they all ought to be.</p>",
+        "id": 222891600,
+        "sender_full_name": "Jacques Carette",
+        "timestamp": 1610731070
+    }
+]

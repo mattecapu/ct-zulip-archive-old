@@ -1,0 +1,128 @@
+[
+    {
+        "content": "<p>I've programmed in C++ a fair amount. What's aliasing? <span class=\"user-mention\" data-user-id=\"276072\">@sarahzrf</span></p>",
+        "id": 193068994,
+        "sender_full_name": "Joe Moeller",
+        "timestamp": 1586191572
+    },
+    {
+        "content": "<p>That would be references, I guess (and potentially also pointers)</p>",
+        "id": 193069291,
+        "sender_full_name": "Jules Hedges",
+        "timestamp": 1586191704
+    },
+    {
+        "content": "<p>There was some discussion on it in another stream since it has to do with Sarah's talk. There she said it had to do with pointers, and I guess something about having two distinct pointers point to the same thing.</p>",
+        "id": 193069900,
+        "sender_full_name": "Joe Moeller",
+        "timestamp": 1586191999
+    },
+    {
+        "content": "<p>Yeah, basically it refers to when two pointers point to the same thing or overlapping things, particularly when you didn't expect them to.</p>",
+        "id": 193070377,
+        "sender_full_name": "Reid Barton",
+        "timestamp": 1586192232
+    },
+    {
+        "content": "<p>What's the deal with these? What sorts of issues make people say \"oh what about aliasing?\"</p>",
+        "id": 193070534,
+        "sender_full_name": "Joe Moeller",
+        "timestamp": 1586192288
+    },
+    {
+        "content": "<p>(the underlying language-independent concept can also be called <em>names</em>, ie. having multiple names for the same thing)</p>",
+        "id": 193070654,
+        "sender_full_name": "Jules Hedges",
+        "timestamp": 1586192359
+    },
+    {
+        "content": "<p>Aliasing + destructive updates = headache. Somebody can do something to <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>x</mi></mrow><annotation encoding=\"application/x-tex\">x</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.43056em;vertical-align:0em;\"></span><span class=\"mord mathdefault\">x</span></span></span></span>, and suddenly <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>y</mi></mrow><annotation encoding=\"application/x-tex\">y</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.625em;vertical-align:-0.19444em;\"></span><span class=\"mord mathdefault\" style=\"margin-right:0.03588em;\">y</span></span></span></span> has changed. It means you can't reason lexically</p>",
+        "id": 193070837,
+        "sender_full_name": "Jules Hedges",
+        "timestamp": 1586192436
+    },
+    {
+        "content": "<p>For example if you want to optimize a for loop, you might want to know that updates you make in the body of the for loop don't affect the value of the upper bound of the loop.</p>",
+        "id": 193070969,
+        "sender_full_name": "Reid Barton",
+        "timestamp": 1586192522
+    },
+    {
+        "content": "<p>IIRC, copying an array is a classic thing that can be hit by aliasing. If source and target arrays overlap, the naïve algorithm will at some point start copying the start of the source array again, into the end of the target array (because it starts reading from the start of the target array, which has written over values from the source array).</p>",
+        "id": 193071802,
+        "sender_full_name": "James Wood",
+        "timestamp": 1586192924
+    },
+    {
+        "content": "<p>Or imagine you are implementing a function that takes pointers to three matrices <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi></mrow><annotation encoding=\"application/x-tex\">A</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathdefault\">A</span></span></span></span>, <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>B</mi></mrow><annotation encoding=\"application/x-tex\">B</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathdefault\" style=\"margin-right:0.05017em;\">B</span></span></span></span>, <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>C</mi></mrow><annotation encoding=\"application/x-tex\">C</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathdefault\" style=\"margin-right:0.07153em;\">C</span></span></span></span> and updates <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>C</mi></mrow><annotation encoding=\"application/x-tex\">C</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathdefault\" style=\"margin-right:0.07153em;\">C</span></span></span></span> according to the rule <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>C</mi><mo>:</mo><mo>=</mo><mi>C</mi><mo>+</mo><mi>A</mi><mi>B</mi></mrow><annotation encoding=\"application/x-tex\">C := C + A B</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathdefault\" style=\"margin-right:0.07153em;\">C</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">:</span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.36687em;vertical-align:0em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.76666em;vertical-align:-0.08333em;\"></span><span class=\"mord mathdefault\" style=\"margin-right:0.07153em;\">C</span><span class=\"mspace\" style=\"margin-right:0.2222222222222222em;\"></span><span class=\"mbin\">+</span><span class=\"mspace\" style=\"margin-right:0.2222222222222222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathdefault\">A</span><span class=\"mord mathdefault\" style=\"margin-right:0.05017em;\">B</span></span></span></span>.</p>",
+        "id": 193071825,
+        "sender_full_name": "Reid Barton",
+        "timestamp": 1586192935
+    },
+    {
+        "content": "<p>The obvious implementation won't work as claimed if the reference <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>C</mi></mrow><annotation encoding=\"application/x-tex\">C</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathdefault\" style=\"margin-right:0.07153em;\">C</span></span></span></span> is the same as either <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi></mrow><annotation encoding=\"application/x-tex\">A</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathdefault\">A</span></span></span></span> or <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>B</mi></mrow><annotation encoding=\"application/x-tex\">B</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathdefault\" style=\"margin-right:0.05017em;\">B</span></span></span></span> (but it's fine if <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi></mrow><annotation encoding=\"application/x-tex\">A</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathdefault\">A</span></span></span></span> and <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>B</mi></mrow><annotation encoding=\"application/x-tex\">B</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathdefault\" style=\"margin-right:0.05017em;\">B</span></span></span></span> are the same reference). A variant of James's example.</p>",
+        "id": 193071926,
+        "sender_full_name": "Reid Barton",
+        "timestamp": 1586193001
+    },
+    {
+        "content": "<p>Great, this is all making sense.</p>",
+        "id": 193071992,
+        "sender_full_name": "Joe Moeller",
+        "timestamp": 1586193017
+    },
+    {
+        "content": "<p>I had the sense that it should be a thing I encountered but just never saw a name put to it, and that's exactly what it was!</p>",
+        "id": 193072037,
+        "sender_full_name": "Joe Moeller",
+        "timestamp": 1586193042
+    },
+    {
+        "content": "<p>the standard issue with aliasing is that if the compiler cannot prove that pointers point to different things, it might have to reload a value from memory even when not necessary, because it cannot be sure that it hasn't been written by previous instructions</p>",
+        "id": 193101920,
+        "sender_full_name": "Paolo Capriotti",
+        "timestamp": 1586207208
+    },
+    {
+        "content": "<p>so C for example has a keyword (<code>restrict</code> IIRC) to instruct the compiler that it is allowed to assume that two pointers point to non-overlapping areas, so that certain optimisations can be applied</p>",
+        "id": 193102036,
+        "sender_full_name": "Paolo Capriotti",
+        "timestamp": 1586207269
+    },
+    {
+        "content": "<p>reid's example ties in great with the kind of thing i would want to illustrate, actually</p>",
+        "id": 193113980,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1586214414
+    },
+    {
+        "content": "<p>the kind of place you use separation logic in practice is generally for writing down specifications of the behavior of programs, such as saying \"this program really does add matrices\"</p>",
+        "id": 193114025,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1586214455
+    },
+    {
+        "content": "<p>but of course, if you wrote the obvious implementation, that specification just isn't true—what if the matrices you pass in alias?</p>",
+        "id": 193114056,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1586214479
+    },
+    {
+        "content": "<p>except that in separation logic, you can use \"separating conjunction\" instead of ordinary conjunction when necessary, and when you do so, you implicitly rule out such cases in your premise</p>",
+        "id": 193114136,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1586214528
+    },
+    {
+        "content": "<p>so that the case you naïvely had in mind now really <em>is</em> what you're saying with your specification</p>",
+        "id": 193114161,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1586214547
+    },
+    {
+        "content": "<p>the \"separation\" is as in \"separation of the resources underlying the matrices from one another\"</p>",
+        "id": 193114208,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1586214601
+    }
+]

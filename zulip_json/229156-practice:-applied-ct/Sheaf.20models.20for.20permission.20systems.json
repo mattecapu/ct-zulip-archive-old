@@ -1,0 +1,128 @@
+[
+    {
+        "content": "<p>Been thinking about sheaves a lot recently, and realized that they could be used potentially be used to model capability/permission systems for software systems. Does anyone have any papers/resources that explore this?</p>",
+        "id": 192582844,
+        "sender_full_name": "Reed Mullanix",
+        "timestamp": 1585770370
+    },
+    {
+        "content": "<p>I feel like this sounds very faintly familiar, like I saw a talk about it 2 years ago or something. But maybe I just imagined it, or had a conversation about it in a pub</p>",
+        "id": 192583370,
+        "sender_full_name": "Jules Hedges",
+        "timestamp": 1585770645
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276059\">Reed Mullanix</span> <a href=\"#narrow/stream/229156-applied-category.20theory/topic/Sheaf.20models.20for.20permission.20systems/near/192582844\" title=\"#narrow/stream/229156-applied-category.20theory/topic/Sheaf.20models.20for.20permission.20systems/near/192582844\">said</a>:</p>\n<blockquote>\n<p>Been thinking about sheaves a lot recently, and realized that they could be used potentially be used to model capability/permission systems for software systems. Does anyone have any papers/resources that explore this?</p>\n</blockquote>\n<p>What do you mean precisely with \"permission system\"?</p>",
+        "id": 192583559,
+        "sender_full_name": "Fabrizio Genovese",
+        "timestamp": 1585770753
+    },
+    {
+        "content": "<p>So for a very boring example, say you have some application where you have a bunch of actions that users can perform. However, we only want certain users to be able to perform certain actions.</p>",
+        "id": 192583977,
+        "sender_full_name": "Reed Mullanix",
+        "timestamp": 1585770954
+    },
+    {
+        "content": "<p>Let's call the ability to perform an action a \"capability\" (or \"permission). We can then consider some topology over these capabilities, and we can form functors to <code>Set</code> that describe the sets of actions that we can take.</p>",
+        "id": 192584445,
+        "sender_full_name": "Reed Mullanix",
+        "timestamp": 1585771151
+    },
+    {
+        "content": "<p>Though now that I think of it, perhaps stacks may be a better fit here, but I have an extremely fuzzy understanding of them</p>",
+        "id": 192584509,
+        "sender_full_name": "Reed Mullanix",
+        "timestamp": 1585771179
+    },
+    {
+        "content": "<p>well, why are you going for sheaves?</p>",
+        "id": 192607128,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1585785466
+    },
+    {
+        "content": "<p>do you already have a reason for there to be a topology? do you think that \"locality\" is a relevant  concern?</p>",
+        "id": 192607173,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1585785484
+    },
+    {
+        "content": "<p>There's naturally a topology on the actions if you arrange them in a graph or in a lattice, which seems very natural given the context. I'm more worried about the functorial part. The only meaningful way to carry actions into actions seems to be inclusion (Higher permission includes what lower permissions can do). But this makes the sheaf trivial.</p>",
+        "id": 192607706,
+        "sender_full_name": "Fabrizio Genovese",
+        "timestamp": 1585785979
+    },
+    {
+        "content": "<p>On the contrary, having a more complicated relationship on the actions may make the sheaf interpretation more difficult. Maybe you want a presheaf instead?</p>",
+        "id": 192607728,
+        "sender_full_name": "Fabrizio Genovese",
+        "timestamp": 1585786006
+    },
+    {
+        "content": "<p>I've thought about sheaves a lot as well, mainly for a similar but unrelated problem I'm investigating with <span class=\"user-mention\" data-user-id=\"275932\">@Matteo Capucci</span> , and I convinced myself that sheaves really are everywhere and are one of the best things (if not <em>the</em> best) one can use in the compositional toolkit.</p>",
+        "id": 192607851,
+        "sender_full_name": "Fabrizio Genovese",
+        "timestamp": 1585786101
+    },
+    {
+        "content": "<p>There's a recent draft by Neel Krishnaswami and <span class=\"user-mention\" data-user-id=\"276098\">@vikraman</span> that models capabilities via a kind of fuzzy sets construction (<a href=\"https://www.cl.cam.ac.uk/~nk480/icfp20-cap-submission.pdf\" title=\"https://www.cl.cam.ac.uk/~nk480/icfp20-cap-submission.pdf\">https://www.cl.cam.ac.uk/~nk480/icfp20-cap-submission.pdf</a>). Fuzzy sets are sets <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>X</mi></mrow><annotation encoding=\"application/x-tex\">X</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathdefault\" style=\"margin-right:0.07847em;\">X</span></span></span></span> plus a \"fuzzy membership\" predicate <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>X</mi><mo>→</mo><mo stretchy=\"false\">[</mo><mn>0</mn><mo separator=\"true\">,</mo><mn>1</mn><mo stretchy=\"false\">]</mo></mrow><annotation encoding=\"application/x-tex\">X \\to [0,1]</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathdefault\" style=\"margin-right:0.07847em;\">X</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">→</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mopen\">[</span><span class=\"mord\">0</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mord\">1</span><span class=\"mclose\">]</span></span></span></span>. That paper replaces the interval <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"false\">[</mo><mn>0</mn><mo separator=\"true\">,</mo><mn>1</mn><mo stretchy=\"false\">]</mo></mrow><annotation encoding=\"application/x-tex\">[0,1]</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mopen\">[</span><span class=\"mord\">0</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mord\">1</span><span class=\"mclose\">]</span></span></span></span> with the opposite of the lattice of subsets of a set of capabilities. Such fuzzy sets are known to be a quasitopos, and are a subcategory of the category of sheaves on a complete Heyting algebra (<a href=\"https://www.sciencedirect.com/science/article/abs/pii/S0165011406005367\" title=\"https://www.sciencedirect.com/science/article/abs/pii/S0165011406005367\">https://www.sciencedirect.com/science/article/abs/pii/S0165011406005367</a>).</p>",
+        "id": 192662765,
+        "sender_full_name": "Bob Atkey",
+        "timestamp": 1585833146
+    },
+    {
+        "content": "<p>Fuzzy sets or weighted sets over a locale are monic sheaves over the locale, with the trivial Grothendieck topology. This observation is originally due to Michael Barr. I have a few generalisations of it to sheaves over quantales which can be used to build models of type theory with monads and comonads that track intensional resources. I was going to talk about this at SYCO 7 which was postponed.</p>",
+        "id": 192670422,
+        "sender_full_name": "vikraman",
+        "timestamp": 1585836733
+    },
+    {
+        "content": "<p>Cool! Do you have any slides or antyhing?<br>\nOne thing that occurred to me is that your category of \"capability sets\" is a sort of poset version of the category of containers; instead of <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"false\">(</mo><mi>S</mi><mo>:</mo><mrow><mi mathvariant=\"normal\">S</mi><mi mathvariant=\"normal\">e</mi><mi mathvariant=\"normal\">t</mi></mrow><mo separator=\"true\">,</mo><mi>P</mi><mo>:</mo><mi>S</mi><mo>→</mo><mrow><mi mathvariant=\"normal\">S</mi><mi mathvariant=\"normal\">e</mi><mi mathvariant=\"normal\">t</mi></mrow><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">(S : \\mathrm{Set},P : S \\to \\mathrm{Set})</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mopen\">(</span><span class=\"mord mathdefault\" style=\"margin-right:0.05764em;\">S</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">:</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.8777699999999999em;vertical-align:-0.19444em;\"></span><span class=\"mord\"><span class=\"mord mathrm\">S</span><span class=\"mord mathrm\">e</span><span class=\"mord mathrm\">t</span></span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mord mathdefault\" style=\"margin-right:0.13889em;\">P</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">:</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathdefault\" style=\"margin-right:0.05764em;\">S</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">→</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord\"><span class=\"mord mathrm\">S</span><span class=\"mord mathrm\">e</span><span class=\"mord mathrm\">t</span></span><span class=\"mclose\">)</span></span></span></span> you have <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"false\">(</mo><mi>X</mi><mo>:</mo><mrow><mi mathvariant=\"normal\">S</mi><mi mathvariant=\"normal\">e</mi><mi mathvariant=\"normal\">t</mi></mrow><mo separator=\"true\">,</mo><mi>w</mi><mo>:</mo><mi>X</mi><mo>→</mo><mi mathvariant=\"script\">P</mi><mo stretchy=\"false\">(</mo><mi>C</mi><mo stretchy=\"false\">)</mo><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">(X : \\mathrm{Set}, w : X \\to \\mathcal{P}(C))</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mopen\">(</span><span class=\"mord mathdefault\" style=\"margin-right:0.07847em;\">X</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">:</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.8777699999999999em;vertical-align:-0.19444em;\"></span><span class=\"mord\"><span class=\"mord mathrm\">S</span><span class=\"mord mathrm\">e</span><span class=\"mord mathrm\">t</span></span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mord mathdefault\" style=\"margin-right:0.02691em;\">w</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">:</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathdefault\" style=\"margin-right:0.07847em;\">X</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">→</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord\"><span class=\"mord mathcal\" style=\"margin-right:0.08222em;\">P</span></span><span class=\"mopen\">(</span><span class=\"mord mathdefault\" style=\"margin-right:0.07153em;\">C</span><span class=\"mclose\">)</span><span class=\"mclose\">)</span></span></span></span>. Several of the constructions look formally the same.</p>",
+        "id": 192671097,
+        "sender_full_name": "Bob Atkey",
+        "timestamp": 1585837012
+    },
+    {
+        "content": "<p>Ah, I did not prepare slides since SYCO was postponed. :-P </p>\n<p>Yes, I also noticed the similarity with containers, so I tried to work out if it makes sense to have a category-weighted set/object. However, it does not look as elegant as containers and I couldn't apply it to any semantics problems.</p>",
+        "id": 192672060,
+        "sender_full_name": "vikraman",
+        "timestamp": 1585837415
+    },
+    {
+        "content": "<p>I can also express it as a category of elements actually.</p>",
+        "id": 192672527,
+        "sender_full_name": "vikraman",
+        "timestamp": 1585837625
+    },
+    {
+        "content": "<p>By category weighted, do you mean <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"false\">(</mo><mi>X</mi><mo separator=\"true\">,</mo><mi>X</mi><mo>→</mo><mi mathvariant=\"script\">C</mi><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">(X, X \\to \\mathcal{C})</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mopen\">(</span><span class=\"mord mathdefault\" style=\"margin-right:0.07847em;\">X</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mord mathdefault\" style=\"margin-right:0.07847em;\">X</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">→</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord\"><span class=\"mord mathcal\" style=\"margin-right:0.05834em;\">C</span></span><span class=\"mclose\">)</span></span></span></span> for some other category, or <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"false\">(</mo><mi>X</mi><mo separator=\"true\">,</mo><mi>X</mi><mo>→</mo><mrow><mi mathvariant=\"normal\">C</mi><mi mathvariant=\"normal\">a</mi><mi mathvariant=\"normal\">t</mi></mrow><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">(X, X \\to \\mathrm{Cat})</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mopen\">(</span><span class=\"mord mathdefault\" style=\"margin-right:0.07847em;\">X</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mord mathdefault\" style=\"margin-right:0.07847em;\">X</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">→</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord\"><span class=\"mord mathrm\">C</span><span class=\"mord mathrm\">a</span><span class=\"mord mathrm\">t</span></span><span class=\"mclose\">)</span></span></span></span>?</p>",
+        "id": 192674417,
+        "sender_full_name": "Bob Atkey",
+        "timestamp": 1585838316
+    },
+    {
+        "content": "<p>These slides by David Spivak talk about a generalisation of containers to families of objects in categories over than <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"normal\">S</mi><mi mathvariant=\"normal\">e</mi><mi mathvariant=\"normal\">t</mi></mrow><annotation encoding=\"application/x-tex\">\\mathrm{Set}</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord\"><span class=\"mord mathrm\">S</span><span class=\"mord mathrm\">e</span><span class=\"mord mathrm\">t</span></span></span></span></span>: <a href=\"http://www.math.ucr.edu/home/baez/ACTUCR2019/ACTUCR2019_spivak.pdf\" title=\"http://www.math.ucr.edu/home/baez/ACTUCR2019/ACTUCR2019_spivak.pdf\">http://www.math.ucr.edu/home/baez/ACTUCR2019/ACTUCR2019_spivak.pdf</a></p>",
+        "id": 192674547,
+        "sender_full_name": "Bob Atkey",
+        "timestamp": 1585838375
+    },
+    {
+        "content": "<p>Yes <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>E</mi><mo>=</mo><mo stretchy=\"false\">(</mo><mi>X</mi><mo separator=\"true\">,</mo><mi>X</mi><mo>→</mo><mi>C</mi><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">E = (X, X\\rightarrow C)</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathdefault\" style=\"margin-right:0.05764em;\">E</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mopen\">(</span><span class=\"mord mathdefault\" style=\"margin-right:0.07847em;\">X</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mord mathdefault\" style=\"margin-right:0.07847em;\">X</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">→</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord mathdefault\" style=\"margin-right:0.07153em;\">C</span><span class=\"mclose\">)</span></span></span></span> for some category <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>C</mi></mrow><annotation encoding=\"application/x-tex\">C</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathdefault\" style=\"margin-right:0.07153em;\">C</span></span></span></span>, and morphisms in <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>E</mi></mrow><annotation encoding=\"application/x-tex\">E</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathdefault\" style=\"margin-right:0.05764em;\">E</span></span></span></span> come with families of morphisms in <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>C</mi></mrow><annotation encoding=\"application/x-tex\">C</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathdefault\" style=\"margin-right:0.07153em;\">C</span></span></span></span>. Then, <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>E</mi></mrow><annotation encoding=\"application/x-tex\">E</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathdefault\" style=\"margin-right:0.05764em;\">E</span></span></span></span> has products/exponentials/pi-types etc. iff <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>C</mi></mrow><annotation encoding=\"application/x-tex\">C</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathdefault\" style=\"margin-right:0.07153em;\">C</span></span></span></span> has ...</p>",
+        "id": 192677097,
+        "sender_full_name": "vikraman",
+        "timestamp": 1585839443
+    },
+    {
+        "content": "<p>Thanks, I'll take a look at Spivak's slides.</p>",
+        "id": 192677151,
+        "sender_full_name": "vikraman",
+        "timestamp": 1585839469
+    },
+    {
+        "content": "<p>That's very cool. Did you look at the non-cartesian monoidal structures too?</p>",
+        "id": 192680708,
+        "sender_full_name": "Bob Atkey",
+        "timestamp": 1585840653
+    }
+]

@@ -1,0 +1,194 @@
+[
+    {
+        "content": "<p>Is there any \"smart\" way to systematically construct all finite categories (up to a size limit)? Or are finite categories akin to prime numbers, where the only method guaranteed to enumerate them all is \"guess-and-check\"?</p>",
+        "id": 247285963,
+        "sender_full_name": "Nick Smith",
+        "timestamp": 1627351460
+    },
+    {
+        "content": "<p>By finite category do you mean that the objects and morphisms are both finite sets? There are a lot of those...a category with one object is a monoid, so every finite monoid is also a finite one-object category.</p>",
+        "id": 247291611,
+        "sender_full_name": "Jade Master",
+        "timestamp": 1627358006
+    },
+    {
+        "content": "<p>But finite monoids can definitely be enumerated up to a certain size if the number is small enough...I've seen this sort of thing for groups.</p>",
+        "id": 247291690,
+        "sender_full_name": "Jade Master",
+        "timestamp": 1627358116
+    },
+    {
+        "content": "<p>Yes I mean finitely many arrows and objects. I did discover a lot of literature on enumerating groups, but I assume the facts from that domain don’t necessarily apply to enumerating categories, because (e.g.) you don’t have to worry about inverses, and you have more ways of combining smaller categories into larger ones.</p>",
+        "id": 247293791,
+        "sender_full_name": "Nick Smith",
+        "timestamp": 1627360963
+    },
+    {
+        "content": "<p>And of course it’s <em>possible</em> to enumerate finite categories via a systematic process, but the only process I can think of that won’t miss any is “trying all possibilities” for a given number of objects and arrows, and throwing out the ones that don’t obey the identity and associativity laws.</p>",
+        "id": 247293944,
+        "sender_full_name": "Nick Smith",
+        "timestamp": 1627361142
+    },
+    {
+        "content": "<p>One question is why you'd want to enumerate finite categories.  A big lesson in finite group theory is that enumerating finite groups of a given order is immensely difficult (it's been done up to 1024) and not very productive of insight into finite groups.    Other directions worked out better.  I'm sure it's the same for monoids or categories.</p>",
+        "id": 247295908,
+        "sender_full_name": "John Baez",
+        "timestamp": 1627364002
+    },
+    {
+        "content": "<p>Geoff Cruttwell and Rejean Leblanc wrote about counting finite categories here: <a href=\"http://www.reluctantm.com/gcruttw/publications/ams2014CruttwellCountingFiniteCats.pdf\">http://www.reluctantm.com/gcruttw/publications/ams2014CruttwellCountingFiniteCats.pdf</a>.<br>\nThey count categories with up to <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>10</mn></mrow><annotation encoding=\"application/x-tex\">10</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.64444em;vertical-align:0em;\"></span><span class=\"mord\">10</span></span></span></span> arrows, up to isomorphism. There are roughly <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>1</mn><msup><mn>0</mn><mn>14</mn></msup></mrow><annotation encoding=\"application/x-tex\">10^{14}</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8141079999999999em;vertical-align:0em;\"></span><span class=\"mord\">1</span><span class=\"mord\"><span class=\"mord\">0</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.8141079999999999em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\">14</span></span></span></span></span></span></span></span></span></span></span></span> categories with 10 morphisms, so they do indeed grow much more quickly than groups (there are <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>2</mn></mrow><annotation encoding=\"application/x-tex\">2</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.64444em;vertical-align:0em;\"></span><span class=\"mord\">2</span></span></span></span> groups of order <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>10</mn></mrow><annotation encoding=\"application/x-tex\">10</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.64444em;vertical-align:0em;\"></span><span class=\"mord\">10</span></span></span></span>).<br>\nGeoff sent me some of their code after I emailed him a while back. I haven't gotten around to it yet, but I was thinking that it would be good to count all the skeletal categories of each size, under the logic that this was somehow the right way to count them up to <em>equivalence</em> (<a href=\"#narrow/stream/229136-theory.3A-category.20theory/topic/The.20right.20notion.20of.20.27number.20of.20morphisms.20in.20a.20category.27\">see here</a>).</p>",
+        "id": 247296652,
+        "sender_full_name": "Oscar Cunningham",
+        "timestamp": 1627365020
+    },
+    {
+        "content": "<blockquote>\n<p>One question is why you'd want to enumerate finite categories.</p>\n</blockquote>\n<p>I’m just curious 🙂. I’m trying to get a <em>feel</em> for what finite categories are like. Are they each unique and hard to spot (like primes), or are they easy to enumerate (like natural numbers)? Those slides are helpful Oscar! Thanks.</p>\n<p>I did write my own little program as well and it can enumerate up to 5 arrows. But it seems quite tricky to dodge all the isomorphisms!</p>",
+        "id": 247298494,
+        "sender_full_name": "Nick Smith",
+        "timestamp": 1627367370
+    },
+    {
+        "content": "<p>Given the slides confirm my hunch that “almost all finite categories are monoids”, it seems the related question of how to enumerate finite monoids is important too.</p>",
+        "id": 247299255,
+        "sender_full_name": "Nick Smith",
+        "timestamp": 1627368233
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"405946\">Nick Smith</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/Enumerating.20finite.20categories/near/247298494\">said</a>:</p>\n<blockquote>\n<p>I’m just curious 🙂. I’m trying to get a <em>feel</em> for what finite categories are like. Are they each unique and hard to spot (like primes), or are they easy to enumerate (like natural numbers)? </p>\n</blockquote>\n<p>The question about prime numbers seems to suggest a different direction, regarding the possibility of decomposing (finite) categories into pieces which are irreducible in some sense. This is the kind of idea that I think <span class=\"user-mention\" data-user-id=\"275920\">@John Baez</span> was alluding to, identifying how a generic category is <em>built</em> rather than just counting them all.</p>\n<p>Clearly one could start by decomposing a category into its connected components. See what further decompositions you can come up with!</p>",
+        "id": 247302614,
+        "sender_full_name": "Morgan Rogers (he/him)",
+        "timestamp": 1627371317
+    },
+    {
+        "content": "<p>To be clear, when I say \"enumerating\", I don't mean counting them, I mean listing them. This does imply some kind of knowledge of how an arbitrary category can be built up. The dumb way is to whack a bunch of arrows together, specify composites, and check afterwards whether the thing you built is a valid category, but I'm looking for a smart way.</p>\n<p>I suppose trying to define a notion of \"irreducible components\" is the right way forward (surely someone has done this before?), but then of course, you can only build categories out of the components you're able to find. If finding the components is computationally hard (like primes), you're back to square one. I suppose my original question can be broken up into pieces:</p>\n<ul>\n<li>Does a finite category consist of meaningful \"prime\" components?</li>\n<li>If so, are these \"primes\" computationally hard to enumerate?</li>\n<li>If they are hard to enumerate, is there no computationally-simpler way of enumerating categories? (e.g. if you want to enumerate fibonacci numbers, you're not going to do it via their prime factorizations.)</li>\n</ul>",
+        "id": 247306631,
+        "sender_full_name": "Nick Smith",
+        "timestamp": 1627374423
+    },
+    {
+        "content": "<p>And to be clear this is merely a curiosity and if the answer is \"nobody has ever figured this out\" then I'm <strong>not</strong> about to drop everything I'm doing and do original research on it :P</p>",
+        "id": 247306759,
+        "sender_full_name": "Nick Smith",
+        "timestamp": 1627374520
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276945\">Oscar Cunningham</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/Enumerating.20finite.20categories/near/247296652\">said</a>:</p>\n<blockquote>\n<p>I was thinking that it would be good to count all the skeletal categories of each size, under the logic that this was somehow the right way to count them up to <em>equivalence</em></p>\n</blockquote>\n<p>This feels right. Has there been any progress on that front?</p>",
+        "id": 247310112,
+        "sender_full_name": "Javier Prieto",
+        "timestamp": 1627377079
+    },
+    {
+        "content": "<p>I alluded to connected components. You can arrange the categories with <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>n</mi></mrow><annotation encoding=\"application/x-tex\">n</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.43056em;vertical-align:0em;\"></span><span class=\"mord mathnormal\">n</span></span></span></span> morphisms according to the partitions of <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>n</mi></mrow><annotation encoding=\"application/x-tex\">n</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.43056em;vertical-align:0em;\"></span><span class=\"mord mathnormal\">n</span></span></span></span>, which are well-studied. Another nice thing about that decomposition is that if you present a category as generated from a quiver with some morphisms identified, then its connected components will lift from those of the quiver.</p>\n<p>You can go further: the category freely generated from a finite quiver will be finite unless there is a directed loop in the quiver. So you can organize connected quivers according to their direct homology (I don't know how well-developed that is) and treat the presentation as a suitable equivalence relation on the homology monoids. I don't have references; this is just how I would proceed with this project.</p>",
+        "id": 247310744,
+        "sender_full_name": "Morgan Rogers (he/him)",
+        "timestamp": 1627377562
+    },
+    {
+        "content": "<p>It's an interesting question... You can use something like Mace4 to generate &amp; enumerate models of theories (<a href=\"https://www.cs.unm.edu/~mccune/prover9/\">https://www.cs.unm.edu/~mccune/prover9/</a>)</p>",
+        "id": 247310844,
+        "sender_full_name": "Simon Burton",
+        "timestamp": 1627377639
+    },
+    {
+        "content": "<p>If by generate you mean generate under colimits then the answer is yes since the full subcategory spanned by the categories <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>0</mn><mo separator=\"true\">,</mo><mn>1</mn><mo separator=\"true\">,</mo><mn>2</mn><mo separator=\"true\">,</mo><mn>3</mn></mrow><annotation encoding=\"application/x-tex\">0, 1, 2, 3</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8388800000000001em;vertical-align:-0.19444em;\"></span><span class=\"mord\">0</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mord\">1</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mord\">2</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mord\">3</span></span></span></span> is dense in <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mtext>Cat</mtext></mrow><annotation encoding=\"application/x-tex\">\\text{Cat}</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord text\"><span class=\"mord\">Cat</span></span></span></span></span>.</p>",
+        "id": 247314979,
+        "sender_full_name": "Fawzi Hreiki",
+        "timestamp": 1627380717
+    },
+    {
+        "content": "<p>But this is more analogous to the fact that any natural number is a sum over <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>1</mn></mrow><annotation encoding=\"application/x-tex\">1</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.64444em;vertical-align:0em;\"></span><span class=\"mord\">1</span></span></span></span>. I don’t know if some proper subcategory generates <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mtext>FinCat</mtext></mrow><annotation encoding=\"application/x-tex\">\\text{FinCat}</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord text\"><span class=\"mord\">FinCat</span></span></span></span></span> under limits (which is more like the prime analogy)</p>",
+        "id": 247316110,
+        "sender_full_name": "Fawzi Hreiki",
+        "timestamp": 1627381587
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"341237\">Fawzi Hreiki</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/Enumerating.20finite.20categories/near/247314979\">said</a>:</p>\n<blockquote>\n<p>If by generate you mean generate under colimits then the answer is yes since the full subcategory spanned by the categories <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>0</mn><mo separator=\"true\">,</mo><mn>1</mn><mo separator=\"true\">,</mo><mn>2</mn><mo separator=\"true\">,</mo><mn>3</mn></mrow><annotation encoding=\"application/x-tex\">0, 1, 2, 3</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8388800000000001em;vertical-align:-0.19444em;\"></span><span class=\"mord\">0</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mord\">1</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mord\">2</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mord\">3</span></span></span></span> is dense in <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mtext>Cat</mtext></mrow><annotation encoding=\"application/x-tex\">\\text{Cat}</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord text\"><span class=\"mord\">Cat</span></span></span></span></span>.</p>\n</blockquote>\n<p>This sounds interesting. Where can I read more about this? (I didn't even know what a \"dense subcategory\" was until just now.)</p>",
+        "id": 247317721,
+        "sender_full_name": "Nick Smith",
+        "timestamp": 1627383064
+    },
+    {
+        "content": "<p>Chapter 5 of Kelly's 'Basic Concepts of Enriched Category Theory' is probably the best reference although he works in the generality of enriched categories.</p>",
+        "id": 247318325,
+        "sender_full_name": "Fawzi Hreiki",
+        "timestamp": 1627383549
+    },
+    {
+        "content": "<p>The notion of density is closely connected to Kan extensions. Mac Lane's CWM has a chapter on Kan extensions, including a section on density.</p>",
+        "id": 247318326,
+        "sender_full_name": "Patrick Nicodemus",
+        "timestamp": 1627383551
+    },
+    {
+        "content": "<p>Yeah I was about to mention that as well. Or the Kan extensions chapter in Riehl's 'Category Theory in Context'</p>",
+        "id": 247318464,
+        "sender_full_name": "Fawzi Hreiki",
+        "timestamp": 1627383620
+    },
+    {
+        "content": "<p>Thanks :) . Do these books discuss the Cat case in particular? Or just the general notion of density.</p>",
+        "id": 247318601,
+        "sender_full_name": "Nick Smith",
+        "timestamp": 1627383701
+    },
+    {
+        "content": "<p>A good way to visualize density is in the case of the category of simplicial sets. In this category, (and in any presheaf category) the representable functors (\"standard simplices\") are dense. This tells us that every simplicial set is the colimit of the simplices that make it up in a canonical way, which is a nice result as of course we should expect a simplicial complex to be glued together from the simplices that constitute it.</p>",
+        "id": 247318702,
+        "sender_full_name": "Patrick Nicodemus",
+        "timestamp": 1627383741
+    },
+    {
+        "content": "<p>Kelly's book deals with essentially algebraic theories (of which the theory of categories is an example) and he proves that the inclusion of the theory into the category of algebras is dense.</p>",
+        "id": 247319278,
+        "sender_full_name": "Fawzi Hreiki",
+        "timestamp": 1627384103
+    },
+    {
+        "content": "<p>A bit off topic but I read the following interesting density theorem the other day, which I've never seen before: Let M, A be categories. Let m be an object of M, and a an object of A; regard these both as functors from the one-object category <strong>1</strong> to M, A respectively. Then the pointwise left Kan extension of a along m exists if A has coproducts, and is given by  Hom(m,-)\\cdot a. Call a functor M -&gt; A of this form a \"generalized representable functor.\" <br>\nTheorem: The generalized representable functors are dense in the functor category [M,A].</p>",
+        "id": 247319321,
+        "sender_full_name": "Patrick Nicodemus",
+        "timestamp": 1627384143
+    },
+    {
+        "content": "<p>If you want to get a sense of what finite categories are like, maybe quiver representations would be interesting to look at. Quivers are graphs equipped with relations, essentially a presentation of a small category. I don't know the field at all, but I would imagine they focus on finite things, and that there are certain heuristics about the categories which are appreciated more by representation theorists than by category theorists.</p>",
+        "id": 247323187,
+        "sender_full_name": "Joe Moeller",
+        "timestamp": 1627387132
+    },
+    {
+        "content": "<p>A <strong>quiver</strong> is just a graph and a <strong>representation</strong> of a quiver is just a functor from the free category on that graph to Vect.   A representation is <strong>indecomposable</strong> if it has no subobjects (subrepresentations) other than 0 and itself.</p>\n<p>The most exciting thing about representations of quivers  is <a href=\"https://en.wikipedia.org/wiki/Gabriel%27s_theorem\">Gabriel's theorem</a>, which classifies the quivers that have finitely many (isomorphism classes of) indecomposable representations.   They're all finite coproducts of quivers coming from the A, D, and E Dynkin diagrams: certain diagrams that can be turned into graphs by putting arrows on their edges pointing any way you want.</p>",
+        "id": 247510604,
+        "sender_full_name": "John Baez",
+        "timestamp": 1627502877
+    },
+    {
+        "content": "<p>This subject is tons of fun if you like examples connected to other branches of math (like Lie theory).</p>",
+        "id": 247510723,
+        "sender_full_name": "John Baez",
+        "timestamp": 1627502922
+    },
+    {
+        "content": "<p>I'm sure we already talked about this here <span aria-label=\"thinking\" class=\"emoji emoji-1f914\" role=\"img\" title=\"thinking\">:thinking:</span></p>",
+        "id": 247589903,
+        "sender_full_name": "Matteo Capucci (he/him)",
+        "timestamp": 1627568609
+    },
+    {
+        "content": "<p>Here it is! <a href=\"https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/The.20right.20notion.20of.20'number.20of.20morphisms.20in.20a.20category'.html\">link</a></p>",
+        "id": 247590029,
+        "sender_full_name": "Matteo Capucci (he/him)",
+        "timestamp": 1627568649
+    },
+    {
+        "content": "<p>(that link pointed to a non-existent discussion -  well to the initial pointer to a new one)<br>\nI see it's fixed now.</p>",
+        "id": 247590351,
+        "sender_full_name": "Henry Story",
+        "timestamp": 1627568769
+    },
+    {
+        "content": "<p>oh jeez, let me fix it</p>",
+        "id": 247591401,
+        "sender_full_name": "Matteo Capucci (he/him)",
+        "timestamp": 1627569155
+    }
+]

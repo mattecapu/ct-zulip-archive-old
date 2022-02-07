@@ -1,0 +1,62 @@
+[
+    {
+        "content": "<p><a href=\"https://golem.ph.utexas.edu/category/2010/03/in_praise_of_dependent_types.html#c032128\" title=\"https://golem.ph.utexas.edu/category/2010/03/in_praise_of_dependent_types.html#c032128\">this thread on the n-cafe</a> is one i come back to regularly. some excerpts:</p>\n<blockquote>\n<p>[Toby Bartels:] That intensional equality for inductive types matches the usual desired extensional equality is related to the axiom of choice for such types. (Example: the axiom of countable choice for the inductive type of natural numbers.) If you want countable choice to be optional, then you may want to use a language in which all equality must be given explicitly, and then inductive types are as problematic as coinductive types in this respect.</p>\n<p>[Mike Shulman:] Presumably the axiom of choice [for an inductive type] is only implied if you insist on using types to be propositions as well? I mean, in the usual model of dependent type theory in Set (or in any Π-W-pretopos, for that matter), you have extensional equality, but perfectly good inductive types, whether or not you assume any choice.</p>\n<p>[Toby Bartels:] You don't necessarily need full propositions as types. You just need some notion of operation (or pre-function) that satisfies an axiom of choice, in that any proof of ∀x,∃y,P(x,y) yields an operation f such that ∀x,P(x,f(x)) holds. And you need some reasonable notion of identity (or pre-equality) proposition such that operations preserve identity, in that f(x) is identical to f(y) whenever x is identitical to y.</p>\n<p>As long as you have some features with the properties above, then you can prove (by induction) that equal natural numbers are in fact identical, so that an operation defined on natural numbers is in fact a function, making the automatic choice operation into a choice function.</p>\n</blockquote>\n<p>i have a hard time understanding this in terms of cat semantics of tt, and disambiguating which statements apply internally vs externally. i'm pretty certain this is connected to setoids, and it feels like this relates to obtaining functions from anafunctions.</p>\n<p>are there any expositions of this explicit equality vs choice idea, either as a standalone development or as a section of the intro textbooks that i haven't read yet? is pre-equality typically obtained from syntactic equality? if a theory doesn't take (judgmental?) equality from syntactic equality, does it fail to be ~algebraic, or to have an initial model?</p>\n<p>i'm not exactly looking for answers to the latter questions, just hoping to give a better idea of how i'm confused.</p>",
+        "id": 196884532,
+        "sender_full_name": "Pastel Raschke",
+        "timestamp": 1588937805
+    },
+    {
+        "content": "<p>You could ask Toby or Mike questions on the nForum; <span class=\"user-mention\" data-user-id=\"276777\">@Mike Shulman</span> also shows up here!   Sometimes there's no substitute for just asking people stuff.</p>",
+        "id": 196922421,
+        "sender_full_name": "John Baez",
+        "timestamp": 1588957578
+    },
+    {
+        "content": "<p>To be honest, I'm not really sure what Toby meant by that last comment (which is probably why I didn't reply to it!).  I don't really undesrtand what he meant by connecting the fact that inductive types have the 'correct' equality to some kind of 'choice' principle.</p>",
+        "id": 196925035,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1588958760
+    },
+    {
+        "content": "<p>i don't have an explanation for the comment as written, but i can add something that seems relevant, at least—there's this phenomenon where a lot of stuff with equality just kind of works out right when you have properties like decidability</p>",
+        "id": 196925981,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1588959178
+    },
+    {
+        "content": "<p>e.g., i believe uip holds for types w/ decidable equality in CIC</p>",
+        "id": 196925995,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1588959191
+    },
+    {
+        "content": "<p>(homotopy-theoretically, i suppose this is saying that discrete spaces have trivial homotopy groupoids)</p>",
+        "id": 196926269,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1588959345
+    },
+    {
+        "content": "<p>but i think choice principles have some resemblance to decidable equality? they both sort of involve a degree of \"producing discrete information\"</p>",
+        "id": 196926582,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1588959486
+    },
+    {
+        "content": "<p><span class=\"user-mention\" data-user-id=\"276808\">@Toby Bartels</span> if you're still active here, could you lend some context?</p>",
+        "id": 196936432,
+        "sender_full_name": "Pastel Raschke",
+        "timestamp": 1588964366
+    },
+    {
+        "content": "<p>going through nlab:preset i found a link to his personal area which helped explain the intention; the objection was to (extensional?) identity types justifying coshep/presentation, which makes internal categories too strict (and it hasn't been much developed because hott is weak enough to address this)</p>",
+        "id": 197974784,
+        "sender_full_name": "Pastel Raschke",
+        "timestamp": 1589825440
+    },
+    {
+        "content": "<p>Hey, I know that this is rather late and you kind of figured out the answer already, but here is more of an answer anyway.</p>\n<p>To begin with, while I still agree with what I wrote that you quoted above (which is basically just a fact), I now think that it's less important.  This is because HoTT provides a good way of working with equality that handles quantification and function types well, making the formalization of category theory natural, but without unnecessarily strong axioms.  And that's why I abandoned the system that I was working on on my personal nLab web too.  (Although I should probably still finish writing it out sometime, for the record.)</p>\n<p>Anyway, consider this proof of Countable Choice, which you can find more or less in the writings of some historical constructivists (such as Brouwer and Bishop):  Given an entire relation from N to some set S, we have ∀x ∃y P(x,y), with x ranging over natural numbers and y ranging over elements of S.  And the BHK meaning of this is that you have a method, given a method of constructing a natural number x, to construct an element y of S and a proof of P(x,y).  But a method of constructing an element of S given a natural number is precisely a function from N to S, so this method constructs a function f from N to S and a proof that P(x,f(x)) always holds.</p>\n<p>There's a potential danger with this proof, because if you start with any proposition p, replace S with 2 = {0,1}, and replace N with the quotient set 2/p = {[0],[1]} with [0] = [1] iff p holds, then the opposite relation to the quotient map 2 -&gt; 2/p is an entire relation, yet the existence of f means that p is true or false.  (It's true iff f([0]) = f([1]), and equality in 2 is decidable.)  But when you look into the details of that, the way that you prove ∀x ∃y P(x,y) is by cases depending on whether x is [0] or [1], and you construct a different y in each case, even if p is true.  So, we have a method that, given a <em>method</em> of constructing x, allows us to construct y (and prove P(x,y) about them), but not simply given x itself.</p>\n<p>So if, following Bishop, you think that a set consists of a pre-set, in which you specify how to construct an element, together with an equality relation, in which you specify how to prove that two elements are equal, then what we're getting here is not really a function from N to S, but rather a function (or 'operation') to S from the underlying preset of N, or if you prefer, from the set of ways to construct an element of N.  And there's no apparent reason why this operation should preserve the equality relation.  (If it does, then we can call it a bona-fide function, but not otherwise.)  I've shifted back to the original N and S here, and in evading the proof of excluded middle in the previous paragraph, I've also ruined the proof of countable choice from one paragraph earlier.</p>\n<p>But!  What is this set of ways to construct an element of N?  If it's really a set (not just a pre-set) with its own notion of equality, then let's give this equality another name, like 'identity'.  If you believe that pre-sets come with identity propositions (as, for instance, Martin-Löf type theory does, if you interpret pre-sets as types), and if every operation preserves identity (as in Martin-Löf type theory), then we can still prove countable choice, by induction.  And this is possible because N is an inductive type equipped with the natural inductive equality.  (Note that 2 is also an inductive type, and it can be taken as the underlying pre-set of 2/p, but the equality in 2/p is not the natural one.  This is why the proof of excluded middle will still fail.)</p>\n<p>And here is the proof by induction:  We have an operation f from natural numbers to elements of S, so that f(m) and f(n) are identical (and so a posteriori equal) if m and n identical, and we want to prove that f(m) and f(n) are still equal even if m and n are only assumed to be equal.  What we are actually going to prove is that, if m and n are equal, then m and n are actually identical; then f(m) and f(n) will again be identical (and so a posteriori equal).  Use double induction on m and n: If m and n are both zero, then 0 and 0 are indeed identical; if m is zero and n is a successor S(j), then m and S(j) are not equal, so there is nothing to prove; if m is a successor S(i) and n is zero, then again there is nothing to prove; and finally, if m is S(i) and n is S(j), then S(i) = S(j) iff i = j (because equality is defined inductively), in which case (by the inductive hypothesis) i and j are identical, and so S(i) and S(j) are also identical (since the successor operation, like any operation, preserves identity).</p>\n<p>So in summary, if every set has an underlying pre-set with its own (stricter) equality relation called 'identity', and if every operation preserves identity, and if every proof of ∀x ∃y produces an operation, then countable choice, or more generally choice from any inductive set, holds, because equality is identity on inductive sets.  There are obviously a lot of conditions in the hypothesis here, but all of the necessary pieces fell into place pretty naturally for Martin-Löf, and this seems to formalize the informal proofs of countable choice given by Brouwer and Bishop (without also inadvertently proving excluded middle), and so it's been attractive to constructivists.</p>\n<p>In the system of foundations that I never finished writing out on my personal nLab web, I avoided this by using only identity judgements, not identity propositions.  So you can assert that two things are identical, which is important for making recursion work in this set-up (and getting the result to have the correct type), but you can't use their identity as a hypothesis, which breaks the proof.  Unfortunately, if you want to strengthen the system by making it impredicative, assuming a pre-set of all propositions (which becomes a set under &lt;=&gt;), then you can effectively define identity propositions using Leibniz's Law.  So my system wasn't really weak enough for me, and I abandoned it.</p>\n<p>In the context of the conversation on the Café (which I've just now reread after ten years), Dan Doel noticed that the natural coninductive equality on coinductive types is weaker than identity (called 'intensional equality' there), which makes them less nice than inductive types.  And my response is that building identity into your language and letting it serve directly as equality on inductive types is dangerous, if you don't want the axiom of choice to hold for inductive types, so they're really the same amount of hassle.</p>",
+        "id": 205613920,
+        "sender_full_name": "Toby Bartels",
+        "timestamp": 1596214251
+    }
+]

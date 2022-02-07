@@ -1,0 +1,68 @@
+[
+    {
+        "content": "<p>agda-categories defines -2-categories as a category where (quoting from <a href=\"https://agda.github.io/agda-categories/Categories.Minus2-Category.html\">their comments</a>):</p>\n<ol>\n<li>|Obj| is (Categorically) contractible</li>\n<li>|Hom| is connected (all arrows are equal)</li>\n</ol>\n<p>Is there a way to elegantly get -1-categories and 0-categories out of a definition like this? I can see -1 as being that |Hom x y| is contractible for all objects x y, which up to categorical equivalence means we either have no objects or one object with only the identity. But we'd want 0-categories to say that |Hom x x| is contractible and |Hom x y| is empty, which seems to break the pattern.</p>",
+        "id": 214488486,
+        "sender_full_name": "Shea Levy",
+        "timestamp": 1603630845
+    },
+    {
+        "content": "<p>We can get -1-categories and 0-categories more elegantly (in my mind) as having -1-categories be -2-category enriched (and similar one level up).  </p>\n<p>The \"difficulty\" with that definition is that you don't get that the category of -1-categories is equivalent to the poset of booleans! You need excluded middle to prove that. In fact, I'm pretty sure that it is equivalent to excluded middle, but I have not been able to prove it.</p>",
+        "id": 214497969,
+        "sender_full_name": "Jacques Carette",
+        "timestamp": 1603643313
+    },
+    {
+        "content": "<p><span class=\"user-mention\" data-user-id=\"296322\">@Jacques Carette</span> Are there proofs in the library that enrichment bumps up the number in the expected way? What form of equivalence would you be looking for?</p>",
+        "id": 214500020,
+        "sender_full_name": "James Wood",
+        "timestamp": 1603645501
+    },
+    {
+        "content": "<p>What do you mean by \"bumps up the number in the expected way\"? I'm pretty sure that the answer is 'no', as I'm pretty sure that such results are more meta-theoretical than what can be said in Agda itself. But it depends on exactly what you mean!</p>",
+        "id": 214500216,
+        "sender_full_name": "Jacques Carette",
+        "timestamp": 1603645731
+    },
+    {
+        "content": "<p>I mean that a -2 category-enriched category is a -1 category, a -1 category-enriched category is a 0 category, &amp;c. I wouldn't expect a proof for all n, but surely each specific case can be done, right?</p>",
+        "id": 214500874,
+        "sender_full_name": "James Wood",
+        "timestamp": 1603646448
+    },
+    {
+        "content": "<p>You'd need a \"by hand\" definition of -1-category against which to compare. And that's where there's a rub: depending on the definition, it might not be provable. The usual definition of -1-category bakes in that things are either empty or contractible, which is not decidable without excluded middle. That's exactly where I got stuck!</p>\n<p>Basically: I think there's a nice little paper here. Which I can't do on my own, as I need another brain to bounce ideas off of.</p>",
+        "id": 214501971,
+        "sender_full_name": "Jacques Carette",
+        "timestamp": 1603647717
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"296322\">Jacques Carette</span> <a href=\"#narrow/stream/229125-practice.3A-software/topic/agda-categories's.20-2.20categories/near/214497969\">said</a>:</p>\n<blockquote>\n<p>We can get -1-categories and 0-categories more elegantly (in my mind) as having -1-categories be -2-category enriched (and similar one level up).  </p>\n<p>The \"difficulty\" with that definition is that you don't get that the category of -1-categories is equivalent to the poset of booleans! You need excluded middle to prove that. In fact, I'm pretty sure that it is equivalent to excluded middle, but I have not been able to prove it.</p>\n</blockquote>\n<p>So first your hom-objects are some connected set, then they're -2-categories, then they're -1 categories, then they're sets? What happens to the \"contractible\" part of the -2-cat defn?</p>",
+        "id": 214508504,
+        "sender_full_name": "Shea Levy",
+        "timestamp": 1603655404
+    },
+    {
+        "content": "<p>So first the object and homs are inhabited and connected - that gives you -2-categories. If you loosen 'inhabited' on objects, in theory you get -1-categories. Then you loosen connected on objects - that looks like Setoid; only Set if you squish things, which you might not really want to. Then you repeat one level up. This might not fully match the usual numbering though (it might be finer).  At least, that's what I've been looking at. In theory, these are related, but the relation in published papers seems to use excluded middle and then choice, in non-trivial ways.</p>",
+        "id": 214585838,
+        "sender_full_name": "Jacques Carette",
+        "timestamp": 1603724956
+    },
+    {
+        "content": "<p>Why would you expect Setoid rather than Preorder (thin category)?</p>",
+        "id": 214587637,
+        "sender_full_name": "James Wood",
+        "timestamp": 1603725719
+    },
+    {
+        "content": "<p>Yeah, when I tried this approach I got a preorder.</p>",
+        "id": 214587931,
+        "sender_full_name": "Shea Levy",
+        "timestamp": 1603725856
+    },
+    {
+        "content": "<p>Because I goofed, and was trying to do too many things too quickly, and wrote down junk in my message. Sigh.</p>",
+        "id": 214593700,
+        "sender_full_name": "Jacques Carette",
+        "timestamp": 1603728010
+    }
+]

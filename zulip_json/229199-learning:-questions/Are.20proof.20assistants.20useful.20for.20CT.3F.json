@@ -1,0 +1,158 @@
+[
+    {
+        "content": "<p>I'm getting tired of writing long boring proofs of things that are obvious (e.g. show that an object satisfies a universal property, show that two bicategories are equivalent, show that a functor is monoidal).  Will a proof assistant help my situation, or will it take even longer?  If it will help, which one do you recommend?</p>",
+        "id": 232447920,
+        "sender_full_name": "Joshua Meyers",
+        "timestamp": 1617119056
+    },
+    {
+        "content": "<p>I don't think proof assistants help much with these tedious details yet, but it's being worked on. See <a href=\"#narrow/stream/229125-practice.3A-software/topic/Metatheory.2Ejl\">this thread</a>, for instance.</p>",
+        "id": 232448405,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1617119246
+    },
+    {
+        "content": "<p>Proof assistants are very useful for these jobs, but they're called \"grad students\".</p>",
+        "id": 232452511,
+        "sender_full_name": "John Baez",
+        "timestamp": 1617120659
+    },
+    {
+        "content": "<p>This is the kind of thing I'm looking for: <a href=\"https://www.cs.cornell.edu/~kozen/Papers/06ijcar-categories.pdf\">https://www.cs.cornell.edu/~kozen/Papers/06ijcar-categories.pdf</a></p>\n<p>Anyone know what's been going on with this sort of approach?</p>",
+        "id": 232453618,
+        "sender_full_name": "Joshua Meyers",
+        "timestamp": 1617121063
+    },
+    {
+        "content": "<p>OK something more recent: <a href=\"https://link.springer.com/chapter/10.1007/978-3-642-29485-3_9\">https://link.springer.com/chapter/10.1007/978-3-642-29485-3_9</a></p>",
+        "id": 232454477,
+        "sender_full_name": "Joshua Meyers",
+        "timestamp": 1617121396
+    },
+    {
+        "content": "<p>OK I'm going to try Nuprl unless someone has a good reason not to (e.g. it's not well-maintained).  These papers make it seem like it could do the thing I want</p>",
+        "id": 232458119,
+        "sender_full_name": "Joshua Meyers",
+        "timestamp": 1617122795
+    },
+    {
+        "content": "<p>Or there's also <a href=\"http://metaprl.org/default.html\">MetaPRL</a> and <a href=\"https://redprl.org/\">RedPRL</a> which are apparently successors of Nuprl...which one do I choose?</p>",
+        "id": 232460219,
+        "sender_full_name": "Joshua Meyers",
+        "timestamp": 1617123530
+    },
+    {
+        "content": "<p>OK just emailed <a href=\"https://www.cs.cornell.edu/home/kreitz/\">Christoph Kreitz</a>:</p>\n<blockquote>\n<p>Subject: Proof assistant for tedious CT computations</p>\n<p>Hi Professor Kreitz,</p>\n<p>I am a math PhD student at Indiana University, and I am having to do a lot of tedious category theory computations in my work.  I was looking for a proof assistant that would save me some time, and I found your paper \"Automating Proofs in Category Theory\" and your chapter \"Nuprl as Logical Framework for Automating Proofs in Category Theory\", which seem to be just the kind of thing that I am looking for.  So I am wondering, is it a good idea to use Nuprl for this kind of thing, or is there another proof assistant out now that would be better for this purpose (MetaPRL, RedPRL, Coq?)  Thanks for any advice you can give,</p>\n<p>Best,<br>\nJoshua</p>\n</blockquote>",
+        "id": 232462550,
+        "sender_full_name": "Joshua Meyers",
+        "timestamp": 1617124361
+    },
+    {
+        "content": "<p>Are you ignoring more popular proof assistants because you don't think they'll be particularly useful for category theory? I know Lean has some CT in its standard library (and I'd be surprised if others didn't as well) but maybe that's not enough for your purposes</p>",
+        "id": 232479806,
+        "sender_full_name": "Javier Prieto",
+        "timestamp": 1617131153
+    },
+    {
+        "content": "<p>Proof assistants can be very useful as a library for finding out what terms mean. For example <a href=\"https://github.com/agda/agda-categories\">Agda Categories</a> can be thought of as a huge executable library, that explains what terms mean by showing how they are implemented. It would be great to have a Cubical HoTT version. I think as they make progress they will be very useful to look up definitions. And also one learns by doing.</p>",
+        "id": 232482796,
+        "sender_full_name": "Henry Story",
+        "timestamp": 1617132280
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276060\">Javier Prieto</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/Are.20proof.20assistants.20useful.20for.20CT.3F/near/232479806\">said</a>:</p>\n<blockquote>\n<p>Are you ignoring more popular proof assistants because you don't think they'll be particularly useful for category theory? I know Lean has some CT in its standard library (and I'd be surprised if others didn't as well) but maybe that's not enough for your purposes</p>\n</blockquote>\n<p>No, the only reason I'm thinking about Nuprl is that I saw those papers about doing exactly what I want to do with Nuprl.  Do you think that it is possible to do the same sort of thing in more popular proof assistants?  I really don't know much about proof assistants, so I don't know how similar or different they are.</p>",
+        "id": 232485675,
+        "sender_full_name": "Joshua Meyers",
+        "timestamp": 1617133480
+    },
+    {
+        "content": "<p>Usually, formalizing a proof in a proof assistant is considerably harder than working on paper.</p>",
+        "id": 232505298,
+        "sender_full_name": "Fabrizio Genovese",
+        "timestamp": 1617141983
+    },
+    {
+        "content": "<p>What you gain is that if it typechecks you can be certain of your proof. But no, it will not make it less tedious. On the contrary, it will make it way more tedious, and you will have to spend a great deal of time to convince your compiler that some thing that you consider totally obvious is true</p>",
+        "id": 232505408,
+        "sender_full_name": "Fabrizio Genovese",
+        "timestamp": 1617142048
+    },
+    {
+        "content": "<p>Also, while working with proof assistants the way you formalize things in the beginning makes a great deal of difference. For instance, at Statebox we decided to formalize categories as strict (associativity and identities are equalities, not isos) and this has been a dramatically bad choice. It turns out that, at least while using dependent type theory, non-strict definitions are much more manageble.</p>",
+        "id": 232505623,
+        "sender_full_name": "Fabrizio Genovese",
+        "timestamp": 1617142134
+    },
+    {
+        "content": "<p>This will, presumably, force you to go back and forth many times to completely rewrite your definitions in a way that makes sense. Obviously you will find out that what you thought would make sense does not only after hours/weeks/months that you have worked on it.</p>",
+        "id": 232505792,
+        "sender_full_name": "Fabrizio Genovese",
+        "timestamp": 1617142213
+    },
+    {
+        "content": "<p>So, long story short: Formalizing proofs with computers is unbelievably cool and interesting for a lot of reasons, and you should definitely give it a try. But if your goal is to \"get rid of the verboseness and save time\" this is really, really, really the wrong choice xD</p>",
+        "id": 232505898,
+        "sender_full_name": "Fabrizio Genovese",
+        "timestamp": 1617142273
+    },
+    {
+        "content": "<p>There are in principle a lot of powerful tricks for category theory that would be facilitated by verified automation. But at least at the moment, as far as I've seen, these tend to be a little heavy to deploy, and may require learning a bit of programming language theory.</p>",
+        "id": 232506602,
+        "sender_full_name": "James Wood",
+        "timestamp": 1617142663
+    },
+    {
+        "content": "<p>I should be clear on what exactly I want to avoid.  I want to avoid having to spend lots of time on stuff that is easy (and thus boring).  If there is a way to spend about the same amount of time to get to the same place, or even a bit more (due to a learning curve), but have it be challenging, I would greatly prefer that.</p>",
+        "id": 232508816,
+        "sender_full_name": "Joshua Meyers",
+        "timestamp": 1617144011
+    },
+    {
+        "content": "<p>For example, if instead of cranking out proofs where I right down the obvious thing and it works, I'd rather go up one metalevel and think about strategies for coming up with \"the obvious thing\"</p>",
+        "id": 232509398,
+        "sender_full_name": "Joshua Meyers",
+        "timestamp": 1617144336
+    },
+    {
+        "content": "<p>I also do feel like in the long run this would save me time, but maybe that is just me being naive and never having used proof assistants before</p>",
+        "id": 232509479,
+        "sender_full_name": "Joshua Meyers",
+        "timestamp": 1617144364
+    },
+    {
+        "content": "<p>Also, I really like Lambek's approach of thinking of categorical structures syntactically (a language of objects, a language of arrows, a language of equalities between arrows), so I think what a proof assistant would expect would align with the way I already think about CT anyway</p>",
+        "id": 232509946,
+        "sender_full_name": "Joshua Meyers",
+        "timestamp": 1617144622
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"280784\">Joshua Meyers</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/Are.20proof.20assistants.20useful.20for.20CT.3F/near/232508816\">said</a>:</p>\n<blockquote>\n<p>I should be clear on what exactly I want to avoid.  I want to avoid having to spend lots of time on stuff that is easy (and thus boring).  </p>\n</blockquote>\n<p>That's really easy: just don't do it!</p>\n<p>If I'm learning about something, and I don't feel like verifying some calculation, I skip it.    Sometimes easy calculations are fun and/or enlightening - then I do them.  Sometimes I need to do a bunch of straightforward calculations to \"get something into my system\" so I can prove new stuff.    And when I'm writing a paper I feel a duty to check everything carefully, since it'll be coming out with my name on it.  But I don't feel any duty to verify every standard fact that I'm learning about.</p>",
+        "id": 232510986,
+        "sender_full_name": "John Baez",
+        "timestamp": 1617145296
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"280784\">Joshua Meyers</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/Are.20proof.20assistants.20useful.20for.20CT.3F/near/232509398\">said</a>:</p>\n<blockquote>\n<p>For example, if instead of cranking out proofs where I right down the obvious thing and it works, I'd rather go up one metalevel and think about strategies for coming up with \"the obvious thing\"</p>\n</blockquote>\n<p>This sort of thing you can definitely do, and if you're wanting to learn something, then algebraic solvers are full of nice theory, and worth doing as an exercise. However, my experience is that (1) there are always more theories you want to solve than you expect, (2) solvers almost completely fail to compose, and (3) once you've done a few, developing new solvers becomes the boring work, because the process isn't as streamlined as (I think) it could be.</p>",
+        "id": 232512301,
+        "sender_full_name": "James Wood",
+        "timestamp": 1617146083
+    },
+    {
+        "content": "<p>This is basically what I mean by “heavy”.</p>",
+        "id": 232512330,
+        "sender_full_name": "James Wood",
+        "timestamp": 1617146106
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"275920\">John Baez</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/Are.20proof.20assistants.20useful.20for.20CT.3F/near/232510986\">said</a>:</p>\n<blockquote>\n<p><span class=\"user-mention silent\" data-user-id=\"280784\">Joshua Meyers</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/Are.20proof.20assistants.20useful.20for.20CT.3F/near/232508816\">said</a>:</p>\n<blockquote>\n<p>I should be clear on what exactly I want to avoid.  I want to avoid having to spend lots of time on stuff that is easy (and thus boring).  </p>\n</blockquote>\n<p>That's really easy: just don't do it!</p>\n<p>If I'm learning about something, and I don't feel like verifying some calculation, I skip it.    Sometimes easy calculations are fun and/or enlightening - then I do them.  Sometimes I need to do a bunch of straightforward calculations to \"get something into my system\" so I can prove new stuff.    And when I'm writing a paper I feel a duty to check everything carefully, since it'll be coming out with my name on it.  But I don't feel any duty to verify every standard fact that I'm learning about.</p>\n</blockquote>\n<p>This works when I'm reading something passively, but when I want to really engage with the material --- ask whether this similar thing is true, see how I can generalize it, ask a question and try to answer it, etc. I can't just rely on my trust in the author anymore.  I'd like to have a way to \"explore\" a topic myself that doesn't rely on tedious calculations every step of the way.</p>",
+        "id": 232516242,
+        "sender_full_name": "Joshua Meyers",
+        "timestamp": 1617148869
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"281583\">James Wood</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/Are.20proof.20assistants.20useful.20for.20CT.3F/near/232512301\">said</a>:</p>\n<blockquote>\n<p><span class=\"user-mention silent\" data-user-id=\"280784\">Joshua Meyers</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/Are.20proof.20assistants.20useful.20for.20CT.3F/near/232509398\">said</a>:</p>\n<blockquote>\n<p>For example, if instead of cranking out proofs where I right down the obvious thing and it works, I'd rather go up one metalevel and think about strategies for coming up with \"the obvious thing\"</p>\n</blockquote>\n<p>This sort of thing you can definitely do, and if you're wanting to learn something, then algebraic solvers are full of nice theory, and worth doing as an exercise. However, my experience is that (1) there are always more theories you want to solve than you expect, (2) solvers almost completely fail to compose, and (3) once you've done a few, developing new solvers becomes the boring work, because the process isn't as streamlined as (I think) it could be.</p>\n</blockquote>\n<p>Thanks!</p>\n<p>What do you mean by \"composing\" solvers?<br>\nWhat about the process of developing solvers is not as streamlined as you think it could be?</p>",
+        "id": 232516368,
+        "sender_full_name": "Joshua Meyers",
+        "timestamp": 1617148937
+    }
+]

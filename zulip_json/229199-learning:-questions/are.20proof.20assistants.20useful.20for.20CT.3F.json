@@ -1,0 +1,218 @@
+[
+    {
+        "content": "<blockquote>\n<p>This works when I'm reading something passively, but when I want to really engage with the material --- ask whether this similar thing is true, see how I can generalize it, ask a question and try to answer it, etc. I can't just rely on my trust in the author anymore. I'd like to have a way to \"explore\" a topic myself that doesn't rely on tedious calculations every step of the way.</p>\n</blockquote>\n<p>Yes, that's important.   There are lots of ways to do that.   With category theory I often explore topics by thinking about them in words using general principles.   When two principles seem to conflict, or the principles I know don't seem powerful enough to guess any answer to some question, then sometimes I calculate.   At that point it's often not tedious, because I'm in actual suspense about how the answer will come out!    (Sometimes it still is tedious, but I try to do the bare minimum of calculation necessary to point my intuition in the right direction.)</p>\n<p>When I say \"think in words\", I mean that I have 3 main ways of thinking: using sentences that I say to myself in my mind, using mental pictures, and using mathematical symbols.</p>",
+        "id": 232525139,
+        "sender_full_name": "John Baez",
+        "timestamp": 1617156190
+    },
+    {
+        "content": "<p>Yeah this could work, and I'll try it, but it would still be nice to be able to check whether things are true</p>",
+        "id": 232528533,
+        "sender_full_name": "Joshua Meyers",
+        "timestamp": 1617159114
+    },
+    {
+        "content": "<p>Anyway, could someone please tell me whether the stuff that Prof. Kreitz et al are doing in those papers is specific to Nuprl or whether it could be done in any proof assistant, and if the latter, which proof assistant they would recommend for this purpose?</p>",
+        "id": 232529701,
+        "sender_full_name": "Joshua Meyers",
+        "timestamp": 1617160228
+    },
+    {
+        "content": "<p>I suspect the proof in the first paper you linked could be done in Lean, since the essential ingredients seem to already be part of the standard library: <a href=\"https://leanprover-community.github.io/mathlib_docs/category_theory/closed/cartesian.html#category_theory.curry_natural_right\">https://leanprover-community.github.io/mathlib_docs/category_theory/closed/cartesian.html#category_theory.curry_natural_right</a></p>\n<p>You can click around to see if the definitions and lemmas you need are in there. Also note that I'm extremely biased because I only have (some very limited) experience with Lean, so I knew where to look. It's perfectly possible other proof assistants fare better in CT. If you want a somewhat idiosyncratic list of  proof assistants ranked by \"how much math they have formalized\" I recommend <a href=\"https://www.cs.ru.nl/~freek/100\">https://www.cs.ru.nl/~freek/100</a></p>",
+        "id": 232555344,
+        "sender_full_name": "Javier Prieto",
+        "timestamp": 1617180300
+    },
+    {
+        "content": "<p>A trick to piggyback on existing proof assistants (like Agda) is to use the internal language of your categories to work in their type theory. Being careful to not use things your language hasn't (e.g. products/pairs, exponentials/arrow types), you can carry on quite a bit of proofs.<br>\nI noticed it often happens that the things you actually think as trivial become really trivial (meaning the proof assistant can figure it out by itself) when done like this.<br>\nI'm not sure how far you can go with this approach, though. I myself done very little stuff like this, but not because I encountered obstacles.</p>",
+        "id": 232723975,
+        "sender_full_name": "Matteo Capucci (he/him)",
+        "timestamp": 1617267327
+    },
+    {
+        "content": "<blockquote>\n<p>Being careful to not use things your language hasn't (e.g. products/pairs, exponentials/arrow types), you can carry on quite a bit of proofs.</p>\n</blockquote>\n<p>It seems risky to me to do this for a significantly weaker theory than the \"internal language of Agda\", because the proof assistant may make some assumptions that are only valid in the stronger metatheory. For example, when you have exponentials, you have distributivity of products over sums, but this isn't true in general. However, it might not be obvious that you're using that fact automatically in a proof assistant, because the role exponentials play isn't completely explicit, if all you're seeing are products and sums.</p>",
+        "id": 232758191,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1617284637
+    },
+    {
+        "content": "<p>Maybe <span class=\"user-mention\" data-user-id=\"275899\">@Christian Williams</span> native type theory could help here?</p>",
+        "id": 232763069,
+        "sender_full_name": "Matteo Capucci (he/him)",
+        "timestamp": 1617286389
+    },
+    {
+        "content": "<p>Well I think NTT produces type systems that are basically \"Coq(T)\", the type system of Coq/Agda parameterized by some simple type theory T. But we haven't verified this yet. Either way, not sure how it might help here.</p>",
+        "id": 232774290,
+        "sender_full_name": "Christian Williams",
+        "timestamp": 1617290156
+    },
+    {
+        "content": "<p>It's also very hard to avoid using universes, unless you never do any kind of abstraction or quantification over types, which is quite awkward--they are even likely to appear in the statement of the theorem you want to verify.</p>",
+        "id": 232911846,
+        "sender_full_name": "Reid Barton",
+        "timestamp": 1617377106
+    },
+    {
+        "content": "<p>For example: a while ago I asked here whether the free abelian group monad preserves monomorphisms in any topos. If I proved it without axioms in Agda/Coq/Lean, I would technically only know that it holds in topoi that contain a countable tower of universes.</p>",
+        "id": 232912949,
+        "sender_full_name": "Reid Barton",
+        "timestamp": 1617377681
+    },
+    {
+        "content": "<p>And that is technically extra power, for example, I could also prove Con(ZFC) which is a statement about a polynomial not having any solutions.</p>",
+        "id": 232913151,
+        "sender_full_name": "Reid Barton",
+        "timestamp": 1617377777
+    },
+    {
+        "content": "<p>(At least I could if I add choice as an axiom, I'm not sure about otherwise.)</p>",
+        "id": 232913203,
+        "sender_full_name": "Reid Barton",
+        "timestamp": 1617377804
+    },
+    {
+        "content": "<p>Related: <a href=\"https://mathoverflow.net/questions/294651/proof-assistant-for-working-in-weaker-foundations\">https://mathoverflow.net/questions/294651/proof-assistant-for-working-in-weaker-foundations</a></p>",
+        "id": 232914245,
+        "sender_full_name": "Reid Barton",
+        "timestamp": 1617378384
+    },
+    {
+        "content": "<p>I think NTT or something like it can help.  The point is to take the category you're interested in and embed it by Yoneda in a category that models all the type theory of your proof assistant, including exponentials, distributivity, universes, etc.  Then whichever of those structures are preserved by the Yoneda embedding, like exponentials and products, can be used directly as operations on the \"representables\" inside your type theory, whereas the structures that are present in your category but aren't preserved by Yoneda, like sums, are asserted as separate structure on the representables that doesn't coincide with the structure of the ambient proof assistant type theory.</p>",
+        "id": 232965558,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1617407796
+    },
+    {
+        "content": "<p>And if you have some structure that isn't preserved by Yoneda but does \"act sufficiently like\" the corresponding structure in a topos, then you can make it coincide with that of the embedding type theory by using a sheafified Yoneda embedding into a sheaf topos.  Where of course \"act sufficiently like\" means essentially \"defines a subcanonical Grothendieck topology\", i.e. \"is a postulated colimit\", e.g. sums that are extensive.</p>",
+        "id": 232965692,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1617407935
+    },
+    {
+        "content": "<p>As a side note, I think it's worth entertaining the (very) related question, \"are <em>automatic</em> theorem provers useful for CT\"?</p>\n<p>Given the effectiveness of tools like <a href=\"https://www.gap-system.org/\">GAP</a> and the power of provers like <a href=\"https://vprover.github.io/\">Vampire</a> (and the reasonable effectivness of things like <a href=\"https://hackage.haskell.org/package/djinn\">Djinn</a>), I wouldn't be surprised if one could build a somewhat effective automatic tool to discharge <em>some</em> of these \"trivial\" obligations.</p>\n<p>Though one should note that these obligations are far from trivial from an ATP perspective.</p>\n<p>I briefly tried to build the skeleton of such a system, but got distracted. I think my friend <span class=\"user-mention\" data-user-id=\"276026\">@Philip Zucker</span> has made a more successful attempt.</p>\n<p>If I had but a grad student...</p>",
+        "id": 233007668,
+        "sender_full_name": "Cody Roux",
+        "timestamp": 1617457737
+    },
+    {
+        "content": "<p>Thanks for the ping! Yes, I've been sort of slowly plunking away at the problem of automation for category reasoning in various forms for about a year now. I don't know that anything I've done is genuinely useful as of yet.</p>\n<ul>\n<li><a href=\"https://www.philipzucker.com/category-theory-in-the-e-automated-theorem-prover/\">https://www.philipzucker.com/category-theory-in-the-e-automated-theorem-prover/</a> Here I tried using Automated first order logic theorem provers off the shelf to try an encode some universal properties. I'm not particularly confident my encoding is sound.</li>\n</ul>\n<p>I switched tracks to instead of treating universal properties, which feel more complicated, to just equational reasoning</p>\n<ul>\n<li><a href=\"https://www.philipzucker.com/notes-on-synthesis-and-equation-proving-for-catlab-jl/\">https://www.philipzucker.com/notes-on-synthesis-and-equation-proving-for-catlab-jl/</a> Using ATP like Vampire and E again. This post is mostly just junk now. </li>\n<li><a href=\"https://www.philipzucker.com/theorem-proving-for-catlab-2-lets-try-z3-this-time-nope/\">https://www.philipzucker.com/theorem-proving-for-catlab-2-lets-try-z3-this-time-nope/</a> Using Z3 SMT for encoding. Seemed correct, but the encoding was too heaviweight to do anything more than trivial. Perhaps with recent lessons I could go back and tune it up.</li>\n</ul>\n<p>The egg paper came out <a href=\"https://egraphs-good.github.io/\">https://egraphs-good.github.io/</a> , which describes a data structure for equational reasoning. I implemented a version here <a href=\"https://www.philipzucker.com/egraph-1/\">https://www.philipzucker.com/egraph-1/</a> and Alessandro Cheli made a better version of that here <a href=\"https://github.com/0x0f0f0f/Metatheory.jl\">https://github.com/0x0f0f0f/Metatheory.jl</a> . I think I have a sound system for equational reasoning in a cartesian category here, once in Julia using Metatheory.jl, once in Rust using egg.</p>\n<ul>\n<li><a href=\"https://www.philipzucker.com/metatheory-progress/\">https://www.philipzucker.com/metatheory-progress/</a></li>\n<li><a href=\"https://www.philipzucker.com/rust-category/\">https://www.philipzucker.com/rust-category/</a></li>\n</ul>\n<p>Currently I'm trying to fix up the data structure so that it records and prints its proofs in a human readable way and auto translating the axioms sets that are contained in the Julia package Catlab <a href=\"https://github.com/AlgebraicJulia/Catlab.jl\">https://github.com/AlgebraicJulia/Catlab.jl</a> into my system. You may also find Catlab interesting in it's own right depending on what you want.</p>\n<p>Having said all that, I suspect you'd find it most interesting to try and use Agda categories as mentioned above. <a href=\"https://github.com/agda/agda-categories\">https://github.com/agda/agda-categories</a>  No automated system as of yet gets you all that much as far as I am aware.</p>",
+        "id": 233009535,
+        "sender_full_name": "Philip Zucker",
+        "timestamp": 1617459585
+    },
+    {
+        "content": "<p>Note that I recently pulled in the PR from <span class=\"user-mention\" data-user-id=\"276059\">@Reed Mullanix</span> that gives you a <a href=\"https://agda.github.io/agda-categories/Categories.Tactic.Category.html\">tactic for equational reasoning</a> for morphism equations in categories. I'm sure that's just the start / tip of the iceberg.</p>",
+        "id": 233012078,
+        "sender_full_name": "Jacques Carette",
+        "timestamp": 1617462439
+    },
+    {
+        "content": "<p>Cool! I saw him tweet about this. I vaguely thought it was a port of the monoid solver so it mainly dealt with associativity and identity absorption. Any idea how likely the approach is to extend to complex queries?</p>",
+        "id": 233015174,
+        "sender_full_name": "Philip Zucker",
+        "timestamp": 1617465739
+    },
+    {
+        "content": "<p>The basic idea of that solver is that we want to embed our category into a nice place where equalities hold up to beta-eta equivalence, then let agda figure out the details from there. For arbitrary categories this place is the category of copresheaves, and the embedding is yoneda. This is nice insofar that the tactic has actual categorical semantics, but is a bit underpowered when it comes to adding extra stuff ontop of it.</p>\n<p>I think we can do something similar with Closed Monoidal Categories using a \"curried\" form of day convolution, but I've yet to play with it too much</p>",
+        "id": 233031787,
+        "sender_full_name": "Reed Mullanix",
+        "timestamp": 1617482985
+    },
+    {
+        "content": "<p>Nice! So some kind of NbE?</p>",
+        "id": 233033171,
+        "sender_full_name": "Cody Roux",
+        "timestamp": 1617483963
+    },
+    {
+        "content": "<p>I've often wondered what one could generalize this to, in terms of which equational theories.</p>",
+        "id": 233033219,
+        "sender_full_name": "Cody Roux",
+        "timestamp": 1617483996
+    },
+    {
+        "content": "<p>Yeah, it is a bit mysterious. For instance, I _dont_ think it would work with any old Monoidal Category, as the day convolutions doesn't seem to melt away in the same way that the  curried version would. This is all speculation though!</p>",
+        "id": 233034339,
+        "sender_full_name": "Reed Mullanix",
+        "timestamp": 1617485242
+    },
+    {
+        "content": "<p>To elaborate, you would end up with this giant pile of tensors that you would have to sift through, whereas you can shift some stuff around when the category is closed monoidal to get rid of all of the tensors that might show up</p>",
+        "id": 233034425,
+        "sender_full_name": "Reed Mullanix",
+        "timestamp": 1617485340
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276030\">Cody Roux</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/are.20proof.20assistants.20useful.20for.20CT.3F/near/233033219\">said</a>:</p>\n<blockquote>\n<p>I've often wondered what one could generalize this to, in terms of which equational theories.</p>\n</blockquote>\n<p>Yeah, there's interesting variety in NbE-style solvers. Sometimes, you have to make extra use of the fact that expressions are given syntactically, so only finitely many elements have to be considered. The simplest example would be <a href=\"https://agda.github.io/agda-stdlib/Algebra.Solver.CommutativeMonoid.html\">commutative monoids</a>, where expressions in <code>n</code> variables are interpreted into <code>Vec ℕ n</code> (for each variable, how many times it occurs in the expression). That is, you don't use a general free commutative monoid, but rather a specific, data-like, free commutative monoid on finite sets.</p>",
+        "id": 233036303,
+        "sender_full_name": "James Wood",
+        "timestamp": 1617487418
+    },
+    {
+        "content": "<p>Right, but that's asking for a lot: I don't expect a general purpose solution to be clever about commutativity unless I treat that specially.</p>",
+        "id": 233049762,
+        "sender_full_name": "Cody Roux",
+        "timestamp": 1617503539
+    },
+    {
+        "content": "<p>I'd expect things to be similar to how we handle completion in TRS, since that's what I know about.</p>",
+        "id": 233049772,
+        "sender_full_name": "Cody Roux",
+        "timestamp": 1617503565
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276059\">Reed Mullanix</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/are.20proof.20assistants.20useful.20for.20CT.3F/near/233031787\">said</a>:</p>\n<blockquote>\n<p>For arbitrary categories this place is the category of copresheaves, and the embedding is yoneda.</p>\n</blockquote>\n<p>Huh? Why copresheaves?</p>",
+        "id": 233068762,
+        "sender_full_name": "Morgan Rogers (he/him)",
+        "timestamp": 1617528342
+    },
+    {
+        "content": "<p>Presheaves could work too, copresheaves just happen to work out a bit nicer for programming reasons.</p>",
+        "id": 233125532,
+        "sender_full_name": "Reed Mullanix",
+        "timestamp": 1617584903
+    },
+    {
+        "content": "<p>But then Yoneda is contravariant... I'm curious about the programming reasons. Is it just that defining C^op in order to construct presheaves is more effort than just working with functors on C because you already have C?</p>",
+        "id": 233153110,
+        "sender_full_name": "Morgan Rogers (he/him)",
+        "timestamp": 1617614825
+    },
+    {
+        "content": "<p>So the tactic works by first reifying some series of morphisms composed together into a tree, like so:</p>\n<div class=\"codehilite\" data-code-language=\"Agda\"><pre><span></span><code>  <span class=\"kr\">data</span> Expr <span class=\"ow\">:</span> Obj <span class=\"ow\">→</span> Obj <span class=\"ow\">→</span> <span class=\"kt\">Set</span> <span class=\"o\">(</span>o ⊔ ℓ<span class=\"o\">)</span> <span class=\"kr\">where</span>\n    <span class=\"nf\">_∘′_</span> <span class=\"ow\">:</span> <span class=\"ow\">∀</span> <span class=\"o\">{</span>A B C<span class=\"o\">}</span> <span class=\"ow\">→</span> Expr B C <span class=\"ow\">→</span> Expr A B <span class=\"ow\">→</span> Expr A C\n    <span class=\"nf\">id′</span>  <span class=\"ow\">:</span> <span class=\"ow\">∀</span> <span class=\"o\">{</span>A<span class=\"o\">}</span> <span class=\"ow\">→</span> Expr A A\n    <span class=\"nf\">[_↑]</span> <span class=\"ow\">:</span> <span class=\"ow\">∀</span> <span class=\"o\">{</span>A B<span class=\"o\">}</span> <span class=\"ow\">→</span> A ⇒ B <span class=\"ow\">→</span> Expr A B\n</code></pre></div>\n<p>As a note on notation, <code>A ⇒ B</code> is notation for a morphism between <code>A</code> and <code>B</code></p>\n<p>We then turn this reified tree of morphisms into an action on homs:</p>\n<div class=\"codehilite\" data-code-language=\"Agda\"><pre><span></span><code>  <span class=\"nf\">embed</span> <span class=\"ow\">:</span> Expr B C <span class=\"ow\">→</span> A ⇒ B <span class=\"ow\">→</span> A ⇒ C\n  embed <span class=\"o\">(</span>f ∘′ g<span class=\"o\">)</span> h  <span class=\"ow\">=</span> embed f <span class=\"o\">(</span>embed g h<span class=\"o\">)</span>\n  embed id′ h       <span class=\"ow\">=</span> h\n  embed [ f ↑] h    <span class=\"ow\">=</span> f ∘ h\n</code></pre></div>\n<p>This is the \"programming reason\". We could have it be:</p>\n<div class=\"codehilite\" data-code-language=\"Agda\"><pre><span></span><code>  <span class=\"nf\">embed-contra</span> <span class=\"ow\">:</span> Expr C A <span class=\"ow\">→</span> A ⇒ B <span class=\"ow\">→</span> C ⇒ B\n  embed-contra <span class=\"o\">(</span>f ∘′ g<span class=\"o\">)</span> h <span class=\"ow\">=</span> embed-contra g <span class=\"o\">(</span>embed-contra f h<span class=\"o\">)</span>\n  embed-contra id′ h <span class=\"ow\">=</span> h\n  embed-contra [ x ↑] h <span class=\"ow\">=</span> h ∘ x\n</code></pre></div>\n<p>But the traversal is a lot less natural</p>\n<p>Full code is here if you want to take a peek :)<br>\n<a href=\"https://github.com/agda/agda-categories/blob/master/src/Categories/Tactic/Category.agda\">https://github.com/agda/agda-categories/blob/master/src/Categories/Tactic/Category.agda</a></p>",
+        "id": 233197315,
+        "sender_full_name": "Reed Mullanix",
+        "timestamp": 1617641017
+    },
+    {
+        "content": "<p>Neat! I learned this trick from Peter Dybjer's <a href=\"http://www.cse.chalmers.se/~peterd/slides/Leicester.pdf\">slides</a></p>",
+        "id": 233238482,
+        "sender_full_name": "Cody Roux",
+        "timestamp": 1617660674
+    },
+    {
+        "content": "<p>We use a related trick in the Lean category theory library: if we have a lemma of the form <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>f</mi><mo>∘</mo><mi>g</mi><mo>=</mo><mi>h</mi></mrow><annotation encoding=\"application/x-tex\">f \\circ g = h</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8888799999999999em;vertical-align:-0.19444em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.10764em;\">f</span><span class=\"mspace\" style=\"margin-right:0.2222222222222222em;\"></span><span class=\"mbin\">∘</span><span class=\"mspace\" style=\"margin-right:0.2222222222222222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.625em;vertical-align:-0.19444em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.03588em;\">g</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.69444em;vertical-align:0em;\"></span><span class=\"mord mathnormal\">h</span></span></span></span> that we want the simplifier to apply, even if it appears in some tree of compositions in which <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>f</mi></mrow><annotation encoding=\"application/x-tex\">f</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8888799999999999em;vertical-align:-0.19444em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.10764em;\">f</span></span></span></span> and <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>g</mi></mrow><annotation encoding=\"application/x-tex\">g</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.625em;vertical-align:-0.19444em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.03588em;\">g</span></span></span></span> are not necessarily siblings, we automatically generate a second lemma of the form <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>f</mi><mo>∘</mo><mo stretchy=\"false\">(</mo><mi>g</mi><mo>∘</mo><mi>k</mi><mo stretchy=\"false\">)</mo><mo>=</mo><mi>h</mi><mo>∘</mo><mi>k</mi></mrow><annotation encoding=\"application/x-tex\">f \\circ (g \\circ k) = h \\circ k</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8888799999999999em;vertical-align:-0.19444em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.10764em;\">f</span><span class=\"mspace\" style=\"margin-right:0.2222222222222222em;\"></span><span class=\"mbin\">∘</span><span class=\"mspace\" style=\"margin-right:0.2222222222222222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mopen\">(</span><span class=\"mord mathnormal\" style=\"margin-right:0.03588em;\">g</span><span class=\"mspace\" style=\"margin-right:0.2222222222222222em;\"></span><span class=\"mbin\">∘</span><span class=\"mspace\" style=\"margin-right:0.2222222222222222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.03148em;\">k</span><span class=\"mclose\">)</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.69444em;vertical-align:0em;\"></span><span class=\"mord mathnormal\">h</span><span class=\"mspace\" style=\"margin-right:0.2222222222222222em;\"></span><span class=\"mbin\">∘</span><span class=\"mspace\" style=\"margin-right:0.2222222222222222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.69444em;vertical-align:0em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.03148em;\">k</span></span></span></span>, which will always apply after moving all parentheses to the right</p>",
+        "id": 233239040,
+        "sender_full_name": "Reid Barton",
+        "timestamp": 1617661018
+    },
+    {
+        "content": "<p>It's also turning a system of compositions-in-a-category into a \"native\" composition <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"false\">(</mo><mi>f</mi><mo>∘</mo><mo>−</mo><mo stretchy=\"false\">)</mo><mo stretchy=\"false\">(</mo><mi>g</mi><mo>∘</mo><mo>−</mo><mo stretchy=\"false\">)</mo><mi>k</mi></mrow><annotation encoding=\"application/x-tex\">(f \\circ -) (g \\circ -) k</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mopen\">(</span><span class=\"mord mathnormal\" style=\"margin-right:0.10764em;\">f</span><span class=\"mspace\" style=\"margin-right:0.2222222222222222em;\"></span><span class=\"mbin\">∘</span><span class=\"mspace\" style=\"margin-right:0.2222222222222222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord\">−</span><span class=\"mclose\">)</span><span class=\"mopen\">(</span><span class=\"mord mathnormal\" style=\"margin-right:0.03588em;\">g</span><span class=\"mspace\" style=\"margin-right:0.2222222222222222em;\"></span><span class=\"mbin\">∘</span><span class=\"mspace\" style=\"margin-right:0.2222222222222222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord\">−</span><span class=\"mclose\">)</span><span class=\"mord mathnormal\" style=\"margin-right:0.03148em;\">k</span></span></span></span>.</p>",
+        "id": 233239386,
+        "sender_full_name": "Reid Barton",
+        "timestamp": 1617661217
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276777\">Mike Shulman</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/are.20proof.20assistants.20useful.20for.20CT.3F/near/232965558\">said</a>:</p>\n<blockquote>\n<p>I think NTT or something like it can help.  The point is to take the category you're interested in and embed it by Yoneda in a category that models all the type theory of your proof assistant, including exponentials, distributivity, universes, etc.  Then whichever of those structures are preserved by the Yoneda embedding, like exponentials and products, can be used directly as operations on the \"representables\" inside your type theory, whereas the structures that are present in your category but aren't preserved by Yoneda, like sums, are asserted as separate structure on the representables that doesn't coincide with the structure of the ambient proof assistant type theory.</p>\n</blockquote>\n<p>Indeed! And for others in the room, this is in essence also the method that we used to prove metatheoretic results such as normalization for cubical type theory, except that we pass through not only the Yoneda embedding but a further open embedding until we reach a topos whose 'internal type theory' can state the properties we want to prove.</p>",
+        "id": 233561437,
+        "sender_full_name": "Jonathan Sterling",
+        "timestamp": 1617829442
+    },
+    {
+        "content": "<p><span class=\"user-mention\" data-user-id=\"297784\">@Jonathan Sterling</span>  I deeply want to ask some follow-up questions about this, but I feel the thread is not the right one for this.</p>",
+        "id": 233867541,
+        "sender_full_name": "Cody Roux",
+        "timestamp": 1617992034
+    }
+]

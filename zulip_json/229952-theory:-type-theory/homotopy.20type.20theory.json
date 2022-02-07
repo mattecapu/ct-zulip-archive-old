@@ -1,0 +1,116 @@
+[
+    {
+        "content": "<p>This is the HoTT stream. Welcome!</p>",
+        "id": 191910036,
+        "sender_full_name": "Alex Kavvos",
+        "timestamp": 1585239642
+    },
+    {
+        "content": "<p>In case anyone is unaware, there is also a dedicated HoTT zulip.</p>",
+        "id": 191928200,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1585246823
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276777\">Mike Shulman</span> <a href=\"#narrow/stream/229952-type-theory/topic/homotopy.20type.20theory/near/191928200\" title=\"#narrow/stream/229952-type-theory/topic/homotopy.20type.20theory/near/191928200\">said</a>:</p>\n<blockquote>\n<p>In case anyone is unaware, there is also a dedicated HoTT zulip.</p>\n</blockquote>\n<p>...which explains the awful silence here.</p>",
+        "id": 191954109,
+        "sender_full_name": "Alex Kavvos",
+        "timestamp": 1585259748
+    },
+    {
+        "content": "<p>that's good. could someone possibly set a link here, for people to join?</p>",
+        "id": 191961252,
+        "sender_full_name": "Christian Williams",
+        "timestamp": 1585264888
+    },
+    {
+        "content": "<p><a href=\"https://hott.zulipchat.com\" title=\"https://hott.zulipchat.com\">https://hott.zulipchat.com</a></p>",
+        "id": 191961354,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1585264973
+    },
+    {
+        "content": "<p>hmmm, it says I'm not a member of that organization when I try to log in. Does an invite link need to be provided or something? (I encountered a similar situation trying to join here; not sure if that's changed.)</p>",
+        "id": 191961407,
+        "sender_full_name": "T Murrills",
+        "timestamp": 1585265038
+    },
+    {
+        "content": "<p>you have to click \"Sign up\" at the bottom of the page</p>",
+        "id": 191961560,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1585265155
+    },
+    {
+        "content": "<p>it seems to have been started just a few days before this one</p>",
+        "id": 191961598,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1585265163
+    },
+    {
+        "content": "<p>ah, ok! sorry, I thought that was for signing up for a zulip account itself. :)</p>",
+        "id": 191961821,
+        "sender_full_name": "T Murrills",
+        "timestamp": 1585265297
+    },
+    {
+        "content": "<p>I agree it's unclear — there are no global Zulip accounts, though, so it's always particular to an organisation</p>",
+        "id": 191961991,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1585265433
+    },
+    {
+        "content": "<p>Hi all. I am reading about the Steenrod squaring operations today. One of the applications of this idea is as follows. If X is a space, and C(X) denotes the chain complex of singular simplices in X,  then there is a natural map T: C(X) -&gt; C(X) \\otimes C(X) called the Alexander-Whitney map. We can prove that this is the unique natural map up to homotopy. In particular, we can show that (letting tau denote the symmetry isomorphism in the category of chain complexes)   T \\simeq \\tau T, so this map is co-commutative up to homotopy by some h_0 : T \\simeq \\tau T. Furthermore it is known that h_0 is homotopic to \\tau h_0 by some higher homotopy h_1, and inductively there exists h_{n+1} : h_n\\simeq \\tau h_n for each n.</p>\n<p>The Steenrod squares are certain algebraic invariants in cohomology derived from these higher homotopies. The fact that there are nonzero Steenrod squares shows that these higher homotopies cannot always be the constant homotopy at a point; in particular, we cannot give a natural map  f: C(X) -&gt; C(X)\\otimes C(X)   such that \\tau f = f on the nose, because if this were the case then we could always have h_n be the constant homotopy for all n.</p>\n<p>My question is how could we state this or express it in homotopy type theory? Intuitively I want to say something like \"there is no natural map f: C(X) -&gt; C(X) \\otimes C(X) such that   tau f = f by the reflexivity proof\" but this seems like nonsense. What is being shown is something like that tau f is not definitionally equal or rewrite equal to f in general even though the identity type f = tau f is contractible (?). But we cannot say in HoTT that \"A is not definitionally equal to B.\"</p>",
+        "id": 247079260,
+        "sender_full_name": "Patrick Nicodemus",
+        "timestamp": 1627139151
+    },
+    {
+        "content": "<p>The problem is more basic: you can't even define <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>C</mi><mo stretchy=\"false\">(</mo><mi>X</mi><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">C(X)</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.07153em;\">C</span><span class=\"mopen\">(</span><span class=\"mord mathnormal\" style=\"margin-right:0.07847em;\">X</span><span class=\"mclose\">)</span></span></span></span> in HoTT.</p>",
+        "id": 247101101,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1627174410
+    },
+    {
+        "content": "<p>What does that mean and how can one prove that one can't define it?</p>",
+        "id": 249109131,
+        "sender_full_name": "Leopold Schlicht",
+        "timestamp": 1628689579
+    },
+    {
+        "content": "<p>I don’t think there is a proof that it can’t be done, but folks have tried and failed to define simplicial complexes in HoTT. <a href=\"https://hott-uf.github.io/2020/HoTTUF_2020_paper_11.pdf\">https://hott-uf.github.io/2020/HoTTUF_2020_paper_11.pdf</a></p>",
+        "id": 249121565,
+        "sender_full_name": "Jake Gillberg",
+        "timestamp": 1628694615
+    },
+    {
+        "content": "<p>I should have been more clear.  Part of the problem is that the question doesn't specify what is to be meant by a \"space\" or a \"chain complex\" in HoTT.  If by \"space\" we mean a set equipped with a topology, and by \"chain complex\" we mean a collection of sets with abelian group structures and differentials between them, then we are just importing ordinary set-based mathematics into HoTT, and we can say all the usual things in the usual way: <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>τ</mi><mi>f</mi><mo>=</mo><mi>f</mi></mrow><annotation encoding=\"application/x-tex\">\\tau f = f</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8888799999999999em;vertical-align:-0.19444em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.1132em;\">τ</span><span class=\"mord mathnormal\" style=\"margin-right:0.10764em;\">f</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.8888799999999999em;vertical-align:-0.19444em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.10764em;\">f</span></span></span></span> means on-the-nose equality and if we want something weaker we have to explicitly refer to chain homotopies.</p>",
+        "id": 249136918,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1628701325
+    },
+    {
+        "content": "<p>If by \"space\" we mean a <em>type</em>, but by \"chain complex\" we still mean a collection of sets with abelian group structures and differentials, then it's not known how to define <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>C</mi><mo stretchy=\"false\">(</mo><mi>X</mi><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">C(X)</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.07153em;\">C</span><span class=\"mopen\">(</span><span class=\"mord mathnormal\" style=\"margin-right:0.07847em;\">X</span><span class=\"mclose\">)</span></span></span></span> (although we do of course know what a chain complex of this sort <em>is</em>).</p>",
+        "id": 249137045,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1628701390
+    },
+    {
+        "content": "<p>If instead by \"chain complex\" we mean some homotopical object built out of higher types that would correspond in the classical model to a chain complex (such as an <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>H</mi><mi mathvariant=\"double-struck\">Z</mi></mrow><annotation encoding=\"application/x-tex\">H\\mathbb{Z}</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.68889em;vertical-align:0em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.08125em;\">H</span><span class=\"mord mathbb\">Z</span></span></span></span>-module spectrum), then we don't even know how to define that kind of chain complex in HoTT.  We can define spectra, but highly structured ring and module spectra are currently out of reach (except, as always with these questions, when using 2LTT).</p>",
+        "id": 249137340,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1628701509
+    },
+    {
+        "content": "<p>However, I guess it does make sense to ask this question about an imaginary version of the latter situation.  If we were using 2LTT then we could indeed say, at the exo-level, that <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>τ</mi><mi>f</mi></mrow><annotation encoding=\"application/x-tex\">\\tau f</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8888799999999999em;vertical-align:-0.19444em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.1132em;\">τ</span><span class=\"mord mathnormal\" style=\"margin-right:0.10764em;\">f</span></span></span></span> is not <em>exo-equal</em> to <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>f</mi></mrow><annotation encoding=\"application/x-tex\">f</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8888799999999999em;vertical-align:-0.19444em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.10764em;\">f</span></span></span></span>.  But this would not be an \"internal\" statement in the fibrant fragment, and you're right that in that world we cannot negate definitional equality.  Instead we have to talk about homotopy-invariant statements, such as for instance \"there are nonzero Steenrod squares\".  (-:</p>",
+        "id": 249138115,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1628701845
+    },
+    {
+        "content": "<p>So I guess the best answer to the original question may be \"we can't\".  (-:</p>",
+        "id": 249138448,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1628702021
+    }
+]

@@ -1,0 +1,158 @@
+[
+    {
+        "content": "<p>When is the opposite of the category of algebras of a Lawvere theory an <a href=\"https://ncatlab.org/nlab/show/extensive%20category\">[[extensive category]]</a>?</p>\n<p>Any sort of necessary or sufficient conditions would be interesting.</p>",
+        "id": 266222234,
+        "sender_full_name": "John Baez",
+        "timestamp": 1640654929
+    },
+    {
+        "content": "<p>Here's why: an extensive category acts to some extent like a category of \"spaces\".   So, this question asks when a category of \"algebraic gadgets\" has an opposite that acts like a category of spaces.  This is a basic idea behind algebraic geometry.</p>",
+        "id": 266222364,
+        "sender_full_name": "John Baez",
+        "timestamp": 1640655101
+    },
+    {
+        "content": "<p>The classic example is the category of commutative rings, whose opposite is the category of <a href=\"https://ncatlab.org/nlab/show/affine%20schemes\">[[affine schemes]]</a>.</p>",
+        "id": 266222448,
+        "sender_full_name": "John Baez",
+        "timestamp": 1640655211
+    },
+    {
+        "content": "<p>Another example is the category of commutative <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>R</mi></mrow><annotation encoding=\"application/x-tex\">R</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.00773em;\">R</span></span></span></span>-algebras for any commutative ring <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>R</mi></mrow><annotation encoding=\"application/x-tex\">R</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.00773em;\">R</span></span></span></span>.</p>",
+        "id": 266222523,
+        "sender_full_name": "John Baez",
+        "timestamp": 1640655281
+    },
+    {
+        "content": "<p>But I think there are also other examples that show up in modern generalizations of algebraic geometry.</p>",
+        "id": 266222546,
+        "sender_full_name": "John Baez",
+        "timestamp": 1640655333
+    },
+    {
+        "content": "<p>I suspect that the answer may be extracted with a little work from Lack–Vitale's <a href=\"https://core.ac.uk/download/pdf/81928459.pdf\">When do completion processes give rise to extensive categories?</a>. In particular, the filtered-cocompletion of a category C is extensive if and only if C is (Proposition 6.4). Categories of algebras for algebraic theories are locally finitely presentable categories, and so this proposition should apply.</p>",
+        "id": 266222855,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1640655732
+    },
+    {
+        "content": "<p>Great!   Can someone please do the \"little work\" required to extract an answer to my question from Lack-Vitale's paper?  I don't see how.</p>",
+        "id": 266223138,
+        "sender_full_name": "John Baez",
+        "timestamp": 1640656177
+    },
+    {
+        "content": "<p>But John said the <em>opposite</em> of the category of algebras, not the category of algebras itself, which is the filtered cocompletion of the finitely presentable algebras.</p>",
+        "id": 266223805,
+        "sender_full_name": "Todd Trimble",
+        "timestamp": 1640657012
+    },
+    {
+        "content": "<p>Ah good point, I somehow skipped over that.</p>",
+        "id": 266223861,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1640657055
+    },
+    {
+        "content": "<p>So to try to get the ball rolling, let me sketch how extensivity (lextensitvity) is proven for the classical case of commutative rings: </p>\n<ul>\n<li>\n<p>The category <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"normal\">C</mi><mi mathvariant=\"normal\">R</mi><mi mathvariant=\"normal\">i</mi><mi mathvariant=\"normal\">n</mi><mi mathvariant=\"normal\">g</mi></mrow><annotation encoding=\"application/x-tex\">\\mathrm{CRing}</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8778em;vertical-align:-0.1944em;\"></span><span class=\"mord\"><span class=\"mord mathrm\" style=\"margin-right:0.01389em;\">CRing</span></span></span></span></span> of commutative rings is of course finitely cocomplete.</p>\n</li>\n<li>\n<p>Product projections <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi>π</mi><mn>1</mn></msub><mo>:</mo><mi>R</mi><mo>×</mo><mi>S</mi><mo>→</mo><mi>R</mi></mrow><annotation encoding=\"application/x-tex\">\\pi_1: R \\times S \\to R</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.5806em;vertical-align:-0.15em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.03588em;\">π</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.3011em;\"><span style=\"top:-2.55em;margin-left:-0.0359em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">1</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">:</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.7667em;vertical-align:-0.0833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.00773em;\">R</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span><span class=\"mbin\">×</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.05764em;\">S</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">→</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.00773em;\">R</span></span></span></span> and <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi>π</mi><mn>2</mn></msub><mo>:</mo><mi>R</mi><mo>×</mo><mi>S</mi><mo>→</mo><mi>S</mi></mrow><annotation encoding=\"application/x-tex\">\\pi_2: R \\times S \\to S</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.5806em;vertical-align:-0.15em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.03588em;\">π</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.3011em;\"><span style=\"top:-2.55em;margin-left:-0.0359em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">2</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">:</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.7667em;vertical-align:-0.0833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.00773em;\">R</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span><span class=\"mbin\">×</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.05764em;\">S</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">→</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.05764em;\">S</span></span></span></span> are epic, and their pushout is terminal.</p>\n</li>\n<li>\n<p>The pushout in <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"normal\">C</mi><mi mathvariant=\"normal\">R</mi><mi mathvariant=\"normal\">i</mi><mi mathvariant=\"normal\">n</mi><mi mathvariant=\"normal\">g</mi></mrow><annotation encoding=\"application/x-tex\">\\mathrm{CRing}</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8778em;vertical-align:-0.1944em;\"></span><span class=\"mord\"><span class=\"mord mathrm\" style=\"margin-right:0.01389em;\">CRing</span></span></span></span></span> of two ring maps <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>R</mi><mo>→</mo><mi>S</mi></mrow><annotation encoding=\"application/x-tex\">R \\to S</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.00773em;\">R</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">→</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.05764em;\">S</span></span></span></span>, <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>R</mi><mo>→</mo><mi>T</mi></mrow><annotation encoding=\"application/x-tex\">R \\to T</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.00773em;\">R</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">→</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.13889em;\">T</span></span></span></span> is given by the tensor product <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>S</mi><msub><mo>⊗</mo><mi>R</mi></msub><mi>T</mi></mrow><annotation encoding=\"application/x-tex\">S \\otimes_R T</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8333em;vertical-align:-0.15em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.05764em;\">S</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span><span class=\"mbin\"><span class=\"mbin\">⊗</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.3283em;\"><span style=\"top:-2.55em;margin-left:0em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathnormal mtight\" style=\"margin-right:0.00773em;\">R</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.13889em;\">T</span></span></span></span>, with the evident commutative ring structure.</p>\n</li>\n<li>\n<p>The pushing-out functor along a map <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>R</mi><mo>→</mo><mi>S</mi></mrow><annotation encoding=\"application/x-tex\">R \\to S</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.00773em;\">R</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">→</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.05764em;\">S</span></span></span></span>, namely <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>S</mi><msub><mo>⊗</mo><mi>R</mi></msub><mo>−</mo><mo>:</mo><msub><mrow><mi mathvariant=\"normal\">C</mi><mi mathvariant=\"normal\">A</mi><mi mathvariant=\"normal\">l</mi><mi mathvariant=\"normal\">g</mi></mrow><mi>R</mi></msub><mo>→</mo><msub><mrow><mi mathvariant=\"normal\">C</mi><mi mathvariant=\"normal\">A</mi><mi mathvariant=\"normal\">l</mi><mi mathvariant=\"normal\">g</mi></mrow><mi>S</mi></msub></mrow><annotation encoding=\"application/x-tex\">S \\otimes_R -: \\mathrm{CAlg}_R \\to \\mathrm{CAlg}_S</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8333em;vertical-align:-0.15em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.05764em;\">S</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span><span class=\"mbin\"><span class=\"mbin\">⊗</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.3283em;\"><span style=\"top:-2.55em;margin-left:0em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathnormal mtight\" style=\"margin-right:0.00773em;\">R</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6667em;vertical-align:-0.0833em;\"></span><span class=\"mord\">−</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">:</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.9386em;vertical-align:-0.2441em;\"></span><span class=\"mord\"><span class=\"mord\"><span class=\"mord mathrm\" style=\"margin-right:0.01389em;\">CAlg</span></span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.2342em;\"><span style=\"top:-2.4559em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathnormal mtight\" style=\"margin-right:0.00773em;\">R</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.2441em;\"><span></span></span></span></span></span></span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">→</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.9386em;vertical-align:-0.2441em;\"></span><span class=\"mord\"><span class=\"mord\"><span class=\"mord mathrm\" style=\"margin-right:0.01389em;\">CAlg</span></span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.2342em;\"><span style=\"top:-2.4559em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathnormal mtight\" style=\"margin-right:0.05764em;\">S</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.2441em;\"><span></span></span></span></span></span></span></span></span></span>, preserves finite products (since finite products are reflected and preserved by the forgetful functor to <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mrow><mi mathvariant=\"normal\">M</mi><mi mathvariant=\"normal\">o</mi><mi mathvariant=\"normal\">d</mi></mrow><mi>R</mi></msub></mrow><annotation encoding=\"application/x-tex\">\\mathrm{Mod}_R</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8444em;vertical-align:-0.15em;\"></span><span class=\"mord\"><span class=\"mord\"><span class=\"mord mathrm\">Mod</span></span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.3283em;\"><span style=\"top:-2.55em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathnormal mtight\" style=\"margin-right:0.00773em;\">R</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span></span></span></span>, where they are biproducts and therefore coproducts that are preserved by tensoring).</p>\n</li>\n</ul>",
+        "id": 266224237,
+        "sender_full_name": "Todd Trimble",
+        "timestamp": 1640657523
+    },
+    {
+        "content": "<p>So this does look very specialized. In how many algebraic categories do we have coproducts distributing over products?</p>",
+        "id": 266224336,
+        "sender_full_name": "Todd Trimble",
+        "timestamp": 1640657650
+    },
+    {
+        "content": "<p>Thanks, Todd!</p>",
+        "id": 266224462,
+        "sender_full_name": "John Baez",
+        "timestamp": 1640657874
+    },
+    {
+        "content": "<p>The arguments can be applied verbatim for commutative rigs, however.</p>",
+        "id": 266225475,
+        "sender_full_name": "Zhen Lin Low",
+        "timestamp": 1640659202
+    },
+    {
+        "content": "<p>All the examples of co-extensive categories of algebras I can think of are categories of commutative rigs: commutative rings, of course, but also <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msup><mi mathvariant=\"script\">C</mi><mi mathvariant=\"normal\">∞</mi></msup></mrow><annotation encoding=\"application/x-tex\">\\mathscr{C}^\\infty</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.7em;\"></span><span class=\"mord\"><span class=\"mord mathscr\" style=\"margin-right:0.1689em;\">C</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.6644em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">∞</span></span></span></span></span></span></span></span></span></span></span>-rings, distributive lattices, frames, boolean algebras, ...</p>",
+        "id": 266225759,
+        "sender_full_name": "Zhen Lin Low",
+        "timestamp": 1640659603
+    },
+    {
+        "content": "<p>I would be delighted to see the commutative rig axioms show up in the answer to my question, maybe with the aid of some extra assumptions.   This would, in my mind, \"justify\" the idea that algebraic geometry is about commutative rigs.</p>",
+        "id": 266226022,
+        "sender_full_name": "John Baez",
+        "timestamp": 1640660024
+    },
+    {
+        "content": "<p>I decided to post a version of my question <a href=\"https://mathoverflow.net/questions/412643/when-is-the-opposite-of-the-category-of-algebras-of-a-lawvere-theory-extensive\">on MathOverflow</a>.</p>",
+        "id": 266226073,
+        "sender_full_name": "John Baez",
+        "timestamp": 1640660069
+    },
+    {
+        "content": "<p>Tim points out that commutative monoids in semiadditive idempotent-complete symmetric monoidal categories also form a co-extensive category, which seems to be another generalisation of commutative rigs. (I don't think <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msup><mi mathvariant=\"script\">C</mi><mi mathvariant=\"normal\">∞</mi></msup></mrow><annotation encoding=\"application/x-tex\">\\mathscr{C}^\\infty</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.7em;\"></span><span class=\"mord\"><span class=\"mord mathscr\" style=\"margin-right:0.1689em;\">C</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.6644em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">∞</span></span></span></span></span></span></span></span></span></span></span>-rings form such a category, though?)</p>",
+        "id": 266226192,
+        "sender_full_name": "Zhen Lin Low",
+        "timestamp": 1640660269
+    },
+    {
+        "content": "<p>I added some of your examples to my question... maybe I should have credited you, but I'll just credit you here: THANKS!</p>",
+        "id": 266226268,
+        "sender_full_name": "John Baez",
+        "timestamp": 1640660360
+    },
+    {
+        "content": "<p>I recall reading somewhere, I think in a paper referenced by <span class=\"user-mention\" data-user-id=\"276092\">@Nathanael Arkor</span>, that an algebraic theory whose category of algebras has a strict terminal object must have at least two distinct constant symbols. I don't remember the argument at all, though.</p>",
+        "id": 266230544,
+        "sender_full_name": "Zhen Lin Low",
+        "timestamp": 1640666401
+    },
+    {
+        "content": "<p>Oh, silly me, it's actually easy. If there is exactly one constant then the initial algebra is a singleton, so if there are any algebras with more than one element then the singleton is not a strict terminal object. So either there are no constants or there are at least two constants. I'm not sure the former case can be excluded...</p>",
+        "id": 266231511,
+        "sender_full_name": "Zhen Lin Low",
+        "timestamp": 1640667782
+    },
+    {
+        "content": "<p><span class=\"user-mention\" data-user-id=\"275920\">@John Baez</span>, you may want to take a look at <a href=\"http://www.tac.mta.ca/tac/volumes/20/14/20-14abs.html\">http://www.tac.mta.ca/tac/volumes/20/14/20-14abs.html</a></p>",
+        "id": 266240982,
+        "sender_full_name": "Fawzi Hreiki",
+        "timestamp": 1640679971
+    },
+    {
+        "content": "<p>If there are no constants, then the initial algebra is empty as a set. But then the two product projections <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>0</mn><mo>×</mo><mn>0</mn><mo>→</mo><mn>0</mn></mrow><annotation encoding=\"application/x-tex\">0 \\times 0 \\to 0</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.7278em;vertical-align:-0.0833em;\"></span><span class=\"mord\">0</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span><span class=\"mbin\">×</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6444em;\"></span><span class=\"mord\">0</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">→</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6444em;\"></span><span class=\"mord\">0</span></span></span></span> are both isomorphisms, as we can check at the underlying set level, so their pushout would be <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>0</mn></mrow><annotation encoding=\"application/x-tex\">0</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6444em;\"></span><span class=\"mord\">0</span></span></span></span> and not <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>1</mn></mrow><annotation encoding=\"application/x-tex\">1</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6444em;\"></span><span class=\"mord\">1</span></span></span></span>.</p>",
+        "id": 266248572,
+        "sender_full_name": "Todd Trimble",
+        "timestamp": 1640687973
+    },
+    {
+        "content": "<p>This has been solved <a href=\"https://arxiv.org/abs/2104.12188\">here</a>.</p>",
+        "id": 266264461,
+        "sender_full_name": "Graham Manuell",
+        "timestamp": 1640702462
+    },
+    {
+        "content": "<p>Nice!    It's also worth looking at <a href=\"https://arxiv.org/abs/2008.03474\">part 1</a> of that paper by David Neal Broodryk. </p>\n<p>He gives necessary and sufficient conditions for a variety (<span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>≃</mo></mrow><annotation encoding=\"application/x-tex\">\\simeq</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.4637em;\"></span><span class=\"mrel\">≃</span></span></span></span> the category of algebras of a Lawvere theory) to be coextensive.  Unfortunately the conditions are a complicated mess of syntax and he doesn't give any verbal explanation to help me understand what it means.  He also doesn't give any examples other than CommRing.  So I would need to spend an hour thinking about his paper to extract some useful information from it, and right now I'm not in the mood.</p>",
+        "id": 266273188,
+        "sender_full_name": "John Baez",
+        "timestamp": 1640709579
+    },
+    {
+        "content": "<p>Can anyone understand what his conditions \"really mean\"?</p>",
+        "id": 266273327,
+        "sender_full_name": "John Baez",
+        "timestamp": 1640709685
+    },
+    {
+        "content": "<p>Yes, this is a lazy request.</p>",
+        "id": 266273565,
+        "sender_full_name": "John Baez",
+        "timestamp": 1640709871
+    }
+]

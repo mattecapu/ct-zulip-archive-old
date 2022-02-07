@@ -1,0 +1,242 @@
+[
+    {
+        "content": "<p>This might be a basic question, but I figure the broader topic probably belongs in the ACT stream, so I'm posting here.</p>\n<p>Suppose I have a monoidal category. In my case it's a Markov category (in the sense of {1}) but I'm not sure if that matters - it would be nice to be general. I'll use Set as my example (with Cartesian product as the monoidal product.)</p>\n<p>I can draw morphisms like this</p>\n<p><a href=\"/user_uploads/21317/KXE6VQd8U_Zy3058kzOa0Dmu/image.png\" title=\"image.png\">image.png</a></p>\n<div class=\"message_inline_image\"><a href=\"/user_uploads/21317/KXE6VQd8U_Zy3058kzOa0Dmu/image.png\" title=\"image.png\"><img src=\"/user_uploads/21317/KXE6VQd8U_Zy3058kzOa0Dmu/image.png\"></a></div>",
+        "id": 192520980,
+        "sender_full_name": "Nathaniel Virgo",
+        "timestamp": 1585745062
+    },
+    {
+        "content": "<p>and in Set they're just functions that take inputs and return outputs. I can also chain them together like this</p>\n<p><a href=\"/user_uploads/21317/QSuXRnAZJG-Aut_aWdwc-vc_/image.png\" title=\"image.png\">image.png</a></p>\n<div class=\"message_inline_image\"><a href=\"/user_uploads/21317/QSuXRnAZJG-Aut_aWdwc-vc_/image.png\" title=\"image.png\"><img src=\"/user_uploads/21317/QSuXRnAZJG-Aut_aWdwc-vc_/image.png\"></a></div>",
+        "id": 192521296,
+        "sender_full_name": "Nathaniel Virgo",
+        "timestamp": 1585745249
+    },
+    {
+        "content": "<p>What I want to do is to treat A and B (just the red ones) as a single item like this</p>\n<p><a href=\"/user_uploads/21317/uSFb3XyzBwsJNb4_wkpjReQr/image.png\" title=\"image.png\">image.png</a></p>\n<div class=\"message_inline_image\"><a href=\"/user_uploads/21317/uSFb3XyzBwsJNb4_wkpjReQr/image.png\" title=\"image.png\"><img src=\"/user_uploads/21317/uSFb3XyzBwsJNb4_wkpjReQr/image.png\"></a></div>",
+        "id": 192521471,
+        "sender_full_name": "Nathaniel Virgo",
+        "timestamp": 1585745324
+    },
+    {
+        "content": "<p>that can then be plugged into any other morphism with the right inputs and outputs, like so:</p>\n<p><a href=\"/user_uploads/21317/sVLRdBYmfEA4PCMgLvE6BTK9/image.png\" title=\"image.png\">image.png</a></p>\n<div class=\"message_inline_image\"><a href=\"/user_uploads/21317/sVLRdBYmfEA4PCMgLvE6BTK9/image.png\" title=\"image.png\"><img src=\"/user_uploads/21317/sVLRdBYmfEA4PCMgLvE6BTK9/image.png\"></a></div>",
+        "id": 192521492,
+        "sender_full_name": "Nathaniel Virgo",
+        "timestamp": 1585745333
+    },
+    {
+        "content": "<p>I met similar things in Jules Hedges' lectures on open game theory {2}, and that's where I'm copying the drawing style from. But those lived in a more complicated category, and I'm hitting a few bumps in the road from \"this kind of diagram is really intuitively reasonable and I want to use them\" to \"I understand exactly what these diagrams represent and how to manipulate them formally.\"</p>\n<p>In my diagram above, the \"AB\" object is a very intuitively reasonable thing - it's a machine that takes an input in X, then gives an output in Y, then you have to give it another input in W before it gives a final output of type V. But formally I'm not sure how to think about it. I'm not even sure if it lives in Set (it's not a morphism there) or if I have to construct some other category for it to live in.</p>\n<p>So the question is just what should I be reading/learning/doing to think about these \"input-output machines\" properly? What are they in formal category-theoretic terms, and how do they relate to the underlying category? (Set in this case.)</p>",
+        "id": 192521551,
+        "sender_full_name": "Nathaniel Virgo",
+        "timestamp": 1585745371
+    },
+    {
+        "content": "<p>Of course we might to connect morphisms in various topologies, for example to get things like this (where the output B depends on X and A but not C, and similarly for D).</p>\n<p><a href=\"/user_uploads/21317/XUaREmbkkUNmPN3sUcY-DRf1/image.png\" title=\"image.png\">image.png</a></p>\n<div class=\"message_inline_image\"><a href=\"/user_uploads/21317/XUaREmbkkUNmPN3sUcY-DRf1/image.png\" title=\"image.png\"><img src=\"/user_uploads/21317/XUaREmbkkUNmPN3sUcY-DRf1/image.png\"></a></div>",
+        "id": 192521562,
+        "sender_full_name": "Nathaniel Virgo",
+        "timestamp": 1585745378
+    },
+    {
+        "content": "<p>And we might also want to consider composing these machines together, for example to model a communication process:</p>\n<p><a href=\"/user_uploads/21317/LNoNZx7cc3tavr1gEb0YmF2e/image.png\" title=\"image.png\">image.png</a></p>\n<div class=\"message_inline_image\"><a href=\"/user_uploads/21317/LNoNZx7cc3tavr1gEb0YmF2e/image.png\" title=\"image.png\"><img src=\"/user_uploads/21317/LNoNZx7cc3tavr1gEb0YmF2e/image.png\"></a></div>",
+        "id": 192521568,
+        "sender_full_name": "Nathaniel Virgo",
+        "timestamp": 1585745384
+    },
+    {
+        "content": "<p>Sorry if the question's a trivial one.</p>\n<p>{1} Fritz 2019, A synthetic approach to Markov kernels, conditional independence and theorems on sufficient statistics, <a href=\"https://arxiv.org/abs/1908.07021\" title=\"https://arxiv.org/abs/1908.07021\">https://arxiv.org/abs/1908.07021</a></p>\n<p>{2} part 1 <a href=\"https://www.youtube.com/watch?v=5Qny8YmLUzk\" title=\"https://www.youtube.com/watch?v=5Qny8YmLUzk\">https://www.youtube.com/watch?v=5Qny8YmLUzk</a> (there are another 3 lectures as well, but I couldn't find a playlist)</p>\n<div class=\"youtube-video message_inline_image\"><a data-id=\"5Qny8YmLUzk\" href=\"https://www.youtube.com/watch?v=5Qny8YmLUzk\" title=\"https://www.youtube.com/watch?v=5Qny8YmLUzk\"><img src=\"https://i.ytimg.com/vi/5Qny8YmLUzk/default.jpg\"></a></div>",
+        "id": 192521580,
+        "sender_full_name": "Nathaniel Virgo",
+        "timestamp": 1585745389
+    },
+    {
+        "content": "<p>Very interesting! Let's ping <span class=\"user-mention\" data-user-id=\"275901\">@Jules Hedges</span> :) For your last image, it intuitively sounds like axiomitizing this sort of composition must be quite hard!</p>",
+        "id": 192522718,
+        "sender_full_name": "Antonin Delpeuch",
+        "timestamp": 1585745933
+    },
+    {
+        "content": "<p><span class=\"user-mention\" data-user-id=\"276071\">@Nathaniel Virgo</span>: I think what you're describing is similar to a properad</p>",
+        "id": 192523071,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1585746084
+    },
+    {
+        "content": "<p>(although I only learnt what that was a few days ago, so take this with a pinch of salt)</p>",
+        "id": 192523129,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1585746106
+    },
+    {
+        "content": "<p>a properad is like a category, except that each morphism has multiple inputs and outputs</p>",
+        "id": 192523196,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1585746124
+    },
+    {
+        "content": "<p>and if you think of it like a graph, with morphisms being vertices and objects being edges, then you can contract (i.e. compose) any connected subgraph</p>",
+        "id": 192523258,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1585746153
+    },
+    {
+        "content": "<p>although there are just \"inputs\" and \"outputs\" for an operation in a properad — so your last diagram is a little stranger</p>",
+        "id": 192523501,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1585746253
+    },
+    {
+        "content": "<p>but maybe this would simply be representable as a sequence of multimorphisms?</p>",
+        "id": 192523588,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1585746292
+    },
+    {
+        "content": "<p>it's hard to tell without a specific example</p>",
+        "id": 192523785,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1585746371
+    },
+    {
+        "content": "<p>So, there's a few aspects to this. For the specific case where you're building these combs starting from a monoidal category, this is exactly the category of optics in the 2-legged case. For the many-legged case, for a while I was doing things by hand using common sense. Now, it turns out that these are exactly \"states in the bicategory of Tambara modules\". Guillaume Boisseau wrote a very nice paper about string diagrams in that bicategory, which we conjecture is more or less equivalent to comb diagrams over a monoidal category: <a href=\"https://arxiv.org/abs/2002.11480\" title=\"https://arxiv.org/abs/2002.11480\">https://arxiv.org/abs/2002.11480</a></p>",
+        "id": 192529250,
+        "sender_full_name": "Jules Hedges",
+        "timestamp": 1585748716
+    },
+    {
+        "content": "<p>This is all work in progress, mind</p>",
+        "id": 192529328,
+        "sender_full_name": "Jules Hedges",
+        "timestamp": 1585748752
+    },
+    {
+        "content": "<p>For comb diagrams themselves, I finally have what I think is a workable definition for the comb-inatorics of how they compose, forming an operad whose operations are all the ways of interleaving a bunch of combs. That's more general than the previous thing: given a monoidal category you should get an algebra of the combs operad, but there are other reasonable examples that don't arise that way (for example, Aleks Kissinger and other people in quantum mechanics use comb diagrams over a compact closed category)</p>",
+        "id": 192529798,
+        "sender_full_name": "Jules Hedges",
+        "timestamp": 1585748927
+    },
+    {
+        "content": "<p>The wiggly example isn't something I ever thought about, so I have no idea about that. I doubt it's covered by any of what I said. Do you have any motivation for using a diagram element with that shape?</p>",
+        "id": 192529931,
+        "sender_full_name": "Jules Hedges",
+        "timestamp": 1585748999
+    },
+    {
+        "content": "<p>In the meantime, I recommend just to proceed on common sense. It's safe to use these diagrams, nothing will go wrong</p>",
+        "id": 192531173,
+        "sender_full_name": "Jules Hedges",
+        "timestamp": 1585749374
+    },
+    {
+        "content": "<p>Hi! An early version of this idea seems to come from the beautiful graphical language Mitchell Riley uses in \"Categories of optics\" (<a href=\"https://arxiv.org/abs/1809.00738\" title=\"https://arxiv.org/abs/1809.00738\">https://arxiv.org/abs/1809.00738</a>). I also happen to have a preliminary note that may be relevant here (<a href=\"https://arxiv.org/abs/2003.06214\" title=\"https://arxiv.org/abs/2003.06214\">https://arxiv.org/abs/2003.06214</a>).  I think a fair answer is that you can model these \"combs\" as tuples of functions quotiented by an equivalence relation, at least in many useful cases.  The nice thing is that the equivalence relation coincides with a coend and you can then apply Yoneda lemma to obtain nice concrete descriptions for these \"combs\".  For instance, monoidal lenses coincide with combs (Riley's paper, without that name), and you can show that the combs Kissinger and Uijlen use as notation to model the work of Chiribella, D'Ariano and Perinotti, in the very restricted case of compact closed categories, also coincide with this idea (<a href=\"https://arxiv.org/abs/0712.1325\" title=\"https://arxiv.org/abs/0712.1325\">https://arxiv.org/abs/0712.1325</a>).</p>\n<p>The approach with coends seems to extend nicely to other topologies. We can try the example you were proposing :) The idea is to treat every \"invisible wire\" as quotiented out by a coend. For instance, your second topology example could be an element of the following coend, with the two invisible wires being U and V:</p>\n<p>∃ U V . hom(X , U ⊗ V) × hom(A ⊗ U, B) × hom(C ⊗ V, D)</p>\n<p>So, for instance, in the cartesian case, we can prove using Yoneda that it reduces to a pair of morphisms:</p>\n<p>∃ U V . hom(X, U × V) × hom(A × U, B) × hom(C × V, D)<br>\n≅ (By the universal property of the product)<br>\n∃ U V . hom(X, U) × hom(X, V) × hom(A × U, B) × hom(C × V, D)<br>\n≅ (By Yoneda lemma!)<br>\nhom(A × X , B) × hom(C × X, D)</p>\n<p>In non-cartesian cases, you may use some properties of your category to get a similar description.</p>\n<p>So I think a nice way to go seems to be coends (at least, it should not be neglected). A very nice introduction to coend calculus has been written by Fosco Loregian; I really recommend the reading if you want to pursue this direction <a href=\"https://arxiv.org/pdf/1501.02503.pdf\" title=\"https://arxiv.org/pdf/1501.02503.pdf\">https://arxiv.org/pdf/1501.02503.pdf</a>. And I would be actually interested in any applications of these things! :)</p>\n<p>(edited: I made public some days ago a note on this approach that, among others, treats diagrams like these: <a href=\"http://compose.ioc.ee/git/mroman/coend-calculus-and-open-diagrams/raw/branch/master/opendiagrams.pdf\" title=\"http://compose.ioc.ee/git/mroman/coend-calculus-and-open-diagrams/raw/branch/master/opendiagrams.pdf\">http://compose.ioc.ee/git/mroman/coend-calculus-and-open-diagrams/raw/branch/master/opendiagrams.pdf</a>  But please mind that this is work in progress :) )</p>",
+        "id": 192538718,
+        "sender_full_name": "Mario Román",
+        "timestamp": 1585752304
+    },
+    {
+        "content": "<p>Interesting. These are <em>large</em> coends (indexed over all of Set) so a priori they might not exist, right? What happens in the example shown in the third and fourth images?</p>",
+        "id": 192543427,
+        "sender_full_name": "Reid Barton",
+        "timestamp": 1585754036
+    },
+    {
+        "content": "<p>Yes... in Mitchell Riley's paper Categories of Optics I think there's a section with proofs that the relevant coends do exist in ZF. I don't know whether it continues to work for these more complicated examples</p>",
+        "id": 192545147,
+        "sender_full_name": "Jules Hedges",
+        "timestamp": 1585754577
+    },
+    {
+        "content": "<p>(Personally if they didn't exist in ZF I'd just chuck in enough assumptions until they did)</p>",
+        "id": 192545284,
+        "sender_full_name": "Jules Hedges",
+        "timestamp": 1585754629
+    },
+    {
+        "content": "<p>Proofs? I just skimmed the paper to look at the pictures <span aria-label=\"slight smile\" class=\"emoji emoji-1f642\" role=\"img\" title=\"slight smile\">:slight_smile:</span></p>",
+        "id": 192545574,
+        "sender_full_name": "Reid Barton",
+        "timestamp": 1585754737
+    },
+    {
+        "content": "<p>Ah, so the example labeled <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mi>B</mi></mrow><annotation encoding=\"application/x-tex\">AB</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathdefault\">A</span><span class=\"mord mathdefault\" style=\"margin-right:0.05017em;\">B</span></span></span></span> above is exactly an optic</p>",
+        "id": 192545784,
+        "sender_full_name": "Reid Barton",
+        "timestamp": 1585754807
+    },
+    {
+        "content": "<p>By \"exist\" I meant existing in the original universe--I'm perfectly fine with considering them to exist in some possibly higher universe.</p>",
+        "id": 192545958,
+        "sender_full_name": "Reid Barton",
+        "timestamp": 1585754877
+    },
+    {
+        "content": "<p>Okay yes, it's Proposition 2.0.4. <span aria-label=\"thumbs up\" class=\"emoji emoji-1f44d\" role=\"img\" title=\"thumbs up\">:thumbs_up:</span></p>",
+        "id": 192546367,
+        "sender_full_name": "Reid Barton",
+        "timestamp": 1585755018
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"275901\">Jules Hedges</span> <a href=\"#narrow/stream/229156-applied-category.20theory/topic/input-output.20machines/near/192545284\" title=\"#narrow/stream/229156-applied-category.20theory/topic/input-output.20machines/near/192545284\">said</a>:</p>\n<blockquote>\n<p>(Personally if they didn't exist in ZF I'd just chuck in enough assumptions until they did)</p>\n</blockquote>\n<p>Always carry an inaccesible cardinal in your pocket</p>",
+        "id": 192551107,
+        "sender_full_name": "Matteo Capucci",
+        "timestamp": 1585756872
+    },
+    {
+        "content": "<p>Mario's answer is very nice. Just using type-theoretic notation (and assuming a full CCC for now, tho the question is how much less we \"really\" need), the AB diagram sort of \"obviously\" reads as: X -&gt; (Y x (W -&gt; V)) = (X -&gt; Y) x  (X -&gt; (W -&gt; V)). The \"recipe\" is just to build a chain of functions each spitting out inputs or new functions demanding output as you go, from left to right, and each time there's a branch representing that by an appropriate product or tensor. The only \"CCC\" bit is the manipulation to equate the left and the right of the above formula. So any category that can handle linear logic should be enough to do this in as long as you stick to the representation on the left?</p>",
+        "id": 192554855,
+        "sender_full_name": "Gershom",
+        "timestamp": 1585758519
+    },
+    {
+        "content": "<p>Yes... you don't need a closure though, all you need is to be locally small, so the hom is a set, then you take the coend in the category of sets. In fact the original question was for a Markov category, which typically are not monoidal closed (that's also my most common use case, but in programming you'd nearly always have a closure)</p>",
+        "id": 192556296,
+        "sender_full_name": "Jules Hedges",
+        "timestamp": 1585759120
+    },
+    {
+        "content": "<p><span class=\"user-mention\" data-user-id=\"275920\">@John Baez</span> you got your wires crossed there</p>",
+        "id": 192556682,
+        "sender_full_name": "Jules Hedges",
+        "timestamp": 1585759299
+    },
+    {
+        "content": "<p>This reminds me a lot of the question I asked in the \"Structured cospans\" topic under \"basic questions\". I'm still working on fully understanding John Baez's answer, but he was indicating that the structured cospan approach can enable us to talk about sticking different objects together that have more than two connections.</p>",
+        "id": 192564385,
+        "sender_full_name": "David Egolf",
+        "timestamp": 1585762410
+    },
+    {
+        "content": "<p>Are you watching his talk, which is going on right now?</p>",
+        "id": 192564526,
+        "sender_full_name": "Joe Moeller",
+        "timestamp": 1585762453
+    },
+    {
+        "content": "<p>Oh, I didn't realize it was now! I'm planning to watch the recording.</p>",
+        "id": 192564585,
+        "sender_full_name": "David Egolf",
+        "timestamp": 1585762480
+    },
+    {
+        "content": "<p>is this the OWLS talk, or a different one?</p>",
+        "id": 192564713,
+        "sender_full_name": "T Murrills",
+        "timestamp": 1585762552
+    },
+    {
+        "content": "<p>This in the ACT@UCR seminar<br>\nZulip Stream: <a class=\"stream\" data-stream-id=\"229966\" href=\"/#narrow/stream/229966-ACT.40UCR-seminar\">#ACT@UCR seminar</a></p>",
+        "id": 192564928,
+        "sender_full_name": "Joe Moeller",
+        "timestamp": 1585762643
+    },
+    {
+        "content": "<p>Zoom link: <a href=\"https://ucr.zoom.us/j/607160601\" title=\"https://ucr.zoom.us/j/607160601\">https://ucr.zoom.us/j/607160601</a></p>",
+        "id": 192565023,
+        "sender_full_name": "Joe Moeller",
+        "timestamp": 1585762691
+    },
+    {
+        "content": "<p>Seminar Website: <a href=\"https://sites.google.com/ucr.edu/actucr/home\" title=\"https://sites.google.com/ucr.edu/actucr/home\">https://sites.google.com/ucr.edu/actucr/home</a></p>",
+        "id": 192565146,
+        "sender_full_name": "Joe Moeller",
+        "timestamp": 1585762756
+    }
+]

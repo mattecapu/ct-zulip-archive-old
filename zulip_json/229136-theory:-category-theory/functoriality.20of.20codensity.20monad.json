@@ -1,0 +1,104 @@
+[
+    {
+        "content": "<p>When people write about the construction of codensity monads, they describe it as a functor <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"false\">(</mo><mrow><mi mathvariant=\"normal\">C</mi><mi mathvariant=\"normal\">a</mi><mi mathvariant=\"normal\">t</mi></mrow><mi mathvariant=\"normal\">/</mi><mi>A</mi><msup><mo stretchy=\"false\">)</mo><mrow><mi mathvariant=\"normal\">o</mi><mi mathvariant=\"normal\">p</mi></mrow></msup><mo>→</mo><mrow><mi mathvariant=\"normal\">M</mi><mi mathvariant=\"normal\">n</mi><mi mathvariant=\"normal\">d</mi></mrow><mo stretchy=\"false\">(</mo><mi>A</mi><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">(\\mathrm{Cat}/A)^{\\mathrm{op}} \\to \\mathrm{Mnd}(A)</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mopen\">(</span><span class=\"mord\"><span class=\"mord mathrm\">C</span><span class=\"mord mathrm\">a</span><span class=\"mord mathrm\">t</span></span><span class=\"mord\">/</span><span class=\"mord mathnormal\">A</span><span class=\"mclose\"><span class=\"mclose\">)</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.664392em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\"><span class=\"mord mathrm mtight\">o</span><span class=\"mord mathrm mtight\">p</span></span></span></span></span></span></span></span></span></span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">→</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord\"><span class=\"mord mathrm\">M</span><span class=\"mord mathrm\">n</span><span class=\"mord mathrm\">d</span></span><span class=\"mopen\">(</span><span class=\"mord mathnormal\">A</span><span class=\"mclose\">)</span></span></span></span>. This is great, but it leaves out the 2-categorical structure of the slice over <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi></mrow><annotation encoding=\"application/x-tex\">A</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathnormal\">A</span></span></span></span>.</p>\n<p>I've been trying to see how it would act on natural transformations, and it seems like there may be a variance obstruction that makes it impossible. Does anyone have thoughts about whether forming codensity monads can be made into a 2-functor? Thanks.</p>",
+        "id": 217222368,
+        "sender_full_name": "Christian Williams",
+        "timestamp": 1605752355
+    },
+    {
+        "content": "<p>Or a simpler version of the question - given an object <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>c</mi><mo>∈</mo><mi>C</mi></mrow><annotation encoding=\"application/x-tex\">c\\in C</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.5782em;vertical-align:-0.0391em;\"></span><span class=\"mord mathnormal\">c</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">∈</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.07153em;\">C</span></span></span></span> in a cartesian category, we can form the endomorphism operad <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"false\">⟨</mo><mi>c</mi><mo separator=\"true\">,</mo><mi>c</mi><mo stretchy=\"false\">⟩</mo><mo>:</mo><mi mathvariant=\"double-struck\">F</mi><mo>→</mo><mrow><mi mathvariant=\"normal\">S</mi><mi mathvariant=\"normal\">e</mi><mi mathvariant=\"normal\">t</mi></mrow></mrow><annotation encoding=\"application/x-tex\">\\langle c,c\\rangle:\\mathbb{F}\\to \\mathrm{Set}</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mopen\">⟨</span><span class=\"mord mathnormal\">c</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mord mathnormal\">c</span><span class=\"mclose\">⟩</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">:</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.68889em;vertical-align:0em;\"></span><span class=\"mord\"><span class=\"mord mathbb\">F</span></span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">→</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord\"><span class=\"mord mathrm\">S</span><span class=\"mord mathrm\">e</span><span class=\"mord mathrm\">t</span></span></span></span></span> defined by <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"false\">⟨</mo><mi>c</mi><mo separator=\"true\">,</mo><mi>c</mi><mo stretchy=\"false\">⟩</mo><mo stretchy=\"false\">(</mo><mi>n</mi><mo stretchy=\"false\">)</mo><mo>=</mo><mi>C</mi><mo stretchy=\"false\">(</mo><msup><mi>c</mi><mi>n</mi></msup><mo separator=\"true\">,</mo><mi>c</mi><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">\\langle c,c\\rangle (n) = C(c^n,c)</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mopen\">⟨</span><span class=\"mord mathnormal\">c</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mord mathnormal\">c</span><span class=\"mclose\">⟩</span><span class=\"mopen\">(</span><span class=\"mord mathnormal\">n</span><span class=\"mclose\">)</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.07153em;\">C</span><span class=\"mopen\">(</span><span class=\"mord\"><span class=\"mord mathnormal\">c</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.664392em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathnormal mtight\">n</span></span></span></span></span></span></span></span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mord mathnormal\">c</span><span class=\"mclose\">)</span></span></span></span>. Is this functorial?</p>",
+        "id": 217223206,
+        "sender_full_name": "Christian Williams",
+        "timestamp": 1605753297
+    },
+    {
+        "content": "<p>(These are closely related to a previous thread about the possible functoriality of <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>X</mi><mo>↦</mo><mo stretchy=\"false\">[</mo><mi>X</mi><mo separator=\"true\">,</mo><mi>X</mi><mo stretchy=\"false\">]</mo></mrow><annotation encoding=\"application/x-tex\">X\\mapsto [X,X]</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.69433em;vertical-align:-0.011em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.07847em;\">X</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">↦</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mopen\">[</span><span class=\"mord mathnormal\" style=\"margin-right:0.07847em;\">X</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.07847em;\">X</span><span class=\"mclose\">]</span></span></span></span>.)</p>",
+        "id": 217223313,
+        "sender_full_name": "Christian Williams",
+        "timestamp": 1605753397
+    },
+    {
+        "content": "<p>all else aside, i wonder if you can make it a functor out of the (2, 1)-category or something</p>",
+        "id": 217226176,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1605756786
+    },
+    {
+        "content": "<p>The construction I'm familiar with isn't functorial in the sense you're asking about, I think.</p>",
+        "id": 217227187,
+        "sender_full_name": "Dan Doel",
+        "timestamp": 1605758015
+    },
+    {
+        "content": "<p>For <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>Z</mi><mi>X</mi><mo>=</mo><mn>0</mn></mrow><annotation encoding=\"application/x-tex\">Z X = 0</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.07153em;\">Z</span><span class=\"mord mathnormal\" style=\"margin-right:0.07847em;\">X</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.64444em;vertical-align:0em;\"></span><span class=\"mord\">0</span></span></span></span>, the codensity monad is double negation. For the identity functor, it's the identity. There's a natural transformation from the zero functor to the identity functor, but a transformation between the codensity monads would be double negation elimination.</p>",
+        "id": 217227287,
+        "sender_full_name": "Dan Doel",
+        "timestamp": 1605758158
+    },
+    {
+        "content": "<p>I'm not sure how what I'm familiar with fits into what you described, but perhaps there are comparable examples.</p>",
+        "id": 217227447,
+        "sender_full_name": "Dan Doel",
+        "timestamp": 1605758353
+    },
+    {
+        "content": "<p>ZX?</p>",
+        "id": 217227870,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1605758864
+    },
+    {
+        "content": "<p><span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>Z</mi></mrow><annotation encoding=\"application/x-tex\">Z</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.07153em;\">Z</span></span></span></span> is the definition of the zero functor.</p>",
+        "id": 217227876,
+        "sender_full_name": "Dan Doel",
+        "timestamp": 1605758882
+    },
+    {
+        "content": "<p>ahh</p>",
+        "id": 217227917,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1605758888
+    },
+    {
+        "content": "<p><del>maybe it's just contravariant?</del> okay i bet you can cook up an example that makes it work the other way around heh</p>",
+        "id": 217227949,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1605758966
+    },
+    {
+        "content": "<p>Yeah, the opposite way try zero and one functors.</p>",
+        "id": 217227959,
+        "sender_full_name": "Dan Doel",
+        "timestamp": 1605758995
+    },
+    {
+        "content": "<p>Then you can get <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>1</mn><mo>→</mo><mn>0</mn></mrow><annotation encoding=\"application/x-tex\">1 → 0</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.64444em;vertical-align:0em;\"></span><span class=\"mord\">1</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">→</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.64444em;vertical-align:0em;\"></span><span class=\"mord\">0</span></span></span></span>, I think.</p>",
+        "id": 217228003,
+        "sender_full_name": "Dan Doel",
+        "timestamp": 1605759012
+    },
+    {
+        "content": "<p>that's a good counter-proof, thanks.</p>",
+        "id": 217229537,
+        "sender_full_name": "Christian Williams",
+        "timestamp": 1605761368
+    },
+    {
+        "content": "<p>it's just strange that endomorphism operads, endo-homs etc are ubiquitous and important, yet their construction is not functorial</p>",
+        "id": 217229545,
+        "sender_full_name": "Christian Williams",
+        "timestamp": 1605761395
+    },
+    {
+        "content": "<p>I imagine it behaves well with respect to 'logical relations'.</p>",
+        "id": 217230903,
+        "sender_full_name": "Dan Doel",
+        "timestamp": 1605763175
+    },
+    {
+        "content": "<p>Though I'm not sure exactly what those would be for this case.</p>",
+        "id": 217230928,
+        "sender_full_name": "Dan Doel",
+        "timestamp": 1605763203
+    }
+]

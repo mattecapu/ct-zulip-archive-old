@@ -1,0 +1,104 @@
+[
+    {
+        "content": "<p>By default, string diagrams for monoidal categories live in a kind of Galilean space-time: there's a \"space\" dimension (tensor product) and a \"time\" dimension (composition), with the main rules being that you can't cross strings over each other or bend them backwards in \"time\".</p>\n<p>However, duals and symmetry and so on relax these constraints. If we have a category like Rel we have almost complete freedom to move the strings around however we want. In this case it seems as if we could just forget about the spatial nature of the diagram altogether, and just think of the strings as edges in a graph, so a string is just an abstract connection between a port on one morphism and a port on another. It seems like working in this representation might make some things a lot simpler when it can be done.</p>\n<p>In other cases (e.g. if every objects has a dual but there's no braiding) it seems like we still need a spatial diagram, but the distinction between space and time goes away, so that what matters is an embedding of a planar graph in a 2D plane, but not its orientation.</p>\n<p>I'm wondering if this idea can be / has been formalised. In everything I've read so far, we always treat the space/time distinction explicitly, even when we have isomorphism classes that allow us to sort-of ignore it. I guess I'm asking if there's a way of working in the isomorphism classes directly instead.</p>",
+        "id": 196278401,
+        "sender_full_name": "Nathaniel Virgo",
+        "timestamp": 1588666248
+    },
+    {
+        "content": "<p>abstract index notation springs to mind</p>",
+        "id": 196278536,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1588666352
+    },
+    {
+        "content": "<p><span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msubsup><mi>a</mi><mrow><mi>k</mi><mi>l</mi></mrow><mrow><mi>i</mi><mi>j</mi></mrow></msubsup><msubsup><mi>b</mi><mi>i</mi><mi>l</mi></msubsup><msub><mi>c</mi><mi>j</mi></msub></mrow><annotation encoding=\"application/x-tex\">a^{ij}_{kl} b^l_i c_j</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:1.2438799999999999em;vertical-align:-0.3013079999999999em;\"></span><span class=\"mord\"><span class=\"mord mathdefault\">a</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.942572em;\"><span style=\"top:-2.3986920000000005em;margin-left:0em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mathdefault mtight\" style=\"margin-right:0.03148em;\">k</span><span class=\"mord mathdefault mtight\" style=\"margin-right:0.01968em;\">l</span></span></span></span><span style=\"top:-3.1809080000000005em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mathdefault mtight\">i</span><span class=\"mord mathdefault mtight\" style=\"margin-right:0.05724em;\">j</span></span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.3013079999999999em;\"><span></span></span></span></span></span></span><span class=\"mord\"><span class=\"mord mathdefault\">b</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.849108em;\"><span style=\"top:-2.441336em;margin-left:0em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathdefault mtight\">i</span></span></span><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathdefault mtight\" style=\"margin-right:0.01968em;\">l</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.258664em;\"><span></span></span></span></span></span></span><span class=\"mord\"><span class=\"mord mathdefault\">c</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.311664em;\"><span style=\"top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathdefault mtight\" style=\"margin-right:0.05724em;\">j</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.286108em;\"><span></span></span></span></span></span></span></span></span></span>, say</p>",
+        "id": 196278589,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1588666404
+    },
+    {
+        "content": "<p>each morphism is canonically viewed as having domain 1 and everything bent around so that it has some outputs that are dualized or not</p>",
+        "id": 196278713,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1588666480
+    },
+    {
+        "content": "<p>then you use indices to label the outputs upper vs lower to indicate whether they're dualized or not</p>",
+        "id": 196278753,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1588666519
+    },
+    {
+        "content": "<p>double-use indicates that two things should be wired together, so one should be upper and one should be lower in order for that to typecheck</p>",
+        "id": 196278776,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1588666546
+    },
+    {
+        "content": "<p>of course, usually when people write expressions like this, they're thinking about indexing into a multidimensional array of numbers and double-usage indicates a summation... :)</p>",
+        "id": 196278889,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1588666636
+    },
+    {
+        "content": "<p>but why restrict ourselves to the category where objects are natural numbers and morphisms <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>n</mi><mo>→</mo><mi>m</mi></mrow><annotation encoding=\"application/x-tex\">n \\to m</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.43056em;vertical-align:0em;\"></span><span class=\"mord mathdefault\">n</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">→</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.43056em;vertical-align:0em;\"></span><span class=\"mord mathdefault\">m</span></span></span></span> are <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>m</mi><mo>×</mo><mi>n</mi></mrow><annotation encoding=\"application/x-tex\">m \\times n</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.66666em;vertical-align:-0.08333em;\"></span><span class=\"mord mathdefault\">m</span><span class=\"mspace\" style=\"margin-right:0.2222222222222222em;\"></span><span class=\"mbin\">×</span><span class=\"mspace\" style=\"margin-right:0.2222222222222222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.43056em;vertical-align:0em;\"></span><span class=\"mord mathdefault\">n</span></span></span></span> matrices?</p>",
+        "id": 196279071,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1588666797
+    },
+    {
+        "content": "<p>Right, and string diagrams arose as an evolution of abstract index notation in the first place (Penrose, 1971) <a href=\"/user_uploads/21317/Xt4Bjfz7k_6ElbCcLicIT0mq/image.png\" title=\"image.png\">image.png</a></p>\n<div class=\"message_inline_image\"><a href=\"/user_uploads/21317/Xt4Bjfz7k_6ElbCcLicIT0mq/image.png\" title=\"image.png\"><img src=\"/user_uploads/21317/Xt4Bjfz7k_6ElbCcLicIT0mq/image.png\"></a></div>",
+        "id": 196279268,
+        "sender_full_name": "Nathaniel Virgo",
+        "timestamp": 1588666935
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276071\">Nathaniel Virgo</span> <a href=\"#narrow/stream/229199-learning.3A-basic.20questions/topic/Strings.20and.20graphs/near/196278401\" title=\"#narrow/stream/229199-learning.3A-basic.20questions/topic/Strings.20and.20graphs/near/196278401\">said</a>:</p>\n<blockquote>\n<p>By default, string diagrams for monoidal categories live in a kind of Galilean space-time: there's a \"space\" dimension (tensor product) and a \"time\" dimension (composition), with the main rules being that you can't cross strings over each other or bend them backwards in \"time\".</p>\n<p>However, duals and symmetry and so on relax these constraints. If we have a category like Rel we have almost complete freedom to move the strings around however we want. In this case it seems as if we could just forget about the spatial nature of the diagram altogether, and just think of the strings as edges in a graph, so a string is just an abstract connection between a port on one morphism and a port on another. It seems like working in this representation might make some things a lot simpler when it can be done.<br>\n...</p>\n</blockquote>\n<p>Regarding <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"bold\">R</mi><mi mathvariant=\"bold\">e</mi><mi mathvariant=\"bold\">l</mi></mrow><annotation encoding=\"application/x-tex\">\\mathbf{Rel}</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.69444em;vertical-align:0em;\"></span><span class=\"mord\"><span class=\"mord mathbf\">R</span><span class=\"mord mathbf\">e</span><span class=\"mord mathbf\">l</span></span></span></span></span>, there is this excellent article <a href=\"https://arxiv.org/abs/1706.00526\" title=\"https://arxiv.org/abs/1706.00526\">Knowledge Representationn in Bicategories of Relations</a> by <span class=\"user-mention\" data-user-id=\"275965\">@Evan Patterson</span> that explains  <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"bold\">R</mi><mi mathvariant=\"bold\">e</mi><mi mathvariant=\"bold\">l</mi></mrow><annotation encoding=\"application/x-tex\">\\mathbf{Rel}</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.69444em;vertical-align:0em;\"></span><span class=\"mord\"><span class=\"mord mathbf\">R</span><span class=\"mord mathbf\">e</span><span class=\"mord mathbf\">l</span></span></span></span></span> with string diagrams.<br>\nIt turns out that one can represent first order logic as a functor from a bicategory of relations to <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"bold\">R</mi><mi mathvariant=\"bold\">e</mi><mi mathvariant=\"bold\">l</mi></mrow><annotation encoding=\"application/x-tex\">\\mathbf{Rel}</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.69444em;vertical-align:0em;\"></span><span class=\"mord\"><span class=\"mord mathbf\">R</span><span class=\"mord mathbf\">e</span><span class=\"mord mathbf\">l</span></span></span></span></span>. Now I have always had the feeling that Logic has an atemporal nature, so I wonder if your point supports that.</p>",
+        "id": 196279289,
+        "sender_full_name": "Henry Story",
+        "timestamp": 1588666954
+    },
+    {
+        "content": "<p>Thinking out loud, there are two possible interpretations of this image:</p>\n<p><a href=\"/user_uploads/21317/-jHvdhMUJ-6u9UD8RC27XeOd/image.png\" title=\"image.png\">image.png</a> </p>\n<div class=\"message_inline_image\"><a href=\"/user_uploads/21317/-jHvdhMUJ-6u9UD8RC27XeOd/image.png\" title=\"image.png\"><img src=\"/user_uploads/21317/-jHvdhMUJ-6u9UD8RC27XeOd/image.png\"></a></div><p>In the first interpretation the strings are just another way of writing the abstract index expression on the right, so they're really just abstract connections between the ports. In this interpretation the cups, caps and crossings are just artefacts of how it's drawn on the page - they don't have any formal significance and the equalities are just syntactic in nature.</p>\n<p>In the second interpretation, the first two expressions are diagrams in a monoidal category, the cups, caps and crossings are morphisms and natural transformations, and the equivalence between the diagrams is a non-trivial result. Category theory takes the second interpretation by default, but I'm wondering if it's possible, when our category has the right structure, to formally transition to the first, simpler, interpretation instead.</p>",
+        "id": 196280104,
+        "sender_full_name": "Nathaniel Virgo",
+        "timestamp": 1588667513
+    },
+    {
+        "content": "<p>(Penrose seems to use both interpretations in his paper. When he writes that diagram he's talking fairly informally about connecting wires to represent sums, but then later on he introduces cups and caps as specific diagram elements for the raising and lowering of indices.)</p>",
+        "id": 196281822,
+        "sender_full_name": "Nathaniel Virgo",
+        "timestamp": 1588668573
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276071\">Nathaniel Virgo</span> <a href=\"#narrow/stream/229199-learning.3A-basic.20questions/topic/Strings.20and.20graphs/near/196278401\" title=\"#narrow/stream/229199-learning.3A-basic.20questions/topic/Strings.20and.20graphs/near/196278401\">said</a>:</p>\n<blockquote>\n<p>I'm wondering if this idea can be / has been formalised. In everything I've read so far, we always treat the space/time distinction explicitly, even when we have isomorphism classes that allow us to sort-of ignore it. I guess I'm asking if there's a way of working in the isomorphism classes directly instead.</p>\n</blockquote>\n<p>A compact closed category induces an operad that allows you to do this, if I understand it correctly. Morphisms in a category are oriented from a \"\"past\"\" to a \"\"future\"\", but general operads give you much more freedom, including to relax it to a single \"outside\" boundary. David Spivak implicitly does this quite a lot in his papers, drawing diagrams without a strict division into left and right boundaries</p>",
+        "id": 196288508,
+        "sender_full_name": "Jules Hedges",
+        "timestamp": 1588673081
+    },
+    {
+        "content": "<p>If you have a \"categorical systems theory\" like open graphs then it's natural to expect compact closure, because the 2 dimensions really are interchangeable. If you have a \"categorical process theory\" where one of the dimensions really is time then it's more of a surprise to get compact closure.... like happens in categorical quantum mechanics. I believe this is the basic motivation for studying causality in CQM, to re-introduce a decent notion of <em>time</em> that got erased by compact closure</p>",
+        "id": 196288738,
+        "sender_full_name": "Jules Hedges",
+        "timestamp": 1588673273
+    },
+    {
+        "content": "<p>I have spent a long time thinking about this idea during the first couple of years of my PhD -- long story short, I ended up “on the opposite side”, and now think that it is not a good idea. (This is briefly recounted in the preface of <a href=\"https://arxiv.org/abs/1709.08086\" title=\"https://arxiv.org/abs/1709.08086\">my thesis</a> if you're interested.)</p>\n<p>For me the fundamental insight (but it came after a long time tinkering, so it may be one of those monad/burrito cases where “the metaphor helps you only after you've figured it out yourself”) was that “diagrams are like maps, not like territories”. If your “territory” has a certain symmetry, wanting your “maps” to have that symmetry will usually make them worse, not better. Like cardinal directions may have no bearing on the territory but you sure want “up” to be “north” in your map. Or in a more mathematical example, “all vectors are the same” in a vector space -- there's no preferred directions -- but you certainly don't want coordinate systems to have the same property.<br>\nThis is not to say it can't be done, just that I don't think it brings any advantage and gives you a less flexible tool (for example, you may not be able to relate compact closed stuff to non-compact closed stuff)...</p>",
+        "id": 196289410,
+        "sender_full_name": "Amar Hadzihasanovic",
+        "timestamp": 1588673727
+    },
+    {
+        "content": "<p>I'm much less of an expert but came to roughly the same conclusion: that structured monoidal categories (symmetric, traced, compact closed, hypergraph, ...) is basically a hack that lets you work in a whole bunch of different useful operads in a uniform and more technically tractable way</p>",
+        "id": 196289760,
+        "sender_full_name": "Jules Hedges",
+        "timestamp": 1588674049
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"275901\">Jules Hedges</span> <a href=\"#narrow/stream/229199-learning.3A-basic.20questions/topic/Strings.20and.20graphs/near/196288508\" title=\"#narrow/stream/229199-learning.3A-basic.20questions/topic/Strings.20and.20graphs/near/196288508\">said</a>:</p>\n<blockquote>\n<p>A compact closed category induces an operad that allows you to do this, if I understand it correctly. Morphisms in a category are oriented from a \"\"past\"\" to a \"\"future\"\", but general operads give you much more freedom, including to relax it to a single \"outside\" boundary. David Spivak implicitly does this quite a lot in his papers, drawing diagrams without a strict division into left and right boundaries</p>\n</blockquote>\n<p>On reflection this doesn't sound right, I think what I mean to say is that the <em>theory</em> of compact closed categories induces an operad, an individual CCC induces an algebra of that operad</p>",
+        "id": 196291115,
+        "sender_full_name": "Jules Hedges",
+        "timestamp": 1588675073
+    }
+]

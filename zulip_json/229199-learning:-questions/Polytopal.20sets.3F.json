@@ -1,0 +1,254 @@
+[
+    {
+        "content": "<p>A simplicial complex is to a simplicial set as a <a href=\"https://en.wikipedia.org/wiki/Polyhedral_complex\">polytopal/polyhedral complex</a> is to a...?</p>\n<p>I gather that opetopes and opetopic sets might be part of the answer, but I don't know much about those yet. For now, I'm just looking for general pointers and keywords.</p>",
+        "id": 205646470,
+        "sender_full_name": "Evan Patterson",
+        "timestamp": 1596233024
+    },
+    {
+        "content": "<p>Maybe presheaves over a category of abstract polytopes?</p>",
+        "id": 205671986,
+        "sender_full_name": "Paolo Capriotti",
+        "timestamp": 1596271552
+    },
+    {
+        "content": "<p>Not-an-answer: I thought about 2-dimensional ones of these, which I mentally called \"polygonal sets\", in the context of string diagrams in computers</p>",
+        "id": 205672665,
+        "sender_full_name": "Jules Hedges",
+        "timestamp": 1596272625
+    },
+    {
+        "content": "<p>There is no single generalisation of course, but you may want to take a look at <a href=\"https://arxiv.org/abs/2007.14505\">my paper</a> from two days ago...</p>",
+        "id": 205673128,
+        "sender_full_name": "Amar Hadzihasanovic",
+        "timestamp": 1596273387
+    },
+    {
+        "content": "<p>I would say it answers your question for a specific direction of generalisation:</p>\n<ul>\n<li>we see simplices as <em>oriented</em> simplices à la Street, that is, we care about their “globular” orientation as shapes of higher-categorical cells;</li>\n<li>we interpret “polytopes” as <em>spherical abstract polytopes</em>, aka general polytopal tilings of spheres. These are more general than the polytopes considered in your link because those must be convex, but less general than the most general abstract polytopes which can be non-spherical.</li>\n</ul>",
+        "id": 205673301,
+        "sender_full_name": "Amar Hadzihasanovic",
+        "timestamp": 1596273658
+    },
+    {
+        "content": "<p>Opetopes are also a kind of “oriented polytope”, but </p>\n<ul>\n<li>oriented simplices are not in general opetopes, and</li>\n<li>opetopic sets as usually defined only have face operations, that is, they are like semi-simplicial sets, not like simplicial sets.</li>\n</ul>",
+        "id": 205673444,
+        "sender_full_name": "Amar Hadzihasanovic",
+        "timestamp": 1596273939
+    },
+    {
+        "content": "<p>Thanks everyone, that's helpful.</p>",
+        "id": 205692429,
+        "sender_full_name": "Evan Patterson",
+        "timestamp": 1596305773
+    },
+    {
+        "content": "<p>I don't think opetopes are especially relevant to the original question: they're just a <em>special kind</em> of polytope, so opetopic sets are a bit like simplicial sets or cubical sets or multisimplicial sets: a <em>special kind</em> of \"polytopal set\" that's good for some purposes and not others.</p>",
+        "id": 205863544,
+        "sender_full_name": "John Baez",
+        "timestamp": 1596502691
+    },
+    {
+        "content": "<p>I wrote down a general definition of 2d polytopal set, or maybe one should say \"polygonal set\", back when I was studying gadgets called \"spin foams\".   These polygonal sets were presheaves on a category that included a point, an edge, and an <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>n</mi></mrow><annotation encoding=\"application/x-tex\">n</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.43056em;vertical-align:0em;\"></span><span class=\"mord mathnormal\">n</span></span></span></span>-gon for each <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>n</mi></mrow><annotation encoding=\"application/x-tex\">n</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.43056em;vertical-align:0em;\"></span><span class=\"mord mathnormal\">n</span></span></span></span>.</p>",
+        "id": 205863649,
+        "sender_full_name": "John Baez",
+        "timestamp": 1596502812
+    },
+    {
+        "content": "<p>However, I decided nobody would want to read about that, so I instead used a category of 2-dimensional \"PLCW complexes\", short for \"piecewise-linear CW complexes\".</p>",
+        "id": 205863683,
+        "sender_full_name": "John Baez",
+        "timestamp": 1596502876
+    },
+    {
+        "content": "<p>People have put a lot of time into studying PLCW complexes of any dimension, so if you're a practical-minded person you can use these to work with \"n-dimensional polytopal sets\".</p>",
+        "id": 205863751,
+        "sender_full_name": "John Baez",
+        "timestamp": 1596502927
+    },
+    {
+        "content": "<p>However if you're a category theorist you may not like them, since they're defined in a very geometrical way, not as a presheaf category!</p>",
+        "id": 205863767,
+        "sender_full_name": "John Baez",
+        "timestamp": 1596502948
+    },
+    {
+        "content": "<p>In case anyone cares, these are two standard references:</p>\n<ul>\n<li>\n<p>J. Hudson, <em>Piecewise Linear Topology</em>, W. A. Benjamin, Reading, Massachusetts, 1969.</p>\n</li>\n<li>\n<p>C. Rourke and B. Sanderson, <em>Introduction to Piecewise-Linear Topology</em>, Springer, Berlin, 1972.</p>\n</li>\n</ul>",
+        "id": 205864020,
+        "sender_full_name": "John Baez",
+        "timestamp": 1596503230
+    },
+    {
+        "content": "<p>You may not care about this stuff, but I think the vast amount of work people have done on piecewise-linear topology tends to make people uninterested in developing a more purely combinatorial/category-theoretic approach to \"polytopal sets\".</p>",
+        "id": 205864104,
+        "sender_full_name": "John Baez",
+        "timestamp": 1596503322
+    },
+    {
+        "content": "<p>Thanks John, it's helpful to have that context. I didn't know about all the work on piecewise-linear complexes.</p>\n<p>I should explain why I'm interested in a combinatorial/category-theoretic approach. I'd like to understand how a generalized algebraic theory, like the theory of categories or the theory of double categories, gives rise to a category of presheaves. Like a believing category theorist, I prefer to think that syntactical things like logical theories are just the surface manifestations of algebraic and combinatorial structures. I also have a practical motivation: I want to understand how to effectively represent and manipulate such theories and their models on a computer, as data.</p>\n<p>For the theory of categories, you get the familiar graph structure from the types for objects and morphisms, and then the composition operation then becomes a 2-simplex, like in the nerve construction, and the identity operation is also \"two-dimensional,\" but of a different shape. In general, I figure that the types and operations of any generalized algebraic theory should define a shape category of some kind, with a meaningful notion of dimension or grading based on the contexts associated with each type and operation.</p>\n<p>Maybe this is something that people already understand from the study of higher categories? If so, that would be great! I just don't have a good grasp on that literature.</p>",
+        "id": 205866552,
+        "sender_full_name": "Evan Patterson",
+        "timestamp": 1596506887
+    },
+    {
+        "content": "<p><span class=\"user-mention\" data-user-id=\"275965\">@Evan Patterson</span>: I'd recommend taking a look at the second section of Fiore's <a href=\"https://www.cl.cam.ac.uk/~mpf23/papers/Types/AbsSyn.pdf\">Second-Order and Dependently-Sorted Abstract Syntax</a>, which sketches a categorical model for a class of generalised algebraic theories. In particular, the sorts are modelled by simple categories (essentially dependency diagrams), and the models are given in certain presheaf categories.</p>",
+        "id": 205867348,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1596507992
+    },
+    {
+        "content": "<p>There's also Garner's <a href=\"https://arxiv.org/abs/1402.6799\">Combinatorial structure of type dependency</a>, which also looks at presheaf models, but this may be less useful for what you're interested in, because it's not syntactic.</p>",
+        "id": 205867393,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1596508052
+    },
+    {
+        "content": "<p>I've also spent some time thinking about data structure representations for generalised algebraic theories and similar: I'd be happy to chat to share ideas at some point.</p>",
+        "id": 205867678,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1596508333
+    },
+    {
+        "content": "<p>Thanks Nathanael, I'll take a look at those references. This is something that I've wanted to understand for a long time, so we should definitely chat at some point!</p>",
+        "id": 205867827,
+        "sender_full_name": "Evan Patterson",
+        "timestamp": 1596508513
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"275965\">Evan Patterson</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/Polytopal.20sets.3F/near/205866552\">said</a>:</p>\n<blockquote>\n<p>I should explain why I'm interested in a combinatorial/category-theoretic approach. I'd like to understand how a generalized algebraic theory, like the theory of categories or the theory of double categories, gives rise to a category of presheaves. </p>\n</blockquote>\n<p>In what sense is \"gives rise to a category of presheaves\" meant? As in, why are algebraic theories classified by presheaf toposes? Or how do presheaf toposes arise as models of the theory of categories?</p>",
+        "id": 205889186,
+        "sender_full_name": "[Mod] Morgan Rogers",
+        "timestamp": 1596534885
+    },
+    {
+        "content": "<p>The line of work that had me thinking about this started from the observation that string diagrams in a 2-category [plus some form of the spacial axiom, so you can ignore scalars] look like labelled polygonal cell complexes. This eventually led me to \"rotation systems\", which are a combinatorial presentation of planar graphs. I suspect this is all very specialised to 2 dimensions though</p>",
+        "id": 205889981,
+        "sender_full_name": "Jules Hedges",
+        "timestamp": 1596535580
+    },
+    {
+        "content": "<p>(Planar graphs are much more restrictive than general 2d cell complexes though, of course)</p>",
+        "id": 205890090,
+        "sender_full_name": "Jules Hedges",
+        "timestamp": 1596535688
+    },
+    {
+        "content": "<p>If you meant the former, you definitely need to check out some (by now classical) categorical logic literature! Caramello's <em>Theories, Sites, Toposes: Relating and Studying Mathematical Theories Through Topos-theoretic 'bridges'</em> goes through this in a systematic way, having some overlap with Johnstone's <em>Elephant</em>, Section D.</p>\n<p>The formal language and notation that this area carries might seem somewhat alien, but the constructions are essentially algebraic: an algebraic signature <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"normal\">Σ</mi></mrow><annotation encoding=\"application/x-tex\">\\Sigma</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord\">Σ</span></span></span></span> generates a syntactic category, and <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"normal\">Σ</mi></mrow><annotation encoding=\"application/x-tex\">\\Sigma</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord\">Σ</span></span></span></span>-structures are a category with finite limits are finite-limit-preserving functors into that category from the syntactic category. An algebraic theory <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"double-struck\">T</mi></mrow><annotation encoding=\"application/x-tex\">\\mathbb{T}</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.68889em;vertical-align:0em;\"></span><span class=\"mord\"><span class=\"mord mathbb\">T</span></span></span></span></span> over that signature imposes relationships between subobjects in the syntactic category; the models of <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"double-struck\">T</mi></mrow><annotation encoding=\"application/x-tex\">\\mathbb{T}</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.68889em;vertical-align:0em;\"></span><span class=\"mord\"><span class=\"mord mathbb\">T</span></span></span></span></span> are the <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"normal\">Σ</mi></mrow><annotation encoding=\"application/x-tex\">\\Sigma</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord\">Σ</span></span></span></span>-structures whose functors respect those relationships. When we're looking at models of an algebraic theory in a topos (or more generally a cocomplete category), we can turn the syntactic category into a classifying topos by taking the free cocompletion (presheaves!) and replacing \"functors preserving finite limits\" with \"functors preserving finite limits and arbitrary colimits\", aka \"inverse images of geometric morphisms\", since these are in correspondence with one another. At this point it should be a little clearer how presheaf toposes come in.</p>\n<p>Making this geometric by taking the nerve of the syntactic category, the nerve for the theory is obtained from the nerve for the signature by gluing in higher cells, so that a model of the theory is a model of the empty theory into which extra cells can be glued in. I haven't spent any time working out the details of that last sentence (nor is this geometric picture covered in the sources I referenced, despite them presenting \"geometric logic\" <span aria-label=\"stuck out tongue wink\" class=\"emoji emoji-1f61c\" role=\"img\" title=\"stuck out tongue wink\">:stuck_out_tongue_wink:</span> ), it just seems like the closest link to your motivation, <em>if</em> I have understood it correctly.</p>",
+        "id": 205890986,
+        "sender_full_name": "[Mod] Morgan Rogers",
+        "timestamp": 1596536525
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"275965\">Evan Patterson</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/Polytopal.20sets.3F/near/205866552\">said</a>:</p>\n<blockquote>\n<p>For the theory of categories, you get the familiar graph structure from the types for objects and morphisms, and then the composition operation then becomes a 2-simplex, like in the nerve construction, and the identity operation is also \"two-dimensional,\" but of a different shape. In general, I figure that the types and operations of any generalized algebraic theory should define a shape category of some kind, with a meaningful notion of dimension or grading based on the contexts associated with each type and operation.</p>\n</blockquote>\n<p>The approach in the paper I linked is precisely in this spirit. It starts from a very general combinatorics of shapes, closed under a lot of operations, whose underlying data structure is “finite graded posets” -- like in the theory of abstract polytopes -- together with an orientation which makes sense for composition in a higher category. </p>\n<p>But in there you can isolate particular classes of shapes as being closed under certain operations, and consider categories of presheaves on categories of shapes of a certain class. In my case I was interested in doing “diagram rewriting” in as much generality as possible, so my notion of “convenient class” had to be closed under a lot of stuff that you may not be interested in, for example “opposites in any dimension”. But the two examples you made correspond to two of these closure axioms:</p>\n<ul>\n<li>closure under an operation of “forming shapes of units” over a certain shape,</li>\n<li>closure under the <em>join</em> operation, which implies for example that a convenient class contains all simplices.</li>\n</ul>\n<p>So the idea is pretty much what you talk about: the possibility of “doing certain operations” or “manipulations” corresponds to the closure of the shape class under certain operations.</p>",
+        "id": 205894322,
+        "sender_full_name": "Amar Hadzihasanovic",
+        "timestamp": 1596539492
+    },
+    {
+        "content": "<p>On the other hand, I have not yet tried to connect any of that to type-theoretic presentations of algebraic theories -- my intuition comes all from diagrams and topology... So the references that Nathanael gave you would probably be a better starting point for that. :)</p>",
+        "id": 205894848,
+        "sender_full_name": "Amar Hadzihasanovic",
+        "timestamp": 1596539967
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"275901\">Jules Hedges</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/Polytopal.20sets.3F/near/205889981\">said</a>:</p>\n<blockquote>\n<p>The line of work that had me thinking about this started from the observation that string diagrams in a 2-category [plus some form of the spacial axiom, so you can ignore scalars] look like labelled polygonal cell complexes. This eventually led me to \"rotation systems\", which are a combinatorial presentation of planar graphs. I suspect this is all very specialised to 2 dimensions though</p>\n</blockquote>\n<p>Although it's outside my original motivation, I'd be curious to hear more about what you came up with. I recently discovered, sort of by accident, that people in computational geometry use combinatorial representations of surface subdivisions that are presheafs or nearly so. For example, <a href=\"https://doi.org/10.1016/0010-4485(91)90100-B\">this paper</a> on \"topological models for boundary representation\" describes what the author unhelpfully calls \"n-dimensional maps\" and \"n-dimensional generalized maps\". The former are presheaves on a certain category (Def 5) and, apart from a condition about fixed points, so are the latter (Def 1). The representations are rather interesting, with only the \"half-edges\" corresponding to elements and everything else being encoding by maps. They apparently work best in 2D, where there is a theorem relating them to subdivisions of a surface (Thm 1). I wonder how that relates to what you were thinking about?</p>",
+        "id": 205965874,
+        "sender_full_name": "Evan Patterson",
+        "timestamp": 1596578214
+    },
+    {
+        "content": "<p>I don't have convenient access to that paper; are they the same as the \"hypermaps\" from page 4 of <a href=\"http://www.ams.org/notices/200811/tx081101382p.pdf\">http://www.ams.org/notices/200811/tx081101382p.pdf</a>?</p>",
+        "id": 205966300,
+        "sender_full_name": "Reid Barton",
+        "timestamp": 1596578478
+    },
+    {
+        "content": "<p>At a glance, they are probably not the same but they seem to be related. In particular, the notion of \"dart\" appears in both definitions. Frustratingly, I can't find a direct link to a PDF, but here are the two definitions. <a href=\"/user_uploads/21317/r7iZoXPSjli22v3NO_WZuKny/image.png\">image.png</a> <a href=\"/user_uploads/21317/GsJBSxVk5vUohS7lLE0oA6fN/image.png\">image.png</a></p>\n<div class=\"message_inline_image\"><a href=\"/user_uploads/21317/r7iZoXPSjli22v3NO_WZuKny/image.png\" title=\"image.png\"><img src=\"/user_uploads/21317/r7iZoXPSjli22v3NO_WZuKny/image.png\"></a></div><div class=\"message_inline_image\"><a href=\"/user_uploads/21317/GsJBSxVk5vUohS7lLE0oA6fN/image.png\" title=\"image.png\"><img src=\"/user_uploads/21317/GsJBSxVk5vUohS7lLE0oA6fN/image.png\"></a></div>",
+        "id": 205967229,
+        "sender_full_name": "Evan Patterson",
+        "timestamp": 1596579046
+    },
+    {
+        "content": "<p>The definitions make more sense with a picture. Here is an example for the first definition (an \"n-G-map\" for n=1): <a href=\"/user_uploads/21317/oe_1xp2vFwFdEsBytaZMMnib/image.png\">image.png</a></p>\n<div class=\"message_inline_image\"><a href=\"/user_uploads/21317/oe_1xp2vFwFdEsBytaZMMnib/image.png\" title=\"image.png\"><img src=\"/user_uploads/21317/oe_1xp2vFwFdEsBytaZMMnib/image.png\"></a></div>",
+        "id": 205967320,
+        "sender_full_name": "Evan Patterson",
+        "timestamp": 1596579114
+    },
+    {
+        "content": "<p>And for n=2: <a href=\"/user_uploads/21317/xsXWlj4L1WqR-VwtfhGj-d4E/image.png\">image.png</a></p>\n<div class=\"message_inline_image\"><a href=\"/user_uploads/21317/xsXWlj4L1WqR-VwtfhGj-d4E/image.png\" title=\"image.png\"><img src=\"/user_uploads/21317/xsXWlj4L1WqR-VwtfhGj-d4E/image.png\"></a></div>",
+        "id": 205967555,
+        "sender_full_name": "Evan Patterson",
+        "timestamp": 1596579243
+    },
+    {
+        "content": "<p>Actually, I remember where I saw something very similar to these \"hypermaps\": the cell-tuple representation in this <a href=\"http://www.cs.cmu.edu/afs/cs/user/glmiller/public/computational-geometry/15-852-F08/RelatedWork/p218-brisson.pdf\">paper by Brisson</a>. See the figure on p. 221.</p>",
+        "id": 205968012,
+        "sender_full_name": "Evan Patterson",
+        "timestamp": 1596579549
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"275965\">Evan Patterson</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/Polytopal.20sets.3F/near/205965874\">said</a>:</p>\n<blockquote>\n<p>Although it's outside my original motivation, I'd be curious to hear more about what you came up with. I recently discovered, sort of by accident, that people in computational geometry use combinatorial representations of surface subdivisions that are presheafs or nearly so. For example, <a href=\"https://doi.org/10.1016/0010-4485(91)90100-B\">this paper</a> on \"topological models for boundary representation\" describes what the author unhelpfully calls \"n-dimensional maps\" and \"n-dimensional generalized maps\". The former are presheaves on a certain category (Def 5) and, apart from a condition about fixed points, so are the latter (Def 1). The representations are rather interesting, with only the \"half-edges\" corresponding to elements and everything else being encoding by maps. They apparently work best in 2D, where there is a theorem relating them to subdivisions of a surface (Thm 1). I wonder how that relates to what you were thinking about?</p>\n</blockquote>\n<p>There's not a whole lot to say... this is being worked on by Malin Altmüller, a PhD student in Strathclyde, I saw a talk by her before christmas and realised it was equivalent to the thing I'd been thinking about (up to graph dual), so then I stopped thinking about it because she was way ahead of me. You might be interested in this <a href=\"https://arxiv.org/abs/1908.10660\">https://arxiv.org/abs/1908.10660</a> which is a tech report rather than a \"serious\" paper, where we realised that the obvious definition of string diagram by recursive subdivision of the plane, which is also equivalent to proof trees in a fragment of linear logic, <em>also</em> pretty much coincides with a kd-trees, a standard data structure in computational geometry</p>",
+        "id": 205968271,
+        "sender_full_name": "Jules Hedges",
+        "timestamp": 1596579739
+    },
+    {
+        "content": "<p>The pictures you just posted look plausibly related to all this</p>",
+        "id": 205968464,
+        "sender_full_name": "Jules Hedges",
+        "timestamp": 1596579889
+    },
+    {
+        "content": "<p>Neat, it's fun to see how all these pieces fit together. Hope to eventually see a paper from Malin too.</p>",
+        "id": 205969550,
+        "sender_full_name": "Evan Patterson",
+        "timestamp": 1596580775
+    },
+    {
+        "content": "<p><span class=\"user-mention\" data-user-id=\"276480\">@Reid Barton</span>, thanks for the reference. That AMS Notices paper looks really nice.</p>",
+        "id": 205969620,
+        "sender_full_name": "Evan Patterson",
+        "timestamp": 1596580820
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"277473\">[Mod] Morgan Rogers</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/Polytopal.20sets.3F/near/205889186\">said</a>:</p>\n<blockquote>\n<p>In what sense is \"gives rise to a category of presheaves\" meant? As in, why are algebraic theories classified by presheaf toposes? Or how do presheaf toposes arise as models of the theory of categories?</p>\n</blockquote>\n<p>I didn't actually have any statement as precise as that in mind. I don't know anything about the classifying topos, so I wouldn't have thought to ask this question. Thanks for explaining the connection to topos theory.  When I'm feeling brave I'll try to dig into Caramello's book.</p>",
+        "id": 205971842,
+        "sender_full_name": "Evan Patterson",
+        "timestamp": 1596582428
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276363\">Amar Hadzihasanovic</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/Polytopal.20sets.3F/near/205894322\">said</a>:</p>\n<blockquote>\n<p>So the idea is pretty much what you talk about: the possibility of “doing certain operations” or “manipulations” corresponds to the closure of the shape class under certain operations.</p>\n</blockquote>\n<p>Thanks a lot for unpacking this for me. I got intimidated by your paper because I don't have the background on higher categories and the homotopy hypothesis, but this helps. Your formalism for diagrammatic sets looks quite interesting.</p>",
+        "id": 205972898,
+        "sender_full_name": "Evan Patterson",
+        "timestamp": 1596583355
+    },
+    {
+        "content": "<p>I have a tangentially related question:</p>\n<p>Does anyone know the name for an open subset <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>U</mi><mo>⊆</mo><mi>X</mi></mrow><annotation encoding=\"application/x-tex\">U\\subseteq X</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8193em;vertical-align:-0.13597em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.10903em;\">U</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">⊆</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.07847em;\">X</span></span></span></span> that is invariant under the \"double negation\" operation <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo fence=\"false\">(</mo><mi>X</mi><mo>∖</mo><mo stretchy=\"false\">(</mo><mi>X</mi><mo>∖</mo><mi>U</mi><msup><mo stretchy=\"false\">)</mo><mo>∘</mo></msup><msup><mo fence=\"false\">)</mo><mo>∘</mo></msup></mrow><annotation encoding=\"application/x-tex\">{\\Big(X\\setminus(X\\setminus U)^\\circ\\big)^\\circ}</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:1.80002em;vertical-align:-0.65002em;\"></span><span class=\"mord\"><span class=\"mord\"><span class=\"delimsizing size2\">(</span></span><span class=\"mord mathnormal\" style=\"margin-right:0.07847em;\">X</span><span class=\"mspace\" style=\"margin-right:0.2222222222222222em;\"></span><span class=\"mbin\">∖</span><span class=\"mspace\" style=\"margin-right:0.2222222222222222em;\"></span><span class=\"mopen\">(</span><span class=\"mord mathnormal\" style=\"margin-right:0.07847em;\">X</span><span class=\"mspace\" style=\"margin-right:0.2222222222222222em;\"></span><span class=\"mbin\">∖</span><span class=\"mspace\" style=\"margin-right:0.2222222222222222em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.10903em;\">U</span><span class=\"mclose\"><span class=\"mclose\">)</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.674115em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mbin mtight\">∘</span></span></span></span></span></span></span></span><span class=\"mord\"><span class=\"mord\"><span class=\"delimsizing size1\">)</span></span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.914015em;\"><span style=\"top:-3.3029em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mbin mtight\">∘</span></span></span></span></span></span></span></span></span></span></span></span>?</p>\n<p>Together with conditions on the boundary, this seems like a nice collection of \"regions\" (e.g., in a map/<span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msup><mi mathvariant=\"double-struck\">R</mi><mn>2</mn></msup></mrow><annotation encoding=\"application/x-tex\">\\mathbb{R}^2</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8141079999999999em;vertical-align:0em;\"></span><span class=\"mord\"><span class=\"mord\"><span class=\"mord mathbb\">R</span></span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.8141079999999999em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">2</span></span></span></span></span></span></span></span></span></span></span>) that avoids a lot of unintuitive pathologies.</p>",
+        "id": 206166386,
+        "sender_full_name": "Spencer Breiner",
+        "timestamp": 1596732394
+    },
+    {
+        "content": "<p>This is a regular open set <a href=\"https://ncatlab.org/nlab/show/regular+element\">https://ncatlab.org/nlab/show/regular+element</a></p>",
+        "id": 206167705,
+        "sender_full_name": "Reid Barton",
+        "timestamp": 1596733012
+    },
+    {
+        "content": "<p>Regular opens are indeed considered a lot by philosophers in the context of mereology (the study of regions and parts and wholes). Perhaps <a href=\"http://www.columbia.edu/~av72/papers/Dke_1996.pdf\">this paper</a> may be a good entry point into that literature, but I'm not sure.</p>",
+        "id": 206168287,
+        "sender_full_name": "Tobias Fritz",
+        "timestamp": 1596733288
+    },
+    {
+        "content": "<p>There is really nice unpublished work by Marra and Menni on toposes of sheaves on polyhedra. Here are some slides: <a href=\"https://math.unice.fr/tacl/assets/2019/contributed/s3/4/4-marra-menni.pdf\">https://math.unice.fr/tacl/assets/2019/contributed/s3/4/4-marra-menni.pdf</a></p>",
+        "id": 206170355,
+        "sender_full_name": "Peter Arndt",
+        "timestamp": 1596734263
+    },
+    {
+        "content": "<p>Those slides are indeed really nice. Based on <a href=\"http://homes.di.unimi.it/~marra/index.php?page=publications\">Marra's website</a>, you seem to be right that they have not written it up. I hope they do!</p>",
+        "id": 206209681,
+        "sender_full_name": "Evan Patterson",
+        "timestamp": 1596756619
+    }
+]

@@ -1,0 +1,62 @@
+[
+    {
+        "content": "<p>What are the appropriate morphisms of quasitopoi? The Elephant casually suggests using the same definition as for geometric morphisms of topoi, but in a situation where \"concrete sheaves\" has a meaning, I'd imagine one would want the inclusion of concrete sheaves in all sheaves to be a quasitopos morphism, while it couldn't be a geometric morphism by the ordinary definition (unless the concrete sheaves happen to form a topos), unless I am quite confused.</p>",
+        "id": 196999988,
+        "sender_full_name": "Reid Barton",
+        "timestamp": 1589042012
+    },
+    {
+        "content": "<p><a href=\"https://arxiv.org/abs/1106.5331\" title=\"https://arxiv.org/abs/1106.5331\">https://arxiv.org/abs/1106.5331</a> has a description of the localizations of presheaf categories which result in quasitopoi, but it's not obvious to me how to extract a good general notion of morphism from this (though I've put very little thought into it so far).</p>",
+        "id": 197000227,
+        "sender_full_name": "Reid Barton",
+        "timestamp": 1589042371
+    },
+    {
+        "content": "<p>That's a solid argument for not using geometric morphisms. iirc the reflector does preserve some limits (maybe finite products?); whatever it is, that's the quickest fix.<br>\nThe motivation for using geometric morphisms in the first place is that they correspond to continuous maps between (sober) topological spaces. So you should look first at a notion that fits well with how you're presenting/constructing your quasitoposes.</p>",
+        "id": 197002159,
+        "sender_full_name": "[Mod] Morgan Rogers",
+        "timestamp": 1589044884
+    },
+    {
+        "content": "<p>Let's say I am presenting them as suitable reflective subcategories of a category of presheaves, or as the separated sheaves on a <a href=\"https://ncatlab.org/nlab/show/separated+presheaf#definition_4\" title=\"https://ncatlab.org/nlab/show/separated+presheaf#definition_4\">bisite</a>.</p>",
+        "id": 197002637,
+        "sender_full_name": "Reid Barton",
+        "timestamp": 1589045400
+    },
+    {
+        "content": "<p>I guess I could try to imagine what the morphisms of bisites ought to be, though I suspect this is harder than the original question...</p>",
+        "id": 197002790,
+        "sender_full_name": "Reid Barton",
+        "timestamp": 1589045510
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276480\">Reid Barton</span> <a href=\"#narrow/stream/230087-theory.3A-topos.20theory/topic/quasitopos.20morphisms/near/197002637\" title=\"#narrow/stream/230087-theory.3A-topos.20theory/topic/quasitopos.20morphisms/near/197002637\">said</a>:</p>\n<blockquote>\n<p>Let's say I am presenting them as suitable reflective subcategories of a category of presheaves, or as the separated sheaves on a <a href=\"https://ncatlab.org/nlab/show/separated+presheaf#definition_4\" title=\"https://ncatlab.org/nlab/show/separated+presheaf#definition_4\">bisite</a>.</p>\n</blockquote>\n<p>Comorphisms of (bi)sites are also a reasonable starting point here, and in that case the resulting \"inverse image functor\" preserves exactly as much limit structure as the for sheafification functor <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mrow><mi mathvariant=\"bold\">B</mi><mi mathvariant=\"bold\">i</mi><mi mathvariant=\"bold\">S</mi><mi mathvariant=\"bold\">e</mi><mi mathvariant=\"bold\">p</mi></mrow><mo stretchy=\"false\">(</mo><mi>C</mi><mo separator=\"true\">,</mo><mi>J</mi><mo separator=\"true\">,</mo><mi>K</mi><mo stretchy=\"false\">)</mo><mo>↪</mo><mrow><mi mathvariant=\"bold\">P</mi><mi mathvariant=\"bold\">S</mi><mi mathvariant=\"bold\">h</mi></mrow><mo stretchy=\"false\">(</mo><mi>C</mi><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">\\mathbf{BiSep}(C,J,K) \\hookrightarrow \\mathbf{PSh}(C)</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord\"><span class=\"mord mathbf\">B</span><span class=\"mord mathbf\">i</span><span class=\"mord mathbf\">S</span><span class=\"mord mathbf\">e</span><span class=\"mord mathbf\">p</span></span><span class=\"mopen\">(</span><span class=\"mord mathdefault\" style=\"margin-right:0.07153em;\">C</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mord mathdefault\" style=\"margin-right:0.09618em;\">J</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mord mathdefault\" style=\"margin-right:0.07153em;\">K</span><span class=\"mclose\">)</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">↪</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord\"><span class=\"mord mathbf\">P</span><span class=\"mord mathbf\">S</span><span class=\"mord mathbf\">h</span></span><span class=\"mopen\">(</span><span class=\"mord mathdefault\" style=\"margin-right:0.07153em;\">C</span><span class=\"mclose\">)</span></span></span></span>.</p>",
+        "id": 197003410,
+        "sender_full_name": "[Mod] Morgan Rogers",
+        "timestamp": 1589046523
+    },
+    {
+        "content": "<p>An ordinary morphism of sites is required to be sufficiently flat that the induced functor on sheaves preserves finite limits.  Is there a standard notion of \"morphism of bisites\" that weakens this somehow?  It doesn't seem offhand to be an easier problem than the original question.</p>",
+        "id": 197060979,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1589124093
+    },
+    {
+        "content": "<p>I should probably add that this is mostly curiosity at this point, and I was really just hoping someone would come along with a strong opinion about the answer (that's different than the one for topoi).</p>",
+        "id": 197062444,
+        "sender_full_name": "Reid Barton",
+        "timestamp": 1589125491
+    },
+    {
+        "content": "<p>Now that <span class=\"user-mention\" data-user-id=\"276777\">@Mike Shulman</span> has commented, most of that hope is gone <span aria-label=\"upside down\" class=\"emoji emoji-1f643\" role=\"img\" title=\"upside down\">:upside_down:</span></p>",
+        "id": 197062455,
+        "sender_full_name": "Reid Barton",
+        "timestamp": 1589125507
+    },
+    {
+        "content": "<p>So, looking before Theorem 4.4.8 in Sketches of an Elephant, the reflector <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"script\">E</mi><mo>→</mo><msub><mrow><mi mathvariant=\"bold\">s</mi><mi mathvariant=\"bold\">e</mi><mi mathvariant=\"bold\">p</mi></mrow><mi>j</mi></msub><mo stretchy=\"false\">(</mo><mi mathvariant=\"script\">E</mi><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">\\mathcal{E} \\to \\mathbf{sep}_j(\\mathcal{E})</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord\"><span class=\"mord mathcal\" style=\"margin-right:0.08944em;\">E</span></span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">→</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1.130248em;vertical-align:-0.380248em;\"></span><span class=\"mord\"><span class=\"mord\"><span class=\"mord mathbf\">s</span><span class=\"mord mathbf\">e</span><span class=\"mord mathbf\">p</span></span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.217524em;\"><span style=\"top:-2.4558600000000004em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathdefault mtight\" style=\"margin-right:0.05724em;\">j</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.380248em;\"><span></span></span></span></span></span></span><span class=\"mopen\">(</span><span class=\"mord\"><span class=\"mord mathcal\" style=\"margin-right:0.08944em;\">E</span></span><span class=\"mclose\">)</span></span></span></span> preserves monomorphisms (I had misremembered) for <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>j</mi></mrow><annotation encoding=\"application/x-tex\">j</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.85396em;vertical-align:-0.19444em;\"></span><span class=\"mord mathdefault\" style=\"margin-right:0.05724em;\">j</span></span></span></span> a universal closure operator on a quasitopos <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"script\">E</mi></mrow><annotation encoding=\"application/x-tex\">\\mathcal{E}</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord\"><span class=\"mord mathcal\" style=\"margin-right:0.08944em;\">E</span></span></span></span></span>. Theorem 4.4.8 itself is of interest: the inclusion of a quasitopos into a topos has cartesian reflector if and only if the quasitopos is a topos. So yes, geometric morphisms are too strong, but preserving monomorphisms (or at least cocovers) seems like it should be a feature of the chosen morphisms.</p>",
+        "id": 197065867,
+        "sender_full_name": "[Mod] Morgan Rogers",
+        "timestamp": 1589129798
+    }
+]

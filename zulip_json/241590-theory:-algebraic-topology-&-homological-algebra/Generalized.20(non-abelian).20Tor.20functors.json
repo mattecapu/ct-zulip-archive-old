@@ -1,0 +1,98 @@
+[
+    {
+        "content": "<p>Hello everyone, have people ever thought of defining Tor functors in a non-abelian context? The ideal thing would be on any nice enough monoidal category, but I can bargain.</p>",
+        "id": 208858928,
+        "sender_full_name": "Matteo Capucci",
+        "timestamp": 1599067605
+    },
+    {
+        "content": "<p>The only thing I can think of is that it would start from the nonabelian tensor product somehow (see eg <a href=\"http://web.math.unifi.it/users/fumagal/articles/McDermott.pdf\">http://web.math.unifi.it/users/fumagal/articles/McDermott.pdf</a>). Then it seems it should be done in the general semiabelian context. I don't know about in general.</p>",
+        "id": 209347047,
+        "sender_full_name": "David Michael Roberts",
+        "timestamp": 1599542815
+    },
+    {
+        "content": "<p>Strong caveat that I haven't read it, but I heard yesterday that Jean Giraud (student of Grothendieck, of Giraud axioms fame) wrote his thesis on non-abelian cohomology. There might be some relevant material in there if you can dig it up, although it's likely to have a topos-theoretic flavour to it.</p>",
+        "id": 209369150,
+        "sender_full_name": "[Mod] Morgan Rogers",
+        "timestamp": 1599561162
+    },
+    {
+        "content": "<p>Thanks! I will look into it.</p>",
+        "id": 209442318,
+        "sender_full_name": "Matteo Capucci",
+        "timestamp": 1599598088
+    },
+    {
+        "content": "<p>Giraud's results have been much improved and rendered more conceptual (hence easier to digest); the nLab page gives a summary of the story and references: <a href=\"https://ncatlab.org/nlab/show/nonabelian+cohomology\">https://ncatlab.org/nlab/show/nonabelian+cohomology</a></p>",
+        "id": 209459121,
+        "sender_full_name": "Peter Arndt",
+        "timestamp": 1599610330
+    },
+    {
+        "content": "<p>But maybe you were asking for something different anyway. The Tor functor is the derived functor of tensoring with a fixed object in an abelian category. \"Derived functor\" can be understood as follows: You consider the induced functor on chain complexes in your given abelian category, given by tensoring levelwise. Chain complexes form a category with a class of weak equivalences (a \"homotopical category\"). Your induced functor does not respect these weak equivalences, and the derived functor is the closest one which does (formally: a certain Kan extension) -- seen like this the Tor functor is a functor on the category of chain complexes. You can get back the classical Tor functor by seeing an object of your original abelian category as a complex concentrated in degree 0, applying the derived functor, then taking cohomology.</p>",
+        "id": 209459663,
+        "sender_full_name": "Peter Arndt",
+        "timestamp": 1599610902
+    },
+    {
+        "content": "<p>Phrased like this you can repeat the story for a monoidal category as follows: Pass to the simplicial objects in your monoidal category (a homotopical category), look at the functor given by levelwise tensoring with an object, take the derived functor. If you want to go from objects in your original category to  groups in the end, you can see an object as a constant simplicial object, apply the derived functor, then take homotopy groups of the simplicial hom-sets.</p>",
+        "id": 209459951,
+        "sender_full_name": "Peter Arndt",
+        "timestamp": 1599611202
+    },
+    {
+        "content": "<p>(Just a rough outline, and it doesn't tell you at all how to compute anything)</p>",
+        "id": 209459991,
+        "sender_full_name": "Peter Arndt",
+        "timestamp": 1599611236
+    },
+    {
+        "content": "<p>Here is an nLab page describing this kind of thing, with a comparison to classical homoogical algebra: <a href=\"https://ncatlab.org/nlab/show/derived+functor\">https://ncatlab.org/nlab/show/derived+functor</a></p>",
+        "id": 209460101,
+        "sender_full_name": "Peter Arndt",
+        "timestamp": 1599611324
+    },
+    {
+        "content": "<p>Wow, that looks very interesting Peter. Thanks for your help.</p>",
+        "id": 209873101,
+        "sender_full_name": "Matteo Capucci",
+        "timestamp": 1599903102
+    },
+    {
+        "content": "<p>Wow, I tought delving into that would have been easier lol. What I really struggle to understand now is the role of simplicial objects...? Do you have a good intuition?<br>\nI know that eventually I'll have to pick up a big textbook in homotopy theory (actually, I'm not even sure this is the right subject <span aria-label=\"joy\" class=\"emoji emoji-1f602\" role=\"img\" title=\"joy\">:joy:</span> )</p>",
+        "id": 209883740,
+        "sender_full_name": "Matteo Capucci",
+        "timestamp": 1599921008
+    },
+    {
+        "content": "<p>A simplicial set, at least in this context, can be seen as a blueprint for building a topological space: Roughly, For each element of the n-th set of your simplicial set you take a copy of the topological n-simplex <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"false\">{</mo><mi>x</mi><mo>∈</mo><msup><mi mathvariant=\"double-struck\">R</mi><mi>n</mi></msup><mo>∣</mo><mi mathvariant=\"normal\">Σ</mi><msub><mi>x</mi><mi>i</mi></msub><mo>=</mo><mn>1</mn><mo separator=\"true\">,</mo><msub><mi>x</mi><mi>i</mi></msub><mo>≥</mo><mn>0</mn><mo stretchy=\"false\">}</mo></mrow><annotation encoding=\"application/x-tex\">\\{x \\in \\mathbb{R}^n \\mid \\Sigma x_i = 1, x_i \\geq 0 \\}</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mopen\">{</span><span class=\"mord mathnormal\">x</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">∈</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord\"><span class=\"mord\"><span class=\"mord mathbb\">R</span></span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.664392em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathnormal mtight\">n</span></span></span></span></span></span></span></span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">∣</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.83333em;vertical-align:-0.15em;\"></span><span class=\"mord\">Σ</span><span class=\"mord\"><span class=\"mord mathnormal\">x</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.31166399999999994em;\"><span style=\"top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathnormal mtight\">i</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.8388800000000001em;vertical-align:-0.19444em;\"></span><span class=\"mord\">1</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\">x</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.31166399999999994em;\"><span style=\"top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathnormal mtight\">i</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">≥</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord\">0</span><span class=\"mclose\">}</span></span></span></span>; you place all these simplices, for all n, side by side and glue two n-simplices together along their i-th face, whenever the i-th face map of the simplicial set sends them to the same (n-1)-simplex. The resulting space is called the geometric realization of the simplicial set.<br>\nSimilar constructions work with many other shapes, not just simplices, e.g. one can take cubical sets, or generally any shape captured by a so-called \"test category\".</p>",
+        "id": 209929907,
+        "sender_full_name": "Peter Arndt",
+        "timestamp": 1600001664
+    },
+    {
+        "content": "<p>Homming into a simplicial object in any category gives you a simplicial Hom-Set. Now you can call a morphism in your category an equivalence if homming out of it produces a weak equivalence of simplicial set, or equivalently if the induced map of simplicial sets, after geometric realization, becomes a homotopy equivalence of topological spaces. So in the end the role of simplicial objects is to endow your category with a notion of when a morphism is a weak equivalence. Also you can embed your original category into the category of simplicial objects as the constant simplicial objects. Thus you can construct \"resolutions\" of your original objects by seeing them as constant simplicial object and replacing them with an equivalent (in the sense sketched above) simplicial object which is levelwise \"good\" (in whatever sense you want, e.g. such that tensoring with them behaves well).</p>",
+        "id": 209930179,
+        "sender_full_name": "Peter Arndt",
+        "timestamp": 1600002029
+    },
+    {
+        "content": "<p>An example of this general approach to resolutions is derived algebraic geometry, where for example you can take a singular scheme and replace it with a simplicial scheme that is levelwise smooth.</p>",
+        "id": 209930229,
+        "sender_full_name": "Peter Arndt",
+        "timestamp": 1600002117
+    },
+    {
+        "content": "<p>But this is a somewhat heavy machinery. If you have some concrete goals for your generalized Tor functors, something specific that they should do for you, maybe you can get by with less...</p>",
+        "id": 209930314,
+        "sender_full_name": "Peter Arndt",
+        "timestamp": 1600002206
+    },
+    {
+        "content": "<p>This is the first time I've looked at this site, so I have lot of different reactions. You can look at my web site <a href=\"http://www.groupoids.org.uk\">www.groupoids.org.uk</a> . My original vision in 1965 or so was higher dimensional versions of the fundamental group(oid) and so higher Van Kampen Theorems.  The interesting aspect is that progress involved using an enhanced cubical theory (rather than simplicial)  and this is expounded  in the 2011  EMS Tract  Nonabelian Algebraic Topology. The slogan  is \"algebraic inverses to subdivision\". which is very convenient cubically (especially with the extra structure of connections, which allow one to discuss commutative cubes! ) .  There is an expository paper in 2018 Indagationes Math.</p>",
+        "id": 211655151,
+        "sender_full_name": "Ronald Brown",
+        "timestamp": 1601400432
+    }
+]

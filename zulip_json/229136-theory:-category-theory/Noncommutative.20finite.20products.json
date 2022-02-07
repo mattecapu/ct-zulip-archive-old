@@ -1,0 +1,68 @@
+[
+    {
+        "content": "<p>(This question arose from a very interesting discussion on twitter involving a whole bunch of people, starting at <a href=\"https://twitter.com/stringdiagram/status/1442058728359043074?s=21\">https://twitter.com/stringdiagram/status/1442058728359043074?s=21</a>)</p>\n<div class=\"inline-preview-twitter\"><div class=\"twitter-tweet\"><a href=\"https://twitter.com/stringdiagram/status/1442058728359043074?s=21\"><img class=\"twitter-avatar\" src=\"https://uploads.zulipusercontent.net/b5008ce1991366360ef1cc624d11c9822db79ee1/68747470733a2f2f7062732e7477696d672e636f6d2f70726f66696c655f696d616765732f313339383933323632343932383832353334342f386d494a652d49455f6e6f726d616c2e6a7067\"></a><p><a href=\"https://twitter.com/_julesh_\">@_julesh_</a> Did you mean to say commutative? You can't define it in a monoidal category, and it doesn't seem needed in a proof.</p><span>- Dan Marsden (@StringDiagram)</span></div></div><p>It's an old bit of foklore proved by Fox that a symmetric monoidal product is a cartesian product iff it has a unique supply (*) of commutative comonoids, and every morphism is a comonoid homomorphism</p>\n<p>(*) that's Brendan's terminology: aka every object has that structure in a way that's compatible with the tensor product</p>\n<p>This suggestions a provisional definition: a \"noncommutative finite product category\" is a (not necessarily symmetric) monoidal category with a unique supply of comonoids, and every morphism is a comonoid homomorphism</p>\n<p>I wonder what tricks this thing can do? Are there any interesting examples? Can you equivalently define it with a univeral property? Etc.</p>",
+        "id": 255023926,
+        "sender_full_name": "Jules Hedges",
+        "timestamp": 1632737787
+    },
+    {
+        "content": "<p>I think one issue with the weakening to a monoidal category is that the compatibility with the tensor is phrased in terms of the symmetry to get the types to line up.</p>",
+        "id": 255027006,
+        "sender_full_name": "Dan Marsden",
+        "timestamp": 1632739614
+    },
+    {
+        "content": "<p>Oh yeah, that's a bit unfortunate</p>",
+        "id": 255028648,
+        "sender_full_name": "Jules Hedges",
+        "timestamp": 1632740498
+    },
+    {
+        "content": "<p>The bit I'm most interested in at the moment is how many of the assumptions are needed to show Cartesian monoidal structure. I think \\emph{possibly} that symmetric + supply of monoids compatible with tensors + every morphism is a comonoid homomorphism might be enough. I've not checked this yet, so after my previous blunder, I wouldn't assume this correct yet...</p>",
+        "id": 255030940,
+        "sender_full_name": "Dan Marsden",
+        "timestamp": 1632741636
+    },
+    {
+        "content": "<p>This thing (<a href=\"https://arxiv.org/pdf/2109.09634.pdf\">https://arxiv.org/pdf/2109.09634.pdf</a>) popped up on arxiv recently. It deals with the braided case.</p>",
+        "id": 255031222,
+        "sender_full_name": "Chad Nester",
+        "timestamp": 1632741790
+    },
+    {
+        "content": "<p>This isn't quite the same question, but Fox's theorem was recently analysed for braided monoidal categories in Kraehmer–Mahaman's <a href=\"https://arxiv.org/abs/2109.09634\">Clones from comonoids</a>.</p>",
+        "id": 255031224,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1632741792
+    },
+    {
+        "content": "<p>ha!</p>",
+        "id": 255031229,
+        "sender_full_name": "Chad Nester",
+        "timestamp": 1632741797
+    },
+    {
+        "content": "<p>Wow <span aria-label=\"laughing\" class=\"emoji emoji-1f606\" role=\"img\" title=\"laughing\">:laughing:</span></p>",
+        "id": 255031244,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1632741804
+    },
+    {
+        "content": "<p><a href=\"/user_uploads/21317/x9oICT4AAYd4kxQvCH3Sq_sE/Cartesian-Monoidal-Structure.pdf\">Cartesian-Monoidal-Structure.pdf</a></p>",
+        "id": 255042945,
+        "sender_full_name": "Dan Marsden",
+        "timestamp": 1632747509
+    },
+    {
+        "content": "<p>It seems sufficient that in a symmetric monoidal category with a supply of monoids compatible with the tensor, such that every morphism is a comonoid homomorphism, the monoidal structure is Cartesian.  In fact, I don't think you need associativity of the comonoids either, so unital \"diagonal morphisms\" seems enough. In particular, you don't need the commutativity or unicity as far as I could see in my proofs with the assumptions spelt out.</p>",
+        "id": 255043591,
+        "sender_full_name": "Dan Marsden",
+        "timestamp": 1632747741
+    },
+    {
+        "content": "<p>Of course, once you've proved this, you get a lot more for free, including the commutativity, associativity and unicity.</p>",
+        "id": 255043711,
+        "sender_full_name": "Dan Marsden",
+        "timestamp": 1632747787
+    }
+]

@@ -1,0 +1,476 @@
+[
+    {
+        "content": "<p>Just like asking for two objects to be equal (instead of equivalent) is against the spirit of a modern understanding of category theory, it strikes me that specifying what a Functor should do to objects 'on the nose' is equally un-categorical. Specifically, equality-on-objects functors seem rather odd. It's right up there with asking for a category to be skeletal, or at least so it feels.</p>\n<p>To turn this into a constructive query instead of merely an opinion: what would be a more categorical property to ask for?</p>",
+        "id": 229737558,
+        "sender_full_name": "Jacques Carette",
+        "timestamp": 1615408006
+    },
+    {
+        "content": "<p>One of the most important features of identity-on-objects functors is that they form the left class of a strict orthogonal factorisation system on Cat (with the right class being fully faithful functors). We may weaken the left class to bijective-on-objects functors, and further to essentially surjective functors, to form an orthogonal factorisation system and a <a href=\"https://ncatlab.org/nlab/show/factorization+system+in+a+2-category\">2-categorical factorisation system</a> respectively.</p>",
+        "id": 229738503,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1615408305
+    },
+    {
+        "content": "<p>It's been a while since I've dealt with identity-on-objects functors, but my guess would be that it is rather a type-preserving mapping of morphisms that preserves identity and composition. That is, the definition of identity-on-object functor does not depend on the definition of functor, but is rather a new concept.</p>",
+        "id": 229738734,
+        "sender_full_name": "James Wood",
+        "timestamp": 1615408375
+    },
+    {
+        "content": "<p>I think it worth pointing out, though, that there is a point to strictness in category theory: by always demanding everything hold only up to equivalence, one can sometimes miss the point. This often occurs when one wants to relate syntax to categorical structure: in the former everything must necessarily be strict; only after proving a coherence theorem is it valid to relax the strictness of the constructions.</p>",
+        "id": 229739258,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1615408526
+    },
+    {
+        "content": "<p>I think that’s a good point, Nathanael, and matches the way that ioo functors are used in Freyd categories and in Lawvere theories.</p>",
+        "id": 229739535,
+        "sender_full_name": "Sam Staton",
+        "timestamp": 1615408606
+    },
+    {
+        "content": "<p><span class=\"user-mention\" data-user-id=\"276092\">@Nathanael Arkor</span> That seems to, in part, just move the problem around. For one, factorization systems themselves are problematic because they assume that <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"sans-serif\">H</mi><mi mathvariant=\"sans-serif\">o</mi><mi mathvariant=\"sans-serif\">m</mi></mrow><annotation encoding=\"application/x-tex\">\\mathsf{Hom}</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.69444em;vertical-align:0em;\"></span><span class=\"mord\"><span class=\"mord mathsf\">H</span><span class=\"mord mathsf\">o</span><span class=\"mord mathsf\">m</span></span></span></span></span> is a set (class) that can be neatly divided into pieces. But, categorically, subsets are not so nice. So that's not helping... (and was meant to be fodder of a question in the future).</p>\n<p>However, the point about relating syntax to categorical structure is indeed relevant.  Indeed, as <span class=\"user-mention\" data-user-id=\"308397\">@Sam Staton</span> alludes to, this is how Lawvere theories are usually presented - but not <a href=\"https://ncatlab.org/nlab/show/Lawvere+theory\">on the nLab</a> where a weaker version is used.  I formalized that in Agda instead, but then tried to do the simplest theory, the theory of equality (suitably interpreted) that shows up later down that page and... failed. My current feeling is that I should just bite the bullet and formalize the classical thing with <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"double-struck\">N</mi></mrow><annotation encoding=\"application/x-tex\">\\mathbb{N}</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.68889em;vertical-align:0em;\"></span><span class=\"mord\"><span class=\"mord mathbb\">N</span></span></span></span></span> as objects. It still feels like cheating.</p>\n<p>Furthermore, I must admit that I rather like Fiore's relatively recent work on bicategorical approaches to the lambda calculus, which goes in the opposite direction of making things strict because of 'syntax'!</p>\n<p>I do accept that when dealing with syntax, decidable equality (for example, over the 'set' of variables) is needed. But that's fine, because this is user-facing. Nevertheless, that doesn't mean that everything needs to be a singleton: it is extremely useful to have keyword redundancy (<span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mtext mathvariant=\"monospace\">variable</mtext></mrow><annotation encoding=\"application/x-tex\">\\texttt{variable}</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.61111em;vertical-align:0em;\"></span><span class=\"mord text\"><span class=\"mord texttt\">variable</span></span></span></span></span> and <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mtext mathvariant=\"monospace\">variables</mtext></mrow><annotation encoding=\"application/x-tex\">\\texttt{variables}</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.61111em;vertical-align:0em;\"></span><span class=\"mord text\"><span class=\"mord texttt\">variables</span></span></span></span></span>), which CT handles just fine, unless you impose too much strictness.</p>",
+        "id": 229741844,
+        "sender_full_name": "Jacques Carette",
+        "timestamp": 1615409454
+    },
+    {
+        "content": "<p>Factorisation systems are entirely categorical: for instance, categories with factorisation systems are algebras for a 2-monad on Cat (see Korostenski–Tholen's <em>Factorization systems as Eilenberg–Moore algebras</em>).</p>",
+        "id": 229742234,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1615409609
+    },
+    {
+        "content": "<p>I was imprecise: I did not mean to imply that factorization systems are not categorical. I meant to say that their usual presentation is not done in a very categorical manner. I've definitely seen enough results around factorization systems to be convinced that they are indeed categorical.</p>",
+        "id": 229742618,
+        "sender_full_name": "Jacques Carette",
+        "timestamp": 1615409732
+    },
+    {
+        "content": "<p>But then you agree that it doesn't move the problem around?</p>",
+        "id": 229742715,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1615409766
+    },
+    {
+        "content": "<blockquote>\n<p>My current feeling is that I should just bite the bullet and formalize the classical thing with <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"double-struck\">N</mi></mrow><annotation encoding=\"application/x-tex\">\\mathbb{N}</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.68889em;vertical-align:0em;\"></span><span class=\"mord\"><span class=\"mord mathbb\">N</span></span></span></span></span> as objects. It still feels like cheating.</p>\n</blockquote>\n<p>I do not intend for this to come across badly, but you seem to have taken the nLab's tongue-in-cheek use of the word \"evil\" much more closely to heart than was intended. A Lawvere theory, as traditionally presented, was formulated to be a precise and exact match for the concept of abstract clone in universal algebra. A weaker notion no longer matches the intended definition. So saying that a Lawvere theory is \"too strict\" entirely overlooks the reason for which Lawvere theories were devised.</p>",
+        "id": 229742951,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1615409862
+    },
+    {
+        "content": "<p>I will agree in a future where I see a simple yet categorical presentation of them. They are high on list to formalize, but are not yet done, because I am still missing that.</p>",
+        "id": 229742997,
+        "sender_full_name": "Jacques Carette",
+        "timestamp": 1615409883
+    },
+    {
+        "content": "<p>See the paper I referenced: this is very categorical.</p>",
+        "id": 229743166,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1615409929
+    },
+    {
+        "content": "<blockquote>\n<p>Furthermore, I must admit that I rather like Fiore's relatively recent work on bicategorical approaches to the lambda calculus, which goes in the opposite direction of making things strict because of 'syntax'!</p>\n</blockquote>\n<p>Note, though, that coherence is treated as an important part of the story for Fiore and coauthors. For instance, see <span class=\"user-mention\" data-user-id=\"277754\">@Philip Saville</span>'s thesis <a href=\"https://arxiv.org/abs/2007.00624\">Cartesian closed bicategories: type theory and coherence</a>, which is essentially a justification that using weakened structure for bicategorical type theories is valid at all.</p>",
+        "id": 229743705,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1615410084
+    },
+    {
+        "content": "<p>Have you checked what is done in HoTT? There, they have the strong constraint that a category doesn't necessarily have a set of objects in any canonical way. Also, it's quite common to strictify types – that is, to produce a type equivalent to the original one for which the notion of identity on closed terms is judgemental equality (IIRC with similar motivation to strictification in category theory). This is left as a metatheoretic notion.</p>",
+        "id": 229744133,
+        "sender_full_name": "James Wood",
+        "timestamp": 1615410218
+    },
+    {
+        "content": "<p>And it seems that the definition given in section 2.1 of the Korostenski-Tholen paper may indeed satisfy my needs!  Wonderful.</p>",
+        "id": 229744140,
+        "sender_full_name": "Jacques Carette",
+        "timestamp": 1615410222
+    },
+    {
+        "content": "<p>I suppose one question I might ask is: why are you even bothering to formalise a Lawvere theory where you are not concerned with syntax? It's much easier to formalise a cartesian category, which plays essentially the same role.</p>",
+        "id": 229744610,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1615410375
+    },
+    {
+        "content": "<p>On \"evil\": I prefer the <a href=\"https://ncatlab.org/nlab/show/principle+of+equivalence\">principle of equivalence</a> as the reasonable, non-tongue-in-cheek version. This appeals to me greatly.</p>",
+        "id": 229744651,
+        "sender_full_name": "Jacques Carette",
+        "timestamp": 1615410396
+    },
+    {
+        "content": "<p>Oh, the answer to \"why are you bothering to formalize XXX\" is always the same simple answer: to learn. I don't know this stuff, and formalizing it forces me to learn it well.</p>",
+        "id": 229744932,
+        "sender_full_name": "Jacques Carette",
+        "timestamp": 1615410518
+    },
+    {
+        "content": "<p>You may also be interested that identity-on-objects functors are more categorical than might appear at first glance: for instance, monads in the bicategory of profunctors are precisely identity-on-objects functors.</p>",
+        "id": 229745341,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1615410669
+    },
+    {
+        "content": "<p>My formal math background was very (<strong>very</strong>) analysis heavy. I loved the stuff. I also spent years doing symbolic computation.  But now I'm retooling myself on other topics (type theory, category theory, others), and learning it all on my own. So I have the weirdest holes while at the same time knowing some really advanced material.  I'm happy people here are (mostly) patient.</p>",
+        "id": 229745429,
+        "sender_full_name": "Jacques Carette",
+        "timestamp": 1615410708
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"296322\">Jacques Carette</span> <a href=\"#narrow/stream/266967-general.3A-mathematics/topic/Doubts.20about.20.22identity.20on.20objects.22.20Functors/near/229744932\">said</a>:</p>\n<blockquote>\n<p>Oh, the answer to \"why are you bothering to formalize XXX\" is always the same simple answer: to learn. I don't know this stuff, and formalizing it forces me to learn it well.</p>\n</blockquote>\n<p>I suppose then the argument to formalising the nLab's definition over the classical definition is that it is more complex, and thus a better learning opportunity?</p>",
+        "id": 229745506,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1615410725
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276092\">Nathanael Arkor</span> <a href=\"#narrow/stream/266967-general.3A-mathematics/topic/Doubts.20about.20.22identity.20on.20objects.22.20Functors/near/229745506\">said</a>:</p>\n<blockquote>\n<p>I suppose then the argument to formalising the nLab's definition over the classical definition is that it is more complex, and thus a better learning opportunity?</p>\n</blockquote>\n<p>Actually, no. It's because I \"didn't know better\", have no guide, and that definition struck me as somehow more sensible. I would be so happy to have a guide on my journey through learning category theory!</p>",
+        "id": 229745951,
+        "sender_full_name": "Jacques Carette",
+        "timestamp": 1615410896
+    },
+    {
+        "content": "<p>(Let me apologise if I am coming across in any way confrontational: it is just that I have an affection for strict structures in category theory and think syntax is often undervalued.)</p>",
+        "id": 229745954,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1615410899
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276092\">Nathanael Arkor</span> <a href=\"#narrow/stream/266967-general.3A-mathematics/topic/Doubts.20about.20.22identity.20on.20objects.22.20Functors/near/229745341\">said</a>:</p>\n<blockquote>\n<p>You may also be interested that identity-on-objects functors are more categorical than might appear at first glance: for instance, monads in the bicategory of profunctors are precisely identity-on-objects functors.</p>\n</blockquote>\n<p>Oh, I need to bookmark that and prove it for myself. That sounds very instructive.</p>",
+        "id": 229746090,
+        "sender_full_name": "Jacques Carette",
+        "timestamp": 1615410947
+    },
+    {
+        "content": "<p>I too think that syntax is very under-valued. I have a PhD student defending her thesis on Monday which is 100% about leveraging the power of syntax to do generation lots of math at no human cost. Classical Universal Algebra was really helpful there.  It's not that I claim that this is the right way to do things (some people seem to misunderstand that), but rather to show that no one should be wasting their time doing it by hand because it is all automatable. The question of how to achieve it 'well' is left to the future.</p>\n<p>On the other hand, I have a strong fondness for weak category theory! <span aria-label=\"grinning face with smiling eyes\" class=\"emoji emoji-1f601\" role=\"img\" title=\"grinning face with smiling eyes\">:grinning_face_with_smiling_eyes:</span></p>",
+        "id": 229746589,
+        "sender_full_name": "Jacques Carette",
+        "timestamp": 1615411145
+    },
+    {
+        "content": "<p>And, on Lawvere theories: do you have any recommended reading? Preferably something that is fairly explicit about the intent. That seems to be where I went astray.</p>",
+        "id": 229747179,
+        "sender_full_name": "Jacques Carette",
+        "timestamp": 1615411359
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"296322\">Jacques Carette</span> <a href=\"#narrow/stream/266967-general.3A-mathematics/topic/Doubts.20about.20.22identity.20on.20objects.22.20Functors/near/229745951\">said</a>:</p>\n<blockquote>\n<p><span class=\"user-mention silent\" data-user-id=\"276092\">Nathanael Arkor</span> <a href=\"#narrow/stream/266967-general.3A-mathematics/topic/Doubts.20about.20.22identity.20on.20objects.22.20Functors/near/229745506\">said</a>:</p>\n<blockquote>\n<p>I suppose then the argument to formalising the nLab's definition over the classical definition is that it is more complex, and thus a better learning opportunity?</p>\n</blockquote>\n<p>Actually, no. It's because I \"didn't know better\", have no guide, and that definition struck me as somehow more sensible. I would be so happy to have a guide on my journey through learning category theory!</p>\n</blockquote>\n<p>I think the nLab page is much in need of some clarification in that respect (that is, how the different definitions relate). I will try to add some comments at some point.</p>\n<p>Regarding the difference in this instance: the original definition of Lawvere theory was single-sorted (to match classical universal algebra). However, this was quickly generalised to multisorted theories; upon doing so, it becomes clear that multisorted algebraic theories are essentially the same as cartesian categories, which are \"more categorical\" and certainly simpler (at the cost of losing the information pertaining to the generating sorts). The definition on the nLab is what one might get if they took multisorted Lawvere theory to mean \"cartesian category\" and tried to produce a one-sorted definition. It is arguable how much value there is in doing so, because restricting to a single sort is quite a syntactic operation to want to perform (and rarely necessary even then). If one wants to consider models of algebraic structure in a general category, it is much more likely that a cartesian category will be the right abstraction.</p>",
+        "id": 229747240,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1615411388
+    },
+    {
+        "content": "<p>I think the ‘right way’ to think about Lawvere theories is as just finite product categories, with the sorted versions arising from presentations via sorts, function symbols, and equations</p>",
+        "id": 229747442,
+        "sender_full_name": "Fawzi Hreiki",
+        "timestamp": 1615411463
+    },
+    {
+        "content": "<p>So the theories are a priori weak, but the strictness comes in with the syntax</p>",
+        "id": 229747599,
+        "sender_full_name": "Fawzi Hreiki",
+        "timestamp": 1615411556
+    },
+    {
+        "content": "<p>In my work, it is extremely important to separate presentation and semantics. [Yes, I am indeed a computer scientist, no longer a mathematician, even though that was my Ph.D.]  And I'm definitely working my way up to Cartmell's generalized algebraic theories. I just want to get the basics done right, first.</p>\n<p>Just to double check again: \"finite product categories\" and \"cartesian categories\" are the same thing, right? Just a different name to emphasize a different structure?</p>",
+        "id": 229747866,
+        "sender_full_name": "Jacques Carette",
+        "timestamp": 1615411661
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"296322\">Jacques Carette</span> <a href=\"#narrow/stream/266967-general.3A-mathematics/topic/Doubts.20about.20.22identity.20on.20objects.22.20Functors/near/229747179\">said</a>:</p>\n<blockquote>\n<p>And, on Lawvere theories: do you have any recommended reading? Preferably something that is fairly explicit about the intent. That seems to be where I went astray.</p>\n</blockquote>\n<p>To get an appreciation of the structure of Lawvere theories as pertains to syntax (as was their original motivation), I think Chapter 2 of Mahmoud's thesis <a href=\"https://www.repository.cam.ac.uk/bitstream/handle/1810/241035/Thesis.pdf?sequence=1&amp;isAllowed=y\">Second-order algebraic theories</a> is very nicely written, and gives an explicit proof of the equivalence between syntax in the form of presentations and equational logic, and Lawvere theories.</p>",
+        "id": 229748149,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1615411779
+    },
+    {
+        "content": "<p>Well ‘Cartesian’ sometimes means finite limits so that can be vague</p>",
+        "id": 229748158,
+        "sender_full_name": "Fawzi Hreiki",
+        "timestamp": 1615411784
+    },
+    {
+        "content": "<p>I mean categories with finite Cartesian products</p>",
+        "id": 229748195,
+        "sender_full_name": "Fawzi Hreiki",
+        "timestamp": 1615411800
+    },
+    {
+        "content": "<p>I don't know of a good reference for the precise relationship between Lawvere theories and cartesian categories; as far as I know it is folklore, though some of the story may be found in Pitts's <a href=\"https://www.cl.cam.ac.uk/~amp12/papers/catl/catl.pdf\">Categorical logic</a>.</p>",
+        "id": 229748489,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1615411914
+    },
+    {
+        "content": "<p>Well there’s ‘Algebraic Theories’ by Adamek, Rosicky, and Vitale</p>",
+        "id": 229748686,
+        "sender_full_name": "Fawzi Hreiki",
+        "timestamp": 1615411985
+    },
+    {
+        "content": "<p>Which is basically the book on Lawvere theories.</p>",
+        "id": 229748735,
+        "sender_full_name": "Fawzi Hreiki",
+        "timestamp": 1615412001
+    },
+    {
+        "content": "<p>I've actually read both of those (Mahmoud's thesis and Pitt's article). But merely reading is insufficient to really learn. I own 'Algebraic Theories', which is even less sufficient for learning...</p>",
+        "id": 229748875,
+        "sender_full_name": "Jacques Carette",
+        "timestamp": 1615412056
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"341237\">Fawzi Hreiki</span> <a href=\"#narrow/stream/266967-general.3A-mathematics/topic/Doubts.20about.20.22identity.20on.20objects.22.20Functors/near/229748735\">said</a>:</p>\n<blockquote>\n<p>Which is basically the book on Lawvere theories.</p>\n</blockquote>\n<p>This is good for one interested in the categorical perspective (i.e. cartesian categories), but not if one is interested in the syntax; which I do not believe they discuss at all..?</p>",
+        "id": 229748978,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1615412094
+    },
+    {
+        "content": "<p>They discuss syntax in the second half of the book where they define presentations of algebraic theories I believe</p>",
+        "id": 229749049,
+        "sender_full_name": "Fawzi Hreiki",
+        "timestamp": 1615412122
+    },
+    {
+        "content": "<p>If by syntax you mean the type calculus of finite products though, then no they don’t deal with that aspect</p>",
+        "id": 229749126,
+        "sender_full_name": "Fawzi Hreiki",
+        "timestamp": 1615412155
+    },
+    {
+        "content": "<p>For deduction related stuff, you’re better off with Mike Shulman’s notes on categorical logic</p>",
+        "id": 229749245,
+        "sender_full_name": "Fawzi Hreiki",
+        "timestamp": 1615412191
+    },
+    {
+        "content": "<p>Oh, I've read Shulman's catlog notes very attentively! They match my understanding of things very well.</p>",
+        "id": 229749570,
+        "sender_full_name": "Jacques Carette",
+        "timestamp": 1615412314
+    },
+    {
+        "content": "<p>One last point about the strictness of Lawvere theories: it is by virtue of the fact that you specify the generating sorts that you can get the correspondence between Lawvere theories and monads on powers of Set.</p>",
+        "id": 229750318,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1615412595
+    },
+    {
+        "content": "<p>(This is related to the point earlier that monads in Prof are identity-on-objects functors. Martin Hyland has <a href=\"https://arxiv.org/abs/1311.7642\">some good notes</a> on this topic.)</p>",
+        "id": 229750390,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1615412638
+    },
+    {
+        "content": "<p>Much material for me to (re)read, thank you.  I had too many things saved up in my 'theories' bucket, having a short list helps.</p>\n<p>I'll have to see how much of this generalizes when Set is replaced with Setoid.  [The vast majority of category theory does.]</p>",
+        "id": 229750876,
+        "sender_full_name": "Jacques Carette",
+        "timestamp": 1615412784
+    },
+    {
+        "content": "<blockquote>\n<p>I'll have to see how much of this generalizes when Set is replaced with Setoid.</p>\n</blockquote>\n<p>If this means moving to the Setoid-enriched setting, everything does indeed generalise without too much fuss (and I imagine won't lead to any surprises after the Set-enriched setting is understood). But that says nothing about ease of formalisation :)</p>",
+        "id": 229751161,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1615412886
+    },
+    {
+        "content": "<p>Yes, that's what this means.  Once the definitions are down correctly, slogging through the proofs is generally not bad. The types guide you a lot. Tedious, sure.</p>",
+        "id": 229751439,
+        "sender_full_name": "Jacques Carette",
+        "timestamp": 1615413012
+    },
+    {
+        "content": "<p>FWIW, I think usually a definition involving an identity-on-objects functor (or other structure violating the principle of equivalence) should usually be regarded not as structure on a previously given collection of categories but as a definition of a different, <em>sui generis</em> categorical structure.  For instance, a dagger-category can be defined as a category with an identity-on-objects contravariant involution, but it's better to think of it as a new kind of categorical structure that happens to have an underlying category rather than as a \"dagger-structure\" on a previously given category.  Same with Freyd-categories, etc.</p>",
+        "id": 229769203,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1615420748
+    },
+    {
+        "content": "<p>Similarly, the definition of a Grothendieck fibration involves an equality of objects when defining cartesian lifts, so from an equivalence-principle point of view it's better to think of \"a fibration over B\" as a <em>sui generis</em> thing (or an instance of something a bit more general, like a \"displayed category\") rather than as a property of a functor with codomain B.</p>",
+        "id": 229769393,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1615420826
+    },
+    {
+        "content": "<p>When working in a set-theoretic formal system, of course, one can in fact define these structures in the traditional way using functors that have the property of being identity-on-objects and so on.  But \"morally\" it's better to think of them as <em>sui generis</em> structures, and when formalizing things in HoTT you're forced to that point of view.  In <a href=\"https://arxiv.org/abs/2102.06275\">https://arxiv.org/abs/2102.06275</a> we tried to lay out a general approach to such dependently typed categorical structures inspired by Makkai's FOLDS; see particularly the examples in chapters 12 and 13.</p>",
+        "id": 229769627,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1615420945
+    },
+    {
+        "content": "<p>That's exactly the kind of answer I was hoping for, thank you.  For dagger category, that makes sense.</p>\n<p>So identity-on-object functors, from that perspective, are 'other' things, which can be proven post-facto to be functors?</p>",
+        "id": 229769862,
+        "sender_full_name": "Jacques Carette",
+        "timestamp": 1615421072
+    },
+    {
+        "content": "<p>I've tried to read the paper you linked... It would require serious study on my part to be able to understand those examples.</p>",
+        "id": 229776393,
+        "sender_full_name": "Jacques Carette",
+        "timestamp": 1615425070
+    },
+    {
+        "content": "<p>Yeah.</p>",
+        "id": 229776824,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1615425348
+    },
+    {
+        "content": "<p>I don't know if you can read Adga, but if you could verify that our definition of (Grothendieck) <a href=\"https://agda.github.io/agda-categories/Categories.Functor.Fibration.html\">Fibration</a> is correct, I'd certainly appreciate it!</p>",
+        "id": 229777223,
+        "sender_full_name": "Jacques Carette",
+        "timestamp": 1615425630
+    },
+    {
+        "content": "<p>I think that identity morphisms in general should be excluded from \"evilness\". Identity morphisms are a an essential part of every category which are necessary for defining equivalences in the first place. Identity on object functors aren't identity morphisms but their object components are.</p>",
+        "id": 229790145,
+        "sender_full_name": "Jade Master",
+        "timestamp": 1615435347
+    },
+    {
+        "content": "<p>I've included the id-on-objs definition of Lawvere theory on the <a href=\"https://ncatlab.org/nlab/show/Lawvere+theory#definition\">nlab page</a>. Happy to be overridden. I almost made the id-on-objs definition the \"A\" definition, which is what it is in my head, but I didn't have the guts (so to speak). I also noticed that Mike wrote a <a href=\"https://ncatlab.org/nlab/show/identity-on-objects+functor#equivalenceinvariance\">similar explanation</a> about id-on-objs back in 2017.</p>",
+        "id": 229820419,
+        "sender_full_name": "Sam Staton",
+        "timestamp": 1615455531
+    },
+    {
+        "content": "<p>Obviously the two definitions are equivalent in the traditional case, but the B definition generalises better to the enriched case</p>",
+        "id": 229823146,
+        "sender_full_name": "Fawzi Hreiki",
+        "timestamp": 1615456792
+    },
+    {
+        "content": "<p>I think it depends what you mean by \"equivalent\"; personally I don't think they're equivalent definitions. I expect both definitions can be enriched, but I agree that B is the more usual one to start from.</p>",
+        "id": 229824666,
+        "sender_full_name": "Sam Staton",
+        "timestamp": 1615457499
+    },
+    {
+        "content": "<p><span class=\"user-mention\" data-user-id=\"276037\">@Jade Master</span> The point is that if you have two <em>given</em> categories, saying that there is an io functor between them is not an equivalence-invariant statement.</p>",
+        "id": 229854397,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1615472154
+    },
+    {
+        "content": "<p><span class=\"user-mention\" data-user-id=\"276777\">@Mike Shulman</span> Okay that's true. I see what you mean. Why would you want it to be equivalence invariant in this case? Having an object component which is the identity seems very nice to me already.</p>",
+        "id": 229855506,
+        "sender_full_name": "Jade Master",
+        "timestamp": 1615472523
+    },
+    {
+        "content": "<p>I suppose that having things be equivalence invariant is in general a good thing I get that.</p>",
+        "id": 229856588,
+        "sender_full_name": "Jade Master",
+        "timestamp": 1615472876
+    },
+    {
+        "content": "<p>But yeah there are some things which just aren't equivalent invariant but are nevertheless the best definition for something? And your idea is that were just using the wrong type of equivalence for these things?</p>",
+        "id": 229857007,
+        "sender_full_name": "Jade Master",
+        "timestamp": 1615473013
+    },
+    {
+        "content": "<p>I guess that's the interesting thing about the interaction between type theory (which strives to be as strict as possible) and category theory (which strives to be as weak as possible)</p>",
+        "id": 229857024,
+        "sender_full_name": "Fawzi Hreiki",
+        "timestamp": 1615473017
+    },
+    {
+        "content": "<p>I think one of the reasons why things should be formulated as weak as possible is to not mistakenly use a fact or property which is not invariant under equivalence.</p>",
+        "id": 229857231,
+        "sender_full_name": "Fawzi Hreiki",
+        "timestamp": 1615473101
+    },
+    {
+        "content": "<p>That's why I like <span class=\"user-mention\" data-user-id=\"276777\">@Mike Shulman</span> 's idea of an ioo functor as a <em>sui generis</em> structure which <em>induces</em> a functor rather then being a functor. That fixes all the issues in one go.</p>",
+        "id": 229857547,
+        "sender_full_name": "Jacques Carette",
+        "timestamp": 1615473218
+    },
+    {
+        "content": "<p>Does this fix it by introducing a new type of equivalence?</p>",
+        "id": 229858130,
+        "sender_full_name": "Jade Master",
+        "timestamp": 1615473432
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276037\">Jade Master</span> <a href=\"#narrow/stream/266967-general.3A-mathematics/topic/Doubts.20about.20.22identity.20on.20objects.22.20Functors/near/229858130\">said</a>:</p>\n<blockquote>\n<p>Does this fix it by introducing a new type of equivalence?</p>\n</blockquote>\n<p>I presume it does as follows: given an equivalent base category, you have sufficient data to define an identity on objects functor over it.</p>",
+        "id": 229863054,
+        "sender_full_name": "Morgan Rogers (he/him)",
+        "timestamp": 1615475054
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276092\">Nathanael Arkor</span> <a href=\"#narrow/stream/266967-general.3A-mathematics/topic/Doubts.20about.20.22identity.20on.20objects.22.20Functors/near/229750390\">said</a>:</p>\n<blockquote>\n<p>(This is related to the point earlier that monads in Prof are identity-on-objects functors. Martin Hyland has <a href=\"https://arxiv.org/abs/1311.7642\">some good notes</a> on this topic.)</p>\n</blockquote>\n<p>Won't this only be true up to a Cauchy completeness assumption?</p>",
+        "id": 229867030,
+        "sender_full_name": "Nick Hu",
+        "timestamp": 1615476380
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"296322\">Jacques Carette</span> <a href=\"#narrow/stream/266967-general.3A-mathematics/topic/Doubts.20about.20.22identity.20on.20objects.22.20Functors/near/229777223\">said</a>:</p>\n<blockquote>\n<p>I don't know if you can read Adga, but if you could verify that our definition of (Grothendieck) <a href=\"https://agda.github.io/agda-categories/Categories.Functor.Fibration.html\">Fibration</a> is correct, I'd certainly appreciate it!</p>\n</blockquote>\n<p>It looks like you are defining the weakened notion of <a href=\"https://ncatlab.org/nlab/show/Street+fibration\">Street fibration</a>, which <em>is</em> equivalence-invariant.</p>",
+        "id": 229868536,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1615476881
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"280859\">Nick Hu</span> <a href=\"#narrow/stream/266967-general.3A-mathematics/topic/Doubts.20about.20.22identity.20on.20objects.22.20Functors/near/229867030\">said</a>:</p>\n<blockquote>\n<p><span class=\"user-mention silent\" data-user-id=\"276092\">Nathanael Arkor</span> <a href=\"#narrow/stream/266967-general.3A-mathematics/topic/Doubts.20about.20.22identity.20on.20objects.22.20Functors/near/229750390\">said</a>:</p>\n<blockquote>\n<p>(This is related to the point earlier that monads in Prof are identity-on-objects functors. Martin Hyland has <a href=\"https://arxiv.org/abs/1311.7642\">some good notes</a> on this topic.)</p>\n</blockquote>\n<p>Won't this only be true up to a Cauchy completeness assumption?</p>\n</blockquote>\n<p>Nope.  Cauchy completeness is necessary to identify left adjoint profunctors with functors, but that's not how this result goes.</p>",
+        "id": 229868730,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1615476959
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276777\">Mike Shulman</span> <a href=\"#narrow/stream/266967-general.3A-mathematics/topic/Doubts.20about.20.22identity.20on.20objects.22.20Functors/near/229868536\">said</a>:</p>\n<blockquote>\n<p>It looks like you are defining the weakened notion of <a href=\"https://ncatlab.org/nlab/show/Street+fibration\">Street fibration</a>, which <em>is</em> equivalence-invariant.</p>\n</blockquote>\n<p>In which case, we should fix our documentation to say that clearly.</p>",
+        "id": 229868892,
+        "sender_full_name": "Jacques Carette",
+        "timestamp": 1615477005
+    },
+    {
+        "content": "<p>Thanks.</p>",
+        "id": 229868983,
+        "sender_full_name": "Jacques Carette",
+        "timestamp": 1615477036
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276037\">Jade Master</span> <a href=\"#narrow/stream/266967-general.3A-mathematics/topic/Doubts.20about.20.22identity.20on.20objects.22.20Functors/near/229855506\">said</a>:</p>\n<blockquote>\n<p><span class=\"user-mention silent\" data-user-id=\"276777\">Mike Shulman</span> Okay that's true. I see what you mean. Why would you want it to be equivalence invariant in this case? Having an object component which is the identity seems very nice to me already.</p>\n</blockquote>\n<p>There's an argument that anything we say about \"a category\" should be invariant under equivalence of that category, just like anything we say about \"a group\" should be invariant under isomorphism.  You would look at someone strangely if they said something like \"Definition: a group G is splanzy if it contains the number 24\", since that's not an isomorphism-invariant property.  (Of course, it makes sense to talk about whether a <em>subgroup</em> of <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"double-struck\">Z</mi></mrow><annotation encoding=\"application/x-tex\">\\mathbb{Z}</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.68889em;vertical-align:0em;\"></span><span class=\"mord\"><span class=\"mord mathbb\">Z</span></span></span></span></span> contains 24.)  Similarly, you should look at someone strangely if they say \"A category is plitzy if it contains exactly 53 objects,\" since that's not invariant under equivalence.</p>",
+        "id": 229869486,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1615477211
+    },
+    {
+        "content": "<p>When doing mathematics in HoTT this is actually <em>necessary</em>, because equivalent categories are actually equal to each other, and anything we say about one of them can always be transported to another one.</p>",
+        "id": 229869566,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1615477249
+    },
+    {
+        "content": "<p>(Hence Voevodsky's renaming of \"contextual categories\" to \"C-systems\".)</p>",
+        "id": 229869801,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1615477336
+    },
+    {
+        "content": "<p>But it <em>is</em> true that having an identity-on-objects component <em>is</em> nice, and we <em>can</em> use such definitions even in HoTT.  It's just that we can't express it as two given categories <em>together with</em> a functor between them that has the \"property\" of being identity-on-objects.  Rather, we say \"there's a single type of objects equipped with two different families of hom-sets forming categories and a map between them that preserves composition and identities\".  Then we observe afterwards that from these data we can extract two categories and a functor between them.</p>",
+        "id": 229869863,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1615477373
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276092\">Nathanael Arkor</span> <a href=\"#narrow/stream/266967-general.3A-mathematics/topic/Doubts.20about.20.22identity.20on.20objects.22.20Functors/near/229869801\">said</a>:</p>\n<blockquote>\n<p>(Hence Voevodsky's renaming of \"contextual categories\" to \"C-systems\".)</p>\n</blockquote>\n<p>I'm actually not sold on that reasoning for that.  I think of a contextual category as a dependently typed analogue of a multicategory, and multicategories are really category-like things, defined up to equivalence and forming a 2-category and not just a 1-category.  But I haven't tried to see whether that can be made precise.</p>",
+        "id": 229870086,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1615477448
+    },
+    {
+        "content": "<p>I would be interested to see if that could be made precise.</p>",
+        "id": 229871501,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1615477926
+    },
+    {
+        "content": "<p>Meta comment: I was apprehensive about asking this question, originally. Now I'm quite glad that I did.</p>",
+        "id": 229875504,
+        "sender_full_name": "Jacques Carette",
+        "timestamp": 1615478899
+    }
+]

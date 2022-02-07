@@ -1,0 +1,92 @@
+[
+    {
+        "content": "<p>Suppose we're working with category theory defined axiomatically, e.g. some first order system like ETCS. How would we go about formulating the Yoneda lemma in such a system? Of course once we have <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"bold\">S</mi><mi mathvariant=\"bold\">e</mi><mi mathvariant=\"bold\">t</mi></mrow><annotation encoding=\"application/x-tex\">\\mathbf{Set}</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.68611em;vertical-align:0em;\"></span><span class=\"mord\"><span class=\"mord mathbf\">S</span><span class=\"mord mathbf\">e</span><span class=\"mord mathbf\">t</span></span></span></span></span> defined we could just construct a notion of categories <em>internal</em> to <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"bold\">S</mi><mi mathvariant=\"bold\">e</mi><mi mathvariant=\"bold\">t</mi></mrow><annotation encoding=\"application/x-tex\">\\mathbf{Set}</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.68611em;vertical-align:0em;\"></span><span class=\"mord\"><span class=\"mord mathbf\">S</span><span class=\"mord mathbf\">e</span><span class=\"mord mathbf\">t</span></span></span></span></span> and work there, but is there any way to connect Yoneda to the top-level categories we're defining?</p>",
+        "id": 212411216,
+        "sender_full_name": "Shea Levy",
+        "timestamp": 1601981922
+    },
+    {
+        "content": "<p>There is surely always going to be an \"external\" category, of which the collections of objects and morphisms of your categories will be objects; it will always be a category since we need to define functors as mappings between these.</p>",
+        "id": 212413521,
+        "sender_full_name": "[Mod] Morgan Rogers",
+        "timestamp": 1601983545
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"277473\">[Mod] Morgan Rogers</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/Yoneda.20lemma.20in.20axiomatic.20formulations.20of.20category.20theory.3F/near/212413521\">said</a>:</p>\n<blockquote>\n<p>There is surely always going to be an \"external\" category, of which the collections of objects and morphisms of your categories will be objects; it will always be a category since we need to define functors as mappings between these.</p>\n</blockquote>\n<p>Ah, I think that makes sense! To restate this, any definition of \"functor\" as a generic concept will require the meta-theory to have some notion of \"mapping\", which we can then logically see as a category (setting aside whether we can treat it as such <em>within</em> the meta-theory). Is that right?</p>",
+        "id": 212414069,
+        "sender_full_name": "Shea Levy",
+        "timestamp": 1601983944
+    },
+    {
+        "content": "<p>That's what I'm suggesting. I'm not going to claim it's strictly impossible to pull that meta-theoretic category into the theory, but it seems like it will take some significant manipulation.</p>",
+        "id": 212414471,
+        "sender_full_name": "[Mod] Morgan Rogers",
+        "timestamp": 1601984220
+    },
+    {
+        "content": "<p>(although this might be exactly the kind of structured \"Russell paradox\" situation that forces us to resort to talking about universes when we're being very formal)</p>",
+        "id": 212414672,
+        "sender_full_name": "[Mod] Morgan Rogers",
+        "timestamp": 1601984365
+    },
+    {
+        "content": "<p>Hmm... Now I'm suspecting if we want to keep the meta-theory first order we need something like ETCC... Which as I understand it is an unsolved problem? But either way we'd get <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"bold\">C</mi><mi mathvariant=\"bold\">a</mi><mi mathvariant=\"bold\">t</mi></mrow><annotation encoding=\"application/x-tex\">\\mathbf{Cat}</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.68611em;vertical-align:0em;\"></span><span class=\"mord\"><span class=\"mord mathbf\">C</span><span class=\"mord mathbf\">a</span><span class=\"mord mathbf\">t</span></span></span></span></span> out of that, and functors</p>",
+        "id": 212415008,
+        "sender_full_name": "Shea Levy",
+        "timestamp": 1601984593
+    },
+    {
+        "content": "<p>You might want to take a look at the concept of a Yoneda structure</p>",
+        "id": 212416331,
+        "sender_full_name": "Fawzi Hreiki",
+        "timestamp": 1601985445
+    },
+    {
+        "content": "<p><a href=\"https://ncatlab.org/nlab/show/Yoneda+structure\">https://ncatlab.org/nlab/show/Yoneda+structure</a></p>",
+        "id": 212416356,
+        "sender_full_name": "Fawzi Hreiki",
+        "timestamp": 1601985458
+    },
+    {
+        "content": "<p>The idea is that you directly axiomatise in a 2-category what the Yoneda lemma gives you in the category of categories - namely the free cocompletion of a small category.</p>",
+        "id": 212416481,
+        "sender_full_name": "Fawzi Hreiki",
+        "timestamp": 1601985535
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"341237\">Fawzi Hreiki</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/Yoneda.20lemma.20in.20axiomatic.20formulations.20of.20category.20theory.3F/near/212416481\">said</a>:</p>\n<blockquote>\n<p>The idea is that you directly axiomatise in a 2-category what the Yoneda lemma gives you in the category of categories - namely the free cocompletion of a small category.</p>\n</blockquote>\n<p>Awesome, yes! Thank you :)</p>",
+        "id": 212416536,
+        "sender_full_name": "Shea Levy",
+        "timestamp": 1601985575
+    },
+    {
+        "content": "<p>This is quite good <a href=\"https://sites.google.com/site/markwebersmaths/home/yoneda-structures-from-2-toposes\">https://sites.google.com/site/markwebersmaths/home/yoneda-structures-from-2-toposes</a></p>",
+        "id": 212416556,
+        "sender_full_name": "Fawzi Hreiki",
+        "timestamp": 1601985599
+    },
+    {
+        "content": "<p>Heh so the cost of building in Yoneda for axiomatic 1-categories is that you have to work in a 2-category? I should have seen that coming <span aria-label=\"joy\" class=\"emoji emoji-1f602\" role=\"img\" title=\"joy\">:joy:</span></p>",
+        "id": 212416648,
+        "sender_full_name": "[Mod] Morgan Rogers",
+        "timestamp": 1601985638
+    },
+    {
+        "content": "<p>That's to be expected I suppose. Although if you're only interested in <strong>Cat</strong>, you can (kind of) get away with only talking about it 1-categorically. This is because it's self enriched so you get the 2-category structure by looking at the exponential objects (the functor categories)</p>",
+        "id": 212416813,
+        "sender_full_name": "Fawzi Hreiki",
+        "timestamp": 1601985730
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"277473\">[Mod] Morgan Rogers</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/Yoneda.20lemma.20in.20axiomatic.20formulations.20of.20category.20theory.3F/near/212416648\">said</a>:</p>\n<blockquote>\n<p>Heh so the cost of building in Yoneda for axiomatic 1-categories is that you have to work in a 2-category? I should have seen that coming <span aria-label=\"joy\" class=\"emoji emoji-1f602\" role=\"img\" title=\"joy\">:joy:</span></p>\n</blockquote>\n<p>The axioms for n-level stuff is always at level (n+1), right?</p>\n<p><a href=\"/user_uploads/21317/-yqNRvfgs-SKnI0zwSqWhXHl/Jacobs-ladder.jpg\">Jacobs-ladder.jpg</a></p>\n<div class=\"message_inline_image\"><a href=\"/user_uploads/21317/-yqNRvfgs-SKnI0zwSqWhXHl/Jacobs-ladder.jpg\" title=\"Jacobs-ladder.jpg\"><img src=\"/user_uploads/21317/-yqNRvfgs-SKnI0zwSqWhXHl/Jacobs-ladder.jpg\"></a></div>",
+        "id": 212918074,
+        "sender_full_name": "fosco",
+        "timestamp": 1602339333
+    },
+    {
+        "content": "<p>Fortunately, <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>1</mn><mo>+</mo><mi>ω</mi><mo>=</mo><mi>ω</mi></mrow><annotation encoding=\"application/x-tex\">1 + \\omega = \\omega</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.72777em;vertical-align:-0.08333em;\"></span><span class=\"mord\">1</span><span class=\"mspace\" style=\"margin-right:0.2222222222222222em;\"></span><span class=\"mbin\">+</span><span class=\"mspace\" style=\"margin-right:0.2222222222222222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.43056em;vertical-align:0em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.03588em;\">ω</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.43056em;vertical-align:0em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.03588em;\">ω</span></span></span></span>, so there's a way out.</p>",
+        "id": 212918208,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1602339561
+    }
+]

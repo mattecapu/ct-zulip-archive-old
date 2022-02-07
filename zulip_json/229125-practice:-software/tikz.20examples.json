@@ -1,0 +1,146 @@
+[
+    {
+        "content": "<p>I'm wondering if anyone either knows of a tikz library, or just has some nice code examples, for drawing relatively simple string diagrams? I realise there are some more heavyweight options available, but if I can use the tool I already sort-of know I'll save myself some time. I mostly want to draw the kinds of thing that appear in the graphical linear algebra papers.</p>",
+        "id": 197541643,
+        "sender_full_name": "Nathaniel Virgo",
+        "timestamp": 1589457243
+    },
+    {
+        "content": "<p>this isn't what you asked for, but it's possible that you might like to use <a href=\"https://tikzit.github.io/\">https://tikzit.github.io/</a></p>",
+        "id": 197560248,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1589465382
+    },
+    {
+        "content": "<p>it's a really pleasant &amp; pretty straightforward gui for building diagrams with nodes and edges and exporting to tikz code</p>",
+        "id": 197560684,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1589465468
+    },
+    {
+        "content": "<p>and it Actually Works Well and has a Pretty Pleasant Interface and Produces Nice Results unlike some tools i've seen</p>",
+        "id": 197560746,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1589465492
+    },
+    {
+        "content": "<p>(sorry if this is already something you know of and you were specifically looking for code for a good reason <span aria-label=\"persevere\" class=\"emoji emoji-1f623\" role=\"img\" title=\"persevere\">:persevere:</span>)</p>",
+        "id": 197560815,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1589465519
+    },
+    {
+        "content": "<p>Thanks <span class=\"user-mention\" data-user-id=\"276072\">@sarahzrf</span> , I'm totally checking out  <a href=\"https://tikzit.github.io/\">tikzit.github.io</a>.</p>",
+        "id": 197562156,
+        "sender_full_name": "Daniel Geisler",
+        "timestamp": 1589466052
+    },
+    {
+        "content": "<p>It turned out to be not so hard to get started just using tikz.  First set up a few macros:</p>\n<div class=\"codehilite\"><pre><span></span><code>\\documentclass[a4paper]{article}\n\n% first set up a few macros ....\n\n\\usepackage{tikz}\n\\newlength{\\xscale}\n\\newlength{\\yscale}\n\\setlength{\\xscale}{0.5cm}\n\\setlength{\\yscale}{0.3cm}\n\n\\newcommand{\\spath}[1][1]{\\draw[rounded corners=#1\\yscale]}\n% optional argument changes the corner rounding, in y scale units\n\n\\newcommand{\\whitedot}[1]{\\draw[fill=white] (#1) circle (0.25\\yscale);}\n\\newcommand{\\blackdot}[1]{\\draw[fill=black] (#1) circle (0.25\\yscale);}\n\n\\newcommand{\\stringdiagram}[1]{\n\\begin{tikzpicture}[x=\\xscale, y=\\yscale, baseline={([yshift=-0.6ex]current bounding box.center)}]\n#1\n\\end{tikzpicture}\n}\n\n\\begin{document}\n\n% .... then let&#39;s draw some diagrams\n\n\\begin{equation}\n%\n\\stringdiagram{\n\\spath (0,0) -- (1,0);\n\\spath (1,0) -- (1,1) -- (2,1);\n\\spath (1,0) -- (1,-1) -- (2,-1);\n\\whitedot{1,0};\n}\n%\n\\quad = \\quad\n%\n\\stringdiagram{\n%\\draw[step=1.0,lightgray] (0,-3) grid (5,3);  % a coordinate grid is helpful while coding it\n\\spath (0,1) -- (1,1);\n\\blackdot{0,1};\n\\blackdot{1,1};\n\\spath (1,1) -- (1,2) -- (3,2) -- (3,1);\n\\spath (1,-1) -- (1,0) -- (3,0) -- (3,1);\n\\spath (3,1) -- (4,1) -- (4,2);\n\\whitedot{3,1};\n\\spath (-0.5,3) -- (4,3) -- (4,2);\n\\spath (4,2) -- (5,2);\n\\blackdot{4,2};\n\\blackdot{5,2};\n\\spath (0,-1) -- (1,-1);\n\\blackdot{0,-1};\n\\blackdot{1,-1};\n\\spath[2] (1,1) -- (1,-1) -- (5.5,-1);\n\\spath[1.5] (1,-1) -- (1,-2.5) -- (5.5,-2.5);\n}\n\\end{equation}\n\n\\end{document}\n</code></pre></div>\n\n\n<p>Here's the result:</p>\n<p><a href=\"/user_uploads/21317/kk0ni584m5u9x95kKNQukDn8/image.png\">image.png</a></p>\n<div class=\"message_inline_image\"><a href=\"/user_uploads/21317/kk0ni584m5u9x95kKNQukDn8/image.png\" title=\"image.png\"><img src=\"/user_uploads/21317/kk0ni584m5u9x95kKNQukDn8/image.png\"></a></div>",
+        "id": 197563989,
+        "sender_full_name": "Nathaniel Virgo",
+        "timestamp": 1589466939
+    },
+    {
+        "content": "<p>The only thing I don't like is that the code for the more complicated diagram became hard to organise, becase you have to draw the white dots after the wires that connect to them, otherwise the wires get drawn over them. I'm not sure how to fix that.</p>",
+        "id": 197564159,
+        "sender_full_name": "Nathaniel Virgo",
+        "timestamp": 1589467005
+    },
+    {
+        "content": "<p>I will definitely check out tikzit some time, if I want to do something more complex than this. I have a (bad?) habit of liking to keep everything in a single file as much as possible, so I like being able to do things in code when I can.</p>",
+        "id": 197564446,
+        "sender_full_name": "Nathaniel Virgo",
+        "timestamp": 1589467133
+    },
+    {
+        "content": "<p>yeah, i relate to that :)</p>",
+        "id": 197564504,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1589467161
+    },
+    {
+        "content": "<p>but the organizational thing is kind of killer x_x</p>",
+        "id": 197564542,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1589467184
+    },
+    {
+        "content": "<p>...in the \"kills you\" sense, not the \"killer app\" sense</p>",
+        "id": 197564570,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1589467198
+    },
+    {
+        "content": "<p>well, ok, i have pretty much no tikz experience, so maybe there are solutions <span aria-label=\"upside down\" class=\"emoji emoji-1f643\" role=\"img\" title=\"upside down\">:upside_down:</span></p>",
+        "id": 197564662,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1589467227
+    },
+    {
+        "content": "<p>the solution i like is to use tikzit.</p>",
+        "id": 197564671,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1589467234
+    },
+    {
+        "content": "<p>I also use raw TikZ instead of TikZit (only because my laptop won't run it, I really wish I could use it) - but I always name my nodes, which helps for organisation</p>",
+        "id": 197565371,
+        "sender_full_name": "Jules Hedges",
+        "timestamp": 1589467528
+    },
+    {
+        "content": "<p>o.O why wont it run it?</p>",
+        "id": 197565415,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1589467547
+    },
+    {
+        "content": "<p>I use \\node and \\draw as my main 2 commands, not \\path</p>",
+        "id": 197565536,
+        "sender_full_name": "Jules Hedges",
+        "timestamp": 1589467585
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276072\">sarahzrf</span> <a href=\"#narrow/stream/229125-practice.3A-software/topic/tikz.20examples/near/197565415\">said</a>:</p>\n<blockquote>\n<p>o.O why wont it run it?</p>\n</blockquote>\n<p>osx is too out of date, and I very long time ago ran out of enough hard disc space to update it</p>",
+        "id": 197565615,
+        "sender_full_name": "Jules Hedges",
+        "timestamp": 1589467623
+    },
+    {
+        "content": "<p>Mine's using \\draw as well - \\spath is a macro, just to avoid writing \"rounded corners = \\yscale\" all the time. (I suppose I could have called it \\string instead.) (Except that's already a LaTeX command.)</p>",
+        "id": 197565667,
+        "sender_full_name": "Nathaniel Virgo",
+        "timestamp": 1589467649
+    },
+    {
+        "content": "<p>It can run tikzit1, which runs for about 20 seconds before crashing</p>",
+        "id": 197565721,
+        "sender_full_name": "Jules Hedges",
+        "timestamp": 1589467680
+    },
+    {
+        "content": "<p>I figured out how to use layers in tikz, so with these updated macros the white dots will always be drawn on top of the wires, no matter where they appear in the code.</p>\n<div class=\"codehilite\"><pre><span></span><code>\\documentclass[a4paper]{article}\n\n% first set up a few macros ....\n\n\\usepackage{tikz}\n\\newlength{\\xscale}\n\\newlength{\\yscale}\n\\setlength{\\xscale}{0.5cm}\n\\setlength{\\yscale}{0.3cm}\n\n%\\newcommand{\\wire}[1][1]{\\begin{pgfonlayer}{wire layer}\\draw[rounded corners=#1\\yscale];\\end{pgfonlayer}}\n\\newcommand{\\wire}[1][1]{\\draw[rounded corners=#1\\yscale]}\n% optional argument changes the corner rounding, in y scale units\n\n\\newcommand{\\fg}[1]{\\begin{pgfonlayer}{foreground}#1\\end{pgfonlayer}}\n\n\\newcommand{\\whitedot}[1]{\\fg{\\draw[fill=white] (#1) circle (0.25\\yscale);}}\n\\newcommand{\\blackdot}[1]{\\fg{\\draw[fill=black] (#1) circle (0.25\\yscale);}}\n\n\\newcommand{\\stringdiagram}[1]{\n\\begin{tikzpicture}[x=\\xscale, y=\\yscale, baseline={([yshift=-0.6ex]current bounding box.center)}]\n\\pgfdeclarelayer{foreground}\n\\pgfsetlayers{main,foreground}\n#1\n\\end{tikzpicture}\n}\n\n\\begin{document}\n\n% .... then let&#39;s draw some diagrams\n\n\\begin{equation}\n%\n\\stringdiagram{\n\\whitedot{1,0};\n\\wire (0,0) -- (1,0);\n\\wire (1,0) -- (1,1) -- (2,1);\n\\wire (1,0) -- (1,-1) -- (2,-1);\n}\n%\n\\quad = \\quad\n%\n\\stringdiagram{\n%\\draw[step=1.0,lightgray] (0,-3) grid (5,3);  % a coordinate grid is helpful while coding it\n\\wire (0,1) -- (1,1);\n\\blackdot{0,1};\n\\blackdot{1,1};\n\\wire (1,1) -- (1,2) -- (3,2) -- (3,1);\n\\wire (1,-1) -- (1,0) -- (3,0) -- (3,1);\n\\wire (3,1) -- (4,1) -- (4,2);\n\\whitedot{3,1};\n\\wire (-0.5,3) -- (4,3) -- (4,2);\n\\wire (4,2) -- (5,2);\n\\blackdot{4,2};\n\\blackdot{5,2};\n\\wire (0,-1) -- (1,-1);\n\\blackdot{0,-1};\n\\blackdot{1,-1};\n\\wire[2] (1,1) -- (1,-1) -- (5.5,-1);\n\\wire[1.5] (1,-1) -- (1,-2.5) -- (5.5,-2.5);\n}\n\\end{equation}\n\n\\end{document}\n</code></pre></div>",
+        "id": 197568133,
+        "sender_full_name": "Nathaniel Virgo",
+        "timestamp": 1589468614
+    },
+    {
+        "content": "<p><span class=\"user-mention\" data-user-id=\"276071\">@Nathaniel Virgo</span>, I am not sure how obvious this is, but anyway... do you know that you can download the source code of most papers on Arxiv? Here I have sort of automated this to be able to download, unpack and compile sources with few keystrokes, and my local copy of the source of Fong and Spivak's \"Seven Sketches\" - <a href=\"https://arxiv.org/abs/1803.05316\">https://arxiv.org/abs/1803.05316</a> - is stored at ~/snarf/https/arxiv.org/e-print/1803.05316.tar, and to unpack it I do this:</p>\n<div class=\"codehilite\"><pre><span></span><code>rm -Rfv ~/usrc/arxiv-sevensketches/\nmkdir   ~/usrc/arxiv-sevensketches/\ncd      ~/usrc/arxiv-sevensketches/\ntar -xvf ~/snarf/https/arxiv.org/e-print/1803.05316.tar\n</code></pre></div>",
+        "id": 197607639,
+        "sender_full_name": "Eduardo Ochs",
+        "timestamp": 1589485382
+    },
+    {
+        "content": "<p>Ah, thanks - I looked at the source of a couple of papers with diagrams I like, but found the diagrams were just pdf files. I didn't think to have a look at Seven Sketches - that's a good source of nice examples.</p>",
+        "id": 197612373,
+        "sender_full_name": "Nathaniel Virgo",
+        "timestamp": 1589487665
+    },
+    {
+        "content": "<p>I think Seven Sketches uses the tikz library here: <a href=\"https://github.com/appliedcategorytheory/TikZWD\">https://github.com/appliedcategorytheory/TikZWD</a></p>",
+        "id": 197653466,
+        "sender_full_name": "Thomas Read",
+        "timestamp": 1589525663
+    }
+]

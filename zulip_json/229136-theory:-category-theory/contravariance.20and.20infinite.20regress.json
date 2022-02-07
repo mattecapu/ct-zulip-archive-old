@@ -1,0 +1,158 @@
+[
+    {
+        "content": "<p>something is bugging me about contravariance. im not sure i have a specific <em>question</em> but i do have a vague feeling of something being strange or confusing or off, &amp; wondering if anyone had any input on it:</p>",
+        "id": 250051609,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1629408380
+    },
+    {
+        "content": "<p>so theres a certain phenomenon which ive seen described on this zulip at least once as some structure \"riding\" another structure—the particular example i have in mind, and where i think i saw the term, is the case of talking about a symmetry for a monoidal structure. to say that a braiding is a symmetry is approximately to say that it is an involution, except that's not quite right, because a braiding is not an endomorphism at all so it isn't even well-typed to ask if it is an involution</p>",
+        "id": 250051783,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1629408498
+    },
+    {
+        "content": "<p>rather, you want to say that the braiding is inverse to the <em>whiskering of the braiding</em> by the functor swap : C × C → C × C</p>",
+        "id": 250051857,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1629408556
+    },
+    {
+        "content": "<p>so it's an \"involution\" <em>riding on</em> the actual involution swap : C × C → C × C</p>",
+        "id": 250051873,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1629408577
+    },
+    {
+        "content": "<p>im fine with this so far, but...</p>",
+        "id": 250051883,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1629408586
+    },
+    {
+        "content": "<p>consider the notion of a \"contravariant involution\". formally speaking, this clearly suffers from the same issue as calling a symmetry an \"involution\"—a contravariant \"endofunctor\" is not truly an endofunctor at all</p>",
+        "id": 250052029,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1629408661
+    },
+    {
+        "content": "<p>so when i'm confronted with a functor F : C^op → C and told that it is an \"involution\", i'm tempted to seek an actual involution happening at a higher level, which F is an \"rides on\" to be an involution</p>",
+        "id": 250052093,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1629408718
+    },
+    {
+        "content": "<p>the clear candidate is -^op...</p>",
+        "id": 250052142,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1629408730
+    },
+    {
+        "content": "<p>...but ^op isn't an involution either!</p>",
+        "id": 250052150,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1629408736
+    },
+    {
+        "content": "<p>-^op is not Cat → Cat, it's Cat^co → Cat!</p>",
+        "id": 250052164,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1629408749
+    },
+    {
+        "content": "<p>...but <em>it too</em> seems to clearly be \"an involution\"...</p>",
+        "id": 250052190,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1629408768
+    },
+    {
+        "content": "<p>i suppose you could say that it is riding on -^co... but <em>that</em> isn't an involution either!</p>",
+        "id": 250052219,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1629408785
+    },
+    {
+        "content": "<p>so at every level you have something \"involutive\", but you can never actually phrase that property as \"inverse to a 'shifted' version of itself by a higher-level Actual Involution\", because the higher-level thing is never an actual involution either!</p>",
+        "id": 250052293,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1629408834
+    },
+    {
+        "content": "<p>you can escape by considering -^op as only an endofunctor on the <em>1-category</em> Cat → Cat, but that seems like a cop-out somehow?</p>",
+        "id": 250052387,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1629408866
+    },
+    {
+        "content": "<p>...anyway, like i said, i don't have a specific question, but this is just bothering me</p>",
+        "id": 250052407,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1629408879
+    },
+    {
+        "content": "<p>does anyone have, like, any coherent thoughts on this that might make me less bothered about this?</p>",
+        "id": 250052446,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1629408907
+    },
+    {
+        "content": "<p>I think I was the one who mentioned this \"riding\" idea - it's a phrase due to James Dolan, and connected to the microcosm principle.   It happens a lot.</p>",
+        "id": 250056651,
+        "sender_full_name": "John Baez",
+        "timestamp": 1629411697
+    },
+    {
+        "content": "<p>For example, what's a monoid?  It's a thing you can define in any monoidal category.  But what's a monoidal category?  Well, it's like a monoid in Cat... really it's a <em>weak</em> monoid in Cat, and you can define this sort of thing in any monoidal 2-category.  And so on.</p>",
+        "id": 250056746,
+        "sender_full_name": "John Baez",
+        "timestamp": 1629411780
+    },
+    {
+        "content": "<p>Or: how do you think of \"binary product\" as a functor on a category <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>C</mi></mrow><annotation encoding=\"application/x-tex\">C</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.07153em;\">C</span></span></span></span>?    Well, it's a functor from <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>C</mi><mo>×</mo><mi>C</mi></mrow><annotation encoding=\"application/x-tex\">C \\times C</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.76666em;vertical-align:-0.08333em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.07153em;\">C</span><span class=\"mspace\" style=\"margin-right:0.2222222222222222em;\"></span><span class=\"mbin\">×</span><span class=\"mspace\" style=\"margin-right:0.2222222222222222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.07153em;\">C</span></span></span></span> to <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>C</mi></mrow><annotation encoding=\"application/x-tex\">C</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.07153em;\">C</span></span></span></span>, where <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>×</mo></mrow><annotation encoding=\"application/x-tex\">\\times</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.66666em;vertical-align:-0.08333em;\"></span><span class=\"mord\">×</span></span></span></span> is the binary product in Cat!</p>",
+        "id": 250056952,
+        "sender_full_name": "John Baez",
+        "timestamp": 1629411925
+    },
+    {
+        "content": "<p>And so on.</p>",
+        "id": 250056961,
+        "sender_full_name": "John Baez",
+        "timestamp": 1629411933
+    },
+    {
+        "content": "<p>But I guess what's bugging you about \"op\" is that it gets a bit more twisted each time you go up a level.</p>",
+        "id": 250056979,
+        "sender_full_name": "John Baez",
+        "timestamp": 1629411957
+    },
+    {
+        "content": "<p>I don't have anything to make you less bothered by this, except: it's not so surprising, \"op\" is an inherently twisty concept.</p>",
+        "id": 250057070,
+        "sender_full_name": "John Baez",
+        "timestamp": 1629412020
+    },
+    {
+        "content": "<p>It doesn't seem like there is any legitimate circularity here though.  All of these concepts can be defined without reference to the higher versions, but it just puts things in context to consider the higher versions.</p>",
+        "id": 250058540,
+        "sender_full_name": "Fawzi Hreiki",
+        "timestamp": 1629413360
+    },
+    {
+        "content": "<p>Either you have to pick some level to stop at and just axiomatise (which will depend on your specific uses), or maybe there is some sort of stabilising effect which happens when you pass all the way to <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"normal\">∞</mi></mrow><annotation encoding=\"application/x-tex\">\\infty</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.43056em;vertical-align:0em;\"></span><span class=\"mord\">∞</span></span></span></span> (however you end up axiomatising that).</p>",
+        "id": 250058768,
+        "sender_full_name": "Fawzi Hreiki",
+        "timestamp": 1629413590
+    },
+    {
+        "content": "<p>FWIW, my paper <a href=\"http://tac.mta.ca/tac/volumes/33/5/33-05abs.html\">Contravariance through enrichment</a> includes a notion of \"contravariance relative to a group action\".  If you go all the way to <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>ω</mi></mrow><annotation encoding=\"application/x-tex\">\\omega</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.43056em;vertical-align:0em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.03588em;\">ω</span></span></span></span>-categories, with a duality action by <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"false\">(</mo><mi mathvariant=\"double-struck\">Z</mi><mi mathvariant=\"normal\">/</mi><mn>2</mn><msup><mo stretchy=\"false\">)</mo><mi>ω</mi></msup></mrow><annotation encoding=\"application/x-tex\">(\\mathbb{Z}/2)^\\omega</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mopen\">(</span><span class=\"mord mathbb\">Z</span><span class=\"mord\">/2</span><span class=\"mclose\"><span class=\"mclose\">)</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.664392em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathnormal mtight\" style=\"margin-right:0.03588em;\">ω</span></span></span></span></span></span></span></span></span></span></span>, then at least you can phrase the notion of involution as relative to <em>itself</em> rather than to some \"higher\" version of itself.</p>",
+        "id": 250065828,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1629420211
+    },
+    {
+        "content": "<p>Alternatively, you can consider <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"false\">(</mo><mo>−</mo><msup><mo stretchy=\"false\">)</mo><mrow><mi mathvariant=\"normal\">o</mi><mi mathvariant=\"normal\">p</mi></mrow></msup></mrow><annotation encoding=\"application/x-tex\">(-)^{\\rm op}</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mopen\">(</span><span class=\"mord\">−</span><span class=\"mclose\"><span class=\"mclose\">)</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.664392em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\"><span class=\"mord mathrm mtight\">op</span></span></span></span></span></span></span></span></span></span></span></span></span> as an involution of the (2,1)-category Cat, which at least isn't evil, even if it's not maximally satisfying.</p>",
+        "id": 250065885,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1629420263
+    }
+]

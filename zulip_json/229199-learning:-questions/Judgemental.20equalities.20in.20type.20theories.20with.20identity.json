@@ -1,0 +1,32 @@
+[
+    {
+        "content": "<p>This question regards dependent type theories that include identity types. Once an identity type is introduced, it is not clear to me what the full purpose of judgemental equalities in type theory is. I can see that it is important to have a judgement that asserts that the result of certain syntactical problems like substitutions. However, what I would like to understand better is why judgemental equalities appear in the computation rules defining types, with my concern being that doing so forces a kind of semantic rather than syntactic strictness. Can anybody shed some light on this?</p>",
+        "id": 209317291,
+        "sender_full_name": "Bar Roytman",
+        "timestamp": 1599501187
+    },
+    {
+        "content": "<p>1) Are you comfortable with any implementations of dependent type theory? I think the use of judgemental equality in type checking is good motivation for it.<br>\n2) There exists _weak type theory_, which does what you propose (for a reference, IIRC Théo Winterhalter is a name you should look for). Specifically, each computation rule is an axiom whose type is the fitting identity type. There are also some extra congruence rules, which are needed as more constructs are introduced. A difficulty with this approach is that the definition of the identity type is no longer self-contained – the identity type can be introduced by <code>refl</code>, but also by whatever axioms came from the types we introduced later. Furthermore, we're going to want a computation rule for each of these new axioms (for when they meet the eliminator), which must be in the form of yet more axioms.</p>\n<p>Seen this way, judgemental equality is a way of avoiding interdependence of identity types and the other type formers. A priori, asserting a judgemental equality is quite similar to asserting an identity axiom, but canonicity for judgemental equality (the fact that terms can be reduced to a normal form via judgemental equalities) gives a canonical strategy for how to extend existing computation rules in the presence of unknown terms.</p>",
+        "id": 209320617,
+        "sender_full_name": "James Wood",
+        "timestamp": 1599504498
+    },
+    {
+        "content": "<p>Thanks for your nice answer, James! This helps but don't quite understand everything.</p>\n<p>1) Unfortunately, I am not particularly comfortable yet with implementations, but I can imagine type checking is useful. However, unless I am misunderstanding something, type checking seems to only become an interesting problem when judgemental equality is already present since a term would get very long (which is a drawback) but store information about its entire construction.<br>\n2) This weak type theory is good to know about. It would also be interesting to have such a theory with a one-way \"simplification\" type as the notion of computation suggests. I think I understand the interdependence problem you are pointing to but I am not sure what you meant by \"canonical strategy\". I am imagining that I applied an elimination rule to a term not formed by an introductory rule and am guessing that there may be a way to rewrite that term.</p>",
+        "id": 209323745,
+        "sender_full_name": "Bar Roytman",
+        "timestamp": 1599507842
+    },
+    {
+        "content": "<p>In implementations of intensional type theory, judgemental equality acts as a form of proof automation. In this role, you have it right in that it avoids having to make very long proof terms. Arguably, checking is still easy enough even with judgemental computation rules, though as you say, it becomes a little less syntax-directed. There are lots of harder things involved in checking, say, Agda programs which aren't really visible in standard definitions of type theories (unification, implicit arguments, pattern matching, termination checking, &amp;c).</p>\n<p>All I can really say about judgemental equality being symmetric is that it seems that people make it work. A standard approach is to give the name “syntax” to the collection of terms <em>quotiented by judgemental equality</em>, after which point there is no place for directedness. The need for normalisation/canonicity implicitly requires some direction to computation rules, but usually that doesn't come up in the proofs because usually normalisation proofs are done in the normalisation-by-evaluation style, which first works out the normal form, then justifies it with judgemental equalities. On the other hand, non-symmetric identity types (hom types) have been tried out in <em>directed (homotopy) type theory</em>.</p>\n<p>Perhaps what I said towards the end of my last message is not so relevant. I was indeed referring to how you can eliminate a non-introduction form expression by normalising the expression until it's of the required form. But also, I don't think there's any such need for a particular normalisation strategy in weak type theory, because the terms will always encode all the information.</p>",
+        "id": 209331064,
+        "sender_full_name": "James Wood",
+        "timestamp": 1599517466
+    },
+    {
+        "content": "<p><span class=\"user-mention\" data-user-id=\"281710\">@Bar Roytman</span> <br>\nI might have some examples in context of proof assistant systems. </p>\n<p>suppose <code>proof  : Prop</code> is a judgment . <br>\nthen what is the proof <code>p</code>  of  <code>p  : A x B -&gt; C</code>  ? </p>\n<p>Without Judgmental Equality this term could be solved to a proof term <code>λ(a,b). f a</code> . <br>\nHowever it might be much smarter if the proof term is <code>λp. f (fst a)</code> . <br>\nI think the difference is hidden in the proof tree. <br>\nThe former proof and the latter proof have different proof trees ( i.e. different type checking trees ) .</p>",
+        "id": 209475738,
+        "sender_full_name": "GhaS Shee",
+        "timestamp": 1599632923
+    }
+]

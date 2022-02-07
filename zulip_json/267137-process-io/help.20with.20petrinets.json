@@ -1,0 +1,20 @@
+[
+    {
+        "content": "<p>Early disco partygoer here with limited knowledge of petrinets, wiring diagrams or category theory.</p>\n<p>Say there is a transition <code>g</code> that just needs to know that place <code>B</code> is occupied in order to be enabled. But it does not need to \"consume\" <code>B</code> permanently. </p>\n<p>What is the best way to represent this?</p>\n<p>(1)</p>\n<div class=\"codehilite\"><pre><span></span><code>f: A -&gt; B.\ng: B -&gt; C B.        ;; uses B and returns it back\nh: B -&gt; D.           ;; consumes B\n</code></pre></div>\n<p>Mostly works but in this case<code>g</code> can be called many times, producing many <code>C</code> and <code>h</code>may never called. If <code>g</code> could be called only once this would be good. </p>\n<p>And this problem can be fixed by creating a new place <code>Once</code> and initializing it with 1 token:</p>\n<div class=\"codehilite\"><pre><span></span><code>f: A -&gt; B.\ng: B Once -&gt; C B.        ;; uses B and returns it back\nh: B -&gt; D.                       ;; consumes B\n</code></pre></div>\n<p>This works good</p>\n<p>(2)</p>\n<div class=\"codehilite\"><pre><span></span><code>f: A -&gt; B.\ncopy: B -&gt; B0 B1. ;; specialize types\ng: B0 -&gt; C.\nh: B1 -&gt; D.\n</code></pre></div>\n<p>always work but verbose -- make petrinets large, very quick</p>\n<p>(3)</p>\n<div class=\"codehilite\"><pre><span></span><code>f: A -&gt; B B.       ;; creates 2 tokens\ng: B -&gt; C.\nh: B -&gt; D.\n</code></pre></div>\n<p>weird because <code>h</code> (or <code>g</code>) can be called twice</p>",
+        "id": 218945640,
+        "sender_full_name": "zkao",
+        "timestamp": 1607191216
+    },
+    {
+        "content": "<p>You want to avoid case 1 because it makes the state space infinite as you noted.<br>\nEssentially you would need to copy, and 2 or 3 is therefor better.<br>\nThere are subtleties, like which combination of <code>g;h</code>, <code>h;g</code>, <code>h;h</code>, <code>g;g</code>  can you fire?</p>\n<div class=\"codehilite\"><pre><span></span><code>1 = h or g;h or g;g;h or g;h;g;g;g etc\n1&#39; = h or g;h (with Once)\n2 = g;h or h;g\n</code></pre></div>\n<p>What do you want the behavior to be? Can you explain the use case here, to see if there is another way to deal with it?</p>",
+        "id": 219190474,
+        "sender_full_name": "Jelle Herold",
+        "timestamp": 1607422707
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"365296\">zkao</span> <a href=\"#narrow/stream/267137-process-io/topic/help.20with.20petrinets/near/218945640\">said</a>:</p>\n<blockquote>\n<p>Early disco partygoer here with limited knowledge of petrinets, wiring diagrams or category theory.</p>\n<p>Say there is a transition <code>g</code> that just needs to know that place <code>B</code> is occupied in order to be enabled. But it does not need to \"consume\" <code>B</code> permanently. </p>\n</blockquote>\n<p>There's a way to represent this as a guarded net on a particularly \"strange\" semantics. We are writing a paper about it. Eventually this will be implemented in the software one day. For now I'd follow <span class=\"user-mention\" data-user-id=\"277920\">@Jelle Herold</span> 's suggestion, he has great experience in modelling all sorts of stuff using nets <span aria-label=\"smile\" class=\"emoji emoji-1f642\" role=\"img\" title=\"smile\">:smile:</span></p>",
+        "id": 219197857,
+        "sender_full_name": "Fabrizio Genovese",
+        "timestamp": 1607428307
+    }
+]

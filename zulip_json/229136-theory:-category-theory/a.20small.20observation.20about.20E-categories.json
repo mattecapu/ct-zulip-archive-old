@@ -1,0 +1,50 @@
+[
+    {
+        "content": "<p>In set-based category theory, trying to fit all (small) categories into a (large) <em>category</em> doesn't work so well, in that  you end up with the wrong equality on functors. It works 'better' to <a href=\"https://ncatlab.org/nlab/show/Cat\">consider this as a 2-category</a>, so that one can use natural isomorphisms as the 'correct' notion of functor equivalence.</p>\n<p>But in E-Category theory, this is <a href=\"https://agda.github.io/agda-categories/Categories.Category.Instance.Cats.html\">not needed!</a>. In other words, the (large) E-category of (small) E-categories works, there is no need to go to 2-categories!</p>\n<p>There is a different bonus in the above formalization with explicit universe polymorphism: one can see exactly how large the result ends up being. The 'diversity' of universes gets erased, and then <strong>only</strong> the object universe gets bumped up a size. </p>\n<p>It still ends up being Cartesian closed (see <code>Cats-CCC</code> at the bottom of <a href=\"http://this%20page\">https://agda.github.io/agda-categories/Categories.Category.Instance.Properties.Cats.html</a>) <strong>but</strong> only when <em>all 3 universes coincide</em>. Nevertheless \"extremely large\" collections of categories are still CCC.</p>",
+        "id": 250220141,
+        "sender_full_name": "Jacques Carette",
+        "timestamp": 1629555938
+    },
+    {
+        "content": "<p>What do you mean by \"the wrong equality on functors\"?</p>",
+        "id": 250233334,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1629574366
+    },
+    {
+        "content": "<p>Extensional equality. Being 'exactly equal' in both components.</p>",
+        "id": 250240775,
+        "sender_full_name": "Jacques Carette",
+        "timestamp": 1629585368
+    },
+    {
+        "content": "<p>I would argue that that's not really an analogue of Cat but rather of Ho(Cat), the category (which is a sensible 1-category even in set-based category theory) whose morphisms are natural isomorphism classes of functors.</p>",
+        "id": 250244166,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1629590442
+    },
+    {
+        "content": "<p>Note that Ho(Cat) is also CCC even in set-based category theory, but it fails to have other good properties like the existence of limits and colimits.  I would expect the same is true for your E-category.</p>",
+        "id": 250244188,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1629590512
+    },
+    {
+        "content": "<p>Oh, I was wondering what Jacques was talking about... I guessed he meant Ho(Cat).</p>",
+        "id": 250244801,
+        "sender_full_name": "John Baez",
+        "timestamp": 1629591543
+    },
+    {
+        "content": "<p>And now I have a name for it, thanks. And I'll have to investigate limits and colimits for it, it hasn't been done yet. Any pointers to the literature as to what the obstruction is likely to be?</p>",
+        "id": 250281702,
+        "sender_full_name": "Jacques Carette",
+        "timestamp": 1629649116
+    },
+    {
+        "content": "<p><a href=\"https://ncatlab.org/nlab/show/Ho%28Cat%29#OtherLimits\">https://ncatlab.org/nlab/show/Ho%28Cat%29#OtherLimits</a></p>",
+        "id": 250290120,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1629661593
+    }
+]

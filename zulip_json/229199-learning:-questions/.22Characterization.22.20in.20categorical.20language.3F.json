@@ -1,0 +1,74 @@
+[
+    {
+        "content": "<p>For context, I'm interested in thinking about imaging using concepts from category theory.</p>\n<p>We can describe an image (say, a grid of intensity values) by specifying its intensity values. The more intensity values we know, the better we can describe the image. Similarly, we can partially characterize an unknown imaging target by bouncing ultrasound echoes off it from a few angles. A function can be described by how it acts on each element in its source set. A linear map can be described by how it acts on each basis vector in its source vector space. A vector can be described by how it maps under different linear mappings.</p>\n<p>The examples above illustrate the concept of partially characterizing something by looking at parts of it, or by observing the results of different measurements of it. Is there a categorical concept corresponding to this \"partial characterization\"? For example, one could imagine saying that an object <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>o</mi></mrow><annotation encoding=\"application/x-tex\">o</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.43056em;vertical-align:0em;\"></span><span class=\"mord mathnormal\">o</span></span></span></span> in a category is better characterized as we are told more about the morphisms from <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>o</mi></mrow><annotation encoding=\"application/x-tex\">o</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.43056em;vertical-align:0em;\"></span><span class=\"mord mathnormal\">o</span></span></span></span> or to <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>o</mi></mrow><annotation encoding=\"application/x-tex\">o</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.43056em;vertical-align:0em;\"></span><span class=\"mord mathnormal\">o</span></span></span></span>.</p>",
+        "id": 224141047,
+        "sender_full_name": "David Egolf",
+        "timestamp": 1611724044
+    },
+    {
+        "content": "<p>Sheaves could be what you're looking for. <a href=\"https://www.sciencedirect.com/science/article/pii/S156625351630207X?casa_token=AIUVBmgi8S4AAAAA:D6NnjcdFhFuQ4kJWEyKlQzdKqc_TiQ78gix2-_vb6TmfvKBTo1Jgl8azmGmQ2Ta0kaO0YPc\">This paper</a> by Robinson explicitly talks about images, if I recall correctly.</p>",
+        "id": 224154044,
+        "sender_full_name": "Matteo Capucci (he/him)",
+        "timestamp": 1611737707
+    },
+    {
+        "content": "<p>There's also the concept of <a href=\"https://ncatlab.org/nlab/show/separator\">generator</a> (or separator, in nLabian) which captures what you described for set maps and vector spaces maps.</p>",
+        "id": 224154192,
+        "sender_full_name": "Matteo Capucci (he/him)",
+        "timestamp": 1611737820
+    },
+    {
+        "content": "<p>Well, an object of a category is better characterised as we are told more about the morphisms from any other object to it. It's called \"Yoneda lemma\"</p>",
+        "id": 224155072,
+        "sender_full_name": "fosco",
+        "timestamp": 1611738441
+    },
+    {
+        "content": "<p>Maybe the concept of a <a href=\"https://ncatlab.org/nlab/show/dense+subcategory\">dense subcategory</a> could help. The idea is that all the objects in the category are constructed by glueing together some basic ones (in a canonical way).</p>",
+        "id": 224157570,
+        "sender_full_name": "Fawzi Hreiki",
+        "timestamp": 1611740041
+    },
+    {
+        "content": "<p>For example, the one point set is dense in the category of sets (since a set is just a bunch of points next to each other).</p>",
+        "id": 224158032,
+        "sender_full_name": "Fawzi Hreiki",
+        "timestamp": 1611740331
+    },
+    {
+        "content": "<p>Thanks everyone. Those all look interesting, in particular the paper by Robinson.</p>\n<p><span class=\"user-mention silent\" data-user-id=\"282822\">fosco</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/.22Characterization.22.20in.20categorical.20language.3F/near/224155072\">said</a>:</p>\n<blockquote>\n<p>Well, an object of a category is better characterised as we are told more about the morphisms from any other object to it. It's called \"Yoneda lemma\"</p>\n</blockquote>\n<p>I have (sadly) yet to fully follow any presentation of the Yoneda lemma. My understanding, though, was that it talks about totally characterizing an object once we know all the morphisms to it. Does it also describe how this characterization develops when we are given some partial information about the morphisms to it?</p>",
+        "id": 224206408,
+        "sender_full_name": "David Egolf",
+        "timestamp": 1611764603
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"341237\">Fawzi Hreiki</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/.22Characterization.22.20in.20categorical.20language.3F/near/224157570\">said</a>:</p>\n<blockquote>\n<p>Maybe the concept of a <a href=\"https://ncatlab.org/nlab/show/dense+subcategory\">dense subcategory</a> could help. The idea is that all the objects in the category are constructed by glueing together some basic ones (in a canonical way).</p>\n</blockquote>\n<p>I noticed there are no examples on that nLab page. You should add a few <span aria-label=\"smile\" class=\"emoji emoji-1f642\" role=\"img\" title=\"smile\">:smile:</span></p>",
+        "id": 224207882,
+        "sender_full_name": "Joe Moeller",
+        "timestamp": 1611765199
+    },
+    {
+        "content": "<p>There is also <a href=\"https://ncatlab.org/nlab/show/dense+functor\">this page</a> which has the following fact: if <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>T</mi></mrow><annotation encoding=\"application/x-tex\">T</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.13889em;\">T</span></span></span></span> is an algebraic theory which has a presentation with operations of at most arity <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>n</mi></mrow><annotation encoding=\"application/x-tex\">n</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.43056em;vertical-align:0em;\"></span><span class=\"mord mathnormal\">n</span></span></span></span> and if <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"script\">A</mi></mrow><annotation encoding=\"application/x-tex\">\\mathscr{A}</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.7em;vertical-align:0em;\"></span><span class=\"mord\"><span class=\"mord mathscr\" style=\"margin-right:0.22925em;\">A</span></span></span></span></span> is its category of models, then the full subcategory of <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"script\">A</mi></mrow><annotation encoding=\"application/x-tex\">\\mathscr{A}</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.7em;vertical-align:0em;\"></span><span class=\"mord\"><span class=\"mord mathscr\" style=\"margin-right:0.22925em;\">A</span></span></span></span></span> on the free <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>T</mi></mrow><annotation encoding=\"application/x-tex\">T</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.13889em;\">T</span></span></span></span>-algebra on <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>n</mi></mrow><annotation encoding=\"application/x-tex\">n</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.43056em;vertical-align:0em;\"></span><span class=\"mord mathnormal\">n</span></span></span></span> generators is dense.  So <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msup><mi>K</mi><mn>2</mn></msup></mrow><annotation encoding=\"application/x-tex\">K^2</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8141079999999999em;vertical-align:0em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.07153em;\">K</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.8141079999999999em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">2</span></span></span></span></span></span></span></span></span></span></span> is dense in the category of <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>K</mi></mrow><annotation encoding=\"application/x-tex\">K</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.07153em;\">K</span></span></span></span>-vector spaces, etc..</p>",
+        "id": 224214385,
+        "sender_full_name": "Fawzi Hreiki",
+        "timestamp": 1611767759
+    },
+    {
+        "content": "<p>So that basically covers most examples from algebra.</p>",
+        "id": 224214615,
+        "sender_full_name": "Fawzi Hreiki",
+        "timestamp": 1611767853
+    },
+    {
+        "content": "<p>The density theorem states that the representables in a presheaf category are dense.</p>",
+        "id": 224214773,
+        "sender_full_name": "Fawzi Hreiki",
+        "timestamp": 1611767913
+    },
+    {
+        "content": "<p>I'm pretty sure that the simplices are dense in the category of simplicial complexes. The same kind of thing should be true for other categories of combinatorial spaces (delta complexes, CW complexes, etc..) but I haven't checked.</p>",
+        "id": 224215368,
+        "sender_full_name": "Fawzi Hreiki",
+        "timestamp": 1611768178
+    }
+]

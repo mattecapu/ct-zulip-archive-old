@@ -1,0 +1,86 @@
+[
+    {
+        "content": "<p>Does anybody know about an adjunction between SMC = [symmetric monoidal categories, symmetric monoidal functors] and SMC_lax = [symmetric monoidal categories, lax symmetric monoidal functors]? I don't have much intuition for adjoints of inclusions of wide subcategories.</p>",
+        "id": 219244753,
+        "sender_full_name": "Joe Moeller",
+        "timestamp": 1607452698
+    },
+    {
+        "content": "<p>There's a left adjoint to the inclusion of SMC into SMC_lax, by Theorem 3.13 of <a href=\"https://www.sciencedirect.com/science/article/pii/0022404989901606\">Two-dimensional monad theory</a> using the 2-monad for symmetric monoidal categories.</p>",
+        "id": 219245880,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1607453259
+    },
+    {
+        "content": "<p>Nice, this is perfect. Do you have any intuition for what the left adjoint should do?</p>",
+        "id": 219246146,
+        "sender_full_name": "Joe Moeller",
+        "timestamp": 1607453378
+    },
+    {
+        "content": "<p>Adds formal inverses to the lax arrows?</p>",
+        "id": 219246519,
+        "sender_full_name": "Dan Doel",
+        "timestamp": 1607453582
+    },
+    {
+        "content": "<p><em>Edit:</em> That would be my intuition for a right adjoint, but it's not so clear this is accurate for a left adjoint.</p>",
+        "id": 219246714,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1607453673
+    },
+    {
+        "content": "<p>I think it's probably non-identity on objects.</p>",
+        "id": 219246732,
+        "sender_full_name": "Joe Moeller",
+        "timestamp": 1607453685
+    },
+    {
+        "content": "<p>I'll use U for SMC-&gt;SMC_lax, which is identity on objects, and F for its left adjoint. We should get that lax monoidal functors X-&gt;UY=Y are the same as monoidal functors FX-&gt;Y. So I don't think it would do much for it to just be identity on objects and \"fix\" the morphisms.</p>",
+        "id": 219248023,
+        "sender_full_name": "Joe Moeller",
+        "timestamp": 1607454298
+    },
+    {
+        "content": "<p>I've not thought about this before, so this may be nonsense, but here's an idea. Let <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>L</mi><mo stretchy=\"false\">(</mo><mi mathvariant=\"bold\">C</mi><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">L(\\mathbf C)</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord mathnormal\">L</span><span class=\"mopen\">(</span><span class=\"mord mathbf\">C</span><span class=\"mclose\">)</span></span></span></span> contain <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"bold\">C</mi></mrow><annotation encoding=\"application/x-tex\">\\mathbf C</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.68611em;vertical-align:0em;\"></span><span class=\"mord mathbf\">C</span></span></span></span> and also contain another monoidal structure <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>⊙</mo></mrow><annotation encoding=\"application/x-tex\">\\odot</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.66666em;vertical-align:-0.08333em;\"></span><span class=\"mord\">⊙</span></span></span></span>, then we can add a morphism <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mo>⊗</mo><mi>B</mi><mo>→</mo><mi>A</mi><mo>⊙</mo><mi>B</mi></mrow><annotation encoding=\"application/x-tex\">A \\otimes B \\to A \\odot B</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.76666em;vertical-align:-0.08333em;\"></span><span class=\"mord mathnormal\">A</span><span class=\"mspace\" style=\"margin-right:0.2222222222222222em;\"></span><span class=\"mbin\">⊗</span><span class=\"mspace\" style=\"margin-right:0.2222222222222222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.05017em;\">B</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">→</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.76666em;vertical-align:-0.08333em;\"></span><span class=\"mord mathnormal\">A</span><span class=\"mspace\" style=\"margin-right:0.2222222222222222em;\"></span><span class=\"mbin\">⊙</span><span class=\"mspace\" style=\"margin-right:0.2222222222222222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.05017em;\">B</span></span></span></span> for each pair of objects in <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"bold\">C</mi></mrow><annotation encoding=\"application/x-tex\">\\mathbf C</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.68611em;vertical-align:0em;\"></span><span class=\"mord mathbf\">C</span></span></span></span>. Then a strong monoidal functor <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>F</mi><mo>:</mo><mi>L</mi><mo stretchy=\"false\">(</mo><mi mathvariant=\"bold\">C</mi><mo stretchy=\"false\">)</mo><mo>→</mo><mi mathvariant=\"bold\">D</mi></mrow><annotation encoding=\"application/x-tex\">F : L(\\mathbf C) \\to \\mathbf D</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.13889em;\">F</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">:</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord mathnormal\">L</span><span class=\"mopen\">(</span><span class=\"mord mathbf\">C</span><span class=\"mclose\">)</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">→</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.68611em;vertical-align:0em;\"></span><span class=\"mord mathbf\">D</span></span></span></span> sends <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>F</mi><mo stretchy=\"false\">(</mo><mi>A</mi><mo stretchy=\"false\">)</mo><mo>⊗</mo><mi>F</mi><mo stretchy=\"false\">(</mo><mi>B</mi><mo stretchy=\"false\">)</mo><mo>≅</mo><mi>F</mi><mo stretchy=\"false\">(</mo><mi>A</mi><mo>⊗</mo><mi>B</mi><mo stretchy=\"false\">)</mo><mo>→</mo><mi>F</mi><mo stretchy=\"false\">(</mo><mi>A</mi><mo>⊙</mo><mi>B</mi><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">F(A) \\otimes F(B) \\cong F(A \\otimes B) \\to F(A \\odot B)</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.13889em;\">F</span><span class=\"mopen\">(</span><span class=\"mord mathnormal\">A</span><span class=\"mclose\">)</span><span class=\"mspace\" style=\"margin-right:0.2222222222222222em;\"></span><span class=\"mbin\">⊗</span><span class=\"mspace\" style=\"margin-right:0.2222222222222222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.13889em;\">F</span><span class=\"mopen\">(</span><span class=\"mord mathnormal\" style=\"margin-right:0.05017em;\">B</span><span class=\"mclose\">)</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">≅</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.13889em;\">F</span><span class=\"mopen\">(</span><span class=\"mord mathnormal\">A</span><span class=\"mspace\" style=\"margin-right:0.2222222222222222em;\"></span><span class=\"mbin\">⊗</span><span class=\"mspace\" style=\"margin-right:0.2222222222222222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.05017em;\">B</span><span class=\"mclose\">)</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">→</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.13889em;\">F</span><span class=\"mopen\">(</span><span class=\"mord mathnormal\">A</span><span class=\"mspace\" style=\"margin-right:0.2222222222222222em;\"></span><span class=\"mbin\">⊙</span><span class=\"mspace\" style=\"margin-right:0.2222222222222222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.05017em;\">B</span><span class=\"mclose\">)</span></span></span></span>, which simulates the action of a lax monoidal functor to some extent. The unit would work in the same way. Maybe this can be made more precise to properly characterise the left adjoint.</p>",
+        "id": 219250375,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1607455564
+    },
+    {
+        "content": "<p>(The left adjoint is called the \"lax morphism classifier\" if that helps to search for examples.)</p>",
+        "id": 219250488,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1607455634
+    },
+    {
+        "content": "<p>I have some particular cases in mind that I'll have to check that against, but it sounds good so far.</p>",
+        "id": 219252159,
+        "sender_full_name": "Joe Moeller",
+        "timestamp": 1607456413
+    },
+    {
+        "content": "<p>I see. The left adjoint needs to make a symmetric thing act like a directed thing, not vice versa.</p>",
+        "id": 219295825,
+        "sender_full_name": "Dan Doel",
+        "timestamp": 1607486641
+    },
+    {
+        "content": "<p>I was thinking about this, and I realized the first thing I said doesn't even really make sense. Like, if that's how the right adjoint acts, you still can't just modify <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>D</mi></mrow><annotation encoding=\"application/x-tex\">D</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.02778em;\">D</span></span></span></span> by inverting the lax stuff for a <em>specific</em> functor. So, does a right adjoint just add formal inverses to every arrow, essentially?</p>",
+        "id": 219375050,
+        "sender_full_name": "Dan Doel",
+        "timestamp": 1607537432
+    },
+    {
+        "content": "<p>It seems, prima facie at least, that just adding inverses might not work, because then functors in <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mrow><mi mathvariant=\"sans-serif\">S</mi><mi mathvariant=\"sans-serif\">M</mi><mi mathvariant=\"sans-serif\">C</mi></mrow><mo stretchy=\"false\">(</mo><mi>C</mi><mo separator=\"true\">,</mo><mi>K</mi><mi>D</mi><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">\\mathsf{SMC}(C,KD)</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord\"><span class=\"mord mathsf\">S</span><span class=\"mord mathsf\">M</span><span class=\"mord mathsf\">C</span></span><span class=\"mopen\">(</span><span class=\"mord mathnormal\" style=\"margin-right:0.07153em;\">C</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.07153em;\">K</span><span class=\"mord mathnormal\" style=\"margin-right:0.02778em;\">D</span><span class=\"mclose\">)</span></span></span></span> (<span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>K</mi></mrow><annotation encoding=\"application/x-tex\">K</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.07153em;\">K</span></span></span></span> being the proposed 'add formal inverses') could actually be oplax instead of lax (or some kind of mix where the tensor part is oplax but the unit is lax, or vice versa).</p>",
+        "id": 219376533,
+        "sender_full_name": "Dan Doel",
+        "timestamp": 1607538055
+    },
+    {
+        "content": "<p>I think if a right adjoint existed, it'd have to do something like add inverses for every possible functor. But as you say, this would seem to add too many morphisms to recover an exact correspondence with lax functors: there's nothing stopping you from mapping to the formal inverses that are irrelevant for any given functor. So there should be more functors to this category with formal inverses than there are lax functors. I think, then, a right adjoint is unlikely to exist in general.</p>",
+        "id": 219377007,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1607538271
+    }
+]

@@ -1,0 +1,66 @@
+---
+layout: archive
+title: Zulip Chat Archive
+permalink: /stream/229199-learning:-questions/topic/Approximate.20Composition.html
+---
+
+<h2>Stream: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/index.html">learning: questions</a></h2>
+<h3>Topic: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/Approximate.20Composition.html">Approximate Composition</a></h3>
+
+<hr>
+
+<base href="https://categorytheory.zulipchat.com/">
+
+<head><link href="https://mattecapu.github.io/ct-zulip-archive/style.css" rel="stylesheet"></head>
+
+{% raw %}
+
+<a name="193674842"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/Approximate%20Composition/near/193674842" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Sam Tenka <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/Approximate.20Composition.html#193674842">(Apr 11 2020 at 19:11)</a>:</h4>
+<p>(This is a type B question in <span class="user-mention" data-user-id="275901">@Jules Hedges</span> 's classification). <br>
+Categories can model distance or (approximate equality), e.g. with (asym)metric spaces as categories enriched over Cost.  But there, still, composition works "on the nose".  It seems (to borrow <span class="user-mention" data-user-id="281710">@Bar Roytman</span> 's language) that category theory is great for clarifying the subtleties of <strong>sameness</strong> but that <strong>sameness</strong> is not the same as <strong>nearness</strong>.  Are there words I should google to see whether and how one can treat (approximate composition) categorically?</p>
+<p>Here are some examples where there seems to be approximate composition --- and still enough structure that it'd be nice and perhaps plausible to say general things about them:<br>
+<strong>A.</strong> The poset map from Integers to Rationals has a left adjoint Floor and a right adjoint Ceil.  Equipping the categories with addition as a monoidal structure, we find that Floor and Ceil are not monoidal.  But, (psychologically, to me), they <strong>almost</strong> are!  The problem is that Floor(0.6) + Floor(0.6) is different from Floor(0.6 + 0.6).<br>
+<strong>B.</strong> In floating point arithmetic, fuzzy-equality is not transitive.  But somehow numerical methods folks reason about floating point anyway!  It seems they do so using refinements of interval arithmetic, and from these abstract usefully compositional properties such as "backward stability".<br>
+<strong>C.</strong> Ideal springs compose: stiffnesses add in the parallel direction and softnesses add in the sequential direction.  But the transverse modes along physical springs don't compose like this: new and longer-wavelength vibration modes arise when one puts real springs in sequence.<br>
+<strong>D.</strong> Small + small is usually equal to small.  Is there a nice way to talk about this without having to measure and add actual numeric sizes?  This is very similar to (<strong>A</strong>).  Intuitively, there is an inverse or adjoint that actually is compositional.</p>
+
+
+
+<a name="193676792"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/Approximate%20Composition/near/193676792" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Gershom <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/Approximate.20Composition.html#193676792">(Apr 11 2020 at 19:57)</a>:</h4>
+<p>On A), note that iirc multiplication is monoidal, so you do have monoidal functors, just not the ones you were looking for. Here is another approach: Consider <code>floor</code> and <code>ceil</code>as "truncation" operators in the homotopy sense -- you're chopping off some digits. So you really have one operator per each choice of how many terminal digits to chop off. Now, of course the monoidal property fails because one needs to "carry the 1" up to the next digit. But at each level, you can only of course force an immediate change in the action on the next level, so there is a sense in which the carry operation obeys the cocycle condition. This was explored by Isaken in "A Cohomological Viewpoint on Elementary School Arithmetic" (discussed at <a href="https://ncatlab.org/nlab/show/carrying" title="https://ncatlab.org/nlab/show/carrying">https://ncatlab.org/nlab/show/carrying</a>) so perhaps what we really should be looking at is an adjoint to some family of cochain complexes.</p>
+<p>At first I thought "this is a fun kill a fly with a nuke triviality that doesn't get at what you're really looking for" but now I think... perhaps it does. I.e. when things don't compose exactly, you instead get a map into the 2-thing with the thing-that-should-be-on-the-nose at the first level and the "defect" in the second level, and soforth. So (co)-homology really is, or should be, a way to measure failure of things to compose.</p>
+<p>Entirely speculatively, I wonder if one could tabulate various "calculates up-to-n" for various n in a way that gives a sort of spectral sequence and look at the thing "wholemeal". In a sense, that's one way to understand what the applied algebraic topologists working in topological data analysis are doing.</p>
+
+
+
+<a name="193677029"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/Approximate%20Composition/near/193677029" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Sam Tenka <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/Approximate.20Composition.html#193677029">(Apr 11 2020 at 20:03)</a>:</h4>
+<p>I love this!  Thanks, <span class="user-mention" data-user-id="276650">@Gershom</span></p>
+
+
+
+<a name="193694369"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/Approximate%20Composition/near/193694369" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Soichiro Fujii <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/Approximate.20Composition.html#193694369">(Apr 12 2020 at 04:51)</a>:</h4>
+<p>This might be relevant:<br>
+Tholen, <a href="http://www.cs.ox.ac.uk/ACT2019/preproceedings/Walter%20Tholen%20Approximate%20composition%20(revised).pdf" title="http://www.cs.ox.ac.uk/ACT2019/preproceedings/Walter%20Tholen%20Approximate%20composition%20(revised).pdf">Approximate composition</a>. See <a href="https://www.youtube.com/watch?v=Hqb6wEG8pSM" title="https://www.youtube.com/watch?v=Hqb6wEG8pSM">here</a> for his presentation at ACT 2019.</p>
+<div class="youtube-video message_inline_image"><a data-id="Hqb6wEG8pSM" href="https://www.youtube.com/watch?v=Hqb6wEG8pSM" title="https://www.youtube.com/watch?v=Hqb6wEG8pSM"><img src="https://i.ytimg.com/vi/Hqb6wEG8pSM/default.jpg"></a></div>
+
+
+
+<a name="193704934"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/Approximate%20Composition/near/193704934" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Matteo Capucci <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/Approximate.20Composition.html#193704934">(Apr 12 2020 at 10:15)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="276650">Gershom</span> <a href="#narrow/stream/229199-learning.3A-basic.20questions/topic/Approximate.20Composition/near/193676792" title="#narrow/stream/229199-learning.3A-basic.20questions/topic/Approximate.20Composition/near/193676792">said</a>:</p>
+<blockquote>
+<p>On A), note that iirc multiplication is monoidal, so you do have monoidal functors, just not the ones you were looking for. Here is another approach: Consider <code>floor</code> and <code>ceil</code>as "truncation" operators in the homotopy sense -- you're chopping off some digits. So you really have one operator per each choice of how many terminal digits to chop off. Now, of course the monoidal property fails because one needs to "carry the 1" up to the next digit. But at each level, you can only of course force an immediate change in the action on the next level, so there is a sense in which the carry operation obeys the cocycle condition. This was explored by Isaken in "A Cohomological Viewpoint on Elementary School Arithmetic" (discussed at <a href="https://ncatlab.org/nlab/show/carrying" title="https://ncatlab.org/nlab/show/carrying">https://ncatlab.org/nlab/show/carrying</a>) so perhaps what we really should be looking at is an adjoint to some family of cochain complexes.</p>
+<p>At first I thought "this is a fun kill a fly with a nuke triviality that doesn't get at what you're really looking for" but now I think... perhaps it does. I.e. when things don't compose exactly, you instead get a map into the 2-thing with the thing-that-should-be-on-the-nose at the first level and the "defect" in the second level, and soforth. So (co)-homology really is, or should be, a way to measure failure of things to compose.</p>
+<p>Entirely speculatively, I wonder if one could tabulate various "calculates up-to-n" for various n in a way that gives a sort of spectral sequence and look at the thing "wholemeal". In a sense, that's one way to understand what the applied algebraic topologists working in topological data analysis are doing.</p>
+</blockquote>
+<p>Very very interesting take. Thanks!</p>
+
+
+
+{% endraw %}
+
+<hr><p>Last updated: Jan 30 2022 at 00:30 UTC</p>

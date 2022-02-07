@@ -1,0 +1,260 @@
+[
+    {
+        "content": "<p>Some promising approaches to automated equational reasoning for monoidal categories that I and others have been playing with  <a href=\"https://www.philipzucker.com/metatheory-progress/\">https://www.philipzucker.com/metatheory-progress/</a></p>",
+        "id": 229882056,
+        "sender_full_name": "Philip Zucker",
+        "timestamp": 1615480951
+    },
+    {
+        "content": "<p>This is really interesting! I had intended to experiment using Z3 for verifying diagrammatic proofs, so it's good to see someone has already tried. What kind of structures does Metatheory.jl support natively? Am I right in understanding you're trying to encode GATs into those structures (with partial success)?</p>",
+        "id": 229887868,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1615482823
+    },
+    {
+        "content": "<p>It is unclear to me exactly what Metatheory supports in theoretical terms. It does what it does. It's something like a rewrite system, something like the theory of uninterpreted functions. I put forward what a think is a correct method to encode GATs. but I am not 100% certain. I have not mechanized actually producing this encoding yet. I did it by hand.</p>",
+        "id": 229889731,
+        "sender_full_name": "Philip Zucker",
+        "timestamp": 1615483374
+    },
+    {
+        "content": "<p>I would have thought the \"right\" structure (at least from a theoretical point of view) would be generalised algebraic theories with rewrites, though I'm not sure if this translates across to e-graphs. You can encode structure like binding operators using generalised algebraic theories, which avoids having to describe more complex higher-order structures directly in e-graphs.</p>",
+        "id": 229890156,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1615483504
+    },
+    {
+        "content": "<p>You can encode binding using GATs? How?</p>",
+        "id": 229890262,
+        "sender_full_name": "Philip Zucker",
+        "timestamp": 1615483531
+    },
+    {
+        "content": "<p>As in the point free formulation of binding? <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mo>∑</mo><mi>i</mi></msub><mi>a</mi><mo stretchy=\"false\">(</mo><mi>j</mi><mo separator=\"true\">,</mo><mi>i</mi><mo stretchy=\"false\">)</mo><mi>b</mi><mo stretchy=\"false\">(</mo><mi>i</mi><mo separator=\"true\">,</mo><mi>k</mi><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\"> \\sum_i a(j,i) b(i,k)</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:1.0497100000000001em;vertical-align:-0.29971000000000003em;\"></span><span class=\"mop\"><span class=\"mop op-symbol small-op\" style=\"position:relative;top:-0.0000050000000000050004em;\">∑</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.16195399999999993em;\"><span style=\"top:-2.40029em;margin-left:0em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathnormal mtight\">i</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.29971000000000003em;\"><span></span></span></span></span></span></span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mord mathnormal\">a</span><span class=\"mopen\">(</span><span class=\"mord mathnormal\" style=\"margin-right:0.05724em;\">j</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mord mathnormal\">i</span><span class=\"mclose\">)</span><span class=\"mord mathnormal\">b</span><span class=\"mopen\">(</span><span class=\"mord mathnormal\">i</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.03148em;\">k</span><span class=\"mclose\">)</span></span></span></span> vs <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mo>⋅</mo><mi>B</mi></mrow><annotation encoding=\"application/x-tex\">A \\cdot B</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathnormal\">A</span><span class=\"mspace\" style=\"margin-right:0.2222222222222222em;\"></span><span class=\"mbin\">⋅</span><span class=\"mspace\" style=\"margin-right:0.2222222222222222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.05017em;\">B</span></span></span></span> Or something else?</p>",
+        "id": 229890303,
+        "sender_full_name": "Philip Zucker",
+        "timestamp": 1615483545
+    },
+    {
+        "content": "<p>You describe everything internally: so you have a type for \"contexts\", a type for \"types\", a type for \"terms\", etc. Then you have operations for extending contexts, etc. This is essentially the approach of \"type-theory-in-type-theory\", which uses quotient-inductive-inductive types (which are closely related to GATs).</p>",
+        "id": 229890544,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1615483604
+    },
+    {
+        "content": "<p>I think I see. You explicilty hold bound terms before a turnstile?</p>",
+        "id": 229890788,
+        "sender_full_name": "Philip Zucker",
+        "timestamp": 1615483680
+    },
+    {
+        "content": "<p>A <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>λ</mi></mrow><annotation encoding=\"application/x-tex\">\\lambda</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.69444em;vertical-align:0em;\"></span><span class=\"mord mathnormal\">λ</span></span></span></span>-abstraction operator would take a term in an extended context, for instance, and return a term in the non-extended context. E.g. something like <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"normal\">Γ</mi><mo>:</mo><mrow><mi mathvariant=\"sans-serif\">C</mi><mi mathvariant=\"sans-serif\">t</mi><mi mathvariant=\"sans-serif\">x</mi></mrow><mo separator=\"true\">,</mo><mi>t</mi><mo>:</mo><mrow><mi mathvariant=\"sans-serif\">T</mi><mi mathvariant=\"sans-serif\">m</mi></mrow><mo stretchy=\"false\">(</mo><mrow><mi mathvariant=\"sans-serif\">e</mi><mi mathvariant=\"sans-serif\">x</mi><mi mathvariant=\"sans-serif\">t</mi></mrow><mo stretchy=\"false\">(</mo><mi mathvariant=\"normal\">Γ</mi><mo stretchy=\"false\">)</mo><mo stretchy=\"false\">)</mo><mo>⊢</mo><mrow><mi mathvariant=\"sans-serif\">a</mi><mi mathvariant=\"sans-serif\">b</mi><mi mathvariant=\"sans-serif\">s</mi></mrow><mo stretchy=\"false\">(</mo><mi>t</mi><mo stretchy=\"false\">)</mo><mo>:</mo><mrow><mi mathvariant=\"sans-serif\">T</mi><mi mathvariant=\"sans-serif\">m</mi></mrow><mo stretchy=\"false\">(</mo><mi mathvariant=\"normal\">Γ</mi><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">\\Gamma : \\mathsf{Ctx}, t : \\mathsf{Tm}(\\mathsf{ext}(\\Gamma)) \\vdash \\mathsf{abs}(t) : \\mathsf{Tm}(\\Gamma)</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord\">Γ</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">:</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.8888799999999999em;vertical-align:-0.19444em;\"></span><span class=\"mord\"><span class=\"mord mathsf\">C</span><span class=\"mord mathsf\">t</span><span class=\"mord mathsf\">x</span></span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mord mathnormal\">t</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">:</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord\"><span class=\"mord mathsf\">T</span><span class=\"mord mathsf\">m</span></span><span class=\"mopen\">(</span><span class=\"mord\"><span class=\"mord mathsf\">e</span><span class=\"mord mathsf\">x</span><span class=\"mord mathsf\">t</span></span><span class=\"mopen\">(</span><span class=\"mord\">Γ</span><span class=\"mclose\">)</span><span class=\"mclose\">)</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">⊢</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord\"><span class=\"mord mathsf\">a</span><span class=\"mord mathsf\">b</span><span class=\"mord mathsf\">s</span></span><span class=\"mopen\">(</span><span class=\"mord mathnormal\">t</span><span class=\"mclose\">)</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">:</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord\"><span class=\"mord mathsf\">T</span><span class=\"mord mathsf\">m</span></span><span class=\"mopen\">(</span><span class=\"mord\">Γ</span><span class=\"mclose\">)</span></span></span></span> in an untyped setting.</p>",
+        "id": 229891103,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1615483781
+    },
+    {
+        "content": "<p>That's very interesting. It does seem like a rather heavyweight encoding for automation to handle, but who knows.</p>",
+        "id": 229891364,
+        "sender_full_name": "Philip Zucker",
+        "timestamp": 1615483873
+    },
+    {
+        "content": "<p>Agreed: the disadvantage with describing everything internally is that the automation can't take advantage of knowing \"what the constructions mean\" for optimisation purposes (at least naïvely), but the advantage is that you can describe many more structures than you would be able to externally (because you don't need to invent new structures for describing more complex data types).</p>",
+        "id": 229891734,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1615483984
+    },
+    {
+        "content": "<p>If you are even able to demonstrate viability of automation for equations involving categories, functors, and natural transformations, that will already be a huge step forwards, though.</p>",
+        "id": 229891995,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1615484048
+    },
+    {
+        "content": "<p>That's the dream. Workin' on it</p>",
+        "id": 229892086,
+        "sender_full_name": "Philip Zucker",
+        "timestamp": 1615484078
+    },
+    {
+        "content": "<p>This is a problem I'm very interested in, and would be very happy to discuss in more detail at some point :)</p>",
+        "id": 229892174,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1615484098
+    },
+    {
+        "content": "<p>The current set of discussion that I'm aware has been happening on the Julia zulip. I poke my head in over here very rarely because it is overwhelming.</p>",
+        "id": 229892394,
+        "sender_full_name": "Philip Zucker",
+        "timestamp": 1615484168
+    },
+    {
+        "content": "<p>But where does the variable go? Is everything de bruijn indexed?</p>",
+        "id": 229895709,
+        "sender_full_name": "Philip Zucker",
+        "timestamp": 1615485261
+    },
+    {
+        "content": "<p>Essentially, yes. You avoid variable names altogether.</p>",
+        "id": 229896068,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1615485379
+    },
+    {
+        "content": "<p>(Though possibly a more principled approach to variable names, like nominal calculi, could also work as a GAT.)</p>",
+        "id": 229896105,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1615485395
+    },
+    {
+        "content": "<p>I see. Manipulating de bruijn indices in the egraph is so far non obvious(to me)  that one can do it, and non obvious if they even make sense. My intuition so far is that the egraph is a bit more than just a bag of syntax. The automated sharing and congruence closure can do some surprising things.</p>",
+        "id": 229896542,
+        "sender_full_name": "Philip Zucker",
+        "timestamp": 1615485561
+    },
+    {
+        "content": "<p>I emailed one of the egg authors <a href=\"https://egraphs-good.github.io/\">https://egraphs-good.github.io/</a> about this and it seems it's still an open question from his perspective as well</p>",
+        "id": 229896737,
+        "sender_full_name": "Philip Zucker",
+        "timestamp": 1615485618
+    },
+    {
+        "content": "<p>It's not necessarily to think about de Bruijn indices explicitly, though: they're hidden in the structure of the GAT. If you can represent arbitrary GATs, you can represent de Bruijn indices.</p>",
+        "id": 229897029,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1615485729
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276092\">Nathanael Arkor</span> <a href=\"#narrow/stream/229125-practice.3A-software/topic/Metatheory.2Ejl/near/229891103\">said</a>:</p>\n<blockquote>\n<p>A <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>λ</mi></mrow><annotation encoding=\"application/x-tex\">\\lambda</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.69444em;vertical-align:0em;\"></span><span class=\"mord mathnormal\">λ</span></span></span></span>-abstraction operator would take a term in an extended context, for instance, and return a term in the non-extended context. E.g. something like <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"normal\">Γ</mi><mo>:</mo><mrow><mi mathvariant=\"sans-serif\">C</mi><mi mathvariant=\"sans-serif\">t</mi><mi mathvariant=\"sans-serif\">x</mi></mrow><mo separator=\"true\">,</mo><mi>t</mi><mo>:</mo><mrow><mi mathvariant=\"sans-serif\">T</mi><mi mathvariant=\"sans-serif\">m</mi></mrow><mo stretchy=\"false\">(</mo><mrow><mi mathvariant=\"sans-serif\">e</mi><mi mathvariant=\"sans-serif\">x</mi><mi mathvariant=\"sans-serif\">t</mi></mrow><mo stretchy=\"false\">(</mo><mi mathvariant=\"normal\">Γ</mi><mo stretchy=\"false\">)</mo><mo stretchy=\"false\">)</mo><mo>⊢</mo><mrow><mi mathvariant=\"sans-serif\">a</mi><mi mathvariant=\"sans-serif\">b</mi><mi mathvariant=\"sans-serif\">s</mi></mrow><mo stretchy=\"false\">(</mo><mi>t</mi><mo stretchy=\"false\">)</mo><mo>:</mo><mrow><mi mathvariant=\"sans-serif\">T</mi><mi mathvariant=\"sans-serif\">m</mi></mrow><mo stretchy=\"false\">(</mo><mi mathvariant=\"normal\">Γ</mi><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">\\Gamma : \\mathsf{Ctx}, t : \\mathsf{Tm}(\\mathsf{ext}(\\Gamma)) \\vdash \\mathsf{abs}(t) : \\mathsf{Tm}(\\Gamma)</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord\">Γ</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">:</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.8888799999999999em;vertical-align:-0.19444em;\"></span><span class=\"mord\"><span class=\"mord mathsf\">C</span><span class=\"mord mathsf\">t</span><span class=\"mord mathsf\">x</span></span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mord mathnormal\">t</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">:</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord\"><span class=\"mord mathsf\">T</span><span class=\"mord mathsf\">m</span></span><span class=\"mopen\">(</span><span class=\"mord\"><span class=\"mord mathsf\">e</span><span class=\"mord mathsf\">x</span><span class=\"mord mathsf\">t</span></span><span class=\"mopen\">(</span><span class=\"mord\">Γ</span><span class=\"mclose\">)</span><span class=\"mclose\">)</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">⊢</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord\"><span class=\"mord mathsf\">a</span><span class=\"mord mathsf\">b</span><span class=\"mord mathsf\">s</span></span><span class=\"mopen\">(</span><span class=\"mord mathnormal\">t</span><span class=\"mclose\">)</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">:</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord\"><span class=\"mord mathsf\">T</span><span class=\"mord mathsf\">m</span></span><span class=\"mopen\">(</span><span class=\"mord\">Γ</span><span class=\"mclose\">)</span></span></span></span> in an untyped setting.</p>\n</blockquote>\n<p>Note that there are no explicit indices here.</p>",
+        "id": 229897111,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1615485764
+    },
+    {
+        "content": "<p>This suggests to me that either de bruijn indices are fine or I'm not actually able to represent arbitrary GATs.</p>",
+        "id": 229897217,
+        "sender_full_name": "Philip Zucker",
+        "timestamp": 1615485808
+    },
+    {
+        "content": "<p>There are indices in t though?</p>",
+        "id": 229897229,
+        "sender_full_name": "Philip Zucker",
+        "timestamp": 1615485820
+    },
+    {
+        "content": "<p>If I'm not wrong,  <a href=\"https://www.fstar-lang.org/\">F*</a> uses de Bruijn indices in practice in its SMT encoding (but I don't think that's the most efficient part of the encoding)</p>",
+        "id": 229897320,
+        "sender_full_name": "Kenji Maillard",
+        "timestamp": 1615485850
+    },
+    {
+        "content": "<p>Oh really? Fascinating.</p>",
+        "id": 229897410,
+        "sender_full_name": "Philip Zucker",
+        "timestamp": 1615485895
+    },
+    {
+        "content": "<p>Do they describe that in a paper or is it just internally in the code base?</p>",
+        "id": 229897738,
+        "sender_full_name": "Philip Zucker",
+        "timestamp": 1615486041
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276026\">Philip Zucker</span> <a href=\"#narrow/stream/229125-practice.3A-software/topic/Metatheory.2Ejl/near/229897229\">said</a>:</p>\n<blockquote>\n<p>There are indices in t though?</p>\n</blockquote>\n<p>Where? You mean <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"normal\">Γ</mi></mrow><annotation encoding=\"application/x-tex\">\\Gamma</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord\">Γ</span></span></span></span> would be represented by an index?</p>",
+        "id": 229897938,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1615486119
+    },
+    {
+        "content": "<p>I was assuming a term would be something like <code>abs(var(0))</code> for id for example.</p>",
+        "id": 229898058,
+        "sender_full_name": "Philip Zucker",
+        "timestamp": 1615486168
+    },
+    {
+        "content": "<p>Actually you can represent a variable just by an operator <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"sans-serif\">v</mi><mi mathvariant=\"sans-serif\">a</mi><mi mathvariant=\"sans-serif\">r</mi></mrow><annotation encoding=\"application/x-tex\">\\mathsf{var}</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.44444em;vertical-align:0em;\"></span><span class=\"mord\"><span class=\"mord mathsf\" style=\"margin-right:0.01389em;\">v</span><span class=\"mord mathsf\">a</span><span class=\"mord mathsf\" style=\"margin-right:0.01389em;\">r</span></span></span></span></span> <em>without an index</em>; its index is captured by the context it is in. It's a little involved to describe exactly how this works, though.</p>",
+        "id": 229898294,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1615486261
+    },
+    {
+        "content": "<p>This is what I meant by \"Essentially, yes.\" Actually there are no explicit indices, and they are instead represented by the term structure itself.</p>",
+        "id": 229898380,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1615486289
+    },
+    {
+        "content": "<p>(Probably the type-theory-in-type-theory literature contains an explicit worked example in this vein.)</p>",
+        "id": 229898494,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1615486323
+    },
+    {
+        "content": "<p>So what would you write for id? Or is the question poorly formed?</p>",
+        "id": 229898842,
+        "sender_full_name": "Philip Zucker",
+        "timestamp": 1615486445
+    },
+    {
+        "content": "<p>And how would you write <code>\\x y -&gt; x</code></p>",
+        "id": 229899070,
+        "sender_full_name": "Philip Zucker",
+        "timestamp": 1615486530
+    },
+    {
+        "content": "<p>The intuition is that you don't encode arbitrary higher-order operations: you encode structures that have higher-order operations (e.g. lambda-calculi). So whenever you want to describe a higher-order operation, you first need to describe contexts and terms.</p>",
+        "id": 229899674,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1615486769
+    },
+    {
+        "content": "<p>Another way to describe it is that in a GAT, you have a first-order context. But you can <em>encode</em> higher-order contexts using GATs. So they if you have a higher-order structure, you can describe it internally with respect to the encoded higher-order context, rather than the \"metatheoretical\" first-order context of the GAT.</p>",
+        "id": 229900438,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1615487054
+    },
+    {
+        "content": "<p>I'm afraid I don't follow without something more specific</p>",
+        "id": 229905901,
+        "sender_full_name": "Philip Zucker",
+        "timestamp": 1615489098
+    },
+    {
+        "content": "<p>I wanted to write up an explicit example at some point anyway, so when I get around to it, I'll let you know. Then I can figure out how best to present it :)</p>",
+        "id": 229922191,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1615495272
+    },
+    {
+        "content": "<p>Hi everybody! Author of Metatheory.jl here</p>",
+        "id": 230003152,
+        "sender_full_name": "Alessandro",
+        "timestamp": 1615543306
+    },
+    {
+        "content": "<p><span class=\"user-mention\" data-user-id=\"396879\">@Alessandro</span>: hi! I would be interested to hear your thoughts on data structures for algebraic/symbol computation, especially in terms of what Metatheory.jl currently supports and what you have considered supporting in the future. Have you looked at generalised algebraic theories at all?</p>",
+        "id": 230185515,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1615665759
+    },
+    {
+        "content": "<p>I have given a quick look at GATs. I'm not a mathematician sadly.</p>",
+        "id": 230407136,
+        "sender_full_name": "Alessandro",
+        "timestamp": 1615837855
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276092\">Nathanael Arkor</span> <a href=\"#narrow/stream/229125-practice.3A-software/topic/Metatheory.2Ejl/near/230185515\">said</a>:</p>\n<blockquote>\n<p><span class=\"user-mention silent\" data-user-id=\"396879\">Alessandro</span>: hi! I would be interested to hear your thoughts on data structures for algebraic/symbol computation, especially in terms of what Metatheory.jl currently supports and what you have considered supporting in the future. Have you looked at generalised algebraic theories at all?</p>\n</blockquote>\n<p>Here are our current efforts:<br>\n<a href=\"https://github.com/0x0f0f0f/Metatheory.jl/blob/master/test/test_cat.jl\">https://github.com/0x0f0f0f/Metatheory.jl/blob/master/test/test_cat.jl</a><br>\nSimple equivalence proving in SMCs with explicit type tagging</p>\n<p><span class=\"user-mention\" data-user-id=\"276026\">@Philip Zucker</span> 's blogpost<br>\n<a href=\"https://www.philipzucker.com/metatheory-progress/\">https://www.philipzucker.com/metatheory-progress/</a></p>",
+        "id": 230407242,
+        "sender_full_name": "Alessandro",
+        "timestamp": 1615837910
+    },
+    {
+        "content": "<p>I also made a version of the same rules that is compiled to the browser using the egg library (Metatheory and egg are related systems, one in Julia, one in Rust) <br>\n<a href=\"http://www.philipzucker.com/rust-category/\">http://www.philipzucker.com/rust-category/</a></p>",
+        "id": 231226073,
+        "sender_full_name": "Philip Zucker",
+        "timestamp": 1616344089
+    }
+]

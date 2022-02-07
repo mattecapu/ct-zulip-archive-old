@@ -1,0 +1,56 @@
+[
+    {
+        "content": "<p>Following from twitter discussion with <span class=\"user-mention\" data-user-id=\"276037\">@Jade Master</span> about complex networks.</p>\n<p>Motivating question: I have some social contact network data that is useful for studying epidemics. It's specific to a particular community but it is valuable because it's rare to be able to collect such explicit data. It would be very nice to be able to share it, but I can't because it's too easy to identify individuals and households from it. Is it possible to produce a relevantly similar synthetic network to share?</p>\n<p>What does relevantly similar mean? I'm not certain but I think a plausible way to define it is to say that some of the measures that network science likes to use (diameter, eigenvalues of adjacency matrices, the distribution of centrality measures between vertices, etc) are the same. We think of these measures as numerically quantifying certain important kinds of structure in a network. This starts to sound like searching for special kinds of structure-preserving map between networks...</p>\n<p>Next, we have things like SPO and DPO graph rewriting. They don't seem to have been given the full 𝕆pen(•) treatment. Maybe I am wrong, but it seems to me that ought to work. DPO graph rewriting feels like what you get if you allow tokens of a Petri net to have edges between them. In practice, graph rewriting rules like what we have with the κ-calculus are a lot like chemical reactions.</p>\n<p>If we had 𝕆pen(DPO), say, or something like it, could it be used to construct these structure-preserving maps that we are searching for?</p>\n<p>(AFK pancakes)</p>",
+        "id": 240748020,
+        "sender_full_name": "ww",
+        "timestamp": 1622368253
+    },
+    {
+        "content": "<p>This is potentially not really helpful, but one way to hide individual-level data while preserving some structural properties of a dataset is to add random noise to individual values in a way that cancels out in aggregate. Is there a way of adapting this idea to graph models?  Maybe random local graph rewrites could serve as noise here? But I have no idea how to guarantee that they preserve whatever global property you care about.</p>",
+        "id": 240750161,
+        "sender_full_name": "Robin Piedeleu",
+        "timestamp": 1622372038
+    },
+    {
+        "content": "<p>Oh wait there's even a name for this field: <a href=\"https://en.wikipedia.org/wiki/Differentially_private_analysis_of_graphs\">https://en.wikipedia.org/wiki/Differentially_private_analysis_of_graphs</a></p>",
+        "id": 240750221,
+        "sender_full_name": "Robin Piedeleu",
+        "timestamp": 1622372117
+    },
+    {
+        "content": "<p>William Waites wrote:</p>\n<blockquote>\n<p>Next, we have things like SPO and DPO graph rewriting. They don't seem to have been given the full 𝕆pen(•) treatment. </p>\n</blockquote>\n<p>I'm not sure it's what you want, but have you looked at my student Daniel Cicala's thesis?</p>\n<blockquote>\n<p>Daniel Cicala, <em><a href=\"https://arxiv.org/abs/1906.05443\">Rewriting Structured Cospans: A Syntax For Open Systems</a></em>, Ph.D. thesis, U. C. Riverside, 2019. </p>\n</blockquote>\n<p>It's all about double pushout rewriting for open graphs.</p>",
+        "id": 240759614,
+        "sender_full_name": "John Baez",
+        "timestamp": 1622387043
+    },
+    {
+        "content": "<p>So combining what you said and what Robin said, I'm imagining that we could take a graph, randomly do a bunch of local rewrites, compare a bunch of network statistics between the original graph and the rewritten graph, and then if these don't come within some desired tolerance discard the rewritten graph and try again.</p>",
+        "id": 240759736,
+        "sender_full_name": "John Baez",
+        "timestamp": 1622387229
+    },
+    {
+        "content": "<p>If we do local rewrites, there's a good chance that certain <em>large-scale</em> properties of the graph will be preserved.</p>",
+        "id": 240759797,
+        "sender_full_name": "John Baez",
+        "timestamp": 1622387299
+    },
+    {
+        "content": "<p>In what I just sketched, <em>open</em> graphs don't play a role.</p>",
+        "id": 240759815,
+        "sender_full_name": "John Baez",
+        "timestamp": 1622387335
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"275920\">John Baez</span> <a href=\"#narrow/stream/229156-practice.3A-applied.20ct/topic/network.20transformations/near/240759614\">said</a>:</p>\n<blockquote>\n<p>I'm not sure it's what you want, but have you looked at my student Daniel Cicala's thesis?</p>\n</blockquote>\n<p>I had not but now I've had a quick read. I'm glad that <span class=\"user-mention\" data-user-id=\"277262\">@Daniel Cicala</span> did this!</p>\n<p>I'm not sure what it means to do random local graph rewrites. There are many possible choices. </p>\n<p>It's very possible that I've gotten muddled, but the reason why I was thinking we might want _open_ systems here is to construct the rewriting system. I'm imagining that there are many local rewriting rules  that we could have and we probably want to use more than one. So we choose several rules, compose them together in parallel* or in series, and that gives one rewrite step. Suppose that the rules and the input graph are such that the left-hand side of any given rule has many embeddings and just pick one at random (essentially just Gillespie's algorithm). Do this kind of operation enough times that the original graph is unrecognisable.</p>\n<p>Maybe a set of rules looks like:</p>\n<p>- duplicate a small, fully-connected set of vertices (like a household of a particular size)<br>\n  - delete a vertex<br>\n  - if A is connected to B and C is not, connect C to B (effectively a kind of preferential attachment)<br>\n  - complete a nearly fully-connected (e.g. missing one edge) set of vertices (for sets of typical household sizes)</p>\n<p>(kind of wish KaTeX did tikz to make the pictures of these)</p>\n<p>I'm not saying this set of rules does the right thing, just that maybe the way to find a good way to do random local rewrites is to compose sets of rules like this. If we can work out what each individually does to some large-scale measure, under what circumstaneces can we tell what the lot does?</p>\n<p>Does that make any sense?</p>\n<ul>\n<li>Interesting side question about parallel composition of rewrite rules has to do with what happens when the embeddings of the left-hand sides overlap. Here it's probably fine because I think we don't care, just toss a coin, pick one and move on into one of the possible futures.</li>\n</ul>",
+        "id": 240771805,
+        "sender_full_name": "ww",
+        "timestamp": 1622405422
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"277342\">Robin Piedeleu</span> <a href=\"#narrow/stream/229156-practice.3A-applied.20ct/topic/network.20transformations/near/240750161\">said</a>:</p>\n<blockquote>\n<p>This is potentially not really helpful, but one way to hide individual-level data while preserving some structural properties of a dataset is to add random noise to individual values in a way that cancels out in aggregate. Is there a way of adapting this idea to graph models?  Maybe random local graph rewrites could serve as noise here? But I have no idea how to guarantee that they preserve whatever global property you care about.</p>\n</blockquote>\n<p>Worse than that, it's unclear which global properties are the important ones or if the ones that matter really appear at some intermediate scale, like neighbourhood of a certain size. The answer might even depend on the particular experiment that the person using the resulting synthetic network wants to do...</p>\n<p>The differential privacy approach is interesting. I could imagine a protocol where I have my network that I can't share, and you give me a rewriting system and a distance measure of some sort defined on two graphs. I execute the rewriting system, check that the result is sufficiently different from the original (so that I'm satisfied that I'm not leaking anything), and hand you back the result and the distance between the original and the result according to your measure (so that you can know if the result is good enough for what you want to do with it).</p>\n<p>That's a little different from the usual way of doing differential privacy where the result a query is expected to be much smaller than the database...</p>",
+        "id": 240773227,
+        "sender_full_name": "ww",
+        "timestamp": 1622407574
+    }
+]

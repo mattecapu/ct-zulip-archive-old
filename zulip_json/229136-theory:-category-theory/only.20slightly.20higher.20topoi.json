@@ -1,0 +1,386 @@
+[
+    {
+        "content": "<p>Hey <span class=\"user-mention\" data-user-id=\"276777\">@Mike Shulman</span> i just realized you're here &amp; i wanted to ask you about some of the 2-topos stuff on your sub-nlab, if you'd be willing to answer my questions? I've been periodically coming back around lately to thinking about what a dependent type theory for interpretation in PreOrd—i.e., (0, 1)-Cat—would look like, and while I've only nibbled around the edges of the 2-topos stuff, the little I've managed to understand has definitely been a big help in figuring out which direction is probably the right way to go (say, the fact that I probably want to use fibrational slices rather than full slices). (I guess if (0, 0)-Cat is a 1-topos and (1, 1)-Cat should be a 2-topos, then (0, 1)-Cat should probably be a (1, 2)-topos?)</p>",
+        "id": 192092376,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1585351708
+    },
+    {
+        "content": "<p>i think the main things bugging me are like</p>\n<ol>\n<li>\n<p>if you <em>do</em> work in Opf(C) (for C a preordered set), then that's the same as working in [C, PreOrd], right? But a global element of the constant functor at some D is then gonna correspond to just an element of D, as far as I can tell, not to a monotone function C → D, and that is an identification that I would very much expect to hold if I want to be able to get such a function as the semantics of a term <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>x</mi><mo>:</mo><mi>C</mi><mo>⊢</mo><mi>e</mi><mo>:</mo><mi>D</mi></mrow><annotation encoding=\"application/x-tex\">x : C \\vdash e : D</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.43056em;vertical-align:0em;\"></span><span class=\"mord mathdefault\">x</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">:</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.69444em;vertical-align:0em;\"></span><span class=\"mord mathdefault\" style=\"margin-right:0.07153em;\">C</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">⊢</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.43056em;vertical-align:0em;\"></span><span class=\"mord mathdefault\">e</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">:</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathdefault\" style=\"margin-right:0.02778em;\">D</span></span></span></span>. If I use <em>lax</em> natural transformations as morphisms, it seems to work, but I have no idea what other consequences that might have???</p>\n</li>\n<li>\n<p>something seems <em>really</em> fishy about the Hom type constructor. I should take another look at how it was set up on the page for the internal language, but if types are supposed to be functorial in their free variables, then shouldn't the first argument have to have type C^op rather than C? i've thought much more about my case, anyway, which is having ≤ as a proposition constructor, and i'm almost certain that just typing it as <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"normal\">Γ</mi><mo>⊢</mo><mi>e</mi><mo>:</mo><mi>A</mi><mspace width=\"1em\"></mspace><mi mathvariant=\"normal\">Γ</mi><mo>⊢</mo><msup><mi>e</mi><mo lspace=\"0em\" mathvariant=\"normal\" rspace=\"0em\">′</mo></msup><mo>:</mo><mi>A</mi><mtext>  </mtext><mo>⟹</mo><mtext>  </mtext><mi mathvariant=\"normal\">Γ</mi><mo>⊢</mo><mi>e</mi><mo>≤</mo><msup><mi>e</mi><mo lspace=\"0em\" mathvariant=\"normal\" rspace=\"0em\">′</mo></msup><mtext> </mtext><mrow><mi mathvariant=\"sans-serif\">p</mi><mi mathvariant=\"sans-serif\">r</mi><mi mathvariant=\"sans-serif\">o</mi><mi mathvariant=\"sans-serif\">p</mi></mrow></mrow><annotation encoding=\"application/x-tex\">\\Gamma \\vdash e : A \\quad \\Gamma \\vdash e' : A \\implies \\Gamma \\vdash e \\le e'\\ \\mathsf{prop}</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.69444em;vertical-align:0em;\"></span><span class=\"mord\">Γ</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">⊢</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.43056em;vertical-align:0em;\"></span><span class=\"mord mathdefault\">e</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">:</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.69444em;vertical-align:0em;\"></span><span class=\"mord mathdefault\">A</span><span class=\"mspace\" style=\"margin-right:1em;\"></span><span class=\"mord\">Γ</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">⊢</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.751892em;vertical-align:0em;\"></span><span class=\"mord\"><span class=\"mord mathdefault\">e</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.751892em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\">′</span></span></span></span></span></span></span></span></span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">:</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.70733em;vertical-align:-0.024em;\"></span><span class=\"mord mathdefault\">A</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">⟹</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.69444em;vertical-align:0em;\"></span><span class=\"mord\">Γ</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">⊢</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.7719400000000001em;vertical-align:-0.13597em;\"></span><span class=\"mord mathdefault\">e</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">≤</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.946332em;vertical-align:-0.19444em;\"></span><span class=\"mord\"><span class=\"mord mathdefault\">e</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.751892em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\">′</span></span></span></span></span></span></span></span></span><span class=\"mspace\"> </span><span class=\"mord\"><span class=\"mord mathsf\">p</span><span class=\"mord mathsf\" style=\"margin-right:0.01389em;\">r</span><span class=\"mord mathsf\">o</span><span class=\"mord mathsf\">p</span></span></span></span></span> is gonna be a problem. but if i keep C^op and C as completely separate types, and type ≤ as such, then how on earth do i type reflexivity and transitivity?!</p>\n</li>\n</ol>",
+        "id": 192093126,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1585352388
+    },
+    {
+        "content": "<p>anyway, i welcome anyone else's input too!!</p>",
+        "id": 192093255,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1585352516
+    },
+    {
+        "content": "<p><span class=\"user-mention\" data-user-id=\"276072\">@sarahzrf</span>  Right, these are some of the main issues with internal logic of categories with directed 2-cells.  My opinion is that while you may want syntactic restrictions to isolate classes of dependent types corresponding to fibrations and opfibrations, the <em>terms</em> in such types should <em>not</em> be required to be morphisms of such (to preserve cartesian arrows).  This solves your (1) because a term <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>x</mi><mo>:</mo><mi>C</mi><mo>⊢</mo><mi>e</mi><mo>:</mo><mi>D</mi></mrow><annotation encoding=\"application/x-tex\">x:C \\vdash e:D</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.43056em;vertical-align:0em;\"></span><span class=\"mord mathdefault\">x</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">:</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.69444em;vertical-align:0em;\"></span><span class=\"mord mathdefault\" style=\"margin-right:0.07153em;\">C</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">⊢</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.43056em;vertical-align:0em;\"></span><span class=\"mord mathdefault\">e</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">:</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathdefault\" style=\"margin-right:0.02778em;\">D</span></span></span></span> is a section of the projection <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>C</mi><mo>×</mo><mi>D</mi><mo>→</mo><mi>C</mi></mrow><annotation encoding=\"application/x-tex\">C\\times D \\to C</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.76666em;vertical-align:-0.08333em;\"></span><span class=\"mord mathdefault\" style=\"margin-right:0.07153em;\">C</span><span class=\"mspace\" style=\"margin-right:0.2222222222222222em;\"></span><span class=\"mbin\">×</span><span class=\"mspace\" style=\"margin-right:0.2222222222222222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathdefault\" style=\"margin-right:0.02778em;\">D</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">→</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathdefault\" style=\"margin-right:0.07153em;\">C</span></span></span></span>, and if it's not required to be a morphism of opfibrations then this is really just a map <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>C</mi><mo>→</mo><mi>D</mi></mrow><annotation encoding=\"application/x-tex\">C\\to D</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathdefault\" style=\"margin-right:0.07153em;\">C</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">→</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathdefault\" style=\"margin-right:0.02778em;\">D</span></span></span></span>.  For your (2) I think that the basic hom-type should depend on two copies of <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>C</mi></mrow><annotation encoding=\"application/x-tex\">C</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathdefault\" style=\"margin-right:0.07153em;\">C</span></span></span></span>, perhaps one marked as contravariant and one as covariant (if you like); then you can type reflexivity and transitivity (and even symmetry) without a problem since they are also not required to be maps of (op)fibrations.</p>",
+        "id": 192177129,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1585492135
+    },
+    {
+        "content": "<p>ok :)</p>",
+        "id": 192225582,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1585557282
+    },
+    {
+        "content": "<p>although, uh</p>",
+        "id": 192225657,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1585557333
+    },
+    {
+        "content": "<p>oh right, ok, fibrations are stable under arbitrary pullback right, ok</p>",
+        "id": 192225695,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1585557359
+    },
+    {
+        "content": "<p>hmmmm, i'm not quite seeing what you mean about (2)—what exactly do you mean about  \"two copies of <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>C</mi></mrow><annotation encoding=\"application/x-tex\">C</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathdefault\" style=\"margin-right:0.07153em;\">C</span></span></span></span>\"?</p>",
+        "id": 192225855,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1585557453
+    },
+    {
+        "content": "<p>i was actually playing around a bit with maybe doing stuff over a twisted arrow category (or rather, the corresponding notion in PreOrd) so that i could talk about a \"covariant component\" and \"contravariant component\" of each free variable, but</p>",
+        "id": 192225945,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1585557517
+    },
+    {
+        "content": "<p>is that similar to what you're talking about?</p>",
+        "id": 192225955,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1585557526
+    },
+    {
+        "content": "<p>(i was thinking maybe it'd mean that quantifiers could correspond to ends/coends—cant remember whether it ended up working out, I hadn't touched this in a little while)</p>",
+        "id": 192257670,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1585576145
+    },
+    {
+        "content": "<p>I just mean <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>x</mi><mo>:</mo><mi>C</mi><mo separator=\"true\">,</mo><mi>y</mi><mo>:</mo><mi>C</mi><mo>⊢</mo><mi>hom</mi><mo>⁡</mo><mo stretchy=\"false\">(</mo><mi>x</mi><mo separator=\"true\">,</mo><mi>y</mi><mo stretchy=\"false\">)</mo><mo>:</mo><mrow><mi mathvariant=\"normal\">T</mi><mi mathvariant=\"normal\">y</mi><mi mathvariant=\"normal\">p</mi><mi mathvariant=\"normal\">e</mi></mrow></mrow><annotation encoding=\"application/x-tex\">x:C, y:C \\vdash \\hom(x,y) : \\rm Type</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.43056em;vertical-align:0em;\"></span><span class=\"mord mathdefault\">x</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">:</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.8777699999999999em;vertical-align:-0.19444em;\"></span><span class=\"mord mathdefault\" style=\"margin-right:0.07153em;\">C</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mord mathdefault\" style=\"margin-right:0.03588em;\">y</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">:</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.69444em;vertical-align:0em;\"></span><span class=\"mord mathdefault\" style=\"margin-right:0.07153em;\">C</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">⊢</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mop\">hom</span><span class=\"mopen\">(</span><span class=\"mord mathdefault\">x</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mord mathdefault\" style=\"margin-right:0.03588em;\">y</span><span class=\"mclose\">)</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">:</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.8777699999999999em;vertical-align:-0.19444em;\"></span><span class=\"mord\"><span class=\"mord mathrm\">T</span><span class=\"mord mathrm\" style=\"margin-right:0.01389em;\">y</span><span class=\"mord mathrm\">p</span><span class=\"mord mathrm\">e</span></span></span></span></span>: there are two variables.</p>",
+        "id": 192327814,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1585609069
+    },
+    {
+        "content": "<p>oh</p>",
+        "id": 192327881,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1585609107
+    },
+    {
+        "content": "<p>well, the issue i had in mind was—</p>",
+        "id": 192327893,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1585609112
+    },
+    {
+        "content": "<p>reflexivity is gonna be something like <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"normal\">Γ</mi><mo>⊢</mo><mi>e</mi><mo>:</mo><mi>A</mi><mtext>  </mtext><mo>⟹</mo><mtext>  </mtext><mi mathvariant=\"normal\">Γ</mi><mo>⊢</mo><msub><mrow><mi mathvariant=\"sans-serif\">r</mi><mi mathvariant=\"sans-serif\">e</mi><mi mathvariant=\"sans-serif\">f</mi><mi mathvariant=\"sans-serif\">l</mi></mrow><mi>e</mi></msub><mo>:</mo><mi>e</mi><msub><mo>≤</mo><mi>A</mi></msub><mi>e</mi></mrow><annotation encoding=\"application/x-tex\">\\Gamma \\vdash e : A \\implies \\Gamma \\vdash \\mathsf{refl}_e : e \\le_A e</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.69444em;vertical-align:0em;\"></span><span class=\"mord\">Γ</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">⊢</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.43056em;vertical-align:0em;\"></span><span class=\"mord mathdefault\">e</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">:</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.70733em;vertical-align:-0.024em;\"></span><span class=\"mord mathdefault\">A</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">⟹</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.69444em;vertical-align:0em;\"></span><span class=\"mord\">Γ</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">⊢</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.84444em;vertical-align:-0.15em;\"></span><span class=\"mord\"><span class=\"mord\"><span class=\"mord mathsf\" style=\"margin-right:0.01389em;\">r</span><span class=\"mord mathsf\">e</span><span class=\"mord mathsf\" style=\"margin-right:0.06944em;\">f</span><span class=\"mord mathsf\">l</span></span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.151392em;\"><span style=\"top:-2.5500000000000003em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathdefault mtight\">e</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">:</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.7859700000000001em;vertical-align:-0.15em;\"></span><span class=\"mord mathdefault\">e</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\"><span class=\"mrel\">≤</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.32833099999999993em;\"><span style=\"top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathdefault mtight\">A</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.43056em;vertical-align:0em;\"></span><span class=\"mord mathdefault\">e</span></span></span></span></p>",
+        "id": 192327947,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1585609155
+    },
+    {
+        "content": "<p>except that that's ill-typed if one side is supposed to be <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msup><mi>A</mi><mrow><mi mathvariant=\"normal\">o</mi><mi mathvariant=\"normal\">p</mi></mrow></msup></mrow><annotation encoding=\"application/x-tex\">A^\\mathrm{op}</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord\"><span class=\"mord mathdefault\">A</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.664392em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mathrm mtight\">o</span><span class=\"mord mathrm mtight\">p</span></span></span></span></span></span></span></span></span></span></span></span></p>",
+        "id": 192327965,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1585609174
+    },
+    {
+        "content": "<p>but if i do go with both being <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi></mrow><annotation encoding=\"application/x-tex\">A</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathdefault\">A</span></span></span></span>, then <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>≤</mo></mrow><annotation encoding=\"application/x-tex\">\\le</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.7719400000000001em;vertical-align:-0.13597em;\"></span><span class=\"mrel\">≤</span></span></span></span> is not a fibration</p>",
+        "id": 192328128,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1585609263
+    },
+    {
+        "content": "<p>...i think. more to the point, we lose the ability to transport by <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>≤</mo></mrow><annotation encoding=\"application/x-tex\">\\le</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.7719400000000001em;vertical-align:-0.13597em;\"></span><span class=\"mrel\">≤</span></span></span></span>, which corresponds to being a fibration iirc</p>",
+        "id": 192328164,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1585609296
+    },
+    {
+        "content": "<p>since <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>≤</mo></mrow><annotation encoding=\"application/x-tex\">\\le</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.7719400000000001em;vertical-align:-0.13597em;\"></span><span class=\"mrel\">≤</span></span></span></span> is contravariant in its first argument</p>",
+        "id": 192328171,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1585609314
+    },
+    {
+        "content": "<p>I realise I'm missing a lot of the context here, so apologies if this is a naïve question, but rather than having <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>≤</mo></mrow><annotation encoding=\"application/x-tex\">\\leq</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.7719400000000001em;vertical-align:-0.13597em;\"></span><span class=\"mrel\">≤</span></span></span></span> as a type constructor (à la directed type theory), is it possible a type theory with rewriting (where <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>≤</mo></mrow><annotation encoding=\"application/x-tex\">\\leq</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.7719400000000001em;vertical-align:-0.13597em;\"></span><span class=\"mrel\">≤</span></span></span></span> is essentially a different kind) could be suitable?</p>",
+        "id": 192328624,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1585609717
+    },
+    {
+        "content": "<p>I think you don't have the same issues with variance in type theories with rewriting</p>",
+        "id": 192328633,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1585609733
+    },
+    {
+        "content": "<p>(on the other hand, it might be totally unsuitable for the problems you're interested in)</p>",
+        "id": 192328654,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1585609768
+    },
+    {
+        "content": "<p>i don't know anything about type theories with rewriting—never even heard the term <span aria-label=\"sweat smile\" class=\"emoji emoji-1f605\" role=\"img\" title=\"sweat smile\">:sweat_smile:</span></p>",
+        "id": 192329116,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1585610221
+    },
+    {
+        "content": "<p>can you tell me about em?</p>",
+        "id": 192329123,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1585610227
+    },
+    {
+        "content": "<p>the idea is that they give a nice internal language for things like poset-enriched categories and 2-categories — instead of having equalities between terms (e.g. for <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>β</mi></mrow><annotation encoding=\"application/x-tex\">\\beta</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8888799999999999em;vertical-align:-0.19444em;\"></span><span class=\"mord mathdefault\" style=\"margin-right:0.05278em;\">β</span></span></span></span>- and <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>η</mi></mrow><annotation encoding=\"application/x-tex\">\\eta</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.625em;vertical-align:-0.19444em;\"></span><span class=\"mord mathdefault\" style=\"margin-right:0.03588em;\">η</span></span></span></span>-rules), you instead have directed rewrites</p>",
+        "id": 192329201,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1585610286
+    },
+    {
+        "content": "<p>it's a more computational approach to the typical computation rules</p>",
+        "id": 192329213,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1585610308
+    },
+    {
+        "content": "<p>do you have a source i can check out?</p>",
+        "id": 192329218,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1585610318
+    },
+    {
+        "content": "<p>let me find a good reference</p>",
+        "id": 192329219,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1585610318
+    },
+    {
+        "content": "<p>haha, jinx</p>",
+        "id": 192329223,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1585610321
+    },
+    {
+        "content": "<p>anyway though, it does seem to me like it should be possible for this to be a bona fide proposition</p>",
+        "id": 192329250,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1585610354
+    },
+    {
+        "content": "<p>I think the classical reference is Seely's <em>Modelling computations: A 2-categorical framework</em> (<a href=\"http://www.math.mcgill.ca/rags/WkAdj/LICS.pdf\" title=\"http://www.math.mcgill.ca/rags/WkAdj/LICS.pdf\">http://www.math.mcgill.ca/rags/WkAdj/LICS.pdf</a>)</p>",
+        "id": 192329258,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1585610370
+    },
+    {
+        "content": "<p>because this should be some kind of truncation of a 2-topos type theory, and hopefully 2-topoi should have a type theory</p>",
+        "id": 192329264,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1585610373
+    },
+    {
+        "content": "<p>a more recent reference is Fiore–Saville's <em>A type theory for cartesian closed bicategories</em> (<a href=\"https://arxiv.org/pdf/1904.06538.pdf\" title=\"https://arxiv.org/pdf/1904.06538.pdf\">https://arxiv.org/pdf/1904.06538.pdf</a>)</p>",
+        "id": 192329277,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1585610387
+    },
+    {
+        "content": "<p>awww the typesetting is unpleasant :(</p>",
+        "id": 192329280,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1585610388
+    },
+    {
+        "content": "<p>oh that's nicer</p>",
+        "id": 192329287,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1585610396
+    },
+    {
+        "content": "<p>which has more pleasant type setting <span aria-label=\"big smile\" class=\"emoji emoji-1f604\" role=\"img\" title=\"big smile\">:big_smile:</span></p>",
+        "id": 192329293,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1585610400
+    },
+    {
+        "content": "<p>yes, I would have imagined it would be possible in the directed type theory style too</p>",
+        "id": 192329376,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1585610440
+    },
+    {
+        "content": "<p>(and there's often value in different syntaxes for the same theory, which emphasise different perspectives)</p>",
+        "id": 192329402,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1585610461
+    },
+    {
+        "content": "<p>but depending on what you want to use the type theory for, maybe rewrites could provide a different starting point too</p>",
+        "id": 192329506,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1585610528
+    },
+    {
+        "content": "<p><span aria-label=\"thumbs up\" class=\"emoji emoji-1f44d\" role=\"img\" title=\"thumbs up\">:thumbs_up:</span></p>",
+        "id": 192329512,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1585610535
+    },
+    {
+        "content": "<p>(I'm biased because I really don't like seeing \"op\" in type theories, which seems to be quite common in directed type theories — I personally think variance should be entirely implicit in the syntax)</p>",
+        "id": 192329571,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1585610596
+    },
+    {
+        "content": "<p>you mean like having another arrow?</p>",
+        "id": 192329676,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1585610676
+    },
+    {
+        "content": "<p>I mean, take the simply-typed <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>λ</mi></mrow><annotation encoding=\"application/x-tex\">\\lambda</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.69444em;vertical-align:0em;\"></span><span class=\"mord mathdefault\">λ</span></span></span></span>-calculus as an example: the function type constructor is contravariant in its first argument, but the variance is entirely encoded in the introduction/elimination rules, etc.</p>",
+        "id": 192329744,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1585610740
+    },
+    {
+        "content": "<p>the variance is a sort of side-effect of the other rules; it doesn't need to be explicit</p>",
+        "id": 192329823,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1585610774
+    },
+    {
+        "content": "<p>similarly for rewriting, where you're talking about homs, but variance is never explicit in the syntax</p>",
+        "id": 192329842,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1585610818
+    },
+    {
+        "content": "<p>i feel like that's a different Kind Of Thing but i'd have to really chew on it to articulate why &gt;.&gt;</p>",
+        "id": 192330824,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1585611773
+    },
+    {
+        "content": "<p>Going back to the original conversation...  that's right, <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>≤</mo></mrow><annotation encoding=\"application/x-tex\">\\le</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.7719400000000001em;vertical-align:-0.13597em;\"></span><span class=\"mrel\">≤</span></span></span></span> is not a fibration of the same variance in both its variables, so when you substitute the diagonal into it, you get something that's not a fibration at all.  Ergo, if you want reflexivity (and presumably you do), you have to allow dependent types that aren't fibrations (of any variance).  You can still transport by <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>≤</mo></mrow><annotation encoding=\"application/x-tex\">\\le</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.7719400000000001em;vertical-align:-0.13597em;\"></span><span class=\"mrel\">≤</span></span></span></span> in types that are fibrations, it's just that not all types <em>are</em> fibrations.  See for instance <a href=\"https://arxiv.org/abs/1705.07442\" title=\"https://arxiv.org/abs/1705.07442\">https://arxiv.org/abs/1705.07442</a> for a type theory in which not all types are fibrations, but there is an internal characterization of those that are.</p>",
+        "id": 192332207,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1585613005
+    },
+    {
+        "content": "<p>I think STLC is at a different level than what we're talking about here.  STLC is the internal language of a CCC, and there are type <em>constructors</em> such as the function-type that are contravariant on some of their arguments.  But the question here is about the internal language of a 2-category with an \"opposite\" operation on its <em>objects</em>, and in which some <em>type families and terms</em> are contravariant in their arguments.  I don't know of any way to make that \"implicit\", although you can represent the \"opposite\" modality judgmentally.</p>",
+        "id": 192332331,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1585613101
+    },
+    {
+        "content": "<p>dualising objects does make quite a difference, yes — what formal categorical structure does this correspond to?</p>",
+        "id": 192332540,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1585613280
+    },
+    {
+        "content": "<p>every category, or in my case every preordered set, has an opposite</p>",
+        "id": 192332641,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1585613350
+    },
+    {
+        "content": "<p>if you like, it probably corresponds to being autonomous</p>",
+        "id": 192332660,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1585613366
+    },
+    {
+        "content": "<p>ah, so you want a type theory for the category <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"bold\">P</mi><mi mathvariant=\"bold\">r</mi><mi mathvariant=\"bold\">e</mi><mi mathvariant=\"bold\">o</mi><mi mathvariant=\"bold\">r</mi><mi mathvariant=\"bold\">d</mi></mrow><annotation encoding=\"application/x-tex\">\\mathbf{Preord}</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.69444em;vertical-align:0em;\"></span><span class=\"mord\"><span class=\"mord mathbf\">P</span><span class=\"mord mathbf\">r</span><span class=\"mord mathbf\">e</span><span class=\"mord mathbf\">o</span><span class=\"mord mathbf\">r</span><span class=\"mord mathbf\">d</span></span></span></span></span>, rather than a type theory for arbitrary (structured) preorder-enriched categories?</p>",
+        "id": 192332737,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1585613418
+    },
+    {
+        "content": "<p><span aria-label=\"point up\" class=\"emoji emoji-1f446\" role=\"img\" title=\"point up\">:point_up:</span> see the first post</p>",
+        "id": 192332752,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1585613449
+    },
+    {
+        "content": "<p>ah, I misread the post — that makes perfect sense</p>",
+        "id": 192332793,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1585613504
+    },
+    {
+        "content": "<p>that is a little different from the focus of the rewriting theories, then</p>",
+        "id": 192332855,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1585613529
+    },
+    {
+        "content": "<p>sorry for sending you down an unrelated rabbit hole <span aria-label=\"sweat smile\" class=\"emoji emoji-1f605\" role=\"img\" title=\"sweat smile\">:sweat_smile:</span></p>",
+        "id": 192332894,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1585613559
+    },
+    {
+        "content": "<p>oh wait, I had read</p>\n<blockquote>\n<p>Right, these are some of the main issues with internal logic of categories with directed 2-cells.</p>\n</blockquote>\n<p>which <em>is</em> relevant (but I misinterpreted that as being the main focus)</p>",
+        "id": 192333049,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1585613691
+    },
+    {
+        "content": "<p>it's cool!</p>",
+        "id": 192333056,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1585613700
+    },
+    {
+        "content": "<p>Some families on the universe are co/contravariant with respect to function spaces in relatively ordinary type theory, and that's implicit.</p>",
+        "id": 192333076,
+        "sender_full_name": "Dan Doel",
+        "timestamp": 1585613724
+    },
+    {
+        "content": "<p>You don't need to talk about <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"script\">U</mi></mrow><annotation encoding=\"application/x-tex\">\\mathcal U</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathcal\" style=\"margin-right:0.09931em;\">U</span></span></span></span> and <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msup><mi mathvariant=\"script\">U</mi><mrow><mi>o</mi><mi>p</mi></mrow></msup></mrow><annotation encoding=\"application/x-tex\">\\mathcal U^{op}</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord\"><span class=\"mord mathcal\" style=\"margin-right:0.09931em;\">U</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.664392em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mathdefault mtight\">o</span><span class=\"mord mathdefault mtight\">p</span></span></span></span></span></span></span></span></span></span></span></span>, although perhaps it would be convenient to be able to do that rather than carrying around proofs of variance.</p>",
+        "id": 192333159,
+        "sender_full_name": "Dan Doel",
+        "timestamp": 1585613819
+    },
+    {
+        "content": "<p>Although the 'win' with identities/paths is that <em>everything</em> respects them, so you don't need to carry around anything. If not everything respects directed maps in the same way, I'm unclear what the win is on carrying around the information in one way or another.</p>",
+        "id": 192333392,
+        "sender_full_name": "Dan Doel",
+        "timestamp": 1585614066
+    },
+    {
+        "content": "<p><span class=\"user-mention\" data-user-id=\"276072\">@sarahzrf</span> 2-categories such as Cat and Preord are not autonomous; the duality is just a \"2-contravariant involution\".  You can make it an autonomous duality if you move to the bicategory Prof instead, or a star-autonomous duality if you use multivariable adjunctions, but the internal languages of those cases are even murkier.</p>",
+        "id": 192333516,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1585614232
+    },
+    {
+        "content": "<p>ah</p>",
+        "id": 192333561,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1585614247
+    },
+    {
+        "content": "<p><span class=\"user-mention\" data-user-id=\"277270\">@Dan Doel</span> You can make it implicit there because the universe <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"script\">U</mi></mrow><annotation encoding=\"application/x-tex\">\\mathcal{U}</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord\"><span class=\"mord mathcal\" style=\"margin-right:0.09931em;\">U</span></span></span></span></span> doesn't carry within it the notion of \"morphism\": it's only an <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"normal\">∞</mi></mrow><annotation encoding=\"application/x-tex\">\\infty</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.43056em;vertical-align:0em;\"></span><span class=\"mord\">∞</span></span></span></span>-groupoid, not a category structure of any sort.  It just so happens that there is a type constructor <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>→</mo></mrow><annotation encoding=\"application/x-tex\">\\to</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.36687em;vertical-align:0em;\"></span><span class=\"mrel\">→</span></span></span></span> that <em>can</em> be used to make <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"script\">U</mi></mrow><annotation encoding=\"application/x-tex\">\\mathcal{U}</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord\"><span class=\"mord mathcal\" style=\"margin-right:0.09931em;\">U</span></span></span></span></span> into a category, but there are also other choices of ways to make <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"script\">U</mi></mrow><annotation encoding=\"application/x-tex\">\\mathcal{U}</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord\"><span class=\"mord mathcal\" style=\"margin-right:0.09931em;\">U</span></span></span></span></span> into a category.</p>\n<p>You can get plenty of win from knowing that <em>some</em> things respect morphisms, even if you don't know that <em>everything</em> does, as long as you have sensible and useful rules for deducing <em>which</em> things respect morphisms.</p>",
+        "id": 192333649,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1585614362
+    }
+]

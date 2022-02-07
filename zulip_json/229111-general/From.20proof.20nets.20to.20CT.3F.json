@@ -1,0 +1,68 @@
+[
+    {
+        "content": "<p>Plugging in proof nets visually resemble composition in category theory. Though proof nets require a \"graphical criterion\". I wonder how this connects to CT?</p>\n<p>I recently came up with a variation of proof nets, attempting to solve control node accumulation problem of optimal reduction. <a href=\"http://boxbase.org/entries/2020/jun/1/cll-normaliser/\">http://boxbase.org/entries/2020/jun/1/cll-normaliser/</a></p>\n<p>Though when trying to come up with notions of what is a valid structure, it's getting complicated. I wonder if there is something that'd help in determining that? I think that it'd be particularly useful to identify natural transformations in proof nets.</p>",
+        "id": 199366545,
+        "sender_full_name": "Henri Tuhola",
+        "timestamp": 1591017156
+    },
+    {
+        "content": "<p>I've seen some work on this where you view proof nets as a \"shadow\" (projection) of a higher dimensional diagram, and the roundtrip condition vanishes and becomes ordinary higher-ish category theory.... let me see if I can find the paper</p>",
+        "id": 199368789,
+        "sender_full_name": "Jules Hedges",
+        "timestamp": 1591018251
+    },
+    {
+        "content": "<p>Pretty sure the paper I was thinking of is \"surface proofs for nonsymmetric linear logic\" by Dunn and Vicary: <a href=\"https://arxiv.org/abs/1701.04917\">https://arxiv.org/abs/1701.04917</a></p>",
+        "id": 199369019,
+        "sender_full_name": "Jules Hedges",
+        "timestamp": 1591018376
+    },
+    {
+        "content": "<p>Roughly, the graphical criterion comes from the following:<br>\nThe “natural” categorical semantics of MLL natural deduction -- in “representable *-polycategories” -- is partially non-algebraic, in the sense that the 'minimal' model containing only valid proof-objects is not given by “composites of certain generators/diagrams, quotiented by certain relations”.<br>\nProof nets are one way of “algebraicising” things, by introducing both 'new ways of composing things' and 'new generators', so that to each proof it is possible to assign a unique proof-object, but now there's also spurious proof-objects.<br>\nThe “acyclicity” criterion corresponds roughly to preventing misuse of the new  compositions and the “connectedness” criterion to preventing the use of the new generators to connect things that would not otherwise be connected (sorry this is quite handwavy).</p>\n<p>You can think of the following as an analogy: the theory of fields is non-algebraic because the operation of multiplicative inversion is not total. But you can decide to throw in a formal inverse of 0, and go about proving things about this “algebraicised” version of a field (these are called 'meadows' if I recall correctly). For your proofs to be valid for fields, however, you would have to use some “correctness criterion” ensuring that you have never made essential use of the inverse of 0.</p>",
+        "id": 199386571,
+        "sender_full_name": "Amar Hadzihasanovic",
+        "timestamp": 1591027109
+    },
+    {
+        "content": "<p>So you may want to try to follow this pattern for whatever application you are thinking of: find a 'natural' semantics for your proofs which may involve non-algebraic operations such as factorisations of diagrams, then “algebraicise” and see if you can exclude the spurious proof-objects that you end up creating by some combinatorial criterion.</p>",
+        "id": 199387183,
+        "sender_full_name": "Amar Hadzihasanovic",
+        "timestamp": 1591027370
+    },
+    {
+        "content": "<p>So if I start with sum type, for indexing the type would be: (a+b | ~a), then I'd have to write down how this interacts with ((~a &amp; ~b) | a | b). After that build up the constraints. Well that's true. It's a good idea to write those things down even if the actual criteria for validity is stricter than that.</p>",
+        "id": 199390552,
+        "sender_full_name": "Henri Tuhola",
+        "timestamp": 1591028929
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"275901\">Jules Hedges</span> <a href=\"#narrow/stream/229111-general/topic/From.20proof.20nets.20to.20CT.3F/near/199369019\">said</a>:</p>\n<blockquote>\n<p>Pretty sure the paper I was thinking of is \"surface proofs for nonsymmetric linear logic\" by Dunn and Vicary: <a href=\"https://arxiv.org/abs/1701.04917\">https://arxiv.org/abs/1701.04917</a></p>\n</blockquote>\n<p>I've drawn diagrams like in this paper when trying to examine normalisation in cartesian closed categories. The 2D diagrams lines represent functor morphisms and points are types.</p>\n<p>Translations into proof nets present projections or \"shadows\" and capture the roundtrip condition. That's useful observation, but other than that I feel it doesn't bring out how to proceed after you've produced 3D surface diagrams from proofs.</p>",
+        "id": 199891721,
+        "sender_full_name": "Henri Tuhola",
+        "timestamp": 1591370358
+    },
+    {
+        "content": "<p>I figured I can assign a justification \"stack\" for each edge. When they are connected, the justifications should match and when such justification is used, it pops off. Then the roundtrip condition captures the rest of validity conditions.</p>\n<p>Though, it creates a very strict graph. It means that if I have two products that are interacting, then another of them splits into two, for each halve of the other product. But examining it closer, I don't think it would work without being strict in this way.</p>",
+        "id": 199894631,
+        "sender_full_name": "Henri Tuhola",
+        "timestamp": 1591371584
+    },
+    {
+        "content": "<p>Ended up constructing a *-autonomous monoidal category and \"validifier\" for that in Haskell. <a href=\"https://gist.github.com/cheery/c19e0709d92f5ab50c7d7f9ac05235ec\">https://gist.github.com/cheery/c19e0709d92f5ab50c7d7f9ac05235ec</a></p>\n<p>So I got these two extremes now. I either have \"easy to normalise\" structures that are hard to verify correct, or then simple structures that are hard to normalise and hard to convert into proof nets&amp;back, but otherwise easy to study.</p>",
+        "id": 200525950,
+        "sender_full_name": "Henri Tuhola",
+        "timestamp": 1591870595
+    },
+    {
+        "content": "<p>If I start taking things \"apart\", I eventually arrive to the proof nets from there. But if I do so the checking for said structures becomes much harder.</p>",
+        "id": 200526580,
+        "sender_full_name": "Henri Tuhola",
+        "timestamp": 1591871087
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"296269\">Henri Tuhola</span> <a href=\"#narrow/stream/229111-general/topic/From.20proof.20nets.20to.20CT.3F/near/199891721\">said</a>:</p>\n<blockquote>\n<p><span class=\"user-mention silent\" data-user-id=\"275901\">Jules Hedges</span> <a href=\"#narrow/stream/229111-general/topic/From.20proof.20nets.20to.20CT.3F/near/199369019\">said</a>:</p>\n<blockquote>\n<p>Pretty sure the paper I was thinking of is \"surface proofs for nonsymmetric linear logic\" by Dunn and Vicary: <a href=\"https://arxiv.org/abs/1701.04917\">https://arxiv.org/abs/1701.04917</a></p>\n</blockquote>\n<p>I've drawn diagrams like in this paper when trying to examine normalisation in cartesian closed categories. The 2D diagrams lines represent functor morphisms and points are types.</p>\n<p>Translations into proof nets present projections or \"shadows\" and capture the roundtrip condition. That's useful observation, but other than that I feel it doesn't bring out how to proceed after you've produced 3D surface diagrams from proofs.</p>\n</blockquote>\n<p>The axioms for thinning links in Cockett and Seely's paper is so unintuitive and annoying.  It really is more appropriate to think of the units in this higher dimensional setting, in my opinion.</p>",
+        "id": 200591442,
+        "sender_full_name": "Cole Comfort",
+        "timestamp": 1591902717
+    }
+]

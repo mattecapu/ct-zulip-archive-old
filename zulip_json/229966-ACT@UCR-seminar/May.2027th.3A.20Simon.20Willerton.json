@@ -1,0 +1,776 @@
+[
+    {
+        "content": "<p>In the ninth talk of the ACT@UCR seminar, <a href=\"https://maths.dept.shef.ac.uk/maths/staff_info_17.html\">Simon Willerton</a> will tell us about a categorical approach to the Legendre transform, and its connection to tropical algebra. </p>\n<p>He will give his talk on Wednesday May 27th at 5 pm UTC, which is 10 am in California, or 1 pm on the east coast of the United States, or 6 pm in the UK. It will be held online via Zoom, here:</p>\n<p><a href=\"https://ucr.zoom.us/j/607160601\">https://ucr.zoom.us/j/607160601</a></p>\n<p>You can see his slides here:</p>\n<ul>\n<li>Simon Willerton, <a href=\"http://math.ucr.edu/home/baez/mathematical/ACTUCR/Willerton_Legendre_Transform.pdf\">The Legendre–Fenchel transform from a category theoretic perspective</a>.</li>\n</ul>\n<blockquote>\n<p><strong>Abstract.</strong> The Legendre-Fenchel transform is a classical piece of mathematics with many applications. In this talk I’ll show how it arises in the context of category theory using categories enriched over the extended real numbers <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mover accent=\"true\"><mi mathvariant=\"double-struck\">R</mi><mo stretchy=\"true\">‾</mo></mover><mo>:</mo><mo>=</mo><mo stretchy=\"false\">[</mo><mo>−</mo><mi mathvariant=\"normal\">∞</mi><mo separator=\"true\">,</mo><mo>+</mo><mi mathvariant=\"normal\">∞</mi><mo stretchy=\"false\">]</mo></mrow><annotation encoding=\"application/x-tex\">\\overline{ \\mathbb{R}}:=[-\\infty,+\\infty]</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8888900000000001em;vertical-align:0em;\"></span><span class=\"mord overline\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.8888900000000001em;\"><span style=\"top:-3em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"mord\"><span class=\"mord\"><span class=\"mord mathbb\">R</span></span></span></span><span style=\"top:-3.80889em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"overline-line\" style=\"border-bottom-width:0.04em;\"></span></span></span></span></span></span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">:</span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.36687em;vertical-align:0em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mopen\">[</span><span class=\"mord\">−</span><span class=\"mord\">∞</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mord\">+</span><span class=\"mord\">∞</span><span class=\"mclose\">]</span></span></span></span>. It turns out that it arises out of nothing more than the pairing between a vector space and its dual in the same way that the many classical dualities (e.g. in Galois theory or algebraic geometry) arise from a relation between sets.</p>\n<p>I won’t assume knowledge of the Legendre-Fenchel transform.</p>\n</blockquote>",
+        "id": 198718199,
+        "sender_full_name": "John Baez",
+        "timestamp": 1590464896
+    },
+    {
+        "content": "<p>Simon's talk is based on this paper:</p>\n<p>• Simon Willerton, <a href=\"https://arxiv.org/abs/1501.03791\">The Legendre-Fenchel transform from a category theoretic perspective</a>.</p>\n<p>Also see his blog article:</p>\n<p>• Simon Willerton, <a href=\"https://golem.ph.utexas.edu/category/2013/08/the_nucleus_of_a_profunctor_so.html\">The nucleus of a profunctor: some categorified linear algebra</a>, <em>The n-Category Café</em>.</p>",
+        "id": 198786764,
+        "sender_full_name": "John Baez",
+        "timestamp": 1590510062
+    },
+    {
+        "content": "<p>Unless I'm confused, this talk (and all the future ones) aren't on the categorytheory.world calendar</p>",
+        "id": 198875956,
+        "sender_full_name": "Jules Hedges",
+        "timestamp": 1590577044
+    },
+    {
+        "content": "<p>who's in charge of putting things on that calendar?</p>",
+        "id": 198916136,
+        "sender_full_name": "Joe Moeller",
+        "timestamp": 1590596521
+    },
+    {
+        "content": "<p>wtf i love analysis now</p>",
+        "id": 198928889,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1590602577
+    },
+    {
+        "content": "<p>so the thing i was saying about groupoid cores—</p>",
+        "id": 198931471,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1590603689
+    },
+    {
+        "content": "<p>ive had this definition in my depleted category theory development</p>\n<div class=\"codehilite\"><pre><span></span><code><span class=\"kn\">Definition</span> <span class=\"n\">core_rel</span> <span class=\"o\">{</span><span class=\"n\">X</span><span class=\"o\">}</span> <span class=\"o\">(</span><span class=\"n\">R</span> <span class=\"o\">:</span> <span class=\"n\">X</span> <span class=\"o\">-&gt;</span> <span class=\"n\">X</span> <span class=\"o\">-&gt;</span> <span class=\"kt\">Prop</span><span class=\"o\">)</span> <span class=\"o\">:</span> <span class=\"n\">X</span> <span class=\"o\">-&gt;</span> <span class=\"n\">X</span> <span class=\"o\">-&gt;</span> <span class=\"kt\">Prop</span> <span class=\"o\">:=</span> <span class=\"k\">fun</span> <span class=\"n\">a1</span> <span class=\"n\">a2</span> <span class=\"o\">=&gt;</span> <span class=\"n\">R</span> <span class=\"n\">a1</span> <span class=\"n\">a2</span> <span class=\"o\">/\\</span> <span class=\"n\">R</span> <span class=\"n\">a2</span> <span class=\"n\">a1</span><span class=\"o\">.</span>\n</code></pre></div>",
+        "id": 198931593,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1590603732
+    },
+    {
+        "content": "<p>basically i've figured that if you have a preorder <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>R</mi></mrow><annotation encoding=\"application/x-tex\">R</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathdefault\" style=\"margin-right:0.00773em;\">R</span></span></span></span>, then its core is given by <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>a</mi><mo>C</mo><mi>b</mi><mtext>  </mtext><mo>⟺</mo><mtext>  </mtext><mi>a</mi><mo>R</mo><mi>b</mi><mo>∧</mo><mi>b</mi><mo>R</mo><mi>a</mi></mrow><annotation encoding=\"application/x-tex\">a \\mathrel C b \\iff a \\mathrel R b \\land b \\mathrel R a</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathdefault\">a</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\"><span class=\"mord mathdefault\" style=\"margin-right:0.07153em;\">C</span></span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.71844em;vertical-align:-0.024em;\"></span><span class=\"mord mathdefault\">b</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">⟺</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathdefault\">a</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\"><span class=\"mord mathdefault\" style=\"margin-right:0.00773em;\">R</span></span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.69444em;vertical-align:0em;\"></span><span class=\"mord mathdefault\">b</span><span class=\"mspace\" style=\"margin-right:0.2222222222222222em;\"></span><span class=\"mbin\">∧</span><span class=\"mspace\" style=\"margin-right:0.2222222222222222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.69444em;vertical-align:0em;\"></span><span class=\"mord mathdefault\">b</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\"><span class=\"mord mathdefault\" style=\"margin-right:0.00773em;\">R</span></span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.43056em;vertical-align:0em;\"></span><span class=\"mord mathdefault\">a</span></span></span></span></p>",
+        "id": 198931658,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1590603776
+    },
+    {
+        "content": "<p>which seems rather related to <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msup><mi>d</mi><mo lspace=\"0em\" mathvariant=\"normal\" rspace=\"0em\">′</mo></msup><mo stretchy=\"false\">(</mo><mi>x</mi><mo separator=\"true\">,</mo><mi>y</mi><mo stretchy=\"false\">)</mo><mo>=</mo><mi>max</mi><mo>⁡</mo><mo stretchy=\"false\">{</mo><mi>d</mi><mo stretchy=\"false\">(</mo><mi>x</mi><mo separator=\"true\">,</mo><mi>y</mi><mo stretchy=\"false\">)</mo><mo separator=\"true\">,</mo><mtext> </mtext><mi>d</mi><mo stretchy=\"false\">(</mo><mi>y</mi><mo separator=\"true\">,</mo><mi>x</mi><mo stretchy=\"false\">)</mo><mo stretchy=\"false\">}</mo></mrow><annotation encoding=\"application/x-tex\">d'(x, y) = \\max \\{d(x, y),\\ d(y, x)\\}</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:1.001892em;vertical-align:-0.25em;\"></span><span class=\"mord\"><span class=\"mord mathdefault\">d</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.751892em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\">′</span></span></span></span></span></span></span></span></span><span class=\"mopen\">(</span><span class=\"mord mathdefault\">x</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mord mathdefault\" style=\"margin-right:0.03588em;\">y</span><span class=\"mclose\">)</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mop\">max</span><span class=\"mopen\">{</span><span class=\"mord mathdefault\">d</span><span class=\"mopen\">(</span><span class=\"mord mathdefault\">x</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mord mathdefault\" style=\"margin-right:0.03588em;\">y</span><span class=\"mclose\">)</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mspace\"> </span><span class=\"mord mathdefault\">d</span><span class=\"mopen\">(</span><span class=\"mord mathdefault\" style=\"margin-right:0.03588em;\">y</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mord mathdefault\">x</span><span class=\"mclose\">)</span><span class=\"mclose\">}</span></span></span></span></p>",
+        "id": 198931716,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1590603806
+    },
+    {
+        "content": "<p>q1: pointer to \"concept lattice\"</p>",
+        "id": 198932137,
+        "sender_full_name": "eric brunner-williams (uoregon)",
+        "timestamp": 1590603988
+    },
+    {
+        "content": "<p>q2: pointer to paper(s) on server placement(s).</p>",
+        "id": 198932348,
+        "sender_full_name": "eric brunner-williams (uoregon)",
+        "timestamp": 1590604076
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"275914\">Joe Moeller</span> <a href=\"#narrow/stream/229966-ACT.40UCR-seminar/topic/May.2027th.3A.20Simon.20Willerton/near/198916136\">said</a>:</p>\n<blockquote>\n<p>who's in charge of putting things on that calendar?</p>\n</blockquote>\n<p>Maybe <span class=\"user-mention\" data-user-id=\"276867\">@Daniel Geisler</span>?   He got the initial list of talks we gave him, but probably not the last few talks of this series, since we hadn't nailed them down.</p>",
+        "id": 198932740,
+        "sender_full_name": "John Baez",
+        "timestamp": 1590604250
+    },
+    {
+        "content": "<p>Hi, Simon!</p>",
+        "id": 198932761,
+        "sender_full_name": "John Baez",
+        "timestamp": 1590604260
+    },
+    {
+        "content": "<p>I'd like to get more intuition in the case of ordinary categories C, what happens when you take the nucleus of the profunctor hom: <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msup><mi>C</mi><mrow><mi mathvariant=\"normal\">o</mi><mi mathvariant=\"normal\">p</mi></mrow></msup><mo>×</mo><mi>C</mi><mo>→</mo></mrow><annotation encoding=\"application/x-tex\">{C}^{\\mathrm{op}} \\times C \\rightarrow</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.76666em;vertical-align:-0.08333em;\"></span><span class=\"mord\"><span class=\"mord\"><span class=\"mord mathdefault\" style=\"margin-right:0.07153em;\">C</span></span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.664392em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\"><span class=\"mord mathrm mtight\">o</span><span class=\"mord mathrm mtight\">p</span></span></span></span></span></span></span></span></span></span><span class=\"mspace\" style=\"margin-right:0.2222222222222222em;\"></span><span class=\"mbin\">×</span><span class=\"mspace\" style=\"margin-right:0.2222222222222222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathdefault\" style=\"margin-right:0.07153em;\">C</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">→</span></span></span></span> Set.</p>",
+        "id": 198932888,
+        "sender_full_name": "John Baez",
+        "timestamp": 1590604322
+    },
+    {
+        "content": "<p>Hi!</p>",
+        "id": 198932945,
+        "sender_full_name": "Simon Willerton",
+        "timestamp": 1590604341
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"295459\">t.eric.brunner</span> <a href=\"#narrow/stream/229966-ACT.40UCR-seminar/topic/May.2027th.3A.20Simon.20Willerton/near/198932348\">said</a>:</p>\n<blockquote>\n<p>q2: pointer to paper(s) on server placement(s).</p>\n</blockquote>\n<p>M. Chrobak and L. L. Larmore, Generosity helps or an 11-competitive algorithm for three servers, Journal of Algorithms 16 (1994), 234–263.</p>",
+        "id": 198932998,
+        "sender_full_name": "Simon Willerton",
+        "timestamp": 1590604367
+    },
+    {
+        "content": "<p>Wow, Marek Chrobak is in computer science at UCR!</p>",
+        "id": 198933036,
+        "sender_full_name": "John Baez",
+        "timestamp": 1590604384
+    },
+    {
+        "content": "<p>i think maybe what i'm describing up there has something to do with taking the category <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msup><mi>C</mi><mrow><mi mathvariant=\"normal\">o</mi><mi mathvariant=\"normal\">p</mi></mrow></msup><mo>×</mo><mi>C</mi></mrow><annotation encoding=\"application/x-tex\">C^{\\mathrm{op}} \\times C</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.76666em;vertical-align:-0.08333em;\"></span><span class=\"mord\"><span class=\"mord mathdefault\" style=\"margin-right:0.07153em;\">C</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.664392em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\"><span class=\"mord mathrm mtight\">o</span><span class=\"mord mathrm mtight\">p</span></span></span></span></span></span></span></span></span></span><span class=\"mspace\" style=\"margin-right:0.2222222222222222em;\"></span><span class=\"mbin\">×</span><span class=\"mspace\" style=\"margin-right:0.2222222222222222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathdefault\" style=\"margin-right:0.07153em;\">C</span></span></span></span></p>",
+        "id": 198933083,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1590604410
+    },
+    {
+        "content": "<p>oh, how is ucr's cs dept? <span aria-label=\"eyes\" class=\"emoji emoji-1f440\" role=\"img\" title=\"eyes\">:eyes:</span></p>",
+        "id": 198933113,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1590604430
+    },
+    {
+        "content": "<p>i should start making a list of schools to look into...</p>",
+        "id": 198933123,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1590604436
+    },
+    {
+        "content": "<p>thanks!</p>",
+        "id": 198933185,
+        "sender_full_name": "eric brunner-williams (uoregon)",
+        "timestamp": 1590604447
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276072\">sarahzrf</span> <a href=\"#narrow/stream/229966-ACT.40UCR-seminar/topic/May.2027th.3A.20Simon.20Willerton/near/198933113\">said</a>:</p>\n<blockquote>\n<p>oh, how is ucr's cs dept? <span aria-label=\"eyes\" class=\"emoji emoji-1f440\" role=\"img\" title=\"eyes\">:eyes:</span></p>\n</blockquote>\n<p>I have no idea.  The only person I talk to there is Tom Payne, who used to be in logic in the math department, and was then head of CS for a while, and is now retired I believe.   I don't think there's anyone doing category theory there.</p>",
+        "id": 198933452,
+        "sender_full_name": "John Baez",
+        "timestamp": 1590604569
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276072\">sarahzrf</span> <a href=\"#narrow/stream/229966-ACT.40UCR-seminar/topic/May.2027th.3A.20Simon.20Willerton/near/198931658\">said</a>:</p>\n<blockquote>\n<p>basically i've figured that if you have a preorder <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>R</mi></mrow><annotation encoding=\"application/x-tex\">R</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathdefault\" style=\"margin-right:0.00773em;\">R</span></span></span></span>, then its core is given by <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>a</mi><mo>C</mo><mi>b</mi><mtext>  </mtext><mo>⟺</mo><mtext>  </mtext><mi>a</mi><mo>R</mo><mi>b</mi><mo>∧</mo><mi>b</mi><mo>R</mo><mi>a</mi></mrow><annotation encoding=\"application/x-tex\">a \\mathrel C b \\iff a \\mathrel R b \\land b \\mathrel R a</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathdefault\">a</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\"><span class=\"mord mathdefault\" style=\"margin-right:0.07153em;\">C</span></span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.71844em;vertical-align:-0.024em;\"></span><span class=\"mord mathdefault\">b</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">⟺</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathdefault\">a</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\"><span class=\"mord mathdefault\" style=\"margin-right:0.00773em;\">R</span></span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.69444em;vertical-align:0em;\"></span><span class=\"mord mathdefault\">b</span><span class=\"mspace\" style=\"margin-right:0.2222222222222222em;\"></span><span class=\"mbin\">∧</span><span class=\"mspace\" style=\"margin-right:0.2222222222222222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.69444em;vertical-align:0em;\"></span><span class=\"mord mathdefault\">b</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\"><span class=\"mord mathdefault\" style=\"margin-right:0.00773em;\">R</span></span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.43056em;vertical-align:0em;\"></span><span class=\"mord mathdefault\">a</span></span></span></span></p>\n</blockquote>\n<p>I believe we can define a dagger-category in the enriched setting - an enriched category <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>C</mi></mrow><annotation encoding=\"application/x-tex\">C</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathdefault\" style=\"margin-right:0.07153em;\">C</span></span></span></span> with an enriched <em>contravariant</em> functor <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>†</mo><mo>:</mo><mi>C</mi><mo>→</mo><mi>C</mi></mrow><annotation encoding=\"application/x-tex\">\\dagger:  C \\to C</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8888799999999999em;vertical-align:-0.19444em;\"></span><span class=\"mord\">†</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">:</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathdefault\" style=\"margin-right:0.07153em;\">C</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">→</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathdefault\" style=\"margin-right:0.07153em;\">C</span></span></span></span> that's the identity on objects and squares to the identity.   And then I believe a <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"false\">[</mo><mn>0</mn><mo separator=\"true\">,</mo><mi mathvariant=\"normal\">∞</mi><mo stretchy=\"false\">]</mo></mrow><annotation encoding=\"application/x-tex\">[0,\\infty]</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mopen\">[</span><span class=\"mord\">0</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mord\">∞</span><span class=\"mclose\">]</span></span></span></span>-enriched dagger category is a Lawvere metric space where the metric is <em>symmetric</em>.</p>",
+        "id": 198933887,
+        "sender_full_name": "John Baez",
+        "timestamp": 1590604770
+    },
+    {
+        "content": "<p>I bet enriched dagger-categories are more general than \"enriched groupoids\" in general (does anyone talk about enriched groupoids?).</p>",
+        "id": 198933995,
+        "sender_full_name": "John Baez",
+        "timestamp": 1590604812
+    },
+    {
+        "content": "<p>thanks! now i see their literature.</p>",
+        "id": 198934030,
+        "sender_full_name": "eric brunner-williams (uoregon)",
+        "timestamp": 1590604830
+    },
+    {
+        "content": "<p>yeah i seem to recall seeming reference to the same point on the nlab</p>",
+        "id": 198934072,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1590604850
+    },
+    {
+        "content": "<p>i think even on the page for lawvere metric spaces... :)</p>",
+        "id": 198934088,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1590604857
+    },
+    {
+        "content": "<p>I bet a Truth-enriched dagger-category is a set with an equivalence relation.  Hmm, but this may also be Truth-enriched groupoid.</p>",
+        "id": 198934095,
+        "sender_full_name": "John Baez",
+        "timestamp": 1590604861
+    },
+    {
+        "content": "<p>So in that case the notions of enriched dagger-category and enriched groupoid may agree.</p>",
+        "id": 198934145,
+        "sender_full_name": "John Baez",
+        "timestamp": 1590604892
+    },
+    {
+        "content": "<p>a \"setoid\"</p>",
+        "id": 198934159,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1590604900
+    },
+    {
+        "content": "<p>I'm still hoping for you to answer my question, <span class=\"user-mention\" data-user-id=\"276935\">@Simon Willerton</span>:</p>",
+        "id": 198934187,
+        "sender_full_name": "John Baez",
+        "timestamp": 1590604909
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"275920\">John Baez</span> <a href=\"#narrow/stream/229966-ACT.40UCR-seminar/topic/May.2027th.3A.20Simon.20Willerton/near/198932888\">said</a>:</p>\n<blockquote>\n<p>I'd like to get more intuition in the case of ordinary categories C, what happens when you take the nucleus of the profunctor hom: <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msup><mi>C</mi><mrow><mi mathvariant=\"normal\">o</mi><mi mathvariant=\"normal\">p</mi></mrow></msup><mo>×</mo><mi>C</mi><mo>→</mo></mrow><annotation encoding=\"application/x-tex\">{C}^{\\mathrm{op}} \\times C \\rightarrow</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.76666em;vertical-align:-0.08333em;\"></span><span class=\"mord\"><span class=\"mord\"><span class=\"mord mathdefault\" style=\"margin-right:0.07153em;\">C</span></span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.664392em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\"><span class=\"mord mathrm mtight\">o</span><span class=\"mord mathrm mtight\">p</span></span></span></span></span></span></span></span></span></span><span class=\"mspace\" style=\"margin-right:0.2222222222222222em;\"></span><span class=\"mbin\">×</span><span class=\"mspace\" style=\"margin-right:0.2222222222222222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathdefault\" style=\"margin-right:0.07153em;\">C</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">→</span></span></span></span> Set.</p>\n</blockquote>",
+        "id": 198934208,
+        "sender_full_name": "John Baez",
+        "timestamp": 1590604920
+    },
+    {
+        "content": "<p>I trying to think and remember.</p>",
+        "id": 198934266,
+        "sender_full_name": "Simon Willerton",
+        "timestamp": 1590604933
+    },
+    {
+        "content": "<p>Okay!</p>",
+        "id": 198934291,
+        "sender_full_name": "John Baez",
+        "timestamp": 1590604948
+    },
+    {
+        "content": "<p>It's a while since I thought of non-poset-enriched examples!</p>",
+        "id": 198934316,
+        "sender_full_name": "Simon Willerton",
+        "timestamp": 1590604964
+    },
+    {
+        "content": "<p>My sense from the discussion during the talk was this is the Isbell envelope?</p>",
+        "id": 198934450,
+        "sender_full_name": "Gershom",
+        "timestamp": 1590605036
+    },
+    {
+        "content": "<p>For a second I was getting excited because Dusko was raising the subject of some way to simultaneously complete and cocomplete a category, that was more \"even-handed\" than taking presheaves.</p>",
+        "id": 198934472,
+        "sender_full_name": "John Baez",
+        "timestamp": 1590605043
+    },
+    {
+        "content": "<p>Maybe it <em>is</em> the Isbell envelope; I don't know anything about that or what it's like.</p>",
+        "id": 198934539,
+        "sender_full_name": "John Baez",
+        "timestamp": 1590605072
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"275920\">John Baez</span> <a href=\"#narrow/stream/229966-ACT.40UCR-seminar/topic/May.2027th.3A.20Simon.20Willerton/near/198933995\">said</a>:</p>\n<blockquote>\n<p>I bet enriched dagger-categories are more general than \"enriched groupoids\" in general (does anyone talk about enriched groupoids?).</p>\n</blockquote>\n<p>There's a little here: <a href=\"https://ncatlab.org/nlab/show/metric+space#LawvereMetricSpace\">https://ncatlab.org/nlab/show/metric+space#LawvereMetricSpace</a></p>",
+        "id": 198934552,
+        "sender_full_name": "Paolo Perrone",
+        "timestamp": 1590605079
+    },
+    {
+        "content": "<p>Nice:</p>\n<blockquote>\n<p>Note that when enriching over a cartesian monoidal poset, there is no difference between a †-category and a groupoid, so ultrametric spaces can also be regarded as enriched groupoids, which is perhaps a more familiar concept.</p>\n</blockquote>",
+        "id": 198934627,
+        "sender_full_name": "John Baez",
+        "timestamp": 1590605112
+    },
+    {
+        "content": "<p>(i guess more like the category of saturated objects in the isbell envelope, hmm...)</p>",
+        "id": 198934816,
+        "sender_full_name": "Gershom",
+        "timestamp": 1590605188
+    },
+    {
+        "content": "<p>i see references in the ml literature, but i was expecting something more logic, and less data.</p>",
+        "id": 198934935,
+        "sender_full_name": "eric brunner-williams (uoregon)",
+        "timestamp": 1590605235
+    },
+    {
+        "content": "<p>I have no idea what the Isbell envelope is, or \"saturated objects\", or what they're <em>like</em>.</p>",
+        "id": 198935154,
+        "sender_full_name": "John Baez",
+        "timestamp": 1590605326
+    },
+    {
+        "content": "<p>I guess I need to read about this stuff.</p>",
+        "id": 198935171,
+        "sender_full_name": "John Baez",
+        "timestamp": 1590605338
+    },
+    {
+        "content": "<p>thanks buckets to simon for an interesting hour and then some.</p>",
+        "id": 198935202,
+        "sender_full_name": "eric brunner-williams (uoregon)",
+        "timestamp": 1590605349
+    },
+    {
+        "content": "<p>I'll ask another question: how can we get this approach to the Legendre transform to generalize to the Laplace transform?   It's already known that the Laplace transform has the Legendre transform as a \"zero-temperature limit\".</p>\n<p>There's a rig depending on temperature <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>T</mi><mo>∈</mo><mo stretchy=\"false\">[</mo><mn>0</mn><mo separator=\"true\">,</mo><mi mathvariant=\"normal\">∞</mi><mo stretchy=\"false\">]</mo></mrow><annotation encoding=\"application/x-tex\">T \\in [0,\\infty]</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.72243em;vertical-align:-0.0391em;\"></span><span class=\"mord mathdefault\" style=\"margin-right:0.13889em;\">T</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">∈</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mopen\">[</span><span class=\"mord\">0</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mord\">∞</span><span class=\"mclose\">]</span></span></span></span> s.t. for <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>T</mi><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding=\"application/x-tex\">T &gt; 0</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.72243em;vertical-align:-0.0391em;\"></span><span class=\"mord mathdefault\" style=\"margin-right:0.13889em;\">T</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">&gt;</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.64444em;vertical-align:0em;\"></span><span class=\"mord\">0</span></span></span></span> we can use this rig to define a Laplace transform, and as <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>T</mi><mo>→</mo><mn>0</mn></mrow><annotation encoding=\"application/x-tex\">T \\to 0</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathdefault\" style=\"margin-right:0.13889em;\">T</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">→</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.64444em;vertical-align:0em;\"></span><span class=\"mord\">0</span></span></span></span> it converges to the Legendre transform.   This is the idea of \"idempotent analysis\".</p>",
+        "id": 198935428,
+        "sender_full_name": "John Baez",
+        "timestamp": 1590605445
+    },
+    {
+        "content": "<p><span class=\"user-mention\" data-user-id=\"276072\">@sarahzrf</span> in your depleted stuff, do you have a nice characterization in simple order-theoretic terms of what a profunctor is? I have a decent sense, I think, but if you worked out the details it would be interesting.</p>",
+        "id": 198935443,
+        "sender_full_name": "Gershom",
+        "timestamp": 1590605449
+    },
+    {
+        "content": "<p>yeah it's a relation satisfying a \"rule of consequence\"</p>\n<p><span class=\"katex-display\"><span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mfrac><mrow><msup><mi>a</mi><mo mathvariant=\"normal\" lspace=\"0em\" rspace=\"0em\">′</mo></msup><mo>≤</mo><mi>a</mi><mspace width=\"2em\"/><mi>a</mi><mo>R</mo><mi>b</mi><mspace width=\"2em\"/><mi>b</mi><mo>≤</mo><msup><mi>b</mi><mo mathvariant=\"normal\" lspace=\"0em\" rspace=\"0em\">′</mo></msup></mrow><mrow><msup><mi>a</mi><mo mathvariant=\"normal\" lspace=\"0em\" rspace=\"0em\">′</mo></msup><mo>R</mo><msup><mi>b</mi><mo mathvariant=\"normal\" lspace=\"0em\" rspace=\"0em\">′</mo></msup></mrow></mfrac></mrow><annotation encoding=\"application/x-tex\">\\frac{a&#x27; \\le a \\qquad a \\mathrel R b \\qquad b \\le b&#x27;}{a&#x27; \\mathrel R b&#x27;}</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:2.114892em;vertical-align:-0.686em;\"></span><span class=\"mord\"><span class=\"mopen nulldelimiter\"></span><span class=\"mfrac\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:1.428892em;\"><span style=\"top:-2.314em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"mord\"><span class=\"mord\"><span class=\"mord mathdefault\">a</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.6778919999999999em;\"><span style=\"top:-2.9890000000000003em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\">′</span></span></span></span></span></span></span></span></span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\"><span class=\"mord mathdefault\" style=\"margin-right:0.00773em;\">R</span></span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mord\"><span class=\"mord mathdefault\">b</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.6778919999999999em;\"><span style=\"top:-2.9890000000000003em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\">′</span></span></span></span></span></span></span></span></span></span></span><span style=\"top:-3.23em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"frac-line\" style=\"border-bottom-width:0.04em;\"></span></span><span style=\"top:-3.677em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"mord\"><span class=\"mord\"><span class=\"mord mathdefault\">a</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.751892em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\">′</span></span></span></span></span></span></span></span></span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">≤</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mord mathdefault\">a</span><span class=\"mspace\" style=\"margin-right:2em;\"></span><span class=\"mord mathdefault\">a</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\"><span class=\"mord mathdefault\" style=\"margin-right:0.00773em;\">R</span></span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mord mathdefault\">b</span><span class=\"mspace\" style=\"margin-right:2em;\"></span><span class=\"mord mathdefault\">b</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">≤</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mord\"><span class=\"mord mathdefault\">b</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.751892em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\">′</span></span></span></span></span></span></span></span></span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.686em;\"><span></span></span></span></span></span><span class=\"mclose nulldelimiter\"></span></span></span></span></span></span></p>",
+        "id": 198935531,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1590605506
+    },
+    {
+        "content": "<p>You don't need the \"latex\" here, Simon.  Instead you need <em>double</em> dollar signs!</p>",
+        "id": 198935678,
+        "sender_full_name": "John Baez",
+        "timestamp": 1590605562
+    },
+    {
+        "content": "<p><span aria-label=\"smiling devil\" class=\"emoji emoji-1f608\" role=\"img\" title=\"smiling devil\">:smiling_devil:</span></p>",
+        "id": 198935700,
+        "sender_full_name": "John Baez",
+        "timestamp": 1590605574
+    },
+    {
+        "content": "<p>Yeah, just looked at the source of a post.</p>",
+        "id": 198935740,
+        "sender_full_name": "Simon Willerton",
+        "timestamp": 1590605596
+    },
+    {
+        "content": "<p>Truly irritating.</p>",
+        "id": 198935741,
+        "sender_full_name": "John Baez",
+        "timestamp": 1590605596
+    },
+    {
+        "content": "<p>We do this just to spot outsiders.</p>",
+        "id": 198935783,
+        "sender_full_name": "John Baez",
+        "timestamp": 1590605617
+    },
+    {
+        "content": "<p>I guess it's called a \"shibboleth\".</p>",
+        "id": 198935811,
+        "sender_full_name": "John Baez",
+        "timestamp": 1590605635
+    },
+    {
+        "content": "<p>I was trying to say that in the general case you have an adjunction <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>L</mi><mo>:</mo><mo stretchy=\"false\">[</mo><msup><mi>C</mi><mrow><mi>o</mi><mi>p</mi></mrow></msup><mo separator=\"true\">,</mo><mi>V</mi><mo stretchy=\"false\">]</mo><mo>⇆</mo><mo stretchy=\"false\">[</mo><mi>C</mi><mo separator=\"true\">,</mo><mi>V</mi><msup><mo stretchy=\"false\">]</mo><mrow><mi>o</mi><mi>p</mi></mrow></msup><mo>:</mo><mi>R</mi></mrow><annotation encoding=\"application/x-tex\">L:[C^{op}, V] \\leftrightarrows [C,V]^{op}:R</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathdefault\">L</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">:</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mopen\">[</span><span class=\"mord\"><span class=\"mord mathdefault\" style=\"margin-right:0.07153em;\">C</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.664392em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mathdefault mtight\">o</span><span class=\"mord mathdefault mtight\">p</span></span></span></span></span></span></span></span></span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mord mathdefault\" style=\"margin-right:0.22222em;\">V</span><span class=\"mclose\">]</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel amsrm\">⇆</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mopen\">[</span><span class=\"mord mathdefault\" style=\"margin-right:0.07153em;\">C</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mord mathdefault\" style=\"margin-right:0.22222em;\">V</span><span class=\"mclose\"><span class=\"mclose\">]</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.664392em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mathdefault mtight\">o</span><span class=\"mord mathdefault mtight\">p</span></span></span></span></span></span></span></span></span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">:</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathdefault\" style=\"margin-right:0.00773em;\">R</span></span></span></span>.</p>",
+        "id": 198935994,
+        "sender_full_name": "Simon Willerton",
+        "timestamp": 1590605730
+    },
+    {
+        "content": "<p>If <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>V</mi></mrow><annotation encoding=\"application/x-tex\">V</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathdefault\" style=\"margin-right:0.22222em;\">V</span></span></span></span> is a poset then the monad and comonad are both idempotent which makes things much easier.</p>",
+        "id": 198936106,
+        "sender_full_name": "Simon Willerton",
+        "timestamp": 1590605771
+    },
+    {
+        "content": "<p>Oh, okay.</p>",
+        "id": 198936323,
+        "sender_full_name": "John Baez",
+        "timestamp": 1590605892
+    },
+    {
+        "content": "<p>In the non-poset case such as for Set-categories(!) you don't really want to look at the fixed points of the adjunction, but rather weak fixed points.  And I think that's what the Isbell envelope is.</p>",
+        "id": 198936403,
+        "sender_full_name": "Simon Willerton",
+        "timestamp": 1590605931
+    },
+    {
+        "content": "<p>I did think a lot about this in the past with my student Jonathan Elliott.</p>",
+        "id": 198936431,
+        "sender_full_name": "Simon Willerton",
+        "timestamp": 1590605949
+    },
+    {
+        "content": "<p>Nice!   By \"weak fixed point\" do you mean objects equipped with an isomorphism...?</p>",
+        "id": 198936450,
+        "sender_full_name": "John Baez",
+        "timestamp": 1590605961
+    },
+    {
+        "content": "<p>The isbell envelope page on n-lab suggests to consider the simpler case where C is concrete over Set.</p>",
+        "id": 198936456,
+        "sender_full_name": "Gershom",
+        "timestamp": 1590605965
+    },
+    {
+        "content": "<p>I'll check it out.   Simon's suggestion seems nice because <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"false\">[</mo><msup><mi>C</mi><mrow><mi mathvariant=\"normal\">o</mi><mi mathvariant=\"normal\">p</mi></mrow></msup><mo separator=\"true\">,</mo><mi>S</mi><mi>e</mi><mi>t</mi><mo stretchy=\"false\">]</mo></mrow><annotation encoding=\"application/x-tex\">[C^{\\mathrm{op}},Set]</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mopen\">[</span><span class=\"mord\"><span class=\"mord mathdefault\" style=\"margin-right:0.07153em;\">C</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.664392em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\"><span class=\"mord mathrm mtight\">o</span><span class=\"mord mathrm mtight\">p</span></span></span></span></span></span></span></span></span></span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mord mathdefault\" style=\"margin-right:0.05764em;\">S</span><span class=\"mord mathdefault\">e</span><span class=\"mord mathdefault\">t</span><span class=\"mclose\">]</span></span></span></span> is presheaves, which is the free cocompletion, but then we're tweaking that a bit... in a way I don't really grok.</p>",
+        "id": 198936642,
+        "sender_full_name": "John Baez",
+        "timestamp": 1590606060
+    },
+    {
+        "content": "<p>Either weak or possibly lax.  You wouldn't take, say, a presheaf <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>f</mi><mo>∈</mo><mo stretchy=\"false\">[</mo><msup><mi>C</mi><mrow><mi>o</mi><mi>p</mi></mrow></msup><mo separator=\"true\">,</mo><mi>S</mi><mi>e</mi><mi>t</mi><mo stretchy=\"false\">]</mo></mrow><annotation encoding=\"application/x-tex\">f\\in [C^{op},Set]</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8888799999999999em;vertical-align:-0.19444em;\"></span><span class=\"mord mathdefault\" style=\"margin-right:0.10764em;\">f</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">∈</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mopen\">[</span><span class=\"mord\"><span class=\"mord mathdefault\" style=\"margin-right:0.07153em;\">C</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.664392em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mathdefault mtight\">o</span><span class=\"mord mathdefault mtight\">p</span></span></span></span></span></span></span></span></span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mord mathdefault\" style=\"margin-right:0.05764em;\">S</span><span class=\"mord mathdefault\">e</span><span class=\"mord mathdefault\">t</span><span class=\"mclose\">]</span></span></span></span> such that <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>R</mi><mi>L</mi><mo stretchy=\"false\">(</mo><mi>f</mi><mo stretchy=\"false\">)</mo><mo>=</mo><mi>f</mi></mrow><annotation encoding=\"application/x-tex\">RL(f)=f</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord mathdefault\" style=\"margin-right:0.00773em;\">R</span><span class=\"mord mathdefault\">L</span><span class=\"mopen\">(</span><span class=\"mord mathdefault\" style=\"margin-right:0.10764em;\">f</span><span class=\"mclose\">)</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.8888799999999999em;vertical-align:-0.19444em;\"></span><span class=\"mord mathdefault\" style=\"margin-right:0.10764em;\">f</span></span></span></span> but rather take  <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>f</mi><mo>∈</mo><mo stretchy=\"false\">[</mo><msup><mi>C</mi><mrow><mi>o</mi><mi>p</mi></mrow></msup><mo separator=\"true\">,</mo><mi>S</mi><mi>e</mi><mi>t</mi><mo stretchy=\"false\">]</mo></mrow><annotation encoding=\"application/x-tex\">f\\in [C^{op},Set]</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8888799999999999em;vertical-align:-0.19444em;\"></span><span class=\"mord mathdefault\" style=\"margin-right:0.10764em;\">f</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">∈</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mopen\">[</span><span class=\"mord\"><span class=\"mord mathdefault\" style=\"margin-right:0.07153em;\">C</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.664392em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mathdefault mtight\">o</span><span class=\"mord mathdefault mtight\">p</span></span></span></span></span></span></span></span></span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mord mathdefault\" style=\"margin-right:0.05764em;\">S</span><span class=\"mord mathdefault\">e</span><span class=\"mord mathdefault\">t</span><span class=\"mclose\">]</span></span></span></span>  together with an isomorphism or possibly just a morphism <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>f</mi><mo>→</mo><mi>R</mi><mi>L</mi><mo stretchy=\"false\">(</mo><mi>f</mi><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">f\\to RL(f)</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8888799999999999em;vertical-align:-0.19444em;\"></span><span class=\"mord mathdefault\" style=\"margin-right:0.10764em;\">f</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">→</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord mathdefault\" style=\"margin-right:0.00773em;\">R</span><span class=\"mord mathdefault\">L</span><span class=\"mopen\">(</span><span class=\"mord mathdefault\" style=\"margin-right:0.10764em;\">f</span><span class=\"mclose\">)</span></span></span></span></p>",
+        "id": 198936814,
+        "sender_full_name": "Simon Willerton",
+        "timestamp": 1590606130
+    },
+    {
+        "content": "<p>(Or the arrow going the other way.)</p>",
+        "id": 198936837,
+        "sender_full_name": "Simon Willerton",
+        "timestamp": 1590606145
+    },
+    {
+        "content": "<p>Or maybe that's not even right!  You want <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>f</mi><mo>∈</mo><mo stretchy=\"false\">[</mo><msup><mi>C</mi><mrow><mi>o</mi><mi>p</mi></mrow></msup><mo separator=\"true\">,</mo><mi>S</mi><mi>e</mi><mi>t</mi><mo stretchy=\"false\">]</mo></mrow><annotation encoding=\"application/x-tex\">f\\in [C^{op},Set]</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8888799999999999em;vertical-align:-0.19444em;\"></span><span class=\"mord mathdefault\" style=\"margin-right:0.10764em;\">f</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">∈</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mopen\">[</span><span class=\"mord\"><span class=\"mord mathdefault\" style=\"margin-right:0.07153em;\">C</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.664392em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mathdefault mtight\">o</span><span class=\"mord mathdefault mtight\">p</span></span></span></span></span></span></span></span></span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mord mathdefault\" style=\"margin-right:0.05764em;\">S</span><span class=\"mord mathdefault\">e</span><span class=\"mord mathdefault\">t</span><span class=\"mclose\">]</span></span></span></span>, <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>g</mi><mo>∈</mo><mo stretchy=\"false\">[</mo><mi>C</mi><mo separator=\"true\">,</mo><mi>S</mi><mi>e</mi><mi>t</mi><msup><mo stretchy=\"false\">]</mo><mrow><mi>o</mi><mi>p</mi></mrow></msup></mrow><annotation encoding=\"application/x-tex\">g\\in [C,Set]^{op}</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.7335400000000001em;vertical-align:-0.19444em;\"></span><span class=\"mord mathdefault\" style=\"margin-right:0.03588em;\">g</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">∈</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mopen\">[</span><span class=\"mord mathdefault\" style=\"margin-right:0.07153em;\">C</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mord mathdefault\" style=\"margin-right:0.05764em;\">S</span><span class=\"mord mathdefault\">e</span><span class=\"mord mathdefault\">t</span><span class=\"mclose\"><span class=\"mclose\">]</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.664392em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mathdefault mtight\">o</span><span class=\"mord mathdefault mtight\">p</span></span></span></span></span></span></span></span></span></span></span></span> and a natural transforamtion <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>f</mi><mo stretchy=\"false\">(</mo><mo>−</mo><mo stretchy=\"false\">)</mo><mo>×</mo><mi>g</mi><mo stretchy=\"false\">(</mo><mo>−</mo><mo stretchy=\"false\">)</mo><mo>⇒</mo><mi>H</mi><mi>o</mi><mi>m</mi><mo stretchy=\"false\">(</mo><mo>−</mo><mo separator=\"true\">,</mo><mo>−</mo><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">f(-) \\times g(-) \\Rightarrow Hom(-,-)</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord mathdefault\" style=\"margin-right:0.10764em;\">f</span><span class=\"mopen\">(</span><span class=\"mord\">−</span><span class=\"mclose\">)</span><span class=\"mspace\" style=\"margin-right:0.2222222222222222em;\"></span><span class=\"mbin\">×</span><span class=\"mspace\" style=\"margin-right:0.2222222222222222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord mathdefault\" style=\"margin-right:0.03588em;\">g</span><span class=\"mopen\">(</span><span class=\"mord\">−</span><span class=\"mclose\">)</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">⇒</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord mathdefault\" style=\"margin-right:0.08125em;\">H</span><span class=\"mord mathdefault\">o</span><span class=\"mord mathdefault\">m</span><span class=\"mopen\">(</span><span class=\"mord\">−</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mord\">−</span><span class=\"mclose\">)</span></span></span></span>.</p>",
+        "id": 198937427,
+        "sender_full_name": "Simon Willerton",
+        "timestamp": 1590606374
+    },
+    {
+        "content": "<p>Is there a place I can read about this?  Maybe something Jonathan Elliott wrote?</p>",
+        "id": 198937453,
+        "sender_full_name": "John Baez",
+        "timestamp": 1590606388
+    },
+    {
+        "content": "<p>In his thesis, he just thought about enriching over quantales as we got nowhere enriching over general categories, and found something meaty in fuzzy truth values.</p>",
+        "id": 198937611,
+        "sender_full_name": "Simon Willerton",
+        "timestamp": 1590606476
+    },
+    {
+        "content": "<p>There's the nlab pages.</p>",
+        "id": 198937665,
+        "sender_full_name": "Simon Willerton",
+        "timestamp": 1590606485
+    },
+    {
+        "content": "<p>Meaty and fuzzy...  <span aria-label=\"cow\" class=\"emoji emoji-1f404\" role=\"img\" title=\"cow\">:cow:</span></p>",
+        "id": 198937747,
+        "sender_full_name": "John Baez",
+        "timestamp": 1590606533
+    },
+    {
+        "content": "<p>Btw, Simon, I'm shifting over to spending more and more time writing \"expository/research\" math stuff.</p>",
+        "id": 198937818,
+        "sender_full_name": "John Baez",
+        "timestamp": 1590606572
+    },
+    {
+        "content": "<p>The chance that I can put some serious work into helping you with that book on \"applied enriched category theory\" keeps going up.</p>",
+        "id": 198937923,
+        "sender_full_name": "John Baez",
+        "timestamp": 1590606618
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"275920\">John Baez</span> <a href=\"#narrow/stream/229966-ACT.40UCR-seminar/topic/May.2027th.3A.20Simon.20Willerton/near/198935428\">said</a>:</p>\n<blockquote>\n<p>I'll ask another question: how can we get this approach to the Legendre transform to generalize to the Laplace transform?   It's already known that the Laplace transform has the Legendre transform as a \"zero-temperature limit\".</p>\n<p>There's a rig depending on temperature <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>T</mi><mo>∈</mo><mo stretchy=\"false\">[</mo><mn>0</mn><mo separator=\"true\">,</mo><mi mathvariant=\"normal\">∞</mi><mo stretchy=\"false\">]</mo></mrow><annotation encoding=\"application/x-tex\">T \\in [0,\\infty]</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.72243em;vertical-align:-0.0391em;\"></span><span class=\"mord mathdefault\" style=\"margin-right:0.13889em;\">T</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">∈</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mopen\">[</span><span class=\"mord\">0</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mord\">∞</span><span class=\"mclose\">]</span></span></span></span> s.t. for <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>T</mi><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding=\"application/x-tex\">T &gt; 0</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.72243em;vertical-align:-0.0391em;\"></span><span class=\"mord mathdefault\" style=\"margin-right:0.13889em;\">T</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">&gt;</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.64444em;vertical-align:0em;\"></span><span class=\"mord\">0</span></span></span></span> we can use this rig to define a Laplace transform, and as <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>T</mi><mo>→</mo><mn>0</mn></mrow><annotation encoding=\"application/x-tex\">T \\to 0</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathdefault\" style=\"margin-right:0.13889em;\">T</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">→</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.64444em;vertical-align:0em;\"></span><span class=\"mord\">0</span></span></span></span> it converges to the Legendre transform.   This is the idea of \"idempotent analysis\".</p>\n</blockquote>\n<p>I think this relates to the questions that were coming up with Tai-Dannae the other week involving getting a category that is modeling the real number with usual arithmetic, not max-plus.</p>",
+        "id": 198937972,
+        "sender_full_name": "Simon Willerton",
+        "timestamp": 1590606644
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"275920\">John Baez</span> <a href=\"#narrow/stream/229966-ACT.40UCR-seminar/topic/May.2027th.3A.20Simon.20Willerton/near/198937923\">said</a>:</p>\n<blockquote>\n<p>The chance that I can put some serious work into helping you with that book on \"applied enriched category theory\" keeps going up.</p>\n</blockquote>\n<p>Bruce was telling me off yesterday for not having finished it :-)</p>",
+        "id": 198938083,
+        "sender_full_name": "Simon Willerton",
+        "timestamp": 1590606698
+    },
+    {
+        "content": "<p>Good!</p>",
+        "id": 198938215,
+        "sender_full_name": "John Baez",
+        "timestamp": 1590606738
+    },
+    {
+        "content": "<p>I'm not gonna publicly commit myself (or you) to finishing this book here, but it seems like a good thing to write.</p>",
+        "id": 198938259,
+        "sender_full_name": "John Baez",
+        "timestamp": 1590606766
+    },
+    {
+        "content": "<p>The material is so beautiful.</p>",
+        "id": 198938270,
+        "sender_full_name": "John Baez",
+        "timestamp": 1590606772
+    },
+    {
+        "content": "<p>Indeed.</p>",
+        "id": 198938282,
+        "sender_full_name": "Simon Willerton",
+        "timestamp": 1590606778
+    },
+    {
+        "content": "<p>Where there many questions coming up during the talk that didn't make it over here?</p>",
+        "id": 198938327,
+        "sender_full_name": "Simon Willerton",
+        "timestamp": 1590606804
+    },
+    {
+        "content": "<p>Not lots.  About 3 reference-type questions.</p>",
+        "id": 198938372,
+        "sender_full_name": "John Baez",
+        "timestamp": 1590606823
+    },
+    {
+        "content": "<p>I'm afraid not everyone makes it over here.</p>",
+        "id": 198938422,
+        "sender_full_name": "John Baez",
+        "timestamp": 1590606842
+    },
+    {
+        "content": "<p>I often don't make it here as I am usually starting to think about dinner!</p>",
+        "id": 198938641,
+        "sender_full_name": "Simon Willerton",
+        "timestamp": 1590606961
+    },
+    {
+        "content": "<p>Anyway, I'm finally eager to think about Isbell duality and Isbell envelopes and such.</p>",
+        "id": 198938761,
+        "sender_full_name": "John Baez",
+        "timestamp": 1590607009
+    },
+    {
+        "content": "<p>Your example of the Dedekind completion grabbed my attention.</p>",
+        "id": 198938790,
+        "sender_full_name": "John Baez",
+        "timestamp": 1590607027
+    },
+    {
+        "content": "<p>Maybe it's starting to be dinner-time (for you) now...</p>",
+        "id": 198938842,
+        "sender_full_name": "John Baez",
+        "timestamp": 1590607059
+    },
+    {
+        "content": "<p>That's great.</p>",
+        "id": 198938858,
+        "sender_full_name": "Simon Willerton",
+        "timestamp": 1590607070
+    },
+    {
+        "content": "<p>I really want to think about connections with optimal transport stuff, as I've mentioned before.</p>",
+        "id": 198938993,
+        "sender_full_name": "Simon Willerton",
+        "timestamp": 1590607125
+    },
+    {
+        "content": "<p>Okay, you don't need to stay; I was just trying to work out what's going on with the adjunction. This stuff is really cool, and the applications are really impressive.</p>",
+        "id": 198939241,
+        "sender_full_name": "Christian Williams",
+        "timestamp": 1590607219
+    },
+    {
+        "content": "<p>Given <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>R</mi><mo>:</mo><msup><mi>A</mi><mrow><mi>o</mi><mi>p</mi></mrow></msup><mo>⊗</mo><mi>B</mi><mo>→</mo><mi mathvariant=\"normal\">V</mi></mrow><annotation encoding=\"application/x-tex\">R:A^{op}\\otimes B\\to \\mathrm{V}</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathdefault\" style=\"margin-right:0.00773em;\">R</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">:</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.76666em;vertical-align:-0.08333em;\"></span><span class=\"mord\"><span class=\"mord mathdefault\">A</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.664392em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mathdefault mtight\">o</span><span class=\"mord mathdefault mtight\">p</span></span></span></span></span></span></span></span></span><span class=\"mspace\" style=\"margin-right:0.2222222222222222em;\"></span><span class=\"mbin\">⊗</span><span class=\"mspace\" style=\"margin-right:0.2222222222222222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathdefault\" style=\"margin-right:0.05017em;\">B</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">→</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord\"><span class=\"mord mathrm\" style=\"margin-right:0.01389em;\">V</span></span></span></span></span>, we can curry in two ways: <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi>R</mi><mn>1</mn></msub><mo>:</mo><msup><mi>A</mi><mrow><mi>o</mi><mi>p</mi></mrow></msup><mo>→</mo><mo stretchy=\"false\">[</mo><mi>B</mi><mo separator=\"true\">,</mo><mi mathvariant=\"normal\">V</mi><mo stretchy=\"false\">]</mo></mrow><annotation encoding=\"application/x-tex\">R_1:A^{op}\\to [B,\\mathrm{V}]</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.83333em;vertical-align:-0.15em;\"></span><span class=\"mord\"><span class=\"mord mathdefault\" style=\"margin-right:0.00773em;\">R</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.30110799999999993em;\"><span style=\"top:-2.5500000000000003em;margin-left:-0.00773em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">1</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">:</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord\"><span class=\"mord mathdefault\">A</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.664392em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mathdefault mtight\">o</span><span class=\"mord mathdefault mtight\">p</span></span></span></span></span></span></span></span></span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">→</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mopen\">[</span><span class=\"mord mathdefault\" style=\"margin-right:0.05017em;\">B</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mord\"><span class=\"mord mathrm\" style=\"margin-right:0.01389em;\">V</span></span><span class=\"mclose\">]</span></span></span></span> and <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi>R</mi><mn>2</mn></msub><mo>:</mo><mi>B</mi><mo>→</mo><mo stretchy=\"false\">[</mo><msup><mi>A</mi><mrow><mi>o</mi><mi>p</mi></mrow></msup><mo separator=\"true\">,</mo><mi mathvariant=\"normal\">V</mi><mo stretchy=\"false\">]</mo></mrow><annotation encoding=\"application/x-tex\">R_2:B\\to [A^{op},\\mathrm{V}]</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.83333em;vertical-align:-0.15em;\"></span><span class=\"mord\"><span class=\"mord mathdefault\" style=\"margin-right:0.00773em;\">R</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.30110799999999993em;\"><span style=\"top:-2.5500000000000003em;margin-left:-0.00773em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">2</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">:</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathdefault\" style=\"margin-right:0.05017em;\">B</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">→</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mopen\">[</span><span class=\"mord\"><span class=\"mord mathdefault\">A</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.664392em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mathdefault mtight\">o</span><span class=\"mord mathdefault mtight\">p</span></span></span></span></span></span></span></span></span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mord\"><span class=\"mord mathrm\" style=\"margin-right:0.01389em;\">V</span></span><span class=\"mclose\">]</span></span></span></span>. Then we also want to \"op\" <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi>R</mi><mn>1</mn></msub></mrow><annotation encoding=\"application/x-tex\">R_1</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.83333em;vertical-align:-0.15em;\"></span><span class=\"mord\"><span class=\"mord mathdefault\" style=\"margin-right:0.00773em;\">R</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.30110799999999993em;\"><span style=\"top:-2.5500000000000003em;margin-left:-0.00773em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">1</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span></span></span></span>, so that it goes to the \"opcopresheaves\".</p>",
+        "id": 198939281,
+        "sender_full_name": "Christian Williams",
+        "timestamp": 1590607238
+    },
+    {
+        "content": "<p>That optimal transport stuff sounds cool, Simon.   It reminds me slightly of that \"earth-mover distance\" between probability distributions.</p>",
+        "id": 198939326,
+        "sender_full_name": "John Baez",
+        "timestamp": 1590607267
+    },
+    {
+        "content": "<p>One cool thing that I didn't say is that in the convex hull of a function you really are writing it as a colimit (sum?) of hyperplanes (or affine functions).  The affine functions are the copresheaves (functions on V) are the ones which are representable by elements of Vdual.</p>",
+        "id": 198939597,
+        "sender_full_name": "Simon Willerton",
+        "timestamp": 1590607398
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"275920\">John Baez</span> <a href=\"#narrow/stream/229966-ACT.40UCR-seminar/topic/May.2027th.3A.20Simon.20Willerton/near/198936642\">said</a>:</p>\n<blockquote>\n<p>I'll check it out.   Simon's suggestion seems nice because <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"false\">[</mo><msup><mi>C</mi><mrow><mi mathvariant=\"normal\">o</mi><mi mathvariant=\"normal\">p</mi></mrow></msup><mo separator=\"true\">,</mo><mi>S</mi><mi>e</mi><mi>t</mi><mo stretchy=\"false\">]</mo></mrow><annotation encoding=\"application/x-tex\">[C^{\\mathrm{op}},Set]</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mopen\">[</span><span class=\"mord\"><span class=\"mord mathdefault\" style=\"margin-right:0.07153em;\">C</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.664392em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\"><span class=\"mord mathrm mtight\">o</span><span class=\"mord mathrm mtight\">p</span></span></span></span></span></span></span></span></span></span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mord mathdefault\" style=\"margin-right:0.05764em;\">S</span><span class=\"mord mathdefault\">e</span><span class=\"mord mathdefault\">t</span><span class=\"mclose\">]</span></span></span></span> is presheaves, which is the free cocompletion, but then we're tweaking that a bit... in a way I don't really grok.</p>\n</blockquote>\n<p>well, <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"false\">[</mo><mi>C</mi><mo separator=\"true\">,</mo><mi>S</mi><mi>e</mi><mi>t</mi><msup><mo stretchy=\"false\">]</mo><mrow><mi mathvariant=\"normal\">o</mi><mi mathvariant=\"normal\">p</mi></mrow></msup></mrow><annotation encoding=\"application/x-tex\">[C, Set]^{\\mathrm{op}}</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mopen\">[</span><span class=\"mord mathdefault\" style=\"margin-right:0.07153em;\">C</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mord mathdefault\" style=\"margin-right:0.05764em;\">S</span><span class=\"mord mathdefault\">e</span><span class=\"mord mathdefault\">t</span><span class=\"mclose\"><span class=\"mclose\">]</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.664392em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\"><span class=\"mord mathrm mtight\">o</span><span class=\"mord mathrm mtight\">p</span></span></span></span></span></span></span></span></span></span></span></span></span> is the free completion</p>",
+        "id": 198939612,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1590607404
+    },
+    {
+        "content": "<p>Then by the properties of completion and cocompletion, we can right-extend to get <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi>R</mi><mo>∗</mo></msub><mo>=</mo><msub><mrow><mi mathvariant=\"normal\">R</mi><mi mathvariant=\"normal\">a</mi><mi mathvariant=\"normal\">n</mi></mrow><mi>y</mi></msub><msubsup><mi>R</mi><mn>1</mn><mrow><mi>o</mi><mi>p</mi></mrow></msubsup><mo>:</mo><mo stretchy=\"false\">[</mo><mi>A</mi><mo separator=\"true\">,</mo><mi mathvariant=\"normal\">V</mi><msup><mo stretchy=\"false\">]</mo><mrow><mi>o</mi><mi>p</mi></mrow></msup><mo>→</mo><mo stretchy=\"false\">[</mo><msup><mi>B</mi><mrow><mi>o</mi><mi>p</mi></mrow></msup><mo separator=\"true\">,</mo><mi mathvariant=\"normal\">V</mi><mo stretchy=\"false\">]</mo></mrow><annotation encoding=\"application/x-tex\">R_* = \\mathrm{Ran}_{y}R_1^{op}: [A,\\mathrm{V}]^{op}\\to [B^{op},\\mathrm{V}]</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.83333em;vertical-align:-0.15em;\"></span><span class=\"mord\"><span class=\"mord mathdefault\" style=\"margin-right:0.00773em;\">R</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.175696em;\"><span style=\"top:-2.5500000000000003em;margin-left:-0.00773em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mbin mtight\">∗</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1.068408em;vertical-align:-0.286108em;\"></span><span class=\"mord\"><span class=\"mord\"><span class=\"mord mathrm\">R</span><span class=\"mord mathrm\">a</span><span class=\"mord mathrm\">n</span></span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15139200000000003em;\"><span style=\"top:-2.5500000000000003em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mathdefault mtight\" style=\"margin-right:0.03588em;\">y</span></span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.286108em;\"><span></span></span></span></span></span></span><span class=\"mord\"><span class=\"mord mathdefault\" style=\"margin-right:0.00773em;\">R</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.7823em;\"><span style=\"top:-2.433692em;margin-left:-0.00773em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">1</span></span></span><span style=\"top:-3.1809080000000005em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mathdefault mtight\">o</span><span class=\"mord mathdefault mtight\">p</span></span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.266308em;\"><span></span></span></span></span></span></span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">:</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mopen\">[</span><span class=\"mord mathdefault\">A</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mord\"><span class=\"mord mathrm\" style=\"margin-right:0.01389em;\">V</span></span><span class=\"mclose\"><span class=\"mclose\">]</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.664392em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mathdefault mtight\">o</span><span class=\"mord mathdefault mtight\">p</span></span></span></span></span></span></span></span></span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">→</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mopen\">[</span><span class=\"mord\"><span class=\"mord mathdefault\" style=\"margin-right:0.05017em;\">B</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.664392em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mathdefault mtight\">o</span><span class=\"mord mathdefault mtight\">p</span></span></span></span></span></span></span></span></span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mord\"><span class=\"mord mathrm\" style=\"margin-right:0.01389em;\">V</span></span><span class=\"mclose\">]</span></span></span></span> and left-extend to get <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msup><mi>R</mi><mo>∗</mo></msup><mo>:</mo><msub><mrow><mi mathvariant=\"normal\">L</mi><mi mathvariant=\"normal\">a</mi><mi mathvariant=\"normal\">n</mi></mrow><mi>y</mi></msub><msub><mi>R</mi><mn>2</mn></msub><mo>:</mo><mo stretchy=\"false\">[</mo><msup><mi>B</mi><mrow><mi>o</mi><mi>p</mi></mrow></msup><mo separator=\"true\">,</mo><mi mathvariant=\"normal\">V</mi><mo stretchy=\"false\">]</mo><mo>→</mo><mo stretchy=\"false\">[</mo><mi>A</mi><mo separator=\"true\">,</mo><mi mathvariant=\"normal\">V</mi><msup><mo stretchy=\"false\">]</mo><mrow><mi>o</mi><mi>p</mi></mrow></msup></mrow><annotation encoding=\"application/x-tex\">R^*: \\mathrm{Lan}_y R_2: [B^{op},\\mathrm{V}]\\to [A,\\mathrm{V}]^{op}</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.688696em;vertical-align:0em;\"></span><span class=\"mord\"><span class=\"mord mathdefault\" style=\"margin-right:0.00773em;\">R</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.688696em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mbin mtight\">∗</span></span></span></span></span></span></span></span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">:</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.969438em;vertical-align:-0.286108em;\"></span><span class=\"mord\"><span class=\"mord\"><span class=\"mord mathrm\">L</span><span class=\"mord mathrm\">a</span><span class=\"mord mathrm\">n</span></span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15139200000000003em;\"><span style=\"top:-2.5500000000000003em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathdefault mtight\" style=\"margin-right:0.03588em;\">y</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.286108em;\"><span></span></span></span></span></span></span><span class=\"mord\"><span class=\"mord mathdefault\" style=\"margin-right:0.00773em;\">R</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.30110799999999993em;\"><span style=\"top:-2.5500000000000003em;margin-left:-0.00773em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">2</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">:</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mopen\">[</span><span class=\"mord\"><span class=\"mord mathdefault\" style=\"margin-right:0.05017em;\">B</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.664392em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mathdefault mtight\">o</span><span class=\"mord mathdefault mtight\">p</span></span></span></span></span></span></span></span></span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mord\"><span class=\"mord mathrm\" style=\"margin-right:0.01389em;\">V</span></span><span class=\"mclose\">]</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">→</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mopen\">[</span><span class=\"mord mathdefault\">A</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mord\"><span class=\"mord mathrm\" style=\"margin-right:0.01389em;\">V</span></span><span class=\"mclose\"><span class=\"mclose\">]</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.664392em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mathdefault mtight\">o</span><span class=\"mord mathdefault mtight\">p</span></span></span></span></span></span></span></span></span></span></span></span>.</p>",
+        "id": 198939629,
+        "sender_full_name": "Christian Williams",
+        "timestamp": 1590607411
+    },
+    {
+        "content": "<p>whoops, not quite right. it's easy to get tripped up on the op's</p>",
+        "id": 198939673,
+        "sender_full_name": "Christian Williams",
+        "timestamp": 1590607430
+    },
+    {
+        "content": "<p>i like <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"false\">[</mo><mi>C</mi><mo separator=\"true\">,</mo><mi>S</mi><mi>e</mi><mi>t</mi><msup><mo stretchy=\"false\">]</mo><mrow><mi mathvariant=\"normal\">o</mi><mi mathvariant=\"normal\">p</mi></mrow></msup></mrow><annotation encoding=\"application/x-tex\">[C, Set]^{\\mathrm{op}}</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mopen\">[</span><span class=\"mord mathdefault\" style=\"margin-right:0.07153em;\">C</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mord mathdefault\" style=\"margin-right:0.05764em;\">S</span><span class=\"mord mathdefault\">e</span><span class=\"mord mathdefault\">t</span><span class=\"mclose\"><span class=\"mclose\">]</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.664392em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\"><span class=\"mord mathrm mtight\">o</span><span class=\"mord mathrm mtight\">p</span></span></span></span></span></span></span></span></span></span></span></span></span> honestly—it's actually quite a natural category to consider</p>",
+        "id": 198939680,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1590607433
+    },
+    {
+        "content": "<p>natural how?</p>",
+        "id": 198939758,
+        "sender_full_name": "Christian Williams",
+        "timestamp": 1590607454
+    },
+    {
+        "content": "<p>well</p>",
+        "id": 198939761,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1590607457
+    },
+    {
+        "content": "<p>The Earth mover distance is exactly the thing we were discretizing when we were talking about bakeries and cafes.  This is what goes into the Kantorovich duality that Gordon mentioned.</p>",
+        "id": 198939774,
+        "sender_full_name": "Simon Willerton",
+        "timestamp": 1590607463
+    },
+    {
+        "content": "<p>if a presheaf is something that you can map into from objects of C, then its morphisms should be natural transformations—they tell you how to compose with a morphism from an object of C</p>",
+        "id": 198939787,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1590607469
+    },
+    {
+        "content": "<p>if a copresheaf is something that you can map <em>out</em> of, <em>into</em> an object of C...</p>",
+        "id": 198939808,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1590607483
+    },
+    {
+        "content": "<p>then the morphisms of copresheaves should go the <em>opposite</em> direction from natural transformations—you should be able to compose them with morphisms into objects of C!</p>",
+        "id": 198939846,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1590607504
+    },
+    {
+        "content": "<p>well, that's a long-winded way of saying that if you put an ^op on [C, Set], then your yoneda embedding into copresheaves is covariant again</p>",
+        "id": 198939901,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1590607536
+    },
+    {
+        "content": "<p>Christian, what you're writing is looking true.  Is there a question?</p>",
+        "id": 198939989,
+        "sender_full_name": "Simon Willerton",
+        "timestamp": 1590607566
+    },
+    {
+        "content": "<p>yeah, that makes sense. it would be great to have a more concrete intuition. I like to think of natural transformations as inference rules.</p>",
+        "id": 198940024,
+        "sender_full_name": "Christian Williams",
+        "timestamp": 1590607582
+    },
+    {
+        "content": "<p>Thanks for writing it, Christian!  I found the coend formula less clear than this Kan extension way of thinking.</p>",
+        "id": 198940051,
+        "sender_full_name": "John Baez",
+        "timestamp": 1590607596
+    },
+    {
+        "content": "<p>Of course they're \"the same\"....</p>",
+        "id": 198940081,
+        "sender_full_name": "John Baez",
+        "timestamp": 1590607610
+    },
+    {
+        "content": "<p>oh sorry Simon, well I'm mainly wondering \"how does the adjunction really work? why does it exist?\"</p>",
+        "id": 198940102,
+        "sender_full_name": "Christian Williams",
+        "timestamp": 1590607616
+    },
+    {
+        "content": "<p>I could get it by a coend calculation, but I was hoping for a bird's-eye view</p>",
+        "id": 198940160,
+        "sender_full_name": "Christian Williams",
+        "timestamp": 1590607646
+    },
+    {
+        "content": "<p>This is the 'explanation' I gave of it in the paper.</p>",
+        "id": 198940183,
+        "sender_full_name": "Simon Willerton",
+        "timestamp": 1590607658
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276935\">Simon Willerton</span> <a href=\"#narrow/stream/229966-ACT.40UCR-seminar/topic/May.2027th.3A.20Simon.20Willerton/near/198936814\">said</a>:</p>\n<blockquote>\n<p>Either weak or possibly lax.  You wouldn't take, say, a presheaf <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>f</mi><mo>∈</mo><mo stretchy=\"false\">[</mo><msup><mi>C</mi><mrow><mi>o</mi><mi>p</mi></mrow></msup><mo separator=\"true\">,</mo><mi>S</mi><mi>e</mi><mi>t</mi><mo stretchy=\"false\">]</mo></mrow><annotation encoding=\"application/x-tex\">f\\in [C^{op},Set]</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8888799999999999em;vertical-align:-0.19444em;\"></span><span class=\"mord mathdefault\" style=\"margin-right:0.10764em;\">f</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">∈</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mopen\">[</span><span class=\"mord\"><span class=\"mord mathdefault\" style=\"margin-right:0.07153em;\">C</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.664392em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mathdefault mtight\">o</span><span class=\"mord mathdefault mtight\">p</span></span></span></span></span></span></span></span></span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mord mathdefault\" style=\"margin-right:0.05764em;\">S</span><span class=\"mord mathdefault\">e</span><span class=\"mord mathdefault\">t</span><span class=\"mclose\">]</span></span></span></span> such that <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>R</mi><mi>L</mi><mo stretchy=\"false\">(</mo><mi>f</mi><mo stretchy=\"false\">)</mo><mo>=</mo><mi>f</mi></mrow><annotation encoding=\"application/x-tex\">RL(f)=f</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord mathdefault\" style=\"margin-right:0.00773em;\">R</span><span class=\"mord mathdefault\">L</span><span class=\"mopen\">(</span><span class=\"mord mathdefault\" style=\"margin-right:0.10764em;\">f</span><span class=\"mclose\">)</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.8888799999999999em;vertical-align:-0.19444em;\"></span><span class=\"mord mathdefault\" style=\"margin-right:0.10764em;\">f</span></span></span></span> but rather take  <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>f</mi><mo>∈</mo><mo stretchy=\"false\">[</mo><msup><mi>C</mi><mrow><mi>o</mi><mi>p</mi></mrow></msup><mo separator=\"true\">,</mo><mi>S</mi><mi>e</mi><mi>t</mi><mo stretchy=\"false\">]</mo></mrow><annotation encoding=\"application/x-tex\">f\\in [C^{op},Set]</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8888799999999999em;vertical-align:-0.19444em;\"></span><span class=\"mord mathdefault\" style=\"margin-right:0.10764em;\">f</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">∈</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mopen\">[</span><span class=\"mord\"><span class=\"mord mathdefault\" style=\"margin-right:0.07153em;\">C</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.664392em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mathdefault mtight\">o</span><span class=\"mord mathdefault mtight\">p</span></span></span></span></span></span></span></span></span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mord mathdefault\" style=\"margin-right:0.05764em;\">S</span><span class=\"mord mathdefault\">e</span><span class=\"mord mathdefault\">t</span><span class=\"mclose\">]</span></span></span></span>  together with an isomorphism or possibly just a morphism <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>f</mi><mo>→</mo><mi>R</mi><mi>L</mi><mo stretchy=\"false\">(</mo><mi>f</mi><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">f\\to RL(f)</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8888799999999999em;vertical-align:-0.19444em;\"></span><span class=\"mord mathdefault\" style=\"margin-right:0.10764em;\">f</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">→</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord mathdefault\" style=\"margin-right:0.00773em;\">R</span><span class=\"mord mathdefault\">L</span><span class=\"mopen\">(</span><span class=\"mord mathdefault\" style=\"margin-right:0.10764em;\">f</span><span class=\"mclose\">)</span></span></span></span></p>\n</blockquote>\n<p>hmm, isn't the standard definition of a fixed point of an adjunction, like...</p>",
+        "id": 198940195,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1590607661
+    },
+    {
+        "content": "<p>something where the adjunction unit / counit is an iso?</p>",
+        "id": 198940205,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1590607669
+    },
+    {
+        "content": "<p>Yes.</p>",
+        "id": 198940307,
+        "sender_full_name": "Simon Willerton",
+        "timestamp": 1590607702
+    },
+    {
+        "content": "<p>I think so.</p>",
+        "id": 198940317,
+        "sender_full_name": "Simon Willerton",
+        "timestamp": 1590607710
+    },
+    {
+        "content": "<p>so that's actually incomparable with <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>R</mi><mi>L</mi><mo stretchy=\"false\">(</mo><mi>f</mi><mo stretchy=\"false\">)</mo><mo>=</mo><mi>f</mi></mrow><annotation encoding=\"application/x-tex\">RL(f) = f</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord mathdefault\" style=\"margin-right:0.00773em;\">R</span><span class=\"mord mathdefault\">L</span><span class=\"mopen\">(</span><span class=\"mord mathdefault\" style=\"margin-right:0.10764em;\">f</span><span class=\"mclose\">)</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.8888799999999999em;vertical-align:-0.19444em;\"></span><span class=\"mord mathdefault\" style=\"margin-right:0.10764em;\">f</span></span></span></span>, right?</p>",
+        "id": 198940427,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1590607763
+    },
+    {
+        "content": "<p>okay, I understand. I think when I work it out for myself then the calculation should be enough.</p>",
+        "id": 198940439,
+        "sender_full_name": "Christian Williams",
+        "timestamp": 1590607769
+    },
+    {
+        "content": "<p>like, you could have <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>R</mi><mi>L</mi><mo stretchy=\"false\">(</mo><mi>f</mi><mo stretchy=\"false\">)</mo><mo>=</mo><mi>f</mi></mrow><annotation encoding=\"application/x-tex\">RL(f) = f</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord mathdefault\" style=\"margin-right:0.00773em;\">R</span><span class=\"mord mathdefault\">L</span><span class=\"mopen\">(</span><span class=\"mord mathdefault\" style=\"margin-right:0.10764em;\">f</span><span class=\"mclose\">)</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.8888799999999999em;vertical-align:-0.19444em;\"></span><span class=\"mord mathdefault\" style=\"margin-right:0.10764em;\">f</span></span></span></span> but the unit/counit is a non-iso endo</p>",
+        "id": 198940461,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1590607780
+    },
+    {
+        "content": "<p>Btw, Simon, if you're still listening: please send me your new improved talk slides!</p>",
+        "id": 198940678,
+        "sender_full_name": "John Baez",
+        "timestamp": 1590607851
+    },
+    {
+        "content": "<p>I justify it as in the blog post Tai-Danae alluded to the other week.  Given a matrix, thought of as a function on the cartesian product  of two finite sets <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>M</mi><mspace></mspace><mspace width=\"0.1111111111111111em\"></mspace><mo lspace=\"0em\" rspace=\"0.17em\"></mo><mtext> ⁣</mtext><mo lspace=\"0em\" rspace=\"0em\">:</mo><mspace width=\"0.3333333333333333em\"></mspace><mi>A</mi><mo>×</mo><mi>B</mi><mo>→</mo><mi>R</mi></mrow><annotation encoding=\"application/x-tex\">M \\colon A\\times B\\to R</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.76666em;vertical-align:-0.08333em;\"></span><span class=\"mord mathdefault\" style=\"margin-right:0.10903em;\">M</span><span class=\"mspace nobreak\"></span><span class=\"mspace\" style=\"margin-right:0.1111111111111111em;\"></span><span class=\"mpunct\"></span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mspace\" style=\"margin-right:-0.16666666666666666em;\"></span><span class=\"mord\"><span class=\"mrel\">:</span></span><span class=\"mspace\" style=\"margin-right:0.3333333333333333em;\"></span><span class=\"mord mathdefault\">A</span><span class=\"mspace\" style=\"margin-right:0.2222222222222222em;\"></span><span class=\"mbin\">×</span><span class=\"mspace\" style=\"margin-right:0.2222222222222222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathdefault\" style=\"margin-right:0.05017em;\">B</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">→</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathdefault\" style=\"margin-right:0.00773em;\">R</span></span></span></span> you get two adjoint functions <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msup><mi>M</mi><mo>∗</mo></msup><mspace></mspace><mspace width=\"0.1111111111111111em\"></mspace><mo lspace=\"0em\" rspace=\"0.17em\"></mo><mtext> ⁣</mtext><mo lspace=\"0em\" rspace=\"0em\">:</mo><mspace width=\"0.3333333333333333em\"></mspace><msup><mi>R</mi><mi>A</mi></msup><mo>→</mo><msup><mi>R</mi><mi>B</mi></msup></mrow><annotation encoding=\"application/x-tex\">M^*\\colon R^A \\to R^B</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8413309999999999em;vertical-align:0em;\"></span><span class=\"mord\"><span class=\"mord mathdefault\" style=\"margin-right:0.10903em;\">M</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.688696em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mbin mtight\">∗</span></span></span></span></span></span></span></span><span class=\"mspace nobreak\"></span><span class=\"mspace\" style=\"margin-right:0.1111111111111111em;\"></span><span class=\"mpunct\"></span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mspace\" style=\"margin-right:-0.16666666666666666em;\"></span><span class=\"mord\"><span class=\"mrel\">:</span></span><span class=\"mspace\" style=\"margin-right:0.3333333333333333em;\"></span><span class=\"mord\"><span class=\"mord mathdefault\" style=\"margin-right:0.00773em;\">R</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.8413309999999999em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathdefault mtight\">A</span></span></span></span></span></span></span></span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">→</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.8413309999999999em;vertical-align:0em;\"></span><span class=\"mord\"><span class=\"mord mathdefault\" style=\"margin-right:0.00773em;\">R</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.8413309999999999em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathdefault mtight\" style=\"margin-right:0.05017em;\">B</span></span></span></span></span></span></span></span></span></span></span> and <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi>M</mi><mo>∗</mo></msub><mspace></mspace><mspace width=\"0.1111111111111111em\"></mspace><mo lspace=\"0em\" rspace=\"0.17em\"></mo><mtext> ⁣</mtext><mo lspace=\"0em\" rspace=\"0em\">:</mo><mspace width=\"0.3333333333333333em\"></mspace><msup><mi>R</mi><mi>B</mi></msup><mo>→</mo><msup><mi>R</mi><mi>A</mi></msup></mrow><annotation encoding=\"application/x-tex\">M_*\\colon R^B\\to R^A</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.991331em;vertical-align:-0.15em;\"></span><span class=\"mord\"><span class=\"mord mathdefault\" style=\"margin-right:0.10903em;\">M</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.175696em;\"><span style=\"top:-2.5500000000000003em;margin-left:-0.10903em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mbin mtight\">∗</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span><span class=\"mspace nobreak\"></span><span class=\"mspace\" style=\"margin-right:0.1111111111111111em;\"></span><span class=\"mpunct\"></span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mspace\" style=\"margin-right:-0.16666666666666666em;\"></span><span class=\"mord\"><span class=\"mrel\">:</span></span><span class=\"mspace\" style=\"margin-right:0.3333333333333333em;\"></span><span class=\"mord\"><span class=\"mord mathdefault\" style=\"margin-right:0.00773em;\">R</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.8413309999999999em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathdefault mtight\" style=\"margin-right:0.05017em;\">B</span></span></span></span></span></span></span></span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">→</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.8413309999999999em;vertical-align:0em;\"></span><span class=\"mord\"><span class=\"mord mathdefault\" style=\"margin-right:0.00773em;\">R</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.8413309999999999em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathdefault mtight\">A</span></span></span></span></span></span></span></span></span></span></span> with respect to the canonical inner products on <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msup><mi>R</mi><mi>A</mi></msup></mrow><annotation encoding=\"application/x-tex\">R^A</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8413309999999999em;vertical-align:0em;\"></span><span class=\"mord\"><span class=\"mord mathdefault\" style=\"margin-right:0.00773em;\">R</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.8413309999999999em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathdefault mtight\">A</span></span></span></span></span></span></span></span></span></span></span> and <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msup><mi>R</mi><mi>B</mi></msup></mrow><annotation encoding=\"application/x-tex\">R^B</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8413309999999999em;vertical-align:0em;\"></span><span class=\"mord\"><span class=\"mord mathdefault\" style=\"margin-right:0.00773em;\">R</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.8413309999999999em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathdefault mtight\" style=\"margin-right:0.05017em;\">B</span></span></span></span></span></span></span></span></span></span></span>.</p>",
+        "id": 198941126,
+        "sender_full_name": "Simon Willerton",
+        "timestamp": 1590608011
+    },
+    {
+        "content": "<p>I sent you them as the talk was starting, I think.</p>",
+        "id": 198941160,
+        "sender_full_name": "Simon Willerton",
+        "timestamp": 1590608029
+    },
+    {
+        "content": "<p>Here <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>R</mi><mo>=</mo><mi mathvariant=\"double-struck\">R</mi></mrow><annotation encoding=\"application/x-tex\">R=\\mathbb{R}</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathdefault\" style=\"margin-right:0.00773em;\">R</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.68889em;vertical-align:0em;\"></span><span class=\"mord\"><span class=\"mord mathbb\">R</span></span></span></span></span>.</p>",
+        "id": 198941269,
+        "sender_full_name": "Simon Willerton",
+        "timestamp": 1590608061
+    },
+    {
+        "content": "<p>Okay, thanks!</p>",
+        "id": 198941271,
+        "sender_full_name": "John Baez",
+        "timestamp": 1590608062
+    },
+    {
+        "content": "<p>I guess the main potential for confusion is that you never think about the \"opposite Yoneda embedding\", the one for completion. I get that it's just the \"op\" of the same functor, but it's interesting.</p>",
+        "id": 198941442,
+        "sender_full_name": "Christian Williams",
+        "timestamp": 1590608141
+    },
+    {
+        "content": "<p>For an adjunction you want <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"false\">[</mo><msup><mi>C</mi><mrow><mi>o</mi><mi>p</mi></mrow></msup><mo separator=\"true\">,</mo><mi>S</mi><mi>e</mi><mi>t</mi><mo stretchy=\"false\">]</mo><mo stretchy=\"false\">(</mo><mi>f</mi><mo separator=\"true\">,</mo><mi>R</mi><mi>g</mi><mo stretchy=\"false\">)</mo><mo>=</mo><mo stretchy=\"false\">[</mo><mi>C</mi><mo separator=\"true\">,</mo><mi>S</mi><mi>e</mi><mi>t</mi><msup><mo stretchy=\"false\">]</mo><mrow><mi>o</mi><mi>p</mi></mrow></msup><mo stretchy=\"false\">(</mo><mi>L</mi><mi>f</mi><mo separator=\"true\">,</mo><mi>g</mi><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\"><a href=\"http://f,%20Rg\">C^{op}, Set</a>= [C,Set]^{op}(Lf, g)</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mopen\">[</span><span class=\"mord\"><span class=\"mord mathdefault\" style=\"margin-right:0.07153em;\">C</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.664392em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mathdefault mtight\">o</span><span class=\"mord mathdefault mtight\">p</span></span></span></span></span></span></span></span></span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mord mathdefault\" style=\"margin-right:0.05764em;\">S</span><span class=\"mord mathdefault\">e</span><span class=\"mord mathdefault\">t</span><span class=\"mclose\">]</span><span class=\"mopen\">(</span><span class=\"mord mathdefault\" style=\"margin-right:0.10764em;\">f</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mord mathdefault\" style=\"margin-right:0.00773em;\">R</span><span class=\"mord mathdefault\" style=\"margin-right:0.03588em;\">g</span><span class=\"mclose\">)</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mopen\">[</span><span class=\"mord mathdefault\" style=\"margin-right:0.07153em;\">C</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mord mathdefault\" style=\"margin-right:0.05764em;\">S</span><span class=\"mord mathdefault\">e</span><span class=\"mord mathdefault\">t</span><span class=\"mclose\"><span class=\"mclose\">]</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.664392em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mathdefault mtight\">o</span><span class=\"mord mathdefault mtight\">p</span></span></span></span></span></span></span></span></span><span class=\"mopen\">(</span><span class=\"mord mathdefault\">L</span><span class=\"mord mathdefault\" style=\"margin-right:0.10764em;\">f</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mord mathdefault\" style=\"margin-right:0.03588em;\">g</span><span class=\"mclose\">)</span></span></span></span> and the latter is just <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"false\">[</mo><mi>C</mi><mo separator=\"true\">,</mo><mi>S</mi><mi>e</mi><mi>t</mi><mo stretchy=\"false\">]</mo><mo stretchy=\"false\">(</mo><mi>g</mi><mo separator=\"true\">,</mo><mi>L</mi><mi>f</mi><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\"> <a href=\"http://g,%20Lf\">C,Set</a></annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mopen\">[</span><span class=\"mord mathdefault\" style=\"margin-right:0.07153em;\">C</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mord mathdefault\" style=\"margin-right:0.05764em;\">S</span><span class=\"mord mathdefault\">e</span><span class=\"mord mathdefault\">t</span><span class=\"mclose\">]</span><span class=\"mopen\">(</span><span class=\"mord mathdefault\" style=\"margin-right:0.03588em;\">g</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mord mathdefault\">L</span><span class=\"mord mathdefault\" style=\"margin-right:0.10764em;\">f</span><span class=\"mclose\">)</span></span></span></span> and I think these are all just <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"false\">[</mo><mi>C</mi><mo>×</mo><msup><mi>C</mi><mrow><mi>o</mi><mi>p</mi></mrow></msup><mo separator=\"true\">,</mo><mi>S</mi><mi>e</mi><mi>t</mi><mo stretchy=\"false\">]</mo><mo stretchy=\"false\">(</mo><mi>f</mi><mo>⊗</mo><mi>g</mi><mo separator=\"true\">,</mo><mi>P</mi><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\"><a href=\"http://f\\otimes%20g%20,%20P\">C\\times C^{op}, Set</a></annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mopen\">[</span><span class=\"mord mathdefault\" style=\"margin-right:0.07153em;\">C</span><span class=\"mspace\" style=\"margin-right:0.2222222222222222em;\"></span><span class=\"mbin\">×</span><span class=\"mspace\" style=\"margin-right:0.2222222222222222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord\"><span class=\"mord mathdefault\" style=\"margin-right:0.07153em;\">C</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.664392em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mathdefault mtight\">o</span><span class=\"mord mathdefault mtight\">p</span></span></span></span></span></span></span></span></span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mord mathdefault\" style=\"margin-right:0.05764em;\">S</span><span class=\"mord mathdefault\">e</span><span class=\"mord mathdefault\">t</span><span class=\"mclose\">]</span><span class=\"mopen\">(</span><span class=\"mord mathdefault\" style=\"margin-right:0.10764em;\">f</span><span class=\"mspace\" style=\"margin-right:0.2222222222222222em;\"></span><span class=\"mbin\">⊗</span><span class=\"mspace\" style=\"margin-right:0.2222222222222222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord mathdefault\" style=\"margin-right:0.03588em;\">g</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mord mathdefault\" style=\"margin-right:0.13889em;\">P</span><span class=\"mclose\">)</span></span></span></span> where P is the profunctor.</p>",
+        "id": 198941847,
+        "sender_full_name": "Simon Willerton",
+        "timestamp": 1590608299
+    },
+    {
+        "content": "<p>that's nice. thanks!</p>",
+        "id": 198942366,
+        "sender_full_name": "Christian Williams",
+        "timestamp": 1590608495
+    },
+    {
+        "content": "<p>Of course <em>some</em> people think about the free completion:</p>\n<p><span class=\"user-mention silent\" data-user-id=\"276072\">sarahzrf</span> <a href=\"#narrow/stream/229966-ACT.40UCR-seminar/topic/May.2027th.3A.20Simon.20Willerton/near/198939612\">said</a>:</p>\n<blockquote>\n<p>well, <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"false\">[</mo><mi>C</mi><mo separator=\"true\">,</mo><mi>S</mi><mi>e</mi><mi>t</mi><msup><mo stretchy=\"false\">]</mo><mrow><mi mathvariant=\"normal\">o</mi><mi mathvariant=\"normal\">p</mi></mrow></msup></mrow><annotation encoding=\"application/x-tex\">[C, Set]^{\\mathrm{op}}</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mopen\">[</span><span class=\"mord mathdefault\" style=\"margin-right:0.07153em;\">C</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mord mathdefault\" style=\"margin-right:0.05764em;\">S</span><span class=\"mord mathdefault\">e</span><span class=\"mord mathdefault\">t</span><span class=\"mclose\"><span class=\"mclose\">]</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.664392em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\"><span class=\"mord mathrm mtight\">o</span><span class=\"mord mathrm mtight\">p</span></span></span></span></span></span></span></span></span></span></span></span></span> is the free completion</p>\n</blockquote>",
+        "id": 198942453,
+        "sender_full_name": "John Baez",
+        "timestamp": 1590608531
+    },
+    {
+        "content": "<p>We should get more used to thinking about it....</p>",
+        "id": 198942508,
+        "sender_full_name": "John Baez",
+        "timestamp": 1590608559
+    },
+    {
+        "content": "<p>hey, mike shulman wrote the nlab page, not me <a href=\"https://ncatlab.org/nlab/show/free%20completion\">https://ncatlab.org/nlab/show/free%20completion</a></p>",
+        "id": 198942582,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1590608588
+    },
+    {
+        "content": "<p>Here are Simon's new improved slides:</p>\n<p><a href=\"http://math.ucr.edu/home/baez/mathematical/ACTUCR/Willerton_Legendre_Transform.pdf\">http://math.ucr.edu/home/baez/mathematical/ACTUCR/Willerton_Legendre_Transform.pdf</a></p>",
+        "id": 198943076,
+        "sender_full_name": "John Baez",
+        "timestamp": 1590608804
+    },
+    {
+        "content": "<p>Sorry, I'd help if I could, but I don't even know who loads the different calendars.</p>",
+        "id": 198960224,
+        "sender_full_name": "Daniel Geisler",
+        "timestamp": 1590617595
+    },
+    {
+        "content": "<p>thanks!</p>",
+        "id": 198974832,
+        "sender_full_name": "eric brunner-williams (uoregon)",
+        "timestamp": 1590630100
+    }
+]

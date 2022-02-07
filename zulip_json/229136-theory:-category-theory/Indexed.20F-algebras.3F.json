@@ -1,0 +1,32 @@
+[
+    {
+        "content": "<p>I use F-algebras pretty often in software development, since they're closely related to the Visitor pattern in object-oriented programming. (A visitor is basically a choice of algebra.) But I've run into something that's not quite the same thing. I've distilled it into something that <em>looks</em> roughly F-algebraic, but isn't. I'm not sure what to call it, and I'm having trouble finding related concepts in the literature. (My CT comprehension is pretty low, so it's also hard to tell whether something promising is actually relevant at all.)</p>\n<p>To my understanding, an F-algebra over an (endo)functor F is a morphism <code>F t -&gt; t</code> with a carrier <code>t</code>. (Programmatically, I'd write <code>Algebra t = F t -&gt; t</code>.) It works great for describing interpreters for single-sorted expressions like <code>(1 + (2 * 3))</code>, where the type of every subexpression is the same. But I have a situation where the type of a subexpression can vary, where a structure <code>IndexedAlgebra f t = F f t -&gt; f t</code> arises. (The name comes from my half-baked understanding of things like indexed monads.)</p>\n<p>An example <code>F</code> here might be <code>F f t = t + (exists s. (s -&gt; t) * f s * f s)</code>, describing the type of binary trees where combining two subexpressions may also change its type. The lowercase <code>f</code> allows the interpreted type to vary depending on the algebra; for instance, I might use the identity functor when evaluating the expression straight, or the constant functor on <code>String</code> to produce a human-readable representation at any subtree.</p>\n<p>Is this a well-founded concept? Are there any immediate references to the literature that investigates constructions like this? (Is the name \"indexed algebra\" way off base?)</p>",
+        "id": 219177208,
+        "sender_full_name": "Jonathan Castello",
+        "timestamp": 1607411240
+    },
+    {
+        "content": "<p>My gut reaction would be you need your signature functor F to act on an arrow category.</p>",
+        "id": 219206863,
+        "sender_full_name": "Björn Gohla",
+        "timestamp": 1607434685
+    },
+    {
+        "content": "<p>I think there's quite a bit of literature about this sort of thing in relation to indexed inductive types that you find in dependent type theories. <a href=\"http://strictlypositive.org/indexed-containers.pdf\">Stuff like this</a> for instance. The semantics of indexed inductive definitions are initial algebras of that sort.</p>\n<p>And yeah, the arrow category/codomain fibration is one way to model those sort of types.</p>",
+        "id": 219219405,
+        "sender_full_name": "Dan Doel",
+        "timestamp": 1607441105
+    },
+    {
+        "content": "<p>In the case of the type theory stuff, the index wouldn't need to be a type, of course. You can index by elements of any type, not just a universe.</p>",
+        "id": 219219471,
+        "sender_full_name": "Dan Doel",
+        "timestamp": 1607441142
+    },
+    {
+        "content": "<p>Great, thanks for the leads! <span aria-label=\"big smile\" class=\"emoji emoji-1f604\" role=\"img\" title=\"big smile\">:big_smile:</span></p>",
+        "id": 219266024,
+        "sender_full_name": "Jonathan Castello",
+        "timestamp": 1607463322
+    }
+]

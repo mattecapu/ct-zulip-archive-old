@@ -1,0 +1,440 @@
+[
+    {
+        "content": "<p>Recently there have been a spate of papers applying categorical gluing methods to prove normalization theorems.  I guess this idea goes back a ways (e.g. to <a href=\"https://www.cl.cam.ac.uk/~mpf23/papers/Types/nbe.pdf\">Fiore 2002</a> if not further), but recently there is <a href=\"https://arxiv.org/abs/1809.08646\">Sterling-Spitters</a>, <a href=\"https://arxiv.org/abs/2101.11479\">Sterling-Angiuli</a>, and <a href=\"https://arxiv.org/abs/2106.01414\">Gratzer</a>.</p>\n<p>Supposing (for the moment) that I understand what's going on in these categorical \"normalization by gluing\" arguments, how are these mathematical normalization results related to the normalization <em>algorithms</em> implemented in proof assistants?  Most of these papers include some remarks about the connection of \"normalization by gluing\" to algorithms called \"normalization by evaluation\", but I am having trouble making this anything more than a vague analogy.</p>\n<p>To be sure, both involve an intermediate step consisting of \"values\" in the metalanguage.  But in NbG, these \"values\" are a family of set-valued presheaves on the category of renamings, indexed by the types of the theory and defined recursively over those types by applying the universal property of the syntactic category (in a dependent type theory, the recursion is mutual with the action on morphisms of a functor defined by this universal property).  While in a bare-bones description of NbE as, for instance, on <a href=\"https://en.wikipedia.org/wiki/Normalisation_by_evaluation\">wikipedia</a>, these \"values\" are a single \"recursive datatype\" -- a sort of \"inductively defined\" object that's allowed to appear non-strictly-positively in its own constructors.</p>\n<p>So there are at least two big differences.  First, in NbG there are a whole bunch of \"types of values\", indexed by <em>pairs</em> of types and contexts in the theory: one presheaf for each type, and each presheaf consists of one set for each context.  While in NbE (at least, in the naive presentation on wikipedia) there is only one type of values.  Second, in NbG these types of values are defined <em>recursively</em> over the types of the theory, while in NbE the type of values is \"inductively\" defined -- with a sort of \"induction\" that, I believe, doesn't even exist in categories of sets or set-valued presheaves (you have to use domains).</p>\n<p>Is there any way of looking at an NbG proof and directly extracting an algorithm that can be explained naively and coded in a simply-typed programming language?  Or, conversely, of looking at a naive NbE algorithm and translating it into an NbG proof?</p>",
+        "id": 246496371,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1626720561
+    },
+    {
+        "content": "<p>Probably worth noting that, in the Wikipedia article, the NbE is \"untyped\". In Coq, the semantic interpretation of a term will be by induction over its type derivation: <a href=\"https://github.com/huitseeker/nbe/blob/2187fa936e890e475adf9c178dbf0487c655166f/nbe.v#L99\">https://github.com/huitseeker/nbe/blob/2187fa936e890e475adf9c178dbf0487c655166f/nbe.v#L99</a></p>\n<p>No <code>Lam : (A -&gt; A) -&gt; A</code> required.</p>",
+        "id": 246502429,
+        "sender_full_name": "Cody Roux",
+        "timestamp": 1626723130
+    },
+    {
+        "content": "<p>I am not sure what you mean by \"in Coq\".  In a simply typed programming language it is not possible to define a family of types by recursion.</p>",
+        "id": 246502803,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1626723303
+    },
+    {
+        "content": "<p>I guess there's a separate question of to what extent one can practically implement an NbG proof in a constructive dependent type theory and then \"execute\" it.  Is that more like what you're talking about?  One could then try to apply some transformations to make the result into a more explicit simply typed algorithm.  Has that been done anywhere?</p>",
+        "id": 246503943,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1626723840
+    },
+    {
+        "content": "<p>That is indeed what I am talking about. You probably do need dependent types to carry out this proof. Indeed I conjecture that for a <em>given</em> simply typed term, you can carry out the NbE within MLTT without universes, though not _uniformly_ (since that would imply normalization)</p>",
+        "id": 246511440,
+        "sender_full_name": "Cody Roux",
+        "timestamp": 1626727502
+    },
+    {
+        "content": "<p>There's probably some sense in which the \"NbE witness\" of a given well-typed term is the \"decoration\" of that term in the sense of Bernardi and Lasson: <a href=\"https://who.rocq.inria.fr/Marc.Lasson/articles/RealParam/RealParam.pdf\">https://who.rocq.inria.fr/Marc.Lasson/articles/RealParam/RealParam.pdf</a></p>",
+        "id": 246511748,
+        "sender_full_name": "Cody Roux",
+        "timestamp": 1626727642
+    },
+    {
+        "content": "<p>There they introduce a type of type system which is just expressive enough to encode the \"parametricity statement\" of a term, but I think you can do the same for the \"NbE witness\" of a term...</p>",
+        "id": 246511882,
+        "sender_full_name": "Cody Roux",
+        "timestamp": 1626727696
+    },
+    {
+        "content": "<p>This is a bit vague, and I apologize</p>",
+        "id": 246511906,
+        "sender_full_name": "Cody Roux",
+        "timestamp": 1626727707
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276777\">Mike Shulman</span> <a href=\"#narrow/stream/229952-theory.3A-type.20theory/topic/NbG.20vs.20NbE/near/246496371\">said</a>:</p>\n<blockquote>\n<p>Recently there have been a spate of papers applying categorical gluing methods to prove normalization theorems.  I guess this idea goes back a ways (e.g. to <a href=\"https://www.cl.cam.ac.uk/~mpf23/papers/Types/nbe.pdf\">Fiore 2002</a> if not further), but recently there is <a href=\"https://arxiv.org/abs/1809.08646\">Sterling-Spitters</a>, <a href=\"https://arxiv.org/abs/2101.11479\">Sterling-Angiuli</a>, and <a href=\"https://arxiv.org/abs/2106.01414\">Gratzer</a>.</p>\n<p>Supposing (for the moment) that I understand what's going on in these categorical \"normalization by gluing\" arguments, how are these mathematical normalization results related to the normalization <em>algorithms</em> implemented in proof assistants?  Most of these papers include some remarks about the connection of \"normalization by gluing\" to algorithms called \"normalization by evaluation\", but I am having trouble making this anything more than a vague analogy.</p>\n<p>To be sure, both involve an intermediate step consisting of \"values\" in the metalanguage.  But in NbG, these \"values\" are a family of set-valued presheaves on the category of renamings, indexed by the types of the theory and defined recursively over those types by applying the universal property of the syntactic category (in a dependent type theory, the recursion is mutual with the action on morphisms of a functor defined by this universal property).  While in a bare-bones description of NbE as, for instance, on <a href=\"https://en.wikipedia.org/wiki/Normalisation_by_evaluation\">wikipedia</a>, these \"values\" are a single \"recursive datatype\" -- a sort of \"inductively defined\" object that's allowed to appear non-strictly-positively in its own constructors.</p>\n<p>So there are at least two big differences.  First, in NbG there are a whole bunch of \"types of values\", indexed by <em>pairs</em> of types and contexts in the theory: one presheaf for each type, and each presheaf consists of one set for each context.  While in NbE (at least, in the naive presentation on wikipedia) there is only one type of values.  Second, in NbG these types of values are defined <em>recursively</em> over the types of the theory, while in NbE the type of values is \"inductively\" defined -- with a sort of \"induction\" that, I believe, doesn't even exist in categories of sets or set-valued presheaves (you have to use domains).</p>\n<p>Is there any way of looking at an NbG proof and directly extracting an algorithm that can be explained naively and coded in a simply-typed programming language?  Or, conversely, of looking at a naive NbE algorithm and translating it into an NbG proof?</p>\n</blockquote>\n<p>Gluing and realizability are two  <strong>different</strong> ways to think about connecting \"math\" to syntax. In either case, it seems possible to formulate notions like reification and reflection, the main constituents of the nbe/nbg approach. To me that (reify/reflect) is the important idea, probably due to Tait or maybe even going further back(?),  and that there are a variety of settings in which one can implement that idea, including realizability-style and gluing-style settings.</p>",
+        "id": 246518571,
+        "sender_full_name": "Jonathan Sterling",
+        "timestamp": 1626730484
+    },
+    {
+        "content": "<p>I wasn't thinking about realizability at all.  Are you saying that \"naive NbE\" is a sort of realizability?</p>",
+        "id": 246518772,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1626730635
+    },
+    {
+        "content": "<p>Yes, I think that naive nbe is a form of realizability (in the very broad sense of realizability as a field that goes beyond the Hyland-etc. tradition) and that if one wanted to do so, it would probably be possible to make the connection explicit.</p>",
+        "id": 246518879,
+        "sender_full_name": "Jonathan Sterling",
+        "timestamp": 1626730704
+    },
+    {
+        "content": "<p>Hmm, okay, that's something to chew on.</p>",
+        "id": 246518975,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1626730771
+    },
+    {
+        "content": "<p>The classic proofs involving nbe are very realizability-style anyway... Which makes sense because they were doing proving normalization over an untyped domain using partial equivalence relations.</p>",
+        "id": 246518990,
+        "sender_full_name": "Jonathan Sterling",
+        "timestamp": 1626730778
+    },
+    {
+        "content": "<p>So I remember you (Jon) saying that the normalization proof by gluing (of cubical type theory, say) is not exactly the normalization algorithm implemented in a proof assistant.  But somehow I had the impression that the connection was fairly close at least intuitively, in that you could look at one and see the outlines of the other.  I've been trying to do that in a simple case, but I can't see much connection other than that in both cases there is something called \"reify\" and something called \"reflect\".  Maybe the impression I got was of more closeness than you intended to convey.</p>",
+        "id": 246519232,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1626730921
+    },
+    {
+        "content": "<p>Yes, the close connection is that they share the same main idea: a saturation law for values between neutrals and normals, called reflect/reify. the details of the implementaiton of this idea may differ --- for instance, common implementation techniques like defunctionalization totally change where these things get called, and can disrupt the symmetry that you find in the mathematics...</p>\n<p>That is why I am urging people to be cautious about trying to make too close a formal connection. Even something like the particular way that you deal with variables can totally obscure a connection to the math... So when comparing the implementation and the proof, we have to use the right vantage point. In both cases, algorithms and proofs are about ideas.</p>",
+        "id": 246519528,
+        "sender_full_name": "Jonathan Sterling",
+        "timestamp": 1626731127
+    },
+    {
+        "content": "<p>With that said, in all cases, there is an algorithm for implementing \"reflect\" on a connective. And this algorithm is faithfully represented in the Fiore-Altenkirch-Kapsosi-Coquand-Sterling-Angiuli-blah-blah-blah proofs.</p>",
+        "id": 246519612,
+        "sender_full_name": "Jonathan Sterling",
+        "timestamp": 1626731172
+    },
+    {
+        "content": "<p>One (the only) benefit of the realizability-style approaches (as exemplified in the habilitationsschrift of Andreas Abel, as well as the paper by Daniel and Lars and myself for a modal type theory) is that you really are proving something about an actual algorithm that is extremely close to the implementation.</p>\n<p>To see the unity between all these approaches, I feel that it is necessary to accept a bit of fuzz between them so that the main ideas (reification and reflection, etc.) can be allowed to speak for themselves.</p>",
+        "id": 246519841,
+        "sender_full_name": "Jonathan Sterling",
+        "timestamp": 1626731325
+    },
+    {
+        "content": "<p>Does it really satisfy you to have a mathematical proof that there exists a normalization function, and an implementation of a \"normalization algorithm\", but no proof that the algorithm actually implements the function?  In particular, can you actually prove that the actual normalization algorithm used in a proof assistant actually terminates?</p>",
+        "id": 246520359,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1626731726
+    },
+    {
+        "content": "<p>I would say that as a category theorist I am allergic to fuzz.  (-:O</p>",
+        "id": 246520459,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1626731796
+    },
+    {
+        "content": "<p>It does satisfy me, because as an implementer what interested me was the main idea --- the important lever that conceptually makes it possible to do normalization. With that said, I do know how to prove that the actual algorithm terminates --- using a realizability approach like in the old days. I don't bother with this because those proofs are absurdly difficult. But I think someone who was more interested in it than me could try and transform those into actual mathematics (like I did for the nbg arguments of Coquand and friends), and this could be a nice result for someone's thesis.</p>",
+        "id": 246520483,
+        "sender_full_name": "Jonathan Sterling",
+        "timestamp": 1626731829
+    },
+    {
+        "content": "<p>Meaning that whenever I see an analogy I want to make it precise, and category theory is an excellent tool for finding frameworks for doing that.</p>",
+        "id": 246520505,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1626731860
+    },
+    {
+        "content": "<p>I think that category theorists use \"fuzz\" all the time --- it is part of how you decide what will be a conjecture and what won't. But what I like about category theorists is they tend to go further... and make the connection precise.</p>",
+        "id": 246520520,
+        "sender_full_name": "Jonathan Sterling",
+        "timestamp": 1626731877
+    },
+    {
+        "content": "<p>Right.</p>",
+        "id": 246520583,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1626731897
+    },
+    {
+        "content": "<p>All I am trying to say is that you will really suffer if you try to make the connection between the two things <em>as they are</em> precise, but that there is a direction one could persue (which would likely change both things being compared) that could lead to more precision.</p>\n<p>To me this isn't one of my research questions, but I think it's a very good thing to work on. Someone with more of a stomach for realizability than me should take it on :)</p>",
+        "id": 246520619,
+        "sender_full_name": "Jonathan Sterling",
+        "timestamp": 1626731931
+    },
+    {
+        "content": "<p>Well, phooey.</p>",
+        "id": 246520875,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1626732080
+    },
+    {
+        "content": "<p>I hoped this was something someone already understood and could explain to me.</p>",
+        "id": 246520900,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1626732098
+    },
+    {
+        "content": "<p>(-:</p>",
+        "id": 246520923,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1626732114
+    },
+    {
+        "content": "<p>Ahh... It would be great if someone does understand it, but what I've said is the limit of my understanding. Hopefully someone else will chime in and save us!</p>",
+        "id": 246520978,
+        "sender_full_name": "Jonathan Sterling",
+        "timestamp": 1626732125
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276777\">Mike Shulman</span> <a href=\"#narrow/stream/229952-theory.3A-type.20theory/topic/NbG.20vs.20NbE/near/246520900\">said</a>:</p>\n<blockquote>\n<p>I hoped this was something someone already understood and could explain to me.</p>\n</blockquote>\n<p>I had also always assumed this was possible, but not spelled out anywhere. The truth seems quite disappointing!</p>",
+        "id": 246521038,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1626732171
+    },
+    {
+        "content": "<p>It's one of those things that constructivists often gloss over --- e.g. the coquand proof is constructive, so it carries an algorithm, but this algorithm is actually not what you would implement. To me the extracted algorithm is still very interesting, because it has the main ideas of nbe inside it, but like most instances of the \"extraction dream\", it's really just an illusion.</p>",
+        "id": 246521187,
+        "sender_full_name": "Jonathan Sterling",
+        "timestamp": 1626732246
+    },
+    {
+        "content": "<p>Does it not seem a bit disingenous to call both NbE if they're not actually the same in a precise sense?</p>",
+        "id": 246521217,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1626732265
+    },
+    {
+        "content": "<p>NbE for its entire history has meant a constellation of techniques that are all very different from each other, but share some of several key features. (It is a \"family resemblance\")</p>",
+        "id": 246521248,
+        "sender_full_name": "Jonathan Sterling",
+        "timestamp": 1626732293
+    },
+    {
+        "content": "<p>Maybe I would be more satisfied if I felt like I understood the \"main idea\" of reify/reflect that you refer to.  This \"yoga\" frequently seems to be introduced with little explanation of where it comes from or why it's natural.  I feel like I understand proofs of <em>canonicity</em> by gluing: the scone is an obviously natural categorical thing, and from there the proof more or less writes itself.  But normalization by gluing feels to me more like a categorical argument cooked up to match an algorithm that someone already had in mind, and yet I can't find an explanation of that algorithm itself that actually motivates it other than by \"this works\".</p>",
+        "id": 246521262,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1626732306
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"297784\">Jonathan Sterling</span> <a href=\"#narrow/stream/229952-theory.3A-type.20theory/topic/NbG.20vs.20NbE/near/246521248\">said</a>:</p>\n<blockquote>\n<p>NbE for its entire history has meant a constellation of techniques that are all very different from each other, but share some of several key features. (It is a \"family resemblance\")</p>\n</blockquote>\n<p>Right, I see.</p>",
+        "id": 246521273,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1626732314
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"297784\">Jonathan Sterling</span> <a href=\"#narrow/stream/229952-theory.3A-type.20theory/topic/NbG.20vs.20NbE/near/246521248\">said</a>:</p>\n<blockquote>\n<p>NbE for its entire history has meant a constellation of techniques that are all very different from each other, but share some of several key features. (It is a \"family resemblance\")</p>\n</blockquote>\n<p>maybe we should retire the name ;-)</p>",
+        "id": 246521278,
+        "sender_full_name": "Jonathan Sterling",
+        "timestamp": 1626732319
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276777\">Mike Shulman</span> <a href=\"#narrow/stream/229952-theory.3A-type.20theory/topic/NbG.20vs.20NbE/near/246521262\">said</a>:</p>\n<blockquote>\n<p>Maybe I would be more satisfied if I felt like I understood the \"main idea\" of reify/reflect that you refer to.  This \"yoga\" frequently seems to be introduced with little explanation of where it comes from or why it's natural.  I feel like I understand proofs of <em>canonicity</em> by gluing: the scone is an obviously natural categorical thing, and from there the proof more or less writes itself.  But normalization by gluing feels to me more like a categorical argument cooked up to match an algorithm that someone already had in mind, and yet I can't find an explanation of that algorithm itself that actually motivates it other than by \"this works\".</p>\n</blockquote>\n<p>Yes, this is basically where I am at too. I think we don't yet know why this wondrous idea works. I expect that when we find a more mathematically forced normalization argument, it may not even involve this \"yoga\"! Or if it does, it will do so in a very changed way.</p>",
+        "id": 246521334,
+        "sender_full_name": "Jonathan Sterling",
+        "timestamp": 1626732363
+    },
+    {
+        "content": "<p>Can we at least say anything about how people came up with it in the first place?</p>",
+        "id": 246521394,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1626732420
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"297784\">Jonathan Sterling</span> <a href=\"#narrow/stream/229952-theory.3A-type.20theory/topic/NbG.20vs.20NbE/near/246521187\">said</a>:</p>\n<blockquote>\n<p>It's one of those things that constructivists often gloss over --- e.g. the coquand proof is constructive, so it carries an algorithm, but this algorithm is actually not what you would implement.</p>\n</blockquote>\n<p>Isn't there a bit of a circularity there too?  In order to extract an algorithm from a proof in a constructive metatheory, don't you need a normalization algorithm for the metatheory?</p>",
+        "id": 246521429,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1626732447
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276777\">Mike Shulman</span> <a href=\"#narrow/stream/229952-theory.3A-type.20theory/topic/NbG.20vs.20NbE/near/246521429\">said</a>:</p>\n<blockquote>\n<p><span class=\"user-mention silent\" data-user-id=\"297784\">Jonathan Sterling</span> <a href=\"#narrow/stream/229952-theory.3A-type.20theory/topic/NbG.20vs.20NbE/near/246521187\">said</a>:</p>\n<blockquote>\n<p>It's one of those things that constructivists often gloss over --- e.g. the coquand proof is constructive, so it carries an algorithm, but this algorithm is actually not what you would implement.</p>\n</blockquote>\n<p>Isn't there a bit of a circularity there too?  In order to extract an algorithm from a proof in a constructive metatheory, don't you need a normalization algorithm for the metatheory?</p>\n</blockquote>\n<p>Absolutely not --- we only need to compute closed terms of the metatheory. Another approach is to have realizability as your metatheory. Either way would work.</p>",
+        "id": 246521464,
+        "sender_full_name": "Jonathan Sterling",
+        "timestamp": 1626732480
+    },
+    {
+        "content": "<p>So you need a canonicity algorithm for the metatheory?</p>",
+        "id": 246521576,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1626732560
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276777\">Mike Shulman</span> <a href=\"#narrow/stream/229952-theory.3A-type.20theory/topic/NbG.20vs.20NbE/near/246521394\">said</a>:</p>\n<blockquote>\n<p>Can we at least say anything about how people came up with it in the first place?</p>\n</blockquote>\n<p>Yes. It really is possible to see why it is \"forced\" in an algorithmic sense if you climb the mountain of beta-short/eta-long normal forms. To me, the reify-reflect yoga and the formulation of eta-long normal forms in terms of neutrals and normals are two forms of the same idea, so what one should try to overcome is not one vs the other, but both!</p>",
+        "id": 246521591,
+        "sender_full_name": "Jonathan Sterling",
+        "timestamp": 1626732573
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276777\">Mike Shulman</span> <a href=\"#narrow/stream/229952-theory.3A-type.20theory/topic/NbG.20vs.20NbE/near/246521576\">said</a>:</p>\n<blockquote>\n<p>So you need a canonicity algorithm for the metatheory?</p>\n</blockquote>\n<p>Well, as I pointed out, an alternative is to use a realizability topos as your metalanguage. But basically yes.</p>",
+        "id": 246521726,
+        "sender_full_name": "Jonathan Sterling",
+        "timestamp": 1626732607
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"297784\">Jonathan Sterling</span> <a href=\"#narrow/stream/229952-theory.3A-type.20theory/topic/NbG.20vs.20NbE/near/246521591\">said</a>:</p>\n<blockquote>\n<p><span class=\"user-mention silent\" data-user-id=\"276777\">Mike Shulman</span> <a href=\"#narrow/stream/229952-theory.3A-type.20theory/topic/NbG.20vs.20NbE/near/246521394\">said</a>:</p>\n<blockquote>\n<p>Can we at least say anything about how people came up with it in the first place?</p>\n</blockquote>\n<p>Yes. It really is possible to see why it is \"forced\" in an algorithmic sense if you climb the mountain of beta-short/eta-long normal forms. To me, the reify-reflect yoga and the formulation of eta-long normal forms in terms of neutrals and normals are two forms of the same idea, so what one should try to overcome is not one vs the other, but both!</p>\n</blockquote>\n<p>I am short on time tonight, but if you want to get sent down the rabbit hole --- first just try to close every connective under an operation that sends \"elements\" to normal forms, assuming that you have such an operation for all the constituent types. You will quickly see why you need reflection.</p>",
+        "id": 246521915,
+        "sender_full_name": "Jonathan Sterling",
+        "timestamp": 1626732732
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"297784\">Jonathan Sterling</span> <a href=\"#narrow/stream/229952-theory.3A-type.20theory/topic/NbG.20vs.20NbE/near/246521591\">said</a>:</p>\n<blockquote>\n<p>Yes. It really is possible to see why it is \"forced\" in an algorithmic sense if you climb the mountain of beta-short/eta-long normal forms.</p>\n</blockquote>\n<p>Is there an exposition of this written out somewhere?  I looked at Abel's thesis, but he basically pulls it right out of a hat at the beginning as far as I can see.</p>",
+        "id": 246521934,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1626732742
+    },
+    {
+        "content": "<blockquote>\n<p>To me, the reify-reflect yoga and the formulation of eta-long normal forms in terms of neutrals and normals are two forms of the same idea, so what one should try to overcome is not one vs the other, but both!</p>\n</blockquote>\n<p>Hmm.  I must be more confused than I thought, then, because I feel like I understand the latter but not the former.  Supposing I have neutrals and normals, how does it follow that I must have a set of \"values\" that admits a map to the normals and from the neutrals?</p>",
+        "id": 246521977,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1626732775
+    },
+    {
+        "content": "<p>There are some attempts to explain this... Bob tried in a note that is somewhere (I can try to find it).</p>",
+        "id": 246521996,
+        "sender_full_name": "Jonathan Sterling",
+        "timestamp": 1626732797
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276777\">Mike Shulman</span> <a href=\"#narrow/stream/229952-theory.3A-type.20theory/topic/NbG.20vs.20NbE/near/246521977\">said</a>:</p>\n<blockquote>\n<blockquote>\n<p>To me, the reify-reflect yoga and the formulation of eta-long normal forms in terms of neutrals and normals are two forms of the same idea, so what one should try to overcome is not one vs the other, but both!</p>\n</blockquote>\n<p>Hmm.  I must be more confused than I thought, then, because I feel like I understand the latter but not the former.  Supposing I have neutrals and normals, how does it follow that I must have a set of \"values\" that admits a map to the normals and from the neutrals?</p>\n</blockquote>\n<p>Again, I am not speaking of a formal correspondence. I am speaking of a scientific correspondence in the sense that the structure of the Tait reify/reflect configuration is determined by the structure of normals and neutrals, and vice versa. A good way to see this in action would be to change one of the two, and see that an analogous change has to be made on the other side. (Look at, for instance, the way that the change in structure of the normals and neutrals of cubical type theory necessitated a change in the structure of the reflection map --- although, at times while I was inventing this, it felt like the force was coming from the other direction! Of course, it was coming from both directions.)</p>",
+        "id": 246522145,
+        "sender_full_name": "Jonathan Sterling",
+        "timestamp": 1626732889
+    },
+    {
+        "content": "<p>To reiterate, I feel that you will not be satisfied by these explanations --- because you are looking for a theory that has been completed and then freeze-dried, but that is just not the state of the science. So what we have are experts with a variety of reliable intuitions doing dark magic, but there is some rhyme and reason to it.</p>\n<p>I think it would be really cool if you can figure out what we are talking about to the point that you would be able to do a better job than us in finding the mathematics behind it.</p>",
+        "id": 246522256,
+        "sender_full_name": "Jonathan Sterling",
+        "timestamp": 1626732963
+    },
+    {
+        "content": "<p>But one place to start, in terms of understanding why I feel they are reflections of the same concept, is to view the embedding of neutrals into normals as essentially a version of the reflection map that has been \"frozen\".</p>",
+        "id": 246522340,
+        "sender_full_name": "Jonathan Sterling",
+        "timestamp": 1626733033
+    },
+    {
+        "content": "<p>Okay, I'll chew on that too.  I really shouldn't be spending time working on this myself, but maybe something will pop up unlooked for, or maybe some other clever person will figure it all out.</p>",
+        "id": 246523171,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1626733641
+    },
+    {
+        "content": "<p>Thanks for mentioning realizability anyway -- I already feel like that may help me a lot in understanding what's going on in naive NbE.</p>",
+        "id": 246523236,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1626733684
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276777\">Mike Shulman</span> <a href=\"#narrow/stream/229952-theory.3A-type.20theory/topic/NbG.20vs.20NbE/near/246523171\">said</a>:</p>\n<blockquote>\n<p>Okay, I'll chew on that too.  I really shouldn't be spending time working on this myself, but maybe something will pop up unlooked for, or maybe some other clever person will figure it all out.</p>\n</blockquote>\n<p>Sounds good, and good luck! I'm also working on a different collaboration related to these questions with someone who is a better category theorist than myself, so maybe we will find out some answers that would interest you :)</p>",
+        "id": 246523286,
+        "sender_full_name": "Jonathan Sterling",
+        "timestamp": 1626733708
+    },
+    {
+        "content": "<p>It's important to know that reify/reflect and quote/eval are intimately related. A nice paper by Danvy and Malmjaer <a href=\"http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.40.2018&amp;rep=rep1&amp;type=pdf\">Intensions and Extensions in a Reflective Tower</a> gives a very PL-oriented introduction.  This has led to nice work on <a href=\"https://www.cs.purdue.edu/homes/rompf/papers/amin-popl18.pdf\">Collapsing Towers of Interpreters</a> that let you have nested languages and 'flatten' them (I wonder if languages form a monad?).</p>\n<p>I do derive some satisfaction that the implementation of the latter uses <a href=\"http://www.cas.mcmaster.ca/~carette/publications/jfp.pdf\">tagless-final</a> to achieve stage-polymorphism.</p>\n<p>NbE and partial evaluation are intimately related. Where NbE 'wins' is that it modifies the language in a semantically non-trivial way (normal vs neutral forms), whereas partial evaluation limits itself largely to binding-stage annotations. Only when you really do quite a bit more, as they do in the <a href=\"https://github.com/frex-project\">FREX project</a> (free extensions, yay!) does partial evaluation become powerful again. There you can actually leverage much more of the equational theory of your language directly for compile-time optimizations. But it's tricky - even though \"free extensions\" always exist classically, they actually seldom exist <strong>constructively</strong>, so that one must apply a lot of creativity in practice. (This is where cubical techniques might be very interesting, as many of the interesting \"free extensions\" do indeed exist as QITs.)</p>",
+        "id": 246532412,
+        "sender_full_name": "Jacques Carette",
+        "timestamp": 1626742139
+    },
+    {
+        "content": "<p>That all sounds interesting, but it uses a lot of words that I don't understand.</p>",
+        "id": 246534265,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1626743575
+    },
+    {
+        "content": "<p>I don't quite want to say \"that was the point\"... but I did want to indicate that there is quite a lot to this thread. Logicians have looked at quotation (and quasi-quotation) for a long time, in particular by Quine in the 1940s. PLs have had quote and eval since the early LISPs (so probably around 1960). That you can do really wild stuff with them was first shown by Futamura in 1971.</p>\n<p>You can think of \"towers of interpreters\" as 'internal language of internal language of internal language of...\" n times. Or you can think of it the other way around too: an internal category in an internal category in ... n times.</p>\n<p>Once you start exploring those waters, you start to see that it's related to things you do know a lot about: n-theories, type theory 'eating itself' and so on.  (I got here the other way around, starting with writing lots of code that does fancy stuff, then trying to find decent theory that explains that it's not just a fluke.)</p>",
+        "id": 246538149,
+        "sender_full_name": "Jacques Carette",
+        "timestamp": 1626747611
+    },
+    {
+        "content": "<p>Thanks for these links <span class=\"user-mention\" data-user-id=\"296322\">@Jacques Carette</span>! There is a lot of stuff, especially in the orbit of Danvy and also Filinski, that I would like to better understand.</p>",
+        "id": 246579998,
+        "sender_full_name": "Jonathan Sterling",
+        "timestamp": 1626785935
+    },
+    {
+        "content": "<p>Nice entry points to Danvy &amp; Filinski 's ideas are often in papers of Kiselyov and Shan, and also Sabry. If you want something gentler - though you're perhaps one of the few who can read Filinski directly and understand it.</p>",
+        "id": 246582347,
+        "sender_full_name": "Jacques Carette",
+        "timestamp": 1626787120
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"296322\">Jacques Carette</span> <a href=\"#narrow/stream/229952-theory.3A-type.20theory/topic/NbG.20vs.20NbE/near/246582347\">said</a>:</p>\n<blockquote>\n<p>Nice entry points to Danvy &amp; Filinski 's ideas are often in papers of Kiselyov and Shan, and also Sabry. If you want something gentler - though you're perhaps one of the few who can read Filinski directly and understand it.</p>\n</blockquote>\n<p>Thanks for the pointer :) I don't know specifically about Filinski, but when there is some intimidating literature I have usually not found that I can attack it directly haha</p>",
+        "id": 246583697,
+        "sender_full_name": "Jonathan Sterling",
+        "timestamp": 1626787738
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"297784\">Jonathan Sterling</span> <a href=\"#narrow/stream/229952-theory.3A-type.20theory/topic/NbG.20vs.20NbE/near/246521726\">said</a>:</p>\n<blockquote>\n<p><span class=\"user-mention silent\" data-user-id=\"276777\">Mike Shulman</span> <a href=\"#narrow/stream/229952-theory.3A-type.20theory/topic/NbG.20vs.20NbE/near/246521576\">said</a>:</p>\n<blockquote>\n<p>So you need a canonicity algorithm for the metatheory?</p>\n</blockquote>\n<p>Well, as I pointed out, an alternative is to use a realizability topos as your metalanguage. But basically yes.</p>\n</blockquote>\n<p>This confuses me: extracting algorithms from constructive proofs certainly does not require knowing that the proof terms <em>normalize</em>; simply that they have a computational interpretation! Certainly they might loop (say if your constructive theory is inconsistent :)</p>",
+        "id": 246589670,
+        "sender_full_name": "Cody Roux",
+        "timestamp": 1626790161
+    },
+    {
+        "content": "<p><span class=\"user-mention\" data-user-id=\"276030\">@Cody Roux</span> Well, when I say I want an algorithm, I mean I want a terminating algorithm.  So if you prove in a constructive metatheory that there exists a normalization function, and when I ask \"what's the algorithm\" you say that there's automatically an algorithm because the function was constructed in a constructive metatheory, don't you need to know that your constructive metatheory is consistent and canonizing in order for your proof to give me a <em>terminating</em> algorithm?</p>",
+        "id": 246617838,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1626799654
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"296322\">Jacques Carette</span> <a href=\"#narrow/stream/229952-theory.3A-type.20theory/topic/NbG.20vs.20NbE/near/246538149\">said</a>:</p>\n<blockquote>\n<p>I don't quite want to say \"that was the point\"... but I did want to indicate that there is quite a lot to this thread.</p>\n</blockquote>\n<p>Sure, I don't doubt it.  But did you mean to say that any of those links actually answers my question?</p>",
+        "id": 246617981,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1626799717
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276777\">Mike Shulman</span> <a href=\"#narrow/stream/229952-theory.3A-type.20theory/topic/NbG.20vs.20NbE/near/246617981\">said</a>:</p>\n<blockquote>\n<p>But did you mean to say that any of those links actually answers my question?</p>\n</blockquote>\n<p>About NbG vs NbE directly? No. I wanted to provide wider context, because there might actually be easier answers when the question is seen more broadly.</p>",
+        "id": 246618928,
+        "sender_full_name": "Jacques Carette",
+        "timestamp": 1626800206
+    },
+    {
+        "content": "<p><span class=\"user-mention\" data-user-id=\"276777\">@Mike Shulman</span> There's a difference between a terminating algorithm and a <em>provably terminating</em> algorithm. In the first case, you just need to \"believe\" in your constructive meta-theory, in the second you need to have some canonicity proof, which often requires assuming 1-consistency of your constructive-metatheory (or a classical version of it, actually).</p>",
+        "id": 246621515,
+        "sender_full_name": "Cody Roux",
+        "timestamp": 1626801379
+    },
+    {
+        "content": "<p>But the whole point of <em>proving</em> that a type theory satisfies normalization is to have a <em>provably terminating</em> algorithm, isn't it?</p>",
+        "id": 246622683,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1626801917
+    },
+    {
+        "content": "<p>Yes, of course, my point is just this: The step of extracting the normalization algorithm from the proof is separate from the proof itself, and can be done with a weak meta-theory. E.g. you can define a realizability interpretation for <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"normal\">P</mi><mi mathvariant=\"normal\">A</mi></mrow><annotation encoding=\"application/x-tex\">\\mathrm{PA}</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord\"><span class=\"mord mathrm\">PA</span></span></span></span></span> in some tiny theory, say <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"normal\">P</mi><mi mathvariant=\"normal\">R</mi><mi mathvariant=\"normal\">A</mi></mrow><annotation encoding=\"application/x-tex\">\\mathrm{PRA}</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord\"><span class=\"mord mathrm\">PRA</span></span></span></span></span>, and in <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"normal\">P</mi><mi mathvariant=\"normal\">R</mi><mi mathvariant=\"normal\">A</mi></mrow><annotation encoding=\"application/x-tex\">\\mathrm{PRA}</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord\"><span class=\"mord mathrm\">PRA</span></span></span></span></span> prove that if <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mrow><mi mathvariant=\"normal\">P</mi><mi mathvariant=\"normal\">A</mi></mrow><mo>⊢</mo><mi>P</mi></mrow><annotation encoding=\"application/x-tex\">\\mathrm{PA}\\vdash P</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.69444em;vertical-align:0em;\"></span><span class=\"mord\"><span class=\"mord mathrm\">PA</span></span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">⊢</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.13889em;\">P</span></span></span></span> then <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mrow><mi mathvariant=\"normal\">H</mi><mi mathvariant=\"normal\">A</mi></mrow><mo>⊢</mo><mi>P</mi><mrow><mtext> </mtext><mi mathvariant=\"normal\">h</mi><mi mathvariant=\"normal\">a</mi><mi mathvariant=\"normal\">s</mi><mtext> </mtext><mi mathvariant=\"normal\">a</mi><mtext> </mtext><mi mathvariant=\"normal\">r</mi><mi mathvariant=\"normal\">e</mi><mi mathvariant=\"normal\">a</mi><mi mathvariant=\"normal\">l</mi><mi mathvariant=\"normal\">i</mi><mi mathvariant=\"normal\">z</mi><mi mathvariant=\"normal\">e</mi><mi mathvariant=\"normal\">r</mi></mrow></mrow><annotation encoding=\"application/x-tex\">\\mathrm{HA}\\vdash P\\mathrm{\\ has\\ a\\ realizer}</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.69444em;vertical-align:0em;\"></span><span class=\"mord\"><span class=\"mord mathrm\">HA</span></span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">⊢</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.69444em;vertical-align:0em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.13889em;\">P</span><span class=\"mord\"><span class=\"mspace\"> </span><span class=\"mord mathrm\">has</span><span class=\"mspace\"> </span><span class=\"mord mathrm\">a</span><span class=\"mspace\"> </span><span class=\"mord mathrm\">realizer</span></span></span></span></span>. Of course <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"normal\">P</mi><mi mathvariant=\"normal\">R</mi><mi mathvariant=\"normal\">A</mi></mrow><annotation encoding=\"application/x-tex\">\\mathrm{PRA}</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord\"><span class=\"mord mathrm\">PRA</span></span></span></span></span> does not know whether this realizer halts.</p>\n<p>There is an an analogous situation for these normalization arguments.</p>",
+        "id": 246631927,
+        "sender_full_name": "Cody Roux",
+        "timestamp": 1626806465
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276047\">Alex Gryzlov</span> has marked this topic as resolved.</p>",
+        "id": 246641894,
+        "sender_full_name": "Notification Bot",
+        "timestamp": 1626811387
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276047\">Alex Gryzlov</span> has marked this topic as unresolved.</p>",
+        "id": 246641927,
+        "sender_full_name": "Notification Bot",
+        "timestamp": 1626811406
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"303936\">Peter Arndt</span> has marked this topic as resolved.</p>",
+        "id": 246690151,
+        "sender_full_name": "Notification Bot",
+        "timestamp": 1626854585
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"303936\">Peter Arndt</span> has marked this topic as unresolved.</p>",
+        "id": 246690156,
+        "sender_full_name": "Notification Bot",
+        "timestamp": 1626854591
+    },
+    {
+        "content": "<p>Perhaps a more conventional (for the CT readership) presentation of the result and its proof would be helpful?  <br>\nI found the Sterling-Agiuli paper (<a href=\"https://arxiv.org/abs/2101.11479\">https://arxiv.org/abs/2101.11479</a>) quite difficult to read, despite being well-acquainted with the system under consideration, the property asserted to hold for it, and the proposed method of proof.  Perhaps the problem was that it was written for a different readership? <br>\nI see that Jon will give a talk about it at the upcoming CT - that would be a good opportunity to reformulate things in terms more familiar to categorical logicians.  It is an important result (and method of proof) that deserves to be known outside the narrow range of specialists in type theory who can follow the current presentation.</p>",
+        "id": 247199179,
+        "sender_full_name": "Steve Awodey",
+        "timestamp": 1627304859
+    },
+    {
+        "content": "<p>Hi <span class=\"user-mention\" data-user-id=\"276770\">@Steve Awodey</span> , thanks for your feedback! At CT I am only being given 10 minutes, so that will not be the hoped-for opportunity to communicate this result to category theorists. However, I would be very happy to discuss it with you and perhaps we can find a way to present the ideas that would be easier to understand for categorical logicians.</p>",
+        "id": 247206963,
+        "sender_full_name": "Jonathan Sterling",
+        "timestamp": 1627308542
+    },
+    {
+        "content": "<p>Oh no - 10 minutes is certainly not going to do it!  That's barely enough time to state the result.<br>\nYes, let's find another format to present and discuss it (not just with me).</p>",
+        "id": 247210285,
+        "sender_full_name": "Steve Awodey",
+        "timestamp": 1627309981
+    },
+    {
+        "content": "<p>Or indeed, in this very thread! I'm more psyched about understanding it as a CS dummy, which might be a bit more in line with answering <span class=\"user-mention\" data-user-id=\"276777\">@Mike Shulman</span> 's original question, since usually CS results have pretty clear computational content.</p>\n<p>As a side note, here's a really fun paper on extracting the computational content from a normalization proof: <a href=\"https://hal.archives-ouvertes.fr/file/index/docid/150904/filename/snextr05.pdf\">https://hal.archives-ouvertes.fr/file/index/docid/150904/filename/snextr05.pdf</a></p>",
+        "id": 247231088,
+        "sender_full_name": "Cody Roux",
+        "timestamp": 1627318989
+    }
+]

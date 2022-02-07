@@ -1,0 +1,56 @@
+[
+    {
+        "content": "<p>Hello all! This is the thread of discussion for the talk of Bryce Clarke, Derek Elkins, Jeremy Gibbons, Fosco Loregian, Bartosz Milewski, Emily Pillmore and Mario Román, \"Profunctor Optics, a Categorical Update\".<br>\nDate and time: Tuesday July 7, 11:00 UTC.<br>\nZoom meeting: <a href=\"https://mit.zoom.us/j/7055345747\">https://mit.zoom.us/j/7055345747</a><br>\nYouTube live stream: <a href=\"https://www.youtube.com/watch?v=MIfh-LndWv8&amp;list=PLCOXjXDLt3pZDHGYOIqtg1m1lLOURjl1Q\">https://www.youtube.com/watch?v=MIfh-LndWv8&amp;list=PLCOXjXDLt3pZDHGYOIqtg1m1lLOURjl1Q</a></p>\n<div class=\"youtube-video message_inline_image\"><a data-id=\"MIfh-LndWv8\" href=\"https://www.youtube.com/watch?v=MIfh-LndWv8&amp;list=PLCOXjXDLt3pZDHGYOIqtg1m1lLOURjl1Q\"><img src=\"https://i.ytimg.com/vi/MIfh-LndWv8/default.jpg\"></a></div>",
+        "id": 202644527,
+        "sender_full_name": "Paolo Perrone",
+        "timestamp": 1593656819
+    },
+    {
+        "content": "<p>Mario Román will be delivering this talk. The results grew out of his thesis, and a collaboration with the other authors during the ACT2019 school. <br>\nThe extended abstract can be found here: <a href=\"https://www.ioc.ee/~mroman/publications/profunctoropticsacategoricalupdateAbstract.pdf\">https://www.ioc.ee/~mroman/publications/profunctoropticsacategoricalupdateAbstract.pdf</a><br>\nAnd the full arXiv paper may be found here: <a href=\"https://arxiv.org/abs/2001.07488\">https://arxiv.org/abs/2001.07488</a></p>",
+        "id": 203088095,
+        "sender_full_name": "Bryce Clarke",
+        "timestamp": 1594118907
+    },
+    {
+        "content": "<p>Hi all! We start in 12 minutes.</p>",
+        "id": 203088120,
+        "sender_full_name": "Paolo Perrone",
+        "timestamp": 1594118938
+    },
+    {
+        "content": "<p>On a question by Piotr Paradzinski: I have been using the term Tambara to cover Strong/Choice and so on. As you observe, that would require a parameter on the code. This is the complete definition one could end up using: <a href=\"https://github.com/mroman42/vitrea/blob/8aed32a88dfc1df28460896a1a7f51166ed67dc7/source/Tambara.hs#L74\">https://github.com/mroman42/vitrea/blob/8aed32a88dfc1df28460896a1a7f51166ed67dc7/source/Tambara.hs#L74</a> I tried to simplify it on the slides, but, as you observe, the complete definition only makes sense when the parameters are passed to the Tambara. Thank you for the question!</p>",
+        "id": 203099499,
+        "sender_full_name": "Mario Román",
+        "timestamp": 1594127409
+    },
+    {
+        "content": "<p>There was a second question on the order of composition. I cannot access the zoom chat again but I think this was answered by Jeremy Gibbons.</p>",
+        "id": 203099595,
+        "sender_full_name": "Mario Román",
+        "timestamp": 1594127471
+    },
+    {
+        "content": "<p>Yes about the order of composition. I was thinking \"top-down\" in the sense of projections, and was thinking of lenses as extensions of the projections. But the lenses were composed \"bottom-up\" so first part was always smallest, and it's somewhat confusing how the compositions look if you're accustomed to thinking size-hierarchy as starting in order of large-to-small.</p>",
+        "id": 203101769,
+        "sender_full_name": "Esa Pulkkinen",
+        "timestamp": 1594128576
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"319191\">Esa Pulkkinen</span> <a href=\"#narrow/stream/243068-ACT-2020/topic/July.207.3A.20Bartosz.20Milewski.20et.20al.2E's.20talk/near/203101769\">said</a>:</p>\n<blockquote>\n<p>Yes about the order of composition. I was thinking \"top-down\" in the sense of projections, and was thinking of lenses as extensions of the projections. But the lenses were composed \"bottom-up\" so first part was always smallest, and it's somewhat confusing how the compositions look if you're accustomed to thinking size-hierarchy as starting in order of large-to-small.</p>\n</blockquote>\n<p>Yes, that is right, thank you for the question. I have changed over time the direction in which I write the category. I think the argument on the other side was to match the order p(a,b) -&gt; p(s,t); but as you say, it is a bit counterintuitive (I guess one needs to make some choice there).</p>",
+        "id": 203112989,
+        "sender_full_name": "Mario Román",
+        "timestamp": 1594133751
+    },
+    {
+        "content": "<p>Perhaps this is related to separation of the \"abstract view\" of the lens (=no internal details visible) and the \"concrete view\" (=scary details of proofs visible). I mean in Haskell, newtype Lens a b s t = Lens (forall p. (...) =&gt; p a b -&gt; p s t). The constructor would force separating the two views. Then you know what is \"internal to lens\" (anything that pattern matches or invokes Lens constructor) and what is \"interface\" (e.g. composing two lenses is interface). At least I felt I had to open the definition of Lens \"abstraction\" in order to understand what was happening in the composition.</p>",
+        "id": 203118385,
+        "sender_full_name": "Esa Pulkkinen",
+        "timestamp": 1594135879
+    },
+    {
+        "content": "<p>Here's the video!<br>\n<a href=\"https://www.youtube.com/watch?v=SsS7ZBYRcw4&amp;list=PLCOXjXDLt3pYot9VNdLlZqGajHyZUywdI\">https://www.youtube.com/watch?v=SsS7ZBYRcw4&amp;list=PLCOXjXDLt3pYot9VNdLlZqGajHyZUywdI</a></p>\n<div class=\"youtube-video message_inline_image\"><a data-id=\"SsS7ZBYRcw4\" href=\"https://www.youtube.com/watch?v=SsS7ZBYRcw4&amp;list=PLCOXjXDLt3pYot9VNdLlZqGajHyZUywdI\"><img src=\"https://i.ytimg.com/vi/SsS7ZBYRcw4/default.jpg\"></a></div>",
+        "id": 203137338,
+        "sender_full_name": "Paolo Perrone",
+        "timestamp": 1594144695
+    }
+]

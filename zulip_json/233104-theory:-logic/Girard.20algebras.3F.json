@@ -1,0 +1,650 @@
+[
+    {
+        "content": "<p>As Boolean algebras are to classical logic and Heyting algebras are to intuitionistic logic, is there such a thing as “Girard algebras” for (fragments of) (classical or intuitionistic) linear logic? And is there a version of Stone duality for them?</p>",
+        "id": 193658404,
+        "sender_full_name": "James Wood",
+        "timestamp": 1586608688
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"281583\">James Wood</span> <a href=\"#narrow/stream/233104-theory.3A-logic/topic/Girard.20algebras.3F/near/193658404\" title=\"#narrow/stream/233104-theory.3A-logic/topic/Girard.20algebras.3F/near/193658404\">said</a>:</p>\n<blockquote>\n<p>As Boolean algebras are to classical logic and Heyting algebras are to intuitionistic logic, is there such a thing as “Girard algebras” for (fragments of) (classical or intuitionistic) linear logic? And is there a version of Stone duality for them?</p>\n</blockquote>\n<p>Can you tell us more about what you know about models for fragments of Linear Logic?<br>\nIf you know very little, a good place to start is section 1.7.2 of Abramsky/Tzevelekos: <a href=\"https://arxiv.org/pdf/1102.1313.pdf\" title=\"https://arxiv.org/pdf/1102.1313.pdf\">https://arxiv.org/pdf/1102.1313.pdf</a><br>\nThis is a great resource too, but it's more advanced: <a href=\"https://www.irif.fr/~mellies/papers/panorama.pdf\" title=\"https://www.irif.fr/~mellies/papers/panorama.pdf\">https://www.irif.fr/~mellies/papers/panorama.pdf</a></p>",
+        "id": 193660338,
+        "sender_full_name": "Eduardo Ochs",
+        "timestamp": 1586611327
+    },
+    {
+        "content": "<p>Everything in that section 1.7 is familiar to me. Most of the Melliès survey looks at least approachable, and I'm least familiar with the specifics of the concrete models from chapter 8.</p>",
+        "id": 193662320,
+        "sender_full_name": "James Wood",
+        "timestamp": 1586614264
+    },
+    {
+        "content": "<p>I know a little bit about Chu spaces as well.</p>",
+        "id": 193662646,
+        "sender_full_name": "James Wood",
+        "timestamp": 1586614688
+    },
+    {
+        "content": "<p>If I understand correctly that you are looking for the “provability semantics” of linear logic, I think the most common answer would be a <a href=\"https://ncatlab.org/nlab/show/quantale\" title=\"https://ncatlab.org/nlab/show/quantale\">commutative quantale with a dualising element</a>.</p>",
+        "id": 193664088,
+        "sender_full_name": "Amar Hadzihasanovic",
+        "timestamp": 1586616943
+    },
+    {
+        "content": "<p>This has the slightly annoying feature that both the tensor and the dualiser are <em>structure</em> on a poset, unlike the case of Heyting and Boolean algebras which are posets with properties.</p>",
+        "id": 193664185,
+        "sender_full_name": "Amar Hadzihasanovic",
+        "timestamp": 1586617057
+    },
+    {
+        "content": "<p>If you want “everything to be a property”, you would need to consider something like “posetal polycategories” with a number of properties (existence of “absolute” finite meets and joins, representability on both sides, existence of dualities). I don't know if this is written down anywhere.</p>",
+        "id": 193664254,
+        "sender_full_name": "Amar Hadzihasanovic",
+        "timestamp": 1586617173
+    },
+    {
+        "content": "<p>A quantale is a non-elementary structure since it has all small meets and joins, unlike a Boolean or Heyting algebra.  I think the better structure to talk about for classical linear logic is a <a href=\"https://ncatlab.org/nlab/show/star-autonomous+category\" title=\"https://ncatlab.org/nlab/show/star-autonomous+category\">star-autonomous poset</a>.</p>",
+        "id": 193664261,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1586617190
+    },
+    {
+        "content": "<p>Oh, for some reason I remembered that quantales only had finite meets and joins. Thanks.</p>",
+        "id": 193664325,
+        "sender_full_name": "Amar Hadzihasanovic",
+        "timestamp": 1586617284
+    },
+    {
+        "content": "<p>What then is the right provability semantics that also includes exponentials? A star-autonomous poset with a Galois connection to a Heyting algebra, mimicking the linear-nonlinear adjunction for the categorical semantics?</p>",
+        "id": 193664456,
+        "sender_full_name": "Robin Piedeleu",
+        "timestamp": 1586617473
+    },
+    {
+        "content": "<p>Well, I think you can do it “more internally” because you have fewer choices. To model !, first you need a comonad. In a poset, that's just an interior operator.</p>",
+        "id": 193664673,
+        "sender_full_name": "Amar Hadzihasanovic",
+        "timestamp": 1586617763
+    },
+    {
+        "content": "<p>And for each element <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>x</mi></mrow><annotation encoding=\"application/x-tex\">x</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.43056em;vertical-align:0em;\"></span><span class=\"mord mathdefault\">x</span></span></span></span>, you have a comonoid on <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"false\">!</mo><mi>x</mi></mrow><annotation encoding=\"application/x-tex\">!x</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.69444em;vertical-align:0em;\"></span><span class=\"mclose\">!</span><span class=\"mord mathdefault\">x</span></span></span></span>. That's just a tensor-idempotent.</p>",
+        "id": 193664775,
+        "sender_full_name": "Amar Hadzihasanovic",
+        "timestamp": 1586617914
+    },
+    {
+        "content": "<p>You have a sort-of canonical choice (which I think would correspond to the linear-non linear adjunction with the category of internal cocommutative comonoids) by taking <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"false\">!</mo><mi>x</mi></mrow><annotation encoding=\"application/x-tex\">!x</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.69444em;vertical-align:0em;\"></span><span class=\"mclose\">!</span><span class=\"mord mathdefault\">x</span></span></span></span> to be the greatest tensor-idempotent below <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>x</mi></mrow><annotation encoding=\"application/x-tex\">x</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.43056em;vertical-align:0em;\"></span><span class=\"mord mathdefault\">x</span></span></span></span>.</p>",
+        "id": 193664846,
+        "sender_full_name": "Amar Hadzihasanovic",
+        "timestamp": 1586617998
+    },
+    {
+        "content": "<p>cf <a href=\"https://ncatlab.org/nlab/show/%21-modality\" title=\"https://ncatlab.org/nlab/show/%21-modality\">https://ncatlab.org/nlab/show/%21-modality</a></p>",
+        "id": 193664912,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1586618084
+    },
+    {
+        "content": "<p>So a *-autonomous poset is to a *-autonomous category as a Heyting algebra is to a CCC with sums? That seems satisfying. I just wanted to check that there weren't any unexpected problems with the definition. So how about Stone duality?</p>",
+        "id": 193665282,
+        "sender_full_name": "James Wood",
+        "timestamp": 1586618627
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"281583\">James Wood</span> <a href=\"#narrow/stream/233104-theory.3A-logic/topic/Girard.20algebras.3F/near/193658404\" title=\"#narrow/stream/233104-theory.3A-logic/topic/Girard.20algebras.3F/near/193658404\">said</a>:</p>\n<blockquote>\n<p>As Boolean algebras are to classical logic and Heyting algebras are to intuitionistic logic, is there such a thing as “Girard algebras” for (fragments of) (classical or intuitionistic) linear logic? And is there a version of Stone duality for them?</p>\n</blockquote>\n<p>yes, there are several versions of this. (none that I particularly like thugh) I think the most recent ones are by  Mai Gherke (Relational semantics for full linear logic, with Dion Coumans and Lorijn van Rooijen. Journal of Applied Logic 12 (1) (2014), 50–66.) and Alessandra Palmigiano (e.g Sahlqvist correspondence via duality and its applications, A Palmigiano<br>\n23rd International Workshop on Logic, Language, Information, and Computation 2016)</p>",
+        "id": 194485484,
+        "sender_full_name": "Valeria de Paiva",
+        "timestamp": 1587150014
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276777\">Mike Shulman</span> <a href=\"#narrow/stream/233104-theory.3A-logic/topic/Girard.20algebras.3F/near/193664261\" title=\"#narrow/stream/233104-theory.3A-logic/topic/Girard.20algebras.3F/near/193664261\">said</a>:</p>\n<blockquote>\n<p>A quantale is a non-elementary structure since it has all small meets and joins, unlike a Boolean or Heyting algebra.  I think the better structure to talk about for classical linear logic is a <a href=\"https://ncatlab.org/nlab/show/star-autonomous+category\" title=\"https://ncatlab.org/nlab/show/star-autonomous+category\">star-autonomous poset</a>.</p>\n</blockquote>\n<p>beg to differ, Mike! lineales are about getting the posetal intuitionistic version of linear logic and the involution of the star-autonomous poset is best considered an after-thought, imho. but I would say that, of course.</p>",
+        "id": 194486239,
+        "sender_full_name": "Valeria de Paiva",
+        "timestamp": 1587150346
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276363\">Amar Hadzihasanovic</span> <a href=\"#narrow/stream/233104-theory.3A-logic/topic/Girard.20algebras.3F/near/193664846\" title=\"#narrow/stream/233104-theory.3A-logic/topic/Girard.20algebras.3F/near/193664846\">said</a>:</p>\n<blockquote>\n<p>You have a sort-of canonical choice (which I think would correspond to the linear-non linear adjunction with the category of internal cocommutative comonoids) by taking <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"false\">!</mo><mi>x</mi></mrow><annotation encoding=\"application/x-tex\">!x</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.69444em;vertical-align:0em;\"></span><span class=\"mclose\">!</span><span class=\"mord mathdefault\">x</span></span></span></span> to be the greatest tensor-idempotent below <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>x</mi></mrow><annotation encoding=\"application/x-tex\">x</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.43056em;vertical-align:0em;\"></span><span class=\"mord mathdefault\">x</span></span></span></span>.</p>\n</blockquote>\n<p>hmm clearly I'm in a minority here, but the greatest tensor-idempotent below $x$ is only the syntactic description of what's needed for a !-modality, it does not produce a mathematical modality.</p>",
+        "id": 194486563,
+        "sender_full_name": "Valeria de Paiva",
+        "timestamp": 1587150514
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276656\">Valeria de Paiva</span> <a href=\"#narrow/stream/233104-theory.3A-logic/topic/Girard.20algebras.3F/near/194486239\" title=\"#narrow/stream/233104-theory.3A-logic/topic/Girard.20algebras.3F/near/194486239\">said</a>:</p>\n<blockquote>\n<p>beg to differ, Mike! lineales are about getting the posetal intuitionistic version of linear logic and the involution of the star-autonomous poset is best considered an after-thought, imho. but I would say that, of course.</p>\n</blockquote>\n<p>Well of course there's a continuum.  If you have only the judgmental structure with no connectives, then you have a poly-poset.  If you have all the connectives, you have a *-autonomous poset.  If you leave out the involution but have all the other connectives, you have a linearly distributive poset (I assume that's what a lineale is).  Conversely, if you keep the involution but leave out all the other connectives, you have a *-poly-poset.  And there are lots of other things in between.  I don't see any reason to privilege the case of \"all connectives except the involution\", so I would say that either *-autonomous posets or poly-posets (the two extremes) are the most natural thing to tell newcomers about if they know about classical linear logic and are wondering about its posetal semantics.</p>",
+        "id": 194488443,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1587151421
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"281583\">James Wood</span> <a href=\"#narrow/stream/233104-theory.3A-logic/topic/Girard.20algebras.3F/near/193665282\" title=\"#narrow/stream/233104-theory.3A-logic/topic/Girard.20algebras.3F/near/193665282\">said</a>:</p>\n<blockquote>\n<p>So a *-autonomous poset is to a *-autonomous category as a Heyting algebra is to a CCC with sums? That seems satisfying. I just wanted to check that there weren't any unexpected problems with the definition. So how about Stone duality?</p>\n</blockquote>\n<p>There are a lot of easy ways to generate and think about simple heyting algebras. Are there similar ways to get our hands on simple examples of *-autonomous posets? Do they have characterizations we can think of in terms of purely order-theoretic properties?</p>",
+        "id": 194489981,
+        "sender_full_name": "Gershom",
+        "timestamp": 1587152245
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276777\">Mike Shulman</span> <a href=\"#narrow/stream/233104-theory.3A-logic/topic/Girard.20algebras.3F/near/194488443\" title=\"#narrow/stream/233104-theory.3A-logic/topic/Girard.20algebras.3F/near/194488443\">said</a>:</p>\n<blockquote>\n<p><span class=\"user-mention silent\" data-user-id=\"276656\">Valeria de Paiva</span> <a href=\"#narrow/stream/233104-theory.3A-logic/topic/Girard.20algebras.3F/near/194486239\" title=\"#narrow/stream/233104-theory.3A-logic/topic/Girard.20algebras.3F/near/194486239\">said</a>:</p>\n<blockquote>\n<p>beg to differ, Mike! lineales are about getting the posetal intuitionistic version of linear logic and the involution of the star-autonomous poset is best considered an after-thought, imho. but I would say that, of course.</p>\n</blockquote>\n<p>Well of course there's a continuum.  If you have only the judgmental structure with no connectives, then you have a poly-poset.  If you have all the connectives, you have a *-autonomous poset.  If you leave out the involution but have all the other connectives, you have a linearly distributive poset (I assume that's what a lineale is).  Conversely, if you keep the involution but leave out all the other connectives, you have a *-poly-poset.  And there are lots of other things in between.  I don't see any reason to privilege the case of \"all connectives except the involution\", so I would say that either *-autonomous posets or poly-posets (the two extremes) are the most natural thing to tell newcomers about if they know about classical linear logic and are wondering about its posetal semantics.</p>\n</blockquote>\n<p>there's a continuum, but we're disagreeing on the important places to stop. a lineale is a monoidal closed poset (so it has tensor and implication), multiplicative disjunction which you can add (defined via implication or not) will give you the poly-structure. the important point is that from the logic/lambda-calculus perspective you can reasonably stay on the intuitionistic universe and have Curry-Howard working as it should. when you bite into the polycategory stuff/classical logic you lose the perfect correspondence and you need to start making trade-offs.</p>",
+        "id": 194499161,
+        "sender_full_name": "Valeria de Paiva",
+        "timestamp": 1587157195
+    },
+    {
+        "content": "<blockquote>\n<p>hmm clearly I'm in a minority here, but the greatest tensor-idempotent below $x$ is only the syntactic description of what's needed for a !-modality, it does not produce a mathematical modality.</p>\n</blockquote>\n<p>What would you say \"produces a mathematical modality\"?</p>\n<p>(Btw, for ! I should have also said: \"...and which is below the tensor unit\", I guess)</p>",
+        "id": 194500596,
+        "sender_full_name": "Amar Hadzihasanovic",
+        "timestamp": 1587157911
+    },
+    {
+        "content": "<p>hmm, so a lineale is basically for <em>intuitionistic</em> linear logic?</p>",
+        "id": 194511888,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1587165945
+    },
+    {
+        "content": "<p>whereas *-autonomous is for <em>classical</em> linear logic?</p>",
+        "id": 194511903,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1587165958
+    },
+    {
+        "content": "<p>oh wait i guess ILL also has finite meets &amp; joins</p>",
+        "id": 194511951,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1587165973
+    },
+    {
+        "content": "<p><span class=\"user-mention\" data-user-id=\"276656\">@Valeria de Paiva</span> But the <a href=\"#narrow/stream/233104-theory.3A-logic/topic/Girard.20algebras.3F/near/193664088\" title=\"#narrow/stream/233104-theory.3A-logic/topic/Girard.20algebras.3F/near/193664088\">post I was replying to</a> was about <em>classical</em> linear logic (quantales with a dualizing element), not intuitionistic linear logic.  For ILL, a symmetric monoidal closed poset is definitely the natural \"endpoint\" on one side (the one on the left being a multi-poset).</p>",
+        "id": 194512306,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1587166284
+    },
+    {
+        "content": "<p>Oh, and yes if you want the additive connectives too, then you want finite meets and joins, in all cases.</p>",
+        "id": 194512316,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1587166297
+    },
+    {
+        "content": "<p>i should probably study ILL some more, my perception of it is still vaguely \"but dont you lose most of the stuff that makes linear logic cool\"</p>",
+        "id": 194512404,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1587166346
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276072\">sarahzrf</span> <a href=\"#narrow/stream/233104-theory.3A-logic/topic/Girard.20algebras.3F/near/194511888\" title=\"#narrow/stream/233104-theory.3A-logic/topic/Girard.20algebras.3F/near/194511888\">said</a>:</p>\n<blockquote>\n<p>hmm, so a lineale is basically for <em>intuitionistic</em> linear logic?</p>\n</blockquote>\n<p>@sarahzrf|276072 lineales have meets and joints, if you want them to.<br>\nand @Mike  given a model of ILL you can always get a model of CLL by taking the double negated elements, as usual. do you can add that to you continuum, even more to the right.</p>\n<p>@Amar Hadzihasanovic in Dialectica categories you have a mathematical modality which comes about from taking free monoids in the underlying category, in coherence spaces you have two versions of  ! modality, one of them using multisets. these mathematical constructions exist independently from their use to model Linear Logic.<br>\n In my paper with Andrea Schalk, <a href=\"http://www.cs.man.ac.uk/~schalk/publ/pvsets.pdf\" title=\"http://www.cs.man.ac.uk/~schalk/publ/pvsets.pdf\">http://www.cs.man.ac.uk/~schalk/publ/pvsets.pdf</a> we also resort to using the syntactic construction (which you still need to prove is non-empty) but it's always less satisfying than finding models in \"the wild of mathematics\".</p>",
+        "id": 194517319,
+        "sender_full_name": "Valeria de Paiva",
+        "timestamp": 1587170778
+    },
+    {
+        "content": "<p>anyway my impression was that classical linear logic largely had pretty good computational behavior?</p>",
+        "id": 194517590,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1587171103
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276072\">sarahzrf</span> <a href=\"#narrow/stream/233104-theory.3A-logic/topic/Girard.20algebras.3F/near/194517590\" title=\"#narrow/stream/233104-theory.3A-logic/topic/Girard.20algebras.3F/near/194517590\">said</a>:</p>\n<blockquote>\n<p>anyway my impression was that classical linear logic largely had pretty good computational behavior?</p>\n</blockquote>\n<p>well, it really depends on what you call \"good computational behavior\", doesn't it?</p>",
+        "id": 194518012,
+        "sender_full_name": "Valeria de Paiva",
+        "timestamp": 1587171622
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276650\">Gershom</span> <a href=\"#narrow/stream/233104-theory.3A-logic/topic/Girard.20algebras.3F/near/194489981\" title=\"#narrow/stream/233104-theory.3A-logic/topic/Girard.20algebras.3F/near/194489981\">said</a>:</p>\n<div class=\"codehilite\"><pre><span></span>There are a lot of easy ways to generate and think about simple heyting algebras.\n````\nwhich easy ways are you thinking of, please?\n</pre></div>",
+        "id": 194518851,
+        "sender_full_name": "Valeria de Paiva",
+        "timestamp": 1587172570
+    },
+    {
+        "content": "<p>any bounded toset is [classically] a heyting algebra, right?</p>",
+        "id": 194518957,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1587172771
+    },
+    {
+        "content": "<p>the collection of monotone functions from any proset into a complete heyting algebra forms a complete heyting algebra</p>",
+        "id": 194519012,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1587172842
+    },
+    {
+        "content": "<p>the opens of a topological space form a complete heyting algebra</p>",
+        "id": 194519018,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1587172861
+    },
+    {
+        "content": "<p>any boolean algebra is a heyting algebra</p>",
+        "id": 194519025,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1587172867
+    },
+    {
+        "content": "<p>as a special case of the \"monotone functions\" one, you can pick the codomain to be the set of truth values, so that the functions correspond to upward-closed sets of the domain, and this gets a heyting algebra out of any proset (equivalent to kripke semantics)</p>",
+        "id": 194519109,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1587172979
+    },
+    {
+        "content": "<p>yes, any boolean algebra is a heyting algebra, but you do want to deal with heyting algebras that are not boolean, if you want to discuss the truly intuitionistic features of your system. similarly, any heyting algebra is a degenerate lineale, one where the tensor is a meet and par is a join, but you don't want to dwell on the degenerate cases, I think.</p>",
+        "id": 194519259,
+        "sender_full_name": "Valeria de Paiva",
+        "timestamp": 1587173232
+    },
+    {
+        "content": "<p>alright, so leave that one out :)</p>",
+        "id": 194519312,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1587173303
+    },
+    {
+        "content": "<p>well, actually it can be useful</p>",
+        "id": 194519323,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1587173341
+    },
+    {
+        "content": "<p>if you have a complete boolean algebra, you can get a complete heyting algebra that isnt necessarily boolean by taking the monotone functions into it from some other proset</p>",
+        "id": 194519332,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1587173362
+    },
+    {
+        "content": "<p>that's exactly what you're doing in kripke semantics, if your metatheory is classical</p>",
+        "id": 194519338,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1587173370
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276656\">Valeria de Paiva</span> <a href=\"#narrow/stream/233104-theory.3A-logic/topic/Girard.20algebras.3F/near/194518851\" title=\"#narrow/stream/233104-theory.3A-logic/topic/Girard.20algebras.3F/near/194518851\">said</a>:</p>\n<blockquote>\n<p>which easy ways are you thinking of, please?</p>\n</blockquote>\n<p>Well in the (not so special?) case of complete Heyting Algebras you have the nice purely order-theoretic characterization which is somewhat local of it just being a complete lattice with finite meets distributing over arbitrary joins. And since we have lots of order-theoretic results on distributive lattices going back to Birkhoff, those are easy to generate and get your hands on (and as noted above come with a nice Stone-representation story, etc). Some of the niceness (and locality) there being reflected in the fact that we have \"forbidden sublattice\" characterizations, etc.</p>\n<p>Meanwhile *-autonomous stuff (which I don't understand well, hence my question), like boolean lattice stuff, feels like it has a \"global character\" to its definition, in that the dualizing operation relates elements that can be fairly distant in the poset structure. But nonetheless, I'm wondering how much of a nice characterization of *-autonomous poset stuff we can give in terms of that same classic order-theoretic technology. Perhaps there's something like the \"complete\" condition for Heyting Algebras that carves out a large subclass where such techniques are more tractable?</p>\n<p>One route there might be the \"depleted\" posetal version of the chu construction, I suppose?</p>",
+        "id": 194519996,
+        "sender_full_name": "Gershom",
+        "timestamp": 1587174403
+    },
+    {
+        "content": "<p>oh have you not seen mike's paper about that exact thing?</p>",
+        "id": 194520063,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1587174500
+    },
+    {
+        "content": "<p>I assume you mean \"linear logic for constructive mathematics\"? I'm aware of it. If my question is answered there, its buried in all the other nice stuff such that I didn't recognize it.</p>",
+        "id": 194520273,
+        "sender_full_name": "Gershom",
+        "timestamp": 1587174880
+    },
+    {
+        "content": "<p>well, it does do a posetal chu construction</p>",
+        "id": 194520791,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1587175821
+    },
+    {
+        "content": "<p>gets models of affine logic by taking pairs (P⁺, P⁻) from a Heyting algebra, such that P⁺ ∧ P⁻ ⊢ ⊥</p>",
+        "id": 194520798,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1587175866
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276072\">sarahzrf</span> <a href=\"#narrow/stream/233104-theory.3A-logic/topic/Girard.20algebras.3F/near/194519332\" title=\"#narrow/stream/233104-theory.3A-logic/topic/Girard.20algebras.3F/near/194519332\">said</a>:</p>\n<blockquote>\n<p>if you have a complete boolean algebra, you can get a complete heyting algebra that isnt necessarily boolean by taking the monotone functions into it from some other proset</p>\n</blockquote>\n<p>this is not a case that you can learn much from, I fear.<br>\nKripke semantics is an useful semantics, but its usefulness is limited, if your goal is category theory</p>",
+        "id": 194528386,
+        "sender_full_name": "Valeria de Paiva",
+        "timestamp": 1587189862
+    },
+    {
+        "content": "<p>i mean, taking the monotone functions into 2 is the same thing, in a classical metatheory, to taking the monotone functions into truth values</p>",
+        "id": 194528574,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1587190258
+    },
+    {
+        "content": "<p>and <em>that</em> is taking (0, 1)-copresheaves :-)</p>",
+        "id": 194528578,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1587190271
+    },
+    {
+        "content": "<p>perhaps you wouldve liked it better if i'd said something like... \"if you have a boolean grothendieck topos, you can get a grothendieck topos that isn't necessarily boolean by taking the category of functors into it from some other category\"—well, i'm not sure whether that's true, tho i wouldnt be surprised, but it's for sure true if the boolean grothendieck topos in question is a classical metatheory's Set</p>",
+        "id": 194528649,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1587190423
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276650\">Gershom</span> <a href=\"#narrow/stream/233104-theory.3A-logic/topic/Girard.20algebras.3F/near/194520273\" title=\"#narrow/stream/233104-theory.3A-logic/topic/Girard.20algebras.3F/near/194520273\">said</a>:</p>\n<blockquote>\n<p>I assume you mean \"linear logic for constructive mathematics\"? I'm aware of it. If my question is answered there, its buried in all the other nice stuff such that I didn't recognize it.</p>\n</blockquote>\n<p>I'm just thinking that there isn't an awful lot of information on Heyting algebras around, actually. it would be nice to know more about them. My friend Jean Pretorius wrote a phd thesis in Cambridge about them in the 90's. I looked around to see new stuff, but didn't find much.</p>\n<p>and no, I don't thin the involution of *-autonomous posets is that interesting. It has been investigated by lots of people since the early 90's and as far as I know has not produced any goods. but maybe this is just my biased view.</p>",
+        "id": 194528906,
+        "sender_full_name": "Valeria de Paiva",
+        "timestamp": 1587190831
+    },
+    {
+        "content": "<p>well, i don't have that much knowledge of *-autonomous stuff, so maybe that's part of it</p>",
+        "id": 194528964,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1587190941
+    },
+    {
+        "content": "<p>mostly i'm coming at it from a syntactic point of view, some game semantics, &amp; actually yes *-autonomous stuff but mostly just in the specific and pretty concrete form ive seen in \"linear logic for constructive mathematics\"</p>",
+        "id": 194528975,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1587191000
+    },
+    {
+        "content": "<p>but to me, a ton of what ive found interesting about the linear logic stuff ive learned has been related to ⅋ and ┴</p>",
+        "id": 194529028,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1587191110
+    },
+    {
+        "content": "<p>or more abstractly and handwavily, dualities, i guess</p>",
+        "id": 194529070,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1587191172
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276072\">sarahzrf</span> <a href=\"#narrow/stream/233104-theory.3A-logic/topic/Girard.20algebras.3F/near/194528578\" title=\"#narrow/stream/233104-theory.3A-logic/topic/Girard.20algebras.3F/near/194528578\">said</a>:</p>\n<blockquote>\n<p>and <em>that</em> is taking (0, 1)-copresheaves :-)</p>\n</blockquote>\n<p>no, it isn't. and no, I wouldn't like \" it better if i'd said something like... \"if you have a boolean grothendieck topos, you can get a grothendieck topos that isn't necessarily boolean by taking the category of functors into it from some other category\".<br>\nDialectica categories do not give you toposes, Grothendick or otherwise. I would like to get a topos construction, if this was truly what the construction produced. if it is, I have problems seeing it..</p>\n<p>topos theory models more that we see here.</p>",
+        "id": 194529072,
+        "sender_full_name": "Valeria de Paiva",
+        "timestamp": 1587191180
+    },
+    {
+        "content": "<p>what do you mean by \"no, it isn't\"? the poset of truth values generally plays the same role among (0, 1)-categories that Set does among (1, 1)-categories, so you should get \"(0, 1)-copresheaves\" by taking the internal hom into it</p>",
+        "id": 194529143,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1587191323
+    },
+    {
+        "content": "<p>do you have a specific objection?</p>",
+        "id": 194529146,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1587191328
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276072\">sarahzrf</span> <a href=\"#narrow/stream/233104-theory.3A-logic/topic/Girard.20algebras.3F/near/194529146\" title=\"#narrow/stream/233104-theory.3A-logic/topic/Girard.20algebras.3F/near/194529146\">said</a>:</p>\n<blockquote>\n<p>do you have a specific objection?</p>\n</blockquote>\n<p>yes, I do have a specific objection. when I construct dialectica categories I'm not pretending to build presheaves or sheaves at all. topos theory requires much more structure than I can build up.</p>",
+        "id": 194529464,
+        "sender_full_name": "Valeria de Paiva",
+        "timestamp": 1587191913
+    },
+    {
+        "content": "<p>i wasn't talking about dialectica categories, though...</p>",
+        "id": 194529474,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1587191985
+    },
+    {
+        "content": "<p>never mind, sorry—i'm about to go to sleep anyway</p>",
+        "id": 194529652,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1587192348
+    },
+    {
+        "content": "<p>good night</p>",
+        "id": 194529655,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1587192353
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276656\">Valeria de Paiva</span> <a href=\"#narrow/stream/233104-theory.3A-logic/topic/Girard.20algebras.3F/near/194528906\" title=\"#narrow/stream/233104-theory.3A-logic/topic/Girard.20algebras.3F/near/194528906\">said</a>:</p>\n<blockquote>\n<p>I'm just thinking that there isn't an awful lot of information on Heyting algebras around, actually. it would be nice to know more about them. My friend Jean Pretorius wrote a phd thesis in Cambridge about them in the 90's. I looked around to see new stuff, but didn't find much.</p>\n</blockquote>\n<p>Well in the finite case it's exactly the theory of finite distributive lattices (right?), which is very rich. I agree that there's a lot more going on in the general case, but there's certainly a lot of \"hands on\" stuff to get a handle on with small examples. Maybe I should just start playing around with some small  finite *-autonomous posets and see where it goes... I was just hoping someone had gone there first :-)</p>",
+        "id": 194529827,
+        "sender_full_name": "Gershom",
+        "timestamp": 1587192644
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276656\">Valeria de Paiva</span> <a href=\"#narrow/stream/233104-theory.3A-logic/topic/Girard.20algebras.3F/near/194517319\" title=\"#narrow/stream/233104-theory.3A-logic/topic/Girard.20algebras.3F/near/194517319\">said</a>:</p>\n<blockquote>\n<p>@Amar Hadzihasanovic in Dialectica categories you have a mathematical modality which comes about from taking free monoids in the underlying category, in coherence spaces you have two versions of  ! modality, one of them using multisets. these mathematical constructions exist independently from their use to model Linear Logic.<br>\n In my paper with Andrea Schalk, <a href=\"http://www.cs.man.ac.uk/~schalk/publ/pvsets.pdf\" title=\"http://www.cs.man.ac.uk/~schalk/publ/pvsets.pdf\">http://www.cs.man.ac.uk/~schalk/publ/pvsets.pdf</a> we also resort to using the syntactic construction (which you still need to prove is non-empty) but it's always less satisfying than finding models in \"the wild of mathematics\".</p>\n</blockquote>\n<p>Oh, I absolutely agree. But I would say that the same is true of “Heyting algebras in general” as opposed to, say, particular CCCs that are found in the wild. I think the topic was specifically about what (algebraic or order-theoretic) structures or properties are needed to give a provability semantics of linear logic, which is what you would call “syntactic constructions”.</p>",
+        "id": 194537088,
+        "sender_full_name": "Amar Hadzihasanovic",
+        "timestamp": 1587204887
+    },
+    {
+        "content": "<p>Of course the case of the exponentials is special because they are not uniquely fixed by their logical behaviour, not even up to logical equivalence, but I think that if there is one exponential that 'feels more canonical' than others, it is the (Lafont?) one arising from a left adjoint to the forgetful functor from the cartesian category of commutative comonoids inside a SMC. Which in the poset case would be the “greatest tensor-idempotent” one.</p>",
+        "id": 194537209,
+        "sender_full_name": "Amar Hadzihasanovic",
+        "timestamp": 1587205130
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276363\">Amar Hadzihasanovic</span> <a href=\"#narrow/stream/233104-theory.3A-logic/topic/Girard.20algebras.3F/near/194537209\" title=\"#narrow/stream/233104-theory.3A-logic/topic/Girard.20algebras.3F/near/194537209\">said</a>:</p>\n<blockquote>\n<p>[exponentials] are not uniquely fixed by their logical behaviour, not even up to logical equivalence</p>\n</blockquote>\n<p>Can you expand on this a bit? It seems like an interesting property, which would maybe explain why the exponentials have typically been harder to pin down.</p>",
+        "id": 194542169,
+        "sender_full_name": "James Wood",
+        "timestamp": 1587213118
+    },
+    {
+        "content": "<p>Well, you can take any sequent calculus or natural deduction calculus with implication <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>→</mo></mrow><annotation encoding=\"application/x-tex\">\\rightarrow</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.36687em;vertical-align:0em;\"></span><span class=\"mrel\">→</span></span></span></span>, and try “duplicating” some connectives together with their rules. Same rules, different symbol only. Say they're n-ary, call the two “copies” of the connective <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>c</mi></mrow><annotation encoding=\"application/x-tex\">c</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.43056em;vertical-align:0em;\"></span><span class=\"mord mathdefault\">c</span></span></span></span> and <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msup><mi>c</mi><mo lspace=\"0em\" mathvariant=\"normal\" rspace=\"0em\">′</mo></msup></mrow><annotation encoding=\"application/x-tex\">c'</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.751892em;vertical-align:0em;\"></span><span class=\"mord\"><span class=\"mord mathdefault\">c</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.751892em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\">′</span></span></span></span></span></span></span></span></span></span></span></span>. Then you ask: is it always provable, for all formulas <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi>A</mi><mn>1</mn></msub><mo separator=\"true\">,</mo><mi mathvariant=\"normal\">.</mi><mi mathvariant=\"normal\">.</mi><mi mathvariant=\"normal\">.</mi><mo separator=\"true\">,</mo><msub><mi>A</mi><mi>n</mi></msub></mrow><annotation encoding=\"application/x-tex\">A_1, ..., A_n</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8777699999999999em;vertical-align:-0.19444em;\"></span><span class=\"mord\"><span class=\"mord mathdefault\">A</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.30110799999999993em;\"><span style=\"top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">1</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mord\">.</span><span class=\"mord\">.</span><span class=\"mord\">.</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mord\"><span class=\"mord mathdefault\">A</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.151392em;\"><span style=\"top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathdefault mtight\">n</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span></span></span></span> that <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>c</mi><mo stretchy=\"false\">(</mo><msub><mi>A</mi><mn>1</mn></msub><mo separator=\"true\">,</mo><mo>…</mo><mo separator=\"true\">,</mo><msub><mi>A</mi><mi>n</mi></msub><mo stretchy=\"false\">)</mo><mo>→</mo><msup><mi>c</mi><mo lspace=\"0em\" mathvariant=\"normal\" rspace=\"0em\">′</mo></msup><mo stretchy=\"false\">(</mo><msub><mi>A</mi><mn>1</mn></msub><mo separator=\"true\">,</mo><mo>…</mo><mo separator=\"true\">,</mo><msub><mi>A</mi><mi>n</mi></msub><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">c(A_1, \\ldots, A_n) \\rightarrow c'(A_1, \\ldots, A_n)</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord mathdefault\">c</span><span class=\"mopen\">(</span><span class=\"mord\"><span class=\"mord mathdefault\">A</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.30110799999999993em;\"><span style=\"top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">1</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"minner\">…</span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mord\"><span class=\"mord mathdefault\">A</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.151392em;\"><span style=\"top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathdefault mtight\">n</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span><span class=\"mclose\">)</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">→</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1.001892em;vertical-align:-0.25em;\"></span><span class=\"mord\"><span class=\"mord mathdefault\">c</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.751892em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\">′</span></span></span></span></span></span></span></span></span><span class=\"mopen\">(</span><span class=\"mord\"><span class=\"mord mathdefault\">A</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.30110799999999993em;\"><span style=\"top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">1</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"minner\">…</span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mord\"><span class=\"mord mathdefault\">A</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.151392em;\"><span style=\"top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathdefault mtight\">n</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span><span class=\"mclose\">)</span></span></span></span> and <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msup><mi>c</mi><mo lspace=\"0em\" mathvariant=\"normal\" rspace=\"0em\">′</mo></msup><mo stretchy=\"false\">(</mo><msub><mi>A</mi><mn>1</mn></msub><mo separator=\"true\">,</mo><mo>…</mo><mo separator=\"true\">,</mo><msub><mi>A</mi><mi>n</mi></msub><mo stretchy=\"false\">)</mo><mo>→</mo><mi>c</mi><mo stretchy=\"false\">(</mo><msub><mi>A</mi><mn>1</mn></msub><mo separator=\"true\">,</mo><mo>…</mo><mo separator=\"true\">,</mo><msub><mi>A</mi><mi>n</mi></msub><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">c'(A_1, \\ldots, A_n) \\rightarrow c(A_1, \\ldots, A_n)</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:1.001892em;vertical-align:-0.25em;\"></span><span class=\"mord\"><span class=\"mord mathdefault\">c</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.751892em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\">′</span></span></span></span></span></span></span></span></span><span class=\"mopen\">(</span><span class=\"mord\"><span class=\"mord mathdefault\">A</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.30110799999999993em;\"><span style=\"top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">1</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"minner\">…</span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mord\"><span class=\"mord mathdefault\">A</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.151392em;\"><span style=\"top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathdefault mtight\">n</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span><span class=\"mclose\">)</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">→</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord mathdefault\">c</span><span class=\"mopen\">(</span><span class=\"mord\"><span class=\"mord mathdefault\">A</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.30110799999999993em;\"><span style=\"top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">1</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"minner\">…</span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mord\"><span class=\"mord mathdefault\">A</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.151392em;\"><span style=\"top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathdefault mtight\">n</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span><span class=\"mclose\">)</span></span></span></span>. </p>\n<p>(Maybe there are meaningful version of the problem without implication)</p>",
+        "id": 194544597,
+        "sender_full_name": "Amar Hadzihasanovic",
+        "timestamp": 1587216381
+    },
+    {
+        "content": "<p>At least in the standard calculi for linear logic, this is true (wrt linear implication) for all the multiplicatives and the additives. So two copies of the same connectives are “internally interchangeable”.</p>",
+        "id": 194544634,
+        "sender_full_name": "Amar Hadzihasanovic",
+        "timestamp": 1587216474
+    },
+    {
+        "content": "<p>But it is not true for the exponentials. In fact you can have several copies of ! and ?, with the same rules, and consistently extend the calculus with rules that make it provable that they are inequivalent.</p>",
+        "id": 194544721,
+        "sender_full_name": "Amar Hadzihasanovic",
+        "timestamp": 1587216584
+    },
+    {
+        "content": "<p>I think <a href=\"https://link.springer.com/chapter/10.1007%2FBFb0022564\" title=\"https://link.springer.com/chapter/10.1007%2FBFb0022564\">this</a> is the classical reference for such a system (unfortunately under a Springer paywall...)</p>",
+        "id": 194544804,
+        "sender_full_name": "Amar Hadzihasanovic",
+        "timestamp": 1587216692
+    },
+    {
+        "content": "<p>In terms of categorical models, this is reflected by the fact that the logical rules for, say, <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"false\">!</mo></mrow><annotation encoding=\"application/x-tex\">!</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.69444em;vertical-align:0em;\"></span><span class=\"mclose\">!</span></span></span></span> are modelled by any monoidal comonad such that for all objects <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi></mrow><annotation encoding=\"application/x-tex\">A</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathdefault\">A</span></span></span></span>, <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"false\">!</mo><mi>A</mi></mrow><annotation encoding=\"application/x-tex\">!A</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.69444em;vertical-align:0em;\"></span><span class=\"mclose\">!</span><span class=\"mord mathdefault\">A</span></span></span></span> has the structure of a commutative comonoid (wrt tensor), and there can be many of those on the same monoidal category.</p>",
+        "id": 194544969,
+        "sender_full_name": "Amar Hadzihasanovic",
+        "timestamp": 1587216915
+    },
+    {
+        "content": "<p>For the additives, I guess this property is obvious because they satisfy a universal property. For tensor, is it again because of a universal property... how it represents multi-/polycategory morphisms? But for exponentials, there is no such thing.</p>",
+        "id": 194545501,
+        "sender_full_name": "James Wood",
+        "timestamp": 1587217620
+    },
+    {
+        "content": "<p>(I guess without implication you need to differentiate between (two-sided) sequent calculi and natural deduction. In the first case you ask if you can always derive <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>c</mi><mo stretchy=\"false\">(</mo><msub><mi>A</mi><mn>1</mn></msub><mo separator=\"true\">,</mo><mo>…</mo><mo separator=\"true\">,</mo><msub><mi>A</mi><mi>n</mi></msub><mo stretchy=\"false\">)</mo><mo>⊢</mo><msup><mi>c</mi><mo lspace=\"0em\" mathvariant=\"normal\" rspace=\"0em\">′</mo></msup><mo stretchy=\"false\">(</mo><msub><mi>A</mi><mn>1</mn></msub><mo separator=\"true\">,</mo><mo>…</mo><mo separator=\"true\">,</mo><msub><mi>A</mi><mi>n</mi></msub><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">c(A_1, \\ldots, A_n) \\vdash c'(A_1, \\ldots, A_n)</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord mathdefault\">c</span><span class=\"mopen\">(</span><span class=\"mord\"><span class=\"mord mathdefault\">A</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.30110799999999993em;\"><span style=\"top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">1</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"minner\">…</span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mord\"><span class=\"mord mathdefault\">A</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.151392em;\"><span style=\"top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathdefault mtight\">n</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span><span class=\"mclose\">)</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">⊢</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1.001892em;vertical-align:-0.25em;\"></span><span class=\"mord\"><span class=\"mord mathdefault\">c</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.751892em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\">′</span></span></span></span></span></span></span></span></span><span class=\"mopen\">(</span><span class=\"mord\"><span class=\"mord mathdefault\">A</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.30110799999999993em;\"><span style=\"top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">1</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"minner\">…</span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mord\"><span class=\"mord mathdefault\">A</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.151392em;\"><span style=\"top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathdefault mtight\">n</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span><span class=\"mclose\">)</span></span></span></span> and the other way around. In the second case you ask whether you can always derive <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msup><mi>c</mi><mo lspace=\"0em\" mathvariant=\"normal\" rspace=\"0em\">′</mo></msup><mo stretchy=\"false\">(</mo><msub><mi>A</mi><mn>1</mn></msub><mo separator=\"true\">,</mo><mo>…</mo><mo separator=\"true\">,</mo><msub><mi>A</mi><mi>n</mi></msub><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">c'(A_1, \\ldots, A_n)</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:1.001892em;vertical-align:-0.25em;\"></span><span class=\"mord\"><span class=\"mord mathdefault\">c</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.751892em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\">′</span></span></span></span></span></span></span></span></span><span class=\"mopen\">(</span><span class=\"mord\"><span class=\"mord mathdefault\">A</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.30110799999999993em;\"><span style=\"top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">1</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"minner\">…</span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mord\"><span class=\"mord mathdefault\">A</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.151392em;\"><span style=\"top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathdefault mtight\">n</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span><span class=\"mclose\">)</span></span></span></span> from <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>c</mi><mo stretchy=\"false\">(</mo><msub><mi>A</mi><mn>1</mn></msub><mo separator=\"true\">,</mo><mo>…</mo><mo separator=\"true\">,</mo><msub><mi>A</mi><mi>n</mi></msub><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">c(A_1, \\ldots, A_n)</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord mathdefault\">c</span><span class=\"mopen\">(</span><span class=\"mord\"><span class=\"mord mathdefault\">A</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.30110799999999993em;\"><span style=\"top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">1</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"minner\">…</span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mord\"><span class=\"mord mathdefault\">A</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.151392em;\"><span style=\"top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathdefault mtight\">n</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span><span class=\"mclose\">)</span></span></span></span> and the other way around.)</p>",
+        "id": 194545526,
+        "sender_full_name": "Amar Hadzihasanovic",
+        "timestamp": 1587217681
+    },
+    {
+        "content": "<p>(Though in the system I've been working on, a graded ! is supposed to be used in representing “weighted multicategory” morphisms, so this question would be interesting to investigate there.)</p>",
+        "id": 194545598,
+        "sender_full_name": "James Wood",
+        "timestamp": 1587217791
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"281583\">James Wood</span> <a href=\"#narrow/stream/233104-theory.3A-logic/topic/Girard.20algebras.3F/near/194545501\" title=\"#narrow/stream/233104-theory.3A-logic/topic/Girard.20algebras.3F/near/194545501\">said</a>:</p>\n<blockquote>\n<p>For the additives, I guess this property is obvious because they satisfy a universal property. For tensor, is it again because of a universal property... how it represents multi-/polycategory morphisms? But for exponentials, there is no such thing.</p>\n</blockquote>\n<p>To be fair, from the “model” side I think it's quite subtle, and it all depends on what we consider to be the “bare-bones” model of a logic.</p>",
+        "id": 194545719,
+        "sender_full_name": "Amar Hadzihasanovic",
+        "timestamp": 1587217981
+    },
+    {
+        "content": "<p>It's related to what <span class=\"user-mention\" data-user-id=\"276777\">@Mike Shulman</span> and <span class=\"user-mention\" data-user-id=\"276656\">@Valeria de Paiva</span> were discussing about on the “continuum” of models.</p>",
+        "id": 194545752,
+        "sender_full_name": "Amar Hadzihasanovic",
+        "timestamp": 1587218026
+    },
+    {
+        "content": "<p>If the bare-bones model structures are categories, there can be only one interpretation of the additives, and you can ask “is this category a model of the additive fragment of LL”, but there can be different SMC structures, so it does not make sense to ask “is this a model of the multiplicative fragment”.</p>",
+        "id": 194545893,
+        "sender_full_name": "Amar Hadzihasanovic",
+        "timestamp": 1587218207
+    },
+    {
+        "content": "<p>But if the bare-bones model is multi or polycategories, then it does make sense.</p>",
+        "id": 194545916,
+        "sender_full_name": "Amar Hadzihasanovic",
+        "timestamp": 1587218251
+    },
+    {
+        "content": "<p>If we're just talking about a syntactic property, doesn't the fact that I can find a model factored in the way I needed it to be (e.g, representable multi-/polycategories) suffice?</p>",
+        "id": 194546059,
+        "sender_full_name": "James Wood",
+        "timestamp": 1587218413
+    },
+    {
+        "content": "<p>If your bare-bones model is a symmetric monoidal category, agreed, there can be many exponentials. </p>\n<p>But say your bare-bones model, for whatever reason, is a monoidal functor from a cartesian category to an SMC. Then it makes sense to ask “does this have a left adjoint?”, and in that case say that your model has the <em>property</em> of being a model of multiplicative-exponential linear logic.</p>",
+        "id": 194546069,
+        "sender_full_name": "Amar Hadzihasanovic",
+        "timestamp": 1587218427
+    },
+    {
+        "content": "<p>(Btw if you designed your sequent calculus or whatever in such a way that its “natural” model is such a functor, then I believe you would have a unique, logically fixed exponential.)</p>",
+        "id": 194546227,
+        "sender_full_name": "Amar Hadzihasanovic",
+        "timestamp": 1587218639
+    },
+    {
+        "content": "<p>Aah, that makes sense. And something like that may indeed be the case in what I'm working on. At least, I'm pretty sure that ! is unique, and I get syntactically why it's not unique in standard linear logic now.</p>",
+        "id": 194546386,
+        "sender_full_name": "James Wood",
+        "timestamp": 1587218833
+    },
+    {
+        "content": "<p>Something like a dual-context sequent calculus with the interpretation that one part of the context is to be read “through a functor”. I hadn't thought of the connection with “uniqueness of exponentials” before but I'm sure this has been done, probably Mike or Valeria would know.</p>",
+        "id": 194546389,
+        "sender_full_name": "Amar Hadzihasanovic",
+        "timestamp": 1587218844
+    },
+    {
+        "content": "<p>In fact I vaguely remember having convinced myself a few years ago that dual context was a better way of doing the LL sequent calculus precisely for this reason.</p>",
+        "id": 194546511,
+        "sender_full_name": "Amar Hadzihasanovic",
+        "timestamp": 1587219033
+    },
+    {
+        "content": "<p>man i should try to finish the logic of unity paper sometime</p>",
+        "id": 194546528,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1587219088
+    },
+    {
+        "content": "<p>I forget: how well does dual context stuff handle classical linear logic?</p>",
+        "id": 194546534,
+        "sender_full_name": "James Wood",
+        "timestamp": 1587219107
+    },
+    {
+        "content": "<p>Yes, in general multiple-context versions of modal logics are the best way to give modal operators a universal property (and thereby make them unique).  I think we understand the \"intuitionistic\" version of this pretty well both syntactically and semantically in general, e.g. <a href=\"http://dlicata.web.wesleyan.edu/pubs/lsr17multi/lsr17multi-ex.pdf\" title=\"http://dlicata.web.wesleyan.edu/pubs/lsr17multi/lsr17multi-ex.pdf\">my paper with Dan and Mitchell</a>.  But the \"classical\" version, with multiple types on both sides of the turnstile, is not as well understood semantically, although I've done some playing around with it.</p>",
+        "id": 194546690,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1587219247
+    },
+    {
+        "content": "<p>Do you remember what the main challenges were?</p>",
+        "id": 194546804,
+        "sender_full_name": "Amar Hadzihasanovic",
+        "timestamp": 1587219405
+    },
+    {
+        "content": "<p>Right, I guess I can make the claim, then, that this is a good motivation for studying intuitionistic linear logic.</p>",
+        "id": 194546806,
+        "sender_full_name": "James Wood",
+        "timestamp": 1587219409
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276072\">sarahzrf</span> <a href=\"#narrow/stream/233104-theory.3A-logic/topic/Girard.20algebras.3F/near/194546528\" title=\"#narrow/stream/233104-theory.3A-logic/topic/Girard.20algebras.3F/near/194546528\">said</a>:</p>\n<blockquote>\n<p>man i should try to finish the logic of unity paper sometime</p>\n</blockquote>\n<p>Is that the dual of Girard's “unity of logic” paper? :)</p>",
+        "id": 194546827,
+        "sender_full_name": "Amar Hadzihasanovic",
+        "timestamp": 1587219471
+    },
+    {
+        "content": "<p>oops!</p>",
+        "id": 194547942,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1587220990
+    },
+    {
+        "content": "<p><span class=\"user-mention\" data-user-id=\"276363\">@Amar Hadzihasanovic</span> I don't know that there were particular challenges; it's just that no one has sat down and worked it out yet.  But one thing that's potentially tricky is the interaction between ? and ! along with duality.</p>",
+        "id": 194551403,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1587225445
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276072\">sarahzrf</span> <a href=\"#narrow/stream/233104-theory.3A-logic/topic/Girard.20algebras.3F/near/194529143\" title=\"#narrow/stream/233104-theory.3A-logic/topic/Girard.20algebras.3F/near/194529143\">said</a>:</p>\n<blockquote>\n<p>what do you mean by \"no, it isn't\"? the poset of truth values generally plays the same role among (0, 1)-categories that Set does among (1, 1)-categories, so you should get \"(0, 1)-copresheaves\" by taking the internal hom into it</p>\n</blockquote>\n<p>oh sorry for the talking across purposes here. I wasn't referring to  the fact that \" taking the monotone functions into 2 is the same thing, in a classical metatheory, to taking the monotone functions into truth values\". I sure agree with this. </p>\n<p>when I said \"no, it isn't\" I meant that the construction you proposed (taking the monotone functions into 2)  is not the same as<br>\n\"taking (0, 1)-copresheaves\" because the first is something that you can talk to highschool students about, while for the second you need all the background of category theory  that comes from sheaves and notions of 2 and higher order categories.  I was reacting to the suggestion that I wanted to complicate things more than they need to be complicated, as exemplified in the next sentence.  so my objection was that I don't want to bring heavy machinery if I don't need it for the modeling task at hand. But I think the misunderstanding  boils down to me not being familiar with the medium, really. I needed to be more careful with a sentence like \"no, it isn't\". </p>\n<p>and sure \"11:39 PM i wasn't talking about dialectica categories, though...\", sorry, I was!</p>",
+        "id": 194554836,
+        "sender_full_name": "Valeria de Paiva",
+        "timestamp": 1587230543
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276363\">Amar Hadzihasanovic</span> <a href=\"#narrow/stream/233104-theory.3A-logic/topic/Girard.20algebras.3F/near/194544804\" title=\"#narrow/stream/233104-theory.3A-logic/topic/Girard.20algebras.3F/near/194544804\">said</a>:</p>\n<blockquote>\n<p>I think <a href=\"https://link.springer.com/chapter/10.1007%2FBFb0022564\" title=\"https://link.springer.com/chapter/10.1007%2FBFb0022564\">this</a> is the classical reference for such a system (unfortunately under a Springer paywall...)</p>\n</blockquote>\n<p>Jean-Baptiste has the free version here <a href=\"http://www-philo.univ-paris1.fr/Joinet/NEW/PDF/PublicationsVersionOK/1-ok-structexp.pdf\" title=\"http://www-philo.univ-paris1.fr/Joinet/NEW/PDF/PublicationsVersionOK/1-ok-structexp.pdf\">http://www-philo.univ-paris1.fr/Joinet/NEW/PDF/PublicationsVersionOK/1-ok-structexp.pdf</a><br>\nbut<br>\n\"!A has the structure of a commutative comonoid (wrt tensor)\" is not enough (the comonoid structure has to interact well with the coalgebra structure induced by the monoidal comonad), as discussed in <br>\nRelating Categorical Semantics for Intuitionistic Linear Logic with P. Maneggia, V. de Paiva and E. Ritter<br>\nin Applied Categorical Structures, volume 13(1):1--36, 2005 <a href=\"https://www.math.unipd.it/~maietti/pubb.html\" title=\"https://www.math.unipd.it/~maietti/pubb.html\">https://www.math.unipd.it/~maietti/pubb.html</a></p>\n<p>but sure there are many ways of defining exponentials.</p>",
+        "id": 194555293,
+        "sender_full_name": "Valeria de Paiva",
+        "timestamp": 1587231210
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276363\">Amar Hadzihasanovic</span> <a href=\"#narrow/stream/233104-theory.3A-logic/topic/Girard.20algebras.3F/near/194545893\" title=\"#narrow/stream/233104-theory.3A-logic/topic/Girard.20algebras.3F/near/194545893\">said</a>:</p>\n<blockquote>\n<p>If the bare-bones model structures are categories, there can be only one interpretation of the additives, and you can ask “is this category a model of the additive fragment of LL”, but there can be different SMC structures, so it does not make sense to ask “is this a model of the multiplicative fragment”.</p>\n</blockquote>\n<p>Yes!!<br>\n<span class=\"user-mention silent\" data-user-id=\"276363\">Amar Hadzihasanovic</span> <a href=\"#narrow/stream/233104-theory.3A-logic/topic/Girard.20algebras.3F/near/194545719\" title=\"#narrow/stream/233104-theory.3A-logic/topic/Girard.20algebras.3F/near/194545719\">said</a>:</p>\n<blockquote>\n<p>To be fair, from the “model” side I think it's quite subtle, and it all depends on what we consider to be the “bare-bones” model of a logic.</p>\n</blockquote>\n<p>totally agreeing!!!</p>",
+        "id": 194555444,
+        "sender_full_name": "Valeria de Paiva",
+        "timestamp": 1587231399
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276363\">Amar Hadzihasanovic</span> <a href=\"#narrow/stream/233104-theory.3A-logic/topic/Girard.20algebras.3F/near/194546511\" title=\"#narrow/stream/233104-theory.3A-logic/topic/Girard.20algebras.3F/near/194546511\">said</a>:</p>\n<blockquote>\n<p>In fact I vaguely remember having convinced myself a few years ago that dual context was a better way of doing the LL sequent calculus precisely for this reason.</p>\n</blockquote>\n<p>hmm, I had reached the same conclusion for a totally different reason: because I wanted to re-use the libraries already written for simply typed calculus, on the intuitionistic side of the model.</p>",
+        "id": 194555601,
+        "sender_full_name": "Valeria de Paiva",
+        "timestamp": 1587231594
+    },
+    {
+        "content": "<blockquote>\n<p>\"!A has the structure of a commutative comonoid (wrt tensor)\" is not enough (the comonoid structure has to interact well with the coalgebra structure induced by the monoidal comonad), as discussed in </p>\n</blockquote>\n<p>Thanks for the reference! :) I didn't remember the details.</p>",
+        "id": 194556903,
+        "sender_full_name": "Amar Hadzihasanovic",
+        "timestamp": 1587233286
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276363\">Amar Hadzihasanovic</span> <a href=\"#narrow/stream/233104-theory.3A-logic/topic/Girard.20algebras.3F/near/194556903\" title=\"#narrow/stream/233104-theory.3A-logic/topic/Girard.20algebras.3F/near/194556903\">said</a>:</p>\n<blockquote>\n<blockquote>\n<p>\"!A has the structure of a commutative comonoid (wrt tensor)\" is not enough (the comonoid structure has to interact well with the coalgebra structure induced by the monoidal comonad), as discussed in </p>\n</blockquote>\n<p>Thanks for the reference! :) I didn't remember the details.</p>\n</blockquote>\n<p>Thanks for the conversation! I feel a bit obsessive about those particular details, which are not important for most people. because they have an impact on the previous conversation on the continuum of models.</p>",
+        "id": 194560478,
+        "sender_full_name": "Valeria de Paiva",
+        "timestamp": 1587238802
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276656\">Valeria de Paiva</span> <a href=\"#narrow/stream/233104-theory.3A-logic/topic/Girard.20algebras.3F/near/194554836\" title=\"#narrow/stream/233104-theory.3A-logic/topic/Girard.20algebras.3F/near/194554836\">said</a>:</p>\n<blockquote>\n<p><span class=\"user-mention silent\" data-user-id=\"276072\">sarahzrf</span> <a href=\"#narrow/stream/233104-theory.3A-logic/topic/Girard.20algebras.3F/near/194529143\" title=\"#narrow/stream/233104-theory.3A-logic/topic/Girard.20algebras.3F/near/194529143\">said</a>:</p>\n<blockquote>\n<p>what do you mean by \"no, it isn't\"? the poset of truth values generally plays the same role among (0, 1)-categories that Set does among (1, 1)-categories, so you should get \"(0, 1)-copresheaves\" by taking the internal hom into it</p>\n</blockquote>\n<p>oh sorry for the talking across purposes here. I wasn't referring to  the fact that \" taking the monotone functions into 2 is the same thing, in a classical metatheory, to taking the monotone functions into truth values\". I sure agree with this. </p>\n<p>when I said \"no, it isn't\" I meant that the construction you proposed (taking the monotone functions into 2)  is not the same as<br>\n\"taking (0, 1)-copresheaves\" because the first is something that you can talk to highschool students about, while for the second you need all the background of category theory  that comes from sheaves and notions of 2 and higher order categories.  I was reacting to the suggestion that I wanted to complicate things more than they need to be complicated, as exemplified in the next sentence.  so my objection was that I don't want to bring heavy machinery if I don't need it for the modeling task at hand. But I think the misunderstanding  boils down to me not being familiar with the medium, really. I needed to be more careful with a sentence like \"no, it isn't\". </p>\n<p>and sure \"11:39 PM i wasn't talking about dialectica categories, though...\", sorry, I was!</p>\n</blockquote>\n<p>oh—the point i was trying to make was that homming into a complete boolean algebra in order to get a heyting algebra, and/or doing kripke semantics, actually <em>is</em> ubiquitous, because one of its cases is the (0, 1)-truncated version of taking copresheaves, and that's a pretty fundamental construction</p>",
+        "id": 194572088,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1587257890
+    },
+    {
+        "content": "<p>for example, it's the free completion of a preordered set to an inflattice</p>",
+        "id": 194572099,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1587257946
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276072\">sarahzrf</span> <a href=\"#narrow/stream/233104-theory.3A-logic/topic/Girard.20algebras.3F/near/194572088\" title=\"#narrow/stream/233104-theory.3A-logic/topic/Girard.20algebras.3F/near/194572088\">said</a>:</p>\n<blockquote>\n<p>oh—the point i was trying to make was that homming into a complete boolean algebra in order to get a heyting algebra, and/or doing kripke semantics, actually <em>is</em> ubiquitous, because one of its cases is the (0, 1)-truncated version of taking copresheaves, and that's a pretty fundamental construction</p>\n</blockquote>\n<p>not disagreeing that \"homming into a(n) algebra\" is a pretty fundamental construction, it is. still disagreeing that it is ubiquitous and still disagreeing that thinking of it as  the  \"(0, 1)-truncated version of taking copresheaves\" is helpful. but sure, different people different notions of  what's helpful, of what's easy or not. </p>\n<p>But I came back to this thread because of <br>\n<span class=\"user-mention silent\" data-user-id=\"276363\">Amar Hadzihasanovic</span> <a href=\"#narrow/stream/233104-theory.3A-logic/topic/Girard.20algebras.3F/near/194546389\" title=\"#narrow/stream/233104-theory.3A-logic/topic/Girard.20algebras.3F/near/194546389\">said</a>:</p>\n<blockquote>\n<p>Something like a dual-context sequent calculus with the interpretation that one part of the context is to be read “through a functor”. I hadn't thought of the connection with “uniqueness of exponentials” before but I'm sure this has been done, probably Mike or Valeria would know.</p>\n</blockquote>\n<p>I don't think  I know any of this. But I was thinking and it seems to me that you don't get  uniqueness of exponentials this way. maybe I am wrong, but I think you get one amonoidal comonad that can be \"resolved\" into a infinity  of adjoint pairs, the full spectrum from Eilenberg-Moore coalgebras to co-Klesili categories, passing through products of exponentiable objects, etc. with several possible levels of \"strictification\" of morphisms. So Milly Maeitti (my co-author) wanted very strict morphisms of models of LL(mirroring the type theory), while Andrea Schalk and Martin Hyland wanted morphisms that are better for category theory, less so for the syntax. Either way, I don't think you get  uniqueness of exponentials, but it has been a long time since I thought about this.</p>",
+        "id": 194735695,
+        "sender_full_name": "Valeria de Paiva",
+        "timestamp": 1587417982
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276650\">Gershom</span> <a href=\"#narrow/stream/233104-theory.3A-logic/topic/Girard.20algebras.3F/near/194529827\" title=\"#narrow/stream/233104-theory.3A-logic/topic/Girard.20algebras.3F/near/194529827\">said</a>:</p>\n<blockquote>\n<p><span class=\"user-mention silent\" data-user-id=\"276656\">Valeria de Paiva</span> <a href=\"#narrow/stream/233104-theory.3A-logic/topic/Girard.20algebras.3F/near/194528906\" title=\"#narrow/stream/233104-theory.3A-logic/topic/Girard.20algebras.3F/near/194528906\">said</a>:</p>\n<blockquote>\n<p>I'm just thinking that there isn't an awful lot of information on Heyting algebras around, actually. it would be nice to know more about them. My friend Jean Pretorius wrote a phd thesis in Cambridge about them in the 90's. I looked around to see new stuff, but didn't find much.</p>\n</blockquote>\n<p>Well in the finite case it's exactly the theory of finite distributive lattices (right?), which is very rich. I agree that there's a lot more going on in the general case, but there's certainly a lot of \"hands on\" stuff to get a handle on with small examples. Maybe I should just start playing around with some small  finite *-autonomous posets and see where it goes... I was just hoping someone had gone there first :-)</p>\n</blockquote>\n<p>Sure, playing around with small finite *-autonomous posets is a good idea. Vaughan Pratt had some student of his program a Chu calculator for that <a href=\"http://chu.stanford.edu/live/\" title=\"http://chu.stanford.edu/live/\">http://chu.stanford.edu/live/</a> I think it's still working. but I confess that it hasn't helped me very much.</p>",
+        "id": 194736422,
+        "sender_full_name": "Valeria de Paiva",
+        "timestamp": 1587418401
+    },
+    {
+        "content": "<p><span class=\"user-mention\" data-user-id=\"276656\">@Valeria de Paiva</span> I am thinking of the following setting: you have a dual-context intuitionistic sequent calculus, with sequents of the form <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi>A</mi><mn>1</mn></msub><mo separator=\"true\">,</mo><mo>…</mo><mo separator=\"true\">,</mo><msub><mi>A</mi><mi>n</mi></msub><mo separator=\"true\">;</mo><msub><mi>B</mi><mn>1</mn></msub><mo separator=\"true\">,</mo><mo>…</mo><mo separator=\"true\">,</mo><msub><mi>B</mi><mi>m</mi></msub><mo>⊢</mo><mi>C</mi></mrow><annotation encoding=\"application/x-tex\">A_1, \\ldots, A_n ; B_1, \\ldots, B_m \\vdash C</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8888799999999999em;vertical-align:-0.19444em;\"></span><span class=\"mord\"><span class=\"mord mathdefault\">A</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.30110799999999993em;\"><span style=\"top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">1</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"minner\">…</span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mord\"><span class=\"mord mathdefault\">A</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.151392em;\"><span style=\"top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathdefault mtight\">n</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span><span class=\"mpunct\">;</span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mord\"><span class=\"mord mathdefault\" style=\"margin-right:0.05017em;\">B</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.30110799999999993em;\"><span style=\"top:-2.5500000000000003em;margin-left:-0.05017em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">1</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"minner\">…</span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mord\"><span class=\"mord mathdefault\" style=\"margin-right:0.05017em;\">B</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.151392em;\"><span style=\"top:-2.5500000000000003em;margin-left:-0.05017em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathdefault mtight\">m</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">⊢</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathdefault\" style=\"margin-right:0.07153em;\">C</span></span></span></span>, and the “bare-bones” semantics are monoidal functors  (or morphisms of multicategories) <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>F</mi><mo>:</mo><mi mathvariant=\"script\">C</mi><mo>→</mo><mi mathvariant=\"script\">D</mi></mrow><annotation encoding=\"application/x-tex\">F: \\mathcal{C} \\to \\mathcal{D}</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathdefault\" style=\"margin-right:0.13889em;\">F</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">:</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord\"><span class=\"mord mathcal\" style=\"margin-right:0.05834em;\">C</span></span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">→</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord\"><span class=\"mord mathcal\" style=\"margin-right:0.02778em;\">D</span></span></span></span></span>, so that the <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi>A</mi><mi>i</mi></msub></mrow><annotation encoding=\"application/x-tex\">A_i</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.83333em;vertical-align:-0.15em;\"></span><span class=\"mord\"><span class=\"mord mathdefault\">A</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.31166399999999994em;\"><span style=\"top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathdefault mtight\">i</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span></span></span></span> are interpreted in <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"script\">C</mi></mrow><annotation encoding=\"application/x-tex\">\\mathcal{C}</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord\"><span class=\"mord mathcal\" style=\"margin-right:0.05834em;\">C</span></span></span></span></span>, the <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi>B</mi><mi>j</mi></msub></mrow><annotation encoding=\"application/x-tex\">B_j</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.969438em;vertical-align:-0.286108em;\"></span><span class=\"mord\"><span class=\"mord mathdefault\" style=\"margin-right:0.05017em;\">B</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.311664em;\"><span style=\"top:-2.5500000000000003em;margin-left:-0.05017em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathdefault mtight\" style=\"margin-right:0.05724em;\">j</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.286108em;\"><span></span></span></span></span></span></span></span></span></span> and <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>C</mi></mrow><annotation encoding=\"application/x-tex\">C</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathdefault\" style=\"margin-right:0.07153em;\">C</span></span></span></span> in <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"script\">D</mi></mrow><annotation encoding=\"application/x-tex\">\\mathcal{D}</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord\"><span class=\"mord mathcal\" style=\"margin-right:0.02778em;\">D</span></span></span></span></span>, and the sequent is interpreted as a morphism <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>⨂</mo><mi>F</mi><mo stretchy=\"false\">(</mo><mo lspace=\"0em\" mathvariant=\"normal\" rspace=\"0em\">⟦</mo><msub><mi>A</mi><mi>i</mi></msub><mo lspace=\"0em\" mathvariant=\"normal\" rspace=\"0em\">⟧</mo><mo stretchy=\"false\">)</mo><mo>⊗</mo><mo>⨂</mo><mo lspace=\"0em\" mathvariant=\"normal\" rspace=\"0em\">⟦</mo><msub><mi>B</mi><mi>j</mi></msub><mo lspace=\"0em\" mathvariant=\"normal\" rspace=\"0em\">⟧</mo><mo>→</mo><mo lspace=\"0em\" mathvariant=\"normal\" rspace=\"0em\">⟦</mo><mi>C</mi><mo lspace=\"0em\" mathvariant=\"normal\" rspace=\"0em\">⟧</mo></mrow><annotation encoding=\"application/x-tex\">\\bigotimes F(\\llbracket A_i \\rrbracket) \\otimes \\bigotimes \\llbracket B_j \\rrbracket \\to \\llbracket C \\rrbracket</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:1.00001em;vertical-align:-0.25001em;\"></span><span class=\"mop op-symbol small-op\" style=\"position:relative;top:-0.0000050000000000050004em;\">⨂</span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mord mathdefault\" style=\"margin-right:0.13889em;\">F</span><span class=\"mopen\">(</span><span class=\"mopen\"><span class=\"mopen\">[</span><span class=\"mspace\" style=\"margin-right:-0.17777777777777778em;\"></span><span class=\"mopen\">[</span></span><span class=\"mord\"><span class=\"mord mathdefault\">A</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.31166399999999994em;\"><span style=\"top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathdefault mtight\">i</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span><span class=\"mclose\"><span class=\"mclose\">]</span><span class=\"mspace\" style=\"margin-right:-0.17777777777777778em;\"></span><span class=\"mclose\">]</span></span><span class=\"mclose\">)</span><span class=\"mspace\" style=\"margin-right:0.2222222222222222em;\"></span><span class=\"mbin\">⊗</span><span class=\"mspace\" style=\"margin-right:0.2222222222222222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1.036108em;vertical-align:-0.286108em;\"></span><span class=\"mop op-symbol small-op\" style=\"position:relative;top:-0.0000050000000000050004em;\">⨂</span><span class=\"mopen\"><span class=\"mopen\">[</span><span class=\"mspace\" style=\"margin-right:-0.17777777777777778em;\"></span><span class=\"mopen\">[</span></span><span class=\"mord\"><span class=\"mord mathdefault\" style=\"margin-right:0.05017em;\">B</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.311664em;\"><span style=\"top:-2.5500000000000003em;margin-left:-0.05017em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathdefault mtight\" style=\"margin-right:0.05724em;\">j</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.286108em;\"><span></span></span></span></span></span></span><span class=\"mclose\"><span class=\"mclose\">]</span><span class=\"mspace\" style=\"margin-right:-0.17777777777777778em;\"></span><span class=\"mclose\">]</span></span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">→</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mopen\"><span class=\"mopen\">[</span><span class=\"mspace\" style=\"margin-right:-0.17777777777777778em;\"></span><span class=\"mopen\">[</span></span><span class=\"mord mathdefault\" style=\"margin-right:0.07153em;\">C</span><span class=\"mclose\"><span class=\"mclose\">]</span><span class=\"mspace\" style=\"margin-right:-0.17777777777777778em;\"></span><span class=\"mclose\">]</span></span></span></span></span> in <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"script\">D</mi></mrow><annotation encoding=\"application/x-tex\">\\mathcal{D}</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord\"><span class=\"mord mathcal\" style=\"margin-right:0.02778em;\">D</span></span></span></span></span>.</p>",
+        "id": 194808364,
+        "sender_full_name": "Amar Hadzihasanovic",
+        "timestamp": 1587478798
+    },
+    {
+        "content": "<p>Then you can interpret a modality <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"normal\">□</mi></mrow><annotation encoding=\"application/x-tex\">\\square</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.675em;vertical-align:0em;\"></span><span class=\"mord amsrm\">□</span></span></span></span> with left rule <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"normal\">Γ</mi><mo separator=\"true\">;</mo><mi>A</mi><mo separator=\"true\">,</mo><mi mathvariant=\"normal\">Δ</mi><mo>⊢</mo><mi>B</mi></mrow><annotation encoding=\"application/x-tex\">\\Gamma ; A, \\Delta \\vdash B</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8888799999999999em;vertical-align:-0.19444em;\"></span><span class=\"mord\">Γ</span><span class=\"mpunct\">;</span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mord mathdefault\">A</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mord\">Δ</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">⊢</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathdefault\" style=\"margin-right:0.05017em;\">B</span></span></span></span> leads to <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"normal\">□</mi><mi>A</mi><mo separator=\"true\">,</mo><mi mathvariant=\"normal\">Γ</mi><mo separator=\"true\">;</mo><mi mathvariant=\"normal\">Δ</mi><mo>⊢</mo><mi>B</mi></mrow><annotation encoding=\"application/x-tex\">\\square A, \\Gamma ; \\Delta \\vdash B</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8888799999999999em;vertical-align:-0.19444em;\"></span><span class=\"mord amsrm\">□</span><span class=\"mord mathdefault\">A</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mord\">Γ</span><span class=\"mpunct\">;</span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mord\">Δ</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">⊢</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathdefault\" style=\"margin-right:0.05017em;\">B</span></span></span></span> and right rule <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"normal\">Γ</mi><mo separator=\"true\">;</mo><mo>⊢</mo><mi>A</mi></mrow><annotation encoding=\"application/x-tex\">\\Gamma ; \\vdash A</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8888799999999999em;vertical-align:-0.19444em;\"></span><span class=\"mord\">Γ</span><span class=\"mpunct\">;</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">⊢</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathdefault\">A</span></span></span></span> leads to <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"normal\">Γ</mi><mo separator=\"true\">;</mo><mo>⊢</mo><mi mathvariant=\"normal\">□</mi><mi>A</mi></mrow><annotation encoding=\"application/x-tex\">\\Gamma ; \\vdash \\square A</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8888799999999999em;vertical-align:-0.19444em;\"></span><span class=\"mord\">Γ</span><span class=\"mpunct\">;</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">⊢</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord amsrm\">□</span><span class=\"mord mathdefault\">A</span></span></span></span> if and only if <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>F</mi></mrow><annotation encoding=\"application/x-tex\">F</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathdefault\" style=\"margin-right:0.13889em;\">F</span></span></span></span> has a left adjoint. Also the rules specify the modality up to logical equivalence.</p>",
+        "id": 194808843,
+        "sender_full_name": "Amar Hadzihasanovic",
+        "timestamp": 1587478990
+    },
+    {
+        "content": "<p>In brief the specific splitting of the comonad as an adjunction is given as part of the “bare-bones” semantics, and that's what makes it unique...</p>",
+        "id": 194809158,
+        "sender_full_name": "Amar Hadzihasanovic",
+        "timestamp": 1587479136
+    },
+    {
+        "content": "<p>(There's a little of imprecision in what I wrote in that the interpretation of <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"normal\">□</mi><mi>A</mi></mrow><annotation encoding=\"application/x-tex\">\\square A</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord amsrm\">□</span><span class=\"mord mathdefault\">A</span></span></span></span> changes depending on where it is in the context, but it's not hard to fix)</p>",
+        "id": 194809680,
+        "sender_full_name": "Amar Hadzihasanovic",
+        "timestamp": 1587479360
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276363\">Amar Hadzihasanovic</span> <a href=\"#narrow/stream/233104-theory.3A-logic/topic/Girard.20algebras.3F/near/194808364\" title=\"#narrow/stream/233104-theory.3A-logic/topic/Girard.20algebras.3F/near/194808364\">said</a>:</p>\n<blockquote>\n<p><span class=\"user-mention silent\" data-user-id=\"276656\">Valeria de Paiva</span> I am thinking of the following setting: you have a dual-context intuitionistic sequent calculus, with sequents of the form <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi>A</mi><mn>1</mn></msub><mo separator=\"true\">,</mo><mo>…</mo><mo separator=\"true\">,</mo><msub><mi>A</mi><mi>n</mi></msub><mo separator=\"true\">;</mo><msub><mi>B</mi><mn>1</mn></msub><mo separator=\"true\">,</mo><mo>…</mo><mo separator=\"true\">,</mo><msub><mi>B</mi><mi>m</mi></msub><mo>⊢</mo><mi>C</mi></mrow><annotation encoding=\"application/x-tex\">A_1, \\ldots, A_n ; B_1, \\ldots, B_m \\vdash C</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8888799999999999em;vertical-align:-0.19444em;\"></span><span class=\"mord\"><span class=\"mord mathdefault\">A</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.30110799999999993em;\"><span style=\"top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">1</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"minner\">…</span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mord\"><span class=\"mord mathdefault\">A</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.151392em;\"><span style=\"top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathdefault mtight\">n</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span><span class=\"mpunct\">;</span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mord\"><span class=\"mord mathdefault\" style=\"margin-right:0.05017em;\">B</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.30110799999999993em;\"><span style=\"top:-2.5500000000000003em;margin-left:-0.05017em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">1</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"minner\">…</span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mord\"><span class=\"mord mathdefault\" style=\"margin-right:0.05017em;\">B</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.151392em;\"><span style=\"top:-2.5500000000000003em;margin-left:-0.05017em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathdefault mtight\">m</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">⊢</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathdefault\" style=\"margin-right:0.07153em;\">C</span></span></span></span>, and the “bare-bones” semantics are monoidal functors  (or morphisms of multicategories) <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>F</mi><mo>:</mo><mi mathvariant=\"script\">C</mi><mo>→</mo><mi mathvariant=\"script\">D</mi></mrow><annotation encoding=\"application/x-tex\">F: \\mathcal{C} \\to \\mathcal{D}</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathdefault\" style=\"margin-right:0.13889em;\">F</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">:</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord\"><span class=\"mord mathcal\" style=\"margin-right:0.05834em;\">C</span></span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">→</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord\"><span class=\"mord mathcal\" style=\"margin-right:0.02778em;\">D</span></span></span></span></span>, so that the <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi>A</mi><mi>i</mi></msub></mrow><annotation encoding=\"application/x-tex\">A_i</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.83333em;vertical-align:-0.15em;\"></span><span class=\"mord\"><span class=\"mord mathdefault\">A</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.31166399999999994em;\"><span style=\"top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathdefault mtight\">i</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span></span></span></span> are interpreted in <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"script\">C</mi></mrow><annotation encoding=\"application/x-tex\">\\mathcal{C}</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord\"><span class=\"mord mathcal\" style=\"margin-right:0.05834em;\">C</span></span></span></span></span>, the <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi>B</mi><mi>j</mi></msub></mrow><annotation encoding=\"application/x-tex\">B_j</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.969438em;vertical-align:-0.286108em;\"></span><span class=\"mord\"><span class=\"mord mathdefault\" style=\"margin-right:0.05017em;\">B</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.311664em;\"><span style=\"top:-2.5500000000000003em;margin-left:-0.05017em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathdefault mtight\" style=\"margin-right:0.05724em;\">j</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.286108em;\"><span></span></span></span></span></span></span></span></span></span> and <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>C</mi></mrow><annotation encoding=\"application/x-tex\">C</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathdefault\" style=\"margin-right:0.07153em;\">C</span></span></span></span> in <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"script\">D</mi></mrow><annotation encoding=\"application/x-tex\">\\mathcal{D}</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord\"><span class=\"mord mathcal\" style=\"margin-right:0.02778em;\">D</span></span></span></span></span>, and the sequent is interpreted as a morphism <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>⨂</mo><mi>F</mi><mo stretchy=\"false\">(</mo><mo lspace=\"0em\" mathvariant=\"normal\" rspace=\"0em\">⟦</mo><msub><mi>A</mi><mi>i</mi></msub><mo lspace=\"0em\" mathvariant=\"normal\" rspace=\"0em\">⟧</mo><mo stretchy=\"false\">)</mo><mo>⊗</mo><mo>⨂</mo><mo lspace=\"0em\" mathvariant=\"normal\" rspace=\"0em\">⟦</mo><msub><mi>B</mi><mi>j</mi></msub><mo lspace=\"0em\" mathvariant=\"normal\" rspace=\"0em\">⟧</mo><mo>→</mo><mo lspace=\"0em\" mathvariant=\"normal\" rspace=\"0em\">⟦</mo><mi>C</mi><mo lspace=\"0em\" mathvariant=\"normal\" rspace=\"0em\">⟧</mo></mrow><annotation encoding=\"application/x-tex\">\\bigotimes F(\\llbracket A_i \\rrbracket) \\otimes \\bigotimes \\llbracket B_j \\rrbracket \\to \\llbracket C \\rrbracket</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:1.00001em;vertical-align:-0.25001em;\"></span><span class=\"mop op-symbol small-op\" style=\"position:relative;top:-0.0000050000000000050004em;\">⨂</span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mord mathdefault\" style=\"margin-right:0.13889em;\">F</span><span class=\"mopen\">(</span><span class=\"mopen\"><span class=\"mopen\">[</span><span class=\"mspace\" style=\"margin-right:-0.17777777777777778em;\"></span><span class=\"mopen\">[</span></span><span class=\"mord\"><span class=\"mord mathdefault\">A</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.31166399999999994em;\"><span style=\"top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathdefault mtight\">i</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span><span class=\"mclose\"><span class=\"mclose\">]</span><span class=\"mspace\" style=\"margin-right:-0.17777777777777778em;\"></span><span class=\"mclose\">]</span></span><span class=\"mclose\">)</span><span class=\"mspace\" style=\"margin-right:0.2222222222222222em;\"></span><span class=\"mbin\">⊗</span><span class=\"mspace\" style=\"margin-right:0.2222222222222222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1.036108em;vertical-align:-0.286108em;\"></span><span class=\"mop op-symbol small-op\" style=\"position:relative;top:-0.0000050000000000050004em;\">⨂</span><span class=\"mopen\"><span class=\"mopen\">[</span><span class=\"mspace\" style=\"margin-right:-0.17777777777777778em;\"></span><span class=\"mopen\">[</span></span><span class=\"mord\"><span class=\"mord mathdefault\" style=\"margin-right:0.05017em;\">B</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.311664em;\"><span style=\"top:-2.5500000000000003em;margin-left:-0.05017em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathdefault mtight\" style=\"margin-right:0.05724em;\">j</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.286108em;\"><span></span></span></span></span></span></span><span class=\"mclose\"><span class=\"mclose\">]</span><span class=\"mspace\" style=\"margin-right:-0.17777777777777778em;\"></span><span class=\"mclose\">]</span></span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">→</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mopen\"><span class=\"mopen\">[</span><span class=\"mspace\" style=\"margin-right:-0.17777777777777778em;\"></span><span class=\"mopen\">[</span></span><span class=\"mord mathdefault\" style=\"margin-right:0.07153em;\">C</span><span class=\"mclose\"><span class=\"mclose\">]</span><span class=\"mspace\" style=\"margin-right:-0.17777777777777778em;\"></span><span class=\"mclose\">]</span></span></span></span></span> in <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"script\">D</mi></mrow><annotation encoding=\"application/x-tex\">\\mathcal{D}</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord\"><span class=\"mord mathcal\" style=\"margin-right:0.02778em;\">D</span></span></span></span></span>.</p>\n</blockquote>\n<p>yes, we've done this in ICALP1998. Explicit Substitutions for Constructive Necessity (with Neil Ghani and Eike Ritter), presented at 25th International Colloquium on Automata, Languages and Programming (ICALP'98). Lecture Notes in Computer Science LNCS 1443, eds. Larsen, Skyum and Winskel. </p>\n<p>more recently Eike Ritter and I did a fibrational version of this dual-context modal logic Valeria de Paiva, Eike Ritter. Fibrational Modal Type Theory. Electronic Notes in Theoretical Computer Science, 01 June 2016. Proceedings of the Tenth Workshop on Logical and Semantic Frameworks with Applications (LSFA 2015). [PDF]</p>",
+        "id": 194811443,
+        "sender_full_name": "Valeria de Paiva",
+        "timestamp": 1587480037
+    }
+]

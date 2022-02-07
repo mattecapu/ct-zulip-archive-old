@@ -1,0 +1,860 @@
+[
+    {
+        "content": "<p>does anyone have any nice intuition for uhh<br>\nwhat it means, geometrically, when a scheme is affine?</p>",
+        "id": 198483776,
+        "sender_full_name": "Chloe",
+        "timestamp": 1590175306
+    },
+    {
+        "content": "<p>this is kind of a vague question, and im not quite sure what kind of answer im looking for...</p>",
+        "id": 198483911,
+        "sender_full_name": "Chloe",
+        "timestamp": 1590175355
+    },
+    {
+        "content": "<p>so let me just point to some random thoughts and hope someone picks up on it lmao</p>",
+        "id": 198483972,
+        "sender_full_name": "Chloe",
+        "timestamp": 1590175393
+    },
+    {
+        "content": "<p>if I have some scheme (or variety, or whatever...), which happens to be affine, that seems more like a structure on X than a property of X to me</p>",
+        "id": 198484127,
+        "sender_full_name": "Chloe",
+        "timestamp": 1590175470
+    },
+    {
+        "content": "<p>namely it's \"the structure of being isomorphic to spec(A) for some ring A\"</p>",
+        "id": 198484174,
+        "sender_full_name": "Chloe",
+        "timestamp": 1590175497
+    },
+    {
+        "content": "<p>(of course we know <em>which</em> ring A has to be if this is the case: it's just the ring of global functions on X)</p>",
+        "id": 198484260,
+        "sender_full_name": "Chloe",
+        "timestamp": 1590175556
+    },
+    {
+        "content": "<p>That sounds good to me except I'd say</p>\n<p>\"the structure of being equipped with an isomorphism to spec(A) for some ring A\".</p>",
+        "id": 198484332,
+        "sender_full_name": "John Baez",
+        "timestamp": 1590175579
+    },
+    {
+        "content": "<p>hmm yeah you're right I should be more precise...</p>",
+        "id": 198484361,
+        "sender_full_name": "Chloe",
+        "timestamp": 1590175598
+    },
+    {
+        "content": "<p>Of course one can demote any structure to a property using existential quantifiers, and then you get the property</p>\n<p>\"the property of being isomorphic to spec(A) for some ring A\".</p>",
+        "id": 198484406,
+        "sender_full_name": "John Baez",
+        "timestamp": 1590175623
+    },
+    {
+        "content": "<p>But one of the great lessons of category theory is that such properties are less useful than the structures they came from!</p>",
+        "id": 198484458,
+        "sender_full_name": "John Baez",
+        "timestamp": 1590175652
+    },
+    {
+        "content": "<p>yes!</p>",
+        "id": 198484484,
+        "sender_full_name": "Chloe",
+        "timestamp": 1590175666
+    },
+    {
+        "content": "<p>If a scheme is <em>equipped with an isomorphism</em> to spec(A) for some ring A, then you can act like it \"is\" spec(A) and start doing things with it.</p>",
+        "id": 198484598,
+        "sender_full_name": "John Baez",
+        "timestamp": 1590175708
+    },
+    {
+        "content": "<p>But mere existence is like knowing you've got money in the bank but not knowing which bank.</p>",
+        "id": 198484637,
+        "sender_full_name": "John Baez",
+        "timestamp": 1590175735
+    },
+    {
+        "content": "<p>okay so i'll be explicit with my motivation<br>\nthere's this theorem of serre that characterizes affine schemes (if X is Nice, then X is affine iff it has no nontrivial quasicoherent cohomology)</p>",
+        "id": 198484641,
+        "sender_full_name": "Chloe",
+        "timestamp": 1590175735
+    },
+    {
+        "content": "<p>and i am trying to understand a proof that goes through this result</p>",
+        "id": 198484695,
+        "sender_full_name": "Chloe",
+        "timestamp": 1590175761
+    },
+    {
+        "content": "<p>This sounds like he's treating it as a property.</p>",
+        "id": 198484707,
+        "sender_full_name": "John Baez",
+        "timestamp": 1590175767
+    },
+    {
+        "content": "<p>\"having no nontrivial cohomology\" is a mere property...</p>",
+        "id": 198484721,
+        "sender_full_name": "John Baez",
+        "timestamp": 1590175780
+    },
+    {
+        "content": "<p>i've heard people use this theorem to justify saying that affineness is somehow like being contractible... but that seems WAY too coarse to me</p>",
+        "id": 198484840,
+        "sender_full_name": "Chloe",
+        "timestamp": 1590175819
+    },
+    {
+        "content": "<p>It's possible his theorem could be enhanced to be a theorem that gave you structure.</p>",
+        "id": 198484869,
+        "sender_full_name": "John Baez",
+        "timestamp": 1590175827
+    },
+    {
+        "content": "<p>That is, if you read the proof you might see that by choosing A, B, and C for your scheme you get an isomorphism between it and an affine scheme.</p>",
+        "id": 198484951,
+        "sender_full_name": "John Baez",
+        "timestamp": 1590175875
+    },
+    {
+        "content": "<p>But maybe the statement of the theorem is only giving you conditions under which there exists A, B, and C for your scheme.</p>",
+        "id": 198484995,
+        "sender_full_name": "John Baez",
+        "timestamp": 1590175903
+    },
+    {
+        "content": "<p>it can be upgraded to a structure, and it's not so hard to do<br>\nthe cohomological statement is basically encoding the fact that taking global sections is exact</p>",
+        "id": 198485073,
+        "sender_full_name": "Chloe",
+        "timestamp": 1590175928
+    },
+    {
+        "content": "<p>It's funny because on YouTube there's a lecture by Serre, I think, complaining about theorems where you have to peek into the proof to get the full use of the result.</p>",
+        "id": 198485100,
+        "sender_full_name": "John Baez",
+        "timestamp": 1590175944
+    },
+    {
+        "content": "<p>and the affine scheme can be recovered as spec of the global sections of the structure sheaf</p>",
+        "id": 198485110,
+        "sender_full_name": "Chloe",
+        "timestamp": 1590175949
+    },
+    {
+        "content": "<p>tbh i dont wanna think about serre's theorem too much</p>",
+        "id": 198485135,
+        "sender_full_name": "Chloe",
+        "timestamp": 1590175968
+    },
+    {
+        "content": "<p>also i should probably step back and set this up a bit more categorically</p>",
+        "id": 198485160,
+        "sender_full_name": "Chloe",
+        "timestamp": 1590175982
+    },
+    {
+        "content": "<p>there's an adjunction between affine schemes and arbitrary schemes</p>",
+        "id": 198485199,
+        "sender_full_name": "Chloe",
+        "timestamp": 1590176006
+    },
+    {
+        "content": "<p>I think Serre's theorem is calling to you, begging you to state it more clearly.</p>",
+        "id": 198485208,
+        "sender_full_name": "John Baez",
+        "timestamp": 1590176011
+    },
+    {
+        "content": "<p>I think you're right, but I think that I have to understand some simpler stuff before I can even get there</p>",
+        "id": 198485296,
+        "sender_full_name": "Chloe",
+        "timestamp": 1590176044
+    },
+    {
+        "content": "<p>So yeah, if you can take your scheme and take global sections of the structure sheaf and <em>canonically</em> get an affine scheme from that <em>if</em> your scheme was secretly affine (as a property) to begin with, you are are in great shape.</p>",
+        "id": 198485344,
+        "sender_full_name": "John Baez",
+        "timestamp": 1590176075
+    },
+    {
+        "content": "<p>the inclusion from affines to all schemes has a left adjoint</p>",
+        "id": 198485364,
+        "sender_full_name": "Chloe",
+        "timestamp": 1590176094
+    },
+    {
+        "content": "<p>I think the adjunction approach is good.</p>",
+        "id": 198485370,
+        "sender_full_name": "John Baez",
+        "timestamp": 1590176099
+    },
+    {
+        "content": "<p>which is exactly \"take spec of the global functions\"</p>",
+        "id": 198485384,
+        "sender_full_name": "Chloe",
+        "timestamp": 1590176109
+    },
+    {
+        "content": "<p>so there is a canonical map from a scheme X to its \"affinization\"; it's either the unit or the co-unit of this adjunction (i can never get that straight without a bit of effort...)</p>",
+        "id": 198485456,
+        "sender_full_name": "Chloe",
+        "timestamp": 1590176158
+    },
+    {
+        "content": "<p>Affinization sounds a bit like abelianization, which is a left adjoint.</p>",
+        "id": 198485515,
+        "sender_full_name": "John Baez",
+        "timestamp": 1590176179
+    },
+    {
+        "content": "<p>affinization is the left adjoint yes</p>",
+        "id": 198485529,
+        "sender_full_name": "Chloe",
+        "timestamp": 1590176192
+    },
+    {
+        "content": "<p>Any group has a canonical map to the underlying group of its abelianization, and this is a unit id =&gt; RL.</p>",
+        "id": 198485578,
+        "sender_full_name": "John Baez",
+        "timestamp": 1590176223
+    },
+    {
+        "content": "<p>ahh yes it's the unit</p>",
+        "id": 198485599,
+        "sender_full_name": "Chloe",
+        "timestamp": 1590176241
+    },
+    {
+        "content": "<p>Yes, so then you can just ask if this is an isomorphism, and that's a <em>property</em>.</p>",
+        "id": 198485626,
+        "sender_full_name": "John Baez",
+        "timestamp": 1590176259
+    },
+    {
+        "content": "<p>yup</p>",
+        "id": 198485634,
+        "sender_full_name": "Chloe",
+        "timestamp": 1590176264
+    },
+    {
+        "content": "<p>It sounds like you're dealing with a \"reflective subcategory\" here.</p>",
+        "id": 198485705,
+        "sender_full_name": "John Baez",
+        "timestamp": 1590176294
+    },
+    {
+        "content": "<p>so maybe if i was categorically woke enough that would satisfy me</p>",
+        "id": 198485713,
+        "sender_full_name": "Chloe",
+        "timestamp": 1590176299
+    },
+    {
+        "content": "<p>but i would really like to understand this more <em>geometrically</em></p>",
+        "id": 198485724,
+        "sender_full_name": "Chloe",
+        "timestamp": 1590176312
+    },
+    {
+        "content": "<p>I think you should be happy if affine schemes are a reflective subcategory of schemes.</p>",
+        "id": 198485770,
+        "sender_full_name": "John Baez",
+        "timestamp": 1590176349
+    },
+    {
+        "content": "<p>they are, and I am</p>",
+        "id": 198485804,
+        "sender_full_name": "Chloe",
+        "timestamp": 1590176373
+    },
+    {
+        "content": "<p>well, to an extent</p>",
+        "id": 198485814,
+        "sender_full_name": "Chloe",
+        "timestamp": 1590176379
+    },
+    {
+        "content": "<p>This means that if you take an affine scheme, and look at its underlying scheme, and then affinize that, you get back to where you started up to an isomorphism - the <em>counit</em> of the adjunctions.</p>",
+        "id": 198485847,
+        "sender_full_name": "John Baez",
+        "timestamp": 1590176392
+    },
+    {
+        "content": "<p>And this implies that affine schemes are a full subcategory of schemes (which you probably knew already), or more philosophically that being an affine scheme is a mere <em>property</em> of schemes.</p>",
+        "id": 198485984,
+        "sender_full_name": "John Baez",
+        "timestamp": 1590176442
+    },
+    {
+        "content": "<p>Whenever you have a reflective subcategory you've got a subcategory of \"nice\" gadgets which are just gadgets with an extra <em>property</em>, and a way of \"nicefying\" any gadget.</p>",
+        "id": 198486058,
+        "sender_full_name": "John Baez",
+        "timestamp": 1590176481
+    },
+    {
+        "content": "<p>yup</p>",
+        "id": 198486105,
+        "sender_full_name": "Chloe",
+        "timestamp": 1590176510
+    },
+    {
+        "content": "<p>the example i usually jump to is sheafification</p>",
+        "id": 198486117,
+        "sender_full_name": "Chloe",
+        "timestamp": 1590176518
+    },
+    {
+        "content": "<p>anyways i would like to explain why i don't find this satisfying... tho I'm not sure I can quite get at it</p>",
+        "id": 198486276,
+        "sender_full_name": "Chloe",
+        "timestamp": 1590176600
+    },
+    {
+        "content": "<p>maybe what i really want is to have a better understand of what the affinization functor is actually <em>doing</em> in general</p>",
+        "id": 198486662,
+        "sender_full_name": "Chloe",
+        "timestamp": 1590176783
+    },
+    {
+        "content": "<p>That sounds good.  I'd like to understand that too!  I was having a lot of fun at one point thinking about the process that takes a variety with a line bundle over it, and creates the vector space of sections of that bundle, and the map from original variety to the projectivization of the dual of that vector space.</p>",
+        "id": 198486922,
+        "sender_full_name": "John Baez",
+        "timestamp": 1590176929
+    },
+    {
+        "content": "<p>so one way that u:X-&gt;Aff(X) can fail to be an isomorphism is if X doesn't have enough functions on it</p>",
+        "id": 198487333,
+        "sender_full_name": "Chloe",
+        "timestamp": 1590177123
+    },
+    {
+        "content": "<p>\"the coordinate ring doesn't separate points\"</p>",
+        "id": 198487359,
+        "sender_full_name": "Chloe",
+        "timestamp": 1590177142
+    },
+    {
+        "content": "<p>an extreme example would be if you take projective space, which has <em>no</em> non-constant global functions</p>",
+        "id": 198487417,
+        "sender_full_name": "Chloe",
+        "timestamp": 1590177180
+    },
+    {
+        "content": "<p>so it's affinization is a point</p>",
+        "id": 198487436,
+        "sender_full_name": "Chloe",
+        "timestamp": 1590177188
+    },
+    {
+        "content": "<p>Right.  Is there another way?</p>",
+        "id": 198487458,
+        "sender_full_name": "John Baez",
+        "timestamp": 1590177202
+    },
+    {
+        "content": "<p>there is</p>",
+        "id": 198487482,
+        "sender_full_name": "Chloe",
+        "timestamp": 1590177221
+    },
+    {
+        "content": "<p>if you take A^2-{0}, with a point removed</p>",
+        "id": 198487567,
+        "sender_full_name": "Chloe",
+        "timestamp": 1590177257
+    },
+    {
+        "content": "<p>that's not affine</p>",
+        "id": 198487584,
+        "sender_full_name": "Chloe",
+        "timestamp": 1590177266
+    },
+    {
+        "content": "<p>it's affinization is the full plane, and the unit is the inclusion</p>",
+        "id": 198487615,
+        "sender_full_name": "Chloe",
+        "timestamp": 1590177283
+    },
+    {
+        "content": "<p>the reason is something to do with Hartog's theorem: any regular function on the punctured plane can be extended over the puncture, because it's codimension 2</p>",
+        "id": 198487746,
+        "sender_full_name": "Chloe",
+        "timestamp": 1590177356
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"302254\">Chloe</span> <a href=\"#narrow/stream/231112-theory.3A-algebraic.20geometry/topic/affineness/near/198487567\">said</a>:</p>\n<blockquote>\n<p>if you take A^2-{0}, with a point removed</p>\n</blockquote>\n<p>sorry I forgot a word here, I meant \"a plane with a point removed\"</p>",
+        "id": 198487875,
+        "sender_full_name": "Chloe",
+        "timestamp": 1590177400
+    },
+    {
+        "content": "<p>I read what you meant, not what you wrote!</p>",
+        "id": 198488623,
+        "sender_full_name": "John Baez",
+        "timestamp": 1590177768
+    },
+    {
+        "content": "<p>You can edit stuff here if you want to appear perfect in retrospect.</p>",
+        "id": 198488652,
+        "sender_full_name": "John Baez",
+        "timestamp": 1590177786
+    },
+    {
+        "content": "<p>ahh, that's good to know</p>",
+        "id": 198488668,
+        "sender_full_name": "Chloe",
+        "timestamp": 1590177805
+    },
+    {
+        "content": "<p>Okay, so the map can fail to be one-to-one, or fail to be onto.  Makes sense.</p>",
+        "id": 198488677,
+        "sender_full_name": "John Baez",
+        "timestamp": 1590177812
+    },
+    {
+        "content": "<p>yup</p>",
+        "id": 198488686,
+        "sender_full_name": "Chloe",
+        "timestamp": 1590177816
+    },
+    {
+        "content": "<p>There should be some nice name for when it just fails to be onto - when your scheme is a \"chunk\" of an affine scheme</p>",
+        "id": 198488751,
+        "sender_full_name": "John Baez",
+        "timestamp": 1590177846
+    },
+    {
+        "content": "<p>the failures of one-to-one-ness are kinda intuitive for me, cuz ive dealt with the phrase \"separates points\" in enough different contexts...</p>",
+        "id": 198488806,
+        "sender_full_name": "Chloe",
+        "timestamp": 1590177894
+    },
+    {
+        "content": "<p>the failures of surjectivity seem pretty mysterious to me tho</p>",
+        "id": 198488834,
+        "sender_full_name": "Chloe",
+        "timestamp": 1590177914
+    },
+    {
+        "content": "<p>I'm not sure if there is a good name for that</p>",
+        "id": 198488849,
+        "sender_full_name": "Chloe",
+        "timestamp": 1590177931
+    },
+    {
+        "content": "<p>\"quasi-affine\" is close, it means \"an open subset of something affine\"</p>",
+        "id": 198488891,
+        "sender_full_name": "Chloe",
+        "timestamp": 1590177959
+    },
+    {
+        "content": "<p>but something can be quasi-affine while being affine itself...</p>",
+        "id": 198488962,
+        "sender_full_name": "Chloe",
+        "timestamp": 1590177988
+    },
+    {
+        "content": "<p>I was thinking of \"quasi\", but I only knew \"quasiprojective\".</p>",
+        "id": 198488967,
+        "sender_full_name": "John Baez",
+        "timestamp": 1590177993
+    },
+    {
+        "content": "<p>Okay, we don't need words for <em>bad</em> properties, like \"quasi-affine but not affine\".</p>",
+        "id": 198489000,
+        "sender_full_name": "John Baez",
+        "timestamp": 1590178014
+    },
+    {
+        "content": "<p>okay sure</p>",
+        "id": 198489734,
+        "sender_full_name": "Chloe",
+        "timestamp": 1590178452
+    },
+    {
+        "content": "<p>So is the map from a quasiaffine scheme to its affinization always injective, or whatever is the right concept like that in algebraic geometry?   (Monic in some category, I guess.)</p>",
+        "id": 198490158,
+        "sender_full_name": "John Baez",
+        "timestamp": 1590178608
+    },
+    {
+        "content": "<p>yes, it should be</p>",
+        "id": 198490330,
+        "sender_full_name": "Chloe",
+        "timestamp": 1590178732
+    },
+    {
+        "content": "<p>you will always get enough functions to separate points, because you can restrict things from the bigger space...</p>",
+        "id": 198490358,
+        "sender_full_name": "Chloe",
+        "timestamp": 1590178751
+    },
+    {
+        "content": "<p>Right!</p>",
+        "id": 198490373,
+        "sender_full_name": "John Baez",
+        "timestamp": 1590178761
+    },
+    {
+        "content": "<p>So is a scheme quasiaffine iff the map to its affinization is monic?</p>",
+        "id": 198490412,
+        "sender_full_name": "John Baez",
+        "timestamp": 1590178789
+    },
+    {
+        "content": "<p>That would be nice.   If it's not true, maybe there's some other concept than \"quasiaffine\" which is good to think about.</p>",
+        "id": 198490496,
+        "sender_full_name": "John Baez",
+        "timestamp": 1590178816
+    },
+    {
+        "content": "<p>hmm</p>",
+        "id": 198490512,
+        "sender_full_name": "Chloe",
+        "timestamp": 1590178828
+    },
+    {
+        "content": "<p>I don't think that's true</p>",
+        "id": 198490521,
+        "sender_full_name": "Chloe",
+        "timestamp": 1590178832
+    },
+    {
+        "content": "<p>Which side of the \"iff\" fails - or both?</p>",
+        "id": 198490550,
+        "sender_full_name": "John Baez",
+        "timestamp": 1590178847
+    },
+    {
+        "content": "<p>Well, you said that one side doesn't fail, so it must be the other.</p>",
+        "id": 198490581,
+        "sender_full_name": "John Baez",
+        "timestamp": 1590178869
+    },
+    {
+        "content": "<p>I think any scheme that can be \"embedded\" inside an affine will have that be monic</p>",
+        "id": 198490585,
+        "sender_full_name": "Chloe",
+        "timestamp": 1590178873
+    },
+    {
+        "content": "<p>Oh, so quasiaffines are just <em>open</em> in affines.</p>",
+        "id": 198490614,
+        "sender_full_name": "John Baez",
+        "timestamp": 1590178901
+    },
+    {
+        "content": "<p>you have to be careful what you mean by \"embedded\", but open embeddings are certainly too restrictive</p>",
+        "id": 198490617,
+        "sender_full_name": "Chloe",
+        "timestamp": 1590178902
+    },
+    {
+        "content": "<p>yah</p>",
+        "id": 198490622,
+        "sender_full_name": "Chloe",
+        "timestamp": 1590178905
+    },
+    {
+        "content": "<p>closed subschemes are fine too</p>",
+        "id": 198490630,
+        "sender_full_name": "Chloe",
+        "timestamp": 1590178911
+    },
+    {
+        "content": "<p>or locally closed...</p>",
+        "id": 198490647,
+        "sender_full_name": "Chloe",
+        "timestamp": 1590178922
+    },
+    {
+        "content": "<p>but also more exotic things</p>",
+        "id": 198490692,
+        "sender_full_name": "Chloe",
+        "timestamp": 1590178926
+    },
+    {
+        "content": "<p>You missed a pun opportunity, 'affineness' could have been 'affinity'.</p>",
+        "id": 198490699,
+        "sender_full_name": "Oscar Cunningham",
+        "timestamp": 1590178936
+    },
+    {
+        "content": "<p>like \"the germ of a point\" (aka spec of one of the local rings)</p>",
+        "id": 198490704,
+        "sender_full_name": "Chloe",
+        "timestamp": 1590178941
+    },
+    {
+        "content": "<p>I never learned enough about stuff like \"embeddings\" in algebraic geometry - much less more exotic things.</p>",
+        "id": 198490711,
+        "sender_full_name": "John Baez",
+        "timestamp": 1590178947
+    },
+    {
+        "content": "<p>or \"the formal nhbd of a point\" (something like spec of the completion of a local ring; think power series)</p>",
+        "id": 198490748,
+        "sender_full_name": "Chloe",
+        "timestamp": 1590178972
+    },
+    {
+        "content": "<p>But okay, sure, I know about things like \"the nth infinitesimal neighborhood of a point\"</p>",
+        "id": 198490752,
+        "sender_full_name": "John Baez",
+        "timestamp": 1590178976
+    },
+    {
+        "content": "<p>Okay, \"formal neighborhood\".</p>",
+        "id": 198490783,
+        "sender_full_name": "John Baez",
+        "timestamp": 1590178993
+    },
+    {
+        "content": "<p>actually I would guess that just having a map into something affine which is monic will be enough</p>",
+        "id": 198490836,
+        "sender_full_name": "Chloe",
+        "timestamp": 1590179028
+    },
+    {
+        "content": "<p>yup that will be enough</p>",
+        "id": 198491457,
+        "sender_full_name": "Chloe",
+        "timestamp": 1590179403
+    },
+    {
+        "content": "<p>hmm this is a bit slippery</p>",
+        "id": 198491589,
+        "sender_full_name": "Chloe",
+        "timestamp": 1590179481
+    },
+    {
+        "content": "<p>the statement i am claiming is that if X admits a monomorphism into <em>any</em> affine scheme, then in fact the affizination map is monic</p>",
+        "id": 198491621,
+        "sender_full_name": "Chloe",
+        "timestamp": 1590179515
+    },
+    {
+        "content": "<p>ahh and when i write it that way it's obvious: a map from X into some affine scheme <em>factors through</em> the affinization, so if that's not monic none of them can be</p>",
+        "id": 198491720,
+        "sender_full_name": "Chloe",
+        "timestamp": 1590179564
+    },
+    {
+        "content": "<p>okay im coming back to this</p>",
+        "id": 198499742,
+        "sender_full_name": "Chloe",
+        "timestamp": 1590184820
+    },
+    {
+        "content": "<p>i think that this situation looks a lot like... convexity</p>",
+        "id": 198499771,
+        "sender_full_name": "Chloe",
+        "timestamp": 1590184844
+    },
+    {
+        "content": "<p>if I have a non-convex subset of R^n or something, and an affine function on it, I can extend that uniquely to the convex hull</p>",
+        "id": 198499875,
+        "sender_full_name": "Chloe",
+        "timestamp": 1590184911
+    },
+    {
+        "content": "<p>well, uniquely in a way that retains convexity</p>",
+        "id": 198499943,
+        "sender_full_name": "Chloe",
+        "timestamp": 1590184928
+    },
+    {
+        "content": "<p>this is... kinda similar if you squint??</p>",
+        "id": 198499976,
+        "sender_full_name": "Chloe",
+        "timestamp": 1590184947
+    },
+    {
+        "content": "<p>if I have a polynomial defined on A^2-{0}, I can extend it uniquely to a polynomial on A^2</p>",
+        "id": 198499997,
+        "sender_full_name": "Chloe",
+        "timestamp": 1590184973
+    },
+    {
+        "content": "<p>(by \"polynomial\" I should mean \"regular function\")</p>",
+        "id": 198500024,
+        "sender_full_name": "Chloe",
+        "timestamp": 1590184997
+    },
+    {
+        "content": "<p>in situations where the unit map from X to its affinization is injective, what it's doing is basically adding in every point where the value of a function is constrained by the values on X</p>",
+        "id": 198500155,
+        "sender_full_name": "Chloe",
+        "timestamp": 1590185093
+    },
+    {
+        "content": "<p>That sounds nice to think about.</p>",
+        "id": 198500331,
+        "sender_full_name": "John Baez",
+        "timestamp": 1590185230
+    },
+    {
+        "content": "<p>it's kind of strange tho</p>",
+        "id": 198500766,
+        "sender_full_name": "Chloe",
+        "timestamp": 1590185545
+    },
+    {
+        "content": "<p>like...</p>",
+        "id": 198500775,
+        "sender_full_name": "Chloe",
+        "timestamp": 1590185551
+    },
+    {
+        "content": "<p>I can replace R^n with an \"abstract convex space\" which is some kind of finitary algebraic theory...</p>",
+        "id": 198500822,
+        "sender_full_name": "Chloe",
+        "timestamp": 1590185581
+    },
+    {
+        "content": "<p>and then the \"convexity\" is a structure of the object that I'm talking about...</p>",
+        "id": 198500883,
+        "sender_full_name": "Chloe",
+        "timestamp": 1590185619
+    },
+    {
+        "content": "<p>and \"take the convex hull\" is something like forming something by generators and relations....</p>",
+        "id": 198500979,
+        "sender_full_name": "Chloe",
+        "timestamp": 1590185656
+    },
+    {
+        "content": "<p>now what the heck, if anything, does any of this analogize to in the schemes situation...</p>",
+        "id": 198501016,
+        "sender_full_name": "Chloe",
+        "timestamp": 1590185694
+    },
+    {
+        "content": "<p>also, can you think of any other examples that look like this?</p>",
+        "id": 198501037,
+        "sender_full_name": "Chloe",
+        "timestamp": 1590185710
+    },
+    {
+        "content": "<p>i guess any sort of algebraic object works if i am talking about homomorphisms</p>",
+        "id": 198501083,
+        "sender_full_name": "Chloe",
+        "timestamp": 1590185760
+    },
+    {
+        "content": "<p>but convex sets are weird because they also \"feel geometric\"...</p>",
+        "id": 198501144,
+        "sender_full_name": "Chloe",
+        "timestamp": 1590185775
+    },
+    {
+        "content": "<p>whereas schemes seem to only live on the geometric side</p>",
+        "id": 198501171,
+        "sender_full_name": "Chloe",
+        "timestamp": 1590185803
+    },
+    {
+        "content": "<p>Is the \"affinization\" of a scheme also something you can describe using generators and relations?</p>",
+        "id": 198501225,
+        "sender_full_name": "John Baez",
+        "timestamp": 1590185855
+    },
+    {
+        "content": "<p>In some nice way?</p>",
+        "id": 198501233,
+        "sender_full_name": "John Baez",
+        "timestamp": 1590185864
+    },
+    {
+        "content": "<p>I have no idea</p>",
+        "id": 198501477,
+        "sender_full_name": "Chloe",
+        "timestamp": 1590186012
+    },
+    {
+        "content": "<p>that seems like an extremely weird move to even try...</p>",
+        "id": 198501486,
+        "sender_full_name": "Chloe",
+        "timestamp": 1590186023
+    },
+    {
+        "content": "<p>algebra is supposed to be <em>dual</em> to geometry...</p>",
+        "id": 198501512,
+        "sender_full_name": "Chloe",
+        "timestamp": 1590186042
+    },
+    {
+        "content": "<p>but hmmm</p>",
+        "id": 198501535,
+        "sender_full_name": "Chloe",
+        "timestamp": 1590186063
+    },
+    {
+        "content": "<p>im not sure what the \"generators\" could be, but the \"relations\" had better come from functions on my original scheme...</p>",
+        "id": 198501578,
+        "sender_full_name": "Chloe",
+        "timestamp": 1590186100
+    },
+    {
+        "content": "<p>hi chloe. exercise 2.17 on page 81 of hartshorne is, to my interpretation: a scheme is affine iff it permits a finite partition of unity with each bump function supported on an open affine subset</p>",
+        "id": 198552426,
+        "sender_full_name": "Sarah Griffith-Siqueira",
+        "timestamp": 1590268594
+    },
+    {
+        "content": "<p>to some extent this pushes the problem back because if we're trying to understand what makes something affine geometrically, it may not appear promising to say well such and such open subsets are affine. but what it suggests to me is that affineness is defined by ease of patching local information together</p>",
+        "id": 198552640,
+        "sender_full_name": "Sarah Griffith-Siqueira",
+        "timestamp": 1590269037
+    },
+    {
+        "content": "<p>this sits well with my intuition about vanishing of cohomology (to the extent I have any) and also seems reasonable in relation to contractibility. In a topological context the minimal thing you need to have interesting global obstructions is a failure of contractability. in a scheme context the minimal thing you need to have interesting global obstructions is a failure of a good partition of unity, ie a failure of affineness</p>",
+        "id": 198552831,
+        "sender_full_name": "Sarah Griffith-Siqueira",
+        "timestamp": 1590269303
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"302397\">Sarah Griffith-Siqueira</span> <a href=\"#narrow/stream/231112-theory.3A-algebraic.20geometry/topic/affineness/near/198552426\">said</a>:</p>\n<blockquote>\n<p>hi chloe. exercise 2.17 on page 81 of hartshorne is, to my interpretation: a scheme is affine iff it permits a finite partition of unity with each bump function supported on an open affine subset</p>\n</blockquote>\n<p>I'll have to look at that.  \"Partition of unity\" is a phrase I associate with smooth manifolds.  Is this exercise special to the case of schemes that are complex manifolds, or is \"partition of unity\" being defined in some more general algebraic way.</p>\n<p>I'm afraid my copy of Hartshorne is not at home...</p>\n<p>... oh, never mind, I found it.  This is not what I'd call a partition of unity, but you could say it's some kind of algebraic generalization of that.  Interesting!</p>",
+        "id": 198553304,
+        "sender_full_name": "John Baez",
+        "timestamp": 1590270109
+    },
+    {
+        "content": "<p>this construction comes up when you prove that an affine scheme is always compact, and almost never afterwards, so in introductory sources you almost always have some aside like \"(this is really a 'partition of unity' argument)\"</p>",
+        "id": 198553506,
+        "sender_full_name": "Sarah Griffith-Siqueira",
+        "timestamp": 1590270448
+    },
+    {
+        "content": "<p>but nobody makes a definition out of it</p>",
+        "id": 198553514,
+        "sender_full_name": "Sarah Griffith-Siqueira",
+        "timestamp": 1590270480
+    },
+    {
+        "content": "<p>i think that's a pretty appealing picture</p>",
+        "id": 198562106,
+        "sender_full_name": "Chloe",
+        "timestamp": 1590287449
+    },
+    {
+        "content": "<p>i have more to say about it but i have to think a bit to formulate it better</p>",
+        "id": 198562117,
+        "sender_full_name": "Chloe",
+        "timestamp": 1590287509
+    },
+    {
+        "content": "<p>Affinization maps for general schemes are not often considered in algebraic geometry because the affinization can be complicated. In particular, if <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>X</mi></mrow><annotation encoding=\"application/x-tex\">X</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathdefault\" style=\"margin-right:0.07847em;\">X</span></span></span></span> is of finite type over a ring <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>R</mi></mrow><annotation encoding=\"application/x-tex\">R</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathdefault\" style=\"margin-right:0.00773em;\">R</span></span></span></span> (even a field) then by construction the affinization has a morphism to <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>S</mi><mi>p</mi><mi>e</mi><mi>c</mi><mo stretchy=\"false\">(</mo><mi>R</mi><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">Spec(R)</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord mathdefault\" style=\"margin-right:0.05764em;\">S</span><span class=\"mord mathdefault\">p</span><span class=\"mord mathdefault\">e</span><span class=\"mord mathdefault\">c</span><span class=\"mopen\">(</span><span class=\"mord mathdefault\" style=\"margin-right:0.00773em;\">R</span><span class=\"mclose\">)</span></span></span></span> which is in general not of finite type. There are however important cases where it stays of finite type, like algebraic groups and certain homogeneous spaces. See for instance <a href=\"https://arxiv.org/abs/1509.03059\">https://arxiv.org/abs/1509.03059</a> section 3.2 for a discussion of the case of algebraic groups and a counter example to finite typeness of affinization.</p>",
+        "id": 198572792,
+        "sender_full_name": "Simon Pepin Lehalleur",
+        "timestamp": 1590308589
+    },
+    {
+        "content": "<p>I have an algebraic intuition to offer, about affineness and affinization.</p>\n<p>The construction of an affine scheme out of a ring is actually the solution to an algebraic problem: Given a ring R, is there an initial local ring L that R maps to? (categorically: are local rings a reflective subcategory of rings?) The answer is no: Suppose e.g. that there was such an initial local ring L for the integers Z. From Z we can map to the local ring Z_(2). In Z_(2) the element 2 is not invertible, so 2 can not be invertible in L in order to have a factorization Z--&gt;L--&gt;Z_(2). The same argument applies to all other primes, so actually we can't invert anything in the passage Z--&gt;L. But without inverting something it's impossible to get a local ring.</p>\n<p>However, there is a _set_ of jointly initial local rings: Any map from Z to a local ring factors through one of the Z_(p). We can use this to solve a relaxed version of our algebraic problem.<br>\n[I don't know if you know  that a sheaf on a topological space can equivalently be defined as a local homeomorphism to the space. In this picture the stalks of the sheaf are the fibers of that local homemorphism. Anyway, that is true, and good mental image for the following story, but not necessary to read it.]</p>\n<p>We can see our given ring as a sheaf of rings on the one point space. Now there _is_ an initial local ring under R, if we allow it to live over a different space than the one point space - that space is Spec(R) and the initial \"local ring\" is the usual structure sheaf on Spec(R): The stalks are local rings (which makes the structure sheaf a local ring from the internal point of view in the category of sheaves). <br>\nIntuitively you give the ring R just enough space to spread out into a collection of local rings, such that these form an initial family -- you have exactly one initial localization for each prime ideal. Looking at maps of ringed spaces in the opposite - i.e. the algebraic - direction, we have a map ({point},R)--&gt;(Spec(R),O_Spec(R)). And you can check that this map is the initial map from R to a local ring, if we see a local ring S as a ringed space ({point},S)<br>\n(it is also the initial map to a local ring in the now generalized sense of local rings \"living over spaces\", and even in the sense of locally ringed toposes)</p>\n<p>So let's see a scheme as a local homemorphism whose fibers are local rings.<br>\nThen \"affine\" means: \"arises as the initial collection of local rings from some ring\". <br>\nAnd affinization is sort of a reversal of our above problem: Above we were given R and asking for the best R--&gt;L, i.e. the closest L to the right of R. Now we are given L and asking for the closest R left of it. More explicitly: Given a collection of local rings, namely the stalks of the structure sheaf of your scheme, find the ring (living over the one point space) that is closest to giving rise to all these local rings by localizations. How do you do this? Well, you take the limit of the diagram consisting of all the stalks and all the partial localizations sitting under them. I.e. you take the limit of the diagram consisting of the values of the structure sheaf on all the opens. But that limit is exactly the ring of global sections, by the sheaf condition. So this is affinization.</p>",
+        "id": 198582480,
+        "sender_full_name": "Peter Arndt",
+        "timestamp": 1590325433
+    }
+]

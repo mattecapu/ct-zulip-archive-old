@@ -1,0 +1,116 @@
+[
+    {
+        "content": "<p>Thanks both!<br>\n<span class=\"user-mention silent\" data-user-id=\"278008\">Spencer Breiner</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/Spatial.20categorical.20logic/near/252617579\">said</a>:</p>\n<blockquote>\n<p>Some theories don't have any classical models. There is an example in this <a href=\"https://mathoverflow.net/questions/98729/topos-without-point-from-the-point-of-view-of-logic\">mathoverflow post</a>.</p>\n</blockquote>\n<p>Alright, so for geometric theories it doesn't work. What's so special about coherent theories that makes it work that a theory can be recovered from its models in <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"bold\">S</mi><mi mathvariant=\"bold\">e</mi><mi mathvariant=\"bold\">t</mi></mrow><annotation encoding=\"application/x-tex\">\\mathbf{Set}</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.68611em;vertical-align:0em;\"></span><span class=\"mord\"><span class=\"mord mathbf\">Set</span></span></span></span></span>?</p>\n<blockquote>\n<p>For a more geometric presentation of toposes, you can use topological groupoids a la <a href=\"https://core.ac.uk/download/pdf/39699384.pdf\">Butz &amp; Moerdijk</a>.</p>\n</blockquote>\n<p>Nice result. But that's only for toposes with enough points, right? Also, it seems like they don't discuss whether the canonical morphisms between topological groupoids correspond to the geometric morphisms between the corresponding sheaf toposes.</p>",
+        "id": 252917368,
+        "sender_full_name": "Leopold Schlicht",
+        "timestamp": 1631374919
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"408864\">Leopold Schlicht</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/Spatial.20categorical.20logic/near/252917368\">said</a>:</p>\n<blockquote>\n<p>Thanks both!<br>\n<span class=\"user-mention silent\" data-user-id=\"278008\">Spencer Breiner</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/Spatial.20categorical.20logic/near/252617579\">said</a>:</p>\n<blockquote>\n<p>Some theories don't have any classical models. There is an example in this <a href=\"https://mathoverflow.net/questions/98729/topos-without-point-from-the-point-of-view-of-logic\">mathoverflow post</a>.</p>\n</blockquote>\n<p>Alright, so for geometric theories it doesn't work. What's so special about coherent theories that makes it work that a theory can be recovered from its models in <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"bold\">S</mi><mi mathvariant=\"bold\">e</mi><mi mathvariant=\"bold\">t</mi></mrow><annotation encoding=\"application/x-tex\">\\mathbf{Set}</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.68611em;vertical-align:0em;\"></span><span class=\"mord\"><span class=\"mord mathbf\">Set</span></span></span></span></span>?</p>\n</blockquote>\n<p>You've been discussing the completeness theorem for coherent toposes in another thread; it says exactly that there are <em>enough</em> Set-models of any coherent theory (to entirely determine the theory). Hence Spencer's reference is apt: you can only expect to be able to recover a theory from its set-models when there are enough of these.</p>",
+        "id": 252918749,
+        "sender_full_name": "Morgan Rogers (he/him)",
+        "timestamp": 1631376347
+    },
+    {
+        "content": "<p>Oh, by \"coherent theory\" I meant \"pretopos\". <span aria-label=\"grinning face with smiling eyes\" class=\"emoji emoji-1f601\" role=\"img\" title=\"grinning face with smiling eyes\">:grinning_face_with_smiling_eyes:</span></p>",
+        "id": 252921763,
+        "sender_full_name": "Leopold Schlicht",
+        "timestamp": 1631379339
+    },
+    {
+        "content": "<p>This paper is probably relevant to your question:</p>\n<p><a href=\"http://(https://arxiv.org/abs/1008.3145)\">First-Order Logical Duality</a><br>\nSteve Awodey, Henrik Forssell<br>\narXiv:1008.3145</p>\n<p>For a coherent theory, one can cover the classifying topos by a <em>space of models</em> (essentially the Butz-Moerdijk cover) - with a small set of points - by taking a suitable cardinal bound determined by the language.   Adding a groupoid structure determined by isos of models, one then recovers the classifying topos as the equivariant sheaves on the groupoid of models.  The syntax is recovered from the classifying topos (up to exact completion) by taking the coherent objects.</p>",
+        "id": 252923473,
+        "sender_full_name": "Steve Awodey",
+        "timestamp": 1631381111
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"408864\">Leopold Schlicht</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/Spatial.20categorical.20logic/near/252921763\">said</a>:</p>\n<blockquote>\n<p>Oh, by \"coherent theory\" I meant \"pretopos\". <span aria-label=\"grinning face with smiling eyes\" class=\"emoji emoji-1f601\" role=\"img\" title=\"grinning face with smiling eyes\">:grinning_face_with_smiling_eyes:</span></p>\n</blockquote>\n<p>It makes no difference, the functors corresponding to the models will still be jointly conservative.</p>",
+        "id": 252926921,
+        "sender_full_name": "Morgan Rogers (he/him)",
+        "timestamp": 1631384990
+    },
+    {
+        "content": "<p><span class=\"user-mention\" data-user-id=\"276770\">@Steve Awodey</span> That's very interesting, thanks!</p>\n<p>Is there some way of avoiding, in Theorem 2.5.3, the restriction to coherent categories <em>with enough <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>κ</mi></mrow><annotation encoding=\"application/x-tex\">\\kappa</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.43056em;vertical-align:0em;\"></span><span class=\"mord mathnormal\">κ</span></span></span></span>-small models</em>? Is it possible to come up with a concept like Makkai's ultracategories in this setting (instead of small topological groupoids) in which <em>all</em> models (of an arbitrary coherent category) are stored? That would make the analogy with Makkai duality even stronger.</p>\n<p><span class=\"user-mention\" data-user-id=\"277473\">@Morgan Rogers (he/him)</span> I don't understand this. Why can a pretopos and a coherent topos be recovered from its models in Set, while a Grothendieck topos can't? Is there something like a \"Deligne's theorem for pretoposes\"?</p>",
+        "id": 252985480,
+        "sender_full_name": "Leopold Schlicht",
+        "timestamp": 1631452254
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"408864\">Leopold Schlicht</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/spatial.20categorical.20logic/near/252985480\">said</a>:</p>\n<blockquote>\n<p><span class=\"user-mention silent\" data-user-id=\"276770\">Steve Awodey</span> That's very interesting, thanks!</p>\n<p>Is there some way of avoiding, in Theorem 2.5.3, the restriction to coherent categories <em>with enough <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>κ</mi></mrow><annotation encoding=\"application/x-tex\">\\kappa</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.43056em;vertical-align:0em;\"></span><span class=\"mord mathnormal\">κ</span></span></span></span>-small models</em>? Is it possible to come up with a concept like Makkai's ultracategories in this setting (instead of small topological groupoids) in which <em>all</em> models (of an arbitrary coherent category) are stored? That would make the analogy with Makkai duality even stronger.</p>\n<p><span class=\"user-mention silent\" data-user-id=\"277473\">Morgan Rogers (he/him)</span> I don't understand this. Why can a pretopos and a coherent topos be recovered from its models in Set, while a Grothendieck topos can't? Is there something like a \"Deligne's theorem for pretoposes\"?</p>\n</blockquote>\n<p>sure, you could drop the cardinal bound and make large topological groupoids, just as Makkai does for ultragroupoids.</p>",
+        "id": 253030745,
+        "sender_full_name": "Steve Awodey",
+        "timestamp": 1631501752
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"408864\">Leopold Schlicht</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/spatial.20categorical.20logic/near/252985480\">said</a>:</p>\n<blockquote>\n<p><span class=\"user-mention silent\" data-user-id=\"277473\">Morgan Rogers (he/him)</span> I don't understand this. Why can a pretopos and a coherent topos be recovered from its models in Set, while a Grothendieck topos can't? Is there something like a \"Deligne's theorem for pretoposes\"?</p>\n</blockquote>\n<p>My response was under the assumption that when you corrected to \"pretopos\", you meant \"pretopos corresponding to (i.e. syntactic category of) a coherent theory\"; otherwise what I said is false.</p>\n<p>The reason that we need \"enough points\" for recoverability is that we need the corresponding functors to be jointly conservative = jointly faithful, so that no information is lost when considering the collection of all models.</p>",
+        "id": 253053973,
+        "sender_full_name": "Morgan Rogers (he/him)",
+        "timestamp": 1631521428
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"277473\">Morgan Rogers (he/him)</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/spatial.20categorical.20logic/near/253053973\">said</a>:</p>\n<blockquote>\n<p>My response was under the assumption that when you corrected to \"pretopos\", you meant \"pretopos corresponding to (i.e. syntactic category of) a coherent theory\"; otherwise what I said is false.</p>\n</blockquote>\n<p>I don't think this restriction is necessary, unless \"pretopos\" means infinitary pretopos. (Finitary) pretoposes have enough points, literally by Deligne's theorem.</p>",
+        "id": 253057974,
+        "sender_full_name": "Zhen Lin Low",
+        "timestamp": 1631523923
+    },
+    {
+        "content": "<p>I said this because the <a href=\"https://ncatlab.org/nlab/show/pretopos\">definition of pretopos</a> makes no restriction as to size etc, so all Grothendieck toposes are instances of pretoposes, and not all of them have enough points.</p>",
+        "id": 253061702,
+        "sender_full_name": "Morgan Rogers (he/him)",
+        "timestamp": 1631525997
+    },
+    {
+        "content": "<p>There's a linguistic ambiguity here which you are getting confused by. A pretopos has enough points if the class of coherent functors from it to Set is jointly conservative. A Grothendieck topos has enough points if the class of inverse-image-of-geometric-morphism functors from it to Set is jointly conservative. A Grothendieck topos may not have enough points as a Grothendieck topos but its underlying pretopos always has enough points.</p>",
+        "id": 253062123,
+        "sender_full_name": "Zhen Lin Low",
+        "timestamp": 1631526183
+    },
+    {
+        "content": "<p>Ah, I see; the pretopos points correspond (when the pretopos is suitably small and locally small) to the points of the topos obtained by equipping it with the coherent topology rather than the canonical topology. Thanks for the clarification!</p>",
+        "id": 253064123,
+        "sender_full_name": "Morgan Rogers (he/him)",
+        "timestamp": 1631527205
+    },
+    {
+        "content": "<p>Yes, there is a size issue I swept under the rug there. Small definitely suffices, I'm not sure if locally small is good enough. But if you believe in universes then there's always a big enough Set that works.</p>",
+        "id": 253067319,
+        "sender_full_name": "Zhen Lin Low",
+        "timestamp": 1631529102
+    },
+    {
+        "content": "<p>Thanks, your discussion cleared up some of the confusion I had!</p>\n<p><span class=\"user-mention silent\" data-user-id=\"416301\">Zhen Lin Low</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/spatial.20categorical.20logic/near/253057974\">said</a>:</p>\n<blockquote>\n<p>I don't think this restriction is necessary, unless \"pretopos\" means infinitary pretopos. (Finitary) pretoposes have enough points, literally by Deligne's theorem.</p>\n</blockquote>\n<p>What do you mean by \"literally\"? <em>Literally</em>, Deligne's theorem is about toposes and not pretoposes.</p>",
+        "id": 253085506,
+        "sender_full_name": "Leopold Schlicht",
+        "timestamp": 1631538272
+    },
+    {
+        "content": "<p>A finitary pretopos is a coherent site. Deligne's theorem says that the topos of sheaves on a coherent site has enough points.</p>",
+        "id": 253086213,
+        "sender_full_name": "Zhen Lin Low",
+        "timestamp": 1631538551
+    },
+    {
+        "content": "<p>And the points of that topos of sheaves correspond precisely to the points of the pretopos we started with?</p>",
+        "id": 253086823,
+        "sender_full_name": "Leopold Schlicht",
+        "timestamp": 1631538839
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"277473\">Morgan Rogers (he/him)</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/spatial.20categorical.20logic/near/253053973\">said</a>:</p>\n<blockquote>\n<p><span class=\"user-mention silent\" data-user-id=\"408864\">Leopold Schlicht</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/spatial.20categorical.20logic/near/252985480\">said</a>:</p>\n<blockquote>\n<p><span class=\"user-mention silent\" data-user-id=\"277473\">Morgan Rogers (he/him)</span> I don't understand this. Why can a pretopos and a coherent topos be recovered from its models in Set, while a Grothendieck topos can't? Is there something like a \"Deligne's theorem for pretoposes\"?</p>\n</blockquote>\n<p>My response was under the assumption that when you corrected to \"pretopos\", you meant \"pretopos corresponding to (i.e. syntactic category of) a coherent theory\"; otherwise what I said is false.</p>\n<p>The reason that we need \"enough points\" for recoverability is that we need the corresponding functors to be jointly conservative = jointly faithful, so that no information is lost when considering the collection of all models.</p>\n</blockquote>\n<p>Sorry, this is not quite right.  <br>\nAny small pretopos has enough coherent functors into Set by Deligne's theorem - it doesn't need to be \"syntactic\" or anything like that.  <br>\nFor large pretoposes we would need a small generating subcategory.</p>",
+        "id": 253097149,
+        "sender_full_name": "Steve Awodey",
+        "timestamp": 1631542696
+    },
+    {
+        "content": "<p>I think that's what <span class=\"user-mention silent\" data-user-id=\"416301\">Zhen Lin Low</span> pointed out <span aria-label=\"+1\" class=\"emoji emoji-1f44d\" role=\"img\" title=\"+1\">:+1:</span></p>",
+        "id": 253098585,
+        "sender_full_name": "Morgan Rogers (he/him)",
+        "timestamp": 1631543232
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"408864\">Leopold Schlicht</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/spatial.20categorical.20logic/near/252985480\">said</a>:</p>\n<blockquote>\n<p>Why can a pretopos and a coherent topos be recovered from its models in Set, while a Grothendieck topos can't?</p>\n</blockquote>\n<p>I just found out that this is discussed in D1.5 in the Elephant.</p>",
+        "id": 253142911,
+        "sender_full_name": "Leopold Schlicht",
+        "timestamp": 1631560084
+    }
+]

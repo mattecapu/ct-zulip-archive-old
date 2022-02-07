@@ -8,15 +8,15 @@ permalink: /index.html
 
 ## Streams:
 
-* [learning: questions](stream/229199-learning:-questions/index.html) (616 topics)
+* [learning: questions](stream/229199-learning:-questions/index.html) (611 topics)
 
-* [theory: category theory](stream/229136-theory:-category-theory/index.html) (236 topics)
+* [theory: category theory](stream/229136-theory:-category-theory/index.html) (233 topics)
 
 * [general](stream/229111-general/index.html) (220 topics)
 
 * [practice: applied ct](stream/229156-practice:-applied-ct/index.html) (127 topics)
 
-* [general: events](stream/229141-general:-events/index.html) (113 topics)
+* [general: events](stream/229141-general:-events/index.html) (111 topics)
 
 * [theory: topos theory](stream/230087-theory:-topos-theory/index.html) (69 topics)
 
@@ -24,13 +24,13 @@ permalink: /index.html
 
 * [ACT 2020](stream/243068-ACT-2020/index.html) (61 topics)
 
-* [theory: algebraic topology & homological algebra](stream/241590-theory:-algebraic-topology-&-homological-algebra/index.html) (49 topics)
+* [theory: algebraic topology & homological algebra](stream/241590-theory:-algebraic-topology-&-homological-algebra/index.html) (46 topics)
 
-* [general: mathematics](stream/266967-general:-mathematics/index.html) (46 topics)
-
-* [theory: logic](stream/233104-theory:-logic/index.html) (44 topics)
+* [general: mathematics](stream/266967-general:-mathematics/index.html) (45 topics)
 
 * [seminar: Topos Colloquium](stream/269484-seminar:-Topos-Colloquium/index.html) (43 topics)
+
+* [theory: logic](stream/233104-theory:-logic/index.html) (43 topics)
 
 * [MIT Categories Seminar](stream/229457-MIT-Categories-Seminar/index.html) (41 topics)
 
@@ -44,11 +44,11 @@ permalink: /index.html
 
 * [practice: our papers](stream/258900-practice:-our-papers/index.html) (33 topics)
 
-* [practice: thermodynamics](stream/306433-practice:-thermodynamics/index.html) (29 topics)
-
-* [learning: recommendations](stream/232161-learning:-recommendations/index.html) (24 topics)
+* [practice: thermodynamics](stream/306433-practice:-thermodynamics/index.html) (27 topics)
 
 * [general: values](stream/241990-general:-values/index.html) (23 topics)
+
+* [learning: recommendations](stream/232161-learning:-recommendations/index.html) (23 topics)
 
 * [workshop: Polynomial Functors @ Topos](stream/282140-workshop:-Polynomial-Functors-@-Topos/index.html) (22 topics)
 
@@ -150,4 +150,4 @@ permalink: /index.html
 
 * [theory: alternate presentations](stream/233122-theory:-alternate-presentations/index.html) (1 topic)
 
-<hr><p>Last updated: Feb 07 2022 at 21:54 UTC</p>
+<hr><p>Last updated: Jan 30 2022 at 00:30 UTC</p>

@@ -1,0 +1,17 @@
+---
+layout: archive
+title: Zulip Chat Archive
+permalink: /stream/295092-practice:-pedagogy/index.html
+---
+
+## Stream: [practice: pedagogy](https://mattecapu.github.io/ct-zulip-archive/stream/295092-practice:-pedagogy/index.html)
+---
+
+### Topics:
+
+* [Graphical homological algebra](topic/Graphical.20homological.20algebra.html) (3 messages, latest: Jan 28 2022 at 10:25)
+* [national education policy](topic/national.20education.20policy.html) (4 messages, latest: Nov 18 2021 at 16:26)
+* [Kan Academy](topic/Kan.20Academy.html) (3 messages, latest: Jul 20 2021 at 07:01)
+* [stream events](topic/stream.20events.html) (1 message, latest: Jul 19 2021 at 17:59)
+
+<hr><p>Last updated: Jan 30 2022 at 00:30 UTC</p>

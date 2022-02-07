@@ -1,0 +1,680 @@
+[
+    {
+        "content": "<p><span class=\"user-mention\" data-user-id=\"275920\">@John Baez</span> you might remember that a while back i was considering kan extensions along <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>ι</mi><mo>:</mo><mrow><mi mathvariant=\"normal\">F</mi><mi mathvariant=\"normal\">i</mi><mi mathvariant=\"normal\">n</mi><mi mathvariant=\"normal\">S</mi><mi mathvariant=\"normal\">e</mi><mi mathvariant=\"normal\">t</mi></mrow><mo>↪</mo><mrow><mi mathvariant=\"normal\">S</mi><mi mathvariant=\"normal\">e</mi><mi mathvariant=\"normal\">t</mi></mrow></mrow><annotation encoding=\"application/x-tex\">\\iota : \\mathrm{FinSet} \\hookrightarrow \\mathrm{Set}</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.43056em;vertical-align:0em;\"></span><span class=\"mord mathnormal\">ι</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">:</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.69433em;vertical-align:-0.011em;\"></span><span class=\"mord\"><span class=\"mord mathrm\">F</span><span class=\"mord mathrm\">i</span><span class=\"mord mathrm\">n</span><span class=\"mord mathrm\">S</span><span class=\"mord mathrm\">e</span><span class=\"mord mathrm\">t</span></span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">↪</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord\"><span class=\"mord mathrm\">S</span><span class=\"mord mathrm\">e</span><span class=\"mord mathrm\">t</span></span></span></span></span> of functors that pick out commutative monoids &amp; that you remarked on an apparent similarity to how one gets finitary monads out of Lawvere theories</p>",
+        "id": 214126730,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1603322258
+    },
+    {
+        "content": "<p>well, i finally got around to figuring out how those tie together</p>",
+        "id": 214126741,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1603322275
+    },
+    {
+        "content": "<p>in particular: if you have a lawvere theory <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>Q</mi></mrow><annotation encoding=\"application/x-tex\">Q</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8777699999999999em;vertical-align:-0.19444em;\"></span><span class=\"mord mathnormal\">Q</span></span></span></span>, and you put the cocartesian monoidal structure on the category of models <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>Q</mi><mrow><mi mathvariant=\"normal\">M</mi><mi mathvariant=\"normal\">o</mi><mi mathvariant=\"normal\">d</mi></mrow></mrow><annotation encoding=\"application/x-tex\">Q\\mathrm{Mod}</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8888799999999999em;vertical-align:-0.19444em;\"></span><span class=\"mord mathnormal\">Q</span><span class=\"mord\"><span class=\"mord mathrm\">M</span><span class=\"mord mathrm\">o</span><span class=\"mord mathrm\">d</span></span></span></span></span>, then there's a canonical commutative monoid structure for the free model on one generator <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>Q</mi><mo stretchy=\"false\">(</mo><mn>1</mn><mo separator=\"true\">,</mo><mo>−</mo><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">Q(1, -)</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord mathnormal\">Q</span><span class=\"mopen\">(</span><span class=\"mord\">1</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mord\">−</span><span class=\"mclose\">)</span></span></span></span> (since there's a canonical commutative monoid structure for <em>every</em> object when the monoidal product is +)</p>",
+        "id": 214126842,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1603322396
+    },
+    {
+        "content": "<p>then if you use <em>this</em> commutative monoid with the construction i was considering—you take the functor from FinSet that picks it out, and then you take the left Kan extension along the inclusion into Set—you get the free-model-of-Q functor Set → QMod</p>",
+        "id": 214127017,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1603322536
+    },
+    {
+        "content": "<p>Oh wow, I think this is a different connection than the one I was imagining, or trying to hint at.</p>",
+        "id": 214128128,
+        "sender_full_name": "John Baez",
+        "timestamp": 1603323596
+    },
+    {
+        "content": "<p>is it?</p>",
+        "id": 214128867,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1603324226
+    },
+    {
+        "content": "<p>the main thing that seemed common to <em>me</em> was doing some sort of left kan extension from FinSet to Set and/or the phenomenon of \"summing over fibers\" that seems to pop up as an action on morphisms</p>",
+        "id": 214128911,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1603324279
+    },
+    {
+        "content": "<p>I would need to read our original conversation to know what I was thinking, exactly.</p>",
+        "id": 214129091,
+        "sender_full_name": "John Baez",
+        "timestamp": 1603324441
+    },
+    {
+        "content": "<p>But I feel on the brink of making up something...</p>",
+        "id": 214129153,
+        "sender_full_name": "John Baez",
+        "timestamp": 1603324472
+    },
+    {
+        "content": "<p>here's the end of it, btw <a href=\"https://twitter.com/johncarlosbaez/status/1291476247290114051\">https://twitter.com/johncarlosbaez/status/1291476247290114051</a></p>\n<div class=\"inline-preview-twitter\"><div class=\"twitter-tweet\"><a href=\"https://twitter.com/johncarlosbaez/status/1291476247290114051\"><img class=\"twitter-avatar\" src=\"https://pbs.twimg.com/profile_images/1224941370885828608/Ktaz9JLB_normal.jpg\"></a><p><a href=\"https://twitter.com/sarah_zrf\">@sarah_zrf</a> You mean when your symmetric monoidal category is also cocomplete?   This reminds me a lot of how Lawvere theories induce monads on Set.... but it's different I think.\n\nDefinitely worth looking at!  I don't think I've seen it!</p><span>- John Carlos Baez (@johncarlosbaez)</span></div></div>",
+        "id": 214129496,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1603324718
+    },
+    {
+        "content": "<p>(and this is what you get, at least in the case of a commutative monoid in (Set, ×) <a href=\"https://twitter.com/sarah_zrf/status/1292140904862625792\">https://twitter.com/sarah_zrf/status/1292140904862625792</a>)</p>\n<div class=\"inline-preview-twitter\"><div class=\"twitter-tweet\"><a href=\"https://twitter.com/sarah_zrf/status/1292140904862625792\"><img class=\"twitter-avatar\" src=\"https://pbs.twimg.com/profile_images/1273496051916460037/zZveP8_p_normal.png\"></a><p>for sets A, B and a function f : A → B:\n\n- (Lan_U F)(A) is the set of finitely supported functions A → M, and (Lan_U F)(f) sums over fibers of f\n\n- (Ran_U F)(A) is the set of finitely additive M-valued measures on A, and (Ran_U F)(f) is measure pushforward</p><span>- category fibered in sarahzrfs (@sarah_zrf)</span></div></div>",
+        "id": 214129538,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1603324752
+    },
+    {
+        "content": "<p>anyway, though, i'm kinda interested in poking a bit further at my original construction anyway—something is intriguing to me about the way a \"summing over fibers\" operation drops out of doing a left kan extension, when left kan extensions are <em>themselves</em> kind of a categorified \"integrating over fibers\" operation</p>",
+        "id": 214130223,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1603325325
+    },
+    {
+        "content": "<p>i'm wondering about, like... hm</p>",
+        "id": 214130254,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1603325376
+    },
+    {
+        "content": "<p>This is nice. It feels like the way that clubs take the free model on 1 and extend it to all categories.</p>",
+        "id": 214130321,
+        "sender_full_name": "Christian Williams",
+        "timestamp": 1603325418
+    },
+    {
+        "content": "<p>well, it's unclear to me whether there's any way of interpreting a summation over fibers like the one above as being <em>itself</em> a left kan extension (as opposed to the image of a morphism under <em>a functor that is</em> a left kan extension)</p>",
+        "id": 214130410,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1603325521
+    },
+    {
+        "content": "<p>so like... we have something that looks sort of microcosm-y, but i dont see how to interpret the small thing as a case of the same concept as the big thing</p>",
+        "id": 214130510,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1603325594
+    },
+    {
+        "content": "<p>the pattern here is eluding me</p>",
+        "id": 214130519,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1603325605
+    },
+    {
+        "content": "<p>um, maybe this sounds incomprehensible outside of my head <span aria-label=\"sweat smile\" class=\"emoji emoji-1f605\" role=\"img\" title=\"sweat smile\">:sweat_smile:</span></p>",
+        "id": 214130592,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1603325644
+    },
+    {
+        "content": "<p>Okay, thanks.  One thing I was thinking about is that for any Lawvere theory <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>Q</mi></mrow><annotation encoding=\"application/x-tex\">Q</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8777699999999999em;vertical-align:-0.19444em;\"></span><span class=\"mord mathnormal\">Q</span></span></span></span>, the category <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msup><mi>Q</mi><mtext>op</mtext></msup></mrow><annotation encoding=\"application/x-tex\">Q^\\textrm{op}</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8777699999999999em;vertical-align:-0.19444em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\">Q</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.664392em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord text mtight\"><span class=\"mord textrm mtight\">op</span></span></span></span></span></span></span></span></span></span></span></span> is the category of free finitely generated models of <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>Q</mi></mrow><annotation encoding=\"application/x-tex\">Q</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8777699999999999em;vertical-align:-0.19444em;\"></span><span class=\"mord mathnormal\">Q</span></span></span></span>.    So, it comes with an embedding </p>\n<p><span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>j</mi><mspace></mspace><mspace width=\"0.1111111111111111em\"></mspace><mo lspace=\"0em\" rspace=\"0.17em\"></mo><mtext> ⁣</mtext><mo lspace=\"0em\" rspace=\"0em\">:</mo><mspace width=\"0.3333333333333333em\"></mspace><msup><mi>Q</mi><mtext>op</mtext></msup><mo>→</mo><mi>Q</mi><mtext>Mod</mtext></mrow><annotation encoding=\"application/x-tex\">j \\colon Q^\\textrm{op} \\to Q\\textrm{Mod}</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8777699999999999em;vertical-align:-0.19444em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.05724em;\">j</span><span class=\"mspace nobreak\"></span><span class=\"mspace\" style=\"margin-right:0.1111111111111111em;\"></span><span class=\"mpunct\"></span><span class=\"mspace\" style=\"margin-right:-0.16666666666666666em;\"></span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mord\"><span class=\"mrel\">:</span></span><span class=\"mspace\" style=\"margin-right:0.3333333333333333em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\">Q</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.664392em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord text mtight\"><span class=\"mord textrm mtight\">op</span></span></span></span></span></span></span></span></span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">→</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.8888799999999999em;vertical-align:-0.19444em;\"></span><span class=\"mord mathnormal\">Q</span><span class=\"mord text\"><span class=\"mord textrm\">Mod</span></span></span></span></span>.</p>\n<p>We also have a functor </p>\n<p><span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>F</mi><mo>:</mo><mrow><mi mathvariant=\"normal\">F</mi><mi mathvariant=\"normal\">i</mi><mi mathvariant=\"normal\">n</mi><mi mathvariant=\"normal\">S</mi><mi mathvariant=\"normal\">e</mi><mi mathvariant=\"normal\">t</mi></mrow><mo>→</mo><msup><mi>Q</mi><mtext>op</mtext></msup></mrow><annotation encoding=\"application/x-tex\">F : \\mathrm{FinSet} \\to Q^\\textrm{op}</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.13889em;\">F</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">:</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord\"><span class=\"mord mathrm\">F</span><span class=\"mord mathrm\">i</span><span class=\"mord mathrm\">n</span><span class=\"mord mathrm\">S</span><span class=\"mord mathrm\">e</span><span class=\"mord mathrm\">t</span></span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">→</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.8777699999999999em;vertical-align:-0.19444em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\">Q</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.664392em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord text mtight\"><span class=\"mord textrm mtight\">op</span></span></span></span></span></span></span></span></span></span></span></span> </p>\n<p>sending each finite set to its free <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>Q</mi></mrow><annotation encoding=\"application/x-tex\">Q</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8777699999999999em;vertical-align:-0.19444em;\"></span><span class=\"mord mathnormal\">Q</span></span></span></span>-model.</p>\n<p>Now, if we left Kan extend </p>\n<p><span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>j</mi><mo>∘</mo><mi>F</mi><mo>:</mo><mrow><mi mathvariant=\"normal\">F</mi><mi mathvariant=\"normal\">i</mi><mi mathvariant=\"normal\">n</mi><mi mathvariant=\"normal\">S</mi><mi mathvariant=\"normal\">e</mi><mi mathvariant=\"normal\">t</mi></mrow><mo>→</mo><mi>Q</mi><mrow><mi mathvariant=\"normal\">M</mi><mi mathvariant=\"normal\">o</mi><mi mathvariant=\"normal\">d</mi></mrow></mrow><annotation encoding=\"application/x-tex\">j \\circ F : \\mathrm{FinSet} \\to Q \\mathrm{Mod}</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.85396em;vertical-align:-0.19444em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.05724em;\">j</span><span class=\"mspace\" style=\"margin-right:0.2222222222222222em;\"></span><span class=\"mbin\">∘</span><span class=\"mspace\" style=\"margin-right:0.2222222222222222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.13889em;\">F</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">:</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord\"><span class=\"mord mathrm\">F</span><span class=\"mord mathrm\">i</span><span class=\"mord mathrm\">n</span><span class=\"mord mathrm\">S</span><span class=\"mord mathrm\">e</span><span class=\"mord mathrm\">t</span></span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">→</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.8888799999999999em;vertical-align:-0.19444em;\"></span><span class=\"mord mathnormal\">Q</span><span class=\"mord\"><span class=\"mord mathrm\">M</span><span class=\"mord mathrm\">o</span><span class=\"mord mathrm\">d</span></span></span></span></span> </p>\n<p>along the inclusion </p>\n<p><span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>i</mi><mo>:</mo><mtext>FinSet</mtext><mo>→</mo><mrow><mi mathvariant=\"normal\">S</mi><mi mathvariant=\"normal\">e</mi><mi mathvariant=\"normal\">t</mi></mrow></mrow><annotation encoding=\"application/x-tex\">i : \\textrm{FinSet} \\to \\mathrm{Set}</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.65952em;vertical-align:0em;\"></span><span class=\"mord mathnormal\">i</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">:</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord text\"><span class=\"mord textrm\">FinSet</span></span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">→</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord\"><span class=\"mord mathrm\">S</span><span class=\"mord mathrm\">e</span><span class=\"mord mathrm\">t</span></span></span></span></span></p>\n<p>I think we get the functor from <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"normal\">S</mi><mi mathvariant=\"normal\">e</mi><mi mathvariant=\"normal\">t</mi></mrow><annotation encoding=\"application/x-tex\">\\mathrm{Set}</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord\"><span class=\"mord mathrm\">S</span><span class=\"mord mathrm\">e</span><span class=\"mord mathrm\">t</span></span></span></span></span> to <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>Q</mi><mrow><mi mathvariant=\"normal\">M</mi><mi mathvariant=\"normal\">o</mi><mi mathvariant=\"normal\">d</mi></mrow></mrow><annotation encoding=\"application/x-tex\">Q \\mathrm{Mod}</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8888799999999999em;vertical-align:-0.19444em;\"></span><span class=\"mord mathnormal\">Q</span><span class=\"mord\"><span class=\"mord mathrm\">M</span><span class=\"mord mathrm\">o</span><span class=\"mord mathrm\">d</span></span></span></span></span> sending each set to the <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>Q</mi></mrow><annotation encoding=\"application/x-tex\">Q</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8777699999999999em;vertical-align:-0.19444em;\"></span><span class=\"mord mathnormal\">Q</span></span></span></span>-model it freely generates.</p>",
+        "id": 214130859,
+        "sender_full_name": "John Baez",
+        "timestamp": 1603325925
+    },
+    {
+        "content": "<p>right, j ∘ F here is exactly the functor that picks out the monoid i mentioned</p>",
+        "id": 214130954,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1603326018
+    },
+    {
+        "content": "<p>Okay... so do you think you're describing the same thing I just did, but in a slicker way?  (E.g. I didn't offer proofs of some facts which may be obvious in your approach.)</p>",
+        "id": 214130989,
+        "sender_full_name": "John Baez",
+        "timestamp": 1603326069
+    },
+    {
+        "content": "<p>yeah, because the reasoning i followed was to work out the same thing you just wrote, and then notice that it preserved finite coproducts :)</p>",
+        "id": 214131016,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1603326102
+    },
+    {
+        "content": "<p>Okay.  I think the \"usual\" approach to these things (like in Lawvere's thesis) doesn't use anything about FinSet being the Lawvere theory for commutative monoids, or about how every object in a category with finite coproducts gets to be a commutative monoid.</p>",
+        "id": 214131110,
+        "sender_full_name": "John Baez",
+        "timestamp": 1603326186
+    },
+    {
+        "content": "<p>oh sure, i had to go from noticing that it preserved finite coproducts to going \"oh huh i guess that means it's the functor corresponding to some monoid in the cocartesian monoidal structure\"</p>",
+        "id": 214131139,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1603326234
+    },
+    {
+        "content": "<p>i dont think this is necessarily a more natural way to think about it!</p>",
+        "id": 214131189,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1603326268
+    },
+    {
+        "content": "<p>but it certainly connects the two constructions</p>",
+        "id": 214131198,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1603326282
+    },
+    {
+        "content": "<p>I like to annoy people by telling them the real reason finite sets are important is that FinSet is the free symmetric monoidal category on a commutative monoid object.   Maybe you've found more evidence that this is true!  <span aria-label=\"upside down\" class=\"emoji emoji-1f643\" role=\"img\" title=\"upside down\">:upside_down:</span></p>",
+        "id": 214131239,
+        "sender_full_name": "John Baez",
+        "timestamp": 1603326335
+    },
+    {
+        "content": "<p>surely the real reason is that the subcategory of finite sets is where we get β from...?</p>",
+        "id": 214131330,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1603326409
+    },
+    {
+        "content": "<p><span aria-label=\"upside down\" class=\"emoji emoji-1f643\" role=\"img\" title=\"upside down\">:upside_down:</span></p>",
+        "id": 214131335,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1603326415
+    },
+    {
+        "content": "<p>Let's fight about it.</p>",
+        "id": 214131341,
+        "sender_full_name": "John Baez",
+        "timestamp": 1603326423
+    },
+    {
+        "content": "<p>I thought it was important because it's the opposite of the free Cartesian monoidal category on one object.</p>",
+        "id": 214131546,
+        "sender_full_name": "Dan Doel",
+        "timestamp": 1603326623
+    },
+    {
+        "content": "<p>so you're siding with john?</p>",
+        "id": 214131568,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1603326657
+    },
+    {
+        "content": "<p>Oh, am I?</p>",
+        "id": 214131579,
+        "sender_full_name": "Dan Doel",
+        "timestamp": 1603326672
+    },
+    {
+        "content": "<p>possibly</p>",
+        "id": 214131585,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1603326687
+    },
+    {
+        "content": "<p>youd have to give me a second to decide whether those are the same intension</p>",
+        "id": 214131611,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1603326716
+    },
+    {
+        "content": "<p>It sounds slightly different, although they're important for similar reasons.</p>",
+        "id": 214131658,
+        "sender_full_name": "Dan Doel",
+        "timestamp": 1603326727
+    },
+    {
+        "content": "<p>It's basically the same thing...</p>",
+        "id": 214131660,
+        "sender_full_name": "John Baez",
+        "timestamp": 1603326731
+    },
+    {
+        "content": "<p>Because it's de Bruijn indexing.</p>",
+        "id": 214131689,
+        "sender_full_name": "Dan Doel",
+        "timestamp": 1603326762
+    },
+    {
+        "content": "<p>In a cocartesian category every object becomes a commutative monoid in a natural way - natural in the technical sense.</p>\n<p>Starting from a symmetric monoidal category, we can form its category of commutative monoid objects, and this is a cocartesian category.</p>\n<p>So, it's not surprising that the free cocartesian category on one object is the free symmetric monoidal category on a commutative monoid object.</p>",
+        "id": 214131821,
+        "sender_full_name": "John Baez",
+        "timestamp": 1603326874
+    },
+    {
+        "content": "<p>Oh okay.</p>",
+        "id": 214131872,
+        "sender_full_name": "Dan Doel",
+        "timestamp": 1603326927
+    },
+    {
+        "content": "<p>The second description sounds more complicated, but it's nice because the free symmetric monoidal category on a <em>plain old</em> object is the <em>groupoid</em> of finite sets and bijections.</p>",
+        "id": 214131883,
+        "sender_full_name": "John Baez",
+        "timestamp": 1603326953
+    },
+    {
+        "content": "<p>/me mumbles something about the schanuel topos</p>",
+        "id": 214131954,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1603326985
+    },
+    {
+        "content": "<p>That's too fancy for starting out.</p>",
+        "id": 214131984,
+        "sender_full_name": "Dan Doel",
+        "timestamp": 1603327036
+    },
+    {
+        "content": "<p>dont you do pl</p>",
+        "id": 214132069,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1603327116
+    },
+    {
+        "content": "<p>you should like the schanuel topos</p>",
+        "id": 214132072,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1603327120
+    },
+    {
+        "content": "<p>I do. But you think about FinSet first before that.</p>",
+        "id": 214132104,
+        "sender_full_name": "Dan Doel",
+        "timestamp": 1603327172
+    },
+    {
+        "content": "<p>fair enough!</p>",
+        "id": 214132147,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1603327204
+    },
+    {
+        "content": "<p>Or plain FinSet.</p>",
+        "id": 214132179,
+        "sender_full_name": "Dan Doel",
+        "timestamp": 1603327245
+    },
+    {
+        "content": "<p>Eventually you can get really fancy with co de Bruijn, which uses semisimplicial types, I think.</p>",
+        "id": 214133891,
+        "sender_full_name": "Dan Doel",
+        "timestamp": 1603329027
+    },
+    {
+        "content": "<p>ooo elaborate</p>",
+        "id": 214134753,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1603330162
+    },
+    {
+        "content": "<p>oh wait</p>",
+        "id": 214134815,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1603330216
+    },
+    {
+        "content": "<p>that sounds suspiciously similar to PSh(FinSet_mono^op)</p>",
+        "id": 214134827,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1603330243
+    },
+    {
+        "content": "<p>what does orderedness give you?</p>",
+        "id": 214134833,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1603330249
+    },
+    {
+        "content": "<p>dont you want to be able to permute names</p>",
+        "id": 214134837,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1603330254
+    },
+    {
+        "content": "<p>No. Permuting names just gives you redundant representations of the same thing.</p>",
+        "id": 214134866,
+        "sender_full_name": "Dan Doel",
+        "timestamp": 1603330292
+    },
+    {
+        "content": "<p>I mean, it is very similar to <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>F</mi><mi>i</mi><mi>n</mi><mi>S</mi><mi>e</mi><msubsup><mi>t</mi><mrow><mi>m</mi><mi>o</mi><mi>n</mi><mi>o</mi></mrow><mrow><mi>o</mi><mi>p</mi></mrow></msubsup></mrow><annotation encoding=\"application/x-tex\">FinSet_{mono}^{op}</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.93033em;vertical-align:-0.247em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.13889em;\">F</span><span class=\"mord mathnormal\">i</span><span class=\"mord mathnormal\">n</span><span class=\"mord mathnormal\" style=\"margin-right:0.05764em;\">S</span><span class=\"mord mathnormal\">e</span><span class=\"mord\"><span class=\"mord mathnormal\">t</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.664392em;\"><span style=\"top:-2.4530000000000003em;margin-left:0em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mathnormal mtight\">m</span><span class=\"mord mathnormal mtight\">o</span><span class=\"mord mathnormal mtight\">n</span><span class=\"mord mathnormal mtight\">o</span></span></span></span><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mathnormal mtight\">o</span><span class=\"mord mathnormal mtight\">p</span></span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.247em;\"><span></span></span></span></span></span></span></span></span></span>, clearly. But more canonical.</p>",
+        "id": 214134952,
+        "sender_full_name": "Dan Doel",
+        "timestamp": 1603330425
+    },
+    {
+        "content": "<p>what does it classify?</p>",
+        "id": 214135032,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1603330504
+    },
+    {
+        "content": "<p>the topos i mean</p>",
+        "id": 214135042,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1603330515
+    },
+    {
+        "content": "<p>Anyhow, the idea is that instead of keeping track of variables in scope and then saying which one you use at a leaf, you keep track of which variables are used lower in the tree, and progressively thin things out as you go down. Then at the leaf you just say 'variable', because only one is still in scope.</p>",
+        "id": 214135048,
+        "sender_full_name": "Dan Doel",
+        "timestamp": 1603330554
+    },
+    {
+        "content": "<p>I don't know what it classifies. I just know it's the structure used. Finite linear orders and monotone injections.</p>",
+        "id": 214135110,
+        "sender_full_name": "Dan Doel",
+        "timestamp": 1603330617
+    },
+    {
+        "content": "<p>Apparently homotopy folks care about them, too, though, so they must be important.</p>",
+        "id": 214135123,
+        "sender_full_name": "Dan Doel",
+        "timestamp": 1603330650
+    },
+    {
+        "content": "<p>oh i bet it classifies something like objects w/ decidable equality equipped w/ linear orders</p>",
+        "id": 214135268,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1603330809
+    },
+    {
+        "content": "<p>or maybe the linear order is decidable too</p>",
+        "id": 214135277,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1603330821
+    },
+    {
+        "content": "<p>anyway yeah i buy the thing abt subtrees/leaves</p>",
+        "id": 214135427,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1603331043
+    },
+    {
+        "content": "<p>seems like a pain to have a non-symmetric monoidal structure tho?</p>",
+        "id": 214135504,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1603331151
+    },
+    {
+        "content": "<p>well okay i guess thats sort of the point?</p>",
+        "id": 214135549,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1603331169
+    },
+    {
+        "content": "<p>The point is to have a unique representation for α-equivalent terms, because that's nice on a computer.</p>",
+        "id": 214135950,
+        "sender_full_name": "Dan Doel",
+        "timestamp": 1603331711
+    },
+    {
+        "content": "<p>Just check equality, not equality up to n! possible different representations.</p>",
+        "id": 214135965,
+        "sender_full_name": "Dan Doel",
+        "timestamp": 1603331737
+    },
+    {
+        "content": "<p>If you forget about that part, you can probably do the same thing in the Schanuel topos, or species.</p>",
+        "id": 214136491,
+        "sender_full_name": "Dan Doel",
+        "timestamp": 1603332268
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"277270\">Dan Doel</span> <a href=\"#narrow/stream/229136-theory.3A-category.20theory/topic/FinSet.20as.20walking.20commutative.20monoid/near/214133891\">said</a>:</p>\n<blockquote>\n<p>Eventually you can get really fancy with co de Bruijn, which uses semisimplicial types, I think.</p>\n</blockquote>\n<p>I found a paper by Conor McBride which mentions a certain <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msubsup><mi mathvariant=\"normal\">Δ</mi><mo>+</mo><mi>K</mi></msubsup></mrow><annotation encoding=\"application/x-tex\">\\Delta_+^K</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:1.146662em;vertical-align:-0.305331em;\"></span><span class=\"mord\"><span class=\"mord\">Δ</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.8413309999999999em;\"><span style=\"top:-2.4530000000000003em;margin-left:0em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mbin mtight\">+</span></span></span><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathnormal mtight\" style=\"margin-right:0.07153em;\">K</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.305331em;\"><span></span></span></span></span></span></span></span></span></span> category of semisimplicial types. Is that what you're referring to here?</p>",
+        "id": 214155938,
+        "sender_full_name": "[Mod] Morgan Rogers",
+        "timestamp": 1603354348
+    },
+    {
+        "content": "<p>Yes.</p>",
+        "id": 214195321,
+        "sender_full_name": "Dan Doel",
+        "timestamp": 1603377125
+    },
+    {
+        "content": "<p>I don't know if this is what you guys are talking about, but in the <a href=\"http://iml.univ-mrs.fr/~lafont/pub/circuits.pdf\">seminar paper of Lafont</a>, he shows the (probably folklore) result that the free pro of a monoid represents finite ordinals and monotone maps under the coproduct; and similarly, the free prop of a commutative monoid represents finite ordinals and functions under the coproduct.  Moreover, the free pro(p) on the unit of the monoid are the monics, and the free pro(p) for the multiplication of the monoid are the epics.  And the unit equation is just the epi-mono factorization.</p>",
+        "id": 214196713,
+        "sender_full_name": "Cole Comfort",
+        "timestamp": 1603377684
+    },
+    {
+        "content": "<p>This is a famous folklore result, but it's really good to find locations of actual proofs of these results!   I'm currently typing some into the nLab, so thanks!</p>\n<p>Here is what I wrote about descriptions of FinSet, including FinSet as the prop for commutative monoids:</p>\n<ul>\n<li><a href=\"https://ncatlab.org/nlab/show/FinSet#universal_properties\">FinSet - universal properties</a>.</li>\n</ul>\n<p>I'll add the ref to Lafont's paper.</p>",
+        "id": 214211545,
+        "sender_full_name": "John Baez",
+        "timestamp": 1603383843
+    },
+    {
+        "content": "<p>I think Lafont's paper is worth mentioning, because he extends this representation to more interesting categories, being motivated by these more simple folklore results.</p>\n<p>I am working on a dictionary for different props and their semantics, because these things quickly build up in terms of structure/computational expressiveness in a very modular way. From commutative monoids:FinSet, special commutative frobenius algebras:CoSpan(FinSet),  commutative bialgebras:Span(FinSet), then quite quickly you get interacting hopf algebras:Linear relations and even more.  All of these results are contained in different papers, and when you put things all together, one realizes that there are gaps in the literature!</p>",
+        "id": 214214722,
+        "sender_full_name": "Cole Comfort",
+        "timestamp": 1603385251
+    },
+    {
+        "content": "<p>I consider myself sort of an expert on all these props, and I've decided I had better enter information about them into the nLab before I forget all this stuff.   I also plan to write a paper on a bunch of them.  So I have to ask: how is your dictionary coming along, how will it be organized, and how it will be accessible?  Maybe we could cooperate a bit.</p>",
+        "id": 214215032,
+        "sender_full_name": "John Baez",
+        "timestamp": 1603385383
+    },
+    {
+        "content": "<p><span class=\"user-mention\" data-user-id=\"275920\">@John Baez</span> </p>\n<p>We have organized the paper into various different sections (with the help of <span class=\"user-mention\" data-user-id=\"295673\">@Aleks Kissinger</span> ), although it is  nowhere near finished, with most of the proofs not being worked out fully.  For each section, we consider a semantic prop and its syntactic presentation and then  consider the epimorphisms, monomorphisms, as well as things like the partial isomorphisms (spans of monomorphisms), as well as the spans, cospans, relations and corelations---building things up à-la composing props style of Lack, using distributive laws and pushouts and stuff to build larger props.  The idea is to build up the presentations from large to small, so that at each step, only a few new equations are added.</p>\n<p>For the different base categories, we start with <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"false\">(</mo><mrow><mi mathvariant=\"sans-serif\">F</mi><mi mathvariant=\"sans-serif\">i</mi><mi mathvariant=\"sans-serif\">n</mi><mi mathvariant=\"sans-serif\">O</mi><mi mathvariant=\"sans-serif\">r</mi><mi mathvariant=\"sans-serif\">d</mi></mrow><mo separator=\"true\">,</mo><mo>+</mo><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">({\\sf FinOrd},+)</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mopen\">(</span><span class=\"mord\"><span class=\"mord\"><span class=\"mord mathsf\">F</span><span class=\"mord mathsf\">i</span><span class=\"mord mathsf\">n</span><span class=\"mord mathsf\">O</span><span class=\"mord mathsf\" style=\"margin-right:0.01389em;\">r</span><span class=\"mord mathsf\">d</span></span></span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mord\">+</span><span class=\"mclose\">)</span></span></span></span>,  then go to <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"false\">(</mo><mrow><mi mathvariant=\"sans-serif\">M</mi><mi mathvariant=\"sans-serif\">a</mi><mi mathvariant=\"sans-serif\">t</mi></mrow><mo stretchy=\"false\">(</mo><mi>k</mi><mo stretchy=\"false\">)</mo><mo separator=\"true\">,</mo><mo>+</mo><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">({\\sf Mat}(k),+)</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mopen\">(</span><span class=\"mord\"><span class=\"mord\"><span class=\"mord mathsf\">M</span><span class=\"mord mathsf\">a</span><span class=\"mord mathsf\">t</span></span></span><span class=\"mopen\">(</span><span class=\"mord mathnormal\" style=\"margin-right:0.03148em;\">k</span><span class=\"mclose\">)</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mord\">+</span><span class=\"mclose\">)</span></span></span></span>, and then <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"false\">(</mo><mrow><mi mathvariant=\"sans-serif\">A</mi><mi mathvariant=\"sans-serif\">f</mi><mi mathvariant=\"sans-serif\">f</mi><mi mathvariant=\"sans-serif\">M</mi><mi mathvariant=\"sans-serif\">a</mi><mi mathvariant=\"sans-serif\">t</mi></mrow><mo stretchy=\"false\">(</mo><mi>k</mi><mo stretchy=\"false\">)</mo><mo separator=\"true\">,</mo><mo>+</mo><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">({\\sf AffMat}(k),+)</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mopen\">(</span><span class=\"mord\"><span class=\"mord\"><span class=\"mord mathsf\">A</span><span class=\"mord mathsf\" style=\"margin-right:0.06944em;\">f</span><span class=\"mord mathsf\" style=\"margin-right:0.06944em;\">f</span><span class=\"mord mathsf\">M</span><span class=\"mord mathsf\">a</span><span class=\"mord mathsf\">t</span></span></span><span class=\"mopen\">(</span><span class=\"mord mathnormal\" style=\"margin-right:0.03148em;\">k</span><span class=\"mclose\">)</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mord\">+</span><span class=\"mclose\">)</span></span></span></span>, and then <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"false\">(</mo><msub><mrow><mi mathvariant=\"sans-serif\">F</mi><mi mathvariant=\"sans-serif\">i</mi><mi mathvariant=\"sans-serif\">n</mi><mi mathvariant=\"sans-serif\">O</mi><mi mathvariant=\"sans-serif\">r</mi><mi mathvariant=\"sans-serif\">d</mi></mrow><mi>n</mi></msub><mo separator=\"true\">,</mo><mo>×</mo><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">({\\sf FinOrd}_n,\\times)</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mopen\">(</span><span class=\"mord\"><span class=\"mord\"><span class=\"mord\"><span class=\"mord mathsf\">F</span><span class=\"mord mathsf\">i</span><span class=\"mord mathsf\">n</span><span class=\"mord mathsf\">O</span><span class=\"mord mathsf\" style=\"margin-right:0.01389em;\">r</span><span class=\"mord mathsf\">d</span></span></span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.151392em;\"><span style=\"top:-2.5500000000000003em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathnormal mtight\">n</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mord\">×</span><span class=\"mclose\">)</span></span></span></span>, all of these models are strictly included in each other.</p>\n<p>By <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mrow><mi mathvariant=\"sans-serif\">A</mi><mi mathvariant=\"sans-serif\">f</mi><mi mathvariant=\"sans-serif\">f</mi><mi mathvariant=\"sans-serif\">M</mi><mi mathvariant=\"sans-serif\">a</mi><mi mathvariant=\"sans-serif\">t</mi></mrow><mo stretchy=\"false\">(</mo><mi>k</mi><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">{\\sf AffMat}(k)</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord\"><span class=\"mord\"><span class=\"mord mathsf\">A</span><span class=\"mord mathsf\" style=\"margin-right:0.06944em;\">f</span><span class=\"mord mathsf\" style=\"margin-right:0.06944em;\">f</span><span class=\"mord mathsf\">M</span><span class=\"mord mathsf\">a</span><span class=\"mord mathsf\">t</span></span></span><span class=\"mopen\">(</span><span class=\"mord mathnormal\" style=\"margin-right:0.03148em;\">k</span><span class=\"mclose\">)</span></span></span></span>, I mean affine matrices over a field <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>k</mi></mrow><annotation encoding=\"application/x-tex\">k</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.69444em;vertical-align:0em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.03148em;\">k</span></span></span></span>.  And by <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mrow><mi mathvariant=\"sans-serif\">F</mi><mi mathvariant=\"sans-serif\">i</mi><mi mathvariant=\"sans-serif\">n</mi><mi mathvariant=\"sans-serif\">O</mi><mi mathvariant=\"sans-serif\">r</mi><mi mathvariant=\"sans-serif\">d</mi></mrow><mi>n</mi></msub></mrow><annotation encoding=\"application/x-tex\">{\\sf FinOrd}_n</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.84444em;vertical-align:-0.15em;\"></span><span class=\"mord\"><span class=\"mord\"><span class=\"mord\"><span class=\"mord mathsf\">F</span><span class=\"mord mathsf\">i</span><span class=\"mord mathsf\">n</span><span class=\"mord mathsf\">O</span><span class=\"mord mathsf\" style=\"margin-right:0.01389em;\">r</span><span class=\"mord mathsf\">d</span></span></span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.151392em;\"><span style=\"top:-2.5500000000000003em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathnormal mtight\">n</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span></span></span></span>, I mean the full subcategory of <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mrow><mi mathvariant=\"sans-serif\">F</mi><mi mathvariant=\"sans-serif\">i</mi><mi mathvariant=\"sans-serif\">n</mi><mi mathvariant=\"sans-serif\">O</mi><mi mathvariant=\"sans-serif\">r</mi><mi mathvariant=\"sans-serif\">d</mi></mrow><mi>n</mi></msub></mrow><annotation encoding=\"application/x-tex\">{\\sf FinOrd}_n</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.84444em;vertical-align:-0.15em;\"></span><span class=\"mord\"><span class=\"mord\"><span class=\"mord\"><span class=\"mord mathsf\">F</span><span class=\"mord mathsf\">i</span><span class=\"mord mathsf\">n</span><span class=\"mord mathsf\">O</span><span class=\"mord mathsf\" style=\"margin-right:0.01389em;\">r</span><span class=\"mord mathsf\">d</span></span></span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.151392em;\"><span style=\"top:-2.5500000000000003em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathnormal mtight\">n</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span></span></span></span> with objects generated by <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msup><mi>n</mi><mi>m</mi></msup></mrow><annotation encoding=\"application/x-tex\">n^m</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.664392em;vertical-align:0em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\">n</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.664392em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathnormal mtight\">m</span></span></span></span></span></span></span></span></span></span></span> for <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>m</mi><mo>∈</mo><mi mathvariant=\"double-struck\">N</mi></mrow><annotation encoding=\"application/x-tex\"> m\\in \\mathbb N</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.5782em;vertical-align:-0.0391em;\"></span><span class=\"mord mathnormal\">m</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">∈</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.68889em;vertical-align:0em;\"></span><span class=\"mord mathbb\">N</span></span></span></span>.</p>\n<p>There are some technical problems, like the fact that <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mrow><mi mathvariant=\"sans-serif\">F</mi><mi mathvariant=\"sans-serif\">i</mi><mi mathvariant=\"sans-serif\">n</mi><mi mathvariant=\"sans-serif\">O</mi><mi mathvariant=\"sans-serif\">r</mi><mi mathvariant=\"sans-serif\">d</mi></mrow><mi>k</mi></msub></mrow><annotation encoding=\"application/x-tex\">{\\sf FinOrd}_k</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.84444em;vertical-align:-0.15em;\"></span><span class=\"mord\"><span class=\"mord\"><span class=\"mord\"><span class=\"mord mathsf\">F</span><span class=\"mord mathsf\">i</span><span class=\"mord mathsf\">n</span><span class=\"mord mathsf\">O</span><span class=\"mord mathsf\" style=\"margin-right:0.01389em;\">r</span><span class=\"mord mathsf\">d</span></span></span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.33610799999999996em;\"><span style=\"top:-2.5500000000000003em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathnormal mtight\" style=\"margin-right:0.03148em;\">k</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span></span></span></span> doesn't actually have pullbacks, but these inconsistencies between models can be mostly resolved.</p>\n<p>The motivation is from the ZX-calculus side of things, so so far, most of the paper I have only managed to work out fixing <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>k</mi><mo>=</mo><msub><mi mathvariant=\"double-struck\">F</mi><mn>2</mn></msub></mrow><annotation encoding=\"application/x-tex\"> k = \\mathbb{F}_2</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.69444em;vertical-align:0em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.03148em;\">k</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.83889em;vertical-align:-0.15em;\"></span><span class=\"mord\"><span class=\"mord\"><span class=\"mord mathbb\">F</span></span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.30110799999999993em;\"><span style=\"top:-2.5500000000000003em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">2</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span></span></span></span> and <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>n</mi><mo>=</mo><mn>2</mn></mrow><annotation encoding=\"application/x-tex\">n=2</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.43056em;vertical-align:0em;\"></span><span class=\"mord mathnormal\">n</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.64444em;vertical-align:0em;\"></span><span class=\"mord\">2</span></span></span></span>, but I am sure that these things will generalize nicely.  But this is not a limiting factor, just where my intuition is coming from.  And many of the gaps come from the fact that lots of the things are only worked out in the \"qubit\" case.  But the case of <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"false\">(</mo><mrow><mi mathvariant=\"sans-serif\">F</mi><mi mathvariant=\"sans-serif\">i</mi><mi mathvariant=\"sans-serif\">n</mi><mi mathvariant=\"sans-serif\">O</mi><mi mathvariant=\"sans-serif\">r</mi><mi mathvariant=\"sans-serif\">d</mi></mrow><mo separator=\"true\">,</mo><mo>+</mo><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">({\\sf FinOrd},+)</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mopen\">(</span><span class=\"mord\"><span class=\"mord\"><span class=\"mord mathsf\">F</span><span class=\"mord mathsf\">i</span><span class=\"mord mathsf\">n</span><span class=\"mord mathsf\">O</span><span class=\"mord mathsf\" style=\"margin-right:0.01389em;\">r</span><span class=\"mord mathsf\">d</span></span></span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mord\">+</span><span class=\"mclose\">)</span></span></span></span>,  and <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"false\">(</mo><mrow><mi mathvariant=\"sans-serif\">M</mi><mi mathvariant=\"sans-serif\">a</mi><mi mathvariant=\"sans-serif\">t</mi></mrow><mo stretchy=\"false\">(</mo><mi>k</mi><mo stretchy=\"false\">)</mo><mo separator=\"true\">,</mo><mo>+</mo><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">({\\sf Mat}(k),+)</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mopen\">(</span><span class=\"mord\"><span class=\"mord\"><span class=\"mord mathsf\">M</span><span class=\"mord mathsf\">a</span><span class=\"mord mathsf\">t</span></span></span><span class=\"mopen\">(</span><span class=\"mord mathnormal\" style=\"margin-right:0.03148em;\">k</span><span class=\"mclose\">)</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mord\">+</span><span class=\"mclose\">)</span></span></span></span> are mostly already in the literature.</p>\n<p>Also, we intend to discuss the relation to Lagrangian relations, which I know you are very much farmiliar with, because these when these props get more complicated, they quickly start to resemble things in physics.  And of course, this is closely related to the stabilizer fragment of the ZX-calculus,</p>\n<p>It will be great if we could cooperate, because, I think this is a well-needed resource.  As well as finding more props and their semantics that fit into this picture.</p>\n<p>I don't know where this should go, because this started as an informal talk and has bloated into a massive dictionary.</p>",
+        "id": 214218785,
+        "sender_full_name": "Cole Comfort",
+        "timestamp": 1603387107
+    },
+    {
+        "content": "<p>This sounds very interesting! I'd love to hear a bit more about it. (I also find it frustrating that all the details are spread throughout the literature, and that's true even just for Lawvere theories.)</p>",
+        "id": 214222088,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1603388637
+    },
+    {
+        "content": "<p>By \"syntax\", do you mean string diagrams, or term calculi/type theories?</p>",
+        "id": 214222168,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1603388658
+    },
+    {
+        "content": "<p>(Or both.)</p>",
+        "id": 214222176,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1603388663
+    },
+    {
+        "content": "<p><span class=\"user-mention\" data-user-id=\"276092\">@Nathanael Arkor</span> <br>\nYes, all of the \"base\" categories are Lawvere theories, but that is the easy part.</p>\n<p>By syntax I mean props presented in terms of generators and relations... and the way this is written up is with string diagrams for aesthetic reasons.</p>",
+        "id": 214224016,
+        "sender_full_name": "Cole Comfort",
+        "timestamp": 1603389387
+    },
+    {
+        "content": "<p><span class=\"user-mention\" data-user-id=\"275920\">@John Baez</span>  I am curious which props you had in mind, and if the ones that we are writing up are largely the same.</p>",
+        "id": 214224415,
+        "sender_full_name": "Cole Comfort",
+        "timestamp": 1603389573
+    },
+    {
+        "content": "<p>By Lawvere theory, I really meant the theory of Lawvere theories, as one very particular kind of PROP. The literature is spread out enough for that kind, so if you're considering many more varieties, I can imagine there are many spots to fill!</p>",
+        "id": 214228329,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1603391229
+    },
+    {
+        "content": "<p>The motivation is documenting all the syntax and semantics of various props that arise as categories of spans and relations, pretty much.  There are many more props out there, but obviously one can't present them all in one place.</p>",
+        "id": 214229157,
+        "sender_full_name": "Cole Comfort",
+        "timestamp": 1603391558
+    },
+    {
+        "content": "<p>Like much of the work on the ZX calculus is closely related to such categories, but the axioms had been discovered in a more-or-less ad hoc way.  But there are \"canonical\" presentations of the different fragments of the ZX calculus, where the axioms arise in very nice ways.</p>",
+        "id": 214229633,
+        "sender_full_name": "Cole Comfort",
+        "timestamp": 1603391779
+    },
+    {
+        "content": "<p>For example, the phase-free fragment of the ZX calculus arises as spans of matrices over <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi mathvariant=\"double-struck\">F</mi><mn>2</mn></msub></mrow><annotation encoding=\"application/x-tex\"> \\mathbb{F}_2</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.83889em;vertical-align:-0.15em;\"></span><span class=\"mord\"><span class=\"mord\"><span class=\"mord mathbb\">F</span></span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.30110799999999993em;\"><span style=\"top:-2.5500000000000003em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">2</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span></span></span></span>, which is a special case of a general presentation of such props in <span class=\"user-mention\" data-user-id=\"351836\">@Fabio Zanasi</span>'s thesis <a href=\"https://arxiv.org/abs/1805.03032\">https://arxiv.org/abs/1805.03032</a></p>",
+        "id": 214229955,
+        "sender_full_name": "Cole Comfort",
+        "timestamp": 1603391924
+    },
+    {
+        "content": "<p>And the natural number H-box fragment of the ZH calculus arises as the full subcategory of spans of of finite ordinals and functions where the objects are generated by <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msup><mn>2</mn><mi>n</mi></msup></mrow><annotation encoding=\"application/x-tex\"> 2^n</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.664392em;vertical-align:0em;\"></span><span class=\"mord\"><span class=\"mord\">2</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.664392em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathnormal mtight\">n</span></span></span></span></span></span></span></span></span></span></span> for <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>n</mi><mo>∈</mo><mi mathvariant=\"double-struck\">N</mi></mrow><annotation encoding=\"application/x-tex\">n \\in \\mathbb N</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.5782em;vertical-align:-0.0391em;\"></span><span class=\"mord mathnormal\">n</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">∈</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.68889em;vertical-align:0em;\"></span><span class=\"mord mathbb\">N</span></span></span></span> <a href=\"https://arxiv.org/abs/2004.05287\">https://arxiv.org/abs/2004.05287</a></p>",
+        "id": 214230537,
+        "sender_full_name": "Cole Comfort",
+        "timestamp": 1603392210
+    },
+    {
+        "content": "<p>I'm biased, but having a type theoretic presentation alongside the string diagrams would be very helpful too :)</p>",
+        "id": 214232599,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1603393131
+    },
+    {
+        "content": "<p>I think they both give helpful perspectives, which can be non-obvious just by seeing one.</p>",
+        "id": 214232886,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1603393229
+    },
+    {
+        "content": "<p>Indeed as Cole says, in my PhD thesis I documented lots of these syntax -&gt; semantics results for Props, including various that were folklore. So it's probably a good source to look them up. </p>\n<p>Other places where there are others being documented (mostly around spans and cospans) are:</p>\n<ul>\n<li>Gadducci and Bruni - Some algebraic laws of spans (2003) &lt;--- lots of seminal results here!</li>\n<li>Lack - Composing props (2004)</li>\n<li>Me - The algebra of partial equivalence relations (2016)</li>\n</ul>",
+        "id": 214246262,
+        "sender_full_name": "Fabio Zanasi",
+        "timestamp": 1603399771
+    },
+    {
+        "content": "<p>Also, <span class=\"user-mention\" data-user-id=\"275920\">@John Baez</span> As you are interested in AffMat, it may be worth checking out this recent paper, which axiomatises Affine linear relations (and so including affine matrices):</p>\n<ul>\n<li>Bonchi et al. - Graphical Affine Algebra (2019) (available here: <a href=\"http://www.zanasi.com/fabio/files/paperLICS19.pdf\">http://www.zanasi.com/fabio/files/paperLICS19.pdf</a>)</li>\n</ul>",
+        "id": 214246651,
+        "sender_full_name": "Fabio Zanasi",
+        "timestamp": 1603399980
+    },
+    {
+        "content": "<p>Cole wrote:</p>\n<blockquote>\n<p>this started as an informal talk and has bloated into a massive dictionary.</p>\n</blockquote>\n<p>How big so far?</p>",
+        "id": 214247200,
+        "sender_full_name": "John Baez",
+        "timestamp": 1603400225
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"277391\">Cole Comfort</span> <a href=\"#narrow/stream/229136-theory.3A-category.20theory/topic/FinSet.20as.20walking.20commutative.20monoid/near/214224415\">said</a>:</p>\n<blockquote>\n<p><span class=\"user-mention silent\" data-user-id=\"275920\">John Baez</span>  I am curious which props you had in mind, and if the ones that we are writing up are largely the same.</p>\n</blockquote>\n<p>I'm currently very interested in props that are sub-props of FinRel, FinCorel, FinSpan and FinCospan.  (Maybe I don't need to keep saying \"Fin\" if we're talking about props, since the objects are always finite numbers.)</p>",
+        "id": 214247347,
+        "sender_full_name": "John Baez",
+        "timestamp": 1603400305
+    },
+    {
+        "content": "<p>I have a story I want to tell about these, and I should probably tell it somewhere and then contribute that information to your massive dictionary.</p>",
+        "id": 214247456,
+        "sender_full_name": "John Baez",
+        "timestamp": 1603400377
+    },
+    {
+        "content": "<p>By the way, the prop Mat(k) is very nice not only when k is a field, but whenever k is a commutative rig.  I got Wadsley and Woods to write a paper about it:</p>\n<ul>\n<li><a href=\"https://arxiv.org/abs/1505.00048\">PROPs for linear systems</a>.</li>\n</ul>\n<p>I hope you take the information in here and add it to your massive dictionary.</p>\n<p>\"We are the Borg. Lower your shields and surrender your ships. We will add your biological and technological distinctiveness to our own.\"</p>",
+        "id": 214247842,
+        "sender_full_name": "John Baez",
+        "timestamp": 1603400568
+    },
+    {
+        "content": "<p>I also hope you suck the juice out of this paper:</p>\n<ul>\n<li>John Baez, Brandon Coya and Franciscus Rebro, <a href=\"https://arxiv.org/abs/1707.08321\">Props in network theory</a>.</li>\n</ul>",
+        "id": 214248024,
+        "sender_full_name": "John Baez",
+        "timestamp": 1603400664
+    },
+    {
+        "content": "<p>In particular we say super-precisely what it means to have a presentation of a prop in terms of generators and relations, and say when a symmetric monoidal category is equivalent to a prop (see Appendix A and B).  But also we have some nice examples of props.</p>",
+        "id": 214248122,
+        "sender_full_name": "John Baez",
+        "timestamp": 1603400733
+    },
+    {
+        "content": "<blockquote>\n<p>I don't know where this should go...</p>\n</blockquote>\n<p>Where have you considered?  It might make a nice paper for <em>Compositionality</em> if you can't think of anything better.  Is it big enough to become a book?</p>",
+        "id": 214248446,
+        "sender_full_name": "John Baez",
+        "timestamp": 1603400944
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"275920\">John Baez</span> <a href=\"#narrow/stream/229136-theory.3A-category.20theory/topic/FinSet.20as.20walking.20commutative.20monoid/near/214247200\">said</a>:</p>\n<blockquote>\n<p>Cole wrote:</p>\n<blockquote>\n<p>this started as an informal talk and has bloated into a massive dictionary.<br>\nHow big so far?</p>\n</blockquote>\n</blockquote>\n<p>I mean I think it is starting to turn into my phd thesis.</p>\n<p><span class=\"user-mention silent\" data-user-id=\"275920\">John Baez</span> <a href=\"#narrow/stream/229136-theory.3A-category.20theory/topic/FinSet.20as.20walking.20commutative.20monoid/near/214247347\">said</a>:</p>\n<blockquote>\n<p><span class=\"user-mention silent\" data-user-id=\"277391\">Cole Comfort</span> <a href=\"#narrow/stream/229136-theory.3A-category.20theory/topic/FinSet.20as.20walking.20commutative.20monoid/near/214224415\">said</a>:</p>\n<blockquote>\n<p><span class=\"user-mention silent\" data-user-id=\"275920\">John Baez</span>  I am curious which props you had in mind, and if the ones that we are writing up are largely the same.</p>\n</blockquote>\n<p>I'm currently very interested in props that are sub-props of FinRel, FinCorel, FinSpan and FinCospan.  (Maybe I don't need to keep saying \"Fin\" if we're talking about props, since the objects are always finite numbers.)</p>\n</blockquote>\n<p>By this do you mean wrt sets and the coproduct?</p>",
+        "id": 214251730,
+        "sender_full_name": "Cole Comfort",
+        "timestamp": 1603402911
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"275920\">John Baez</span> <a href=\"#narrow/stream/229136-theory.3A-category.20theory/topic/FinSet.20as.20walking.20commutative.20monoid/near/214247842\">said</a>:</p>\n<blockquote>\n<p>By the way, the prop Mat(k) is very nice not only when k is a field, but whenever k is a commutative rig.  I got Wadsley and Woods to write a paper about it:</p>\n<ul>\n<li><a href=\"https://arxiv.org/abs/1505.00048\">PROPs for linear systems</a>.</li>\n</ul>\n<p>I hope you take the information in here and add it to your massive dictionary.</p>\n<p>\"We are the Borg. Lower your shields and surrender your ships. We will add your biological and technological distinctiveness to our own.\"</p>\n</blockquote>\n<p>The only issue with this is that you can't take pushouts or pullbacks because, as far as I know, according to me reading <span class=\"user-mention\" data-user-id=\"351836\">@Fabio Zanasi</span>'s thesis, you only get these in general when the ring is a PID.</p>",
+        "id": 214251835,
+        "sender_full_name": "Cole Comfort",
+        "timestamp": 1603402989
+    },
+    {
+        "content": "<p>Now that I am discovering these gaps it is probably worthwhile separating this classification into different papers, because there is lots of original work to be done.</p>",
+        "id": 214251993,
+        "sender_full_name": "Cole Comfort",
+        "timestamp": 1603403098
+    },
+    {
+        "content": "<p>I'm not completely sure what you mean by \"the only issue with this\".  It's definitely true that Mat(k) is a prop whenever k is a commutative rig.  (Not just a ring - a rig!)</p>\n<p>Other more fancy constructions may require pushouts and pullbacks, and yes, Mat(k) won't have those unless k is reasonably nice.  </p>\n<p>Let's think about when Mat(k) has pullbacks. Mat(k) is equivalent to the category of <em>free</em> finitely generated k-modules, so let's think about that.   I will only try the case where k is a commutative ring, though I love rigs.</p>\n<p>Since the category of free finitely generated k-modules has binary products, it will have pullbacks iff it has equalizers, which when k is a ring are the same as \"kernels\".  So for k a commutative ring, Mat(k) will have pullbacks iff the kernel of any map between free finitely generated k-modules is a free finitely generated k-module.  <a href=\"https://mathoverflow.net/questions/16953/are-submodules-of-free-modules-free/16957\">If k is a commutative ring, every submodule of a free module is free iff k is a principal ideal domain</a>, and in this case every submodule of a free finitely generated module is also finitely generated.</p>\n<p>From all this we get: if k is a PID, Mat(k) has pullbacks.   </p>\n<p>I'm not sure this is an \"if and only if\", because I don't know that every submodule is a kernel.</p>",
+        "id": 214252875,
+        "sender_full_name": "John Baez",
+        "timestamp": 1603403667
+    },
+    {
+        "content": "<p>Now I am curious about k case of commutative rigs, e.g. <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"double-struck\">N</mi></mrow><annotation encoding=\"application/x-tex\">\\mathbb{N}</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.68889em;vertical-align:0em;\"></span><span class=\"mord\"><span class=\"mord mathbb\">N</span></span></span></span></span>.</p>",
+        "id": 214253072,
+        "sender_full_name": "John Baez",
+        "timestamp": 1603403804
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"277391\">Cole Comfort</span> <a href=\"#narrow/stream/229136-theory.3A-category.20theory/topic/FinSet.20as.20walking.20commutative.20monoid/near/214251730\">said</a>:</p>\n<blockquote>\n<p><span class=\"user-mention silent\" data-user-id=\"275920\">John Baez</span>  I am curious which props you had in mind, and if the ones that we are writing up are largely the same.</p>\n<blockquote>\n<p>I'm currently very interested in props that are sub-props of FinRel, FinCorel, FinSpan and FinCospan.  (Maybe I don't need to keep saying \"Fin\" if we're talking about props, since the objects are always finite numbers.)</p>\n</blockquote>\n<p>By this do you mean wrt sets and the coproduct?</p>\n</blockquote>\n<p>Yes, I mean finite sets and disjoint union.   I'm in the mood for combinatorics these days.</p>",
+        "id": 214253210,
+        "sender_full_name": "John Baez",
+        "timestamp": 1603403897
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"275920\">John Baez</span> <a href=\"#narrow/stream/229136-theory.3A-category.20theory/topic/FinSet.20as.20walking.20commutative.20monoid/near/214252875\">said</a>:</p>\n<blockquote>\n<p>I'm not completely sure what you mean by \"the only issue with this\".  It's definitely true that Mat(k) is a prop whenever k is a commutative rig.  (Not just a ring - a rig!)</p>\n</blockquote>\n<p>Just that it is nice to be able to be able to take pushouts/pullbacks.  I guess the right way to make the dictionary is to start with matrices over a semiring, and then once you want to take pullbacks, then restrict your attention to PIDs.</p>",
+        "id": 214253410,
+        "sender_full_name": "Cole Comfort",
+        "timestamp": 1603404038
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"275920\">John Baez</span> <a href=\"#narrow/stream/229136-theory.3A-category.20theory/topic/FinSet.20as.20walking.20commutative.20monoid/near/214252875\">said</a>:</p>\n<blockquote>\n<p>I'm not sure this is an \"if and only if\", because I don't know that every submodule is a kernel.</p>\n</blockquote>\n<p>Yeah, I am not sure either, but I just don't know what class of (semi)rings you could generalize this to and still get this.</p>",
+        "id": 214253518,
+        "sender_full_name": "Cole Comfort",
+        "timestamp": 1603404122
+    },
+    {
+        "content": "<p>It's an interesting question.  The proof that when k is a commutative ring,</p>\n<p>\"every submodule of a finitely generated free k-module is free\" <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mtext>  </mtext><mo>⟹</mo><mtext>  </mtext></mrow><annotation encoding=\"application/x-tex\">\\implies</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.549em;vertical-align:-0.024em;\"></span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">⟹</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span></span></span> k is a PID</p>\n<p>is so ridiculously simple (I linked to one) that it should be easy to generalize this direction and discover some sort of \"PID rigs\".</p>",
+        "id": 214253787,
+        "sender_full_name": "John Baez",
+        "timestamp": 1603404285
+    },
+    {
+        "content": "<p>Anyway, I may be more into this sort of algebra than you, so maybe I should do that.</p>",
+        "id": 214253841,
+        "sender_full_name": "John Baez",
+        "timestamp": 1603404332
+    },
+    {
+        "content": "<p>I think already for <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"double-struck\">N</mi></mrow><annotation encoding=\"application/x-tex\">\\mathbb{N}</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.68889em;vertical-align:0em;\"></span><span class=\"mord\"><span class=\"mord mathbb\">N</span></span></span></span></span> it breaks down.</p>",
+        "id": 214253952,
+        "sender_full_name": "John Baez",
+        "timestamp": 1603404408
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"275920\">John Baez</span> <a href=\"#narrow/stream/229136-theory.3A-category.20theory/topic/FinSet.20as.20walking.20commutative.20monoid/near/214253210\">said</a>:</p>\n<blockquote>\n<p><span class=\"user-mention silent\" data-user-id=\"277391\">Cole Comfort</span> <a href=\"#narrow/stream/229136-theory.3A-category.20theory/topic/FinSet.20as.20walking.20commutative.20monoid/near/214251730\">said</a>:</p>\n<blockquote>\n<p><span class=\"user-mention silent\" data-user-id=\"275920\">John Baez</span>  I am curious which props you had in mind, and if the ones that we are writing up are largely the same.</p>\n<div class=\"codehilite\"><pre><span></span><code>I&#39;m currently very interested in props that are sub-props of FinRel, FinCorel, FinSpan and FinCospan.  (Maybe I don&#39;t need to keep saying &quot;Fin&quot; if we&#39;re talking about props, since the objects are always finite numbers.)\n</code></pre></div>\n\n\n<p>By this do you mean wrt sets and the coproduct?</p>\n</blockquote>\n<p>Yes, I mean finite sets and disjoint union.   I'm in the mood for combinatorics these days.</p>\n</blockquote>\n<p>Aren't these examples relatively simple compared to the linear props.  Is the idea that you use different generators than the usual ones so that, for example, you can consider the category generated by the \"cnot gate\" in spans, in the sense that you chain together the multiplication and comultiplication?  I am trying to imagine some of the less obvious sub-props.</p>",
+        "id": 214253984,
+        "sender_full_name": "Cole Comfort",
+        "timestamp": 1603404434
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"275920\">John Baez</span> <a href=\"#narrow/stream/229136-theory.3A-category.20theory/topic/FinSet.20as.20walking.20commutative.20monoid/near/214253952\">said</a>:</p>\n<blockquote>\n<p>I think already for <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"double-struck\">N</mi></mrow><annotation encoding=\"application/x-tex\">\\mathbb{N}</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.68889em;vertical-align:0em;\"></span><span class=\"mord\"><span class=\"mord mathbb\">N</span></span></span></span></span> it breaks down.</p>\n</blockquote>\n<p>Yes, <span class=\"user-mention\" data-user-id=\"277342\">@Robin Piedeleu</span>  talks about this in his thesis, which is another good resource for such things.</p>",
+        "id": 214254053,
+        "sender_full_name": "Cole Comfort",
+        "timestamp": 1603404483
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"277391\">Cole Comfort</span> <a href=\"#narrow/stream/229136-theory.3A-category.20theory/topic/FinSet.20as.20walking.20commutative.20monoid/near/214253984\">said</a>:</p>\n<blockquote>\n<p>Aren't these examples relatively simple compared to the linear props?  </p>\n</blockquote>\n<p>Yes, they're simple and thus they show up throughout mathematics - there's usually an inverse relation between complexity and pervasiveness - but there are some fascinating ways in which they're all related to each other I guess I should fairly quickly write a nice explanation of what I mean here... maybe a blog article or quick paper.</p>",
+        "id": 214261385,
+        "sender_full_name": "John Baez",
+        "timestamp": 1603410937
+    },
+    {
+        "content": "<p>As you can see, I feel a bit possessive about my ideas... but once I get them out I'll be glad to contribute them to your massive dictionary.</p>\n<p>By the way: if it becomes a PhD thesis, that's a great thing.  You can put it on the arXiv, then try to publish it as a book or long paper.</p>",
+        "id": 214262199,
+        "sender_full_name": "John Baez",
+        "timestamp": 1603411906
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"275920\">John Baez</span> <a href=\"#narrow/stream/229136-theory.3A-category.20theory/topic/FinSet.20as.20walking.20commutative.20monoid/near/214262199\">said</a>:</p>\n<blockquote>\n<p>As you can see, I feel a bit possessive about my ideas... but once I get them out I'll be glad to contribute them to your massive dictionary.</p>\n</blockquote>\n<p>Looking forward to it!</p>",
+        "id": 214293555,
+        "sender_full_name": "Cole Comfort",
+        "timestamp": 1603446940
+    }
+]

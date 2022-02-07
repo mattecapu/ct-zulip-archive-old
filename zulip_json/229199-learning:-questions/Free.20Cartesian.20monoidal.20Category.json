@@ -1,0 +1,140 @@
+[
+    {
+        "content": "<p>I'm trying to unpack the meaning of this, and I want to double-check my understanding.  So \"free\" means that there's some Functor F that is left adjoint to some kind of forgetful functor. \"Free X\" usually refers to an object of the category of Xs.  So to unpack the above, we need to find 2 categories and a forgetful functor between them.</p>\n<p>The obvious category for X is then (Cartesian monoidal Categories, Homomorphisms), i.e. functors that respect the structure. In first order settings, the target category is usually Set, but here, that seems wrong, it seems we're implicitly targetting the category of categories instead. The \"free\" here is not about categorical structure, but rather cartesian monoidal structure.</p>\n<p>One is often then interested in specializing the construction given by this left adjoint, i.e. applying the functor in a special case. A recent thread mentions \"on 1 object\". So there are infinitely many categories with 1 object... but let's assume this sloppiness means \"the unit category\", i.e. an inhabited contractible category, i.e. a -2-category. Right?</p>\n<p>[I should also unpack \"free symmetric monoidal category on a commutative monoid object\"; assuming the unpacking above is correct, it's the \"on a commutative monoid object\" part that I'm fuzzy on. If the target is the category of categories, why does the left adjoint care that we apply it to a commutative monoid object? Basically: the sentence doesn't quite typecheck for me.]</p>",
+        "id": 214197908,
+        "sender_full_name": "Jacques Carette",
+        "timestamp": 1603378132
+    },
+    {
+        "content": "<p>There is a choice for what to be be free on (e.g. sets, categories, etc.). I think the clearest way to state the property (i.e. free cartesian category on a category) is that, for any category C and cartesian category D, with a functor F : C → D, there exists a category Cart(C) and a cartesian functor F' : Cart(C) → D, making the triangle commute up to a unique natural isomorphism.</p>",
+        "id": 214198614,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1603378424
+    },
+    {
+        "content": "<p>The free cartesian category on a single object then takes C = 1, the terminal category.</p>",
+        "id": 214198696,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1603378446
+    },
+    {
+        "content": "<p>(See the nLab page on <a href=\"https://ncatlab.org/nlab/show/free+object\">free objects</a>, for instance.)</p>",
+        "id": 214198885,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1603378555
+    },
+    {
+        "content": "<p>The free symmetric monoidal category on a commutative monoid is analogous, and I think it's actually described by Tom Leinster in <a href=\"https://golem.ph.utexas.edu/category/2010/01/f_and_the_shibboleth.html\">this blog post</a> (or a similar construction, anyway).</p>",
+        "id": 214199594,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1603378865
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276092\">Nathanael Arkor</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/Free.20Cartesian.20monoidal.20Category/near/214198614\">said</a>:</p>\n<blockquote>\n<p>There is a choice for what to be be free on (e.g. sets, categories, etc.). I think the clearest way to state the property (i.e. free cartesian category on a category) is that, for any category C and cartesian category D, with a functor F : C → D, there exists a category Cart(C) and a cartesian functor F' : Cart(C) → D, making the triangle commute up to a unique natural isomorphism.</p>\n</blockquote>\n<p>Yes, that's nice.   We can further package this by saying there's a <a href=\"https://ncatlab.org/nlab/show/pseudoadjunction\">pseudoadjunction</a> between the 2-category Cat and the 2-category </p>\n<p>CartCat = [cartesian categories, cartesian functors, natural transformations]</p>\n<p>where the right adjoint</p>\n<p>U: CartCat → Cat</p>\n<p>sends every cartesian category to its underlying category, and the thing you're calling Cart is the left adjoint </p>\n<p>Cart: Cat → CartCat</p>\n<p>applied to objects.</p>\n<p>(A \"pseudoadjunction\" is the most commonly useful 2-categorical generalization of adjunction.)</p>",
+        "id": 214212977,
+        "sender_full_name": "John Baez",
+        "timestamp": 1603384451
+    },
+    {
+        "content": "<p>How do you arrange for stuff like 'free symmetric monoidal category with a commutative monoid object', since the stuff in the Cat part lacks the structure to talk about the object?</p>",
+        "id": 214215328,
+        "sender_full_name": "Dan Doel",
+        "timestamp": 1603385512
+    },
+    {
+        "content": "<p>So there's probably several different presentations of the free cartesian monoidal category on a set or a category, but there's one by Lambek that I like that goes via proof theory: it's equivalent to a category whose morphisms are certain equivalence classes of proofs in a certain proof calculus. (In this case, it will be a proof calculus for the pure logic of \"and\")</p>",
+        "id": 214217301,
+        "sender_full_name": "Jules Hedges",
+        "timestamp": 1603386434
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"277270\">Dan Doel</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/Free.20Cartesian.20monoidal.20Category/near/214215328\">said</a>:</p>\n<blockquote>\n<p>How do you arrange for stuff like 'free symmetric monoidal category with a commutative monoid object', since the stuff in the Cat part lacks the structure to talk about the object?</p>\n</blockquote>\n<p>SMCs with commutative monoids should be given by models for the PROP of commutative monoids, for which you can talk about free models, so I imagine you can do it in two steps, by composing pseudoadjunctions Cat → SMC → SMC+CM.</p>",
+        "id": 214220495,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1603387905
+    },
+    {
+        "content": "<p>Oh, so you don't do \"free SMC\" on something, you do \"free (SMC with ...)\" on something?</p>",
+        "id": 214220654,
+        "sender_full_name": "Dan Doel",
+        "timestamp": 1603387979
+    },
+    {
+        "content": "<p>That would be my guess, because you're really talking about commutative monoid <em>objects</em>, so you need a SMC to describe them in the first place.</p>",
+        "id": 214221245,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1603388259
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"275901\">Jules Hedges</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/Free.20Cartesian.20monoidal.20Category/near/214217301\">said</a>:</p>\n<blockquote>\n<p>So there's probably several different presentations of the free cartesian monoidal category on a set or a category, but there's one by Lambek that I like that goes via proof theory: it's equivalent to a category whose morphisms are certain equivalence classes of proofs in a certain proof calculus. (In this case, it will be a proof calculus for the pure logic of \"and\")</p>\n</blockquote>\n<p>That's nice. Another thing is this: to get the free category with finite coproducts on C, form the category of presheaves on C and take the full subcategory where the objects are finite coproducts of representables.</p>\n<p>To get the free category with finite products on C, just dualize this.</p>\n<p>What's nice is that there are so many ways to think about this stuff: they shed different light on what's going on.</p>",
+        "id": 214222062,
+        "sender_full_name": "John Baez",
+        "timestamp": 1603388622
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"277270\">Dan Doel</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/Free.20Cartesian.20monoidal.20Category/near/214215328\">said</a>:</p>\n<blockquote>\n<p>How do you arrange for stuff like 'free symmetric monoidal category with a commutative monoid object', since the stuff in the Cat part lacks the structure to talk about the object?</p>\n</blockquote>\n<p>I've never thought about the \"free symmetric monoidal category with a commutative monoid object <em>on a category C</em>\", though one could.</p>\n<p>I mainly think about \"\"free symmetric monoidal category with a commutative monoid object\".  This is the case where C is empty.</p>",
+        "id": 214222336,
+        "sender_full_name": "John Baez",
+        "timestamp": 1603388736
+    },
+    {
+        "content": "<p>For me, the \"free symmetric monoidal category with a commutative monoid object\" is:</p>\n<ul>\n<li>a symmetric monoidal category X with a commutative monoid x </li>\n</ul>\n<p>such that </p>\n<ul>\n<li>for <em>any</em> symmetric monoidal category Y with <em>any</em> commutative monoid object y, there's a symmetric monoidal functor f : X <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>→</mo></mrow><annotation encoding=\"application/x-tex\">\\to</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.36687em;vertical-align:0em;\"></span><span class=\"mrel\">→</span></span></span></span> Y sending x and all its commutative monoid structure to y and its commutative monoid structure</li>\n</ul>\n<p>and</p>\n<ul>\n<li>f is unique up to isomorphism.</li>\n</ul>",
+        "id": 214222770,
+        "sender_full_name": "John Baez",
+        "timestamp": 1603388895
+    },
+    {
+        "content": "<p>This is just like how ordinary mathematicians think about \"the free group on one generator\".</p>",
+        "id": 214222882,
+        "sender_full_name": "John Baez",
+        "timestamp": 1603388936
+    },
+    {
+        "content": "<p>And not just the free group on one generator, but also things like \"the free group on one generator <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>z</mi></mrow><annotation encoding=\"application/x-tex\">z</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.43056em;vertical-align:0em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.04398em;\">z</span></span></span></span> such that <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msup><mi>z</mi><mn>2</mn></msup><mo>=</mo><mn>1</mn></mrow><annotation encoding=\"application/x-tex\">z^2 = 1</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8141079999999999em;vertical-align:0em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.04398em;\">z</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.8141079999999999em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">2</span></span></span></span></span></span></span></span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.64444em;vertical-align:0em;\"></span><span class=\"mord\">1</span></span></span></span>\".</p>",
+        "id": 214222955,
+        "sender_full_name": "Reid Barton",
+        "timestamp": 1603388962
+    },
+    {
+        "content": "<p>Right: there we are giving the generator extra <em>properties</em>.</p>",
+        "id": 214223017,
+        "sender_full_name": "John Baez",
+        "timestamp": 1603388985
+    },
+    {
+        "content": "<p>In the categorified situation we can get a bit fancier and give the generator extra <em>structure</em>, like being a commutative monoid object.</p>",
+        "id": 214223131,
+        "sender_full_name": "John Baez",
+        "timestamp": 1603389014
+    },
+    {
+        "content": "<p>But Dan is right that this idea can - and perhaps should? - be packaged into an adjunction.</p>",
+        "id": 214223179,
+        "sender_full_name": "John Baez",
+        "timestamp": 1603389039
+    },
+    {
+        "content": "<p>Nathaniel sketched how that goes, in this case.</p>",
+        "id": 214223297,
+        "sender_full_name": "John Baez",
+        "timestamp": 1603389091
+    },
+    {
+        "content": "<p>Well, for instance, it seems clear how 'free cartesian monoidal category with an object' works as an adjunction, and the phrasing is pretty much the same. I just realized I couldn't make sense of one of the examples. :)</p>",
+        "id": 214223810,
+        "sender_full_name": "Dan Doel",
+        "timestamp": 1603389303
+    },
+    {
+        "content": "<p>I mean, it's clear to me what the thing was supposed to be. But not how to fit it in the particular free/forgetful framework.</p>",
+        "id": 214223978,
+        "sender_full_name": "Dan Doel",
+        "timestamp": 1603389367
+    },
+    {
+        "content": "<p>Yes.  A commutative monoid only knows how to survive in a symmetric monoidal category, so you have to freely provide its environment before you can freely provide the commutative monoid.     This is an example of the microcosm principle.</p>\n<p>It's like: to buy a goldfish, you'd better buy a fish tank first.</p>",
+        "id": 214224311,
+        "sender_full_name": "John Baez",
+        "timestamp": 1603389519
+    }
+]

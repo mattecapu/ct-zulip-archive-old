@@ -1,0 +1,236 @@
+[
+    {
+        "content": "<p>Traditionally, when one speaks of <a href=\"https://ncatlab.org/nlab/show/enriched+category\">enriched categories</a>, it is over a monoidal category.  But for <a href=\"http://www.math.mcgill.ca/rags/difftl/MSCS-Differential_Categories.pdf\">differential categories</a>, the \"additive categories\" there are <strong>commutative monoid</strong> enriched.  As stated there, this means all Homs have the structure of a commutative monoid (and some interaction laws).</p>\n<p>Question: is this in fact the same as enriching over the category of commutative monoids, with its product monoidal structure? It looks like it is, but I'm about to embark of formalizing all of this, so if I'm reading things incorrectly, I'd rather not find out the hard way!  [I've read 6 or 7 papers on variations on differential categories, and all of them build the monoid-enrichment 'from scratch' without mentioning that classically enrichment goes through a monoidal category.]</p>",
+        "id": 202764180,
+        "sender_full_name": "Jacques Carette",
+        "timestamp": 1593744499
+    },
+    {
+        "content": "<p>No, with the tensor product structure.</p>",
+        "id": 202764409,
+        "sender_full_name": "Reid Barton",
+        "timestamp": 1593744859
+    },
+    {
+        "content": "<p>Composition is bilinear, not linear in the pair.</p>",
+        "id": 202764488,
+        "sender_full_name": "Reid Barton",
+        "timestamp": 1593744973
+    },
+    {
+        "content": "<p>Thanks, that helps. As does the implicit affirmation of the rest.</p>",
+        "id": 202765134,
+        "sender_full_name": "Jacques Carette",
+        "timestamp": 1593746115
+    },
+    {
+        "content": "<p>There's a bit of an odd mismatch in differential categories where the symmetric monoidal structure is CMon-enriched, but the coalgebraic modality is not necessarily CMon-enriched.</p>",
+        "id": 202766082,
+        "sender_full_name": "Ben MacAdam",
+        "timestamp": 1593747660
+    },
+    {
+        "content": "<p>Thanks for the warning. We'll see how that comes up in the formalization. Usually such 'odd mismatches' do manifest themselves.</p>",
+        "id": 202766361,
+        "sender_full_name": "Jacques Carette",
+        "timestamp": 1593748197
+    },
+    {
+        "content": "<p>To answer one of your questions: when people say a category is \"commutative monoid enriched\", they're saying it's enriched over the monoidal category of commutative monoids.  </p>\n<p>(And you can replace \"commutative monoid\" by anything else here: \"X-enriched\" is short for \"enriched over the monoidal category of X's\".)</p>",
+        "id": 202769827,
+        "sender_full_name": "John Baez",
+        "timestamp": 1593753943
+    },
+    {
+        "content": "<p>But when people say \"the\" monoidal category of commutative monoids, they're expecting you to guess which way they're making commutative monoids into the objects of a monoidal category.   There are two \"obvious\" ways, but the good way here uses the tensor product of commutative monoids, not the cartesian product.</p>",
+        "id": 202769897,
+        "sender_full_name": "John Baez",
+        "timestamp": 1593754056
+    },
+    {
+        "content": "<p>Hmm, now I'm wondering about actually constructing that tensor product. Already formal linear combinations are a bit odd (but doable), but the quotient is really hard. Is there a normal form for the tensor product? Even if there is, I suspect that it will implicitly assume decidable equality.</p>",
+        "id": 202800170,
+        "sender_full_name": "Jacques Carette",
+        "timestamp": 1593780537
+    },
+    {
+        "content": "<p>Do you construct CMon as the EM algebra of the free commutative monoid monad?</p>",
+        "id": 202803514,
+        "sender_full_name": "vikraman",
+        "timestamp": 1593782777
+    },
+    {
+        "content": "<p>I was hoping for a more direct construction.  But even then \"free commutative monoid monad\" is Bag, which is very difficult to deal with constructively. If you have decidable equality, then it's not too bad, but without, it is quite a lot of work.<br>\n[And you mean CMon as monoidal category, right? Because CMon as category is very straightforward].</p>",
+        "id": 202803850,
+        "sender_full_name": "Jacques Carette",
+        "timestamp": 1593783014
+    },
+    {
+        "content": "<p>I was going to suggest that, since Bag is a commutative monad, you could get the symmetric monoidal closed structure of CMon abstractly (using a result like <a href=\"https://users-math.au.dk/~kock/CCGBCM.pdf\">https://users-math.au.dk/~kock/CCGBCM.pdf</a>), you'd just need coequalizers in Set/Type.</p>",
+        "id": 202804245,
+        "sender_full_name": "vikraman",
+        "timestamp": 1593783311
+    },
+    {
+        "content": "<p>There's a hope I might be able to squeak through: I'm working in Setoid-enriched categories at the base, so I can indeed change the equivalence.  (1,2)-categories might turn out to be \"the right choice\" once again.  (And why do you say coequalizers? p.6 of the paper assumes equalizers).</p>",
+        "id": 202804793,
+        "sender_full_name": "Jacques Carette",
+        "timestamp": 1593783712
+    },
+    {
+        "content": "<p>Here is the explicit description: <a href=\"https://ncatlab.org/nlab/show/tensor+product+of+algebras+over+a+commutative+monad\">https://ncatlab.org/nlab/show/tensor+product+of+algebras+over+a+commutative+monad</a></p>",
+        "id": 202805443,
+        "sender_full_name": "vikraman",
+        "timestamp": 1593784174
+    },
+    {
+        "content": "<p>The linked paper constructs the closed structure, not the monoidal structure.</p>",
+        "id": 202805528,
+        "sender_full_name": "Reid Barton",
+        "timestamp": 1593784207
+    },
+    {
+        "content": "<p>But the closed structure on CMon doesn't require anything fancy to construct.</p>",
+        "id": 202805551,
+        "sender_full_name": "Reid Barton",
+        "timestamp": 1593784230
+    },
+    {
+        "content": "<p>I think you can also talk about an additive category as a category \"enriched in the closed category CMon\" (in fact I think this might even predate the notion of a monoidal category).</p>",
+        "id": 202805588,
+        "sender_full_name": "Reid Barton",
+        "timestamp": 1593784271
+    },
+    {
+        "content": "<p><span class=\"user-mention\" data-user-id=\"276098\">@vikraman</span> Thanks, that helps. Except for the underlying Bag angle.  </p>\n<p><span class=\"user-mention\" data-user-id=\"276480\">@Reid Barton</span> Indeed. I should have noticed earlier (about the paper).  Re: additive category, that is an interesting remark. So it might be possible to enrich in something weaker?  My original question was related to just this. Maybe what I need to do is to ignore the word 'enrich' (in its traditional meaning) and hand-code \"additive category\" as being CMon-valued.  [And isn't additive category usually reserved for Ab-enriched?]</p>",
+        "id": 202805938,
+        "sender_full_name": "Jacques Carette",
+        "timestamp": 1593784500
+    },
+    {
+        "content": "<p>Sure, maybe. I don't think the terminology is very consistent.</p>",
+        "id": 202805968,
+        "sender_full_name": "Reid Barton",
+        "timestamp": 1593784525
+    },
+    {
+        "content": "<p>If CMon is the only category you care about enriching in, it's a lot simpler to just describe what it means to be CMon-enriched directly (Hom sets have commutative monoid structures, and composition is bilinear)</p>",
+        "id": 202806259,
+        "sender_full_name": "Reid Barton",
+        "timestamp": 1593784705
+    },
+    {
+        "content": "<p>IMO, the most natural framework to describe this is enrichment in the multicategory CMon</p>",
+        "id": 202806283,
+        "sender_full_name": "Reid Barton",
+        "timestamp": 1593784725
+    },
+    {
+        "content": "<p>but that also seems to be substantially less convenient formally than it is in ordinary mathematics.</p>",
+        "id": 202806324,
+        "sender_full_name": "Reid Barton",
+        "timestamp": 1593784762
+    },
+    {
+        "content": "<p>I suppose it depends on what you are doing but most likely, even when dealing with a CMon-enriched category, you're still going to be composing pairs of morphisms <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>f</mi><mo>∈</mo><mrow><mi mathvariant=\"normal\">H</mi><mi mathvariant=\"normal\">o</mi><mi mathvariant=\"normal\">m</mi></mrow><mo stretchy=\"false\">(</mo><mi>B</mi><mo separator=\"true\">,</mo><mi>C</mi><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">f \\in \\mathrm{Hom}(B, C)</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8888799999999999em;vertical-align:-0.19444em;\"></span><span class=\"mord mathdefault\" style=\"margin-right:0.10764em;\">f</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">∈</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord\"><span class=\"mord mathrm\">H</span><span class=\"mord mathrm\">o</span><span class=\"mord mathrm\">m</span></span><span class=\"mopen\">(</span><span class=\"mord mathdefault\" style=\"margin-right:0.05017em;\">B</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mord mathdefault\" style=\"margin-right:0.07153em;\">C</span><span class=\"mclose\">)</span></span></span></span>, <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>g</mi><mo>∈</mo><mrow><mi mathvariant=\"normal\">H</mi><mi mathvariant=\"normal\">o</mi><mi mathvariant=\"normal\">m</mi></mrow><mo stretchy=\"false\">(</mo><mi>A</mi><mo separator=\"true\">,</mo><mi>B</mi><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">g \\in \\mathrm{Hom}(A, B)</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.7335400000000001em;vertical-align:-0.19444em;\"></span><span class=\"mord mathdefault\" style=\"margin-right:0.03588em;\">g</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">∈</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord\"><span class=\"mord mathrm\">H</span><span class=\"mord mathrm\">o</span><span class=\"mord mathrm\">m</span></span><span class=\"mopen\">(</span><span class=\"mord mathdefault\">A</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mord mathdefault\" style=\"margin-right:0.05017em;\">B</span><span class=\"mclose\">)</span></span></span></span> to get <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>f</mi><mo>∘</mo><mi>g</mi></mrow><annotation encoding=\"application/x-tex\">f \\circ g</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8888799999999999em;vertical-align:-0.19444em;\"></span><span class=\"mord mathdefault\" style=\"margin-right:0.10764em;\">f</span><span class=\"mspace\" style=\"margin-right:0.2222222222222222em;\"></span><span class=\"mbin\">∘</span><span class=\"mspace\" style=\"margin-right:0.2222222222222222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.625em;vertical-align:-0.19444em;\"></span><span class=\"mord mathdefault\" style=\"margin-right:0.03588em;\">g</span></span></span></span>, and you want to use the laws stated in the form <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>f</mi><mo>∘</mo><mo stretchy=\"false\">(</mo><msub><mi>g</mi><mn>1</mn></msub><mo>+</mo><msub><mi>g</mi><mn>2</mn></msub><mo stretchy=\"false\">)</mo><mo>=</mo><mi>f</mi><mo>∘</mo><msub><mi>g</mi><mn>1</mn></msub><mo>+</mo><mi>f</mi><mo>∘</mo><msub><mi>g</mi><mn>2</mn></msub></mrow><annotation encoding=\"application/x-tex\">f \\circ (g_1 + g_2) = f \\circ g_1 + f \\circ g_2</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8888799999999999em;vertical-align:-0.19444em;\"></span><span class=\"mord mathdefault\" style=\"margin-right:0.10764em;\">f</span><span class=\"mspace\" style=\"margin-right:0.2222222222222222em;\"></span><span class=\"mbin\">∘</span><span class=\"mspace\" style=\"margin-right:0.2222222222222222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mopen\">(</span><span class=\"mord\"><span class=\"mord mathdefault\" style=\"margin-right:0.03588em;\">g</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.30110799999999993em;\"><span style=\"top:-2.5500000000000003em;margin-left:-0.03588em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">1</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span><span class=\"mspace\" style=\"margin-right:0.2222222222222222em;\"></span><span class=\"mbin\">+</span><span class=\"mspace\" style=\"margin-right:0.2222222222222222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord\"><span class=\"mord mathdefault\" style=\"margin-right:0.03588em;\">g</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.30110799999999993em;\"><span style=\"top:-2.5500000000000003em;margin-left:-0.03588em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">2</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span><span class=\"mclose\">)</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.8888799999999999em;vertical-align:-0.19444em;\"></span><span class=\"mord mathdefault\" style=\"margin-right:0.10764em;\">f</span><span class=\"mspace\" style=\"margin-right:0.2222222222222222em;\"></span><span class=\"mbin\">∘</span><span class=\"mspace\" style=\"margin-right:0.2222222222222222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.7777700000000001em;vertical-align:-0.19444em;\"></span><span class=\"mord\"><span class=\"mord mathdefault\" style=\"margin-right:0.03588em;\">g</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.30110799999999993em;\"><span style=\"top:-2.5500000000000003em;margin-left:-0.03588em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">1</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span><span class=\"mspace\" style=\"margin-right:0.2222222222222222em;\"></span><span class=\"mbin\">+</span><span class=\"mspace\" style=\"margin-right:0.2222222222222222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.8888799999999999em;vertical-align:-0.19444em;\"></span><span class=\"mord mathdefault\" style=\"margin-right:0.10764em;\">f</span><span class=\"mspace\" style=\"margin-right:0.2222222222222222em;\"></span><span class=\"mbin\">∘</span><span class=\"mspace\" style=\"margin-right:0.2222222222222222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.625em;vertical-align:-0.19444em;\"></span><span class=\"mord\"><span class=\"mord mathdefault\" style=\"margin-right:0.03588em;\">g</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.30110799999999993em;\"><span style=\"top:-2.5500000000000003em;margin-left:-0.03588em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">2</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span></span></span></span>.</p>",
+        "id": 202806925,
+        "sender_full_name": "Reid Barton",
+        "timestamp": 1593785093
+    },
+    {
+        "content": "<p>Agda-categories already has all the infrastructure in place to enrich over monoidal categories. So it was tempting to re-use it. But that appears to be difficult constructively. And, right now, I am <strong>really</strong> interested in differential categories, so I don't want to take a long detour, if I can help it.</p>\n<p>There is also a problem with multicategories: its formalism \"bakes in\" a lot of theorems about the natural numbers (and the type Fin) as strict equalities, when constructively they require more. They are all true (of coruse), but introduce a very significant amount of noise.  Turns out that an 'indexed' version of multicategories, where finiteness is not assumed, is considerably easier to work with.</p>",
+        "id": 202806987,
+        "sender_full_name": "Jacques Carette",
+        "timestamp": 1593785123
+    },
+    {
+        "content": "<p>You don't naturally come across elements in <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mrow><mi mathvariant=\"normal\">H</mi><mi mathvariant=\"normal\">o</mi><mi mathvariant=\"normal\">m</mi></mrow><mo stretchy=\"false\">(</mo><mi>B</mi><mo separator=\"true\">,</mo><mi>C</mi><mo stretchy=\"false\">)</mo><mo>⊗</mo><mrow><mi mathvariant=\"normal\">H</mi><mi mathvariant=\"normal\">o</mi><mi mathvariant=\"normal\">m</mi></mrow><mo stretchy=\"false\">(</mo><mi>A</mi><mo separator=\"true\">,</mo><mi>B</mi><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">\\mathrm{Hom}(B, C) \\otimes \\mathrm{Hom}(A, B)</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord\"><span class=\"mord mathrm\">H</span><span class=\"mord mathrm\">o</span><span class=\"mord mathrm\">m</span></span><span class=\"mopen\">(</span><span class=\"mord mathdefault\" style=\"margin-right:0.05017em;\">B</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mord mathdefault\" style=\"margin-right:0.07153em;\">C</span><span class=\"mclose\">)</span><span class=\"mspace\" style=\"margin-right:0.2222222222222222em;\"></span><span class=\"mbin\">⊗</span><span class=\"mspace\" style=\"margin-right:0.2222222222222222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord\"><span class=\"mord mathrm\">H</span><span class=\"mord mathrm\">o</span><span class=\"mord mathrm\">m</span></span><span class=\"mopen\">(</span><span class=\"mord mathdefault\">A</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mord mathdefault\" style=\"margin-right:0.05017em;\">B</span><span class=\"mclose\">)</span></span></span></span> to apply <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>μ</mi><mo>:</mo><mrow><mi mathvariant=\"normal\">H</mi><mi mathvariant=\"normal\">o</mi><mi mathvariant=\"normal\">m</mi></mrow><mo stretchy=\"false\">(</mo><mi>B</mi><mo separator=\"true\">,</mo><mi>C</mi><mo stretchy=\"false\">)</mo><mo>⊗</mo><mrow><mi mathvariant=\"normal\">H</mi><mi mathvariant=\"normal\">o</mi><mi mathvariant=\"normal\">m</mi></mrow><mo stretchy=\"false\">(</mo><mi>A</mi><mo separator=\"true\">,</mo><mi>B</mi><mo stretchy=\"false\">)</mo><mo>→</mo><mrow><mi mathvariant=\"normal\">H</mi><mi mathvariant=\"normal\">o</mi><mi mathvariant=\"normal\">m</mi></mrow><mo stretchy=\"false\">(</mo><mi>A</mi><mo separator=\"true\">,</mo><mi>C</mi><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">\\mu : \\mathrm{Hom}(B, C) \\otimes \\mathrm{Hom}(A, B) \\to \\mathrm{Hom}(A, C)</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.625em;vertical-align:-0.19444em;\"></span><span class=\"mord mathdefault\">μ</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">:</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord\"><span class=\"mord mathrm\">H</span><span class=\"mord mathrm\">o</span><span class=\"mord mathrm\">m</span></span><span class=\"mopen\">(</span><span class=\"mord mathdefault\" style=\"margin-right:0.05017em;\">B</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mord mathdefault\" style=\"margin-right:0.07153em;\">C</span><span class=\"mclose\">)</span><span class=\"mspace\" style=\"margin-right:0.2222222222222222em;\"></span><span class=\"mbin\">⊗</span><span class=\"mspace\" style=\"margin-right:0.2222222222222222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord\"><span class=\"mord mathrm\">H</span><span class=\"mord mathrm\">o</span><span class=\"mord mathrm\">m</span></span><span class=\"mopen\">(</span><span class=\"mord mathdefault\">A</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mord mathdefault\" style=\"margin-right:0.05017em;\">B</span><span class=\"mclose\">)</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">→</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord\"><span class=\"mord mathrm\">H</span><span class=\"mord mathrm\">o</span><span class=\"mord mathrm\">m</span></span><span class=\"mopen\">(</span><span class=\"mord mathdefault\">A</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mord mathdefault\" style=\"margin-right:0.07153em;\">C</span><span class=\"mclose\">)</span></span></span></span> to.</p>",
+        "id": 202806998,
+        "sender_full_name": "Reid Barton",
+        "timestamp": 1593785133
+    },
+    {
+        "content": "<p>So, really the relevant way to think of composition is as a bilinear map and the fact that bilinear maps are represented by linear maps out of a \"tensor product\" is mostly irrelevant.</p>",
+        "id": 202807154,
+        "sender_full_name": "Reid Barton",
+        "timestamp": 1593785211
+    },
+    {
+        "content": "<p>I agree that I need those laws, they are crucial. That 'irrelevance' might be rather important. It might indeed let me code things up directly.  I'll try that next!</p>",
+        "id": 202807310,
+        "sender_full_name": "Jacques Carette",
+        "timestamp": 1593785304
+    },
+    {
+        "content": "<p><span class=\"user-mention\" data-user-id=\"296322\">@Jacques Carette</span> I suggested Bag since it's a simple recursive HIT, and once you have its universal property, you can do a lot calculations using it (see <a href=\"https://hott.github.io/HoTT-2019/conf-slides/Choudhury.pdf\">here</a>, <a href=\"https://hott-uf.github.io/2020/HoTTUF_2020_paper_18.pdf\">here</a>, <a href=\"https://pure.strath.ac.uk/ws/portalfiles/portal/96390173/Forsberg_etal_SIGPLAN_2020_Three_equivalent_ordinal_notation_systems_in_cubical_agda.pdf\">here</a>). These examples are all internally in HoTT, but in your work, you could probably axiomatise the universal property, but you'll also have to transport along the equivalences you get. So this would be one slick way to construct CMon and it's tensor product.</p>",
+        "id": 202812821,
+        "sender_full_name": "vikraman",
+        "timestamp": 1593788653
+    },
+    {
+        "content": "<p>Amusingly, I just wrote to the authors (Carlos, Anders and Max) of the 2nd paper you link to, pointing out to them that their (mentioned but not highlighted) assumption on decidable equality of the underlying A is a huge assumption. The paper on ordinals is absolutely gorgeous. If you're a glutton for punishment, you can dig through the dumpster fire that is my Agda code at <a href=\"https://github.com/JacquesCarette/TheoriesAndDataStructures\">https://github.com/JacquesCarette/TheoriesAndDataStructures</a> to see how I've implemented Bag (and proved the Adjoint property in full).  Better is the set of slides <a href=\"https://alhassy.github.io/next-700-module-systems/papers/JC_Program_Generation_Talk_IFIP.pdf\">https://alhassy.github.io/next-700-module-systems/papers/JC_Program_Generation_Talk_IFIP.pdf</a> . Ignore all the .pdf from the first github repo, they are all 'wrong' (and were rightly never submitted anywhere).  [Reading your slides now]</p>",
+        "id": 202814108,
+        "sender_full_name": "Jacques Carette",
+        "timestamp": 1593789464
+    },
+    {
+        "content": "<p>Very nice!  I was wondering when permutations would creep in more explicitly. What your HIT is encoding is that the identity type of a multiset, represented as a list of members, is exactly the set of (finite) permutations. I'm kind of surprised you don't say that explicitly anywhere.</p>",
+        "id": 202814439,
+        "sender_full_name": "Jacques Carette",
+        "timestamp": 1593789694
+    },
+    {
+        "content": "<p>Question: why do you explicitly truncate? Either as level 1 or 2? What do you get out of doing that?</p>",
+        "id": 202814619,
+        "sender_full_name": "Jacques Carette",
+        "timestamp": 1593789795
+    },
+    {
+        "content": "<p>I am super interested in the differential structure, and in generalized species.  I've been slowly adding features to agda-categories with that in mind. [That's probably not apparent to anyone but me, but we can talk on another forum if that interests you.]</p>",
+        "id": 202814767,
+        "sender_full_name": "Jacques Carette",
+        "timestamp": 1593789862
+    },
+    {
+        "content": "<p>Presumably because a commutative monoid is supposed to be a set by definition, and you won't get a set unless you truncate</p>",
+        "id": 202816537,
+        "sender_full_name": "Reid Barton",
+        "timestamp": 1593791102
+    },
+    {
+        "content": "<p>With groupoids, if you want to construct the free symmetric monoidal groupoid, it gets stuck because once you add the coherences, you run into regularity issues with the target of the path constructors having hcomps.</p>",
+        "id": 202818488,
+        "sender_full_name": "vikraman",
+        "timestamp": 1593792480
+    },
+    {
+        "content": "<p>\"A monoid is supposed to be a set\" is very 0-categorical thinking. I'm interested in asking \"so what if we don't assume that, what changes?\"  The Agda standard library, which defines Monoid over Setoid, the answer is 'nothing much'. It's a tiny bit more tedious, but not remarkably so.</p>",
+        "id": 202819267,
+        "sender_full_name": "Jacques Carette",
+        "timestamp": 1593792971
+    },
+    {
+        "content": "<p>The response re: groupoids says that, there, indeed something does change, and truncation becomes a good option to deal with the resulting regularity problem.</p>",
+        "id": 202819365,
+        "sender_full_name": "Jacques Carette",
+        "timestamp": 1593793056
+    },
+    {
+        "content": "<p>Note that I'm not saying that Monoids shouldn't be sets. I'm saying that we shouldn't force them to be, until we've figured out that it's kind of necessary to do so.</p>",
+        "id": 202819486,
+        "sender_full_name": "Jacques Carette",
+        "timestamp": 1593793135
+    },
+    {
+        "content": "<p>If they are not sets then they should have higher coherence data which we don't know how to write down in HoTT.</p>",
+        "id": 202821991,
+        "sender_full_name": "Reid Barton",
+        "timestamp": 1593795080
+    },
+    {
+        "content": "<p>A monoid object can be defined in any monoidal category, setoids, or ∞ Grpd, but it's not the same problem as defining the free monoid monad, or the free SMC 2-monad, which is supposed to be an endofunctor.</p>",
+        "id": 202821993,
+        "sender_full_name": "vikraman",
+        "timestamp": 1593795081
+    }
+]

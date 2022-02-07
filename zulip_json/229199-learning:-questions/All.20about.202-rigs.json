@@ -1,0 +1,392 @@
+[
+    {
+        "content": "<p>Lately I've been interested in studying the theory of 2-rigs deeper. </p>\n<p>Since the terminology isn't exactly well-established, by \"2-rig\" I mean a category <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>C</mi></mrow><annotation encoding=\"application/x-tex\">C</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.07153em;\">C</span></span></span></span> having two monoidal structures, the \"additive\" one <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>⊕</mo></mrow><annotation encoding=\"application/x-tex\">\\oplus</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.66666em;vertical-align:-0.08333em;\"></span><span class=\"mord\">⊕</span></span></span></span> and the \"multiplicative\" one <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>⊗</mo></mrow><annotation encoding=\"application/x-tex\">\\otimes</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.66666em;vertical-align:-0.08333em;\"></span><span class=\"mord\">⊗</span></span></span></span>, and <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>⊗</mo></mrow><annotation encoding=\"application/x-tex\">\\otimes</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.66666em;vertical-align:-0.08333em;\"></span><span class=\"mord\">⊗</span></span></span></span> distributes over <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>⊕</mo></mrow><annotation encoding=\"application/x-tex\">\\oplus</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.66666em;vertical-align:-0.08333em;\"></span><span class=\"mord\">⊕</span></span></span></span>; </p>\n<p>the definition goes back to Laplaza, if I recall correctly, and it was recently <a href=\"https://arxiv.org/abs/2004.08684\">proved</a> by Elgueta a conjecture posed by <span class=\"user-mention\" data-user-id=\"275920\">@John Baez</span> that says that the 2-rig of finite sets, bijections, coproducts and products is initial in a suitable 2-category of 2-rigs. </p>\n<p>Coherence conditions for a diagram in a 2-rig are quite a mess but fortunately I can limit myself to additively cocartesian monoidal structures, i.e. where <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>⊕</mo></mrow><annotation encoding=\"application/x-tex\">\\oplus</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.66666em;vertical-align:-0.08333em;\"></span><span class=\"mord\">⊕</span></span></span></span> is given by coproduct.</p>\n<p>This is very interesting stuff, and I have eagerly used it in a project I've been thinking about for quite some time. </p>\n<p>I am planning to post more material on this later (quite likely, way more questions to come: I have been trapped in a foxhole for quite some time, and I have no clue how to prove a bunch of conjectures): for the moment, my question is just one: </p>\n<p>Many categories of usual practice are 2-rigs, so it is natural to ask, has anyone studied the notion of a category enriched over a 2-rig? If yes, the enrichment was understood with respect to the additive structure, or the multiplicative structure, alone, or in synergy with the other? How does distributivity of <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>⊗</mo></mrow><annotation encoding=\"application/x-tex\">\\otimes</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.66666em;vertical-align:-0.08333em;\"></span><span class=\"mord\">⊗</span></span></span></span> over <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>⊕</mo></mrow><annotation encoding=\"application/x-tex\">\\oplus</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.66666em;vertical-align:-0.08333em;\"></span><span class=\"mord\">⊕</span></span></span></span> enhances the theory of enriched categories?</p>\n<p>I've been thinking about this with <span class=\"user-mention\" data-user-id=\"276438\">@Fabrizio Genovese</span> <span class=\"user-mention\" data-user-id=\"277812\">@Matt Earnshaw</span> <span class=\"user-mention\" data-user-id=\"281862\">@Daniele Palombi</span> and a bunch of other people, hence the tags.</p>",
+        "id": 223294378,
+        "sender_full_name": "fosco",
+        "timestamp": 1611090332
+    },
+    {
+        "content": "<p>I believe <span class=\"user-mention\" data-user-id=\"280784\">@Joshua Meyers</span> showed that if you enrich over a cocartesian monoidal structure, the hom-objects must all be isomorphic (<a class=\"stream-topic\" data-stream-id=\"229136\" href=\"/#narrow/stream/229136-theory.3A-category-theory/topic/Strange.20Structure\">#theory: category theory &gt; Strange Structure</a>), so you probably don't want to pick the additive structure.</p>",
+        "id": 223313567,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1611100394
+    },
+    {
+        "content": "<p>I think if the additive structure isn't cocartesian, ie if you have two monoidal structures with distribution, then you call it a \"rig category\" following either Kelly or Laplaza, iirc.</p>",
+        "id": 223314213,
+        "sender_full_name": "Joe Moeller",
+        "timestamp": 1611100863
+    },
+    {
+        "content": "<p>(<span class=\"user-mention\" data-user-id=\"282822\">@fosco</span> mentioned this in the second paragraph.)</p>",
+        "id": 223314472,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1611101048
+    },
+    {
+        "content": "<p>Wow, I read the whole thing, but my eyes completely missed that. I guess I was skimming the beginning more than really reading.</p>",
+        "id": 223314638,
+        "sender_full_name": "Joe Moeller",
+        "timestamp": 1611101196
+    },
+    {
+        "content": "<p>I was thinking about this question also recently, specifically with Lawvere metric spaces. They are categories enriched over the tropical semiring, but this definition only talks about the multiplicative structure.</p>",
+        "id": 223315005,
+        "sender_full_name": "Joe Moeller",
+        "timestamp": 1611101453
+    },
+    {
+        "content": "<p>The additive structure is surely also important in certain contexts. I was brought to think about this after hearing a talk by Callum Reader last year at TICT, and then shortly after again due to a talk by Simon Willerton.</p>",
+        "id": 223315167,
+        "sender_full_name": "Joe Moeller",
+        "timestamp": 1611101570
+    },
+    {
+        "content": "<p>Thinking about optimization for instance will surely require you to think about both addition and min. This was the context I think in both of those talks.</p>",
+        "id": 223315357,
+        "sender_full_name": "Joe Moeller",
+        "timestamp": 1611101697
+    },
+    {
+        "content": "<p>So the natural question is what role does the additive structure have in a category enriched over the multiplicative structure?</p>",
+        "id": 223315425,
+        "sender_full_name": "Joe Moeller",
+        "timestamp": 1611101755
+    },
+    {
+        "content": "<p>in the tropical semiring <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"false\">(</mo><mi mathvariant=\"double-struck\">R</mi><mo separator=\"true\">,</mo><mi>min</mi><mo>⁡</mo><mo separator=\"true\">,</mo><mo>+</mo><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">(\\mathbb R, \\min,+)</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mopen\">(</span><span class=\"mord mathbb\">R</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mop\">min</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mord\">+</span><span class=\"mclose\">)</span></span></span></span> the additive structure is \"min\", so it's coproduct in <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"false\">(</mo><mi mathvariant=\"double-struck\">R</mi><mo separator=\"true\">,</mo><mo>≥</mo><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">(\\mathbb R, \\ge)</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mopen\">(</span><span class=\"mord mathbb\">R</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">≥</span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mclose\">)</span></span></span></span> (=product in <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"false\">(</mo><mi mathvariant=\"double-struck\">R</mi><mo separator=\"true\">,</mo><mo>≤</mo><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">(\\mathbb R, \\le)</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mopen\">(</span><span class=\"mord mathbb\">R</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">≤</span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mclose\">)</span></span></span></span>, right?</p>",
+        "id": 223342109,
+        "sender_full_name": "fosco",
+        "timestamp": 1611130144
+    },
+    {
+        "content": "<p>Another example that motivates my interest is enrichment over lattices, regarded as 2-rigs with respect to <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>∧</mo><mo separator=\"true\">,</mo><mo>∨</mo></mrow><annotation encoding=\"application/x-tex\">\\land,\\lor</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.75em;vertical-align:-0.19444em;\"></span><span class=\"mord\">∧</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mord\">∨</span></span></span></span></p>",
+        "id": 223342235,
+        "sender_full_name": "fosco",
+        "timestamp": 1611130229
+    },
+    {
+        "content": "<p>but you see, in both these examples sum is idempotent, I would like to find an example that is not!</p>\n<p>Anyway, this question acquires more sense when it's put in a broader perspective, I'll be back with it and more questions <span aria-label=\"grinning\" class=\"emoji emoji-1f600\" role=\"img\" title=\"grinning\">:grinning:</span></p>",
+        "id": 223342325,
+        "sender_full_name": "fosco",
+        "timestamp": 1611130314
+    },
+    {
+        "content": "<p>I am wondering why you want to call these things 2-rigs and not rig categories or bimonoidal categories? Especially given that 2-rig is already used for something else? When writing our paper on string diagrams for bimonoidal categories (so, your \"2-rigs\") it was difficult enough already to choose between \"rig category\" and \"bimonoidal category\", I hope we can avoid coming up with a new name in each paper on the subject!</p>",
+        "id": 223360234,
+        "sender_full_name": "Antonin Delpeuch",
+        "timestamp": 1611141274
+    },
+    {
+        "content": "<p>I agree it might be potentially confusing, and I should change it. \"2-rig\" is just shorter and easier to stick in my limited memory</p>",
+        "id": 223362543,
+        "sender_full_name": "fosco",
+        "timestamp": 1611143009
+    },
+    {
+        "content": "<p>If I remember correctly we arbitrarily went with \"bimonoidal category\" mostly on the grounds that the word \"rig\" mildly irritates me. (And that was <em>before</em> a certain incident on twitter happened)</p>",
+        "id": 223363271,
+        "sender_full_name": "Jules Hedges",
+        "timestamp": 1611143603
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"275901\">Jules Hedges</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/All.20about.202-rigs/near/223363271\">said</a>:</p>\n<blockquote>\n<p>the word \"rig\" mildly irritates me. </p>\n</blockquote>\n<p>Oh, in that case I surely have to edit the entire manuscript!</p>",
+        "id": 223363658,
+        "sender_full_name": "fosco",
+        "timestamp": 1611143937
+    },
+    {
+        "content": "<p>(related, but not <a href=\"https://www.urbandictionary.com/define.php?term=rigger\">https://www.urbandictionary.com/define.php?term=rigger</a> )</p>",
+        "id": 223363707,
+        "sender_full_name": "fosco",
+        "timestamp": 1611143998
+    },
+    {
+        "content": "<p>I'm torn between wanting to run with the joke, and my inner mod saying now is not the place</p>",
+        "id": 223364218,
+        "sender_full_name": "Jules Hedges",
+        "timestamp": 1611144375
+    },
+    {
+        "content": "<p>(Link is <em>mildly</em> NSFW, but now I think about it, in corona time NSFW tags are probably totally unnecessary because nobody's at work)</p>",
+        "id": 223364261,
+        "sender_full_name": "Jules Hedges",
+        "timestamp": 1611144418
+    },
+    {
+        "content": "<p>haha, I can remove it, np <span aria-label=\"grinning\" class=\"emoji emoji-1f600\" role=\"img\" title=\"grinning\">:grinning:</span></p>",
+        "id": 223364736,
+        "sender_full_name": "fosco",
+        "timestamp": 1611144764
+    },
+    {
+        "content": "<p>Eh, I think it's ok</p>",
+        "id": 223366125,
+        "sender_full_name": "Jules Hedges",
+        "timestamp": 1611145680
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276320\">Antonin Delpeuch</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/All.20about.202-rigs/near/223360234\">said</a>:</p>\n<blockquote>\n<p>I am wondering why you want to call these things 2-rigs and not rig categories or bimonoidal categories? Especially given that 2-rig is already used for something else? When writing our paper on string diagrams for bimonoidal categories (so, your \"2-rigs\") it was difficult enough already to choose between \"rig category\" and \"bimonoidal category\", I hope we can avoid coming up with a new name in each paper on the subject!</p>\n</blockquote>\n<p>2-rig (or 2-semiring, pseudorig, etc.) seems like the most consistent naming choice given existing categorical terminology. I find it frustrating when people use names that already have a well-defined meaning according to convention, and then co-opt it for their own use (2-rig, cartesian bicategory, costrength, etc.). It's hard enough to learn the terminology as it is. I don't think someone having already used a name in a manner inconsistent with convention is reason not to use a name for the meaning that matches convention, as long as this is clarified in the text.</p>",
+        "id": 223370389,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1611148505
+    },
+    {
+        "content": "<p>I think “rig/semiring category” matches “monoidal category” much better? <br>\nI would match 2-rig or pseudorig with “pseudomonoid”, so that we would have something like <br>\n<em>A rig category is a pseudorig internal to the monoidal bicategory of categories</em>.</p>",
+        "id": 223371651,
+        "sender_full_name": "Amar Hadzihasanovic",
+        "timestamp": 1611149240
+    },
+    {
+        "content": "<p>For the same reason I don't like “bimonoidal” because bimonoid is another name for a bialgebra, so I would expect it to be something like a pseudo-bialgebra in Cat.</p>",
+        "id": 223371828,
+        "sender_full_name": "Amar Hadzihasanovic",
+        "timestamp": 1611149335
+    },
+    {
+        "content": "<p>Which I think is the same thing as a monoidal category because Cat is cartesian.</p>",
+        "id": 223372016,
+        "sender_full_name": "Amar Hadzihasanovic",
+        "timestamp": 1611149444
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276363\">Amar Hadzihasanovic</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/All.20about.202-rigs/near/223371651\">said</a>:</p>\n<blockquote>\n<p>I think “rig/semiring category” matches “monoidal category” much better? <br>\nI would match 2-rig or pseudorig with “pseudomonoid”, so that we would have something like <br>\n<em>A rig category is a pseudorig internal to the monoidal bicategory of categories</em>.</p>\n</blockquote>\n<p>I agree that I would expect the terminology to be used in the generality of a 2-category.</p>",
+        "id": 223372061,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1611149483
+    },
+    {
+        "content": "<p>Rig category isn't bad, but it would be nice if \"rig\" had an adjectival form (that is, we don't call them \"monoid categories\").</p>",
+        "id": 223372151,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1611149535
+    },
+    {
+        "content": "<p>\"rigged\"</p>",
+        "id": 223372480,
+        "sender_full_name": "Jules Hedges",
+        "timestamp": 1611149756
+    },
+    {
+        "content": "<p>I think rig isn’t too bad</p>",
+        "id": 223372721,
+        "sender_full_name": "Fawzi Hreiki",
+        "timestamp": 1611149884
+    },
+    {
+        "content": "<p>It’s pretty intuitive: ring without negatives</p>",
+        "id": 223372751,
+        "sender_full_name": "Fawzi Hreiki",
+        "timestamp": 1611149897
+    },
+    {
+        "content": "<p>Yes, and Ring = rig with negatives. It's recursive like GNU/Hurd.</p>",
+        "id": 223372815,
+        "sender_full_name": "Amar Hadzihasanovic",
+        "timestamp": 1611149937
+    },
+    {
+        "content": "<p>But traditionally rig-category means Cartesian and cocartesian bimonoidal right?</p>",
+        "id": 223372878,
+        "sender_full_name": "Fawzi Hreiki",
+        "timestamp": 1611149969
+    },
+    {
+        "content": "<p>Ie a category with products and sums</p>",
+        "id": 223372896,
+        "sender_full_name": "Fawzi Hreiki",
+        "timestamp": 1611149981
+    },
+    {
+        "content": "<p>Usually distributive</p>",
+        "id": 223372905,
+        "sender_full_name": "Fawzi Hreiki",
+        "timestamp": 1611149990
+    },
+    {
+        "content": "<p>According to the nLab rig category = bimonoidal category (no assumption of cartesian&amp;cocartesian)...</p>",
+        "id": 223373075,
+        "sender_full_name": "Amar Hadzihasanovic",
+        "timestamp": 1611150074
+    },
+    {
+        "content": "<p>(With distributivity of one over another)</p>",
+        "id": 223373100,
+        "sender_full_name": "Amar Hadzihasanovic",
+        "timestamp": 1611150095
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"341237\">Fawzi Hreiki</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/All.20about.202-rigs/near/223372878\">said</a>:</p>\n<blockquote>\n<p>But traditionally rig-category means Cartesian and cocartesian bimonoidal right?</p>\n</blockquote>\n<p>That's typically called a bicartesian category (distributive category when they distribute).</p>",
+        "id": 223373109,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1611150102
+    },
+    {
+        "content": "<p>The ‘bi’ prefix is so overloaded in category theory it’s kind of a tough one</p>",
+        "id": 223373192,
+        "sender_full_name": "Fawzi Hreiki",
+        "timestamp": 1611150127
+    },
+    {
+        "content": "<p>Yeah, it's a mess.</p>",
+        "id": 223373239,
+        "sender_full_name": "Amar Hadzihasanovic",
+        "timestamp": 1611150160
+    },
+    {
+        "content": "<p>Truthfully, I think bi- to mean weak 2- should just fade out</p>",
+        "id": 223373299,
+        "sender_full_name": "Fawzi Hreiki",
+        "timestamp": 1611150198
+    },
+    {
+        "content": "<p>Since 2-.. usually means weak by assumption nowadays right?</p>",
+        "id": 223373323,
+        "sender_full_name": "Fawzi Hreiki",
+        "timestamp": 1611150215
+    },
+    {
+        "content": "<p>Is there an interesting relationship between bimonoidal categories and monoidal bicategories, so we can say that moving around the \"bi-\" prefix in the name actually corresponds to something</p>",
+        "id": 223373356,
+        "sender_full_name": "Jules Hedges",
+        "timestamp": 1611150232
+    },
+    {
+        "content": "<p>The philosophy of higher categories has kind of shifted to ‘as weak as possible unless otherwise specified’</p>",
+        "id": 223373418,
+        "sender_full_name": "Fawzi Hreiki",
+        "timestamp": 1611150247
+    },
+    {
+        "content": "<p>I'm afraid bicategory vs 2-category as weak vs strict has stuck...</p>",
+        "id": 223373425,
+        "sender_full_name": "Amar Hadzihasanovic",
+        "timestamp": 1611150250
+    },
+    {
+        "content": "<p>Personally I try to have “weak unless otherwise stated” for model-independent “notions”, but for specific models I try to just use whatever's been most commonly used.</p>",
+        "id": 223373580,
+        "sender_full_name": "Amar Hadzihasanovic",
+        "timestamp": 1611150345
+    },
+    {
+        "content": "<p>Obviously \"bicategory\" should mean a graph with two different category structures on it.</p>",
+        "id": 223373584,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1611150348
+    },
+    {
+        "content": "<p>Hahahaha</p>",
+        "id": 223373647,
+        "sender_full_name": "Fawzi Hreiki",
+        "timestamp": 1611150365
+    },
+    {
+        "content": "<p>Like “a higher category” is weak unless stated, but “2-category” is the strict algebraic model.</p>",
+        "id": 223373682,
+        "sender_full_name": "Amar Hadzihasanovic",
+        "timestamp": 1611150381
+    },
+    {
+        "content": "<p>That’s a strange situation to be in though. I think the ‘2-‘ means strict convention primarily comes from the Australians since that’s what they tend(ed) to focus on</p>",
+        "id": 223373935,
+        "sender_full_name": "Fawzi Hreiki",
+        "timestamp": 1611150531
+    },
+    {
+        "content": "<p>But for all other n, n-category usually just means weak as far as I’ve seen</p>",
+        "id": 223373972,
+        "sender_full_name": "Fawzi Hreiki",
+        "timestamp": 1611150555
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276092\">Nathanael Arkor</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/All.20about.202-rigs/near/223373584\">said</a>:</p>\n<blockquote>\n<p>Obviously \"bicategory\" should mean a graph with two different category structures on it.</p>\n</blockquote>\n<p>Incidentally, if you consider a \"category enriched in a bimonoidal category\" to mean \"two enriched categories (one for each monoidal structure) with coincident objects and homs\", then a graph with two category structures on it is exactly a category enriched in <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"false\">(</mo><mrow><mi mathvariant=\"normal\">S</mi><mi mathvariant=\"normal\">e</mi><mi mathvariant=\"normal\">t</mi></mrow><mo separator=\"true\">,</mo><mo stretchy=\"false\">(</mo><mo>×</mo><mo separator=\"true\">,</mo><mn>1</mn><mo stretchy=\"false\">)</mo><mo separator=\"true\">,</mo><mo stretchy=\"false\">(</mo><mo>×</mo><mo separator=\"true\">,</mo><mn>1</mn><mo stretchy=\"false\">)</mo><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">(\\mathrm{Set}, (\\times, 1), (\\times, 1))</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mopen\">(</span><span class=\"mord\"><span class=\"mord mathrm\">S</span><span class=\"mord mathrm\">e</span><span class=\"mord mathrm\">t</span></span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mopen\">(</span><span class=\"mord\">×</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mord\">1</span><span class=\"mclose\">)</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mopen\">(</span><span class=\"mord\">×</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mord\">1</span><span class=\"mclose\">)</span><span class=\"mclose\">)</span></span></span></span>.<br>\nThis doesn't seem pertinent to the original question though, because with this interpretation one cannot make sense of distributivity.</p>",
+        "id": 223378364,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1611152673
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276092\">Nathanael Arkor</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/All.20about.202-rigs/near/223372151\">said</a>:</p>\n<blockquote>\n<p>Rig category isn't bad, but it would be nice if \"rig\" had an adjectival form (that is, we don't call them \"monoid categories\").</p>\n</blockquote>\n<p>rigal sounds like wriggle</p>",
+        "id": 223404219,
+        "sender_full_name": "Joe Moeller",
+        "timestamp": 1611162737
+    },
+    {
+        "content": "<p>In 50 years' time, when the etymology spawned here today has been forgotten, someone's going to open a MO question entitled: \"What's so wriggly about distributive bimonoidal categories?\"</p>",
+        "id": 223405160,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1611163195
+    },
+    {
+        "content": "<p>Well obviously because string diagrams look like pasta</p>",
+        "id": 223413309,
+        "sender_full_name": "Fawzi Hreiki",
+        "timestamp": 1611166784
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276092\">Nathanael Arkor</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/All.20about.202-rigs/near/223405160\">said</a>:</p>\n<blockquote>\n<p>In 50 years' time, when the etymology spawned here today has been forgotten, someone's going to open a MO question entitled: \"What's so wriggly about distributive bimonoidal categories?\"</p>\n</blockquote>\n<p>Are we still having MO in 50 years? <span aria-label=\"grinning\" class=\"emoji emoji-1f600\" role=\"img\" title=\"grinning\">:grinning:</span></p>",
+        "id": 223435410,
+        "sender_full_name": "fosco",
+        "timestamp": 1611176748
+    },
+    {
+        "content": "<blockquote>\n<p><span class=\"user-mention silent\" data-user-id=\"276092\">Nathanael Arkor</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/All.20about.202-rigs/near/223370389\">said</a>:<br>\n2-rig (or 2-semiring, pseudorig, etc.) seems like the most consistent naming choice given existing categorical terminology.</p>\n</blockquote>\n<p>Do you know any papers which already use the term \"2-rig\" in this sense? I don't remember reading any.</p>",
+        "id": 223611804,
+        "sender_full_name": "Antonin Delpeuch",
+        "timestamp": 1611301796
+    },
+    {
+        "content": "<p>I haven't seen \"2-rig\" in many papers in any sense. I don't think anyone has studied these structures in full generality (i.e. not in Cat) yet.</p>",
+        "id": 223639220,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1611321347
+    },
+    {
+        "content": "<p>In <a href=\"https://math.ucr.edu/home/baez/hda3.pdf\">my paper on opetopes with James Dolan</a> we used the term \"2-rig\" to mean a monoidal cocomplete category where the tensor product distributes over colimits - see the chart on page 16.</p>",
+        "id": 223659974,
+        "sender_full_name": "John Baez",
+        "timestamp": 1611331101
+    },
+    {
+        "content": "<p>I dislike this usage. The term \"monoidally cocomplete category\" is already in use to mean a cocomplete category with a tensor that distributes over colimits. I think, for X some algebraic structure, that \"discrete 2-X in Cat\" should be exactly an \"X in Set\".</p>",
+        "id": 223661109,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1611331559
+    },
+    {
+        "content": "<p>Yeah that makes sense. A 2-rig is just a rig in <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mtext>CAT</mtext></mrow><annotation encoding=\"application/x-tex\">\\text{CAT}</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord text\"><span class=\"mord\">CAT</span></span></span></span></span>.</p>",
+        "id": 223669566,
+        "sender_full_name": "Fawzi Hreiki",
+        "timestamp": 1611335210
+    },
+    {
+        "content": "<p>(Up to coherence stuff)</p>",
+        "id": 223669728,
+        "sender_full_name": "Fawzi Hreiki",
+        "timestamp": 1611335288
+    },
+    {
+        "content": "<p>Although then there’s the problem that a ‘2-category’ is not a category in <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mtext>CAT</mtext></mrow><annotation encoding=\"application/x-tex\">\\text{CAT}</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord text\"><span class=\"mord\">CAT</span></span></span></span></span>.</p>",
+        "id": 223670514,
+        "sender_full_name": "Fawzi Hreiki",
+        "timestamp": 1611335670
+    },
+    {
+        "content": "<p>The thread veered into a discussion on what is the right name for these things <span aria-label=\"grinning\" class=\"emoji emoji-1f600\" role=\"img\" title=\"grinning\">:grinning:</span> </p>\n<p>I have questions, but I'll open another.</p>",
+        "id": 223744909,
+        "sender_full_name": "fosco",
+        "timestamp": 1611401245
+    },
+    {
+        "content": "<p>Enjoy my confusion and handwaving! <a href=\"#narrow/stream/229199-learning.3A-questions/topic/Differential.20rig.20categories\">https://categorytheory.zulipchat.com/#narrow/stream/229199-learning.3A-questions/topic/Differential.20rig.20categories</a></p>",
+        "id": 223747102,
+        "sender_full_name": "fosco",
+        "timestamp": 1611404714
+    },
+    {
+        "content": "<p>(how does one link a thread \"internally\"?)</p>",
+        "id": 223747109,
+        "sender_full_name": "fosco",
+        "timestamp": 1611404731
+    }
+]

@@ -1,0 +1,191 @@
+---
+layout: archive
+title: Zulip Chat Archive
+permalink: /stream/229125-practice:-software/topic/formalizations.20of.20categories.html
+---
+
+<h2>Stream: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229125-practice:-software/index.html">practice: software</a></h2>
+<h3>Topic: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229125-practice:-software/topic/formalizations.20of.20categories.html">formalizations of categories</a></h3>
+
+<hr>
+
+<base href="https://categorytheory.zulipchat.com/">
+
+<head><link href="https://mattecapu.github.io/ct-zulip-archive/style.css" rel="stylesheet"></head>
+
+{% raw %}
+
+<a name="254122349"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229125-practice%3A%20software/topic/formalizations%20of%20categories/near/254122349" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> James Deikun <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229125-practice:-software/topic/formalizations.20of.20categories.html#254122349">(Sep 20 2021 at 21:36)</a>:</h4>
+<p>I'm looking for help finding, or if necessary creating, the best formalization of 1-category theory.  In the past I have run into some nearly insurmountable problems dealing with 1-category theory in Agda or Coq with existing libraries:</p>
+<ul>
+<li>If you have quotients as an axiom, and do everything with sets, everything is stuck all over the place.</li>
+<li>If you use setoids for homsets, then constructions like functor categories and arrow categories don't work correctly because they have too strict an equality on objects.</li>
+<li>If you use setoids for homsets and for the collection of objects, there are an unmanageable number of proof obligations for creating a category and equality of objects is too weak to provide coherent composition of diagrams fused along equalities.</li>
+</ul>
+<p>So getting this right involves either a trick I don't know about, or a proof assistant that can provide better support for quotient types in the metatheory ... does anyone have suggestions/experience with this?</p>
+
+
+
+<a name="254124471"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229125-practice%3A%20software/topic/formalizations%20of%20categories/near/254124471" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> James Wood <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229125-practice:-software/topic/formalizations.20of.20categories.html#254124471">(Sep 20 2021 at 21:55)</a>:</h4>
+<p>agda-categories takes the second approach, but seems to handle those examples well enough. I'm not sure what the problem with functor categories would be, and arrow categories are at <a href="https://github.com/agda/agda-categories/blob/master/src/Categories/Category/Construction/Arrow.agda">https://github.com/agda/agda-categories/blob/master/src/Categories/Category/Construction/Arrow.agda</a>.</p>
+
+
+
+<a name="254126103"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229125-practice%3A%20software/topic/formalizations%20of%20categories/near/254126103" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> James Wood <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229125-practice:-software/topic/formalizations.20of.20categories.html#254126103">(Sep 20 2021 at 22:08)</a>:</h4>
+<p>If there's a trick to these sorts of categories, I think it's that, surprisingly, it's not the equality of <em>objects</em> from 𝓒 that you have to worry about in Arr(𝓒), but rather the equality of <em>equations</em> from 𝓒. But equality of such equations is trivial, so there is nothing to worry about.</p>
+
+
+
+<a name="254126166"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229125-practice%3A%20software/topic/formalizations%20of%20categories/near/254126166" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Alex Gryzlov <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229125-practice:-software/topic/formalizations.20of.20categories.html#254126166">(Sep 20 2021 at 22:09)</a>:</h4>
+<p>Take a look at <a href="https://arend-lang.github.io/">https://arend-lang.github.io/</a> maybe? It's based on HoTT and has some categorical stuff in stdlib</p>
+
+
+
+<a name="254126336"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229125-practice%3A%20software/topic/formalizations%20of%20categories/near/254126336" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> James Deikun <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229125-practice:-software/topic/formalizations.20of.20categories.html#254126336">(Sep 20 2021 at 22:10)</a>:</h4>
+<p>The problem with arrow categories is that equal arrows in <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="script">C</mi></mrow><annotation encoding="application/x-tex">\mathcal{C}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathcal" style="margin-right:0.05834em;">C</span></span></span></span> become unequal objects in <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mi>r</mi><mi>r</mi><mo stretchy="false">(</mo><mi mathvariant="script">C</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">Arr(\mathcal{C})</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal">A</span><span class="mord mathnormal" style="margin-right:0.02778em;">rr</span><span class="mopen">(</span><span class="mord mathcal" style="margin-right:0.05834em;">C</span><span class="mclose">)</span></span></span></span> ... with functor categories it's that the proofs can become part of what is compared for equality (Agda has ways around that, Coq doesn't particularly).</p>
+
+
+
+<a name="254126712"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229125-practice%3A%20software/topic/formalizations%20of%20categories/near/254126712" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> James Deikun <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229125-practice:-software/topic/formalizations.20of.20categories.html#254126712">(Sep 20 2021 at 22:14)</a>:</h4>
+<p>In almost all cases these problems don't prevent you from doing a basic construction, but once you start doing proofs around it you find that you are demanded to prove equalities that either shouldn't be necessary, or that should be necessary but aren't true.</p>
+
+
+
+<a name="254126950"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229125-practice%3A%20software/topic/formalizations%20of%20categories/near/254126950" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> James Wood <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229125-practice:-software/topic/formalizations.20of.20categories.html#254126950">(Sep 20 2021 at 22:16)</a>:</h4>
+<p>Ah, yeah, it makes you really commit to working up to equivalence of categories. But it should be possible to maintain that invariant. agda-categories has some decent experience behind it these days.</p>
+
+
+
+<a name="254127026"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229125-practice%3A%20software/topic/formalizations%20of%20categories/near/254127026" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> James Deikun <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229125-practice:-software/topic/formalizations.20of.20categories.html#254127026">(Sep 20 2021 at 22:17)</a>:</h4>
+<p>My latest case was trying to prove the nerve theorem for categories in Coq, where I could extract all the arrows in the spine of a horn but couldn't prove that they connect into a composable string.</p>
+
+
+
+<a name="254131555"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229125-practice%3A%20software/topic/formalizations%20of%20categories/near/254131555" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> James Deikun <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229125-practice:-software/topic/formalizations.20of.20categories.html#254131555">(Sep 20 2021 at 23:02)</a>:</h4>
+<p>Can you prove the nerve theorem in agda-categories?  I don't recall it being in there.</p>
+
+
+
+<a name="254217383"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229125-practice%3A%20software/topic/formalizations%20of%20categories/near/254217383" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Jacques Carette <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229125-practice:-software/topic/formalizations.20of.20categories.html#254217383">(Sep 21 2021 at 14:35)</a>:</h4>
+<p>The nerve theorem has not been proved in agda-categories.  Do you have a canonical reference?</p>
+
+
+
+<a name="254217857"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229125-practice%3A%20software/topic/formalizations%20of%20categories/near/254217857" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Jacques Carette <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229125-practice:-software/topic/formalizations.20of.20categories.html#254217857">(Sep 21 2021 at 14:39)</a>:</h4>
+<p>I don't understand your problem with <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="sans-serif">A</mi><mi mathvariant="sans-serif">r</mi><mi mathvariant="sans-serif">r</mi></mrow><annotation encoding="application/x-tex">\mathsf{Arr}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.69444em;vertical-align:0em;"></span><span class="mord"><span class="mord mathsf" style="margin-right:0.01389em;">Arr</span></span></span></span></span>? Equivalent arrows before equivalent arrows, which is all you can ask for in <em>weak</em> category theory. And agda-categories takes the weak approach throughout.</p>
+
+
+
+<a name="254427025"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229125-practice%3A%20software/topic/formalizations%20of%20categories/near/254427025" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> James Deikun <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229125-practice:-software/topic/formalizations.20of.20categories.html#254427025">(Sep 22 2021 at 19:45)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="296322">Jacques Carette</span> <a href="#narrow/stream/229125-practice.3A-software/topic/formalizations.20of.20categories/near/254217383">said</a>:</p>
+<blockquote>
+<p>The nerve theorem has not been proved in agda-categories.  Do you have a canonical reference?</p>
+</blockquote>
+<p>The reference I've been using is Lurie, <a href="https://www.math.ias.edu/~lurie/papers/HTT.pdf">Higher Topos Theory</a> Proposition 1.1.2.2 (pp. 9-11) but it's hardly canonical.  I've worked on it a bit at <a href="https://github.com/xplat/agda-categories/tree/nerve-theorem">https://github.com/xplat/agda-categories/tree/nerve-theorem</a> but I've run into some trouble getting the levels to match up in the definition "<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">Δ</mi></mrow><annotation encoding="application/x-tex">\Delta</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord">Δ</span></span></span></span>-yoneda" without reproving the Yoneda lemma from scratch, and the part that will use it is just a mess for now ...</p>
+
+
+
+<a name="254457890"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229125-practice%3A%20software/topic/formalizations%20of%20categories/near/254457890" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Jacques Carette <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229125-practice:-software/topic/formalizations.20of.20categories.html#254457890">(Sep 22 2021 at 23:50)</a>:</h4>
+<p>Thanks for the link.  Some of the local fixes you've done in that branch are nice, and would be worth a PR on their own (please!).  Otherwise, I'm not seeing anything obvious, I'd need to bring it up in Agda to dig a bit deeper. If you want a hand, shout, I'll see what I can do.</p>
+
+
+
+<a name="254471148"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229125-practice%3A%20software/topic/formalizations%20of%20categories/near/254471148" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> James Deikun <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229125-practice:-software/topic/formalizations.20of.20categories.html#254471148">(Sep 23 2021 at 02:33)</a>:</h4>
+<p>The more I look at it the more it looks to me like I can't use the existing proof of the Yoneda lemma and I can't generalize the existing proof without restructuring it so that it's originally proved with an explicitly universe-lifted Yoneda embedding and the proof for the bare Yoneda embedding is backed out of that.  It would be really nice to have universe cumulativity in Agda so that Agda wouldn't (and you wouldn't have to) keep track of how many times you lifted things to a higher universe ...</p>
+
+
+
+<a name="254523533"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229125-practice%3A%20software/topic/formalizations%20of%20categories/near/254523533" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Jacques Carette <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229125-practice:-software/topic/formalizations.20of.20categories.html#254523533">(Sep 23 2021 at 12:08)</a>:</h4>
+<p>Jason proved some lifted version - maybe in Yoneda.Properties?</p>
+<p>Yoneda is so important that having alternate proofs is not a bad idea, especially with slightly different assumptions on universes.</p>
+
+
+
+<a name="254529545"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229125-practice%3A%20software/topic/formalizations%20of%20categories/near/254529545" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Reid Barton <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229125-practice:-software/topic/formalizations.20of.20categories.html#254529545">(Sep 23 2021 at 12:53)</a>:</h4>
+<p>The nerve theorem is about small categories. Of course if you accept the universe axiom then every category is small in some universe, but the point is that the nerve theorem describes those simplicial sets which arise as the nerves of <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="script">U</mi></mrow><annotation encoding="application/x-tex">\mathcal{U}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathcal" style="margin-right:0.09931em;">U</span></span></span></span>-small categories; it doesn't say anything about the nerves of <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="script">U</mi></mrow><annotation encoding="application/x-tex">\mathcal{U}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathcal" style="margin-right:0.09931em;">U</span></span></span></span>-small and locally <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="script">V</mi></mrow><annotation encoding="application/x-tex">\mathcal{V}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathcal" style="margin-right:0.08222em;">V</span></span></span></span>-small categories. This is kind of intrinsic in the whole idea of the nerve (and the simplicial approach to (higher) category theory in general), which puts strings of <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi></mrow><annotation encoding="application/x-tex">n</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathnormal">n</span></span></span></span> composable arrows on the same footing for all <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi></mrow><annotation encoding="application/x-tex">n</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathnormal">n</span></span></span></span>, including <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">n = 0</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathnormal">n</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">0</span></span></span></span> and <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">n = 1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathnormal">n</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">1</span></span></span></span>.<br>
+So, for formalization it would be appropriate to assume from the start that all the universes parameterizing your categories are equal.</p>
+
+
+
+<a name="254532181"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229125-practice%3A%20software/topic/formalizations%20of%20categories/near/254532181" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Reid Barton <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229125-practice:-software/topic/formalizations.20of.20categories.html#254532181">(Sep 23 2021 at 13:11)</a>:</h4>
+<p>The next issue would be: how do you even define the nerve of a category whose "homsets" are actually setoids, if you can't form quotients?</p>
+<p>You could just ignore the relations between morphisms, but then the nerve won't satisfy the unique lifting condition (for <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>=</mo><mn>3</mn></mrow><annotation encoding="application/x-tex">n = 3</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathnormal">n</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">3</span></span></span></span>) of the nerve theorem, and in any case it seems like the wrong thing to do.</p>
+<p>A better idea would be to recognize that we actually have a simple kind of 2-category and define the nerve to be the <a href="https://kerodon.net/tag/009P">Duskin nerve</a>. Then I guess you should be able to prove <em>a</em> nerve theorem, but it won't be the same as the one for 1-categories: the filler of a horn <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mi mathvariant="normal">Λ</mi><mn>1</mn><mn>2</mn></msubsup></mrow><annotation encoding="application/x-tex">\Lambda^2_1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.0622159999999998em;vertical-align:-0.24810799999999997em;"></span><span class="mord"><span class="mord">Λ</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.8141079999999999em;"><span style="top:-2.4518920000000004em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.24810799999999997em;"><span></span></span></span></span></span></span></span></span></span> won't be unique.</p>
+<p>It might also be preferable/necessary to regard the nerve as taking values in simplicial setoids, although there is something a bit strange here, because the objects of your category (which will be the 0-simplices of the nerve) actually do form a set. But a set is a special kind of setoid, so this isn't necessarily a deal-breaker.</p>
+
+
+
+<a name="254532577"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229125-practice%3A%20software/topic/formalizations%20of%20categories/near/254532577" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Reid Barton <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229125-practice:-software/topic/formalizations.20of.20categories.html#254532577">(Sep 23 2021 at 13:13)</a>:</h4>
+<p>This is basically all to say: this is one of the foundational places where all the differences between the notion of category in classical mathematics and the one in agda-categories really play a big role, and you'd better begin by figuring out what nerve construction is even possible and what the correct nerve theorem will be for this new concept.</p>
+
+
+
+<a name="254533143"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229125-practice%3A%20software/topic/formalizations%20of%20categories/near/254533143" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Reid Barton <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229125-practice:-software/topic/formalizations.20of.20categories.html#254533143">(Sep 23 2021 at 13:17)</a>:</h4>
+<p>Essentially the same issues arise when you want to define the equivalence between the two descriptions of categories, one in the "dependently typed" style with sets <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi mathvariant="normal">H</mi><mi mathvariant="normal">o</mi><mi mathvariant="normal">m</mi></mrow><mo stretchy="false">(</mo><mi>A</mi><mo separator="true">,</mo><mi>B</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">\mathrm{Hom}(A, B)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord"><span class="mord mathrm">Hom</span></span><span class="mopen">(</span><span class="mord mathnormal">A</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathnormal" style="margin-right:0.05017em;">B</span><span class="mclose">)</span></span></span></span> of morphisms for each pair of objects <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi></mrow><annotation encoding="application/x-tex">A</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathnormal">A</span></span></span></span>, <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>B</mi></mrow><annotation encoding="application/x-tex">B</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathnormal" style="margin-right:0.05017em;">B</span></span></span></span>, and one with a single set containing all the morphisms of the category (the description of Cat as the models of an essentially algebraic theory).</p>
+
+
+
+<a name="254533290"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229125-practice%3A%20software/topic/formalizations%20of%20categories/near/254533290" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Reid Barton <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229125-practice:-software/topic/formalizations.20of.20categories.html#254533290">(Sep 23 2021 at 13:18)</a>:</h4>
+<p>The nerve construction is very close to the latter description.</p>
+
+
+
+<a name="254533567"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229125-practice%3A%20software/topic/formalizations%20of%20categories/near/254533567" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> James Deikun <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229125-practice:-software/topic/formalizations.20of.20categories.html#254533567">(Sep 23 2021 at 13:20)</a>:</h4>
+<p>I went with having simplicial setoids.  I figure the extra universe level for objects might result in needing a smallness side condition of some kind on the nerve theorem but I'm hoping I can figure that out as I go.</p>
+
+
+
+<a name="254533813"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229125-practice%3A%20software/topic/formalizations%20of%20categories/near/254533813" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> James Deikun <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229125-practice:-software/topic/formalizations.20of.20categories.html#254533813">(Sep 23 2021 at 13:22)</a>:</h4>
+<p>Fortunately for this approach simplicial "sets" in agda-categories are already simplicial setoids!  But I was using the same approach in Coq when I was defining simplicial sets from scratch.</p>
+
+
+
+<a name="254533973"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229125-practice%3A%20software/topic/formalizations%20of%20categories/near/254533973" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Reid Barton <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229125-practice:-software/topic/formalizations.20of.20categories.html#254533973">(Sep 23 2021 at 13:23)</a>:</h4>
+<p>By simplicial setoids do you mean <em>strictly</em> simplicial setoids, or "pseudosimplicial setoids"? i.e. when we compose the actions of maps of <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">Δ</mi></mrow><annotation encoding="application/x-tex">\Delta</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord">Δ</span></span></span></span>, we could require commutativity only up to the relation.</p>
+
+
+
+<a name="254534199"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229125-practice%3A%20software/topic/formalizations%20of%20categories/near/254534199" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> James Deikun <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229125-practice:-software/topic/formalizations.20of.20categories.html#254534199">(Sep 23 2021 at 13:25)</a>:</h4>
+<p>If I understand your meaning correctly, the latter.  The actions take values in maps of setoids.</p>
+
+
+
+<a name="254535058"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229125-practice%3A%20software/topic/formalizations%20of%20categories/near/254535058" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Reid Barton <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229125-practice:-software/topic/formalizations.20of.20categories.html#254535058">(Sep 23 2021 at 13:30)</a>:</h4>
+<p>Then in the nerve theorem, I guess you have to interpret "unique" lift as meaning unique in the setoid-sense, i.e., there is a lift and every lift is related to that one.</p>
+
+
+
+<a name="254535290"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229125-practice%3A%20software/topic/formalizations%20of%20categories/near/254535290" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Jacques Carette <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229125-practice:-software/topic/formalizations.20of.20categories.html#254535290">(Sep 23 2021 at 13:32)</a>:</h4>
+<p>(As a very interested bystander: thanks <span class="user-mention" data-user-id="276480">@Reid Barton</span> for a very illuminating description of the issues)</p>
+
+
+
+{% endraw %}
+
+<hr><p>Last updated: Jan 30 2022 at 00:30 UTC</p>

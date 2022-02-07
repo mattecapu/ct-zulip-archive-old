@@ -1,0 +1,110 @@
+[
+    {
+        "content": "<p>I've been waiting for someone to do a video showing off <a href=\"http://homotopy.io\">homotopy.io</a>, here it is: <a href=\"https://vimeo.com/484400667\">https://vimeo.com/484400667</a></p>\n<p>\"Jamie Vicary: Introducing <a href=\"http://homotopy.io\">homotopy.io</a>: A proof assistant for geometrical higher category theory\"</p>",
+        "id": 218949893,
+        "sender_full_name": "Simon Burton",
+        "timestamp": 1607197300
+    },
+    {
+        "content": "<p>Great tool to learn about string diagrams of any dimensions. I followed along trying out the examples of multi-dimensional string diagrams on the web site shown in the video, just using point and click :-)</p>",
+        "id": 218949981,
+        "sender_full_name": "Henry Story",
+        "timestamp": 1607197402
+    },
+    {
+        "content": "<p>Thanks for sharing!</p>\n<p>Towards the end, Jamie mentions another approach one could take to design a proof assistant for higher-categories: strict associators and interchangers, but weak unitors. He adds that proofs in this setting would resemble manipulations of (higher-dimensional analogues of) proof-nets with units.  Does anyone know of more fleshed-out work that takes this view? Are there already combinatorial structures that captures precisely this level of weakness? Maybe <span class=\"user-mention\" data-user-id=\"276363\">@Amar Hadzihasanovic</span> or <span class=\"user-mention\" data-user-id=\"276320\">@Antonin Delpeuch</span> have some idea? (Sorry if this is a rather naive question but considering the many different approaches to higher-categories I am not sure where to start looking).</p>",
+        "id": 219765060,
+        "sender_full_name": "Robin Piedeleu",
+        "timestamp": 1607871662
+    },
+    {
+        "content": "<p>Kock defines a notion of \"fair categories\", which are higher categories with weak units in <a href=\"https://arxiv.org/abs/math/0507116\">Weak identity arrows in higher categories</a>.</p>",
+        "id": 219765622,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1607872515
+    },
+    {
+        "content": "<p>I also wondered when watching that part of the presentation whether it would amount to a proof of <a href=\"https://ncatlab.org/nlab/show/Simpson%27s+conjecture\">Simpson's Conjecture</a>...</p>",
+        "id": 219765780,
+        "sender_full_name": "Kenji Maillard",
+        "timestamp": 1607872774
+    },
+    {
+        "content": "<p><span class=\"user-mention\" data-user-id=\"277342\">@Robin Piedeleu</span> well my own diagrammatic omega-categories (<a href=\"https://arxiv.org/abs/2007.14505\">section 6 of this</a>) can be conceived as a semistrict-with-weak-units model of higher categories. There's still a (small?) gap in trying to prove that it's fully general. </p>\n<p>The omega-groupoid case, with nonalgebraic units, had been done by Simon Henry, <a href=\"https://arxiv.org/abs/1807.02627\">here</a>.</p>",
+        "id": 219766254,
+        "sender_full_name": "Amar Hadzihasanovic",
+        "timestamp": 1607873444
+    },
+    {
+        "content": "<p>And as Nathanael says, a lot of very interesting work in this spirit had been done by Joachim Kock and André Joyal.</p>",
+        "id": 219766310,
+        "sender_full_name": "Amar Hadzihasanovic",
+        "timestamp": 1607873526
+    },
+    {
+        "content": "<p>None of this work, so far, has been concerned with formalisation or proof assistants.</p>",
+        "id": 219766393,
+        "sender_full_name": "Amar Hadzihasanovic",
+        "timestamp": 1607873644
+    },
+    {
+        "content": "<p>Thanks for all the pointers!</p>\n<p><span class=\"user-mention silent\" data-user-id=\"276885\">Kenji Maillard</span> <a href=\"#narrow/stream/229111-general/topic/Jamie.20Vicary.3A.20Introducing.20homotopy.2Eio/near/219765780\">said</a>:</p>\n<blockquote>\n<p>I also wondered when watching that part of the presentation whether it would amount to a proof of <a href=\"https://ncatlab.org/nlab/show/Simpson%27s+conjecture\">Simpson's Conjecture</a>...</p>\n</blockquote>\n<p>I don't think so: seems like you could just have an explicit combinatorial construction of weakly-unital semistrict higher-categories without a proof that every fully weak higher-category is weakly equivalent to one of these. The work that people pointed to above should give examples of this.</p>",
+        "id": 219767389,
+        "sender_full_name": "Robin Piedeleu",
+        "timestamp": 1607875326
+    },
+    {
+        "content": "<p>Or maybe I'm completely misunderstanding what giving a model of higher-categories means...</p>",
+        "id": 219767403,
+        "sender_full_name": "Robin Piedeleu",
+        "timestamp": 1607875347
+    },
+    {
+        "content": "<p>hm, you are right an explicit combinatorial presentation of these structures doesn't prove the conjecture.<br>\nI thought that Jamie Vicary was advertising these structures (both the weak unit ones and the weak interchange ones) because they are as strict as possible while maintaining \"good properties\". I interpreted these \"good properties\" as \"can represent all weak omega-categories\", but maybe it was rather \"expected to be reasonable for an implementation\" <span aria-label=\"thinking\" class=\"emoji emoji-1f914\" role=\"img\" title=\"thinking\">:thinking:</span></p>",
+        "id": 219767935,
+        "sender_full_name": "Kenji Maillard",
+        "timestamp": 1607876126
+    },
+    {
+        "content": "<p>Yes, and I suppose another good properties is to be (conjecturally) sufficiently expressive!</p>",
+        "id": 219768054,
+        "sender_full_name": "Robin Piedeleu",
+        "timestamp": 1607876307
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276363\">Amar Hadzihasanovic</span> <a href=\"#narrow/stream/229111-general/topic/Jamie.20Vicary.3A.20Introducing.20homotopy.2Eio/near/219766254\">said</a>:</p>\n<blockquote>\n<p><span class=\"user-mention silent\" data-user-id=\"277342\">Robin Piedeleu</span> well my own diagrammatic omega-categories (<a href=\"https://arxiv.org/abs/2007.14505\">section 6 of this</a>) can be conceived as a semistrict-with-weak-units model of higher categories. There's still a (small?) gap in trying to prove that it's fully general. </p>\n</blockquote>\n<p>Did you give some thoughts to what sort of diagrams/graphs/other structures could best represent cells in your omega-categories? I don't mean the underlying combinatorial machinery, but rather a graphical calculus, like the one for associative <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>n</mi></mrow><annotation encoding=\"application/x-tex\">n</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.43056em;vertical-align:0em;\"></span><span class=\"mord mathnormal\">n</span></span></span></span>-categories used in <a href=\"http://homotopy.io\">homotopy.io</a>, which is  a generalisation of the familiar diagrams for bicategories.</p>",
+        "id": 219768561,
+        "sender_full_name": "Robin Piedeleu",
+        "timestamp": 1607877061
+    },
+    {
+        "content": "<p><span class=\"user-mention\" data-user-id=\"277342\">@Robin Piedeleu</span> The diagrams that can be interpreted in diagrammatic sets are just a sub-class of the diagrams that can be interpreted in strict omega-categories <br>\n(some terms in this statement need to be clarified and there are a couple footnotes attached, but the substance is true).<br>\nIndeed, the main point of the project was to have a fully general, weak model in which existing diagrammatic proofs could be interpreted with minimal effort.</p>",
+        "id": 219773203,
+        "sender_full_name": "Amar Hadzihasanovic",
+        "timestamp": 1607883981
+    },
+    {
+        "content": "<p>For example, the 2d string diagrams that make sense in a diagrammatic set are all the ones where every cell has at least one input and one output (so you may have to introduce some explicit units and unitors), and in a diagrammatic omega-category all the <em>connected</em> ones have a composite.</p>",
+        "id": 219773530,
+        "sender_full_name": "Amar Hadzihasanovic",
+        "timestamp": 1607884444
+    },
+    {
+        "content": "<p>In general the philosophy is that at the price of explicitly handling (some) units and unitors, you can make sure that your diagrammatic proofs make sense in general weak higher categories.</p>",
+        "id": 219773568,
+        "sender_full_name": "Amar Hadzihasanovic",
+        "timestamp": 1607884498
+    },
+    {
+        "content": "<p>If you're interested in some finer points, maybe we can continue discussing privately.</p>",
+        "id": 219773602,
+        "sender_full_name": "Amar Hadzihasanovic",
+        "timestamp": 1607884556
+    },
+    {
+        "content": "<p>Thanks, Amar, this is helpful.</p>\n<p>I don't think I get the motivation for the \"at least one input and one output\" or connectedness conditions but I'll try to work through some example diagrams in low dimensions to get a better feel for them. I might contact you privately if I have other questions!</p>",
+        "id": 219816882,
+        "sender_full_name": "Robin Piedeleu",
+        "timestamp": 1607938119
+    }
+]

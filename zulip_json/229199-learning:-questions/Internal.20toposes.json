@@ -1,0 +1,188 @@
+[
+    {
+        "content": "<p>I've heard that many kinds of categories with extra structure can be defined internal to a category with finite limits, usually by equipping internal categories with appropriate adjoints. I can see how this works for finite limits, finite colimits, and NNOs. But how can this be done for toposes? I can't see how you can even express the notion of monomorphism without having the universal quantifier.</p>",
+        "id": 225188318,
+        "sender_full_name": "Fawzi Hreiki",
+        "timestamp": 1612457618
+    },
+    {
+        "content": "<p><span class=\"user-mention\" data-user-id=\"276422\">@David Michael Roberts</span> (and probably plenty of other people, but unfortunately not  me) should be able to answer this question, since <a href=\"https://mathoverflow.net/questions/190757/existence-of-internal-toposes-inner-models-in-a-topos\">he wrote</a>:</p>\n<blockquote>\n<p>It has been known for some time that one can define a topos as a model of a (finitary) essentially algebraic theory (or in other words, can be defined internal to any category with finite limits).</p>\n</blockquote>",
+        "id": 225190722,
+        "sender_full_name": "John Baez",
+        "timestamp": 1612458582
+    },
+    {
+        "content": "<p>It's in Dubac–Kelly's <a href=\"https://core.ac.uk/download/pdf/82757533.pdf\">A Presentation of Topoi as Algebraic Relative to Categories or Graphs</a>.</p>",
+        "id": 225191017,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1612458715
+    },
+    {
+        "content": "<p>Thanks.</p>",
+        "id": 225191137,
+        "sender_full_name": "John Baez",
+        "timestamp": 1612458763
+    },
+    {
+        "content": "<p>Perfect! Thanks</p>",
+        "id": 225191171,
+        "sender_full_name": "Fawzi Hreiki",
+        "timestamp": 1612458787
+    },
+    {
+        "content": "<p>(One may have to combine this result with the fact that categories of algebras for finitary monads on locally finitely presentable categories are themselves locally finitely presentable; that Cat is locally finitely presentable; and that locally finitely presentable categories are the categories of models of finite limit theories.)</p>",
+        "id": 225191306,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1612458850
+    },
+    {
+        "content": "<p>I really should write up my notes on this.</p>",
+        "id": 225250705,
+        "sender_full_name": "David Michael Roberts",
+        "timestamp": 1612489298
+    },
+    {
+        "content": "<p>I should add that monomorphisms have a finite-limit characterisation, they pull back along themselves to give the identity map.</p>",
+        "id": 225266697,
+        "sender_full_name": "David Michael Roberts",
+        "timestamp": 1612507961
+    },
+    {
+        "content": "<p>I had totally forgotten about this. Of course.</p>",
+        "id": 225275062,
+        "sender_full_name": "Fawzi Hreiki",
+        "timestamp": 1612516255
+    },
+    {
+        "content": "<p>Also, Freyd’s Aspects of Topoi has an essentially algebraic definition of cartesian closure</p>",
+        "id": 225275563,
+        "sender_full_name": "Fawzi Hreiki",
+        "timestamp": 1612516627
+    },
+    {
+        "content": "<p>So one can define the subcategory of the arrow category with objects the monomorphisms, and with arrows the pullback squares, and then demand that this has a terminal object. In fact it's rather nice to write down an algebraic definition of an internal topos all in terms of internal adjunctions (cartesian closure is a little more tricky, in that it happens in a slice category, IIRC). Then I believe that writing down the same thing in the bicategory of internal cats and anafunctors (need to maybe have a regular category here, or something a little weaker) gives a definition of internal topos that doesn't demand that we've specified actual pullbacks or internal homs. A terminal object and a subobject classifier is likewise only demanded to exist up to isomorphism, though depending on the ambient regular category one is working with (maybe every regular epi to the terminal object splits), one might be able to specify these exactly.</p>\n<p>However, the main point of introducing anafunctors is not to just define internal toposes, it means we can write down logical morphisms between internal toposes that do not necessarily preserve the internal homs or subobject classifier on the nose, only up to isomorphism.</p>\n<p>What would be really cool is if there was some kind  of definition of internal topos that used formal category theory (basically: the 2-category structure on Cat plus extra things like maybe a Yoneda structure). I wish I knew how to do this!</p>",
+        "id": 225278027,
+        "sender_full_name": "David Michael Roberts",
+        "timestamp": 1612518356
+    },
+    {
+        "content": "<p>Well one thing I’ve wondered about is how 1-topos theory can emerge from 2-topos theory. Because in a 1-topos, the subobject classifier is a Heyting algebra but this follows from the other axioms and is not postulated a priori.</p>",
+        "id": 225283176,
+        "sender_full_name": "Fawzi Hreiki",
+        "timestamp": 1612521706
+    },
+    {
+        "content": "<p>So the corresponding truth value object in a 2-topos should morally be a 1-topos in virtue of the other axioms</p>",
+        "id": 225283260,
+        "sender_full_name": "Fawzi Hreiki",
+        "timestamp": 1612521740
+    },
+    {
+        "content": "<p>In the 2-category of groupoids the forgetful functor from pointed sets and bijections to sets and bijections acts a bit like <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"normal\">⊤</mi><mo>↪</mo><mi mathvariant=\"normal\">Ω</mi></mrow><annotation encoding=\"application/x-tex\">\\top \\hookrightarrow \\Omega</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.70544em;vertical-align:-0.011em;\"></span><span class=\"mord\">⊤</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">↪</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord\">Ω</span></span></span></span> (and ditto the 2-category of categories, cf the Grothendieck construction)</p>",
+        "id": 225288849,
+        "sender_full_name": "David Michael Roberts",
+        "timestamp": 1612525782
+    },
+    {
+        "content": "<p>But this really is brushing up against universes of types of a fixed h-level à la HoTT. I'm not so sure about 2-toposes in the (2,2)-world, in the sense of <span class=\"user-mention\" data-user-id=\"276777\">@Mike Shulman</span> .</p>",
+        "id": 225288997,
+        "sender_full_name": "David Michael Roberts",
+        "timestamp": 1612525873
+    },
+    {
+        "content": "<p>Well, there's Theorem 10.1.12 in the HoTT Book, which can be interpreted semantically as saying that in the \"internal type theory of a (2,1)-topos\" one can prove that the discrete-fibration-classifier is a 1-topos.</p>",
+        "id": 225302182,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1612534117
+    },
+    {
+        "content": "<blockquote>\n<p>What would be really cool is if there was some kind of definition of internal topos that used formal category theory (basically: the 2-category structure on Cat plus extra things like maybe a Yoneda structure). I wish I knew how to do this!</p>\n</blockquote>\n<p>One can formulate the definition of cartesian-closed object in a cartesian 2-category, and also objects that are complete with respect to a class of weights (equivalently algebras for a coKZ pseudomonad), so I imagine \"finitely complete cartesian-closed object\" should not cause significant difficulties. The subobject classifier seems more difficult: perhaps equipping the object with a suitable <a href=\"https://ncatlab.org/nlab/show/generalized+universal+bundle\">generalised universal bundle</a> (provided that the 2-category is finitely complete) would give something along the right lines? (A Grothendieck topos in a 2-category with a Yoneda structure should be much more straightforward.)</p>",
+        "id": 225327535,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1612545096
+    },
+    {
+        "content": "<p>How do you define a Cartesian closed object in a 2-category?</p>",
+        "id": 225336661,
+        "sender_full_name": "Fawzi Hreiki",
+        "timestamp": 1612549317
+    },
+    {
+        "content": "<p>Assuming that <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"script\">K</mi></mrow><annotation encoding=\"application/x-tex\">\\mathcal K</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathcal\" style=\"margin-right:0.01445em;\">K</span></span></span></span> has finite products, a cartesian-closed object <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>X</mi></mrow><annotation encoding=\"application/x-tex\">X</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.07847em;\">X</span></span></span></span> is one for which the 1-cells <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>1</mn><mo>←</mo><mi>X</mi><mover><mo stretchy=\"true\">→</mo><mpadded lspace=\"0.3em\" width=\"+0.6em\"><msub><mi mathvariant=\"normal\">Δ</mi><mn>2</mn></msub></mpadded></mover><mi>X</mi><mo>×</mo><mi>X</mi></mrow><annotation encoding=\"application/x-tex\">1 \\leftarrow X \\xrightarrow{\\Delta_2} X \\times X</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.64444em;vertical-align:0em;\"></span><span class=\"mord\">1</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">←</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1.1113309999999998em;vertical-align:-0.010999999999999899em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.07847em;\">X</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel x-arrow\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:1.100331em;\"><span style=\"top:-3.322em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight x-arrow-pad\"><span class=\"mord mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\">Δ</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.31731428571428577em;\"><span style=\"top:-2.357em;margin-left:0em;margin-right:0.07142857142857144em;\"><span class=\"pstrut\" style=\"height:2.5em;\"></span><span class=\"sizing reset-size3 size1 mtight\"><span class=\"mord mtight\">2</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.143em;\"><span></span></span></span></span></span></span></span></span></span><span class=\"svg-align\" style=\"top:-2.689em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"hide-tail\" style=\"height:0.522em;min-width:1.469em;\"><svg height=\"0.522em\" preserveAspectRatio=\"xMaxYMin slice\" viewBox=\"0 0 400000 522\" width=\"400em\"><path d=\"M0 241v40h399891c-47.3 35.3-84 78-110 128 -16.7 32-27.7 63.7-33 95 0 1.3-.2 2.7-.5 4-.3 1.3-.5 2.3-.5 3 0 7.3 6.7 11 20  11 8 0 13.2-.8 15.5-2.5 2.3-1.7 4.2-5.5 5.5-11.5 2-13.3 5.7-27 11-41 14.7-44.7  39-84.5 73-119.5s73.7-60.2 119-75.5c6-2 9-5.7 9-11s-3-9-9-11c-45.3-15.3-85 -40.5-119-75.5s-58.3-74.8-73-119.5c-4.7-14-8.3-27.3-11-40-1.3-6.7-3.2-10.8-5.5 -12.5-2.3-1.7-7.5-2.5-15.5-2.5-14 0-21 3.7-21 11 0 2 2 10.3 6 25 20.7 83.3 67  151.7 139 205zm0 0v40h399900v-40z\"></path></svg></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.010999999999999899em;\"><span></span></span></span></span></span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.76666em;vertical-align:-0.08333em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.07847em;\">X</span><span class=\"mspace\" style=\"margin-right:0.2222222222222222em;\"></span><span class=\"mbin\">×</span><span class=\"mspace\" style=\"margin-right:0.2222222222222222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.07847em;\">X</span></span></span></span> have right adjoints, and for which <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>X</mi><mo>≅</mo><mi>X</mi><mo>×</mo><mn>1</mn><mover><mo stretchy=\"true\">→</mo><mpadded lspace=\"0.3em\" width=\"+0.6em\"><mrow><mi>X</mi><mo>×</mo><mi>x</mi></mrow></mpadded></mover><mi>X</mi><mo>×</mo><mi>X</mi><mover><mo stretchy=\"true\">→</mo><mpadded lspace=\"0.3em\" width=\"+0.6em\"><mo lspace=\"0em\" rspace=\"0em\">⇒</mo></mpadded></mover><mi>X</mi></mrow><annotation encoding=\"application/x-tex\">X \\cong X \\times 1 \\xrightarrow{X \\times x} X \\times X \\xrightarrow{\\Rightarrow} X</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.07847em;\">X</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">≅</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.76666em;vertical-align:-0.08333em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.07847em;\">X</span><span class=\"mspace\" style=\"margin-right:0.2222222222222222em;\"></span><span class=\"mbin\">×</span><span class=\"mspace\" style=\"margin-right:0.2222222222222222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1.1113309999999998em;vertical-align:-0.010999999999999899em;\"></span><span class=\"mord\">1</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel x-arrow\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:1.100331em;\"><span style=\"top:-3.322em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight x-arrow-pad\"><span class=\"mord mtight\"><span class=\"mord mathnormal mtight\" style=\"margin-right:0.07847em;\">X</span><span class=\"mbin mtight\">×</span><span class=\"mord mathnormal mtight\">x</span></span></span></span><span class=\"svg-align\" style=\"top:-2.689em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"hide-tail\" style=\"height:0.522em;min-width:1.469em;\"><svg height=\"0.522em\" preserveAspectRatio=\"xMaxYMin slice\" viewBox=\"0 0 400000 522\" width=\"400em\"><path d=\"M0 241v40h399891c-47.3 35.3-84 78-110 128 -16.7 32-27.7 63.7-33 95 0 1.3-.2 2.7-.5 4-.3 1.3-.5 2.3-.5 3 0 7.3 6.7 11 20  11 8 0 13.2-.8 15.5-2.5 2.3-1.7 4.2-5.5 5.5-11.5 2-13.3 5.7-27 11-41 14.7-44.7  39-84.5 73-119.5s73.7-60.2 119-75.5c6-2 9-5.7 9-11s-3-9-9-11c-45.3-15.3-85 -40.5-119-75.5s-58.3-74.8-73-119.5c-4.7-14-8.3-27.3-11-40-1.3-6.7-3.2-10.8-5.5 -12.5-2.3-1.7-7.5-2.5-15.5-2.5-14 0-21 3.7-21 11 0 2 2 10.3 6 25 20.7 83.3 67  151.7 139 205zm0 0v40h399900v-40z\"></path></svg></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.010999999999999899em;\"><span></span></span></span></span></span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.76666em;vertical-align:-0.08333em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.07847em;\">X</span><span class=\"mspace\" style=\"margin-right:0.2222222222222222em;\"></span><span class=\"mbin\">×</span><span class=\"mspace\" style=\"margin-right:0.2222222222222222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.889809em;vertical-align:-0.01100000000000001em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.07847em;\">X</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel x-arrow\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.878809em;\"><span style=\"top:-3.322em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight x-arrow-pad\"><span class=\"mord mtight\"><span class=\"mrel mtight\">⇒</span></span></span></span><span class=\"svg-align\" style=\"top:-2.689em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"hide-tail\" style=\"height:0.522em;min-width:1.469em;\"><svg height=\"0.522em\" preserveAspectRatio=\"xMaxYMin slice\" viewBox=\"0 0 400000 522\" width=\"400em\"><path d=\"M0 241v40h399891c-47.3 35.3-84 78-110 128 -16.7 32-27.7 63.7-33 95 0 1.3-.2 2.7-.5 4-.3 1.3-.5 2.3-.5 3 0 7.3 6.7 11 20  11 8 0 13.2-.8 15.5-2.5 2.3-1.7 4.2-5.5 5.5-11.5 2-13.3 5.7-27 11-41 14.7-44.7  39-84.5 73-119.5s73.7-60.2 119-75.5c6-2 9-5.7 9-11s-3-9-9-11c-45.3-15.3-85 -40.5-119-75.5s-58.3-74.8-73-119.5c-4.7-14-8.3-27.3-11-40-1.3-6.7-3.2-10.8-5.5 -12.5-2.3-1.7-7.5-2.5-15.5-2.5-14 0-21 3.7-21 11 0 2 2 10.3 6 25 20.7 83.3 67  151.7 139 205zm0 0v40h399900v-40z\"></path></svg></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.01100000000000001em;\"><span></span></span></span></span></span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.07847em;\">X</span></span></span></span> has a right adjoint for all <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>x</mi><mo>:</mo><mn>1</mn><mo>→</mo><mi>X</mi></mrow><annotation encoding=\"application/x-tex\">x : 1 \\to X</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.43056em;vertical-align:0em;\"></span><span class=\"mord mathnormal\">x</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">:</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.64444em;vertical-align:0em;\"></span><span class=\"mord\">1</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">→</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.07847em;\">X</span></span></span></span>.</p>",
+        "id": 225338142,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1612549997
+    },
+    {
+        "content": "<p>That's not a real great definition, though, since it refers to global points.  A better definition requires some notion of \"opposite\" with a duality than can be applied to some notion of profunctor, such as in a Weber 2-topos or a compact closed equipment.</p>",
+        "id": 225363587,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1612562485
+    },
+    {
+        "content": "<p>Yes, I also found that aspect dissatifying (though it is the definition given by Weber in his paper on 2-toposes).</p>",
+        "id": 225364108,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1612562735
+    },
+    {
+        "content": "<p>Do you have a precise definition in mind, or simply some idea of what an ideal definition should look like?</p>",
+        "id": 225364180,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1612562763
+    },
+    {
+        "content": "<p>Perhaps it would be better to axiomatise the closed structure using a 2-variable adjunction.</p>",
+        "id": 225364736,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1612563045
+    },
+    {
+        "content": "<p>Day-Street in \"Monoidal bicategories and Hopf algebroids\" give a definition of \"closed map pseudomonoid\" in any monoidal bicategory with duals.  So if your 2-category has the structure to define such a bicategory of its objects and \"profunctors\" between them (like the 2-sided fibrations that Weber uses), you can interpret that therein (and also require the pseudomonoid structure to be cartesian).  But I think if you compile it out, it should make sense in a Weber 2-topos: you have <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>m</mi><mo>:</mo><mi>A</mi><mo>×</mo><mi>A</mi><mo>→</mo><mi>A</mi></mrow><annotation encoding=\"application/x-tex\">m:A\\times A \\to A</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.43056em;vertical-align:0em;\"></span><span class=\"mord mathnormal\">m</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">:</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.76666em;vertical-align:-0.08333em;\"></span><span class=\"mord mathnormal\">A</span><span class=\"mspace\" style=\"margin-right:0.2222222222222222em;\"></span><span class=\"mbin\">×</span><span class=\"mspace\" style=\"margin-right:0.2222222222222222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathnormal\">A</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">→</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathnormal\">A</span></span></span></span>, from that you construct a representable fibration from <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi></mrow><annotation encoding=\"application/x-tex\">A</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathnormal\">A</span></span></span></span> to <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mo>×</mo><mi>A</mi></mrow><annotation encoding=\"application/x-tex\">A\\times A</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.76666em;vertical-align:-0.08333em;\"></span><span class=\"mord mathnormal\">A</span><span class=\"mspace\" style=\"margin-right:0.2222222222222222em;\"></span><span class=\"mbin\">×</span><span class=\"mspace\" style=\"margin-right:0.2222222222222222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathnormal\">A</span></span></span></span>, then transpose that to a fibration from <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msup><mi>A</mi><mrow><mi mathvariant=\"normal\">o</mi><mi mathvariant=\"normal\">p</mi></mrow></msup><mo>×</mo><mi>A</mi></mrow><annotation encoding=\"application/x-tex\">A^{\\rm op}\\times A</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.76666em;vertical-align:-0.08333em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\">A</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.664392em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\"><span class=\"mord mathrm mtight\">o</span><span class=\"mord mathrm mtight\">p</span></span></span></span></span></span></span></span></span></span><span class=\"mspace\" style=\"margin-right:0.2222222222222222em;\"></span><span class=\"mbin\">×</span><span class=\"mspace\" style=\"margin-right:0.2222222222222222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathnormal\">A</span></span></span></span> to <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi></mrow><annotation encoding=\"application/x-tex\">A</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathnormal\">A</span></span></span></span>, and require that the latter be corepresentable by some hom-map <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>h</mi><mo>:</mo><msup><mi>A</mi><mrow><mi mathvariant=\"normal\">o</mi><mi mathvariant=\"normal\">p</mi></mrow></msup><mo>×</mo><mi>A</mi><mo>→</mo><mi>A</mi></mrow><annotation encoding=\"application/x-tex\">h:A^{\\rm op}\\times A \\to A</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.69444em;vertical-align:0em;\"></span><span class=\"mord mathnormal\">h</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">:</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.76666em;vertical-align:-0.08333em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\">A</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.664392em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\"><span class=\"mord mathrm mtight\">o</span><span class=\"mord mathrm mtight\">p</span></span></span></span></span></span></span></span></span></span><span class=\"mspace\" style=\"margin-right:0.2222222222222222em;\"></span><span class=\"mbin\">×</span><span class=\"mspace\" style=\"margin-right:0.2222222222222222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathnormal\">A</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">→</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathnormal\">A</span></span></span></span>.</p>",
+        "id": 225366702,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1612564150
+    },
+    {
+        "content": "<p>Ah, interesting, thanks. That is much more satifsying.</p>",
+        "id": 225367717,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1612564811
+    },
+    {
+        "content": "<p>m is the product map right?</p>",
+        "id": 225374350,
+        "sender_full_name": "Fawzi Hreiki",
+        "timestamp": 1612569868
+    },
+    {
+        "content": "<p>If we’re interpreting this in CAT</p>",
+        "id": 225374385,
+        "sender_full_name": "Fawzi Hreiki",
+        "timestamp": 1612569889
+    },
+    {
+        "content": "<p>Yes, I think it's the product map.</p>",
+        "id": 225426508,
+        "sender_full_name": "John Baez",
+        "timestamp": 1612639706
+    },
+    {
+        "content": "<p>I know it’s a bit late coming back to this now, but I was reading Toposes, Triples, and Theories and in chapter 4 on sketches they construct the finite limit sketch of elementary toposes. So that’s also an answer to this.</p>",
+        "id": 226299434,
+        "sender_full_name": "Fawzi Hreiki",
+        "timestamp": 1613301507
+    },
+    {
+        "content": "<p>For anyone else looking, it's section 4.11, starting on page 142 of the TAC Reprint version.</p>",
+        "id": 226301114,
+        "sender_full_name": "David Michael Roberts",
+        "timestamp": 1613304112
+    },
+    {
+        "content": "<p>In particular, they use the definition of a topos as a category with terminal objects, pullbacks, and power objects.</p>",
+        "id": 226301316,
+        "sender_full_name": "David Michael Roberts",
+        "timestamp": 1613304383
+    }
+]

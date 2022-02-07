@@ -1,0 +1,176 @@
+[
+    {
+        "content": "<p>What's the difference and the relationship between Streicher's K und UIP?</p>",
+        "id": 244016067,
+        "sender_full_name": "Leopold Schlicht",
+        "timestamp": 1624715437
+    },
+    {
+        "content": "<p>They are equivalent.</p>",
+        "id": 244020711,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1624721875
+    },
+    {
+        "content": "<p>K is a rule, whereas UIP is a theorem. If you're talking about the formal theory or implementation or something, you tend to talk about the K rule, whereas if you're talking about the emergent mathematics or a temporary assumption, you tend to talk about UIP.</p>",
+        "id": 244021499,
+        "sender_full_name": "James Wood",
+        "timestamp": 1624722846
+    },
+    {
+        "content": "<p>Well, both of then can be asserted internally as axioms too.  But it's true that K can be given a computational interpretation and UIP can't.</p>",
+        "id": 244028246,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1624732410
+    },
+    {
+        "content": "<p>The computational interpretation of K is just dependent pattern matching, right?</p>",
+        "id": 244072391,
+        "sender_full_name": "Xuanrui Qi",
+        "timestamp": 1624808793
+    },
+    {
+        "content": "<p>Basically.</p>",
+        "id": 244084969,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1624828031
+    },
+    {
+        "content": "<p>Thanks. How can it be the case that K computes while UIP doesn't if they are both equivalent? In what sense are they equivalent?</p>",
+        "id": 244177827,
+        "sender_full_name": "Leopold Schlicht",
+        "timestamp": 1624901035
+    },
+    {
+        "content": "<p>They're equivalent in the sense that when stated as axioms, either one can be proven from the other.  But one can state a computation rule for the K axiom that is well-behaved (normalizing), whereas this doesn't seem possible for UIP.</p>",
+        "id": 244180308,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1624902122
+    },
+    {
+        "content": "<p>Am I confused, or is this a distinction without a difference? Once I've got a computation rule for the K axiom, then I can define a computation rule for the UIP axiom (have the postulated axiom compute to the now-definable element <code>P : UIP</code>, defined by dependent pattern matching or whatever). This is a definitional extension of the calculus with K, so normalization is preserved.</p>",
+        "id": 244180602,
+        "sender_full_name": "Jonathan Sterling",
+        "timestamp": 1624902265
+    },
+    {
+        "content": "<p>Hang on a minute. This will take me a few minutes to do properly. It took me a few years, back in the nineties.</p>",
+        "id": 244180668,
+        "sender_full_name": "Conor McBride",
+        "timestamp": 1624902297
+    },
+    {
+        "content": "<p><span class=\"user-mention\" data-user-id=\"297784\">@Jonathan Sterling</span> Can you give a normalizing type theory in which K is defined in terms of UIP rather than vice versa?</p>",
+        "id": 244181374,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1624902610
+    },
+    {
+        "content": "<p>First instalment:</p>\n<div class=\"codehilite\"><pre><span></span><code>data I (X : Set)(x : X) : X -&gt; Set where\n  refl : I X x x\n\nJ : (X : Set)(x y : X)(q : I X x y) -&gt;\n    (P : (y : X)(q : I X x y) -&gt; Set) -&gt;\n    P x refl -&gt;\n    P y q\nJ X x .x refl P p = p\n\nK : (X : Set)(x : X)(q : I X x x) -&gt;\n    (P : (q : I X x x) -&gt; Set) -&gt;\n    P refl -&gt;\n    P q\nK X x refl P p = p\n\nUIP : (X : Set)(x y : X)(q r : I X x y) -&gt; I (I X x y) q r\nUIP X x .x refl refl = refl\n</code></pre></div>\n<p>Here is the identity type, together with J, K and UIP all defined by <em>dependent pattern matching</em>.</p>",
+        "id": 244181454,
+        "sender_full_name": "Conor McBride",
+        "timestamp": 1624902663
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276777\">Mike Shulman</span> <a href=\"#narrow/stream/229952-theory.3A-type.20theory/topic/K.20and.20UIP/near/244181374\">said</a>:</p>\n<blockquote>\n<p><span class=\"user-mention silent\" data-user-id=\"297784\">Jonathan Sterling</span> Can you give a normalizing type theory in which K is defined in terms of UIP rather than vice versa?</p>\n</blockquote>\n<p>I feel the question is really not so well-defined, but perhaps I am misunderstanding it. I think that \"rather than\" is doing a lot of work in this sentence ;-)</p>",
+        "id": 244181469,
+        "sender_full_name": "Jonathan Sterling",
+        "timestamp": 1624902672
+    },
+    {
+        "content": "<p><code>J</code> is exactly the standard induction principle you get for <code>I</code> by the usual scheme. (By yanking x to the left of : I get Christin Paulin's version, rather than Per's but they're equivalent.)</p>",
+        "id": 244181660,
+        "sender_full_name": "Conor McBride",
+        "timestamp": 1624902765
+    },
+    {
+        "content": "<p><span class=\"user-mention\" data-user-id=\"297784\">@Jonathan Sterling</span> I mean, if I first add K and UIP as non-computing axioms, and then I add a reduction rule reducing K to its definition in terms of UIP, can I add  further computation rules to make the theory normalizing?</p>",
+        "id": 244181796,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1624902838
+    },
+    {
+        "content": "<p>The main result of my thesis is that anything you can define by dependent pattern matching, you can just as well obtain from induction principles plus K (with its reduction rule as given).</p>",
+        "id": 244181868,
+        "sender_full_name": "Conor McBride",
+        "timestamp": 1624902861
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276777\">Mike Shulman</span> <a href=\"#narrow/stream/229952-theory.3A-type.20theory/topic/K.20and.20UIP/near/244181796\">said</a>:</p>\n<blockquote>\n<p><span class=\"user-mention silent\" data-user-id=\"297784\">Jonathan Sterling</span> I mean, if I first add K and UIP as non-computing axioms, and then I add a reduction rule reducing K to its definition in terms of UIP, can I add  further computation rules to make the theory normalizing?</p>\n</blockquote>\n<p>Thanks for clarifying that.</p>",
+        "id": 244182014,
+        "sender_full_name": "Jonathan Sterling",
+        "timestamp": 1624902947
+    },
+    {
+        "content": "<p>I think a valid solution to your question is to just add the additional computation rules that reduce both K and UIP! Obviously there is something to be worked out here in terms of coherence, but I hope you see why I think there isn't really any difference here.</p>",
+        "id": 244182278,
+        "sender_full_name": "Jonathan Sterling",
+        "timestamp": 1624903056
+    },
+    {
+        "content": "<p>If you reduce K to UIP and also UIP to K, isn't there a circularity problem?  Or are you saying to give UIP only the reduction rule that it <em>would</em> have if defined in terms of K without actually defining it that way?  (I'm not sure offhand what that rule is.)  It seems a little weird to give K two different reduction rules.</p>",
+        "id": 244183518,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1624903601
+    },
+    {
+        "content": "<p>Well, we can give a term as many reduction rules as we want... We may run into problems with confluence, but (1) often you can just keep adding rules until it converges, and (2) even lack of confluence does not prevent a computational interpretation that is sound and complete for judgmental equality.</p>",
+        "id": 244183970,
+        "sender_full_name": "Jonathan Sterling",
+        "timestamp": 1624903802
+    },
+    {
+        "content": "<p>My point here is not to make too precise of technical claims (because I don't have time to check them), but to say that questions like \"is there a computational interpretation of Axiom X when there is a computational interpretation of Axiom Y, which is equivalent to X\" are very subtle and I have found that the best way to deal with such questions is to explain them away (in a way that respects the principle of equivalence) rather than try to answer them.</p>",
+        "id": 244184140,
+        "sender_full_name": "Jonathan Sterling",
+        "timestamp": 1624903867
+    },
+    {
+        "content": "<p>Well, maybe there's no formal way to distinguish them, but informally it still feels to me like your \"computation rule\" for UIP is fundamentally parasitic on K, so that K is the one that \"really\" has a computational interpretation.</p>",
+        "id": 244184209,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1624903897
+    },
+    {
+        "content": "<p>Now, here is UIP defined not by pattern matching but from J and K:</p>\n<div class=\"codehilite\"><pre><span></span><code>UIP&#39; : (X : Set)(x y : X)(q r : I X x y) -&gt; I (I X x y) q r\nUIP&#39; X x y q r =\n  J X x y q (\\ y q -&gt; (r : I X x y) -&gt; I (I X x y) q r)\n    (\\ r -&gt; K X x r (\\ r -&gt; I (I X x x) refl r)\n      (refl {- : I (I X x x) refl refl -})\n     {- : (r : I X x x) -&gt; I (I X x x) refl r -})\n  r\n</code></pre></div>\n<p>We can check that UIP's pattern matching equation holds <em>definitionally</em> by observing that refl suffices to prove it.</p>\n<div class=\"codehilite\"><pre><span></span><code>UIP&#39;q : (X : Set)(x : X) -&gt;\n  I (I (I X x x) refl refl) (UIP&#39; X x x refl refl) refl\nUIP&#39;q X x = refl\n</code></pre></div>\n<p>Meanwhile, we can derive K from UIP</p>\n<div class=\"codehilite\"><pre><span></span><code>K&#39; : (X : Set)(x : X)(q : I X x x) -&gt;\n     (P : (q : I X x x) -&gt; Set) -&gt;\n     P refl -&gt;\n     P q\nK&#39; X x q P p = J (I X x x) refl q (UIP X x x refl q) (\\ y _ -&gt; P y) p\n</code></pre></div>\n<p>and moreover, if UIP's pattern matching behaviour holds intensionally, then so does K's:</p>\n<div class=\"codehilite\"><pre><span></span><code>K&#39;q : (X : Set)(x : X)(q : I X x x) -&gt;\n    (P : (q : I X x x) -&gt; Set) -&gt;\n    (p : P refl) -&gt;\n  I (P refl) (K&#39; X x refl P p) p\nK&#39;q X x q P p = refl\n</code></pre></div>\n<p>The point is that K is a really strong statement about circular paths (corresponding to pattern matching's intuition about covering the constructors), while J is a statement about path-to-somewhere pairs.</p>",
+        "id": 244184335,
+        "sender_full_name": "Conor McBride",
+        "timestamp": 1624903941
+    },
+    {
+        "content": "<p><span class=\"user-mention\" data-user-id=\"277574\">@Conor McBride</span> Ah, now I think I see what you're saying: since UIP can also be defined by dependent pattern-matching, it gets a reduction rule from that which is equally computational, and its equivalence to K preserves those computation rules.  So I was wrong -- they're both equally <em>instances</em> of dependent pattern matching (in \"with-K\" style) and hence equally computational.  Right?</p>",
+        "id": 244185037,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1624904247
+    },
+    {
+        "content": "<p>Right.</p>",
+        "id": 244185094,
+        "sender_full_name": "Conor McBride",
+        "timestamp": 1624904274
+    },
+    {
+        "content": "<p>Moreover, they're complete. Either gives you enough to do anything you can do with dependent pattern matching.</p>",
+        "id": 244185564,
+        "sender_full_name": "Conor McBride",
+        "timestamp": 1624904482
+    },
+    {
+        "content": "<p>Is there a sense in which the axiom K without its computation rule (that is, UIP) is equivalent to \"K + its computation rule\"? One cannot say that both yield the same typing judgments, because equality judgments can entail typing judgments, right? (For instance, if <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>t</mi><mo>≡</mo><msup><mi>t</mi><mo mathvariant=\"normal\" lspace=\"0em\" rspace=\"0em\">′</mo></msup></mrow><annotation encoding=\"application/x-tex\">t\\equiv t&#x27;</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.61508em;vertical-align:0em;\"></span><span class=\"mord mathnormal\">t</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">≡</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.751892em;vertical-align:0em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\">t</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.751892em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\">′</span></span></span></span></span></span></span></span></span></span></span></span> and <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>t</mi><mspace></mspace><mspace width=\"0.1111111111111111em\"/><mo lspace=\"0em\" rspace=\"0.17em\"></mo><mtext> ⁣</mtext><mo lspace=\"0em\" rspace=\"0em\">:</mo><mspace width=\"0.3333333333333333em\"/><mi>A</mi></mrow><annotation encoding=\"application/x-tex\">t\\colon A</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathnormal\">t</span><span class=\"mspace nobreak\"></span><span class=\"mspace\" style=\"margin-right:0.1111111111111111em;\"></span><span class=\"mpunct\"></span><span class=\"mspace\" style=\"margin-right:-0.16666666666666666em;\"></span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mord\"><span class=\"mrel\">:</span></span><span class=\"mspace\" style=\"margin-right:0.3333333333333333em;\"></span><span class=\"mord mathnormal\">A</span></span></span></span> then <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msup><mi>t</mi><mo mathvariant=\"normal\" lspace=\"0em\" rspace=\"0em\">′</mo></msup><mspace></mspace><mspace width=\"0.1111111111111111em\"/><mo lspace=\"0em\" rspace=\"0.17em\"></mo><mtext> ⁣</mtext><mo lspace=\"0em\" rspace=\"0em\">:</mo><mspace width=\"0.3333333333333333em\"/><mi>A</mi></mrow><annotation encoding=\"application/x-tex\">t&#x27;\\colon A</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.751892em;vertical-align:0em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\">t</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.751892em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\">′</span></span></span></span></span></span></span></span></span><span class=\"mspace nobreak\"></span><span class=\"mspace\" style=\"margin-right:0.1111111111111111em;\"></span><span class=\"mpunct\"></span><span class=\"mspace\" style=\"margin-right:-0.16666666666666666em;\"></span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mord\"><span class=\"mrel\">:</span></span><span class=\"mspace\" style=\"margin-right:0.3333333333333333em;\"></span><span class=\"mord mathnormal\">A</span></span></span></span>.)</p>",
+        "id": 244186077,
+        "sender_full_name": "Leopold Schlicht",
+        "timestamp": 1624904733
+    },
+    {
+        "content": "<p>K without its computation rule allows you (especially if you happen to be Matthieu Sozeau) to implement dependent pattern matching in a way that all the pattern matching equations are <em>provable</em>, even though they do not hold judgmentally. However, to recover by proof everything which once held judgmentally requires some additional function extensionality. Nicolas Oury did the spadework on that result.</p>\n<p>Observational Type Theory takes this further: you have not only provable UIP but judgmental proof irrelevance for propositions (it's aggressively anti-univalent, as it stands, but rather fun). In OTT, given an axiom K that eliminates over Set but does not compute, you could derive UIP from that K, and then K' as above from UIP...and K' jolly well would compute!</p>",
+        "id": 244187488,
+        "sender_full_name": "Conor McBride",
+        "timestamp": 1624905442
+    },
+    {
+        "content": "<p>Sounds interesting, thanks.</p>",
+        "id": 244212195,
+        "sender_full_name": "Leopold Schlicht",
+        "timestamp": 1624919053
+    }
+]

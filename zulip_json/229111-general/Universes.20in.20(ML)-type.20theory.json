@@ -1,0 +1,224 @@
+[
+    {
+        "content": "<p>Where are universe essentially used in Martin-Lof type theory? I understand you need a Universe type to state the univalence axiom in HoTT but it seems to me one can do much of non-homotopic type theory without universes.</p>",
+        "id": 215953045,
+        "sender_full_name": "Alexander Gietelink Oldenziel",
+        "timestamp": 1604752515
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"278660\">Alexander Gietelink Oldenziel</span> <a href=\"#narrow/stream/229111-general/topic/Universes.20in.20(ML)-type.20theory/near/215953045\">said</a>:</p>\n<blockquote>\n<p>Where are universe essentially used in Martin-Lof type theory? I understand you need a Universe type to state the univalence axiom in HoTT but it seems to me one can do much of non-homotopic type theory without universes.</p>\n</blockquote>\n<p>You can't even prove <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>1</mn><mo mathvariant=\"normal\">≠</mo><mn>0</mn></mrow><annotation encoding=\"application/x-tex\">1 \\ne 0</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8888799999999999em;vertical-align:-0.19444em;\"></span><span class=\"mord\">1</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\"><span class=\"mrel\"><span class=\"mord vbox\"><span class=\"thinbox\"><span class=\"rlap\"><span class=\"strut\" style=\"height:0.8888799999999999em;vertical-align:-0.19444em;\"></span><span class=\"inner\"><span class=\"mrel\"></span></span><span class=\"fix\"></span></span></span></span></span><span class=\"mrel\">=</span></span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.64444em;vertical-align:0em;\"></span><span class=\"mord\">0</span></span></span></span> without them <span aria-label=\"smile\" class=\"emoji emoji-1f642\" role=\"img\" title=\"smile\">:smile:</span></p>",
+        "id": 215953290,
+        "sender_full_name": "Shea Levy",
+        "timestamp": 1604753005
+    },
+    {
+        "content": "<p>e.g. a verbose version of the proof in coq:</p>\n<div class=\"codehilite\" data-code-language=\"Coq\"><pre><span></span><code><span class=\"kn\">Definition</span> <span class=\"n\">one_ne_zero</span> <span class=\"o\">:</span> <span class=\"mi\">1</span> <span class=\"err\">≠</span> <span class=\"mi\">0</span> <span class=\"o\">:=</span>\n  <span class=\"o\">λ</span> <span class=\"o\">(</span><span class=\"n\">p</span> <span class=\"o\">:</span> <span class=\"mi\">1</span> <span class=\"o\">=</span> <span class=\"mi\">0</span><span class=\"o\">),</span>\n  <span class=\"k\">match</span> <span class=\"n\">p</span> <span class=\"k\">as</span> <span class=\"o\">_</span> <span class=\"k\">in</span> <span class=\"o\">_</span> <span class=\"o\">=</span> <span class=\"n\">zero</span> <span class=\"k\">return</span> <span class=\"k\">match</span> <span class=\"n\">zero</span> <span class=\"k\">return</span> <span class=\"kt\">Type</span> <span class=\"k\">with</span>\n                                  <span class=\"o\">|</span> <span class=\"mi\">0</span> <span class=\"o\">=&gt;</span> <span class=\"n\">False</span>\n                                  <span class=\"o\">|</span> <span class=\"n\">S</span> <span class=\"o\">_</span> <span class=\"o\">=&gt;</span> <span class=\"n\">IDProp</span>\n                                  <span class=\"k\">end</span> <span class=\"k\">with</span>\n  <span class=\"o\">|</span> <span class=\"n\">eq_refl</span> <span class=\"o\">=&gt;</span> <span class=\"n\">idProp</span>\n  <span class=\"k\">end</span><span class=\"o\">.</span>\n</code></pre></div>\n<p>The match in the <code>return</code> requires a universe (here, <code>Type</code>)</p>",
+        "id": 215953413,
+        "sender_full_name": "Shea Levy",
+        "timestamp": 1604753216
+    },
+    {
+        "content": "<p>I've thought about a scheme without a <em>closed</em> universe type term, but with a more direct notion of polymorphism, and you'd have a type code interpretation operator that takes a term in a context with the universe code primitives as variables of some polymorphically bound T. Not sure it actually gains anything but it's always annoyed me that type codes don't compute and yet we pretend they're values <span aria-label=\"tongue\" class=\"emoji emoji-1f445\" role=\"img\" title=\"tongue\">:tongue:</span></p>",
+        "id": 215953625,
+        "sender_full_name": "Shea Levy",
+        "timestamp": 1604753633
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"278660\">Alexander Gietelink Oldenziel</span> <a href=\"#narrow/stream/229111-general/topic/Universes.20in.20(ML)-type.20theory/near/215953045\">said</a>:</p>\n<blockquote>\n<p>Where are universe essentially used in Martin-Lof type theory? I understand you need a Universe type to state the univalence axiom in HoTT but it seems to me one can do much of non-homotopic type theory without universes.</p>\n</blockquote>\n<p>Besides the use in characterizing identity types mentioned above by Shea Levy, universes are used to define structures and constructions on them, and hence they're crucial for category theory.<br>\nAs a simple example, the type of pointed sets (relative to a universe) can be defined as <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mo>∑</mo><mrow><mi>X</mi><mo>:</mo><mrow><mi mathvariant=\"normal\">S</mi><mi mathvariant=\"normal\">e</mi><mi mathvariant=\"normal\">t</mi></mrow></mrow></msub><mi>X</mi></mrow><annotation encoding=\"application/x-tex\">\\sum_{X:\\mathrm{Set}}X</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:1.0497100000000001em;vertical-align:-0.29971000000000003em;\"></span><span class=\"mop\"><span class=\"mop op-symbol small-op\" style=\"position:relative;top:-0.0000050000000000050004em;\">∑</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.17862099999999992em;\"><span style=\"top:-2.40029em;margin-left:0em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mathnormal mtight\" style=\"margin-right:0.07847em;\">X</span><span class=\"mrel mtight\">:</span><span class=\"mord mtight\"><span class=\"mord mathrm mtight\">S</span><span class=\"mord mathrm mtight\">e</span><span class=\"mord mathrm mtight\">t</span></span></span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.29971000000000003em;\"><span></span></span></span></span></span></span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.07847em;\">X</span></span></span></span>, where <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"normal\">S</mi><mi mathvariant=\"normal\">e</mi><mi mathvariant=\"normal\">t</mi></mrow><annotation encoding=\"application/x-tex\">\\mathrm{Set}</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord\"><span class=\"mord mathrm\">S</span><span class=\"mord mathrm\">e</span><span class=\"mord mathrm\">t</span></span></span></span></span> is a universe of sets. (In HoTT, this would itself be a sigma-type over the universe; in MLTT with UIP, it would just be the universe.)<br>\nThe type of groups would be defined as <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mo>∑</mo><mrow><mi>G</mi><mo>:</mo><mrow><mi mathvariant=\"normal\">S</mi><mi mathvariant=\"normal\">e</mi><mi mathvariant=\"normal\">t</mi></mrow></mrow></msub><msub><mo>∑</mo><mrow><mi>e</mi><mo>:</mo><mi>G</mi></mrow></msub><msub><mo>∑</mo><mrow><mi>μ</mi><mo>:</mo><mi>G</mi><mo>→</mo><mi>G</mi><mo>→</mo><mi>G</mi></mrow></msub><mrow><mi mathvariant=\"normal\">i</mi><mi mathvariant=\"normal\">s</mi><mi mathvariant=\"normal\">G</mi><mi mathvariant=\"normal\">r</mi><mi mathvariant=\"normal\">o</mi><mi mathvariant=\"normal\">u</mi><mi mathvariant=\"normal\">p</mi></mrow><mo stretchy=\"false\">(</mo><mi>G</mi><mo separator=\"true\">,</mo><mi>e</mi><mo separator=\"true\">,</mo><mi>μ</mi><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">\\sum_{G:\\mathrm{Set}}\\sum_{e:G}\\sum_{\\mu:G\\to G\\to G}\\mathrm{isGroup}(G,e,\\mu)</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:1.185818em;vertical-align:-0.43581800000000004em;\"></span><span class=\"mop\"><span class=\"mop op-symbol small-op\" style=\"position:relative;top:-0.0000050000000000050004em;\">∑</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.17862099999999992em;\"><span style=\"top:-2.40029em;margin-left:0em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mathnormal mtight\">G</span><span class=\"mrel mtight\">:</span><span class=\"mord mtight\"><span class=\"mord mathrm mtight\">S</span><span class=\"mord mathrm mtight\">e</span><span class=\"mord mathrm mtight\">t</span></span></span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.29971000000000003em;\"><span></span></span></span></span></span></span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mop\"><span class=\"mop op-symbol small-op\" style=\"position:relative;top:-0.0000050000000000050004em;\">∑</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.17862099999999992em;\"><span style=\"top:-2.40029em;margin-left:0em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mathnormal mtight\">e</span><span class=\"mrel mtight\">:</span><span class=\"mord mathnormal mtight\">G</span></span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.29971000000000003em;\"><span></span></span></span></span></span></span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mop\"><span class=\"mop op-symbol small-op\" style=\"position:relative;top:-0.0000050000000000050004em;\">∑</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.17862099999999992em;\"><span style=\"top:-2.40029em;margin-left:0em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mathnormal mtight\">μ</span><span class=\"mrel mtight\">:</span><span class=\"mord mathnormal mtight\">G</span><span class=\"mrel mtight\">→</span><span class=\"mord mathnormal mtight\">G</span><span class=\"mrel mtight\">→</span><span class=\"mord mathnormal mtight\">G</span></span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.43581800000000004em;\"><span></span></span></span></span></span></span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mord\"><span class=\"mord mathrm\">i</span><span class=\"mord mathrm\">s</span><span class=\"mord mathrm\">G</span><span class=\"mord mathrm\">r</span><span class=\"mord mathrm\">o</span><span class=\"mord mathrm\">u</span><span class=\"mord mathrm\">p</span></span><span class=\"mopen\">(</span><span class=\"mord mathnormal\">G</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mord mathnormal\">e</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mord mathnormal\">μ</span><span class=\"mclose\">)</span></span></span></span>, etc.</p>",
+        "id": 215954081,
+        "sender_full_name": "Ulrik Buchholtz",
+        "timestamp": 1604754329
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"351475\">Shea Levy</span> <a href=\"#narrow/stream/229111-general/topic/Universes.20in.20(ML)-type.20theory/near/215953290\">said</a>:</p>\n<blockquote>\n<p><span class=\"user-mention silent\" data-user-id=\"278660\">Alexander Gietelink Oldenziel</span> <a href=\"#narrow/stream/229111-general/topic/Universes.20in.20(ML)-type.20theory/near/215953045\">said</a>:</p>\n<blockquote>\n<p>Where are universe essentially used in Martin-Lof type theory? I understand you need a Universe type to state the univalence axiom in HoTT but it seems to me one can do much of non-homotopic type theory without universes.</p>\n</blockquote>\n<p>You can't even prove <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>1</mn><mo mathvariant=\"normal\">≠</mo><mn>0</mn></mrow><annotation encoding=\"application/x-tex\">1 \\ne 0</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8888799999999999em;vertical-align:-0.19444em;\"></span><span class=\"mord\">1</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\"><span class=\"mrel\"><span class=\"mord vbox\"><span class=\"thinbox\"><span class=\"rlap\"><span class=\"strut\" style=\"height:0.8888799999999999em;vertical-align:-0.19444em;\"></span><span class=\"inner\"><span class=\"mrel\"></span></span><span class=\"fix\"></span></span></span></span></span><span class=\"mrel\">=</span></span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.64444em;vertical-align:0em;\"></span><span class=\"mord\">0</span></span></span></span> without them <span aria-label=\"smile\" class=\"emoji emoji-1f642\" role=\"img\" title=\"smile\">:smile:</span></p>\n</blockquote>\n<p>it's possible to give a large elimination rule w/o a universe!</p>",
+        "id": 216035851,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1604885199
+    },
+    {
+        "content": "<p>e.g., <a href=\"/user_uploads/21317/eSX2PRj2lTq34808O9sXrSY5/image.png\">image.png</a></p>\n<div class=\"message_inline_image\"><a href=\"/user_uploads/21317/eSX2PRj2lTq34808O9sXrSY5/image.png\" title=\"image.png\"><img src=\"/user_uploads/21317/eSX2PRj2lTq34808O9sXrSY5/image.png\"></a></div>",
+        "id": 216035859,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1604885229
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"351475\">Shea Levy</span> <a href=\"#narrow/stream/229111-general/topic/Universes.20in.20(ML)-type.20theory/near/215953290\">said</a>:</p>\n<blockquote>\n<p><span class=\"user-mention silent\" data-user-id=\"278660\">Alexander Gietelink Oldenziel</span> <a href=\"#narrow/stream/229111-general/topic/Universes.20in.20(ML)-type.20theory/near/215953045\">said</a>:</p>\n<blockquote>\n<p>Where are universe essentially used in Martin-Lof type theory? I understand you need a Universe type to state the univalence axiom in HoTT but it seems to me one can do much of non-homotopic type theory without universes.</p>\n</blockquote>\n<p>You can't even prove <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>1</mn><mo mathvariant=\"normal\">≠</mo><mn>0</mn></mrow><annotation encoding=\"application/x-tex\">1 \\ne 0</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8888799999999999em;vertical-align:-0.19444em;\"></span><span class=\"mord\">1</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\"><span class=\"mrel\"><span class=\"mord vbox\"><span class=\"thinbox\"><span class=\"rlap\"><span class=\"strut\" style=\"height:0.8888799999999999em;vertical-align:-0.19444em;\"></span><span class=\"inner\"><span class=\"mrel\"></span></span><span class=\"fix\"></span></span></span></span></span><span class=\"mrel\">=</span></span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.64444em;vertical-align:0em;\"></span><span class=\"mord\">0</span></span></span></span> without them <span aria-label=\"smile\" class=\"emoji emoji-1f642\" role=\"img\" title=\"smile\">:smile:</span></p>\n</blockquote>\n<p>Okay... this confuses me  a little.<br>\nMy understanding is that dependent type theories are modelled by fibrations (with extra structure), but most of these fibrations do not have universes I believe. E.g., I don't think the codomain fibration of a topos has a universe.<br>\n How does this work?</p>",
+        "id": 216200813,
+        "sender_full_name": "Alexander Gietelink Oldenziel",
+        "timestamp": 1605009132
+    },
+    {
+        "content": "<p><span class=\"user-mention\" data-user-id=\"278660\">@Alexander Gietelink Oldenziel</span> If you don't have any universes (and no large eliminations), then you can have a model where, intuitively, non-empty types are modeled by a singleton, while empty types are modeled by the empty type. The reference is <a href=\"http://dx.doi.org/10.2307/2274575\">this 1988 JSL article by Jan Smith</a>.</p>",
+        "id": 216202791,
+        "sender_full_name": "Ulrik Buchholtz",
+        "timestamp": 1605010572
+    },
+    {
+        "content": "<p>And I think universes are often taken as part of the \"extra stuff\" you mention, as are <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"normal\">Π</mi></mrow><annotation encoding=\"application/x-tex\">\\Pi</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord\">Π</span></span></span></span>-types, dependent sums, ...</p>",
+        "id": 216203336,
+        "sender_full_name": "Kenji Maillard",
+        "timestamp": 1605010915
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"278656\">Ulrik Buchholtz</span> <a href=\"#narrow/stream/229111-general/topic/Universes.20in.20(ML)-type.20theory/near/216202791\">said</a>:</p>\n<blockquote>\n<p><span class=\"user-mention silent\" data-user-id=\"278660\">Alexander Gietelink Oldenziel</span> If you don't have any universes (and no large eliminations), then you can have a model where, intuitively, non-empty types are modeled by a singleton, while empty types are modeled by the empty type. The reference is <a href=\"http://dx.doi.org/10.2307/2274575\">this 1988 JSL article by Jan Smith</a>.</p>\n</blockquote>\n<p>So I think I understand this. What I don't understand: the categorical semantics of Martin-Lof type theory in a topos should be (more or less?) the codomain fibration of the topos. However, I don't think that this fibration has a universe?</p>",
+        "id": 216205592,
+        "sender_full_name": "Alexander Gietelink Oldenziel",
+        "timestamp": 1605012246
+    },
+    {
+        "content": "<p>just because a system has a semantics and something is true in that semantics, it doesnt mean the thing is derivable in the system</p>",
+        "id": 216209035,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1605014179
+    },
+    {
+        "content": "<p>or, wait, are you asking how to model universes in that semantics?</p>",
+        "id": 216209101,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1605014219
+    },
+    {
+        "content": "<p><span class=\"user-mention\" data-user-id=\"278660\">@Alexander Gietelink Oldenziel</span> I think that in order to interpret MLTT with <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>n</mi></mrow><annotation encoding=\"application/x-tex\">n</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.43056em;vertical-align:0em;\"></span><span class=\"mord mathnormal\">n</span></span></span></span> universes in a topos (or rather in the codomain fibration of the topos) you need to ask for <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>n</mi></mrow><annotation encoding=\"application/x-tex\">n</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.43056em;vertical-align:0em;\"></span><span class=\"mord mathnormal\">n</span></span></span></span> (suitable) object classifiers on your topos. In the case of <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"script\">S</mi><mi mathvariant=\"script\">e</mi><mi mathvariant=\"script\">t</mi></mrow><annotation encoding=\"application/x-tex\">\\mathcal{Set}</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord\"><span class=\"mord mathcal\" style=\"margin-right:0.075em;\">S</span><span class=\"mord mathnormal\">e</span><span class=\"mord mathnormal\">t</span></span></span></span></span> I think it correspond to the assumption that you have <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>n</mi></mrow><annotation encoding=\"application/x-tex\">n</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.43056em;vertical-align:0em;\"></span><span class=\"mord mathnormal\">n</span></span></span></span> Grothendieck universes</p>",
+        "id": 216209498,
+        "sender_full_name": "Kenji Maillard",
+        "timestamp": 1605014435
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276885\">Kenji Maillard</span> <a href=\"#narrow/stream/229111-general/topic/Universes.20in.20(ML)-type.20theory/near/216209498\">said</a>:</p>\n<blockquote>\n<p><span class=\"user-mention silent\" data-user-id=\"278660\">Alexander Gietelink Oldenziel</span> I think that in order to interpret MLTT with <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>n</mi></mrow><annotation encoding=\"application/x-tex\">n</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.43056em;vertical-align:0em;\"></span><span class=\"mord mathnormal\">n</span></span></span></span> universes in a topos (or rather in the codomain fibration of the topos) you need to ask for <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>n</mi></mrow><annotation encoding=\"application/x-tex\">n</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.43056em;vertical-align:0em;\"></span><span class=\"mord mathnormal\">n</span></span></span></span> (suitable) object classifiers on your topos. In the case of <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"script\">S</mi><mi mathvariant=\"script\">e</mi><mi mathvariant=\"script\">t</mi></mrow><annotation encoding=\"application/x-tex\">\\mathcal{Set}</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord\"><span class=\"mord mathcal\" style=\"margin-right:0.075em;\">S</span><span class=\"mord mathnormal\">e</span><span class=\"mord mathnormal\">t</span></span></span></span></span> I think it correspond to the assumption that you have <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>n</mi></mrow><annotation encoding=\"application/x-tex\">n</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.43056em;vertical-align:0em;\"></span><span class=\"mord mathnormal\">n</span></span></span></span> Grothendieck universes</p>\n</blockquote>\n<p>Wait, you are saying we need inaccesible cardinal (which I believe is equivalent to Grothendieck universes?) to have a categorical semantics in topoi for ML-type theory? That sounds quite worrisome. =D</p>",
+        "id": 216210525,
+        "sender_full_name": "Alexander Gietelink Oldenziel",
+        "timestamp": 1605015060
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276072\">sarahzrf</span> <a href=\"#narrow/stream/229111-general/topic/Universes.20in.20(ML)-type.20theory/near/216209101\">said</a>:</p>\n<blockquote>\n<p>or, wait, are you asking how to model universes in that semantics?</p>\n</blockquote>\n<p>Yes. My understanding is that the 'correct/natural/canonical' semantics of ML-type theory is some variant of a topos.<br>\n(and an $\\infty$-topos for HoTT). So how do we interpret the apparently essential Universe of ML-type theory in a given topos <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>E</mi></mrow><annotation encoding=\"application/x-tex\">E</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.05764em;\">E</span></span></span></span> (or more precisely, some variant of its codomain fibration)?</p>",
+        "id": 216210747,
+        "sender_full_name": "Alexander Gietelink Oldenziel",
+        "timestamp": 1605015195
+    },
+    {
+        "content": "<p>well, it's <em>not</em> essential, just quite useful</p>",
+        "id": 216210926,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1605015284
+    },
+    {
+        "content": "<p>but yes, i believe you generally aren't going to be able to interpret MLTT <em>with a universe</em> in an arbitrary elementary topos</p>",
+        "id": 216210979,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1605015310
+    },
+    {
+        "content": "<p>(actually, MLTT should morally be interpretable in any locally cartesian closed category; elementary topoi just give an abundant supply of those)</p>",
+        "id": 216211044,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1605015342
+    },
+    {
+        "content": "<p>iirc, the semantics of a universe is indeed going to be some kind of, well, semantical universe—something that behaves akin to an inaccessible cardinal</p>",
+        "id": 216211211,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1605015417
+    },
+    {
+        "content": "<p>Why would that be worrisome ? MLTT already has good enough syntactic properties (strong-normalization, decidability of conversion and type checking) to stand on its own independently of a not-so-well suited set-theoretic model</p>",
+        "id": 216211253,
+        "sender_full_name": "Kenji Maillard",
+        "timestamp": 1605015433
+    },
+    {
+        "content": "<p>but note that you should certainly be able to give semantics in topoi other than Set, where such universes may be easier to come by</p>",
+        "id": 216211261,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1605015437
+    },
+    {
+        "content": "<p>i'm not terribly knowledgable on this topic, but im pretty sure that there are methods based on realizability that let you construct nice categories, particularly topoi, that model useful and unusual universe-y stuff</p>",
+        "id": 216211504,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1605015549
+    },
+    {
+        "content": "<p>i seem to recall that the effective topos believes itself to contain a non-posetal complete small category</p>",
+        "id": 216211550,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1605015574
+    },
+    {
+        "content": "<p>(note that the theorem which states that such a thing can't exist hinges on LEM—it doesn't go through in the effective topos!)</p>",
+        "id": 216211907,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1605015726
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276072\">sarahzrf</span> <a href=\"#narrow/stream/229111-general/topic/Universes.20in.20(ML)-type.20theory/near/216211550\">said</a>:</p>\n<blockquote>\n<p>i seem to recall that the effective topos believes itself to contain a non-posetal complete small category</p>\n</blockquote>\n<p>Indeed, there are two papers discussing this: \"A Small Complete Category\" by Hyland and \"The Discrete Objects in the Effective Topos\" by Hyland, Robinson and Rosolini.</p>",
+        "id": 216212547,
+        "sender_full_name": "Tom de Jong",
+        "timestamp": 1605016021
+    },
+    {
+        "content": "<p>ah, i had this one open :-) <a href=\"/user_uploads/21317/3Od85fwxCvWhWDkDPNFgR5tX/image.png\">image.png</a></p>\n<div class=\"message_inline_image\"><a href=\"/user_uploads/21317/3Od85fwxCvWhWDkDPNFgR5tX/image.png\" title=\"image.png\"><img src=\"/user_uploads/21317/3Od85fwxCvWhWDkDPNFgR5tX/image.png\"></a></div>",
+        "id": 216212851,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1605016178
+    },
+    {
+        "content": "<p>i shd probably read it at some point...</p>",
+        "id": 216212869,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1605016187
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276885\">Kenji Maillard</span> <a href=\"#narrow/stream/229111-general/topic/Universes.20in.20(ML)-type.20theory/near/216211253\">said</a>:</p>\n<blockquote>\n<p>Why would that be worrisome ? MLTT already has good enough syntactic properties (strong-normalization, decidability of conversion and type checking) to stand on its own independently of a not-so-well suited set-theoretic model</p>\n</blockquote>\n<p>I wasn't sure whether ' worrisome' is the right choice of words. Certainly for MLTT as a syntactic formal system there is no problem whatsoever. </p>\n<p>But for the claim that the internal language of a topos is MLTT, I do find this peculiar...</p>",
+        "id": 216212968,
+        "sender_full_name": "Alexander Gietelink Oldenziel",
+        "timestamp": 1605016218
+    },
+    {
+        "content": "<p>more like MLTT w/ a universe of propositions</p>",
+        "id": 216213005,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1605016239
+    },
+    {
+        "content": "<p>but <em>not</em> a universe of types</p>",
+        "id": 216213024,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1605016246
+    },
+    {
+        "content": "<p>i guess there's some \"stack semantics\" which might be relevant to that though... but i never got very far into that one before getting distracted &gt;_&lt;</p>",
+        "id": 216213095,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1605016281
+    },
+    {
+        "content": "<p>er, i suppose stack semantics is relevant to quantification over types, less so to internalizing that as an instance of ordinary quantification</p>",
+        "id": 216213216,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1605016328
+    },
+    {
+        "content": "<p>(...or maybe it is; i wouldnt know since i havent, yknow, read about it <span aria-label=\"sweat smile\" class=\"emoji emoji-1f605\" role=\"img\" title=\"sweat smile\">:sweat_smile:</span>)</p>",
+        "id": 216213291,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1605016371
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"278660\">Alexander Gietelink Oldenziel</span> <a href=\"#narrow/stream/229111-general/topic/Universes.20in.20(ML)-type.20theory/near/216212968\">said</a>:</p>\n<blockquote>\n<p>But for the claim that the internal language of a topos is MLTT, I do find this peculiar...</p>\n</blockquote>\n<p>Yes that claim is inadequate: on the one hand you need to add the structure of a universe to your topos to interpret the \"usual\" MLTT with a universe, on the other hand a topos is proof-irrelevant and satisfy function extensionality that you should then add to your type theory (it agrees with the original extensional variant of MLTT with equality reflection though)</p>",
+        "id": 216213803,
+        "sender_full_name": "Kenji Maillard",
+        "timestamp": 1605016582
+    },
+    {
+        "content": "<p><span class=\"user-mention\" data-user-id=\"278660\">@Alexander Gietelink Oldenziel</span> MLTT doesn't have a subobject classifier, so universes get used for some things that could be done with one of those instead, because they are the smallest classifier of <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>0</mn></mrow><annotation encoding=\"application/x-tex\">0</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.64444em;vertical-align:0em;\"></span><span class=\"mord\">0</span></span></span></span> and <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>1</mn></mrow><annotation encoding=\"application/x-tex\">1</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.64444em;vertical-align:0em;\"></span><span class=\"mord\">1</span></span></span></span>, basically.</p>",
+        "id": 216232247,
+        "sender_full_name": "Dan Doel",
+        "timestamp": 1605024230
+    },
+    {
+        "content": "<p>A subobject classifier actually is a sort of universe, arguably. So topoi do have universes in that sense. Just a different universe than MLTT.</p>\n<p>Also, a subobject classifier seems to be a much stronger assumption than the universe in MLTT.</p>",
+        "id": 216234249,
+        "sender_full_name": "Dan Doel",
+        "timestamp": 1605024955
+    }
+]

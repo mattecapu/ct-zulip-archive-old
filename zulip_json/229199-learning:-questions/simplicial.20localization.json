@@ -1,0 +1,56 @@
+[
+    {
+        "content": "<p>Is simplicial localization (as defined e.g. <a href=\"https://ncatlab.org/nlab/show/simplicial+localization#definition\">here</a>) always locally Kan? i.e. are the hom-ssets of the simplicial localization Kan complexes? </p>\n<p>This is a fact I've been bookkeeping with myself for a while now, since at the localization we're \"inverting\" higher morphisms, but I haven't found any reference for it. If it's not true, is there a best approximation to this intuition?</p>\n<p>Thanks in advance.</p>",
+        "id": 256663606,
+        "sender_full_name": "Daniel Teixeira",
+        "timestamp": 1633647935
+    },
+    {
+        "content": "<p><span class=\"user-mention\" data-user-id=\"449597\">@Daniel Teixeira</span> Not always. E.g. if C is the poset {0 &lt; 1 &lt; 2} and W only contains the identity morphisms in C, then the simplicial localisation L(C,W) is not locally Kan: the hom-simplicial set from 0 to 2 is the 1-simplex Delta^1. However, for any category C, if W consists of all morphisms in C, then the simplicial localisation L(C,W) is locally Kan; that's because it's a simplicial groupoid, and all simplicial groupoids are locally Kan.</p>",
+        "id": 256701087,
+        "sender_full_name": "Alexander Campbell",
+        "timestamp": 1633679158
+    },
+    {
+        "content": "<p><span class=\"user-mention\" data-user-id=\"449597\">@Daniel Teixeira</span> Alex has answered your question but I'm curious – what made you think that the answer would be yes? In my (very limited) experience it is rare for \"explicit\" constructions of this nature to yield Kan complexes. Somehow it is difficult to make fillers for all the horns!</p>",
+        "id": 256726394,
+        "sender_full_name": "Zhen Lin Low",
+        "timestamp": 1633693126
+    },
+    {
+        "content": "<p>thanks for the follow ups! oh well</p>\n<p><span class=\"user-mention\" data-user-id=\"416301\">@Zhen Lin Low</span>  My intuition was that (oo,1)-categories generalize categories w/weak equivalences, model categories etc. and that the process from going from the latter to the former would be through simplicial localization. Then, since (oo,1)-categories are modeled by locally Kan simplicial categories (rather than general simplicial categories), I expected the simplicial localizations to be locally Kan. Then the homotopy coherent nerve would be a quasicategory etc.</p>",
+        "id": 256777200,
+        "sender_full_name": "Daniel Teixeira",
+        "timestamp": 1633714899
+    },
+    {
+        "content": "<p>All of that is true; you just have to fibrantly replace the simplicial category.</p>",
+        "id": 256777470,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1633715003
+    },
+    {
+        "content": "<p>For some reason I had it in my head that the hammock localization <em>was</em> locally Kan, but I can't find any references for that, so probably it is wrong.</p>",
+        "id": 256777534,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1633715038
+    },
+    {
+        "content": "<p><span class=\"user-mention\" data-user-id=\"449597\">@Daniel Teixeira</span> I think you may be taking some slogans too seriously and being led astray by that.</p>\n<blockquote>\n<p>(oo,1)-categories generalize categories w/weak equivalences, model categories etc.</p>\n</blockquote>\n<p>I don't think this is a helpful way of thinking about (∞, 1)-categories. It is technically correct and perhaps even helpful to say that (∞, 1)-categories are a generalisation of 1-categories. It is not technically true that (∞, 1)-categories generalise categories with weak equivalences – for one thing, every (∞, 1)-category is equivalent to one obtained by simplicially localising a category with weak equivalences, and for another, the process of simplicial localisation loses information. A better analogy would be with so-called marked simplicial sets. Similarly there are gadgets called \"model (∞, 1)-categories\" that generalise model categories.</p>\n<blockquote>\n<p>(oo,1)-categories are modeled by locally Kan simplicial categories</p>\n</blockquote>\n<p>OK, but...</p>\n<blockquote>\n<p>(rather than general simplicial categories)</p>\n</blockquote>\n<p>This statement is too strong. Simplicially enriched categories also model (∞, 1)-categories – they are just less convenient than Kan-enriched categories.</p>\n<blockquote>\n<p>Then the homotopy coherent nerve would be a quasicategory etc.</p>\n</blockquote>\n<p>If you have a general simplicially enriched category you can also get a quasicategory by first fibrantly replacing the hom-spaces. Kan's <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msup><mrow><mi mathvariant=\"normal\">Ex</mi><mo>⁡</mo></mrow><mi mathvariant=\"normal\">∞</mi></msup></mrow><annotation encoding=\"application/x-tex\">\\operatorname{Ex}^\\infty</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.737622em;vertical-align:0em;\"></span><span class=\"mop\"><span class=\"mop\"><span class=\"mord mathrm\">Ex</span></span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.737622em;\"><span style=\"top:-3.1362300000000003em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">∞</span></span></span></span></span></span></span></span></span></span></span> works well for this.</p>",
+        "id": 256814754,
+        "sender_full_name": "Zhen Lin Low",
+        "timestamp": 1633732176
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276777\">Mike Shulman</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/simplicial.20localization/near/256777534\">said</a>:</p>\n<blockquote>\n<p>For some reason I had it in my head that the hammock localization <em>was</em> locally Kan, but I can't find any references for that, so probably it is wrong.</p>\n</blockquote>\n<p>I think the hammock localization is _almost_ \"category-enriched\", in the sense that the hom spaces are _almost_ nerves of categories. (They are colimits of nerves.) There is a variant where the hom spaces really are nerves. (There we take the Grothendieck construction instead of the colimit.)</p>",
+        "id": 256815812,
+        "sender_full_name": "Zhen Lin Low",
+        "timestamp": 1633732864
+    },
+    {
+        "content": "<p>That may be what I was thinking of.</p>",
+        "id": 256820964,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1633736494
+    }
+]

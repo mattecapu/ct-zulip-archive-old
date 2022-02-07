@@ -1,0 +1,206 @@
+[
+    {
+        "content": "<p><span class=\"user-mention\" data-user-id=\"275927\">@James Fairbanks</span> <span class=\"user-mention\" data-user-id=\"275965\">@Evan Patterson</span> I've been playing around with Catlab.js and I was wondering how to instantiate something like a Poset. Would it make sense to define a theory that inherits from Category? Or as an instance of a Category?</p>",
+        "id": 197201667,
+        "sender_full_name": "Sophie Libkind",
+        "timestamp": 1589229526
+    },
+    {
+        "content": "<p>you are thinking of a poset as a category where <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>O</mi><mi>b</mi><mo stretchy=\"false\">(</mo><mi>C</mi><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">Ob(C)</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord mathdefault\" style=\"margin-right:0.02778em;\">O</span><span class=\"mord mathdefault\">b</span><span class=\"mopen\">(</span><span class=\"mord mathdefault\" style=\"margin-right:0.07153em;\">C</span><span class=\"mclose\">)</span></span></span></span> is the elements of the set and <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>H</mi><mi>o</mi><mi>m</mi><mo stretchy=\"false\">(</mo><mi>a</mi><mo separator=\"true\">,</mo><mi>b</mi><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">Hom(a,b)</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord mathdefault\" style=\"margin-right:0.08125em;\">H</span><span class=\"mord mathdefault\">o</span><span class=\"mord mathdefault\">m</span><span class=\"mopen\">(</span><span class=\"mord mathdefault\">a</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mord mathdefault\">b</span><span class=\"mclose\">)</span></span></span></span> is empty unless <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>a</mi><mo>≤</mo><mi>b</mi></mrow><annotation encoding=\"application/x-tex\">a\\leq b</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.7719400000000001em;vertical-align:-0.13597em;\"></span><span class=\"mord mathdefault\">a</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">≤</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.69444em;vertical-align:0em;\"></span><span class=\"mord mathdefault\">b</span></span></span></span> right?</p>",
+        "id": 197202106,
+        "sender_full_name": "James Fairbanks",
+        "timestamp": 1589229732
+    },
+    {
+        "content": "<p>Here is the version for preorders <a href=\"https://github.com/epatters/Catlab.jl/pull/148/files\">https://github.com/epatters/Catlab.jl/pull/148/files</a></p>",
+        "id": 197202214,
+        "sender_full_name": "James Fairbanks",
+        "timestamp": 1589229807
+    },
+    {
+        "content": "<p>I'm thinking of a poset as a category with <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>H</mi><mi>o</mi><mi>m</mi><mo stretchy=\"false\">(</mo><mi>a</mi><mo separator=\"true\">,</mo><mi>b</mi><mo stretchy=\"false\">)</mo><mo>∈</mo><mi>B</mi><mi>o</mi><mi>o</mi><mi>l</mi></mrow><annotation encoding=\"application/x-tex\">Hom(a,b) \\in Bool</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord mathdefault\" style=\"margin-right:0.08125em;\">H</span><span class=\"mord mathdefault\">o</span><span class=\"mord mathdefault\">m</span><span class=\"mopen\">(</span><span class=\"mord mathdefault\">a</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mord mathdefault\">b</span><span class=\"mclose\">)</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">∈</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.69444em;vertical-align:0em;\"></span><span class=\"mord mathdefault\" style=\"margin-right:0.05017em;\">B</span><span class=\"mord mathdefault\">o</span><span class=\"mord mathdefault\">o</span><span class=\"mord mathdefault\" style=\"margin-right:0.01968em;\">l</span></span></span></span></p>",
+        "id": 197202302,
+        "sender_full_name": "Sophie Libkind",
+        "timestamp": 1589229845
+    },
+    {
+        "content": "<p>Ah cool! Thanks!</p>",
+        "id": 197202334,
+        "sender_full_name": "Sophie Libkind",
+        "timestamp": 1589229864
+    },
+    {
+        "content": "<p>a poset is a category <em>enriched in</em> truth values, not where the hom sets are the set of truth values</p>",
+        "id": 197202378,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1589229901
+    },
+    {
+        "content": "<p>so you want an <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>∈</mo></mrow><annotation encoding=\"application/x-tex\">\\in</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.5782em;vertical-align:-0.0391em;\"></span><span class=\"mrel\">∈</span></span></span></span> up there, not an <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>=</mo></mrow><annotation encoding=\"application/x-tex\">=</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.36687em;vertical-align:0em;\"></span><span class=\"mrel\">=</span></span></span></span></p>",
+        "id": 197202420,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1589229926
+    },
+    {
+        "content": "<p>The source file added by that PR is: <a href=\"https://github.com/epatters/Catlab.jl/blob/master/src/doctrines/Preorders.jl\">https://github.com/epatters/Catlab.jl/blob/master/src/doctrines/Preorders.jl</a></p>",
+        "id": 197202427,
+        "sender_full_name": "Evan Patterson",
+        "timestamp": 1589229932
+    },
+    {
+        "content": "<p>also, it's probably a good idea to distinguish between truth values and booleans if you're doing constructive work!</p>",
+        "id": 197202451,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1589229952
+    },
+    {
+        "content": "<p>So you can see that we have a thin category, which inherits from category, and also a preorder, which does not. From the comment at the end, you can see that we want to say that these are related, but haven't yet implemented that machinery.</p>",
+        "id": 197202596,
+        "sender_full_name": "Evan Patterson",
+        "timestamp": 1589230009
+    },
+    {
+        "content": "<p>I think you just need to add antisymmetry to go from preorder to poset. so you could inherit from <code>ThinCategory</code> and add an additional axiom for antisymmetry. We don't really have the machinery for enforcing or testing the axioms, right now they are carried around in the relevant data structures</p>",
+        "id": 197202663,
+        "sender_full_name": "James Fairbanks",
+        "timestamp": 1589230060
+    },
+    {
+        "content": "<p>following the julia approach we leave a lot of the rule following to the user. since you can't actually enforce anything in julia, haven't spent a lot of effort on implementing enforcement.</p>",
+        "id": 197202873,
+        "sender_full_name": "James Fairbanks",
+        "timestamp": 1589230182
+    },
+    {
+        "content": "<p>In one experiment, I composed two morphisms <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>f</mi></mrow><annotation encoding=\"application/x-tex\">f</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8888799999999999em;vertical-align:-0.19444em;\"></span><span class=\"mord mathdefault\" style=\"margin-right:0.10764em;\">f</span></span></span></span> and <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>g</mi></mrow><annotation encoding=\"application/x-tex\">g</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.625em;vertical-align:-0.19444em;\"></span><span class=\"mord mathdefault\" style=\"margin-right:0.03588em;\">g</span></span></span></span> where the codomain of <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>f</mi></mrow><annotation encoding=\"application/x-tex\">f</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8888799999999999em;vertical-align:-0.19444em;\"></span><span class=\"mord mathdefault\" style=\"margin-right:0.10764em;\">f</span></span></span></span> did not match the domain of <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>g</mi></mrow><annotation encoding=\"application/x-tex\">g</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.625em;vertical-align:-0.19444em;\"></span><span class=\"mord mathdefault\" style=\"margin-right:0.03588em;\">g</span></span></span></span> and it composed no problem. Is that an example of leaving the rule following to the user?</p>",
+        "id": 197203111,
+        "sender_full_name": "Sophie Libkind",
+        "timestamp": 1589230306
+    },
+    {
+        "content": "<p>That can be enforced. It depends on how the expressions are set up in the <code>@syntax</code> macro.</p>",
+        "id": 197203211,
+        "sender_full_name": "Evan Patterson",
+        "timestamp": 1589230352
+    },
+    {
+        "content": "<p>When <code>strict=true</code>, like <a href=\"https://github.com/epatters/Catlab.jl/blob/eae7e8f33f568ca0bbcc3eeb3b3f2c9b6e50b5e7/src/doctrines/Preorders.jl#L25\">here</a>, it should work. (If it doesn't, it's a bug and please report it.)</p>",
+        "id": 197203314,
+        "sender_full_name": "Evan Patterson",
+        "timestamp": 1589230408
+    },
+    {
+        "content": "<p>that might be bug i've hit stuff like that before where stuff composes fine and then later you try to convert it to a wiring diagram or something and you get a runtime error in the WD code because it is checking that things match up.</p>",
+        "id": 197203327,
+        "sender_full_name": "James Fairbanks",
+        "timestamp": 1589230414
+    },
+    {
+        "content": "<p>when strict=true, that means that the syntax system <em>will</em> check for well formedness, right?</p>",
+        "id": 197203436,
+        "sender_full_name": "James Fairbanks",
+        "timestamp": 1589230457
+    },
+    {
+        "content": "<p>It means that it will check that, e.g., domains and codomains match when composing. More generally, it enforces the equalities implied by the GAT term and type constructors.</p>",
+        "id": 197203495,
+        "sender_full_name": "Evan Patterson",
+        "timestamp": 1589230493
+    },
+    {
+        "content": "<p>In this particular experiment, I believe I had defined an <code>@instance</code> macro.  What are the use case differences between <code>@instance</code> and <code>@syntax</code>?</p>",
+        "id": 197203523,
+        "sender_full_name": "Sophie Libkind",
+        "timestamp": 1589230516
+    },
+    {
+        "content": "<p>i definitely assumed that strict meant <em>strictification</em></p>",
+        "id": 197203532,
+        "sender_full_name": "James Fairbanks",
+        "timestamp": 1589230521
+    },
+    {
+        "content": "<p>OK, maybe we should use a different word.</p>",
+        "id": 197203556,
+        "sender_full_name": "Evan Patterson",
+        "timestamp": 1589230542
+    },
+    {
+        "content": "<p>The reason that this is even an option, BTW, is that if you have nontrivial equations between your objects, then it may be difficult or impossible to verify that the domain and codomain objects are actually equal before composing.</p>",
+        "id": 197203663,
+        "sender_full_name": "Evan Patterson",
+        "timestamp": 1589230588
+    },
+    {
+        "content": "<p>so an instance is basically a functor into the \"category\" of julia types and julia functions. You map every object to a julia type and every morphism to a julia function.</p>",
+        "id": 197203736,
+        "sender_full_name": "James Fairbanks",
+        "timestamp": 1589230634
+    },
+    {
+        "content": "<p>Sophie, the short version is that <code>@instance</code> is for regular Julia types and <code>@syntax</code> is for symbolic expressions.</p>",
+        "id": 197203768,
+        "sender_full_name": "Evan Patterson",
+        "timestamp": 1589230653
+    },
+    {
+        "content": "<p>oh yeah that is shorter than my version.</p>",
+        "id": 197203799,
+        "sender_full_name": "James Fairbanks",
+        "timestamp": 1589230670
+    },
+    {
+        "content": "<p>A long version is <a href=\"https://epatters.github.io/Catlab.jl/latest/apis/core/\">here</a> :)</p>",
+        "id": 197203901,
+        "sender_full_name": "Evan Patterson",
+        "timestamp": 1589230703
+    },
+    {
+        "content": "<p>Okay! So if I want to work with integers and functions between integers then I use an <code>@instance</code> macro and Julia will do the work of composition etc. for me</p>",
+        "id": 197203913,
+        "sender_full_name": "Sophie Libkind",
+        "timestamp": 1589230711
+    },
+    {
+        "content": "<p>yeah</p>",
+        "id": 197203924,
+        "sender_full_name": "James Fairbanks",
+        "timestamp": 1589230717
+    },
+    {
+        "content": "<p>vs. if I was to define a more abstract category then I use the @syntax macro and Catlab will keep track of all my expressions</p>",
+        "id": 197204020,
+        "sender_full_name": "Sophie Libkind",
+        "timestamp": 1589230776
+    },
+    {
+        "content": "<p>yeah and you would often do both, like have a syntax where you express things symbolically and then have an instance where \"real\" computation happens.</p>",
+        "id": 197204156,
+        "sender_full_name": "James Fairbanks",
+        "timestamp": 1589230827
+    },
+    {
+        "content": "<p>like in the GLA case you want to use symbolic expressions to describe linear operators as composites of small linear operators and then you want to pick some matrices and solve some equations.</p>",
+        "id": 197204239,
+        "sender_full_name": "James Fairbanks",
+        "timestamp": 1589230874
+    },
+    {
+        "content": "<p>This file shows you a pretty complex example, <a href=\"https://github.com/epatters/Catlab.jl/blob/master/src/linear_algebra/GLA.jl\">https://github.com/epatters/Catlab.jl/blob/master/src/linear_algebra/GLA.jl</a></p>",
+        "id": 197204440,
+        "sender_full_name": "James Fairbanks",
+        "timestamp": 1589230988
+    },
+    {
+        "content": "<p>the instance comes from LinearMaps.jl which is like a lazy linear algebra library.</p>",
+        "id": 197204468,
+        "sender_full_name": "James Fairbanks",
+        "timestamp": 1589231017
+    },
+    {
+        "content": "<p>Another example says that wiring diagrams are an <a href=\"https://github.com/epatters/Catlab.jl/blob/eae7e8f33f568ca0bbcc3eeb3b3f2c9b6e50b5e7/src/wiring_diagrams/Algebraic.jl#L81\">instance of symmetric monoidal categories</a>.</p>",
+        "id": 197204821,
+        "sender_full_name": "Evan Patterson",
+        "timestamp": 1589231196
+    }
+]

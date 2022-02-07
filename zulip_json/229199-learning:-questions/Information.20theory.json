@@ -1,0 +1,158 @@
+[
+    {
+        "content": "<p>Here's a basic question. I know that probability is an active area of research in category theory. (I'm currently reading Tobias Fritz' 'A synthetic approach to Markov kernels', which is great.) I know also that there's a few papers (and quite a few scattered online conversations) about defining entropy in a category-theoretic way. I'm wondering how much further into information theory it is currently possible to go.</p>\n<p>In particular, I'm interested to know if there's any work on characterising the Kullback-Leibler divergence and its special cases, the mutual information and conditional mutual information, in category-theoretic terms. I'd be especially interested to know about any approach based on information geometry, which would allow us to think about manifolds of probability distributions and the minimal Kullback-Leibler divergences between them. That seems like it should be fairly well suited to a category theoretical approach - it seems like <em>maybe</em> you can get it by considering a category of convex maps between manifolds, or something like that? - and if you can define mixture families and exponential families along with the KL divergence then then that's already enough to build a sizable chunk of information theory.</p>\n<p>But generally anything to do with information theory and category theory would be great to know about.</p>",
+        "id": 191742939,
+        "sender_full_name": "Nathaniel Virgo",
+        "timestamp": 1585142608
+    },
+    {
+        "content": "<p>or should this be under applied category theory? I'm unsure where the boundaries are.</p>",
+        "id": 191743275,
+        "sender_full_name": "Nathaniel Virgo",
+        "timestamp": 1585142747
+    },
+    {
+        "content": "<p>Hi! Maybe the closest thing to a category-theoretic approach to information geometry is Tom Leinster (and others)'s work on magnitude. Some places to start are here, <a href=\"https://golem.ph.utexas.edu/category/2011/10/measuring_diversity.html\" title=\"https://golem.ph.utexas.edu/category/2011/10/measuring_diversity.html\">https://golem.ph.utexas.edu/category/2011/10/measuring_diversity.html</a>, and here, <a href=\"https://golem.ph.utexas.edu/category/2016/08/a_survey_of_magnitude.html\" title=\"https://golem.ph.utexas.edu/category/2016/08/a_survey_of_magnitude.html\">https://golem.ph.utexas.edu/category/2016/08/a_survey_of_magnitude.html</a>.</p>",
+        "id": 191760290,
+        "sender_full_name": "Paolo Perrone",
+        "timestamp": 1585149227
+    },
+    {
+        "content": "<p>Besides Fritz-Leinster, there's also this paper by Gagne and Panangaden <a href=\"https://arxiv.org/abs/1703.08853\" title=\"https://arxiv.org/abs/1703.08853\">https://arxiv.org/abs/1703.08853</a></p>",
+        "id": 191760633,
+        "sender_full_name": "Jules Hedges",
+        "timestamp": 1585149319
+    },
+    {
+        "content": "<p>(I say this question would have been definitely on topic in the ACT stream)</p>",
+        "id": 191760685,
+        "sender_full_name": "Jules Hedges",
+        "timestamp": 1585149344
+    },
+    {
+        "content": "<p>If we're talking about category-theoretic characterizations of the Kullback-Leibler divergence, the first paper on that was not \"Fritz-Leinster\" (no such paper), but \"Baez-Fritz\"):</p>\n<p><a href=\"https://arxiv.org/abs/1402.3067\" title=\"https://arxiv.org/abs/1402.3067\">https://arxiv.org/abs/1402.3067</a></p>\n<p>We called it \"relative entropy\" instead of \"Kullback-Leibler divergence\" because that's a more informative term, and we called it a \"Bayesian characterization\" instead of a \"category-theoretic characterization\" because 1) it's both, and 2) we wanted people to read our paper.</p>",
+        "id": 191806496,
+        "sender_full_name": "John Baez",
+        "timestamp": 1585167975
+    },
+    {
+        "content": "<p>The arguments in this paper were quite technical because we handled the case of relative entropy for two probability distributions that both vanish on some points, giving expressions like 0/0 ln(0/0).</p>",
+        "id": 191806568,
+        "sender_full_name": "John Baez",
+        "timestamp": 1585168029
+    },
+    {
+        "content": "<p>Later Tom Leinster, who'd worked with us earlier on the categorical characterization of Shannon entropy and Renyi entropy, simplified the argument by leaving out these tricky cases:</p>\n<p><a href=\"https://arxiv.org/abs/1712.04903\" title=\"https://arxiv.org/abs/1712.04903\">https://arxiv.org/abs/1712.04903</a></p>",
+        "id": 191806765,
+        "sender_full_name": "John Baez",
+        "timestamp": 1585168124
+    },
+    {
+        "content": "<p>However, I am still in awe of how Tobias Fritz pushed the argument through to handle <em>all</em> pairs of probability distributions on finite sets!</p>",
+        "id": 191806817,
+        "sender_full_name": "John Baez",
+        "timestamp": 1585168157
+    },
+    {
+        "content": "<p>This is one of relatively few papers that combines category theory and arguments in the usual style of analysis - battles to the death with epsilons and deltas.</p>",
+        "id": 191806976,
+        "sender_full_name": "John Baez",
+        "timestamp": 1585168229
+    },
+    {
+        "content": "<p>I happen to like that combination.</p>",
+        "id": 191806993,
+        "sender_full_name": "John Baez",
+        "timestamp": 1585168240
+    },
+    {
+        "content": "<p>I'm super interested in these topics also; I am interested in the general cases of relative entropy but also the magnitude stuff. One of my collaborators has a paper on magnitude but in a slightly different application sphere: <a href=\"https://arxiv.org/abs/1908.02692\" title=\"https://arxiv.org/abs/1908.02692\">https://arxiv.org/abs/1908.02692</a> </p>\n<p>I've wondered for years now if information geometry has a nice sheafy interpretation which makes things very natural and clear, but I've not had the brain power to see that through, or found any papers that do it – apologies for vagueness.</p>",
+        "id": 191820433,
+        "sender_full_name": "Bryan Bischof",
+        "timestamp": 1585176444
+    },
+    {
+        "content": "<p>Several people have asked about information geometry and category theory. Some of the earliest, maybe the earliest, explicitly categorical work on the category of Markov kernels was done by N. N. Cencov. The main reference is the 1982 English translation of his Russian monograph. In addition to category theory, this work is full of differential geometry and helped pioneer information geometry before that term existed. I haven't read the more differential-geometric parts of Cencov's book, so I can't say too much more.</p>\n<p>Later work on information geometry seems to have deliberately stripped out the categorical language, see: <a href=\"https://doi.org/10.1090/S0002-9939-1986-0848890-5\" title=\"https://doi.org/10.1090/S0002-9939-1986-0848890-5\">https://doi.org/10.1090/S0002-9939-1986-0848890-5</a> and <a href=\"https://arxiv.org/abs/1207.4139\" title=\"https://arxiv.org/abs/1207.4139\">https://arxiv.org/abs/1207.4139</a></p>\n<p>Maybe one of us should put it back :)</p>",
+        "id": 191929040,
+        "sender_full_name": "Evan Patterson",
+        "timestamp": 1585247229
+    },
+    {
+        "content": "<p>I've had Čencov's book page as an open tab for some time, I wonder if I heard about it from you. Didn't get around to trying to get a pdf yet <a href=\"https://www.ams.org/books/mmono/053/\" title=\"https://www.ams.org/books/mmono/053/\">https://www.ams.org/books/mmono/053/</a></p>",
+        "id": 191937084,
+        "sender_full_name": "Jules Hedges",
+        "timestamp": 1585250948
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"275965\">Evan Patterson</span> <a href=\"#narrow/stream/229199-basic-questions/topic/Information.20theory/near/191929040\" title=\"#narrow/stream/229199-basic-questions/topic/Information.20theory/near/191929040\">said</a>:</p>\n<blockquote>\n<p>Several people have asked about information geometry and category theory. Some of the earliest, maybe the earliest, explicitly categorical work on the category of Markov kernels was done by N. N. Cencov. The main reference is the 1982 English translation of his Russian monograph. In addition to category theory, this work is full of differential geometry and helped pioneer information geometry before that term existed. I haven't read the more differential-geometric parts of Cencov's book, so I can't say too much more.</p>\n<p>Later work on information geometry seems to have deliberately stripped out the categorical language, see: <a href=\"https://doi.org/10.1090/S0002-9939-1986-0848890-5\" title=\"https://doi.org/10.1090/S0002-9939-1986-0848890-5\">https://doi.org/10.1090/S0002-9939-1986-0848890-5</a> and <a href=\"https://arxiv.org/abs/1207.4139\" title=\"https://arxiv.org/abs/1207.4139\">https://arxiv.org/abs/1207.4139</a></p>\n<p>Maybe one of us should put it back :)</p>\n</blockquote>\n<p>Thanks for these references! I definitely would be happy to see it returned. :D</p>",
+        "id": 192148942,
+        "sender_full_name": "Bryan Bischof",
+        "timestamp": 1585442199
+    },
+    {
+        "content": "<p>A bit off-topic: <strong>are there good resources to learn about information geometry?</strong>  In particular, by skimming Amari's 1993 and 2016 books, I've encountered the Fisher metric and e and m connections, but I haven't seen theorems that really leverage this framework.  Specifically, the (beautiful!) results I've seen so far either dont don't connect back to inference --- e.g.</p>\n<ol start=\"0\">\n<li>Gaussians form a hyperbolic space; a simplex is spherical</li>\n</ol>\n<p>--- or are purely <strong>local</strong> results and hence could be discovered and applied entirely using Taylor series --- e.g.</p>\n<ol>\n<li>the volume form induced by the metric is exactly the jeffrey's prior!</li>\n<li>the embedding curvature controls the next-to-leading term in mean-square error in estimation</li>\n</ol>\n<p>So I'm wondering: are there any <strong>global</strong> theorems that use geometry data to talk about statistical inference?  (Analogous to the global theorems of Riemannian geometry, e.g. that nearly-constantly-positively curved compact manifolds are covered by spheres). </p>\n<p>For example, it would be neat to say that:</p>\n<p>\"The Rademacher complexity {statistics concept} of a compact statistical manifold is bounded by its volume {global geometric concept}.?.\"<br>\nor that <br>\n\"On a compact statistical manifold, the number of local minima for the EM algorithm is bounded by some topological invariant of the manifold {topological/geometric, perhaps in the spirit of ChernBonnet}.?.<br>\n\"</p>",
+        "id": 193102531,
+        "sender_full_name": "Sam Tenka",
+        "timestamp": 1586207510
+    },
+    {
+        "content": "<p>Have you seen Nihat Ay’s text? Re first question</p>",
+        "id": 193112618,
+        "sender_full_name": "Matt Cuffaro (he/him)",
+        "timestamp": 1586213421
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"281272\">Sam Tenka (naive student)</span> <a href=\"#narrow/stream/229199-learning.3A-basic.20questions/topic/Information.20theory/near/193102531\" title=\"#narrow/stream/229199-learning.3A-basic.20questions/topic/Information.20theory/near/193102531\">said</a>:</p>\n<blockquote>\n<p>A bit off-topic: <strong>are there good resources to learn about information geometry?</strong> </p>\n</blockquote>\n<p>I don't know if they're good resources, but I wrote a bunch of blog articles on information geometry:</p>\n<ul>\n<li><a href=\"http://math.ucr.edu/home/baez/information/\" title=\"http://math.ucr.edu/home/baez/information/\">Information geometry</a>.</li>\n</ul>\n<p>They will at least give a viewpoint that's a bit different from the standard one.</p>",
+        "id": 193112843,
+        "sender_full_name": "John Baez",
+        "timestamp": 1586213638
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"275940\">Matt Cuffaro (he/him)</span> <a href=\"#narrow/stream/229199-learning.3A-basic.20questions/topic/Information.20theory/near/193112618\" title=\"#narrow/stream/229199-learning.3A-basic.20questions/topic/Information.20theory/near/193112618\">said</a>:</p>\n<blockquote>\n<p>Have you seen Nihat Ay’s text? Re first question</p>\n</blockquote>\n<p>Ooh!  No, I haven't.  It looks great!  Thanks for the pointer.</p>",
+        "id": 193215737,
+        "sender_full_name": "Sam Tenka",
+        "timestamp": 1586277804
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"275920\">John Baez</span> <a href=\"#narrow/stream/229199-learning.3A-basic.20questions/topic/Information.20theory/near/193112843\" title=\"#narrow/stream/229199-learning.3A-basic.20questions/topic/Information.20theory/near/193112843\">said</a>:</p>\n<blockquote>\n<p><span class=\"user-mention silent\" data-user-id=\"281272\">Sam Tenka (naive student)</span> <a href=\"#narrow/stream/229199-learning.3A-basic.20questions/topic/Information.20theory/near/193102531\" title=\"#narrow/stream/229199-learning.3A-basic.20questions/topic/Information.20theory/near/193102531\">said</a>:</p>\n<blockquote>\n<p>A bit off-topic: <strong>are there good resources to learn about information geometry?</strong> </p>\n</blockquote>\n<p>I don't know if they're good resources, but I wrote a bunch of blog articles on information geometry:</p>\n<ul>\n<li><a href=\"http://math.ucr.edu/home/baez/information/\" title=\"http://math.ucr.edu/home/baez/information/\">Information geometry</a>.</li>\n</ul>\n<p>They will at least give a viewpoint that's a bit different from the standard one.</p>\n</blockquote>\n<p>Woah!  InfoGeometry of evolution?!  This looks wonderful!</p>",
+        "id": 193215830,
+        "sender_full_name": "Sam Tenka",
+        "timestamp": 1586277847
+    },
+    {
+        "content": "<p>Beginner here, so bear with me: was just curious if there was an information theoretic interpretation to CT, e.g., a measure like kolmogorov complexity wrt to the \"simplest\" category or compression wrt to structure invariance? I also warmly welcome an explanation why this doesn't make sense :].</p>",
+        "id": 241623950,
+        "sender_full_name": "ebigram",
+        "timestamp": 1622881654
+    },
+    {
+        "content": "<p><a href=\"https://arxiv.org/abs/1507.05305\">This paper</a> might interest you.</p>",
+        "id": 241624411,
+        "sender_full_name": "Fawzi Hreiki",
+        "timestamp": 1622882283
+    },
+    {
+        "content": "<p>Eventually, Yanofsky should be coming out with a book on ‘theoretical CS for category theorists’ so I imagine that will be applicable too.</p>",
+        "id": 241624438,
+        "sender_full_name": "Fawzi Hreiki",
+        "timestamp": 1622882360
+    },
+    {
+        "content": "<p>oh fantastic, ty</p>",
+        "id": 241630734,
+        "sender_full_name": "ebigram",
+        "timestamp": 1622891373
+    },
+    {
+        "content": "<p>a bit confused why infinitary constructions in CT should be different than infinitary lambda calculus in this sense; but have some homework to do on this first</p>",
+        "id": 241631112,
+        "sender_full_name": "ebigram",
+        "timestamp": 1622891937
+    },
+    {
+        "content": "<p>Universal constructions and free constructions do not add any information to a given structure. E.g. path categories just add the necessary structure to a graph which is needed to fulfil the requirements to be a category. There is \"no extra information\" added. I think the \"theorems for free\" idea is similar: no extra information can be used to do something goofy with a parametric function. </p>\n<p>I have not seen this expressed very often, maybe it is clear for most category theorists. One instance I know of is reported in <a href=\"https://www.amazon.de/Morphisms-Categories-Transforming-Jean-Piaget/dp/1138976458\">Morphisms and Categories: Comparing and Transforming</a> by Edgar Asher. Seymour Papert describes the universal construction of a product where <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi>A</mi><mn>1</mn></msub></mrow><annotation encoding=\"application/x-tex\">A_1</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.83333em;vertical-align:-0.15em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\">A</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.30110799999999993em;\"><span style=\"top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">1</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span></span></span></span> and <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi>A</mi><mn>2</mn></msub></mrow><annotation encoding=\"application/x-tex\">A_2</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.83333em;vertical-align:-0.15em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\">A</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.30110799999999993em;\"><span style=\"top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">2</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span></span></span></span> are the projections, and <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>P</mi></mrow><annotation encoding=\"application/x-tex\">P</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.13889em;\">P</span></span></span></span> is the product: \"All messages emitted toward <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi>A</mi><mn>1</mn></msub></mrow><annotation encoding=\"application/x-tex\">A_1</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.83333em;vertical-align:-0.15em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\">A</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.30110799999999993em;\"><span style=\"top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">1</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span></span></span></span> and <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi>A</mi><mn>2</mn></msub></mrow><annotation encoding=\"application/x-tex\">A_2</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.83333em;vertical-align:-0.15em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\">A</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.30110799999999993em;\"><span style=\"top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">2</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span></span></span></span> can be transmitted by <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>P</mi></mrow><annotation encoding=\"application/x-tex\">P</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.13889em;\">P</span></span></span></span>\".</p>",
+        "id": 243711599,
+        "sender_full_name": "Johannes Drever",
+        "timestamp": 1624481655
+    }
+]

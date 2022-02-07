@@ -1,0 +1,176 @@
+[
+    {
+        "content": "<p>In Section 3 here: <a href=\"https://ncatlab.org/toddtrimble/published/Three+topos+theorems+in+one#eq:ttt2\">https://ncatlab.org/toddtrimble/published/Three+topos+theorems+in+one#eq:ttt2</a>, he describes a functor and says it's a comonad, but I'm struggling to see why it's a comonad (or even what the comonad structure should be) - am I missing something obvious?</p>",
+        "id": 200282376,
+        "sender_full_name": "Bhavik Mehta",
+        "timestamp": 1591733015
+    },
+    {
+        "content": "<p>I think this is the category analogue of <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>M</mi><mo>→</mo><mo>−</mo></mrow><annotation encoding=\"application/x-tex\">M → -</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathdefault\" style=\"margin-right:0.10903em;\">M</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">→</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.66666em;vertical-align:-0.08333em;\"></span><span class=\"mord\">−</span></span></span></span> where <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>M</mi></mrow><annotation encoding=\"application/x-tex\">M</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathdefault\" style=\"margin-right:0.10903em;\">M</span></span></span></span> is a monoid. You extact by applying to the monoid unit, and duplicate by multiplying in the monoid.</p>",
+        "id": 200283967,
+        "sender_full_name": "Dan Doel",
+        "timestamp": 1591733690
+    },
+    {
+        "content": "<p>And the unit/associativity axioms for the comonad follow from unit/associativity for the monoid. And similarly when you replace the monoid with a category.</p>",
+        "id": 200284416,
+        "sender_full_name": "Dan Doel",
+        "timestamp": 1591733886
+    },
+    {
+        "content": "<p>I'm not sure what your background is, but here is an analogous construction in Agda, to give some idea of what each thing does.</p>\n<div class=\"codehilite\"><pre><span></span><code><span class=\"nf\">W</span> <span class=\"ow\">:</span> Type₁ <span class=\"ow\">→</span> Type₁\nW Y <span class=\"ow\">=</span> Σ[ U ∈ Type₀ ] <span class=\"o\">((</span>T <span class=\"ow\">:</span> Type₀<span class=\"o\">)</span> <span class=\"ow\">→</span> <span class=\"o\">(</span>T <span class=\"ow\">→</span> U<span class=\"o\">)</span> <span class=\"ow\">→</span> Y<span class=\"o\">)</span>\n\n<span class=\"nf\">ε</span> <span class=\"ow\">:</span> <span class=\"ow\">∀</span><span class=\"o\">{</span>Y<span class=\"o\">}</span> <span class=\"ow\">→</span> W Y <span class=\"ow\">→</span> Y\nε <span class=\"o\">(</span>U , e<span class=\"o\">)</span> <span class=\"ow\">=</span> e U <span class=\"o\">(</span>idfun U<span class=\"o\">)</span>\n\n<span class=\"nf\">δ</span> <span class=\"ow\">:</span> <span class=\"ow\">∀</span><span class=\"o\">{</span>Y<span class=\"o\">}</span> <span class=\"ow\">→</span> W Y <span class=\"ow\">→</span> W <span class=\"o\">(</span>W Y<span class=\"o\">)</span>\nδ <span class=\"o\">(</span>U , e<span class=\"o\">)</span> <span class=\"ow\">=</span> <span class=\"o\">(</span>U , <span class=\"ow\">λ</span> T f <span class=\"ow\">→</span> <span class=\"o\">(</span>T , <span class=\"ow\">λ</span> S g <span class=\"ow\">→</span> e S <span class=\"o\">(</span>f ∘ g<span class=\"o\">)))</span>\n</code></pre></div>",
+        "id": 200294691,
+        "sender_full_name": "Dan Doel",
+        "timestamp": 1591738987
+    },
+    {
+        "content": "<p>I can see how to do this for monoids but the analogy is confusing me at the moment</p>",
+        "id": 200296377,
+        "sender_full_name": "Bhavik Mehta",
+        "timestamp": 1591739902
+    },
+    {
+        "content": "<p>I'm trying right now to show this is a comonad in Lean</p>",
+        "id": 200296401,
+        "sender_full_name": "Bhavik Mehta",
+        "timestamp": 1591739918
+    },
+    {
+        "content": "<p>I think what I don't see is why your <code>W</code> is the same as the functor described there</p>",
+        "id": 200299218,
+        "sender_full_name": "Bhavik Mehta",
+        "timestamp": 1591741704
+    },
+    {
+        "content": "<p>Well, it's exactly the formula that page uses after the initial description, specialized to <code>C = Type₀</code></p>",
+        "id": 200299650,
+        "sender_full_name": "Dan Doel",
+        "timestamp": 1591742013
+    },
+    {
+        "content": "<p>That is a particularly easy specialization, though. Depending on how you're modelling everything in Lean, it might be considerably less convenient to write things down.</p>",
+        "id": 200299804,
+        "sender_full_name": "Dan Doel",
+        "timestamp": 1591742100
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"277270\">Dan Doel</span> <a href=\"#narrow/stream/230087-theory.3A-topos.20theory/topic/Internal.20presheaves.20as.20coalgebras/near/200299650\">said</a>:</p>\n<blockquote>\n<p>Well, it's exactly the formula that page uses after the initial description, specialized to <code>C = Type₀</code></p>\n</blockquote>\n<p>Oh right, I can see that</p>",
+        "id": 200299859,
+        "sender_full_name": "Bhavik Mehta",
+        "timestamp": 1591742155
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"277270\">Dan Doel</span> <a href=\"#narrow/stream/230087-theory.3A-topos.20theory/topic/Internal.20presheaves.20as.20coalgebras/near/200299804\">said</a>:</p>\n<blockquote>\n<p>That is a particularly easy specialization, though. Depending on how you're modelling everything in Lean, it might be considerably less convenient to write things down.</p>\n</blockquote>\n<p>Yeah I think this is the scenario I'm in. I'm modelling it virtually as described there, I've got an internal category in a LCCC, and the functor is defined exactly as written there</p>",
+        "id": 200299963,
+        "sender_full_name": "Bhavik Mehta",
+        "timestamp": 1591742228
+    },
+    {
+        "content": "<p>That is - in pretty much the same level of generality</p>",
+        "id": 200299976,
+        "sender_full_name": "Bhavik Mehta",
+        "timestamp": 1591742242
+    },
+    {
+        "content": "<p>Well, a slightly more general version is this:</p>\n<div class=\"codehilite\"><pre><span></span><code><span class=\"kr\">module</span> _\n  (<span class=\"n\">O</span> <span class=\"ow\">:</span> Type₀<span class=\"o\">)</span>\n  <span class=\"o\">(</span>[_,_] <span class=\"ow\">:</span> O <span class=\"ow\">→</span> O <span class=\"ow\">→</span> Type₀<span class=\"o\">)</span>\n  <span class=\"o\">(</span>i <span class=\"ow\">:</span> <span class=\"ow\">∀</span><span class=\"o\">{</span>a<span class=\"o\">}</span> <span class=\"ow\">→</span> [ a , a ]<span class=\"o\">)</span>\n  <span class=\"o\">(</span>_∘_ <span class=\"ow\">:</span> <span class=\"ow\">∀</span><span class=\"o\">{</span>a b c<span class=\"o\">}</span> <span class=\"ow\">→</span> [ b , c ] <span class=\"ow\">→</span> [ a , b ] <span class=\"ow\">→</span> [ a , c ]<span class=\"o\">)</span>\n  <span class=\"kr\">where</span>\n  <span class=\"nf\">W</span> <span class=\"ow\">:</span> Type₀ <span class=\"ow\">→</span> Type₀\n  W Y <span class=\"ow\">=</span> Σ[ u ∈ O ] <span class=\"o\">((</span>t <span class=\"ow\">:</span> O<span class=\"o\">)</span> <span class=\"ow\">→</span> [ t , u ] <span class=\"ow\">→</span> Y<span class=\"o\">)</span>\n\n  <span class=\"nf\">ε</span> <span class=\"ow\">:</span> W Y <span class=\"ow\">→</span> Y\n  ε <span class=\"o\">(</span>u , e<span class=\"o\">)</span> <span class=\"ow\">=</span> e u i\n\n  <span class=\"nf\">δ</span> <span class=\"ow\">:</span> W Y <span class=\"ow\">→</span> W <span class=\"o\">(</span>W Y<span class=\"o\">)</span>\n  δ <span class=\"o\">(</span>u , e<span class=\"o\">)</span> <span class=\"ow\">=</span> <span class=\"o\">(</span>u , <span class=\"ow\">λ</span> t f <span class=\"ow\">→</span> <span class=\"o\">(</span>t , <span class=\"ow\">λ</span> s g <span class=\"ow\">→</span> e s <span class=\"o\">(</span>f ∘ g<span class=\"o\">)))</span>\n</code></pre></div>",
+        "id": 200300552,
+        "sender_full_name": "Dan Doel",
+        "timestamp": 1591742721
+    },
+    {
+        "content": "<p>Omitting the associativity stuff which is no longer trivial.</p>",
+        "id": 200300566,
+        "sender_full_name": "Dan Doel",
+        "timestamp": 1591742735
+    },
+    {
+        "content": "<p>Now, that type theoretic stuff can in principle be translated to any LCCC, and you'll end up with something about the span definition. But maybe that's not satisfying. :)</p>",
+        "id": 200300704,
+        "sender_full_name": "Dan Doel",
+        "timestamp": 1591742842
+    },
+    {
+        "content": "<p>\"In principle\" :)</p>",
+        "id": 200300803,
+        "sender_full_name": "Bhavik Mehta",
+        "timestamp": 1591742924
+    },
+    {
+        "content": "<p>Thanks though, this definitely gives me some things to try!</p>",
+        "id": 200300818,
+        "sender_full_name": "Bhavik Mehta",
+        "timestamp": 1591742933
+    },
+    {
+        "content": "<p>It's probably not so hard to work through in this case, or at least use it as a guide of what to do from the 'external' perspective.</p>",
+        "id": 200301531,
+        "sender_full_name": "Dan Doel",
+        "timestamp": 1591743313
+    },
+    {
+        "content": "<p>Right now part of the problem is that I haven't made it at all pleasant to work with the Pi functor so even doing an application is awkward... But these are technical issues now, thanks!</p>",
+        "id": 200301665,
+        "sender_full_name": "Bhavik Mehta",
+        "timestamp": 1591743423
+    },
+    {
+        "content": "<p>Another question on the same topic - he describes a coalgebra for that comonad, and says that we get a contravariant action of the (internal) category on the set Y - this much is fine, but I don't see why p(y^f) should be x', using the notation there. In other words I don't see why the action respects fibers properly</p>",
+        "id": 201346858,
+        "sender_full_name": "Bhavik Mehta",
+        "timestamp": 1592534020
+    },
+    {
+        "content": "<p>(In the E=Set case, for now at least)</p>",
+        "id": 201346909,
+        "sender_full_name": "Bhavik Mehta",
+        "timestamp": 1592534046
+    },
+    {
+        "content": "<p>I think that is ensured by coherence with splitting. Note that in my <code>δ</code>, <code>t</code> occurs as the value of <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>p</mi></mrow><annotation encoding=\"application/x-tex\">p</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.625em;vertical-align:-0.19444em;\"></span><span class=\"mord mathdefault\">p</span></span></span></span> for the inner part, where <code>t</code> is the domain of <code>f</code>. Two applications of a coalgebra must agree with one application that is split. In order for that to happen, <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>p</mi><mo stretchy=\"false\">(</mo><msup><mi>y</mi><mi>f</mi></msup><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">p(y^f)</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:1.0991079999999998em;vertical-align:-0.25em;\"></span><span class=\"mord mathdefault\">p</span><span class=\"mopen\">(</span><span class=\"mord\"><span class=\"mord mathdefault\" style=\"margin-right:0.03588em;\">y</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.8491079999999999em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathdefault mtight\" style=\"margin-right:0.10764em;\">f</span></span></span></span></span></span></span></span><span class=\"mclose\">)</span></span></span></span> must be <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msup><mi>x</mi><mo lspace=\"0em\" mathvariant=\"normal\" rspace=\"0em\">′</mo></msup></mrow><annotation encoding=\"application/x-tex\">x'</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.751892em;vertical-align:0em;\"></span><span class=\"mord\"><span class=\"mord mathdefault\">x</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.751892em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\">′</span></span></span></span></span></span></span></span></span></span></span></span>, or there is no hope for <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"false\">(</mo><msup><mi>y</mi><mi>f</mi></msup><msup><mo stretchy=\"false\">)</mo><mi>g</mi></msup><mo>=</mo><msup><mi>y</mi><mrow><mo stretchy=\"false\">(</mo><mi>f</mi><mo>∘</mo><mi>g</mi><mo stretchy=\"false\">)</mo></mrow></msup></mrow><annotation encoding=\"application/x-tex\">(y^f)^g = y^{(f \\circ g)}</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:1.0991079999999998em;vertical-align:-0.25em;\"></span><span class=\"mopen\">(</span><span class=\"mord\"><span class=\"mord mathdefault\" style=\"margin-right:0.03588em;\">y</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.8491079999999999em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathdefault mtight\" style=\"margin-right:0.10764em;\">f</span></span></span></span></span></span></span></span><span class=\"mclose\"><span class=\"mclose\">)</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.664392em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathdefault mtight\" style=\"margin-right:0.03588em;\">g</span></span></span></span></span></span></span></span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1.0824399999999998em;vertical-align:-0.19444em;\"></span><span class=\"mord\"><span class=\"mord mathdefault\" style=\"margin-right:0.03588em;\">y</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.8879999999999999em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mopen mtight\">(</span><span class=\"mord mathdefault mtight\" style=\"margin-right:0.10764em;\">f</span><span class=\"mbin mtight\">∘</span><span class=\"mord mathdefault mtight\" style=\"margin-right:0.03588em;\">g</span><span class=\"mclose mtight\">)</span></span></span></span></span></span></span></span></span></span></span></span> to work out.</p>",
+        "id": 201348101,
+        "sender_full_name": "Dan Doel",
+        "timestamp": 1592536001
+    },
+    {
+        "content": "<p>By coherence with splitting do you mean the coassociative law for the coalgebra?</p>",
+        "id": 201348161,
+        "sender_full_name": "Bhavik Mehta",
+        "timestamp": 1592536095
+    },
+    {
+        "content": "<p>I certainly appreciate why it <em>should</em> be true, just not entirely sure what the actual argument is</p>",
+        "id": 201348165,
+        "sender_full_name": "Bhavik Mehta",
+        "timestamp": 1592536138
+    },
+    {
+        "content": "<p>Well, I was going to call it that, but it's not actually associativity, right?</p>",
+        "id": 201348175,
+        "sender_full_name": "Dan Doel",
+        "timestamp": 1592536159
+    },
+    {
+        "content": "<p>Alright sure, just making sure I'm following correctly!</p>",
+        "id": 201348241,
+        "sender_full_name": "Bhavik Mehta",
+        "timestamp": 1592536232
+    },
+    {
+        "content": "<p>Anyhow, it's the <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>δ</mi><mo>∘</mo><mi>φ</mi><mo>=</mo><mi>T</mi><mi>φ</mi><mo>∘</mo><mi>φ</mi></mrow><annotation encoding=\"application/x-tex\">δ\\circφ = Tφ \\circ φ</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.69444em;vertical-align:0em;\"></span><span class=\"mord mathdefault\" style=\"margin-right:0.03785em;\">δ</span><span class=\"mspace\" style=\"margin-right:0.2222222222222222em;\"></span><span class=\"mbin\">∘</span><span class=\"mspace\" style=\"margin-right:0.2222222222222222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.625em;vertical-align:-0.19444em;\"></span><span class=\"mord mathdefault\">φ</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.8777699999999999em;vertical-align:-0.19444em;\"></span><span class=\"mord mathdefault\" style=\"margin-right:0.13889em;\">T</span><span class=\"mord mathdefault\">φ</span><span class=\"mspace\" style=\"margin-right:0.2222222222222222em;\"></span><span class=\"mbin\">∘</span><span class=\"mspace\" style=\"margin-right:0.2222222222222222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.625em;vertical-align:-0.19444em;\"></span><span class=\"mord mathdefault\">φ</span></span></span></span> sort of rule. Whatever that's called (I'm blanking on the name).</p>",
+        "id": 201348252,
+        "sender_full_name": "Dan Doel",
+        "timestamp": 1592536253
+    },
+    {
+        "content": "<p>If you unpack that by projecting/applying each side, I think you'll arrive at a requirement for <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>p</mi><mo stretchy=\"false\">(</mo><msup><mi>y</mi><mi>f</mi></msup><mo stretchy=\"false\">)</mo><mo>=</mo><msup><mi>x</mi><mo lspace=\"0em\" mathvariant=\"normal\" rspace=\"0em\">′</mo></msup></mrow><annotation encoding=\"application/x-tex\">p(y^f) = x'</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:1.0991079999999998em;vertical-align:-0.25em;\"></span><span class=\"mord mathdefault\">p</span><span class=\"mopen\">(</span><span class=\"mord\"><span class=\"mord mathdefault\" style=\"margin-right:0.03588em;\">y</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.8491079999999999em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathdefault mtight\" style=\"margin-right:0.10764em;\">f</span></span></span></span></span></span></span></span><span class=\"mclose\">)</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.751892em;vertical-align:0em;\"></span><span class=\"mord\"><span class=\"mord mathdefault\">x</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.751892em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\">′</span></span></span></span></span></span></span></span></span></span></span></span> along the way.</p>",
+        "id": 201348337,
+        "sender_full_name": "Dan Doel",
+        "timestamp": 1592536382
+    },
+    {
+        "content": "<p>That makes sense, thanks!</p>",
+        "id": 201348397,
+        "sender_full_name": "Bhavik Mehta",
+        "timestamp": 1592536450
+    }
+]

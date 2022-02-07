@@ -1,0 +1,37 @@
+---
+layout: archive
+title: Zulip Chat Archive
+permalink: /stream/253118-theory:-probability/topic/Generalizing.20mutual.20information.html
+---
+
+<h2>Stream: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/253118-theory:-probability/index.html">theory: probability</a></h2>
+<h3>Topic: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/253118-theory:-probability/topic/Generalizing.20mutual.20information.html">Generalizing mutual information</a></h3>
+
+<hr>
+
+<base href="https://categorytheory.zulipchat.com/">
+
+<head><link href="https://mattecapu.github.io/ct-zulip-archive/style.css" rel="stylesheet"></head>
+
+{% raw %}
+
+<a name="262142667"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/253118-theory%3A%20probability/topic/Generalizing%20mutual%20information/near/262142667" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Gurkenglas <a href="https://mattecapu.github.io/ct-zulip-archive/stream/253118-theory:-probability/topic/Generalizing.20mutual.20information.html#262142667">(Nov 19 2021 at 22:58)</a>:</h4>
+<p>I want to dissect a neural network into a hierarchy of modules to understand one module without having understood the others. My proxy for whether I can is to ask how well I can predict one module's reaction to an input from another's: Mutual information.</p>
+<p>I model a neural network as a differentiable function between an input vector space and an activation vector space of all real numbers calculated anywhere in the network. I call each real-number slot a neuron. An input distribution induces an activation distribution, and for every module (set of neurons) we get a marginal distribution.</p>
+<p>For tractability I replace the input distribution with a normal distribution of negligible variance around an input. Then the covariance matrix of the activation distribution is just the jacobian times its transpose, and the mutual information between two modules is pretty much the determinant of one block times the determinant of the other block divided by the determinant of their union.</p>
+<p>Averaging the mutual information between two modules <em>around</em> each training input is <em>almost</em> the mutual information conditioned on the input, but not quite - since the input determines all other numbers, conditioning on the input makes everything trivial. What am I looking at?</p>
+<p>The mutual information I get between modules takes values like 2 bits, 3.5 bits, 5 bits, infinity bits: Sometimes one degree of freedom, one number is shared between the modules. That sounds wrong and like I'm failing to account for some structure. How might one generalize mutual information to other categories than Set? One <em>could</em> just hackily add a noise vector onto every activation vector, which sounds like it might add some topological structure, but perhaps we should be respecting everything from the shape of a picture tensor to the causal dependency graph between neurons.</p>
+<p>I suspect that counting the degrees of freedom shared between two modules, that is, the rank of the one block plus the rank of the other block minus the rank of their union, is what mutual information becomes in some other category.</p>
+
+
+
+<a name="262190211"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/253118-theory%3A%20probability/topic/Generalizing%20mutual%20information/near/262190211" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Gurkenglas <a href="https://mattecapu.github.io/ct-zulip-archive/stream/253118-theory:-probability/topic/Generalizing.20mutual.20information.html#262190211">(Nov 20 2021 at 15:56)</a>:</h4>
+<p>Oh, the "mutual information between modules conditional on the input" is in fact mutual information between modules conditional on the input plus a negligible noise vector, neat. That does seem to make the hack less hacky. Still, can category theory help?</p>
+
+
+
+{% endraw %}
+
+<hr><p>Last updated: Jan 30 2022 at 00:30 UTC</p>

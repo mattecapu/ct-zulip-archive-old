@@ -1,0 +1,146 @@
+[
+    {
+        "content": "<p>I want to talk about some monoids for ordering, in the context of Haskell/PureScript programming, just because I find it interesting :)</p>",
+        "id": 193403313,
+        "sender_full_name": "Nick Scheel",
+        "timestamp": 1586402667
+    },
+    {
+        "content": "<p>Haskell has a total ordering class called <code>Ord</code> which captures types that have a total order on them. This is useful for putting things into Sets or indexing them in Maps. Sorting, nubbing, etc.</p>\n<p>I'll copy the <a href=\"https://pursuit.purescript.org/packages/purescript-prelude/4.1.1/docs/Data.Ord#t:Ord\" title=\"https://pursuit.purescript.org/packages/purescript-prelude/4.1.1/docs/Data.Ord#t:Ord\">PS example</a>, bc it's easier, but Haskell is the same:</p>\n<div class=\"codehilite\"><pre><span></span><span class=\"kr\">class</span> <span class=\"kt\">Eq</span> <span class=\"n\">a</span> <span class=\"o\">&lt;=</span> <span class=\"kt\">Ord</span> <span class=\"n\">a</span> <span class=\"kr\">where</span>\n  <span class=\"n\">compare</span> <span class=\"ow\">::</span> <span class=\"n\">a</span> <span class=\"ow\">-&gt;</span> <span class=\"n\">a</span> <span class=\"ow\">-&gt;</span> <span class=\"kt\">Ordering</span>\n</pre></div>\n\n\n<p>Where (<code>Ordering</code>)[https://pursuit.purescript.org/packages/purescript-prelude/4.1.1/docs/Data.Ordering#t:Ordering] is a three-element monoid:</p>\n<div class=\"codehilite\"><pre><span></span><span class=\"kr\">data</span> <span class=\"kt\">Ordering</span> <span class=\"ow\">=</span> <span class=\"kt\">LT</span> <span class=\"o\">|</span> <span class=\"kt\">GT</span> <span class=\"o\">|</span> <span class=\"kt\">EQ</span>\n\n<span class=\"kr\">instance</span> <span class=\"n\">semigroupOrdering</span> <span class=\"ow\">::</span> <span class=\"kt\">Semigroup</span> <span class=\"kt\">Ordering</span> <span class=\"kr\">where</span>\n  <span class=\"n\">append</span> <span class=\"kt\">LT</span> <span class=\"kr\">_</span> <span class=\"ow\">=</span> <span class=\"kt\">LT</span>\n  <span class=\"n\">append</span> <span class=\"kt\">GT</span> <span class=\"kr\">_</span> <span class=\"ow\">=</span> <span class=\"kt\">GT</span>\n  <span class=\"n\">append</span> <span class=\"kt\">EQ</span> <span class=\"n\">y</span> <span class=\"ow\">=</span> <span class=\"n\">y</span>\n\n<span class=\"kr\">instance</span> <span class=\"n\">monoidOrdering</span> <span class=\"ow\">::</span> <span class=\"kt\">Monoid</span> <span class=\"kt\">Ordering</span> <span class=\"kr\">where</span>\n  <span class=\"n\">mempty</span> <span class=\"ow\">=</span> <span class=\"kt\">EQ</span>\n\n<span class=\"nf\">invert</span> <span class=\"ow\">::</span> <span class=\"kt\">Ordering</span> <span class=\"ow\">-&gt;</span> <span class=\"kt\">Ordering</span>\n<span class=\"nf\">invert</span> <span class=\"kt\">GT</span> <span class=\"ow\">=</span> <span class=\"kt\">LT</span>\n<span class=\"nf\">invert</span> <span class=\"kt\">EQ</span> <span class=\"ow\">=</span> <span class=\"kt\">EQ</span>\n<span class=\"nf\">invert</span> <span class=\"kt\">LT</span> <span class=\"ow\">=</span> <span class=\"kt\">GT</span>\n</pre></div>\n\n\n<p>It has two left-absorbing elements and the identity. It turns out that it captures lexical orders on products very well: if we have a product <code>(a, b)</code> then we have <code>compare (a, b) (c, d) = compare a c &lt;&gt; compare b d</code> (where we write <code>&lt;&gt;</code> for the semigroup operation).</p>",
+        "id": 193403595,
+        "sender_full_name": "Nick Scheel",
+        "timestamp": 1586403081
+    },
+    {
+        "content": "<p>It also has one non-trivial involution which can be used to state one of the laws: <code>compare a b = invert (compare b a)</code> (actually, I'm not sure what law that actually is … antisymmetry?)</p>",
+        "id": 193403725,
+        "sender_full_name": "Nick Scheel",
+        "timestamp": 1586403248
+    },
+    {
+        "content": "<p>It also has a nice homomorphism <code>areEq</code> to the Boolean monoid under conjunction, which we call <code>Conj Boolean</code> in PS, that sends the non-empty elements to <code>false</code>. This can be used to state the expected behavior WRT to the parent class <code>Eq</code>: <code>areEq (compare a b) == (a == b)</code>.</p>",
+        "id": 193403945,
+        "sender_full_name": "Nick Scheel",
+        "timestamp": 1586403535
+    },
+    {
+        "content": "<p>Total orderings are nice for sorting and other computational things, but partial orderings are more common for capturing the semantics of some datatypes. Can we also describe them with a monoid?</p>",
+        "id": 193404021,
+        "sender_full_name": "Nick Scheel",
+        "timestamp": 1586403613
+    },
+    {
+        "content": "<p>I think for products, you might have a lattice.</p>",
+        "id": 193404219,
+        "sender_full_name": "Dan Doel",
+        "timestamp": 1586403885
+    },
+    {
+        "content": "<p>The answer is yes, of course! I just had to <a href=\"https://github.com/MonoidMusician/dhall-purescript/blob/9168a6a76a0ed4142651844d05942ef3f15acdf9/src/Dhall/Parser/Prioritize.purs#L13-L39\" title=\"https://github.com/MonoidMusician/dhall-purescript/blob/9168a6a76a0ed4142651844d05942ef3f15acdf9/src/Dhall/Parser/Prioritize.purs#L13-L39\">make it myself</a>:</p>\n<div class=\"codehilite\"><pre><span></span><span class=\"kr\">data</span> <span class=\"kt\">POrdering</span> <span class=\"ow\">=</span> <span class=\"kt\">PLT</span> <span class=\"o\">|</span> <span class=\"kt\">PEQ</span> <span class=\"o\">|</span> <span class=\"kt\">PGT</span> <span class=\"o\">|</span> <span class=\"kt\">UNC</span>\n\n<span class=\"kr\">instance</span> <span class=\"n\">semigroupPOrdering</span> <span class=\"ow\">::</span> <span class=\"kt\">Semigroup</span> <span class=\"kt\">POrdering</span> <span class=\"kr\">where</span>\n  <span class=\"n\">append</span> <span class=\"kt\">UNC</span> <span class=\"kr\">_</span> <span class=\"ow\">=</span> <span class=\"kt\">UNC</span>\n  <span class=\"n\">append</span> <span class=\"kr\">_</span> <span class=\"kt\">UNC</span> <span class=\"ow\">=</span> <span class=\"kt\">UNC</span>\n  <span class=\"n\">append</span> <span class=\"kt\">PEQ</span> <span class=\"n\">a</span> <span class=\"ow\">=</span> <span class=\"n\">a</span>\n  <span class=\"n\">append</span> <span class=\"n\">a</span> <span class=\"kt\">PEQ</span> <span class=\"ow\">=</span> <span class=\"n\">a</span>\n  <span class=\"n\">append</span> <span class=\"kt\">PLT</span> <span class=\"kt\">PLT</span> <span class=\"ow\">=</span> <span class=\"kt\">PLT</span>\n  <span class=\"n\">append</span> <span class=\"kt\">PLT</span> <span class=\"kt\">PGT</span> <span class=\"ow\">=</span> <span class=\"kt\">UNC</span>\n  <span class=\"n\">append</span> <span class=\"kt\">PGT</span> <span class=\"kt\">PLT</span> <span class=\"ow\">=</span> <span class=\"kt\">UNC</span>\n  <span class=\"n\">append</span> <span class=\"kt\">PGT</span> <span class=\"kt\">PGT</span> <span class=\"ow\">=</span> <span class=\"kt\">PGT</span>\n<span class=\"kr\">instance</span> <span class=\"n\">monoidPOrdering</span> <span class=\"ow\">::</span> <span class=\"kt\">Monoid</span> <span class=\"kt\">POrdering</span> <span class=\"kr\">where</span>\n  <span class=\"n\">mempty</span> <span class=\"ow\">=</span> <span class=\"kt\">PEQ</span>\n\n<span class=\"nf\">inverse</span> <span class=\"ow\">::</span> <span class=\"kt\">POrdering</span> <span class=\"ow\">-&gt;</span> <span class=\"kt\">POrdering</span>\n<span class=\"nf\">inverse</span> <span class=\"kt\">PLT</span> <span class=\"ow\">=</span> <span class=\"kt\">PGT</span>\n<span class=\"nf\">inverse</span> <span class=\"kt\">PGT</span> <span class=\"ow\">=</span> <span class=\"kt\">PLT</span>\n<span class=\"nf\">inverse</span> <span class=\"kt\">PEQ</span> <span class=\"ow\">=</span> <span class=\"kt\">PEQ</span>\n<span class=\"nf\">inverse</span> <span class=\"kt\">UNC</span> <span class=\"ow\">=</span> <span class=\"kt\">UNC</span>\n</pre></div>\n\n\n<p>This time we have three idempotent elements and the identity: one absorbing element, and two that annihilate each other (i.e. <code>PGT &lt;&gt; PLT == UNC == PLT &lt;&gt; PGT</code>).</p>\n<p>We still have the nice homomorphism and involution as mentioned above. But notice that it's commutative now!</p>",
+        "id": 193404237,
+        "sender_full_name": "Nick Scheel",
+        "timestamp": 1586403900
+    },
+    {
+        "content": "<p>Now our interpretation for products is that <code>pcompare (a, b) (c, d) = pcompare a c &lt;&gt; pcompare b d</code> and the more familiar semantics is that <code>(a, b) &lt;= (c, d) when a &lt;= b and c &lt;= d</code></p>",
+        "id": 193404324,
+        "sender_full_name": "Nick Scheel",
+        "timestamp": 1586403988
+    },
+    {
+        "content": "<p>Yeah, that lattice.</p>",
+        "id": 193404331,
+        "sender_full_name": "Dan Doel",
+        "timestamp": 1586404003
+    },
+    {
+        "content": "<p>PEQ is the bottom, UNC is the top, and you take joins.</p>",
+        "id": 193404341,
+        "sender_full_name": "Dan Doel",
+        "timestamp": 1586404022
+    },
+    {
+        "content": "<p>Or flip it upside down.</p>",
+        "id": 193404346,
+        "sender_full_name": "Dan Doel",
+        "timestamp": 1586404030
+    },
+    {
+        "content": "<p>Seems suggestive that you're classifying two values of a partial order by mapping them to a lattice (which is also a partial order).</p>",
+        "id": 193404416,
+        "sender_full_name": "Dan Doel",
+        "timestamp": 1586404129
+    },
+    {
+        "content": "<p>I hadn't actually thought about it that way, but yes! One of the simplest lattices</p>",
+        "id": 193404489,
+        "sender_full_name": "Nick Scheel",
+        "timestamp": 1586404218
+    },
+    {
+        "content": "<p>We can generate an ordering function from a partial order <code>&gt;=</code> operator:</p>\n<div class=\"codehilite\"><pre><span></span><span class=\"nf\">fromGERelation</span> <span class=\"ow\">::</span> <span class=\"n\">forall</span> <span class=\"n\">t</span><span class=\"o\">.</span>\n  <span class=\"p\">(</span><span class=\"n\">t</span> <span class=\"ow\">-&gt;</span> <span class=\"n\">t</span> <span class=\"ow\">-&gt;</span> <span class=\"kt\">Boolean</span><span class=\"p\">)</span> <span class=\"ow\">-&gt;</span>\n  <span class=\"p\">(</span><span class=\"n\">t</span> <span class=\"ow\">-&gt;</span> <span class=\"n\">t</span> <span class=\"ow\">-&gt;</span> <span class=\"kt\">POrdering</span><span class=\"p\">)</span>\n<span class=\"nf\">fromGERelation</span> <span class=\"n\">f</span> <span class=\"n\">a</span> <span class=\"n\">b</span> <span class=\"ow\">=</span>\n  <span class=\"kr\">case</span> <span class=\"n\">f</span> <span class=\"n\">a</span> <span class=\"n\">b</span><span class=\"p\">,</span> <span class=\"n\">f</span> <span class=\"n\">b</span> <span class=\"n\">a</span> <span class=\"kr\">of</span>\n    <span class=\"n\">true</span><span class=\"p\">,</span> <span class=\"n\">true</span> <span class=\"ow\">-&gt;</span> <span class=\"kt\">PEQ</span>\n    <span class=\"n\">true</span><span class=\"p\">,</span> <span class=\"n\">false</span> <span class=\"ow\">-&gt;</span> <span class=\"kt\">PGT</span>\n    <span class=\"n\">false</span><span class=\"p\">,</span> <span class=\"n\">true</span> <span class=\"ow\">-&gt;</span> <span class=\"kt\">PLT</span>\n    <span class=\"n\">false</span><span class=\"p\">,</span> <span class=\"n\">false</span> <span class=\"ow\">-&gt;</span> <span class=\"kt\">UNC</span>\n</pre></div>",
+        "id": 193404552,
+        "sender_full_name": "Nick Scheel",
+        "timestamp": 1586404337
+    },
+    {
+        "content": "<p>Or, I guess the process I meant is more complicated. Classifying a compound partial order by mapping to a 'simpler' partial order and combining there.</p>",
+        "id": 193404558,
+        "sender_full_name": "Dan Doel",
+        "timestamp": 1586404361
+    },
+    {
+        "content": "<p>You can factor products out. Is that a good phrasing? I'm not quite sure ...</p>",
+        "id": 193404671,
+        "sender_full_name": "Nick Scheel",
+        "timestamp": 1586404525
+    },
+    {
+        "content": "<p>One reason why we use <code>(p)compare</code> to define an order, instead of the mathematical convention of <code>&lt;=</code>, is computational efficiency: we might as well give all the information we have at once, instead of computing both <code>&lt;=</code> and <code>&gt;=</code>, which would be wasteful.</p>",
+        "id": 193404751,
+        "sender_full_name": "Nick Scheel",
+        "timestamp": 1586404659
+    },
+    {
+        "content": "<p>Is there a name for the standard product partial order? I guess it would be the categorical product … but I find it interesting how different the lexical order and the partial product order are. They essentially never agree, even though they are both the natural choices for ordering products in closely related ways (only one extra law for total orders).</p>",
+        "id": 193405229,
+        "sender_full_name": "Nick Scheel",
+        "timestamp": 1586405283
+    },
+    {
+        "content": "<p>It's the categorical product, which is also the product of the partial orders considered to be categories, I believe. I'm not sure if there's a nice characterization of the lexicographic order.</p>",
+        "id": 193405434,
+        "sender_full_name": "Dan Doel",
+        "timestamp": 1586405641
+    },
+    {
+        "content": "<p>The lexicographic order probably cannot be specified using a universal property, because it is not invariant under isomorphism … <code>(a, b) &lt;= (c, d)</code> isn't the same as <code>(b, a) &lt;= (d, c)</code>. Does that seem right? I'm too tired rn to actually check the categorical details lol</p>",
+        "id": 193405719,
+        "sender_full_name": "Nick Scheel",
+        "timestamp": 1586405974
+    },
+    {
+        "content": "<p>Well, it can't be a construction that's commutative.</p>",
+        "id": 193405785,
+        "sender_full_name": "Dan Doel",
+        "timestamp": 1586406041
+    },
+    {
+        "content": "<p>nlab doesn't have anything particularly nice categorically to say about it.</p>",
+        "id": 193406266,
+        "sender_full_name": "Dan Doel",
+        "timestamp": 1586406603
+    },
+    {
+        "content": "<p>One more note before I go to bed: my particular application of partial orders in the above project was resolving ambiguity during parsing. For each parsing rule I knew was ambiguous, I would look at the AST and assign disambiguation precedences, and then I would look for a parse that was maximally preferred over all others. If, at the end of this discarding, there was still not a unique parse, then I would fail parsing, but so far I haven't seen an instance of that happen: The assumption is that parse ambiguity is roughly compositional, so if there are two ambiguous rules that can both individually trigger on the same string, there should be a case where both of their preferred parsings were found.</p>",
+        "id": 193406475,
+        "sender_full_name": "Nick Scheel",
+        "timestamp": 1586406925
+    },
+    {
+        "content": "<p>BTW, the three-element monoid <code>LT | GT | EQ</code> is known in the literature as the \"flip-flop monoid\" cf. <a href=\"https://en.wikipedia.org/wiki/Semigroup_with_three_elements\" title=\"https://en.wikipedia.org/wiki/Semigroup_with_three_elements\">https://en.wikipedia.org/wiki/Semigroup_with_three_elements</a></p>",
+        "id": 193442504,
+        "sender_full_name": "Nguyễn Lê Thành Dũng",
+        "timestamp": 1586435265
+    }
+]

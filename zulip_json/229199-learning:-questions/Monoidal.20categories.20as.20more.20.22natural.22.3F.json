@@ -1,0 +1,98 @@
+[
+    {
+        "content": "<p>As I'm learning more, it seems like monoidal categories are in a certain sense more \"natural\" than non-monoidal ones. In particular, once you take a higher categorical perspective if you don't (artificially, IMO) disallow 0-dimensional pasting diagrams then you get your tensor and unit as 0-dimensional composition and identity. Is this a well-known insight? Is there an approach to category theory that treats monoidal as normal and non-monoidal as a corner-case generalization?</p>",
+        "id": 214566700,
+        "sender_full_name": "Shea Levy",
+        "timestamp": 1603715538
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"351475\">Shea Levy</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/Monoidal.20categories.20as.20more.20.22natural.22.3F/near/214566700\">said</a>:</p>\n<blockquote>\n<p>Is there an approach to category theory that treats monoidal as normal and non-monoidal as a corner-case generalization?</p>\n</blockquote>\n<p>Not that I know of.     This is how I think about it:</p>\n<p>Categories are great, bicategories are great, tricategories are great...</p>\n<p>... and monoidal categories are bicategories with one object.</p>",
+        "id": 214597930,
+        "sender_full_name": "John Baez",
+        "timestamp": 1603729747
+    },
+    {
+        "content": "<p>I don't know what do you mean by \"approach to category theory\", but for sure \"just\" categories are the corner case in many fields of applied category theory. For instance, all the categorical quantum mechanics stuff relies on process theories that are always monoidal. Same thing for the prop-based approach to concurrency that many people are pursuing, e.g. at UCL and Talltech.</p>",
+        "id": 214629162,
+        "sender_full_name": "Fabrizio Genovese",
+        "timestamp": 1603744324
+    },
+    {
+        "content": "<p>In this cases you always have some monoidal structure to be around. Also, I find the interpretation of monoidality as \"bicategories with just one object\" illuminating from a mathematical point of view, but rather uninstructive if you are thinking about applications. For me, \"monoidal category\" = \"something you can do string diagrams with\". One may argue that yes, there are surface diagrams and the like for higher categories, but then again these have, at least for me, a completely different flavor that is not necessarily process-theoretic</p>",
+        "id": 214629411,
+        "sender_full_name": "Fabrizio Genovese",
+        "timestamp": 1603744442
+    },
+    {
+        "content": "<p>ah, but string diagrams in a monoidal category are exactly bicategory string diagrams with no labelling for 0-cells!</p>",
+        "id": 214663322,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1603777626
+    },
+    {
+        "content": "<p>you only need surface diagrams for monoidal bicategories and tricategories etc</p>",
+        "id": 214663330,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1603777672
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276072\">sarahzrf</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/Monoidal.20categories.20as.20more.20.22natural.22.3F/near/214663322\">said</a>:</p>\n<blockquote>\n<p>ah, but string diagrams in a monoidal category are exactly bicategory string diagrams with no labelling for 0-cells!</p>\n</blockquote>\n<p>Absolutely. If you draw the surfaces all of the same colour, you get back string diagrams. But I'm saying that if you look at -&gt; Applications &lt;- string diagrams and (general) surface diagrams look like very different beasts, and are used in very different contexts.</p>",
+        "id": 214685914,
+        "sender_full_name": "Fabrizio Genovese",
+        "timestamp": 1603797436
+    },
+    {
+        "content": "<p>I am arguing that application-wise - and I consider myself an applied category theorist - this mathematical generalization is more obscuring that helpful. You basically say \"Oh, X is a special case of Y\" and this obscures the fact that, often, X is used to model things that are completely different from the ones you model with Y.</p>",
+        "id": 214686055,
+        "sender_full_name": "Fabrizio Genovese",
+        "timestamp": 1603797546
+    },
+    {
+        "content": "<p>I mean, you can say \"A group is a special kind of set\" or \"a ring is a special kind of group\".  Still, everyone would agree that most often than not this is the best way for not really understanding what's going on in group (resp. ring) theory.</p>",
+        "id": 214686157,
+        "sender_full_name": "Fabrizio Genovese",
+        "timestamp": 1603797630
+    },
+    {
+        "content": "<p>I think that comparison is the wrong way around. Just as by moving from groups to sets, you lose structure, so by moving from bicategories to monoidal categories, you also lose structure. It can be useful to realise that a monoidal category is actually just a hom-category in a bicategory, because it reveals new structure that might be helpful. Generalised species are a good example of this phenomenon.</p>",
+        "id": 214686559,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1603797950
+    },
+    {
+        "content": "<p>I said already that I find this generalization mathematically illuminating. It just seems natual to me, though, to think that a generalization may not always be what you want. Thinking about monoidal categories in terms of bicategories is sometimes helpful, sometimes it is not. I'm saying that, conceptually, there's more to monoidal categories than saying \"they are just bicategories with one object\"</p>",
+        "id": 214687696,
+        "sender_full_name": "Fabrizio Genovese",
+        "timestamp": 1603798676
+    },
+    {
+        "content": "<p>Here's the most interesting application I've seen of bicategorical string diagrams to do things similar to what people usually do with monoidal category string diagrams:</p>\n<ul>\n<li>Mike Stay and Jamie Vicary, <a href=\"https://arxiv.org/abs/1301.3393\">Bicategorical semantics for nondeterministic computation</a>.</li>\n</ul>\n<p>This is the diagram for <a href=\"https://en.wikipedia.org/wiki/Diffie%E2%80%93Hellman_key_exchange\">Diffie-Hellman key exchange</a>:</p>\n<p><a href=\"/user_uploads/21317/IP_2E8WItdFjEFy5GqlwHK7M/key_exchange.jpg\">Diffie-Hellman key exchange</a></p>\n<div class=\"message_inline_image\"><a href=\"/user_uploads/21317/IP_2E8WItdFjEFy5GqlwHK7M/key_exchange.jpg\" title=\"Diffie-Hellman key exchange\"><img src=\"/user_uploads/21317/IP_2E8WItdFjEFy5GqlwHK7M/key_exchange.jpg\"></a></div>",
+        "id": 214746472,
+        "sender_full_name": "John Baez",
+        "timestamp": 1603824621
+    },
+    {
+        "content": "<p>Yes, I'm familiar with this paper. And indeed, the focus here is much more information-flow like than process-theoretic. There's an entire line of work in CQM about using higher cats and surface diagrams, carried on by people like Jamie Vicary, David Reutter and others. Again, it seems to me that this has deeper ties with information theory than \"traditional\" CQM does, but maybe I'm wrong.</p>",
+        "id": 214763686,
+        "sender_full_name": "Fabrizio Genovese",
+        "timestamp": 1603832448
+    },
+    {
+        "content": "<p>i remember this paper, but i forgot they did a version of diffie-hellman. however, there's a big catch (p.20): \"Erasing the public data is necessary for information-theoretical security in the classical case, and for maintaining coherence in any quantum interpretation.\"</p>\n<p>If we can erase the public information later, might as well just send the key to Bob, do all the communication we want, then erase the key when we're done. A really interesting thing, which I still haven't seen in any of the diagrammatic approaches, is a proof of <em>computational</em> security.</p>",
+        "id": 214955145,
+        "sender_full_name": "Aleks Kissinger",
+        "timestamp": 1603971665
+    },
+    {
+        "content": "<p>Information-theoretic security usually amounts to showing two parts of a diagram disconnect. For example, at the end we can show a noise channel (i.e. the uniform stochastic map) from the private info to the eavesdropper, which is rank-1, so it can be depicted as something that disconnects when <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>⊗</mo></mrow><annotation encoding=\"application/x-tex\">\\otimes</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.66666em;vertical-align:-0.08333em;\"></span><span class=\"mord\">⊗</span></span></span></span> is tensor product-like.</p>\n<p>I have no idea what computational security would look like, but 2-categories might have the answer...</p>",
+        "id": 214955610,
+        "sender_full_name": "Aleks Kissinger",
+        "timestamp": 1603972015
+    },
+    {
+        "content": "<p>Since early in the 2000's, we have seen Spekkens' work where he derives almost all quantum effects from what he called an \"epistemic restriction\".  It was around that time that Coecke and others began writing a  lot about presupposing a monoidal structure and picking out categorical structure that replicates what we see in Hilbert Spaces.  Since shortly after this time, I decided that the monoidal program was, actually, less interesting than programs that would derive that structure from some sort of information or other axioms. </p>\n<p>In my research, I did a naive abstraction of the Spekkens model to processes, where we see a functor from a category of system under study to a category of the apparatus as an epistemic restriction on causal structure.  This leads to (co)monads which I feel are more natural, and data structures appear naturally.  Spivak has stated in his paper on Poly, that monads on Set are a more natural setting than operads (a gadget on monoidal categories) for mode-dependent systems.</p>",
+        "id": 214965097,
+        "sender_full_name": "Ben Sprott",
+        "timestamp": 1603977818
+    }
+]

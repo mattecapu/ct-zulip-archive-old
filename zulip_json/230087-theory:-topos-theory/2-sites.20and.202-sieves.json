@@ -1,0 +1,56 @@
+[
+    {
+        "content": "<p>so i'm way out of my depth here, i really don't have the prerequisites to discuss the stuff relevant to this intelligently</p>\n<p>but i was wondering: is there any notion of a 2-site where a 2-sieve on an object A is, rather than a <em>subobject</em> of its yoneda embedding y(A), a <em>discrete opfibration over</em> y(A)?</p>",
+        "id": 216288339,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1605050343
+    },
+    {
+        "content": "<p>i was thinking about what it looks like to categorify all of the machinery of sheaves, wondering about the data of sieves, and it occurred to me that it seemed as though categorifying that part ought to result in discrete opfibrations</p>",
+        "id": 216288432,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1605050407
+    },
+    {
+        "content": "<p>i'll note that there seems to be some precedent for replacing subobjects with discrete [op]fibrations when doing sheafy stuff: the étale sites in algebraic geometry use just such maps as parts of covering families (of course, this is in a slightly different part of the machinery and a somewhat different kind of \"discrete fibration\"...)</p>",
+        "id": 216288574,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1605050553
+    },
+    {
+        "content": "<p>I don't  have anything to intelligent to say, so I'll say something unintelligent.   Mark Weber defined an <strong>elementary 2-topos</strong> to be a finitely complete cartesian closed 2-category equipped with a duality involution and a classifying discrete opfibration:</p>\n<ul>\n<li>David Corfield, <a href=\"https://golem.ph.utexas.edu/category/2008/01/2toposes.html\">2-Toposes</a>.</li>\n</ul>",
+        "id": 216299223,
+        "sender_full_name": "John Baez",
+        "timestamp": 1605059518
+    },
+    {
+        "content": "<p>yeah, most of the little i know on this kind of topic came from browsing the 2-topos stuff on <span class=\"user-mention silent\" data-user-id=\"276777\">Mike Shulman</span>'s sub-nlab &amp; i think he alluded to several existing definitions incl that one</p>",
+        "id": 216300092,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1605060331
+    },
+    {
+        "content": "<p><a href=\"/user_uploads/21317/XRItWS0e_Ck78IBpCU5s-GBu/image.png\">image.png</a> <a href=\"/user_uploads/21317/HDWqAvbpRG8jAIvAeAgitR65/image.png\">image.png</a></p>\n<div class=\"message_inline_image\"><a href=\"/user_uploads/21317/XRItWS0e_Ck78IBpCU5s-GBu/image.png\" title=\"image.png\"><img src=\"/user_uploads/21317/XRItWS0e_Ck78IBpCU5s-GBu/image.png\"></a></div><div class=\"message_inline_image\"><a href=\"/user_uploads/21317/HDWqAvbpRG8jAIvAeAgitR65/image.png\" title=\"image.png\"><img src=\"/user_uploads/21317/HDWqAvbpRG8jAIvAeAgitR65/image.png\"></a></div>",
+        "id": 216300177,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1605060434
+    },
+    {
+        "content": "<p>What I am about to say is not close to being an answer to your question (as I am also very much out of my depth), but nonetheless it might lead to an interesting road.</p>\n<p>Anel–Biedermann–Finster–Joyal are developing a way of talking about general presentations of Grothendieck <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"false\">(</mo><mi mathvariant=\"normal\">∞</mi><mo separator=\"true\">,</mo><mn>1</mn><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">(\\infty,1)</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mopen\">(</span><span class=\"mord\">∞</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mord\">1</span><span class=\"mclose\">)</span></span></span></span>-topoï, using instead of Lawvere–Tierney topologies what they call <em>(lex) modalities</em>, pullback- (or finite limits-)stable unique factorisation systems. When comparing to topological localisations, they obviously focus a lot on truncated morphisms. I do not think this story is completely published yet, though some of it features in <a href=\"https://arxiv.org/abs/1703.09050\">these</a> <a href=\"https://arxiv.org/abs/1703.09632\">three</a> <a href=\"https://arxiv.org/abs/2004.00731\">papers</a>, but it is explained in <a href=\"http://mathieu.anel.free.fr/mat/doc/Anel-LexLocalizations.pdf\">this talk</a>.</p>\n<p>It seems plausible that adapting this point of view to <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"false\">(</mo><mi mathvariant=\"normal\">∞</mi><mo separator=\"true\">,</mo><mn>2</mn><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">(\\infty,2)</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mopen\">(</span><span class=\"mord\">∞</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mord\">2</span><span class=\"mclose\">)</span></span></span></span>-topoï (for example the factorisation systems may have to be replaced by <a href=\"https://ncatlab.org/nlab/show/ternary+factorization+system\">ternary factorisation systems</a>) could be fruitful, and then you would recover these <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>2</mn></mrow><annotation encoding=\"application/x-tex\">2</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.64444em;vertical-align:0em;\"></span><span class=\"mord\">2</span></span></span></span>-sieves (at least, something working on the discrete opfibration classifier) by appropriately specialising to <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>2</mn></mrow><annotation encoding=\"application/x-tex\">2</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.64444em;vertical-align:0em;\"></span><span class=\"mord\">2</span></span></span></span>-topoï just as they do for <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>1</mn></mrow><annotation encoding=\"application/x-tex\">1</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.64444em;vertical-align:0em;\"></span><span class=\"mord\">1</span></span></span></span>-topoï.</p>",
+        "id": 216692231,
+        "sender_full_name": "David Kern",
+        "timestamp": 1605313182
+    },
+    {
+        "content": "<p>ooh, i realized today: are hypercovers what i was looking for?</p>",
+        "id": 221557592,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1609783140
+    },
+    {
+        "content": "<p>The difference between descent and hyperdescent usually only becomes material at the purely <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"normal\">∞</mi></mrow><annotation encoding=\"application/x-tex\">\\infty</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.43056em;vertical-align:0em;\"></span><span class=\"mord\">∞</span></span></span></span>-categorical level (see <em>e.g.</em> Lemmata <a href=\"http://people.math.harvard.edu/~lurie/papers/HTT.pdf#theorem.6.5.2.9\">6.5.2.9</a> or <a href=\"http://people.math.harvard.edu/~lurie/papers/HTT.pdf#theorem.6.5.3.9\">6.5.3.9</a> of HTT). For obvious reasons, this has not been formalised for <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"false\">(</mo><mi mathvariant=\"normal\">∞</mi><mo separator=\"true\">,</mo><mn>2</mn><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">(\\infty,2)</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mopen\">(</span><span class=\"mord\">∞</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mord\">2</span><span class=\"mclose\">)</span></span></span></span>-topoï, but it seems very likely to be true nonetheless, so I do not think hypercovers can provide what you are looking for.<br>\nIn addition, while hypercovers refine the notion of coverings, they are still based on the same notion of topology, so it should go the other way around: hypercovers will not help to define your <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>2</mn></mrow><annotation encoding=\"application/x-tex\">2</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.64444em;vertical-align:0em;\"></span><span class=\"mord\">2</span></span></span></span>-sieves, but on a <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>2</mn></mrow><annotation encoding=\"application/x-tex\">2</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.64444em;vertical-align:0em;\"></span><span class=\"mord\">2</span></span></span></span>-site you will have both \"<span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>2</mn></mrow><annotation encoding=\"application/x-tex\">2</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.64444em;vertical-align:0em;\"></span><span class=\"mord\">2</span></span></span></span>-covers\" and \"<span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>2</mn></mrow><annotation encoding=\"application/x-tex\">2</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.64444em;vertical-align:0em;\"></span><span class=\"mord\">2</span></span></span></span>-hypercovers\".</p>",
+        "id": 221679031,
+        "sender_full_name": "David Kern",
+        "timestamp": 1609869338
+    }
+]

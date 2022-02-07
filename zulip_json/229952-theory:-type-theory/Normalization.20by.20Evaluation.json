@@ -1,0 +1,260 @@
+[
+    {
+        "content": "<p>Ok I'm finally creating a topic for this, now that I finally have a day off. The idea is to try to summarize the main ideas of normalization by evaluation, namely how they pertain to certain categorical concepts like Presheaves and Sheaves, the Yoneda lemma, categorical models of type theory, categorical glueing and global sections.</p>",
+        "id": 195221941,
+        "sender_full_name": "Cody Roux",
+        "timestamp": 1587750096
+    },
+    {
+        "content": "<p>I feel like <span class=\"user-mention\" data-user-id=\"277270\">@Dan Doel</span>, <span class=\"user-mention\" data-user-id=\"276777\">@Mike Shulman</span> have some special insight into this...</p>",
+        "id": 195222112,
+        "sender_full_name": "Cody Roux",
+        "timestamp": 1587750171
+    },
+    {
+        "content": "<p>Also possibly <span class=\"user-mention\" data-user-id=\"276770\">@Steve Awodey</span></p>",
+        "id": 195222223,
+        "sender_full_name": "Cody Roux",
+        "timestamp": 1587750233
+    },
+    {
+        "content": "<p>The starting point, AFAIK, is this paper: <a href=\"https://dl.acm.org/doi/10.1017/S0960129597002508\" title=\"https://dl.acm.org/doi/10.1017/S0960129597002508\">https://dl.acm.org/doi/10.1017/S0960129597002508</a></p>",
+        "id": 195222757,
+        "sender_full_name": "Cody Roux",
+        "timestamp": 1587750496
+    },
+    {
+        "content": "<p>I think that paper is kind of an anomaly. It uses a rather different approach than many of the others.</p>",
+        "id": 195223066,
+        "sender_full_name": "Dan Doel",
+        "timestamp": 1587750680
+    },
+    {
+        "content": "<p>I like it better, because it feels more like NbE just falling out of categorical stuff automatically, while the rest are more explicit constructions.</p>",
+        "id": 195223188,
+        "sender_full_name": "Dan Doel",
+        "timestamp": 1587750742
+    },
+    {
+        "content": "<p>My goal is to see if this paper reconstructs into proofs of normalization for categories with sums, and a simple version of MLTT</p>",
+        "id": 195223843,
+        "sender_full_name": "Cody Roux",
+        "timestamp": 1587751097
+    },
+    {
+        "content": "<p>But there are some subtleties about the paper itself I don't quite understand though.</p>",
+        "id": 195223876,
+        "sender_full_name": "Cody Roux",
+        "timestamp": 1587751118
+    },
+    {
+        "content": "<p>My only insight is to hand you off to someone else's insight: <a href=\"https://arxiv.org/abs/1809.08646\" title=\"https://arxiv.org/abs/1809.08646\">https://arxiv.org/abs/1809.08646</a>.</p>",
+        "id": 195232899,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1587755938
+    },
+    {
+        "content": "<p>Jon Sterling recently shared with me a draft of an even better categorical reconstruction of NbE.  He doesn't appear to be on this zulip (though perhaps <span class=\"user-mention\" data-user-id=\"278549\">@Bas Spitters</span> is), but he's on the HoTT zulip so you could ask there.</p>",
+        "id": 195233144,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1587756055
+    },
+    {
+        "content": "<p>Oh yeah. I still haven't had time to fully digest that paper.</p>",
+        "id": 195233404,
+        "sender_full_name": "Dan Doel",
+        "timestamp": 1587756179
+    },
+    {
+        "content": "<p>It seems like this is in the less 'magical' line of things, though. Like, talking about presheaves of neutral terms and normal forms seems motivated by experience with syntactic handling of type theory, whereas the first paper above somehow seems to avoid talking about that.</p>",
+        "id": 195233693,
+        "sender_full_name": "Dan Doel",
+        "timestamp": 1587756346
+    },
+    {
+        "content": "<p>Although maybe it's just hidden somehow.</p>",
+        "id": 195233786,
+        "sender_full_name": "Dan Doel",
+        "timestamp": 1587756380
+    },
+    {
+        "content": "<p>I think maybe the enriched setting lets you do that? The first paper above notes that if you just carry out their argument with normal categories, you don't get anything interesting. So talking about neutral and normal presheaves may be a way of staying in the ordinary setting.</p>",
+        "id": 195234451,
+        "sender_full_name": "Dan Doel",
+        "timestamp": 1587756694
+    },
+    {
+        "content": "<p>Anyhow, the method that talks about neutral/normal terms is significantly more developed as far as I can tell. I only know of that one paper for the other one.</p>",
+        "id": 195234667,
+        "sender_full_name": "Dan Doel",
+        "timestamp": 1587756785
+    },
+    {
+        "content": "<p>Well, maybe that's not quite true, but I guess the other sort of paper isn't specifically about NbE.</p>",
+        "id": 195235339,
+        "sender_full_name": "Dan Doel",
+        "timestamp": 1587757109
+    },
+    {
+        "content": "<p><span class=\"user-mention\" data-user-id=\"276030\">@Cody Roux</span> You might want to study this as well: <a href=\"https://arxiv.org/pdf/1905.05636.pdf\" title=\"https://arxiv.org/pdf/1905.05636.pdf\">https://arxiv.org/pdf/1905.05636.pdf</a></p>\n<p>It uses enriched categories to talk about various notions of operational semantics for Lawvere theories. And of course it mentions that being set-enriched is like denotational semantics. The paper you linked is PER-enriched instead, and I think an important part is that you can equip the same set with multiple PERs. So, you can equip the lambda terms with α equality or αβη equality, but they have the same underlying set. So I guess that is an alternate way of constructing the right presheaves without getting into details that seem motivated by syntactic normalization.</p>",
+        "id": 195236247,
+        "sender_full_name": "Dan Doel",
+        "timestamp": 1587757596
+    },
+    {
+        "content": "<p>I think Jon once explained to me why he thought the normal/neutral approach was better than the PER-enriched-category approach, but I don't remember now.  Or maybe I'm misremembering.</p>",
+        "id": 195237292,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1587758221
+    },
+    {
+        "content": "<p>Well, one reason I can think of is that you want normalization to actually produce the things that are free of redexes. The PER argument just gives you <em>a</em> canonical witness of each equivalence class, and it only gives you the actual normal form because of the exact details of their proof, I think.</p>",
+        "id": 195237683,
+        "sender_full_name": "Dan Doel",
+        "timestamp": 1587758438
+    },
+    {
+        "content": "<p>Although maybe if you enriched in something potentially directed instead, that could be made to necessarily work out.</p>",
+        "id": 195237804,
+        "sender_full_name": "Dan Doel",
+        "timestamp": 1587758511
+    },
+    {
+        "content": "<p>Something that seems important to me is A) Building an equivalence checker and B) Proving the disjunction property. A) because that's what's actually needed for implementation and B) because it implies consistency and all that proof-theoretic good stuff like the subterm property and interpolation.</p>",
+        "id": 195238227,
+        "sender_full_name": "Cody Roux",
+        "timestamp": 1587758726
+    },
+    {
+        "content": "<p>Neither of those really need neutral terms as a concept. Alternately, if the definition of neutral terms could arise organically from the theoretical model, that would be swell. It's quite a subtle concept (at first) particularly in the presence of connectives. Also, the notion of eta normal forms can be quite finicky</p>",
+        "id": 195238385,
+        "sender_full_name": "Cody Roux",
+        "timestamp": 1587758814
+    },
+    {
+        "content": "<p>For more references, there's a lot of work in this area by Thorsten Altenkirch and coauthors : for dependent types <a href=\"https://dl.acm.org/doi/10.1109/LICS.2007.33\" title=\"https://dl.acm.org/doi/10.1109/LICS.2007.33\">https://dl.acm.org/doi/10.1109/LICS.2007.33</a> and <a href=\"https://lmcs.episciences.org/4005/pdf\" title=\"https://lmcs.episciences.org/4005/pdf\">https://lmcs.episciences.org/4005/pdf</a>, and for coproducts (but no empty type if I remember right) <a href=\"https://dl.acm.org/doi/10.5555/871816.871869\" title=\"https://dl.acm.org/doi/10.5555/871816.871869\">https://dl.acm.org/doi/10.5555/871816.871869</a>.</p>",
+        "id": 195239961,
+        "sender_full_name": "Philip Saville",
+        "timestamp": 1587759704
+    },
+    {
+        "content": "<p>For neutral and  normal terms, Phil Scott told me that they considered it a benefit of their approach that they never had to work with neutral terms -- they wanted it to be completely algebraic (though they need neutral terms at the end to prove they have actually got the normal forms).  I have looked for but never found a really conceptual explanation of what neutral terms really do in categorical versions of NbE. The closest I know of is around Lemma 3 of Fiore's semantic treatment of NbE for stlc <a href=\"https://www.cl.cam.ac.uk/~mpf23/papers/Types/nbe.pdf\" title=\"https://www.cl.cam.ac.uk/~mpf23/papers/Types/nbe.pdf\">https://www.cl.cam.ac.uk/~mpf23/papers/Types/nbe.pdf</a>. It seems somewhat related to the \"standardisation\" theorems for lambda calculus but it's not clear there's a connection</p>",
+        "id": 195240487,
+        "sender_full_name": "Philip Saville",
+        "timestamp": 1587759970
+    },
+    {
+        "content": "<p>I'm actually mostly aware of all these references, I'm trying to understand and synthesize them, mostly. Not to say they aren't very appreciated though!</p>",
+        "id": 195241270,
+        "sender_full_name": "Cody Roux",
+        "timestamp": 1587760384
+    },
+    {
+        "content": "<p>Standardization is certainly a crucial lemma in proofs of <em>strong</em> normalization, and there's a fascinating paper relating the so-called \"Girard conditions\" to sheaves: <a href=\"https://repository.upenn.edu/cgi/viewcontent.cgi?article=1141&amp;context=ircs_reports\" title=\"https://repository.upenn.edu/cgi/viewcontent.cgi?article=1141&amp;context=ircs_reports\">https://repository.upenn.edu/cgi/viewcontent.cgi?article=1141&amp;context=ircs_reports</a>. I never was able to understand whether this was related to anything else, though.</p>",
+        "id": 195241438,
+        "sender_full_name": "Cody Roux",
+        "timestamp": 1587760463
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276030\">Cody Roux</span> <a href=\"#narrow/stream/229952-theory.3A-type.20theory/topic/Normalization.20by.20Evaluation/near/195223843\" title=\"#narrow/stream/229952-theory.3A-type.20theory/topic/Normalization.20by.20Evaluation/near/195223843\">said</a>:</p>\n<blockquote>\n<p>My goal is to see if this paper reconstructs into proofs of normalization for categories with sums, and a simple version of MLTT</p>\n</blockquote>\n<p>am I right in understanding that you are aiming for a Scott et al NbE argument for these cases^^ ? I take it the  Altenkirch-Scott paper doesn't do what you want? Just trying to get a sense of the target! </p>\n<p>(I have seen the Gallier paper but never got round to learning the prerequisites for it...)</p>",
+        "id": 195242297,
+        "sender_full_name": "Philip Saville",
+        "timestamp": 1587761078
+    },
+    {
+        "content": "<p>Oh, Jon's paper actually explains the gist of what's going on in the two approaches, and for the P-category one it's essentially what I said above, and the same as the Lawvere theory paper.</p>",
+        "id": 195261001,
+        "sender_full_name": "Dan Doel",
+        "timestamp": 1587777311
+    },
+    {
+        "content": "<p>The set category version requires you to pre-quotient your syntax, so the 'normalization' is trivial, while the PER-enriched setting lets you work with unquotiented sets, and observe more details of the actual procedure.</p>",
+        "id": 195261050,
+        "sender_full_name": "Dan Doel",
+        "timestamp": 1587777374
+    },
+    {
+        "content": "<p>End of section 2.</p>",
+        "id": 195261059,
+        "sender_full_name": "Dan Doel",
+        "timestamp": 1587777409
+    },
+    {
+        "content": "<p>Anyhow, I think this paper seems great for laying out a categorical/algebraic framework for thinking about syntactic issues that type theorists traditionally think about (which, I think, is the goal). However, if you want NbE to automatically fall out of general categorical principles without thinking about syntactic details, it's probably not that.</p>",
+        "id": 195261535,
+        "sender_full_name": "Dan Doel",
+        "timestamp": 1587778250
+    },
+    {
+        "content": "<p>That's <em>mostly</em> what I want, or at least I want the syntactic details to be well isolated. But I'll check these papers again and try to summarize the big ideas. As far as I know, there hasn't been a categorical reconstruction of the normalization proof for dependent type theory though, right?</p>",
+        "id": 195263840,
+        "sender_full_name": "Cody Roux",
+        "timestamp": 1587782365
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"277270\">Dan Doel</span> <a href=\"#narrow/stream/229952-theory.3A-type.20theory/topic/Normalization.20by.20Evaluation/near/195261001\" title=\"#narrow/stream/229952-theory.3A-type.20theory/topic/Normalization.20by.20Evaluation/near/195261001\">said</a>:</p>\n<blockquote>\n<p>Oh, Jon's paper actually explains the gist of what's going on in the two approaches, and for the P-category one it's essentially what I said above, and the same as the Lawvere theory paper.</p>\n</blockquote>\n<p>Yes, but it doesn't really explain why they prefer their approach, which is what I was trying to reconstruct.</p>",
+        "id": 195264061,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1587782723
+    },
+    {
+        "content": "<p>Yeah, not sure about that.</p>",
+        "id": 195264111,
+        "sender_full_name": "Dan Doel",
+        "timestamp": 1587782773
+    },
+    {
+        "content": "<p>Is there any paper on PER-topos or alike? It seems that to generalise Scott et al’s arguments to other more sophisticated type theories it is natural to look for topos enriched over PER if one wants to avoid the syntactic approach to NbE.</p>",
+        "id": 216435724,
+        "sender_full_name": "Liang-Ting Chen",
+        "timestamp": 1605166661
+    },
+    {
+        "content": "<p><span class=\"user-mention\" data-user-id=\"275971\">@Liang-Ting Chen</span> You should look at <a href=\"http://math.andrej.com/2000/09/20/the-realizability-approach-to-computable-analysis-and-topology/\">Andrej Bauer's thesis</a>. Modest sets are essentially the same as PERs, I believe; just a different vocabulary/emphasis.</p>",
+        "id": 216482513,
+        "sender_full_name": "Dan Doel",
+        "timestamp": 1605194659
+    },
+    {
+        "content": "<p>Also anything else about modest sets, I guess. I was working through <a href=\"https://www.lfcs.inf.ed.ac.uk/reports/92/ECS-LFCS-92-208/\">this</a> years ago, but never got to the modest sets part. But it might be good.</p>",
+        "id": 216482742,
+        "sender_full_name": "Dan Doel",
+        "timestamp": 1605194769
+    },
+    {
+        "content": "<p>Oh wait, maybe this is better for your other question in the topos theory thread. Is your question here about toposes developed with PER-enriched categories? I haven't seen that.</p>",
+        "id": 216483784,
+        "sender_full_name": "Dan Doel",
+        "timestamp": 1605195230
+    },
+    {
+        "content": "<p>Oh, that's two different questions but somehow relevant to me. I happen to work on a topos which is also enriched over PER. This reminds me the paper by Cubric et al. It seems possible to apply their arguments to dependent type theories in this setting. The syntactic approach via neutral/normal terms is popular, and the other approach does not seem to scale very well. Yet, as there is always some CT ninja who can show everything is an instance of Yoneda lemma, I am just curious if this is also a result of some more general theorem. <span aria-label=\"grinning face with smiling eyes\" class=\"emoji emoji-1f601\" role=\"img\" title=\"grinning face with smiling eyes\">:grinning_face_with_smiling_eyes:</span></p>",
+        "id": 216559663,
+        "sender_full_name": "Liang-Ting Chen",
+        "timestamp": 1605234902
+    },
+    {
+        "content": "<p>Ah, yeah. That's the only paper of that sort that I've seen. I've also heard of people studying \"E-categories\" which are enriched in setoids, basically. Not sure how thorougly developed that is, though, or how it'd translate.</p>",
+        "id": 216560684,
+        "sender_full_name": "Dan Doel",
+        "timestamp": 1605235713
+    },
+    {
+        "content": "<p>Alright, thanks. At least I know where we are.</p>",
+        "id": 216564252,
+        "sender_full_name": "Liang-Ting Chen",
+        "timestamp": 1605239622
+    },
+    {
+        "content": "<p>Obviously Thorsten Altenkirsh's PhD is also relevant. Are you interested in a Topos of PERs, or a PER enriched Topos?</p>",
+        "id": 218853674,
+        "sender_full_name": "Cody Roux",
+        "timestamp": 1607098339
+    },
+    {
+        "content": "<p>The latter. It might be used to integrate Cubric et al’s approach to more sophisticated models of type theory.</p>",
+        "id": 218935101,
+        "sender_full_name": "Liang-Ting Chen",
+        "timestamp": 1607174706
+    }
+]

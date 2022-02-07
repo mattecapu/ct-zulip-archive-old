@@ -1,0 +1,644 @@
+[
+    {
+        "content": "<p>Let's talk about visual programming! It is still popular in my industry (Extract-Transform-Load systems). This pipes.digital tool (<a href=\"https://www.pipes.digital/\" title=\"https://www.pipes.digital/\">https://www.pipes.digital/</a>) was just launched and is inspired by Yahoo Pipes, which pioneered the concept years ago. Their graphs are just string diagrams for cartesian categories, so it's really in the scope of ACT. Statebox has been advocating for visual programming too: <a href=\"https://blog.statebox.org/why-visual-programming-doesnt-suck-2c1ece2a414e?gi=8bc316e16e3c\" title=\"https://blog.statebox.org/why-visual-programming-doesnt-suck-2c1ece2a414e?gi=8bc316e16e3c\">https://blog.statebox.org/why-visual-programming-doesnt-suck-2c1ece2a414e?gi=8bc316e16e3c</a> <span class=\"user-mention\" data-user-id=\"277920\">@Jelle Herold</span> <span class=\"user-mention\" data-user-id=\"276438\">@Fabrizio Genovese</span></p>",
+        "id": 194792600,
+        "sender_full_name": "Antonin Delpeuch",
+        "timestamp": 1587471096
+    },
+    {
+        "content": "<p>I am currently working on implementing similar ideas in OpenRefine (<a href=\"https://github.com/OpenRefine/OpenRefine\" title=\"https://github.com/OpenRefine/OpenRefine\">https://github.com/OpenRefine/OpenRefine</a>), based on a categorical model I presented last year at ACT: <a href=\"https://arxiv.org/abs/1906.05937\" title=\"https://arxiv.org/abs/1906.05937\">https://arxiv.org/abs/1906.05937</a></p>",
+        "id": 194792896,
+        "sender_full_name": "Antonin Delpeuch",
+        "timestamp": 1587471272
+    },
+    {
+        "content": "<p>Very cool! We (the NIST crew) have started to use 'plumbing' as an analogy for explaining to folks the way we see ACT being useful in broader data wrangling and model-based system engineering contexts. </p>\n<p>For starters, if everything is working nicely, you can't see the pipes and don't ever really think about them. For old systems, the pipes could be really screwed up, leaking a bunch, letting in groundwater etc. (like most oldish cities in the US), but for the most part water comes out when you turn the faucet on... so who cares. For critical systems, it might be time for an upgrade. </p>\n<p>When you want to build or design something, you typically don't start designing new pipes. The pipes are already out there, you just might need someone more knowledgeable about plumbing to figure out which pipes to use where. I guess here the existing pipes are existing gizmos in CT and really wherever. Also, just because the two ends of a pipe type-check with a missing piece of your system, it doesn't mean you should just shove that pipe in there.</p>",
+        "id": 194809307,
+        "sender_full_name": "Blake Pollard",
+        "timestamp": 1587479204
+    },
+    {
+        "content": "<p>Maybe the part of this perspective that is relevant for visual programming is in regard to considering who the 'user' is. I guess we'd like to see tools with wide audiences where there is very little required knowledge of CT (maybe some programming etc.), but we also have been thinking about tools for the toolsmiths, and perhaps those folks know some more CT in order to figure out which new features might be useful in the tools and how to add them sanely and without breaking other stuff.</p>",
+        "id": 194809881,
+        "sender_full_name": "Blake Pollard",
+        "timestamp": 1587479436
+    },
+    {
+        "content": "<p>I remember your talk on dataflow diagrams in Oxford with all the fancy sheets.</p>",
+        "id": 194810412,
+        "sender_full_name": "Blake Pollard",
+        "timestamp": 1587479674
+    },
+    {
+        "content": "<p>I think there are two things that are essential in visual programming:<br>\n1 - It still needs a text interface. I think visual programming is great for visual debugging but experienced programmers will feel very much hindered in having to use drag&amp;drop features to draw diagrams<br>\n2 - It needs powerful abstractions. Visual programming usually does not work because plumbing becomes very quickly spaghetti, and at that point all the benefits of having a visual perspective are lost. This is one of the main reasons why we deal with brick diagrams more than string diagrams. In any case, the real deal is being able to box/compose stuff, so that the piping can be hidden.</p>",
+        "id": 194811162,
+        "sender_full_name": "Fabrizio Genovese",
+        "timestamp": 1587479944
+    },
+    {
+        "content": "<p>Is there some kind of repository of serialization formats for various flavors of CT gizmo, diagrams in particular? I'm thinking of the k-d trees stuff for brick diagrams and their relationship to string diagrams a la <span class=\"user-mention\" data-user-id=\"275901\">@Jules Hedges</span> and <span class=\"user-mention\" data-user-id=\"277920\">@Jelle Herold</span> . I gather Catlab.jl has various levels of exchange formats, maybe bottoming out in JSON <span class=\"user-mention\" data-user-id=\"275965\">@Evan Patterson</span> ?</p>",
+        "id": 194811263,
+        "sender_full_name": "Blake Pollard",
+        "timestamp": 1587479987
+    },
+    {
+        "content": "<p>Point 2 is actually why the only kind of visual programming that does not suck is act based programming. Abstraction capabilities will literally explode in your face if they do not live in a well defined formal environment <span aria-label=\"slight smile\" class=\"emoji emoji-1f642\" role=\"img\" title=\"slight smile\">:slight_smile:</span></p>",
+        "id": 194811268,
+        "sender_full_name": "Fabrizio Genovese",
+        "timestamp": 1587479987
+    },
+    {
+        "content": "<p>Anyway we will have some awesome news about our programming language by the end of the month, stay tuned :D</p>",
+        "id": 194811471,
+        "sender_full_name": "Fabrizio Genovese",
+        "timestamp": 1587480052
+    },
+    {
+        "content": "<p>There is no repository. The current state of the art is just to ask people, I think</p>",
+        "id": 194811808,
+        "sender_full_name": "Jules Hedges",
+        "timestamp": 1587480178
+    },
+    {
+        "content": "<p>We are actively maintaining one, Typedefs.</p>",
+        "id": 194811938,
+        "sender_full_name": "Fabrizio Genovese",
+        "timestamp": 1587480236
+    },
+    {
+        "content": "<p><a href=\"http://typedefs.com\" title=\"http://typedefs.com\">typedefs.com</a></p>",
+        "id": 194811951,
+        "sender_full_name": "Fabrizio Genovese",
+        "timestamp": 1587480241
+    },
+    {
+        "content": "<p>The idea of typedefs is that it's a universal format for types and terms. We support all the types recursively made using variables, products, coproducts and <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>μ</mi></mrow><annotation encoding=\"application/x-tex\">\\mu</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.625em;vertical-align:-0.19444em;\"></span><span class=\"mord mathdefault\">μ</span></span></span></span></p>",
+        "id": 194812149,
+        "sender_full_name": "Fabrizio Genovese",
+        "timestamp": 1587480303
+    },
+    {
+        "content": "<p>Then for all these types you automagically get a serialization/deserialization format, as well as other exchange formats (we implemented JSon recently)</p>",
+        "id": 194812239,
+        "sender_full_name": "Fabrizio Genovese",
+        "timestamp": 1587480344
+    },
+    {
+        "content": "<p>We also have a specialization backend. This means that in typedefs you define natural numbers as being <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>μ</mi><mo stretchy=\"false\">(</mo><mn>1</mn><mo>+</mo><mi>X</mi><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">\\mu(1 + X)</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord mathdefault\">μ</span><span class=\"mopen\">(</span><span class=\"mord\">1</span><span class=\"mspace\" style=\"margin-right:0.2222222222222222em;\"></span><span class=\"mbin\">+</span><span class=\"mspace\" style=\"margin-right:0.2222222222222222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord mathdefault\" style=\"margin-right:0.07847em;\">X</span><span class=\"mclose\">)</span></span></span></span> but actually if you gave this the name list then it gets automatically interpreted as <code>List</code> in languages that have this type, such as Haskell</p>",
+        "id": 194812468,
+        "sender_full_name": "Fabrizio Genovese",
+        "timestamp": 1587480429
+    },
+    {
+        "content": "<p>We also support serialization for types using type variables, such as <code>List a</code>, but in this case we don't support terms since the very concept of term doesn't make much sense until you fix the variables</p>",
+        "id": 194812566,
+        "sender_full_name": "Fabrizio Genovese",
+        "timestamp": 1587480473
+    },
+    {
+        "content": "<p>So for instance we are using JSON to communicate with our typed core. But actually the JSON we feed is jsut the JSON version of typedefs, which gets internally converted to typedefs first and to Idris terms then, automatically</p>",
+        "id": 194812763,
+        "sender_full_name": "Fabrizio Genovese",
+        "timestamp": 1587480546
+    },
+    {
+        "content": "<p><span class=\"user-mention\" data-user-id=\"276047\">@Alex Gryzlov</span>, <span class=\"user-mention\" data-user-id=\"276055\">@marcosh</span>  and <span class=\"user-mention\" data-user-id=\"275978\">@Sjoerd Visscher</span>  will be able to tell you way better than me how this works from a programmer perspective <span aria-label=\"slight smile\" class=\"emoji emoji-1f642\" role=\"img\" title=\"slight smile\">:slight_smile:</span></p>",
+        "id": 194812981,
+        "sender_full_name": "Fabrizio Genovese",
+        "timestamp": 1587480610
+    },
+    {
+        "content": "<p>Where do brick diagrams sit? As typedef terms?</p>",
+        "id": 194813195,
+        "sender_full_name": "Blake Pollard",
+        "timestamp": 1587480720
+    },
+    {
+        "content": "<p>The idea is that in typdefs you can express trees of terms, so if you give to every brick of your diagram a Tdef and a term, then you can pass the whole tree as a Tdef term</p>",
+        "id": 194813390,
+        "sender_full_name": "Fabrizio Genovese",
+        "timestamp": 1587480800
+    },
+    {
+        "content": "<p>Where the nodes tell you if the composition is horizontal or vertical</p>",
+        "id": 194813414,
+        "sender_full_name": "Fabrizio Genovese",
+        "timestamp": 1587480810
+    },
+    {
+        "content": "<p>For instance, in Idris you can do:</p>\n<div class=\"codehilite\"><pre><span></span>data Tree o m = Tensor (Tree o m) (Tree o m)\n              | Sequence (Tree o m) (Tree o m)\n              | Sym o o\n              | Id o\n              | Mor m\n</pre></div>",
+        "id": 194813609,
+        "sender_full_name": "Fabrizio Genovese",
+        "timestamp": 1587480885
+    },
+    {
+        "content": "<p>Now this is easily convertible to a Tdef and vice-versa. Clearly this is the inductive definition for a string diagram, where <code>m</code> represents a morphism and <code>o</code> represents an object.</p>",
+        "id": 194813725,
+        "sender_full_name": "Fabrizio Genovese",
+        "timestamp": 1587480929
+    },
+    {
+        "content": "<p>This is representative of one family of representations of diagrams. Another family of representations is the graphical ones, eg Quantomatic. Another one again is the ones based on foliations, like <a href=\"http://homotopy.io\" title=\"http://homotopy.io\">homotopy.io</a></p>",
+        "id": 194813759,
+        "sender_full_name": "Jules Hedges",
+        "timestamp": 1587480947
+    },
+    {
+        "content": "<p>What is a brick diagram?</p>",
+        "id": 194813785,
+        "sender_full_name": "Reid Barton",
+        "timestamp": 1587480957
+    },
+    {
+        "content": "<p>So, for instance, using Tdefs we are able to exchange these things back and forth with our graphical editor, and evaluating the brick diagrams in a given semantic category</p>",
+        "id": 194813866,
+        "sender_full_name": "Fabrizio Genovese",
+        "timestamp": 1587480980
+    },
+    {
+        "content": "<p>Intuitively, a string diagrams with no wires</p>",
+        "id": 194813890,
+        "sender_full_name": "Fabrizio Genovese",
+        "timestamp": 1587480991
+    },
+    {
+        "content": "<p>OK, I think I see.</p>",
+        "id": 194813918,
+        "sender_full_name": "Reid Barton",
+        "timestamp": 1587481004
+    },
+    {
+        "content": "<p>Brick diagrams: <a href=\"https://arxiv.org/abs/1908.10660\" title=\"https://arxiv.org/abs/1908.10660\">https://arxiv.org/abs/1908.10660</a></p>",
+        "id": 194813926,
+        "sender_full_name": "Jules Hedges",
+        "timestamp": 1587481006
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"275901\">Jules Hedges</span> <a href=\"#narrow/stream/229370-practice.3A-industry/topic/visual.20programming/near/194813759\" title=\"#narrow/stream/229370-practice.3A-industry/topic/visual.20programming/near/194813759\">said</a>:</p>\n<blockquote>\n<p>This is representative of one family of representations of diagrams. Another family of representations is the graphical ones, eg Quantomatic. Another one again is the ones based on foliations, like <a href=\"http://homotopy.io\" title=\"http://homotopy.io\">homotopy.io</a></p>\n</blockquote>\n<p>I am pretty sure you can represent <a href=\"http://homotopy.io\" title=\"http://homotopy.io\">homotopy.io</a> diagrams as trees as well</p>",
+        "id": 194814007,
+        "sender_full_name": "Fabrizio Genovese",
+        "timestamp": 1587481036
+    },
+    {
+        "content": "<p>you just have more decorations on the nodes, but in the end you can still read surface diagram as a composition of morphisms</p>",
+        "id": 194814057,
+        "sender_full_name": "Fabrizio Genovese",
+        "timestamp": 1587481062
+    },
+    {
+        "content": "<p>This obviously is wrt to the conceptual information encoded in the diagram. If you also want to store positioning etc then you'll need more complicated stuff</p>",
+        "id": 194814218,
+        "sender_full_name": "Fabrizio Genovese",
+        "timestamp": 1587481104
+    },
+    {
+        "content": "<p>But in general I don't see why you couldn't store quantomatic and <a href=\"http://homotopy.io\" title=\"http://homotopy.io\">homotopy.io</a> diagrams using an inductive type. In the worst case, you just store them as a string, trivializing the problem</p>",
+        "id": 194814315,
+        "sender_full_name": "Fabrizio Genovese",
+        "timestamp": 1587481141
+    },
+    {
+        "content": "<p>Making graphs into an inductive datatype is a bit of a notorious problem, but I think it's been worked out now</p>",
+        "id": 194814452,
+        "sender_full_name": "Jules Hedges",
+        "timestamp": 1587481180
+    },
+    {
+        "content": "<p>Well, yes and no. I am not sugggesting to convert a given graph to an inductive datatype. I am suggesting to make the datatype along with whatever you do</p>",
+        "id": 194814580,
+        "sender_full_name": "Fabrizio Genovese",
+        "timestamp": 1587481216
+    },
+    {
+        "content": "<p>For instance in <a href=\"http://homotopy.io\" title=\"http://homotopy.io\">homotopy.io</a> you literally \"make\" diagrams by composing stuff. every time you compose, you can \"update\" your term in the inductive type</p>",
+        "id": 194814655,
+        "sender_full_name": "Fabrizio Genovese",
+        "timestamp": 1587481248
+    },
+    {
+        "content": "<p>This is also how our editor works btw. As you change the diagram, the tree view is updated in real time to reflect this</p>",
+        "id": 194814735,
+        "sender_full_name": "Fabrizio Genovese",
+        "timestamp": 1587481273
+    },
+    {
+        "content": "<p>(and if <a href=\"http://homotopy.io\" title=\"http://homotopy.io\">homotopy.io</a> and quantomatic are implemented modularly and wisely, i don't think it would be a huge problem to actually implement this functionality there)</p>",
+        "id": 194814830,
+        "sender_full_name": "Fabrizio Genovese",
+        "timestamp": 1587481307
+    },
+    {
+        "content": "<p>Anyway we'd be superhappy if you would like to try Tdefs. All the work we do on it is public. Feel free to make pull requests/whatever :D</p>",
+        "id": 194815132,
+        "sender_full_name": "Fabrizio Genovese",
+        "timestamp": 1587481408
+    },
+    {
+        "content": "<p>Is the main thing needed new backends? (Is that the right terminology?)</p>",
+        "id": 194815498,
+        "sender_full_name": "Jules Hedges",
+        "timestamp": 1587481547
+    },
+    {
+        "content": "<p>Teaching it about a bunch of different formats?</p>",
+        "id": 194815561,
+        "sender_full_name": "Jules Hedges",
+        "timestamp": 1587481565
+    },
+    {
+        "content": "<p>Well, if you implement a TDef backend in a new language, then you can exchange terms and types between that language and the ones already supported</p>",
+        "id": 194815693,
+        "sender_full_name": "Fabrizio Genovese",
+        "timestamp": 1587481621
+    },
+    {
+        "content": "<p>so yes, I'd say that's the most important thing</p>",
+        "id": 194815709,
+        "sender_full_name": "Fabrizio Genovese",
+        "timestamp": 1587481627
+    },
+    {
+        "content": "<p>So a 'backend' for TDefs is the same as a semantics for the string diagrams as rendered by your editor?</p>",
+        "id": 194816043,
+        "sender_full_name": "Blake Pollard",
+        "timestamp": 1587481753
+    },
+    {
+        "content": "<p>Hm, not really. A backend for TDefs is a programming language in which TDefs is implemented</p>",
+        "id": 194816198,
+        "sender_full_name": "Fabrizio Genovese",
+        "timestamp": 1587481810
+    },
+    {
+        "content": "<p>the idea is that since you can represent a string diagram as a typedef, you can literally define a <code>StringDiagram</code> TDef and then exchange terms of type <code>StringDiagram</code> between all such languages.</p>",
+        "id": 194816281,
+        "sender_full_name": "Fabrizio Genovese",
+        "timestamp": 1587481853
+    },
+    {
+        "content": "<p>Gotcha. So Idris is kind of the self-referential one, but you can also currently go from TDefs to Haskell?</p>",
+        "id": 194816297,
+        "sender_full_name": "Blake Pollard",
+        "timestamp": 1587481859
+    },
+    {
+        "content": "<p>There is a Hakell backend, yes. So, in principle, you should be able to exchange string diagrams between Idris and Haskell, or Haskell and Haskell, or Idris and Idris</p>",
+        "id": 194816378,
+        "sender_full_name": "Fabrizio Genovese",
+        "timestamp": 1587481900
+    },
+    {
+        "content": "<p>In whatever serialization format is implemented, e.g. JSON, binary, S-expression</p>",
+        "id": 194816411,
+        "sender_full_name": "Fabrizio Genovese",
+        "timestamp": 1587481915
+    },
+    {
+        "content": "<p>Example: I have some Haskell visual thing that manipulates string diagrams. But I am all about formal verification so I want to actually evaluate them in Idris, even if I draw them in Haskell. Then I can use TDefs, create an appropriate <code>StringDiagram</code> TDef, and exchange the string diagrams I draw in Haskell as <code>StringDiagram</code> terms. This is better than exchanging this information \"raw\" since it comes with guarantees. That is, if the term is bad or the typedefinition you gave me is bad, TDef will throw errors</p>",
+        "id": 194816777,
+        "sender_full_name": "Fabrizio Genovese",
+        "timestamp": 1587482043
+    },
+    {
+        "content": "<p>I can also define an <code>EvaluatedDiagram</code> TDef so that Idris can give the result back to Haskell. Then again, the actual communication between the two can be done in any of the serialization formats TDefs supports. So you don't have to come up with a serialization format and a parser yourself, as long as what you do can be expressed as a type of an inductive term</p>",
+        "id": 194817298,
+        "sender_full_name": "Fabrizio Genovese",
+        "timestamp": 1587482163
+    },
+    {
+        "content": "<p>Ok, gotcha. So that would be an example of using TDef to make your life easier in 'verifying' some Haskell code, at least up to the sanity of the StringDiagram TDef you created.</p>",
+        "id": 194817544,
+        "sender_full_name": "Blake Pollard",
+        "timestamp": 1587482277
+    },
+    {
+        "content": "<p>Yes. So you can define that <code>Tree o m</code> as above, for instance, both in Haskell and Idris. And then exchange string diagrams as terms of that <code>Tree o m</code> thing. Clearly Idris won't be able to say if the diagram you made in Haskell is what it should be, but you can be sure that \"non well-formed diagrams\" basically won't be exchangeable</p>",
+        "id": 194817855,
+        "sender_full_name": "Fabrizio Genovese",
+        "timestamp": 1587482382
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276438\">Fabrizio Genovese</span> <a href=\"#narrow/stream/229370-practice.3A-industry/topic/visual.20programming/near/194813609\" title=\"#narrow/stream/229370-practice.3A-industry/topic/visual.20programming/near/194813609\">said</a>:</p>\n<blockquote>\n<p>For instance, in Idris you can do:</p>\n<div class=\"codehilite\"><pre><span></span>data Tree o m = Tensor (Tree o m) (Tree o m)\n              | Sequence (Tree o m) (Tree o m)\n              | Sym o o\n              | Id o\n              | Mor m\n</pre></div>\n\n\n</blockquote>\n<p>So you're saying this is an inductive datatype for a string diagram in Idris, or very similarly a Tdef.</p>",
+        "id": 194817887,
+        "sender_full_name": "Blake Pollard",
+        "timestamp": 1587482394
+    },
+    {
+        "content": "<p>This is the thing the TDefs will convert to in IdrisLand</p>",
+        "id": 194817995,
+        "sender_full_name": "Fabrizio Genovese",
+        "timestamp": 1587482421
+    },
+    {
+        "content": "<p>Actually, we are going live and stream about this in 40 mins</p>",
+        "id": 194818042,
+        "sender_full_name": "Fabrizio Genovese",
+        "timestamp": 1587482439
+    },
+    {
+        "content": "<p>We have exactly to implement the Tdef for that thing today</p>",
+        "id": 194818064,
+        "sender_full_name": "Fabrizio Genovese",
+        "timestamp": 1587482447
+    },
+    {
+        "content": "<p>So you can just join if you want to  :D</p>",
+        "id": 194818083,
+        "sender_full_name": "Fabrizio Genovese",
+        "timestamp": 1587482459
+    },
+    {
+        "content": "<p>And the brick diagram stuff is a way to specify trees that almost give you string diagrams up to some annoyingness about identities (related to the recursion stopping with one thing per brick?) and pinwheels.</p>",
+        "id": 194818192,
+        "sender_full_name": "Blake Pollard",
+        "timestamp": 1587482517
+    },
+    {
+        "content": "<p>So the idea is that this is the internal Idris def we are using to represent a string diagram. It somehow matches the one we use in our editor. Today we will put Tdefs on top of it, so that inbound TDef terms in Json will convert to the corresponding TDef first and to that thing then</p>",
+        "id": 194818243,
+        "sender_full_name": "Fabrizio Genovese",
+        "timestamp": 1587482523
+    },
+    {
+        "content": "<p>Haha ok, sounds good. I'll do that.</p>",
+        "id": 194818255,
+        "sender_full_name": "Blake Pollard",
+        "timestamp": 1587482527
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"275953\">Blake Pollard</span> <a href=\"#narrow/stream/229370-practice.3A-industry/topic/visual.20programming/near/194818255\" title=\"#narrow/stream/229370-practice.3A-industry/topic/visual.20programming/near/194818255\">said</a>:</p>\n<blockquote>\n<p>And the brick diagram stuff is a way to specify trees that almost give you string diagrams up to some annoyingness about identities (related to the recursion stopping with one thing per brick?) and pinwheels.</p>\n</blockquote>\n<p>I guess so, yea</p>",
+        "id": 194818331,
+        "sender_full_name": "Fabrizio Genovese",
+        "timestamp": 1587482566
+    },
+    {
+        "content": "<p>The thing is that string diagrams are invariant wrt topological deformation, but when you actually write them down you wanna keep these things distinct</p>",
+        "id": 194818392,
+        "sender_full_name": "Fabrizio Genovese",
+        "timestamp": 1587482599
+    },
+    {
+        "content": "<p>Like, I am looking at _a_ string diagram, that is, a representative of its class. But different representatives are displayed differently, obviously</p>",
+        "id": 194818458,
+        "sender_full_name": "Fabrizio Genovese",
+        "timestamp": 1587482630
+    },
+    {
+        "content": "<p>So the tree format, which is not invariant wrt topological deformation, is an ok way to ship these over to idris. Then in idris we have a formally verified implementation of free SMCs for which these structures are invariant.</p>",
+        "id": 194818585,
+        "sender_full_name": "Fabrizio Genovese",
+        "timestamp": 1587482668
+    },
+    {
+        "content": "<p>So, when interpreted as a morphism in the freeSMC, it will be actually \"squashed\" to be equal to any other representative. But for very obvious reasons we want this step to be done _inside_ Idris, which is formally verified, and not outside it :D</p>",
+        "id": 194818679,
+        "sender_full_name": "Fabrizio Genovese",
+        "timestamp": 1587482711
+    },
+    {
+        "content": "<p>Gotcha. Is it easy to see what happens to the trees when you do certain topological moves on the string diagrams?</p>",
+        "id": 194819157,
+        "sender_full_name": "Blake Pollard",
+        "timestamp": 1587482884
+    },
+    {
+        "content": "<p>Hm, that I do not know. What I can guarantee you is that two trees expressing equivalent string diagrams will become the same morphism in our SMC implementation <span aria-label=\"slight smile\" class=\"emoji emoji-1f642\" role=\"img\" title=\"slight smile\">:slight_smile:</span></p>",
+        "id": 194819262,
+        "sender_full_name": "Fabrizio Genovese",
+        "timestamp": 1587482929
+    },
+    {
+        "content": "<p>They're called \"commuting conversions\" if you see them as proof trees in a fragment of linear logic</p>",
+        "id": 194819278,
+        "sender_full_name": "Jules Hedges",
+        "timestamp": 1587482939
+    },
+    {
+        "content": "<p>They're the tree rotations that come from cut elimination</p>",
+        "id": 194819319,
+        "sender_full_name": "Jules Hedges",
+        "timestamp": 1587482963
+    },
+    {
+        "content": "<p>Gotcha. Very cool. Still a little fuzzy in my mind, but I think I'm getting it. So you guys taught Idris how to squash these things coherently.</p>",
+        "id": 194819467,
+        "sender_full_name": "Blake Pollard",
+        "timestamp": 1587483014
+    },
+    {
+        "content": "<p>Yes, and that has been literally a nightmare</p>",
+        "id": 194819559,
+        "sender_full_name": "Fabrizio Genovese",
+        "timestamp": 1587483059
+    },
+    {
+        "content": "<p>(I think you can also find the same things in computational geometry, as rebalancing operations on kd trees)</p>",
+        "id": 194819589,
+        "sender_full_name": "Jules Hedges",
+        "timestamp": 1587483075
+    },
+    {
+        "content": "<p>Basically we are using cartographer as a data structure, which represents string diagrams up to isomorphisms, and then we used some (very reasonable and innocent) postulates about their structure to obtain a  strict equality</p>",
+        "id": 194819660,
+        "sender_full_name": "Fabrizio Genovese",
+        "timestamp": 1587483112
+    },
+    {
+        "content": "<p>Yea, I can imagine how the computational geometry people are holding all kinds of secrets.</p>",
+        "id": 194819780,
+        "sender_full_name": "Blake Pollard",
+        "timestamp": 1587483142
+    },
+    {
+        "content": "<p>This topic is (higher) category theory + algebraic topology + combinatorics + computational geometry + .......</p>",
+        "id": 194819922,
+        "sender_full_name": "Jules Hedges",
+        "timestamp": 1587483203
+    },
+    {
+        "content": "<p>One thing I'd really like to do after moving the Strathclyde is taking Malin Altmüller's existing Agda code for the operad of rotation systems, and hire a UI programmer to plug a nice javascript front end into it. I have high hopes for that representation...</p>",
+        "id": 194820426,
+        "sender_full_name": "Jules Hedges",
+        "timestamp": 1587483383
+    },
+    {
+        "content": "<p>Thinking about compiling from that representation to kd trees is on my todo list</p>",
+        "id": 194820703,
+        "sender_full_name": "Jules Hedges",
+        "timestamp": 1587483503
+    },
+    {
+        "content": "<p>Never heard of the 'operad of roatation systems.'</p>",
+        "id": 194820882,
+        "sender_full_name": "Blake Pollard",
+        "timestamp": 1587483600
+    },
+    {
+        "content": "<p>Rotation systems are an existing combinatorial representation of 2-dimensional polygonal cell complexes. Where for each vertex you associate a circular list of the vertices that it is joined to by an edge, going clockwise. Malin (she's Ross Duncan's PhD student) worked out a version with open boundaries, for representing string diagrams, and apparently proved in Agda that it defines an operad (which sounds extremely hard to me)</p>",
+        "id": 194821454,
+        "sender_full_name": "Jules Hedges",
+        "timestamp": 1587483825
+    },
+    {
+        "content": "<p>Course \"2 dimensional polygonal cell complex\" is the same thing as a <em>planar</em> graph</p>",
+        "id": 194821591,
+        "sender_full_name": "Jules Hedges",
+        "timestamp": 1587483871
+    },
+    {
+        "content": "<p>Part of the reason I like this representation is that I nearly reinvented it, or rather I was trying to invent its graph dual, where you list the faces and then give a circular list of the faces that share an edge with it</p>",
+        "id": 194821855,
+        "sender_full_name": "Jules Hedges",
+        "timestamp": 1587483981
+    },
+    {
+        "content": "<p>It's <em>arguably</em> the most natural representation for diagrams for non-symmetric monoidal categories with the additional property that scalars commute with everything. (If you don't have that technical condition then things get <em>very</em> nasty)</p>",
+        "id": 194822114,
+        "sender_full_name": "Jules Hedges",
+        "timestamp": 1587484119
+    },
+    {
+        "content": "<p>What are the scalars? I gather they're the 0-d things in cell complex world, but I'm imagining swinging around a node with a bunch of wires sticking out.</p>",
+        "id": 194822478,
+        "sender_full_name": "Blake Pollard",
+        "timestamp": 1587484308
+    },
+    {
+        "content": "<p>By scalar I mean a sub-diagram with empty boundary, so it's topologically disconnected</p>",
+        "id": 194822695,
+        "sender_full_name": "Jules Hedges",
+        "timestamp": 1587484399
+    },
+    {
+        "content": "<p>You want the property that they can all be pulled to the outside, otherwise you get a multiset of them hanging around inside each face of the diagram and can be nested arbitrarily deeply, which is a pretty disgusting situation</p>",
+        "id": 194822963,
+        "sender_full_name": "Jules Hedges",
+        "timestamp": 1587484503
+    },
+    {
+        "content": "<p>Gotcha. So is composition in this operard sticking entire 2d cell complexes in others so that the wires match, kind of wiring diagram style?</p>",
+        "id": 194823154,
+        "sender_full_name": "Blake Pollard",
+        "timestamp": 1587484567
+    },
+    {
+        "content": "<p>Yeah, think so</p>",
+        "id": 194823179,
+        "sender_full_name": "Jules Hedges",
+        "timestamp": 1587484579
+    },
+    {
+        "content": "<p>She had the extremely nice idea of imagining a \"node at infinity\" in every string diagram, with both the left boundary and right boundary connecting to it. Apparently that's an old trick in combinatorics</p>",
+        "id": 194823343,
+        "sender_full_name": "Jules Hedges",
+        "timestamp": 1587484646
+    },
+    {
+        "content": "<p>Haha cool. Like some projective business.</p>",
+        "id": 194823519,
+        "sender_full_name": "Blake Pollard",
+        "timestamp": 1587484717
+    },
+    {
+        "content": "<p>That also reminds me a bit of stuff Daniel Cicala was doing in ZX-world by just adding a 'boundary type.'</p>",
+        "id": 194823690,
+        "sender_full_name": "Blake Pollard",
+        "timestamp": 1587484788
+    },
+    {
+        "content": "<p><a href=\"http://twitch.tv/statebox\" title=\"http://twitch.tv/statebox\">twitch.tv/statebox</a></p>",
+        "id": 194823822,
+        "sender_full_name": "Fabrizio Genovese",
+        "timestamp": 1587484820
+    },
+    {
+        "content": "<p>So things are coming and going from/to infinity until you compose and then those things are in your scope.</p>",
+        "id": 194823868,
+        "sender_full_name": "Blake Pollard",
+        "timestamp": 1587484840
+    },
+    {
+        "content": "<p>Nice. Thanks <span class=\"user-mention\" data-user-id=\"276438\">@Fabrizio Genovese</span> !</p>",
+        "id": 194823911,
+        "sender_full_name": "Blake Pollard",
+        "timestamp": 1587484861
+    },
+    {
+        "content": "<p>We'll start soon</p>",
+        "id": 194823988,
+        "sender_full_name": "Fabrizio Genovese",
+        "timestamp": 1587484887
+    },
+    {
+        "content": "<p>Is there a writeup of Malin's work available?</p>",
+        "id": 194824029,
+        "sender_full_name": "Reid Barton",
+        "timestamp": 1587484903
+    },
+    {
+        "content": "<p>Also, is there anything written about the Idris SMC implementation?</p>",
+        "id": 194824145,
+        "sender_full_name": "Reid Barton",
+        "timestamp": 1587484932
+    },
+    {
+        "content": "<p>Last time I asked no. There should be a paper some time</p>",
+        "id": 194824158,
+        "sender_full_name": "Jules Hedges",
+        "timestamp": 1587484937
+    },
+    {
+        "content": "<p>web session read only: <a href=\"http://tmate.io/t/ro-qf7R4SM6MCpGCzZvCUBMv5Cck\" title=\"http://tmate.io/t/ro-qf7R4SM6MCpGCzZvCUBMv5Cck\">tmate.io/t/ro-qf7R4SM6MCpGCzZvCUBMv5Cck</a><br>\nssh session read only: ssh <a href=\"mailto:ro-qf7R4SM6MCpGCzZvCUBMv5Cck@lon1.tmate.io\" title=\"mailto:ro-qf7R4SM6MCpGCzZvCUBMv5Cck@lon1.tmate.io\">ro-qf7R4SM6MCpGCzZvCUBMv5Cck@lon1.tmate.io</a></p>",
+        "id": 194824251,
+        "sender_full_name": "Fabrizio Genovese",
+        "timestamp": 1587484978
+    },
+    {
+        "content": "<p>If you wanna look at the code <span aria-label=\"slight smile\" class=\"emoji emoji-1f642\" role=\"img\" title=\"slight smile\">:slight_smile:</span></p>",
+        "id": 194824262,
+        "sender_full_name": "Fabrizio Genovese",
+        "timestamp": 1587484984
+    },
+    {
+        "content": "<p>We are on <span aria-label=\"slight smile\" class=\"emoji emoji-1f642\" role=\"img\" title=\"slight smile\">:slight_smile:</span></p>",
+        "id": 194824331,
+        "sender_full_name": "Fabrizio Genovese",
+        "timestamp": 1587485013
+    },
+    {
+        "content": "<p>She talked about it at SYCO.... 5? There should be a video in existence, but sadly it's hiding somewhere on the Uni.Birmingham's heavily over engineered video platform</p>",
+        "id": 194824335,
+        "sender_full_name": "Jules Hedges",
+        "timestamp": 1587485014
+    },
+    {
+        "content": "<p>Ah yes <span aria-label=\"video camera\" class=\"emoji emoji-1f4f9\" role=\"img\" title=\"video camera\">:video_camera:</span> <span aria-label=\"locked\" class=\"emoji emoji-1f512\" role=\"img\" title=\"locked\">:locked:</span></p>",
+        "id": 194824544,
+        "sender_full_name": "Reid Barton",
+        "timestamp": 1587485084
+    },
+    {
+        "content": "<p><a href=\"https://bham.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=c8b3d06e-ad8e-4778-b284-aabe01002bf1\" title=\"https://bham.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=c8b3d06e-ad8e-4778-b284-aabe01002bf1\">https://bham.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=c8b3d06e-ad8e-4778-b284-aabe01002bf1</a></p>",
+        "id": 194824738,
+        "sender_full_name": "Jules Hedges",
+        "timestamp": 1587485163
+    },
+    {
+        "content": "<p>Ah, thanks!</p>",
+        "id": 194825299,
+        "sender_full_name": "Reid Barton",
+        "timestamp": 1587485402
+    },
+    {
+        "content": "<p>I'm leaving this classic here for some important things a visual language must overcome (i.e., the problems with visual languages) to be truly useful <br>\n<a href=\"http://www.cs.cmu.edu/~bam/papers/vltax2.pdf\">http://www.cs.cmu.edu/~bam/papers/vltax2.pdf</a></p>",
+        "id": 199510417,
+        "sender_full_name": "Giorgos Bakirtzis",
+        "timestamp": 1591111969
+    },
+    {
+        "content": "<p><a href=\"https://enso.org/\">https://enso.org/</a> has <a href=\"https://enso.org/docs/developer/enso/types/\">relatively clean formalism</a> under the hood. Even if one does not use the language they developed, their open source visual IDE framework may be interesting.</p>",
+        "id": 241743263,
+        "sender_full_name": "keorn",
+        "timestamp": 1623054179
+    }
+]

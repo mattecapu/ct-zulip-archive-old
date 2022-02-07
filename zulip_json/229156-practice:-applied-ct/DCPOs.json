@@ -1,0 +1,2438 @@
+[
+    {
+        "content": "<p>But go on, you seem to be explaining this stuff.</p>",
+        "id": 196928375,
+        "sender_full_name": "John Baez",
+        "timestamp": 1588960372
+    },
+    {
+        "content": "<p>now, if you have a very simple language—say terms are either numerals or else a term plus another term—then giving semantics is very simple: say the semantics of a term is a natural number; for literals it's the number corresponding to the numeral; for t + u, it's the sum of the semantics for t and the semantics for u</p>",
+        "id": 196928601,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1588960471
+    },
+    {
+        "content": "<p>so you can read \"(3 + 4) + 5\" as having a denotation of 12</p>",
+        "id": 196928647,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1588960494
+    },
+    {
+        "content": "<p>you can do something similar for the simply-typed lambda calculus into any cartesian closed category; you may have seen or heard of this</p>",
+        "id": 196928715,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1588960527
+    },
+    {
+        "content": "<p>You're talking about the most basic obvious way to give that lambda-calculus a semantics in CCC's, right?  Then I know it.</p>",
+        "id": 196928854,
+        "sender_full_name": "John Baez",
+        "timestamp": 1588960585
+    },
+    {
+        "content": "<p>yep!</p>",
+        "id": 196928866,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1588960590
+    },
+    {
+        "content": "<p>So far no dcpos...</p>",
+        "id": 196928875,
+        "sender_full_name": "John Baez",
+        "timestamp": 1588960595
+    },
+    {
+        "content": "<p>about to get there :)</p>",
+        "id": 196928883,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1588960599
+    },
+    {
+        "content": "<p>so now say we, as mentioned, allow arbitrary recursion</p>",
+        "id": 196928911,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1588960613
+    },
+    {
+        "content": "<p>(Just making sure they hadn't slipped by already.  Go ahead.)</p>",
+        "id": 196928941,
+        "sender_full_name": "John Baez",
+        "timestamp": 1588960627
+    },
+    {
+        "content": "<p>keep it simple: we take the STLC and add a <code>rec</code> operator which you use like <code>rec x.e</code>, with reduction rule <code>rec x.e</code> ↦ <code>e[rec x.e/x]</code></p>",
+        "id": 196929087,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1588960683
+    },
+    {
+        "content": "<p>so a definition like <code>f(z) = ...</code> which uses <code>f</code> can be implemented as <code>rec f. λz. ...</code></p>",
+        "id": 196929305,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1588960798
+    },
+    {
+        "content": "<p>the typing rule is</p>\n<p><span class=\"katex-display\"><span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mfrac><mrow><mi mathvariant=\"normal\">Γ</mi><mo separator=\"true\">,</mo><mi>x</mi><mo>:</mo><mi>τ</mi><mo>⊢</mo><mi>e</mi><mo>:</mo><mi>τ</mi></mrow><mrow><mi mathvariant=\"normal\">Γ</mi><mo>⊢</mo><mi mathvariant=\"normal\">rec</mi><mo>⁡</mo><mi>x</mi><mi mathvariant=\"normal\">.</mi><mi>e</mi><mo>:</mo><mi>τ</mi></mrow></mfrac></mrow><annotation encoding=\"application/x-tex\">\\frac{\\Gamma, x : \\tau \\vdash e : \\tau}{\\Gamma \\vdash \\operatorname{rec} x.e : \\tau}</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:2.0574399999999997em;vertical-align:-0.686em;\"></span><span class=\"mord\"><span class=\"mopen nulldelimiter\"></span><span class=\"mfrac\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:1.3714399999999998em;\"><span style=\"top:-2.314em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"mord\"><span class=\"mord\">Γ</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">⊢</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mop\"><span class=\"mord mathrm\">r</span><span class=\"mord mathrm\">e</span><span class=\"mord mathrm\">c</span></span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mord mathdefault\">x</span><span class=\"mord\">.</span><span class=\"mord mathdefault\">e</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">:</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mord mathdefault\" style=\"margin-right:0.1132em;\">τ</span></span></span><span style=\"top:-3.23em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"frac-line\" style=\"border-bottom-width:0.04em;\"></span></span><span style=\"top:-3.677em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"mord\"><span class=\"mord\">Γ</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mord mathdefault\">x</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">:</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mord mathdefault\" style=\"margin-right:0.1132em;\">τ</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">⊢</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mord mathdefault\">e</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">:</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mord mathdefault\" style=\"margin-right:0.1132em;\">τ</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.686em;\"><span></span></span></span></span></span><span class=\"mclose nulldelimiter\"></span></span></span></span></span></span></p>",
+        "id": 196929478,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1588960862
+    },
+    {
+        "content": "<p>Hold on, this will take me time to absorb.</p>",
+        "id": 196929549,
+        "sender_full_name": "John Baez",
+        "timestamp": 1588960892
+    },
+    {
+        "content": "<p><span aria-label=\"thumbs up\" class=\"emoji emoji-1f44d\" role=\"img\" title=\"thumbs up\">:thumbs_up:</span></p>",
+        "id": 196929554,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1588960896
+    },
+    {
+        "content": "<p>Where did the f go in that typing rule?  Did it turn into <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>τ</mi></mrow><annotation encoding=\"application/x-tex\">\\tau</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.43056em;vertical-align:0em;\"></span><span class=\"mord mathdefault\" style=\"margin-right:0.1132em;\">τ</span></span></span></span>, or <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>e</mi></mrow><annotation encoding=\"application/x-tex\">e</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.43056em;vertical-align:0em;\"></span><span class=\"mord mathdefault\">e</span></span></span></span>, or...</p>",
+        "id": 196929670,
+        "sender_full_name": "John Baez",
+        "timestamp": 1588960937
+    },
+    {
+        "content": "<p>You pulled the rug out from under me, notationally.  <span aria-label=\"upside down\" class=\"emoji emoji-1f643\" role=\"img\" title=\"upside down\">:upside_down:</span></p>",
+        "id": 196929709,
+        "sender_full_name": "John Baez",
+        "timestamp": 1588960959
+    },
+    {
+        "content": "<p>oops!</p>",
+        "id": 196929725,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1588960964
+    },
+    {
+        "content": "<p>there, now x is not being used for 2 things</p>",
+        "id": 196929742,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1588960976
+    },
+    {
+        "content": "<p>so i can tell you that the f up there is the x in the rule</p>",
+        "id": 196929757,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1588960983
+    },
+    {
+        "content": "<p>Okay, let me see if I can even understand the \"informal\" explanation </p>\n<p>rec x.e ↦ e[rec x.e/x]</p>",
+        "id": 196930010,
+        "sender_full_name": "John Baez",
+        "timestamp": 1588961100
+    },
+    {
+        "content": "<p>that's not informal! it's just operational</p>",
+        "id": 196930049,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1588961115
+    },
+    {
+        "content": "<p>it's the reduction rule as opposed to the typing rule</p>",
+        "id": 196930081,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1588961128
+    },
+    {
+        "content": "<p>Okay.</p>",
+        "id": 196930113,
+        "sender_full_name": "John Baez",
+        "timestamp": 1588961144
+    },
+    {
+        "content": "<p>it tells you how the thing computes, not how to tell when it's well-formed</p>",
+        "id": 196930126,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1588961154
+    },
+    {
+        "content": "<p>It was something I was supposed to understand first.</p>",
+        "id": 196930137,
+        "sender_full_name": "John Baez",
+        "timestamp": 1588961159
+    },
+    {
+        "content": "<p>well, this is all kind of a tangent anyway, so we can drop the typing rule <span aria-label=\"sweat smile\" class=\"emoji emoji-1f605\" role=\"img\" title=\"sweat smile\">:sweat_smile:</span></p>",
+        "id": 196930229,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1588961183
+    },
+    {
+        "content": "<p>I have no idea what it means except you said the word \"recursion\" so it's supposed to be about something being recursively defined and plugged into itself.</p>",
+        "id": 196930235,
+        "sender_full_name": "John Baez",
+        "timestamp": 1588961187
+    },
+    {
+        "content": "<p>yeah</p>",
+        "id": 196930243,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1588961192
+    },
+    {
+        "content": "<p>I cling to English words...</p>",
+        "id": 196930251,
+        "sender_full_name": "John Baez",
+        "timestamp": 1588961197
+    },
+    {
+        "content": "<p>sorry! let me clarify</p>",
+        "id": 196930269,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1588961209
+    },
+    {
+        "content": "<p>i forget that not everyone does PL <span aria-label=\"sob\" class=\"emoji emoji-1f62d\" role=\"img\" title=\"sob\">:sob:</span></p>",
+        "id": 196930286,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1588961219
+    },
+    {
+        "content": "<p>Yes, there's a dwindling band of people who don't.</p>",
+        "id": 196930314,
+        "sender_full_name": "John Baez",
+        "timestamp": 1588961237
+    },
+    {
+        "content": "<p>and has its core concepts/conventions worked into their brain</p>",
+        "id": 196930318,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1588961238
+    },
+    {
+        "content": "<p>I can't even remember if e/x means \"substitute e into x\" or the other way around...</p>",
+        "id": 196930390,
+        "sender_full_name": "John Baez",
+        "timestamp": 1588961277
+    },
+    {
+        "content": "<p>depends on the source <span aria-label=\"sob\" class=\"emoji emoji-1f62d\" role=\"img\" title=\"sob\">:sob:</span> i meant it as substitute e for x</p>",
+        "id": 196930441,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1588961289
+    },
+    {
+        "content": "<p>Wow, so people don't even agree!  Okay, substitute e into x.</p>",
+        "id": 196930471,
+        "sender_full_name": "John Baez",
+        "timestamp": 1588961307
+    },
+    {
+        "content": "<p><em>for</em> x—but <em>into</em> the thing preceding the square brackets</p>",
+        "id": 196930490,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1588961322
+    },
+    {
+        "content": "<p>Could you read \"rec x.e ↦ e[rec x.e/x]\" translated into something more like English?</p>",
+        "id": 196930513,
+        "sender_full_name": "John Baez",
+        "timestamp": 1588961335
+    },
+    {
+        "content": "<p>yeah</p>",
+        "id": 196930517,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1588961340
+    },
+    {
+        "content": "<p>well, first: read <code>rec x.e</code> as an \"inline recursive definition\" much like λ is an \"inline function\"</p>",
+        "id": 196930533,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1588961343
+    },
+    {
+        "content": "<p>Okay, I'll read that except for the word \"inline\".</p>",
+        "id": 196930575,
+        "sender_full_name": "John Baez",
+        "timestamp": 1588961368
+    },
+    {
+        "content": "<p>so just as you can turn f(x) = e followed by a reference to f, into λx.e<br>\nso you can turn x = e, with x <em>mentioned in e</em>, followed by a reference to x, into just <code>rec x.e</code></p>",
+        "id": 196930635,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1588961397
+    },
+    {
+        "content": "<p>Let me do an example.</p>",
+        "id": 196930745,
+        "sender_full_name": "John Baez",
+        "timestamp": 1588961454
+    },
+    {
+        "content": "<p><span aria-label=\"thumbs up\" class=\"emoji emoji-1f44d\" role=\"img\" title=\"thumbs up\">:thumbs_up:</span></p>",
+        "id": 196930783,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1588961480
+    },
+    {
+        "content": "<p>\"do\" as in you want to come up with one, or i should give you one?</p>",
+        "id": 196930793,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1588961489
+    },
+    {
+        "content": "<p>If x = sqrt(1+x) and I want to refer to the solution of this equation, I say</p>",
+        "id": 196930832,
+        "sender_full_name": "John Baez",
+        "timestamp": 1588961503
+    },
+    {
+        "content": "<p>rec x.sqrt(1+x)</p>",
+        "id": 196930843,
+        "sender_full_name": "John Baez",
+        "timestamp": 1588961512
+    },
+    {
+        "content": "<p>yeah</p>",
+        "id": 196930848,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1588961515
+    },
+    {
+        "content": "<p>Okay, I think I got it.</p>",
+        "id": 196930917,
+        "sender_full_name": "John Baez",
+        "timestamp": 1588961532
+    },
+    {
+        "content": "<p>That's cool, but at this rate you may give up on teaching me stuff about dcpos... I hope it's not far from here to there.</p>",
+        "id": 196931079,
+        "sender_full_name": "John Baez",
+        "timestamp": 1588961623
+    },
+    {
+        "content": "<p>we're getting there!</p>",
+        "id": 196931160,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1588961654
+    },
+    {
+        "content": "<p>So, probably something like \"you can interpret a language with such a recursion operator in a dcpo...\"</p>",
+        "id": 196931175,
+        "sender_full_name": "John Baez",
+        "timestamp": 1588961660
+    },
+    {
+        "content": "<p>yup!</p>",
+        "id": 196931184,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1588961665
+    },
+    {
+        "content": "<p>if you squint back at the reduction rule i wrote down, you'll see that the operational semantics of the expression you wrote is</p>",
+        "id": 196931215,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1588961689
+    },
+    {
+        "content": "<p>rec x.sqrt(1 + x) ↦ sqrt(1 + rec x.sqrt(1 + x)) ↦ sqrt(1 + sqrt(1 + rec x.sqrt(1 + x))) ↦ ...</p>",
+        "id": 196931300,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1588961741
+    },
+    {
+        "content": "<p>or rather: it depends on what the operational semantics of sqrt and + and so on are. if they're <em>strict</em>—they force their arguments to be some kind of final result before they make use of them—then you'll get what i just wrote</p>",
+        "id": 196931417,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1588961796
+    },
+    {
+        "content": "<p>Right.</p>",
+        "id": 196931455,
+        "sender_full_name": "John Baez",
+        "timestamp": 1588961813
+    },
+    {
+        "content": "<p>but if they start to compute an approximation based on partial info somehow, then you might be able to actually realize some kind of banach fixed point computation of an approximation of a fixed point using this</p>",
+        "id": 196931481,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1588961826
+    },
+    {
+        "content": "<p>Aren't you looking as a fixed point in this case?</p>",
+        "id": 196931508,
+        "sender_full_name": "Daniel Geisler",
+        "timestamp": 1588961839
+    },
+    {
+        "content": "<p>um, sorry, i can't juggle two ppl at once on this topic daniel <span aria-label=\"sweat smile\" class=\"emoji emoji-1f605\" role=\"img\" title=\"sweat smile\">:sweat_smile:</span></p>",
+        "id": 196931623,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1588961885
+    },
+    {
+        "content": "<p>(I'm gonna just talk to Sarah right now, since it's working.)   </p>\n<p>Right.</p>",
+        "id": 196931631,
+        "sender_full_name": "John Baez",
+        "timestamp": 1588961889
+    },
+    {
+        "content": "<p>but anyway, the reduction rule i wrote down above makes good sense as something that produces an <em>ongoing process of computation</em> that hopefully terminates</p>",
+        "id": 196931693,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1588961935
+    },
+    {
+        "content": "<p>I was gonna say: that Banach space fixed point stuff and approximations and such involve the metric on R, but I guess the point of dcpos is to sidestep all that.</p>",
+        "id": 196931764,
+        "sender_full_name": "John Baez",
+        "timestamp": 1588961983
+    },
+    {
+        "content": "<p>but in the context of math, where we don't usually view mathematical objects as such things, arbitrary recursion is generally not something you can do in your expression</p>",
+        "id": 196931767,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1588961986
+    },
+    {
+        "content": "<p>so if i say <code>rec x.e</code>, and i interpret <code>e</code> as some morphism in my CCC, then, well, it's not really clear from here what to do with that morphism to get a denotation for the whole term</p>",
+        "id": 196931887,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1588962049
+    },
+    {
+        "content": "<p>tons of morphisms don't have fixed points!</p>",
+        "id": 196931907,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1588962058
+    },
+    {
+        "content": "<p>Right.  Is rec x.e the same as fix x.e?</p>",
+        "id": 196931950,
+        "sender_full_name": "John Baez",
+        "timestamp": 1588962082
+    },
+    {
+        "content": "<p>yeah</p>",
+        "id": 196931954,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1588962086
+    },
+    {
+        "content": "<p>Never mind.</p>",
+        "id": 196931967,
+        "sender_full_name": "John Baez",
+        "timestamp": 1588962090
+    },
+    {
+        "content": "<p>generally you want the denotation of a term to be the same as the denotation of anything it reduces to, or else things are weird</p>",
+        "id": 196932061,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1588962124
+    },
+    {
+        "content": "<p>Yes, I get it.   So I bet you (or Scott or someone) is going to create a make-believe universe where everything has a fixed point.</p>",
+        "id": 196932070,
+        "sender_full_name": "John Baez",
+        "timestamp": 1588962128
+    },
+    {
+        "content": "<p>yup!</p>",
+        "id": 196932083,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1588962134
+    },
+    {
+        "content": "<p>(Some people do use (ultra)metric spaces for this, too.)</p>",
+        "id": 196932132,
+        "sender_full_name": "Dan Doel",
+        "timestamp": 1588962163
+    },
+    {
+        "content": "<p>but there's good reason for dcpos to model this kind of thing, and for why they're good for fixed points</p>",
+        "id": 196932149,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1588962176
+    },
+    {
+        "content": "<p>oh, but re:</p>\n<blockquote>\n<p>generally you want the denotation of a term to be the same as the denotation of anything it reduces to, or else things are weird</p>\n</blockquote>",
+        "id": 196932170,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1588962189
+    },
+    {
+        "content": "<p>since <code>rec x.e</code> reduces to <code>e[rec x.e/x]</code>, they should have the same denotation, so that's a fixed point of the denotation of <code>e</code></p>",
+        "id": 196932207,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1588962216
+    },
+    {
+        "content": "<p>Right.</p>",
+        "id": 196932220,
+        "sender_full_name": "John Baez",
+        "timestamp": 1588962226
+    },
+    {
+        "content": "<p>anyway—</p>",
+        "id": 196932265,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1588962242
+    },
+    {
+        "content": "<p>the idea is roughly something like:</p>",
+        "id": 196932291,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1588962257
+    },
+    {
+        "content": "<p>you enrich your universe to contain undefined or partially-undefined objects</p>",
+        "id": 196932318,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1588962285
+    },
+    {
+        "content": "<p>then there is a partial order of \"extends the information content of\"</p>",
+        "id": 196932351,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1588962308
+    },
+    {
+        "content": "<p>so for example, if f, f' : X → Y, and f ≤ f', then whenever f(x) is defined, so is f'(x), among other things</p>",
+        "id": 196932475,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1588962368
+    },
+    {
+        "content": "<p>And they're equal I assume...</p>",
+        "id": 196932524,
+        "sender_full_name": "John Baez",
+        "timestamp": 1588962400
+    },
+    {
+        "content": "<p>well, no, it's the pointwise order</p>",
+        "id": 196932541,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1588962415
+    },
+    {
+        "content": "<p>Oh, sorry, Y is some sort of ordered set?</p>",
+        "id": 196932567,
+        "sender_full_name": "John Baez",
+        "timestamp": 1588962433
+    },
+    {
+        "content": "<p>but if the codomain is flat, they'd have to be equal</p>",
+        "id": 196932570,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1588962433
+    },
+    {
+        "content": "<p>err, sorry, \"flat\" as in</p>",
+        "id": 196932600,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1588962454
+    },
+    {
+        "content": "<p>I thought <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>≤</mo></mrow><annotation encoding=\"application/x-tex\">\\le</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.7719400000000001em;vertical-align:-0.13597em;\"></span><span class=\"mrel\">≤</span></span></span></span> was some purely \"extends the information content of\" order.</p>",
+        "id": 196932610,
+        "sender_full_name": "John Baez",
+        "timestamp": 1588962462
+    },
+    {
+        "content": "<p>if you have any set X, the \"flat domain\" on it is the poset X + 1 which extends X with a unique ⊥ and otherwise everything is incomparable</p>",
+        "id": 196932679,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1588962482
+    },
+    {
+        "content": "<p>Okay.</p>",
+        "id": 196932704,
+        "sender_full_name": "John Baez",
+        "timestamp": 1588962492
+    },
+    {
+        "content": "<p>i was perhaps misleading with my phrasing</p>",
+        "id": 196932725,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1588962505
+    },
+    {
+        "content": "<p>So all our objects are gonna be posets of some nice sort?</p>",
+        "id": 196932744,
+        "sender_full_name": "John Baez",
+        "timestamp": 1588962515
+    },
+    {
+        "content": "<p>yeah—dcpos with least element, generally</p>",
+        "id": 196932757,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1588962522
+    },
+    {
+        "content": "<p>I see, and you can take a mere set and turn it into a poset as you just described, where I guess <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"normal\">⊥</mi></mrow><annotation encoding=\"application/x-tex\">\\bot</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.69444em;vertical-align:0em;\"></span><span class=\"mord\">⊥</span></span></span></span> means 'undefined'.</p>",
+        "id": 196932824,
+        "sender_full_name": "John Baez",
+        "timestamp": 1588962557
+    },
+    {
+        "content": "<p>yup!</p>",
+        "id": 196932842,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1588962565
+    },
+    {
+        "content": "<p>And that's a dcpo with least element...</p>",
+        "id": 196932850,
+        "sender_full_name": "John Baez",
+        "timestamp": 1588962569
+    },
+    {
+        "content": "<p><span aria-label=\"wink\" class=\"emoji emoji-1f609\" role=\"img\" title=\"wink\">:wink:</span></p>",
+        "id": 196932861,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1588962578
+    },
+    {
+        "content": "<p>so if the codomain is flat, then if f(x) and f'(x) are both \"defined\" as in non-⊥, they must be equal, yeah</p>",
+        "id": 196932892,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1588962596
+    },
+    {
+        "content": "<p>but if the codomain is richer, we only need f(x) ≤ f'(x)</p>",
+        "id": 196932952,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1588962609
+    },
+    {
+        "content": "<p>Okay, good.</p>",
+        "id": 196932964,
+        "sender_full_name": "John Baez",
+        "timestamp": 1588962615
+    },
+    {
+        "content": "<p>but that's still \"extends info content\", because that's what the order on the codomain should mean too!</p>",
+        "id": 196932982,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1588962622
+    },
+    {
+        "content": "<p>now:</p>",
+        "id": 196933089,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1588962686
+    },
+    {
+        "content": "<p>So like if X and Y are mere sets, and we dcpo-ize them, their internal hom in dcpos will <em>not</em> be the dcpo-ization of a mere set.</p>",
+        "id": 196933099,
+        "sender_full_name": "John Baez",
+        "timestamp": 1588962695
+    },
+    {
+        "content": "<p>nope!</p>",
+        "id": 196933113,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1588962700
+    },
+    {
+        "content": "<p>er, i mean: you're correct that it will not be!</p>",
+        "id": 196933127,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1588962708
+    },
+    {
+        "content": "<p>That's pronounced \"yeah - no!\"</p>",
+        "id": 196933183,
+        "sender_full_name": "John Baez",
+        "timestamp": 1588962723
+    },
+    {
+        "content": "<p>:)</p>",
+        "id": 196933187,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1588962725
+    },
+    {
+        "content": "<p>I'm just guessing the category of dcpo's you're talking about is cartesian closed because if it weren't who'd ever want to think about it?</p>",
+        "id": 196933247,
+        "sender_full_name": "John Baez",
+        "timestamp": 1588962771
+    },
+    {
+        "content": "<p>iirc it is</p>",
+        "id": 196933269,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1588962783
+    },
+    {
+        "content": "<p>Okay, go ahead, though I think I'm getting the idea.  I'm still not sure why it's so good to limit ourselves to <em>d</em> cpos instead of those with more general colimits.</p>",
+        "id": 196933358,
+        "sender_full_name": "John Baez",
+        "timestamp": 1588962837
+    },
+    {
+        "content": "<p>however i don't remember the details</p>",
+        "id": 196933362,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1588962839
+    },
+    {
+        "content": "<p>i'll circle back around to that in a minute!</p>",
+        "id": 196933417,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1588962855
+    },
+    {
+        "content": "<p>anyway: we can view the previously-described \"ongoing process of computation\" as a gradual enrichment of information content—a sequence of approximations to a final result</p>",
+        "id": 196933545,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1588962938
+    },
+    {
+        "content": "<p>so to give this semantics, you collect all of those approximations ahead of time in your platonic math-world, and the denotation is the thing they converge to—the sup</p>",
+        "id": 196933680,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1588963009
+    },
+    {
+        "content": "<p>Nice!</p>",
+        "id": 196933733,
+        "sender_full_name": "John Baez",
+        "timestamp": 1588963049
+    },
+    {
+        "content": "<p>Yes, you set it up so that part is obviously the goal.</p>",
+        "id": 196933749,
+        "sender_full_name": "John Baez",
+        "timestamp": 1588963065
+    },
+    {
+        "content": "<p>indeed, the kleene fixed-point theorem states that for a dcpo with least element, every scott-continuous endomorphism f has a least fixed point, which you can compute as the sup of the <em>kleene chain</em> ⊥, f(⊥), f(f(⊥))...</p>",
+        "id": 196933832,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1588963088
+    },
+    {
+        "content": "<p>Nice.  I know that kind of idea from my studies of large countable ordinals.   (Not research, just learning.)</p>",
+        "id": 196933888,
+        "sender_full_name": "John Baez",
+        "timestamp": 1588963125
+    },
+    {
+        "content": "<p>this is the depleted version of the theorem about initial algebras of finitary functors :)</p>",
+        "id": 196933929,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1588963152
+    },
+    {
+        "content": "<p>I don't really know the undepleted version, though I should.</p>",
+        "id": 196933979,
+        "sender_full_name": "John Baez",
+        "timestamp": 1588963182
+    },
+    {
+        "content": "<p>So I'm just sorta puzzled that \"time\" in this story is <em>directed</em>.   That makes sense if you can only do <em>one</em> reduction rule at each step in a computation, so there's no branching.</p>",
+        "id": 196933988,
+        "sender_full_name": "John Baez",
+        "timestamp": 1588963186
+    },
+    {
+        "content": "<p>well...</p>",
+        "id": 196934052,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1588963204
+    },
+    {
+        "content": "<p>there may be generalizations of this story to other kinds of completeness!</p>",
+        "id": 196934080,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1588963223
+    },
+    {
+        "content": "<p><span class=\"user-mention\" data-user-id=\"275920\">@John Baez</span> said</p>\n<blockquote>\n<p>So I bet you (or Scott or someone) is going to create a make-believe universe where everything has a fixed point.</p>\n</blockquote>\n<p>This is exactly my plan! Is there a problem?</p>",
+        "id": 196934092,
+        "sender_full_name": "Daniel Geisler",
+        "timestamp": 1588963231
+    },
+    {
+        "content": "<p>and, i mean, it doesn't mean <em>that</em> exactly, just that they have to come back together later—i.e., church-rosser or something</p>",
+        "id": 196934144,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1588963259
+    },
+    {
+        "content": "<p>but yeah, i see what you mean, that might be unfortunate for non-deterministic stuff</p>",
+        "id": 196934182,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1588963282
+    },
+    {
+        "content": "<p>but the basic idea is like</p>",
+        "id": 196934194,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1588963291
+    },
+    {
+        "content": "<p>Okay, I can believe a lot of people would be content to study situations with confluence.</p>",
+        "id": 196934224,
+        "sender_full_name": "John Baez",
+        "timestamp": 1588963305
+    },
+    {
+        "content": "<p>if the ordering is supposed to be \"enrichment of information content\"—</p>",
+        "id": 196934225,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1588963306
+    },
+    {
+        "content": "<p>then if you have two incomparable things—</p>",
+        "id": 196934247,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1588963320
+    },
+    {
+        "content": "<p>what does it mean to take their join?</p>",
+        "id": 196934297,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1588963325
+    },
+    {
+        "content": "<p>Is that a rhetorical question?</p>",
+        "id": 196934338,
+        "sender_full_name": "John Baez",
+        "timestamp": 1588963353
+    },
+    {
+        "content": "<p>Some denotational semantics is done with lattices, too.</p>",
+        "id": 196934356,
+        "sender_full_name": "Dan Doel",
+        "timestamp": 1588963361
+    },
+    {
+        "content": "<p>yeah, but if you have an answer, you could give it :)</p>",
+        "id": 196934360,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1588963363
+    },
+    {
+        "content": "<p>I might know x = 2 and you might know y = 3 ; these are incomprable, but someone smarter than both of us might know both x = 2 and y = 3.</p>",
+        "id": 196934406,
+        "sender_full_name": "John Baez",
+        "timestamp": 1588963391
+    },
+    {
+        "content": "<p>i don't think it's a question without an answer, necessarily, but i do think it's a question that requires a delicate answer</p>",
+        "id": 196934413,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1588963394
+    },
+    {
+        "content": "<p>oops!</p>",
+        "id": 196934439,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1588963412
+    },
+    {
+        "content": "<p>i misspoke</p>",
+        "id": 196934443,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1588963414
+    },
+    {
+        "content": "<p>you're right, there's no issue with joins of incomparable things per se</p>",
+        "id": 196934458,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1588963427
+    },
+    {
+        "content": "<p>Whew!</p>",
+        "id": 196934519,
+        "sender_full_name": "John Baez",
+        "timestamp": 1588963442
+    },
+    {
+        "content": "<p>i just had a very specific example in mind of things that were incomparable</p>",
+        "id": 196934533,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1588963449
+    },
+    {
+        "content": "<p>which <em>should</em> have a problem</p>",
+        "id": 196934539,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1588963454
+    },
+    {
+        "content": "<p>namely: things which <em>disagree</em></p>",
+        "id": 196934551,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1588963460
+    },
+    {
+        "content": "<p>if we want to interpret the type <code>nat</code> as a poset of things ordered by info content, and we have a semantics for the numeral <code>3</code> and for the numeral <code>5</code>, then what on earth should their join be?</p>",
+        "id": 196934667,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1588963526
+    },
+    {
+        "content": "<p>That's a toughie.</p>",
+        "id": 196934765,
+        "sender_full_name": "John Baez",
+        "timestamp": 1588963569
+    },
+    {
+        "content": "<p>8?   <span aria-label=\"stuck out tongue\" class=\"emoji emoji-1f61d\" role=\"img\" title=\"stuck out tongue\">:stuck_out_tongue:</span></p>",
+        "id": 196934817,
+        "sender_full_name": "John Baez",
+        "timestamp": 1588963591
+    },
+    {
+        "content": "<p><span aria-label=\"thinking\" class=\"emoji emoji-1f914\" role=\"img\" title=\"thinking\">:thinking:</span></p>",
+        "id": 196934826,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1588963597
+    },
+    {
+        "content": "<p>dcpos for this kind of purpose don't necessarily fail to have all joins which aren't directed, just that there are plenty of non-directed joins they shouldn't be expected to have</p>",
+        "id": 196934840,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1588963602
+    },
+    {
+        "content": "<p>Right, I see.</p>",
+        "id": 196934873,
+        "sender_full_name": "John Baez",
+        "timestamp": 1588963617
+    },
+    {
+        "content": "<p>directedness happens to be a good condition for talking about \"coherence of approximations\"</p>",
+        "id": 196934892,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1588963626
+    },
+    {
+        "content": "<p>I see.   It's interesting that \"incomparability\" includes \"facts that could never be reconciled\" and also just \"different partial views that could be reconciled\".</p>",
+        "id": 196935208,
+        "sender_full_name": "John Baez",
+        "timestamp": 1588963784
+    },
+    {
+        "content": "<p>i seem to recall <span class=\"user-mention\" data-user-id=\"276650\">@Gershom</span>'s talk mentioning something about \"lattices with conflict\" or some such</p>",
+        "id": 196935284,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1588963819
+    },
+    {
+        "content": "<p>i imagine that might be extra structure to distinguish those</p>",
+        "id": 196935314,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1588963834
+    },
+    {
+        "content": "<p>In restricting to sups of <em>directed</em> sets you're throwing out the latter (\"different partial views that could be reconciled\"), seemingly, but I guess somehow they sneak back in.</p>",
+        "id": 196935329,
+        "sender_full_name": "John Baez",
+        "timestamp": 1588963841
+    },
+    {
+        "content": "<p>given that the context was concurrency, where nondeterminism is a big deal, that sounds useful</p>",
+        "id": 196935337,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1588963848
+    },
+    {
+        "content": "<p>Maybe something to think about is that DCPO is a relaxation of what someone might come up with first with is ωCPO, where you have sups of ω-chains.</p>",
+        "id": 196935610,
+        "sender_full_name": "Dan Doel",
+        "timestamp": 1588964027
+    },
+    {
+        "content": "<p>isn't it a strengthening, not a relaxation?</p>",
+        "id": 196935695,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1588964050
+    },
+    {
+        "content": "<p>Well, it's a relaxation of what you're required to give to get a sup.</p>",
+        "id": 196935778,
+        "sender_full_name": "Dan Doel",
+        "timestamp": 1588964085
+    },
+    {
+        "content": "<p>contravariance of swapping between abelard and eloise strikes again!!</p>",
+        "id": 196935829,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1588964107
+    },
+    {
+        "content": "<p>but yeah—worth keeping in mind that directed sups w/ finite indexing sets are always just the greatest element of the things youre taking a sup over</p>",
+        "id": 196936041,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1588964194
+    },
+    {
+        "content": "<p>Anyhow, we want to be able to do a limit of infinitely many approximations, and directed sets are nicer to work with than ω or something.</p>",
+        "id": 196936049,
+        "sender_full_name": "Dan Doel",
+        "timestamp": 1588964197
+    },
+    {
+        "content": "<p>so dcpos are really about the infinitary stuff</p>",
+        "id": 196936055,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1588964200
+    },
+    {
+        "content": "<p>ha, jinx</p>",
+        "id": 196936064,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1588964204
+    },
+    {
+        "content": "<p>I think in general ω might not be 'big' enough.</p>",
+        "id": 196936172,
+        "sender_full_name": "Dan Doel",
+        "timestamp": 1588964252
+    },
+    {
+        "content": "<p>Some people have bigger computers than others.</p>",
+        "id": 196936223,
+        "sender_full_name": "John Baez",
+        "timestamp": 1588964273
+    },
+    {
+        "content": "<p>Mine always runs for <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi>ε</mi><mn>0</mn></msub></mrow><annotation encoding=\"application/x-tex\">\\varepsilon_0</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.58056em;vertical-align:-0.15em;\"></span><span class=\"mord\"><span class=\"mord mathdefault\">ε</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.30110799999999993em;\"><span style=\"top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">0</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span></span></span></span> steps before it gives up.</p>",
+        "id": 196936361,
+        "sender_full_name": "John Baez",
+        "timestamp": 1588964321
+    },
+    {
+        "content": "<p>just work in the effective topos</p>",
+        "id": 196936369,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1588964324
+    },
+    {
+        "content": "<p>haha, forgetting the var, classic mistake</p>",
+        "id": 196936419,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1588964356
+    },
+    {
+        "content": "<p>Yeah - that'd be bad.   Anyway, thanks - I think I learned something!</p>",
+        "id": 196936441,
+        "sender_full_name": "John Baez",
+        "timestamp": 1588964373
+    },
+    {
+        "content": "<p>no problem! always happy 2 spread PL knowledge <span aria-label=\"halo\" class=\"emoji emoji-1f607\" role=\"img\" title=\"halo\">:halo:</span></p>",
+        "id": 196936481,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1588964392
+    },
+    {
+        "content": "<p>I think people could do well teaching \"minicourses\" like this here... but I really do think it works best one-on-one: if two or more questioners start pulling in different directions I think it's much much harder.</p>",
+        "id": 196936616,
+        "sender_full_name": "John Baez",
+        "timestamp": 1588964436
+    },
+    {
+        "content": "<p>yup :|</p>",
+        "id": 196936631,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1588964446
+    },
+    {
+        "content": "<p>So, if I see some dialogue going on here like this I will do my best to stay out of it except for some \"yay!\" emoticons.</p>",
+        "id": 196936674,
+        "sender_full_name": "John Baez",
+        "timestamp": 1588964477
+    },
+    {
+        "content": "<p>and THAT'S why i don't like giving talks nearly as much as i like chats</p>",
+        "id": 196936678,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1588964478
+    },
+    {
+        "content": "<p>not that i've, like, given more than about 2 talks ever, but</p>",
+        "id": 196936709,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1588964499
+    },
+    {
+        "content": "<p>I like giving talks because then I'm just talking to an idealized person who knows X and Y but not Z and W: I make up a plausible mental model and stick to it.</p>",
+        "id": 196936789,
+        "sender_full_name": "John Baez",
+        "timestamp": 1588964523
+    },
+    {
+        "content": "<p>And the advantage of this idealized person is that they don't interrupt much.</p>",
+        "id": 196936821,
+        "sender_full_name": "John Baez",
+        "timestamp": 1588964547
+    },
+    {
+        "content": "<p>hmm, i always work best in contexts w/ feedback</p>",
+        "id": 196936869,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1588964573
+    },
+    {
+        "content": "<p>But to <em>really</em> convey information well, it kinda has to be one-on-one.</p>",
+        "id": 196936873,
+        "sender_full_name": "John Baez",
+        "timestamp": 1588964574
+    },
+    {
+        "content": "<p>it's why i can focus better on programming than on reading about math, say</p>",
+        "id": 196936947,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1588964612
+    },
+    {
+        "content": "<p>probably an adhd thing</p>",
+        "id": 196936969,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1588964622
+    },
+    {
+        "content": "<p>I enjoy having the feedback be just me in my own head relentlessly criticizing all the slips where I assume knowledge of Z and W when I'd decided I wouldn't.</p>",
+        "id": 196936988,
+        "sender_full_name": "John Baez",
+        "timestamp": 1588964636
+    },
+    {
+        "content": "<p>That's enough to keep me quite busy in a talk even without annoying <em>real people</em> telling me what they don't understand.  <span aria-label=\"upside down\" class=\"emoji emoji-1f643\" role=\"img\" title=\"upside down\">:upside_down:</span></p>",
+        "id": 196937098,
+        "sender_full_name": "John Baez",
+        "timestamp": 1588964675
+    },
+    {
+        "content": "<p>oh sure, but there's no substitute for someone who just actually doesn't know Z and W to catch those <span aria-label=\"upside down\" class=\"emoji emoji-1f643\" role=\"img\" title=\"upside down\">:upside_down:</span></p>",
+        "id": 196937101,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1588964678
+    },
+    {
+        "content": "<p>The trouble is that those people also forgot what they knew about X and Y.   <span aria-label=\"upside down\" class=\"emoji emoji-1f643\" role=\"img\" title=\"upside down\">:upside_down:</span></p>",
+        "id": 196937144,
+        "sender_full_name": "John Baez",
+        "timestamp": 1588964701
+    },
+    {
+        "content": "<p>hmm.</p>",
+        "id": 196937167,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1588964716
+    },
+    {
+        "content": "<p>oh, i was gonna say another thing about directed stuff</p>",
+        "id": 196937201,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1588964732
+    },
+    {
+        "content": "<p>it has some relationships with compactness</p>",
+        "id": 196937209,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1588964739
+    },
+    {
+        "content": "<p>that's probably mediated by filters i guess</p>",
+        "id": 196937235,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1588964756
+    },
+    {
+        "content": "<p>e.g., maybe u know the characterization of compactness that every directed sup of opens producing the whole space must already include the whole space as one of the opens</p>",
+        "id": 196937556,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1588964898
+    },
+    {
+        "content": "<p>i posted a thread once on twitter where i twisted this a little further to characterize compactness as a commutation of modalities ^.^</p>",
+        "id": 196937671,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1588964978
+    },
+    {
+        "content": "<p>Hmm.</p>\n<p>I'm not sure I knew that characterization of compactness, but I can use the axiom of choice to well-order any open cover <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi>U</mi><mi>α</mi></msub></mrow><annotation encoding=\"application/x-tex\">U_\\alpha</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.83333em;vertical-align:-0.15em;\"></span><span class=\"mord\"><span class=\"mord mathdefault\" style=\"margin-right:0.10903em;\">U</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.151392em;\"><span style=\"top:-2.5500000000000003em;margin-left:-0.10903em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathdefault mtight\" style=\"margin-right:0.0037em;\">α</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span></span></span></span> and then let</p>\n<p><span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi>V</mi><mi>α</mi></msub><mo>=</mo><msub><mo>⋃</mo><mrow><mi>β</mi><mo>≤</mo><mi>α</mi></mrow></msub><msub><mi>U</mi><mi>β</mi></msub></mrow><annotation encoding=\"application/x-tex\">V_\\alpha = \\bigcup_{\\beta \\le \\alpha} U_\\beta </annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.83333em;vertical-align:-0.15em;\"></span><span class=\"mord\"><span class=\"mord mathdefault\" style=\"margin-right:0.22222em;\">V</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.151392em;\"><span style=\"top:-2.5500000000000003em;margin-left:-0.22222em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathdefault mtight\" style=\"margin-right:0.0037em;\">α</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1.185818em;vertical-align:-0.43581800000000004em;\"></span><span class=\"mop\"><span class=\"mop op-symbol small-op\" style=\"position:relative;top:-0.0000050000000000050004em;\">⋃</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.18639799999999984em;\"><span style=\"top:-2.40029em;margin-left:0em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mathdefault mtight\" style=\"margin-right:0.05278em;\">β</span><span class=\"mrel mtight\">≤</span><span class=\"mord mathdefault mtight\" style=\"margin-right:0.0037em;\">α</span></span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.43581800000000004em;\"><span></span></span></span></span></span></span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mord\"><span class=\"mord mathdefault\" style=\"margin-right:0.10903em;\">U</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.3361079999999999em;\"><span style=\"top:-2.5500000000000003em;margin-left:-0.10903em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathdefault mtight\" style=\"margin-right:0.05278em;\">β</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.286108em;\"><span></span></span></span></span></span></span></span></span></span></p>\n<p>to replace it with an <em>increasing</em> sequence of open sets, so yes - it's true.</p>",
+        "id": 196938007,
+        "sender_full_name": "John Baez",
+        "timestamp": 1588965139
+    },
+    {
+        "content": "<p>Or, at least it follows from AC.</p>",
+        "id": 196938031,
+        "sender_full_name": "John Baez",
+        "timestamp": 1588965157
+    },
+    {
+        "content": "<p>well, there's a nicer way—</p>",
+        "id": 196938178,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1588965240
+    },
+    {
+        "content": "<p>take the sub-poset of opens in the cover, close it under finite unions, and that's directed</p>",
+        "id": 196938243,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1588965264
+    },
+    {
+        "content": "<p>so i guess that's the kind of thing that leads people to want to use directedness instead of, say, ordinal indexing</p>",
+        "id": 196938365,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1588965338
+    },
+    {
+        "content": "<p>no choice required!</p>",
+        "id": 196938370,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1588965343
+    },
+    {
+        "content": "<p>(for the record, here's the thread i mentioned <a href=\"https://twitter.com/sarah_zrf/status/1229089866551562242\" title=\"https://twitter.com/sarah_zrf/status/1229089866551562242\">https://twitter.com/sarah_zrf/status/1229089866551562242</a>)</p>\n<div class=\"inline-preview-twitter\"><div class=\"twitter-tweet\"><a href=\"https://twitter.com/sarah_zrf/status/1229089866551562242\"><img class=\"twitter-avatar\" src=\"https://pbs.twimg.com/profile_images/511991354927218688/O7IOsWWj_normal.png\"></a><p>i saw <a href=\"https://t.co/stHuhpVnx5\" title=\"https://t.co/stHuhpVnx5\">https://math.stackexchange.com/q/579197</a> on someone's twitter (i'd quote tweet but can't re-find it) &amp; i like the characterization of compactness &amp; i bet there's a morally similar characterization in terms of some kind of commutation of modalities</p><span>- n-sarahzrf where n ≤ (1, 1) (@sarah_zrf)</span></div></div>",
+        "id": 196939746,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1588966079
+    },
+    {
+        "content": "<p>Believe it or not, I'd been confused about what \"directed\" meant all along today.  I don't know why - I know perfectly well what it means. But somehow today I was thinking it meant \"linearly ordered\".</p>",
+        "id": 196941752,
+        "sender_full_name": "John Baez",
+        "timestamp": 1588967102
+    },
+    {
+        "content": "<p>Now I see this stuff I said was bullshit:</p>\n<blockquote>\n<p>In restricting to sups of directed sets you're throwing out the latter (\"different partial views that could be reconciled\"), seemingly, but I guess somehow they sneak back in.</p>\n</blockquote>",
+        "id": 196941842,
+        "sender_full_name": "John Baez",
+        "timestamp": 1588967162
+    },
+    {
+        "content": "<p>\"Different partial views that could be reconciled\" was intended as a touchy-feely way of saying \"incomparable elements in a poset that have some element greater than or equal to both\".</p>",
+        "id": 196941945,
+        "sender_full_name": "John Baez",
+        "timestamp": 1588967213
+    },
+    {
+        "content": "<p>But in a directed set <em>all</em> pairs of elements have some element greater than equal to both.</p>",
+        "id": 196941983,
+        "sender_full_name": "John Baez",
+        "timestamp": 1588967238
+    },
+    {
+        "content": "<p>Oh okay, that makes more sense of what you were saying.</p>",
+        "id": 196942040,
+        "sender_full_name": "Dan Doel",
+        "timestamp": 1588967277
+    },
+    {
+        "content": "<p>no it wasnt bullshit</p>",
+        "id": 196942459,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1588967473
+    },
+    {
+        "content": "<p>remember, a dcpo isn't itself directed, it's directed-complete—the index set is what's directed</p>",
+        "id": 196942494,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1588967491
+    },
+    {
+        "content": "<p>oops</p>",
+        "id": 196942596,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1588967532
+    },
+    {
+        "content": "<p>Oh!</p>",
+        "id": 196942603,
+        "sender_full_name": "John Baez",
+        "timestamp": 1588967536
+    },
+    {
+        "content": "<p>So \"directed\" refers to \"c\", not \"po\".</p>",
+        "id": 196942677,
+        "sender_full_name": "John Baez",
+        "timestamp": 1588967568
+    },
+    {
+        "content": "<p>exactly</p>",
+        "id": 196942690,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1588967574
+    },
+    {
+        "content": "<p>Okay, but this makes even more sense. <span aria-label=\"upside down\" class=\"emoji emoji-1f643\" role=\"img\" title=\"upside down\">:upside_down:</span></p>",
+        "id": 196942727,
+        "sender_full_name": "John Baez",
+        "timestamp": 1588967591
+    },
+    {
+        "content": "<p>I don't know if this helps, but as I threw out earlier, the categorical language would be more like a DCPO is like a partial order with filtered colimits (I think).</p>",
+        "id": 196942778,
+        "sender_full_name": "Dan Doel",
+        "timestamp": 1588967618
+    },
+    {
+        "content": "<p>yeah</p>",
+        "id": 196942783,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1588967624
+    },
+    {
+        "content": "<p>Except the 'filtered' is de-categorified.</p>",
+        "id": 196942789,
+        "sender_full_name": "Dan Doel",
+        "timestamp": 1588967628
+    },
+    {
+        "content": "<p>honestly i don't think it has to be</p>",
+        "id": 196942804,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1588967637
+    },
+    {
+        "content": "<p>Yeah, maybe not.</p>",
+        "id": 196942849,
+        "sender_full_name": "Dan Doel",
+        "timestamp": 1588967644
+    },
+    {
+        "content": "<p>Well, a filtered category that's a poset is exactly the same thing as directed set.</p>",
+        "id": 196942856,
+        "sender_full_name": "John Baez",
+        "timestamp": 1588967649
+    },
+    {
+        "content": "<p>i think if you use a filtered category as an indexing diagram, then the diagram factors thru a directed set</p>",
+        "id": 196942879,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1588967664
+    },
+    {
+        "content": "<p>if the codomain is a proset</p>",
+        "id": 196942893,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1588967671
+    },
+    {
+        "content": "<p>Yes.</p>",
+        "id": 196942907,
+        "sender_full_name": "John Baez",
+        "timestamp": 1588967681
+    },
+    {
+        "content": "<p>Yes, and I meant \"proset\" above, not \"poset\":  a filtered category that's a proset is exactly the same thing as directed set.</p>",
+        "id": 196942958,
+        "sender_full_name": "John Baez",
+        "timestamp": 1588967710
+    },
+    {
+        "content": "<p>(I think the good definition of directed set doesn't require it to be a poset, just a proset.)</p>",
+        "id": 196943009,
+        "sender_full_name": "John Baez",
+        "timestamp": 1588967742
+    },
+    {
+        "content": "<p>So now it all makes sense to me.   In a dcpo we've got a bunch of \"states of partial knowledge about the state of affairs\", and if any two of them have the property that there's a state of partial knowledge that extends both, then there's a unique minimal state of partial knowledge extending all of them.</p>",
+        "id": 196943455,
+        "sender_full_name": "John Baez",
+        "timestamp": 1588967949
+    },
+    {
+        "content": "<p>Or in other words: in a DCPO where each element is actually one person's knowledge of the world, and we've got a bunch of people with the property that for all X and X' there's a person Y who knows everything X and X' do, then there's a (hypothetical) person who knows <em>everything</em> this bunch of people do.</p>",
+        "id": 196943717,
+        "sender_full_name": "John Baez",
+        "timestamp": 1588968077
+    },
+    {
+        "content": "<p>Nice!</p>",
+        "id": 196943905,
+        "sender_full_name": "John Baez",
+        "timestamp": 1588968164
+    },
+    {
+        "content": "<p>:)</p>",
+        "id": 196943914,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1588968168
+    },
+    {
+        "content": "<p>note the suspiciously similar phrasing to things that involve the word \"compact\"</p>",
+        "id": 196943942,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1588968184
+    },
+    {
+        "content": "<p>like ultraproducts/powers and the compactness theorem</p>",
+        "id": 196943959,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1588968192
+    },
+    {
+        "content": "<p>Right!</p>",
+        "id": 196943964,
+        "sender_full_name": "John Baez",
+        "timestamp": 1588968195
+    },
+    {
+        "content": "<p>A \"compact\" object is one s.t. homming out of it preserves filtered colimits.</p>",
+        "id": 196944396,
+        "sender_full_name": "John Baez",
+        "timestamp": 1588968430
+    },
+    {
+        "content": "<p>i was just tweeting about that <span aria-label=\"thinking\" class=\"emoji emoji-1f914\" role=\"img\" title=\"thinking\">:thinking:</span></p>",
+        "id": 196944496,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1588968485
+    },
+    {
+        "content": "<p>Didn't see it!</p>",
+        "id": 196944511,
+        "sender_full_name": "John Baez",
+        "timestamp": 1588968501
+    },
+    {
+        "content": "<p>the description on the nlab page gives an idea characterization that sounds a little like \"if you map into a big union then your image lies fully in one of the things being unioned\", but</p>",
+        "id": 196944570,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1588968547
+    },
+    {
+        "content": "<p>it occurred to me that that only works if the morphisms of the diagram are monic</p>",
+        "id": 196944617,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1588968566
+    },
+    {
+        "content": "<p>but like, if you take germs... that's also a filtered colimit, and the morphisms are far from monic usually</p>",
+        "id": 196944643,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1588968579
+    },
+    {
+        "content": "<p>and in <em>that</em> case, i worked out that preserving the filtered colimit is sort of like a tube lemma kind of thing o.o</p>",
+        "id": 196944728,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1588968607
+    },
+    {
+        "content": "<p>I had my moment of epiphany here:</p>\n<p><a href=\"https://twitter.com/johncarlosbaez/status/1136647587153338368\" title=\"https://twitter.com/johncarlosbaez/status/1136647587153338368\">https://twitter.com/johncarlosbaez/status/1136647587153338368</a></p>\n<div class=\"inline-preview-twitter\"><div class=\"twitter-tweet\"><a href=\"https://twitter.com/johncarlosbaez/status/1136647587153338368\"><img class=\"twitter-avatar\" src=\"https://pbs.twimg.com/profile_images/1224941370885828608/Ktaz9JLB_normal.jpg\"></a><p>So, finite objects are often called \"finitely presented\" objects.  \n\nOther people call them \"compact\" objects.  Why?   The poset of open sets of a topological space X is a category... and the space X itself is a finite object in this category iff X is compact!\n\n(cont)</p><span>- John Carlos Baez (@johncarlosbaez)</span></div></div>",
+        "id": 196944778,
+        "sender_full_name": "John Baez",
+        "timestamp": 1588968636
+    },
+    {
+        "content": "<p>Compact values of a domain form an important part when you get further into domain theory, too.</p>",
+        "id": 196946748,
+        "sender_full_name": "Dan Doel",
+        "timestamp": 1588969776
+    },
+    {
+        "content": "<p>E.G. you start considering domains where all values are generated as colimits of compact values (so, the compact values form a 'basis').</p>",
+        "id": 196946968,
+        "sender_full_name": "Dan Doel",
+        "timestamp": 1588969875
+    },
+    {
+        "content": "<p>However, per one of your earlier comments, my understanding is that the category of these sorts of domains is <em>not</em> Cartesian closed.</p>",
+        "id": 196947068,
+        "sender_full_name": "Dan Doel",
+        "timestamp": 1588969919
+    },
+    {
+        "content": "<p>(But DCPO is.)</p>",
+        "id": 196947144,
+        "sender_full_name": "Dan Doel",
+        "timestamp": 1588969939
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"277270\">Dan Doel</span> <a href=\"#narrow/stream/229156-practice.3A-applied.20ct/topic/semantics.20of.20recursive.20languages/near/196946968\" title=\"#narrow/stream/229156-practice.3A-applied.20ct/topic/semantics.20of.20recursive.20languages/near/196946968\">said</a>:</p>\n<blockquote>\n<p>E.G. you start considering domains where all values are generated as colimits of compact values (so, the compact values form a 'basis').</p>\n</blockquote>\n<p>accessible category!</p>",
+        "id": 196948508,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1588970717
+    },
+    {
+        "content": "<p><span class=\"user-mention\" data-user-id=\"275901\">@Jules Hedges</span> hmmmmmmmm, interesting that you just retweeted this from yourself <a href=\"https://twitter.com/_julesh_/status/978928091157364738\" title=\"https://twitter.com/_julesh_/status/978928091157364738\">https://twitter.com/_julesh_/status/978928091157364738</a></p>\n<div class=\"inline-preview-twitter\"><div class=\"twitter-tweet\"><a href=\"https://twitter.com/_julesh_/status/978928091157364738\"><img class=\"twitter-avatar\" src=\"https://pbs.twimg.com/profile_images/972424350736486401/RyVTQIgf_normal.jpg\"></a><p>Domain theory is (mostly) long dead but still sometimes a useful way of thinking. It would be really good to read a modern 'retrospective' treatment of it</p><span>- julesh (@_julesh_)</span></div></div>",
+        "id": 196948628,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1588970775
+    },
+    {
+        "content": "<p>do you have something to say 🤨</p>",
+        "id": 196948645,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1588970789
+    },
+    {
+        "content": "<p>Yep, yay for converting people to domain theory</p>",
+        "id": 196948727,
+        "sender_full_name": "Jules Hedges",
+        "timestamp": 1588970843
+    },
+    {
+        "content": "<p>have you heard about step-indexing &amp; synthetic guarded domain theory?</p>",
+        "id": 196948761,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1588970868
+    },
+    {
+        "content": "<p>Nope</p>",
+        "id": 196948836,
+        "sender_full_name": "Jules Hedges",
+        "timestamp": 1588970894
+    },
+    {
+        "content": "<p><a href=\"/user_uploads/21317/nWqouHhSB4Qpilq6iLBOmDos/topos_of_trees.pdf\" title=\"topos_of_trees.pdf\">topos_of_trees.pdf</a></p>",
+        "id": 196948880,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1588970926
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276072\">sarahzrf</span> <a href=\"#narrow/stream/229156-practice.3A-applied.20ct/topic/semantics.20of.20recursive.20languages/near/196948645\" title=\"#narrow/stream/229156-practice.3A-applied.20ct/topic/semantics.20of.20recursive.20languages/near/196948645\">said</a>:</p>\n<blockquote>\n<p>do you have something to say 🤨</p>\n</blockquote>\n<p>Also, I think the most important thing about DCPOs can be summarised like this: the cartesian monoidal structure on the category of DCPOs admits a trace operator</p>",
+        "id": 196948929,
+        "sender_full_name": "Jules Hedges",
+        "timestamp": 1588970954
+    },
+    {
+        "content": "<p>:)</p>",
+        "id": 196948989,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1588970989
+    },
+    {
+        "content": "<p>Ah, I do know a tiny bit about the topos of trees, just not the other words you used. Somewhere deep down my todo list is to try to apply it to repeated games</p>",
+        "id": 196949077,
+        "sender_full_name": "Jules Hedges",
+        "timestamp": 1588971007
+    },
+    {
+        "content": "<p>sure, but that doesn't tell you much about what it is about dcpos that makes that true</p>",
+        "id": 196949093,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1588971016
+    },
+    {
+        "content": "<p>well, the idea about step-indexing is like</p>",
+        "id": 196949233,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1588971105
+    },
+    {
+        "content": "<p>It's true. But I'd <em>really</em> like to see a book on domain theory that uses string diagrams (and I hope I don't have to write it myself, because it sounds like hard work)</p>",
+        "id": 196949253,
+        "sender_full_name": "Jules Hedges",
+        "timestamp": 1588971120
+    },
+    {
+        "content": "<p>so you wanna make a recursive definition, but it's neither inductive nor coinductive, so you can't really make sense of it w/ a typical universal property</p>",
+        "id": 196949382,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1588971189
+    },
+    {
+        "content": "<p>er sorry to clarify i mean like it doesn't satisfy the kind of positivity constraint you need—like say you want to solve a fixed point of a functor C^op × C → C</p>",
+        "id": 196949442,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1588971229
+    },
+    {
+        "content": "<p>I think domain theory is very much alive, cf. <a href=\"https://dl.acm.org/doi/pdf/10.1145/3290349\" title=\"https://dl.acm.org/doi/pdf/10.1145/3290349\">this POPL paper from last year</a>, for instance.</p>",
+        "id": 196949512,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1588971256
+    },
+    {
+        "content": "<p>and okay okay i guess that's the kind of thing you often want ends/coends for, but,</p>",
+        "id": 196949517,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1588971261
+    },
+    {
+        "content": "<p>the step-indexing approach is like</p>",
+        "id": 196949547,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1588971283
+    },
+    {
+        "content": "<p>rather than trying to find a <em>genuine</em> fixed point—define a well-founded sequence of approximations to a fixed point, starting with something undefined and getting better and better</p>",
+        "id": 196949626,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1588971355
+    },
+    {
+        "content": "<p>so rather domain-theoretic in flavor</p>",
+        "id": 196949680,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1588971365
+    },
+    {
+        "content": "<p>and then you can interpret the recursive definition as defining each approximation in reference to the previous one[s]</p>",
+        "id": 196949705,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1588971382
+    },
+    {
+        "content": "<p>then you make your argument parameterized by the index into the sequence of approximations</p>",
+        "id": 196949950,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1588971519
+    },
+    {
+        "content": "<p>and show that it works for each of them</p>",
+        "id": 196949960,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1588971527
+    },
+    {
+        "content": "<p>and then you need to appeal to some kind of compactness property of your intended ultimate goal to say like</p>",
+        "id": 196949996,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1588971544
+    },
+    {
+        "content": "<p>for any given particular case, we only need to know that a finite approximation of the hypothetical fixed point is true</p>",
+        "id": 196950017,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1588971557
+    },
+    {
+        "content": "<p>as i understand it, the name \"step-indexing\" comes from using this for semantics of PLs, and then you do a thing where you're effectively decrementing the index whenever your program takes a step, so that you only have to prove things for runs up to a certain length, or something like that—so the sequence of approximations is indexed by how many steps you can take</p>",
+        "id": 196950247,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1588971678
+    },
+    {
+        "content": "<p>now, what's cool about the topos of trees is that it carries structure that lets you make most of what i just described <em>synthetic</em></p>",
+        "id": 196950345,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1588971724
+    },
+    {
+        "content": "<p>when working internally</p>",
+        "id": 196950396,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1588971773
+    },
+    {
+        "content": "<p>anyway, i havent really gotten my hands dirty with step-indexing in practice, so beware that any or all of what i just said could be wrong <span aria-label=\"ghost\" class=\"emoji emoji-1f47b\" role=\"img\" title=\"ghost\">:ghost:</span></p>",
+        "id": 196950543,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1588971871
+    },
+    {
+        "content": "<p>At some point I worked out the intuition, which I never fully checked, that a dcpo can often be thought of as simply \"a distributive lattice plus an antichain\" -- i.e. it is a distributive lattice with the top cut off. (there may be some finiteness around to make this description work). So this amounts to a set of \"atoms\" of knowledge, some depending on others, and generally you can freely join them, but at a certain point when two atoms become incompatible, you can no longer obtain their join, and consequently, the join of anything above them.</p>",
+        "id": 196957757,
+        "sender_full_name": "Gershom",
+        "timestamp": 1588976950
+    },
+    {
+        "content": "<p>By the way, it's true in general that {having/preserving} filtered colimits is equivalent to {having/preserving} directed colimits, not just in the situation of looking at colimits in preorders.</p>",
+        "id": 196959024,
+        "sender_full_name": "Reid Barton",
+        "timestamp": 1588977952
+    },
+    {
+        "content": "<p>oh, really?</p>",
+        "id": 196959227,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1588978097
+    },
+    {
+        "content": "<p>Let me find a reference</p>",
+        "id": 196959287,
+        "sender_full_name": "Reid Barton",
+        "timestamp": 1588978168
+    },
+    {
+        "content": "<p><a href=\"http://matwbn.icm.edu.pl/ksiazki/bcp/bcp9/bcp919.pdf\" title=\"http://matwbn.icm.edu.pl/ksiazki/bcp/bcp9/bcp919.pdf\">Direct limits and filtered colimits are strongly equivalent in all categories</a> by Andréka–Németi has a proof.</p>",
+        "id": 196959541,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1588978363
+    },
+    {
+        "content": "<p><span class=\"user-mention\" data-user-id=\"276650\">@Gershom</span> Do you mean with an anti-chain subtracted from it?</p>",
+        "id": 196959583,
+        "sender_full_name": "Dan Doel",
+        "timestamp": 1588978384
+    },
+    {
+        "content": "<p>So just so everyone notices, Gershom suggested the following:</p>\n<p><strong>Conjecture:</strong> given a finite dcpo <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>X</mi></mrow><annotation encoding=\"application/x-tex\">X</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathdefault\" style=\"margin-right:0.07847em;\">X</span></span></span></span>, there is a distributive lattice <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>L</mi></mrow><annotation encoding=\"application/x-tex\">L</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathdefault\">L</span></span></span></span> and an embedding <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>X</mi><mo>⊆</mo><mi>L</mi></mrow><annotation encoding=\"application/x-tex\">X \\subseteq L</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8193em;vertical-align:-0.13597em;\"></span><span class=\"mord mathdefault\" style=\"margin-right:0.07847em;\">X</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">⊆</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathdefault\">L</span></span></span></span> such that <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>X</mi></mrow><annotation encoding=\"application/x-tex\">X</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathdefault\" style=\"margin-right:0.07847em;\">X</span></span></span></span> consists of all elements of <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>L</mi></mrow><annotation encoding=\"application/x-tex\">L</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathdefault\">L</span></span></span></span> that are less than all elements of some antichain <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mo>⊆</mo><mi>X</mi></mrow><annotation encoding=\"application/x-tex\">A \\subseteq X</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8193em;vertical-align:-0.13597em;\"></span><span class=\"mord mathdefault\">A</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">⊆</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathdefault\" style=\"margin-right:0.07847em;\">X</span></span></span></span>.</p>",
+        "id": 196959587,
+        "sender_full_name": "John Baez",
+        "timestamp": 1588978388
+    },
+    {
+        "content": "<p>yep, john stated my \"general feeling\" correctly.</p>",
+        "id": 196960181,
+        "sender_full_name": "Gershom",
+        "timestamp": 1588978926
+    },
+    {
+        "content": "<p>Okay.</p>",
+        "id": 196960186,
+        "sender_full_name": "Dan Doel",
+        "timestamp": 1588978934
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276092\">Nathanael Arkor</span> <a href=\"#narrow/stream/229156-practice.3A-applied.20ct/topic/semantics.20of.20recursive.20languages/near/196959541\" title=\"#narrow/stream/229156-practice.3A-applied.20ct/topic/semantics.20of.20recursive.20languages/near/196959541\">said</a>:</p>\n<blockquote>\n<p><a href=\"http://matwbn.icm.edu.pl/ksiazki/bcp/bcp9/bcp919.pdf\" title=\"http://matwbn.icm.edu.pl/ksiazki/bcp/bcp9/bcp919.pdf\">Direct limits and filtered colimits are strongly equivalent in all categories</a> by Andréka–Németi has a proof.</p>\n</blockquote>\n<p>Nice, maybe this is the original proof. Adamek-Rosicky has a proof, similar but probably shorter, though it is somewhat poorly formulated. They don't cite any reference nor is the paper you linked in the bibliography (though they cite some other papers by the same authors). <a href=\"https://stacks.math.columbia.edu/tag/0032\" title=\"https://stacks.math.columbia.edu/tag/0032\">https://stacks.math.columbia.edu/tag/0032</a> has what I think is a correct proof.</p>",
+        "id": 196960304,
+        "sender_full_name": "Reid Barton",
+        "timestamp": 1588979063
+    },
+    {
+        "content": "<p>Actually, I think we may want \"strictly less than\" rather less than or equal. I.e. the antichain gives the first level of conflicting information, not the last level of allowable information.</p>",
+        "id": 196960307,
+        "sender_full_name": "Gershom",
+        "timestamp": 1588979066
+    },
+    {
+        "content": "<p>Okay, I'll just fix that in my statement in case doesn't read down this far.</p>",
+        "id": 196960686,
+        "sender_full_name": "John Baez",
+        "timestamp": 1588979518
+    },
+    {
+        "content": "<p>hmm, statements involving \"strictly less than\" always feel wrong to me :\\</p>",
+        "id": 196961087,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1588979900
+    },
+    {
+        "content": "<p>So what's the lattice look like for a flat dcpo, like the integers?</p>",
+        "id": 196961661,
+        "sender_full_name": "Dan Doel",
+        "timestamp": 1588980559
+    },
+    {
+        "content": "<p>It can't be 'just add top' because that's not distributive, right?</p>",
+        "id": 196961677,
+        "sender_full_name": "Dan Doel",
+        "timestamp": 1588980580
+    },
+    {
+        "content": "<p>Is it <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>P</mi><mo stretchy=\"false\">(</mo><mi mathvariant=\"normal\">Z</mi><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">P(ℤ)</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord mathdefault\" style=\"margin-right:0.13889em;\">P</span><span class=\"mopen\">(</span><span class=\"mord amsrm\">Z</span><span class=\"mclose\">)</span></span></span></span> and the anti-chain is the two-element sets or something?</p>",
+        "id": 196961939,
+        "sender_full_name": "Dan Doel",
+        "timestamp": 1588980808
+    },
+    {
+        "content": "<p>I guess that works.</p>",
+        "id": 196962205,
+        "sender_full_name": "Dan Doel",
+        "timestamp": 1588981103
+    },
+    {
+        "content": "<p>All finite posets are DCPOs, as if a finite subset is directed then it has a top element.<br>\nDoesn't that mean that this DCPO fails to arise from a lattice in that way, due to the pairs of incomparable elements not having meets? <a href=\"/user_uploads/21317/PuUbZBqMju0BvnzKn3EUuIsH/image.png\" title=\"image.png\">image.png</a></p>\n<div class=\"message_inline_image\"><a href=\"/user_uploads/21317/PuUbZBqMju0BvnzKn3EUuIsH/image.png\" title=\"image.png\"><img src=\"/user_uploads/21317/PuUbZBqMju0BvnzKn3EUuIsH/image.png\"></a></div>",
+        "id": 196989569,
+        "sender_full_name": "Jem",
+        "timestamp": 1589027462
+    },
+    {
+        "content": "<p>We do, however, have that every DCPO <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>D</mi></mrow><annotation encoding=\"application/x-tex\">D</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathdefault\" style=\"margin-right:0.02778em;\">D</span></span></span></span> embeds cofinally into <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"false\">{</mo><mi>f</mi><mo>∈</mo><mi>F</mi><mo>∣</mo><mi mathvariant=\"normal\">∃</mi><mi>a</mi><mo>∈</mo><mi>A</mi><mi mathvariant=\"normal\">.</mi><mi>f</mi><mo>≤</mo><mi>a</mi><mo stretchy=\"false\">}</mo></mrow><annotation encoding=\"application/x-tex\">\\{f \\in F \\mid \\exists a \\in A. f \\leq a\\}</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mopen\">{</span><span class=\"mord mathdefault\" style=\"margin-right:0.10764em;\">f</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">∈</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord mathdefault\" style=\"margin-right:0.13889em;\">F</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">∣</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.73354em;vertical-align:-0.0391em;\"></span><span class=\"mord\">∃</span><span class=\"mord mathdefault\">a</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">∈</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.8888799999999999em;vertical-align:-0.19444em;\"></span><span class=\"mord mathdefault\">A</span><span class=\"mord\">.</span><span class=\"mord mathdefault\" style=\"margin-right:0.10764em;\">f</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">≤</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord mathdefault\">a</span><span class=\"mclose\">}</span></span></span></span> for <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>F</mi></mrow><annotation encoding=\"application/x-tex\">F</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathdefault\" style=\"margin-right:0.13889em;\">F</span></span></span></span> the opposite of a frame (hence a distributive lattice) and <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi></mrow><annotation encoding=\"application/x-tex\">A</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathdefault\">A</span></span></span></span> an antichain, assuming choice.<br>\nLet <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>F</mi></mrow><annotation encoding=\"application/x-tex\">F</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathdefault\" style=\"margin-right:0.13889em;\">F</span></span></span></span> consist of the closed subsets of <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>D</mi></mrow><annotation encoding=\"application/x-tex\">D</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathdefault\" style=\"margin-right:0.02778em;\">D</span></span></span></span> under the Scott topology (i.e. those downwards-closed subsets which are also directed-complete), and <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi></mrow><annotation encoding=\"application/x-tex\">A</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathdefault\">A</span></span></span></span> consist of the sets <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"false\">{</mo><mi>a</mi><mo stretchy=\"false\">}</mo><mo>↓</mo></mrow><annotation encoding=\"application/x-tex\">\\{a\\}\\downarrow</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mopen\">{</span><span class=\"mord mathdefault\">a</span><span class=\"mclose\">}</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">↓</span></span></span></span> for <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>a</mi></mrow><annotation encoding=\"application/x-tex\">a</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.43056em;vertical-align:0em;\"></span><span class=\"mord mathdefault\">a</span></span></span></span> the maximal elements of <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>D</mi></mrow><annotation encoding=\"application/x-tex\">D</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathdefault\" style=\"margin-right:0.02778em;\">D</span></span></span></span>. Then the inclusion map <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>d</mi><mo>↦</mo><mo stretchy=\"false\">{</mo><mi>d</mi><mo stretchy=\"false\">}</mo><mo>↓</mo></mrow><annotation encoding=\"application/x-tex\">d \\mapsto \\{d\\}\\downarrow</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.70544em;vertical-align:-0.011em;\"></span><span class=\"mord mathdefault\">d</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">↦</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mopen\">{</span><span class=\"mord mathdefault\">d</span><span class=\"mclose\">}</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">↓</span></span></span></span> is injective (as long as we require that <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>D</mi></mrow><annotation encoding=\"application/x-tex\">D</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathdefault\" style=\"margin-right:0.02778em;\">D</span></span></span></span> was a poset, and not merely preordered), monotone, and cofinal by construction.<br>\n(A map between postets is cofinal if every element of the codomain is bounded above by some element of the image. I don't know if that's widespread terminology.)</p>",
+        "id": 196992896,
+        "sender_full_name": "Jem",
+        "timestamp": 1589032747
+    },
+    {
+        "content": "<p>A map on functions can be given by taking image then downward closure, which makes it functorial, and in fact gives us that the family of embeddings is a natural transformation from Id.</p>",
+        "id": 196994845,
+        "sender_full_name": "Jem",
+        "timestamp": 1589035403
+    },
+    {
+        "content": "<p>what about DCPOs with least element?</p>",
+        "id": 196995492,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1589036223
+    },
+    {
+        "content": "<p>in a finite poset w/ a least element, any two things are gonna have a meet, right?</p>",
+        "id": 196995508,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1589036271
+    },
+    {
+        "content": "<p>You can add a least element to the given example</p>",
+        "id": 196995513,
+        "sender_full_name": "Reid Barton",
+        "timestamp": 1589036279
+    },
+    {
+        "content": "<p>The top two guys have a common lower bound, but not a greatest one</p>",
+        "id": 196995554,
+        "sender_full_name": "Reid Barton",
+        "timestamp": 1589036292
+    },
+    {
+        "content": "<p>wait, duh lol</p>",
+        "id": 196995556,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1589036304
+    },
+    {
+        "content": "<p>The other stuff stays the same if you replace \"directed\" with \"directed or empty\", too.</p>",
+        "id": 196995565,
+        "sender_full_name": "Jem",
+        "timestamp": 1589036326
+    },
+    {
+        "content": "<p>obviously glb stands for least lower bound</p>",
+        "id": 196995570,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1589036333
+    },
+    {
+        "content": "<blockquote>\n<p>the closed subsets of <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>D</mi></mrow><annotation encoding=\"application/x-tex\">D</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathdefault\" style=\"margin-right:0.02778em;\">D</span></span></span></span> under the Scott topology (i.e. those downwards-closed subsets which are also directed-complete)</p>\n</blockquote>\n<p>hmm, the characterization i know of the scott topology is that the opens are the sets whose characteristic functions are scott-continuous—that's [classically] equivalent to this?</p>",
+        "id": 196995656,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1589036434
+    },
+    {
+        "content": "<p>What I think Gershom maybe noticed, and I don't know whether it is true but it seems plausible from a few examples, is that this sort of thing doesn't occur in the DCPOs you get from the denotations of types in Haskell for example.</p>",
+        "id": 196995683,
+        "sender_full_name": "Reid Barton",
+        "timestamp": 1589036499
+    },
+    {
+        "content": "<p>Another question one could ask is whether computable functions have to preserve meets that exist, or joins that exist.</p>",
+        "id": 196995749,
+        "sender_full_name": "Reid Barton",
+        "timestamp": 1589036564
+    },
+    {
+        "content": "<p>For some specific notion of \"computable\" at least.</p>",
+        "id": 196995761,
+        "sender_full_name": "Reid Barton",
+        "timestamp": 1589036597
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276480\">Reid Barton</span> <a href=\"#narrow/stream/229156-practice.3A-applied.20ct/topic/semantics.20of.20recursive.20languages/near/196995683\" title=\"#narrow/stream/229156-practice.3A-applied.20ct/topic/semantics.20of.20recursive.20languages/near/196995683\">said</a>:</p>\n<blockquote>\n<p>What I think Gershom maybe noticed, and I don't know whether it is true but it seems plausible from a few examples, is that this sort of thing doesn't occur in the DCPOs you get from the denotations of types in Haskell for example.</p>\n</blockquote>\n<p>i would imagine that's it <span aria-label=\"upside down\" class=\"emoji emoji-1f643\" role=\"img\" title=\"upside down\">:upside_down:</span></p>",
+        "id": 196995770,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1589036615
+    },
+    {
+        "content": "<p>For example \"parallel OR\" with both <code>True || undefined = True</code> and <code>undefined || True = True</code> is continuous, and it's computable in a model where you can interleave the computation of the two arguments, but you can't define it in (the pure fragment of) Haskell because in Haskell you have to commit to which argument you want to compute first. (For purposes of modelling in DCPOs, maybe assume the function is curried so it accepts a pair.) Maybe you can detect this difference as failing to preserve meets or joins.</p>",
+        "id": 196995862,
+        "sender_full_name": "Reid Barton",
+        "timestamp": 1589036729
+    },
+    {
+        "content": "<p>The parallel one doesn't preserve meets, I think.</p>",
+        "id": 196996045,
+        "sender_full_name": "Dan Doel",
+        "timestamp": 1589037000
+    },
+    {
+        "content": "<p>really? i thought the parallel one existed in dcpos and that was kind of a <em>problem</em> because it meant you didn't get full abstraction</p>",
+        "id": 196996128,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1589037109
+    },
+    {
+        "content": "<p>It does exist in DCPOs.</p>",
+        "id": 196996131,
+        "sender_full_name": "Reid Barton",
+        "timestamp": 1589037117
+    },
+    {
+        "content": "<p>er, wait, actually now i cant remember why that would break full abstraction, maybe i meant definability</p>",
+        "id": 196996171,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1589037142
+    },
+    {
+        "content": "<p>So the question is whether there's a smaller (and in particular, non-full) subcategory of DCPOs through which the semantics of Haskell programs also factors.</p>",
+        "id": 196996172,
+        "sender_full_name": "Reid Barton",
+        "timestamp": 1589037143
+    },
+    {
+        "content": "<p>I don't know what full abstraction is; is it trying to say the maps between semantic objects all arise from actual programs?</p>",
+        "id": 196996199,
+        "sender_full_name": "Reid Barton",
+        "timestamp": 1589037214
+    },
+    {
+        "content": "<p>I think they must preserve joins because e.g. {(true,⊥), (⊥,true), (true,true)} is directed, and they must be continuous.</p>",
+        "id": 196996200,
+        "sender_full_name": "Dan Doel",
+        "timestamp": 1589037230
+    },
+    {
+        "content": "<p>full abstraction means that observationally equivalent (i.e., operationally identically behaving) programs get mapped to equal denotations</p>",
+        "id": 196996241,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1589037262
+    },
+    {
+        "content": "<p>but like i said, i can't remember now why parallel or would break that, so maybe the property i was remembering was the thing you said</p>",
+        "id": 196996281,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1589037318
+    },
+    {
+        "content": "<p>that said, i do remember that the dcpo model of pcf fails to be fully abstract for <em>some</em> reason</p>",
+        "id": 196996338,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1589037367
+    },
+    {
+        "content": "<p>I guess that works in general? If you have a and b with a join in a DCPO, then {a,b,a∨b} is directed with sup a∨b, and so it must be preserved by continuous functions.</p>",
+        "id": 196996343,
+        "sender_full_name": "Dan Doel",
+        "timestamp": 1589037384
+    },
+    {
+        "content": "<p>because it was a major open problem for a long time to provide a fully abstract model without \"cheating\" by quotienting the syntax or something</p>",
+        "id": 196996347,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1589037388
+    },
+    {
+        "content": "<p>okay yeah see the last line here <a href=\"/user_uploads/21317/AVCBUxExRot5UVRLGUf-I5lZ/image.png\" title=\"image.png\">image.png</a></p>\n<div class=\"message_inline_image\"><a href=\"/user_uploads/21317/AVCBUxExRot5UVRLGUf-I5lZ/image.png\" title=\"image.png\"><img src=\"/user_uploads/21317/AVCBUxExRot5UVRLGUf-I5lZ/image.png\"></a></div>",
+        "id": 196996364,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1589037461
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"277270\">Dan Doel</span> <a href=\"#narrow/stream/229156-practice.3A-applied.20ct/topic/DCPOs/near/196996343\" title=\"#narrow/stream/229156-practice.3A-applied.20ct/topic/DCPOs/near/196996343\">said</a>:</p>\n<blockquote>\n<p>I guess that works in general? If you have a and b with a join in a DCPO, then {a,b,a∨b} is directed with sup a∨b, and so it must be preserved by continuous functions.</p>\n</blockquote>\n<p>But all you learn is that {f(a), f(b), f(a∨b)} has sup f(a∨b), which you already knew because f is order preserving.</p>",
+        "id": 196996441,
+        "sender_full_name": "Reid Barton",
+        "timestamp": 1589037588
+    },
+    {
+        "content": "<p>Ah, right. So, it's an upper bound, but it might not be least.</p>",
+        "id": 196996509,
+        "sender_full_name": "Dan Doel",
+        "timestamp": 1589037691
+    },
+    {
+        "content": "<p>well, it'll be least, it just might not be least for f(a) and f(b) alone</p>",
+        "id": 196996743,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1589037995
+    },
+    {
+        "content": "<p>So if parallel or is needed for full abstraction, I guess it must be because it lets you operationally distinguish two terms you otherwise couldn't?</p>",
+        "id": 196996826,
+        "sender_full_name": "Reid Barton",
+        "timestamp": 1589038171
+    },
+    {
+        "content": "<p>You can write a program that checks whether a function is the parallel-or operator, and then gate behaviour on whether the parallel-or operator has been passed in. Something like <code>t_1 := if is_por { true } else { false}</code> and <code>t_2 := if is_por { false } else { false}</code>. You can't distinguish between <code>t_1</code> and <code>t_2</code> operationally, because there's no syntax for parallel-or, but you can denotationally.</p>",
+        "id": 196997049,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1589038494
+    },
+    {
+        "content": "<p>So really, distinguish denotationally rather than operationally.</p>",
+        "id": 196997208,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1589038748
+    },
+    {
+        "content": "<p>Now I'm confused. I thought that there was some fixed mapping from program syntax to denotations. If the denotational semantics fails to be fully abstract for PCF, it means there are two different programs with the same operational behavior but different denotations. If I extend the language by adding parallel or, I don't change the denotations of these programs. Right?</p>",
+        "id": 196997290,
+        "sender_full_name": "Reid Barton",
+        "timestamp": 1589038899
+    },
+    {
+        "content": "<p>right, but now they no longer have \"the same operational behavior\"</p>",
+        "id": 196997338,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1589038938
+    },
+    {
+        "content": "<p>to be a little more precise, observational equivalence is about distinguishability by the rest of the language</p>",
+        "id": 196997348,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1589038956
+    },
+    {
+        "content": "<p>Yes, because now there's some context (presumably involving parallel or) which distinguishes them</p>",
+        "id": 196997349,
+        "sender_full_name": "Reid Barton",
+        "timestamp": 1589038960
+    },
+    {
+        "content": "<p>OK, I see that <code>t_1</code> and <code>t_2</code> would be an example if I knew how to implement <code>is_por</code>.</p>",
+        "id": 196997371,
+        "sender_full_name": "Reid Barton",
+        "timestamp": 1589039018
+    },
+    {
+        "content": "<p>More specifically, <code>is_por</code> needs to send parallel or to True and anything definable without parallel or to False or undefined</p>",
+        "id": 196997453,
+        "sender_full_name": "Reid Barton",
+        "timestamp": 1589039112
+    },
+    {
+        "content": "<p><a href=\"/user_uploads/21317/Ut3bHdWqjp6w2SXGuw4d1p14/image.png\" title=\"image.png\">image.png</a></p>\n<div class=\"message_inline_image\"><a href=\"/user_uploads/21317/Ut3bHdWqjp6w2SXGuw4d1p14/image.png\" title=\"image.png\"><img src=\"/user_uploads/21317/Ut3bHdWqjp6w2SXGuw4d1p14/image.png\"></a></div>",
+        "id": 196997552,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1589039190
+    },
+    {
+        "content": "<p><span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi>T</mi><mi>i</mi></msub></mrow><annotation encoding=\"application/x-tex\">T_i</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.83333em;vertical-align:-0.15em;\"></span><span class=\"mord\"><span class=\"mord mathdefault\" style=\"margin-right:0.13889em;\">T</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.31166399999999994em;\"><span style=\"top:-2.5500000000000003em;margin-left:-0.13889em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathdefault mtight\">i</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span></span></span></span> acts similarly to <code>t_i</code> here, with <code>is_por</code> inlined.</p>",
+        "id": 196997567,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1589039246
+    },
+    {
+        "content": "<p>OK, right. For some reason I thought it would have to be more complicated.</p>",
+        "id": 196997577,
+        "sender_full_name": "Reid Barton",
+        "timestamp": 1589039274
+    },
+    {
+        "content": "<p>So informally, we could say that PCF has the ability to specify a function it cannot define</p>",
+        "id": 196997710,
+        "sender_full_name": "Reid Barton",
+        "timestamp": 1589039403
+    },
+    {
+        "content": "<p>Yes, and that in the semantics it <em>can</em> be.</p>",
+        "id": 196997731,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1589039473
+    },
+    {
+        "content": "<p>But another way to fix this could be to adjust the denotational semantics to make the denotations of these programs equal, say by restricting the morphisms to ones which preserve meets.</p>",
+        "id": 196997805,
+        "sender_full_name": "Reid Barton",
+        "timestamp": 1589039585
+    },
+    {
+        "content": "<p>It seems obvious enough that it should have been tried already.</p>",
+        "id": 196997808,
+        "sender_full_name": "Reid Barton",
+        "timestamp": 1589039591
+    },
+    {
+        "content": "<p>So, probably there is a reason that it doesn't work...</p>",
+        "id": 196997812,
+        "sender_full_name": "Reid Barton",
+        "timestamp": 1589039606
+    },
+    {
+        "content": "<p>For example maybe it's not actually true that functions definable in PCF preserve meets.</p>",
+        "id": 196997821,
+        "sender_full_name": "Reid Barton",
+        "timestamp": 1589039637
+    },
+    {
+        "content": "<p><del>Let me answer @Jem with how it works in the case given, which is not a counterexample.  You have a distributive lattice and an antichain, and what you want is every element not greater than or equal to the antichain (which is a bit different than what john wrote above) to be your DCPO. </del></p>\n<p><a href=\"/user_uploads/21317/6ccCycVrfylm4kWOnjLsRq9k/image.png\" title=\"image.png\">image.png</a></p>\n<div class=\"message_inline_image\"><a href=\"/user_uploads/21317/6ccCycVrfylm4kWOnjLsRq9k/image.png\" title=\"image.png\"><img src=\"/user_uploads/21317/6ccCycVrfylm4kWOnjLsRq9k/image.png\"></a></div>",
+        "id": 197000344,
+        "sender_full_name": "Gershom",
+        "timestamp": 1589042537
+    },
+    {
+        "content": "<p>That's the bruns-lakser embedding of the non-lattice X (which maybe should be called the \"confused poset\") into a distributive lattice (omitting bottom). again, just the downsets of the join-irreducibles (which in this case is true of all elements). Now we can recover X by taking everything not &gt;= the element \"ab\". So X is the distributive envelope of X minus the \"conflicted\" information when both a and b occur. We can read it as \"you can get to c from a, and you can get to c from b, but you can't have a and b at once.\" and similarly for \"d\".</p>",
+        "id": 197000437,
+        "sender_full_name": "Gershom",
+        "timestamp": 1589042752
+    },
+    {
+        "content": "<p>With the converse statement, we can instead of course take everything that is &gt;= ca or db -- i.e. instead of picking out the minimal conflicted elements we pick out the maximal consistent elements.</p>",
+        "id": 197000508,
+        "sender_full_name": "Gershom",
+        "timestamp": 1589042822
+    },
+    {
+        "content": "<p>Even if you define distributive lattice to only require binary meets/joins, don't you still need to explicitly exclude the bottom element of the lattice, as well as elements which are at least the antichain? The pictured poset doesn't have a meet for ca and db.</p>",
+        "id": 197000888,
+        "sender_full_name": "Jem",
+        "timestamp": 1589043441
+    },
+    {
+        "content": "<p>I don't understand how this is an embedding; what happened to the edge <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>a</mi><mo>≤</mo><mi>d</mi></mrow><annotation encoding=\"application/x-tex\">a \\le d</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.7719400000000001em;vertical-align:-0.13597em;\"></span><span class=\"mord mathdefault\">a</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">≤</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.69444em;vertical-align:0em;\"></span><span class=\"mord mathdefault\">d</span></span></span></span>?</p>",
+        "id": 197000895,
+        "sender_full_name": "Reid Barton",
+        "timestamp": 1589043469
+    },
+    {
+        "content": "<p>yeah, i think your diagram is a bit mangled</p>",
+        "id": 197001015,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1589043641
+    },
+    {
+        "content": "<p>Damnit, let me redraw the diagram.</p>",
+        "id": 197001020,
+        "sender_full_name": "Gershom",
+        "timestamp": 1589043653
+    },
+    {
+        "content": "<p>yep its a real counterexample, and what i sketched is wrong. here's the right embedding (which coincides with dedekind macneillie in this case) and you can't \"cut out\" the bits you need with just an antichain.<br>\n<a href=\"user_uploads/21317/TlZd1RP4IHGAZglgqTOSsWc6/IMG_3761.jpg\" title=\"user_uploads/21317/TlZd1RP4IHGAZglgqTOSsWc6/IMG_3761.jpg\">IMG_3761.jpg</a></p>\n<div class=\"message_inline_image\"><a href=\"user_uploads/21317/TlZd1RP4IHGAZglgqTOSsWc6/IMG_3761.jpg\" title=\"IMG_3761.jpg\"><img src=\"user_uploads/21317/TlZd1RP4IHGAZglgqTOSsWc6/IMG_3761.jpg\"></a></div>",
+        "id": 197001604,
+        "sender_full_name": "Gershom",
+        "timestamp": 1589044327
+    },
+    {
+        "content": "<p>Indeed the argument is simple enough -- since every finite poset is a dcpo then obviously not every finite poset is given by a distributive completion  and an antichain. I wonder if I was thinking of something else I read, or just totally off base.</p>",
+        "id": 197001655,
+        "sender_full_name": "Gershom",
+        "timestamp": 1589044435
+    },
+    {
+        "content": "<p>In this case the interesting bit is \"you can't have a and b together,  unless they are \"resolved\" by either c or d. so things that are not compatible can be made compatible in multiple ways.</p>",
+        "id": 197001746,
+        "sender_full_name": "Gershom",
+        "timestamp": 1589044486
+    },
+    {
+        "content": "<p>Hrmm.. does what I sketched work for algebraic domains -- aka those where every element is the supremum of compact elements below it?</p>",
+        "id": 197002592,
+        "sender_full_name": "Gershom",
+        "timestamp": 1589045353
+    },
+    {
+        "content": "<p>Isn't this example an algebraic domain?</p>",
+        "id": 197002794,
+        "sender_full_name": "Dan Doel",
+        "timestamp": 1589045519
+    },
+    {
+        "content": "<p>I was trying to figure out if something like that ruled out this example, but it seems like it doesn't.</p>",
+        "id": 197002846,
+        "sender_full_name": "Dan Doel",
+        "timestamp": 1589045572
+    },
+    {
+        "content": "<p>Isn't every finite poset an algebraic domain, because any directed subset has a top element, hence the join of a directed subset is in the directed subset?</p>",
+        "id": 197002900,
+        "sender_full_name": "Jem",
+        "timestamp": 1589045660
+    },
+    {
+        "content": "<p>I think so. Every element of a finite poset is compact, so the whole poset is a compact basis for itself. Or something like that.</p>",
+        "id": 197002977,
+        "sender_full_name": "Dan Doel",
+        "timestamp": 1589045827
+    },
+    {
+        "content": "<p>ok now i'm more confused than ever. if the definition of \"algebraic domain\" is \"every element is the supremum of compact elements below it\", then in the original diagram, the compact elements below \"c\" are \"a\" and \"b\" and they don't have a supremum in X, right? or am i misunderstanding the definition?</p>",
+        "id": 197003121,
+        "sender_full_name": "Gershom",
+        "timestamp": 1589046020
+    },
+    {
+        "content": "<p>It's the elements 'way below' it. But compact elements are 'way below' themselves.</p>",
+        "id": 197003136,
+        "sender_full_name": "Dan Doel",
+        "timestamp": 1589046081
+    },
+    {
+        "content": "<p>The fact that it's written &lt;&lt; doesn't help, though.</p>",
+        "id": 197003261,
+        "sender_full_name": "Dan Doel",
+        "timestamp": 1589046309
+    },
+    {
+        "content": "<p>whoaa i think the compactness theorem of FOL says that the proset of theories ordered by reverse semantic consequence—i.e., T ≤ T' iff T' ⊨ T—has a compact top element</p>",
+        "id": 197003558,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1589046832
+    },
+    {
+        "content": "<p>er, i mean, you have to do a little bit of work to establish the equivalence, but i think they're roughly equivalent statements</p>",
+        "id": 197003623,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1589046946
+    },
+    {
+        "content": "<p>Oh that's cute! Which version of FO compactness do you have in mind ? \"If <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>T</mi><mo>⊢</mo><mi mathvariant=\"normal\">⊥</mi></mrow><annotation encoding=\"application/x-tex\">T \\vdash \\bot</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.69444em;vertical-align:0em;\"></span><span class=\"mord mathdefault\" style=\"margin-right:0.13889em;\">T</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">⊢</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.69444em;vertical-align:0em;\"></span><span class=\"mord\">⊥</span></span></span></span>, then there is a finitely generated <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msup><mi>T</mi><mo lspace=\"0em\" mathvariant=\"normal\" rspace=\"0em\">′</mo></msup></mrow><annotation encoding=\"application/x-tex\">T'</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.751892em;vertical-align:0em;\"></span><span class=\"mord\"><span class=\"mord mathdefault\" style=\"margin-right:0.13889em;\">T</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.751892em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\">′</span></span></span></span></span></span></span></span></span></span></span></span> s.t. <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msup><mi>T</mi><mo lspace=\"0em\" mathvariant=\"normal\" rspace=\"0em\">′</mo></msup><mo>⊢</mo><mi mathvariant=\"normal\">⊥</mi></mrow><annotation encoding=\"application/x-tex\">T' \\vdash \\bot</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.751892em;vertical-align:0em;\"></span><span class=\"mord\"><span class=\"mord mathdefault\" style=\"margin-right:0.13889em;\">T</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.751892em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\">′</span></span></span></span></span></span></span></span></span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">⊢</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.69444em;vertical-align:0em;\"></span><span class=\"mord\">⊥</span></span></span></span>\" ? (it seems a bit sad to me to restrict to deriving <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"normal\">⊥</mi></mrow><annotation encoding=\"application/x-tex\">\\bot</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.69444em;vertical-align:0em;\"></span><span class=\"mord\">⊥</span></span></span></span>)</p>",
+        "id": 197057112,
+        "sender_full_name": "zigzag",
+        "timestamp": 1589119448
+    },
+    {
+        "content": "<p>well, given that i phrased using ⊨, we'd have T ⊨ ⊥ instead, which is equivalent to not having a model</p>",
+        "id": 197057537,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1589120099
+    },
+    {
+        "content": "<p>without need for completeness</p>",
+        "id": 197057547,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1589120124
+    },
+    {
+        "content": "<p>er, to be clear, i'm understanding T ⊨ T' here to mean Mod(T) ⊆ Mod(T')</p>",
+        "id": 197057606,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1589120177
+    },
+    {
+        "content": "<p>so completeness is T ⊨ φ &lt;-&gt; T ⊢ φ</p>",
+        "id": 197057623,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1589120217
+    },
+    {
+        "content": "<p>Yes sorry, I am used to converting to the variant in terms of <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>⊢</mo></mrow><annotation encoding=\"application/x-tex\">\\vdash</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.69444em;vertical-align:0em;\"></span><span class=\"mrel\">⊢</span></span></span></span>, and why that's called compactness is maybe less immediate from a formal pov :) For (classical/intuitionistic) FOL, I like to do away with models (so that I don't have to think about what notion my interlocutor is thinking of (Tarskian, Kripke, ...)) when I can and think of the statement proven directly \"by induction over a proof-tree\".</p>",
+        "id": 197058665,
+        "sender_full_name": "zigzag",
+        "timestamp": 1589121153
+    },
+    {
+        "content": "<p>yeah, me too ;)</p>",
+        "id": 197058679,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1589121169
+    },
+    {
+        "content": "<p>By the way, what I think  I  may have been thinking of is not DCPOs but the much more specialized gadgets of prime algebraic domains (since those come up in the event structure stuff i was looking at) <a href=\"https://www.cl.cam.ac.uk/~gw104/REPN-updated.pdf\" title=\"https://www.cl.cam.ac.uk/~gw104/REPN-updated.pdf\">https://www.cl.cam.ac.uk/~gw104/REPN-updated.pdf</a> --  but again, given  my track record here, who knows.</p>",
+        "id": 197076276,
+        "sender_full_name": "Gershom",
+        "timestamp": 1589142145
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276072\">sarahzrf</span> <a href=\"#narrow/stream/229156-practice.3A-applied.20ct/topic/DCPOs/near/196936947\">said</a>:</p>\n<blockquote>\n<p>it's why i can focus better on programming than on reading about math, say</p>\n</blockquote>\n<p>Yes, I think it's an ADD thing (I don't have the H).  The computer keeps interacting with you, telling you interesting ways in which your code isn't right yet.  It's a two-way conversation, not a monologue.  Like a very abstract video game, one that interacts without pictures or natural language.</p>",
+        "id": 199450060,
+        "sender_full_name": "Hendrik Boom",
+        "timestamp": 1591072967
+    },
+    {
+        "content": "<p>i like to joke that coq is the world's greatest puzzle game</p>",
+        "id": 199505136,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1591110095
+    },
+    {
+        "content": "<p>i don't know that i specifically \"have the H\" either—i want to say that at some point they stopped bothering to keep track of the difference? i'm not sure though.</p>",
+        "id": 199505342,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1591110155
+    },
+    {
+        "content": "<p>(i guess it also depends on who \"they\" is)</p>",
+        "id": 199505363,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1591110165
+    },
+    {
+        "content": "<p>It's no joke. I like to learn languages by reading other folks' code. Every time I find a Coq file or library to study, I invariably run into a construct I've never seen before. So I look in the reference manual, the imported libraries, maybe I find it and in trying to understanding that construct, encounter 3-4 more I've never seen before. And so on. It's a massive, distributed puzzle..</p>",
+        "id": 199522076,
+        "sender_full_name": "Rich Hilliard",
+        "timestamp": 1591117178
+    },
+    {
+        "content": "<p>so i think explaining stuff in this topic is where it really clicked for me that like... operational semantics of PLs are basically describing how programs give rise to <em>processes</em>, and then a ton of the time, difficulties in finding denotational semantics stem basically from trying to cram process-nature into the math world</p>",
+        "id": 200031218,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1591547376
+    },
+    {
+        "content": "<p>and every time i explain something related, it just gets more and more cemented in my head</p>",
+        "id": 200031267,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1591547410
+    },
+    {
+        "content": "<p>i really like this pov</p>",
+        "id": 200031273,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1591547420
+    },
+    {
+        "content": "<p>i think it explains very well why brouwerian math applies so often</p>",
+        "id": 200031297,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1591547470
+    },
+    {
+        "content": "<p>and but so</p>",
+        "id": 200031362,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1591547531
+    },
+    {
+        "content": "<p>i stumbled on <a href=\"https://golem.ph.utexas.edu/category/2006/08/categorifying_cccs_seeing_comp.html\">that one ncat cafe post</a> again where <span class=\"user-mention\" data-user-id=\"275920\">@John Baez</span> was bemoaning the apparent destruction of \"computation\" itself in quotienting together conversion classes of terms to form a CCC out of the simply-typed lambda calc</p>",
+        "id": 200031419,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1591547631
+    },
+    {
+        "content": "<p>&amp; how reduction ought to be higher cells, etc, which ties in with some work these days on higher dimensional rewriting i think??</p>",
+        "id": 200031570,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1591547820
+    },
+    {
+        "content": "<p>so now i have some vague stuff buzzing around in my head like...</p>\n<ul>\n<li>if a bunch of constructions in pl theory are trying to cope with lack of process-nature in mathematical objects</li>\n<li>but higher categories bake in process-nature; then</li>\n<li>i wonder if there are many constructions in pl theory that are basically \"colimits in Set\"-style lower-category reflections of lax stuff that's more natural?</li>\n</ul>",
+        "id": 200031796,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1591548132
+    },
+    {
+        "content": "<p>i wonder if <span class=\"user-mention\" data-user-id=\"297784\">@Jonathan Sterling</span> has any input on this</p>",
+        "id": 200031881,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1591548306
+    },
+    {
+        "content": "<p>Be careful what you wish for! :)</p>\n<p>The idea of reductions as higher cells instead of equations can play an important role in the study of computation; this approach, for instance, can be used in combination with homological tools to compute invariants of rewriting presentations of algebraic theories --- for instance, placing bounds on the number of axioms needed to present a given theory.</p>\n<p>It is currently unclear whether, or to what degree, the higher dimensional perspective will benefit programming languages. I am optimistic, but I think that \"every reduction is a higher cell\" is going to be definitely too naive --- because some reductions are more \"important\" than others. Many reductions in programming languages are not interesting and are mere technical details, whereas some reductions are extremely important --- even so important that the \"models\" we use to study programming languages rarely validate these reductions. These reductions are called, in the field, \"fold-unfold\" reductions and have to do with recursive types and fixed points. A reasonable hypothesis is that _all other_ reductions should be treated as exact equations, but these fold-unfold reductions should be thought of in a different (perhaps higher dimensional) way --- but it is still super unclear how all this will shake out.</p>\n<p>Some people like to say that even alpha renaming of variables is a \"reduction\" that should be a higher cell... My opinion is that this perspective is irrational, because the existence of alpha renaming is a consequence of a given formal encoding of a language and doesn't reflect any decisive aspects of the language. Therefore, I think the most important thing will be to study the input of higher dimensional ideas on programming languages in a way that is very conscious of the open problems in the discipline, and in a way that can be explained to experts in the discipline (who usually know very little, if any, mathematics). This seems to be necessary in order to tell apart the \"cool but useless\" and the \"cool but decisive\" ways to apply higher dimensional ideas to programming languages.</p>",
+        "id": 200038803,
+        "sender_full_name": "Jonathan Sterling",
+        "timestamp": 1591558607
+    },
+    {
+        "content": "<p>hmm, that's interesting, but i'm not sure how much it bears on the particular POV i meant to ask about <span aria-label=\"thinking\" class=\"emoji emoji-1f914\" role=\"img\" title=\"thinking\">:thinking:</span></p>",
+        "id": 200044276,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1591566689
+    },
+    {
+        "content": "<p>or, well, let me rephrase: why would you say that \"A reasonable hypothesis is that _all other_ reductions should be treated as exact equations\"?</p>",
+        "id": 200044494,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1591566995
+    },
+    {
+        "content": "<p>Here's an argument: this is essentially the precedent set by intensional type theory. α, β and some η rules are exact and just happen automatically, because they are decidable, and that is convenient. The higher dimensional structure ('propositional equality') is there for things like undecidable reductions that you must prove by induction. When you move into homotopy/cubical stuff, the higher stuff gives computational evidence of other 'equations' that are hard/impossible to decide.</p>\n<p>And if you want to change the precedent, what is gained by making people manually specify that 'x = y' by some β reduction, say? You might want higher-dimensional (directed) structure in your language because it's nice for modelling operational semantics of a language you're describing within it. But what is the benefit of making people write down the steps in the operational semantics of the meta language to prove an equation between terms, when the computer could figure it out?</p>",
+        "id": 200046444,
+        "sender_full_name": "Dan Doel",
+        "timestamp": 1591570082
+    },
+    {
+        "content": "<p>i don't think i suggested any such thing <span aria-label=\"mischievous\" class=\"emoji emoji-1f61b\" role=\"img\" title=\"mischievous\">:mischievous:</span></p>",
+        "id": 200046551,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1591570309
+    },
+    {
+        "content": "<p>for one thing, i'm not talking about when you work internally to a system—i'm talking about when you give denotational semantics to an object language</p>",
+        "id": 200046607,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1591570380
+    },
+    {
+        "content": "<p>Okay, so there was no reason for bringing up the CCC thing?</p>",
+        "id": 200046616,
+        "sender_full_name": "Dan Doel",
+        "timestamp": 1591570388
+    },
+    {
+        "content": "<p>er, sorry, i meant i don't think i suggested any such thing as \"making people write down\" etc</p>",
+        "id": 200046625,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1591570418
+    },
+    {
+        "content": "<p>Anyhow, I was trying to answer what I thought the thing you quoted meant.</p>",
+        "id": 200047052,
+        "sender_full_name": "Dan Doel",
+        "timestamp": 1591571107
+    },
+    {
+        "content": "<p>Perhaps that confirms that it wasn't what you were talking about, unless Jon meant something else.</p>",
+        "id": 200047100,
+        "sender_full_name": "Dan Doel",
+        "timestamp": 1591571172
+    },
+    {
+        "content": "<p>For cases where you want to explicitly reason about operation, higher dimentional stuff also seems useful (and John Baez has a cool paper on it). I'm not sure I'd call it \"denotational semantics\" just because it's math, though.</p>",
+        "id": 200047304,
+        "sender_full_name": "Dan Doel",
+        "timestamp": 1591571603
+    },
+    {
+        "content": "<p>but it's denotation <span aria-label=\"thinking\" class=\"emoji emoji-1f914\" role=\"img\" title=\"thinking\">:thinking:</span></p>",
+        "id": 200047377,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1591571745
+    },
+    {
+        "content": "<p><a href=\"https://arxiv.org/abs/1905.05636\">https://arxiv.org/abs/1905.05636</a> There's the Baez paper, if you haven't seen it.</p>",
+        "id": 200047441,
+        "sender_full_name": "Dan Doel",
+        "timestamp": 1591571881
+    },
+    {
+        "content": "<p>So I guess an alternate question is: if you describe the stuff in an operational semantics as forming a higher dimensional category, why does it become 'denotational semantics'?</p>",
+        "id": 200048230,
+        "sender_full_name": "Dan Doel",
+        "timestamp": 1591573264
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276072\">sarahzrf</span> <a href=\"#narrow/stream/229156-practice.3A-applied.20ct/topic/DCPOs/near/200044494\">said</a>:</p>\n<blockquote>\n<p>or, well, let me rephrase: why would you say that \"A reasonable hypothesis is that _all other_ reductions should be treated as exact equations\"?</p>\n</blockquote>\n<p>The reason I think this is a reasonable hypothesis is that we have found no interesting theorems about programming languages that hinge on the other equations holding only weakly, whereas much of modern PL hinges precisely on the fold-unfold equation being weak. It may of course turn out that it is best for everything to be weak, but at a time when we are so ignorant of the _conceptual_ aspects of PL, I find it safest to base my hypothesis on the data I currently have.</p>",
+        "id": 200048673,
+        "sender_full_name": "Jonathan Sterling",
+        "timestamp": 1591574147
+    },
+    {
+        "content": "<p>I should weaken or qualify my last remark --- there is plenty of interesting stuff to be said about a situation where everything is weak, and I think it's super cool. I just want to say that the last decade or two of PL research seems to point to this one class of non-equation being very important, and probably fundamental to whatever it is PL is studying.</p>",
+        "id": 200048734,
+        "sender_full_name": "Jonathan Sterling",
+        "timestamp": 1591574275
+    },
+    {
+        "content": "<p>Regarding \"operational semantics\" vs \"denotational semantics\", I feel this distinction is very old-fashioned (but unfortunately still current). It comes from a time when classical denotational semantics (like domain theory) had started to be recognized as suffering from severe limitations and obscurity, and a generation of PL researchers abandoned it and adopted what they started to call \"operational semantics\". With operational semantics, many amazing theorems about programming languages became possible to prove, but what was lost was the ethos of compositionality --- an entire generation of researchers basically abandoned the very notion of compositionality, with good intentions, but of course, suffering a loss of perspective as a result (IMO).</p>\n<p>What is denotational semantics? It is just semantics period, and the word \"denotational\" is (in my opinion) quite redundant. The need to distinguish from operational semantics comes from the fact that most operational semantics is really <em>operational non-semantics</em> (to rip off the joke of Kontsevich). When operational semantics is made compositional (as in game semantics, as well as these cool higher dimensional things), then it is \"denotational\" in some sense, but I would just say that it has been turned into semantics, period.</p>\n<p>Now, coming back to \"non-semantics\", it is not for nothing that practitioners have been doing \"non-semantics\" for so many years --- specifically, the old dogma that these fold-unfold situations (and other similar things) should be <em>strict equations</em> has made the <em>semantics</em> of such theories very awkward, and I think now that we are recognizing that these equations should be re-thought, we can also re-think the operational aspects of programming languages from an objective/semantical point of view.</p>",
+        "id": 200049037,
+        "sender_full_name": "Jonathan Sterling",
+        "timestamp": 1591574794
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276072\">sarahzrf</span> <a href=\"#narrow/stream/229156-practice.3A-applied.20ct/topic/DCPOs/near/200031419\">said</a>:</p>\n<blockquote>\n<p>i stumbled on <a href=\"https://golem.ph.utexas.edu/category/2006/08/categorifying_cccs_seeing_comp.html\">that one ncat cafe post</a> again where <span class=\"user-mention silent\" data-user-id=\"275920\">John Baez</span> was bemoaning the apparent destruction of \"computation\" itself in quotienting together conversion classes of terms to form a CCC out of the simply-typed lambda calc</p>\n</blockquote>\n<p>This was the same concern I had with the <em>Backprop as Functor</em> paper, that they were quotienting out stuff just to get a SMC of \"learners\". As <span class=\"user-mention silent\" data-user-id=\"297784\">Jonathan Sterling</span> <a href=\"#narrow/stream/229156-practice.3A-applied.20ct/topic/DCPOs/near/200049037\">pointed out</a> with his history of semantics:</p>\n<blockquote>\n<p>it is not for nothing that practitioners have been doing \"non-semantics\" for so many years --- specifically, the old dogma that these fold-unfold situations (and other similar things) should be strict equations has made the semantics of such theories very awkward [...]</p>\n</blockquote>\n<p>I just hope that we've now learned enough not to head down the same path with ML.</p>",
+        "id": 200054905,
+        "sender_full_name": "(=_=)",
+        "timestamp": 1591585902
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"277270\">Dan Doel</span> <a href=\"#narrow/stream/229156-practice.3A-applied.20ct/topic/DCPOs/near/200047441\">said</a>:</p>\n<blockquote>\n<p><a href=\"https://arxiv.org/abs/1905.05636\">https://arxiv.org/abs/1905.05636</a> There's the Baez paper, if you haven't seen it.</p>\n</blockquote>\n<p>The Baez-Williams paper. This looks like it could be part of Christian's thesis.</p>",
+        "id": 200054956,
+        "sender_full_name": "(=_=)",
+        "timestamp": 1591585971
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"297784\">Jonathan Sterling</span> <a href=\"#narrow/stream/229156-practice.3A-applied.20ct/topic/DCPOs/near/200049037\">said</a>:</p>\n<blockquote>\n<p>The need to distinguish from operational semantics comes from the fact that most operational semantics is really <em>operational non-semantics</em> (to rip off the joke of Kontsevich). </p>\n</blockquote>\n<p>I'm curious: what was the original joke of Kontsevich?</p>",
+        "id": 200054976,
+        "sender_full_name": "(=_=)",
+        "timestamp": 1591586027
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276424\">Rongmin Lu</span> <a href=\"#narrow/stream/229156-practice.3A-applied.20ct/topic/DCPOs/near/200054956\">said</a>:</p>\n<blockquote>\n<p><span class=\"user-mention silent\" data-user-id=\"277270\">Dan Doel</span> <a href=\"#narrow/stream/229156-practice.3A-applied.20ct/topic/DCPOs/near/200047441\">said</a>:</p>\n<blockquote>\n<p><a href=\"https://arxiv.org/abs/1905.05636\">https://arxiv.org/abs/1905.05636</a> There's the Baez paper, if you haven't seen it.</p>\n</blockquote>\n<p>The Baez-Williams paper. This looks like Christian's work.</p>\n</blockquote>\n<p>We actually both worked on it!</p>",
+        "id": 200059513,
+        "sender_full_name": "John Baez",
+        "timestamp": 1591593691
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"275920\">John Baez</span> <a href=\"#narrow/stream/229156-practice.3A-applied.20ct/topic/DCPOs/near/200059513\">said</a>:</p>\n<blockquote>\n<p><span class=\"user-mention silent\" data-user-id=\"276424\">Rongmin Lu</span> <a href=\"#narrow/stream/229156-practice.3A-applied.20ct/topic/DCPOs/near/200054956\">said</a>:</p>\n<blockquote>\n<p><span class=\"user-mention silent\" data-user-id=\"277270\">Dan Doel</span> <a href=\"#narrow/stream/229156-practice.3A-applied.20ct/topic/DCPOs/near/200047441\">said</a>:</p>\n<blockquote>\n<p><a href=\"https://arxiv.org/abs/1905.05636\">https://arxiv.org/abs/1905.05636</a> There's the Baez paper, if you haven't seen it.</p>\n</blockquote>\n<p>The Baez-Williams paper. This looks like Christian's work.</p>\n</blockquote>\n<p>We actually both worked on it!</p>\n</blockquote>\n<p>Clearly! I just wanted to point out it's not \"the Baez paper\", but something that looked like it could be part of Christian's thesis. I should've kept the original wording, the edit made it worse! Sorry, John! <span aria-label=\"sweat smile\" class=\"emoji emoji-1f605\" role=\"img\" title=\"sweat smile\">:sweat_smile:</span></p>",
+        "id": 200060372,
+        "sender_full_name": "(=_=)",
+        "timestamp": 1591595105
+    },
+    {
+        "content": "<p>I was just joking around.  It's not a \"Baez paper\", nor is it \"Christian's work\" - we both put a lot of ourselves into it, and we were fleshing out and polishing some ideas of Mike Stay and Greg Meredith.</p>",
+        "id": 200061735,
+        "sender_full_name": "John Baez",
+        "timestamp": 1591597272
+    },
+    {
+        "content": "<p>Christian has been working a lot with them.</p>",
+        "id": 200061788,
+        "sender_full_name": "John Baez",
+        "timestamp": 1591597324
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"275920\">John Baez</span> <a href=\"#narrow/stream/229156-practice.3A-applied.20ct/topic/DCPOs/near/200061735\">said</a>:</p>\n<blockquote>\n<p>It's not a \"Baez paper\", nor is it \"Christian's work\" - we both put a lot of ourselves into it, and we were fleshing out and polishing some ideas of Mike Stay and Greg Meredith.</p>\n</blockquote>\n<p>Well, that's complicated... <span aria-label=\"thinking\" class=\"emoji emoji-1f914\" role=\"img\" title=\"thinking\">:thinking:</span> <span aria-label=\"sweat smile\" class=\"emoji emoji-1f605\" role=\"img\" title=\"sweat smile\">:sweat_smile:</span><br>\nBut complicated is awesome. Good to know how those ideas have been shepherded.</p>",
+        "id": 200062780,
+        "sender_full_name": "(=_=)",
+        "timestamp": 1591598750
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276424\">Rongmin Lu</span> <a href=\"#narrow/stream/229156-practice.3A-applied.20ct/topic/DCPOs/near/200054976\">said</a>:</p>\n<blockquote>\n<p><span class=\"user-mention silent\" data-user-id=\"297784\">Jonathan Sterling</span> <a href=\"#narrow/stream/229156-practice.3A-applied.20ct/topic/DCPOs/near/200049037\">said</a>:</p>\n<blockquote>\n<p>The need to distinguish from operational semantics comes from the fact that most operational semantics is really <em>operational non-semantics</em> (to rip off the joke of Kontsevich). </p>\n</blockquote>\n<p>I'm curious: what was the original joke of Kontsevich?</p>\n</blockquote>\n<p>I am hearing it third-hand but the joke was that \"non-commutative geometry\" is really \"non-commutative <em>non-geometry</em>\" --- because important aspects of geometrical language do not extend to noncommutative rings.  But I don't know enough to say whether the joke was funny in its original context ;-)</p>",
+        "id": 200090955,
+        "sender_full_name": "Jonathan Sterling",
+        "timestamp": 1591619896
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"297784\">Jonathan Sterling</span> <a href=\"#narrow/stream/229156-practice.3A-applied.20ct/topic/DCPOs/near/200090955\">said</a>:</p>\n<blockquote>\n<p><span class=\"user-mention silent\" data-user-id=\"276424\">Rongmin Lu</span> <a href=\"#narrow/stream/229156-practice.3A-applied.20ct/topic/DCPOs/near/200054976\">said</a>:</p>\n<blockquote>\n<p>I'm curious: what was the original joke of Kontsevich?</p>\n</blockquote>\n<p>I am hearing it third-hand but the joke was that \"non-commutative geometry\" is really \"non-commutative <em>non-geometry</em>\" --- because important aspects of geometrical language do not extend to noncommutative rings.  But I don't know enough to say whether the joke was funny in its original context ;-)</p>\n</blockquote>\n<p>Lieven le Bruyn <a href=\"http://www.neverendingbooks.org/non-geometry\">wrote in 2006</a> that Kontsevich had apparently mentioned \"non-geometry\" in a talk in Antwerp \"a couple of years ago\". I think I've also heard references to \"point-less geometry\" as well, but probably not from the same source.</p>",
+        "id": 200091860,
+        "sender_full_name": "(=_=)",
+        "timestamp": 1591620442
+    }
+]

@@ -1,0 +1,295 @@
+---
+layout: archive
+title: Zulip Chat Archive
+permalink: /stream/229125-practice:-software/topic/Metatheory.2Ejl.html
+---
+
+<h2>Stream: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229125-practice:-software/index.html">practice: software</a></h2>
+<h3>Topic: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229125-practice:-software/topic/Metatheory.2Ejl.html">Metatheory.jl</a></h3>
+
+<hr>
+
+<base href="https://categorytheory.zulipchat.com/">
+
+<head><link href="https://mattecapu.github.io/ct-zulip-archive/style.css" rel="stylesheet"></head>
+
+{% raw %}
+
+<a name="229882056"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229125-practice%3A%20software/topic/Metatheory.jl/near/229882056" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Philip Zucker <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229125-practice:-software/topic/Metatheory.2Ejl.html#229882056">(Mar 11 2021 at 16:42)</a>:</h4>
+<p>Some promising approaches to automated equational reasoning for monoidal categories that I and others have been playing with  <a href="https://www.philipzucker.com/metatheory-progress/">https://www.philipzucker.com/metatheory-progress/</a></p>
+
+
+
+<a name="229887868"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229125-practice%3A%20software/topic/Metatheory.jl/near/229887868" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nathanael Arkor <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229125-practice:-software/topic/Metatheory.2Ejl.html#229887868">(Mar 11 2021 at 17:13)</a>:</h4>
+<p>This is really interesting! I had intended to experiment using Z3 for verifying diagrammatic proofs, so it's good to see someone has already tried. What kind of structures does Metatheory.jl support natively? Am I right in understanding you're trying to encode GATs into those structures (with partial success)?</p>
+
+
+
+<a name="229889731"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229125-practice%3A%20software/topic/Metatheory.jl/near/229889731" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Philip Zucker <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229125-practice:-software/topic/Metatheory.2Ejl.html#229889731">(Mar 11 2021 at 17:22)</a>:</h4>
+<p>It is unclear to me exactly what Metatheory supports in theoretical terms. It does what it does. It's something like a rewrite system, something like the theory of uninterpreted functions. I put forward what a think is a correct method to encode GATs. but I am not 100% certain. I have not mechanized actually producing this encoding yet. I did it by hand.</p>
+
+
+
+<a name="229890156"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229125-practice%3A%20software/topic/Metatheory.jl/near/229890156" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nathanael Arkor <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229125-practice:-software/topic/Metatheory.2Ejl.html#229890156">(Mar 11 2021 at 17:25)</a>:</h4>
+<p>I would have thought the "right" structure (at least from a theoretical point of view) would be generalised algebraic theories with rewrites, though I'm not sure if this translates across to e-graphs. You can encode structure like binding operators using generalised algebraic theories, which avoids having to describe more complex higher-order structures directly in e-graphs.</p>
+
+
+
+<a name="229890262"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229125-practice%3A%20software/topic/Metatheory.jl/near/229890262" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Philip Zucker <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229125-practice:-software/topic/Metatheory.2Ejl.html#229890262">(Mar 11 2021 at 17:25)</a>:</h4>
+<p>You can encode binding using GATs? How?</p>
+
+
+
+<a name="229890303"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229125-practice%3A%20software/topic/Metatheory.jl/near/229890303" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Philip Zucker <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229125-practice:-software/topic/Metatheory.2Ejl.html#229890303">(Mar 11 2021 at 17:25)</a>:</h4>
+<p>As in the point free formulation of binding? <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mo>∑</mo><mi>i</mi></msub><mi>a</mi><mo stretchy="false">(</mo><mi>j</mi><mo separator="true">,</mo><mi>i</mi><mo stretchy="false">)</mo><mi>b</mi><mo stretchy="false">(</mo><mi>i</mi><mo separator="true">,</mo><mi>k</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex"> \sum_i a(j,i) b(i,k)</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:1.0497100000000001em;vertical-align:-0.29971000000000003em;"></span><span class="mop"><span class="mop op-symbol small-op" style="position:relative;top:-0.0000050000000000050004em;">∑</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.16195399999999993em;"><span style="top:-2.40029em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.29971000000000003em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathnormal">a</span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.05724em;">j</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathnormal">i</span><span class="mclose">)</span><span class="mord mathnormal">b</span><span class="mopen">(</span><span class="mord mathnormal">i</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathnormal" style="margin-right:0.03148em;">k</span><span class="mclose">)</span></span></span></span> vs <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>⋅</mo><mi>B</mi></mrow><annotation encoding="application/x-tex">A \cdot B</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathnormal">A</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">⋅</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathnormal" style="margin-right:0.05017em;">B</span></span></span></span> Or something else?</p>
+
+
+
+<a name="229890544"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229125-practice%3A%20software/topic/Metatheory.jl/near/229890544" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nathanael Arkor <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229125-practice:-software/topic/Metatheory.2Ejl.html#229890544">(Mar 11 2021 at 17:26)</a>:</h4>
+<p>You describe everything internally: so you have a type for "contexts", a type for "types", a type for "terms", etc. Then you have operations for extending contexts, etc. This is essentially the approach of "type-theory-in-type-theory", which uses quotient-inductive-inductive types (which are closely related to GATs).</p>
+
+
+
+<a name="229890788"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229125-practice%3A%20software/topic/Metatheory.jl/near/229890788" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Philip Zucker <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229125-practice:-software/topic/Metatheory.2Ejl.html#229890788">(Mar 11 2021 at 17:28)</a>:</h4>
+<p>I think I see. You explicilty hold bound terms before a turnstile?</p>
+
+
+
+<a name="229891103"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229125-practice%3A%20software/topic/Metatheory.jl/near/229891103" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nathanael Arkor <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229125-practice:-software/topic/Metatheory.2Ejl.html#229891103">(Mar 11 2021 at 17:29)</a>:</h4>
+<p>A <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>λ</mi></mrow><annotation encoding="application/x-tex">\lambda</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.69444em;vertical-align:0em;"></span><span class="mord mathnormal">λ</span></span></span></span>-abstraction operator would take a term in an extended context, for instance, and return a term in the non-extended context. E.g. something like <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">Γ</mi><mo>:</mo><mrow><mi mathvariant="sans-serif">C</mi><mi mathvariant="sans-serif">t</mi><mi mathvariant="sans-serif">x</mi></mrow><mo separator="true">,</mo><mi>t</mi><mo>:</mo><mrow><mi mathvariant="sans-serif">T</mi><mi mathvariant="sans-serif">m</mi></mrow><mo stretchy="false">(</mo><mrow><mi mathvariant="sans-serif">e</mi><mi mathvariant="sans-serif">x</mi><mi mathvariant="sans-serif">t</mi></mrow><mo stretchy="false">(</mo><mi mathvariant="normal">Γ</mi><mo stretchy="false">)</mo><mo stretchy="false">)</mo><mo>⊢</mo><mrow><mi mathvariant="sans-serif">a</mi><mi mathvariant="sans-serif">b</mi><mi mathvariant="sans-serif">s</mi></mrow><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo><mo>:</mo><mrow><mi mathvariant="sans-serif">T</mi><mi mathvariant="sans-serif">m</mi></mrow><mo stretchy="false">(</mo><mi mathvariant="normal">Γ</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">\Gamma : \mathsf{Ctx}, t : \mathsf{Tm}(\mathsf{ext}(\Gamma)) \vdash \mathsf{abs}(t) : \mathsf{Tm}(\Gamma)</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord">Γ</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">:</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span class="mord"><span class="mord mathsf">C</span><span class="mord mathsf">t</span><span class="mord mathsf">x</span></span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathnormal">t</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">:</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord"><span class="mord mathsf">T</span><span class="mord mathsf">m</span></span><span class="mopen">(</span><span class="mord"><span class="mord mathsf">e</span><span class="mord mathsf">x</span><span class="mord mathsf">t</span></span><span class="mopen">(</span><span class="mord">Γ</span><span class="mclose">)</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">⊢</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord"><span class="mord mathsf">a</span><span class="mord mathsf">b</span><span class="mord mathsf">s</span></span><span class="mopen">(</span><span class="mord mathnormal">t</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">:</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord"><span class="mord mathsf">T</span><span class="mord mathsf">m</span></span><span class="mopen">(</span><span class="mord">Γ</span><span class="mclose">)</span></span></span></span> in an untyped setting.</p>
+
+
+
+<a name="229891364"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229125-practice%3A%20software/topic/Metatheory.jl/near/229891364" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Philip Zucker <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229125-practice:-software/topic/Metatheory.2Ejl.html#229891364">(Mar 11 2021 at 17:31)</a>:</h4>
+<p>That's very interesting. It does seem like a rather heavyweight encoding for automation to handle, but who knows.</p>
+
+
+
+<a name="229891734"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229125-practice%3A%20software/topic/Metatheory.jl/near/229891734" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nathanael Arkor <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229125-practice:-software/topic/Metatheory.2Ejl.html#229891734">(Mar 11 2021 at 17:33)</a>:</h4>
+<p>Agreed: the disadvantage with describing everything internally is that the automation can't take advantage of knowing "what the constructions mean" for optimisation purposes (at least naïvely), but the advantage is that you can describe many more structures than you would be able to externally (because you don't need to invent new structures for describing more complex data types).</p>
+
+
+
+<a name="229891995"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229125-practice%3A%20software/topic/Metatheory.jl/near/229891995" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nathanael Arkor <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229125-practice:-software/topic/Metatheory.2Ejl.html#229891995">(Mar 11 2021 at 17:34)</a>:</h4>
+<p>If you are even able to demonstrate viability of automation for equations involving categories, functors, and natural transformations, that will already be a huge step forwards, though.</p>
+
+
+
+<a name="229892086"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229125-practice%3A%20software/topic/Metatheory.jl/near/229892086" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Philip Zucker <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229125-practice:-software/topic/Metatheory.2Ejl.html#229892086">(Mar 11 2021 at 17:34)</a>:</h4>
+<p>That's the dream. Workin' on it</p>
+
+
+
+<a name="229892174"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229125-practice%3A%20software/topic/Metatheory.jl/near/229892174" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nathanael Arkor <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229125-practice:-software/topic/Metatheory.2Ejl.html#229892174">(Mar 11 2021 at 17:34)</a>:</h4>
+<p>This is a problem I'm very interested in, and would be very happy to discuss in more detail at some point :)</p>
+
+
+
+<a name="229892394"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229125-practice%3A%20software/topic/Metatheory.jl/near/229892394" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Philip Zucker <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229125-practice:-software/topic/Metatheory.2Ejl.html#229892394">(Mar 11 2021 at 17:36)</a>:</h4>
+<p>The current set of discussion that I'm aware has been happening on the Julia zulip. I poke my head in over here very rarely because it is overwhelming.</p>
+
+
+
+<a name="229895709"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229125-practice%3A%20software/topic/Metatheory.jl/near/229895709" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Philip Zucker <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229125-practice:-software/topic/Metatheory.2Ejl.html#229895709">(Mar 11 2021 at 17:54)</a>:</h4>
+<p>But where does the variable go? Is everything de bruijn indexed?</p>
+
+
+
+<a name="229896068"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229125-practice%3A%20software/topic/Metatheory.jl/near/229896068" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nathanael Arkor <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229125-practice:-software/topic/Metatheory.2Ejl.html#229896068">(Mar 11 2021 at 17:56)</a>:</h4>
+<p>Essentially, yes. You avoid variable names altogether.</p>
+
+
+
+<a name="229896105"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229125-practice%3A%20software/topic/Metatheory.jl/near/229896105" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nathanael Arkor <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229125-practice:-software/topic/Metatheory.2Ejl.html#229896105">(Mar 11 2021 at 17:56)</a>:</h4>
+<p>(Though possibly a more principled approach to variable names, like nominal calculi, could also work as a GAT.)</p>
+
+
+
+<a name="229896542"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229125-practice%3A%20software/topic/Metatheory.jl/near/229896542" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Philip Zucker <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229125-practice:-software/topic/Metatheory.2Ejl.html#229896542">(Mar 11 2021 at 17:59)</a>:</h4>
+<p>I see. Manipulating de bruijn indices in the egraph is so far non obvious(to me)  that one can do it, and non obvious if they even make sense. My intuition so far is that the egraph is a bit more than just a bag of syntax. The automated sharing and congruence closure can do some surprising things.</p>
+
+
+
+<a name="229896737"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229125-practice%3A%20software/topic/Metatheory.jl/near/229896737" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Philip Zucker <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229125-practice:-software/topic/Metatheory.2Ejl.html#229896737">(Mar 11 2021 at 18:00)</a>:</h4>
+<p>I emailed one of the egg authors <a href="https://egraphs-good.github.io/">https://egraphs-good.github.io/</a> about this and it seems it's still an open question from his perspective as well</p>
+
+
+
+<a name="229897029"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229125-practice%3A%20software/topic/Metatheory.jl/near/229897029" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nathanael Arkor <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229125-practice:-software/topic/Metatheory.2Ejl.html#229897029">(Mar 11 2021 at 18:02)</a>:</h4>
+<p>It's not necessarily to think about de Bruijn indices explicitly, though: they're hidden in the structure of the GAT. If you can represent arbitrary GATs, you can represent de Bruijn indices.</p>
+
+
+
+<a name="229897111"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229125-practice%3A%20software/topic/Metatheory.jl/near/229897111" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nathanael Arkor <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229125-practice:-software/topic/Metatheory.2Ejl.html#229897111">(Mar 11 2021 at 18:02)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="276092">Nathanael Arkor</span> <a href="#narrow/stream/229125-practice.3A-software/topic/Metatheory.2Ejl/near/229891103">said</a>:</p>
+<blockquote>
+<p>A <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>λ</mi></mrow><annotation encoding="application/x-tex">\lambda</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.69444em;vertical-align:0em;"></span><span class="mord mathnormal">λ</span></span></span></span>-abstraction operator would take a term in an extended context, for instance, and return a term in the non-extended context. E.g. something like <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">Γ</mi><mo>:</mo><mrow><mi mathvariant="sans-serif">C</mi><mi mathvariant="sans-serif">t</mi><mi mathvariant="sans-serif">x</mi></mrow><mo separator="true">,</mo><mi>t</mi><mo>:</mo><mrow><mi mathvariant="sans-serif">T</mi><mi mathvariant="sans-serif">m</mi></mrow><mo stretchy="false">(</mo><mrow><mi mathvariant="sans-serif">e</mi><mi mathvariant="sans-serif">x</mi><mi mathvariant="sans-serif">t</mi></mrow><mo stretchy="false">(</mo><mi mathvariant="normal">Γ</mi><mo stretchy="false">)</mo><mo stretchy="false">)</mo><mo>⊢</mo><mrow><mi mathvariant="sans-serif">a</mi><mi mathvariant="sans-serif">b</mi><mi mathvariant="sans-serif">s</mi></mrow><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo><mo>:</mo><mrow><mi mathvariant="sans-serif">T</mi><mi mathvariant="sans-serif">m</mi></mrow><mo stretchy="false">(</mo><mi mathvariant="normal">Γ</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">\Gamma : \mathsf{Ctx}, t : \mathsf{Tm}(\mathsf{ext}(\Gamma)) \vdash \mathsf{abs}(t) : \mathsf{Tm}(\Gamma)</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord">Γ</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">:</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span class="mord"><span class="mord mathsf">C</span><span class="mord mathsf">t</span><span class="mord mathsf">x</span></span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathnormal">t</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">:</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord"><span class="mord mathsf">T</span><span class="mord mathsf">m</span></span><span class="mopen">(</span><span class="mord"><span class="mord mathsf">e</span><span class="mord mathsf">x</span><span class="mord mathsf">t</span></span><span class="mopen">(</span><span class="mord">Γ</span><span class="mclose">)</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">⊢</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord"><span class="mord mathsf">a</span><span class="mord mathsf">b</span><span class="mord mathsf">s</span></span><span class="mopen">(</span><span class="mord mathnormal">t</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">:</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord"><span class="mord mathsf">T</span><span class="mord mathsf">m</span></span><span class="mopen">(</span><span class="mord">Γ</span><span class="mclose">)</span></span></span></span> in an untyped setting.</p>
+</blockquote>
+<p>Note that there are no explicit indices here.</p>
+
+
+
+<a name="229897217"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229125-practice%3A%20software/topic/Metatheory.jl/near/229897217" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Philip Zucker <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229125-practice:-software/topic/Metatheory.2Ejl.html#229897217">(Mar 11 2021 at 18:03)</a>:</h4>
+<p>This suggests to me that either de bruijn indices are fine or I'm not actually able to represent arbitrary GATs.</p>
+
+
+
+<a name="229897229"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229125-practice%3A%20software/topic/Metatheory.jl/near/229897229" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Philip Zucker <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229125-practice:-software/topic/Metatheory.2Ejl.html#229897229">(Mar 11 2021 at 18:03)</a>:</h4>
+<p>There are indices in t though?</p>
+
+
+
+<a name="229897320"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229125-practice%3A%20software/topic/Metatheory.jl/near/229897320" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Kenji Maillard <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229125-practice:-software/topic/Metatheory.2Ejl.html#229897320">(Mar 11 2021 at 18:04)</a>:</h4>
+<p>If I'm not wrong,  <a href="https://www.fstar-lang.org/">F*</a> uses de Bruijn indices in practice in its SMT encoding (but I don't think that's the most efficient part of the encoding)</p>
+
+
+
+<a name="229897410"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229125-practice%3A%20software/topic/Metatheory.jl/near/229897410" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Philip Zucker <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229125-practice:-software/topic/Metatheory.2Ejl.html#229897410">(Mar 11 2021 at 18:04)</a>:</h4>
+<p>Oh really? Fascinating.</p>
+
+
+
+<a name="229897738"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229125-practice%3A%20software/topic/Metatheory.jl/near/229897738" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Philip Zucker <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229125-practice:-software/topic/Metatheory.2Ejl.html#229897738">(Mar 11 2021 at 18:07)</a>:</h4>
+<p>Do they describe that in a paper or is it just internally in the code base?</p>
+
+
+
+<a name="229897938"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229125-practice%3A%20software/topic/Metatheory.jl/near/229897938" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nathanael Arkor <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229125-practice:-software/topic/Metatheory.2Ejl.html#229897938">(Mar 11 2021 at 18:08)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="276026">Philip Zucker</span> <a href="#narrow/stream/229125-practice.3A-software/topic/Metatheory.2Ejl/near/229897229">said</a>:</p>
+<blockquote>
+<p>There are indices in t though?</p>
+</blockquote>
+<p>Where? You mean <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">Γ</mi></mrow><annotation encoding="application/x-tex">\Gamma</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord">Γ</span></span></span></span> would be represented by an index?</p>
+
+
+
+<a name="229898058"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229125-practice%3A%20software/topic/Metatheory.jl/near/229898058" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Philip Zucker <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229125-practice:-software/topic/Metatheory.2Ejl.html#229898058">(Mar 11 2021 at 18:09)</a>:</h4>
+<p>I was assuming a term would be something like <code>abs(var(0))</code> for id for example.</p>
+
+
+
+<a name="229898294"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229125-practice%3A%20software/topic/Metatheory.jl/near/229898294" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nathanael Arkor <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229125-practice:-software/topic/Metatheory.2Ejl.html#229898294">(Mar 11 2021 at 18:11)</a>:</h4>
+<p>Actually you can represent a variable just by an operator <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="sans-serif">v</mi><mi mathvariant="sans-serif">a</mi><mi mathvariant="sans-serif">r</mi></mrow><annotation encoding="application/x-tex">\mathsf{var}</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.44444em;vertical-align:0em;"></span><span class="mord"><span class="mord mathsf" style="margin-right:0.01389em;">v</span><span class="mord mathsf">a</span><span class="mord mathsf" style="margin-right:0.01389em;">r</span></span></span></span></span> <em>without an index</em>; its index is captured by the context it is in. It's a little involved to describe exactly how this works, though.</p>
+
+
+
+<a name="229898380"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229125-practice%3A%20software/topic/Metatheory.jl/near/229898380" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nathanael Arkor <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229125-practice:-software/topic/Metatheory.2Ejl.html#229898380">(Mar 11 2021 at 18:11)</a>:</h4>
+<p>This is what I meant by "Essentially, yes." Actually there are no explicit indices, and they are instead represented by the term structure itself.</p>
+
+
+
+<a name="229898494"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229125-practice%3A%20software/topic/Metatheory.jl/near/229898494" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nathanael Arkor <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229125-practice:-software/topic/Metatheory.2Ejl.html#229898494">(Mar 11 2021 at 18:12)</a>:</h4>
+<p>(Probably the type-theory-in-type-theory literature contains an explicit worked example in this vein.)</p>
+
+
+
+<a name="229898842"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229125-practice%3A%20software/topic/Metatheory.jl/near/229898842" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Philip Zucker <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229125-practice:-software/topic/Metatheory.2Ejl.html#229898842">(Mar 11 2021 at 18:14)</a>:</h4>
+<p>So what would you write for id? Or is the question poorly formed?</p>
+
+
+
+<a name="229899070"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229125-practice%3A%20software/topic/Metatheory.jl/near/229899070" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Philip Zucker <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229125-practice:-software/topic/Metatheory.2Ejl.html#229899070">(Mar 11 2021 at 18:15)</a>:</h4>
+<p>And how would you write <code>\x y -&gt; x</code></p>
+
+
+
+<a name="229899674"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229125-practice%3A%20software/topic/Metatheory.jl/near/229899674" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nathanael Arkor <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229125-practice:-software/topic/Metatheory.2Ejl.html#229899674">(Mar 11 2021 at 18:19)</a>:</h4>
+<p>The intuition is that you don't encode arbitrary higher-order operations: you encode structures that have higher-order operations (e.g. lambda-calculi). So whenever you want to describe a higher-order operation, you first need to describe contexts and terms.</p>
+
+
+
+<a name="229900438"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229125-practice%3A%20software/topic/Metatheory.jl/near/229900438" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nathanael Arkor <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229125-practice:-software/topic/Metatheory.2Ejl.html#229900438">(Mar 11 2021 at 18:24)</a>:</h4>
+<p>Another way to describe it is that in a GAT, you have a first-order context. But you can <em>encode</em> higher-order contexts using GATs. So they if you have a higher-order structure, you can describe it internally with respect to the encoded higher-order context, rather than the "metatheoretical" first-order context of the GAT.</p>
+
+
+
+<a name="229905901"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229125-practice%3A%20software/topic/Metatheory.jl/near/229905901" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Philip Zucker <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229125-practice:-software/topic/Metatheory.2Ejl.html#229905901">(Mar 11 2021 at 18:58)</a>:</h4>
+<p>I'm afraid I don't follow without something more specific</p>
+
+
+
+<a name="229922191"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229125-practice%3A%20software/topic/Metatheory.jl/near/229922191" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nathanael Arkor <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229125-practice:-software/topic/Metatheory.2Ejl.html#229922191">(Mar 11 2021 at 20:41)</a>:</h4>
+<p>I wanted to write up an explicit example at some point anyway, so when I get around to it, I'll let you know. Then I can figure out how best to present it :)</p>
+
+
+
+<a name="230003152"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229125-practice%3A%20software/topic/Metatheory.jl/near/230003152" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Alessandro <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229125-practice:-software/topic/Metatheory.2Ejl.html#230003152">(Mar 12 2021 at 10:01)</a>:</h4>
+<p>Hi everybody! Author of Metatheory.jl here</p>
+
+
+
+<a name="230185515"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229125-practice%3A%20software/topic/Metatheory.jl/near/230185515" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nathanael Arkor <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229125-practice:-software/topic/Metatheory.2Ejl.html#230185515">(Mar 13 2021 at 20:02)</a>:</h4>
+<p><span class="user-mention" data-user-id="396879">@Alessandro</span>: hi! I would be interested to hear your thoughts on data structures for algebraic/symbol computation, especially in terms of what Metatheory.jl currently supports and what you have considered supporting in the future. Have you looked at generalised algebraic theories at all?</p>
+
+
+
+<a name="230407136"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229125-practice%3A%20software/topic/Metatheory.jl/near/230407136" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Alessandro <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229125-practice:-software/topic/Metatheory.2Ejl.html#230407136">(Mar 15 2021 at 19:50)</a>:</h4>
+<p>I have given a quick look at GATs. I'm not a mathematician sadly.</p>
+
+
+
+<a name="230407242"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229125-practice%3A%20software/topic/Metatheory.jl/near/230407242" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Alessandro <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229125-practice:-software/topic/Metatheory.2Ejl.html#230407242">(Mar 15 2021 at 19:51)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="276092">Nathanael Arkor</span> <a href="#narrow/stream/229125-practice.3A-software/topic/Metatheory.2Ejl/near/230185515">said</a>:</p>
+<blockquote>
+<p><span class="user-mention silent" data-user-id="396879">Alessandro</span>: hi! I would be interested to hear your thoughts on data structures for algebraic/symbol computation, especially in terms of what Metatheory.jl currently supports and what you have considered supporting in the future. Have you looked at generalised algebraic theories at all?</p>
+</blockquote>
+<p>Here are our current efforts:<br>
+<a href="https://github.com/0x0f0f0f/Metatheory.jl/blob/master/test/test_cat.jl">https://github.com/0x0f0f0f/Metatheory.jl/blob/master/test/test_cat.jl</a><br>
+Simple equivalence proving in SMCs with explicit type tagging</p>
+<p><span class="user-mention" data-user-id="276026">@Philip Zucker</span> 's blogpost<br>
+<a href="https://www.philipzucker.com/metatheory-progress/">https://www.philipzucker.com/metatheory-progress/</a></p>
+
+
+
+<a name="231226073"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229125-practice%3A%20software/topic/Metatheory.jl/near/231226073" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Philip Zucker <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229125-practice:-software/topic/Metatheory.2Ejl.html#231226073">(Mar 21 2021 at 16:28)</a>:</h4>
+<p>I also made a version of the same rules that is compiled to the browser using the egg library (Metatheory and egg are related systems, one in Julia, one in Rust) <br>
+<a href="http://www.philipzucker.com/rust-category/">http://www.philipzucker.com/rust-category/</a></p>
+
+
+
+{% endraw %}
+
+<hr><p>Last updated: Jan 30 2022 at 00:30 UTC</p>

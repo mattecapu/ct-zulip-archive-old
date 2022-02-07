@@ -1,0 +1,134 @@
+[
+    {
+        "content": "<p>I was somewhat surprised to see that even <a href=\"https://ncatlab.org/nlab/show/enriched+factorization+system\">enriched factorization systems</a> are defined using subsets of <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mtext mathvariant=\"sans-serif\">Hom</mtext></mrow><annotation encoding=\"application/x-tex\">\\textsf{Hom}</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.69444em;vertical-align:0em;\"></span><span class=\"mord text\"><span class=\"mord textsf\">Hom</span></span></span></span></span> 'as a whole'. I've rather internalized that <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mtext mathvariant=\"sans-serif\">Hom</mtext></mrow><annotation encoding=\"application/x-tex\">\\textsf{Hom}</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.69444em;vertical-align:0em;\"></span><span class=\"mord text\"><span class=\"mord textsf\">Hom</span></span></span></span></span> is an indexed family of 'things', i.e. taking from the dependently-typed approach the indexed/family idea, and from enrichement, the idea that it doesn't have to be a set at all, i.e. <a href=\"https://ncatlab.org/nlab/show/hom-object\">hom-objects</a>.</p>\n<p>Similarly, at the level of objects, one does not talk of subset of an object (which makes no sense at all), but rather of <a href=\"https://ncatlab.org/nlab/show/subobject\">subobject</a> which is defined not as an object or collection of objects, but rather as an isomorphism class of monomorphisms. [Is there a notion of V-subobject?]</p>\n<p>It similarly feels like one ought to try to liberate the notion of factorization system from the notion of subset by finding a different way to \"point out\" parts of a family of <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mtext mathvariant=\"sans-serif\">Hom</mtext></mrow><annotation encoding=\"application/x-tex\">\\textsf{Hom}</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.69444em;vertical-align:0em;\"></span><span class=\"mord text\"><span class=\"mord textsf\">Hom</span></span></span></span></span> without treating them as sets.</p>\n<p>I have not succeeded in finding such a definition. Has it been done?</p>",
+        "id": 230604454,
+        "sender_full_name": "Jacques Carette",
+        "timestamp": 1615933938
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"296322\">Jacques Carette</span> <a href=\"#narrow/stream/266967-general.3A-mathematics/topic/Set-free.20notion.20of.20factorization.20system.3F/near/230604454\">said</a>:</p>\n<blockquote>\n<p>I was somewhat surprised to see that even <a href=\"https://ncatlab.org/nlab/show/enriched+factorization+system\">enriched factorization systems</a> are defined using subsets of <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mtext mathvariant=\"sans-serif\">Hom</mtext></mrow><annotation encoding=\"application/x-tex\">\\textsf{Hom}</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.69444em;vertical-align:0em;\"></span><span class=\"mord text\"><span class=\"mord textsf\">Hom</span></span></span></span></span> 'as a whole'. I've rather internalized that <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mtext mathvariant=\"sans-serif\">Hom</mtext></mrow><annotation encoding=\"application/x-tex\">\\textsf{Hom}</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.69444em;vertical-align:0em;\"></span><span class=\"mord text\"><span class=\"mord textsf\">Hom</span></span></span></span></span> is an indexed family of 'things', i.e. taking from the dependently-typed approach the indexed/family idea, and from enrichment, the idea that it doesn't have to be a set at all, i.e. <a href=\"https://ncatlab.org/nlab/show/hom-object\">hom-objects</a>.</p>\n</blockquote>\n<p>Yeah, I don't think people seriously work with the \"subsets of whole set of morphisms\" when using factorization systems.  They usually use subcategories.   The stuff on the nLab seems easy to translate into those terms.</p>",
+        "id": 230605037,
+        "sender_full_name": "John Baez",
+        "timestamp": 1615934304
+    },
+    {
+        "content": "<p>Being in the left class (or the right class) is a property that a morphism of the category may or may not have. Constructively, I think it's usually better to allow for it to be structure and not just a property (compare <a href=\"https://ncatlab.org/nlab/show/algebraic+weak+factorization+system\">https://ncatlab.org/nlab/show/algebraic+weak+factorization+system</a>).</p>",
+        "id": 230609474,
+        "sender_full_name": "Reid Barton",
+        "timestamp": 1615936980
+    },
+    {
+        "content": "<p>The term \"enriched\" is a bit misleading--it makes sense for an indirect reason, but it is really structure on the underlying ordinary category, that satisfies a certain compatibility with the enrichment.</p>",
+        "id": 230609572,
+        "sender_full_name": "Reid Barton",
+        "timestamp": 1615937054
+    },
+    {
+        "content": "<p>Jacques seemed to be complaining about treating all morphisms in a category as elements of a single set, or class.  This is indeed widely deprecated: most experts prefer to treat morphisms as \"typed\", e.g. elements not of a single class but of many different sets <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mrow><mi mathvariant=\"normal\">h</mi><mi mathvariant=\"normal\">o</mi><mi mathvariant=\"normal\">m</mi></mrow><mo stretchy=\"false\">(</mo><mi>x</mi><mo separator=\"true\">,</mo><mi>y</mi><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">\\mathrm{hom}(x,y)</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord\"><span class=\"mord mathrm\">h</span><span class=\"mord mathrm\">o</span><span class=\"mord mathrm\">m</span></span><span class=\"mopen\">(</span><span class=\"mord mathnormal\">x</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.03588em;\">y</span><span class=\"mclose\">)</span></span></span></span>.   In this approach, instead of treating composition as a partially defined function we consider it as a whole bunch of totally defined functions</p>\n<p><span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mrow><mi mathvariant=\"normal\">h</mi><mi mathvariant=\"normal\">o</mi><mi mathvariant=\"normal\">m</mi></mrow><mo stretchy=\"false\">(</mo><mi>y</mi><mo separator=\"true\">,</mo><mi>z</mi><mo stretchy=\"false\">)</mo><mo>×</mo><mrow><mi mathvariant=\"normal\">h</mi><mi mathvariant=\"normal\">o</mi><mi mathvariant=\"normal\">m</mi></mrow><mo stretchy=\"false\">(</mo><mi>x</mi><mo separator=\"true\">,</mo><mi>y</mi><mo stretchy=\"false\">)</mo><mo>→</mo><mrow><mi mathvariant=\"normal\">h</mi><mi mathvariant=\"normal\">o</mi><mi mathvariant=\"normal\">m</mi></mrow><mo stretchy=\"false\">(</mo><mi>x</mi><mo separator=\"true\">,</mo><mi>z</mi><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">\\mathrm{hom}(y,z) \\times \\mathrm{hom}(x,y) \\to \\mathrm{hom}(x,z)</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord\"><span class=\"mord mathrm\">h</span><span class=\"mord mathrm\">o</span><span class=\"mord mathrm\">m</span></span><span class=\"mopen\">(</span><span class=\"mord mathnormal\" style=\"margin-right:0.03588em;\">y</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.04398em;\">z</span><span class=\"mclose\">)</span><span class=\"mspace\" style=\"margin-right:0.2222222222222222em;\"></span><span class=\"mbin\">×</span><span class=\"mspace\" style=\"margin-right:0.2222222222222222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord\"><span class=\"mord mathrm\">h</span><span class=\"mord mathrm\">o</span><span class=\"mord mathrm\">m</span></span><span class=\"mopen\">(</span><span class=\"mord mathnormal\">x</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.03588em;\">y</span><span class=\"mclose\">)</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">→</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord\"><span class=\"mord mathrm\">h</span><span class=\"mord mathrm\">o</span><span class=\"mord mathrm\">m</span></span><span class=\"mopen\">(</span><span class=\"mord mathnormal\">x</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.04398em;\">z</span><span class=\"mclose\">)</span></span></span></span> </p>\n<p>For people who consider these two approaches so similar as to not be worth fussing about, well, such people are welcome to ignore this comment of mine!</p>",
+        "id": 230609883,
+        "sender_full_name": "John Baez",
+        "timestamp": 1615937275
+    },
+    {
+        "content": "<p>In dependent type theory you could express the notion of \"a class of morphisms\" as either <code>Pi A B. (Hom A B -&gt; Prop)</code> or <code>(Sigma A B. Hom A B) -&gt; Prop</code>, and there wouldn't be too much difference between them.</p>",
+        "id": 230609990,
+        "sender_full_name": "Reid Barton",
+        "timestamp": 1615937351
+    },
+    {
+        "content": "<p>For people who care, the \"typed\" approach can be used to say things like: it makes sense to ask if two morphisms in a single homset <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mrow><mi mathvariant=\"normal\">h</mi><mi mathvariant=\"normal\">o</mi><mi mathvariant=\"normal\">m</mi></mrow><mo stretchy=\"false\">(</mo><mi>x</mi><mo separator=\"true\">,</mo><mi>y</mi><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">\\mathrm{hom}(x,y)</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord\"><span class=\"mord mathrm\">h</span><span class=\"mord mathrm\">o</span><span class=\"mord mathrm\">m</span></span><span class=\"mopen\">(</span><span class=\"mord mathnormal\">x</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.03588em;\">y</span><span class=\"mclose\">)</span></span></span></span> are equal, but not to ask if two morphisms in different homsets are equal.</p>",
+        "id": 230610011,
+        "sender_full_name": "John Baez",
+        "timestamp": 1615937369
+    },
+    {
+        "content": "<p>And indeed with the \"untyped\" approach you could use <code>Mor -&gt; Prop</code>, a subset of all the maps of the category.</p>",
+        "id": 230610220,
+        "sender_full_name": "Reid Barton",
+        "timestamp": 1615937515
+    },
+    {
+        "content": "<p>I don't think you should read distinctions about whether the morphisms of a category are indexed on the objects or collected into a single type with maps to the objects from language like \"a class of morphisms\"--this kind of stuff is way below the level at which mathematicians ordinarily work. It would be like seeing a definition of the derivative of a function and asking whether \"the reals\" are the Dedekind reals or the Cauchy reals.</p>",
+        "id": 230610573,
+        "sender_full_name": "Reid Barton",
+        "timestamp": 1615937730
+    },
+    {
+        "content": "<p>I was concerned about two things: treating morphisms as a single set, and treating morphisms as a set.</p>\n<p>I do agree that treating them as a single set is largely obsolete. Except, in some sense, for the definitions of factorization system that I've seen.</p>",
+        "id": 230610664,
+        "sender_full_name": "Jacques Carette",
+        "timestamp": 1615937782
+    },
+    {
+        "content": "<p>Good point about over-reading \"class of morphisms\".</p>",
+        "id": 230610683,
+        "sender_full_name": "Jacques Carette",
+        "timestamp": 1615937800
+    },
+    {
+        "content": "<p>(Treating the morphisms as a single class is useful for generalising to internal categories.)</p>",
+        "id": 230610846,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1615937911
+    },
+    {
+        "content": "<p>I had not encountered <a href=\"https://ncatlab.org/nlab/show/algebraic+weak+factorization+system\">algebraic weak factorization systems</a> before, thanks for the pointer.</p>\n<p>Having be a structure, rather than a property, makes the most sense to me.  It's not immediately clear to me if all factorization systems are AWFS?</p>",
+        "id": 230610966,
+        "sender_full_name": "Jacques Carette",
+        "timestamp": 1615938004
+    },
+    {
+        "content": "<p>All orthogonal factorisation systems are AWFSs (by uniqueness of the lifts).</p>",
+        "id": 230611143,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1615938171
+    },
+    {
+        "content": "<p>(I've tried to formalize internal categories before and... failed. All the expositions that I've seen are sufficiently fuzzy on some crucial details that made what the right laws ought to be rather opaque. The construction was straightforward enough, but trying to even <em>state</em> things like associativity was really not at all clear.  Also, asking for all pullbacks seems like overkill, but trying to figure out which shape pullbacks must exist seems rather non-trivial).</p>",
+        "id": 230611548,
+        "sender_full_name": "Jacques Carette",
+        "timestamp": 1615938474
+    },
+    {
+        "content": "<p>By the way, I don't think the definition on <a href=\"https://ncatlab.org/nlab/show/enriched+factorization+system\">enriched factorization system</a> is the standard one. It should be the case that all isomorphisms belong to both classes, but as far as I can see this definition allows, for example, E = all maps, M = <em>identity</em> maps.</p>",
+        "id": 230611795,
+        "sender_full_name": "Reid Barton",
+        "timestamp": 1615938649
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"296322\">Jacques Carette</span> <a href=\"#narrow/stream/266967-general.3A-mathematics/topic/Set-free.20notion.20of.20factorization.20system.3F/near/230611548\">said</a>:</p>\n<blockquote>\n<p>(I've tried to formalize internal categories before and... failed. All the expositions that I've seen are sufficiently fuzzy on some crucial details that made what the right laws ought to be rather opaque. </p>\n</blockquote>\n<p>Hmm, it's always seemed clear to me.   </p>\n<p>It's true that not all pullbacks need to exist; just the pullbacks actually used in the definition need to exist, and this is important when dealing with categories internal to a category that doesn't have all pullbacks, like Diff.</p>",
+        "id": 230612190,
+        "sender_full_name": "John Baez",
+        "timestamp": 1615938971
+    },
+    {
+        "content": "<p>Time is everything, but often unaccounted. Squeezing the toothpaste out of a tube? Putting the toothpaste back into the tube? What's the difference? There's a hell (and I use that word from experience) of a difference.</p>\n<p>Index over the past. Fibre over the future.</p>",
+        "id": 230613661,
+        "sender_full_name": "Conor McBride",
+        "timestamp": 1615940097
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276480\">Reid Barton</span> <a href=\"#narrow/stream/266967-general.3A-mathematics/topic/Set-free.20notion.20of.20factorization.20system.3F/near/230611795\">said</a>:</p>\n<blockquote>\n<p>By the way, I don't think the definition on <a href=\"https://ncatlab.org/nlab/show/enriched+factorization+system\">enriched factorization system</a> is the standard one. It should be the case that all isomorphisms belong to both classes, but as far as I can see this definition allows, for example, E = all maps, M = <em>identity</em> maps.</p>\n</blockquote>\n<p>That's clearly a mistake; someone should fix it!  The definition of enriched factorization system should be identical to the definition of orthogonal factorization system only with ordinary orthogonality replaced by enriched orthogonality.</p>",
+        "id": 230615603,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1615941714
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"277574\">Conor McBride</span> <a href=\"#narrow/stream/266967-general.3A-mathematics/topic/Set-free.20notion.20of.20factorization.20system.3F/near/230613661\">said</a>:</p>\n<blockquote>\n<p>Index over the past. Fibre over the future.</p>\n</blockquote>\n<p>Ah, if I unpack that right, I should use a type with 2 distinguished points (for left and right) and a map from <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"sans-serif\">H</mi><mi mathvariant=\"sans-serif\">o</mi><mi mathvariant=\"sans-serif\">m</mi></mrow><annotation encoding=\"application/x-tex\">\\mathsf{Hom}</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.69444em;vertical-align:0em;\"></span><span class=\"mord\"><span class=\"mord mathsf\">H</span><span class=\"mord mathsf\">o</span><span class=\"mord mathsf\">m</span></span></span></span></span> (suitably indexed) into that. Some <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"sans-serif\">H</mi><mi mathvariant=\"sans-serif\">o</mi><mi mathvariant=\"sans-serif\">m</mi></mrow><annotation encoding=\"application/x-tex\">\\mathsf{Hom}</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.69444em;vertical-align:0em;\"></span><span class=\"mord\"><span class=\"mord mathsf\">H</span><span class=\"mord mathsf\">o</span><span class=\"mord mathsf\">m</span></span></span></span></span> will be in the left, others in the right, and others will simply be elsewhere.  We don't necessarily need to know anything at all about elsewhere, so no point being too specific about it (unlike AWFS which seem to specify that elsewhere is contractible). </p>\n<p>Something like that?</p>",
+        "id": 230616029,
+        "sender_full_name": "Jacques Carette",
+        "timestamp": 1615942052
+    },
+    {
+        "content": "<p>No, that can't quite be right, since for the (epi, mono) system, the isos belong to both.  Back to the drawing board.</p>",
+        "id": 230617004,
+        "sender_full_name": "Jacques Carette",
+        "timestamp": 1615942885
+    },
+    {
+        "content": "<p>It is sometimes a very good viewpoint to put all the morphisms together in a set (assuming of course the category is small): it's the beginning of the nerve. It brings us into simplicial methods! Most of <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"normal\">∞</mi></mrow><annotation encoding=\"application/x-tex\">\\infty</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.43056em;vertical-align:0em;\"></span><span class=\"mord\">∞</span></span></span></span>-category-theory is done in this viewpoint.</p>",
+        "id": 230702700,
+        "sender_full_name": "Joachim Kock",
+        "timestamp": 1615992714
+    }
+]

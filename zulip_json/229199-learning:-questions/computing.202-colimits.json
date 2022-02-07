@@ -1,0 +1,704 @@
+[
+    {
+        "content": "<p>so i asked about computing a 2-limit, now i want to know about computing 2-colimits. for mostly unrelated reasons, even!</p>",
+        "id": 216522175,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1605212459
+    },
+    {
+        "content": "<p>i've found on the nlab that you can compute 2-colimits in Cat that are indexed by 1-categories by taking a grothendieck construction of the diagram and then localizing at the opcartesian morphisms</p>",
+        "id": 216522293,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1605212522
+    },
+    {
+        "content": "<p>but i don't know all that much about localizations—i know the idea with reflective localizations and ive read a tiny bit about calculi of fractions, but i dont think either of those is gonna tend to be helpful here</p>",
+        "id": 216522455,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1605212593
+    },
+    {
+        "content": "<p>are there specific useful presentations of the localizations that arise in this situation?</p>",
+        "id": 216522488,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1605212610
+    },
+    {
+        "content": "<p>for the record: the particular 2-colimit i'm interested in computing at the moment is—let Fin be a skeleton of FinSet (im not super invested in it being a skeleton but that seems convenient); then i want to know the 2-colimit of the diagram</p>\n<p><span class=\"katex-display\"><span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mrow><mi mathvariant=\"normal\">F</mi><mi mathvariant=\"normal\">i</mi><mi mathvariant=\"normal\">n</mi></mrow><mover><mo stretchy=\"true\">→</mo><mpadded width=\"+0.6em\" lspace=\"0.3em\"><mrow><mo lspace=\"0em\" rspace=\"0em\">∙</mo><mo>+</mo><mn mathvariant=\"bold\">1</mn></mrow></mpadded></mover><mrow><mi mathvariant=\"normal\">F</mi><mi mathvariant=\"normal\">i</mi><mi mathvariant=\"normal\">n</mi></mrow><mover><mo stretchy=\"true\">→</mo><mpadded width=\"+0.6em\" lspace=\"0.3em\"><mrow><mo lspace=\"0em\" rspace=\"0em\">∙</mo><mo>+</mo><mn mathvariant=\"bold\">1</mn></mrow></mpadded></mover><mrow><mi mathvariant=\"normal\">F</mi><mi mathvariant=\"normal\">i</mi><mi mathvariant=\"normal\">n</mi></mrow><mover><mo stretchy=\"true\">→</mo><mpadded width=\"+0.6em\" lspace=\"0.3em\"><mrow><mo lspace=\"0em\" rspace=\"0em\">∙</mo><mo>+</mo><mn mathvariant=\"bold\">1</mn></mrow></mpadded></mover><mo>⋯</mo></mrow><annotation encoding=\"application/x-tex\">\\mathrm{Fin} \\xrightarrow{{\\bullet} + \\mathbf{1}} \\mathrm{Fin} \\xrightarrow{{\\bullet} + \\mathbf{1}} \\mathrm{Fin} \\xrightarrow{{\\bullet} + \\mathbf{1}} \\cdots</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1.084108em;vertical-align:-0.01100000000000012em;\"></span><span class=\"mord\"><span class=\"mord mathrm\">F</span><span class=\"mord mathrm\">i</span><span class=\"mord mathrm\">n</span></span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel x-arrow\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:1.073108em;\"><span style=\"top:-3.322em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight x-arrow-pad\"><span class=\"mord mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\">∙</span></span><span class=\"mbin mtight\">+</span><span class=\"mord mtight\"><span class=\"mord mathbf mtight\">1</span></span></span></span></span><span class=\"svg-align\" style=\"top:-2.689em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"hide-tail\" style=\"height:0.522em;min-width:1.469em;\"><svg width='400em' height='0.522em' viewBox='0 0 400000 522' preserveAspectRatio='xMaxYMin slice'><path d='M0 241v40h399891c-47.3 35.3-84 78-110 128\n-16.7 32-27.7 63.7-33 95 0 1.3-.2 2.7-.5 4-.3 1.3-.5 2.3-.5 3 0 7.3 6.7 11 20\n 11 8 0 13.2-.8 15.5-2.5 2.3-1.7 4.2-5.5 5.5-11.5 2-13.3 5.7-27 11-41 14.7-44.7\n 39-84.5 73-119.5s73.7-60.2 119-75.5c6-2 9-5.7 9-11s-3-9-9-11c-45.3-15.3-85\n-40.5-119-75.5s-58.3-74.8-73-119.5c-4.7-14-8.3-27.3-11-40-1.3-6.7-3.2-10.8-5.5\n-12.5-2.3-1.7-7.5-2.5-15.5-2.5-14 0-21 3.7-21 11 0 2 2 10.3 6 25 20.7 83.3 67\n 151.7 139 205zm0 0v40h399900v-40z'/></svg></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.01100000000000012em;\"><span></span></span></span></span></span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1.084108em;vertical-align:-0.01100000000000012em;\"></span><span class=\"mord\"><span class=\"mord mathrm\">F</span><span class=\"mord mathrm\">i</span><span class=\"mord mathrm\">n</span></span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel x-arrow\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:1.073108em;\"><span style=\"top:-3.322em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight x-arrow-pad\"><span class=\"mord mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\">∙</span></span><span class=\"mbin mtight\">+</span><span class=\"mord mtight\"><span class=\"mord mathbf mtight\">1</span></span></span></span></span><span class=\"svg-align\" style=\"top:-2.689em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"hide-tail\" style=\"height:0.522em;min-width:1.469em;\"><svg width='400em' height='0.522em' viewBox='0 0 400000 522' preserveAspectRatio='xMaxYMin slice'><path d='M0 241v40h399891c-47.3 35.3-84 78-110 128\n-16.7 32-27.7 63.7-33 95 0 1.3-.2 2.7-.5 4-.3 1.3-.5 2.3-.5 3 0 7.3 6.7 11 20\n 11 8 0 13.2-.8 15.5-2.5 2.3-1.7 4.2-5.5 5.5-11.5 2-13.3 5.7-27 11-41 14.7-44.7\n 39-84.5 73-119.5s73.7-60.2 119-75.5c6-2 9-5.7 9-11s-3-9-9-11c-45.3-15.3-85\n-40.5-119-75.5s-58.3-74.8-73-119.5c-4.7-14-8.3-27.3-11-40-1.3-6.7-3.2-10.8-5.5\n-12.5-2.3-1.7-7.5-2.5-15.5-2.5-14 0-21 3.7-21 11 0 2 2 10.3 6 25 20.7 83.3 67\n 151.7 139 205zm0 0v40h399900v-40z'/></svg></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.01100000000000012em;\"><span></span></span></span></span></span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1.084108em;vertical-align:-0.01100000000000012em;\"></span><span class=\"mord\"><span class=\"mord mathrm\">F</span><span class=\"mord mathrm\">i</span><span class=\"mord mathrm\">n</span></span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel x-arrow\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:1.073108em;\"><span style=\"top:-3.322em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight x-arrow-pad\"><span class=\"mord mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\">∙</span></span><span class=\"mbin mtight\">+</span><span class=\"mord mtight\"><span class=\"mord mathbf mtight\">1</span></span></span></span></span><span class=\"svg-align\" style=\"top:-2.689em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"hide-tail\" style=\"height:0.522em;min-width:1.469em;\"><svg width='400em' height='0.522em' viewBox='0 0 400000 522' preserveAspectRatio='xMaxYMin slice'><path d='M0 241v40h399891c-47.3 35.3-84 78-110 128\n-16.7 32-27.7 63.7-33 95 0 1.3-.2 2.7-.5 4-.3 1.3-.5 2.3-.5 3 0 7.3 6.7 11 20\n 11 8 0 13.2-.8 15.5-2.5 2.3-1.7 4.2-5.5 5.5-11.5 2-13.3 5.7-27 11-41 14.7-44.7\n 39-84.5 73-119.5s73.7-60.2 119-75.5c6-2 9-5.7 9-11s-3-9-9-11c-45.3-15.3-85\n-40.5-119-75.5s-58.3-74.8-73-119.5c-4.7-14-8.3-27.3-11-40-1.3-6.7-3.2-10.8-5.5\n-12.5-2.3-1.7-7.5-2.5-15.5-2.5-14 0-21 3.7-21 11 0 2 2 10.3 6 25 20.7 83.3 67\n 151.7 139 205zm0 0v40h399900v-40z'/></svg></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.01100000000000012em;\"><span></span></span></span></span></span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.31em;vertical-align:0em;\"></span><span class=\"minner\">⋯</span></span></span></span></span></p>",
+        "id": 216522814,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1605212739
+    },
+    {
+        "content": "<p>since it's a filtered colimit, life is a lot simpler</p>",
+        "id": 216523025,
+        "sender_full_name": "Reid Barton",
+        "timestamp": 1605212826
+    },
+    {
+        "content": "<p>(wondering if it might be some sort of interesting categorification of Z—alternatively, the permutation groupoid might be appropriate to try instead of Fin)</p>",
+        "id": 216523046,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1605212833
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276480\">Reid Barton</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/computing.202-colimits/near/216523025\">said</a>:</p>\n<blockquote>\n<p>since it's a filtered colimit, life is a lot simpler</p>\n</blockquote>\n<p>what do filtered 2-colimits look like?</p>",
+        "id": 216523338,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1605212952
+    },
+    {
+        "content": "<p>and especially since you've set it up as a colimit along functors which are injective on objects</p>",
+        "id": 216523344,
+        "sender_full_name": "Reid Barton",
+        "timestamp": 1605212954
+    },
+    {
+        "content": "<p>let me remember what the right thing to say here is</p>",
+        "id": 216523361,
+        "sender_full_name": "Reid Barton",
+        "timestamp": 1605212961
+    },
+    {
+        "content": "<p>...hmmm, for the permutation groupoid, i wonder if it would result in, like... Z-many copies of an object w/ an automorphism group that's some sort of finite-support thing</p>",
+        "id": 216523755,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1605213113
+    },
+    {
+        "content": "<p>So one way to say it is that mapping from the categories <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"false\">[</mo><mn>0</mn><mo stretchy=\"false\">]</mo><mo>=</mo><mo stretchy=\"false\">{</mo><mo>∗</mo><mo stretchy=\"false\">}</mo></mrow><annotation encoding=\"application/x-tex\">[0] = \\{*\\}</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mopen\">[</span><span class=\"mord\">0</span><span class=\"mclose\">]</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mopen\">{</span><span class=\"mord\">∗</span><span class=\"mclose\">}</span></span></span></span>, <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"false\">[</mo><mn>1</mn><mo stretchy=\"false\">]</mo><mo>=</mo><mo stretchy=\"false\">{</mo><mo>∗</mo><mo>→</mo><mo>∗</mo><mo stretchy=\"false\">}</mo></mrow><annotation encoding=\"application/x-tex\">[1] = \\{* \\to *\\}</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mopen\">[</span><span class=\"mord\">1</span><span class=\"mclose\">]</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mopen\">{</span><span class=\"mord\">∗</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">→</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord\">∗</span><span class=\"mclose\">}</span></span></span></span>, ... will commute with this colimit because they're finite and the colimit is filtered.</p>",
+        "id": 216523882,
+        "sender_full_name": "Reid Barton",
+        "timestamp": 1605213144
+    },
+    {
+        "content": "<p>and so the objects are just the colimit of the objects</p>",
+        "id": 216523921,
+        "sender_full_name": "Reid Barton",
+        "timestamp": 1605213158
+    },
+    {
+        "content": "<p>ooh</p>",
+        "id": 216523971,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1605213181
+    },
+    {
+        "content": "<p>filtered 2-colimits commute w/ finite 2-limits?</p>",
+        "id": 216524045,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1605213206
+    },
+    {
+        "content": "<p>the maps between two objects, well those objects both appeared at some stage and then the maps between their images in every subsequent stage form a new directed colimit with transition maps given by the action of the functors on maps, and the maps in the colimit is the colimit of that diagram</p>",
+        "id": 216524058,
+        "sender_full_name": "Reid Barton",
+        "timestamp": 1605213211
+    },
+    {
+        "content": "<p>oh wait no sorry misspoke</p>",
+        "id": 216524117,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1605213238
+    },
+    {
+        "content": "<p>meant: finite categories are \"2-compact\"?</p>",
+        "id": 216524181,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1605213247
+    },
+    {
+        "content": "<p>Since your functors are injective on objects (= cofibrations in the canonical model structure on Cat) and the diagram is a sequential composition, the 2-colimit is also computed by the colimit in the 1-category Cat</p>",
+        "id": 216524227,
+        "sender_full_name": "Reid Barton",
+        "timestamp": 1605213264
+    },
+    {
+        "content": "<p>actually maybe i should just try thinking this through a bit lol</p>",
+        "id": 216524230,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1605213265
+    },
+    {
+        "content": "<p>that's what I'm using to avoid thinking about that question</p>",
+        "id": 216524252,
+        "sender_full_name": "Reid Barton",
+        "timestamp": 1605213274
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276480\">Reid Barton</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/computing.202-colimits/near/216524227\">said</a>:</p>\n<blockquote>\n<p>Since your functors are injective on objects (= cofibrations in the canonical model structure on Cat) and the diagram is a sequential composition, the 2-colimit is also computed by the colimit in the 1-category Cat</p>\n</blockquote>\n<p>god dammit i should probably learn some homotopy theory shouldn't i <span aria-label=\"weary\" class=\"emoji emoji-1f629\" role=\"img\" title=\"weary\">:weary:</span></p>",
+        "id": 216524357,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1605213316
+    },
+    {
+        "content": "<p>for a general directed diagram, I think it's easier to say when a cocone that you've guessed is a (2-)colimit</p>",
+        "id": 216524366,
+        "sender_full_name": "Reid Barton",
+        "timestamp": 1605213318
+    },
+    {
+        "content": "<p>ouch</p>",
+        "id": 216524388,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1605213330
+    },
+    {
+        "content": "<p>namely, <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"false\">(</mo><msub><mi>C</mi><mi>i</mi></msub><mo>→</mo><mi>C</mi><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">(C_i \\to C)</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mopen\">(</span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.07153em;\">C</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.31166399999999994em;\"><span style=\"top:-2.5500000000000003em;margin-left:-0.07153em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathnormal mtight\">i</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">→</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.07153em;\">C</span><span class=\"mclose\">)</span></span></span></span> is a colimit (over a directed poset <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>I</mi></mrow><annotation encoding=\"application/x-tex\">I</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.07847em;\">I</span></span></span></span>) when:</p>\n<ul>\n<li>every object in <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>C</mi></mrow><annotation encoding=\"application/x-tex\">C</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.07153em;\">C</span></span></span></span> is isomorphic to the image of some object in some <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi>C</mi><mi>i</mi></msub></mrow><annotation encoding=\"application/x-tex\">C_i</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.83333em;vertical-align:-0.15em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.07153em;\">C</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.31166399999999994em;\"><span style=\"top:-2.5500000000000003em;margin-left:-0.07153em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathnormal mtight\">i</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span></span></span></span></li>\n<li>for any <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi>x</mi><mi>i</mi></msub></mrow><annotation encoding=\"application/x-tex\">x_i</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.58056em;vertical-align:-0.15em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\">x</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.31166399999999994em;\"><span style=\"top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathnormal mtight\">i</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span></span></span></span>, <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi>y</mi><mi>i</mi></msub><mo>∈</mo><msub><mi>C</mi><mi>i</mi></msub></mrow><annotation encoding=\"application/x-tex\">y_i \\in C_i</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.7335400000000001em;vertical-align:-0.19444em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.03588em;\">y</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.31166399999999994em;\"><span style=\"top:-2.5500000000000003em;margin-left:-0.03588em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathnormal mtight\">i</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">∈</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.83333em;vertical-align:-0.15em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.07153em;\">C</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.31166399999999994em;\"><span style=\"top:-2.5500000000000003em;margin-left:-0.07153em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathnormal mtight\">i</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span></span></span></span>, let's write <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi>x</mi><mi>j</mi></msub></mrow><annotation encoding=\"application/x-tex\">x_j</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.716668em;vertical-align:-0.286108em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\">x</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.311664em;\"><span style=\"top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathnormal mtight\" style=\"margin-right:0.05724em;\">j</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.286108em;\"><span></span></span></span></span></span></span></span></span></span>, <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi>y</mi><mi>j</mi></msub></mrow><annotation encoding=\"application/x-tex\">y_j</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.716668em;vertical-align:-0.286108em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.03588em;\">y</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.311664em;\"><span style=\"top:-2.5500000000000003em;margin-left:-0.03588em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathnormal mtight\" style=\"margin-right:0.05724em;\">j</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.286108em;\"><span></span></span></span></span></span></span></span></span></span> for their images in any <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi>C</mi><mi>j</mi></msub></mrow><annotation encoding=\"application/x-tex\">C_j</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.969438em;vertical-align:-0.286108em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.07153em;\">C</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.311664em;\"><span style=\"top:-2.5500000000000003em;margin-left:-0.07153em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathnormal mtight\" style=\"margin-right:0.05724em;\">j</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.286108em;\"><span></span></span></span></span></span></span></span></span></span> for <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>i</mi><mo>≤</mo><mi>j</mi></mrow><annotation encoding=\"application/x-tex\">i \\le j</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.79549em;vertical-align:-0.13597em;\"></span><span class=\"mord mathnormal\">i</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">≤</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.85396em;vertical-align:-0.19444em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.05724em;\">j</span></span></span></span>, and <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>x</mi></mrow><annotation encoding=\"application/x-tex\">x</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.43056em;vertical-align:0em;\"></span><span class=\"mord mathnormal\">x</span></span></span></span>, <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>y</mi></mrow><annotation encoding=\"application/x-tex\">y</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.625em;vertical-align:-0.19444em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.03588em;\">y</span></span></span></span> for their images in <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>C</mi></mrow><annotation encoding=\"application/x-tex\">C</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.07153em;\">C</span></span></span></span>; then <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mrow><mi mathvariant=\"normal\">H</mi><mi mathvariant=\"normal\">o</mi><mi mathvariant=\"normal\">m</mi></mrow><mi>C</mi></msub><mo stretchy=\"false\">(</mo><mi>x</mi><mo separator=\"true\">,</mo><mi>y</mi><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">\\mathrm{Hom}_C(x, y)</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord\"><span class=\"mord\"><span class=\"mord mathrm\">H</span><span class=\"mord mathrm\">o</span><span class=\"mord mathrm\">m</span></span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.32833099999999993em;\"><span style=\"top:-2.5500000000000003em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathnormal mtight\" style=\"margin-right:0.07153em;\">C</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span><span class=\"mopen\">(</span><span class=\"mord mathnormal\">x</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.03588em;\">y</span><span class=\"mclose\">)</span></span></span></span> should be the colimit of the <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mrow><mi mathvariant=\"normal\">H</mi><mi mathvariant=\"normal\">o</mi><mi mathvariant=\"normal\">m</mi></mrow><msub><mi>C</mi><mi>j</mi></msub></msub><mo stretchy=\"false\">(</mo><msub><mi>x</mi><mi>j</mi></msub><mo separator=\"true\">,</mo><msub><mi>y</mi><mi>j</mi></msub><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">\\mathrm{Hom}_{C_j}(x_j, y_j)</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:1.0973199999999999em;vertical-align:-0.34731999999999996em;\"></span><span class=\"mord\"><span class=\"mord\"><span class=\"mord mathrm\">H</span><span class=\"mord mathrm\">o</span><span class=\"mord mathrm\">m</span></span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.32833100000000004em;\"><span style=\"top:-2.5500000000000003em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\"><span class=\"mord mathnormal mtight\" style=\"margin-right:0.07153em;\">C</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.3280857142857143em;\"><span style=\"top:-2.357em;margin-left:-0.07153em;margin-right:0.07142857142857144em;\"><span class=\"pstrut\" style=\"height:2.5em;\"></span><span class=\"sizing reset-size3 size1 mtight\"><span class=\"mord mathnormal mtight\" style=\"margin-right:0.05724em;\">j</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.2818857142857143em;\"><span></span></span></span></span></span></span></span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.34731999999999996em;\"><span></span></span></span></span></span></span><span class=\"mopen\">(</span><span class=\"mord\"><span class=\"mord mathnormal\">x</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.311664em;\"><span style=\"top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathnormal mtight\" style=\"margin-right:0.05724em;\">j</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.286108em;\"><span></span></span></span></span></span></span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.03588em;\">y</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.311664em;\"><span style=\"top:-2.5500000000000003em;margin-left:-0.03588em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathnormal mtight\" style=\"margin-right:0.05724em;\">j</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.286108em;\"><span></span></span></span></span></span></span><span class=\"mclose\">)</span></span></span></span>.</li>\n</ul>",
+        "id": 216524712,
+        "sender_full_name": "Reid Barton",
+        "timestamp": 1605213459
+    },
+    {
+        "content": "<p>i wanna make some kind of joke about guess-and-check and integration but i guess integral signs are for oplax colimits not pseudo colimits</p>",
+        "id": 216524972,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1605213559
+    },
+    {
+        "content": "<p>but this latter colimit is also filtered, so it just means that</p>\n<ul>\n<li>every map in <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mrow><mi mathvariant=\"normal\">H</mi><mi mathvariant=\"normal\">o</mi><mi mathvariant=\"normal\">m</mi></mrow><mi>C</mi></msub><mo stretchy=\"false\">(</mo><mi>x</mi><mo separator=\"true\">,</mo><mi>y</mi><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">\\mathrm{Hom}_C(x, y)</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord\"><span class=\"mord\"><span class=\"mord mathrm\">H</span><span class=\"mord mathrm\">o</span><span class=\"mord mathrm\">m</span></span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.32833099999999993em;\"><span style=\"top:-2.5500000000000003em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathnormal mtight\" style=\"margin-right:0.07153em;\">C</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span><span class=\"mopen\">(</span><span class=\"mord mathnormal\">x</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.03588em;\">y</span><span class=\"mclose\">)</span></span></span></span> is the image of a map in some <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mrow><mi mathvariant=\"normal\">H</mi><mi mathvariant=\"normal\">o</mi><mi mathvariant=\"normal\">m</mi></mrow><msub><mi>C</mi><mi>j</mi></msub></msub><mo stretchy=\"false\">(</mo><msub><mi>x</mi><mi>j</mi></msub><mo separator=\"true\">,</mo><msub><mi>y</mi><mi>j</mi></msub><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">\\mathrm{Hom}_{C_j}(x_j, y_j)</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:1.0973199999999999em;vertical-align:-0.34731999999999996em;\"></span><span class=\"mord\"><span class=\"mord\"><span class=\"mord mathrm\">H</span><span class=\"mord mathrm\">o</span><span class=\"mord mathrm\">m</span></span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.32833100000000004em;\"><span style=\"top:-2.5500000000000003em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\"><span class=\"mord mathnormal mtight\" style=\"margin-right:0.07153em;\">C</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.3280857142857143em;\"><span style=\"top:-2.357em;margin-left:-0.07153em;margin-right:0.07142857142857144em;\"><span class=\"pstrut\" style=\"height:2.5em;\"></span><span class=\"sizing reset-size3 size1 mtight\"><span class=\"mord mathnormal mtight\" style=\"margin-right:0.05724em;\">j</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.2818857142857143em;\"><span></span></span></span></span></span></span></span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.34731999999999996em;\"><span></span></span></span></span></span></span><span class=\"mopen\">(</span><span class=\"mord\"><span class=\"mord mathnormal\">x</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.311664em;\"><span style=\"top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathnormal mtight\" style=\"margin-right:0.05724em;\">j</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.286108em;\"><span></span></span></span></span></span></span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.03588em;\">y</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.311664em;\"><span style=\"top:-2.5500000000000003em;margin-left:-0.03588em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathnormal mtight\" style=\"margin-right:0.05724em;\">j</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.286108em;\"><span></span></span></span></span></span></span><span class=\"mclose\">)</span></span></span></span>,</li>\n<li>whenever two maps in <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mrow><mi mathvariant=\"normal\">H</mi><mi mathvariant=\"normal\">o</mi><mi mathvariant=\"normal\">m</mi></mrow><msub><mi>C</mi><mi>i</mi></msub></msub><mo stretchy=\"false\">(</mo><msub><mi>x</mi><mi>i</mi></msub><mo separator=\"true\">,</mo><msub><mi>y</mi><mi>i</mi></msub><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">\\mathrm{Hom}_{C_i}(x_i, y_i)</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:1.0001em;vertical-align:-0.2501em;\"></span><span class=\"mord\"><span class=\"mord\"><span class=\"mord mathrm\">H</span><span class=\"mord mathrm\">o</span><span class=\"mord mathrm\">m</span></span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.32833099999999993em;\"><span style=\"top:-2.5500000000000003em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\"><span class=\"mord mathnormal mtight\" style=\"margin-right:0.07153em;\">C</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.3280857142857143em;\"><span style=\"top:-2.357em;margin-left:-0.07153em;margin-right:0.07142857142857144em;\"><span class=\"pstrut\" style=\"height:2.5em;\"></span><span class=\"sizing reset-size3 size1 mtight\"><span class=\"mord mathnormal mtight\">i</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.143em;\"><span></span></span></span></span></span></span></span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.2501em;\"><span></span></span></span></span></span></span><span class=\"mopen\">(</span><span class=\"mord\"><span class=\"mord mathnormal\">x</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.31166399999999994em;\"><span style=\"top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathnormal mtight\">i</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.03588em;\">y</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.31166399999999994em;\"><span style=\"top:-2.5500000000000003em;margin-left:-0.03588em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathnormal mtight\">i</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span><span class=\"mclose\">)</span></span></span></span> become equal in <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mrow><mi mathvariant=\"normal\">H</mi><mi mathvariant=\"normal\">o</mi><mi mathvariant=\"normal\">m</mi></mrow><mi>C</mi></msub><mo stretchy=\"false\">(</mo><mi>x</mi><mo separator=\"true\">,</mo><mi>y</mi><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">\\mathrm{Hom}_C(x, y)</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord\"><span class=\"mord\"><span class=\"mord mathrm\">H</span><span class=\"mord mathrm\">o</span><span class=\"mord mathrm\">m</span></span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.32833099999999993em;\"><span style=\"top:-2.5500000000000003em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathnormal mtight\" style=\"margin-right:0.07153em;\">C</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span><span class=\"mopen\">(</span><span class=\"mord mathnormal\">x</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.03588em;\">y</span><span class=\"mclose\">)</span></span></span></span>, they already became equal in some <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mrow><mi mathvariant=\"normal\">H</mi><mi mathvariant=\"normal\">o</mi><mi mathvariant=\"normal\">m</mi></mrow><msub><mi>C</mi><mi>j</mi></msub></msub><mo stretchy=\"false\">(</mo><msub><mi>x</mi><mi>j</mi></msub><mo separator=\"true\">,</mo><msub><mi>y</mi><mi>j</mi></msub><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">\\mathrm{Hom}_{C_j}(x_j, y_j)</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:1.0973199999999999em;vertical-align:-0.34731999999999996em;\"></span><span class=\"mord\"><span class=\"mord\"><span class=\"mord mathrm\">H</span><span class=\"mord mathrm\">o</span><span class=\"mord mathrm\">m</span></span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.32833100000000004em;\"><span style=\"top:-2.5500000000000003em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\"><span class=\"mord mathnormal mtight\" style=\"margin-right:0.07153em;\">C</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.3280857142857143em;\"><span style=\"top:-2.357em;margin-left:-0.07153em;margin-right:0.07142857142857144em;\"><span class=\"pstrut\" style=\"height:2.5em;\"></span><span class=\"sizing reset-size3 size1 mtight\"><span class=\"mord mathnormal mtight\" style=\"margin-right:0.05724em;\">j</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.2818857142857143em;\"><span></span></span></span></span></span></span></span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.34731999999999996em;\"><span></span></span></span></span></span></span><span class=\"mopen\">(</span><span class=\"mord\"><span class=\"mord mathnormal\">x</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.311664em;\"><span style=\"top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathnormal mtight\" style=\"margin-right:0.05724em;\">j</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.286108em;\"><span></span></span></span></span></span></span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.03588em;\">y</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.311664em;\"><span style=\"top:-2.5500000000000003em;margin-left:-0.03588em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathnormal mtight\" style=\"margin-right:0.05724em;\">j</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.286108em;\"><span></span></span></span></span></span></span><span class=\"mclose\">)</span></span></span></span>. \"every equation appears at some finite stage\"</li>\n</ul>",
+        "id": 216525007,
+        "sender_full_name": "Reid Barton",
+        "timestamp": 1605213582
+    },
+    {
+        "content": "<p>I think you could probably read this as a formula as well, I just find this description more useful sometimes.</p>",
+        "id": 216525184,
+        "sender_full_name": "Reid Barton",
+        "timestamp": 1605213641
+    },
+    {
+        "content": "<p>I like this question by the way, and I think I know what the answer is in the (FinSet, iso) case but I won't spoil it.</p>",
+        "id": 216525213,
+        "sender_full_name": "Reid Barton",
+        "timestamp": 1605213660
+    },
+    {
+        "content": "<p>well, i have a phone call in 15 minutes, so we'll see if i figure it out before getting sidetracked enough to forget about this for like 3 days</p>",
+        "id": 216525838,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1605213933
+    },
+    {
+        "content": "<p>The non-answer summary of the above is that you could take the objects to be the disjoint union of all the object sets, and then you get a map from <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>x</mi><mo>∈</mo><msub><mi>C</mi><mi>i</mi></msub></mrow><annotation encoding=\"application/x-tex\">x \\in C_i</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.5782em;vertical-align:-0.0391em;\"></span><span class=\"mord mathnormal\">x</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">∈</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.83333em;vertical-align:-0.15em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.07153em;\">C</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.31166399999999994em;\"><span style=\"top:-2.5500000000000003em;margin-left:-0.07153em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathnormal mtight\">i</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span></span></span></span> to <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>y</mi><mo>∈</mo><msub><mi>C</mi><mi>j</mi></msub></mrow><annotation encoding=\"application/x-tex\">y \\in C_j</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.7335400000000001em;vertical-align:-0.19444em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.03588em;\">y</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">∈</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.969438em;vertical-align:-0.286108em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.07153em;\">C</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.311664em;\"><span style=\"top:-2.5500000000000003em;margin-left:-0.07153em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathnormal mtight\" style=\"margin-right:0.05724em;\">j</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.286108em;\"><span></span></span></span></span></span></span></span></span></span> for every map between their images in <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi>C</mi><mi>k</mi></msub></mrow><annotation encoding=\"application/x-tex\">C_k</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.83333em;vertical-align:-0.15em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.07153em;\">C</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.33610799999999996em;\"><span style=\"top:-2.5500000000000003em;margin-left:-0.07153em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathnormal mtight\" style=\"margin-right:0.03148em;\">k</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span></span></span></span> for <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>k</mi><mo>≥</mo><mi>max</mi><mo>⁡</mo><mo stretchy=\"false\">{</mo><mi>i</mi><mo separator=\"true\">,</mo><mi>j</mi><mo stretchy=\"false\">}</mo></mrow><annotation encoding=\"application/x-tex\">k \\ge \\max\\{i,j\\}</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.83041em;vertical-align:-0.13597em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.03148em;\">k</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">≥</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mop\">max</span><span class=\"mopen\">{</span><span class=\"mord mathnormal\">i</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.05724em;\">j</span><span class=\"mclose\">}</span></span></span></span>, but identify two of these whenever they're carried to the same map in yet another <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi>C</mi><mi>l</mi></msub></mrow><annotation encoding=\"application/x-tex\">C_l</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.83333em;vertical-align:-0.15em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.07153em;\">C</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.33610799999999996em;\"><span style=\"top:-2.5500000000000003em;margin-left:-0.07153em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathnormal mtight\" style=\"margin-right:0.01968em;\">l</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span></span></span></span></p>",
+        "id": 216525854,
+        "sender_full_name": "Reid Barton",
+        "timestamp": 1605213943
+    },
+    {
+        "content": "<p>hmmm</p>",
+        "id": 216526013,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1605214007
+    },
+    {
+        "content": "<p>that's like uhhh</p>",
+        "id": 216526057,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1605214026
+    },
+    {
+        "content": "<p>when you take a filtered colimit of setoids</p>",
+        "id": 216526112,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1605214050
+    },
+    {
+        "content": "<p>or sth</p>",
+        "id": 216526125,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1605214055
+    },
+    {
+        "content": "<p>i'm bullshitting, i dunno what kind of colimit of setoids that would be, it might be weak somehow—really i mean it's notionally what happens when you take a filtered colimit of sets</p>",
+        "id": 216526281,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1605214110
+    },
+    {
+        "content": "<p>right, that's because any kind of finitary algebraic structure will pass through a filtered colimit of sets</p>",
+        "id": 216526554,
+        "sender_full_name": "Reid Barton",
+        "timestamp": 1605214221
+    },
+    {
+        "content": "<p><del>as far as im concerned every filtered colimit is a stalk</del></p>",
+        "id": 216526588,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1605214233
+    },
+    {
+        "content": "<p><del>well, i mean, you can probably make that literally true in a boring way by using the ind-completion of the diagram as a site or something...</del></p>",
+        "id": 216526741,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1605214307
+    },
+    {
+        "content": "<p><del>whatever</del></p>",
+        "id": 216526763,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1605214317
+    },
+    {
+        "content": "<p>The point about the filtered colimit is that normally when you compute, say, a pushout, it could happen that a morphism in one of the categories becomes composable with a morphism in the other category; and then in the pushout their composition is a morphism that didn't exist before</p>",
+        "id": 216527700,
+        "sender_full_name": "Reid Barton",
+        "timestamp": 1605214722
+    },
+    {
+        "content": "<p>and the same thing can happen with an equation in one category and a morphism in the other</p>",
+        "id": 216527719,
+        "sender_full_name": "Reid Barton",
+        "timestamp": 1605214733
+    },
+    {
+        "content": "<p>but when the diagram is filtered, you know stuff like that already got sorted out at some finite stage</p>",
+        "id": 216527752,
+        "sender_full_name": "Reid Barton",
+        "timestamp": 1605214748
+    },
+    {
+        "content": "<p>Anyways, if I'm remembering correctly, the answer for (FinSet, iso) is something interesting that probably wouldn't be one of your first few guesses.</p>",
+        "id": 216527935,
+        "sender_full_name": "Reid Barton",
+        "timestamp": 1605214837
+    },
+    {
+        "content": "<p>So if you get stuck, ask me about it again some time.</p>",
+        "id": 216527959,
+        "sender_full_name": "Reid Barton",
+        "timestamp": 1605214849
+    },
+    {
+        "content": "<p>Oh, I think I was thinking of something slightly different</p>",
+        "id": 216528788,
+        "sender_full_name": "Reid Barton",
+        "timestamp": 1605215298
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276072\">sarahzrf</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/computing.202-colimits/near/216522814\">said</a>:</p>\n<blockquote>\n<p>for the record: the particular 2-colimit i'm interested in computing at the moment is—let Fin be a skeleton of FinSet (im not super invested in it being a skeleton but that seems convenient); then i want to know the 2-colimit of the diagram</p>\n<p><span class=\"katex-display\"><span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mrow><mi mathvariant=\"normal\">F</mi><mi mathvariant=\"normal\">i</mi><mi mathvariant=\"normal\">n</mi></mrow><mover><mo stretchy=\"true\">→</mo><mpadded width=\"+0.6em\" lspace=\"0.3em\"><mrow><mo lspace=\"0em\" rspace=\"0em\">∙</mo><mo>+</mo><mn mathvariant=\"bold\">1</mn></mrow></mpadded></mover><mrow><mi mathvariant=\"normal\">F</mi><mi mathvariant=\"normal\">i</mi><mi mathvariant=\"normal\">n</mi></mrow><mover><mo stretchy=\"true\">→</mo><mpadded width=\"+0.6em\" lspace=\"0.3em\"><mrow><mo lspace=\"0em\" rspace=\"0em\">∙</mo><mo>+</mo><mn mathvariant=\"bold\">1</mn></mrow></mpadded></mover><mrow><mi mathvariant=\"normal\">F</mi><mi mathvariant=\"normal\">i</mi><mi mathvariant=\"normal\">n</mi></mrow><mover><mo stretchy=\"true\">→</mo><mpadded width=\"+0.6em\" lspace=\"0.3em\"><mrow><mo lspace=\"0em\" rspace=\"0em\">∙</mo><mo>+</mo><mn mathvariant=\"bold\">1</mn></mrow></mpadded></mover><mo>⋯</mo></mrow><annotation encoding=\"application/x-tex\">\\mathrm{Fin} \\xrightarrow{{\\bullet} + \\mathbf{1}} \\mathrm{Fin} \\xrightarrow{{\\bullet} + \\mathbf{1}} \\mathrm{Fin} \\xrightarrow{{\\bullet} + \\mathbf{1}} \\cdots</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1.084108em;vertical-align:-0.01100000000000012em;\"></span><span class=\"mord\"><span class=\"mord mathrm\">F</span><span class=\"mord mathrm\">i</span><span class=\"mord mathrm\">n</span></span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel x-arrow\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:1.073108em;\"><span style=\"top:-3.322em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight x-arrow-pad\"><span class=\"mord mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\">∙</span></span><span class=\"mbin mtight\">+</span><span class=\"mord mtight\"><span class=\"mord mathbf mtight\">1</span></span></span></span></span><span class=\"svg-align\" style=\"top:-2.689em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"hide-tail\" style=\"height:0.522em;min-width:1.469em;\"><svg width='400em' height='0.522em' viewBox='0 0 400000 522' preserveAspectRatio='xMaxYMin slice'><path d='M0 241v40h399891c-47.3 35.3-84 78-110 128\n-16.7 32-27.7 63.7-33 95 0 1.3-.2 2.7-.5 4-.3 1.3-.5 2.3-.5 3 0 7.3 6.7 11 20\n 11 8 0 13.2-.8 15.5-2.5 2.3-1.7 4.2-5.5 5.5-11.5 2-13.3 5.7-27 11-41 14.7-44.7\n 39-84.5 73-119.5s73.7-60.2 119-75.5c6-2 9-5.7 9-11s-3-9-9-11c-45.3-15.3-85\n-40.5-119-75.5s-58.3-74.8-73-119.5c-4.7-14-8.3-27.3-11-40-1.3-6.7-3.2-10.8-5.5\n-12.5-2.3-1.7-7.5-2.5-15.5-2.5-14 0-21 3.7-21 11 0 2 2 10.3 6 25 20.7 83.3 67\n 151.7 139 205zm0 0v40h399900v-40z'/></svg></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.01100000000000012em;\"><span></span></span></span></span></span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1.084108em;vertical-align:-0.01100000000000012em;\"></span><span class=\"mord\"><span class=\"mord mathrm\">F</span><span class=\"mord mathrm\">i</span><span class=\"mord mathrm\">n</span></span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel x-arrow\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:1.073108em;\"><span style=\"top:-3.322em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight x-arrow-pad\"><span class=\"mord mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\">∙</span></span><span class=\"mbin mtight\">+</span><span class=\"mord mtight\"><span class=\"mord mathbf mtight\">1</span></span></span></span></span><span class=\"svg-align\" style=\"top:-2.689em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"hide-tail\" style=\"height:0.522em;min-width:1.469em;\"><svg width='400em' height='0.522em' viewBox='0 0 400000 522' preserveAspectRatio='xMaxYMin slice'><path d='M0 241v40h399891c-47.3 35.3-84 78-110 128\n-16.7 32-27.7 63.7-33 95 0 1.3-.2 2.7-.5 4-.3 1.3-.5 2.3-.5 3 0 7.3 6.7 11 20\n 11 8 0 13.2-.8 15.5-2.5 2.3-1.7 4.2-5.5 5.5-11.5 2-13.3 5.7-27 11-41 14.7-44.7\n 39-84.5 73-119.5s73.7-60.2 119-75.5c6-2 9-5.7 9-11s-3-9-9-11c-45.3-15.3-85\n-40.5-119-75.5s-58.3-74.8-73-119.5c-4.7-14-8.3-27.3-11-40-1.3-6.7-3.2-10.8-5.5\n-12.5-2.3-1.7-7.5-2.5-15.5-2.5-14 0-21 3.7-21 11 0 2 2 10.3 6 25 20.7 83.3 67\n 151.7 139 205zm0 0v40h399900v-40z'/></svg></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.01100000000000012em;\"><span></span></span></span></span></span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1.084108em;vertical-align:-0.01100000000000012em;\"></span><span class=\"mord\"><span class=\"mord mathrm\">F</span><span class=\"mord mathrm\">i</span><span class=\"mord mathrm\">n</span></span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel x-arrow\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:1.073108em;\"><span style=\"top:-3.322em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight x-arrow-pad\"><span class=\"mord mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\">∙</span></span><span class=\"mbin mtight\">+</span><span class=\"mord mtight\"><span class=\"mord mathbf mtight\">1</span></span></span></span></span><span class=\"svg-align\" style=\"top:-2.689em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"hide-tail\" style=\"height:0.522em;min-width:1.469em;\"><svg width='400em' height='0.522em' viewBox='0 0 400000 522' preserveAspectRatio='xMaxYMin slice'><path d='M0 241v40h399891c-47.3 35.3-84 78-110 128\n-16.7 32-27.7 63.7-33 95 0 1.3-.2 2.7-.5 4-.3 1.3-.5 2.3-.5 3 0 7.3 6.7 11 20\n 11 8 0 13.2-.8 15.5-2.5 2.3-1.7 4.2-5.5 5.5-11.5 2-13.3 5.7-27 11-41 14.7-44.7\n 39-84.5 73-119.5s73.7-60.2 119-75.5c6-2 9-5.7 9-11s-3-9-9-11c-45.3-15.3-85\n-40.5-119-75.5s-58.3-74.8-73-119.5c-4.7-14-8.3-27.3-11-40-1.3-6.7-3.2-10.8-5.5\n-12.5-2.3-1.7-7.5-2.5-15.5-2.5-14 0-21 3.7-21 11 0 2 2 10.3 6 25 20.7 83.3 67\n 151.7 139 205zm0 0v40h399900v-40z'/></svg></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.01100000000000012em;\"><span></span></span></span></span></span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.31em;vertical-align:0em;\"></span><span class=\"minner\">⋯</span></span></span></span></span></p>\n</blockquote>\n<p>What do you guess the answer is?  This is a nice question so it should have a nice answer, and it should be possible to guess it... and it's easier to compute things when you already have a guess as to the answer.</p>",
+        "id": 216530752,
+        "sender_full_name": "John Baez",
+        "timestamp": 1605216330
+    },
+    {
+        "content": "<p>So far Reid seems to have said it doesn't matter whether you're doing a 2-colimit or a 1-colimit.</p>",
+        "id": 216530917,
+        "sender_full_name": "John Baez",
+        "timestamp": 1605216423
+    },
+    {
+        "content": "<p>cmon i only just got back from my call</p>",
+        "id": 216530950,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1605216447
+    },
+    {
+        "content": "<p>give me a minute to work on this</p>",
+        "id": 216530953,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1605216452
+    },
+    {
+        "content": "<p>I meant: instead of computing it, guessing the answer.  John Wheeler said \"it's never good to do a computation unless you already know the answer\" - and while he was exaggerating, I would never do a computation without first <em>guessing</em> the answer. I might have more than one guess.  Then as I do the calculation I can see which guess is winning.</p>",
+        "id": 216532809,
+        "sender_full_name": "John Baez",
+        "timestamp": 1605217252
+    },
+    {
+        "content": "<p>i mean sure but in this case for once im actually not sure what im gonna get beyond \"the objects are prolly gonna be Z\" and a vague sense of flavor</p>",
+        "id": 216532909,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1605217304
+    },
+    {
+        "content": "<p>My first guess was \"you get a category where the one objects is <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"double-struck\">N</mi></mrow><annotation encoding=\"application/x-tex\">\\mathbb{N}</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.68889em;vertical-align:0em;\"></span><span class=\"mord\"><span class=\"mord mathbb\">N</span></span></span></span></span> and the morphisms are functions that equal the identity except on some finite initial segment\".  But then I decided that was screwed up.</p>",
+        "id": 216533051,
+        "sender_full_name": "John Baez",
+        "timestamp": 1605217357
+    },
+    {
+        "content": "<p>no spoilers!</p>",
+        "id": 216533103,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1605217385
+    },
+    {
+        "content": "<p>im still chewing on the more general info about filtered 2-colimits</p>",
+        "id": 216533139,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1605217400
+    },
+    {
+        "content": "<p>It's not a spoiler if it's a guess <span aria-label=\"upside down\" class=\"emoji emoji-1f643\" role=\"img\" title=\"upside down\">:upside_down:</span></p>",
+        "id": 216533147,
+        "sender_full_name": "Reid Barton",
+        "timestamp": 1605217403
+    },
+    {
+        "content": "<p>If \"spoiler\" means \"crappy guess that spoils your ability to make a better guess\", then maybe I just gave you a spoiler.</p>",
+        "id": 216533201,
+        "sender_full_name": "John Baez",
+        "timestamp": 1605217433
+    },
+    {
+        "content": "<p>I can't even figure out what question the thing I thought was going to be the answer is actually the answer to.</p>",
+        "id": 216533415,
+        "sender_full_name": "Reid Barton",
+        "timestamp": 1605217522
+    },
+    {
+        "content": "<p>Whew, that's a deep level of confusion.   <span aria-label=\"upside down\" class=\"emoji emoji-1f643\" role=\"img\" title=\"upside down\">:upside_down:</span></p>",
+        "id": 216533446,
+        "sender_full_name": "John Baez",
+        "timestamp": 1605217544
+    },
+    {
+        "content": "<p>lmao</p>",
+        "id": 216533486,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1605217562
+    },
+    {
+        "content": "<p>Did you say what that thing is, or have you kept it secret to avoid spoiling Sarah's day?</p>",
+        "id": 216533563,
+        "sender_full_name": "John Baez",
+        "timestamp": 1605217584
+    },
+    {
+        "content": "<p>(I didn't read all the messages carefully.)</p>",
+        "id": 216533600,
+        "sender_full_name": "John Baez",
+        "timestamp": 1605217599
+    },
+    {
+        "content": "<p>he's been very courteous</p>",
+        "id": 216533666,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1605217626
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276072\">sarahzrf</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/computing.202-colimits/near/216524181\">said</a>:</p>\n<blockquote>\n<p>meant: finite categories are \"2-compact\"?</p>\n</blockquote>\n<p>wait if that <em>is</em> true then now i want to know the codensity monad (codensity 2-monad???) of FinCat's inclusion, or maybe just of the simplex category's (maybe theyre the same?)</p>",
+        "id": 216533957,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1605217754
+    },
+    {
+        "content": "<p>I didn't say what it was, but there's a certain theorem proven by guys with names like Barratt and Priddy and Quillen which I thought was going to be relevant.</p>",
+        "id": 216534047,
+        "sender_full_name": "Reid Barton",
+        "timestamp": 1605217797
+    },
+    {
+        "content": "<p>But now I'm not sure whether it is.</p>",
+        "id": 216534131,
+        "sender_full_name": "Reid Barton",
+        "timestamp": 1605217818
+    },
+    {
+        "content": "<p>I'm not even sure precisely what theorem you mean, but I was thinking about stuff vaguely like that.</p>",
+        "id": 216534306,
+        "sender_full_name": "John Baez",
+        "timestamp": 1605217899
+    },
+    {
+        "content": "<p>I used to know some \"Barratt-Priddy theorem\" or something.  I probably still know what it <em>says</em>, just not which one is the Barratt-Priddy theorem.</p>",
+        "id": 216534349,
+        "sender_full_name": "John Baez",
+        "timestamp": 1605217921
+    },
+    {
+        "content": "<p>Okay, yeah - I looked it up, I know that thing.</p>",
+        "id": 216534848,
+        "sender_full_name": "John Baez",
+        "timestamp": 1605218135
+    },
+    {
+        "content": "<p>That's connected to the <em>groupoid</em> of finite sets.</p>",
+        "id": 216534898,
+        "sender_full_name": "John Baez",
+        "timestamp": 1605218159
+    },
+    {
+        "content": "<p>okay, i got it i think</p>",
+        "id": 216535105,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1605218260
+    },
+    {
+        "content": "<p>Right, that was a second version of the question which was also discussed.</p>",
+        "id": 216535118,
+        "sender_full_name": "Reid Barton",
+        "timestamp": 1605218268
+    },
+    {
+        "content": "<p>objects are Z</p>",
+        "id": 216535124,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1605218272
+    },
+    {
+        "content": "<p>a morphism n → m is...</p>",
+        "id": 216535134,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1605218277
+    },
+    {
+        "content": "<p>oh wait sorry the case i was tihnking about doesnt generalize obviously enough to constitute a full answer, one minute</p>",
+        "id": 216535234,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1605218332
+    },
+    {
+        "content": "<p>almost there though... let's see</p>",
+        "id": 216535243,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1605218337
+    },
+    {
+        "content": "<p><span aria-label=\"sweat smile\" class=\"emoji emoji-1f605\" role=\"img\" title=\"sweat smile\">:sweat_smile:</span></p>",
+        "id": 216535263,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1605218346
+    },
+    {
+        "content": "<p>okay, i think you can present it as... a map N → N which is defined by x ↦ x + (m - n) at all but finitely many points</p>",
+        "id": 216535960,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1605218727
+    },
+    {
+        "content": "<p>but i wouldnt be surprised if that can be rephrased more nicely</p>",
+        "id": 216536063,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1605218773
+    },
+    {
+        "content": "<p>If we go one level down and replace Fin with <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"double-struck\">N</mi></mrow><annotation encoding=\"application/x-tex\">\\Bbb N</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.68889em;vertical-align:0em;\"></span><span class=\"mord mathbb\">N</span></span></span></span>, then we'd get<br>\n<span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"double-struck\">N</mi><mo>×</mo><mi mathvariant=\"double-struck\">N</mi><mi mathvariant=\"normal\">/</mi><mo>∼</mo></mrow><annotation encoding=\"application/x-tex\">\\Bbb N \\times \\Bbb N / \\sim</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.77222em;vertical-align:-0.08333em;\"></span><span class=\"mord mathbb\">N</span><span class=\"mspace\" style=\"margin-right:0.2222222222222222em;\"></span><span class=\"mbin\">×</span><span class=\"mspace\" style=\"margin-right:0.2222222222222222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord mathbb\">N</span><span class=\"mord\">/</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">∼</span></span></span></span>, where <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"false\">(</mo><mi>h</mi><mo separator=\"true\">,</mo><mi>k</mi><mo stretchy=\"false\">)</mo><mo>∼</mo><mo stretchy=\"false\">(</mo><mi>n</mi><mo separator=\"true\">,</mo><mi>m</mi><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">(h,k) \\sim (n,m)</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mopen\">(</span><span class=\"mord mathnormal\">h</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.03148em;\">k</span><span class=\"mclose\">)</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">∼</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mopen\">(</span><span class=\"mord mathnormal\">n</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mord mathnormal\">m</span><span class=\"mclose\">)</span></span></span></span> iff <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>k</mi><mo>=</mo><mi>n</mi><mo>+</mo><mi>m</mi><mo>−</mo><mi>k</mi></mrow><annotation encoding=\"application/x-tex\">k = n + m - k</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.69444em;vertical-align:0em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.03148em;\">k</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.66666em;vertical-align:-0.08333em;\"></span><span class=\"mord mathnormal\">n</span><span class=\"mspace\" style=\"margin-right:0.2222222222222222em;\"></span><span class=\"mbin\">+</span><span class=\"mspace\" style=\"margin-right:0.2222222222222222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.66666em;vertical-align:-0.08333em;\"></span><span class=\"mord mathnormal\">m</span><span class=\"mspace\" style=\"margin-right:0.2222222222222222em;\"></span><span class=\"mbin\">−</span><span class=\"mspace\" style=\"margin-right:0.2222222222222222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.69444em;vertical-align:0em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.03148em;\">k</span></span></span></span>, i.e. <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>h</mi><mo>+</mo><mi>k</mi><mo>=</mo><mi>m</mi><mo>+</mo><mi>n</mi></mrow><annotation encoding=\"application/x-tex\">h+k=m+n</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.77777em;vertical-align:-0.08333em;\"></span><span class=\"mord mathnormal\">h</span><span class=\"mspace\" style=\"margin-right:0.2222222222222222em;\"></span><span class=\"mbin\">+</span><span class=\"mspace\" style=\"margin-right:0.2222222222222222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.69444em;vertical-align:0em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.03148em;\">k</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.66666em;vertical-align:-0.08333em;\"></span><span class=\"mord mathnormal\">m</span><span class=\"mspace\" style=\"margin-right:0.2222222222222222em;\"></span><span class=\"mbin\">+</span><span class=\"mspace\" style=\"margin-right:0.2222222222222222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.43056em;vertical-align:0em;\"></span><span class=\"mord mathnormal\">n</span></span></span></span>.</p>",
+        "id": 216536302,
+        "sender_full_name": "Matteo Capucci",
+        "timestamp": 1605218914
+    },
+    {
+        "content": "<p>yup, that's what i wastrying to categorify :&gt;</p>",
+        "id": 216536321,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1605218930
+    },
+    {
+        "content": "<p>Does this give you the integers? <span aria-label=\"thinking\" class=\"emoji emoji-1f914\" role=\"img\" title=\"thinking\">:thinking:</span></p>",
+        "id": 216536362,
+        "sender_full_name": "Matteo Capucci",
+        "timestamp": 1605218956
+    },
+    {
+        "content": "<p>yeah!</p>",
+        "id": 216536368,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1605218961
+    },
+    {
+        "content": "<p>famously so</p>",
+        "id": 216536396,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1605218971
+    },
+    {
+        "content": "<p>shouldn't it be <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>h</mi><mo>+</mo><mi>m</mi><mo>=</mo><mi>n</mi><mo>+</mo><mi>k</mi></mrow><annotation encoding=\"application/x-tex\">h+m = n+k</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.77777em;vertical-align:-0.08333em;\"></span><span class=\"mord mathnormal\">h</span><span class=\"mspace\" style=\"margin-right:0.2222222222222222em;\"></span><span class=\"mbin\">+</span><span class=\"mspace\" style=\"margin-right:0.2222222222222222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.43056em;vertical-align:0em;\"></span><span class=\"mord mathnormal\">m</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.66666em;vertical-align:-0.08333em;\"></span><span class=\"mord mathnormal\">n</span><span class=\"mspace\" style=\"margin-right:0.2222222222222222em;\"></span><span class=\"mbin\">+</span><span class=\"mspace\" style=\"margin-right:0.2222222222222222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.69444em;vertical-align:0em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.03148em;\">k</span></span></span></span>?</p>",
+        "id": 216536500,
+        "sender_full_name": "Matteo Capucci",
+        "timestamp": 1605218995
+    },
+    {
+        "content": "<p>for the other, groupoidy version of the question, i think you should indeed get a groupoid with Z-many objects and where each one's automorphism group is the subgroup of Aut(N) on the permutations that fix cofinitely many elements</p>",
+        "id": 216536545,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1605219003
+    },
+    {
+        "content": "<p>oh wait i wasnt reading carefully lmao i just thought it looked about right</p>",
+        "id": 216536588,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1605219020
+    },
+    {
+        "content": "<p>i mean, this colimit does give you the integers</p>",
+        "id": 216536597,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1605219026
+    },
+    {
+        "content": "<p>Another way you could think of the maps is as maps <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"false\">{</mo><mo>…</mo><mo separator=\"true\">,</mo><mi>n</mi><mo>−</mo><mn>1</mn><mo separator=\"true\">,</mo><mi>n</mi><mo stretchy=\"false\">}</mo><mo>→</mo><mo stretchy=\"false\">{</mo><mo>…</mo><mo separator=\"true\">,</mo><mi>m</mi><mo>−</mo><mn>1</mn><mo separator=\"true\">,</mo><mi>m</mi><mo stretchy=\"false\">}</mo></mrow><annotation encoding=\"application/x-tex\">\\{\\ldots, n-1, n\\} \\to \\{\\ldots, m-1, m\\}</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mopen\">{</span><span class=\"minner\">…</span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mord mathnormal\">n</span><span class=\"mspace\" style=\"margin-right:0.2222222222222222em;\"></span><span class=\"mbin\">−</span><span class=\"mspace\" style=\"margin-right:0.2222222222222222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord\">1</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mord mathnormal\">n</span><span class=\"mclose\">}</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">→</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mopen\">{</span><span class=\"minner\">…</span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mord mathnormal\">m</span><span class=\"mspace\" style=\"margin-right:0.2222222222222222em;\"></span><span class=\"mbin\">−</span><span class=\"mspace\" style=\"margin-right:0.2222222222222222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord\">1</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mord mathnormal\">m</span><span class=\"mclose\">}</span></span></span></span> which fix all but finitely many values</p>",
+        "id": 216536676,
+        "sender_full_name": "Reid Barton",
+        "timestamp": 1605219083
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276072\">sarahzrf</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/computing.202-colimits/near/216536545\">said</a>:</p>\n<blockquote>\n<p>for the other, groupoidy version of the question, i think you should indeed get a groupoid with Z-many objects and where each one's automorphism group is the subgroup of Aut(N) on the permutations that fix cofinitely many elements</p>\n</blockquote>\n<p>which is approximately what i was trying to get at with<br>\n<span class=\"user-mention silent\" data-user-id=\"276072\">sarahzrf</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/computing.202-colimits/near/216523755\">said</a>:</p>\n<blockquote>\n<p>...hmmm, for the permutation groupoid, i wonder if it would result in, like... Z-many copies of an object w/ an automorphism group that's some sort of finite-support thing</p>\n</blockquote>",
+        "id": 216536716,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1605219106
+    },
+    {
+        "content": "<p><span aria-label=\"triumph\" class=\"emoji emoji-1f624\" role=\"img\" title=\"triumph\">:triumph:</span></p>",
+        "id": 216536717,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1605219108
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276480\">Reid Barton</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/computing.202-colimits/near/216536676\">said</a>:</p>\n<blockquote>\n<p>Another way you could think of the maps is as maps <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"false\">{</mo><mo>…</mo><mo separator=\"true\">,</mo><mi>n</mi><mo>−</mo><mn>1</mn><mo separator=\"true\">,</mo><mi>n</mi><mo stretchy=\"false\">}</mo><mo>→</mo><mo stretchy=\"false\">{</mo><mo>…</mo><mo separator=\"true\">,</mo><mi>m</mi><mo>−</mo><mn>1</mn><mo separator=\"true\">,</mo><mi>m</mi><mo stretchy=\"false\">}</mo></mrow><annotation encoding=\"application/x-tex\">\\{\\ldots, n-1, n\\} \\to \\{\\ldots, m-1, m\\}</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mopen\">{</span><span class=\"minner\">…</span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mord mathnormal\">n</span><span class=\"mspace\" style=\"margin-right:0.2222222222222222em;\"></span><span class=\"mbin\">−</span><span class=\"mspace\" style=\"margin-right:0.2222222222222222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord\">1</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mord mathnormal\">n</span><span class=\"mclose\">}</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">→</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mopen\">{</span><span class=\"minner\">…</span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mord mathnormal\">m</span><span class=\"mspace\" style=\"margin-right:0.2222222222222222em;\"></span><span class=\"mbin\">−</span><span class=\"mspace\" style=\"margin-right:0.2222222222222222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord\">1</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mord mathnormal\">m</span><span class=\"mclose\">}</span></span></span></span> which fix all but finitely many values</p>\n</blockquote>\n<p>right, i figured there was probably a way to translate things and make it nicer</p>",
+        "id": 216536815,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1605219147
+    },
+    {
+        "content": "<p>So I'm still a bit confused about what I was thinking about earlier, but it should have something to do with the fact that, though our original category FinSet (or (FinSet, iso)) was monoidal, this new category is not</p>",
+        "id": 216537945,
+        "sender_full_name": "Reid Barton",
+        "timestamp": 1605219822
+    },
+    {
+        "content": "<p>which is not surprising, since we inverted a functor <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>−</mo><mo>⨿</mo><mn>1</mn></mrow><annotation encoding=\"application/x-tex\">- \\amalg 1</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.76666em;vertical-align:-0.08333em;\"></span><span class=\"mord\">−</span><span class=\"mspace\" style=\"margin-right:0.2222222222222222em;\"></span><span class=\"mbin\">⨿</span><span class=\"mspace\" style=\"margin-right:0.2222222222222222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.64444em;vertical-align:0em;\"></span><span class=\"mord\">1</span></span></span></span> which was not monoidal</p>",
+        "id": 216537972,
+        "sender_full_name": "Reid Barton",
+        "timestamp": 1605219839
+    },
+    {
+        "content": "<p>interesting</p>",
+        "id": 216538137,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1605219942
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276072\">sarahzrf</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/computing.202-colimits/near/216536815\">said</a>:</p>\n<blockquote>\n<p><span class=\"user-mention silent\" data-user-id=\"276480\">Reid Barton</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/computing.202-colimits/near/216536676\">said</a>:</p>\n<blockquote>\n<p>Another way you could think of the maps is as maps <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"false\">{</mo><mo>…</mo><mo separator=\"true\">,</mo><mi>n</mi><mo>−</mo><mn>1</mn><mo separator=\"true\">,</mo><mi>n</mi><mo stretchy=\"false\">}</mo><mo>→</mo><mo stretchy=\"false\">{</mo><mo>…</mo><mo separator=\"true\">,</mo><mi>m</mi><mo>−</mo><mn>1</mn><mo separator=\"true\">,</mo><mi>m</mi><mo stretchy=\"false\">}</mo></mrow><annotation encoding=\"application/x-tex\">\\{\\ldots, n-1, n\\} \\to \\{\\ldots, m-1, m\\}</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mopen\">{</span><span class=\"minner\">…</span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mord mathnormal\">n</span><span class=\"mspace\" style=\"margin-right:0.2222222222222222em;\"></span><span class=\"mbin\">−</span><span class=\"mspace\" style=\"margin-right:0.2222222222222222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord\">1</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mord mathnormal\">n</span><span class=\"mclose\">}</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">→</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mopen\">{</span><span class=\"minner\">…</span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mord mathnormal\">m</span><span class=\"mspace\" style=\"margin-right:0.2222222222222222em;\"></span><span class=\"mbin\">−</span><span class=\"mspace\" style=\"margin-right:0.2222222222222222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord\">1</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mord mathnormal\">m</span><span class=\"mclose\">}</span></span></span></span> which fix all but finitely many values</p>\n</blockquote>\n<p>right, i figured there was probably a way to translate things and make it nicer</p>\n</blockquote>\n<p>ohhh right this is more evident if you put it as 1 + - instead of - + 1</p>",
+        "id": 216538282,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1605220015
+    },
+    {
+        "content": "<p>lol</p>",
+        "id": 216538284,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1605220016
+    },
+    {
+        "content": "<p>I actually thought about <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"false\">{</mo><mo>−</mo><mi>n</mi><mo separator=\"true\">,</mo><mo>−</mo><mi>n</mi><mo>+</mo><mn>1</mn><mo separator=\"true\">,</mo><mo>…</mo><mo stretchy=\"false\">}</mo></mrow><annotation encoding=\"application/x-tex\">\\{-n, -n + 1, \\ldots\\}</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mopen\">{</span><span class=\"mord\">−</span><span class=\"mord mathnormal\">n</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mord\">−</span><span class=\"mord mathnormal\">n</span><span class=\"mspace\" style=\"margin-right:0.2222222222222222em;\"></span><span class=\"mbin\">+</span><span class=\"mspace\" style=\"margin-right:0.2222222222222222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord\">1</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"minner\">…</span><span class=\"mclose\">}</span></span></span></span> first and decided that was a bit silly</p>",
+        "id": 216538428,
+        "sender_full_name": "Reid Barton",
+        "timestamp": 1605220096
+    },
+    {
+        "content": "<p>yeah hah</p>",
+        "id": 216538473,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1605220125
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276072\">sarahzrf</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/computing.202-colimits/near/216536815\">said</a>:</p>\n<blockquote>\n<p><span class=\"user-mention silent\" data-user-id=\"276480\">Reid Barton</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/computing.202-colimits/near/216536676\">said</a>:</p>\n<blockquote>\n<p>Another way you could think of the maps is as maps <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"false\">{</mo><mo>…</mo><mo separator=\"true\">,</mo><mi>n</mi><mo>−</mo><mn>1</mn><mo separator=\"true\">,</mo><mi>n</mi><mo stretchy=\"false\">}</mo><mo>→</mo><mo stretchy=\"false\">{</mo><mo>…</mo><mo separator=\"true\">,</mo><mi>m</mi><mo>−</mo><mn>1</mn><mo separator=\"true\">,</mo><mi>m</mi><mo stretchy=\"false\">}</mo></mrow><annotation encoding=\"application/x-tex\">\\{\\ldots, n-1, n\\} \\to \\{\\ldots, m-1, m\\}</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mopen\">{</span><span class=\"minner\">…</span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mord mathnormal\">n</span><span class=\"mspace\" style=\"margin-right:0.2222222222222222em;\"></span><span class=\"mbin\">−</span><span class=\"mspace\" style=\"margin-right:0.2222222222222222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord\">1</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mord mathnormal\">n</span><span class=\"mclose\">}</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">→</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mopen\">{</span><span class=\"minner\">…</span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mord mathnormal\">m</span><span class=\"mspace\" style=\"margin-right:0.2222222222222222em;\"></span><span class=\"mbin\">−</span><span class=\"mspace\" style=\"margin-right:0.2222222222222222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord\">1</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mord mathnormal\">m</span><span class=\"mclose\">}</span></span></span></span> which fix all but finitely many values</p>\n</blockquote>\n<p>right, i figured there was probably a way to translate things and make it nicer</p>\n</blockquote>\n<p>Is this the same or different from my guess: we get a category with one object <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"double-struck\">Z</mi></mrow><annotation encoding=\"application/x-tex\">\\mathbb{Z}</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.68889em;vertical-align:0em;\"></span><span class=\"mord\"><span class=\"mord mathbb\">Z</span></span></span></span></span>, and morphisms are functions that are the identity for all sufficiently large <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>n</mi></mrow><annotation encoding=\"application/x-tex\">n</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.43056em;vertical-align:0em;\"></span><span class=\"mord mathnormal\">n</span></span></span></span>?</p>",
+        "id": 216547822,
+        "sender_full_name": "John Baez",
+        "timestamp": 1605225887
+    },
+    {
+        "content": "<p>Actually my guess was a bit different:</p>\n<p><span class=\"user-mention silent\" data-user-id=\"275920\">John Baez</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/computing.202-colimits/near/216533051\">said</a>:</p>\n<blockquote>\n<p>My first guess was \"you get a category where the one objects is <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"double-struck\">N</mi></mrow><annotation encoding=\"application/x-tex\">\\mathbb{N}</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.68889em;vertical-align:0em;\"></span><span class=\"mord\"><span class=\"mord mathbb\">N</span></span></span></span></span> and the morphisms are functions that equal the identity except on some finite initial segment\".  </p>\n</blockquote>",
+        "id": 216547880,
+        "sender_full_name": "John Baez",
+        "timestamp": 1605225961
+    },
+    {
+        "content": "<p>But I'm mainly not quite sure what category Reid is proposing.</p>",
+        "id": 216547966,
+        "sender_full_name": "John Baez",
+        "timestamp": 1605226003
+    },
+    {
+        "content": "<p>objects are sets (-∞, n] for n ∈ Z; maps as described</p>",
+        "id": 216548470,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1605226423
+    },
+    {
+        "content": "<p>if <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>n</mi><mo mathvariant=\"normal\">≠</mo><mi>m</mi></mrow><annotation encoding=\"application/x-tex\">n \\neq m</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8888799999999999em;vertical-align:-0.19444em;\"></span><span class=\"mord mathnormal\">n</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\"><span class=\"mrel\"><span class=\"mord vbox\"><span class=\"thinbox\"><span class=\"rlap\"><span class=\"strut\" style=\"height:0.8888799999999999em;vertical-align:-0.19444em;\"></span><span class=\"inner\"><span class=\"mrel\"></span></span><span class=\"fix\"></span></span></span></span></span><span class=\"mrel\">=</span></span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.43056em;vertical-align:0em;\"></span><span class=\"mord mathnormal\">m</span></span></span></span> then <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"false\">(</mo><mo>−</mo><mi mathvariant=\"normal\">∞</mi><mo separator=\"true\">,</mo><mi>n</mi><mo stretchy=\"false\">]</mo><mo>≇</mo><mo stretchy=\"false\">(</mo><mo>−</mo><mi mathvariant=\"normal\">∞</mi><mo separator=\"true\">,</mo><mi>m</mi><mo stretchy=\"false\">]</mo></mrow><annotation encoding=\"application/x-tex\">(-\\infty, n] \\not\\cong (-\\infty, m]</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mopen\">(</span><span class=\"mord\">−</span><span class=\"mord\">∞</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mord mathnormal\">n</span><span class=\"mclose\">]</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\"><span class=\"mord vbox\"><span class=\"thinbox\"><span class=\"rlap\"><span class=\"strut\" style=\"height:0.8888799999999999em;vertical-align:-0.19444em;\"></span><span class=\"inner\"><span class=\"mrel\"></span></span><span class=\"fix\"></span></span></span></span></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.589em;vertical-align:0em;\"></span><span class=\"mrel\">≅</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mopen\">(</span><span class=\"mord\">−</span><span class=\"mord\">∞</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mord mathnormal\">m</span><span class=\"mclose\">]</span></span></span></span> i think</p>",
+        "id": 216548600,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1605226518
+    },
+    {
+        "content": "<p>so it's gonna be different from yours</p>",
+        "id": 216548710,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1605226588
+    },
+    {
+        "content": "<p>Oh, okay - lots of nonisomorphic objects.</p>",
+        "id": 216548874,
+        "sender_full_name": "John Baez",
+        "timestamp": 1605226718
+    },
+    {
+        "content": "<p>Let me think about that...</p>",
+        "id": 216548897,
+        "sender_full_name": "John Baez",
+        "timestamp": 1605226734
+    },
+    {
+        "content": "<p>So each functor in the diagram you're taking a 2-colimit of, which I'll call </p>\n<p><span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>−</mo><mo>+</mo><mn>1</mn><mo>:</mo><mrow><mi mathvariant=\"sans-serif\">F</mi><mi mathvariant=\"sans-serif\">i</mi><mi mathvariant=\"sans-serif\">n</mi><mi mathvariant=\"sans-serif\">S</mi><mi mathvariant=\"sans-serif\">e</mi><mi mathvariant=\"sans-serif\">t</mi></mrow><mo>→</mo><mrow><mi mathvariant=\"sans-serif\">F</mi><mi mathvariant=\"sans-serif\">i</mi><mi mathvariant=\"sans-serif\">n</mi><mi mathvariant=\"sans-serif\">S</mi><mi mathvariant=\"sans-serif\">e</mi><mi mathvariant=\"sans-serif\">t</mi></mrow></mrow><annotation encoding=\"application/x-tex\"> - + 1 : \\mathsf{FinSet} \\to \\mathsf{FinSet}</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.66666em;vertical-align:-0.08333em;\"></span><span class=\"mord\">−</span><span class=\"mspace\" style=\"margin-right:0.2222222222222222em;\"></span><span class=\"mbin\">+</span><span class=\"mspace\" style=\"margin-right:0.2222222222222222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.64444em;vertical-align:0em;\"></span><span class=\"mord\">1</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">:</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.69444em;vertical-align:0em;\"></span><span class=\"mord\"><span class=\"mord mathsf\">F</span><span class=\"mord mathsf\">i</span><span class=\"mord mathsf\">n</span><span class=\"mord mathsf\">S</span><span class=\"mord mathsf\">e</span><span class=\"mord mathsf\">t</span></span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">→</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.69444em;vertical-align:0em;\"></span><span class=\"mord\"><span class=\"mord mathsf\">F</span><span class=\"mord mathsf\">i</span><span class=\"mord mathsf\">n</span><span class=\"mord mathsf\">S</span><span class=\"mord mathsf\">e</span><span class=\"mord mathsf\">t</span></span></span></span></span> </p>\n<p>or</p>\n<p><span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>−</mo><mo>+</mo><mn>1</mn><mo>:</mo><mrow><mi mathvariant=\"sans-serif\">F</mi><mi mathvariant=\"sans-serif\">i</mi><mi mathvariant=\"sans-serif\">n</mi></mrow><mo>→</mo><mrow><mi mathvariant=\"sans-serif\">F</mi><mi mathvariant=\"sans-serif\">i</mi><mi mathvariant=\"sans-serif\">n</mi></mrow></mrow><annotation encoding=\"application/x-tex\"> - + 1 : \\mathsf{Fin} \\to \\mathsf{Fin}</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.66666em;vertical-align:-0.08333em;\"></span><span class=\"mord\">−</span><span class=\"mspace\" style=\"margin-right:0.2222222222222222em;\"></span><span class=\"mbin\">+</span><span class=\"mspace\" style=\"margin-right:0.2222222222222222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.64444em;vertical-align:0em;\"></span><span class=\"mord\">1</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">:</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.69444em;vertical-align:0em;\"></span><span class=\"mord\"><span class=\"mord mathsf\">F</span><span class=\"mord mathsf\">i</span><span class=\"mord mathsf\">n</span></span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">→</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.69444em;vertical-align:0em;\"></span><span class=\"mord\"><span class=\"mord mathsf\">F</span><span class=\"mord mathsf\">i</span><span class=\"mord mathsf\">n</span></span></span></span></span> </p>\n<p>is an equivalence onto its essential image.  In other words, it's full and faithful.   So there's no reason to think nonisomorphic objects are gonna become isomorphic in the 2-colimit.   </p>\n<p>I'll make a guess: given a filtered diagram of categories where all the maps are full and faithful, they all become full subcategories of the 2-colimit.</p>",
+        "id": 216549222,
+        "sender_full_name": "John Baez",
+        "timestamp": 1605226970
+    },
+    {
+        "content": "<p>I.e. they don't get \"squashed down\", with nonisomorphic objects becoming isomorphic in the 2-colimit, or unequal parallel morphisms becoming equal.</p>",
+        "id": 216549534,
+        "sender_full_name": "John Baez",
+        "timestamp": 1605227267
+    },
+    {
+        "content": "<p>plausible!</p>",
+        "id": 216549753,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1605227454
+    },
+    {
+        "content": "<p>wait, no</p>",
+        "id": 216549798,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1605227490
+    },
+    {
+        "content": "<p><em>faithful</em> and/or <em>conservative</em>, maybe—but i certainly don't think we get <em>full</em></p>",
+        "id": 216549826,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1605227515
+    },
+    {
+        "content": "<p>actually wait, im reasoning from a wrong example—i dont think that functor is fully faithful at all</p>",
+        "id": 216549962,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1605227595
+    },
+    {
+        "content": "<p>consider: there's exactly one map 0 → 1, but there are 2 maps 0 + 1 → 1 + 1</p>",
+        "id": 216549984,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1605227612
+    },
+    {
+        "content": "<p>Right, that functor is not full, just faithful.   So whenever I said \"full and faithful\", maybe I should have said \"full and conservative\".</p>",
+        "id": 216568635,
+        "sender_full_name": "John Baez",
+        "timestamp": 1605244605
+    },
+    {
+        "content": "<p>...did you typo again, or did you just mean to make a statement that didn't apply to this situation?</p>",
+        "id": 216572038,
+        "sender_full_name": "sarahzrf",
+        "timestamp": 1605249045
+    },
+    {
+        "content": "<p>Typo: I meant conservative and faithful.   Which are sort of like \"0-injective\" and \"1-injective\".</p>",
+        "id": 216574917,
+        "sender_full_name": "John Baez",
+        "timestamp": 1605252311
+    }
+]

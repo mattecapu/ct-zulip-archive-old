@@ -1,0 +1,158 @@
+[
+    {
+        "content": "<p>I have a question about the (extensional) MLTT ~ LCCCs result of Seely and Clairambault–Dybjer. As I understand it, Seely's original paper has a flaw in that substitution in types may not be interpreted correctly by pullback, as pullbacks are not strict. This was later rectified in several ways, culminating in Clairambault–Dybjer's proof of biequivalence. Let's consider for a moment finitely complete categories, which correspond to MLTT without Pi types. Every finitely complete category is equivalent to a strict finitely complete category (in which pullbacks are strictly associative), by a result of Freyd–Scedrov. If the only issue with Seely's proof is this nonassociativity of pullbacks (Hoffman mentions an issue with Sigma types, but as far as I can tell, these are related), then can't we just consider strict finitely complete categories, which are equivalent to arbitrary finitely complete categories, and get a correct proof of sound and complete equivalence by Seely's result? When we work in the internal language, we just care about things up to equivalence in any case.<br>\nThis is surely <em>not</em> the case, but I don't know where the flaw in my reasoning lies. Could someone enlighten me?</p>",
+        "id": 194463554,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1587139651
+    },
+    {
+        "content": "<p>I'm also curious about this. More generally clarifying the obstruction.</p>",
+        "id": 194463836,
+        "sender_full_name": "Cody Roux",
+        "timestamp": 1587139768
+    },
+    {
+        "content": "<p>I don't know the result by Freyd-Scedrov (would be interested if you have a reference), but can you directly transport the LCCC structure along that finite-limit-strictifying equivalence ?</p>",
+        "id": 194473565,
+        "sender_full_name": "Kenji Maillard",
+        "timestamp": 1587144293
+    },
+    {
+        "content": "<p>The reference is <em>Categories, Allegories</em> 1.4(10)1. The finite limit structure should be preserved by the equivalence, by virtue of it being an equivalence, if that's what you mean? As for the closed structure, that's a question I'm happy to leave for later, though I would have hoped it was a similar story.</p>",
+        "id": 194474233,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1587144603
+    },
+    {
+        "content": "<p>Exponentials aren't finite limits in general.</p>",
+        "id": 194474387,
+        "sender_full_name": "Dan Doel",
+        "timestamp": 1587144686
+    },
+    {
+        "content": "<p><span class=\"user-mention\" data-user-id=\"277270\">@Dan Doel</span>: to clarify, by \"similar story\" I meant that I hoped that there was a coherence result for cartesian-closed categories that was relevant, not that you could use finite limits to describe the closed structure.</p>",
+        "id": 194474512,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1587144729
+    },
+    {
+        "content": "<p>Ah, yeah. Is there a similar theorem for small-complete categories or something?</p>",
+        "id": 194474601,
+        "sender_full_name": "Dan Doel",
+        "timestamp": 1587144784
+    },
+    {
+        "content": "<p>It's not discussed there, at least (though I would hope so).</p>",
+        "id": 194475502,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1587145254
+    },
+    {
+        "content": "<p>I don't have a copy of cats+alls with me.  Are the pullbacks associative for pasting in both directions simultaneously?  That's roughly what would be needed for Sigma-types.  And is the specified pullback of a diagonal again a diagonal?  That's roughly what would be needed for identity types.  For Pi-types one would need a particular Beck-Chevalley isomorphism to be an identity.</p>",
+        "id": 194512175,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1587166170
+    },
+    {
+        "content": "<p><a href=\"/user_uploads/21317/ALvucP9VDFCLWuYCmM2gh5gW/image.png\" title=\"image.png\">image.png</a> <br>\nThis is the lemma about pullbacks. What do you mean by \"both directions simultaneously\"?</p>\n<div class=\"message_inline_image\"><a href=\"/user_uploads/21317/ALvucP9VDFCLWuYCmM2gh5gW/image.png\" title=\"image.png\"><img src=\"/user_uploads/21317/ALvucP9VDFCLWuYCmM2gh5gW/image.png\"></a></div>",
+        "id": 194512713,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1587166603
+    },
+    {
+        "content": "<p>There doesn't appear to be a statement regarding the diagonal, so one would have to check this.</p>",
+        "id": 194512769,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1587166639
+    },
+    {
+        "content": "<p>The question is whether the <em>vertical</em> pasting of canonical pullbacks is also again a canonical pullback.  This would follow from the lemma if the transpose of a canonical pullback is again a canonical pullback.  Also, are they functorial on identities, i.e. is a square with identities on the top and bottom a canonical pullback?</p>",
+        "id": 194512872,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1587166694
+    },
+    {
+        "content": "<p>Is the construction simple enough that you could copy it for us here?</p>",
+        "id": 194512883,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1587166707
+    },
+    {
+        "content": "<blockquote>\n<p>The question is whether the <em>vertical</em> pasting of canonical pullbacks is also again a canonical pullback. This would follow from the lemma if the transpose of a canonical pullback is again a canonical pullback.</p>\n</blockquote>\n<p>Ah, I see <span aria-label=\"+1\" class=\"emoji emoji-1f44d\" role=\"img\" title=\"+1\">:+1:</span></p>",
+        "id": 194513078,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1587166884
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276777\">Mike Shulman</span> <a href=\"#narrow/stream/229952-theory.3A-type.20theory/topic/MLTT.20as.20the.20internal.20language.20of.20LCCCs/near/194512883\" title=\"#narrow/stream/229952-theory.3A-type.20theory/topic/MLTT.20as.20the.20internal.20language.20of.20LCCCs/near/194512883\">said</a>:</p>\n<blockquote>\n<p>Is the construction simple enough that you could copy it for us here?</p>\n</blockquote>\n<p>Unfortunately, it spans several pages.</p>",
+        "id": 194513104,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1587166920
+    },
+    {
+        "content": "<p>As far as I can tell, it doesn't resolve your other questions either, and it's not clear to me without working through the construction (which it's a little late for right now).</p>",
+        "id": 194513203,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1587166982
+    },
+    {
+        "content": "<p>Ok, well at least this gives you a place to start figuring out the answer.  (-:</p>",
+        "id": 194513302,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1587167045
+    },
+    {
+        "content": "<p>They use a theory of <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>τ</mi></mrow><annotation encoding=\"application/x-tex\">\\tau</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.43056em;vertical-align:0em;\"></span><span class=\"mord mathdefault\" style=\"margin-right:0.1132em;\">τ</span></span></span></span>-tables, which is entirely alien to me.</p>",
+        "id": 194513306,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1587167056
+    },
+    {
+        "content": "<p><span class=\"user-mention\" data-user-id=\"276777\">@Mike Shulman</span>: if this construction was strict in the senses you describe, would this imply Seely's result is strong enough for an internal language correspondence?</p>",
+        "id": 194513333,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1587167087
+    },
+    {
+        "content": "<p>It's not outside the realm of possibility that this construction might be an alternative solution to the coherence problem and that type theorists just weren't aware of it.  Cats+alls is pretty idiosyncratic in outlook and notation and I think not all of its contents are widely known even in the CT community.</p>",
+        "id": 194513387,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1587167144
+    },
+    {
+        "content": "<p>However, if the FS construction does span several pages, then it seems unlikely to me to be simpler than the now-better-known strictifications used for semantics of type theory, and the latter are almost certainly more general and flexible.</p>",
+        "id": 194513481,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1587167212
+    },
+    {
+        "content": "<p>That's true. On the other hand, it would have been nice to solve the coherence problem in a few lines by citing Freyd–Scedrov :)</p>",
+        "id": 194513590,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1587167297
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276777\">Mike Shulman</span> <a href=\"#narrow/stream/229952-theory.3A-type.20theory/topic/MLTT.20as.20the.20internal.20language.20of.20LCCCs/near/194512175\" title=\"#narrow/stream/229952-theory.3A-type.20theory/topic/MLTT.20as.20the.20internal.20language.20of.20LCCCs/near/194512175\">said</a>:</p>\n<blockquote>\n<p>I don't have a copy of cats+alls with me.  Are the pullbacks associative for pasting in both directions simultaneously?  That's roughly what would be needed for Sigma-types.  And is the specified pullback of a diagonal again a diagonal?  That's roughly what would be needed for identity types.  For Pi-types one would need a particular Beck-Chevalley isomorphism to be an identity.</p>\n</blockquote>\n<p><span class=\"user-mention\" data-user-id=\"280623\">@Soichiro Fujii</span> was the one who pointed this result out to me — perhaps they already know the answer to this question?</p>",
+        "id": 194513792,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1587167442
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276777\">Mike Shulman</span> <a href=\"#narrow/stream/229952-theory.3A-type.20theory/topic/MLTT.20as.20the.20internal.20language.20of.20LCCCs/near/194512872\" title=\"#narrow/stream/229952-theory.3A-type.20theory/topic/MLTT.20as.20the.20internal.20language.20of.20LCCCs/near/194512872\">said</a>:</p>\n<blockquote>\n<p>The question is whether the <em>vertical</em> pasting of canonical pullbacks is also again a canonical pullback.  This would follow from the lemma if the transpose of a canonical pullback is again a canonical pullback.  Also, are they functorial on identities, i.e. is a square with identities on the top and bottom a canonical pullback?</p>\n</blockquote>\n<p>Vertical pasting of canonical pullbacks is not always a canonical pullback. But there is a proposition (1.49(11) (iv)) guaranteeing this under a certain condition (that the suitable morphism involved is <em>auspicious</em>—yes, yet another idiosyncratic term).</p>\n<p>And I think a square with identities on the <em>left and right</em> is a canonical pullback.</p>\n<p>Regarding other questions of you, I am afraid that I am not familiar enough with <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>τ</mi></mrow><annotation encoding=\"application/x-tex\">\\tau</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.43056em;vertical-align:0em;\"></span><span class=\"mord mathdefault\" style=\"margin-right:0.1132em;\">τ</span></span></span></span>-categories to answer immediately. I answered to <span class=\"user-mention silent\" data-user-id=\"276092\">Nathanael Arkor</span>’s question only because I remembered reading about <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>τ</mi></mrow><annotation encoding=\"application/x-tex\">\\tau</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.43056em;vertical-align:0em;\"></span><span class=\"mord mathdefault\" style=\"margin-right:0.1132em;\">τ</span></span></span></span>-categories, and I have not really worked with them. By the way, the idea of applying <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>τ</mi></mrow><annotation encoding=\"application/x-tex\">\\tau</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.43056em;vertical-align:0em;\"></span><span class=\"mord mathdefault\" style=\"margin-right:0.1132em;\">τ</span></span></span></span>-categories to coherence issues on models of extensional Martin-Löf type theory never occurred to me, and sounds interesting!</p>",
+        "id": 194516801,
+        "sender_full_name": "Soichiro Fujii",
+        "timestamp": 1587170261
+    },
+    {
+        "content": "<p><span class=\"user-mention\" data-user-id=\"280623\">@Soichiro Fujii</span>: thank you for clarifying!</p>",
+        "id": 194516963,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1587170413
+    },
+    {
+        "content": "<p><span class=\"user-mention\" data-user-id=\"276777\">@Mike Shulman</span>: thanks for your help!</p>",
+        "id": 194517933,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1587171512
+    }
+]

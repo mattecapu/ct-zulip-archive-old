@@ -1,0 +1,110 @@
+[
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"275920\">John Baez</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/free.20cartesian.20category.20for.20dummies/near/252088152\">said</a>:</p>\n<blockquote>\n<p>It's absolutely fundamental that the category P(C) of presheaves on a category C is what you get by freely cocompleting C.</p>\n</blockquote>\n<p>Very interesting. Can we extend this picture to the case where C is equipped with a Grothendieck topology and we consider the category of sheaves? Is there a way to modify \"free cocompletion\" in a way that accounts for this?</p>\n<p>If F : C -&gt; A is some diagram from a small cat C into a cocomplete  category A, and C has a topology J, then it should be easy to write down a condition on A such that the 'nerve' functor  which sends a to Hom(F(-),a) is valued in the subcategory of sheaves. For each a, and for each covering sieve {s_i} on c, any family of maps f_i : dom(s_i) -&gt; a satisfying some coherence conditions should glue together into a unique map f : c -&gt; a. But I'm not sure where, if at all, the topology would play in the associated 'realization' functor, I assume we would just restrict the domain to sheaves.</p>\n<p>For the sake of argument, let's assume the topology is subcanonical.</p>",
+        "id": 252272506,
+        "sender_full_name": "Patrick Nicodemus",
+        "timestamp": 1631005189
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"424412\">Patrick Nicodemus</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/free.20cartesian.20category.20for.20dummies/near/252272506\">said</a>:</p>\n<blockquote>\n<p><span class=\"user-mention silent\" data-user-id=\"275920\">John Baez</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/free.20cartesian.20category.20for.20dummies/near/252088152\">said</a>:</p>\n<blockquote>\n<p>It's absolutely fundamental that the category P(C) of presheaves on a category C is what you get by freely cocompleting C.</p>\n</blockquote>\n<p>Very interesting. Can we extend this picture to the case where C is equipped with a Grothendieck topology and we consider the category of sheaves? Is there a way to modify \"free cocompletion\" in a way that accounts for this?</p>\n</blockquote>\n<p>Yes: I believe that the composite of the Yoneda embedding with the <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>J</mi></mrow><annotation encoding=\"application/x-tex\">J</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.09618em;\">J</span></span></span></span>-sheafification functor is the universal functor sending <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>J</mi></mrow><annotation encoding=\"application/x-tex\">J</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.09618em;\">J</span></span></span></span>-covering sieves to universal effective epimorphic sieves (i.e. to colimit cocones which are stable under pullbacks); the subcanonicity requirement isn't needed.</p>",
+        "id": 252273133,
+        "sender_full_name": "Morgan Rogers (he/him)",
+        "timestamp": 1631005513
+    },
+    {
+        "content": "<p>I didn't really understand the remainder of your comment, though.</p>",
+        "id": 252273196,
+        "sender_full_name": "Morgan Rogers (he/him)",
+        "timestamp": 1631005553
+    },
+    {
+        "content": "<p>Ok, cool. I guess that answers my question, can you provide any intuition for the 'effectiveness' condition? I'm not sure how pullbacks arise here, seems like a bit of a surprise to me. And sure, sounds like in the subcanonical case we would just be able to suppress reference to sheafification.</p>",
+        "id": 252273852,
+        "sender_full_name": "Patrick Nicodemus",
+        "timestamp": 1631005903
+    },
+    {
+        "content": "<p>to clarify the rest of the comment, in the usual case of presheaves, for any functor F : C -&gt; A for C small and A cocomplete, there is a unique cocontinuous functor F' : \\hat[C} -&gt; A which I call the \"realization\" associated to F, and F' has a right adjoint, the \"nerve\"  A -&gt; \\hat{C} sending a to the presheaf Hom(F(-),c). i was speculating on how these two were both altered when the topology was added</p>",
+        "id": 252274313,
+        "sender_full_name": "Patrick Nicodemus",
+        "timestamp": 1631006124
+    },
+    {
+        "content": "<p>Any functor <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>F</mi><mo>:</mo><mi>C</mi><mo>→</mo><mi>E</mi></mrow><annotation encoding=\"application/x-tex\">F: C \\rightarrow E</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.13889em;\">F</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">:</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.07153em;\">C</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">→</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.05764em;\">E</span></span></span></span> into a cocomplete category <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>E</mi></mrow><annotation encoding=\"application/x-tex\">E</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.05764em;\">E</span></span></span></span> which sends <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>J</mi></mrow><annotation encoding=\"application/x-tex\">J</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.09618em;\">J</span></span></span></span>-covering sieves to universal effective epimorphic sieves factors uniquely through the restricted Yoneda embedding <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>C</mi><mo>→</mo><mtext>Sh</mtext><mo stretchy=\"false\">(</mo><mi>C</mi><mo separator=\"true\">,</mo><mi>J</mi><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">C \\rightarrow \\text{Sh}(C, J)</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.07153em;\">C</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">→</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord text\"><span class=\"mord\">Sh</span></span><span class=\"mopen\">(</span><span class=\"mord mathnormal\" style=\"margin-right:0.07153em;\">C</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.09618em;\">J</span><span class=\"mclose\">)</span></span></span></span>.</p>",
+        "id": 252313687,
+        "sender_full_name": "Fawzi Hreiki",
+        "timestamp": 1631024809
+    },
+    {
+        "content": "<p>This is just the definition of what <span class=\"user-mention\" data-user-id=\"277473\">@Morgan Rogers (he/him)</span>  said above.</p>",
+        "id": 252313746,
+        "sender_full_name": "Fawzi Hreiki",
+        "timestamp": 1631024829
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"424412\">Patrick Nicodemus</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/free.20cartesian.20category.20for.20dummies/near/252273852\">said</a>:</p>\n<blockquote>\n<p>Ok, cool. I guess that answers my question, can you provide any intuition for the 'effectiveness' condition? I'm not sure how pullbacks arise here, seems like a bit of a surprise to me. And sure, sounds like in the subcanonical case we would just be able to suppress reference to sheafification.</p>\n</blockquote>\n<p>Colimits are universal/stable under pullback in any Grothendieck topos, but thinking about it there is no reason that this has to be the case in the codomain category of the functor being universally factored, so I'll roll that back. We only need to require that <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>J</mi></mrow><annotation encoding=\"application/x-tex\">J</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.09618em;\">J</span></span></span></span>-covering sieves become colimit cocones. Although what <span class=\"user-mention\" data-user-id=\"341237\">@Fawzi Hreiki</span> is still certainly true as a special case.</p>",
+        "id": 252320541,
+        "sender_full_name": "Morgan Rogers (he/him)",
+        "timestamp": 1631027291
+    },
+    {
+        "content": "<p>If <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>E</mi></mrow><annotation encoding=\"application/x-tex\">E</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.05764em;\">E</span></span></span></span> is an elementary topos and <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>j</mi></mrow><annotation encoding=\"application/x-tex\">j</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.85396em;vertical-align:-0.19444em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.05724em;\">j</span></span></span></span> is a topology on its subobject classifier, then the sheafification functor <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>E</mi><mo>→</mo><msub><mtext>Sh</mtext><mi>j</mi></msub><mo stretchy=\"false\">(</mo><mi>E</mi><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">E \\rightarrow \\text{Sh}_j(E)</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.05764em;\">E</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">→</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1.036108em;vertical-align:-0.286108em;\"></span><span class=\"mord\"><span class=\"mord text\"><span class=\"mord\">Sh</span></span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.311664em;\"><span style=\"top:-2.5500000000000003em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathnormal mtight\" style=\"margin-right:0.05724em;\">j</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.286108em;\"><span></span></span></span></span></span></span><span class=\"mopen\">(</span><span class=\"mord mathnormal\" style=\"margin-right:0.05764em;\">E</span><span class=\"mclose\">)</span></span></span></span> is the universal functor out of <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>E</mi></mrow><annotation encoding=\"application/x-tex\">E</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.05764em;\">E</span></span></span></span> localising all the <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>j</mi></mrow><annotation encoding=\"application/x-tex\">j</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.85396em;vertical-align:-0.19444em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.05724em;\">j</span></span></span></span>-local isomorphisms (I believe).</p>",
+        "id": 252322026,
+        "sender_full_name": "Fawzi Hreiki",
+        "timestamp": 1631028000
+    },
+    {
+        "content": "<p>Combining this with the free cocompletion universal property of presheaf categories gives the universal property of sheaf categories.</p>",
+        "id": 252322160,
+        "sender_full_name": "Fawzi Hreiki",
+        "timestamp": 1631028054
+    },
+    {
+        "content": "<p>Sorry for the somewhat tangential question, but am I understanding correctly that the notion of \"multigraph\" referred to in the M-span business towards the end of <a href=\"https://ncatlab.org/nlab/show/free+cartesian+category\">https://ncatlab.org/nlab/show/free+cartesian+category</a> is _not_ referring to the multigraphs of e.g. <a href=\"https://en.wikipedia.org/wiki/Multigraph\">https://en.wikipedia.org/wiki/Multigraph</a>, but instead to what are described <a href=\"https://en.wikipedia.org/wiki/Hypergraph\">here</a> as \"hypergraphs\"?</p>",
+        "id": 252783164,
+        "sender_full_name": "Asad Saeeduddin",
+        "timestamp": 1631279061
+    },
+    {
+        "content": "<p>By <em>multigraph</em>, they mean the analogue of a <a href=\"https://ncatlab.org/nlab/show/quiver\">quiver</a> for a multicategory, i.e. a directed multigraph where each edge can have multiple inputs.</p>",
+        "id": 252783477,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1631279204
+    },
+    {
+        "content": "<p>This is like a \"multicategory without composition\".</p>",
+        "id": 252783522,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1631279225
+    },
+    {
+        "content": "<p>It's not quite the same as a hypergraph, which doesn't specify source/targets. The terminology on that page is confusing, though; I think it ought to be changed.</p>",
+        "id": 252783872,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1631279375
+    },
+    {
+        "content": "<p>Ah yes, I admit I didn't actually read the Wikipedia definition, I just vaguely misremembered it to be the same as the one in <a href=\"https://www.sciencedirect.com/science/article/pii/0166218X9390045P\">https://www.sciencedirect.com/science/article/pii/0166218X9390045P</a></p>",
+        "id": 252784784,
+        "sender_full_name": "Asad Saeeduddin",
+        "timestamp": 1631279792
+    },
+    {
+        "content": "<p>(which describes \"directed hypergraphs\" aka multicategories without composition)</p>",
+        "id": 252784935,
+        "sender_full_name": "Asad Saeeduddin",
+        "timestamp": 1631279874
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276050\">Asad Saeeduddin</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/free.20cartesian.20category.20for.20dummies/near/252784935\">said</a>:</p>\n<blockquote>\n<p>(which describes \"directed hypergraphs\" aka multicategories without composition)</p>\n</blockquote>\n<p>The directed hypergraphs of that paper appear to be more like \"polycategories without composition\", i.e. they permit multiple targets.</p>",
+        "id": 252785326,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1631280023
+    },
+    {
+        "content": "<p>One useful characterization of cartesian categories is as \"symmetric monoidal categories with copying and discarding\" (see <a href=\"https://ncatlab.org/nlab/show/cartesian+monoidal+category#properties\">https://ncatlab.org/nlab/show/cartesian+monoidal+category#properties</a>), and so that makes it possible to think of free cartesian categories on a signature as a category of string diagrams. Perhaps it would be useful to describe that in this \"free cartesian category\" page?</p>",
+        "id": 253736399,
+        "sender_full_name": "Antonin Delpeuch",
+        "timestamp": 1631882956
+    }
+]
