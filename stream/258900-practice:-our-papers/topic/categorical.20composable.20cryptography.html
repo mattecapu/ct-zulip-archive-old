@@ -1,0 +1,51 @@
+---
+layout: archive
+title: Zulip Chat Archive
+permalink: /stream/258900-practice:-our-papers/topic/categorical.20composable.20cryptography.html
+---
+
+<h2>Stream: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/258900-practice:-our-papers/index.html">practice: our papers</a></h2>
+<h3>Topic: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/258900-practice:-our-papers/topic/categorical.20composable.20cryptography.html">categorical composable cryptography</a></h3>
+
+<hr>
+
+<base href="https://categorytheory.zulipchat.com/">
+
+{% raw %}
+
+<a name="266991976"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/258900-practice%3A%20our%20papers/topic/categorical%20composable%20cryptography/near/266991976" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Martti Karvonen <a href="https://mattecapu.github.io/ct-zulip-archive/stream/258900-practice:-our-papers/topic/categorical.20composable.20cryptography.html#266991976">(Jan 05 2022 at 21:14)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="278549">Bas Spitters</span> <a href="#narrow/stream/258900-practice.3A-our.20papers/topic/Categorical.20composable.20cryptography/near/239091152">said</a>:</p>
+<blockquote>
+<p>Hi <span class="user-mention silent" data-user-id="277285">Martti Karvonen</span> I had briefly looked a similar approach before, but it seems that the Kleisli category of state+probability is not a SMC, as state is not a commutative monad. It's possible that I overlooked something, but it looks like this does not directly fit in your framework.<br>
+Please correct me if I'm wrong.</p>
+</blockquote>
+<p><span class="user-mention" data-user-id="278549">@Bas Spitters</span>  isn't state lax monoidal for +, and similarly for Giry? Using + as the monoidal structure seems to be what they do for constructive crypto in cryptHOL in the paper you linked, so I think this should fit the framework just fine after all.</p>
+
+
+
+<a name="266999256"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/258900-practice%3A%20our%20papers/topic/categorical%20composable%20cryptography/near/266999256" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Bas Spitters <a href="https://mattecapu.github.io/ct-zulip-archive/stream/258900-practice:-our-papers/topic/categorical.20composable.20cryptography.html#266999256">(Jan 05 2022 at 22:14)</a>:</h4>
+<p>Hi <span class="user-mention" data-user-id="277285">@Martti Karvonen</span> State gives a symmetric <em>pre</em>monoidal category of stateful programs. See e.g. the work by <span class="user-mention" data-user-id="308397">@Sam Staton</span> <br>
+<a href="https://www.cs.ox.ac.uk/people/samuel.staton/papers/popl13.pdf">https://www.cs.ox.ac.uk/people/samuel.staton/papers/popl13.pdf</a></p>
+<p>I'm not entirely sure what you mean by +.<br>
+Indeed, cryptHOL does not use state in the base category, but uses resumption monads to pass state around. Do you claim that's related to what you  are doing?<br>
+That would be interesting.</p>
+
+
+
+<a name="267000642"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/258900-practice%3A%20our%20papers/topic/categorical%20composable%20cryptography/near/267000642" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Martti Karvonen <a href="https://mattecapu.github.io/ct-zulip-archive/stream/258900-practice:-our-papers/topic/categorical.20composable.20cryptography.html#267000642">(Jan 05 2022 at 22:26)</a>:</h4>
+<p><span class="user-mention" data-user-id="278549">@Bas Spitters</span>  I meant taking coproducts as giving the monoidal structure on our base category rather than cartesian products. That's clearly the monoidal structure at play in <a href="https://ieeexplore.ieee.org/document/8823694">https://ieeexplore.ieee.org/document/8823694</a> that you mentioned earlier, and seems to play well both with the distribution and state monads.</p>
+
+
+
+<a name="267049591"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/258900-practice%3A%20our%20papers/topic/categorical%20composable%20cryptography/near/267049591" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Bas Spitters <a href="https://mattecapu.github.io/ct-zulip-archive/stream/258900-practice:-our-papers/topic/categorical.20composable.20cryptography.html#267049591">(Jan 06 2022 at 11:16)</a>:</h4>
+<p>That could work. Did you check that it does form a monoidal category? And if so, how does your approach connect to the use of resumption monads?</p>
+
+
+
+{% endraw %}
+
+<hr><p>Last updated: Feb 08 2022 at 00:29 UTC</p>

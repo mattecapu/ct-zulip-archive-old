@@ -1,0 +1,364 @@
+---
+layout: archive
+title: Zulip Chat Archive
+permalink: /stream/282140-workshop:-Polynomial-Functors-@-Topos/topic/Thorsten.20Altenkirch.3A.20.22Containers.20and.20inductive.20types.22.html
+---
+
+<h2>Stream: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/282140-workshop:-Polynomial-Functors-@-Topos/index.html">workshop: Polynomial Functors @ Topos</a></h2>
+<h3>Topic: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/282140-workshop:-Polynomial-Functors-@-Topos/topic/Thorsten.20Altenkirch.3A.20.22Containers.20and.20inductive.20types.22.html">Thorsten Altenkirch: "Containers and inductive types"</a></h3>
+
+<hr>
+
+<base href="https://categorytheory.zulipchat.com/">
+
+{% raw %}
+
+<a name="230926457"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/282140-workshop%3A%20Polynomial%20Functors%20%40%20Topos/topic/Thorsten%20Altenkirch%3A%20%22Containers%20and%20inductive%20types%22/near/230926457" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Tim Hosgood <a href="https://mattecapu.github.io/ct-zulip-archive/stream/282140-workshop:-Polynomial-Functors-@-Topos/topic/Thorsten.20Altenkirch.3A.20.22Containers.20and.20inductive.20types.22.html#230926457">(Mar 18 2021 at 19:45)</a>:</h4>
+<p>Thursday, 20:00 UTC</p>
+
+
+
+<a name="230937265"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/282140-workshop%3A%20Polynomial%20Functors%20%40%20Topos/topic/Thorsten%20Altenkirch%3A%20%22Containers%20and%20inductive%20types%22/near/230937265" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Thibaut Benjamin <a href="https://mattecapu.github.io/ct-zulip-archive/stream/282140-workshop:-Polynomial-Functors-@-Topos/topic/Thorsten.20Altenkirch.3A.20.22Containers.20and.20inductive.20types.22.html#230937265">(Mar 18 2021 at 21:03)</a>:</h4>
+<p><span class="user-mention" data-user-id="398566">@Thorsten Altenkirch</span> Thanks for the talk, very interesting. Sorry my microphone is not working properly, so I am asking a question here: Do you have an implementation of the syntax you mentioned for QIIT in a proof assistant? Say for instance I would like to formalize a type theory using an intrinsic syntax, is there any practical way of doing so? I have tried in the past following your paper with A. Kaposi, but handling manually all the elimination principles and never using Agda's pattern mattching is not really where you want to be</p>
+
+
+
+<a name="230940398"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/282140-workshop%3A%20Polynomial%20Functors%20%40%20Topos/topic/Thorsten%20Altenkirch%3A%20%22Containers%20and%20inductive%20types%22/near/230940398" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Thorsten Altenkirch <a href="https://mattecapu.github.io/ct-zulip-archive/stream/282140-workshop:-Polynomial-Functors-@-Topos/topic/Thorsten.20Altenkirch.3A.20.22Containers.20and.20inductive.20types.22.html#230940398">(Mar 18 2021 at 21:26)</a>:</h4>
+<p>Yes, but there are still bits and proofs missing. As I said it is work in progress. I am using cubical agda. But I am happy to discuss it. I don't think the code is anywhere ready for sharing without comment.</p>
+
+
+
+<a name="230940432"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/282140-workshop%3A%20Polynomial%20Functors%20%40%20Topos/topic/Thorsten%20Altenkirch%3A%20%22Containers%20and%20inductive%20types%22/near/230940432" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Thorsten Altenkirch <a href="https://mattecapu.github.io/ct-zulip-archive/stream/282140-workshop:-Polynomial-Functors-@-Topos/topic/Thorsten.20Altenkirch.3A.20.22Containers.20and.20inductive.20types.22.html#230940432">(Mar 18 2021 at 21:27)</a>:</h4>
+<p>Ah in cubical agda you can define QIITs and just use pattern matching.</p>
+
+
+
+<a name="230940645"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/282140-workshop%3A%20Polynomial%20Functors%20%40%20Topos/topic/Thorsten%20Altenkirch%3A%20%22Containers%20and%20inductive%20types%22/near/230940645" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Thorsten Altenkirch <a href="https://mattecapu.github.io/ct-zulip-archive/stream/282140-workshop:-Polynomial-Functors-@-Topos/topic/Thorsten.20Altenkirch.3A.20.22Containers.20and.20inductive.20types.22.html#230940645">(Mar 18 2021 at 21:29)</a>:</h4>
+<p>You need to apply a little trick due to a student by Ambrus (whose name escapes me just now). You always define a "micro" universe U : Set, El : U -&gt; Set mutually. This way you can add your constructor in any order.</p>
+
+
+
+<a name="230941293"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/282140-workshop%3A%20Polynomial%20Functors%20%40%20Topos/topic/Thorsten%20Altenkirch%3A%20%22Containers%20and%20inductive%20types%22/near/230941293" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Thibaut Benjamin <a href="https://mattecapu.github.io/ct-zulip-archive/stream/282140-workshop:-Polynomial-Functors-@-Topos/topic/Thorsten.20Altenkirch.3A.20.22Containers.20and.20inductive.20types.22.html#230941293">(Mar 18 2021 at 21:34)</a>:</h4>
+<p>Thanks, I have been meaning to look at cubical Agda for a while. I will give this a try and see how it goes then</p>
+
+
+
+<a name="230956101"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/282140-workshop%3A%20Polynomial%20Functors%20%40%20Topos/topic/Thorsten%20Altenkirch%3A%20%22Containers%20and%20inductive%20types%22/near/230956101" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Valeria de Paiva <a href="https://mattecapu.github.io/ct-zulip-archive/stream/282140-workshop:-Polynomial-Functors-@-Topos/topic/Thorsten.20Altenkirch.3A.20.22Containers.20and.20inductive.20types.22.html#230956101">(Mar 19 2021 at 00:10)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="398566">Thorsten Altenkirch</span> <a href="#narrow/stream/282140-workshop.3A-Polynomial.20Functors.20.40.20Topos/topic/Thorsten.20Altenkirch.3A.20.22Containers.20and.20inductive.20types.22/near/230940645">said</a>:</p>
+<blockquote>
+<p>You need to apply a little trick due to a student by Ambrus (whose name escapes me just now). You always define a "micro" universe U : Set, El : U -&gt; Set mutually. This way you can add your constructor in any order.</p>
+</blockquote>
+<p>Thorsten,  I have a very uninformed question: why people in TT want to have QIIT and HIIT? what do they give you more than you have already? and does any one consider conductive versions for these guys?</p>
+
+
+
+<a name="230957485"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/282140-workshop%3A%20Polynomial%20Functors%20%40%20Topos/topic/Thorsten%20Altenkirch%3A%20%22Containers%20and%20inductive%20types%22/near/230957485" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Thibaut Benjamin <a href="https://mattecapu.github.io/ct-zulip-archive/stream/282140-workshop:-Polynomial-Functors-@-Topos/topic/Thorsten.20Altenkirch.3A.20.22Containers.20and.20inductive.20types.22.html#230957485">(Mar 19 2021 at 00:29)</a>:</h4>
+<p>I think I can partially answer your first question: You want HIIT for the same reason that you want higher order inductive types and that you want inductive inductive types but combined. </p>
+<p>Basically you want "higher order" because you want to be able to define "non-free" types. With usual inductive types, everything is free, in the sense that you only give generators. Higher inductive types let you also add relations, and since HoTT wants to stay proof relevant, you may also need to add relations between relations and so on. I would say going to higher inductive is analogous to moving from free groups to generic groups, by adding relations to the generators. </p>
+<p>On the other hand, you want inductive inductive types to describe concepts that are mutually dependent on each other in an intrinsic way. The primary example that I know of is the syntax of a type theory, where a type is only valid in a context, which is itself made of types. I actually don't have a good algebraic analogue of this situation, but it would be nice to have one. </p>
+<p>Now combine these two motivations and you get HIIT: where multiple concepts depend on each other mutually and they are not freely presented but need some relations.</p>
+
+
+
+<a name="230958158"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/282140-workshop%3A%20Polynomial%20Functors%20%40%20Topos/topic/Thorsten%20Altenkirch%3A%20%22Containers%20and%20inductive%20types%22/near/230958158" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Thibaut Benjamin <a href="https://mattecapu.github.io/ct-zulip-archive/stream/282140-workshop:-Polynomial-Functors-@-Topos/topic/Thorsten.20Altenkirch.3A.20.22Containers.20and.20inductive.20types.22.html#230958158">(Mar 19 2021 at 00:37)</a>:</h4>
+<p>I don't know exactly how much more they give you compared to just higher inductive. I think I vaguely remember something about inductive inductive types (or maybe inductive recursive types) reducing to normal inductive types, but I am not sure about that, and even if it is true, it may not generalize to higher settings. I have never heard of higher coinductive types either but that would make sense, as it would correspond to a presentation of a coalgebra. I have never heard of coinductive coinductive types either, and I don't have a clear intuition of what these could really be. Maybe it could be used to define some kind of infinitary type theory</p>
+
+
+
+<a name="230963585"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/282140-workshop%3A%20Polynomial%20Functors%20%40%20Topos/topic/Thorsten%20Altenkirch%3A%20%22Containers%20and%20inductive%20types%22/near/230963585" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Valeria de Paiva <a href="https://mattecapu.github.io/ct-zulip-archive/stream/282140-workshop:-Polynomial-Functors-@-Topos/topic/Thorsten.20Altenkirch.3A.20.22Containers.20and.20inductive.20types.22.html#230963585">(Mar 19 2021 at 01:39)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="279935">Thibaut Benjamin</span> <a href="#narrow/stream/282140-workshop.3A-Polynomial.20Functors.20.40.20Topos/topic/Thorsten.20Altenkirch.3A.20.22Containers.20and.20inductive.20types.22/near/230957485">said</a>:</p>
+<blockquote>
+<p>I think I can partially answer your first question: You want HIIT for the same reason that you want higher order inductive types and that you want inductive inductive types but combined. </p>
+<p>Basically you want "higher order" because you want to be able to define "non-free" types. With usual inductive types, everything is free, in the sense that you only give generators. Higher inductive types let you also add relations, and since HoTT wants to stay proof relevant, you may also need to add relations between relations and so on. I would say going to higher inductive is analogous to moving from free groups to generic groups, by adding relations to the generators. <br>
+</p>
+</blockquote>
+<p>Many thanks! but I do find it very strange: I expected examples of programs that you'd want it for. Because I expected that inductive types would be enough for proof-relevant vanilla type theory.  it's a surprise to hear that this is not the case.</p>
+
+
+
+<a name="230989374"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/282140-workshop%3A%20Polynomial%20Functors%20%40%20Topos/topic/Thorsten%20Altenkirch%3A%20%22Containers%20and%20inductive%20types%22/near/230989374" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Matteo Capucci (he/him) <a href="https://mattecapu.github.io/ct-zulip-archive/stream/282140-workshop:-Polynomial-Functors-@-Topos/topic/Thorsten.20Altenkirch.3A.20.22Containers.20and.20inductive.20types.22.html#230989374">(Mar 19 2021 at 08:26)</a>:</h4>
+<p>An example I always have in mind when thinking about HITs is the integers.<br>
+To be fair, I don't know whether this is actually true (and correct) or just a figment of my imagination. I'd be happy to know if this is/isn't a good example.<br>
+So, you'd like to define integers like you do for natural numbers, that is, something like</p>
+<div class="codehilite"><pre><span></span><code>data Z : Set where
+  zero : Z
+  succ : Z -&gt; Z
+  pred : Z -&gt; Z
+</code></pre></div>
+<p>but in this way <code>succ pred zero</code> is different than <code>pred succ zero</code>, which is not what happens for the integers (as Thorsten says, this type is the free monoid on 2 generators, and the integers are not free)<br>
+The most direct way would be to add two lines, corresponding to the two relations lurking in the integers</p>
+<div class="codehilite"><pre><span></span><code>  comm : (z : Z) -&gt; succ pred z ≣ pred succ z
+  canc : (z : Z) -&gt; succ pred z ≣ z
+</code></pre></div>
+<p>and I guess that's where HIT come on the stage.</p>
+
+
+
+<a name="230998286"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/282140-workshop%3A%20Polynomial%20Functors%20%40%20Topos/topic/Thorsten%20Altenkirch%3A%20%22Containers%20and%20inductive%20types%22/near/230998286" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Thibaut Benjamin <a href="https://mattecapu.github.io/ct-zulip-archive/stream/282140-workshop:-Polynomial-Functors-@-Topos/topic/Thorsten.20Altenkirch.3A.20.22Containers.20and.20inductive.20types.22.html#230998286">(Mar 19 2021 at 09:54)</a>:</h4>
+<p>Yes exactly there are a few other "classical" examples out there. Another example that I find enlightening is the propositional truncation. For a type <code>X</code>, its propositional truncation<code>||X||</code> is a type that contains the same terms as <code>X</code>, except they are all equal. The intuition is that <code>||X||</code> is logically equivalent to <code>X</code>, but it is required that all its terms are propositionally equal. A possible definition of the propositional truncation using a HIT:</p>
+<div class="codehilite"><pre><span></span><code>data ||X|| :Set where
+  tm :  X -&gt;  ||X||
+  eq : (x y : ||X||) -&gt; x==y
+</code></pre></div>
+<p>Interestingly in this case the initiality part of the HIT gives you exactly the universal property that you want for the propositional truncation. That is not something you can write with usual inductive types. You could define this type manually using axioms. But the idea in having HIT, is that it guarantees the consistency, provide a uniform way for understanding the semantics gives you a framework that computes better than axioms</p>
+
+
+
+<a name="231044801"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/282140-workshop%3A%20Polynomial%20Functors%20%40%20Topos/topic/Thorsten%20Altenkirch%3A%20%22Containers%20and%20inductive%20types%22/near/231044801" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> D.G. Berry <a href="https://mattecapu.github.io/ct-zulip-archive/stream/282140-workshop:-Polynomial-Functors-@-Topos/topic/Thorsten.20Altenkirch.3A.20.22Containers.20and.20inductive.20types.22.html#231044801">(Mar 19 2021 at 15:51)</a>:</h4>
+<p>Sorry; what was the reference for containers have derivatives in symmetric containers?</p>
+
+
+
+<a name="231045104"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/282140-workshop%3A%20Polynomial%20Functors%20%40%20Topos/topic/Thorsten%20Altenkirch%3A%20%22Containers%20and%20inductive%20types%22/near/231045104" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> D.G. Berry <a href="https://mattecapu.github.io/ct-zulip-archive/stream/282140-workshop:-Polynomial-Functors-@-Topos/topic/Thorsten.20Altenkirch.3A.20.22Containers.20and.20inductive.20types.22.html#231045104">(Mar 19 2021 at 15:53)</a>:</h4>
+<p>It just occurred to me that I could just watch the YT recording!</p>
+
+
+
+<a name="231097118"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/282140-workshop%3A%20Polynomial%20Functors%20%40%20Topos/topic/Thorsten%20Altenkirch%3A%20%22Containers%20and%20inductive%20types%22/near/231097118" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Tarmo Uustalu <a href="https://mattecapu.github.io/ct-zulip-archive/stream/282140-workshop:-Polynomial-Functors-@-Topos/topic/Thorsten.20Altenkirch.3A.20.22Containers.20and.20inductive.20types.22.html#231097118">(Mar 19 2021 at 22:15)</a>:</h4>
+<p>You mean the thesis by Gylterud? Here, <a href="https://www.duo.uio.no/handle/10852/10740">https://www.duo.uio.no/handle/10852/10740</a> .</p>
+
+
+
+<a name="231097291"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/282140-workshop%3A%20Polynomial%20Functors%20%40%20Topos/topic/Thorsten%20Altenkirch%3A%20%22Containers%20and%20inductive%20types%22/near/231097291" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Tarmo Uustalu <a href="https://mattecapu.github.io/ct-zulip-archive/stream/282140-workshop:-Polynomial-Functors-@-Topos/topic/Thorsten.20Altenkirch.3A.20.22Containers.20and.20inductive.20types.22.html#231097291">(Mar 19 2021 at 22:17)</a>:</h4>
+<p><a href="https://hakon.gylterud.net/research/">https://hakon.gylterud.net/research/</a></p>
+
+
+
+<a name="231107856"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/282140-workshop%3A%20Polynomial%20Functors%20%40%20Topos/topic/Thorsten%20Altenkirch%3A%20%22Containers%20and%20inductive%20types%22/near/231107856" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Valeria de Paiva <a href="https://mattecapu.github.io/ct-zulip-archive/stream/282140-workshop:-Polynomial-Functors-@-Topos/topic/Thorsten.20Altenkirch.3A.20.22Containers.20and.20inductive.20types.22.html#231107856">(Mar 20 2021 at 00:21)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="275932">Matteo Capucci (he/him)</span> <a href="#narrow/stream/282140-workshop.3A-Polynomial.20Functors.20.40.20Topos/topic/Thorsten.20Altenkirch.3A.20.22Containers.20and.20inductive.20types.22/near/230989374">said</a>:</p>
+<blockquote>
+<p>An example I always have in mind when thinking about HITs is the integers.<br>
+To be fair, I don't know whether this is actually true (and correct) or just a figment of my imagination. I'd be happy to know if this is/isn't a good example.<br>
+So, you'd like to define integers like you do for natural numbers, that is, something like</p>
+<div class="codehilite"><pre><span></span><code>data Z : Set where
+  zero : Z
+  succ : Z -&gt; Z
+  pred : Z -&gt; Z
+</code></pre></div>
+<p>but in this way <code>succ pred zero</code> is different than <code>pred succ zero</code>, which is not what happens for the integers (as Thorsten says, this type is the free monoid on 2 generators, and the integers are not free)<br>
+The most direct way would be to add two lines, corresponding to the two relations lurking in the integers</p>
+<div class="codehilite"><pre><span></span><code>  comm : (z : Z) -&gt; succ pred z ≣ pred succ z
+  canc : (z : Z) -&gt; succ pred z ≣ z
+</code></pre></div>
+<p>and I guess that's where HIT come on the stage.</p>
+</blockquote>
+<p>Thanks! but the example does not convince me very much. we have lots of ways to treat integers already. I understand that the point of the example is to show that this is a more natural way to have/deal with them, but I still fail to see why it's more natural to do it via HIIT types.</p>
+
+
+
+<a name="231110927"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/282140-workshop%3A%20Polynomial%20Functors%20%40%20Topos/topic/Thorsten%20Altenkirch%3A%20%22Containers%20and%20inductive%20types%22/near/231110927" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Valeria de Paiva <a href="https://mattecapu.github.io/ct-zulip-archive/stream/282140-workshop:-Polynomial-Functors-@-Topos/topic/Thorsten.20Altenkirch.3A.20.22Containers.20and.20inductive.20types.22.html#231110927">(Mar 20 2021 at 01:14)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="279935">Thibaut Benjamin</span> <a href="#narrow/stream/282140-workshop.3A-Polynomial.20Functors.20.40.20Topos/topic/Thorsten.20Altenkirch.3A.20.22Containers.20and.20inductive.20types.22/near/230998286">said</a>:</p>
+<blockquote>
+<p>Yes exactly there are a few other "classical" examples out there. Another example that I find enlightening is the propositional truncation. For a type <code>X</code>, its propositional truncation<code>||X||</code> is a type that contains the same terms as <code>X</code>, except they are all equal. The intuition is that <code>||X||</code> is logically equivalent to <code>X</code>, but it is required that all its terms are propositionally equal. A possible definition of the propositional truncation using a HIT:</p>
+<div class="codehilite"><pre><span></span><code>data ||X|| :Set where
+  tm :  X -&gt;  ||X||
+  eq : (x y : ||X||) -&gt; x==y
+</code></pre></div>
+<p>Interestingly in this case the initiality part of the HIT gives you exactly the universal property that you want for the propositional truncation. That is not something you can write with usual inductive types. You could define this type manually using axioms. But the idea in having HIT, is that it guarantees the consistency, provide a uniform way for understanding the semantics gives you a framework that computes better than axioms</p>
+</blockquote>
+<p>More thanks! I think this fits in with what I (think I) heard from K. Sojokova about a divergence between TT for CS and TT for mathematics yesterday, but again the intuition is not clear to me. of course we want to be able to simplify relevant proofs to proof-irrelevant ones and get rid of all the noise. not clear to me if there's a single way of doing it, if I should expect a single way of doing it or not.</p>
+
+
+
+<a name="231299227"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/282140-workshop%3A%20Polynomial%20Functors%20%40%20Topos/topic/Thorsten%20Altenkirch%3A%20%22Containers%20and%20inductive%20types%22/near/231299227" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Thibaut Benjamin <a href="https://mattecapu.github.io/ct-zulip-archive/stream/282140-workshop:-Polynomial-Functors-@-Topos/topic/Thorsten.20Altenkirch.3A.20.22Containers.20and.20inductive.20types.22.html#231299227">(Mar 22 2021 at 12:09)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="276656">Valeria de Paiva</span> <a href="#narrow/stream/282140-workshop.3A-Polynomial.20Functors.20.40.20Topos/topic/Thorsten.20Altenkirch.3A.20.22Containers.20and.20inductive.20types.22/near/231110927">said</a>:</p>
+<blockquote>
+<p>of course we want to be able to simplify relevant proofs to proof-irrelevant ones and get rid of all the noise. not clear to me if there's a single way of doing it, if I should expect a single way of doing it or not.</p>
+</blockquote>
+<p>I think you just hit(pun intended) the point where there is a divergence of point of view. You are free to want to get rid of all the proof-revelance if you please, and there are several ways of doing so. You can for instance add the UIP axiom, or the K axiom that will do the job for you. In fact that is the point of view of most mathematicians, and was also the point of view of all computer scientists up until the 2-groupoid models of TT due to Hoffman and Streicher (as far as I know).</p>
+<p>However, this 2-groupoid model showed that these identity types are not propositional, and contain non-trivial higher information. So if there is some information encoded by the proof-relevance (for identity types), we might as well use this information right? Well again it depends, and it is a completely justifiable choice to get rid of the "noise", as you call it. That's probably what you would do if you were to try formalizing anything with a set-theoretic mindset, whether it'd be maths or even proving a program. If you make this choice, then HITs are probably not of much use to you.</p>
+<p>But you can now also embrace this noise and use it for your own advantage. In particular we now understand that keeping the proof relevance for the identity types is kinda like doing maths, but instead of using sets, we have homotopy types, and everything that we say is "up to homotopy". There were already math folks that were working with stuff up to homotopy (see Peter May and his theory of operads for iterated loopspaces). So if you wanted to formalize results in this direction, you certainly don't want to get rid of the noise of proof relevance. Quite the contrary, you absolutely want to keep all the iterated identity types and leverage their expressive power to use the additional information they carry (the noise), in order to encode relevant properties for you (homotopies and things up to homotopy). In this second approach HITs are very relevant, since they let you introduce types that look like normal inductive types, but also freely adding the additional information about iterated equalities, that you now care about.</p>
+<p>I think at this point there is one thing worth noting: in some cases the two approaches are really the same. In particular if you work with a type with decidable equality (that is, if the type <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">∀</mi><mi>x</mi><mo separator="true">,</mo><mi>y</mi><mo>:</mo><mi>A</mi><mo separator="true">,</mo><mi>x</mi><mo>=</mo><mo>=</mo><mi>y</mi><mo>∨</mo><mi mathvariant="normal">¬</mi><mo stretchy="false">(</mo><mi>x</mi><mo>=</mo><mo>=</mo><mi>y</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex"> \forall x,y:A, x==y\vee \neg (x==y)</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span class="mord">∀</span><span class="mord mathnormal">x</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathnormal" style="margin-right:0.03588em;">y</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">:</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.8777699999999999em;vertical-align:-0.19444em;"></span><span class="mord mathnormal">A</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathnormal">x</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span></span><span class="base"><span class="strut" style="height:0.36687em;vertical-align:0em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.75em;vertical-align:-0.19444em;"></span><span class="mord mathnormal" style="margin-right:0.03588em;">y</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">∨</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">¬</span><span class="mopen">(</span><span class="mord mathnormal">x</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span></span><span class="base"><span class="strut" style="height:0.36687em;vertical-align:0em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.03588em;">y</span><span class="mclose">)</span></span></span></span> is inhabited), then you can prove that you are in fact in the case where the higher information is trivial, and so forgetting it or keeping it relevant really are the same thing. It is the case in particular for natural numbers or for integers. In fact it turns out that you can develop quite a lot of mathematics only staying at this level. For instance the MathComp library, developped by Gonthier and al to prove Feit-Thomson theorem does this: it does not assume anything about the types having no noise, but everything happens within the types with decidable equality, where there will ultimately be no noise.</p>
+<p>I think another thing that the relevant equality has going for it, is that it computes. What I mean by that is that every <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>λ</mi></mrow><annotation encoding="application/x-tex">\lambda</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.69444em;vertical-align:0em;"></span><span class="mord mathnormal">λ</span></span></span></span>-term in such a dependent type theory can always be reduced to a normal form. It is in fact very hard to come up with a notion of equality that is proof irrelevant, but still computes.</p>
+
+
+
+<a name="231367544"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/282140-workshop%3A%20Polynomial%20Functors%20%40%20Topos/topic/Thorsten%20Altenkirch%3A%20%22Containers%20and%20inductive%20types%22/near/231367544" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Valeria de Paiva <a href="https://mattecapu.github.io/ct-zulip-archive/stream/282140-workshop:-Polynomial-Functors-@-Topos/topic/Thorsten.20Altenkirch.3A.20.22Containers.20and.20inductive.20types.22.html#231367544">(Mar 22 2021 at 19:12)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="279935">Thibaut Benjamin</span> <a href="#narrow/stream/282140-workshop.3A-Polynomial.20Functors.20.40.20Topos/topic/Thorsten.20Altenkirch.3A.20.22Containers.20and.20inductive.20types.22/near/231299227">said</a>:</p>
+<blockquote>
+<p><span class="user-mention silent" data-user-id="276656">Valeria de Paiva</span> <a href="#narrow/stream/282140-workshop.3A-Polynomial.20Functors.20.40.20Topos/topic/Thorsten.20Altenkirch.3A.20.22Containers.20and.20inductive.20types.22/near/231110927">said</a>:</p>
+<blockquote>
+<p>of course we want to be able to simplify relevant proofs to proof-irrelevant ones and get rid of all the noise. not clear to me if there's a single way of doing it, if I should expect a single way of doing it or not.</p>
+</blockquote>
+<p>I think you just hit(pun intended) the point where there is a divergence of point of view. You are free to want to get rid of all the proof-revelance if you please, and there are several ways of doing so. You can for instance add the UIP axiom, or the K axiom that will do the job for you. In fact that is the point of view of most mathematicians, and was also the point of view of all computer scientists up until the 2-groupoid models of TT due to Hoffman and Streicher (as far as I know).</p>
+</blockquote>
+<p>Oh, you misread me! I am a category theorist and a categorical proof theorist. I do want my proofs by and large relevant, because they're the morphisms that I can calculate with. What I was saying above is that <br>
+<em>Whenever</em> we want to simplify relevant proofs to proof irrelevant ones and get rid of all the noise, it is not clear to me if there's one single way of doing it that's morally correct or not. that is, it's not clear to me if I should expect a single way of doing it or many.</p>
+
+
+
+<a name="231379766"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/282140-workshop%3A%20Polynomial%20Functors%20%40%20Topos/topic/Thorsten%20Altenkirch%3A%20%22Containers%20and%20inductive%20types%22/near/231379766" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Valeria de Paiva <a href="https://mattecapu.github.io/ct-zulip-archive/stream/282140-workshop:-Polynomial-Functors-@-Topos/topic/Thorsten.20Altenkirch.3A.20.22Containers.20and.20inductive.20types.22.html#231379766">(Mar 22 2021 at 20:30)</a>:</h4>
+<p>Now that we set-up the parameters of the conversation better, I hope, yes, I also want to be able to deal with the information pertaining to the proofs of equality, and this is not noise, when this is what we're aiming for. and no, I don't want to formalize results in mathematics, Homotopy Theory or anything else, I want to formalize results in logic. as far as I'm concerned homotopical models are just one kind of model that people may want to use, I am not especially fond of them. </p>
+<p>Many thanks for the information about the MathComp library!! </p>
+<blockquote>
+<p>everything happens within the types with decidable equality, where there will ultimately be no noise.</p>
+</blockquote>
+<p>excellent news! This is an interesting idea, if our aim (like George's) is to formalize results in Mathematics!</p>
+<blockquote>
+<p>It is in fact very hard to come up with a notion of equality that is proof irrelevant, but still computes.</p>
+</blockquote>
+<p>hmm, why do you think this is?</p>
+<p>By the way, many thanks for the careful response, I really appreciate it!</p>
+
+
+
+<a name="231438758"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/282140-workshop%3A%20Polynomial%20Functors%20%40%20Topos/topic/Thorsten%20Altenkirch%3A%20%22Containers%20and%20inductive%20types%22/near/231438758" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Thibaut Benjamin <a href="https://mattecapu.github.io/ct-zulip-archive/stream/282140-workshop:-Polynomial-Functors-@-Topos/topic/Thorsten.20Altenkirch.3A.20.22Containers.20and.20inductive.20types.22.html#231438758">(Mar 23 2021 at 08:56)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="276656">Valeria de Paiva</span> <a href="#narrow/stream/282140-workshop.3A-Polynomial.20Functors.20.40.20Topos/topic/Thorsten.20Altenkirch.3A.20.22Containers.20and.20inductive.20types.22/near/231367544">said</a>:</p>
+<blockquote>
+<p><em>Whenever</em> we want to simplify relevant proofs to proof irrelevant ones and get rid of all the noise, it is not clear to me if there's one single way of doing it that's morally correct or not. that is, it's not clear to me if I should expect a single way of doing it or many.</p>
+</blockquote>
+<p>I am not completely sure how to answer that because I suspect it depends in which framework you are working. In HoTT, you have the propositional truncation, which can be defined by a universal property, and any two types satisfying the same universal property are always equivalent, so I would say there is an essentially unique way of doing so. The way I see it is that it amounts to taking a higher groupoid and freely throwing as many higher cells as needed to make is 1-trivial. My guess would be that this corresponds to a monad of some sort on higher groupoids, but I am not sure about that. I don't know of any construction internal to Martin-Löf TT that allows to go from relevant to irrelevant. One could extend MLTT with a new constructor that does this, but that would be exactly the same as the HIT. It's kind of like the fact that you can define natural numbers externally as a type constructor and give all its rules, or you can define inductive types in general, and then use them to define natural numbers internally.</p>
+
+
+
+<a name="231440780"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/282140-workshop%3A%20Polynomial%20Functors%20%40%20Topos/topic/Thorsten%20Altenkirch%3A%20%22Containers%20and%20inductive%20types%22/near/231440780" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Thibaut Benjamin <a href="https://mattecapu.github.io/ct-zulip-archive/stream/282140-workshop:-Polynomial-Functors-@-Topos/topic/Thorsten.20Altenkirch.3A.20.22Containers.20and.20inductive.20types.22.html#231440780">(Mar 23 2021 at 09:16)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="276656">Valeria de Paiva</span> <a href="#narrow/stream/282140-workshop.3A-Polynomial.20Functors.20.40.20Topos/topic/Thorsten.20Altenkirch.3A.20.22Containers.20and.20inductive.20types.22/near/231379766">said</a>:</p>
+<blockquote>
+<blockquote>
+<p>It is in fact very hard to come up with a notion of equality that is proof irrelevant, but still computes.</p>
+</blockquote>
+<p>hmm, why do you think this is?</p>
+</blockquote>
+<p>It's more of an "I noticed that" statement. When you have a function that takes an equality, if the equality is proof irrelevant, it amounts to giving only only the information that the identity type is inhabited, but not a specific term of the identity type. So somehow you need to come up with a function that can use the information that the identity type is inhabited, but is not allowed to prompt for what the inhabitant is. In particular, the function is not allowed to say how it computes on <code>refl</code> and then use the elimination principle. I don't know how to compute with such functions (but maybe some people do)</p>
+<p>The only workaround this I know is to restrict to types with decidable equality. The reason why it works in that case is that there is essentially a unique inhabitant for each identity types, so giving the info that the type is inhabited is really the same as giving the inhabitant.</p>
+
+
+
+<a name="231526777"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/282140-workshop%3A%20Polynomial%20Functors%20%40%20Topos/topic/Thorsten%20Altenkirch%3A%20%22Containers%20and%20inductive%20types%22/near/231526777" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Valeria de Paiva <a href="https://mattecapu.github.io/ct-zulip-archive/stream/282140-workshop:-Polynomial-Functors-@-Topos/topic/Thorsten.20Altenkirch.3A.20.22Containers.20and.20inductive.20types.22.html#231526777">(Mar 23 2021 at 19:13)</a>:</h4>
+<p>Many thanks! I think your answer is very much   what I was really asking  about when you say</p>
+<blockquote>
+<p>I don't know of any construction internal to Martin-Löf TT that allows to go from relevant to irrelevant. One could extend MLTT with a new constructor that does this, but that would be exactly the same as the HIT. </p>
+</blockquote>
+<p>OK. good to know. but why HIT instead of some kind of W-type?</p>
+<blockquote>
+<p>It's kind of like the fact that you can define natural numbers externally as a type constructor and give all its rules, or you can define inductive types in general, and then use them to define natural numbers internally.</p>
+</blockquote>
+<p>I find it very difficult to navigate which bits of CT correspond to which bits of the type theory. in MLTT or HoTT. <br>
+So I expected that ok truncation is great, if the model you're working with is HoTT. but I also expected other mechanisms (as you conjecture above) for other models. so this was why I was starting from first principles on what we know should happen, i.e you can forget the relevant proof structure, and the irrelevant proof should make sense. but then you need to know which of the noise is important and for what.</p>
+
+
+
+<a name="231532523"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/282140-workshop%3A%20Polynomial%20Functors%20%40%20Topos/topic/Thorsten%20Altenkirch%3A%20%22Containers%20and%20inductive%20types%22/near/231532523" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Valeria de Paiva <a href="https://mattecapu.github.io/ct-zulip-archive/stream/282140-workshop:-Polynomial-Functors-@-Topos/topic/Thorsten.20Altenkirch.3A.20.22Containers.20and.20inductive.20types.22.html#231532523">(Mar 23 2021 at 19:48)</a>:</h4>
+<p>and thanks again for the bit about why</p>
+<blockquote>
+<p>very hard to come up with a notion of equality that is proof irrelevant, but still computes.<br>
+I don't really understand it, but I think  I can vaguely see that computing with stuff that's all collapsed might be difficult. I also liked</p>
+</blockquote>
+<blockquote>
+<p>The only workaround this I know is to restrict to types with decidable equality. The reason why it works in that case is that there is essentially a unique inhabitant for each identity type, so giving the info that the type is inhabited is really the same as giving the inhabitant.</p>
+</blockquote>
+<p>Many thanks indeed!!! this has been very clarifying. <br>
+by the way, yesterday Dag Prawitz gave a talk in the Nordic Seminar and his talk seemed to be echoing some of the ideas here, because Prawitz seems to know when he thinks bits of a derivation are noise, when we actually need them (of course it might be all my imagination, I keep wishing that people are answering my questions). the talk will be online soon, I'll post the link here when I get it.</p>
+
+
+
+<a name="231539111"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/282140-workshop%3A%20Polynomial%20Functors%20%40%20Topos/topic/Thorsten%20Altenkirch%3A%20%22Containers%20and%20inductive%20types%22/near/231539111" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Conor McBride <a href="https://mattecapu.github.io/ct-zulip-archive/stream/282140-workshop:-Polynomial-Functors-@-Topos/topic/Thorsten.20Altenkirch.3A.20.22Containers.20and.20inductive.20types.22.html#231539111">(Mar 23 2021 at 20:33)</a>:</h4>
+<p>Perhaps I might offer a clue about how proof irrelevance works when it does. It's important to remember that in type theory, we compute under hypotheses which might very well and undetectably be false. You cannot believe <em>proofs</em>, because all lies might be derivable from the current hypotheses. You can believe only <em>canonical</em> proofs. But asking if a proof is canonical is really not treating proofs as irrelevant. So instead of asking "is this proof canonical?" you have to ask "is there a canonical proof of this?". That is to say, you may act in no way that relies on believing a <em>proof</em>, but you may still act in ways which rely on believing your <em>eyes</em>. And that turns out to be enough to compute with proof irrelevant equality, provided the only equations between types are structural on the syntax of types (which is very far from the situation in HoTT).</p>
+
+
+
+<a name="231546099"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/282140-workshop%3A%20Polynomial%20Functors%20%40%20Topos/topic/Thorsten%20Altenkirch%3A%20%22Containers%20and%20inductive%20types%22/near/231546099" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Valeria de Paiva <a href="https://mattecapu.github.io/ct-zulip-archive/stream/282140-workshop:-Polynomial-Functors-@-Topos/topic/Thorsten.20Altenkirch.3A.20.22Containers.20and.20inductive.20types.22.html#231546099">(Mar 23 2021 at 21:23)</a>:</h4>
+<p>Many thanks, this also helps a lot!<br>
+ But</p>
+<blockquote>
+<p>It's important to remember that in type theory, we compute under hypotheses which might very well and undetectably be false. You cannot believe proofs, because all lies might be derivable from the current hypotheses. </p>
+</blockquote>
+<p>is also true of traditional logic, no? if you have deduction under hypotheses <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">Γ</mi><mo>⊢</mo><mi>A</mi></mrow><annotation encoding="application/x-tex">\Gamma\vdash A</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.69444em;vertical-align:0em;"></span><span class="mord">Γ</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">⊢</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathnormal">A</span></span></span></span>, the assumptions in <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">Γ</mi></mrow><annotation encoding="application/x-tex">\Gamma</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord">Γ</span></span></span></span> don't have to be true, I think. </p>
+<p>but yes, traditional logicians don't think canonicity of proofs is important, because the notion of different proofs of the same theorem is something they don't see in the logical formalism.</p>
+<blockquote>
+<p>And that turns out to be enough to compute with proof irrelevant equality, provided the only equations between types are structural on the syntax of types (which is very far from the situation in HoTT).</p>
+</blockquote>
+<p>ok, makes sense.  this (computing with proof irrelevant equality) would be enough for a middle-of-the-road, generic programmer, if we knew that the syntax of types we have is enough to represent everything we want and we knew all the equalities between these types. is it universally assumed that <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">Π</mi><mo separator="true">,</mo><mi mathvariant="normal">Σ</mi></mrow><annotation encoding="application/x-tex">\Pi,\Sigma</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.8777699999999999em;vertical-align:-0.19444em;"></span><span class="mord">Π</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord">Σ</span></span></span></span>,  universes, identity and W-types is all we need? Can you tell me more about where you're putting your 'money' as it were, in terms of how to deal with what I called noise above, the bits of proof-relevant calculations that we want to throw away?</p>
+
+
+
+<a name="231605104"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/282140-workshop%3A%20Polynomial%20Functors%20%40%20Topos/topic/Thorsten%20Altenkirch%3A%20%22Containers%20and%20inductive%20types%22/near/231605104" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Conor McBride <a href="https://mattecapu.github.io/ct-zulip-archive/stream/282140-workshop:-Polynomial-Functors-@-Topos/topic/Thorsten.20Altenkirch.3A.20.22Containers.20and.20inductive.20types.22.html#231605104">(Mar 24 2021 at 09:37)</a>:</h4>
+<p>It's certainly true in most open settings that contexts tell lies. In ordinary logic, though, lies don't have such drastic computational consequences. The challenge is to explain how to make coerce : S = T -&gt; S -&gt; T compute, but also how to make it <em>not</em> compute if you have a bogus proof of X = (X -&gt; X) that you use to fix up the type errors in your favourite non-normalizing term.</p>
+<p>The old and manifestly proof-relevant way to do this is to wait for the proof of S = T to be reflexivity, which guarantees that S and T are <em>definitionally</em> equal, allowing coerce to become id on the nose. This has the unfortunate consequence of nailing the mathematical concept of equality to whatever disappointing accident has been cooked up as the conversion test. Even so, one can rescue this mechanism for proof irrelevance by testing whether S and T are convertible (i.e., the proof <em>could</em> be reflexivity) rather than staring directly at the proof.</p>
+<p>And that step away from the proof is the clue to alternative options. If you can't look at the proof, what can you look at? S, T, and the input of type S. And by "look", here, I mean "test for being canonical". If S and T are canonical with the same head, and the input value is canonical in S, and T admits its constructor, it must be possible to push the coercion under the constructor, componentwise. That's to say, computation proceeds while the equation is <em>plausible</em>, regardless of the proof. There need not even be a proof object. (I hasten to add that a great deal of workaday extensionality is available in such a setting.)</p>
+<p>But what to do if we want some non-syntactic equations between types? Equality, like orange juice, "with bits"? I haven't yet given up on the idea that we might be able to bookkeep where the bits are. Much as with the conversion test, we might circumscribe a universe of mundane sets which <em>obviously</em> admit proof irrelevant equality, where the precise definition of "obvious" is a disappointing accident, but generous enough to be getting along with. It would then be fun to construct a Tarski universe which gives a mundane syntax for interesting types and equalities.</p>
+<p>Whilst there has rightly been a drive to get our hands on higher structure, there is still scope for engineering to exploit its absence.</p>
+
+
+
+<a name="231613557"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/282140-workshop%3A%20Polynomial%20Functors%20%40%20Topos/topic/Thorsten%20Altenkirch%3A%20%22Containers%20and%20inductive%20types%22/near/231613557" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Thibaut Benjamin <a href="https://mattecapu.github.io/ct-zulip-archive/stream/282140-workshop:-Polynomial-Functors-@-Topos/topic/Thorsten.20Altenkirch.3A.20.22Containers.20and.20inductive.20types.22.html#231613557">(Mar 24 2021 at 10:45)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="277574">Conor McBride</span> <a href="#narrow/stream/282140-workshop.3A-Polynomial.20Functors.20.40.20Topos/topic/Thorsten.20Altenkirch.3A.20.22Containers.20and.20inductive.20types.22/near/231605104">said</a>:</p>
+<blockquote>
+<p>It's certainly true in most open settings that contexts tell lies. In ordinary logic, though, lies don't have such drastic computational consequences. The challenge is to explain how to make coerce : S = T -&gt; S -&gt; T compute, but also how to make it <em>not</em> compute if you have a bogus proof of X = (X -&gt; X) that you use to fix up the type errors in your favourite non-normalizing term.</p>
+</blockquote>
+<p>That's a very nice way to put it, thanks for this formulation! </p>
+<p>On a somewhat related note, I would advise some of the recent talks and blog post by Kevin Buzzard, and his experience formalizing algebraic geometry in Lean. He has a lot of discussions about what is the equality mathematicians in their daily practice. It turns out it is kind of a mix between a proof-relevant and a proof-irrelevant one.</p>
+
+
+
+<a name="231613778"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/282140-workshop%3A%20Polynomial%20Functors%20%40%20Topos/topic/Thorsten%20Altenkirch%3A%20%22Containers%20and%20inductive%20types%22/near/231613778" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Thibaut Benjamin <a href="https://mattecapu.github.io/ct-zulip-archive/stream/282140-workshop:-Polynomial-Functors-@-Topos/topic/Thorsten.20Altenkirch.3A.20.22Containers.20and.20inductive.20types.22.html#231613778">(Mar 24 2021 at 10:47)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="276656">Valeria de Paiva</span> <a href="#narrow/stream/282140-workshop.3A-Polynomial.20Functors.20.40.20Topos/topic/Thorsten.20Altenkirch.3A.20.22Containers.20and.20inductive.20types.22/near/231532523">said</a>:</p>
+<blockquote>
+<p>by the way, yesterday Dag Prawitz gave a talk in the Nordic Seminar and his talk seemed to be echoing some of the ideas here, because Prawitz seems to know when he thinks bits of a derivation are noise, when we actually need them (of course it might be all my imagination, I keep wishing that people are answering my questions). the talk will be online soon, I'll post the link here when I get it.</p>
+</blockquote>
+<p>That's great, thanks a lot, I would be very interested to watch it</p>
+
+
+
+<a name="231641623"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/282140-workshop%3A%20Polynomial%20Functors%20%40%20Topos/topic/Thorsten%20Altenkirch%3A%20%22Containers%20and%20inductive%20types%22/near/231641623" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Valeria de Paiva <a href="https://mattecapu.github.io/ct-zulip-archive/stream/282140-workshop:-Polynomial-Functors-@-Topos/topic/Thorsten.20Altenkirch.3A.20.22Containers.20and.20inductive.20types.22.html#231641623">(Mar 24 2021 at 14:19)</a>:</h4>
+<p>Lovely, Connor! many thanks.</p>
+<blockquote>
+<p>Equality, like orange juice, "with bits"</p>
+</blockquote>
+<p>yes! at least this is what I thought we wanted to have, from the beginning. </p>
+<p>but I had never thought about the not-computing that you mention here.</p>
+<blockquote>
+<p>The challenge is to explain how to make coerce : S = T -&gt; S -&gt; T compute, but also how to make it not compute if you have a bogus proof of X = (X -&gt; X) that you use to fix up the type errors in your favourite non-normalizing term.</p>
+</blockquote>
+<p>great to hear that</p>
+<blockquote>
+<p>I haven't yet given up on the idea that we might be able to bookkeep where the bits are. </p>
+</blockquote>
+<p>looking forward to seeing more about this, in due course.</p>
+<blockquote>
+<p>Whilst there has rightly been a drive to get our hands on higher structure, there is still scope for engineering to exploit its absence.</p>
+</blockquote>
+<p>hear, hear!</p>
+
+
+
+<a name="231656378"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/282140-workshop%3A%20Polynomial%20Functors%20%40%20Topos/topic/Thorsten%20Altenkirch%3A%20%22Containers%20and%20inductive%20types%22/near/231656378" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Valeria de Paiva <a href="https://mattecapu.github.io/ct-zulip-archive/stream/282140-workshop:-Polynomial-Functors-@-Topos/topic/Thorsten.20Altenkirch.3A.20.22Containers.20and.20inductive.20types.22.html#231656378">(Mar 24 2021 at 15:41)</a>:</h4>
+<p>I'm posting here the site for Prawitz's talk, just in case <a href="https://scandinavianlogic.org/2021-03-17-NOL-Seminar-Dag-Prawitz.html">https://scandinavianlogic.org/2021-03-17-NOL-Seminar-Dag-Prawitz.html</a></p>
+
+
+
+{% endraw %}
+
+<hr><p>Last updated: Feb 08 2022 at 00:29 UTC</p>

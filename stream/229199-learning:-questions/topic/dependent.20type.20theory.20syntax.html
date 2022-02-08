@@ -1,0 +1,751 @@
+---
+layout: archive
+title: Zulip Chat Archive
+permalink: /stream/229199-learning:-questions/topic/dependent.20type.20theory.20syntax.html
+---
+
+<h2>Stream: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/index.html">learning: questions</a></h2>
+<h3>Topic: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/dependent.20type.20theory.20syntax.html">dependent type theory syntax</a></h3>
+
+<hr>
+
+<base href="https://categorytheory.zulipchat.com/">
+
+{% raw %}
+
+<a name="266886870"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/dependent%20type%20theory%20syntax/near/266886870" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Peiyuan Zhu <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/dependent.20type.20theory.20syntax.html#266886870">(Jan 05 2022 at 01:23)</a>:</h4>
+<p>What are the levels about? From the previous paragraph the levels seem to be related to one another by questions that reduces more complicated structures to simpler ones. It's said 'what homotopy type theory<br>
+does is take observations such as these not merely as an analogy, but as the first steps of a<br>
+series of levels.' which seems to be talking about the very fundamental of how intuitionistic mathematics work. <a href="/user_uploads/21317/uAu9nqZFET3Fk7TS-0BenyOu/image.png">image.png</a></p>
+<div class="message_inline_image"><a href="/user_uploads/21317/uAu9nqZFET3Fk7TS-0BenyOu/image.png" title="image.png"><img src="/user_uploads/21317/uAu9nqZFET3Fk7TS-0BenyOu/image.png"></a></div>
+
+
+
+<a name="266888459"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/dependent%20type%20theory%20syntax/near/266888459" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/dependent.20type.20theory.20syntax.html#266888459">(Jan 05 2022 at 01:51)</a>:</h4>
+<p>I find it very confusing to have a single topic called "beginner questions" in which lots of very different questions and their answers get mixed together.  Wouldn't it make more sense to open a separate topic for each question?</p>
+
+
+
+<a name="266890597"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/dependent%20type%20theory%20syntax/near/266890597" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Peiyuan Zhu <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/dependent.20type.20theory.20syntax.html#266890597">(Jan 05 2022 at 02:30)</a>:</h4>
+<p>Yea I guess maybe I can open a new topic for dependent types?</p>
+
+
+
+<a name="266923343"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/dependent%20type%20theory%20syntax/near/266923343" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Morgan Rogers (he/him) <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/dependent.20type.20theory.20syntax.html#266923343">(Jan 05 2022 at 11:20)</a>:</h4>
+<p>I've moved this discussion to such a topic on your behalf :)</p>
+
+
+
+<a name="266965869"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/dependent%20type%20theory%20syntax/near/266965869" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/dependent.20type.20theory.20syntax.html#266965869">(Jan 05 2022 at 17:40)</a>:</h4>
+<p>You have a lot of questions; I'll try to answer some of them.</p>
+
+
+
+<a name="266965892"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/dependent%20type%20theory%20syntax/near/266965892" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/dependent.20type.20theory.20syntax.html#266965892">(Jan 05 2022 at 17:40)</a>:</h4>
+<p><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>:</mo><mi>A</mi><mo>⊢</mo><mi>t</mi><mo>:</mo><mi>B</mi></mrow><annotation encoding="application/x-tex">x:A \vdash t:B</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord mathnormal">x</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">:</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord mathnormal">A</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">⊢</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6151em;"></span><span class="mord mathnormal">t</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">:</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.05017em;">B</span></span></span></span> should be parsed as <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>:</mo><mi>A</mi><mo stretchy="false">)</mo><mo>⊢</mo><mo stretchy="false">(</mo><mi>t</mi><mo>:</mo><mi>B</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(x:A) \vdash (t:B)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord mathnormal">x</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">:</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal">A</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">⊢</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord mathnormal">t</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">:</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.05017em;">B</span><span class="mclose">)</span></span></span></span>.</p>
+
+
+
+<a name="266965923"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/dependent%20type%20theory%20syntax/near/266965923" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/dependent.20type.20theory.20syntax.html#266965923">(Jan 05 2022 at 17:40)</a>:</h4>
+<p>More generally, <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>:</mo><mi>A</mi><mo separator="true">,</mo><mi>y</mi><mo>:</mo><mi>B</mi><mo>⊢</mo><mi>t</mi><mo>:</mo><mi>C</mi></mrow><annotation encoding="application/x-tex">x:A, y:B \vdash t:C</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord mathnormal">x</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">:</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.8778em;vertical-align:-0.1944em;"></span><span class="mord mathnormal">A</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal" style="margin-right:0.03588em;">y</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">:</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord mathnormal" style="margin-right:0.05017em;">B</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">⊢</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6151em;"></span><span class="mord mathnormal">t</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">:</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.07153em;">C</span></span></span></span> should be parsed as <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mo stretchy="false">(</mo><mi>x</mi><mo>:</mo><mi>A</mi><mo stretchy="false">)</mo><mo separator="true">,</mo><mo stretchy="false">(</mo><mi>y</mi><mo>:</mo><mi>B</mi><mo stretchy="false">)</mo><mo stretchy="false">)</mo><mo>⊢</mo><mo stretchy="false">(</mo><mi>t</mi><mo>:</mo><mi>C</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">((x:A), (y:B))\vdash (t:C)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">((</span><span class="mord mathnormal">x</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">:</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal">A</span><span class="mclose">)</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.03588em;">y</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">:</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.05017em;">B</span><span class="mclose">))</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">⊢</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord mathnormal">t</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">:</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.07153em;">C</span><span class="mclose">)</span></span></span></span>.</p>
+
+
+
+<a name="266965959"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/dependent%20type%20theory%20syntax/near/266965959" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/dependent.20type.20theory.20syntax.html#266965959">(Jan 05 2022 at 17:41)</a>:</h4>
+<p>The standard interface to Agda is the Emacs mode.</p>
+
+
+
+<a name="266966128"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/dependent%20type%20theory%20syntax/near/266966128" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/dependent.20type.20theory.20syntax.html#266966128">(Jan 05 2022 at 17:42)</a>:</h4>
+<p>The colon in type theory is like the set-membership sign <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>∈</mo></mrow><annotation encoding="application/x-tex">\in</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.5782em;vertical-align:-0.0391em;"></span><span class="mrel">∈</span></span></span></span>, but differs in that it is a judgment rather than a proposition.  That means that the type an element belongs to is an intrinsic property of it, and (with certain exceptions) is unique, whereas in set theory one can consider elements separately from sets and ask which set or sets an element might belong to.</p>
+
+
+
+<a name="266966187"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/dependent%20type%20theory%20syntax/near/266966187" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/dependent.20type.20theory.20syntax.html#266966187">(Jan 05 2022 at 17:42)</a>:</h4>
+<p>What text are you reading?  What others have you looked at?  There are plenty of good introductions to dependent type theory out there that would answer many of your other questions.</p>
+
+
+
+<a name="267003660"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/dependent%20type%20theory%20syntax/near/267003660" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Peiyuan Zhu <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/dependent.20type.20theory.20syntax.html#267003660">(Jan 05 2022 at 22:55)</a>:</h4>
+<p>I'm currently reading modal HoTT by David Corfield, I think philosophy is a good context that I can grasp, but when he talked about algebraic geometry I had no idea how logic and geometry are related to one another, and how to write this in program</p>
+
+
+
+<a name="267003933"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/dependent%20type%20theory%20syntax/near/267003933" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Peiyuan Zhu <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/dependent.20type.20theory.20syntax.html#267003933">(Jan 05 2022 at 22:58)</a>:</h4>
+<p>My primary interest in to understand imprecise probabilities with modal HoTT <a href="https://www.researchgate.net/publication/328494616_Visions_of_a_generalized_probability_theory">https://www.researchgate.net/publication/328494616_Visions_of_a_generalized_probability_theory</a></p>
+
+
+
+<a name="267004500"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/dependent%20type%20theory%20syntax/near/267004500" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Peiyuan Zhu <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/dependent.20type.20theory.20syntax.html#267004500">(Jan 05 2022 at 23:04)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="276777">Mike Shulman</span> <a href="#narrow/stream/229199-learning.3A-questions/topic/dependent.20type.20theory.20syntax/near/266966128">said</a>:</p>
+<blockquote>
+<p>The colon in type theory is like the set-membership sign <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>∈</mo></mrow><annotation encoding="application/x-tex">\in</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.5782em;vertical-align:-0.0391em;"></span><span class="mrel">∈</span></span></span></span>, but differs in that it is a judgment rather than a proposition.  That means that the type an element belongs to is an intrinsic property of it, and (with certain exceptions) is unique, whereas in set theory one can consider elements separately from sets and ask which set or sets an element might belong to.</p>
+</blockquote>
+<p>So for imprecise probability, a judgement is exactly an assertion that the truth is in some subset of a set, except the judgement is probabilistic. The Dempster-Shafer rule combines the judgements into one assuming probabilistic independence. The combined outcome is accessed upper-and-lower intervals by taking a set of interest that intersects or contains these sets. There's also this fibre bundle structure in the projection algorithm that I believe is highly similar to what I read in Modal HoTT.</p>
+
+
+
+<a name="267005109"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/dependent%20type%20theory%20syntax/near/267005109" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/dependent.20type.20theory.20syntax.html#267005109">(Jan 05 2022 at 23:10)</a>:</h4>
+<blockquote>
+<p>when he talked about algebraic geometry I had no idea how logic and geometry are related to one another, and how to write this in program</p>
+</blockquote>
+<p>This connection is what topos theory is all about.</p>
+
+
+
+<a name="267005624"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/dependent%20type%20theory%20syntax/near/267005624" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/dependent.20type.20theory.20syntax.html#267005624">(Jan 05 2022 at 23:15)</a>:</h4>
+<p>Mac Lane and Moerdijk's book <em>Sheaves in Geometry and Logic</em> is the obvious book on that.</p>
+
+
+
+<a name="267006270"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/dependent%20type%20theory%20syntax/near/267006270" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Peiyuan Zhu <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/dependent.20type.20theory.20syntax.html#267006270">(Jan 05 2022 at 23:22)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="275920">John Baez</span> <a href="#narrow/stream/229199-learning.3A-questions/topic/dependent.20type.20theory.20syntax/near/267005624">said</a>:</p>
+<blockquote>
+<p>Mac Lane and Moerdijk's book <em>Sheaves in Geometry and Logic</em> is the obvious book on that.</p>
+</blockquote>
+<p>What kind of geometry background is assumed for a book like this? I only know bit of Riemanian geometry and Euclidean geometry, which can be very different I think. Also what kind of logic background? I only know standard math curriculum such as Boolean logic, set theory, truth table, and quantifier. I guess I shouldn't assume somehow Euclidean geometry has some deep connection with Boolean logic.</p>
+
+
+
+<a name="267006881"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/dependent%20type%20theory%20syntax/near/267006881" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/dependent.20type.20theory.20syntax.html#267006881">(Jan 05 2022 at 23:29)</a>:</h4>
+<p>Looking at the book, it seems you'll only need to know some basic stuff about manifolds.</p>
+
+
+
+<a name="267006952"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/dependent%20type%20theory%20syntax/near/267006952" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Zhen Lin Low <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/dependent.20type.20theory.20syntax.html#267006952">(Jan 05 2022 at 23:30)</a>:</h4>
+<p>I don't think you even really need to know manifolds, just topological spaces.</p>
+
+
+
+<a name="267007061"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/dependent%20type%20theory%20syntax/near/267007061" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/dependent.20type.20theory.20syntax.html#267007061">(Jan 05 2022 at 23:31)</a>:</h4>
+<p>Well, in Section II.3, "Sheaves and manifolds", the book gives examples of sheaves on manifolds.   One could skip that section but it's a bit sad to study sheaves without many interesting examples.   Luckily, since Peiyuan says he knows some Riemannian geometry he presumably knows a bit about manifolds.</p>
+
+
+
+<a name="267007383"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/dependent%20type%20theory%20syntax/near/267007383" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/dependent.20type.20theory.20syntax.html#267007383">(Jan 05 2022 at 23:35)</a>:</h4>
+<p>Looking a bit harder at this book, I see it doesn't spend a lot of time explaining how topos theory is connected to algebraic geometry, but it also doesn't assume prior knowledge of algebraic geometry.   There's a brief introduction in section III.3, "The Zariski site".</p>
+
+
+
+<a name="267007566"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/dependent%20type%20theory%20syntax/near/267007566" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Zhen Lin Low <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/dependent.20type.20theory.20syntax.html#267007566">(Jan 05 2022 at 23:37)</a>:</h4>
+<p>I think that's about as much as you could hope to cover without prerequisite knowledge about schemes...</p>
+
+
+
+<a name="267007733"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/dependent%20type%20theory%20syntax/near/267007733" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/dependent.20type.20theory.20syntax.html#267007733">(Jan 05 2022 at 23:39)</a>:</h4>
+<p>Yeah.   And I don't think Peiyuan actually wants to learn algebraic geometry, which is sort of a serious job in itself.</p>
+
+
+
+<a name="267007957"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/dependent%20type%20theory%20syntax/near/267007957" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Zhen Lin Low <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/dependent.20type.20theory.20syntax.html#267007957">(Jan 05 2022 at 23:42)</a>:</h4>
+<p>It's been close to 10 years since I read the book, but what I am sure about is that it is far more important to have a solid grounding in category theory – limits, colimits, functors, concrete categories of common algebraic structures – than detailed knowledge of general topology or manifolds or logic.</p>
+
+
+
+<a name="267008180"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/dependent%20type%20theory%20syntax/near/267008180" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Peiyuan Zhu <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/dependent.20type.20theory.20syntax.html#267008180">(Jan 05 2022 at 23:45)</a>:</h4>
+<p>I see. I guess when I read it the question that I should ask about is whether imprecise probability can be written in this language like this but also whether there shall be some new mathematical device to be invented to talk about it</p>
+
+
+
+<a name="267008219"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/dependent%20type%20theory%20syntax/near/267008219" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Peiyuan Zhu <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/dependent.20type.20theory.20syntax.html#267008219">(Jan 05 2022 at 23:45)</a>:</h4>
+<p>Just this murder trial example of imprecise probability make it a lot like what topos theory is about <a href="/user_uploads/21317/G87H_e19GRVlHj0BFndYdjOA/image.png">image.png</a></p>
+<div class="message_inline_image"><a href="/user_uploads/21317/G87H_e19GRVlHj0BFndYdjOA/image.png" title="image.png"><img src="/user_uploads/21317/G87H_e19GRVlHj0BFndYdjOA/image.png"></a></div>
+
+
+
+<a name="267009409"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/dependent%20type%20theory%20syntax/near/267009409" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/dependent.20type.20theory.20syntax.html#267009409">(Jan 05 2022 at 23:59)</a>:</h4>
+<p>It would be more efficient to talk to someone who knows topos theory, how topos theory has been used in fuzzy logic, etc.</p>
+
+
+
+<a name="267009577"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/dependent%20type%20theory%20syntax/near/267009577" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/dependent.20type.20theory.20syntax.html#267009577">(Jan 06 2022 at 00:00)</a>:</h4>
+<p>However, finding the right people and convincing them to talk can be a bit hard sometimes.</p>
+
+
+
+<a name="267009634"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/dependent%20type%20theory%20syntax/near/267009634" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Peiyuan Zhu <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/dependent.20type.20theory.20syntax.html#267009634">(Jan 06 2022 at 00:01)</a>:</h4>
+<p>Interesting. Are you saying someone must have done this already?</p>
+
+
+
+<a name="267009962"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/dependent%20type%20theory%20syntax/near/267009962" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/dependent.20type.20theory.20syntax.html#267009962">(Jan 06 2022 at 00:04)</a>:</h4>
+<p>No, I'm just saying that there exist people who could figure this out 100 times faster than you, so talking to them - repeatedly, not just once - could greatly accelerate your project.</p>
+
+
+
+<a name="267010002"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/dependent%20type%20theory%20syntax/near/267010002" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Peiyuan Zhu <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/dependent.20type.20theory.20syntax.html#267010002">(Jan 06 2022 at 00:04)</a>:</h4>
+<p>I see, thanks!</p>
+
+
+
+<a name="267010015"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/dependent%20type%20theory%20syntax/near/267010015" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/dependent.20type.20theory.20syntax.html#267010015">(Jan 06 2022 at 00:04)</a>:</h4>
+<p>(This is true of many people's projects - I'm not trying to be mean to you!)</p>
+
+
+
+<a name="267010226"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/dependent%20type%20theory%20syntax/near/267010226" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/dependent.20type.20theory.20syntax.html#267010226">(Jan 06 2022 at 00:07)</a>:</h4>
+<p>Is this paper at all helpful?</p>
+<p><a href="https://www.sipta.org/isipta19/contributions/crane19.pdf">https://www.sipta.org/isipta19/contributions/crane19.pdf</a></p>
+
+
+
+<a name="267010251"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/dependent%20type%20theory%20syntax/near/267010251" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/dependent.20type.20theory.20syntax.html#267010251">(Jan 06 2022 at 00:07)</a>:</h4>
+<p>I'm not claiming it is... it's just what showed up when I did a one-minute search.</p>
+
+
+
+<a name="267010581"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/dependent%20type%20theory%20syntax/near/267010581" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Peiyuan Zhu <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/dependent.20type.20theory.20syntax.html#267010581">(Jan 06 2022 at 00:10)</a>:</h4>
+<p>Yeah that sounds like it, I guess I didn't expect a paper with such title would be relevant (also might have filtered out a lot of formal reasoning paper because I'm not familiar with the syntax, but it doesn't mean I don't need to get familiar with it)</p>
+
+
+
+<a name="267010602"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/dependent%20type%20theory%20syntax/near/267010602" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Peiyuan Zhu <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/dependent.20type.20theory.20syntax.html#267010602">(Jan 06 2022 at 00:11)</a>:</h4>
+<p>Thanks a lot</p>
+
+
+
+<a name="267010655"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/dependent%20type%20theory%20syntax/near/267010655" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Peiyuan Zhu <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/dependent.20type.20theory.20syntax.html#267010655">(Jan 06 2022 at 00:11)</a>:</h4>
+<p>It really speeds up 5e10 times faster</p>
+
+
+
+<a name="267011055"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/dependent%20type%20theory%20syntax/near/267011055" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Fawzi Hreiki <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/dependent.20type.20theory.20syntax.html#267011055">(Jan 06 2022 at 00:15)</a>:</h4>
+<p>Topos theory relates to geometry insofar as it gives a language in which to talk about local behaviour and glueing</p>
+
+
+
+<a name="267011160"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/dependent%20type%20theory%20syntax/near/267011160" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Fawzi Hreiki <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/dependent.20type.20theory.20syntax.html#267011160">(Jan 06 2022 at 00:16)</a>:</h4>
+<p>Which is of course prevalent all throughout topology and geometry.</p>
+
+
+
+<a name="267011409"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/dependent%20type%20theory%20syntax/near/267011409" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Fawzi Hreiki <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/dependent.20type.20theory.20syntax.html#267011409">(Jan 06 2022 at 00:19)</a>:</h4>
+<p>A good starting point is the definition of a smooth manifold as a certain kind of locally ringed space.</p>
+
+
+
+<a name="267011759"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/dependent%20type%20theory%20syntax/near/267011759" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Peiyuan Zhu <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/dependent.20type.20theory.20syntax.html#267011759">(Jan 06 2022 at 00:23)</a>:</h4>
+<p>Hmm... this sounds like what you mean <a href="/user_uploads/21317/7d5bsFhhtrzVCWXEefwdXTvg/image.png">image.png</a></p>
+<div class="message_inline_image"><a href="/user_uploads/21317/7d5bsFhhtrzVCWXEefwdXTvg/image.png" title="image.png"><img src="/user_uploads/21317/7d5bsFhhtrzVCWXEefwdXTvg/image.png"></a></div>
+
+
+
+<a name="267011882"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/dependent%20type%20theory%20syntax/near/267011882" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Fawzi Hreiki <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/dependent.20type.20theory.20syntax.html#267011882">(Jan 06 2022 at 00:24)</a>:</h4>
+<p>Yes it seems to be. The reason this approach is important is that it generalises very quickly to many different kinds of ‘glued spaces’ such as complex-analytic spaces, schemes, etc</p>
+
+
+
+<a name="267012009"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/dependent%20type%20theory%20syntax/near/267012009" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Fawzi Hreiki <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/dependent.20type.20theory.20syntax.html#267012009">(Jan 06 2022 at 00:26)</a>:</h4>
+<p>The correct framework for such ‘function structured spaces’ is the theory of ringed toposes.</p>
+
+
+
+<a name="267037781"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/dependent%20type%20theory%20syntax/near/267037781" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Peiyuan Zhu <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/dependent.20type.20theory.20syntax.html#267037781">(Jan 06 2022 at 08:53)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="275920">John Baez</span> <a href="#narrow/stream/229199-learning.3A-questions/topic/dependent.20type.20theory.20syntax/near/267007733">said</a>:</p>
+<blockquote>
+<p>Yeah.   And I don't think Peiyuan actually wants to learn algebraic geometry, which is sort of a serious job in itself.</p>
+</blockquote>
+<p>When I'm reading HoTT, I found it hard to understand the 'homotopy' part. How come topology, paths, groupoid, fiber section one of a sudden become relevant? (there hasn't been a definition of manifold appearing yet) Are we saying a program is really different algebraic structures? I think to understand this better I'll have to seriously study algebraic geometry, although it can be of lower priority for now before I pick up/formalized the basics. For example, I would ask where is topology when I'm proving a fibonacci sequence, and what are the paths are they just flow of inference or intuitions, and why use groupoid instead of group, what's the use of fiber section here... I think these cannot be explained easily without algebraic geometry? I found this discussion really helpful, so I can really pinpoint what I don't know. I think another good starting point for me is to write Boole's Investigation into Laws of thoughts in the language of algebraic geometry.</p>
+
+
+
+<a name="267038039"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/dependent%20type%20theory%20syntax/near/267038039" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Zhen Lin Low <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/dependent.20type.20theory.20syntax.html#267038039">(Jan 06 2022 at 08:57)</a>:</h4>
+<p>It is an analogy (that can be made precise). You don't have to think too hard about it now. Algebraic geometry is not relevant.</p>
+
+
+
+<a name="267038154"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/dependent%20type%20theory%20syntax/near/267038154" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Peiyuan Zhu <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/dependent.20type.20theory.20syntax.html#267038154">(Jan 06 2022 at 08:58)</a>:</h4>
+<p>I think it can be relevant some day no? What if thermodynamics can be written in the language of algebraic geometry? That would make all the difference.</p>
+
+
+
+<a name="267038342"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/dependent%20type%20theory%20syntax/near/267038342" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Zhen Lin Low <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/dependent.20type.20theory.20syntax.html#267038342">(Jan 06 2022 at 09:00)</a>:</h4>
+<p>Let me add some words. Algebraic geometry is not relevant to the interpretation of HoTT in ∞-groupoids.</p>
+
+
+
+<a name="267038545"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/dependent%20type%20theory%20syntax/near/267038545" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Peiyuan Zhu <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/dependent.20type.20theory.20syntax.html#267038545">(Jan 06 2022 at 09:03)</a>:</h4>
+<p>I think it may still be important to really understand it no? By understanding it kinda means that all things considered.</p>
+
+
+
+<a name="267038581"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/dependent%20type%20theory%20syntax/near/267038581" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Peiyuan Zhu <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/dependent.20type.20theory.20syntax.html#267038581">(Jan 06 2022 at 09:03)</a>:</h4>
+<p>For example, I cannot see why group is not enough</p>
+
+
+
+<a name="267038669"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/dependent%20type%20theory%20syntax/near/267038669" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Zhen Lin Low <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/dependent.20type.20theory.20syntax.html#267038669">(Jan 06 2022 at 09:04)</a>:</h4>
+<p>Algebraic geometry does not (alone) hold the answer to that. Algebraic topology would be a better place to look.</p>
+
+
+
+<a name="267038817"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/dependent%20type%20theory%20syntax/near/267038817" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Peiyuan Zhu <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/dependent.20type.20theory.20syntax.html#267038817">(Jan 06 2022 at 09:07)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="416301">Zhen Lin Low</span> <a href="#narrow/stream/229199-learning.3A-questions/topic/dependent.20type.20theory.20syntax/near/267038039">said</a>:</p>
+<blockquote>
+<p>It is an analogy (that can be made precise). You don't have to think too hard about it now. Algebraic geometry is not relevant.</p>
+</blockquote>
+<p>I was hoping analogy will end-up being something fundamental, but maybe this is not true, at least at this point in time</p>
+
+
+
+<a name="267038896"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/dependent%20type%20theory%20syntax/near/267038896" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Peiyuan Zhu <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/dependent.20type.20theory.20syntax.html#267038896">(Jan 06 2022 at 09:08)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="416301">Zhen Lin Low</span> <a href="#narrow/stream/229199-learning.3A-questions/topic/dependent.20type.20theory.20syntax/near/267038669">said</a>:</p>
+<blockquote>
+<p>Algebraic geometry does not (alone) hold the answer to that. Algebraic topology would be a better place to look.</p>
+</blockquote>
+<p>Can you elaborate on the difference? Are they trying to answer fundamentally different questions, if so what are the questions that they're trying to answer that are different</p>
+
+
+
+<a name="267039096"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/dependent%20type%20theory%20syntax/near/267039096" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Zhen Lin Low <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/dependent.20type.20theory.20syntax.html#267039096">(Jan 06 2022 at 09:11)</a>:</h4>
+<p>Algebraic geometry and algebraic topology are different subjects, and fundamentally about different things (varieties vs topological spaces). In modern research they use some of the same tools so you will see the same language being used, but the roots are different.</p>
+
+
+
+<a name="267055850"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/dependent%20type%20theory%20syntax/near/267055850" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Fawzi Hreiki <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/dependent.20type.20theory.20syntax.html#267055850">(Jan 06 2022 at 12:36)</a>:</h4>
+<p>A simple explanation is that algebraic topology studies spaces by associating to them algebraic invariants, while algebraic geometry builds spaces from algebraic equations and structures.</p>
+
+
+
+<a name="267105071"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/dependent%20type%20theory%20syntax/near/267105071" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Peiyuan Zhu <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/dependent.20type.20theory.20syntax.html#267105071">(Jan 06 2022 at 19:45)</a>:</h4>
+<p>Ahh I think Galois theory might have much more to do with this question than the theories that I just looked at</p>
+
+
+
+<a name="267105094"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/dependent%20type%20theory%20syntax/near/267105094" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Peiyuan Zhu <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/dependent.20type.20theory.20syntax.html#267105094">(Jan 06 2022 at 19:46)</a>:</h4>
+<p><a href="https://link.springer.com/chapter/10.1007/978-1-4020-1898-5_1">https://link.springer.com/chapter/10.1007/978-1-4020-1898-5_1</a></p>
+
+
+
+<a name="267136558"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/dependent%20type%20theory%20syntax/near/267136558" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/dependent.20type.20theory.20syntax.html#267136558">(Jan 07 2022 at 00:43)</a>:</h4>
+<p>Peiyuan wrote:</p>
+<blockquote>
+<p>When I'm reading HoTT, I found it hard to understand the 'homotopy' part. How come topology, paths, groupoid, fiber, section one of a sudden become relevant? (there hasn't been a definition of manifold appearing yet) Are we saying a program is really different algebraic structures? I think to understand this better I'll have to seriously study algebraic geometry [...]</p>
+</blockquote>
+<p>That's a strange last sentence, because all the concept you just mentioned are about <em>topology</em>: topology, paths, groupoid, fiber, section.  To understand homotopy type theory you need to understand how <em>topology</em> is connected to logic.  Algebraic geometry is not so relevant here!</p>
+
+
+
+<a name="267136942"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/dependent%20type%20theory%20syntax/near/267136942" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/dependent.20type.20theory.20syntax.html#267136942">(Jan 07 2022 at 00:46)</a>:</h4>
+<blockquote>
+<p>(there hasn't been a definition of manifold appearing yet)</p>
+</blockquote>
+<p>To be more specific, to understand HoTT you need to understand how a specific aspect of topology is connected to logic: <em>homotopy theory</em>.   Homotopy theory is not primarily about manifolds, so you shouldn't care about manifolds too much when learning HoTT.</p>
+<p>I imagine the HoTT book talks quite a lot about homotopy theory and logic, and how they're connected.</p>
+
+
+
+<a name="267142368"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/dependent%20type%20theory%20syntax/near/267142368" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Peiyuan Zhu <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/dependent.20type.20theory.20syntax.html#267142368">(Jan 07 2022 at 02:00)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="275920">John Baez</span> <a href="#narrow/stream/229199-learning.3A-questions/topic/dependent.20type.20theory.20syntax/near/267136558">said</a>:</p>
+<blockquote>
+<p>Peiyuan wrote:</p>
+<blockquote>
+<p>When I'm reading HoTT, I found it hard to understand the 'homotopy' part. How come topology, paths, groupoid, fiber, section one of a sudden become relevant? (there hasn't been a definition of manifold appearing yet) Are we saying a program is really different algebraic structures? I think to understand this better I'll have to seriously study algebraic geometry [...]</p>
+</blockquote>
+<p>That's a strange last sentence, because all the concept you just mentioned are about <em>topology</em>: topology, paths, groupoid, fiber, section.  To understand homotopy type theory you need to understand how <em>topology</em> is connected to logic.  Algebraic geometry is not so relevant here!</p>
+</blockquote>
+<p>Is there something like 'how algebra is connected to logic'? I didn't find anything like this but the book I found in the previous post in Galois theory seems to included all important people, or is this assumed to be known by everyone, because logic IS algebra?</p>
+
+
+
+<a name="267145020"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/dependent%20type%20theory%20syntax/near/267145020" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Zhen Lin Low <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/dependent.20type.20theory.20syntax.html#267145020">(Jan 07 2022 at 02:47)</a>:</h4>
+<p>I wouldn't say that. Algebra is a tool used to study logic. Logic is sometimes used to study algebra.</p>
+
+
+
+<a name="267145378"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/dependent%20type%20theory%20syntax/near/267145378" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Zhen Lin Low <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/dependent.20type.20theory.20syntax.html#267145378">(Jan 07 2022 at 02:53)</a>:</h4>
+<p>I notice you are asking a lot of "how is X connected to Y" questions. Here's some unsolicited advice: you should first spend some time learning the basics of either X or Y, or better yet, both. Because if you don't, honest answers are likely to fly over your head and not be very convincing.</p>
+
+
+
+<a name="267148289"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/dependent%20type%20theory%20syntax/near/267148289" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/dependent.20type.20theory.20syntax.html#267148289">(Jan 07 2022 at 03:45)</a>:</h4>
+<blockquote>
+<p>Is there something like 'how algebra is connected to logic'?</p>
+</blockquote>
+<p>Yes, there are several subjects that study this.   You can probably name any two big subjects like algebra, geometry, logic, topology, analysis and find a bunch of work connecting them.   E.g. algebraic geometry, geometric algebra, etc. etc. etc.</p>
+
+
+
+<a name="267148851"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/dependent%20type%20theory%20syntax/near/267148851" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Peiyuan Zhu <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/dependent.20type.20theory.20syntax.html#267148851">(Jan 07 2022 at 03:56)</a>:</h4>
+<p>Hmm… I see, I’m just trying to find out which one is the most important to give a solid understanding of semiotics… because by looking at that book it seems that some people might just say they’re ‘obviously’ consisting of one lines of thought in history, just in the way how they’re written makes me think that there’s a very deep reason that they’re put together</p>
+
+
+
+<a name="267148858"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/dependent%20type%20theory%20syntax/near/267148858" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Peiyuan Zhu <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/dependent.20type.20theory.20syntax.html#267148858">(Jan 07 2022 at 03:56)</a>:</h4>
+<p><a href="/user_uploads/21317/B_V1hTRirKx2dXwy1Q3X1bc9/7CFAE4B1-5636-4FC4-B0E4-5ECD5B889D7D.png">7CFAE4B1-5636-4FC4-B0E4-5ECD5B889D7D.png</a></p>
+<div class="message_inline_image"><a href="/user_uploads/21317/B_V1hTRirKx2dXwy1Q3X1bc9/7CFAE4B1-5636-4FC4-B0E4-5ECD5B889D7D.png" title="7CFAE4B1-5636-4FC4-B0E4-5ECD5B889D7D.png"><img src="/user_uploads/21317/B_V1hTRirKx2dXwy1Q3X1bc9/7CFAE4B1-5636-4FC4-B0E4-5ECD5B889D7D.png"></a></div>
+
+
+
+<a name="267148978"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/dependent%20type%20theory%20syntax/near/267148978" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/dependent.20type.20theory.20syntax.html#267148978">(Jan 07 2022 at 03:59)</a>:</h4>
+<p>What book is this from?  This page is just a long list of related ideas.  I think it's better to focus on something concrete.  For example, most of the ideas on this list are connected to 'adjoint functors' - one of the most important concepts in category theory.    If you want to do anything with category theory you need to understand adjoint functors.   So you might try to learn about those.</p>
+
+
+
+<a name="267149810"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/dependent%20type%20theory%20syntax/near/267149810" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Peiyuan Zhu <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/dependent.20type.20theory.20syntax.html#267149810">(Jan 07 2022 at 04:15)</a>:</h4>
+<p>It’s from a book with topic: Adjunctions and Galois Connections: Origins, History and Development <a href="https://link.springer.com/chapter/10.1007/978-1-4020-1898-5_1">https://link.springer.com/chapter/10.1007/978-1-4020-1898-5_1</a></p>
+<p>The reason that I encountered this chapter is while reading Laws of Thoughts on probabilities by George Boole, there are sets of probabilistic algebraic equations that comes from everyday language that needs to be approximated by intervals, so I was thinking whether there is such a numerical method that is well-known in mathematics that give these interval estimates to large sets of algebraic equations or whether anyone has studied the algebraic structures of these type of equations. </p>
+<p>The theory of imprecise probabilities talks a lot about lattices but the algebraic side is not discussed very often (not even was pointed out in any papers I read, mostly dived directly into a setting of a power set and probabilistic mappings into the power set). Galois connection seems to be the basis of any numerical algorithms (I even saw a paper on second law of thermodynamics being a special Galois connection), or at least in my superficial knowledge has something to do with solving algebraic equations. So somehow this paper is wrapping everything together. But I also don’t know how complex a math topic like this is and whether it will be helpful for my understanding. Not sure if my approach is the best to do this. </p>
+<p>While the HoTT book (along with the book John sent yesterday) seems has a lot to say about algebraic geometry (or topology?), I wonder if that ‘algebraic’ really has anything to do with the systems of probabilistic equations that I’m trying to understand. There’s also this book Geometry of Uncertainty that talks about geometry but I’m still trying to see if it has anything to do with the ‘geometry’ or ‘topology’ in HoTT. </p>
+<p>But what seems certain is that imprecise probabilities such as possibility theory must be something to do with toposes, I’m just trying to dig that out.</p>
+
+
+
+<a name="267150432"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/dependent%20type%20theory%20syntax/near/267150432" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Peiyuan Zhu <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/dependent.20type.20theory.20syntax.html#267150432">(Jan 07 2022 at 04:30)</a>:</h4>
+<p>It’s astonishing that these fields have a lot of shared structures, but I haven’t yet found a unifying theory, which I think is where category theory can be helpful</p>
+
+
+
+<a name="267150436"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/dependent%20type%20theory%20syntax/near/267150436" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Peiyuan Zhu <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/dependent.20type.20theory.20syntax.html#267150436">(Jan 07 2022 at 04:30)</a>:</h4>
+<p>Or even just a unifying story</p>
+
+
+
+<a name="267220257"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/dependent%20type%20theory%20syntax/near/267220257" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/dependent.20type.20theory.20syntax.html#267220257">(Jan 07 2022 at 17:56)</a>:</h4>
+<blockquote>
+<p>While the HoTT book (along with the book John sent yesterday) seems has a lot to say about algebraic geometry (or topology?)</p>
+</blockquote>
+<p>I haven't read the HoTT book carefully, but my impression is that it says almost nothing about algebraic geometry.</p>
+
+
+
+<a name="267220318"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/dependent%20type%20theory%20syntax/near/267220318" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/dependent.20type.20theory.20syntax.html#267220318">(Jan 07 2022 at 17:57)</a>:</h4>
+<p>In case it's not clear yet, algebraic topology and algebraic geometry are quite different subjects.</p>
+
+
+
+<a name="267220490"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/dependent%20type%20theory%20syntax/near/267220490" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/dependent.20type.20theory.20syntax.html#267220490">(Jan 07 2022 at 17:58)</a>:</h4>
+<blockquote>
+<p>But what seems certain is that imprecise probabilities such as possibility theory must be something to do with toposes, I’m just trying to dig that out.</p>
+</blockquote>
+<p>Have you seen Michael Barr's paper on <a href="https://www.math.mcgill.ca/barr/papers/fuzzy.pdf">toposes in fuzzy set theory</a>?   If I had to invent a way to use topos theory for "imprecise probabilities", I might start there.   (Of course I already know some basic topos theory.  If you don't, you should start by learning that.)</p>
+
+
+
+<a name="267257899"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/dependent%20type%20theory%20syntax/near/267257899" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Peiyuan Zhu <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/dependent.20type.20theory.20syntax.html#267257899">(Jan 07 2022 at 23:38)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="275920">John Baez</span> <a href="#narrow/stream/229199-learning.3A-questions/topic/dependent.20type.20theory.20syntax/near/267220257">said</a>:</p>
+<blockquote>
+<blockquote>
+<p>While the HoTT book (along with the book John sent yesterday) seems has a lot to say about algebraic geometry (or topology?)</p>
+</blockquote>
+<p>I haven't read the HoTT book carefully, but my impression is that it says almost nothing about algebraic geometry.</p>
+</blockquote>
+<p>As mentioned previously by <span class="user-mention" data-user-id="416301">@Zhen Lin Low</span>  it has more to do with algebraic topology. Why is this analogy important? Why do people like this idea for programming languages? Do people expect some day this language to be used for programming quantum computers?</p>
+
+
+
+<a name="267258850"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/dependent%20type%20theory%20syntax/near/267258850" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Zhen Lin Low <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/dependent.20type.20theory.20syntax.html#267258850">(Jan 07 2022 at 23:45)</a>:</h4>
+<p>The analogy is important if you want to do HoTT, because we – the collective body of all mathematicians – know a lot more about algebraic topology than HoTT right now. The situation may change in the future. But it is not by any means necessary: conceivably, a genius could appear who could discover great things in HoTT directly without relying on the crutch of foreknowledge of algebraic topology.</p>
+
+
+
+<a name="267259140"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/dependent%20type%20theory%20syntax/near/267259140" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Zhen Lin Low <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/dependent.20type.20theory.20syntax.html#267259140">(Jan 07 2022 at 23:47)</a>:</h4>
+<p>I would not say people like this idea for programming languages. You may get that impression if all you read is the writing of HoTT or computer verification advocates, but I guarantee if you go talk to actual software engineers most will not even have heard of dependent types.</p>
+
+
+
+<a name="267259478"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/dependent%20type%20theory%20syntax/near/267259478" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Zhen Lin Low <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/dependent.20type.20theory.20syntax.html#267259478">(Jan 07 2022 at 23:50)</a>:</h4>
+<p>As for quantum computers, I don't think type theory as usually conceived is suitable. Linear type theory is probably more appropriate.</p>
+
+
+
+<a name="267260036"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/dependent%20type%20theory%20syntax/near/267260036" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Peiyuan Zhu <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/dependent.20type.20theory.20syntax.html#267260036">(Jan 07 2022 at 23:57)</a>:</h4>
+<p>How about Modal type? It just came to me because I heard of the 'possible world interpretation' of quantum mechanics, which I think has some correspondence with the philosophical 'possible world', which was referenced many times in Modal HoTT</p>
+
+
+
+<a name="267260187"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/dependent%20type%20theory%20syntax/near/267260187" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Zhen Lin Low <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/dependent.20type.20theory.20syntax.html#267260187">(Jan 07 2022 at 23:59)</a>:</h4>
+<p>I think those turn out to be quite different if you look into the underlying mathematics.</p>
+
+
+
+<a name="267268009"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/dependent%20type%20theory%20syntax/near/267268009" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/dependent.20type.20theory.20syntax.html#267268009">(Jan 08 2022 at 02:03)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="416301">Zhen Lin Low</span> <a href="#narrow/stream/229199-learning.3A-questions/topic/dependent.20type.20theory.20syntax/near/267258850">said</a>:</p>
+<blockquote>
+<p>conceivably, a genius could appear who could discover great things in HoTT directly without relying on the crutch of foreknowledge of algebraic topology.</p>
+</blockquote>
+<p>In fact, there are already students who learned HoTT without much prior exposure to classical algebraic topology, and who've discovered new things about it that us oldsters didn't notice.</p>
+
+
+
+<a name="267268069"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/dependent%20type%20theory%20syntax/near/267268069" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/dependent.20type.20theory.20syntax.html#267268069">(Jan 08 2022 at 02:04)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="416301">Zhen Lin Low</span> <a href="#narrow/stream/229199-learning.3A-questions/topic/dependent.20type.20theory.20syntax/near/267259140">said</a>:</p>
+<blockquote>
+<p>I would not say people like this idea for programming languages. You may get that impression if all you read is the writing of HoTT or computer verification advocates, but I guarantee if you go talk to actual software engineers most will not even have heard of dependent types.</p>
+</blockquote>
+<p>In other words, <em>some</em> people like this idea, while others haven't learned to like it yet.  (-:O</p>
+
+
+
+<a name="267274146"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/dependent%20type%20theory%20syntax/near/267274146" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/dependent.20type.20theory.20syntax.html#267274146">(Jan 08 2022 at 04:15)</a>:</h4>
+<p>In my mind homotopy type theory is mainly important as part of the ongoing homotopification of mathematics.  As <a href="https://golem.ph.utexas.edu/category/2009/11/interview_with_manin.html">Yuri Manin said</a>:</p>
+<blockquote>
+<p>Instead of sets, clouds of discrete elements, we<br>
+envisage some sorts of vague spaces, which can be<br>
+very severely deformed, mapped one to another,<br>
+and all the while the specific space is not important,<br>
+but only the space up to deformation. If we<br>
+really want to return to discrete objects, we see<br>
+continuous components, the pieces whose form or<br>
+even dimension does not matter. Earlier, all these<br>
+spaces were thought of as Cantor sets with topology,<br>
+their maps were Cantor maps, some of them<br>
+were homotopies that should have been factored<br>
+out, and so on.</p>
+</blockquote>
+<blockquote>
+<p>I am pretty strongly convinced that there is an<br>
+ongoing reversal in the collective consciousness of<br>
+mathematicians: the right hemispherical and <br>
+homotopical picture of the world becomes the basic<br>
+intuition, and if you want to get a discrete set, then<br>
+you pass to the set of connected components of a<br>
+space defined only up to homotopy.</p>
+</blockquote>
+<blockquote>
+<p>That is, the Cantor points become continuous<br>
+components, or attractors, and so on—almost from<br>
+the start. Cantor’s problems of the infinite recede<br>
+to the background: from the very start, our images<br>
+are so infinite that if you want to make something<br>
+finite out of them, you must divide them by another<br>
+infinity.</p>
+</blockquote>
+
+
+
+<a name="267274256"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/dependent%20type%20theory%20syntax/near/267274256" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/dependent.20type.20theory.20syntax.html#267274256">(Jan 08 2022 at 04:18)</a>:</h4>
+<p>Thus, in homotopy type theory the basic entities are not sets but homotopy types.</p>
+
+
+
+<a name="267276547"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/dependent%20type%20theory%20syntax/near/267276547" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Peiyuan Zhu <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/dependent.20type.20theory.20syntax.html#267276547">(Jan 08 2022 at 05:02)</a>:</h4>
+<p>Seems like Modal Homotopy Type is used in geometry:<br>
+[1] <a href="https://arxiv.org/pdf/1806.05966.pdf">https://arxiv.org/pdf/1806.05966.pdf</a><br>
+[2] <a href="http://nlab-pages.s3.us-east-2.amazonaws.com/nlab/show/geometric+homotopy+type+theory">http://nlab-pages.s3.us-east-2.amazonaws.com/nlab/show/geometric+homotopy+type+theory</a></p>
+<p>Also algebra<br>
+<a href="http://nlab-pages.s3.us-east-2.amazonaws.com/nlab/show/Galois+theory#GaloisInTopos">http://nlab-pages.s3.us-east-2.amazonaws.com/nlab/show/Galois+theory#GaloisInTopos</a></p>
+
+
+
+<a name="267276801"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/dependent%20type%20theory%20syntax/near/267276801" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Peiyuan Zhu <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/dependent.20type.20theory.20syntax.html#267276801">(Jan 08 2022 at 05:09)</a>:</h4>
+<p>So it's not just topology</p>
+
+
+
+<a name="267276848"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/dependent%20type%20theory%20syntax/near/267276848" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/dependent.20type.20theory.20syntax.html#267276848">(Jan 08 2022 at 05:10)</a>:</h4>
+<p>Yes, but now you're talking about the use of modalities to capture "cohesion".</p>
+
+
+
+<a name="267276889"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/dependent%20type%20theory%20syntax/near/267276889" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/dependent.20type.20theory.20syntax.html#267276889">(Jan 08 2022 at 05:11)</a>:</h4>
+<p>I'll admit I'm getting a bit tired of talking about things in such a vague, sketchy manner.  It's like flying over the country at an altitude of 100,000 feet, where even the biggest mountains look tiny, and all the smaller details are lost.</p>
+
+
+
+<a name="267276956"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/dependent%20type%20theory%20syntax/near/267276956" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Peiyuan Zhu <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/dependent.20type.20theory.20syntax.html#267276956">(Jan 08 2022 at 05:13)</a>:</h4>
+<p>I think I already have enough to start, Thanks! I also have found the word 'sheaf' being mentioned in the book that I'm reading so I'll have a very concrete example to work on.</p>
+
+
+
+<a name="267277315"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/dependent%20type%20theory%20syntax/near/267277315" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Peiyuan Zhu <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/dependent.20type.20theory.20syntax.html#267277315">(Jan 08 2022 at 05:20)</a>:</h4>
+<p>To me it's been good to first sort unknown subjects by complexity &amp; relevancy, before digging in. I think this is the most resource-efficient way than dig in and then realize there's something fundamental missing, so all the knowledge semantics needs to be reconstructed somehow to fit the most relevant narrative, or that spending so much time pursuing something and then realize it is trivial in another discipline, which can be frustrating and inefficient. My charts have been university mathematics, so I've been operating in this 'possible world' of mathematics with cardinality 2^n where n in the number of subjects of advanced mathematics, which is huge.</p>
+
+
+
+<a name="267294399"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/dependent%20type%20theory%20syntax/near/267294399" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Jonathan Sterling <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/dependent.20type.20theory.20syntax.html#267294399">(Jan 08 2022 at 12:50)</a>:</h4>
+<p>It really is better to just dive in, and learn the Grand Narratives once you have some context for them.</p>
+
+
+
+<a name="267327205"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/dependent%20type%20theory%20syntax/near/267327205" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> David Egolf <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/dependent.20type.20theory.20syntax.html#267327205">(Jan 09 2022 at 01:21)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="394227">Peiyuan Zhu</span> <a href="#narrow/stream/229199-learning.3A-questions/topic/dependent.20type.20theory.20syntax/near/267277315">said</a>:</p>
+<blockquote>
+<p>To me it's been good to first sort unknown subjects by complexity &amp; relevancy, before digging in. I think this is the most resource-efficient way...</p>
+</blockquote>
+<p>For what it's worth, I feel that focusing on something in detail (even near-randomly chosen!) can sometimes substantially accelerate the process of characterizing unknown subjects. Sometimes authors assume prerequisites that they don't list anywhere, and you'll only realize that you needed to know something after you've already learned it. For example, I really underestimated the value of knowing some basic topology, and I was only able to recognize this once I learned some!</p>
+
+
+
+<a name="267333026"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/dependent%20type%20theory%20syntax/near/267333026" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Peiyuan Zhu <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/dependent.20type.20theory.20syntax.html#267333026">(Jan 09 2022 at 03:30)</a>:</h4>
+<p>Thanks for the great advices. So I started writing a proof of category theory, and I began with the category of relations, thinking that it's going to be useful later on. Is it possible to do this proof in HoTT, since there're existential quantifiers? <a href="/user_uploads/21317/69PLL_dFzp8lwrPCFJssUGPh/image.png">image.png</a> If this is possible I'll try to find a way to do it, but just wanted to make sure it's something possible.</p>
+<div class="message_inline_image"><a href="/user_uploads/21317/69PLL_dFzp8lwrPCFJssUGPh/image.png" title="image.png"><img src="/user_uploads/21317/69PLL_dFzp8lwrPCFJssUGPh/image.png"></a></div>
+
+
+
+<a name="267346956"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/dependent%20type%20theory%20syntax/near/267346956" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Matteo Capucci (he/him) <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/dependent.20type.20theory.20syntax.html#267346956">(Jan 09 2022 at 09:00)</a>:</h4>
+<p>Good start, just catching a small misnomer in ther: what you call <em>commutativity</em> is actually <em>associativity</em></p>
+
+
+
+<a name="267366184"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/dependent%20type%20theory%20syntax/near/267366184" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Peiyuan Zhu <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/dependent.20type.20theory.20syntax.html#267366184">(Jan 09 2022 at 16:48)</a>:</h4>
+<p>Ah good catch my math really got rusty :)</p>
+
+
+
+<a name="267366198"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/dependent%20type%20theory%20syntax/near/267366198" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Peiyuan Zhu <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/dependent.20type.20theory.20syntax.html#267366198">(Jan 09 2022 at 16:48)</a>:</h4>
+<p>A stack exchange post: does type theory have a concept of relation: <a href="https://math.stackexchange.com/questions/1265598/does-type-theory-have-a-concept-of-relation">https://math.stackexchange.com/questions/1265598/does-type-theory-have-a-concept-of-relation</a></p>
+
+
+
+<a name="267367795"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/dependent%20type%20theory%20syntax/near/267367795" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Reid Barton <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/dependent.20type.20theory.20syntax.html#267367795">(Jan 09 2022 at 17:21)</a>:</h4>
+<p>Questions like this are tricky to answer because "type theory" doesn't refer to a single specific thing. ("Set theory" isn't necessarily a single specific thing either, but most people would assume you mean ZFC.)<br>
+In a type theory which is intended to be used as a language for ordinary mathematics, the answer is yes because a relation is a notion of ordinary mathematics.</p>
+
+
+
+<a name="267367808"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/dependent%20type%20theory%20syntax/near/267367808" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Reid Barton <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/dependent.20type.20theory.20syntax.html#267367808">(Jan 09 2022 at 17:21)</a>:</h4>
+<p>Typically you would have a universe of propositions <code>Prop</code> and define a relation between <code>A</code> and <code>B</code> to be something of type <code>A -&gt; B -&gt; Prop</code>.</p>
+
+
+
+<a name="267531835"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/dependent%20type%20theory%20syntax/near/267531835" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Peiyuan Zhu <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/dependent.20type.20theory.20syntax.html#267531835">(Jan 11 2022 at 03:14)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="276480">Reid Barton</span> <a href="#narrow/stream/229199-learning.3A-questions/topic/dependent.20type.20theory.20syntax/near/267367795">said</a>:</p>
+<blockquote>
+<p>Questions like this are tricky to answer because "type theory" doesn't refer to a single specific thing. ("Set theory" isn't necessarily a single specific thing either, but most people would assume you mean ZFC.)<br>
+In a type theory which is intended to be used as a language for ordinary mathematics, the answer is yes because a relation is a notion of ordinary mathematics.</p>
+</blockquote>
+<p>Would I get a different answer if I restrict myself to HoTT?</p>
+
+
+
+<a name="267531982"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/dependent%20type%20theory%20syntax/near/267531982" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Peiyuan Zhu <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/dependent.20type.20theory.20syntax.html#267531982">(Jan 11 2022 at 03:16)</a>:</h4>
+<p>What's the difference between "|-" versus "-|" and "|=" and "|-&gt;"in type theory? I head the third means forcing and the fourth means transportation, but not sure about the first two. Are they referring to adjointness?</p>
+
+
+
+<a name="268001514"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/dependent%20type%20theory%20syntax/near/268001514" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> James Wood <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/dependent.20type.20theory.20syntax.html#268001514">(Jan 14 2022 at 11:28)</a>:</h4>
+<p>Even restricting to HoTT, you'll have to worry about propositional resizing and (im)predicativity. The most basic answer (i.e, Book HoTT with none of the optional axioms) is that relations become large, and you have to keep track of their size (universe level). But I think it still basically works to have relations be binary maps into a universe of h-propositions.</p>
+
+
+
+<a name="268002604"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/dependent%20type%20theory%20syntax/near/268002604" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> James Wood <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/dependent.20type.20theory.20syntax.html#268002604">(Jan 14 2022 at 11:39)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="394227">Peiyuan Zhu</span> <a href="#narrow/stream/229199-learning.3A-questions/topic/dependent.20type.20theory.20syntax/near/267531982">said</a>:</p>
+<blockquote>
+<p>What's the difference between "|-" versus "-|" and "|=" and "|-&gt;"in type theory? I head the third means forcing and the fourth means transportation, but not sure about the first two. Are they referring to adjointness?</p>
+</blockquote>
+<p><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>⊢</mo></mrow><annotation encoding="application/x-tex">\vdash</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mrel">⊢</span></span></span></span> is part of the judgement syntax of type theory, roughly saying “in the given context, this judgement holds”. It gives a way to divide the context from the judgement in question. <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>⊣</mo></mrow><annotation encoding="application/x-tex">\dashv</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mrel">⊣</span></span></span></span> is used in category theory as <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mo>⊣</mo><mi>G</mi></mrow><annotation encoding="application/x-tex">F \dashv G</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord mathnormal" style="margin-right:0.13889em;">F</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">⊣</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal">G</span></span></span></span> to say that functors <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi></mrow><annotation encoding="application/x-tex">F</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.13889em;">F</span></span></span></span> and <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>G</mi></mrow><annotation encoding="application/x-tex">G</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal">G</span></span></span></span> are <a href="https://ncatlab.org/nlab/show/adjoint%20functor">[[adjoint functor]]</a> s. <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>⊨</mo></mrow><annotation encoding="application/x-tex">\vDash</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6922em;"></span><span class="mrel amsrm">⊨</span></span></span></span> has domain-specific meaning, usually in logic. Often it's a semantic counterpart to the syntactic <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>⊢</mo></mrow><annotation encoding="application/x-tex">\vdash</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mrel">⊢</span></span></span></span>, in one way or another. <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>↦</mo></mrow><annotation encoding="application/x-tex">\mapsto</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.522em;vertical-align:-0.011em;"></span><span class="mrel">↦</span></span></span></span> is usually part of the judgemental syntax of a theory, stating that, when we are constructing something function-like, we want it to map the thing on the left to the thing on the right (judgementally). It might also have some other (propositional) meanings, but I think they usually have a “maps to” reading.</p>
+
+
+
+<a name="270618515"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/dependent%20type%20theory%20syntax/near/270618515" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Peiyuan Zhu <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/dependent.20type.20theory.20syntax.html#270618515">(Feb 03 2022 at 21:13)</a>:</h4>
+<p>How can I understand this page about 'groupoid', 'base change', and 'modality'? <a href="/user_uploads/21317/Gv34B3AHpelxahFYOpyLWmAd/image.png">image.png</a></p>
+<div class="message_inline_image"><a href="/user_uploads/21317/Gv34B3AHpelxahFYOpyLWmAd/image.png" title="image.png"><img src="/user_uploads/21317/Gv34B3AHpelxahFYOpyLWmAd/image.png"></a></div>
+
+
+
+<a name="270619570"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/dependent%20type%20theory%20syntax/near/270619570" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Peiyuan Zhu <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/dependent.20type.20theory.20syntax.html#270619570">(Feb 03 2022 at 21:21)</a>:</h4>
+<p>By 'climbing the hierarchy', does it mean the <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>k</mi></mrow><annotation encoding="application/x-tex">k</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord mathnormal" style="margin-right:0.03148em;">k</span></span></span></span>-groupoid/category hierarchy? <a href="/user_uploads/21317/w3EpGtN5rgjPQXfDZCfTgNkU/image.png">image.png</a> So it's suggesting this adjoint base-change morphism works analogously on groups as they are on propositions and sets. In this case are they now called "geometric morphisms"?</p>
+<div class="message_inline_image"><a href="/user_uploads/21317/w3EpGtN5rgjPQXfDZCfTgNkU/image.png" title="image.png"><img src="/user_uploads/21317/w3EpGtN5rgjPQXfDZCfTgNkU/image.png"></a></div>
+
+
+
+<a name="270620199"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/dependent%20type%20theory%20syntax/near/270620199" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Peiyuan Zhu <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/dependent.20type.20theory.20syntax.html#270620199">(Feb 03 2022 at 21:26)</a>:</h4>
+<p>If I have two posets with a common refinement, what will be the "base change morphism" in this case? So there will be a map between the posets modulo the individual parts of each of the two posets? Moving upwards the hierarchy, is there a simple example in group? Maybe two groups with a common subgroup?</p>
+
+
+
+{% endraw %}
+
+<hr><p>Last updated: Feb 08 2022 at 00:29 UTC</p>

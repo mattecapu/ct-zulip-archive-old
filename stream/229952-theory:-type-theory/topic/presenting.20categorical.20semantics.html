@@ -1,0 +1,36 @@
+---
+layout: archive
+title: Zulip Chat Archive
+permalink: /stream/229952-theory:-type-theory/topic/presenting.20categorical.20semantics.html
+---
+
+<h2>Stream: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229952-theory:-type-theory/index.html">theory: type theory</a></h2>
+<h3>Topic: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229952-theory:-type-theory/topic/presenting.20categorical.20semantics.html">presenting categorical semantics</a></h3>
+
+<hr>
+
+<base href="https://categorytheory.zulipchat.com/">
+
+{% raw %}
+
+<a name="244080056"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229952-theory%3A%20type%20theory/topic/presenting%20categorical%20semantics/near/244080056" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Xuanrui Qi <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229952-theory:-type-theory/topic/presenting.20categorical.20semantics.html#244080056">(Jun 27 2021 at 18:58)</a>:</h4>
+<p>Hm, I have a follow-up question about contexts. Can't we just "work only with closed types and terms", as the naive types-as-objects approach would suggest? What would be the problem with this approach?</p>
+
+
+
+<a name="244085059"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229952-theory%3A%20type%20theory/topic/presenting%20categorical%20semantics/near/244085059" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229952-theory:-type-theory/topic/presenting.20categorical.20semantics.html#244085059">(Jun 27 2021 at 21:09)</a>:</h4>
+<p>Well, types are defined inductively, and the induction passes through open ones in the process of constructing closed ones.  So you can't expect to define something like an interpretation function recursively over only closed types, since closed types aren't inductively defined all by themselves.  It's possible you could play some tricky games to get around this, but I expect probably any resulting simplification would be outweighed by the extra complication of the trickery.</p>
+
+
+
+<a name="244085117"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229952-theory%3A%20type%20theory/topic/presenting%20categorical%20semantics/near/244085117" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229952-theory:-type-theory/topic/presenting.20categorical.20semantics.html#244085117">(Jun 27 2021 at 21:10)</a>:</h4>
+<p>I really think it's better to do things one step at a time: first construct a semantics that closely matches the behavior of syntax, like a multicategory or a category-with-families, then show how the "natural" categorical semantics can be massaged into the form of syntax-like semantics.</p>
+
+
+
+{% endraw %}
+
+<hr><p>Last updated: Feb 08 2022 at 00:29 UTC</p>

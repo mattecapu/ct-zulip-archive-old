@@ -1,0 +1,144 @@
+---
+layout: archive
+title: Zulip Chat Archive
+permalink: /stream/229952-theory:-type-theory/topic/Presenting.20categorical.20semantics.html
+---
+
+<h2>Stream: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229952-theory:-type-theory/index.html">theory: type theory</a></h2>
+<h3>Topic: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229952-theory:-type-theory/topic/Presenting.20categorical.20semantics.html">Presenting categorical semantics</a></h3>
+
+<hr>
+
+<base href="https://categorytheory.zulipchat.com/">
+
+{% raw %}
+
+<a name="243959626"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229952-theory%3A%20type%20theory/topic/Presenting%20categorical%20semantics/near/243959626" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Xuanrui Qi <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229952-theory:-type-theory/topic/Presenting.20categorical.20semantics.html#243959626">(Jun 25 2021 at 19:26)</a>:</h4>
+<p>AFAIK, there are two main approaches of defining categorical semantics for a type theory:</p>
+<ul>
+<li>interpret types as objects, and sequents x : A |- M(x) : B (or more generally, typing judgments) as morphisms (the naive approach of lambdas as morphisms can be considered a subcase);</li>
+<li>contexts as objects, and context maps/substitutions as morphisms.</li>
+</ul>
+<p>I have seen both styles for STLC, but for MLTT and more complex cases (particularly presheaf semantics of dependent TT), it seems that almost everybody uses the context-based approach. The question is, why do people do this?</p>
+<p>I personally prefer the first style as it is more direct. I understand that the context-based style and nameless syntax fix problems like closedness and substitution, but I wonder if those are deal-breakers. For me, the more direct style is much easier to understand and to present.</p>
+<p>If anyone has a "direct" presentation of the presheaf semantics of MLTT/intuitionistic type theory, please let me know! Almost everything I have seen are based on contexts and substitutions.</p>
+
+
+
+<a name="243964759"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229952-theory%3A%20type%20theory/topic/Presenting%20categorical%20semantics/near/243964759" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Xuanrui Qi <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229952-theory:-type-theory/topic/Presenting.20categorical.20semantics.html#243964759">(Jun 25 2021 at 20:09)</a>:</h4>
+<p>Hm, I guess the presheaf semantics part of my question makes little sense, but the rest of the question seems to be valid.</p>
+
+
+
+<a name="243984819"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229952-theory%3A%20type%20theory/topic/Presenting%20categorical%20semantics/near/243984819" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Jon Awbrey <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229952-theory:-type-theory/topic/Presenting.20categorical.20semantics.html#243984819">(Jun 26 2021 at 00:36)</a>:</h4>
+<p>How does this relate to ordinary Propositions As Types (Curry–Howard)?</p>
+
+
+
+<a name="243995858"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229952-theory%3A%20type%20theory/topic/Presenting%20categorical%20semantics/near/243995858" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Xuanrui Qi <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229952-theory:-type-theory/topic/Presenting.20categorical.20semantics.html#243995858">(Jun 26 2021 at 05:21)</a>:</h4>
+<p>I don't know much about the categorical semantics of predicate logic, but I guess you get something like propositions as objects? I guess they're related in this way.</p>
+
+
+
+<a name="244009444"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229952-theory%3A%20type%20theory/topic/Presenting%20categorical%20semantics/near/244009444" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Matteo Capucci (he/him) <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229952-theory:-type-theory/topic/Presenting.20categorical.20semantics.html#244009444">(Jun 26 2021 at 11:04)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="411666">Xuanrui Qi</span> <a href="#narrow/stream/229952-theory.3A-type.20theory/topic/Presenting.20categorical.20semantics/near/243959626">said</a>:</p>
+<blockquote>
+<p>AFAIK, there are two main approaches of defining categorical semantics for a type theory:</p>
+<ul>
+<li>interpret types as objects, and sequents x : A |- M(x) : B (or more generally, typing judgments) as morphisms (the naive approach of lambdas as morphisms can be considered a subcase);</li>
+<li>contexts as objects, and context maps/substitutions as morphisms.</li>
+</ul>
+<p>I have seen both styles for STLC, but for MLTT and more complex cases (particularly presheaf semantics of dependent TT), it seems that almost everybody uses the context-based approach. The question is, why do people do this?</p>
+<p>I personally prefer the first style as it is more direct. I understand that the context-based style and nameless syntax fix problems like closedness and substitution, but I wonder if those are deal-breakers. For me, the more direct style is much easier to understand and to present.</p>
+<p>If anyone has a "direct" presentation of the presheaf semantics of MLTT/intuitionistic type theory, please let me know! Almost everything I have seen are based on contexts and substitutions.</p>
+</blockquote>
+<p>These two are usually combined: the second kind (called the 'syntactic category') is the base of a fibration whose fibers are of the first kind</p>
+
+
+
+<a name="244009521"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229952-theory%3A%20type%20theory/topic/Presenting%20categorical%20semantics/near/244009521" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Matteo Capucci (he/him) <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229952-theory:-type-theory/topic/Presenting.20categorical.20semantics.html#244009521">(Jun 26 2021 at 11:05)</a>:</h4>
+<p>The two things get combined by constructions like the tripos-to-topos construction, which build a category whose internal logic is the one expressed by the fibration</p>
+
+
+
+<a name="244019490"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229952-theory%3A%20type%20theory/topic/Presenting%20categorical%20semantics/near/244019490" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229952-theory:-type-theory/topic/Presenting.20categorical.20semantics.html#244019490">(Jun 26 2021 at 15:09)</a>:</h4>
+<p>I don't think it has anything to do with fibrations.  You can use either style in either the base or the fibers of a fibration.</p>
+
+
+
+<a name="244019952"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229952-theory%3A%20type%20theory/topic/Presenting%20categorical%20semantics/near/244019952" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229952-theory:-type-theory/topic/Presenting.20categorical.20semantics.html#244019952">(Jun 26 2021 at 15:19)</a>:</h4>
+<p>I also don't think it has anything to do with namelessness of syntax.  You could use either style with any kind of variables (named, de Bruijn, locally nameless, ...).</p>
+
+
+
+<a name="244020034"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229952-theory%3A%20type%20theory/topic/Presenting%20categorical%20semantics/near/244020034" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229952-theory:-type-theory/topic/Presenting.20categorical.20semantics.html#244020034">(Jun 26 2021 at 15:21)</a>:</h4>
+<p>The problem with your first style is that it doesn't correspond very well to syntax.  In syntax we <em>have</em> contexts, so the more direct way of interpreting syntax into a category is to have the contexts correspond to something in the category.  What your first style essentially does is to implicitly take the product of all the types in a context to make them into one type.  So the contexts are still really being interpreted as objects, it's just that there's an extra level of indirection.</p>
+
+
+
+<a name="244020101"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229952-theory%3A%20type%20theory/topic/Presenting%20categorical%20semantics/near/244020101" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229952-theory:-type-theory/topic/Presenting.20categorical.20semantics.html#244020101">(Jun 26 2021 at 15:22)</a>:</h4>
+<p>There's a third style, which I prefer over either one, which is to take semantics as occurring in a <em>multicategory</em>.  Then you can interpret types as objects and still have something to send the contexts to without implicitly taking products: the list of types in a context corresponds to the list of objects in the domain of a morphism in a multicategory.</p>
+
+
+
+<a name="244020127"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229952-theory%3A%20type%20theory/topic/Presenting%20categorical%20semantics/near/244020127" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229952-theory:-type-theory/topic/Presenting.20categorical.20semantics.html#244020127">(Jun 26 2021 at 15:23)</a>:</h4>
+<p>This also has the advantage that the rules of type theory for connectives often correspond more directly to the universal properties of the corresponding objects in a multicategory.</p>
+
+
+
+<a name="244020197"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229952-theory%3A%20type%20theory/topic/Presenting%20categorical%20semantics/near/244020197" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229952-theory:-type-theory/topic/Presenting.20categorical.20semantics.html#244020197">(Jun 26 2021 at 15:24)</a>:</h4>
+<p>The issue with dependent type theory is that contexts are much more complicated, with a lot more structure, because some types in the context can depend on earlier types in the context.  So it's hard to get away without interpreting them as something in the semantics.</p>
+
+
+
+<a name="244020343"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229952-theory%3A%20type%20theory/topic/Presenting%20categorical%20semantics/near/244020343" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229952-theory:-type-theory/topic/Presenting.20categorical.20semantics.html#244020343">(Jun 26 2021 at 15:28)</a>:</h4>
+<p>The most common way to interpret dependent type theory is in a categorical structure that has two kinds of "objects", one that's used to represent contexts and one that's used to represet types.  Since types can be dependent on contexts, the type-objects occur in a fibration over the category of context-objects.  This is a "category with families" or "comprehension category" (and lots of other names).  So this is really more of a mix of your two styles.  (In fact, even for simple type theory the contexts-as-objects approach is arguably mixing the styles as well, because the types <em>also</em> get interpreted as objects, and it doesn't necessarily need to be the same class of objects; it could be a category with families in which the type-objects are constant over the context-objects.)</p>
+
+
+
+<a name="244020435"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229952-theory%3A%20type%20theory/topic/Presenting%20categorical%20semantics/near/244020435" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229952-theory:-type-theory/topic/Presenting.20categorical.20semantics.html#244020435">(Jun 26 2021 at 15:30)</a>:</h4>
+<p>There is also a more "multicategorical" approach to the semantics of dependent type theory in which "contexts" are not just a separate class of objects, but really are "lists of types" just as they are in syntax.  But it's more complicated because of dependency: you can't first specify a collection of type-objects and then just say the contexts are lists of them, since the type-objects may depend on some context, i.e. list of prior type-objects.  So the "contexts" still have to occur as "things" in the semantics, but the rules specify that each of them is built up in a unique way as a list of types.  This is called a "contextual category".</p>
+
+
+
+<a name="244020595"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229952-theory%3A%20type%20theory/topic/Presenting%20categorical%20semantics/near/244020595" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Fawzi Hreiki <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229952-theory:-type-theory/topic/Presenting.20categorical.20semantics.html#244020595">(Jun 26 2021 at 15:34)</a>:</h4>
+<p>Say you're taking the multicategorical approach to algebraic or predicate theories. How do you define the notion of a model then? Because usually a model is a structure preserving functor from the syntactic category to the background category (e.g. Sets).</p>
+
+
+
+<a name="244020608"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229952-theory%3A%20type%20theory/topic/Presenting%20categorical%20semantics/near/244020608" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Fawzi Hreiki <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229952-theory:-type-theory/topic/Presenting.20categorical.20semantics.html#244020608">(Jun 26 2021 at 15:34)</a>:</h4>
+<p>Do you need to pass to the free finite-product category on the multicategory?</p>
+
+
+
+<a name="244020688"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229952-theory%3A%20type%20theory/topic/Presenting%20categorical%20semantics/near/244020688" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229952-theory:-type-theory/topic/Presenting.20categorical.20semantics.html#244020688">(Jun 26 2021 at 15:36)</a>:</h4>
+<p>A model is a structure-preserving functor from the syntactic <em>multicategory</em> to the background <em>multicategory</em>.</p>
+
+
+
+<a name="244020699"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229952-theory%3A%20type%20theory/topic/Presenting%20categorical%20semantics/near/244020699" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229952-theory:-type-theory/topic/Presenting.20categorical.20semantics.html#244020699">(Jun 26 2021 at 15:37)</a>:</h4>
+<p>If your semantic category like Set is a monoidal category, you pass to its underlying multicategory.</p>
+
+
+
+{% endraw %}
+
+<hr><p>Last updated: Feb 08 2022 at 00:29 UTC</p>

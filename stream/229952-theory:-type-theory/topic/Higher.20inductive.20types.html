@@ -1,0 +1,88 @@
+---
+layout: archive
+title: Zulip Chat Archive
+permalink: /stream/229952-theory:-type-theory/topic/Higher.20inductive.20types.html
+---
+
+<h2>Stream: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229952-theory:-type-theory/index.html">theory: type theory</a></h2>
+<h3>Topic: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229952-theory:-type-theory/topic/Higher.20inductive.20types.html">Higher inductive types</a></h3>
+
+<hr>
+
+<base href="https://categorytheory.zulipchat.com/">
+
+{% raw %}
+
+<a name="249749257"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229952-theory%3A%20type%20theory/topic/Higher%20inductive%20types/near/249749257" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Leopold Schlicht <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229952-theory:-type-theory/topic/Higher.20inductive.20types.html#249749257">(Aug 17 2021 at 17:12)</a>:</h4>
+<p>As far as I can see, the HoTT book gives two applications of higher inductive types in normal (i.e., non-homotopical) math: the construction of the Cauchy reals and the construction of the surreal numbers. Both definitions use the principle of "inductive-inductive" definitions as well. I wonder: Is this really an application of <em>higher</em> inductive types? After all, both definitions contain only point and path constructors, but not any homotopy constructors. So would both definitions also work in, say, a type theory with a notion of "quotient type" and inductive-inductive definitions?<br>
+Also, aren't Theorem 11.3.9 and Corollary 11.6.5 (stating that these types are sets) trivial in some sense, because both definitions contain only point and path constructors, but not any homotopy constructors?<br>
+The introduction to chapter 6 gives an explanation of the phenomenon of an inductive type being a higher groupoid while being defined only using point and path constructors: if the domain of some constructor has higher paths, these will carry over. But if all domains of all constructors are sets, I believe this can't happen. Do Theorem 11.3.9 and Corollary 11.6.5 also fall in some class of higher inductive types that yield sets "for trivial reasons"?</p>
+
+
+
+<a name="249749608"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229952-theory%3A%20type%20theory/topic/Higher%20inductive%20types/near/249749608" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Reid Barton <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229952-theory:-type-theory/topic/Higher.20inductive.20types.html#249749608">(Aug 17 2021 at 17:15)</a>:</h4>
+<p>What's the difference between a "path constructor" and a "homotopy constructor"?</p>
+
+
+
+<a name="249751067"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229952-theory%3A%20type%20theory/topic/Higher%20inductive%20types/near/249751067" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Reid Barton <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229952-theory:-type-theory/topic/Higher.20inductive.20types.html#249751067">(Aug 17 2021 at 17:27)</a>:</h4>
+<p>It seems like the circle-as-inductive-type (section 6.4) is a counterexample to your claim, right?</p>
+
+
+
+<a name="249752520"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229952-theory%3A%20type%20theory/topic/Higher%20inductive%20types/near/249752520" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Leopold Schlicht <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229952-theory:-type-theory/topic/Higher.20inductive.20types.html#249752520">(Aug 17 2021 at 17:37)</a>:</h4>
+<p>I call the things between points "paths" and the things between paths "homotopies" (but not "paths" anymore).<br>
+I don't know what claim you are referring to, because I asked a lot of things. :-)</p>
+
+
+
+<a name="249752730"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229952-theory%3A%20type%20theory/topic/Higher%20inductive%20types/near/249752730" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Reid Barton <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229952-theory:-type-theory/topic/Higher.20inductive.20types.html#249752730">(Aug 17 2021 at 17:39)</a>:</h4>
+<p>I mean the last one "But if all domains of all constructors are sets, I believe this can't happen."</p>
+
+
+
+<a name="249776415"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229952-theory%3A%20type%20theory/topic/Higher%20inductive%20types/near/249776415" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> James Wood <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229952-theory:-type-theory/topic/Higher.20inductive.20types.html#249776415">(Aug 17 2021 at 20:45)</a>:</h4>
+<p>IIRC, you can recover a similar theorem if you prove that the path constructors are cycle-free. That is, consider a higher inductive type <code>T</code> generated from constructors <code>point : P → T</code> and <code>path : (x y : P) → R x y → point x = point y</code>, where <code>P : Set</code> and <code>R : P → P → Prop</code>. Then, if <code>R</code> is cycle-free in some suitable graph-theoretic sense, <code>T</code> will be a set. The circle fails the latter condition in the simplest way possible – the whole idea of the circle is that the path forms a cycle.</p>
+<p>I'd appreciate a reference, if anyone knows one, because it's not immediately clear to me how it works when <code>P</code> has large cardinality and cycle-free paths can be infinitely long.</p>
+
+
+
+<a name="249777410"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229952-theory%3A%20type%20theory/topic/Higher%20inductive%20types/near/249777410" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> James Wood <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229952-theory:-type-theory/topic/Higher.20inductive.20types.html#249777410">(Aug 17 2021 at 20:54)</a>:</h4>
+<p>For the broader question, <em>quotient inductive-inductive types</em> have been studied. As far as I can tell, the Cauchy reals are a prime motivating example, along with similar cases where QIITs are enough to get around countable choice.</p>
+
+
+
+<a name="249901210"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229952-theory%3A%20type%20theory/topic/Higher%20inductive%20types/near/249901210" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229952-theory:-type-theory/topic/Higher.20inductive.20types.html#249901210">(Aug 18 2021 at 19:36)</a>:</h4>
+<p>Reference: <a href="https://arxiv.org/abs/1612.02346">https://arxiv.org/abs/1612.02346</a></p>
+
+
+
+<a name="249901294"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229952-theory%3A%20type%20theory/topic/Higher%20inductive%20types/near/249901294" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229952-theory:-type-theory/topic/Higher.20inductive.20types.html#249901294">(Aug 18 2021 at 19:37)</a>:</h4>
+<p>Note that the Cauchy reals and surreals are not just a combination of quotient types with ordinary inductive-inductive types; it matters greatly that the quotienting is <em>part</em> of the inductive definition.  In particular, both quotients and ordinary inductive-inductive definitions exist in ZF, but quotient inductive types don't in general.</p>
+
+
+
+<a name="249901461"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229952-theory%3A%20type%20theory/topic/Higher%20inductive%20types/near/249901461" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229952-theory:-type-theory/topic/Higher.20inductive.20types.html#249901461">(Aug 18 2021 at 19:38)</a>:</h4>
+<p>I don't think I've ever heard this result about cycle-freeness, but it sounds possible.</p>
+
+
+
+<a name="249901726"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229952-theory%3A%20type%20theory/topic/Higher%20inductive%20types/near/249901726" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229952-theory:-type-theory/topic/Higher.20inductive.20types.html#249901726">(Aug 18 2021 at 19:40)</a>:</h4>
+<p>The example of the circle might suggest that at least a HIT with only 0- and 1-dimensional constructors whose domains are all sets ought to be a 1-type.  In higher dimensions the analogous fact becomes wildly false, e.g. the 2-sphere has only 0-, 1-, and 2-dimensional constructors, but is certainly not a 2-type or even an n-type for any finite n.  The 1-dimensional case is true <em>classically</em>, and also in every Grothendieck-Lurie <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mi mathvariant="normal">∞</mi><mo separator="true">,</mo><mn>1</mn><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(\infty,1)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord">∞</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord">1</span><span class="mclose">)</span></span></span></span>-topos, but I believe it's still an open question in constructive HoTT whether, for instance, the suspension of a set is always a 1-type.</p>
+
+
+
+{% endraw %}
+
+<hr><p>Last updated: Feb 08 2022 at 00:29 UTC</p>

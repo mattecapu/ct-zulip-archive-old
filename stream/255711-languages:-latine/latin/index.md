@@ -11,4 +11,4 @@ permalink: /stream/255711-languages:-latine/latin/index.html
 
 * [stream events](topic/stream.20events.html) (4 messages, latest: Sep 03 2020 at 10:10)
 
-<hr><p>Last updated: Jan 30 2022 at 00:30 UTC</p>
+<hr><p>Last updated: Feb 08 2022 at 00:29 UTC</p>

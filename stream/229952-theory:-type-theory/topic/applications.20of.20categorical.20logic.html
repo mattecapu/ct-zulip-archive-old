@@ -1,0 +1,350 @@
+---
+layout: archive
+title: Zulip Chat Archive
+permalink: /stream/229952-theory:-type-theory/topic/applications.20of.20categorical.20logic.html
+---
+
+<h2>Stream: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229952-theory:-type-theory/index.html">theory: type theory</a></h2>
+<h3>Topic: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229952-theory:-type-theory/topic/applications.20of.20categorical.20logic.html">applications of categorical logic</a></h3>
+
+<hr>
+
+<base href="https://categorytheory.zulipchat.com/">
+
+{% raw %}
+
+<a name="237486954"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229952-theory%3A%20type%20theory/topic/applications%20of%20categorical%20logic/near/237486954" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Leopold Schlicht <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229952-theory:-type-theory/topic/applications.20of.20categorical.20logic.html#237486954">(May 05 2021 at 12:33)</a>:</h4>
+<p>Does categorical logic have some real applications in theoretical computer science?<br>
+Lambek and Scott's equivalence between the category of cartesian closed categories and the category of theories in the <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>λ</mi></mrow><annotation encoding="application/x-tex">\lambda</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.69444em;vertical-align:0em;"></span><span class="mord mathnormal">λ</span></span></span></span>-calculus (which can be seen as a functional programming language!) comes to mind. I think there are also similar correspondences concerned with adding a concept of polymorphism to the <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>λ</mi></mrow><annotation encoding="application/x-tex">\lambda</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.69444em;vertical-align:0em;"></span><span class="mord mathnormal">λ</span></span></span></span>-calculus, which is also feature of programming languages. But I don't know if these are just nice and appealing correspondences to have or if they have any concrete application in computer science.</p>
+
+
+
+<a name="237495863"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229952-theory%3A%20type%20theory/topic/applications%20of%20categorical%20logic/near/237495863" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nick Hu <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229952-theory:-type-theory/topic/applications.20of.20categorical.20logic.html#237495863">(May 05 2021 at 13:36)</a>:</h4>
+<p>It's the foundation of categorical (denotational) semantics of programming languages. That is, you might write a factorial function in Haskell</p>
+<div class="codehilite" data-code-language="Haskell"><pre><span></span><code><span class="nf">factorial</span> <span class="ow">::</span> <span class="kt">Integer</span> <span class="ow">-&gt;</span> <span class="kt">Integer</span>
+<span class="nf">factorial</span> <span class="mi">0</span> <span class="ow">=</span> <span class="mi">1</span>
+<span class="nf">factorial</span> <span class="n">n</span> <span class="ow">=</span> <span class="n">n</span> <span class="o">*</span> <span class="p">(</span><span class="n">factorial</span> <span class="p">(</span><span class="n">n</span> <span class="o">-</span> <span class="mi">1</span><span class="p">))</span>
+</code></pre></div>
+<p>but to what extent can this be identified with the mathematical function <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mo>−</mo><mo stretchy="false">)</mo><mo stretchy="false">!</mo><mspace></mspace><mspace width="0.1111111111111111em"/><mo lspace="0em" rspace="0.17em"></mo><mtext> ⁣</mtext><mo lspace="0em" rspace="0em">:</mo><mspace width="0.3333333333333333em"/><mi mathvariant="double-struck">N</mi><mo>→</mo><mi mathvariant="double-struck">N</mi></mrow><annotation encoding="application/x-tex">(-)!\colon \mathbb{N} \to \mathbb{N}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord">−</span><span class="mclose">)!</span><span class="mspace nobreak"></span><span class="mspace" style="margin-right:0.1111111111111111em;"></span><span class="mpunct"></span><span class="mspace" style="margin-right:-0.16666666666666666em;"></span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord"><span class="mrel">:</span></span><span class="mspace" style="margin-right:0.3333333333333333em;"></span><span class="mord mathbb">N</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.68889em;vertical-align:0em;"></span><span class="mord mathbb">N</span></span></span></span>?</p>
+<p>The answer according to this is that types are identified with objects in a CCC, terms are identified with morphisms, and with that we can make the bridge.</p>
+
+
+
+<a name="237505449"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229952-theory%3A%20type%20theory/topic/applications%20of%20categorical%20logic/near/237505449" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Thibaut Benjamin <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229952-theory:-type-theory/topic/applications.20of.20categorical.20logic.html#237505449">(May 05 2021 at 14:37)</a>:</h4>
+<p>The question is kind of vague, so I can't really give you a super precise answer, but here are some pointers of things that might be of interest for you:</p>
+<ul>
+<li>You could use the correspondence between CCC and $\lambda$-calculi to obtain "for free" a programming language dedicated to working with any CCC. Say you want to work with a mathematical concept, and it so happens that this concept defines a CCC, then you can go through this correspondence, to get a $\lambda$-calculus, and implement it as a programming language. That way you can manipulate some mathematical concepts directly with your computer, with a dedicated language.</li>
+<li>Going a bit further, you might be interested in Martin-Löf type theory (the underlying type theory of proof assistants like Coq and Agda). These have a lot of interesting categorical descriptions, as locally cartesian closed category (doesn't work perfectly, but that's a good start), or as category with attributes, categories with families, see <a href="https://ncatlab.org/nlab/show/categorical+model+of+dependent+types">https://ncatlab.org/nlab/show/categorical+model+of+dependent+types</a>.</li>
+<li>Inside Agda for instance, you can define the type of integer as an inductive type </li>
+</ul>
+<div class="codehilite"><pre><span></span><code>data N : Set where
+  O : N
+  S : N -&gt; N
+</code></pre></div>
+<p>To justify that this definition makes sense, and give a semantics to it, the usual method is to construct it as the initial algebra of the polynomial <code>X\mapsto 1+X</code>. For this one example, you would not need the concept of initial algebra, but if you want to give semantics for every inductive types and not just a particular one, then I think it's pretty necessary.</p>
+<ul>
+<li>You can modify the rules of the logic to get other flavors of type theory, like linear type theory. Those also correspond to categorical devices, and it's quite useful to understand this correspondence to get the full picture.</li>
+<li>The very concept of monads in Haskell directly comes from category theory.</li>
+</ul>
+<p>These are just a few places, categorical logic really is everywhere in computer science, if you look at it from the right point of view. Often times it's not the only way to understand things, and substantial amount of work can be done without categories, but it always bring something try and see things from a categorical perspective.</p>
+
+
+
+<a name="237508297"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229952-theory%3A%20type%20theory/topic/applications%20of%20categorical%20logic/near/237508297" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229952-theory:-type-theory/topic/applications.20of.20categorical.20logic.html#237508297">(May 05 2021 at 14:53)</a>:</h4>
+<p><span class="user-mention" data-user-id="408864">@Leopold Schlicht</span> - you asked for "real applications in theoretical computer science", which is a somewhat ambiguous question, since "theoretical" and "applied" are often treated as antonyms.  </p>
+<p>I'm not the right person to answer this, but I'll just say:</p>
+<p>Lots of theoretical computer science takes the equivalence between cartesian closed categories and <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>λ</mi></mrow><annotation encoding="application/x-tex">\lambda</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.69444em;vertical-align:0em;"></span><span class="mord mathnormal">λ</span></span></span></span>-theories as fundamental and builds on it in various directions.    It's an enormous body of work.    Among other things, it's led to the creation of programming languages such as OCaml, which seek to be mathematically principled.  This little webpage is a nice explanation of that:</p>
+<ul>
+<li><a href="https://vitez.me/ocamls-categorical-origins">OCaml’s Categorical Origins</a>.</li>
+</ul>
+
+
+
+<a name="237508910"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229952-theory%3A%20type%20theory/topic/applications%20of%20categorical%20logic/near/237508910" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229952-theory:-type-theory/topic/applications.20of.20categorical.20logic.html#237508910">(May 05 2021 at 14:57)</a>:</h4>
+<p>The "Cam" in "OCaml" means "categorical abstract machine", and you might like a look at this paper:</p>
+<ul>
+<li>G. Cousineau, P.-L. Curien, M. Mauny, <a href="https://www.sciencedirect.com/science/article/pii/0167642387900207">The categorical abstract machine</a>, 1987.</li>
+</ul>
+
+
+
+<a name="237528650"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229952-theory%3A%20type%20theory/topic/applications%20of%20categorical%20logic/near/237528650" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Leopold Schlicht <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229952-theory:-type-theory/topic/applications.20of.20categorical.20logic.html#237528650">(May 05 2021 at 16:51)</a>:</h4>
+<p>Thank you all!<br>
+I see, it's almost impossible to tease out when some piece of computer science really is an <em>application</em> of category theory or categorical logic, and even theoretical computer science seems to be interested in theoretical ideas (involving categories) that don't have direct applications.<br>
+I have to admit, to me it seems there isn't much category theory used in <em>The categorical abstract machine</em> (both "functor" and "natural transformation" don't occuring even once!), but it's nice to hear that it at least inspired the inventors. :-)</p>
+
+
+
+<a name="237533880"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229952-theory%3A%20type%20theory/topic/applications%20of%20categorical%20logic/near/237533880" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229952-theory:-type-theory/topic/applications.20of.20categorical.20logic.html#237533880">(May 05 2021 at 17:24)</a>:</h4>
+<p>Of course, the categorical abstract machine was created in 1987 before categorical computer science really caught on.  A lot has been done since then!</p>
+
+
+
+<a name="237534687"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229952-theory%3A%20type%20theory/topic/applications%20of%20categorical%20logic/near/237534687" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229952-theory:-type-theory/topic/applications.20of.20categorical.20logic.html#237534687">(May 05 2021 at 17:30)</a>:</h4>
+<p>I mentioned it mainly to set the stage for comments by people who know more about categorical computer science - e.g. most people here.</p>
+
+
+
+<a name="237536506"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229952-theory%3A%20type%20theory/topic/applications%20of%20categorical%20logic/near/237536506" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Leopold Schlicht <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229952-theory:-type-theory/topic/applications.20of.20categorical.20logic.html#237536506">(May 05 2021 at 17:42)</a>:</h4>
+<p>Either way, OCaml was worth mentioning! I appreciate your help. :-)</p>
+
+
+
+<a name="237541376"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229952-theory%3A%20type%20theory/topic/applications%20of%20categorical%20logic/near/237541376" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Jonathan Sterling <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229952-theory:-type-theory/topic/applications.20of.20categorical.20logic.html#237541376">(May 05 2021 at 18:13)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="275920">John Baez</span> <a href="#narrow/stream/229952-theory.3A-type.20theory/topic/applications.20of.20categorical.20logic/near/237533880">said</a>:</p>
+<blockquote>
+<p>Of course, the categorical abstract machine was created in 1987 before categorical computer science really caught on.  A lot has been done since then!</p>
+</blockquote>
+<p>I would say that CAM was in the tail-end of the hey-day of categorical computer science, before it became almost forbidden to use category theory seriously in computer science in many areas. In the past several years, we are seeing a return to "allowing people to use categories" (at least as measured by one's ability to write papers that mention categories and not have them auto-rejected by major conferences), but it is still somewhat perilous. Which is why those of us who like categories in CS have a big responsiblity to make sure that our applications are significant and not too superficial...</p>
+
+
+
+<a name="237546373"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229952-theory%3A%20type%20theory/topic/applications%20of%20categorical%20logic/near/237546373" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229952-theory:-type-theory/topic/applications.20of.20categorical.20logic.html#237546373">(May 05 2021 at 18:47)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="297784">Jonathan Sterling</span> <a href="#narrow/stream/229952-theory.3A-type.20theory/topic/applications.20of.20categorical.20logic/near/237541376">said</a>:</p>
+<blockquote>
+<p>I would say that CAM was in the tail-end of the hey-day of categorical computer science, before it became almost forbidden to use category theory seriously in computer science in many areas. In the past several years, we are seeing a return to "allowing people to use categories" (at least as measured by one's ability to write papers that mention categories and not have them auto-rejected by major conferences), but it is still somewhat perilous. </p>
+</blockquote>
+<p>Okay, that's interesting.   I only became interested in category theory around 1990, and after I did some work on n-categories I got invited to a computer science conference (much to my surprise), and interest in categories among computer scientists seems to be steadily increasing.  So I must have missed the first heyday: I thought <em>now</em> was the heyday.</p>
+
+
+
+<a name="237546660"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229952-theory%3A%20type%20theory/topic/applications%20of%20categorical%20logic/near/237546660" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Jonathan Sterling <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229952-theory:-type-theory/topic/applications.20of.20categorical.20logic.html#237546660">(May 05 2021 at 18:49)</a>:</h4>
+<p>I hope this heydey turns out better than the last one ;-) A lot of cool stuff was done in First Generation categorical CS, but much of it is forgotten now (except in certain European groups)...  It's been shocking and amazing to start getting conference reviews in the past few years that demonstrate some comfort with categories, and I really hope we can continue to nurture this trend.</p>
+
+
+
+<a name="237546974"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229952-theory%3A%20type%20theory/topic/applications%20of%20categorical%20logic/near/237546974" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Jonathan Sterling <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229952-theory:-type-theory/topic/applications.20of.20categorical.20logic.html#237546974">(May 05 2021 at 18:51)</a>:</h4>
+<p>I think in part, HoTT has been helpful because many computer scientists have some vague idea that it is "cool" even if they don't know it, and so some room has been made in the community for those who wish to study things using mathematical techniques. It didn't hurt that the mathematical techniques got immensely stronger in the years during which computer scientists swore them off...</p>
+
+
+
+<a name="237547233"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229952-theory%3A%20type%20theory/topic/applications%20of%20categorical%20logic/near/237547233" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229952-theory:-type-theory/topic/applications.20of.20categorical.20logic.html#237547233">(May 05 2021 at 18:53)</a>:</h4>
+<p>Some examples of why I thought the heyday was now: now programmers are <a href="https://training.statebox.org/">paying to take courses on category theory from Statebox</a>, and <span class="user-mention" data-user-id="275991">@Bartosz Milewski</span>'s book <em><a href="https://bartoszmilewski.com/2014/10/28/category-theory-for-programmers-the-preface/">Category Theory for Programmers</a></em> seems fairly popular, and he's writing a book with Brendan Fong called <em><a href="http://brendanfong.com/programmingcats.html">Programming with Categories</a></em>, and the <a href="https://topos.institute/work">Topos Institute</a>, carefully placed within range of Silicon Valley, is planning to teach category theory to computer scientists and programmers....</p>
+
+
+
+<a name="237547422"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229952-theory%3A%20type%20theory/topic/applications%20of%20categorical%20logic/near/237547422" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229952-theory:-type-theory/topic/applications.20of.20categorical.20logic.html#237547422">(May 05 2021 at 18:54)</a>:</h4>
+<p>But of course I live in a bubble!   Compared to the overall scope of computer science, all these activities are microscopic.</p>
+
+
+
+<a name="237547798"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229952-theory%3A%20type%20theory/topic/applications%20of%20categorical%20logic/near/237547798" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Jonathan Sterling <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229952-theory:-type-theory/topic/applications.20of.20categorical.20logic.html#237547798">(May 05 2021 at 18:57)</a>:</h4>
+<p>Well I think all the things you are mentioning point to the fact that we are likely entering a new hey-day :) And this one seems likely to be bigger. The old one basically only involved the subfield of programming languages, but that seems not really to be the focus of ACT -- which seems much broader and very different to me.</p>
+
+
+
+<a name="237558118"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229952-theory%3A%20type%20theory/topic/applications%20of%20categorical%20logic/near/237558118" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229952-theory:-type-theory/topic/applications.20of.20categorical.20logic.html#237558118">(May 05 2021 at 20:13)</a>:</h4>
+<p>Why did the first heydey end?</p>
+
+
+
+<a name="237576123"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229952-theory%3A%20type%20theory/topic/applications%20of%20categorical%20logic/near/237576123" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Fawzi Hreiki <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229952-theory:-type-theory/topic/applications.20of.20categorical.20logic.html#237576123">(May 05 2021 at 22:14)</a>:</h4>
+<p>One aspect could be the broader shift which occurred from logical to statistical methods.</p>
+
+
+
+<a name="237576391"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229952-theory%3A%20type%20theory/topic/applications%20of%20categorical%20logic/near/237576391" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Fawzi Hreiki <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229952-theory:-type-theory/topic/applications.20of.20categorical.20logic.html#237576391">(May 05 2021 at 22:17)</a>:</h4>
+<p>Programming language theory was much bigger back in the 80s and that’s where CT was applicable whereas when the ‘statistical revolution’ arrived in the 90s, there wasn’t really a place for CT</p>
+
+
+
+<a name="237576437"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229952-theory%3A%20type%20theory/topic/applications%20of%20categorical%20logic/near/237576437" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Fawzi Hreiki <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229952-theory:-type-theory/topic/applications.20of.20categorical.20logic.html#237576437">(May 05 2021 at 22:17)</a>:</h4>
+<p>That seems to be changing now with the much larger scope of ACT as Jonathan mentioned</p>
+
+
+
+<a name="237613853"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229952-theory%3A%20type%20theory/topic/applications%20of%20categorical%20logic/near/237613853" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nick Smith <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229952-theory:-type-theory/topic/applications.20of.20categorical.20logic.html#237613853">(May 06 2021 at 06:59)</a>:</h4>
+<p>From my perspective as a software engineer, the respect for mathematics in computing might have been severely supressed by the Internet Boom and Silicon Valley startup mania that began in the 90s. A lot of research started focusing on solving concrete problems: app usability, security, data compression, search engines, advertising, data analytics...  My uninformed guess is that research groups started applying for lots of grants to solve these immediate problems and the more theoretical stuff got left in the dust <span aria-label="sweat smile" class="emoji emoji-1f605" role="img" title="sweat smile">:sweat_smile:</span> . And at the same time, I'd wager a greater proportion of college students started aiming for industry jobs instead of research, due to lucrative salaries fueled by a shortage of talented software engineers. There's no money in basic research <span aria-label="sweat smile" class="emoji emoji-1f605" role="img" title="sweat smile">:sweat_smile:</span> </p>
+<p>Also, my CS degree didn't even teach type theory or lambda calculus, and nobody ever told me that programming languages could be defined mathematically. In industry, programming language design is essentially considered a "creative art"... often some Messiah comes along and pulls a new programming language out of nowhere, and explains that "this language is better than its competitors" because it adds features X and Y, and abolishes feature Z. No mention of mathematics. Most people in industry still see OCaml and Haskell (the "categorical" programming languages) as arcane and not useful for writing "real apps".</p>
+
+
+
+<a name="237614734"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229952-theory%3A%20type%20theory/topic/applications%20of%20categorical%20logic/near/237614734" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nick Smith <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229952-theory:-type-theory/topic/applications.20of.20categorical.20logic.html#237614734">(May 06 2021 at 07:07)</a>:</h4>
+<p>All that said, I'm not really sure of the extent that industry influenced academia in the 90s-00s <span aria-label="innocent" class="emoji emoji-1f607" role="img" title="innocent">:innocent:</span> This is just a speculation.</p>
+
+
+
+<a name="237646558"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229952-theory%3A%20type%20theory/topic/applications%20of%20categorical%20logic/near/237646558" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Bob Atkey <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229952-theory:-type-theory/topic/applications.20of.20categorical.20logic.html#237646558">(May 06 2021 at 12:05)</a>:</h4>
+<p>My feeling on why the "heyday" ended (or became less mainstream anyway) is that categorical techniques in PL were somewhat tied to domain theoretic denotational semantics. In the late 90s people wanted to prove that their type systems were "sound" and the options were either denotational models, like in Milner's "well typed programs don't go wrong", or the Wright and Felleisen progress+preservation technique. The nice things about progress+preservation were that it was pretty elementary, it seems to scale to anything you can write down a small step operational semantics for, and the notion of "soundness" falls out of your operational semantics, so you don't have to think too hard about what "wrong" means. It is difficult to imagine Benjamin Pierce's TAPL being as successful if it were written using domain theory.</p>
+<p>Of course, categorical techniques in PL never really went away. In the late 90s and early 2000s, Monads took off in Haskell, as did initial algebra semantics for datatypes (under the name "two level types"). Plotkin and Power started algebraic effects. Martin Hofmann used category theory to do semantics of type theory and implicit computational complexity. Hyland and Ong's and Abramsky's game semantics were explicitly formulated in the setting of categorical models of Linear Logic. Separation Logic started out from O'Hearn's investigations of Interference Controlled Algol using sheaves, and worked with Pym on categorical semantics of Bunched Implications. Some of this is documented in <a href="https://research.fb.com/wp-content/uploads/2016/11/from_categorical_logic_to_facebook_engineering.pdf">From Categorical Logic to Facebook Engineering</a>.</p>
+<p>This is from a UK and specifically Edinburgh perspective though, I'm not sure what it looked like in the US or elsewhere.</p>
+
+
+
+<a name="237692704"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229952-theory%3A%20type%20theory/topic/applications%20of%20categorical%20logic/near/237692704" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229952-theory:-type-theory/topic/applications.20of.20categorical.20logic.html#237692704">(May 06 2021 at 16:56)</a>:</h4>
+<p>In the US I think theoretical computer science focuses more on computational complexity, and a lot of researchers in that subject express disinterest in the semantic issues you just listed - disinterest verging sometimes on contempt.</p>
+
+
+
+<a name="237692806"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229952-theory%3A%20type%20theory/topic/applications%20of%20categorical%20logic/near/237692806" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229952-theory:-type-theory/topic/applications.20of.20categorical.20logic.html#237692806">(May 06 2021 at 16:56)</a>:</h4>
+<p>For example, they might say "I'd be interested if you could use these ideas to reduce our bounds on the complexity of some problem from <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>O</mi><mo stretchy="false">(</mo><msup><mi>N</mi><mn>3</mn></msup><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">O(N^3)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.064108em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.02778em;">O</span><span class="mopen">(</span><span class="mord"><span class="mord mathnormal" style="margin-right:0.10903em;">N</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141079999999999em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">3</span></span></span></span></span></span></span></span><span class="mclose">)</span></span></span></span> to <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>O</mi><mo stretchy="false">(</mo><msup><mi>N</mi><mn>2</mn></msup><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">O(N^2)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.064108em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.02778em;">O</span><span class="mopen">(</span><span class="mord"><span class="mord mathnormal" style="margin-right:0.10903em;">N</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141079999999999em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span><span class="mclose">)</span></span></span></span>."</p>
+
+
+
+<a name="237693094"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229952-theory%3A%20type%20theory/topic/applications%20of%20categorical%20logic/near/237693094" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229952-theory:-type-theory/topic/applications.20of.20categorical.20logic.html#237693094">(May 06 2021 at 16:58)</a>:</h4>
+<p>Another US attitude, connected to the dotcom boom, is "we're too busy writing software that's changing the world to worry about these arcane theoretical issues".</p>
+
+
+
+<a name="237973485"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229952-theory%3A%20type%20theory/topic/applications%20of%20categorical%20logic/near/237973485" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Leopold Schlicht <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229952-theory:-type-theory/topic/applications.20of.20categorical.20logic.html#237973485">(May 08 2021 at 17:55)</a>:</h4>
+<p>Interesting to read.<br>
+Another question I asked myself: What role do domains, complete partial orders, and continuous lattices play in applications to computer science? And what's their relationship to categorical logic?</p>
+
+
+
+<a name="237982777"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229952-theory%3A%20type%20theory/topic/applications%20of%20categorical%20logic/near/237982777" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Alex Gryzlov <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229952-theory:-type-theory/topic/applications.20of.20categorical.20logic.html#237982777">(May 08 2021 at 20:34)</a>:</h4>
+<p>Denotational semantics of PLs is usually used as a basis for various static analysis tools (i.e. model checkers) and compiler optimizations, however the classical domain theory is considered pretty much outdated at this point and people use game semantics or things like interaction trees</p>
+
+
+
+<a name="238026710"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229952-theory%3A%20type%20theory/topic/applications%20of%20categorical%20logic/near/238026710" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Olli <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229952-theory:-type-theory/topic/applications.20of.20categorical.20logic.html#238026710">(May 09 2021 at 10:40)</a>:</h4>
+<p>What are the reasons for why classical domain theory is considered outdated these days?</p>
+
+
+
+<a name="238029600"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229952-theory%3A%20type%20theory/topic/applications%20of%20categorical%20logic/near/238029600" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Kenji Maillard <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229952-theory:-type-theory/topic/applications.20of.20categorical.20logic.html#238029600">(May 09 2021 at 11:30)</a>:</h4>
+<p>I'm actually quite surprised by the claim that it is outdated (hence the reaction). Working a lot with the Coq Proof assistant I see important bits of domain theory underlying quite a lot of large development in computer science: interaction trees are a clever implementation of ideas stemming from domain theory, they are organized to work in hand with the paco library which reuses plenty of domain theory; the Iris framework (upon which large developments such as rustbelt flourish) is also based at its very foundation on domain theory; more generally, a lot of formalization of a non-terminating languages have a small domain theory library lurking around. On the theoretical side I think <span class="user-mention" data-user-id="355959">@Tom de Jong</span> has some interesting results about domain theory in univalent foundations. On the more practical side, there have been a serie of paper by <span class="user-mention" data-user-id="276642">@Max New</span> and his coauthors relating domain theory with gradual typing.</p>
+<p>So maybe I'm missing to see what is the "classical" bit that <span class="user-mention" data-user-id="276047">@Alex Gryzlov</span> mentions, but domain theory seems to me to be still quite present in modern CS. What is however true is that I never really had any in depth lectures on domain theory (tackling its technical part in particular) during my studies in France this last decade.</p>
+
+
+
+<a name="238043918"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229952-theory%3A%20type%20theory/topic/applications%20of%20categorical%20logic/near/238043918" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229952-theory:-type-theory/topic/applications.20of.20categorical.20logic.html#238043918">(May 09 2021 at 15:49)</a>:</h4>
+<p>Sometimes branches of math or science become "outdated" when they succeed in their goals and there aren't tons of open questions that people find exciting.    An example is <a href="https://en.wikipedia.org/wiki/General_topology">general topology</a>, also called "point set topology".   Few people do PhD theses in general topology nowadays, and it would be hard to get a job in it.  But it's widely used throughout math and it underlies a lot of other work on topology.</p>
+<p>I have no idea, but maybe "classical domain theory" was so successful that few people feel there's not a lot of important open questions left.  <span class="user-mention" data-user-id="276885">@Kenji Maillard</span> makes it sound like classical domain theory underlies interaction trees and a lot of very practical work in computer science.</p>
+
+
+
+<a name="238044026"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229952-theory%3A%20type%20theory/topic/applications%20of%20categorical%20logic/near/238044026" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229952-theory:-type-theory/topic/applications.20of.20categorical.20logic.html#238044026">(May 09 2021 at 15:51)</a>:</h4>
+<p>When I was a grad student at MIT in 1986-1989 I was told that "homotopy theory is dead", because the work of Adams and Sullivan and Quillen and Segal and May and others had settled all the really big open questions, like the relationship between topological, smooth and PL manifolds in high dimensions.</p>
+
+
+
+<a name="238044038"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229952-theory%3A%20type%20theory/topic/applications%20of%20categorical%20logic/near/238044038" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229952-theory:-type-theory/topic/applications.20of.20categorical.20logic.html#238044038">(May 09 2021 at 15:51)</a>:</h4>
+<p>Ironically this was just when homotopy theory was getting ready to invade the rest of mathematics!</p>
+
+
+
+<a name="238080682"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229952-theory%3A%20type%20theory/topic/applications%20of%20categorical%20logic/near/238080682" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Jonathan Sterling <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229952-theory:-type-theory/topic/applications.20of.20categorical.20logic.html#238080682">(May 10 2021 at 02:58)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="276885">Kenji Maillard</span> <a href="#narrow/stream/229952-theory.3A-type.20theory/topic/applications.20of.20categorical.20logic/near/238029600">said</a>:</p>
+<blockquote>
+<p>I'm actually quite surprised by the claim that it is outdated (hence the reaction). Working a lot with the Coq Proof assistant I see important bits of domain theory underlying quite a lot of large development in computer science: interaction trees are a clever implementation of ideas stemming from domain theory, they are organized to work in hand with the paco library which reuses plenty of domain theory; the Iris framework (upon which large developments such as rustbelt flourish) is also based at its very foundation on domain theory; more generally, a lot of formalization of a non-terminating languages have a small domain theory library lurking around. On the theoretical side I think <span class="user-mention silent" data-user-id="355959">Tom de Jong</span> has some interesting results about domain theory in univalent foundations. On the more practical side, there have been a serie of paper by <span class="user-mention silent" data-user-id="276642">Max New</span> and his coauthors relating domain theory with gradual typing.</p>
+<p>So maybe I'm missing to see what is the "classical" bit that <span class="user-mention silent" data-user-id="276047">Alex Gryzlov</span> mentions, but domain theory seems to me to be still quite present in modern CS. What is however true is that I never really had any in depth lectures on domain theory (tackling its technical part in particular) during my studies in France this last decade.</p>
+</blockquote>
+<p>You bring up Iris, but this is actually the perfect example of something that is using a domain theory that is <em>not</em> classic domain theory --- to answer your question as to what the "classic" part means, I would suggest that people like me are using it to distinguish from guarded domain theory, which has very different properties.</p>
+<p>To me, domain theory is immortal --- no matter what we do, we are going to keep coming back to ideas that were formulated as part of the program of domain theory. I am utterly convinced of this. But it is one thing to say this, and another to treat the present-day inheritors of domain theory as if they are the same as classic domain theory.</p>
+
+
+
+<a name="238081162"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229952-theory%3A%20type%20theory/topic/applications%20of%20categorical%20logic/near/238081162" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Jonathan Sterling <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229952-theory:-type-theory/topic/applications.20of.20categorical.20logic.html#238081162">(May 10 2021 at 03:07)</a>:</h4>
+<p>Domain theory in the sense of Dana's agenda is not, I would say, one of those fields that succeeded in its goals and has no open questions. My impression is that there are <em>many</em> questions and they are way too hard to solve without changing some definitions.  Dana's own conclusion was that domain theory had to be re-done in order to make progress. Roughly what happened is that domain theory got increasingly arcane, so Scott, Hyland, as well as a number of other excellent scientists attempted to tame the situation by developing a topos-theoretic abstraction called synthetic domain theory. Synthetic domain theory is actually an excellent idea that contains many very very deep insights, but it truly never caught on (not even a little bit!).</p>
+<p>Recently these things are coming back! But I don't think that the classic CPOs, etc. will ever come back in full force, and I'm ok with that.</p>
+<p>About a decade ago, Birkedal, Møgelberg, Schwinghammer and Støvring introduced what they called synthetic <em>guarded</em> domain theory (SGDT). This has several very important technical differences from the old domain theory (both analytic and synthetic); in the guarded domain theory, one does not work with true fixed points but with 'guarded' fixed points where the recursive part is underneath a certain modality. In return, you have a general fixed point combinator that works on _any_ object of the topos, in contrast to synthetic domain theory where you can solve fixed points only on certain objects that have some cool properties relative to the classifier of semidecidable propositions. While computer scientists have been reluctant to actually phrase their work in the language of SGDT (they are more comfortable working with natural numbers by hand), it would not be an exaggeration to say that an immense proportion of the last 10 years of work in programming languages is using ideas from SGDT.</p>
+<p>And this month, a <a href="https://arxiv.org/abs/2105.02156">new paper</a> came out on ArXiv working in the style of classic synthetic domain theory in a really cool way, which I was delighted to see.</p>
+
+
+
+<a name="238126829"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229952-theory%3A%20type%20theory/topic/applications%20of%20categorical%20logic/near/238126829" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Alex Gryzlov <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229952-theory:-type-theory/topic/applications.20of.20categorical.20logic.html#238126829">(May 10 2021 at 11:49)</a>:</h4>
+<p>To add a bit to Jon's great answer, I think in practice the two main stumbling blocks for classic domain theory were the problem of full abstraction (i.e., finding semantics without "junk" in it) which was already an issue for PCF (probably the simplest possible functional PL) and the ever-increasing need to model concurrent features (AFAIK no one has figured out how to properly work with powerdomains for that).</p>
+
+
+
+<a name="238134239"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229952-theory%3A%20type%20theory/topic/applications%20of%20categorical%20logic/near/238134239" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Jonathan Sterling <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229952-theory:-type-theory/topic/applications.20of.20categorical.20logic.html#238134239">(May 10 2021 at 12:49)</a>:</h4>
+<p>Ironically, the new paper I linked to pertains to full abstraction for PCF...</p>
+<p>But more broadly speaking I think that a big problem with the old school work on denotational semantics was methodological: at the time (and now!), people were trying to understand what kinds of equational reasoning are justified with regard to actual programs, and many people felt that one way to come up with the set of equations was to interpret into a domain model, and then check what equations hold. So long as your model is non-trivial, this method can be used to show that two programs behave the same way when you run them in any execution context (that they are "observationally equivalent"): if they are interpreted to the same object in the model, there can be no definable program context that distinguishes them, because that too would have an interpretation in the model. On the other hand, absent full abstraction, this approach cannot be used to find _all_ the observational equivalences --- indeed, in most cases the domain interpretation will contain contexts that lie outside the image of the interpretation that are able to make additional distinctions, meaning that two programs might behave the same but not be identified.</p>
+<p>I think this was considered a big problem at the time because people wanted to think of the domain models as definitions of the behavior of a programming language, and people were very concerned that the obvious models did not model all observational equivalences. So this set off an immense amount of work to study various restrictions of the semantic domains and their morphisms, in order to investigate questions like full abstraction.</p>
+<p>While a lot of great stuff came out of that process (like Berry's stable domains), I personally feel that some of the motivations were a bit misguided. I think of the models, including domain models, as tools that can be used to prove specific theorems, and I personally have use for <em>many</em> different such models; therefore it is strange, from my viewpoint, to want to have a single model that captures every observational equivalence. Moreover, because observational equivalences in a programming language will not be preserved by adding new features to the language, it is really totally bizarre from my point of view to want observational equivalence to define the equational theory of a language --- because this would be a totally degenerate kind of "theory" that cannot be extended in a non-trivial way! The category of such "theories" would be very pitiful indeed...</p>
+<p>From this perspective, it is much easier to make peace with the lack of full abstraction and proceed with semantics in a way that is more inspired by categorical algebra than by the (to my view) very old-fashioned style of thinking about "intended semantics", etc.</p>
+
+
+
+<a name="238152285"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229952-theory%3A%20type%20theory/topic/applications%20of%20categorical%20logic/near/238152285" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229952-theory:-type-theory/topic/applications.20of.20categorical.20logic.html#238152285">(May 10 2021 at 14:35)</a>:</h4>
+<p>Hear hear!!</p>
+
+
+
+<a name="238173055"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229952-theory%3A%20type%20theory/topic/applications%20of%20categorical%20logic/near/238173055" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Olli <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229952-theory:-type-theory/topic/applications.20of.20categorical.20logic.html#238173055">(May 10 2021 at 16:39)</a>:</h4>
+<p>Thanks everyone for your insightful replies!</p>
+
+
+
+<a name="238193914"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229952-theory%3A%20type%20theory/topic/applications%20of%20categorical%20logic/near/238193914" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Christian Williams <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229952-theory:-type-theory/topic/applications.20of.20categorical.20logic.html#238193914">(May 10 2021 at 18:56)</a>:</h4>
+<p>I don't have the background to contribute here, but <span class="user-mention" data-user-id="276048">@Mike Stay</span> and I just wrote <a href="/user_uploads/21317/AQgBUZax4zJwJf1Jpy8bstpR/Native-Type-Theory.pdf">Native-Type-Theory.pdf</a>, a method to enhance languages using the internal logic of their presheaf toposes.</p>
+<p>This is probably one of the simplest possible applications of categorical logic; we are surprised to find that it has not yet really been explored and implemented.</p>
+
+
+
+<a name="238211595"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229952-theory%3A%20type%20theory/topic/applications%20of%20categorical%20logic/near/238211595" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Jonathan Sterling <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229952-theory:-type-theory/topic/applications.20of.20categorical.20logic.html#238211595">(May 10 2021 at 21:03)</a>:</h4>
+<p><span class="user-mention" data-user-id="275899">@Christian Williams</span> I liked the part of your paper that involved including rewrite rules in the base theory, and generating some kind of program logic from this. I think this is indeed a new and under-explored perspective...</p>
+<p>In general the idea of using a category of presheaves to enhance a language has seen quite a bit of application in type theory, but very little so far in PL until your draft and my recent draft with Bob Harper ("Logical Relations As Types"). It's a good idea, and I hope that more people will start applying it.</p>
+
+
+
+<a name="238218450"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229952-theory%3A%20type%20theory/topic/applications%20of%20categorical%20logic/near/238218450" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Christian Williams <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229952-theory:-type-theory/topic/applications.20of.20categorical.20logic.html#238218450">(May 10 2021 at 21:59)</a>:</h4>
+<p>Thanks! Yeah, I've been very happy to realize that with finite limits, we can internalize most common forms of structural operational semantics.</p>
+
+
+
+<a name="238218848"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229952-theory%3A%20type%20theory/topic/applications%20of%20categorical%20logic/near/238218848" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Christian Williams <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229952-theory:-type-theory/topic/applications.20of.20categorical.20logic.html#238218848">(May 10 2021 at 22:02)</a>:</h4>
+<p>You probably saw the application toward the end, where we construct the type of bisimilar processes. Though apparently this type is not decidable, I'm sure there are benefits to expressing it as a type in this way, e.g. reasoning up to bisimilarity.</p>
+
+
+
+<a name="238219390"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229952-theory%3A%20type%20theory/topic/applications%20of%20categorical%20logic/near/238219390" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Christian Williams <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229952-theory:-type-theory/topic/applications.20of.20categorical.20logic.html#238219390">(May 10 2021 at 22:07)</a>:</h4>
+<p>I haven't yet understood your Logical Relations as Types; it has a lot of CS terminology and intuitions that I am not yet familiar with.</p>
+
+
+
+<a name="238227105"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229952-theory%3A%20type%20theory/topic/applications%20of%20categorical%20logic/near/238227105" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Jonathan Sterling <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229952-theory:-type-theory/topic/applications.20of.20categorical.20logic.html#238227105">(May 10 2021 at 23:28)</a>:</h4>
+<p>By the way, Bob and I just finished a pretty substantial revision of our paper, now uploaded here: <a href="http://www.jonmsterling.com/pdfs/lrat.pdf">http://www.jonmsterling.com/pdfs/lrat.pdf</a></p>
+<p>The main changes are revamping the discussion of related work, and providing more background and explicit computations in the section on topoi. And fixing zillions of typos.</p>
+
+
+
+{% endraw %}
+
+<hr><p>Last updated: Feb 08 2022 at 00:29 UTC</p>

@@ -1,0 +1,112 @@
+---
+layout: archive
+title: Zulip Chat Archive
+permalink: /stream/233104-theory:-logic/topic/Type.20theory.20and.20sequent.20calculus.html
+---
+
+<h2>Stream: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/233104-theory:-logic/index.html">theory: logic</a></h2>
+<h3>Topic: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/233104-theory:-logic/topic/Type.20theory.20and.20sequent.20calculus.html">Type theory and sequent calculus</a></h3>
+
+<hr>
+
+<base href="https://categorytheory.zulipchat.com/">
+
+{% raw %}
+
+<a name="213896394"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/233104-theory%3A%20logic/topic/Type%20theory%20and%20sequent%20calculus/near/213896394" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Alexander Gietelink Oldenziel <a href="https://mattecapu.github.io/ct-zulip-archive/stream/233104-theory:-logic/topic/Type.20theory.20and.20sequent.20calculus.html#213896394">(Oct 20 2020 at 09:53)</a>:</h4>
+<p>I have two questions concerning the relation between Sequent Calculus and Type  Theory</p>
+<p>A) In a typical type theory like HoTT there are four kinds of inference rules: type formation, term introduction, term elimination, and computation rules. The last rule type has a different status than the first three so I will ignore it for now.<br>
+HoTT is based on Natural Deduction. If instead of Natural Deduction we take the Sequent calculus perspective we replace term intro rules with Right rules, and the term elimination rules with Left Rules. <br>
+What about type formation rules? Conceptually they should be term introduction rules (= Right rules in the sequent calculus) for the Universe U.<br>
+If we continue this train there should also be right rules for the Universe U? What are they?</p>
+<p>B) The term introduction and elimination rules corresponds in categorical semantics to structure morphisms  and universal properties (or the other way around depending on the polarity of the type, i.e. whether it is a (co)limit). In this way we can deduce the rules from the categorical structure.<br>
+Can we do a similar thing with sequent calculus? How do we guess the left rules?</p>
+<p>Literature: it seems the following paper might be relevant, but it doesn't talk about categorical semantics at all<br>
+<a href="https://www.irif.fr/~emiquey/tmp/dL.pdf">https://www.irif.fr/~emiquey/tmp/dL.pdf</a></p>
+
+
+
+<a name="213929624"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/233104-theory%3A%20logic/topic/Type%20theory%20and%20sequent%20calculus/near/213929624" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Dan Doel <a href="https://mattecapu.github.io/ct-zulip-archive/stream/233104-theory:-logic/topic/Type.20theory.20and.20sequent.20calculus.html#213929624">(Oct 20 2020 at 14:45)</a>:</h4>
+<p>Type formation rules are usually not the same as term formation rules for the universe. Types are introduced prior to any universes containing them. And it would be impossible to say that the universe itself (if you only have one) is a type (which it is) using judgments of its own terms, because it doesn't usually contain itself.</p>
+<p>Anyhow, most logics just take for granted which propositions are well-formed, probably because the rules for them are pretty simple. In first-order logic they'd mostly need to talk about variable scoping, and most presentations neglect to even keep track of that. The well-formed types in dependent type theory are not so trivial, so it's more useful to present them as rules that can be checked like all the rest.</p>
+
+
+
+<a name="213929793"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/233104-theory%3A%20logic/topic/Type%20theory%20and%20sequent%20calculus/near/213929793" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Dan Doel <a href="https://mattecapu.github.io/ct-zulip-archive/stream/233104-theory:-logic/topic/Type.20theory.20and.20sequent.20calculus.html#213929793">(Oct 20 2020 at 14:46)</a>:</h4>
+<p>I have seen natural deduction presentations that do have proposition formation rules, but those were probably inspired by type theory.</p>
+
+
+
+<a name="213930388"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/233104-theory%3A%20logic/topic/Type%20theory%20and%20sequent%20calculus/near/213930388" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Dan Doel <a href="https://mattecapu.github.io/ct-zulip-archive/stream/233104-theory:-logic/topic/Type.20theory.20and.20sequent.20calculus.html#213930388">(Oct 20 2020 at 14:50)</a>:</h4>
+<p>Generally in sequent calculus, right rules correspond almost exactly to something from ND, so the left rule corresponds to whatever is the dual of that.</p>
+
+
+
+<a name="213931433"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/233104-theory%3A%20logic/topic/Type%20theory%20and%20sequent%20calculus/near/213931433" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Dan Doel <a href="https://mattecapu.github.io/ct-zulip-archive/stream/233104-theory:-logic/topic/Type.20theory.20and.20sequent.20calculus.html#213931433">(Oct 20 2020 at 14:58)</a>:</h4>
+<p>I think left rules are all eliminations, but it might depend on presentation.</p>
+
+
+
+<a name="213931943"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/233104-theory%3A%20logic/topic/Type%20theory%20and%20sequent%20calculus/near/213931943" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Shea Levy <a href="https://mattecapu.github.io/ct-zulip-archive/stream/233104-theory:-logic/topic/Type.20theory.20and.20sequent.20calculus.html#213931943">(Oct 20 2020 at 15:02)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="277270">Dan Doel</span> <a href="#narrow/stream/233104-theory.3A-logic/topic/Type.20theory.20and.20sequent.20calculus/near/213931433">said</a>:</p>
+<blockquote>
+<p>I think left rules are all eliminations, but it might depend on presentation.</p>
+</blockquote>
+<p>Left rules coupled with cut make for eliminations inherently, no?</p>
+
+
+
+<a name="213932799"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/233104-theory%3A%20logic/topic/Type%20theory%20and%20sequent%20calculus/near/213932799" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> James Wood <a href="https://mattecapu.github.io/ct-zulip-archive/stream/233104-theory:-logic/topic/Type.20theory.20and.20sequent.20calculus.html#213932799">(Oct 20 2020 at 15:07)</a>:</h4>
+<p>I've seen El mentioned as the eliminator for the (Tarski-style) universe, but I don't know how formal that intuition can be made. μμ̃̃ is perhaps a good framework to formalise that in.</p>
+
+
+
+<a name="213932978"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/233104-theory%3A%20logic/topic/Type%20theory%20and%20sequent%20calculus/near/213932978" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Dan Doel <a href="https://mattecapu.github.io/ct-zulip-archive/stream/233104-theory:-logic/topic/Type.20theory.20and.20sequent.20calculus.html#213932978">(Oct 20 2020 at 15:08)</a>:</h4>
+<p>I'm not sure that really makes sense. El isn't much like the other eliminators.</p>
+
+
+
+<a name="213933023"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/233104-theory%3A%20logic/topic/Type%20theory%20and%20sequent%20calculus/near/213933023" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Dan Doel <a href="https://mattecapu.github.io/ct-zulip-archive/stream/233104-theory:-logic/topic/Type.20theory.20and.20sequent.20calculus.html#213933023">(Oct 20 2020 at 15:09)</a>:</h4>
+<p>Also there are presentations of MLTT that actually have an induction principle for the universe.</p>
+
+
+
+<a name="213933346"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/233104-theory%3A%20logic/topic/Type%20theory%20and%20sequent%20calculus/near/213933346" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> James Wood <a href="https://mattecapu.github.io/ct-zulip-archive/stream/233104-theory:-logic/topic/Type.20theory.20and.20sequent.20calculus.html#213933346">(Oct 20 2020 at 15:11)</a>:</h4>
+<p>I think the only real difference is that it targets types rather than terms, and in μμ̃̃ you don't have to target eliminators as much as you do in natural deduction.</p>
+
+
+
+<a name="213933655"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/233104-theory%3A%20logic/topic/Type%20theory%20and%20sequent%20calculus/near/213933655" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Dan Doel <a href="https://mattecapu.github.io/ct-zulip-archive/stream/233104-theory:-logic/topic/Type.20theory.20and.20sequent.20calculus.html#213933655">(Oct 20 2020 at 15:12)</a>:</h4>
+<p>Well, that in itself is a huge difference. It's a type formation rule, not a term rule.</p>
+
+
+
+<a name="213934344"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/233104-theory%3A%20logic/topic/Type%20theory%20and%20sequent%20calculus/near/213934344" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> James Wood <a href="https://mattecapu.github.io/ct-zulip-archive/stream/233104-theory:-logic/topic/Type.20theory.20and.20sequent.20calculus.html#213934344">(Oct 20 2020 at 15:16)</a>:</h4>
+<p>But there are still computation rules between El and the constructors of the universe. For example, <code>El (A '+ B) ↝ El A + El B</code>, where <code>'+</code> is the code for the sum type former, and <code>+</code> is the actual type former.</p>
+
+
+
+<a name="214507356"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/233104-theory%3A%20logic/topic/Type%20theory%20and%20sequent%20calculus/near/214507356" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Alex Gryzlov <a href="https://mattecapu.github.io/ct-zulip-archive/stream/233104-theory:-logic/topic/Type.20theory.20and.20sequent.20calculus.html#214507356">(Oct 25 2020 at 19:25)</a>:</h4>
+<p>Mike Shulman's <a href="https://mikeshulman.github.io/catlog/catlog.pdf">https://mikeshulman.github.io/catlog/catlog.pdf</a> has quite a few mentions of sequent calculi, including this passage (page 48):</p>
+<blockquote>
+<p>... sequent calculus and natural deduction make <em>different</em> choices of which properties to ensure by their definitions of composition. Roughly speaking, sequent calculus chooses to make the <em>defining equations</em> of universal properties hold exactly (e.g. the composites of a paired morphism <code>&lt;f,g&gt; : X -&gt; A x B</code> with <code>pi_1</code>and <code>pi_2</code> are exactly <code>f</code> and <code>g</code> respectively); this is what the “principal case” of its cut-admissibility proof does.  On the other hand, natural deduction chooses to make the <em>naturality</em> of universal properties hold exactly; the equality between the two distinct sequent calculus derivations above expresses the naturality of pairing <code>&lt;f,g&gt; : X -&gt; A x B</code> with respect to precomposition by <code>pi_1</code>.</p>
+</blockquote>
+
+
+
+{% endraw %}
+
+<hr><p>Last updated: Feb 08 2022 at 00:29 UTC</p>

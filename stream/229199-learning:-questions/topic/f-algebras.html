@@ -1,0 +1,425 @@
+---
+layout: archive
+title: Zulip Chat Archive
+permalink: /stream/229199-learning:-questions/topic/f-algebras.html
+---
+
+<h2>Stream: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/index.html">learning: questions</a></h2>
+<h3>Topic: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/f-algebras.html">f-algebras</a></h3>
+
+<hr>
+
+<base href="https://categorytheory.zulipchat.com/">
+
+{% raw %}
+
+<a name="193049782"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/f-algebras/near/193049782" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> marcosh <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/f-algebras.html#193049782">(Apr 06 2020 at 14:29)</a>:</h4>
+<p>in Haskell you usually define <code>newtype Fix f = Fix (f (Fix f))</code> and treat it as the initial <code>f</code>-algebra for <code>f</code>. Do you know how on does generally proves that <code>Fix f</code> is actually the initial <code>f</code>-algebra for <code>f</code>? Does it hold for any functor <code>f</code>?</p>
+
+
+
+<a name="193050587"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/f-algebras/near/193050587" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Andre Knispel <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/f-algebras.html#193050587">(Apr 06 2020 at 14:34)</a>:</h4>
+<p>Check out <a href="https://www.semanticscholar.org/paper/Inductive-and-Coinductive-Types-with-Iteration-and-Geuvers/c88146f46742bab40cea56b152a8467182733eec" title="https://www.semanticscholar.org/paper/Inductive-and-Coinductive-Types-with-Iteration-and-Geuvers/c88146f46742bab40cea56b152a8467182733eec">https://www.semanticscholar.org/paper/Inductive-and-Coinductive-Types-with-Iteration-and-Geuvers/c88146f46742bab40cea56b152a8467182733eec</a></p>
+
+
+
+<a name="193050736"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/f-algebras/near/193050736" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Andre Knispel <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/f-algebras.html#193050736">(Apr 06 2020 at 14:35)</a>:</h4>
+<p>Also note that because of <code>undefined</code>, Haskell has no limits</p>
+
+
+
+<a name="193050817"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/f-algebras/near/193050817" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> marcosh <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/f-algebras.html#193050817">(Apr 06 2020 at 14:35)</a>:</h4>
+<p>thanks Andre</p>
+
+
+
+<a name="193050855"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/f-algebras/near/193050855" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> marcosh <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/f-algebras.html#193050855">(Apr 06 2020 at 14:35)</a>:</h4>
+<p>let's leave <code>undefined</code> aside for the moment</p>
+
+
+
+<a name="193050977"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/f-algebras/near/193050977" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> marcosh <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/f-algebras.html#193050977">(Apr 06 2020 at 14:36)</a>:</h4>
+<p>is some specific theorem of the paper relevant or the whole paper?</p>
+
+
+
+<a name="193051236"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/f-algebras/near/193051236" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Andre Knispel <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/f-algebras.html#193051236">(Apr 06 2020 at 14:38)</a>:</h4>
+<p>I think the Proof of Prop 3.4 is what you're looking for</p>
+
+
+
+<a name="193051253"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/f-algebras/near/193051253" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> marcosh <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/f-algebras.html#193051253">(Apr 06 2020 at 14:38)</a>:</h4>
+<p>thanks!</p>
+
+
+
+<a name="193051445"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/f-algebras/near/193051445" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Andre Knispel <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/f-algebras.html#193051445">(Apr 06 2020 at 14:39)</a>:</h4>
+<p>Oh, wait, I just realized that this uses a different definition than what you gave</p>
+
+
+
+<a name="193051566"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/f-algebras/near/193051566" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Jules Hedges <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/f-algebras.html#193051566">(Apr 06 2020 at 14:40)</a>:</h4>
+<p>I have a faint memory of being told that in Haskell-like categories (with lazy datatypes) initial algebras and final coalgebras coincide</p>
+
+
+
+<a name="193052150"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/f-algebras/near/193052150" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> marcosh <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/f-algebras.html#193052150">(Apr 06 2020 at 14:44)</a>:</h4>
+<p><span class="user-mention" data-user-id="281119">@Andre Knispel</span> looking here, 3.4 seems to be a Definition, are we looking at different versions of the paper?</p>
+
+
+
+<a name="193052475"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/f-algebras/near/193052475" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Andre Knispel <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/f-algebras.html#193052475">(Apr 06 2020 at 14:46)</a>:</h4>
+<p>Oh, sorry, that's not the same version of the paper that I have locally. It's Prop. 4.6 there</p>
+
+
+
+<a name="193052493"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/f-algebras/near/193052493" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> marcosh <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/f-algebras.html#193052493">(Apr 06 2020 at 14:46)</a>:</h4>
+<p>ah, thanks</p>
+
+
+
+<a name="193052818"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/f-algebras/near/193052818" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Andre Knispel <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/f-algebras.html#193052818">(Apr 06 2020 at 14:48)</a>:</h4>
+<p>I think this can probably be converted in what you want, just need to check something</p>
+
+
+
+<a name="193052910"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/f-algebras/near/193052910" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Andre Knispel <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/f-algebras.html#193052910">(Apr 06 2020 at 14:49)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="275901">Jules Hedges</span> <a href="#narrow/stream/229199-learning.3A-basic.20questions/topic/f-algebras/near/193051566" title="#narrow/stream/229199-learning.3A-basic.20questions/topic/f-algebras/near/193051566">said</a>:</p>
+<blockquote>
+<p>I have a faint memory of being told that in Haskell-like categories (with lazy datatypes) initial algebras and final coalgebras coincide</p>
+</blockquote>
+<p>That sounds interesting!</p>
+
+
+
+<a name="193053718"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/f-algebras/near/193053718" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Andre Knispel <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/f-algebras.html#193053718">(Apr 06 2020 at 14:54)</a>:</h4>
+<p>Yeah, so if you Church-encode your definition of <code>Fix</code>, you end up with <code>∀ X. (f X -&gt; X) -&gt; X</code>, which is exactly what you see there</p>
+
+
+
+<a name="193054165"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/f-algebras/near/193054165" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Andre Knispel <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/f-algebras.html#193054165">(Apr 06 2020 at 14:57)</a>:</h4>
+<p>I don't know how well Church encoding works for Haskell though</p>
+
+
+
+<a name="193056073"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/f-algebras/near/193056073" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> marcosh <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/f-algebras.html#193056073">(Apr 06 2020 at 15:10)</a>:</h4>
+<p>that's exactly <a href="https://hackage.haskell.org/package/recursion-schemes-5.1.3/docs/Data-Functor-Foldable.html#t:Mu" title="https://hackage.haskell.org/package/recursion-schemes-5.1.3/docs/Data-Functor-Foldable.html#t:Mu">https://hackage.haskell.org/package/recursion-schemes-5.1.3/docs/Data-Functor-Foldable.html#t:Mu</a></p>
+
+
+
+<a name="193056268"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/f-algebras/near/193056268" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> marcosh <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/f-algebras.html#193056268">(Apr 06 2020 at 15:11)</a>:</h4>
+<p>but the proposition you mention states the existence of a weakly intial algebra, so it does not guarantee uniqueness</p>
+
+
+
+<a name="193062155"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/f-algebras/near/193062155" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Andre Knispel <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/f-algebras.html#193062155">(Apr 06 2020 at 15:53)</a>:</h4>
+<p>I think generally the issue here is that it's not really possible to get uniqueness, at least not with the usual type theories. This is the whole issue with extensional equality not implying equality</p>
+
+
+
+<a name="193062613"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/f-algebras/near/193062613" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Andre Knispel <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/f-algebras.html#193062613">(Apr 06 2020 at 15:57)</a>:</h4>
+<p>You could of course quotient your category by extensional equality, which might what you want to do if you actually want to consider limits, but that seems like an ugly solution</p>
+
+
+
+<a name="193100287"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/f-algebras/near/193100287" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Gershom <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/f-algebras.html#193100287">(Apr 06 2020 at 20:53)</a>:</h4>
+<p>the initial question is answered by "lambek's lemma" which is described many places but here is one i found on a quick google <a href="http://www.cs.ru.nl/~jrot/coalgebra/ak-algebras.pdf" title="http://www.cs.ru.nl/~jrot/coalgebra/ak-algebras.pdf">http://www.cs.ru.nl/~jrot/coalgebra/ak-algebras.pdf</a></p>
+
+
+
+<a name="193101565"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/f-algebras/near/193101565" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Gershom <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/f-algebras.html#193101565">(Apr 06 2020 at 21:03)</a>:</h4>
+<p>the conditions for initial and final gadgets to coincide are given below remark 6.2.2 in fiore's thesis: <a href="https://www.lfcs.inf.ed.ac.uk/reports/94/ECS-LFCS-94-307/" title="https://www.lfcs.inf.ed.ac.uk/reports/94/ECS-LFCS-94-307/">https://www.lfcs.inf.ed.ac.uk/reports/94/ECS-LFCS-94-307/</a> (he doesn't use the words bilimit compact, but i've seen those around in more recent stuff)</p>
+
+
+
+<a name="193102403"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/f-algebras/near/193102403" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Andre Knispel <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/f-algebras.html#193102403">(Apr 06 2020 at 21:10)</a>:</h4>
+<p>How does lambek's lemma imply initiality?</p>
+
+
+
+<a name="193104933"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/f-algebras/near/193104933" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Gershom <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/f-algebras.html#193104933">(Apr 06 2020 at 21:33)</a>:</h4>
+<p>well my sense is consider the commutative square given here: <a href="https://ncatlab.org/nlab/show/initial+algebra+of+an+endofunctor#LambeksTheorem" title="https://ncatlab.org/nlab/show/initial+algebra+of+an+endofunctor#LambeksTheorem">https://ncatlab.org/nlab/show/initial+algebra+of+an+endofunctor#LambeksTheorem</a></p>
+<p>now, since we have F(F(X)) isomorphic to F(X) then that says we must have a pair (a,X) such that  F(X) = F(F(X)) = F(F(F(X)))... and clearly taking the fixed point of F itself satisfies this.</p>
+
+
+
+<a name="193107042"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/f-algebras/near/193107042" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> marcosh <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/f-algebras.html#193107042">(Apr 06 2020 at 21:53)</a>:</h4>
+<p>Lambek lemma says that given an initial <code>F</code>-algebra <code>(a, X)</code>, then <code>a : F X -&gt; X</code> is an isomorphism. Since it is initial it is the least fiexed point. Existence of an <code>F</code>-algebra could be given by Adamek theorem (<a href="https://ncatlab.org/nlab/show/initial+algebra+of+an+endofunctor#AdameksTheorem" title="https://ncatlab.org/nlab/show/initial+algebra+of+an+endofunctor#AdameksTheorem">https://ncatlab.org/nlab/show/initial+algebra+of+an+endofunctor#AdameksTheorem</a>). But why is it <code>Fix F</code> the least fixed point?</p>
+
+
+
+<a name="193107596"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/f-algebras/near/193107596" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Gershom <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/f-algebras.html#193107596">(Apr 06 2020 at 21:59)</a>:</h4>
+<p>By inspection, Fix f ~= Fix f (Fix f) ~= etc. So clearly it satisfies the requirement I gave above, which suffices to characterize it as an initial algebra.</p>
+
+
+
+<a name="193108422"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/f-algebras/near/193108422" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Christian Williams <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/f-algebras.html#193108422">(Apr 06 2020 at 22:06)</a>:</h4>
+<p>This was also being discussed at <a href="#narrow/stream/229156-practice.3A-applied.20ct/topic/Algebras/near/191558018" title="#narrow/stream/229156-practice.3A-applied.20ct/topic/Algebras/near/191558018">https://categorytheory.zulipchat.com/#narrow/stream/229156-practice.3A-applied.20ct/topic/Algebras/near/191558018</a>.<br>
+I'm very interested in this "<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">∀</mi></mrow><annotation encoding="application/x-tex">\forall</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.69444em;vertical-align:0em;"></span><span class="mord">∀</span></span></span></span>/end" way of describing the initial algebra, but I haven't yet wrapped my head around it.</p>
+
+
+
+<a name="193109464"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/f-algebras/near/193109464" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Christian Williams <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/f-algebras.html#193109464">(Apr 06 2020 at 22:17)</a>:</h4>
+<p>I picture <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">∀</mi><mi>X</mi><mi mathvariant="normal">.</mi><mo stretchy="false">(</mo><mi>F</mi><mi>X</mi><mo>→</mo><mi>X</mi><mo stretchy="false">)</mo><mo>→</mo><mi>X</mi></mrow><annotation encoding="application/x-tex">\forall X. (FX\to X)\to X</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">∀</span><span class="mord mathdefault" style="margin-right:0.07847em;">X</span><span class="mord">.</span><span class="mopen">(</span><span class="mord mathdefault" style="margin-right:0.13889em;">F</span><span class="mord mathdefault" style="margin-right:0.07847em;">X</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault" style="margin-right:0.07847em;">X</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.07847em;">X</span></span></span></span> as a big product (subject to naturality). Now this is an algebra in some canonical way. What is this object? What does it mean to apply <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi></mrow><annotation encoding="application/x-tex">F</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.13889em;">F</span></span></span></span> to it?</p>
+<p>Maybe it would help everyone if we brought in a concrete example. Let's take <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>:</mo><mrow><mi mathvariant="normal">S</mi><mi mathvariant="normal">e</mi><mi mathvariant="normal">t</mi></mrow><mo>→</mo><mrow><mi mathvariant="normal">S</mi><mi mathvariant="normal">e</mi><mi mathvariant="normal">t</mi></mrow></mrow><annotation encoding="application/x-tex">f:\mathrm{Set}\to \mathrm{Set}</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span class="mord mathdefault" style="margin-right:0.10764em;">f</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">:</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord"><span class="mord mathrm">S</span><span class="mord mathrm">e</span><span class="mord mathrm">t</span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord"><span class="mord mathrm">S</span><span class="mord mathrm">e</span><span class="mord mathrm">t</span></span></span></span></span> to be <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mo stretchy="false">(</mo><mi>X</mi><mo stretchy="false">)</mo><mo>=</mo><mn>1</mn><mo>+</mo><msup><mi>X</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">F(X)=1+X^2</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault" style="margin-right:0.13889em;">F</span><span class="mopen">(</span><span class="mord mathdefault" style="margin-right:0.07847em;">X</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.72777em;vertical-align:-0.08333em;"></span><span class="mord">1</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.8141079999999999em;vertical-align:0em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.07847em;">X</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141079999999999em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span></span></span></span>.</p>
+
+
+
+<a name="193110676"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/f-algebras/near/193110676" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Andre Knispel <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/f-algebras.html#193110676">(Apr 06 2020 at 22:28)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="276650">Gershom</span> <a href="#narrow/stream/229199-learning.3A-basic.20questions/topic/f-algebras/near/193107596" title="#narrow/stream/229199-learning.3A-basic.20questions/topic/f-algebras/near/193107596">said</a>:</p>
+<blockquote>
+<p>By inspection, Fix f ~= Fix f (Fix f) ~= etc. So clearly it satisfies the requirement I gave above, which suffices to characterize it as an initial algebra.</p>
+</blockquote>
+<p>There is still the issue of equality though. If you check <a href="https://ncatlab.org/nlab/show/initial+algebra+of+an+endofunctor#semantics_for_inductive_types" title="https://ncatlab.org/nlab/show/initial+algebra+of+an+endofunctor#semantics_for_inductive_types">https://ncatlab.org/nlab/show/initial+algebra+of+an+endofunctor#semantics_for_inductive_types</a> then you'll see that this only works in extensional theories (and that weak initial algebras are the equivalent in intensional theories). I don't know about the internals of Haskell enough to be able to say definitively how that category behaves, but for Coq, Agda and Idris this is what you get.</p>
+
+
+
+<a name="193111092"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/f-algebras/near/193111092" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nick Scheel <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/f-algebras.html#193111092">(Apr 06 2020 at 22:32)</a>:</h4>
+<p>Haskell is not a dependent type theory, it doesn’t have any internal notion of equality (extensional vs intensional), so we simply reason meta-theoretically using extensionality (and a lot of handwaving <span aria-label="wink" class="emoji emoji-1f609" role="img" title="wink">:wink:</span>)</p>
+
+
+
+<a name="193112269"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/f-algebras/near/193112269" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Andre Knispel <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/f-algebras.html#193112269">(Apr 06 2020 at 22:46)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="275899">Christian Williams</span> <a href="#narrow/stream/229199-learning.3A-basic.20questions/topic/f-algebras/near/193109464" title="#narrow/stream/229199-learning.3A-basic.20questions/topic/f-algebras/near/193109464">said</a>:</p>
+<blockquote>
+<p>I picture <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">∀</mi><mi>X</mi><mi mathvariant="normal">.</mi><mo stretchy="false">(</mo><mi>F</mi><mi>X</mi><mo>→</mo><mi>X</mi><mo stretchy="false">)</mo><mo>→</mo><mi>X</mi></mrow><annotation encoding="application/x-tex">\forall X. (FX\to X)\to X</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">∀</span><span class="mord mathdefault" style="margin-right:0.07847em;">X</span><span class="mord">.</span><span class="mopen">(</span><span class="mord mathdefault" style="margin-right:0.13889em;">F</span><span class="mord mathdefault" style="margin-right:0.07847em;">X</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault" style="margin-right:0.07847em;">X</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.07847em;">X</span></span></span></span> as a big product (subject to naturality). Now this is an algebra in some canonical way. What is this object? What does it mean to apply <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi></mrow><annotation encoding="application/x-tex">F</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.13889em;">F</span></span></span></span> to it?</p>
+<p>Maybe it would help everyone if we brought in a concrete example. Let's take <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>:</mo><mrow><mi mathvariant="normal">S</mi><mi mathvariant="normal">e</mi><mi mathvariant="normal">t</mi></mrow><mo>→</mo><mrow><mi mathvariant="normal">S</mi><mi mathvariant="normal">e</mi><mi mathvariant="normal">t</mi></mrow></mrow><annotation encoding="application/x-tex">f:\mathrm{Set}\to \mathrm{Set}</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span class="mord mathdefault" style="margin-right:0.10764em;">f</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">:</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord"><span class="mord mathrm">S</span><span class="mord mathrm">e</span><span class="mord mathrm">t</span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord"><span class="mord mathrm">S</span><span class="mord mathrm">e</span><span class="mord mathrm">t</span></span></span></span></span> to be <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mo stretchy="false">(</mo><mi>X</mi><mo stretchy="false">)</mo><mo>=</mo><mn>1</mn><mo>+</mo><msup><mi>X</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">F(X)=1+X^2</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault" style="margin-right:0.13889em;">F</span><span class="mopen">(</span><span class="mord mathdefault" style="margin-right:0.07847em;">X</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.72777em;vertical-align:-0.08333em;"></span><span class="mord">1</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.8141079999999999em;vertical-align:0em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.07847em;">X</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141079999999999em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span></span></span></span>.</p>
+</blockquote>
+<p>In general, this is the Church-encoding of that datatype. There are two ways I get my intuition for it: by considering special functors and by regarding elements as general ways to map out of that type.</p>
+<p><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi></mrow><annotation encoding="application/x-tex">F</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.13889em;">F</span></span></span></span> is usually derived from constructors of a datatype, and if you have <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi></mrow><annotation encoding="application/x-tex">n</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault">n</span></span></span></span> constructors, you can write <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi></mrow><annotation encoding="application/x-tex">F</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.13889em;">F</span></span></span></span> as <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>F</mi><mn>1</mn></msub><mo>+</mo><mo>⋯</mo><mo>+</mo><msub><mi>F</mi><mi>n</mi></msub></mrow><annotation encoding="application/x-tex">F_1 + \cdots + F_n</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.83333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.13889em;">F</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:-0.13889em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.66666em;vertical-align:-0.08333em;"></span><span class="minner">⋯</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.83333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.13889em;">F</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.151392em;"><span style="top:-2.5500000000000003em;margin-left:-0.13889em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">n</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span>. The constructor corresponding to <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>F</mi><mi>i</mi></msub></mrow><annotation encoding="application/x-tex">F_i</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.83333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.13889em;">F</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.31166399999999994em;"><span style="top:-2.5500000000000003em;margin-left:-0.13889em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span> is <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>F</mi><mi>i</mi></msub><mo stretchy="false">(</mo><mi>T</mi><mo stretchy="false">)</mo><mo>→</mo><mi>T</mi></mrow><annotation encoding="application/x-tex">F_i(T) \to T</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.13889em;">F</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.31166399999999994em;"><span style="top:-2.5500000000000003em;margin-left:-0.13889em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mopen">(</span><span class="mord mathdefault" style="margin-right:0.13889em;">T</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.13889em;">T</span></span></span></span> where <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>T</mi></mrow><annotation encoding="application/x-tex">T</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.13889em;">T</span></span></span></span> is the type we're defining. So in your example, the constructors would be <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>c</mi><mn>1</mn></msub><mo>:</mo><mi>T</mi></mrow><annotation encoding="application/x-tex">c_1 : T</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.58056em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathdefault">c</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">:</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.13889em;">T</span></span></span></span> and <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>c</mi><mn>2</mn></msub><mo>:</mo><msup><mi>T</mi><mn>2</mn></msup><mo>→</mo><mi>T</mi></mrow><annotation encoding="application/x-tex">c_2 : T^2 \to T</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.58056em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathdefault">c</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">:</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.8141079999999999em;vertical-align:0em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.13889em;">T</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141079999999999em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.13889em;">T</span></span></span></span>, which would be a type of binary trees.</p>
+<p>If you look at the Church encoding, let's see what you can do with it. Let's fix a type <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi></mrow><annotation encoding="application/x-tex">A</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault">A</span></span></span></span> and an element <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>t</mi><mo>:</mo><mi>T</mi></mrow><annotation encoding="application/x-tex">t : T</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.61508em;vertical-align:0em;"></span><span class="mord mathdefault">t</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">:</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.13889em;">T</span></span></span></span> of the type we defined. Then <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>t</mi><mi>A</mi></mrow><annotation encoding="application/x-tex">t A</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault">t</span><span class="mord mathdefault">A</span></span></span></span> has type <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mi>F</mi><mi>A</mi><mo>→</mo><mi>A</mi><mo stretchy="false">)</mo><mo>→</mo><mi>A</mi></mrow><annotation encoding="application/x-tex">(FA \to A) \to A</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord mathdefault" style="margin-right:0.13889em;">F</span><span class="mord mathdefault">A</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault">A</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault">A</span></span></span></span>, i.e. mapping an <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi></mrow><annotation encoding="application/x-tex">F</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.13889em;">F</span></span></span></span> algebra structure on <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi></mrow><annotation encoding="application/x-tex">A</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault">A</span></span></span></span> to an element of <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi></mrow><annotation encoding="application/x-tex">A</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault">A</span></span></span></span>. So if you consider the map <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>λ</mi><mi>t</mi><mo>:</mo><mi>T</mi><mi mathvariant="normal">.</mi><mi>t</mi><mi>A</mi><mi>a</mi><mi>l</mi><mi>g</mi><mo>:</mo><mi>T</mi><mo>→</mo><mi>A</mi></mrow><annotation encoding="application/x-tex">\lambda t : T. t A alg : T \to A</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.69444em;vertical-align:0em;"></span><span class="mord mathdefault">λ</span><span class="mord mathdefault">t</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">:</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span class="mord mathdefault" style="margin-right:0.13889em;">T</span><span class="mord">.</span><span class="mord mathdefault">t</span><span class="mord mathdefault">A</span><span class="mord mathdefault">a</span><span class="mord mathdefault" style="margin-right:0.01968em;">l</span><span class="mord mathdefault" style="margin-right:0.03588em;">g</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">:</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.13889em;">T</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault">A</span></span></span></span> for some <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mi>l</mi><mi>g</mi></mrow><annotation encoding="application/x-tex">alg</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span class="mord mathdefault">a</span><span class="mord mathdefault" style="margin-right:0.01968em;">l</span><span class="mord mathdefault" style="margin-right:0.03588em;">g</span></span></span></span>, you can define morphisms out of <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>T</mi></mrow><annotation encoding="application/x-tex">T</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.13889em;">T</span></span></span></span>. And this is basically the only way you can map out of <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>T</mi></mrow><annotation encoding="application/x-tex">T</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.13889em;">T</span></span></span></span>. This gives you a fold, and from that you can also derive recursion.</p>
+
+
+
+<a name="193112383"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/f-algebras/near/193112383" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Andre Knispel <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/f-algebras.html#193112383">(Apr 06 2020 at 22:47)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="276057">Nicholas Scheel</span> <a href="#narrow/stream/229199-learning.3A-basic.20questions/topic/f-algebras/near/193111092" title="#narrow/stream/229199-learning.3A-basic.20questions/topic/f-algebras/near/193111092">said</a>:</p>
+<blockquote>
+<p>Haskell is not a dependent type theory, it doesn’t have any internal notion of equality (extensional vs intensional), so we simply reason meta-theoretically using extensionality (and a lot of handwaving <span aria-label="wink" class="emoji emoji-1f609" role="img" title="wink">:wink:</span>)</p>
+</blockquote>
+<p>Well, there still need to be some form of equality on the morphisms if you actually define the category though. Are functions equal if their code is equal or if the produce the same output given the same input? That gives you different categories.</p>
+
+
+
+<a name="193112687"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/f-algebras/near/193112687" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/f-algebras.html#193112687">(Apr 06 2020 at 22:51)</a>:</h4>
+<p>I don't know anything about this, but I'll still say something: </p>
+<p>You'd darn well better have a category where morphisms are actual programs (or at least useful "isomorphism classes" of programs), and another category where programs that produce the same output given the same input count as the same morphism, and a functor from the first category to the second.</p>
+
+
+
+<a name="193112995"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/f-algebras/near/193112995" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Andre Knispel <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/f-algebras.html#193112995">(Apr 06 2020 at 22:55)</a>:</h4>
+<p>I'm pretty sure that's the case, there are even different levels to this depending on if you work within the language or look at it from the outside</p>
+
+
+
+<a name="193113189"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/f-algebras/near/193113189" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Andre Knispel <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/f-algebras.html#193113189">(Apr 06 2020 at 22:58)</a>:</h4>
+<p>There is also this nice paper <a href="https://arxiv.org/abs/1011.0014" title="https://arxiv.org/abs/1011.0014">https://arxiv.org/abs/1011.0014</a><br>
+It doesn't deal with types, but in the case of simple programs on natural numbers it gives you a whole galois correspondence</p>
+
+
+
+<a name="193113496"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/f-algebras/near/193113496" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nick Scheel <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/f-algebras.html#193113496">(Apr 06 2020 at 23:01)</a>:</h4>
+<p>Sorry, I misunderstood what extensionality was referring to. Haskell would probably be considered an extensional type theory, because types cannot be equal in interesting ways and it has a form of equality reflection. But my other point still stands. If you were to define a category to reason about Haskell, it would most likely use function extensionality too, but there are greater obstructions there (“Hask is not a category”, non-strictness, etc.).</p>
+
+
+
+<a name="193114016"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/f-algebras/near/193114016" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Andre Knispel <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/f-algebras.html#193114016">(Apr 06 2020 at 23:07)</a>:</h4>
+<p>I mean it wasn't really clear the way I've phrased it, usually you think internally if you care about these things <span aria-label="slight smile" class="emoji emoji-1f642" role="img" title="slight smile">:slight_smile:</span> </p>
+<p>I really want to see what could be done with applying the paper I've mentioned to such a setting (I haven't checked if there were any follow ups on this though). Naively, it seems to have the potential to categorize the issues with how to define it properly (pun intended).</p>
+
+
+
+<a name="193114342"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/f-algebras/near/193114342" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Andre Knispel <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/f-algebras.html#193114342">(Apr 06 2020 at 23:11)</a>:</h4>
+<p>If that was possible, you'd have a tower of different categories with projections between them, with maybe the category formed by syntax at the top and the "classical mathematical picture" at the bottom and maybe some stuff in between. And if it fully works out, some automorphisms that correspond to that structure. That would be pretty cool.</p>
+
+
+
+<a name="193114850"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/f-algebras/near/193114850" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nick Scheel <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/f-algebras.html#193114850">(Apr 06 2020 at 23:18)</a>:</h4>
+<p>My guess is that the bottom layer “programs” would be syntax quotiented by definitional equality, otherwise the composition in the category isn’t well-behaved. Well, you at the very least need to quotient out <code>f . g = \x -&gt; f (g x)</code> and <code>id x = x</code>, so that identities and associativities hold. Actually, that’s not quite true, you also need eta-equivalence: <code>f = \x -&gt; f x</code>.</p>
+
+
+
+<a name="193114933"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/f-algebras/near/193114933" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Andre Knispel <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/f-algebras.html#193114933">(Apr 06 2020 at 23:20)</a>:</h4>
+<p>I think you can just quotient by extensional equality (for Haskell)</p>
+
+
+
+<a name="193115004"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/f-algebras/near/193115004" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Andre Knispel <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/f-algebras.html#193115004">(Apr 06 2020 at 23:20)</a>:</h4>
+<p>You can probably do so as well in dependent type theories, but I'm not sure if you'd want to</p>
+
+
+
+<a name="193115548"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/f-algebras/near/193115548" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nick Scheel <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/f-algebras.html#193115548">(Apr 06 2020 at 23:29)</a>:</h4>
+<p>Sorry, I guess I flipped top/bottom from what you mentioned. Would you quotient the syntax side of it or the semantics side of it by extensional equality?</p>
+
+
+
+<a name="193115681"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/f-algebras/near/193115681" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Andre Knispel <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/f-algebras.html#193115681">(Apr 06 2020 at 23:31)</a>:</h4>
+<p>I'd quotient the syntax. So you could first quotient out the equations you mentioned at the first step and then extensional equality at the second step</p>
+
+
+
+<a name="193115922"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/f-algebras/near/193115922" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Andre Knispel <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/f-algebras.html#193115922">(Apr 06 2020 at 23:34)</a>:</h4>
+<p>I've just played around with the intuition a little bit, and it seems plausible to get a Galois connection from this. So the category given by quotienting by the equations you gave would give you a subgroup of the automorphisms of the syntactic category, namely those that keep objects fixed (I think) and only perform rewrites with those equations on the morphisms</p>
+
+
+
+<a name="193116052"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/f-algebras/near/193116052" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nick Scheel <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/f-algebras.html#193116052">(Apr 06 2020 at 23:36)</a>:</h4>
+<p>it would be interesting to think about optimizations in this framework</p>
+
+
+
+<a name="193116146"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/f-algebras/near/193116146" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Andre Knispel <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/f-algebras.html#193116146">(Apr 06 2020 at 23:38)</a>:</h4>
+<p>Indeed, you could get functorial compiler optimizations</p>
+
+
+
+<a name="193116295"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/f-algebras/near/193116295" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Andre Knispel <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/f-algebras.html#193116295">(Apr 06 2020 at 23:40)</a>:</h4>
+<p>Seems like the author of that paper hasn't followed up on it, so confirming if it actually works in a typed setting would need some actual work</p>
+
+
+
+<a name="193120362"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/f-algebras/near/193120362" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Gershom <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/f-algebras.html#193120362">(Apr 07 2020 at 00:44)</a>:</h4>
+<p>There is a standard notion of a tower of the sort described going between syntax and semantics. this is the tower (or really lattice) of abstract interpretation as given in e.g. <a href="https://www.di.ens.fr/~cousot/COUSOTpapers/ENTCS-97.shtml" title="https://www.di.ens.fr/~cousot/COUSOTpapers/ENTCS-97.shtml">https://www.di.ens.fr/~cousot/COUSOTpapers/ENTCS-97.shtml</a></p>
+
+
+
+<a name="193120539"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/f-algebras/near/193120539" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Gershom <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/f-algebras.html#193120539">(Apr 07 2020 at 00:46)</a>:</h4>
+<p>btw the nlab link above links eventually to wadler's classic note that describes the fixpoint construction in the initial question and gives a full proof, discussing both weak and strict settings <a href="https://homepages.inf.ed.ac.uk/wadler/papers/free-rectypes/free-rectypes.txt" title="https://homepages.inf.ed.ac.uk/wadler/papers/free-rectypes/free-rectypes.txt">https://homepages.inf.ed.ac.uk/wadler/papers/free-rectypes/free-rectypes.txt</a></p>
+
+
+
+<a name="193120714"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/f-algebras/near/193120714" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Gershom <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/f-algebras.html#193120714">(Apr 07 2020 at 00:49)</a>:</h4>
+<p>and finally another notion of a "tower" is given in the lovely paper by John and Christian on enriched lawvere theories and operational semantics: <a href="https://arxiv.org/abs/1905.05636" title="https://arxiv.org/abs/1905.05636">https://arxiv.org/abs/1905.05636</a>  <span class="user-mention" data-user-id="275920">@John Baez</span> btw you may not have thought of your work in light of the cousot &amp; cousot stuff on abstract interpretation. i wonder if it may be of interest to you.</p>
+
+
+
+<a name="193123770"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/f-algebras/near/193123770" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/f-algebras.html#193123770">(Apr 07 2020 at 01:48)</a>:</h4>
+<p>That paper has lots of scary symbols.  <span aria-label="ogre" class="emoji emoji-1f479" role="img" title="ogre">:ogre:</span></p>
+
+
+
+<a name="193123870"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/f-algebras/near/193123870" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/f-algebras.html#193123870">(Apr 07 2020 at 01:50)</a>:</h4>
+<p>I have trouble with papers like this:</p>
+<p><a href="/user_uploads/21317/DXC1qYrWPoNneMCaxG30Ii-6/cousot.jpg" title="cousot.jpg">cousot.jpg</a></p>
+<div class="message_inline_image"><a href="/user_uploads/21317/DXC1qYrWPoNneMCaxG30Ii-6/cousot.jpg" title="cousot.jpg"><img src="/user_uploads/21317/DXC1qYrWPoNneMCaxG30Ii-6/cousot.jpg"></a></div>
+
+
+
+<a name="193123902"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/f-algebras/near/193123902" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nathanael Arkor <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/f-algebras.html#193123902">(Apr 07 2020 at 01:51)</a>:</h4>
+<p><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">⟨</mo><mo separator="true">,</mo><mi>τ</mi><mo stretchy="false">⟩</mo></mrow><annotation encoding="application/x-tex">\langle, \tau \rangle</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">⟨</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathdefault" style="margin-right:0.1132em;">τ</span><span class="mclose">⟩</span></span></span></span> seems particularly mysterious</p>
+
+
+
+<a name="193123904"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/f-algebras/near/193123904" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/f-algebras.html#193123904">(Apr 07 2020 at 01:51)</a>:</h4>
+<p>Maybe you can tell me a bit about the basic idea, Gershom?</p>
+
+
+
+<a name="193124203"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/f-algebras/near/193124203" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> sarahzrf <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/f-algebras.html#193124203">(Apr 07 2020 at 01:57)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="276092">Nathanael Arkor</span> <a href="#narrow/stream/229199-learning.3A-basic.20questions/topic/f-algebras/near/193123902" title="#narrow/stream/229199-learning.3A-basic.20questions/topic/f-algebras/near/193123902">said</a>:</p>
+<blockquote>
+<p><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">⟨</mo><mo separator="true">,</mo><mi>τ</mi><mo stretchy="false">⟩</mo></mrow><annotation encoding="application/x-tex">\langle, \tau \rangle</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">⟨</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathdefault" style="margin-right:0.1132em;">τ</span><span class="mclose">⟩</span></span></span></span> seems particularly mysterious</p>
+</blockquote>
+<p><code>-XTupleSections</code> <span aria-label="thinking" class="emoji emoji-1f914" role="img" title="thinking">:thinking:</span></p>
+
+
+
+<a name="193130260"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/f-algebras/near/193130260" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Gershom <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/f-algebras.html#193130260">(Apr 07 2020 at 04:17)</a>:</h4>
+<p>Hrm ok. Let me give this "explaining" thing a shot.</p>
+<p>So when one has a computer program, a typical thing to want to do is verify properties of it that hold under many different inputs, but do so without running under all such inputs. This is "static analysis". (I.e. you analyze it as a static object without dynamically executing it). One very powerful method of static analysis is something called "abstract interpretation" which you can think of as "running the program on generic inputs" or "running the program in an abstract domain" or the like. So imagine you want to prove that a result of a program that sends a number to another number never exceeds 100. You can give a suitably modified version of the program that does interval arithmetic a number that represents the range of the input, and then just examine the range of the output. Suppose you hit a choice point where the program branches if the number is greater than 50 or not. Your "abstracted" program can then take "both" paths, and attempt to "merge back" to the unioned state representing the range of possible values that can occur no matter which path was taken. So you need some way to "split" your bags of "general values" and "merge" them as well.</p>
+<p>Along with extrema, one can verify things like e.g. memory safety, type soundness, various information security properties, etc. You just need to pick the right "abstract domain" to interpret into that tracks exactly the information you want, and turns the rest into "generalized data". And of course there are many tradeoffs between how precise you are, how hard it is to do, and how much information you can track. I should note this is a "real world" technique that has been used in practice to verify safety-critical software for areospace and the like.</p>
+<p>What the Cousots worked on is a general formalism for this sort of thing, to let you believe that your original program and the abstracted interpretation of the program bear the sort of relationship you would like.</p>
+<p>If you're in a theory without recursion, all this is very straightforward. It really is just sort of starting with an algebraic theory, and interpreting it with different models. But we want to work in real programs, with unbounded recursion. So they came up with a lattice theoretic formulation so that domain theory and fixpoint operators can be used, and a way of interpreting morphisms between different lattice-theoretic "abstract domains" so that you can show something is a "correct" abstract interpretation -- i.e. that it exists somewhere "between" the syntax and the intended concrete semantics, so that you can go all the way down, then partway back "up" or partway down, then the rest of the way down, and always end up in the same place. You also want to make sure that even if your original program is recursive and may never terminate, the "abstract domain" you interpret into should have some fixpoint semantics such that it _does_ terminate. (otherwise your "static" analysis may never complete).</p>
+<p>That's where all the dense notation comes from.</p>
+<p>you might be thinking "all this stuff about syntax and semantics and algebraic theories and their models sounds like there's some adjoints about." Indeed, there are ! One approach to how to get correct and terminating abstract interpretations is to construct the "abstract domain" as a lattice which relates to the "concrete domain" via a nice galois connection. This lets product types, function types, etc. be "pushed through" in a very general way.  (Which makes sense, because to be a "sensible" interpretation, it is reasonable that you would want to preserve either meets or joins, depending on how you come at it).</p>
+<p>The paper I linked above is a later paper that's dense, but I just really wanted to highlight the diagram on the last page that shows the big tower of related interpretations and semantics.</p>
+<p>The earliest paper is probably the most directly readable, or rather difficulty in reading it arises not because it is complicated, but just because it is old: <a href="https://courses.cs.washington.edu/courses/cse501/15sp/papers/cousot.pdf" title="https://courses.cs.washington.edu/courses/cse501/15sp/papers/cousot.pdf">https://courses.cs.washington.edu/courses/cse501/15sp/papers/cousot.pdf</a></p>
+<p>A later paper that explains the galois connection approach a bit is: <a href="https://www.di.ens.fr/~cousot/COUSOTpapers/publications.www/CousotCousot-PLILP-92-LNCS-n631-p269--295-1992.pdf" title="https://www.di.ens.fr/~cousot/COUSOTpapers/publications.www/CousotCousot-PLILP-92-LNCS-n631-p269--295-1992.pdf">https://www.di.ens.fr/~cousot/COUSOTpapers/publications.www/CousotCousot-PLILP-92-LNCS-n631-p269--295-1992.pdf</a></p>
+<p>I confess I like the galois approach because it is simple and pretty, so don't really get what's happening with the "widening" stuff which the paper argues is more powerful. With the right categorical toolkit, I wonder if the latter approach can't be made prettier as well.</p>
+
+
+
+<a name="193141494"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/f-algebras/near/193141494" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Sam Tenka <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/f-algebras.html#193141494">(Apr 07 2020 at 05:14)</a>:</h4>
+<p>In abstract interpretation, "widening" refers to an intentional overapproximation step to make the fixpoint search terminate, e.g.:</p>
+<p>If we want to analyze a program with an integer variable, we might abstract its state using a lattice of intervals like [1, 6].  But since this lattice isn't noetherian, an ascending search for a least fixpoint might not terminate: [1, 6], then [1, 7], then etc.  Instead, at some point we might just "widen" to something that surely is an upper bound, in this case e.g. the top element.  One way to think about this is to use the lattice of intervals except without any intervals of size too big --- so we immediately jump to top.  But there are other cases one might want to widen, even if the lattice technically has Ascending Chain condition (e.g. the chains might be impractically long!)</p>
+
+
+
+<a name="193148077"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/f-algebras/near/193148077" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> marcosh <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/f-algebras.html#193148077">(Apr 07 2020 at 07:18)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="276650">Gershom</span> <a href="#narrow/stream/229199-learning.3A-basic.20questions/topic/f-algebras/near/193107596" title="#narrow/stream/229199-learning.3A-basic.20questions/topic/f-algebras/near/193107596">said</a>:</p>
+<blockquote>
+<p>By inspection, Fix f ~= Fix f (Fix f) ~= etc. So clearly it satisfies the requirement I gave above, which suffices to characterize it as an initial algebra.</p>
+</blockquote>
+<p><span class="user-mention" data-user-id="276650">@Gershom</span> I'm sorry but I'm not sure I follow your reasoning. Which requirement are you referring to? Could you expand on it, please?</p>
+
+
+
+<a name="193153319"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/f-algebras/near/193153319" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Gershom <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/f-algebras.html#193153319">(Apr 07 2020 at 08:15)</a>:</h4>
+<p>By requirement I simply meant that F(X) =~ X. I agree the sketch I gave was handwavy. You need other ambient properties of the category you're working in -- things like fixed points actually existing, etc.  And you need to be in a very special situation (which Haskell has) for the fixed point to imply initiality and not simply vice-versa. The wadler note I linked does it up right.</p>
+<p><span class="user-mention" data-user-id="281272">@Sam Tenka (naive student)</span> thanks for that nice explanation of widening. I understand the paper I linked gives an example where widening cannot be captured by a galois connection. But surely there must be some more general way of thinking about adjoints where it makes sense?</p>
+
+
+
+{% endraw %}
+
+<hr><p>Last updated: Feb 08 2022 at 00:29 UTC</p>

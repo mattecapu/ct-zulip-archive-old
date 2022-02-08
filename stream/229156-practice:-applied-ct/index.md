@@ -9,8 +9,8 @@ permalink: /stream/229156-practice:-applied-ct/index.html
 
 ### Topics:
 
+* [ACT as a field](topic/ACT.20as.20a.20field.html) (279 messages, latest: Jan 30 2022 at 10:27)
 * [spans and images](topic/spans.20and.20images.html) (125 messages, latest: Jan 28 2022 at 16:55)
-* [ACT as a field](topic/ACT.20as.20a.20field.html) (278 messages, latest: Jan 05 2022 at 14:39)
 * [formalizing ACT](topic/formalizing.20ACT.html) (2 messages, latest: Jan 04 2022 at 13:06)
 * [properties of objects (in context of imaging)](topic/properties.20of.20objects.20(in.20context.20of.20imaging).html) (1 message, latest: Jan 03 2022 at 21:51)
 * [observing structured objects](topic/observing.20structured.20objects.html) (11 messages, latest: Dec 21 2021 at 19:41)
@@ -137,4 +137,4 @@ permalink: /stream/229156-practice:-applied-ct/index.html
 * [AACT2020](topic/AACT2020.html) (1 message, latest: Mar 24 2020 at 00:56)
 * [welcome](topic/welcome.html) (15 messages, latest: Mar 24 2020 at 00:03)
 
-<hr><p>Last updated: Jan 30 2022 at 00:30 UTC</p>
+<hr><p>Last updated: Feb 08 2022 at 00:29 UTC</p>

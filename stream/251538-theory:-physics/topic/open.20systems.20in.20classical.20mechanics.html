@@ -1,0 +1,186 @@
+---
+layout: archive
+title: Zulip Chat Archive
+permalink: /stream/251538-theory:-physics/topic/open.20systems.20in.20classical.20mechanics.html
+---
+
+<h2>Stream: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/251538-theory:-physics/index.html">theory: physics</a></h2>
+<h3>Topic: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/251538-theory:-physics/topic/open.20systems.20in.20classical.20mechanics.html">open systems in classical mechanics</a></h3>
+
+<hr>
+
+<base href="https://categorytheory.zulipchat.com/">
+
+{% raw %}
+
+<a name="205978775"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/251538-theory%3A%20physics/topic/open%20systems%20in%20classical%20mechanics/near/205978775" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/251538-theory:-physics/topic/open.20systems.20in.20classical.20mechanics.html#205978775">(Aug 05 2020 at 01:05)</a>:</h4>
+<p>Here's a blog article about a paper I just finished:</p>
+<ul>
+<li><a href="https://johncarlosbaez.wordpress.com/2020/08/05/open-systems-in-classical-mechanics/">Open systems in classical mechanics</a>.</li>
+</ul>
+<p>It uses spans to start studying classical mechanics compositionally.</p>
+
+
+
+<a name="206010151"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/251538-theory%3A%20physics/topic/open%20systems%20in%20classical%20mechanics/near/206010151" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> [Mod] Morgan Rogers <a href="https://mattecapu.github.io/ct-zulip-archive/stream/251538-theory:-physics/topic/open.20systems.20in.20classical.20mechanics.html#206010151">(Aug 05 2020 at 11:16)</a>:</h4>
+<p>It's been a while since I did any hands-on physics, and I'm a little lazy to take a full dive into your paper, so forgive me if my question seems silly. When you say "We can equip all the symplectic manifolds in this story with Hamiltonians", and then say it's a big deal that you're doing this for the feet of the spans as well as the apex, why is that? When equipping Hamiltonians, don't you do so on the underlying category <em>before</em> taking spans? That is, if one is composing spans with Hamiltonians, shouldn't the Hamiltonians of the intermediate system match up for that to make sense, and shouldn't the Hamiltonian on the apex be constrained to be compatible with the Hamiltonians on the feet?</p>
+<p>Another way of saying what I'm trying to ask is, why isn't "HamSy" an exactly analogous construction to the category of spans of Poisson maps, but on a slightly richer category? I gather that taking pullbacks is not straightforward in the richer setting; is that the root of it?</p>
+
+
+
+<a name="206301787"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/251538-theory%3A%20physics/topic/open%20systems%20in%20classical%20mechanics/near/206301787" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/251538-theory:-physics/topic/open.20systems.20in.20classical.20mechanics.html#206301787">(Aug 07 2020 at 19:48)</a>:</h4>
+<blockquote>
+<p>When you say "We can equip all the symplectic manifolds in this story with Hamiltonians",  and then sat it's a big deal that you're doing this for the feet of the spans as well as the apex, why is that?</p>
+</blockquote>
+<p>Just for people who didn't read my blog article: I didn't exactly say it was a "big deal".   It's only "big" in a rather technical sense, namely that this prevents our theory of open classical systems from fitting into the "decorated cospan" or "structured cospan" frameworks that some of us have been working on for a while.     Nobody who wasn't closely following these technical developments would care much.</p>
+
+
+
+<a name="206302463"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/251538-theory%3A%20physics/topic/open%20systems%20in%20classical%20mechanics/near/206302463" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/251538-theory:-physics/topic/open.20systems.20in.20classical.20mechanics.html#206302463">(Aug 07 2020 at 19:55)</a>:</h4>
+<blockquote>
+<p>When equipping Hamiltonians, don't you do so on the underlying category before taking spans?</p>
+</blockquote>
+<p>No, because we don't want to require that the legs of the spans are morphisms "preserving" the Hamiltonians, and perhaps more importantly when we compose two spans to get the Hamiltonian on the new apex we add the Hamiltonians on the apices of the spans we're composing (after pulling them back) and subtract the Hamiltonian on the common foot (after pulling it back).</p>
+
+
+
+<a name="206302539"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/251538-theory%3A%20physics/topic/open%20systems%20in%20classical%20mechanics/near/206302539" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/251538-theory:-physics/topic/open.20systems.20in.20classical.20mechanics.html#206302539">(Aug 07 2020 at 19:56)</a>:</h4>
+<p>This tricky-sounding rule says that when you glue together two physical systems by identifying a piece of one with an isomorphic piece of the other, the energy of the resulting system is the sum of the energies of the two systems you glued together, minus the energy in the piece you've identified.   The subtraction is necessary to avoid "double-counting".</p>
+
+
+
+<a name="206302566"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/251538-theory%3A%20physics/topic/open%20systems%20in%20classical%20mechanics/near/206302566" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/251538-theory:-physics/topic/open.20systems.20in.20classical.20mechanics.html#206302566">(Aug 07 2020 at 19:56)</a>:</h4>
+<blockquote>
+<p>Another way of saying what I'm trying to ask is, why isn't "HamSy" an exactly analogous construction to the category of spans of Poisson maps, but on a slightly richer category? </p>
+</blockquote>
+<p>I think not; I think <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="sans-serif">H</mi><mi mathvariant="sans-serif">a</mi><mi mathvariant="sans-serif">m</mi><mi mathvariant="sans-serif">S</mi><mi mathvariant="sans-serif">y</mi></mrow><annotation encoding="application/x-tex">\mathsf{HamSy}</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span class="mord"><span class="mord mathsf">H</span><span class="mord mathsf">a</span><span class="mord mathsf">m</span><span class="mord mathsf">S</span><span class="mord mathsf" style="margin-right:0.01389em;">y</span></span></span></span></span> is not a decorated or structured cospan category, thanks to the sneaky rule for getting the Hamiltonian of a composite system.</p>
+<p>I should try to <em>prove</em> it's not.</p>
+
+
+
+<a name="206302580"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/251538-theory%3A%20physics/topic/open%20systems%20in%20classical%20mechanics/near/206302580" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/251538-theory:-physics/topic/open.20systems.20in.20classical.20mechanics.html#206302580">(Aug 07 2020 at 19:56)</a>:</h4>
+<blockquote>
+<p>I gather that taking pullbacks is not straightforward in the richer setting; is that the root of it?</p>
+</blockquote>
+<p>That's a somewhat different issue, that we also have to deal with.</p>
+
+
+
+<a name="206347264"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/251538-theory%3A%20physics/topic/open%20systems%20in%20classical%20mechanics/near/206347264" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> [Mod] Morgan Rogers <a href="https://mattecapu.github.io/ct-zulip-archive/stream/251538-theory:-physics/topic/open.20systems.20in.20classical.20mechanics.html#206347264">(Aug 08 2020 at 12:59)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="275920">John Baez</span> <a href="#narrow/stream/251538-theory.3A-physics/topic/open.20systems.20in.20classical.20mechanics/near/206302463">said</a>:</p>
+<blockquote>
+<blockquote>
+<p>When equipping Hamiltonians, don't you do so on the underlying category before taking spans?</p>
+</blockquote>
+<p>No, because we don't want to require that the legs of the spans are morphisms "preserving" the Hamiltonians, and perhaps more importantly when we compose two spans to get the Hamiltonian on the new apex we add the Hamiltonians on the apices of the spans we're composing (after pulling them back) and subtract the Hamiltonian on the common foot (after pulling it back).</p>
+</blockquote>
+<p>Aren't there constraints on the Hamiltonians of subsystems of a common system? If not, why not, and if so, shouldn't there be morphisms (possibly in the opposite direction to the Poisson maps) expressing this? The formula you describe does sound a lot like the formula you would get for a pushout, after all.</p>
+
+
+
+<a name="206353560"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/251538-theory%3A%20physics/topic/open%20systems%20in%20classical%20mechanics/near/206353560" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/251538-theory:-physics/topic/open.20systems.20in.20classical.20mechanics.html#206353560">(Aug 08 2020 at 16:05)</a>:</h4>
+<blockquote>
+<p>Aren't there constraints on the Hamiltonians of subsystems of a common system?</p>
+</blockquote>
+<p>Not sure what you mean.  When we compose open systems, which are cospans with extra structure, we demand that the Hamiltonians on the feet match.  But we don't impose any relation between the Hamiltonian on the feet of a span and the Hamiltonian on the apex.</p>
+<blockquote>
+<p>If not, why not?</p>
+</blockquote>
+<p>Because there's no way to determine the energy of a subsystem just from the energy of the whole system, or vice versa; in general they obey no relation whatsoever.</p>
+
+
+
+<a name="206353817"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/251538-theory%3A%20physics/topic/open%20systems%20in%20classical%20mechanics/near/206353817" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> [Mod] Morgan Rogers <a href="https://mattecapu.github.io/ct-zulip-archive/stream/251538-theory:-physics/topic/open.20systems.20in.20classical.20mechanics.html#206353817">(Aug 08 2020 at 16:11)</a>:</h4>
+<p>In the example of particles on ends of a spring you give in the blog post, the kinetic energy of either particle surely makes an additive contribution to the energy of the system, doesn't it? Although the calculation for potentials seems more difficult...</p>
+
+
+
+<a name="206354113"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/251538-theory%3A%20physics/topic/open%20systems%20in%20classical%20mechanics/near/206354113" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> [Mod] Morgan Rogers <a href="https://mattecapu.github.io/ct-zulip-archive/stream/251538-theory:-physics/topic/open.20systems.20in.20classical.20mechanics.html#206354113">(Aug 08 2020 at 16:18)</a>:</h4>
+<p>As another example, if I have (a classical model of) two atoms in a molecule (such as the two hydrogens in a water molecule), their individual energies are not determined by the energy of the molecule, nor do their energies determine the energy of the entire system since there is another big piece attached, but there must surely be constraints in each direction?</p>
+
+
+
+<a name="206364191"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/251538-theory%3A%20physics/topic/open%20systems%20in%20classical%20mechanics/near/206364191" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/251538-theory:-physics/topic/open.20systems.20in.20classical.20mechanics.html#206364191">(Aug 08 2020 at 21:11)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="277473">[Mod] Morgan Rogers</span> <a href="#narrow/stream/251538-theory.3A-physics/topic/open.20systems.20in.20classical.20mechanics/near/206353817">said</a>:</p>
+<blockquote>
+<p>In the example of particles on ends of a spring you give in the blog post, the kinetic energy of either particle surely makes an additive contribution to the energy of the system, doesn't it? </p>
+</blockquote>
+<p>Kinetic energy is additive in a certain sense.  But when you're doing Hamiltonian mechanics with general symplectic manifolds, there's no concept of "kinetic" versus "potential" energy: energy is just an arbitrary smooth function on your symplectic manifold of states.</p>
+<p>In this situation there's no general relation that holds between the energy of a whole system and the energies of two randomly chosen subsystems of that system, so we specify all three.</p>
+
+
+
+<a name="206364380"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/251538-theory%3A%20physics/topic/open%20systems%20in%20classical%20mechanics/near/206364380" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/251538-theory:-physics/topic/open.20systems.20in.20classical.20mechanics.html#206364380">(Aug 08 2020 at 21:17)</a>:</h4>
+<p>We also have a setup for open Lagrangian systems, which is formally analogous.</p>
+<p>In the Lagrangian approach there's a distinction between kinetic and potential energy built in - at least at the level of generality <em>we</em> work at (which is not maximally general).   The configuration space (= space of possible "positions") is a Riemannian manifold.    A point in the tangent bundle specifies a position and velocity.  The Riemannian metric lets us compute the kinetic energy from the velocity.  The potential energy is an arbitrary smooth function on the Riemannian manifold.  The Lagrangian is the kinetic energy minus the potential energy.</p>
+<p>Now our open systems are spans of Riemannian manifolds where the apex and feet are equipped with potential functions.</p>
+
+
+
+<a name="206398106"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/251538-theory%3A%20physics/topic/open%20systems%20in%20classical%20mechanics/near/206398106" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> [Mod] Morgan Rogers <a href="https://mattecapu.github.io/ct-zulip-archive/stream/251538-theory:-physics/topic/open.20systems.20in.20classical.20mechanics.html#206398106">(Aug 09 2020 at 14:51)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="275920">John Baez</span> <a href="#narrow/stream/251538-theory.3A-physics/topic/open.20systems.20in.20classical.20mechanics/near/206364191">said</a>:</p>
+<blockquote>
+<p>In this situation there's no general relation that holds between the energy of a whole system and the energies of two randomly chosen subsystems of that system, so we specify all three.</p>
+</blockquote>
+<p>I'm too lazy to think very deeply about this right now, so I'll happily take your word for it <span aria-label="grinning face with smiling eyes" class="emoji emoji-1f601" role="img" title="grinning face with smiling eyes">:grinning_face_with_smiling_eyes:</span><br>
+So when will you be tackling the three-body problem with this promising compositional formalism? <span aria-label="yum" class="emoji emoji-1f60b" role="img" title="yum">:yum:</span></p>
+
+
+
+<a name="208371621"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/251538-theory%3A%20physics/topic/open%20systems%20in%20classical%20mechanics/near/208371621" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Ben MacAdam <a href="https://mattecapu.github.io/ct-zulip-archive/stream/251538-theory:-physics/topic/open.20systems.20in.20classical.20mechanics.html#208371621">(Aug 28 2020 at 17:22)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="275920">John Baez</span> <a href="#narrow/stream/251538-theory.3A-physics/topic/open.20systems.20in.20classical.20mechanics/near/206301787">said</a>:</p>
+<blockquote>
+<blockquote>
+<p>When you say "We can equip all the symplectic manifolds in this story with Hamiltonians",  and then sat it's a big deal that you're doing this for the feet of the spans as well as the apex, why is that?</p>
+</blockquote>
+<p>Just for people who didn't read my blog article: I didn't exactly say it was a "big deal".   It's only "big" in a rather technical sense, namely that this prevents our theory of open classical systems from fitting into the "decorated cospan" or "structured cospan" frameworks that some of us have been working on for a while.     Nobody who wasn't closely following these technical developments would care much.</p>
+</blockquote>
+<p>Sorry I'm late to the party here - I have a question/remark about your paper on constructing spans in categories without pullbacks (such as in the category of smooth manifolds). The class of surjective submersions in the category of smooth manifolds is a display system, in the sense of Paul Taylor in "Practical Foundations of Mathematics", and in fact it's a tangent display system in the sense of Cockett/Cruttwell in their paper "Differentiable bundles and fibrations for tangent categories". It seems like your pullback construction works in any category equipped with a display system, and  consequently this construction of Hamiltonian systems might work in any tangent category.</p>
+<p>Maybe this indicates the decorated spans technology translates nicely to a more general context (an enriched category with some compatible notion of a display system)?</p>
+
+
+
+<a name="213861112"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/251538-theory%3A%20physics/topic/open%20systems%20in%20classical%20mechanics/near/213861112" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Lydia Marie Williamson <a href="https://mattecapu.github.io/ct-zulip-archive/stream/251538-theory:-physics/topic/open.20systems.20in.20classical.20mechanics.html#213861112">(Oct 19 2020 at 23:55)</a>:</h4>
+<p>Classical? Why should this not be made a unified framework that spans the divide between classical and quantum systems - and everything in between - and applies equally to them all? Quantum systems may also be presented as symplectic geometries.</p>
+<p>In another sense, the framework may be too general. All fundamental systems, we assume, be it classical or quantum, are symplectic representations of the relevant kinematic group (Poincaré for Relativistic, Bargmann for non-relativistic) ... a single unified framework can encompass both if we extend the former kinematic group to Poincaré ⊗ ℝ.</p>
+<p>For such systems, there are 10 (or 11) Noether charges, the 3+3+3 of the 3 vectors 𝗝, 𝗞 and 𝗣 respectively for angular momentum, "moving" moment and linear momentum; and the kinetic energy H, as well as the central charge μ, from which we can define the "moving mass" M = μ (for non-relativistic theory) and M = μ + H/c², and - for relativistic systems - total energy E = Mc². The reduction from Poincaré ⊗ ℝ to Poincaré corresponds to identifying μ with the system's rest-mass, in the cases of bradyons and luxons.</p>
+<p>It's not just H that should be carried along, but all the other charges too! In so doing, this transcends any specialization, be it Lagrangian or Hamiltonian, remaining fully general as a framework for symplectic systems.</p>
+<p>The kinds of questions I would be interested in seeing addressed by any compositional formulation are those which bothered physicists, like Wigner, Dirac and others in the 1940's and 1950's, which is: how do these various quantities for component subsystems combine to create the corresponding quantities for the total system?</p>
+<p>Dirac laid out a general framework, already, in 1949 ("Forms of Relativistic Dynamics", Reviews of Modern Physics 21(3), 1949 July), in which he posed two different approaches, which may be summarized as:</p>
+<p>Approach 1 "The Instant Form": Make 𝗝 and 𝗣 additive (equations (17)), while 𝗞 and H are additive only up to the inclusion of an "interaction" term for the total system (equations (18)). For H that would be identified as the systems potential energy function.</p>
+<p>Approach 2 "The Point Form": Make 𝗝 and 𝗞 additive (equation (24)), with 𝗣 and H allowed to be additive up to interaction terms (equation (25)). The interaction terms are "potential energy" and "potential momentum".</p>
+<p>A concrete example of the latter for a single body in an external electromagnetic field is already given by the equations<br>
+        d(𝗽 + e𝗔)/dt = -∇(e(φ - 𝘃·𝗔)),<br>
+        d(H + eφ)/dt = ∂/∂t (e(φ - 𝘃·𝗔)),<br>
+the partial derivatives on the right being taken with e and 𝘃 fixed, and the total derivative on the left along the trajectory of the body; i.e. d/dt = ∂/∂t + 𝘃·∇ when applied to the electric potential φ and magnetic potential 𝗔. In fact, Maxwell himself referred to 𝗔 as the "electromagnetic momentum", recognizing the role it played as a "potential momentum".</p>
+<p>Both Approaches 1 and 2 work fine for non-relativistic systems. Approach 1 is blocked for relativistic systems (no go theorems for interacting N-body systems, both in classical and quantum theory), but Approach 2 may still work! As such, it would provide the basis for a framework for compositional systems that is well-grounded in the fundamentals just mentioned, not overly-generalized, but yet applicable, scaling up to systems of all sizes.</p>
+<p>I don't know if there is a no-interaction theorem for relativistic systems that are composed in Dirac's "Point Form". Given the example just posed, it might actually be viable - as a foundation for composite system both in classical and quantum theory.</p>
+<p>With that last observation, it's important to point out that the component systems need not themselves be "fundamental" or "bodies". They, too, can be composite. So, we're not just talking about a framework for interacting N-body systems, both a general composition framework which includes this as a special case.</p>
+
+
+
+<a name="213861882"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/251538-theory%3A%20physics/topic/open%20systems%20in%20classical%20mechanics/near/213861882" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Lydia Marie Williamson <a href="https://mattecapu.github.io/ct-zulip-archive/stream/251538-theory:-physics/topic/open.20systems.20in.20classical.20mechanics.html#213861882">(Oct 20 2020 at 00:05)</a>:</h4>
+<p>An additional note, Dirac also described Approach 3 "The Front Form", which is suitable for use with null frames. I'm not sure it escapes the no-go theorems that plague Approach 1, because its additivity conditions (equations (29) and the paragraph preceding it) also mix up some of the 𝗝's and 𝗞's with the 𝗣's and H's, while Approach 2 is the one that stands out in keeping the handling of the two sets separate.</p>
+
+
+
+{% endraw %}
+
+<hr><p>Last updated: Feb 08 2022 at 00:29 UTC</p>

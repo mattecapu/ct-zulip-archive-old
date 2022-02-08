@@ -9,9 +9,17 @@ permalink: /stream/229199-learning:-questions/index.html
 
 ### Topics:
 
-* [are measures functors?](topic/are.20measures.20functors.3F.html) (13 messages, latest: Jan 29 2022 at 18:56)
+* [are measures functors?](topic/are.20measures.20functors.3F.html) (50 messages, latest: Feb 07 2022 at 22:40)
+* [classifying toposes](topic/classifying.20toposes.html) (72 messages, latest: Feb 07 2022 at 22:13)
+* [weighted colimits in cats enriched over weighted sets](topic/weighted.20colimits.20in.20cats.20enriched.20over.20weighted.20sets.html) (6 messages, latest: Feb 06 2022 at 10:18)
+* [two partial orders at once](topic/two.20partial.20orders.20at.20once.html) (18 messages, latest: Feb 05 2022 at 23:59)
+* [beginner questions](topic/beginner.20questions.html) (445 messages, latest: Feb 05 2022 at 06:27)
+* [thinking about toposes](topic/thinking.20about.20toposes.html) (26 messages, latest: Feb 05 2022 at 04:23)
+* [dependent type theory syntax](topic/dependent.20type.20theory.20syntax.html) (101 messages, latest: Feb 03 2022 at 21:26)
+* [faces of convex sets](topic/faces.20of.20convex.20sets.html) (1 message, latest: Feb 03 2022 at 17:34)
+* [Limits of diagrams with interesting composition structure](topic/Limits.20of.20diagrams.20with.20interesting.20composition.20structure.html) (8 messages, latest: Feb 01 2022 at 12:48)
+* [optics - grates](topic/optics.20-.20grates.html) (7 messages, latest: Jan 31 2022 at 19:29)
 * [categorical first-order logic](topic/categorical.20first-order.20logic.html) (18 messages, latest: Jan 29 2022 at 17:53)
-* [optics - grates](topic/optics.20-.20grates.html) (1 message, latest: Jan 29 2022 at 08:59)
 * [Optics - grates](topic/Optics.20-.20grates.html) (39 messages, latest: Jan 28 2022 at 22:17)
 * [Framing split idempotents](topic/Framing.20split.20idempotents.html) (12 messages, latest: Jan 27 2022 at 20:12)
 * [adjunction from known monad and comonad?](topic/adjunction.20from.20known.20monad.20and.20comonad.3F.html) (2 messages, latest: Jan 26 2022 at 03:53)
@@ -22,10 +30,8 @@ permalink: /stream/229199-learning:-questions/index.html
 * [morphisms of monads and Kleisli categories](topic/morphisms.20of.20monads.20and.20Kleisli.20categories.html) (7 messages, latest: Jan 21 2022 at 09:03)
 * [Idempotent adjunctions](topic/Idempotent.20adjunctions.html) (1 message, latest: Jan 20 2022 at 21:10)
 * [motivation for topological spaces](topic/motivation.20for.20topological.20spaces.html) (22 messages, latest: Jan 20 2022 at 18:09)
-* [classifying toposes](topic/classifying.20toposes.html) (59 messages, latest: Jan 20 2022 at 11:46)
 * [wiring diagrams for compact closed categories](topic/wiring.20diagrams.20for.20compact.20closed.20categories.html) (17 messages, latest: Jan 20 2022 at 11:02)
 * [filterquotients](topic/filterquotients.html) (1 message, latest: Jan 19 2022 at 18:41)
-* [beginner questions](topic/beginner.20questions.html) (428 messages, latest: Jan 19 2022 at 18:39)
 * [subobject classifiers and topos theory](topic/subobject.20classifiers.20and.20topos.20theory.html) (57 messages, latest: Jan 19 2022 at 17:51)
 * [n-equivalence](topic/n-equivalence.html) (10 messages, latest: Jan 19 2022 at 12:16)
 * [Filterquotients](topic/Filterquotients.html) (2 messages, latest: Jan 18 2022 at 21:25)
@@ -34,7 +40,6 @@ permalink: /stream/229199-learning:-questions/index.html
 * [2-category of observable <=](topic/2-category.20of.20observable.20.3C.3D.html) (4 messages, latest: Jan 17 2022 at 08:34)
 * [image subcategories structure](topic/image.20subcategories.20structure.html) (65 messages, latest: Jan 16 2022 at 20:55)
 * [Turing machines](topic/Turing.20machines.html) (4 messages, latest: Jan 16 2022 at 11:32)
-* [dependent type theory syntax](topic/dependent.20type.20theory.20syntax.html) (98 messages, latest: Jan 14 2022 at 11:39)
 * [combining optimization problems](topic/combining.20optimization.20problems.html) (18 messages, latest: Jan 13 2022 at 16:43)
 * [convex analysis](topic/convex.20analysis.html) (44 messages, latest: Jan 12 2022 at 22:03)
 * [hom is lax monoidal](topic/hom.20is.20lax.20monoidal.html) (7 messages, latest: Jan 12 2022 at 17:05)
@@ -621,4 +626,4 @@ permalink: /stream/229199-learning:-questions/index.html
 * [Algebra (Aluffi) exercises](topic/Algebra.20(Aluffi).20exercises.html) (55 messages, latest: Mar 27 2020 at 23:38)
 * [What is category theory about?](topic/What.20is.20category.20theory.20about.3F.html) (16 messages, latest: Mar 26 2020 at 16:03)
 
-<hr><p>Last updated: Jan 30 2022 at 00:30 UTC</p>
+<hr><p>Last updated: Feb 08 2022 at 00:29 UTC</p>

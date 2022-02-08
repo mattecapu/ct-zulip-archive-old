@@ -1,0 +1,147 @@
+---
+layout: archive
+title: Zulip Chat Archive
+permalink: /stream/229199-learning:-questions/topic/categorical.20first-order.20logic.html
+---
+
+<h2>Stream: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/index.html">learning: questions</a></h2>
+<h3>Topic: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/categorical.20first-order.20logic.html">categorical first-order logic</a></h3>
+
+<hr>
+
+<base href="https://categorytheory.zulipchat.com/">
+
+{% raw %}
+
+<a name="252073071"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/categorical%20first-order%20logic/near/252073071" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Leopold Schlicht <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/categorical.20first-order.20logic.html#252073071">(Sep 05 2021 at 12:23)</a>:</h4>
+<p>What's the most natural categorical structure corresponding to first-order logic? What kind of category should the syntactic (classifying) category of a first-order theory be (so what's the right analogue of the Lindenbaum–Tarski algebra of a propositional theory)? I've picked up several keywords:</p>
+<ul>
+<li>pretopos (as in Makkai's duality)</li>
+<li>Heyting category (as in Johnstone's Elephant)</li>
+<li>first-order hyperdoctrine (<span class="user-mention" data-user-id="276755">@Robert Seely</span>)</li>
+</ul>
+<p>What's conceptually the difference between these approaches?</p>
+
+
+
+<a name="252079129"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/categorical%20first-order%20logic/near/252079129" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Matteo Capucci (he/him) <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/categorical.20first-order.20logic.html#252079129">(Sep 05 2021 at 14:10)</a>:</h4>
+<p>An Heyting pretopos is what you get by 'realizing' a first-order hyperdoctrine in its quotient completion, i.e. by using the hyperdoctrine to generate a pretopos embodying the same logic (I can elaborate). Indeed, any pretopos gives a first-order hyperdoctrine of subobjects and these two constructions form an adjunction.<br>
+[N.B.: definitions here a bit slippery: you surely need your hyperdoctrine to be at least extensive to get a pretopos (and I don't know what 'first-order' is taken to mean in this context), but the intuitions are right: pretopoi and first-order hyperdoctrines both embody a first-order intuitionistic (that's the 'Heyting' part) theory]</p>
+
+
+
+<a name="252079140"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/categorical%20first-order%20logic/near/252079140" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Matteo Capucci (he/him) <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/categorical.20first-order.20logic.html#252079140">(Sep 05 2021 at 14:10)</a>:</h4>
+<p>I can elaborate on the details if you want</p>
+
+
+
+<a name="252079746"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/categorical%20first-order%20logic/near/252079746" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/categorical.20first-order.20logic.html#252079746">(Sep 05 2021 at 14:21)</a>:</h4>
+<p>In general, there isn't just one "right" analogue.  The differences are that a hyperdoctrine maintains a semantic separation between types and propositions, while a Heyting category incarnates propositions as subobjects of types, and a pretopos adds coproducts and quotients.</p>
+
+
+
+<a name="252084855"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/categorical%20first-order%20logic/near/252084855" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Fawzi Hreiki <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/categorical.20first-order.20logic.html#252084855">(Sep 05 2021 at 15:56)</a>:</h4>
+<p>Depending on your definition, pretoposes and Heyting categories are particular cases of hyperdoctrines  (namely those where the psuedofunctor/fibration is the subobject one)</p>
+
+
+
+<a name="252084922"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/categorical%20first-order%20logic/near/252084922" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Fawzi Hreiki <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/categorical.20first-order.20logic.html#252084922">(Sep 05 2021 at 15:57)</a>:</h4>
+<p>The benefit of working with a Heyting category rather than a more general Heyting hyperdoctrine is that the logic already comes packaged with the category so-to-speak</p>
+
+
+
+<a name="252346722"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/categorical%20first-order%20logic/near/252346722" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Leopold Schlicht <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/categorical.20first-order.20logic.html#252346722">(Sep 07 2021 at 18:05)</a>:</h4>
+<p>Thanks!</p>
+<p>I guess probably there's only one canonical notion of "translation between first-order theories" or "interpretation of one first-order theory in another". (Although I can't find a Wikipedia page on that notion, for instance. So probably that's not an established notion, which is weird, because I think this concept is quite fundamental.)</p>
+<p>When I talk about the right kind of categorical structure corresponding to first-order logic I mean a type of category such that the category of all categories of that type is equivalent to the category of first-order theories and translations between them. Which of the three categories (pretoposes, Heyting categories, first-order hyperdoctrines) satisfies this requirement? Are the other two categories equivalent to some other notion of "theories and translations between them"? If yes, which?</p>
+
+
+
+<a name="252354971"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/categorical%20first-order%20logic/near/252354971" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/categorical.20first-order.20logic.html#252354971">(Sep 07 2021 at 18:59)</a>:</h4>
+<p>Each of them corresponds to a different notion of "translation".</p>
+
+
+
+<a name="252355538"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/categorical%20first-order%20logic/near/252355538" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/categorical.20first-order.20logic.html#252355538">(Sep 07 2021 at 19:02)</a>:</h4>
+<p>When you translate theory A to theory B, you can choose whether to interpret each base type in A as either (0) a base type in B, (1) an arbitrary type in B, (2) a subobject of a type in B, or (3) a subquotient of a type in B.  (Maybe you could just choose a quotient too, but I'm not sure what that would correspond to categorically.)  Choices (1), (2), and (3) yield respectively notions of translation that correspond to morphisms of first-order hyperdoctrines, Heyting categories, and Heyting pretoposes.  (In all cases I'm assuming that primitive propositions in A are mapped to arbitrary propositions in B.)</p>
+
+
+
+<a name="252513738"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/categorical%20first-order%20logic/near/252513738" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Leopold Schlicht <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/categorical.20first-order.20logic.html#252513738">(Sep 08 2021 at 18:56)</a>:</h4>
+<p>That's amazing! So the underlying class of objects of the theories-category the category of pretoposes / Heyting categories / first-order hyperdoctrines is equivalent to is in each case the class of all first-order theories, but the morphisms are different?</p>
+<p>You mentioned Heyting pretoposes. What about pretoposes? (EDIT: That also occurs in another thread.)</p>
+<p>What are the morphisms between Heyting pretoposes?</p>
+
+
+
+<a name="252517277"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/categorical%20first-order%20logic/near/252517277" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/categorical.20first-order.20logic.html#252517277">(Sep 08 2021 at 19:21)</a>:</h4>
+<p>Sorry, I meant Heyting pretoposes here.  Heyting pretoposes are the completions of Heyting categories under coproducts and quotients, so they're the right thing to look at when talking about first-order logic.  Their functors are just functors of Heyting categories, which automatically also preserve coproducts and quotients.  Plain pretoposes are for coherent logic, not first-order logic.</p>
+
+
+
+<a name="252522234"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/categorical%20first-order%20logic/near/252522234" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Leopold Schlicht <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/categorical.20first-order.20logic.html#252522234">(Sep 08 2021 at 19:53)</a>:</h4>
+<p>Thanks!</p>
+
+
+
+<a name="269864135"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/categorical%20first-order%20logic/near/269864135" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Leopold Schlicht <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/categorical.20first-order.20logic.html#269864135">(Jan 29 2022 at 13:25)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="276777">Mike Shulman</span> <a href="#narrow/stream/229199-learning.3A-questions/topic/categorical.20first-order.20logic/near/252355538">said</a>:</p>
+<blockquote>
+<p>When you translate theory A to theory B, you can choose whether to interpret each base type in A as either (0) ..., (1) ..., (2) ..., or (3) a subquotient of a type in B.</p>
+</blockquote>
+<p>What do you mean by "type" here? Isn't a quotient of a type in B also a type in B? And isn't a subtype of a type in B also a type in B?</p>
+<p>Are the "types in B" you are talking about closed under coproducts?</p>
+<p>And why in that particular order (first quotient type, then subtype)? Why not allowing coproducts of quotients of subtypes of types in B too (and so on)?</p>
+
+
+
+<a name="269872116"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/categorical%20first-order%20logic/near/269872116" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/categorical.20first-order.20logic.html#269872116">(Jan 29 2022 at 15:57)</a>:</h4>
+<p>A "type" is a syntactic object here. So if the theory in question doesn't include subtypes or quotient types, which is usually the case, then no.  It's more common to include coproduct types, but if we don't, then to get morphisms of pretoposes we would have to use subquotients of coproducts as you suggest.</p>
+
+
+
+<a name="269872129"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/categorical%20first-order%20logic/near/269872129" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/categorical.20first-order.20logic.html#269872129">(Jan 29 2022 at 15:57)</a>:</h4>
+<p>A "subquotient" is either a subobject of a quotient or a quotient of a subobject; the two are the same in reasonable categories.</p>
+
+
+
+<a name="269872197"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/categorical%20first-order%20logic/near/269872197" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/categorical.20first-order.20logic.html#269872197">(Jan 29 2022 at 15:58)</a>:</h4>
+<p>Similarly, in a pretopos a coproduct of subtypes, quotients, or subquotients is also a subtype, quotient, or subquotient or a coproduct.  So there's a "canonical form" and you don't have to keep iterating.</p>
+
+
+
+<a name="269876930"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/categorical%20first-order%20logic/near/269876930" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Leopold Schlicht <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/categorical.20first-order.20logic.html#269876930">(Jan 29 2022 at 17:24)</a>:</h4>
+<p>Thanks, that's enlightening!</p>
+<blockquote>
+<p>Similarly, in a pretopos a coproduct of subtypes, quotients, or subquotients is also a subtype, quotient, or subquotient or a coproduct.</p>
+</blockquote>
+<p>I guess the last "or" should be an "of". <span aria-label="grinning face with smiling eyes" class="emoji emoji-1f601" role="img" title="grinning face with smiling eyes">:grinning_face_with_smiling_eyes:</span></p>
+
+
+
+<a name="269878361"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/categorical%20first-order%20logic/near/269878361" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/categorical.20first-order.20logic.html#269878361">(Jan 29 2022 at 17:53)</a>:</h4>
+<p>yes</p>
+
+
+
+{% endraw %}
+
+<hr><p>Last updated: Feb 08 2022 at 00:29 UTC</p>
