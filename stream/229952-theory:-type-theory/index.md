@@ -50,4 +50,4 @@ permalink: /stream/229952-theory:-type-theory/index.html
 * [stream events](topic/stream.20events.html) (3 messages, latest: Apr 06 2020 at 05:32)
 * [W-types and CFGs](topic/W-types.20and.20CFGs.html) (11 messages, latest: Apr 02 2020 at 16:00)
 
-<hr><p>Last updated: Feb 08 2022 at 00:29 UTC</p>
+<hr><p>Last updated: Feb 09 2022 at 00:31 UTC</p>

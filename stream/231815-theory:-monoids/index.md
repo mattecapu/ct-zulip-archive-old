@@ -18,4 +18,4 @@ permalink: /stream/231815-theory:-monoids/index.html
 * [Tropical Fun](topic/Tropical.20Fun.html) (32 messages, latest: Apr 04 2020 at 13:25)
 * [Favourites](topic/Favourites.html) (21 messages, latest: Apr 04 2020 at 11:16)
 
-<hr><p>Last updated: Feb 08 2022 at 00:29 UTC</p>
+<hr><p>Last updated: Feb 09 2022 at 00:31 UTC</p>

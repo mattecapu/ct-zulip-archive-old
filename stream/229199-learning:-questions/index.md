@@ -9,8 +9,11 @@ permalink: /stream/229199-learning:-questions/index.html
 
 ### Topics:
 
+* [operads](topic/operads.html) (9 messages, latest: Feb 09 2022 at 00:25)
+* [yoneda lemma applications](topic/yoneda.20lemma.20applications.html) (13 messages, latest: Feb 09 2022 at 00:23)
+* [Coherence theorems for monoidal categories](topic/Coherence.20theorems.20for.20monoidal.20categories.html) (2 messages, latest: Feb 08 2022 at 20:03)
+* [classifying toposes](topic/classifying.20toposes.html) (75 messages, latest: Feb 08 2022 at 18:24)
 * [are measures functors?](topic/are.20measures.20functors.3F.html) (50 messages, latest: Feb 07 2022 at 22:40)
-* [classifying toposes](topic/classifying.20toposes.html) (72 messages, latest: Feb 07 2022 at 22:13)
 * [weighted colimits in cats enriched over weighted sets](topic/weighted.20colimits.20in.20cats.20enriched.20over.20weighted.20sets.html) (6 messages, latest: Feb 06 2022 at 10:18)
 * [two partial orders at once](topic/two.20partial.20orders.20at.20once.html) (18 messages, latest: Feb 05 2022 at 23:59)
 * [beginner questions](topic/beginner.20questions.html) (445 messages, latest: Feb 05 2022 at 06:27)
@@ -626,4 +629,4 @@ permalink: /stream/229199-learning:-questions/index.html
 * [Algebra (Aluffi) exercises](topic/Algebra.20(Aluffi).20exercises.html) (55 messages, latest: Mar 27 2020 at 23:38)
 * [What is category theory about?](topic/What.20is.20category.20theory.20about.3F.html) (16 messages, latest: Mar 26 2020 at 16:03)
 
-<hr><p>Last updated: Feb 08 2022 at 00:29 UTC</p>
+<hr><p>Last updated: Feb 09 2022 at 00:31 UTC</p>
