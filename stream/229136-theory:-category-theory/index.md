@@ -9,6 +9,7 @@ permalink: /stream/229136-theory:-category-theory/index.html
 
 ### Topics:
 
+* [Gray product for bicategories](topic/Gray.20product.20for.20bicategories.html) (3 messages, latest: Feb 09 2022 at 17:35)
 * [Reference for *-autonomous categories](topic/Reference.20for.20*-autonomous.20categories.html) (2 messages, latest: Feb 04 2022 at 15:00)
 * [Terminology for "double hom sets"?](topic/Terminology.20for.20.22double.20hom.20sets.22.3F.html) (4 messages, latest: Feb 03 2022 at 08:26)
 * [enrichment as a structure](topic/enrichment.20as.20a.20structure.html) (10 messages, latest: Feb 03 2022 at 04:59)
@@ -246,4 +247,4 @@ permalink: /stream/229136-theory:-category-theory/index.html
 * [diagrams for application](topic/diagrams.20for.20application.html) (13 messages, latest: Mar 24 2020 at 06:19)
 * [universal constructions](topic/universal.20constructions.html) (8 messages, latest: Mar 23 2020 at 21:06)
 
-<hr><p>Last updated: Feb 09 2022 at 00:31 UTC</p>
+<hr><p>Last updated: Feb 10 2022 at 00:30 UTC</p>

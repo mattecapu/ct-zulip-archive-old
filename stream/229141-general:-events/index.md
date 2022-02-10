@@ -9,7 +9,7 @@ permalink: /stream/229141-general:-events/index.html
 
 ### Topics:
 
-* [Autonomy Talks - Jules Hedges](topic/Autonomy.20Talks.20-.20Jules.20Hedges.html) (4 messages, latest: Feb 08 2022 at 20:30)
+* [Autonomy Talks - Jules Hedges](topic/Autonomy.20Talks.20-.20Jules.20Hedges.html) (6 messages, latest: Feb 09 2022 at 10:15)
 * [Intercats](topic/Intercats.html) (6 messages, latest: Feb 08 2022 at 17:01)
 * [Mathematics of Collective Intelligence](topic/Mathematics.20of.20Collective.20Intelligence.html) (3 messages, latest: Feb 07 2022 at 02:50)
 * [AMS school on applied category theory](topic/AMS.20school.20on.20applied.20category.20theory.html) (53 messages, latest: Feb 03 2022 at 09:18)
@@ -123,4 +123,4 @@ permalink: /stream/229141-general:-events/index.html
 * [April 1st: ACT@UCR](topic/April.201st.3A.20ACT.40UCR.html) (3 messages, latest: Mar 26 2020 at 23:58)
 * [Google Sites problem](topic/Google.20Sites.20problem.html) (4 messages, latest: Mar 25 2020 at 04:29)
 
-<hr><p>Last updated: Feb 09 2022 at 00:31 UTC</p>
+<hr><p>Last updated: Feb 10 2022 at 00:30 UTC</p>
