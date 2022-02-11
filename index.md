@@ -8,7 +8,7 @@ permalink: /index.html
 
 ## Streams:
 
-* [learning: questions](stream/229199-learning:-questions/index.html) (619 topics)
+* [learning: questions](stream/229199-learning:-questions/index.html) (621 topics)
 
 * [theory: category theory](stream/229136-theory:-category-theory/index.html) (237 topics)
 
@@ -42,7 +42,7 @@ permalink: /index.html
 
 * [Categorical Probability and Statistics 2020 workshop](stream/238032-Categorical-Probability-and-Statistics-2020-workshop/index.html) (34 topics)
 
-* [practice: our papers](stream/258900-practice:-our-papers/index.html) (33 topics)
+* [practice: our papers](stream/258900-practice:-our-papers/index.html) (34 topics)
 
 * [practice: thermodynamics](stream/306433-practice:-thermodynamics/index.html) (30 topics)
 
@@ -150,4 +150,4 @@ permalink: /index.html
 
 * [theory: alternate presentations](stream/233122-theory:-alternate-presentations/index.html) (1 topic)
 
-<hr><p>Last updated: Feb 10 2022 at 00:30 UTC</p>
+<hr><p>Last updated: Feb 11 2022 at 00:32 UTC</p>

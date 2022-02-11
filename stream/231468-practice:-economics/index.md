@@ -20,4 +20,4 @@ permalink: /stream/231468-practice:-economics/index.html
 * [dynamical systems](topic/dynamical.20systems.html) (7 messages, latest: Apr 04 2020 at 16:37)
 * [general](topic/general.html) (4 messages, latest: Apr 04 2020 at 06:21)
 
-<hr><p>Last updated: Feb 10 2022 at 00:30 UTC</p>
+<hr><p>Last updated: Feb 11 2022 at 00:32 UTC</p>

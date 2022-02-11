@@ -9,6 +9,7 @@ permalink: /stream/258900-practice:-our-papers/index.html
 
 ### Topics:
 
+* [Sheaf semantics for termination-insensitive noninterference](topic/Sheaf.20semantics.20for.20termination-insensitive.20noninterference.html) (1 message, latest: Feb 10 2022 at 12:02)
 * [fibered multicategory theory](topic/fibered.20multicategory.20theory.html) (35 messages, latest: Jan 14 2022 at 19:09)
 * [fibrational linguistics](topic/fibrational.20linguistics.html) (23 messages, latest: Jan 06 2022 at 14:40)
 * [categorical composable cryptography](topic/categorical.20composable.20cryptography.html) (4 messages, latest: Jan 06 2022 at 11:16)
@@ -43,4 +44,4 @@ permalink: /stream/258900-practice:-our-papers/index.html
 * [stream events](topic/stream.20events.html) (2 messages, latest: Oct 05 2020 at 15:30)
 * [Coends of higher arity](topic/Coends.20of.20higher.20arity.html) (3 messages, latest: Sep 26 2020 at 16:28)
 
-<hr><p>Last updated: Feb 10 2022 at 00:30 UTC</p>
+<hr><p>Last updated: Feb 11 2022 at 00:32 UTC</p>
