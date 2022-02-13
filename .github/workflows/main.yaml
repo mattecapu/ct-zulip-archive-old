@@ -12,21 +12,6 @@ jobs:
       uses: actions/checkout@v1
     - name: Run archive
       id: archive
-      uses: mattecapu/jekyll-zulip-archive@d48c74a813d5bbd71732ad28255264cb3e724c36
-      with:
-        zulip_organization_url: ${{ secrets.zulip_organization_url }}
-        zulip_bot_email: ${{ secrets.zulip_bot_email }}
-        zulip_bot_key: ${{ secrets.zulip_bot_key }}
-        github_personal_access_token: ${{ secrets.gh_personal_access_token }}
-        delete_history: false
-  reboot_archive_job:
-    runs-on: ubuntu-latest
-    name: A job to start the archive anew
-    steps:
-    - name: Checkout
-      uses: actions/checkout@v1
-    - name: Run archive
-      id: archive
       uses: mattecapu/jekyll-zulip-archive@master
       with:
         zulip_organization_url: ${{ secrets.zulip_organization_url }}
@@ -34,4 +19,4 @@ jobs:
         zulip_bot_key: ${{ secrets.zulip_bot_key }}
         github_personal_access_token: ${{ secrets.gh_personal_access_token }}
         delete_history: false
-        reboot: true
+
