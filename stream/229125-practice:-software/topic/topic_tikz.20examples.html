@@ -1,0 +1,301 @@
+---
+layout: archive
+title: Zulip Chat Archive
+permalink: /stream/229125-practice:-software/topic/tikz.20examples.html
+---
+
+<h2>Stream: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229125-practice:-software/index.html">practice: software</a></h2>
+<h3>Topic: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229125-practice:-software/topic/topic_tikz.20examples.html">tikz examples</a></h3>
+
+<hr>
+
+<base href="https://categorytheory.zulipchat.com/">
+
+{% raw %}
+
+<a name="197541643"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229125-practice%3A%20software/topic/tikz%20examples/near/197541643" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nathaniel Virgo <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229125-practice:-software/topic/topic_tikz.20examples.html#197541643">(May 14 2020 at 11:54)</a>:</h4>
+<p>I'm wondering if anyone either knows of a tikz library, or just has some nice code examples, for drawing relatively simple string diagrams? I realise there are some more heavyweight options available, but if I can use the tool I already sort-of know I'll save myself some time. I mostly want to draw the kinds of thing that appear in the graphical linear algebra papers.</p>
+
+
+
+<a name="197560248"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229125-practice%3A%20software/topic/tikz%20examples/near/197560248" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> sarahzrf <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229125-practice:-software/topic/topic_tikz.20examples.html#197560248">(May 14 2020 at 14:09)</a>:</h4>
+<p>this isn't what you asked for, but it's possible that you might like to use <a href="https://tikzit.github.io/">https://tikzit.github.io/</a></p>
+
+
+
+<a name="197560684"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229125-practice%3A%20software/topic/tikz%20examples/near/197560684" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> sarahzrf <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229125-practice:-software/topic/topic_tikz.20examples.html#197560684">(May 14 2020 at 14:11)</a>:</h4>
+<p>it's a really pleasant &amp; pretty straightforward gui for building diagrams with nodes and edges and exporting to tikz code</p>
+
+
+
+<a name="197560746"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229125-practice%3A%20software/topic/tikz%20examples/near/197560746" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> sarahzrf <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229125-practice:-software/topic/topic_tikz.20examples.html#197560746">(May 14 2020 at 14:11)</a>:</h4>
+<p>and it Actually Works Well and has a Pretty Pleasant Interface and Produces Nice Results unlike some tools i've seen</p>
+
+
+
+<a name="197560815"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229125-practice%3A%20software/topic/tikz%20examples/near/197560815" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> sarahzrf <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229125-practice:-software/topic/topic_tikz.20examples.html#197560815">(May 14 2020 at 14:11)</a>:</h4>
+<p>(sorry if this is already something you know of and you were specifically looking for code for a good reason <span aria-label="persevere" class="emoji emoji-1f623" role="img" title="persevere">:persevere:</span>)</p>
+
+
+
+<a name="197562156"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229125-practice%3A%20software/topic/tikz%20examples/near/197562156" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Daniel Geisler <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229125-practice:-software/topic/topic_tikz.20examples.html#197562156">(May 14 2020 at 14:20)</a>:</h4>
+<p>Thanks <span class="user-mention" data-user-id="276072">@sarahzrf</span> , I'm totally checking out  <a href="https://tikzit.github.io/">tikzit.github.io</a>.</p>
+
+
+
+<a name="197563989"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229125-practice%3A%20software/topic/tikz%20examples/near/197563989" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nathaniel Virgo <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229125-practice:-software/topic/topic_tikz.20examples.html#197563989">(May 14 2020 at 14:35)</a>:</h4>
+<p>It turned out to be not so hard to get started just using tikz.  First set up a few macros:</p>
+<div class="codehilite"><pre><span></span><code>\documentclass[a4paper]{article}
+
+% first set up a few macros ....
+
+\usepackage{tikz}
+\newlength{\xscale}
+\newlength{\yscale}
+\setlength{\xscale}{0.5cm}
+\setlength{\yscale}{0.3cm}
+
+\newcommand{\spath}[1][1]{\draw[rounded corners=#1\yscale]}
+% optional argument changes the corner rounding, in y scale units
+
+\newcommand{\whitedot}[1]{\draw[fill=white] (#1) circle (0.25\yscale);}
+\newcommand{\blackdot}[1]{\draw[fill=black] (#1) circle (0.25\yscale);}
+
+\newcommand{\stringdiagram}[1]{
+\begin{tikzpicture}[x=\xscale, y=\yscale, baseline={([yshift=-0.6ex]current bounding box.center)}]
+#1
+\end{tikzpicture}
+}
+
+\begin{document}
+
+% .... then let&#39;s draw some diagrams
+
+\begin{equation}
+%
+\stringdiagram{
+\spath (0,0) -- (1,0);
+\spath (1,0) -- (1,1) -- (2,1);
+\spath (1,0) -- (1,-1) -- (2,-1);
+\whitedot{1,0};
+}
+%
+\quad = \quad
+%
+\stringdiagram{
+%\draw[step=1.0,lightgray] (0,-3) grid (5,3);  % a coordinate grid is helpful while coding it
+\spath (0,1) -- (1,1);
+\blackdot{0,1};
+\blackdot{1,1};
+\spath (1,1) -- (1,2) -- (3,2) -- (3,1);
+\spath (1,-1) -- (1,0) -- (3,0) -- (3,1);
+\spath (3,1) -- (4,1) -- (4,2);
+\whitedot{3,1};
+\spath (-0.5,3) -- (4,3) -- (4,2);
+\spath (4,2) -- (5,2);
+\blackdot{4,2};
+\blackdot{5,2};
+\spath (0,-1) -- (1,-1);
+\blackdot{0,-1};
+\blackdot{1,-1};
+\spath[2] (1,1) -- (1,-1) -- (5.5,-1);
+\spath[1.5] (1,-1) -- (1,-2.5) -- (5.5,-2.5);
+}
+\end{equation}
+
+\end{document}
+</code></pre></div>
+
+
+<p>Here's the result:</p>
+<p><a href="/user_uploads/21317/kk0ni584m5u9x95kKNQukDn8/image.png">image.png</a></p>
+<div class="message_inline_image"><a href="/user_uploads/21317/kk0ni584m5u9x95kKNQukDn8/image.png" title="image.png"><img src="/user_uploads/21317/kk0ni584m5u9x95kKNQukDn8/image.png"></a></div>
+
+
+
+<a name="197564159"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229125-practice%3A%20software/topic/tikz%20examples/near/197564159" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nathaniel Virgo <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229125-practice:-software/topic/topic_tikz.20examples.html#197564159">(May 14 2020 at 14:36)</a>:</h4>
+<p>The only thing I don't like is that the code for the more complicated diagram became hard to organise, becase you have to draw the white dots after the wires that connect to them, otherwise the wires get drawn over them. I'm not sure how to fix that.</p>
+
+
+
+<a name="197564446"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229125-practice%3A%20software/topic/tikz%20examples/near/197564446" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nathaniel Virgo <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229125-practice:-software/topic/topic_tikz.20examples.html#197564446">(May 14 2020 at 14:38)</a>:</h4>
+<p>I will definitely check out tikzit some time, if I want to do something more complex than this. I have a (bad?) habit of liking to keep everything in a single file as much as possible, so I like being able to do things in code when I can.</p>
+
+
+
+<a name="197564504"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229125-practice%3A%20software/topic/tikz%20examples/near/197564504" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> sarahzrf <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229125-practice:-software/topic/topic_tikz.20examples.html#197564504">(May 14 2020 at 14:39)</a>:</h4>
+<p>yeah, i relate to that :)</p>
+
+
+
+<a name="197564542"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229125-practice%3A%20software/topic/tikz%20examples/near/197564542" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> sarahzrf <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229125-practice:-software/topic/topic_tikz.20examples.html#197564542">(May 14 2020 at 14:39)</a>:</h4>
+<p>but the organizational thing is kind of killer x_x</p>
+
+
+
+<a name="197564570"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229125-practice%3A%20software/topic/tikz%20examples/near/197564570" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> sarahzrf <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229125-practice:-software/topic/topic_tikz.20examples.html#197564570">(May 14 2020 at 14:39)</a>:</h4>
+<p>...in the "kills you" sense, not the "killer app" sense</p>
+
+
+
+<a name="197564662"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229125-practice%3A%20software/topic/tikz%20examples/near/197564662" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> sarahzrf <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229125-practice:-software/topic/topic_tikz.20examples.html#197564662">(May 14 2020 at 14:40)</a>:</h4>
+<p>well, ok, i have pretty much no tikz experience, so maybe there are solutions <span aria-label="upside down" class="emoji emoji-1f643" role="img" title="upside down">:upside_down:</span></p>
+
+
+
+<a name="197564671"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229125-practice%3A%20software/topic/tikz%20examples/near/197564671" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> sarahzrf <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229125-practice:-software/topic/topic_tikz.20examples.html#197564671">(May 14 2020 at 14:40)</a>:</h4>
+<p>the solution i like is to use tikzit.</p>
+
+
+
+<a name="197565371"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229125-practice%3A%20software/topic/tikz%20examples/near/197565371" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Jules Hedges <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229125-practice:-software/topic/topic_tikz.20examples.html#197565371">(May 14 2020 at 14:45)</a>:</h4>
+<p>I also use raw TikZ instead of TikZit (only because my laptop won't run it, I really wish I could use it) - but I always name my nodes, which helps for organisation</p>
+
+
+
+<a name="197565415"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229125-practice%3A%20software/topic/tikz%20examples/near/197565415" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> sarahzrf <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229125-practice:-software/topic/topic_tikz.20examples.html#197565415">(May 14 2020 at 14:45)</a>:</h4>
+<p>o.O why wont it run it?</p>
+
+
+
+<a name="197565536"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229125-practice%3A%20software/topic/tikz%20examples/near/197565536" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Jules Hedges <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229125-practice:-software/topic/topic_tikz.20examples.html#197565536">(May 14 2020 at 14:46)</a>:</h4>
+<p>I use \node and \draw as my main 2 commands, not \path</p>
+
+
+
+<a name="197565615"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229125-practice%3A%20software/topic/tikz%20examples/near/197565615" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Jules Hedges <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229125-practice:-software/topic/topic_tikz.20examples.html#197565615">(May 14 2020 at 14:47)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="276072">sarahzrf</span> <a href="#narrow/stream/229125-practice.3A-software/topic/tikz.20examples/near/197565415">said</a>:</p>
+<blockquote>
+<p>o.O why wont it run it?</p>
+</blockquote>
+<p>osx is too out of date, and I very long time ago ran out of enough hard disc space to update it</p>
+
+
+
+<a name="197565667"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229125-practice%3A%20software/topic/tikz%20examples/near/197565667" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nathaniel Virgo <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229125-practice:-software/topic/topic_tikz.20examples.html#197565667">(May 14 2020 at 14:47)</a>:</h4>
+<p>Mine's using \draw as well - \spath is a macro, just to avoid writing "rounded corners = \yscale" all the time. (I suppose I could have called it \string instead.) (Except that's already a LaTeX command.)</p>
+
+
+
+<a name="197565721"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229125-practice%3A%20software/topic/tikz%20examples/near/197565721" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Jules Hedges <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229125-practice:-software/topic/topic_tikz.20examples.html#197565721">(May 14 2020 at 14:48)</a>:</h4>
+<p>It can run tikzit1, which runs for about 20 seconds before crashing</p>
+
+
+
+<a name="197568133"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229125-practice%3A%20software/topic/tikz%20examples/near/197568133" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nathaniel Virgo <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229125-practice:-software/topic/topic_tikz.20examples.html#197568133">(May 14 2020 at 15:03)</a>:</h4>
+<p>I figured out how to use layers in tikz, so with these updated macros the white dots will always be drawn on top of the wires, no matter where they appear in the code.</p>
+<div class="codehilite"><pre><span></span><code>\documentclass[a4paper]{article}
+
+% first set up a few macros ....
+
+\usepackage{tikz}
+\newlength{\xscale}
+\newlength{\yscale}
+\setlength{\xscale}{0.5cm}
+\setlength{\yscale}{0.3cm}
+
+%\newcommand{\wire}[1][1]{\begin{pgfonlayer}{wire layer}\draw[rounded corners=#1\yscale];\end{pgfonlayer}}
+\newcommand{\wire}[1][1]{\draw[rounded corners=#1\yscale]}
+% optional argument changes the corner rounding, in y scale units
+
+\newcommand{\fg}[1]{\begin{pgfonlayer}{foreground}#1\end{pgfonlayer}}
+
+\newcommand{\whitedot}[1]{\fg{\draw[fill=white] (#1) circle (0.25\yscale);}}
+\newcommand{\blackdot}[1]{\fg{\draw[fill=black] (#1) circle (0.25\yscale);}}
+
+\newcommand{\stringdiagram}[1]{
+\begin{tikzpicture}[x=\xscale, y=\yscale, baseline={([yshift=-0.6ex]current bounding box.center)}]
+\pgfdeclarelayer{foreground}
+\pgfsetlayers{main,foreground}
+#1
+\end{tikzpicture}
+}
+
+\begin{document}
+
+% .... then let&#39;s draw some diagrams
+
+\begin{equation}
+%
+\stringdiagram{
+\whitedot{1,0};
+\wire (0,0) -- (1,0);
+\wire (1,0) -- (1,1) -- (2,1);
+\wire (1,0) -- (1,-1) -- (2,-1);
+}
+%
+\quad = \quad
+%
+\stringdiagram{
+%\draw[step=1.0,lightgray] (0,-3) grid (5,3);  % a coordinate grid is helpful while coding it
+\wire (0,1) -- (1,1);
+\blackdot{0,1};
+\blackdot{1,1};
+\wire (1,1) -- (1,2) -- (3,2) -- (3,1);
+\wire (1,-1) -- (1,0) -- (3,0) -- (3,1);
+\wire (3,1) -- (4,1) -- (4,2);
+\whitedot{3,1};
+\wire (-0.5,3) -- (4,3) -- (4,2);
+\wire (4,2) -- (5,2);
+\blackdot{4,2};
+\blackdot{5,2};
+\wire (0,-1) -- (1,-1);
+\blackdot{0,-1};
+\blackdot{1,-1};
+\wire[2] (1,1) -- (1,-1) -- (5.5,-1);
+\wire[1.5] (1,-1) -- (1,-2.5) -- (5.5,-2.5);
+}
+\end{equation}
+
+\end{document}
+</code></pre></div>
+
+
+
+<a name="197607639"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229125-practice%3A%20software/topic/tikz%20examples/near/197607639" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Eduardo Ochs <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229125-practice:-software/topic/topic_tikz.20examples.html#197607639">(May 14 2020 at 19:43)</a>:</h4>
+<p><span class="user-mention" data-user-id="276071">@Nathaniel Virgo</span>, I am not sure how obvious this is, but anyway... do you know that you can download the source code of most papers on Arxiv? Here I have sort of automated this to be able to download, unpack and compile sources with few keystrokes, and my local copy of the source of Fong and Spivak's "Seven Sketches" - <a href="https://arxiv.org/abs/1803.05316">https://arxiv.org/abs/1803.05316</a> - is stored at ~/snarf/https/arxiv.org/e-print/1803.05316.tar, and to unpack it I do this:</p>
+<div class="codehilite"><pre><span></span><code>rm -Rfv ~/usrc/arxiv-sevensketches/
+mkdir   ~/usrc/arxiv-sevensketches/
+cd      ~/usrc/arxiv-sevensketches/
+tar -xvf ~/snarf/https/arxiv.org/e-print/1803.05316.tar
+</code></pre></div>
+
+
+
+<a name="197612373"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229125-practice%3A%20software/topic/tikz%20examples/near/197612373" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nathaniel Virgo <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229125-practice:-software/topic/topic_tikz.20examples.html#197612373">(May 14 2020 at 20:21)</a>:</h4>
+<p>Ah, thanks - I looked at the source of a couple of papers with diagrams I like, but found the diagrams were just pdf files. I didn't think to have a look at Seven Sketches - that's a good source of nice examples.</p>
+
+
+
+<a name="197653466"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229125-practice%3A%20software/topic/tikz%20examples/near/197653466" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Thomas Read <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229125-practice:-software/topic/topic_tikz.20examples.html#197653466">(May 15 2020 at 06:54)</a>:</h4>
+<p>I think Seven Sketches uses the tikz library here: <a href="https://github.com/appliedcategorytheory/TikZWD">https://github.com/appliedcategorytheory/TikZWD</a></p>
+
+
+
+{% endraw %}
+
+<hr><p>Last updated: Feb 13 2022 at 17:17 UTC</p>

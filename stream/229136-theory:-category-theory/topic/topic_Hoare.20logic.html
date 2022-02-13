@@ -1,0 +1,389 @@
+---
+layout: archive
+title: Zulip Chat Archive
+permalink: /stream/229136-theory:-category-theory/topic/Hoare.20logic.html
+---
+
+<h2>Stream: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/index.html">theory: category theory</a></h2>
+<h3>Topic: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/topic_Hoare.20logic.html">Hoare logic</a></h3>
+
+<hr>
+
+<base href="https://categorytheory.zulipchat.com/">
+
+{% raw %}
+
+<a name="196839846"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/Hoare%20logic/near/196839846" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Hendrik Boom <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/topic_Hoare.20logic.html#196839846">(May 07 2020 at 22:47)</a>:</h4>
+<p>Let's say one has {P}A{Q} and {P}B{Q}.  Could there be any significant concept of a homotopy between A and B?</p>
+
+
+
+<a name="196840519"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/Hoare%20logic/near/196840519" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Sam Tenka <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/topic_Hoare.20logic.html#196840519">(May 07 2020 at 22:55)</a>:</h4>
+<p>I like this question.  Perhaps one gets directed 2 cells from program-rewrite rules?</p>
+<p>However,  it might be better to work in the more "point-free" formalism of weakest preconditions instead of mentioning specific predicate pairs.  Indeed, each program A imposes a relation between possible predicates P and Q.  While a morphism determines its source and target, a program does not determine its pre and post conditions.  Does this make sense? <span class="user-mention" data-user-id="299803">@Hendrik Boom</span></p>
+
+
+
+<a name="196840787"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/Hoare%20logic/near/196840787" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Sam Tenka <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/topic_Hoare.20logic.html#196840787">(May 07 2020 at 22:58)</a>:</h4>
+<p>Indeed, Dijkstra ("A Discipline Of Programming", 1976) regards the weakest precondition operator (and hence the semantics) of a program as an endofunctor F on the lattice C of predicates (that satisfies some axioms such as preserving meets).  (He doesn't use this language).  From this viewpoint, one can ask questions about natural transformations between these functors.</p>
+
+
+
+<a name="196841477"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/Hoare%20logic/near/196841477" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Sam Tenka <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/topic_Hoare.20logic.html#196841477">(May 07 2020 at 23:06)</a>:</h4>
+<p>Yeah, so in this setting, a natural map between two functors (two programs A, B) is just an assertion that "for any post condition Q: {the weakest precondition that through A guarantees Q} implies {the weakest precondition that through B guarantees Q}", i.e. that "for all P and Q: if {P}A{Q}, then {P}B{Q}".  This is a relation between programs that might help us compare two programs that "do the same thing" except one of them doesn't always terminate.</p>
+
+
+
+<a name="196841613"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/Hoare%20logic/near/196841613" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> sarahzrf <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/topic_Hoare.20logic.html#196841613">(May 07 2020 at 23:08)</a>:</h4>
+<p>there's a nice setup you can get which i was just mentioning in the topic for my talk which is semi relevant to this</p>
+
+
+
+<a name="196841636"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/Hoare%20logic/near/196841636" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> sarahzrf <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/topic_Hoare.20logic.html#196841636">(May 07 2020 at 23:09)</a>:</h4>
+<p>form a category H where the objects are assertions, and Hom(P, Q) is the set of true hoare triples {P} C {Q}</p>
+
+
+
+<a name="196841663"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/Hoare%20logic/near/196841663" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> sarahzrf <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/topic_Hoare.20logic.html#196841663">(May 07 2020 at 23:09)</a>:</h4>
+<p>composition is {P} C {Q} ; {Q} D {R} ↦ {P} C; D {R} and identity is {P} skip {P}</p>
+
+
+
+<a name="196841664"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/Hoare%20logic/near/196841664" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Sam Tenka <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/topic_Hoare.20logic.html#196841664">(May 07 2020 at 23:09)</a>:</h4>
+<p>Cool!  Where can I learn more about this?  (was this a talk in the MIT categories seminar?)</p>
+
+
+
+<a name="196841677"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/Hoare%20logic/near/196841677" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> sarahzrf <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/topic_Hoare.20logic.html#196841677">(May 07 2020 at 23:10)</a>:</h4>
+<p>it's in the <a class="stream" data-stream-id="229966" href="/#narrow/stream/229966-ACT.40UCR-seminar">#ACT@UCR seminar</a> stream!</p>
+
+
+
+<a name="196841729"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/Hoare%20logic/near/196841729" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Sam Tenka <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/topic_Hoare.20logic.html#196841729">(May 07 2020 at 23:10)</a>:</h4>
+<p>Oh darn it.  I wish I hadn't missed it!</p>
+
+
+
+<a name="196841737"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/Hoare%20logic/near/196841737" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> sarahzrf <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/topic_Hoare.20logic.html#196841737">(May 07 2020 at 23:10)</a>:</h4>
+<p>more info here <a href="https://johncarlosbaez.wordpress.com/2020/05/05/separation-logic-through-a-new-lens/" title="https://johncarlosbaez.wordpress.com/2020/05/05/separation-logic-through-a-new-lens/">https://johncarlosbaez.wordpress.com/2020/05/05/separation-logic-through-a-new-lens/</a></p>
+
+
+
+<a name="196841759"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/Hoare%20logic/near/196841759" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Sam Tenka <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/topic_Hoare.20logic.html#196841759">(May 07 2020 at 23:11)</a>:</h4>
+<p><span class="user-mention" data-user-id="276072">@sarahzrf</span> in this formalism, does "homotopy" between two programs mean something (per <span class="user-mention" data-user-id="299803">@Hendrik Boom</span> 's question)?</p>
+
+
+
+<a name="196841776"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/Hoare%20logic/near/196841776" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> sarahzrf <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/topic_Hoare.20logic.html#196841776">(May 07 2020 at 23:11)</a>:</h4>
+<p>i don't have that, no :) but such a homotopy would naturally fit as a notion of higher morphism in this category</p>
+
+
+
+<a name="196841791"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/Hoare%20logic/near/196841791" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> sarahzrf <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/topic_Hoare.20logic.html#196841791">(May 07 2020 at 23:11)</a>:</h4>
+<p>anyway, there's a bit more to say: you have a projection from H to the monoid of commands, which forgets the pre &amp; post</p>
+
+
+
+<a name="196841849"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/Hoare%20logic/near/196841849" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> sarahzrf <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/topic_Hoare.20logic.html#196841849">(May 07 2020 at 23:12)</a>:</h4>
+<p>weakest pre and strongest post are exactly cleavages witnessing that this projection is a fibration and opfibration!</p>
+
+
+
+<a name="196842023"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/Hoare%20logic/near/196842023" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> sarahzrf <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/topic_Hoare.20logic.html#196842023">(May 07 2020 at 23:15)</a>:</h4>
+<p>if you come at this starting the other way around: weakest pre and strongest post give functors from the monoid of commands to the category of categories, which send the unique object to the proset of assertions, and the endomorphism C to the wp_C or sp_C functor</p>
+
+
+
+<a name="196842036"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/Hoare%20logic/near/196842036" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> sarahzrf <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/topic_Hoare.20logic.html#196842036">(May 07 2020 at 23:15)</a>:</h4>
+<p>and then H arises as the grothendieck construction of either</p>
+
+
+
+<a name="196842115"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/Hoare%20logic/near/196842115" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Sam Tenka <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/topic_Hoare.20logic.html#196842115">(May 07 2020 at 23:16)</a>:</h4>
+<p>What's a proset?</p>
+
+
+
+<a name="196842120"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/Hoare%20logic/near/196842120" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> sarahzrf <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/topic_Hoare.20logic.html#196842120">(May 07 2020 at 23:16)</a>:</h4>
+<p>preordered set</p>
+
+
+
+<a name="196842187"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/Hoare%20logic/near/196842187" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> sarahzrf <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/topic_Hoare.20logic.html#196842187">(May 07 2020 at 23:17)</a>:</h4>
+<p>finally, without privileging either variance: you can put it as a <em>lax</em> functor from the monoid of commands to the category of <em>profunctors</em>, which sends C to the profunctor H_C from assertions to assertions such that H_C(P, Q) is a singleton if {P} C {Q} is true and empty otherwise</p>
+
+
+
+<a name="196842260"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/Hoare%20logic/near/196842260" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> sarahzrf <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/topic_Hoare.20logic.html#196842260">(May 07 2020 at 23:18)</a>:</h4>
+<p>and this is a "displayed category" since it sends the identity to the identity profunctor</p>
+
+
+
+<a name="196842265"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/Hoare%20logic/near/196842265" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Sam Tenka <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/topic_Hoare.20logic.html#196842265">(May 07 2020 at 23:18)</a>:</h4>
+<p>Cool!  I wonder whether it is ever useful to consider enriching over something other than Bool.  This would give enough structure to address <span class="user-mention" data-user-id="299803">@Hendrik Boom</span> 's question in nontrivial ways, I think.</p>
+
+
+
+<a name="196842334"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/Hoare%20logic/near/196842334" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> sarahzrf <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/topic_Hoare.20logic.html#196842334">(May 07 2020 at 23:19)</a>:</h4>
+<p>anyway, there's one more perspective, which was pointed out by <span class="user-mention" data-user-id="276777">@Mike Shulman</span> in a question at my talk yesterday: in addition to H being a bifibration over the monoid of commands, it's also a promonad over the proset of assertions</p>
+
+
+
+<a name="196842445"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/Hoare%20logic/near/196842445" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> sarahzrf <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/topic_Hoare.20logic.html#196842445">(May 07 2020 at 23:21)</a>:</h4>
+<p>a promonad on a category C is a monad on C in the bicategory of profunctors Prof, and it's equivalent to another category on the same objects of C equipped with a functor from C</p>
+
+
+
+<a name="196842542"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/Hoare%20logic/near/196842542" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> sarahzrf <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/topic_Hoare.20logic.html#196842542">(May 07 2020 at 23:22)</a>:</h4>
+<p>so H is a category on the same objects as the proset of assertions, and all of the old morphisms—the entailments—become new morphisms—the hoare triples for skip. but we also have new morphisms</p>
+
+
+
+<a name="196842684"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/Hoare%20logic/near/196842684" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> sarahzrf <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/topic_Hoare.20logic.html#196842684">(May 07 2020 at 23:23)</a>:</h4>
+<p>as a morphism in Prof, the promonad is the profunctor H from assertions to assertions where H(P, Q) is the set of commands C such that {P} C {D}</p>
+
+
+
+<a name="196842919"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/Hoare%20logic/near/196842919" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Sam Tenka <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/topic_Hoare.20logic.html#196842919">(May 07 2020 at 23:26)</a>:</h4>
+<p>(I'm not familiar with a lot of the words here.  And that's okay!  I'll learn slowly.)  So can the story of "adding new morphisms to just the entailments" be understood as emphasizing the rule of consequence ({P}C{Q} implies {P'}C{Q'} when P'&lt;P, Q&lt;Q', which looks lensy?)</p>
+
+
+
+<a name="196842959"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/Hoare%20logic/near/196842959" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> sarahzrf <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/topic_Hoare.20logic.html#196842959">(May 07 2020 at 23:27)</a>:</h4>
+<p>not sure</p>
+
+
+
+<a name="196842971"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/Hoare%20logic/near/196842971" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> sarahzrf <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/topic_Hoare.20logic.html#196842971">(May 07 2020 at 23:27)</a>:</h4>
+<p>rule of consequence states that H_C above is a profunctor though</p>
+
+
+
+<a name="196843008"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/Hoare%20logic/near/196843008" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/topic_Hoare.20logic.html#196843008">(May 07 2020 at 23:27)</a>:</h4>
+<p>Not sure how I feel about the word "promonad".  Especially when combined with "proset", where the "pro" means something entirely different...</p>
+
+
+
+<a name="196843057"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/Hoare%20logic/near/196843057" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> sarahzrf <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/topic_Hoare.20logic.html#196843057">(May 07 2020 at 23:28)</a>:</h4>
+<p>yeah, it's a little unfortunate :( but some people at least seem to have started using it...</p>
+
+
+
+<a name="196843080"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/Hoare%20logic/near/196843080" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> sarahzrf <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/topic_Hoare.20logic.html#196843080">(May 07 2020 at 23:28)</a>:</h4>
+<p>grouse at <span class="user-mention" data-user-id="282822">@fosco</span> about it rather than me <span aria-label="upside down" class="emoji emoji-1f643" role="img" title="upside down">:upside_down:</span></p>
+
+
+
+<a name="196843133"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/Hoare%20logic/near/196843133" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> sarahzrf <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/topic_Hoare.20logic.html#196843133">(May 07 2020 at 23:29)</a>:</h4>
+<p>and like "pro" as a prefix for profunctor-y stuff has some other uses too i mean, like promonoidal or proarrow</p>
+
+
+
+<a name="196843271"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/Hoare%20logic/near/196843271" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/topic_Hoare.20logic.html#196843271">(May 07 2020 at 23:31)</a>:</h4>
+<p>I guess my suggestion would be to stop using "proset", especially since it has <a href="https://ncatlab.org/nlab/show/pro-set" title="https://ncatlab.org/nlab/show/pro-set">another totally different meaning</a>.  I think just "preorder" is much more common in my experience.</p>
+
+
+
+<a name="196843349"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/Hoare%20logic/near/196843349" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> sarahzrf <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/topic_Hoare.20logic.html#196843349">(May 07 2020 at 23:32)</a>:</h4>
+<p>:( but people distinguish between "poset" and "partial order"...</p>
+
+
+
+<a name="196843395"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/Hoare%20logic/near/196843395" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> sarahzrf <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/topic_Hoare.20logic.html#196843395">(May 07 2020 at 23:32)</a>:</h4>
+<p>perhaps dropping "proset" is a better solution though</p>
+
+
+
+<a name="196843454"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/Hoare%20logic/near/196843454" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> sarahzrf <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/topic_Hoare.20logic.html#196843454">(May 07 2020 at 23:33)</a>:</h4>
+<p>i think part of why i started saying "proset" all the time may have been purely because i needed a name to avoid an identifier clash with "preorder" itself in a coq development since computers are worse at that kind of overloading than humans &gt;.&gt;</p>
+
+
+
+<a name="196843545"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/Hoare%20logic/near/196843545" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nathanael Arkor <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/topic_Hoare.20logic.html#196843545">(May 07 2020 at 23:34)</a>:</h4>
+<p>I think of posets and partial orders as synonyms too.</p>
+
+
+
+<a name="196843559"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/Hoare%20logic/near/196843559" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> sarahzrf <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/topic_Hoare.20logic.html#196843559">(May 07 2020 at 23:34)</a>:</h4>
+<p>huh, i would say the former is a structure while the latter is a relation</p>
+
+
+
+<a name="196843569"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/Hoare%20logic/near/196843569" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> sarahzrf <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/topic_Hoare.20logic.html#196843569">(May 07 2020 at 23:34)</a>:</h4>
+<p>i'm a huge pedant though</p>
+
+
+
+<a name="196843613"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/Hoare%20logic/near/196843613" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/topic_Hoare.20logic.html#196843613">(May 07 2020 at 23:35)</a>:</h4>
+<p>Certainly a partial order can be a relation, but it's not uncommon to use it to refer to the structure too.</p>
+
+
+
+<a name="196843673"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/Hoare%20logic/near/196843673" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> sarahzrf <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/topic_Hoare.20logic.html#196843673">(May 07 2020 at 23:36)</a>:</h4>
+<p>fair enough</p>
+
+
+
+<a name="196843700"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/Hoare%20logic/near/196843700" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/topic_Hoare.20logic.html#196843700">(May 07 2020 at 23:36)</a>:</h4>
+<p>(Ironically, this is an abuse that makes more sense in material set theory, where the relation itself, as a set, completely determines the carrier.)</p>
+
+
+
+<a name="196843727"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/Hoare%20logic/near/196843727" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> sarahzrf <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/topic_Hoare.20logic.html#196843727">(May 07 2020 at 23:36)</a>:</h4>
+<p>hah</p>
+
+
+
+<a name="196843749"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/Hoare%20logic/near/196843749" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/topic_Hoare.20logic.html#196843749">(May 07 2020 at 23:37)</a>:</h4>
+<p>One can always say "preordered set".  Or "thin category"...</p>
+
+
+
+<a name="196843773"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/Hoare%20logic/near/196843773" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/topic_Hoare.20logic.html#196843773">(May 07 2020 at 23:37)</a>:</h4>
+<p>... or "<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mn>0</mn><mo separator="true">,</mo><mn>1</mn><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(0,1)</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord">0</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord">1</span><span class="mclose">)</span></span></span></span>-category"... (yes, I remember you having a conversation about that here on zulip before your talk)</p>
+
+
+
+<a name="196843777"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/Hoare%20logic/near/196843777" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nathanael Arkor <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/topic_Hoare.20logic.html#196843777">(May 07 2020 at 23:37)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="276072">sarahzrf</span> <a href="#narrow/stream/229136-theory.3A-category.20theory/topic/Hoare.20logic/near/196843559" title="#narrow/stream/229136-theory.3A-category.20theory/topic/Hoare.20logic/near/196843559">said</a>:</p>
+<blockquote>
+<p>huh, i would say the former is a structure while the latter is a relation</p>
+</blockquote>
+<p>It's a little difficult to talk about a relation in isolation of the set it's defined on.</p>
+
+
+
+<a name="196843861"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/Hoare%20logic/near/196843861" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nathanael Arkor <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/topic_Hoare.20logic.html#196843861">(May 07 2020 at 23:39)</a>:</h4>
+<p>Similarly to how a monoid is a set with operations, not just the operations themselves.</p>
+
+
+
+<a name="196843869"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/Hoare%20logic/near/196843869" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> sarahzrf <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/topic_Hoare.20logic.html#196843869">(May 07 2020 at 23:39)</a>:</h4>
+<p>sure! i mean that it would sound odd to me to say something like "3 is an element of the partial order N"</p>
+
+
+
+<a name="196843877"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/Hoare%20logic/near/196843877" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Reid Barton <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/topic_Hoare.20logic.html#196843877">(May 07 2020 at 23:39)</a>:</h4>
+<p>In practice I think it's pretty common to say "poset" for "set equipped with a preorder" (I certainly do this)--assuming you only want to consider your preorders = (0,1)-categories up to equivalence this shouldn't do much harm.</p>
+
+
+
+<a name="196843895"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/Hoare%20logic/near/196843895" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> sarahzrf <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/topic_Hoare.20logic.html#196843895">(May 07 2020 at 23:39)</a>:</h4>
+<p>to me, ≤ is the partial order, while N is a poset</p>
+
+
+
+<a name="196843910"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/Hoare%20logic/near/196843910" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> sarahzrf <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/topic_Hoare.20logic.html#196843910">(May 07 2020 at 23:39)</a>:</h4>
+<p>but. this has become a huge tangent on a not-super-important (afaict) point</p>
+
+
+
+<a name="196843949"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/Hoare%20logic/near/196843949" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> sarahzrf <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/topic_Hoare.20logic.html#196843949">(May 07 2020 at 23:40)</a>:</h4>
+<p>plus i need to eat dinner... bbl</p>
+
+
+
+<a name="196843973"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/Hoare%20logic/near/196843973" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Reid Barton <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/topic_Hoare.20logic.html#196843973">(May 07 2020 at 23:40)</a>:</h4>
+<p>Or common among category theorists, at any rate.</p>
+
+
+
+<a name="196844052"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/Hoare%20logic/near/196844052" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/topic_Hoare.20logic.html#196844052">(May 07 2020 at 23:41)</a>:</h4>
+<p><span class="user-mention" data-user-id="276480">@Reid Barton</span> Yes, I agree this is reasonably common among category theorists.  But there are certainly other people that it rubs the wrong way...</p>
+
+
+
+<a name="196875131"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/Hoare%20logic/near/196875131" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> [Mod] Morgan Rogers <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/topic_Hoare.20logic.html#196875131">(May 08 2020 at 09:41)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="281272">Sam Tenka</span> <a href="#narrow/stream/229136-theory.3A-category.20theory/topic/Hoare.20logic/near/196842919" title="#narrow/stream/229136-theory.3A-category.20theory/topic/Hoare.20logic/near/196842919">said</a>:</p>
+<blockquote>
+<p>(I'm not familiar with a lot of the words here.  And that's okay!  I'll learn slowly.) </p>
+</blockquote>
+<p>As someone for whom the notation in the question at the top of the thread was meaningless, I strongly relate.</p>
+
+
+
+<a name="196876315"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/Hoare%20logic/near/196876315" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> [Mod] Morgan Rogers <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/topic_Hoare.20logic.html#196876315">(May 08 2020 at 09:56)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="281272">Sam Tenka</span> <a href="#narrow/stream/229136-theory.3A-category.20theory/topic/Hoare.20logic/near/196841477" title="#narrow/stream/229136-theory.3A-category.20theory/topic/Hoare.20logic/near/196841477">said</a>:</p>
+<blockquote>
+<p>Yeah, so in this setting, a natural map between two functors (two programs A, B) is just an assertion that "for any post condition Q: {the weakest precondition that through A guarantees Q} implies {the weakest precondition that through B guarantees Q}", i.e. that "for all P and Q: if {P}A{Q}, then {P}B{Q}".  This is a relation between programs that might help us compare two programs that "do the same thing" except one of them doesn't always terminate.</p>
+</blockquote>
+<p>The cleavages that <span class="user-mention" data-user-id="276072">@sarahzrf</span> mentioned means that we could just as well talk about the implication on the other side, which is to say "for any pre-condition P: {the strongest post-condition that through A is guaranteed by P} implies {the strongest post-condition that through B is guaranteed by P}". To me this feel a lot like lifting the implications between conditions by applying quantifiers-as-adjunctions, and I suspect that intuition can be made formal. However, unless the structure of the relations between conditions can be enriched, there's not much hope of getting richer structure on these transformations.<br>
+Another option would be to explore substitution rules for the commands, which abstractly amounts to replacing the composition of commands with the monoidal product in a monoidal category. The morphisms in this category give candidate 2-cells in the category H that <span class="user-mention silent" data-user-id="276072">sarahzrf</span> described.</p>
+
+
+
+<a name="196928001"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/Hoare%20logic/near/196928001" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/topic_Hoare.20logic.html#196928001">(May 08 2020 at 17:49)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="281272">Sam Tenka</span> <a href="#narrow/stream/229136-theory.3A-category.20theory/topic/Hoare.20logic/near/196841729" title="#narrow/stream/229136-theory.3A-category.20theory/topic/Hoare.20logic/near/196841729">said</a>:</p>
+<blockquote>
+<p>Oh darn it.  I wish I hadn't missed it!</p>
+</blockquote>
+<p>It's been recorded:</p>
+<p><a href="https://www.youtube.com/watch?v=Aie82xGks-k&amp;feature=emb_logo" title="https://www.youtube.com/watch?v=Aie82xGks-k&amp;feature=emb_logo">https://www.youtube.com/watch?v=Aie82xGks-k&amp;feature=emb_logo</a></p>
+<p>and slides are here:</p>
+<p><a href="http://math.ucr.edu/home/baez/mathematical/ACTUCR/Rovner-Frydman_Separation_Logic.pdf" title="http://math.ucr.edu/home/baez/mathematical/ACTUCR/Rovner-Frydman_Separation_Logic.pdf">http://math.ucr.edu/home/baez/mathematical/ACTUCR/Rovner-Frydman_Separation_Logic.pdf</a></p>
+<p>Almost as good as being there.  <span aria-label="upside down" class="emoji emoji-1f643" role="img" title="upside down">:upside_down:</span></p>
+<div class="youtube-video message_inline_image"><a data-id="Aie82xGks-k" href="https://www.youtube.com/watch?v=Aie82xGks-k&amp;feature=emb_logo" title="https://www.youtube.com/watch?v=Aie82xGks-k&amp;feature=emb_logo"><img src="https://i.ytimg.com/vi/Aie82xGks-k/default.jpg"></a></div>
+
+
+
+{% endraw %}
+
+<hr><p>Last updated: Feb 13 2022 at 17:17 UTC</p>

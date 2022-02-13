@@ -1,0 +1,180 @@
+---
+layout: archive
+title: Zulip Chat Archive
+permalink: /stream/229199-learning:-questions/topic/.5B2.2CC.5D.20is.20cartesian.20closed.2C.20in.20agda.html
+---
+
+<h2>Stream: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/index.html">learning: questions</a></h2>
+<h3>Topic: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/topic_.5B2.2CC.5D.20is.20cartesian.20closed.2C.20in.20agda.html">[2,C] is cartesian closed, in agda</a></h3>
+
+<hr>
+
+<base href="https://categorytheory.zulipchat.com/">
+
+{% raw %}
+
+<a name="257903635"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/%5B2%2CC%5D%20is%20cartesian%20closed%2C%20in%20agda/near/257903635" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> fosco <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/topic_.5B2.2CC.5D.20is.20cartesian.20closed.2C.20in.20agda.html#257903635">(Oct 17 2021 at 09:19)</a>:</h4>
+<p>I am trying to prove the following fact</p>
+<blockquote>
+<p>the category <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi mathvariant="script">C</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">{\cal C}^2</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8141079999999999em;vertical-align:0em;"></span><span class="mord"><span class="mord"><span class="mord"><span class="mord mathcal" style="margin-right:0.05834em;">C</span></span></span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141079999999999em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span></span></span></span> of arrows of a cartesian closed category <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="script">C</mi></mrow><annotation encoding="application/x-tex">\cal C</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord"><span class="mord mathcal" style="margin-right:0.05834em;">C</span></span></span></span></span> is cartesian closed.</p>
+</blockquote>
+<p>in the particular case of <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="script">C</mi></mrow><annotation encoding="application/x-tex">{\cal C}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord"><span class="mord"><span class="mord mathcal" style="margin-right:0.05834em;">C</span></span></span></span></span></span>= the category of sets, using agda, and in particular <a href="https://github.com/agda/agda-categories">agda-categories</a>.</p>
+<p>Here's a MWE of what I did and where I am stuck (with little effort this entire post is already a <code>lagda</code> file):</p>
+<p>First, the minimal possible amount of boilerplate:</p>
+<div class="codehilite" data-code-language="Agda"><pre><span></span><code><span class="kr">module</span> <span class="n">ArrowIsCCC</span> <span class="kr">where</span>
+
+<span class="kr">open</span> <span class="kr">import</span> <span class="n">Categories.Category.CartesianClosed.Canonical</span>
+<span class="kr">open</span> <span class="kr">import</span> <span class="n">Categories.Category.Core</span>
+<span class="kr">open</span> <span class="kr">import</span> <span class="n">Data.Product</span>
+<span class="kr">open</span> <span class="kr">import</span> <span class="n">Function</span> <span class="kr">using</span> <span class="o">(</span>const<span class="o">)</span>
+<span class="kr">open</span> <span class="kr">import</span> <span class="n">Level</span>
+<span class="kr">open</span> <span class="kr">import</span> <span class="n">Relation.Binary.Core</span> <span class="kr">using</span> <span class="o">(</span>Rel<span class="o">)</span>
+<span class="kr">open</span> <span class="kr">import</span> <span class="n">Relation.Binary.PropositionalEquality</span>
+<span class="kr">open</span> Relation.Binary.PropositionalEquality.≡-Reasoning
+</code></pre></div>
+<p>a postulate on extensionality, because most of the proofs of uniqueness of a terminal object require the lemma for which the terminal type has a unique term <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">⊤</mi></mrow><annotation encoding="application/x-tex">\top</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.69444em;vertical-align:0em;"></span><span class="mord">⊤</span></span></span></span>, and extensionality to "lift" this to an equality of functions into <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>t</mi></mrow><annotation encoding="application/x-tex">t</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.61508em;vertical-align:0em;"></span><span class="mord mathnormal">t</span></span></span></span>, and the definition of said terminal type <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>t</mi></mrow><annotation encoding="application/x-tex">t</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.61508em;vertical-align:0em;"></span><span class="mord mathnormal">t</span></span></span></span>.</p>
+<div class="codehilite" data-code-language="Agda"><pre><span></span><code><span class="kr">postulate</span>
+ <span class="nf">extensionality</span> <span class="ow">:</span> <span class="ow">∀</span> <span class="o">{</span>A B <span class="ow">:</span> <span class="kt">Set</span><span class="o">}</span> <span class="o">{</span>f g <span class="ow">:</span> A <span class="ow">→</span> B<span class="o">}</span> <span class="ow">→</span>
+  <span class="o">(</span><span class="ow">∀</span> <span class="o">(</span>x <span class="ow">:</span> A<span class="o">)</span> <span class="ow">→</span> f x ≡ g x<span class="o">)</span> <span class="ow">→</span>
+  f ≡ g
+
+<span class="kr">data</span> t <span class="ow">:</span> <span class="kt">Set</span> <span class="kr">where</span>
+ <span class="nf">⊤</span> <span class="ow">:</span> t
+
+<span class="nf">!-unique-lemma</span> <span class="ow">:</span> <span class="ow">∀</span> <span class="o">(</span>x <span class="ow">:</span> t<span class="o">)</span> <span class="ow">→</span> ⊤ ≡ x
+!-unique-lemma ⊤ <span class="ow">=</span> refl
+</code></pre></div>
+<p>Now, the arrow category has objects the morphisms of <code>Set</code> and<br>
+morphisms the commutative squares</p>
+<p><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mtable rowspacing="0.1600em" columnalign="center center center" columnspacing="1em"><mtr><mtd><mstyle scriptlevel="0" displaystyle="false"><mi>A</mi></mstyle></mtd><mtd><mstyle scriptlevel="0" displaystyle="false"><mo lspace="0em" rspace="0em">→</mo></mstyle></mtd><mtd><mstyle scriptlevel="0" displaystyle="false"><mi>B</mi></mstyle></mtd></mtr><mtr><mtd><mstyle scriptlevel="0" displaystyle="false"><mo lspace="0em" rspace="0em">↓</mo></mstyle></mtd><mtd><mstyle scriptlevel="0" displaystyle="false"><mrow></mrow></mstyle></mtd><mtd><mstyle scriptlevel="0" displaystyle="false"><mo lspace="0em" rspace="0em">↓</mo></mstyle></mtd></mtr><mtr><mtd><mstyle scriptlevel="0" displaystyle="false"><mi>C</mi></mstyle></mtd><mtd><mstyle scriptlevel="0" displaystyle="false"><mo lspace="0em" rspace="0em">→</mo></mstyle></mtd><mtd><mstyle scriptlevel="0" displaystyle="false"><mi>D</mi></mstyle></mtd></mtr></mtable><annotation encoding="application/x-tex"> \begin{array}{ccc} A &amp;\to&amp; B\\ \downarrow &amp;&amp; \downarrow \\ C &amp;\to &amp; D\end{array}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:3.6000000000000005em;vertical-align:-1.5500000000000007em;"></span><span class="mord"><span class="mtable"><span class="arraycolsep" style="width:0.5em;"></span><span class="col-align-c"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:2.05em;"><span style="top:-4.21em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathnormal">A</span></span></span><span style="top:-3.0099999999999993em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mrel">↓</span></span></span><span style="top:-1.8099999999999994em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.07153em;">C</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:1.5500000000000007em;"><span></span></span></span></span></span><span class="arraycolsep" style="width:0.5em;"></span><span class="arraycolsep" style="width:0.5em;"></span><span class="col-align-c"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:2.05em;"><span style="top:-4.21em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mrel">→</span></span></span><span style="top:-3.0099999999999993em;"><span class="pstrut" style="height:3em;"></span><span class="mord"></span></span><span style="top:-1.8099999999999994em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mrel">→</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:1.5500000000000007em;"><span></span></span></span></span></span><span class="arraycolsep" style="width:0.5em;"></span><span class="arraycolsep" style="width:0.5em;"></span><span class="col-align-c"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:2.05em;"><span style="top:-4.21em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.05017em;">B</span></span></span><span style="top:-3.0099999999999993em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mrel">↓</span></span></span><span style="top:-1.8099999999999994em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.02778em;">D</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:1.5500000000000007em;"><span></span></span></span></span></span><span class="arraycolsep" style="width:0.5em;"></span></span></span></span></span></span></p>
+<div class="codehilite" data-code-language="Agda"><pre><span></span><code><span class="nf">arrow</span> <span class="ow">:</span> Category <span class="o">(</span>suc zero<span class="o">)</span> zero zero
+arrow <span class="ow">=</span> <span class="kr">record</span>
+  <span class="o">{</span> Obj <span class="ow">=</span> Σ <span class="o">(</span><span class="kt">Set</span> × <span class="kt">Set</span><span class="o">)</span> <span class="o">(</span><span class="ow">λ</span> x <span class="ow">→</span> proj₁ x <span class="ow">→</span> proj₂ x<span class="o">)</span>
+  ; _⇒_ <span class="ow">=</span> arr
+  ; _≈_ <span class="ow">=</span> _≡_
+  ; id <span class="ow">=</span> <span class="o">(</span><span class="ow">λ</span> z <span class="ow">→</span> z<span class="o">)</span> , <span class="ow">λ</span> z <span class="ow">→</span> z
+  ; _∘_ <span class="ow">=</span> <span class="ow">λ</span> <span class="o">{</span>A<span class="o">}</span> <span class="o">{</span>B<span class="o">}</span> <span class="o">{</span>C<span class="o">}</span> f g <span class="ow">→</span> comp <span class="o">{</span>A<span class="o">}</span> <span class="o">{</span>B<span class="o">}</span> <span class="o">{</span>C<span class="o">}</span> f g
+  ; assoc <span class="ow">=</span> refl
+  ; sym-assoc <span class="ow">=</span> refl
+  ; identityˡ <span class="ow">=</span> refl
+  ; identityʳ <span class="ow">=</span> refl
+  ; identity² <span class="ow">=</span> refl
+  ; equiv <span class="ow">=</span> <span class="kr">record</span> <span class="o">{</span> refl <span class="ow">=</span> refl ; sym <span class="ow">=</span> sym ; trans <span class="ow">=</span> trans <span class="o">}</span>
+  ; ∘-resp-≈ <span class="ow">=</span> <span class="ow">λ</span> <span class="o">{</span>refl refl <span class="ow">→</span> refl<span class="o">}</span>
+  <span class="o">}</span>
+  <span class="kr">where</span>
+  <span class="nf">arr</span> <span class="ow">:</span> Rel <span class="o">(</span>Σ <span class="o">(</span><span class="kt">Set</span> × <span class="kt">Set</span><span class="o">)</span> <span class="o">(</span><span class="ow">λ</span> x <span class="ow">→</span> proj₁ x <span class="ow">→</span> proj₂ x<span class="o">))</span> zero
+  arr <span class="o">((</span>a , b<span class="o">)</span> , x1<span class="o">)</span> <span class="o">((</span>c , d<span class="o">)</span> , y1<span class="o">)</span> <span class="ow">=</span> <span class="o">(</span>a <span class="ow">→</span> c<span class="o">)</span> × <span class="o">(</span>b <span class="ow">→</span> d<span class="o">)</span>
+  <span class="nf">comp</span> <span class="ow">:</span> <span class="o">{</span>A B C <span class="ow">:</span> Σ <span class="o">(</span><span class="kt">Set</span> × <span class="kt">Set</span><span class="o">)</span> <span class="o">(</span><span class="ow">λ</span> x <span class="ow">→</span> proj₁ x <span class="ow">→</span> proj₂ x<span class="o">)}</span> <span class="ow">→</span> arr B C <span class="ow">→</span> arr A B <span class="ow">→</span> arr A C
+  comp <span class="o">{</span>A<span class="o">}</span> <span class="o">{</span>B<span class="o">}</span> <span class="o">{</span>C<span class="o">}</span> <span class="o">(</span>f0 , f1<span class="o">)</span> <span class="o">(</span>g0 , g1<span class="o">)</span> <span class="ow">=</span> <span class="o">(</span><span class="ow">λ</span> x <span class="ow">→</span> f0 <span class="o">(</span>g0 x<span class="o">))</span> , <span class="ow">λ</span> x <span class="ow">→</span> f1 <span class="o">(</span>g1 x<span class="o">)</span>
+</code></pre></div>
+<p>No particular surprises here (in agda-categories a category <code>Category ℓ o h</code> is indexed over a universe <code>Set o</code> of objects and a universe <code>Set h</code> of morphisms, and lives in a universe <code>Set ℓ</code>); <code>_⇒_</code> is the relation of morphisms, <code>_≈_</code> an equivalence relation on each hom-set<em>oid</em>, <code>id</code> and <code>_∘_</code> identity and composition, et cetera. See the definition of category for how the propositions from <code>assoc</code> to <code>∘-resp-≈</code> are defined.</p>
+<p>Now, the proof that <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi mathvariant="script">C</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">\mathcal{C}^2</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8141079999999999em;vertical-align:0em;"></span><span class="mord"><span class="mord mathcal" style="margin-right:0.05834em;">C</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141079999999999em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span></span></span></span> is cartesian closed requires another record with a lot of fields:</p>
+<div class="codehilite" data-code-language="Agda"><pre><span></span><code><span class="nf">arrow-ccc</span> <span class="ow">:</span> CartesianClosed arrow
+arrow-ccc <span class="ow">=</span> <span class="kr">record</span>
+ <span class="o">{</span> ⊤ <span class="ow">=</span> <span class="o">(</span>t , t<span class="o">)</span> , <span class="o">(</span><span class="ow">λ</span> _ <span class="ow">→</span> ⊤<span class="o">)</span>
+ ; _×_ <span class="ow">=</span> prod
+ ; ! <span class="ow">=</span> <span class="o">(</span><span class="ow">λ</span> _ <span class="ow">→</span> ⊤<span class="o">)</span> , <span class="o">(</span><span class="ow">λ</span> _ <span class="ow">→</span> ⊤<span class="o">)</span>
+ ; π₁ <span class="ow">=</span> proj₁ , proj₁
+ ; π₂ <span class="ow">=</span> proj₂ , proj₂
+ ; ⟨_,_⟩ <span class="ow">=</span> <span class="ow">λ</span> <span class="o">{</span>A<span class="o">}</span> <span class="o">{</span>B<span class="o">}</span> <span class="o">{</span>C<span class="o">}</span> f g <span class="ow">→</span> pair <span class="o">{</span>A<span class="o">}</span> <span class="o">{</span>B<span class="o">}</span> <span class="o">{</span>C<span class="o">}</span> f g
+ ; !-unique <span class="ow">=</span> <span class="ow">λ</span> <span class="o">{</span>A<span class="o">}</span> <span class="ow">→</span> bang-uniq <span class="o">{</span>A<span class="o">}</span>
+ ; π₁-comp <span class="ow">=</span> refl
+ ; π₂-comp <span class="ow">=</span> refl
+ ; ⟨,⟩-unique <span class="ow">=</span> <span class="ow">λ</span> <span class="o">{</span>refl refl <span class="ow">→</span> refl<span class="o">}</span>
+ ; _^_ <span class="ow">=</span> to-the
+ ; eval <span class="ow">=</span> <span class="c c-Directive">{!   !}</span>
+ ; curry <span class="ow">=</span> <span class="c c-Directive">{!   !}</span>
+ ; eval-comp <span class="ow">=</span> <span class="c c-Directive">{!   !}</span>
+ ; curry-resp-≈ <span class="ow">=</span> <span class="c c-Directive">{!   !}</span>
+ ; curry-unique <span class="ow">=</span> <span class="c c-Directive">{!   !}</span>
+ <span class="o">}</span>
+ <span class="kr">where</span>
+ <span class="nf">prod</span> <span class="ow">:</span> Category.Obj arrow <span class="ow">→</span> Category.Obj arrow <span class="ow">→</span> Category.Obj arrow
+ prod <span class="o">((</span>X , Y<span class="o">)</span> , u<span class="o">)</span> <span class="o">((</span>A , B<span class="o">)</span> , v<span class="o">)</span> <span class="ow">=</span>
+  <span class="o">((</span>X × A<span class="o">)</span> , <span class="o">(</span>Y × B<span class="o">))</span> , <span class="ow">λ</span> x <span class="ow">→</span> <span class="o">(</span>u <span class="o">(</span>proj₁ x<span class="o">))</span> , <span class="o">(</span>v <span class="o">(</span>proj₂ x<span class="o">))</span>
+ <span class="nf">pair</span> <span class="ow">:</span> <span class="o">{</span>C A B <span class="ow">:</span> Category.Obj arrow<span class="o">}</span> <span class="ow">→</span>
+  <span class="o">(</span>arrow Category.⇒ C<span class="o">)</span> A <span class="ow">→</span>
+  <span class="o">(</span>arrow Category.⇒ C<span class="o">)</span> B <span class="ow">→</span>
+  <span class="o">(</span>arrow Category.⇒ C<span class="o">)</span> <span class="o">(</span>prod A B<span class="o">)</span>
+ pair <span class="o">{(</span>X , Y<span class="o">)</span> , u<span class="o">}</span> <span class="o">{(</span>A , B<span class="o">)</span> , v<span class="o">}</span> <span class="o">{(</span>E , F<span class="o">)</span> , w<span class="o">}</span> <span class="o">(</span>f0 , f1<span class="o">)</span> <span class="o">(</span>g0 , g1<span class="o">)</span> <span class="ow">=</span>
+  <span class="o">(</span><span class="ow">λ</span> x <span class="ow">→</span> <span class="o">(</span>f0 x<span class="o">)</span> , <span class="o">(</span>g0 x<span class="o">))</span> , <span class="o">(</span><span class="ow">λ</span> x <span class="ow">→</span> <span class="o">(</span>f1 x<span class="o">)</span> , <span class="o">(</span>g1 x<span class="o">))</span>
+ <span class="nf">bang-uniq</span> <span class="ow">:</span> <span class="o">{</span>A <span class="ow">:</span> Category.Obj arrow<span class="o">}</span> <span class="ow">→</span>
+  <span class="o">(</span>f <span class="ow">:</span> <span class="o">(</span>arrow Category.⇒ A<span class="o">)</span> <span class="o">((</span>t , t<span class="o">)</span> , <span class="o">(</span><span class="ow">λ</span> _ <span class="ow">→</span> ⊤<span class="o">)))</span> <span class="ow">→</span>
+  <span class="o">((</span><span class="ow">λ</span> _ <span class="ow">→</span> ⊤<span class="o">)</span> , <span class="o">(</span><span class="ow">λ</span> _ <span class="ow">→</span> ⊤<span class="o">))</span> ≡ f
+ bang-uniq <span class="o">(</span>f0 , f1<span class="o">)</span> <span class="ow">=</span>
+  cong₂ _,_
+   <span class="o">(</span>extensionality <span class="ow">λ</span> x <span class="ow">→</span> !-unique-lemma <span class="o">(</span>f0 x<span class="o">))</span>
+   <span class="o">(</span>extensionality <span class="o">(</span><span class="ow">λ</span> x <span class="ow">→</span> !-unique-lemma <span class="o">(</span>f1 x<span class="o">)))</span>
+ <span class="nf">to-the</span> <span class="ow">:</span> Category.Obj arrow <span class="ow">→</span>
+  Category.Obj arrow <span class="ow">→</span>
+  Category.Obj arrow
+ to-the <span class="o">((</span>B0 , B1<span class="o">)</span> , u<span class="o">)</span> <span class="o">((</span>A0 , A1<span class="o">)</span> , v<span class="o">)</span> <span class="ow">=</span>
+  <span class="o">(</span>p , <span class="o">(</span>B1 <span class="ow">→</span> A1<span class="o">))</span> , <span class="o">(</span><span class="ow">λ</span> x b1 <span class="ow">→</span> <span class="c c-Directive">{!   !}</span><span class="o">)</span>
+   <span class="kr">where</span>
+   <span class="nf">p</span> <span class="ow">:</span> <span class="kt">Set</span>
+   p <span class="ow">=</span> Σ <span class="o">((</span>A0 <span class="ow">→</span> B0<span class="o">)</span> × <span class="o">(</span>A1 <span class="ow">→</span> B1<span class="o">))</span> <span class="o">(</span><span class="ow">λ</span> r <span class="ow">→</span> <span class="o">(</span><span class="ow">λ</span> x <span class="ow">→</span> u <span class="o">((</span>proj₁ r<span class="o">)</span> x<span class="o">))</span> ≡ <span class="o">(</span><span class="ow">λ</span> x <span class="ow">→</span> <span class="o">(</span>proj₂ r<span class="o">)</span> <span class="o">(</span>v x<span class="o">)))</span>
+</code></pre></div>
+<p>...and this becomes a bit of a mess. The definition I'm stuck at is the <code>_^_</code> operation, the internal hom: it is well-known that in an arrow category the internal hom structure is defined by a <a href="https://ncatlab.org/nlab/show/pullback+power">"pullback-power" construction</a>, defined as a certain pullback. This is what I was trying to do with that </p>
+<div class="codehilite" data-code-language="Agda"><pre><span></span><code><span class="nf">p</span> <span class="ow">:</span> <span class="kt">Set</span>
+p <span class="ow">=</span> Σ <span class="o">((</span>A0 <span class="ow">→</span> B0<span class="o">)</span> × <span class="o">(</span>A1 <span class="ow">→</span> B1<span class="o">))</span> <span class="ow">λ</span> r <span class="ow">→</span> <span class="o">(</span><span class="ow">λ</span> x <span class="ow">→</span> u <span class="o">((</span>proj₁ r<span class="o">)</span> x<span class="o">))</span> ≡ <span class="o">(</span><span class="ow">λ</span> x <span class="ow">→</span> <span class="o">(</span>proj₂ r<span class="o">)</span> <span class="o">(</span>v x<span class="o">))</span>
+</code></pre></div>
+<p>the pullback-power <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">[</mo><mi>v</mi><mo separator="true">,</mo><mi>u</mi><mo stretchy="false">]</mo></mrow><annotation encoding="application/x-tex">[v,u]</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">[</span><span class="mord mathnormal" style="margin-right:0.03588em;">v</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathnormal">u</span><span class="mclose">]</span></span></span></span> should be a dependent sum of all the <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>s</mi><mo separator="true">,</mo><mi>t</mi></mrow><annotation encoding="application/x-tex">s,t</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.80952em;vertical-align:-0.19444em;"></span><span class="mord mathnormal">s</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathnormal">t</span></span></span></span> such that <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>t</mi><mi>v</mi><mo>=</mo><mi>u</mi><mi>s</mi></mrow><annotation encoding="application/x-tex">tv=us</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.61508em;vertical-align:0em;"></span><span class="mord mathnormal">t</span><span class="mord mathnormal" style="margin-right:0.03588em;">v</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathnormal">u</span><span class="mord mathnormal">s</span></span></span></span> (this is exactly how you describe the pullback, indeed).</p>
+<p>How can this be defined in agda?</p>
+
+
+
+<a name="257905097"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/%5B2%2CC%5D%20is%20cartesian%20closed%2C%20in%20agda/near/257905097" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Kenji Maillard <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/topic_.5B2.2CC.5D.20is.20cartesian.20closed.2C.20in.20agda.html#257905097">(Oct 17 2021 at 09:43)</a>:</h4>
+<p>Is it really supposed to be <code>B1 -&gt; A1</code> in the definition of <code>to-the</code> ? I would have expected something like</p>
+<div class="codehilite" data-code-language="Agda"><pre><span></span><code>to-the <span class="o">((</span>B0 , B1<span class="o">)</span> , u<span class="o">)</span> <span class="o">((</span>A0 , A1<span class="o">)</span> , v<span class="o">)</span> <span class="ow">=</span>
+  <span class="o">(</span>p , <span class="o">(</span>A1 <span class="ow">→</span> B1<span class="o">))</span> , <span class="o">(</span><span class="ow">λ</span> x a1 <span class="ow">→</span> proj₂ <span class="o">(</span>proj₁ x<span class="o">)</span> a1<span class="o">)</span>
+</code></pre></div>
+<p>(I didn't try it though)</p>
+
+
+
+<a name="257908330"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/%5B2%2CC%5D%20is%20cartesian%20closed%2C%20in%20agda/near/257908330" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> fosco <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/topic_.5B2.2CC.5D.20is.20cartesian.20closed.2C.20in.20agda.html#257908330">(Oct 17 2021 at 10:38)</a>:</h4>
+<p>Whoops, yes, that's a mistake. Hmm, and when I write</p>
+<div class="codehilite" data-code-language="Agda"><pre><span></span><code><span class="nf">to-the</span> <span class="ow">:</span> Category.Obj arrow <span class="ow">→</span>
+  Category.Obj arrow <span class="ow">→</span>
+  Category.Obj arrow
+ to-the <span class="o">((</span>B0 , B1<span class="o">)</span> , u<span class="o">)</span> <span class="o">((</span>A0 , A1<span class="o">)</span> , v<span class="o">)</span> <span class="ow">=</span>
+  <span class="o">(</span>p , <span class="o">(</span>A1 <span class="ow">→</span> B1<span class="o">))</span> , <span class="o">(</span><span class="ow">λ</span> x a1 <span class="ow">→</span> proj₂ <span class="o">(</span>proj₁ x<span class="o">)</span> a1<span class="o">)</span>
+   <span class="kr">where</span>
+   <span class="nf">p</span> <span class="ow">:</span> <span class="kt">Set</span>
+   p <span class="ow">=</span> Σ <span class="o">((</span>A0 <span class="ow">→</span> B0<span class="o">)</span> × <span class="o">(</span>A1 <span class="ow">→</span> B1<span class="o">))</span> <span class="o">(</span><span class="ow">λ</span> r <span class="ow">→</span> <span class="o">(</span><span class="ow">λ</span> x <span class="ow">→</span> u <span class="o">((</span>proj₁ r<span class="o">)</span> x<span class="o">))</span> ≡ <span class="o">(</span><span class="ow">λ</span> x <span class="ow">→</span> <span class="o">(</span>proj₂ r<span class="o">)</span> <span class="o">(</span>v x<span class="o">)))</span>
+</code></pre></div>
+<p>nobody complains. Let's see... The next step is defining <code>ev</code>:</p>
+<div class="codehilite" data-code-language="Agda"><pre><span></span><code><span class="nf">ev</span> <span class="ow">:</span> <span class="o">{</span>B A <span class="ow">:</span> Category.Obj arrow<span class="o">}</span> <span class="ow">→</span> <span class="o">(</span>arrow Category.⇒ prod <span class="o">(</span>to-the B A<span class="o">)</span> A<span class="o">)</span> B
+ev <span class="o">{(</span>B0 , B1<span class="o">)</span> , u<span class="o">}</span> <span class="o">{(</span>A0 , A1<span class="o">)</span>  , v<span class="o">}</span> <span class="ow">=</span> dis , dat
+ <span class="kr">where</span>
+ <span class="nf">dis</span> <span class="ow">:</span> proj₁ <span class="o">(</span>proj₁ <span class="o">(</span>prod <span class="o">(</span>to-the <span class="o">((</span>B0 , B1<span class="o">)</span> , u<span class="o">)</span> <span class="o">((</span>A0 , A1<span class="o">)</span> , v<span class="o">))</span> <span class="o">((</span>A0 , A1<span class="o">)</span> , v<span class="o">)))</span> <span class="ow">→</span> B0
+ dis <span class="o">((</span>d , p<span class="o">)</span> , a0<span class="o">)</span> <span class="ow">=</span> <span class="o">(</span>proj₁ d<span class="o">)</span> a0
+ <span class="nf">dat</span> <span class="ow">:</span> proj₂ <span class="o">(</span>proj₁ <span class="o">(</span>prod <span class="o">(</span>to-the <span class="o">((</span>B0 , B1<span class="o">)</span> , u<span class="o">)</span> <span class="o">((</span>A0 , A1<span class="o">)</span> , v<span class="o">))</span> <span class="o">((</span>A0 , A1<span class="o">)</span> , v<span class="o">)))</span> <span class="ow">→</span> B1
+ dat <span class="o">(</span>fst , snd<span class="o">)</span> <span class="ow">=</span> fst snd
+</code></pre></div>
+<p>(probably not the smartest/cleanest way but it works); I am confused though: is <code>p</code> even necessary in the first place?</p>
+<p>Something dual happens with <code>curry</code>:</p>
+<div class="codehilite" data-code-language="Agda"><pre><span></span><code><span class="nf">cur</span> <span class="ow">:</span> <span class="o">{</span>C A B <span class="ow">:</span> Category.Obj arrow<span class="o">}</span> <span class="ow">→</span>
+ <span class="o">(</span>arrow Category.⇒ <span class="o">(</span>prod C A<span class="o">))</span> B <span class="ow">→</span>
+ <span class="o">(</span>arrow Category.⇒ C<span class="o">)</span> <span class="o">(</span>to-the B A<span class="o">)</span>
+cur <span class="o">{(</span>C0 , C1<span class="o">)</span> , u<span class="o">}</span> <span class="o">{(</span>A0 , A1<span class="o">)</span> , v<span class="o">}</span> <span class="o">{(</span>B0 , B1<span class="o">)</span> , w<span class="o">}</span> <span class="o">(</span>fst , snd<span class="o">)</span> <span class="ow">=</span>
+ <span class="o">(</span><span class="ow">λ</span> x <span class="ow">→</span> <span class="o">((</span><span class="ow">λ</span> t <span class="ow">→</span> fst <span class="o">(</span>x , t<span class="o">))</span> , <span class="ow">λ</span> t <span class="ow">→</span> snd <span class="o">(</span>u x , t<span class="o">))</span> , extensionality <span class="o">(</span><span class="ow">λ</span> a0 <span class="ow">→</span> <span class="c c-Directive">{!   !}</span><span class="o">))</span> , <span class="o">(</span><span class="ow">λ</span> z z₁ <span class="ow">→</span> snd <span class="o">(</span>z , z₁<span class="o">))</span>
+</code></pre></div>
+<p>from where should I extract a proof that <code>w (fst (x , a0)) ≡ snd (u x , v a0)</code> (=the type of the hole)?</p>
+
+
+
+<a name="257917451"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/%5B2%2CC%5D%20is%20cartesian%20closed%2C%20in%20agda/near/257917451" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Jacques Carette <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/topic_.5B2.2CC.5D.20is.20cartesian.20closed.2C.20in.20agda.html#257917451">(Oct 17 2021 at 13:05)</a>:</h4>
+<p>If you put <code>open Category arrow</code> in your where clause, your signatures will be quite a bit simpler.</p>
+<p>Your names make it hard to see exactly what's going on, but isn't the type of the hole related to the type of the <code>p</code> in <code>to-the</code>?</p>
+
+
+
+{% endraw %}
+
+<hr><p>Last updated: Feb 13 2022 at 17:17 UTC</p>

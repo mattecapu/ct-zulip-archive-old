@@ -1,0 +1,125 @@
+---
+layout: archive
+title: Zulip Chat Archive
+permalink: /stream/229136-theory:-category-theory/topic/Intuition.20for.20Cauchy-completeness.html
+---
+
+<h2>Stream: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/index.html">theory: category theory</a></h2>
+<h3>Topic: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/topic_Intuition.20for.20Cauchy-completeness.html">Intuition for Cauchy-completeness</a></h3>
+
+<hr>
+
+<base href="https://categorytheory.zulipchat.com/">
+
+{% raw %}
+
+<a name="198780586"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/Intuition%20for%20Cauchy-completeness/near/198780586" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Reuben Stern (they/them) <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/topic_Intuition.20for.20Cauchy-completeness.html#198780586">(May 26 2020 at 15:36)</a>:</h4>
+<p>Does anyone have an explanation for why idempotent-completeness (aka Cauchy-completeness aka Karoubi-completeness) is important? Sorry for the vague question</p>
+
+
+
+<a name="198782628"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/Intuition%20for%20Cauchy-completeness/near/198782628" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> [Mod] Morgan Rogers <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/topic_Intuition.20for.20Cauchy-completeness.html#198782628">(May 26 2020 at 15:50)</a>:</h4>
+<p>Some nice categorical properties (i.e. properties of objects in a category) are stable under retracts. Notably these include projectivity and indecomposability. If we consider the topos of presheaves on a category <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>C</mi></mrow><annotation encoding="application/x-tex">C</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.07153em;">C</span></span></span></span>, the Yoneda embedding sends each object to an indecomposable projective object, and the (full) subcategory on these objects is closed under retracts; one can also show that that's all it's closed under. That is, the subcategory on the indecomposable projective objects of presheaves on <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>C</mi></mrow><annotation encoding="application/x-tex">C</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.07153em;">C</span></span></span></span> is equivalent to the idempotent-completion of <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>C</mi></mrow><annotation encoding="application/x-tex">C</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.07153em;">C</span></span></span></span>.</p>
+
+
+
+<a name="198783225"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/Intuition%20for%20Cauchy-completeness/near/198783225" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> [Mod] Morgan Rogers <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/topic_Intuition.20for.20Cauchy-completeness.html#198783225">(May 26 2020 at 15:55)</a>:</h4>
+<p>You can go further with this: functors between presheaf toposes <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi mathvariant="normal">P</mi><mi mathvariant="normal">S</mi><mi mathvariant="normal">h</mi></mrow><mo stretchy="false">(</mo><mi>C</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">\mathrm{PSh}(C)</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord"><span class="mord mathrm">P</span><span class="mord mathrm">S</span><span class="mord mathrm">h</span></span><span class="mopen">(</span><span class="mord mathdefault" style="margin-right:0.07153em;">C</span><span class="mclose">)</span></span></span></span> and <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi mathvariant="normal">P</mi><mi mathvariant="normal">S</mi><mi mathvariant="normal">h</mi></mrow><mo stretchy="false">(</mo><mi>D</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">\mathrm{PSh}(D)</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord"><span class="mord mathrm">P</span><span class="mord mathrm">S</span><span class="mord mathrm">h</span></span><span class="mopen">(</span><span class="mord mathdefault" style="margin-right:0.02778em;">D</span><span class="mclose">)</span></span></span></span> having left and right adjoints are in bijective correspondence with functors <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>D</mi><mo>→</mo><mi>C</mi></mrow><annotation encoding="application/x-tex">D \to C</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.02778em;">D</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.07153em;">C</span></span></span></span> when both categories are idempotent complete. I made heavy use of this in a <a href="https://arxiv.org/abs/1905.10277">paper</a>  last year in the special case where the categories involved have a single object.</p>
+
+
+
+<a name="198783473"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/Intuition%20for%20Cauchy-completeness/near/198783473" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> [Mod] Morgan Rogers <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/topic_Intuition.20for.20Cauchy-completeness.html#198783473">(May 26 2020 at 15:56)</a>:</h4>
+<p>There are surely other reasons to look at idempotent-completions; this is just the one I've personally needed in research <span aria-label="grinning" class="emoji emoji-1f600" role="img" title="grinning">:grinning:</span></p>
+
+
+
+<a name="198784514"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/Intuition%20for%20Cauchy-completeness/near/198784514" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Jem <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/topic_Intuition.20for.20Cauchy-completeness.html#198784514">(May 26 2020 at 16:03)</a>:</h4>
+<p>Does idempotent completeness only tend to arise as a property of small categories? I've only seen it in the contexts of taking presheaf categories, and in that small accessible categories are precisely the idempotent complete ones.</p>
+
+
+
+<a name="198784792"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/Intuition%20for%20Cauchy-completeness/near/198784792" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> [Mod] Morgan Rogers <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/topic_Intuition.20for.20Cauchy-completeness.html#198784792">(May 26 2020 at 16:05)</a>:</h4>
+<p>Lurie describes an appropriate analogue for higher categories in Chapter 4 (or 5? I can't remember precisely) of <em>Higher Topos Theory</em>, but as far as getting intuition goes I'm not sure how helpful that will be.</p>
+
+
+
+<a name="198826791"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/Intuition%20for%20Cauchy-completeness/near/198826791" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> fosco <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/topic_Intuition.20for.20Cauchy-completeness.html#198826791">(May 26 2020 at 21:58)</a>:</h4>
+<p>A category is Cauchy complete if and only if it admits all absolute colimits; absolute colimits are important because of their definition: they are preserved by every functor, so they are a very "stable" kind of colimit. This said, Cauchy completion arises in a reconstruction procedure: given a small category A, inside the presheaf category [A*,Set] there is a copy of _the Cauchy completion of A_, not exactly of A. It's as if trying to recover A from its free cocompletion PA -a much bigger object!- you were forced to extract a "dust" made by all the absolute colimits together with the objects of A. This is partly true because of Yoneda lemma: if you can only know an object from what maps into/out of it, then there's no way to remove the dust from A: because every functor will be _at least_ absolute cocontinuous.</p>
+
+
+
+<a name="198827109"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/Intuition%20for%20Cauchy-completeness/near/198827109" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> fosco <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/topic_Intuition.20for.20Cauchy-completeness.html#198827109">(May 26 2020 at 22:01)</a>:</h4>
+<p>Now for the interesting part: in enriched category theory the shapes of absolute colimits change as soon as you change the base of enrichment. In Set-enriched categories the shape of absolute colimits is "freely add retracts"; in Ab-enriched categories, it also has a discrete shape (every additive functor preserves biproducts)... <a href="https://ncatlab.org/nlab/show/absolute+colimit">https://ncatlab.org/nlab/show/absolute+colimit</a> </p>
+<p>In infty-categories something unexpected happens: absolute cocompletion contains a shape with countably infinitely many objects! Weird. And it made some claims in old editions of HTT imprecise, if I remember well.</p>
+
+
+
+<a name="198827226"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/Intuition%20for%20Cauchy-completeness/near/198827226" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> fosco <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/topic_Intuition.20for.20Cauchy-completeness.html#198827226">(May 26 2020 at 22:03)</a>:</h4>
+<p>Another reason why absolute colimits are important is: monadicity theorems. Beck's criterion to recognise a monadic functor is that a left adjoint is monadic if and only if it is conservative and it creates the colimits of split coequalizers <a href="https://ncatlab.org/nlab/show/split+coequalizer">https://ncatlab.org/nlab/show/split+coequalizer</a></p>
+
+
+
+<a name="198827372"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/Intuition%20for%20Cauchy-completeness/near/198827372" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> sarahzrf <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/topic_Intuition.20for.20Cauchy-completeness.html#198827372">(May 26 2020 at 22:04)</a>:</h4>
+<p>oh so is cauchy completeness like sobriety? you're saying?</p>
+
+
+
+<a name="198827424"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/Intuition%20for%20Cauchy-completeness/near/198827424" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> sarahzrf <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/topic_Intuition.20for.20Cauchy-completeness.html#198827424">(May 26 2020 at 22:05)</a>:</h4>
+<p>you can recover the cauchy completion of a category from the presheaf category given no other info, but not necessarily the original category?</p>
+
+
+
+<a name="198827479"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/Intuition%20for%20Cauchy-completeness/near/198827479" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> fosco <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/topic_Intuition.20for.20Cauchy-completeness.html#198827479">(May 26 2020 at 22:05)</a>:</h4>
+<p>It is like sobriety in the sense that I have never understood why it's a value, and because one tends to forget  about it on Friday nights.</p>
+
+
+
+<a name="198827582"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/Intuition%20for%20Cauchy-completeness/near/198827582" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> fosco <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/topic_Intuition.20for.20Cauchy-completeness.html#198827582">(May 26 2020 at 22:06)</a>:</h4>
+<p>Lame jokes apart there's a very clear discussion on this on the preface of "Sketches of an Elephant" vol 1, but it's getting late in my timezone</p>
+
+
+
+<a name="198854037"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/Intuition%20for%20Cauchy-completeness/near/198854037" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Jens Hemelaer <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/topic_Intuition.20for.20Cauchy-completeness.html#198854037">(May 27 2020 at 06:33)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="276072">sarahzrf</span> <a href="#narrow/stream/229136-theory.3A-category.20theory/topic/Intuition.20for.20Cauchy-completeness/near/198827372">said</a>:</p>
+<blockquote>
+<p>oh so is cauchy completeness like sobriety? you're saying?<br>
+you can recover the cauchy completion of a category from the presheaf category given no other info, but not necessarily the original category?</p>
+</blockquote>
+<p>I like this way of thinking about it <span aria-label="grinning" class="emoji emoji-1f600" role="img" title="grinning">:grinning:</span> </p>
+<p>A sober topological space is a space that can be recovered from the topos of sheaves on it (by taking the topological space of points of the topos).<br>
+A Cauchy-complete category is a category that can be recovered from the topos of presheaves on it (by taking the category of essential points, or equivalently, the category of indecomposable projectives of the topos).</p>
+
+
+
+<a name="199054108"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/Intuition%20for%20Cauchy-completeness/near/199054108" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/topic_Intuition.20for.20Cauchy-completeness.html#199054108">(May 28 2020 at 17:29)</a>:</h4>
+<p>Another way of saying more or less the same thing is that categories with equivalent Cauchy completions are internally equivalent in the bicategory Prof of categories and profunctors.  Or again, that the sub-bicategory of Prof consisting of all the objects but only the left adjoint 1-cells is equivalent to the 2-category of Cauchy-complete categories and functors.  Both of these also generalize to the enriched case -- although one should be aware that in the enriched case, the Cauchy-completion of a small category may no longer be small!</p>
+
+
+
+<a name="199614446"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/Intuition%20for%20Cauchy-completeness/near/199614446" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Chad Nester <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/topic_Intuition.20for.20Cauchy-completeness.html#199614446">(Jun 03 2020 at 12:48)</a>:</h4>
+<p>A less grand bit of intuition that may be helpful: </p>
+<p>Idempotents in a category have many of the properties that objects do. We can sensibly consider maps into and out of them, slice over them, and so on. </p>
+<p>Not every idempotent is represented by an honest-to-god object of the category it inhabits. If an idempotent splits, however, the object given as part of the retraction represents the idempotent in question. For example, the section tells us that an idempotent on A is a subobject of A.</p>
+<p>So, to have all idempotents split is to have all of these things that, morally, should really be objects, occur in our category as legitimate objects.</p>
+
+
+
+{% endraw %}
+
+<hr><p>Last updated: Feb 13 2022 at 17:17 UTC</p>

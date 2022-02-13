@@ -1,0 +1,64 @@
+---
+layout: archive
+title: Zulip Chat Archive
+permalink: /stream/229136-theory:-category-theory/topic/Bipromonoidal.20Categories.html
+---
+
+<h2>Stream: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/index.html">theory: category theory</a></h2>
+<h3>Topic: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/topic_Bipromonoidal.20Categories.html">Bipromonoidal Categories</a></h3>
+
+<hr>
+
+<base href="https://categorytheory.zulipchat.com/">
+
+{% raw %}
+
+<a name="263012270"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/Bipromonoidal%20Categories/near/263012270" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> James Hefford <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/topic_Bipromonoidal.20Categories.html#263012270">(Nov 29 2021 at 14:06)</a>:</h4>
+<p>I was wondering whether anyone has ever come across a notion of a "bipromonoidal" category - in the sense of a category with two promonoidal structures, one distributing over the other? My feeling is that such a structure would be a pseudosemiring in <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="sans-serif">P</mi><mi mathvariant="sans-serif">r</mi><mi mathvariant="sans-serif">o</mi><mi mathvariant="sans-serif">f</mi></mrow><annotation encoding="application/x-tex">\mathsf{Prof}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord"><span class="mord mathsf" style="margin-right:0.06944em;">Prof</span></span></span></span></span> and I wonder whether the bipromonoidal structure would induce a bimonoidal structure on the presheaf category (under Day convolution). Has anyone seen this before?</p>
+
+
+
+<a name="263013999"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/Bipromonoidal%20Categories/near/263013999" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Morgan Rogers (he/him) <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/topic_Bipromonoidal.20Categories.html#263013999">(Nov 29 2021 at 14:20)</a>:</h4>
+<p>As a rule of thumb, the more prefixes you need to include to describe your object of interest, the less probable it is that anyone has formally studied these things <span aria-label="wink" class="emoji emoji-1f609" role="img" title="wink">:wink:</span> That's not a comment intended to dishearten you on this specific question, though; someone might still have some suggestions of relevant/applicable material.</p>
+
+
+
+<a name="263014124"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/Bipromonoidal%20Categories/near/263014124" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nathanael Arkor <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/topic_Bipromonoidal.20Categories.html#263014124">(Nov 29 2021 at 14:21)</a>:</h4>
+<p>I believe Day convolution works for any structure definable as a (categorification of a) monoidal/linear theory, but not otherwise. Day convolution therefore doesn't work for bimonoidal categories, because the distributive axiom is nonlinear.</p>
+
+
+
+<a name="263014309"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/Bipromonoidal%20Categories/near/263014309" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nathanael Arkor <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/topic_Bipromonoidal.20Categories.html#263014309">(Nov 29 2021 at 14:23)</a>:</h4>
+<p>Abstractly, the reason it works for monoidal structures is because the small presheaf construction is a pseudomonoidal pseudomonad, but it doesn't preserve the extra structure necessary to talk about duplicating or dropping variables.</p>
+
+
+
+<a name="263014847"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/Bipromonoidal%20Categories/near/263014847" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nathanael Arkor <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/topic_Bipromonoidal.20Categories.html#263014847">(Nov 29 2021 at 14:27)</a>:</h4>
+<p>I think a counterexample is given by taking presheaves on the terminal category (which trivially has bimonoidal structure, both of which monoidal structures are trivially cartesian). Day convolution sends cartesian monoidal structure to cartesian monoidal structure, but the cartesian monoidal structure in Set is not bimonoidal over itself.</p>
+
+
+
+<a name="263015504"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/Bipromonoidal%20Categories/near/263015504" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Cole Comfort <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/topic_Bipromonoidal.20Categories.html#263015504">(Nov 29 2021 at 14:33)</a>:</h4>
+<p>The closest thing I can think of would be something like a  polycategory.  But if it it works it would be  a "mixed distributive law" between a promonoidal and an op-promonoidal category.</p>
+
+
+
+<a name="263017571"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/Bipromonoidal%20Categories/near/263017571" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> James Hefford <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/topic_Bipromonoidal.20Categories.html#263017571">(Nov 29 2021 at 14:49)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="276092">Nathanael Arkor</span> <a href="#narrow/stream/229136-theory.3A-category.20theory/topic/Bipromonoidal.20Categories/near/263014847">said</a>:</p>
+<blockquote>
+<p>I think a counterexample is given by taking presheaves on the terminal category (which trivially has bimonoidal structure, both of which monoidal structures are trivially cartesian). Day convolution sends cartesian monoidal structure to cartesian monoidal structure, but the cartesian monoidal structure in Set is not bimonoidal over itself.</p>
+</blockquote>
+<p>Great, thank you for the counterexample, that makes it very clear where the issue is :)</p>
+
+
+
+{% endraw %}
+
+<hr><p>Last updated: Feb 13 2022 at 17:17 UTC</p>

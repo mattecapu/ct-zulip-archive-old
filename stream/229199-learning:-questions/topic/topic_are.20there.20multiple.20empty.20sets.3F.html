@@ -1,0 +1,70 @@
+---
+layout: archive
+title: Zulip Chat Archive
+permalink: /stream/229199-learning:-questions/topic/are.20there.20multiple.20empty.20sets.3F.html
+---
+
+<h2>Stream: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/index.html">learning: questions</a></h2>
+<h3>Topic: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/topic_are.20there.20multiple.20empty.20sets.3F.html">are there multiple empty sets?</a></h3>
+
+<hr>
+
+<base href="https://categorytheory.zulipchat.com/">
+
+{% raw %}
+
+<a name="266892231"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/are%20there%20multiple%20empty%20sets%3F/near/266892231" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Patrick Nicodemus <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/topic_are.20there.20multiple.20empty.20sets.3F.html#266892231">(Jan 05 2022 at 02:58)</a>:</h4>
+<p>not if you're a fan of the axiom of extensionality</p>
+
+
+
+<a name="266907165"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/are%20there%20multiple%20empty%20sets%3F/near/266907165" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Jens Hemelaer <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/topic_are.20there.20multiple.20empty.20sets.3F.html#266907165">(Jan 05 2022 at 08:02)</a>:</h4>
+<p>Is there an axiomatisation of set theory where you can prove that there are multiple empty sets?<br>
+It's not the first time that I saw this statement (that there are multiple empty sets); it seems to be accepted by a lot of people working in categorical logic. However, in the axiomatizations of set theory that I know of it is either false or undecidable.</p>
+
+
+
+<a name="266908168"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/are%20there%20multiple%20empty%20sets%3F/near/266908168" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Zhen Lin Low <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/topic_are.20there.20multiple.20empty.20sets.3F.html#266908168">(Jan 05 2022 at 08:19)</a>:</h4>
+<p>One-sorted axiomatisations of material set theory with atoms can be (perhaps perversely) regarded as having multiple empty sets – but typically only one of them is considered to be a pure set and the rest are treated as atoms rather than sets.</p>
+
+
+
+<a name="266924107"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/are%20there%20multiple%20empty%20sets%3F/near/266924107" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> David Michael Roberts <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/topic_are.20there.20multiple.20empty.20sets.3F.html#266924107">(Jan 05 2022 at 11:29)</a>:</h4>
+<p>Yes, there's usually a predicate isSet on the individuals in a set theory with atoms, and anything for which isSet is false is an atom, and the axiom of extensionality is adjusted accordingly. I think you still need an empty set and can't get away with only atoms having no elements.</p>
+
+
+
+<a name="266950479"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/are%20there%20multiple%20empty%20sets%3F/near/266950479" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/topic_are.20there.20multiple.20empty.20sets.3F.html#266950479">(Jan 05 2022 at 15:39)</a>:</h4>
+<p>How about an extensional type theory with generative inductive types in which type formers are injective?</p>
+<div class="codehilite"><pre><span></span><code>Inductive empty1 : Type := .
+Inductive empty2 : Type := .
+</code></pre></div>
+
+
+
+<a name="266950700"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/are%20there%20multiple%20empty%20sets%3F/near/266950700" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/topic_are.20there.20multiple.20empty.20sets.3F.html#266950700">(Jan 05 2022 at 15:41)</a>:</h4>
+<p>However, I expect that the people who say this are usually thinking of the undecidable cases like ETCS.  There "are" multiple empty sets in the same sense that in constructive logic there "are" more than two truth values, etc.</p>
+
+
+
+<a name="266982327"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/are%20there%20multiple%20empty%20sets%3F/near/266982327" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Notification Bot <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/topic_are.20there.20multiple.20empty.20sets.3F.html#266982327">(Jan 05 2022 at 19:53)</a>:</h4>
+<p>This topic was moved here from <a class="stream-topic" data-stream-id="229111" href="/#narrow/stream/229111-general/topic/are.20there.20multiple.20empty.20sets.3F">#general &gt; are there multiple empty sets?</a> by <span class="user-mention silent" data-user-id="275932">Matteo Capucci (he/him)</span></p>
+
+
+
+<a name="266982382"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/are%20there%20multiple%20empty%20sets%3F/near/266982382" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Matteo Capucci (he/him) <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/topic_are.20there.20multiple.20empty.20sets.3F.html#266982382">(Jan 05 2022 at 19:53)</a>:</h4>
+<p>Don't tell <a href="https://it.wikipedia.org/wiki/Alain_Badiou">Alain Badiou</a> :D</p>
+
+
+
+{% endraw %}
+
+<hr><p>Last updated: Feb 13 2022 at 17:17 UTC</p>

@@ -1,0 +1,237 @@
+---
+layout: archive
+title: Zulip Chat Archive
+permalink: /stream/229156-practice:-applied-ct/topic/QNLP.html
+---
+
+<h2>Stream: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-practice:-applied-ct/index.html">practice: applied ct</a></h2>
+<h3>Topic: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-practice:-applied-ct/topic/topic_QNLP.html">QNLP</a></h3>
+
+<hr>
+
+<base href="https://categorytheory.zulipchat.com/">
+
+{% raw %}
+
+<a name="196803262"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229156-practice%3A%20applied%20ct/topic/QNLP/near/196803262" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Alexis Toumi <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-practice:-applied-ct/topic/topic_QNLP.html#196803262">(May 07 2020 at 17:23)</a>:</h4>
+<p>For reference in case you missed Bob's online QNLP seminar, here's a copy of the chat with some useful question-answers and references:</p>
+<p>From Emily Riehl to Everyone: (06:02 pm)<br>
+ I have to say I’m very impressed with the theatrics. <br>
+From Tim Sears to Everyone: (06:10 pm)<br>
+ This is the coolest seminar ever. <br>
+From Me to Everyone: (06:11 pm)<br>
+ the shady lighting adds so much to the scenery <br>
+From Samuel Tenka to Everyone: (06:12 pm)<br>
+ question: are these states/effects normalized? <br>
+From Me to Everyone: (06:12 pm)<br>
+ They’re not normalised ! <br>
+From Samuel Tenka to Everyone: (06:13 pm)<br>
+ thanks!  So we keep track of a bit of extra information in our diagrams.  good to know :-) <br>
+From Me to Everyone: (06:13 pm)<br>
+ Scalars would be represented as closed boxes with no input or output wires <br>
+From Samuel Tenka to Everyone: (06:13 pm)<br>
+ gotcha.  makes sense.  so right now these are equivalent to penrose string diagrams? <br>
+From Me to Everyone: (06:14 pm)<br>
+ Yes, they are the same Penrose string diagrams! (N.B. You need to assume finite dimensional Hilbert spaces if you want a compact-closed category.) <br>
+From Samuel Tenka to Everyone: (06:17 pm)<br>
+ otherwise the cup (special state) won't be well defined? <br>
+From Priyaa to Everyone: (06:18 pm)<br>
+ yes. one would get infinite sum otherwise <br>
+From Me to Everyone: (06:18 pm)<br>
+ Exactly! But in quantum computing you only consider a finite number of quits anyway. <br>
+From David I Spivak to Everyone: (06:21 pm)<br>
+ So is the cat alive or dead right now? <br>
+From Samuel Tenka to Everyone: (06:21 pm)<br>
+ XD <br>
+From Tim Sears to Everyone: (06:25 pm)<br>
+ Is this the best paper for further reading? <a href="https://arxiv.org/pdf/1904.03478.pdf" title="https://arxiv.org/pdf/1904.03478.pdf">https://arxiv.org/pdf/1904.03478.pdf</a> <br>
+From Brendan to Everyone: (06:27 pm)<br>
+ Bob listed these as references for this talk in the abstract: <br>
+From Brendan to Everyone: (06:27 pm)<br>
+ [1] B. Coecke, G. De Felice, K. Meichanetzidis &amp; A. Toumi (2020) Quantum Natural Language Processing: We did it! <a href="https://medium.com/cambridge-quantum-computing/quantum-natural-language-processing-748d6f27b31d" title="https://medium.com/cambridge-quantum-computing/quantum-natural-language-processing-748d6f27b31d">https://medium.com/cambridge-quantum-computing/quantum-natural-language-processing-748d6f27b31d</a>.  [2] B. Coecke (2016) From quantum foundations via natural language meaning to a theory of everything. arXiv:1602.07618. <br>
+From Me to Everyone: (06:28 pm)<br>
+ Yes, that paper gives some strong intuition for the QNLP experiments we did. For the more technical / categorical details we just submitted this tool paper : <a href="https://arxiv.org/abs/2005.02975" title="https://arxiv.org/abs/2005.02975">https://arxiv.org/abs/2005.02975</a> <br>
+From Brendan to Everyone: (06:28 pm)<br>
+ He also mentioned at the beginning of the talk there’s a new paper on the arXiv today, I think, but I can’t find it <br>
+From theprotoncat to Everyone: (06:28 pm)<br>
+ The arXiv is the tools paper Alexis mentioned I assume <br>
+From Brendan to Everyone: (06:29 pm)<br>
+ Yes it is; thanks Alexis <br>
+From joscha to Everyone: (06:29 pm)<br>
+ Are the outputs/inputs ‘labelled’ to know which ones are allowed to match? <br>
+From joscha to Everyone: (06:30 pm)<br>
+ (noun going out, noun accepted, ..) <br>
+From Me to Everyone: (06:30 pm)<br>
+ Yes! The blog post [1] describes the experiments for a general audience, the paper [2] gives a nice story compositionally from physics to NLP @joscha the basic types are the labels <br>
+From joscha to Everyone: (06:32 pm)<br>
+ thanks <br>
+From Konstantinos Meichanetzidis to Everyone: (06:33 pm)<br>
+ In general, each type-wire carries a vector space of a type-dependent dimension <br>
+From theprotoncat to Everyone: (06:34 pm)<br>
+ I assume in the quantum case they’re all Hilbert spaces of different dimensions? <br>
+From Konstantinos Meichanetzidis to Everyone: (06:34 pm)<br>
+ so after you join the wires according to how the types compose, then you forget the labels and have just some vector spaces yes that's right, in the quantum case, if you have qubits, they are hilbert spaces of some power of two, say <br>
+From quaang to Everyone: (06:36 pm)<br>
+ To deal with different dimensions in diagrams, you could use a framework which I call qufinite ZX-calculus. <br>
+From Konstantinos Meichanetzidis to Everyone: (06:37 pm)<br>
+ yes! <br>
+From Me to Everyone: (06:53 pm)<br>
+ Here’s the repo if you want to play with it : <a href="https://github.com/oxford-quantum-group/discopy" title="https://github.com/oxford-quantum-group/discopy">https://github.com/oxford-quantum-group/discopy</a> <br>
+From Samuel Tenka to Everyone: (06:54 pm)<br>
+ You should share that on the Zulip, too! <br>
+From Me to Everyone: (06:54 pm)<br>
+ True! <br>
+From Samuel Tenka to Everyone: (06:57 pm)<br>
+ Question: what computation did the IBM computer actually do?  (e.g. did it predict the next word in a sentence?  or, toward learning grammar, did it figure out the arity of various words?) <br>
+From Lee J. O'Riordan to Everyone: (06:59 pm)<br>
+ What kind of circuit depths do you hit for these on both machines? <br>
+From Me to Everyone: (07:00 pm)<br>
+ It solved some basic question answering task, i.e. given “Does Alice love Bob ?” It said “Yes!" <br>
+From Giovanni de Felice to Everyone: (07:00 pm)<br>
+ Check out the circuits here: <br>
+From Giovanni de Felice to Everyone: (07:00 pm)<br>
+<a href="https://github.com/oxford-quantum-group/discopy/blob/master/notebooks/qnlp-experiment.ipynb" title="https://github.com/oxford-quantum-group/discopy/blob/master/notebooks/qnlp-experiment.ipynb">https://github.com/oxford-quantum-group/discopy/blob/master/notebooks/qnlp-experiment.ipynb</a> <br>
+From Me to Everyone: (07:01 pm)<br>
+ The circuits had CNOT depth two <br>
+From Yutaka Shikano to Everyone: (07:01 pm)<br>
+ Question: How many qubits can we maximally use? More than 5Q machines, such as 16 qubits, 20 qubits, and 53 qubits, can we complile? <br>
+From Lee J. O'Riordan to Everyone: (07:01 pm)<br>
+ Cheers Alexis. <br>
+From Giovanni de Felice to Everyone: (07:01 pm)<br>
+ Depth is around 8/10 before the ket compiler <br>
+From Samuel Tenka to Everyone: (07:01 pm)<br>
+ Neat!  Near the beginning, Bob mentioned that this framework was able to "understand grammar".  Does this mean that you didn't have to hardcode the circuit topology?  E.g., how did you figure out that Alice is a noun etc (classical NLP approaches can do this by scanning over a large corpus) <br>
+From Me to Everyone: (07:01 pm)<br>
+ Depth 2 for “Alice loves Bob”, depth 3 for “Alice loves Bob who is rich” <br>
+From Stephen Mell to Everyone: (07:01 pm)<br>
+ Do these need to be done on a real quantum computer, or can they be done in simulation (and if so, can they be done at larger scale)? <br>
+From Tim Sears to Everyone: (07:02 pm)<br>
+ Same question as Stephen <br>
+From Me to Everyone: (07:02 pm)<br>
+ They were done by simulation beforehand. For now it was only a proof-of-concept but it can / it will be scaled indeed. Basically we used 1 qubit for representing a noun, in general we can use n-qubit noun space <br>
+From Tim Sears to Everyone: (07:03 pm)<br>
+ Would be nice to compare to word2vec or some latter day NN’s like BERT. <br>
+From Me to Everyone: (07:04 pm)<br>
+ @Samuel the idea is we took the grammatical structure of the sentence (which can be computed efficiently) and mapped it automatically (with a monodical functor actually) to the architecture of the circuits <br>
+From Konstantinos Meichanetzidis to Everyone: (07:05 pm)<br>
+ Indeed. We also are aware of word2ket! But priority is scaling up as Alexis said. Also yes we should compare with other models, but we should compare fairly: i.e. compare models that have the same order of parameters <br>
+From Yutaka Shikano to Everyone: (07:05 pm)<br>
+ Similar question on qubit size or real-device usage:<br>
+How many qubits do we need to go beyond the proof-of-concept stage? <br>
+From Tim Sears to Everyone: (07:06 pm)<br>
+ You have a richer, but more compact and interpretable model in the ML sense. <br>
+From Giovanni de Felice to Everyone: (07:06 pm)<br>
+ @Ytaka Using around 50 qubits would match the google supremacy experiment <br>
+From Tim Sears to Everyone: (07:07 pm)<br>
+ Can you do a large scale version of this on a classical computer? <br>
+From theprotoncat to Everyone: (07:07 pm)<br>
+ I have a slight side-quest question: could ZX-calculus be used to translate efficiently between digital and analog QC? Particularly when we are stuck with some specific native gates on some device, say an Ising Hamiltonian is the only entangling gate. It would involve trotterization I guess, but is there any intuition for looking into it? <br>
+From Giovanni de Felice to Everyone: (07:07 pm)<br>
+ The dimension of the space grows exponentially in the number of qubits, so it would be very expensive after 30 qubits or so <br>
+From Tim Sears to Everyone: (07:08 pm)<br>
+ thx <br>
+From Samuel Tenka to Everyone: (07:08 pm)<br>
+ @Alexis can one compute the parse tree of a sentence without knowing the parts-of-speech of words?  Most modern approaches to NLP can figure out grammatical rules just from a corpus of un-annotated strings.  In other words, can one learn the types of words without manually feeding annotations to the quantum computer? <br>
+From Konstantinos Meichanetzidis to Everyone: (07:09 pm)<br>
+ Also note: expensive classical sim is not only about qubit number: it's about how entangling the circuit is. <br>
+From Samuel Tenka to Everyone: (07:09 pm)<br>
+ (if not, the work is still really cool!  I'm just confused by Bob's advertisement that the quantum computer was able to understand grammar because it seems the grammar was manually fed into it) <br>
+From Tim Sears to Everyone: (07:09 pm)<br>
+ Might be worth it since the modeling approach is interesting on its own <br>
+From Me to Everyone: (07:10 pm)<br>
+ @Samuel, that is indeed one of the big open questions we need to solve. There is this paper by Smolensky et al. where they propose a quantum algorithm for learning the grammatical structure : <a href="https://arxiv.org/abs/1902.05162" title="https://arxiv.org/abs/1902.05162">https://arxiv.org/abs/1902.05162</a> <br>
+From Samuel Tenka to Everyone: (07:10 pm)<br>
+ Awesome!  Thanks! <br>
+From Giovanni de Felice to Everyone: (07:10 pm)<br>
+ @Samuel we didn’t implement a grammar induction algorithm for regroups yet but it should be possible and would be interesting if a quantum computer could do it</p>
+
+
+
+<a name="196803332"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229156-practice%3A%20applied%20ct/topic/QNLP/near/196803332" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Alexis Toumi <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-practice:-applied-ct/topic/topic_QNLP.html#196803332">(May 07 2020 at 17:24)</a>:</h4>
+<p>More copy and paste:</p>
+<p>From Konstantinos Meichanetzidis to Everyone: (07:11 pm)<br>
+ Also: a classical parser would do: it would annotate the text with types (noun, verb, etc...) and then the circuit is created by reducing the types to the sentence type. <br>
+From Tim Sears to Everyone: (07:11 pm)<br>
+ Maybe there is a translation to the nearest neural network. Then you can have better explanation for a NN that “works well in practice” <br>
+From Matteo Capucci to Everyone: (07:12 pm)<br>
+ How universal is this approach wrt languages? Is it mainly targeted at English and similar languages or does it work in more generality? <br>
+From Konstantinos Meichanetzidis to Everyone: (07:12 pm)<br>
+ For now, the assignment of types, and the state preparation (or computing the meaning) as Bob calls it, can be seen as independent stages <br>
+From Konstantinos Meichanetzidis to Everyone: (07:12 pm)<br>
+ @Matteo pregroup grammar is supposed to capture most natural language structure <br>
+From Me to Everyone: (07:13 pm)<br>
+ @Matteo pregroups are equivalent to Chomsky’s context-free grammars so you can do all of those, you can do mildly context-sensitive with a small variation on pregroups <br>
+From Konstantinos Meichanetzidis to Everyone: (07:13 pm)<br>
+ They are as powerful as context free grammars, and they are pretty much universally applicable <br>
+From Lee Mondshein to Everyone: (07:13 pm)<br>
+ Re “meaning in use”: can you comment on meaning as dynamic significance ( or influence) in some dynamic context of shared discourse + belief + action ? <br>
+From Brian Pinsky to Everyone: (07:13 pm)<br>
+ You're eliding things like tense in your verb denotations.  How do you want to deal with that? <br>
+From Konstantinos Meichanetzidis to Everyone: (07:14 pm)<br>
+ @ Tim Sears: good point about nearest NN @Brian Pinsky: the point is that more pregroup types and rules on them capture morphology like that <br>
+From Matteo Capucci to Everyone: (07:16 pm)<br>
+ (thanks!) <br>
+From Martha Lewis to Everyone: (07:16 pm)<br>
+ This paper by Sadrzadeh et al is <br>
+From Martha Lewis to Everyone: (07:17 pm)<br>
+ looks at dynamic aspects of language: <a href="http://www.eecs.qmul.ac.uk/~mpurver/papers/sadrzadeh-et-al18semdial.pdf" title="http://www.eecs.qmul.ac.uk/~mpurver/papers/sadrzadeh-et-al18semdial.pdf">http://www.eecs.qmul.ac.uk/~mpurver/papers/sadrzadeh-et-al18semdial.pdf</a> <br>
+From Me to Everyone: (07:18 pm)<br>
+ @Brian on the syntactic side, you can deal with tense by adding more specific types instead of just sentence and noun. On the semantic side, it’s not completely clear how to deal with tense yet. <br>
+From Martha Lewis to Everyone: (07:19 pm)<br>
+ re: tense, Lambek does include aspects like person, sentence type in his original work on pregroups Lambek 1999: <a href="https://link.springer.com/chapter/10.1007/3-540-48975-4_1" title="https://link.springer.com/chapter/10.1007/3-540-48975-4_1">https://link.springer.com/chapter/10.1007/3-540-48975-4_1</a> <br>
+From Konstantinos Meichanetzidis to Everyone: (07:22 pm)<br>
+ @theprotoncat In principle, yes, as ZX is complete. In practice, it's a different topic and it reduces to how one maps from digital circs to cv qc <br>
+From Brian Pinsky to Everyone: (07:22 pm)<br>
+ @alexis tense seems pretty well solved in classical linguistic frameworks.  I'm not sure why translating it into a pregroup grammar should be hard, but we should have this conversation on zulip <br>
+From Me to Everyone: (07:23 pm)<br>
+ yes, let’s all go to Zulip ! <br>
+From theprotoncat to Everyone: (07:23 pm)<br>
+ @konstantinos Thanks yeah I figured this is a far more complicated question than to be discussed right now. The intuition is ‘it’s possible but probably not efficient’.</p>
+
+
+
+<a name="196804480"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229156-practice%3A%20applied%20ct/topic/QNLP/near/196804480" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> [Mod] Morgan Rogers <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-practice:-applied-ct/topic/topic_QNLP.html#196804480">(May 07 2020 at 17:32)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="294964">Alexis Toumi</span> <a href="#narrow/stream/229156-practice.3A-applied.20ct/topic/QNLP/near/196803262" title="#narrow/stream/229156-practice.3A-applied.20ct/topic/QNLP/near/196803262">said</a>:</p>
+<blockquote>
+<p>From Emily Riehl to Everyone: (06:02 pm)<br>
+ I have to say I’m very impressed with the theatrics. <br>
+From Tim Sears to Everyone: (06:10 pm)<br>
+ This is the coolest seminar ever. </p>
+</blockquote>
+<p>You succeeded in making me feel bad for having missed it <span aria-label="sweat smile" class="emoji emoji-1f605" role="img" title="sweat smile">:sweat_smile:</span></p>
+
+
+
+<a name="196804777"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229156-practice%3A%20applied%20ct/topic/QNLP/near/196804777" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Alexis Toumi <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-practice:-applied-ct/topic/topic_QNLP.html#196804777">(May 07 2020 at 17:34)</a>:</h4>
+<p>The talk was recorded, it should appear on youtube soon :)</p>
+
+
+
+<a name="196805271"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229156-practice%3A%20applied%20ct/topic/QNLP/near/196805271" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Alexis Toumi <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-practice:-applied-ct/topic/topic_QNLP.html#196805271">(May 07 2020 at 17:38)</a>:</h4>
+<p>Oh wow, actually it's already on youtube: <a href="https://www.youtube.com/watch?v=YV6zcQCiRjo" title="https://www.youtube.com/watch?v=YV6zcQCiRjo">https://www.youtube.com/watch?v=YV6zcQCiRjo</a></p>
+<div class="youtube-video message_inline_image"><a data-id="YV6zcQCiRjo" href="https://www.youtube.com/watch?v=YV6zcQCiRjo" title="https://www.youtube.com/watch?v=YV6zcQCiRjo"><img src="https://i.ytimg.com/vi/YV6zcQCiRjo/default.jpg"></a></div>
+
+
+
+<a name="197136519"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229156-practice%3A%20applied%20ct/topic/QNLP/near/197136519" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Antonin Delpeuch <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-practice:-applied-ct/topic/topic_QNLP.html#197136519">(May 11 2020 at 12:18)</a>:</h4>
+<p>The correct link seems to be <a href="https://www.youtube.com/watch?v=mL-hWbwVphk">https://www.youtube.com/watch?v=mL-hWbwVphk</a> now :)</p>
+<div class="youtube-video message_inline_image"><a data-id="mL-hWbwVphk" href="https://www.youtube.com/watch?v=mL-hWbwVphk"><img src="https://i.ytimg.com/vi/mL-hWbwVphk/default.jpg"></a></div>
+
+
+
+<a name="197648218"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229156-practice%3A%20applied%20ct/topic/QNLP/near/197648218" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> (=_=) <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-practice:-applied-ct/topic/topic_QNLP.html#197648218">(May 15 2020 at 04:51)</a>:</h4>
+<p>This may be of interest to the QNLP folks. There's going to be an interactive podcast on May 18, 3pm Pacific Time, by Sam Charrington, of This Week in ML and AI, who's going to be exploring the question of whether linguistics has been missing from NLP research with <a href="https://faculty.washington.edu/ebender/">Emily Bender</a> of the University of Washington. Seems like something that QNLP can weigh in on. Link with registration details below:</p>
+<p><a href="https://twimlai.com/live-viewing-party-linguistics-missing-nlp-research/">https://twimlai.com/live-viewing-party-linguistics-missing-nlp-research/</a></p>
+
+
+
+{% endraw %}
+
+<hr><p>Last updated: Feb 13 2022 at 17:17 UTC</p>

@@ -1,0 +1,216 @@
+---
+layout: archive
+title: Zulip Chat Archive
+permalink: /stream/229156-practice:-applied-ct/topic/incremental.20computation.html
+---
+
+<h2>Stream: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-practice:-applied-ct/index.html">practice: applied ct</a></h2>
+<h3>Topic: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-practice:-applied-ct/topic/topic_incremental.20computation.html">incremental computation</a></h3>
+
+<hr>
+
+<base href="https://categorytheory.zulipchat.com/">
+
+{% raw %}
+
+<a name="191706009"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229156-practice%3A%20applied%20ct/topic/incremental%20computation/near/191706009" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nick Scheel <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-practice:-applied-ct/topic/topic_incremental.20computation.html#191706009">(Mar 25 2020 at 07:00)</a>:</h4>
+<p>Hi, I was wondering if anyone has pointers to resources on incremental computation, especially in a CT/TT context? Is it an active area of research? It's something I'm really interested in, but I don't have enough theory or experience to make it happen, but I think it could be really cool in UIs and compilers and especially in interactive compilers (like structural editors for programming languages – that's something I really want to see happen, and I think some kind of incremental computation would do wonders to make it not only practical but advantageous over traditional text editing, which inherently has a fire-and-forget sort of nature).</p>
+
+
+
+<a name="191706592"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229156-practice%3A%20applied%20ct/topic/incremental%20computation/near/191706592" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Burak Emir <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-practice:-applied-ct/topic/topic_incremental.20computation.html#191706592">(Mar 25 2020 at 07:13)</a>:</h4>
+<p>Can you clarify: do you mean you have some input that is translated, and upon local change, only those parts that are affected by the change  are translated again? "those parts affected by the change" seems to be a poset of dependencies. I am not aware of a systematic treatment. The closest that comes to mind is <a href="https://pijul.org/model/" title="https://pijul.org/model/">https://pijul.org/model/</a> which is like git built on a categorical understanding of patches, with merges being pushouts.</p>
+
+
+
+<a name="191708096"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229156-practice%3A%20applied%20ct/topic/incremental%20computation/near/191708096" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nick Scheel <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-practice:-applied-ct/topic/topic_incremental.20computation.html#191708096">(Mar 25 2020 at 07:36)</a>:</h4>
+<p>Sure. This is the closest to what I was thinking: <a href="https://arxiv.org/pdf/1811.06069.pdf" title="https://arxiv.org/pdf/1811.06069.pdf">https://arxiv.org/pdf/1811.06069.pdf</a></p>
+<p>What I’m looking for is how to calculate a change in the outputs based on a change in the inputs, in particular doing as little computation as possible. I don’t think just calculating the dependencies is too complicated, from a programming perspective.</p>
+
+
+
+<a name="191708288"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229156-practice%3A%20applied%20ct/topic/incremental%20computation/near/191708288" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nick Scheel <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-practice:-applied-ct/topic/topic_incremental.20computation.html#191708288">(Mar 25 2020 at 07:40)</a>:</h4>
+<p>As an extreme example, if I add one character to a string in a PureScript program, I should see a change that is the same character added in the corresponding string in the JavaScript output (since PureScript compiles to JS in a fairly direct manner), and ideally it would involve almost no recomputation in the compiler, since none of the types have changed, so none of the interesting bits of the compiler actually need to be reverified. But of course this is not how text-to-text compilers work, it would be a ton of work to overhaul an existing compiler to support, etc. etc.</p>
+
+
+
+<a name="191708556"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229156-practice%3A%20applied%20ct/topic/incremental%20computation/near/191708556" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nick Scheel <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-practice:-applied-ct/topic/topic_incremental.20computation.html#191708556">(Mar 25 2020 at 07:44)</a>:</h4>
+<p>I’ve seen Pijul before but haven’t deeply investigated it. I’d love to see how it would look if it were liberated from the textual paradigm, too ;)</p>
+
+
+
+<a name="191709461"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229156-practice%3A%20applied%20ct/topic/incremental%20computation/near/191709461" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Burak Emir <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-practice:-applied-ct/topic/topic_incremental.20computation.html#191709461">(Mar 25 2020 at 07:56)</a>:</h4>
+<p>Thanks for sharing the paper, I am quite interested in datalog. Incremental computation in datalog is very specific, and it indeed looks like real work to apply approaches from that setting to compilers in general (yet I know people use datalog <em>in</em> compilers, for dataflow analysis), because compilers are complex. I haven't investigated Pijul further either, but mentioned it since one would have to represent a changed fragment of the program (the "unit of change", if you will), and if it begins with text, then the textual representation of changes could be helpful - is it one line? multiple lines? one file? multiple? Another thing I would freely associate is the <a href="https://www.unisonweb.org/" title="https://www.unisonweb.org/">unison</a> language, where code is immutable, repository and execution environment is the same, and changes are a form of global update.</p>
+
+
+
+<a name="191711119"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229156-practice%3A%20applied%20ct/topic/incremental%20computation/near/191711119" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nick Scheel <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-practice:-applied-ct/topic/topic_incremental.20computation.html#191711119">(Mar 25 2020 at 08:17)</a>:</h4>
+<p>Unison is a good example of the direction I want coding to go. It seems like their form of global immutable code could achieve a sort of incrementalization through caching, where returning to old results is quick, whereas incrementalized computations would be optimized a little more for producing new results based upon the user’s specific interactions and wouldn’t necessarily keep so much data around. It’s a little like the difference between memoizing by building a hash table and memoizing by comparing to the last computed argument ...</p>
+
+
+
+<a name="191718156"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229156-practice%3A%20applied%20ct/topic/incremental%20computation/near/191718156" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Jules Hedges <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-practice:-applied-ct/topic/topic_incremental.20computation.html#191718156">(Mar 25 2020 at 09:29)</a>:</h4>
+<p>I think this is the point where I yell "lenses" and then run away before anyone asks for details</p>
+
+
+
+<a name="191718415"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229156-practice%3A%20applied%20ct/topic/incremental%20computation/near/191718415" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Jules Hedges <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-practice:-applied-ct/topic/topic_incremental.20computation.html#191718415">(Mar 25 2020 at 09:30)</a>:</h4>
+<p>"Delta lenses" are a compositional theory of incremental and reversible computation (if I understand) with some very nice category theory behind them, but probably very far from being application-ready: <a href="https://www.mta.ca/~rrosebru/articles/lfut.pdf" title="https://www.mta.ca/~rrosebru/articles/lfut.pdf">https://www.mta.ca/~rrosebru/articles/lfut.pdf</a></p>
+
+
+
+<a name="191719765"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229156-practice%3A%20applied%20ct/topic/incremental%20computation/near/191719765" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Maxime Lucas <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-practice:-applied-ct/topic/topic_incremental.20computation.html#191719765">(Mar 25 2020 at 09:42)</a>:</h4>
+<p>I know that Yann Regis Gianas is thinking about this stuff. Here are some slides from one of his talks, with pointers towards other people's work: <a href="http://chocola.ens-lyon.fr/events/seminaire-2019-11-14/talks/gianas/" title="http://chocola.ens-lyon.fr/events/seminaire-2019-11-14/talks/gianas/">http://chocola.ens-lyon.fr/events/seminaire-2019-11-14/talks/gianas/</a></p>
+
+
+
+<a name="191742903"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229156-practice%3A%20applied%20ct/topic/incremental%20computation/near/191742903" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Philip Zucker <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-practice:-applied-ct/topic/topic_incremental.20computation.html#191742903">(Mar 25 2020 at 13:23)</a>:</h4>
+<p>Incremental computation is an example  in Compiling to Categories <a href="http://conal.net/papers/compiling-to-categories/" title="http://conal.net/papers/compiling-to-categories/">http://conal.net/papers/compiling-to-categories/</a>. I'm not sure that it's explored in much theoretical depth there though if that is what you want</p>
+
+
+
+<a name="191782836"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229156-practice%3A%20applied%20ct/topic/incremental%20computation/near/191782836" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nick Scheel <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-practice:-applied-ct/topic/topic_incremental.20computation.html#191782836">(Mar 25 2020 at 17:29)</a>:</h4>
+<p>Thanks for the resources! At first glance the Régis-Gianas talk looks like it's closest to what I'm looking for, and it's really helpful that various approaches are discussed there. I'll have to investigate the other sources more.</p>
+
+
+
+<a name="191783712"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229156-practice%3A%20applied%20ct/topic/incremental%20computation/near/191783712" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Gershom <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-practice:-applied-ct/topic/topic_incremental.20computation.html#191783712">(Mar 25 2020 at 17:34)</a>:</h4>
+<p>The linked "fixing incremental computation" paper describes some relation to the differential lambda calculus. There is a categorical formulation of the differential lambda calculus in the differential categories of Blute et al. On the purely-cs (not-categories) side of things, the richest body of work on incremental computation I know of is the stuff by Acar. Also related are "propigators" but they are sufficiently general that I think there's not too much good semantical work done on them.</p>
+<p>There is some suggestive work by Foner and Paykin about a richer notion of the "derivative" of a data-type in an evented context which also may be able to be developed in a more rigorous way: <a href="https://www.youtube.com/watch?v=79zzgL75K8Q" title="https://www.youtube.com/watch?v=79zzgL75K8Q">https://www.youtube.com/watch?v=79zzgL75K8Q</a></p>
+<div class="youtube-video message_inline_image"><a data-id="79zzgL75K8Q" href="https://www.youtube.com/watch?v=79zzgL75K8Q" title="https://www.youtube.com/watch?v=79zzgL75K8Q"><img src="https://i.ytimg.com/vi/79zzgL75K8Q/default.jpg"></a></div>
+
+
+
+<a name="191840340"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229156-practice%3A%20applied%20ct/topic/incremental%20computation/near/191840340" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Faez Shakil <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-practice:-applied-ct/topic/topic_incremental.20computation.html#191840340">(Mar 26 2020 at 04:55)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="276026">Philip Zucker</span> <a href="#narrow/stream/229156-applied-category.20theory/topic/incremental.20computation/near/191742903" title="#narrow/stream/229156-applied-category.20theory/topic/incremental.20computation/near/191742903">said</a>:</p>
+<blockquote>
+<p>Incremental computation is an example  in Compiling to Categories <a href="http://conal.net/papers/compiling-to-categories/" title="http://conal.net/papers/compiling-to-categories/">http://conal.net/papers/compiling-to-categories/</a>. I'm not sure that it's explored in much theoretical depth there though if that is what you want</p>
+</blockquote>
+<p>There’s a working implementation too though I haven’t gotten the chance to work with this part of concat so far. </p>
+<p><a href="https://github.com/conal/concat/blob/master/examples/src/ConCat/Incremental.hs" title="https://github.com/conal/concat/blob/master/examples/src/ConCat/Incremental.hs">https://github.com/conal/concat/blob/master/examples/src/ConCat/Incremental.hs</a></p>
+
+
+
+<a name="191841759"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229156-practice%3A%20applied%20ct/topic/incremental%20computation/near/191841759" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Faez Shakil <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-practice:-applied-ct/topic/topic_incremental.20computation.html#191841759">(Mar 26 2020 at 05:31)</a>:</h4>
+<p>Although with this general a type it’s tempting to imagine that anything you build can be incrementalized with the right instances</p>
+<p>(.+^) :: a -&gt; Delta a -&gt; a</p>
+
+
+
+<a name="191842123"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229156-practice%3A%20applied%20ct/topic/incremental%20computation/near/191842123" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nick Scheel <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-practice:-applied-ct/topic/topic_incremental.20computation.html#191842123">(Mar 26 2020 at 05:41)</a>:</h4>
+<p>That's cool! Of course the question is how useful will it be? The automatic differentiation could actually be worse … although maybe in a lazy language the penalty is less. Unfortunately in Haskell most of the invariants you want to make use of for change structures are not explicit in the code, so the automatic system cannot take much advantage of it. But if you're differentiating a substantial subset of the program by hand, having the automatic stuff to fill in the gaps would definitely be helpful.</p>
+
+
+
+<a name="191842264"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229156-practice%3A%20applied%20ct/topic/incremental%20computation/near/191842264" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nick Scheel <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-practice:-applied-ct/topic/topic_incremental.20computation.html#191842264">(Mar 26 2020 at 05:44)</a>:</h4>
+<p>My question is how well are things like sum types supported? What's the best we can do for them? Of course product types are easy, but functions taking sum types are more interesting and much harder to differentiate. It seems like a change switching from one constructor to another is often discontinuous, in the sense that the new output is not much related to the prior output.</p>
+
+
+
+<a name="191842781"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229156-practice%3A%20applied%20ct/topic/incremental%20computation/near/191842781" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Faez Shakil <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-practice:-applied-ct/topic/topic_incremental.20computation.html#191842781">(Mar 26 2020 at 06:00)</a>:</h4>
+<p>There’s this<br>
+(:+ is a type synonym for Either)</p>
+<p>instance (HasDelta a, HasDelta b) =&gt; HasDelta (a :+ b)</p>
+<p>So I’d assume sum types are as much under its purview as products. </p>
+<p>Could you clarify what sorts of change invariants you’re referring to?</p>
+<p>If you take a look at this function at the bottom, it’s pretty general. </p>
+<p>inc :: forall a b . (a -&gt; b) -&gt; (a -&gt; Delta a -&gt; Delta b)</p>
+<p>Given a function from a to b you get a function that gives you the change in b if you give it an a and a change in a. </p>
+<p>Seems like the kind of primitive that would be very helpful to have if you’re building any sort of an interactive system where you only want to render whatever’s changed, for example</p>
+
+
+
+<a name="191843210"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229156-practice%3A%20applied%20ct/topic/incremental%20computation/near/191843210" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nick Scheel <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-practice:-applied-ct/topic/topic_incremental.20computation.html#191843210">(Mar 26 2020 at 06:10)</a>:</h4>
+<p>Oh, interesting, the change action for <code>:+</code> isn't complete (in the sense of "Fixing incremental computation" – there is no way to get from <code>Left</code> to <code>Right</code> via the change action), so it sidesteps the issue I was talking about.</p>
+<p>If you want a complete change action, it actually has to look something like <code>type Delta (a :+ b) = (a :+ Delta a) :+ (b :+ Delta b)</code>, because in order to get from <code> Left</code> to <code>Right</code> (or vice-versa) you have to actually provide the new <code>b</code> value, and the automatic differentiation approach to it would have to recompute <code>f (Right b)</code> from scratch, which is the worst-case scenario.</p>
+
+
+
+<a name="191843369"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229156-practice%3A%20applied%20ct/topic/incremental%20computation/near/191843369" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nick Scheel <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-practice:-applied-ct/topic/topic_incremental.20computation.html#191843369">(Mar 26 2020 at 06:15)</a>:</h4>
+<p>So <code>inc</code> doesn't actually allow you to calculate a change from a <code>Left</code> value to a <code>Right</code> value, and you instead would have to recompute it</p>
+
+
+
+<a name="191843769"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229156-practice%3A%20applied%20ct/topic/incremental%20computation/near/191843769" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nick Scheel <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-practice:-applied-ct/topic/topic_incremental.20computation.html#191843769">(Mar 26 2020 at 06:25)</a>:</h4>
+<p>Another question I have in this area is reversing changes, which would be incredibly useful for storing undo/redo history, because you can cut down drastically on the data needed to store history, but you have to be careful that it's well-defined, so that you don't lose information while doing it. Does anyone know of research on this too?</p>
+<p>I came up with a model for reversing changes that's based on <code>patchAndReverse :: v -&gt; dv -&gt; Tuple dv v</code>. The reason I do both at once is because, in general, it seems you have to know what <code>v</code> you're applying the <code>dv</code> to before you can know what the proper <code>dv</code> to undo it is. Sometimes you get lucky and can have a group structure on <code>dv</code> that means you can compute its inverse independently, but most of the time you need to know the structure of what you're changing before you can express how to get back there. Think of removing an element (from a list, map, etc.) – it doesn't really make sense to store the value of the element you're removing in the change action to remove it, but you definitely need to know its value to reconstruct it when reversing the change.<br>
+See my attempts here: <a href="https://gist.github.com/MonoidMusician/09ffe27e925525629a895af3c5b65f20" title="https://gist.github.com/MonoidMusician/09ffe27e925525629a895af3c5b65f20">https://gist.github.com/MonoidMusician/09ffe27e925525629a895af3c5b65f20</a> (wow, that's almost exactly 2 years ago now)</p>
+
+
+
+<a name="191937187"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229156-practice%3A%20applied%20ct/topic/incremental%20computation/near/191937187" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nick Scheel <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-practice:-applied-ct/topic/topic_incremental.20computation.html#191937187">(Mar 26 2020 at 19:29)</a>:</h4>
+<blockquote>
+<p>it doesn't really make sense to store the value of the element you're removing in the change action to remove it, but you definitely need to know its value to reconstruct it when reversing the change.</p>
+</blockquote>
+<p>Actually, now that I think about it more, I think it actually might make sense to store the value you are deleting, for the reason mentioned above (you can now invert the change without knowing what it's applying to), and also because the element sort of serves as "proof" of the existence of the thing that you are deleting, which might prevent bugs, even just UI bugs like active-looking buttons that actually do nothing because they're trying to remove an element that doesn't exist.</p>
+
+
+
+<a name="191947499"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229156-practice%3A%20applied%20ct/topic/incremental%20computation/near/191947499" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Gershom <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-practice:-applied-ct/topic/topic_incremental.20computation.html#191947499">(Mar 26 2020 at 20:55)</a>:</h4>
+<p>reversible stuff is quite different from incremental stuff, but here's one approach to it: <a href="https://arxiv.org/abs/1811.03678" title="https://arxiv.org/abs/1811.03678">https://arxiv.org/abs/1811.03678</a></p>
+
+
+
+<a name="191953956"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229156-practice%3A%20applied%20ct/topic/incremental%20computation/near/191953956" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nick Scheel <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-practice:-applied-ct/topic/topic_incremental.20computation.html#191953956">(Mar 26 2020 at 21:53)</a>:</h4>
+<p>oops, I meant reversing incremental changes, but reversible computation is very interesting too <span aria-label="smiley" class="emoji emoji-1f603" role="img" title="smiley">:smiley:</span></p>
+
+
+
+<a name="191978266"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229156-practice%3A%20applied%20ct/topic/incremental%20computation/near/191978266" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Reed Mullanix <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-practice:-applied-ct/topic/topic_incremental.20computation.html#191978266">(Mar 27 2020 at 05:35)</a>:</h4>
+<p>Looking at the code posted, perhaps some sort of group (or monoid) action could work nicely? You could even potentially obtain some sort of rewrite system if the monoid or group is finitely presented!</p>
+
+
+
+<a name="192027151"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229156-practice%3A%20applied%20ct/topic/incremental%20computation/near/192027151" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nick Scheel <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-practice:-applied-ct/topic/topic_incremental.20computation.html#192027151">(Mar 27 2020 at 14:44)</a>:</h4>
+<p>Hi Reed! Yeah! I think the group action is a good idea, although it’s not clear if every change action lends itself to being so straightforward like I mentioned above. Some of the presentations do use monoid actions, others say it in all but name <span aria-label="wink" class="emoji emoji-1f609" role="img" title="wink">:wink:</span></p>
+<p>Could you expand on the second part?</p>
+
+
+
+<a name="192046887"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229156-practice%3A%20applied%20ct/topic/incremental%20computation/near/192046887" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Reed Mullanix <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-practice:-applied-ct/topic/topic_incremental.20computation.html#192046887">(Mar 27 2020 at 16:49)</a>:</h4>
+<p>So say you have some sort of source of state (to make this simple, let's say it's just a counter), and you have 2 actions that you can perform on it: replacing, and incrementing. Let's denote these actions <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>r</mi><mi>k</mi></msub></mrow><annotation encoding="application/x-tex">r_{k}</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.58056em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.02778em;">r</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.33610799999999996em;"><span style="top:-2.5500000000000003em;margin-left:-0.02778em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight" style="margin-right:0.03148em;">k</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span> and <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>i</mi></mrow><annotation encoding="application/x-tex">i</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.65952em;vertical-align:0em;"></span><span class="mord mathdefault">i</span></span></span></span>, where <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>r</mi><mi>k</mi></msub></mrow><annotation encoding="application/x-tex">r_{k}</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.58056em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.02778em;">r</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.33610799999999996em;"><span style="top:-2.5500000000000003em;margin-left:-0.02778em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight" style="margin-right:0.03148em;">k</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span> replaces the value of the counter with <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>k</mi></mrow><annotation encoding="application/x-tex">k</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.69444em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.03148em;">k</span></span></span></span>. Now, we can think about the free monoid generated by <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>r</mi><mi>k</mi></msub></mrow><annotation encoding="application/x-tex">r_{k}</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.58056em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.02778em;">r</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.33610799999999996em;"><span style="top:-2.5500000000000003em;margin-left:-0.02778em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight" style="margin-right:0.03148em;">k</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span> and <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>i</mi></mrow><annotation encoding="application/x-tex">i</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.65952em;vertical-align:0em;"></span><span class="mord mathdefault">i</span></span></span></span>. However, just looking at the actions we have available, we have some laws that we can play with! For example, <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>r</mi><mi>k</mi></msub><mo>⋅</mo><mi>i</mi><mo>=</mo><msub><mi>r</mi><mrow><mi>k</mi><mo>+</mo><mn>1</mn></mrow></msub></mrow><annotation encoding="application/x-tex">r_{k} \cdot i = r_{k + 1}</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.59445em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.02778em;">r</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.33610799999999996em;"><span style="top:-2.5500000000000003em;margin-left:-0.02778em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight" style="margin-right:0.03148em;">k</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">⋅</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.65952em;vertical-align:0em;"></span><span class="mord mathdefault">i</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.638891em;vertical-align:-0.208331em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.02778em;">r</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3361079999999999em;"><span style="top:-2.5500000000000003em;margin-left:-0.02778em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight" style="margin-right:0.03148em;">k</span><span class="mbin mtight">+</span><span class="mord mtight">1</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.208331em;"><span></span></span></span></span></span></span></span></span></span>, and <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">∀</mi><mi>a</mi><mi mathvariant="normal">.</mi><mi>a</mi><mo>⋅</mo><msub><mi>r</mi><mi>k</mi></msub><mo>=</mo><msub><mi>r</mi><mi>k</mi></msub></mrow><annotation encoding="application/x-tex">\forall a. a \cdot r_{k} = r_{k}</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.69444em;vertical-align:0em;"></span><span class="mord">∀</span><span class="mord mathdefault">a</span><span class="mord">.</span><span class="mord mathdefault">a</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">⋅</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.58056em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.02778em;">r</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.33610799999999996em;"><span style="top:-2.5500000000000003em;margin-left:-0.02778em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight" style="margin-right:0.03148em;">k</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.58056em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.02778em;">r</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.33610799999999996em;"><span style="top:-2.5500000000000003em;margin-left:-0.02778em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight" style="margin-right:0.03148em;">k</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span>. So if we recieved a long string of actions that we needed to perform on the state, we could first optimize it by applying our laws to reduce it down to a simpler string.</p>
+
+
+
+<a name="192047834"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229156-practice%3A%20applied%20ct/topic/incremental%20computation/near/192047834" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Reed Mullanix <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-practice:-applied-ct/topic/topic_incremental.20computation.html#192047834">(Mar 27 2020 at 16:55)</a>:</h4>
+<p>I guess this example isn't finitely presented, but rather recursively presented, but the idea still holds. You can optimize by simply writing out the laws, applying something like Knuth-Bendix, and getting out a rewrite system. To go even further, if you don't have a lot of reads, you could materialize the state on demand at later points in time, instead keeping a running log of all of the actions, that you optimize as you recieve</p>
+
+
+
+<a name="192098030"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229156-practice%3A%20applied%20ct/topic/incremental%20computation/near/192098030" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mario Alvarez Picallo <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-practice:-applied-ct/topic/topic_incremental.20computation.html#192098030">(Mar 28 2020 at 01:18)</a>:</h4>
+<p>Hi <span class="user-mention" data-user-id="276057">@Nicholas Scheel</span>, I'm one of the authors of the paper you linked! You may also want to check out our follow-ups <a href="https://arxiv.org/pdf/1902.05465.pdf" title="https://arxiv.org/pdf/1902.05465.pdf">https://arxiv.org/pdf/1902.05465.pdf</a> and <a href="https://arxiv.org/abs/2002.01091" title="https://arxiv.org/abs/2002.01091">https://arxiv.org/abs/2002.01091</a> - I'm not that involved with the "incremental" side of the project, instead focusing on the category theory and "geometry" of it but let me know if I can help at all.</p>
+
+
+
+{% endraw %}
+
+<hr><p>Last updated: Feb 13 2022 at 17:17 UTC</p>

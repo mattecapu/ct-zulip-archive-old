@@ -1,0 +1,188 @@
+---
+layout: archive
+title: Zulip Chat Archive
+permalink: /stream/229156-practice:-applied-ct/topic/julia.20and.20python.html
+---
+
+<h2>Stream: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-practice:-applied-ct/index.html">practice: applied ct</a></h2>
+<h3>Topic: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-practice:-applied-ct/topic/topic_julia.20and.20python.html">julia and python</a></h3>
+
+<hr>
+
+<base href="https://categorytheory.zulipchat.com/">
+
+{% raw %}
+
+<a name="198040796"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229156-practice%3A%20applied%20ct/topic/julia%20and%20python/near/198040796" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Daniel Geisler <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-practice:-applied-ct/topic/topic_julia.20and.20python.html#198040796">(May 19 2020 at 09:24)</a>:</h4>
+<p>Are julia and python the programming languages we want to use for scientific programming?</p>
+
+
+
+<a name="198048516"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229156-practice%3A%20applied%20ct/topic/julia%20and%20python/near/198048516" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Pastel Raschke <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-practice:-applied-ct/topic/topic_julia.20and.20python.html#198048516">(May 19 2020 at 10:51)</a>:</h4>
+<p>who's we?</p>
+<p>julia seems to be a language a lot of people want to use for scientific programming, and its multiple dispatch model and type system feels very elegant to me on a PL level</p>
+<p>this doesn't particularly strike me as applied ct</p>
+
+
+
+<a name="198054697"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229156-practice%3A%20applied%20ct/topic/julia%20and%20python/near/198054697" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> James Fairbanks <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-practice:-applied-ct/topic/topic_julia.20and.20python.html#198054697">(May 19 2020 at 12:04)</a>:</h4>
+<p>Julia makes a lot of sense because of the type system. Having parametric and dependent types is useful for CT and being dynamically typed and fast is good for applications in scientific computing.</p>
+
+
+
+<a name="198092100"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229156-practice%3A%20applied%20ct/topic/julia%20and%20python/near/198092100" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Dan Doel <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-practice:-applied-ct/topic/topic_julia.20and.20python.html#198092100">(May 19 2020 at 16:31)</a>:</h4>
+<p>Julia doesn't appear to really have dependent types in the sense that most type theories useful for mathematics have them.</p>
+<p>You need to be careful, because some people will describe a programming language as "having dependent types" when it just means that you can have types parameterized by static integer numerals, say, because statically sized vectors are a common simple example of dependent types. However, this does not mean that types can depend on values of arbitrary other types, or that there are things like Π, Σ and identity types that allow you to write proofs about the behavior of operations and such.</p>
+
+
+
+<a name="198118168"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229156-practice%3A%20applied%20ct/topic/julia%20and%20python/near/198118168" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Philip Zucker <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-practice:-applied-ct/topic/topic_julia.20and.20python.html#198118168">(May 19 2020 at 19:55)</a>:</h4>
+<p>There's an interesting, but al little too hot blooded discussion of the same here <a href="https://github.com/JuliaLang/julia/issues/6113">https://github.com/JuliaLang/julia/issues/6113</a></p>
+
+
+
+<a name="198118379"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229156-practice%3A%20applied%20ct/topic/julia%20and%20python/near/198118379" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Philip Zucker <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-practice:-applied-ct/topic/topic_julia.20and.20python.html#198118379">(May 19 2020 at 19:57)</a>:</h4>
+<p>Interestingly, firing up the repl, it appears you can parametrize types over more values than just ints. It accepts Tuple{1.34, 'a'} as a type for example.</p>
+
+
+
+<a name="198119050"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229156-practice%3A%20applied%20ct/topic/julia%20and%20python/near/198119050" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Reid Barton <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-practice:-applied-ct/topic/topic_julia.20and.20python.html#198119050">(May 19 2020 at 20:02)</a>:</h4>
+<p>I don't know Julia. Is that supposed to be the type of a pair whose first element is a 1.34 and whose second element is a 'a'?</p>
+
+
+
+<a name="198119535"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229156-practice%3A%20applied%20ct/topic/julia%20and%20python/near/198119535" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Philip Zucker <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-practice:-applied-ct/topic/topic_julia.20and.20python.html#198119535">(May 19 2020 at 20:06)</a>:</h4>
+<p>I think it is the analog of a pair whose first type slot is 1.34 and  second type slot is 'a'</p>
+
+
+
+<a name="198119568"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229156-practice%3A%20applied%20ct/topic/julia%20and%20python/near/198119568" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Philip Zucker <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-practice:-applied-ct/topic/topic_julia.20and.20python.html#198119568">(May 19 2020 at 20:06)</a>:</h4>
+<p>I assume such a type can't be inhabitted</p>
+
+
+
+<a name="198119594"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229156-practice%3A%20applied%20ct/topic/julia%20and%20python/near/198119594" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Reid Barton <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-practice:-applied-ct/topic/topic_julia.20and.20python.html#198119594">(May 19 2020 at 20:06)</a>:</h4>
+<p>So even their types are untyped <span aria-label="upside down" class="emoji emoji-1f643" role="img" title="upside down">:upside_down:</span></p>
+
+
+
+<a name="198119608"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229156-practice%3A%20applied%20ct/topic/julia%20and%20python/near/198119608" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Philip Zucker <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-practice:-applied-ct/topic/topic_julia.20and.20python.html#198119608">(May 19 2020 at 20:06)</a>:</h4>
+<p>It is odd</p>
+
+
+
+<a name="198119810"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229156-practice%3A%20applied%20ct/topic/julia%20and%20python/near/198119810" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Philip Zucker <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-practice:-applied-ct/topic/topic_julia.20and.20python.html#198119810">(May 19 2020 at 20:08)</a>:</h4>
+<p>I would guess this capability is rarely used except for typelevel ints, but I'd be interested to see a place where it is</p>
+
+
+
+<a name="198120241"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229156-practice%3A%20applied%20ct/topic/julia%20and%20python/near/198120241" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Philip Zucker <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-practice:-applied-ct/topic/topic_julia.20and.20python.html#198120241">(May 19 2020 at 20:12)</a>:</h4>
+<p>To the original question, yes, python and julia are the leading candidates for a different flavor of category theory than you'll find in proof systems and ML-like languages.</p>
+
+
+
+<a name="198120263"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229156-practice%3A%20applied%20ct/topic/julia%20and%20python/near/198120263" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Philip Zucker <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-practice:-applied-ct/topic/topic_julia.20and.20python.html#198120263">(May 19 2020 at 20:12)</a>:</h4>
+<p>To my taste at least</p>
+
+
+
+<a name="198120415"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229156-practice%3A%20applied%20ct/topic/julia%20and%20python/near/198120415" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Philip Zucker <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-practice:-applied-ct/topic/topic_julia.20and.20python.html#198120415">(May 19 2020 at 20:13)</a>:</h4>
+<p>Category theory is used as a mathematical object to prove things about or used as a method for organizing proofs of other fields in those systems. The end result produced by the computer is mostly "typechecked" or "failed to typecheck".</p>
+
+
+
+<a name="198120569"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229156-practice%3A%20applied%20ct/topic/julia%20and%20python/near/198120569" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Philip Zucker <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-practice:-applied-ct/topic/topic_julia.20and.20python.html#198120569">(May 19 2020 at 20:15)</a>:</h4>
+<p>But there are different kinds of things one wants to do with a computer. Sometimes computers are useful for calculating something, something numerical in particular. And it seems like category theory can be useful for organizing those computations too</p>
+
+
+
+<a name="198120805"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229156-practice%3A%20applied%20ct/topic/julia%20and%20python/near/198120805" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Philip Zucker <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-practice:-applied-ct/topic/topic_julia.20and.20python.html#198120805">(May 19 2020 at 20:17)</a>:</h4>
+<p>Ideally, systems like Agda and Coq would be so easy to use and fast that one could do heavy duty numerical calculation in them with proof assurance backing the calculations. But the world isn't there yet, and figuring out how to even do simple numerical problems in those systems is still at the edge of my capabilities, despite not being an idiot and trying for a long time.</p>
+
+
+
+<a name="198121209"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229156-practice%3A%20applied%20ct/topic/julia%20and%20python/near/198121209" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Philip Zucker <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-practice:-applied-ct/topic/topic_julia.20and.20python.html#198121209">(May 19 2020 at 20:20)</a>:</h4>
+<p>So it seems like python and julia are the way to go at the moment if your aims are calculation. I actually find it freeing and mind expanding to not even have the _option_ of being a hard ass formalist, because such an approach is  rather silly in a system not built for it.</p>
+
+
+
+<a name="198121251"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229156-practice%3A%20applied%20ct/topic/julia%20and%20python/near/198121251" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Philip Zucker <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-practice:-applied-ct/topic/topic_julia.20and.20python.html#198121251">(May 19 2020 at 20:20)</a>:</h4>
+<p>Also, if you're interested in having wider appeal, the barrier the entry of python and julia is much lower.</p>
+
+
+
+<a name="198124194"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229156-practice%3A%20applied%20ct/topic/julia%20and%20python/near/198124194" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Fabrizio Genovese <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-practice:-applied-ct/topic/topic_julia.20and.20python.html#198124194">(May 19 2020 at 20:46)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="276867">Daniel Geisler</span> <a href="#narrow/stream/229156-practice.3A-applied.20ct/topic/julia.20and.20python/near/198040796">said</a>:</p>
+<blockquote>
+<p>Are julia and python the programming languages we want to use for scientific programming?</p>
+</blockquote>
+<p>It depends what you want to do. For sure I wouldn't ever use either for theorem proving, for instance. Python is more or less the standard in AI tho.</p>
+
+
+
+<a name="198124429"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229156-practice%3A%20applied%20ct/topic/julia%20and%20python/near/198124429" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Fabrizio Genovese <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-practice:-applied-ct/topic/topic_julia.20and.20python.html#198124429">(May 19 2020 at 20:48)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="276480">Reid Barton</span> <a href="#narrow/stream/229156-practice.3A-applied.20ct/topic/julia.20and.20python/near/198119594">said</a>:</p>
+<blockquote>
+<p>So even their types are untyped <span aria-label="upside down" class="emoji emoji-1f643" role="img" title="upside down">:upside_down:</span></p>
+</blockquote>
+<p>This is not surprising tho. There's plenty of examples of  "typed languages" whose types are a mess. Javascript comes to mind, really</p>
+
+
+
+<a name="198124490"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229156-practice%3A%20applied%20ct/topic/julia%20and%20python/near/198124490" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Fabrizio Genovese <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-practice:-applied-ct/topic/topic_julia.20and.20python.html#198124490">(May 19 2020 at 20:48)</a>:</h4>
+<p>All in all, for me a language is typed if you can clearly point me to a formal type theory that the language implements. Otherwise it's not typed, at best "hacked".</p>
+
+
+
+<a name="198124949"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229156-practice%3A%20applied%20ct/topic/julia%20and%20python/near/198124949" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nathanael Arkor <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-practice:-applied-ct/topic/topic_julia.20and.20python.html#198124949">(May 19 2020 at 20:52)</a>:</h4>
+<blockquote>
+<p>All in all, for me a language is typed if you can clearly point me to a formal type theory that the language implements.</p>
+</blockquote>
+<p>This criterion excludes almost all existing programming languages, including those for proof assistants, so this is a <em>little</em> stricter than common convention.</p>
+
+
+
+<a name="198125278"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229156-practice%3A%20applied%20ct/topic/julia%20and%20python/near/198125278" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Fabrizio Genovese <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-practice:-applied-ct/topic/topic_julia.20and.20python.html#198125278">(May 19 2020 at 20:55)</a>:</h4>
+<p>Lol, well yes</p>
+
+
+
+<a name="198125307"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229156-practice%3A%20applied%20ct/topic/julia%20and%20python/near/198125307" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Fabrizio Genovese <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-practice:-applied-ct/topic/topic_julia.20and.20python.html#198125307">(May 19 2020 at 20:55)</a>:</h4>
+<p>But c'mon, coming from category theory don't you feel an intrinsic sense of disgust in saying that C is typed? :D</p>
+
+
+
+<a name="198125440"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229156-practice%3A%20applied%20ct/topic/julia%20and%20python/near/198125440" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Fabrizio Genovese <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-practice:-applied-ct/topic/topic_julia.20and.20python.html#198125440">(May 19 2020 at 20:56)</a>:</h4>
+<p>Probably what I said makes more sense if you see things from a functional programming PoV, actually <span aria-label="slight smile" class="emoji emoji-1f642" role="img" title="slight smile">:slight_smile:</span></p>
+
+
+
+{% endraw %}
+
+<hr><p>Last updated: Feb 13 2022 at 17:17 UTC</p>

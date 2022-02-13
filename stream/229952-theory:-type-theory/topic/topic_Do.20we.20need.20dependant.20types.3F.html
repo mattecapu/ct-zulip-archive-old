@@ -1,0 +1,60 @@
+---
+layout: archive
+title: Zulip Chat Archive
+permalink: /stream/229952-theory:-type-theory/topic/Do.20we.20need.20dependant.20types.3F.html
+---
+
+<h2>Stream: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229952-theory:-type-theory/index.html">theory: type theory</a></h2>
+<h3>Topic: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229952-theory:-type-theory/topic/topic_Do.20we.20need.20dependant.20types.3F.html">Do we need dependant types?</a></h3>
+
+<hr>
+
+<base href="https://categorytheory.zulipchat.com/">
+
+{% raw %}
+
+<a name="203093424"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229952-theory%3A%20type%20theory/topic/Do%20we%20need%20dependant%20types%3F/near/203093424" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Tim Hosgood <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229952-theory:-type-theory/topic/topic_Do.20we.20need.20dependant.20types.3F.html#203093424">(Jul 07 2020 at 12:03)</a>:</h4>
+<p>There’s the paper <em>Do we Need Dependant Types</em> by Daniel Fridlender and Mia Indrika which gives a neat “trick” for constructing something that looks like a dependent type, but without actually using dependant types. Is this an example of a more general method? I’m guessing that this can be used to construct types dependent on <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="double-struck">N</mi></mrow><annotation encoding="application/x-tex">\mathbb{N}</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.68889em;vertical-align:0em;"></span><span class="mord"><span class="mord mathbb">N</span></span></span></span></span> in lots of situations, but I have no idea what’s really going on behind the scenes here!</p>
+
+
+
+<a name="203593358"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229952-theory%3A%20type%20theory/topic/Do%20we%20need%20dependant%20types%3F/near/203593358" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Matteo Capucci <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229952-theory:-type-theory/topic/topic_Do.20we.20need.20dependant.20types.3F.html#203593358">(Jul 11 2020 at 11:52)</a>:</h4>
+<p>(For reference, this is the paper <a href="https://pdfs.semanticscholar.org/7e66/7dd0515e4f674e42c0b0860644fee3dd5846.pdf">https://pdfs.semanticscholar.org/7e66/7dd0515e4f674e42c0b0860644fee3dd5846.pdf</a>)</p>
+
+
+
+<a name="203593478"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229952-theory%3A%20type%20theory/topic/Do%20we%20need%20dependant%20types%3F/near/203593478" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Matteo Capucci <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229952-theory:-type-theory/topic/topic_Do.20we.20need.20dependant.20types.3F.html#203593478">(Jul 11 2020 at 11:55)</a>:</h4>
+<p>Maybe you can generalize that to Turing categories, in which you have a form of self-encoding  resembling Godelization</p>
+
+
+
+<a name="203593485"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229952-theory%3A%20type%20theory/topic/Do%20we%20need%20dependant%20types%3F/near/203593485" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Matteo Capucci <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229952-theory:-type-theory/topic/topic_Do.20we.20need.20dependant.20types.3F.html#203593485">(Jul 11 2020 at 11:55)</a>:</h4>
+<p>But I don't know. Plus, what the purpose? Circumventing Haskell's limitations? (honest question)</p>
+
+
+
+<a name="203600542"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229952-theory%3A%20type%20theory/topic/Do%20we%20need%20dependant%20types%3F/near/203600542" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Dan Doel <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229952-theory:-type-theory/topic/topic_Do.20we.20need.20dependant.20types.3F.html#203600542">(Jul 11 2020 at 15:11)</a>:</h4>
+<p>Most of the machinery in that paper is a special case of what is now called <code>Applicative</code> in Haskell. Their <code>(&lt;&lt;)</code> is written <code>(&lt;*&gt;) :: Applicative f =&gt; f (a -&gt; b) -&gt; f a -&gt; f b</code>. <code>repeat</code> is a special case of <code>pure :: Applicative f =&gt; a -&gt; f a</code>. You can generalize their functions to work for any <code>Applicative</code> that way, and their example is obtained by using <code>ZipList</code>.</p>
+
+
+
+<a name="203600747"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229952-theory%3A%20type%20theory/topic/Do%20we%20need%20dependant%20types%3F/near/203600747" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Dan Doel <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229952-theory:-type-theory/topic/topic_Do.20we.20need.20dependant.20types.3F.html#203600747">(Jul 11 2020 at 15:16)</a>:</h4>
+<p>And of course it's well known that instead of trying to do some dependently typed <code>lift n</code> you can just write <code>f &lt;$&gt; x &lt;*&gt; y &lt;*&gt; z</code>, where <code>(&lt;$&gt;) :: Functor f =&gt; (a -&gt; b) -&gt; f a -&gt; f b</code>, which isn't really that bad, and so this isn't a very good example of why dependent types are worth while. <span aria-label="slight smile" class="emoji emoji-1f642" role="img" title="slight smile">:slight_smile:</span></p>
+
+
+
+<a name="203601615"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229952-theory%3A%20type%20theory/topic/Do%20we%20need%20dependant%20types%3F/near/203601615" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Dan Doel <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229952-theory:-type-theory/topic/topic_Do.20we.20need.20dependant.20types.3F.html#203601615">(Jul 11 2020 at 15:40)</a>:</h4>
+<p>The rest is kind of messing with continuation passing and polymorphic types to get something that looks like numerals, but actually has a complex type. I think another example is the <a href="http://okmij.org/ftp/typed-formatting/">printf DSL</a> that Oleg Kiselyov came up with.</p>
+
+
+
+{% endraw %}
+
+<hr><p>Last updated: Feb 13 2022 at 17:17 UTC</p>

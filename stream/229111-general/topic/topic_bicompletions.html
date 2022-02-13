@@ -1,0 +1,515 @@
+---
+layout: archive
+title: Zulip Chat Archive
+permalink: /stream/229111-general/topic/bicompletions.html
+---
+
+<h2>Stream: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/index.html">general</a></h2>
+<h3>Topic: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/topic_bicompletions.html">bicompletions</a></h3>
+
+<hr>
+
+<base href="https://categorytheory.zulipchat.com/">
+
+{% raw %}
+
+<a name="194831996"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/bicompletions/near/194831996" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> dusko <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/topic_bicompletions.html#194831996">(Apr 21 2020 at 17:01)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="275920">John Baez</span> <a href="#narrow/stream/229111-general/topic/How.20long.20have.20you.20worked.20with.20CT.3F/near/194749413" title="#narrow/stream/229111-general/topic/How.20long.20have.20you.20worked.20with.20CT.3F/near/194749413">said</a>:</p>
+<blockquote>
+<p>Limits and colimits, to me, are paradigmatic of categorical concepts.  They are things that make sense in a category.  They're also extremely important.</p>
+</blockquote>
+<p>But if I give you a category with some limits and come colimits, and other limits and colimits missing, then you generally cannot complete that structure to a category that is small complete an d cocomplete in a way that preserves the original limits and colimits. If the concepts captured by that category are expressed in terms of limits and colimits, then to extract <em>all</em> that knowledge, you need to choose whether you prefer to throw away the existing limits or the existing colimits. You cannot aggregate and preserve both. Doesn't this worry you that this might mean that limits and colimits do not give the whole picture? At the very least, they don't give it together.</p>
+
+
+
+<a name="194859643"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/bicompletions/near/194859643" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/topic_bicompletions.html#194859643">(Apr 21 2020 at 20:50)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="294557">dusko</span> <a href="#narrow/stream/229111-general/topic/How.20long.20have.20you.20worked.20with.20CT.3F/near/194831996" title="#narrow/stream/229111-general/topic/How.20long.20have.20you.20worked.20with.20CT.3F/near/194831996">said</a>:</p>
+<blockquote>
+<p>But if I give you a category with some limits and some colimits, and other limits and colimits missing, then you generally cannot complete that structure to a category that is small complete and cocomplete in a way that preserves the original limits and colimits.</p>
+</blockquote>
+<p>Yes you can: the category of presheaves on your category that preserve the specified colimits (i.e. take them to limits in Set).  The Yoneda embedding factors through this category and preserves all limits, while it preserves the specified colimits essentially by construction.  And this category of presheaves is reflective in the category of all presheaves, hence cocomplete as well as complete.</p>
+
+
+
+<a name="194866956"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/bicompletions/near/194866956" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> dusko <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/topic_bicompletions.html#194866956">(Apr 21 2020 at 21:58)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="276777">Mike Shulman</span> <a href="#narrow/stream/229111-general/topic/How.20long.20have.20you.20worked.20with.20CT.3F/near/194859643" title="#narrow/stream/229111-general/topic/How.20long.20have.20you.20worked.20with.20CT.3F/near/194859643">said</a>:</p>
+<blockquote>
+<p><span class="user-mention silent" data-user-id="294557">dusko</span> <a href="#narrow/stream/229111-general/topic/How.20long.20have.20you.20worked.20with.20CT.3F/near/194831996" title="#narrow/stream/229111-general/topic/How.20long.20have.20you.20worked.20with.20CT.3F/near/194831996">said</a>:</p>
+<blockquote>
+<p>But if I give you a category with some limits and some colimits, and other limits and colimits missing, then you generally cannot complete that structure to a category that is small complete and cocomplete in a way that preserves the original limits and colimits.</p>
+</blockquote>
+<p>Yes you can: the category of presheaves on your category that preserve the specified colimits (i.e. take them to limits in Set).  The Yoneda embedding factors through this category and preserves all limits, while it preserves the specified colimits essentially by construction.  And this category of presheaves is reflective in the category of all presheaves, hence cocomplete as well as complete.</p>
+</blockquote>
+<p>very nice! i like how  you use the fact that the representables map colimits to limits.</p>
+<p>the problem is, if i dualize everything you say, i will end up with an embedding of the original category into the subcategory of the covariant functors to Set, along the other yoneda embedding. are you saying that i will get an equivalent category? otherwise, you have proved that i can embed a category into <strong>two different</strong> complete and cocomplete categories. (by combining the two, i think i can in fact get infinitely many different categories.) so they extend the original limits and colimits in two different ways. hyou didn't prove that i can embed the original category into <em>a</em> category that will extend the existing limits and colimits. if i were in the business of completing, say, the rational numbers, and you gave me two nonisomorphic completions, i would be scratching my head.</p>
+
+
+
+<a name="194879207"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/bicompletions/near/194879207" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/topic_bicompletions.html#194879207">(Apr 22 2020 at 01:00)</a>:</h4>
+<p>Yes, of course, there are many nonisomorphic bicompletions of a category with specified limits and colimits.  If you want one that doesn't privilege either the limits or the colimits, you can probably find it as a subcategory of the Isbell envelope or something related (<a href="https://ncatlab.org/nlab/show/Isbell+envelope" title="https://ncatlab.org/nlab/show/Isbell+envelope">https://ncatlab.org/nlab/show/Isbell+envelope</a>).  This is indeed different from the situation for rational numbers because limits are <em>structure</em> on a category (albeit "property-like structure"), and so adding them can be done "freely" or non-freely (see <a href="https://ncatlab.org/nlab/show/completion" title="https://ncatlab.org/nlab/show/completion">https://ncatlab.org/nlab/show/completion</a> for discussion).</p>
+
+
+
+<a name="194882512"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/bicompletions/near/194882512" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/topic_bicompletions.html#194882512">(Apr 22 2020 at 02:22)</a>:</h4>
+<p>I expect there is a "universal" or "free" way to bicomplete a category, in the sense that the forgetful functor from bicomplete categories to categories with specified limits and colimits should have a left adjoint.  It's less clear that the unit of that adjunction is fully faithful, but I suspect that that could be proven with a Lafont-style gluing (or perhaps double-gluing) construction.</p>
+
+
+
+<a name="194882535"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/bicompletions/near/194882535" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/topic_bicompletions.html#194882535">(Apr 22 2020 at 02:23)</a>:</h4>
+<p>(Coincidentally, my talk at ACT@UCR tomorrow will be about a <a href="https://arxiv.org/abs/2004.08487" title="https://arxiv.org/abs/2004.08487">preprint</a> that involves double gluing for a similar result, although I probably won't get to talk about the double gluing in the seminar.)</p>
+
+
+
+<a name="194903391"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/bicompletions/near/194903391" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Morgan Rogers (he/him) <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/topic_bicompletions.html#194903391">(Apr 22 2020 at 08:54)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="294557">dusko</span> <a href="#narrow/stream/229111-general/topic/How.20long.20have.20you.20worked.20with.20CT.3F/near/194866956" title="#narrow/stream/229111-general/topic/How.20long.20have.20you.20worked.20with.20CT.3F/near/194866956">said</a>:</p>
+<blockquote>
+<p>the problem is, if i dualize everything you say, i will end up with an embedding of the original category into the subcategory of the covariant functors to Set, along the other yoneda embedding. are you saying that i will get an equivalent category? otherwise, you have proved that i can embed a category into <strong>two different</strong> complete and cocomplete categories. (by combining the two, i think i can in fact get infinitely many different categories.) so they extend the original limits and colimits in two different ways. hyou didn't prove that i can embed the original category into <em>a</em> category that will extend the existing limits and colimits. if i were in the business of completing, say, the rational numbers, and you gave me two nonisomorphic completions, i would be scratching my head.</p>
+</blockquote>
+<p>This problem arises from the fact that you haven't specified how the two property-like structures interact; in the sheaf construction, the colimits are added such that they're stable under pullback. This is a subtlety in the topos construction that Mike mentions: if there are any non-stable colimits in the original category, they will be "forced into submission" in the sense that they will become isomorphic to the "right" colimits after the embedding, at which point the Yoneda embedding no longer factors through the resulting subtopos of the category of presheaves.</p>
+<p>A ring has two binary operations, but the construction of free rings imposes distributivity of multiplication over addition; this is analogous to colimits being stable under pullback, in a precise sense. The conclusion of the above could be paraphrased as the statement that if I have a collection of element with partially defined multiplication and addition I can complete it to a ring where multiplication distributes over addition. If one performs the covariant functor construction, we get the dual relationship, and the resulting structure will typically be different.</p>
+
+
+
+<a name="194992958"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/bicompletions/near/194992958" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/topic_bicompletions.html#194992958">(Apr 22 2020 at 21:21)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="277473">Morgan Rogers</span> <a href="#narrow/stream/229111-general/topic/How.20long.20have.20you.20worked.20with.20CT.3F/near/194903391" title="#narrow/stream/229111-general/topic/How.20long.20have.20you.20worked.20with.20CT.3F/near/194903391">said</a>:</p>
+<blockquote>
+<p>This is a subtlety in the topos construction that Mike mentions: if there are any non-stable colimits in the original category, they will be "forced into submission" in the sense that they will become isomorphic to the "right" colimits after the embedding, at which point the Yoneda embedding no longer factors through the resulting subtopos of the category of presheaves.</p>
+</blockquote>
+<p>No, I was not saying to take sheaves in the usual topos-theoretic sense, only to consider the subcategory of presheaves that preserve certain colimits.  This is not generally a topos, so its colimits do not have to be stable; and it is chosen such that the Yoneda embedding always factors through it.</p>
+
+
+
+<a name="195003895"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/bicompletions/near/195003895" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> dusko <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/topic_bicompletions.html#195003895">(Apr 22 2020 at 23:34)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="276777">Mike Shulman</span> <a href="#narrow/stream/229111-general/topic/How.20long.20have.20you.20worked.20with.20CT.3F/near/194882535" title="#narrow/stream/229111-general/topic/How.20long.20have.20you.20worked.20with.20CT.3F/near/194882535">said</a>:</p>
+<blockquote>
+<p>(Coincidentally, my talk at ACT@UCR tomorrow will be about a <a href="https://arxiv.org/abs/2004.08487" title="https://arxiv.org/abs/2004.08487">preprint</a> that involves double gluing for a similar result, although I probably won't get to talk about the double gluing in the seminar.)</p>
+</blockquote>
+<p>Thanks for sharing. It would be interesting to also see your slides, if you can upload somewhere.  (Or is it evan a zoom talk?) Someone I know has been pushing double gluing into an application of a related construction for quite a while now. </p>
+<p>Also, there is a *-autonomous aspect in this paper we also just posted: <a href="https://arxiv.org/abs/2004.07353" title="https://arxiv.org/abs/2004.07353">https://arxiv.org/abs/2004.07353</a><br>
+I am not sure from a very quick look, but it might very well be the two threads, yours and ours, might be related. ((PS if you get a chance to have a look, let us know what you think.))</p>
+<p>Re the completions in general, it is obviously interesting to understand the gamut of the various extensions of a given family of limits and colimits. But <br>
+** if category theory is "conceptual mathematics" as some people like to say, and<br>
+** if concepts are combined by saying AND and OR (and maybe some sort of NOT), and<br>
+** if we want to "categorify" AND and OR<br>
+** than we need a way choose between the various completions.</p>
+<p>before we can say AND and OR categorically, we need to put them together into a balanced universal property.</p>
+
+
+
+<a name="195004418"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/bicompletions/near/195004418" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> dusko <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/topic_bicompletions.html#195004418">(Apr 22 2020 at 23:42)</a>:</h4>
+<p>... and this is not just a "moral" principle of universal properties. </p>
+<p>eg if it turns out that, besides people and bots, Facebook and Twitter are also inhabited by aliens, and we need to distinguish the 3 kinds of users by indexing, then whether i will aggregate the indices by embedding them into presheaves and then reflecting, or into postsheaves and then coreflecting , ie the different ANDs and ORs, may determine whether i will confuse the aliens for humans, or for bots.</p>
+
+
+
+<a name="195004579"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/bicompletions/near/195004579" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/topic_bicompletions.html#195004579">(Apr 22 2020 at 23:44)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="294557">dusko</span> <a href="#narrow/stream/229111-general/topic/How.20long.20have.20you.20worked.20with.20CT.3F/near/195003895" title="#narrow/stream/229111-general/topic/How.20long.20have.20you.20worked.20with.20CT.3F/near/195003895">said</a>:</p>
+<blockquote>
+<p>Thanks for sharing. It would be interesting to also see your slides, if you can upload somewhere.  (Or is it even a zoom talk?) </p>
+</blockquote>
+<p>It was a zoom talk.  All talks are zoom talks now.</p>
+<p>You can see the slides and video <a href="https://johncarlosbaez.wordpress.com/2020/04/21/star-autonomous-envelopes/" title="https://johncarlosbaez.wordpress.com/2020/04/21/star-autonomous-envelopes/">here</a>.</p>
+
+
+
+<a name="195005289"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/bicompletions/near/195005289" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Daniel Geisler <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/topic_bicompletions.html#195005289">(Apr 22 2020 at 23:56)</a>:</h4>
+<p>dusko said </p>
+<blockquote>
+<p>may determine whether i will confuse the aliens for humans, or for bots.</p>
+</blockquote>
+<p>Too late...</p>
+
+
+
+<a name="195005303"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/bicompletions/near/195005303" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> sarahzrf <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/topic_bicompletions.html#195005303">(Apr 22 2020 at 23:56)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="294557">dusko</span> <a href="#narrow/stream/229111-general/topic/How.20long.20have.20you.20worked.20with.20CT.3F/near/195004418" title="#narrow/stream/229111-general/topic/How.20long.20have.20you.20worked.20with.20CT.3F/near/195004418">said</a>:</p>
+<blockquote>
+<p>... and this is not just a "moral" principle of universal properties. </p>
+<p>eg if it turns out that, besides people and bots, Facebook and Twitter are also inhabited by aliens, and we need to distinguish the 3 kinds of users by indexing, then whether i will aggregate the indices by embedding them into presheaves and then reflecting, or into postsheaves and then coreflecting , ie the different ANDs and ORs, may determine whether i will confuse the aliens for humans, or for bots.</p>
+</blockquote>
+<p>i don't follow this at all</p>
+
+
+
+<a name="195005335"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/bicompletions/near/195005335" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> sarahzrf <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/topic_bicompletions.html#195005335">(Apr 22 2020 at 23:57)</a>:</h4>
+<p>i don't know what it would mean to "aggregate the indices by embedding them into presheaves and then reflecting"</p>
+
+
+
+<a name="195005560"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/bicompletions/near/195005560" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> sarahzrf <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/topic_bicompletions.html#195005560">(Apr 23 2020 at 00:00)</a>:</h4>
+<p>and</p>
+<blockquote>
+<p>before we can say AND and OR categorically, we need to put them together into a balanced universal property.</p>
+</blockquote>
+<p>makes no sense to me</p>
+
+
+
+<a name="195005745"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/bicompletions/near/195005745" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> sarahzrf <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/topic_bicompletions.html#195005745">(Apr 23 2020 at 00:03)</a>:</h4>
+<p>what do you mean by "put together" and "balanced"?</p>
+
+
+
+<a name="195007449"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/bicompletions/near/195007449" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> dusko <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/topic_bicompletions.html#195007449">(Apr 23 2020 at 00:30)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="276072">sarahzrf</span> <a href="#narrow/stream/229111-general/topic/How.20long.20have.20you.20worked.20with.20CT.3F/near/195005745" title="#narrow/stream/229111-general/topic/How.20long.20have.20you.20worked.20with.20CT.3F/near/195005745">said</a>:</p>
+<blockquote>
+<p>what do you mean by "put together" and "balanced"?</p>
+</blockquote>
+<p>put together = aggregate. data aggregation is a big part of data analysis. concepts can be aggregated from above or from below. projected to lattices, or to propositional logic, the two forms of aggregation would correspond to OR and AND, or to superma and infima. if you want to count the "strength" of the correlations, you take the "bag of items" approach. if you want to also take into account the mappings between the bags of items, then it begins to look like the OR aggregation of the bags are colimits, and the AND aggregation are the limits. and then you realize that limits and colimits are not well-defined operations: you can complete your context in many different ways.</p>
+<p>i am not sure about your background, but in the context of exact categories, balanced used to mean epi+mono &lt;=&gt;iso, and nowadays it more often means that approximation is preserved under dualizing... if you want to understand how these concepts are formalized, there is a big research area of semantic indexing and concept analysis, and a tiny bit about applying categorical constructions. </p>
+<p>my point is that limits and colimits were fine for the math contexts where they emerged; but that claiming that they are a categorification of logic is still a bit premature.</p>
+
+
+
+<a name="195007894"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/bicompletions/near/195007894" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/topic_bicompletions.html#195007894">(Apr 23 2020 at 00:37)</a>:</h4>
+<p><span class="user-mention" data-user-id="294557">@dusko</span> your syllogism doesn't make any sense to me either.  I don't see the relationship of any of the premises to the conclusion.</p>
+
+
+
+<a name="195007975"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/bicompletions/near/195007975" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> dusko <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/topic_bicompletions.html#195007975">(Apr 23 2020 at 00:38)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="276777">Mike Shulman</span> <a href="#narrow/stream/229111-general/topic/How.20long.20have.20you.20worked.20with.20CT.3F/near/195007894" title="#narrow/stream/229111-general/topic/How.20long.20have.20you.20worked.20with.20CT.3F/near/195007894">said</a>:</p>
+<blockquote>
+<p><span class="user-mention silent" data-user-id="294557">dusko</span> your syllogism doesn't make any sense to me either.  I don't see the relationship of any of the premises to the conclusion.</p>
+</blockquote>
+<p>which one?</p>
+
+
+
+<a name="195008390"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/bicompletions/near/195008390" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/topic_bicompletions.html#195008390">(Apr 23 2020 at 00:45)</a>:</h4>
+<p>The conclusion "then we need a way choose between the various completions"</p>
+
+
+
+<a name="195008605"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/bicompletions/near/195008605" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> dusko <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/topic_bicompletions.html#195008605">(Apr 23 2020 at 00:48)</a>:</h4>
+<p>i wouldn't know how to tell a difference between syllogisms and sophisms anyway. </p>
+<p>we are talking math in english. if that could be made completely clear, then writing unpronouncable math should be discouraged. we use metaphors here, and they find their target or not.</p>
+<p>maybe the first metaphor was the best. you begin from the rationals, and you complete them to get the reals. you can do that because there is a unique extension that preserves the meets and the joins, and it is both the minimal completion and the maximal dense lattice. if you the rationals are a category (e.g built from finite sets using) by a calculus of fractions, they you should get glorified reals. you mention isbell. isbell made a lot of heavy weather of the fact that there is no such thing. that is a problem if you want to claim that limits and colimits are glorified infima and suprema.</p>
+
+
+
+<a name="195008817"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/bicompletions/near/195008817" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> dusko <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/topic_bicompletions.html#195008817">(Apr 23 2020 at 00:52)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="276777">Mike Shulman</span> <a href="#narrow/stream/229111-general/topic/How.20long.20have.20you.20worked.20with.20CT.3F/near/195008390" title="#narrow/stream/229111-general/topic/How.20long.20have.20you.20worked.20with.20CT.3F/near/195008390">said</a>:</p>
+<blockquote>
+<p>The conclusion "then we need a way choose between the various completions"</p>
+</blockquote>
+<p>if i have a dataset represented as a category, and i want to extract from it the dominant concepts (cf semantic indexing) by some version of categorical singular value decomposition. then some of the aggregate concepts will be the colimits and the limits in some  completion. it's not very helpful if i there are infinitely many different completions. it is especially unhelpful if at the end of the day i need to make a 0-1 decision based on the extracted concept structure.</p>
+
+
+
+<a name="195008992"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/bicompletions/near/195008992" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> dusko <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/topic_bicompletions.html#195008992">(Apr 23 2020 at 00:55)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="294557">dusko</span> <a href="#narrow/stream/229111-general/topic/How.20long.20have.20you.20worked.20with.20CT.3F/near/195008817" title="#narrow/stream/229111-general/topic/How.20long.20have.20you.20worked.20with.20CT.3F/near/195008817">said</a>:</p>
+<blockquote>
+<p><span class="user-mention silent" data-user-id="276777">Mike Shulman</span> <a href="#narrow/stream/229111-general/topic/How.20long.20have.20you.20worked.20with.20CT.3F/near/195008390" title="#narrow/stream/229111-general/topic/How.20long.20have.20you.20worked.20with.20CT.3F/near/195008390">said</a>:</p>
+<blockquote>
+<p>The conclusion "then we need a way choose between the various completions"</p>
+</blockquote>
+<p>if i have a dataset represented as a category, and i want to extract from it the dominant concepts (cf semantic indexing) by some version of categorical singular value decomposition. then some of the aggregate concepts will be the colimits and the limits in some  completion. it's not very helpful if i there are infinitely many different completions. it is especially unhelpful if at the end of the day i need to make a 0-1 decision based on the extracted concept structure.</p>
+</blockquote>
+<p>i have to run. but my nucleus paper begins with a baby example of that. and it even has an example related to concept analysis. and its' a completely fantastic paper overall :)</p>
+
+
+
+<a name="195012803"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/bicompletions/near/195012803" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/topic_bicompletions.html#195012803">(Apr 23 2020 at 02:21)</a>:</h4>
+<p>I never claimed that limits and colimits are like meets and joins in every respect, and I didn't hear anyone else claim that either.  I'm not entirely sure what "glorified" means in this context, but it is a fact that limits and colimits are <em>generalized</em> meets and joins, and it is likewise a fact that frequently when you generalize something the more general version behaves somewhat differently.  I'm sorry that limits and colimits don't behave the way you would like them to behave, but it's not my fault.  (-:</p>
+
+
+
+<a name="195019924"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/bicompletions/near/195019924" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Henry Story <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/topic_bicompletions.html#195019924">(Apr 23 2020 at 05:28)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="294557">dusko</span> <a href="#narrow/stream/229111-general/topic/How.20long.20have.20you.20worked.20with.20CT.3F/near/195004418" title="#narrow/stream/229111-general/topic/How.20long.20have.20you.20worked.20with.20CT.3F/near/195004418">said</a>:</p>
+<blockquote>
+<p>... and this is not just a "moral" principle of universal properties. </p>
+<p>eg if it turns out that, besides people and bots, Facebook and Twitter are also inhabited by aliens, and we need to distinguish the 3 kinds of users by indexing, then whether i will aggregate the indices by embedding them into presheaves and then reflecting, or into postsheaves and then coreflecting , ie the different ANDs and ORs, may determine whether i will confuse the aliens for humans, or for bots.</p>
+</blockquote>
+<p>On the topic of Aliens I wrote a paper <a href="https://medium.com/@bblfish/epistemology-in-the-cloud-472fad4c8282" title="https://medium.com/@bblfish/epistemology-in-the-cloud-472fad4c8282">Epistemology in the Cloud - on Fake News and Digital Sovereignty</a> 3 years ago for The Web Conf, which develops a thought experiment involving Aliens from Robert Nozick's "Philosophical Explanations" and applies it to the Web. I later came across your paper  <a href="https://link.springer.com/chapter/10.1007/978-3-642-32784-1_11" title="https://link.springer.com/chapter/10.1007/978-3-642-32784-1_11">Tracing the Man in the Middle in Monoidal Categories</a> which says very similar things, but at the time I did not know about monoidal categories, so I could not follow the mathematics. I need to get back to it :-)</p>
+
+
+
+<a name="195020062"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/bicompletions/near/195020062" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Henry Story <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/topic_bicompletions.html#195020062">(Apr 23 2020 at 05:32)</a>:</h4>
+<p>I wonder if your point about confusing AND and OR is related to the discussion here recently around two interpretations of Topoi around <a href="https://link.springer.com/chapter/10.1007/978-81-322-2719-9_18" title="https://link.springer.com/chapter/10.1007/978-81-322-2719-9_18">The Evil Twin: The Basics of Complement-Toposes</a>".</p>
+
+
+
+<a name="195091202"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/bicompletions/near/195091202" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> dusko <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/topic_bicompletions.html#195091202">(Apr 23 2020 at 17:05)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="276777">Mike Shulman</span> <a href="#narrow/stream/229111-general/topic/How.20long.20have.20you.20worked.20with.20CT.3F/near/195012803" title="#narrow/stream/229111-general/topic/How.20long.20have.20you.20worked.20with.20CT.3F/near/195012803">said</a>:</p>
+<blockquote>
+<p>I never claimed that limits and colimits are like meets and joins in every respect, and I didn't hear anyone else claim that either.  I'm not entirely sure what "glorified" means in this context, but it is a fact that limits and colimits are <em>generalized</em> meets and joins, and it is likewise a fact that frequently when you generalize something the more general version behaves somewhat differently.  I'm sorry that limits and colimits don't behave the way you would like them to behave, but it's not my fault.  (-:</p>
+</blockquote>
+<p>"glorified" is the word that you will find in lawvere's papers to denote what is nowadays called "categorified".</p>
+<p>i never claimed that anyone claimed that any two sets of things are like each other in every respect. that would make them equal. </p>
+<p>i am not sure what "a fact" means in mathematics. i am pointing to a contexts where a particular generalization does not work. that context is not a matter of my liking, but it is a context of logic. it would be much more productive if we didn't take or make such conversations personally, but as research tasks. how could the concepts of limit and colimit be refined to become usable in this logical role? making a step in such research would make us advance towards even more fundamental categorical concepts.</p>
+<p>admitting the shortcomings of some concepts does not subtract from them, but opens a path to add something.</p>
+
+
+
+<a name="195092100"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/bicompletions/near/195092100" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> dusko <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/topic_bicompletions.html#195092100">(Apr 23 2020 at 17:12)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="281126">Henry Story</span> <a href="#narrow/stream/229111-general/topic/How.20long.20have.20you.20worked.20with.20CT.3F/near/195019924" title="#narrow/stream/229111-general/topic/How.20long.20have.20you.20worked.20with.20CT.3F/near/195019924">said</a>:</p>
+<blockquote>
+<p><span class="user-mention silent" data-user-id="294557">dusko</span> <a href="#narrow/stream/229111-general/topic/How.20long.20have.20you.20worked.20with.20CT.3F/near/195004418" title="#narrow/stream/229111-general/topic/How.20long.20have.20you.20worked.20with.20CT.3F/near/195004418">said</a>:</p>
+<blockquote>
+<p>... and this is not just a "moral" principle of universal properties. </p>
+<p>eg if it turns out that, besides people and bots, Facebook and Twitter are also inhabited by aliens, and we need to distinguish the 3 kinds of users by indexing, then whether i will aggregate the indices by embedding them into presheaves and then reflecting, or into postsheaves and then coreflecting , ie the different ANDs and ORs, may determine whether i will confuse the aliens for humans, or for bots.</p>
+</blockquote>
+<p>On the topic of Aliens I wrote a paper <a href="https://medium.com/@bblfish/epistemology-in-the-cloud-472fad4c8282" title="https://medium.com/@bblfish/epistemology-in-the-cloud-472fad4c8282">Epistemology in the Cloud - on Fake News and Digital Sovereignty</a> 3 years ago for The Web Conf, which develops a thought experiment involving Aliens from Robert Nozick's "Philosophical Explanations" and applies it to the Web. I later came across your paper  <a href="https://link.springer.com/chapter/10.1007/978-3-642-32784-1_11" title="https://link.springer.com/chapter/10.1007/978-3-642-32784-1_11">Tracing the Man in the Middle in Monoidal Categories</a> which says very similar things, but at the time I did not know about monoidal categories, so I could not follow the mathematics. I need to get back to it :-)</p>
+</blockquote>
+<p>thanks for the pointers! interesting readings to be added to my stack.</p>
+
+
+
+<a name="195092656"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/bicompletions/near/195092656" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> sarahzrf <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/topic_bicompletions.html#195092656">(Apr 23 2020 at 17:17)</a>:</h4>
+<p>it is still completely unclear to me what it is that you think doesn't work</p>
+
+
+
+<a name="195092671"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/bicompletions/near/195092671" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> sarahzrf <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/topic_bicompletions.html#195092671">(Apr 23 2020 at 17:17)</a>:</h4>
+<p>none of your explanations make any sense to me</p>
+
+
+
+<a name="195092730"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/bicompletions/near/195092730" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> sarahzrf <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/topic_bicompletions.html#195092730">(Apr 23 2020 at 17:18)</a>:</h4>
+<p>i'm trying to read them, but they just don't mean anything to me</p>
+
+
+
+<a name="195094391"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/bicompletions/near/195094391" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> sarahzrf <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/topic_bicompletions.html#195094391">(Apr 23 2020 at 17:30)</a>:</h4>
+<p>oh, wait, are you just saying that you're working with objects where you want to do an operation over a big diagram, and it seems like the operation in question should be a limit, but there is not actually a limit in the category? and you're claiming that there's not a canonical way of bicompleting a category and therefore you don't have a model for "treating it as a formal limit"?</p>
+
+
+
+<a name="195307700"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/bicompletions/near/195307700" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> dusko <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/topic_bicompletions.html#195307700">(Apr 25 2020 at 23:31)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="276072">sarahzrf</span> <a href="#narrow/stream/229111-general/topic/bicompletions/near/195094391" title="#narrow/stream/229111-general/topic/bicompletions/near/195094391">said</a>:</p>
+<blockquote>
+<p>oh, wait, are you just saying that you're working with objects where you want to do an operation over a big diagram, and it seems like the operation in question should be a limit, but there is not actually a limit in the category? and you're claiming that there's not a canonical way of bicompleting a category and therefore you don't have a model for "treating it as a formal limit"?</p>
+</blockquote>
+<p>i have repeated this twice, but maybe you did not take it as a part of the explanations that you keep reading and they don't make sense. or i did not say it clearly enough.</p>
+<p>the real numbers are constructed as a completion of a particular poset under infima and suprema (meets and joins). in order to preserve the information contained in the poset, the completion should preserve the existing infima and suprema. in order to avoid adding any information outside of the poset, the extension of the exiging infima and suprema should be unique. scientists' capability to express the results of their measurements and calculations with arbitrary precision depends on the fact that the real numbers satisfy these two requirements, as an extension of the rational numbers. ((the outputs of any real gauges are always rational numbers, because they are read by counting. but you can repeat a measurement unbounded number of times, and get sequence of rational numbers, and estimate where it converges. so you really need the real numbers which satisfy the above properties. if they do not satsify the first one, then approximating from above, and approximating from below may lead to different results. if they do not satisfy the second one, then the choices of the apparatus, or of one of the different completions that may exist, may lead to different results. to support testable theories of nature, mathematics must be based on completions that satisfy the above requirements.))</p>
+<p>now suppose that your measurements do not just output some counts, but also some relationships. e.g. you are tracking sarah's and dusko's behaviors in some chat vault that you set up for them, and you do not just count how many times do they perform this or that action, but also how they map the counts of the measurements that you see them make into the behaviors towards one another, and towards others. your observations are now not just partially ordered, but there are some morphisms between them. so now the information context from which you start is not a poset, but a category. </p>
+<p>if you use limits and colimits as the generalization of infima and suprema, then you should be able to embed this category into a complete and cocomplete category, so that any diagram of observations can be logically aggregated. any limits and colimits that existed in the old category must be preserved. any new limits and colimits must be uniquely determined by the data in your original category. otherwise the observer will not be extracting a model of sarah's and dusko's behaviors, but an autoportrait of their own choices.</p>
+<p>if you stick with counting, but take the integers not as an order but as the category of finite sets (albeit ordered, if you prefer the simplicial approach) -- then you can construct the rationals as a category as well try to complete it --- under limits and colimits, if you take them as the logical tools for your aggregations. and then you discover that there is no way to satisfy both of the above requirements. </p>
+<p>that was the content of an old controversy between lambek and isbell. it was taken as the information about the properties of limits and colimits. but besides the properties of some given operations, there are also some given tasks, eg required by the logic of science. the point here is that the two don't match.</p>
+<p>it is of course tempting to declare victory, and to claim that limits and colimits are universal categorical operations, and that this or that medicine cures this or that disease (or even all of them). but it is more fun to recognize what needs to be done, and to try to find a way to do it.</p>
+
+
+
+<a name="195307973"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/bicompletions/near/195307973" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> sarahzrf <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/topic_bicompletions.html#195307973">(Apr 25 2020 at 23:38)</a>:</h4>
+<p>yes, i eventually managed to work out a lot of that from what youd previously written, i think the main problem was that i kept getting hung up on other parts (which <em>still</em> dont rly mean much to me)</p>
+
+
+
+<a name="195308039"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/bicompletions/near/195308039" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> sarahzrf <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/topic_bicompletions.html#195308039">(Apr 25 2020 at 23:40)</a>:</h4>
+<p>i don't know that i buy that you need real numbers to store measurements, for the record :o</p>
+
+
+
+<a name="195308045"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/bicompletions/near/195308045" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> sarahzrf <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/topic_bicompletions.html#195308045">(Apr 25 2020 at 23:41)</a>:</h4>
+<p>you can take an unbounded number of measurements, but at any given point in time you have only made finitely many</p>
+
+
+
+<a name="195308049"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/bicompletions/near/195308049" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> sarahzrf <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/topic_bicompletions.html#195308049">(Apr 25 2020 at 23:41)</a>:</h4>
+<p>but that's beside the point, i realize :)</p>
+
+
+
+<a name="195308097"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/bicompletions/near/195308097" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> sarahzrf <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/topic_bicompletions.html#195308097">(Apr 25 2020 at 23:42)</a>:</h4>
+<p>anyway, it sounds like you have a legitimate argument that there is a problem that needs solving, but i'm not convinced that it constitutes an argument against limits and colimits being ubiquitous &amp; general concepts</p>
+
+
+
+<a name="195308123"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/bicompletions/near/195308123" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> sarahzrf <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/topic_bicompletions.html#195308123">(Apr 25 2020 at 23:43)</a>:</h4>
+<p>because it is almost indisputable that they <em>are</em>, when you take a look at how many examples of them appear "in nature"</p>
+
+
+
+<a name="195308293"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/bicompletions/near/195308293" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> dusko <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/topic_bicompletions.html#195308293">(Apr 25 2020 at 23:49)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="276072">sarahzrf</span> <a href="#narrow/stream/229111-general/topic/bicompletions/near/195308123" title="#narrow/stream/229111-general/topic/bicompletions/near/195308123">said</a>:</p>
+<blockquote>
+<p>because it is almost indisputable that they <em>are</em>, when you take a look at how many examples of them appear "in nature"</p>
+</blockquote>
+<p><span aria-label="joy" class="emoji emoji-1f602" role="img" title="joy">:joy:</span> back when i was teaching CAL II, there was a student who claimed that she really resented the implicite function thm, and moreover riemann integral, for personal reason. now you take me as some sort of a personal enemy of limits and colimits.  i am almost worrying that limits and colimits might retailate agains me on twitter. i have totally nothing against limits and colimits.</p>
+
+
+
+<a name="195308357"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/bicompletions/near/195308357" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> dusko <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/topic_bicompletions.html#195308357">(Apr 25 2020 at 23:51)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="294557">dusko</span> <a href="#narrow/stream/229111-general/topic/bicompletions/near/195308293" title="#narrow/stream/229111-general/topic/bicompletions/near/195308293">said</a>:</p>
+<blockquote>
+<p><span class="user-mention silent" data-user-id="276072">sarahzrf</span> <a href="#narrow/stream/229111-general/topic/bicompletions/near/195308123" title="#narrow/stream/229111-general/topic/bicompletions/near/195308123">said</a>:</p>
+<blockquote>
+<p>because it is almost indisputable that they <em>are</em>, when you take a look at how many examples of them appear "in nature"</p>
+</blockquote>
+<p><span aria-label="joy" class="emoji emoji-1f602" role="img" title="joy">:joy:</span> back when i was teaching CAL II, there was a student who claimed that she really resented the implicite function thm, and moreover riemann integral, for personal reason. now you take me as some sort of a personal enemy of limits and colimits.  i am almost worrying that limits and colimits might retailate agains me on twitter. i have totally nothing against limits and colimits.</p>
+</blockquote>
+<p>they just objectively suck <span aria-label="octopus" class="emoji emoji-1f419" role="img" title="octopus">:octopus:</span></p>
+
+
+
+<a name="195308492"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/bicompletions/near/195308492" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/topic_bicompletions.html#195308492">(Apr 25 2020 at 23:55)</a>:</h4>
+<p><span class="user-mention" data-user-id="294557">@dusko</span> , your description that you've repeated several times is too vague for me to understand your point.  But overall, I would expect that the parameters of the problem and the information you want to store would dictate what category you should be working in to capture the information you want.  For instance, some people use categories to represent databases, starting with a small diagram category (e.g. an algebraic theory) representing the schema.  The resulting category whose objects are instances of the schema is, in the literal sense, a "choice" of how to extend the schema to a bicomplete category, but it's the <em>correct</em> choice because it captures the desired information: a model of the algebraic theory <em>is</em> what we intend to mean by an instance of the schema.  I would expect that something similar is true in your case: among all the bicompletions, one of them is the correct choice for your purpose.</p>
+
+
+
+<a name="195308567"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/bicompletions/near/195308567" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> sarahzrf <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/topic_bicompletions.html#195308567">(Apr 25 2020 at 23:58)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="294557">dusko</span> <a href="#narrow/stream/229111-general/topic/bicompletions/near/195308293" title="#narrow/stream/229111-general/topic/bicompletions/near/195308293">said</a>:</p>
+<blockquote>
+<p>now you take me as some sort of a personal enemy of limits and colimits.</p>
+</blockquote>
+<p>i'm not sure where you're getting this? i just take you as someone who thinks that limits and colimits are less useful of a concept than i believe they are</p>
+
+
+
+<a name="195311683"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/bicompletions/near/195311683" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/topic_bicompletions.html#195311683">(Apr 26 2020 at 01:42)</a>:</h4>
+<p>I think he's engaging in his usual sense of humor here: I detect a bit of exaggeration and a twinkle in his eye... it might help to meet him.</p>
+
+
+
+<a name="195311693"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/bicompletions/near/195311693" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> sarahzrf <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/topic_bicompletions.html#195311693">(Apr 26 2020 at 01:43)</a>:</h4>
+<p>hmm, i'd rather limit him than meet him <span aria-label="devil" class="emoji emoji-1f47f" role="img" title="devil">:devil:</span></p>
+
+
+
+<a name="195311716"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/bicompletions/near/195311716" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> sarahzrf <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/topic_bicompletions.html#195311716">(Apr 26 2020 at 01:43)</a>:</h4>
+<p>i kid, i kid</p>
+
+
+
+<a name="195311757"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/bicompletions/near/195311757" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/topic_bicompletions.html#195311757">(Apr 26 2020 at 01:44)</a>:</h4>
+<p>You should colimit him - set him free!</p>
+
+
+
+<a name="195325148"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/bicompletions/near/195325148" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Morgan Rogers (he/him) <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/topic_bicompletions.html#195325148">(Apr 26 2020 at 08:59)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="294557">dusko</span> <a href="#narrow/stream/229111-general/topic/bicompletions/near/195307700" title="#narrow/stream/229111-general/topic/bicompletions/near/195307700">said</a>:</p>
+<blockquote>
+<p>the real numbers are constructed as a completion of a particular poset under infima and suprema (meets and joins).</p>
+</blockquote>
+<p>1) the real numbers have no maximum or minimum elements <span aria-label="stuck out tongue" class="emoji emoji-1f61d" role="img" title="stuck out tongue">:stuck_out_tongue:</span> <br>
+2) are the real numbers the only completion of the rationals with respect to suprema of bounded-above sequences? Doesn't one need to make extra choices, like demanding that the result be linearly ordered so that the <a href="https://ncatlab.org/nlab/show/Dedekind+completion" title="https://ncatlab.org/nlab/show/Dedekind+completion">Dedekind completion</a> is universal? I don't know for sure but I would have thought that if the reals were just the completion of the rationals in this way then that would be one of the standard constructions of the reals, rather than having to do all the hard work with Dedekind cuts or Cauchy sequences?</p>
+<p>If you makes enough choices about what properties you want your completion (<a href="#narrow/stream/229199-learning.3A-basic.20questions/topic/Categorifying.20algebraic.20structures/near/194913429" title="#narrow/stream/229199-learning.3A-basic.20questions/topic/Categorifying.20algebraic.20structures/near/194913429">or generalisation, or categorification...</a>) operation to have, you will eventually end up with a canonical choice, or if you're too fussy no choice at all (in the sense that no construction can meet all of your specifications). I'm more or less just repeating was Mike was saying here, though.</p>
+
+
+
+<a name="195493869"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/bicompletions/near/195493869" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Soichiro Fujii <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/topic_bicompletions.html#195493869">(Apr 28 2020 at 01:30)</a>:</h4>
+<p>Hi <span class="user-mention" data-user-id="277473">@Morgan Rogers</span>,</p>
+<p>I just wanted to mention that it is possible to characterize the poset <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">[</mo><mo>−</mo><mi mathvariant="normal">∞</mi><mo separator="true">,</mo><mi mathvariant="normal">∞</mi><mo stretchy="false">]</mo></mrow><annotation encoding="application/x-tex">[-\infty,\infty]</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">[</span><span class="mord">−</span><span class="mord">∞</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord">∞</span><span class="mclose">]</span></span></span></span> of <em>extended</em> real numbers (i.e., the poset <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="double-struck">R</mi></mrow><annotation encoding="application/x-tex">\mathbb{R}</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.68889em;vertical-align:0em;"></span><span class="mord"><span class="mord mathbb">R</span></span></span></span></span> of real numbers augmented with the least element <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>−</mo><mi mathvariant="normal">∞</mi></mrow><annotation encoding="application/x-tex">-\infty</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.66666em;vertical-align:-0.08333em;"></span><span class="mord">−</span><span class="mord">∞</span></span></span></span> and greatest element <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">∞</mi></mrow><annotation encoding="application/x-tex">\infty</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord">∞</span></span></span></span>), as the unique completion of the poset <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="double-struck">Q</mi></mrow><annotation encoding="application/x-tex">\mathbb{Q}</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.85556em;vertical-align:-0.16667em;"></span><span class="mord"><span class="mord mathbb">Q</span></span></span></span></span> of rational numbers with a certain property. To state the property, it is convenient to see posets as <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn mathvariant="bold">2</mn></mrow><annotation encoding="application/x-tex">\mathbf{2}</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord"><span class="mord mathbf">2</span></span></span></span></span>-enriched categories, where <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn mathvariant="bold">2</mn></mrow><annotation encoding="application/x-tex">\mathbf{2}</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord"><span class="mord mathbf">2</span></span></span></span></span> is the two-element quantale. Then the inclusion <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="double-struck">Q</mi><mo>⟶</mo><mo stretchy="false">[</mo><mo>−</mo><mi mathvariant="normal">∞</mi><mo separator="true">,</mo><mi mathvariant="normal">∞</mi><mo stretchy="false">]</mo></mrow><annotation encoding="application/x-tex">\mathbb{Q}\longrightarrow [-\infty,\infty]</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.85556em;vertical-align:-0.16667em;"></span><span class="mord"><span class="mord mathbb">Q</span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">⟶</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">[</span><span class="mord">−</span><span class="mord">∞</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord">∞</span><span class="mclose">]</span></span></span></span> is the unique <a href="https://ncatlab.org/nlab/show/dense+functor" title="https://ncatlab.org/nlab/show/dense+functor">dense</a> and <a href="https://ncatlab.org/nlab/show/codense+functor" title="https://ncatlab.org/nlab/show/codense+functor">codense</a> fully faithful <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn mathvariant="bold">2</mn></mrow><annotation encoding="application/x-tex">\mathbf{2}</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord"><span class="mord mathbf">2</span></span></span></span></span>-functor into a (skeletal and) complete <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn mathvariant="bold">2</mn></mrow><annotation encoding="application/x-tex">\mathbf{2}</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord"><span class="mord mathbf">2</span></span></span></span></span>-category (i.e., a complete lattice). </p>
+<p>A few remarks:</p>
+<ul>
+<li>The above characterization holds for arbitrary <a href="https://ncatlab.org/nlab/show/MacNeille+completion" title="https://ncatlab.org/nlab/show/MacNeille+completion">MacNeille completion</a> of posets. Even more generally, for any quantale <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="script">Q</mi></mrow><annotation encoding="application/x-tex">\mathcal{Q}</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.78055em;vertical-align:-0.09722em;"></span><span class="mord"><span class="mord mathcal">Q</span></span></span></span></span>, there is a generalization of the MacNeille completion for <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="script">Q</mi></mrow><annotation encoding="application/x-tex">\mathcal{Q}</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.78055em;vertical-align:-0.09722em;"></span><span class="mord"><span class="mord mathcal">Q</span></span></span></span></span>-categories (which I call the <em>Isbell completion</em>), constructed as the fixed points of the <a href="https://ncatlab.org/nlab/show/Isbell+duality" title="https://ncatlab.org/nlab/show/Isbell+duality">Isbell adjunction</a> between the <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="script">Q</mi></mrow><annotation encoding="application/x-tex">\mathcal{Q}</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.78055em;vertical-align:-0.09722em;"></span><span class="mord"><span class="mord mathcal">Q</span></span></span></span></span>-categories of presheaves and copresheaves. (I wrote about it in the last section of this <a href="https://arxiv.org/abs/1909.07620" title="https://arxiv.org/abs/1909.07620">paper</a>. Let me remark that Theorem 7.2 there turned out to be already shown in much greater generality by <a href="http://sweet.ua.pt/dirk/artigos/2011/cocomplete.pdf" title="http://sweet.ua.pt/dirk/artigos/2011/cocomplete.pdf">Hofmann</a> and <a href="http://www-lmpa.univ-littoral.fr/~stubbe/PDF/CocompleteIsInjective.pdf" title="http://www-lmpa.univ-littoral.fr/~stubbe/PDF/CocompleteIsInjective.pdf">Stubbe</a>, though their proofs do not involve the above characterization of the Isbell completion.)</li>
+<li>Dense and codense fully faithful <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn mathvariant="bold">2</mn></mrow><annotation encoding="application/x-tex">\mathbf{2}</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord"><span class="mord mathbf">2</span></span></span></span></span>- (or even <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="script">Q</mi></mrow><annotation encoding="application/x-tex">\mathcal{Q}</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.78055em;vertical-align:-0.09722em;"></span><span class="mord"><span class="mord mathcal">Q</span></span></span></span></span>-) functors can be abstractly characterized as <em>essential embeddings</em> with respect to fully faithful <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn mathvariant="bold">2</mn></mrow><annotation encoding="application/x-tex">\mathbf{2}</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord"><span class="mord mathbf">2</span></span></span></span></span>- (or <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="script">Q</mi></mrow><annotation encoding="application/x-tex">\mathcal{Q}</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.78055em;vertical-align:-0.09722em;"></span><span class="mord"><span class="mord mathcal">Q</span></span></span></span></span>-) functors. What I mean is: whenever we have a category <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="script">X</mi></mrow><annotation encoding="application/x-tex">\mathcal{X}</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord"><span class="mord mathcal" style="margin-right:0.14643em;">X</span></span></span></span></span> (e.g., <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="script">Q</mi></mrow><annotation encoding="application/x-tex">\mathcal{Q}</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.78055em;vertical-align:-0.09722em;"></span><span class="mord"><span class="mord mathcal">Q</span></span></span></span></span>-<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="bold">C</mi><mi mathvariant="bold">a</mi><mi mathvariant="bold">t</mi></mrow><annotation encoding="application/x-tex">\mathbf{Cat}</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.68611em;vertical-align:0em;"></span><span class="mord"><span class="mord mathbf">C</span><span class="mord mathbf">a</span><span class="mord mathbf">t</span></span></span></span></span>) and a class <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="script">M</mi></mrow><annotation encoding="application/x-tex">\mathcal{M}</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord"><span class="mord mathcal">M</span></span></span></span></span> of morphisms in it (e.g., the class of all fully faithful <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="script">Q</mi></mrow><annotation encoding="application/x-tex">\mathcal{Q}</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.78055em;vertical-align:-0.09722em;"></span><span class="mord"><span class="mord mathcal">Q</span></span></span></span></span>-functors), we can define <em>embeddings</em> to mean elements of <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="script">M</mi></mrow><annotation encoding="application/x-tex">\mathcal{M}</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord"><span class="mord mathcal">M</span></span></span></span></span>, and then <em>essential embeddings</em> to mean embeddings <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi></mrow><annotation encoding="application/x-tex">f</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span class="mord mathdefault" style="margin-right:0.10764em;">f</span></span></span></span> such that for every (composable) <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>g</mi></mrow><annotation encoding="application/x-tex">g</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.625em;vertical-align:-0.19444em;"></span><span class="mord mathdefault" style="margin-right:0.03588em;">g</span></span></span></span>, if <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>g</mi><mo>∘</mo><mi>f</mi></mrow><annotation encoding="application/x-tex">g\circ f</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.63889em;vertical-align:-0.19444em;"></span><span class="mord mathdefault" style="margin-right:0.03588em;">g</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">∘</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span class="mord mathdefault" style="margin-right:0.10764em;">f</span></span></span></span> is an embedding then so is <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>g</mi></mrow><annotation encoding="application/x-tex">g</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.625em;vertical-align:-0.19444em;"></span><span class="mord mathdefault" style="margin-right:0.03588em;">g</span></span></span></span>. The dense and codense fully faithful <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="script">Q</mi></mrow><annotation encoding="application/x-tex">\mathcal{Q}</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.78055em;vertical-align:-0.09722em;"></span><span class="mord"><span class="mord mathcal">Q</span></span></span></span></span>-functors arise as the essential embeddings with respect to <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="script">X</mi><mo>=</mo><mi mathvariant="script">Q</mi></mrow><annotation encoding="application/x-tex">\mathcal{X}=\mathcal{Q}</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord"><span class="mord mathcal" style="margin-right:0.14643em;">X</span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.78055em;vertical-align:-0.09722em;"></span><span class="mord"><span class="mord mathcal">Q</span></span></span></span></span>-<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="bold">C</mi><mi mathvariant="bold">a</mi><mi mathvariant="bold">t</mi></mrow><annotation encoding="application/x-tex">\mathbf{Cat}</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.68611em;vertical-align:0em;"></span><span class="mord"><span class="mord mathbf">C</span><span class="mord mathbf">a</span><span class="mord mathbf">t</span></span></span></span></span> and <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="script">M</mi></mrow><annotation encoding="application/x-tex">\mathcal{M}</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord"><span class="mord mathcal">M</span></span></span></span></span>={fully faithful <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="script">Q</mi></mrow><annotation encoding="application/x-tex">\mathcal{Q}</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.78055em;vertical-align:-0.09722em;"></span><span class="mord"><span class="mord mathcal">Q</span></span></span></span></span>-functors}. </li>
+<li>More interestingly, given the above setting of a category <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="script">X</mi></mrow><annotation encoding="application/x-tex">\mathcal{X}</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord"><span class="mord mathcal" style="margin-right:0.14643em;">X</span></span></span></span></span> with a distinguished class <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="script">M</mi></mrow><annotation encoding="application/x-tex">\mathcal{M}</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord"><span class="mord mathcal">M</span></span></span></span></span> of morphisms, one can define <a href="https://ncatlab.org/nlab/show/injective+object" title="https://ncatlab.org/nlab/show/injective+object">injective objects</a> in <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="script">X</mi></mrow><annotation encoding="application/x-tex">\mathcal{X}</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord"><span class="mord mathcal" style="margin-right:0.14643em;">X</span></span></span></span></span> with respect to <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="script">M</mi></mrow><annotation encoding="application/x-tex">\mathcal{M}</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord"><span class="mord mathcal">M</span></span></span></span></span>. For any object <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>C</mi></mrow><annotation encoding="application/x-tex">C</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.07153em;">C</span></span></span></span> of <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="script">X</mi></mrow><annotation encoding="application/x-tex">\mathcal{X}</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord"><span class="mord mathcal" style="margin-right:0.14643em;">X</span></span></span></span></span>, a pair <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mi>D</mi><mo separator="true">,</mo><mi>f</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(D,f)</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord mathdefault" style="margin-right:0.02778em;">D</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathdefault" style="margin-right:0.10764em;">f</span><span class="mclose">)</span></span></span></span> of an injective object <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>D</mi></mrow><annotation encoding="application/x-tex">D</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.02778em;">D</span></span></span></span> and an essential embedding <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mspace></mspace><mspace width="0.1111111111111111em"></mspace><mo lspace="0em" rspace="0.17em"></mo><mtext> ⁣</mtext><mo lspace="0em" rspace="0em">:</mo><mspace width="0.3333333333333333em"></mspace><mi>C</mi><mo>⟶</mo><mi>D</mi></mrow><annotation encoding="application/x-tex">f\colon C\longrightarrow D</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span class="mord mathdefault" style="margin-right:0.10764em;">f</span><span class="mspace nobreak"></span><span class="mspace" style="margin-right:0.1111111111111111em;"></span><span class="mpunct"></span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mspace" style="margin-right:-0.16666666666666666em;"></span><span class="mord"><span class="mrel">:</span></span><span class="mspace" style="margin-right:0.3333333333333333em;"></span><span class="mord mathdefault" style="margin-right:0.07153em;">C</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">⟶</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.02778em;">D</span></span></span></span> is called an <em>injective envelope</em> (or <em>injective hull</em>) of <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>C</mi></mrow><annotation encoding="application/x-tex">C</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.07153em;">C</span></span></span></span>. A surprising fact (which I learned from this <a href="https://link.springer.com/article/10.1007%2Fs000120200006" title="https://link.springer.com/article/10.1007%2Fs000120200006">paper</a>) is that injective envelopes of an object is unique up to isomorphism; remember that we impose <em>no</em> conditions on <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="script">X</mi></mrow><annotation encoding="application/x-tex">\mathcal{X}</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord"><span class="mord mathcal" style="margin-right:0.14643em;">X</span></span></span></span></span> and <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="script">M</mi></mrow><annotation encoding="application/x-tex">\mathcal{M}</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord"><span class="mord mathcal">M</span></span></span></span></span>! Injective objects with respect to <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="script">X</mi><mo>=</mo><mi mathvariant="script">Q</mi></mrow><annotation encoding="application/x-tex">\mathcal{X}=\mathcal{Q}</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord"><span class="mord mathcal" style="margin-right:0.14643em;">X</span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.78055em;vertical-align:-0.09722em;"></span><span class="mord"><span class="mord mathcal">Q</span></span></span></span></span>-<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="bold">C</mi><mi mathvariant="bold">a</mi><mi mathvariant="bold">t</mi></mrow><annotation encoding="application/x-tex">\mathbf{Cat}</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.68611em;vertical-align:0em;"></span><span class="mord"><span class="mord mathbf">C</span><span class="mord mathbf">a</span><span class="mord mathbf">t</span></span></span></span></span> and <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="script">M</mi></mrow><annotation encoding="application/x-tex">\mathcal{M}</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord"><span class="mord mathcal">M</span></span></span></span></span>={fully faithful <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="script">Q</mi></mrow><annotation encoding="application/x-tex">\mathcal{Q}</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.78055em;vertical-align:-0.09722em;"></span><span class="mord"><span class="mord mathcal">Q</span></span></span></span></span>-functors} are precisely the (skeletal and) complete <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="script">Q</mi></mrow><annotation encoding="application/x-tex">\mathcal{Q}</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.78055em;vertical-align:-0.09722em;"></span><span class="mord"><span class="mord mathcal">Q</span></span></span></span></span>-categories, so the MacNeille completion and more generally the Isbell completion is the injective envelope.</li>
+<li>Finally, the nature of the above “uniqueness” of injective envelopes is quite different from usual uniqueness-up-to-iso of categorical notions determined by universality. It might be phrased as uniqueness up to <em>non-canonical</em> isomorphism; see this <a href="https://link.springer.com/article/10.1007%2Fs000120200006" title="https://link.springer.com/article/10.1007%2Fs000120200006">paper</a> for details.</li>
+</ul>
+
+
+
+<a name="195552201"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/bicompletions/near/195552201" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> dusko <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/topic_bicompletions.html#195552201">(Apr 28 2020 at 11:56)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="277473">Morgan Rogers</span> <a href="#narrow/stream/229111-general/topic/bicompletions/near/195325148" title="#narrow/stream/229111-general/topic/bicompletions/near/195325148">said</a>:</p>
+<blockquote>
+<p><span class="user-mention silent" data-user-id="294557">dusko</span> <a href="#narrow/stream/229111-general/topic/bicompletions/near/195307700" title="#narrow/stream/229111-general/topic/bicompletions/near/195307700">said</a>:</p>
+<blockquote>
+<p>the real numbers are constructed as a completion of a particular poset under infima and suprema (meets and joins).</p>
+</blockquote>
+<p>1) the real numbers have no maximum or minimum elements <span aria-label="stuck out tongue" class="emoji emoji-1f61d" role="img" title="stuck out tongue">:stuck_out_tongue:</span> <br>
+2) are the real numbers the only completion of the rationals with respect to suprema of bounded-above sequences? Doesn't one need to make extra choices, like demanding that the result be linearly ordered so that the <a href="https://ncatlab.org/nlab/show/Dedekind+completion" title="https://ncatlab.org/nlab/show/Dedekind+completion">Dedekind completion</a> is universal? I don't know for sure but I would have thought that if the reals were just the completion of the rationals in this way then that would be one of the standard constructions of the reals, rather than having to do all the hard work with Dedekind cuts or Cauchy sequences?</p>
+<p>If you makes enough choices about what properties you want your completion (<a href="#narrow/stream/229199-learning.3A-basic.20questions/topic/Categorifying.20algebraic.20structures/near/194913429" title="#narrow/stream/229199-learning.3A-basic.20questions/topic/Categorifying.20algebraic.20structures/near/194913429">or generalisation, or categorification...</a>) operation to have, you will eventually end up with a canonical choice, or if you're too fussy no choice at all (in the sense that no construction can meet all of your specifications). I'm more or less just repeating was Mike was saying here, though.</p>
+</blockquote>
+<p>you seem to be asking me to tell you what is in Dedekind's Zahlenschrift. it is a very easy and elegant read, and an english translation surely exists. if you construct real numbers as a complertion, then they obviously have to have a maximum and a minimum element. in dedekind's time, they used to typeset the maximum element by putting the number 8 on its side... the whole story lifts to arbitrary posets, in a little paper by MacNeille, and there is a think a very short and simple section in johnstone's spaces book. a thorough analysis of the consequences and uses of such tight bicompletions is in a paper by Banaschewski and someone else.</p>
+
+
+
+<a name="195554956"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/bicompletions/near/195554956" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> dusko <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/topic_bicompletions.html#195554956">(Apr 28 2020 at 12:22)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="276777">Mike Shulman</span> <a href="#narrow/stream/229111-general/topic/bicompletions/near/195308492" title="#narrow/stream/229111-general/topic/bicompletions/near/195308492">said</a>:</p>
+<blockquote>
+<p><span class="user-mention silent" data-user-id="294557">dusko</span> , your description that you've repeated several times is too vague for me to understand your point.  But overall, I would expect that the parameters of the problem and the information you want to store would dictate what category you should be working in to capture the information you want.  For instance, some people use categories to represent databases, starting with a small diagram category (e.g. an algebraic theory) representing the schema.  The resulting category whose objects are instances of the schema is, in the literal sense, a "choice" of how to extend the schema to a bicomplete category, but it's the <em>correct</em> choice because it captures the desired information: a model of the algebraic theory <em>is</em> what we intend to mean by an instance of the schema.  I would expect that something similar is true in your case: among all the bicompletions, one of them is the correct choice for your purpose.</p>
+</blockquote>
+<p>if we go down this road, we will start discussing whether there is a place for some sort of antropic principle in mathematics: should the computational outputs of a mathematical theory depend on mathematicians' free will? if the answer is no, i win. if the answer is yes, then i yield my free choice of the answer to john baez.</p>
+<p>sorry, john already explained that i sometimes have trouble taking things seriously. but this one really can't be serious. categorical structures are not things which can be attacked or defended. they don't have any moral content. they do things or they don't do things. limits and colimits play their role where they play their role, but they are not the answer the all questions. maybe my examples are not good, but there are surely other. such is the nature of science. so when we notice a question that they don't answer, then we shouldn't attack the question, but look for the answer. for instance, what is the categorifiction of the real numbers? it would be nice to get a category where the multiplication is a tensor, and the addition the biproduct, so that you can estract the linear operators from a matrix as kan extensions. how about that? (there will have to be some refinement of limits in there.)</p>
+
+
+
+<a name="195558955"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/bicompletions/near/195558955" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Morgan Rogers (he/him) <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/topic_bicompletions.html#195558955">(Apr 28 2020 at 12:56)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="294557">dusko</span> <a href="#narrow/stream/229111-general/topic/bicompletions/near/195552201" title="#narrow/stream/229111-general/topic/bicompletions/near/195552201">said</a>:</p>
+<blockquote>
+<p>you seem to be asking me to tell you what is in Dedekind's Zahlenschrift.</p>
+</blockquote>
+<p>That's okay, I was perfectly satisfied with Soichiro's reply.</p>
+
+
+
+<a name="195624103"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/bicompletions/near/195624103" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/topic_bicompletions.html#195624103">(Apr 28 2020 at 20:42)</a>:</h4>
+<p>No, it has nothing to do with the anthropic principle.  It's about correctness <em>for your particular application</em>.  When you model a real-world situation with a differential equation, there is a right differential equation to use (modulo choice of approximation and model, etc.) and plenty of wrong ones, even though mathematically speaking they are perfectly fine differential equations.  The same is true when you model a real-world situation with category theory.</p>
+
+
+
+<a name="195624260"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/bicompletions/near/195624260" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/topic_bicompletions.html#195624260">(Apr 28 2020 at 20:44)</a>:</h4>
+<p>No one suggested that limits and colimits are the answer to all questions.  You were saying that you <em>wanted</em> to use limits and colimits but that you were having trouble choosing the right bicompletion in which to calculate those limits and colimits.  If limits and colimits <em>aren't</em> the right thing for your application after all, then the existence of multiple inequivalent bicompletions is irrelevant to you.</p>
+
+
+
+<a name="195634268"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/bicompletions/near/195634268" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> sarahzrf <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/topic_bicompletions.html#195634268">(Apr 28 2020 at 22:09)</a>:</h4>
+<p>(btw, im pretty sure the anthropic principle doesnt have anything to do with free will, it's more like "of course we're gonna observe a bunch of phenomena that allow human life to exist, because otherwise we wouldn't be here to observe the lack of those phenomena")</p>
+
+
+
+<a name="212244743"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/bicompletions/near/212244743" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Notification Bot <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/topic_bicompletions.html#212244743">(Oct 04 2020 at 22:36)</a>:</h4>
+<p>This topic was moved by <span class="user-mention silent" data-user-id="276092">Nathanael Arkor</span> to <a class="stream-topic" data-stream-id="229199" href="/#narrow/stream/229199-learning.3A-questions/topic/Is.20the.20category.20of.20graphs.20monoidal.20closed.3F">#learning: questions &gt; Is the category of graphs monoidal closed?</a></p>
+
+
+
+{% endraw %}
+
+<hr><p>Last updated: Feb 13 2022 at 17:17 UTC</p>

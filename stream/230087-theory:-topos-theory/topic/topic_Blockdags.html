@@ -1,0 +1,93 @@
+---
+layout: archive
+title: Zulip Chat Archive
+permalink: /stream/230087-theory:-topos-theory/topic/Blockdags.html
+---
+
+<h2>Stream: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/230087-theory:-topos-theory/index.html">theory: topos theory</a></h2>
+<h3>Topic: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/230087-theory:-topos-theory/topic/topic_Blockdags.html">Blockdags</a></h3>
+
+<hr>
+
+<base href="https://categorytheory.zulipchat.com/">
+
+{% raw %}
+
+<a name="192869068"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/230087-theory%3A%20topos%20theory/topic/Blockdags/near/192869068" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Stay <a href="https://mattecapu.github.io/ct-zulip-archive/stream/230087-theory:-topos-theory/topic/topic_Blockdags.html#192869068">(Apr 03 2020 at 22:01)</a>:</h4>
+<p>There are a bunch of recent consensus algorithms that build a directed acyclic graph of blocks rather than a chain of blocks.  <a href="https://arxiv.org/abs/1812.02232" title="https://arxiv.org/abs/1812.02232">Casanova</a> is one of these, named for Geoffrey Rush's character Casanova Frankenstein in Mystery Men. There's a scene where he's confronted by Captain Amazing in which they have this exchange:</p>
+<blockquote>
+<p>Capt. Amazing: I knew you couldn't change.<br>
+Casanova Frankenstein: I knew you'd know that.<br>
+Capt. Amazing: Oh, I know that. AND I knew you'd know I'd know you knew.<br>
+Casanova Frankenstein: But I didn't. I only knew that you'd know that I knew. Did you know THAT?<br>
+Capt. Amazing: (Frowns, decides to fake it.) Of course.</p>
+</blockquote>
+<p>By watching to see which validators issue blocks that refer to other blocks, validators gain knowledge about who knew who knew what:  </p>
+<ol>
+<li>When a validator sees that a fault-tolerant majority has built on top of a block, it knows that the transactions in the block will eventually become accepted by all other behaving validators.  </li>
+<li>When a validator sees that a fault-tolerant majority sees that a fault-tolerant majority has seen the block, the block is finalized: no other message can change the network's mind.  This true finalization prevents the kind of 51% attack we've seen recently on networks like Ethereum classic.  </li>
+<li>When a validator sees that everyone has seen that everyone has seen a block, the block will never be referenced again by a behaving validator and the block can be archived.  This gets rid of the need to store the entire history of the network to be a contributing validator.</li>
+</ol>
+<p>These kinds of eventual knowledge seem amenable to modeling with a truth object in a topos.  A dag is a "skeletal" graph in much the same way that a poset is a skeletal preorder. A dag whose blocks are labeled with validators is a mashup of the theory of graphs and the theory of multisets.  On this topic I'd like to work out a category whose category of presheaves is a topos in which we can reason about what validators know about what other validators know about, and so on.</p>
+
+
+
+<a name="192873023"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/230087-theory%3A%20topos%20theory/topic/Blockdags/near/192873023" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> [Mod] Morgan Rogers <a href="https://mattecapu.github.io/ct-zulip-archive/stream/230087-theory:-topos-theory/topic/topic_Blockdags.html#192873023">(Apr 03 2020 at 22:49)</a>:</h4>
+<p>That's a lot to take in with no diagrams and with a limited knowledge of blocks, but if you break it down for me a bit I can very likely contribute to the building of a relevant topos.</p>
+
+
+
+<a name="192873154"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/230087-theory%3A%20topos%20theory/topic/Blockdags/near/192873154" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> [Mod] Morgan Rogers <a href="https://mattecapu.github.io/ct-zulip-archive/stream/230087-theory:-topos-theory/topic/topic_Blockdags.html#192873154">(Apr 03 2020 at 22:51)</a>:</h4>
+<p>First, I need to understand what the entities involved are. There are validators and blocks; how are new blocks generated/added to this system? Are the majorities you refer to out of the population of validators? Is that population fixed or constrained somehow?</p>
+
+
+
+<a name="192876933"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/230087-theory%3A%20topos%20theory/topic/Blockdags/near/192876933" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Stay <a href="https://mattecapu.github.io/ct-zulip-archive/stream/230087-theory:-topos-theory/topic/topic_Blockdags.html#192876933">(Apr 03 2020 at 23:43)</a>:</h4>
+<p>I added a link to the paper above.</p>
+<p>The theory of labeled graphs has three objects E (directed edges), B (blocks, the vertices of the graph), and V (validators). It has three morphisms s, t: E -&gt; B for source and target of each edge, and l:B -&gt; V labeling the block with the validator that created it.</p>
+
+
+
+<a name="192877044"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/230087-theory%3A%20topos%20theory/topic/Blockdags/near/192877044" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Stay <a href="https://mattecapu.github.io/ct-zulip-archive/stream/230087-theory:-topos-theory/topic/topic_Blockdags.html#192877044">(Apr 03 2020 at 23:45)</a>:</h4>
+<p>In the Casanova protocol, there's a fixed population of validators, all known to each other.  It's possible to add stuff to the protocol to kick out validators that are misbehaving and to allow new validators to join, but that's not critical for finding consensus.</p>
+
+
+
+<a name="192877203"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/230087-theory%3A%20topos%20theory/topic/Blockdags/near/192877203" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Stay <a href="https://mattecapu.github.io/ct-zulip-archive/stream/230087-theory:-topos-theory/topic/topic_Blockdags.html#192877203">(Apr 03 2020 at 23:48)</a>:</h4>
+<p>Validators all issue a block once every time step; they all keep time independently, so there may be drift between them.  The network is not reliable, but the liveness proof assumes that there is some upper bound (it doesn't need to be known, just exist) on the time that it takes for a message to be delivered.  Essentially that means people will notice when the network is down and it'll eventually get fixed.  Each block has to refer to the latest block that validator has received from each of the other validators.</p>
+
+
+
+<a name="192877256"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/230087-theory%3A%20topos%20theory/topic/Blockdags/near/192877256" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Stay <a href="https://mattecapu.github.io/ct-zulip-archive/stream/230087-theory:-topos-theory/topic/topic_Blockdags.html#192877256">(Apr 03 2020 at 23:49)</a>:</h4>
+<p>Blocks contain transactions, but that's an optimization.  We can imagine that each transaction lives in its own block.</p>
+
+
+
+<a name="192877425"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/230087-theory%3A%20topos%20theory/topic/Blockdags/near/192877425" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Stay <a href="https://mattecapu.github.io/ct-zulip-archive/stream/230087-theory:-topos-theory/topic/topic_Blockdags.html#192877425">(Apr 03 2020 at 23:51)</a>:</h4>
+<p>Transactions have "conflict domains"; that is, there's a way to tell when two transactions conflict with each other.  A useful case to keep in mind is when users have accounts and payments out of the accounts are totally ordered; you can think of each account as having a series of check numbers.  If Alice tries to pay both Bob and Carol with the same check number, that is a conflict.  None of Alice's payments conflict with Bob's or Carol's.</p>
+
+
+
+<a name="192877653"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/230087-theory%3A%20topos%20theory/topic/Blockdags/near/192877653" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Stay <a href="https://mattecapu.github.io/ct-zulip-archive/stream/230087-theory:-topos-theory/topic/topic_Blockdags.html#192877653">(Apr 03 2020 at 23:54)</a>:</h4>
+<p>I mentioned the theory of labeled directed graphs, but that doesn't capture the time-dependent aspect of the system.  The blockdag that a validator v sees at any time is a subdag of all future blockdags.  And it is not so much subdags that we care about as much as the n-level witnessing of blocks.</p>
+
+
+
+<a name="193345108"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/230087-theory%3A%20topos%20theory/topic/Blockdags/near/193345108" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> [Mod] Morgan Rogers <a href="https://mattecapu.github.io/ct-zulip-archive/stream/230087-theory:-topos-theory/topic/topic_Blockdags.html#193345108">(Apr 08 2020 at 16:31)</a>:</h4>
+<p><span class="user-mention" data-user-id="276048">@Mike Stay</span> this looks like a Hard Problem. I'm currently thinking about classifying spaces of monoids (discussion in the category theory stream), but perhaps there will come a time in the not too distant future where I'll put some serious thought into this. Good luck in the mean time!</p>
+
+
+
+{% endraw %}
+
+<hr><p>Last updated: Feb 13 2022 at 17:17 UTC</p>

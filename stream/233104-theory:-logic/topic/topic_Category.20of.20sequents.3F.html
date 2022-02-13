@@ -1,0 +1,226 @@
+---
+layout: archive
+title: Zulip Chat Archive
+permalink: /stream/233104-theory:-logic/topic/Category.20of.20sequents.3F.html
+---
+
+<h2>Stream: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/233104-theory:-logic/index.html">theory: logic</a></h2>
+<h3>Topic: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/233104-theory:-logic/topic/topic_Category.20of.20sequents.3F.html">Category of sequents?</a></h3>
+
+<hr>
+
+<base href="https://categorytheory.zulipchat.com/">
+
+{% raw %}
+
+<a name="213151393"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/233104-theory%3A%20logic/topic/Category%20of%20sequents%3F/near/213151393" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Shea Levy <a href="https://mattecapu.github.io/ct-zulip-archive/stream/233104-theory:-logic/topic/topic_Category.20of.20sequents.3F.html#213151393">(Oct 13 2020 at 13:12)</a>:</h4>
+<p>In learning about the sequent calculus, it struck me that that the identity inference rule (for any formula <code>A</code>, we have <code>A ⊢ A</code>) and cut rule (for any finite formula sequences  <code>Γ</code>, <code>Δ</code>, <code>Σ</code>,  and <code>Π</code> and formula <code>A</code>, if we have <code>Γ ⊢ Δ, A</code> and <code>A, Σ ⊢ Π</code> then we have <code>Γ, Σ ⊢ Δ, Π</code>) look something like identity and composition if you squint. Is there a category here? At first I was thinking the arrows would be any sequent, with the domain being the first formula on the LHS and the codomain being the last formula on the RHS, but then I'm not sure how to deal with sequents like <code>⊥ ⊢</code></p>
+
+
+
+<a name="213151463"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/233104-theory%3A%20logic/topic/Category%20of%20sequents%3F/near/213151463" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Shea Levy <a href="https://mattecapu.github.io/ct-zulip-archive/stream/233104-theory:-logic/topic/topic_Category.20of.20sequents.3F.html#213151463">(Oct 13 2020 at 13:12)</a>:</h4>
+<p>(ironically I'm learning about sequent calculus for a first-order formalization of category theory itself)</p>
+
+
+
+<a name="213152263"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/233104-theory%3A%20logic/topic/Category%20of%20sequents%3F/near/213152263" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> James Wood <a href="https://mattecapu.github.io/ct-zulip-archive/stream/233104-theory:-logic/topic/topic_Category.20of.20sequents.3F.html#213152263">(Oct 13 2020 at 13:18)</a>:</h4>
+<p>Polycategories are to (sequent calculus, identity, cut) as multicategories are to (natural deduction, variable, simultaneous substitution), so that's probably a good point of comparison.</p>
+
+
+
+<a name="213152806"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/233104-theory%3A%20logic/topic/Category%20of%20sequents%3F/near/213152806" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Shea Levy <a href="https://mattecapu.github.io/ct-zulip-archive/stream/233104-theory:-logic/topic/topic_Category.20of.20sequents.3F.html#213152806">(Oct 13 2020 at 13:22)</a>:</h4>
+<p>Awesome, thank you!</p>
+
+
+
+<a name="213153219"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/233104-theory%3A%20logic/topic/Category%20of%20sequents%3F/near/213153219" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> James Wood <a href="https://mattecapu.github.io/ct-zulip-archive/stream/233104-theory:-logic/topic/topic_Category.20of.20sequents.3F.html#213153219">(Oct 13 2020 at 13:25)</a>:</h4>
+<p>It must be extremely fiddly to prove, but I guess cut is associative with respect to the equational theory (of any reasonable logic).</p>
+
+
+
+<a name="213156305"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/233104-theory%3A%20logic/topic/Category%20of%20sequents%3F/near/213156305" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Shea Levy <a href="https://mattecapu.github.io/ct-zulip-archive/stream/233104-theory:-logic/topic/topic_Category.20of.20sequents.3F.html#213156305">(Oct 13 2020 at 13:48)</a>:</h4>
+<p>From <a href="https://ncatlab.org/nlab/show/polycategory#relation_to_properads_and_props">https://ncatlab.org/nlab/show/polycategory#relation_to_properads_and_props</a> it looks like we can compose along any one object regardless of its position in the list, but in sequent calculus that requires exchange, right? Are there "ordered" polycategories?</p>
+
+
+
+<a name="213157116"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/233104-theory%3A%20logic/topic/Category%20of%20sequents%3F/near/213157116" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nathanael Arkor <a href="https://mattecapu.github.io/ct-zulip-archive/stream/233104-theory:-logic/topic/topic_Category.20of.20sequents.3F.html#213157116">(Oct 13 2020 at 13:54)</a>:</h4>
+<p>Sequent calculi would usually correspond to symmetric polycategories, which admit exchange.</p>
+
+
+
+<a name="213157179"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/233104-theory%3A%20logic/topic/Category%20of%20sequents%3F/near/213157179" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nathanael Arkor <a href="https://mattecapu.github.io/ct-zulip-archive/stream/233104-theory:-logic/topic/topic_Category.20of.20sequents.3F.html#213157179">(Oct 13 2020 at 13:54)</a>:</h4>
+<p>If you don't have exchange, then you consider ordinary/planar/nonsymmetric polycategories.</p>
+
+
+
+<a name="213157236"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/233104-theory%3A%20logic/topic/Category%20of%20sequents%3F/near/213157236" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Shea Levy <a href="https://mattecapu.github.io/ct-zulip-archive/stream/233104-theory:-logic/topic/topic_Category.20of.20sequents.3F.html#213157236">(Oct 13 2020 at 13:55)</a>:</h4>
+<p>Got it, thanks!</p>
+
+
+
+<a name="213174474"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/233104-theory%3A%20logic/topic/Category%20of%20sequents%3F/near/213174474" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> sarahzrf <a href="https://mattecapu.github.io/ct-zulip-archive/stream/233104-theory:-logic/topic/topic_Category.20of.20sequents.3F.html#213174474">(Oct 13 2020 at 15:38)</a>:</h4>
+<p><del>the nlab page probably says this, but for the record, the "structured category" notion corresponding to symmetric polycats is gonna be <em>star-autonomous</em> categories</del></p>
+
+
+
+<a name="213174580"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/233104-theory%3A%20logic/topic/Category%20of%20sequents%3F/near/213174580" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> sarahzrf <a href="https://mattecapu.github.io/ct-zulip-archive/stream/233104-theory:-logic/topic/topic_Category.20of.20sequents.3F.html#213174580">(Oct 13 2020 at 15:39)</a>:</h4>
+<p><del>that is to say: star-autonomous categories are to symmetric polycategories as symmetric monoidal categories are to symmetric multicategories</del></p>
+
+
+
+<a name="213174792"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/233104-theory%3A%20logic/topic/Category%20of%20sequents%3F/near/213174792" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> sarahzrf <a href="https://mattecapu.github.io/ct-zulip-archive/stream/233104-theory:-logic/topic/topic_Category.20of.20sequents.3F.html#213174792">(Oct 13 2020 at 15:40)</a>:</h4>
+<p>oh wait sorry <span aria-label="sweat smile" class="emoji emoji-1f605" role="img" title="sweat smile">:sweat_smile:</span> i think that's actually wrong, ignore me</p>
+
+
+
+<a name="213198195"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/233104-theory%3A%20logic/topic/Category%20of%20sequents%3F/near/213198195" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Valeria de Paiva <a href="https://mattecapu.github.io/ct-zulip-archive/stream/233104-theory:-logic/topic/topic_Category.20of.20sequents.3F.html#213198195">(Oct 13 2020 at 18:35)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="351475">Shea Levy</span> <a href="#narrow/stream/233104-theory.3A-logic/topic/Category.20of.20sequents.3F/near/213151393">said</a>:</p>
+<blockquote>
+<p>In learning about the sequent calculus, it struck me that that the identity inference rule (for any formula <code>A</code>, we have <code>A ⊢ A</code>) and cut rule (for any finite formula sequences  <code>Γ</code>, <code>Δ</code>, <code>Σ</code>,  and <code>Π</code> and formula <code>A</code>, if we have <code>Γ ⊢ Δ, A</code> and <code>A, Σ ⊢ Π</code> then we have <code>Γ, Σ ⊢ Δ, Π</code>) look something like identity and composition if you squint. Is there a category here? At first I was thinking the arrows would be any sequent, with the domain being the first formula on the LHS and the codomain being the last formula on the RHS, but then I'm not sure how to deal with sequents like <code>⊥ ⊢</code></p>
+</blockquote>
+<p>hi, this was the original insight of Lambek in <br>
+Lambek, Joachim (1969). "Deductive systems and categories I and  II. Standard constructions and closed categories". Lecture Notes in Mathematics. 86. Berlin, Heidelberg: Springer Berlin Heidelberg. pp. 76–122. doi:10.1007/bfb0079385. ISBN 978-3-540-04605-9. ISSN 0075-8434.</p>
+
+
+
+<a name="213299689"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/233104-theory%3A%20logic/topic/Category%20of%20sequents%3F/near/213299689" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Alex Gryzlov <a href="https://mattecapu.github.io/ct-zulip-archive/stream/233104-theory:-logic/topic/topic_Category.20of.20sequents.3F.html#213299689">(Oct 14 2020 at 14:47)</a>:</h4>
+<p>I think this is pretty much what categorical logic studies. Take a look at <span class="user-mention" data-user-id="276777">@Mike Shulman</span>'s <a href="http://mikeshulman.github.io/catlog/catlog.pdf">http://mikeshulman.github.io/catlog/catlog.pdf</a> book.</p>
+
+
+
+<a name="213299908"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/233104-theory%3A%20logic/topic/Category%20of%20sequents%3F/near/213299908" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> [Mod] Morgan Rogers <a href="https://mattecapu.github.io/ct-zulip-archive/stream/233104-theory:-logic/topic/topic_Category.20of.20sequents.3F.html#213299908">(Oct 14 2020 at 14:48)</a>:</h4>
+<p>What "this" are you referring to?</p>
+
+
+
+<a name="213299954"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/233104-theory%3A%20logic/topic/Category%20of%20sequents%3F/near/213299954" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Alex Gryzlov <a href="https://mattecapu.github.io/ct-zulip-archive/stream/233104-theory:-logic/topic/topic_Category.20of.20sequents.3F.html#213299954">(Oct 14 2020 at 14:49)</a>:</h4>
+<p>categories that correspond to various proof systems (and vice versa)</p>
+
+
+
+<a name="213301014"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/233104-theory%3A%20logic/topic/Category%20of%20sequents%3F/near/213301014" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Fawzi Hreiki <a href="https://mattecapu.github.io/ct-zulip-archive/stream/233104-theory:-logic/topic/topic_Category.20of.20sequents.3F.html#213301014">(Oct 14 2020 at 14:56)</a>:</h4>
+<p>The simplest case is just posets. Then you can interpret the objects as propositions and the morphisms as entailments</p>
+
+
+
+<a name="213301118"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/233104-theory%3A%20logic/topic/Category%20of%20sequents%3F/near/213301118" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Fawzi Hreiki <a href="https://mattecapu.github.io/ct-zulip-archive/stream/233104-theory:-logic/topic/topic_Category.20of.20sequents.3F.html#213301118">(Oct 14 2020 at 14:57)</a>:</h4>
+<p>The terminal object is truth, the initial object is falsity, product is and, sum is or, exponentiation is implication, etc</p>
+
+
+
+<a name="213301353"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/233104-theory%3A%20logic/topic/Category%20of%20sequents%3F/near/213301353" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Fawzi Hreiki <a href="https://mattecapu.github.io/ct-zulip-archive/stream/233104-theory:-logic/topic/topic_Category.20of.20sequents.3F.html#213301353">(Oct 14 2020 at 14:59)</a>:</h4>
+<p>To extend this you basically have two approaches - propositions as types, which is what is done with Lambda calculus and dependent type theory, or logic over a type theory which is what is done with hyperdoctrines</p>
+
+
+
+<a name="213301498"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/233104-theory%3A%20logic/topic/Category%20of%20sequents%3F/near/213301498" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Fawzi Hreiki <a href="https://mattecapu.github.io/ct-zulip-archive/stream/233104-theory:-logic/topic/topic_Category.20of.20sequents.3F.html#213301498">(Oct 14 2020 at 15:00)</a>:</h4>
+<p>The subobject fibration which sends each object to its poset of subjects is just a special case of this second approach</p>
+
+
+
+<a name="213301623"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/233104-theory%3A%20logic/topic/Category%20of%20sequents%3F/near/213301623" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Fawzi Hreiki <a href="https://mattecapu.github.io/ct-zulip-archive/stream/233104-theory:-logic/topic/topic_Category.20of.20sequents.3F.html#213301623">(Oct 14 2020 at 15:00)</a>:</h4>
+<p>Lawvere’s Adjointness in Foundations is a good early reference for this kind of thinking</p>
+
+
+
+<a name="213327973"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/233104-theory%3A%20logic/topic/Category%20of%20sequents%3F/near/213327973" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Robert Seely <a href="https://mattecapu.github.io/ct-zulip-archive/stream/233104-theory:-logic/topic/topic_Category.20of.20sequents.3F.html#213327973">(Oct 14 2020 at 17:50)</a>:</h4>
+<p>I guess this is still a work in progress - e.g. Chapter 3 seems to be missing ... (I would notice that, wouldn't I?)</p>
+
+
+
+<a name="213328498"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/233104-theory%3A%20logic/topic/Category%20of%20sequents%3F/near/213328498" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Alex Gryzlov <a href="https://mattecapu.github.io/ct-zulip-archive/stream/233104-theory:-logic/topic/topic_Category.20of.20sequents.3F.html#213328498">(Oct 14 2020 at 17:54)</a>:</h4>
+<p>yeah, 5 and 6 are also not there</p>
+
+
+
+<a name="213328938"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/233104-theory%3A%20logic/topic/Category%20of%20sequents%3F/near/213328938" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Alex Gryzlov <a href="https://mattecapu.github.io/ct-zulip-archive/stream/233104-theory:-logic/topic/topic_Category.20of.20sequents.3F.html#213328938">(Oct 14 2020 at 17:57)</a>:</h4>
+<p>There are some updates in <a href="https://github.com/mikeshulman/catlog">https://github.com/mikeshulman/catlog</a> which are not in the pdf (which seems to be from ~mid 2016), so I guess one should compile those tex files manually for the latest version</p>
+
+
+
+<a name="213330390"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/233104-theory%3A%20logic/topic/Category%20of%20sequents%3F/near/213330390" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Dan Doel <a href="https://mattecapu.github.io/ct-zulip-archive/stream/233104-theory:-logic/topic/topic_Category.20of.20sequents.3F.html#213330390">(Oct 14 2020 at 18:08)</a>:</h4>
+<p>They're still excellent 'notes' regardless.</p>
+
+
+
+<a name="213345648"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/233104-theory%3A%20logic/topic/Category%20of%20sequents%3F/near/213345648" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Fawzi Hreiki <a href="https://mattecapu.github.io/ct-zulip-archive/stream/233104-theory:-logic/topic/topic_Category.20of.20sequents.3F.html#213345648">(Oct 14 2020 at 20:25)</a>:</h4>
+<p>Yeah they are great. I like that they're much more semantically oriented than the usual treatments.</p>
+
+
+
+<a name="213349554"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/233104-theory%3A%20logic/topic/Category%20of%20sequents%3F/near/213349554" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/233104-theory:-logic/topic/topic_Category.20of.20sequents.3F.html#213349554">(Oct 14 2020 at 20:56)</a>:</h4>
+<p>I'm glad y'all like them.  Sadly the unwritten chapter 3 is the one of relevance to the OP here though...</p>
+
+
+
+<a name="213574432"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/233104-theory%3A%20logic/topic/Category%20of%20sequents%3F/near/213574432" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Alex Gryzlov <a href="https://mattecapu.github.io/ct-zulip-archive/stream/233104-theory:-logic/topic/topic_Category.20of.20sequents.3F.html#213574432">(Oct 16 2020 at 15:20)</a>:</h4>
+<p>By the way, I've built the latest version manually, if somebody wants it: <a href="/user_uploads/21317/f6QrcWYo5sPIJLQzDcuv0VL3/catlog.pdf">catlog.pdf</a></p>
+
+
+
+<a name="213574661"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/233104-theory%3A%20logic/topic/Category%20of%20sequents%3F/near/213574661" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Alex Gryzlov <a href="https://mattecapu.github.io/ct-zulip-archive/stream/233104-theory:-logic/topic/topic_Category.20of.20sequents.3F.html#213574661">(Oct 16 2020 at 15:21)</a>:</h4>
+<p>It has some parts of chapter 3</p>
+
+
+
+<a name="213575971"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/233104-theory%3A%20logic/topic/Category%20of%20sequents%3F/near/213575971" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Dan Doel <a href="https://mattecapu.github.io/ct-zulip-archive/stream/233104-theory:-logic/topic/topic_Category.20of.20sequents.3F.html#213575971">(Oct 16 2020 at 15:32)</a>:</h4>
+<p>Incidentally, if someone wants to see another classical-ish type theory with sequents, I'd recommend Compiling with Classical Connectives. It's a lot more complicated than just classical logic to keep things computationally well-behaved, though.</p>
+
+
+
+<a name="229175006"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/233104-theory%3A%20logic/topic/Category%20of%20sequents%3F/near/229175006" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> GhaS Shee <a href="https://mattecapu.github.io/ct-zulip-archive/stream/233104-theory:-logic/topic/topic_Category.20of.20sequents.3F.html#229175006">(Mar 07 2021 at 10:05)</a>:</h4>
+<p>I am now reading  <span class="user-mention" data-user-id="276777">@Mike Shulman</span> 's catlog.pdf at chapter 2 with remembering section 1.4 (referring the rule lists in p51).<br>
+I have a question around the rule <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>&lt;</mo><msub><mi>π</mi><mn>1</mn></msub><mo stretchy="false">(</mo><mi>P</mi><mo stretchy="false">)</mo><mo separator="true">,</mo><msub><mi>π</mi><mn>2</mn></msub><mo stretchy="false">(</mo><mi>P</mi><mo stretchy="false">)</mo><mo>&gt;</mo><mtext>   </mtext><mo>≡</mo><mtext>  </mtext><mi>P</mi></mrow><annotation encoding="application/x-tex"> &lt;π_1(P),π_2(P)&gt;\ \ \  \equiv \ \ P </annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.5782em;vertical-align:-0.0391em;"></span><span class="mrel">&lt;</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.03588em;">π</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:-0.03588em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.13889em;">P</span><span class="mclose">)</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.03588em;">π</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:-0.03588em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.13889em;">P</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">&gt;</span><span class="mspace"> </span><span class="mspace"> </span><span class="mspace"> </span></span><span class="base"><span class="strut" style="height:0.46375em;vertical-align:0em;"></span><span class="mrel">≡</span><span class="mspace"> </span><span class="mspace"> </span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathnormal" style="margin-right:0.13889em;">P</span></span></span></span>. <br>
+I would like to introduce this judgmental equality formally. <br>
+To do that, I think of a category, but I could not construct a 2-morphism corresponding to the rule. </p>
+<p>So, my question is "Is there a way of formalizing this rule in a category rather than in a multicategory introduced in chapter 2?"</p>
+
+
+
+<a name="229190222"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/233104-theory%3A%20logic/topic/Category%20of%20sequents%3F/near/229190222" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nathanael Arkor <a href="https://mattecapu.github.io/ct-zulip-archive/stream/233104-theory:-logic/topic/topic_Category.20of.20sequents.3F.html#229190222">(Mar 07 2021 at 14:08)</a>:</h4>
+<p>This rule (the <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>η</mi></mrow><annotation encoding="application/x-tex">\eta</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.625em;vertical-align:-0.19444em;"></span><span class="mord mathnormal" style="margin-right:0.03588em;">η</span></span></span></span>-rule for products) corresponds to the uniqueness of the universal property of a binary product in a category. You can check that the morphisms represented by the LHS and by the RHS both satisfy the condition to be the mediating morphism for the product, implying their equality.</p>
+
+
+
+<a name="229193817"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/233104-theory%3A%20logic/topic/Category%20of%20sequents%3F/near/229193817" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> GhaS Shee <a href="https://mattecapu.github.io/ct-zulip-archive/stream/233104-theory:-logic/topic/topic_Category.20of.20sequents.3F.html#229193817">(Mar 07 2021 at 15:01)</a>:</h4>
+<p><span class="user-mention" data-user-id="276092">@Nathanael Arkor</span> <br>
+Ah, thanks. exactly.</p>
+
+
+
+{% endraw %}
+
+<hr><p>Last updated: Feb 13 2022 at 17:17 UTC</p>
