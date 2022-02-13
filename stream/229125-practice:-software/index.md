@@ -31,4 +31,4 @@ permalink: /stream/229125-practice:-software/index.html
 * [Introduction](topic/Introduction.html) (8 messages, latest: Mar 24 2020 at 17:58)
 * [idris-ct](topic/idris-ct.html) (1 message, latest: Mar 24 2020 at 13:24)
 
-<hr><p>Last updated: Feb 13 2022 at 16:09 UTC</p>
+<hr><p>Last updated: Feb 13 2022 at 16:47 UTC</p>

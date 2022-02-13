@@ -13,4 +13,4 @@ permalink: /stream/307233-Grothendieck/index.html
 * [stream events](topic/stream.20events.html) (3 messages, latest: Nov 18 2021 at 15:05)
 * [source-and-target structure](topic/source-and-target.20structure.html) (1 message, latest: Nov 18 2021 at 03:54)
 
-<hr><p>Last updated: Feb 13 2022 at 16:09 UTC</p>
+<hr><p>Last updated: Feb 13 2022 at 16:47 UTC</p>
