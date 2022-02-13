@@ -34,4 +34,4 @@ permalink: /stream/232161-learning:-recommendations/index.html
 * [string diagrams](topic/string.20diagrams.html) (22 messages, latest: Apr 11 2020 at 21:49)
 * [stream events](topic/stream.20events.html) (2 messages, latest: Apr 06 2020 at 18:16)
 
-<hr><p>Last updated: Feb 13 2022 at 15:35 UTC</p>
+<hr><p>Last updated: Feb 13 2022 at 16:09 UTC</p>

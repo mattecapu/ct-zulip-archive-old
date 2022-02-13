@@ -9,7 +9,7 @@ permalink: /stream/229136-theory:-category-theory/index.html
 
 ### Topics:
 
-* [slices of G-Set](topic/slices.20of.20G-Set.html) (14 messages, latest: Feb 13 2022 at 15:13)
+* [slices of G-Set](topic/slices.20of.20G-Set.html) (15 messages, latest: Feb 13 2022 at 15:57)
 * [Gray product for bicategories](topic/Gray.20product.20for.20bicategories.html) (3 messages, latest: Feb 09 2022 at 17:35)
 * [Reference for *-autonomous categories](topic/Reference.20for.20*-autonomous.20categories.html) (2 messages, latest: Feb 04 2022 at 15:00)
 * [Terminology for "double hom sets"?](topic/Terminology.20for.20.22double.20hom.20sets.22.3F.html) (4 messages, latest: Feb 03 2022 at 08:26)
@@ -248,4 +248,4 @@ permalink: /stream/229136-theory:-category-theory/index.html
 * [diagrams for application](topic/diagrams.20for.20application.html) (13 messages, latest: Mar 24 2020 at 06:19)
 * [universal constructions](topic/universal.20constructions.html) (8 messages, latest: Mar 23 2020 at 21:06)
 
-<hr><p>Last updated: Feb 13 2022 at 15:35 UTC</p>
+<hr><p>Last updated: Feb 13 2022 at 16:09 UTC</p>

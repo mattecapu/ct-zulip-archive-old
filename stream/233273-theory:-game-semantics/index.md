@@ -13,4 +13,4 @@ permalink: /stream/233273-theory:-game-semantics/index.html
 * [game theory](topic/game.20theory.html) (16 messages, latest: Sep 07 2021 at 19:31)
 * [stream events](topic/stream.20events.html) (13 messages, latest: Aug 30 2021 at 20:45)
 
-<hr><p>Last updated: Feb 13 2022 at 15:35 UTC</p>
+<hr><p>Last updated: Feb 13 2022 at 16:09 UTC</p>
