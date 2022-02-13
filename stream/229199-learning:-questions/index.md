@@ -9,10 +9,10 @@ permalink: /stream/229199-learning:-questions/index.html
 
 ### Topics:
 
+* [coalgebraic logic basics](topic/coalgebraic.20logic.20basics.html) (15 messages, latest: Feb 13 2022 at 15:52)
 * [beginner questions](topic/beginner.20questions.html) (470 messages, latest: Feb 13 2022 at 15:30)
 * [decomposition of a Lie groupoid into sub Lie groupoids](topic/decomposition.20of.20a.20Lie.20groupoid.20into.20sub.20Lie.20groupoids.html) (12 messages, latest: Feb 13 2022 at 13:41)
 * [deep learning](topic/deep.20learning.html) (2 messages, latest: Feb 12 2022 at 01:54)
-* [coalgebraic logic basics](topic/coalgebraic.20logic.20basics.html) (14 messages, latest: Feb 11 2022 at 23:17)
 * [classifying toposes](topic/classifying.20toposes.html) (82 messages, latest: Feb 11 2022 at 18:43)
 * ["enriched enriched functors"](topic/.22enriched.20enriched.20functors.22.html) (6 messages, latest: Feb 10 2022 at 23:04)
 * [yoneda lemma applications](topic/yoneda.20lemma.20applications.html) (19 messages, latest: Feb 10 2022 at 10:40)
@@ -632,4 +632,4 @@ permalink: /stream/229199-learning:-questions/index.html
 * [Algebra (Aluffi) exercises](topic/Algebra.20(Aluffi).20exercises.html) (55 messages, latest: Mar 27 2020 at 23:38)
 * [What is category theory about?](topic/What.20is.20category.20theory.20about.3F.html) (16 messages, latest: Mar 26 2020 at 16:03)
 
-<hr><p>Last updated: Feb 13 2022 at 15:35 UTC</p>
+<hr><p>Last updated: Feb 13 2022 at 16:09 UTC</p>
