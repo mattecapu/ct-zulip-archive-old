@@ -9,7 +9,8 @@ permalink: /stream/229199-learning:-questions/index.html
 
 ### Topics:
 
-* [decomposition of a Lie groupoid into sub Lie groupoids](topic/decomposition.20of.20a.20Lie.20groupoid.20into.20sub.20Lie.20groupoids.html) (2 messages, latest: Feb 12 2022 at 00:20)
+* [decomposition of a Lie groupoid into sub Lie groupoids](topic/decomposition.20of.20a.20Lie.20groupoid.20into.20sub.20Lie.20groupoids.html) (6 messages, latest: Feb 12 2022 at 22:45)
+* [deep learning](topic/deep.20learning.html) (2 messages, latest: Feb 12 2022 at 01:54)
 * [coalgebraic logic basics](topic/coalgebraic.20logic.20basics.html) (14 messages, latest: Feb 11 2022 at 23:17)
 * [classifying toposes](topic/classifying.20toposes.html) (82 messages, latest: Feb 11 2022 at 18:43)
 * [beginner questions](topic/beginner.20questions.html) (466 messages, latest: Feb 11 2022 at 05:31)
@@ -277,7 +278,6 @@ permalink: /stream/229199-learning:-questions/index.html
 * [Arrow category as a ??? category](topic/Arrow.20category.20as.20a.20.3F.3F.3F.20category.html) (12 messages, latest: Apr 18 2021 at 17:05)
 * [What can CT tell us about alternative programming paradigms?](topic/What.20can.20CT.20tell.20us.20about.20alternative.20programming.20paradigms.3F.html) (23 messages, latest: Apr 17 2021 at 12:01)
 * [$$\times$$ in $$\mathbf{Rel}$$](topic/.24.24.5Ctimes.24.24.20in.20.24.24.5Cmathbf.7BRel.7D.24.24.html) (25 messages, latest: Apr 16 2021 at 15:17)
-* [deep learning](topic/deep.20learning.html) (1 message, latest: Apr 13 2021 at 02:16)
 * [algebra, geometry, coalgebra... cogeometry?](topic/algebra.2C.20geometry.2C.20coalgebra.2E.2E.2E.20cogeometry.3F.html) (18 messages, latest: Apr 12 2021 at 17:53)
 * [algebra, geometry, coalgebra](topic/algebra.2C.20geometry.2C.20coalgebra.html) (28 messages, latest: Apr 11 2021 at 21:05)
 * [describing presheaves on Lawvere theories](topic/describing.20presheaves.20on.20Lawvere.20theories.html) (21 messages, latest: Apr 11 2021 at 19:49)
@@ -632,4 +632,4 @@ permalink: /stream/229199-learning:-questions/index.html
 * [Algebra (Aluffi) exercises](topic/Algebra.20(Aluffi).20exercises.html) (55 messages, latest: Mar 27 2020 at 23:38)
 * [What is category theory about?](topic/What.20is.20category.20theory.20about.3F.html) (16 messages, latest: Mar 26 2020 at 16:03)
 
-<hr><p>Last updated: Feb 12 2022 at 00:32 UTC</p>
+<hr><p>Last updated: Feb 13 2022 at 00:33 UTC</p>
