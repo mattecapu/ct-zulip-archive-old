@@ -9,11 +9,11 @@ permalink: /stream/229179-semiotics-and-semiosis/index.html
 
 ### Topics:
 
-* [cybernetics](topic/cybernetics.html) (84 messages, latest: May 28 2021 at 18:30)
-* [logical graphs](topic/logical.20graphs.html) (1 message, latest: May 28 2021 at 17:00)
-* [semiotic signals](topic/semiotic.20signals.html) (1 message, latest: Dec 27 2020 at 10:31)
-* [algebraic semiotics](topic/algebraic.20semiotics.html) (16 messages, latest: Mar 26 2020 at 19:11)
-* [higher structure](topic/higher.20structure.html) (4 messages, latest: Mar 26 2020 at 12:56)
-* [stream events](topic/stream.20events.html) (55 messages, latest: Mar 26 2020 at 12:41)
+* [cybernetics](topic/topic_cybernetics.html) (84 messages, latest: May 28 2021 at 18:30)
+* [logical graphs](topic/topic_logical.20graphs.html) (1 message, latest: May 28 2021 at 17:00)
+* [semiotic signals](topic/topic_semiotic.20signals.html) (1 message, latest: Dec 27 2020 at 10:31)
+* [algebraic semiotics](topic/topic_algebraic.20semiotics.html) (16 messages, latest: Mar 26 2020 at 19:11)
+* [higher structure](topic/topic_higher.20structure.html) (4 messages, latest: Mar 26 2020 at 12:56)
+* [stream events](topic/topic_stream.20events.html) (55 messages, latest: Mar 26 2020 at 12:41)
 
-<hr><p>Last updated: Feb 13 2022 at 17:17 UTC</p>
+<hr><p>Last updated: Feb 13 2022 at 17:26 UTC</p>

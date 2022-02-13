@@ -9,8 +9,8 @@ permalink: /stream/229794-theory:-combinatorics/index.html
 
 ### Topics:
 
-* [Lambert W species interpretation](topic/Lambert.20W.20species.20interpretation.html) (36 messages, latest: Oct 26 2021 at 13:23)
-* [stream events](topic/stream.20events.html) (2 messages, latest: Apr 06 2020 at 05:32)
-* [Software](topic/Software.html) (1 message, latest: Apr 03 2020 at 09:50)
+* [Lambert W species interpretation](topic/topic_Lambert.20W.20species.20interpretation.html) (36 messages, latest: Oct 26 2021 at 13:23)
+* [stream events](topic/topic_stream.20events.html) (2 messages, latest: Apr 06 2020 at 05:32)
+* [Software](topic/topic_Software.html) (1 message, latest: Apr 03 2020 at 09:50)
 
-<hr><p>Last updated: Feb 13 2022 at 17:17 UTC</p>
+<hr><p>Last updated: Feb 13 2022 at 17:26 UTC</p>

@@ -9,6 +9,6 @@ permalink: /stream/233122-theory:-alternate-presentations/index.html
 
 ### Topics:
 
-* [stream events](topic/stream.20events.html) (10 messages, latest: Apr 10 2020 at 18:26)
+* [stream events](topic/topic_stream.20events.html) (10 messages, latest: Apr 10 2020 at 18:26)
 
-<hr><p>Last updated: Feb 13 2022 at 17:17 UTC</p>
+<hr><p>Last updated: Feb 13 2022 at 17:26 UTC</p>

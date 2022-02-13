@@ -9,7 +9,7 @@ permalink: /stream/269484-Topos-Colloquium/index.html
 
 ### Topics:
 
-* [Introduction](topic/Introduction.html) (3 messages, latest: Dec 26 2020 at 17:45)
-* [stream events](topic/stream.20events.html) (1 message, latest: Dec 26 2020 at 13:04)
+* [Introduction](topic/topic_Introduction.html) (3 messages, latest: Dec 26 2020 at 17:45)
+* [stream events](topic/topic_stream.20events.html) (1 message, latest: Dec 26 2020 at 13:04)
 
-<hr><p>Last updated: Feb 13 2022 at 17:17 UTC</p>
+<hr><p>Last updated: Feb 13 2022 at 17:26 UTC</p>
