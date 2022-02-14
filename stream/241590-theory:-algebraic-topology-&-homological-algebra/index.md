@@ -9,7 +9,7 @@ permalink: /stream/241590-theory:-algebraic-topology-&-homological-algebra/index
 
 ### Topics:
 
-* [formal properties of the bar construction](topic/topic_formal.20properties.20of.20the.20bar.20construction.html) (190 messages, latest: Feb 13 2022 at 02:47)
+* [formal properties of the bar construction](topic/topic_formal.20properties.20of.20the.20bar.20construction.html) (191 messages, latest: Feb 13 2022 at 19:45)
 * [non-normal group "extensions"](topic/topic_non-normal.20group.20.22extensions.22.html) (3 messages, latest: Feb 07 2022 at 21:46)
 * [maximal nondegenerate simplices](topic/topic_maximal.20nondegenerate.20simplices.html) (6 messages, latest: Feb 07 2022 at 12:56)
 * [Non-normal group "extensions"](topic/topic_Non-normal.20group.20.22extensions.22.html) (1 message, latest: Feb 07 2022 at 01:40)
@@ -59,4 +59,4 @@ permalink: /stream/241590-theory:-algebraic-topology-&-homological-algebra/index
 * [simplicial sets](topic/topic_simplicial.20sets.html) (1 message, latest: Jul 02 2020 at 11:05)
 * [Secondary algebraic K-theory](topic/topic_Secondary.20algebraic.20K-theory.html) (13 messages, latest: Jun 01 2020 at 16:14)
 
-<hr><p>Last updated: Feb 13 2022 at 17:29 UTC</p>
+<hr><p>Last updated: Feb 14 2022 at 00:29 UTC</p>
