@@ -9,7 +9,9 @@ permalink: /stream/229136-theory:-category-theory/index.html
 
 ### Topics:
 
-* [reference request: vertical natural transformations](topic/topic_reference.20request.3A.20vertical.20natural.20transformations.html) (14 messages, latest: Feb 13 2022 at 23:42)
+* [concrete simplicial sets](topic/topic_concrete.20simplicial.20sets.html) (3 messages, latest: Feb 15 2022 at 01:00)
+* [unitors to the left of me, unitors to the right](topic/topic_unitors.20to.20the.20left.20of.20me.2C.20unitors.20to.20the.20right.html) (31 messages, latest: Feb 14 2022 at 19:26)
+* [reference request: vertical natural transformations](topic/topic_reference.20request.3A.20vertical.20natural.20transformations.html) (16 messages, latest: Feb 14 2022 at 16:58)
 * [slices of G-Set](topic/topic_slices.20of.20G-Set.html) (16 messages, latest: Feb 13 2022 at 19:43)
 * [Gray product for bicategories](topic/topic_Gray.20product.20for.20bicategories.html) (3 messages, latest: Feb 09 2022 at 17:35)
 * [Reference for *-autonomous categories](topic/topic_Reference.20for.20*-autonomous.20categories.html) (2 messages, latest: Feb 04 2022 at 15:00)
@@ -249,4 +251,4 @@ permalink: /stream/229136-theory:-category-theory/index.html
 * [diagrams for application](topic/topic_diagrams.20for.20application.html) (13 messages, latest: Mar 24 2020 at 06:19)
 * [universal constructions](topic/topic_universal.20constructions.html) (8 messages, latest: Mar 23 2020 at 21:06)
 
-<hr><p>Last updated: Feb 14 2022 at 00:29 UTC</p>
+<hr><p>Last updated: Feb 15 2022 at 09:43 UTC</p>
