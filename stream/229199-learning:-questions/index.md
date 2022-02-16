@@ -9,6 +9,7 @@ permalink: /stream/229199-learning:-questions/index.html
 
 ### Topics:
 
+* [groupoids with two objects](topic/topic_groupoids.20with.20two.20objects.html) (19 messages, latest: Feb 15 2022 at 20:08)
 * [beginner questions](topic/topic_beginner.20questions.html) (478 messages, latest: Feb 13 2022 at 17:16)
 * [coalgebraic logic basics](topic/topic_coalgebraic.20logic.20basics.html) (15 messages, latest: Feb 13 2022 at 15:52)
 * [decomposition of a Lie groupoid into sub Lie groupoids](topic/topic_decomposition.20of.20a.20Lie.20groupoid.20into.20sub.20Lie.20groupoids.html) (12 messages, latest: Feb 13 2022 at 13:41)
@@ -632,4 +633,4 @@ permalink: /stream/229199-learning:-questions/index.html
 * [Algebra (Aluffi) exercises](topic/topic_Algebra.20(Aluffi).20exercises.html) (55 messages, latest: Mar 27 2020 at 23:38)
 * [What is category theory about?](topic/topic_What.20is.20category.20theory.20about.3F.html) (16 messages, latest: Mar 26 2020 at 16:03)
 
-<hr><p>Last updated: Feb 15 2022 at 09:43 UTC</p>
+<hr><p>Last updated: Feb 16 2022 at 00:30 UTC</p>

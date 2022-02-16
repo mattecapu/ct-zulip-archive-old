@@ -9,6 +9,7 @@ permalink: /stream/306433-practice:-thermodynamics/index.html
 
 ### Topics:
 
+* [Non-integrable Dirac structures](topic/topic_Non-integrable.20Dirac.20structures.html) (7 messages, latest: Feb 15 2022 at 21:32)
 * [symplectic geometry and Dirac structures](topic/topic_symplectic.20geometry.20and.20Dirac.20structures.html) (31 messages, latest: Feb 09 2022 at 03:07)
 * [compositional thermostatics blog posts](topic/topic_compositional.20thermostatics.20blog.20posts.html) (1 message, latest: Feb 07 2022 at 21:50)
 * [pressure equilibriation in thermostatics](topic/topic_pressure.20equilibriation.20in.20thermostatics.html) (14 messages, latest: Feb 02 2022 at 15:51)
@@ -40,4 +41,4 @@ permalink: /stream/306433-practice:-thermodynamics/index.html
 * [Stat Mech of the Carnot Engine](topic/topic_Stat.20Mech.20of.20the.20Carnot.20Engine.html) (2 messages, latest: Nov 10 2021 at 23:58)
 * [stream events](topic/topic_stream.20events.html) (13 messages, latest: Nov 09 2021 at 19:58)
 
-<hr><p>Last updated: Feb 15 2022 at 09:43 UTC</p>
+<hr><p>Last updated: Feb 16 2022 at 00:30 UTC</p>
