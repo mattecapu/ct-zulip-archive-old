@@ -26,7 +26,7 @@ permalink: /index.html
 
 * [theory: algebraic topology & homological algebra](stream/241590-theory:-algebraic-topology-&-homological-algebra/index.html) (49 topics)
 
-* [general: mathematics](stream/266967-general:-mathematics/index.html) (46 topics)
+* [general: mathematics](stream/266967-general:-mathematics/index.html) (47 topics)
 
 * [seminar: Topos Colloquium](stream/269484-seminar:-Topos-Colloquium/index.html) (45 topics)
 
@@ -150,4 +150,4 @@ permalink: /index.html
 
 * [theory: alternate presentations](stream/233122-theory:-alternate-presentations/index.html) (1 topic)
 
-<hr><p>Last updated: Feb 16 2022 at 00:30 UTC</p>
+<hr><p>Last updated: Feb 17 2022 at 00:28 UTC</p>
