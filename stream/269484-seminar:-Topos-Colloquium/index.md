@@ -9,7 +9,8 @@ permalink: /stream/269484-seminar:-Topos-Colloquium/index.html
 
 ### Topics:
 
-* [2022](topic/topic_2022.html) (1 message, latest: Feb 09 2022 at 22:42)
+* [David Danks: "Ethics in AI, not Ethics of AI"](topic/topic_David.20Danks.3A.20.22Ethics.20in.20AI.2C.20not.20Ethics.20of.20AI.22.html) (8 messages, latest: Feb 15 2022 at 22:12)
+* [2022](topic/topic_2022.html) (2 messages, latest: Feb 15 2022 at 21:36)
 * [Robert Harper: "Phase Distinctions in Type Theory"](topic/topic_Robert.20Harper.3A.20.22Phase.20Distinctions.20in.20Type.20Theory.22.html) (2 messages, latest: Dec 06 2021 at 15:03)
 * [Evan Patterson: "Categories of diagrams in \[...\]"](topic/topic_Evan.20Patterson.3A.20.22Categories.20of.20diagrams.20in.20.5B.2E.2E.2E.5D.22.html) (3 messages, latest: Dec 02 2021 at 16:33)
 * [Andreas Blaas: "A topos view of axioms of choice for \[...\]"](topic/topic_Andreas.20Blaas.3A.20.22A.20topos.20view.20of.20axioms.20of.20choice.20for.20.5B.2E.2E.2E.5D.22.html) (6 messages, latest: Nov 22 2021 at 17:59)
@@ -54,4 +55,4 @@ permalink: /stream/269484-seminar:-Topos-Colloquium/index.html
 * [Richard Garner: "Comodels of an algebraic theory"](topic/topic_Richard.20Garner.3A.20.22Comodels.20of.20an.20algebraic.20theory.22.html) (27 messages, latest: Feb 11 2021 at 22:36)
 * [stream events](topic/topic_stream.20events.html) (2 messages, latest: Dec 26 2020 at 19:06)
 
-<hr><p>Last updated: Feb 13 2022 at 17:29 UTC</p>
+<hr><p>Last updated: Feb 17 2022 at 00:28 UTC</p>

@@ -9,6 +9,7 @@ permalink: /stream/229111-general/index.html
 
 ### Topics:
 
+* [sad news: Bénabou (1932-2022)](topic/topic_sad.20news.3A.20B.C3.A9nabou.20(1932-2022).html) (2 messages, latest: Feb 14 2022 at 04:22)
 * [ACT book series](topic/topic_ACT.20book.20series.html) (4 messages, latest: Feb 06 2022 at 04:24)
 * [Theoretical Computer Science for the Working Cat Theorist](topic/topic_Theoretical.20Computer.20Science.20for.20the.20Working.20Cat.20Theorist.html) (4 messages, latest: Jan 26 2022 at 16:52)
 * [CMCS deadline extension: please submit your work!](topic/topic_CMCS.20deadline.20extension.3A.20please.20submit.20your.20work!.html) (1 message, latest: Jan 25 2022 at 14:14)
@@ -230,4 +231,4 @@ permalink: /stream/229111-general/index.html
 * [Tools for diagrams](topic/topic_Tools.20for.20diagrams.html) (78 messages, latest: Mar 25 2020 at 17:53)
 * [topic demonstration](topic/topic_topic.20demonstration.html) (2 messages, latest: Mar 23 2020 at 16:57)
 
-<hr><p>Last updated: Feb 13 2022 at 17:29 UTC</p>
+<hr><p>Last updated: Feb 17 2022 at 00:28 UTC</p>

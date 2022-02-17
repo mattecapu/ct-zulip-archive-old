@@ -9,6 +9,7 @@ permalink: /stream/229156-practice:-applied-ct/index.html
 
 ### Topics:
 
+* [functors in Haskell](topic/topic_functors.20in.20Haskell.html) (3 messages, latest: Feb 14 2022 at 06:57)
 * [ACT as a field](topic/topic_ACT.20as.20a.20field.html) (279 messages, latest: Jan 30 2022 at 10:27)
 * [spans and images](topic/topic_spans.20and.20images.html) (125 messages, latest: Jan 28 2022 at 16:55)
 * [formalizing ACT](topic/topic_formalizing.20ACT.html) (2 messages, latest: Jan 04 2022 at 13:06)
@@ -137,4 +138,4 @@ permalink: /stream/229156-practice:-applied-ct/index.html
 * [AACT2020](topic/topic_AACT2020.html) (1 message, latest: Mar 24 2020 at 00:56)
 * [welcome](topic/topic_welcome.html) (15 messages, latest: Mar 24 2020 at 00:03)
 
-<hr><p>Last updated: Feb 13 2022 at 17:29 UTC</p>
+<hr><p>Last updated: Feb 17 2022 at 00:28 UTC</p>

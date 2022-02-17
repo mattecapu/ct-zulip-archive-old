@@ -9,6 +9,7 @@ permalink: /stream/266967-general:-mathematics/index.html
 
 ### Topics:
 
+* [Lie  Groupoids and PDEs](topic/topic_Lie.20.20Groupoids.20and.20PDEs.html) (7 messages, latest: Feb 16 2022 at 21:35)
 * [Enriched Sheaves](topic/topic_Enriched.20Sheaves.html) (5 messages, latest: Feb 01 2022 at 19:19)
 * [partial continuous maps](topic/topic_partial.20continuous.20maps.html) (18 messages, latest: Jan 17 2022 at 22:08)
 * [The Joy of Abstraction](topic/topic_The.20Joy.20of.20Abstraction.html) (11 messages, latest: Jan 12 2022 at 18:01)
@@ -56,4 +57,4 @@ permalink: /stream/266967-general:-mathematics/index.html
 * [the 600-cell](topic/topic_the.20600-cell.html) (5 messages, latest: Dec 01 2020 at 16:35)
 * [hermitian matrix over normed division algebra](topic/topic_hermitian.20matrix.20over.20normed.20division.20algebra.html) (8 messages, latest: Sep 28 2020 at 21:19)
 
-<hr><p>Last updated: Feb 13 2022 at 17:29 UTC</p>
+<hr><p>Last updated: Feb 17 2022 at 00:28 UTC</p>

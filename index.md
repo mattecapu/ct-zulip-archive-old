@@ -8,13 +8,13 @@ permalink: /index.html
 
 ## Streams:
 
-* [learning: questions](stream/229199-learning:-questions/index.html) (622 topics)
+* [learning: questions](stream/229199-learning:-questions/index.html) (623 topics)
 
-* [theory: category theory](stream/229136-theory:-category-theory/index.html) (238 topics)
+* [theory: category theory](stream/229136-theory:-category-theory/index.html) (241 topics)
 
-* [general](stream/229111-general/index.html) (220 topics)
+* [general](stream/229111-general/index.html) (221 topics)
 
-* [practice: applied ct](stream/229156-practice:-applied-ct/index.html) (127 topics)
+* [practice: applied ct](stream/229156-practice:-applied-ct/index.html) (128 topics)
 
 * [general: events](stream/229141-general:-events/index.html) (114 topics)
 
@@ -26,9 +26,9 @@ permalink: /index.html
 
 * [theory: algebraic topology & homological algebra](stream/241590-theory:-algebraic-topology-&-homological-algebra/index.html) (49 topics)
 
-* [general: mathematics](stream/266967-general:-mathematics/index.html) (46 topics)
+* [general: mathematics](stream/266967-general:-mathematics/index.html) (47 topics)
 
-* [seminar: Topos Colloquium](stream/269484-seminar:-Topos-Colloquium/index.html) (44 topics)
+* [seminar: Topos Colloquium](stream/269484-seminar:-Topos-Colloquium/index.html) (45 topics)
 
 * [theory: logic](stream/233104-theory:-logic/index.html) (44 topics)
 
@@ -44,7 +44,7 @@ permalink: /index.html
 
 * [practice: our papers](stream/258900-practice:-our-papers/index.html) (34 topics)
 
-* [practice: thermodynamics](stream/306433-practice:-thermodynamics/index.html) (30 topics)
+* [practice: thermodynamics](stream/306433-practice:-thermodynamics/index.html) (31 topics)
 
 * [learning: recommendations](stream/232161-learning:-recommendations/index.html) (24 topics)
 
@@ -150,4 +150,4 @@ permalink: /index.html
 
 * [theory: alternate presentations](stream/233122-theory:-alternate-presentations/index.html) (1 topic)
 
-<hr><p>Last updated: Feb 13 2022 at 17:29 UTC</p>
+<hr><p>Last updated: Feb 17 2022 at 00:28 UTC</p>
