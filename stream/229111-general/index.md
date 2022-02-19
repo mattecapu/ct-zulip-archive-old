@@ -9,12 +9,13 @@ permalink: /stream/229111-general/index.html
 
 ### Topics:
 
+* [introduce yourself!](topic/topic_introduce.20yourself!.html) (6 messages, latest: Feb 18 2022 at 21:04)
+* [quiver: a modern commutative diagram editor](topic/topic_quiver.3A.20a.20modern.20commutative.20diagram.20editor.html) (62 messages, latest: Feb 18 2022 at 15:10)
 * [sad news: Bénabou (1932-2022)](topic/topic_sad.20news.3A.20B.C3.A9nabou.20(1932-2022).html) (2 messages, latest: Feb 14 2022 at 04:22)
 * [ACT book series](topic/topic_ACT.20book.20series.html) (4 messages, latest: Feb 06 2022 at 04:24)
 * [Theoretical Computer Science for the Working Cat Theorist](topic/topic_Theoretical.20Computer.20Science.20for.20the.20Working.20Cat.20Theorist.html) (4 messages, latest: Jan 26 2022 at 16:52)
 * [CMCS deadline extension: please submit your work!](topic/topic_CMCS.20deadline.20extension.3A.20please.20submit.20your.20work!.html) (1 message, latest: Jan 25 2022 at 14:14)
 * [citing unnumbered results](topic/topic_citing.20unnumbered.20results.html) (83 messages, latest: Jan 21 2022 at 01:46)
-* [introduce yourself!](topic/topic_introduce.20yourself!.html) (3 messages, latest: Jan 07 2022 at 22:45)
 * [✔ are there multiple empty sets?](topic/topic_.E2.9C.94.20are.20there.20multiple.20empty.20sets.3F.html) (2 messages, latest: Jan 05 2022 at 19:54)
 * [how do YOU use a computer in your research?](topic/topic_how.20do.20YOU.20use.20a.20computer.20in.20your.20research.3F.html) (1 message, latest: Jan 04 2022 at 15:22)
 * [new streams](topic/topic_new.20streams.html) (86 messages, latest: Jan 04 2022 at 10:50)
@@ -33,7 +34,6 @@ permalink: /stream/229111-general/index.html
 * [Bart Jacobs wins Simon Stevin](topic/topic_Bart.20Jacobs.20wins.20Simon.20Stevin.html) (2 messages, latest: Sep 22 2021 at 05:55)
 * [Grothendieck on topos theory](topic/topic_Grothendieck.20on.20topos.20theory.html) (85 messages, latest: Sep 04 2021 at 03:26)
 * [the Topos Institute is open!](topic/topic_the.20Topos.20Institute.20is.20open!.html) (30 messages, latest: Aug 07 2021 at 08:38)
-* [quiver: a modern commutative diagram editor](topic/topic_quiver.3A.20a.20modern.20commutative.20diagram.20editor.html) (61 messages, latest: Aug 06 2021 at 18:03)
 * [category theory in human psychology](topic/topic_category.20theory.20in.20human.20psychology.html) (121 messages, latest: Aug 04 2021 at 18:00)
 * [Higher Lie Schreier Theory](topic/topic_Higher.20Lie.20Schreier.20Theory.html) (4 messages, latest: Jul 26 2021 at 09:11)
 * [the MathFoldr project](topic/topic_the.20MathFoldr.20project.html) (21 messages, latest: Jul 16 2021 at 03:15)
@@ -231,4 +231,4 @@ permalink: /stream/229111-general/index.html
 * [Tools for diagrams](topic/topic_Tools.20for.20diagrams.html) (78 messages, latest: Mar 25 2020 at 17:53)
 * [topic demonstration](topic/topic_topic.20demonstration.html) (2 messages, latest: Mar 23 2020 at 16:57)
 
-<hr><p>Last updated: Feb 18 2022 at 00:35 UTC</p>
+<hr><p>Last updated: Feb 19 2022 at 00:35 UTC</p>
