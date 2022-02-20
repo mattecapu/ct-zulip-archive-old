@@ -44,7 +44,7 @@ permalink: /index.html
 
 * [practice: our papers](stream/258900-practice:-our-papers/index.html) (34 topics)
 
-* [practice: thermodynamics](stream/306433-practice:-thermodynamics/index.html) (31 topics)
+* [practice: thermodynamics](stream/306433-practice:-thermodynamics/index.html) (34 topics)
 
 * [learning: recommendations](stream/232161-learning:-recommendations/index.html) (24 topics)
 
@@ -150,4 +150,4 @@ permalink: /index.html
 
 * [theory: alternate presentations](stream/233122-theory:-alternate-presentations/index.html) (1 topic)
 
-<hr><p>Last updated: Feb 19 2022 at 00:35 UTC</p>
+<hr><p>Last updated: Feb 20 2022 at 00:38 UTC</p>

@@ -9,7 +9,8 @@ permalink: /stream/229199-learning:-questions/index.html
 
 ### Topics:
 
-* [Enriched graphs](topic/topic_Enriched.20graphs.html) (24 messages, latest: Feb 18 2022 at 22:55)
+* [internal toposes](topic/topic_internal.20toposes.html) (22 messages, latest: Feb 19 2022 at 19:24)
+* [Enriched graphs](topic/topic_Enriched.20graphs.html) (28 messages, latest: Feb 19 2022 at 09:45)
 * [groupoids with two objects](topic/topic_groupoids.20with.20two.20objects.html) (44 messages, latest: Feb 18 2022 at 18:01)
 * [groupoid representations and Erlangen geometry](topic/topic_groupoid.20representations.20and.20Erlangen.20geometry.html) (1 message, latest: Feb 17 2022 at 23:39)
 * [groupoid representations and erlangen geometry](topic/topic_groupoid.20representations.20and.20erlangen.20geometry.html) (16 messages, latest: Feb 17 2022 at 23:36)
@@ -74,7 +75,6 @@ permalink: /stream/229199-learning:-questions/index.html
 * [reference: enriched cartesian closure](topic/topic_reference.3A.20enriched.20cartesian.20closure.html) (2 messages, latest: Dec 29 2021 at 15:52)
 * [extensive categories](topic/topic_extensive.20categories.html) (26 messages, latest: Dec 28 2021 at 16:44)
 * ["monoidal limit"](topic/topic_.22monoidal.20limit.22.html) (16 messages, latest: Dec 27 2021 at 23:49)
-* [internal toposes](topic/topic_internal.20toposes.html) (21 messages, latest: Dec 27 2021 at 16:41)
 * [Compatible algebras and opalgebras](topic/topic_Compatible.20algebras.20and.20opalgebras.html) (6 messages, latest: Dec 26 2021 at 21:14)
 * ["Monoidal limit"](topic/topic_.22Monoidal.20limit.22.html) (50 messages, latest: Dec 23 2021 at 11:32)
 * [Beginner study group?](topic/topic_Beginner.20study.20group.3F.html) (13 messages, latest: Dec 23 2021 at 04:34)
@@ -636,4 +636,4 @@ permalink: /stream/229199-learning:-questions/index.html
 * [Algebra (Aluffi) exercises](topic/topic_Algebra.20(Aluffi).20exercises.html) (55 messages, latest: Mar 27 2020 at 23:38)
 * [What is category theory about?](topic/topic_What.20is.20category.20theory.20about.3F.html) (16 messages, latest: Mar 26 2020 at 16:03)
 
-<hr><p>Last updated: Feb 19 2022 at 00:35 UTC</p>
+<hr><p>Last updated: Feb 20 2022 at 00:38 UTC</p>

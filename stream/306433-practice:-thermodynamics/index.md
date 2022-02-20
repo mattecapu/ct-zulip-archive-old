@@ -9,6 +9,9 @@ permalink: /stream/306433-practice:-thermodynamics/index.html
 
 ### Topics:
 
+* [Courant Algebroid](topic/topic_Courant.20Algebroid.html) (2 messages, latest: Feb 19 2022 at 18:26)
+* [The Right Word for the Job](topic/topic_The.20Right.20Word.20for.20the.20Job.html) (10 messages, latest: Feb 19 2022 at 18:23)
+* [2-Operad](topic/topic_2-Operad.html) (2 messages, latest: Feb 19 2022 at 17:45)
 * [Non-integrable Dirac structures](topic/topic_Non-integrable.20Dirac.20structures.html) (7 messages, latest: Feb 15 2022 at 21:32)
 * [symplectic geometry and Dirac structures](topic/topic_symplectic.20geometry.20and.20Dirac.20structures.html) (31 messages, latest: Feb 09 2022 at 03:07)
 * [compositional thermostatics blog posts](topic/topic_compositional.20thermostatics.20blog.20posts.html) (1 message, latest: Feb 07 2022 at 21:50)
@@ -41,4 +44,4 @@ permalink: /stream/306433-practice:-thermodynamics/index.html
 * [Stat Mech of the Carnot Engine](topic/topic_Stat.20Mech.20of.20the.20Carnot.20Engine.html) (2 messages, latest: Nov 10 2021 at 23:58)
 * [stream events](topic/topic_stream.20events.html) (13 messages, latest: Nov 09 2021 at 19:58)
 
-<hr><p>Last updated: Feb 19 2022 at 00:35 UTC</p>
+<hr><p>Last updated: Feb 20 2022 at 00:38 UTC</p>
