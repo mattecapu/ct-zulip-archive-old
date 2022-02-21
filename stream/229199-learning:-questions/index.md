@@ -9,7 +9,7 @@ permalink: /stream/229199-learning:-questions/index.html
 
 ### Topics:
 
-* [internal toposes](topic/topic_internal.20toposes.html) (22 messages, latest: Feb 19 2022 at 19:24)
+* [internal toposes](topic/topic_internal.20toposes.html) (74 messages, latest: Feb 20 2022 at 23:49)
 * [Enriched graphs](topic/topic_Enriched.20graphs.html) (28 messages, latest: Feb 19 2022 at 09:45)
 * [groupoids with two objects](topic/topic_groupoids.20with.20two.20objects.html) (44 messages, latest: Feb 18 2022 at 18:01)
 * [groupoid representations and Erlangen geometry](topic/topic_groupoid.20representations.20and.20Erlangen.20geometry.html) (1 message, latest: Feb 17 2022 at 23:39)
@@ -636,4 +636,4 @@ permalink: /stream/229199-learning:-questions/index.html
 * [Algebra (Aluffi) exercises](topic/topic_Algebra.20(Aluffi).20exercises.html) (55 messages, latest: Mar 27 2020 at 23:38)
 * [What is category theory about?](topic/topic_What.20is.20category.20theory.20about.3F.html) (16 messages, latest: Mar 26 2020 at 16:03)
 
-<hr><p>Last updated: Feb 20 2022 at 00:38 UTC</p>
+<hr><p>Last updated: Feb 21 2022 at 00:33 UTC</p>

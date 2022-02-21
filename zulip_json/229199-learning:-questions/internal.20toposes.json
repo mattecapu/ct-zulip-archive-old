@@ -130,5 +130,317 @@
         "id": 272537053,
         "sender_full_name": "Leopold Schlicht",
         "timestamp": 1645298642
+    },
+    {
+        "content": "<p>One reason why Johnstone might talk about internal categories is that people who like topos theory like 'doing mathematics in a topos', and if you do category theory in a topos you're studying categories internal to a topos.   </p>\n<p>(Some size issues show up here, but not so much if you're studying <em>small</em> categories.)</p>",
+        "id": 272554080,
+        "sender_full_name": "John Baez",
+        "timestamp": 1645318160
+    },
+    {
+        "content": "<p>There is a theorem that says that for every bounded geometric morphism E → S there is an internal site in S and an equivalence (over S) between E and sheaves on that site. (Maybe S needs to have an NNO, I forget. But it does not need to be a Grothendieck topos.)</p>",
+        "id": 272554803,
+        "sender_full_name": "Zhen Lin Low",
+        "timestamp": 1645318916
+    },
+    {
+        "content": "<p>A lot of the basic theory of Grothendieck toposes can be relativised by introducing a base topos S like this, but the price is that you have to use the machinery of internal categories and locally internal categories.</p>",
+        "id": 272554897,
+        "sender_full_name": "Zhen Lin Low",
+        "timestamp": 1645319037
+    },
+    {
+        "content": "<p>This was standard for a long time (and I have an ongoing project about these). A few years ago, Olivia Caramello made the reasonable judgement that the price was too high: actually computing the internal sites and working with them is horrible. We have an abstract site-theoretic construction of a pullback of toposes over a base topos, but good luck actually computing it!<br>\nInstead, she had a look (or got one of her PhD students to look) at what could be done with stacks; note, though, that her research programme is mostly concerned with Grothendieck toposes. Many results are contained in the thesis of <span class=\"user-mention\" data-user-id=\"284376\">@Riccardo Zanfa</span>, although I have to admit I haven't read much of it.</p>",
+        "id": 272578756,
+        "sender_full_name": "Morgan Rogers (he/him)",
+        "timestamp": 1645348423
+    },
+    {
+        "content": "<p>Hmmm. Is that what those papers about stacks is about... interesting. Are you sure it's not just them reinventing locally internal category theory?</p>",
+        "id": 272578897,
+        "sender_full_name": "Zhen Lin Low",
+        "timestamp": 1645348564
+    },
+    {
+        "content": "<p>I can't be sure since I haven't read enough, and I also am not familiar enough with locally internal category theory to recognize if someone were reinventing it.</p>",
+        "id": 272580209,
+        "sender_full_name": "Morgan Rogers (he/him)",
+        "timestamp": 1645350121
+    },
+    {
+        "content": "<p>OK. I ask because a locally internal category is (among other things) a stack satisfying certain conditions.</p>",
+        "id": 272580373,
+        "sender_full_name": "Zhen Lin Low",
+        "timestamp": 1645350316
+    },
+    {
+        "content": "<p>Maybe I should add that I mean \"is\" in the sense \"should be\" there. The conventional definition does not require or imply the stack condition, which I believe results in unintuitive situations like \"there exists a terminal object\" being true for some internal category even if there is no functor from the terminal internal category picking it out. (The axiom of unique choice is not applicable because terminal objects are not strictly unique!)</p>",
+        "id": 272581191,
+        "sender_full_name": "Zhen Lin Low",
+        "timestamp": 1645351241
+    },
+    {
+        "content": "<p>Ah I never understood that we are meant to interpret statements about internal categories as statements in the internal logic (since \"internal category\" makes sense also in other categories like Cat or Top where \"internal logic\" does not).</p>",
+        "id": 272582447,
+        "sender_full_name": "Reid Barton",
+        "timestamp": 1645352663
+    },
+    {
+        "content": "<p>But isn't there still a separate issue around things like what it means to have say binary products, since the internal axiom of choice may fail?</p>",
+        "id": 272582464,
+        "sender_full_name": "Reid Barton",
+        "timestamp": 1645352687
+    },
+    {
+        "content": "<p>Yes, you have the difference between category with products and category with chosen products coming up. This is pointed out in a few constructions in the Elephant.</p>",
+        "id": 272583298,
+        "sender_full_name": "Morgan Rogers (he/him)",
+        "timestamp": 1645353667
+    },
+    {
+        "content": "<p>In any topos – even any cartesian category really – we have the axiom of _unique_ choice, which tells us that any functional relation is realised by a function. Morally, a category with a terminal object, or binary products, or such that some object has a representable functor with a left adjoint, or whatever gadgets that are unique up to unique isomorphism, should be the same thing as a category with chosen gadgets, because the choice is essentially unique! The failure of this is more down to the foundations we choose to work in and the definitions we choose to work with than anything deep. In classical foundations where categories have a _set_ of objects we can (ab)use the axiom of choice to work around this flaw. In HoTT where categories have a _classifying space_ of objects we can use the axiom of unique choice. But in a general 1-topos we have neither the axiom of choice nor classifying spaces.</p>",
+        "id": 272586420,
+        "sender_full_name": "Zhen Lin Low",
+        "timestamp": 1645357001
+    },
+    {
+        "content": "<p>Thanks for the discussion!<br>\n<span class=\"user-mention silent\" data-user-id=\"276480\">Reid Barton</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/internal.20toposes/near/272582447\">said</a>:</p>\n<blockquote>\n<p>(since \"internal category\" makes sense also in other categories like Cat or Top where \"internal logic\" does not).</p>\n</blockquote>\n<p>That's not true. Each finitely complete category has an internal language which is a theory in so-called <a href=\"https://ncatlab.org/nlab/show/cartesian%20logic\">[[cartesian logic]]</a>.</p>",
+        "id": 272599325,
+        "sender_full_name": "Leopold Schlicht",
+        "timestamp": 1645371712
+    },
+    {
+        "content": "<p>Each finitely complete category can interpret cartesian logic. And the theory of categories is a cartesian theory.</p>",
+        "id": 272599643,
+        "sender_full_name": "Leopold Schlicht",
+        "timestamp": 1645372051
+    },
+    {
+        "content": "<p>For sufficiently flexible meanings of \"logic\", sure.</p>",
+        "id": 272600301,
+        "sender_full_name": "Reid Barton",
+        "timestamp": 1645372714
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"416301\">Zhen Lin Low</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/internal.20toposes/near/272586420\">said</a>:</p>\n<blockquote>\n<p>In any topos – even any cartesian category really – we have the axiom of _unique_ choice, which tells us that any functional relation is realised by a function. Morally, a category with a terminal object, or binary products, or such that some object has a representable functor with a left adjoint, or whatever gadgets that are unique up to unique isomorphism, should be the same thing as a category with chosen gadgets, because the choice is essentially unique! The failure of this is more down to the foundations we choose to work in and the definitions we choose to work with than anything deep. In classical foundations where categories have a _set_ of objects we can (ab)use the axiom of choice to work around this flaw. In HoTT where categories have a _classifying space_ of objects we can use the axiom of unique choice. But in a general 1-topos we have neither the axiom of choice nor classifying spaces.</p>\n</blockquote>\n<p>Indeed, dealing with the differences between internal categories that (e.g.) \"have products\" vs \"have chosen products\" is one of the main subtleties --- and it is also a nice motivation for stacks (as opposed to arbitrary fibrations).</p>",
+        "id": 272600836,
+        "sender_full_name": "Jonathan Sterling",
+        "timestamp": 1645373215
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276480\">Reid Barton</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/internal.20toposes/near/272600301\">said</a>:</p>\n<blockquote>\n<p>For sufficiently flexible meanings of \"logic\", sure.</p>\n</blockquote>\n<p>I think the appropriate meaning of \"internal logic\" is \"whatever structure the subobject preorders are stably closed under\".  So every kind of category surely has an internal logic, but it may be more or less degenerate depending on how nice the structure of that category is. Or else we would have to come up with some bizarre explanation of why (e.g.) \"coherent logic\" is a kind of logic but \"cartesian logic\" and \"equational logic\" are not!</p>",
+        "id": 272601117,
+        "sender_full_name": "Jonathan Sterling",
+        "timestamp": 1645373523
+    },
+    {
+        "content": "<p>All  I really meant is that considering internal categories in C doesn't suggest in general that we are also thinking about the internal logic of C, whatever that might mean. For example people who think about double categories aren't thinking about the internal logic of Cat.</p>",
+        "id": 272601242,
+        "sender_full_name": "Reid Barton",
+        "timestamp": 1645373663
+    },
+    {
+        "content": "<p>But in fact I was mostly misremembering which thing I was confused about--having a terminal object vs having products.</p>",
+        "id": 272602378,
+        "sender_full_name": "Reid Barton",
+        "timestamp": 1645374952
+    },
+    {
+        "content": "<p>Is a stack automatically locally representable (up to equivalence of stacks) by an internal category?</p>",
+        "id": 272602430,
+        "sender_full_name": "Reid Barton",
+        "timestamp": 1645374969
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"416301\">Zhen Lin Low</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/internal.20toposes/near/272554803\">said</a>:</p>\n<blockquote>\n<p>There is a theorem that says that for every bounded geometric morphism E → S there is an internal site in S and an equivalence (over S) between E and sheaves on that site. (Maybe S needs to have an NNO, I forget. But it does not need to be a Grothendieck topos.)</p>\n</blockquote>\n<p>Thanks, I think that's the theorem discussed at the beginning of this thread! Is there also another motivation in the book for studying internal categories except the applications in relative topos theory? It doesn't look like the book discusses toposes over a base too much.</p>",
+        "id": 272605259,
+        "sender_full_name": "Leopold Schlicht",
+        "timestamp": 1645378037
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276480\">Reid Barton</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/internal.20toposes/near/272602430\">said</a>:</p>\n<blockquote>\n<p>Is a stack automatically locally representable (up to equivalence of stacks) by an internal category?</p>\n</blockquote>\n<p>I don't think so. Stacks in general are the relative version of large categories, and internal categories are the relative version of small categories.</p>",
+        "id": 272605458,
+        "sender_full_name": "Jonathan Sterling",
+        "timestamp": 1645378237
+    },
+    {
+        "content": "<p>Ah right, I guess I meant a stack of small categories.</p>",
+        "id": 272605534,
+        "sender_full_name": "Reid Barton",
+        "timestamp": 1645378328
+    },
+    {
+        "content": "<p>So one has to define what a \"stack of small categories is\", but with the correct definition one does indeed find that the original small stack is equivalent to the externalization of an internal category. You may find it useful to check out the corresponding section of my mini-book on relative category theory: <a href=\"https://www.jonmsterling.com/math/nodes/000N.html\">https://www.jonmsterling.com/math/nodes/000N.html</a></p>",
+        "id": 272620424,
+        "sender_full_name": "Jonathan Sterling",
+        "timestamp": 1645395373
+    },
+    {
+        "content": "<p>I don't think that's true. (If it were then I wouldn't have had to write \"should be\" earlier.) The naïve externalisation of an internal category may fail to be a stack.</p>",
+        "id": 272620541,
+        "sender_full_name": "Zhen Lin Low",
+        "timestamp": 1645395526
+    },
+    {
+        "content": "<p>ohh, that's true... I was thinking only of general fibrations.</p>",
+        "id": 272620553,
+        "sender_full_name": "Jonathan Sterling",
+        "timestamp": 1645395552
+    },
+    {
+        "content": "<p>In this case, the full internal subcategory determined by the stack's generic object is equivalent to the stack but I suppose it need not itself be a stack, unless I am missing something. So this is very close to Reid's request --- it shows that every small stack is weakly equivalent (as a fibration) to the externalization of an internal category.</p>",
+        "id": 272620669,
+        "sender_full_name": "Jonathan Sterling",
+        "timestamp": 1645395709
+    },
+    {
+        "content": "<p>If the base category is a Grothendieck topos, you can take the stack completion of the generic object to obtain a (weakly) equivalent internal category whose externalization is a stack.</p>",
+        "id": 272620775,
+        "sender_full_name": "Jonathan Sterling",
+        "timestamp": 1645395826
+    },
+    {
+        "content": "<p>But let me come back to this another time, I am too sleepy right now and likely to make mistakes. But before I go to bed, let me remark that there is a nice \"descent axiom\" that you can formulate for the generic object of a small fibration, and it would be nice to check that when this axiom holds, the externalization of the resulting internal category is a stack.</p>",
+        "id": 272620872,
+        "sender_full_name": "Jonathan Sterling",
+        "timestamp": 1645395939
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"416301\">Zhen Lin Low</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/internal.20toposes/near/272586420\">said</a>:</p>\n<blockquote>\n<p>In any topos – even any cartesian category really – we have the axiom of _unique_ choice, which tells us that any functional relation is realised by a function. Morally, a category with a terminal object, or binary products, or such that some object has a representable functor with a left adjoint, or whatever gadgets that are unique up to unique isomorphism, should be the same thing as a category with chosen gadgets, because the choice is essentially unique! The failure of this is more down to the foundations we choose to work in and the definitions we choose to work with than anything deep. In classical foundations where categories have a _set_ of objects we can (ab)use the axiom of choice to work around this flaw. In HoTT where categories have a _classifying space_ of objects we can use the axiom of unique choice. But in a general 1-topos we have neither the axiom of choice nor classifying spaces.</p>\n</blockquote>\n<p>By the way, it is not the case that in any cartesian category we have the axiom of unique choice. It is very easy to find examples of cartesian categories in which unique choice fails --- in particular, I believe that any quasitopos that is not a topos would be a counterexample (e.g. a category of assemblies).</p>",
+        "id": 272621156,
+        "sender_full_name": "Jonathan Sterling",
+        "timestamp": 1645396287
+    },
+    {
+        "content": "<p>It depends on how you interpret the <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"normal\">∃</mi><mo stretchy=\"false\">!</mo></mrow><annotation encoding=\"application/x-tex\">\\exists !</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6944em;\"></span><span class=\"mord\">∃</span><span class=\"mclose\">!</span></span></span></span> quantifier. If your interpretation does not make it a theorem that every cartesian category has unique choice then it's probably not a good interpretation.</p>",
+        "id": 272621460,
+        "sender_full_name": "Zhen Lin Low",
+        "timestamp": 1645396640
+    },
+    {
+        "content": "<p><span class=\"user-mention\" data-user-id=\"416301\">@Zhen Lin Low</span>  I am sorry, but this is just not reasonable. It is true that in cartesian logic, $\\exists!$ is a quantifier on its own and means the thing you say --- but that is reasonable in the specific case because cartesian logic doesn't have an ordinary existential quantifier. In a logic that has an existential quantifier, it is necessary for $\\exists!$ to mean the expanded statement \"there exists x such that for all y, x = y\" etc. </p>\n<p>Why do I insist on this? Because the failure of unique choice in MY sense is an important measure of how bad a category is... There are plenty of \"alternative foundations of mathematics\" in which unique choice fails, and this failure has very important implications. To trivialize this by just saying \"unique choice holds because I defined it to be a tautology\" is really not a good idea.</p>",
+        "id": 272624028,
+        "sender_full_name": "Jonathan Sterling",
+        "timestamp": 1645399523
+    },
+    {
+        "content": "<p>Are you telling me you can give a total interpretation of <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"normal\">∃</mi></mrow><annotation encoding=\"application/x-tex\">\\exists</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6944em;\"></span><span class=\"mord\">∃</span></span></span></span> in an arbitrary cartesian category?</p>",
+        "id": 272624125,
+        "sender_full_name": "Zhen Lin Low",
+        "timestamp": 1645399620
+    },
+    {
+        "content": "<p>This is rather like saying \"Function extensionality holds in every model of intensional type theory, because if I interpret <code>Id(A-&gt; B, f, g)</code> to be anything other than <code>Pi(x:A). Id(B, f(x), f(y))</code> it is \"probably not a good interpretation\".</p>",
+        "id": 272624135,
+        "sender_full_name": "Jonathan Sterling",
+        "timestamp": 1645399629
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"416301\">Zhen Lin Low</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/internal.20toposes/near/272624125\">said</a>:</p>\n<blockquote>\n<p>Are you telling me you can give a total interpretation of <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"normal\">∃</mi></mrow><annotation encoding=\"application/x-tex\">\\exists</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6944em;\"></span><span class=\"mord\">∃</span></span></span></span> in an arbitrary cartesian category?</p>\n</blockquote>\n<p>No I am saying precisely the opposite.</p>",
+        "id": 272624137,
+        "sender_full_name": "Jonathan Sterling",
+        "timestamp": 1645399636
+    },
+    {
+        "content": "<p>The fact that cartesian categories do not have existential quantifiers means that it is not appropriate to speak of \"unique choice\" in that context --- unique choice is an important property of the interaction between the actual existential quantifier, exponentials, and equality, which might hold and might fail in a given category. It is similar to balancedness.</p>",
+        "id": 272624211,
+        "sender_full_name": "Jonathan Sterling",
+        "timestamp": 1645399698
+    },
+    {
+        "content": "<p>In general, when a property holds of nearly every category in which it can be stated, you can be sure that you do not have a good definition. That is why I object to speaking of the property you describe as \"unique choice\".</p>",
+        "id": 272624258,
+        "sender_full_name": "Jonathan Sterling",
+        "timestamp": 1645399780
+    },
+    {
+        "content": "<p>If you say it is not appropriate to speak of unique choice in a cartesian category then you are not really in a position to say it fails in a cartesian category either.</p>",
+        "id": 272624296,
+        "sender_full_name": "Zhen Lin Low",
+        "timestamp": 1645399802
+    },
+    {
+        "content": "<p>Good, because I am not saying it fails in a cartesian category.</p>",
+        "id": 272624321,
+        "sender_full_name": "Jonathan Sterling",
+        "timestamp": 1645399816
+    },
+    {
+        "content": "<blockquote>\n<p>\"find examples of cartesian categories in which unique choice fails \"</p>\n</blockquote>",
+        "id": 272624331,
+        "sender_full_name": "Zhen Lin Low",
+        "timestamp": 1645399834
+    },
+    {
+        "content": "<p>I meant, \"I can find examples of categories that have finite limits <strong>AND</strong> for which unique choice is a meaningful concept, in which unique choice fails\".</p>",
+        "id": 272624347,
+        "sender_full_name": "Jonathan Sterling",
+        "timestamp": 1645399871
+    },
+    {
+        "content": "<p>I am not familiar with categories in which <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"normal\">∃</mi></mrow><annotation encoding=\"application/x-tex\">\\exists</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6944em;\"></span><span class=\"mord\">∃</span></span></span></span> can be interpreted and in which the axiom of unique choice does not hold. It holds in any regular category.</p>",
+        "id": 272624435,
+        "sender_full_name": "Zhen Lin Low",
+        "timestamp": 1645399983
+    },
+    {
+        "content": "<p>I think there is another variable here, namely whether <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"normal\">∃</mi></mrow><annotation encoding=\"application/x-tex\">\\exists</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6944em;\"></span><span class=\"mord\">∃</span></span></span></span>/images are interpreted as being about subobjects or regular subobjects in categories where those differ.</p>",
+        "id": 272624619,
+        "sender_full_name": "Reid Barton",
+        "timestamp": 1645400194
+    },
+    {
+        "content": "<p>Yes, precisely. Thank you <span class=\"user-mention\" data-user-id=\"276480\">@Reid Barton</span></p>",
+        "id": 272624624,
+        "sender_full_name": "Jonathan Sterling",
+        "timestamp": 1645400202
+    },
+    {
+        "content": "<p>That is EXACTLY the point of unique choice, and why in a given logic it may succeed or fail.</p>",
+        "id": 272624631,
+        "sender_full_name": "Jonathan Sterling",
+        "timestamp": 1645400223
+    },
+    {
+        "content": "<p>For me, just thinking about geometric examples like Top, the regular subobject definition seems more sensible and I think it's the one you have in mind (if I'm not mixed up).</p>",
+        "id": 272624666,
+        "sender_full_name": "Reid Barton",
+        "timestamp": 1645400279
+    },
+    {
+        "content": "<p>So I can have a map id : (X, discrete) -&gt; (X, not discrete) which is injective and whose regular image is everything, but it is not an isomorphism.</p>",
+        "id": 272624736,
+        "sender_full_name": "Reid Barton",
+        "timestamp": 1645400363
+    },
+    {
+        "content": "<p>I don't think so. I don't know of any serious attempt to interpret <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"normal\">∃</mi></mrow><annotation encoding=\"application/x-tex\">\\exists</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6944em;\"></span><span class=\"mord\">∃</span></span></span></span> using plain epimorphisms. If <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"normal\">∃</mi></mrow><annotation encoding=\"application/x-tex\">\\exists</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6944em;\"></span><span class=\"mord\">∃</span></span></span></span> is a regular or strong epimorphism then the choice of subobjects does not matter, because regular/strong epi + plain mono is already iso.</p>",
+        "id": 272624808,
+        "sender_full_name": "Zhen Lin Low",
+        "timestamp": 1645400424
+    },
+    {
+        "content": "<p>Considring as an example the category of PERs or assemblies on some pca, the correct formulation of unique choice would employ the <em>regular</em> existential quantifier. But I believe we can show that unique choice in this sense doesn't hold.</p>",
+        "id": 272625105,
+        "sender_full_name": "Jonathan Sterling",
+        "timestamp": 1645400769
+    },
+    {
+        "content": "<p>I am informed the category of assemblies is regular. So how could it fail? (I'm not talking about the tripos.)</p>",
+        "id": 272625152,
+        "sender_full_name": "Zhen Lin Low",
+        "timestamp": 1645400835
+    },
+    {
+        "content": "<p>Let me come back to this tomorrow when I have slept more. This is subtle and I dont' want to write something down that's wrong.</p>",
+        "id": 272625164,
+        "sender_full_name": "Jonathan Sterling",
+        "timestamp": 1645400860
+    },
+    {
+        "content": "<p>I know you can construct hyperdoctrines where the axiom of unique choice fails. I even presented a <a href=\"http://zll22.user.srcf.net/dpmms/slides/2015-12-04-CartesianHyperdoctrines.pdf\">talk about it</a> once. I'm not talking about them.</p>",
+        "id": 272625276,
+        "sender_full_name": "Zhen Lin Low",
+        "timestamp": 1645400991
     }
 ]
