@@ -1,0 +1,110 @@
+[
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"275920\">John Baez</span> <a href=\"#narrow/stream/306433-practice.3A-thermodynamics/topic/port-Thermodynamic.20systems/near/272611268\">said</a>:</p>\n<blockquote>\n<p>That's good in a way because it leaves you something to do.   In real-world systems the so-called \"output\" can often affect the so-called \"input\".   Jan Willems has some important rants about this.</p>\n</blockquote>\n<p>Yes! I feel that this is an underestimated point. A lot of constraints in physics are fundamentally relational, and do not seem to impose any intrinsic distinction between inputs and outputs. The distinction only seems to be relevant from the external perspective of agents who interact with a (necessarily open) system. Nevertheless, I still think that input and output are useful notions - and so does Jan Willems despite his famous rants - and I'd be interested to read work that defines them carefully, if you know of any. </p>\n<p>This is now taking us far from the purpose of this stream (sorry for hijacking it), but I do think that conceptual clarity about these ideas would also benefit computer science, where systems are built precisely for the purpose of exhibiting a specific input/output behaviour. Perhaps that's a controversial claim, but I get the sense that the field is generally confused about these notions (in particular in theoretical areas stemming from concurrency, distributed systems, coalgebra, automata etc.), though this is likely more a reflection of my own ignorance than of the field itself.</p>",
+        "id": 272662813,
+        "sender_full_name": "Robin Piedeleu",
+        "timestamp": 1645436160
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"280755\">Owen Lynch</span> <a href=\"#narrow/stream/306433-practice.3A-thermodynamics/topic/port-Thermodynamic.20systems/near/272610732\">said</a>:</p>\n<blockquote>\n<p>This was my dream! To represent resistors as dumping heat into a heat bath!</p>\n</blockquote>\n<p>This might not be exactly what you're looking for, but the bond graph literature also has so-called RS-elements, to represent systems which convert energy in some mechanical/electrical/other domain to the entropy domain. I believe resistors (when one also wants to keep track of energy dissipated in the form of heat) should fit in this category. The idea can be found in J. Thoma's <em>Introduction to Bond Graphs and their Applications</em> for example.</p>",
+        "id": 272664559,
+        "sender_full_name": "Robin Piedeleu",
+        "timestamp": 1645437079
+    },
+    {
+        "content": "<p>Oh, excellent, thank you</p>",
+        "id": 272688652,
+        "sender_full_name": "Owen Lynch",
+        "timestamp": 1645450562
+    },
+    {
+        "content": "<p>Owen has been sneaking up on bond graphs through his study of Dirac structures, which are a kind of elite mathematical approach to what engineers do with bond graphs.  I seem to recall that Thoma's book is one of the best on bond graphs: at one point I read all the books I could get my hands on.</p>",
+        "id": 272710151,
+        "sender_full_name": "John Baez",
+        "timestamp": 1645461141
+    },
+    {
+        "content": "<blockquote>\n<p>A lot of constraints in physics are fundamentally relational, and do not seem to impose any intrinsic distinction between inputs and outputs. The distinction only seems to be relevant from the external perspective of agents who interact with a (necessarily open) system. Nevertheless, I still think that input and output are useful notions - and so does Jan Willems despite his famous rants - and I'd be interested to read work that defines them carefully, if you know of any. </p>\n</blockquote>\n<p>I think it's an interesting physics question how despite the <a href=\"https://en.wikipedia.org/wiki/Reciprocity_(electromagnetism)\">reciprocity principle</a> which holds quite generally in physics - roughly, the symmetry between inputs and outputs - we are able to build physical systems that <em>act</em> as if the input affects the output and not vice versa.</p>",
+        "id": 272710457,
+        "sender_full_name": "John Baez",
+        "timestamp": 1645461306
+    },
+    {
+        "content": "<p>It seems like the Willems approach is to treat systems as fundamentally relational, but then consider input-output \"factorizations\", which are non-unique for a particular system</p>",
+        "id": 272710796,
+        "sender_full_name": "Owen Lynch",
+        "timestamp": 1645461477
+    },
+    {
+        "content": "<p>Something interesting that I've seen in the bond-graph literature is to build directionality into relational systems, so that although the systems are not strictly input-output, the computations are still directed</p>",
+        "id": 272710969,
+        "sender_full_name": "Owen Lynch",
+        "timestamp": 1645461549
+    },
+    {
+        "content": "<p>Something feels very homotopy-theoretic about the non-canonicity of input-output factorizations...</p>",
+        "id": 272711071,
+        "sender_full_name": "Owen Lynch",
+        "timestamp": 1645461599
+    },
+    {
+        "content": "<p>Oh?</p>",
+        "id": 272711183,
+        "sender_full_name": "John Baez",
+        "timestamp": 1645461629
+    },
+    {
+        "content": "<p>I don't really have deep thoughts on this, it's just that my homotopy spider senses always trigger when there are lots of equivalent choices to be made</p>",
+        "id": 272711333,
+        "sender_full_name": "Owen Lynch",
+        "timestamp": 1645461722
+    },
+    {
+        "content": "<p>Perhaps a more precise word would be \"weakness\"</p>",
+        "id": 272711414,
+        "sender_full_name": "Owen Lynch",
+        "timestamp": 1645461749
+    },
+    {
+        "content": "<p>Kind of like how we end up with a double category for structured cospans because pullbacks are only up to isomorphism</p>",
+        "id": 272711502,
+        "sender_full_name": "Owen Lynch",
+        "timestamp": 1645461801
+    },
+    {
+        "content": "<p>I have a similar intuition that something like this is going to show up if we define a Dirac structure as being defined by its so-called kernel representation, i.e. given as the kernel of some matrix.</p>",
+        "id": 272711738,
+        "sender_full_name": "Owen Lynch",
+        "timestamp": 1645461927
+    },
+    {
+        "content": "<p>Which is the form that we need Dirac structures in if you want to compute with them</p>",
+        "id": 272711776,
+        "sender_full_name": "Owen Lynch",
+        "timestamp": 1645461949
+    },
+    {
+        "content": "<p>And I expect there are special ways of writing that matrix that make computing with Dirac relations easier</p>",
+        "id": 272711878,
+        "sender_full_name": "Owen Lynch",
+        "timestamp": 1645461994
+    },
+    {
+        "content": "<p>But, undoubtedly, whatever categorical construct we come up with that has a matrix as part of the definition of an object will need to be treated \"weakly\"</p>",
+        "id": 272712021,
+        "sender_full_name": "Owen Lynch",
+        "timestamp": 1645462076
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"275920\">John Baez</span> <a href=\"#narrow/stream/306433-practice.3A-thermodynamics/topic/port-thermodynamic.20systems/near/272710457\">said</a>:</p>\n<blockquote>\n<p>I think it's an interesting physics question how despite the <a href=\"https://en.wikipedia.org/wiki/Reciprocity_(electromagnetism)\">reciprocity principle</a> which holds quite generally in physics - roughly, the symmetry between inputs and outputs - we are able to build physical systems that <em>act</em> as if the input affects the output and not vice versa.</p>\n</blockquote>\n<p>I would love to see a definition of input/output in the most general setting one can imagine in physics. Is it possible to formally define the two notions? Is it just work performed on/by a given system?</p>",
+        "id": 272718833,
+        "sender_full_name": "Robin Piedeleu",
+        "timestamp": 1645466044
+    },
+    {
+        "content": "<p>That's really tough.  In control theory they have thoughts about how one physical system can control another through 'information': for example if you flip a switch to turn on a light it can take very little work, but in some approximation you are affecting it while it is not affecting you.  But these thoughts were never tied to physics very carefully in anything I read.</p>",
+        "id": 272724880,
+        "sender_full_name": "John Baez",
+        "timestamp": 1645470219
+    }
+]

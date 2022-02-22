@@ -442,5 +442,167 @@
         "id": 272625276,
         "sender_full_name": "Zhen Lin Low",
         "timestamp": 1645400991
+    },
+    {
+        "content": "<p>A reference for my claims is <a href=\"https://ncatlab.org/nlab/show/quasitopos\">https://ncatlab.org/nlab/show/quasitopos</a>, which mentions the failure of the function comprehension principle (a.k.a. unique choice) in quasitopoi that aren't topoi. However I suspect that what is actually going on here is that we are working from subtle differences in terminology. Roughly the issue is that propositions in a quasitopos must be represented as _strong_ monomorphisms (and I believe in the case of assemblies, you can show that these are exactly the fiberwise codiscrete subobjects, i.e. ones whose realizers carry no useful data). As a result, there is not enough realizability data in the subobject <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"false\">{</mo><mi>R</mi><mo>:</mo><mi>A</mi><mo>×</mo><mi>B</mi><mo>→</mo><mtext mathvariant=\"bold\">StrongProp</mtext><mo>∣</mo><mi>R</mi><mtext> is a total relation </mtext><mo stretchy=\"false\">}</mo></mrow><annotation encoding=\"application/x-tex\">\\{R : A \\times B \\to \\textbf{StrongProp} \\mid R \\text{ is a total relation }\\}</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mopen\">{</span><span class=\"mord mathnormal\" style=\"margin-right:0.00773em;\">R</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">:</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.7667em;vertical-align:-0.0833em;\"></span><span class=\"mord mathnormal\">A</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span><span class=\"mbin\">×</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.05017em;\">B</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">→</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord text\"><span class=\"mord textbf\">StrongProp</span></span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">∣</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.00773em;\">R</span><span class=\"mord text\"><span class=\"mord\"> is a total relation </span></span><span class=\"mclose\">}</span></span></span></span> to turn a functional relation into a function. I hope this helps clarify matters, or at least isolate where I am confused.</p>",
+        "id": 272675292,
+        "sender_full_name": "Jonathan Sterling",
+        "timestamp": 1645442631
+    },
+    {
+        "content": "<p>I see. In that hyperdoctrine <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"normal\">∃</mi></mrow><annotation encoding=\"application/x-tex\">\\exists</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6944em;\"></span><span class=\"mord\">∃</span></span></span></span> is interpreted by ordinary epimorphisms, and the failure of the axiom of unique choice is indeed down to non-balancedness.Incidentally, for the hyperdoctrine of subspaces (over the category of topological spaces), the functional relations are arbitrary not-necessarily-continuous functions, which I find rather disturbing.</p>",
+        "id": 272681270,
+        "sender_full_name": "Zhen Lin Low",
+        "timestamp": 1645446262
+    },
+    {
+        "content": "<p>Ah, I think I remember why I made a fuss about topological quotients in that talk about cartesian hyperdoctrines now...</p>",
+        "id": 272682155,
+        "sender_full_name": "Zhen Lin Low",
+        "timestamp": 1645446800
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276777\">Mike Shulman</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/internal.20toposes/near/265186281\">said</a>:</p>\n<blockquote>\n<p>If you care about toposes over a base -- which, for instance, includes all algebraic geometers, since a variety defined \"over\" a field <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>k</mi></mrow><annotation encoding=\"application/x-tex\">k</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6944em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.03148em;\">k</span></span></span></span> in the algebraic sense is in particular a topos over <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mrow><mi mathvariant=\"normal\">S</mi><mi mathvariant=\"normal\">p</mi><mi mathvariant=\"normal\">e</mi><mi mathvariant=\"normal\">c</mi></mrow><mo stretchy=\"false\">(</mo><mi>k</mi><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">{\\rm Spec}(k)</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord\"><span class=\"mord\"><span class=\"mord mathrm\">Spec</span></span></span><span class=\"mopen\">(</span><span class=\"mord mathnormal\" style=\"margin-right:0.03148em;\">k</span><span class=\"mclose\">)</span></span></span></span> in this categorical sense -- then it's often handy to study them in terms of internal sites.</p>\n</blockquote>\n<p>Does that have applications in algebraic geometry, which justify the claim that algebraic geometers are, or should be, interested in topoi over a base?</p>\n<p>To me algebraic geometers don't seem to be very interested in topoi:</p>\n<p><a href=\"http://math.stanford.edu/~vakil/216blog/FOAGnov1817public.pdf\">Vakil</a>:</p>\n<blockquote>\n<p>This I promise: if I use the word “topoi”, you can shoot me.</p>\n</blockquote>\n<p><a href=\"https://www.jmilne.org/math/CourseNotes/LEC.pdf\">Milne</a>:</p>\n<blockquote>\n<p>In SGA 4, p299, it is argued that toposes are the natural objects of study rather than sites. However, I shall not use the word again in these notes.</p>\n</blockquote>",
+        "id": 272719120,
+        "sender_full_name": "Leopold Schlicht",
+        "timestamp": 1645466272
+    },
+    {
+        "content": "<p>Grothendieck wasn't popular with everyone... but the current generation of algebraic geometers is not predisposed to be against using topos theory explicitly (rather than just working in and over toposes while ignoring them)</p>",
+        "id": 272720765,
+        "sender_full_name": "Morgan Rogers (he/him)",
+        "timestamp": 1645467347
+    },
+    {
+        "content": "<p>Seems like a pretty obvious case of hyperbole on Vakil's part. I think the spirit of these sentences is that you don't need an exhaustive topos theory to talk thoroughly about sheaves on a (Zariski/Nisnevich/etale) site to an algebraic geometer. They don't need to go into further abstraction just for the sake of it.</p>",
+        "id": 272723696,
+        "sender_full_name": "Ian Coley",
+        "timestamp": 1645469494
+    },
+    {
+        "content": "<p>Nonetheless, I think people who write such things would do well to think a bit about the source of such strong emotions on their part...</p>\n<p>I can't imagine saying something like \"If you catch me dirtying my hands with an actual prime ideal, you can shoot me!\"</p>",
+        "id": 272724346,
+        "sender_full_name": "Jonathan Sterling",
+        "timestamp": 1645469955
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"297784\">Jonathan Sterling</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/internal.20toposes/near/272675292\">said</a>:</p>\n<blockquote>\n<p>A reference for my claims is <a href=\"https://ncatlab.org/nlab/show/quasitopos\">https://ncatlab.org/nlab/show/quasitopos</a>, which mentions the failure of the function comprehension principle (a.k.a. unique choice) in quasitopoi that aren't topoi. However I suspect that what is actually going on here is that we are working from subtle differences in terminology. Roughly the issue is that propositions in a quasitopos must be represented as _strong_ monomorphisms</p>\n</blockquote>\n<p>I agree with all of this except with the \"must\".  I would say that a quasitopos has two different \"internal logics\" -- a logic of strong monomorphisms and a logic of arbitrary monomorphisms.  The logic of arbitrary monos has the advantage of satisfying unique choice, while the logic of strong monos has the advantage of having a subobject classifier.</p>",
+        "id": 272727582,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1645471941
+    },
+    {
+        "content": "<p>The best thing to do, in my opinion, is embed the quasitopos in a topos, such as <a href=\"https://ncatlab.org/nlab/show/subsequential%20spaces\">[[subsequential spaces]]</a> sitting inside [[Johnstone's topological topos]].  Then the standard internal logic of the topos (using arbitrary monos) has unique choice <em>and</em> a subobject classifier, plus there is generally a lex modality allowing you to recover the original quasitopos and its strong monos as the separated objects -- it's just that the classifier of arbitrary subobjects is not separated.</p>",
+        "id": 272727774,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1645472081
+    },
+    {
+        "content": "<p>Unfortunately, IIRC it is an open question whether every <em>elementary</em> quasitopos can be so embedded, but every <em>Grothendieck</em> one certainly can be.</p>",
+        "id": 272727812,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1645472127
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"295756\">Ian Coley</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/internal.20toposes/near/272723696\">said</a>:</p>\n<blockquote>\n<p>I think the spirit of these sentences is that you don't need an exhaustive topos theory to talk thoroughly about sheaves on a (Zariski/Nisnevich/etale) site to an algebraic geometer.</p>\n</blockquote>\n<p>Also \"sheaf\" in this context probably means a sheaf of abelian groups (or rings or modules or ...) so, at least in the classical theory, one never really thinks about the topos itself.</p>",
+        "id": 272729561,
+        "sender_full_name": "Reid Barton",
+        "timestamp": 1645473412
+    },
+    {
+        "content": "<p>(Also, algebraic geometry is a vast and diverse subject and it's hard to make general statements about it of this type.)</p>",
+        "id": 272729599,
+        "sender_full_name": "Reid Barton",
+        "timestamp": 1645473440
+    },
+    {
+        "content": "<p>That perspective has always seemed strange to me. We deduce so much about categories of groups and various other algebras by considering the underlying set functor; the natural corresponding construction for sheaves of groups is the forgetful functor to the topos of sheaves of sets. Why would people think it's a good idea to ignore that?</p>",
+        "id": 272735001,
+        "sender_full_name": "Morgan Rogers (he/him)",
+        "timestamp": 1645477523
+    },
+    {
+        "content": "<p>I don't think lowbrow algebraic geometers exactly \"ignore\" that a sheaf of R-modules has an underlying sheaf of sets, or \"think it's good a idea to ignore that\".   I think they consider it obvious.   I think they find topos theory complicated and don't see enough payoff to want to learn it.</p>",
+        "id": 272735732,
+        "sender_full_name": "John Baez",
+        "timestamp": 1645478134
+    },
+    {
+        "content": "<p>For example why does Milne, in his 200-page <a href=\"https://www.jmilne.org/math/CourseNotes/LEC.pdf\">Lectures on etale cohomology</a>, say</p>\n<blockquote>\n<p>In SGA 4, p299, it is argued that toposes are the natural objects of study rather than sites. However, I shall not use the word again in these notes.</p>\n</blockquote>\n<p>It's a somewhat grumpy sentence!  But I imagine he thinks that teaching the students topos theory would mainly slow down the business of getting to the topics he's interested in.</p>",
+        "id": 272735978,
+        "sender_full_name": "John Baez",
+        "timestamp": 1645478329
+    },
+    {
+        "content": "<p>Since I like categories, I think it would be great if he were wrong, and that his lectures would be much clearer and more efficient if he used topos theory.  But I'm not sure that's true.</p>",
+        "id": 272736040,
+        "sender_full_name": "John Baez",
+        "timestamp": 1645478382
+    },
+    {
+        "content": "<p>I think it is quite understandable to not want to take a detour through topoi if you are trying to teach algebraic geometry to students! The situation could be different if students were taught locales and topoi rather than topological spaces in their prerequisites, but that's not the world we live in.</p>\n<p>With that said, I think we can do without the \"grumpiness\". Some of the statements sound like they are <strong><em>holding back</em></strong> an avalanche of malice mixed with feelings of inadequacy --- surely these feelings are ones that we should not externalize onto our students. Far from making the topic more inviting to students who might be worried that they need to learn about topoi, I think it just sounds discouraging to students and fosters disunity. Maybe some old professor had a beef with Grothendieck, but I don't think it is reasonable to pass that on to the youth.</p>",
+        "id": 272736281,
+        "sender_full_name": "Jonathan Sterling",
+        "timestamp": 1645478567
+    },
+    {
+        "content": "<p>I agree that the grumpiness is pointless and silly.  I don't ever feel compelled to say stuff like \"I shall not use the word again\".   It's weird.</p>",
+        "id": 272737660,
+        "sender_full_name": "John Baez",
+        "timestamp": 1645479699
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"275920\">John Baez</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/internal.20toposes/near/272736040\">said</a>:</p>\n<blockquote>\n<p>Since I like categories, I think it would be great if he were wrong, and that his lectures would be much clearer and more efficient if he used topos theory.  But I'm not sure that's true.</p>\n</blockquote>\n<p>I would find it interesting to know when concepts from algebraic geometry depend only on the underlying (petit étale) toposes. For example, the structure sheaf is probably relevant when classifying line bundles, but not when computing cohomology of a constant group.</p>\n<p>This is a bit similar to how some theorems about smooth manifolds are really about the underlying topological space, while for others the choice of smooth structure is relevant.</p>",
+        "id": 272738085,
+        "sender_full_name": "Jens Hemelaer",
+        "timestamp": 1645480079
+    },
+    {
+        "content": "<p>for example, the property of being quasiseparated!</p>",
+        "id": 272738443,
+        "sender_full_name": "Reid Barton",
+        "timestamp": 1645480430
+    },
+    {
+        "content": "<p>Ah, does that only depend on the underlying petit étale toposes? I didn't know that.</p>",
+        "id": 272738648,
+        "sender_full_name": "Jens Hemelaer",
+        "timestamp": 1645480619
+    },
+    {
+        "content": "<p>I'm not sure I believe that. But here's something that definitely only depends on the underlying topos: the étale homotopy type!</p>",
+        "id": 272739903,
+        "sender_full_name": "Zhen Lin Low",
+        "timestamp": 1645481672
+    },
+    {
+        "content": "<p>It is usually stated as \"intersection of two affine opens is a finite union of affine opens\", which appears to depend on the structure sheaf. But a finite union of affine opens is the same as a quasicompact open, and that is the same as a subterminal object that's (quasi)compact in the topos sense.</p>",
+        "id": 272741143,
+        "sender_full_name": "Reid Barton",
+        "timestamp": 1645482887
+    },
+    {
+        "content": "<p>Ah, that's nice. I guess that's quasiseparatedness over <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"normal\">Spec</mi><mo>⁡</mo><mi mathvariant=\"double-struck\">Z</mi></mrow><annotation encoding=\"application/x-tex\">\\operatorname{Spec} \\mathbb{Z}</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8833em;vertical-align:-0.1944em;\"></span><span class=\"mop\"><span class=\"mord mathrm\">Spec</span></span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord mathbb\">Z</span></span></span></span>? I was thinking more generally  of quasiseparated morphisms, which would depend not only on the structure sheaf but also the base scheme.</p>",
+        "id": 272741477,
+        "sender_full_name": "Zhen Lin Low",
+        "timestamp": 1645483180
+    },
+    {
+        "content": "<p>Ah yes, I think that's right. Don't know what happens for quasiseparated morphisms, in general.</p>",
+        "id": 272742007,
+        "sender_full_name": "Reid Barton",
+        "timestamp": 1645483682
+    },
+    {
+        "content": "<p>Perhaps we would need some way of relativizing notions like \"quasicompact\" to a base topos... but that seems dangerously close to the original topic of this thread.</p>",
+        "id": 272742358,
+        "sender_full_name": "Reid Barton",
+        "timestamp": 1645484012
+    },
+    {
+        "content": "<p>Oh, that can be done, of course.</p>",
+        "id": 272742463,
+        "sender_full_name": "Zhen Lin Low",
+        "timestamp": 1645484112
     }
 ]

@@ -8,7 +8,7 @@ permalink: /index.html
 
 ## Streams:
 
-* [learning: questions](stream/229199-learning:-questions/index.html) (626 topics)
+* [learning: questions](stream/229199-learning:-questions/index.html) (630 topics)
 
 * [theory: category theory](stream/229136-theory:-category-theory/index.html) (243 topics)
 
@@ -28,7 +28,7 @@ permalink: /index.html
 
 * [general: mathematics](stream/266967-general:-mathematics/index.html) (48 topics)
 
-* [seminar: Topos Colloquium](stream/269484-seminar:-Topos-Colloquium/index.html) (45 topics)
+* [seminar: Topos Colloquium](stream/269484-seminar:-Topos-Colloquium/index.html) (46 topics)
 
 * [theory: logic](stream/233104-theory:-logic/index.html) (44 topics)
 
@@ -36,11 +36,11 @@ permalink: /index.html
 
 * [seminar: MIT Categories Seminar](stream/229457-seminar:-MIT-Categories-Seminar/index.html) (41 topics)
 
+* [practice: thermodynamics](stream/306433-practice:-thermodynamics/index.html) (40 topics)
+
 * [theory: type theory](stream/229952-theory:-type-theory/index.html) (40 topics)
 
 * [general: positions](stream/245502-general:-positions/index.html) (39 topics)
-
-* [practice: thermodynamics](stream/306433-practice:-thermodynamics/index.html) (37 topics)
 
 * [Categorical Probability and Statistics 2020 workshop](stream/238032-Categorical-Probability-and-Statistics-2020-workshop/index.html) (34 topics)
 
@@ -150,4 +150,4 @@ permalink: /index.html
 
 * [theory: alternate presentations](stream/233122-theory:-alternate-presentations/index.html) (1 topic)
 
-<hr><p>Last updated: Feb 21 2022 at 00:33 UTC</p>
+<hr><p>Last updated: Feb 22 2022 at 00:33 UTC</p>

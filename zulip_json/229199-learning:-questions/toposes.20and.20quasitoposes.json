@@ -1,0 +1,116 @@
+[
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276777\">Mike Shulman</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/internal.20toposes/near/272727774\">said</a>:</p>\n<blockquote>\n<p>The best thing to do, in my opinion, is embed the quasitopos in a topos, such as <a href=\"https://ncatlab.org/nlab/show/subsequential%20spaces\">[[subsequential spaces]]</a> sitting inside [[Johnstone's topological topos]].  Then the standard internal logic of the topos (using arbitrary monos) has unique choice <em>and</em> a subobject classifier, plus there is generally a lex modality allowing you to recover the original quasitopos and its strong monos as the separated objects -- it's just that the classifier of arbitrary subobjects is not separated.</p>\n</blockquote>\n<p>Is the recipe to take sheaves on the quasitopos with the coherent topology? I suppose this must not be what you have in mind...</p>",
+        "id": 272728559,
+        "sender_full_name": "Jonathan Sterling",
+        "timestamp": 1645472694
+    },
+    {
+        "content": "<p>If it's a Grothendieck quasitopos, meaning the category of separated sheaves on a bisite <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"false\">(</mo><mi>C</mi><mo separator=\"true\">,</mo><mi>J</mi><mo separator=\"true\">,</mo><mi>K</mi><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">(C,J,K)</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mopen\">(</span><span class=\"mord mathnormal\" style=\"margin-right:0.07153em;\">C</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.09618em;\">J</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.07153em;\">K</span><span class=\"mclose\">)</span></span></span></span>, then it embeds as the <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>K</mi></mrow><annotation encoding=\"application/x-tex\">K</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.07153em;\">K</span></span></span></span>-separated objects in the topos of <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"false\">(</mo><mi>C</mi><mo separator=\"true\">,</mo><mi>J</mi><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">(C,J)</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mopen\">(</span><span class=\"mord mathnormal\" style=\"margin-right:0.07153em;\">C</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.09618em;\">J</span><span class=\"mclose\">)</span></span></span></span>-sheaves.</p>",
+        "id": 272729078,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1645473059
+    },
+    {
+        "content": "<p>You can certainly take sheaves for the coherent topology on any (small) quasitopos, but then the resulting topos will be much larger than the quasitopos, and it's unclear whether the whole topos will admit a modality whose separated objects are relevant.  But in general, of course, as you well know, such embeddings are a reasonable way to use topos logic to reason about non-toposes, it's just that in the Grothendieck-quasitopos case one can do better.</p>",
+        "id": 272729333,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1645473242
+    },
+    {
+        "content": "<p>Gotcha. I was just now reading on the nlab about coarse objects in a quasitopos, and I think I am starting to get it.</p>\n<p>Let <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>E</mi></mrow><annotation encoding=\"application/x-tex\">E</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.05764em;\">E</span></span></span></span> be a quasitopos; the full subcategory <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mrow><mi mathvariant=\"sans-serif\">C</mi><mi mathvariant=\"sans-serif\">s</mi></mrow><mo stretchy=\"false\">(</mo><mi>E</mi><mo stretchy=\"false\">)</mo><mo>⊆</mo><mi>E</mi></mrow><annotation encoding=\"application/x-tex\">\\mathsf{Cs}(E)\\subseteq E</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord\"><span class=\"mord mathsf\">Cs</span></span><span class=\"mopen\">(</span><span class=\"mord mathnormal\" style=\"margin-right:0.05764em;\">E</span><span class=\"mclose\">)</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">⊆</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.05764em;\">E</span></span></span></span> spanned by coarse objects is a topos. When <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>E</mi></mrow><annotation encoding=\"application/x-tex\">E</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.05764em;\">E</span></span></span></span> is viewed as the category of separated objects for some site, then <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mrow><mi mathvariant=\"sans-serif\">C</mi><mi mathvariant=\"sans-serif\">s</mi></mrow><mo stretchy=\"false\">(</mo><mi>E</mi><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">\\mathsf{Cs}(E)</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord\"><span class=\"mord mathsf\">Cs</span></span><span class=\"mopen\">(</span><span class=\"mord mathnormal\" style=\"margin-right:0.05764em;\">E</span><span class=\"mclose\">)</span></span></span></span> is the category of sheaves for that site.</p>",
+        "id": 272729565,
+        "sender_full_name": "Jonathan Sterling",
+        "timestamp": 1645473415
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"297784\">Jonathan Sterling</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/internal.20toposes/near/272729565\">said</a>:</p>\n<blockquote>\n<p>Gotcha. I was just now reading on the nlab about coarse objects in a quasitopos, and I think I am starting to get it.</p>\n<p>Let <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>E</mi></mrow><annotation encoding=\"application/x-tex\">E</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.05764em;\">E</span></span></span></span> be a quasitopos; the full subcategory <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mrow><mi mathvariant=\"sans-serif\">C</mi><mi mathvariant=\"sans-serif\">s</mi></mrow><mo stretchy=\"false\">(</mo><mi>E</mi><mo stretchy=\"false\">)</mo><mo>⊆</mo><mi>E</mi></mrow><annotation encoding=\"application/x-tex\">\\mathsf{Cs}(E)\\subseteq E</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord\"><span class=\"mord mathsf\">Cs</span></span><span class=\"mopen\">(</span><span class=\"mord mathnormal\" style=\"margin-right:0.05764em;\">E</span><span class=\"mclose\">)</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">⊆</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.05764em;\">E</span></span></span></span> spanned by coarse objects is a topos. When <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>E</mi></mrow><annotation encoding=\"application/x-tex\">E</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.05764em;\">E</span></span></span></span> is viewed as the category of separated objects for some site, then <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mrow><mi mathvariant=\"sans-serif\">C</mi><mi mathvariant=\"sans-serif\">s</mi></mrow><mo stretchy=\"false\">(</mo><mi>E</mi><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">\\mathsf{Cs}(E)</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord\"><span class=\"mord mathsf\">Cs</span></span><span class=\"mopen\">(</span><span class=\"mord mathnormal\" style=\"margin-right:0.05764em;\">E</span><span class=\"mclose\">)</span></span></span></span> is the category of sheaves for that site.</p>\n</blockquote>\n<p>So just to keep thinking out loud, it sounds like the quasitopos is sandwiched between two topoi --- one a lex localization of another.</p>",
+        "id": 272729766,
+        "sender_full_name": "Jonathan Sterling",
+        "timestamp": 1645473563
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"297784\">Jonathan Sterling</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/internal.20toposes/near/272729766\">said</a>:</p>\n<blockquote>\n<p>it sounds like the quasitopos is sandwiched between two topoi --- one a lex localization of another.</p>\n</blockquote>\n<p>Yes, exactly!  At least, for a Grothendieck quasitopos.  For an elementary one, it's not always clear whether there is an \"outer\" topos containing it.  For instance, it's unclear how to embed the quasitopos of <a href=\"https://ncatlab.org/nlab/show/convergence%20spaces\">[[convergence spaces]]</a> into a topos.</p>",
+        "id": 272729958,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1645473648
+    },
+    {
+        "content": "<p>So now I have one last question in this line of thinking --- all this makes good sense for grothendieck quasitopoi, but I have a non-grothendieck quasitopos for which the same relationship occurs: in particular, the category of assemblies is sandwiched between SET and Eff, where SET is the double-negation-sheaves subtopos of Eff.</p>",
+        "id": 272730063,
+        "sender_full_name": "Jonathan Sterling",
+        "timestamp": 1645473717
+    },
+    {
+        "content": "<p>So are there some rules of thumb for when I should be able to do something like this, or do we just have a bunch of examples and counterexamples?</p>",
+        "id": 272730113,
+        "sender_full_name": "Jonathan Sterling",
+        "timestamp": 1645473732
+    },
+    {
+        "content": "<p>That's a good question!  I wish I had an equally good answer.  (-:</p>",
+        "id": 272730146,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1645473771
+    },
+    {
+        "content": "<p>That's fair :)</p>",
+        "id": 272730163,
+        "sender_full_name": "Jonathan Sterling",
+        "timestamp": 1645473792
+    },
+    {
+        "content": "<p>Lately I have been having some reasons to bother suffering with quasitopoi... Previously I had managed to avoid working explicitly with them.</p>\n<p>One property of an embedding of a quasitopos into a topos that does <em>not</em> seem to be satisfied for the nice embeddings that we are discussing (separated objects for a lex modality, etc.) is that it should preserve dependent products. In contrast, I suppose that the yoneda version that I proposed would preserve dependent products --- at the cost of some other trade-offs.</p>",
+        "id": 272730320,
+        "sender_full_name": "Jonathan Sterling",
+        "timestamp": 1645473907
+    },
+    {
+        "content": "<p>Really?  I thought the separated objects for any lex modality were always closed under dependent products.</p>",
+        "id": 272730371,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1645473943
+    },
+    {
+        "content": "<p>(I wonder if the last few messages in this thread should be moved to a new thread about quasitoposes.)</p>",
+        "id": 272730450,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1645473983
+    },
+    {
+        "content": "<p>Well, maybe I am confused about something --- but I think if the inclusion of a reflective subcategory preserves dependent products, then the reflection is lex. (But yes, moving to a new thread sounds good!)</p>",
+        "id": 272730455,
+        "sender_full_name": "Jonathan Sterling",
+        "timestamp": 1645473991
+    },
+    {
+        "content": "<p>Lemma 1.26 in <a href=\"https://arxiv.org/pdf/1706.07526.pdf\">RSS</a> says that any reflective subuniverse is closed under dependent products, where the base doesn't even have to be in the subuniverse.</p>",
+        "id": 272730591,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1645474088
+    },
+    {
+        "content": "<p>Huh...  So why can't I use this + adjoint play to show that the left adjoint preserves pullbacks?</p>",
+        "id": 272730671,
+        "sender_full_name": "Jonathan Sterling",
+        "timestamp": 1645474156
+    },
+    {
+        "content": "<p>Huh, I just did some back of the envelope computation and I no longer see why I thought this was untrue. Well, perhaps I spoke too soon in terms of needing to suffer through quasitopoi after all! So thanks for that! You saved me a lot of trouble.</p>",
+        "id": 272731704,
+        "sender_full_name": "Jonathan Sterling",
+        "timestamp": 1645474885
+    },
+    {
+        "content": "<p>So just to record what was confusing me in case anyone else is having the same problem --- there is Day's result that a reflective subcategory is an exponential ideal if and only if its reflector preserves products. For some reason I thought I envisioned a \"dependent\" version of this that says \"a reflective subcategory is closed under dependent products [with arbitrary base] if and only if its reflector preserves pullbacks\". I think that is my mistake --- the proof for products and exponentials doesn't seem to generalize to pullbacks and dependent products. <span class=\"user-mention\" data-user-id=\"276777\">@Mike Shulman</span> would you concur?</p>",
+        "id": 272736048,
+        "sender_full_name": "Jonathan Sterling",
+        "timestamp": 1645478396
+    },
+    {
+        "content": "<p>Yes, I agree; it's because dependent products are not \"adjoint\" to pullbacks in the same way that exponentials are adjoint to products.  There is a \"dependently typed\" version of Day's result, but what it says is that a reflective subcategory is a \"slice-wise exponential ideal\" if and only if the reflector preserves all pullbacks <em>over an object of the subcategory</em>.  This condition is called having \"stable units\" and is due to Cassidy, Hébert, and Kelly; I wrote something about it <a href=\"https://golem.ph.utexas.edu/category/2011/12/reflective_subfibrations_facto.html\">here</a>.</p>",
+        "id": 272737764,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1645479772
+    }
+]
