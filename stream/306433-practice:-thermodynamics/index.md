@@ -9,9 +9,11 @@ permalink: /stream/306433-practice:-thermodynamics/index.html
 
 ### Topics:
 
+* [Lagrangian subspaces](topic/topic_Lagrangian.20subspaces.html) (20 messages, latest: Feb 22 2022 at 22:45)
+* [Exergetic Port-Hamiltonian Systems](topic/topic_Exergetic.20Port-Hamiltonian.20Systems.html) (5 messages, latest: Feb 22 2022 at 22:11)
+* [port-thermodynamic systems](topic/topic_port-thermodynamic.20systems.html) (52 messages, latest: Feb 22 2022 at 19:33)
+* [2-operad](topic/topic_2-operad.html) (3 messages, latest: Feb 22 2022 at 15:16)
 * [Lagrangian Subspaces=](topic/topic_Lagrangian.20Subspaces.3D.html) (1 message, latest: Feb 21 2022 at 22:11)
-* [port-thermodynamic systems](topic/topic_port-thermodynamic.20systems.html) (18 messages, latest: Feb 21 2022 at 19:03)
-* [2-operad](topic/topic_2-operad.html) (1 message, latest: Feb 21 2022 at 04:18)
 * [port-Thermodynamic systems](topic/topic_port-Thermodynamic.20systems.html) (8 messages, latest: Feb 20 2022 at 20:37)
 * [the right word for the job](topic/topic_the.20right.20word.20for.20the.20job.html) (19 messages, latest: Feb 20 2022 at 15:16)
 * [Courant algebroid](topic/topic_Courant.20algebroid.html) (6 messages, latest: Feb 20 2022 at 15:14)
@@ -50,4 +52,4 @@ permalink: /stream/306433-practice:-thermodynamics/index.html
 * [Stat Mech of the Carnot Engine](topic/topic_Stat.20Mech.20of.20the.20Carnot.20Engine.html) (2 messages, latest: Nov 10 2021 at 23:58)
 * [stream events](topic/topic_stream.20events.html) (13 messages, latest: Nov 09 2021 at 19:58)
 
-<hr><p>Last updated: Feb 22 2022 at 00:33 UTC</p>
+<hr><p>Last updated: Feb 23 2022 at 00:37 UTC</p>

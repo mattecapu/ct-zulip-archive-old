@@ -9,9 +9,10 @@ permalink: /stream/229199-learning:-questions/index.html
 
 ### Topics:
 
-* [internal toposes](topic/topic_internal.20toposes.html) (101 messages, latest: Feb 21 2022 at 22:55)
+* [enriched graphs](topic/topic_enriched.20graphs.html) (31 messages, latest: Feb 23 2022 at 00:23)
+* [internal toposes](topic/topic_internal.20toposes.html) (129 messages, latest: Feb 22 2022 at 22:48)
+* [toposes and quasitoposes](topic/topic_toposes.20and.20quasitoposes.html) (20 messages, latest: Feb 22 2022 at 07:12)
 * [Alignable, applicative and alternative functors](topic/topic_Alignable.2C.20applicative.20and.20alternative.20functors.html) (1 message, latest: Feb 21 2022 at 21:55)
-* [toposes and quasitoposes](topic/topic_toposes.20and.20quasitoposes.html) (19 messages, latest: Feb 21 2022 at 21:42)
 * [checking if my functor preserves filtered colimits](topic/topic_checking.20if.20my.20functor.20preserves.20filtered.20colimits.html) (7 messages, latest: Feb 21 2022 at 20:33)
 * [Checking if my functor preserves filtered colimits](topic/topic_Checking.20if.20my.20functor.20preserves.20filtered.20colimits.html) (5 messages, latest: Feb 21 2022 at 11:15)
 * [Enriched graphs](topic/topic_Enriched.20graphs.html) (28 messages, latest: Feb 19 2022 at 09:45)
@@ -640,4 +641,4 @@ permalink: /stream/229199-learning:-questions/index.html
 * [Algebra (Aluffi) exercises](topic/topic_Algebra.20(Aluffi).20exercises.html) (55 messages, latest: Mar 27 2020 at 23:38)
 * [What is category theory about?](topic/topic_What.20is.20category.20theory.20about.3F.html) (16 messages, latest: Mar 26 2020 at 16:03)
 
-<hr><p>Last updated: Feb 22 2022 at 00:33 UTC</p>
+<hr><p>Last updated: Feb 23 2022 at 00:37 UTC</p>
