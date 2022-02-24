@@ -9,7 +9,7 @@ permalink: /stream/229141-general:-events/index.html
 
 ### Topics:
 
-* [Intercats](topic/topic_Intercats.html) (12 messages, latest: Feb 22 2022 at 22:59)
+* [Intercats](topic/topic_Intercats.html) (14 messages, latest: Feb 23 2022 at 10:26)
 * [MGS 2022](topic/topic_MGS.202022.html) (1 message, latest: Feb 22 2022 at 09:23)
 * [AMS school on applied category theory](topic/topic_AMS.20school.20on.20applied.20category.20theory.html) (55 messages, latest: Feb 20 2022 at 00:41)
 * [Mathematics of Collective Intelligence](topic/topic_Mathematics.20of.20Collective.20Intelligence.html) (6 messages, latest: Feb 15 2022 at 22:27)
@@ -125,4 +125,4 @@ permalink: /stream/229141-general:-events/index.html
 * [April 1st: ACT@UCR](topic/topic_April.201st.3A.20ACT.40UCR.html) (3 messages, latest: Mar 26 2020 at 23:58)
 * [Google Sites problem](topic/topic_Google.20Sites.20problem.html) (4 messages, latest: Mar 25 2020 at 04:29)
 
-<hr><p>Last updated: Feb 23 2022 at 00:37 UTC</p>
+<hr><p>Last updated: Feb 24 2022 at 00:34 UTC</p>

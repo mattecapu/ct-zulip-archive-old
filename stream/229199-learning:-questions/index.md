@@ -9,8 +9,11 @@ permalink: /stream/229199-learning:-questions/index.html
 
 ### Topics:
 
-* [enriched graphs](topic/topic_enriched.20graphs.html) (31 messages, latest: Feb 23 2022 at 00:23)
-* [internal toposes](topic/topic_internal.20toposes.html) (129 messages, latest: Feb 22 2022 at 22:48)
+* [beginner questions](topic/topic_beginner.20questions.html) (479 messages, latest: Feb 24 2022 at 00:32)
+* [universe axioms](topic/topic_universe.20axioms.html) (36 messages, latest: Feb 23 2022 at 23:05)
+* [internal toposes](topic/topic_internal.20toposes.html) (139 messages, latest: Feb 23 2022 at 23:02)
+* [adding morphisms](topic/topic_adding.20morphisms.html) (24 messages, latest: Feb 23 2022 at 20:40)
+* [enriched graphs](topic/topic_enriched.20graphs.html) (70 messages, latest: Feb 23 2022 at 19:30)
 * [toposes and quasitoposes](topic/topic_toposes.20and.20quasitoposes.html) (20 messages, latest: Feb 22 2022 at 07:12)
 * [Alignable, applicative and alternative functors](topic/topic_Alignable.2C.20applicative.20and.20alternative.20functors.html) (1 message, latest: Feb 21 2022 at 21:55)
 * [checking if my functor preserves filtered colimits](topic/topic_checking.20if.20my.20functor.20preserves.20filtered.20colimits.html) (7 messages, latest: Feb 21 2022 at 20:33)
@@ -19,7 +22,6 @@ permalink: /stream/229199-learning:-questions/index.html
 * [groupoids with two objects](topic/topic_groupoids.20with.20two.20objects.html) (44 messages, latest: Feb 18 2022 at 18:01)
 * [groupoid representations and Erlangen geometry](topic/topic_groupoid.20representations.20and.20Erlangen.20geometry.html) (1 message, latest: Feb 17 2022 at 23:39)
 * [groupoid representations and erlangen geometry](topic/topic_groupoid.20representations.20and.20erlangen.20geometry.html) (16 messages, latest: Feb 17 2022 at 23:36)
-* [beginner questions](topic/topic_beginner.20questions.html) (478 messages, latest: Feb 13 2022 at 17:16)
 * [coalgebraic logic basics](topic/topic_coalgebraic.20logic.20basics.html) (15 messages, latest: Feb 13 2022 at 15:52)
 * [decomposition of a Lie groupoid into sub Lie groupoids](topic/topic_decomposition.20of.20a.20Lie.20groupoid.20into.20sub.20Lie.20groupoids.html) (12 messages, latest: Feb 13 2022 at 13:41)
 * [deep learning](topic/topic_deep.20learning.html) (2 messages, latest: Feb 12 2022 at 01:54)
@@ -641,4 +643,4 @@ permalink: /stream/229199-learning:-questions/index.html
 * [Algebra (Aluffi) exercises](topic/topic_Algebra.20(Aluffi).20exercises.html) (55 messages, latest: Mar 27 2020 at 23:38)
 * [What is category theory about?](topic/topic_What.20is.20category.20theory.20about.3F.html) (16 messages, latest: Mar 26 2020 at 16:03)
 
-<hr><p>Last updated: Feb 23 2022 at 00:37 UTC</p>
+<hr><p>Last updated: Feb 24 2022 at 00:34 UTC</p>

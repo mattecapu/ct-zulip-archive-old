@@ -9,8 +9,9 @@ permalink: /stream/229111-general/index.html
 
 ### Topics:
 
-* [introduce yourself!](topic/topic_introduce.20yourself!.html) (6 messages, latest: Feb 18 2022 at 21:04)
-* [quiver: a modern commutative diagram editor](topic/topic_quiver.3A.20a.20modern.20commutative.20diagram.20editor.html) (62 messages, latest: Feb 18 2022 at 15:10)
+* [introduce yourself!](topic/topic_introduce.20yourself!.html) (7 messages, latest: Feb 23 2022 at 22:09)
+* [quiver: a modern commutative diagram editor](topic/topic_quiver.3A.20a.20modern.20commutative.20diagram.20editor.html) (63 messages, latest: Feb 23 2022 at 17:56)
+* [Lawvere Foundations Quote](topic/topic_Lawvere.20Foundations.20Quote.html) (30 messages, latest: Feb 23 2022 at 17:36)
 * [sad news: Bénabou (1932-2022)](topic/topic_sad.20news.3A.20B.C3.A9nabou.20(1932-2022).html) (2 messages, latest: Feb 14 2022 at 04:22)
 * [ACT book series](topic/topic_ACT.20book.20series.html) (4 messages, latest: Feb 06 2022 at 04:24)
 * [Theoretical Computer Science for the Working Cat Theorist](topic/topic_Theoretical.20Computer.20Science.20for.20the.20Working.20Cat.20Theorist.html) (4 messages, latest: Jan 26 2022 at 16:52)
@@ -113,7 +114,6 @@ permalink: /stream/229111-general/index.html
 * [Terry Tao's new blog post](topic/topic_Terry.20Tao's.20new.20blog.20post.html) (2 messages, latest: Oct 05 2020 at 13:52)
 * [bicompletions](topic/topic_bicompletions.html) (56 messages, latest: Oct 04 2020 at 22:36)
 * [Cat theory in type theory](topic/topic_Cat.20theory.20in.20type.20theory.html) (47 messages, latest: Oct 01 2020 at 20:45)
-* [Lawvere Foundations Quote](topic/topic_Lawvere.20Foundations.20Quote.html) (29 messages, latest: Sep 30 2020 at 01:20)
 * [Spacetimes, Domains and Categories](topic/topic_Spacetimes.2C.20Domains.20and.20Categories.html) (2 messages, latest: Sep 25 2020 at 01:40)
 * [2d TQFT](topic/topic_2d.20TQFT.html) (1 message, latest: Sep 24 2020 at 22:11)
 * [seminars](topic/topic_seminars.html) (14 messages, latest: Sep 24 2020 at 21:58)
@@ -231,4 +231,4 @@ permalink: /stream/229111-general/index.html
 * [Tools for diagrams](topic/topic_Tools.20for.20diagrams.html) (78 messages, latest: Mar 25 2020 at 17:53)
 * [topic demonstration](topic/topic_topic.20demonstration.html) (2 messages, latest: Mar 23 2020 at 16:57)
 
-<hr><p>Last updated: Feb 23 2022 at 00:37 UTC</p>
+<hr><p>Last updated: Feb 24 2022 at 00:34 UTC</p>
