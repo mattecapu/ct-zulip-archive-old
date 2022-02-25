@@ -8,7 +8,7 @@ permalink: /index.html
 
 ## Streams:
 
-* [learning: questions](stream/229199-learning:-questions/index.html) (633 topics)
+* [learning: questions](stream/229199-learning:-questions/index.html) (635 topics)
 
 * [theory: category theory](stream/229136-theory:-category-theory/index.html) (244 topics)
 
@@ -38,13 +38,13 @@ permalink: /index.html
 
 * [seminar: MIT Categories Seminar](stream/229457-seminar:-MIT-Categories-Seminar/index.html) (41 topics)
 
+* [general: positions](stream/245502-general:-positions/index.html) (40 topics)
+
 * [theory: type theory](stream/229952-theory:-type-theory/index.html) (40 topics)
 
-* [general: positions](stream/245502-general:-positions/index.html) (39 topics)
+* [practice: our papers](stream/258900-practice:-our-papers/index.html) (35 topics)
 
 * [Categorical Probability and Statistics 2020 workshop](stream/238032-Categorical-Probability-and-Statistics-2020-workshop/index.html) (34 topics)
-
-* [practice: our papers](stream/258900-practice:-our-papers/index.html) (34 topics)
 
 * [learning: recommendations](stream/232161-learning:-recommendations/index.html) (24 topics)
 
@@ -150,4 +150,4 @@ permalink: /index.html
 
 * [theory: alternate presentations](stream/233122-theory:-alternate-presentations/index.html) (1 topic)
 
-<hr><p>Last updated: Feb 24 2022 at 00:34 UTC</p>
+<hr><p>Last updated: Feb 25 2022 at 00:35 UTC</p>

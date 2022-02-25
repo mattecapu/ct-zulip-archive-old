@@ -9,11 +9,13 @@ permalink: /stream/229199-learning:-questions/index.html
 
 ### Topics:
 
-* [beginner questions](topic/topic_beginner.20questions.html) (479 messages, latest: Feb 24 2022 at 00:32)
-* [universe axioms](topic/topic_universe.20axioms.html) (36 messages, latest: Feb 23 2022 at 23:05)
+* [T(T(M))](topic/topic_T(T(M)).html) (9 messages, latest: Feb 25 2022 at 00:09)
+* [dependent pair category](topic/topic_dependent.20pair.20category.html) (8 messages, latest: Feb 24 2022 at 23:26)
+* [adding morphisms](topic/topic_adding.20morphisms.html) (36 messages, latest: Feb 24 2022 at 20:37)
+* [enriched graphs](topic/topic_enriched.20graphs.html) (74 messages, latest: Feb 24 2022 at 16:05)
+* [universe axioms](topic/topic_universe.20axioms.html) (43 messages, latest: Feb 24 2022 at 15:17)
+* [beginner questions](topic/topic_beginner.20questions.html) (483 messages, latest: Feb 24 2022 at 02:23)
 * [internal toposes](topic/topic_internal.20toposes.html) (139 messages, latest: Feb 23 2022 at 23:02)
-* [adding morphisms](topic/topic_adding.20morphisms.html) (24 messages, latest: Feb 23 2022 at 20:40)
-* [enriched graphs](topic/topic_enriched.20graphs.html) (70 messages, latest: Feb 23 2022 at 19:30)
 * [toposes and quasitoposes](topic/topic_toposes.20and.20quasitoposes.html) (20 messages, latest: Feb 22 2022 at 07:12)
 * [Alignable, applicative and alternative functors](topic/topic_Alignable.2C.20applicative.20and.20alternative.20functors.html) (1 message, latest: Feb 21 2022 at 21:55)
 * [checking if my functor preserves filtered colimits](topic/topic_checking.20if.20my.20functor.20preserves.20filtered.20colimits.html) (7 messages, latest: Feb 21 2022 at 20:33)
@@ -643,4 +645,4 @@ permalink: /stream/229199-learning:-questions/index.html
 * [Algebra (Aluffi) exercises](topic/topic_Algebra.20(Aluffi).20exercises.html) (55 messages, latest: Mar 27 2020 at 23:38)
 * [What is category theory about?](topic/topic_What.20is.20category.20theory.20about.3F.html) (16 messages, latest: Mar 26 2020 at 16:03)
 
-<hr><p>Last updated: Feb 24 2022 at 00:34 UTC</p>
+<hr><p>Last updated: Feb 25 2022 at 00:35 UTC</p>
