@@ -9,7 +9,8 @@ permalink: /stream/258900-practice:-our-papers/index.html
 
 ### Topics:
 
-* [categorical completeness](topic/topic_categorical.20completeness.html) (6 messages, latest: Feb 24 2022 at 21:38)
+* [categorical completeness](topic/topic_categorical.20completeness.html) (7 messages, latest: Feb 25 2022 at 19:42)
+* [Strict universes for Grothendieck topoi](topic/topic_Strict.20universes.20for.20Grothendieck.20topoi.html) (1 message, latest: Feb 25 2022 at 17:55)
 * [Sheaf semantics for termination-insensitive noninterference](topic/topic_Sheaf.20semantics.20for.20termination-insensitive.20noninterference.html) (1 message, latest: Feb 10 2022 at 12:02)
 * [fibered multicategory theory](topic/topic_fibered.20multicategory.20theory.html) (35 messages, latest: Jan 14 2022 at 19:09)
 * [fibrational linguistics](topic/topic_fibrational.20linguistics.html) (23 messages, latest: Jan 06 2022 at 14:40)
@@ -45,4 +46,4 @@ permalink: /stream/258900-practice:-our-papers/index.html
 * [stream events](topic/topic_stream.20events.html) (2 messages, latest: Oct 05 2020 at 15:30)
 * [Coends of higher arity](topic/topic_Coends.20of.20higher.20arity.html) (3 messages, latest: Sep 26 2020 at 16:28)
 
-<hr><p>Last updated: Feb 25 2022 at 00:35 UTC</p>
+<hr><p>Last updated: Feb 26 2022 at 00:33 UTC</p>
