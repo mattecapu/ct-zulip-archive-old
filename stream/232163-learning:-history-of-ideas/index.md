@@ -9,6 +9,7 @@ permalink: /stream/232163-learning:-history-of-ideas/index.html
 
 ### Topics:
 
+* [Zero (origins)](topic/topic_Zero.20(origins).html) (1 message, latest: Feb 27 2022 at 08:43)
 * [Origin of use of the symbol '⊶'](topic/topic_Origin.20of.20use.20of.20the.20symbol.20'.E2.8A.B6'.html) (3 messages, latest: Sep 07 2021 at 13:26)
 * [HIstory of Ideas AMA: John Baez](topic/topic_HIstory.20of.20Ideas.20AMA.3A.20John.20Baez.html) (24 messages, latest: Sep 07 2021 at 12:08)
 * [precursors of category theory](topic/topic_precursors.20of.20category.20theory.html) (12 messages, latest: Jun 01 2021 at 11:42)
@@ -31,4 +32,4 @@ permalink: /stream/232163-learning:-history-of-ideas/index.html
 * [All things Feynman](topic/topic_All.20things.20Feynman.html) (2 messages, latest: May 22 2020 at 06:04)
 * [stream events](topic/topic_stream.20events.html) (2 messages, latest: Apr 06 2020 at 18:15)
 
-<hr><p>Last updated: Feb 27 2022 at 00:36 UTC</p>
+<hr><p>Last updated: Feb 28 2022 at 00:36 UTC</p>
