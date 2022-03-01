@@ -1,0 +1,45 @@
+---
+layout: archive
+title: Zulip Chat Archive
+permalink: /stream/229125-practice:-software/topic/topic_.E2.9C.94.20limits.20latex.html
+---
+
+<h2>Stream: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229125-practice:-software/index.html">practice: software</a></h2>
+<h3>Topic: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229125-practice:-software/topic/topic_.E2.9C.94.20limits.20latex.html">✔ limits latex</a></h3>
+
+<hr>
+
+<base href="https://categorytheory.zulipchat.com/">
+
+{% raw %}
+
+<a name="273443824"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229125-practice%3A%20software/topic/%E2%9C%94%20limits%20latex/near/273443824" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Notification Bot <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229125-practice:-software/topic/topic_.E2.9C.94.20limits.20latex.html#273443824">(Feb 28 2022 at 04:02)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="425417">Mateo Carmona</span> has marked this topic as resolved.</p>
+
+
+
+<a name="273473841"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229125-practice%3A%20software/topic/%E2%9C%94%20limits%20latex/near/273473841" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Jules Hedges <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229125-practice:-software/topic/topic_.E2.9C.94.20limits.20latex.html#273473841">(Feb 28 2022 at 11:06)</a>:</h4>
+<p>I dunno if you marked it resolved intentionally or not, but going entirely from memory I think you can use <code>\operatorname{Lim}</code> to get all the spacing and such correct</p>
+
+
+
+<a name="273499791"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229125-practice%3A%20software/topic/%E2%9C%94%20limits%20latex/near/273499791" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mateo Carmona <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229125-practice:-software/topic/topic_.E2.9C.94.20limits.20latex.html#273499791">(Feb 28 2022 at 14:49)</a>:</h4>
+<p>Thanks, it was intentional. </p>
+<p>I solved it using</p>
+<blockquote>
+<p>\usepackage{xpatch}<br>
+\makeatletter<br>
+\xpatchcmd{\varlim@}{lim}{Lim}{}{}<br>
+\xpatchcmd{\varinjlim}{\textstyle}{\scriptstyle}{}{}<br>
+\xpatchcmd{\varprojlim}{\textstyle}{\scriptstyle}{}{}<br>
+\makeatother</p>
+</blockquote>
+
+
+
+{% endraw %}
+
+<hr><p>Last updated: Mar 01 2022 at 00:38 UTC</p>

@@ -9,6 +9,7 @@ permalink: /stream/274877-practice:-our-work/index.html
 
 ### Topics:
 
+* [posina](topic/topic_posina.html) (1 message, latest: Feb 28 2022 at 21:20)
 * [John Baez](topic/topic_John.20Baez.html) (311 messages, latest: Feb 24 2022 at 22:28)
 * [David Roberts](topic/topic_David.20Roberts.html) (32 messages, latest: Feb 14 2022 at 21:17)
 * [Mike Shulman](topic/topic_Mike.20Shulman.html) (114 messages, latest: Feb 06 2022 at 18:01)
@@ -29,4 +30,4 @@ permalink: /stream/274877-practice:-our-work/index.html
 * [stream events](topic/topic_stream.20events.html) (6 messages, latest: Jan 31 2021 at 03:39)
 * [thoughts on sharing ideas](topic/topic_thoughts.20on.20sharing.20ideas.html) (20 messages, latest: Jan 31 2021 at 03:05)
 
-<hr><p>Last updated: Feb 28 2022 at 00:36 UTC</p>
+<hr><p>Last updated: Mar 01 2022 at 00:38 UTC</p>
