@@ -9,9 +9,9 @@ permalink: /stream/229111-general/index.html
 
 ### Topics:
 
+* [quiver: a modern commutative diagram editor](topic/topic_quiver.3A.20a.20modern.20commutative.20diagram.20editor.html) (69 messages, latest: Mar 01 2022 at 07:57)
 * [Lawvere Foundations Quote](topic/topic_Lawvere.20Foundations.20Quote.html) (31 messages, latest: Feb 28 2022 at 21:28)
 * [introduce yourself!](topic/topic_introduce.20yourself!.html) (14 messages, latest: Feb 28 2022 at 19:17)
-* [quiver: a modern commutative diagram editor](topic/topic_quiver.3A.20a.20modern.20commutative.20diagram.20editor.html) (68 messages, latest: Feb 28 2022 at 16:10)
 * [sad news: Bénabou (1932-2022)](topic/topic_sad.20news.3A.20B.C3.A9nabou.20(1932-2022).html) (2 messages, latest: Feb 14 2022 at 04:22)
 * [ACT book series](topic/topic_ACT.20book.20series.html) (4 messages, latest: Feb 06 2022 at 04:24)
 * [Theoretical Computer Science for the Working Cat Theorist](topic/topic_Theoretical.20Computer.20Science.20for.20the.20Working.20Cat.20Theorist.html) (4 messages, latest: Jan 26 2022 at 16:52)
@@ -231,4 +231,4 @@ permalink: /stream/229111-general/index.html
 * [Tools for diagrams](topic/topic_Tools.20for.20diagrams.html) (78 messages, latest: Mar 25 2020 at 17:53)
 * [topic demonstration](topic/topic_topic.20demonstration.html) (2 messages, latest: Mar 23 2020 at 16:57)
 
-<hr><p>Last updated: Mar 01 2022 at 00:38 UTC</p>
+<hr><p>Last updated: Mar 02 2022 at 00:37 UTC</p>
