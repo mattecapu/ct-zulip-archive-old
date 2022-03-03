@@ -9,6 +9,7 @@ permalink: /stream/229199-learning:-questions/index.html
 
 ### Topics:
 
+* [spatial categorical logic](topic/topic_spatial.20categorical.20logic.html) (22 messages, latest: Mar 02 2022 at 11:44)
 * [(infty,infty)-categories](topic/topic_(infty.2Cinfty)-categories.html) (5 messages, latest: Mar 01 2022 at 19:01)
 * [Is the Grothendieck construction adhesive?](topic/topic_Is.20the.20Grothendieck.20construction.20adhesive.3F.html) (19 messages, latest: Mar 01 2022 at 00:08)
 * [T(T(M))](topic/topic_T(T(M)).html) (29 messages, latest: Feb 28 2022 at 20:26)
@@ -165,7 +166,6 @@ permalink: /stream/229199-learning:-questions/index.html
 * [colored operad definition confusion](topic/topic_colored.20operad.20definition.20confusion.html) (7 messages, latest: Sep 16 2021 at 09:45)
 * [Boolean algebras and propositional theories](topic/topic_Boolean.20algebras.20and.20propositional.20theories.html) (35 messages, latest: Sep 15 2021 at 19:31)
 * [When are subobjects nice?](topic/topic_When.20are.20subobjects.20nice.3F.html) (17 messages, latest: Sep 15 2021 at 17:39)
-* [spatial categorical logic](topic/topic_spatial.20categorical.20logic.html) (19 messages, latest: Sep 13 2021 at 19:08)
 * [points of a topos](topic/topic_points.20of.20a.20topos.html) (28 messages, latest: Sep 13 2021 at 13:23)
 * [map of pseudoadjunctions](topic/topic_map.20of.20pseudoadjunctions.html) (3 messages, latest: Sep 12 2021 at 18:08)
 * [the generic inhabited linear order](topic/topic_the.20generic.20inhabited.20linear.20order.html) (12 messages, latest: Sep 11 2021 at 15:01)
@@ -648,4 +648,4 @@ permalink: /stream/229199-learning:-questions/index.html
 * [Algebra (Aluffi) exercises](topic/topic_Algebra.20(Aluffi).20exercises.html) (55 messages, latest: Mar 27 2020 at 23:38)
 * [What is category theory about?](topic/topic_What.20is.20category.20theory.20about.3F.html) (16 messages, latest: Mar 26 2020 at 16:03)
 
-<hr><p>Last updated: Mar 02 2022 at 00:37 UTC</p>
+<hr><p>Last updated: Mar 03 2022 at 00:37 UTC</p>
