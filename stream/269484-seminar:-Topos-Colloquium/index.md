@@ -9,7 +9,7 @@ permalink: /stream/269484-seminar:-Topos-Colloquium/index.html
 
 ### Topics:
 
-* [Glynn Winskel: "Making concurrency functional"](topic/topic_Glynn.20Winskel.3A.20.22Making.20concurrency.20functional.22.html) (3 messages, latest: Feb 28 2022 at 18:39)
+* [Glynn Winskel: "Making concurrency functional"](topic/topic_Glynn.20Winskel.3A.20.22Making.20concurrency.20functional.22.html) (4 messages, latest: Mar 03 2022 at 16:53)
 * [Bob Coecke: "Compositional Intelligence"](topic/topic_Bob.20Coecke.3A.20.22Compositional.20Intelligence.22.html) (4 messages, latest: Feb 24 2022 at 16:55)
 * [David Danks: "Ethics in AI, not Ethics of AI"](topic/topic_David.20Danks.3A.20.22Ethics.20in.20AI.2C.20not.20Ethics.20of.20AI.22.html) (9 messages, latest: Feb 17 2022 at 16:34)
 * [2022](topic/topic_2022.html) (2 messages, latest: Feb 15 2022 at 21:36)
@@ -57,4 +57,4 @@ permalink: /stream/269484-seminar:-Topos-Colloquium/index.html
 * [Richard Garner: "Comodels of an algebraic theory"](topic/topic_Richard.20Garner.3A.20.22Comodels.20of.20an.20algebraic.20theory.22.html) (27 messages, latest: Feb 11 2021 at 22:36)
 * [stream events](topic/topic_stream.20events.html) (2 messages, latest: Dec 26 2020 at 19:06)
 
-<hr><p>Last updated: Mar 03 2022 at 00:37 UTC</p>
+<hr><p>Last updated: Mar 04 2022 at 00:40 UTC</p>

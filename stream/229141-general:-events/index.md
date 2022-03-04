@@ -9,10 +9,10 @@ permalink: /stream/229141-general:-events/index.html
 
 ### Topics:
 
+* [AMS school on applied category theory](topic/topic_AMS.20school.20on.20applied.20category.20theory.html) (56 messages, latest: Mar 03 2022 at 17:11)
 * [ACT 2022: First Call For Papers](topic/topic_ACT.202022.3A.20First.20Call.20For.20Papers.html) (2 messages, latest: Feb 25 2022 at 10:33)
 * [Intercats](topic/topic_Intercats.html) (14 messages, latest: Feb 23 2022 at 10:26)
 * [MGS 2022](topic/topic_MGS.202022.html) (1 message, latest: Feb 22 2022 at 09:23)
-* [AMS school on applied category theory](topic/topic_AMS.20school.20on.20applied.20category.20theory.html) (55 messages, latest: Feb 20 2022 at 00:41)
 * [Mathematics of Collective Intelligence](topic/topic_Mathematics.20of.20Collective.20Intelligence.html) (6 messages, latest: Feb 15 2022 at 22:27)
 * [Adjoint School 2022](topic/topic_Adjoint.20School.202022.html) (41 messages, latest: Feb 13 2022 at 16:43)
 * [9th Indian School on Logic and its Applications (Part -I)](topic/topic_9th.20Indian.20School.20on.20Logic.20and.20its.20Applications.20(Part.20-I).html) (1 message, latest: Feb 12 2022 at 07:41)
@@ -126,4 +126,4 @@ permalink: /stream/229141-general:-events/index.html
 * [April 1st: ACT@UCR](topic/topic_April.201st.3A.20ACT.40UCR.html) (3 messages, latest: Mar 26 2020 at 23:58)
 * [Google Sites problem](topic/topic_Google.20Sites.20problem.html) (4 messages, latest: Mar 25 2020 at 04:29)
 
-<hr><p>Last updated: Mar 03 2022 at 00:37 UTC</p>
+<hr><p>Last updated: Mar 04 2022 at 00:40 UTC</p>
