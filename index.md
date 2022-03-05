@@ -8,7 +8,7 @@ permalink: /index.html
 
 ## Streams:
 
-* [learning: questions](stream/229199-learning:-questions/index.html) (638 topics)
+* [learning: questions](stream/229199-learning:-questions/index.html) (639 topics)
 
 * [theory: category theory](stream/229136-theory:-category-theory/index.html) (244 topics)
 
@@ -24,7 +24,7 @@ permalink: /index.html
 
 * [ACT 2020](stream/243068-ACT-2020/index.html) (61 topics)
 
-* [theory: algebraic topology & homological algebra](stream/241590-theory:-algebraic-topology-&-homological-algebra/index.html) (50 topics)
+* [theory: algebraic topology & homological algebra](stream/241590-theory:-algebraic-topology-&-homological-algebra/index.html) (51 topics)
 
 * [general: mathematics](stream/266967-general:-mathematics/index.html) (48 topics)
 
@@ -150,4 +150,4 @@ permalink: /index.html
 
 * [theory: alternate presentations](stream/233122-theory:-alternate-presentations/index.html) (1 topic)
 
-<hr><p>Last updated: Mar 04 2022 at 00:40 UTC</p>
+<hr><p>Last updated: Mar 05 2022 at 00:38 UTC</p>
