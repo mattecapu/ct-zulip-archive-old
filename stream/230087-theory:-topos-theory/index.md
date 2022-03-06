@@ -9,7 +9,7 @@ permalink: /stream/230087-theory:-topos-theory/index.html
 
 ### Topics:
 
-* ["topos" of condensed sets](topic/topic_.22topos.22.20of.20condensed.20sets.html) (5 messages, latest: Dec 31 2021 at 05:31)
+* ["topos" of condensed sets](topic/topic_.22topos.22.20of.20condensed.20sets.html) (6 messages, latest: Mar 05 2022 at 19:39)
 * ["Topos" of condensed sets](topic/topic_.22Topos.22.20of.20condensed.20sets.html) (58 messages, latest: Dec 30 2021 at 22:44)
 * [Errata to Johnstone's Topos Theory](topic/topic_Errata.20to.20Johnstone's.20Topos.20Theory.html) (4 messages, latest: Nov 18 2021 at 14:30)
 * [intersections of subobjects](topic/topic_intersections.20of.20subobjects.html) (10 messages, latest: Nov 09 2021 at 11:01)
@@ -79,4 +79,4 @@ permalink: /stream/230087-theory:-topos-theory/index.html
 * [right adjoint to inclusion of sheaves?](topic/topic_right.20adjoint.20to.20inclusion.20of.20sheaves.3F.html) (18 messages, latest: Mar 30 2020 at 09:37)
 * [essential geometric morphism](topic/topic_essential.20geometric.20morphism.html) (2 messages, latest: Mar 27 2020 at 18:56)
 
-<hr><p>Last updated: Mar 05 2022 at 00:38 UTC</p>
+<hr><p>Last updated: Mar 06 2022 at 00:36 UTC</p>

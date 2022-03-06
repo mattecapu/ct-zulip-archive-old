@@ -8,7 +8,7 @@ permalink: /index.html
 
 ## Streams:
 
-* [learning: questions](stream/229199-learning:-questions/index.html) (639 topics)
+* [learning: questions](stream/229199-learning:-questions/index.html) (640 topics)
 
 * [theory: category theory](stream/229136-theory:-category-theory/index.html) (244 topics)
 
@@ -36,9 +36,9 @@ permalink: /index.html
 
 * [MIT Categories Seminar](stream/229457-MIT-Categories-Seminar/index.html) (41 topics)
 
-* [seminar: MIT Categories Seminar](stream/229457-seminar:-MIT-Categories-Seminar/index.html) (41 topics)
+* [general: positions](stream/245502-general:-positions/index.html) (41 topics)
 
-* [general: positions](stream/245502-general:-positions/index.html) (40 topics)
+* [seminar: MIT Categories Seminar](stream/229457-seminar:-MIT-Categories-Seminar/index.html) (41 topics)
 
 * [theory: type theory](stream/229952-theory:-type-theory/index.html) (40 topics)
 
@@ -150,4 +150,4 @@ permalink: /index.html
 
 * [theory: alternate presentations](stream/233122-theory:-alternate-presentations/index.html) (1 topic)
 
-<hr><p>Last updated: Mar 05 2022 at 00:38 UTC</p>
+<hr><p>Last updated: Mar 06 2022 at 00:36 UTC</p>
