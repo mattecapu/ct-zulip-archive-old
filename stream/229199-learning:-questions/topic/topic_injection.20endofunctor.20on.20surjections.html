@@ -97,6 +97,51 @@ permalink: /stream/229199-learning:-questions/topic/topic_injection.20endofuncto
 
 
 
+<a name="274510807"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/injection%20endofunctor%20on%20surjections/near/274510807" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Morgan Rogers (he/him) <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/topic_injection.20endofunctor.20on.20surjections.html#274510807">(Mar 08 2022 at 08:43)</a>:</h4>
+<p>I gather that Ord is a category of preorders rather than a category of ordinals? <span aria-label="joy" class="emoji emoji-1f602" role="img" title="joy">:joy:</span><br>
+What's the motivation for that naming system?<br>
+It seems like you're missing an adjointness condition here. After all, a function completely determines its inverse image, so we can't take an arbitrary pair of coalgebras.</p>
+<p>The things you suggest towards the end are probably true, but the framework you're proposing carries around a lot of baggage which is avoided by just using relations instead, so if you think there's something in it you'll need to look for some directions where it gets deeper. What's your own motivation for thinking about these things?</p>
+
+
+
+<a name="274536053"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/injection%20endofunctor%20on%20surjections/near/274536053" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Asad Saeeduddin <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/topic_injection.20endofunctor.20on.20surjections.html#274536053">(Mar 08 2022 at 12:51)</a>:</h4>
+<p><span class="user-mention" data-user-id="277473">@Morgan Rogers (he/him)</span></p>
+<blockquote>
+<p>I gather that Ord is a category of preorders rather than a category of ordinals?</p>
+</blockquote>
+<p>Yes, exactly! I am unfortunately not very familiar with mathematical parlance and found the name from the Wikipedia page for "category of preorders". Is there a more standard name for this?</p>
+<blockquote>
+<p>What's the motivation for that naming system?</p>
+</blockquote>
+<p>You can imagine the functor <code>[x, y]</code> to be imbuing a given set with the preorder (in fact lattice) of "at-least x-sized, and at-most y-sized" subsets under inclusions. I notate (perhaps poorly) an infinite size as <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>∗</mo></mrow><annotation encoding="application/x-tex">*</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4653em;"></span><span class="mord">∗</span></span></span></span>.</p>
+<blockquote>
+<p>It seems like you're missing an adjointness condition here. After all, a function completely determines its inverse image, so we can't take an arbitrary pair of coalgebras.</p>
+</blockquote>
+<p>It is true that you need an adjointness condition, this is precisely what I was referring to by:</p>
+<blockquote>
+<p>subject to a condition similar to the ones I stated above, but expressed in terms of the meet of the relevant functors</p>
+</blockquote>
+<p>So the idea is that the relationship between an arbitrary function and its inverse image is no different from the relationship between an injection and its inverse image: both are characterized by a Galois connection, just for different preorders in the lattice.</p>
+<blockquote>
+<p>What's your own motivation for thinking about these things?</p>
+</blockquote>
+<p>My motivation for thinking about such things is "computationally feasible" reversible programming. It is true that a function, or a multi-valued injection, or a partial surjection, etc. all have inverses in some abstract sense, but this is usually not computationally accessible. If one instead reformulates all these things as simple pairs of functions, it becomes easy to embed this framework in a language that is not a priori designed to work with relations, or to give a type theory semantics using these paired coalgebras.</p>
+<p>You say that it is easy to just use relations, but I'm not sure how easy it is to work with infinite relations on a computer in the standard sense of "a subset of the cartesian product". It seems to me that to make the problem tractable one has to rely on the relation being a "functional relation" in some sense, and to switch from an explicit pairing of inputs and outputs to a perspective where the outputs (resp. inputs) latently associated with given inputs (resp. outputs) are revealed by computation.</p>
+
+
+
+<a name="274539564"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/injection%20endofunctor%20on%20surjections/near/274539564" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Asad Saeeduddin <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/topic_injection.20endofunctor.20on.20surjections.html#274539564">(Mar 08 2022 at 13:22)</a>:</h4>
+<blockquote>
+<p>so if you think there's something in it you'll need to look for some directions where it gets deeper</p>
+</blockquote>
+<p>There is certainly much I haven't said but suspect of such categories, and the relationships between them (e.g. being monoidal, cartesian, sometimes closed, sometimes not-quite-closed-but-cotensored) that is relevant to our ability to interpret suitably typed programs in them. I haven't expended much effort on working this out yet though, given that I have a tendency to screw up basic things and am still trying to verify whether the setup outlined above makes sense.</p>
+
+
+
 {% endraw %}
 
-<hr><p>Last updated: Mar 08 2022 at 00:35 UTC</p>
+<hr><p>Last updated: Mar 09 2022 at 00:36 UTC</p>

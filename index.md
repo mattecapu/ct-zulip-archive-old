@@ -32,7 +32,7 @@ permalink: /index.html
 
 * [theory: logic](stream/233104-theory:-logic/index.html) (44 topics)
 
-* [practice: thermodynamics](stream/306433-practice:-thermodynamics/index.html) (42 topics)
+* [practice: thermodynamics](stream/306433-practice:-thermodynamics/index.html) (43 topics)
 
 * [MIT Categories Seminar](stream/229457-MIT-Categories-Seminar/index.html) (41 topics)
 
@@ -150,4 +150,4 @@ permalink: /index.html
 
 * [theory: alternate presentations](stream/233122-theory:-alternate-presentations/index.html) (1 topic)
 
-<hr><p>Last updated: Mar 08 2022 at 00:35 UTC</p>
+<hr><p>Last updated: Mar 09 2022 at 00:36 UTC</p>

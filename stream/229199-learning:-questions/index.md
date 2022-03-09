@@ -9,8 +9,8 @@ permalink: /stream/229199-learning:-questions/index.html
 
 ### Topics:
 
-* [injection endofunctor on surjections](topic/topic_injection.20endofunctor.20on.20surjections.html) (7 messages, latest: Mar 07 2022 at 16:42)
-* [cotopos](topic/topic_cotopos.html) (4 messages, latest: Mar 07 2022 at 16:18)
+* [cotopos](topic/topic_cotopos.html) (8 messages, latest: Mar 08 2022 at 19:45)
+* [injection endofunctor on surjections](topic/topic_injection.20endofunctor.20on.20surjections.html) (10 messages, latest: Mar 08 2022 at 13:22)
 * [enriched category](topic/topic_enriched.20category.html) (13 messages, latest: Mar 06 2022 at 12:38)
 * [Is the Grothendieck construction adhesive?](topic/topic_Is.20the.20Grothendieck.20construction.20adhesive.3F.html) (25 messages, latest: Mar 05 2022 at 16:07)
 * [string diagrams 101](topic/topic_string.20diagrams.20101.html) (11 messages, latest: Mar 03 2022 at 17:12)
@@ -651,4 +651,4 @@ permalink: /stream/229199-learning:-questions/index.html
 * [Algebra (Aluffi) exercises](topic/topic_Algebra.20(Aluffi).20exercises.html) (55 messages, latest: Mar 27 2020 at 23:38)
 * [What is category theory about?](topic/topic_What.20is.20category.20theory.20about.3F.html) (16 messages, latest: Mar 26 2020 at 16:03)
 
-<hr><p>Last updated: Mar 08 2022 at 00:35 UTC</p>
+<hr><p>Last updated: Mar 09 2022 at 00:36 UTC</p>
