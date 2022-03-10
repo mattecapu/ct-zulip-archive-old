@@ -9,7 +9,8 @@ permalink: /stream/229136-theory:-category-theory/index.html
 
 ### Topics:
 
-* [2-categories of symmetric strict monoidal categories](topic/topic_2-categories.20of.20symmetric.20strict.20monoidal.20categories.html) (19 messages, latest: Mar 07 2022 at 19:44)
+* ['center' of monoidal categories](topic/topic_'center'.20of.20monoidal.20categories.html) (5 messages, latest: Mar 09 2022 at 17:49)
+* [2-categories of symmetric strict monoidal categories](topic/topic_2-categories.20of.20symmetric.20strict.20monoidal.20categories.html) (22 messages, latest: Mar 09 2022 at 13:34)
 * [braided/symm fc-multicategories/virtual double categories](topic/topic_braided.2Fsymm.20fc-multicategories.2Fvirtual.20double.20categories.html) (8 messages, latest: Feb 22 2022 at 23:56)
 * [A cute definition of enriched categories](topic/topic_A.20cute.20definition.20of.20enriched.20categories.html) (1 message, latest: Feb 18 2022 at 13:20)
 * [compact closed and biproducts](topic/topic_compact.20closed.20and.20biproducts.html) (31 messages, latest: Feb 18 2022 at 09:19)
@@ -255,4 +256,4 @@ permalink: /stream/229136-theory:-category-theory/index.html
 * [diagrams for application](topic/topic_diagrams.20for.20application.html) (13 messages, latest: Mar 24 2020 at 06:19)
 * [universal constructions](topic/topic_universal.20constructions.html) (8 messages, latest: Mar 23 2020 at 21:06)
 
-<hr><p>Last updated: Mar 09 2022 at 00:36 UTC</p>
+<hr><p>Last updated: Mar 10 2022 at 00:38 UTC</p>
