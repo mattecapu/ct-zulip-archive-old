@@ -30,9 +30,9 @@ permalink: /index.html
 
 * [seminar: Topos Colloquium](stream/269484-seminar:-Topos-Colloquium/index.html) (47 topics)
 
-* [theory: logic](stream/233104-theory:-logic/index.html) (44 topics)
+* [practice: thermodynamics](stream/306433-practice:-thermodynamics/index.html) (44 topics)
 
-* [practice: thermodynamics](stream/306433-practice:-thermodynamics/index.html) (43 topics)
+* [theory: logic](stream/233104-theory:-logic/index.html) (44 topics)
 
 * [MIT Categories Seminar](stream/229457-MIT-Categories-Seminar/index.html) (41 topics)
 
@@ -42,7 +42,7 @@ permalink: /index.html
 
 * [theory: type theory](stream/229952-theory:-type-theory/index.html) (40 topics)
 
-* [practice: our papers](stream/258900-practice:-our-papers/index.html) (36 topics)
+* [practice: our papers](stream/258900-practice:-our-papers/index.html) (37 topics)
 
 * [Categorical Probability and Statistics 2020 workshop](stream/238032-Categorical-Probability-and-Statistics-2020-workshop/index.html) (34 topics)
 
@@ -150,4 +150,4 @@ permalink: /index.html
 
 * [theory: alternate presentations](stream/233122-theory:-alternate-presentations/index.html) (1 topic)
 
-<hr><p>Last updated: Mar 10 2022 at 00:38 UTC</p>
+<hr><p>Last updated: Mar 11 2022 at 00:39 UTC</p>
