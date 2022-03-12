@@ -30,7 +30,7 @@ permalink: /index.html
 
 * [seminar: Topos Colloquium](stream/269484-seminar:-Topos-Colloquium/index.html) (47 topics)
 
-* [practice: thermodynamics](stream/306433-practice:-thermodynamics/index.html) (44 topics)
+* [practice: thermodynamics](stream/306433-practice:-thermodynamics/index.html) (45 topics)
 
 * [theory: logic](stream/233104-theory:-logic/index.html) (44 topics)
 
@@ -150,4 +150,4 @@ permalink: /index.html
 
 * [theory: alternate presentations](stream/233122-theory:-alternate-presentations/index.html) (1 topic)
 
-<hr><p>Last updated: Mar 11 2022 at 00:39 UTC</p>
+<hr><p>Last updated: Mar 12 2022 at 00:34 UTC</p>
