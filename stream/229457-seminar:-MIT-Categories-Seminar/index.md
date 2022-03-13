@@ -9,6 +9,7 @@ permalink: /stream/229457-seminar:-MIT-Categories-Seminar/index.html
 
 ### Topics:
 
+* [May 14 - Mike Shulman's talk](topic/topic_May.2014.20-.20Mike.20Shulman's.20talk.html) (83 messages, latest: Mar 12 2022 at 14:31)
 * [April 2 - Todd Trimble's talk](topic/topic_April.202.20-.20Todd.20Trimble's.20talk.html) (138 messages, latest: Jul 14 2021 at 12:04)
 * [May 21 - Jade Master's talk](topic/topic_May.2021.20-.20Jade.20Master's.20talk.html) (43 messages, latest: Jan 28 2021 at 02:55)
 * [June 11: Paolo Perrone's talk](topic/topic_June.2011.3A.20Paolo.20Perrone's.20talk.html) (14 messages, latest: Jan 14 2021 at 10:30)
@@ -39,7 +40,6 @@ permalink: /stream/229457-seminar:-MIT-Categories-Seminar/index.html
 * [General discussion](topic/topic_General.20discussion.html) (6 messages, latest: Jul 14 2020 at 20:00)
 * [June 25: Remy Tuyeras' talk](topic/topic_June.2025.3A.20Remy.20Tuyeras'.20talk.html) (6 messages, latest: Jun 26 2020 at 04:26)
 * [June 18: Christian Williams' talk](topic/topic_June.2018.3A.20Christian.20Williams'.20talk.html) (7 messages, latest: Jun 18 2020 at 21:08)
-* [May 14 - Mike Shulman's talk](topic/topic_May.2014.20-.20Mike.20Shulman's.20talk.html) (82 messages, latest: Jun 17 2020 at 00:18)
 * [June 4 - Carmen Constantin's talk](topic/topic_June.204.20-.20Carmen.20Constantin's.20talk.html) (23 messages, latest: Jun 08 2020 at 20:30)
 * [May 28: David Spivak's talk](topic/topic_May.2028.3A.20David.20Spivak's.20talk.html) (51 messages, latest: Jun 01 2020 at 09:04)
 * [May 7 - Bob Coecke's talk](topic/topic_May.207.20-.20Bob.20Coecke's.20talk.html) (24 messages, latest: May 08 2020 at 09:38)
@@ -51,4 +51,4 @@ permalink: /stream/229457-seminar:-MIT-Categories-Seminar/index.html
 * [March 26 - David Myers' talk](topic/topic_March.2026.20-.20David.20Myers'.20talk.html) (40 messages, latest: Mar 27 2020 at 18:11)
 * [March 19 - Pilot talk](topic/topic_March.2019.20-.20Pilot.20talk.html) (1 message, latest: Mar 24 2020 at 20:49)
 
-<hr><p>Last updated: Mar 12 2022 at 00:34 UTC</p>
+<hr><p>Last updated: Mar 13 2022 at 00:35 UTC</p>
