@@ -1,0 +1,80 @@
+[
+    {
+        "content": "<p>This is not really a question about CT, but about how to organize all the things relevant to <em>writing</em> CT in latex. It's also not a specific question, but more of an open ended one: I'm curious to hear about people's workflow's in latex.</p>\n<p>How do you organise your latex macros, preambles, environments etc.? My workflow is a mess. Is there a \"canonical\" thing everyone does or does everyone have their own special preamble?  Is there a (math) package you always include?<br>\nFor instance, I've seen people use \\newcommand for macros, but also \\DeclareMathOperator. <br>\nI've also seen people write something like <code>\\cat C</code> for a category, but also people writing things like <code>\\Ca</code>, where <code>\\Ca</code> is a macro for <code>\\mathcal{C}</code> (but then you have to do it for every letter, which I've also seen people do). Maybe this doesn't matter, but I thought I'd just get a sense of what people here think/use, since I assume down the road it might be good to be consistent.</p>\n<p>Also, any other latex tips you have!  (I've realised down the road I'll have to start writing a thesis eventually, so it might be good to ask this <em>before</em> I start writing...)</p>",
+        "id": 275162195,
+        "sender_full_name": "Bruno Gavranovic",
+        "timestamp": 1647188065
+    },
+    {
+        "content": "<p>Here's a trick in latex that does it for every letter automatically:</p>\n<div class=\"codehilite\"><pre><span></span><code>\\makeatletter\n\\let\\ea\\expandafter\n\\def\\foreachLetter#1#2#3{\\foreachcount=#1\n  \\ea\\loop\\ea\\ea\\ea#3\\@Alph\\foreachcount\n  \\advance\\foreachcount by 1\n  \\ifnum\\foreachcount&lt;#2\\repeat}\n\\def\\definecal#1{\\ea\\gdef\\csname c#1\\endcsname{\\ensuremath{\\mathcal{#1}}\\xspace}}\n\\foreachLetter{1}{27}{\\definecal}\n</code></pre></div>\n<p>One can argue about whether this is a better idea than writing a separate script in some other language to just spit out <code>\\newcommand{\\cA}{\\ensuremath{\\mathcal{A}}\\xspace}</code> and its 25 friends...</p>",
+        "id": 275163982,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1647190549
+    },
+    {
+        "content": "<p>Note the <code>\\ensuremath</code> and <code>\\xspace</code>, which lets you write things like</p>\n<div class=\"codehilite\"><pre><span></span><code>Let \\cC be a category\n</code></pre></div>\n<p>without needing dollarsigns.</p>",
+        "id": 275164045,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1647190609
+    },
+    {
+        "content": "<p>I dislike latex macros simply because I need to extend my pinky finger to press the backslash key, so for very common things that don't change between documents, I have macros set up in my editor. (e.g. typing <code>mbf</code> then enter writes <code>\\mathbf{}</code> and puts my cursor in the brackets). However, this is not so great when working on long writing projects (e.g. a thesis) because you might change your mind on some macros and 'search and replace' is annoying (especially over multiple files) and sometimes impossible. Also, when working with coauthors, I prefer to use macros to easily get consistent results. All in all, I think my workflow is a mess too, but it is very flexible.</p>\n<p>If I can suggest one package, I highly recommend the wonderful <a href=\"https://www.ctan.org/pkg/knowledge\">knowledge package</a>, it slows you down a bit when writing (especially at the start), but your readers will be very pleased (I know I am when I read papers that use the package : <a href=\"https://www.irif.fr/~petrisan//lics2020.pdf\">e</a><a href=\"https://perso.ens-lyon.fr/samuel.humeau/doc.pdf\">x</a><a href=\"https://ralphs16.github.io/src/CatLectures/DraftBook.pdf\">a</a><a href=\"https://arxiv.org/abs/1712.07121v3\">m</a><a href=\"https://arxiv.org/pdf/1911.01195v5.pdf\">p</a><a href=\"https://www.irif.fr/_media/users/reiterf/thesis.pdf\">l</a><a href=\"https://agoy.fr/publication/phd/phd.pdf\">e</a><a href=\"http://users.dimi.uniud.it/~gabriele.puppis/articles/JSL%202018.pdf\">s</a>).</p>",
+        "id": 275165607,
+        "sender_full_name": "Ralph Sarkis",
+        "timestamp": 1647192685
+    },
+    {
+        "content": "<p>I think there's a choice of philosophy in these things, depending on whether or not you want your LaTeX code to be easy to read - for yourself, that is.   What that means would vary from person to person I guess.   I want my LaTeX code to be easily readable by me, since I spend a lot of time reading and rewriting it.   So, for example, I want the macros for things to be unobtrusive.  I use the real numbers a lot, so I use the macro \\R which looks a lot like <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"double-struck\">R</mi></mrow><annotation encoding=\"application/x-tex\">\\mathbb{R}</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6889em;\"></span><span class=\"mord mathbb\">R</span></span></span></span> (a symbol I have a lot of fondness for), not some other things I've seen people use, like \\Real.</p>",
+        "id": 275166521,
+        "sender_full_name": "John Baez",
+        "timestamp": 1647194017
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"284005\">Ralph Sarkis</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/latex.20.2B.20CT/near/275165607\">said</a>:</p>\n<blockquote>\n<p>However, this is not so great when working on long writing projects (e.g. a thesis) because you might change your mind on some macros and 'search and replace' is annoying (especially over multiple files) and sometimes impossible. Also, when working with coauthors, I prefer to use macros to easily get consistent results.</p>\n</blockquote>\n<p>I think this is a really important point.  In my opinion the use of semantic macros (i.e. named by their mathematical meaning rather than by the visual results they produce) is an essential habit to get into.</p>\n<blockquote>\n<p>I dislike latex macros simply because I need to extend my pinky finger to press the backslash key</p>\n</blockquote>\n<p>The simple solution to that is to remap your keyboard to put the backslash somewhere else.  (-:</p>",
+        "id": 275166988,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1647194598
+    },
+    {
+        "content": "<p>Switch it with the space bar.   <span aria-label=\"stuck out tongue wink\" class=\"emoji emoji-1f61c\" role=\"img\" title=\"stuck out tongue wink\">:stuck_out_tongue_wink:</span></p>",
+        "id": 275167678,
+        "sender_full_name": "John Baez",
+        "timestamp": 1647195530
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"284005\">Ralph Sarkis</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/latex.20.2B.20CT/near/275165607\">said</a>:</p>\n<blockquote>\n<p>I dislike latex macros simply because I need to extend my pinky finger to press the backslash key</p>\n</blockquote>\n<p>Back in the good old days when I was writing LaTeX regularly (ie when I was a PhD student) I simply changed my keymappings to swap the <code>\\</code> and <code>;</code> keys... like most programming languages LaTeX really isn't designed for a BrEn keyboard...</p>",
+        "id": 275169654,
+        "sender_full_name": "Jules Hedges",
+        "timestamp": 1647198255
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276777\">Mike Shulman</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/latex.20.2B.20CT/near/275164045\">said</a>:</p>\n<blockquote>\n<p>Note the <code>\\ensuremath</code> and <code>\\xspace</code>, which lets you write things like</p>\n<div class=\"codehilite\"><pre><span></span><code>Let \\cC be a category\n</code></pre></div>\n<p>without needing dollarsigns.</p>\n</blockquote>\n<p>Ah nice, I wasn't aware of this. I just googled about ensuremath and found that people report it <a href=\"https://tex.stackexchange.com/questions/34830/when-not-to-use-ensuremath-for-math-macro\">breaks</a>  in some circumstances. Has this been your experience or would you say it's something that's always good to use?</p>",
+        "id": 275182976,
+        "sender_full_name": "Bruno Gavranovic",
+        "timestamp": 1647217013
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276777\">Mike Shulman</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/latex.20.2B.20CT/near/275166988\">said</a>:</p>\n<blockquote>\n<p><span class=\"user-mention silent\" data-user-id=\"284005\">Ralph Sarkis</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/latex.20.2B.20CT/near/275165607\">said</a>:</p>\n<blockquote>\n<p>However, this is not so great when working on long writing projects (e.g. a thesis) because you might change your mind on some macros and 'search and replace' is annoying (especially over multiple files) and sometimes impossible. Also, when working with coauthors, I prefer to use macros to easily get consistent results.</p>\n</blockquote>\n<p>I think this is a really important point.  In my opinion the use of semantic macros (i.e. named by their mathematical meaning rather than by the visual results they produce) is an essential habit to get into.</p>\n</blockquote>\n<p>Does this mean that the prefix <code>c</code> in <code>\\cC`` in your latex trick above doesn't refer to </code>mathCal`, bur rather to the fact that it's a symbol for a category?</p>",
+        "id": 275183084,
+        "sender_full_name": "Bruno Gavranovic",
+        "timestamp": 1647217196
+    },
+    {
+        "content": "<p>I've never had any problems with <code>ensuremath</code>.</p>",
+        "id": 275183740,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1647218064
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276875\">Bruno Gavranovic</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/latex.20.2B.20CT/near/275183084\">said</a>:</p>\n<blockquote>\n<p>Does this mean that the prefix <code>c</code> in <code>\\cC</code> in your latex trick above doesn't refer to <code>mathCal</code>, bur rather to the fact that it's a symbol for a category?</p>\n</blockquote>\n<p>No, I don't usually adhere to the principle of semantic macros for single characters.  Possibly I should, but only rarely has it ever been a problem.</p>",
+        "id": 275183764,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1647218143
+    },
+    {
+        "content": "<p>The problems with <code>ensuremath</code> noted at your link seem mostly to arise when putting it around a parameter passed by the caller.  I don't think I ever do that.</p>",
+        "id": 275183828,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1647218238
+    }
+]

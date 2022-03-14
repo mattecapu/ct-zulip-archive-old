@@ -9,13 +9,15 @@ permalink: /stream/229199-learning:-questions/index.html
 
 ### Topics:
 
+* [latex + CT](topic/topic_latex.20.2B.20CT.html) (13 messages, latest: Mar 14 2022 at 00:37)
+* [spatial categorical logic](topic/topic_spatial.20categorical.20logic.html) (24 messages, latest: Mar 13 2022 at 18:28)
+* [structure of regular subobjects](topic/topic_structure.20of.20regular.20subobjects.html) (10 messages, latest: Mar 13 2022 at 14:39)
 * [cotopos](topic/topic_cotopos.html) (12 messages, latest: Mar 09 2022 at 16:25)
 * [call stacks and lenses](topic/topic_call.20stacks.20and.20lenses.html) (5 messages, latest: Mar 09 2022 at 15:33)
 * [injection endofunctor on surjections](topic/topic_injection.20endofunctor.20on.20surjections.html) (10 messages, latest: Mar 08 2022 at 13:22)
 * [enriched category](topic/topic_enriched.20category.html) (13 messages, latest: Mar 06 2022 at 12:38)
 * [Is the Grothendieck construction adhesive?](topic/topic_Is.20the.20Grothendieck.20construction.20adhesive.3F.html) (25 messages, latest: Mar 05 2022 at 16:07)
 * [string diagrams 101](topic/topic_string.20diagrams.20101.html) (11 messages, latest: Mar 03 2022 at 17:12)
-* [spatial categorical logic](topic/topic_spatial.20categorical.20logic.html) (22 messages, latest: Mar 02 2022 at 11:44)
 * [(infty,infty)-categories](topic/topic_(infty.2Cinfty)-categories.html) (5 messages, latest: Mar 01 2022 at 19:01)
 * [T(T(M))](topic/topic_T(T(M)).html) (29 messages, latest: Feb 28 2022 at 20:26)
 * [adding morphisms](topic/topic_adding.20morphisms.html) (49 messages, latest: Feb 27 2022 at 17:00)
@@ -652,4 +654,4 @@ permalink: /stream/229199-learning:-questions/index.html
 * [Algebra (Aluffi) exercises](topic/topic_Algebra.20(Aluffi).20exercises.html) (55 messages, latest: Mar 27 2020 at 23:38)
 * [What is category theory about?](topic/topic_What.20is.20category.20theory.20about.3F.html) (16 messages, latest: Mar 26 2020 at 16:03)
 
-<hr><p>Last updated: Mar 13 2022 at 00:35 UTC</p>
+<hr><p>Last updated: Mar 14 2022 at 00:39 UTC</p>

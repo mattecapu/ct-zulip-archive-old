@@ -1,0 +1,145 @@
+---
+layout: archive
+title: Zulip Chat Archive
+permalink: /stream/229199-learning:-questions/topic/topic_latex.20.2B.20CT.html
+---
+
+<h2>Stream: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/index.html">learning: questions</a></h2>
+<h3>Topic: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/topic_latex.20.2B.20CT.html">latex + CT</a></h3>
+
+<hr>
+
+<base href="https://categorytheory.zulipchat.com/">
+
+{% raw %}
+
+<a name="275162195"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/latex%20%2B%20CT/near/275162195" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Bruno Gavranovic <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/topic_latex.20.2B.20CT.html#275162195">(Mar 13 2022 at 16:14)</a>:</h4>
+<p>This is not really a question about CT, but about how to organize all the things relevant to <em>writing</em> CT in latex. It's also not a specific question, but more of an open ended one: I'm curious to hear about people's workflow's in latex.</p>
+<p>How do you organise your latex macros, preambles, environments etc.? My workflow is a mess. Is there a "canonical" thing everyone does or does everyone have their own special preamble?  Is there a (math) package you always include?<br>
+For instance, I've seen people use \newcommand for macros, but also \DeclareMathOperator. <br>
+I've also seen people write something like <code>\cat C</code> for a category, but also people writing things like <code>\Ca</code>, where <code>\Ca</code> is a macro for <code>\mathcal{C}</code> (but then you have to do it for every letter, which I've also seen people do). Maybe this doesn't matter, but I thought I'd just get a sense of what people here think/use, since I assume down the road it might be good to be consistent.</p>
+<p>Also, any other latex tips you have!  (I've realised down the road I'll have to start writing a thesis eventually, so it might be good to ask this <em>before</em> I start writing...)</p>
+
+
+
+<a name="275163982"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/latex%20%2B%20CT/near/275163982" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/topic_latex.20.2B.20CT.html#275163982">(Mar 13 2022 at 16:55)</a>:</h4>
+<p>Here's a trick in latex that does it for every letter automatically:</p>
+<div class="codehilite"><pre><span></span><code>\makeatletter
+\let\ea\expandafter
+\def\foreachLetter#1#2#3{\foreachcount=#1
+  \ea\loop\ea\ea\ea#3\@Alph\foreachcount
+  \advance\foreachcount by 1
+  \ifnum\foreachcount&lt;#2\repeat}
+\def\definecal#1{\ea\gdef\csname c#1\endcsname{\ensuremath{\mathcal{#1}}\xspace}}
+\foreachLetter{1}{27}{\definecal}
+</code></pre></div>
+<p>One can argue about whether this is a better idea than writing a separate script in some other language to just spit out <code>\newcommand{\cA}{\ensuremath{\mathcal{A}}\xspace}</code> and its 25 friends...</p>
+
+
+
+<a name="275164045"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/latex%20%2B%20CT/near/275164045" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/topic_latex.20.2B.20CT.html#275164045">(Mar 13 2022 at 16:56)</a>:</h4>
+<p>Note the <code>\ensuremath</code> and <code>\xspace</code>, which lets you write things like</p>
+<div class="codehilite"><pre><span></span><code>Let \cC be a category
+</code></pre></div>
+<p>without needing dollarsigns.</p>
+
+
+
+<a name="275165607"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/latex%20%2B%20CT/near/275165607" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Ralph Sarkis <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/topic_latex.20.2B.20CT.html#275165607">(Mar 13 2022 at 17:31)</a>:</h4>
+<p>I dislike latex macros simply because I need to extend my pinky finger to press the backslash key, so for very common things that don't change between documents, I have macros set up in my editor. (e.g. typing <code>mbf</code> then enter writes <code>\mathbf{}</code> and puts my cursor in the brackets). However, this is not so great when working on long writing projects (e.g. a thesis) because you might change your mind on some macros and 'search and replace' is annoying (especially over multiple files) and sometimes impossible. Also, when working with coauthors, I prefer to use macros to easily get consistent results. All in all, I think my workflow is a mess too, but it is very flexible.</p>
+<p>If I can suggest one package, I highly recommend the wonderful <a href="https://www.ctan.org/pkg/knowledge">knowledge package</a>, it slows you down a bit when writing (especially at the start), but your readers will be very pleased (I know I am when I read papers that use the package : <a href="https://www.irif.fr/~petrisan//lics2020.pdf">e</a><a href="https://perso.ens-lyon.fr/samuel.humeau/doc.pdf">x</a><a href="https://ralphs16.github.io/src/CatLectures/DraftBook.pdf">a</a><a href="https://arxiv.org/abs/1712.07121v3">m</a><a href="https://arxiv.org/pdf/1911.01195v5.pdf">p</a><a href="https://www.irif.fr/_media/users/reiterf/thesis.pdf">l</a><a href="https://agoy.fr/publication/phd/phd.pdf">e</a><a href="http://users.dimi.uniud.it/~gabriele.puppis/articles/JSL%202018.pdf">s</a>).</p>
+
+
+
+<a name="275166521"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/latex%20%2B%20CT/near/275166521" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/topic_latex.20.2B.20CT.html#275166521">(Mar 13 2022 at 17:53)</a>:</h4>
+<p>I think there's a choice of philosophy in these things, depending on whether or not you want your LaTeX code to be easy to read - for yourself, that is.   What that means would vary from person to person I guess.   I want my LaTeX code to be easily readable by me, since I spend a lot of time reading and rewriting it.   So, for example, I want the macros for things to be unobtrusive.  I use the real numbers a lot, so I use the macro \R which looks a lot like <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="double-struck">R</mi></mrow><annotation encoding="application/x-tex">\mathbb{R}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6889em;"></span><span class="mord mathbb">R</span></span></span></span> (a symbol I have a lot of fondness for), not some other things I've seen people use, like \Real.</p>
+
+
+
+<a name="275166988"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/latex%20%2B%20CT/near/275166988" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/topic_latex.20.2B.20CT.html#275166988">(Mar 13 2022 at 18:03)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="284005">Ralph Sarkis</span> <a href="#narrow/stream/229199-learning.3A-questions/topic/latex.20.2B.20CT/near/275165607">said</a>:</p>
+<blockquote>
+<p>However, this is not so great when working on long writing projects (e.g. a thesis) because you might change your mind on some macros and 'search and replace' is annoying (especially over multiple files) and sometimes impossible. Also, when working with coauthors, I prefer to use macros to easily get consistent results.</p>
+</blockquote>
+<p>I think this is a really important point.  In my opinion the use of semantic macros (i.e. named by their mathematical meaning rather than by the visual results they produce) is an essential habit to get into.</p>
+<blockquote>
+<p>I dislike latex macros simply because I need to extend my pinky finger to press the backslash key</p>
+</blockquote>
+<p>The simple solution to that is to remap your keyboard to put the backslash somewhere else.  (-:</p>
+
+
+
+<a name="275167678"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/latex%20%2B%20CT/near/275167678" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/topic_latex.20.2B.20CT.html#275167678">(Mar 13 2022 at 18:18)</a>:</h4>
+<p>Switch it with the space bar.   <span aria-label="stuck out tongue wink" class="emoji emoji-1f61c" role="img" title="stuck out tongue wink">:stuck_out_tongue_wink:</span></p>
+
+
+
+<a name="275169654"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/latex%20%2B%20CT/near/275169654" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Jules Hedges <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/topic_latex.20.2B.20CT.html#275169654">(Mar 13 2022 at 19:04)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="284005">Ralph Sarkis</span> <a href="#narrow/stream/229199-learning.3A-questions/topic/latex.20.2B.20CT/near/275165607">said</a>:</p>
+<blockquote>
+<p>I dislike latex macros simply because I need to extend my pinky finger to press the backslash key</p>
+</blockquote>
+<p>Back in the good old days when I was writing LaTeX regularly (ie when I was a PhD student) I simply changed my keymappings to swap the <code>\</code> and <code>;</code> keys... like most programming languages LaTeX really isn't designed for a BrEn keyboard...</p>
+
+
+
+<a name="275182976"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/latex%20%2B%20CT/near/275182976" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Bruno Gavranovic <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/topic_latex.20.2B.20CT.html#275182976">(Mar 14 2022 at 00:16)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="276777">Mike Shulman</span> <a href="#narrow/stream/229199-learning.3A-questions/topic/latex.20.2B.20CT/near/275164045">said</a>:</p>
+<blockquote>
+<p>Note the <code>\ensuremath</code> and <code>\xspace</code>, which lets you write things like</p>
+<div class="codehilite"><pre><span></span><code>Let \cC be a category
+</code></pre></div>
+<p>without needing dollarsigns.</p>
+</blockquote>
+<p>Ah nice, I wasn't aware of this. I just googled about ensuremath and found that people report it <a href="https://tex.stackexchange.com/questions/34830/when-not-to-use-ensuremath-for-math-macro">breaks</a>  in some circumstances. Has this been your experience or would you say it's something that's always good to use?</p>
+
+
+
+<a name="275183084"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/latex%20%2B%20CT/near/275183084" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Bruno Gavranovic <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/topic_latex.20.2B.20CT.html#275183084">(Mar 14 2022 at 00:19)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="276777">Mike Shulman</span> <a href="#narrow/stream/229199-learning.3A-questions/topic/latex.20.2B.20CT/near/275166988">said</a>:</p>
+<blockquote>
+<p><span class="user-mention silent" data-user-id="284005">Ralph Sarkis</span> <a href="#narrow/stream/229199-learning.3A-questions/topic/latex.20.2B.20CT/near/275165607">said</a>:</p>
+<blockquote>
+<p>However, this is not so great when working on long writing projects (e.g. a thesis) because you might change your mind on some macros and 'search and replace' is annoying (especially over multiple files) and sometimes impossible. Also, when working with coauthors, I prefer to use macros to easily get consistent results.</p>
+</blockquote>
+<p>I think this is a really important point.  In my opinion the use of semantic macros (i.e. named by their mathematical meaning rather than by the visual results they produce) is an essential habit to get into.</p>
+</blockquote>
+<p>Does this mean that the prefix <code>c</code> in <code>\cC`` in your latex trick above doesn't refer to </code>mathCal`, bur rather to the fact that it's a symbol for a category?</p>
+
+
+
+<a name="275183740"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/latex%20%2B%20CT/near/275183740" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/topic_latex.20.2B.20CT.html#275183740">(Mar 14 2022 at 00:34)</a>:</h4>
+<p>I've never had any problems with <code>ensuremath</code>.</p>
+
+
+
+<a name="275183764"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/latex%20%2B%20CT/near/275183764" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/topic_latex.20.2B.20CT.html#275183764">(Mar 14 2022 at 00:35)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="276875">Bruno Gavranovic</span> <a href="#narrow/stream/229199-learning.3A-questions/topic/latex.20.2B.20CT/near/275183084">said</a>:</p>
+<blockquote>
+<p>Does this mean that the prefix <code>c</code> in <code>\cC</code> in your latex trick above doesn't refer to <code>mathCal</code>, bur rather to the fact that it's a symbol for a category?</p>
+</blockquote>
+<p>No, I don't usually adhere to the principle of semantic macros for single characters.  Possibly I should, but only rarely has it ever been a problem.</p>
+
+
+
+<a name="275183828"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/latex%20%2B%20CT/near/275183828" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/topic_latex.20.2B.20CT.html#275183828">(Mar 14 2022 at 00:37)</a>:</h4>
+<p>The problems with <code>ensuremath</code> noted at your link seem mostly to arise when putting it around a parameter passed by the caller.  I don't think I ever do that.</p>
+
+
+
+{% endraw %}
+
+<hr><p>Last updated: Mar 14 2022 at 00:39 UTC</p>
