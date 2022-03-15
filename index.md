@@ -16,7 +16,7 @@ permalink: /index.html
 
 * [practice: applied ct](stream/229156-practice:-applied-ct/index.html) (128 topics)
 
-* [general: events](stream/229141-general:-events/index.html) (116 topics)
+* [general: events](stream/229141-general:-events/index.html) (117 topics)
 
 * [theory: topos theory](stream/230087-theory:-topos-theory/index.html) (69 topics)
 
@@ -28,7 +28,7 @@ permalink: /index.html
 
 * [general: mathematics](stream/266967-general:-mathematics/index.html) (48 topics)
 
-* [seminar: Topos Colloquium](stream/269484-seminar:-Topos-Colloquium/index.html) (47 topics)
+* [seminar: Topos Colloquium](stream/269484-seminar:-Topos-Colloquium/index.html) (48 topics)
 
 * [practice: thermodynamics](stream/306433-practice:-thermodynamics/index.html) (45 topics)
 
@@ -150,4 +150,4 @@ permalink: /index.html
 
 * [theory: alternate presentations](stream/233122-theory:-alternate-presentations/index.html) (1 topic)
 
-<hr><p>Last updated: Mar 14 2022 at 00:39 UTC</p>
+<hr><p>Last updated: Mar 15 2022 at 00:36 UTC</p>
