@@ -18,7 +18,7 @@ permalink: /index.html
 
 * [general: events](stream/229141-general:-events/index.html) (117 topics)
 
-* [theory: topos theory](stream/230087-theory:-topos-theory/index.html) (69 topics)
+* [theory: topos theory](stream/230087-theory:-topos-theory/index.html) (70 topics)
 
 * [conference: ACT 2020](stream/243068-conference:-ACT-2020/index.html) (62 topics)
 
@@ -150,4 +150,4 @@ permalink: /index.html
 
 * [theory: alternate presentations](stream/233122-theory:-alternate-presentations/index.html) (1 topic)
 
-<hr><p>Last updated: Mar 15 2022 at 00:36 UTC</p>
+<hr><p>Last updated: Mar 16 2022 at 00:37 UTC</p>
