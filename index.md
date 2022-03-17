@@ -8,7 +8,7 @@ permalink: /index.html
 
 ## Streams:
 
-* [learning: questions](stream/229199-learning:-questions/index.html) (644 topics)
+* [learning: questions](stream/229199-learning:-questions/index.html) (645 topics)
 
 * [theory: category theory](stream/229136-theory:-category-theory/index.html) (246 topics)
 
@@ -26,17 +26,17 @@ permalink: /index.html
 
 * [theory: algebraic topology & homological algebra](stream/241590-theory:-algebraic-topology-&-homological-algebra/index.html) (51 topics)
 
-* [general: mathematics](stream/266967-general:-mathematics/index.html) (48 topics)
+* [general: mathematics](stream/266967-general:-mathematics/index.html) (49 topics)
 
 * [seminar: Topos Colloquium](stream/269484-seminar:-Topos-Colloquium/index.html) (48 topics)
 
-* [practice: thermodynamics](stream/306433-practice:-thermodynamics/index.html) (45 topics)
+* [practice: thermodynamics](stream/306433-practice:-thermodynamics/index.html) (46 topics)
 
 * [theory: logic](stream/233104-theory:-logic/index.html) (44 topics)
 
-* [MIT Categories Seminar](stream/229457-MIT-Categories-Seminar/index.html) (41 topics)
+* [general: positions](stream/245502-general:-positions/index.html) (42 topics)
 
-* [general: positions](stream/245502-general:-positions/index.html) (41 topics)
+* [MIT Categories Seminar](stream/229457-MIT-Categories-Seminar/index.html) (41 topics)
 
 * [seminar: MIT Categories Seminar](stream/229457-seminar:-MIT-Categories-Seminar/index.html) (41 topics)
 
@@ -150,4 +150,4 @@ permalink: /index.html
 
 * [theory: alternate presentations](stream/233122-theory:-alternate-presentations/index.html) (1 topic)
 
-<hr><p>Last updated: Mar 16 2022 at 00:37 UTC</p>
+<hr><p>Last updated: Mar 17 2022 at 00:37 UTC</p>

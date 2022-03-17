@@ -9,7 +9,7 @@ permalink: /stream/230087-theory:-topos-theory/index.html
 
 ### Topics:
 
-* [translation dictionary: Category Theory ↔ Topos Theory](topic/topic_translation.20dictionary.3A.20Category.20Theory.20.E2.86.94.20Topos.20Theory.html) (14 messages, latest: Mar 15 2022 at 23:36)
+* [translation dictionary: Category Theory ↔ Topos Theory](topic/topic_translation.20dictionary.3A.20Category.20Theory.20.E2.86.94.20Topos.20Theory.html) (28 messages, latest: Mar 16 2022 at 21:49)
 * ["topos" of condensed sets](topic/topic_.22topos.22.20of.20condensed.20sets.html) (6 messages, latest: Mar 05 2022 at 19:39)
 * ["Topos" of condensed sets](topic/topic_.22Topos.22.20of.20condensed.20sets.html) (58 messages, latest: Dec 30 2021 at 22:44)
 * [Errata to Johnstone's Topos Theory](topic/topic_Errata.20to.20Johnstone's.20Topos.20Theory.html) (4 messages, latest: Nov 18 2021 at 14:30)
@@ -80,4 +80,4 @@ permalink: /stream/230087-theory:-topos-theory/index.html
 * [right adjoint to inclusion of sheaves?](topic/topic_right.20adjoint.20to.20inclusion.20of.20sheaves.3F.html) (18 messages, latest: Mar 30 2020 at 09:37)
 * [essential geometric morphism](topic/topic_essential.20geometric.20morphism.html) (2 messages, latest: Mar 27 2020 at 18:56)
 
-<hr><p>Last updated: Mar 16 2022 at 00:37 UTC</p>
+<hr><p>Last updated: Mar 17 2022 at 00:37 UTC</p>

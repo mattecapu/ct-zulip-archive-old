@@ -9,6 +9,7 @@ permalink: /stream/306433-practice:-thermodynamics/index.html
 
 ### Topics:
 
+* [Bond Graphs 2.0](topic/topic_Bond.20Graphs.202.2E0.html) (4 messages, latest: Mar 16 2022 at 19:29)
 * [chart of \capacitor-like things](topic/topic_chart.20of.20.5Ccapacitor-like.20things.html) (2 messages, latest: Mar 11 2022 at 07:05)
 * [Chart of Capacitor-like things](topic/topic_Chart.20of.20Capacitor-like.20things.html) (1 message, latest: Mar 10 2022 at 22:37)
 * [blog posts](topic/topic_blog.20posts.html) (1 message, latest: Mar 08 2022 at 20:54)
@@ -55,4 +56,4 @@ permalink: /stream/306433-practice:-thermodynamics/index.html
 * [Stat Mech of the Carnot Engine](topic/topic_Stat.20Mech.20of.20the.20Carnot.20Engine.html) (2 messages, latest: Nov 10 2021 at 23:58)
 * [stream events](topic/topic_stream.20events.html) (13 messages, latest: Nov 09 2021 at 19:58)
 
-<hr><p>Last updated: Mar 16 2022 at 00:37 UTC</p>
+<hr><p>Last updated: Mar 17 2022 at 00:37 UTC</p>

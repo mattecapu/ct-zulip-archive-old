@@ -9,9 +9,10 @@ permalink: /stream/229199-learning:-questions/index.html
 
 ### Topics:
 
-* [latex + CT](topic/topic_latex.20.2B.20CT.html) (41 messages, latest: Mar 15 2022 at 21:59)
-* [spatial categorical logic](topic/topic_spatial.20categorical.20logic.html) (34 messages, latest: Mar 15 2022 at 14:22)
-* [call stacks and lenses](topic/topic_call.20stacks.20and.20lenses.html) (16 messages, latest: Mar 15 2022 at 13:48)
+* [one-hop neighborhood of a category](topic/topic_one-hop.20neighborhood.20of.20a.20category.html) (5 messages, latest: Mar 16 2022 at 17:04)
+* [call stacks and lenses](topic/topic_call.20stacks.20and.20lenses.html) (17 messages, latest: Mar 16 2022 at 15:39)
+* [spatial categorical logic](topic/topic_spatial.20categorical.20logic.html) (35 messages, latest: Mar 16 2022 at 14:38)
+* [latex + CT](topic/topic_latex.20.2B.20CT.html) (42 messages, latest: Mar 16 2022 at 12:12)
 * [structure of regular subobjects](topic/topic_structure.20of.20regular.20subobjects.html) (10 messages, latest: Mar 13 2022 at 14:39)
 * [cotopos](topic/topic_cotopos.html) (12 messages, latest: Mar 09 2022 at 16:25)
 * [injection endofunctor on surjections](topic/topic_injection.20endofunctor.20on.20surjections.html) (10 messages, latest: Mar 08 2022 at 13:22)
@@ -654,4 +655,4 @@ permalink: /stream/229199-learning:-questions/index.html
 * [Algebra (Aluffi) exercises](topic/topic_Algebra.20(Aluffi).20exercises.html) (55 messages, latest: Mar 27 2020 at 23:38)
 * [What is category theory about?](topic/topic_What.20is.20category.20theory.20about.3F.html) (16 messages, latest: Mar 26 2020 at 16:03)
 
-<hr><p>Last updated: Mar 16 2022 at 00:37 UTC</p>
+<hr><p>Last updated: Mar 17 2022 at 00:37 UTC</p>
