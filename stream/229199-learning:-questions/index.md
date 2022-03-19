@@ -9,7 +9,9 @@ permalink: /stream/229199-learning:-questions/index.html
 
 ### Topics:
 
-* [one-hop neighborhood of a category](topic/topic_one-hop.20neighborhood.20of.20a.20category.html) (18 messages, latest: Mar 17 2022 at 23:02)
+* [monadic functor between presheaf categories](topic/topic_monadic.20functor.20between.20presheaf.20categories.html) (6 messages, latest: Mar 18 2022 at 20:58)
+* [higher categories](topic/topic_higher.20categories.html) (41 messages, latest: Mar 18 2022 at 12:11)
+* [one-hop neighborhood of a category](topic/topic_one-hop.20neighborhood.20of.20a.20category.html) (22 messages, latest: Mar 18 2022 at 10:38)
 * [latex + CT](topic/topic_latex.20.2B.20CT.html) (50 messages, latest: Mar 17 2022 at 22:02)
 * [Universal property of the classifying topos](topic/topic_Universal.20property.20of.20the.20classifying.20topos.html) (1 message, latest: Mar 17 2022 at 17:54)
 * [call stacks and lenses](topic/topic_call.20stacks.20and.20lenses.html) (17 messages, latest: Mar 16 2022 at 15:39)
@@ -110,7 +112,6 @@ permalink: /stream/229199-learning:-questions/index.html
 * [Regularly well powered?](topic/topic_Regularly.20well.20powered.3F.html) (3 messages, latest: Dec 07 2021 at 23:42)
 * [recommendation for reading on higher category theory](topic/topic_recommendation.20for.20reading.20on.20higher.20category.20theory.html) (7 messages, latest: Dec 07 2021 at 01:49)
 * [Elements of a group, and the category of groups](topic/topic_Elements.20of.20a.20group.2C.20and.20the.20category.20of.20groups.html) (15 messages, latest: Dec 03 2021 at 22:51)
-* [higher categories](topic/topic_higher.20categories.html) (37 messages, latest: Dec 03 2021 at 12:53)
 * [Baez-Dolan slice of an algebraic theory](topic/topic_Baez-Dolan.20slice.20of.20an.20algebraic.20theory.html) (16 messages, latest: Dec 01 2021 at 19:39)
 * [CT in Canada](topic/topic_CT.20in.20Canada.html) (10 messages, latest: Dec 01 2021 at 10:58)
 * [sum, zero, copy, discard](topic/topic_sum.2C.20zero.2C.20copy.2C.20discard.html) (7 messages, latest: Nov 29 2021 at 14:45)
@@ -656,4 +657,4 @@ permalink: /stream/229199-learning:-questions/index.html
 * [Algebra (Aluffi) exercises](topic/topic_Algebra.20(Aluffi).20exercises.html) (55 messages, latest: Mar 27 2020 at 23:38)
 * [What is category theory about?](topic/topic_What.20is.20category.20theory.20about.3F.html) (16 messages, latest: Mar 26 2020 at 16:03)
 
-<hr><p>Last updated: Mar 18 2022 at 00:37 UTC</p>
+<hr><p>Last updated: Mar 19 2022 at 00:35 UTC</p>

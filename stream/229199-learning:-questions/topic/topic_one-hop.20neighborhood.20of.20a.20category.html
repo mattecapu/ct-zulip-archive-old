@@ -227,6 +227,36 @@ I think I read this in something by Street or Lack or someone.   If anyone knows
 
 
 
+<a name="275747590"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/one-hop%20neighborhood%20of%20a%20category/near/275747590" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nathaniel Virgo <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/topic_one-hop.20neighborhood.20of.20a.20category.html#275747590">(Mar 18 2022 at 00:47)</a>:</h4>
+<p>I guess you could define the one-hop neighbourhood of an object following this definition that Jules gave:</p>
+<p><span class="user-mention silent" data-user-id="275901">Jules Hedges</span> <a href="#narrow/stream/229199-learning.3A-questions/topic/one-hop.20neighborhood.20of.20a.20category/near/275518828">said</a>:</p>
+<blockquote>
+<p>an edge is a morphism that has no non-trivial factorisation</p>
+</blockquote>
+<p>Just define the one-hop neighbourhood of <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>C</mi></mrow><annotation encoding="application/x-tex">C</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.07153em;">C</span></span></span></span> as the set of objects that can be reached from <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>C</mi></mrow><annotation encoding="application/x-tex">C</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.07153em;">C</span></span></span></span> by an edge. (Though maybe it makes more sense to define it as the set of edges itself, since there might be more than one edge between the same two objects.)</p>
+<p>This works in any category, not just free ones, but it might not always be useful. Consider the reals as a preorder. In that category every non-identity morphism has a non-trivial factorisation, so the one-hop neighbourhood of any object is empty (apart from the object itself, via its identity morphism). But maybe that makes sense.</p>
+
+
+
+<a name="275747944"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/one-hop%20neighborhood%20of%20a%20category/near/275747944" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Matteo Capucci (he/him) <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/topic_one-hop.20neighborhood.20of.20a.20category.html#275747944">(Mar 18 2022 at 00:53)</a>:</h4>
+<p>ha, I bet one can express this kind of irreducibility as initiality (or terminality, i don't remember the direction of arrows) in the <a href="https://ncatlab.org/nlab/show/twisted%20arrow%20category">[[twisted arrow category]]</a></p>
+
+
+
+<a name="275763217"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/one-hop%20neighborhood%20of%20a%20category/near/275763217" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nathaniel Virgo <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/topic_one-hop.20neighborhood.20of.20a.20category.html#275763217">(Mar 18 2022 at 05:59)</a>:</h4>
+<p>It's not really terminality though. It's "an object <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>E</mi><mo>∈</mo><mi mathvariant="normal">Tw</mi><mo>⁡</mo><mo stretchy="false">(</mo><mi mathvariant="script">C</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">E\in \operatorname{Tw}(\mathcal{C})</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.7224em;vertical-align:-0.0391em;"></span><span class="mord mathnormal" style="margin-right:0.05764em;">E</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">∈</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mop"><span class="mord mathrm" style="margin-right:0.01389em;">Tw</span></span><span class="mopen">(</span><span class="mord mathcal" style="margin-right:0.05834em;">C</span><span class="mclose">)</span></span></span></span> such that there is exactly one morphism into <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>E</mi></mrow><annotation encoding="application/x-tex">E</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.05764em;">E</span></span></span></span>". You can only have one terminal object up to iso, but lots of distinct objects can have this property.</p>
+
+
+
+<a name="275785113"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/one-hop%20neighborhood%20of%20a%20category/near/275785113" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Matteo Capucci (he/him) <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/topic_one-hop.20neighborhood.20of.20a.20category.html#275785113">(Mar 18 2022 at 10:38)</a>:</h4>
+<p>oh right, of course</p>
+
+
+
 {% endraw %}
 
-<hr><p>Last updated: Mar 18 2022 at 00:37 UTC</p>
+<hr><p>Last updated: Mar 19 2022 at 00:35 UTC</p>
