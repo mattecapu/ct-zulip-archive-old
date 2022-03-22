@@ -9,9 +9,9 @@ permalink: /stream/229199-learning:-questions/index.html
 
 ### Topics:
 
+* [call stacks and lenses](topic/topic_call.20stacks.20and.20lenses.html) (20 messages, latest: Mar 21 2022 at 18:14)
 * [is this an opfibration?](topic/topic_is.20this.20an.20opfibration.3F.html) (18 messages, latest: Mar 20 2022 at 22:40)
 * [duality theorems](topic/topic_duality.20theorems.html) (6 messages, latest: Mar 19 2022 at 19:44)
-* [call stacks and lenses](topic/topic_call.20stacks.20and.20lenses.html) (18 messages, latest: Mar 19 2022 at 13:38)
 * [monadic functor between presheaf categories](topic/topic_monadic.20functor.20between.20presheaf.20categories.html) (7 messages, latest: Mar 19 2022 at 02:45)
 * [higher categories](topic/topic_higher.20categories.html) (41 messages, latest: Mar 18 2022 at 12:11)
 * [one-hop neighborhood of a category](topic/topic_one-hop.20neighborhood.20of.20a.20category.html) (22 messages, latest: Mar 18 2022 at 10:38)
@@ -658,4 +658,4 @@ permalink: /stream/229199-learning:-questions/index.html
 * [Algebra (Aluffi) exercises](topic/topic_Algebra.20(Aluffi).20exercises.html) (55 messages, latest: Mar 27 2020 at 23:38)
 * [What is category theory about?](topic/topic_What.20is.20category.20theory.20about.3F.html) (16 messages, latest: Mar 26 2020 at 16:03)
 
-<hr><p>Last updated: Mar 21 2022 at 00:36 UTC</p>
+<hr><p>Last updated: Mar 22 2022 at 00:37 UTC</p>

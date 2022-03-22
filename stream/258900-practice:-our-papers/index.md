@@ -9,6 +9,7 @@ permalink: /stream/258900-practice:-our-papers/index.html
 
 ### Topics:
 
+* [Geometric morphisms between toposes of monoid actions](topic/topic_Geometric.20morphisms.20between.20toposes.20of.20monoid.20actions.html) (7 messages, latest: Mar 21 2022 at 20:31)
 * [On the the missing diagrams in Category Theory](topic/topic_On.20the.20the.20missing.20diagrams.20in.20Category.20Theory.html) (20 messages, latest: Mar 10 2022 at 18:32)
 * [categorical completeness](topic/topic_categorical.20completeness.html) (8 messages, latest: Feb 28 2022 at 17:30)
 * [Strict universes for Grothendieck topoi](topic/topic_Strict.20universes.20for.20Grothendieck.20topoi.html) (1 message, latest: Feb 25 2022 at 17:55)
@@ -47,4 +48,4 @@ permalink: /stream/258900-practice:-our-papers/index.html
 * [stream events](topic/topic_stream.20events.html) (2 messages, latest: Oct 05 2020 at 15:30)
 * [Coends of higher arity](topic/topic_Coends.20of.20higher.20arity.html) (3 messages, latest: Sep 26 2020 at 16:28)
 
-<hr><p>Last updated: Mar 21 2022 at 00:36 UTC</p>
+<hr><p>Last updated: Mar 22 2022 at 00:37 UTC</p>

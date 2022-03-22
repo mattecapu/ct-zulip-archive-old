@@ -10,13 +10,13 @@ permalink: /index.html
 
 * [learning: questions](stream/229199-learning:-questions/index.html) (648 topics)
 
-* [theory: category theory](stream/229136-theory:-category-theory/index.html) (246 topics)
+* [theory: category theory](stream/229136-theory:-category-theory/index.html) (247 topics)
 
 * [general](stream/229111-general/index.html) (221 topics)
 
 * [practice: applied ct](stream/229156-practice:-applied-ct/index.html) (128 topics)
 
-* [general: events](stream/229141-general:-events/index.html) (117 topics)
+* [general: events](stream/229141-general:-events/index.html) (118 topics)
 
 * [theory: topos theory](stream/230087-theory:-topos-theory/index.html) (71 topics)
 
@@ -28,7 +28,7 @@ permalink: /index.html
 
 * [general: mathematics](stream/266967-general:-mathematics/index.html) (49 topics)
 
-* [seminar: Topos Colloquium](stream/269484-seminar:-Topos-Colloquium/index.html) (48 topics)
+* [seminar: Topos Colloquium](stream/269484-seminar:-Topos-Colloquium/index.html) (49 topics)
 
 * [practice: thermodynamics](stream/306433-practice:-thermodynamics/index.html) (46 topics)
 
@@ -42,7 +42,7 @@ permalink: /index.html
 
 * [theory: type theory](stream/229952-theory:-type-theory/index.html) (40 topics)
 
-* [practice: our papers](stream/258900-practice:-our-papers/index.html) (37 topics)
+* [practice: our papers](stream/258900-practice:-our-papers/index.html) (38 topics)
 
 * [Categorical Probability and Statistics 2020 workshop](stream/238032-Categorical-Probability-and-Statistics-2020-workshop/index.html) (34 topics)
 
@@ -150,4 +150,4 @@ permalink: /index.html
 
 * [theory: alternate presentations](stream/233122-theory:-alternate-presentations/index.html) (1 topic)
 
-<hr><p>Last updated: Mar 21 2022 at 00:36 UTC</p>
+<hr><p>Last updated: Mar 22 2022 at 00:37 UTC</p>
