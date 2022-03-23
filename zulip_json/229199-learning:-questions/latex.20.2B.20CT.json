@@ -298,5 +298,35 @@
         "id": 275734075,
         "sender_full_name": "Mike Shulman",
         "timestamp": 1647554541
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276777\">Mike Shulman</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/latex.20.2B.20CT/near/275163982\">said</a>:</p>\n<blockquote>\n<p>Here's a trick in latex that does it for every letter automatically:</p>\n<div class=\"codehilite\"><pre><span></span><code>\\makeatletter\n\\let\\ea\\expandafter\n\\def\\foreachLetter#1#2#3{\\foreachcount=#1\n  \\ea\\loop\\ea\\ea\\ea#3\\@Alph\\foreachcount\n  \\advance\\foreachcount by 1\n  \\ifnum\\foreachcount&lt;#2\\repeat}\n\\def\\definecal#1{\\ea\\gdef\\csname c#1\\endcsname{\\ensuremath{\\mathcal{#1}}\\xspace}}\n\\foreachLetter{1}{27}{\\definecal}\n</code></pre></div>\n<p>One can argue about whether this is a better idea than writing a separate script in some other language to just spit out <code>\\newcommand{\\cA}{\\ensuremath{\\mathcal{A}}\\xspace}</code> and its 25 friends...</p>\n</blockquote>\n<p>So I finally tried this including this in my preamble, but it seems there's error here. I tried googling, but there's no useful results. I suppose I might need to include a particular package? (I already included <code>xspace</code>, but the error seems to happen before that line)</p>\n<div class=\"codehilite\"><pre><span></span><code>! Undefined control sequence.\n\\foreachLetter #1#2#3-&gt;\\foreachcount\n                                     =#1 \\ea \\loop \\ea \\ea \\ea #3\\@Alph \\for...\nl.17 \\foreachLetter{1}{27}{\\definecal}\n</code></pre></div>",
+        "id": 276151970,
+        "sender_full_name": "Bruno Gavranovic",
+        "timestamp": 1647934807
+    },
+    {
+        "content": "<p>Sorry, I omitted the <code>\\newcount\\foreachcount</code> before.</p>",
+        "id": 276197729,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1647959800
+    },
+    {
+        "content": "<p>Ah, thanks. Took me a while to figure out that this was meant to be put before the code snippet you shared. Lots of LaTeX syntax is still a mystery to me...</p>",
+        "id": 276205784,
+        "sender_full_name": "Bruno Gavranovic",
+        "timestamp": 1647962708
+    },
+    {
+        "content": "<p>This is actually plain TeX code, which has much greater potential to be mysterious.  (-:</p>",
+        "id": 276211648,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1647964847
+    },
+    {
+        "content": "<p>However, in reading about the <a href=\"https://www.ctan.org/pkg/knowledge\">knowledge package</a> that <span class=\"user-mention\" data-user-id=\"284005\">@Ralph Sarkis</span>  recommended above, I encountered a link to the <a href=\"https://www.ctan.org/pkg/mathcommand\">mathcommand package</a>, which includes some easier syntax for doing this same thing; look for section 4 on <code>\\LoopCommand</code> in its manual.</p>",
+        "id": 276211886,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1647964927
     }
 ]

@@ -407,6 +407,55 @@ It becomes more difficult when you want to make your code</p>
 
 
 
+<a name="276151970"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/latex%20%2B%20CT/near/276151970" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Bruno Gavranovic <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/topic_latex.20.2B.20CT.html#276151970">(Mar 22 2022 at 07:40)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="276777">Mike Shulman</span> <a href="#narrow/stream/229199-learning.3A-questions/topic/latex.20.2B.20CT/near/275163982">said</a>:</p>
+<blockquote>
+<p>Here's a trick in latex that does it for every letter automatically:</p>
+<div class="codehilite"><pre><span></span><code>\makeatletter
+\let\ea\expandafter
+\def\foreachLetter#1#2#3{\foreachcount=#1
+  \ea\loop\ea\ea\ea#3\@Alph\foreachcount
+  \advance\foreachcount by 1
+  \ifnum\foreachcount&lt;#2\repeat}
+\def\definecal#1{\ea\gdef\csname c#1\endcsname{\ensuremath{\mathcal{#1}}\xspace}}
+\foreachLetter{1}{27}{\definecal}
+</code></pre></div>
+<p>One can argue about whether this is a better idea than writing a separate script in some other language to just spit out <code>\newcommand{\cA}{\ensuremath{\mathcal{A}}\xspace}</code> and its 25 friends...</p>
+</blockquote>
+<p>So I finally tried this including this in my preamble, but it seems there's error here. I tried googling, but there's no useful results. I suppose I might need to include a particular package? (I already included <code>xspace</code>, but the error seems to happen before that line)</p>
+<div class="codehilite"><pre><span></span><code>! Undefined control sequence.
+\foreachLetter #1#2#3-&gt;\foreachcount
+                                     =#1 \ea \loop \ea \ea \ea #3\@Alph \for...
+l.17 \foreachLetter{1}{27}{\definecal}
+</code></pre></div>
+
+
+
+<a name="276197729"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/latex%20%2B%20CT/near/276197729" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/topic_latex.20.2B.20CT.html#276197729">(Mar 22 2022 at 14:36)</a>:</h4>
+<p>Sorry, I omitted the <code>\newcount\foreachcount</code> before.</p>
+
+
+
+<a name="276205784"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/latex%20%2B%20CT/near/276205784" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Bruno Gavranovic <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/topic_latex.20.2B.20CT.html#276205784">(Mar 22 2022 at 15:25)</a>:</h4>
+<p>Ah, thanks. Took me a while to figure out that this was meant to be put before the code snippet you shared. Lots of LaTeX syntax is still a mystery to me...</p>
+
+
+
+<a name="276211648"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/latex%20%2B%20CT/near/276211648" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/topic_latex.20.2B.20CT.html#276211648">(Mar 22 2022 at 16:00)</a>:</h4>
+<p>This is actually plain TeX code, which has much greater potential to be mysterious.  (-:</p>
+
+
+
+<a name="276211886"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/latex%20%2B%20CT/near/276211886" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/topic_latex.20.2B.20CT.html#276211886">(Mar 22 2022 at 16:02)</a>:</h4>
+<p>However, in reading about the <a href="https://www.ctan.org/pkg/knowledge">knowledge package</a> that <span class="user-mention" data-user-id="284005">@Ralph Sarkis</span>  recommended above, I encountered a link to the <a href="https://www.ctan.org/pkg/mathcommand">mathcommand package</a>, which includes some easier syntax for doing this same thing; look for section 4 on <code>\LoopCommand</code> in its manual.</p>
+
+
+
 {% endraw %}
 
-<hr><p>Last updated: Mar 22 2022 at 00:37 UTC</p>
+<hr><p>Last updated: Mar 23 2022 at 00:42 UTC</p>
