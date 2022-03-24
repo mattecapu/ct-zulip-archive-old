@@ -9,9 +9,11 @@ permalink: /stream/229199-learning:-questions/index.html
 
 ### Topics:
 
+* [reverse of a monoidal category?](topic/topic_reverse.20of.20a.20monoidal.20category.3F.html) (4 messages, latest: Mar 24 2022 at 00:09)
+* [is this an opfibration?](topic/topic_is.20this.20an.20opfibration.3F.html) (21 messages, latest: Mar 23 2022 at 23:57)
+* [internalization via hom](topic/topic_internalization.20via.20hom.html) (8 messages, latest: Mar 23 2022 at 20:26)
+* [latex + CT](topic/topic_latex.20.2B.20CT.html) (56 messages, latest: Mar 23 2022 at 07:31)
 * [Reverse of a monoidal category?](topic/topic_Reverse.20of.20a.20monoidal.20category.3F.html) (9 messages, latest: Mar 22 2022 at 18:49)
-* [latex + CT](topic/topic_latex.20.2B.20CT.html) (55 messages, latest: Mar 22 2022 at 16:02)
-* [is this an opfibration?](topic/topic_is.20this.20an.20opfibration.3F.html) (20 messages, latest: Mar 22 2022 at 07:58)
 * [call stacks and lenses](topic/topic_call.20stacks.20and.20lenses.html) (22 messages, latest: Mar 22 2022 at 03:52)
 * [duality theorems](topic/topic_duality.20theorems.html) (6 messages, latest: Mar 19 2022 at 19:44)
 * [monadic functor between presheaf categories](topic/topic_monadic.20functor.20between.20presheaf.20categories.html) (7 messages, latest: Mar 19 2022 at 02:45)
@@ -659,4 +661,4 @@ permalink: /stream/229199-learning:-questions/index.html
 * [Algebra (Aluffi) exercises](topic/topic_Algebra.20(Aluffi).20exercises.html) (55 messages, latest: Mar 27 2020 at 23:38)
 * [What is category theory about?](topic/topic_What.20is.20category.20theory.20about.3F.html) (16 messages, latest: Mar 26 2020 at 16:03)
 
-<hr><p>Last updated: Mar 23 2022 at 00:42 UTC</p>
+<hr><p>Last updated: Mar 24 2022 at 00:39 UTC</p>
