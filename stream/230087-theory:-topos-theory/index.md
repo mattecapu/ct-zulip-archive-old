@@ -81,4 +81,4 @@ permalink: /stream/230087-theory:-topos-theory/index.html
 * [right adjoint to inclusion of sheaves?](topic/topic_right.20adjoint.20to.20inclusion.20of.20sheaves.3F.html) (18 messages, latest: Mar 30 2020 at 09:37)
 * [essential geometric morphism](topic/topic_essential.20geometric.20morphism.html) (2 messages, latest: Mar 27 2020 at 18:56)
 
-<hr><p>Last updated: Mar 24 2022 at 00:39 UTC</p>
+<hr><p>Last updated: Mar 25 2022 at 00:36 UTC</p>

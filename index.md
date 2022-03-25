@@ -10,7 +10,7 @@ permalink: /index.html
 
 * [learning: questions](stream/229199-learning:-questions/index.html) (651 topics)
 
-* [theory: category theory](stream/229136-theory:-category-theory/index.html) (247 topics)
+* [theory: category theory](stream/229136-theory:-category-theory/index.html) (250 topics)
 
 * [general](stream/229111-general/index.html) (221 topics)
 
@@ -34,7 +34,7 @@ permalink: /index.html
 
 * [theory: logic](stream/233104-theory:-logic/index.html) (44 topics)
 
-* [general: positions](stream/245502-general:-positions/index.html) (42 topics)
+* [general: positions](stream/245502-general:-positions/index.html) (43 topics)
 
 * [MIT Categories Seminar](stream/229457-MIT-Categories-Seminar/index.html) (41 topics)
 
@@ -70,9 +70,9 @@ permalink: /index.html
 
 * [seminar: ACT@UCR](stream/229966-seminar:-ACT@UCR/index.html) (15 topics)
 
-* [theory: algebraic geometry](stream/231112-theory:-algebraic-geometry/index.html) (14 topics)
+* [theory: physics](stream/251538-theory:-physics/index.html) (15 topics)
 
-* [theory: physics](stream/251538-theory:-physics/index.html) (14 topics)
+* [theory: algebraic geometry](stream/231112-theory:-algebraic-geometry/index.html) (14 topics)
 
 * [working: discrete geometry and entanglement](stream/266854-working:-discrete-geometry-and-entanglement/index.html) (14 topics)
 
@@ -150,4 +150,4 @@ permalink: /index.html
 
 * [theory: alternate presentations](stream/233122-theory:-alternate-presentations/index.html) (1 topic)
 
-<hr><p>Last updated: Mar 24 2022 at 00:39 UTC</p>
+<hr><p>Last updated: Mar 25 2022 at 00:36 UTC</p>
