@@ -8,7 +8,7 @@ permalink: /index.html
 
 ## Streams:
 
-* [learning: questions](stream/229199-learning:-questions/index.html) (651 topics)
+* [learning: questions](stream/229199-learning:-questions/index.html) (652 topics)
 
 * [theory: category theory](stream/229136-theory:-category-theory/index.html) (250 topics)
 
@@ -30,7 +30,7 @@ permalink: /index.html
 
 * [seminar: Topos Colloquium](stream/269484-seminar:-Topos-Colloquium/index.html) (49 topics)
 
-* [practice: thermodynamics](stream/306433-practice:-thermodynamics/index.html) (47 topics)
+* [practice: thermodynamics](stream/306433-practice:-thermodynamics/index.html) (48 topics)
 
 * [theory: logic](stream/233104-theory:-logic/index.html) (44 topics)
 
@@ -64,13 +64,13 @@ permalink: /index.html
 
 * [practice: communication](stream/233322-practice:-communication/index.html) (16 topics)
 
+* [theory: physics](stream/251538-theory:-physics/index.html) (16 topics)
+
 * [ACT@UCR seminar](stream/229966-ACT@UCR-seminar/index.html) (15 topics)
 
 * [learning: show and tell](stream/232162-learning:-show-and-tell/index.html) (15 topics)
 
 * [seminar: ACT@UCR](stream/229966-seminar:-ACT@UCR/index.html) (15 topics)
-
-* [theory: physics](stream/251538-theory:-physics/index.html) (15 topics)
 
 * [theory: algebraic geometry](stream/231112-theory:-algebraic-geometry/index.html) (14 topics)
 
@@ -150,4 +150,4 @@ permalink: /index.html
 
 * [theory: alternate presentations](stream/233122-theory:-alternate-presentations/index.html) (1 topic)
 
-<hr><p>Last updated: Mar 25 2022 at 00:36 UTC</p>
+<hr><p>Last updated: Mar 26 2022 at 00:38 UTC</p>

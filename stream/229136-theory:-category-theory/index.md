@@ -9,7 +9,7 @@ permalink: /stream/229136-theory:-category-theory/index.html
 
 ### Topics:
 
-* [Dual Day Convolution?](topic/topic_Dual.20Day.20Convolution.3F.html) (7 messages, latest: Mar 24 2022 at 17:57)
+* [Dual Day Convolution?](topic/topic_Dual.20Day.20Convolution.3F.html) (8 messages, latest: Mar 25 2022 at 13:36)
 * [laxer limits](topic/topic_laxer.20limits.html) (13 messages, latest: Mar 24 2022 at 16:38)
 * ['semibraidings'](topic/topic_'semibraidings'.html) (5 messages, latest: Mar 24 2022 at 10:13)
 * [2-categories of symmetric strict monoidal categories](topic/topic_2-categories.20of.20symmetric.20strict.20monoidal.20categories.html) (27 messages, latest: Mar 23 2022 at 13:46)
@@ -260,4 +260,4 @@ permalink: /stream/229136-theory:-category-theory/index.html
 * [diagrams for application](topic/topic_diagrams.20for.20application.html) (13 messages, latest: Mar 24 2020 at 06:19)
 * [universal constructions](topic/topic_universal.20constructions.html) (8 messages, latest: Mar 23 2020 at 21:06)
 
-<hr><p>Last updated: Mar 25 2022 at 00:36 UTC</p>
+<hr><p>Last updated: Mar 26 2022 at 00:38 UTC</p>

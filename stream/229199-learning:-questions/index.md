@@ -9,8 +9,10 @@ permalink: /stream/229199-learning:-questions/index.html
 
 ### Topics:
 
+* [latex + CT](topic/topic_latex.20.2B.20CT.html) (59 messages, latest: Mar 25 2022 at 23:33)
+* [dagger categories](topic/topic_dagger.20categories.html) (3 messages, latest: Mar 25 2022 at 22:39)
+* [Dagger categories](topic/topic_Dagger.20categories.html) (27 messages, latest: Mar 25 2022 at 21:22)
 * [internalization via hom](topic/topic_internalization.20via.20hom.html) (20 messages, latest: Mar 24 2022 at 16:56)
-* [latex + CT](topic/topic_latex.20.2B.20CT.html) (57 messages, latest: Mar 24 2022 at 16:10)
 * [reverse of a monoidal category?](topic/topic_reverse.20of.20a.20monoidal.20category.3F.html) (4 messages, latest: Mar 24 2022 at 00:09)
 * [is this an opfibration?](topic/topic_is.20this.20an.20opfibration.3F.html) (21 messages, latest: Mar 23 2022 at 23:57)
 * [Reverse of a monoidal category?](topic/topic_Reverse.20of.20a.20monoidal.20category.3F.html) (9 messages, latest: Mar 22 2022 at 18:49)
@@ -629,7 +631,6 @@ permalink: /stream/229199-learning:-questions/index.html
 * [Choice in HoTT](topic/topic_Choice.20in.20HoTT.html) (3 messages, latest: Apr 15 2020 at 16:56)
 * [Kelly’s book](topic/topic_Kelly.E2.80.99s.20book.html) (32 messages, latest: Apr 14 2020 at 20:31)
 * [(off topic, sorry)](topic/topic_(off.20topic.2C.20sorry).html) (14 messages, latest: Apr 14 2020 at 12:10)
-* [Dagger categories](topic/topic_Dagger.20categories.html) (26 messages, latest: Apr 13 2020 at 23:39)
 * [Fields categorically](topic/topic_Fields.20categorically.html) (134 messages, latest: Apr 13 2020 at 09:37)
 * [Grothendieck Construction](topic/topic_Grothendieck.20Construction.html) (8 messages, latest: Apr 12 2020 at 22:41)
 * [Presheaves of Presheaves](topic/topic_Presheaves.20of.20Presheaves.html) (53 messages, latest: Apr 12 2020 at 21:26)
@@ -661,4 +662,4 @@ permalink: /stream/229199-learning:-questions/index.html
 * [Algebra (Aluffi) exercises](topic/topic_Algebra.20(Aluffi).20exercises.html) (55 messages, latest: Mar 27 2020 at 23:38)
 * [What is category theory about?](topic/topic_What.20is.20category.20theory.20about.3F.html) (16 messages, latest: Mar 26 2020 at 16:03)
 
-<hr><p>Last updated: Mar 25 2022 at 00:36 UTC</p>
+<hr><p>Last updated: Mar 26 2022 at 00:38 UTC</p>
