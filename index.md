@@ -8,7 +8,7 @@ permalink: /index.html
 
 ## Streams:
 
-* [learning: questions](stream/229199-learning:-questions/index.html) (653 topics)
+* [learning: questions](stream/229199-learning:-questions/index.html) (655 topics)
 
 * [theory: category theory](stream/229136-theory:-category-theory/index.html) (250 topics)
 
@@ -16,7 +16,7 @@ permalink: /index.html
 
 * [practice: applied ct](stream/229156-practice:-applied-ct/index.html) (128 topics)
 
-* [general: events](stream/229141-general:-events/index.html) (118 topics)
+* [general: events](stream/229141-general:-events/index.html) (119 topics)
 
 * [theory: topos theory](stream/230087-theory:-topos-theory/index.html) (71 topics)
 
@@ -26,11 +26,11 @@ permalink: /index.html
 
 * [theory: algebraic topology & homological algebra](stream/241590-theory:-algebraic-topology-&-homological-algebra/index.html) (51 topics)
 
+* [seminar: Topos Colloquium](stream/269484-seminar:-Topos-Colloquium/index.html) (50 topics)
+
 * [general: mathematics](stream/266967-general:-mathematics/index.html) (49 topics)
 
 * [practice: thermodynamics](stream/306433-practice:-thermodynamics/index.html) (49 topics)
-
-* [seminar: Topos Colloquium](stream/269484-seminar:-Topos-Colloquium/index.html) (49 topics)
 
 * [theory: logic](stream/233104-theory:-logic/index.html) (44 topics)
 
@@ -150,4 +150,4 @@ permalink: /index.html
 
 * [theory: alternate presentations](stream/233122-theory:-alternate-presentations/index.html) (1 topic)
 
-<hr><p>Last updated: Mar 28 2022 at 00:38 UTC</p>
+<hr><p>Last updated: Mar 29 2022 at 00:43 UTC</p>
