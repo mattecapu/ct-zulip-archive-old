@@ -9,7 +9,7 @@ permalink: /stream/245502-general:-positions/index.html
 
 ### Topics:
 
-* [people who have gotten jobs](topic/topic_people.20who.20have.20gotten.20jobs.html) (71 messages, latest: Mar 28 2022 at 14:29)
+* [people who have gotten jobs](topic/topic_people.20who.20have.20gotten.20jobs.html) (72 messages, latest: Mar 29 2022 at 17:57)
 * [Infrabayesianism](topic/topic_Infrabayesianism.html) (1 message, latest: Mar 24 2022 at 08:08)
 * [Silvermint](topic/topic_Silvermint.html) (8 messages, latest: Mar 17 2022 at 16:10)
 * [Topos Institute summer research positions](topic/topic_Topos.20Institute.20summer.20research.20positions.html) (8 messages, latest: Mar 05 2022 at 17:30)
@@ -53,4 +53,4 @@ permalink: /stream/245502-general:-positions/index.html
 * [PhD positions in Estonia](topic/topic_PhD.20positions.20in.20Estonia.html) (1 message, latest: Jun 27 2020 at 18:04)
 * [Companies that hire category people](topic/topic_Companies.20that.20hire.20category.20people.html) (2 messages, latest: May 13 2020 at 03:50)
 
-<hr><p>Last updated: Mar 29 2022 at 00:43 UTC</p>
+<hr><p>Last updated: Mar 30 2022 at 00:40 UTC</p>

@@ -9,8 +9,9 @@ permalink: /stream/229199-learning:-questions/index.html
 
 ### Topics:
 
-* [Relationship between enriched and internal categories in ...](topic/topic_Relationship.20between.20enriched.20and.20internal.20categories.20in.20.2E.2E.2E.html) (5 messages, latest: Mar 28 2022 at 19:20)
-* [kinematics and dynamics: adjoint?](topic/topic_kinematics.20and.20dynamics.3A.20adjoint.3F.html) (1 message, latest: Mar 28 2022 at 10:24)
+* [Relationship between enriched and internal categories in ...](topic/topic_Relationship.20between.20enriched.20and.20internal.20categories.20in.20.2E.2E.2E.html) (14 messages, latest: Mar 29 2022 at 18:25)
+* [Fascinating theorems](topic/topic_Fascinating.20theorems.html) (4 messages, latest: Mar 29 2022 at 15:56)
+* [kinematics and dynamics: adjoint?](topic/topic_kinematics.20and.20dynamics.3A.20adjoint.3F.html) (2 messages, latest: Mar 29 2022 at 11:24)
 * [Basics of dependent sets](topic/topic_Basics.20of.20dependent.20sets.html) (5 messages, latest: Mar 27 2022 at 11:10)
 * [dagger categories](topic/topic_dagger.20categories.html) (6 messages, latest: Mar 26 2022 at 18:55)
 * [latex + CT](topic/topic_latex.20.2B.20CT.html) (62 messages, latest: Mar 26 2022 at 14:27)
@@ -665,4 +666,4 @@ permalink: /stream/229199-learning:-questions/index.html
 * [Algebra (Aluffi) exercises](topic/topic_Algebra.20(Aluffi).20exercises.html) (55 messages, latest: Mar 27 2020 at 23:38)
 * [What is category theory about?](topic/topic_What.20is.20category.20theory.20about.3F.html) (16 messages, latest: Mar 26 2020 at 16:03)
 
-<hr><p>Last updated: Mar 29 2022 at 00:43 UTC</p>
+<hr><p>Last updated: Mar 30 2022 at 00:40 UTC</p>

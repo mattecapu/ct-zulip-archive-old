@@ -9,7 +9,7 @@ permalink: /stream/269484-seminar:-Topos-Colloquium/index.html
 
 ### Topics:
 
-* [Maaike Zwart: "Lessons from failing distributive laws"](topic/topic_Maaike.20Zwart.3A.20.22Lessons.20from.20failing.20distributive.20laws.22.html) (3 messages, latest: Mar 28 2022 at 15:43)
+* [Maaike Zwart: "Lessons from failing distributive laws"](topic/topic_Maaike.20Zwart.3A.20.22Lessons.20from.20failing.20distributive.20laws.22.html) (4 messages, latest: Mar 29 2022 at 23:17)
 * [Dominic Verity: Zen and the art of ∞-categories](topic/topic_Dominic.20Verity.3A.20Zen.20and.20the.20art.20of.20.E2.88.9E-categories.html) (3 messages, latest: Mar 24 2022 at 19:49)
 * [Zoé Christoff: The logic of social influence in networks](topic/topic_Zo.C3.A9.20Christoff.3A.20The.20logic.20of.20social.20influence.20in.20networks.html) (3 messages, latest: Mar 17 2022 at 16:56)
 * [Glynn Winskel: "Making concurrency functional"](topic/topic_Glynn.20Winskel.3A.20.22Making.20concurrency.20functional.22.html) (4 messages, latest: Mar 03 2022 at 16:53)
@@ -60,4 +60,4 @@ permalink: /stream/269484-seminar:-Topos-Colloquium/index.html
 * [Richard Garner: "Comodels of an algebraic theory"](topic/topic_Richard.20Garner.3A.20.22Comodels.20of.20an.20algebraic.20theory.22.html) (27 messages, latest: Feb 11 2021 at 22:36)
 * [stream events](topic/topic_stream.20events.html) (2 messages, latest: Dec 26 2020 at 19:06)
 
-<hr><p>Last updated: Mar 29 2022 at 00:43 UTC</p>
+<hr><p>Last updated: Mar 30 2022 at 00:40 UTC</p>
