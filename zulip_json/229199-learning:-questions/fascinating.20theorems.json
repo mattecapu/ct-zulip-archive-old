@@ -34,5 +34,29 @@
         "id": 277202900,
         "sender_full_name": "Graham Manuell",
         "timestamp": 1648673801
+    },
+    {
+        "content": "<p>So I've never heard of the PCP Theorem before, and reading the Wikipedia page, it does seem pretty mindblowing. <br>\n\"The PCP theorem says that for some universal constant K, for every n, any mathematical proof for a statement of length n can be rewritten as a different proof of length poly(n) that is formally verifiable with 99% accuracy by a randomized algorithm that inspects only K letters of that proof.\"</p>",
+        "id": 277259310,
+        "sender_full_name": "John van de Wetering",
+        "timestamp": 1648721886
+    },
+    {
+        "content": "<p>But then in the next section they give an equivalent formulation: \"An alternative formulation of the PCP theorem states that the maximum fraction of satisfiable constraints of a constraint satisfaction problem is NP-hard to approximate within some constant factor.\"</p>",
+        "id": 277259338,
+        "sender_full_name": "John van de Wetering",
+        "timestamp": 1648721908
+    },
+    {
+        "content": "<p>I don't see how these two are connected. Can you give some intuitive reason for why this equivalence holds?</p>",
+        "id": 277259366,
+        "sender_full_name": "John van de Wetering",
+        "timestamp": 1648721925
+    },
+    {
+        "content": "<p>The problem \"Does there exist a proof of the statement X of length at most N?\" (where N is coded in unary) is NP-complete so that gives the link between mathematical proofs and NP. For the constraint satisfaction stuff, I think the idea of the proof of the PCP theorem is that we transform an NP problem into a constraint satisfaction problem where either the constraints are all satisfiable or only a very small proportion of them are. (Then we can randomly sample constraints and see if they are satisfied.) Since this transformation is possible, if we could determine if some constant proportion of the constraints held in polynomial time we could also solve the original problem in polynomial time.</p>",
+        "id": 277264721,
+        "sender_full_name": "Graham Manuell",
+        "timestamp": 1648725270
     }
 ]
