@@ -9,7 +9,7 @@ permalink: /stream/229199-learning:-questions/index.html
 
 ### Topics:
 
-* [ends and limits](topic/topic_ends.20and.20limits.html) (7 messages, latest: Apr 01 2022 at 19:50)
+* [ends and limits](topic/topic_ends.20and.20limits.html) (8 messages, latest: Apr 02 2022 at 16:39)
 * [cotensors in a Kleisli category](topic/topic_cotensors.20in.20a.20Kleisli.20category.html) (2 messages, latest: Apr 01 2022 at 12:12)
 * [Ends and Limits](topic/topic_Ends.20and.20Limits.html) (15 messages, latest: Mar 31 2022 at 21:14)
 * [Relationship between enriched and internal categories in ...](topic/topic_Relationship.20between.20enriched.20and.20internal.20categories.20in.20.2E.2E.2E.html) (21 messages, latest: Mar 31 2022 at 19:48)
@@ -669,4 +669,4 @@ permalink: /stream/229199-learning:-questions/index.html
 * [Algebra (Aluffi) exercises](topic/topic_Algebra.20(Aluffi).20exercises.html) (55 messages, latest: Mar 27 2020 at 23:38)
 * [What is category theory about?](topic/topic_What.20is.20category.20theory.20about.3F.html) (16 messages, latest: Mar 26 2020 at 16:03)
 
-<hr><p>Last updated: Apr 02 2022 at 00:38 UTC</p>
+<hr><p>Last updated: Apr 03 2022 at 00:43 UTC</p>

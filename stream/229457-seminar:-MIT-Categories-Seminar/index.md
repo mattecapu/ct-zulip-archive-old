@@ -51,4 +51,4 @@ permalink: /stream/229457-seminar:-MIT-Categories-Seminar/index.html
 * [March 26 - David Myers' talk](topic/topic_March.2026.20-.20David.20Myers'.20talk.html) (40 messages, latest: Mar 27 2020 at 18:11)
 * [March 19 - Pilot talk](topic/topic_March.2019.20-.20Pilot.20talk.html) (1 message, latest: Mar 24 2020 at 20:49)
 
-<hr><p>Last updated: Apr 02 2022 at 00:38 UTC</p>
+<hr><p>Last updated: Apr 03 2022 at 00:43 UTC</p>
