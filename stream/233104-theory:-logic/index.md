@@ -9,6 +9,7 @@ permalink: /stream/233104-theory:-logic/index.html
 
 ### Topics:
 
+* [Induction](topic/topic_Induction.html) (6 messages, latest: Apr 04 2022 at 17:50)
 * [new website: Women in Logic](topic/topic_new.20website.3A.20Women.20in.20Logic.html) (1 message, latest: Feb 06 2022 at 16:28)
 * [3-player game semantics?](topic/topic_3-player.20game.20semantics.3F.html) (19 messages, latest: Feb 05 2022 at 14:35)
 * [fragments of logic](topic/topic_fragments.20of.20logic.html) (58 messages, latest: Jan 21 2022 at 15:50)
@@ -54,4 +55,4 @@ permalink: /stream/233104-theory:-logic/index.html
 * [Probability as logic](topic/topic_Probability.20as.20logic.html) (63 messages, latest: Apr 15 2020 at 12:33)
 * [stream events](topic/topic_stream.20events.html) (1 message, latest: Apr 10 2020 at 12:32)
 
-<hr><p>Last updated: Apr 04 2022 at 00:39 UTC</p>
+<hr><p>Last updated: Apr 05 2022 at 00:40 UTC</p>

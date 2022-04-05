@@ -1,0 +1,68 @@
+[
+    {
+        "content": "<p>The nlab has a page on <a href=\"https://ncatlab.org/nlab/show/monoidal+monad\">monoidal monads</a> and it says</p>\n<blockquote>\n<p>The notion of monoidal monad is equivalent to the notion of commutative monad</p>\n</blockquote>\n<p>However, the two papers I see cited <a href=\"http://home.imf.au.dk/kock/SFMM.pdf\">here</a> and <a href=\"https://arxiv.org/abs/1910.03752\">here</a> both say that <em>symmetric</em> monoidal monads are equivalent to commutative monads.</p>\n<p>Moreover <a href=\"https://arxiv.org/abs/1904.06847\">this paper</a> has a monad on a symmetric monoidal category that is monoidal, but not symmetric monoidal, and not commutative, which I found very confusing because I had read the above on the nlab.</p>\n<p>So which one is wrong? Is the correct statement only that <em>symmetric</em> monoidal monads are the same as commutative monads?</p>",
+        "id": 277705445,
+        "sender_full_name": "Max New",
+        "timestamp": 1649064837
+    },
+    {
+        "content": "<p>It sounds from your counterexample that the nLab is wrong. It happens! Please do leave a note on the corresponding nForum page so that the page gets edited when that becomes possible again.</p>",
+        "id": 277708926,
+        "sender_full_name": "Morgan Rogers (he/him)",
+        "timestamp": 1649066852
+    },
+    {
+        "content": "<p>Theorem 12 in that paper doesn't seem to supply an actual example. Not that I checked anything carefully, but my instinct would be to trust the nLab page more (specifically the proof of Proposition 3.1).</p>",
+        "id": 277710496,
+        "sender_full_name": "Reid Barton",
+        "timestamp": 1649067837
+    },
+    {
+        "content": "<p>I'm pretty sure you need a symmetry around to even define what it means for a strong monad to be commutative, but that's not the case for monoidal monads</p>",
+        "id": 277710660,
+        "sender_full_name": "Jules Hedges",
+        "timestamp": 1649067934
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"275901\">Jules Hedges</span> <a href=\"#narrow/stream/229136-theory.3A-category-theory/topic/Monoidal.20vs.20Commutative.20Monads/near/277710660\">said</a>:</p>\n<blockquote>\n<p>I'm pretty sure you need a symmetry around to even define what it means for a strong monad to be commutative, but that's not the case for monoidal monads</p>\n</blockquote>\n<p>I don't think so, you just seem to need a strength and a costrength</p>",
+        "id": 277711002,
+        "sender_full_name": "Max New",
+        "timestamp": 1649068128
+    },
+    {
+        "content": "<p>Right, I think this is the issue--the meaning of \"commutative\" monad depends on whether it is regarded as a functor between monoidal categories or symmetric monoidal categories</p>",
+        "id": 277711241,
+        "sender_full_name": "Reid Barton",
+        "timestamp": 1649068285
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276480\">Reid Barton</span> <a href=\"#narrow/stream/229136-theory.3A-category-theory/topic/Monoidal.20vs.20Commutative.20Monads/near/277710496\">said</a>:</p>\n<blockquote>\n<p>Theorem 12 in that paper doesn't seem to supply an actual example. Not that I checked anything carefully, but my instinct would be to trust the nLab page more (specifically the proof of Proposition 3.1).</p>\n</blockquote>\n<p>Theorem 12 is based on the syntactic model, so I agree it's not clear that it is not actually commutative. However in section 5 there is a construction for concrete models where this could be checked.</p>",
+        "id": 277711256,
+        "sender_full_name": "Max New",
+        "timestamp": 1649068294
+    },
+    {
+        "content": "<p>at least, if you take the union of all the definitions appearing in these sources</p>",
+        "id": 277711278,
+        "sender_full_name": "Reid Barton",
+        "timestamp": 1649068307
+    },
+    {
+        "content": "<p>If I have a monad <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>T</mi></mrow><annotation encoding=\"application/x-tex\">T</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.13889em;\">T</span></span></span></span> on a symmetric monoidal category <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>C</mi></mrow><annotation encoding=\"application/x-tex\">C</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.07153em;\">C</span></span></span></span> but then forget that <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>C</mi></mrow><annotation encoding=\"application/x-tex\">C</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.07153em;\">C</span></span></span></span> is symmetric, by the nLab definition, in order to make <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>T</mi></mrow><annotation encoding=\"application/x-tex\">T</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.13889em;\">T</span></span></span></span> commutative I get to pick a strength and costrength (though \"left\" and \"right\" seem like much better terms) independently. Now since <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>C</mi></mrow><annotation encoding=\"application/x-tex\">C</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.07153em;\">C</span></span></span></span> really is symmetric there's an equation that may or may not hold, and it looks plausible that it should be the same as whether or not <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>T</mi></mrow><annotation encoding=\"application/x-tex\">T</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.13889em;\">T</span></span></span></span> is <em>symmetric</em> monoidal.</p>",
+        "id": 277711764,
+        "sender_full_name": "Reid Barton",
+        "timestamp": 1649068589
+    },
+    {
+        "content": "<p>So everything looks okay to me, though confusing for sure.</p>",
+        "id": 277712410,
+        "sender_full_name": "Reid Barton",
+        "timestamp": 1649068999
+    },
+    {
+        "content": "<p>Thanks for actually checking the source, folks, sorry I was lazy!</p>",
+        "id": 277770877,
+        "sender_full_name": "Morgan Rogers (he/him)",
+        "timestamp": 1649095219
+    }
+]

@@ -9,7 +9,7 @@ permalink: /stream/271602-general:-co/appreciation/index.html
 
 ### Topics:
 
-* [co-appreciation for the University of Leicester](topic/topic_co-appreciation.20for.20the.20University.20of.20Leicester.html) (29 messages, latest: Apr 02 2022 at 16:36)
+* [co-appreciation for the University of Leicester](topic/topic_co-appreciation.20for.20the.20University.20of.20Leicester.html) (30 messages, latest: Apr 04 2022 at 01:46)
 * [appreciation for this zulip](topic/topic_appreciation.20for.20this.20zulip.html) (1 message, latest: Dec 29 2021 at 20:23)
 * [Bimonoidal Categories book](topic/topic_Bimonoidal.20Categories.20book.html) (8 messages, latest: Jul 24 2021 at 15:23)
 * [René Guitart](topic/topic_Ren.C3.A9.20Guitart.html) (66 messages, latest: Jul 01 2021 at 10:02)
@@ -23,4 +23,4 @@ permalink: /stream/271602-general:-co/appreciation/index.html
 * [Tom Leinster's "Basic Category Theory"](topic/topic_Tom.20Leinster's.20.22Basic.20Category.20Theory.22.html) (7 messages, latest: Jan 17 2021 at 09:06)
 * [stream events](topic/topic_stream.20events.html) (1 message, latest: Jan 10 2021 at 10:11)
 
-<hr><p>Last updated: Apr 04 2022 at 00:39 UTC</p>
+<hr><p>Last updated: Apr 05 2022 at 00:40 UTC</p>

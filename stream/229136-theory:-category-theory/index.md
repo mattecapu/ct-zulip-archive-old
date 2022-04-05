@@ -9,6 +9,8 @@ permalink: /stream/229136-theory:-category-theory/index.html
 
 ### Topics:
 
+* [Monoidal vs Commutative Monads](topic/topic_Monoidal.20vs.20Commutative.20Monads.html) (11 messages, latest: Apr 04 2022 at 18:00)
+* [monoidal closed but not compact closed](topic/topic_monoidal.20closed.20but.20not.20compact.20closed.html) (47 messages, latest: Apr 04 2022 at 06:51)
 * ['semibraidings'](topic/topic_'semibraidings'.html) (6 messages, latest: Mar 26 2022 at 19:54)
 * [Dual Day Convolution?](topic/topic_Dual.20Day.20Convolution.3F.html) (8 messages, latest: Mar 25 2022 at 13:36)
 * [laxer limits](topic/topic_laxer.20limits.html) (13 messages, latest: Mar 24 2022 at 16:38)
@@ -29,7 +31,6 @@ permalink: /stream/229136-theory:-category-theory/index.html
 * [two algebra structures](topic/topic_two.20algebra.20structures.html) (38 messages, latest: Jan 21 2022 at 19:45)
 * [lifted functor on Met preserves isometries](topic/topic_lifted.20functor.20on.20Met.20preserves.20isometries.html) (17 messages, latest: Jan 19 2022 at 18:48)
 * [What are string diagrams really?](topic/topic_What.20are.20string.20diagrams.20really.3F.html) (33 messages, latest: Jan 19 2022 at 01:11)
-* [monoidal closed but not compact closed](topic/topic_monoidal.20closed.20but.20not.20compact.20closed.html) (42 messages, latest: Jan 18 2022 at 12:58)
 * [(n,r)-category](topic/topic_(n.2Cr)-category.html) (24 messages, latest: Jan 17 2022 at 19:29)
 * [freely adding comprehensions](topic/topic_freely.20adding.20comprehensions.html) (2 messages, latest: Jan 17 2022 at 01:33)
 * [explicit description of the lax monoidal functor classifier?](topic/topic_explicit.20description.20of.20the.20lax.20monoidal.20functor.20classifier.3F.html) (2 messages, latest: Jan 09 2022 at 20:32)
@@ -260,4 +261,4 @@ permalink: /stream/229136-theory:-category-theory/index.html
 * [diagrams for application](topic/topic_diagrams.20for.20application.html) (13 messages, latest: Mar 24 2020 at 06:19)
 * [universal constructions](topic/topic_universal.20constructions.html) (8 messages, latest: Mar 23 2020 at 21:06)
 
-<hr><p>Last updated: Apr 04 2022 at 00:39 UTC</p>
+<hr><p>Last updated: Apr 05 2022 at 00:40 UTC</p>

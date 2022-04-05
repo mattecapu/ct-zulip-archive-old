@@ -1,0 +1,98 @@
+---
+layout: archive
+title: Zulip Chat Archive
+permalink: /stream/229136-theory:-category-theory/topic/topic_Monoidal.20vs.20Commutative.20Monads.html
+---
+
+<h2>Stream: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/index.html">theory: category theory</a></h2>
+<h3>Topic: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/topic_Monoidal.20vs.20Commutative.20Monads.html">Monoidal vs Commutative Monads</a></h3>
+
+<hr>
+
+<base href="https://categorytheory.zulipchat.com/">
+
+{% raw %}
+
+<a name="277705445"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/Monoidal%20vs%20Commutative%20Monads/near/277705445" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Max New <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/topic_Monoidal.20vs.20Commutative.20Monads.html#277705445">(Apr 04 2022 at 09:33)</a>:</h4>
+<p>The nlab has a page on <a href="https://ncatlab.org/nlab/show/monoidal+monad">monoidal monads</a> and it says</p>
+<blockquote>
+<p>The notion of monoidal monad is equivalent to the notion of commutative monad</p>
+</blockquote>
+<p>However, the two papers I see cited <a href="http://home.imf.au.dk/kock/SFMM.pdf">here</a> and <a href="https://arxiv.org/abs/1910.03752">here</a> both say that <em>symmetric</em> monoidal monads are equivalent to commutative monads.</p>
+<p>Moreover <a href="https://arxiv.org/abs/1904.06847">this paper</a> has a monad on a symmetric monoidal category that is monoidal, but not symmetric monoidal, and not commutative, which I found very confusing because I had read the above on the nlab.</p>
+<p>So which one is wrong? Is the correct statement only that <em>symmetric</em> monoidal monads are the same as commutative monads?</p>
+
+
+
+<a name="277708926"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/Monoidal%20vs%20Commutative%20Monads/near/277708926" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Morgan Rogers (he/him) <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/topic_Monoidal.20vs.20Commutative.20Monads.html#277708926">(Apr 04 2022 at 10:07)</a>:</h4>
+<p>It sounds from your counterexample that the nLab is wrong. It happens! Please do leave a note on the corresponding nForum page so that the page gets edited when that becomes possible again.</p>
+
+
+
+<a name="277710496"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/Monoidal%20vs%20Commutative%20Monads/near/277710496" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Reid Barton <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/topic_Monoidal.20vs.20Commutative.20Monads.html#277710496">(Apr 04 2022 at 10:23)</a>:</h4>
+<p>Theorem 12 in that paper doesn't seem to supply an actual example. Not that I checked anything carefully, but my instinct would be to trust the nLab page more (specifically the proof of Proposition 3.1).</p>
+
+
+
+<a name="277710660"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/Monoidal%20vs%20Commutative%20Monads/near/277710660" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Jules Hedges <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/topic_Monoidal.20vs.20Commutative.20Monads.html#277710660">(Apr 04 2022 at 10:25)</a>:</h4>
+<p>I'm pretty sure you need a symmetry around to even define what it means for a strong monad to be commutative, but that's not the case for monoidal monads</p>
+
+
+
+<a name="277711002"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/Monoidal%20vs%20Commutative%20Monads/near/277711002" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Max New <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/topic_Monoidal.20vs.20Commutative.20Monads.html#277711002">(Apr 04 2022 at 10:28)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="275901">Jules Hedges</span> <a href="#narrow/stream/229136-theory.3A-category-theory/topic/Monoidal.20vs.20Commutative.20Monads/near/277710660">said</a>:</p>
+<blockquote>
+<p>I'm pretty sure you need a symmetry around to even define what it means for a strong monad to be commutative, but that's not the case for monoidal monads</p>
+</blockquote>
+<p>I don't think so, you just seem to need a strength and a costrength</p>
+
+
+
+<a name="277711241"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/Monoidal%20vs%20Commutative%20Monads/near/277711241" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Reid Barton <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/topic_Monoidal.20vs.20Commutative.20Monads.html#277711241">(Apr 04 2022 at 10:31)</a>:</h4>
+<p>Right, I think this is the issue--the meaning of "commutative" monad depends on whether it is regarded as a functor between monoidal categories or symmetric monoidal categories</p>
+
+
+
+<a name="277711256"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/Monoidal%20vs%20Commutative%20Monads/near/277711256" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Max New <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/topic_Monoidal.20vs.20Commutative.20Monads.html#277711256">(Apr 04 2022 at 10:31)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="276480">Reid Barton</span> <a href="#narrow/stream/229136-theory.3A-category-theory/topic/Monoidal.20vs.20Commutative.20Monads/near/277710496">said</a>:</p>
+<blockquote>
+<p>Theorem 12 in that paper doesn't seem to supply an actual example. Not that I checked anything carefully, but my instinct would be to trust the nLab page more (specifically the proof of Proposition 3.1).</p>
+</blockquote>
+<p>Theorem 12 is based on the syntactic model, so I agree it's not clear that it is not actually commutative. However in section 5 there is a construction for concrete models where this could be checked.</p>
+
+
+
+<a name="277711278"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/Monoidal%20vs%20Commutative%20Monads/near/277711278" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Reid Barton <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/topic_Monoidal.20vs.20Commutative.20Monads.html#277711278">(Apr 04 2022 at 10:31)</a>:</h4>
+<p>at least, if you take the union of all the definitions appearing in these sources</p>
+
+
+
+<a name="277711764"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/Monoidal%20vs%20Commutative%20Monads/near/277711764" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Reid Barton <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/topic_Monoidal.20vs.20Commutative.20Monads.html#277711764">(Apr 04 2022 at 10:36)</a>:</h4>
+<p>If I have a monad <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>T</mi></mrow><annotation encoding="application/x-tex">T</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.13889em;">T</span></span></span></span> on a symmetric monoidal category <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>C</mi></mrow><annotation encoding="application/x-tex">C</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.07153em;">C</span></span></span></span> but then forget that <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>C</mi></mrow><annotation encoding="application/x-tex">C</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.07153em;">C</span></span></span></span> is symmetric, by the nLab definition, in order to make <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>T</mi></mrow><annotation encoding="application/x-tex">T</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.13889em;">T</span></span></span></span> commutative I get to pick a strength and costrength (though "left" and "right" seem like much better terms) independently. Now since <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>C</mi></mrow><annotation encoding="application/x-tex">C</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.07153em;">C</span></span></span></span> really is symmetric there's an equation that may or may not hold, and it looks plausible that it should be the same as whether or not <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>T</mi></mrow><annotation encoding="application/x-tex">T</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.13889em;">T</span></span></span></span> is <em>symmetric</em> monoidal.</p>
+
+
+
+<a name="277712410"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/Monoidal%20vs%20Commutative%20Monads/near/277712410" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Reid Barton <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/topic_Monoidal.20vs.20Commutative.20Monads.html#277712410">(Apr 04 2022 at 10:43)</a>:</h4>
+<p>So everything looks okay to me, though confusing for sure.</p>
+
+
+
+<a name="277770877"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/Monoidal%20vs%20Commutative%20Monads/near/277770877" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Morgan Rogers (he/him) <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/topic_Monoidal.20vs.20Commutative.20Monads.html#277770877">(Apr 04 2022 at 18:00)</a>:</h4>
+<p>Thanks for actually checking the source, folks, sorry I was lazy!</p>
+
+
+
+{% endraw %}
+
+<hr><p>Last updated: Apr 05 2022 at 00:40 UTC</p>
