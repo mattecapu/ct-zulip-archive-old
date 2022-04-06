@@ -9,8 +9,8 @@ permalink: /stream/229141-general:-events/index.html
 
 ### Topics:
 
+* [Intercats](topic/topic_Intercats.html) (27 messages, latest: Apr 05 2022 at 14:09)
 * [Structure meets Power Workshop, CFP](topic/topic_Structure.20meets.20Power.20Workshop.2C.20CFP.html) (1 message, latest: Mar 28 2022 at 11:20)
-* [Intercats](topic/topic_Intercats.html) (24 messages, latest: Mar 22 2022 at 12:52)
 * [BCQT2022](topic/topic_BCQT2022.html) (1 message, latest: Mar 21 2022 at 14:48)
 * [AMS school on applied category theory](topic/topic_AMS.20school.20on.20applied.20category.20theory.html) (61 messages, latest: Mar 20 2022 at 16:33)
 * [Workshop on Polynomial Functors 2022](topic/topic_Workshop.20on.20Polynomial.20Functors.202022.html) (13 messages, latest: Mar 18 2022 at 14:40)
@@ -129,4 +129,4 @@ permalink: /stream/229141-general:-events/index.html
 * [April 1st: ACT@UCR](topic/topic_April.201st.3A.20ACT.40UCR.html) (3 messages, latest: Mar 26 2020 at 23:58)
 * [Google Sites problem](topic/topic_Google.20Sites.20problem.html) (4 messages, latest: Mar 25 2020 at 04:29)
 
-<hr><p>Last updated: Apr 05 2022 at 00:40 UTC</p>
+<hr><p>Last updated: Apr 06 2022 at 00:42 UTC</p>

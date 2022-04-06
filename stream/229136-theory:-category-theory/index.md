@@ -9,6 +9,8 @@ permalink: /stream/229136-theory:-category-theory/index.html
 
 ### Topics:
 
+* [monoidal vs commutative monads](topic/topic_monoidal.20vs.20commutative.20monads.html) (1 message, latest: Apr 05 2022 at 21:19)
+* [compact closed with self-dual objects](topic/topic_compact.20closed.20with.20self-dual.20objects.html) (5 messages, latest: Apr 05 2022 at 21:12)
 * [Monoidal vs Commutative Monads](topic/topic_Monoidal.20vs.20Commutative.20Monads.html) (11 messages, latest: Apr 04 2022 at 18:00)
 * [monoidal closed but not compact closed](topic/topic_monoidal.20closed.20but.20not.20compact.20closed.html) (47 messages, latest: Apr 04 2022 at 06:51)
 * ['semibraidings'](topic/topic_'semibraidings'.html) (6 messages, latest: Mar 26 2022 at 19:54)
@@ -261,4 +263,4 @@ permalink: /stream/229136-theory:-category-theory/index.html
 * [diagrams for application](topic/topic_diagrams.20for.20application.html) (13 messages, latest: Mar 24 2020 at 06:19)
 * [universal constructions](topic/topic_universal.20constructions.html) (8 messages, latest: Mar 23 2020 at 21:06)
 
-<hr><p>Last updated: Apr 05 2022 at 00:40 UTC</p>
+<hr><p>Last updated: Apr 06 2022 at 00:42 UTC</p>

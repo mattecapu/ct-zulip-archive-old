@@ -9,6 +9,7 @@ permalink: /stream/230087-theory:-topos-theory/index.html
 
 ### Topics:
 
+* [formal (co)limits](topic/topic_formal.20(co)limits.html) (3 messages, latest: Apr 05 2022 at 19:31)
 * [pointed subobjects](topic/topic_pointed.20subobjects.html) (2 messages, latest: Mar 20 2022 at 06:32)
 * [translation dictionary: Category Theory ↔ Topos Theory](topic/topic_translation.20dictionary.3A.20Category.20Theory.20.E2.86.94.20Topos.20Theory.html) (44 messages, latest: Mar 18 2022 at 11:42)
 * ["topos" of condensed sets](topic/topic_.22topos.22.20of.20condensed.20sets.html) (6 messages, latest: Mar 05 2022 at 19:39)
@@ -81,4 +82,4 @@ permalink: /stream/230087-theory:-topos-theory/index.html
 * [right adjoint to inclusion of sheaves?](topic/topic_right.20adjoint.20to.20inclusion.20of.20sheaves.3F.html) (18 messages, latest: Mar 30 2020 at 09:37)
 * [essential geometric morphism](topic/topic_essential.20geometric.20morphism.html) (2 messages, latest: Mar 27 2020 at 18:56)
 
-<hr><p>Last updated: Apr 05 2022 at 00:40 UTC</p>
+<hr><p>Last updated: Apr 06 2022 at 00:42 UTC</p>
