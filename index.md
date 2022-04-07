@@ -8,9 +8,9 @@ permalink: /index.html
 
 ## Streams:
 
-* [learning: questions](stream/229199-learning:-questions/index.html) (659 topics)
+* [learning: questions](stream/229199-learning:-questions/index.html) (661 topics)
 
-* [theory: category theory](stream/229136-theory:-category-theory/index.html) (253 topics)
+* [theory: category theory](stream/229136-theory:-category-theory/index.html) (254 topics)
 
 * [general](stream/229111-general/index.html) (221 topics)
 
@@ -72,13 +72,13 @@ permalink: /index.html
 
 * [seminar: ACT@UCR](stream/229966-seminar:-ACT@UCR/index.html) (15 topics)
 
+* [practice: programming](stream/229450-practice:-programming/index.html) (14 topics)
+
 * [theory: algebraic geometry](stream/231112-theory:-algebraic-geometry/index.html) (14 topics)
 
 * [working: discrete geometry and entanglement](stream/266854-working:-discrete-geometry-and-entanglement/index.html) (14 topics)
 
 * [general: co/appreciation](stream/271602-general:-co/appreciation/index.html) (13 topics)
-
-* [practice: programming](stream/229450-practice:-programming/index.html) (13 topics)
 
 * [practice: translation](stream/260000-practice:-translation/index.html) (11 topics)
 
@@ -150,4 +150,4 @@ permalink: /index.html
 
 * [theory: alternate presentations](stream/233122-theory:-alternate-presentations/index.html) (1 topic)
 
-<hr><p>Last updated: Apr 06 2022 at 00:42 UTC</p>
+<hr><p>Last updated: Apr 07 2022 at 00:42 UTC</p>

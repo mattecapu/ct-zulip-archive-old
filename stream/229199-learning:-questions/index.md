@@ -9,6 +9,8 @@ permalink: /stream/229199-learning:-questions/index.html
 
 ### Topics:
 
+* [Completeness with respect to Set](topic/topic_Completeness.20with.20respect.20to.20Set.html) (4 messages, latest: Apr 06 2022 at 16:24)
+* [comonoids](topic/topic_comonoids.html) (31 messages, latest: Apr 06 2022 at 14:00)
 * [ends and limits](topic/topic_ends.20and.20limits.html) (14 messages, latest: Apr 03 2022 at 20:50)
 * [cotensors in a Kleisli category](topic/topic_cotensors.20in.20a.20Kleisli.20category.html) (2 messages, latest: Apr 01 2022 at 12:12)
 * [Ends and Limits](topic/topic_Ends.20and.20Limits.html) (15 messages, latest: Mar 31 2022 at 21:14)
@@ -669,4 +671,4 @@ permalink: /stream/229199-learning:-questions/index.html
 * [Algebra (Aluffi) exercises](topic/topic_Algebra.20(Aluffi).20exercises.html) (55 messages, latest: Mar 27 2020 at 23:38)
 * [What is category theory about?](topic/topic_What.20is.20category.20theory.20about.3F.html) (16 messages, latest: Mar 26 2020 at 16:03)
 
-<hr><p>Last updated: Apr 06 2022 at 00:42 UTC</p>
+<hr><p>Last updated: Apr 07 2022 at 00:42 UTC</p>
