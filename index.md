@@ -32,7 +32,7 @@ permalink: /index.html
 
 * [practice: thermodynamics](stream/306433-practice:-thermodynamics/index.html) (49 topics)
 
-* [theory: logic](stream/233104-theory:-logic/index.html) (45 topics)
+* [theory: logic](stream/233104-theory:-logic/index.html) (46 topics)
 
 * [general: positions](stream/245502-general:-positions/index.html) (43 topics)
 
@@ -150,4 +150,4 @@ permalink: /index.html
 
 * [theory: alternate presentations](stream/233122-theory:-alternate-presentations/index.html) (1 topic)
 
-<hr><p>Last updated: Apr 07 2022 at 00:42 UTC</p>
+<hr><p>Last updated: Apr 08 2022 at 00:42 UTC</p>

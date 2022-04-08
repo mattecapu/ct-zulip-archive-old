@@ -9,6 +9,7 @@ permalink: /stream/229199-learning:-questions/index.html
 
 ### Topics:
 
+* [cotopos](topic/topic_cotopos.html) (14 messages, latest: Apr 07 2022 at 16:50)
 * [Completeness with respect to Set](topic/topic_Completeness.20with.20respect.20to.20Set.html) (4 messages, latest: Apr 06 2022 at 16:24)
 * [comonoids](topic/topic_comonoids.html) (31 messages, latest: Apr 06 2022 at 14:00)
 * [ends and limits](topic/topic_ends.20and.20limits.html) (14 messages, latest: Apr 03 2022 at 20:50)
@@ -34,7 +35,6 @@ permalink: /stream/229199-learning:-questions/index.html
 * [Universal property of the classifying topos](topic/topic_Universal.20property.20of.20the.20classifying.20topos.html) (1 message, latest: Mar 17 2022 at 17:54)
 * [spatial categorical logic](topic/topic_spatial.20categorical.20logic.html) (35 messages, latest: Mar 16 2022 at 14:38)
 * [structure of regular subobjects](topic/topic_structure.20of.20regular.20subobjects.html) (10 messages, latest: Mar 13 2022 at 14:39)
-* [cotopos](topic/topic_cotopos.html) (12 messages, latest: Mar 09 2022 at 16:25)
 * [injection endofunctor on surjections](topic/topic_injection.20endofunctor.20on.20surjections.html) (10 messages, latest: Mar 08 2022 at 13:22)
 * [enriched category](topic/topic_enriched.20category.html) (13 messages, latest: Mar 06 2022 at 12:38)
 * [Is the Grothendieck construction adhesive?](topic/topic_Is.20the.20Grothendieck.20construction.20adhesive.3F.html) (25 messages, latest: Mar 05 2022 at 16:07)
@@ -671,4 +671,4 @@ permalink: /stream/229199-learning:-questions/index.html
 * [Algebra (Aluffi) exercises](topic/topic_Algebra.20(Aluffi).20exercises.html) (55 messages, latest: Mar 27 2020 at 23:38)
 * [What is category theory about?](topic/topic_What.20is.20category.20theory.20about.3F.html) (16 messages, latest: Mar 26 2020 at 16:03)
 
-<hr><p>Last updated: Apr 07 2022 at 00:42 UTC</p>
+<hr><p>Last updated: Apr 08 2022 at 00:42 UTC</p>
