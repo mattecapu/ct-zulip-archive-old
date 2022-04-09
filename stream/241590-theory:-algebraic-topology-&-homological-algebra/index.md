@@ -9,7 +9,7 @@ permalink: /stream/241590-theory:-algebraic-topology-&-homological-algebra/index
 
 ### Topics:
 
-* [bar construction](topic/topic_bar.20construction.html) (21 messages, latest: Apr 07 2022 at 19:35)
+* [bar construction](topic/topic_bar.20construction.html) (31 messages, latest: Apr 08 2022 at 21:03)
 * [morphisms out of the décalage](topic/topic_morphisms.20out.20of.20the.20d.C3.A9calage.html) (6 messages, latest: Apr 04 2022 at 01:33)
 * [examples of monads on simplicial sets](topic/topic_examples.20of.20monads.20on.20simplicial.20sets.html) (9 messages, latest: Apr 01 2022 at 10:36)
 * [coequaliser of join inclusions](topic/topic_coequaliser.20of.20join.20inclusions.html) (1 message, latest: Mar 04 2022 at 15:35)
@@ -63,4 +63,4 @@ permalink: /stream/241590-theory:-algebraic-topology-&-homological-algebra/index
 * [simplicial sets](topic/topic_simplicial.20sets.html) (1 message, latest: Jul 02 2020 at 11:05)
 * [Secondary algebraic K-theory](topic/topic_Secondary.20algebraic.20K-theory.html) (13 messages, latest: Jun 01 2020 at 16:14)
 
-<hr><p>Last updated: Apr 08 2022 at 00:42 UTC</p>
+<hr><p>Last updated: Apr 09 2022 at 00:40 UTC</p>

@@ -1,0 +1,44 @@
+---
+layout: archive
+title: Zulip Chat Archive
+permalink: /stream/258900-practice:-our-papers/topic/topic_Tom.20Hirschowitz.html
+---
+
+<h2>Stream: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/258900-practice:-our-papers/index.html">practice: our papers</a></h2>
+<h3>Topic: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/258900-practice:-our-papers/topic/topic_Tom.20Hirschowitz.html">Tom Hirschowitz</a></h3>
+
+<hr>
+
+<base href="https://categorytheory.zulipchat.com/">
+
+{% raw %}
+
+<a name="278269962"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/258900-practice%3A%20our%20papers/topic/Tom%20Hirschowitz/near/278269962" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Tom Hirschowitz <a href="https://mattecapu.github.io/ct-zulip-archive/stream/258900-practice:-our-papers/topic/topic_Tom.20Hirschowitz.html#278269962">(Apr 08 2022 at 08:12)</a>:</h4>
+<p><span class="user-mention" data-user-id="276696">@Ambroise</span> and I just released a preprint we've been (intermittently) working on for the last two years or so.<br>
+It's called <a href="https://hal.archives-ouvertes.fr/hal-03633933">A unified treatment of structural definitions on syntax for capture-avoiding substitution, context application, named substitution, partial differentiation, and so on</a>, in humble reference to Kelly's mythical paper.</p>
+<p>Rather than copy-pasting the abstract, let me explain the basic idea from a different point of view. As previously discussed here, one of the main categorical approaches to generating syntaxes from basic data is Fiore, Plotkin, and Turi (FPT)'s <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">Σ</mi></mrow><annotation encoding="application/x-tex">\Sigma</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord">Σ</span></span></span></span>-monoids: </p>
+<ul>
+<li>a signature is a <em>pointed strong</em> endofunctor <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">Σ</mi></mrow><annotation encoding="application/x-tex">\Sigma</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord">Σ</span></span></span></span> on a nice monoidal category; </li>
+<li>each such functor has a category of models, called <em><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">Σ</mi></mrow><annotation encoding="application/x-tex">\Sigma</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord">Σ</span></span></span></span>-monoids</em>, which are <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">Σ</mi></mrow><annotation encoding="application/x-tex">\Sigma</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord">Σ</span></span></span></span>-algebras equipped with compatible monoid structure;</li>
+<li>monoid structure models capture-avoiding substitution (it <em>is</em> substitution in examples);</li>
+<li>the main theorem is that the initial <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">Σ</mi></mrow><annotation encoding="application/x-tex">\Sigma</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord">Σ</span></span></span></span>-algebra is in fact (uniquely) an initial <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">Σ</mi></mrow><annotation encoding="application/x-tex">\Sigma</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord">Σ</span></span></span></span>-monoid, which means that it freely comes with substitution.</li>
+</ul>
+<p>Our work widely generalises the approach, and at the same time attempts to clarify it.</p>
+<p>Let me explain the latter point first.<br>
+One aspect that has always bugged me about FPT is the status of <em>pointed strengths</em>. Very roughly, they amount to assuming that certain objects already have part of the <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">Σ</mi></mrow><annotation encoding="application/x-tex">\Sigma</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord">Σ</span></span></span></span>-algebra structure in order for substitution to make sense, which seems rather arbitrary.</p>
+<p>In our work, we instead work with all objects, and consider the free  <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">Σ</mi></mrow><annotation encoding="application/x-tex">\Sigma</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord">Σ</span></span></span></span>-algebra structure on them. This makes the whole framework more straightforward, I think, albeit perhaps a bit more low-level.</p>
+<p>Finally, in what sense do we generalise FPT? Well, FPT merely deals with capture-avoiding substitution, which is in fact only one of the many auxiliary operations that operational semanticists define on syntax every day: we start investigating other auxiliary operations. We do not yet cover all of them, but we catch a fairly large class.</p>
+<p>We'd be very interested in hearing constructive comments! (Maybe I'll ping some of the local experts: <span class="user-mention" data-user-id="276092">@Nathanael Arkor</span>, <span class="user-mention" data-user-id="297784">@Jon Sterling</span>,  <span class="user-mention" data-user-id="398565">@Marcelo Fiore</span>, <span class="user-mention" data-user-id="308397">@Sam Staton</span>, <span class="user-mention" data-user-id="276839">@Damiano Mazza</span>, are you around?)</p>
+
+
+
+<a name="278318209"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/258900-practice%3A%20our%20papers/topic/Tom%20Hirschowitz/near/278318209" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Jon Sterling <a href="https://mattecapu.github.io/ct-zulip-archive/stream/258900-practice:-our-papers/topic/topic_Tom.20Hirschowitz.html#278318209">(Apr 08 2022 at 15:10)</a>:</h4>
+<p>Thanks for sharing, I'm excited to take some time to read your paper!</p>
+
+
+
+{% endraw %}
+
+<hr><p>Last updated: Apr 09 2022 at 00:40 UTC</p>

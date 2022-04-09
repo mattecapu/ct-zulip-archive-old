@@ -42,7 +42,7 @@ permalink: /index.html
 
 * [theory: type theory](stream/229952-theory:-type-theory/index.html) (40 topics)
 
-* [practice: our papers](stream/258900-practice:-our-papers/index.html) (38 topics)
+* [practice: our papers](stream/258900-practice:-our-papers/index.html) (39 topics)
 
 * [Categorical Probability and Statistics 2020 workshop](stream/238032-Categorical-Probability-and-Statistics-2020-workshop/index.html) (34 topics)
 
@@ -150,4 +150,4 @@ permalink: /index.html
 
 * [theory: alternate presentations](stream/233122-theory:-alternate-presentations/index.html) (1 topic)
 
-<hr><p>Last updated: Apr 08 2022 at 00:42 UTC</p>
+<hr><p>Last updated: Apr 09 2022 at 00:40 UTC</p>

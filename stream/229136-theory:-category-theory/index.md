@@ -9,6 +9,7 @@ permalink: /stream/229136-theory:-category-theory/index.html
 
 ### Topics:
 
+* [generalised lenses and generalised lens laws](topic/topic_generalised.20lenses.20and.20generalised.20lens.20laws.html) (18 messages, latest: Apr 08 2022 at 13:47)
 * [(non)-factorization of adjoints](topic/topic_(non)-factorization.20of.20adjoints.html) (7 messages, latest: Apr 06 2022 at 18:21)
 * [compact closed with self-dual objects](topic/topic_compact.20closed.20with.20self-dual.20objects.html) (6 messages, latest: Apr 06 2022 at 01:24)
 * [monoidal vs commutative monads](topic/topic_monoidal.20vs.20commutative.20monads.html) (1 message, latest: Apr 05 2022 at 21:19)
@@ -72,7 +73,6 @@ permalink: /stream/229136-theory:-category-theory/index.html
 * [Hilbert spaces and cospans](topic/topic_Hilbert.20spaces.20and.20cospans.html) (44 messages, latest: Sep 20 2021 at 13:02)
 * [coherence theorems](topic/topic_coherence.20theorems.html) (27 messages, latest: Sep 16 2021 at 07:42)
 * [Are containers polynomial functors?](topic/topic_Are.20containers.20polynomial.20functors.3F.html) (3 messages, latest: Sep 15 2021 at 11:39)
-* [generalised lenses and generalised lens laws](topic/topic_generalised.20lenses.20and.20generalised.20lens.20laws.html) (13 messages, latest: Sep 15 2021 at 00:43)
 * [Reading group on "Sheaves in Geometry and Logic"](topic/topic_Reading.20group.20on.20.22Sheaves.20in.20Geometry.20and.20Logic.22.html) (629 messages, latest: Sep 13 2021 at 08:26)
 * [a small observation about E-categories](topic/topic_a.20small.20observation.20about.20E-categories.html) (8 messages, latest: Aug 22 2021 at 19:46)
 * [inner products work a bit like homs](topic/topic_inner.20products.20work.20a.20bit.20like.20homs.html) (13 messages, latest: Aug 22 2021 at 15:57)
@@ -264,4 +264,4 @@ permalink: /stream/229136-theory:-category-theory/index.html
 * [diagrams for application](topic/topic_diagrams.20for.20application.html) (13 messages, latest: Mar 24 2020 at 06:19)
 * [universal constructions](topic/topic_universal.20constructions.html) (8 messages, latest: Mar 23 2020 at 21:06)
 
-<hr><p>Last updated: Apr 08 2022 at 00:42 UTC</p>
+<hr><p>Last updated: Apr 09 2022 at 00:40 UTC</p>
