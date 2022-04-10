@@ -9,6 +9,10 @@ permalink: /stream/229136-theory:-category-theory/index.html
 
 ### Topics:
 
+* [Mates on steroids](topic/topic_Mates.20on.20steroids.html) (2 messages, latest: Apr 09 2022 at 23:53)
+* [Steiner's Augmented Directed Complexes](topic/topic_Steiner's.20Augmented.20Directed.20Complexes.html) (1 message, latest: Apr 09 2022 at 21:46)
+* [variant on Yoneda](topic/topic_variant.20on.20Yoneda.html) (2 messages, latest: Apr 09 2022 at 18:23)
+* [model structures on Cat](topic/topic_model.20structures.20on.20Cat.html) (14 messages, latest: Apr 09 2022 at 01:44)
 * [generalised lenses and generalised lens laws](topic/topic_generalised.20lenses.20and.20generalised.20lens.20laws.html) (18 messages, latest: Apr 08 2022 at 13:47)
 * [(non)-factorization of adjoints](topic/topic_(non)-factorization.20of.20adjoints.html) (7 messages, latest: Apr 06 2022 at 18:21)
 * [compact closed with self-dual objects](topic/topic_compact.20closed.20with.20self-dual.20objects.html) (6 messages, latest: Apr 06 2022 at 01:24)
@@ -264,4 +268,4 @@ permalink: /stream/229136-theory:-category-theory/index.html
 * [diagrams for application](topic/topic_diagrams.20for.20application.html) (13 messages, latest: Mar 24 2020 at 06:19)
 * [universal constructions](topic/topic_universal.20constructions.html) (8 messages, latest: Mar 23 2020 at 21:06)
 
-<hr><p>Last updated: Apr 09 2022 at 00:40 UTC</p>
+<hr><p>Last updated: Apr 10 2022 at 00:41 UTC</p>
