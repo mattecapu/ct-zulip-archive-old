@@ -9,6 +9,7 @@ permalink: /stream/229141-general:-events/index.html
 
 ### Topics:
 
+* [School on Univalent Mathematics: Application deadline 15 Apr](topic/topic_School.20on.20Univalent.20Mathematics.3A.20Application.20deadline.2015.20Apr.html) (1 message, latest: Apr 10 2022 at 07:25)
 * [Intercats](topic/topic_Intercats.html) (27 messages, latest: Apr 05 2022 at 14:09)
 * [Structure meets Power Workshop, CFP](topic/topic_Structure.20meets.20Power.20Workshop.2C.20CFP.html) (1 message, latest: Mar 28 2022 at 11:20)
 * [BCQT2022](topic/topic_BCQT2022.html) (1 message, latest: Mar 21 2022 at 14:48)
@@ -129,4 +130,4 @@ permalink: /stream/229141-general:-events/index.html
 * [April 1st: ACT@UCR](topic/topic_April.201st.3A.20ACT.40UCR.html) (3 messages, latest: Mar 26 2020 at 23:58)
 * [Google Sites problem](topic/topic_Google.20Sites.20problem.html) (4 messages, latest: Mar 25 2020 at 04:29)
 
-<hr><p>Last updated: Apr 10 2022 at 00:41 UTC</p>
+<hr><p>Last updated: Apr 11 2022 at 00:41 UTC</p>

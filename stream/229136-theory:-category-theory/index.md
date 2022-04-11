@@ -9,6 +9,7 @@ permalink: /stream/229136-theory:-category-theory/index.html
 
 ### Topics:
 
+* [Steiner's augmented directed complexes](topic/topic_Steiner's.20augmented.20directed.20complexes.html) (3 messages, latest: Apr 10 2022 at 21:00)
 * [Mates on steroids](topic/topic_Mates.20on.20steroids.html) (2 messages, latest: Apr 09 2022 at 23:53)
 * [Steiner's Augmented Directed Complexes](topic/topic_Steiner's.20Augmented.20Directed.20Complexes.html) (1 message, latest: Apr 09 2022 at 21:46)
 * [variant on Yoneda](topic/topic_variant.20on.20Yoneda.html) (2 messages, latest: Apr 09 2022 at 18:23)
@@ -268,4 +269,4 @@ permalink: /stream/229136-theory:-category-theory/index.html
 * [diagrams for application](topic/topic_diagrams.20for.20application.html) (13 messages, latest: Mar 24 2020 at 06:19)
 * [universal constructions](topic/topic_universal.20constructions.html) (8 messages, latest: Mar 23 2020 at 21:06)
 
-<hr><p>Last updated: Apr 10 2022 at 00:41 UTC</p>
+<hr><p>Last updated: Apr 11 2022 at 00:41 UTC</p>
