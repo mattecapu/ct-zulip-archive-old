@@ -12,13 +12,13 @@ permalink: /index.html
 
 * [theory: category theory](stream/229136-theory:-category-theory/index.html) (259 topics)
 
-* [general](stream/229111-general/index.html) (221 topics)
+* [general](stream/229111-general/index.html) (222 topics)
 
 * [practice: applied ct](stream/229156-practice:-applied-ct/index.html) (128 topics)
 
 * [general: events](stream/229141-general:-events/index.html) (120 topics)
 
-* [theory: topos theory](stream/230087-theory:-topos-theory/index.html) (72 topics)
+* [theory: topos theory](stream/230087-theory:-topos-theory/index.html) (73 topics)
 
 * [conference: ACT 2020](stream/243068-conference:-ACT-2020/index.html) (62 topics)
 
@@ -26,7 +26,7 @@ permalink: /index.html
 
 * [theory: algebraic topology & homological algebra](stream/241590-theory:-algebraic-topology-&-homological-algebra/index.html) (54 topics)
 
-* [seminar: Topos Colloquium](stream/269484-seminar:-Topos-Colloquium/index.html) (51 topics)
+* [seminar: Topos Colloquium](stream/269484-seminar:-Topos-Colloquium/index.html) (52 topics)
 
 * [general: mathematics](stream/266967-general:-mathematics/index.html) (49 topics)
 
@@ -46,9 +46,9 @@ permalink: /index.html
 
 * [Categorical Probability and Statistics 2020 workshop](stream/238032-Categorical-Probability-and-Statistics-2020-workshop/index.html) (34 topics)
 
-* [learning: recommendations](stream/232161-learning:-recommendations/index.html) (24 topics)
+* [general: values](stream/241990-general:-values/index.html) (24 topics)
 
-* [general: values](stream/241990-general:-values/index.html) (23 topics)
+* [learning: recommendations](stream/232161-learning:-recommendations/index.html) (24 topics)
 
 * [practice: software](stream/229125-practice:-software/index.html) (23 topics)
 
@@ -100,6 +100,8 @@ permalink: /index.html
 
 * [learning: statistics reading group](stream/245528-learning:-statistics-reading-group/index.html) (7 topics)
 
+* [seminar: EM-cats](stream/298571-seminar:-EM-cats/index.html) (6 topics)
+
 * [semiotics and semiosis](stream/229179-semiotics-and-semiosis/index.html) (6 topics)
 
 * [theory: algebra & CT](stream/230123-theory:-algebra-&-CT/index.html) (6 topics)
@@ -107,8 +109,6 @@ permalink: /index.html
 * [ACT@UMD seminar](stream/229967-ACT@UMD-seminar/index.html) (5 topics)
 
 * [languages: Deutsch/German](stream/231144-languages:-Deutsch/German/index.html) (5 topics)
-
-* [seminar: EM-cats](stream/298571-seminar:-EM-cats/index.html) (5 topics)
 
 * [languages: espanol/Spanish](stream/231120-languages:-espanol/Spanish/index.html) (4 topics)
 
@@ -150,4 +150,4 @@ permalink: /index.html
 
 * [theory: alternate presentations](stream/233122-theory:-alternate-presentations/index.html) (1 topic)
 
-<hr><p>Last updated: Apr 11 2022 at 00:41 UTC</p>
+<hr><p>Last updated: Apr 12 2022 at 00:39 UTC</p>
