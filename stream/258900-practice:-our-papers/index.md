@@ -9,6 +9,7 @@ permalink: /stream/258900-practice:-our-papers/index.html
 
 ### Topics:
 
+* [A unified treatment of structural definitions on syntax](topic/topic_A.20unified.20treatment.20of.20structural.20definitions.20on.20syntax.html) (1 message, latest: Apr 12 2022 at 11:07)
 * [What should a generic object be?](topic/topic_What.20should.20a.20generic.20object.20be.3F.html) (1 message, latest: Apr 10 2022 at 08:19)
 * [Tom Hirschowitz](topic/topic_Tom.20Hirschowitz.html) (2 messages, latest: Apr 08 2022 at 15:10)
 * [Geometric morphisms between toposes of monoid actions](topic/topic_Geometric.20morphisms.20between.20toposes.20of.20monoid.20actions.html) (7 messages, latest: Mar 21 2022 at 20:31)
@@ -50,4 +51,4 @@ permalink: /stream/258900-practice:-our-papers/index.html
 * [stream events](topic/topic_stream.20events.html) (2 messages, latest: Oct 05 2020 at 15:30)
 * [Coends of higher arity](topic/topic_Coends.20of.20higher.20arity.html) (3 messages, latest: Sep 26 2020 at 16:28)
 
-<hr><p>Last updated: Apr 12 2022 at 00:39 UTC</p>
+<hr><p>Last updated: Apr 13 2022 at 07:06 UTC</p>

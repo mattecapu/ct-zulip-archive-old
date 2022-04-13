@@ -16,7 +16,7 @@ permalink: /index.html
 
 * [practice: applied ct](stream/229156-practice:-applied-ct/index.html) (128 topics)
 
-* [general: events](stream/229141-general:-events/index.html) (120 topics)
+* [general: events](stream/229141-general:-events/index.html) (121 topics)
 
 * [theory: topos theory](stream/230087-theory:-topos-theory/index.html) (73 topics)
 
@@ -38,9 +38,9 @@ permalink: /index.html
 
 * [MIT Categories Seminar](stream/229457-MIT-Categories-Seminar/index.html) (41 topics)
 
-* [seminar: MIT Categories Seminar](stream/229457-seminar:-MIT-Categories-Seminar/index.html) (41 topics)
+* [practice: our papers](stream/258900-practice:-our-papers/index.html) (41 topics)
 
-* [practice: our papers](stream/258900-practice:-our-papers/index.html) (40 topics)
+* [seminar: MIT Categories Seminar](stream/229457-seminar:-MIT-Categories-Seminar/index.html) (41 topics)
 
 * [theory: type theory](stream/229952-theory:-type-theory/index.html) (40 topics)
 
@@ -150,4 +150,4 @@ permalink: /index.html
 
 * [theory: alternate presentations](stream/233122-theory:-alternate-presentations/index.html) (1 topic)
 
-<hr><p>Last updated: Apr 12 2022 at 00:39 UTC</p>
+<hr><p>Last updated: Apr 13 2022 at 07:06 UTC</p>
