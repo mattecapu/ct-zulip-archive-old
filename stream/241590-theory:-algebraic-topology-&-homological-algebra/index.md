@@ -9,7 +9,13 @@ permalink: /stream/241590-theory:-algebraic-topology-&-homological-algebra/index
 
 ### Topics:
 
-* [formal properties of the bar construction](topic/topic_formal.20properties.20of.20the.20bar.20construction.html) (192 messages, latest: Feb 14 2022 at 04:24)
+* [bar construction](topic/topic_bar.20construction.html) (33 messages, latest: Apr 10 2022 at 15:01)
+* [Indexing the dimension of spheres](topic/topic_Indexing.20the.20dimension.20of.20spheres.html) (4 messages, latest: Apr 09 2022 at 22:04)
+* [morphisms out of the décalage](topic/topic_morphisms.20out.20of.20the.20d.C3.A9calage.html) (6 messages, latest: Apr 04 2022 at 01:33)
+* [examples of monads on simplicial sets](topic/topic_examples.20of.20monads.20on.20simplicial.20sets.html) (9 messages, latest: Apr 01 2022 at 10:36)
+* [coequaliser of join inclusions](topic/topic_coequaliser.20of.20join.20inclusions.html) (1 message, latest: Mar 04 2022 at 15:35)
+* [interchange map is mono?](topic/topic_interchange.20map.20is.20mono.3F.html) (8 messages, latest: Mar 02 2022 at 14:43)
+* [formal properties of the bar construction](topic/topic_formal.20properties.20of.20the.20bar.20construction.html) (204 messages, latest: Feb 24 2022 at 14:38)
 * [non-normal group "extensions"](topic/topic_non-normal.20group.20.22extensions.22.html) (3 messages, latest: Feb 07 2022 at 21:46)
 * [maximal nondegenerate simplices](topic/topic_maximal.20nondegenerate.20simplices.html) (6 messages, latest: Feb 07 2022 at 12:56)
 * [Non-normal group "extensions"](topic/topic_Non-normal.20group.20.22extensions.22.html) (1 message, latest: Feb 07 2022 at 01:40)
@@ -26,7 +32,6 @@ permalink: /stream/241590-theory:-algebraic-topology-&-homological-algebra/index
 * [nonabelian spectral sequence](topic/topic_nonabelian.20spectral.20sequence.html) (2 messages, latest: Nov 24 2021 at 20:14)
 * [describing simplicial sets](topic/topic_describing.20simplicial.20sets.html) (23 messages, latest: Nov 23 2021 at 15:26)
 * [2-morphisms](topic/topic_2-morphisms.html) (20 messages, latest: Nov 20 2021 at 12:29)
-* [bar construction](topic/topic_bar.20construction.html) (13 messages, latest: Nov 18 2021 at 09:32)
 * [an endofunctor on simplicial sets](topic/topic_an.20endofunctor.20on.20simplicial.20sets.html) (7 messages, latest: Nov 17 2021 at 13:02)
 * [An endofunctor on simplicial sets](topic/topic_An.20endofunctor.20on.20simplicial.20sets.html) (4 messages, latest: Nov 16 2021 at 16:16)
 * [Undecidability of morphisms in a homotopy category](topic/topic_Undecidability.20of.20morphisms.20in.20a.20homotopy.20category.html) (10 messages, latest: Nov 13 2021 at 16:22)
@@ -59,4 +64,4 @@ permalink: /stream/241590-theory:-algebraic-topology-&-homological-algebra/index
 * [simplicial sets](topic/topic_simplicial.20sets.html) (1 message, latest: Jul 02 2020 at 11:05)
 * [Secondary algebraic K-theory](topic/topic_Secondary.20algebraic.20K-theory.html) (13 messages, latest: Jun 01 2020 at 16:14)
 
-<hr><p>Last updated: Feb 17 2022 at 00:28 UTC</p>
+<hr><p>Last updated: Apr 12 2022 at 00:39 UTC</p>

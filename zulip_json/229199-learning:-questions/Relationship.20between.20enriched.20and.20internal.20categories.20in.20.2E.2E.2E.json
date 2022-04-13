@@ -1,0 +1,128 @@
+[
+    {
+        "content": "<p>It is known that, under appropriate conditions on a category <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"script\">V</mi></mrow><annotation encoding=\"application/x-tex\">\\mathcal V</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathcal\" style=\"margin-right:0.08222em;\">V</span></span></span></span>, there is a correspondence between <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"script\">V</mi></mrow><annotation encoding=\"application/x-tex\">\\mathcal V</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathcal\" style=\"margin-right:0.08222em;\">V</span></span></span></span>-enriched categories and categories internal to <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"script\">V</mi></mrow><annotation encoding=\"application/x-tex\">\\mathcal V</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathcal\" style=\"margin-right:0.08222em;\">V</span></span></span></span> (for example, as described <a href=\"https://projecteuclid.org/journals/tbilisi-mathematical-journal/volume-10/issue-3/Enriched-and-internal-categories-an-extensive-relationship/10.1515/tmj-2017-0111.short\">here</a>). Both of these notions have a generalisation to 2-categories: </p>\n<ol>\n<li>an internal category can be weakened to a pseudo-category internal to a to a 2-category, where strict coherence properties are replaced with 2-cells</li>\n<li>a category enriched in a monoidal category can be generalised to a category enriched in a bicategory, where instead of hom objects we have hom 1-cells</li>\n</ol>\n<p>However, these generalisations are ‘orthogonal’ categorifications: on one hand we add 2-cells, and on the other we replace objects with morphisms. So the relationship between enriched and internal categories no longer seems to hold.</p>\n<p>I’m wondering are there alternative ways to generalise internal or enriched categories to the case of <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"script\">V</mi></mrow><annotation encoding=\"application/x-tex\">\\mathcal V</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathcal\" style=\"margin-right:0.08222em;\">V</span></span></span></span> being a 2-category (or even bicategory) which preserves some sort of relationship between the two structures?</p>",
+        "id": 276910340,
+        "sender_full_name": "Dylan Braithwaite",
+        "timestamp": 1648490482
+    },
+    {
+        "content": "<p>I guess on one hand enrichment in a bicategory should relate to a horizontal categorification of an <a href=\"https://ncatlab.org/nlab/show/internal%20category%20in%20a%20monoidal%20category\">[[internal category in a monoidal category]]</a> but I couldn’t find anything written about such a structure</p>",
+        "id": 276911185,
+        "sender_full_name": "Dylan Braithwaite",
+        "timestamp": 1648490931
+    },
+    {
+        "content": "<p>The other idea I’ve been entertaining is that (1) and (2) could both generalise into an something like a cartesian double category or equipment. But I get a bit lost in all of the structure trying to work out the details of this</p>",
+        "id": 276916413,
+        "sender_full_name": "Dylan Braithwaite",
+        "timestamp": 1648493743
+    },
+    {
+        "content": "<p>I think your (1) is not the appropriate generalisation. If we consider the structure we need on a category to define enriched/internal categories over it, in the former case we need monoidal structure, and in the latter finite limit structure. So if we want to compare enriched and internal categories, we have two choices: either (1) consider a category equipped with both structures (which is what they do in the paper you reference, though they assume more besides), or (2) generalise enrichment/internalisation so that we don't need such stronger assumptions. This is precisely what categories internal to monoidal categories do (which you link to). In this setting, it makes sense to ask \"What is the relationship between categories enriched in <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"script\">V</mi></mrow><annotation encoding=\"application/x-tex\">\\mathcal V</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathcal\" style=\"margin-right:0.08222em;\">V</span></span></span></span> and categories internal to <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"script\">V</mi></mrow><annotation encoding=\"application/x-tex\">\\mathcal V</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathcal\" style=\"margin-right:0.08222em;\">V</span></span></span></span>?\" for <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"script\">V</mi></mrow><annotation encoding=\"application/x-tex\">\\mathcal V</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathcal\" style=\"margin-right:0.08222em;\">V</span></span></span></span> a monoidal category with well-behaved equalisers (in fact, I think this latter assumption can be dropped if we are happy to work with virtual double categories). The generalisation from monoidal categories to 2-categories in both cases is then given by horizontal categorification rather than vertifical categorification, and the definition is straightforward in both cases. However, the answer to this question (i.e. for 2-categories) should be essentially the same as that for monoidal categories, so it seems sensible to consider that simper setting first.</p>",
+        "id": 276919126,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1648495116
+    },
+    {
+        "content": "<p>I would be interested to see if there is anything interesting to say about enriched and internal categories when placed in the setting of a nice monoidal category, which is significantly more general than that the paper you reference uses. However, like them, I think it's most appropriate to compare \"<span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"script\">V</mi></mrow><annotation encoding=\"application/x-tex\">\\mathcal V</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathcal\" style=\"margin-right:0.08222em;\">V</span></span></span></span>-spans\" and <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"script\">V</mi></mrow><annotation encoding=\"application/x-tex\">\\mathcal V</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathcal\" style=\"margin-right:0.08222em;\">V</span></span></span></span>-matrices directly (with internal/enriched categories following by taking monads in those bicategories).</p>",
+        "id": 276919340,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1648495215
+    },
+    {
+        "content": "<p>I agree that (1) is not appropriate in the sense that it isn’t compatible with (2) in neither the direction of categorification, nor the structure we’re assuming. I listed them there just because they seem like the most common generalisation of each concept. But I don’t see why replacing (1) would be any more appropriate than replacing (2)? </p>\n<p>I guess my question was really twofold:</p>\n<ol>\n<li>is there any literature exploring categories ‘horizontally internal’ to a bicategory?</li>\n<li>is there a sensible way to define categories ‘vertically enriched’ in a 2-category? </li>\n</ol>\n<p>I realise now in fact that (1) is just looking for what are monads on <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mrow><mi mathvariant=\"bold\">M</mi><mi mathvariant=\"bold\">o</mi><mi mathvariant=\"bold\">d</mi></mrow><mo stretchy=\"false\">(</mo><msup><mi mathvariant=\"script\">V</mi><mrow><mi mathvariant=\"normal\">c</mi><mi mathvariant=\"normal\">o</mi></mrow></msup><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">\\mathbf{Mod}(\\mathcal V^\\mathrm{co})</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord\"><span class=\"mord mathbf\">Mod</span></span><span class=\"mopen\">(</span><span class=\"mord\"><span class=\"mord mathcal\" style=\"margin-right:0.08222em;\">V</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.6644em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mathrm mtight\">co</span></span></span></span></span></span></span></span></span><span class=\"mclose\">)</span></span></span></span>. But (2) is what I was mostly curious about — because I came to this question while trying to work out, if double categories correspond to bicategories as categories enriched in/internal to <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"bold\">C</mi><mi mathvariant=\"bold\">a</mi><mi mathvariant=\"bold\">t</mi></mrow><annotation encoding=\"application/x-tex\">\\mathbf{Cat}</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6861em;\"></span><span class=\"mord\"><span class=\"mord mathbf\">Cat</span></span></span></span></span>, what do pseudo double categories correspond to?</p>",
+        "id": 277037429,
+        "sender_full_name": "Dylan Braithwaite",
+        "timestamp": 1648574035
+    },
+    {
+        "content": "<p>It seems like Dominic Verity’s thesis might provide some sort of unifying perspective on this, but there’s a lot of theory to unpack before I’ll really understand the approach there</p>",
+        "id": 277037701,
+        "sender_full_name": "Dylan Braithwaite",
+        "timestamp": 1648574162
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"378472\">Dylan Braithwaite</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/Relationship.20between.20enriched.20and.20internal.20categories.20in.20.2E.2E.2E/near/277037429\">said</a>:</p>\n<blockquote>\n<ol start=\"2\">\n<li>is there a sensible way to define categories ‘vertically enriched’ in a 2-category? </li>\n</ol>\n</blockquote>\n<p>That sounds to me like talking about an <a href=\"https://ncatlab.org/nlab/show/enriched%20bicategory\">[[enriched bicategory]]</a>, but maybe that's not what you mean?</p>\n<blockquote>\n<p>if double categories correspond to bicategories as categories enriched in/internal to <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"bold\">C</mi><mi mathvariant=\"bold\">a</mi><mi mathvariant=\"bold\">t</mi></mrow><annotation encoding=\"application/x-tex\">\\mathbf{Cat}</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6861em;\"></span><span class=\"mord\"><span class=\"mord mathbf\">Cat</span></span></span></span></span>, what do pseudo double categories correspond to?</p>\n</blockquote>\n<p>I would say that <em>strict</em> double categories correspond to <em>strict</em> 2-categories, while pseudo double categories correspond to bicategories.</p>",
+        "id": 277039254,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1648574800
+    },
+    {
+        "content": "<p>Ah! I somehow convinced myself that the adjunction between <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"script\">V</mi><mo>−</mo><mrow><mi mathvariant=\"bold\">C</mi><mi mathvariant=\"bold\">a</mi><mi mathvariant=\"bold\">t</mi></mrow></mrow><annotation encoding=\"application/x-tex\">\\mathcal V-\\mathbf{Cat}</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.7667em;vertical-align:-0.0833em;\"></span><span class=\"mord mathcal\" style=\"margin-right:0.08222em;\">V</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span><span class=\"mbin\">−</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6861em;\"></span><span class=\"mord\"><span class=\"mord mathbf\">Cat</span></span></span></span></span> and <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mrow><mi mathvariant=\"bold\">C</mi><mi mathvariant=\"bold\">a</mi><mi mathvariant=\"bold\">t</mi></mrow><mo stretchy=\"false\">(</mo><mi mathvariant=\"script\">V</mi><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">\\mathbf{Cat}(\\mathcal V)</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord\"><span class=\"mord mathbf\">Cat</span></span><span class=\"mopen\">(</span><span class=\"mord mathcal\" style=\"margin-right:0.08222em;\">V</span><span class=\"mclose\">)</span></span></span></span> in the paper I referenced above was between internal categories and _weakly_ enriched categories. But looking back I don’t know why I thought that, it seems to obviously be about strict 2-categories! </p>\n<p>I think a variant of that question is still relevant though. That adjunction describes a relationship between (small) strict double categories and 2-categories. Is there a corresponding relationship between pseudo double categories and bicategories?</p>",
+        "id": 277040523,
+        "sender_full_name": "Dylan Braithwaite",
+        "timestamp": 1648575365
+    },
+    {
+        "content": "<p>Certainly.  I don't know if it's been written down abstractly, but in this concrete case it's clear that a pseudo double category with discrete category of objects is exactly a bicategory.</p>",
+        "id": 277040740,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1648575474
+    },
+    {
+        "content": "<p>Yeah, that much is clear. I was looking to state it more abstractly in terms of internal and enriched categories. But I think actually the standard notion of weak enrichment is exactly the thing I was looking for corresponding to being internal to a 2-category. I just had the levels of categorification involved misaligned in my head.</p>\n<p>So I think the conjecture I was trying to formulate is that under suitable conditions on a cartesian 2-category <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"script\">V</mi></mrow><annotation encoding=\"application/x-tex\">\\mathcal V</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathcal\" style=\"margin-right:0.08222em;\">V</span></span></span></span>, there is some correspondence between categories weakly enriched in <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"script\">V</mi></mrow><annotation encoding=\"application/x-tex\">\\mathcal V</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathcal\" style=\"margin-right:0.08222em;\">V</span></span></span></span> and pseudo-categories internal to <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"script\">V</mi></mrow><annotation encoding=\"application/x-tex\">\\mathcal V</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathcal\" style=\"margin-right:0.08222em;\">V</span></span></span></span></p>",
+        "id": 277042095,
+        "sender_full_name": "Dylan Braithwaite",
+        "timestamp": 1648576141
+    },
+    {
+        "content": "<p>I think the answer is clearly yes, but I don't know if it's been written down at that level of generality.</p>",
+        "id": 277042326,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1648576233
+    },
+    {
+        "content": "<p>Yeah that's what I expected. But I think I have it clarified enough that I can try to work out the details now</p>",
+        "id": 277046543,
+        "sender_full_name": "Dylan Braithwaite",
+        "timestamp": 1648578325
+    },
+    {
+        "content": "<p>Thank you!</p>",
+        "id": 277046557,
+        "sender_full_name": "Dylan Braithwaite",
+        "timestamp": 1648578331
+    },
+    {
+        "content": "<p>Is there a difference between what you're calling a \"pseudo-category\" and an internal bicategory?</p>",
+        "id": 277127827,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1648639134
+    },
+    {
+        "content": "<p>I was using pseudo-category (following <a href=\"https://arxiv.org/abs/math/0604549\">https://arxiv.org/abs/math/0604549</a>) to mean a 1-category “weakly internal” to a 2-category. I think there’s more data involved in an internal bicategory?</p>",
+        "id": 277129054,
+        "sender_full_name": "Dylan Braithwaite",
+        "timestamp": 1648639863
+    },
+    {
+        "content": "<p>ie in <a href=\"https://arxiv.org/abs/1206.4284\">https://arxiv.org/abs/1206.4284</a> it’s the thing defined in section 2.1 rather than the thing defined in 3.3</p>",
+        "id": 277129442,
+        "sender_full_name": "Dylan Braithwaite",
+        "timestamp": 1648640114
+    },
+    {
+        "content": "<p>Ah, of course, so the weakness is mediated by the 2-category, rather than by internal structure.</p>",
+        "id": 277154499,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1648651080
+    },
+    {
+        "content": "<p><span class=\"user-mention\" data-user-id=\"378472\">@Dylan Braithwaite</span>: <a href=\"https://arxiv.org/abs/2203.16179\">this paper</a> on arXiv today sounds related to what you were interested in, though I haven't looked closely enough to see whether they're considering internal categories or pseudo-categories.</p>",
+        "id": 277261639,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1648723552
+    },
+    {
+        "content": "<p>I think that paper is highly relevant!  (They did get the indexing off by one -- their internal 1-categories in the tricategory Bicat should be called <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"false\">(</mo><mn>1</mn><mo>×</mo><mn>2</mn><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">(1\\times 2)</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mopen\">(</span><span class=\"mord\">1</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span><span class=\"mbin\">×</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord\">2</span><span class=\"mclose\">)</span></span></span></span>-categories, not <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"false\">(</mo><mn>1</mn><mo>×</mo><mn>3</mn><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">(1\\times 3)</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mopen\">(</span><span class=\"mord\">1</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span><span class=\"mbin\">×</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord\">3</span><span class=\"mclose\">)</span></span></span></span>-categories.)</p>",
+        "id": 277315205,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1648748100
+    },
+    {
+        "content": "<blockquote>\n<p>They did get the indexing off by one</p>\n</blockquote>\n<p>Ah, I thought something was funny about their numbering, thanks for pointing that out.</p>",
+        "id": 277330976,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1648756117
+    }
+]

@@ -9,6 +9,26 @@ permalink: /stream/229136-theory:-category-theory/index.html
 
 ### Topics:
 
+* [Steiner's augmented directed complexes](topic/topic_Steiner's.20augmented.20directed.20complexes.html) (3 messages, latest: Apr 10 2022 at 21:00)
+* [Mates on steroids](topic/topic_Mates.20on.20steroids.html) (2 messages, latest: Apr 09 2022 at 23:53)
+* [Steiner's Augmented Directed Complexes](topic/topic_Steiner's.20Augmented.20Directed.20Complexes.html) (1 message, latest: Apr 09 2022 at 21:46)
+* [variant on Yoneda](topic/topic_variant.20on.20Yoneda.html) (2 messages, latest: Apr 09 2022 at 18:23)
+* [model structures on Cat](topic/topic_model.20structures.20on.20Cat.html) (14 messages, latest: Apr 09 2022 at 01:44)
+* [generalised lenses and generalised lens laws](topic/topic_generalised.20lenses.20and.20generalised.20lens.20laws.html) (18 messages, latest: Apr 08 2022 at 13:47)
+* [(non)-factorization of adjoints](topic/topic_(non)-factorization.20of.20adjoints.html) (7 messages, latest: Apr 06 2022 at 18:21)
+* [compact closed with self-dual objects](topic/topic_compact.20closed.20with.20self-dual.20objects.html) (6 messages, latest: Apr 06 2022 at 01:24)
+* [monoidal vs commutative monads](topic/topic_monoidal.20vs.20commutative.20monads.html) (1 message, latest: Apr 05 2022 at 21:19)
+* [Monoidal vs Commutative Monads](topic/topic_Monoidal.20vs.20Commutative.20Monads.html) (11 messages, latest: Apr 04 2022 at 18:00)
+* [monoidal closed but not compact closed](topic/topic_monoidal.20closed.20but.20not.20compact.20closed.html) (47 messages, latest: Apr 04 2022 at 06:51)
+* ['semibraidings'](topic/topic_'semibraidings'.html) (6 messages, latest: Mar 26 2022 at 19:54)
+* [Dual Day Convolution?](topic/topic_Dual.20Day.20Convolution.3F.html) (8 messages, latest: Mar 25 2022 at 13:36)
+* [laxer limits](topic/topic_laxer.20limits.html) (13 messages, latest: Mar 24 2022 at 16:38)
+* [2-categories of symmetric strict monoidal categories](topic/topic_2-categories.20of.20symmetric.20strict.20monoidal.20categories.html) (27 messages, latest: Mar 23 2022 at 13:46)
+* [literature citation for pentagon in categories with products](topic/topic_literature.20citation.20for.20pentagon.20in.20categories.20with.20products.html) (4 messages, latest: Mar 21 2022 at 13:48)
+* ['center' of monoidal categories](topic/topic_'center'.20of.20monoidal.20categories.html) (19 messages, latest: Mar 10 2022 at 19:26)
+* [braided/symm fc-multicategories/virtual double categories](topic/topic_braided.2Fsymm.20fc-multicategories.2Fvirtual.20double.20categories.html) (8 messages, latest: Feb 22 2022 at 23:56)
+* [A cute definition of enriched categories](topic/topic_A.20cute.20definition.20of.20enriched.20categories.html) (1 message, latest: Feb 18 2022 at 13:20)
+* [compact closed and biproducts](topic/topic_compact.20closed.20and.20biproducts.html) (31 messages, latest: Feb 18 2022 at 09:19)
 * [concrete simplicial sets](topic/topic_concrete.20simplicial.20sets.html) (4 messages, latest: Feb 15 2022 at 15:59)
 * [unitors to the left of me, unitors to the right](topic/topic_unitors.20to.20the.20left.20of.20me.2C.20unitors.20to.20the.20right.html) (31 messages, latest: Feb 14 2022 at 19:26)
 * [reference request: vertical natural transformations](topic/topic_reference.20request.3A.20vertical.20natural.20transformations.html) (16 messages, latest: Feb 14 2022 at 16:58)
@@ -20,7 +40,6 @@ permalink: /stream/229136-theory:-category-theory/index.html
 * [two algebra structures](topic/topic_two.20algebra.20structures.html) (38 messages, latest: Jan 21 2022 at 19:45)
 * [lifted functor on Met preserves isometries](topic/topic_lifted.20functor.20on.20Met.20preserves.20isometries.html) (17 messages, latest: Jan 19 2022 at 18:48)
 * [What are string diagrams really?](topic/topic_What.20are.20string.20diagrams.20really.3F.html) (33 messages, latest: Jan 19 2022 at 01:11)
-* [monoidal closed but not compact closed](topic/topic_monoidal.20closed.20but.20not.20compact.20closed.html) (42 messages, latest: Jan 18 2022 at 12:58)
 * [(n,r)-category](topic/topic_(n.2Cr)-category.html) (24 messages, latest: Jan 17 2022 at 19:29)
 * [freely adding comprehensions](topic/topic_freely.20adding.20comprehensions.html) (2 messages, latest: Jan 17 2022 at 01:33)
 * [explicit description of the lax monoidal functor classifier?](topic/topic_explicit.20description.20of.20the.20lax.20monoidal.20functor.20classifier.3F.html) (2 messages, latest: Jan 09 2022 at 20:32)
@@ -59,7 +78,6 @@ permalink: /stream/229136-theory:-category-theory/index.html
 * [Hilbert spaces and cospans](topic/topic_Hilbert.20spaces.20and.20cospans.html) (44 messages, latest: Sep 20 2021 at 13:02)
 * [coherence theorems](topic/topic_coherence.20theorems.html) (27 messages, latest: Sep 16 2021 at 07:42)
 * [Are containers polynomial functors?](topic/topic_Are.20containers.20polynomial.20functors.3F.html) (3 messages, latest: Sep 15 2021 at 11:39)
-* [generalised lenses and generalised lens laws](topic/topic_generalised.20lenses.20and.20generalised.20lens.20laws.html) (13 messages, latest: Sep 15 2021 at 00:43)
 * [Reading group on "Sheaves in Geometry and Logic"](topic/topic_Reading.20group.20on.20.22Sheaves.20in.20Geometry.20and.20Logic.22.html) (629 messages, latest: Sep 13 2021 at 08:26)
 * [a small observation about E-categories](topic/topic_a.20small.20observation.20about.20E-categories.html) (8 messages, latest: Aug 22 2021 at 19:46)
 * [inner products work a bit like homs](topic/topic_inner.20products.20work.20a.20bit.20like.20homs.html) (13 messages, latest: Aug 22 2021 at 15:57)
@@ -251,4 +269,4 @@ permalink: /stream/229136-theory:-category-theory/index.html
 * [diagrams for application](topic/topic_diagrams.20for.20application.html) (13 messages, latest: Mar 24 2020 at 06:19)
 * [universal constructions](topic/topic_universal.20constructions.html) (8 messages, latest: Mar 23 2020 at 21:06)
 
-<hr><p>Last updated: Feb 17 2022 at 00:28 UTC</p>
+<hr><p>Last updated: Apr 12 2022 at 00:39 UTC</p>

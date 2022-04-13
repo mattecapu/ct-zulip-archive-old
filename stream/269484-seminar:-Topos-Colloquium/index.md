@@ -9,7 +9,14 @@ permalink: /stream/269484-seminar:-Topos-Colloquium/index.html
 
 ### Topics:
 
-* [David Danks: "Ethics in AI, not Ethics of AI"](topic/topic_David.20Danks.3A.20.22Ethics.20in.20AI.2C.20not.20Ethics.20of.20AI.22.html) (8 messages, latest: Feb 15 2022 at 22:12)
+* [Leo McElroy: Making Microworlds](topic/topic_Leo.20McElroy.3A.20Making.20Microworlds.html) (2 messages, latest: Apr 11 2022 at 14:05)
+* [Giuseppe Rosolini: "When an elementary quotient \[...\]"](topic/topic_Giuseppe.20Rosolini.3A.20.22When.20an.20elementary.20quotient.20.5B.2E.2E.2E.5D.22.html) (2 messages, latest: Apr 05 2022 at 02:18)
+* [Maaike Zwart: "Lessons from failing distributive laws"](topic/topic_Maaike.20Zwart.3A.20.22Lessons.20from.20failing.20distributive.20laws.22.html) (5 messages, latest: Mar 31 2022 at 16:04)
+* [Dominic Verity: Zen and the art of ∞-categories](topic/topic_Dominic.20Verity.3A.20Zen.20and.20the.20art.20of.20.E2.88.9E-categories.html) (3 messages, latest: Mar 24 2022 at 19:49)
+* [Zoé Christoff: The logic of social influence in networks](topic/topic_Zo.C3.A9.20Christoff.3A.20The.20logic.20of.20social.20influence.20in.20networks.html) (3 messages, latest: Mar 17 2022 at 16:56)
+* [Glynn Winskel: "Making concurrency functional"](topic/topic_Glynn.20Winskel.3A.20.22Making.20concurrency.20functional.22.html) (4 messages, latest: Mar 03 2022 at 16:53)
+* [Bob Coecke: "Compositional Intelligence"](topic/topic_Bob.20Coecke.3A.20.22Compositional.20Intelligence.22.html) (4 messages, latest: Feb 24 2022 at 16:55)
+* [David Danks: "Ethics in AI, not Ethics of AI"](topic/topic_David.20Danks.3A.20.22Ethics.20in.20AI.2C.20not.20Ethics.20of.20AI.22.html) (9 messages, latest: Feb 17 2022 at 16:34)
 * [2022](topic/topic_2022.html) (2 messages, latest: Feb 15 2022 at 21:36)
 * [Robert Harper: "Phase Distinctions in Type Theory"](topic/topic_Robert.20Harper.3A.20.22Phase.20Distinctions.20in.20Type.20Theory.22.html) (2 messages, latest: Dec 06 2021 at 15:03)
 * [Evan Patterson: "Categories of diagrams in \[...\]"](topic/topic_Evan.20Patterson.3A.20.22Categories.20of.20diagrams.20in.20.5B.2E.2E.2E.5D.22.html) (3 messages, latest: Dec 02 2021 at 16:33)
@@ -55,4 +62,4 @@ permalink: /stream/269484-seminar:-Topos-Colloquium/index.html
 * [Richard Garner: "Comodels of an algebraic theory"](topic/topic_Richard.20Garner.3A.20.22Comodels.20of.20an.20algebraic.20theory.22.html) (27 messages, latest: Feb 11 2021 at 22:36)
 * [stream events](topic/topic_stream.20events.html) (2 messages, latest: Dec 26 2020 at 19:06)
 
-<hr><p>Last updated: Feb 17 2022 at 00:28 UTC</p>
+<hr><p>Last updated: Apr 12 2022 at 00:39 UTC</p>

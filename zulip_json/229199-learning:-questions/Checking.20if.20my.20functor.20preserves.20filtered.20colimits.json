@@ -1,0 +1,32 @@
+[
+    {
+        "content": "<p>I would like to check if a functor preserves filtered colimits. Is there a concrete and simple way to do this? For finite colimits, I only need to check it preserves the initial object and the pushouts. Is there such a set of \"irreducible\" filtered colimits which generate all other? What if I restrict myself to <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi>ω</mi><mn>1</mn></msub></mrow><annotation encoding=\"application/x-tex\">\\omega_1</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.5806em;vertical-align:-0.15em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.03588em;\">ω</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.3011em;\"><span style=\"top:-2.55em;margin-left:-0.0359em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">1</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span></span></span></span>--filtered colimits? From my understanding, coequalizers of idempotents and identities should be part of that set, but I am not sure.</p>",
+        "id": 272666651,
+        "sender_full_name": "Ralph Sarkis",
+        "timestamp": 1645438027
+    },
+    {
+        "content": "<p>Informally, what should I look for in a functor to convince me it preserves (or not) filtered colimits? I know the equivalence between finitary and preserving filtered colimits (my case is not in Set, but it is in a variant of Met which has a similar equivalence), but I don't see how to intuitively see that a functor is determined by what it does on finite sets/space.</p>",
+        "id": 272667293,
+        "sender_full_name": "Ralph Sarkis",
+        "timestamp": 1645438343
+    },
+    {
+        "content": "<p>Well, you can restrict to filtered posets, a.k.a. directed sets. But that's still quite complicated.</p>",
+        "id": 272670056,
+        "sender_full_name": "Zhen Lin Low",
+        "timestamp": 1645439753
+    },
+    {
+        "content": "<p>I haven't thought about it carefully, but maybe you can reduce to chains (= diagrams indexed by a well-ordered set). What I know for sure is that if you have a <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>κ</mi></mrow><annotation encoding=\"application/x-tex\">\\kappa</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.4306em;\"></span><span class=\"mord mathnormal\">κ</span></span></span></span>-directed poset of cardinality <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>≤</mo><mi>κ</mi></mrow><annotation encoding=\"application/x-tex\">\\le \\kappa</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.7719em;vertical-align:-0.136em;\"></span><span class=\"mrel\">≤</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.4306em;\"></span><span class=\"mord mathnormal\">κ</span></span></span></span> then you have a cofinal chain of length <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>κ</mi></mrow><annotation encoding=\"application/x-tex\">\\kappa</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.4306em;\"></span><span class=\"mord mathnormal\">κ</span></span></span></span>.</p>",
+        "id": 272674336,
+        "sender_full_name": "Zhen Lin Low",
+        "timestamp": 1645441988
+    },
+    {
+        "content": "<p>(The case where you have a <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>κ</mi></mrow><annotation encoding=\"application/x-tex\">\\kappa</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.4306em;\"></span><span class=\"mord mathnormal\">κ</span></span></span></span>-directed poset of cardinality <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>&lt;</mo><mi>κ</mi></mrow><annotation encoding=\"application/x-tex\">&lt; \\kappa</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.5782em;vertical-align:-0.0391em;\"></span><span class=\"mrel\">&lt;</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.4306em;\"></span><span class=\"mord mathnormal\">κ</span></span></span></span> is actually trivial: such a thing has a top element. The interesting case is where you have a <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>κ</mi></mrow><annotation encoding=\"application/x-tex\">\\kappa</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.4306em;\"></span><span class=\"mord mathnormal\">κ</span></span></span></span>-directed poset of cardinality exactly <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>κ</mi></mrow><annotation encoding=\"application/x-tex\">\\kappa</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.4306em;\"></span><span class=\"mord mathnormal\">κ</span></span></span></span>.)</p>",
+        "id": 272674525,
+        "sender_full_name": "Zhen Lin Low",
+        "timestamp": 1645442107
+    }
+]

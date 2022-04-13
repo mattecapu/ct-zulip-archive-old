@@ -9,13 +9,14 @@ permalink: /stream/274877-practice:-our-work/index.html
 
 ### Topics:
 
-* [John Baez](topic/topic_John.20Baez.html) (302 messages, latest: Feb 15 2022 at 02:25)
-* [David Roberts](topic/topic_David.20Roberts.html) (32 messages, latest: Feb 14 2022 at 21:17)
-* [Mike Shulman](topic/topic_Mike.20Shulman.html) (114 messages, latest: Feb 06 2022 at 18:01)
+* [John Baez](topic/topic_John.20Baez.html) (375 messages, latest: Apr 11 2022 at 00:23)
+* [Mike Shulman](topic/topic_Mike.20Shulman.html) (138 messages, latest: Apr 08 2022 at 14:03)
+* [David Roberts](topic/topic_David.20Roberts.html) (41 messages, latest: Apr 07 2022 at 03:59)
+* [Morgan Rogers](topic/topic_Morgan.20Rogers.html) (13 messages, latest: Mar 24 2022 at 07:58)
+* [posina](topic/topic_posina.html) (1 message, latest: Feb 28 2022 at 21:20)
 * [Ralph Sarkis](topic/topic_Ralph.20Sarkis.html) (16 messages, latest: Jan 25 2022 at 13:11)
 * [Ivan Di Liberti](topic/topic_Ivan.20Di.20Liberti.html) (8 messages, latest: Jan 24 2022 at 10:17)
 * [Jean-Baptiste Vienney](topic/topic_Jean-Baptiste.20Vienney.html) (24 messages, latest: Jan 04 2022 at 14:11)
-* [Morgan Rogers](topic/topic_Morgan.20Rogers.html) (12 messages, latest: Dec 21 2021 at 16:50)
 * [José Siqueira](topic/topic_Jos.C3.A9.20Siqueira.html) (46 messages, latest: Dec 13 2021 at 12:18)
 * [engineering and CT](topic/topic_engineering.20and.20CT.html) (4 messages, latest: Dec 05 2021 at 17:21)
 * [Engineering and CT](topic/topic_Engineering.20and.20CT.html) (1 message, latest: Dec 02 2021 at 10:51)
@@ -29,4 +30,4 @@ permalink: /stream/274877-practice:-our-work/index.html
 * [stream events](topic/topic_stream.20events.html) (6 messages, latest: Jan 31 2021 at 03:39)
 * [thoughts on sharing ideas](topic/topic_thoughts.20on.20sharing.20ideas.html) (20 messages, latest: Jan 31 2021 at 03:05)
 
-<hr><p>Last updated: Feb 17 2022 at 00:28 UTC</p>
+<hr><p>Last updated: Apr 12 2022 at 00:39 UTC</p>

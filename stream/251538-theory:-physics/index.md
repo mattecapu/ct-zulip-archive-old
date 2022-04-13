@@ -9,6 +9,8 @@ permalink: /stream/251538-theory:-physics/index.html
 
 ### Topics:
 
+* [operational probabilistic theories](topic/topic_operational.20probabilistic.20theories.html) (3 messages, latest: Mar 25 2022 at 19:38)
+* [Operational Probabilistic Theories](topic/topic_Operational.20Probabilistic.20Theories.html) (1 message, latest: Mar 24 2022 at 23:48)
 * [Haag's original paper](topic/topic_Haag's.20original.20paper.html) (1 message, latest: Nov 13 2021 at 17:52)
 * [synthetic formulation of qm](topic/topic_synthetic.20formulation.20of.20qm.html) (65 messages, latest: Sep 20 2021 at 14:41)
 * [Discrete Quantum Theory](topic/topic_Discrete.20Quantum.20Theory.html) (14 messages, latest: May 01 2021 at 16:04)
@@ -24,4 +26,4 @@ permalink: /stream/251538-theory:-physics/index.html
 * [CFT and Elliptic Cohomology for Physicists](topic/topic_CFT.20and.20Elliptic.20Cohomology.20for.20Physicists.html) (12 messages, latest: Oct 26 2020 at 15:45)
 * [open systems in classical mechanics](topic/topic_open.20systems.20in.20classical.20mechanics.html) (17 messages, latest: Oct 20 2020 at 00:05)
 
-<hr><p>Last updated: Feb 17 2022 at 00:28 UTC</p>
+<hr><p>Last updated: Apr 12 2022 at 00:39 UTC</p>

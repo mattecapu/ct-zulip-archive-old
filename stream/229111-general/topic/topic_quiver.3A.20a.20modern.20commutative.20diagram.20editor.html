@@ -421,6 +421,87 @@ Does the save feature work yet? When I attempt to save a diagram, it appears not
 
 
 
+<a name="272413103"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/quiver%3A%20a%20modern%20commutative%20diagram%20editor/near/272413103" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Tom Hirschowitz <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/topic_quiver.3A.20a.20modern.20commutative.20diagram.20editor.html#272413103">(Feb 18 2022 at 15:10)</a>:</h4>
+<p>I've recently started to use quiver quite intensively, not only for typesetting diagrams, but for making them commute, i.e., for actually doing proofs. I find it very efficient, because it's much easier to get back in time and try other branches, etc, than on paper.  </p>
+<p>So huge thanks to <span class="user-mention" data-user-id="276092">@Nathanael Arkor</span> for this great tool!</p>
+<p>However, my library of diagrams is starting to grow huge and messy.<br>
+Has anyone else run into this problem? How did you solve it?</p>
+<p>Similar question: I don't understand enough of quiver's internals to manipulate the diagrams I've saved. So, for instance, how could I version-control them as I do with latex files?</p>
+<p>(Maybe I should mention that I often work offline, so cloned the source from github, and normally launch firefox index.html for each new diagram.)</p>
+
+
+
+<a name="272986887"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/quiver%3A%20a%20modern%20commutative%20diagram%20editor/near/272986887" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nathanael Arkor <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/topic_quiver.3A.20a.20modern.20commutative.20diagram.20editor.html#272986887">(Feb 23 2022 at 17:56)</a>:</h4>
+<p>I don't know whether this really answers your question, but I generally include each diagram inline in the LaTeX file (rather than as separate files). It's rare that I need to reuse the same diagram exactly, so this seems to make the most sense to avoid a proliferation of files. The diagrams themselves are then version-controlled just like the rest of the LaTeX document.</p>
+
+
+
+<a name="273511522"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/quiver%3A%20a%20modern%20commutative%20diagram%20editor/near/273511522" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Tom Hirschowitz <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/topic_quiver.3A.20a.20modern.20commutative.20diagram.20editor.html#273511522">(Feb 28 2022 at 16:01)</a>:</h4>
+<p>Thanks for your answer, <span class="user-mention" data-user-id="276092">@Nathanael Arkor</span>! Your strategy makes sense for someone like you, who often gets things right on a first try. But I always need to get back and edit old diagrams. So for the moment I:</p>
+<ul>
+<li>type <code>firefox index.html</code> to start a new diagram (because I want to be able to work offline),</li>
+<li>inline the code in the LaTeX file, along with the url for (tragically unavoidable) later edition.</li>
+</ul>
+<p>But this is quite error-prone (I don't get only diagrams wrong). And also, the url is only valid on one computer.</p>
+<p>E.g., how hard would it be to parse tikzcd code produced by quiver itself?</p>
+
+
+
+<a name="273512562"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/quiver%3A%20a%20modern%20commutative%20diagram%20editor/near/273512562" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nathanael Arkor <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/topic_quiver.3A.20a.20modern.20commutative.20diagram.20editor.html#273512562">(Feb 28 2022 at 16:07)</a>:</h4>
+<p>If you have created a diagram in <strong>quiver</strong>, you can always modify it later if you keep the URL. The URL will be of the form: <code>PATH_TO_QUIVER?q=CODE</code>. If you're working locally, then <code>PATH_TO_QUIVER</code> will be something like <code>C:/Applications/quiver/index.html</code>. If you move to a different computer (where <strong>quiver</strong> is located at a different path), you can change the <code>PATH_TO_QUIVER</code> part without changing the <code>CODE</code> part and modify your diagram there.</p>
+
+
+
+<a name="273512639"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/quiver%3A%20a%20modern%20commutative%20diagram%20editor/near/273512639" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nathanael Arkor <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/topic_quiver.3A.20a.20modern.20commutative.20diagram.20editor.html#273512639">(Feb 28 2022 at 16:08)</a>:</h4>
+<p>The <code>CODE</code> contains the entire diagram. It is not being saved locally: it is being saved in the <code>CODE</code> itself.</p>
+
+
+
+<a name="273512880"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/quiver%3A%20a%20modern%20commutative%20diagram%20editor/near/273512880" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nathanael Arkor <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/topic_quiver.3A.20a.20modern.20commutative.20diagram.20editor.html#273512880">(Feb 28 2022 at 16:09)</a>:</h4>
+<blockquote>
+<p>E.g., how hard would it be to parse tikzcd code produced by quiver itself?</p>
+</blockquote>
+<p>Not so hard, but unfortunately I don't have the time to work on this at the moment :(</p>
+
+
+
+<a name="273512961"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/quiver%3A%20a%20modern%20commutative%20diagram%20editor/near/273512961" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nathanael Arkor <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/topic_quiver.3A.20a.20modern.20commutative.20diagram.20editor.html#273512961">(Feb 28 2022 at 16:10)</a>:</h4>
+<p>Though it's less important if you're only editing diagrams <strong>quiver</strong> created.</p>
+
+
+
+<a name="273601678"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/quiver%3A%20a%20modern%20commutative%20diagram%20editor/near/273601678" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Tom Hirschowitz <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/topic_quiver.3A.20a.20modern.20commutative.20diagram.20editor.html#273601678">(Mar 01 2022 at 07:57)</a>:</h4>
+<p>Oh, nice, that's a start. Thanks!</p>
+
+
+
+<a name="275440183"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/quiver%3A%20a%20modern%20commutative%20diagram%20editor/near/275440183" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mateo Carmona <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/topic_quiver.3A.20a.20modern.20commutative.20diagram.20editor.html#275440183">(Mar 15 2022 at 21:46)</a>:</h4>
+<p>Many thanks for this incredible resource.</p>
+<p>I would like to know if it is possible to draw an arrow from a \bullet to itself. Something like a loop (sorry if this is evident).</p>
+
+
+
+<a name="275501380"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/quiver%3A%20a%20modern%20commutative%20diagram%20editor/near/275501380" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nathanael Arkor <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/topic_quiver.3A.20a.20modern.20commutative.20diagram.20editor.html#275501380">(Mar 16 2022 at 12:10)</a>:</h4>
+<p>Unfortunately, it is not yet possible to draw loops. There has been some progress on the feature, but I've been too busy to work on it recently.</p>
+
+
+
+<a name="275517810"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/quiver%3A%20a%20modern%20commutative%20diagram%20editor/near/275517810" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mateo Carmona <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/topic_quiver.3A.20a.20modern.20commutative.20diagram.20editor.html#275517810">(Mar 16 2022 at 14:27)</a>:</h4>
+<p>Thanks, I understand</p>
+
+
+
 {% endraw %}
 
-<hr><p>Last updated: Feb 17 2022 at 00:28 UTC</p>
+<hr><p>Last updated: Apr 12 2022 at 00:39 UTC</p>

@@ -1,0 +1,50 @@
+[
+    {
+        "content": "<p>At the start of last year I was <a href=\"#narrow/stream/245502-general.3A-positions/topic/people.20who.20have.20gotten.20jobs/near/225499406\">going to work at IOHK</a>, but at the last minute we got some investment capital to develop a new, very scalable layer 1 cryptocurrency platform called <a href=\"https://silvermint.net/\">Silvermint</a> based on work we'd done on <a href=\"https://arxiv.org/abs/1812.02232\">Casanova</a>, a live and safe consensus algorithm based on directed acyclic graphs rather than linear chains.  It's proof of stake, so there's no wasteful computation.</p>\n<p>Earlier this month we closed a $5M round of funding, so we're good for a few more years and set to grow.  I'm leading a team developing a programming language that we're designing to be easy to formally verify.  It's a layered language.  The core is basically lambda calculus with the <a href=\"https://www.microsoft.com/en-us/research/wp-content/uploads/2016/02/tr-2007-118.pdf\">HMF</a> type system; to that we'll add <a href=\"https://en.wikipedia.org/wiki/System_F-sub\">subtyping</a> and <a href=\"https://www.cl.cam.ac.uk/~nk480/esop12.pdf\">proof-of-equality types</a> assisted by <a href=\"https://github.com/Z3Prover/z3\">Z3</a>. The outermost level has state and is an <a href=\"https://en.wikipedia.org/wiki/Object-capability_model\">object capability-secure</a> language.  Contracts will be communicating event loops and will support <a href=\"https://www.usenix.org/conference/atc12/technical-sessions/presentation/yoo\">distributed transactions</a>.  We're writing the codebase in Go 1.18.</p>\n<p>We're hiring programmers to work in Utah Valley, which according to the Milken Institute last year has <a href=\"https://www.ksl.com/article/50110109/provo-orem-named-americas-best-performing-city-in-economic-ranking-more-utah-cities-make-top-10\">the best economy in the nation</a> and according to Gallup in 2014 was the <a href=\"https://www.theatlantic.com/national/archive/2014/03/provo-utah-is-the-best-place-to-live-according-to-gallups-ranking-of-americas-cities/359530/\">best place in the nation to live</a>.  We've got U of Utah, Utah Valley U, and BYU within an hour's drive of each other.  Lots of hiking, skiing, paragliding, and fishing mere minutes away.  We provide full health coverage and pay all the premiums for the employee and their family.  If you're interested, email <a href=\"mailto:jobs@pyrofex.net\">jobs@pyrofex.net</a>.</p>",
+        "id": 275576341,
+        "sender_full_name": "Mike Stay",
+        "timestamp": 1647464388
+    },
+    {
+        "content": "<blockquote>\n<p>It's proof of stake, so there's no wasteful computation.</p>\n</blockquote>\n<p>What’s this part mean? Sounds interesting.</p>",
+        "id": 275584650,
+        "sender_full_name": "Joe Moeller",
+        "timestamp": 1647469085
+    },
+    {
+        "content": "<p>I'm no expert on this - Mike is! - but \"proof of stake\" is an alternative to \"proof of work\", the energy-wasting approach to mining bitcoins that currently uses as much electricity as the whole country of Austria, producing 36.95 million tons of CO2 per year.   And the system called proof of stake has just been adopted by Ethereum.   From <a href=\"https://thedefiant.io/ethereum-merge-test-eth2/\">news 12 hours ago</a>:</p>\n<blockquote>\n<p>The Merge is also tipped to slash energy consumption by more than 99%, bolstering the network’s sustainability and censorship-resistance.</p>\n</blockquote>",
+        "id": 275585741,
+        "sender_full_name": "John Baez",
+        "timestamp": 1647469900
+    },
+    {
+        "content": "<p>\"Proof of work\" is a way of achieving consensus by making computers solve cryptographically hard puzzles in order to participate in the protocol.  Producing blocks is rewarded with newly minted currency, but to produce the block, a computer needs to solve the puzzle.  Usually, the only way to solve the puzzle is to guess and check; metaphorically, the computer swings a pick at a rock wall and after every swing looks to see if it has hit gold yet.  Such computers are called \"miners\", and they all race to be the first to solve the puzzle.  As soon as one does, a new puzzle is created.  Miners have no incentive to solve a puzzle for an invalid block, since it will be discarded and their work will have been wasted.</p>\n<p>\"Proof of stake\" means that participants in the protocol put up a \"stake\" or a \"bond\" in order to participate.  There is no need to solve otherwise useless cryptographic puzzles.  Computers are now called \"validators\", since they do no mining.  If the network sees evidence of a validator's misbehavior, its stake is \"slashed\" or \"burned\" and it can no longer participate in the protocol.</p>",
+        "id": 275589734,
+        "sender_full_name": "Mike Stay",
+        "timestamp": 1647472848
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"275920\">John Baez</span> <a href=\"#narrow/stream/245502-general.3A-positions/topic/Silvermint/near/275585741\">said</a>:</p>\n<blockquote>\n<p>I'm no expert on this - Mike is! - but \"proof of stake\" is an alternative to \"proof of work\", the energy-wasting approach to mining bitcoins that currently uses as much electricity as the whole country of Austria, producing 36.95 million tons of CO2 per year.   And the system called proof of stake has just been adopted by Ethereum.   From <a href=\"https://thedefiant.io/ethereum-merge-test-eth2/\">news 12 hours ago</a>:</p>\n<blockquote>\n<p>The Merge is also tipped to slash energy consumption by more than 99%, bolstering the network’s sustainability and censorship-resistance.</p>\n</blockquote>\n</blockquote>\n<p>Ethereum has not fully switched to PoS yet. It is a long process that has been in the works since the Eth whitepaper in 2014, but _hopefully_ we are going to see the merge happening by the end of summer 2022.</p>",
+        "id": 275645865,
+        "sender_full_name": "Fabrizio Genovese",
+        "timestamp": 1647521066
+    },
+    {
+        "content": "<p>(Arguably the point here is that building a PoS blockchain from the ground up is easier than switching from PoW to PoS when you have more than 100 billions in assets on your chain. Eth cannot afford this merge to go wrong and this is the ultimate reason why it is taking so long.)</p>",
+        "id": 275646085,
+        "sender_full_name": "Fabrizio Genovese",
+        "timestamp": 1647521179
+    },
+    {
+        "content": "<p><span class=\"user-mention\" data-user-id=\"276048\">@Mike Stay</span>  Just wondering, why do you choose Go over, say, Python ? (There's plenty of reasons to choose from, just wondering which ones you picked. Not that you even need a reason at all...)</p>",
+        "id": 275671629,
+        "sender_full_name": "Simon Burton",
+        "timestamp": 1647531182
+    },
+    {
+        "content": "<p><span class=\"user-mention\" data-user-id=\"277321\">@Simon Burton</span> Python certainly has a lot of nice features, and probably would have worked fine.  <a href=\"https://www.linkedin.com/in/ericlang1\">One of the guys on my team</a> had worked with Go for many years and recommended it highly.  It's easy for programmers who know a C-like language to learn.  There's an enormous ecosystem, which makes it easy to write node software.  It's a statically typed compiled language, which I like.  Go 1.18 has generics support; without that I'd have chosen a different language.</p>",
+        "id": 275680098,
+        "sender_full_name": "Mike Stay",
+        "timestamp": 1647533429
+    }
+]

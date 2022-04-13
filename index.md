@@ -8,55 +8,55 @@ permalink: /index.html
 
 ## Streams:
 
-* [learning: questions](stream/229199-learning:-questions/index.html) (623 topics)
+* [learning: questions](stream/229199-learning:-questions/index.html) (661 topics)
 
-* [theory: category theory](stream/229136-theory:-category-theory/index.html) (241 topics)
+* [theory: category theory](stream/229136-theory:-category-theory/index.html) (259 topics)
 
-* [general](stream/229111-general/index.html) (221 topics)
+* [general](stream/229111-general/index.html) (222 topics)
 
 * [practice: applied ct](stream/229156-practice:-applied-ct/index.html) (128 topics)
 
-* [general: events](stream/229141-general:-events/index.html) (114 topics)
+* [general: events](stream/229141-general:-events/index.html) (120 topics)
 
-* [theory: topos theory](stream/230087-theory:-topos-theory/index.html) (69 topics)
+* [theory: topos theory](stream/230087-theory:-topos-theory/index.html) (73 topics)
 
 * [conference: ACT 2020](stream/243068-conference:-ACT-2020/index.html) (62 topics)
 
 * [ACT 2020](stream/243068-ACT-2020/index.html) (61 topics)
 
-* [theory: algebraic topology & homological algebra](stream/241590-theory:-algebraic-topology-&-homological-algebra/index.html) (49 topics)
+* [theory: algebraic topology & homological algebra](stream/241590-theory:-algebraic-topology-&-homological-algebra/index.html) (54 topics)
 
-* [general: mathematics](stream/266967-general:-mathematics/index.html) (47 topics)
+* [seminar: Topos Colloquium](stream/269484-seminar:-Topos-Colloquium/index.html) (52 topics)
 
-* [seminar: Topos Colloquium](stream/269484-seminar:-Topos-Colloquium/index.html) (45 topics)
+* [general: mathematics](stream/266967-general:-mathematics/index.html) (49 topics)
 
-* [theory: logic](stream/233104-theory:-logic/index.html) (44 topics)
+* [practice: thermodynamics](stream/306433-practice:-thermodynamics/index.html) (49 topics)
+
+* [theory: logic](stream/233104-theory:-logic/index.html) (46 topics)
+
+* [general: positions](stream/245502-general:-positions/index.html) (43 topics)
 
 * [MIT Categories Seminar](stream/229457-MIT-Categories-Seminar/index.html) (41 topics)
 
 * [seminar: MIT Categories Seminar](stream/229457-seminar:-MIT-Categories-Seminar/index.html) (41 topics)
 
-* [theory: type theory](stream/229952-theory:-type-theory/index.html) (40 topics)
+* [practice: our papers](stream/258900-practice:-our-papers/index.html) (40 topics)
 
-* [general: positions](stream/245502-general:-positions/index.html) (39 topics)
+* [theory: type theory](stream/229952-theory:-type-theory/index.html) (40 topics)
 
 * [Categorical Probability and Statistics 2020 workshop](stream/238032-Categorical-Probability-and-Statistics-2020-workshop/index.html) (34 topics)
 
-* [practice: our papers](stream/258900-practice:-our-papers/index.html) (34 topics)
-
-* [practice: thermodynamics](stream/306433-practice:-thermodynamics/index.html) (31 topics)
+* [general: values](stream/241990-general:-values/index.html) (24 topics)
 
 * [learning: recommendations](stream/232161-learning:-recommendations/index.html) (24 topics)
 
-* [general: values](stream/241990-general:-values/index.html) (23 topics)
+* [practice: software](stream/229125-practice:-software/index.html) (23 topics)
+
+* [learning: history of ideas](stream/232163-learning:-history-of-ideas/index.html) (22 topics)
 
 * [workshop: Polynomial Functors @ Topos](stream/282140-workshop:-Polynomial-Functors-@-Topos/index.html) (22 topics)
 
-* [learning: history of ideas](stream/232163-learning:-history-of-ideas/index.html) (21 topics)
-
-* [practice: software](stream/229125-practice:-software/index.html) (21 topics)
-
-* [practice: our work](stream/274877-practice:-our-work/index.html) (19 topics)
+* [practice: our work](stream/274877-practice:-our-work/index.html) (20 topics)
 
 * [theory: probability](stream/253118-theory:-probability/index.html) (17 topics)
 
@@ -64,21 +64,21 @@ permalink: /index.html
 
 * [practice: communication](stream/233322-practice:-communication/index.html) (16 topics)
 
+* [theory: physics](stream/251538-theory:-physics/index.html) (16 topics)
+
 * [ACT@UCR seminar](stream/229966-ACT@UCR-seminar/index.html) (15 topics)
 
 * [learning: show and tell](stream/232162-learning:-show-and-tell/index.html) (15 topics)
 
 * [seminar: ACT@UCR](stream/229966-seminar:-ACT@UCR/index.html) (15 topics)
 
-* [theory: algebraic geometry](stream/231112-theory:-algebraic-geometry/index.html) (14 topics)
+* [practice: programming](stream/229450-practice:-programming/index.html) (14 topics)
 
-* [theory: physics](stream/251538-theory:-physics/index.html) (14 topics)
+* [theory: algebraic geometry](stream/231112-theory:-algebraic-geometry/index.html) (14 topics)
 
 * [working: discrete geometry and entanglement](stream/266854-working:-discrete-geometry-and-entanglement/index.html) (14 topics)
 
 * [general: co/appreciation](stream/271602-general:-co/appreciation/index.html) (13 topics)
-
-* [practice: programming](stream/229450-practice:-programming/index.html) (11 topics)
 
 * [practice: translation](stream/260000-practice:-translation/index.html) (11 topics)
 
@@ -100,6 +100,8 @@ permalink: /index.html
 
 * [learning: statistics reading group](stream/245528-learning:-statistics-reading-group/index.html) (7 topics)
 
+* [seminar: EM-cats](stream/298571-seminar:-EM-cats/index.html) (6 topics)
+
 * [semiotics and semiosis](stream/229179-semiotics-and-semiosis/index.html) (6 topics)
 
 * [theory: algebra & CT](stream/230123-theory:-algebra-&-CT/index.html) (6 topics)
@@ -107,8 +109,6 @@ permalink: /index.html
 * [ACT@UMD seminar](stream/229967-ACT@UMD-seminar/index.html) (5 topics)
 
 * [languages: Deutsch/German](stream/231144-languages:-Deutsch/German/index.html) (5 topics)
-
-* [seminar: EM-cats](stream/298571-seminar:-EM-cats/index.html) (5 topics)
 
 * [languages: espanol/Spanish](stream/231120-languages:-espanol/Spanish/index.html) (4 topics)
 
@@ -150,4 +150,4 @@ permalink: /index.html
 
 * [theory: alternate presentations](stream/233122-theory:-alternate-presentations/index.html) (1 topic)
 
-<hr><p>Last updated: Feb 17 2022 at 00:28 UTC</p>
+<hr><p>Last updated: Apr 12 2022 at 00:39 UTC</p>

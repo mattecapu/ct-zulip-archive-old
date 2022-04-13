@@ -1,0 +1,374 @@
+[
+    {
+        "content": "<p>This is not really a question about CT, but about how to organize all the things relevant to <em>writing</em> CT in latex. It's also not a specific question, but more of an open ended one: I'm curious to hear about people's workflow's in latex.</p>\n<p>How do you organise your latex macros, preambles, environments etc.? My workflow is a mess. Is there a \"canonical\" thing everyone does or does everyone have their own special preamble?  Is there a (math) package you always include?<br>\nFor instance, I've seen people use \\newcommand for macros, but also \\DeclareMathOperator. <br>\nI've also seen people write something like <code>\\cat C</code> for a category, but also people writing things like <code>\\Ca</code>, where <code>\\Ca</code> is a macro for <code>\\mathcal{C}</code> (but then you have to do it for every letter, which I've also seen people do). Maybe this doesn't matter, but I thought I'd just get a sense of what people here think/use, since I assume down the road it might be good to be consistent.</p>\n<p>Also, any other latex tips you have!  (I've realised down the road I'll have to start writing a thesis eventually, so it might be good to ask this <em>before</em> I start writing...)</p>",
+        "id": 275162195,
+        "sender_full_name": "Bruno Gavranovic",
+        "timestamp": 1647188065
+    },
+    {
+        "content": "<p>Here's a trick in latex that does it for every letter automatically:</p>\n<div class=\"codehilite\"><pre><span></span><code>\\makeatletter\n\\let\\ea\\expandafter\n\\def\\foreachLetter#1#2#3{\\foreachcount=#1\n  \\ea\\loop\\ea\\ea\\ea#3\\@Alph\\foreachcount\n  \\advance\\foreachcount by 1\n  \\ifnum\\foreachcount&lt;#2\\repeat}\n\\def\\definecal#1{\\ea\\gdef\\csname c#1\\endcsname{\\ensuremath{\\mathcal{#1}}\\xspace}}\n\\foreachLetter{1}{27}{\\definecal}\n</code></pre></div>\n<p>One can argue about whether this is a better idea than writing a separate script in some other language to just spit out <code>\\newcommand{\\cA}{\\ensuremath{\\mathcal{A}}\\xspace}</code> and its 25 friends...</p>",
+        "id": 275163982,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1647190549
+    },
+    {
+        "content": "<p>Note the <code>\\ensuremath</code> and <code>\\xspace</code>, which lets you write things like</p>\n<div class=\"codehilite\"><pre><span></span><code>Let \\cC be a category\n</code></pre></div>\n<p>without needing dollarsigns.</p>",
+        "id": 275164045,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1647190609
+    },
+    {
+        "content": "<p>I dislike latex macros simply because I need to extend my pinky finger to press the backslash key, so for very common things that don't change between documents, I have macros set up in my editor. (e.g. typing <code>mbf</code> then enter writes <code>\\mathbf{}</code> and puts my cursor in the brackets). However, this is not so great when working on long writing projects (e.g. a thesis) because you might change your mind on some macros and 'search and replace' is annoying (especially over multiple files) and sometimes impossible. Also, when working with coauthors, I prefer to use macros to easily get consistent results. All in all, I think my workflow is a mess too, but it is very flexible.</p>\n<p>If I can suggest one package, I highly recommend the wonderful <a href=\"https://www.ctan.org/pkg/knowledge\">knowledge package</a>, it slows you down a bit when writing (especially at the start), but your readers will be very pleased (I know I am when I read papers that use the package : <a href=\"https://www.irif.fr/~petrisan//lics2020.pdf\">e</a><a href=\"https://perso.ens-lyon.fr/samuel.humeau/doc.pdf\">x</a><a href=\"https://ralphs16.github.io/src/CatLectures/DraftBook.pdf\">a</a><a href=\"https://arxiv.org/abs/1712.07121v3\">m</a><a href=\"https://arxiv.org/pdf/1911.01195v5.pdf\">p</a><a href=\"https://www.irif.fr/_media/users/reiterf/thesis.pdf\">l</a><a href=\"https://agoy.fr/publication/phd/phd.pdf\">e</a><a href=\"http://users.dimi.uniud.it/~gabriele.puppis/articles/JSL%202018.pdf\">s</a>).</p>",
+        "id": 275165607,
+        "sender_full_name": "Ralph Sarkis",
+        "timestamp": 1647192685
+    },
+    {
+        "content": "<p>I think there's a choice of philosophy in these things, depending on whether or not you want your LaTeX code to be easy to read - for yourself, that is.   What that means would vary from person to person I guess.   I want my LaTeX code to be easily readable by me, since I spend a lot of time reading and rewriting it.   So, for example, I want the macros for things to be unobtrusive.  I use the real numbers a lot, so I use the macro \\R which looks a lot like <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"double-struck\">R</mi></mrow><annotation encoding=\"application/x-tex\">\\mathbb{R}</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6889em;\"></span><span class=\"mord mathbb\">R</span></span></span></span> (a symbol I have a lot of fondness for), not some other things I've seen people use, like \\Real.</p>",
+        "id": 275166521,
+        "sender_full_name": "John Baez",
+        "timestamp": 1647194017
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"284005\">Ralph Sarkis</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/latex.20.2B.20CT/near/275165607\">said</a>:</p>\n<blockquote>\n<p>However, this is not so great when working on long writing projects (e.g. a thesis) because you might change your mind on some macros and 'search and replace' is annoying (especially over multiple files) and sometimes impossible. Also, when working with coauthors, I prefer to use macros to easily get consistent results.</p>\n</blockquote>\n<p>I think this is a really important point.  In my opinion the use of semantic macros (i.e. named by their mathematical meaning rather than by the visual results they produce) is an essential habit to get into.</p>\n<blockquote>\n<p>I dislike latex macros simply because I need to extend my pinky finger to press the backslash key</p>\n</blockquote>\n<p>The simple solution to that is to remap your keyboard to put the backslash somewhere else.  (-:</p>",
+        "id": 275166988,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1647194598
+    },
+    {
+        "content": "<p>Switch it with the space bar.   <span aria-label=\"stuck out tongue wink\" class=\"emoji emoji-1f61c\" role=\"img\" title=\"stuck out tongue wink\">:stuck_out_tongue_wink:</span></p>",
+        "id": 275167678,
+        "sender_full_name": "John Baez",
+        "timestamp": 1647195530
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"284005\">Ralph Sarkis</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/latex.20.2B.20CT/near/275165607\">said</a>:</p>\n<blockquote>\n<p>I dislike latex macros simply because I need to extend my pinky finger to press the backslash key</p>\n</blockquote>\n<p>Back in the good old days when I was writing LaTeX regularly (ie when I was a PhD student) I simply changed my keymappings to swap the <code>\\</code> and <code>;</code> keys... like most programming languages LaTeX really isn't designed for a BrEn keyboard...</p>",
+        "id": 275169654,
+        "sender_full_name": "Jules Hedges",
+        "timestamp": 1647198255
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276777\">Mike Shulman</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/latex.20.2B.20CT/near/275164045\">said</a>:</p>\n<blockquote>\n<p>Note the <code>\\ensuremath</code> and <code>\\xspace</code>, which lets you write things like</p>\n<div class=\"codehilite\"><pre><span></span><code>Let \\cC be a category\n</code></pre></div>\n<p>without needing dollarsigns.</p>\n</blockquote>\n<p>Ah nice, I wasn't aware of this. I just googled about ensuremath and found that people report it <a href=\"https://tex.stackexchange.com/questions/34830/when-not-to-use-ensuremath-for-math-macro\">breaks</a>  in some circumstances. Has this been your experience or would you say it's something that's always good to use?</p>",
+        "id": 275182976,
+        "sender_full_name": "Bruno Gavranovic",
+        "timestamp": 1647217013
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276777\">Mike Shulman</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/latex.20.2B.20CT/near/275166988\">said</a>:</p>\n<blockquote>\n<p><span class=\"user-mention silent\" data-user-id=\"284005\">Ralph Sarkis</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/latex.20.2B.20CT/near/275165607\">said</a>:</p>\n<blockquote>\n<p>However, this is not so great when working on long writing projects (e.g. a thesis) because you might change your mind on some macros and 'search and replace' is annoying (especially over multiple files) and sometimes impossible. Also, when working with coauthors, I prefer to use macros to easily get consistent results.</p>\n</blockquote>\n<p>I think this is a really important point.  In my opinion the use of semantic macros (i.e. named by their mathematical meaning rather than by the visual results they produce) is an essential habit to get into.</p>\n</blockquote>\n<p>Does this mean that the prefix <code>c</code> in <code>\\cC`` in your latex trick above doesn't refer to </code>mathCal`, bur rather to the fact that it's a symbol for a category?</p>",
+        "id": 275183084,
+        "sender_full_name": "Bruno Gavranovic",
+        "timestamp": 1647217196
+    },
+    {
+        "content": "<p>I've never had any problems with <code>ensuremath</code>.</p>",
+        "id": 275183740,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1647218064
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276875\">Bruno Gavranovic</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/latex.20.2B.20CT/near/275183084\">said</a>:</p>\n<blockquote>\n<p>Does this mean that the prefix <code>c</code> in <code>\\cC</code> in your latex trick above doesn't refer to <code>mathCal</code>, bur rather to the fact that it's a symbol for a category?</p>\n</blockquote>\n<p>No, I don't usually adhere to the principle of semantic macros for single characters.  Possibly I should, but only rarely has it ever been a problem.</p>",
+        "id": 275183764,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1647218143
+    },
+    {
+        "content": "<p>The problems with <code>ensuremath</code> noted at your link seem mostly to arise when putting it around a parameter passed by the caller.  I don't think I ever do that.</p>",
+        "id": 275183828,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1647218238
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"284005\">Ralph Sarkis</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/latex.20.2B.20CT/near/275165607\">said</a>:</p>\n<blockquote>\n<p>If I can suggest one package, I highly recommend the wonderful <a href=\"https://www.ctan.org/pkg/knowledge\">knowledge package</a>,</p>\n</blockquote>\n<p>That package looks amazing!  Thanks for the tip.</p>",
+        "id": 275199101,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1647240569
+    },
+    {
+        "content": "<p>I semantically-macro everything, and when I don't I usually regret it.</p>",
+        "id": 275259407,
+        "sender_full_name": "Matteo Capucci (he/him)",
+        "timestamp": 1647274402
+    },
+    {
+        "content": "<p>I'm more with <span class=\"user-mention\" data-user-id=\"275920\">@John Baez</span> on the use of macros. In order to maximise readability of source, I use unicode extensively, with (my own fork of) Manu Beffara's <a href=\"https://framagit.org/manu/latex-tools\">ebutf8.sty</a> to translate them to LaTeX. It is virtually almost as expressive as unicode-math + lualatex, the only drawback being that unicode accents do not work. And most importantly, you do not need to convert to plain LaTeX when submitting.</p>",
+        "id": 275263129,
+        "sender_full_name": "Tom Hirschowitz",
+        "timestamp": 1647275858
+    },
+    {
+        "content": "<p>I didn't read John's comment as in opposition to semantic macros: one can still consider <code>\\R</code> to mean \"the real numbers\" rather than \"a blackboard bold R\", with the option to change notation globally for the real numbers if needed.</p>",
+        "id": 275275354,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1647281025
+    },
+    {
+        "content": "<p>Fair enough. But the point is that unicode symbols are almost as flexible as macros: most of the time, it's safe to search&amp;replace them, though arguably a bit more cumbersome than merely modifying a macro definition.</p>",
+        "id": 275339727,
+        "sender_full_name": "Tom Hirschowitz",
+        "timestamp": 1647331357
+    },
+    {
+        "content": "<p>I think that single-letter identifiers are a bit of a grey area and although I am a diehard macro user, the damage caused by just using the symbol is not so bad (e.g. it doesn't degrade maintainability very severely). On the other hand, not using macros for composite notations makes a document essentially unmaintainable.</p>",
+        "id": 275343747,
+        "sender_full_name": "Jon Sterling",
+        "timestamp": 1647333994
+    },
+    {
+        "content": "<p>Semantic macroing is fundamental. Also the tension between macros that mean something (e.g. <code>\\realNumbers</code>) vs macros that are fast to type (<code>\\R</code>) often comes to your editor. I use editors with autocomplete so I just have to type 2-3 chars and then tab, meaning that I can afford to use very long and legible macros without getting too slow</p>",
+        "id": 275389627,
+        "sender_full_name": "Fabrizio Genovese",
+        "timestamp": 1647358565
+    },
+    {
+        "content": "<p>I also have another definitely non-mainstream rule: All my macros start with a capitalized letter. In this way I risk zero overlap with LaTeX already defined commands and other people macros (almost no one does this).</p>",
+        "id": 275389780,
+        "sender_full_name": "Fabrizio Genovese",
+        "timestamp": 1647358635
+    },
+    {
+        "content": "<p>I would argue that <code>f : \\R \\to \\R</code> is <em>more</em> legible than <code>f : \\realNumbers \\to \\realNumbers</code>.</p>",
+        "id": 275393796,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1647360231
+    },
+    {
+        "content": "<p>I was actually thinking that to many mathematicians, the distinction being made for <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"double-struck\">R</mi></mrow><annotation encoding=\"application/x-tex\">\\mathbb R</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6889em;\"></span><span class=\"mord mathbb\">R</span></span></span></span> in particular must be strange, because <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"double-struck\">R</mi></mrow><annotation encoding=\"application/x-tex\">\\mathbb R</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6889em;\"></span><span class=\"mord mathbb\">R</span></span></span></span> means the real numbers as much as the words \"the real numbers\" do.</p>",
+        "id": 275395052,
+        "sender_full_name": "Joe Moeller",
+        "timestamp": 1647360682
+    },
+    {
+        "content": "<p>Yes, all the way through I've been thinking about the (possibly apocryphal) example of <code>const PI = 3.14159</code> in a programming language manual that \"makes it easier to modify the program, should the value of pi change\".</p>",
+        "id": 275396853,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1647361327
+    },
+    {
+        "content": "<p>Although there <em>are</em> other uses of <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"double-struck\">R</mi></mrow><annotation encoding=\"application/x-tex\">\\mathbb{R}</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6889em;\"></span><span class=\"mord mathbb\">R</span></span></span></span> in the literature, e.g. <a href=\"https://arxiv.org/abs/0809.3341\">Berger-Moerdijk</a> use it to denote a Reedy category.</p>",
+        "id": 275397044,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1647361405
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276438\">Fabrizio Genovese</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/latex.20.2B.20CT/near/275389780\">said</a>:</p>\n<blockquote>\n<p>I also have another definitely non-mainstream rule: All my macros start with a capitalized letter. In this way I risk zero overlap with LaTeX already defined commands and other people macros (almost no one does this).</p>\n</blockquote>\n<p>I do this too! I can't remember who told me to do it but I think it is recommended practice.</p>",
+        "id": 275401659,
+        "sender_full_name": "Jon Sterling",
+        "timestamp": 1647363205
+    },
+    {
+        "content": "<p>This isn't literally true right? off the top of my head there's <code>\\SS</code> and probably <code>\\A</code> and <code>\\O</code></p>",
+        "id": 275401958,
+        "sender_full_name": "Reid Barton",
+        "timestamp": 1647363334
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276777\">Mike Shulman</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/latex.20.2B.20CT/near/275393796\">said</a>:</p>\n<blockquote>\n<p>I would argue that <code>f : \\R \\to \\R</code> is <em>more</em> legible than <code>f : \\realNumbers \\to \\realNumbers</code>.</p>\n</blockquote>\n<p>In my case I think I use <code>\\Reals</code>. In any case the point is that I prefer descriptive macros more than easy to type ones.</p>",
+        "id": 275411109,
+        "sender_full_name": "Fabrizio Genovese",
+        "timestamp": 1647366913
+    },
+    {
+        "content": "<p>I'd argue that after a while, any macro becomes descriptive. E.g.: <code>\\R</code> and <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"double-struck\">R</mi></mrow><annotation encoding=\"application/x-tex\">\\mathbb{R}</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6889em;\"></span><span class=\"mord mathbb\">R</span></span></span></span> are basically the same thing to me, similarly for most default macros that I use (<code>\\oplus</code>, <code>\\otimes</code>, <code>\\vdash</code>, etc.). I even use some of them orally (maybe because I am not a native English speaker).</p>",
+        "id": 275413480,
+        "sender_full_name": "Ralph Sarkis",
+        "timestamp": 1647367808
+    },
+    {
+        "content": "<p>That's a good point about macros becoming descriptive.  I used to have a macro <code>\\ten</code> (for \"tensor\") for <code>\\otimes</code>, but since I had to write out <code>\\otimes</code> all the time anyway when writing math on the nLab, MathOverflow, and Zulip, I just fell into writing out <code>\\otimes</code> in my LaTeX too.  And as long as it's a single macro, if I need to change the symbol for tensor products I can just redefine it.</p>",
+        "id": 275413882,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1647367980
+    },
+    {
+        "content": "<p>Yeah, I used to have a macro <code>\\tensor</code> to make my LaTeX more readable to me, but I think I've slipped into finding <code>\\otimes</code> readable.   </p>\n<p>Lots of people don't know there's a visible difference in LaTeX between <code>:</code> and <code>\\colon</code>, with the latter being correct for expressions like <code>f \\colon \\R \\to \\R</code>.  For readability I use <code>\\maps</code> to mean <code>\\colon</code>, since <code>f \\maps \\R \\to \\R</code> is just like how I talk.</p>",
+        "id": 275419180,
+        "sender_full_name": "John Baez",
+        "timestamp": 1647370237
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"275920\">John Baez</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/latex.20.2B.20CT/near/275419180\">said</a>:</p>\n<blockquote>\n<p>Lots of people don't know there's a visible difference in LaTeX between <code>:</code> and <code>\\colon</code>, with the latter being correct for expressions like <code>f \\colon \\R \\to \\R</code>.  For readability I use <code>\\maps</code> to mean <code>\\colon</code>, since <code>f \\maps \\R \\to \\R</code> is just like how I talk.</p>\n</blockquote>\n<p>I used to believe that too.  But then when I started doing type theory, I realized that the colon in <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>f</mi><mo>:</mo><mi>R</mi><mo>→</mo><mi>R</mi></mrow><annotation encoding=\"application/x-tex\">f:R\\to R</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8889em;vertical-align:-0.1944em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.10764em;\">f</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">:</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.00773em;\">R</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">→</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.00773em;\">R</span></span></span></span> is just an instance of the colon in a typing judgment, and there are lots of cases where I think using <code>\\colon</code> for a typing judgment looks wrong.  So now I use <code>:</code> for everything, and as a bonus my source code is more readable.</p>\n<p>I wonder who it was who decided that they get to decide what the \"correct\" spacing of a colon is.</p>",
+        "id": 275422742,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1647371934
+    },
+    {
+        "content": "<p>Knuth?   But I agree with him: I don't like the equally wide spaces in <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>f</mi><mo>:</mo><mi>R</mi><mo>→</mo><mi>R</mi></mrow><annotation encoding=\"application/x-tex\">f : R \\to R</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8889em;vertical-align:-0.1944em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.10764em;\">f</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">:</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.00773em;\">R</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">→</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.00773em;\">R</span></span></span></span>, I like <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>f</mi><mspace></mspace><mspace width=\"0.1111em\"/><mo lspace=\"0em\" rspace=\"0.17em\"></mo><mtext> ⁣</mtext><mo lspace=\"0em\" rspace=\"0em\">:</mo><mspace width=\"0.3333em\"/><mi>R</mi><mo>→</mo><mi>R</mi></mrow><annotation encoding=\"application/x-tex\">f \\colon R \\to R</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8889em;vertical-align:-0.1944em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.10764em;\">f</span><span class=\"mspace nobreak\"></span><span class=\"mspace\" style=\"margin-right:0.1111em;\"></span><span class=\"mpunct\"></span><span class=\"mspace\" style=\"margin-right:-0.1667em;\"></span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord\"><span class=\"mrel\">:</span></span><span class=\"mspace\" style=\"margin-right:0.3333em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.00773em;\">R</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">→</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.00773em;\">R</span></span></span></span>.</p>",
+        "id": 275423023,
+        "sender_full_name": "John Baez",
+        "timestamp": 1647372102
+    },
+    {
+        "content": "<p>I like the equally wide spaces in something like <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"false\">{</mo><mi>x</mi><mo>:</mo><msup><mi>x</mi><mn>2</mn></msup><mo>≥</mo><mn>3</mn><mo stretchy=\"false\">}</mo></mrow><annotation encoding=\"application/x-tex\"> \\{x : x^2 \\ge 3\\}</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mopen\">{</span><span class=\"mord mathnormal\">x</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">:</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.9501em;vertical-align:-0.136em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\">x</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.8141em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">2</span></span></span></span></span></span></span></span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">≥</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord\">3</span><span class=\"mclose\">}</span></span></span></span>.  </p>\n<p>But I'm obviously not a typist (= type theorist).  I have never knowingly written a paper that says <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>x</mi><mo>:</mo><mi>X</mi></mrow><annotation encoding=\"application/x-tex\">x : X</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.4306em;\"></span><span class=\"mord mathnormal\">x</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">:</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.07847em;\">X</span></span></span></span> to mean \"<span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>x</mi></mrow><annotation encoding=\"application/x-tex\">x</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.4306em;\"></span><span class=\"mord mathnormal\">x</span></span></span></span> is of type <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>X</mi></mrow><annotation encoding=\"application/x-tex\">X</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.07847em;\">X</span></span></span></span>\".</p>",
+        "id": 275423140,
+        "sender_full_name": "John Baez",
+        "timestamp": 1647372166
+    },
+    {
+        "content": "<p>But when you write <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>f</mi><mo>:</mo><mi>R</mi><mo>→</mo><mi>R</mi></mrow><annotation encoding=\"application/x-tex\">f : R \\to R</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8889em;vertical-align:-0.1944em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.10764em;\">f</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">:</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.00773em;\">R</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">→</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.00773em;\">R</span></span></span></span>, it means \"<span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>f</mi></mrow><annotation encoding=\"application/x-tex\">f</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8889em;vertical-align:-0.1944em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.10764em;\">f</span></span></span></span> is of type <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>R</mi><mo>→</mo><mi>R</mi></mrow><annotation encoding=\"application/x-tex\">R\\to R</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.00773em;\">R</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">→</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.00773em;\">R</span></span></span></span>.\"</p>",
+        "id": 275428185,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1647374658
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276777\">Mike Shulman</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/latex.20.2B.20CT/near/275393796\">said</a>:</p>\n<blockquote>\n<p>I would argue that <code>f : \\R \\to \\R</code> is <em>more</em> legible than <code>f : \\realNumbers \\to \\realNumbers</code>.</p>\n</blockquote>\n<p>Let alone  <code>\\FnDeclaration{f}{\\Reals}{\\Reals} </code>, in case you want the option of replacing  <code>: </code> with  <code>\\colon </code> or  <code>\\to </code> with  <code>\\longrightarrow </code> or something.</p>",
+        "id": 275431201,
+        "sender_full_name": "Martti Karvonen",
+        "timestamp": 1647376303
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276777\">Mike Shulman</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/latex.20.2B.20CT/near/275428185\">said</a>:</p>\n<blockquote>\n<p>But when you write <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>f</mi><mo>:</mo><mi>R</mi><mo>→</mo><mi>R</mi></mrow><annotation encoding=\"application/x-tex\">f : R \\to R</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8889em;vertical-align:-0.1944em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.10764em;\">f</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">:</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.00773em;\">R</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">→</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.00773em;\">R</span></span></span></span>, it means \"<span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>f</mi></mrow><annotation encoding=\"application/x-tex\">f</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8889em;vertical-align:-0.1944em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.10764em;\">f</span></span></span></span> is of type <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>R</mi><mo>→</mo><mi>R</mi></mrow><annotation encoding=\"application/x-tex\">R\\to R</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.00773em;\">R</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">→</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.00773em;\">R</span></span></span></span>.\"</p>\n</blockquote>\n<p>Yeah, I get it.    That's one way to read it, but I never write <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>X</mi><mo>→</mo><mi>Y</mi></mrow><annotation encoding=\"application/x-tex\">X \\to Y</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.07847em;\">X</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">→</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.22222em;\">Y</span></span></span></span> as the name of a type, so I don't think the sentence \"<span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>f</mi></mrow><annotation encoding=\"application/x-tex\">f</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8889em;vertical-align:-0.1944em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.10764em;\">f</span></span></span></span> is of type <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>R</mi><mo>→</mo><mi>R</mi></mrow><annotation encoding=\"application/x-tex\">R\\to R</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.00773em;\">R</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">→</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.00773em;\">R</span></span></span></span>\" when I see <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>f</mi><mo>:</mo><mi>R</mi><mo>→</mo><mi>R</mi></mrow><annotation encoding=\"application/x-tex\">f: R \\to R</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8889em;vertical-align:-0.1944em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.10764em;\">f</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">:</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.00773em;\">R</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">→</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.00773em;\">R</span></span></span></span> .   Sorry, I'm one of the old-fashioned guys who will be left in the dustbin of history.</p>",
+        "id": 275434160,
+        "sender_full_name": "John Baez",
+        "timestamp": 1647377858
+    },
+    {
+        "content": "<p>More importantly:</p>\n<p>I just accidentally noticed that here on Zulip <code>$$\\R$$</code> produces this: <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"double-struck\">R</mi></mrow><annotation encoding=\"application/x-tex\">\\R</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6889em;\"></span><span class=\"mord mathbb\">R</span></span></span></span>.</p>",
+        "id": 275434282,
+        "sender_full_name": "John Baez",
+        "timestamp": 1647377912
+    },
+    {
+        "content": "<p>Is <code>\\R</code> a built-in LaTeX macro for the real numbers?  If so, I didn't know that.</p>",
+        "id": 275434358,
+        "sender_full_name": "John Baez",
+        "timestamp": 1647377964
+    },
+    {
+        "content": "<p>I don't think so. At least, I've added that macro to the preamble of just about every paper I've ever written!</p>",
+        "id": 275437594,
+        "sender_full_name": "Evan Patterson",
+        "timestamp": 1647379540
+    },
+    {
+        "content": "<p>So maybe someone did it on Zulip.</p>",
+        "id": 275441549,
+        "sender_full_name": "John Baez",
+        "timestamp": 1647381540
+    },
+    {
+        "content": "<p>KaTeX appears to render <code>\\R</code> as <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"double-struck\">R</mi></mrow><annotation encoding=\"application/x-tex\">\\R</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6889em;\"></span><span class=\"mord mathbb\">R</span></span></span></span> (I'm not sure for what reason), which is why Zulip does too.</p>",
+        "id": 275501546,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1647432741
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"284005\">Ralph Sarkis</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/latex.20.2B.20CT/near/275413480\">said</a>:</p>\n<blockquote>\n<p>I even use some of them orally (maybe because I am not a native English speaker).</p>\n</blockquote>\n<p>lmao this really hits home... in the paper i'm currently writing we are using like 3 different monoidal products so we just call them with their latex name (though in the doc each use has its own semantic macro associated <span aria-label=\"nerd\" class=\"emoji emoji-1f913\" role=\"img\" title=\"nerd\">:nerd:</span> )</p>",
+        "id": 275622318,
+        "sender_full_name": "Matteo Capucci (he/him)",
+        "timestamp": 1647507474
+    },
+    {
+        "content": "<p>I didn't know about <code>\\colon</code> being different from <code>:</code>... I hate the spacing around <code>:</code> when it comes to denote typing judgments, in my thesis i've defined something like <code>\\tin</code> aliased to <code>\\!:\\!</code> to make it tolerable</p>",
+        "id": 275622654,
+        "sender_full_name": "Matteo Capucci (he/him)",
+        "timestamp": 1647507637
+    },
+    {
+        "content": "<p>For sure using the same macro again and again makes it readable, we humans are amazing at picking up patterns. You could also use <code>\\Charles</code> or <code>\\Bob</code> to define the real numbers, after enough using that would be perfectly ok for you.<br>\nIt becomes more difficult when you want to make your code</p>\n<ul>\n<li>Readable for your collaborators</li>\n<li>Readable for your future self</li>\n</ul>\n<p>Indeed, we are amazing at picking up patterns but also at forgetting them when we do not exercise enough. So I do stick with descriptive macros for these reasons. It may happen that I introduce some notation for some work, then stop using that notation for a few years, and then come back to that line of work again. That is the situation when naming, say, the reals <code>\\Bob</code> and <code>\\Charles</code> is going to turn your workflow into an unpleasant one.</p>",
+        "id": 275645504,
+        "sender_full_name": "Fabrizio Genovese",
+        "timestamp": 1647520872
+    },
+    {
+        "content": "<p>But then again, this is just my opinion. These choices are very personal as it is the choice of the editor one uses, and who am I to judge.</p>",
+        "id": 275645653,
+        "sender_full_name": "Fabrizio Genovese",
+        "timestamp": 1647520941
+    },
+    {
+        "content": "<p>I don't think anyone is going to stop using the notation <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"double-struck\">R</mi></mrow><annotation encoding=\"application/x-tex\">\\mathbb{R}</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6889em;\"></span><span class=\"mord mathbb\">R</span></span></span></span> for the real numbers.</p>",
+        "id": 275700582,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1647539312
+    },
+    {
+        "content": "<p>Yes, <code>:</code> is designed to have <em>big</em> equal-sized spaces on both sides:</p>\n<p><span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"normal\">□</mi><mo>:</mo><mi mathvariant=\"normal\">□</mi></mrow><annotation encoding=\"application/x-tex\"> \\square :\\square </annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.675em;\"></span><span class=\"mord amsrm\">□</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">:</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.675em;\"></span><span class=\"mord amsrm\">□</span></span></span></span></p>\n<p><code>\\colon</code> is designed to be asymmetrical, with less space at left:</p>\n<p><span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"normal\">□</mi><mspace></mspace><mspace width=\"0.1111em\"/><mo lspace=\"0em\" rspace=\"0.17em\"></mo><mtext> ⁣</mtext><mo lspace=\"0em\" rspace=\"0em\">:</mo><mspace width=\"0.3333em\"/><mi mathvariant=\"normal\">□</mi></mrow><annotation encoding=\"application/x-tex\"> \\square \\colon \\square</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.675em;\"></span><span class=\"mord amsrm\">□</span><span class=\"mspace nobreak\"></span><span class=\"mspace\" style=\"margin-right:0.1111em;\"></span><span class=\"mpunct\"></span><span class=\"mspace\" style=\"margin-right:-0.1667em;\"></span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord\"><span class=\"mrel\">:</span></span><span class=\"mspace\" style=\"margin-right:0.3333em;\"></span><span class=\"mord amsrm\">□</span></span></span></span></p>",
+        "id": 275709632,
+        "sender_full_name": "John Baez",
+        "timestamp": 1647543463
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276777\">Mike Shulman</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/latex.20.2B.20CT/near/275700582\">said</a>:</p>\n<blockquote>\n<p>I don't think anyone is going to stop using the notation <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"double-struck\">R</mi></mrow><annotation encoding=\"application/x-tex\">\\mathbb{R}</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6889em;\"></span><span class=\"mord mathbb\">R</span></span></span></span> for the real numbers.</p>\n</blockquote>\n<p>I don't see what this has to do with my argument tho. I am arguing about macro definitions, not notation.</p>",
+        "id": 275731709,
+        "sender_full_name": "Fabrizio Genovese",
+        "timestamp": 1647553331
+    },
+    {
+        "content": "<p>I was using that to argue that no one is going to start being confused by the macro <code>\\R</code> for the real numbers either.</p>",
+        "id": 275734075,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1647554541
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276777\">Mike Shulman</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/latex.20.2B.20CT/near/275163982\">said</a>:</p>\n<blockquote>\n<p>Here's a trick in latex that does it for every letter automatically:</p>\n<div class=\"codehilite\"><pre><span></span><code>\\makeatletter\n\\let\\ea\\expandafter\n\\def\\foreachLetter#1#2#3{\\foreachcount=#1\n  \\ea\\loop\\ea\\ea\\ea#3\\@Alph\\foreachcount\n  \\advance\\foreachcount by 1\n  \\ifnum\\foreachcount&lt;#2\\repeat}\n\\def\\definecal#1{\\ea\\gdef\\csname c#1\\endcsname{\\ensuremath{\\mathcal{#1}}\\xspace}}\n\\foreachLetter{1}{27}{\\definecal}\n</code></pre></div>\n<p>One can argue about whether this is a better idea than writing a separate script in some other language to just spit out <code>\\newcommand{\\cA}{\\ensuremath{\\mathcal{A}}\\xspace}</code> and its 25 friends...</p>\n</blockquote>\n<p>So I finally tried this including this in my preamble, but it seems there's error here. I tried googling, but there's no useful results. I suppose I might need to include a particular package? (I already included <code>xspace</code>, but the error seems to happen before that line)</p>\n<div class=\"codehilite\"><pre><span></span><code>! Undefined control sequence.\n\\foreachLetter #1#2#3-&gt;\\foreachcount\n                                     =#1 \\ea \\loop \\ea \\ea \\ea #3\\@Alph \\for...\nl.17 \\foreachLetter{1}{27}{\\definecal}\n</code></pre></div>",
+        "id": 276151970,
+        "sender_full_name": "Bruno Gavranovic",
+        "timestamp": 1647934807
+    },
+    {
+        "content": "<p>Sorry, I omitted the <code>\\newcount\\foreachcount</code> before.</p>",
+        "id": 276197729,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1647959800
+    },
+    {
+        "content": "<p>Ah, thanks. Took me a while to figure out that this was meant to be put before the code snippet you shared. Lots of LaTeX syntax is still a mystery to me...</p>",
+        "id": 276205784,
+        "sender_full_name": "Bruno Gavranovic",
+        "timestamp": 1647962708
+    },
+    {
+        "content": "<p>This is actually plain TeX code, which has much greater potential to be mysterious.  (-:</p>",
+        "id": 276211648,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1647964847
+    },
+    {
+        "content": "<p>However, in reading about the <a href=\"https://www.ctan.org/pkg/knowledge\">knowledge package</a> that <span class=\"user-mention\" data-user-id=\"284005\">@Ralph Sarkis</span>  recommended above, I encountered a link to the <a href=\"https://www.ctan.org/pkg/mathcommand\">mathcommand package</a>, which includes some easier syntax for doing this same thing; look for section 4 on <code>\\LoopCommand</code> in its manual.</p>",
+        "id": 276211886,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1647964927
+    },
+    {
+        "content": "<p>Another possibility for less mysterious (but still hard to learn) programming constructs is expl3. I've been using it a lot in my macros lately and it is very carefully thought out; it does not hide the bizarreness of the TeX model but attempts to tame it.</p>",
+        "id": 276296489,
+        "sender_full_name": "Jon Sterling",
+        "timestamp": 1648020699
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"297784\">Jon Sterling</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/latex.20.2B.20CT/near/276296489\">said</a>:</p>\n<blockquote>\n<p>Another possibility for less mysterious (but still hard to learn) programming constructs is expl3. I've been using it a lot in my macros lately and it is very carefully thought out; it does not hide the bizarreness of the TeX model but attempts to tame it.</p>\n</blockquote>\n<p>Ah, with all these improvements and functionalities one day I imagine someone will add types to LaTeX. Then the fun will begin...</p>",
+        "id": 276499131,
+        "sender_full_name": "Bruno Gavranovic",
+        "timestamp": 1648138256
+    },
+    {
+        "content": "<p>Typography will finally live up to its name.</p>",
+        "id": 276675212,
+        "sender_full_name": "John Baez",
+        "timestamp": 1648240316
+    },
+    {
+        "content": "<p>This is the first I've heard of expl3. I just looked at the expl3 README. Given that \"the commands provided are not intended for use at the document level nor for use in describing design layouts in document class files\" what sorts of things are folks using it for?</p>",
+        "id": 276691770,
+        "sender_full_name": "Rich Hilliard",
+        "timestamp": 1648251196
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276724\">Rich Hilliard</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/latex.20.2B.20CT/near/276691770\">said</a>:</p>\n<blockquote>\n<p>This is the first I've heard of expl3. I just looked at the expl3 README. Given that \"the commands provided are not intended for use at the document level nor for use in describing design layouts in document class files\" what sorts of things are folks using it for?</p>\n</blockquote>\n<p>It is intended to be used for programming macros (e.g. packages, classes, etc.), and that is what folks are using it for.</p>",
+        "id": 276712425,
+        "sender_full_name": "Jon Sterling",
+        "timestamp": 1648281444
+    },
+    {
+        "content": "<p>For instance, I used it to create a LaTeX package that reproduces old-school French-mathematics-style paragraph numbering: <a href=\"https://github.com/jonsterling/latex-dieudonne/blob/main/dieudonne.sty\">https://github.com/jonsterling/latex-dieudonne/blob/main/dieudonne.sty</a>.</p>",
+        "id": 276712438,
+        "sender_full_name": "Jon Sterling",
+        "timestamp": 1648281478
+    },
+    {
+        "content": "<p>Ah, I get it. Thanks!</p>",
+        "id": 276728685,
+        "sender_full_name": "Rich Hilliard",
+        "timestamp": 1648304876
+    }
+]

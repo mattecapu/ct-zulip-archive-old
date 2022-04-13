@@ -9,6 +9,7 @@ permalink: /stream/229952-theory:-type-theory/index.html
 
 ### Topics:
 
+* [how was Martin-Löf's 'Type in Type' theory supposed to work?](topic/topic_how.20was.20Martin-L.C3.B6f's.20'Type.20in.20Type'.20theory.20supposed.20to.20work.3F.html) (7 messages, latest: Apr 05 2022 at 17:26)
 * [normalisation by evaluation and sheaves](topic/topic_normalisation.20by.20evaluation.20and.20sheaves.html) (52 messages, latest: Dec 04 2021 at 20:24)
 * [Generalizations of inductive types](topic/topic_Generalizations.20of.20inductive.20types.html) (4 messages, latest: Nov 20 2021 at 10:19)
 * [string diagrams for dependent terms](topic/topic_string.20diagrams.20for.20dependent.20terms.html) (6 messages, latest: Oct 28 2021 at 20:16)
@@ -34,7 +35,6 @@ permalink: /stream/229952-theory:-type-theory/index.html
 * [Semisimplicial types](topic/topic_Semisimplicial.20types.html) (4 messages, latest: May 09 2021 at 22:13)
 * ["Intuitionistic type theory"](topic/topic_.22Intuitionistic.20type.20theory.22.html) (8 messages, latest: May 04 2021 at 17:35)
 * [equalizers](topic/topic_equalizers.html) (45 messages, latest: Apr 25 2021 at 02:56)
-* [how was Martin-Löf's 'Type in Type' theory supposed to work?](topic/topic_how.20was.20Martin-L.C3.B6f's.20'Type.20in.20Type'.20theory.20supposed.20to.20work.3F.html) (6 messages, latest: Apr 12 2021 at 09:50)
 * [How was Martin-Löf's 'Type in Type' theory supposed to work?](topic/topic_How.20was.20Martin-L.C3.B6f's.20'Type.20in.20Type'.20theory.20supposed.20to.20work.3F.html) (11 messages, latest: Apr 11 2021 at 14:13)
 * [implications of type theory on foundations/finitism/etc.](topic/topic_implications.20of.20type.20theory.20on.20foundations.2Ffinitism.2Fetc.2E.html) (32 messages, latest: Apr 10 2021 at 17:31)
 * [self-types](topic/topic_self-types.html) (9 messages, latest: Mar 06 2021 at 15:08)
@@ -50,4 +50,4 @@ permalink: /stream/229952-theory:-type-theory/index.html
 * [stream events](topic/topic_stream.20events.html) (3 messages, latest: Apr 06 2020 at 05:32)
 * [W-types and CFGs](topic/topic_W-types.20and.20CFGs.html) (11 messages, latest: Apr 02 2020 at 16:00)
 
-<hr><p>Last updated: Feb 17 2022 at 00:28 UTC</p>
+<hr><p>Last updated: Apr 12 2022 at 00:39 UTC</p>

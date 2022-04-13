@@ -9,6 +9,12 @@ permalink: /stream/245502-general:-positions/index.html
 
 ### Topics:
 
+* [people who have gotten jobs](topic/topic_people.20who.20have.20gotten.20jobs.html) (75 messages, latest: Mar 31 2022 at 15:28)
+* [Infrabayesianism](topic/topic_Infrabayesianism.html) (1 message, latest: Mar 24 2022 at 08:08)
+* [Silvermint](topic/topic_Silvermint.html) (8 messages, latest: Mar 17 2022 at 16:10)
+* [Topos Institute summer research positions](topic/topic_Topos.20Institute.20summer.20research.20positions.html) (8 messages, latest: Mar 05 2022 at 17:30)
+* [Topos Institute is hiring](topic/topic_Topos.20Institute.20is.20hiring.html) (5 messages, latest: Feb 24 2022 at 17:11)
+* [two postdocs in Marseille and Paris](topic/topic_two.20postdocs.20in.20Marseille.20and.20Paris.html) (1 message, latest: Feb 24 2022 at 15:56)
 * [Looking for a partner to join Cavenwell Industrial AI](topic/topic_Looking.20for.20a.20partner.20to.20join.20Cavenwell.20Industrial.20AI.html) (1 message, latest: Jan 15 2022 at 04:22)
 * [ACT, computer science and biology](topic/topic_ACT.2C.20computer.20science.20and.20biology.html) (3 messages, latest: Jan 10 2022 at 21:42)
 * [CT in Canada](topic/topic_CT.20in.20Canada.html) (58 messages, latest: Dec 09 2021 at 17:30)
@@ -24,11 +30,9 @@ permalink: /stream/245502-general:-positions/index.html
 * [Startup working on AI](topic/topic_Startup.20working.20on.20AI.html) (1 message, latest: Jun 07 2021 at 08:36)
 * [Sabbaticals in Tallinn](topic/topic_Sabbaticals.20in.20Tallinn.html) (20 messages, latest: Jun 02 2021 at 12:34)
 * [Phd position at University College London](topic/topic_Phd.20position.20at.20University.20College.20London.html) (1 message, latest: Jun 01 2021 at 16:21)
-* [Topos Institute is hiring](topic/topic_Topos.20Institute.20is.20hiring.html) (4 messages, latest: Apr 29 2021 at 09:04)
 * [position at Susquehanna University](topic/topic_position.20at.20Susquehanna.20University.html) (1 message, latest: Apr 09 2021 at 17:59)
 * [2 PhD positions at University of Strathclyde, Glasgow](topic/topic_2.20PhD.20positions.20at.20University.20of.20Strathclyde.2C.20Glasgow.html) (5 messages, latest: Apr 02 2021 at 11:51)
 * [Faculty position at University College London](topic/topic_Faculty.20position.20at.20University.20College.20London.html) (1 message, latest: Apr 02 2021 at 09:19)
-* [people who have gotten jobs](topic/topic_people.20who.20have.20gotten.20jobs.html) (55 messages, latest: Apr 01 2021 at 11:32)
 * [PhD position Coalgebraic Logics @ MSP/Strathclyde](topic/topic_PhD.20position.20Coalgebraic.20Logics.20.40.20MSP.2FStrathclyde.html) (5 messages, latest: Feb 20 2021 at 20:53)
 * [Research scientist in DC/MD area](topic/topic_Research.20scientist.20in.20DC.2FMD.20area.html) (2 messages, latest: Feb 10 2021 at 18:39)
 * [8 tenure-track positions at McMaster University](topic/topic_8.20tenure-track.20positions.20at.20McMaster.20University.html) (1 message, latest: Dec 18 2020 at 16:03)
@@ -49,4 +53,4 @@ permalink: /stream/245502-general:-positions/index.html
 * [PhD positions in Estonia](topic/topic_PhD.20positions.20in.20Estonia.html) (1 message, latest: Jun 27 2020 at 18:04)
 * [Companies that hire category people](topic/topic_Companies.20that.20hire.20category.20people.html) (2 messages, latest: May 13 2020 at 03:50)
 
-<hr><p>Last updated: Feb 17 2022 at 00:28 UTC</p>
+<hr><p>Last updated: Apr 12 2022 at 00:39 UTC</p>
