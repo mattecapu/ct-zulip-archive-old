@@ -36,13 +36,13 @@ permalink: /index.html
 
 * [general: positions](stream/245502-general:-positions/index.html) (43 topics)
 
+* [theory: type theory](stream/229952-theory:-type-theory/index.html) (42 topics)
+
 * [MIT Categories Seminar](stream/229457-MIT-Categories-Seminar/index.html) (41 topics)
 
 * [practice: our papers](stream/258900-practice:-our-papers/index.html) (41 topics)
 
 * [seminar: MIT Categories Seminar](stream/229457-seminar:-MIT-Categories-Seminar/index.html) (41 topics)
-
-* [theory: type theory](stream/229952-theory:-type-theory/index.html) (40 topics)
 
 * [Categorical Probability and Statistics 2020 workshop](stream/238032-Categorical-Probability-and-Statistics-2020-workshop/index.html) (34 topics)
 
@@ -150,4 +150,4 @@ permalink: /index.html
 
 * [theory: alternate presentations](stream/233122-theory:-alternate-presentations/index.html) (1 topic)
 
-<hr><p>Last updated: Apr 13 2022 at 07:06 UTC</p>
+<hr><p>Last updated: Apr 14 2022 at 00:47 UTC</p>

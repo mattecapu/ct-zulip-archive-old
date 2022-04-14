@@ -9,6 +9,8 @@ permalink: /stream/229952-theory:-type-theory/index.html
 
 ### Topics:
 
+* [applications of category theory in computer science](topic/topic_applications.20of.20category.20theory.20in.20computer.20science.html) (1 message, latest: Apr 13 2022 at 23:04)
+* [Applications of Category Theory in Computer Science](topic/topic_Applications.20of.20Category.20Theory.20in.20Computer.20Science.html) (1 message, latest: Apr 13 2022 at 21:15)
 * [how was Martin-Löf's 'Type in Type' theory supposed to work?](topic/topic_how.20was.20Martin-L.C3.B6f's.20'Type.20in.20Type'.20theory.20supposed.20to.20work.3F.html) (7 messages, latest: Apr 05 2022 at 17:26)
 * [normalisation by evaluation and sheaves](topic/topic_normalisation.20by.20evaluation.20and.20sheaves.html) (52 messages, latest: Dec 04 2021 at 20:24)
 * [Generalizations of inductive types](topic/topic_Generalizations.20of.20inductive.20types.html) (4 messages, latest: Nov 20 2021 at 10:19)
@@ -50,4 +52,4 @@ permalink: /stream/229952-theory:-type-theory/index.html
 * [stream events](topic/topic_stream.20events.html) (3 messages, latest: Apr 06 2020 at 05:32)
 * [W-types and CFGs](topic/topic_W-types.20and.20CFGs.html) (11 messages, latest: Apr 02 2020 at 16:00)
 
-<hr><p>Last updated: Apr 13 2022 at 07:06 UTC</p>
+<hr><p>Last updated: Apr 14 2022 at 00:47 UTC</p>
