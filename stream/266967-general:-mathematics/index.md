@@ -9,6 +9,7 @@ permalink: /stream/266967-general:-mathematics/index.html
 
 ### Topics:
 
+* [almost linear map](topic/topic_almost.20linear.20map.html) (31 messages, latest: Apr 14 2022 at 15:54)
 * [are monads monads?](topic/topic_are.20monads.20monads.3F.html) (12 messages, latest: Mar 17 2022 at 19:31)
 * [tensor product of modules](topic/topic_tensor.20product.20of.20modules.html) (27 messages, latest: Feb 20 2022 at 00:42)
 * [Lie  Groupoids and PDEs](topic/topic_Lie.20.20Groupoids.20and.20PDEs.html) (14 messages, latest: Feb 17 2022 at 23:37)
@@ -59,4 +60,4 @@ permalink: /stream/266967-general:-mathematics/index.html
 * [the 600-cell](topic/topic_the.20600-cell.html) (5 messages, latest: Dec 01 2020 at 16:35)
 * [hermitian matrix over normed division algebra](topic/topic_hermitian.20matrix.20over.20normed.20division.20algebra.html) (8 messages, latest: Sep 28 2020 at 21:19)
 
-<hr><p>Last updated: Apr 14 2022 at 00:47 UTC</p>
+<hr><p>Last updated: Apr 15 2022 at 00:43 UTC</p>

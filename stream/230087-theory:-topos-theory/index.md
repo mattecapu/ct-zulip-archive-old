@@ -9,7 +9,7 @@ permalink: /stream/230087-theory:-topos-theory/index.html
 
 ### Topics:
 
-* [relationship of localic and representably faithful](topic/topic_relationship.20of.20localic.20and.20representably.20faithful.html) (40 messages, latest: Apr 13 2022 at 18:40)
+* [relationship of localic and representably faithful](topic/topic_relationship.20of.20localic.20and.20representably.20faithful.html) (41 messages, latest: Apr 14 2022 at 13:00)
 * [formal (co)limits](topic/topic_formal.20(co)limits.html) (9 messages, latest: Apr 06 2022 at 23:33)
 * [pointed subobjects](topic/topic_pointed.20subobjects.html) (2 messages, latest: Mar 20 2022 at 06:32)
 * [translation dictionary: Category Theory ↔ Topos Theory](topic/topic_translation.20dictionary.3A.20Category.20Theory.20.E2.86.94.20Topos.20Theory.html) (44 messages, latest: Mar 18 2022 at 11:42)
@@ -83,4 +83,4 @@ permalink: /stream/230087-theory:-topos-theory/index.html
 * [right adjoint to inclusion of sheaves?](topic/topic_right.20adjoint.20to.20inclusion.20of.20sheaves.3F.html) (18 messages, latest: Mar 30 2020 at 09:37)
 * [essential geometric morphism](topic/topic_essential.20geometric.20morphism.html) (2 messages, latest: Mar 27 2020 at 18:56)
 
-<hr><p>Last updated: Apr 14 2022 at 00:47 UTC</p>
+<hr><p>Last updated: Apr 15 2022 at 00:43 UTC</p>

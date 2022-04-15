@@ -9,7 +9,7 @@ permalink: /stream/241990-general:-values/index.html
 
 ### Topics:
 
-* [gender inclusivity](topic/topic_gender.20inclusivity.html) (70 messages, latest: Apr 13 2022 at 21:57)
+* [gender inclusivity](topic/topic_gender.20inclusivity.html) (94 messages, latest: Apr 14 2022 at 23:23)
 * [goals and questions](topic/topic_goals.20and.20questions.html) (162 messages, latest: Jan 10 2022 at 08:09)
 * [Goals and Questions](topic/topic_Goals.20and.20Questions.html) (12 messages, latest: Dec 30 2021 at 18:12)
 * [The Responsibility of the Scientist Today](topic/topic_The.20Responsibility.20of.20the.20Scientist.20Today.html) (449 messages, latest: Mar 04 2021 at 11:03)
@@ -34,4 +34,4 @@ permalink: /stream/241990-general:-values/index.html
 * [stream events](topic/topic_stream.20events.html) (6 messages, latest: Jun 03 2020 at 19:22)
 * [ACT2020 tutorial day](topic/topic_ACT2020.20tutorial.20day.html) (1 message, latest: Jun 03 2020 at 18:38)
 
-<hr><p>Last updated: Apr 14 2022 at 00:47 UTC</p>
+<hr><p>Last updated: Apr 15 2022 at 00:43 UTC</p>

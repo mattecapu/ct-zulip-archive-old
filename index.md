@@ -28,7 +28,7 @@ permalink: /index.html
 
 * [seminar: Topos Colloquium](stream/269484-seminar:-Topos-Colloquium/index.html) (52 topics)
 
-* [general: mathematics](stream/266967-general:-mathematics/index.html) (49 topics)
+* [general: mathematics](stream/266967-general:-mathematics/index.html) (50 topics)
 
 * [practice: thermodynamics](stream/306433-practice:-thermodynamics/index.html) (49 topics)
 
@@ -150,4 +150,4 @@ permalink: /index.html
 
 * [theory: alternate presentations](stream/233122-theory:-alternate-presentations/index.html) (1 topic)
 
-<hr><p>Last updated: Apr 14 2022 at 00:47 UTC</p>
+<hr><p>Last updated: Apr 15 2022 at 00:43 UTC</p>
