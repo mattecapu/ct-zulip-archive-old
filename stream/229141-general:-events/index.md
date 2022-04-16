@@ -9,6 +9,7 @@ permalink: /stream/229141-general:-events/index.html
 
 ### Topics:
 
+* [MGS 2022](topic/topic_MGS.202022.html) (2 messages, latest: Apr 15 2022 at 22:25)
 * [ItaCa Fest 2022](topic/topic_ItaCa.20Fest.202022.html) (2 messages, latest: Apr 12 2022 at 08:14)
 * [School on Univalent Mathematics: Application deadline 15 Apr](topic/topic_School.20on.20Univalent.20Mathematics.3A.20Application.20deadline.2015.20Apr.html) (1 message, latest: Apr 10 2022 at 07:25)
 * [Intercats](topic/topic_Intercats.html) (27 messages, latest: Apr 05 2022 at 14:09)
@@ -17,7 +18,6 @@ permalink: /stream/229141-general:-events/index.html
 * [AMS school on applied category theory](topic/topic_AMS.20school.20on.20applied.20category.20theory.html) (61 messages, latest: Mar 20 2022 at 16:33)
 * [Workshop on Polynomial Functors 2022](topic/topic_Workshop.20on.20Polynomial.20Functors.202022.html) (13 messages, latest: Mar 18 2022 at 14:40)
 * [ACT 2022: First Call For Papers](topic/topic_ACT.202022.3A.20First.20Call.20For.20Papers.html) (2 messages, latest: Feb 25 2022 at 10:33)
-* [MGS 2022](topic/topic_MGS.202022.html) (1 message, latest: Feb 22 2022 at 09:23)
 * [Mathematics of Collective Intelligence](topic/topic_Mathematics.20of.20Collective.20Intelligence.html) (6 messages, latest: Feb 15 2022 at 22:27)
 * [Adjoint School 2022](topic/topic_Adjoint.20School.202022.html) (41 messages, latest: Feb 13 2022 at 16:43)
 * [9th Indian School on Logic and its Applications (Part -I)](topic/topic_9th.20Indian.20School.20on.20Logic.20and.20its.20Applications.20(Part.20-I).html) (1 message, latest: Feb 12 2022 at 07:41)
@@ -131,4 +131,4 @@ permalink: /stream/229141-general:-events/index.html
 * [April 1st: ACT@UCR](topic/topic_April.201st.3A.20ACT.40UCR.html) (3 messages, latest: Mar 26 2020 at 23:58)
 * [Google Sites problem](topic/topic_Google.20Sites.20problem.html) (4 messages, latest: Mar 25 2020 at 04:29)
 
-<hr><p>Last updated: Apr 15 2022 at 00:43 UTC</p>
+<hr><p>Last updated: Apr 16 2022 at 00:41 UTC</p>
