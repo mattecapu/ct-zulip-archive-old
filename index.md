@@ -46,7 +46,7 @@ permalink: /index.html
 
 * [Categorical Probability and Statistics 2020 workshop](stream/238032-Categorical-Probability-and-Statistics-2020-workshop/index.html) (34 topics)
 
-* [general: values](stream/241990-general:-values/index.html) (24 topics)
+* [general: values](stream/241990-general:-values/index.html) (25 topics)
 
 * [learning: recommendations](stream/232161-learning:-recommendations/index.html) (24 topics)
 
@@ -150,4 +150,4 @@ permalink: /index.html
 
 * [theory: alternate presentations](stream/233122-theory:-alternate-presentations/index.html) (1 topic)
 
-<hr><p>Last updated: Apr 16 2022 at 00:41 UTC</p>
+<hr><p>Last updated: Apr 17 2022 at 00:44 UTC</p>
