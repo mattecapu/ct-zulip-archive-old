@@ -9,6 +9,7 @@ permalink: /stream/229199-learning:-questions/index.html
 
 ### Topics:
 
+* [Morphisms of cofunctors](topic/topic_Morphisms.20of.20cofunctors.html) (2 messages, latest: Apr 17 2022 at 23:08)
 * [beginner questions](topic/topic_beginner.20questions.html) (486 messages, latest: Apr 10 2022 at 11:26)
 * [cotopos](topic/topic_cotopos.html) (14 messages, latest: Apr 07 2022 at 16:50)
 * [Completeness with respect to Set](topic/topic_Completeness.20with.20respect.20to.20Set.html) (4 messages, latest: Apr 06 2022 at 16:24)
@@ -671,4 +672,4 @@ permalink: /stream/229199-learning:-questions/index.html
 * [Algebra (Aluffi) exercises](topic/topic_Algebra.20(Aluffi).20exercises.html) (55 messages, latest: Mar 27 2020 at 23:38)
 * [What is category theory about?](topic/topic_What.20is.20category.20theory.20about.3F.html) (16 messages, latest: Mar 26 2020 at 16:03)
 
-<hr><p>Last updated: Apr 17 2022 at 00:44 UTC</p>
+<hr><p>Last updated: Apr 18 2022 at 00:47 UTC</p>
