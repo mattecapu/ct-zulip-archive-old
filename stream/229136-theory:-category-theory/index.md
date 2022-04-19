@@ -9,6 +9,7 @@ permalink: /stream/229136-theory:-category-theory/index.html
 
 ### Topics:
 
+* [2-categories of symmetric strict monoidal categories](topic/topic_2-categories.20of.20symmetric.20strict.20monoidal.20categories.html) (30 messages, latest: Apr 18 2022 at 14:58)
 * [Steiner's Augmented Directed Complexes](topic/topic_Steiner's.20Augmented.20Directed.20Complexes.html) (11 messages, latest: Apr 15 2022 at 06:02)
 * [Steiner's augmented directed complexes](topic/topic_Steiner's.20augmented.20directed.20complexes.html) (3 messages, latest: Apr 10 2022 at 21:00)
 * [Mates on steroids](topic/topic_Mates.20on.20steroids.html) (2 messages, latest: Apr 09 2022 at 23:53)
@@ -23,7 +24,6 @@ permalink: /stream/229136-theory:-category-theory/index.html
 * ['semibraidings'](topic/topic_'semibraidings'.html) (6 messages, latest: Mar 26 2022 at 19:54)
 * [Dual Day Convolution?](topic/topic_Dual.20Day.20Convolution.3F.html) (8 messages, latest: Mar 25 2022 at 13:36)
 * [laxer limits](topic/topic_laxer.20limits.html) (13 messages, latest: Mar 24 2022 at 16:38)
-* [2-categories of symmetric strict monoidal categories](topic/topic_2-categories.20of.20symmetric.20strict.20monoidal.20categories.html) (27 messages, latest: Mar 23 2022 at 13:46)
 * [literature citation for pentagon in categories with products](topic/topic_literature.20citation.20for.20pentagon.20in.20categories.20with.20products.html) (4 messages, latest: Mar 21 2022 at 13:48)
 * ['center' of monoidal categories](topic/topic_'center'.20of.20monoidal.20categories.html) (19 messages, latest: Mar 10 2022 at 19:26)
 * [braided/symm fc-multicategories/virtual double categories](topic/topic_braided.2Fsymm.20fc-multicategories.2Fvirtual.20double.20categories.html) (8 messages, latest: Feb 22 2022 at 23:56)
@@ -269,4 +269,4 @@ permalink: /stream/229136-theory:-category-theory/index.html
 * [diagrams for application](topic/topic_diagrams.20for.20application.html) (13 messages, latest: Mar 24 2020 at 06:19)
 * [universal constructions](topic/topic_universal.20constructions.html) (8 messages, latest: Mar 23 2020 at 21:06)
 
-<hr><p>Last updated: Apr 18 2022 at 00:47 UTC</p>
+<hr><p>Last updated: Apr 19 2022 at 00:42 UTC</p>

@@ -16,7 +16,7 @@ permalink: /index.html
 
 * [practice: applied ct](stream/229156-practice:-applied-ct/index.html) (128 topics)
 
-* [general: events](stream/229141-general:-events/index.html) (121 topics)
+* [general: events](stream/229141-general:-events/index.html) (122 topics)
 
 * [theory: topos theory](stream/230087-theory:-topos-theory/index.html) (73 topics)
 
@@ -150,4 +150,4 @@ permalink: /index.html
 
 * [theory: alternate presentations](stream/233122-theory:-alternate-presentations/index.html) (1 topic)
 
-<hr><p>Last updated: Apr 18 2022 at 00:47 UTC</p>
+<hr><p>Last updated: Apr 19 2022 at 00:42 UTC</p>
