@@ -9,8 +9,10 @@ permalink: /stream/229199-learning:-questions/index.html
 
 ### Topics:
 
+* [beginner questions](topic/topic_beginner.20questions.html) (489 messages, latest: Apr 19 2022 at 22:26)
+* [enriched graphs](topic/topic_enriched.20graphs.html) (101 messages, latest: Apr 19 2022 at 20:55)
+* [morphisms of cofunctors](topic/topic_morphisms.20of.20cofunctors.html) (1 message, latest: Apr 19 2022 at 06:55)
 * [Morphisms of cofunctors](topic/topic_Morphisms.20of.20cofunctors.html) (4 messages, latest: Apr 18 2022 at 20:41)
-* [beginner questions](topic/topic_beginner.20questions.html) (486 messages, latest: Apr 10 2022 at 11:26)
 * [cotopos](topic/topic_cotopos.html) (14 messages, latest: Apr 07 2022 at 16:50)
 * [Completeness with respect to Set](topic/topic_Completeness.20with.20respect.20to.20Set.html) (4 messages, latest: Apr 06 2022 at 16:24)
 * [comonoids](topic/topic_comonoids.html) (31 messages, latest: Apr 06 2022 at 14:00)
@@ -46,7 +48,6 @@ permalink: /stream/229199-learning:-questions/index.html
 * [adding morphisms](topic/topic_adding.20morphisms.html) (49 messages, latest: Feb 27 2022 at 17:00)
 * [dependent pair category](topic/topic_dependent.20pair.20category.html) (13 messages, latest: Feb 25 2022 at 15:28)
 * [universe axioms](topic/topic_universe.20axioms.html) (44 messages, latest: Feb 25 2022 at 07:51)
-* [enriched graphs](topic/topic_enriched.20graphs.html) (74 messages, latest: Feb 24 2022 at 16:05)
 * [internal toposes](topic/topic_internal.20toposes.html) (139 messages, latest: Feb 23 2022 at 23:02)
 * [toposes and quasitoposes](topic/topic_toposes.20and.20quasitoposes.html) (20 messages, latest: Feb 22 2022 at 07:12)
 * [Alignable, applicative and alternative functors](topic/topic_Alignable.2C.20applicative.20and.20alternative.20functors.html) (1 message, latest: Feb 21 2022 at 21:55)
@@ -672,4 +673,4 @@ permalink: /stream/229199-learning:-questions/index.html
 * [Algebra (Aluffi) exercises](topic/topic_Algebra.20(Aluffi).20exercises.html) (55 messages, latest: Mar 27 2020 at 23:38)
 * [What is category theory about?](topic/topic_What.20is.20category.20theory.20about.3F.html) (16 messages, latest: Mar 26 2020 at 16:03)
 
-<hr><p>Last updated: Apr 19 2022 at 00:42 UTC</p>
+<hr><p>Last updated: Apr 20 2022 at 00:54 UTC</p>

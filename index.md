@@ -8,7 +8,7 @@ permalink: /index.html
 
 ## Streams:
 
-* [learning: questions](stream/229199-learning:-questions/index.html) (662 topics)
+* [learning: questions](stream/229199-learning:-questions/index.html) (663 topics)
 
 * [theory: category theory](stream/229136-theory:-category-theory/index.html) (259 topics)
 
@@ -16,7 +16,7 @@ permalink: /index.html
 
 * [practice: applied ct](stream/229156-practice:-applied-ct/index.html) (128 topics)
 
-* [general: events](stream/229141-general:-events/index.html) (122 topics)
+* [general: events](stream/229141-general:-events/index.html) (123 topics)
 
 * [theory: topos theory](stream/230087-theory:-topos-theory/index.html) (73 topics)
 
@@ -36,11 +36,11 @@ permalink: /index.html
 
 * [general: positions](stream/245502-general:-positions/index.html) (43 topics)
 
+* [practice: our papers](stream/258900-practice:-our-papers/index.html) (43 topics)
+
 * [theory: type theory](stream/229952-theory:-type-theory/index.html) (42 topics)
 
 * [MIT Categories Seminar](stream/229457-MIT-Categories-Seminar/index.html) (41 topics)
-
-* [practice: our papers](stream/258900-practice:-our-papers/index.html) (41 topics)
 
 * [seminar: MIT Categories Seminar](stream/229457-seminar:-MIT-Categories-Seminar/index.html) (41 topics)
 
@@ -150,4 +150,4 @@ permalink: /index.html
 
 * [theory: alternate presentations](stream/233122-theory:-alternate-presentations/index.html) (1 topic)
 
-<hr><p>Last updated: Apr 19 2022 at 00:42 UTC</p>
+<hr><p>Last updated: Apr 20 2022 at 00:54 UTC</p>

@@ -9,6 +9,8 @@ permalink: /stream/258900-practice:-our-papers/index.html
 
 ### Topics:
 
+* [sheaf semantics of termination-insensitive noninterference](topic/topic_sheaf.20semantics.20of.20termination-insensitive.20noninterference.html) (1 message, latest: Apr 19 2022 at 16:34)
+* [classifying topoi in synthetic guarded domain theory](topic/topic_classifying.20topoi.20in.20synthetic.20guarded.20domain.20theory.html) (1 message, latest: Apr 19 2022 at 15:40)
 * [A unified treatment of structural definitions on syntax](topic/topic_A.20unified.20treatment.20of.20structural.20definitions.20on.20syntax.html) (1 message, latest: Apr 12 2022 at 11:07)
 * [What should a generic object be?](topic/topic_What.20should.20a.20generic.20object.20be.3F.html) (1 message, latest: Apr 10 2022 at 08:19)
 * [Tom Hirschowitz](topic/topic_Tom.20Hirschowitz.html) (2 messages, latest: Apr 08 2022 at 15:10)
@@ -51,4 +53,4 @@ permalink: /stream/258900-practice:-our-papers/index.html
 * [stream events](topic/topic_stream.20events.html) (2 messages, latest: Oct 05 2020 at 15:30)
 * [Coends of higher arity](topic/topic_Coends.20of.20higher.20arity.html) (3 messages, latest: Sep 26 2020 at 16:28)
 
-<hr><p>Last updated: Apr 19 2022 at 00:42 UTC</p>
+<hr><p>Last updated: Apr 20 2022 at 00:54 UTC</p>
