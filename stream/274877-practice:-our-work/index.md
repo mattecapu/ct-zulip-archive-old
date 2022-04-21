@@ -9,7 +9,7 @@ permalink: /stream/274877-practice:-our-work/index.html
 
 ### Topics:
 
-* [John Baez](topic/topic_John.20Baez.html) (377 messages, latest: Apr 19 2022 at 19:02)
+* [John Baez](topic/topic_John.20Baez.html) (379 messages, latest: Apr 20 2022 at 17:00)
 * [Ralph Sarkis](topic/topic_Ralph.20Sarkis.html) (19 messages, latest: Apr 17 2022 at 20:56)
 * [Mike Shulman](topic/topic_Mike.20Shulman.html) (138 messages, latest: Apr 08 2022 at 14:03)
 * [David Roberts](topic/topic_David.20Roberts.html) (41 messages, latest: Apr 07 2022 at 03:59)
@@ -30,4 +30,4 @@ permalink: /stream/274877-practice:-our-work/index.html
 * [stream events](topic/topic_stream.20events.html) (6 messages, latest: Jan 31 2021 at 03:39)
 * [thoughts on sharing ideas](topic/topic_thoughts.20on.20sharing.20ideas.html) (20 messages, latest: Jan 31 2021 at 03:05)
 
-<hr><p>Last updated: Apr 20 2022 at 00:54 UTC</p>
+<hr><p>Last updated: Apr 21 2022 at 00:47 UTC</p>

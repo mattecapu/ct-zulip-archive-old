@@ -9,7 +9,7 @@ permalink: /stream/229156-practice:-applied-ct/index.html
 
 ### Topics:
 
-* [web cats](topic/topic_web.20cats.html) (335 messages, latest: Apr 19 2022 at 10:37)
+* [web cats](topic/topic_web.20cats.html) (336 messages, latest: Apr 20 2022 at 11:55)
 * [functors in Haskell](topic/topic_functors.20in.20Haskell.html) (3 messages, latest: Feb 14 2022 at 06:57)
 * [ACT as a field](topic/topic_ACT.20as.20a.20field.html) (279 messages, latest: Jan 30 2022 at 10:27)
 * [spans and images](topic/topic_spans.20and.20images.html) (125 messages, latest: Jan 28 2022 at 16:55)
@@ -138,4 +138,4 @@ permalink: /stream/229156-practice:-applied-ct/index.html
 * [AACT2020](topic/topic_AACT2020.html) (1 message, latest: Mar 24 2020 at 00:56)
 * [welcome](topic/topic_welcome.html) (15 messages, latest: Mar 24 2020 at 00:03)
 
-<hr><p>Last updated: Apr 20 2022 at 00:54 UTC</p>
+<hr><p>Last updated: Apr 21 2022 at 00:47 UTC</p>
