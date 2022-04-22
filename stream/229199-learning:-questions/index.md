@@ -9,7 +9,8 @@ permalink: /stream/229199-learning:-questions/index.html
 
 ### Topics:
 
-* [beginner questions](topic/topic_beginner.20questions.html) (491 messages, latest: Apr 20 2022 at 19:57)
+* [kinematics and dynamics: adjoint?](topic/topic_kinematics.20and.20dynamics.3A.20adjoint.3F.html) (3 messages, latest: Apr 21 2022 at 19:01)
+* [beginner questions](topic/topic_beginner.20questions.html) (494 messages, latest: Apr 21 2022 at 10:41)
 * [enriched graphs](topic/topic_enriched.20graphs.html) (101 messages, latest: Apr 19 2022 at 20:55)
 * [morphisms of cofunctors](topic/topic_morphisms.20of.20cofunctors.html) (1 message, latest: Apr 19 2022 at 06:55)
 * [Morphisms of cofunctors](topic/topic_Morphisms.20of.20cofunctors.html) (4 messages, latest: Apr 18 2022 at 20:41)
@@ -22,7 +23,6 @@ permalink: /stream/229199-learning:-questions/index.html
 * [Relationship between enriched and internal categories in ...](topic/topic_Relationship.20between.20enriched.20and.20internal.20categories.20in.20.2E.2E.2E.html) (21 messages, latest: Mar 31 2022 at 19:48)
 * [fascinating theorems](topic/topic_fascinating.20theorems.html) (10 messages, latest: Mar 31 2022 at 11:14)
 * [Fascinating theorems](topic/topic_Fascinating.20theorems.html) (4 messages, latest: Mar 29 2022 at 15:56)
-* [kinematics and dynamics: adjoint?](topic/topic_kinematics.20and.20dynamics.3A.20adjoint.3F.html) (2 messages, latest: Mar 29 2022 at 11:24)
 * [Basics of dependent sets](topic/topic_Basics.20of.20dependent.20sets.html) (5 messages, latest: Mar 27 2022 at 11:10)
 * [dagger categories](topic/topic_dagger.20categories.html) (6 messages, latest: Mar 26 2022 at 18:55)
 * [latex + CT](topic/topic_latex.20.2B.20CT.html) (62 messages, latest: Mar 26 2022 at 14:27)
@@ -673,4 +673,4 @@ permalink: /stream/229199-learning:-questions/index.html
 * [Algebra (Aluffi) exercises](topic/topic_Algebra.20(Aluffi).20exercises.html) (55 messages, latest: Mar 27 2020 at 23:38)
 * [What is category theory about?](topic/topic_What.20is.20category.20theory.20about.3F.html) (16 messages, latest: Mar 26 2020 at 16:03)
 
-<hr><p>Last updated: Apr 21 2022 at 00:47 UTC</p>
+<hr><p>Last updated: Apr 22 2022 at 00:48 UTC</p>

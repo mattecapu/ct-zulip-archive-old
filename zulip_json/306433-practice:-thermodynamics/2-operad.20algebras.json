@@ -1,0 +1,248 @@
+[
+    {
+        "content": "<p>I need a notion of operad algebra where the collection of things corresponding to a type in the operad is in fact a category. Equivalently, instead of a lax symmetric monoidal functor from a symmetric monoidal category to <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"sans-serif\">S</mi><mi mathvariant=\"sans-serif\">e</mi><mi mathvariant=\"sans-serif\">t</mi></mrow><annotation encoding=\"application/x-tex\">\\mathsf{Set}</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6944em;\"></span><span class=\"mord\"><span class=\"mord mathsf\">Set</span></span></span></span></span>, I want a lax symmetric monoidal functor to <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"sans-serif\">C</mi><mi mathvariant=\"sans-serif\">a</mi><mi mathvariant=\"sans-serif\">t</mi></mrow><annotation encoding=\"application/x-tex\">\\mathsf{Cat}</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6944em;\"></span><span class=\"mord\"><span class=\"mord mathsf\">Cat</span></span></span></span></span>. I guess you might call this a \"categorification\" of operad-algebras. Does anyone have a good reference for this? The theory is pretty obvious, so I can just derive it myself, but I should cite somebody who invented it before.</p>",
+        "id": 279749065,
+        "sender_full_name": "Owen Lynch",
+        "timestamp": 1650580799
+    },
+    {
+        "content": "<p>Are you going to use a symmetric lax monoidal functor to the mere <em>category</em> <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"sans-serif\">C</mi><mi mathvariant=\"sans-serif\">a</mi><mi mathvariant=\"sans-serif\">t</mi></mrow><annotation encoding=\"application/x-tex\">\\mathsf{Cat}</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6944em;\"></span><span class=\"mord\"><span class=\"mord mathsf\">Cat</span></span></span></span></span>, or are you going to take advantage of the fact that <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"sans-serif\">C</mi><mi mathvariant=\"sans-serif\">a</mi><mi mathvariant=\"sans-serif\">t</mi></mrow><annotation encoding=\"application/x-tex\">\\mathsf{Cat}</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6944em;\"></span><span class=\"mord\"><span class=\"mord mathsf\">Cat</span></span></span></span></span> is a 2-category to consider a symmetric lax monoidal <em>pseudofunctor</em> to <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"sans-serif\">C</mi><mi mathvariant=\"sans-serif\">a</mi><mi mathvariant=\"sans-serif\">t</mi></mrow><annotation encoding=\"application/x-tex\">\\mathsf{Cat}</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6944em;\"></span><span class=\"mord\"><span class=\"mord mathsf\">Cat</span></span></span></span></span>?</p>",
+        "id": 279756779,
+        "sender_full_name": "John Baez",
+        "timestamp": 1650586544
+    },
+    {
+        "content": "<p>In simpler terms: are you planning to \"weaken\" the concept of operad algebra, making some laws hold only up to isomorphism?</p>",
+        "id": 279756868,
+        "sender_full_name": "John Baez",
+        "timestamp": 1650586586
+    },
+    {
+        "content": "<p>Yes</p>",
+        "id": 279756890,
+        "sender_full_name": "Owen Lynch",
+        "timestamp": 1650586620
+    },
+    {
+        "content": "<p>Because the laxator is not strict</p>",
+        "id": 279756909,
+        "sender_full_name": "Owen Lynch",
+        "timestamp": 1650586641
+    },
+    {
+        "content": "<p>Not strict in what sense?</p>",
+        "id": 279756920,
+        "sender_full_name": "John Baez",
+        "timestamp": 1650586660
+    },
+    {
+        "content": "<p>I.e., the laxator takes manifolds <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>M</mi></mrow><annotation encoding=\"application/x-tex\">M</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.10903em;\">M</span></span></span></span> and <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>N</mi></mrow><annotation encoding=\"application/x-tex\">N</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.10903em;\">N</span></span></span></span> and produces their product <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>M</mi><mo>×</mo><mi>N</mi></mrow><annotation encoding=\"application/x-tex\">M \\times N</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.7667em;vertical-align:-0.0833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.10903em;\">M</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span><span class=\"mbin\">×</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.10903em;\">N</span></span></span></span></p>",
+        "id": 279756928,
+        "sender_full_name": "Owen Lynch",
+        "timestamp": 1650586674
+    },
+    {
+        "content": "<p>So the laxator is only associative up to isomorphism</p>",
+        "id": 279756969,
+        "sender_full_name": "Owen Lynch",
+        "timestamp": 1650586684
+    },
+    {
+        "content": "<p>Okay...</p>",
+        "id": 279756991,
+        "sender_full_name": "John Baez",
+        "timestamp": 1650586695
+    },
+    {
+        "content": "<p>Too bad.  If you weren't weakening, you could use the well-known existing concept of \"algebra of an operad in an arbitrary symmetric monoidal category\", taking that category to be <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"sans-serif\">C</mi><mi mathvariant=\"sans-serif\">a</mi><mi mathvariant=\"sans-serif\">t</mi></mrow><annotation encoding=\"application/x-tex\">\\mathsf{Cat}</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6944em;\"></span><span class=\"mord\"><span class=\"mord mathsf\">Cat</span></span></span></span></span>.</p>",
+        "id": 279756999,
+        "sender_full_name": "John Baez",
+        "timestamp": 1650586704
+    },
+    {
+        "content": "<p>I'm a bit confused - there's a lot of room for level slips here - but anyway: you may be able to weasel out of these issues by judicious application of Mac Lane's strictification theorem.</p>",
+        "id": 279757066,
+        "sender_full_name": "John Baez",
+        "timestamp": 1650586788
+    },
+    {
+        "content": "<p>Uh oh.</p>",
+        "id": 279757113,
+        "sender_full_name": "Owen Lynch",
+        "timestamp": 1650586807
+    },
+    {
+        "content": "<p>That sounds slightly evil</p>",
+        "id": 279757116,
+        "sender_full_name": "Owen Lynch",
+        "timestamp": 1650586814
+    },
+    {
+        "content": "<p>As Google's new motto says, \"Sometimes it pays to be evil\".</p>",
+        "id": 279757145,
+        "sender_full_name": "John Baez",
+        "timestamp": 1650586833
+    },
+    {
+        "content": "<p>Hahaha</p>",
+        "id": 279757148,
+        "sender_full_name": "Owen Lynch",
+        "timestamp": 1650586840
+    },
+    {
+        "content": "<p>There <em>is</em> work on \"weak\" algebras of operads, but when I last checked it was very thin on the ground, and I have a hunch this is a case where a bit of judicious strictification would save you tons of trouble.</p>",
+        "id": 279757175,
+        "sender_full_name": "John Baez",
+        "timestamp": 1650586880
+    },
+    {
+        "content": "<p>I'll look into it</p>",
+        "id": 279757252,
+        "sender_full_name": "Owen Lynch",
+        "timestamp": 1650586941
+    },
+    {
+        "content": "<p>The thing is, strictifying the cartesian product of manifolds seems very dodgy</p>",
+        "id": 279757311,
+        "sender_full_name": "Owen Lynch",
+        "timestamp": 1650587018
+    },
+    {
+        "content": "<p>There's an old n-Cafe post where I ask about \"weak algebras\" of operads, or maybe \"weak operads\".... it's been so long I barely remember.  But Julie Bergner and others wrote about \"homotopy algebras\" of Lawvere theories, which are similar but even weaker.</p>",
+        "id": 279757582,
+        "sender_full_name": "John Baez",
+        "timestamp": 1650587196
+    },
+    {
+        "content": "<p>Here's a reference to that sort of thing: <a href=\"https://ncatlab.org/nlab/show/homotopy%20T-algebra\">[[homotopy T-algebra]]</a>.</p>",
+        "id": 279757660,
+        "sender_full_name": "John Baez",
+        "timestamp": 1650587281
+    },
+    {
+        "content": "<p>The main punchline is that such algebras can always be strictified, so that all the laws hold on the nose.</p>",
+        "id": 279757710,
+        "sender_full_name": "John Baez",
+        "timestamp": 1650587307
+    },
+    {
+        "content": "<p>An operad can be seen as a special sort of multisorted Lawvere theory, so those results do apply here... though there may be some finagling required to get them to apply to algebras in Cat rather than algebras in the category of simplicial sets.</p>",
+        "id": 279757778,
+        "sender_full_name": "John Baez",
+        "timestamp": 1650587384
+    },
+    {
+        "content": "<p>(Categories can be seen as specially nice simplicial sets.)</p>",
+        "id": 279757793,
+        "sender_full_name": "John Baez",
+        "timestamp": 1650587401
+    },
+    {
+        "content": "<p>So you see, working with \"weak\" things tends to push you into learning some homotopy theory.</p>",
+        "id": 279757845,
+        "sender_full_name": "John Baez",
+        "timestamp": 1650587418
+    },
+    {
+        "content": "<p>I feel like homotopy theorists are to category theorists as category theorist are to regular mathematicians: waiting in the wings ready to swoop down and say \"HA! I told you so! You DID need me!\"</p>",
+        "id": 279758024,
+        "sender_full_name": "Owen Lynch",
+        "timestamp": 1650587545
+    },
+    {
+        "content": "<p>Oh, very much so.  And there are a bunch of them reading this thread, like vultures sitting in the tree-tops looking down at us.</p>",
+        "id": 279758078,
+        "sender_full_name": "John Baez",
+        "timestamp": 1650587592
+    },
+    {
+        "content": "<p>In this case, however, I think I'm going to be stubborn and just plow ahead with what I know the definition must be, and then look back and see if it matches up with other stuff, now that I've ticked the box of \"see if there's something obvious I'm missing.\"</p>",
+        "id": 279758147,
+        "sender_full_name": "Owen Lynch",
+        "timestamp": 1650587650
+    },
+    {
+        "content": "<p>Because there's a reason we use regular monoidal categories and not only strict monoidal categories, and so I think that having these weaker operad algebras is very similar in my mind.</p>",
+        "id": 279758207,
+        "sender_full_name": "Owen Lynch",
+        "timestamp": 1650587722
+    },
+    {
+        "content": "<p>I.e., associativity of products forces you to consider weakness, but only up to the pentagon identity.</p>",
+        "id": 279758228,
+        "sender_full_name": "Owen Lynch",
+        "timestamp": 1650587761
+    },
+    {
+        "content": "<p>Btw, what are you hoping to use these for?   You're writing a thesis on physics... I hope you don't get sucked too deep into higher-categorical issues.</p>",
+        "id": 279758281,
+        "sender_full_name": "John Baez",
+        "timestamp": 1650587784
+    },
+    {
+        "content": "<p>It's very simple.</p>",
+        "id": 279758286,
+        "sender_full_name": "Owen Lynch",
+        "timestamp": 1650587794
+    },
+    {
+        "content": "<p>I want to compose port-Hamiltonian systems with an operad</p>",
+        "id": 279758312,
+        "sender_full_name": "Owen Lynch",
+        "timestamp": 1650587812
+    },
+    {
+        "content": "<p>It's the operad that comes out of the symmetric monoidal category of dirac relations</p>",
+        "id": 279758325,
+        "sender_full_name": "Owen Lynch",
+        "timestamp": 1650587828
+    },
+    {
+        "content": "<p>The set of port-Hamiltonian systems on an interface has a natural category structure</p>",
+        "id": 279758337,
+        "sender_full_name": "Owen Lynch",
+        "timestamp": 1650587849
+    },
+    {
+        "content": "<p>And composition is cartesian product + some other stuff</p>",
+        "id": 279758349,
+        "sender_full_name": "Owen Lynch",
+        "timestamp": 1650587870
+    },
+    {
+        "content": "<p>So I need a slightly weaker form of operad algebra in order to model this</p>",
+        "id": 279758398,
+        "sender_full_name": "Owen Lynch",
+        "timestamp": 1650587900
+    },
+    {
+        "content": "<p>But just slightly weaker!</p>",
+        "id": 279758402,
+        "sender_full_name": "Owen Lynch",
+        "timestamp": 1650587905
+    },
+    {
+        "content": "<p>Everything is pretty well-behaved</p>",
+        "id": 279758409,
+        "sender_full_name": "Owen Lynch",
+        "timestamp": 1650587916
+    },
+    {
+        "content": "<p>Anyways, I have to go now so I can't discuss this more now, but I will respond to anything you post later</p>",
+        "id": 279758486,
+        "sender_full_name": "Owen Lynch",
+        "timestamp": 1650587988
+    },
+    {
+        "content": "<p>Okay.   For anyone else reading this, I should add that the only reason I'd like to avoid \"weak operads\" is that your thesis is due this June!   So there's not really a lot of time to write it.</p>",
+        "id": 279758492,
+        "sender_full_name": "John Baez",
+        "timestamp": 1650587993
+    },
+    {
+        "content": "<p>Ciao.</p>",
+        "id": 279758540,
+        "sender_full_name": "John Baez",
+        "timestamp": 1650588006
+    }
+]

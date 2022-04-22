@@ -9,6 +9,8 @@ permalink: /stream/229136-theory:-category-theory/index.html
 
 ### Topics:
 
+* [enrichment as a structure](topic/topic_enrichment.20as.20a.20structure.html) (11 messages, latest: Apr 21 2022 at 16:54)
+* [relative left adjoints, categories of fractions](topic/topic_relative.20left.20adjoints.2C.20categories.20of.20fractions.html) (1 message, latest: Apr 21 2022 at 06:00)
 * [2-categories of symmetric strict monoidal categories](topic/topic_2-categories.20of.20symmetric.20strict.20monoidal.20categories.html) (30 messages, latest: Apr 18 2022 at 14:58)
 * [Steiner's Augmented Directed Complexes](topic/topic_Steiner's.20Augmented.20Directed.20Complexes.html) (11 messages, latest: Apr 15 2022 at 06:02)
 * [Steiner's augmented directed complexes](topic/topic_Steiner's.20augmented.20directed.20complexes.html) (3 messages, latest: Apr 10 2022 at 21:00)
@@ -36,7 +38,6 @@ permalink: /stream/229136-theory:-category-theory/index.html
 * [Gray product for bicategories](topic/topic_Gray.20product.20for.20bicategories.html) (3 messages, latest: Feb 09 2022 at 17:35)
 * [Reference for *-autonomous categories](topic/topic_Reference.20for.20*-autonomous.20categories.html) (2 messages, latest: Feb 04 2022 at 15:00)
 * [Terminology for "double hom sets"?](topic/topic_Terminology.20for.20.22double.20hom.20sets.22.3F.html) (4 messages, latest: Feb 03 2022 at 08:26)
-* [enrichment as a structure](topic/topic_enrichment.20as.20a.20structure.html) (10 messages, latest: Feb 03 2022 at 04:59)
 * [two algebra structures](topic/topic_two.20algebra.20structures.html) (38 messages, latest: Jan 21 2022 at 19:45)
 * [lifted functor on Met preserves isometries](topic/topic_lifted.20functor.20on.20Met.20preserves.20isometries.html) (17 messages, latest: Jan 19 2022 at 18:48)
 * [What are string diagrams really?](topic/topic_What.20are.20string.20diagrams.20really.3F.html) (33 messages, latest: Jan 19 2022 at 01:11)
@@ -269,4 +270,4 @@ permalink: /stream/229136-theory:-category-theory/index.html
 * [diagrams for application](topic/topic_diagrams.20for.20application.html) (13 messages, latest: Mar 24 2020 at 06:19)
 * [universal constructions](topic/topic_universal.20constructions.html) (8 messages, latest: Mar 23 2020 at 21:06)
 
-<hr><p>Last updated: Apr 21 2022 at 00:47 UTC</p>
+<hr><p>Last updated: Apr 22 2022 at 00:48 UTC</p>
