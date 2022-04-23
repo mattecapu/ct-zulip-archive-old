@@ -9,7 +9,9 @@ permalink: /stream/229136-theory:-category-theory/index.html
 
 ### Topics:
 
-* [enrichment as a structure](topic/topic_enrichment.20as.20a.20structure.html) (11 messages, latest: Apr 21 2022 at 16:54)
+* [constants in empirical models](topic/topic_constants.20in.20empirical.20models.html) (1 message, latest: Apr 23 2022 at 00:29)
+* [V-enriched categories vs. categories with V-action](topic/topic_V-enriched.20categories.20vs.2E.20categories.20with.20V-action.html) (32 messages, latest: Apr 22 2022 at 17:49)
+* [enrichment as a structure](topic/topic_enrichment.20as.20a.20structure.html) (12 messages, latest: Apr 22 2022 at 00:57)
 * [relative left adjoints, categories of fractions](topic/topic_relative.20left.20adjoints.2C.20categories.20of.20fractions.html) (1 message, latest: Apr 21 2022 at 06:00)
 * [2-categories of symmetric strict monoidal categories](topic/topic_2-categories.20of.20symmetric.20strict.20monoidal.20categories.html) (30 messages, latest: Apr 18 2022 at 14:58)
 * [Steiner's Augmented Directed Complexes](topic/topic_Steiner's.20Augmented.20Directed.20Complexes.html) (11 messages, latest: Apr 15 2022 at 06:02)
@@ -270,4 +272,4 @@ permalink: /stream/229136-theory:-category-theory/index.html
 * [diagrams for application](topic/topic_diagrams.20for.20application.html) (13 messages, latest: Mar 24 2020 at 06:19)
 * [universal constructions](topic/topic_universal.20constructions.html) (8 messages, latest: Mar 23 2020 at 21:06)
 
-<hr><p>Last updated: Apr 22 2022 at 00:48 UTC</p>
+<hr><p>Last updated: Apr 23 2022 at 00:41 UTC</p>
