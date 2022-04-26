@@ -26,15 +26,15 @@ permalink: /index.html
 
 * [theory: algebraic topology & homological algebra](stream/241590-theory:-algebraic-topology-&-homological-algebra/index.html) (54 topics)
 
-* [general: mathematics](stream/266967-general:-mathematics/index.html) (52 topics)
+* [seminar: Topos Colloquium](stream/269484-seminar:-Topos-Colloquium/index.html) (53 topics)
 
-* [seminar: Topos Colloquium](stream/269484-seminar:-Topos-Colloquium/index.html) (52 topics)
+* [general: mathematics](stream/266967-general:-mathematics/index.html) (52 topics)
 
 * [practice: thermodynamics](stream/306433-practice:-thermodynamics/index.html) (50 topics)
 
 * [theory: logic](stream/233104-theory:-logic/index.html) (46 topics)
 
-* [general: positions](stream/245502-general:-positions/index.html) (43 topics)
+* [general: positions](stream/245502-general:-positions/index.html) (44 topics)
 
 * [practice: our papers](stream/258900-practice:-our-papers/index.html) (43 topics)
 
@@ -150,6 +150,8 @@ permalink: /index.html
 
 * [practice: chemistry](stream/322714-practice:-chemistry/index.html) (1 topic)
 
+* [pratice: dialectica computing](stream/322866-pratice:-dialectica-computing/index.html) (1 topic)
+
 * [theory: alternate presentations](stream/233122-theory:-alternate-presentations/index.html) (1 topic)
 
-<hr><p>Last updated: Apr 25 2022 at 00:39 UTC</p>
+<hr><p>Last updated: Apr 26 2022 at 00:46 UTC</p>

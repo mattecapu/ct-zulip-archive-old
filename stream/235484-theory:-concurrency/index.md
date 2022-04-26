@@ -19,4 +19,4 @@ permalink: /stream/235484-theory:-concurrency/index.html
 * [compact closed bicategories and the π-calculus](topic/topic_compact.20closed.20bicategories.20and.20the.20.CF.80-calculus.html) (1 message, latest: Apr 22 2020 at 18:46)
 * [stream events](topic/topic_stream.20events.html) (1 message, latest: Apr 22 2020 at 18:45)
 
-<hr><p>Last updated: Apr 25 2022 at 00:39 UTC</p>
+<hr><p>Last updated: Apr 26 2022 at 00:46 UTC</p>

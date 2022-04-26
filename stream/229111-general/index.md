@@ -9,6 +9,8 @@ permalink: /stream/229111-general/index.html
 
 ### Topics:
 
+* [new streams](topic/topic_new.20streams.html) (87 messages, latest: Apr 25 2022 at 18:49)
+* [bicompletions](topic/topic_bicompletions.html) (57 messages, latest: Apr 25 2022 at 05:00)
 * [group cohomology](topic/topic_group.20cohomology.html) (1 message, latest: Apr 11 2022 at 09:51)
 * [quiver: a modern commutative diagram editor](topic/topic_quiver.3A.20a.20modern.20commutative.20diagram.20editor.html) (72 messages, latest: Mar 16 2022 at 14:27)
 * [introduce yourself!](topic/topic_introduce.20yourself!.html) (22 messages, latest: Mar 13 2022 at 16:28)
@@ -20,7 +22,6 @@ permalink: /stream/229111-general/index.html
 * [citing unnumbered results](topic/topic_citing.20unnumbered.20results.html) (83 messages, latest: Jan 21 2022 at 01:46)
 * [✔ are there multiple empty sets?](topic/topic_.E2.9C.94.20are.20there.20multiple.20empty.20sets.3F.html) (2 messages, latest: Jan 05 2022 at 19:54)
 * [how do YOU use a computer in your research?](topic/topic_how.20do.20YOU.20use.20a.20computer.20in.20your.20research.3F.html) (1 message, latest: Jan 04 2022 at 15:22)
-* [new streams](topic/topic_new.20streams.html) (86 messages, latest: Jan 04 2022 at 10:50)
 * [off-topic](topic/topic_off-topic.html) (52 messages, latest: Jan 03 2022 at 17:58)
 * [Compositionality](topic/topic_Compositionality.html) (10 messages, latest: Dec 27 2021 at 13:07)
 * [How do YOU use a computer in your research?](topic/topic_How.20do.20YOU.20use.20a.20computer.20in.20your.20research.3F.html) (21 messages, latest: Dec 07 2021 at 15:05)
@@ -113,7 +114,6 @@ permalink: /stream/229111-general/index.html
 * [Colin McLarty](topic/topic_Colin.20McLarty.html) (21 messages, latest: Oct 06 2020 at 16:32)
 * [stretched water](topic/topic_stretched.20water.html) (12 messages, latest: Oct 05 2020 at 13:57)
 * [Terry Tao's new blog post](topic/topic_Terry.20Tao's.20new.20blog.20post.html) (2 messages, latest: Oct 05 2020 at 13:52)
-* [bicompletions](topic/topic_bicompletions.html) (56 messages, latest: Oct 04 2020 at 22:36)
 * [Cat theory in type theory](topic/topic_Cat.20theory.20in.20type.20theory.html) (47 messages, latest: Oct 01 2020 at 20:45)
 * [Spacetimes, Domains and Categories](topic/topic_Spacetimes.2C.20Domains.20and.20Categories.html) (2 messages, latest: Sep 25 2020 at 01:40)
 * [2d TQFT](topic/topic_2d.20TQFT.html) (1 message, latest: Sep 24 2020 at 22:11)
@@ -232,4 +232,4 @@ permalink: /stream/229111-general/index.html
 * [Tools for diagrams](topic/topic_Tools.20for.20diagrams.html) (78 messages, latest: Mar 25 2020 at 17:53)
 * [topic demonstration](topic/topic_topic.20demonstration.html) (2 messages, latest: Mar 23 2020 at 16:57)
 
-<hr><p>Last updated: Apr 25 2022 at 00:39 UTC</p>
+<hr><p>Last updated: Apr 26 2022 at 00:46 UTC</p>
