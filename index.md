@@ -14,7 +14,7 @@ permalink: /index.html
 
 * [general](stream/229111-general/index.html) (222 topics)
 
-* [practice: applied ct](stream/229156-practice:-applied-ct/index.html) (128 topics)
+* [practice: applied ct](stream/229156-practice:-applied-ct/index.html) (129 topics)
 
 * [general: events](stream/229141-general:-events/index.html) (123 topics)
 
@@ -38,7 +38,7 @@ permalink: /index.html
 
 * [practice: our papers](stream/258900-practice:-our-papers/index.html) (43 topics)
 
-* [theory: type theory](stream/229952-theory:-type-theory/index.html) (42 topics)
+* [theory: type theory](stream/229952-theory:-type-theory/index.html) (43 topics)
 
 * [MIT Categories Seminar](stream/229457-MIT-Categories-Seminar/index.html) (41 topics)
 
@@ -130,11 +130,15 @@ permalink: /index.html
 
 * [theory: game semantics](stream/233273-theory:-game-semantics/index.html) (3 topics)
 
+* [AMS MRC on applied category theory](stream/322927-AMS-MRC-on-applied-category-theory/index.html) (2 topics)
+
 * [NYC Category Theory](stream/237238-NYC-Category-Theory/index.html) (2 topics)
 
 * [Topos Colloquium](stream/269484-Topos-Colloquium/index.html) (2 topics)
 
 * [languages: portugues](stream/303660-languages:-portugues/index.html) (2 topics)
+
+* [practice: chemistry](stream/322714-practice:-chemistry/index.html) (2 topics)
 
 * [practice: industry](stream/229370-practice:-industry/index.html) (2 topics)
 
@@ -148,10 +152,8 @@ permalink: /index.html
 
 * [languages: latine/latin](stream/255711-languages:-latine/latin/index.html) (1 topic)
 
-* [practice: chemistry](stream/322714-practice:-chemistry/index.html) (1 topic)
-
 * [pratice: dialectica computing](stream/322866-pratice:-dialectica-computing/index.html) (1 topic)
 
 * [theory: alternate presentations](stream/233122-theory:-alternate-presentations/index.html) (1 topic)
 
-<hr><p>Last updated: Apr 26 2022 at 00:46 UTC</p>
+<hr><p>Last updated: Apr 27 2022 at 00:55 UTC</p>

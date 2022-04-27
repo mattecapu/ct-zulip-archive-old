@@ -9,6 +9,7 @@ permalink: /stream/229156-practice:-applied-ct/index.html
 
 ### Topics:
 
+* [constants in empirical models](topic/topic_constants.20in.20empirical.20models.html) (3 messages, latest: Apr 26 2022 at 08:41)
 * [web cats](topic/topic_web.20cats.html) (336 messages, latest: Apr 20 2022 at 11:55)
 * [functors in Haskell](topic/topic_functors.20in.20Haskell.html) (3 messages, latest: Feb 14 2022 at 06:57)
 * [ACT as a field](topic/topic_ACT.20as.20a.20field.html) (279 messages, latest: Jan 30 2022 at 10:27)
@@ -138,4 +139,4 @@ permalink: /stream/229156-practice:-applied-ct/index.html
 * [AACT2020](topic/topic_AACT2020.html) (1 message, latest: Mar 24 2020 at 00:56)
 * [welcome](topic/topic_welcome.html) (15 messages, latest: Mar 24 2020 at 00:03)
 
-<hr><p>Last updated: Apr 26 2022 at 00:46 UTC</p>
+<hr><p>Last updated: Apr 27 2022 at 00:55 UTC</p>
