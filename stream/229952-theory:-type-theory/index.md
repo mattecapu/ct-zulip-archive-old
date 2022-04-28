@@ -9,7 +9,7 @@ permalink: /stream/229952-theory:-type-theory/index.html
 
 ### Topics:
 
-* [internal language for initial algebras](topic/topic_internal.20language.20for.20initial.20algebras.html) (1 message, latest: Apr 26 2022 at 01:46)
+* [internal language for initial algebras](topic/topic_internal.20language.20for.20initial.20algebras.html) (3 messages, latest: Apr 27 2022 at 15:59)
 * [applications of category theory in computer science](topic/topic_applications.20of.20category.20theory.20in.20computer.20science.html) (3 messages, latest: Apr 15 2022 at 10:53)
 * [Applications of Category Theory in Computer Science](topic/topic_Applications.20of.20Category.20Theory.20in.20Computer.20Science.html) (3 messages, latest: Apr 14 2022 at 09:29)
 * [how was Martin-Löf's 'Type in Type' theory supposed to work?](topic/topic_how.20was.20Martin-L.C3.B6f's.20'Type.20in.20Type'.20theory.20supposed.20to.20work.3F.html) (7 messages, latest: Apr 05 2022 at 17:26)
@@ -53,4 +53,4 @@ permalink: /stream/229952-theory:-type-theory/index.html
 * [stream events](topic/topic_stream.20events.html) (3 messages, latest: Apr 06 2020 at 05:32)
 * [W-types and CFGs](topic/topic_W-types.20and.20CFGs.html) (11 messages, latest: Apr 02 2020 at 16:00)
 
-<hr><p>Last updated: Apr 27 2022 at 00:55 UTC</p>
+<hr><p>Last updated: Apr 28 2022 at 01:02 UTC</p>

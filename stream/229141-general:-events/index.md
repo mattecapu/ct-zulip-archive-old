@@ -9,6 +9,7 @@ permalink: /stream/229141-general:-events/index.html
 
 ### Topics:
 
+* [NY Categories Seminar](topic/topic_NY.20Categories.20Seminar.html) (14 messages, latest: Apr 27 2022 at 18:30)
 * [ItaCa Fest 2022](topic/topic_ItaCa.20Fest.202022.html) (5 messages, latest: Apr 26 2022 at 09:02)
 * [Categorical Semantics of Entropy](topic/topic_Categorical.20Semantics.20of.20Entropy.html) (3 messages, latest: Apr 19 2022 at 19:35)
 * [ICRA 2022 Workshop on Compositional Robotics](topic/topic_ICRA.202022.20Workshop.20on.20Compositional.20Robotics.html) (5 messages, latest: Apr 19 2022 at 15:54)
@@ -36,7 +37,6 @@ permalink: /stream/229141-general:-events/index.html
 * [Open House on Category Theory 2021](topic/topic_Open.20House.20on.20Category.20Theory.202021.html) (3 messages, latest: Nov 02 2021 at 01:53)
 * [talk: Relative topos theory via stacks](topic/topic_talk.3A.20Relative.20topos.20theory.20via.20stacks.html) (1 message, latest: Nov 01 2021 at 20:10)
 * [talk: executable applied ct](topic/topic_talk.3A.20executable.20applied.20ct.html) (2 messages, latest: Nov 01 2021 at 10:15)
-* [NY Categories Seminar](topic/topic_NY.20Categories.20Seminar.html) (13 messages, latest: Oct 11 2021 at 02:41)
 * [CT2022 - cancelled?](topic/topic_CT2022.20-.20cancelled.3F.html) (5 messages, latest: Oct 07 2021 at 10:11)
 * [NWPT '21, Reykjavik](topic/topic_NWPT.20'21.2C.20Reykjavik.html) (1 message, latest: Oct 04 2021 at 18:23)
 * [ETAPS 2022 last call for papers](topic/topic_ETAPS.202022.20last.20call.20for.20papers.html) (1 message, latest: Oct 04 2021 at 17:45)
@@ -133,4 +133,4 @@ permalink: /stream/229141-general:-events/index.html
 * [April 1st: ACT@UCR](topic/topic_April.201st.3A.20ACT.40UCR.html) (3 messages, latest: Mar 26 2020 at 23:58)
 * [Google Sites problem](topic/topic_Google.20Sites.20problem.html) (4 messages, latest: Mar 25 2020 at 04:29)
 
-<hr><p>Last updated: Apr 27 2022 at 00:55 UTC</p>
+<hr><p>Last updated: Apr 28 2022 at 01:02 UTC</p>

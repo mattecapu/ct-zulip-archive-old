@@ -9,6 +9,7 @@ permalink: /stream/229136-theory:-category-theory/index.html
 
 ### Topics:
 
+* [discrete fibrations are left Beck-Chevalley](topic/topic_discrete.20fibrations.20are.20left.20Beck-Chevalley.html) (3 messages, latest: Apr 27 2022 at 16:17)
 * [plain monoidal categories hurt my head](topic/topic_plain.20monoidal.20categories.20hurt.20my.20head.html) (1 message, latest: Apr 23 2022 at 23:23)
 * [constants in empirical models](topic/topic_constants.20in.20empirical.20models.html) (2 messages, latest: Apr 23 2022 at 10:15)
 * [complementary subcategories](topic/topic_complementary.20subcategories.html) (4 messages, latest: Apr 23 2022 at 08:47)
@@ -274,4 +275,4 @@ permalink: /stream/229136-theory:-category-theory/index.html
 * [diagrams for application](topic/topic_diagrams.20for.20application.html) (13 messages, latest: Mar 24 2020 at 06:19)
 * [universal constructions](topic/topic_universal.20constructions.html) (8 messages, latest: Mar 23 2020 at 21:06)
 
-<hr><p>Last updated: Apr 27 2022 at 00:55 UTC</p>
+<hr><p>Last updated: Apr 28 2022 at 01:02 UTC</p>

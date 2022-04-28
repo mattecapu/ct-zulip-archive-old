@@ -10,11 +10,11 @@ permalink: /index.html
 
 * [learning: questions](stream/229199-learning:-questions/index.html) (663 topics)
 
-* [theory: category theory](stream/229136-theory:-category-theory/index.html) (264 topics)
+* [theory: category theory](stream/229136-theory:-category-theory/index.html) (265 topics)
 
 * [general](stream/229111-general/index.html) (222 topics)
 
-* [practice: applied ct](stream/229156-practice:-applied-ct/index.html) (129 topics)
+* [practice: applied ct](stream/229156-practice:-applied-ct/index.html) (130 topics)
 
 * [general: events](stream/229141-general:-events/index.html) (123 topics)
 
@@ -122,6 +122,8 @@ permalink: /index.html
 
 * [learning: id my structure](stream/311521-learning:-id-my-structure/index.html) (3 topics)
 
+* [practice: chemistry](stream/322714-practice:-chemistry/index.html) (3 topics)
+
 * [process-io](stream/267137-process-io/index.html) (3 topics)
 
 * [theory: analysis](stream/281848-theory:-analysis/index.html) (3 topics)
@@ -137,8 +139,6 @@ permalink: /index.html
 * [Topos Colloquium](stream/269484-Topos-Colloquium/index.html) (2 topics)
 
 * [languages: portugues](stream/303660-languages:-portugues/index.html) (2 topics)
-
-* [practice: chemistry](stream/322714-practice:-chemistry/index.html) (2 topics)
 
 * [practice: industry](stream/229370-practice:-industry/index.html) (2 topics)
 
@@ -156,4 +156,4 @@ permalink: /index.html
 
 * [theory: alternate presentations](stream/233122-theory:-alternate-presentations/index.html) (1 topic)
 
-<hr><p>Last updated: Apr 27 2022 at 00:55 UTC</p>
+<hr><p>Last updated: Apr 28 2022 at 01:02 UTC</p>
