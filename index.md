@@ -110,9 +110,9 @@ permalink: /index.html
 
 * [languages: Deutsch/German](stream/231144-languages:-Deutsch/German/index.html) (5 topics)
 
-* [languages: espanol/Spanish](stream/231120-languages:-espanol/Spanish/index.html) (4 topics)
+* [practice: chemistry](stream/322714-practice:-chemistry/index.html) (5 topics)
 
-* [practice: chemistry](stream/322714-practice:-chemistry/index.html) (4 topics)
+* [languages: espanol/Spanish](stream/231120-languages:-espanol/Spanish/index.html) (4 topics)
 
 * [practice: neuroscience](stream/233925-practice:-neuroscience/index.html) (4 topics)
 
@@ -152,10 +152,12 @@ permalink: /index.html
 
 * [general: job postings](stream/231377-general:-job-postings/index.html) (1 topic)
 
+* [general: welcome](stream/323257-general:-welcome/index.html) (1 topic)
+
 * [languages: latine/latin](stream/255711-languages:-latine/latin/index.html) (1 topic)
 
 * [pratice: dialectica computing](stream/322866-pratice:-dialectica-computing/index.html) (1 topic)
 
 * [theory: alternate presentations](stream/233122-theory:-alternate-presentations/index.html) (1 topic)
 
-<hr><p>Last updated: Apr 29 2022 at 00:46 UTC</p>
+<hr><p>Last updated: Apr 29 2022 at 07:24 UTC</p>
