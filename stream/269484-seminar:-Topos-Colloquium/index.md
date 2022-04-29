@@ -9,7 +9,8 @@ permalink: /stream/269484-seminar:-Topos-Colloquium/index.html
 
 ### Topics:
 
-* [Leo McElroy: Making Microworlds](topic/topic_Leo.20McElroy.3A.20Making.20Microworlds.html) (2 messages, latest: Apr 11 2022 at 14:05)
+* [Martín Escardó: "Compact totally separated types in \[...\]"](topic/topic_Mart.C3.ADn.20Escard.C3.B3.3A.20.22Compact.20totally.20separated.20types.20in.20.5B.2E.2E.2E.5D.22.html) (2 messages, latest: Apr 25 2022 at 13:48)
+* [Leo McElroy: Making Microworlds](topic/topic_Leo.20McElroy.3A.20Making.20Microworlds.html) (3 messages, latest: Apr 14 2022 at 17:01)
 * [Giuseppe Rosolini: "When an elementary quotient \[...\]"](topic/topic_Giuseppe.20Rosolini.3A.20.22When.20an.20elementary.20quotient.20.5B.2E.2E.2E.5D.22.html) (2 messages, latest: Apr 05 2022 at 02:18)
 * [Maaike Zwart: "Lessons from failing distributive laws"](topic/topic_Maaike.20Zwart.3A.20.22Lessons.20from.20failing.20distributive.20laws.22.html) (5 messages, latest: Mar 31 2022 at 16:04)
 * [Dominic Verity: Zen and the art of ∞-categories](topic/topic_Dominic.20Verity.3A.20Zen.20and.20the.20art.20of.20.E2.88.9E-categories.html) (3 messages, latest: Mar 24 2022 at 19:49)
@@ -62,4 +63,4 @@ permalink: /stream/269484-seminar:-Topos-Colloquium/index.html
 * [Richard Garner: "Comodels of an algebraic theory"](topic/topic_Richard.20Garner.3A.20.22Comodels.20of.20an.20algebraic.20theory.22.html) (27 messages, latest: Feb 11 2021 at 22:36)
 * [stream events](topic/topic_stream.20events.html) (2 messages, latest: Dec 26 2020 at 19:06)
 
-<hr><p>Last updated: Apr 12 2022 at 00:39 UTC</p>
+<hr><p>Last updated: Apr 29 2022 at 00:46 UTC</p>

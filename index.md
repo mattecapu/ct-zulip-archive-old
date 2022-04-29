@@ -8,15 +8,15 @@ permalink: /index.html
 
 ## Streams:
 
-* [learning: questions](stream/229199-learning:-questions/index.html) (661 topics)
+* [learning: questions](stream/229199-learning:-questions/index.html) (663 topics)
 
-* [theory: category theory](stream/229136-theory:-category-theory/index.html) (259 topics)
+* [theory: category theory](stream/229136-theory:-category-theory/index.html) (265 topics)
 
 * [general](stream/229111-general/index.html) (222 topics)
 
-* [practice: applied ct](stream/229156-practice:-applied-ct/index.html) (128 topics)
+* [practice: applied ct](stream/229156-practice:-applied-ct/index.html) (130 topics)
 
-* [general: events](stream/229141-general:-events/index.html) (120 topics)
+* [general: events](stream/229141-general:-events/index.html) (125 topics)
 
 * [theory: topos theory](stream/230087-theory:-topos-theory/index.html) (73 topics)
 
@@ -26,27 +26,27 @@ permalink: /index.html
 
 * [theory: algebraic topology & homological algebra](stream/241590-theory:-algebraic-topology-&-homological-algebra/index.html) (54 topics)
 
-* [seminar: Topos Colloquium](stream/269484-seminar:-Topos-Colloquium/index.html) (52 topics)
+* [seminar: Topos Colloquium](stream/269484-seminar:-Topos-Colloquium/index.html) (53 topics)
 
-* [general: mathematics](stream/266967-general:-mathematics/index.html) (49 topics)
+* [general: mathematics](stream/266967-general:-mathematics/index.html) (52 topics)
 
-* [practice: thermodynamics](stream/306433-practice:-thermodynamics/index.html) (49 topics)
+* [practice: thermodynamics](stream/306433-practice:-thermodynamics/index.html) (50 topics)
 
 * [theory: logic](stream/233104-theory:-logic/index.html) (46 topics)
 
-* [general: positions](stream/245502-general:-positions/index.html) (43 topics)
+* [general: positions](stream/245502-general:-positions/index.html) (44 topics)
+
+* [practice: our papers](stream/258900-practice:-our-papers/index.html) (43 topics)
+
+* [theory: type theory](stream/229952-theory:-type-theory/index.html) (43 topics)
 
 * [MIT Categories Seminar](stream/229457-MIT-Categories-Seminar/index.html) (41 topics)
 
 * [seminar: MIT Categories Seminar](stream/229457-seminar:-MIT-Categories-Seminar/index.html) (41 topics)
 
-* [practice: our papers](stream/258900-practice:-our-papers/index.html) (40 topics)
-
-* [theory: type theory](stream/229952-theory:-type-theory/index.html) (40 topics)
-
 * [Categorical Probability and Statistics 2020 workshop](stream/238032-Categorical-Probability-and-Statistics-2020-workshop/index.html) (34 topics)
 
-* [general: values](stream/241990-general:-values/index.html) (24 topics)
+* [general: values](stream/241990-general:-values/index.html) (25 topics)
 
 * [learning: recommendations](stream/232161-learning:-recommendations/index.html) (24 topics)
 
@@ -112,6 +112,8 @@ permalink: /index.html
 
 * [languages: espanol/Spanish](stream/231120-languages:-espanol/Spanish/index.html) (4 topics)
 
+* [practice: chemistry](stream/322714-practice:-chemistry/index.html) (4 topics)
+
 * [practice: neuroscience](stream/233925-practice:-neuroscience/index.html) (4 topics)
 
 * [practice: pedagogy](stream/295092-practice:-pedagogy/index.html) (4 topics)
@@ -130,11 +132,15 @@ permalink: /index.html
 
 * [theory: game semantics](stream/233273-theory:-game-semantics/index.html) (3 topics)
 
+* [AMS MRC on applied category theory](stream/322927-AMS-MRC-on-applied-category-theory/index.html) (2 topics)
+
 * [NYC Category Theory](stream/237238-NYC-Category-Theory/index.html) (2 topics)
 
 * [Topos Colloquium](stream/269484-Topos-Colloquium/index.html) (2 topics)
 
 * [languages: portugues](stream/303660-languages:-portugues/index.html) (2 topics)
+
+* [practice: Dialectica](stream/323208-practice:-Dialectica/index.html) (2 topics)
 
 * [practice: industry](stream/229370-practice:-industry/index.html) (2 topics)
 
@@ -148,6 +154,8 @@ permalink: /index.html
 
 * [languages: latine/latin](stream/255711-languages:-latine/latin/index.html) (1 topic)
 
+* [pratice: dialectica computing](stream/322866-pratice:-dialectica-computing/index.html) (1 topic)
+
 * [theory: alternate presentations](stream/233122-theory:-alternate-presentations/index.html) (1 topic)
 
-<hr><p>Last updated: Apr 12 2022 at 00:39 UTC</p>
+<hr><p>Last updated: Apr 29 2022 at 00:46 UTC</p>

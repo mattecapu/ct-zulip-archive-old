@@ -9,19 +9,25 @@ permalink: /stream/229141-general:-events/index.html
 
 ### Topics:
 
+* [CMU HoTT Seminar Online: Shulman](topic/topic_CMU.20HoTT.20Seminar.20Online.3A.20Shulman.html) (3 messages, latest: Apr 28 2022 at 22:07)
+* [HoTTEST Summer School July–August 2022](topic/topic_HoTTEST.20Summer.20School.20July.E2.80.93August.202022.html) (1 message, latest: Apr 28 2022 at 07:57)
+* [NY Categories Seminar](topic/topic_NY.20Categories.20Seminar.html) (14 messages, latest: Apr 27 2022 at 18:30)
+* [ItaCa Fest 2022](topic/topic_ItaCa.20Fest.202022.html) (5 messages, latest: Apr 26 2022 at 09:02)
+* [Categorical Semantics of Entropy](topic/topic_Categorical.20Semantics.20of.20Entropy.html) (3 messages, latest: Apr 19 2022 at 19:35)
+* [ICRA 2022 Workshop on Compositional Robotics](topic/topic_ICRA.202022.20Workshop.20on.20Compositional.20Robotics.html) (5 messages, latest: Apr 19 2022 at 15:54)
+* [Intercats](topic/topic_Intercats.html) (31 messages, latest: Apr 19 2022 at 14:45)
+* [QPL 2022](topic/topic_QPL.202022.html) (1 message, latest: Apr 18 2022 at 10:25)
+* [MGS 2022](topic/topic_MGS.202022.html) (2 messages, latest: Apr 15 2022 at 22:25)
 * [School on Univalent Mathematics: Application deadline 15 Apr](topic/topic_School.20on.20Univalent.20Mathematics.3A.20Application.20deadline.2015.20Apr.html) (1 message, latest: Apr 10 2022 at 07:25)
-* [Intercats](topic/topic_Intercats.html) (27 messages, latest: Apr 05 2022 at 14:09)
 * [Structure meets Power Workshop, CFP](topic/topic_Structure.20meets.20Power.20Workshop.2C.20CFP.html) (1 message, latest: Mar 28 2022 at 11:20)
 * [BCQT2022](topic/topic_BCQT2022.html) (1 message, latest: Mar 21 2022 at 14:48)
 * [AMS school on applied category theory](topic/topic_AMS.20school.20on.20applied.20category.20theory.html) (61 messages, latest: Mar 20 2022 at 16:33)
 * [Workshop on Polynomial Functors 2022](topic/topic_Workshop.20on.20Polynomial.20Functors.202022.html) (13 messages, latest: Mar 18 2022 at 14:40)
 * [ACT 2022: First Call For Papers](topic/topic_ACT.202022.3A.20First.20Call.20For.20Papers.html) (2 messages, latest: Feb 25 2022 at 10:33)
-* [MGS 2022](topic/topic_MGS.202022.html) (1 message, latest: Feb 22 2022 at 09:23)
 * [Mathematics of Collective Intelligence](topic/topic_Mathematics.20of.20Collective.20Intelligence.html) (6 messages, latest: Feb 15 2022 at 22:27)
 * [Adjoint School 2022](topic/topic_Adjoint.20School.202022.html) (41 messages, latest: Feb 13 2022 at 16:43)
 * [9th Indian School on Logic and its Applications (Part -I)](topic/topic_9th.20Indian.20School.20on.20Logic.20and.20its.20Applications.20(Part.20-I).html) (1 message, latest: Feb 12 2022 at 07:41)
 * [Autonomy Talks - Jules Hedges](topic/topic_Autonomy.20Talks.20-.20Jules.20Hedges.html) (6 messages, latest: Feb 09 2022 at 10:15)
-* [ICRA 2022 Workshop on Compositional Robotics](topic/topic_ICRA.202022.20Workshop.20on.20Compositional.20Robotics.html) (4 messages, latest: Jan 21 2022 at 16:20)
 * [Calcutta Logic Circle 21st Annual Meet](topic/topic_Calcutta.20Logic.20Circle.2021st.20Annual.20Meet.html) (2 messages, latest: Jan 13 2022 at 07:53)
 * [CMCS 2022 - Call for papers](topic/topic_CMCS.202022.20-.20Call.20for.20papers.html) (1 message, latest: Jan 05 2022 at 16:04)
 * [Lafforgue on Grothendieck on "scientism"](topic/topic_Lafforgue.20on.20Grothendieck.20on.20.22scientism.22.html) (4 messages, latest: Dec 19 2021 at 04:25)
@@ -33,7 +39,6 @@ permalink: /stream/229141-general:-events/index.html
 * [Open House on Category Theory 2021](topic/topic_Open.20House.20on.20Category.20Theory.202021.html) (3 messages, latest: Nov 02 2021 at 01:53)
 * [talk: Relative topos theory via stacks](topic/topic_talk.3A.20Relative.20topos.20theory.20via.20stacks.html) (1 message, latest: Nov 01 2021 at 20:10)
 * [talk: executable applied ct](topic/topic_talk.3A.20executable.20applied.20ct.html) (2 messages, latest: Nov 01 2021 at 10:15)
-* [NY Categories Seminar](topic/topic_NY.20Categories.20Seminar.html) (13 messages, latest: Oct 11 2021 at 02:41)
 * [CT2022 - cancelled?](topic/topic_CT2022.20-.20cancelled.3F.html) (5 messages, latest: Oct 07 2021 at 10:11)
 * [NWPT '21, Reykjavik](topic/topic_NWPT.20'21.2C.20Reykjavik.html) (1 message, latest: Oct 04 2021 at 18:23)
 * [ETAPS 2022 last call for papers](topic/topic_ETAPS.202022.20last.20call.20for.20papers.html) (1 message, latest: Oct 04 2021 at 17:45)
@@ -130,4 +135,4 @@ permalink: /stream/229141-general:-events/index.html
 * [April 1st: ACT@UCR](topic/topic_April.201st.3A.20ACT.40UCR.html) (3 messages, latest: Mar 26 2020 at 23:58)
 * [Google Sites problem](topic/topic_Google.20Sites.20problem.html) (4 messages, latest: Mar 25 2020 at 04:29)
 
-<hr><p>Last updated: Apr 12 2022 at 00:39 UTC</p>
+<hr><p>Last updated: Apr 29 2022 at 00:46 UTC</p>

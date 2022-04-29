@@ -9,6 +9,9 @@ permalink: /stream/229156-practice:-applied-ct/index.html
 
 ### Topics:
 
+* [process categories](topic/topic_process.20categories.html) (46 messages, latest: Apr 28 2022 at 18:18)
+* [constants in empirical models](topic/topic_constants.20in.20empirical.20models.html) (3 messages, latest: Apr 26 2022 at 08:41)
+* [web cats](topic/topic_web.20cats.html) (336 messages, latest: Apr 20 2022 at 11:55)
 * [functors in Haskell](topic/topic_functors.20in.20Haskell.html) (3 messages, latest: Feb 14 2022 at 06:57)
 * [ACT as a field](topic/topic_ACT.20as.20a.20field.html) (279 messages, latest: Jan 30 2022 at 10:27)
 * [spans and images](topic/topic_spans.20and.20images.html) (125 messages, latest: Jan 28 2022 at 16:55)
@@ -20,7 +23,6 @@ permalink: /stream/229156-practice:-applied-ct/index.html
 * [chemical recipes as functors](topic/topic_chemical.20recipes.20as.20functors.html) (121 messages, latest: Nov 11 2021 at 23:30)
 * [Piecewise-linear subspaces diagrammatically?](topic/topic_Piecewise-linear.20subspaces.20diagrammatically.3F.html) (196 messages, latest: Nov 10 2021 at 23:02)
 * [security + ct](topic/topic_security.20.2B.20ct.html) (66 messages, latest: Nov 05 2021 at 21:09)
-* [web cats](topic/topic_web.20cats.html) (334 messages, latest: Nov 04 2021 at 18:30)
 * [Control theory](topic/topic_Control.20theory.html) (6 messages, latest: Oct 23 2021 at 23:58)
 * [Haskell libraries for machine learning](topic/topic_Haskell.20libraries.20for.20machine.20learning.html) (1 message, latest: Oct 15 2021 at 09:56)
 * [searching for potential research paths](topic/topic_searching.20for.20potential.20research.20paths.html) (3 messages, latest: Oct 13 2021 at 10:34)
@@ -138,4 +140,4 @@ permalink: /stream/229156-practice:-applied-ct/index.html
 * [AACT2020](topic/topic_AACT2020.html) (1 message, latest: Mar 24 2020 at 00:56)
 * [welcome](topic/topic_welcome.html) (15 messages, latest: Mar 24 2020 at 00:03)
 
-<hr><p>Last updated: Apr 12 2022 at 00:39 UTC</p>
+<hr><p>Last updated: Apr 29 2022 at 00:46 UTC</p>

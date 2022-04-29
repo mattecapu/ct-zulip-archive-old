@@ -1,0 +1,362 @@
+[
+    {
+        "content": "<p>I need a notion of operad algebra where the collection of things corresponding to a type in the operad is in fact a category. Equivalently, instead of a lax symmetric monoidal functor from a symmetric monoidal category to <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"sans-serif\">S</mi><mi mathvariant=\"sans-serif\">e</mi><mi mathvariant=\"sans-serif\">t</mi></mrow><annotation encoding=\"application/x-tex\">\\mathsf{Set}</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6944em;\"></span><span class=\"mord\"><span class=\"mord mathsf\">Set</span></span></span></span></span>, I want a lax symmetric monoidal functor to <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"sans-serif\">C</mi><mi mathvariant=\"sans-serif\">a</mi><mi mathvariant=\"sans-serif\">t</mi></mrow><annotation encoding=\"application/x-tex\">\\mathsf{Cat}</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6944em;\"></span><span class=\"mord\"><span class=\"mord mathsf\">Cat</span></span></span></span></span>. I guess you might call this a \"categorification\" of operad-algebras. Does anyone have a good reference for this? The theory is pretty obvious, so I can just derive it myself, but I should cite somebody who invented it before.</p>",
+        "id": 279749065,
+        "sender_full_name": "Owen Lynch",
+        "timestamp": 1650580799
+    },
+    {
+        "content": "<p>Are you going to use a symmetric lax monoidal functor to the mere <em>category</em> <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"sans-serif\">C</mi><mi mathvariant=\"sans-serif\">a</mi><mi mathvariant=\"sans-serif\">t</mi></mrow><annotation encoding=\"application/x-tex\">\\mathsf{Cat}</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6944em;\"></span><span class=\"mord\"><span class=\"mord mathsf\">Cat</span></span></span></span></span>, or are you going to take advantage of the fact that <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"sans-serif\">C</mi><mi mathvariant=\"sans-serif\">a</mi><mi mathvariant=\"sans-serif\">t</mi></mrow><annotation encoding=\"application/x-tex\">\\mathsf{Cat}</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6944em;\"></span><span class=\"mord\"><span class=\"mord mathsf\">Cat</span></span></span></span></span> is a 2-category to consider a symmetric lax monoidal <em>pseudofunctor</em> to <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"sans-serif\">C</mi><mi mathvariant=\"sans-serif\">a</mi><mi mathvariant=\"sans-serif\">t</mi></mrow><annotation encoding=\"application/x-tex\">\\mathsf{Cat}</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6944em;\"></span><span class=\"mord\"><span class=\"mord mathsf\">Cat</span></span></span></span></span>?</p>",
+        "id": 279756779,
+        "sender_full_name": "John Baez",
+        "timestamp": 1650586544
+    },
+    {
+        "content": "<p>In simpler terms: are you planning to \"weaken\" the concept of operad algebra, making some laws hold only up to isomorphism?</p>",
+        "id": 279756868,
+        "sender_full_name": "John Baez",
+        "timestamp": 1650586586
+    },
+    {
+        "content": "<p>Yes</p>",
+        "id": 279756890,
+        "sender_full_name": "Owen Lynch",
+        "timestamp": 1650586620
+    },
+    {
+        "content": "<p>Because the laxator is not strict</p>",
+        "id": 279756909,
+        "sender_full_name": "Owen Lynch",
+        "timestamp": 1650586641
+    },
+    {
+        "content": "<p>Not strict in what sense?</p>",
+        "id": 279756920,
+        "sender_full_name": "John Baez",
+        "timestamp": 1650586660
+    },
+    {
+        "content": "<p>I.e., the laxator takes manifolds <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>M</mi></mrow><annotation encoding=\"application/x-tex\">M</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.10903em;\">M</span></span></span></span> and <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>N</mi></mrow><annotation encoding=\"application/x-tex\">N</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.10903em;\">N</span></span></span></span> and produces their product <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>M</mi><mo>×</mo><mi>N</mi></mrow><annotation encoding=\"application/x-tex\">M \\times N</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.7667em;vertical-align:-0.0833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.10903em;\">M</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span><span class=\"mbin\">×</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.10903em;\">N</span></span></span></span></p>",
+        "id": 279756928,
+        "sender_full_name": "Owen Lynch",
+        "timestamp": 1650586674
+    },
+    {
+        "content": "<p>So the laxator is only associative up to isomorphism</p>",
+        "id": 279756969,
+        "sender_full_name": "Owen Lynch",
+        "timestamp": 1650586684
+    },
+    {
+        "content": "<p>Okay...</p>",
+        "id": 279756991,
+        "sender_full_name": "John Baez",
+        "timestamp": 1650586695
+    },
+    {
+        "content": "<p>Too bad.  If you weren't weakening, you could use the well-known existing concept of \"algebra of an operad in an arbitrary symmetric monoidal category\", taking that category to be <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"sans-serif\">C</mi><mi mathvariant=\"sans-serif\">a</mi><mi mathvariant=\"sans-serif\">t</mi></mrow><annotation encoding=\"application/x-tex\">\\mathsf{Cat}</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6944em;\"></span><span class=\"mord\"><span class=\"mord mathsf\">Cat</span></span></span></span></span>.</p>",
+        "id": 279756999,
+        "sender_full_name": "John Baez",
+        "timestamp": 1650586704
+    },
+    {
+        "content": "<p>I'm a bit confused - there's a lot of room for level slips here - but anyway: you may be able to weasel out of these issues by judicious application of Mac Lane's strictification theorem.</p>",
+        "id": 279757066,
+        "sender_full_name": "John Baez",
+        "timestamp": 1650586788
+    },
+    {
+        "content": "<p>Uh oh.</p>",
+        "id": 279757113,
+        "sender_full_name": "Owen Lynch",
+        "timestamp": 1650586807
+    },
+    {
+        "content": "<p>That sounds slightly evil</p>",
+        "id": 279757116,
+        "sender_full_name": "Owen Lynch",
+        "timestamp": 1650586814
+    },
+    {
+        "content": "<p>As Google's new motto says, \"Sometimes it pays to be evil\".</p>",
+        "id": 279757145,
+        "sender_full_name": "John Baez",
+        "timestamp": 1650586833
+    },
+    {
+        "content": "<p>Hahaha</p>",
+        "id": 279757148,
+        "sender_full_name": "Owen Lynch",
+        "timestamp": 1650586840
+    },
+    {
+        "content": "<p>There <em>is</em> work on \"weak\" algebras of operads, but when I last checked it was very thin on the ground, and I have a hunch this is a case where a bit of judicious strictification would save you tons of trouble.</p>",
+        "id": 279757175,
+        "sender_full_name": "John Baez",
+        "timestamp": 1650586880
+    },
+    {
+        "content": "<p>I'll look into it</p>",
+        "id": 279757252,
+        "sender_full_name": "Owen Lynch",
+        "timestamp": 1650586941
+    },
+    {
+        "content": "<p>The thing is, strictifying the cartesian product of manifolds seems very dodgy</p>",
+        "id": 279757311,
+        "sender_full_name": "Owen Lynch",
+        "timestamp": 1650587018
+    },
+    {
+        "content": "<p>There's an old n-Cafe post where I ask about \"weak algebras\" of operads, or maybe \"weak operads\".... it's been so long I barely remember.  But Julie Bergner and others wrote about \"homotopy algebras\" of Lawvere theories, which are similar but even weaker.</p>",
+        "id": 279757582,
+        "sender_full_name": "John Baez",
+        "timestamp": 1650587196
+    },
+    {
+        "content": "<p>Here's a reference to that sort of thing: <a href=\"https://ncatlab.org/nlab/show/homotopy%20T-algebra\">[[homotopy T-algebra]]</a>.</p>",
+        "id": 279757660,
+        "sender_full_name": "John Baez",
+        "timestamp": 1650587281
+    },
+    {
+        "content": "<p>The main punchline is that such algebras can always be strictified, so that all the laws hold on the nose.</p>",
+        "id": 279757710,
+        "sender_full_name": "John Baez",
+        "timestamp": 1650587307
+    },
+    {
+        "content": "<p>An operad can be seen as a special sort of multisorted Lawvere theory, so those results do apply here... though there may be some finagling required to get them to apply to algebras in Cat rather than algebras in the category of simplicial sets.</p>",
+        "id": 279757778,
+        "sender_full_name": "John Baez",
+        "timestamp": 1650587384
+    },
+    {
+        "content": "<p>(Categories can be seen as specially nice simplicial sets.)</p>",
+        "id": 279757793,
+        "sender_full_name": "John Baez",
+        "timestamp": 1650587401
+    },
+    {
+        "content": "<p>So you see, working with \"weak\" things tends to push you into learning some homotopy theory.</p>",
+        "id": 279757845,
+        "sender_full_name": "John Baez",
+        "timestamp": 1650587418
+    },
+    {
+        "content": "<p>I feel like homotopy theorists are to category theorists as category theorist are to regular mathematicians: waiting in the wings ready to swoop down and say \"HA! I told you so! You DID need me!\"</p>",
+        "id": 279758024,
+        "sender_full_name": "Owen Lynch",
+        "timestamp": 1650587545
+    },
+    {
+        "content": "<p>Oh, very much so.  And there are a bunch of them reading this thread, like vultures sitting in the tree-tops looking down at us.</p>",
+        "id": 279758078,
+        "sender_full_name": "John Baez",
+        "timestamp": 1650587592
+    },
+    {
+        "content": "<p>In this case, however, I think I'm going to be stubborn and just plow ahead with what I know the definition must be, and then look back and see if it matches up with other stuff, now that I've ticked the box of \"see if there's something obvious I'm missing.\"</p>",
+        "id": 279758147,
+        "sender_full_name": "Owen Lynch",
+        "timestamp": 1650587650
+    },
+    {
+        "content": "<p>Because there's a reason we use regular monoidal categories and not only strict monoidal categories, and so I think that having these weaker operad algebras is very similar in my mind.</p>",
+        "id": 279758207,
+        "sender_full_name": "Owen Lynch",
+        "timestamp": 1650587722
+    },
+    {
+        "content": "<p>I.e., associativity of products forces you to consider weakness, but only up to the pentagon identity.</p>",
+        "id": 279758228,
+        "sender_full_name": "Owen Lynch",
+        "timestamp": 1650587761
+    },
+    {
+        "content": "<p>Btw, what are you hoping to use these for?   You're writing a thesis on physics... I hope you don't get sucked too deep into higher-categorical issues.</p>",
+        "id": 279758281,
+        "sender_full_name": "John Baez",
+        "timestamp": 1650587784
+    },
+    {
+        "content": "<p>It's very simple.</p>",
+        "id": 279758286,
+        "sender_full_name": "Owen Lynch",
+        "timestamp": 1650587794
+    },
+    {
+        "content": "<p>I want to compose port-Hamiltonian systems with an operad</p>",
+        "id": 279758312,
+        "sender_full_name": "Owen Lynch",
+        "timestamp": 1650587812
+    },
+    {
+        "content": "<p>It's the operad that comes out of the symmetric monoidal category of dirac relations</p>",
+        "id": 279758325,
+        "sender_full_name": "Owen Lynch",
+        "timestamp": 1650587828
+    },
+    {
+        "content": "<p>The set of port-Hamiltonian systems on an interface has a natural category structure</p>",
+        "id": 279758337,
+        "sender_full_name": "Owen Lynch",
+        "timestamp": 1650587849
+    },
+    {
+        "content": "<p>And composition is cartesian product + some other stuff</p>",
+        "id": 279758349,
+        "sender_full_name": "Owen Lynch",
+        "timestamp": 1650587870
+    },
+    {
+        "content": "<p>So I need a slightly weaker form of operad algebra in order to model this</p>",
+        "id": 279758398,
+        "sender_full_name": "Owen Lynch",
+        "timestamp": 1650587900
+    },
+    {
+        "content": "<p>But just slightly weaker!</p>",
+        "id": 279758402,
+        "sender_full_name": "Owen Lynch",
+        "timestamp": 1650587905
+    },
+    {
+        "content": "<p>Everything is pretty well-behaved</p>",
+        "id": 279758409,
+        "sender_full_name": "Owen Lynch",
+        "timestamp": 1650587916
+    },
+    {
+        "content": "<p>Anyways, I have to go now so I can't discuss this more now, but I will respond to anything you post later</p>",
+        "id": 279758486,
+        "sender_full_name": "Owen Lynch",
+        "timestamp": 1650587988
+    },
+    {
+        "content": "<p>Okay.   For anyone else reading this, I should add that the only reason I'd like to avoid \"weak operads\" is that your thesis is due this June!   So there's not really a lot of time to write it.</p>",
+        "id": 279758492,
+        "sender_full_name": "John Baez",
+        "timestamp": 1650587993
+    },
+    {
+        "content": "<p>Ciao.</p>",
+        "id": 279758540,
+        "sender_full_name": "John Baez",
+        "timestamp": 1650588006
+    },
+    {
+        "content": "<p>So the good news is that the functor to <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"sans-serif\">C</mi><mi mathvariant=\"sans-serif\">a</mi><mi mathvariant=\"sans-serif\">t</mi></mrow><annotation encoding=\"application/x-tex\">\\mathsf{Cat}</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6944em;\"></span><span class=\"mord\"><span class=\"mord mathsf\">Cat</span></span></span></span></span> is a strict functor</p>",
+        "id": 279772550,
+        "sender_full_name": "Owen Lynch",
+        "timestamp": 1650596894
+    },
+    {
+        "content": "<p>It's just the identities for the laxator that only hold up to natural isomorphism</p>",
+        "id": 279772563,
+        "sender_full_name": "Owen Lynch",
+        "timestamp": 1650596913
+    },
+    {
+        "content": "<p>I.e., these diagrams:<br>\n<a href=\"/user_uploads/21317/WFDLF0q761Tvfl6zKNZNHS26/image.png\">image.png</a></p>\n<div class=\"message_inline_image\"><a href=\"/user_uploads/21317/WFDLF0q761Tvfl6zKNZNHS26/image.png\" title=\"image.png\"><img src=\"/user_uploads/21317/WFDLF0q761Tvfl6zKNZNHS26/image.png\"></a></div>",
+        "id": 279772605,
+        "sender_full_name": "Owen Lynch",
+        "timestamp": 1650596949
+    },
+    {
+        "content": "<p>So it's just a <em>tiny</em> bit weaker than a typical operad algebra</p>",
+        "id": 279772614,
+        "sender_full_name": "Owen Lynch",
+        "timestamp": 1650596960
+    },
+    {
+        "content": "<p>So all I need to do is to come up with some higher identity analogous to pentagon and triangle identities that will hold in this case</p>",
+        "id": 279772755,
+        "sender_full_name": "Owen Lynch",
+        "timestamp": 1650597089
+    },
+    {
+        "content": "<p>Oh boy</p>",
+        "id": 279772902,
+        "sender_full_name": "Owen Lynch",
+        "timestamp": 1650597222
+    },
+    {
+        "content": "<p>That is not so simple</p>",
+        "id": 279772908,
+        "sender_full_name": "Owen Lynch",
+        "timestamp": 1650597227
+    },
+    {
+        "content": "<p>Well, I don't actually need higher coherence for anything (I don't think), because I don't really have any theorems that I'm looking to prove</p>",
+        "id": 279772970,
+        "sender_full_name": "Owen Lynch",
+        "timestamp": 1650597283
+    },
+    {
+        "content": "<p>So, worst comes to worst, I have a definition that works but is perhaps not as complete as I would like</p>",
+        "id": 279772979,
+        "sender_full_name": "Owen Lynch",
+        "timestamp": 1650597302
+    },
+    {
+        "content": "<p>But let me think if I can get something analogous to the pentagon/triangle identities</p>",
+        "id": 279773008,
+        "sender_full_name": "Owen Lynch",
+        "timestamp": 1650597326
+    },
+    {
+        "content": "<p>Also, wait, I know exactly what the condition is</p>",
+        "id": 279773142,
+        "sender_full_name": "Owen Lynch",
+        "timestamp": 1650597481
+    },
+    {
+        "content": "<p>The condition is that for any <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi>X</mi><mn>1</mn></msub><mo separator=\"true\">,</mo><mo>…</mo><mo separator=\"true\">,</mo><msub><mi>X</mi><mi>n</mi></msub></mrow><annotation encoding=\"application/x-tex\">X_1,\\ldots,X_n</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8778em;vertical-align:-0.1944em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.07847em;\">X</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.3011em;\"><span style=\"top:-2.55em;margin-left:-0.0785em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">1</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"minner\">…</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.07847em;\">X</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.1514em;\"><span style=\"top:-2.55em;margin-left:-0.0785em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathnormal mtight\">n</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span></span></span></span>, the subcategory of the functor category <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>F</mi><mo stretchy=\"false\">(</mo><msub><mi>X</mi><mn>1</mn></msub><mo stretchy=\"false\">)</mo><mo>⊗</mo><mo>⋯</mo><mo>⊗</mo><mi>F</mi><mo stretchy=\"false\">(</mo><msub><mi>X</mi><mi>n</mi></msub><mo stretchy=\"false\">)</mo><mo>→</mo><mi>F</mi><mo stretchy=\"false\">(</mo><msub><mi>X</mi><mn>1</mn></msub><mo>⊗</mo><mo>⋯</mo><mo>⊗</mo><msub><mi>X</mi><mi>n</mi></msub><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">F(X_1) \\otimes \\cdots \\otimes F(X_n) \\to F(X_1 \\otimes \\cdots \\otimes X_n)</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.13889em;\">F</span><span class=\"mopen\">(</span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.07847em;\">X</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.3011em;\"><span style=\"top:-2.55em;margin-left:-0.0785em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">1</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span><span class=\"mclose\">)</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span><span class=\"mbin\">⊗</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6667em;vertical-align:-0.0833em;\"></span><span class=\"minner\">⋯</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span><span class=\"mbin\">⊗</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.13889em;\">F</span><span class=\"mopen\">(</span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.07847em;\">X</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.1514em;\"><span style=\"top:-2.55em;margin-left:-0.0785em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathnormal mtight\">n</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span><span class=\"mclose\">)</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">→</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.13889em;\">F</span><span class=\"mopen\">(</span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.07847em;\">X</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.3011em;\"><span style=\"top:-2.55em;margin-left:-0.0785em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">1</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span><span class=\"mbin\">⊗</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6667em;vertical-align:-0.0833em;\"></span><span class=\"minner\">⋯</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span><span class=\"mbin\">⊗</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.07847em;\">X</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.1514em;\"><span style=\"top:-2.55em;margin-left:-0.0785em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathnormal mtight\">n</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span><span class=\"mclose\">)</span></span></span></span> (with arbitrary chosen parenthesizations) that is generated by all functors composed of the laxator and the associator, and all natural isomorphisms generated by the natural isomorphisms making the above squares commute, is contractible</p>",
+        "id": 279773327,
+        "sender_full_name": "Owen Lynch",
+        "timestamp": 1650597623
+    },
+    {
+        "content": "<p>This is basically saying \"we don't know what the coherence laws are, but just find some that are sufficient to prove this coherence theorem\"</p>",
+        "id": 279773438,
+        "sender_full_name": "Owen Lynch",
+        "timestamp": 1650597733
+    },
+    {
+        "content": "<p>In a standard operad algebra, we would have that however you make the morphism <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>F</mi><mo stretchy=\"false\">(</mo><msub><mi>X</mi><mn>1</mn></msub><mo stretchy=\"false\">)</mo><mo>⊗</mo><mo>⋯</mo><mo>⊗</mo><mi>F</mi><mo stretchy=\"false\">(</mo><msub><mi>X</mi><mi>n</mi></msub><mo stretchy=\"false\">)</mo><mo>→</mo><mi>F</mi><mo stretchy=\"false\">(</mo><msub><mi>X</mi><mn>1</mn></msub><mo>⊗</mo><mo>⋯</mo><mo>⊗</mo><msub><mi>X</mi><mi>n</mi></msub><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">F(X_1) \\otimes \\cdots \\otimes F(X_n) \\to F(X_1 \\otimes \\cdots \\otimes X_n)</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.13889em;\">F</span><span class=\"mopen\">(</span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.07847em;\">X</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.3011em;\"><span style=\"top:-2.55em;margin-left:-0.0785em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">1</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span><span class=\"mclose\">)</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span><span class=\"mbin\">⊗</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6667em;vertical-align:-0.0833em;\"></span><span class=\"minner\">⋯</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span><span class=\"mbin\">⊗</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.13889em;\">F</span><span class=\"mopen\">(</span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.07847em;\">X</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.1514em;\"><span style=\"top:-2.55em;margin-left:-0.0785em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathnormal mtight\">n</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span><span class=\"mclose\">)</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">→</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.13889em;\">F</span><span class=\"mopen\">(</span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.07847em;\">X</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.3011em;\"><span style=\"top:-2.55em;margin-left:-0.0785em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">1</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span><span class=\"mbin\">⊗</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6667em;vertical-align:-0.0833em;\"></span><span class=\"minner\">⋯</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span><span class=\"mbin\">⊗</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.07847em;\">X</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.1514em;\"><span style=\"top:-2.55em;margin-left:-0.0785em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathnormal mtight\">n</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span><span class=\"mclose\">)</span></span></span></span>, you get the same morphism. The natural generalization is that there is a canonical isomorphism between any two ways of making that morphism.</p>",
+        "id": 279773524,
+        "sender_full_name": "Owen Lynch",
+        "timestamp": 1650597834
+    },
+    {
+        "content": "<p>I could either prove this by finding some sufficient condition that just involved <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi>X</mi><mn>1</mn></msub><mo separator=\"true\">,</mo><msub><mi>X</mi><mn>2</mn></msub><mo separator=\"true\">,</mo><msub><mi>X</mi><mn>3</mn></msub><mo separator=\"true\">,</mo><msub><mi>X</mi><mn>4</mn></msub></mrow><annotation encoding=\"application/x-tex\">X_1,X_2,X_3,X_4</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8778em;vertical-align:-0.1944em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.07847em;\">X</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.3011em;\"><span style=\"top:-2.55em;margin-left:-0.0785em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">1</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.07847em;\">X</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.3011em;\"><span style=\"top:-2.55em;margin-left:-0.0785em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">2</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.07847em;\">X</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.3011em;\"><span style=\"top:-2.55em;margin-left:-0.0785em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">3</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.07847em;\">X</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.3011em;\"><span style=\"top:-2.55em;margin-left:-0.0785em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">4</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span></span></span></span>, or I could try and prove this directly.</p>",
+        "id": 279773663,
+        "sender_full_name": "Owen Lynch",
+        "timestamp": 1650597958
+    },
+    {
+        "content": "<p>So, I guess if we take this to the operad level, we are saying that a \"weak\" operad algebra assigns a category <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>F</mi><mo stretchy=\"false\">(</mo><mi>X</mi><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">F(X)</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.13889em;\">F</span><span class=\"mopen\">(</span><span class=\"mord mathnormal\" style=\"margin-right:0.07847em;\">X</span><span class=\"mclose\">)</span></span></span></span> to each type <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>X</mi></mrow><annotation encoding=\"application/x-tex\">X</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.07847em;\">X</span></span></span></span>, and a contractible subcategory of the functor category <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mrow><mi mathvariant=\"normal\">H</mi><mi mathvariant=\"normal\">o</mi><mi mathvariant=\"normal\">m</mi></mrow><mrow><mi mathvariant=\"sans-serif\">C</mi><mi mathvariant=\"sans-serif\">a</mi><mi mathvariant=\"sans-serif\">t</mi></mrow></msub><mo stretchy=\"false\">(</mo><mi>F</mi><mo stretchy=\"false\">(</mo><msub><mi>X</mi><mn>1</mn></msub><mo stretchy=\"false\">)</mo><mo>×</mo><mo>⋯</mo><mo>×</mo><mi>F</mi><mo stretchy=\"false\">(</mo><msub><mi>X</mi><mi>n</mi></msub><mo stretchy=\"false\">)</mo><mo separator=\"true\">,</mo><mi>F</mi><mo stretchy=\"false\">(</mo><mi>Y</mi><mo stretchy=\"false\">)</mo><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">\\mathrm{Hom}_{\\mathsf{Cat}}(F(X_1) \\times \\cdots \\times F(X_n),F(Y))</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord\"><span class=\"mord\"><span class=\"mord mathrm\">Hom</span></span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.3361em;\"><span style=\"top:-2.55em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\"><span class=\"mord mathsf mtight\">Cat</span></span></span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span><span class=\"mopen\">(</span><span class=\"mord mathnormal\" style=\"margin-right:0.13889em;\">F</span><span class=\"mopen\">(</span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.07847em;\">X</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.3011em;\"><span style=\"top:-2.55em;margin-left:-0.0785em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">1</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span><span class=\"mclose\">)</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span><span class=\"mbin\">×</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6667em;vertical-align:-0.0833em;\"></span><span class=\"minner\">⋯</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span><span class=\"mbin\">×</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.13889em;\">F</span><span class=\"mopen\">(</span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.07847em;\">X</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.1514em;\"><span style=\"top:-2.55em;margin-left:-0.0785em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathnormal mtight\">n</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span><span class=\"mclose\">)</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.13889em;\">F</span><span class=\"mopen\">(</span><span class=\"mord mathnormal\" style=\"margin-right:0.22222em;\">Y</span><span class=\"mclose\">))</span></span></span></span> to every operation <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>f</mi></mrow><annotation encoding=\"application/x-tex\">f</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8889em;vertical-align:-0.1944em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.10764em;\">f</span></span></span></span>.</p>",
+        "id": 279773872,
+        "sender_full_name": "Owen Lynch",
+        "timestamp": 1650598165
+    },
+    {
+        "content": "<p>You may be right <span class=\"user-mention\" data-user-id=\"275920\">@John Baez</span> that to actually write out everything for this may be a task beyond me in the time I have. But it is at least completely clear what this <em>should</em> be.</p>",
+        "id": 279774120,
+        "sender_full_name": "Owen Lynch",
+        "timestamp": 1650598414
+    },
+    {
+        "content": "<p>What I'm going to do for now is state the coherence principle for the \"weak laxator\", and then return to this later if I have time.</p>",
+        "id": 279774263,
+        "sender_full_name": "Owen Lynch",
+        "timestamp": 1650598525
+    },
+    {
+        "content": "<p>And I really would be surprised if nobody has looked at this before...</p>",
+        "id": 279774397,
+        "sender_full_name": "Owen Lynch",
+        "timestamp": 1650598660
+    }
+]

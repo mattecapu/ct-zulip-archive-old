@@ -442,5 +442,173 @@
         "id": 273109437,
         "sender_full_name": "Benjamin Merlin Bumpus",
         "timestamp": 1645718748
+    },
+    {
+        "content": "<p>I'm trying to formulate networks of resistors using the algebraic path problem methodology, and I'm having a bit of trouble.  More specifically, I'm having trouble ruling out (non-physical) loop currents.</p>\n<p>We start with a quantale on <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"double-struck\">R</mi></mrow><annotation encoding=\"application/x-tex\">\\R</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6889em;\"></span><span class=\"mord mathbb\">R</span></span></span></span> describing composition or resistors, with serial composition <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi>R</mi><mn>1</mn></msub><mo>⋅</mo><msub><mi>R</mi><mn>2</mn></msub><mo>=</mo><msub><mi>R</mi><mn>1</mn></msub><mo>+</mo><msub><mi>R</mi><mn>2</mn></msub></mrow><annotation encoding=\"application/x-tex\">R_1\\cdot R_2=R_1 +R_2</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8333em;vertical-align:-0.15em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.00773em;\">R</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.3011em;\"><span style=\"top:-2.55em;margin-left:-0.0077em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">1</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span><span class=\"mbin\">⋅</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.8333em;vertical-align:-0.15em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.00773em;\">R</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.3011em;\"><span style=\"top:-2.55em;margin-left:-0.0077em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">2</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.8333em;vertical-align:-0.15em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.00773em;\">R</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.3011em;\"><span style=\"top:-2.55em;margin-left:-0.0077em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">1</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span><span class=\"mbin\">+</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.8333em;vertical-align:-0.15em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.00773em;\">R</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.3011em;\"><span style=\"top:-2.55em;margin-left:-0.0077em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">2</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span></span></span></span> and parallel composition (join) <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi>R</mi><mn>1</mn></msub><mo>∨</mo><msub><mi>R</mi><mn>2</mn></msub><mo>=</mo><mo stretchy=\"false\">(</mo><msubsup><mi>R</mi><mn>1</mn><mrow><mo>−</mo><mn>1</mn></mrow></msubsup><mo>+</mo><msubsup><mi>R</mi><mn>2</mn><mrow><mo>−</mo><mn>1</mn></mrow></msubsup><msup><mo stretchy=\"false\">)</mo><mrow><mo>−</mo><mn>1</mn></mrow></msup></mrow><annotation encoding=\"application/x-tex\">R_1\\vee R_2 = (R_1^{-1} +R_2^{-1})^{-1}</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8333em;vertical-align:-0.15em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.00773em;\">R</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.3011em;\"><span style=\"top:-2.55em;margin-left:-0.0077em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">1</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span><span class=\"mbin\">∨</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.8333em;vertical-align:-0.15em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.00773em;\">R</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.3011em;\"><span style=\"top:-2.55em;margin-left:-0.0077em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">2</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1.1205em;vertical-align:-0.2663em;\"></span><span class=\"mopen\">(</span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.00773em;\">R</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.8542em;\"><span style=\"top:-2.4337em;margin-left:-0.0077em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">1</span></span></span><span style=\"top:-3.1031em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\">−</span><span class=\"mord mtight\">1</span></span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.2663em;\"><span></span></span></span></span></span></span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span><span class=\"mbin\">+</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1.1205em;vertical-align:-0.2663em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.00773em;\">R</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.8542em;\"><span style=\"top:-2.4337em;margin-left:-0.0077em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">2</span></span></span><span style=\"top:-3.1031em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\">−</span><span class=\"mord mtight\">1</span></span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.2663em;\"><span></span></span></span></span></span></span><span class=\"mclose\"><span class=\"mclose\">)</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.8141em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\">−</span><span class=\"mord mtight\">1</span></span></span></span></span></span></span></span></span></span></span></span>. Then we hope to compute resistance in the network using an analogue of the free category construction. </p>\n<p>In the simplest case we just have a graph X ---R--- Y. As a directed graph, there are arrows in both directions, so infinitely many paths from X to Y. However, when we compute the resistance between X and Y, we <em>don't</em> want to include any of the loops.</p>\n<p>Following my nose, we ought to add in a reflexive loop at each nodes with zero resistance (edit: I guess this is the identity). This would short-circuit the computation of Hom(X,X) to yield zero, which seems promising. Then we go to compute Hom(X,Y), and I want to replace the infinite loopy sum with the hom-object Hom(X,X). Perhaps via quotient on the free category?</p>\n<p>Anyway, I would be happy for either techinical suggestions or references to similar issues. Thanks!</p>",
+        "id": 279449938,
+        "sender_full_name": "Spencer Breiner",
+        "timestamp": 1650392944
+    },
+    {
+        "content": "<p>Do those two operations really give a quantale?  A quick sketch of some circuits of resistors makes me doubt that series composition distributes over parallel composition (or vice versa).</p>",
+        "id": 279451378,
+        "sender_full_name": "John Baez",
+        "timestamp": 1650393621
+    },
+    {
+        "content": "<p>I've spent a certain amount of time trying to understand the algebraic structure of series and parallel composition, so if they obeyed the distributive law all this time and I didn't notice it, I'd feel like quite a fool.  But I'd be happy if it were true!</p>",
+        "id": 279451519,
+        "sender_full_name": "John Baez",
+        "timestamp": 1650393688
+    },
+    {
+        "content": "<p>Maybe you know this paper on circuits made of resistors:</p>\n<ul>\n<li>John Baez and Brendan Fong, <a href=\"https://johncarlosbaez.wordpress.com/2015/04/28/a-compositional-framework-for-passive-linear-networks/\">A compositional framework for passive linear networks</a>.</li>\n</ul>\n<p>This was our attempt to get to the bottom of things.</p>",
+        "id": 279451708,
+        "sender_full_name": "John Baez",
+        "timestamp": 1650393801
+    },
+    {
+        "content": "<p>Indeed, that approach is the basis for my question.</p>",
+        "id": 279451739,
+        "sender_full_name": "Spencer Breiner",
+        "timestamp": 1650393824
+    },
+    {
+        "content": "<p>Okay, great!  Anyway, are you really saying your <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>⋅</mo></mrow><annotation encoding=\"application/x-tex\">\\cdot</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.4445em;\"></span><span class=\"mord\">⋅</span></span></span></span> operation distributes over <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>∨</mo></mrow><annotation encoding=\"application/x-tex\">\\vee</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.5556em;\"></span><span class=\"mord\">∨</span></span></span></span>?</p>",
+        "id": 279452309,
+        "sender_full_name": "John Baez",
+        "timestamp": 1650394162
+    },
+    {
+        "content": "<p>It looks like the distributive law does indeed fail. It would say that we could push resistors through buses without changing the resistance b/w terminals, but it clearly would change resistances b/w terminals on the other side of the bus.</p>",
+        "id": 279452411,
+        "sender_full_name": "Spencer Breiner",
+        "timestamp": 1650394209
+    },
+    {
+        "content": "<p>Yes.   One interesting thing is that <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>⋅</mo></mrow><annotation encoding=\"application/x-tex\">\\cdot</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.4445em;\"></span><span class=\"mord\">⋅</span></span></span></span> is <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>∨</mo></mrow><annotation encoding=\"application/x-tex\">\\vee</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.5556em;\"></span><span class=\"mord\">∨</span></span></span></span> conjugated by taking reciprocals (and vice versa).  There should be some sort of algebraic way to think about this.   In electrical circuit theory it winds up getting connected to Poincare duality for planar graphs.  But it's still sort of mysterious.</p>",
+        "id": 279452633,
+        "sender_full_name": "John Baez",
+        "timestamp": 1650394334
+    },
+    {
+        "content": "<p>Nonetheless, it feels like there might be still be some relevant generalization. There is certainly a strong resemblance, in the calculations, since we are doing some kind of sum over possible paths.</p>",
+        "id": 279452704,
+        "sender_full_name": "Spencer Breiner",
+        "timestamp": 1650394390
+    },
+    {
+        "content": "<p>You're reminding me of some theorem where you compute the electrical resistance between two points on a network of resistors as a fancy sum.</p>",
+        "id": 279452911,
+        "sender_full_name": "John Baez",
+        "timestamp": 1650394480
+    },
+    {
+        "content": "<p>The name is on the tip of my tongue... let me go to a mirror and look at the tip of my tongue.</p>",
+        "id": 279452949,
+        "sender_full_name": "John Baez",
+        "timestamp": 1650394501
+    },
+    {
+        "content": "<p>Does it say something like: compute the resistance between X and Y from the neighbors of X -- X' and the resistances b/w X' and Y?</p>",
+        "id": 279453217,
+        "sender_full_name": "Spencer Breiner",
+        "timestamp": 1650394614
+    },
+    {
+        "content": "<p>It was something more complicated which might result from replying some rule like that over and over...</p>",
+        "id": 279453431,
+        "sender_full_name": "John Baez",
+        "timestamp": 1650394684
+    },
+    {
+        "content": "<p>Expanding the recursive calls on X'</p>",
+        "id": 279453482,
+        "sender_full_name": "Spencer Breiner",
+        "timestamp": 1650394707
+    },
+    {
+        "content": "<p>When I went to the mirror I saw the words <a href=\"https://en.wikipedia.org/wiki/Kirchhoff%27s_theorem\">Kirchoff's spanning tree theorem</a>, but the Wikipedia article doesn't seem to explain the relevance to electrical circuits.</p>",
+        "id": 279453564,
+        "sender_full_name": "John Baez",
+        "timestamp": 1650394751
+    },
+    {
+        "content": "<p>The Wikipedia version is secretly about circuits where all the edges have resistance 1, so you get facts about about graph theory, but I think there's a version that lets the edges have arbitrary resistance.</p>",
+        "id": 279453903,
+        "sender_full_name": "John Baez",
+        "timestamp": 1650394861
+    },
+    {
+        "content": "<p>So each spanning tree gives a unique resistance b/w any pair of nodes, and then we sum over the set of spanning trees?</p>",
+        "id": 279454205,
+        "sender_full_name": "Spencer Breiner",
+        "timestamp": 1650394983
+    },
+    {
+        "content": "<p>There are some theorems about resistor networks and random walks which could be relevant</p>",
+        "id": 279454247,
+        "sender_full_name": "Reid Barton",
+        "timestamp": 1650395007
+    },
+    {
+        "content": "<p>Hmm. I suppose spanning trees are not nicely compositional, since we could decompose a network and break a spanning tree into several parts. I wonder if there is a nice generalization to spanning forests?</p>",
+        "id": 279454609,
+        "sender_full_name": "Spencer Breiner",
+        "timestamp": 1650395176
+    },
+    {
+        "content": "<p><span class=\"user-mention\" data-user-id=\"276480\">@Reid Barton</span>: I've seen something about Markov chains and the probabilities that a particular electron will take a particular path. Is that the sort of idea you've got in mind?</p>",
+        "id": 279454747,
+        "sender_full_name": "Spencer Breiner",
+        "timestamp": 1650395262
+    },
+    {
+        "content": "<p>Yes, this sort of thing.</p>",
+        "id": 279455191,
+        "sender_full_name": "Reid Barton",
+        "timestamp": 1650395477
+    },
+    {
+        "content": "<p>If you impose a voltage of 0 at a vertex <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi>v</mi><mn>0</mn></msub></mrow><annotation encoding=\"application/x-tex\">v_0</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.5806em;vertical-align:-0.15em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.03588em;\">v</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.3011em;\"><span style=\"top:-2.55em;margin-left:-0.0359em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">0</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span></span></span></span> and 0 at another vertex <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi>v</mi><mn>1</mn></msub></mrow><annotation encoding=\"application/x-tex\">v_1</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.5806em;vertical-align:-0.15em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.03588em;\">v</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.3011em;\"><span style=\"top:-2.55em;margin-left:-0.0359em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">1</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span></span></span></span>, then the voltage potential at each vertex <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>w</mi></mrow><annotation encoding=\"application/x-tex\">w</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.4306em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.02691em;\">w</span></span></span></span> will be the probability that a random walk starting at <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>w</mi></mrow><annotation encoding=\"application/x-tex\">w</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.4306em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.02691em;\">w</span></span></span></span> will hit <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi>v</mi><mn>1</mn></msub></mrow><annotation encoding=\"application/x-tex\">v_1</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.5806em;vertical-align:-0.15em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.03588em;\">v</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.3011em;\"><span style=\"top:-2.55em;margin-left:-0.0359em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">1</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span></span></span></span> before <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi>v</mi><mn>0</mn></msub></mrow><annotation encoding=\"application/x-tex\">v_0</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.5806em;vertical-align:-0.15em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.03588em;\">v</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.3011em;\"><span style=\"top:-2.55em;margin-left:-0.0359em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">0</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span></span></span></span> (where the walk leaves a vertex through an edge with probability inversely proportional to the resistance of that edge, I guess).</p>",
+        "id": 279455415,
+        "sender_full_name": "Reid Barton",
+        "timestamp": 1650395605
+    },
+    {
+        "content": "<p>Then there is also some way to recast that in terms of the effective resistance between <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi>v</mi><mn>0</mn></msub></mrow><annotation encoding=\"application/x-tex\">v_0</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.5806em;vertical-align:-0.15em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.03588em;\">v</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.3011em;\"><span style=\"top:-2.55em;margin-left:-0.0359em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">0</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span></span></span></span> and <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi>v</mi><mn>1</mn></msub></mrow><annotation encoding=\"application/x-tex\">v_1</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.5806em;vertical-align:-0.15em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.03588em;\">v</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.3011em;\"><span style=\"top:-2.55em;margin-left:-0.0359em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">1</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span></span></span></span> which I don't remember.</p>",
+        "id": 279455466,
+        "sender_full_name": "Reid Barton",
+        "timestamp": 1650395632
+    },
+    {
+        "content": "<p>There's a really fun expository paper about resistor networks and random walks:</p>\n<ul>\n<li>Peter Doyle and J. Laurie Snell, <a href=\"https://math.dartmouth.edu/~doyle/docs/walks/walks.pdf\">Random walks and electric networks</a>.</li>\n</ul>",
+        "id": 279455536,
+        "sender_full_name": "John Baez",
+        "timestamp": 1650395649
+    },
+    {
+        "content": "<p>Besides the failure of distributivity, this also fails to be a quantale for the trivial reason that the 'join' is not idempotent.</p>",
+        "id": 279466337,
+        "sender_full_name": "Graham Manuell",
+        "timestamp": 1650401138
+    },
+    {
+        "content": "<p>True.</p>",
+        "id": 279467184,
+        "sender_full_name": "John Baez",
+        "timestamp": 1650401665
+    },
+    {
+        "content": "<p>I guess I showed more than that it's not a quantale: it's not even a rig.</p>",
+        "id": 279467291,
+        "sender_full_name": "John Baez",
+        "timestamp": 1650401738
+    },
+    {
+        "content": "<p>I remember looking into series-parallel operations and the algebraic path problem a while ago. AFAIK they don't form a rig, but they form something very close that Andrey Mokhov calls 'united monoids'. Here's a neat blog post on it: <a href=\"https://blogs.ncl.ac.uk/andreymokhov/united-monoids/\">https://blogs.ncl.ac.uk/andreymokhov/united-monoids/</a></p>",
+        "id": 280358054,
+        "sender_full_name": "Zanzi",
+        "timestamp": 1651069801
     }
 ]

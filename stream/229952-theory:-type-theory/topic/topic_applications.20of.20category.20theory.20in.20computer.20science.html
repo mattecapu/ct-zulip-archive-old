@@ -1,0 +1,42 @@
+---
+layout: archive
+title: Zulip Chat Archive
+permalink: /stream/229952-theory:-type-theory/topic/topic_applications.20of.20category.20theory.20in.20computer.20science.html
+---
+
+<h2>Stream: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229952-theory:-type-theory/index.html">theory: type theory</a></h2>
+<h3>Topic: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229952-theory:-type-theory/topic/topic_applications.20of.20category.20theory.20in.20computer.20science.html">applications of category theory in computer science</a></h3>
+
+<hr>
+
+<base href="https://categorytheory.zulipchat.com/">
+
+{% raw %}
+
+<a name="278902615"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229952-theory%3A%20type%20theory/topic/applications%20of%20category%20theory%20in%20computer%20science/near/278902615" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Evan Patterson <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229952-theory:-type-theory/topic/topic_applications.20of.20category.20theory.20in.20computer.20science.html#278902615">(Apr 13 2022 at 23:04)</a>:</h4>
+<p>I think that categorical models of relational databases are a nice complement to PLT applications for a CT in CS course. One can put bells and whistles on it, but the basic model of Spivak's <a href="https://arxiv.org/abs/1009.1166">functorial data migration</a> is pleasingly simple: database schemas are finitely presented categories and database instances are set-valued functors (copresheaves) on the schema. With this setup, there is a dictionary between many standard CT and database concepts.</p>
+
+
+
+<a name="279038706"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229952-theory%3A%20type%20theory/topic/applications%20of%20category%20theory%20in%20computer%20science/near/279038706" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Max New <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229952-theory:-type-theory/topic/topic_applications.20of.20category.20theory.20in.20computer.20science.html#279038706">(Apr 15 2022 at 00:46)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="275900">Stelios Tsampas</span> <a href="#narrow/stream/229952-theory.3A-type-theory/topic/Applications.20of.20Category.20Theory.20in.20Computer.20Science/near/278942527">said</a>:</p>
+<blockquote>
+<p>Thanks for the assist <span class="user-mention silent" data-user-id="383799">Tom Hirschowitz</span>. </p>
+<p>Hey Max :). Since you're going to mention DTT and HTT, how about pointing them towards Agda, it's CT library and it's cubical version? And then coalgebras, they're a natural fit with computer science, right?</p>
+</blockquote>
+<p>Could you be more specific on "coalgebra" ? Kind of a broad area</p>
+
+
+
+<a name="279069631"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229952-theory%3A%20type%20theory/topic/applications%20of%20category%20theory%20in%20computer%20science/near/279069631" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Stelios Tsampas <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229952-theory:-type-theory/topic/topic_applications.20of.20category.20theory.20in.20computer.20science.html#279069631">(Apr 15 2022 at 10:53)</a>:</h4>
+<p>You could start broadly by explaining coalgebras as a generic framework to model systems exhibiting observable behavior. Two nice, elementary instantiations of this framework (to mention to students) is that directed graphs are <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="script">P</mi></mrow><annotation encoding="application/x-tex">\mathcal{P}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathcal" style="margin-right:0.08222em;">P</span></span></span></span>-coalgebras (coalgebras of the powerset functor) and that labelled transitions systems are <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="script">P</mi><mo stretchy="false">(</mo><mi>A</mi><mo>×</mo><mo>−</mo><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">\mathcal{P}(A \times -)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathcal" style="margin-right:0.08222em;">P</span><span class="mopen">(</span><span class="mord mathnormal">A</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">×</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">−</span><span class="mclose">)</span></span></span></span>-coalgebras for some set of labels <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi></mrow><annotation encoding="application/x-tex">A</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal">A</span></span></span></span>.</p>
+<p>Also, if you're feeling adventurous and your students are comfortable with SOS-style rules, you would point them towards Turi and Plotkin's bialgebraic framework (<a href="https://homepages.inf.ed.ac.uk/gdp/publications/Math_Op_Sem.pdf">https://homepages.inf.ed.ac.uk/gdp/publications/Math_Op_Sem.pdf</a>), presenting GSOS systems as natural transformations of a certain shape.</p>
+
+
+
+{% endraw %}
+
+<hr><p>Last updated: Apr 29 2022 at 00:46 UTC</p>
