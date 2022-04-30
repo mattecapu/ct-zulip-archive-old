@@ -114,6 +114,8 @@ permalink: /index.html
 
 * [languages: espanol/Spanish](stream/231120-languages:-espanol/Spanish/index.html) (4 topics)
 
+* [practice: Dialectica](stream/323208-practice:-Dialectica/index.html) (4 topics)
+
 * [practice: neuroscience](stream/233925-practice:-neuroscience/index.html) (4 topics)
 
 * [practice: pedagogy](stream/295092-practice:-pedagogy/index.html) (4 topics)
@@ -140,8 +142,6 @@ permalink: /index.html
 
 * [languages: portugues](stream/303660-languages:-portugues/index.html) (2 topics)
 
-* [practice: Dialectica](stream/323208-practice:-Dialectica/index.html) (2 topics)
-
 * [practice: industry](stream/229370-practice:-industry/index.html) (2 topics)
 
 * [seminar: YAMCaTS](stream/275483-seminar:-YAMCaTS/index.html) (2 topics)
@@ -160,4 +160,4 @@ permalink: /index.html
 
 * [theory: alternate presentations](stream/233122-theory:-alternate-presentations/index.html) (1 topic)
 
-<hr><p>Last updated: Apr 29 2022 at 07:24 UTC</p>
+<hr><p>Last updated: Apr 30 2022 at 00:48 UTC</p>

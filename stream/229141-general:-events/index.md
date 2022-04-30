@@ -9,6 +9,7 @@ permalink: /stream/229141-general:-events/index.html
 
 ### Topics:
 
+* [AMS school on applied category theory](topic/topic_AMS.20school.20on.20applied.20category.20theory.html) (62 messages, latest: Apr 29 2022 at 16:40)
 * [CMU HoTT Seminar Online: Shulman](topic/topic_CMU.20HoTT.20Seminar.20Online.3A.20Shulman.html) (3 messages, latest: Apr 28 2022 at 22:07)
 * [HoTTEST Summer School July–August 2022](topic/topic_HoTTEST.20Summer.20School.20July.E2.80.93August.202022.html) (1 message, latest: Apr 28 2022 at 07:57)
 * [NY Categories Seminar](topic/topic_NY.20Categories.20Seminar.html) (14 messages, latest: Apr 27 2022 at 18:30)
@@ -21,7 +22,6 @@ permalink: /stream/229141-general:-events/index.html
 * [School on Univalent Mathematics: Application deadline 15 Apr](topic/topic_School.20on.20Univalent.20Mathematics.3A.20Application.20deadline.2015.20Apr.html) (1 message, latest: Apr 10 2022 at 07:25)
 * [Structure meets Power Workshop, CFP](topic/topic_Structure.20meets.20Power.20Workshop.2C.20CFP.html) (1 message, latest: Mar 28 2022 at 11:20)
 * [BCQT2022](topic/topic_BCQT2022.html) (1 message, latest: Mar 21 2022 at 14:48)
-* [AMS school on applied category theory](topic/topic_AMS.20school.20on.20applied.20category.20theory.html) (61 messages, latest: Mar 20 2022 at 16:33)
 * [Workshop on Polynomial Functors 2022](topic/topic_Workshop.20on.20Polynomial.20Functors.202022.html) (13 messages, latest: Mar 18 2022 at 14:40)
 * [ACT 2022: First Call For Papers](topic/topic_ACT.202022.3A.20First.20Call.20For.20Papers.html) (2 messages, latest: Feb 25 2022 at 10:33)
 * [Mathematics of Collective Intelligence](topic/topic_Mathematics.20of.20Collective.20Intelligence.html) (6 messages, latest: Feb 15 2022 at 22:27)
@@ -135,4 +135,4 @@ permalink: /stream/229141-general:-events/index.html
 * [April 1st: ACT@UCR](topic/topic_April.201st.3A.20ACT.40UCR.html) (3 messages, latest: Mar 26 2020 at 23:58)
 * [Google Sites problem](topic/topic_Google.20Sites.20problem.html) (4 messages, latest: Mar 25 2020 at 04:29)
 
-<hr><p>Last updated: Apr 29 2022 at 07:24 UTC</p>
+<hr><p>Last updated: Apr 30 2022 at 00:48 UTC</p>
