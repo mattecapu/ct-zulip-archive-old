@@ -9,6 +9,7 @@ permalink: /stream/229111-general/index.html
 
 ### Topics:
 
+* [Introduce Yourself!](topic/topic_Introduce.20Yourself!.html) (704 messages, latest: Apr 30 2022 at 20:11)
 * [introduce yourself!](topic/topic_introduce.20yourself!.html) (27 messages, latest: Apr 29 2022 at 23:39)
 * [new streams](topic/topic_new.20streams.html) (91 messages, latest: Apr 29 2022 at 06:47)
 * [group cohomology](topic/topic_group.20cohomology.html) (2 messages, latest: Apr 26 2022 at 18:28)
@@ -30,7 +31,6 @@ permalink: /stream/229111-general/index.html
 * [type theory with opposite types paper](topic/topic_type.20theory.20with.20opposite.20types.20paper.html) (1 message, latest: Nov 25 2021 at 01:05)
 * ["Diagonal Yoneda"](topic/topic_.22Diagonal.20Yoneda.22.html) (27 messages, latest: Nov 24 2021 at 19:16)
 * [Type theory with opposite types paper](topic/topic_Type.20theory.20with.20opposite.20types.20paper.html) (2 messages, latest: Nov 24 2021 at 12:07)
-* [Introduce Yourself!](topic/topic_Introduce.20Yourself!.html) (700 messages, latest: Nov 18 2021 at 17:54)
 * [errata to LPAC](topic/topic_errata.20to.20LPAC.html) (21 messages, latest: Oct 29 2021 at 10:54)
 * [nLab linkifier](topic/topic_nLab.20linkifier.html) (1 message, latest: Oct 20 2021 at 13:25)
 * [category theory AI companies](topic/topic_category.20theory.20AI.20companies.html) (34 messages, latest: Oct 02 2021 at 11:20)
@@ -232,4 +232,4 @@ permalink: /stream/229111-general/index.html
 * [Tools for diagrams](topic/topic_Tools.20for.20diagrams.html) (78 messages, latest: Mar 25 2020 at 17:53)
 * [topic demonstration](topic/topic_topic.20demonstration.html) (2 messages, latest: Mar 23 2020 at 16:57)
 
-<hr><p>Last updated: Apr 30 2022 at 00:48 UTC</p>
+<hr><p>Last updated: May 01 2022 at 00:56 UTC</p>
