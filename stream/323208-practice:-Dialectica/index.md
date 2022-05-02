@@ -9,9 +9,9 @@ permalink: /stream/323208-practice:-Dialectica/index.html
 
 ### Topics:
 
+* [Dialectica for Friends video?](topic/topic_Dialectica.20for.20Friends.20video.3F.html) (2 messages, latest: May 01 2022 at 04:35)
 * [Lenses](topic/topic_Lenses.html) (2 messages, latest: Apr 29 2022 at 23:45)
-* [Dialectica for Friends video?](topic/topic_Dialectica.20for.20Friends.20video.3F.html) (1 message, latest: Apr 29 2022 at 19:01)
 * [stream events](topic/topic_stream.20events.html) (5 messages, latest: Apr 28 2022 at 20:15)
 * [Welcome](topic/topic_Welcome.html) (2 messages, latest: Apr 28 2022 at 16:34)
 
-<hr><p>Last updated: May 01 2022 at 00:56 UTC</p>
+<hr><p>Last updated: May 02 2022 at 00:46 UTC</p>
