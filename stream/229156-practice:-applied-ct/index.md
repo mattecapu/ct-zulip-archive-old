@@ -9,6 +9,8 @@ permalink: /stream/229156-practice:-applied-ct/index.html
 
 ### Topics:
 
+* [around machine learning](topic/topic_around.20machine.20learning.html) (46 messages, latest: May 02 2022 at 15:11)
+* [Petri nets and programming languages](topic/topic_Petri.20nets.20and.20programming.20languages.html) (67 messages, latest: May 02 2022 at 12:12)
 * [process categories](topic/topic_process.20categories.html) (46 messages, latest: Apr 28 2022 at 18:18)
 * [constants in empirical models](topic/topic_constants.20in.20empirical.20models.html) (3 messages, latest: Apr 26 2022 at 08:41)
 * [web cats](topic/topic_web.20cats.html) (336 messages, latest: Apr 20 2022 at 11:55)
@@ -36,7 +38,6 @@ permalink: /stream/229156-practice:-applied-ct/index.html
 * [emergent behaviour as laxity](topic/topic_emergent.20behaviour.20as.20laxity.html) (265 messages, latest: Jun 22 2021 at 19:29)
 * [what to do with too abstract results?](topic/topic_what.20to.20do.20with.20too.20abstract.20results.3F.html) (16 messages, latest: Jun 20 2021 at 15:20)
 * [factored sets](topic/topic_factored.20sets.html) (2 messages, latest: Jun 12 2021 at 10:14)
-* [around machine learning](topic/topic_around.20machine.20learning.html) (43 messages, latest: Jun 09 2021 at 14:00)
 * [piecewise-linear subspaces diagrammatically?](topic/topic_piecewise-linear.20subspaces.20diagrammatically.3F.html) (346 messages, latest: Jun 04 2021 at 14:07)
 * [chainlets](topic/topic_chainlets.html) (18 messages, latest: Jun 01 2021 at 16:10)
 * [network transformations](topic/topic_network.20transformations.html) (9 messages, latest: May 30 2021 at 20:46)
@@ -76,7 +77,6 @@ permalink: /stream/229156-practice:-applied-ct/index.html
 * [insecure semantics](topic/topic_insecure.20semantics.html) (28 messages, latest: Sep 09 2020 at 11:23)
 * [Really applied ACT](topic/topic_Really.20applied.20ACT.html) (261 messages, latest: Sep 09 2020 at 10:09)
 * [A topos of Petri nets?](topic/topic_A.20topos.20of.20Petri.20nets.3F.html) (218 messages, latest: Jul 31 2020 at 03:12)
-* [Petri nets and programming languages](topic/topic_Petri.20nets.20and.20programming.20languages.html) (66 messages, latest: Jul 27 2020 at 09:53)
 * [epidemiology and Petri nets](topic/topic_epidemiology.20and.20Petri.20nets.html) (17 messages, latest: Jul 17 2020 at 07:18)
 * [petri nets](topic/topic_petri.20nets.html) (214 messages, latest: Jul 17 2020 at 06:16)
 * [PhD experience](topic/topic_PhD.20experience.html) (125 messages, latest: Jul 16 2020 at 20:49)
@@ -140,4 +140,4 @@ permalink: /stream/229156-practice:-applied-ct/index.html
 * [AACT2020](topic/topic_AACT2020.html) (1 message, latest: Mar 24 2020 at 00:56)
 * [welcome](topic/topic_welcome.html) (15 messages, latest: Mar 24 2020 at 00:03)
 
-<hr><p>Last updated: May 02 2022 at 00:46 UTC</p>
+<hr><p>Last updated: May 03 2022 at 00:53 UTC</p>

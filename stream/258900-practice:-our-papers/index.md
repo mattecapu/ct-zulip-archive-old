@@ -9,6 +9,7 @@ permalink: /stream/258900-practice:-our-papers/index.html
 
 ### Topics:
 
+* [Yoneda Hacking: The Algebra of Attacker Actions](topic/topic_Yoneda.20Hacking.3A.20The.20Algebra.20of.20Attacker.20Actions.html) (41 messages, latest: May 02 2022 at 15:57)
 * [sheaf semantics of termination-insensitive noninterference](topic/topic_sheaf.20semantics.20of.20termination-insensitive.20noninterference.html) (1 message, latest: Apr 19 2022 at 16:34)
 * [classifying topoi in synthetic guarded domain theory](topic/topic_classifying.20topoi.20in.20synthetic.20guarded.20domain.20theory.html) (1 message, latest: Apr 19 2022 at 15:40)
 * [A unified treatment of structural definitions on syntax](topic/topic_A.20unified.20treatment.20of.20structural.20definitions.20on.20syntax.html) (1 message, latest: Apr 12 2022 at 11:07)
@@ -37,7 +38,6 @@ permalink: /stream/258900-practice:-our-papers/index.html
 * [Combining Nondeterminism, Probability, and Termination](topic/topic_Combining.20Nondeterminism.2C.20Probability.2C.20and.20Termination.html) (1 message, latest: Apr 01 2021 at 13:43)
 * [Normalization for Cubical Type Theory](topic/topic_Normalization.20for.20Cubical.20Type.20Theory.html) (1 message, latest: Apr 01 2021 at 12:08)
 * [ZH-calculus](topic/topic_ZH-calculus.html) (2 messages, latest: Mar 12 2021 at 11:03)
-* [Yoneda Hacking: The Algebra of Attacker Actions](topic/topic_Yoneda.20Hacking.3A.20The.20Algebra.20of.20Attacker.20Actions.html) (39 messages, latest: Mar 09 2021 at 18:47)
 * [Categorical Foundations of Gradient-Based Learning](topic/topic_Categorical.20Foundations.20of.20Gradient-Based.20Learning.html) (7 messages, latest: Mar 04 2021 at 19:00)
 * [Category O for oriented matroids](topic/topic_Category.20O.20for.20oriented.20matroids.html) (22 messages, latest: Feb 24 2021 at 22:27)
 * [a categorical semantics for hierarchical nets](topic/topic_a.20categorical.20semantics.20for.20hierarchical.20nets.html) (5 messages, latest: Feb 02 2021 at 23:08)
@@ -53,4 +53,4 @@ permalink: /stream/258900-practice:-our-papers/index.html
 * [stream events](topic/topic_stream.20events.html) (2 messages, latest: Oct 05 2020 at 15:30)
 * [Coends of higher arity](topic/topic_Coends.20of.20higher.20arity.html) (3 messages, latest: Sep 26 2020 at 16:28)
 
-<hr><p>Last updated: May 02 2022 at 00:46 UTC</p>
+<hr><p>Last updated: May 03 2022 at 00:53 UTC</p>
