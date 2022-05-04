@@ -9,6 +9,7 @@ permalink: /stream/258900-practice:-our-papers/index.html
 
 ### Topics:
 
+* [Cornering Optics](topic/topic_Cornering.20Optics.html) (34 messages, latest: May 03 2022 at 17:59)
 * [Yoneda Hacking: The Algebra of Attacker Actions](topic/topic_Yoneda.20Hacking.3A.20The.20Algebra.20of.20Attacker.20Actions.html) (41 messages, latest: May 02 2022 at 15:57)
 * [sheaf semantics of termination-insensitive noninterference](topic/topic_sheaf.20semantics.20of.20termination-insensitive.20noninterference.html) (1 message, latest: Apr 19 2022 at 16:34)
 * [classifying topoi in synthetic guarded domain theory](topic/topic_classifying.20topoi.20in.20synthetic.20guarded.20domain.20theory.html) (1 message, latest: Apr 19 2022 at 15:40)
@@ -53,4 +54,4 @@ permalink: /stream/258900-practice:-our-papers/index.html
 * [stream events](topic/topic_stream.20events.html) (2 messages, latest: Oct 05 2020 at 15:30)
 * [Coends of higher arity](topic/topic_Coends.20of.20higher.20arity.html) (3 messages, latest: Sep 26 2020 at 16:28)
 
-<hr><p>Last updated: May 03 2022 at 00:53 UTC</p>
+<hr><p>Last updated: May 04 2022 at 00:47 UTC</p>

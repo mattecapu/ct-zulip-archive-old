@@ -10,21 +10,21 @@ permalink: /index.html
 
 * [learning: questions](stream/229199-learning:-questions/index.html) (663 topics)
 
-* [theory: category theory](stream/229136-theory:-category-theory/index.html) (266 topics)
+* [theory: category theory](stream/229136-theory:-category-theory/index.html) (269 topics)
 
-* [general](stream/229111-general/index.html) (223 topics)
+* [general](stream/229111-general/index.html) (224 topics)
 
-* [practice: applied ct](stream/229156-practice:-applied-ct/index.html) (130 topics)
+* [practice: applied ct](stream/229156-practice:-applied-ct/index.html) (131 topics)
 
 * [general: events](stream/229141-general:-events/index.html) (125 topics)
 
-* [theory: topos theory](stream/230087-theory:-topos-theory/index.html) (73 topics)
+* [theory: topos theory](stream/230087-theory:-topos-theory/index.html) (74 topics)
 
 * [conference: ACT 2020](stream/243068-conference:-ACT-2020/index.html) (62 topics)
 
 * [ACT 2020](stream/243068-ACT-2020/index.html) (61 topics)
 
-* [theory: algebraic topology & homological algebra](stream/241590-theory:-algebraic-topology-&-homological-algebra/index.html) (55 topics)
+* [theory: algebraic topology & homological algebra](stream/241590-theory:-algebraic-topology-&-homological-algebra/index.html) (56 topics)
 
 * [seminar: Topos Colloquium](stream/269484-seminar:-Topos-Colloquium/index.html) (54 topics)
 
@@ -36,7 +36,7 @@ permalink: /index.html
 
 * [general: positions](stream/245502-general:-positions/index.html) (44 topics)
 
-* [practice: our papers](stream/258900-practice:-our-papers/index.html) (43 topics)
+* [practice: our papers](stream/258900-practice:-our-papers/index.html) (44 topics)
 
 * [theory: type theory](stream/229952-theory:-type-theory/index.html) (43 topics)
 
@@ -100,6 +100,8 @@ permalink: /index.html
 
 * [learning: statistics reading group](stream/245528-learning:-statistics-reading-group/index.html) (7 topics)
 
+* [practice: chemistry](stream/322714-practice:-chemistry/index.html) (6 topics)
+
 * [seminar: EM-cats](stream/298571-seminar:-EM-cats/index.html) (6 topics)
 
 * [semiotics and semiosis](stream/229179-semiotics-and-semiosis/index.html) (6 topics)
@@ -110,11 +112,9 @@ permalink: /index.html
 
 * [languages: Deutsch/German](stream/231144-languages:-Deutsch/German/index.html) (5 topics)
 
-* [practice: chemistry](stream/322714-practice:-chemistry/index.html) (5 topics)
+* [practice: Dialectica](stream/323208-practice:-Dialectica/index.html) (5 topics)
 
 * [languages: espanol/Spanish](stream/231120-languages:-espanol/Spanish/index.html) (4 topics)
-
-* [practice: Dialectica](stream/323208-practice:-Dialectica/index.html) (4 topics)
 
 * [practice: neuroscience](stream/233925-practice:-neuroscience/index.html) (4 topics)
 
@@ -160,4 +160,4 @@ permalink: /index.html
 
 * [theory: alternate presentations](stream/233122-theory:-alternate-presentations/index.html) (1 topic)
 
-<hr><p>Last updated: May 03 2022 at 00:53 UTC</p>
+<hr><p>Last updated: May 04 2022 at 00:47 UTC</p>
