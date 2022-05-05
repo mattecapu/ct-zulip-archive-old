@@ -1,0 +1,90 @@
+---
+layout: archive
+title: Zulip Chat Archive
+permalink: /stream/229199-learning:-questions/topic/topic_multisets.20vs.20tuples.html
+---
+
+<h2>Stream: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/index.html">learning: questions</a></h2>
+<h3>Topic: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/topic_multisets.20vs.20tuples.html">multisets vs tuples</a></h3>
+
+<hr>
+
+<base href="https://categorytheory.zulipchat.com/">
+
+{% raw %}
+
+<a name="281100143"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/multisets%20vs%20tuples/near/281100143" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Carlos Zapata-Carratala <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/topic_multisets.20vs.20tuples.html#281100143">(May 04 2022 at 01:18)</a>:</h4>
+<p>I am currently working on higher arity generalizations of category-like structures and I would like to gether some sentiment from this community about multisets vs tuples. Suppose one is not interested in sequential information, e.g. focus on counting, hypergraph topology, etc., my question is: are there any general reasons (other than tradition) to use n-tuples over multisets  of fixed cardinality n to encode the primitive notion of a collection of n (possibly repeating) elements?</p>
+<p>The main example I have in mind are homsets in categories: in the standard definition of category homsets are defined on 2-tuples of objects so that C(A,B) =/= C(B,A), which is convenient when thinking of morphisms as directed links between objects. One could define an "undirected" category so that given a pair of objects A and B only the homset C(AB), where AB denotes a multiset of cardinality 2,  is defined. As far as I can see, all the usual notions of categories (composition, associativity, identities) appy in this "undirected" setting.</p>
+<p>In a higher arity generalization of a category homsets may take the form C(ABCD...) where n-ary morphisms are defined on multisets of objects of cardinality n. This approach seems to allow us to preserve a great deal of the compositional structure of categories into the higher arity realm while relaxing the rigidity of sequentiality imposed by tuples. Can you see any major issues with this approach?</p>
+
+
+
+<a name="281102983"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/multisets%20vs%20tuples/near/281102983" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Zhen Lin Low <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/topic_multisets.20vs.20tuples.html#281102983">(May 04 2022 at 02:15)</a>:</h4>
+<p>It is unclear to me what kinds of examples you have in mind, so it is difficult to judge whether the approach has "major issues".</p>
+
+
+
+<a name="281103834"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/multisets%20vs%20tuples/near/281103834" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Zhen Lin Low <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/topic_multisets.20vs.20tuples.html#281103834">(May 04 2022 at 02:30)</a>:</h4>
+<p>But here is something to think about. If there is some kind of "undirected" analogue of the notion of category it should be a generalisation of the notion of groupoid. In a groupoid there is certainly a canonical bijection between Hom(A, B) and Hom(B, A), and if we take Hom(A, B, ..., Z) to be the set of tuples of morphisms A → B, B → C, ..., Y → Z, then there are canonical bijections between e.g. Hom(A, B, C) and Hom(C, A, B). But then now we have two potentially different bijections between Hom(A, B, B) and Hom(B, A, B), induced by the canonical bijection between Hom(A, B, C) and Hom(C, A, B) or Hom(B, A, C) after substituting C = B. This ambiguity means it is not feasible to think of Hom(A, B, ..., Z) as being indexed by a plain multiset (A, B, ..., Z).</p>
+
+
+
+<a name="281120188"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/multisets%20vs%20tuples/near/281120188" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Ralph Sarkis <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/topic_multisets.20vs.20tuples.html#281120188">(May 04 2022 at 07:36)</a>:</h4>
+<p>I vaguely remember a discussion about "undirected" categories on here (more than a year ago), but I couldn't find it.</p>
+
+
+
+<a name="281125674"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/multisets%20vs%20tuples/near/281125674" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Morgan Rogers (he/him) <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/topic_multisets.20vs.20tuples.html#281125674">(May 04 2022 at 08:37)</a>:</h4>
+<p>Categories of relations (e.g. allegories) have the form that you describe <span class="user-mention" data-user-id="407556">@Carlos Zapata-Carratala</span>, although as <span class="user-mention" data-user-id="416301">@Zhen Lin Low</span> pointed out, if you want to compose relations where one of the codomains is repeated you have to be careful about which way around the relation is, at which point the set might as well be ordered.</p>
+
+
+
+<a name="281143314"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/multisets%20vs%20tuples/near/281143314" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Fabrizio Genovese <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/topic_multisets.20vs.20tuples.html#281143314">(May 04 2022 at 11:47)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="407556">Carlos Zapata-Carratala</span> <a href="#narrow/stream/229199-learning.3A-questions/topic/multisets.20vs.20tuples/near/281100143">said</a>:</p>
+<blockquote>
+<p>I am currently working on higher arity generalizations of category-like structures and I would like to gether some sentiment from this community about multisets vs tuples. Suppose one is not interested in sequential information, e.g. focus on counting, hypergraph topology, etc., my question is: are there any general reasons (other than tradition) to use n-tuples over multisets  of fixed cardinality n to encode the primitive notion of a collection of n (possibly repeating) elements?</p>
+<p>The main example I have in mind are homsets in categories: in the standard definition of category homsets are defined on 2-tuples of objects so that C(A,B) =/= C(B,A), which is convenient when thinking of morphisms as directed links between objects. One could define an "undirected" category so that given a pair of objects A and B only the homset C(AB), where AB denotes a multiset of cardinality 2,  is defined. As far as I can see, all the usual notions of categories (composition, associativity, identities) appy in this "undirected" setting.</p>
+<p>In a higher arity generalization of a category homsets may take the form C(ABCD...) where n-ary morphisms are defined on multisets of objects of cardinality n. This approach seems to allow us to preserve a great deal of the compositional structure of categories into the higher arity realm while relaxing the rigidity of sequentiality imposed by tuples. Can you see any major issues with this approach?</p>
+</blockquote>
+<p>It will make a big difference imho if at some point you plan to implement this or not. Computers like tuples much more than multisets, in general*. Also, as I think <span class="user-mention" data-user-id="416301">@Zhen Lin Low</span>  already said, you could also use tuples + symmetries that allow you to shuffle things around. Tuples + symmetries form a groupoid and, in some way, this allows you to work as if you were working with multisets but at the same time it allows you to be more explicit about them.</p>
+<p>*By this I mean that a good 40% of day-to-day programming is about manipulating lists of things, and there are countless tools and libraries developed to operate on lists in any possible way one can imagine. The same cannot be said of multisets.</p>
+
+
+
+<a name="281144575"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/multisets%20vs%20tuples/near/281144575" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Carlos Zapata-Carratala <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/topic_multisets.20vs.20tuples.html#281144575">(May 04 2022 at 12:00)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="276438">Fabrizio Genovese</span> <a href="#narrow/stream/229199-learning.3A-questions/topic/multisets.20vs.20tuples/near/281143314">said</a>:</p>
+<blockquote>
+<p>It will make a big difference imho if at some point you plan to implement this or not. Computers like tuples much more than multisets, in general*. Also, as I think <span class="user-mention silent" data-user-id="416301">Zhen Lin Low</span>  already said, you could also use tuples + symmetries that allow you to shuffle things around. Tuples + symmetries form a groupoid and, in some way, this allows you to work as if you were working with multisets but at the same time it allows you to be more explicit about them.</p>
+<p>*By this I mean that a good 40% of day-to-day programming is about manipulating lists of things, and there are countless tools and libraries developed to operate on lists in any possible way one can imagine. The same cannot be said of multisets.</p>
+</blockquote>
+<p>Yes, I completely agree. There will be a big difference for computational implementation. Our modern digital computers are very sequential machines deep down.</p>
+
+
+
+<a name="281147589"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/multisets%20vs%20tuples/near/281147589" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Carlos Zapata-Carratala <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/topic_multisets.20vs.20tuples.html#281147589">(May 04 2022 at 12:31)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="277473">Morgan Rogers (he/him)</span> <a href="#narrow/stream/229199-learning.3A-questions/topic/multisets.20vs.20tuples/near/281125674">said</a>:</p>
+<blockquote>
+<p>Categories of relations (e.g. allegories) have the form that you describe <span class="user-mention silent" data-user-id="407556">Carlos Zapata-Carratala</span>, although as <span class="user-mention silent" data-user-id="416301">Zhen Lin Low</span> pointed out, if you want to compose relations where one of the codomains is repeated you have to be careful about which way around the relation is, at which point the set might as well be ordered.</p>
+</blockquote>
+<p>Yes, using the multiset approach for homsets of repeated objects seems like a potential issue. As far as I can see there is a trade-off: either you insist that all your morphisms bind different objects (no endomorphisms) or you allow for repeated objects in which case the ambiguity for composition is encoded in permutations of repeated objects shared between morphisms. I can see that tuples are efficient in doing away with this issue at the cost of introducing "a priori" sequentiality.</p>
+
+
+
+<a name="281151468"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/multisets%20vs%20tuples/near/281151468" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Morgan Rogers (he/him) <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/topic_multisets.20vs.20tuples.html#281151468">(May 04 2022 at 13:02)</a>:</h4>
+<p>There could be an interesting version of this idea with an antisymmetry condition that forces C(AB...) to be trivial (a one-element set) whenever there are repeated indices.</p>
+
+
+
+{% endraw %}
+
+<hr><p>Last updated: May 05 2022 at 00:47 UTC</p>

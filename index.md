@@ -8,13 +8,13 @@ permalink: /index.html
 
 ## Streams:
 
-* [learning: questions](stream/229199-learning:-questions/index.html) (663 topics)
+* [learning: questions](stream/229199-learning:-questions/index.html) (664 topics)
 
 * [theory: category theory](stream/229136-theory:-category-theory/index.html) (269 topics)
 
 * [general](stream/229111-general/index.html) (224 topics)
 
-* [practice: applied ct](stream/229156-practice:-applied-ct/index.html) (131 topics)
+* [practice: applied ct](stream/229156-practice:-applied-ct/index.html) (132 topics)
 
 * [general: events](stream/229141-general:-events/index.html) (125 topics)
 
@@ -38,7 +38,7 @@ permalink: /index.html
 
 * [practice: our papers](stream/258900-practice:-our-papers/index.html) (44 topics)
 
-* [theory: type theory](stream/229952-theory:-type-theory/index.html) (43 topics)
+* [theory: type theory](stream/229952-theory:-type-theory/index.html) (44 topics)
 
 * [MIT Categories Seminar](stream/229457-MIT-Categories-Seminar/index.html) (41 topics)
 
@@ -48,7 +48,7 @@ permalink: /index.html
 
 * [general: values](stream/241990-general:-values/index.html) (25 topics)
 
-* [learning: recommendations](stream/232161-learning:-recommendations/index.html) (24 topics)
+* [learning: recommendations](stream/232161-learning:-recommendations/index.html) (25 topics)
 
 * [practice: software](stream/229125-practice:-software/index.html) (23 topics)
 
@@ -94,13 +94,15 @@ permalink: /index.html
 
 * [languages: italiano/Italian](stream/231111-languages:-italiano/Italian/index.html) (8 topics)
 
+* [practice: chemistry](stream/322714-practice:-chemistry/index.html) (8 topics)
+
 * [theory: monoids](stream/231815-theory:-monoids/index.html) (8 topics)
 
 * [languages: francais/French](stream/231124-languages:-francais/French/index.html) (7 topics)
 
 * [learning: statistics reading group](stream/245528-learning:-statistics-reading-group/index.html) (7 topics)
 
-* [practice: chemistry](stream/322714-practice:-chemistry/index.html) (6 topics)
+* [practice: Dialectica](stream/323208-practice:-Dialectica/index.html) (6 topics)
 
 * [seminar: EM-cats](stream/298571-seminar:-EM-cats/index.html) (6 topics)
 
@@ -111,8 +113,6 @@ permalink: /index.html
 * [ACT@UMD seminar](stream/229967-ACT@UMD-seminar/index.html) (5 topics)
 
 * [languages: Deutsch/German](stream/231144-languages:-Deutsch/German/index.html) (5 topics)
-
-* [practice: Dialectica](stream/323208-practice:-Dialectica/index.html) (5 topics)
 
 * [languages: espanol/Spanish](stream/231120-languages:-espanol/Spanish/index.html) (4 topics)
 
@@ -160,4 +160,4 @@ permalink: /index.html
 
 * [theory: alternate presentations](stream/233122-theory:-alternate-presentations/index.html) (1 topic)
 
-<hr><p>Last updated: May 04 2022 at 00:47 UTC</p>
+<hr><p>Last updated: May 05 2022 at 00:47 UTC</p>

@@ -9,6 +9,7 @@ permalink: /stream/229156-practice:-applied-ct/index.html
 
 ### Topics:
 
+* [ACT wiki?](topic/topic_ACT.20wiki.3F.html) (34 messages, latest: May 04 2022 at 17:23)
 * [Category theory for nested data structures](topic/topic_Category.20theory.20for.20nested.20data.20structures.html) (4 messages, latest: May 03 2022 at 22:59)
 * [around machine learning](topic/topic_around.20machine.20learning.html) (46 messages, latest: May 02 2022 at 15:11)
 * [Petri nets and programming languages](topic/topic_Petri.20nets.20and.20programming.20languages.html) (67 messages, latest: May 02 2022 at 12:12)
@@ -141,4 +142,4 @@ permalink: /stream/229156-practice:-applied-ct/index.html
 * [AACT2020](topic/topic_AACT2020.html) (1 message, latest: Mar 24 2020 at 00:56)
 * [welcome](topic/topic_welcome.html) (15 messages, latest: Mar 24 2020 at 00:03)
 
-<hr><p>Last updated: May 04 2022 at 00:47 UTC</p>
+<hr><p>Last updated: May 05 2022 at 00:47 UTC</p>
