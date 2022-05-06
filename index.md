@@ -46,9 +46,9 @@ permalink: /index.html
 
 * [Categorical Probability and Statistics 2020 workshop](stream/238032-Categorical-Probability-and-Statistics-2020-workshop/index.html) (34 topics)
 
-* [general: values](stream/241990-general:-values/index.html) (25 topics)
+* [learning: recommendations](stream/232161-learning:-recommendations/index.html) (26 topics)
 
-* [learning: recommendations](stream/232161-learning:-recommendations/index.html) (25 topics)
+* [general: values](stream/241990-general:-values/index.html) (25 topics)
 
 * [practice: software](stream/229125-practice:-software/index.html) (23 topics)
 
@@ -58,7 +58,7 @@ permalink: /index.html
 
 * [practice: our work](stream/274877-practice:-our-work/index.html) (20 topics)
 
-* [theory: probability](stream/253118-theory:-probability/index.html) (17 topics)
+* [theory: probability](stream/253118-theory:-probability/index.html) (18 topics)
 
 * [philosophy](stream/229134-philosophy/index.html) (16 topics)
 
@@ -160,4 +160,4 @@ permalink: /index.html
 
 * [theory: alternate presentations](stream/233122-theory:-alternate-presentations/index.html) (1 topic)
 
-<hr><p>Last updated: May 05 2022 at 00:47 UTC</p>
+<hr><p>Last updated: May 06 2022 at 00:42 UTC</p>

@@ -9,6 +9,7 @@ permalink: /stream/253118-theory:-probability/index.html
 
 ### Topics:
 
+* [expectation](topic/topic_expectation.html) (5 messages, latest: May 05 2022 at 23:41)
 * [generalizing mutual information](topic/topic_generalizing.20mutual.20information.html) (8 messages, latest: Jan 10 2022 at 16:54)
 * [Generalizing mutual information](topic/topic_Generalizing.20mutual.20information.html) (2 messages, latest: Nov 20 2021 at 15:56)
 * [Does the category of standard Borel spaces have pullbacks?](topic/topic_Does.20the.20category.20of.20standard.20Borel.20spaces.20have.20pullbacks.3F.html) (24 messages, latest: Oct 25 2021 at 16:31)
@@ -27,4 +28,4 @@ permalink: /stream/253118-theory:-probability/index.html
 * [Finitely additive probability](topic/topic_Finitely.20additive.20probability.html) (1 message, latest: Aug 16 2020 at 00:48)
 * [stream events](topic/topic_stream.20events.html) (2 messages, latest: Aug 16 2020 at 00:31)
 
-<hr><p>Last updated: May 05 2022 at 00:47 UTC</p>
+<hr><p>Last updated: May 06 2022 at 00:42 UTC</p>

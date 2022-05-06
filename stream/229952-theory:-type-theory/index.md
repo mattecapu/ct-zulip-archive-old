@@ -9,7 +9,7 @@ permalink: /stream/229952-theory:-type-theory/index.html
 
 ### Topics:
 
-* [higher category theory with a type theory background](topic/topic_higher.20category.20theory.20with.20a.20type.20theory.20background.html) (6 messages, latest: May 05 2022 at 00:23)
+* [higher category theory with a type theory background](topic/topic_higher.20category.20theory.20with.20a.20type.20theory.20background.html) (7 messages, latest: May 05 2022 at 06:10)
 * [internal language for initial algebras](topic/topic_internal.20language.20for.20initial.20algebras.html) (4 messages, latest: Apr 28 2022 at 02:54)
 * [applications of category theory in computer science](topic/topic_applications.20of.20category.20theory.20in.20computer.20science.html) (3 messages, latest: Apr 15 2022 at 10:53)
 * [Applications of Category Theory in Computer Science](topic/topic_Applications.20of.20Category.20Theory.20in.20Computer.20Science.html) (3 messages, latest: Apr 14 2022 at 09:29)
@@ -54,4 +54,4 @@ permalink: /stream/229952-theory:-type-theory/index.html
 * [stream events](topic/topic_stream.20events.html) (3 messages, latest: Apr 06 2020 at 05:32)
 * [W-types and CFGs](topic/topic_W-types.20and.20CFGs.html) (11 messages, latest: Apr 02 2020 at 16:00)
 
-<hr><p>Last updated: May 05 2022 at 00:47 UTC</p>
+<hr><p>Last updated: May 06 2022 at 00:42 UTC</p>
