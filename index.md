@@ -14,9 +14,9 @@ permalink: /index.html
 
 * [general](stream/229111-general/index.html) (224 topics)
 
-* [practice: applied ct](stream/229156-practice:-applied-ct/index.html) (132 topics)
+* [practice: applied ct](stream/229156-practice:-applied-ct/index.html) (133 topics)
 
-* [general: events](stream/229141-general:-events/index.html) (125 topics)
+* [general: events](stream/229141-general:-events/index.html) (126 topics)
 
 * [theory: topos theory](stream/230087-theory:-topos-theory/index.html) (74 topics)
 
@@ -102,7 +102,7 @@ permalink: /index.html
 
 * [learning: statistics reading group](stream/245528-learning:-statistics-reading-group/index.html) (7 topics)
 
-* [practice: Dialectica](stream/323208-practice:-Dialectica/index.html) (6 topics)
+* [practice: Dialectica](stream/323208-practice:-Dialectica/index.html) (7 topics)
 
 * [seminar: EM-cats](stream/298571-seminar:-EM-cats/index.html) (6 topics)
 
@@ -160,4 +160,4 @@ permalink: /index.html
 
 * [theory: alternate presentations](stream/233122-theory:-alternate-presentations/index.html) (1 topic)
 
-<hr><p>Last updated: May 06 2022 at 00:42 UTC</p>
+<hr><p>Last updated: May 07 2022 at 00:42 UTC</p>

@@ -82,5 +82,113 @@
         "id": 281363437,
         "sender_full_name": "Nathanael Arkor",
         "timestamp": 1651787097
+    },
+    {
+        "content": "<p>I think saying that \"an undirected category is to an undirected graph what a category is to a directed graph\" is incomplete, because you fail to specify what it is that you want to be able to compose. For a category, what matters is the ability to compose <em>finite paths</em> in a directed graph into single edges.</p>",
+        "id": 281399186,
+        "sender_full_name": "Amar Hadzihasanovic",
+        "timestamp": 1651818804
+    },
+    {
+        "content": "<p>So in an undirected graph, you have different options.</p>\n<p>You may still want to compose finite paths. But to speak of a path in an undirected graph, you are implicitly using a directed representation, where an edge is represented with a pair of directed edges going in opposite directions.</p>",
+        "id": 281399258,
+        "sender_full_name": "Amar Hadzihasanovic",
+        "timestamp": 1651818880
+    },
+    {
+        "content": "<p>And then what you get, I think, would be exactly a dagger category.</p>",
+        "id": 281399279,
+        "sender_full_name": "Amar Hadzihasanovic",
+        "timestamp": 1651818913
+    },
+    {
+        "content": "<p>Or a groupoid if you decide that going back and forth the same edge is the same as doing nothing.</p>",
+        "id": 281399297,
+        "sender_full_name": "Amar Hadzihasanovic",
+        "timestamp": 1651818941
+    },
+    {
+        "content": "<p>But if what you are saying is that you want to replace the tuple A, B with the multiset AB, then you actually don't have the ability to distinguish between the direction in which you traverse an edge.</p>",
+        "id": 281399416,
+        "sender_full_name": "Amar Hadzihasanovic",
+        "timestamp": 1651819072
+    },
+    {
+        "content": "<p>So what you could do, at best, is try to compose the <em>support</em> of a finite path, i.e. a connected set, or a list of edges... but what do you compose them to?</p>",
+        "id": 281399649,
+        "sender_full_name": "Amar Hadzihasanovic",
+        "timestamp": 1651819304
+    },
+    {
+        "content": "<p>For a path, you have a notion of endpoints, so you compose to an edge between the endpoints. If you just look at the support of the path, you don't. So e.g. should the composite of an edge between A,B with an edge between B,A be a loop on B, or a loop on A, or something else?..</p>",
+        "id": 281399889,
+        "sender_full_name": "Amar Hadzihasanovic",
+        "timestamp": 1651819535
+    },
+    {
+        "content": "<p>The only way I can conceivably think of something that makes sense would be to introduce some \"higher homotopies\" into your graph and say something like:</p>\n<p>You can compose any connected subgraph, and its composite is a single-edge subgraph, together with a homotopy from the connected subgraph onto its composite.</p>",
+        "id": 281400309,
+        "sender_full_name": "Amar Hadzihasanovic",
+        "timestamp": 1651819923
+    },
+    {
+        "content": "<p>Then, to get something that is “1-category-like”, you kill all the higher homotopies (make it so that “the space of contractions onto the composite of a subgraph is contractible”)...</p>",
+        "id": 281400563,
+        "sender_full_name": "Amar Hadzihasanovic",
+        "timestamp": 1651820177
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276092\">Nathanael Arkor</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/multisets.20vs.20tuples/near/281363437\">said</a>:</p>\n<blockquote>\n<p>If you want an undirected notion of category, doesn't the notion of <a href=\"https://ncatlab.org/nlab/show/groupoid\">[[groupoid]]</a> suffice?</p>\n</blockquote>\n<p>Well the game here is not to aim for undirected (that's just a side-effect) but to use multisets of fixed cardinality instead of tuples in the basic definition of category, which then seems to extend to higher arity morphisms.</p>",
+        "id": 281428931,
+        "sender_full_name": "Carlos Zapata-Carratala",
+        "timestamp": 1651839040
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276363\">Amar Hadzihasanovic</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/multisets.20vs.20tuples/near/281399889\">said</a>:</p>\n<blockquote>\n<p>For a path, you have a notion of endpoints, so you compose to an edge between the endpoints. If you just look at the support of the path, you don't. So e.g. should the composite of an edge between A,B with an edge between B,A be a loop on B, or a loop on A, or something else?..</p>\n</blockquote>\n<p>With the obvious definition of (unoriented) concatenation of paths there is no ambiguity in the sense you claim since edges between A,B and B,A are the same: edges of the \"multihomset\" AB. Without invoking any higher homotopy, couldn't this notion of concatenation of (unoriented) paths work just fine: two undirected paths (chains of edges) can be composed if they share exactly one end-vertex. You could extend this definition to account for sharing the two end-vertices by making the composition double-valued or simply giving two possibilities. In your example, given two edges f,h on vertices AB you can take the one-end-vertex composition in two possible ways and obtain a loop in AA and a lopp in BB.</p>",
+        "id": 281430108,
+        "sender_full_name": "Carlos Zapata-Carratala",
+        "timestamp": 1651839710
+    },
+    {
+        "content": "<p>Ok, I agree: if we place restrictions on composition (e.g. we can compose only “linear strings of edges”) or if we let composition be multi-valued, then it could work, but at least in the latter case I think you wouldn't get anything substantially different from a dagger category.</p>",
+        "id": 281432649,
+        "sender_full_name": "Amar Hadzihasanovic",
+        "timestamp": 1651841128
+    },
+    {
+        "content": "<p>As in, you would have the exact same data as a dagger category, but you wouldn't allow yourself to compose a path with a specific orientation, and instead you would let composition return the set of composites of all directed paths ranging over all suitable orientations of the edges.</p>",
+        "id": 281432899,
+        "sender_full_name": "Amar Hadzihasanovic",
+        "timestamp": 1651841255
+    },
+    {
+        "content": "<p>(Actually I'm not sure of this, I'd need to think more...)</p>",
+        "id": 281434263,
+        "sender_full_name": "Amar Hadzihasanovic",
+        "timestamp": 1651841897
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276363\">Amar Hadzihasanovic</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/multisets.20vs.20tuples/near/281432649\">said</a>:</p>\n<blockquote>\n<p>Ok, I agree: if we place restrictions on composition (e.g. we can compose only “linear strings of edges”) or if we let composition be multi-valued, then it could work, but at least in the latter case I think you wouldn't get anything substantially different from a dagger category.</p>\n</blockquote>\n<p>In that case the closest analogue is a groupoid in particular.</p>",
+        "id": 281440163,
+        "sender_full_name": "Carlos Zapata-Carratala",
+        "timestamp": 1651844549
+    },
+    {
+        "content": "<p>Following up on the \"categories are to directed graphs as...\" idea, I would propose starting by working out what you want a free undirected category on an undirected graph G to be. You can just take paths, but that's not so interesting when you always can put an ordering on paths with labelled end-points, and as has been discussed it seems to reduce to groupoids.</p>\n<p>One alternative possibility would be to have, rather than hom-sets defined on pairs, have hom-multisets defined on all finite multisets of vertices, where an element of hom(ABC...) is an undirected graph whose vertex set is (ABC...), equipped with a graph homomorphism to G which preserves the labelling of vertices. The simplest notion of composition would be disjoint union, which makes it a total operation. An alternative is to make the composition relational, so that you can keep track of all of the possible ways of gluing graphs along vertices in the intersection of two multisets?</p>",
+        "id": 281443703,
+        "sender_full_name": "Morgan Rogers (he/him)",
+        "timestamp": 1651846232
+    },
+    {
+        "content": "<p>Or you could take a disjoint union of all of the possible gluings if you don't mind things blowing up really fast ;)</p>",
+        "id": 281443798,
+        "sender_full_name": "Morgan Rogers (he/him)",
+        "timestamp": 1651846273
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"277473\">Morgan Rogers (he/him)</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/multisets.20vs.20tuples/near/281443703\">said</a>:</p>\n<blockquote>\n<p>One alternative possibility would be to have, rather than hom-sets defined on pairs, have hom-multisets defined on all finite multisets of vertices, where an element of hom(ABC...) is an undirected graph whose vertex set is (ABC...), equipped with a graph homomorphism to G which preserves the labelling of vertices. The simplest notion of composition would be disjoint union, which makes it a total operation. An alternative is to make the composition relational, so that you can keep track of all of the possible ways of gluing graphs along vertices in the intersection of two multisets?</p>\n</blockquote>\n<p>That's precisely my approach when defining higher arity generalizations of morphisms as undirected hyperedges. The fun starts when you try to think of hypergraph rewrite systems as generalizations of compositions (my current research). I wanted to keep the discussion focused on the \"tuples vs fixed cardinality multisets\" topic first just to see how much mathematical baggage one can leave behind when generalizing these sort of structures.</p>",
+        "id": 281465923,
+        "sender_full_name": "Carlos Zapata-Carratala",
+        "timestamp": 1651856215
     }
 ]
