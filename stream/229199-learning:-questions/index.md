@@ -9,6 +9,7 @@ permalink: /stream/229199-learning:-questions/index.html
 
 ### Topics:
 
+* [Comonoids in partial functions](topic/topic_Comonoids.20in.20partial.20functions.html) (45 messages, latest: May 07 2022 at 05:01)
 * [multisets vs tuples](topic/topic_multisets.20vs.20tuples.html) (32 messages, latest: May 06 2022 at 16:56)
 * [beginner questions](topic/topic_beginner.20questions.html) (498 messages, latest: May 04 2022 at 23:49)
 * [enriched graphs](topic/topic_enriched.20graphs.html) (102 messages, latest: Apr 27 2022 at 14:30)
@@ -273,7 +274,6 @@ permalink: /stream/229199-learning:-questions/index.html
 * [generator-preserving functors](topic/topic_generator-preserving.20functors.html) (7 messages, latest: Jun 09 2021 at 21:37)
 * [every object is a copower](topic/topic_every.20object.20is.20a.20copower.html) (25 messages, latest: Jun 08 2021 at 21:27)
 * [Product of finitely presentable objects?](topic/topic_Product.20of.20finitely.20presentable.20objects.3F.html) (11 messages, latest: Jun 06 2021 at 12:53)
-* [Comonoids in partial functions](topic/topic_Comonoids.20in.20partial.20functions.html) (42 messages, latest: Jun 06 2021 at 09:53)
 * [symmetric difference](topic/topic_symmetric.20difference.html) (18 messages, latest: Jun 04 2021 at 08:16)
 * [isotropic relations](topic/topic_isotropic.20relations.html) (1 message, latest: Jun 03 2021 at 08:14)
 * [Isotropic Relations](topic/topic_Isotropic.20Relations.html) (4 messages, latest: Jun 03 2021 at 01:52)
@@ -674,4 +674,4 @@ permalink: /stream/229199-learning:-questions/index.html
 * [Algebra (Aluffi) exercises](topic/topic_Algebra.20(Aluffi).20exercises.html) (55 messages, latest: Mar 27 2020 at 23:38)
 * [What is category theory about?](topic/topic_What.20is.20category.20theory.20about.3F.html) (16 messages, latest: Mar 26 2020 at 16:03)
 
-<hr><p>Last updated: May 07 2022 at 00:42 UTC</p>
+<hr><p>Last updated: May 08 2022 at 00:43 UTC</p>

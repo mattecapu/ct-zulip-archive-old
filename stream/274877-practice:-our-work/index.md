@@ -9,9 +9,9 @@ permalink: /stream/274877-practice:-our-work/index.html
 
 ### Topics:
 
+* [Jon Sterling](topic/topic_Jon.20Sterling.html) (25 messages, latest: May 07 2022 at 21:49)
+* [Ralph Sarkis](topic/topic_Ralph.20Sarkis.html) (21 messages, latest: May 07 2022 at 17:24)
 * [John Baez](topic/topic_John.20Baez.html) (395 messages, latest: May 06 2022 at 07:00)
-* [Jon Sterling](topic/topic_Jon.20Sterling.html) (22 messages, latest: Apr 23 2022 at 22:01)
-* [Ralph Sarkis](topic/topic_Ralph.20Sarkis.html) (19 messages, latest: Apr 17 2022 at 20:56)
 * [Mike Shulman](topic/topic_Mike.20Shulman.html) (138 messages, latest: Apr 08 2022 at 14:03)
 * [David Roberts](topic/topic_David.20Roberts.html) (41 messages, latest: Apr 07 2022 at 03:59)
 * [Morgan Rogers](topic/topic_Morgan.20Rogers.html) (13 messages, latest: Mar 24 2022 at 07:58)
@@ -30,4 +30,4 @@ permalink: /stream/274877-practice:-our-work/index.html
 * [stream events](topic/topic_stream.20events.html) (6 messages, latest: Jan 31 2021 at 03:39)
 * [thoughts on sharing ideas](topic/topic_thoughts.20on.20sharing.20ideas.html) (20 messages, latest: Jan 31 2021 at 03:05)
 
-<hr><p>Last updated: May 07 2022 at 00:42 UTC</p>
+<hr><p>Last updated: May 08 2022 at 00:43 UTC</p>

@@ -18,7 +18,7 @@ permalink: /index.html
 
 * [general: events](stream/229141-general:-events/index.html) (126 topics)
 
-* [theory: topos theory](stream/230087-theory:-topos-theory/index.html) (74 topics)
+* [theory: topos theory](stream/230087-theory:-topos-theory/index.html) (75 topics)
 
 * [conference: ACT 2020](stream/243068-conference:-ACT-2020/index.html) (62 topics)
 
@@ -58,7 +58,7 @@ permalink: /index.html
 
 * [practice: our work](stream/274877-practice:-our-work/index.html) (20 topics)
 
-* [theory: probability](stream/253118-theory:-probability/index.html) (18 topics)
+* [theory: probability](stream/253118-theory:-probability/index.html) (19 topics)
 
 * [philosophy](stream/229134-philosophy/index.html) (16 topics)
 
@@ -72,9 +72,9 @@ permalink: /index.html
 
 * [seminar: ACT@UCR](stream/229966-seminar:-ACT@UCR/index.html) (15 topics)
 
-* [practice: programming](stream/229450-practice:-programming/index.html) (14 topics)
+* [theory: algebraic geometry](stream/231112-theory:-algebraic-geometry/index.html) (15 topics)
 
-* [theory: algebraic geometry](stream/231112-theory:-algebraic-geometry/index.html) (14 topics)
+* [practice: programming](stream/229450-practice:-programming/index.html) (14 topics)
 
 * [working: discrete geometry and entanglement](stream/266854-working:-discrete-geometry-and-entanglement/index.html) (14 topics)
 
@@ -160,4 +160,4 @@ permalink: /index.html
 
 * [theory: alternate presentations](stream/233122-theory:-alternate-presentations/index.html) (1 topic)
 
-<hr><p>Last updated: May 07 2022 at 00:42 UTC</p>
+<hr><p>Last updated: May 08 2022 at 00:43 UTC</p>
