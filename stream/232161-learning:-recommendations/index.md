@@ -9,7 +9,7 @@ permalink: /stream/232161-learning:-recommendations/index.html
 
 ### Topics:
 
-* [learning homotopy type theory](topic/topic_learning.20homotopy.20type.20theory.html) (1 message, latest: May 05 2022 at 12:00)
+* [learning homotopy type theory](topic/topic_learning.20homotopy.20type.20theory.html) (2 messages, latest: May 08 2022 at 13:44)
 * [Learning Homotopy Type Theory](topic/topic_Learning.20Homotopy.20Type.20Theory.html) (4 messages, latest: May 05 2022 at 05:53)
 * [smooth sets](topic/topic_smooth.20sets.html) (17 messages, latest: Feb 07 2022 at 02:40)
 * [categories in computer science](topic/topic_categories.20in.20computer.20science.html) (1 message, latest: Jan 26 2022 at 18:28)
@@ -36,4 +36,4 @@ permalink: /stream/232161-learning:-recommendations/index.html
 * [string diagrams](topic/topic_string.20diagrams.html) (22 messages, latest: Apr 11 2020 at 21:49)
 * [stream events](topic/topic_stream.20events.html) (2 messages, latest: Apr 06 2020 at 18:16)
 
-<hr><p>Last updated: May 08 2022 at 00:43 UTC</p>
+<hr><p>Last updated: May 09 2022 at 00:50 UTC</p>

@@ -9,10 +9,10 @@ permalink: /stream/229156-practice:-applied-ct/index.html
 
 ### Topics:
 
+* [around machine learning](topic/topic_around.20machine.20learning.html) (47 messages, latest: May 08 2022 at 12:34)
 * [ACT22](topic/topic_ACT22.html) (6 messages, latest: May 06 2022 at 17:13)
 * [ACT wiki?](topic/topic_ACT.20wiki.3F.html) (39 messages, latest: May 06 2022 at 04:43)
 * [Category theory for nested data structures](topic/topic_Category.20theory.20for.20nested.20data.20structures.html) (4 messages, latest: May 03 2022 at 22:59)
-* [around machine learning](topic/topic_around.20machine.20learning.html) (46 messages, latest: May 02 2022 at 15:11)
 * [Petri nets and programming languages](topic/topic_Petri.20nets.20and.20programming.20languages.html) (67 messages, latest: May 02 2022 at 12:12)
 * [process categories](topic/topic_process.20categories.html) (46 messages, latest: Apr 28 2022 at 18:18)
 * [constants in empirical models](topic/topic_constants.20in.20empirical.20models.html) (3 messages, latest: Apr 26 2022 at 08:41)
@@ -143,4 +143,4 @@ permalink: /stream/229156-practice:-applied-ct/index.html
 * [AACT2020](topic/topic_AACT2020.html) (1 message, latest: Mar 24 2020 at 00:56)
 * [welcome](topic/topic_welcome.html) (15 messages, latest: Mar 24 2020 at 00:03)
 
-<hr><p>Last updated: May 08 2022 at 00:43 UTC</p>
+<hr><p>Last updated: May 09 2022 at 00:50 UTC</p>

@@ -32,4 +32,4 @@ permalink: /stream/232163-learning:-history-of-ideas/index.html
 * [All things Feynman](topic/topic_All.20things.20Feynman.html) (2 messages, latest: May 22 2020 at 06:04)
 * [stream events](topic/topic_stream.20events.html) (2 messages, latest: Apr 06 2020 at 18:15)
 
-<hr><p>Last updated: May 08 2022 at 00:43 UTC</p>
+<hr><p>Last updated: May 09 2022 at 00:50 UTC</p>

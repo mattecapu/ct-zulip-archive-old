@@ -9,8 +9,8 @@ permalink: /stream/229136-theory:-category-theory/index.html
 
 ### Topics:
 
+* [fibrations and quantifiers](topic/topic_fibrations.20and.20quantifiers.html) (53 messages, latest: May 08 2022 at 19:42)
 * [semistrictification theorem for tetracats?](topic/topic_semistrictification.20theorem.20for.20tetracats.3F.html) (36 messages, latest: May 05 2022 at 15:40)
-* [fibrations and quantifiers](topic/topic_fibrations.20and.20quantifiers.html) (40 messages, latest: May 04 2022 at 17:43)
 * [lifting monads to lax limit categories](topic/topic_lifting.20monads.20to.20lax.20limit.20categories.html) (10 messages, latest: May 04 2022 at 14:47)
 * [Semistrictification theorem for tetracats?](topic/topic_Semistrictification.20theorem.20for.20tetracats.3F.html) (3 messages, latest: May 03 2022 at 16:55)
 * [discrete fibrations are left Beck-Chevalley](topic/topic_discrete.20fibrations.20are.20left.20Beck-Chevalley.html) (3 messages, latest: Apr 27 2022 at 16:17)
@@ -279,4 +279,4 @@ permalink: /stream/229136-theory:-category-theory/index.html
 * [diagrams for application](topic/topic_diagrams.20for.20application.html) (13 messages, latest: Mar 24 2020 at 06:19)
 * [universal constructions](topic/topic_universal.20constructions.html) (8 messages, latest: Mar 23 2020 at 21:06)
 
-<hr><p>Last updated: May 08 2022 at 00:43 UTC</p>
+<hr><p>Last updated: May 09 2022 at 00:50 UTC</p>
