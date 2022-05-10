@@ -9,6 +9,7 @@ permalink: /stream/258900-practice:-our-papers/index.html
 
 ### Topics:
 
+* [stream events](topic/topic_stream.20events.html) (3 messages, latest: May 09 2022 at 21:14)
 * [Cornering Optics](topic/topic_Cornering.20Optics.html) (57 messages, latest: May 04 2022 at 16:36)
 * [Yoneda Hacking: The Algebra of Attacker Actions](topic/topic_Yoneda.20Hacking.3A.20The.20Algebra.20of.20Attacker.20Actions.html) (41 messages, latest: May 02 2022 at 15:57)
 * [sheaf semantics of termination-insensitive noninterference](topic/topic_sheaf.20semantics.20of.20termination-insensitive.20noninterference.html) (1 message, latest: Apr 19 2022 at 16:34)
@@ -51,7 +52,6 @@ permalink: /stream/258900-practice:-our-papers/index.html
 * [LICS paper](topic/topic_LICS.20paper.html) (5 messages, latest: Jan 23 2021 at 19:52)
 * [Nets with Mana: A Framework for Chemical Reaction Modelling](topic/topic_Nets.20with.20Mana.3A.20A.20Framework.20for.20Chemical.20Reaction.20Modelling.html) (10 messages, latest: Jan 18 2021 at 13:10)
 * [Functorial semantics for partial theories](topic/topic_Functorial.20semantics.20for.20partial.20theories.html) (30 messages, latest: Nov 29 2020 at 08:46)
-* [stream events](topic/topic_stream.20events.html) (2 messages, latest: Oct 05 2020 at 15:30)
 * [Coends of higher arity](topic/topic_Coends.20of.20higher.20arity.html) (3 messages, latest: Sep 26 2020 at 16:28)
 
-<hr><p>Last updated: May 09 2022 at 00:50 UTC</p>
+<hr><p>Last updated: May 10 2022 at 00:44 UTC</p>

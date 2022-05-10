@@ -10,13 +10,13 @@ permalink: /index.html
 
 * [learning: questions](stream/229199-learning:-questions/index.html) (664 topics)
 
-* [theory: category theory](stream/229136-theory:-category-theory/index.html) (269 topics)
+* [theory: category theory](stream/229136-theory:-category-theory/index.html) (270 topics)
 
-* [general](stream/229111-general/index.html) (224 topics)
+* [general](stream/229111-general/index.html) (225 topics)
 
 * [practice: applied ct](stream/229156-practice:-applied-ct/index.html) (133 topics)
 
-* [general: events](stream/229141-general:-events/index.html) (126 topics)
+* [general: events](stream/229141-general:-events/index.html) (127 topics)
 
 * [theory: topos theory](stream/230087-theory:-topos-theory/index.html) (75 topics)
 
@@ -26,15 +26,15 @@ permalink: /index.html
 
 * [theory: algebraic topology & homological algebra](stream/241590-theory:-algebraic-topology-&-homological-algebra/index.html) (56 topics)
 
-* [seminar: Topos Colloquium](stream/269484-seminar:-Topos-Colloquium/index.html) (54 topics)
+* [seminar: Topos Colloquium](stream/269484-seminar:-Topos-Colloquium/index.html) (55 topics)
 
-* [general: mathematics](stream/266967-general:-mathematics/index.html) (53 topics)
+* [general: mathematics](stream/266967-general:-mathematics/index.html) (54 topics)
 
 * [practice: thermodynamics](stream/306433-practice:-thermodynamics/index.html) (50 topics)
 
 * [theory: logic](stream/233104-theory:-logic/index.html) (46 topics)
 
-* [general: positions](stream/245502-general:-positions/index.html) (44 topics)
+* [general: positions](stream/245502-general:-positions/index.html) (45 topics)
 
 * [practice: our papers](stream/258900-practice:-our-papers/index.html) (44 topics)
 
@@ -56,9 +56,9 @@ permalink: /index.html
 
 * [workshop: Polynomial Functors @ Topos](stream/282140-workshop:-Polynomial-Functors-@-Topos/index.html) (22 topics)
 
-* [practice: our work](stream/274877-practice:-our-work/index.html) (20 topics)
+* [practice: our work](stream/274877-practice:-our-work/index.html) (21 topics)
 
-* [theory: probability](stream/253118-theory:-probability/index.html) (19 topics)
+* [theory: probability](stream/253118-theory:-probability/index.html) (20 topics)
 
 * [philosophy](stream/229134-philosophy/index.html) (16 topics)
 
@@ -90,11 +90,11 @@ permalink: /index.html
 
 * [conference: CT20->21](stream/298844-conference:-CT20->21/index.html) (9 topics)
 
+* [practice: chemistry](stream/322714-practice:-chemistry/index.html) (9 topics)
+
 * [theory: concurrency](stream/235484-theory:-concurrency/index.html) (9 topics)
 
 * [languages: italiano/Italian](stream/231111-languages:-italiano/Italian/index.html) (8 topics)
-
-* [practice: chemistry](stream/322714-practice:-chemistry/index.html) (8 topics)
 
 * [theory: monoids](stream/231815-theory:-monoids/index.html) (8 topics)
 
@@ -160,4 +160,4 @@ permalink: /index.html
 
 * [theory: alternate presentations](stream/233122-theory:-alternate-presentations/index.html) (1 topic)
 
-<hr><p>Last updated: May 09 2022 at 00:50 UTC</p>
+<hr><p>Last updated: May 10 2022 at 00:44 UTC</p>

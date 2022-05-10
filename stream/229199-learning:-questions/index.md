@@ -9,7 +9,7 @@ permalink: /stream/229199-learning:-questions/index.html
 
 ### Topics:
 
-* [beginner questions](topic/topic_beginner.20questions.html) (518 messages, latest: May 08 2022 at 23:23)
+* [beginner questions](topic/topic_beginner.20questions.html) (522 messages, latest: May 09 2022 at 17:01)
 * [Comonoids in partial functions](topic/topic_Comonoids.20in.20partial.20functions.html) (45 messages, latest: May 07 2022 at 05:01)
 * [multisets vs tuples](topic/topic_multisets.20vs.20tuples.html) (32 messages, latest: May 06 2022 at 16:56)
 * [enriched graphs](topic/topic_enriched.20graphs.html) (102 messages, latest: Apr 27 2022 at 14:30)
@@ -674,4 +674,4 @@ permalink: /stream/229199-learning:-questions/index.html
 * [Algebra (Aluffi) exercises](topic/topic_Algebra.20(Aluffi).20exercises.html) (55 messages, latest: Mar 27 2020 at 23:38)
 * [What is category theory about?](topic/topic_What.20is.20category.20theory.20about.3F.html) (16 messages, latest: Mar 26 2020 at 16:03)
 
-<hr><p>Last updated: May 09 2022 at 00:50 UTC</p>
+<hr><p>Last updated: May 10 2022 at 00:44 UTC</p>

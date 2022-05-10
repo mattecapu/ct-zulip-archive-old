@@ -9,7 +9,8 @@ permalink: /stream/266967-general:-mathematics/index.html
 
 ### Topics:
 
-* [Category of infinity-metric spaces (references?)](topic/topic_Category.20of.20infinity-metric.20spaces.20(references.3F).html) (5 messages, latest: May 08 2022 at 23:57)
+* [stream events](topic/topic_stream.20events.html) (1 message, latest: May 09 2022 at 20:34)
+* [Category of infinity-metric spaces (references?)](topic/topic_Category.20of.20infinity-metric.20spaces.20(references.3F).html) (6 messages, latest: May 09 2022 at 06:59)
 * [monomial endofunctors](topic/topic_monomial.20endofunctors.html) (3 messages, latest: Apr 21 2022 at 16:16)
 * [Monomial endofunctors](topic/topic_Monomial.20endofunctors.html) (3 messages, latest: Apr 21 2022 at 04:13)
 * [almost linear map](topic/topic_almost.20linear.20map.html) (31 messages, latest: Apr 14 2022 at 15:54)
@@ -63,4 +64,4 @@ permalink: /stream/266967-general:-mathematics/index.html
 * [the 600-cell](topic/topic_the.20600-cell.html) (5 messages, latest: Dec 01 2020 at 16:35)
 * [hermitian matrix over normed division algebra](topic/topic_hermitian.20matrix.20over.20normed.20division.20algebra.html) (8 messages, latest: Sep 28 2020 at 21:19)
 
-<hr><p>Last updated: May 09 2022 at 00:50 UTC</p>
+<hr><p>Last updated: May 10 2022 at 00:44 UTC</p>

@@ -9,8 +9,9 @@ permalink: /stream/229111-general/index.html
 
 ### Topics:
 
-* [nLab](topic/topic_nLab.html) (163 messages, latest: May 08 2022 at 23:56)
-* [introduce yourself!](topic/topic_introduce.20yourself!.html) (45 messages, latest: May 08 2022 at 17:14)
+* [web-public streams](topic/topic_web-public.20streams.html) (4 messages, latest: May 09 2022 at 21:07)
+* [nLab](topic/topic_nLab.html) (178 messages, latest: May 09 2022 at 20:07)
+* [introduce yourself!](topic/topic_introduce.20yourself!.html) (46 messages, latest: May 09 2022 at 04:07)
 * [Pieter Hofstra](topic/topic_Pieter.20Hofstra.html) (11 messages, latest: May 04 2022 at 22:05)
 * [Introduce Yourself!](topic/topic_Introduce.20Yourself!.html) (704 messages, latest: Apr 30 2022 at 20:11)
 * [new streams](topic/topic_new.20streams.html) (91 messages, latest: Apr 29 2022 at 06:47)
@@ -234,4 +235,4 @@ permalink: /stream/229111-general/index.html
 * [Tools for diagrams](topic/topic_Tools.20for.20diagrams.html) (78 messages, latest: Mar 25 2020 at 17:53)
 * [topic demonstration](topic/topic_topic.20demonstration.html) (2 messages, latest: Mar 23 2020 at 16:57)
 
-<hr><p>Last updated: May 09 2022 at 00:50 UTC</p>
+<hr><p>Last updated: May 10 2022 at 00:44 UTC</p>

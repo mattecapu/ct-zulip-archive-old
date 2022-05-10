@@ -9,8 +9,10 @@ permalink: /stream/229141-general:-events/index.html
 
 ### Topics:
 
+* [Grothendieck conference](topic/topic_Grothendieck.20conference.html) (3 messages, latest: May 09 2022 at 21:18)
+* [stream events](topic/topic_stream.20events.html) (6 messages, latest: May 09 2022 at 21:14)
+* [CMU HoTT Seminar Online: Shulman](topic/topic_CMU.20HoTT.20Seminar.20Online.3A.20Shulman.html) (5 messages, latest: May 09 2022 at 11:46)
 * [CatTh for Cog Sci Workshop](topic/topic_CatTh.20for.20Cog.20Sci.20Workshop.html) (2 messages, latest: May 06 2022 at 17:07)
-* [CMU HoTT Seminar Online: Shulman](topic/topic_CMU.20HoTT.20Seminar.20Online.3A.20Shulman.html) (4 messages, latest: May 05 2022 at 01:57)
 * [Intercats](topic/topic_Intercats.html) (32 messages, latest: May 04 2022 at 09:41)
 * [AMS school on applied category theory](topic/topic_AMS.20school.20on.20applied.20category.20theory.html) (62 messages, latest: Apr 29 2022 at 16:40)
 * [HoTTEST Summer School July–August 2022](topic/topic_HoTTEST.20Summer.20School.20July.E2.80.93August.202022.html) (1 message, latest: Apr 28 2022 at 07:57)
@@ -130,10 +132,9 @@ permalink: /stream/229141-general:-events/index.html
 * [mathematical physics seminar](topic/topic_mathematical.20physics.20seminar.html) (2 messages, latest: Apr 09 2020 at 17:51)
 * [Issues with Zoom / alternatives?](topic/topic_Issues.20with.20Zoom.20.2F.20alternatives.3F.html) (7 messages, latest: Apr 09 2020 at 09:14)
 * [ACT@UCR: Quantifiers as Adjoints](topic/topic_ACT.40UCR.3A.20Quantifiers.20as.20Adjoints.html) (2 messages, latest: Apr 09 2020 at 02:37)
-* [stream events](topic/topic_stream.20events.html) (5 messages, latest: Apr 06 2020 at 05:30)
 * [community calendar](topic/topic_community.20calendar.html) (182 messages, latest: Apr 05 2020 at 18:23)
 * [April 2nd: MIT](topic/topic_April.202nd.3A.20MIT.html) (1 message, latest: Mar 27 2020 at 00:02)
 * [April 1st: ACT@UCR](topic/topic_April.201st.3A.20ACT.40UCR.html) (3 messages, latest: Mar 26 2020 at 23:58)
 * [Google Sites problem](topic/topic_Google.20Sites.20problem.html) (4 messages, latest: Mar 25 2020 at 04:29)
 
-<hr><p>Last updated: May 09 2022 at 00:50 UTC</p>
+<hr><p>Last updated: May 10 2022 at 00:44 UTC</p>
