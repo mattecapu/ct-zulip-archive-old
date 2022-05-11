@@ -16,5 +16,47 @@
         "id": 281747807,
         "sender_full_name": "Valeria de Paiva",
         "timestamp": 1652131414
+    },
+    {
+        "content": "<p>I was looking at your notes this morning Nelson.  Playing around with the definitions of the objects in Agda.</p>\n<div class=\"codehilite\"><pre><span></span><code>record Poly : Set where\n  constructor _▹_\n  field\n    pos : Set\n    dir : pos -&gt; Set\n\nrecord DC : Set where\n    field\n        pos : Set\n        dir : pos -&gt; Set\n        pred : ∀(i : pos)(a : dir i) → Two\n\nrecord Dial (L : Set){{_ : Lineale L}} : Set where\n    field\n        pos : Set\n        dir : pos -&gt; Set\n        pred : ∀(i : pos)(a : dir i) → L\n</code></pre></div>\n<p>This style of definition is the <code>Container/Polynomial</code> definition that is nice to work with in Agda (see <a href=\"https://github.com/bond15/Polynomials-Categorically/blob/97bd7c43157be8d7ead7307347feefa2ed3f2571/ToposPoly/Poly.agda#L14\">here</a>). <br>\nI had not thought about this type of encoding and I'd like to explore this more. Could have interesting applications.</p>\n<p>I also started a \"direct\" encoding of Dialectica <a href=\"https://github.com/bond15/Dialectica/blob/main/DC.agda\">here</a></p>",
+        "id": 281837245,
+        "sender_full_name": "Eric Bond",
+        "timestamp": 1652195101
+    },
+    {
+        "content": "<p>Thanks <span class=\"user-mention\" data-user-id=\"343715\">@Nelson Niu</span>  for a great presentation!</p>",
+        "id": 281869871,
+        "sender_full_name": "Valeria de Paiva",
+        "timestamp": 1652208986
+    },
+    {
+        "content": "<p>This is just to make sure that <span class=\"user-mention\" data-user-id=\"498391\">@Colin Bloomfield</span>  seems this stream! (myself I missed it again, had to go to recent topics to find it)</p>",
+        "id": 281884229,
+        "sender_full_name": "Valeria de Paiva",
+        "timestamp": 1652215737
+    },
+    {
+        "content": "<p>Did anyone at the meeting today saved the chat? I wanted to do a summary, including the chat.</p>",
+        "id": 281884572,
+        "sender_full_name": "Valeria de Paiva",
+        "timestamp": 1652215901
+    },
+    {
+        "content": "<p>I did, up until the very end I think. Where should I put it <span class=\"user-mention\" data-user-id=\"276656\">@Valeria de Paiva</span> ?</p>",
+        "id": 281885186,
+        "sender_full_name": "Jonathan Weinberger",
+        "timestamp": 1652216222
+    },
+    {
+        "content": "<p><span class=\"user-mention\" data-user-id=\"276656\">@Valeria de Paiva</span> you've got <span aria-label=\"mail\" class=\"emoji emoji-2709\" role=\"img\" title=\"mail\">:mail:</span></p>",
+        "id": 281888795,
+        "sender_full_name": "Jonathan Weinberger",
+        "timestamp": 1652218201
+    },
+    {
+        "content": "<p><span class=\"user-mention\" data-user-id=\"380293\">@Eric Bond</span>  I don't think this Agda code is completely  correct. but this is possibly an interesting \"story\"<br>\nthe second block of code does not work for me.</p>\n<p>record DC : Set where<br>\n    field<br>\n        pos : Set<br>\n        dir : pos -&gt; Set<br>\n        pred : ∀(i : pos)(a : dir i) → Two</p>\n<p>If one does a \"dependent Dialectica\" like the above, we have a problem. <br>\nBecause this subcategory is not closed under morphisms! i.e it's not a subcategory.</p>\n<p>The Dialectica category  would have (using the notation above) objects <br>\n(pos, dir, pred) and (pos', dir', pred'), where dir=X^pos and X is a  generic set and similarly<br>\ndir'= X'^pos'.  </p>\n<p>A dialectica morphism would map pos-&gt; pos', but it would not know how to deal with the second coordinate, because <br>\npos\\times dir'=(X')^{pos'} == pos\\times pos'\\to dir' but then I cannot see a natural map into dir.</p>\n<p>Don't know how clear this is, but the point is that Dial objects are not of the form (U, X^U, pred), they're generically (U,X, pred), any X, I cannot force the second coordinate to be of the form X^U. (or maybe I can, but I don't see this immediately. I can see a map using two evaluations plus projections, but don't see why it would satisfy the dialectica condition on the predicates.)</p>",
+        "id": 281894678,
+        "sender_full_name": "Valeria de Paiva",
+        "timestamp": 1652221672
     }
 ]

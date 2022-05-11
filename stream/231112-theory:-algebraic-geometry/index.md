@@ -9,7 +9,7 @@ permalink: /stream/231112-theory:-algebraic-geometry/index.html
 
 ### Topics:
 
-* [homological equivalence of curves](topic/topic_homological.20equivalence.20of.20curves.html) (21 messages, latest: May 07 2022 at 17:44)
+* [homological equivalence of curves](topic/topic_homological.20equivalence.20of.20curves.html) (23 messages, latest: May 10 2022 at 23:36)
 * [Functorial algebraic geometry notes](topic/topic_Functorial.20algebraic.20geometry.20notes.html) (18 messages, latest: Aug 18 2021 at 10:39)
 * [Descent](topic/topic_Descent.html) (450 messages, latest: Nov 15 2020 at 15:33)
 * [who named flat module ?](topic/topic_who.20named.20flat.20module.20.3F.html) (6 messages, latest: Sep 04 2020 at 05:28)
@@ -25,4 +25,4 @@ permalink: /stream/231112-theory:-algebraic-geometry/index.html
 * [stream events](topic/topic_stream.20events.html) (15 messages, latest: Apr 06 2020 at 05:56)
 * [stokes' theorem as a coend](topic/topic_stokes'.20theorem.20as.20a.20coend.html) (3 messages, latest: Apr 02 2020 at 17:58)
 
-<hr><p>Last updated: May 10 2022 at 00:44 UTC</p>
+<hr><p>Last updated: May 11 2022 at 00:49 UTC</p>

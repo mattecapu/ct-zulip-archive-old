@@ -12,7 +12,7 @@ permalink: /index.html
 
 * [theory: category theory](stream/229136-theory:-category-theory/index.html) (270 topics)
 
-* [general](stream/229111-general/index.html) (225 topics)
+* [general](stream/229111-general/index.html) (226 topics)
 
 * [practice: applied ct](stream/229156-practice:-applied-ct/index.html) (133 topics)
 
@@ -36,7 +36,7 @@ permalink: /index.html
 
 * [general: positions](stream/245502-general:-positions/index.html) (45 topics)
 
-* [practice: our papers](stream/258900-practice:-our-papers/index.html) (44 topics)
+* [practice: our papers](stream/258900-practice:-our-papers/index.html) (45 topics)
 
 * [theory: type theory](stream/229952-theory:-type-theory/index.html) (44 topics)
 
@@ -96,13 +96,13 @@ permalink: /index.html
 
 * [languages: italiano/Italian](stream/231111-languages:-italiano/Italian/index.html) (8 topics)
 
+* [practice: Dialectica](stream/323208-practice:-Dialectica/index.html) (8 topics)
+
 * [theory: monoids](stream/231815-theory:-monoids/index.html) (8 topics)
 
 * [languages: francais/French](stream/231124-languages:-francais/French/index.html) (7 topics)
 
 * [learning: statistics reading group](stream/245528-learning:-statistics-reading-group/index.html) (7 topics)
-
-* [practice: Dialectica](stream/323208-practice:-Dialectica/index.html) (7 topics)
 
 * [seminar: EM-cats](stream/298571-seminar:-EM-cats/index.html) (6 topics)
 
@@ -160,4 +160,4 @@ permalink: /index.html
 
 * [theory: alternate presentations](stream/233122-theory:-alternate-presentations/index.html) (1 topic)
 
-<hr><p>Last updated: May 10 2022 at 00:44 UTC</p>
+<hr><p>Last updated: May 11 2022 at 00:49 UTC</p>

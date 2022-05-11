@@ -9,7 +9,7 @@ permalink: /stream/229141-general:-events/index.html
 
 ### Topics:
 
-* [Grothendieck conference](topic/topic_Grothendieck.20conference.html) (3 messages, latest: May 09 2022 at 21:18)
+* [Grothendieck conference](topic/topic_Grothendieck.20conference.html) (9 messages, latest: May 10 2022 at 22:18)
 * [stream events](topic/topic_stream.20events.html) (6 messages, latest: May 09 2022 at 21:14)
 * [CMU HoTT Seminar Online: Shulman](topic/topic_CMU.20HoTT.20Seminar.20Online.3A.20Shulman.html) (5 messages, latest: May 09 2022 at 11:46)
 * [CatTh for Cog Sci Workshop](topic/topic_CatTh.20for.20Cog.20Sci.20Workshop.html) (2 messages, latest: May 06 2022 at 17:07)
@@ -137,4 +137,4 @@ permalink: /stream/229141-general:-events/index.html
 * [April 1st: ACT@UCR](topic/topic_April.201st.3A.20ACT.40UCR.html) (3 messages, latest: Mar 26 2020 at 23:58)
 * [Google Sites problem](topic/topic_Google.20Sites.20problem.html) (4 messages, latest: Mar 25 2020 at 04:29)
 
-<hr><p>Last updated: May 10 2022 at 00:44 UTC</p>
+<hr><p>Last updated: May 11 2022 at 00:49 UTC</p>

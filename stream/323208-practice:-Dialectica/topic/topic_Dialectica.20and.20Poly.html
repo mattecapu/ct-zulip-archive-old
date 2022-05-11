@@ -35,6 +35,83 @@ we will record the chat tomorrow and post it for the group, right <span class="u
 
 
 
+<a name="281837245"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/323208-practice%3A%20Dialectica/topic/Dialectica%20and%20Poly/near/281837245" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Eric Bond <a href="https://mattecapu.github.io/ct-zulip-archive/stream/323208-practice:-Dialectica/topic/topic_Dialectica.20and.20Poly.html#281837245">(May 10 2022 at 15:05)</a>:</h4>
+<p>I was looking at your notes this morning Nelson.  Playing around with the definitions of the objects in Agda.</p>
+<div class="codehilite"><pre><span></span><code>record Poly : Set where
+  constructor _▹_
+  field
+    pos : Set
+    dir : pos -&gt; Set
+
+record DC : Set where
+    field
+        pos : Set
+        dir : pos -&gt; Set
+        pred : ∀(i : pos)(a : dir i) → Two
+
+record Dial (L : Set){{_ : Lineale L}} : Set where
+    field
+        pos : Set
+        dir : pos -&gt; Set
+        pred : ∀(i : pos)(a : dir i) → L
+</code></pre></div>
+<p>This style of definition is the <code>Container/Polynomial</code> definition that is nice to work with in Agda (see <a href="https://github.com/bond15/Polynomials-Categorically/blob/97bd7c43157be8d7ead7307347feefa2ed3f2571/ToposPoly/Poly.agda#L14">here</a>). <br>
+I had not thought about this type of encoding and I'd like to explore this more. Could have interesting applications.</p>
+<p>I also started a "direct" encoding of Dialectica <a href="https://github.com/bond15/Dialectica/blob/main/DC.agda">here</a></p>
+
+
+
+<a name="281869871"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/323208-practice%3A%20Dialectica/topic/Dialectica%20and%20Poly/near/281869871" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Valeria de Paiva <a href="https://mattecapu.github.io/ct-zulip-archive/stream/323208-practice:-Dialectica/topic/topic_Dialectica.20and.20Poly.html#281869871">(May 10 2022 at 18:56)</a>:</h4>
+<p>Thanks <span class="user-mention" data-user-id="343715">@Nelson Niu</span>  for a great presentation!</p>
+
+
+
+<a name="281884229"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/323208-practice%3A%20Dialectica/topic/Dialectica%20and%20Poly/near/281884229" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Valeria de Paiva <a href="https://mattecapu.github.io/ct-zulip-archive/stream/323208-practice:-Dialectica/topic/topic_Dialectica.20and.20Poly.html#281884229">(May 10 2022 at 20:48)</a>:</h4>
+<p>This is just to make sure that <span class="user-mention" data-user-id="498391">@Colin Bloomfield</span>  seems this stream! (myself I missed it again, had to go to recent topics to find it)</p>
+
+
+
+<a name="281884572"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/323208-practice%3A%20Dialectica/topic/Dialectica%20and%20Poly/near/281884572" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Valeria de Paiva <a href="https://mattecapu.github.io/ct-zulip-archive/stream/323208-practice:-Dialectica/topic/topic_Dialectica.20and.20Poly.html#281884572">(May 10 2022 at 20:51)</a>:</h4>
+<p>Did anyone at the meeting today saved the chat? I wanted to do a summary, including the chat.</p>
+
+
+
+<a name="281885186"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/323208-practice%3A%20Dialectica/topic/Dialectica%20and%20Poly/near/281885186" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Jonathan Weinberger <a href="https://mattecapu.github.io/ct-zulip-archive/stream/323208-practice:-Dialectica/topic/topic_Dialectica.20and.20Poly.html#281885186">(May 10 2022 at 20:57)</a>:</h4>
+<p>I did, up until the very end I think. Where should I put it <span class="user-mention" data-user-id="276656">@Valeria de Paiva</span> ?</p>
+
+
+
+<a name="281888795"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/323208-practice%3A%20Dialectica/topic/Dialectica%20and%20Poly/near/281888795" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Jonathan Weinberger <a href="https://mattecapu.github.io/ct-zulip-archive/stream/323208-practice:-Dialectica/topic/topic_Dialectica.20and.20Poly.html#281888795">(May 10 2022 at 21:30)</a>:</h4>
+<p><span class="user-mention" data-user-id="276656">@Valeria de Paiva</span> you've got <span aria-label="mail" class="emoji emoji-2709" role="img" title="mail">:mail:</span></p>
+
+
+
+<a name="281894678"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/323208-practice%3A%20Dialectica/topic/Dialectica%20and%20Poly/near/281894678" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Valeria de Paiva <a href="https://mattecapu.github.io/ct-zulip-archive/stream/323208-practice:-Dialectica/topic/topic_Dialectica.20and.20Poly.html#281894678">(May 10 2022 at 22:27)</a>:</h4>
+<p><span class="user-mention" data-user-id="380293">@Eric Bond</span>  I don't think this Agda code is completely  correct. but this is possibly an interesting "story"<br>
+the second block of code does not work for me.</p>
+<p>record DC : Set where<br>
+    field<br>
+        pos : Set<br>
+        dir : pos -&gt; Set<br>
+        pred : ∀(i : pos)(a : dir i) → Two</p>
+<p>If one does a "dependent Dialectica" like the above, we have a problem. <br>
+Because this subcategory is not closed under morphisms! i.e it's not a subcategory.</p>
+<p>The Dialectica category  would have (using the notation above) objects <br>
+(pos, dir, pred) and (pos', dir', pred'), where dir=X^pos and X is a  generic set and similarly<br>
+dir'= X'^pos'.  </p>
+<p>A dialectica morphism would map pos-&gt; pos', but it would not know how to deal with the second coordinate, because <br>
+pos\times dir'=(X')^{pos'} == pos\times pos'\to dir' but then I cannot see a natural map into dir.</p>
+<p>Don't know how clear this is, but the point is that Dial objects are not of the form (U, X^U, pred), they're generically (U,X, pred), any X, I cannot force the second coordinate to be of the form X^U. (or maybe I can, but I don't see this immediately. I can see a map using two evaluations plus projections, but don't see why it would satisfy the dialectica condition on the predicates.)</p>
+
+
+
 {% endraw %}
 
-<hr><p>Last updated: May 10 2022 at 00:44 UTC</p>
+<hr><p>Last updated: May 11 2022 at 00:49 UTC</p>
