@@ -8,7 +8,7 @@ permalink: /index.html
 
 ## Streams:
 
-* [learning: questions](stream/229199-learning:-questions/index.html) (664 topics)
+* [learning: questions](stream/229199-learning:-questions/index.html) (665 topics)
 
 * [theory: category theory](stream/229136-theory:-category-theory/index.html) (270 topics)
 
@@ -90,13 +90,13 @@ permalink: /index.html
 
 * [conference: CT20->21](stream/298844-conference:-CT20->21/index.html) (9 topics)
 
+* [practice: Dialectica](stream/323208-practice:-Dialectica/index.html) (9 topics)
+
 * [practice: chemistry](stream/322714-practice:-chemistry/index.html) (9 topics)
 
 * [theory: concurrency](stream/235484-theory:-concurrency/index.html) (9 topics)
 
 * [languages: italiano/Italian](stream/231111-languages:-italiano/Italian/index.html) (8 topics)
-
-* [practice: Dialectica](stream/323208-practice:-Dialectica/index.html) (8 topics)
 
 * [theory: monoids](stream/231815-theory:-monoids/index.html) (8 topics)
 
@@ -160,4 +160,4 @@ permalink: /index.html
 
 * [theory: alternate presentations](stream/233122-theory:-alternate-presentations/index.html) (1 topic)
 
-<hr><p>Last updated: May 11 2022 at 00:49 UTC</p>
+<hr><p>Last updated: May 12 2022 at 00:47 UTC</p>
