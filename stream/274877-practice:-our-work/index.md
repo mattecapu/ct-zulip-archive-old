@@ -9,13 +9,13 @@ permalink: /stream/274877-practice:-our-work/index.html
 
 ### Topics:
 
-* [Christian Williams](topic/topic_Christian.20Williams.html) (57 messages, latest: May 11 2022 at 21:02)
-* [Ivan Di Liberti](topic/topic_Ivan.20Di.20Liberti.html) (13 messages, latest: May 11 2022 at 12:10)
+* [John Baez](topic/topic_John.20Baez.html) (396 messages, latest: May 12 2022 at 18:38)
+* [Christian Williams](topic/topic_Christian.20Williams.html) (80 messages, latest: May 12 2022 at 17:42)
+* [Ivan Di Liberti](topic/topic_Ivan.20Di.20Liberti.html) (16 messages, latest: May 12 2022 at 15:15)
 * [Mike Shulman](topic/topic_Mike.20Shulman.html) (139 messages, latest: May 11 2022 at 04:17)
 * [Ralph Sarkis](topic/topic_Ralph.20Sarkis.html) (27 messages, latest: May 10 2022 at 20:42)
 * [stream events](topic/topic_stream.20events.html) (7 messages, latest: May 09 2022 at 21:14)
 * [Jon Sterling](topic/topic_Jon.20Sterling.html) (27 messages, latest: May 08 2022 at 21:43)
-* [John Baez](topic/topic_John.20Baez.html) (395 messages, latest: May 06 2022 at 07:00)
 * [David Roberts](topic/topic_David.20Roberts.html) (41 messages, latest: Apr 07 2022 at 03:59)
 * [Morgan Rogers](topic/topic_Morgan.20Rogers.html) (13 messages, latest: Mar 24 2022 at 07:58)
 * [posina](topic/topic_posina.html) (1 message, latest: Feb 28 2022 at 21:20)
@@ -31,4 +31,4 @@ permalink: /stream/274877-practice:-our-work/index.html
 * [Conor Mc Bride](topic/topic_Conor.20Mc.20Bride.html) (60 messages, latest: Apr 08 2021 at 15:15)
 * [thoughts on sharing ideas](topic/topic_thoughts.20on.20sharing.20ideas.html) (20 messages, latest: Jan 31 2021 at 03:05)
 
-<hr><p>Last updated: May 12 2022 at 00:47 UTC</p>
+<hr><p>Last updated: May 13 2022 at 00:55 UTC</p>

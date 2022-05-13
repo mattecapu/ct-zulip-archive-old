@@ -10,7 +10,7 @@ permalink: /index.html
 
 * [learning: questions](stream/229199-learning:-questions/index.html) (665 topics)
 
-* [theory: category theory](stream/229136-theory:-category-theory/index.html) (270 topics)
+* [theory: category theory](stream/229136-theory:-category-theory/index.html) (271 topics)
 
 * [general](stream/229111-general/index.html) (226 topics)
 
@@ -86,13 +86,13 @@ permalink: /index.html
 
 * [practice: ACT wiki](stream/243548-practice:-ACT-wiki/index.html) (10 topics)
 
+* [practice: Dialectica](stream/323208-practice:-Dialectica/index.html) (10 topics)
+
+* [practice: chemistry](stream/322714-practice:-chemistry/index.html) (10 topics)
+
 * [practice: economics](stream/231468-practice:-economics/index.html) (10 topics)
 
 * [conference: CT20->21](stream/298844-conference:-CT20->21/index.html) (9 topics)
-
-* [practice: Dialectica](stream/323208-practice:-Dialectica/index.html) (9 topics)
-
-* [practice: chemistry](stream/322714-practice:-chemistry/index.html) (9 topics)
 
 * [theory: concurrency](stream/235484-theory:-concurrency/index.html) (9 topics)
 
@@ -160,4 +160,4 @@ permalink: /index.html
 
 * [theory: alternate presentations](stream/233122-theory:-alternate-presentations/index.html) (1 topic)
 
-<hr><p>Last updated: May 12 2022 at 00:47 UTC</p>
+<hr><p>Last updated: May 13 2022 at 00:55 UTC</p>

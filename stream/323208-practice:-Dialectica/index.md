@@ -9,6 +9,7 @@ permalink: /stream/323208-practice:-Dialectica/index.html
 
 ### Topics:
 
+* [Dialectica as $$\exists\forall$$ completion](topic/topic_Dialectica.20as.20.24.24.5Cexists.5Cforall.24.24.20completion.html) (3 messages, latest: May 12 2022 at 22:02)
 * [Dialectica and Compilers](topic/topic_Dialectica.20and.20Compilers.html) (1 message, latest: May 11 2022 at 18:11)
 * [Dialectica and Poly](topic/topic_Dialectica.20and.20Poly.html) (12 messages, latest: May 11 2022 at 17:53)
 * [Dialectica and Differential Linear Logic](topic/topic_Dialectica.20and.20Differential.20Linear.20Logic.html) (3 messages, latest: May 11 2022 at 17:20)
@@ -19,4 +20,4 @@ permalink: /stream/323208-practice:-Dialectica/index.html
 * [stream events](topic/topic_stream.20events.html) (5 messages, latest: Apr 28 2022 at 20:15)
 * [Welcome](topic/topic_Welcome.html) (2 messages, latest: Apr 28 2022 at 16:34)
 
-<hr><p>Last updated: May 12 2022 at 00:47 UTC</p>
+<hr><p>Last updated: May 13 2022 at 00:55 UTC</p>

@@ -9,6 +9,7 @@ permalink: /stream/229141-general:-events/index.html
 
 ### Topics:
 
+* [Categorical Semantics of Entropy](topic/topic_Categorical.20Semantics.20of.20Entropy.html) (5 messages, latest: May 12 2022 at 18:39)
 * [CMU HoTT Seminar Online: Shulman](topic/topic_CMU.20HoTT.20Seminar.20Online.3A.20Shulman.html) (6 messages, latest: May 11 2022 at 11:31)
 * [Grothendieck conference](topic/topic_Grothendieck.20conference.html) (9 messages, latest: May 10 2022 at 22:18)
 * [stream events](topic/topic_stream.20events.html) (6 messages, latest: May 09 2022 at 21:14)
@@ -18,7 +19,6 @@ permalink: /stream/229141-general:-events/index.html
 * [HoTTEST Summer School July–August 2022](topic/topic_HoTTEST.20Summer.20School.20July.E2.80.93August.202022.html) (1 message, latest: Apr 28 2022 at 07:57)
 * [NY Categories Seminar](topic/topic_NY.20Categories.20Seminar.html) (14 messages, latest: Apr 27 2022 at 18:30)
 * [ItaCa Fest 2022](topic/topic_ItaCa.20Fest.202022.html) (5 messages, latest: Apr 26 2022 at 09:02)
-* [Categorical Semantics of Entropy](topic/topic_Categorical.20Semantics.20of.20Entropy.html) (3 messages, latest: Apr 19 2022 at 19:35)
 * [ICRA 2022 Workshop on Compositional Robotics](topic/topic_ICRA.202022.20Workshop.20on.20Compositional.20Robotics.html) (5 messages, latest: Apr 19 2022 at 15:54)
 * [QPL 2022](topic/topic_QPL.202022.html) (1 message, latest: Apr 18 2022 at 10:25)
 * [MGS 2022](topic/topic_MGS.202022.html) (2 messages, latest: Apr 15 2022 at 22:25)
@@ -137,4 +137,4 @@ permalink: /stream/229141-general:-events/index.html
 * [April 1st: ACT@UCR](topic/topic_April.201st.3A.20ACT.40UCR.html) (3 messages, latest: Mar 26 2020 at 23:58)
 * [Google Sites problem](topic/topic_Google.20Sites.20problem.html) (4 messages, latest: Mar 25 2020 at 04:29)
 
-<hr><p>Last updated: May 12 2022 at 00:47 UTC</p>
+<hr><p>Last updated: May 13 2022 at 00:55 UTC</p>
