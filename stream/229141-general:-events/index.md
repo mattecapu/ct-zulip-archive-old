@@ -9,9 +9,10 @@ permalink: /stream/229141-general:-events/index.html
 
 ### Topics:
 
+* [Grothendieck conference](topic/topic_Grothendieck.20conference.html) (10 messages, latest: May 13 2022 at 19:41)
+* [Structure meets Power Workshop, CFP](topic/topic_Structure.20meets.20Power.20Workshop.2C.20CFP.html) (2 messages, latest: May 13 2022 at 15:06)
 * [Categorical Semantics of Entropy](topic/topic_Categorical.20Semantics.20of.20Entropy.html) (5 messages, latest: May 12 2022 at 18:39)
 * [CMU HoTT Seminar Online: Shulman](topic/topic_CMU.20HoTT.20Seminar.20Online.3A.20Shulman.html) (6 messages, latest: May 11 2022 at 11:31)
-* [Grothendieck conference](topic/topic_Grothendieck.20conference.html) (9 messages, latest: May 10 2022 at 22:18)
 * [stream events](topic/topic_stream.20events.html) (6 messages, latest: May 09 2022 at 21:14)
 * [CatTh for Cog Sci Workshop](topic/topic_CatTh.20for.20Cog.20Sci.20Workshop.html) (2 messages, latest: May 06 2022 at 17:07)
 * [Intercats](topic/topic_Intercats.html) (32 messages, latest: May 04 2022 at 09:41)
@@ -23,7 +24,6 @@ permalink: /stream/229141-general:-events/index.html
 * [QPL 2022](topic/topic_QPL.202022.html) (1 message, latest: Apr 18 2022 at 10:25)
 * [MGS 2022](topic/topic_MGS.202022.html) (2 messages, latest: Apr 15 2022 at 22:25)
 * [School on Univalent Mathematics: Application deadline 15 Apr](topic/topic_School.20on.20Univalent.20Mathematics.3A.20Application.20deadline.2015.20Apr.html) (1 message, latest: Apr 10 2022 at 07:25)
-* [Structure meets Power Workshop, CFP](topic/topic_Structure.20meets.20Power.20Workshop.2C.20CFP.html) (1 message, latest: Mar 28 2022 at 11:20)
 * [BCQT2022](topic/topic_BCQT2022.html) (1 message, latest: Mar 21 2022 at 14:48)
 * [Workshop on Polynomial Functors 2022](topic/topic_Workshop.20on.20Polynomial.20Functors.202022.html) (13 messages, latest: Mar 18 2022 at 14:40)
 * [ACT 2022: First Call For Papers](topic/topic_ACT.202022.3A.20First.20Call.20For.20Papers.html) (2 messages, latest: Feb 25 2022 at 10:33)
@@ -137,4 +137,4 @@ permalink: /stream/229141-general:-events/index.html
 * [April 1st: ACT@UCR](topic/topic_April.201st.3A.20ACT.40UCR.html) (3 messages, latest: Mar 26 2020 at 23:58)
 * [Google Sites problem](topic/topic_Google.20Sites.20problem.html) (4 messages, latest: Mar 25 2020 at 04:29)
 
-<hr><p>Last updated: May 13 2022 at 00:55 UTC</p>
+<hr><p>Last updated: May 14 2022 at 00:59 UTC</p>

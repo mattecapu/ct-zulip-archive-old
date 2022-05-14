@@ -80,13 +80,13 @@ permalink: /index.html
 
 * [general: co/appreciation](stream/271602-general:-co/appreciation/index.html) (13 topics)
 
+* [practice: Dialectica](stream/323208-practice:-Dialectica/index.html) (11 topics)
+
 * [practice: translation](stream/260000-practice:-translation/index.html) (11 topics)
 
 * [learning: reading groups](stream/232160-learning:-reading-groups/index.html) (10 topics)
 
 * [practice: ACT wiki](stream/243548-practice:-ACT-wiki/index.html) (10 topics)
-
-* [practice: Dialectica](stream/323208-practice:-Dialectica/index.html) (10 topics)
 
 * [practice: chemistry](stream/322714-practice:-chemistry/index.html) (10 topics)
 
@@ -160,4 +160,4 @@ permalink: /index.html
 
 * [theory: alternate presentations](stream/233122-theory:-alternate-presentations/index.html) (1 topic)
 
-<hr><p>Last updated: May 13 2022 at 00:55 UTC</p>
+<hr><p>Last updated: May 14 2022 at 00:59 UTC</p>

@@ -143,4 +143,4 @@ permalink: /stream/229156-practice:-applied-ct/index.html
 * [AACT2020](topic/topic_AACT2020.html) (1 message, latest: Mar 24 2020 at 00:56)
 * [welcome](topic/topic_welcome.html) (15 messages, latest: Mar 24 2020 at 00:03)
 
-<hr><p>Last updated: May 13 2022 at 00:55 UTC</p>
+<hr><p>Last updated: May 14 2022 at 00:59 UTC</p>
