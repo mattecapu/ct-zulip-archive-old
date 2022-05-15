@@ -9,6 +9,7 @@ permalink: /stream/323208-practice:-Dialectica/index.html
 
 ### Topics:
 
+* [tentative subgroups](topic/topic_tentative.20subgroups.html) (1 message, latest: May 14 2022 at 23:52)
 * [Dialectica for Friends video](topic/topic_Dialectica.20for.20Friends.20video.html) (2 messages, latest: May 13 2022 at 17:35)
 * [Dialectica and Poly](topic/topic_Dialectica.20and.20Poly.html) (13 messages, latest: May 13 2022 at 17:03)
 * [Flavors of Dialectica](topic/topic_Flavors.20of.20Dialectica.html) (4 messages, latest: May 13 2022 at 14:08)
@@ -21,4 +22,4 @@ permalink: /stream/323208-practice:-Dialectica/index.html
 * [stream events](topic/topic_stream.20events.html) (5 messages, latest: Apr 28 2022 at 20:15)
 * [Welcome](topic/topic_Welcome.html) (2 messages, latest: Apr 28 2022 at 16:34)
 
-<hr><p>Last updated: May 14 2022 at 00:59 UTC</p>
+<hr><p>Last updated: May 15 2022 at 00:58 UTC</p>

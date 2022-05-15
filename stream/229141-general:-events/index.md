@@ -9,7 +9,7 @@ permalink: /stream/229141-general:-events/index.html
 
 ### Topics:
 
-* [Grothendieck conference](topic/topic_Grothendieck.20conference.html) (10 messages, latest: May 13 2022 at 19:41)
+* [Grothendieck conference](topic/topic_Grothendieck.20conference.html) (11 messages, latest: May 14 2022 at 23:45)
 * [Structure meets Power Workshop, CFP](topic/topic_Structure.20meets.20Power.20Workshop.2C.20CFP.html) (2 messages, latest: May 13 2022 at 15:06)
 * [Categorical Semantics of Entropy](topic/topic_Categorical.20Semantics.20of.20Entropy.html) (5 messages, latest: May 12 2022 at 18:39)
 * [CMU HoTT Seminar Online: Shulman](topic/topic_CMU.20HoTT.20Seminar.20Online.3A.20Shulman.html) (6 messages, latest: May 11 2022 at 11:31)
@@ -137,4 +137,4 @@ permalink: /stream/229141-general:-events/index.html
 * [April 1st: ACT@UCR](topic/topic_April.201st.3A.20ACT.40UCR.html) (3 messages, latest: Mar 26 2020 at 23:58)
 * [Google Sites problem](topic/topic_Google.20Sites.20problem.html) (4 messages, latest: Mar 25 2020 at 04:29)
 
-<hr><p>Last updated: May 14 2022 at 00:59 UTC</p>
+<hr><p>Last updated: May 15 2022 at 00:58 UTC</p>
