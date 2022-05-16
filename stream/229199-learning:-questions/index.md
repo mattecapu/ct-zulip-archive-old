@@ -9,8 +9,8 @@ permalink: /stream/229199-learning:-questions/index.html
 
 ### Topics:
 
-* [Is this definition for the slice category correct?](topic/topic_Is.20this.20definition.20for.20the.20slice.20category.20correct.3F.html) (5 messages, latest: May 14 2022 at 18:28)
-* [motives](topic/topic_motives.html) (13 messages, latest: May 12 2022 at 07:18)
+* [motives](topic/topic_motives.html) (14 messages, latest: May 16 2022 at 00:06)
+* [Is this definition for the slice category correct?](topic/topic_Is.20this.20definition.20for.20the.20slice.20category.20correct.3F.html) (9 messages, latest: May 15 2022 at 13:32)
 * [beginner questions](topic/topic_beginner.20questions.html) (522 messages, latest: May 09 2022 at 17:01)
 * [Comonoids in partial functions](topic/topic_Comonoids.20in.20partial.20functions.html) (45 messages, latest: May 07 2022 at 05:01)
 * [multisets vs tuples](topic/topic_multisets.20vs.20tuples.html) (32 messages, latest: May 06 2022 at 16:56)
@@ -676,4 +676,4 @@ permalink: /stream/229199-learning:-questions/index.html
 * [Algebra (Aluffi) exercises](topic/topic_Algebra.20(Aluffi).20exercises.html) (55 messages, latest: Mar 27 2020 at 23:38)
 * [What is category theory about?](topic/topic_What.20is.20category.20theory.20about.3F.html) (16 messages, latest: Mar 26 2020 at 16:03)
 
-<hr><p>Last updated: May 15 2022 at 00:58 UTC</p>
+<hr><p>Last updated: May 16 2022 at 00:48 UTC</p>
