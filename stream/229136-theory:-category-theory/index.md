@@ -9,9 +9,9 @@ permalink: /stream/229136-theory:-category-theory/index.html
 
 ### Topics:
 
+* [cofunctors as profunctors](topic/topic_cofunctors.20as.20profunctors.html) (13 messages, latest: May 16 2022 at 13:02)
+* [shape of finitary functors](topic/topic_shape.20of.20finitary.20functors.html) (4 messages, latest: May 16 2022 at 12:34)
 * [absolute colimits and bilimits](topic/topic_absolute.20colimits.20and.20bilimits.html) (9 messages, latest: May 15 2022 at 23:10)
-* [cofunctors as profunctors](topic/topic_cofunctors.20as.20profunctors.html) (12 messages, latest: May 12 2022 at 15:46)
-* [shape of finitary functors](topic/topic_shape.20of.20finitary.20functors.html) (3 messages, latest: May 12 2022 at 14:20)
 * [fibrations and quantifiers](topic/topic_fibrations.20and.20quantifiers.html) (53 messages, latest: May 08 2022 at 19:42)
 * [semistrictification theorem for tetracats?](topic/topic_semistrictification.20theorem.20for.20tetracats.3F.html) (36 messages, latest: May 05 2022 at 15:40)
 * [lifting monads to lax limit categories](topic/topic_lifting.20monads.20to.20lax.20limit.20categories.html) (10 messages, latest: May 04 2022 at 14:47)
@@ -282,4 +282,4 @@ permalink: /stream/229136-theory:-category-theory/index.html
 * [diagrams for application](topic/topic_diagrams.20for.20application.html) (13 messages, latest: Mar 24 2020 at 06:19)
 * [universal constructions](topic/topic_universal.20constructions.html) (8 messages, latest: Mar 23 2020 at 21:06)
 
-<hr><p>Last updated: May 16 2022 at 00:48 UTC</p>
+<hr><p>Last updated: May 17 2022 at 00:47 UTC</p>

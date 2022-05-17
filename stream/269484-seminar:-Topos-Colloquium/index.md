@@ -9,7 +9,8 @@ permalink: /stream/269484-seminar:-Topos-Colloquium/index.html
 
 ### Topics:
 
-* [Andrej Bauer: The countable reals](topic/topic_Andrej.20Bauer.3A.20The.20countable.20reals.html) (15 messages, latest: May 15 2022 at 19:20)
+* [Alexandra Silva: Learning Weighted Automata over \[...\]](topic/topic_Alexandra.20Silva.3A.20Learning.20Weighted.20Automata.20over.20.5B.2E.2E.2E.5D.html) (1 message, latest: May 16 2022 at 21:55)
+* [Andrej Bauer: The countable reals](topic/topic_Andrej.20Bauer.3A.20The.20countable.20reals.html) (21 messages, latest: May 16 2022 at 20:29)
 * [stream events](topic/topic_stream.20events.html) (3 messages, latest: May 09 2022 at 21:13)
 * [John Terilla: Rethinking language](topic/topic_John.20Terilla.3A.20Rethinking.20language.html) (1 message, latest: May 02 2022 at 14:07)
 * [Martín Escardó: "Compact totally separated types in \[...\]"](topic/topic_Mart.C3.ADn.20Escard.C3.B3.3A.20.22Compact.20totally.20separated.20types.20in.20.5B.2E.2E.2E.5D.22.html) (2 messages, latest: Apr 25 2022 at 13:48)
@@ -65,4 +66,4 @@ permalink: /stream/269484-seminar:-Topos-Colloquium/index.html
 * [Gunnar E. Carlsson: "Relative topology, motion planning, .."](topic/topic_Gunnar.20E.2E.20Carlsson.3A.20.22Relative.20topology.2C.20motion.20planning.2C.20.2E.2E.22.html) (4 messages, latest: Feb 18 2021 at 16:45)
 * [Richard Garner: "Comodels of an algebraic theory"](topic/topic_Richard.20Garner.3A.20.22Comodels.20of.20an.20algebraic.20theory.22.html) (27 messages, latest: Feb 11 2021 at 22:36)
 
-<hr><p>Last updated: May 16 2022 at 00:48 UTC</p>
+<hr><p>Last updated: May 17 2022 at 00:47 UTC</p>
