@@ -9,8 +9,8 @@ permalink: /stream/229199-learning:-questions/index.html
 
 ### Topics:
 
-* [motives](topic/topic_motives.html) (19 messages, latest: May 16 2022 at 23:30)
-* [link between limits and "usual" limits for sequence ?](topic/topic_link.20between.20limits.20and.20.22usual.22.20limits.20for.20sequence.20.3F.html) (3 messages, latest: May 16 2022 at 20:45)
+* [motives](topic/topic_motives.html) (25 messages, latest: May 17 2022 at 16:16)
+* [link between limits and "usual" limits for sequence ?](topic/topic_link.20between.20limits.20and.20.22usual.22.20limits.20for.20sequence.20.3F.html) (10 messages, latest: May 17 2022 at 12:35)
 * [Is this definition for the slice category correct?](topic/topic_Is.20this.20definition.20for.20the.20slice.20category.20correct.3F.html) (14 messages, latest: May 16 2022 at 20:25)
 * [beginner questions](topic/topic_beginner.20questions.html) (525 messages, latest: May 16 2022 at 08:28)
 * [Comonoids in partial functions](topic/topic_Comonoids.20in.20partial.20functions.html) (45 messages, latest: May 07 2022 at 05:01)
@@ -677,4 +677,4 @@ permalink: /stream/229199-learning:-questions/index.html
 * [Algebra (Aluffi) exercises](topic/topic_Algebra.20(Aluffi).20exercises.html) (55 messages, latest: Mar 27 2020 at 23:38)
 * [What is category theory about?](topic/topic_What.20is.20category.20theory.20about.3F.html) (16 messages, latest: Mar 26 2020 at 16:03)
 
-<hr><p>Last updated: May 17 2022 at 00:47 UTC</p>
+<hr><p>Last updated: May 18 2022 at 00:39 UTC</p>
