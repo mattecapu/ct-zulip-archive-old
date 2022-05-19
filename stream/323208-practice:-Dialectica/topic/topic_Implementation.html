@@ -1,0 +1,231 @@
+---
+layout: archive
+title: Zulip Chat Archive
+permalink: /stream/323208-practice:-Dialectica/topic/topic_Implementation.html
+---
+
+<h2>Stream: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/323208-practice:-Dialectica/index.html">practice: Dialectica</a></h2>
+<h3>Topic: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/323208-practice:-Dialectica/topic/topic_Implementation.html">Implementation</a></h3>
+
+<hr>
+
+<base href="https://categorytheory.zulipchat.com/">
+
+{% raw %}
+
+<a name="282811107"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/323208-practice%3A%20Dialectica/topic/Implementation/near/282811107" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Eric Bond <a href="https://mattecapu.github.io/ct-zulip-archive/stream/323208-practice:-Dialectica/topic/topic_Implementation.html#282811107">(May 18 2022 at 16:10)</a>:</h4>
+<p>Here is an Agda proof that Dial(Set)(2) is a category. <br>
+(assuming Agda Set + functions as Set)</p>
+<p><a href="https://github.com/bond15/Dialectica/blob/4e5f83e053d77db1367839677f3f6ee3193b0cb3/DialSets.agda#L131">https://github.com/bond15/Dialectica/blob/4e5f83e053d77db1367839677f3f6ee3193b0cb3/DialSets.agda#L131</a></p>
+<p>There are 2 holes that are Cubical Agda related. I'm still filling those in.  (showing that the hom set has the homotopy level set and a hole in equality of morphisms in dial)</p>
+
+
+
+<a name="282840348"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/323208-practice%3A%20Dialectica/topic/Implementation/near/282840348" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Valeria de Paiva <a href="https://mattecapu.github.io/ct-zulip-archive/stream/323208-practice:-Dialectica/topic/topic_Implementation.html#282840348">(May 18 2022 at 19:56)</a>:</h4>
+<p>I have now read your file, thanks!  I don't quite follow the proof that Dial(Set)(2) is a category.</p>
+<p>I was expecting proofs of associativity of composition, and of the identity triangles.<br>
+ Are these subsumed into the sequence of assertions between lines 137and 139?</p>
+<p>I'm guessing that line 135 is the definition of identity map in DialSet, but it looks a bit strange.</p>
+<p>and I don't understand line 136, because I don't know what are compositions C and  D in this case. <br>
+is this the hole you've mentioned?</p>
+<p>I expect this is just me not knowing how the import of modules works in agda, but more pointers would be appreciated.</p>
+
+
+
+<a name="282847322"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/323208-practice%3A%20Dialectica/topic/Implementation/near/282847322" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Eric Bond <a href="https://mattecapu.github.io/ct-zulip-archive/stream/323208-practice:-Dialectica/topic/topic_Implementation.html#282847322">(May 18 2022 at 20:48)</a>:</h4>
+<p>Line 135 is the definition of the identity map. </p>
+<div class="codehilite"><pre><span></span><code>(λ u → u) ∧ (λ u x → x) st (λ u x → ≤-refl)
+</code></pre></div>
+<p>So we need</p>
+<div class="codehilite"><pre><span></span><code>(U , X ,  α) -&gt; (U, X ,  α)
+</code></pre></div>
+<p>The first map <code>(λ u → u) </code> is  the identity map for <code>U</code>.<br>
+The second map <code>(λ u x → x)</code> is a "projection" from <code>U \x X</code> to <code>X</code> (but in curried/uncurried form).<br>
+The last term <code>(λ u x → ≤-refl)</code> is of type <code>(u : U)(x :X)  →   α  u x  ≤² α  u x</code>  so the condition holds by reflexivity of <code>≤²</code></p>
+<p>The unity/identity laws are lines 137 and 138. </p>
+<p>The type of the right identity is <code>m ∘ᶜ id = m</code>.  <br>
+But to prove this we need to consider what it means for two morphisms to be equal.</p>
+<p>Morphism consist of three components (f , F, and the condition). It suffices to show that if you have 2 morphisms, then they are equal if they are equal in the first 2 components (f and F). This is where <code>cong-dial :  f ≡ f' → F ≡ F' → m₁ ≡ m₂</code> comes from.  So then we just need to look component wise at what the composition in the identity law is doing. </p>
+<p>so in <code>m∘ᶜ id = m</code> The first component is <code>f ∘ id = f</code> where <code>∘</code> and <code>id</code> are from <code>Set</code>. This holds by definitional equality so it is dispatched with <code>refl</code><br>
+The second component is a bit more involved.  </p>
+<div class="codehilite"><pre><span></span><code>f₁ := (λ u → u)
+F₁ := (λ u x → x)
+from the definition of the identity morphism
+
+and we have some
+F₂  :  U → X → X
+
+Now we consider what composition does on F
+F&#39; : U → X → X
+F&#39; u x = let
+                 u = f₁ u
+                 x&#39; = F₂ u x
+                 x&#39; = F₁ u x&#39;
+                 in x&#39;
+
+so F₂  is equivalent to F&#39; and so this holds by definitional equality
+</code></pre></div>
+
+
+
+<a name="282847501"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/323208-practice%3A%20Dialectica/topic/Implementation/near/282847501" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Eric Bond <a href="https://mattecapu.github.io/ct-zulip-archive/stream/323208-practice:-Dialectica/topic/topic_Implementation.html#282847501">(May 18 2022 at 20:49)</a>:</h4>
+<p>The same reasoning applies for left identity and associativity. They hold by definitional equality once you define the right notion of equality of morphisms (homotopy type theory is paying dividends here)</p>
+
+
+
+<a name="282849095"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/323208-practice%3A%20Dialectica/topic/Implementation/near/282849095" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Eric Bond <a href="https://mattecapu.github.io/ct-zulip-archive/stream/323208-practice:-Dialectica/topic/topic_Implementation.html#282849095">(May 18 2022 at 21:02)</a>:</h4>
+<div class="codehilite"><pre><span></span><code>and I don&#39;t understand line 136, because I don&#39;t know what are compositions C and D in this case.
+</code></pre></div>
+<p>_∘ᶜ_ is the name for composition in the type of PreCategories.<br>
+_∘ᴰ_ is the name of the operation defined on line 76 which is composition of morphisms in Dial(Set)(2).<br>
+So in total, line 136 is saying for the PreCategory <code>DialSetCat</code> , composition <code>_∘ᶜ_</code> is <code>_∘ᴰ_</code></p>
+<p>And for completeness <code>_∘_</code> is regular function composition in Agda.</p>
+
+
+
+<a name="282849530"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/323208-practice%3A%20Dialectica/topic/Implementation/near/282849530" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Valeria de Paiva <a href="https://mattecapu.github.io/ct-zulip-archive/stream/323208-practice:-Dialectica/topic/topic_Implementation.html#282849530">(May 18 2022 at 21:06)</a>:</h4>
+<p>great! but then where is the hole?<br>
+also when I said line 135 looked a bit strange as identity, I could see the two functions and I know this is how the identity works. <br>
+But I was expecting it to be an instance of the code in lines 49--58, not to be part of the proof, by what I expect is the import  of some PreCat module. but things are much clearer now, thanks a bunch!</p>
+
+
+
+<a name="282849944"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/323208-practice%3A%20Dialectica/topic/Implementation/near/282849944" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Valeria de Paiva <a href="https://mattecapu.github.io/ct-zulip-archive/stream/323208-practice:-Dialectica/topic/topic_Implementation.html#282849944">(May 18 2022 at 21:10)</a>:</h4>
+<p>nice to see  the obs</p>
+<blockquote>
+<p>homotopy type theory is paying dividends here</p>
+</blockquote>
+<p>even if in this case the equality on f and F is on the nose, but the condition is a kind of lax equality (in Chu spaces it would be a real equality too!)</p>
+
+
+
+<a name="282850848"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/323208-practice%3A%20Dialectica/topic/Implementation/near/282850848" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Eric Bond <a href="https://mattecapu.github.io/ct-zulip-archive/stream/323208-practice:-Dialectica/topic/topic_Implementation.html#282850848">(May 18 2022 at 21:18)</a>:</h4>
+<p>Oh yes! That is a good point. It would be useful to not 'inline' the definition of Identity morphism since It could be used in other contexts. I'll fix that.</p>
+<p>There are 2 holes. Holes look like this <code>{!   !}</code> <br>
+See lines 126 and 134. <br>
+The hole on 126 is in the definition of <code>cong-dial : f ≡ f' → F ≡ F' → m₁ ≡ m₂</code> where I just need to use the proof <code>eq-maps-cond</code> and some clever path definitions to complete the definition.</p>
+<p>The hole on 134 is Is saying that the HomSets in <code>DialSetCat</code> are <code>Sets</code> w.r.t homotopy level.<br>
+It is missing a proof of this condition <code> (x y : Ob) → is-set (x ⇒ y)</code>. <br>
+For folks who haven't seen this before it is basically saying that if you have two morphisms <code>f</code> and <code>g</code> and two proofs of equivalence of those morphisms <code>p : f ≡ g</code> and  <code>q : f ≡ g</code>, then it is the case that  <code>p ≡ q</code>.</p>
+<p>This condition could be left out. It's an artifact of the HoTT book and some folks think it is easier to leave that condition elsewhere.<br>
+<a href="https://github.com/agda/cubical/issues/625">https://github.com/agda/cubical/issues/625</a></p>
+
+
+
+<a name="282851488"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/323208-practice%3A%20Dialectica/topic/Implementation/near/282851488" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Valeria de Paiva <a href="https://mattecapu.github.io/ct-zulip-archive/stream/323208-practice:-Dialectica/topic/topic_Implementation.html#282851488">(May 18 2022 at 21:24)</a>:</h4>
+<p>oh, ok. many thanks for the explanation  of the hole then! (the other one is not a hole anymore, right?</p>
+
+
+
+<a name="282851955"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/323208-practice%3A%20Dialectica/topic/Implementation/near/282851955" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Eric Bond <a href="https://mattecapu.github.io/ct-zulip-archive/stream/323208-practice:-Dialectica/topic/topic_Implementation.html#282851955">(May 18 2022 at 21:30)</a>:</h4>
+<p>I'm going to remove the <code>is-set</code> condition for now so hole 134 will go away. <br>
+The hole in <code>cong-dial</code> is still a TODO.</p>
+
+
+
+<a name="282852276"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/323208-practice%3A%20Dialectica/topic/Implementation/near/282852276" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Valeria de Paiva <a href="https://mattecapu.github.io/ct-zulip-archive/stream/323208-practice:-Dialectica/topic/topic_Implementation.html#282852276">(May 18 2022 at 21:33)</a>:</h4>
+<p>newbie question: can we have a promissory note to fill the hole and carry on working on the monoidal structures of DialSet or without filling the holes things do not compile?</p>
+
+
+
+<a name="282852652"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/323208-practice%3A%20Dialectica/topic/Implementation/near/282852652" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Eric Bond <a href="https://mattecapu.github.io/ct-zulip-archive/stream/323208-practice:-Dialectica/topic/topic_Implementation.html#282852652">(May 18 2022 at 21:37)</a>:</h4>
+<p>That is a good question. The way Agda is implemented, you can usually continue working normally while there are holes and the file will still type check. for example.<br>
+<a href="/user_uploads/21317/FKTOE_-RgPs2rcYQp1rCNwSO/Screen-Shot-2022-05-18-at-2.36.57-PM.png">Screen-Shot-2022-05-18-at-2.36.57-PM.png</a></p>
+<div class="message_inline_image"><a href="/user_uploads/21317/FKTOE_-RgPs2rcYQp1rCNwSO/Screen-Shot-2022-05-18-at-2.36.57-PM.png" title="Screen-Shot-2022-05-18-at-2.36.57-PM.png"><img src="/user_uploads/21317/FKTOE_-RgPs2rcYQp1rCNwSO/Screen-Shot-2022-05-18-at-2.36.57-PM.png"></a></div>
+
+
+
+<a name="282852730"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/323208-practice%3A%20Dialectica/topic/Implementation/near/282852730" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Eric Bond <a href="https://mattecapu.github.io/ct-zulip-archive/stream/323208-practice:-Dialectica/topic/topic_Implementation.html#282852730">(May 18 2022 at 21:38)</a>:</h4>
+<p>This file type checks. <a href="/user_uploads/21317/m3z6ZEjd-KM6SnTtjXqFnFMV/Screen-Shot-2022-05-18-at-2.38.17-PM.png">Screen-Shot-2022-05-18-at-2.38.17-PM.png</a> <br>
+It just tells you at the bottom that you still need to fill this in, but can continue working</p>
+<div class="message_inline_image"><a href="/user_uploads/21317/m3z6ZEjd-KM6SnTtjXqFnFMV/Screen-Shot-2022-05-18-at-2.38.17-PM.png" title="Screen-Shot-2022-05-18-at-2.38.17-PM.png"><img src="/user_uploads/21317/m3z6ZEjd-KM6SnTtjXqFnFMV/Screen-Shot-2022-05-18-at-2.38.17-PM.png"></a></div><p>I can even normalize/evaluate the term <code>b</code> in this case. It reduces to <code>?0 tt</code> where <code>?0</code> is supposed to be a function from <code>Bool -&gt; Bool</code> defined in <code>not</code>, but it has not been defined.</p>
+
+
+
+<a name="282853007"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/323208-practice%3A%20Dialectica/topic/Implementation/near/282853007" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Eric Bond <a href="https://mattecapu.github.io/ct-zulip-archive/stream/323208-practice:-Dialectica/topic/topic_Implementation.html#282853007">(May 18 2022 at 21:41)</a>:</h4>
+<p>However if we had a file that depended on this file and I left holes on it, there would be errors in the new file. <br>
+You have some control over the behavior of this. For instance if you add the flag <code>{-# OPTIONS --allow-unsolved-metas #-}</code> then you could bypass this check and continue working.</p>
+
+
+
+<a name="282853183"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/323208-practice%3A%20Dialectica/topic/Implementation/near/282853183" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Eric Bond <a href="https://mattecapu.github.io/ct-zulip-archive/stream/323208-practice:-Dialectica/topic/topic_Implementation.html#282853183">(May 18 2022 at 21:43)</a>:</h4>
+<p>Caveats are if you leave holes "at the type level" or if you leave a hole in a term Agda needs to deduce a type. Then it complains. Generally you can leave holes at the "term level" and sometimes at the "type level".</p>
+
+
+
+<a name="282853687"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/323208-practice%3A%20Dialectica/topic/Implementation/near/282853687" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Eric Bond <a href="https://mattecapu.github.io/ct-zulip-archive/stream/323208-practice:-Dialectica/topic/topic_Implementation.html#282853687">(May 18 2022 at 21:48)</a>:</h4>
+<p>For the specific case you mentioned.. yes the hole for <code>cong-dial</code> will not prevent the file from type checking and can be left as a TODO while the monodial structure is developed.</p>
+
+
+
+<a name="282854180"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/323208-practice%3A%20Dialectica/topic/Implementation/near/282854180" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Valeria de Paiva <a href="https://mattecapu.github.io/ct-zulip-archive/stream/323208-practice:-Dialectica/topic/topic_Implementation.html#282854180">(May 18 2022 at 21:53)</a>:</h4>
+<p>Yay! thanks! for <span class="user-mention" data-user-id="496984">@Charlotte Aten</span> we will need to do the file lineale.agda properly: starting with the  definition of One, Two,  Three (Kleene-style)--sets of truth-values, Nat, closed interval [0,1], etc. and it's fairly independent from Dialset, because it's just a parameter in the more complicated version of DialSet.</p>
+
+
+
+<a name="282854579"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/323208-practice%3A%20Dialectica/topic/Implementation/near/282854579" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Eric Bond <a href="https://mattecapu.github.io/ct-zulip-archive/stream/323208-practice:-Dialectica/topic/topic_Implementation.html#282854579">(May 18 2022 at 21:57)</a>:</h4>
+<p>While I'm rambling away, and in case any lurkers are interested, holes are not just a TODO in a proof.. they are interactive.<br>
+<a href="/user_uploads/21317/vAwf3ijnViHIPDscqyfyGpsR/Screen-Shot-2022-05-18-at-2.58.02-PM.png">Screen-Shot-2022-05-18-at-2.58.02-PM.png</a></p>
+<div class="message_inline_image"><a href="/user_uploads/21317/vAwf3ijnViHIPDscqyfyGpsR/Screen-Shot-2022-05-18-at-2.58.02-PM.png" title="Screen-Shot-2022-05-18-at-2.58.02-PM.png"><img src="/user_uploads/21317/vAwf3ijnViHIPDscqyfyGpsR/Screen-Shot-2022-05-18-at-2.58.02-PM.png"></a></div><p>for instance if my cursor is in this hole there are a few different commands I can run<br>
+ctrl+c, ctrl+t - this will tell me my current "goal" or what Type  of term I need to fill the hole with</p>
+<p>ctrl+c, ctrl+a  - this will begin a "proof search" where Agda will try to fill the hole with a term from the local context</p>
+<p>ctrl+c, ctrl+n - this evaluates the current term in the hole and shows the result </p>
+<p>ctrl+c, ctrl+d - this infers the Type of the term in the hole</p>
+<p>ctrl+c, ctrl+e - this tells you the terms and their types in the local proof context<br>
+and many more</p>
+
+
+
+<a name="282855659"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/323208-practice%3A%20Dialectica/topic/Implementation/near/282855659" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Eric Bond <a href="https://mattecapu.github.io/ct-zulip-archive/stream/323208-practice:-Dialectica/topic/topic_Implementation.html#282855659">(May 18 2022 at 22:06)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="276656">Valeria de Paiva</span> <a href="#narrow/stream/323208-practice.3A-Dialectica/topic/Implementation/near/282854180">said</a>:</p>
+<blockquote>
+<p>Yay! thanks! for <span class="user-mention silent" data-user-id="496984">Charlotte Aten</span> we will need to do the file lineale.agda properly: starting with the  definition of One, Two,  Three (Kleene-style)--sets of truth-values, Nat, closed interval [0,1], etc. and it's fairly independent from Dialset, because it's just a parameter in the more complicated version of DialSet.</p>
+</blockquote>
+<p>I started a version of this 3 weeks ago.<br>
+<a href="https://github.com/bond15/Dialectica/blob/4e5f83e053d77db1367839677f3f6ee3193b0cb3/Lineale.agda">https://github.com/bond15/Dialectica/blob/4e5f83e053d77db1367839677f3f6ee3193b0cb3/Lineale.agda</a><br>
+ It's mostly a rewrite of <br>
+<a href="https://github.com/heades/cut-fill-agda/blob/master/lineale.agda">https://github.com/heades/cut-fill-agda/blob/master/lineale.agda</a><br>
+from the FILL paper.<br>
+Although this is the definition of lineale and does not have any instances of lineales as you've listed above.</p>
+
+
+
+<a name="282856027"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/323208-practice%3A%20Dialectica/topic/Implementation/near/282856027" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Valeria de Paiva <a href="https://mattecapu.github.io/ct-zulip-archive/stream/323208-practice:-Dialectica/topic/topic_Implementation.html#282856027">(May 18 2022 at 22:10)</a>:</h4>
+<blockquote>
+<p>Although this is the definition of lineale and does not have any instances of lineales as you've listed above.</p>
+</blockquote>
+<p>yes, I know. we need the definition(s) and then the examples from "Dialectica Petri Nets" <a href="https://arxiv.org/abs/2105.12801">https://arxiv.org/abs/2105.12801</a><br>
+none of these have been automated</p>
+
+
+
+<a name="282856940"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/323208-practice%3A%20Dialectica/topic/Implementation/near/282856940" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Eric Bond <a href="https://mattecapu.github.io/ct-zulip-archive/stream/323208-practice:-Dialectica/topic/topic_Implementation.html#282856940">(May 18 2022 at 22:20)</a>:</h4>
+<p>sounds good :) <br>
+I'm context switching back to my 9 to 5 which is currently hardware verification using Isabelle HOL <span aria-label="upside down" class="emoji emoji-1f643" role="img" title="upside down">:upside_down:</span></p>
+
+
+
+{% endraw %}
+
+<hr><p>Last updated: May 19 2022 at 00:56 UTC</p>

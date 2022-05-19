@@ -32,7 +32,7 @@ permalink: /index.html
 
 * [practice: thermodynamics](stream/306433-practice:-thermodynamics/index.html) (50 topics)
 
-* [theory: logic](stream/233104-theory:-logic/index.html) (46 topics)
+* [theory: logic](stream/233104-theory:-logic/index.html) (47 topics)
 
 * [general: positions](stream/245502-general:-positions/index.html) (45 topics)
 
@@ -80,7 +80,7 @@ permalink: /index.html
 
 * [general: co/appreciation](stream/271602-general:-co/appreciation/index.html) (13 topics)
 
-* [practice: Dialectica](stream/323208-practice:-Dialectica/index.html) (12 topics)
+* [practice: Dialectica](stream/323208-practice:-Dialectica/index.html) (13 topics)
 
 * [practice: translation](stream/260000-practice:-translation/index.html) (11 topics)
 
@@ -162,4 +162,4 @@ permalink: /index.html
 
 * [theory: alternate presentations](stream/233122-theory:-alternate-presentations/index.html) (1 topic)
 
-<hr><p>Last updated: May 18 2022 at 00:39 UTC</p>
+<hr><p>Last updated: May 19 2022 at 00:56 UTC</p>
