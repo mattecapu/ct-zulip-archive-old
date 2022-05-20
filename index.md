@@ -12,7 +12,7 @@ permalink: /index.html
 
 * [theory: category theory](stream/229136-theory:-category-theory/index.html) (272 topics)
 
-* [general](stream/229111-general/index.html) (226 topics)
+* [general](stream/229111-general/index.html) (227 topics)
 
 * [practice: applied ct](stream/229156-practice:-applied-ct/index.html) (133 topics)
 
@@ -124,6 +124,8 @@ permalink: /index.html
 
 * [expression](stream/247180-expression/index.html) (3 topics)
 
+* [languages: portugues](stream/303660-languages:-portugues/index.html) (3 topics)
+
 * [learning: id my structure](stream/311521-learning:-id-my-structure/index.html) (3 topics)
 
 * [process-io](stream/267137-process-io/index.html) (3 topics)
@@ -141,8 +143,6 @@ permalink: /index.html
 * [Topos Colloquium](stream/269484-Topos-Colloquium/index.html) (2 topics)
 
 * [languages: Nederlands/Dutch](stream/324768-languages:-Nederlands/Dutch/index.html) (2 topics)
-
-* [languages: portugues](stream/303660-languages:-portugues/index.html) (2 topics)
 
 * [practice: industry](stream/229370-practice:-industry/index.html) (2 topics)
 
@@ -162,4 +162,4 @@ permalink: /index.html
 
 * [theory: alternate presentations](stream/233122-theory:-alternate-presentations/index.html) (1 topic)
 
-<hr><p>Last updated: May 19 2022 at 00:56 UTC</p>
+<hr><p>Last updated: May 20 2022 at 00:49 UTC</p>

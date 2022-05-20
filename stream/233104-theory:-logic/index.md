@@ -9,7 +9,7 @@ permalink: /stream/233104-theory:-logic/index.html
 
 ### Topics:
 
-* [2-dimensional essentially algebraic theories](topic/topic_2-dimensional.20essentially.20algebraic.20theories.html) (1 message, latest: May 19 2022 at 00:10)
+* [2-dimensional essentially algebraic theories](topic/topic_2-dimensional.20essentially.20algebraic.20theories.html) (9 messages, latest: May 19 2022 at 22:32)
 * [∃∀∃ statements in geometric logic](topic/topic_.E2.88.83.E2.88.80.E2.88.83.20statements.20in.20geometric.20logic.html) (11 messages, latest: Apr 07 2022 at 20:18)
 * [Induction](topic/topic_Induction.html) (6 messages, latest: Apr 04 2022 at 17:50)
 * [new website: Women in Logic](topic/topic_new.20website.3A.20Women.20in.20Logic.html) (1 message, latest: Feb 06 2022 at 16:28)
@@ -57,4 +57,4 @@ permalink: /stream/233104-theory:-logic/index.html
 * [Probability as logic](topic/topic_Probability.20as.20logic.html) (63 messages, latest: Apr 15 2020 at 12:33)
 * [stream events](topic/topic_stream.20events.html) (1 message, latest: Apr 10 2020 at 12:32)
 
-<hr><p>Last updated: May 19 2022 at 00:56 UTC</p>
+<hr><p>Last updated: May 20 2022 at 00:49 UTC</p>
