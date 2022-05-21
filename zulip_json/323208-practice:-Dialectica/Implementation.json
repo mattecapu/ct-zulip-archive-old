@@ -124,5 +124,29 @@
         "id": 282856940,
         "sender_full_name": "Eric Bond",
         "timestamp": 1652912434
+    },
+    {
+        "content": "<p><span class=\"user-mention\" data-user-id=\"380293\">@Eric Bond</span> I still have two questions about the proof that DialSet is a category.</p>\n<p>About the equality of maps I was expecting you to say:</p>\n<blockquote>\n<p>(f,F, cond)=(g,G, cond') iff  f=g and F=G and cond=cond'</p>\n</blockquote>\n<p>but I am not seeing the 3rd conjunct cond=cond'.<br>\ninstead of </p>\n<blockquote>\n<p>cong-dial : f ≡ f' → F ≡ F' → m₁ ≡ m₂</p>\n</blockquote>\n<p>I was expecting cong-dial to be more like: f ≡ f' → F ≡ F' →  cond ≡ cond' →  m₁ ≡ m₂</p>\n<p>I also don't understand what the extensionality of functions has to do with swapping the arguments in </p>\n<blockquote>\n<p>funext : {o : Level}{A B : Set o}{f g : A → B} → (∀ (a : A) → f a ≡ g a) → f ≡ g <br>\n    funext p i x = p x i</p>\n</blockquote>\n<p>but I kind of expect that this is how it  goes.</p>",
+        "id": 283013240,
+        "sender_full_name": "Valeria de Paiva",
+        "timestamp": 1653009957
+    },
+    {
+        "content": "<p>The explanation for the derivation of function extensionality turned into a wall of text. <br>\nI've decided to just make it available here.</p>\n<p><a href=\"https://gist.github.com/bond15/be2f38461a6b24ce84468cfc8b37f355\">https://gist.github.com/bond15/be2f38461a6b24ce84468cfc8b37f355</a></p>",
+        "id": 283097453,
+        "sender_full_name": "Eric Bond",
+        "timestamp": 1653065603
+    },
+    {
+        "content": "<hr>\n<p>For the other question you are asking about <code>eq-cond</code>.</p>\n<div class=\"codehilite\"><pre><span></span><code>cong-dial : f ≡ g → F ≡ G → m₁ ≡ m₂\ncong-dial p q i = (p i)  ∧ (q i)  st (eq-cond p q i)\n</code></pre></div>\n<p>Observe when <br>\n<code>i := i0</code>, <code>(p i)  ∧ (q i)  st (eq-cond p q i)  := f ∧ F st cond</code><br>\n              and    <br>\n<code>i := i1</code>, <code>(p i)  ∧ (q i)  st (eq-cond p q i)  := g ∧ G st cond'</code></p>\n<p><code>eq-cond</code> has an ugly type because it requires Dependent Path Types <code>PathP</code>.<br>\nThe gist is </p>\n<div class=\"codehilite\"><pre><span></span><code>eq-cond : (p : f ≡ g) → (q : F ≡ G) →  PathP &lt;ugly mess&gt;  cond cond&#39;\n</code></pre></div>\n<p>The full type is</p>\n<div class=\"codehilite\"><pre><span></span><code>eq-cond : (p : f ≡ g) → (q : F ≡ G) →\n        PathP (λ i → (u : U)(y : Y) → α u ((q i) u y) ≤² β ((p i) u) y) cond cond&#39;\n</code></pre></div>",
+        "id": 283099771,
+        "sender_full_name": "Eric Bond",
+        "timestamp": 1653066691
+    },
+    {
+        "content": "<p><span class=\"user-mention\" data-user-id=\"276656\">@Valeria de Paiva</span> <br>\nTo get the ball rolling, here is a partial implementation of <code>2</code> as a <code>Lineale</code><br>\n<a href=\"https://github.com/bond15/Dialectica/blob/main/Lineales.agda\">https://github.com/bond15/Dialectica/blob/main/Lineales.agda</a></p>\n<p>Looking to see what the \"loli\" operation for <code>2</code> is.</p>",
+        "id": 283134438,
+        "sender_full_name": "Eric Bond",
+        "timestamp": 1653086060
     }
 ]

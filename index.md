@@ -10,7 +10,7 @@ permalink: /index.html
 
 * [learning: questions](stream/229199-learning:-questions/index.html) (667 topics)
 
-* [theory: category theory](stream/229136-theory:-category-theory/index.html) (272 topics)
+* [theory: category theory](stream/229136-theory:-category-theory/index.html) (273 topics)
 
 * [general](stream/229111-general/index.html) (227 topics)
 
@@ -58,7 +58,7 @@ permalink: /index.html
 
 * [practice: our work](stream/274877-practice:-our-work/index.html) (21 topics)
 
-* [theory: probability](stream/253118-theory:-probability/index.html) (20 topics)
+* [theory: probability](stream/253118-theory:-probability/index.html) (21 topics)
 
 * [philosophy](stream/229134-philosophy/index.html) (16 topics)
 
@@ -162,4 +162,4 @@ permalink: /index.html
 
 * [theory: alternate presentations](stream/233122-theory:-alternate-presentations/index.html) (1 topic)
 
-<hr><p>Last updated: May 20 2022 at 00:49 UTC</p>
+<hr><p>Last updated: May 21 2022 at 00:42 UTC</p>

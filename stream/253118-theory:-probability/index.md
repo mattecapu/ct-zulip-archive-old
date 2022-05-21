@@ -9,6 +9,7 @@ permalink: /stream/253118-theory:-probability/index.html
 
 ### Topics:
 
+* [Gaussian Mixtures](topic/topic_Gaussian.20Mixtures.html) (7 messages, latest: May 20 2022 at 18:47)
 * [traced Markov categories](topic/topic_traced.20Markov.20categories.html) (59 messages, latest: May 19 2022 at 05:36)
 * [expectation](topic/topic_expectation.html) (18 messages, latest: May 09 2022 at 08:22)
 * [non-weird algebras](topic/topic_non-weird.20algebras.html) (16 messages, latest: May 08 2022 at 12:03)
@@ -30,4 +31,4 @@ permalink: /stream/253118-theory:-probability/index.html
 * [Finitely additive probability](topic/topic_Finitely.20additive.20probability.html) (1 message, latest: Aug 16 2020 at 00:48)
 * [stream events](topic/topic_stream.20events.html) (2 messages, latest: Aug 16 2020 at 00:31)
 
-<hr><p>Last updated: May 20 2022 at 00:49 UTC</p>
+<hr><p>Last updated: May 21 2022 at 00:42 UTC</p>
