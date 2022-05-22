@@ -9,7 +9,7 @@ permalink: /stream/241590-theory:-algebraic-topology-&-homological-algebra/index
 
 ### Topics:
 
-* [Čech cohomology & sheaf cohomology](topic/topic_.C4.8Cech.20cohomology.20.26.20sheaf.20cohomology.html) (10 messages, latest: May 19 2022 at 07:37)
+* [Čech cohomology & sheaf cohomology](topic/topic_.C4.8Cech.20cohomology.20.26.20sheaf.20cohomology.html) (13 messages, latest: May 21 2022 at 22:40)
 * [Steenrod algebra](topic/topic_Steenrod.20algebra.html) (3 messages, latest: May 10 2022 at 12:06)
 * [Steenrod Algebra](topic/topic_Steenrod.20Algebra.html) (2 messages, latest: May 03 2022 at 15:04)
 * [formal properties of the bar construction](topic/topic_formal.20properties.20of.20the.20bar.20construction.html) (206 messages, latest: May 01 2022 at 15:40)
@@ -67,4 +67,4 @@ permalink: /stream/241590-theory:-algebraic-topology-&-homological-algebra/index
 * [simplicial sets](topic/topic_simplicial.20sets.html) (1 message, latest: Jul 02 2020 at 11:05)
 * [Secondary algebraic K-theory](topic/topic_Secondary.20algebraic.20K-theory.html) (13 messages, latest: Jun 01 2020 at 16:14)
 
-<hr><p>Last updated: May 21 2022 at 00:42 UTC</p>
+<hr><p>Last updated: May 22 2022 at 00:45 UTC</p>
