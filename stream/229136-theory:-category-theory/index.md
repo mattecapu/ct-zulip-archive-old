@@ -9,7 +9,7 @@ permalink: /stream/229136-theory:-category-theory/index.html
 
 ### Topics:
 
-* [commutative diagrams of 2-cells](topic/topic_commutative.20diagrams.20of.202-cells.html) (6 messages, latest: May 21 2022 at 12:48)
+* [commutative diagrams of 2-cells](topic/topic_commutative.20diagrams.20of.202-cells.html) (8 messages, latest: May 22 2022 at 16:05)
 * [monad not preserving epimorphisms](topic/topic_monad.20not.20preserving.20epimorphisms.html) (9 messages, latest: May 20 2022 at 11:21)
 * [shape of finitary functors](topic/topic_shape.20of.20finitary.20functors.html) (19 messages, latest: May 19 2022 at 21:13)
 * [cofunctors as profunctors](topic/topic_cofunctors.20as.20profunctors.html) (13 messages, latest: May 16 2022 at 13:02)
@@ -284,4 +284,4 @@ permalink: /stream/229136-theory:-category-theory/index.html
 * [diagrams for application](topic/topic_diagrams.20for.20application.html) (13 messages, latest: Mar 24 2020 at 06:19)
 * [universal constructions](topic/topic_universal.20constructions.html) (8 messages, latest: Mar 23 2020 at 21:06)
 
-<hr><p>Last updated: May 22 2022 at 00:45 UTC</p>
+<hr><p>Last updated: May 23 2022 at 00:46 UTC</p>

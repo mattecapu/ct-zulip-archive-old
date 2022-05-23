@@ -302,6 +302,43 @@ To get the ball rolling, here is a partial implementation of <code>2</code> as a
 
 
 
+<a name="283209440"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/323208-practice%3A%20Dialectica/topic/Implementation/near/283209440" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Eric Bond <a href="https://mattecapu.github.io/ct-zulip-archive/stream/323208-practice:-Dialectica/topic/topic_Implementation.html#283209440">(May 22 2022 at 04:08)</a>:</h4>
+<p>patched holes in DialSets and finished Lineale 2.</p>
+
+
+
+<a name="283209733"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/323208-practice%3A%20Dialectica/topic/Implementation/near/283209733" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Valeria de Paiva <a href="https://mattecapu.github.io/ct-zulip-archive/stream/323208-practice:-Dialectica/topic/topic_Implementation.html#283209733">(May 22 2022 at 04:16)</a>:</h4>
+<p>Great!   this way  they can go in parallel, as the next step in DialSets is the monoidal  closed structure.  Need to add the parallel tensor and its internal-hom.</p>
+
+
+
+<a name="283212203"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/323208-practice%3A%20Dialectica/topic/Implementation/near/283212203" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Eric Bond <a href="https://mattecapu.github.io/ct-zulip-archive/stream/323208-practice:-Dialectica/topic/topic_Implementation.html#283212203">(May 22 2022 at 05:10)</a>:</h4>
+<p><a href="https://github.com/bond15/Dialectica/blob/fe0a110d83ed8c1656e224ebadb780e145efdb06/DialSets.agda#L203">https://github.com/bond15/Dialectica/blob/fe0a110d83ed8c1656e224ebadb780e145efdb06/DialSets.agda#L203</a></p>
+<p>starting that here with the tensor bifunctor</p>
+
+
+
+<a name="283213445"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/323208-practice%3A%20Dialectica/topic/Implementation/near/283213445" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Valeria de Paiva <a href="https://mattecapu.github.io/ct-zulip-archive/stream/323208-practice:-Dialectica/topic/topic_Implementation.html#283213445">(May 22 2022 at 05:36)</a>:</h4>
+<p>cool! as I wrote about the tensor in lineales one, I think we need to show functoriality in both coordinates, as we shouldn't rely on symmetry.<br>
+so I expect you to need another compat-like  function</p>
+<blockquote>
+<p>compat' : {a b : Two} → a ≤² b → ({c : Two} → (a ⊗² c) ≤² (b ⊗² c)) </p>
+</blockquote>
+<p>of shape perhaps something like compat : {c : Two} → ({a b: Two} → a ≤² b → (c ⊗² a) ≤² (c ⊗² b))</p>
+
+
+
+<a name="283240508"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/323208-practice%3A%20Dialectica/topic/Implementation/near/283240508" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Eric Bond <a href="https://mattecapu.github.io/ct-zulip-archive/stream/323208-practice:-Dialectica/topic/topic_Implementation.html#283240508">(May 22 2022 at 16:37)</a>:</h4>
+<p>Finished the tensor bifunctor. <br>
+Next up, monoidal structure. So far <code>CatLib.agda</code> is a spartan version of the <code>agda-categories</code> library but It might make sense to just use <code>agda-categories</code>. Thoughts?  I can also merge the new developments into your repo.</p>
+
+
+
 {% endraw %}
 
-<hr><p>Last updated: May 22 2022 at 00:45 UTC</p>
+<hr><p>Last updated: May 23 2022 at 00:46 UTC</p>
