@@ -9,6 +9,7 @@ permalink: /stream/269484-seminar:-Topos-Colloquium/index.html
 
 ### Topics:
 
+* [Tai-Danae Bradley: Entropy as an Operad Derivation](topic/topic_Tai-Danae.20Bradley.3A.20Entropy.20as.20an.20Operad.20Derivation.html) (1 message, latest: May 23 2022 at 06:41)
 * [Andrej Bauer: The countable reals](topic/topic_Andrej.20Bauer.3A.20The.20countable.20reals.html) (33 messages, latest: May 20 2022 at 16:35)
 * [Alexandra Silva: Learning Weighted Automata over \[...\]](topic/topic_Alexandra.20Silva.3A.20Learning.20Weighted.20Automata.20over.20.5B.2E.2E.2E.5D.html) (1 message, latest: May 16 2022 at 21:55)
 * [stream events](topic/topic_stream.20events.html) (3 messages, latest: May 09 2022 at 21:13)
@@ -66,4 +67,4 @@ permalink: /stream/269484-seminar:-Topos-Colloquium/index.html
 * [Gunnar E. Carlsson: "Relative topology, motion planning, .."](topic/topic_Gunnar.20E.2E.20Carlsson.3A.20.22Relative.20topology.2C.20motion.20planning.2C.20.2E.2E.22.html) (4 messages, latest: Feb 18 2021 at 16:45)
 * [Richard Garner: "Comodels of an algebraic theory"](topic/topic_Richard.20Garner.3A.20.22Comodels.20of.20an.20algebraic.20theory.22.html) (27 messages, latest: Feb 11 2021 at 22:36)
 
-<hr><p>Last updated: May 23 2022 at 00:46 UTC</p>
+<hr><p>Last updated: May 24 2022 at 00:52 UTC</p>
