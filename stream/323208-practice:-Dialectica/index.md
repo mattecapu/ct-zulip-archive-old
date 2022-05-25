@@ -9,7 +9,8 @@ permalink: /stream/323208-practice:-Dialectica/index.html
 
 ### Topics:
 
-* [Implementation](topic/topic_Implementation.html) (33 messages, latest: May 23 2022 at 04:35)
+* [Implementation](topic/topic_Implementation.html) (37 messages, latest: May 24 2022 at 21:07)
+* [4th meeting today](topic/topic_4th.20meeting.20today.html) (1 message, latest: May 24 2022 at 17:50)
 * [Dialectica for Friends video](topic/topic_Dialectica.20for.20Friends.20video.html) (3 messages, latest: May 19 2022 at 00:11)
 * [Dialectica and Poly](topic/topic_Dialectica.20and.20Poly.html) (15 messages, latest: May 18 2022 at 20:30)
 * [Dialectica as $$\exists\forall$$ completion](topic/topic_Dialectica.20as.20.24.24.5Cexists.5Cforall.24.24.20completion.html) (14 messages, latest: May 17 2022 at 18:25)
@@ -23,4 +24,4 @@ permalink: /stream/323208-practice:-Dialectica/index.html
 * [stream events](topic/topic_stream.20events.html) (5 messages, latest: Apr 28 2022 at 20:15)
 * [Welcome](topic/topic_Welcome.html) (2 messages, latest: Apr 28 2022 at 16:34)
 
-<hr><p>Last updated: May 24 2022 at 00:52 UTC</p>
+<hr><p>Last updated: May 25 2022 at 00:51 UTC</p>

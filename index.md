@@ -74,13 +74,13 @@ permalink: /index.html
 
 * [theory: algebraic geometry](stream/231112-theory:-algebraic-geometry/index.html) (15 topics)
 
+* [practice: Dialectica](stream/323208-practice:-Dialectica/index.html) (14 topics)
+
 * [practice: programming](stream/229450-practice:-programming/index.html) (14 topics)
 
 * [working: discrete geometry and entanglement](stream/266854-working:-discrete-geometry-and-entanglement/index.html) (14 topics)
 
 * [general: co/appreciation](stream/271602-general:-co/appreciation/index.html) (13 topics)
-
-* [practice: Dialectica](stream/323208-practice:-Dialectica/index.html) (13 topics)
 
 * [practice: translation](stream/260000-practice:-translation/index.html) (11 topics)
 
@@ -162,4 +162,4 @@ permalink: /index.html
 
 * [theory: alternate presentations](stream/233122-theory:-alternate-presentations/index.html) (1 topic)
 
-<hr><p>Last updated: May 24 2022 at 00:52 UTC</p>
+<hr><p>Last updated: May 25 2022 at 00:51 UTC</p>

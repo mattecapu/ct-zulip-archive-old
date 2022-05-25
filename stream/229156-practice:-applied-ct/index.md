@@ -9,7 +9,7 @@ permalink: /stream/229156-practice:-applied-ct/index.html
 
 ### Topics:
 
-* [category theory for nested data structures](topic/topic_category.20theory.20for.20nested.20data.20structures.html) (4 messages, latest: May 23 2022 at 11:26)
+* [category theory for nested data structures](topic/topic_category.20theory.20for.20nested.20data.20structures.html) (16 messages, latest: May 24 2022 at 22:13)
 * [Category theory for nested data structures](topic/topic_Category.20theory.20for.20nested.20data.20structures.html) (10 messages, latest: May 21 2022 at 17:41)
 * [ACT22](topic/topic_ACT22.html) (19 messages, latest: May 11 2022 at 05:26)
 * [web cats](topic/topic_web.20cats.html) (337 messages, latest: May 10 2022 at 06:44)
@@ -144,4 +144,4 @@ permalink: /stream/229156-practice:-applied-ct/index.html
 * [AACT2020](topic/topic_AACT2020.html) (1 message, latest: Mar 24 2020 at 00:56)
 * [welcome](topic/topic_welcome.html) (15 messages, latest: Mar 24 2020 at 00:03)
 
-<hr><p>Last updated: May 24 2022 at 00:52 UTC</p>
+<hr><p>Last updated: May 25 2022 at 00:51 UTC</p>
