@@ -1,0 +1,127 @@
+---
+layout: archive
+title: Zulip Chat Archive
+permalink: /stream/230087-theory:-topos-theory/topic/topic_stacks.20and.20other.20things.html
+---
+
+<h2>Stream: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/230087-theory:-topos-theory/index.html">theory: topos theory</a></h2>
+<h3>Topic: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/230087-theory:-topos-theory/topic/topic_stacks.20and.20other.20things.html">stacks and other things</a></h3>
+
+<hr>
+
+<base href="https://categorytheory.zulipchat.com/">
+
+{% raw %}
+
+<a name="284003747"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/230087-theory%3A%20topos%20theory/topic/stacks%20and%20other%20things/near/284003747" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> James Deikun <a href="https://mattecapu.github.io/ct-zulip-archive/stream/230087-theory:-topos-theory/topic/topic_stacks.20and.20other.20things.html#284003747">(May 26 2022 at 13:10)</a>:</h4>
+<p>I've gathered from the literature, especially Caramello, the following analogies:</p>
+<ul>
+<li>stack : internal category in a sheaf topos :: fibration : split fibration :: indexed category : strict indexed category</li>
+<li>stack on <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="script">E</mi></mrow><annotation encoding="application/x-tex">\mathcal{E}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathcal" style="margin-right:0.08944em;">E</span></span></span></span> : geometric morphism into <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="script">E</mi></mrow><annotation encoding="application/x-tex">\mathcal{E}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathcal" style="margin-right:0.08944em;">E</span></span></span></span> :: small category : site :: presheaf topos : Grothendieck topos</li>
+</ul>
+<p>First off, it feels like these analogies should come with some size conditions on the stack, but they seem to get glossed over.  What are they?</p>
+<p>Second, the first set of analogies seems like it's not specific to sites/toposes, but the definition of stack is.  Is there a more general way to define stacks so they generalize internal categories, or does that just reduce to a fibration/indexed category?</p>
+<p>Third, it seems like the second set of analogies would associate stacks with a particularly nice kind of model of a geometric theory, like presheaf toposes are particularly nice toposes.  Is there a good characterization of what makes these models nicer?</p>
+
+
+
+<a name="284011890"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/230087-theory%3A%20topos%20theory/topic/stacks%20and%20other%20things/near/284011890" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Zhen Lin Low <a href="https://mattecapu.github.io/ct-zulip-archive/stream/230087-theory:-topos-theory/topic/topic_stacks.20and.20other.20things.html#284011890">(May 26 2022 at 14:20)</a>:</h4>
+<p>There's more subtlety than just that. Not every internal category in a sheaf topos gives rise to a stack. (More precisely, every internal category in a category with finite limits can be "externalised" to obtain a strict indexed category, but that does not automatically satisfy the effective descent condition.)</p>
+
+
+
+<a name="284012000"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/230087-theory%3A%20topos%20theory/topic/stacks%20and%20other%20things/near/284012000" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Zhen Lin Low <a href="https://mattecapu.github.io/ct-zulip-archive/stream/230087-theory:-topos-theory/topic/topic_stacks.20and.20other.20things.html#284012000">(May 26 2022 at 14:21)</a>:</h4>
+<p>Stacks are only defined for sites for the same reason sheaves are only defined for sites: you need to know which descent conditions to impose.</p>
+
+
+
+<a name="284012875"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/230087-theory%3A%20topos%20theory/topic/stacks%20and%20other%20things/near/284012875" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Zhen Lin Low <a href="https://mattecapu.github.io/ct-zulip-archive/stream/230087-theory:-topos-theory/topic/topic_stacks.20and.20other.20things.html#284012875">(May 26 2022 at 14:29)</a>:</h4>
+<p>I would prefer to push the analogy that a stack is the correct notion of a Cat-valued sheaf, where we understand Cat to be the 2-category of categories, whereas an internal category in a sheaf topos is basically the same thing as a sheaf taking values in the 1-category of "categories with equality between objects". (Put it another way, the notion of internal category in a 1-category is really an internalisation of the notion of "category with equality between objects".)</p>
+
+
+
+<a name="284014053"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/230087-theory%3A%20topos%20theory/topic/stacks%20and%20other%20things/near/284014053" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> James Deikun <a href="https://mattecapu.github.io/ct-zulip-archive/stream/230087-theory:-topos-theory/topic/topic_stacks.20and.20other.20things.html#284014053">(May 26 2022 at 14:39)</a>:</h4>
+<p>I understand there is a 'stackification' of any fibration much like there is a 'sheafification' of any presheaf; what distinctions between internal categories are lost by passing to the stackification of the externalization?</p>
+
+
+
+<a name="284014310"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/230087-theory%3A%20topos%20theory/topic/stacks%20and%20other%20things/near/284014310" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> James Deikun <a href="https://mattecapu.github.io/ct-zulip-archive/stream/230087-theory:-topos-theory/topic/topic_stacks.20and.20other.20things.html#284014310">(May 26 2022 at 14:41)</a>:</h4>
+<p>I get the idea of whatever might make stacks 'more special' than internal categories isn't enough to prevent there being a relative Giraud's theorem using stacks instead of internal categories; is this correct?</p>
+
+
+
+<a name="284014542"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/230087-theory%3A%20topos%20theory/topic/stacks%20and%20other%20things/near/284014542" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Zhen Lin Low <a href="https://mattecapu.github.io/ct-zulip-archive/stream/230087-theory:-topos-theory/topic/topic_stacks.20and.20other.20things.html#284014542">(May 26 2022 at 14:43)</a>:</h4>
+<p>In the case of the terminal site, you lose the distinction between non-isomorphic but equivalent categories. But much more happens in general – it's where the first sheaf cohomology group comes from, in some sense.</p>
+
+
+
+<a name="284014911"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/230087-theory%3A%20topos%20theory/topic/stacks%20and%20other%20things/near/284014911" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Zhen Lin Low <a href="https://mattecapu.github.io/ct-zulip-archive/stream/230087-theory:-topos-theory/topic/topic_stacks.20and.20other.20things.html#284014911">(May 26 2022 at 14:46)</a>:</h4>
+<p>Take an internal group G and consider it as an internal category. Its externalisation will usually fail to be a stack. There is a natural identification between the set of connected components of the fibre over 1 of the stackification and the sheaf cohomology group H^1 (G).</p>
+
+
+
+<a name="284015270"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/230087-theory%3A%20topos%20theory/topic/stacks%20and%20other%20things/near/284015270" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> James Deikun <a href="https://mattecapu.github.io/ct-zulip-archive/stream/230087-theory:-topos-theory/topic/topic_stacks.20and.20other.20things.html#284015270">(May 26 2022 at 14:49)</a>:</h4>
+<p>(Whereas the fiber over 1 of the plain externalization is always connected, IIUC.)</p>
+
+
+
+<a name="284015575"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/230087-theory%3A%20topos%20theory/topic/stacks%20and%20other%20things/near/284015575" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Zhen Lin Low <a href="https://mattecapu.github.io/ct-zulip-archive/stream/230087-theory:-topos-theory/topic/topic_stacks.20and.20other.20things.html#284015575">(May 26 2022 at 14:51)</a>:</h4>
+<p>Yes. So by passing to the stackification you lose the distinction between internal categories that are weakly equivalent but not strictly equivalent (let alone isomorphic).</p>
+
+
+
+<a name="284015902"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/230087-theory%3A%20topos%20theory/topic/stacks%20and%20other%20things/near/284015902" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> James Deikun <a href="https://mattecapu.github.io/ct-zulip-archive/stream/230087-theory:-topos-theory/topic/topic_stacks.20and.20other.20things.html#284015902">(May 26 2022 at 14:54)</a>:</h4>
+<p>Oh, there's a specific notion of weak equivalence of internal categories in play here?</p>
+
+
+
+<a name="284016066"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/230087-theory%3A%20topos%20theory/topic/stacks%20and%20other%20things/near/284016066" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Zhen Lin Low <a href="https://mattecapu.github.io/ct-zulip-archive/stream/230087-theory:-topos-theory/topic/topic_stacks.20and.20other.20things.html#284016066">(May 26 2022 at 14:55)</a>:</h4>
+<p>It is more or less the internalisation of the usual notion: a functor is a weak equivalence if it is fully faithful and every object in the codomain category is isomorphic to an object in the image. The existential quantifier is doing the work of making this interesting in a sheaf topos.</p>
+
+
+
+<a name="284017050"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/230087-theory%3A%20topos%20theory/topic/stacks%20and%20other%20things/near/284017050" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> James Deikun <a href="https://mattecapu.github.io/ct-zulip-archive/stream/230087-theory:-topos-theory/topic/topic_stacks.20and.20other.20things.html#284017050">(May 26 2022 at 15:03)</a>:</h4>
+<p>Ah, so it's just internal anaequivalence!  But I guess in a general sheaf topos you get some interesting homotopy from anaequivalence, and that's what the stacks 'see' by forming a bicategory that is not (I'm guessing) globally equivalent to the bicategory of internal categories?</p>
+
+
+
+<a name="284017253"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/230087-theory%3A%20topos%20theory/topic/stacks%20and%20other%20things/near/284017253" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Zhen Lin Low <a href="https://mattecapu.github.io/ct-zulip-archive/stream/230087-theory:-topos-theory/topic/topic_stacks.20and.20other.20things.html#284017253">(May 26 2022 at 15:04)</a>:</h4>
+<p>I believe so.</p>
+
+
+
+<a name="284017765"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/230087-theory%3A%20topos%20theory/topic/stacks%20and%20other%20things/near/284017765" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> James Deikun <a href="https://mattecapu.github.io/ct-zulip-archive/stream/230087-theory:-topos-theory/topic/topic_stacks.20and.20other.20things.html#284017765">(May 26 2022 at 15:08)</a>:</h4>
+<p>Thanks, this really clears up the first set of analogies; and in particular its limitations and why stacks might be nicer to work with than internal categories to an even greater degree than non-split fibrations in general.</p>
+
+
+
+<a name="284018974"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/230087-theory%3A%20topos%20theory/topic/stacks%20and%20other%20things/near/284018974" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> James Deikun <a href="https://mattecapu.github.io/ct-zulip-archive/stream/230087-theory:-topos-theory/topic/topic_stacks.20and.20other.20things.html#284018974">(May 26 2022 at 15:18)</a>:</h4>
+<p>(I guess it also clears up why you want <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">∞</mi></mrow><annotation encoding="application/x-tex">\infty</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord">∞</span></span></span></span>-stacks; in a similar way, they can see all of the latent homotopy behind sheaf cohomology, basically, not just the lowest levels?)</p>
+
+
+
+<a name="284021343"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/230087-theory%3A%20topos%20theory/topic/stacks%20and%20other%20things/near/284021343" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Zhen Lin Low <a href="https://mattecapu.github.io/ct-zulip-archive/stream/230087-theory:-topos-theory/topic/topic_stacks.20and.20other.20things.html#284021343">(May 26 2022 at 15:38)</a>:</h4>
+<p>Sure. At least it clarifies why ∞-stacks of ∞-groupoids are significant. IIRC this is explained as early as Ken Brown's paper introducing categories of fibrant objects. (He doesn't use these words though...)</p>
+
+
+
+{% endraw %}
+
+<hr><p>Last updated: May 27 2022 at 00:46 UTC</p>

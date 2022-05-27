@@ -18,7 +18,7 @@ permalink: /index.html
 
 * [general: events](stream/229141-general:-events/index.html) (127 topics)
 
-* [theory: topos theory](stream/230087-theory:-topos-theory/index.html) (75 topics)
+* [theory: topos theory](stream/230087-theory:-topos-theory/index.html) (76 topics)
 
 * [conference: ACT 2020](stream/243068-conference:-ACT-2020/index.html) (62 topics)
 
@@ -30,7 +30,7 @@ permalink: /index.html
 
 * [general: mathematics](stream/266967-general:-mathematics/index.html) (54 topics)
 
-* [practice: thermodynamics](stream/306433-practice:-thermodynamics/index.html) (50 topics)
+* [practice: thermodynamics](stream/306433-practice:-thermodynamics/index.html) (51 topics)
 
 * [theory: logic](stream/233104-theory:-logic/index.html) (47 topics)
 
@@ -162,4 +162,4 @@ permalink: /index.html
 
 * [theory: alternate presentations](stream/233122-theory:-alternate-presentations/index.html) (1 topic)
 
-<hr><p>Last updated: May 26 2022 at 00:50 UTC</p>
+<hr><p>Last updated: May 27 2022 at 00:46 UTC</p>
