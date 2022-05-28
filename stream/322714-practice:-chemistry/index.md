@@ -9,6 +9,7 @@ permalink: /stream/322714-practice:-chemistry/index.html
 
 ### Topics:
 
+* [the hyperfield of signs](topic/topic_the.20hyperfield.20of.20signs.html) (6 messages, latest: May 28 2022 at 00:06)
 * [welcome!](topic/topic_welcome!.html) (60 messages, latest: May 26 2022 at 20:46)
 * [problems to work on](topic/topic_problems.20to.20work.20on.html) (33 messages, latest: May 26 2022 at 20:28)
 * [meetings](topic/topic_meetings.html) (12 messages, latest: May 26 2022 at 17:58)
@@ -20,4 +21,4 @@ permalink: /stream/322714-practice:-chemistry/index.html
 * [moving this stream?](topic/topic_moving.20this.20stream.3F.html) (9 messages, latest: May 03 2022 at 02:56)
 * [Graph structure theory](topic/topic_Graph.20structure.20theory.html) (1 message, latest: Apr 26 2022 at 08:42)
 
-<hr><p>Last updated: May 27 2022 at 00:46 UTC</p>
+<hr><p>Last updated: May 28 2022 at 00:49 UTC</p>

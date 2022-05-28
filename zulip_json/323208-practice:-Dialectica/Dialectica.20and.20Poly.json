@@ -88,5 +88,89 @@
         "id": 282845047,
         "sender_full_name": "Valeria de Paiva",
         "timestamp": 1652905845
+    },
+    {
+        "content": "<div class=\"codehilite\"><pre><span></span><code>-- &quot;non dependent Poly with a relation&quot;?\nrecord LDialSet {ℓ : Level}{ L : Set ℓ}{{ _ : Lineale L}} : Set (lsuc ℓ) where\n    constructor ⟨_,_,_⟩\n    field\n        pos : Set ℓ\n        dir : Set ℓ\n        α : pos → dir → L\n\n-- Poly is &quot;dependent Dialectica without a relation&quot;?\nrecord Poly {ℓ : Level} : Set (lsuc ℓ) where\n    field\n        pos : Set ℓ\n        dir : pos → Set ℓ\n\n-- so what is ..? Dependent Dialectica with a relation?\nrecord LDepDialSet {ℓ : Level}{ L : Set ℓ}{{ _ : Lineale L}} : Set (lsuc ℓ) where\n    field\n        pos : Set ℓ\n        dir : pos → Set ℓ\n        α : (p : pos) → dir p → L\n</code></pre></div>",
+        "id": 284079610,
+        "sender_full_name": "Eric Bond",
+        "timestamp": 1653612541
+    },
+    {
+        "content": "<p>Well, Eric I do not think this Dependent Dialectica with a relation works. <br>\nI don't know how the composition works to preserve the relation. but maybe I have not  tried hard enough.</p>",
+        "id": 284138895,
+        "sender_full_name": "Valeria de Paiva",
+        "timestamp": 1653660950
+    },
+    {
+        "content": "<p>It should work; this is just \\sum\\prod 2 (or L instead of 2) from Sean Moss’s talk</p>",
+        "id": 284152629,
+        "sender_full_name": "Nelson Niu",
+        "timestamp": 1653667685
+    },
+    {
+        "content": "<p>I don’t think the dependence changes how the relation works too much, just the signatures of the backward functions slightly</p>",
+        "id": 284152734,
+        "sender_full_name": "Nelson Niu",
+        "timestamp": 1653667747
+    },
+    {
+        "content": "<div class=\"codehilite\"><pre><span></span><code>\n</code></pre></div>\n\n<blockquote>\n<p>It should work; this is just \\sum\\prod 2 (or L instead of 2) from Sean Moss’s talk </p>\n</blockquote>\n<p>well, if we want to call \\sum\\prod 2 Dialectica then maybe. but there is a difference between \\sum\\prod 2 and Dialectica, because there is no cartesian closed structure in Dialectica and no coproducts, only weak ones. so \\sum\\pro 2 is a generalization of dialectica,  not Dialectica as originally considered.</p>",
+        "id": 284157242,
+        "sender_full_name": "Valeria de Paiva",
+        "timestamp": 1653670129
+    },
+    {
+        "content": "<p>Yes, it’s different, which is why Sean Moss called it dependent dialectica instead of just dialectica I believe! And this is the same difference between Jules Hedges category of bimorphic lenses versus Poly, whose morphisms are “dependent” lenses</p>",
+        "id": 284177652,
+        "sender_full_name": "Nelson Niu",
+        "timestamp": 1653681348
+    },
+    {
+        "content": "<blockquote>\n<p>And this is the same difference between Jules Hedges category of bimorphic lenses</p>\n</blockquote>\n<p>well, I don't know much about Hedges category, but I thought the adjective \"dependent\" had to do with one of the sets being an index set (so minimal structure) while the other set is like a space, plenty of structure. and in the case of Poly this space this full of structure set I thought was supposed to be <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msup><mi>X</mi><mi>U</mi></msup></mrow><annotation encoding=\"application/x-tex\">X^U</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8413em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.07847em;\">X</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.8413em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathnormal mtight\" style=\"margin-right:0.10903em;\">U</span></span></span></span></span></span></span></span></span></span></span> or <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"false\">(</mo><mi>d</mi><mi>i</mi><mi>r</mi><mi>A</mi><msup><mo stretchy=\"false\">)</mo><mrow><mi>p</mi><mi>o</mi><mi>s</mi><mi>A</mi></mrow></msup></mrow><annotation encoding=\"application/x-tex\">(dir A)^{pos A}</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1.0913em;vertical-align:-0.25em;\"></span><span class=\"mopen\">(</span><span class=\"mord mathnormal\">d</span><span class=\"mord mathnormal\">i</span><span class=\"mord mathnormal\" style=\"margin-right:0.02778em;\">r</span><span class=\"mord mathnormal\">A</span><span class=\"mclose\"><span class=\"mclose\">)</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.8413em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mathnormal mtight\">p</span><span class=\"mord mathnormal mtight\">os</span><span class=\"mord mathnormal mtight\">A</span></span></span></span></span></span></span></span></span></span></span></span>. but the issue with this class is that it's not closed under the monoidal structures we want to check in Dial or the internal-hom. so logically it seems a strange situation.</p>\n<p>Now reversing tables, I have not seen in the Poly handout a discussion of the tensor product of GC, which I believe is also duoidal with <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>⊗</mo></mrow><annotation encoding=\"application/x-tex\">\\otimes</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6667em;vertical-align:-0.0833em;\"></span><span class=\"mord\">⊗</span></span></span></span>. this \"cross-product\" tensor takes <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi></mrow><annotation encoding=\"application/x-tex\">A</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\">A</span></span></span></span> and <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>B</mi></mrow><annotation encoding=\"application/x-tex\">B</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.05017em;\">B</span></span></span></span> to <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"false\">(</mo><mi>p</mi><mi>o</mi><mi>s</mi><mi>A</mi><mo>×</mo><mi>p</mi><mi>o</mi><mi>s</mi><mi>B</mi><mo separator=\"true\">,</mo><mo stretchy=\"false\">(</mo><mi>d</mi><mi>i</mi><mi>r</mi><mi>A</mi><msup><mo stretchy=\"false\">)</mo><mrow><mi>p</mi><mi>o</mi><mi>s</mi><mi>B</mi></mrow></msup><mo>×</mo><mo stretchy=\"false\">(</mo><mi>d</mi><mi>i</mi><mi>r</mi><mi>B</mi><msup><mo stretchy=\"false\">)</mo><mrow><mi>p</mi><mi>o</mi><mi>s</mi><mi>A</mi></mrow></msup><mo separator=\"true\">,</mo><mi>e</mi><mi>v</mi><mi>a</mi><mi>l</mi><mi>s</mi><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">(pos A\\times pos B, (dir A)^{pos B}\\times (dirB)^{pos A}, evals)</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mopen\">(</span><span class=\"mord mathnormal\">p</span><span class=\"mord mathnormal\">os</span><span class=\"mord mathnormal\">A</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span><span class=\"mbin\">×</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1.0913em;vertical-align:-0.25em;\"></span><span class=\"mord mathnormal\">p</span><span class=\"mord mathnormal\">os</span><span class=\"mord mathnormal\" style=\"margin-right:0.05017em;\">B</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mopen\">(</span><span class=\"mord mathnormal\">d</span><span class=\"mord mathnormal\">i</span><span class=\"mord mathnormal\" style=\"margin-right:0.02778em;\">r</span><span class=\"mord mathnormal\">A</span><span class=\"mclose\"><span class=\"mclose\">)</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.8413em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mathnormal mtight\">p</span><span class=\"mord mathnormal mtight\">os</span><span class=\"mord mathnormal mtight\" style=\"margin-right:0.05017em;\">B</span></span></span></span></span></span></span></span></span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span><span class=\"mbin\">×</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1.0913em;vertical-align:-0.25em;\"></span><span class=\"mopen\">(</span><span class=\"mord mathnormal\">d</span><span class=\"mord mathnormal\">i</span><span class=\"mord mathnormal\" style=\"margin-right:0.02778em;\">r</span><span class=\"mord mathnormal\" style=\"margin-right:0.05017em;\">B</span><span class=\"mclose\"><span class=\"mclose\">)</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.8413em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mathnormal mtight\">p</span><span class=\"mord mathnormal mtight\">os</span><span class=\"mord mathnormal mtight\">A</span></span></span></span></span></span></span></span></span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord mathnormal\">e</span><span class=\"mord mathnormal\" style=\"margin-right:0.03588em;\">v</span><span class=\"mord mathnormal\">a</span><span class=\"mord mathnormal\" style=\"margin-right:0.01968em;\">l</span><span class=\"mord mathnormal\">s</span><span class=\"mclose\">)</span></span></span></span>. Was that there?</p>",
+        "id": 284188044,
+        "sender_full_name": "Valeria de Paiva",
+        "timestamp": 1653687765
+    },
+    {
+        "content": "<p>EDIT: <br>\nmoved the code snippet to here.<br>\nI did get composition to hold.<br>\n(Apologies for the sloppy code.  it was jotted down quickly and ill clean it up)<br>\n<a href=\"https://gist.github.com/bond15/59582ea8a74e75a71764690d85137344\">https://gist.github.com/bond15/59582ea8a74e75a71764690d85137344</a></p>",
+        "id": 284190180,
+        "sender_full_name": "Eric Bond",
+        "timestamp": 1653689217
+    },
+    {
+        "content": "<p>cool.  but</p>\n<blockquote>\n<p>\"non dependent Poly with a relation\" </p>\n</blockquote>\n<p>is exactly Dial Set, right? why call it non-dependent Poly with a relation?<br>\nand </p>\n<blockquote>\n<p>LDepDialSet </p>\n</blockquote>\n<p>is exactly the subcategory of GSet with  the second coordinate of the form <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>p</mi><mi>o</mi><mi>s</mi><mi>A</mi><mo>→</mo><mi>d</mi><mi>i</mi><mi>r</mi><mi>A</mi></mrow><annotation encoding=\"application/x-tex\"> pos A\\to dir A</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8778em;vertical-align:-0.1944em;\"></span><span class=\"mord mathnormal\">p</span><span class=\"mord mathnormal\">os</span><span class=\"mord mathnormal\">A</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">→</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6944em;\"></span><span class=\"mord mathnormal\">d</span><span class=\"mord mathnormal\">i</span><span class=\"mord mathnormal\" style=\"margin-right:0.02778em;\">r</span><span class=\"mord mathnormal\">A</span></span></span></span>, right? (*)</p>\n<p>my issue above is that I don't think this subcategory is closed under the operations in GSet. I don't think I can restrict the operations I'm interested in <br>\n<span class=\"tex-error\">$$ \\otimes, &amp;, \\oplus, [-,-] $$</span><br>\n to this subcategory. while Eric and Nelson think there's no problem. So I'll be happier if they're right, but cannot see it at the moment, bc the bifunctors exist in the large category, but they don't restrict to the small one. unless I am wrong about (*) or about the fact that the results of the bifunctors don't have the appropriate shape.</p>",
+        "id": 284191284,
+        "sender_full_name": "Valeria de Paiva",
+        "timestamp": 1653690193
+    },
+    {
+        "content": "<p>Still processing the posts above.</p>\n<p>I'm a bit confused about. <br>\n<code>\n LDepDialSet is exactly the subcategory of GSet with the second coordinate of the form posA→dirA , right? (*)\n</code></p>\n<p><code>LDepDialSet</code> objects would be of the form <code>(pos A : Set ,  dir A : pos A -&gt; Set, alpha)</code><br>\nso <code>dir A</code> is a <code>pos A</code> indexed family of sets.</p>",
+        "id": 284197642,
+        "sender_full_name": "Eric Bond",
+        "timestamp": 1653696175
+    },
+    {
+        "content": "<p>I see now, the question is whether your target is dir A : pos A -&gt; Set ot dir A: pos A-&gt; dir A. I'm thinking too.</p>",
+        "id": 284198082,
+        "sender_full_name": "Valeria de Paiva",
+        "timestamp": 1653696634
+    },
+    {
+        "content": "<p>The composition holds using <code>dirA : posA -&gt; Set</code> and its essentially the same as the composition in <code>DSet2</code>.<br>\ncompare<br>\n<a href=\"https://github.com/vcvpaiva/Dialectica/blob/3634872482683a0be2c00337f29db623b656d49b/TwoDialSet.agda#L152\">https://github.com/vcvpaiva/Dialectica/blob/3634872482683a0be2c00337f29db623b656d49b/TwoDialSet.agda#L152</a><br>\nand <br>\n<a href=\"https://github.com/vcvpaiva/Dialectica/blob/3634872482683a0be2c00337f29db623b656d49b/LDDialSet.agda#L53\">https://github.com/vcvpaiva/Dialectica/blob/3634872482683a0be2c00337f29db623b656d49b/LDDialSet.agda#L53</a></p>",
+        "id": 284198496,
+        "sender_full_name": "Eric Bond",
+        "timestamp": 1653697145
+    },
+    {
+        "content": "<p>( I can switch to using Latex instead of Agda in these messages if that would be preferred and more broadly readable)<br>\nThe <em>trick</em> is using <code>f</code> in the type level.</p>",
+        "id": 284198644,
+        "sender_full_name": "Eric Bond",
+        "timestamp": 1653697342
+    },
+    {
+        "content": "<p>Don't have an answer about the desired structure (the tensor, internal hom,..)</p>",
+        "id": 284199016,
+        "sender_full_name": "Eric Bond",
+        "timestamp": 1653697846
     }
 ]

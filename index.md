@@ -54,11 +54,11 @@ permalink: /index.html
 
 * [learning: history of ideas](stream/232163-learning:-history-of-ideas/index.html) (22 topics)
 
+* [practice: our work](stream/274877-practice:-our-work/index.html) (22 topics)
+
 * [theory: probability](stream/253118-theory:-probability/index.html) (22 topics)
 
 * [workshop: Polynomial Functors @ Topos](stream/282140-workshop:-Polynomial-Functors-@-Topos/index.html) (22 topics)
-
-* [practice: our work](stream/274877-practice:-our-work/index.html) (21 topics)
 
 * [philosophy](stream/229134-philosophy/index.html) (16 topics)
 
@@ -82,13 +82,13 @@ permalink: /index.html
 
 * [general: co/appreciation](stream/271602-general:-co/appreciation/index.html) (13 topics)
 
+* [practice: chemistry](stream/322714-practice:-chemistry/index.html) (11 topics)
+
 * [practice: translation](stream/260000-practice:-translation/index.html) (11 topics)
 
 * [learning: reading groups](stream/232160-learning:-reading-groups/index.html) (10 topics)
 
 * [practice: ACT wiki](stream/243548-practice:-ACT-wiki/index.html) (10 topics)
-
-* [practice: chemistry](stream/322714-practice:-chemistry/index.html) (10 topics)
 
 * [practice: economics](stream/231468-practice:-economics/index.html) (10 topics)
 
@@ -162,4 +162,4 @@ permalink: /index.html
 
 * [theory: alternate presentations](stream/233122-theory:-alternate-presentations/index.html) (1 topic)
 
-<hr><p>Last updated: May 27 2022 at 00:46 UTC</p>
+<hr><p>Last updated: May 28 2022 at 00:49 UTC</p>
