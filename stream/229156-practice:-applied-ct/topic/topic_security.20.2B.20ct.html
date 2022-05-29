@@ -697,6 +697,25 @@ In 2017 <span class="user-mention" data-user-id="277574">@Conor McBride</span> h
 
 
 
+<a name="284239619"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229156-practice%3A%20applied%20ct/topic/security%20%2B%20ct/near/284239619" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Henry Story <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-practice:-applied-ct/topic/topic_security.20.2B.20ct.html#284239619">(May 28 2022 at 17:32)</a>:</h4>
+<p>It would be nice if this channel were also public :-)</p>
+
+
+
+<a name="284240856"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229156-practice%3A%20applied%20ct/topic/security%20%2B%20ct/near/284240856" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Henry Story <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-practice:-applied-ct/topic/topic_security.20.2B.20ct.html#284240856">(May 28 2022 at 17:58)</a>:</h4>
+<p>(I just remembered that I should be working on the following not so much on entropy!)</p>
+<p>Btw, I think I have found a good practical case for using Category Theory in Security and Access Control that follows on the discussion we had over 6 months ago.  Well at least it looks like it's very close. </p>
+<p>Remember a Solid web server adds a link to every resource that contains a description of who can access. (see <a href="#narrow/stream/229156-practice.3A-applied-ct/topic/security.20.2B.20ct/near/252539259">above</a>). At present those are just lists, but with OWL one could create sets by descriptions. For example the set of all friends of a friend of someone. (more about foaf in <a href="https://arxiv.org/abs/1706.00526">the bicategories of relations article</a>).  So if we extend bicategories to have linked data like we have linked web pages, where one can follow links from my profile to anyone of my friend's profiles, who all host theirs on their Freedom Boxes (see <a href="#narrow/stream/229156-practice.3A-applied-ct/topic/security.20.2B.20ct/near/252856574">above</a>), then we have a decentralised system.<br>
+<a href="https://raw.githubusercontent.com/wiki/banana-rdf/banana-rdf/img/WebID-foafKnows.jpg">linked profiles starting from a WebID</a></p>
+<div class="message_inline_image"><a href="https://raw.githubusercontent.com/wiki/banana-rdf/banana-rdf/img/WebID-foafKnows.jpg" title="linked profiles starting from a WebID"><img src="https://uploads.zulipusercontent.net/a66533db8a5f70f4ff59364c9408b6bee0864ad3/68747470733a2f2f7261772e67697468756275736572636f6e74656e742e636f6d2f77696b692f62616e616e612d7264662f62616e616e612d7264662f696d672f57656249442d666f61664b6e6f77732e6a7067"></a></div><p>But we have a problem. Say I conservatively only have 100 friends, and my friends have 100 friends with no overlaps. Then when I authenticate to a resource that requires me to prove that I am a friend of a friend of someone I could prove ownership of my <a href="https://www.w3.org/2005/Incubator/webid/spec/identity/#overview">WebID</a>, but that would require the server in the worst case  to search all the profiles, since some  may have been updated in the meantime. That could  require 100 connections on the server's part to find all the friend's profiles. If we then move one level further to friends of friends of friends, then the server would end up having to search 10 thousand profiles. That would not make for a very efficient or reactive system.</p>
+<p>The answer to this is quite simple: if the client authenticates, then it knows the relations that is correct, so it should be able pass the proof along with the request. Or perhaps a proof is not needed but just enough of a hint of a proof hint. That could reduce the search space from 10 thousand to 1 or 2 requests. </p>
+<p>I started looking into this recently, and it looks like all the client has to do is pass a path starting from the rules in the acl. That sounds very much like some things I heard about categories being proofs, which would be handy as that could help serve as a proof that such a procedure constitutes a proof. </p>
+<p>It looks like I am going to be able to work on implementing this.  It would help if I could find a tutor (on the CT side) to help guide me in the process if anyone here is interested.</p>
+
+
+
 {% endraw %}
 
-<hr><p>Last updated: May 28 2022 at 00:49 UTC</p>
+<hr><p>Last updated: May 29 2022 at 00:50 UTC</p>

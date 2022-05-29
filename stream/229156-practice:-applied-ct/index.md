@@ -9,6 +9,7 @@ permalink: /stream/229156-practice:-applied-ct/index.html
 
 ### Topics:
 
+* [security + ct](topic/topic_security.20.2B.20ct.html) (68 messages, latest: May 28 2022 at 17:58)
 * [category theory for nested data structures](topic/topic_category.20theory.20for.20nested.20data.20structures.html) (16 messages, latest: May 24 2022 at 22:13)
 * [Category theory for nested data structures](topic/topic_Category.20theory.20for.20nested.20data.20structures.html) (10 messages, latest: May 21 2022 at 17:41)
 * [ACT22](topic/topic_ACT22.html) (19 messages, latest: May 11 2022 at 05:26)
@@ -28,7 +29,6 @@ permalink: /stream/229156-practice:-applied-ct/index.html
 * [probability and statistics](topic/topic_probability.20and.20statistics.html) (1 message, latest: Nov 17 2021 at 18:49)
 * [chemical recipes as functors](topic/topic_chemical.20recipes.20as.20functors.html) (121 messages, latest: Nov 11 2021 at 23:30)
 * [Piecewise-linear subspaces diagrammatically?](topic/topic_Piecewise-linear.20subspaces.20diagrammatically.3F.html) (196 messages, latest: Nov 10 2021 at 23:02)
-* [security + ct](topic/topic_security.20.2B.20ct.html) (66 messages, latest: Nov 05 2021 at 21:09)
 * [Control theory](topic/topic_Control.20theory.html) (6 messages, latest: Oct 23 2021 at 23:58)
 * [Haskell libraries for machine learning](topic/topic_Haskell.20libraries.20for.20machine.20learning.html) (1 message, latest: Oct 15 2021 at 09:56)
 * [searching for potential research paths](topic/topic_searching.20for.20potential.20research.20paths.html) (3 messages, latest: Oct 13 2021 at 10:34)
@@ -144,4 +144,4 @@ permalink: /stream/229156-practice:-applied-ct/index.html
 * [AACT2020](topic/topic_AACT2020.html) (1 message, latest: Mar 24 2020 at 00:56)
 * [welcome](topic/topic_welcome.html) (15 messages, latest: Mar 24 2020 at 00:03)
 
-<hr><p>Last updated: May 28 2022 at 00:49 UTC</p>
+<hr><p>Last updated: May 29 2022 at 00:50 UTC</p>
