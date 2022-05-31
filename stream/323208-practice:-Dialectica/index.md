@@ -9,6 +9,7 @@ permalink: /stream/323208-practice:-Dialectica/index.html
 
 ### Topics:
 
+* [puzzles](topic/topic_puzzles.html) (1 message, latest: May 30 2022 at 12:44)
 * [Implementation](topic/topic_Implementation.html) (45 messages, latest: May 29 2022 at 23:22)
 * [Dialectica and Poly](topic/topic_Dialectica.20and.20Poly.html) (32 messages, latest: May 28 2022 at 19:00)
 * [Dialectica and Games](topic/topic_Dialectica.20and.20Games.html) (6 messages, latest: May 28 2022 at 16:13)
@@ -24,4 +25,4 @@ permalink: /stream/323208-practice:-Dialectica/index.html
 * [stream events](topic/topic_stream.20events.html) (5 messages, latest: Apr 28 2022 at 20:15)
 * [Welcome](topic/topic_Welcome.html) (2 messages, latest: Apr 28 2022 at 16:34)
 
-<hr><p>Last updated: May 30 2022 at 00:54 UTC</p>
+<hr><p>Last updated: May 31 2022 at 00:47 UTC</p>

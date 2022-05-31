@@ -8,7 +8,7 @@ permalink: /index.html
 
 ## Streams:
 
-* [learning: questions](stream/229199-learning:-questions/index.html) (668 topics)
+* [learning: questions](stream/229199-learning:-questions/index.html) (671 topics)
 
 * [theory: category theory](stream/229136-theory:-category-theory/index.html) (274 topics)
 
@@ -24,7 +24,7 @@ permalink: /index.html
 
 * [ACT 2020](stream/243068-ACT-2020/index.html) (61 topics)
 
-* [seminar: Topos Colloquium](stream/269484-seminar:-Topos-Colloquium/index.html) (57 topics)
+* [seminar: Topos Colloquium](stream/269484-seminar:-Topos-Colloquium/index.html) (58 topics)
 
 * [theory: algebraic topology & homological algebra](stream/241590-theory:-algebraic-topology-&-homological-algebra/index.html) (57 topics)
 
@@ -70,11 +70,11 @@ permalink: /index.html
 
 * [learning: show and tell](stream/232162-learning:-show-and-tell/index.html) (15 topics)
 
+* [practice: Dialectica](stream/323208-practice:-Dialectica/index.html) (15 topics)
+
 * [seminar: ACT@UCR](stream/229966-seminar:-ACT@UCR/index.html) (15 topics)
 
 * [theory: algebraic geometry](stream/231112-theory:-algebraic-geometry/index.html) (15 topics)
-
-* [practice: Dialectica](stream/323208-practice:-Dialectica/index.html) (14 topics)
 
 * [practice: programming](stream/229450-practice:-programming/index.html) (14 topics)
 
@@ -162,4 +162,4 @@ permalink: /index.html
 
 * [theory: alternate presentations](stream/233122-theory:-alternate-presentations/index.html) (1 topic)
 
-<hr><p>Last updated: May 30 2022 at 00:54 UTC</p>
+<hr><p>Last updated: May 31 2022 at 00:47 UTC</p>
