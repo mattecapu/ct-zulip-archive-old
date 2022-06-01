@@ -70,5 +70,113 @@
         "id": 284395800,
         "sender_full_name": "Leopold Schlicht",
         "timestamp": 1653935585
+    },
+    {
+        "content": "<p>By the way, would you call a functor \"forgetful\" only in the case it is faithful?</p>",
+        "id": 284438088,
+        "sender_full_name": "Leopold Schlicht",
+        "timestamp": 1653982849
+    },
+    {
+        "content": "<p>No.</p>",
+        "id": 284438099,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1653982860
+    },
+    {
+        "content": "<p>For instance, the projection <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"normal\">S</mi><mi mathvariant=\"normal\">e</mi><mi mathvariant=\"normal\">t</mi><mo>×</mo><mi mathvariant=\"normal\">S</mi><mi mathvariant=\"normal\">e</mi><mi mathvariant=\"normal\">t</mi><mo>→</mo><mi mathvariant=\"normal\">S</mi><mi mathvariant=\"normal\">e</mi><mi mathvariant=\"normal\">t</mi></mrow><annotation encoding=\"application/x-tex\">\\rm Set\\times Set \\to Set</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.7667em;vertical-align:-0.0833em;\"></span><span class=\"mord\"><span class=\"mord mathrm\">Set</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span><span class=\"mbin\">×</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span><span class=\"mord mathrm\">Set</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">→</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mord mathrm\">Set</span></span></span></span></span> clearly \"forgets one of the sets\", but it is not faithful.</p>",
+        "id": 284438143,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1653982907
+    },
+    {
+        "content": "<p>According to the dogma of [[stuff, structure, property]] we would say it \"forgets stuff\" rather than structure or properties.</p>",
+        "id": 284438212,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1653982947
+    },
+    {
+        "content": "<p>(Huh, does the auto nLab link not work for page names containing commas or something?)</p>",
+        "id": 284438282,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1653982998
+    },
+    {
+        "content": "<p>Alright, and what about \"underlying\", does that require faithfulness? :P<br>\nI mentioned that issue also <a href=\"#narrow/stream/241590-theory.3A-algebraic-topology-.26-homological-algebra/topic/adjoint.20of.20the.20construction.20.22graph.20of.20a.20simplicial.20set.22/near/258181487\">here</a>.</p>",
+        "id": 284439195,
+        "sender_full_name": "Leopold Schlicht",
+        "timestamp": 1653983534
+    },
+    {
+        "content": "<p>I don't know Mike's thoughts, but off the top of my head, I'd expect \"underlying\" to forget at most structure. The pair of sets one is a good example. If you have <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"false\">(</mo><mi>X</mi><mo separator=\"true\">,</mo><mi>Y</mi><mo stretchy=\"false\">)</mo><mo>↦</mo><mi>X</mi></mrow><annotation encoding=\"application/x-tex\">(X, Y) \\mapsto X</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mopen\">(</span><span class=\"mord mathnormal\" style=\"margin-right:0.07847em;\">X</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.22222em;\">Y</span><span class=\"mclose\">)</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">↦</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.07847em;\">X</span></span></span></span>, then it's not really reasonable to say that X is the underlying set of (X,Y), right? Maybe I'd also probably want it to forget at least structure. Forgetting from Ab to Grp, it seems weird to say you're talking about the underlying group of an abelian group.</p>",
+        "id": 284482206,
+        "sender_full_name": "Joe Moeller",
+        "timestamp": 1654006369
+    },
+    {
+        "content": "<p>In my experience, when you want to talk about the underlying thingy, it's because you want to access more general maps on the same gizmo.</p>",
+        "id": 284482700,
+        "sender_full_name": "Joe Moeller",
+        "timestamp": 1654006570
+    },
+    {
+        "content": "<p>What do you mean by \"forget at most structure\" and \"forget at least structure\" precisely?</p>",
+        "id": 284485418,
+        "sender_full_name": "Leopold Schlicht",
+        "timestamp": 1654007682
+    },
+    {
+        "content": "<p>I think the reason it sounds weird to say that <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>X</mi></mrow><annotation encoding=\"application/x-tex\">X</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.07847em;\">X</span></span></span></span> is \"the underlying set\" of <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"false\">(</mo><mi>X</mi><mo separator=\"true\">,</mo><mi>Y</mi><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">(X,Y)</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mopen\">(</span><span class=\"mord mathnormal\" style=\"margin-right:0.07847em;\">X</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.22222em;\">Y</span><span class=\"mclose\">)</span></span></span></span> is that there are two sets, so it's the definite article that's inappropriate, not the word \"underlying\".  Consider for instance the category whose objects are a pair <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"false\">(</mo><mi>R</mi><mo separator=\"true\">,</mo><mi>M</mi><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">(R,M)</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mopen\">(</span><span class=\"mord mathnormal\" style=\"margin-right:0.00773em;\">R</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.10903em;\">M</span><span class=\"mclose\">)</span></span></span></span> of a ring <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>R</mi></mrow><annotation encoding=\"application/x-tex\">R</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.00773em;\">R</span></span></span></span> and an <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>R</mi></mrow><annotation encoding=\"application/x-tex\">R</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.00773em;\">R</span></span></span></span>-module <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>M</mi></mrow><annotation encoding=\"application/x-tex\">M</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.10903em;\">M</span></span></span></span>.  Wouldn't you say that <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>R</mi></mrow><annotation encoding=\"application/x-tex\">R</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.00773em;\">R</span></span></span></span> is the underlying ring of a pair <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"false\">(</mo><mi>R</mi><mo separator=\"true\">,</mo><mi>M</mi><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">(R,M)</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mopen\">(</span><span class=\"mord mathnormal\" style=\"margin-right:0.00773em;\">R</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.10903em;\">M</span><span class=\"mclose\">)</span></span></span></span>?</p>",
+        "id": 284485952,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1654007904
+    },
+    {
+        "content": "<p>And certainly a monoidal category has an underlying category...</p>",
+        "id": 284486012,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1654007934
+    },
+    {
+        "content": "<p>Good points. Good thing I said \"off the top of my head\". <span aria-label=\"upside down\" class=\"emoji emoji-1f643\" role=\"img\" title=\"upside down\">:upside_down:</span></p>",
+        "id": 284486555,
+        "sender_full_name": "Joe Moeller",
+        "timestamp": 1654008162
+    },
+    {
+        "content": "<p><span class=\"user-mention\" data-user-id=\"276777\">@Mike Shulman</span> Your example suggests that an \"underlying * functor\" doesn't have to be faithful. So when is one allowed to call a functor \"underlying\" or \"forgetful\" -- is there any requirement that is usually satisfied? Also, are \"underlying\" and \"forgetful\" synonymous?</p>\n<p>Would you say \"underlying preorder of a category\"?</p>\n<p><span class=\"user-mention\" data-user-id=\"275914\">@Joe Moeller</span> Just a reminder that I asked a question you ignored. :P</p>",
+        "id": 284491721,
+        "sender_full_name": "Leopold Schlicht",
+        "timestamp": 1654010380
+    },
+    {
+        "content": "<p>Sorry, I mean what is said on the nLab page for stuff structure properties that Mike pointed to.</p>",
+        "id": 284493087,
+        "sender_full_name": "Joe Moeller",
+        "timestamp": 1654010979
+    },
+    {
+        "content": "<p>I don't think it's possible to give a formal and equivalence-invariant definition of when one uses the words \"underlying\" and \"forgetful\".  Normally one uses it for a functor <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>U</mi><mo>:</mo><mi>C</mi><mo>→</mo><mi>D</mi></mrow><annotation encoding=\"application/x-tex\">U:C\\to D</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.10903em;\">U</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">:</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.07153em;\">C</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">→</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.02778em;\">D</span></span></span></span> when the objects of <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>C</mi></mrow><annotation encoding=\"application/x-tex\">C</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.07153em;\">C</span></span></span></span> are <em>defined to be</em> objects of <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>D</mi></mrow><annotation encoding=\"application/x-tex\">D</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.02778em;\">D</span></span></span></span> with some extra stuff, but this notion of \"defined to be\" is not equivalence-invariant.  For instance, we wouldn't normally say that the free group functor <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"normal\">S</mi><mi mathvariant=\"normal\">e</mi><mi mathvariant=\"normal\">t</mi><mo>→</mo><mi mathvariant=\"normal\">G</mi><mi mathvariant=\"normal\">r</mi><mi mathvariant=\"normal\">p</mi></mrow><annotation encoding=\"application/x-tex\">\\rm Set\\to Grp</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8778em;vertical-align:-0.1944em;\"></span><span class=\"mord\"><span class=\"mord mathrm\">Set</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">→</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mord mathrm\">Grp</span></span></span></span></span> is \"forgetful\"; but if we replace the category <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"normal\">S</mi><mi mathvariant=\"normal\">e</mi><mi mathvariant=\"normal\">t</mi></mrow><annotation encoding=\"application/x-tex\">\\rm Set</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord\"><span class=\"mord mathrm\">Set</span></span></span></span></span> with the equivalent category whose objects are groups equipped with a subset that generates them freely and whose morphisms are group homomorphisms that preserve the generating sets, then the corresponding functor does look \"forgetful\" since it just forgets the generators.</p>",
+        "id": 284494294,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1654011317
+    },
+    {
+        "content": "<p>Similarly, I wouldn't normally say \"underlying preorder of a category\", but if <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"normal\">C</mi><mi mathvariant=\"normal\">a</mi><mi mathvariant=\"normal\">t</mi></mrow><annotation encoding=\"application/x-tex\">\\rm Cat</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord\"><span class=\"mord mathrm\">Cat</span></span></span></span></span> were replaced by the equivalent category whose objects are preorders together with a category whose preorder reflection is the given one, then it would make sense to talk of the underlying preorder of such a gadget.  (This is not as weird as it may appear, actually -- direct categories often are defined to come with a well-founded ordering on their objects, which could be called their \"underlying\" one, even though it's usually also their preorder reflection.)</p>",
+        "id": 284494755,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1654011507
+    },
+    {
+        "content": "<p>The most I think could be said is if two categories come with a presentation as models of some formal theory, and the one theory is a syntactic extension of the other, then the induced functor is called \"underlying\" or \"forgetful\".</p>",
+        "id": 284494868,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1654011562
+    },
+    {
+        "content": "<p>I don't know if there are situations where I'd use one of \"underlying\" and \"forgetful\" but not the other.</p>",
+        "id": 284494918,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1654011582
     }
 ]

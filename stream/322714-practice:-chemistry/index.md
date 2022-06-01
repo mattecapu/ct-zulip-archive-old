@@ -9,7 +9,7 @@ permalink: /stream/322714-practice:-chemistry/index.html
 
 ### Topics:
 
-* [AlgebraicPetri](topic/topic_AlgebraicPetri.html) (15 messages, latest: May 30 2022 at 16:40)
+* [AlgebraicPetri](topic/topic_AlgebraicPetri.html) (16 messages, latest: May 31 2022 at 14:31)
 * [graph structure theory](topic/topic_graph.20structure.20theory.html) (14 messages, latest: May 30 2022 at 15:26)
 * [the hyperfield of signs](topic/topic_the.20hyperfield.20of.20signs.html) (6 messages, latest: May 28 2022 at 00:06)
 * [welcome!](topic/topic_welcome!.html) (60 messages, latest: May 26 2022 at 20:46)
@@ -21,4 +21,4 @@ permalink: /stream/322714-practice:-chemistry/index.html
 * [moving this stream?](topic/topic_moving.20this.20stream.3F.html) (9 messages, latest: May 03 2022 at 02:56)
 * [Graph structure theory](topic/topic_Graph.20structure.20theory.html) (1 message, latest: Apr 26 2022 at 08:42)
 
-<hr><p>Last updated: May 31 2022 at 00:47 UTC</p>
+<hr><p>Last updated: Jun 01 2022 at 00:56 UTC</p>
