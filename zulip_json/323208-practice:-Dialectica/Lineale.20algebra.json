@@ -1,0 +1,68 @@
+[
+    {
+        "content": "<p>Early on this week I had a conversation with <span class=\"user-mention\" data-user-id=\"498391\">@Colin Bloomfield</span> about whether there existed a free lineale over a set of generators. He has worked with residuated lattices before, which are apparently similar and are also equationally defined because the lattice order is equivalent to the usual algebraic operations of meet and join. The motivation for the discussion (aside from general interest) was a part of the games discussion with <span class=\"user-mention\" data-user-id=\"427811\">@Jérémie Koenig</span> where he was saying that distributive lattices formed a large class of lineales that are used for payoffs in games. Just as in the case of residuated lattices, distributive lattices are a variety and hence have free objects by the general construction which parallels the construction of the free group on a set of generators.</p>",
+        "id": 284671480,
+        "sender_full_name": "Charlotte Aten",
+        "timestamp": 1654118633
+    },
+    {
+        "content": "<p>It stands to reason that if there were free lineales then one could make the payoffs in a game their values and then operations involving the payoffs could be «lazy» in the sense that they could be computed in that total generality and then evaluated later once a specific lineale was chosen. The question of a left adjoint to the forgetful functor is also just interesting in its own right.</p>",
+        "id": 284671680,
+        "sender_full_name": "Charlotte Aten",
+        "timestamp": 1654118740
+    },
+    {
+        "content": "<p>Indeed <span class=\"user-mention\" data-user-id=\"496984\">@Charlotte Aten</span> lineales are residuated monoids, instead of lattices, but very similar indeed. </p>\n<p>and yes, I expect, but have not written a proof of that Lineales form a variety, because other similar algebraic form varieties. </p>\n<p>and indeed, if the lineale has a proper poset-product, instead of simply a poset-tensor, than it is a meet semilattice, and if it satisfies duality, it's also a join semilattice. So Jeremie is correct saying that distributive lattices are special cases of lineales, the ones where the monoidal structure is a meet. (also the only thing that implication needs to satisfy in  lineales is the adjunction equation, while in a meet semilattice it satisfies more, as it has to be given by a--&gt;b := \\neg a\\plus b.</p>",
+        "id": 284672580,
+        "sender_full_name": "Valeria de Paiva",
+        "timestamp": 1654119291
+    },
+    {
+        "content": "<p>This led to a conversation I had with <span class=\"user-mention\" data-user-id=\"427811\">@Jérémie Koenig</span> where we came up with the following idea. Since the free monoid and free poset (antichain) exist, note that if we assume our lineale has the antichain order then the adjunction condition just becomes that ab=c iff a=(b loli c) and under this assumption that last condition is equivalent to the two equations a=b loli ab and (b loli c)b=c, so if we form the free algebra with basic operations of monoid product, internal hom, and identity element (as a 0-ary constant operation) whose axioms are those of a monoid along with the internal hom operation acting as a right division operation as in the last two equations above we can equip this with the antichain order to obtain a lineale which has the desired adjoint property for all those lineales for which x loli y is like dividing y by x on the right as in the last two equations above.</p>",
+        "id": 284673477,
+        "sender_full_name": "Charlotte Aten",
+        "timestamp": 1654119840
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276656\">Valeria de Paiva</span> <a href=\"#narrow/stream/323208-practice.3A-Dialectica/topic/Lineale.20algebra/near/284672580\">said</a>:</p>\n<blockquote>\n<p>Indeed <span class=\"user-mention silent\" data-user-id=\"496984\">Charlotte Aten</span> lineales are residuated monoids, instead of lattices, but very similar indeed. </p>\n<p>and yes, I expect, but have not written a proof of that Lineales form a variety, because other similar algebraic form varieties. </p>\n<p>and indeed, if the lineale has a proper poset-product, instead of simply a poset-tensor, than it is a meet semilattice, and if it satisfies duality, it's also a join semilattice. So Jeremie is correct saying that distributive lattices are special cases of lineales, the ones where the monoidal structure is a meet. (also the only thing that implication needs to satisfy in  lineales is the adjunction equation, while in a meet semilattice it satisfies more, as it has to be given by a--&gt;b := \\neg a\\plus b.</p>\n</blockquote>\n<p>We have also been talking about whether lineales form a variety! If I'm not mistaken they're closed under products but I'm not sure about checking subalgebras or quotients since those require the ambient category of algebras given by the signature, but we're not really sure what the algebraic signature would be even if it had one. I suppose one guess is that you can just drop the order relation because it could somehow be derived from the other ones, but I lack the intuition to say whether or not this should work. It is very encouraging that the internal hom so often has this behavior of subtraction and this is precisely why Eric and I are thinking to use it when we «subtract» tokens from a place in order to activate a transition in a Dialectica Petri net.</p>",
+        "id": 284673973,
+        "sender_full_name": "Charlotte Aten",
+        "timestamp": 1654120126
+    },
+    {
+        "content": "<p>I suppose that really checking that lineales are closed under products in the proper universal algebra sense really requires that one establish the algebraic signature first, but it seems like that safest of the three properties to guess would extrapolate from the standard, more model-theoretic presentation haha.</p>",
+        "id": 284674490,
+        "sender_full_name": "Charlotte Aten",
+        "timestamp": 1654120449
+    },
+    {
+        "content": "<p><span class=\"user-mention\" data-user-id=\"496984\">@Charlotte Aten</span> using subtraction for implication is an old idea of Lawvere that I described in the preprint on Multirelations and Petri nets. it works, for lineales and for a bunch of other things like metric spaces.<br>\nand yes, we do have products of lineales. but the model theoretic universe of algebraic semantics is very much classical, while the lineale universe is, not surprisingly, linear. I guess Colin is on top of these ideas, from a preprint he showed me earlier in the year.</p>",
+        "id": 284675147,
+        "sender_full_name": "Valeria de Paiva",
+        "timestamp": 1654120892
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276656\">Valeria de Paiva</span> <a href=\"#narrow/stream/323208-practice.3A-Dialectica/topic/Lineale.20algebra/near/284675147\">said</a>:</p>\n<blockquote>\n<p><span class=\"user-mention silent\" data-user-id=\"496984\">Charlotte Aten</span> using subtraction for implication is an old idea of Lawvere that I described in the preprint on Multirelations and Petri nets. it works, for lineales and for a bunch of other things like metric spaces.<br>\nand yes, we do have products of lineales. but the model theoretic universe of algebraic semantics is very much classical, while the lineale universe is, not surprisingly, linear. I guess Colin is on top of these ideas, from a preprint he showed me earlier in the year.</p>\n</blockquote>\n<p>Since I'm new to logic I'm not sure I follow the comment about logic due to my lack of familiarity, but I do have a copy of the multirelations paper and I can also talk to Colin about it at some point. Maybe I shouldn't have added «model-theoretic presentation» to my last comment because it really was something more elmentary. I just meant that it might be the case that when you look at lineales as structures with basic operations as well as the order relation, they have products in their usual category, but I was thinking this doesn't necessarily means that the class, when «properly viewed» as a subcategory of some category of algebras with a given signature, has to have products there, which is what we'd really need for it to be a variety.</p>",
+        "id": 284676157,
+        "sender_full_name": "Charlotte Aten",
+        "timestamp": 1654121450
+    },
+    {
+        "content": "<p>Not to worry, we can definitely talk to Colin later on, but I wouldn't concentrate on that now.</p>",
+        "id": 284676407,
+        "sender_full_name": "Valeria de Paiva",
+        "timestamp": 1654121596
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276656\">Valeria de Paiva</span> <a href=\"#narrow/stream/323208-practice.3A-Dialectica/topic/Lineale.20algebra/near/284676407\">said</a>:</p>\n<blockquote>\n<p>Not to worry, we can definitely talk to Colin later on, but I wouldn't concentrate on that now.</p>\n</blockquote>\n<p>For sure, these questions about free algebras or whether lineales are a variety are interesting and good exercises in logic/category theory/universal algebra but I will focus on the implementation stuff.</p>",
+        "id": 284677036,
+        "sender_full_name": "Charlotte Aten",
+        "timestamp": 1654121960
+    },
+    {
+        "content": "<p>Sounds good!</p>",
+        "id": 284677517,
+        "sender_full_name": "Valeria de Paiva",
+        "timestamp": 1654122244
+    }
+]

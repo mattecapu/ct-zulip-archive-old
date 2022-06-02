@@ -9,10 +9,11 @@ permalink: /stream/323208-practice:-Dialectica/index.html
 
 ### Topics:
 
+* [Lineale algebra](topic/topic_Lineale.20algebra.html) (11 messages, latest: Jun 01 2022 at 22:24)
+* [Implementation](topic/topic_Implementation.html) (56 messages, latest: Jun 01 2022 at 22:21)
+* [Dialectica and Games](topic/topic_Dialectica.20and.20Games.html) (8 messages, latest: Jun 01 2022 at 21:28)
 * [puzzles](topic/topic_puzzles.html) (3 messages, latest: May 31 2022 at 23:44)
-* [Implementation](topic/topic_Implementation.html) (45 messages, latest: May 29 2022 at 23:22)
 * [Dialectica and Poly](topic/topic_Dialectica.20and.20Poly.html) (32 messages, latest: May 28 2022 at 19:00)
-* [Dialectica and Games](topic/topic_Dialectica.20and.20Games.html) (6 messages, latest: May 28 2022 at 16:13)
 * [Flavors of Dialectica](topic/topic_Flavors.20of.20Dialectica.html) (6 messages, latest: May 25 2022 at 04:33)
 * [4th meeting today](topic/topic_4th.20meeting.20today.html) (1 message, latest: May 24 2022 at 17:50)
 * [Dialectica for Friends video](topic/topic_Dialectica.20for.20Friends.20video.html) (3 messages, latest: May 19 2022 at 00:11)
@@ -25,4 +26,4 @@ permalink: /stream/323208-practice:-Dialectica/index.html
 * [stream events](topic/topic_stream.20events.html) (5 messages, latest: Apr 28 2022 at 20:15)
 * [Welcome](topic/topic_Welcome.html) (2 messages, latest: Apr 28 2022 at 16:34)
 
-<hr><p>Last updated: Jun 01 2022 at 00:56 UTC</p>
+<hr><p>Last updated: Jun 02 2022 at 00:54 UTC</p>

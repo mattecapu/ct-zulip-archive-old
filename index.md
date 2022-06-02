@@ -62,6 +62,8 @@ permalink: /index.html
 
 * [philosophy](stream/229134-philosophy/index.html) (16 topics)
 
+* [practice: Dialectica](stream/323208-practice:-Dialectica/index.html) (16 topics)
+
 * [practice: communication](stream/233322-practice:-communication/index.html) (16 topics)
 
 * [theory: physics](stream/251538-theory:-physics/index.html) (16 topics)
@@ -69,8 +71,6 @@ permalink: /index.html
 * [ACT@UCR seminar](stream/229966-ACT@UCR-seminar/index.html) (15 topics)
 
 * [learning: show and tell](stream/232162-learning:-show-and-tell/index.html) (15 topics)
-
-* [practice: Dialectica](stream/323208-practice:-Dialectica/index.html) (15 topics)
 
 * [seminar: ACT@UCR](stream/229966-seminar:-ACT@UCR/index.html) (15 topics)
 
@@ -162,4 +162,4 @@ permalink: /index.html
 
 * [theory: alternate presentations](stream/233122-theory:-alternate-presentations/index.html) (1 topic)
 
-<hr><p>Last updated: Jun 01 2022 at 00:56 UTC</p>
+<hr><p>Last updated: Jun 02 2022 at 00:54 UTC</p>
