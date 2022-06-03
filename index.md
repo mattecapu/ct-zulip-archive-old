@@ -8,7 +8,7 @@ permalink: /index.html
 
 ## Streams:
 
-* [learning: questions](stream/229199-learning:-questions/index.html) (674 topics)
+* [learning: questions](stream/229199-learning:-questions/index.html) (675 topics)
 
 * [theory: category theory](stream/229136-theory:-category-theory/index.html) (274 topics)
 
@@ -26,15 +26,15 @@ permalink: /index.html
 
 * [seminar: Topos Colloquium](stream/269484-seminar:-Topos-Colloquium/index.html) (58 topics)
 
-* [theory: algebraic topology & homological algebra](stream/241590-theory:-algebraic-topology-&-homological-algebra/index.html) (57 topics)
+* [theory: algebraic topology & homological algebra](stream/241590-theory:-algebraic-topology-&-homological-algebra/index.html) (58 topics)
 
 * [general: mathematics](stream/266967-general:-mathematics/index.html) (54 topics)
 
 * [practice: thermodynamics](stream/306433-practice:-thermodynamics/index.html) (51 topics)
 
-* [theory: logic](stream/233104-theory:-logic/index.html) (47 topics)
+* [theory: logic](stream/233104-theory:-logic/index.html) (48 topics)
 
-* [general: positions](stream/245502-general:-positions/index.html) (45 topics)
+* [general: positions](stream/245502-general:-positions/index.html) (46 topics)
 
 * [practice: our papers](stream/258900-practice:-our-papers/index.html) (45 topics)
 
@@ -60,9 +60,9 @@ permalink: /index.html
 
 * [workshop: Polynomial Functors @ Topos](stream/282140-workshop:-Polynomial-Functors-@-Topos/index.html) (22 topics)
 
-* [philosophy](stream/229134-philosophy/index.html) (16 topics)
+* [practice: Dialectica](stream/323208-practice:-Dialectica/index.html) (19 topics)
 
-* [practice: Dialectica](stream/323208-practice:-Dialectica/index.html) (16 topics)
+* [philosophy](stream/229134-philosophy/index.html) (16 topics)
 
 * [practice: communication](stream/233322-practice:-communication/index.html) (16 topics)
 
@@ -82,7 +82,7 @@ permalink: /index.html
 
 * [general: co/appreciation](stream/271602-general:-co/appreciation/index.html) (13 topics)
 
-* [practice: chemistry](stream/322714-practice:-chemistry/index.html) (11 topics)
+* [practice: chemistry](stream/322714-practice:-chemistry/index.html) (13 topics)
 
 * [practice: translation](stream/260000-practice:-translation/index.html) (11 topics)
 
@@ -162,4 +162,4 @@ permalink: /index.html
 
 * [theory: alternate presentations](stream/233122-theory:-alternate-presentations/index.html) (1 topic)
 
-<hr><p>Last updated: Jun 02 2022 at 00:54 UTC</p>
+<hr><p>Last updated: Jun 03 2022 at 00:41 UTC</p>

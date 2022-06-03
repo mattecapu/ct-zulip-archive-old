@@ -9,6 +9,7 @@ permalink: /stream/245502-general:-positions/index.html
 
 ### Topics:
 
+* [open PhD and postdoc position in categorical probability](topic/topic_open.20PhD.20and.20postdoc.20position.20in.20categorical.20probability.html) (1 message, latest: Jun 02 2022 at 10:00)
 * [Berkeley shared house June-August](topic/topic_Berkeley.20shared.20house.20June-August.html) (5 messages, latest: May 10 2022 at 19:21)
 * [postdoc](topic/topic_postdoc.html) (1 message, latest: Apr 25 2022 at 09:34)
 * [people who have gotten jobs](topic/topic_people.20who.20have.20gotten.20jobs.html) (75 messages, latest: Mar 31 2022 at 15:28)
@@ -55,4 +56,4 @@ permalink: /stream/245502-general:-positions/index.html
 * [PhD positions in Estonia](topic/topic_PhD.20positions.20in.20Estonia.html) (1 message, latest: Jun 27 2020 at 18:04)
 * [Companies that hire category people](topic/topic_Companies.20that.20hire.20category.20people.html) (2 messages, latest: May 13 2020 at 03:50)
 
-<hr><p>Last updated: Jun 02 2022 at 00:54 UTC</p>
+<hr><p>Last updated: Jun 03 2022 at 00:41 UTC</p>

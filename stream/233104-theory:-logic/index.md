@@ -9,6 +9,7 @@ permalink: /stream/233104-theory:-logic/index.html
 
 ### Topics:
 
+* [double categories and logic](topic/topic_double.20categories.20and.20logic.html) (6 messages, latest: Jun 02 2022 at 20:19)
 * [2-dimensional essentially algebraic theories](topic/topic_2-dimensional.20essentially.20algebraic.20theories.html) (11 messages, latest: May 20 2022 at 05:16)
 * [∃∀∃ statements in geometric logic](topic/topic_.E2.88.83.E2.88.80.E2.88.83.20statements.20in.20geometric.20logic.html) (11 messages, latest: Apr 07 2022 at 20:18)
 * [Induction](topic/topic_Induction.html) (6 messages, latest: Apr 04 2022 at 17:50)
@@ -57,4 +58,4 @@ permalink: /stream/233104-theory:-logic/index.html
 * [Probability as logic](topic/topic_Probability.20as.20logic.html) (63 messages, latest: Apr 15 2020 at 12:33)
 * [stream events](topic/topic_stream.20events.html) (1 message, latest: Apr 10 2020 at 12:32)
 
-<hr><p>Last updated: Jun 02 2022 at 00:54 UTC</p>
+<hr><p>Last updated: Jun 03 2022 at 00:41 UTC</p>

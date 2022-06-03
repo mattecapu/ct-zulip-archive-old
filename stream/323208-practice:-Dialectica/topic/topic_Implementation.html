@@ -507,6 +507,51 @@ I was wondering if you could share more details about that :). <br>
 
 
 
+<a name="284757623"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/323208-practice%3A%20Dialectica/topic/Implementation/near/284757623" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Charlotte Aten <a href="https://mattecapu.github.io/ct-zulip-archive/stream/323208-practice:-Dialectica/topic/topic_Implementation.html#284757623">(Jun 02 2022 at 15:01)</a>:</h4>
+<p>Good morning <span class="user-mention" data-user-id="276656">@Valeria de Paiva</span> ! We were wondering whether you have a particular reason for not trying to define the token game in the original Dialectica Petri nets paper. Eric and I gave a quite natural definition but found that it clashes with the notion that a 0 element of the base lineale L represents "no arc" as opposed to "an arc with cost 0". More  amusingly, the dependent Dialectica construction actually fixes this problem by creating a distinction between arcs of value 0 and the absence of an arc, so we're thinking we should redo the basic setup from your paper with dependent M_L(Set) in order to be able to use tokens how we want in our construction.</p>
+
+
+
+<a name="284759852"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/323208-practice%3A%20Dialectica/topic/Implementation/near/284759852" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Valeria de Paiva <a href="https://mattecapu.github.io/ct-zulip-archive/stream/323208-practice:-Dialectica/topic/topic_Implementation.html#284759852">(Jun 02 2022 at 15:15)</a>:</h4>
+<p>hi <span class="user-mention" data-user-id="496984">@Charlotte Aten</span>  this might be a good idea. I don't do the token game simply bc I was following Winskel, who was my PN expert then. But the dependent Dialectica is problematic, I don't know how to provide structure for it--maybe Tamara's function-space works as desired, maybe it doesn't. I don't know,  I'm trying to read, but going slowly.</p>
+
+
+
+<a name="284813000"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/323208-practice%3A%20Dialectica/topic/Implementation/near/284813000" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Eric Bond <a href="https://mattecapu.github.io/ct-zulip-archive/stream/323208-practice:-Dialectica/topic/topic_Implementation.html#284813000">(Jun 02 2022 at 22:25)</a>:</h4>
+<p>For dependent Dialectica in Set with L.. perhaps these could be shown to be adjoint?</p>
+<div class="codehilite"><pre><span></span><code>    _⊗_ : DDial → DDial → DDial
+    (pos₁ ▹ dir₁ c α₁) ⊗ (pos₂ ▹ dir₂ c α₂) = (pos₁ × pos₂) ▹ (λ { (p₁ , p₂) → dir₁ p₁ × dir₂ p₂}) c λ{ (p₁ , p₂) (d₁ , d₂) → α₁ p₁ d₁ ⊙ α₂ p₂ d₂}
+        where
+            open MonProset mon
+
+    [_,_] : DDial → DDial → DDial
+    [ pos₁ ▹ dir₁ c α₁ , pos₂ ▹ dir₂ c α₂ ] =
+        Σ (pos₁ → pos₂) (λ f → (p₁ : pos₁)→ dir₂ (f p₁) → dir₁ p₁) ▹ (λ{ (f , F) → Σ pos₁ (λ p₁ → dir₂ (f p₁))}) c
+            λ{ (f , F) (u , y) → α₁ u (F u y) ⊸ α₂ (f u) y}
+        where
+            open Lineale.Lineale lin
+</code></pre></div>
+
+
+
+<a name="284816707"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/323208-practice%3A%20Dialectica/topic/Implementation/near/284816707" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nelson Niu <a href="https://mattecapu.github.io/ct-zulip-archive/stream/323208-practice:-Dialectica/topic/topic_Implementation.html#284816707">(Jun 02 2022 at 23:10)</a>:</h4>
+<p>^ confirmed</p>
+
+
+
+<a name="284817829"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/323208-practice%3A%20Dialectica/topic/Implementation/near/284817829" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Valeria de Paiva <a href="https://mattecapu.github.io/ct-zulip-archive/stream/323208-practice:-Dialectica/topic/topic_Implementation.html#284817829">(Jun 02 2022 at 23:25)</a>:</h4>
+<p><span class="user-mention" data-user-id="380293">@Eric Bond</span>  this would be nice, but come to think of it, an exercise in Bart Jacob's book. <br>
+I had totally forgotten about that! I am sorry! Jacobs, "Categorical Logic and Type Theory", page 117, exercise 1.10.11.<br>
+but I didn't know how to do the exercise, now I have a function, thanks!!</p>
+<p>However, what we want is a cartesian closed category and this is what took Bodil Biering, Tamara von Glehn and Sean Moss theses to produce</p>
+
+
+
 {% endraw %}
 
-<hr><p>Last updated: Jun 02 2022 at 00:54 UTC</p>
+<hr><p>Last updated: Jun 03 2022 at 00:41 UTC</p>

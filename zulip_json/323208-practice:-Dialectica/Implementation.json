@@ -334,5 +334,35 @@
         "id": 284677274,
         "sender_full_name": "Charlotte Aten",
         "timestamp": 1654122110
+    },
+    {
+        "content": "<p>Good morning <span class=\"user-mention\" data-user-id=\"276656\">@Valeria de Paiva</span> ! We were wondering whether you have a particular reason for not trying to define the token game in the original Dialectica Petri nets paper. Eric and I gave a quite natural definition but found that it clashes with the notion that a 0 element of the base lineale L represents \"no arc\" as opposed to \"an arc with cost 0\". More  amusingly, the dependent Dialectica construction actually fixes this problem by creating a distinction between arcs of value 0 and the absence of an arc, so we're thinking we should redo the basic setup from your paper with dependent M_L(Set) in order to be able to use tokens how we want in our construction.</p>",
+        "id": 284757623,
+        "sender_full_name": "Charlotte Aten",
+        "timestamp": 1654182106
+    },
+    {
+        "content": "<p>hi <span class=\"user-mention\" data-user-id=\"496984\">@Charlotte Aten</span>  this might be a good idea. I don't do the token game simply bc I was following Winskel, who was my PN expert then. But the dependent Dialectica is problematic, I don't know how to provide structure for it--maybe Tamara's function-space works as desired, maybe it doesn't. I don't know,  I'm trying to read, but going slowly.</p>",
+        "id": 284759852,
+        "sender_full_name": "Valeria de Paiva",
+        "timestamp": 1654182942
+    },
+    {
+        "content": "<p>For dependent Dialectica in Set with L.. perhaps these could be shown to be adjoint?</p>\n<div class=\"codehilite\"><pre><span></span><code>    _⊗_ : DDial → DDial → DDial\n    (pos₁ ▹ dir₁ c α₁) ⊗ (pos₂ ▹ dir₂ c α₂) = (pos₁ × pos₂) ▹ (λ { (p₁ , p₂) → dir₁ p₁ × dir₂ p₂}) c λ{ (p₁ , p₂) (d₁ , d₂) → α₁ p₁ d₁ ⊙ α₂ p₂ d₂}\n        where\n            open MonProset mon\n\n    [_,_] : DDial → DDial → DDial\n    [ pos₁ ▹ dir₁ c α₁ , pos₂ ▹ dir₂ c α₂ ] =\n        Σ (pos₁ → pos₂) (λ f → (p₁ : pos₁)→ dir₂ (f p₁) → dir₁ p₁) ▹ (λ{ (f , F) → Σ pos₁ (λ p₁ → dir₂ (f p₁))}) c\n            λ{ (f , F) (u , y) → α₁ u (F u y) ⊸ α₂ (f u) y}\n        where\n            open Lineale.Lineale lin\n</code></pre></div>",
+        "id": 284813000,
+        "sender_full_name": "Eric Bond",
+        "timestamp": 1654208704
+    },
+    {
+        "content": "<p>^ confirmed</p>",
+        "id": 284816707,
+        "sender_full_name": "Nelson Niu",
+        "timestamp": 1654211444
+    },
+    {
+        "content": "<p><span class=\"user-mention\" data-user-id=\"380293\">@Eric Bond</span>  this would be nice, but come to think of it, an exercise in Bart Jacob's book. <br>\nI had totally forgotten about that! I am sorry! Jacobs, \"Categorical Logic and Type Theory\", page 117, exercise 1.10.11.<br>\nbut I didn't know how to do the exercise, now I have a function, thanks!!</p>\n<p>However, what we want is a cartesian closed category and this is what took Bodil Biering, Tamara von Glehn and Sean Moss theses to produce</p>",
+        "id": 284817829,
+        "sender_full_name": "Valeria de Paiva",
+        "timestamp": 1654212327
     }
 ]

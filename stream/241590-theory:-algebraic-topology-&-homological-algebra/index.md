@@ -9,6 +9,7 @@ permalink: /stream/241590-theory:-algebraic-topology-&-homological-algebra/index
 
 ### Topics:
 
+* [geometric realization of simplicial topological spaces](topic/topic_geometric.20realization.20of.20simplicial.20topological.20spaces.html) (1 message, latest: Jun 02 2022 at 14:51)
 * [Čech cohomology & sheaf cohomology](topic/topic_.C4.8Cech.20cohomology.20.26.20sheaf.20cohomology.html) (14 messages, latest: May 22 2022 at 17:29)
 * [Steenrod algebra](topic/topic_Steenrod.20algebra.html) (3 messages, latest: May 10 2022 at 12:06)
 * [Steenrod Algebra](topic/topic_Steenrod.20Algebra.html) (2 messages, latest: May 03 2022 at 15:04)
@@ -67,4 +68,4 @@ permalink: /stream/241590-theory:-algebraic-topology-&-homological-algebra/index
 * [simplicial sets](topic/topic_simplicial.20sets.html) (1 message, latest: Jul 02 2020 at 11:05)
 * [Secondary algebraic K-theory](topic/topic_Secondary.20algebraic.20K-theory.html) (13 messages, latest: Jun 01 2020 at 16:14)
 
-<hr><p>Last updated: Jun 02 2022 at 00:54 UTC</p>
+<hr><p>Last updated: Jun 03 2022 at 00:41 UTC</p>
