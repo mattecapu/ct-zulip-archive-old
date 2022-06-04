@@ -9,8 +9,8 @@ permalink: /stream/303660-languages:-portugues/index.html
 
 ### Topics:
 
-* [conferencias](topic/topic_conferencias.html) (13 messages, latest: May 29 2022 at 14:34)
+* [conferencias](topic/topic_conferencias.html) (15 messages, latest: Jun 03 2022 at 22:36)
 * [lobby](topic/topic_lobby.html) (2 messages, latest: Dec 13 2021 at 12:16)
 * [stream events](topic/topic_stream.20events.html) (14 messages, latest: Oct 14 2021 at 13:26)
 
-<hr><p>Last updated: Jun 03 2022 at 00:41 UTC</p>
+<hr><p>Last updated: Jun 04 2022 at 00:45 UTC</p>
