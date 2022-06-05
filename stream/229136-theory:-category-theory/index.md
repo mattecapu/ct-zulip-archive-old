@@ -9,6 +9,8 @@ permalink: /stream/229136-theory:-category-theory/index.html
 
 ### Topics:
 
+* ["untwisted" tabulation - what is this?](topic/topic_.22untwisted.22.20tabulation.20-.20what.20is.20this.3F.html) (8 messages, latest: Jun 05 2022 at 00:51)
+* [Endofunctors of FVec_{K}](topic/topic_Endofunctors.20of.20FVec_.7BK.7D.html) (1 message, latest: Jun 04 2022 at 17:12)
 * [shape of finitary functors](topic/topic_shape.20of.20finitary.20functors.html) (21 messages, latest: May 25 2022 at 18:31)
 * [commutative diagrams of 2-cells](topic/topic_commutative.20diagrams.20of.202-cells.html) (8 messages, latest: May 22 2022 at 16:05)
 * [monad not preserving epimorphisms](topic/topic_monad.20not.20preserving.20epimorphisms.html) (9 messages, latest: May 20 2022 at 11:21)
@@ -284,4 +286,4 @@ permalink: /stream/229136-theory:-category-theory/index.html
 * [diagrams for application](topic/topic_diagrams.20for.20application.html) (13 messages, latest: Mar 24 2020 at 06:19)
 * [universal constructions](topic/topic_universal.20constructions.html) (8 messages, latest: Mar 23 2020 at 21:06)
 
-<hr><p>Last updated: Jun 04 2022 at 00:45 UTC</p>
+<hr><p>Last updated: Jun 05 2022 at 00:52 UTC</p>
