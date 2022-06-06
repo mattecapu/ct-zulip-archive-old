@@ -34,7 +34,7 @@ permalink: /index.html
 
 * [theory: logic](stream/233104-theory:-logic/index.html) (48 topics)
 
-* [general: positions](stream/245502-general:-positions/index.html) (46 topics)
+* [general: positions](stream/245502-general:-positions/index.html) (47 topics)
 
 * [practice: our papers](stream/258900-practice:-our-papers/index.html) (45 topics)
 
@@ -162,4 +162,4 @@ permalink: /index.html
 
 * [theory: alternate presentations](stream/233122-theory:-alternate-presentations/index.html) (1 topic)
 
-<hr><p>Last updated: Jun 05 2022 at 00:52 UTC</p>
+<hr><p>Last updated: Jun 06 2022 at 00:50 UTC</p>

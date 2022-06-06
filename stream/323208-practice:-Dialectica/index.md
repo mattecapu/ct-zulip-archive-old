@@ -9,7 +9,7 @@ permalink: /stream/323208-practice:-Dialectica/index.html
 
 ### Topics:
 
-* [Lenses](topic/topic_Lenses.html) (14 messages, latest: Jun 03 2022 at 16:36)
+* [Lenses](topic/topic_Lenses.html) (15 messages, latest: Jun 05 2022 at 19:42)
 * [puzzles](topic/topic_puzzles.html) (10 messages, latest: Jun 03 2022 at 15:07)
 * [Implementation](topic/topic_Implementation.html) (61 messages, latest: Jun 02 2022 at 23:25)
 * [Dialectica and games](topic/topic_Dialectica.20and.20games.html) (8 messages, latest: Jun 02 2022 at 22:41)
@@ -29,4 +29,4 @@ permalink: /stream/323208-practice:-Dialectica/index.html
 * [stream events](topic/topic_stream.20events.html) (5 messages, latest: Apr 28 2022 at 20:15)
 * [Welcome](topic/topic_Welcome.html) (2 messages, latest: Apr 28 2022 at 16:34)
 
-<hr><p>Last updated: Jun 05 2022 at 00:52 UTC</p>
+<hr><p>Last updated: Jun 06 2022 at 00:50 UTC</p>

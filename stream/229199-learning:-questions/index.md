@@ -9,11 +9,11 @@ permalink: /stream/229199-learning:-questions/index.html
 
 ### Topics:
 
+* [completion, free completion, free, -ization](topic/topic_completion.2C.20free.20completion.2C.20free.2C.20-ization.html) (39 messages, latest: Jun 05 2022 at 15:55)
 * [beginner questions](topic/topic_beginner.20questions.html) (580 messages, latest: Jun 04 2022 at 05:10)
 * [different version of Yoneda Lemma. Why does it work?](topic/topic_different.20version.20of.20Yoneda.20Lemma.2E.20Why.20does.20it.20work.3F.html) (4 messages, latest: Jun 03 2022 at 14:46)
 * [weak/lax fibers of a functor](topic/topic_weak.2Flax.20fibers.20of.20a.20functor.html) (32 messages, latest: Jun 02 2022 at 17:46)
 * [why specified isomorphisms?](topic/topic_why.20specified.20isomorphisms.3F.html) (2 messages, latest: Jun 02 2022 at 17:39)
-* [completion, free completion, free, -ization](topic/topic_completion.2C.20free.20completion.2C.20free.2C.20-ization.html) (38 messages, latest: Jun 02 2022 at 16:46)
 * [a monadicity theorem](topic/topic_a.20monadicity.20theorem.html) (11 messages, latest: Jun 01 2022 at 23:18)
 * [Why specified isomorphisms?](topic/topic_Why.20specified.20isomorphisms.3F.html) (21 messages, latest: Jun 01 2022 at 13:40)
 * [Weak/lax fibers of a functor](topic/topic_Weak.2Flax.20fibers.20of.20a.20functor.html) (5 messages, latest: May 30 2022 at 22:36)
@@ -686,4 +686,4 @@ permalink: /stream/229199-learning:-questions/index.html
 * [Algebra (Aluffi) exercises](topic/topic_Algebra.20(Aluffi).20exercises.html) (55 messages, latest: Mar 27 2020 at 23:38)
 * [What is category theory about?](topic/topic_What.20is.20category.20theory.20about.3F.html) (16 messages, latest: Mar 26 2020 at 16:03)
 
-<hr><p>Last updated: Jun 05 2022 at 00:52 UTC</p>
+<hr><p>Last updated: Jun 06 2022 at 00:50 UTC</p>
