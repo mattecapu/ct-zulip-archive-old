@@ -9,6 +9,7 @@ permalink: /stream/230087-theory:-topos-theory/index.html
 
 ### Topics:
 
+* [pullback stability with enough points](topic/topic_pullback.20stability.20with.20enough.20points.html) (7 messages, latest: Jun 06 2022 at 20:11)
 * [stacks and other things](topic/topic_stacks.20and.20other.20things.html) (21 messages, latest: May 27 2022 at 15:29)
 * [loc conn : conn :: tidy : ?](topic/topic_loc.20conn.20.3A.20conn.20.3A.3A.20tidy.20.3A.20.3F.html) (10 messages, latest: May 10 2022 at 10:47)
 * [(in)stability of geometric surjections](topic/topic_(in)stability.20of.20geometric.20surjections.html) (25 messages, latest: May 05 2022 at 18:58)
@@ -86,4 +87,4 @@ permalink: /stream/230087-theory:-topos-theory/index.html
 * [right adjoint to inclusion of sheaves?](topic/topic_right.20adjoint.20to.20inclusion.20of.20sheaves.3F.html) (18 messages, latest: Mar 30 2020 at 09:37)
 * [essential geometric morphism](topic/topic_essential.20geometric.20morphism.html) (2 messages, latest: Mar 27 2020 at 18:56)
 
-<hr><p>Last updated: Jun 06 2022 at 00:50 UTC</p>
+<hr><p>Last updated: Jun 07 2022 at 00:40 UTC</p>

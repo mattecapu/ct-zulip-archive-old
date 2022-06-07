@@ -18,13 +18,13 @@ permalink: /index.html
 
 * [general: events](stream/229141-general:-events/index.html) (128 topics)
 
-* [theory: topos theory](stream/230087-theory:-topos-theory/index.html) (76 topics)
+* [theory: topos theory](stream/230087-theory:-topos-theory/index.html) (77 topics)
 
 * [conference: ACT 2020](stream/243068-conference:-ACT-2020/index.html) (62 topics)
 
 * [ACT 2020](stream/243068-ACT-2020/index.html) (61 topics)
 
-* [seminar: Topos Colloquium](stream/269484-seminar:-Topos-Colloquium/index.html) (58 topics)
+* [seminar: Topos Colloquium](stream/269484-seminar:-Topos-Colloquium/index.html) (59 topics)
 
 * [theory: algebraic topology & homological algebra](stream/241590-theory:-algebraic-topology-&-homological-algebra/index.html) (58 topics)
 
@@ -52,11 +52,11 @@ permalink: /index.html
 
 * [practice: software](stream/229125-practice:-software/index.html) (23 topics)
 
+* [theory: probability](stream/253118-theory:-probability/index.html) (23 topics)
+
 * [learning: history of ideas](stream/232163-learning:-history-of-ideas/index.html) (22 topics)
 
 * [practice: our work](stream/274877-practice:-our-work/index.html) (22 topics)
-
-* [theory: probability](stream/253118-theory:-probability/index.html) (22 topics)
 
 * [workshop: Polynomial Functors @ Topos](stream/282140-workshop:-Polynomial-Functors-@-Topos/index.html) (22 topics)
 
@@ -72,6 +72,8 @@ permalink: /index.html
 
 * [learning: show and tell](stream/232162-learning:-show-and-tell/index.html) (15 topics)
 
+* [practice: chemistry](stream/322714-practice:-chemistry/index.html) (15 topics)
+
 * [seminar: ACT@UCR](stream/229966-seminar:-ACT@UCR/index.html) (15 topics)
 
 * [theory: algebraic geometry](stream/231112-theory:-algebraic-geometry/index.html) (15 topics)
@@ -81,8 +83,6 @@ permalink: /index.html
 * [working: discrete geometry and entanglement](stream/266854-working:-discrete-geometry-and-entanglement/index.html) (14 topics)
 
 * [general: co/appreciation](stream/271602-general:-co/appreciation/index.html) (13 topics)
-
-* [practice: chemistry](stream/322714-practice:-chemistry/index.html) (13 topics)
 
 * [practice: translation](stream/260000-practice:-translation/index.html) (11 topics)
 
@@ -162,4 +162,4 @@ permalink: /index.html
 
 * [theory: alternate presentations](stream/233122-theory:-alternate-presentations/index.html) (1 topic)
 
-<hr><p>Last updated: Jun 06 2022 at 00:50 UTC</p>
+<hr><p>Last updated: Jun 07 2022 at 00:40 UTC</p>

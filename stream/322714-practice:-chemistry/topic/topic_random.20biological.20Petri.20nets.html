@@ -1,0 +1,32 @@
+---
+layout: archive
+title: Zulip Chat Archive
+permalink: /stream/322714-practice:-chemistry/topic/topic_random.20biological.20Petri.20nets.html
+---
+
+<h2>Stream: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/322714-practice:-chemistry/index.html">practice: chemistry</a></h2>
+<h3>Topic: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/322714-practice:-chemistry/topic/topic_random.20biological.20Petri.20nets.html">random biological Petri nets</a></h3>
+
+<hr>
+
+<base href="https://categorytheory.zulipchat.com/">
+
+{% raw %}
+
+<a name="285067695"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/322714-practice%3A%20chemistry/topic/random%20biological%20Petri%20nets/near/285067695" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Kris Brown <a href="https://mattecapu.github.io/ct-zulip-archive/stream/322714-practice:-chemistry/topic/topic_random.20biological.20Petri.20nets.html#285067695">(Jun 06 2022 at 01:58)</a>:</h4>
+<p>To follow up on our group's project, I'm trying to think of how to operationalize our goal of "capturing the essence of biological reaction networks via constraints on some process to randomly generate Petri nets." The simplest way I can think of is that we pick some property <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ϕ</mi></mrow><annotation encoding="application/x-tex">\phi</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8889em;vertical-align:-0.1944em;"></span><span class="mord mathnormal">ϕ</span></span></span></span> (a function <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi mathvariant="bold">P</mi><mi mathvariant="bold">e</mi><mi mathvariant="bold">t</mi><mi mathvariant="bold">r</mi><mi mathvariant="bold">i</mi></mrow><mo>→</mo><mi mathvariant="double-struck">R</mi></mrow><annotation encoding="application/x-tex">\mathbf{Petri}\rightarrow\mathbb{R}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord"><span class="mord mathbf">Petri</span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6889em;"></span><span class="mord mathbb">R</span></span></span></span>) and observe some distribution of <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ϕ</mi></mrow><annotation encoding="application/x-tex">\phi</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8889em;vertical-align:-0.1944em;"></span><span class="mord mathnormal">ϕ</span></span></span></span> over our whole dataset of biological Petri nets. We then seed our random Petri net generating process with a small number of motifs yet recover a similar overall distribution of <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ϕ</mi></mrow><annotation encoding="application/x-tex">\phi</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8889em;vertical-align:-0.1944em;"></span><span class="mord mathnormal">ϕ</span></span></span></span>. </p>
+<p>A related way to measure our success is to do <a href="https://research.aimultiple.com/data-augmentation-techniques/">data augmentation</a> for ML. To summarize how that works:</p>
+<ul>
+<li>A simple ML model is trained to take in reaction network and make a guess at <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ϕ</mi></mrow><annotation encoding="application/x-tex">\phi</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8889em;vertical-align:-0.1944em;"></span><span class="mord mathnormal">ϕ</span></span></span></span>.</li>
+<li>We only trained with a subset of our total data - evaluating on the hold-out data shows the black box is overfitting!</li>
+<li>We train a different model by augmenting our training set with random Petri nets (informed by the motifs of our training data).</li>
+<li>Training a ML model on this reduces overfitting, whereas training a ML model augmented with completely random networks does not do as well.</li>
+</ul>
+<p>This wouldn't be the focus of the project, just a detail of our methodology for how we measure our success. This was just one idea that struck me - would love to hear other ideas for quantifying results!</p>
+
+
+
+{% endraw %}
+
+<hr><p>Last updated: Jun 07 2022 at 00:40 UTC</p>
