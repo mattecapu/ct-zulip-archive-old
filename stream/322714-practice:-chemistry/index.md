@@ -9,7 +9,7 @@ permalink: /stream/322714-practice:-chemistry/index.html
 
 ### Topics:
 
-* [open Petri net questions](topic/topic_open.20Petri.20net.20questions.html) (26 messages, latest: Jun 06 2022 at 23:26)
+* [open Petri net questions](topic/topic_open.20Petri.20net.20questions.html) (28 messages, latest: Jun 07 2022 at 13:01)
 * [random biological Petri nets](topic/topic_random.20biological.20Petri.20nets.html) (1 message, latest: Jun 06 2022 at 01:58)
 * [graph structure theory](topic/topic_graph.20structure.20theory.html) (15 messages, latest: Jun 05 2022 at 16:50)
 * [smallest reaction networks](topic/topic_smallest.20reaction.20networks.html) (3 messages, latest: Jun 02 2022 at 21:06)
@@ -25,4 +25,4 @@ permalink: /stream/322714-practice:-chemistry/index.html
 * [moving this stream?](topic/topic_moving.20this.20stream.3F.html) (9 messages, latest: May 03 2022 at 02:56)
 * [Graph structure theory](topic/topic_Graph.20structure.20theory.html) (1 message, latest: Apr 26 2022 at 08:42)
 
-<hr><p>Last updated: Jun 07 2022 at 00:40 UTC</p>
+<hr><p>Last updated: Jun 08 2022 at 00:46 UTC</p>
