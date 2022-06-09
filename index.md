@@ -8,7 +8,7 @@ permalink: /index.html
 
 ## Streams:
 
-* [learning: questions](stream/229199-learning:-questions/index.html) (676 topics)
+* [learning: questions](stream/229199-learning:-questions/index.html) (677 topics)
 
 * [theory: category theory](stream/229136-theory:-category-theory/index.html) (276 topics)
 
@@ -32,9 +32,9 @@ permalink: /index.html
 
 * [practice: thermodynamics](stream/306433-practice:-thermodynamics/index.html) (51 topics)
 
-* [theory: logic](stream/233104-theory:-logic/index.html) (48 topics)
+* [general: positions](stream/245502-general:-positions/index.html) (48 topics)
 
-* [general: positions](stream/245502-general:-positions/index.html) (47 topics)
+* [theory: logic](stream/233104-theory:-logic/index.html) (48 topics)
 
 * [practice: our papers](stream/258900-practice:-our-papers/index.html) (45 topics)
 
@@ -60,11 +60,13 @@ permalink: /index.html
 
 * [workshop: Polynomial Functors @ Topos](stream/282140-workshop:-Polynomial-Functors-@-Topos/index.html) (22 topics)
 
-* [practice: Dialectica](stream/323208-practice:-Dialectica/index.html) (19 topics)
+* [practice: Dialectica](stream/323208-practice:-Dialectica/index.html) (20 topics)
 
 * [philosophy](stream/229134-philosophy/index.html) (16 topics)
 
 * [practice: communication](stream/233322-practice:-communication/index.html) (16 topics)
+
+* [theory: algebraic geometry](stream/231112-theory:-algebraic-geometry/index.html) (16 topics)
 
 * [theory: physics](stream/251538-theory:-physics/index.html) (16 topics)
 
@@ -75,8 +77,6 @@ permalink: /index.html
 * [practice: chemistry](stream/322714-practice:-chemistry/index.html) (15 topics)
 
 * [seminar: ACT@UCR](stream/229966-seminar:-ACT@UCR/index.html) (15 topics)
-
-* [theory: algebraic geometry](stream/231112-theory:-algebraic-geometry/index.html) (15 topics)
 
 * [practice: programming](stream/229450-practice:-programming/index.html) (14 topics)
 
@@ -162,4 +162,4 @@ permalink: /index.html
 
 * [theory: alternate presentations](stream/233122-theory:-alternate-presentations/index.html) (1 topic)
 
-<hr><p>Last updated: Jun 08 2022 at 00:46 UTC</p>
+<hr><p>Last updated: Jun 09 2022 at 00:48 UTC</p>

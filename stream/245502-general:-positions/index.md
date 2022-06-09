@@ -9,6 +9,7 @@ permalink: /stream/245502-general:-positions/index.html
 
 ### Topics:
 
+* [startup working on knowledge representation](topic/topic_startup.20working.20on.20knowledge.20representation.html) (1 message, latest: Jun 08 2022 at 15:34)
 * [Job at the University of Manchester](topic/topic_Job.20at.20the.20University.20of.20Manchester.html) (1 message, latest: Jun 05 2022 at 10:19)
 * [open PhD and postdoc position in categorical probability](topic/topic_open.20PhD.20and.20postdoc.20position.20in.20categorical.20probability.html) (1 message, latest: Jun 02 2022 at 10:00)
 * [Berkeley shared house June-August](topic/topic_Berkeley.20shared.20house.20June-August.html) (5 messages, latest: May 10 2022 at 19:21)
@@ -57,4 +58,4 @@ permalink: /stream/245502-general:-positions/index.html
 * [PhD positions in Estonia](topic/topic_PhD.20positions.20in.20Estonia.html) (1 message, latest: Jun 27 2020 at 18:04)
 * [Companies that hire category people](topic/topic_Companies.20that.20hire.20category.20people.html) (2 messages, latest: May 13 2020 at 03:50)
 
-<hr><p>Last updated: Jun 08 2022 at 00:46 UTC</p>
+<hr><p>Last updated: Jun 09 2022 at 00:48 UTC</p>
