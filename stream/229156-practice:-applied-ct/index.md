@@ -9,6 +9,7 @@ permalink: /stream/229156-practice:-applied-ct/index.html
 
 ### Topics:
 
+* [Examples of Strict monoidal functors](topic/topic_Examples.20of.20Strict.20monoidal.20functors.html) (2 messages, latest: Jun 09 2022 at 20:16)
 * [ACT22](topic/topic_ACT22.html) (32 messages, latest: Jun 04 2022 at 11:42)
 * [security + ct](topic/topic_security.20.2B.20ct.html) (68 messages, latest: May 28 2022 at 17:58)
 * [category theory for nested data structures](topic/topic_category.20theory.20for.20nested.20data.20structures.html) (16 messages, latest: May 24 2022 at 22:13)
@@ -144,4 +145,4 @@ permalink: /stream/229156-practice:-applied-ct/index.html
 * [AACT2020](topic/topic_AACT2020.html) (1 message, latest: Mar 24 2020 at 00:56)
 * [welcome](topic/topic_welcome.html) (15 messages, latest: Mar 24 2020 at 00:03)
 
-<hr><p>Last updated: Jun 09 2022 at 00:48 UTC</p>
+<hr><p>Last updated: Jun 10 2022 at 00:50 UTC</p>

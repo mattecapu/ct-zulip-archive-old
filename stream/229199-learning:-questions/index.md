@@ -9,8 +9,10 @@ permalink: /stream/229199-learning:-questions/index.html
 
 ### Topics:
 
-* [beginner questions](topic/topic_beginner.20questions.html) (591 messages, latest: Jun 09 2022 at 00:10)
-* [Adjoint restricted to subcategories](topic/topic_Adjoint.20restricted.20to.20subcategories.html) (2 messages, latest: Jun 08 2022 at 22:07)
+* [Composition of Fibrations](topic/topic_Composition.20of.20Fibrations.html) (4 messages, latest: Jun 09 2022 at 22:05)
+* [Isbell duality](topic/topic_Isbell.20duality.html) (2 messages, latest: Jun 09 2022 at 21:07)
+* [beginner questions](topic/topic_beginner.20questions.html) (599 messages, latest: Jun 09 2022 at 21:05)
+* [Adjoint restricted to subcategories](topic/topic_Adjoint.20restricted.20to.20subcategories.html) (3 messages, latest: Jun 09 2022 at 02:36)
 * [completion, free completion, free, -ization](topic/topic_completion.2C.20free.20completion.2C.20free.2C.20-ization.html) (39 messages, latest: Jun 05 2022 at 15:55)
 * [different version of Yoneda Lemma. Why does it work?](topic/topic_different.20version.20of.20Yoneda.20Lemma.2E.20Why.20does.20it.20work.3F.html) (4 messages, latest: Jun 03 2022 at 14:46)
 * [weak/lax fibers of a functor](topic/topic_weak.2Flax.20fibers.20of.20a.20functor.html) (32 messages, latest: Jun 02 2022 at 17:46)
@@ -616,7 +618,6 @@ permalink: /stream/229199-learning:-questions/index.html
 * [Name for the inverse of delooping](topic/topic_Name.20for.20the.20inverse.20of.20delooping.html) (3 messages, latest: Jun 01 2020 at 14:37)
 * [Assembling a bimonoidal category](topic/topic_Assembling.20a.20bimonoidal.20category.html) (5 messages, latest: May 31 2020 at 11:06)
 * [Sheaves in Geometry and Logic](topic/topic_Sheaves.20in.20Geometry.20and.20Logic.html) (21 messages, latest: May 29 2020 at 11:56)
-* [Isbell duality](topic/topic_Isbell.20duality.html) (1 message, latest: May 28 2020 at 17:19)
 * [Automata vs nets](topic/topic_Automata.20vs.20nets.html) (3 messages, latest: May 27 2020 at 16:29)
 * [Coproduct question](topic/topic_Coproduct.20question.html) (34 messages, latest: May 26 2020 at 20:50)
 * [F-algebra homomorphism and naturality squares](topic/topic_F-algebra.20homomorphism.20and.20naturality.20squares.html) (3 messages, latest: May 25 2020 at 18:12)
@@ -687,4 +688,4 @@ permalink: /stream/229199-learning:-questions/index.html
 * [Algebra (Aluffi) exercises](topic/topic_Algebra.20(Aluffi).20exercises.html) (55 messages, latest: Mar 27 2020 at 23:38)
 * [What is category theory about?](topic/topic_What.20is.20category.20theory.20about.3F.html) (16 messages, latest: Mar 26 2020 at 16:03)
 
-<hr><p>Last updated: Jun 09 2022 at 00:48 UTC</p>
+<hr><p>Last updated: Jun 10 2022 at 00:50 UTC</p>

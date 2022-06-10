@@ -72,4 +72,4 @@ permalink: /stream/243068-conference:-ACT-2020/index.html
 * [Tutorial: Intro to ACT (David Spivak)](topic/topic_Tutorial.3A.20Intro.20to.20ACT.20(David.20Spivak).html) (9 messages, latest: Jul 06 2020 at 00:29)
 * [General information](topic/topic_General.20information.html) (3 messages, latest: Jun 10 2020 at 21:09)
 
-<hr><p>Last updated: Jun 09 2022 at 00:48 UTC</p>
+<hr><p>Last updated: Jun 10 2022 at 00:50 UTC</p>
