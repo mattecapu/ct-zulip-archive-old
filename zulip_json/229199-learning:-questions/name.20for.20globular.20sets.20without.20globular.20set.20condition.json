@@ -1,0 +1,80 @@
+[
+    {
+        "content": "<p>I'm learning about n-categories and how globular sets play a role analogous to what graphs play in relation to categories. Globular sets are defined as functors into set from something with this shape that also satisfy the globular set conditions. :</p>\n<p><a href=\"/user_uploads/21317/cTkdhaMHFv8R03hshKrY25oQ/polygraph-globular-set-diagram-1.png\">polygraph-globular-set-diagram-1.png</a> </p>\n<div class=\"message_inline_image\"><a href=\"/user_uploads/21317/cTkdhaMHFv8R03hshKrY25oQ/polygraph-globular-set-diagram-1.png\" title=\"polygraph-globular-set-diagram-1.png\"><img src=\"/user_uploads/21317/cTkdhaMHFv8R03hshKrY25oQ/polygraph-globular-set-diagram-1.png\"></a></div><p><a href=\"https://eugeniacheng.com/wp-content/uploads/2017/02/cheng-lauda-guidebook.pdf\">source</a></p>\n<p>My question is this. Is there a standard name for a functor from the diagram above into Set <strong><em>without</em></strong> the globular set conditions? I ask because this seems like a natural generalization of a graph with higher order edges and it is surprising to me that there doesn't seem to be a name for it. It is difficult to talk about it as \"the category of globular sets without the globular set condition\". Intuitively, I would call such structures higher-order graphs or higher-order networks, but these terms are not standard. </p>\n<p>I've looked into the terms polygraph and computad because these seem similar, but I still am not sure if either of these is a correct term. Polygraphs (at least in some formulations) appear to include the globular set condition. I can't entirely understand the definition of <a href=\"https://ncatlab.org/nlab/show/computad\">computads</a> on nlab, but it seems like they are related.</p>\n<p>[Update]<br>\nAfter the exchange with <span class=\"user-mention\" data-user-id=\"276092\">@Nathanael Arkor</span>  below, I've confirmed that what I'm looking for is not a polygraph/computad, since these include a globularity condition.</p>",
+        "id": 285722395,
+        "sender_full_name": "Avi Craimer",
+        "timestamp": 1654889361
+    },
+    {
+        "content": "<p>These are called <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>n</mi></mrow><annotation encoding=\"application/x-tex\">n</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.4306em;\"></span><span class=\"mord mathnormal\">n</span></span></span></span>-graphs (or <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"normal\">∞</mi></mrow><annotation encoding=\"application/x-tex\">\\infty</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.4306em;\"></span><span class=\"mord\">∞</span></span></span></span>-graphs) by Burroni in the <a href=\"https://www.sciencedirect.com/science/article/pii/030439759390054W\">paper introducing polygraphs</a>.</p>",
+        "id": 285723307,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1654889879
+    },
+    {
+        "content": "<p>Polygraphs generalise higher graphs by permitting <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"false\">(</mo><mi>n</mi><mo>+</mo><mn>1</mn><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">(n + 1)</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mopen\">(</span><span class=\"mord mathnormal\">n</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span><span class=\"mbin\">+</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord\">1</span><span class=\"mclose\">)</span></span></span></span>-cells between chains of <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>n</mi></mrow><annotation encoding=\"application/x-tex\">n</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.4306em;\"></span><span class=\"mord mathnormal\">n</span></span></span></span>-cells. Computads are another term for polygraph.</p>",
+        "id": 285723402,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1654889923
+    },
+    {
+        "content": "<p>Thanks <span class=\"user-mention\" data-user-id=\"276092\">@Nathanael Arkor</span> <br>\nIn that paper on page 44, Burroni says that an ∞-graph has to meet some extra equations/conditions: <br>\n<a href=\"/user_uploads/21317/d-GAaNkcNzRuVLagz48eRgPx/image.png\">image.png</a></p>\n<div class=\"message_inline_image\"><a href=\"/user_uploads/21317/d-GAaNkcNzRuVLagz48eRgPx/image.png\" title=\"image.png\"><img src=\"/user_uploads/21317/d-GAaNkcNzRuVLagz48eRgPx/image.png\"></a></div><p>Are these conditions not applied to n-graphs of finite n? It looks to me like the conditions are applied to n-graphs. Since on page 45, his definition of a 2-graph says, \"starting from an ∞-graph\", so the conditions on the ∞-graph would be enforced for the 2-graph.</p>",
+        "id": 285723619,
+        "sender_full_name": "Avi Craimer",
+        "timestamp": 1654890052
+    },
+    {
+        "content": "<p>Yes, they are, but I imagine you want this condition to hold. It says that if you have a 2-cell <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>α</mi><mo>:</mo><mi>f</mi><mo>⇒</mo><mi>g</mi></mrow><annotation encoding=\"application/x-tex\">\\alpha : f \\Rightarrow g</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.4306em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.0037em;\">α</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">:</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.8889em;vertical-align:-0.1944em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.10764em;\">f</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">⇒</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.625em;vertical-align:-0.1944em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.03588em;\">g</span></span></span></span>, then <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>f</mi></mrow><annotation encoding=\"application/x-tex\">f</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8889em;vertical-align:-0.1944em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.10764em;\">f</span></span></span></span> and <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>g</mi></mrow><annotation encoding=\"application/x-tex\">g</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.625em;vertical-align:-0.1944em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.03588em;\">g</span></span></span></span> must have the same domain and codomain as one another.</p>",
+        "id": 285724633,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1654890679
+    },
+    {
+        "content": "<p>I.e. your cells are globular.</p>",
+        "id": 285724664,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1654890702
+    },
+    {
+        "content": "<p>Without this condition, you would allow 2-cells like:<br>\n<a href=\"/user_uploads/21317/dNn0vvwJdOv4vSo4rcmUwbcp/image.png\">image.png</a></p>\n<div class=\"message_inline_image\"><a href=\"/user_uploads/21317/dNn0vvwJdOv4vSo4rcmUwbcp/image.png\" title=\"image.png\"><img src=\"/user_uploads/21317/dNn0vvwJdOv4vSo4rcmUwbcp/image.png\"></a></div>",
+        "id": 285724727,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1654890727
+    },
+    {
+        "content": "<p>That's right. My original question was about whether there is an official term for higher-order graphs that allow both globular and non-globular structures.</p>",
+        "id": 285724881,
+        "sender_full_name": "Avi Craimer",
+        "timestamp": 1654890818
+    },
+    {
+        "content": "<p>Oh, I see, sorry, I misread. I thought you just wanted to avoid the extra generality of polygraphs. I'm afraid I don't know of such a term, in that case.</p>",
+        "id": 285725109,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1654890915
+    },
+    {
+        "content": "<p>That's okay. It's a good illustration of how hard it is to talk about without having a term for it!</p>",
+        "id": 285725183,
+        "sender_full_name": "Avi Craimer",
+        "timestamp": 1654890958
+    },
+    {
+        "content": "<p>Your answer was still helpful because it means I can definitely rule out the terms polygraph and computad from my search.</p>",
+        "id": 285725359,
+        "sender_full_name": "Avi Craimer",
+        "timestamp": 1654891037
+    },
+    {
+        "content": "<p>If it turns out there is no existing term for what I describe above, I would also be interested if anybody has opinions on what would be a good term to coin. </p>\n<p>Here are some options:</p>\n<ul>\n<li>pre-globular set (suggested by <span class=\"user-mention\" data-user-id=\"282822\">@fosco</span>)</li>\n<li>non-globular n-graph (however, we want to include globular as well)</li>\n<li>higher-order graph</li>\n</ul>",
+        "id": 285738420,
+        "sender_full_name": "Avi Craimer",
+        "timestamp": 1654899208
+    },
+    {
+        "content": "<p>\"Pre-globular set\" is not suggestive of the structure you are describing, because it has nothing to do with globes at all. You could just as well call it \"pre-simplicial set\", etc.</p>",
+        "id": 285739613,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1654900080
+    }
+]

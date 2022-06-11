@@ -9,12 +9,14 @@ permalink: /stream/229199-learning:-questions/index.html
 
 ### Topics:
 
+* [different version of Yoneda Lemma. Why does it work?](topic/topic_different.20version.20of.20Yoneda.20Lemma.2E.20Why.20does.20it.20work.3F.html) (8 messages, latest: Jun 11 2022 at 00:12)
+* [name for globular sets without globular set condition](topic/topic_name.20for.20globular.20sets.20without.20globular.20set.20condition.html) (13 messages, latest: Jun 10 2022 at 22:28)
+* [Composition of fibrations](topic/topic_Composition.20of.20fibrations.html) (2 messages, latest: Jun 10 2022 at 14:58)
+* [beginner questions](topic/topic_beginner.20questions.html) (602 messages, latest: Jun 10 2022 at 10:47)
 * [Composition of Fibrations](topic/topic_Composition.20of.20Fibrations.html) (4 messages, latest: Jun 09 2022 at 22:05)
 * [Isbell duality](topic/topic_Isbell.20duality.html) (2 messages, latest: Jun 09 2022 at 21:07)
-* [beginner questions](topic/topic_beginner.20questions.html) (599 messages, latest: Jun 09 2022 at 21:05)
 * [Adjoint restricted to subcategories](topic/topic_Adjoint.20restricted.20to.20subcategories.html) (3 messages, latest: Jun 09 2022 at 02:36)
 * [completion, free completion, free, -ization](topic/topic_completion.2C.20free.20completion.2C.20free.2C.20-ization.html) (39 messages, latest: Jun 05 2022 at 15:55)
-* [different version of Yoneda Lemma. Why does it work?](topic/topic_different.20version.20of.20Yoneda.20Lemma.2E.20Why.20does.20it.20work.3F.html) (4 messages, latest: Jun 03 2022 at 14:46)
 * [weak/lax fibers of a functor](topic/topic_weak.2Flax.20fibers.20of.20a.20functor.html) (32 messages, latest: Jun 02 2022 at 17:46)
 * [why specified isomorphisms?](topic/topic_why.20specified.20isomorphisms.3F.html) (2 messages, latest: Jun 02 2022 at 17:39)
 * [a monadicity theorem](topic/topic_a.20monadicity.20theorem.html) (11 messages, latest: Jun 01 2022 at 23:18)
@@ -688,4 +690,4 @@ permalink: /stream/229199-learning:-questions/index.html
 * [Algebra (Aluffi) exercises](topic/topic_Algebra.20(Aluffi).20exercises.html) (55 messages, latest: Mar 27 2020 at 23:38)
 * [What is category theory about?](topic/topic_What.20is.20category.20theory.20about.3F.html) (16 messages, latest: Mar 26 2020 at 16:03)
 
-<hr><p>Last updated: Jun 10 2022 at 00:50 UTC</p>
+<hr><p>Last updated: Jun 11 2022 at 00:46 UTC</p>
