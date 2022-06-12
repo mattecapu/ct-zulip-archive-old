@@ -60,7 +60,7 @@ permalink: /index.html
 
 * [workshop: Polynomial Functors @ Topos](stream/282140-workshop:-Polynomial-Functors-@-Topos/index.html) (22 topics)
 
-* [practice: Dialectica](stream/323208-practice:-Dialectica/index.html) (20 topics)
+* [practice: Dialectica](stream/323208-practice:-Dialectica/index.html) (21 topics)
 
 * [philosophy](stream/229134-philosophy/index.html) (16 topics)
 
@@ -162,4 +162,4 @@ permalink: /index.html
 
 * [theory: alternate presentations](stream/233122-theory:-alternate-presentations/index.html) (1 topic)
 
-<hr><p>Last updated: Jun 11 2022 at 00:46 UTC</p>
+<hr><p>Last updated: Jun 12 2022 at 00:48 UTC</p>
