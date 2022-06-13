@@ -9,12 +9,12 @@ permalink: /stream/258900-practice:-our-papers/index.html
 
 ### Topics:
 
+* [classifying topoi in synthetic guarded domain theory](topic/topic_classifying.20topoi.20in.20synthetic.20guarded.20domain.20theory.html) (2 messages, latest: Jun 12 2022 at 13:26)
 * [Inner autoequivalences in general and those of monoidal c...](topic/topic_Inner.20autoequivalences.20in.20general.20and.20those.20of.20monoidal.20c.2E.2E.2E.html) (3 messages, latest: May 10 2022 at 00:49)
 * [stream events](topic/topic_stream.20events.html) (3 messages, latest: May 09 2022 at 21:14)
 * [Cornering Optics](topic/topic_Cornering.20Optics.html) (57 messages, latest: May 04 2022 at 16:36)
 * [Yoneda Hacking: The Algebra of Attacker Actions](topic/topic_Yoneda.20Hacking.3A.20The.20Algebra.20of.20Attacker.20Actions.html) (41 messages, latest: May 02 2022 at 15:57)
 * [sheaf semantics of termination-insensitive noninterference](topic/topic_sheaf.20semantics.20of.20termination-insensitive.20noninterference.html) (1 message, latest: Apr 19 2022 at 16:34)
-* [classifying topoi in synthetic guarded domain theory](topic/topic_classifying.20topoi.20in.20synthetic.20guarded.20domain.20theory.html) (1 message, latest: Apr 19 2022 at 15:40)
 * [A unified treatment of structural definitions on syntax](topic/topic_A.20unified.20treatment.20of.20structural.20definitions.20on.20syntax.html) (1 message, latest: Apr 12 2022 at 11:07)
 * [What should a generic object be?](topic/topic_What.20should.20a.20generic.20object.20be.3F.html) (1 message, latest: Apr 10 2022 at 08:19)
 * [Tom Hirschowitz](topic/topic_Tom.20Hirschowitz.html) (2 messages, latest: Apr 08 2022 at 15:10)
@@ -55,4 +55,4 @@ permalink: /stream/258900-practice:-our-papers/index.html
 * [Functorial semantics for partial theories](topic/topic_Functorial.20semantics.20for.20partial.20theories.html) (30 messages, latest: Nov 29 2020 at 08:46)
 * [Coends of higher arity](topic/topic_Coends.20of.20higher.20arity.html) (3 messages, latest: Sep 26 2020 at 16:28)
 
-<hr><p>Last updated: Jun 12 2022 at 00:48 UTC</p>
+<hr><p>Last updated: Jun 13 2022 at 00:51 UTC</p>

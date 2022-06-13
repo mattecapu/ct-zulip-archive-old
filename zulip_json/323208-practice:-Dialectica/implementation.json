@@ -22,5 +22,95 @@
         "id": 285801901,
         "sender_full_name": "Nelson Niu",
         "timestamp": 1654986136
+    },
+    {
+        "content": "<p>but we know that the cartesian product in DDial is (I\\times J, A_i+ B_j, the right relation), right?</p>\n<p>so saying the category is cartesian closed would mean finding an internal-hom (or exponent) for this monoidal structure. this is what I do find difficult, the monoidal structure we have  an internal-hom for  is the parallel product, not the cartesian product.</p>",
+        "id": 285824200,
+        "sender_full_name": "Valeria de Paiva",
+        "timestamp": 1655014345
+    },
+    {
+        "content": "<p>Okay, then we’re talking about the same thing! There is in fact an internal-hom for the Cartesian product in DDial. Unlike the parallel product’s internal-hom, the full subcategory of nondependent objects is not closed under this operation, which is why the Cartesian closure doesn’t exist in the nondependent Dial setting. But it <em>does</em> exist in DDial. The formula is not very pretty, but (with the benefit of hindsight…) there’s a fairly natural way to derive it just by shifting around some sums and products</p>",
+        "id": 285824394,
+        "sender_full_name": "Nelson Niu",
+        "timestamp": 1655014577
+    },
+    {
+        "content": "<p>excellent news then!</p>",
+        "id": 285824426,
+        "sender_full_name": "Valeria de Paiva",
+        "timestamp": 1655014638
+    },
+    {
+        "content": "<p>looking forward to the formula!</p>",
+        "id": 285824489,
+        "sender_full_name": "Valeria de Paiva",
+        "timestamp": 1655014769
+    },
+    {
+        "content": "<p>(Incidentally, in my mind this is a heuristic benefit of thinking about all this literally in terms of “polynomials”—computations then become as easy as expanding sums and products the way you’d expect them to work)</p>",
+        "id": 285824491,
+        "sender_full_name": "Nelson Niu",
+        "timestamp": 1655014780
+    },
+    {
+        "content": "<p>This very likely won’t make sense without more context, but here’s the derivation of the formula from my notes in any SigmaPiC:</p>",
+        "id": 285824619,
+        "sender_full_name": "Nelson Niu",
+        "timestamp": 1655014976
+    },
+    {
+        "content": "<p><a href=\"/user_uploads/21317/H-llkIUYsZK3pSars7m0eJNT/3FE4B83A-B2F1-4262-A3C4-B3C02B57516E.jpg\">3FE4B83A-B2F1-4262-A3C4-B3C02B57516E.jpg</a></p>\n<div class=\"message_inline_image\"><a href=\"/user_uploads/21317/H-llkIUYsZK3pSars7m0eJNT/3FE4B83A-B2F1-4262-A3C4-B3C02B57516E.jpg\" title=\"3FE4B83A-B2F1-4262-A3C4-B3C02B57516E.jpg\"><img src=\"/user_uploads/21317/H-llkIUYsZK3pSars7m0eJNT/3FE4B83A-B2F1-4262-A3C4-B3C02B57516E.jpg\"></a></div>",
+        "id": 285824726,
+        "sender_full_name": "Nelson Niu",
+        "timestamp": 1655015160
+    },
+    {
+        "content": "<p>Thanks <span class=\"user-mention\" data-user-id=\"343715\">@Nelson Niu</span> !.  I was not doubting the cartesian closure of SigmaPiC, but of DDial, in the terminology we just established. SigmaPiC is defined from the completions, from above as it were, I totally believe that it's cartesian closed. DDial is defined from objects and maps, from the ground up, so I was expecting a formula in terms of A_i's and B_j's that we then would prove equivalent to SigmaPiC. </p>\n<p>so we were talking about the same problem, but about different potential solutions all along.</p>",
+        "id": 285840151,
+        "sender_full_name": "Valeria de Paiva",
+        "timestamp": 1655037525
+    },
+    {
+        "content": "<p>When we’ve been working with SigmaPiC, we’ve also been using the explicit ground-up, objects-and-maps construction for it (which has been shown to be the completion already). So we know everything is equivalent already, and the formulas are the same</p>",
+        "id": 285849948,
+        "sender_full_name": "Nelson Niu",
+        "timestamp": 1655050833
+    },
+    {
+        "content": "<p>Here’s the formula for the Cartesian closure in more familiar (I, A_i, P) notation:</p>",
+        "id": 285850429,
+        "sender_full_name": "Nelson Niu",
+        "timestamp": 1655051519
+    },
+    {
+        "content": "<p><a href=\"/user_uploads/21317/615kozmRlF3oYAjbLpteTk_K/61B3D644-A220-4B57-AF22-3C9B703CD24F.jpg\">61B3D644-A220-4B57-AF22-3C9B703CD24F.jpg</a></p>\n<div class=\"message_inline_image\"><a href=\"/user_uploads/21317/615kozmRlF3oYAjbLpteTk_K/61B3D644-A220-4B57-AF22-3C9B703CD24F.jpg\" title=\"61B3D644-A220-4B57-AF22-3C9B703CD24F.jpg\"><img src=\"/user_uploads/21317/615kozmRlF3oYAjbLpteTk_K/61B3D644-A220-4B57-AF22-3C9B703CD24F.jpg\"></a></div>",
+        "id": 285850467,
+        "sender_full_name": "Nelson Niu",
+        "timestamp": 1655051525
+    },
+    {
+        "content": "<p>thanks! but here you've lost me!  what's s_i? what's the bar? why the product of b's in B_ji minus(??) s_i?</p>",
+        "id": 285855884,
+        "sender_full_name": "Valeria de Paiva",
+        "timestamp": 1655059343
+    },
+    {
+        "content": "<ul>\n<li>\n<p>The bar is my naming convention to distinguish between an element (like i in I) vs. a function/indexed element (like jbar : I -&gt; J); it doesn’t mean any specific operation, it’s just a label. You can ignore it if you’d like, and everything should still parse correctly</p>\n</li>\n<li>\n<p>S ranges over a product over i’s in I of 2^B_ji—equivalently the power set of B_ji. So each Si is a subset of B_ji. If you think about it that way, taking a product over b’s in the complement of Si, namely B_ji minus Si, makes total sense</p>\n</li>\n</ul>",
+        "id": 285856151,
+        "sender_full_name": "Nelson Niu",
+        "timestamp": 1655059779
+    },
+    {
+        "content": "<p>I warned you the formula isn’t pretty 😅</p>",
+        "id": 285856221,
+        "sender_full_name": "Nelson Niu",
+        "timestamp": 1655059863
+    },
+    {
+        "content": "<p>In fact, a “reason” for the lack of prettiness is that writing objects in DDial in this way, as two sets and a predicate on them, forces you to write them in “normal” form, as Jeremie and the games co. call it. We know every object can be written in this compact, normal form, involving two sets—one you sum over, one you take a product over—because distributively lets you shift sums and products around, but that doesn’t mean that’s always the most natural way to think about them or write them down, especially if they originated from an “extensive” form consisting of a product of sums or something more complicated</p>",
+        "id": 285856478,
+        "sender_full_name": "Nelson Niu",
+        "timestamp": 1655060260
     }
 ]

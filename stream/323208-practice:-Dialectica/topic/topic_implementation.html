@@ -37,6 +37,107 @@ permalink: /stream/323208-practice:-Dialectica/topic/topic_implementation.html
 
 
 
+<a name="285824200"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/323208-practice%3A%20Dialectica/topic/implementation/near/285824200" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Valeria de Paiva <a href="https://mattecapu.github.io/ct-zulip-archive/stream/323208-practice:-Dialectica/topic/topic_implementation.html#285824200">(Jun 12 2022 at 06:12)</a>:</h4>
+<p>but we know that the cartesian product in DDial is (I\times J, A_i+ B_j, the right relation), right?</p>
+<p>so saying the category is cartesian closed would mean finding an internal-hom (or exponent) for this monoidal structure. this is what I do find difficult, the monoidal structure we have  an internal-hom for  is the parallel product, not the cartesian product.</p>
+
+
+
+<a name="285824394"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/323208-practice%3A%20Dialectica/topic/implementation/near/285824394" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nelson Niu <a href="https://mattecapu.github.io/ct-zulip-archive/stream/323208-practice:-Dialectica/topic/topic_implementation.html#285824394">(Jun 12 2022 at 06:16)</a>:</h4>
+<p>Okay, then we’re talking about the same thing! There is in fact an internal-hom for the Cartesian product in DDial. Unlike the parallel product’s internal-hom, the full subcategory of nondependent objects is not closed under this operation, which is why the Cartesian closure doesn’t exist in the nondependent Dial setting. But it <em>does</em> exist in DDial. The formula is not very pretty, but (with the benefit of hindsight…) there’s a fairly natural way to derive it just by shifting around some sums and products</p>
+
+
+
+<a name="285824426"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/323208-practice%3A%20Dialectica/topic/implementation/near/285824426" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Valeria de Paiva <a href="https://mattecapu.github.io/ct-zulip-archive/stream/323208-practice:-Dialectica/topic/topic_implementation.html#285824426">(Jun 12 2022 at 06:17)</a>:</h4>
+<p>excellent news then!</p>
+
+
+
+<a name="285824489"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/323208-practice%3A%20Dialectica/topic/implementation/near/285824489" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Valeria de Paiva <a href="https://mattecapu.github.io/ct-zulip-archive/stream/323208-practice:-Dialectica/topic/topic_implementation.html#285824489">(Jun 12 2022 at 06:19)</a>:</h4>
+<p>looking forward to the formula!</p>
+
+
+
+<a name="285824491"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/323208-practice%3A%20Dialectica/topic/implementation/near/285824491" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nelson Niu <a href="https://mattecapu.github.io/ct-zulip-archive/stream/323208-practice:-Dialectica/topic/topic_implementation.html#285824491">(Jun 12 2022 at 06:19)</a>:</h4>
+<p>(Incidentally, in my mind this is a heuristic benefit of thinking about all this literally in terms of “polynomials”—computations then become as easy as expanding sums and products the way you’d expect them to work)</p>
+
+
+
+<a name="285824619"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/323208-practice%3A%20Dialectica/topic/implementation/near/285824619" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nelson Niu <a href="https://mattecapu.github.io/ct-zulip-archive/stream/323208-practice:-Dialectica/topic/topic_implementation.html#285824619">(Jun 12 2022 at 06:22)</a>:</h4>
+<p>This very likely won’t make sense without more context, but here’s the derivation of the formula from my notes in any SigmaPiC:</p>
+
+
+
+<a name="285824726"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/323208-practice%3A%20Dialectica/topic/implementation/near/285824726" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nelson Niu <a href="https://mattecapu.github.io/ct-zulip-archive/stream/323208-practice:-Dialectica/topic/topic_implementation.html#285824726">(Jun 12 2022 at 06:26)</a>:</h4>
+<p><a href="/user_uploads/21317/H-llkIUYsZK3pSars7m0eJNT/3FE4B83A-B2F1-4262-A3C4-B3C02B57516E.jpg">3FE4B83A-B2F1-4262-A3C4-B3C02B57516E.jpg</a></p>
+<div class="message_inline_image"><a href="/user_uploads/21317/H-llkIUYsZK3pSars7m0eJNT/3FE4B83A-B2F1-4262-A3C4-B3C02B57516E.jpg" title="3FE4B83A-B2F1-4262-A3C4-B3C02B57516E.jpg"><img src="/user_uploads/21317/H-llkIUYsZK3pSars7m0eJNT/3FE4B83A-B2F1-4262-A3C4-B3C02B57516E.jpg"></a></div>
+
+
+
+<a name="285840151"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/323208-practice%3A%20Dialectica/topic/implementation/near/285840151" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Valeria de Paiva <a href="https://mattecapu.github.io/ct-zulip-archive/stream/323208-practice:-Dialectica/topic/topic_implementation.html#285840151">(Jun 12 2022 at 12:38)</a>:</h4>
+<p>Thanks <span class="user-mention" data-user-id="343715">@Nelson Niu</span> !.  I was not doubting the cartesian closure of SigmaPiC, but of DDial, in the terminology we just established. SigmaPiC is defined from the completions, from above as it were, I totally believe that it's cartesian closed. DDial is defined from objects and maps, from the ground up, so I was expecting a formula in terms of A_i's and B_j's that we then would prove equivalent to SigmaPiC. </p>
+<p>so we were talking about the same problem, but about different potential solutions all along.</p>
+
+
+
+<a name="285849948"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/323208-practice%3A%20Dialectica/topic/implementation/near/285849948" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nelson Niu <a href="https://mattecapu.github.io/ct-zulip-archive/stream/323208-practice:-Dialectica/topic/topic_implementation.html#285849948">(Jun 12 2022 at 16:20)</a>:</h4>
+<p>When we’ve been working with SigmaPiC, we’ve also been using the explicit ground-up, objects-and-maps construction for it (which has been shown to be the completion already). So we know everything is equivalent already, and the formulas are the same</p>
+
+
+
+<a name="285850429"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/323208-practice%3A%20Dialectica/topic/implementation/near/285850429" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nelson Niu <a href="https://mattecapu.github.io/ct-zulip-archive/stream/323208-practice:-Dialectica/topic/topic_implementation.html#285850429">(Jun 12 2022 at 16:31)</a>:</h4>
+<p>Here’s the formula for the Cartesian closure in more familiar (I, A_i, P) notation:</p>
+
+
+
+<a name="285850467"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/323208-practice%3A%20Dialectica/topic/implementation/near/285850467" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nelson Niu <a href="https://mattecapu.github.io/ct-zulip-archive/stream/323208-practice:-Dialectica/topic/topic_implementation.html#285850467">(Jun 12 2022 at 16:32)</a>:</h4>
+<p><a href="/user_uploads/21317/615kozmRlF3oYAjbLpteTk_K/61B3D644-A220-4B57-AF22-3C9B703CD24F.jpg">61B3D644-A220-4B57-AF22-3C9B703CD24F.jpg</a></p>
+<div class="message_inline_image"><a href="/user_uploads/21317/615kozmRlF3oYAjbLpteTk_K/61B3D644-A220-4B57-AF22-3C9B703CD24F.jpg" title="61B3D644-A220-4B57-AF22-3C9B703CD24F.jpg"><img src="/user_uploads/21317/615kozmRlF3oYAjbLpteTk_K/61B3D644-A220-4B57-AF22-3C9B703CD24F.jpg"></a></div>
+
+
+
+<a name="285855884"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/323208-practice%3A%20Dialectica/topic/implementation/near/285855884" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Valeria de Paiva <a href="https://mattecapu.github.io/ct-zulip-archive/stream/323208-practice:-Dialectica/topic/topic_implementation.html#285855884">(Jun 12 2022 at 18:42)</a>:</h4>
+<p>thanks! but here you've lost me!  what's s_i? what's the bar? why the product of b's in B_ji minus(??) s_i?</p>
+
+
+
+<a name="285856151"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/323208-practice%3A%20Dialectica/topic/implementation/near/285856151" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nelson Niu <a href="https://mattecapu.github.io/ct-zulip-archive/stream/323208-practice:-Dialectica/topic/topic_implementation.html#285856151">(Jun 12 2022 at 18:49)</a>:</h4>
+<ul>
+<li>
+<p>The bar is my naming convention to distinguish between an element (like i in I) vs. a function/indexed element (like jbar : I -&gt; J); it doesn’t mean any specific operation, it’s just a label. You can ignore it if you’d like, and everything should still parse correctly</p>
+</li>
+<li>
+<p>S ranges over a product over i’s in I of 2^B_ji—equivalently the power set of B_ji. So each Si is a subset of B_ji. If you think about it that way, taking a product over b’s in the complement of Si, namely B_ji minus Si, makes total sense</p>
+</li>
+</ul>
+
+
+
+<a name="285856221"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/323208-practice%3A%20Dialectica/topic/implementation/near/285856221" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nelson Niu <a href="https://mattecapu.github.io/ct-zulip-archive/stream/323208-practice:-Dialectica/topic/topic_implementation.html#285856221">(Jun 12 2022 at 18:51)</a>:</h4>
+<p>I warned you the formula isn’t pretty 😅</p>
+
+
+
+<a name="285856478"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/323208-practice%3A%20Dialectica/topic/implementation/near/285856478" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nelson Niu <a href="https://mattecapu.github.io/ct-zulip-archive/stream/323208-practice:-Dialectica/topic/topic_implementation.html#285856478">(Jun 12 2022 at 18:57)</a>:</h4>
+<p>In fact, a “reason” for the lack of prettiness is that writing objects in DDial in this way, as two sets and a predicate on them, forces you to write them in “normal” form, as Jeremie and the games co. call it. We know every object can be written in this compact, normal form, involving two sets—one you sum over, one you take a product over—because distributively lets you shift sums and products around, but that doesn’t mean that’s always the most natural way to think about them or write them down, especially if they originated from an “extensive” form consisting of a product of sums or something more complicated</p>
+
+
+
 {% endraw %}
 
-<hr><p>Last updated: Jun 12 2022 at 00:48 UTC</p>
+<hr><p>Last updated: Jun 13 2022 at 00:51 UTC</p>
