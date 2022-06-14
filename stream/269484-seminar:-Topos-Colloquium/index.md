@@ -9,6 +9,7 @@ permalink: /stream/269484-seminar:-Topos-Colloquium/index.html
 
 ### Topics:
 
+* [Christoph Benzmueller: Logico-pluralistic exploration \[...\]](topic/topic_Christoph.20Benzmueller.3A.20Logico-pluralistic.20exploration.20.5B.2E.2E.2E.5D.html) (1 message, latest: Jun 13 2022 at 21:47)
 * [Nicolas Behr: Fundamentals of Compositional Rewriting Theory](topic/topic_Nicolas.20Behr.3A.20Fundamentals.20of.20Compositional.20Rewriting.20Theory.html) (1 message, latest: Jun 06 2022 at 15:59)
 * [Thierry Coquand: Sheaf Cohomology in Univalent Type Theory](topic/topic_Thierry.20Coquand.3A.20Sheaf.20Cohomology.20in.20Univalent.20Type.20Theory.html) (1 message, latest: May 30 2022 at 14:49)
 * [Tai-Danae Bradley: Entropy as an Operad Derivation](topic/topic_Tai-Danae.20Bradley.3A.20Entropy.20as.20an.20Operad.20Derivation.html) (20 messages, latest: May 28 2022 at 10:31)
@@ -69,4 +70,4 @@ permalink: /stream/269484-seminar:-Topos-Colloquium/index.html
 * [Gunnar E. Carlsson: "Relative topology, motion planning, .."](topic/topic_Gunnar.20E.2E.20Carlsson.3A.20.22Relative.20topology.2C.20motion.20planning.2C.20.2E.2E.22.html) (4 messages, latest: Feb 18 2021 at 16:45)
 * [Richard Garner: "Comodels of an algebraic theory"](topic/topic_Richard.20Garner.3A.20.22Comodels.20of.20an.20algebraic.20theory.22.html) (27 messages, latest: Feb 11 2021 at 22:36)
 
-<hr><p>Last updated: Jun 13 2022 at 00:51 UTC</p>
+<hr><p>Last updated: Jun 14 2022 at 00:57 UTC</p>
