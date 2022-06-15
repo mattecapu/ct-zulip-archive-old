@@ -9,6 +9,7 @@ permalink: /stream/229141-general:-events/index.html
 
 ### Topics:
 
+* [GReTA seminar](topic/topic_GReTA.20seminar.html) (2 messages, latest: Jun 14 2022 at 20:46)
 * [ACT 2022](topic/topic_ACT.202022.html) (3 messages, latest: Jun 10 2022 at 15:01)
 * [ICRA 2022 Workshop on Compositional Robotics](topic/topic_ICRA.202022.20Workshop.20on.20Compositional.20Robotics.html) (7 messages, latest: May 28 2022 at 15:39)
 * [Grothendieck conference](topic/topic_Grothendieck.20conference.html) (20 messages, latest: May 27 2022 at 23:33)
@@ -138,4 +139,4 @@ permalink: /stream/229141-general:-events/index.html
 * [April 1st: ACT@UCR](topic/topic_April.201st.3A.20ACT.40UCR.html) (3 messages, latest: Mar 26 2020 at 23:58)
 * [Google Sites problem](topic/topic_Google.20Sites.20problem.html) (4 messages, latest: Mar 25 2020 at 04:29)
 
-<hr><p>Last updated: Jun 14 2022 at 00:57 UTC</p>
+<hr><p>Last updated: Jun 15 2022 at 00:55 UTC</p>

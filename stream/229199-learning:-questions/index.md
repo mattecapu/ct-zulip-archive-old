@@ -9,7 +9,8 @@ permalink: /stream/229199-learning:-questions/index.html
 
 ### Topics:
 
-* [name for globular sets without globular set condition](topic/topic_name.20for.20globular.20sets.20without.20globular.20set.20condition.html) (17 messages, latest: Jun 13 2022 at 00:17)
+* [name for globular sets without globular set condition](topic/topic_name.20for.20globular.20sets.20without.20globular.20set.20condition.html) (20 messages, latest: Jun 14 2022 at 08:39)
+* [pseudosections?](topic/topic_pseudosections.3F.html) (1 message, latest: Jun 14 2022 at 01:50)
 * [Isbell duality](topic/topic_Isbell.20duality.html) (6 messages, latest: Jun 12 2022 at 23:41)
 * [different version of Yoneda Lemma. Why does it work?](topic/topic_different.20version.20of.20Yoneda.20Lemma.2E.20Why.20does.20it.20work.3F.html) (8 messages, latest: Jun 11 2022 at 00:12)
 * [Composition of fibrations](topic/topic_Composition.20of.20fibrations.html) (2 messages, latest: Jun 10 2022 at 14:58)
@@ -690,4 +691,4 @@ permalink: /stream/229199-learning:-questions/index.html
 * [Algebra (Aluffi) exercises](topic/topic_Algebra.20(Aluffi).20exercises.html) (55 messages, latest: Mar 27 2020 at 23:38)
 * [What is category theory about?](topic/topic_What.20is.20category.20theory.20about.3F.html) (16 messages, latest: Mar 26 2020 at 16:03)
 
-<hr><p>Last updated: Jun 14 2022 at 00:57 UTC</p>
+<hr><p>Last updated: Jun 15 2022 at 00:55 UTC</p>
