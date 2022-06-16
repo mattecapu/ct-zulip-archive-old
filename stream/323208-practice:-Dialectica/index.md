@@ -9,7 +9,8 @@ permalink: /stream/323208-practice:-Dialectica/index.html
 
 ### Topics:
 
-* [Dialectica and games](topic/topic_Dialectica.20and.20games.html) (9 messages, latest: Jun 14 2022 at 20:43)
+* [meeting tomorrow?](topic/topic_meeting.20tomorrow.3F.html) (2 messages, latest: Jun 15 2022 at 23:56)
+* [Dialectica and games](topic/topic_Dialectica.20and.20games.html) (10 messages, latest: Jun 15 2022 at 22:37)
 * [implementation](topic/topic_implementation.html) (19 messages, latest: Jun 12 2022 at 18:57)
 * [welcome](topic/topic_welcome.html) (11 messages, latest: Jun 10 2022 at 10:01)
 * [puzzles](topic/topic_puzzles.html) (11 messages, latest: Jun 08 2022 at 19:51)
@@ -31,4 +32,4 @@ permalink: /stream/323208-practice:-Dialectica/index.html
 * [Dialectica for Friends video?](topic/topic_Dialectica.20for.20Friends.20video.3F.html) (4 messages, latest: May 03 2022 at 20:09)
 * [stream events](topic/topic_stream.20events.html) (5 messages, latest: Apr 28 2022 at 20:15)
 
-<hr><p>Last updated: Jun 15 2022 at 00:55 UTC</p>
+<hr><p>Last updated: Jun 16 2022 at 00:51 UTC</p>
