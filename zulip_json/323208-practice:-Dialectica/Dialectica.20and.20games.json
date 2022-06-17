@@ -58,5 +58,23 @@
         "id": 286284120,
         "sender_full_name": "Valeria de Paiva",
         "timestamp": 1655332663
+    },
+    {
+        "content": "<p><span class=\"user-mention\" data-user-id=\"498391\">@Colin Bloomfield</span> I think the way of resolving the dilemma of your game is that while the simultaneous and sequential games are <em>different</em> from Bob’s point of view, they’re actually the <em>same</em> from Alice’s point of view, no? For her, it can’t really affect her strategy whether Bob goes at the same time as or after her or not, which is why when you make the coherence game for her for either version, there’s no difference.</p>\n<p>But if you make the coherence game for Bob in the two different versions, you actually <em>do</em> get different coherence games, I think. Because in the sequential version, ^ <em>does</em> hold for (Alice picks 1, Bob picks 1) and (Alice picks 2, Bob picks 2): they form a coherent strategy because they don’t conflict, for even though Bob is making different moves, they are being made from different situations (Alice just picked 1 vs. Alice just picked 2). Whereas in the simultaneous version, ^ <em>does not</em> hold for (Alice picks 1, Bob picks 1) and (Alice picks 2, Bob picks 2), because with no information about what Alice is doing, Bob is in the exact same situation when it’s his turn to pick in both plays—and yet he makes different moves, so these plays are not coherent.</p>\n<p>So I think what counts as “the same position” when defining ^ is the key to encoding concurrency here: something like “move A occurs ‘before’ move B iff when modeled from B’s POV, altering both move A and move B still yields a coherent play wrt ^”</p>",
+        "id": 286304129,
+        "sender_full_name": "Nelson Niu",
+        "timestamp": 1655352690
+    },
+    {
+        "content": "<p>Actually maybe this is already what you’re saying with your fix! It’s just that it’s possible to have things look exactly the same from Alice’s POV while entirely different from Bob’s POV, and the difference is whether you want to just build different coherence games for each player, like I’m doing above, or somehow encode both players’ POVs in the “same” coherence game, like you did</p>",
+        "id": 286304267,
+        "sender_full_name": "Nelson Niu",
+        "timestamp": 1655352837
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"343715\">Nelson Niu</span> <a href=\"#narrow/stream/323208-practice.3A-Dialectica/topic/Dialectica.20and.20games/near/286304267\">said</a>:</p>\n<blockquote>\n<p>Actually maybe this is already what you’re saying with your fix! It’s just that it’s possible to have things look exactly the same from Alice’s POV while entirely different from Bob’s POV, and the difference is whether you want to just build different coherence games for each player, like I’m doing above, or somehow encode both players’ POVs in the “same” coherence game, like you did</p>\n</blockquote>\n<p>Thanks for thinking about my question/confusion. :) It sounds like you agree that viewing coherence games as I outlined (which may not be the only view) one cannot distinguish between all of the games: Alice plays first, they play simultaneously and Bob plays first. I wonder if another solution is to have tokens not only represent complete plays, but also partial plays? Then the two games outlined before can be distinguished by the fact that the sequential game will have additional tokens, partial plays where Alice has made a move and Bob hasn't yet responded. Still I kind of like the symmetry of having a coherence relation for Alice and for Bob and not having to deal with partial plays. Also it seems a natural notion of morphism between these 2-coherence games is to have a relation which preserves the first coherence relation and reflects the second one. Anyway before I think about this more, I agree with Valeria that I should learn about how the LL connectives of Coh provide a way of doing concurrency as well as look more closely at Winkel's paper.</p>\n<p>Added: I am  recalling now that I think the games model by Coh do not have scoring, and including partial play tokens for such games is fine. However, with scoring, things get more complicated if one wants to preserve the nice structure of taking the dual game.</p>",
+        "id": 286322534,
+        "sender_full_name": "Colin Bloomfield",
+        "timestamp": 1655368689
     }
 ]
