@@ -9,7 +9,7 @@ permalink: /stream/232161-learning:-recommendations/index.html
 
 ### Topics:
 
-* [linear logic as internal logic](topic/topic_linear.20logic.20as.20internal.20logic.html) (3 messages, latest: Jun 15 2022 at 15:31)
+* [linear logic as internal logic](topic/topic_linear.20logic.20as.20internal.20logic.html) (9 messages, latest: Jun 17 2022 at 22:23)
 * [where to go next?](topic/topic_where.20to.20go.20next.3F.html) (13 messages, latest: May 27 2022 at 03:31)
 * [learning homotopy type theory](topic/topic_learning.20homotopy.20type.20theory.html) (2 messages, latest: May 08 2022 at 13:44)
 * [Learning Homotopy Type Theory](topic/topic_Learning.20Homotopy.20Type.20Theory.html) (4 messages, latest: May 05 2022 at 05:53)
@@ -38,4 +38,4 @@ permalink: /stream/232161-learning:-recommendations/index.html
 * [string diagrams](topic/topic_string.20diagrams.html) (22 messages, latest: Apr 11 2020 at 21:49)
 * [stream events](topic/topic_stream.20events.html) (2 messages, latest: Apr 06 2020 at 18:16)
 
-<hr><p>Last updated: Jun 17 2022 at 00:44 UTC</p>
+<hr><p>Last updated: Jun 18 2022 at 00:50 UTC</p>

@@ -1,0 +1,70 @@
+---
+layout: archive
+title: Zulip Chat Archive
+permalink: /stream/322714-practice:-chemistry/topic/topic_dynamics.20of.20Petri.20nets.html
+---
+
+<h2>Stream: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/322714-practice:-chemistry/index.html">practice: chemistry</a></h2>
+<h3>Topic: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/322714-practice:-chemistry/topic/topic_dynamics.20of.20Petri.20nets.html">dynamics of Petri nets</a></h3>
+
+<hr>
+
+<base href="https://categorytheory.zulipchat.com/">
+
+{% raw %}
+
+<a name="286545198"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/322714-practice%3A%20chemistry/topic/dynamics%20of%20Petri%20nets/near/286545198" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Sam Tenka <a href="https://mattecapu.github.io/ct-zulip-archive/stream/322714-practice:-chemistry/topic/topic_dynamics.20of.20Petri.20nets.html#286545198">(Jun 17 2022 at 21:29)</a>:</h4>
+<p>hallo!</p>
+
+
+
+<a name="286545794"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/322714-practice%3A%20chemistry/topic/dynamics%20of%20Petri%20nets/near/286545794" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/322714-practice:-chemistry/topic/topic_dynamics.20of.20Petri.20nets.html#286545794">(Jun 17 2022 at 21:36)</a>:</h4>
+<p>Let me repost some things from our private conversation... we've decided it's better to talk publicly.</p>
+
+
+
+<a name="286545796"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/322714-practice%3A%20chemistry/topic/dynamics%20of%20Petri%20nets/near/286545796" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/322714-practice:-chemistry/topic/topic_dynamics.20of.20Petri.20nets.html#286545796">(Jun 17 2022 at 21:36)</a>:</h4>
+<p>I thought of a possibly fun experiment.   Randomly generated detailed balanced Petri nets with rates.   I don't actually know how to do this, but "detailed balance" is prerequisite for being physically realistic.  Definition here:</p>
+<ul>
+<li><a href="https://arxiv.org/abs/1001.0947">How far is complex balancing from detailed balancing?</a></li>
+</ul>
+<p>Then, run these as closed Petri nets and let them approach equilibrium.     (Or maybe just generate arbitrary Petri nets with rates, run them, and pick those that seem to approach equilibrium!)</p>
+
+
+
+<a name="286545812"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/322714-practice%3A%20chemistry/topic/dynamics%20of%20Petri%20nets/near/286545812" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/322714-practice:-chemistry/topic/topic_dynamics.20of.20Petri.20nets.html#286545812">(Jun 17 2022 at 21:36)</a>:</h4>
+<p>Then, treat them as open Petri nets by taking some species as inputs and some as outputs.   Start with initial conditions where the concentrations of all species lie at the equilibrium values (which we've computed).   Then, move the input and output concentrations further and further from equilibrium, and see if oscillatory or chaotic behavior kicks in.   ("Wiggles".)</p>
+
+
+
+<a name="286545830"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/322714-practice%3A%20chemistry/topic/dynamics%20of%20Petri%20nets/near/286545830" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/322714-practice:-chemistry/topic/topic_dynamics.20of.20Petri.20nets.html#286545830">(Jun 17 2022 at 21:36)</a>:</h4>
+<p>The idea would be to see if Prigogine's ideas are <em>generically</em> true, or only true for special open Petri nets.</p>
+
+
+
+<a name="286545913"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/322714-practice%3A%20chemistry/topic/dynamics%20of%20Petri%20nets/near/286545913" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/322714-practice:-chemistry/topic/topic_dynamics.20of.20Petri.20nets.html#286545913">(Jun 17 2022 at 21:38)</a>:</h4>
+<p>In terms of programming, one first step is to implement, preferably on AlgebraicPetri, the ability to do the dynamics of <em>open</em> Petri nets - the one discussed by Blake and me, where concentrations of certain "input" and "output" species are held fixed.</p>
+
+
+
+<a name="286545964"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/322714-practice%3A%20chemistry/topic/dynamics%20of%20Petri%20nets/near/286545964" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/322714-practice:-chemistry/topic/topic_dynamics.20of.20Petri.20nets.html#286545964">(Jun 17 2022 at 21:38)</a>:</h4>
+<p><span class="user-mention" data-user-id="276589">@Sophie Libkind</span> said it would take her ten minutes, or something like that.</p>
+
+
+
+<a name="286546193"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/322714-practice%3A%20chemistry/topic/dynamics%20of%20Petri%20nets/near/286546193" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/322714-practice:-chemistry/topic/topic_dynamics.20of.20Petri.20nets.html#286546193">(Jun 17 2022 at 21:41)</a>:</h4>
+<p>Once we've got this set up and we're able to "run" an open Petri net with rates, I would like to try some simple experiments where I take an open detailed balanced Petri net and run it with various concentrations of the input and output species, to see if oscillatory or chaotic behavior kicks in when we go far from equilibrium.</p>
+
+
+
+{% endraw %}
+
+<hr><p>Last updated: Jun 18 2022 at 00:50 UTC</p>

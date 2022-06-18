@@ -8,7 +8,7 @@ permalink: /index.html
 
 ## Streams:
 
-* [learning: questions](stream/229199-learning:-questions/index.html) (682 topics)
+* [learning: questions](stream/229199-learning:-questions/index.html) (683 topics)
 
 * [theory: category theory](stream/229136-theory:-category-theory/index.html) (277 topics)
 
@@ -64,6 +64,8 @@ permalink: /index.html
 
 * [philosophy](stream/229134-philosophy/index.html) (16 topics)
 
+* [practice: chemistry](stream/322714-practice:-chemistry/index.html) (16 topics)
+
 * [practice: communication](stream/233322-practice:-communication/index.html) (16 topics)
 
 * [theory: algebraic geometry](stream/231112-theory:-algebraic-geometry/index.html) (16 topics)
@@ -73,8 +75,6 @@ permalink: /index.html
 * [ACT@UCR seminar](stream/229966-ACT@UCR-seminar/index.html) (15 topics)
 
 * [learning: show and tell](stream/232162-learning:-show-and-tell/index.html) (15 topics)
-
-* [practice: chemistry](stream/322714-practice:-chemistry/index.html) (15 topics)
 
 * [seminar: ACT@UCR](stream/229966-seminar:-ACT@UCR/index.html) (15 topics)
 
@@ -162,4 +162,4 @@ permalink: /index.html
 
 * [theory: alternate presentations](stream/233122-theory:-alternate-presentations/index.html) (1 topic)
 
-<hr><p>Last updated: Jun 17 2022 at 00:44 UTC</p>
+<hr><p>Last updated: Jun 18 2022 at 00:50 UTC</p>
