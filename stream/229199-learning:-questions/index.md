@@ -9,8 +9,8 @@ permalink: /stream/229199-learning:-questions/index.html
 
 ### Topics:
 
-* [what's a "proper" intuition regarding adjunctions?](topic/topic_what's.20a.20.22proper.22.20intuition.20regarding.20adjunctions.3F.html) (2 messages, latest: Jun 17 2022 at 17:45)
-* [beginner questions](topic/topic_beginner.20questions.html) (615 messages, latest: Jun 17 2022 at 17:11)
+* [what's a "proper" intuition regarding adjunctions?](topic/topic_what's.20a.20.22proper.22.20intuition.20regarding.20adjunctions.3F.html) (6 messages, latest: Jun 19 2022 at 00:34)
+* [beginner questions](topic/topic_beginner.20questions.html) (621 messages, latest: Jun 18 2022 at 23:19)
 * [Unknown property of posets](topic/topic_Unknown.20property.20of.20posets.html) (2 messages, latest: Jun 16 2022 at 15:43)
 * [Isbell duality](topic/topic_Isbell.20duality.html) (21 messages, latest: Jun 15 2022 at 23:25)
 * [name for globular sets without globular set condition](topic/topic_name.20for.20globular.20sets.20without.20globular.20set.20condition.html) (20 messages, latest: Jun 14 2022 at 08:39)
@@ -693,4 +693,4 @@ permalink: /stream/229199-learning:-questions/index.html
 * [Algebra (Aluffi) exercises](topic/topic_Algebra.20(Aluffi).20exercises.html) (55 messages, latest: Mar 27 2020 at 23:38)
 * [What is category theory about?](topic/topic_What.20is.20category.20theory.20about.3F.html) (16 messages, latest: Mar 26 2020 at 16:03)
 
-<hr><p>Last updated: Jun 18 2022 at 00:50 UTC</p>
+<hr><p>Last updated: Jun 19 2022 at 00:49 UTC</p>
