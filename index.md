@@ -116,6 +116,8 @@ permalink: /index.html
 
 * [languages: espanol/Spanish](stream/231120-languages:-espanol/Spanish/index.html) (4 topics)
 
+* [languages: portugues](stream/303660-languages:-portugues/index.html) (4 topics)
+
 * [practice: neuroscience](stream/233925-practice:-neuroscience/index.html) (4 topics)
 
 * [practice: pedagogy](stream/295092-practice:-pedagogy/index.html) (4 topics)
@@ -123,8 +125,6 @@ permalink: /index.html
 * [Grothendieck](stream/307233-Grothendieck/index.html) (3 topics)
 
 * [expression](stream/247180-expression/index.html) (3 topics)
-
-* [languages: portugues](stream/303660-languages:-portugues/index.html) (3 topics)
 
 * [learning: id my structure](stream/311521-learning:-id-my-structure/index.html) (3 topics)
 
@@ -162,4 +162,4 @@ permalink: /index.html
 
 * [theory: alternate presentations](stream/233122-theory:-alternate-presentations/index.html) (1 topic)
 
-<hr><p>Last updated: Jun 19 2022 at 00:49 UTC</p>
+<hr><p>Last updated: Jun 20 2022 at 00:50 UTC</p>
