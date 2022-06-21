@@ -9,6 +9,7 @@ permalink: /stream/229199-learning:-questions/index.html
 
 ### Topics:
 
+* [f(x)=x, f'=0](topic/topic_f(x).3Dx.2C.20f'.3D0.html) (1 message, latest: Jun 20 2022 at 16:34)
 * [what's a "proper" intuition regarding adjunctions?](topic/topic_what's.20a.20.22proper.22.20intuition.20regarding.20adjunctions.3F.html) (7 messages, latest: Jun 19 2022 at 09:37)
 * [beginner questions](topic/topic_beginner.20questions.html) (623 messages, latest: Jun 19 2022 at 01:17)
 * [Unknown property of posets](topic/topic_Unknown.20property.20of.20posets.html) (2 messages, latest: Jun 16 2022 at 15:43)
@@ -693,4 +694,4 @@ permalink: /stream/229199-learning:-questions/index.html
 * [Algebra (Aluffi) exercises](topic/topic_Algebra.20(Aluffi).20exercises.html) (55 messages, latest: Mar 27 2020 at 23:38)
 * [What is category theory about?](topic/topic_What.20is.20category.20theory.20about.3F.html) (16 messages, latest: Mar 26 2020 at 16:03)
 
-<hr><p>Last updated: Jun 20 2022 at 00:50 UTC</p>
+<hr><p>Last updated: Jun 21 2022 at 00:50 UTC</p>
