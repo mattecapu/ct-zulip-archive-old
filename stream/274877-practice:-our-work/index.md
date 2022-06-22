@@ -9,8 +9,8 @@ permalink: /stream/274877-practice:-our-work/index.html
 
 ### Topics:
 
+* [John Baez](topic/topic_John.20Baez.html) (631 messages, latest: Jun 21 2022 at 12:47)
 * [David Roberts](topic/topic_David.20Roberts.html) (43 messages, latest: Jun 20 2022 at 18:15)
-* [John Baez](topic/topic_John.20Baez.html) (629 messages, latest: Jun 20 2022 at 01:29)
 * [motives](topic/topic_motives.html) (25 messages, latest: Jun 08 2022 at 17:35)
 * [Christian Williams](topic/topic_Christian.20Williams.html) (110 messages, latest: May 20 2022 at 00:44)
 * [Ivan Di Liberti](topic/topic_Ivan.20Di.20Liberti.html) (16 messages, latest: May 12 2022 at 15:15)
@@ -32,4 +32,4 @@ permalink: /stream/274877-practice:-our-work/index.html
 * [Conor Mc Bride](topic/topic_Conor.20Mc.20Bride.html) (60 messages, latest: Apr 08 2021 at 15:15)
 * [thoughts on sharing ideas](topic/topic_thoughts.20on.20sharing.20ideas.html) (20 messages, latest: Jan 31 2021 at 03:05)
 
-<hr><p>Last updated: Jun 21 2022 at 00:50 UTC</p>
+<hr><p>Last updated: Jun 22 2022 at 00:55 UTC</p>

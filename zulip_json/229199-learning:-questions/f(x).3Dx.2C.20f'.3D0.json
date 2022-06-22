@@ -4,5 +4,95 @@
         "id": 286817432,
         "sender_full_name": "Gurkenglas",
         "timestamp": 1655742865
+    },
+    {
+        "content": "<p>You're trying to add this to the differential ring of differentiable functions from the real to the reals, right? I'll call the ring R.<br>\nThe first assumption is going to be a problem; when you formally add an element to a ring, you take a free extension (generate all formal expressions involving the new element f and elements of R), and then quotient by the axioms you want the element to satisfy. The first axiom amounts to f-x =0, which identifies f with x and returns us to the original ring. You need a weaker condition to avoid that collapse.</p>",
+        "id": 286884006,
+        "sender_full_name": "Morgan Rogers (he/him)",
+        "timestamp": 1655801594
+    },
+    {
+        "content": "<p>f-x would have the same values as 0, but not the same derivative. f=g would no longer be equivalent to f(x)=g(x) for all x.</p>",
+        "id": 286908561,
+        "sender_full_name": "Gurkenglas",
+        "timestamp": 1655816208
+    },
+    {
+        "content": "<p>I understand the property that you want, I'm just telling you that the naive interpretation of the context you want to perform this extension in (rings with a differential), it isn't possible to obtain a meaningful extension with this property starting from the ordinary ring of differentiable functions on the reals. So you need to decide upon a synthetic setting where what you're saying (namely, that an element of the ring is not determined by its values) makes sense. I say \"synthetic\" because that kind of property reminds me of the basic objects of synthetic differential geometry.</p>",
+        "id": 286909910,
+        "sender_full_name": "Morgan Rogers (he/him)",
+        "timestamp": 1655816815
+    },
+    {
+        "content": "<p>I don't see what's wrong with taking the free extension R[f]. By not meaningful, do you mean that I won't find an interpretation of those formal expressions that doesn't feel <em>detached</em> from reality? Or are you claiming something formal?</p>",
+        "id": 286911364,
+        "sender_full_name": "Gurkenglas",
+        "timestamp": 1655817434
+    },
+    {
+        "content": "<p><em>detached</em> being a pun on Pytorch's <a href=\"https://pytorch.org/docs/stable/generated/torch.Tensor.detach.html\">detach</a> which behaves like f :) (Pytorch's automatic differentiation apparatus skips over f.)</p>",
+        "id": 286912202,
+        "sender_full_name": "Gurkenglas",
+        "timestamp": 1655817819
+    },
+    {
+        "content": "<p>I'm saying that as soon as you quotient by an ideal containing f-id, f gets identified with id (the unit of the ring of functions) and hence you end up with a trivial extension</p>",
+        "id": 286912216,
+        "sender_full_name": "Morgan Rogers (he/him)",
+        "timestamp": 1655817830
+    },
+    {
+        "content": "<p>I'm not trying to quotient by an ideal containing f-id, because the first axiom is f(x)=id(x), not f=id.</p>",
+        "id": 286912444,
+        "sender_full_name": "Gurkenglas",
+        "timestamp": 1655817926
+    },
+    {
+        "content": "<p>For the usual ring of functions on the reals, those are the same thing!!</p>",
+        "id": 286912720,
+        "sender_full_name": "Morgan Rogers (he/him)",
+        "timestamp": 1655818047
+    },
+    {
+        "content": "<p>That's why I'm extending it. Extensions are allowed to break such statements, yes? For example, there are two real numbers with absolute value 1, but more than two such complex numbers.</p>",
+        "id": 286912932,
+        "sender_full_name": "Gurkenglas",
+        "timestamp": 1655818137
+    },
+    {
+        "content": "<p>(I think we should also quotient out the identities arising from the chain rule.)</p>",
+        "id": 286913295,
+        "sender_full_name": "Gurkenglas",
+        "timestamp": 1655818297
+    },
+    {
+        "content": "<p>In analogy with your original example, if you adjoin to the reals an element satisfying x-1 = 0, then x gets identified with 1 and you get the reals back out again.</p>",
+        "id": 286914832,
+        "sender_full_name": "Morgan Rogers (he/him)",
+        "timestamp": 1655818984
+    },
+    {
+        "content": "<p>So I would suggest that you need to choose a bigger starting ring than the ring of functions from the reals to the reals.</p>",
+        "id": 286915073,
+        "sender_full_name": "Morgan Rogers (he/him)",
+        "timestamp": 1655819084
+    },
+    {
+        "content": "<p>I think you should start by specifying exactly what kind of algebraic structure you're talking about.</p>",
+        "id": 286915870,
+        "sender_full_name": "Reid Barton",
+        "timestamp": 1655819435
+    },
+    {
+        "content": "<p>I vaguely thought that the ring of dual numbers was <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"double-struck\">R</mi><mo stretchy=\"false\">[</mo><mi>ε</mi><mo stretchy=\"false\">]</mo><mi mathvariant=\"normal\">/</mi><mrow><mo fence=\"true\">&lt;</mo><msup><mi>ε</mi><mn>2</mn></msup><mo>=</mo><mn>0</mn><mo fence=\"true\">&gt;</mo></mrow></mrow><annotation encoding=\"application/x-tex\">\\mathbb R [\\varepsilon] / \\left&lt; \\varepsilon^2 = 0 \\right&gt;</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1.2em;vertical-align:-0.35em;\"></span><span class=\"mord mathbb\">R</span><span class=\"mopen\">[</span><span class=\"mord mathnormal\">ε</span><span class=\"mclose\">]</span><span class=\"mord\">/</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"minner\"><span class=\"mopen delimcenter\" style=\"top:0em;\"><span class=\"delimsizing size1\">⟨</span></span><span class=\"mord\"><span class=\"mord mathnormal\">ε</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.8141em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">2</span></span></span></span></span></span></span></span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mord\">0</span><span class=\"mclose delimcenter\" style=\"top:0em;\"><span class=\"delimsizing size1\">⟩</span></span></span></span></span></span>, but that would fail for the same reason, was I mistaken all along?</p>",
+        "id": 286919709,
+        "sender_full_name": "Jules Hedges",
+        "timestamp": 1655820922
+    },
+    {
+        "content": "<p>No, that works because you aren't insisting that the extension is a field.</p>",
+        "id": 286920289,
+        "sender_full_name": "Morgan Rogers (he/him)",
+        "timestamp": 1655821162
     }
 ]

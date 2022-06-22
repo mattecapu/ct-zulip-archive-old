@@ -9,7 +9,7 @@ permalink: /stream/245502-general:-positions/index.html
 
 ### Topics:
 
-* [NIST NRC Postdoc Opportunity](topic/topic_NIST.20NRC.20Postdoc.20Opportunity.html) (5 messages, latest: Jun 16 2022 at 19:20)
+* [NIST NRC Postdoc Opportunity](topic/topic_NIST.20NRC.20Postdoc.20Opportunity.html) (6 messages, latest: Jun 21 2022 at 14:07)
 * [Looking for a private tutor](topic/topic_Looking.20for.20a.20private.20tutor.html) (1 message, latest: Jun 14 2022 at 21:18)
 * [startup working on knowledge representation](topic/topic_startup.20working.20on.20knowledge.20representation.html) (1 message, latest: Jun 08 2022 at 15:34)
 * [Job at the University of Manchester](topic/topic_Job.20at.20the.20University.20of.20Manchester.html) (1 message, latest: Jun 05 2022 at 10:19)
@@ -60,4 +60,4 @@ permalink: /stream/245502-general:-positions/index.html
 * [PhD positions in Estonia](topic/topic_PhD.20positions.20in.20Estonia.html) (1 message, latest: Jun 27 2020 at 18:04)
 * [Companies that hire category people](topic/topic_Companies.20that.20hire.20category.20people.html) (2 messages, latest: May 13 2020 at 03:50)
 
-<hr><p>Last updated: Jun 21 2022 at 00:50 UTC</p>
+<hr><p>Last updated: Jun 22 2022 at 00:55 UTC</p>

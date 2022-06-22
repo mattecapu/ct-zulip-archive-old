@@ -19,6 +19,97 @@ permalink: /stream/229199-learning:-questions/topic/topic_f(x).3Dx.2C.20f'.3D0.h
 
 
 
+<a name="286884006"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/f%28x%29%3Dx%2C%20f%27%3D0/near/286884006" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Morgan Rogers (he/him) <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/topic_f(x).3Dx.2C.20f'.3D0.html#286884006">(Jun 21 2022 at 08:53)</a>:</h4>
+<p>You're trying to add this to the differential ring of differentiable functions from the real to the reals, right? I'll call the ring R.<br>
+The first assumption is going to be a problem; when you formally add an element to a ring, you take a free extension (generate all formal expressions involving the new element f and elements of R), and then quotient by the axioms you want the element to satisfy. The first axiom amounts to f-x =0, which identifies f with x and returns us to the original ring. You need a weaker condition to avoid that collapse.</p>
+
+
+
+<a name="286908561"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/f%28x%29%3Dx%2C%20f%27%3D0/near/286908561" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Gurkenglas <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/topic_f(x).3Dx.2C.20f'.3D0.html#286908561">(Jun 21 2022 at 12:56)</a>:</h4>
+<p>f-x would have the same values as 0, but not the same derivative. f=g would no longer be equivalent to f(x)=g(x) for all x.</p>
+
+
+
+<a name="286909910"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/f%28x%29%3Dx%2C%20f%27%3D0/near/286909910" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Morgan Rogers (he/him) <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/topic_f(x).3Dx.2C.20f'.3D0.html#286909910">(Jun 21 2022 at 13:06)</a>:</h4>
+<p>I understand the property that you want, I'm just telling you that the naive interpretation of the context you want to perform this extension in (rings with a differential), it isn't possible to obtain a meaningful extension with this property starting from the ordinary ring of differentiable functions on the reals. So you need to decide upon a synthetic setting where what you're saying (namely, that an element of the ring is not determined by its values) makes sense. I say "synthetic" because that kind of property reminds me of the basic objects of synthetic differential geometry.</p>
+
+
+
+<a name="286911364"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/f%28x%29%3Dx%2C%20f%27%3D0/near/286911364" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Gurkenglas <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/topic_f(x).3Dx.2C.20f'.3D0.html#286911364">(Jun 21 2022 at 13:17)</a>:</h4>
+<p>I don't see what's wrong with taking the free extension R[f]. By not meaningful, do you mean that I won't find an interpretation of those formal expressions that doesn't feel <em>detached</em> from reality? Or are you claiming something formal?</p>
+
+
+
+<a name="286912202"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/f%28x%29%3Dx%2C%20f%27%3D0/near/286912202" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Gurkenglas <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/topic_f(x).3Dx.2C.20f'.3D0.html#286912202">(Jun 21 2022 at 13:23)</a>:</h4>
+<p><em>detached</em> being a pun on Pytorch's <a href="https://pytorch.org/docs/stable/generated/torch.Tensor.detach.html">detach</a> which behaves like f :) (Pytorch's automatic differentiation apparatus skips over f.)</p>
+
+
+
+<a name="286912216"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/f%28x%29%3Dx%2C%20f%27%3D0/near/286912216" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Morgan Rogers (he/him) <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/topic_f(x).3Dx.2C.20f'.3D0.html#286912216">(Jun 21 2022 at 13:23)</a>:</h4>
+<p>I'm saying that as soon as you quotient by an ideal containing f-id, f gets identified with id (the unit of the ring of functions) and hence you end up with a trivial extension</p>
+
+
+
+<a name="286912444"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/f%28x%29%3Dx%2C%20f%27%3D0/near/286912444" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Gurkenglas <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/topic_f(x).3Dx.2C.20f'.3D0.html#286912444">(Jun 21 2022 at 13:25)</a>:</h4>
+<p>I'm not trying to quotient by an ideal containing f-id, because the first axiom is f(x)=id(x), not f=id.</p>
+
+
+
+<a name="286912720"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/f%28x%29%3Dx%2C%20f%27%3D0/near/286912720" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Morgan Rogers (he/him) <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/topic_f(x).3Dx.2C.20f'.3D0.html#286912720">(Jun 21 2022 at 13:27)</a>:</h4>
+<p>For the usual ring of functions on the reals, those are the same thing!!</p>
+
+
+
+<a name="286912932"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/f%28x%29%3Dx%2C%20f%27%3D0/near/286912932" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Gurkenglas <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/topic_f(x).3Dx.2C.20f'.3D0.html#286912932">(Jun 21 2022 at 13:28)</a>:</h4>
+<p>That's why I'm extending it. Extensions are allowed to break such statements, yes? For example, there are two real numbers with absolute value 1, but more than two such complex numbers.</p>
+
+
+
+<a name="286913295"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/f%28x%29%3Dx%2C%20f%27%3D0/near/286913295" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Gurkenglas <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/topic_f(x).3Dx.2C.20f'.3D0.html#286913295">(Jun 21 2022 at 13:31)</a>:</h4>
+<p>(I think we should also quotient out the identities arising from the chain rule.)</p>
+
+
+
+<a name="286914832"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/f%28x%29%3Dx%2C%20f%27%3D0/near/286914832" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Morgan Rogers (he/him) <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/topic_f(x).3Dx.2C.20f'.3D0.html#286914832">(Jun 21 2022 at 13:43)</a>:</h4>
+<p>In analogy with your original example, if you adjoin to the reals an element satisfying x-1 = 0, then x gets identified with 1 and you get the reals back out again.</p>
+
+
+
+<a name="286915073"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/f%28x%29%3Dx%2C%20f%27%3D0/near/286915073" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Morgan Rogers (he/him) <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/topic_f(x).3Dx.2C.20f'.3D0.html#286915073">(Jun 21 2022 at 13:44)</a>:</h4>
+<p>So I would suggest that you need to choose a bigger starting ring than the ring of functions from the reals to the reals.</p>
+
+
+
+<a name="286915870"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/f%28x%29%3Dx%2C%20f%27%3D0/near/286915870" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Reid Barton <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/topic_f(x).3Dx.2C.20f'.3D0.html#286915870">(Jun 21 2022 at 13:50)</a>:</h4>
+<p>I think you should start by specifying exactly what kind of algebraic structure you're talking about.</p>
+
+
+
+<a name="286919709"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/f%28x%29%3Dx%2C%20f%27%3D0/near/286919709" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Jules Hedges <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/topic_f(x).3Dx.2C.20f'.3D0.html#286919709">(Jun 21 2022 at 14:15)</a>:</h4>
+<p>I vaguely thought that the ring of dual numbers was <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="double-struck">R</mi><mo stretchy="false">[</mo><mi>ε</mi><mo stretchy="false">]</mo><mi mathvariant="normal">/</mi><mrow><mo fence="true">&lt;</mo><msup><mi>ε</mi><mn>2</mn></msup><mo>=</mo><mn>0</mn><mo fence="true">&gt;</mo></mrow></mrow><annotation encoding="application/x-tex">\mathbb R [\varepsilon] / \left&lt; \varepsilon^2 = 0 \right&gt;</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.2em;vertical-align:-0.35em;"></span><span class="mord mathbb">R</span><span class="mopen">[</span><span class="mord mathnormal">ε</span><span class="mclose">]</span><span class="mord">/</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="minner"><span class="mopen delimcenter" style="top:0em;"><span class="delimsizing size1">⟨</span></span><span class="mord"><span class="mord mathnormal">ε</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mord">0</span><span class="mclose delimcenter" style="top:0em;"><span class="delimsizing size1">⟩</span></span></span></span></span></span>, but that would fail for the same reason, was I mistaken all along?</p>
+
+
+
+<a name="286920289"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/f%28x%29%3Dx%2C%20f%27%3D0/near/286920289" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Morgan Rogers (he/him) <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/topic_f(x).3Dx.2C.20f'.3D0.html#286920289">(Jun 21 2022 at 14:19)</a>:</h4>
+<p>No, that works because you aren't insisting that the extension is a field.</p>
+
+
+
 {% endraw %}
 
-<hr><p>Last updated: Jun 21 2022 at 00:50 UTC</p>
+<hr><p>Last updated: Jun 22 2022 at 00:55 UTC</p>

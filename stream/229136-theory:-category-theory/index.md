@@ -9,6 +9,7 @@ permalink: /stream/229136-theory:-category-theory/index.html
 
 ### Topics:
 
+* [the walking monomorphism](topic/topic_the.20walking.20monomorphism.html) (6 messages, latest: Jun 21 2022 at 21:08)
 * [displaying transformations](topic/topic_displaying.20transformations.html) (11 messages, latest: Jun 10 2022 at 16:34)
 * [Endofunctors of FVec_{K}](topic/topic_Endofunctors.20of.20FVec_.7BK.7D.html) (10 messages, latest: Jun 07 2022 at 06:15)
 * ["untwisted" tabulation - what is this?](topic/topic_.22untwisted.22.20tabulation.20-.20what.20is.20this.3F.html) (23 messages, latest: Jun 06 2022 at 14:01)
@@ -287,4 +288,4 @@ permalink: /stream/229136-theory:-category-theory/index.html
 * [diagrams for application](topic/topic_diagrams.20for.20application.html) (13 messages, latest: Mar 24 2020 at 06:19)
 * [universal constructions](topic/topic_universal.20constructions.html) (8 messages, latest: Mar 23 2020 at 21:06)
 
-<hr><p>Last updated: Jun 21 2022 at 00:50 UTC</p>
+<hr><p>Last updated: Jun 22 2022 at 00:55 UTC</p>

@@ -9,6 +9,7 @@ permalink: /stream/233104-theory:-logic/index.html
 
 ### Topics:
 
+* [linear version of Yoneda?](topic/topic_linear.20version.20of.20Yoneda.3F.html) (1 message, latest: Jun 21 2022 at 21:44)
 * [Linear version of Yoneda?](topic/topic_Linear.20version.20of.20Yoneda.3F.html) (2 messages, latest: Jun 20 2022 at 22:03)
 * [double categories and logic](topic/topic_double.20categories.20and.20logic.html) (7 messages, latest: Jun 03 2022 at 08:04)
 * [2-dimensional essentially algebraic theories](topic/topic_2-dimensional.20essentially.20algebraic.20theories.html) (11 messages, latest: May 20 2022 at 05:16)
@@ -59,4 +60,4 @@ permalink: /stream/233104-theory:-logic/index.html
 * [Probability as logic](topic/topic_Probability.20as.20logic.html) (63 messages, latest: Apr 15 2020 at 12:33)
 * [stream events](topic/topic_stream.20events.html) (1 message, latest: Apr 10 2020 at 12:32)
 
-<hr><p>Last updated: Jun 21 2022 at 00:50 UTC</p>
+<hr><p>Last updated: Jun 22 2022 at 00:55 UTC</p>
