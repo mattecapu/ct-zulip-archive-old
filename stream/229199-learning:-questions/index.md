@@ -9,6 +9,7 @@ permalink: /stream/229199-learning:-questions/index.html
 
 ### Topics:
 
+* [Grothendieck topologies](topic/topic_Grothendieck.20topologies.html) (20 messages, latest: Jun 23 2022 at 20:04)
 * [f(x)=x, f'=0](topic/topic_f(x).3Dx.2C.20f'.3D0.html) (16 messages, latest: Jun 21 2022 at 14:19)
 * [what's a "proper" intuition regarding adjunctions?](topic/topic_what's.20a.20.22proper.22.20intuition.20regarding.20adjunctions.3F.html) (7 messages, latest: Jun 19 2022 at 09:37)
 * [beginner questions](topic/topic_beginner.20questions.html) (623 messages, latest: Jun 19 2022 at 01:17)
@@ -324,7 +325,6 @@ permalink: /stream/229199-learning:-questions/index.html
 * [elementary (∞,1)-topos](topic/topic_elementary.20(.E2.88.9E.2C1)-topos.html) (8 messages, latest: May 03 2021 at 15:25)
 * [Principle of equivalence and strict 2-categories](topic/topic_Principle.20of.20equivalence.20and.20strict.202-categories.html) (5 messages, latest: May 01 2021 at 23:45)
 * [Markov category question](topic/topic_Markov.20category.20question.html) (10 messages, latest: May 01 2021 at 13:59)
-* [Grothendieck topologies](topic/topic_Grothendieck.20topologies.html) (11 messages, latest: Apr 30 2021 at 15:53)
 * [Eilenberg–Moore bicategory](topic/topic_Eilenberg.E2.80.93Moore.20bicategory.html) (2 messages, latest: Apr 29 2021 at 19:47)
 * [string diagrams = tensor networks?](topic/topic_string.20diagrams.20.3D.20tensor.20networks.3F.html) (5 messages, latest: Apr 28 2021 at 12:20)
 * [String diagrams = tensor networks?](topic/topic_String.20diagrams.20.3D.20tensor.20networks.3F.html) (22 messages, latest: Apr 27 2021 at 23:29)
@@ -694,4 +694,4 @@ permalink: /stream/229199-learning:-questions/index.html
 * [Algebra (Aluffi) exercises](topic/topic_Algebra.20(Aluffi).20exercises.html) (55 messages, latest: Mar 27 2020 at 23:38)
 * [What is category theory about?](topic/topic_What.20is.20category.20theory.20about.3F.html) (16 messages, latest: Mar 26 2020 at 16:03)
 
-<hr><p>Last updated: Jun 23 2022 at 00:43 UTC</p>
+<hr><p>Last updated: Jun 24 2022 at 00:48 UTC</p>

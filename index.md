@@ -16,7 +16,7 @@ permalink: /index.html
 
 * [practice: applied ct](stream/229156-practice:-applied-ct/index.html) (135 topics)
 
-* [general: events](stream/229141-general:-events/index.html) (130 topics)
+* [general: events](stream/229141-general:-events/index.html) (131 topics)
 
 * [theory: topos theory](stream/230087-theory:-topos-theory/index.html) (77 topics)
 
@@ -50,13 +50,13 @@ permalink: /index.html
 
 * [general: values](stream/241990-general:-values/index.html) (25 topics)
 
+* [practice: Dialectica](stream/323208-practice:-Dialectica/index.html) (23 topics)
+
 * [practice: software](stream/229125-practice:-software/index.html) (23 topics)
 
 * [theory: probability](stream/253118-theory:-probability/index.html) (23 topics)
 
 * [learning: history of ideas](stream/232163-learning:-history-of-ideas/index.html) (22 topics)
-
-* [practice: Dialectica](stream/323208-practice:-Dialectica/index.html) (22 topics)
 
 * [practice: our work](stream/274877-practice:-our-work/index.html) (22 topics)
 
@@ -162,4 +162,4 @@ permalink: /index.html
 
 * [theory: alternate presentations](stream/233122-theory:-alternate-presentations/index.html) (1 topic)
 
-<hr><p>Last updated: Jun 23 2022 at 00:43 UTC</p>
+<hr><p>Last updated: Jun 24 2022 at 00:48 UTC</p>
