@@ -9,7 +9,7 @@ permalink: /stream/322714-practice:-chemistry/index.html
 
 ### Topics:
 
-* [invariants of Petri nets](topic/topic_invariants.20of.20Petri.20nets.html) (13 messages, latest: Jun 23 2022 at 07:49)
+* [invariants of Petri nets](topic/topic_invariants.20of.20Petri.20nets.html) (18 messages, latest: Jun 24 2022 at 17:28)
 * [dynamics of Petri nets](topic/topic_dynamics.20of.20Petri.20nets.html) (14 messages, latest: Jun 20 2022 at 19:00)
 * [open Petri net questions](topic/topic_open.20Petri.20net.20questions.html) (64 messages, latest: Jun 14 2022 at 18:35)
 * [problems to work on](topic/topic_problems.20to.20work.20on.html) (43 messages, latest: Jun 13 2022 at 18:00)
@@ -27,4 +27,4 @@ permalink: /stream/322714-practice:-chemistry/index.html
 * [moving this stream?](topic/topic_moving.20this.20stream.3F.html) (9 messages, latest: May 03 2022 at 02:56)
 * [Graph structure theory](topic/topic_Graph.20structure.20theory.html) (1 message, latest: Apr 26 2022 at 08:42)
 
-<hr><p>Last updated: Jun 24 2022 at 00:48 UTC</p>
+<hr><p>Last updated: Jun 25 2022 at 00:49 UTC</p>

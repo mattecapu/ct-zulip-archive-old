@@ -9,7 +9,10 @@ permalink: /stream/229199-learning:-questions/index.html
 
 ### Topics:
 
-* [Grothendieck topologies](topic/topic_Grothendieck.20topologies.html) (20 messages, latest: Jun 23 2022 at 20:04)
+* [On the Concept of Ologs](topic/topic_On.20the.20Concept.20of.20Ologs.html) (3 messages, latest: Jun 25 2022 at 00:44)
+* [Grothendieck topologies](topic/topic_Grothendieck.20topologies.html) (30 messages, latest: Jun 24 2022 at 23:41)
+* [finding an old paper of Gray](topic/topic_finding.20an.20old.20paper.20of.20Gray.html) (3 messages, latest: Jun 24 2022 at 19:04)
+* [weak/lax fibers of a functor](topic/topic_weak.2Flax.20fibers.20of.20a.20functor.html) (39 messages, latest: Jun 24 2022 at 16:39)
 * [f(x)=x, f'=0](topic/topic_f(x).3Dx.2C.20f'.3D0.html) (16 messages, latest: Jun 21 2022 at 14:19)
 * [what's a "proper" intuition regarding adjunctions?](topic/topic_what's.20a.20.22proper.22.20intuition.20regarding.20adjunctions.3F.html) (7 messages, latest: Jun 19 2022 at 09:37)
 * [beginner questions](topic/topic_beginner.20questions.html) (623 messages, latest: Jun 19 2022 at 01:17)
@@ -22,7 +25,6 @@ permalink: /stream/229199-learning:-questions/index.html
 * [Composition of Fibrations](topic/topic_Composition.20of.20Fibrations.html) (4 messages, latest: Jun 09 2022 at 22:05)
 * [Adjoint restricted to subcategories](topic/topic_Adjoint.20restricted.20to.20subcategories.html) (3 messages, latest: Jun 09 2022 at 02:36)
 * [completion, free completion, free, -ization](topic/topic_completion.2C.20free.20completion.2C.20free.2C.20-ization.html) (39 messages, latest: Jun 05 2022 at 15:55)
-* [weak/lax fibers of a functor](topic/topic_weak.2Flax.20fibers.20of.20a.20functor.html) (32 messages, latest: Jun 02 2022 at 17:46)
 * [why specified isomorphisms?](topic/topic_why.20specified.20isomorphisms.3F.html) (2 messages, latest: Jun 02 2022 at 17:39)
 * [a monadicity theorem](topic/topic_a.20monadicity.20theorem.html) (11 messages, latest: Jun 01 2022 at 23:18)
 * [Why specified isomorphisms?](topic/topic_Why.20specified.20isomorphisms.3F.html) (21 messages, latest: Jun 01 2022 at 13:40)
@@ -694,4 +696,4 @@ permalink: /stream/229199-learning:-questions/index.html
 * [Algebra (Aluffi) exercises](topic/topic_Algebra.20(Aluffi).20exercises.html) (55 messages, latest: Mar 27 2020 at 23:38)
 * [What is category theory about?](topic/topic_What.20is.20category.20theory.20about.3F.html) (16 messages, latest: Mar 26 2020 at 16:03)
 
-<hr><p>Last updated: Jun 24 2022 at 00:48 UTC</p>
+<hr><p>Last updated: Jun 25 2022 at 00:49 UTC</p>
