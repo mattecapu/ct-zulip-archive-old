@@ -162,4 +162,4 @@ permalink: /index.html
 
 * [theory: alternate presentations](stream/233122-theory:-alternate-presentations/index.html) (1 topic)
 
-<hr><p>Last updated: Jun 26 2022 at 00:54 UTC</p>
+<hr><p>Last updated: Jun 27 2022 at 00:55 UTC</p>
