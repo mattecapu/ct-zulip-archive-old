@@ -22,9 +22,9 @@ permalink: /index.html
 
 * [conference: ACT 2020](stream/243068-conference:-ACT-2020/index.html) (62 topics)
 
-* [ACT 2020](stream/243068-ACT-2020/index.html) (61 topics)
+* [seminar: Topos Colloquium](stream/269484-seminar:-Topos-Colloquium/index.html) (62 topics)
 
-* [seminar: Topos Colloquium](stream/269484-seminar:-Topos-Colloquium/index.html) (61 topics)
+* [ACT 2020](stream/243068-ACT-2020/index.html) (61 topics)
 
 * [theory: algebraic topology & homological algebra](stream/241590-theory:-algebraic-topology-&-homological-algebra/index.html) (58 topics)
 
@@ -162,4 +162,4 @@ permalink: /index.html
 
 * [theory: alternate presentations](stream/233122-theory:-alternate-presentations/index.html) (1 topic)
 
-<hr><p>Last updated: Jun 27 2022 at 00:55 UTC</p>
+<hr><p>Last updated: Jun 28 2022 at 00:54 UTC</p>
