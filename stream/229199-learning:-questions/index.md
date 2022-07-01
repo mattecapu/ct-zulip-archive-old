@@ -9,7 +9,7 @@ permalink: /stream/229199-learning:-questions/index.html
 
 ### Topics:
 
-* [On the Concept of Ologs](topic/topic_On.20the.20Concept.20of.20Ologs.html) (7 messages, latest: Jun 27 2022 at 13:44)
+* [On the Concept of Ologs](topic/topic_On.20the.20Concept.20of.20Ologs.html) (10 messages, latest: Jun 30 2022 at 03:10)
 * [Confusion on the Nature of Isomorphisms in HomSet](topic/topic_Confusion.20on.20the.20Nature.20of.20Isomorphisms.20in.20HomSet.html) (10 messages, latest: Jun 25 2022 at 21:55)
 * [Grothendieck topologies](topic/topic_Grothendieck.20topologies.html) (30 messages, latest: Jun 24 2022 at 23:41)
 * [finding an old paper of Gray](topic/topic_finding.20an.20old.20paper.20of.20Gray.html) (3 messages, latest: Jun 24 2022 at 19:04)
@@ -697,4 +697,4 @@ permalink: /stream/229199-learning:-questions/index.html
 * [Algebra (Aluffi) exercises](topic/topic_Algebra.20(Aluffi).20exercises.html) (55 messages, latest: Mar 27 2020 at 23:38)
 * [What is category theory about?](topic/topic_What.20is.20category.20theory.20about.3F.html) (16 messages, latest: Mar 26 2020 at 16:03)
 
-<hr><p>Last updated: Jun 30 2022 at 00:47 UTC</p>
+<hr><p>Last updated: Jul 01 2022 at 00:59 UTC</p>
