@@ -9,6 +9,7 @@ permalink: /stream/269484-seminar:-Topos-Colloquium/index.html
 
 ### Topics:
 
+* [Josef Urban: Combining learning and deduction over \[...\]](topic/topic_Josef.20Urban.3A.20Combining.20learning.20and.20deduction.20over.20.5B.2E.2E.2E.5D.html) (1 message, latest: Jul 04 2022 at 18:56)
 * [Noam Zeilberger: Parsing as a lifting problem and ...](topic/topic_Noam.20Zeilberger.3A.20Parsing.20as.20a.20lifting.20problem.20and.20.2E.2E.2E.html) (1 message, latest: Jun 27 2022 at 15:42)
 * [Moshe Vardi: Ethics Washing in AI](topic/topic_Moshe.20Vardi.3A.20Ethics.20Washing.20in.20AI.html) (1 message, latest: Jun 20 2022 at 16:04)
 * [Christoph Benzmueller: Logico-pluralistic exploration \[...\]](topic/topic_Christoph.20Benzmueller.3A.20Logico-pluralistic.20exploration.20.5B.2E.2E.2E.5D.html) (1 message, latest: Jun 13 2022 at 21:47)
@@ -72,4 +73,4 @@ permalink: /stream/269484-seminar:-Topos-Colloquium/index.html
 * [Gunnar E. Carlsson: "Relative topology, motion planning, .."](topic/topic_Gunnar.20E.2E.20Carlsson.3A.20.22Relative.20topology.2C.20motion.20planning.2C.20.2E.2E.22.html) (4 messages, latest: Feb 18 2021 at 16:45)
 * [Richard Garner: "Comodels of an algebraic theory"](topic/topic_Richard.20Garner.3A.20.22Comodels.20of.20an.20algebraic.20theory.22.html) (27 messages, latest: Feb 11 2021 at 22:36)
 
-<hr><p>Last updated: Jul 04 2022 at 00:57 UTC</p>
+<hr><p>Last updated: Jul 05 2022 at 00:52 UTC</p>
