@@ -9,6 +9,7 @@ permalink: /stream/229141-general:-events/index.html
 
 ### Topics:
 
+* [ACT 2022](topic/topic_ACT.202022.html) (4 messages, latest: Jul 05 2022 at 10:16)
 * [SYCO 9, Como](topic/topic_SYCO.209.2C.20Como.html) (3 messages, latest: Jul 01 2022 at 16:40)
 * [ItaCa Fest 2022](topic/topic_ItaCa.20Fest.202022.html) (9 messages, latest: Jun 30 2022 at 08:59)
 * [Intercats](topic/topic_Intercats.html) (38 messages, latest: Jun 28 2022 at 15:49)
@@ -16,7 +17,6 @@ permalink: /stream/229141-general:-events/index.html
 * [Grothendieck conference](topic/topic_Grothendieck.20conference.html) (21 messages, latest: Jun 22 2022 at 13:54)
 * [Shannon entropy from category theory](topic/topic_Shannon.20entropy.20from.20category.20theory.html) (4 messages, latest: Jun 15 2022 at 04:35)
 * [GReTA seminar](topic/topic_GReTA.20seminar.html) (3 messages, latest: Jun 15 2022 at 04:21)
-* [ACT 2022](topic/topic_ACT.202022.html) (3 messages, latest: Jun 10 2022 at 15:01)
 * [ICRA 2022 Workshop on Compositional Robotics](topic/topic_ICRA.202022.20Workshop.20on.20Compositional.20Robotics.html) (7 messages, latest: May 28 2022 at 15:39)
 * [Structure meets Power Workshop, CFP](topic/topic_Structure.20meets.20Power.20Workshop.2C.20CFP.html) (2 messages, latest: May 13 2022 at 15:06)
 * [Categorical Semantics of Entropy](topic/topic_Categorical.20Semantics.20of.20Entropy.html) (5 messages, latest: May 12 2022 at 18:39)
@@ -142,4 +142,4 @@ permalink: /stream/229141-general:-events/index.html
 * [April 1st: ACT@UCR](topic/topic_April.201st.3A.20ACT.40UCR.html) (3 messages, latest: Mar 26 2020 at 23:58)
 * [Google Sites problem](topic/topic_Google.20Sites.20problem.html) (4 messages, latest: Mar 25 2020 at 04:29)
 
-<hr><p>Last updated: Jul 05 2022 at 00:52 UTC</p>
+<hr><p>Last updated: Jul 06 2022 at 00:56 UTC</p>
