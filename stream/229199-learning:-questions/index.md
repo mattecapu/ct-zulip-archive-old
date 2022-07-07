@@ -9,6 +9,7 @@ permalink: /stream/229199-learning:-questions/index.html
 
 ### Topics:
 
+* [Isbell duality](topic/topic_Isbell.20duality.html) (24 messages, latest: Jul 06 2022 at 19:12)
 * [On the Concept of Ologs](topic/topic_On.20the.20Concept.20of.20Ologs.html) (10 messages, latest: Jun 30 2022 at 03:10)
 * [Confusion on the Nature of Isomorphisms in HomSet](topic/topic_Confusion.20on.20the.20Nature.20of.20Isomorphisms.20in.20HomSet.html) (10 messages, latest: Jun 25 2022 at 21:55)
 * [Grothendieck topologies](topic/topic_Grothendieck.20topologies.html) (30 messages, latest: Jun 24 2022 at 23:41)
@@ -18,7 +19,6 @@ permalink: /stream/229199-learning:-questions/index.html
 * [what's a "proper" intuition regarding adjunctions?](topic/topic_what's.20a.20.22proper.22.20intuition.20regarding.20adjunctions.3F.html) (7 messages, latest: Jun 19 2022 at 09:37)
 * [beginner questions](topic/topic_beginner.20questions.html) (623 messages, latest: Jun 19 2022 at 01:17)
 * [Unknown property of posets](topic/topic_Unknown.20property.20of.20posets.html) (2 messages, latest: Jun 16 2022 at 15:43)
-* [Isbell duality](topic/topic_Isbell.20duality.html) (21 messages, latest: Jun 15 2022 at 23:25)
 * [name for globular sets without globular set condition](topic/topic_name.20for.20globular.20sets.20without.20globular.20set.20condition.html) (20 messages, latest: Jun 14 2022 at 08:39)
 * [pseudosections?](topic/topic_pseudosections.3F.html) (1 message, latest: Jun 14 2022 at 01:50)
 * [different version of Yoneda Lemma. Why does it work?](topic/topic_different.20version.20of.20Yoneda.20Lemma.2E.20Why.20does.20it.20work.3F.html) (8 messages, latest: Jun 11 2022 at 00:12)
@@ -697,4 +697,4 @@ permalink: /stream/229199-learning:-questions/index.html
 * [Algebra (Aluffi) exercises](topic/topic_Algebra.20(Aluffi).20exercises.html) (55 messages, latest: Mar 27 2020 at 23:38)
 * [What is category theory about?](topic/topic_What.20is.20category.20theory.20about.3F.html) (16 messages, latest: Mar 26 2020 at 16:03)
 
-<hr><p>Last updated: Jul 06 2022 at 00:56 UTC</p>
+<hr><p>Last updated: Jul 07 2022 at 00:55 UTC</p>

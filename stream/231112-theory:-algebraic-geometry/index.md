@@ -9,6 +9,7 @@ permalink: /stream/231112-theory:-algebraic-geometry/index.html
 
 ### Topics:
 
+* [locally representable?](topic/topic_locally.20representable.3F.html) (9 messages, latest: Jul 06 2022 at 14:46)
 * [motives](topic/topic_motives.html) (226 messages, latest: Jun 07 2022 at 07:23)
 * [homological equivalence of curves](topic/topic_homological.20equivalence.20of.20curves.html) (23 messages, latest: May 10 2022 at 23:36)
 * [Functorial algebraic geometry notes](topic/topic_Functorial.20algebraic.20geometry.20notes.html) (18 messages, latest: Aug 18 2021 at 10:39)
@@ -26,4 +27,4 @@ permalink: /stream/231112-theory:-algebraic-geometry/index.html
 * [stream events](topic/topic_stream.20events.html) (15 messages, latest: Apr 06 2020 at 05:56)
 * [stokes' theorem as a coend](topic/topic_stokes'.20theorem.20as.20a.20coend.html) (3 messages, latest: Apr 02 2020 at 17:58)
 
-<hr><p>Last updated: Jul 06 2022 at 00:56 UTC</p>
+<hr><p>Last updated: Jul 07 2022 at 00:55 UTC</p>

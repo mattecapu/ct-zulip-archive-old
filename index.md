@@ -28,7 +28,7 @@ permalink: /index.html
 
 * [theory: algebraic topology & homological algebra](stream/241590-theory:-algebraic-topology-&-homological-algebra/index.html) (58 topics)
 
-* [general: mathematics](stream/266967-general:-mathematics/index.html) (54 topics)
+* [general: mathematics](stream/266967-general:-mathematics/index.html) (55 topics)
 
 * [practice: thermodynamics](stream/306433-practice:-thermodynamics/index.html) (51 topics)
 
@@ -64,11 +64,11 @@ permalink: /index.html
 
 * [practice: chemistry](stream/322714-practice:-chemistry/index.html) (17 topics)
 
+* [theory: algebraic geometry](stream/231112-theory:-algebraic-geometry/index.html) (17 topics)
+
 * [philosophy](stream/229134-philosophy/index.html) (16 topics)
 
 * [practice: communication](stream/233322-practice:-communication/index.html) (16 topics)
-
-* [theory: algebraic geometry](stream/231112-theory:-algebraic-geometry/index.html) (16 topics)
 
 * [theory: physics](stream/251538-theory:-physics/index.html) (16 topics)
 
@@ -162,4 +162,4 @@ permalink: /index.html
 
 * [theory: alternate presentations](stream/233122-theory:-alternate-presentations/index.html) (1 topic)
 
-<hr><p>Last updated: Jul 06 2022 at 00:56 UTC</p>
+<hr><p>Last updated: Jul 07 2022 at 00:55 UTC</p>
