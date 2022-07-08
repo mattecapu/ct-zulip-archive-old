@@ -9,6 +9,7 @@ permalink: /stream/231124-languages:-francais/French/index.html
 
 ### Topics:
 
+* [off topic - Gens de Confiance](topic/topic_off.20topic.20-.20Gens.20de.20Confiance.html) (1 message, latest: Jul 07 2022 at 11:45)
 * [à Paris](topic/topic_.C3.A0.20Paris.html) (2 messages, latest: Jan 11 2022 at 12:40)
 * [bienvenu!](topic/topic_bienvenu!.html) (29 messages, latest: Jan 20 2021 at 15:37)
 * [stream events](topic/topic_stream.20events.html) (10 messages, latest: Dec 14 2020 at 21:50)
@@ -17,4 +18,4 @@ permalink: /stream/231124-languages:-francais/French/index.html
 * [chocolatine ou pain au chocolat](topic/topic_chocolatine.20ou.20pain.20au.20chocolat.html) (16 messages, latest: Apr 07 2020 at 12:33)
 * [cosmos étymologie](topic/topic_cosmos.20.C3.A9tymologie.html) (2 messages, latest: Apr 01 2020 at 11:50)
 
-<hr><p>Last updated: Jul 07 2022 at 00:55 UTC</p>
+<hr><p>Last updated: Jul 08 2022 at 00:55 UTC</p>

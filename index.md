@@ -96,11 +96,11 @@ permalink: /index.html
 
 * [theory: concurrency](stream/235484-theory:-concurrency/index.html) (9 topics)
 
+* [languages: francais/French](stream/231124-languages:-francais/French/index.html) (8 topics)
+
 * [languages: italiano/Italian](stream/231111-languages:-italiano/Italian/index.html) (8 topics)
 
 * [theory: monoids](stream/231815-theory:-monoids/index.html) (8 topics)
-
-* [languages: francais/French](stream/231124-languages:-francais/French/index.html) (7 topics)
 
 * [learning: statistics reading group](stream/245528-learning:-statistics-reading-group/index.html) (7 topics)
 
@@ -162,4 +162,4 @@ permalink: /index.html
 
 * [theory: alternate presentations](stream/233122-theory:-alternate-presentations/index.html) (1 topic)
 
-<hr><p>Last updated: Jul 07 2022 at 00:55 UTC</p>
+<hr><p>Last updated: Jul 08 2022 at 00:55 UTC</p>

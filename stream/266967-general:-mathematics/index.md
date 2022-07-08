@@ -9,7 +9,7 @@ permalink: /stream/266967-general:-mathematics/index.html
 
 ### Topics:
 
-* [What to look for in a category of algebraic structures?](topic/topic_What.20to.20look.20for.20in.20a.20category.20of.20algebraic.20structures.3F.html) (8 messages, latest: Jul 06 2022 at 21:41)
+* [What to look for in a category of algebraic structures?](topic/topic_What.20to.20look.20for.20in.20a.20category.20of.20algebraic.20structures.3F.html) (16 messages, latest: Jul 07 2022 at 19:53)
 * [Category of infinity-metric spaces (references?)](topic/topic_Category.20of.20infinity-metric.20spaces.20(references.3F).html) (9 messages, latest: May 10 2022 at 19:00)
 * [stream events](topic/topic_stream.20events.html) (1 message, latest: May 09 2022 at 20:34)
 * [monomial endofunctors](topic/topic_monomial.20endofunctors.html) (3 messages, latest: Apr 21 2022 at 16:16)
@@ -65,4 +65,4 @@ permalink: /stream/266967-general:-mathematics/index.html
 * [the 600-cell](topic/topic_the.20600-cell.html) (5 messages, latest: Dec 01 2020 at 16:35)
 * [hermitian matrix over normed division algebra](topic/topic_hermitian.20matrix.20over.20normed.20division.20algebra.html) (8 messages, latest: Sep 28 2020 at 21:19)
 
-<hr><p>Last updated: Jul 07 2022 at 00:55 UTC</p>
+<hr><p>Last updated: Jul 08 2022 at 00:55 UTC</p>

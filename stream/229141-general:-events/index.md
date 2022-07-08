@@ -9,7 +9,7 @@ permalink: /stream/229141-general:-events/index.html
 
 ### Topics:
 
-* [SYCO 9, Como](topic/topic_SYCO.209.2C.20Como.html) (4 messages, latest: Jul 06 2022 at 02:44)
+* [SYCO 9, Como](topic/topic_SYCO.209.2C.20Como.html) (5 messages, latest: Jul 07 2022 at 12:25)
 * [ACT 2022](topic/topic_ACT.202022.html) (4 messages, latest: Jul 05 2022 at 10:16)
 * [ItaCa Fest 2022](topic/topic_ItaCa.20Fest.202022.html) (9 messages, latest: Jun 30 2022 at 08:59)
 * [Intercats](topic/topic_Intercats.html) (38 messages, latest: Jun 28 2022 at 15:49)
@@ -142,4 +142,4 @@ permalink: /stream/229141-general:-events/index.html
 * [April 1st: ACT@UCR](topic/topic_April.201st.3A.20ACT.40UCR.html) (3 messages, latest: Mar 26 2020 at 23:58)
 * [Google Sites problem](topic/topic_Google.20Sites.20problem.html) (4 messages, latest: Mar 25 2020 at 04:29)
 
-<hr><p>Last updated: Jul 07 2022 at 00:55 UTC</p>
+<hr><p>Last updated: Jul 08 2022 at 00:55 UTC</p>
