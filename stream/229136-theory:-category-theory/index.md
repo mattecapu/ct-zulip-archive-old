@@ -9,8 +9,9 @@ permalink: /stream/229136-theory:-category-theory/index.html
 
 ### Topics:
 
+* [I need a name for the following](topic/topic_I.20need.20a.20name.20for.20the.20following.html) (7 messages, latest: Jul 11 2022 at 17:34)
+* [Kan enriched categories and localisation](topic/topic_Kan.20enriched.20categories.20and.20localisation.html) (3 messages, latest: Jul 11 2022 at 11:53)
 * [displaying transformations](topic/topic_displaying.20transformations.html) (20 messages, latest: Jul 06 2022 at 09:31)
-* [Kan enriched categories and localisation](topic/topic_Kan.20enriched.20categories.20and.20localisation.html) (2 messages, latest: Jul 04 2022 at 16:39)
 * [the walking monomorphism](topic/topic_the.20walking.20monomorphism.html) (7 messages, latest: Jun 28 2022 at 19:24)
 * [Endofunctors of FVec_{K}](topic/topic_Endofunctors.20of.20FVec_.7BK.7D.html) (10 messages, latest: Jun 07 2022 at 06:15)
 * ["untwisted" tabulation - what is this?](topic/topic_.22untwisted.22.20tabulation.20-.20what.20is.20this.3F.html) (23 messages, latest: Jun 06 2022 at 14:01)
@@ -289,4 +290,4 @@ permalink: /stream/229136-theory:-category-theory/index.html
 * [diagrams for application](topic/topic_diagrams.20for.20application.html) (13 messages, latest: Mar 24 2020 at 06:19)
 * [universal constructions](topic/topic_universal.20constructions.html) (8 messages, latest: Mar 23 2020 at 21:06)
 
-<hr><p>Last updated: Jul 11 2022 at 00:50 UTC</p>
+<hr><p>Last updated: Jul 12 2022 at 00:56 UTC</p>

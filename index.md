@@ -10,7 +10,7 @@ permalink: /index.html
 
 * [learning: questions](stream/229199-learning:-questions/index.html) (690 topics)
 
-* [theory: category theory](stream/229136-theory:-category-theory/index.html) (279 topics)
+* [theory: category theory](stream/229136-theory:-category-theory/index.html) (280 topics)
 
 * [general](stream/229111-general/index.html) (229 topics)
 
@@ -30,9 +30,9 @@ permalink: /index.html
 
 * [general: mathematics](stream/266967-general:-mathematics/index.html) (55 topics)
 
-* [practice: thermodynamics](stream/306433-practice:-thermodynamics/index.html) (51 topics)
+* [general: positions](stream/245502-general:-positions/index.html) (51 topics)
 
-* [general: positions](stream/245502-general:-positions/index.html) (50 topics)
+* [practice: thermodynamics](stream/306433-practice:-thermodynamics/index.html) (51 topics)
 
 * [theory: logic](stream/233104-theory:-logic/index.html) (50 topics)
 
@@ -152,6 +152,8 @@ permalink: /index.html
 
 * [complete development of computable topology](stream/299920-complete-development-of-computable-topology/index.html) (1 topic)
 
+* [conference: ACT22](stream/330541-conference:-ACT22/index.html) (1 topic)
+
 * [general: job postings](stream/231377-general:-job-postings/index.html) (1 topic)
 
 * [general: welcome](stream/323257-general:-welcome/index.html) (1 topic)
@@ -162,4 +164,4 @@ permalink: /index.html
 
 * [theory: alternate presentations](stream/233122-theory:-alternate-presentations/index.html) (1 topic)
 
-<hr><p>Last updated: Jul 11 2022 at 00:50 UTC</p>
+<hr><p>Last updated: Jul 12 2022 at 00:56 UTC</p>

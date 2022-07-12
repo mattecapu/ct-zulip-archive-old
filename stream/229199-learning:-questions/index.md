@@ -9,7 +9,7 @@ permalink: /stream/229199-learning:-questions/index.html
 
 ### Topics:
 
-* [where is Lawvere's book on algebra?](topic/topic_where.20is.20Lawvere's.20book.20on.20algebra.3F.html) (3 messages, latest: Jul 10 2022 at 22:18)
+* [where is Lawvere's book on algebra?](topic/topic_where.20is.20Lawvere's.20book.20on.20algebra.3F.html) (10 messages, latest: Jul 11 2022 at 14:54)
 * [comma category topos](topic/topic_comma.20category.20topos.html) (6 messages, latest: Jul 10 2022 at 04:48)
 * [Comma Category Topos](topic/topic_Comma.20Category.20Topos.html) (1 message, latest: Jul 08 2022 at 22:29)
 * [Isbell duality](topic/topic_Isbell.20duality.html) (24 messages, latest: Jul 06 2022 at 19:12)
@@ -700,4 +700,4 @@ permalink: /stream/229199-learning:-questions/index.html
 * [Algebra (Aluffi) exercises](topic/topic_Algebra.20(Aluffi).20exercises.html) (55 messages, latest: Mar 27 2020 at 23:38)
 * [What is category theory about?](topic/topic_What.20is.20category.20theory.20about.3F.html) (16 messages, latest: Mar 26 2020 at 16:03)
 
-<hr><p>Last updated: Jul 11 2022 at 00:50 UTC</p>
+<hr><p>Last updated: Jul 12 2022 at 00:56 UTC</p>
