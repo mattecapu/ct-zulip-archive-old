@@ -9,6 +9,7 @@ permalink: /stream/229136-theory:-category-theory/index.html
 
 ### Topics:
 
+* [lax morphism classifiers](topic/topic_lax.20morphism.20classifiers.html) (43 messages, latest: Jul 14 2022 at 21:59)
 * [I need a name for the following](topic/topic_I.20need.20a.20name.20for.20the.20following.html) (20 messages, latest: Jul 12 2022 at 16:46)
 * [Kan enriched categories and localisation](topic/topic_Kan.20enriched.20categories.20and.20localisation.html) (3 messages, latest: Jul 11 2022 at 11:53)
 * [displaying transformations](topic/topic_displaying.20transformations.html) (20 messages, latest: Jul 06 2022 at 09:31)
@@ -176,7 +177,6 @@ permalink: /stream/229136-theory:-category-theory/index.html
 * [adjoints are maps of adjoints?](topic/topic_adjoints.20are.20maps.20of.20adjoints.3F.html) (3 messages, latest: Feb 07 2021 at 16:48)
 * [Functorial boxes](topic/topic_Functorial.20boxes.html) (4 messages, latest: Feb 03 2021 at 08:01)
 * [category theory in chemistry](topic/topic_category.20theory.20in.20chemistry.html) (43 messages, latest: Feb 02 2021 at 21:27)
-* [lax morphism classifiers](topic/topic_lax.20morphism.20classifiers.html) (33 messages, latest: Feb 01 2021 at 16:21)
 * [this lemma is false, but why?](topic/topic_this.20lemma.20is.20false.2C.20but.20why.3F.html) (5 messages, latest: Jan 25 2021 at 13:41)
 * [name this thing](topic/topic_name.20this.20thing.html) (5 messages, latest: Jan 25 2021 at 13:41)
 * [Transfer of 'monoidness'](topic/topic_Transfer.20of.20'monoidness'.html) (3 messages, latest: Jan 21 2021 at 05:33)
@@ -290,4 +290,4 @@ permalink: /stream/229136-theory:-category-theory/index.html
 * [diagrams for application](topic/topic_diagrams.20for.20application.html) (13 messages, latest: Mar 24 2020 at 06:19)
 * [universal constructions](topic/topic_universal.20constructions.html) (8 messages, latest: Mar 23 2020 at 21:06)
 
-<hr><p>Last updated: Jul 14 2022 at 00:56 UTC</p>
+<hr><p>Last updated: Jul 15 2022 at 00:59 UTC</p>

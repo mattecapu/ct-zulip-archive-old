@@ -26,4 +26,4 @@ permalink: /stream/233322-practice:-communication/index.html
 * [going rogue: the personal math website](topic/topic_going.20rogue.3A.20the.20personal.20math.20website.html) (1 message, latest: Apr 21 2020 at 05:12)
 * [Funding the revolution](topic/topic_Funding.20the.20revolution.html) (6 messages, latest: Apr 16 2020 at 16:37)
 
-<hr><p>Last updated: Jul 14 2022 at 00:56 UTC</p>
+<hr><p>Last updated: Jul 15 2022 at 00:59 UTC</p>
