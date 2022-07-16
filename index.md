@@ -142,6 +142,8 @@ permalink: /index.html
 
 * [Topos Colloquium](stream/269484-Topos-Colloquium/index.html) (2 topics)
 
+* [conference: ACT22](stream/330541-conference:-ACT22/index.html) (2 topics)
+
 * [languages: Nederlands/Dutch](stream/324768-languages:-Nederlands/Dutch/index.html) (2 topics)
 
 * [practice: industry](stream/229370-practice:-industry/index.html) (2 topics)
@@ -151,8 +153,6 @@ permalink: /index.html
 * [theory: number theory](stream/298864-theory:-number-theory/index.html) (2 topics)
 
 * [complete development of computable topology](stream/299920-complete-development-of-computable-topology/index.html) (1 topic)
-
-* [conference: ACT22](stream/330541-conference:-ACT22/index.html) (1 topic)
 
 * [general: job postings](stream/231377-general:-job-postings/index.html) (1 topic)
 
@@ -164,4 +164,4 @@ permalink: /index.html
 
 * [theory: alternate presentations](stream/233122-theory:-alternate-presentations/index.html) (1 topic)
 
-<hr><p>Last updated: Jul 15 2022 at 00:59 UTC</p>
+<hr><p>Last updated: Jul 16 2022 at 00:54 UTC</p>
