@@ -9,6 +9,7 @@ permalink: /stream/245502-general:-positions/index.html
 
 ### Topics:
 
+* [PhD position in Edinburgh](topic/topic_PhD.20position.20in.20Edinburgh.html) (1 message, latest: Jul 16 2022 at 12:28)
 * [funded phd position at Swansea](topic/topic_funded.20phd.20position.20at.20Swansea.html) (1 message, latest: Jul 11 2022 at 06:56)
 * [NIST NRC Postdoc Opportunity](topic/topic_NIST.20NRC.20Postdoc.20Opportunity.html) (6 messages, latest: Jun 21 2022 at 14:07)
 * [Looking for a private tutor](topic/topic_Looking.20for.20a.20private.20tutor.html) (1 message, latest: Jun 14 2022 at 21:18)
@@ -61,4 +62,4 @@ permalink: /stream/245502-general:-positions/index.html
 * [PhD positions in Estonia](topic/topic_PhD.20positions.20in.20Estonia.html) (1 message, latest: Jun 27 2020 at 18:04)
 * [Companies that hire category people](topic/topic_Companies.20that.20hire.20category.20people.html) (2 messages, latest: May 13 2020 at 03:50)
 
-<hr><p>Last updated: Jul 16 2022 at 00:54 UTC</p>
+<hr><p>Last updated: Jul 17 2022 at 00:55 UTC</p>

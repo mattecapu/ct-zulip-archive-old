@@ -9,7 +9,7 @@ permalink: /stream/229111-general/index.html
 
 ### Topics:
 
-* [Study Group for Basic Category Theory by Tom Leinster](topic/topic_Study.20Group.20for.20Basic.20Category.20Theory.20by.20Tom.20Leinster.html) (2 messages, latest: Jul 07 2022 at 10:55)
+* [Study Group for Basic Category Theory by Tom Leinster](topic/topic_Study.20Group.20for.20Basic.20Category.20Theory.20by.20Tom.20Leinster.html) (4 messages, latest: Jul 16 2022 at 17:26)
 * [introduce yourself!](topic/topic_introduce.20yourself!.html) (61 messages, latest: Jun 15 2022 at 14:57)
 * [any more Brazilians over here?](topic/topic_any.20more.20Brazilians.20over.20here.3F.html) (8 messages, latest: Jun 04 2022 at 16:22)
 * [Any more Brazilians over here?](topic/topic_Any.20more.20Brazilians.20over.20here.3F.html) (11 messages, latest: Jun 03 2022 at 21:58)
@@ -239,4 +239,4 @@ permalink: /stream/229111-general/index.html
 * [Tools for diagrams](topic/topic_Tools.20for.20diagrams.html) (78 messages, latest: Mar 25 2020 at 17:53)
 * [topic demonstration](topic/topic_topic.20demonstration.html) (2 messages, latest: Mar 23 2020 at 16:57)
 
-<hr><p>Last updated: Jul 16 2022 at 00:54 UTC</p>
+<hr><p>Last updated: Jul 17 2022 at 00:55 UTC</p>

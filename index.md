@@ -30,7 +30,7 @@ permalink: /index.html
 
 * [general: mathematics](stream/266967-general:-mathematics/index.html) (55 topics)
 
-* [general: positions](stream/245502-general:-positions/index.html) (51 topics)
+* [general: positions](stream/245502-general:-positions/index.html) (52 topics)
 
 * [practice: thermodynamics](stream/306433-practice:-thermodynamics/index.html) (51 topics)
 
@@ -124,6 +124,8 @@ permalink: /index.html
 
 * [Grothendieck](stream/307233-Grothendieck/index.html) (3 topics)
 
+* [conference: ACT22](stream/330541-conference:-ACT22/index.html) (3 topics)
+
 * [expression](stream/247180-expression/index.html) (3 topics)
 
 * [learning: id my structure](stream/311521-learning:-id-my-structure/index.html) (3 topics)
@@ -141,8 +143,6 @@ permalink: /index.html
 * [NYC Category Theory](stream/237238-NYC-Category-Theory/index.html) (2 topics)
 
 * [Topos Colloquium](stream/269484-Topos-Colloquium/index.html) (2 topics)
-
-* [conference: ACT22](stream/330541-conference:-ACT22/index.html) (2 topics)
 
 * [languages: Nederlands/Dutch](stream/324768-languages:-Nederlands/Dutch/index.html) (2 topics)
 
@@ -164,4 +164,4 @@ permalink: /index.html
 
 * [theory: alternate presentations](stream/233122-theory:-alternate-presentations/index.html) (1 topic)
 
-<hr><p>Last updated: Jul 16 2022 at 00:54 UTC</p>
+<hr><p>Last updated: Jul 17 2022 at 00:55 UTC</p>
