@@ -10,7 +10,7 @@ permalink: /index.html
 
 * [learning: questions](stream/229199-learning:-questions/index.html) (691 topics)
 
-* [theory: category theory](stream/229136-theory:-category-theory/index.html) (280 topics)
+* [theory: category theory](stream/229136-theory:-category-theory/index.html) (281 topics)
 
 * [general](stream/229111-general/index.html) (229 topics)
 
@@ -114,6 +114,8 @@ permalink: /index.html
 
 * [languages: Deutsch/German](stream/231144-languages:-Deutsch/German/index.html) (5 topics)
 
+* [conference: ACT22](stream/330541-conference:-ACT22/index.html) (4 topics)
+
 * [languages: espanol/Spanish](stream/231120-languages:-espanol/Spanish/index.html) (4 topics)
 
 * [languages: portugues](stream/303660-languages:-portugues/index.html) (4 topics)
@@ -123,8 +125,6 @@ permalink: /index.html
 * [practice: pedagogy](stream/295092-practice:-pedagogy/index.html) (4 topics)
 
 * [Grothendieck](stream/307233-Grothendieck/index.html) (3 topics)
-
-* [conference: ACT22](stream/330541-conference:-ACT22/index.html) (3 topics)
 
 * [expression](stream/247180-expression/index.html) (3 topics)
 
@@ -164,4 +164,4 @@ permalink: /index.html
 
 * [theory: alternate presentations](stream/233122-theory:-alternate-presentations/index.html) (1 topic)
 
-<hr><p>Last updated: Jul 17 2022 at 00:55 UTC</p>
+<hr><p>Last updated: Jul 18 2022 at 00:52 UTC</p>
