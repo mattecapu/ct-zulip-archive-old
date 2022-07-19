@@ -8,11 +8,11 @@ permalink: /index.html
 
 ## Streams:
 
-* [learning: questions](stream/229199-learning:-questions/index.html) (691 topics)
+* [learning: questions](stream/229199-learning:-questions/index.html) (692 topics)
 
-* [theory: category theory](stream/229136-theory:-category-theory/index.html) (281 topics)
+* [theory: category theory](stream/229136-theory:-category-theory/index.html) (282 topics)
 
-* [general](stream/229111-general/index.html) (229 topics)
+* [general](stream/229111-general/index.html) (230 topics)
 
 * [practice: applied ct](stream/229156-practice:-applied-ct/index.html) (136 topics)
 
@@ -84,6 +84,8 @@ permalink: /index.html
 
 * [general: co/appreciation](stream/271602-general:-co/appreciation/index.html) (13 topics)
 
+* [conference: ACT22](stream/330541-conference:-ACT22/index.html) (11 topics)
+
 * [practice: translation](stream/260000-practice:-translation/index.html) (11 topics)
 
 * [learning: reading groups](stream/232160-learning:-reading-groups/index.html) (10 topics)
@@ -113,8 +115,6 @@ permalink: /index.html
 * [ACT@UMD seminar](stream/229967-ACT@UMD-seminar/index.html) (5 topics)
 
 * [languages: Deutsch/German](stream/231144-languages:-Deutsch/German/index.html) (5 topics)
-
-* [conference: ACT22](stream/330541-conference:-ACT22/index.html) (4 topics)
 
 * [languages: espanol/Spanish](stream/231120-languages:-espanol/Spanish/index.html) (4 topics)
 
@@ -164,4 +164,4 @@ permalink: /index.html
 
 * [theory: alternate presentations](stream/233122-theory:-alternate-presentations/index.html) (1 topic)
 
-<hr><p>Last updated: Jul 18 2022 at 00:52 UTC</p>
+<hr><p>Last updated: Jul 19 2022 at 01:00 UTC</p>

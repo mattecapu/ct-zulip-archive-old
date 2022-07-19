@@ -9,9 +9,16 @@ permalink: /stream/330541-conference:-ACT22/index.html
 
 ### Topics:
 
-* [people in Glasgow](topic/topic_people.20in.20Glasgow.html) (40 messages, latest: Jul 17 2022 at 20:02)
+* [people in Glasgow](topic/topic_people.20in.20Glasgow.html) (48 messages, latest: Jul 18 2022 at 16:59)
+* [Conference dinner payment](topic/topic_Conference.20dinner.20payment.html) (2 messages, latest: Jul 18 2022 at 14:32)
+* [transcription](topic/topic_transcription.html) (1 message, latest: Jul 18 2022 at 13:53)
+* [Quantum NLP Using lambeq (demo)](topic/topic_Quantum.20NLP.20Using.20lambeq.20(demo).html) (1 message, latest: Jul 18 2022 at 10:50)
+* [Compositionality as We See It, Everywhere Around Us](topic/topic_Compositionality.20as.20We.20See.20It.2C.20Everywhere.20Around.20Us.html) (1 message, latest: Jul 18 2022 at 10:34)
+* [Simplicial Distributions and Quantum Contextuality](topic/topic_Simplicial.20Distributions.20and.20Quantum.20Contextuality.html) (1 message, latest: Jul 18 2022 at 09:19)
+* [Characterization of Contextuality with Semi-Module Cech Coho](topic/topic_Characterization.20of.20Contextuality.20with.20Semi-Module.20Cech.20Coho.html) (2 messages, latest: Jul 18 2022 at 09:02)
+* [Categories of Differentiable Polynomial Circuits for Machine](topic/topic_Categories.20of.20Differentiable.20Polynomial.20Circuits.20for.20Machine.html) (2 messages, latest: Jul 18 2022 at 08:13)
 * [People in Glasgow](topic/topic_People.20in.20Glasgow.html) (6 messages, latest: Jul 16 2022 at 19:18)
 * [Zoom link](topic/topic_Zoom.20link.html) (2 messages, latest: Jul 15 2022 at 18:00)
 * [stream events](topic/topic_stream.20events.html) (4 messages, latest: Jul 15 2022 at 00:57)
 
-<hr><p>Last updated: Jul 18 2022 at 00:52 UTC</p>
+<hr><p>Last updated: Jul 19 2022 at 01:00 UTC</p>
