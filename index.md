@@ -10,7 +10,7 @@ permalink: /index.html
 
 * [learning: questions](stream/229199-learning:-questions/index.html) (692 topics)
 
-* [theory: category theory](stream/229136-theory:-category-theory/index.html) (282 topics)
+* [theory: category theory](stream/229136-theory:-category-theory/index.html) (283 topics)
 
 * [general](stream/229111-general/index.html) (230 topics)
 
@@ -82,9 +82,9 @@ permalink: /index.html
 
 * [working: discrete geometry and entanglement](stream/266854-working:-discrete-geometry-and-entanglement/index.html) (14 topics)
 
-* [general: co/appreciation](stream/271602-general:-co/appreciation/index.html) (13 topics)
+* [conference: ACT22](stream/330541-conference:-ACT22/index.html) (13 topics)
 
-* [conference: ACT22](stream/330541-conference:-ACT22/index.html) (11 topics)
+* [general: co/appreciation](stream/271602-general:-co/appreciation/index.html) (13 topics)
 
 * [practice: translation](stream/260000-practice:-translation/index.html) (11 topics)
 
@@ -164,4 +164,4 @@ permalink: /index.html
 
 * [theory: alternate presentations](stream/233122-theory:-alternate-presentations/index.html) (1 topic)
 
-<hr><p>Last updated: Jul 19 2022 at 01:00 UTC</p>
+<hr><p>Last updated: Jul 20 2022 at 00:51 UTC</p>

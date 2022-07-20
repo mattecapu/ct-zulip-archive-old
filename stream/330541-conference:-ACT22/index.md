@@ -9,9 +9,11 @@ permalink: /stream/330541-conference:-ACT22/index.html
 
 ### Topics:
 
+* [poster session](topic/topic_poster.20session.html) (9 messages, latest: Jul 19 2022 at 16:57)
+* [transcription](topic/topic_transcription.html) (3 messages, latest: Jul 19 2022 at 14:10)
+* [morning coffee](topic/topic_morning.20coffee.html) (9 messages, latest: Jul 19 2022 at 13:06)
 * [people in Glasgow](topic/topic_people.20in.20Glasgow.html) (48 messages, latest: Jul 18 2022 at 16:59)
 * [Conference dinner payment](topic/topic_Conference.20dinner.20payment.html) (2 messages, latest: Jul 18 2022 at 14:32)
-* [transcription](topic/topic_transcription.html) (1 message, latest: Jul 18 2022 at 13:53)
 * [Quantum NLP Using lambeq (demo)](topic/topic_Quantum.20NLP.20Using.20lambeq.20(demo).html) (1 message, latest: Jul 18 2022 at 10:50)
 * [Compositionality as We See It, Everywhere Around Us](topic/topic_Compositionality.20as.20We.20See.20It.2C.20Everywhere.20Around.20Us.html) (1 message, latest: Jul 18 2022 at 10:34)
 * [Simplicial Distributions and Quantum Contextuality](topic/topic_Simplicial.20Distributions.20and.20Quantum.20Contextuality.html) (1 message, latest: Jul 18 2022 at 09:19)
@@ -21,4 +23,4 @@ permalink: /stream/330541-conference:-ACT22/index.html
 * [Zoom link](topic/topic_Zoom.20link.html) (2 messages, latest: Jul 15 2022 at 18:00)
 * [stream events](topic/topic_stream.20events.html) (4 messages, latest: Jul 15 2022 at 00:57)
 
-<hr><p>Last updated: Jul 19 2022 at 01:00 UTC</p>
+<hr><p>Last updated: Jul 20 2022 at 00:51 UTC</p>

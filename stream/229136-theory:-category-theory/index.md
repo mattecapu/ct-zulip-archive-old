@@ -9,6 +9,7 @@ permalink: /stream/229136-theory:-category-theory/index.html
 
 ### Topics:
 
+* [A property of bifibrations](topic/topic_A.20property.20of.20bifibrations.html) (3 messages, latest: Jul 19 2022 at 19:48)
 * [a property of bifibrations](topic/topic_a.20property.20of.20bifibrations.html) (7 messages, latest: Jul 18 2022 at 13:50)
 * [A Property of Bifibrations](topic/topic_A.20Property.20of.20Bifibrations.html) (5 messages, latest: Jul 18 2022 at 13:17)
 * [lax morphism classifiers](topic/topic_lax.20morphism.20classifiers.html) (43 messages, latest: Jul 14 2022 at 21:59)
@@ -292,4 +293,4 @@ permalink: /stream/229136-theory:-category-theory/index.html
 * [diagrams for application](topic/topic_diagrams.20for.20application.html) (13 messages, latest: Mar 24 2020 at 06:19)
 * [universal constructions](topic/topic_universal.20constructions.html) (8 messages, latest: Mar 23 2020 at 21:06)
 
-<hr><p>Last updated: Jul 19 2022 at 01:00 UTC</p>
+<hr><p>Last updated: Jul 20 2022 at 00:51 UTC</p>
