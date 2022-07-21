@@ -9,13 +9,13 @@ permalink: /stream/229199-learning:-questions/index.html
 
 ### Topics:
 
+* [On the Concept of Ologs](topic/topic_On.20the.20Concept.20of.20Ologs.html) (12 messages, latest: Jul 20 2022 at 10:02)
 * [Does every comonad arise from a monadic adjunction?](topic/topic_Does.20every.20comonad.20arise.20from.20a.20monadic.20adjunction.3F.html) (2 messages, latest: Jul 18 2022 at 08:09)
 * [Why some initial algebras define monads?](topic/topic_Why.20some.20initial.20algebras.20define.20monads.3F.html) (27 messages, latest: Jul 13 2022 at 12:09)
 * [where is Lawvere's book on algebra?](topic/topic_where.20is.20Lawvere's.20book.20on.20algebra.3F.html) (10 messages, latest: Jul 11 2022 at 14:54)
 * [comma category topos](topic/topic_comma.20category.20topos.html) (6 messages, latest: Jul 10 2022 at 04:48)
 * [Comma Category Topos](topic/topic_Comma.20Category.20Topos.html) (1 message, latest: Jul 08 2022 at 22:29)
 * [Isbell duality](topic/topic_Isbell.20duality.html) (24 messages, latest: Jul 06 2022 at 19:12)
-* [On the Concept of Ologs](topic/topic_On.20the.20Concept.20of.20Ologs.html) (10 messages, latest: Jun 30 2022 at 03:10)
 * [Confusion on the Nature of Isomorphisms in HomSet](topic/topic_Confusion.20on.20the.20Nature.20of.20Isomorphisms.20in.20HomSet.html) (10 messages, latest: Jun 25 2022 at 21:55)
 * [Grothendieck topologies](topic/topic_Grothendieck.20topologies.html) (30 messages, latest: Jun 24 2022 at 23:41)
 * [finding an old paper of Gray](topic/topic_finding.20an.20old.20paper.20of.20Gray.html) (3 messages, latest: Jun 24 2022 at 19:04)
@@ -702,4 +702,4 @@ permalink: /stream/229199-learning:-questions/index.html
 * [Algebra (Aluffi) exercises](topic/topic_Algebra.20(Aluffi).20exercises.html) (55 messages, latest: Mar 27 2020 at 23:38)
 * [What is category theory about?](topic/topic_What.20is.20category.20theory.20about.3F.html) (16 messages, latest: Mar 26 2020 at 16:03)
 
-<hr><p>Last updated: Jul 20 2022 at 00:51 UTC</p>
+<hr><p>Last updated: Jul 21 2022 at 00:55 UTC</p>

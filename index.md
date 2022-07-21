@@ -10,7 +10,7 @@ permalink: /index.html
 
 * [learning: questions](stream/229199-learning:-questions/index.html) (692 topics)
 
-* [theory: category theory](stream/229136-theory:-category-theory/index.html) (283 topics)
+* [theory: category theory](stream/229136-theory:-category-theory/index.html) (284 topics)
 
 * [general](stream/229111-general/index.html) (230 topics)
 
@@ -26,7 +26,7 @@ permalink: /index.html
 
 * [ACT 2020](stream/243068-ACT-2020/index.html) (61 topics)
 
-* [theory: algebraic topology & homological algebra](stream/241590-theory:-algebraic-topology-&-homological-algebra/index.html) (58 topics)
+* [theory: algebraic topology & homological algebra](stream/241590-theory:-algebraic-topology-&-homological-algebra/index.html) (59 topics)
 
 * [general: mathematics](stream/266967-general:-mathematics/index.html) (55 topics)
 
@@ -74,6 +74,8 @@ permalink: /index.html
 
 * [ACT@UCR seminar](stream/229966-ACT@UCR-seminar/index.html) (15 topics)
 
+* [conference: ACT22](stream/330541-conference:-ACT22/index.html) (15 topics)
+
 * [learning: show and tell](stream/232162-learning:-show-and-tell/index.html) (15 topics)
 
 * [seminar: ACT@UCR](stream/229966-seminar:-ACT@UCR/index.html) (15 topics)
@@ -81,8 +83,6 @@ permalink: /index.html
 * [practice: programming](stream/229450-practice:-programming/index.html) (14 topics)
 
 * [working: discrete geometry and entanglement](stream/266854-working:-discrete-geometry-and-entanglement/index.html) (14 topics)
-
-* [conference: ACT22](stream/330541-conference:-ACT22/index.html) (13 topics)
 
 * [general: co/appreciation](stream/271602-general:-co/appreciation/index.html) (13 topics)
 
@@ -164,4 +164,4 @@ permalink: /index.html
 
 * [theory: alternate presentations](stream/233122-theory:-alternate-presentations/index.html) (1 topic)
 
-<hr><p>Last updated: Jul 20 2022 at 00:51 UTC</p>
+<hr><p>Last updated: Jul 21 2022 at 00:55 UTC</p>
