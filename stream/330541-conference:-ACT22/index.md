@@ -9,9 +9,11 @@ permalink: /stream/330541-conference:-ACT22/index.html
 
 ### Topics:
 
+* [video recordings](topic/topic_video.20recordings.html) (7 messages, latest: Jul 22 2022 at 00:45)
+* [poster session](topic/topic_poster.20session.html) (13 messages, latest: Jul 21 2022 at 17:02)
+* [group photo](topic/topic_group.20photo.html) (1 message, latest: Jul 21 2022 at 11:37)
 * [unofficial conference dinner](topic/topic_unofficial.20conference.20dinner.html) (6 messages, latest: Jul 20 2022 at 14:40)
 * [Official conference dinner](topic/topic_Official.20conference.20dinner.html) (1 message, latest: Jul 20 2022 at 13:26)
-* [poster session](topic/topic_poster.20session.html) (9 messages, latest: Jul 19 2022 at 16:57)
 * [transcription](topic/topic_transcription.html) (3 messages, latest: Jul 19 2022 at 14:10)
 * [morning coffee](topic/topic_morning.20coffee.html) (9 messages, latest: Jul 19 2022 at 13:06)
 * [people in Glasgow](topic/topic_people.20in.20Glasgow.html) (48 messages, latest: Jul 18 2022 at 16:59)
@@ -25,4 +27,4 @@ permalink: /stream/330541-conference:-ACT22/index.html
 * [Zoom link](topic/topic_Zoom.20link.html) (2 messages, latest: Jul 15 2022 at 18:00)
 * [stream events](topic/topic_stream.20events.html) (4 messages, latest: Jul 15 2022 at 00:57)
 
-<hr><p>Last updated: Jul 21 2022 at 00:55 UTC</p>
+<hr><p>Last updated: Jul 22 2022 at 00:56 UTC</p>
