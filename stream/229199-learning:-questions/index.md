@@ -9,8 +9,8 @@ permalink: /stream/229199-learning:-questions/index.html
 
 ### Topics:
 
+* [Does every comonad arise from a monadic adjunction?](topic/topic_Does.20every.20comonad.20arise.20from.20a.20monadic.20adjunction.3F.html) (3 messages, latest: Jul 22 2022 at 06:27)
 * [On the Concept of Ologs](topic/topic_On.20the.20Concept.20of.20Ologs.html) (12 messages, latest: Jul 20 2022 at 10:02)
-* [Does every comonad arise from a monadic adjunction?](topic/topic_Does.20every.20comonad.20arise.20from.20a.20monadic.20adjunction.3F.html) (2 messages, latest: Jul 18 2022 at 08:09)
 * [Why some initial algebras define monads?](topic/topic_Why.20some.20initial.20algebras.20define.20monads.3F.html) (27 messages, latest: Jul 13 2022 at 12:09)
 * [where is Lawvere's book on algebra?](topic/topic_where.20is.20Lawvere's.20book.20on.20algebra.3F.html) (10 messages, latest: Jul 11 2022 at 14:54)
 * [comma category topos](topic/topic_comma.20category.20topos.html) (6 messages, latest: Jul 10 2022 at 04:48)
@@ -702,4 +702,4 @@ permalink: /stream/229199-learning:-questions/index.html
 * [Algebra (Aluffi) exercises](topic/topic_Algebra.20(Aluffi).20exercises.html) (55 messages, latest: Mar 27 2020 at 23:38)
 * [What is category theory about?](topic/topic_What.20is.20category.20theory.20about.3F.html) (16 messages, latest: Mar 26 2020 at 16:03)
 
-<hr><p>Last updated: Jul 22 2022 at 00:56 UTC</p>
+<hr><p>Last updated: Jul 23 2022 at 00:54 UTC</p>

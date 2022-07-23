@@ -62,7 +62,7 @@ permalink: /index.html
 
 * [workshop: Polynomial Functors @ Topos](stream/282140-workshop:-Polynomial-Functors-@-Topos/index.html) (22 topics)
 
-* [conference: ACT22](stream/330541-conference:-ACT22/index.html) (17 topics)
+* [conference: ACT22](stream/330541-conference:-ACT22/index.html) (18 topics)
 
 * [practice: chemistry](stream/322714-practice:-chemistry/index.html) (17 topics)
 
@@ -166,4 +166,4 @@ permalink: /index.html
 
 * [theory: alternate presentations](stream/233122-theory:-alternate-presentations/index.html) (1 topic)
 
-<hr><p>Last updated: Jul 22 2022 at 00:56 UTC</p>
+<hr><p>Last updated: Jul 23 2022 at 00:54 UTC</p>

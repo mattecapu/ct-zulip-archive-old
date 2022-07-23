@@ -115,6 +115,28 @@ Again it has interesting lifting properties which are characteristic of cofibran
 
 
 
+<a name="290469820"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/241590-theory%3A%20algebraic%20topology%20%26%20homological%20algebra/topic/Homotopy%20colimits%20for%20computing%20cofibrant%20replacements/near/290469820" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/241590-theory:-algebraic-topology-&-homological-algebra/topic/topic_Homotopy.20colimits.20for.20computing.20cofibrant.20replacements.html#290469820">(Jul 22 2022 at 06:20)</a>:</h4>
+<p>I think the reason the same construction produces a homotopy colimit and a cofibrant replacement is pretty simple.  To compute a homotopy colimit, you need to take a cofibrant replacement and then apply your original colimit functor.  So if you take a sufficiently broad notion of "colimit" (e.g. colimits weighted by profunctors) so that the identity functor is an instance of a "colimit", then a concrete construction of the corresponding homotopy colimit will be a cofibrant replacement followed by the identity functor, i.e. just a cofibrant replacement.</p>
+
+
+
+<a name="290470045"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/241590-theory%3A%20algebraic%20topology%20%26%20homological%20algebra/topic/Homotopy%20colimits%20for%20computing%20cofibrant%20replacements/near/290470045" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/241590-theory:-algebraic-topology-&-homological-algebra/topic/topic_Homotopy.20colimits.20for.20computing.20cofibrant.20replacements.html#290470045">(Jul 22 2022 at 06:24)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="416301">Zhen Lin Low</span> <a href="#narrow/stream/241590-theory.3A-algebraic-topology-.26-homological-algebra/topic/Homotopy.20colimits.20for.20computing.20cofibrant.20replacements/near/290440854">said</a>:</p>
+<blockquote>
+<p>As Mike says in definition 6.6, the construction on its own is an "uncorrected" homotopy colimit. The qualifier is important! And the way to get the "correct" homotopy colimit is to take cofibrant replacements, which is what Tim explained.</p>
+</blockquote>
+<p>There's a bit more going on there than that.  You can (almost) always get a homotopy colimit by taking a suitable (projective) cofibrant replacement <em>in the functor category</em> and then the ordinary colimit (not a bar construction of any kind, just the ordinary colimit).  That's what Tim's comment sounded to me like it was referring to.  But the point of the bar construction is that it gives you a cofibrant replacement in the functor category — and hence a way to compute homotopy colimits — as soon as you combine it with a <em>pointwise</em> cofibrant replacement in the underlying codomain category of the functors.  For instance, if every object in <em>that</em> category is cofibrant, then the "uncorrected" homotopy colimit requires no correction at all, despite the fact that <em>not</em> every object will be cofibrant in the projective model structure on functors.  (In fact, fairly generally the bar construction composed with a pointwise cofibrant replacement <em>is</em> actually a projective-cofibrant replacement.)</p>
+
+
+
+<a name="290489533"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/241590-theory%3A%20algebraic%20topology%20%26%20homological%20algebra/topic/Homotopy%20colimits%20for%20computing%20cofibrant%20replacements/near/290489533" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Zhen Lin Low <a href="https://mattecapu.github.io/ct-zulip-archive/stream/241590-theory:-algebraic-topology-&-homological-algebra/topic/topic_Homotopy.20colimits.20for.20computing.20cofibrant.20replacements.html#290489533">(Jul 22 2022 at 10:35)</a>:</h4>
+<p>I admit I was sweeping some details under the rug when I called that "take cofibrant replacements". But I was also thinking about the old-school bar resolution by comonads and how that also functions something like a cofibrant replacement functor.</p>
+
+
+
 {% endraw %}
 
-<hr><p>Last updated: Jul 22 2022 at 00:56 UTC</p>
+<hr><p>Last updated: Jul 23 2022 at 00:54 UTC</p>
