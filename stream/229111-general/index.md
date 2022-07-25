@@ -9,7 +9,7 @@ permalink: /stream/229111-general/index.html
 
 ### Topics:
 
-* [new streams](topic/topic_new.20streams.html) (92 messages, latest: Jul 21 2022 at 17:40)
+* [new streams](topic/topic_new.20streams.html) (93 messages, latest: Jul 24 2022 at 15:51)
 * [study group for Basic Category Theory by Tom Leinster](topic/topic_study.20group.20for.20Basic.20Category.20Theory.20by.20Tom.20Leinster.html) (5 messages, latest: Jul 18 2022 at 13:35)
 * [Study Group for Basic Category Theory by Tom Leinster](topic/topic_Study.20Group.20for.20Basic.20Category.20Theory.20by.20Tom.20Leinster.html) (4 messages, latest: Jul 16 2022 at 17:26)
 * [introduce yourself!](topic/topic_introduce.20yourself!.html) (61 messages, latest: Jun 15 2022 at 14:57)
@@ -240,4 +240,4 @@ permalink: /stream/229111-general/index.html
 * [Tools for diagrams](topic/topic_Tools.20for.20diagrams.html) (78 messages, latest: Mar 25 2020 at 17:53)
 * [topic demonstration](topic/topic_topic.20demonstration.html) (2 messages, latest: Mar 23 2020 at 16:57)
 
-<hr><p>Last updated: Jul 24 2022 at 00:57 UTC</p>
+<hr><p>Last updated: Jul 25 2022 at 00:53 UTC</p>

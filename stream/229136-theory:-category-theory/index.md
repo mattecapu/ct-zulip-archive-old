@@ -9,6 +9,7 @@ permalink: /stream/229136-theory:-category-theory/index.html
 
 ### Topics:
 
+* [the 2-category of adjoints](topic/topic_the.202-category.20of.20adjoints.html) (13 messages, latest: Jul 24 2022 at 17:33)
 * [this category "is an object of itself"!](topic/topic_this.20category.20.22is.20an.20object.20of.20itself.22!.html) (28 messages, latest: Jul 22 2022 at 19:04)
 * [This category "is an object of itself"!](topic/topic_This.20category.20.22is.20an.20object.20of.20itself.22!.html) (7 messages, latest: Jul 20 2022 at 21:17)
 * [A property of bifibrations](topic/topic_A.20property.20of.20bifibrations.html) (3 messages, latest: Jul 19 2022 at 19:48)
@@ -295,4 +296,4 @@ permalink: /stream/229136-theory:-category-theory/index.html
 * [diagrams for application](topic/topic_diagrams.20for.20application.html) (13 messages, latest: Mar 24 2020 at 06:19)
 * [universal constructions](topic/topic_universal.20constructions.html) (8 messages, latest: Mar 23 2020 at 21:06)
 
-<hr><p>Last updated: Jul 24 2022 at 00:57 UTC</p>
+<hr><p>Last updated: Jul 25 2022 at 00:53 UTC</p>

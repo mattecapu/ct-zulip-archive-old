@@ -10,7 +10,7 @@ permalink: /index.html
 
 * [learning: questions](stream/229199-learning:-questions/index.html) (692 topics)
 
-* [theory: category theory](stream/229136-theory:-category-theory/index.html) (285 topics)
+* [theory: category theory](stream/229136-theory:-category-theory/index.html) (286 topics)
 
 * [general](stream/229111-general/index.html) (230 topics)
 
@@ -148,6 +148,8 @@ permalink: /index.html
 
 * [practice: industry](stream/229370-practice:-industry/index.html) (2 topics)
 
+* [practice: public research](stream/332084-practice:-public-research/index.html) (2 topics)
+
 * [seminar: YAMCaTS](stream/275483-seminar:-YAMCaTS/index.html) (2 topics)
 
 * [theory: number theory](stream/298864-theory:-number-theory/index.html) (2 topics)
@@ -166,4 +168,4 @@ permalink: /index.html
 
 * [theory: alternate presentations](stream/233122-theory:-alternate-presentations/index.html) (1 topic)
 
-<hr><p>Last updated: Jul 24 2022 at 00:57 UTC</p>
+<hr><p>Last updated: Jul 25 2022 at 00:53 UTC</p>
