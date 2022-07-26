@@ -11,4 +11,4 @@ permalink: /stream/322866-pratice:-dialectica-computing/index.html
 
 * [stream events](topic/topic_stream.20events.html) (1 message, latest: Apr 25 2022 at 18:49)
 
-<hr><p>Last updated: Jul 25 2022 at 00:53 UTC</p>
+<hr><p>Last updated: Jul 26 2022 at 00:57 UTC</p>

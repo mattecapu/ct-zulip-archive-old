@@ -9,6 +9,7 @@ permalink: /stream/306433-practice:-thermodynamics/index.html
 
 ### Topics:
 
+* [the ontology of relational composition](topic/topic_the.20ontology.20of.20relational.20composition.html) (1 message, latest: Jul 25 2022 at 16:35)
 * [The Ontology of Relational Composition](topic/topic_The.20Ontology.20of.20Relational.20Composition.html) (7 messages, latest: Jul 24 2022 at 23:54)
 * [2-operad algebras](topic/topic_2-operad.20algebras.html) (60 messages, latest: Apr 22 2022 at 03:37)
 * [notation](topic/topic_notation.html) (2 messages, latest: Mar 26 2022 at 03:01)
@@ -61,4 +62,4 @@ permalink: /stream/306433-practice:-thermodynamics/index.html
 * [Stat Mech of the Carnot Engine](topic/topic_Stat.20Mech.20of.20the.20Carnot.20Engine.html) (2 messages, latest: Nov 10 2021 at 23:58)
 * [stream events](topic/topic_stream.20events.html) (13 messages, latest: Nov 09 2021 at 19:58)
 
-<hr><p>Last updated: Jul 25 2022 at 00:53 UTC</p>
+<hr><p>Last updated: Jul 26 2022 at 00:57 UTC</p>
