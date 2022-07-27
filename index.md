@@ -8,7 +8,7 @@ permalink: /index.html
 
 ## Streams:
 
-* [learning: questions](stream/229199-learning:-questions/index.html) (693 topics)
+* [learning: questions](stream/229199-learning:-questions/index.html) (694 topics)
 
 * [theory: category theory](stream/229136-theory:-category-theory/index.html) (286 topics)
 
@@ -26,7 +26,7 @@ permalink: /index.html
 
 * [ACT 2020](stream/243068-ACT-2020/index.html) (61 topics)
 
-* [theory: algebraic topology & homological algebra](stream/241590-theory:-algebraic-topology-&-homological-algebra/index.html) (59 topics)
+* [theory: algebraic topology & homological algebra](stream/241590-theory:-algebraic-topology-&-homological-algebra/index.html) (60 topics)
 
 * [general: mathematics](stream/266967-general:-mathematics/index.html) (55 topics)
 
@@ -162,10 +162,12 @@ permalink: /index.html
 
 * [languages: latine/latin](stream/255711-languages:-latine/latin/index.html) (1 topic)
 
+* [learning: Polynomial Functors book by Niu and Spivak](stream/332644-learning:-Polynomial-Functors-book-by-Niu-and-Spivak/index.html) (1 topic)
+
 * [practice: education](stream/331606-practice:-education/index.html) (1 topic)
 
 * [pratice: dialectica computing](stream/322866-pratice:-dialectica-computing/index.html) (1 topic)
 
 * [theory: alternate presentations](stream/233122-theory:-alternate-presentations/index.html) (1 topic)
 
-<hr><p>Last updated: Jul 26 2022 at 00:57 UTC</p>
+<hr><p>Last updated: Jul 27 2022 at 00:55 UTC</p>
