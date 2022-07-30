@@ -26,7 +26,7 @@ permalink: /index.html
 
 * [ACT 2020](stream/243068-ACT-2020/index.html) (61 topics)
 
-* [theory: algebraic topology & homological algebra](stream/241590-theory:-algebraic-topology-&-homological-algebra/index.html) (60 topics)
+* [theory: algebraic topology & homological algebra](stream/241590-theory:-algebraic-topology-&-homological-algebra/index.html) (61 topics)
 
 * [general: mathematics](stream/266967-general:-mathematics/index.html) (55 topics)
 
@@ -52,13 +52,13 @@ permalink: /index.html
 
 * [practice: Dialectica](stream/323208-practice:-Dialectica/index.html) (23 topics)
 
+* [practice: our work](stream/274877-practice:-our-work/index.html) (23 topics)
+
 * [practice: software](stream/229125-practice:-software/index.html) (23 topics)
 
 * [theory: probability](stream/253118-theory:-probability/index.html) (23 topics)
 
 * [learning: history of ideas](stream/232163-learning:-history-of-ideas/index.html) (22 topics)
-
-* [practice: our work](stream/274877-practice:-our-work/index.html) (22 topics)
 
 * [workshop: Polynomial Functors @ Topos](stream/282140-workshop:-Polynomial-Functors-@-Topos/index.html) (22 topics)
 
@@ -170,4 +170,4 @@ permalink: /index.html
 
 * [theory: alternate presentations](stream/233122-theory:-alternate-presentations/index.html) (1 topic)
 
-<hr><p>Last updated: Jul 29 2022 at 00:57 UTC</p>
+<hr><p>Last updated: Jul 30 2022 at 00:46 UTC</p>
