@@ -14,4 +14,4 @@ permalink: /stream/303660-languages:-portugues/index.html
 * [lobby](topic/topic_lobby.html) (2 messages, latest: Dec 13 2021 at 12:16)
 * [stream events](topic/topic_stream.20events.html) (14 messages, latest: Oct 14 2021 at 13:26)
 
-<hr><p>Last updated: Jul 30 2022 at 00:46 UTC</p>
+<hr><p>Last updated: Jul 31 2022 at 00:53 UTC</p>
