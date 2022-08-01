@@ -20,4 +20,4 @@ permalink: /stream/232160-learning:-reading-groups/index.html
 * [A Rosetta Stone](topic/topic_A.20Rosetta.20Stone.html) (88 messages, latest: May 28 2020 at 07:52)
 * [stream events](topic/topic_stream.20events.html) (12 messages, latest: May 18 2020 at 16:27)
 
-<hr><p>Last updated: Jul 31 2022 at 00:53 UTC</p>
+<hr><p>Last updated: Aug 01 2022 at 01:02 UTC</p>
