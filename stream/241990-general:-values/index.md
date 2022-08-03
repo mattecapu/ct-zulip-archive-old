@@ -9,12 +9,12 @@ permalink: /stream/241990-general:-values/index.html
 
 ### Topics:
 
+* [The Responsibility of the Scientist Today](topic/topic_The.20Responsibility.20of.20the.20Scientist.20Today.html) (453 messages, latest: Aug 03 2022 at 00:33)
 * [conferences](topic/topic_conferences.html) (62 messages, latest: Jul 26 2022 at 18:31)
 * [gender inclusivity](topic/topic_gender.20inclusivity.html) (181 messages, latest: May 06 2022 at 05:57)
 * [double-anonymous peer review](topic/topic_double-anonymous.20peer.20review.html) (1 message, latest: Apr 16 2022 at 22:36)
 * [goals and questions](topic/topic_goals.20and.20questions.html) (162 messages, latest: Jan 10 2022 at 08:09)
 * [Goals and Questions](topic/topic_Goals.20and.20Questions.html) (12 messages, latest: Dec 30 2021 at 18:12)
-* [The Responsibility of the Scientist Today](topic/topic_The.20Responsibility.20of.20the.20Scientist.20Today.html) (449 messages, latest: Mar 04 2021 at 11:03)
 * [Attitudes that hinder the adoption of applied category th...](topic/topic_Attitudes.20that.20hinder.20the.20adoption.20of.20applied.20category.20th.2E.2E.2E.html) (101 messages, latest: Feb 22 2021 at 17:27)
 * [Anti-racism resources](topic/topic_Anti-racism.20resources.html) (10 messages, latest: Feb 21 2021 at 20:07)
 * [Exponential discounting](topic/topic_Exponential.20discounting.html) (1 message, latest: Oct 25 2020 at 19:50)
@@ -36,4 +36,4 @@ permalink: /stream/241990-general:-values/index.html
 * [stream events](topic/topic_stream.20events.html) (6 messages, latest: Jun 03 2020 at 19:22)
 * [ACT2020 tutorial day](topic/topic_ACT2020.20tutorial.20day.html) (1 message, latest: Jun 03 2020 at 18:38)
 
-<hr><p>Last updated: Aug 02 2022 at 00:57 UTC</p>
+<hr><p>Last updated: Aug 03 2022 at 00:57 UTC</p>

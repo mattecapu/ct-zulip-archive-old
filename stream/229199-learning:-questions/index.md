@@ -9,6 +9,8 @@ permalink: /stream/229199-learning:-questions/index.html
 
 ### Topics:
 
+* [dual to conjoints](topic/topic_dual.20to.20conjoints.html) (2 messages, latest: Aug 02 2022 at 20:54)
+* [definition of exponential object without cartesianness](topic/topic_definition.20of.20exponential.20object.20without.20cartesianness.html) (28 messages, latest: Aug 02 2022 at 16:38)
 * [Dual to conjoints](topic/topic_Dual.20to.20conjoints.html) (6 messages, latest: Aug 01 2022 at 12:32)
 * [V-enrichment when V is not closed](topic/topic_V-enrichment.20when.20V.20is.20not.20closed.html) (2 messages, latest: Jul 26 2022 at 15:03)
 * [confusion about images of aspects](topic/topic_confusion.20about.20images.20of.20aspects.html) (5 messages, latest: Jul 25 2022 at 16:37)
@@ -705,4 +707,4 @@ permalink: /stream/229199-learning:-questions/index.html
 * [Algebra (Aluffi) exercises](topic/topic_Algebra.20(Aluffi).20exercises.html) (55 messages, latest: Mar 27 2020 at 23:38)
 * [What is category theory about?](topic/topic_What.20is.20category.20theory.20about.3F.html) (16 messages, latest: Mar 26 2020 at 16:03)
 
-<hr><p>Last updated: Aug 02 2022 at 00:57 UTC</p>
+<hr><p>Last updated: Aug 03 2022 at 00:57 UTC</p>
