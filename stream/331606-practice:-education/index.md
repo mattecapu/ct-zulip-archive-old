@@ -9,6 +9,6 @@ permalink: /stream/331606-practice:-education/index.html
 
 ### Topics:
 
-* [stream events](topic/topic_stream.20events.html) (8 messages, latest: Jul 30 2022 at 16:40)
+* [stream events](topic/topic_stream.20events.html) (9 messages, latest: Aug 08 2022 at 00:49)
 
-<hr><p>Last updated: Aug 08 2022 at 00:49 UTC</p>
+<hr><p>Last updated: Aug 09 2022 at 00:57 UTC</p>
