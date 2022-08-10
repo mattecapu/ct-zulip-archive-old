@@ -9,6 +9,7 @@ permalink: /stream/253118-theory:-probability/index.html
 
 ### Topics:
 
+* ["quasi-knowledge" of an agent as an R-algebra and convex opt](topic/topic_.22quasi-knowledge.22.20of.20an.20agent.20as.20an.20R-algebra.20and.20convex.20opt.html) (12 messages, latest: Aug 10 2022 at 00:09)
 * [unnormalised Markov categories with conditionals](topic/topic_unnormalised.20Markov.20categories.20with.20conditionals.html) (6 messages, latest: Jun 06 2022 at 08:58)
 * [Gaussian mixtures](topic/topic_Gaussian.20mixtures.html) (4 messages, latest: Jun 03 2022 at 07:28)
 * [Gaussian Mixtures](topic/topic_Gaussian.20Mixtures.html) (7 messages, latest: May 20 2022 at 18:47)
@@ -33,4 +34,4 @@ permalink: /stream/253118-theory:-probability/index.html
 * [Finitely additive probability](topic/topic_Finitely.20additive.20probability.html) (1 message, latest: Aug 16 2020 at 00:48)
 * [stream events](topic/topic_stream.20events.html) (2 messages, latest: Aug 16 2020 at 00:31)
 
-<hr><p>Last updated: Aug 09 2022 at 00:57 UTC</p>
+<hr><p>Last updated: Aug 10 2022 at 00:54 UTC</p>

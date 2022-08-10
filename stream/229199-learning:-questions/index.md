@@ -9,7 +9,8 @@ permalink: /stream/229199-learning:-questions/index.html
 
 ### Topics:
 
-* [tensor product of (bi)module objects](topic/topic_tensor.20product.20of.20(bi)module.20objects.html) (3 messages, latest: Aug 08 2022 at 11:34)
+* [beginner questions](topic/topic_beginner.20questions.html) (631 messages, latest: Aug 09 2022 at 22:21)
+* [tensor product of (bi)module objects](topic/topic_tensor.20product.20of.20(bi)module.20objects.html) (16 messages, latest: Aug 09 2022 at 10:02)
 * [dual to conjoints](topic/topic_dual.20to.20conjoints.html) (4 messages, latest: Aug 06 2022 at 03:16)
 * [Free metric group on a metric space](topic/topic_Free.20metric.20group.20on.20a.20metric.20space.html) (32 messages, latest: Aug 04 2022 at 13:26)
 * [definition of exponential object without cartesianness](topic/topic_definition.20of.20exponential.20object.20without.20cartesianness.html) (28 messages, latest: Aug 02 2022 at 16:38)
@@ -29,7 +30,6 @@ permalink: /stream/229199-learning:-questions/index.html
 * [weak/lax fibers of a functor](topic/topic_weak.2Flax.20fibers.20of.20a.20functor.html) (39 messages, latest: Jun 24 2022 at 16:39)
 * [f(x)=x, f'=0](topic/topic_f(x).3Dx.2C.20f'.3D0.html) (16 messages, latest: Jun 21 2022 at 14:19)
 * [what's a "proper" intuition regarding adjunctions?](topic/topic_what's.20a.20.22proper.22.20intuition.20regarding.20adjunctions.3F.html) (7 messages, latest: Jun 19 2022 at 09:37)
-* [beginner questions](topic/topic_beginner.20questions.html) (623 messages, latest: Jun 19 2022 at 01:17)
 * [Unknown property of posets](topic/topic_Unknown.20property.20of.20posets.html) (2 messages, latest: Jun 16 2022 at 15:43)
 * [name for globular sets without globular set condition](topic/topic_name.20for.20globular.20sets.20without.20globular.20set.20condition.html) (20 messages, latest: Jun 14 2022 at 08:39)
 * [pseudosections?](topic/topic_pseudosections.3F.html) (1 message, latest: Jun 14 2022 at 01:50)
@@ -709,4 +709,4 @@ permalink: /stream/229199-learning:-questions/index.html
 * [Algebra (Aluffi) exercises](topic/topic_Algebra.20(Aluffi).20exercises.html) (55 messages, latest: Mar 27 2020 at 23:38)
 * [What is category theory about?](topic/topic_What.20is.20category.20theory.20about.3F.html) (16 messages, latest: Mar 26 2020 at 16:03)
 
-<hr><p>Last updated: Aug 09 2022 at 00:57 UTC</p>
+<hr><p>Last updated: Aug 10 2022 at 00:54 UTC</p>

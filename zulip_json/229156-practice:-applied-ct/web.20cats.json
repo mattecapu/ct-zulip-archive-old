@@ -2020,5 +2020,23 @@
         "id": 281783737,
         "sender_full_name": "Henry Story",
         "timestamp": 1652165081
+    },
+    {
+        "content": "<p>Oh, a formalization of OWL in Agda: <a href=\"https://github.com/GavinMendelGleason/OWL/\">https://github.com/GavinMendelGleason/OWL/</a></p>\n<p>See also the Twitter thread with Pat Hayes on this (which also points to the difficulty of interpreting formalisations) <a href=\"https://twitter.com/PatHaye67745536/status/1556436598727720960\">https://twitter.com/PatHaye67745536/status/1556436598727720960</a></p>\n<div class=\"inline-preview-twitter\"><div class=\"twitter-tweet\"><a href=\"https://twitter.com/PatHaye67745536/status/1556436598727720960\"><img class=\"twitter-avatar\" src=\"https://uploads.zulipusercontent.net/9bd4f098338ea2bacbd09a6fabc74dedafa84cee/68747470733a2f2f7062732e7477696d672e636f6d2f70726f66696c655f696d616765732f313439363033383539393531383635343436362f397667624b3067475f6e6f726d616c2e6a7067\"></a><p><a href=\"https://twitter.com/GavinMGleason\">@GavinMGleason</a> <a href=\"https://twitter.com/namedgraph\">@namedgraph</a> <a href=\"https://twitter.com/TerminusDB\">@TerminusDB</a> <a href=\"https://twitter.com/lukefeeney\">@lukefeeney</a> If you delve deeply into the OWL specification docs (admittedly not easy) you will find a 'direct' semantics and also one done via an OWL-RDF-RDFsemantics route, and a proof of their equivalence.</p><span>- Pat Hayes (@PatHaye67745536)</span></div></div>",
+        "id": 292546042,
+        "sender_full_name": "Henry Story",
+        "timestamp": 1660037351
+    },
+    {
+        "content": "<p>There is an interesting initial discussion on the n3 mailing list on pure functions and RDF <a href=\"https://lists.w3.org/Archives/Public/public-n3-dev/2022Jul/0016.html\">https://lists.w3.org/Archives/Public/public-n3-dev/2022Jul/0016.html</a> <br>\nI think this is a place where Category Theory has answers that could help a lot, especially <span class=\"user-mention\" data-user-id=\"275965\">@Evan Patterson</span> 's <a href=\"https://arxiv.org/abs/1706.00526\">Knowledge Representation in Bicategories of Relations</a>  which builds on <span class=\"user-mention\" data-user-id=\"276049\">@David Spivak</span> 's work on functional Ologs, and extending it to relational ologs, ie functors from small bicateogories to Rel (or other monoidal categories).</p>\n<p>Some use cases for the existing <a href=\"https://fno.io/spec/\">function ontology</a> is to describe software artifacts and to allow one to describe extensions to mapping languages. But currently that mixes OO constructs, partial functions, etc... That turns out to be useful in places,  but it does make one wonder if one could be more precise.</p>",
+        "id": 292580483,
+        "sender_full_name": "Henry Story",
+        "timestamp": 1660052549
+    },
+    {
+        "content": "<p>Some questions I can think of: </p>\n<ol>\n<li>what would one need to add to RDF to capture the functional aspect of an <code>owl:FunctionalProperty</code> (and the same for an <code>owl:InverseFunctionalProperty</code>) so that one could cleanly describe a function. I think one would need a way to map the domain of such a relation to the minimal domain of the function that contains only the mapped elements. </li>\n<li>In order to describe things like Optional elements one would need to be able to express a functor such as 1+X. Is that possible in RDF? What would needed to add functors to RDF?  Of course Relations can express optional elements since one can have relations that are empty. ( Rel is isomorphic to the Kleisli category of the Powerset monad. see <a href=\"https://github.com/FnOio/fno-specification/issues/7\">https://github.com/FnOio/fno-specification/issues/7</a> )</li>\n<li>what would be problematic about doing any of this? (perhaps complexity of reasoning?)</li>\n</ol>\n<p>I have a feeling these questions already have known answers.</p>",
+        "id": 292584227,
+        "sender_full_name": "Henry Story",
+        "timestamp": 1660053750
     }
 ]

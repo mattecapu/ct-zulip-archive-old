@@ -1,0 +1,74 @@
+[
+    {
+        "content": "<p>Hi, I have been working on an <a href=\"https://qudent.github.io/posts/2022/08/convex-knowledge/\">algebraic description of an agent's \"states of knowledge\" about an environment that works for classical, pure-quantum, and mixed-quantum situations</a>. These turn out to be a convex subset of an ordered (associative, commutative) $\\mathbb{R}$-algebra, constructed with a Grothendieck group construction from the set of joint probability matrices modulo an appropriate equivalence relation. The main point is that this should allow using convex optimization and duality to find optimal strategies/lower bounds for an agent to achieve something (e.g. learn something about the environment), reproducing work of <a href=\"https://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.113.1101&amp;rep=rep1&amp;type=pdf\">Barnum-Saks-Szegedy</a> and the quantum adversary bound-universal query algorithm duality in a way that immediately applies to classical/mixed-quantum situations. Leaving mathematical rigour a little bit, I can also describe \"differential equations of knowledge\", solved by formal power series (e.g. a Poissonian process in which some source of information emits some experimental data with a certain probability per unit of time). See sections 6/7 in the writeup - I haven't written everything I want to, but what is there should be consistent.</p>\n<p>Is this algebra old news here, or do you have some other feedback? I am fairly hopeful that there is something correct in it (as it reproduces results from quantum complexity theory), and it's not old news to quantum complexity theorists (as I am in touch with one).</p>",
+        "id": 292599003,
+        "sender_full_name": "Duyal Yolcu",
+        "timestamp": 1660058492
+    },
+    {
+        "content": "<p>Why do you use convex subsets of an ordered commutative <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"double-struck\">R</mi></mrow><annotation encoding=\"application/x-tex\">\\mathbb{R}</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6889em;\"></span><span class=\"mord mathbb\">R</span></span></span></span>-algebra?   I'm familiar with a number of approaches to describing states of a system (which can be seen as states of knowledge) using abstract convex spaces, or convex cones.</p>",
+        "id": 292634148,
+        "sender_full_name": "John Baez",
+        "timestamp": 1660069952
+    },
+    {
+        "content": "<p>I don't think I understand your question, on one level, the answer to \"why\" is \"because it comes out of the formalism\"...</p>\n<p>I can say an _advantage_ of getting a convex subset of an R-algebra (which is also an R-vector space, of course) is that one can hope to use convex optimization/duality to some effect (as, indeed, was done in the context of quantum query algorithms by Barnum-Saks-Szegedy and others). If one naively defined addition as addition of probability entries (instead of direct sums, as I do), that doesn't seem to work.</p>\n<p>Can you give some references?</p>",
+        "id": 292670896,
+        "sender_full_name": "Duyal Yolcu",
+        "timestamp": 1660086023
+    },
+    {
+        "content": "<p>Do some of the approaches you have in mind include a notion of modding out equivalent states of the system (i.e. states that the agent could trivially transform into each other)?</p>",
+        "id": 292671517,
+        "sender_full_name": "Duyal Yolcu",
+        "timestamp": 1660086368
+    },
+    {
+        "content": "<blockquote>\n<p>I don't think I understand your question, on one level, the answer to \"why\" is \"because it comes out of the formalism\"...</p>\n</blockquote>\n<p>It sounds like maybe you're saying \"read the paper and you'll figure it out\".</p>",
+        "id": 292672727,
+        "sender_full_name": "John Baez",
+        "timestamp": 1660087121
+    },
+    {
+        "content": "<blockquote>\n<p>Can you give some references?</p>\n</blockquote>\n<p>Sure; here are some.   In work on \"generalized probabilistic theories\" people use either <a href=\"https://arxiv.org/abs/2103.07469\">convex subsets of vector spaces</a> or <a href=\"https://arxiv.org/abs/1904.03753\">convex cones in vector spaces</a>.   (The second reference here looks technical, but see Section 2, which is a review of the convex cone approach).</p>",
+        "id": 292674535,
+        "sender_full_name": "John Baez",
+        "timestamp": 1660088340
+    },
+    {
+        "content": "<p>In my work with <span class=\"user-mention\" data-user-id=\"280755\">@Owen Lynch</span> on thermodynamics we use <a href=\"https://arxiv.org/abs/2111.10315\">convex spaces</a>, defined abstractly and not necessarily subsets of vector spaces.</p>",
+        "id": 292674735,
+        "sender_full_name": "John Baez",
+        "timestamp": 1660088425
+    },
+    {
+        "content": "<p>In all this work you can think of points in the relevant convex sets as \"states of knowledge\", though this \"epistemic\" approach is not highlighted.</p>",
+        "id": 292674808,
+        "sender_full_name": "John Baez",
+        "timestamp": 1660088477
+    },
+    {
+        "content": "<blockquote>\n<p>Do some of the approaches you have in mind include a notion of modding out equivalent states of the system (i.e. states that the agent could trivially transform into each other)?</p>\n</blockquote>\n<p>I haven't seen people talk about that.</p>",
+        "id": 292674987,
+        "sender_full_name": "John Baez",
+        "timestamp": 1660088582
+    },
+    {
+        "content": "<p>Thanks for the reply!</p>\n<p>If the question is \"how\", I can say that addition is a direct sum (of the joint probability matrices of agent's memory+environment), multiplication is a tensor product (for each environmental state), and multiplication by a nonnegative real number corresponds to changing the norm (l1 norm for classical/squared-l2 for quantum) of the state. Then the state is \"convex\" in the sense that, if 0&lt;=p&lt;=1 and the agent is able to attain X and Y using some algorithm, it should also be able to attain pX+(1-p)Y (by choosing to apply whatever algorithm leads to X with probability p, whatever algorithm leads to Y with 1-p, and storing whether it chose X or Y in another register).</p>\n<p>Conversely, if states of knowledge X and Y both <em>allow</em> solving some problem (e.g. calculating a function with a maximal error probability), pX+(1-p)Y should also allow that <em>because it's defined as a direct sum</em>. But if we had defined addition as elementwise sums, it wouldn't be true: If X_p was a matrix in which the memory encoded the environment in some permutation, it would allow the agent to determine the environmental state completely - but mixing all permutations elementwise corresponds to a state of complete ignorance.</p>",
+        "id": 292676196,
+        "sender_full_name": "Duyal Yolcu",
+        "timestamp": 1660089398
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"275920\">John Baez</span> <a href=\"#narrow/stream/253118-theory.3A-probability/topic/.22quasi-knowledge.22.20of.20an.20agent.20as.20an.20R-algebra.20and.20convex.20opt/near/292674987\">said</a>:</p>\n<blockquote>\n<blockquote>\n<p>Do some of the approaches you have in mind include a notion of modding out equivalent states of the system (i.e. states that the agent could trivially transform into each other)?</p>\n</blockquote>\n<p>I haven't seen people talk about that.</p>\n</blockquote>\n<p>I think that's the main point of what I do. For example, in the writeup, the whole <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi>S</mi><mrow><mi mathvariant=\"normal\">q</mi><mi mathvariant=\"normal\">u</mi><mi mathvariant=\"normal\">a</mi><mi mathvariant=\"normal\">n</mi><mi mathvariant=\"normal\">t</mi></mrow></msub></mrow><annotation encoding=\"application/x-tex\">S_\\mathrm{quant}</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.9694em;vertical-align:-0.2861em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.05764em;\">S</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.2806em;\"><span style=\"top:-2.55em;margin-left:-0.0576em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mathrm mtight\">quant</span></span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.2861em;\"><span></span></span></span></span></span></span></span></span></span> thing should actually be nothing but the set of (unnormalized) density operators, i.e. positive semidefinite matrices, on E: The set of wavefunctions on a bipartite system, modulo local transformations on one part, is the set of density matrices. A direct sum of wavefunctions corresponds to an elementwise sum of density matrices, and it turns out that the product notion on the \"states of knowledge\" corresponds to a Hadamard (elementwise) product of the density matrices. Now that's basically what people in quantum query complexity work with.</p>\n<p>Your second reference refers to <a href=\"https://link.springer.com/content/pdf/10.1007/s10701-018-0198-4.pdf\">this paper</a> that talks about query complexity in \"generalised probabilistic theories\" and was new to me, but I don't see mentions of the adversary bound/convex optimization there and it doesn't obviously look like what I do...</p>",
+        "id": 292677164,
+        "sender_full_name": "Duyal Yolcu",
+        "timestamp": 1660090036
+    },
+    {
+        "content": "<p>I'll have to think about this - I don't understand it at all.</p>\n<p>Btw, you need to use two dollar signs, instead of the usual one, to make TeX work here.</p>",
+        "id": 292677345,
+        "sender_full_name": "John Baez",
+        "timestamp": 1660090198
+    }
+]

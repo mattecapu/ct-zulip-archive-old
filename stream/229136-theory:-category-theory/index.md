@@ -9,9 +9,9 @@ permalink: /stream/229136-theory:-category-theory/index.html
 
 ### Topics:
 
+* [the 2-category of adjoints](topic/topic_the.202-category.20of.20adjoints.html) (14 messages, latest: Aug 09 2022 at 14:51)
 * [this category "is an object of itself"!](topic/topic_this.20category.20.22is.20an.20object.20of.20itself.22!.html) (35 messages, latest: Aug 08 2022 at 22:46)
 * [fibrational view of locales](topic/topic_fibrational.20view.20of.20locales.html) (1 message, latest: Aug 08 2022 at 21:35)
-* [the 2-category of adjoints](topic/topic_the.202-category.20of.20adjoints.html) (13 messages, latest: Jul 24 2022 at 17:33)
 * [This category "is an object of itself"!](topic/topic_This.20category.20.22is.20an.20object.20of.20itself.22!.html) (7 messages, latest: Jul 20 2022 at 21:17)
 * [A property of bifibrations](topic/topic_A.20property.20of.20bifibrations.html) (3 messages, latest: Jul 19 2022 at 19:48)
 * [a property of bifibrations](topic/topic_a.20property.20of.20bifibrations.html) (7 messages, latest: Jul 18 2022 at 13:50)
@@ -297,4 +297,4 @@ permalink: /stream/229136-theory:-category-theory/index.html
 * [diagrams for application](topic/topic_diagrams.20for.20application.html) (13 messages, latest: Mar 24 2020 at 06:19)
 * [universal constructions](topic/topic_universal.20constructions.html) (8 messages, latest: Mar 23 2020 at 21:06)
 
-<hr><p>Last updated: Aug 09 2022 at 00:57 UTC</p>
+<hr><p>Last updated: Aug 10 2022 at 00:54 UTC</p>
