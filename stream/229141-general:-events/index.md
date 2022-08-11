@@ -9,7 +9,7 @@ permalink: /stream/229141-general:-events/index.html
 
 ### Topics:
 
-* [BLAST 2022](topic/topic_BLAST.202022.html) (7 messages, latest: Aug 09 2022 at 22:51)
+* [BLAST 2022](topic/topic_BLAST.202022.html) (8 messages, latest: Aug 10 2022 at 14:36)
 * [SYCO 9, Como](topic/topic_SYCO.209.2C.20Como.html) (25 messages, latest: Jul 28 2022 at 18:14)
 * [DEVCON VI](topic/topic_DEVCON.20VI.html) (3 messages, latest: Jul 28 2022 at 14:37)
 * [ACT 2022](topic/topic_ACT.202022.html) (19 messages, latest: Jul 20 2022 at 00:40)
@@ -144,4 +144,4 @@ permalink: /stream/229141-general:-events/index.html
 * [April 1st: ACT@UCR](topic/topic_April.201st.3A.20ACT.40UCR.html) (3 messages, latest: Mar 26 2020 at 23:58)
 * [Google Sites problem](topic/topic_Google.20Sites.20problem.html) (4 messages, latest: Mar 25 2020 at 04:29)
 
-<hr><p>Last updated: Aug 10 2022 at 00:54 UTC</p>
+<hr><p>Last updated: Aug 11 2022 at 00:52 UTC</p>
