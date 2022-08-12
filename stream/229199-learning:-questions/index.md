@@ -9,11 +9,12 @@ permalink: /stream/229199-learning:-questions/index.html
 
 ### Topics:
 
-* [beginner questions](topic/topic_beginner.20questions.html) (632 messages, latest: Aug 10 2022 at 21:00)
-* [tensor product of (bi)module objects](topic/topic_tensor.20product.20of.20(bi)module.20objects.html) (16 messages, latest: Aug 09 2022 at 10:02)
+* [beginner questions](topic/topic_beginner.20questions.html) (638 messages, latest: Aug 11 2022 at 23:51)
+* [n.t. commutativity square](topic/topic_n.2Et.2E.20commutativity.20square.html) (7 messages, latest: Aug 11 2022 at 18:50)
+* [definition of exponential object without cartesianness](topic/topic_definition.20of.20exponential.20object.20without.20cartesianness.html) (31 messages, latest: Aug 11 2022 at 17:26)
+* [tensor product of (bi)module objects](topic/topic_tensor.20product.20of.20(bi)module.20objects.html) (18 messages, latest: Aug 11 2022 at 11:36)
 * [dual to conjoints](topic/topic_dual.20to.20conjoints.html) (4 messages, latest: Aug 06 2022 at 03:16)
 * [Free metric group on a metric space](topic/topic_Free.20metric.20group.20on.20a.20metric.20space.html) (32 messages, latest: Aug 04 2022 at 13:26)
-* [definition of exponential object without cartesianness](topic/topic_definition.20of.20exponential.20object.20without.20cartesianness.html) (28 messages, latest: Aug 02 2022 at 16:38)
 * [Dual to conjoints](topic/topic_Dual.20to.20conjoints.html) (6 messages, latest: Aug 01 2022 at 12:32)
 * [V-enrichment when V is not closed](topic/topic_V-enrichment.20when.20V.20is.20not.20closed.html) (2 messages, latest: Jul 26 2022 at 15:03)
 * [confusion about images of aspects](topic/topic_confusion.20about.20images.20of.20aspects.html) (5 messages, latest: Jul 25 2022 at 16:37)
@@ -709,4 +710,4 @@ permalink: /stream/229199-learning:-questions/index.html
 * [Algebra (Aluffi) exercises](topic/topic_Algebra.20(Aluffi).20exercises.html) (55 messages, latest: Mar 27 2020 at 23:38)
 * [What is category theory about?](topic/topic_What.20is.20category.20theory.20about.3F.html) (16 messages, latest: Mar 26 2020 at 16:03)
 
-<hr><p>Last updated: Aug 11 2022 at 00:52 UTC</p>
+<hr><p>Last updated: Aug 12 2022 at 00:50 UTC</p>

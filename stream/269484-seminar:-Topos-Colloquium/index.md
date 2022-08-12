@@ -9,6 +9,7 @@ permalink: /stream/269484-seminar:-Topos-Colloquium/index.html
 
 ### Topics:
 
+* [Conor McBride: "Cats and Types: Best Friends?"](topic/topic_Conor.20McBride.3A.20.22Cats.20and.20Types.3A.20Best.20Friends.3F.22.html) (7 messages, latest: Aug 11 2022 at 23:43)
 * [Josef Urban: Combining learning and deduction over \[...\]](topic/topic_Josef.20Urban.3A.20Combining.20learning.20and.20deduction.20over.20.5B.2E.2E.2E.5D.html) (1 message, latest: Jul 04 2022 at 18:56)
 * [Noam Zeilberger: Parsing as a lifting problem and ...](topic/topic_Noam.20Zeilberger.3A.20Parsing.20as.20a.20lifting.20problem.20and.20.2E.2E.2E.html) (1 message, latest: Jun 27 2022 at 15:42)
 * [Moshe Vardi: Ethics Washing in AI](topic/topic_Moshe.20Vardi.3A.20Ethics.20Washing.20in.20AI.html) (1 message, latest: Jun 20 2022 at 16:04)
@@ -45,7 +46,6 @@ permalink: /stream/269484-seminar:-Topos-Colloquium/index.html
 * [John Bourke: "Tensor products, multimaps and internal homs"](topic/topic_John.20Bourke.3A.20.22Tensor.20products.2C.20multimaps.20and.20internal.20homs.22.html) (8 messages, latest: Sep 16 2021 at 14:21)
 * [xtdoor](topic/topic_xtdoor.html) (1 message, latest: Sep 13 2021 at 14:56)
 * [Valeria de Paiva: "Categorical Explicit Substitutions"](topic/topic_Valeria.20de.20Paiva.3A.20.22Categorical.20Explicit.20Substitutions.22.html) (74 messages, latest: Sep 02 2021 at 15:25)
-* [Conor McBride: "Cats and Types: Best Friends?"](topic/topic_Conor.20McBride.3A.20.22Cats.20and.20Types.3A.20Best.20Friends.3F.22.html) (6 messages, latest: Aug 28 2021 at 06:51)
 * [Kevin Buzzard: "What is the point of Lean's maths library?"](topic/topic_Kevin.20Buzzard.3A.20.22What.20is.20the.20point.20of.20Lean's.20maths.20library.3F.22.html) (4 messages, latest: Aug 09 2021 at 19:56)
 * [Todd Trimble: "From 2-rigs to lambda-rings"](topic/topic_Todd.20Trimble.3A.20.22From.202-rigs.20to.20lambda-rings.22.html) (8 messages, latest: Aug 05 2021 at 21:47)
 * [Marcy Robertson: "Topological Inspiration for Infinity ..."](topic/topic_Marcy.20Robertson.3A.20.22Topological.20Inspiration.20for.20Infinity.20.2E.2E.2E.22.html) (3 messages, latest: Jul 29 2021 at 21:47)
@@ -73,4 +73,4 @@ permalink: /stream/269484-seminar:-Topos-Colloquium/index.html
 * [Gunnar E. Carlsson: "Relative topology, motion planning, .."](topic/topic_Gunnar.20E.2E.20Carlsson.3A.20.22Relative.20topology.2C.20motion.20planning.2C.20.2E.2E.22.html) (4 messages, latest: Feb 18 2021 at 16:45)
 * [Richard Garner: "Comodels of an algebraic theory"](topic/topic_Richard.20Garner.3A.20.22Comodels.20of.20an.20algebraic.20theory.22.html) (27 messages, latest: Feb 11 2021 at 22:36)
 
-<hr><p>Last updated: Aug 11 2022 at 00:52 UTC</p>
+<hr><p>Last updated: Aug 12 2022 at 00:50 UTC</p>

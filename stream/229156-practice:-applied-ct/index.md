@@ -9,6 +9,7 @@ permalink: /stream/229156-practice:-applied-ct/index.html
 
 ### Topics:
 
+* [categorical computability](topic/topic_categorical.20computability.html) (2 messages, latest: Aug 12 2022 at 00:34)
 * [web cats](topic/topic_web.20cats.html) (340 messages, latest: Aug 09 2022 at 14:02)
 * [ACT 2022](topic/topic_ACT.202022.html) (3 messages, latest: Jul 09 2022 at 14:59)
 * [Examples of Strict monoidal functors](topic/topic_Examples.20of.20Strict.20monoidal.20functors.html) (5 messages, latest: Jun 11 2022 at 00:15)
@@ -146,4 +147,4 @@ permalink: /stream/229156-practice:-applied-ct/index.html
 * [AACT2020](topic/topic_AACT2020.html) (1 message, latest: Mar 24 2020 at 00:56)
 * [welcome](topic/topic_welcome.html) (15 messages, latest: Mar 24 2020 at 00:03)
 
-<hr><p>Last updated: Aug 11 2022 at 00:52 UTC</p>
+<hr><p>Last updated: Aug 12 2022 at 00:50 UTC</p>
