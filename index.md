@@ -16,7 +16,7 @@ permalink: /index.html
 
 * [practice: applied ct](stream/229156-practice:-applied-ct/index.html) (137 topics)
 
-* [general: events](stream/229141-general:-events/index.html) (135 topics)
+* [general: events](stream/229141-general:-events/index.html) (136 topics)
 
 * [theory: topos theory](stream/230087-theory:-topos-theory/index.html) (77 topics)
 
@@ -120,6 +120,8 @@ permalink: /index.html
 
 * [languages: portugues](stream/303660-languages:-portugues/index.html) (4 topics)
 
+* [learning: id my structure](stream/311521-learning:-id-my-structure/index.html) (4 topics)
+
 * [practice: neuroscience](stream/233925-practice:-neuroscience/index.html) (4 topics)
 
 * [practice: pedagogy](stream/295092-practice:-pedagogy/index.html) (4 topics)
@@ -127,8 +129,6 @@ permalink: /index.html
 * [Grothendieck](stream/307233-Grothendieck/index.html) (3 topics)
 
 * [expression](stream/247180-expression/index.html) (3 topics)
-
-* [learning: id my structure](stream/311521-learning:-id-my-structure/index.html) (3 topics)
 
 * [process-io](stream/267137-process-io/index.html) (3 topics)
 
@@ -170,4 +170,4 @@ permalink: /index.html
 
 * [theory: alternate presentations](stream/233122-theory:-alternate-presentations/index.html) (1 topic)
 
-<hr><p>Last updated: Aug 12 2022 at 00:50 UTC</p>
+<hr><p>Last updated: Aug 13 2022 at 00:46 UTC</p>
