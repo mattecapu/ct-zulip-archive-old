@@ -116,9 +116,9 @@ permalink: /index.html
 
 * [languages: Deutsch/German](stream/231144-languages:-Deutsch/German/index.html) (5 topics)
 
-* [languages: espanol/Spanish](stream/231120-languages:-espanol/Spanish/index.html) (4 topics)
+* [languages: portugues](stream/303660-languages:-portugues/index.html) (5 topics)
 
-* [languages: portugues](stream/303660-languages:-portugues/index.html) (4 topics)
+* [languages: espanol/Spanish](stream/231120-languages:-espanol/Spanish/index.html) (4 topics)
 
 * [learning: id my structure](stream/311521-learning:-id-my-structure/index.html) (4 topics)
 
@@ -170,4 +170,4 @@ permalink: /index.html
 
 * [theory: alternate presentations](stream/233122-theory:-alternate-presentations/index.html) (1 topic)
 
-<hr><p>Last updated: Aug 13 2022 at 00:46 UTC</p>
+<hr><p>Last updated: Aug 14 2022 at 00:54 UTC</p>

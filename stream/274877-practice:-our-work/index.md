@@ -9,6 +9,7 @@ permalink: /stream/274877-practice:-our-work/index.html
 
 ### Topics:
 
+* [Jean-Baptiste Vienney](topic/topic_Jean-Baptiste.20Vienney.html) (25 messages, latest: Aug 13 2022 at 05:29)
 * [John Baez](topic/topic_John.20Baez.html) (733 messages, latest: Aug 12 2022 at 18:24)
 * [MonoidMusician (Verity S.)](topic/topic_MonoidMusician.20(Verity.20S.2E).html) (11 messages, latest: Aug 01 2022 at 16:17)
 * [Morgan Rogers](topic/topic_Morgan.20Rogers.html) (31 messages, latest: Jul 06 2022 at 14:10)
@@ -21,7 +22,6 @@ permalink: /stream/274877-practice:-our-work/index.html
 * [stream events](topic/topic_stream.20events.html) (7 messages, latest: May 09 2022 at 21:14)
 * [Jon Sterling](topic/topic_Jon.20Sterling.html) (27 messages, latest: May 08 2022 at 21:43)
 * [posina](topic/topic_posina.html) (1 message, latest: Feb 28 2022 at 21:20)
-* [Jean-Baptiste Vienney](topic/topic_Jean-Baptiste.20Vienney.html) (24 messages, latest: Jan 04 2022 at 14:11)
 * [José Siqueira](topic/topic_Jos.C3.A9.20Siqueira.html) (46 messages, latest: Dec 13 2021 at 12:18)
 * [engineering and CT](topic/topic_engineering.20and.20CT.html) (4 messages, latest: Dec 05 2021 at 17:21)
 * [Engineering and CT](topic/topic_Engineering.20and.20CT.html) (1 message, latest: Dec 02 2021 at 10:51)
@@ -33,4 +33,4 @@ permalink: /stream/274877-practice:-our-work/index.html
 * [Conor Mc Bride](topic/topic_Conor.20Mc.20Bride.html) (60 messages, latest: Apr 08 2021 at 15:15)
 * [thoughts on sharing ideas](topic/topic_thoughts.20on.20sharing.20ideas.html) (20 messages, latest: Jan 31 2021 at 03:05)
 
-<hr><p>Last updated: Aug 13 2022 at 00:46 UTC</p>
+<hr><p>Last updated: Aug 14 2022 at 00:54 UTC</p>

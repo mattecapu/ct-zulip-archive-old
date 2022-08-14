@@ -9,7 +9,7 @@ permalink: /stream/323208-practice:-Dialectica/index.html
 
 ### Topics:
 
-* [implementation](topic/topic_implementation.html) (24 messages, latest: Jul 04 2022 at 13:12)
+* [implementation](topic/topic_implementation.html) (25 messages, latest: Aug 13 2022 at 18:55)
 * [Berkeley reunion](topic/topic_Berkeley.20reunion.html) (1 message, latest: Jun 23 2022 at 22:34)
 * [lenses](topic/topic_lenses.html) (7 messages, latest: Jun 20 2022 at 22:57)
 * [meeting tomorrow?](topic/topic_meeting.20tomorrow.3F.html) (8 messages, latest: Jun 17 2022 at 22:19)
@@ -33,4 +33,4 @@ permalink: /stream/323208-practice:-Dialectica/index.html
 * [Dialectica for Friends video?](topic/topic_Dialectica.20for.20Friends.20video.3F.html) (4 messages, latest: May 03 2022 at 20:09)
 * [stream events](topic/topic_stream.20events.html) (5 messages, latest: Apr 28 2022 at 20:15)
 
-<hr><p>Last updated: Aug 13 2022 at 00:46 UTC</p>
+<hr><p>Last updated: Aug 14 2022 at 00:54 UTC</p>

@@ -180,6 +180,15 @@ permalink: /stream/323208-practice:-Dialectica/topic/topic_implementation.html
 
 
 
+<a name="293311862"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/323208-practice%3A%20Dialectica/topic/implementation/near/293311862" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nelson Niu <a href="https://mattecapu.github.io/ct-zulip-archive/stream/323208-practice:-Dialectica/topic/topic_implementation.html#293311862">(Aug 13 2022 at 18:55)</a>:</h4>
+<p>So I've been learning (Cubical) Agda from the <a href="https://uwo.ca/math/faculty/kapulkin/seminars/hottest_summer_school_2022.html">HoTT summer school</a> and figured I'd try proving Poly (and eventually Dial etc.) is a category myself. I finally learned enough by yesterday to do it, and finished it up today here!</p>
+<p><a href="/user_uploads/21317/E1v8DAQAEOqYzegWniKzv0a4/Poly.agda">Poly.agda</a></p>
+<p>Of course Eric has done most of this already, but the key difference (please correct me if I'm wrong, <span class="user-mention" data-user-id="380293">@Eric Bond</span>!) is that what we'd think of as a category is what the HoTT folks call a <em>precategory</em>. Agda with HoTT makes a distinction between more general <em>types</em> (think ∞-groupoid) and more specific <em>sets</em> (think an ∞-groupoid that is provably a 0-groupoid). So what they call a <em>category</em> has a further requirement that hom-<em>types</em> really are hom-<em>sets</em> that needs to be proven. Eric's already shown that Poly forms a precategory, with hom-types; what I've done here (with a great deal of help from lemmas from the Cubical Agda library) is further show that the category of polynomials where every position-type is a position-set and every direction-type is a direction-set forms a category, with hom-sets. (I don't think this should be too hard to generalize to Dialectica.)</p>
+<p>(There's something to be said about these constructions not really being Poly(Sets) or Dial(Sets) if we're coding them up this way—really, these are Dial([whatever category gives Agda its HoTT semantics]). This is a little too much type theory for me to think about in one sitting, though, so I'll just leave this vague parenthetical remark in case anyone finds musing on that interesting...)</p>
+
+
+
 {% endraw %}
 
-<hr><p>Last updated: Aug 13 2022 at 00:46 UTC</p>
+<hr><p>Last updated: Aug 14 2022 at 00:54 UTC</p>
