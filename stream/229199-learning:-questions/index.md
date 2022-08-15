@@ -9,8 +9,10 @@ permalink: /stream/229199-learning:-questions/index.html
 
 ### Topics:
 
+* [groupoids of affine planes](topic/topic_groupoids.20of.20affine.20planes.html) (7 messages, latest: Aug 14 2022 at 18:01)
+* [presheaves and injectivity classes](topic/topic_presheaves.20and.20injectivity.20classes.html) (1 message, latest: Aug 14 2022 at 14:19)
+* [definition of exponential object without cartesianness](topic/topic_definition.20of.20exponential.20object.20without.20cartesianness.html) (35 messages, latest: Aug 14 2022 at 08:41)
 * [beginner questions](topic/topic_beginner.20questions.html) (651 messages, latest: Aug 13 2022 at 23:29)
-* [definition of exponential object without cartesianness](topic/topic_definition.20of.20exponential.20object.20without.20cartesianness.html) (34 messages, latest: Aug 13 2022 at 10:37)
 * [n.t. commutativity square](topic/topic_n.2Et.2E.20commutativity.20square.html) (7 messages, latest: Aug 11 2022 at 18:50)
 * [tensor product of (bi)module objects](topic/topic_tensor.20product.20of.20(bi)module.20objects.html) (18 messages, latest: Aug 11 2022 at 11:36)
 * [dual to conjoints](topic/topic_dual.20to.20conjoints.html) (4 messages, latest: Aug 06 2022 at 03:16)
@@ -710,4 +712,4 @@ permalink: /stream/229199-learning:-questions/index.html
 * [Algebra (Aluffi) exercises](topic/topic_Algebra.20(Aluffi).20exercises.html) (55 messages, latest: Mar 27 2020 at 23:38)
 * [What is category theory about?](topic/topic_What.20is.20category.20theory.20about.3F.html) (16 messages, latest: Mar 26 2020 at 16:03)
 
-<hr><p>Last updated: Aug 14 2022 at 00:54 UTC</p>
+<hr><p>Last updated: Aug 15 2022 at 01:00 UTC</p>

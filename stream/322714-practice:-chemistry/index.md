@@ -9,6 +9,7 @@ permalink: /stream/322714-practice:-chemistry/index.html
 
 ### Topics:
 
+* [the hyperfield of signs](topic/topic_the.20hyperfield.20of.20signs.html) (7 messages, latest: Aug 14 2022 at 22:45)
 * [invariants of Petri nets](topic/topic_invariants.20of.20Petri.20nets.html) (18 messages, latest: Jun 24 2022 at 17:28)
 * [dynamics of Petri nets](topic/topic_dynamics.20of.20Petri.20nets.html) (14 messages, latest: Jun 20 2022 at 19:00)
 * [open Petri net questions](topic/topic_open.20Petri.20net.20questions.html) (64 messages, latest: Jun 14 2022 at 18:35)
@@ -18,7 +19,6 @@ permalink: /stream/322714-practice:-chemistry/index.html
 * [smallest reaction networks](topic/topic_smallest.20reaction.20networks.html) (3 messages, latest: Jun 02 2022 at 21:06)
 * [Beaverator](topic/topic_Beaverator.html) (3 messages, latest: Jun 02 2022 at 15:34)
 * [AlgebraicPetri](topic/topic_AlgebraicPetri.html) (16 messages, latest: May 31 2022 at 14:31)
-* [the hyperfield of signs](topic/topic_the.20hyperfield.20of.20signs.html) (6 messages, latest: May 28 2022 at 00:06)
 * [welcome!](topic/topic_welcome!.html) (60 messages, latest: May 26 2022 at 20:46)
 * [meetings](topic/topic_meetings.html) (12 messages, latest: May 26 2022 at 17:58)
 * [questions](topic/topic_questions.html) (27 messages, latest: May 11 2022 at 06:28)
@@ -27,4 +27,4 @@ permalink: /stream/322714-practice:-chemistry/index.html
 * [moving this stream?](topic/topic_moving.20this.20stream.3F.html) (9 messages, latest: May 03 2022 at 02:56)
 * [Graph structure theory](topic/topic_Graph.20structure.20theory.html) (1 message, latest: Apr 26 2022 at 08:42)
 
-<hr><p>Last updated: Aug 14 2022 at 00:54 UTC</p>
+<hr><p>Last updated: Aug 15 2022 at 01:00 UTC</p>
