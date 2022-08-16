@@ -9,7 +9,8 @@ permalink: /stream/229199-learning:-questions/index.html
 
 ### Topics:
 
-* [groupoids of affine planes](topic/topic_groupoids.20of.20affine.20planes.html) (7 messages, latest: Aug 14 2022 at 18:01)
+* [groupoids of affine planes](topic/topic_groupoids.20of.20affine.20planes.html) (8 messages, latest: Aug 16 2022 at 00:46)
+* [Colimits and connected components](topic/topic_Colimits.20and.20connected.20components.html) (4 messages, latest: Aug 15 2022 at 21:16)
 * [presheaves and injectivity classes](topic/topic_presheaves.20and.20injectivity.20classes.html) (1 message, latest: Aug 14 2022 at 14:19)
 * [definition of exponential object without cartesianness](topic/topic_definition.20of.20exponential.20object.20without.20cartesianness.html) (35 messages, latest: Aug 14 2022 at 08:41)
 * [beginner questions](topic/topic_beginner.20questions.html) (651 messages, latest: Aug 13 2022 at 23:29)
@@ -712,4 +713,4 @@ permalink: /stream/229199-learning:-questions/index.html
 * [Algebra (Aluffi) exercises](topic/topic_Algebra.20(Aluffi).20exercises.html) (55 messages, latest: Mar 27 2020 at 23:38)
 * [What is category theory about?](topic/topic_What.20is.20category.20theory.20about.3F.html) (16 messages, latest: Mar 26 2020 at 16:03)
 
-<hr><p>Last updated: Aug 15 2022 at 01:00 UTC</p>
+<hr><p>Last updated: Aug 16 2022 at 00:59 UTC</p>
