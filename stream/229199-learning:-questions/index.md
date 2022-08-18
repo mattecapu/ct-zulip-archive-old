@@ -9,8 +9,8 @@ permalink: /stream/229199-learning:-questions/index.html
 
 ### Topics:
 
+* [colimits and connected components](topic/topic_colimits.20and.20connected.20components.html) (5 messages, latest: Aug 17 2022 at 10:42)
 * [adjunction puzzle](topic/topic_adjunction.20puzzle.html) (8 messages, latest: Aug 16 2022 at 19:57)
-* [colimits and connected components](topic/topic_colimits.20and.20connected.20components.html) (4 messages, latest: Aug 16 2022 at 19:29)
 * [groupoids of affine planes](topic/topic_groupoids.20of.20affine.20planes.html) (13 messages, latest: Aug 16 2022 at 05:26)
 * [Colimits and connected components](topic/topic_Colimits.20and.20connected.20components.html) (4 messages, latest: Aug 15 2022 at 21:16)
 * [presheaves and injectivity classes](topic/topic_presheaves.20and.20injectivity.20classes.html) (1 message, latest: Aug 14 2022 at 14:19)
@@ -715,4 +715,4 @@ permalink: /stream/229199-learning:-questions/index.html
 * [Algebra (Aluffi) exercises](topic/topic_Algebra.20(Aluffi).20exercises.html) (55 messages, latest: Mar 27 2020 at 23:38)
 * [What is category theory about?](topic/topic_What.20is.20category.20theory.20about.3F.html) (16 messages, latest: Mar 26 2020 at 16:03)
 
-<hr><p>Last updated: Aug 17 2022 at 01:01 UTC</p>
+<hr><p>Last updated: Aug 18 2022 at 00:57 UTC</p>
