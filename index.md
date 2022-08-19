@@ -8,7 +8,7 @@ permalink: /index.html
 
 ## Streams:
 
-* [learning: questions](stream/229199-learning:-questions/index.html) (705 topics)
+* [learning: questions](stream/229199-learning:-questions/index.html) (706 topics)
 
 * [theory: category theory](stream/229136-theory:-category-theory/index.html) (287 topics)
 
@@ -36,7 +36,7 @@ permalink: /index.html
 
 * [theory: logic](stream/233104-theory:-logic/index.html) (50 topics)
 
-* [practice: our papers](stream/258900-practice:-our-papers/index.html) (45 topics)
+* [practice: our papers](stream/258900-practice:-our-papers/index.html) (46 topics)
 
 * [theory: type theory](stream/229952-theory:-type-theory/index.html) (45 topics)
 
@@ -154,6 +154,8 @@ permalink: /index.html
 
 * [theory: number theory](stream/298864-theory:-number-theory/index.html) (2 topics)
 
+* [MATHEMATICAL PHILOSOPHY OF BIOLOGY](stream/336415-MATHEMATICAL-PHILOSOPHY-OF-BIOLOGY/index.html) (1 topic)
+
 * [complete development of computable topology](stream/299920-complete-development-of-computable-topology/index.html) (1 topic)
 
 * [general: job postings](stream/231377-general:-job-postings/index.html) (1 topic)
@@ -170,4 +172,4 @@ permalink: /index.html
 
 * [theory: alternate presentations](stream/233122-theory:-alternate-presentations/index.html) (1 topic)
 
-<hr><p>Last updated: Aug 18 2022 at 00:57 UTC</p>
+<hr><p>Last updated: Aug 19 2022 at 00:57 UTC</p>
