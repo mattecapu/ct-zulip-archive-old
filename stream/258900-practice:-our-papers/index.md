@@ -9,6 +9,7 @@ permalink: /stream/258900-practice:-our-papers/index.html
 
 ### Topics:
 
+* [operads as double functors](topic/topic_operads.20as.20double.20functors.html) (1 message, latest: Aug 19 2022 at 06:31)
 * [Operads as double functors](topic/topic_Operads.20as.20double.20functors.html) (2 messages, latest: Aug 18 2022 at 17:55)
 * [classifying topoi in synthetic guarded domain theory](topic/topic_classifying.20topoi.20in.20synthetic.20guarded.20domain.20theory.html) (2 messages, latest: Jun 12 2022 at 13:26)
 * [Inner autoequivalences in general and those of monoidal c...](topic/topic_Inner.20autoequivalences.20in.20general.20and.20those.20of.20monoidal.20c.2E.2E.2E.html) (3 messages, latest: May 10 2022 at 00:49)
@@ -56,4 +57,4 @@ permalink: /stream/258900-practice:-our-papers/index.html
 * [Functorial semantics for partial theories](topic/topic_Functorial.20semantics.20for.20partial.20theories.html) (30 messages, latest: Nov 29 2020 at 08:46)
 * [Coends of higher arity](topic/topic_Coends.20of.20higher.20arity.html) (3 messages, latest: Sep 26 2020 at 16:28)
 
-<hr><p>Last updated: Aug 19 2022 at 00:57 UTC</p>
+<hr><p>Last updated: Aug 20 2022 at 00:52 UTC</p>

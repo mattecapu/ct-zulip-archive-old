@@ -9,7 +9,10 @@ permalink: /stream/229199-learning:-questions/index.html
 
 ### Topics:
 
-* [adjunction puzzle](topic/topic_adjunction.20puzzle.html) (9 messages, latest: Aug 18 2022 at 17:50)
+* [In a quantale, $$ a * \_ $$ is monotone](topic/topic_In.20a.20quantale.2C.20.24.24.20a.20*.20.5C_.20.24.24.20is.20monotone.html) (3 messages, latest: Aug 19 2022 at 20:16)
+* [reflective subcategory](topic/topic_reflective.20subcategory.html) (1 message, latest: Aug 19 2022 at 15:08)
+* [adjunction puzzle](topic/topic_adjunction.20puzzle.html) (10 messages, latest: Aug 19 2022 at 14:50)
+* [sign errors](topic/topic_sign.20errors.html) (23 messages, latest: Aug 19 2022 at 03:53)
 * [Factorization system for computing Kan extensions](topic/topic_Factorization.20system.20for.20computing.20Kan.20extensions.html) (3 messages, latest: Aug 18 2022 at 10:38)
 * [colimits and connected components](topic/topic_colimits.20and.20connected.20components.html) (5 messages, latest: Aug 17 2022 at 10:42)
 * [groupoids of affine planes](topic/topic_groupoids.20of.20affine.20planes.html) (13 messages, latest: Aug 16 2022 at 05:26)
@@ -216,7 +219,6 @@ permalink: /stream/229199-learning:-questions/index.html
 * [\[2,C\] is cartesian closed, in agda](topic/topic_.5B2.2CC.5D.20is.20cartesian.20closed.2C.20in.20agda.html) (4 messages, latest: Oct 17 2021 at 13:05)
 * [Help with an equivalence of coends](topic/topic_Help.20with.20an.20equivalence.20of.20coends.html) (20 messages, latest: Oct 14 2021 at 13:05)
 * [functors and cofunctors](topic/topic_functors.20and.20cofunctors.html) (15 messages, latest: Oct 14 2021 at 08:53)
-* [sign errors](topic/topic_sign.20errors.html) (22 messages, latest: Oct 09 2021 at 17:10)
 * [simplicial localization](topic/topic_simplicial.20localization.html) (9 messages, latest: Oct 08 2021 at 23:41)
 * [de Rham complex,  Chevalley Eilenberg complex](topic/topic_de.20Rham.20complex.2C.20.20Chevalley.20Eilenberg.20complex.html) (2 messages, latest: Oct 08 2021 at 15:22)
 * [Epi pullback](topic/topic_Epi.20pullback.html) (19 messages, latest: Oct 07 2021 at 10:13)
@@ -716,4 +718,4 @@ permalink: /stream/229199-learning:-questions/index.html
 * [Algebra (Aluffi) exercises](topic/topic_Algebra.20(Aluffi).20exercises.html) (55 messages, latest: Mar 27 2020 at 23:38)
 * [What is category theory about?](topic/topic_What.20is.20category.20theory.20about.3F.html) (16 messages, latest: Mar 26 2020 at 16:03)
 
-<hr><p>Last updated: Aug 19 2022 at 00:57 UTC</p>
+<hr><p>Last updated: Aug 20 2022 at 00:52 UTC</p>

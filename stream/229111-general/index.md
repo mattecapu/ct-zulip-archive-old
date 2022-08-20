@@ -9,6 +9,7 @@ permalink: /stream/229111-general/index.html
 
 ### Topics:
 
+* [category theory tutor](topic/topic_category.20theory.20tutor.html) (1 message, latest: Aug 19 2022 at 06:42)
 * [new streams](topic/topic_new.20streams.html) (96 messages, latest: Aug 18 2022 at 18:39)
 * [introduce yourself!](topic/topic_introduce.20yourself!.html) (62 messages, latest: Aug 16 2022 at 22:09)
 * [study group for Basic Category Theory by Tom Leinster](topic/topic_study.20group.20for.20Basic.20Category.20Theory.20by.20Tom.20Leinster.html) (5 messages, latest: Jul 18 2022 at 13:35)
@@ -240,4 +241,4 @@ permalink: /stream/229111-general/index.html
 * [Tools for diagrams](topic/topic_Tools.20for.20diagrams.html) (78 messages, latest: Mar 25 2020 at 17:53)
 * [topic demonstration](topic/topic_topic.20demonstration.html) (2 messages, latest: Mar 23 2020 at 16:57)
 
-<hr><p>Last updated: Aug 19 2022 at 00:57 UTC</p>
+<hr><p>Last updated: Aug 20 2022 at 00:52 UTC</p>

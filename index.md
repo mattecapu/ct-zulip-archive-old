@@ -8,11 +8,11 @@ permalink: /index.html
 
 ## Streams:
 
-* [learning: questions](stream/229199-learning:-questions/index.html) (706 topics)
+* [learning: questions](stream/229199-learning:-questions/index.html) (708 topics)
 
-* [theory: category theory](stream/229136-theory:-category-theory/index.html) (287 topics)
+* [theory: category theory](stream/229136-theory:-category-theory/index.html) (289 topics)
 
-* [general](stream/229111-general/index.html) (230 topics)
+* [general](stream/229111-general/index.html) (231 topics)
 
 * [practice: applied ct](stream/229156-practice:-applied-ct/index.html) (137 topics)
 
@@ -22,9 +22,9 @@ permalink: /index.html
 
 * [seminar: Topos Colloquium](stream/269484-seminar:-Topos-Colloquium/index.html) (63 topics)
 
-* [conference: ACT 2020](stream/243068-conference:-ACT-2020/index.html) (62 topics)
+* [theory: algebraic topology & homological algebra](stream/241590-theory:-algebraic-topology-&-homological-algebra/index.html) (63 topics)
 
-* [theory: algebraic topology & homological algebra](stream/241590-theory:-algebraic-topology-&-homological-algebra/index.html) (62 topics)
+* [conference: ACT 2020](stream/243068-conference:-ACT-2020/index.html) (62 topics)
 
 * [ACT 2020](stream/243068-ACT-2020/index.html) (61 topics)
 
@@ -36,9 +36,9 @@ permalink: /index.html
 
 * [theory: logic](stream/233104-theory:-logic/index.html) (50 topics)
 
-* [practice: our papers](stream/258900-practice:-our-papers/index.html) (46 topics)
+* [practice: our papers](stream/258900-practice:-our-papers/index.html) (47 topics)
 
-* [theory: type theory](stream/229952-theory:-type-theory/index.html) (45 topics)
+* [theory: type theory](stream/229952-theory:-type-theory/index.html) (46 topics)
 
 * [MIT Categories Seminar](stream/229457-MIT-Categories-Seminar/index.html) (41 topics)
 
@@ -118,9 +118,9 @@ permalink: /index.html
 
 * [languages: portugues](stream/303660-languages:-portugues/index.html) (5 topics)
 
-* [languages: espanol/Spanish](stream/231120-languages:-espanol/Spanish/index.html) (4 topics)
+* [learning: id my structure](stream/311521-learning:-id-my-structure/index.html) (5 topics)
 
-* [learning: id my structure](stream/311521-learning:-id-my-structure/index.html) (4 topics)
+* [languages: espanol/Spanish](stream/231120-languages:-espanol/Spanish/index.html) (4 topics)
 
 * [practice: neuroscience](stream/233925-practice:-neuroscience/index.html) (4 topics)
 
@@ -140,6 +140,8 @@ permalink: /index.html
 
 * [AMS MRC on applied category theory](stream/322927-AMS-MRC-on-applied-category-theory/index.html) (2 topics)
 
+* [MATHEMATICAL PHILOSOPHY OF BIOLOGY](stream/336415-MATHEMATICAL-PHILOSOPHY-OF-BIOLOGY/index.html) (2 topics)
+
 * [NYC Category Theory](stream/237238-NYC-Category-Theory/index.html) (2 topics)
 
 * [Topos Colloquium](stream/269484-Topos-Colloquium/index.html) (2 topics)
@@ -153,8 +155,6 @@ permalink: /index.html
 * [seminar: YAMCaTS](stream/275483-seminar:-YAMCaTS/index.html) (2 topics)
 
 * [theory: number theory](stream/298864-theory:-number-theory/index.html) (2 topics)
-
-* [MATHEMATICAL PHILOSOPHY OF BIOLOGY](stream/336415-MATHEMATICAL-PHILOSOPHY-OF-BIOLOGY/index.html) (1 topic)
 
 * [complete development of computable topology](stream/299920-complete-development-of-computable-topology/index.html) (1 topic)
 
@@ -172,4 +172,4 @@ permalink: /index.html
 
 * [theory: alternate presentations](stream/233122-theory:-alternate-presentations/index.html) (1 topic)
 
-<hr><p>Last updated: Aug 19 2022 at 00:57 UTC</p>
+<hr><p>Last updated: Aug 20 2022 at 00:52 UTC</p>
