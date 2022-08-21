@@ -9,6 +9,7 @@ permalink: /stream/229156-practice:-applied-ct/index.html
 
 ### Topics:
 
+* [stream events](topic/topic_stream.20events.html) (5 messages, latest: Aug 20 2022 at 09:46)
 * [categorical computability](topic/topic_categorical.20computability.html) (2 messages, latest: Aug 12 2022 at 00:34)
 * [web cats](topic/topic_web.20cats.html) (340 messages, latest: Aug 09 2022 at 14:02)
 * [ACT 2022](topic/topic_ACT.202022.html) (3 messages, latest: Jul 09 2022 at 14:59)
@@ -132,7 +133,6 @@ permalink: /stream/229156-practice:-applied-ct/index.html
 * [chaos](topic/topic_chaos.html) (1 message, latest: Apr 12 2020 at 23:58)
 * [kripke stuff for measure theory](topic/topic_kripke.20stuff.20for.20measure.20theory.html) (134 messages, latest: Apr 08 2020 at 22:12)
 * [Dynamics](topic/topic_Dynamics.html) (35 messages, latest: Apr 08 2020 at 21:20)
-* [stream events](topic/topic_stream.20events.html) (4 messages, latest: Apr 06 2020 at 05:35)
 * [ML/ATP](topic/topic_ML.2FATP.html) (9 messages, latest: Apr 05 2020 at 17:02)
 * [Sheaf models for permission systems](topic/topic_Sheaf.20models.20for.20permission.20systems.html) (21 messages, latest: Apr 02 2020 at 15:17)
 * [Algebras](topic/topic_Algebras.html) (26 messages, latest: Apr 01 2020 at 21:12)
@@ -147,4 +147,4 @@ permalink: /stream/229156-practice:-applied-ct/index.html
 * [AACT2020](topic/topic_AACT2020.html) (1 message, latest: Mar 24 2020 at 00:56)
 * [welcome](topic/topic_welcome.html) (15 messages, latest: Mar 24 2020 at 00:03)
 
-<hr><p>Last updated: Aug 20 2022 at 00:52 UTC</p>
+<hr><p>Last updated: Aug 21 2022 at 00:53 UTC</p>

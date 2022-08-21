@@ -8,9 +8,9 @@ permalink: /index.html
 
 ## Streams:
 
-* [learning: questions](stream/229199-learning:-questions/index.html) (708 topics)
+* [learning: questions](stream/229199-learning:-questions/index.html) (709 topics)
 
-* [theory: category theory](stream/229136-theory:-category-theory/index.html) (289 topics)
+* [theory: category theory](stream/229136-theory:-category-theory/index.html) (290 topics)
 
 * [general](stream/229111-general/index.html) (231 topics)
 
@@ -134,6 +134,8 @@ permalink: /index.html
 
 * [theory: analysis](stream/281848-theory:-analysis/index.html) (3 topics)
 
+* [theory: biology](stream/336415-theory:-biology/index.html) (3 topics)
+
 * [theory: combinatorics](stream/229794-theory:-combinatorics/index.html) (3 topics)
 
 * [theory: game semantics](stream/233273-theory:-game-semantics/index.html) (3 topics)
@@ -172,4 +174,4 @@ permalink: /index.html
 
 * [theory: alternate presentations](stream/233122-theory:-alternate-presentations/index.html) (1 topic)
 
-<hr><p>Last updated: Aug 20 2022 at 00:52 UTC</p>
+<hr><p>Last updated: Aug 21 2022 at 00:53 UTC</p>

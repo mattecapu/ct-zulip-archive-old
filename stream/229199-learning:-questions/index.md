@@ -9,6 +9,7 @@ permalink: /stream/229199-learning:-questions/index.html
 
 ### Topics:
 
+* [Differential Forms in Synthetic Differential Geometry](topic/topic_Differential.20Forms.20in.20Synthetic.20Differential.20Geometry.html) (1 message, latest: Aug 20 2022 at 21:29)
 * [In a quantale, $$ a * \_ $$ is monotone](topic/topic_In.20a.20quantale.2C.20.24.24.20a.20*.20.5C_.20.24.24.20is.20monotone.html) (3 messages, latest: Aug 19 2022 at 20:16)
 * [reflective subcategory](topic/topic_reflective.20subcategory.html) (1 message, latest: Aug 19 2022 at 15:08)
 * [adjunction puzzle](topic/topic_adjunction.20puzzle.html) (10 messages, latest: Aug 19 2022 at 14:50)
@@ -718,4 +719,4 @@ permalink: /stream/229199-learning:-questions/index.html
 * [Algebra (Aluffi) exercises](topic/topic_Algebra.20(Aluffi).20exercises.html) (55 messages, latest: Mar 27 2020 at 23:38)
 * [What is category theory about?](topic/topic_What.20is.20category.20theory.20about.3F.html) (16 messages, latest: Mar 26 2020 at 16:03)
 
-<hr><p>Last updated: Aug 20 2022 at 00:52 UTC</p>
+<hr><p>Last updated: Aug 21 2022 at 00:53 UTC</p>

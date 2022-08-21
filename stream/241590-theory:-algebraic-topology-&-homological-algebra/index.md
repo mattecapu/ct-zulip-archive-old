@@ -9,7 +9,7 @@ permalink: /stream/241590-theory:-algebraic-topology-&-homological-algebra/index
 
 ### Topics:
 
-* [smallest common degenerate simplex](topic/topic_smallest.20common.20degenerate.20simplex.html) (27 messages, latest: Aug 19 2022 at 10:19)
+* [smallest common degenerate simplex](topic/topic_smallest.20common.20degenerate.20simplex.html) (45 messages, latest: Aug 20 2022 at 15:07)
 * [Delta generated spaces](topic/topic_Delta.20generated.20spaces.html) (16 messages, latest: Aug 15 2022 at 17:47)
 * [Steenrod algebra](topic/topic_Steenrod.20algebra.html) (4 messages, latest: Aug 02 2022 at 05:48)
 * [fully faithful Exit path functor](topic/topic_fully.20faithful.20Exit.20path.20functor.html) (1 message, latest: Jul 29 2022 at 15:52)
@@ -73,4 +73,4 @@ permalink: /stream/241590-theory:-algebraic-topology-&-homological-algebra/index
 * [simplicial sets](topic/topic_simplicial.20sets.html) (1 message, latest: Jul 02 2020 at 11:05)
 * [Secondary algebraic K-theory](topic/topic_Secondary.20algebraic.20K-theory.html) (13 messages, latest: Jun 01 2020 at 16:14)
 
-<hr><p>Last updated: Aug 20 2022 at 00:52 UTC</p>
+<hr><p>Last updated: Aug 21 2022 at 00:53 UTC</p>

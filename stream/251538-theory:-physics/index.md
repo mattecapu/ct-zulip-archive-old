@@ -26,4 +26,4 @@ permalink: /stream/251538-theory:-physics/index.html
 * [CFT and Elliptic Cohomology for Physicists](topic/topic_CFT.20and.20Elliptic.20Cohomology.20for.20Physicists.html) (12 messages, latest: Oct 26 2020 at 15:45)
 * [open systems in classical mechanics](topic/topic_open.20systems.20in.20classical.20mechanics.html) (17 messages, latest: Oct 20 2020 at 00:05)
 
-<hr><p>Last updated: Aug 20 2022 at 00:52 UTC</p>
+<hr><p>Last updated: Aug 21 2022 at 00:53 UTC</p>
