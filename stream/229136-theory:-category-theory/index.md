@@ -9,8 +9,9 @@ permalink: /stream/229136-theory:-category-theory/index.html
 
 ### Topics:
 
+* [Is there a name for a monoid with extra operations?](topic/topic_Is.20there.20a.20name.20for.20a.20monoid.20with.20extra.20operations.3F.html) (5 messages, latest: Aug 21 2022 at 13:55)
+* [old documents on fibered categories available by Bènabou,...](topic/topic_old.20documents.20on.20fibered.20categories.20available.20by.20B.C3.A8nabou.2C.2E.2E.2E.html) (5 messages, latest: Aug 21 2022 at 07:39)
 * [Beck's thesis and Grothendieck topologies](topic/topic_Beck's.20thesis.20and.20Grothendieck.20topologies.html) (4 messages, latest: Aug 20 2022 at 17:39)
-* [old documents on fibered categories available by Bènabou,...](topic/topic_old.20documents.20on.20fibered.20categories.20available.20by.20B.C3.A8nabou.2C.2E.2E.2E.html) (3 messages, latest: Aug 20 2022 at 11:50)
 * [Old documents on fibered categories available by Bènabou,...](topic/topic_Old.20documents.20on.20fibered.20categories.20available.20by.20B.C3.A8nabou.2C.2E.2E.2E.html) (1 message, latest: Aug 19 2022 at 08:27)
 * [the 2-category of adjoints](topic/topic_the.202-category.20of.20adjoints.html) (14 messages, latest: Aug 09 2022 at 14:51)
 * [this category "is an object of itself"!](topic/topic_this.20category.20.22is.20an.20object.20of.20itself.22!.html) (35 messages, latest: Aug 08 2022 at 22:46)
@@ -300,4 +301,4 @@ permalink: /stream/229136-theory:-category-theory/index.html
 * [diagrams for application](topic/topic_diagrams.20for.20application.html) (13 messages, latest: Mar 24 2020 at 06:19)
 * [universal constructions](topic/topic_universal.20constructions.html) (8 messages, latest: Mar 23 2020 at 21:06)
 
-<hr><p>Last updated: Aug 21 2022 at 00:53 UTC</p>
+<hr><p>Last updated: Aug 22 2022 at 00:55 UTC</p>
