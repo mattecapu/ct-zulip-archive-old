@@ -9,7 +9,8 @@ permalink: /stream/229199-learning:-questions/index.html
 
 ### Topics:
 
-* [subsets and subgroups](topic/topic_subsets.20and.20subgroups.html) (43 messages, latest: Aug 23 2022 at 00:44)
+* [reference for multi-actegories](topic/topic_reference.20for.20multi-actegories.html) (24 messages, latest: Aug 23 2022 at 22:52)
+* [subsets and subgroups](topic/topic_subsets.20and.20subgroups.html) (44 messages, latest: Aug 23 2022 at 17:42)
 * [adjunction puzzle](topic/topic_adjunction.20puzzle.html) (14 messages, latest: Aug 22 2022 at 12:52)
 * [differential forms in synthetic differential geometry](topic/topic_differential.20forms.20in.20synthetic.20differential.20geometry.html) (3 messages, latest: Aug 21 2022 at 16:11)
 * [Differential Forms in Synthetic Differential Geometry](topic/topic_Differential.20Forms.20in.20Synthetic.20Differential.20Geometry.html) (1 message, latest: Aug 20 2022 at 21:29)
@@ -721,4 +722,4 @@ permalink: /stream/229199-learning:-questions/index.html
 * [Algebra (Aluffi) exercises](topic/topic_Algebra.20(Aluffi).20exercises.html) (55 messages, latest: Mar 27 2020 at 23:38)
 * [What is category theory about?](topic/topic_What.20is.20category.20theory.20about.3F.html) (16 messages, latest: Mar 26 2020 at 16:03)
 
-<hr><p>Last updated: Aug 23 2022 at 01:03 UTC</p>
+<hr><p>Last updated: Aug 24 2022 at 00:55 UTC</p>

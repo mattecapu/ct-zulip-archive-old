@@ -9,13 +9,13 @@ permalink: /stream/229156-practice:-applied-ct/index.html
 
 ### Topics:
 
+* [web cats](topic/topic_web.20cats.html) (343 messages, latest: Aug 23 2022 at 18:00)
+* [security + ct](topic/topic_security.20.2B.20ct.html) (69 messages, latest: Aug 23 2022 at 17:44)
 * [stream events](topic/topic_stream.20events.html) (5 messages, latest: Aug 20 2022 at 09:46)
 * [categorical computability](topic/topic_categorical.20computability.html) (2 messages, latest: Aug 12 2022 at 00:34)
-* [web cats](topic/topic_web.20cats.html) (340 messages, latest: Aug 09 2022 at 14:02)
 * [ACT 2022](topic/topic_ACT.202022.html) (3 messages, latest: Jul 09 2022 at 14:59)
 * [Examples of Strict monoidal functors](topic/topic_Examples.20of.20Strict.20monoidal.20functors.html) (5 messages, latest: Jun 11 2022 at 00:15)
 * [ACT22](topic/topic_ACT22.html) (32 messages, latest: Jun 04 2022 at 11:42)
-* [security + ct](topic/topic_security.20.2B.20ct.html) (68 messages, latest: May 28 2022 at 17:58)
 * [category theory for nested data structures](topic/topic_category.20theory.20for.20nested.20data.20structures.html) (16 messages, latest: May 24 2022 at 22:13)
 * [Category theory for nested data structures](topic/topic_Category.20theory.20for.20nested.20data.20structures.html) (10 messages, latest: May 21 2022 at 17:41)
 * [around machine learning](topic/topic_around.20machine.20learning.html) (47 messages, latest: May 08 2022 at 12:34)
@@ -147,4 +147,4 @@ permalink: /stream/229156-practice:-applied-ct/index.html
 * [AACT2020](topic/topic_AACT2020.html) (1 message, latest: Mar 24 2020 at 00:56)
 * [welcome](topic/topic_welcome.html) (15 messages, latest: Mar 24 2020 at 00:03)
 
-<hr><p>Last updated: Aug 23 2022 at 01:03 UTC</p>
+<hr><p>Last updated: Aug 24 2022 at 00:55 UTC</p>
