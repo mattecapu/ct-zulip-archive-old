@@ -9,8 +9,12 @@ permalink: /stream/229199-learning:-questions/index.html
 
 ### Topics:
 
+* [continuous functions as functors?](topic/topic_continuous.20functions.20as.20functors.3F.html) (21 messages, latest: Aug 24 2022 at 23:29)
+* [natural transformation commutativity square](topic/topic_natural.20transformation.20commutativity.20square.html) (3 messages, latest: Aug 24 2022 at 22:44)
+* [n.t. commutativity square](topic/topic_n.2Et.2E.20commutativity.20square.html) (14 messages, latest: Aug 24 2022 at 20:45)
+* [Properads that are not props](topic/topic_Properads.20that.20are.20not.20props.html) (4 messages, latest: Aug 24 2022 at 19:54)
+* [subsets and subgroups](topic/topic_subsets.20and.20subgroups.html) (45 messages, latest: Aug 24 2022 at 01:21)
 * [reference for multi-actegories](topic/topic_reference.20for.20multi-actegories.html) (24 messages, latest: Aug 23 2022 at 22:52)
-* [subsets and subgroups](topic/topic_subsets.20and.20subgroups.html) (44 messages, latest: Aug 23 2022 at 17:42)
 * [adjunction puzzle](topic/topic_adjunction.20puzzle.html) (14 messages, latest: Aug 22 2022 at 12:52)
 * [differential forms in synthetic differential geometry](topic/topic_differential.20forms.20in.20synthetic.20differential.20geometry.html) (3 messages, latest: Aug 21 2022 at 16:11)
 * [Differential Forms in Synthetic Differential Geometry](topic/topic_Differential.20Forms.20in.20Synthetic.20Differential.20Geometry.html) (1 message, latest: Aug 20 2022 at 21:29)
@@ -24,7 +28,6 @@ permalink: /stream/229199-learning:-questions/index.html
 * [presheaves and injectivity classes](topic/topic_presheaves.20and.20injectivity.20classes.html) (1 message, latest: Aug 14 2022 at 14:19)
 * [definition of exponential object without cartesianness](topic/topic_definition.20of.20exponential.20object.20without.20cartesianness.html) (35 messages, latest: Aug 14 2022 at 08:41)
 * [beginner questions](topic/topic_beginner.20questions.html) (651 messages, latest: Aug 13 2022 at 23:29)
-* [n.t. commutativity square](topic/topic_n.2Et.2E.20commutativity.20square.html) (7 messages, latest: Aug 11 2022 at 18:50)
 * [tensor product of (bi)module objects](topic/topic_tensor.20product.20of.20(bi)module.20objects.html) (18 messages, latest: Aug 11 2022 at 11:36)
 * [dual to conjoints](topic/topic_dual.20to.20conjoints.html) (4 messages, latest: Aug 06 2022 at 03:16)
 * [Free metric group on a metric space](topic/topic_Free.20metric.20group.20on.20a.20metric.20space.html) (32 messages, latest: Aug 04 2022 at 13:26)
@@ -722,4 +725,4 @@ permalink: /stream/229199-learning:-questions/index.html
 * [Algebra (Aluffi) exercises](topic/topic_Algebra.20(Aluffi).20exercises.html) (55 messages, latest: Mar 27 2020 at 23:38)
 * [What is category theory about?](topic/topic_What.20is.20category.20theory.20about.3F.html) (16 messages, latest: Mar 26 2020 at 16:03)
 
-<hr><p>Last updated: Aug 24 2022 at 00:55 UTC</p>
+<hr><p>Last updated: Aug 25 2022 at 01:02 UTC</p>
