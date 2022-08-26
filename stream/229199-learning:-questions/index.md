@@ -9,10 +9,11 @@ permalink: /stream/229199-learning:-questions/index.html
 
 ### Topics:
 
+* [lifting properties](topic/topic_lifting.20properties.html) (12 messages, latest: Aug 25 2022 at 21:02)
+* [Properads that are not props](topic/topic_Properads.20that.20are.20not.20props.html) (5 messages, latest: Aug 25 2022 at 08:49)
 * [continuous functions as functors?](topic/topic_continuous.20functions.20as.20functors.3F.html) (21 messages, latest: Aug 24 2022 at 23:29)
 * [natural transformation commutativity square](topic/topic_natural.20transformation.20commutativity.20square.html) (3 messages, latest: Aug 24 2022 at 22:44)
 * [n.t. commutativity square](topic/topic_n.2Et.2E.20commutativity.20square.html) (14 messages, latest: Aug 24 2022 at 20:45)
-* [Properads that are not props](topic/topic_Properads.20that.20are.20not.20props.html) (4 messages, latest: Aug 24 2022 at 19:54)
 * [subsets and subgroups](topic/topic_subsets.20and.20subgroups.html) (45 messages, latest: Aug 24 2022 at 01:21)
 * [reference for multi-actegories](topic/topic_reference.20for.20multi-actegories.html) (24 messages, latest: Aug 23 2022 at 22:52)
 * [adjunction puzzle](topic/topic_adjunction.20puzzle.html) (14 messages, latest: Aug 22 2022 at 12:52)
@@ -725,4 +726,4 @@ permalink: /stream/229199-learning:-questions/index.html
 * [Algebra (Aluffi) exercises](topic/topic_Algebra.20(Aluffi).20exercises.html) (55 messages, latest: Mar 27 2020 at 23:38)
 * [What is category theory about?](topic/topic_What.20is.20category.20theory.20about.3F.html) (16 messages, latest: Mar 26 2020 at 16:03)
 
-<hr><p>Last updated: Aug 25 2022 at 01:02 UTC</p>
+<hr><p>Last updated: Aug 26 2022 at 00:58 UTC</p>
