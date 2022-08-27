@@ -8,7 +8,7 @@ permalink: /index.html
 
 ## Streams:
 
-* [learning: questions](stream/229199-learning:-questions/index.html) (716 topics)
+* [learning: questions](stream/229199-learning:-questions/index.html) (717 topics)
 
 * [theory: category theory](stream/229136-theory:-category-theory/index.html) (292 topics)
 
@@ -52,13 +52,13 @@ permalink: /index.html
 
 * [theory: probability](stream/253118-theory:-probability/index.html) (24 topics)
 
+* [learning: history of ideas](stream/232163-learning:-history-of-ideas/index.html) (23 topics)
+
 * [practice: Dialectica](stream/323208-practice:-Dialectica/index.html) (23 topics)
 
 * [practice: our work](stream/274877-practice:-our-work/index.html) (23 topics)
 
 * [practice: software](stream/229125-practice:-software/index.html) (23 topics)
-
-* [learning: history of ideas](stream/232163-learning:-history-of-ideas/index.html) (22 topics)
 
 * [workshop: Polynomial Functors @ Topos](stream/282140-workshop:-Polynomial-Functors-@-Topos/index.html) (22 topics)
 
@@ -174,4 +174,4 @@ permalink: /index.html
 
 * [theory: alternate presentations](stream/233122-theory:-alternate-presentations/index.html) (1 topic)
 
-<hr><p>Last updated: Aug 26 2022 at 00:58 UTC</p>
+<hr><p>Last updated: Aug 27 2022 at 00:52 UTC</p>

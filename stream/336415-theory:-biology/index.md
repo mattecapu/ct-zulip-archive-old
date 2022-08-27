@@ -9,8 +9,8 @@ permalink: /stream/336415-theory:-biology/index.html
 
 ### Topics:
 
-* [microlectics, mathematics, and life](topic/topic_microlectics.2C.20mathematics.2C.20and.20life.html) (7 messages, latest: Aug 24 2022 at 07:43)
+* [microlectics, mathematics, and life](topic/topic_microlectics.2C.20mathematics.2C.20and.20life.html) (8 messages, latest: Aug 26 2022 at 14:29)
 * [stream events](topic/topic_stream.20events.html) (3 messages, latest: Aug 20 2022 at 09:49)
 * [Microlectics, Mathematics, and Life](topic/topic_Microlectics.2C.20Mathematics.2C.20and.20Life.html) (14 messages, latest: Aug 19 2022 at 21:11)
 
-<hr><p>Last updated: Aug 26 2022 at 00:58 UTC</p>
+<hr><p>Last updated: Aug 27 2022 at 00:52 UTC</p>
