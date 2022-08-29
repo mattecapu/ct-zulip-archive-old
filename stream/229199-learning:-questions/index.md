@@ -9,8 +9,9 @@ permalink: /stream/229199-learning:-questions/index.html
 
 ### Topics:
 
+* [finitely presentable objects in presheaves](topic/topic_finitely.20presentable.20objects.20in.20presheaves.html) (1 message, latest: Aug 28 2022 at 20:42)
+* [lifting properties](topic/topic_lifting.20properties.html) (26 messages, latest: Aug 28 2022 at 14:19)
 * [Finitely presentable objects in presheaves](topic/topic_Finitely.20presentable.20objects.20in.20presheaves.html) (9 messages, latest: Aug 27 2022 at 17:25)
-* [lifting properties](topic/topic_lifting.20properties.html) (25 messages, latest: Aug 26 2022 at 15:13)
 * [Properads that are not props](topic/topic_Properads.20that.20are.20not.20props.html) (5 messages, latest: Aug 25 2022 at 08:49)
 * [continuous functions as functors?](topic/topic_continuous.20functions.20as.20functors.3F.html) (21 messages, latest: Aug 24 2022 at 23:29)
 * [natural transformation commutativity square](topic/topic_natural.20transformation.20commutativity.20square.html) (3 messages, latest: Aug 24 2022 at 22:44)
@@ -727,4 +728,4 @@ permalink: /stream/229199-learning:-questions/index.html
 * [Algebra (Aluffi) exercises](topic/topic_Algebra.20(Aluffi).20exercises.html) (55 messages, latest: Mar 27 2020 at 23:38)
 * [What is category theory about?](topic/topic_What.20is.20category.20theory.20about.3F.html) (16 messages, latest: Mar 26 2020 at 16:03)
 
-<hr><p>Last updated: Aug 28 2022 at 00:58 UTC</p>
+<hr><p>Last updated: Aug 29 2022 at 01:00 UTC</p>
