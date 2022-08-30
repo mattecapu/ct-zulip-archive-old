@@ -9,6 +9,7 @@ permalink: /stream/229111-general/index.html
 
 ### Topics:
 
+* [Category Theory in Japan](topic/topic_Category.20Theory.20in.20Japan.html) (4 messages, latest: Aug 29 2022 at 23:40)
 * [category theory tutor](topic/topic_category.20theory.20tutor.html) (1 message, latest: Aug 19 2022 at 06:42)
 * [new streams](topic/topic_new.20streams.html) (96 messages, latest: Aug 18 2022 at 18:39)
 * [introduce yourself!](topic/topic_introduce.20yourself!.html) (62 messages, latest: Aug 16 2022 at 22:09)
@@ -241,4 +242,4 @@ permalink: /stream/229111-general/index.html
 * [Tools for diagrams](topic/topic_Tools.20for.20diagrams.html) (78 messages, latest: Mar 25 2020 at 17:53)
 * [topic demonstration](topic/topic_topic.20demonstration.html) (2 messages, latest: Mar 23 2020 at 16:57)
 
-<hr><p>Last updated: Aug 29 2022 at 01:00 UTC</p>
+<hr><p>Last updated: Aug 30 2022 at 01:03 UTC</p>

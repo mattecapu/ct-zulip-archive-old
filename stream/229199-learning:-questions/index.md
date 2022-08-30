@@ -9,7 +9,8 @@ permalink: /stream/229199-learning:-questions/index.html
 
 ### Topics:
 
-* [finitely presentable objects in presheaves](topic/topic_finitely.20presentable.20objects.20in.20presheaves.html) (1 message, latest: Aug 28 2022 at 20:42)
+* [finitely presentable objects in presheaves](topic/topic_finitely.20presentable.20objects.20in.20presheaves.html) (3 messages, latest: Aug 29 2022 at 22:37)
+* [string diagrams 101](topic/topic_string.20diagrams.20101.html) (12 messages, latest: Aug 29 2022 at 11:54)
 * [lifting properties](topic/topic_lifting.20properties.html) (26 messages, latest: Aug 28 2022 at 14:19)
 * [Finitely presentable objects in presheaves](topic/topic_Finitely.20presentable.20objects.20in.20presheaves.html) (9 messages, latest: Aug 27 2022 at 17:25)
 * [Properads that are not props](topic/topic_Properads.20that.20are.20not.20props.html) (5 messages, latest: Aug 25 2022 at 08:49)
@@ -101,7 +102,6 @@ permalink: /stream/229199-learning:-questions/index.html
 * [injection endofunctor on surjections](topic/topic_injection.20endofunctor.20on.20surjections.html) (10 messages, latest: Mar 08 2022 at 13:22)
 * [enriched category](topic/topic_enriched.20category.html) (13 messages, latest: Mar 06 2022 at 12:38)
 * [Is the Grothendieck construction adhesive?](topic/topic_Is.20the.20Grothendieck.20construction.20adhesive.3F.html) (25 messages, latest: Mar 05 2022 at 16:07)
-* [string diagrams 101](topic/topic_string.20diagrams.20101.html) (11 messages, latest: Mar 03 2022 at 17:12)
 * [(infty,infty)-categories](topic/topic_(infty.2Cinfty)-categories.html) (5 messages, latest: Mar 01 2022 at 19:01)
 * [T(T(M))](topic/topic_T(T(M)).html) (29 messages, latest: Feb 28 2022 at 20:26)
 * [adding morphisms](topic/topic_adding.20morphisms.html) (49 messages, latest: Feb 27 2022 at 17:00)
@@ -728,4 +728,4 @@ permalink: /stream/229199-learning:-questions/index.html
 * [Algebra (Aluffi) exercises](topic/topic_Algebra.20(Aluffi).20exercises.html) (55 messages, latest: Mar 27 2020 at 23:38)
 * [What is category theory about?](topic/topic_What.20is.20category.20theory.20about.3F.html) (16 messages, latest: Mar 26 2020 at 16:03)
 
-<hr><p>Last updated: Aug 29 2022 at 01:00 UTC</p>
+<hr><p>Last updated: Aug 30 2022 at 01:03 UTC</p>
