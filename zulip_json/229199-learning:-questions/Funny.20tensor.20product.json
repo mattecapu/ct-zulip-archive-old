@@ -1,0 +1,68 @@
+[
+    {
+        "content": "<p>I'm trying to define the funny tensor product in Coq, and the idea of \"separately functorial\" that distinguishes it from the cartesian product. However, I'm stuck on how to concretely define morphisms in the category C □ D. Mark Weber describes this using generators and relations, but I'm having difficulty translating this characterization into a type of morphisms. Can anyone offer further hints or guidance?</p>",
+        "id": 296185578,
+        "sender_full_name": "John Wiegley",
+        "timestamp": 1661883221
+    },
+    {
+        "content": "<p>In type theory, an object described using generators and relations can either be a higher inductive type or (under conditions or assumptions that make this valid) the quotient of an inductive type.  What approach are you taking to quotients in Coq?</p>",
+        "id": 296187234,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1661883704
+    },
+    {
+        "content": "<p>It might be possible to describe the morphisms in <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>C</mi><mo mathvariant=\"normal\" lspace=\"0.22em\" rspace=\"0.22em\">□</mo><mi>D</mi></mrow><annotation encoding=\"application/x-tex\">C\\mathbin{\\Box} D</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.07153em;\">C</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span><span class=\"mbin\"><span class=\"mord amsrm\">□</span></span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.02778em;\">D</span></span></span></span> as a purely inductive type without any quotients in some cases, but I would expect you need at least some assumption like decidability of the identity morphisms in <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>C</mi></mrow><annotation encoding=\"application/x-tex\">C</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.07153em;\">C</span></span></span></span> and <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>D</mi></mrow><annotation encoding=\"application/x-tex\">D</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.02778em;\">D</span></span></span></span>.</p>",
+        "id": 296187565,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1661883798
+    },
+    {
+        "content": "<p>I suppose a first question before answering that would be: Is generators+relations the only way to define the morphisms of this category?</p>",
+        "id": 296188287,
+        "sender_full_name": "John Wiegley",
+        "timestamp": 1661884038
+    },
+    {
+        "content": "<p>I'm looking for a definition that is constructive, and can be computable, like the morphisms in the regular product category. As I understand it, it's just this difference in functoriality that should matter. Is it accurate to say that?</p>",
+        "id": 296189715,
+        "sender_full_name": "John Wiegley",
+        "timestamp": 1661884515
+    },
+    {
+        "content": "<p>I intended to address that point in my second comment.  I believe that generators and relations is most likely the only constructive way to do it.  Classically, or if identity morphisms are decidable, I would conjecture you can probably define the morphisms to be zigzags of nonidentity morphisms that alternate being from <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>C</mi></mrow><annotation encoding=\"application/x-tex\">C</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.07153em;\">C</span></span></span></span> and <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>D</mi></mrow><annotation encoding=\"application/x-tex\">D</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.02778em;\">D</span></span></span></span>.</p>",
+        "id": 296189764,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1661884535
+    },
+    {
+        "content": "<p>Why zigzags? Shouldn't they go in the same direction, just alternating between both components?<br>\nOr do I misunderstand?</p>",
+        "id": 296190051,
+        "sender_full_name": "Tobias Schmude",
+        "timestamp": 1661884639
+    },
+    {
+        "content": "<p>Sorry, I didn't mean zigzags in the sense of \"forwards and backwards\" but in the sense of \"rightwards and downwards\".  I'm thinking of the objects of <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>C</mi><mo mathvariant=\"normal\" lspace=\"0.22em\" rspace=\"0.22em\">□</mo><mi>D</mi></mrow><annotation encoding=\"application/x-tex\">C \\mathbin{\\Box} D</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.07153em;\">C</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span><span class=\"mbin\"><span class=\"mord amsrm\">□</span></span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.02778em;\">D</span></span></span></span> as in a grid, with <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>C</mi></mrow><annotation encoding=\"application/x-tex\">C</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.07153em;\">C</span></span></span></span> running left to right and <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>D</mi></mrow><annotation encoding=\"application/x-tex\">D</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.02778em;\">D</span></span></span></span> running up to down.  Then the morphisms of <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>C</mi><mo>×</mo><mi>D</mi></mrow><annotation encoding=\"application/x-tex\">C\\times D</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.7667em;vertical-align:-0.0833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.07153em;\">C</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span><span class=\"mbin\">×</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.02778em;\">D</span></span></span></span> are arbitrary southeasterly diagonals (\"as the crow flies\") while the morphisms of <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>C</mi><mo mathvariant=\"normal\" lspace=\"0.22em\" rspace=\"0.22em\">□</mo><mi>D</mi></mrow><annotation encoding=\"application/x-tex\">C \\mathbin{\\Box} D</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.07153em;\">C</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span><span class=\"mbin\"><span class=\"mord amsrm\">□</span></span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.02778em;\">D</span></span></span></span> have to alternate between going due east and due south (\"taxicab paths\").</p>",
+        "id": 296190830,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1661884904
+    },
+    {
+        "content": "<p>That's a great intuition! Mine was having the component morphisms on two parallel lines, then there are no zig-zags.</p>",
+        "id": 296191741,
+        "sender_full_name": "Tobias Schmude",
+        "timestamp": 1661885169
+    },
+    {
+        "content": "<p>Glad you like it.  Anyway, the generators-and-relations description says, in particular, that if you have such a zigzag that goes right by some morphism of <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>C</mi></mrow><annotation encoding=\"application/x-tex\">C</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.07153em;\">C</span></span></span></span>, then down by an identity morphism in <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>D</mi></mrow><annotation encoding=\"application/x-tex\">D</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.02778em;\">D</span></span></span></span>, then right by another morphism of <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>C</mi></mrow><annotation encoding=\"application/x-tex\">C</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.07153em;\">C</span></span></span></span>, that's the same as omitting the identity morphism and composing the two morphisms in <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>C</mi></mrow><annotation encoding=\"application/x-tex\">C</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.07153em;\">C</span></span></span></span>.  If identity morphisms are decidable, then you may be able to eliminate this quotient and obtain a canonical form for morphisms of <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>C</mi><mo mathvariant=\"normal\" lspace=\"0.22em\" rspace=\"0.22em\">□</mo><mi>D</mi></mrow><annotation encoding=\"application/x-tex\">C \\mathbin{\\Box} D</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.07153em;\">C</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span><span class=\"mbin\"><span class=\"mord amsrm\">□</span></span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.02778em;\">D</span></span></span></span> by requiring all the morphisms in the zigzag to be nonidentities (with the zero-length zigzag being the identity morphism), but constructively without decidable identities it seems to me the quotient is unavoidable.</p>",
+        "id": 296192357,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1661885384
+    },
+    {
+        "content": "<p>Thank you for the clarification, Mike! I will have to try with quotients then.</p>",
+        "id": 296192924,
+        "sender_full_name": "John Wiegley",
+        "timestamp": 1661885566
+    }
+]
