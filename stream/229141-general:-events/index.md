@@ -9,8 +9,8 @@ permalink: /stream/229141-general:-events/index.html
 
 ### Topics:
 
-* [2023 Joint Mathematical Meeting](topic/topic_2023.20Joint.20Mathematical.20Meeting.html) (30 messages, latest: Aug 28 2022 at 20:44)
-* [SYCO 9, Como](topic/topic_SYCO.209.2C.20Como.html) (26 messages, latest: Aug 17 2022 at 12:53)
+* [2023 Joint Mathematical Meeting](topic/topic_2023.20Joint.20Mathematical.20Meeting.html) (31 messages, latest: Aug 31 2022 at 17:46)
+* [SYCO 9, Como](topic/topic_SYCO.209.2C.20Como.html) (27 messages, latest: Aug 31 2022 at 16:45)
 * [Categories and Companions 2022](topic/topic_Categories.20and.20Companions.202022.html) (4 messages, latest: Aug 12 2022 at 19:16)
 * [BIRS workshop on formalization of cohomology theories](topic/topic_BIRS.20workshop.20on.20formalization.20of.20cohomology.20theories.html) (1 message, latest: Aug 11 2022 at 14:51)
 * [BLAST 2022](topic/topic_BLAST.202022.html) (8 messages, latest: Aug 10 2022 at 14:36)
@@ -147,4 +147,4 @@ permalink: /stream/229141-general:-events/index.html
 * [April 1st: ACT@UCR](topic/topic_April.201st.3A.20ACT.40UCR.html) (3 messages, latest: Mar 26 2020 at 23:58)
 * [Google Sites problem](topic/topic_Google.20Sites.20problem.html) (4 messages, latest: Mar 25 2020 at 04:29)
 
-<hr><p>Last updated: Aug 31 2022 at 01:05 UTC</p>
+<hr><p>Last updated: Sep 01 2022 at 00:54 UTC</p>
