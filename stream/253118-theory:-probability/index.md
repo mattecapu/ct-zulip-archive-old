@@ -9,8 +9,8 @@ permalink: /stream/253118-theory:-probability/index.html
 
 ### Topics:
 
+* [strengths of the Giry monad](topic/topic_strengths.20of.20the.20Giry.20monad.html) (2 messages, latest: Sep 01 2022 at 09:46)
 * ['almost closed'?](topic/topic_'almost.20closed'.3F.html) (1 message, latest: Aug 29 2022 at 09:20)
-* [strengths of the Giry monad](topic/topic_strengths.20of.20the.20Giry.20monad.html) (1 message, latest: Aug 29 2022 at 09:01)
 * ["quasi-knowledge" of an agent as an R-algebra and convex opt](topic/topic_.22quasi-knowledge.22.20of.20an.20agent.20as.20an.20R-algebra.20and.20convex.20opt.html) (13 messages, latest: Aug 10 2022 at 23:09)
 * [unnormalised Markov categories with conditionals](topic/topic_unnormalised.20Markov.20categories.20with.20conditionals.html) (6 messages, latest: Jun 06 2022 at 08:58)
 * [Gaussian mixtures](topic/topic_Gaussian.20mixtures.html) (4 messages, latest: Jun 03 2022 at 07:28)
@@ -36,4 +36,4 @@ permalink: /stream/253118-theory:-probability/index.html
 * [Finitely additive probability](topic/topic_Finitely.20additive.20probability.html) (1 message, latest: Aug 16 2020 at 00:48)
 * [stream events](topic/topic_stream.20events.html) (2 messages, latest: Aug 16 2020 at 00:31)
 
-<hr><p>Last updated: Sep 01 2022 at 00:54 UTC</p>
+<hr><p>Last updated: Sep 02 2022 at 00:57 UTC</p>
