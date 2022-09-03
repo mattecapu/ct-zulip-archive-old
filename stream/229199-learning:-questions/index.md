@@ -9,11 +9,12 @@ permalink: /stream/229199-learning:-questions/index.html
 
 ### Topics:
 
-* [Colimits of Lawvere theories](topic/topic_Colimits.20of.20Lawvere.20theories.html) (69 messages, latest: Sep 01 2022 at 22:14)
+* [colimits of Lawvere theories](topic/topic_colimits.20of.20Lawvere.20theories.html) (26 messages, latest: Sep 02 2022 at 22:32)
+* [finitely presentable objects in presheaves](topic/topic_finitely.20presentable.20objects.20in.20presheaves.html) (4 messages, latest: Sep 02 2022 at 11:06)
+* [string diagrams 101](topic/topic_string.20diagrams.20101.html) (13 messages, latest: Sep 02 2022 at 07:53)
+* [Colimits of Lawvere theories](topic/topic_Colimits.20of.20Lawvere.20theories.html) (70 messages, latest: Sep 02 2022 at 07:43)
 * [Lindy Hop dance](topic/topic_Lindy.20Hop.20dance.html) (11 messages, latest: Aug 31 2022 at 18:16)
 * [Funny tensor product](topic/topic_Funny.20tensor.20product.html) (11 messages, latest: Aug 30 2022 at 18:52)
-* [finitely presentable objects in presheaves](topic/topic_finitely.20presentable.20objects.20in.20presheaves.html) (3 messages, latest: Aug 29 2022 at 22:37)
-* [string diagrams 101](topic/topic_string.20diagrams.20101.html) (12 messages, latest: Aug 29 2022 at 11:54)
 * [lifting properties](topic/topic_lifting.20properties.html) (26 messages, latest: Aug 28 2022 at 14:19)
 * [Finitely presentable objects in presheaves](topic/topic_Finitely.20presentable.20objects.20in.20presheaves.html) (9 messages, latest: Aug 27 2022 at 17:25)
 * [Properads that are not props](topic/topic_Properads.20that.20are.20not.20props.html) (5 messages, latest: Aug 25 2022 at 08:49)
@@ -731,4 +732,4 @@ permalink: /stream/229199-learning:-questions/index.html
 * [Algebra (Aluffi) exercises](topic/topic_Algebra.20(Aluffi).20exercises.html) (55 messages, latest: Mar 27 2020 at 23:38)
 * [What is category theory about?](topic/topic_What.20is.20category.20theory.20about.3F.html) (16 messages, latest: Mar 26 2020 at 16:03)
 
-<hr><p>Last updated: Sep 02 2022 at 00:57 UTC</p>
+<hr><p>Last updated: Sep 03 2022 at 00:54 UTC</p>

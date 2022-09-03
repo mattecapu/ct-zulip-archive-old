@@ -9,6 +9,7 @@ permalink: /stream/229111-general/index.html
 
 ### Topics:
 
+* [Gruppenpest](topic/topic_Gruppenpest.html) (2 messages, latest: Sep 02 2022 at 22:36)
 * [category theory in Japan](topic/topic_category.20theory.20in.20Japan.html) (5 messages, latest: Aug 30 2022 at 09:16)
 * [Category Theory in Japan](topic/topic_Category.20Theory.20in.20Japan.html) (4 messages, latest: Aug 29 2022 at 23:40)
 * [category theory tutor](topic/topic_category.20theory.20tutor.html) (1 message, latest: Aug 19 2022 at 06:42)
@@ -243,4 +244,4 @@ permalink: /stream/229111-general/index.html
 * [Tools for diagrams](topic/topic_Tools.20for.20diagrams.html) (78 messages, latest: Mar 25 2020 at 17:53)
 * [topic demonstration](topic/topic_topic.20demonstration.html) (2 messages, latest: Mar 23 2020 at 16:57)
 
-<hr><p>Last updated: Sep 02 2022 at 00:57 UTC</p>
+<hr><p>Last updated: Sep 03 2022 at 00:54 UTC</p>
