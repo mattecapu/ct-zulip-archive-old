@@ -1,0 +1,210 @@
+---
+layout: archive
+title: Zulip Chat Archive
+permalink: /stream/229136-theory:-category-theory/topic/topic_simple.20examples.20of.20equivalences.html
+---
+
+<h2>Stream: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/index.html">theory: category theory</a></h2>
+<h3>Topic: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/topic_simple.20examples.20of.20equivalences.html">simple examples of equivalences</a></h3>
+
+<hr>
+
+<base href="https://categorytheory.zulipchat.com/">
+
+{% raw %}
+
+<a name="296926404"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/simple%20examples%20of%20equivalences/near/296926404" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/topic_simple.20examples.20of.20equivalences.html#296926404">(Sep 03 2022 at 01:02)</a>:</h4>
+<p>I'm looking for examples of nontrivial equivalences of groupoids that will feel familiar to an audience with as little mathematical background as possible.  (I want to use them to explain notions of equivalence of types in HOTT, in a talk for philosophers.  Of course, they could be the core of an equivalence of categories.)</p>
+<p>So far, the best example I've thought of is between</p>
+<ul>
+<li>the groupoid whose objects are finite-dimensional vector spaces and whose morphisms are linear isomorphisms, and</li>
+<li>the groupoid whose objects are natural numbers and whose morphisms are invertible matrices.</li>
+</ul>
+<p>This is pretty good because it should feel familiar to anyone with undergraduate linear algebra.  However, I would prefer an example in which neither groupoid is skeletal.  Any ideas?  I feel like some kind of duality might work, but I haven't been able to think of any dualities that will feel familiar at a comparable level of background.</p>
+
+
+
+<a name="296931000"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/simple%20examples%20of%20equivalences/near/296931000" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Joe Moeller <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/topic_simple.20examples.20of.20equivalences.html#296931000">(Sep 03 2022 at 01:49)</a>:</h4>
+<p>Maybe you can do something intermediate like finite sets and invertible matrices as mappings between the spans.</p>
+
+
+
+<a name="296931051"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/simple%20examples%20of%20equivalences/near/296931051" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> David Egolf <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/topic_simple.20examples.20of.20equivalences.html#296931051">(Sep 03 2022 at 01:50)</a>:</h4>
+<p>The most intuitive explanation of an equivalence of categories that I've seen (for me) was "A functor F : A → B is called an equivalence provided that it is full, faithful, and isomorphism-dense in the sense that for any B-object B there exists some A-object A such that F (A) is isomorphic to B." (from "Abstract and Concrete Categories").<br>
+The mental picture I get is that the category B has all the objects of A in it (up to isomorphism), and they are related as they are in A, but we've also potentially got some extra objects. However, these extra objects are just isomorphic to ones from A and so they don't really add anything new.<br>
+Along these lines, maybe one can cook up some simple example by endowing objects with some extra property that is ignored by morphisms? For example, one could colour sets (every element is red or blue), but not require functions to respect colourings. Then any two sets with the same number of elements would still be isomorphic (even if they have different colourings). It seems intuitively to me like this might give a category equivalent to <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="sans-serif">S</mi><mi mathvariant="sans-serif">e</mi><mi mathvariant="sans-serif">t</mi></mrow><annotation encoding="application/x-tex">\mathsf{Set}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord"><span class="mord mathsf">Set</span></span></span></span></span>.<br>
+I don't know if this sort of thing would make a good example. I'm just trying to present an intuition that makes sense for me, and might make sense to your audience - the idea that two equivalent categories have essentially all the same things, but some extra copies of those same things might exist in one of them.</p>
+
+
+
+<a name="296931921"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/simple%20examples%20of%20equivalences/near/296931921" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Ralph Sarkis <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/topic_simple.20examples.20of.20equivalences.html#296931921">(Sep 03 2022 at 02:08)</a>:</h4>
+<p>The equivalence between the category of sets and partial functions and the category of pointed sets.<br>
+The equivalence between a groupoid and its arrow category.</p>
+
+
+
+<a name="296933880"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/simple%20examples%20of%20equivalences/near/296933880" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/topic_simple.20examples.20of.20equivalences.html#296933880">(Sep 03 2022 at 02:50)</a>:</h4>
+<p>I should have specified that I want a <em>naturally occurring</em> example.  I don't think it'll be very convincing if one or both of the examples are cooked up artificially, such as by equipping them with irrelevant structure.  </p>
+<p>Ideally, I'd also like the objects <em>both</em> groupoids to be just some kind of "structured set", so that in HoTT you would get the correct 1-type just by defining them naively and applying univalence.  My example satisfies this on one side (vector spaces) but not the other (matrices, which would have to be constructed in HoTT as a HIT).</p>
+
+
+
+<a name="296933892"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/simple%20examples%20of%20equivalences/near/296933892" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/topic_simple.20examples.20of.20equivalences.html#296933892">(Sep 03 2022 at 02:50)</a>:</h4>
+<p><span class="user-mention" data-user-id="275914">@Joe Moeller</span> I don't understand what you have in mind, can you clarify?</p>
+
+
+
+<a name="296933920"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/simple%20examples%20of%20equivalences/near/296933920" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Zhen Lin Low <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/topic_simple.20examples.20of.20equivalences.html#296933920">(Sep 03 2022 at 02:51)</a>:</h4>
+<p>How about finite boolean algebras and finite sets?</p>
+
+
+
+<a name="296934241"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/simple%20examples%20of%20equivalences/near/296934241" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/topic_simple.20examples.20of.20equivalences.html#296934241">(Sep 03 2022 at 02:58)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="284005">Ralph Sarkis</span> <a href="#narrow/stream/229136-theory.3A-category-theory/topic/simple.20examples.20of.20equivalences/near/296931921">said</a>:</p>
+<blockquote>
+<p>The equivalence between the category of sets and partial functions and the category of pointed sets.</p>
+</blockquote>
+<p>Unfortunately, this one gets much less interesting when you pass to cores, since an isomorphism in the category of partial functions is just a bijection.  It's still not too bad of an example, and has the advantage that both 1-types can be defined in HoTT using only univalence.  It does rely on classical logic, though... (-:O</p>
+
+
+
+<a name="296934467"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/simple%20examples%20of%20equivalences/near/296934467" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/topic_simple.20examples.20of.20equivalences.html#296934467">(Sep 03 2022 at 03:03)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="416301">Zhen Lin Low</span> <a href="#narrow/stream/229136-theory.3A-category-theory/topic/simple.20examples.20of.20equivalences/near/296933920">said</a>:</p>
+<blockquote>
+<p>How about finite boolean algebras and finite sets?</p>
+</blockquote>
+<p>Hmm, that's not bad.  I thought of CABAs and decided they seemed too advanced, but I forgot that finite BAs are always CA.  Boolean algebras are less standard in undergraduate curricula than vector spaces, but probably philosophers of mathematics would all know what they are.</p>
+
+
+
+<a name="296934526"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/simple%20examples%20of%20equivalences/near/296934526" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/topic_simple.20examples.20of.20equivalences.html#296934526">(Sep 03 2022 at 03:04)</a>:</h4>
+<p>(Also relies on classical logic.  (-:O )</p>
+
+
+
+<a name="296934800"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/simple%20examples%20of%20equivalences/near/296934800" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Zhen Lin Low <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/topic_simple.20examples.20of.20equivalences.html#296934800">(Sep 03 2022 at 03:09)</a>:</h4>
+<p>How about another favourite of undergraduates: finite Galois extensions of K and finite transitive Gal(K)-sets? (Actually, I have no intuition for whether this relies of classical logic...)</p>
+
+
+
+<a name="296936304"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/simple%20examples%20of%20equivalences/near/296936304" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/topic_simple.20examples.20of.20equivalences.html#296936304">(Sep 03 2022 at 03:35)</a>:</h4>
+<p>Ah, yes, that's a good one.  Although rather more advanced.</p>
+<p>I don't really object to classical logic for this purpose, I was just mentioning it out of habit.  (-:</p>
+
+
+
+<a name="296952136"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/simple%20examples%20of%20equivalences/near/296952136" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Ulrik Buchholtz <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/topic_simple.20examples.20of.20equivalences.html#296952136">(Sep 03 2022 at 07:32)</a>:</h4>
+<p>Any interesting/exceptional group isomorphism gives an example, particularly if you have nice incarnations of the groups as symmetry groups. For example:</p>
+<ul>
+<li>3-element sets and regular triangles (for the latter, you can pick pairs of an unordered euclidean plane with an embedded unit-length regular triangle)</li>
+<li>4-element sets, regular tetrahedra, and regular oriented octahedra (for the latter, do as above but with oriented euclidean 3-spaces, or implement in terms of graphs)</li>
+<li>4-element sets with a sign ordering, regular oriented tetrahedra, as well as projective planes over the 3-element field</li>
+<li>5-element sets and projective planes over the 5-element field</li>
+<li>5-element sets with a sign ordering and regular oriented icosahedra</li>
+<li>n-element sets with a cyclic ordering and normal n-fold covering spaces over the circle</li>
+<li>etc. etc.<br>
+(We have many of these in the <a href="https://github.com/UniMath/SymmetryBook/">Symmetry book</a>.)</li>
+</ul>
+
+
+
+<a name="296974131"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/simple%20examples%20of%20equivalences/near/296974131" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/topic_simple.20examples.20of.20equivalences.html#296974131">(Sep 03 2022 at 10:46)</a>:</h4>
+<p>I like Ulrik's examples a lot.  Students may have trouble at first understanding groupoids like the groupoid of "oriented regular octahedra"at first, but this sort of groupoid is very intuitive once explained.  Actually I'd use the equivalent groupoid of "oriented cubes" since cubes are, sadly, much more familiar to most people.</p>
+
+
+
+<a name="296974338"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/simple%20examples%20of%20equivalences/near/296974338" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/topic_simple.20examples.20of.20equivalences.html#296974338">(Sep 03 2022 at 10:48)</a>:</h4>
+<p>You can draw some cubes on the board (as long as the students gets the idea of perspective) or pull a couple of cubes out of your pocket, and explain what it means for two of them to be isomorphic in an orientation-preserving way, and then show that the resulting groupoid is equivalent to the groupoid of 4-element sets.</p>
+
+
+
+<a name="296974462"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/simple%20examples%20of%20equivalences/near/296974462" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/topic_simple.20examples.20of.20equivalences.html#296974462">(Sep 03 2022 at 10:49)</a>:</h4>
+<p>The 4-element set hiding in a cube is its set of "axes": the long diagonals between opposite vertices of the cube.</p>
+
+
+
+<a name="296974593"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/simple%20examples%20of%20equivalences/near/296974593" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/topic_simple.20examples.20of.20equivalences.html#296974593">(Sep 03 2022 at 10:50)</a>:</h4>
+<p>It <em>does</em>, alas, take a bit of thought to see that any permutation of the cube's 4 axes can be realized by a unique rotation of the cube.</p>
+
+
+
+<a name="296974743"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/simple%20examples%20of%20equivalences/near/296974743" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/topic_simple.20examples.20of.20equivalences.html#296974743">(Sep 03 2022 at 10:52)</a>:</h4>
+<p>I might resort to "proof by example".  I'd take a cube with its pairs of opposite vertices labeled 1,2,3,4, then get the students to name a permutation of {1,2,3,4}, and then show them a rotation of the cube that implements this permutation.</p>
+
+
+
+<a name="296974861"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/simple%20examples%20of%20equivalences/near/296974861" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/topic_simple.20examples.20of.20equivalences.html#296974861">(Sep 03 2022 at 10:53)</a>:</h4>
+<p>This is fine if you're trying to get them to start thinking about this stuff, rather than nail down facts with rigorous proofs.</p>
+
+
+
+<a name="297017568"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/simple%20examples%20of%20equivalences/near/297017568" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/topic_simple.20examples.20of.20equivalences.html#297017568">(Sep 03 2022 at 17:10)</a>:</h4>
+<p>Those are certainly nice!  I would prefer a non-connected example though; can you put several of them together in some way?</p>
+
+
+
+<a name="297020041"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/simple%20examples%20of%20equivalences/near/297020041" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Ulrik Buchholtz <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/topic_simple.20examples.20of.20equivalences.html#297020041">(Sep 03 2022 at 17:38)</a>:</h4>
+<p>how about the last one: cyclically ordered sets and normal coverings of the circle? (Or sets with a permutation and all coverings.)</p>
+
+
+
+<a name="297020246"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/simple%20examples%20of%20equivalences/near/297020246" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/topic_simple.20examples.20of.20equivalences.html#297020246">(Sep 03 2022 at 17:41)</a>:</h4>
+<p>The groupoid of n-element sets equipped with a permutation and the groupoid of n-sheeted coverings of the circle are equivalent - this is a nice variant of the example Ulrik just mentioned.</p>
+
+
+
+<a name="297020373"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/simple%20examples%20of%20equivalences/near/297020373" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/topic_simple.20examples.20of.20equivalences.html#297020373">(Sep 03 2022 at 17:43)</a>:</h4>
+<p>This groupoid is also equivalent to the <a href="https://ncatlab.org/nlab/show/action%20groupoid">[[action groupoid]]</a> <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>S</mi><mi>n</mi></msub><mi mathvariant="normal">/</mi><mtext> ⁣</mtext><mi mathvariant="normal">/</mi><msub><mi>S</mi><mi>n</mi></msub></mrow><annotation encoding="application/x-tex">S_n /\!/ S_n</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.05764em;">S</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.1514em;"><span style="top:-2.55em;margin-left:-0.0576em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">n</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mord">/</span><span class="mspace" style="margin-right:-0.1667em;"></span><span class="mord">/</span><span class="mord"><span class="mord mathnormal" style="margin-right:0.05764em;">S</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.1514em;"><span style="top:-2.55em;margin-left:-0.0576em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">n</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span> where the permutation group is acting on itself by conjugation.</p>
+
+
+
+<a name="297020667"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/simple%20examples%20of%20equivalences/near/297020667" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/topic_simple.20examples.20of.20equivalences.html#297020667">(Sep 03 2022 at 17:46)</a>:</h4>
+<p>There's a lot of nice combinatorics here; for example the number of connected components of this groupoid is the number of conjugacy classes of <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>S</mi><mi>n</mi></msub></mrow><annotation encoding="application/x-tex">S_n</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.05764em;">S</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.1514em;"><span style="top:-2.55em;margin-left:-0.0576em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">n</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span>, which is the <a href="https://en.wikipedia.org/wiki/Partition_(number_theory)">number of partitions</a> of <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi></mrow><annotation encoding="application/x-tex">n</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord mathnormal">n</span></span></span></span>, usually written <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">p(n)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal">p</span><span class="mopen">(</span><span class="mord mathnormal">n</span><span class="mclose">)</span></span></span></span>.</p>
+
+
+
+<a name="297020986"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/simple%20examples%20of%20equivalences/near/297020986" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Ulrik Buchholtz <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/topic_simple.20examples.20of.20equivalences.html#297020986">(Sep 03 2022 at 17:50)</a>:</h4>
+<p>Another collection of non-connected examples might come from incidence geometry, for example, affine planes and pairs of a projective plane with a line.</p>
+
+
+
+<a name="297021142"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/simple%20examples%20of%20equivalences/near/297021142" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/topic_simple.20examples.20of.20equivalences.html#297021142">(Sep 03 2022 at 17:53)</a>:</h4>
+<p>We recently had a long conversation about that example <a href="#narrow/stream/229199-learning.3A-questions/topic/groupoids.20of.20affine.20planes">here</a> - it's an exercise in Emily Riehl's book.</p>
+
+
+
+<a name="297023003"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/simple%20examples%20of%20equivalences/near/297023003" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/topic_simple.20examples.20of.20equivalences.html#297023003">(Sep 03 2022 at 18:16)</a>:</h4>
+<p>Hmm, okay.  I had to look up what a "normal covering" is, though.  (-:</p>
+
+
+
+{% endraw %}
+
+<hr><p>Last updated: Sep 04 2022 at 00:56 UTC</p>

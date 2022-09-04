@@ -9,6 +9,7 @@ permalink: /stream/229136-theory:-category-theory/index.html
 
 ### Topics:
 
+* [simple examples of equivalences](topic/topic_simple.20examples.20of.20equivalences.html) (27 messages, latest: Sep 03 2022 at 18:16)
 * [A site of Joyal-Street string diagrams?](topic/topic_A.20site.20of.20Joyal-Street.20string.20diagrams.3F.html) (10 messages, latest: Sep 02 2022 at 20:02)
 * [Audrey Tan's thesis](topic/topic_Audrey.20Tan's.20thesis.html) (6 messages, latest: Sep 01 2022 at 09:39)
 * [Is there a name for a monoid with extra operations?](topic/topic_Is.20there.20a.20name.20for.20a.20monoid.20with.20extra.20operations.3F.html) (5 messages, latest: Aug 21 2022 at 13:55)
@@ -303,4 +304,4 @@ permalink: /stream/229136-theory:-category-theory/index.html
 * [diagrams for application](topic/topic_diagrams.20for.20application.html) (13 messages, latest: Mar 24 2020 at 06:19)
 * [universal constructions](topic/topic_universal.20constructions.html) (8 messages, latest: Mar 23 2020 at 21:06)
 
-<hr><p>Last updated: Sep 03 2022 at 00:54 UTC</p>
+<hr><p>Last updated: Sep 04 2022 at 00:56 UTC</p>
