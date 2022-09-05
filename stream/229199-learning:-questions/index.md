@@ -9,6 +9,7 @@ permalink: /stream/229199-learning:-questions/index.html
 
 ### Topics:
 
+* [order structure on open covers of a topological space?](topic/topic_order.20structure.20on.20open.20covers.20of.20a.20topological.20space.3F.html) (6 messages, latest: Sep 05 2022 at 00:43)
 * [colimits of Lawvere theories](topic/topic_colimits.20of.20Lawvere.20theories.html) (27 messages, latest: Sep 03 2022 at 11:40)
 * [finitely presentable objects in presheaves](topic/topic_finitely.20presentable.20objects.20in.20presheaves.html) (4 messages, latest: Sep 02 2022 at 11:06)
 * [string diagrams 101](topic/topic_string.20diagrams.20101.html) (13 messages, latest: Sep 02 2022 at 07:53)
@@ -732,4 +733,4 @@ permalink: /stream/229199-learning:-questions/index.html
 * [Algebra (Aluffi) exercises](topic/topic_Algebra.20(Aluffi).20exercises.html) (55 messages, latest: Mar 27 2020 at 23:38)
 * [What is category theory about?](topic/topic_What.20is.20category.20theory.20about.3F.html) (16 messages, latest: Mar 26 2020 at 16:03)
 
-<hr><p>Last updated: Sep 04 2022 at 00:56 UTC</p>
+<hr><p>Last updated: Sep 05 2022 at 01:06 UTC</p>

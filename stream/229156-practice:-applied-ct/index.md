@@ -9,7 +9,7 @@ permalink: /stream/229156-practice:-applied-ct/index.html
 
 ### Topics:
 
-* [web cats](topic/topic_web.20cats.html) (345 messages, latest: Aug 31 2022 at 20:25)
+* [web cats](topic/topic_web.20cats.html) (346 messages, latest: Sep 04 2022 at 08:34)
 * [around machine learning](topic/topic_around.20machine.20learning.html) (49 messages, latest: Aug 27 2022 at 12:03)
 * [security + ct](topic/topic_security.20.2B.20ct.html) (69 messages, latest: Aug 23 2022 at 17:44)
 * [stream events](topic/topic_stream.20events.html) (5 messages, latest: Aug 20 2022 at 09:46)
@@ -147,4 +147,4 @@ permalink: /stream/229156-practice:-applied-ct/index.html
 * [AACT2020](topic/topic_AACT2020.html) (1 message, latest: Mar 24 2020 at 00:56)
 * [welcome](topic/topic_welcome.html) (15 messages, latest: Mar 24 2020 at 00:03)
 
-<hr><p>Last updated: Sep 04 2022 at 00:56 UTC</p>
+<hr><p>Last updated: Sep 05 2022 at 01:06 UTC</p>
