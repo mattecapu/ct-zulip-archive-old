@@ -8,7 +8,7 @@ permalink: /index.html
 
 ## Streams:
 
-* [learning: questions](stream/229199-learning:-questions/index.html) (723 topics)
+* [learning: questions](stream/229199-learning:-questions/index.html) (724 topics)
 
 * [theory: category theory](stream/229136-theory:-category-theory/index.html) (294 topics)
 
@@ -36,7 +36,7 @@ permalink: /index.html
 
 * [theory: logic](stream/233104-theory:-logic/index.html) (50 topics)
 
-* [practice: our papers](stream/258900-practice:-our-papers/index.html) (48 topics)
+* [practice: our papers](stream/258900-practice:-our-papers/index.html) (49 topics)
 
 * [theory: type theory](stream/229952-theory:-type-theory/index.html) (46 topics)
 
@@ -174,4 +174,4 @@ permalink: /index.html
 
 * [theory: alternate presentations](stream/233122-theory:-alternate-presentations/index.html) (1 topic)
 
-<hr><p>Last updated: Sep 05 2022 at 01:06 UTC</p>
+<hr><p>Last updated: Sep 06 2022 at 00:58 UTC</p>
