@@ -9,7 +9,7 @@ permalink: /stream/232162-learning:-show-and-tell/index.html
 
 ### Topics:
 
-* [compact closed bicategories & the π-calculus](topic/topic_compact.20closed.20bicategories.20.26.20the.20.CF.80-calculus.html) (131 messages, latest: Sep 05 2022 at 18:59)
+* [compact closed bicategories & the π-calculus](topic/topic_compact.20closed.20bicategories.20.26.20the.20.CF.80-calculus.html) (139 messages, latest: Sep 06 2022 at 09:22)
 * [Pictures](topic/topic_Pictures.html) (68 messages, latest: Aug 08 2021 at 02:00)
 * [Systems dynamics](topic/topic_Systems.20dynamics.html) (24 messages, latest: Jul 21 2021 at 12:24)
 * [Globular](topic/topic_Globular.html) (7 messages, latest: Jul 06 2021 at 02:28)
@@ -25,4 +25,4 @@ permalink: /stream/232162-learning:-show-and-tell/index.html
 * [Syntactic monoid for decidable languages](topic/topic_Syntactic.20monoid.20for.20decidable.20languages.html) (47 messages, latest: Apr 08 2020 at 01:48)
 * [stream events](topic/topic_stream.20events.html) (2 messages, latest: Apr 06 2020 at 18:15)
 
-<hr><p>Last updated: Sep 06 2022 at 00:58 UTC</p>
+<hr><p>Last updated: Sep 07 2022 at 01:02 UTC</p>

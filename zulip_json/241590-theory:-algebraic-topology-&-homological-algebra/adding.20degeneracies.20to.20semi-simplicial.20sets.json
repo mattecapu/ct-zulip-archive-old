@@ -1,0 +1,68 @@
+[
+    {
+        "content": "<p>I have a semi-simplicial set that looks like a simplicial set, but writing down the degeneracy operators is a combinatorial headache for which I'm not equipped. If I understand Theorem 5.7 of Rourke and Sanderson's <a href=\"https://www.maths.ed.ac.uk/~v1ranick/papers/deltars.pdf\">\"<span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"normal\">Δ</mi></mrow><annotation encoding=\"application/x-tex\">\\Delta</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord\">Δ</span></span></span></span>-sets I: Homotopy Theory\"</a> correctly, then I think it's enough for me to show that my semi-simplicial set is Kan, and then just say \"add in some degeneracy operators (any choice of which \"clearly\" gives an equivalent homotopy type, <a href=\"https://www.sciencedirect.com/science/article/pii/0001870870900216\">says Kan</a>)\".</p>\n<p>But <a href=\"https://mathoverflow.net/questions/57653/degeneracies-for-semi-simplicial-kan-complexes\">this mathoverflow question</a> mentions that the Kan condition for semi-simplicial sets is stronger than the usual one, saying that you also need to \"include 1-dimensional horns\". What do they mean by this? They say that it means \"every vertex is both the source of some 1-simplex and the target of some 1-simplex\", but I've never seen the definition of higher-dimensional horns in order to be able to unravel the statement to this.</p>",
+        "id": 297425824,
+        "sender_full_name": "Tim Hosgood",
+        "timestamp": 1662477308
+    },
+    {
+        "content": "<p>In other words, I've \"proved\" that my semi-simplicial set is Kan in the way that I usually would for simplicial sets: I've shown that all horns lift. What more do I need to do in order to show that my semi-simplicial set is actually Kan (and can thus be completed to a simplicial set)?</p>",
+        "id": 297426276,
+        "sender_full_name": "Tim Hosgood",
+        "timestamp": 1662477426
+    },
+    {
+        "content": "<p>That sounds like a reasonable definition of 1-dimensional horn to me. (To see this is non-trivial, observe that it is possible to have a semisimplicial set with no 1-cells.)</p>",
+        "id": 297426310,
+        "sender_full_name": "Zhen Lin Low",
+        "timestamp": 1662477436
+    },
+    {
+        "content": "<p>sadly I don't have the intuition to know what a reasonable definition would be, but I also can't find it written down anywhere (even in the Rourke and Sanderson paper, which defines the notion of Kan for semi-simplicial sets in, what seems to me, an identical way to usual) — do you have any suggestions for where I might find a reference?</p>",
+        "id": 297426703,
+        "sender_full_name": "Tim Hosgood",
+        "timestamp": 1662477541
+    },
+    {
+        "content": "<p>I mean, \"1-dimensional horns can be filled\" means \"every 0-cell is the 0th face of some 1-cell and the 1st face of some (possibly different) 1-cell\".</p>",
+        "id": 297427233,
+        "sender_full_name": "Zhen Lin Low",
+        "timestamp": 1662477690
+    },
+    {
+        "content": "<p>so is a \"usual\" horn a 0-dimensional horn? I can't figure out the general definition of an n-dimensional horn...</p>",
+        "id": 297427693,
+        "sender_full_name": "Tim Hosgood",
+        "timestamp": 1662477816
+    },
+    {
+        "content": "<p>In the usual notation, <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msubsup><mi mathvariant=\"normal\">Λ</mi><mi>k</mi><mi>n</mi></msubsup></mrow><annotation encoding=\"application/x-tex\">\\Lambda^n_k</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.9664em;vertical-align:-0.2831em;\"></span><span class=\"mord\"><span class=\"mord\">Λ</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.6644em;\"><span style=\"top:-2.4169em;margin-left:0em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathnormal mtight\" style=\"margin-right:0.03148em;\">k</span></span></span><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathnormal mtight\">n</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.2831em;\"><span></span></span></span></span></span></span></span></span></span> is an <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>n</mi></mrow><annotation encoding=\"application/x-tex\">n</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.4306em;\"></span><span class=\"mord mathnormal\">n</span></span></span></span>-dimensional horn.</p>",
+        "id": 297427833,
+        "sender_full_name": "Zhen Lin Low",
+        "timestamp": 1662477847
+    },
+    {
+        "content": "<p>oh, so if I've checked that \"all horns fill\" (in the usual sense, for simplicial things), then I've already checked for these 1-horns?</p>",
+        "id": 297427992,
+        "sender_full_name": "Tim Hosgood",
+        "timestamp": 1662477905
+    },
+    {
+        "content": "<p>I don't see why the MO question points it out as something extra</p>",
+        "id": 297428020,
+        "sender_full_name": "Tim Hosgood",
+        "timestamp": 1662477914
+    },
+    {
+        "content": "<p>For a simplicial set, \"1-dimensional horns can be filled\" is a triviality, because of degeneracies.</p>",
+        "id": 297428145,
+        "sender_full_name": "Zhen Lin Low",
+        "timestamp": 1662477959
+    },
+    {
+        "content": "<p>oh I see! thank you!</p>",
+        "id": 297428264,
+        "sender_full_name": "Tim Hosgood",
+        "timestamp": 1662477986
+    }
+]
