@@ -9,8 +9,8 @@ permalink: /stream/229199-learning:-questions/index.html
 
 ### Topics:
 
-* [order structure on open covers of a topological space?](topic/topic_order.20structure.20on.20open.20covers.20of.20a.20topological.20space.3F.html) (20 messages, latest: Sep 06 2022 at 16:44)
-* [Lax functors and connected components](topic/topic_Lax.20functors.20and.20connected.20components.html) (4 messages, latest: Sep 06 2022 at 08:09)
+* [order structure on open covers of a topological space?](topic/topic_order.20structure.20on.20open.20covers.20of.20a.20topological.20space.3F.html) (35 messages, latest: Sep 08 2022 at 00:13)
+* [Lax functors and connected components](topic/topic_Lax.20functors.20and.20connected.20components.html) (8 messages, latest: Sep 07 2022 at 23:58)
 * [epipresheaf, powerset, contractible cover](topic/topic_epipresheaf.2C.20powerset.2C.20contractible.20cover.html) (1 message, latest: Sep 05 2022 at 13:47)
 * [colimits of Lawvere theories](topic/topic_colimits.20of.20Lawvere.20theories.html) (27 messages, latest: Sep 03 2022 at 11:40)
 * [finitely presentable objects in presheaves](topic/topic_finitely.20presentable.20objects.20in.20presheaves.html) (4 messages, latest: Sep 02 2022 at 11:06)
@@ -735,4 +735,4 @@ permalink: /stream/229199-learning:-questions/index.html
 * [Algebra (Aluffi) exercises](topic/topic_Algebra.20(Aluffi).20exercises.html) (55 messages, latest: Mar 27 2020 at 23:38)
 * [What is category theory about?](topic/topic_What.20is.20category.20theory.20about.3F.html) (16 messages, latest: Mar 26 2020 at 16:03)
 
-<hr><p>Last updated: Sep 07 2022 at 01:02 UTC</p>
+<hr><p>Last updated: Sep 08 2022 at 00:59 UTC</p>

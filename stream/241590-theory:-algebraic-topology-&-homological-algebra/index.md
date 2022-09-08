@@ -9,6 +9,7 @@ permalink: /stream/241590-theory:-algebraic-topology-&-homological-algebra/index
 
 ### Topics:
 
+* [Čech cohomology & sheaf cohomology](topic/topic_.C4.8Cech.20cohomology.20.26.20sheaf.20cohomology.html) (19 messages, latest: Sep 07 2022 at 12:07)
 * [adding degeneracies to semi-simplicial sets](topic/topic_adding.20degeneracies.20to.20semi-simplicial.20sets.html) (11 messages, latest: Sep 06 2022 at 15:26)
 * [smallest common degenerate simplex](topic/topic_smallest.20common.20degenerate.20simplex.html) (45 messages, latest: Aug 20 2022 at 15:07)
 * [Delta generated spaces](topic/topic_Delta.20generated.20spaces.html) (16 messages, latest: Aug 15 2022 at 17:47)
@@ -16,7 +17,6 @@ permalink: /stream/241590-theory:-algebraic-topology-&-homological-algebra/index
 * [fully faithful Exit path functor](topic/topic_fully.20faithful.20Exit.20path.20functor.html) (1 message, latest: Jul 29 2022 at 15:52)
 * [relaxed good covers in Cech cohomology](topic/topic_relaxed.20good.20covers.20in.20Cech.20cohomology.html) (12 messages, latest: Jul 28 2022 at 11:38)
 * [Homotopy colimits for computing cofibrant replacements](topic/topic_Homotopy.20colimits.20for.20computing.20cofibrant.20replacements.html) (18 messages, latest: Jul 22 2022 at 10:35)
-* [Čech cohomology & sheaf cohomology](topic/topic_.C4.8Cech.20cohomology.20.26.20sheaf.20cohomology.html) (17 messages, latest: Jun 06 2022 at 10:25)
 * [geometric realization of simplicial topological spaces](topic/topic_geometric.20realization.20of.20simplicial.20topological.20spaces.html) (3 messages, latest: Jun 03 2022 at 16:57)
 * [Steenrod Algebra](topic/topic_Steenrod.20Algebra.html) (2 messages, latest: May 03 2022 at 15:04)
 * [formal properties of the bar construction](topic/topic_formal.20properties.20of.20the.20bar.20construction.html) (206 messages, latest: May 01 2022 at 15:40)
@@ -74,4 +74,4 @@ permalink: /stream/241590-theory:-algebraic-topology-&-homological-algebra/index
 * [simplicial sets](topic/topic_simplicial.20sets.html) (1 message, latest: Jul 02 2020 at 11:05)
 * [Secondary algebraic K-theory](topic/topic_Secondary.20algebraic.20K-theory.html) (13 messages, latest: Jun 01 2020 at 16:14)
 
-<hr><p>Last updated: Sep 07 2022 at 01:02 UTC</p>
+<hr><p>Last updated: Sep 08 2022 at 00:59 UTC</p>
