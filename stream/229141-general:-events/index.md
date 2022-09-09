@@ -9,7 +9,8 @@ permalink: /stream/229141-general:-events/index.html
 
 ### Topics:
 
-* [SYCO 9, Como](topic/topic_SYCO.209.2C.20Como.html) (30 messages, latest: Sep 07 2022 at 21:36)
+* [Thorsten Altenkirch 60 celebration](topic/topic_Thorsten.20Altenkirch.2060.20celebration.html) (2 messages, latest: Sep 08 2022 at 12:05)
+* [SYCO 9, Como](topic/topic_SYCO.209.2C.20Como.html) (35 messages, latest: Sep 08 2022 at 09:57)
 * [ACT 2023](topic/topic_ACT.202023.html) (18 messages, latest: Sep 05 2022 at 14:13)
 * [2023 Joint Mathematical Meeting](topic/topic_2023.20Joint.20Mathematical.20Meeting.html) (31 messages, latest: Aug 31 2022 at 17:46)
 * [Categories and Companions 2022](topic/topic_Categories.20and.20Companions.202022.html) (4 messages, latest: Aug 12 2022 at 19:16)
@@ -148,4 +149,4 @@ permalink: /stream/229141-general:-events/index.html
 * [April 1st: ACT@UCR](topic/topic_April.201st.3A.20ACT.40UCR.html) (3 messages, latest: Mar 26 2020 at 23:58)
 * [Google Sites problem](topic/topic_Google.20Sites.20problem.html) (4 messages, latest: Mar 25 2020 at 04:29)
 
-<hr><p>Last updated: Sep 08 2022 at 00:59 UTC</p>
+<hr><p>Last updated: Sep 09 2022 at 01:02 UTC</p>
