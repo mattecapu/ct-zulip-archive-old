@@ -9,6 +9,7 @@ permalink: /stream/229136-theory:-category-theory/index.html
 
 ### Topics:
 
+* [Lax adjunction with lax functors](topic/topic_Lax.20adjunction.20with.20lax.20functors.html) (2 messages, latest: Sep 11 2022 at 00:12)
 * [simple examples of equivalences](topic/topic_simple.20examples.20of.20equivalences.html) (27 messages, latest: Sep 03 2022 at 18:16)
 * [A site of Joyal-Street string diagrams?](topic/topic_A.20site.20of.20Joyal-Street.20string.20diagrams.3F.html) (10 messages, latest: Sep 02 2022 at 20:02)
 * [Audrey Tan's thesis](topic/topic_Audrey.20Tan's.20thesis.html) (6 messages, latest: Sep 01 2022 at 09:39)
@@ -304,4 +305,4 @@ permalink: /stream/229136-theory:-category-theory/index.html
 * [diagrams for application](topic/topic_diagrams.20for.20application.html) (13 messages, latest: Mar 24 2020 at 06:19)
 * [universal constructions](topic/topic_universal.20constructions.html) (8 messages, latest: Mar 23 2020 at 21:06)
 
-<hr><p>Last updated: Sep 10 2022 at 01:01 UTC</p>
+<hr><p>Last updated: Sep 11 2022 at 00:59 UTC</p>
