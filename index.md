@@ -48,9 +48,9 @@ permalink: /index.html
 
 * [learning: recommendations](stream/232161-learning:-recommendations/index.html) (29 topics)
 
-* [general: values](stream/241990-general:-values/index.html) (26 topics)
+* [theory: probability](stream/253118-theory:-probability/index.html) (27 topics)
 
-* [theory: probability](stream/253118-theory:-probability/index.html) (26 topics)
+* [general: values](stream/241990-general:-values/index.html) (26 topics)
 
 * [learning: history of ideas](stream/232163-learning:-history-of-ideas/index.html) (24 topics)
 
@@ -174,4 +174,4 @@ permalink: /index.html
 
 * [theory: alternate presentations](stream/233122-theory:-alternate-presentations/index.html) (1 topic)
 
-<hr><p>Last updated: Sep 11 2022 at 00:59 UTC</p>
+<hr><p>Last updated: Sep 12 2022 at 01:00 UTC</p>
