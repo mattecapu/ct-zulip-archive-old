@@ -9,6 +9,7 @@ permalink: /stream/251538-theory:-physics/index.html
 
 ### Topics:
 
+* [sheaf-theoretic approach to relativistic physics?](topic/topic_sheaf-theoretic.20approach.20to.20relativistic.20physics.3F.html) (2 messages, latest: Sep 12 2022 at 12:58)
 * [operational probabilistic theories](topic/topic_operational.20probabilistic.20theories.html) (3 messages, latest: Mar 25 2022 at 19:38)
 * [Operational Probabilistic Theories](topic/topic_Operational.20Probabilistic.20Theories.html) (1 message, latest: Mar 24 2022 at 23:48)
 * [Haag's original paper](topic/topic_Haag's.20original.20paper.html) (1 message, latest: Nov 13 2021 at 17:52)
@@ -26,4 +27,4 @@ permalink: /stream/251538-theory:-physics/index.html
 * [CFT and Elliptic Cohomology for Physicists](topic/topic_CFT.20and.20Elliptic.20Cohomology.20for.20Physicists.html) (12 messages, latest: Oct 26 2020 at 15:45)
 * [open systems in classical mechanics](topic/topic_open.20systems.20in.20classical.20mechanics.html) (17 messages, latest: Oct 20 2020 at 00:05)
 
-<hr><p>Last updated: Sep 12 2022 at 01:00 UTC</p>
+<hr><p>Last updated: Sep 13 2022 at 01:01 UTC</p>

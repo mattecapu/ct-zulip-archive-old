@@ -10,7 +10,7 @@ permalink: /index.html
 
 * [learning: questions](stream/229199-learning:-questions/index.html) (727 topics)
 
-* [theory: category theory](stream/229136-theory:-category-theory/index.html) (295 topics)
+* [theory: category theory](stream/229136-theory:-category-theory/index.html) (297 topics)
 
 * [general](stream/229111-general/index.html) (234 topics)
 
@@ -48,7 +48,7 @@ permalink: /index.html
 
 * [learning: recommendations](stream/232161-learning:-recommendations/index.html) (29 topics)
 
-* [theory: probability](stream/253118-theory:-probability/index.html) (27 topics)
+* [theory: probability](stream/253118-theory:-probability/index.html) (28 topics)
 
 * [general: values](stream/241990-general:-values/index.html) (26 topics)
 
@@ -70,9 +70,9 @@ permalink: /index.html
 
 * [theory: algebraic geometry](stream/231112-theory:-algebraic-geometry/index.html) (17 topics)
 
-* [philosophy](stream/229134-philosophy/index.html) (16 topics)
+* [theory: physics](stream/251538-theory:-physics/index.html) (17 topics)
 
-* [theory: physics](stream/251538-theory:-physics/index.html) (16 topics)
+* [philosophy](stream/229134-philosophy/index.html) (16 topics)
 
 * [ACT@UCR seminar](stream/229966-ACT@UCR-seminar/index.html) (15 topics)
 
@@ -174,4 +174,4 @@ permalink: /index.html
 
 * [theory: alternate presentations](stream/233122-theory:-alternate-presentations/index.html) (1 topic)
 
-<hr><p>Last updated: Sep 12 2022 at 01:00 UTC</p>
+<hr><p>Last updated: Sep 13 2022 at 01:01 UTC</p>
