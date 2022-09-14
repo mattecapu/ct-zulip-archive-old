@@ -9,7 +9,7 @@ permalink: /stream/253118-theory:-probability/index.html
 
 ### Topics:
 
-* [textbook/lecture-style discussion of probability cats](topic/topic_textbook.2Flecture-style.20discussion.20of.20probability.20cats.html) (3 messages, latest: Sep 12 2022 at 10:51)
+* [textbook/lecture-style discussion of probability cats](topic/topic_textbook.2Flecture-style.20discussion.20of.20probability.20cats.html) (6 messages, latest: Sep 13 2022 at 20:01)
 * [Textbook/lecture-style discussion of probability cats](topic/topic_Textbook.2Flecture-style.20discussion.20of.20probability.20cats.html) (1 message, latest: Sep 11 2022 at 18:46)
 * [strengths of the Giry monad](topic/topic_strengths.20of.20the.20Giry.20monad.html) (4 messages, latest: Sep 02 2022 at 08:06)
 * ['almost closed'?](topic/topic_'almost.20closed'.3F.html) (1 message, latest: Aug 29 2022 at 09:20)
@@ -38,4 +38,4 @@ permalink: /stream/253118-theory:-probability/index.html
 * [Finitely additive probability](topic/topic_Finitely.20additive.20probability.html) (1 message, latest: Aug 16 2020 at 00:48)
 * [stream events](topic/topic_stream.20events.html) (2 messages, latest: Aug 16 2020 at 00:31)
 
-<hr><p>Last updated: Sep 13 2022 at 01:01 UTC</p>
+<hr><p>Last updated: Sep 14 2022 at 00:59 UTC</p>

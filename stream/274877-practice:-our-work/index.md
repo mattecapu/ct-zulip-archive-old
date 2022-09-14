@@ -9,13 +9,15 @@ permalink: /stream/274877-practice:-our-work/index.html
 
 ### Topics:
 
-* [John Baez](topic/topic_John.20Baez.html) (801 messages, latest: Sep 11 2022 at 14:59)
-* [David Roberts](topic/topic_David.20Roberts.html) (50 messages, latest: Sep 09 2022 at 14:35)
+* [dusko: computable categories](topic/topic_dusko.3A.20computable.20categories.html) (2 messages, latest: Sep 14 2022 at 00:52)
+* [David Roberts](topic/topic_David.20Roberts.html) (51 messages, latest: Sep 14 2022 at 00:24)
+* [Christian Williams](topic/topic_Christian.20Williams.html) (172 messages, latest: Sep 14 2022 at 00:18)
+* [Jason Parker](topic/topic_Jason.20Parker.html) (2 messages, latest: Sep 13 2022 at 19:38)
+* [John Baez](topic/topic_John.20Baez.html) (809 messages, latest: Sep 13 2022 at 12:34)
 * [Jean-Baptiste Vienney](topic/topic_Jean-Baptiste.20Vienney.html) (26 messages, latest: Aug 30 2022 at 18:03)
 * [Morgan Rogers](topic/topic_Morgan.20Rogers.html) (35 messages, latest: Aug 20 2022 at 14:12)
 * [MonoidMusician (Verity S.)](topic/topic_MonoidMusician.20(Verity.20S.2E).html) (11 messages, latest: Aug 01 2022 at 16:17)
 * [motives](topic/topic_motives.html) (25 messages, latest: Jun 08 2022 at 17:35)
-* [Christian Williams](topic/topic_Christian.20Williams.html) (110 messages, latest: May 20 2022 at 00:44)
 * [Ivan Di Liberti](topic/topic_Ivan.20Di.20Liberti.html) (16 messages, latest: May 12 2022 at 15:15)
 * [Mike Shulman](topic/topic_Mike.20Shulman.html) (139 messages, latest: May 11 2022 at 04:17)
 * [Ralph Sarkis](topic/topic_Ralph.20Sarkis.html) (27 messages, latest: May 10 2022 at 20:42)
@@ -33,4 +35,4 @@ permalink: /stream/274877-practice:-our-work/index.html
 * [Conor Mc Bride](topic/topic_Conor.20Mc.20Bride.html) (60 messages, latest: Apr 08 2021 at 15:15)
 * [thoughts on sharing ideas](topic/topic_thoughts.20on.20sharing.20ideas.html) (20 messages, latest: Jan 31 2021 at 03:05)
 
-<hr><p>Last updated: Sep 13 2022 at 01:01 UTC</p>
+<hr><p>Last updated: Sep 14 2022 at 00:59 UTC</p>

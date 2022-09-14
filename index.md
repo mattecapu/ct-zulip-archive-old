@@ -10,7 +10,7 @@ permalink: /index.html
 
 * [learning: questions](stream/229199-learning:-questions/index.html) (727 topics)
 
-* [theory: category theory](stream/229136-theory:-category-theory/index.html) (297 topics)
+* [theory: category theory](stream/229136-theory:-category-theory/index.html) (298 topics)
 
 * [general](stream/229111-general/index.html) (234 topics)
 
@@ -52,11 +52,11 @@ permalink: /index.html
 
 * [general: values](stream/241990-general:-values/index.html) (26 topics)
 
-* [learning: history of ideas](stream/232163-learning:-history-of-ideas/index.html) (24 topics)
+* [learning: history of ideas](stream/232163-learning:-history-of-ideas/index.html) (25 topics)
+
+* [practice: our work](stream/274877-practice:-our-work/index.html) (25 topics)
 
 * [practice: Dialectica](stream/323208-practice:-Dialectica/index.html) (23 topics)
-
-* [practice: our work](stream/274877-practice:-our-work/index.html) (23 topics)
 
 * [practice: software](stream/229125-practice:-software/index.html) (23 topics)
 
@@ -86,9 +86,9 @@ permalink: /index.html
 
 * [general: co/appreciation](stream/271602-general:-co/appreciation/index.html) (13 topics)
 
-* [practice: translation](stream/260000-practice:-translation/index.html) (11 topics)
+* [learning: reading groups](stream/232160-learning:-reading-groups/index.html) (12 topics)
 
-* [learning: reading groups](stream/232160-learning:-reading-groups/index.html) (10 topics)
+* [practice: translation](stream/260000-practice:-translation/index.html) (11 topics)
 
 * [practice: ACT wiki](stream/243548-practice:-ACT-wiki/index.html) (10 topics)
 
@@ -174,4 +174,4 @@ permalink: /index.html
 
 * [theory: alternate presentations](stream/233122-theory:-alternate-presentations/index.html) (1 topic)
 
-<hr><p>Last updated: Sep 13 2022 at 01:01 UTC</p>
+<hr><p>Last updated: Sep 14 2022 at 00:59 UTC</p>

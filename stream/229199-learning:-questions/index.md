@@ -9,7 +9,7 @@ permalink: /stream/229199-learning:-questions/index.html
 
 ### Topics:
 
-* [order structure on open covers of a topological space?](topic/topic_order.20structure.20on.20open.20covers.20of.20a.20topological.20space.3F.html) (65 messages, latest: Sep 12 2022 at 21:15)
+* [order structure on open covers of a topological space?](topic/topic_order.20structure.20on.20open.20covers.20of.20a.20topological.20space.3F.html) (67 messages, latest: Sep 13 2022 at 15:26)
 * [making categories from monomorphisms](topic/topic_making.20categories.20from.20monomorphisms.html) (12 messages, latest: Sep 11 2022 at 16:59)
 * [Lax functors and connected components](topic/topic_Lax.20functors.20and.20connected.20components.html) (17 messages, latest: Sep 11 2022 at 15:13)
 * [lax functors and connected components](topic/topic_lax.20functors.20and.20connected.20components.html) (3 messages, latest: Sep 08 2022 at 17:57)
@@ -737,4 +737,4 @@ permalink: /stream/229199-learning:-questions/index.html
 * [Algebra (Aluffi) exercises](topic/topic_Algebra.20(Aluffi).20exercises.html) (55 messages, latest: Mar 27 2020 at 23:38)
 * [What is category theory about?](topic/topic_What.20is.20category.20theory.20about.3F.html) (16 messages, latest: Mar 26 2020 at 16:03)
 
-<hr><p>Last updated: Sep 13 2022 at 01:01 UTC</p>
+<hr><p>Last updated: Sep 14 2022 at 00:59 UTC</p>

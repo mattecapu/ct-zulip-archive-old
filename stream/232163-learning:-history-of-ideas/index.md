@@ -9,6 +9,7 @@ permalink: /stream/232163-learning:-history-of-ideas/index.html
 
 ### Topics:
 
+* [✔ opposite categories](topic/topic_.E2.9C.94.20opposite.20categories.html) (5 messages, latest: Sep 14 2022 at 00:55)
 * [history of 2-groups](topic/topic_history.20of.202-groups.html) (2 messages, latest: Aug 29 2022 at 07:12)
 * [History of 2-groups](topic/topic_History.20of.202-groups.html) (1 message, latest: Aug 26 2022 at 13:34)
 * [Zero (origins)](topic/topic_Zero.20(origins).html) (1 message, latest: Feb 27 2022 at 08:43)
@@ -34,4 +35,4 @@ permalink: /stream/232163-learning:-history-of-ideas/index.html
 * [All things Feynman](topic/topic_All.20things.20Feynman.html) (2 messages, latest: May 22 2020 at 06:04)
 * [stream events](topic/topic_stream.20events.html) (2 messages, latest: Apr 06 2020 at 18:15)
 
-<hr><p>Last updated: Sep 13 2022 at 01:01 UTC</p>
+<hr><p>Last updated: Sep 14 2022 at 00:59 UTC</p>
