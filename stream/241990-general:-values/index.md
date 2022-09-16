@@ -36,4 +36,4 @@ permalink: /stream/241990-general:-values/index.html
 * [stream events](topic/topic_stream.20events.html) (6 messages, latest: Jun 03 2020 at 19:22)
 * [ACT2020 tutorial day](topic/topic_ACT2020.20tutorial.20day.html) (1 message, latest: Jun 03 2020 at 18:38)
 
-<hr><p>Last updated: Sep 15 2022 at 01:03 UTC</p>
+<hr><p>Last updated: Sep 16 2022 at 01:02 UTC</p>

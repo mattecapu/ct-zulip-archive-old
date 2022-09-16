@@ -9,7 +9,7 @@ permalink: /stream/229136-theory:-category-theory/index.html
 
 ### Topics:
 
-* [formal definition of Grothendieck topos](topic/topic_formal.20definition.20of.20Grothendieck.20topos.html) (17 messages, latest: Sep 14 2022 at 17:51)
+* [formal definition of Grothendieck topos](topic/topic_formal.20definition.20of.20Grothendieck.20topos.html) (18 messages, latest: Sep 15 2022 at 16:51)
 * [lax adjunction with lax functors](topic/topic_lax.20adjunction.20with.20lax.20functors.html) (8 messages, latest: Sep 14 2022 at 17:25)
 * [pullback of equalizers](topic/topic_pullback.20of.20equalizers.html) (4 messages, latest: Sep 14 2022 at 07:52)
 * [universality of the fundamental opindexed cat](topic/topic_universality.20of.20the.20fundamental.20opindexed.20cat.html) (17 messages, latest: Sep 13 2022 at 13:29)
@@ -309,4 +309,4 @@ permalink: /stream/229136-theory:-category-theory/index.html
 * [diagrams for application](topic/topic_diagrams.20for.20application.html) (13 messages, latest: Mar 24 2020 at 06:19)
 * [universal constructions](topic/topic_universal.20constructions.html) (8 messages, latest: Mar 23 2020 at 21:06)
 
-<hr><p>Last updated: Sep 15 2022 at 01:03 UTC</p>
+<hr><p>Last updated: Sep 16 2022 at 01:02 UTC</p>
