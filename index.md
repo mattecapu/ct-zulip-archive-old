@@ -14,7 +14,7 @@ permalink: /index.html
 
 * [general](stream/229111-general/index.html) (234 topics)
 
-* [general: events](stream/229141-general:-events/index.html) (139 topics)
+* [general: events](stream/229141-general:-events/index.html) (140 topics)
 
 * [practice: applied ct](stream/229156-practice:-applied-ct/index.html) (137 topics)
 
@@ -52,9 +52,9 @@ permalink: /index.html
 
 * [general: values](stream/241990-general:-values/index.html) (26 topics)
 
-* [learning: history of ideas](stream/232163-learning:-history-of-ideas/index.html) (25 topics)
+* [practice: our work](stream/274877-practice:-our-work/index.html) (26 topics)
 
-* [practice: our work](stream/274877-practice:-our-work/index.html) (25 topics)
+* [learning: history of ideas](stream/232163-learning:-history-of-ideas/index.html) (25 topics)
 
 * [practice: Dialectica](stream/323208-practice:-Dialectica/index.html) (23 topics)
 
@@ -174,4 +174,4 @@ permalink: /index.html
 
 * [theory: alternate presentations](stream/233122-theory:-alternate-presentations/index.html) (1 topic)
 
-<hr><p>Last updated: Sep 16 2022 at 01:02 UTC</p>
+<hr><p>Last updated: Sep 17 2022 at 00:59 UTC</p>
