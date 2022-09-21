@@ -9,7 +9,7 @@ permalink: /stream/229952-theory:-type-theory/index.html
 
 ### Topics:
 
-* [relevant/affine monads & theories](topic/topic_relevant.2Faffine.20monads.20.26.20theories.html) (4 messages, latest: Aug 21 2022 at 15:38)
+* [relevant/affine monads & theories](topic/topic_relevant.2Faffine.20monads.20.26.20theories.html) (5 messages, latest: Sep 20 2022 at 19:46)
 * [2-morphisms as computation](topic/topic_2-morphisms.20as.20computation.html) (12 messages, latest: Aug 06 2022 at 23:32)
 * [higher category theory with a type theory background](topic/topic_higher.20category.20theory.20with.20a.20type.20theory.20background.html) (7 messages, latest: May 05 2022 at 06:10)
 * [internal language for initial algebras](topic/topic_internal.20language.20for.20initial.20algebras.html) (4 messages, latest: Apr 28 2022 at 02:54)
@@ -56,4 +56,4 @@ permalink: /stream/229952-theory:-type-theory/index.html
 * [stream events](topic/topic_stream.20events.html) (3 messages, latest: Apr 06 2020 at 05:32)
 * [W-types and CFGs](topic/topic_W-types.20and.20CFGs.html) (11 messages, latest: Apr 02 2020 at 16:00)
 
-<hr><p>Last updated: Sep 20 2022 at 01:02 UTC</p>
+<hr><p>Last updated: Sep 21 2022 at 01:03 UTC</p>

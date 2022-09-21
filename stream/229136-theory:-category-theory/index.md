@@ -9,7 +9,8 @@ permalink: /stream/229136-theory:-category-theory/index.html
 
 ### Topics:
 
-* [strings for triple categories](topic/topic_strings.20for.20triple.20categories.html) (20 messages, latest: Sep 19 2022 at 16:11)
+* [strings for triple categories](topic/topic_strings.20for.20triple.20categories.html) (24 messages, latest: Sep 21 2022 at 00:10)
+* [Reference in Cartesian Bicategories I](topic/topic_Reference.20in.20Cartesian.20Bicategories.20I.html) (12 messages, latest: Sep 20 2022 at 21:02)
 * [formal definition of Grothendieck topos](topic/topic_formal.20definition.20of.20Grothendieck.20topos.html) (18 messages, latest: Sep 15 2022 at 16:51)
 * [lax adjunction with lax functors](topic/topic_lax.20adjunction.20with.20lax.20functors.html) (8 messages, latest: Sep 14 2022 at 17:25)
 * [pullback of equalizers](topic/topic_pullback.20of.20equalizers.html) (4 messages, latest: Sep 14 2022 at 07:52)
@@ -105,7 +106,6 @@ permalink: /stream/229136-theory:-category-theory/index.html
 * [proarrow equipments](topic/topic_proarrow.20equipments.html) (7 messages, latest: Nov 11 2021 at 17:43)
 * [terminology for halfway rigid monoidal categories](topic/topic_terminology.20for.20halfway.20rigid.20monoidal.20categories.html) (29 messages, latest: Nov 10 2021 at 18:15)
 * [reference in Cartesian Bicategories I](topic/topic_reference.20in.20Cartesian.20Bicategories.20I.html) (9 messages, latest: Nov 08 2021 at 00:52)
-* [Reference in Cartesian Bicategories I](topic/topic_Reference.20in.20Cartesian.20Bicategories.20I.html) (11 messages, latest: Nov 07 2021 at 20:43)
 * [Adjoint to the quintet construction](topic/topic_Adjoint.20to.20the.20quintet.20construction.html) (12 messages, latest: Nov 07 2021 at 19:43)
 * [software packages for computer-assisted category theory](topic/topic_software.20packages.20for.20computer-assisted.20category.20theory.html) (7 messages, latest: Nov 05 2021 at 13:28)
 * [Whiskering lax natural transformations?](topic/topic_Whiskering.20lax.20natural.20transformations.3F.html) (3 messages, latest: Nov 04 2021 at 15:52)
@@ -310,4 +310,4 @@ permalink: /stream/229136-theory:-category-theory/index.html
 * [diagrams for application](topic/topic_diagrams.20for.20application.html) (13 messages, latest: Mar 24 2020 at 06:19)
 * [universal constructions](topic/topic_universal.20constructions.html) (8 messages, latest: Mar 23 2020 at 21:06)
 
-<hr><p>Last updated: Sep 20 2022 at 01:02 UTC</p>
+<hr><p>Last updated: Sep 21 2022 at 01:03 UTC</p>
