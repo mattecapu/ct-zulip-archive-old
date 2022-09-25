@@ -9,13 +9,13 @@ permalink: /stream/229199-learning:-questions/index.html
 
 ### Topics:
 
+* [viewing objects as categories](topic/topic_viewing.20objects.20as.20categories.html) (37 messages, latest: Sep 25 2022 at 00:15)
 * [definition of exponential object without cartesianness](topic/topic_definition.20of.20exponential.20object.20without.20cartesianness.html) (36 messages, latest: Sep 23 2022 at 08:36)
 * [3-categorical notions of universal arrow, adjunction](topic/topic_3-categorical.20notions.20of.20universal.20arrow.2C.20adjunction.html) (4 messages, latest: Sep 22 2022 at 09:51)
 * [beginner questions](topic/topic_beginner.20questions.html) (658 messages, latest: Sep 21 2022 at 17:00)
 * [✔ universal property of Alg(T) for a monoidal theory](topic/topic_.E2.9C.94.20universal.20property.20of.20Alg(T).20for.20a.20monoidal.20theory.html) (2 messages, latest: Sep 21 2022 at 12:07)
 * [✔ epipresheaf, powerset, contractible cover](topic/topic_.E2.9C.94.20epipresheaf.2C.20powerset.2C.20contractible.20cover.html) (1 message, latest: Sep 21 2022 at 09:51)
 * [property of flasque presheaves?](topic/topic_property.20of.20flasque.20presheaves.3F.html) (3 messages, latest: Sep 21 2022 at 08:19)
-* [viewing objects as categories](topic/topic_viewing.20objects.20as.20categories.html) (35 messages, latest: Sep 20 2022 at 17:43)
 * [universal property of Alg(T) for a monoidal theory](topic/topic_universal.20property.20of.20Alg(T).20for.20a.20monoidal.20theory.html) (3 messages, latest: Sep 20 2022 at 17:25)
 * [If types are objects, that what are values?](topic/topic_If.20types.20are.20objects.2C.20that.20what.20are.20values.3F.html) (5 messages, latest: Sep 18 2022 at 23:26)
 * [order structure on open covers of a topological space?](topic/topic_order.20structure.20on.20open.20covers.20of.20a.20topological.20space.3F.html) (67 messages, latest: Sep 13 2022 at 15:26)
@@ -744,4 +744,4 @@ permalink: /stream/229199-learning:-questions/index.html
 * [Algebra (Aluffi) exercises](topic/topic_Algebra.20(Aluffi).20exercises.html) (55 messages, latest: Mar 27 2020 at 23:38)
 * [What is category theory about?](topic/topic_What.20is.20category.20theory.20about.3F.html) (16 messages, latest: Mar 26 2020 at 16:03)
 
-<hr><p>Last updated: Sep 24 2022 at 01:04 UTC</p>
+<hr><p>Last updated: Sep 25 2022 at 01:01 UTC</p>
