@@ -9,10 +9,12 @@ permalink: /stream/229199-learning:-questions/index.html
 
 ### Topics:
 
+* [A question about triangulated categories](topic/topic_A.20question.20about.20triangulated.20categories.html) (1 message, latest: Sep 25 2022 at 17:10)
+* [A kind of generalized adjunction](topic/topic_A.20kind.20of.20generalized.20adjunction.html) (5 messages, latest: Sep 25 2022 at 16:17)
+* [beginner questions](topic/topic_beginner.20questions.html) (659 messages, latest: Sep 25 2022 at 02:47)
 * [viewing objects as categories](topic/topic_viewing.20objects.20as.20categories.html) (37 messages, latest: Sep 25 2022 at 00:15)
 * [definition of exponential object without cartesianness](topic/topic_definition.20of.20exponential.20object.20without.20cartesianness.html) (36 messages, latest: Sep 23 2022 at 08:36)
 * [3-categorical notions of universal arrow, adjunction](topic/topic_3-categorical.20notions.20of.20universal.20arrow.2C.20adjunction.html) (4 messages, latest: Sep 22 2022 at 09:51)
-* [beginner questions](topic/topic_beginner.20questions.html) (658 messages, latest: Sep 21 2022 at 17:00)
 * [✔ universal property of Alg(T) for a monoidal theory](topic/topic_.E2.9C.94.20universal.20property.20of.20Alg(T).20for.20a.20monoidal.20theory.html) (2 messages, latest: Sep 21 2022 at 12:07)
 * [✔ epipresheaf, powerset, contractible cover](topic/topic_.E2.9C.94.20epipresheaf.2C.20powerset.2C.20contractible.20cover.html) (1 message, latest: Sep 21 2022 at 09:51)
 * [property of flasque presheaves?](topic/topic_property.20of.20flasque.20presheaves.3F.html) (3 messages, latest: Sep 21 2022 at 08:19)
@@ -744,4 +746,4 @@ permalink: /stream/229199-learning:-questions/index.html
 * [Algebra (Aluffi) exercises](topic/topic_Algebra.20(Aluffi).20exercises.html) (55 messages, latest: Mar 27 2020 at 23:38)
 * [What is category theory about?](topic/topic_What.20is.20category.20theory.20about.3F.html) (16 messages, latest: Mar 26 2020 at 16:03)
 
-<hr><p>Last updated: Sep 25 2022 at 01:01 UTC</p>
+<hr><p>Last updated: Sep 26 2022 at 01:02 UTC</p>
