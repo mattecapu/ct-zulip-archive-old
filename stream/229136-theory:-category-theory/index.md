@@ -9,7 +9,9 @@ permalink: /stream/229136-theory:-category-theory/index.html
 
 ### Topics:
 
-* [strings for triple categories](topic/topic_strings.20for.20triple.20categories.html) (37 messages, latest: Sep 25 2022 at 16:29)
+* [strings for triple categories](topic/topic_strings.20for.20triple.20categories.html) (46 messages, latest: Sep 27 2022 at 00:21)
+* [quintets construction](topic/topic_quintets.20construction.html) (5 messages, latest: Sep 26 2022 at 22:15)
+* [Adjunction with icons](topic/topic_Adjunction.20with.20icons.html) (3 messages, latest: Sep 26 2022 at 15:13)
 * [Reference in Cartesian Bicategories I](topic/topic_Reference.20in.20Cartesian.20Bicategories.20I.html) (14 messages, latest: Sep 21 2022 at 18:03)
 * [formal definition of Grothendieck topos](topic/topic_formal.20definition.20of.20Grothendieck.20topos.html) (18 messages, latest: Sep 15 2022 at 16:51)
 * [lax adjunction with lax functors](topic/topic_lax.20adjunction.20with.20lax.20functors.html) (8 messages, latest: Sep 14 2022 at 17:25)
@@ -310,4 +312,4 @@ permalink: /stream/229136-theory:-category-theory/index.html
 * [diagrams for application](topic/topic_diagrams.20for.20application.html) (13 messages, latest: Mar 24 2020 at 06:19)
 * [universal constructions](topic/topic_universal.20constructions.html) (8 messages, latest: Mar 23 2020 at 21:06)
 
-<hr><p>Last updated: Sep 26 2022 at 01:02 UTC</p>
+<hr><p>Last updated: Sep 27 2022 at 01:05 UTC</p>
