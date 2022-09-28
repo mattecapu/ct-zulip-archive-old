@@ -9,9 +9,11 @@ permalink: /stream/229199-learning:-questions/index.html
 
 ### Topics:
 
-* [beginner questions](topic/topic_beginner.20questions.html) (664 messages, latest: Sep 26 2022 at 23:58)
-* [A question about triangulated categories](topic/topic_A.20question.20about.20triangulated.20categories.html) (3 messages, latest: Sep 26 2022 at 23:50)
-* [Epis in a topos](topic/topic_Epis.20in.20a.20topos.html) (1 message, latest: Sep 26 2022 at 19:23)
+* [CT treatment of Ackemann function](topic/topic_CT.20treatment.20of.20Ackemann.20function.html) (1 message, latest: Sep 27 2022 at 22:49)
+* [Properads that are not props](topic/topic_Properads.20that.20are.20not.20props.html) (21 messages, latest: Sep 27 2022 at 19:41)
+* [beginner questions](topic/topic_beginner.20questions.html) (666 messages, latest: Sep 27 2022 at 15:08)
+* [Epis in a topos](topic/topic_Epis.20in.20a.20topos.html) (2 messages, latest: Sep 27 2022 at 10:40)
+* [A question about triangulated categories](topic/topic_A.20question.20about.20triangulated.20categories.html) (6 messages, latest: Sep 27 2022 at 10:36)
 * [A kind of generalized adjunction](topic/topic_A.20kind.20of.20generalized.20adjunction.html) (5 messages, latest: Sep 25 2022 at 16:17)
 * [viewing objects as categories](topic/topic_viewing.20objects.20as.20categories.html) (37 messages, latest: Sep 25 2022 at 00:15)
 * [definition of exponential object without cartesianness](topic/topic_definition.20of.20exponential.20object.20without.20cartesianness.html) (36 messages, latest: Sep 23 2022 at 08:36)
@@ -34,7 +36,6 @@ permalink: /stream/229199-learning:-questions/index.html
 * [Funny tensor product](topic/topic_Funny.20tensor.20product.html) (11 messages, latest: Aug 30 2022 at 18:52)
 * [lifting properties](topic/topic_lifting.20properties.html) (26 messages, latest: Aug 28 2022 at 14:19)
 * [Finitely presentable objects in presheaves](topic/topic_Finitely.20presentable.20objects.20in.20presheaves.html) (9 messages, latest: Aug 27 2022 at 17:25)
-* [Properads that are not props](topic/topic_Properads.20that.20are.20not.20props.html) (5 messages, latest: Aug 25 2022 at 08:49)
 * [continuous functions as functors?](topic/topic_continuous.20functions.20as.20functors.3F.html) (21 messages, latest: Aug 24 2022 at 23:29)
 * [natural transformation commutativity square](topic/topic_natural.20transformation.20commutativity.20square.html) (3 messages, latest: Aug 24 2022 at 22:44)
 * [n.t. commutativity square](topic/topic_n.2Et.2E.20commutativity.20square.html) (14 messages, latest: Aug 24 2022 at 20:45)
@@ -747,4 +748,4 @@ permalink: /stream/229199-learning:-questions/index.html
 * [Algebra (Aluffi) exercises](topic/topic_Algebra.20(Aluffi).20exercises.html) (55 messages, latest: Mar 27 2020 at 23:38)
 * [What is category theory about?](topic/topic_What.20is.20category.20theory.20about.3F.html) (16 messages, latest: Mar 26 2020 at 16:03)
 
-<hr><p>Last updated: Sep 27 2022 at 01:05 UTC</p>
+<hr><p>Last updated: Sep 28 2022 at 01:06 UTC</p>

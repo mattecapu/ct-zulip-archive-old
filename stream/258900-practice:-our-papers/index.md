@@ -59,4 +59,4 @@ permalink: /stream/258900-practice:-our-papers/index.html
 * [Functorial semantics for partial theories](topic/topic_Functorial.20semantics.20for.20partial.20theories.html) (30 messages, latest: Nov 29 2020 at 08:46)
 * [Coends of higher arity](topic/topic_Coends.20of.20higher.20arity.html) (3 messages, latest: Sep 26 2020 at 16:28)
 
-<hr><p>Last updated: Sep 27 2022 at 01:05 UTC</p>
+<hr><p>Last updated: Sep 28 2022 at 01:06 UTC</p>
