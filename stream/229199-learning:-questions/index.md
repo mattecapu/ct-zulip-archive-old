@@ -9,13 +9,17 @@ permalink: /stream/229199-learning:-questions/index.html
 
 ### Topics:
 
+* [topos theory question](topic/topic_topos.20theory.20question.html) (1 message, latest: Sep 29 2022 at 00:34)
+* [shapes that compose](topic/topic_shapes.20that.20compose.html) (1 message, latest: Sep 28 2022 at 22:17)
+* [question about triangulated categories](topic/topic_question.20about.20triangulated.20categories.html) (10 messages, latest: Sep 28 2022 at 19:24)
+* [Colimits of limit diagrams and vice versa](topic/topic_Colimits.20of.20limit.20diagrams.20and.20vice.20versa.html) (2 messages, latest: Sep 28 2022 at 11:46)
+* [viewing objects as categories](topic/topic_viewing.20objects.20as.20categories.html) (40 messages, latest: Sep 28 2022 at 10:34)
 * [CT treatment of Ackemann function](topic/topic_CT.20treatment.20of.20Ackemann.20function.html) (1 message, latest: Sep 27 2022 at 22:49)
 * [Properads that are not props](topic/topic_Properads.20that.20are.20not.20props.html) (21 messages, latest: Sep 27 2022 at 19:41)
 * [beginner questions](topic/topic_beginner.20questions.html) (666 messages, latest: Sep 27 2022 at 15:08)
 * [Epis in a topos](topic/topic_Epis.20in.20a.20topos.html) (2 messages, latest: Sep 27 2022 at 10:40)
 * [A question about triangulated categories](topic/topic_A.20question.20about.20triangulated.20categories.html) (6 messages, latest: Sep 27 2022 at 10:36)
 * [A kind of generalized adjunction](topic/topic_A.20kind.20of.20generalized.20adjunction.html) (5 messages, latest: Sep 25 2022 at 16:17)
-* [viewing objects as categories](topic/topic_viewing.20objects.20as.20categories.html) (37 messages, latest: Sep 25 2022 at 00:15)
 * [definition of exponential object without cartesianness](topic/topic_definition.20of.20exponential.20object.20without.20cartesianness.html) (36 messages, latest: Sep 23 2022 at 08:36)
 * [3-categorical notions of universal arrow, adjunction](topic/topic_3-categorical.20notions.20of.20universal.20arrow.2C.20adjunction.html) (4 messages, latest: Sep 22 2022 at 09:51)
 * [✔ universal property of Alg(T) for a monoidal theory](topic/topic_.E2.9C.94.20universal.20property.20of.20Alg(T).20for.20a.20monoidal.20theory.html) (2 messages, latest: Sep 21 2022 at 12:07)
@@ -748,4 +752,4 @@ permalink: /stream/229199-learning:-questions/index.html
 * [Algebra (Aluffi) exercises](topic/topic_Algebra.20(Aluffi).20exercises.html) (55 messages, latest: Mar 27 2020 at 23:38)
 * [What is category theory about?](topic/topic_What.20is.20category.20theory.20about.3F.html) (16 messages, latest: Mar 26 2020 at 16:03)
 
-<hr><p>Last updated: Sep 28 2022 at 01:06 UTC</p>
+<hr><p>Last updated: Sep 29 2022 at 01:10 UTC</p>
