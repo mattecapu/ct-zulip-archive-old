@@ -9,8 +9,8 @@ permalink: /stream/274877-practice:-our-work/index.html
 
 ### Topics:
 
+* [Dusko Pavlovic](topic/topic_Dusko.20Pavlovic.html) (19 messages, latest: Sep 29 2022 at 15:54)
 * [David Roberts](topic/topic_David.20Roberts.html) (53 messages, latest: Sep 25 2022 at 23:37)
-* [Dusko Pavlovic](topic/topic_Dusko.20Pavlovic.html) (16 messages, latest: Sep 25 2022 at 01:41)
 * [Christian Williams](topic/topic_Christian.20Williams.html) (221 messages, latest: Sep 25 2022 at 00:20)
 * [John Baez](topic/topic_John.20Baez.html) (810 messages, latest: Sep 16 2022 at 09:24)
 * [dusko: computable categories](topic/topic_dusko.3A.20computable.20categories.html) (3 messages, latest: Sep 15 2022 at 05:30)
@@ -36,4 +36,4 @@ permalink: /stream/274877-practice:-our-work/index.html
 * [Conor Mc Bride](topic/topic_Conor.20Mc.20Bride.html) (60 messages, latest: Apr 08 2021 at 15:15)
 * [thoughts on sharing ideas](topic/topic_thoughts.20on.20sharing.20ideas.html) (20 messages, latest: Jan 31 2021 at 03:05)
 
-<hr><p>Last updated: Sep 29 2022 at 01:10 UTC</p>
+<hr><p>Last updated: Sep 30 2022 at 01:23 UTC</p>

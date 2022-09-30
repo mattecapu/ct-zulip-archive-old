@@ -9,6 +9,7 @@ permalink: /stream/258900-practice:-our-papers/index.html
 
 ### Topics:
 
+* [Machine Space I: Weak exponentials and quantification ove...](topic/topic_Machine.20Space.20I.3A.20Weak.20exponentials.20and.20quantification.20ove.2E.2E.2E.html) (2 messages, latest: Sep 30 2022 at 00:35)
 * [An introduction to enriched cofunctors](topic/topic_An.20introduction.20to.20enriched.20cofunctors.html) (6 messages, latest: Sep 05 2022 at 14:48)
 * [Categorical semantics of compositional RL](topic/topic_Categorical.20semantics.20of.20compositional.20RL.html) (1 message, latest: Sep 03 2022 at 16:34)
 * [operads as double functors](topic/topic_operads.20as.20double.20functors.html) (1 message, latest: Aug 19 2022 at 06:31)
@@ -59,4 +60,4 @@ permalink: /stream/258900-practice:-our-papers/index.html
 * [Functorial semantics for partial theories](topic/topic_Functorial.20semantics.20for.20partial.20theories.html) (30 messages, latest: Nov 29 2020 at 08:46)
 * [Coends of higher arity](topic/topic_Coends.20of.20higher.20arity.html) (3 messages, latest: Sep 26 2020 at 16:28)
 
-<hr><p>Last updated: Sep 29 2022 at 01:10 UTC</p>
+<hr><p>Last updated: Sep 30 2022 at 01:23 UTC</p>

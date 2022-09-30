@@ -4,5 +4,95 @@
         "id": 301350945,
         "sender_full_name": "Racky Dichminky",
         "timestamp": 1664411640
+    },
+    {
+        "content": "<p>I have never seen any convincing examples. But there are some easy correspondences. For example, if the internal logic is boolean then the underlying locale is extremally disconnected.</p>",
+        "id": 301375598,
+        "sender_full_name": "Zhen Lin Low",
+        "timestamp": 1664433045
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"416301\">Zhen Lin Low</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/topos.20theory.20question/near/301375598\">said</a>:</p>\n<blockquote>\n<p>I have never seen any convincing examples. But there are some easy correspondences. For example, if the internal logic is boolean then the underlying locale is extremally disconnected.</p>\n</blockquote>\n<p>I have another question aside until someone maybe provides a convincing example (if it does exist) for the first initial question.</p>\n<p>does topos theory address definability and such?</p>\n<p>this is something i don't know if i want to get into, honestly i can't say much but like, you can construct various functions on the natural numbers and people have probably worked out what the class of definable functions N -&gt; N is<br>\nall of them would be Turing computable but not all Turing computable functions would be definable this way<br>\nif you throw away the subobject classifier then you would essentially have Godel's system T<br>\nthis is not really definability in the model theoretic sense tho</p>",
+        "id": 301378772,
+        "sender_full_name": "Racky Dichminky",
+        "timestamp": 1664434682
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"547765\">Racky Dichminky</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/topos.20theory.20question/near/301350945\">said</a>:</p>\n<blockquote>\n<p>To tell the truth, I don't really understand what all the presheaf stuff tells us about the geometric side of things?</p>\n</blockquote>\n<p>Is there context I'm missing here?</p>",
+        "id": 301382981,
+        "sender_full_name": "Morgan Rogers (he/him)",
+        "timestamp": 1664436598
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"277473\">Morgan Rogers (he/him)</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/topos.20theory.20question/near/301382981\">said</a>:</p>\n<blockquote>\n<p><span class=\"user-mention silent\" data-user-id=\"547765\">Racky Dichminky</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/topos.20theory.20question/near/301350945\">said</a>:</p>\n<blockquote>\n<p>To tell the truth, I don't really understand what all the presheaf stuff tells us about the geometric side of things?</p>\n</blockquote>\n<p>Is there context I'm missing here?</p>\n</blockquote>\n<p>it occurs to me that the first non-trival topos you probably see is sSet although I've never heard anything about it's internal logic<br>\n<a href=\"https://mathoverflow.net/questions/159989/internal-logic-of-the-topos-of-simplicial-sets\">https://mathoverflow.net/questions/159989/internal-logic-of-the-topos-of-simplicial-sets</a></p>\n<p>presheaf category is a topos but precisely not a grothendeick topoi ( maybe sheaf cat i thinkor like. any groth topoi is a sheaf category somehow are ) </p>\n<p>if u define a functor by mapping open sets U to the category of sheaves on U then u can show that this functor is pretty much a sheaf</p>\n<p>so u map an open set U to the sheaf cat on U<br>\nU mapsto Sh(U)<br>\nand then arrows in O(X)op are inclusion U&gt;V whcih get mapped to the restriction map of sheaf F|U -&gt; F|U<br>\nthen like roughly you have a bunch of  sheaves defined on the elements of an open cover such that they agree on overlaps then there is a unique sheaf that collates them (like in the regular sheaf definition)!  so its almost a sheaf</p>\n<p>I think this is what stacks are for<br>\nA stack is a sheaf of categories rather than a sheaf of sets. So there's a stack of sheaves over a topological space<br>\nSimilarly there's a stack of vector bundles over a manifold or something like this because you can glue together two vector bundles over two open subsets U and V by giving an isomorphism between the restrictions to U \\cap V<br>\nand as long as these isomorphisms satisfy the Cech cocycle condition you get a vector bundle over the whole space</p>",
+        "id": 301385214,
+        "sender_full_name": "Racky Dichminky",
+        "timestamp": 1664437514
+    },
+    {
+        "content": "<p>also a presheaf over a topological space X is a structure F which assigns to each open set U \\subset X a  set F(U), thought of as a set of functions on U, and which assigns to each inclusion  V \\subset U  a restriction-of-domain function F(U) -&gt; F(V).</p>\n<p>A sheaf is a presheaf satisfying the \"gluing\" axiom. If U is an open set and {U_i} is a cover of U, and { f_i } are a family of elements of the F(U_i) that agree pairwise in the sense that f_i = f_j on the intersection U_i \\cap U_j,  there should be exactly one function f defined on U which \"amalgamates\" all the f_i so that f | U_i = f_i.</p>\n<p>It is fairly straightforward how to extend the definition of a presheaf on a topological space to a presheaf on a category, once you think of the lattice of opens of a topological space as a poset category. A presheaf on a category C is then just a contravariant functor C^op -&gt; Sets.<br>\nHowever it is not so obvious how to define sheaves, because it is not clear how to adapt the gluing axiom to an arbitrary category. <br>\nA grothendieck topology on a category C is extra structure which allows you to formulate the gluing condition for a presheaf on C. A grothendieck says, for each object c in C, what the \"covers\" of c are in terms of the other objects in C and their maps into c.<br>\nA site is a category equipped with a Grothendieck topology.</p>",
+        "id": 301385518,
+        "sender_full_name": "Racky Dichminky",
+        "timestamp": 1664437659
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"547765\">Racky Dichminky</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/topos.20theory.20question/near/301350945\">said</a>:</p>\n<blockquote>\n<p>Can we actually go from meaningful statements about logics to meaningful statements about topological/geometric structures through topoi? </p>\n</blockquote>\n<p>Yes. First of all, there are examples like <span class=\"user-mention\" data-user-id=\"416301\">@Zhen Lin Low</span> gave, where general features of the internal logic of a topos of sheaves on a space correspond to properties of that space. The other one that is well-studied is the weaker property of the internal logic being \"de Morgan\" (no relation). Contrary to what Zhen Lin said, it's actually this property that corresponds to extremal disconnectedness. The topos of sheaves on a space is Boolean if and only if the space is discrete. Further properties of the internal logic constrain subobject lattices, and for toposes of sheaves on spaces, it's typically necessary and sufficient to consider the impact on the lattice of subterminals.</p>\n<p>Second, there is another face of logic in topos theory, which is only tangentially related to the internal language: the theory of classifying topos. This face of logic is used to construct instances of locales (spaces) with no points; I can try and convince you of the importance of these if you like.</p>\n<blockquote>\n<p>Like can we go from Lindstrom's theorem to something meaningful about topologies maybe?</p>\n</blockquote>\n<p>Since Lindström's theorem concerns properties of models of theories in first-order logic, it would more properly be interpreted via classifying toposes, although you would need to talk about functors which preserve the structure needed to interpret first-order logic (which is distinct from the structure interpreting geometric logic), and so you're already outside the realm of what's been extensively examined in topos theory there.</p>",
+        "id": 301388603,
+        "sender_full_name": "Morgan Rogers (he/him)",
+        "timestamp": 1664439013
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"547765\">Racky Dichminky</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/topos.20theory.20question/near/301385214\">said</a>:</p>\n<blockquote>\n<p>it occurs to me that the first non-trival topos you probably see is sSet although I've never heard anything about it's internal logic<br>\n<a href=\"https://mathoverflow.net/questions/159989/internal-logic-of-the-topos-of-simplicial-sets\">https://mathoverflow.net/questions/159989/internal-logic-of-the-topos-of-simplicial-sets</a></p>\n</blockquote>\n<p>I hadn't seen that question before, that's a nice source of fresh examples for me! I hope it at least indicates what kinds of axioms can hold in the internal language which extend intuitionistic logic?</p>\n<blockquote>\n<p>presheaf category is a topos but precisely not a grothendeick topoi ( maybe sheaf cat i thinkor like. any groth topoi is a sheaf category somehow are ) </p>\n</blockquote>\n<p>This is a misunderstanding. Presheaf toposes are a special case of sheaf toposes (where the Grothendieck topology involved is the \"trivial\" one). Note that \"sheaves\" can be defined over sites more general than those defined from spaces, which may be where the confusion comes from.</p>",
+        "id": 301389195,
+        "sender_full_name": "Morgan Rogers (he/him)",
+        "timestamp": 1664439250
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"547765\">Racky Dichminky</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/topos.20theory.20question/near/301385518\">said</a>:</p>\n<blockquote>\n<p>It is fairly straightforward how to extend the definition of a presheaf on a topological space to a presheaf on a category, once you think of the lattice of opens of a topological space as a poset category. A presheaf on a category C is then just a contravariant functor C^op -&gt; Sets.<br>\nHowever it is not so obvious how to define sheaves, because it is not clear how to adapt the gluing axiom to an arbitrary category. <br>\nA grothendieck topology on a category C is extra structure which allows you to formulate the gluing condition for a presheaf on C. A grothendieck says, for each object c in C, what the \"covers\" of c are in terms of the other objects in C and their maps into c.<br>\nA site is a category equipped with a Grothendieck topology.</p>\n</blockquote>\n<p>I'm glad you're working all of this out, but I don't think you need to write it all out here <span aria-label=\"sweat smile\" class=\"emoji emoji-1f605\" role=\"img\" title=\"sweat smile\">:sweat_smile:</span></p>",
+        "id": 301389368,
+        "sender_full_name": "Morgan Rogers (he/him)",
+        "timestamp": 1664439336
+    },
+    {
+        "content": "<p>about what <span class=\"user-mention\" data-user-id=\"416301\">@Zhen Lin Low</span>  said, How many schemes of interest to algebraic geometers are you aware of which are extremally disconnected as topological spaces? How many of the historical arguments in algebraic geometry about a generic point in a varierty are about varieties which are extremally disconnected. Every open set is dense, right! For every predicate P defining an open subset, either \\lnot P is equivalent to the tautology or \\lnot\\lnot P is. This is not true of any Boolean algebra with more than two elements.</p>",
+        "id": 301397682,
+        "sender_full_name": "Racky Dichminky",
+        "timestamp": 1664442470
+    },
+    {
+        "content": "<p>See Example 2.30 of <a href=\"https://link.springer.com/article/10.1007/s10485-020-09620-y\">my paper with <span class=\"user-mention\" data-user-id=\"282722\">@Jens Hemelaer</span></a>: a space with a dense point is automatically extremally disconnected, so affine schemes are extremally disconnected, but they are only ever discrete in trivial cases.</p>",
+        "id": 301408189,
+        "sender_full_name": "Morgan Rogers (he/him)",
+        "timestamp": 1664446381
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"277473\">Morgan Rogers (he/him)</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/topos.20theory.20question/near/301389195\">said</a>:</p>\n<blockquote>\n<p><span class=\"user-mention silent\" data-user-id=\"547765\">Racky Dichminky</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/topos.20theory.20question/near/301385214\">said</a>:</p>\n<blockquote>\n<p>it occurs to me that the first non-trival topos you probably see is sSet although I've never heard anything about it's internal logic<br>\n<a href=\"https://mathoverflow.net/questions/159989/internal-logic-of-the-topos-of-simplicial-sets\">https://mathoverflow.net/questions/159989/internal-logic-of-the-topos-of-simplicial-sets</a></p>\n</blockquote>\n<p>I hadn't seen that question before, that's a nice source of fresh examples for me! I hope it at least indicates what kinds of axioms can hold in the internal language which extend intuitionistic logic?</p>\n</blockquote>\n<p>A nice discussion about internal logic in the topos of graphs <a href=\"https://mathoverflow.net/questions/124991/what-can-be-expressed-in-and-proved-with-the-internal-logic-of-a-topos\">https://mathoverflow.net/questions/124991/what-can-be-expressed-in-and-proved-with-the-internal-logic-of-a-topos</a></p>",
+        "id": 301436421,
+        "sender_full_name": "naso",
+        "timestamp": 1664457019
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"277473\">Morgan Rogers (he/him)</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/topos.20theory.20question/near/301408189\">said</a>:</p>\n<blockquote>\n<p>See Example 2.30 of <a href=\"https://link.springer.com/article/10.1007/s10485-020-09620-y\">my paper with <span class=\"user-mention silent\" data-user-id=\"282722\">Jens Hemelaer</span></a>: a space with a dense point is automatically extremally disconnected, so affine schemes are extremally disconnected</p>\n</blockquote>\n<p>Haha, that's really counterintuitive :-)</p>",
+        "id": 301531494,
+        "sender_full_name": "Jonas Frey",
+        "timestamp": 1664485414
+    },
+    {
+        "content": "<p>It's a bad name for sure <span aria-label=\"upside down\" class=\"emoji emoji-1f643\" role=\"img\" title=\"upside down\">:upside_down:</span></p>",
+        "id": 301533773,
+        "sender_full_name": "Morgan Rogers (he/him)",
+        "timestamp": 1664486307
+    },
+    {
+        "content": "<p>Did you mean _irreducible_ rather than affine?</p>",
+        "id": 301547367,
+        "sender_full_name": "Zhen Lin Low",
+        "timestamp": 1664493249
+    },
+    {
+        "content": "<p>Ahh right, it has to be irreducible. That's equivalent to having a dense point pretty much by definition.</p>",
+        "id": 301552553,
+        "sender_full_name": "Jonas Frey",
+        "timestamp": 1664496752
     }
 ]

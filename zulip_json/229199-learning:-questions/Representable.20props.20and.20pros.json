@@ -1,0 +1,62 @@
+[
+    {
+        "content": "<p>A (colored) prop is called \"representable\" when each list of objects in the prop is isomorphic to a single object.</p>\n<p>It seems to me most people who like props are aware of the fact that representable props are equivalent to symmetric monoidal categories.</p>\n<p>This appears as Theorem 2.3 in Mike Shulman's <a href=\"https://arxiv.org/abs/1911.00818\">A practical type theory for symmetric monoidal categories</a> . This paper is the only reference I know for this fantastic result or any result like it. Does anyone know the history of analogous theorems about the equivalence between representable prop-like structures and weak 2-categorical structures?</p>\n<p>For similar reasons, it seems monoidal categories are equivalent to representable pros.<br>\nLikewise, it seems bicategories are equivalent to representable \"pros with colored regions\".</p>\n<p>What about double categories?<br>\nConsider a structure X defined by the analogy <em>monoidal category : pro :: double category : X</em>. This structure X is like a double category, except its 1-cells cannot compose (neither vertically nor horizontally), and its 2-cells are bordered by pasting diagrams of 1-cells rather than single 1-cells.</p>\n<p>Are doubly weak double categories equivalent to Xs that are both vertically and horizontally representable? Is this a good way to first wrap my head around doubly weak double categories?</p>",
+        "id": 301511384,
+        "sender_full_name": "Aaron David Fairbanks",
+        "timestamp": 1664478020
+    },
+    {
+        "content": "<p>Hermida's <a href=\"https://www.sciencedirect.com/science/article/pii/S0001870899918777\">Representable multicategories</a> is the standard reference for the general setup, there instantiated for the equivalence between monoidal categories and representable multicategories. But the idea is already present in Cockett and Seely's papers on linearly distributive categories (equivalent to polycategories “representable on both sides”). There is also a version “with coloured regions”: <a href=\"https://ncatlab.org/nlab/show/linear+bicategory\">linear bicategories</a> are equivalent to representable <a href=\"http://www.tac.mta.ca/tac/volumes/11/2/11-02abs.html\">poly-bicategories</a></p>\n<p>For people who are acquainted with this branch of “Canadian” category theory, I think the result about pros and props are mostly understood as degenerate versions of the result for polycategories: if a representable polycategory extends to a prop, then the “tensor” and “par” of the corresponding linearly distributive category collapse to a single operation, so the linearly distributive category is “actually” a monoidal category. </p>\n<p>I think this fact -- that the “representable prop” result is a “degenerate case” of a more refined result about polycategories -- may be why the prop result is hard to find in publications (I have also only seen it spelled out in Shulman's paper that you cite).</p>",
+        "id": 301514454,
+        "sender_full_name": "Amar Hadzihasanovic",
+        "timestamp": 1664479122
+    },
+    {
+        "content": "<p>More troublingly, the relevance of this result to the theory of string diagrams seems to be little known in the string diagram community, which has led to parts of it being “rediscovered” over and over... I am actually writing an expository paper for this purpose.</p>",
+        "id": 301514767,
+        "sender_full_name": "Amar Hadzihasanovic",
+        "timestamp": 1664479226
+    },
+    {
+        "content": "<p>Unfortunately, I don't know an answer to your question about double categories :)</p>",
+        "id": 301514824,
+        "sender_full_name": "Amar Hadzihasanovic",
+        "timestamp": 1664479252
+    },
+    {
+        "content": "<p>Ah, thank you for all this!</p>\n<p>I agree, I see this as a very useful result. I've specifically gotten a lot of mileage out of thinking of 2-categorical structures as representable \"many-in, many-out\" prop-like structures (more than multicategory-like structures) because representability is so neatly described in terms of existence of isomorphisms within the structure.</p>\n<p>Good luck with your expository paper!</p>",
+        "id": 301517558,
+        "sender_full_name": "Aaron David Fairbanks",
+        "timestamp": 1664480262
+    },
+    {
+        "content": "<p>Regarding double categories, this is actually something I spent a while thinking about!  In fact, I have a half-written paper lying around waiting to be completed (or superseded).  This definition of doubly-weak double category isn't in the literature, so far as I know, but I believe it's the best one.</p>",
+        "id": 301525537,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1664483160
+    },
+    {
+        "content": "<p>There is an extra subtlety in that not every \"arrangement of rectangles\" is actually composable in a double category: as shown by <a href=\"http://www.tac.mta.ca/tac/volumes/1995/n7/1-07abs.html\">Dawson</a> there are \"pinwheel\" shapes that can't be decomposed into the binary composites available in the standard definition of double category.  So in defining prop-like double-category structures (at one time I planned to call them \"double caterads\") you have to decide whether to allow \"pinwheel composites\".</p>",
+        "id": 301525597,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1664483170
+    },
+    {
+        "content": "<p>I think a nice way to construct and compare double-categorical structures is in terms of monads on the category of <em>double computads</em>, which have objects, two kinds of arrows without compositions, and 2-cells with the same shapes as in a double caterad but without any compositions there either.  There should be monads on this category whose algebras are (1) double categories, (2) augmented double categories, in which pinwheels etc. can be composed, (3) double caterads, (4) augmented double caterads, (5) doubly-weak double categories, and (6) augmented doubly-weak double categories.</p>",
+        "id": 301525999,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1664483326
+    },
+    {
+        "content": "<p>Thank you Mike, that is very helpful. I will from now on start calling these \"double caterads\" in my head.</p>",
+        "id": 301526102,
+        "sender_full_name": "Aaron David Fairbanks",
+        "timestamp": 1664483366
+    },
+    {
+        "content": "<p>The notions of doubly-weak double category that have been suggested elsewhere then arise by restricting the shapes that you allow in the double computads.  Verity's <a href=\"https://ncatlab.org/nlab/show/double%20bicategories\">[[double bicategories]]</a> have just squares and bigons, while the \"cubical bicategories\" once proposed by Garner have only squares.</p>",
+        "id": 301526423,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1664483487
+    }
+]

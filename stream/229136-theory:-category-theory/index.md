@@ -9,7 +9,7 @@ permalink: /stream/229136-theory:-category-theory/index.html
 
 ### Topics:
 
-* [quintets construction](topic/topic_quintets.20construction.html) (10 messages, latest: Sep 28 2022 at 19:25)
+* [quintets construction](topic/topic_quintets.20construction.html) (11 messages, latest: Sep 29 2022 at 08:43)
 * [Adjunction with icons](topic/topic_Adjunction.20with.20icons.html) (7 messages, latest: Sep 28 2022 at 16:56)
 * [strings for triple categories](topic/topic_strings.20for.20triple.20categories.html) (65 messages, latest: Sep 28 2022 at 14:55)
 * [Reference in Cartesian Bicategories I](topic/topic_Reference.20in.20Cartesian.20Bicategories.20I.html) (14 messages, latest: Sep 21 2022 at 18:03)
@@ -312,4 +312,4 @@ permalink: /stream/229136-theory:-category-theory/index.html
 * [diagrams for application](topic/topic_diagrams.20for.20application.html) (13 messages, latest: Mar 24 2020 at 06:19)
 * [universal constructions](topic/topic_universal.20constructions.html) (8 messages, latest: Mar 23 2020 at 21:06)
 
-<hr><p>Last updated: Sep 29 2022 at 01:10 UTC</p>
+<hr><p>Last updated: Sep 30 2022 at 01:23 UTC</p>
