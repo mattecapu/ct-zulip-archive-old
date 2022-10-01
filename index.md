@@ -120,13 +120,13 @@ permalink: /index.html
 
 * [learning: id my structure](stream/311521-learning:-id-my-structure/index.html) (5 topics)
 
+* [theory: analysis](stream/281848-theory:-analysis/index.html) (5 topics)
+
 * [languages: espanol/Spanish](stream/231120-languages:-espanol/Spanish/index.html) (4 topics)
 
 * [practice: neuroscience](stream/233925-practice:-neuroscience/index.html) (4 topics)
 
 * [practice: pedagogy](stream/295092-practice:-pedagogy/index.html) (4 topics)
-
-* [theory: analysis](stream/281848-theory:-analysis/index.html) (4 topics)
 
 * [Grothendieck](stream/307233-Grothendieck/index.html) (3 topics)
 
@@ -174,4 +174,4 @@ permalink: /index.html
 
 * [theory: alternate presentations](stream/233122-theory:-alternate-presentations/index.html) (1 topic)
 
-<hr><p>Last updated: Sep 30 2022 at 01:23 UTC</p>
+<hr><p>Last updated: Oct 01 2022 at 01:18 UTC</p>

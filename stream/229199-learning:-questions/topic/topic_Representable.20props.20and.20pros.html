@@ -84,6 +84,56 @@ Consider a structure X defined by the analogy <em>monoidal category : pro :: dou
 
 
 
+<a name="301629099"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/Representable%20props%20and%20pros/near/301629099" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Jacques Carette <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/topic_Representable.20props.20and.20pros.html#301629099">(Sep 30 2022 at 12:02)</a>:</h4>
+<p>And now I know why I got stuck trying to work out double categories in Agda (its MLTT core, not cubical) has been so hard: strict anything is really hard, it's 'simplest' to always work with weak structures. Didn't know that trying to do doubly-weak double categories might turn out to be 'new'.</p>
+
+
+
+<a name="301653574"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/Representable%20props%20and%20pros/near/301653574" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nathanael Arkor <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/topic_Representable.20props.20and.20pros.html#301653574">(Sep 30 2022 at 13:59)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="296322">Jacques Carette</span> <a href="#narrow/stream/229199-learning.3A-questions/topic/Representable.20props.20and.20pros/near/301629099">said</a>:</p>
+<blockquote>
+<p>And now I know why I got stuck trying to work out double categories in Agda (its MLTT core, not cubical) has been so hard: strict anything is really hard, it's 'simplest' to always work with weak structures. Didn't know that trying to do doubly-weak double categories might turn out to be 'new'.</p>
+</blockquote>
+<p>Just to clarify, "weak" in this context is being used to mean nonrepresentable/"virtual", rather than "pseudo". Double categories that have composition in both directions, but associative/unital only up to isomorphism have been studied in the literature before, under the name <a href="https://ncatlab.org/nlab/show/double%20bicategories">[[double bicategories]]</a>.</p>
+
+
+
+<a name="301665698"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/Representable%20props%20and%20pros/near/301665698" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Jacques Carette <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/topic_Representable.20props.20and.20pros.html#301665698">(Sep 30 2022 at 14:52)</a>:</h4>
+<p>Ah, thank you, I had misunderstood. And I had not idea that <a href="https://ncatlab.org/nlab/show/double%20bicategories">[[double bicategories]]</a> was were I ought to look, as that's not the expected name (as the page acknowledges). But now I know, that should help.</p>
+
+
+
+<a name="301690680"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/Representable%20props%20and%20pros/near/301690680" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/topic_Representable.20props.20and.20pros.html#301690680">(Sep 30 2022 at 16:47)</a>:</h4>
+<p><span class="user-mention" data-user-id="276092">@Nathanael Arkor</span>, I don't think that's right.  At least, that's certainly not what I meant by "weak" -- I meant it in the sense of "pseudo".  And I'm pretty sure Aaron meant "pseudo" too, because he asked "Are doubly weak double categories equivalent to [double caterads] that are both vertically and horizontally representable?"</p>
+
+
+
+<a name="301691028"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/Representable%20props%20and%20pros/near/301691028" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/topic_Representable.20props.20and.20pros.html#301691028">(Sep 30 2022 at 16:49)</a>:</h4>
+<p>Verity's double bicategories are <em>a</em> notion of "doubly-weak double category", but they're a little odd because they have bigons as separate data in addition to the squares, and in particular a double bicategory in which all the coherences are identities is more general than a strict double category in the traditional sense.  One of the virtues of the double-caterad approach to doubly-weak double categories is that it avoids this issue.</p>
+
+
+
+<a name="301702323"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/Representable%20props%20and%20pros/near/301702323" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nathanael Arkor <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/topic_Representable.20props.20and.20pros.html#301702323">(Sep 30 2022 at 17:48)</a>:</h4>
+<p><span class="user-mention" data-user-id="276777">@Mike Shulman</span>: ah, sorry, I misunderstood – thanks for the clarification. When you wrote </p>
+<blockquote>
+<p>Regarding double categories, this is actually something I spent a while thinking about!</p>
+</blockquote>
+<p>I thought you meant the "X"s that Aaron mentioned, rather than the representable kind (because your next message was about the nonrepresentable kind, and I thought it was talking about the same structure). Sorry for the confusion <span class="user-mention" data-user-id="296322">@Jacques Carette</span>!</p>
+
+
+
+<a name="301703016"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/Representable%20props%20and%20pros/near/301703016" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/topic_Representable.20props.20and.20pros.html#301703016">(Sep 30 2022 at 17:52)</a>:</h4>
+<p>I meant both!  (-:</p>
+
+
+
 {% endraw %}
 
-<hr><p>Last updated: Sep 30 2022 at 01:23 UTC</p>
+<hr><p>Last updated: Oct 01 2022 at 01:18 UTC</p>

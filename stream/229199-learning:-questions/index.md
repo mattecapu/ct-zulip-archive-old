@@ -9,10 +9,10 @@ permalink: /stream/229199-learning:-questions/index.html
 
 ### Topics:
 
-* [topos theory question](topic/topic_topos.20theory.20question.html) (16 messages, latest: Sep 30 2022 at 00:12)
-* [Representable props and pros](topic/topic_Representable.20props.20and.20pros.html) (10 messages, latest: Sep 29 2022 at 20:31)
+* [Representable props and pros](topic/topic_Representable.20props.20and.20pros.html) (17 messages, latest: Sep 30 2022 at 17:52)
+* [beginner questions](topic/topic_beginner.20questions.html) (670 messages, latest: Sep 30 2022 at 10:30)
+* [topos theory question](topic/topic_topos.20theory.20question.html) (17 messages, latest: Sep 30 2022 at 05:56)
 * [shapes that compose](topic/topic_shapes.20that.20compose.html) (10 messages, latest: Sep 29 2022 at 18:08)
-* [beginner questions](topic/topic_beginner.20questions.html) (668 messages, latest: Sep 29 2022 at 13:19)
 * [Colimits of limit diagrams and vice versa](topic/topic_Colimits.20of.20limit.20diagrams.20and.20vice.20versa.html) (3 messages, latest: Sep 29 2022 at 02:38)
 * [question about triangulated categories](topic/topic_question.20about.20triangulated.20categories.html) (10 messages, latest: Sep 28 2022 at 19:24)
 * [viewing objects as categories](topic/topic_viewing.20objects.20as.20categories.html) (40 messages, latest: Sep 28 2022 at 10:34)
@@ -753,4 +753,4 @@ permalink: /stream/229199-learning:-questions/index.html
 * [Algebra (Aluffi) exercises](topic/topic_Algebra.20(Aluffi).20exercises.html) (55 messages, latest: Mar 27 2020 at 23:38)
 * [What is category theory about?](topic/topic_What.20is.20category.20theory.20about.3F.html) (16 messages, latest: Mar 26 2020 at 16:03)
 
-<hr><p>Last updated: Sep 30 2022 at 01:23 UTC</p>
+<hr><p>Last updated: Oct 01 2022 at 01:18 UTC</p>
