@@ -9,6 +9,7 @@ permalink: /stream/229199-learning:-questions/index.html
 
 ### Topics:
 
+* [representable props and pros](topic/topic_representable.20props.20and.20pros.html) (7 messages, latest: Oct 02 2022 at 00:10)
 * [Representable props and pros](topic/topic_Representable.20props.20and.20pros.html) (17 messages, latest: Sep 30 2022 at 17:52)
 * [beginner questions](topic/topic_beginner.20questions.html) (670 messages, latest: Sep 30 2022 at 10:30)
 * [topos theory question](topic/topic_topos.20theory.20question.html) (17 messages, latest: Sep 30 2022 at 05:56)
@@ -753,4 +754,4 @@ permalink: /stream/229199-learning:-questions/index.html
 * [Algebra (Aluffi) exercises](topic/topic_Algebra.20(Aluffi).20exercises.html) (55 messages, latest: Mar 27 2020 at 23:38)
 * [What is category theory about?](topic/topic_What.20is.20category.20theory.20about.3F.html) (16 messages, latest: Mar 26 2020 at 16:03)
 
-<hr><p>Last updated: Oct 01 2022 at 01:18 UTC</p>
+<hr><p>Last updated: Oct 02 2022 at 01:11 UTC</p>

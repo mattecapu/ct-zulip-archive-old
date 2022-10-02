@@ -51,4 +51,4 @@ permalink: /stream/229457-MIT-Categories-Seminar/index.html
 * [March 19 - Pilot talk](topic/topic_March.2019.20-.20Pilot.20talk.html) (1 message, latest: Mar 24 2020 at 20:49)
 * [stream events](topic/topic_stream.20events.html) (1 message, latest: Mar 24 2020 at 18:42)
 
-<hr><p>Last updated: Oct 01 2022 at 01:18 UTC</p>
+<hr><p>Last updated: Oct 02 2022 at 01:11 UTC</p>

@@ -9,6 +9,7 @@ permalink: /stream/229111-general/index.html
 
 ### Topics:
 
+* [nLab](topic/topic_nLab.html) (190 messages, latest: Oct 02 2022 at 00:03)
 * [introduce yourself!](topic/topic_introduce.20yourself!.html) (71 messages, latest: Sep 16 2022 at 13:44)
 * [Gruppenpest](topic/topic_Gruppenpest.html) (2 messages, latest: Sep 02 2022 at 22:36)
 * [category theory in Japan](topic/topic_category.20theory.20in.20Japan.html) (5 messages, latest: Aug 30 2022 at 09:16)
@@ -19,7 +20,6 @@ permalink: /stream/229111-general/index.html
 * [Study Group for Basic Category Theory by Tom Leinster](topic/topic_Study.20Group.20for.20Basic.20Category.20Theory.20by.20Tom.20Leinster.html) (4 messages, latest: Jul 16 2022 at 17:26)
 * [any more Brazilians over here?](topic/topic_any.20more.20Brazilians.20over.20here.3F.html) (8 messages, latest: Jun 04 2022 at 16:22)
 * [Any more Brazilians over here?](topic/topic_Any.20more.20Brazilians.20over.20here.3F.html) (11 messages, latest: Jun 03 2022 at 21:58)
-* [nLab](topic/topic_nLab.html) (187 messages, latest: May 14 2022 at 20:39)
 * [Discoverability](topic/topic_Discoverability.html) (1 message, latest: May 10 2022 at 06:42)
 * [web-public streams](topic/topic_web-public.20streams.html) (4 messages, latest: May 09 2022 at 21:07)
 * [Pieter Hofstra](topic/topic_Pieter.20Hofstra.html) (11 messages, latest: May 04 2022 at 22:05)
@@ -244,4 +244,4 @@ permalink: /stream/229111-general/index.html
 * [Tools for diagrams](topic/topic_Tools.20for.20diagrams.html) (78 messages, latest: Mar 25 2020 at 17:53)
 * [topic demonstration](topic/topic_topic.20demonstration.html) (2 messages, latest: Mar 23 2020 at 16:57)
 
-<hr><p>Last updated: Oct 01 2022 at 01:18 UTC</p>
+<hr><p>Last updated: Oct 02 2022 at 01:11 UTC</p>
