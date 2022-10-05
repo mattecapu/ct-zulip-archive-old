@@ -1,0 +1,50 @@
+---
+layout: archive
+title: Zulip Chat Archive
+permalink: /stream/229136-theory:-category-theory/topic/topic_well-founded.20relations.20and.20Yoneda.html
+---
+
+<h2>Stream: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/index.html">theory: category theory</a></h2>
+<h3>Topic: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/topic_well-founded.20relations.20and.20Yoneda.html">well-founded relations and Yoneda</a></h3>
+
+<hr>
+
+<base href="https://categorytheory.zulipchat.com/">
+
+{% raw %}
+
+<a name="302317477"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/well-founded%20relations%20and%20Yoneda/near/302317477" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Max New <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/topic_well-founded.20relations.20and.20Yoneda.html#302317477">(Oct 04 2022 at 18:03)</a>:</h4>
+<p>I had a question from a very perceptive student today. He pointed out that the property in the definition of a well-founded relation relation <a href="/user_uploads/21317/TmwlWXNAnF0QlQGJ6Yr7EJxO/Screen-Shot-2022-10-04-at-1.47.23-PM.png">Screen-Shot-2022-10-04-at-1.47.23-PM.png</a> has the exact logical structure of the forward implication of the Yoneda lemma!</p>
+<div class="message_inline_image"><a href="/user_uploads/21317/TmwlWXNAnF0QlQGJ6Yr7EJxO/Screen-Shot-2022-10-04-at-1.47.23-PM.png" title="Screen-Shot-2022-10-04-at-1.47.23-PM.png"><img src="/user_uploads/21317/TmwlWXNAnF0QlQGJ6Yr7EJxO/Screen-Shot-2022-10-04-at-1.47.23-PM.png"></a></div><p>So if the ordering was the poset ordering and the subset $A$ here were downward-closed the Yoneda lemma for posets implies that the ordering is inductive in this sense.</p>
+<p>The bizarre thing is that the Yoneda lemma and well-founded relations seem very disjoint: well-founded relations are <em>irreflexive</em> and the inductive set is usually not downward or upward closed. Is there some deeper reason these two have such similar structure?</p>
+
+
+
+<a name="302318511"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/well-founded%20relations%20and%20Yoneda/near/302318511" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/topic_well-founded.20relations.20and.20Yoneda.html#302318511">(Oct 04 2022 at 18:09)</a>:</h4>
+<p>I don't understand.  It's certainly not true that every downward-closed subset of a poset is inductive.</p>
+
+
+
+<a name="302318639"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/well-founded%20relations%20and%20Yoneda/near/302318639" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/topic_well-founded.20relations.20and.20Yoneda.html#302318639">(Oct 04 2022 at 18:09)</a>:</h4>
+<p>Oh, are you supposing that <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>≺</mo></mrow><annotation encoding="application/x-tex">\prec</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.5782em;vertical-align:-0.0391em;"></span><span class="mrel">≺</span></span></span></span> is a <em>reflexive</em> relation?  So that trivially <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mi mathvariant="normal">∀</mi><mo stretchy="false">(</mo><mi>t</mi><mo>:</mo><mi>S</mi><mo stretchy="false">)</mo><mo separator="true">,</mo><mi>t</mi><mo>≺</mo><mi>x</mi><mo>⇒</mo><mi>t</mi><mo>∈</mo><mi>A</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(\forall(t:S), t\prec x \Rightarrow t\in A)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord">∀</span><span class="mopen">(</span><span class="mord mathnormal">t</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">:</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.05764em;">S</span><span class="mclose">)</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal">t</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">≺</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord mathnormal">x</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">⇒</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6542em;vertical-align:-0.0391em;"></span><span class="mord mathnormal">t</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">∈</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal">A</span><span class="mclose">)</span></span></span></span> implies <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>∈</mo><mi>A</mi></mrow><annotation encoding="application/x-tex">x\in A</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.5782em;vertical-align:-0.0391em;"></span><span class="mord mathnormal">x</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">∈</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal">A</span></span></span></span> by taking <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>t</mi><mo>=</mo><mi>x</mi></mrow><annotation encoding="application/x-tex">t=x</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6151em;"></span><span class="mord mathnormal">t</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord mathnormal">x</span></span></span></span>?</p>
+
+
+
+<a name="302320602"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/well-founded%20relations%20and%20Yoneda/near/302320602" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Max New <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/topic_well-founded.20relations.20and.20Yoneda.html#302320602">(Oct 04 2022 at 18:20)</a>:</h4>
+<p>Yes, I'm saying if the <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>≺</mo></mrow><annotation encoding="application/x-tex">\prec</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.5782em;vertical-align:-0.0391em;"></span><span class="mrel">≺</span></span></span></span> is the order relation of the poset <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>≤</mo></mrow><annotation encoding="application/x-tex">\leq</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.7719em;vertical-align:-0.136em;"></span><span class="mrel">≤</span></span></span></span> the property of being inductive is the "easy" half of the equivalence in the Yoneda lemma that follows from reflexivity</p>
+
+
+
+<a name="302320941"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/well-founded%20relations%20and%20Yoneda/near/302320941" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/topic_well-founded.20relations.20and.20Yoneda.html#302320941">(Oct 04 2022 at 18:21)</a>:</h4>
+<p>Okay.  Of course no one ever applies this definition of "inductive" to a reflexive relation, precisely for this reason that it would be boring.  But maybe there is some intuitive sense in which inductiveness for an irreflexive relation is trying to "approximate the Yoneda lemma"?</p>
+
+
+
+{% endraw %}
+
+<hr><p>Last updated: Oct 05 2022 at 01:10 UTC</p>

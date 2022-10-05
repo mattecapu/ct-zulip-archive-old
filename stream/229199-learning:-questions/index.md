@@ -9,6 +9,7 @@ permalink: /stream/229199-learning:-questions/index.html
 
 ### Topics:
 
+* [$$\lambda$$-pure in $$\lambda$$-accessible are monos](topic/topic_.24.24.5Clambda.24.24-pure.20in.20.24.24.5Clambda.24.24-accessible.20are.20monos.html) (1 message, latest: Oct 04 2022 at 08:21)
 * [Clarifying Understanding of Coproducts and Disjoint Unions](topic/topic_Clarifying.20Understanding.20of.20Coproducts.20and.20Disjoint.20Unions.html) (3 messages, latest: Oct 03 2022 at 15:37)
 * [representable props and pros](topic/topic_representable.20props.20and.20pros.html) (8 messages, latest: Oct 03 2022 at 07:32)
 * [clarifying understanding of coproducts and disjoint unions](topic/topic_clarifying.20understanding.20of.20coproducts.20and.20disjoint.20unions.html) (1 message, latest: Oct 03 2022 at 02:47)
@@ -756,4 +757,4 @@ permalink: /stream/229199-learning:-questions/index.html
 * [Algebra (Aluffi) exercises](topic/topic_Algebra.20(Aluffi).20exercises.html) (55 messages, latest: Mar 27 2020 at 23:38)
 * [What is category theory about?](topic/topic_What.20is.20category.20theory.20about.3F.html) (16 messages, latest: Mar 26 2020 at 16:03)
 
-<hr><p>Last updated: Oct 04 2022 at 01:10 UTC</p>
+<hr><p>Last updated: Oct 05 2022 at 01:10 UTC</p>

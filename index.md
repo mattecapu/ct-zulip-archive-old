@@ -8,9 +8,9 @@ permalink: /index.html
 
 ## Streams:
 
-* [learning: questions](stream/229199-learning:-questions/index.html) (746 topics)
+* [learning: questions](stream/229199-learning:-questions/index.html) (747 topics)
 
-* [theory: category theory](stream/229136-theory:-category-theory/index.html) (304 topics)
+* [theory: category theory](stream/229136-theory:-category-theory/index.html) (305 topics)
 
 * [general](stream/229111-general/index.html) (234 topics)
 
@@ -48,7 +48,7 @@ permalink: /index.html
 
 * [learning: recommendations](stream/232161-learning:-recommendations/index.html) (29 topics)
 
-* [theory: probability](stream/253118-theory:-probability/index.html) (28 topics)
+* [theory: probability](stream/253118-theory:-probability/index.html) (29 topics)
 
 * [general: values](stream/241990-general:-values/index.html) (26 topics)
 
@@ -140,6 +140,8 @@ permalink: /index.html
 
 * [theory: game semantics](stream/233273-theory:-game-semantics/index.html) (3 topics)
 
+* [workshop: Categories for AI](stream/347879-workshop:-Categories-for-AI/index.html) (3 topics)
+
 * [AMS MRC on applied category theory](stream/322927-AMS-MRC-on-applied-category-theory/index.html) (2 topics)
 
 * [MATHEMATICAL PHILOSOPHY OF BIOLOGY](stream/336415-MATHEMATICAL-PHILOSOPHY-OF-BIOLOGY/index.html) (2 topics)
@@ -174,6 +176,4 @@ permalink: /index.html
 
 * [theory: alternate presentations](stream/233122-theory:-alternate-presentations/index.html) (1 topic)
 
-* [workshop: Categories for AI](stream/347879-workshop:-Categories-for-AI/index.html) (1 topic)
-
-<hr><p>Last updated: Oct 04 2022 at 01:10 UTC</p>
+<hr><p>Last updated: Oct 05 2022 at 01:10 UTC</p>

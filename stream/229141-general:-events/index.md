@@ -9,7 +9,7 @@ permalink: /stream/229141-general:-events/index.html
 
 ### Topics:
 
-* [This Week's Finds seminar](topic/topic_This.20Week's.20Finds.20seminar.html) (62 messages, latest: Oct 01 2022 at 16:18)
+* [This Week's Finds seminar](topic/topic_This.20Week's.20Finds.20seminar.html) (64 messages, latest: Oct 04 2022 at 18:57)
 * [ACT 2023](topic/topic_ACT.202023.html) (21 messages, latest: Sep 26 2022 at 14:01)
 * [ItaCa Fest 2022](topic/topic_ItaCa.20Fest.202022.html) (10 messages, latest: Sep 14 2022 at 12:35)
 * [Thorsten Altenkirch 60 celebration](topic/topic_Thorsten.20Altenkirch.2060.20celebration.html) (2 messages, latest: Sep 08 2022 at 12:05)
@@ -150,4 +150,4 @@ permalink: /stream/229141-general:-events/index.html
 * [April 1st: ACT@UCR](topic/topic_April.201st.3A.20ACT.40UCR.html) (3 messages, latest: Mar 26 2020 at 23:58)
 * [Google Sites problem](topic/topic_Google.20Sites.20problem.html) (4 messages, latest: Mar 25 2020 at 04:29)
 
-<hr><p>Last updated: Oct 04 2022 at 01:10 UTC</p>
+<hr><p>Last updated: Oct 05 2022 at 01:10 UTC</p>

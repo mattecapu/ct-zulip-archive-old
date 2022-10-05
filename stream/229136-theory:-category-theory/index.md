@@ -9,8 +9,9 @@ permalink: /stream/229136-theory:-category-theory/index.html
 
 ### Topics:
 
-* [linear natural transformation](topic/topic_linear.20natural.20transformation.html) (7 messages, latest: Oct 03 2022 at 18:17)
-* [lax/weak monoidal categories](topic/topic_lax.2Fweak.20monoidal.20categories.html) (5 messages, latest: Oct 03 2022 at 18:11)
+* [well-founded relations and Yoneda](topic/topic_well-founded.20relations.20and.20Yoneda.html) (5 messages, latest: Oct 04 2022 at 18:21)
+* [lax/weak monoidal categories](topic/topic_lax.2Fweak.20monoidal.20categories.html) (8 messages, latest: Oct 04 2022 at 15:52)
+* [linear natural transformation](topic/topic_linear.20natural.20transformation.html) (8 messages, latest: Oct 04 2022 at 13:17)
 * [quintets construction](topic/topic_quintets.20construction.html) (11 messages, latest: Sep 29 2022 at 08:43)
 * [Adjunction with icons](topic/topic_Adjunction.20with.20icons.html) (7 messages, latest: Sep 28 2022 at 16:56)
 * [strings for triple categories](topic/topic_strings.20for.20triple.20categories.html) (65 messages, latest: Sep 28 2022 at 14:55)
@@ -314,4 +315,4 @@ permalink: /stream/229136-theory:-category-theory/index.html
 * [diagrams for application](topic/topic_diagrams.20for.20application.html) (13 messages, latest: Mar 24 2020 at 06:19)
 * [universal constructions](topic/topic_universal.20constructions.html) (8 messages, latest: Mar 23 2020 at 21:06)
 
-<hr><p>Last updated: Oct 04 2022 at 01:10 UTC</p>
+<hr><p>Last updated: Oct 05 2022 at 01:10 UTC</p>
