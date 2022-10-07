@@ -10,7 +10,7 @@ permalink: /index.html
 
 * [learning: questions](stream/229199-learning:-questions/index.html) (747 topics)
 
-* [theory: category theory](stream/229136-theory:-category-theory/index.html) (305 topics)
+* [theory: category theory](stream/229136-theory:-category-theory/index.html) (306 topics)
 
 * [general](stream/229111-general/index.html) (234 topics)
 
@@ -150,6 +150,8 @@ permalink: /index.html
 
 * [Topos Colloquium](stream/269484-Topos-Colloquium/index.html) (2 topics)
 
+* [general: terminology](stream/348484-general:-terminology/index.html) (2 topics)
+
 * [languages: Nederlands/Dutch](stream/324768-languages:-Nederlands/Dutch/index.html) (2 topics)
 
 * [practice: industry](stream/229370-practice:-industry/index.html) (2 topics)
@@ -176,4 +178,4 @@ permalink: /index.html
 
 * [theory: alternate presentations](stream/233122-theory:-alternate-presentations/index.html) (1 topic)
 
-<hr><p>Last updated: Oct 06 2022 at 01:05 UTC</p>
+<hr><p>Last updated: Oct 07 2022 at 01:16 UTC</p>

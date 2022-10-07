@@ -9,9 +9,9 @@ permalink: /stream/229111-general/index.html
 
 ### Topics:
 
+* [new streams](topic/topic_new.20streams.html) (98 messages, latest: Oct 06 2022 at 17:16)
+* [introduce yourself!](topic/topic_introduce.20yourself!.html) (72 messages, latest: Oct 06 2022 at 14:45)
 * [nLab](topic/topic_nLab.html) (192 messages, latest: Oct 05 2022 at 16:40)
-* [new streams](topic/topic_new.20streams.html) (97 messages, latest: Oct 03 2022 at 17:49)
-* [introduce yourself!](topic/topic_introduce.20yourself!.html) (71 messages, latest: Sep 16 2022 at 13:44)
 * [Gruppenpest](topic/topic_Gruppenpest.html) (2 messages, latest: Sep 02 2022 at 22:36)
 * [category theory in Japan](topic/topic_category.20theory.20in.20Japan.html) (5 messages, latest: Aug 30 2022 at 09:16)
 * [Category Theory in Japan](topic/topic_Category.20Theory.20in.20Japan.html) (4 messages, latest: Aug 29 2022 at 23:40)
@@ -244,4 +244,4 @@ permalink: /stream/229111-general/index.html
 * [Tools for diagrams](topic/topic_Tools.20for.20diagrams.html) (78 messages, latest: Mar 25 2020 at 17:53)
 * [topic demonstration](topic/topic_topic.20demonstration.html) (2 messages, latest: Mar 23 2020 at 16:57)
 
-<hr><p>Last updated: Oct 06 2022 at 01:05 UTC</p>
+<hr><p>Last updated: Oct 07 2022 at 01:16 UTC</p>
