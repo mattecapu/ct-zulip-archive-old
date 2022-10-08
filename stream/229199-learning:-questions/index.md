@@ -9,6 +9,7 @@ permalink: /stream/229199-learning:-questions/index.html
 
 ### Topics:
 
+* [string diagrams 101](topic/topic_string.20diagrams.20101.html) (22 messages, latest: Oct 07 2022 at 21:40)
 * [definition of exponential object without cartesianness](topic/topic_definition.20of.20exponential.20object.20without.20cartesianness.html) (37 messages, latest: Oct 06 2022 at 13:24)
 * [$$\lambda$$-pure in $$\lambda$$-accessible are monos](topic/topic_.24.24.5Clambda.24.24-pure.20in.20.24.24.5Clambda.24.24-accessible.20are.20monos.html) (1 message, latest: Oct 04 2022 at 08:21)
 * [Clarifying Understanding of Coproducts and Disjoint Unions](topic/topic_Clarifying.20Understanding.20of.20Coproducts.20and.20Disjoint.20Unions.html) (3 messages, latest: Oct 03 2022 at 15:37)
@@ -39,7 +40,6 @@ permalink: /stream/229199-learning:-questions/index.html
 * [epipresheaf, powerset, contractible cover](topic/topic_epipresheaf.2C.20powerset.2C.20contractible.20cover.html) (1 message, latest: Sep 05 2022 at 13:47)
 * [colimits of Lawvere theories](topic/topic_colimits.20of.20Lawvere.20theories.html) (27 messages, latest: Sep 03 2022 at 11:40)
 * [finitely presentable objects in presheaves](topic/topic_finitely.20presentable.20objects.20in.20presheaves.html) (4 messages, latest: Sep 02 2022 at 11:06)
-* [string diagrams 101](topic/topic_string.20diagrams.20101.html) (13 messages, latest: Sep 02 2022 at 07:53)
 * [Colimits of Lawvere theories](topic/topic_Colimits.20of.20Lawvere.20theories.html) (70 messages, latest: Sep 02 2022 at 07:43)
 * [Lindy Hop dance](topic/topic_Lindy.20Hop.20dance.html) (11 messages, latest: Aug 31 2022 at 18:16)
 * [Funny tensor product](topic/topic_Funny.20tensor.20product.html) (11 messages, latest: Aug 30 2022 at 18:52)
@@ -757,4 +757,4 @@ permalink: /stream/229199-learning:-questions/index.html
 * [Algebra (Aluffi) exercises](topic/topic_Algebra.20(Aluffi).20exercises.html) (55 messages, latest: Mar 27 2020 at 23:38)
 * [What is category theory about?](topic/topic_What.20is.20category.20theory.20about.3F.html) (16 messages, latest: Mar 26 2020 at 16:03)
 
-<hr><p>Last updated: Oct 07 2022 at 01:16 UTC</p>
+<hr><p>Last updated: Oct 08 2022 at 00:59 UTC</p>

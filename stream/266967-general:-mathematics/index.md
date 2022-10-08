@@ -9,6 +9,7 @@ permalink: /stream/266967-general:-mathematics/index.html
 
 ### Topics:
 
+* [When is (X,S ⊆ P(X)) -> X a fibration?](topic/topic_When.20is.20(X.2CS.20.E2.8A.86.20P(X)).20-.3E.20X.20a.20fibration.3F.html) (1 message, latest: Oct 08 2022 at 00:48)
 * [Von Neumann Varieties](topic/topic_Von.20Neumann.20Varieties.html) (3 messages, latest: Sep 10 2022 at 18:25)
 * [What to look for in a category of algebraic structures?](topic/topic_What.20to.20look.20for.20in.20a.20category.20of.20algebraic.20structures.3F.html) (16 messages, latest: Jul 07 2022 at 19:53)
 * [Category of infinity-metric spaces (references?)](topic/topic_Category.20of.20infinity-metric.20spaces.20(references.3F).html) (9 messages, latest: May 10 2022 at 19:00)
@@ -66,4 +67,4 @@ permalink: /stream/266967-general:-mathematics/index.html
 * [the 600-cell](topic/topic_the.20600-cell.html) (5 messages, latest: Dec 01 2020 at 16:35)
 * [hermitian matrix over normed division algebra](topic/topic_hermitian.20matrix.20over.20normed.20division.20algebra.html) (8 messages, latest: Sep 28 2020 at 21:19)
 
-<hr><p>Last updated: Oct 07 2022 at 01:16 UTC</p>
+<hr><p>Last updated: Oct 08 2022 at 00:59 UTC</p>
