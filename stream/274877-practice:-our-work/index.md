@@ -9,7 +9,7 @@ permalink: /stream/274877-practice:-our-work/index.html
 
 ### Topics:
 
-* [John Baez](topic/topic_John.20Baez.html) (821 messages, latest: Oct 07 2022 at 07:38)
+* [John Baez](topic/topic_John.20Baez.html) (823 messages, latest: Oct 09 2022 at 12:45)
 * [Lê Thành Dũng (Tito) Nguyễn](topic/topic_L.C3.AA.20Th.C3.A0nh.20D.C5.A9ng.20(Tito).20Nguy.E1.BB.85n.html) (3 messages, latest: Oct 07 2022 at 04:16)
 * [David Roberts](topic/topic_David.20Roberts.html) (54 messages, latest: Oct 05 2022 at 11:21)
 * [Dusko Pavlovic](topic/topic_Dusko.20Pavlovic.html) (22 messages, latest: Sep 30 2022 at 21:56)
@@ -37,4 +37,4 @@ permalink: /stream/274877-practice:-our-work/index.html
 * [Conor Mc Bride](topic/topic_Conor.20Mc.20Bride.html) (60 messages, latest: Apr 08 2021 at 15:15)
 * [thoughts on sharing ideas](topic/topic_thoughts.20on.20sharing.20ideas.html) (20 messages, latest: Jan 31 2021 at 03:05)
 
-<hr><p>Last updated: Oct 09 2022 at 01:03 UTC</p>
+<hr><p>Last updated: Oct 10 2022 at 01:07 UTC</p>

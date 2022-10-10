@@ -9,8 +9,9 @@ permalink: /stream/229199-learning:-questions/index.html
 
 ### Topics:
 
-* [When is (X,S ⊆ P(X)) -> X a fibration?](topic/topic_When.20is.20(X.2CS.20.E2.8A.86.20P(X)).20-.3E.20X.20a.20fibration.3F.html) (4 messages, latest: Oct 08 2022 at 18:02)
-* [string diagrams 101](topic/topic_string.20diagrams.20101.html) (22 messages, latest: Oct 07 2022 at 21:40)
+* [string diagrams 101](topic/topic_string.20diagrams.20101.html) (23 messages, latest: Oct 09 2022 at 12:51)
+* [Is taking the ultrapower a monad?](topic/topic_Is.20taking.20the.20ultrapower.20a.20monad.3F.html) (2 messages, latest: Oct 09 2022 at 11:48)
+* [When is (X,S ⊆ P(X)) -> X a fibration?](topic/topic_When.20is.20(X.2CS.20.E2.8A.86.20P(X)).20-.3E.20X.20a.20fibration.3F.html) (7 messages, latest: Oct 09 2022 at 06:02)
 * [definition of exponential object without cartesianness](topic/topic_definition.20of.20exponential.20object.20without.20cartesianness.html) (37 messages, latest: Oct 06 2022 at 13:24)
 * [$$\lambda$$-pure in $$\lambda$$-accessible are monos](topic/topic_.24.24.5Clambda.24.24-pure.20in.20.24.24.5Clambda.24.24-accessible.20are.20monos.html) (1 message, latest: Oct 04 2022 at 08:21)
 * [Clarifying Understanding of Coproducts and Disjoint Unions](topic/topic_Clarifying.20Understanding.20of.20Coproducts.20and.20Disjoint.20Unions.html) (3 messages, latest: Oct 03 2022 at 15:37)
@@ -758,4 +759,4 @@ permalink: /stream/229199-learning:-questions/index.html
 * [Algebra (Aluffi) exercises](topic/topic_Algebra.20(Aluffi).20exercises.html) (55 messages, latest: Mar 27 2020 at 23:38)
 * [What is category theory about?](topic/topic_What.20is.20category.20theory.20about.3F.html) (16 messages, latest: Mar 26 2020 at 16:03)
 
-<hr><p>Last updated: Oct 09 2022 at 01:03 UTC</p>
+<hr><p>Last updated: Oct 10 2022 at 01:07 UTC</p>
