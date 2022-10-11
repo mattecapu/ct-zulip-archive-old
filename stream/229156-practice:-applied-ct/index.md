@@ -9,6 +9,7 @@ permalink: /stream/229156-practice:-applied-ct/index.html
 
 ### Topics:
 
+* [instance functors for monoidal categories](topic/topic_instance.20functors.20for.20monoidal.20categories.html) (14 messages, latest: Oct 10 2022 at 18:52)
 * [web cats](topic/topic_web.20cats.html) (348 messages, latest: Sep 08 2022 at 08:18)
 * [around machine learning](topic/topic_around.20machine.20learning.html) (50 messages, latest: Sep 05 2022 at 02:16)
 * [security + ct](topic/topic_security.20.2B.20ct.html) (69 messages, latest: Aug 23 2022 at 17:44)
@@ -147,4 +148,4 @@ permalink: /stream/229156-practice:-applied-ct/index.html
 * [AACT2020](topic/topic_AACT2020.html) (1 message, latest: Mar 24 2020 at 00:56)
 * [welcome](topic/topic_welcome.html) (15 messages, latest: Mar 24 2020 at 00:03)
 
-<hr><p>Last updated: Oct 10 2022 at 01:07 UTC</p>
+<hr><p>Last updated: Oct 11 2022 at 01:00 UTC</p>

@@ -8,7 +8,7 @@ permalink: /index.html
 
 ## Streams:
 
-* [learning: questions](stream/229199-learning:-questions/index.html) (749 topics)
+* [learning: questions](stream/229199-learning:-questions/index.html) (751 topics)
 
 * [theory: category theory](stream/229136-theory:-category-theory/index.html) (308 topics)
 
@@ -16,7 +16,7 @@ permalink: /index.html
 
 * [general: events](stream/229141-general:-events/index.html) (140 topics)
 
-* [practice: applied ct](stream/229156-practice:-applied-ct/index.html) (137 topics)
+* [practice: applied ct](stream/229156-practice:-applied-ct/index.html) (138 topics)
 
 * [theory: topos theory](stream/230087-theory:-topos-theory/index.html) (77 topics)
 
@@ -34,9 +34,9 @@ permalink: /index.html
 
 * [practice: thermodynamics](stream/306433-practice:-thermodynamics/index.html) (53 topics)
 
-* [practice: our papers](stream/258900-practice:-our-papers/index.html) (50 topics)
+* [theory: logic](stream/233104-theory:-logic/index.html) (51 topics)
 
-* [theory: logic](stream/233104-theory:-logic/index.html) (50 topics)
+* [practice: our papers](stream/258900-practice:-our-papers/index.html) (50 topics)
 
 * [theory: type theory](stream/229952-theory:-type-theory/index.html) (46 topics)
 
@@ -122,6 +122,8 @@ permalink: /index.html
 
 * [theory: analysis](stream/281848-theory:-analysis/index.html) (5 topics)
 
+* [workshop: Categories for AI](stream/347879-workshop:-Categories-for-AI/index.html) (5 topics)
+
 * [languages: espanol/Spanish](stream/231120-languages:-espanol/Spanish/index.html) (4 topics)
 
 * [practice: neuroscience](stream/233925-practice:-neuroscience/index.html) (4 topics)
@@ -139,8 +141,6 @@ permalink: /index.html
 * [theory: combinatorics](stream/229794-theory:-combinatorics/index.html) (3 topics)
 
 * [theory: game semantics](stream/233273-theory:-game-semantics/index.html) (3 topics)
-
-* [workshop: Categories for AI](stream/347879-workshop:-Categories-for-AI/index.html) (3 topics)
 
 * [AMS MRC on applied category theory](stream/322927-AMS-MRC-on-applied-category-theory/index.html) (2 topics)
 
@@ -178,4 +178,4 @@ permalink: /index.html
 
 * [theory: alternate presentations](stream/233122-theory:-alternate-presentations/index.html) (1 topic)
 
-<hr><p>Last updated: Oct 10 2022 at 01:07 UTC</p>
+<hr><p>Last updated: Oct 11 2022 at 01:00 UTC</p>

@@ -1,0 +1,150 @@
+---
+layout: archive
+title: Zulip Chat Archive
+permalink: /stream/229156-practice:-applied-ct/topic/topic_instance.20functors.20for.20monoidal.20categories.html
+---
+
+<h2>Stream: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-practice:-applied-ct/index.html">practice: applied ct</a></h2>
+<h3>Topic: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-practice:-applied-ct/topic/topic_instance.20functors.20for.20monoidal.20categories.html">instance functors for monoidal categories</a></h3>
+
+<hr>
+
+<base href="https://categorytheory.zulipchat.com/">
+
+{% raw %}
+
+<a name="303305153"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229156-practice%3A%20applied%20ct/topic/instance%20functors%20for%20monoidal%20categories/near/303305153" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mark Wilhelm <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-practice:-applied-ct/topic/topic_instance.20functors.20for.20monoidal.20categories.html#303305153">(Oct 10 2022 at 18:07)</a>:</h4>
+<p>Hello, I'm just going through the "Seven sketches..." book and have come across something that it's a bit hard to google. In the book an "instance functor" is a functor from some base category into Set. If the base category is monoidal, are instance categories still into Set, such that --</p>
+<ul>
+<li>objects map to sets</li>
+<li>serial composition maps to functions</li>
+<li>"parallel" composition also maps to functions</li>
+</ul>
+<p>...or is there more to it than that? Thanks</p>
+
+
+
+<a name="303306712"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229156-practice%3A%20applied%20ct/topic/instance%20functors%20for%20monoidal%20categories/near/303306712" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mark Wilhelm <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-practice:-applied-ct/topic/topic_instance.20functors.20for.20monoidal.20categories.html#303306712">(Oct 10 2022 at 18:18)</a>:</h4>
+<p>oh actually, I guess parallel composition will just be the cross product in Set? ok maybe that should have been obvious...</p>
+
+
+
+<a name="303307710"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229156-practice%3A%20applied%20ct/topic/instance%20functors%20for%20monoidal%20categories/near/303307710" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-practice:-applied-ct/topic/topic_instance.20functors.20for.20monoidal.20categories.html#303307710">(Oct 10 2022 at 18:27)</a>:</h4>
+<p>I read that book but I don't remember "instance functor".  It's not any sort of standard term, so you're sort of free to make up what it means.</p>
+
+
+
+<a name="303307860"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229156-practice%3A%20applied%20ct/topic/instance%20functors%20for%20monoidal%20categories/near/303307860" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-practice:-applied-ct/topic/topic_instance.20functors.20for.20monoidal.20categories.html#303307860">(Oct 10 2022 at 18:28)</a>:</h4>
+<blockquote>
+<p>objects map to sets</p>
+</blockquote>
+<p>Of course this is true for any functor from any category to Set.</p>
+<p>I don't know what this means:</p>
+<blockquote>
+<p>serial composition maps to functions</p>
+</blockquote>
+<p>A functor maps <em>morphisms</em> to functions.</p>
+
+
+
+<a name="303307980"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229156-practice%3A%20applied%20ct/topic/instance%20functors%20for%20monoidal%20categories/near/303307980" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-practice:-applied-ct/topic/topic_instance.20functors.20for.20monoidal.20categories.html#303307980">(Oct 10 2022 at 18:29)</a>:</h4>
+<p>I just checked and it doesn't seem to be in the index either.  Where do they define it?</p>
+
+
+
+<a name="303308135"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229156-practice%3A%20applied%20ct/topic/instance%20functors%20for%20monoidal%20categories/near/303308135" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mark Wilhelm <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-practice:-applied-ct/topic/topic_instance.20functors.20for.20monoidal.20categories.html#303308135">(Oct 10 2022 at 18:30)</a>:</h4>
+<p>hm ok, so they used "instance" for a kind of functor into Set where, for example in the case of graphs, you would have --</p>
+<ul>
+<li>the base category has a Vertex object, Arrow object, and morphisms for head and tail (like the "schema" of a graph)</li>
+<li>a given instance functor maps this into Set, giving the data for an actual specific graph</li>
+<li>then the functor category of those "instances" has the graph homomorphism as it's morphism</li>
+</ul>
+<p>then for topological spaces there would be an analogous setup with the functor category on instances having the homeomorphism as it's morphism.</p>
+<p>is there a different term for these? i could also be way off base with my reading.</p>
+
+
+
+<a name="303308162"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229156-practice%3A%20applied%20ct/topic/instance%20functors%20for%20monoidal%20categories/near/303308162" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mark Wilhelm <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-practice:-applied-ct/topic/topic_instance.20functors.20for.20monoidal.20categories.html#303308162">(Oct 10 2022 at 18:30)</a>:</h4>
+<p>oh let me look in the index and see if i can find it...</p>
+
+
+
+<a name="303308198"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229156-practice%3A%20applied%20ct/topic/instance%20functors%20for%20monoidal%20categories/near/303308198" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Kobe Wullaert <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-practice:-applied-ct/topic/topic_instance.20functors.20for.20monoidal.20categories.html#303308198">(Oct 10 2022 at 18:31)</a>:</h4>
+<p>An instance C-functor is by definition 3.44 of the book just a functor C to set</p>
+
+
+
+<a name="303308277"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229156-practice%3A%20applied%20ct/topic/instance%20functors%20for%20monoidal%20categories/near/303308277" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mark Wilhelm <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-practice:-applied-ct/topic/topic_instance.20functors.20for.20monoidal.20categories.html#303308277">(Oct 10 2022 at 18:31)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="275920">John Baez</span> <a href="#narrow/stream/229156-practice.3A-applied-ct/topic/Instance.20functors.20for.20monoidal.20categories/near/303307860">said</a>:</p>
+<blockquote>
+<blockquote>
+<p>objects map to sets</p>
+</blockquote>
+<p>Of course this is true for any functor from any category to Set.</p>
+<p>I don't know what this means:</p>
+<blockquote>
+<p>serial composition maps to functions</p>
+</blockquote>
+<p>A functor maps <em>morphisms</em> to functions.</p>
+</blockquote>
+<p>oh yes sorry, i maybe should have said morphisms map to functions and serial composition maps to function composition</p>
+
+
+
+<a name="303308827"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229156-practice%3A%20applied%20ct/topic/instance%20functors%20for%20monoidal%20categories/near/303308827" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mark Wilhelm <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-practice:-applied-ct/topic/topic_instance.20functors.20for.20monoidal.20categories.html#303308827">(Oct 10 2022 at 18:35)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="498392">Kobe Wullaert</span> <a href="#narrow/stream/229156-practice.3A-applied-ct/topic/Instance.20functors.20for.20monoidal.20categories/near/303308198">said</a>:</p>
+<blockquote>
+<p>An instance C-functor is by definition 3.44 of the book just a functor C to set</p>
+</blockquote>
+<p>yeah that is what i'm thinking of. so i think that for a monoidal category then --</p>
+<ul>
+<li>serial composition becomes function composition</li>
+<li>parallel composition becomes "create a function whose inputs are the product of the inputs of the functions being parallel-composed, whose output are the product of the outputs, and which is defined by internally 'applying' the functions on their respective inputs"</li>
+</ul>
+
+
+
+<a name="303309341"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229156-practice%3A%20applied%20ct/topic/instance%20functors%20for%20monoidal%20categories/near/303309341" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Kobe Wullaert <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-practice:-applied-ct/topic/topic_instance.20functors.20for.20monoidal.20categories.html#303309341">(Oct 10 2022 at 18:39)</a>:</h4>
+<p>So if you want to have a monoidal version, you assume that this functor F is moreover monoidal, this means in particular that you have a morphism from F(x otimes y) to F(x) times F(y) (or conversely), where x and y are objecs in C, otimes is the tensor/monoidal product and times is a the tensor product on C, this is usually chosen to be the cartesian product (but can also be e.g. coproduct/disjoint union). <br>
+One considers the cartesian products of sets as a "parallel" operator since you have two values at the same time and a function f1 times f2 is considered to run f1 and f2 in parallel since you in order to compute (f1 times f2)(X times Y), you just apply f1 on X and f2 on Y (here X and Y live in the domain of f1 resp. f2)</p>
+
+
+
+<a name="303309962"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229156-practice%3A%20applied%20ct/topic/instance%20functors%20for%20monoidal%20categories/near/303309962" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mark Wilhelm <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-practice:-applied-ct/topic/topic_instance.20functors.20for.20monoidal.20categories.html#303309962">(Oct 10 2022 at 18:44)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="498392">Kobe Wullaert</span> <a href="#narrow/stream/229156-practice.3A-applied-ct/topic/Instance.20functors.20for.20monoidal.20categories/near/303309341">said</a>:</p>
+<blockquote>
+<p>So if you want to have a monoidal version, you assume that this functor F is moreover monoidal, this means in particular that F(f otimes g) = F(f) times F(g), where f and g are morphisms in C, otimes is the tensor/monoidal product and times is a the tensor product on C, this is usually chosen to be the cartesian product (but can also be e.g. coproduct/disjoint union). <br>
+One considers the cartesian products of sets as a "parallel" operator since you have two values at the same time and a function f1 times f2 is considered to run f1 and f2 in parallel since you in order to compute (f1 times f2)(X times Y), you just apply f1 on X and f2 on Y (here X and Y live in the domain of f1 resp. f2)</p>
+</blockquote>
+<p>mm, ok. and so then i'm guessing this would correctly recover homeomorphisms on quotient spaces in topology as the morphism of the functor category? (to stay analogous with the way it's used in seven sketches)</p>
+<p>(not asking for a proof of this or anything, i just have no idea if this would be easy or hard to check)</p>
+
+
+
+<a name="303310805"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229156-practice%3A%20applied%20ct/topic/instance%20functors%20for%20monoidal%20categories/near/303310805" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Kobe Wullaert <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-practice:-applied-ct/topic/topic_instance.20functors.20for.20monoidal.20categories.html#303310805">(Oct 10 2022 at 18:51)</a>:</h4>
+<p>I'm not quite sure what you mean with the morphism of the functor category, I've not gone in detail through the book.</p>
+
+
+
+<a name="303310960"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229156-practice%3A%20applied%20ct/topic/instance%20functors%20for%20monoidal%20categories/near/303310960" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mark Wilhelm <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-practice:-applied-ct/topic/topic_instance.20functors.20for.20monoidal.20categories.html#303310960">(Oct 10 2022 at 18:52)</a>:</h4>
+<p>ok no worries, i think i have got enough info to keep going, thank you all</p>
+
+
+
+{% endraw %}
+
+<hr><p>Last updated: Oct 11 2022 at 01:00 UTC</p>

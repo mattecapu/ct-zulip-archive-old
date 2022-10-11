@@ -1,0 +1,86 @@
+[
+    {
+        "content": "<p>Hello, I'm just going through the \"Seven sketches...\" book and have come across something that it's a bit hard to google. In the book an \"instance functor\" is a functor from some base category into Set. If the base category is monoidal, are instance categories still into Set, such that --</p>\n<ul>\n<li>objects map to sets</li>\n<li>serial composition maps to functions</li>\n<li>\"parallel\" composition also maps to functions</li>\n</ul>\n<p>...or is there more to it than that? Thanks</p>",
+        "id": 303305153,
+        "sender_full_name": "Mark Wilhelm",
+        "timestamp": 1665425225
+    },
+    {
+        "content": "<p>oh actually, I guess parallel composition will just be the cross product in Set? ok maybe that should have been obvious...</p>",
+        "id": 303306712,
+        "sender_full_name": "Mark Wilhelm",
+        "timestamp": 1665425918
+    },
+    {
+        "content": "<p>I read that book but I don't remember \"instance functor\".  It's not any sort of standard term, so you're sort of free to make up what it means.</p>",
+        "id": 303307710,
+        "sender_full_name": "John Baez",
+        "timestamp": 1665426461
+    },
+    {
+        "content": "<blockquote>\n<p>objects map to sets</p>\n</blockquote>\n<p>Of course this is true for any functor from any category to Set.</p>\n<p>I don't know what this means:</p>\n<blockquote>\n<p>serial composition maps to functions</p>\n</blockquote>\n<p>A functor maps <em>morphisms</em> to functions.</p>",
+        "id": 303307860,
+        "sender_full_name": "John Baez",
+        "timestamp": 1665426531
+    },
+    {
+        "content": "<p>I just checked and it doesn't seem to be in the index either.  Where do they define it?</p>",
+        "id": 303307980,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1665426590
+    },
+    {
+        "content": "<p>hm ok, so they used \"instance\" for a kind of functor into Set where, for example in the case of graphs, you would have --</p>\n<ul>\n<li>the base category has a Vertex object, Arrow object, and morphisms for head and tail (like the \"schema\" of a graph)</li>\n<li>a given instance functor maps this into Set, giving the data for an actual specific graph</li>\n<li>then the functor category of those \"instances\" has the graph homomorphism as it's morphism</li>\n</ul>\n<p>then for topological spaces there would be an analogous setup with the functor category on instances having the homeomorphism as it's morphism.</p>\n<p>is there a different term for these? i could also be way off base with my reading.</p>",
+        "id": 303308135,
+        "sender_full_name": "Mark Wilhelm",
+        "timestamp": 1665426641
+    },
+    {
+        "content": "<p>oh let me look in the index and see if i can find it...</p>",
+        "id": 303308162,
+        "sender_full_name": "Mark Wilhelm",
+        "timestamp": 1665426653
+    },
+    {
+        "content": "<p>An instance C-functor is by definition 3.44 of the book just a functor C to set</p>",
+        "id": 303308198,
+        "sender_full_name": "Kobe Wullaert",
+        "timestamp": 1665426668
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"275920\">John Baez</span> <a href=\"#narrow/stream/229156-practice.3A-applied-ct/topic/Instance.20functors.20for.20monoidal.20categories/near/303307860\">said</a>:</p>\n<blockquote>\n<blockquote>\n<p>objects map to sets</p>\n</blockquote>\n<p>Of course this is true for any functor from any category to Set.</p>\n<p>I don't know what this means:</p>\n<blockquote>\n<p>serial composition maps to functions</p>\n</blockquote>\n<p>A functor maps <em>morphisms</em> to functions.</p>\n</blockquote>\n<p>oh yes sorry, i maybe should have said morphisms map to functions and serial composition maps to function composition</p>",
+        "id": 303308277,
+        "sender_full_name": "Mark Wilhelm",
+        "timestamp": 1665426709
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"498392\">Kobe Wullaert</span> <a href=\"#narrow/stream/229156-practice.3A-applied-ct/topic/Instance.20functors.20for.20monoidal.20categories/near/303308198\">said</a>:</p>\n<blockquote>\n<p>An instance C-functor is by definition 3.44 of the book just a functor C to set</p>\n</blockquote>\n<p>yeah that is what i'm thinking of. so i think that for a monoidal category then --</p>\n<ul>\n<li>serial composition becomes function composition</li>\n<li>parallel composition becomes \"create a function whose inputs are the product of the inputs of the functions being parallel-composed, whose output are the product of the outputs, and which is defined by internally 'applying' the functions on their respective inputs\"</li>\n</ul>",
+        "id": 303308827,
+        "sender_full_name": "Mark Wilhelm",
+        "timestamp": 1665426934
+    },
+    {
+        "content": "<p>So if you want to have a monoidal version, you assume that this functor F is moreover monoidal, this means in particular that you have a morphism from F(x otimes y) to F(x) times F(y) (or conversely), where x and y are objecs in C, otimes is the tensor/monoidal product and times is a the tensor product on C, this is usually chosen to be the cartesian product (but can also be e.g. coproduct/disjoint union). <br>\nOne considers the cartesian products of sets as a \"parallel\" operator since you have two values at the same time and a function f1 times f2 is considered to run f1 and f2 in parallel since you in order to compute (f1 times f2)(X times Y), you just apply f1 on X and f2 on Y (here X and Y live in the domain of f1 resp. f2)</p>",
+        "id": 303309341,
+        "sender_full_name": "Kobe Wullaert",
+        "timestamp": 1665427179
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"498392\">Kobe Wullaert</span> <a href=\"#narrow/stream/229156-practice.3A-applied-ct/topic/Instance.20functors.20for.20monoidal.20categories/near/303309341\">said</a>:</p>\n<blockquote>\n<p>So if you want to have a monoidal version, you assume that this functor F is moreover monoidal, this means in particular that F(f otimes g) = F(f) times F(g), where f and g are morphisms in C, otimes is the tensor/monoidal product and times is a the tensor product on C, this is usually chosen to be the cartesian product (but can also be e.g. coproduct/disjoint union). <br>\nOne considers the cartesian products of sets as a \"parallel\" operator since you have two values at the same time and a function f1 times f2 is considered to run f1 and f2 in parallel since you in order to compute (f1 times f2)(X times Y), you just apply f1 on X and f2 on Y (here X and Y live in the domain of f1 resp. f2)</p>\n</blockquote>\n<p>mm, ok. and so then i'm guessing this would correctly recover homeomorphisms on quotient spaces in topology as the morphism of the functor category? (to stay analogous with the way it's used in seven sketches)</p>\n<p>(not asking for a proof of this or anything, i just have no idea if this would be easy or hard to check)</p>",
+        "id": 303309962,
+        "sender_full_name": "Mark Wilhelm",
+        "timestamp": 1665427467
+    },
+    {
+        "content": "<p>I'm not quite sure what you mean with the morphism of the functor category, I've not gone in detail through the book.</p>",
+        "id": 303310805,
+        "sender_full_name": "Kobe Wullaert",
+        "timestamp": 1665427871
+    },
+    {
+        "content": "<p>ok no worries, i think i have got enough info to keep going, thank you all</p>",
+        "id": 303310960,
+        "sender_full_name": "Mark Wilhelm",
+        "timestamp": 1665427943
+    }
+]

@@ -9,8 +9,9 @@ permalink: /stream/229136-theory:-category-theory/index.html
 
 ### Topics:
 
+* [morphism of modules over 2-rigs](topic/topic_morphism.20of.20modules.20over.202-rigs.html) (20 messages, latest: Oct 10 2022 at 18:42)
+* [internal monoid actions](topic/topic_internal.20monoid.20actions.html) (20 messages, latest: Oct 10 2022 at 08:22)
 * [pushing forward a diagram at its “sinks”](topic/topic_pushing.20forward.20a.20diagram.20at.20its.20.E2.80.9Csinks.E2.80.9D.html) (5 messages, latest: Oct 09 2022 at 17:44)
-* [internal monoid actions](topic/topic_internal.20monoid.20actions.html) (19 messages, latest: Oct 08 2022 at 18:05)
 * [higher operads](topic/topic_higher.20operads.html) (8 messages, latest: Oct 07 2022 at 17:18)
 * [well-founded relations and Yoneda](topic/topic_well-founded.20relations.20and.20Yoneda.html) (5 messages, latest: Oct 04 2022 at 18:21)
 * [lax/weak monoidal categories](topic/topic_lax.2Fweak.20monoidal.20categories.html) (8 messages, latest: Oct 04 2022 at 15:52)
@@ -182,7 +183,6 @@ permalink: /stream/229136-theory:-category-theory/index.html
 * [doctrines](topic/topic_doctrines.html) (87 messages, latest: May 05 2021 at 07:14)
 * [categorifying eigenvalues](topic/topic_categorifying.20eigenvalues.html) (33 messages, latest: May 04 2021 at 15:13)
 * [Categorifying eigenvalues](topic/topic_Categorifying.20eigenvalues.html) (29 messages, latest: May 02 2021 at 22:04)
-* [morphism of modules over 2-rigs](topic/topic_morphism.20of.20modules.20over.202-rigs.html) (19 messages, latest: Apr 30 2021 at 18:37)
 * [distributivity of limits and colimits](topic/topic_distributivity.20of.20limits.20and.20colimits.html) (201 messages, latest: Apr 30 2021 at 16:15)
 * [braided monoidal categories as tricategories](topic/topic_braided.20monoidal.20categories.20as.20tricategories.html) (3 messages, latest: Apr 28 2021 at 11:33)
 * [representability of multirepresentable functors](topic/topic_representability.20of.20multirepresentable.20functors.html) (11 messages, latest: Apr 25 2021 at 15:24)
@@ -318,4 +318,4 @@ permalink: /stream/229136-theory:-category-theory/index.html
 * [diagrams for application](topic/topic_diagrams.20for.20application.html) (13 messages, latest: Mar 24 2020 at 06:19)
 * [universal constructions](topic/topic_universal.20constructions.html) (8 messages, latest: Mar 23 2020 at 21:06)
 
-<hr><p>Last updated: Oct 10 2022 at 01:07 UTC</p>
+<hr><p>Last updated: Oct 11 2022 at 01:00 UTC</p>
