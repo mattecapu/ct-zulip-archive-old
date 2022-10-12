@@ -49,6 +49,66 @@ Because the measure can't be negative, you know that you can eliminate the cuts,
 
 
 
+<a name="303372589"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/233104-theory%3A%20logic/topic/proofs%20of%20cut-elimination%20theorem/near/303372589" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Ulrik Buchholtz <a href="https://mattecapu.github.io/ct-zulip-archive/stream/233104-theory:-logic/topic/topic_proofs.20of.20cut-elimination.20theorem.html#303372589">(Oct 11 2022 at 07:25)</a>:</h4>
+<p>You can get cheap &amp; easy proofs of cut-elimination by completeness of the cut-free calculus. But the interest in cut-elimination results often lie in the precise bounds associated with more refined versions (e.g., ordinal indexed versions).</p>
+
+
+
+<a name="303381305"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/233104-theory%3A%20logic/topic/proofs%20of%20cut-elimination%20theorem/near/303381305" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/233104-theory:-logic/topic/topic_proofs.20of.20cut-elimination.20theorem.html#303381305">(Oct 11 2022 at 08:28)</a>:</h4>
+<p>How do you prove completeness of the cut-free calculus without basically proving cut-elimination?</p>
+
+
+
+<a name="303381783"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/233104-theory%3A%20logic/topic/proofs%20of%20cut-elimination%20theorem/near/303381783" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Jean-Baptiste Vienney <a href="https://mattecapu.github.io/ct-zulip-archive/stream/233104-theory:-logic/topic/topic_proofs.20of.20cut-elimination.20theorem.html#303381783">(Oct 11 2022 at 08:32)</a>:</h4>
+<p>I'm interested as well by the answer <span aria-label="smile" class="emoji emoji-1f642" role="img" title="smile">:smile:</span></p>
+
+
+
+<a name="303410004"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/233104-theory%3A%20logic/topic/proofs%20of%20cut-elimination%20theorem/near/303410004" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Damiano Mazza <a href="https://mattecapu.github.io/ct-zulip-archive/stream/233104-theory:-logic/topic/topic_proofs.20of.20cut-elimination.20theorem.html#303410004">(Oct 11 2022 at 11:49)</a>:</h4>
+<p>Actually, cut-elimination in classical logic is provable by exactly the same methods mentioned by <span class="user-mention" data-user-id="428716">@Jean-Baptiste Vienney</span>.  See for instance Chapter 13 of Girard, Lafont and Taylor's <em><a href="https://www.paultaylor.eu/stable/prot.pdf">Proofs and Types</a></em>. In fact, cut-elimination in linear logic is just a re-iteration of the usual proof for classical sequent calculus, which is very modular and applies essentially unchanged to lots of different systems (it only relies on the existence of rewriting rules for so-called <em>principal cuts</em> and the fact that a non-principal cut may be turned into a principal one via some commutations).</p>
+<p>The non-constructiveness of classical logic does not manifest itself in the absence of an algorithmic procedure for eliminating cuts, but rather in the uncontrolled non-determinism of such a procedure: a single proof with cuts may reduce to a host of cut-free proofs (of the same sequent).  If one wants to see proofs as programs, this is a deal-breaker because it means that programs do not have a well-defined result.  By contrast, the very same procedure in intuitionistic logic is deterministic: modulo inessential commutations, every proof reduces to a unique cut-free proof.  Classical sequent calculi with a deterministic cut-elimination procedure do exist, but they all require some notion of polarity which was understood only after the introduction of linear logic (so more than half a century after Gentzen).</p>
+
+
+
+<a name="303422300"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/233104-theory%3A%20logic/topic/proofs%20of%20cut-elimination%20theorem/near/303422300" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Damiano Mazza <a href="https://mattecapu.github.io/ct-zulip-archive/stream/233104-theory:-logic/topic/topic_proofs.20of.20cut-elimination.20theorem.html#303422300">(Oct 11 2022 at 12:03)</a>:</h4>
+<p>About the "difficulty" of the cut-elimination proof, of course it depends on the eye of the beholder but I do not find the usual proof to be particularly hard.  Like many syntactic theorems, there's just a ton of cases to inspect, but there's nothing difficult conceptually: you assign an ordinal to every proof (for "pure" first order logic it will be smaller than <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>ω</mi><mi>ω</mi></msup></mrow><annotation encoding="application/x-tex">\omega^\omega</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6644em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.03588em;">ω</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.6644em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight" style="margin-right:0.03588em;">ω</span></span></span></span></span></span></span></span></span></span></span>, so nothing scary at all), such that cut-free proofs have ordinal <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn></mrow><annotation encoding="application/x-tex">0</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">0</span></span></span></span>, and then show that in every proof <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>π</mi></mrow><annotation encoding="application/x-tex">\pi</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord mathnormal" style="margin-right:0.03588em;">π</span></span></span></span> with cuts there's always a cut which may be rewritten so that the ordinal of the resulting proof is strictly smaller than the ordinal of <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>π</mi></mrow><annotation encoding="application/x-tex">\pi</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord mathnormal" style="margin-right:0.03588em;">π</span></span></span></span>.  Such a cut is usually immediate to find (it is one such that there are no other cuts above it, which exists by finiteness of proofs).</p>
+<p>The number of cases heavily depends on the specific formulation of sequent calculus.  For classical first-order logic, one may use a one-sided formulation, which drastically reduces the number of cases.  This is the approach I take when I teach this stuff.  For example, in Chapter 6 of <a href="https://lipn.univ-paris13.fr/~mazza/teaching/ProofTheoryNotes.pdf">these notes</a> I manage to do it with only four principal cases and two commutative cases.</p>
+<p>NB: All the above assumes that we are talking about propositional or first-order logic.  Cut-elimination for higher-order logic is another story: for example, cut-elimination of second-order intuitionistic sequent calculus implies the consistency of second-order Peano arithmetic, which is huge.  You need non-trivial techniques for that, essentially boiling down to Girard's <em>reducibility candidates</em>.  I guess it is fair to say that <em>those</em> proofs are hard <span aria-label="big smile" class="emoji emoji-1f604" role="img" title="big smile">:big_smile:</span></p>
+
+
+
+<a name="303473725"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/233104-theory%3A%20logic/topic/proofs%20of%20cut-elimination%20theorem/near/303473725" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Lê Thành Dũng (Tito) Nguyễn <a href="https://mattecapu.github.io/ct-zulip-archive/stream/233104-theory:-logic/topic/topic_proofs.20of.20cut-elimination.20theorem.html#303473725">(Oct 11 2022 at 16:23)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="276839">Damiano Mazza</span> <a href="#narrow/stream/233104-theory.3A-logic/topic/proofs.20of.20cut-elimination.20theorem/near/303410004">said</a>:</p>
+<blockquote>
+<p>By contrast, the very same procedure in intuitionistic logic is deterministic: modulo inessential commutations, every proof reduces to a unique cut-free proof.</p>
+</blockquote>
+<p>Indeed, but I'd add that even in intuitionistic logic, it is useful to distinguish between the proof-irrelevant "cut-admissibility" and the proof-relevant "normalization", as discussed here: <a href="https://prooftheory.blog/2020/09/07/simple-proofs-of-cut-elimination-ii-intuitionistic-logic/">https://prooftheory.blog/2020/09/07/simple-proofs-of-cut-elimination-ii-intuitionistic-logic/</a></p>
+
+
+
+<a name="303473948"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/233104-theory%3A%20logic/topic/proofs%20of%20cut-elimination%20theorem/near/303473948" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Lê Thành Dũng (Tito) Nguyễn <a href="https://mattecapu.github.io/ct-zulip-archive/stream/233104-theory:-logic/topic/topic_proofs.20of.20cut-elimination.20theorem.html#303473948">(Oct 11 2022 at 16:24)</a>:</h4>
+<p>BTW cut-elimination for classical logic is discussed in the same blog post series here: <a href="https://prooftheory.blog/2020/05/07/simpler-proofs-of-cut-elimination-i-classical-logic/">https://prooftheory.blog/2020/05/07/simpler-proofs-of-cut-elimination-i-classical-logic/</a></p>
+
+
+
+<a name="303512806"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/233104-theory%3A%20logic/topic/proofs%20of%20cut-elimination%20theorem/near/303512806" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Ulrik Buchholtz <a href="https://mattecapu.github.io/ct-zulip-archive/stream/233104-theory:-logic/topic/topic_proofs.20of.20cut-elimination.20theorem.html#303512806">(Oct 11 2022 at 20:15)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="276777">Mike Shulman</span> <a href="#narrow/stream/233104-theory.3A-logic/topic/proofs.20of.20cut-elimination.20theorem/near/303381305">said</a>:</p>
+<blockquote>
+<p>How do you prove completeness of the cut-free calculus without basically proving cut-elimination?</p>
+</blockquote>
+<p>(also to <span class="user-mention" data-user-id="428716">@Jean-Baptiste Vienney</span>) One way is via Schütte's search tree method. You define a canonically defined, potentially infinite, proof tree, that systematically uses all rules (and is “fair” in some sense). If this tree is finite, it gives a proof, and the key is to show that if it's infinite, you can build a countermodel (so this is a classical argument).</p>
+<p>This has a quite different feel to it than a direct cut-elimination proof, no?</p>
+
+
+
 {% endraw %}
 
-<hr><p>Last updated: Oct 11 2022 at 01:00 UTC</p>
+<hr><p>Last updated: Oct 12 2022 at 01:14 UTC</p>

@@ -9,11 +9,11 @@ permalink: /stream/229199-learning:-questions/index.html
 
 ### Topics:
 
-* [What kind of dual is coYoneda?](topic/topic_What.20kind.20of.20dual.20is.20coYoneda.3F.html) (8 messages, latest: Oct 11 2022 at 00:31)
+* [What kind of dual is coYoneda?](topic/topic_What.20kind.20of.20dual.20is.20coYoneda.3F.html) (15 messages, latest: Oct 11 2022 at 18:10)
+* [Is taking the ultrapower a monad?](topic/topic_Is.20taking.20the.20ultrapower.20a.20monad.3F.html) (5 messages, latest: Oct 11 2022 at 14:09)
+* [string diagrams 101](topic/topic_string.20diagrams.20101.html) (30 messages, latest: Oct 11 2022 at 13:59)
 * [stochastic computation](topic/topic_stochastic.20computation.html) (6 messages, latest: Oct 10 2022 at 21:29)
-* [string diagrams 101](topic/topic_string.20diagrams.20101.html) (24 messages, latest: Oct 10 2022 at 15:46)
 * [When is (X,S ⊆ P(X)) -> X a fibration?](topic/topic_When.20is.20(X.2CS.20.E2.8A.86.20P(X)).20-.3E.20X.20a.20fibration.3F.html) (13 messages, latest: Oct 10 2022 at 15:46)
-* [Is taking the ultrapower a monad?](topic/topic_Is.20taking.20the.20ultrapower.20a.20monad.3F.html) (2 messages, latest: Oct 09 2022 at 11:48)
 * [definition of exponential object without cartesianness](topic/topic_definition.20of.20exponential.20object.20without.20cartesianness.html) (37 messages, latest: Oct 06 2022 at 13:24)
 * [$$\lambda$$-pure in $$\lambda$$-accessible are monos](topic/topic_.24.24.5Clambda.24.24-pure.20in.20.24.24.5Clambda.24.24-accessible.20are.20monos.html) (1 message, latest: Oct 04 2022 at 08:21)
 * [Clarifying Understanding of Coproducts and Disjoint Unions](topic/topic_Clarifying.20Understanding.20of.20Coproducts.20and.20Disjoint.20Unions.html) (3 messages, latest: Oct 03 2022 at 15:37)
@@ -761,4 +761,4 @@ permalink: /stream/229199-learning:-questions/index.html
 * [Algebra (Aluffi) exercises](topic/topic_Algebra.20(Aluffi).20exercises.html) (55 messages, latest: Mar 27 2020 at 23:38)
 * [What is category theory about?](topic/topic_What.20is.20category.20theory.20about.3F.html) (16 messages, latest: Mar 26 2020 at 16:03)
 
-<hr><p>Last updated: Oct 11 2022 at 01:00 UTC</p>
+<hr><p>Last updated: Oct 12 2022 at 01:14 UTC</p>
