@@ -9,7 +9,9 @@ permalink: /stream/229199-learning:-questions/index.html
 
 ### Topics:
 
-* [What kind of dual is coYoneda?](topic/topic_What.20kind.20of.20dual.20is.20coYoneda.3F.html) (15 messages, latest: Oct 11 2022 at 18:10)
+* [Monoidal category Grp](topic/topic_Monoidal.20category.20Grp.html) (3 messages, latest: Oct 12 2022 at 20:29)
+* [Compatible algebras and opalgebras](topic/topic_Compatible.20algebras.20and.20opalgebras.html) (8 messages, latest: Oct 12 2022 at 14:05)
+* [What kind of dual is coYoneda?](topic/topic_What.20kind.20of.20dual.20is.20coYoneda.3F.html) (16 messages, latest: Oct 12 2022 at 13:29)
 * [Is taking the ultrapower a monad?](topic/topic_Is.20taking.20the.20ultrapower.20a.20monad.3F.html) (5 messages, latest: Oct 11 2022 at 14:09)
 * [string diagrams 101](topic/topic_string.20diagrams.20101.html) (30 messages, latest: Oct 11 2022 at 13:59)
 * [stochastic computation](topic/topic_stochastic.20computation.html) (6 messages, latest: Oct 10 2022 at 21:29)
@@ -209,7 +211,6 @@ permalink: /stream/229199-learning:-questions/index.html
 * [reference: enriched cartesian closure](topic/topic_reference.3A.20enriched.20cartesian.20closure.html) (2 messages, latest: Dec 29 2021 at 15:52)
 * [extensive categories](topic/topic_extensive.20categories.html) (26 messages, latest: Dec 28 2021 at 16:44)
 * ["monoidal limit"](topic/topic_.22monoidal.20limit.22.html) (16 messages, latest: Dec 27 2021 at 23:49)
-* [Compatible algebras and opalgebras](topic/topic_Compatible.20algebras.20and.20opalgebras.html) (6 messages, latest: Dec 26 2021 at 21:14)
 * ["Monoidal limit"](topic/topic_.22Monoidal.20limit.22.html) (50 messages, latest: Dec 23 2021 at 11:32)
 * [Beginner study group?](topic/topic_Beginner.20study.20group.3F.html) (13 messages, latest: Dec 23 2021 at 04:34)
 * [some free monoidal constructions](topic/topic_some.20free.20monoidal.20constructions.html) (10 messages, latest: Dec 21 2021 at 21:40)
@@ -761,4 +762,4 @@ permalink: /stream/229199-learning:-questions/index.html
 * [Algebra (Aluffi) exercises](topic/topic_Algebra.20(Aluffi).20exercises.html) (55 messages, latest: Mar 27 2020 at 23:38)
 * [What is category theory about?](topic/topic_What.20is.20category.20theory.20about.3F.html) (16 messages, latest: Mar 26 2020 at 16:03)
 
-<hr><p>Last updated: Oct 12 2022 at 01:14 UTC</p>
+<hr><p>Last updated: Oct 13 2022 at 01:06 UTC</p>

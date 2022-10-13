@@ -9,7 +9,7 @@ permalink: /stream/233104-theory:-logic/index.html
 
 ### Topics:
 
-* [proofs of cut-elimination theorem](topic/topic_proofs.20of.20cut-elimination.20theorem.html) (13 messages, latest: Oct 11 2022 at 20:15)
+* [proofs of cut-elimination theorem](topic/topic_proofs.20of.20cut-elimination.20theorem.html) (17 messages, latest: Oct 12 2022 at 13:28)
 * [linear version of Yoneda?](topic/topic_linear.20version.20of.20Yoneda.3F.html) (1 message, latest: Jun 21 2022 at 21:44)
 * [Linear version of Yoneda?](topic/topic_Linear.20version.20of.20Yoneda.3F.html) (2 messages, latest: Jun 20 2022 at 22:03)
 * [double categories and logic](topic/topic_double.20categories.20and.20logic.html) (7 messages, latest: Jun 03 2022 at 08:04)
@@ -61,4 +61,4 @@ permalink: /stream/233104-theory:-logic/index.html
 * [Probability as logic](topic/topic_Probability.20as.20logic.html) (63 messages, latest: Apr 15 2020 at 12:33)
 * [stream events](topic/topic_stream.20events.html) (1 message, latest: Apr 10 2020 at 12:32)
 
-<hr><p>Last updated: Oct 12 2022 at 01:14 UTC</p>
+<hr><p>Last updated: Oct 13 2022 at 01:06 UTC</p>
