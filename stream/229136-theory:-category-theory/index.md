@@ -9,7 +9,7 @@ permalink: /stream/229136-theory:-category-theory/index.html
 
 ### Topics:
 
-* [cartesian morphisms as “fibred terminal”](topic/topic_cartesian.20morphisms.20as.20.E2.80.9Cfibred.20terminal.E2.80.9D.html) (23 messages, latest: Oct 12 2022 at 21:29)
+* [cartesian morphisms as “fibred terminal”](topic/topic_cartesian.20morphisms.20as.20.E2.80.9Cfibred.20terminal.E2.80.9D.html) (34 messages, latest: Oct 13 2022 at 15:38)
 * [internal monoid actions](topic/topic_internal.20monoid.20actions.html) (22 messages, latest: Oct 12 2022 at 20:03)
 * [adjunction with icons](topic/topic_adjunction.20with.20icons.html) (2 messages, latest: Oct 12 2022 at 02:02)
 * [morphism of modules over 2-rigs](topic/topic_morphism.20of.20modules.20over.202-rigs.html) (20 messages, latest: Oct 10 2022 at 18:42)
@@ -320,4 +320,4 @@ permalink: /stream/229136-theory:-category-theory/index.html
 * [diagrams for application](topic/topic_diagrams.20for.20application.html) (13 messages, latest: Mar 24 2020 at 06:19)
 * [universal constructions](topic/topic_universal.20constructions.html) (8 messages, latest: Mar 23 2020 at 21:06)
 
-<hr><p>Last updated: Oct 13 2022 at 01:06 UTC</p>
+<hr><p>Last updated: Oct 14 2022 at 01:13 UTC</p>
