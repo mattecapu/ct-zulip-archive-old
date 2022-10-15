@@ -9,10 +9,10 @@ permalink: /stream/229141-general:-events/index.html
 
 ### Topics:
 
+* [This Week's Finds seminar](topic/topic_This.20Week's.20Finds.20seminar.html) (93 messages, latest: Oct 14 2022 at 22:12)
+* [ItaCa Fest 2022](topic/topic_ItaCa.20Fest.202022.html) (11 messages, latest: Oct 14 2022 at 20:29)
 * [SYCO 10, Edinburgh](topic/topic_SYCO.2010.2C.20Edinburgh.html) (2 messages, latest: Oct 13 2022 at 09:44)
-* [This Week's Finds seminar](topic/topic_This.20Week's.20Finds.20seminar.html) (92 messages, latest: Oct 11 2022 at 09:46)
 * [ACT 2023](topic/topic_ACT.202023.html) (21 messages, latest: Sep 26 2022 at 14:01)
-* [ItaCa Fest 2022](topic/topic_ItaCa.20Fest.202022.html) (10 messages, latest: Sep 14 2022 at 12:35)
 * [Thorsten Altenkirch 60 celebration](topic/topic_Thorsten.20Altenkirch.2060.20celebration.html) (2 messages, latest: Sep 08 2022 at 12:05)
 * [SYCO 9, Como](topic/topic_SYCO.209.2C.20Como.html) (35 messages, latest: Sep 08 2022 at 09:57)
 * [2023 Joint Mathematical Meeting](topic/topic_2023.20Joint.20Mathematical.20Meeting.html) (31 messages, latest: Aug 31 2022 at 17:46)
@@ -151,4 +151,4 @@ permalink: /stream/229141-general:-events/index.html
 * [April 1st: ACT@UCR](topic/topic_April.201st.3A.20ACT.40UCR.html) (3 messages, latest: Mar 26 2020 at 23:58)
 * [Google Sites problem](topic/topic_Google.20Sites.20problem.html) (4 messages, latest: Mar 25 2020 at 04:29)
 
-<hr><p>Last updated: Oct 14 2022 at 01:13 UTC</p>
+<hr><p>Last updated: Oct 15 2022 at 01:05 UTC</p>

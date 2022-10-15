@@ -9,7 +9,8 @@ permalink: /stream/229199-learning:-questions/index.html
 
 ### Topics:
 
-* [2-dimensional Lawvere theories](topic/topic_2-dimensional.20Lawvere.20theories.html) (13 messages, latest: Oct 13 2022 at 23:53)
+* [2-dimensional Lawvere theories](topic/topic_2-dimensional.20Lawvere.20theories.html) (18 messages, latest: Oct 14 2022 at 16:11)
+* [pseudomonoid objects](topic/topic_pseudomonoid.20objects.html) (1 message, latest: Oct 14 2022 at 06:35)
 * [monoidal category Grp](topic/topic_monoidal.20category.20Grp.html) (4 messages, latest: Oct 13 2022 at 15:28)
 * [Monoidal category Grp](topic/topic_Monoidal.20category.20Grp.html) (3 messages, latest: Oct 12 2022 at 20:29)
 * [Compatible algebras and opalgebras](topic/topic_Compatible.20algebras.20and.20opalgebras.html) (8 messages, latest: Oct 12 2022 at 14:05)
@@ -764,4 +765,4 @@ permalink: /stream/229199-learning:-questions/index.html
 * [Algebra (Aluffi) exercises](topic/topic_Algebra.20(Aluffi).20exercises.html) (55 messages, latest: Mar 27 2020 at 23:38)
 * [What is category theory about?](topic/topic_What.20is.20category.20theory.20about.3F.html) (16 messages, latest: Mar 26 2020 at 16:03)
 
-<hr><p>Last updated: Oct 14 2022 at 01:13 UTC</p>
+<hr><p>Last updated: Oct 15 2022 at 01:05 UTC</p>
