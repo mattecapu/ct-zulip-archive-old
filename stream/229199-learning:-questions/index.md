@@ -9,6 +9,7 @@ permalink: /stream/229199-learning:-questions/index.html
 
 ### Topics:
 
+* [beginner questions](topic/topic_beginner.20questions.html) (675 messages, latest: Oct 16 2022 at 00:52)
 * [2-dimensional Lawvere theories](topic/topic_2-dimensional.20Lawvere.20theories.html) (18 messages, latest: Oct 14 2022 at 16:11)
 * [pseudomonoid objects](topic/topic_pseudomonoid.20objects.html) (1 message, latest: Oct 14 2022 at 06:35)
 * [monoidal category Grp](topic/topic_monoidal.20category.20Grp.html) (4 messages, latest: Oct 13 2022 at 15:28)
@@ -25,7 +26,6 @@ permalink: /stream/229199-learning:-questions/index.html
 * [representable props and pros](topic/topic_representable.20props.20and.20pros.html) (8 messages, latest: Oct 03 2022 at 07:32)
 * [clarifying understanding of coproducts and disjoint unions](topic/topic_clarifying.20understanding.20of.20coproducts.20and.20disjoint.20unions.html) (1 message, latest: Oct 03 2022 at 02:47)
 * [Representable props and pros](topic/topic_Representable.20props.20and.20pros.html) (17 messages, latest: Sep 30 2022 at 17:52)
-* [beginner questions](topic/topic_beginner.20questions.html) (670 messages, latest: Sep 30 2022 at 10:30)
 * [topos theory question](topic/topic_topos.20theory.20question.html) (17 messages, latest: Sep 30 2022 at 05:56)
 * [shapes that compose](topic/topic_shapes.20that.20compose.html) (10 messages, latest: Sep 29 2022 at 18:08)
 * [Colimits of limit diagrams and vice versa](topic/topic_Colimits.20of.20limit.20diagrams.20and.20vice.20versa.html) (3 messages, latest: Sep 29 2022 at 02:38)
@@ -765,4 +765,4 @@ permalink: /stream/229199-learning:-questions/index.html
 * [Algebra (Aluffi) exercises](topic/topic_Algebra.20(Aluffi).20exercises.html) (55 messages, latest: Mar 27 2020 at 23:38)
 * [What is category theory about?](topic/topic_What.20is.20category.20theory.20about.3F.html) (16 messages, latest: Mar 26 2020 at 16:03)
 
-<hr><p>Last updated: Oct 15 2022 at 01:05 UTC</p>
+<hr><p>Last updated: Oct 16 2022 at 01:09 UTC</p>

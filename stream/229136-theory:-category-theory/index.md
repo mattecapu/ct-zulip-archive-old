@@ -9,9 +9,9 @@ permalink: /stream/229136-theory:-category-theory/index.html
 
 ### Topics:
 
-* [double profunctors](topic/topic_double.20profunctors.html) (13 messages, latest: Oct 15 2022 at 00:29)
+* [double profunctors](topic/topic_double.20profunctors.html) (16 messages, latest: Oct 15 2022 at 22:23)
+* [2-category of nat. transformations between sym. mon. cat.](topic/topic_2-category.20of.20nat.2E.20transformations.20between.20sym.2E.20mon.2E.20cat.2E.html) (14 messages, latest: Oct 15 2022 at 09:07)
 * [slice functor factorization](topic/topic_slice.20functor.20factorization.html) (1 message, latest: Oct 14 2022 at 19:36)
-* [2-category of nat. transformations between sym. mon. cat.](topic/topic_2-category.20of.20nat.2E.20transformations.20between.20sym.2E.20mon.2E.20cat.2E.html) (13 messages, latest: Oct 14 2022 at 19:21)
 * [morphism of modules over 2-rigs](topic/topic_morphism.20of.20modules.20over.202-rigs.html) (23 messages, latest: Oct 14 2022 at 15:02)
 * [cartesian morphisms as “fibred terminal”](topic/topic_cartesian.20morphisms.20as.20.E2.80.9Cfibred.20terminal.E2.80.9D.html) (35 messages, latest: Oct 14 2022 at 05:52)
 * [internal monoid actions](topic/topic_internal.20monoid.20actions.html) (22 messages, latest: Oct 12 2022 at 20:03)
@@ -323,4 +323,4 @@ permalink: /stream/229136-theory:-category-theory/index.html
 * [diagrams for application](topic/topic_diagrams.20for.20application.html) (13 messages, latest: Mar 24 2020 at 06:19)
 * [universal constructions](topic/topic_universal.20constructions.html) (8 messages, latest: Mar 23 2020 at 21:06)
 
-<hr><p>Last updated: Oct 15 2022 at 01:05 UTC</p>
+<hr><p>Last updated: Oct 16 2022 at 01:09 UTC</p>
