@@ -9,7 +9,8 @@ permalink: /stream/229199-learning:-questions/index.html
 
 ### Topics:
 
-* [beginner questions](topic/topic_beginner.20questions.html) (675 messages, latest: Oct 16 2022 at 00:52)
+* [beginner questions](topic/topic_beginner.20questions.html) (676 messages, latest: Oct 16 2022 at 11:43)
+* [proarrows](topic/topic_proarrows.html) (30 messages, latest: Oct 16 2022 at 01:12)
 * [2-dimensional Lawvere theories](topic/topic_2-dimensional.20Lawvere.20theories.html) (18 messages, latest: Oct 14 2022 at 16:11)
 * [pseudomonoid objects](topic/topic_pseudomonoid.20objects.html) (1 message, latest: Oct 14 2022 at 06:35)
 * [monoidal category Grp](topic/topic_monoidal.20category.20Grp.html) (4 messages, latest: Oct 13 2022 at 15:28)
@@ -269,7 +270,6 @@ permalink: /stream/229199-learning:-questions/index.html
 * [simplicial localization](topic/topic_simplicial.20localization.html) (9 messages, latest: Oct 08 2021 at 23:41)
 * [de Rham complex,  Chevalley Eilenberg complex](topic/topic_de.20Rham.20complex.2C.20.20Chevalley.20Eilenberg.20complex.html) (2 messages, latest: Oct 08 2021 at 15:22)
 * [Epi pullback](topic/topic_Epi.20pullback.html) (19 messages, latest: Oct 07 2021 at 10:13)
-* [proarrows](topic/topic_proarrows.html) (29 messages, latest: Oct 07 2021 at 09:21)
 * [✔ enriched semicategories](topic/topic_.E2.9C.94.20enriched.20semicategories.html) (9 messages, latest: Oct 06 2021 at 10:57)
 * [monoid-annotated morphisms](topic/topic_monoid-annotated.20morphisms.html) (8 messages, latest: Oct 05 2021 at 10:36)
 * [enriched semicategories](topic/topic_enriched.20semicategories.html) (5 messages, latest: Oct 04 2021 at 23:34)
@@ -765,4 +765,4 @@ permalink: /stream/229199-learning:-questions/index.html
 * [Algebra (Aluffi) exercises](topic/topic_Algebra.20(Aluffi).20exercises.html) (55 messages, latest: Mar 27 2020 at 23:38)
 * [What is category theory about?](topic/topic_What.20is.20category.20theory.20about.3F.html) (16 messages, latest: Mar 26 2020 at 16:03)
 
-<hr><p>Last updated: Oct 16 2022 at 01:09 UTC</p>
+<hr><p>Last updated: Oct 17 2022 at 01:12 UTC</p>
