@@ -8,7 +8,7 @@ permalink: /index.html
 
 ## Streams:
 
-* [learning: questions](stream/229199-learning:-questions/index.html) (755 topics)
+* [learning: questions](stream/229199-learning:-questions/index.html) (757 topics)
 
 * [theory: category theory](stream/229136-theory:-category-theory/index.html) (314 topics)
 
@@ -30,7 +30,7 @@ permalink: /index.html
 
 * [general: mathematics](stream/266967-general:-mathematics/index.html) (57 topics)
 
-* [general: positions](stream/245502-general:-positions/index.html) (55 topics)
+* [general: positions](stream/245502-general:-positions/index.html) (56 topics)
 
 * [practice: thermodynamics](stream/306433-practice:-thermodynamics/index.html) (53 topics)
 
@@ -178,4 +178,4 @@ permalink: /index.html
 
 * [theory: alternate presentations](stream/233122-theory:-alternate-presentations/index.html) (1 topic)
 
-<hr><p>Last updated: Oct 17 2022 at 01:12 UTC</p>
+<hr><p>Last updated: Oct 18 2022 at 01:07 UTC</p>

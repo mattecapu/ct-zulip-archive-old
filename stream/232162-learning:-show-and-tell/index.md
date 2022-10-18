@@ -25,4 +25,4 @@ permalink: /stream/232162-learning:-show-and-tell/index.html
 * [Syntactic monoid for decidable languages](topic/topic_Syntactic.20monoid.20for.20decidable.20languages.html) (47 messages, latest: Apr 08 2020 at 01:48)
 * [stream events](topic/topic_stream.20events.html) (2 messages, latest: Apr 06 2020 at 18:15)
 
-<hr><p>Last updated: Oct 17 2022 at 01:12 UTC</p>
+<hr><p>Last updated: Oct 18 2022 at 01:07 UTC</p>

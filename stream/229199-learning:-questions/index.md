@@ -9,6 +9,8 @@ permalink: /stream/229199-learning:-questions/index.html
 
 ### Topics:
 
+* [UMP of models of a sketch](topic/topic_UMP.20of.20models.20of.20a.20sketch.html) (2 messages, latest: Oct 18 2022 at 00:43)
+* [2-functors from functors](topic/topic_2-functors.20from.20functors.html) (1 message, latest: Oct 17 2022 at 19:28)
 * [beginner questions](topic/topic_beginner.20questions.html) (676 messages, latest: Oct 16 2022 at 11:43)
 * [proarrows](topic/topic_proarrows.html) (30 messages, latest: Oct 16 2022 at 01:12)
 * [2-dimensional Lawvere theories](topic/topic_2-dimensional.20Lawvere.20theories.html) (18 messages, latest: Oct 14 2022 at 16:11)
@@ -765,4 +767,4 @@ permalink: /stream/229199-learning:-questions/index.html
 * [Algebra (Aluffi) exercises](topic/topic_Algebra.20(Aluffi).20exercises.html) (55 messages, latest: Mar 27 2020 at 23:38)
 * [What is category theory about?](topic/topic_What.20is.20category.20theory.20about.3F.html) (16 messages, latest: Mar 26 2020 at 16:03)
 
-<hr><p>Last updated: Oct 17 2022 at 01:12 UTC</p>
+<hr><p>Last updated: Oct 18 2022 at 01:07 UTC</p>

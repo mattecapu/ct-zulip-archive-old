@@ -9,6 +9,7 @@ permalink: /stream/245502-general:-positions/index.html
 
 ### Topics:
 
+* [Gothenburg: four PhD student positions](topic/topic_Gothenburg.3A.20four.20PhD.20student.20positions.html) (2 messages, latest: Oct 17 2022 at 22:58)
 * [BYU is looking to hire a physicist. Deadline 15 Oct!](topic/topic_BYU.20is.20looking.20to.20hire.20a.20physicist.2E.20Deadline.2015.20Oct!.html) (1 message, latest: Oct 11 2022 at 01:54)
 * [Cambridge faculty position, category-theory friendly](topic/topic_Cambridge.20faculty.20position.2C.20category-theory.20friendly.html) (2 messages, latest: Oct 07 2022 at 17:48)
 * [Faculty positions in Oxford](topic/topic_Faculty.20positions.20in.20Oxford.html) (1 message, latest: Oct 02 2022 at 20:30)
@@ -65,4 +66,4 @@ permalink: /stream/245502-general:-positions/index.html
 * [PhD positions in Estonia](topic/topic_PhD.20positions.20in.20Estonia.html) (1 message, latest: Jun 27 2020 at 18:04)
 * [Companies that hire category people](topic/topic_Companies.20that.20hire.20category.20people.html) (2 messages, latest: May 13 2020 at 03:50)
 
-<hr><p>Last updated: Oct 17 2022 at 01:12 UTC</p>
+<hr><p>Last updated: Oct 18 2022 at 01:07 UTC</p>
