@@ -9,12 +9,13 @@ permalink: /stream/229199-learning:-questions/index.html
 
 ### Topics:
 
+* [2-functors from functors](topic/topic_2-functors.20from.20functors.html) (6 messages, latest: Oct 18 2022 at 18:48)
+* [clarifying understanding of coproducts and disjoint unions](topic/topic_clarifying.20understanding.20of.20coproducts.20and.20disjoint.20unions.html) (4 messages, latest: Oct 18 2022 at 17:32)
+* [pseudomonoid objects](topic/topic_pseudomonoid.20objects.html) (3 messages, latest: Oct 18 2022 at 16:31)
+* [beginner questions](topic/topic_beginner.20questions.html) (677 messages, latest: Oct 18 2022 at 07:08)
 * [UMP of models of a sketch](topic/topic_UMP.20of.20models.20of.20a.20sketch.html) (2 messages, latest: Oct 18 2022 at 00:43)
-* [2-functors from functors](topic/topic_2-functors.20from.20functors.html) (1 message, latest: Oct 17 2022 at 19:28)
-* [beginner questions](topic/topic_beginner.20questions.html) (676 messages, latest: Oct 16 2022 at 11:43)
 * [proarrows](topic/topic_proarrows.html) (30 messages, latest: Oct 16 2022 at 01:12)
 * [2-dimensional Lawvere theories](topic/topic_2-dimensional.20Lawvere.20theories.html) (18 messages, latest: Oct 14 2022 at 16:11)
-* [pseudomonoid objects](topic/topic_pseudomonoid.20objects.html) (1 message, latest: Oct 14 2022 at 06:35)
 * [monoidal category Grp](topic/topic_monoidal.20category.20Grp.html) (4 messages, latest: Oct 13 2022 at 15:28)
 * [Monoidal category Grp](topic/topic_Monoidal.20category.20Grp.html) (3 messages, latest: Oct 12 2022 at 20:29)
 * [Compatible algebras and opalgebras](topic/topic_Compatible.20algebras.20and.20opalgebras.html) (8 messages, latest: Oct 12 2022 at 14:05)
@@ -27,7 +28,6 @@ permalink: /stream/229199-learning:-questions/index.html
 * [$$\lambda$$-pure in $$\lambda$$-accessible are monos](topic/topic_.24.24.5Clambda.24.24-pure.20in.20.24.24.5Clambda.24.24-accessible.20are.20monos.html) (1 message, latest: Oct 04 2022 at 08:21)
 * [Clarifying Understanding of Coproducts and Disjoint Unions](topic/topic_Clarifying.20Understanding.20of.20Coproducts.20and.20Disjoint.20Unions.html) (3 messages, latest: Oct 03 2022 at 15:37)
 * [representable props and pros](topic/topic_representable.20props.20and.20pros.html) (8 messages, latest: Oct 03 2022 at 07:32)
-* [clarifying understanding of coproducts and disjoint unions](topic/topic_clarifying.20understanding.20of.20coproducts.20and.20disjoint.20unions.html) (1 message, latest: Oct 03 2022 at 02:47)
 * [Representable props and pros](topic/topic_Representable.20props.20and.20pros.html) (17 messages, latest: Sep 30 2022 at 17:52)
 * [topos theory question](topic/topic_topos.20theory.20question.html) (17 messages, latest: Sep 30 2022 at 05:56)
 * [shapes that compose](topic/topic_shapes.20that.20compose.html) (10 messages, latest: Sep 29 2022 at 18:08)
@@ -767,4 +767,4 @@ permalink: /stream/229199-learning:-questions/index.html
 * [Algebra (Aluffi) exercises](topic/topic_Algebra.20(Aluffi).20exercises.html) (55 messages, latest: Mar 27 2020 at 23:38)
 * [What is category theory about?](topic/topic_What.20is.20category.20theory.20about.3F.html) (16 messages, latest: Mar 26 2020 at 16:03)
 
-<hr><p>Last updated: Oct 18 2022 at 01:07 UTC</p>
+<hr><p>Last updated: Oct 19 2022 at 01:09 UTC</p>

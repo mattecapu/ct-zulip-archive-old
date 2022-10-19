@@ -9,9 +9,9 @@ permalink: /stream/241990-general:-values/index.html
 
 ### Topics:
 
+* [The Responsibility of the Scientist Today](topic/topic_The.20Responsibility.20of.20the.20Scientist.20Today.html) (743 messages, latest: Oct 18 2022 at 21:13)
 * [inaction of well-intentioned white male physicists](topic/topic_inaction.20of.20well-intentioned.20white.20male.20physicists.html) (4 messages, latest: Oct 15 2022 at 21:25)
 * [Inaction of well-intentioned white male physicists](topic/topic_Inaction.20of.20well-intentioned.20white.20male.20physicists.html) (24 messages, latest: Oct 12 2022 at 09:54)
-* [The Responsibility of the Scientist Today](topic/topic_The.20Responsibility.20of.20the.20Scientist.20Today.html) (722 messages, latest: Sep 09 2022 at 07:56)
 * [conferences](topic/topic_conferences.html) (62 messages, latest: Jul 26 2022 at 18:31)
 * [gender inclusivity](topic/topic_gender.20inclusivity.html) (181 messages, latest: May 06 2022 at 05:57)
 * [double-anonymous peer review](topic/topic_double-anonymous.20peer.20review.html) (1 message, latest: Apr 16 2022 at 22:36)
@@ -38,4 +38,4 @@ permalink: /stream/241990-general:-values/index.html
 * [stream events](topic/topic_stream.20events.html) (6 messages, latest: Jun 03 2020 at 19:22)
 * [ACT2020 tutorial day](topic/topic_ACT2020.20tutorial.20day.html) (1 message, latest: Jun 03 2020 at 18:38)
 
-<hr><p>Last updated: Oct 18 2022 at 01:07 UTC</p>
+<hr><p>Last updated: Oct 19 2022 at 01:09 UTC</p>

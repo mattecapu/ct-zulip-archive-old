@@ -9,9 +9,9 @@ permalink: /stream/274877-practice:-our-work/index.html
 
 ### Topics:
 
+* [PSSL history](topic/topic_PSSL.20history.html) (11 messages, latest: Oct 18 2022 at 23:54)
 * [PSSL History](topic/topic_PSSL.20History.html) (4 messages, latest: Oct 17 2022 at 22:34)
 * [Matteo Capucci](topic/topic_Matteo.20Capucci.html) (23 messages, latest: Oct 17 2022 at 15:51)
-* [PSSL history](topic/topic_PSSL.20history.html) (9 messages, latest: Oct 17 2022 at 15:13)
 * [John Baez](topic/topic_John.20Baez.html) (825 messages, latest: Oct 10 2022 at 19:15)
 * [Lê Thành Dũng (Tito) Nguyễn](topic/topic_L.C3.AA.20Th.C3.A0nh.20D.C5.A9ng.20(Tito).20Nguy.E1.BB.85n.html) (3 messages, latest: Oct 07 2022 at 04:16)
 * [David Roberts](topic/topic_David.20Roberts.html) (54 messages, latest: Oct 05 2022 at 11:21)
@@ -40,4 +40,4 @@ permalink: /stream/274877-practice:-our-work/index.html
 * [Conor Mc Bride](topic/topic_Conor.20Mc.20Bride.html) (60 messages, latest: Apr 08 2021 at 15:15)
 * [thoughts on sharing ideas](topic/topic_thoughts.20on.20sharing.20ideas.html) (20 messages, latest: Jan 31 2021 at 03:05)
 
-<hr><p>Last updated: Oct 18 2022 at 01:07 UTC</p>
+<hr><p>Last updated: Oct 19 2022 at 01:09 UTC</p>

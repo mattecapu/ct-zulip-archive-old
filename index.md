@@ -10,11 +10,11 @@ permalink: /index.html
 
 * [learning: questions](stream/229199-learning:-questions/index.html) (757 topics)
 
-* [theory: category theory](stream/229136-theory:-category-theory/index.html) (314 topics)
+* [theory: category theory](stream/229136-theory:-category-theory/index.html) (315 topics)
 
 * [general](stream/229111-general/index.html) (234 topics)
 
-* [general: events](stream/229141-general:-events/index.html) (141 topics)
+* [general: events](stream/229141-general:-events/index.html) (142 topics)
 
 * [practice: applied ct](stream/229156-practice:-applied-ct/index.html) (138 topics)
 
@@ -48,9 +48,9 @@ permalink: /index.html
 
 * [practice: our work](stream/274877-practice:-our-work/index.html) (30 topics)
 
-* [learning: recommendations](stream/232161-learning:-recommendations/index.html) (29 topics)
+* [theory: probability](stream/253118-theory:-probability/index.html) (30 topics)
 
-* [theory: probability](stream/253118-theory:-probability/index.html) (29 topics)
+* [learning: recommendations](stream/232161-learning:-recommendations/index.html) (29 topics)
 
 * [general: values](stream/241990-general:-values/index.html) (28 topics)
 
@@ -178,4 +178,4 @@ permalink: /index.html
 
 * [theory: alternate presentations](stream/233122-theory:-alternate-presentations/index.html) (1 topic)
 
-<hr><p>Last updated: Oct 18 2022 at 01:07 UTC</p>
+<hr><p>Last updated: Oct 19 2022 at 01:09 UTC</p>
