@@ -9,11 +9,12 @@ permalink: /stream/229136-theory:-category-theory/index.html
 
 ### Topics:
 
+* [old documents on fibered categories available by Bènabou,...](topic/topic_old.20documents.20on.20fibered.20categories.20available.20by.20B.C3.A8nabou.2C.2E.2E.2E.html) (12 messages, latest: Oct 20 2022 at 20:57)
+* [Kleisli category with products](topic/topic_Kleisli.20category.20with.20products.html) (2 messages, latest: Oct 20 2022 at 18:48)
+* [slice functor factorization](topic/topic_slice.20functor.20factorization.html) (4 messages, latest: Oct 20 2022 at 08:40)
 * [double profunctors](topic/topic_double.20profunctors.html) (22 messages, latest: Oct 19 2022 at 23:14)
-* [old documents on fibered categories available by Bènabou,...](topic/topic_old.20documents.20on.20fibered.20categories.20available.20by.20B.C3.A8nabou.2C.2E.2E.2E.html) (9 messages, latest: Oct 19 2022 at 14:04)
 * [action on presheaves over a graph](topic/topic_action.20on.20presheaves.20over.20a.20graph.html) (8 messages, latest: Oct 19 2022 at 12:39)
 * [action on presheaves](topic/topic_action.20on.20presheaves.html) (10 messages, latest: Oct 18 2022 at 21:31)
-* [slice functor factorization](topic/topic_slice.20functor.20factorization.html) (2 messages, latest: Oct 18 2022 at 09:00)
 * [functors inducing poset isomorphisms](topic/topic_functors.20inducing.20poset.20isomorphisms.html) (2 messages, latest: Oct 16 2022 at 17:26)
 * [2-category of nat. transformations between sym. mon. cat.](topic/topic_2-category.20of.20nat.2E.20transformations.20between.20sym.2E.20mon.2E.20cat.2E.html) (14 messages, latest: Oct 15 2022 at 09:07)
 * [morphism of modules over 2-rigs](topic/topic_morphism.20of.20modules.20over.202-rigs.html) (23 messages, latest: Oct 14 2022 at 15:02)
@@ -326,4 +327,4 @@ permalink: /stream/229136-theory:-category-theory/index.html
 * [diagrams for application](topic/topic_diagrams.20for.20application.html) (13 messages, latest: Mar 24 2020 at 06:19)
 * [universal constructions](topic/topic_universal.20constructions.html) (8 messages, latest: Mar 23 2020 at 21:06)
 
-<hr><p>Last updated: Oct 20 2022 at 01:03 UTC</p>
+<hr><p>Last updated: Oct 21 2022 at 01:04 UTC</p>

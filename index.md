@@ -10,7 +10,7 @@ permalink: /index.html
 
 * [learning: questions](stream/229199-learning:-questions/index.html) (757 topics)
 
-* [theory: category theory](stream/229136-theory:-category-theory/index.html) (316 topics)
+* [theory: category theory](stream/229136-theory:-category-theory/index.html) (317 topics)
 
 * [general](stream/229111-general/index.html) (234 topics)
 
@@ -30,7 +30,7 @@ permalink: /index.html
 
 * [general: mathematics](stream/266967-general:-mathematics/index.html) (57 topics)
 
-* [general: positions](stream/245502-general:-positions/index.html) (56 topics)
+* [general: positions](stream/245502-general:-positions/index.html) (57 topics)
 
 * [practice: thermodynamics](stream/306433-practice:-thermodynamics/index.html) (53 topics)
 
@@ -116,13 +116,13 @@ permalink: /index.html
 
 * [theory: analysis](stream/281848-theory:-analysis/index.html) (6 topics)
 
+* [workshop: Categories for AI](stream/347879-workshop:-Categories-for-AI/index.html) (6 topics)
+
 * [ACT@UMD seminar](stream/229967-ACT@UMD-seminar/index.html) (5 topics)
 
 * [languages: Deutsch/German](stream/231144-languages:-Deutsch/German/index.html) (5 topics)
 
 * [languages: portugues](stream/303660-languages:-portugues/index.html) (5 topics)
-
-* [workshop: Categories for AI](stream/347879-workshop:-Categories-for-AI/index.html) (5 topics)
 
 * [languages: espanol/Spanish](stream/231120-languages:-espanol/Spanish/index.html) (4 topics)
 
@@ -178,4 +178,4 @@ permalink: /index.html
 
 * [theory: alternate presentations](stream/233122-theory:-alternate-presentations/index.html) (1 topic)
 
-<hr><p>Last updated: Oct 20 2022 at 01:03 UTC</p>
+<hr><p>Last updated: Oct 21 2022 at 01:04 UTC</p>
