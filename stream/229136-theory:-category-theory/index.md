@@ -9,8 +9,8 @@ permalink: /stream/229136-theory:-category-theory/index.html
 
 ### Topics:
 
-* [Kleisli category with products](topic/topic_Kleisli.20category.20with.20products.html) (5 messages, latest: Oct 22 2022 at 20:24)
-* [the (∞, 1)-category of strict ∞-groupoids](topic/topic_the.20(.E2.88.9E.2C.201)-category.20of.20strict.20.E2.88.9E-groupoids.html) (1 message, latest: Oct 22 2022 at 13:37)
+* [Kleisli category with products](topic/topic_Kleisli.20category.20with.20products.html) (9 messages, latest: Oct 23 2022 at 20:03)
+* [the (∞, 1)-category of strict ∞-groupoids](topic/topic_the.20(.E2.88.9E.2C.201)-category.20of.20strict.20.E2.88.9E-groupoids.html) (5 messages, latest: Oct 23 2022 at 12:11)
 * [slice functor factorization](topic/topic_slice.20functor.20factorization.html) (5 messages, latest: Oct 22 2022 at 08:56)
 * [old documents on fibered categories available by Bènabou,...](topic/topic_old.20documents.20on.20fibered.20categories.20available.20by.20B.C3.A8nabou.2C.2E.2E.2E.html) (12 messages, latest: Oct 20 2022 at 20:57)
 * [double profunctors](topic/topic_double.20profunctors.html) (22 messages, latest: Oct 19 2022 at 23:14)
@@ -328,4 +328,4 @@ permalink: /stream/229136-theory:-category-theory/index.html
 * [diagrams for application](topic/topic_diagrams.20for.20application.html) (13 messages, latest: Mar 24 2020 at 06:19)
 * [universal constructions](topic/topic_universal.20constructions.html) (8 messages, latest: Mar 23 2020 at 21:06)
 
-<hr><p>Last updated: Oct 23 2022 at 01:07 UTC</p>
+<hr><p>Last updated: Oct 24 2022 at 01:15 UTC</p>
