@@ -9,8 +9,9 @@ permalink: /stream/229141-general:-events/index.html
 
 ### Topics:
 
+* [This Week's Finds seminar](topic/topic_This.20Week's.20Finds.20seminar.html) (95 messages, latest: Oct 24 2022 at 21:44)
+* [Octoberfest](topic/topic_Octoberfest.html) (5 messages, latest: Oct 24 2022 at 17:35)
 * [Compositional Structures for Systems Engineering and Design](topic/topic_Compositional.20Structures.20for.20Systems.20Engineering.20and.20Design.html) (1 message, latest: Oct 18 2022 at 17:50)
-* [This Week's Finds seminar](topic/topic_This.20Week's.20Finds.20seminar.html) (93 messages, latest: Oct 14 2022 at 22:12)
 * [ItaCa Fest 2022](topic/topic_ItaCa.20Fest.202022.html) (11 messages, latest: Oct 14 2022 at 20:29)
 * [SYCO 10, Edinburgh](topic/topic_SYCO.2010.2C.20Edinburgh.html) (2 messages, latest: Oct 13 2022 at 09:44)
 * [ACT 2023](topic/topic_ACT.202023.html) (21 messages, latest: Sep 26 2022 at 14:01)
@@ -152,4 +153,4 @@ permalink: /stream/229141-general:-events/index.html
 * [April 1st: ACT@UCR](topic/topic_April.201st.3A.20ACT.40UCR.html) (3 messages, latest: Mar 26 2020 at 23:58)
 * [Google Sites problem](topic/topic_Google.20Sites.20problem.html) (4 messages, latest: Mar 25 2020 at 04:29)
 
-<hr><p>Last updated: Oct 24 2022 at 01:15 UTC</p>
+<hr><p>Last updated: Oct 25 2022 at 01:10 UTC</p>

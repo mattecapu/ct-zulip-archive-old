@@ -10,11 +10,11 @@ permalink: /index.html
 
 * [learning: questions](stream/229199-learning:-questions/index.html) (757 topics)
 
-* [theory: category theory](stream/229136-theory:-category-theory/index.html) (318 topics)
+* [theory: category theory](stream/229136-theory:-category-theory/index.html) (319 topics)
 
 * [general](stream/229111-general/index.html) (234 topics)
 
-* [general: events](stream/229141-general:-events/index.html) (142 topics)
+* [general: events](stream/229141-general:-events/index.html) (143 topics)
 
 * [practice: applied ct](stream/229156-practice:-applied-ct/index.html) (138 topics)
 
@@ -46,9 +46,9 @@ permalink: /index.html
 
 * [Categorical Probability and Statistics 2020 workshop](stream/238032-Categorical-Probability-and-Statistics-2020-workshop/index.html) (34 topics)
 
-* [practice: our work](stream/274877-practice:-our-work/index.html) (30 topics)
+* [practice: our work](stream/274877-practice:-our-work/index.html) (31 topics)
 
-* [theory: probability](stream/253118-theory:-probability/index.html) (30 topics)
+* [theory: probability](stream/253118-theory:-probability/index.html) (31 topics)
 
 * [learning: recommendations](stream/232161-learning:-recommendations/index.html) (29 topics)
 
@@ -108,6 +108,8 @@ permalink: /index.html
 
 * [seminar: EM-cats](stream/298571-seminar:-EM-cats/index.html) (7 topics)
 
+* [workshop: Categories for AI](stream/347879-workshop:-Categories-for-AI/index.html) (7 topics)
+
 * [learning: id my structure](stream/311521-learning:-id-my-structure/index.html) (6 topics)
 
 * [semiotics and semiosis](stream/229179-semiotics-and-semiosis/index.html) (6 topics)
@@ -115,8 +117,6 @@ permalink: /index.html
 * [theory: algebra & CT](stream/230123-theory:-algebra-&-CT/index.html) (6 topics)
 
 * [theory: analysis](stream/281848-theory:-analysis/index.html) (6 topics)
-
-* [workshop: Categories for AI](stream/347879-workshop:-Categories-for-AI/index.html) (6 topics)
 
 * [ACT@UMD seminar](stream/229967-ACT@UMD-seminar/index.html) (5 topics)
 
@@ -178,4 +178,4 @@ permalink: /index.html
 
 * [theory: alternate presentations](stream/233122-theory:-alternate-presentations/index.html) (1 topic)
 
-<hr><p>Last updated: Oct 24 2022 at 01:15 UTC</p>
+<hr><p>Last updated: Oct 25 2022 at 01:10 UTC</p>

@@ -9,6 +9,7 @@ permalink: /stream/229111-general/index.html
 
 ### Topics:
 
+* [Compositionality](topic/topic_Compositionality.html) (14 messages, latest: Oct 24 2022 at 11:59)
 * [introduce yourself!](topic/topic_introduce.20yourself!.html) (81 messages, latest: Oct 18 2022 at 19:21)
 * [new streams](topic/topic_new.20streams.html) (98 messages, latest: Oct 06 2022 at 17:16)
 * [nLab](topic/topic_nLab.html) (192 messages, latest: Oct 05 2022 at 16:40)
@@ -36,7 +37,6 @@ permalink: /stream/229111-general/index.html
 * [✔ are there multiple empty sets?](topic/topic_.E2.9C.94.20are.20there.20multiple.20empty.20sets.3F.html) (2 messages, latest: Jan 05 2022 at 19:54)
 * [how do YOU use a computer in your research?](topic/topic_how.20do.20YOU.20use.20a.20computer.20in.20your.20research.3F.html) (1 message, latest: Jan 04 2022 at 15:22)
 * [off-topic](topic/topic_off-topic.html) (52 messages, latest: Jan 03 2022 at 17:58)
-* [Compositionality](topic/topic_Compositionality.html) (10 messages, latest: Dec 27 2021 at 13:07)
 * [How do YOU use a computer in your research?](topic/topic_How.20do.20YOU.20use.20a.20computer.20in.20your.20research.3F.html) (21 messages, latest: Dec 07 2021 at 15:05)
 * [Topos Institute news](topic/topic_Topos.20Institute.20news.html) (22 messages, latest: Dec 06 2021 at 13:25)
 * [normalisation by evaluation and sheaves](topic/topic_normalisation.20by.20evaluation.20and.20sheaves.html) (3 messages, latest: Nov 25 2021 at 21:00)
@@ -244,4 +244,4 @@ permalink: /stream/229111-general/index.html
 * [Tools for diagrams](topic/topic_Tools.20for.20diagrams.html) (78 messages, latest: Mar 25 2020 at 17:53)
 * [topic demonstration](topic/topic_topic.20demonstration.html) (2 messages, latest: Mar 23 2020 at 16:57)
 
-<hr><p>Last updated: Oct 24 2022 at 01:15 UTC</p>
+<hr><p>Last updated: Oct 25 2022 at 01:10 UTC</p>
