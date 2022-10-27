@@ -36,7 +36,7 @@ permalink: /index.html
 
 * [theory: logic](stream/233104-theory:-logic/index.html) (52 topics)
 
-* [practice: our papers](stream/258900-practice:-our-papers/index.html) (50 topics)
+* [practice: our papers](stream/258900-practice:-our-papers/index.html) (51 topics)
 
 * [theory: type theory](stream/229952-theory:-type-theory/index.html) (46 topics)
 
@@ -54,7 +54,7 @@ permalink: /index.html
 
 * [general: values](stream/241990-general:-values/index.html) (28 topics)
 
-* [learning: history of ideas](stream/232163-learning:-history-of-ideas/index.html) (25 topics)
+* [learning: history of ideas](stream/232163-learning:-history-of-ideas/index.html) (26 topics)
 
 * [practice: Dialectica](stream/323208-practice:-Dialectica/index.html) (23 topics)
 
@@ -178,4 +178,4 @@ permalink: /index.html
 
 * [theory: alternate presentations](stream/233122-theory:-alternate-presentations/index.html) (1 topic)
 
-<hr><p>Last updated: Oct 26 2022 at 00:59 UTC</p>
+<hr><p>Last updated: Oct 27 2022 at 00:58 UTC</p>

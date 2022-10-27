@@ -9,6 +9,7 @@ permalink: /stream/232163-learning:-history-of-ideas/index.html
 
 ### Topics:
 
+* [lax functors in Span & their Grothendieck construction](topic/topic_lax.20functors.20in.20Span.20.26.20their.20Grothendieck.20construction.html) (2 messages, latest: Oct 26 2022 at 17:29)
 * [✔ opposite categories](topic/topic_.E2.9C.94.20opposite.20categories.html) (5 messages, latest: Sep 14 2022 at 00:55)
 * [history of 2-groups](topic/topic_history.20of.202-groups.html) (2 messages, latest: Aug 29 2022 at 07:12)
 * [History of 2-groups](topic/topic_History.20of.202-groups.html) (1 message, latest: Aug 26 2022 at 13:34)
@@ -35,4 +36,4 @@ permalink: /stream/232163-learning:-history-of-ideas/index.html
 * [All things Feynman](topic/topic_All.20things.20Feynman.html) (2 messages, latest: May 22 2020 at 06:04)
 * [stream events](topic/topic_stream.20events.html) (2 messages, latest: Apr 06 2020 at 18:15)
 
-<hr><p>Last updated: Oct 26 2022 at 00:59 UTC</p>
+<hr><p>Last updated: Oct 27 2022 at 00:58 UTC</p>

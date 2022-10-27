@@ -9,7 +9,7 @@ permalink: /stream/274877-practice:-our-work/index.html
 
 ### Topics:
 
-* [Christian Williams](topic/topic_Christian.20Williams.html) (225 messages, latest: Oct 25 2022 at 19:31)
+* [Christian Williams](topic/topic_Christian.20Williams.html) (234 messages, latest: Oct 26 2022 at 21:08)
 * [John Baez](topic/topic_John.20Baez.html) (827 messages, latest: Oct 25 2022 at 15:07)
 * [Max S. New](topic/topic_Max.20S.2E.20New.html) (4 messages, latest: Oct 24 2022 at 20:27)
 * [PSSL history](topic/topic_PSSL.20history.html) (11 messages, latest: Oct 18 2022 at 23:54)
@@ -41,4 +41,4 @@ permalink: /stream/274877-practice:-our-work/index.html
 * [Conor Mc Bride](topic/topic_Conor.20Mc.20Bride.html) (60 messages, latest: Apr 08 2021 at 15:15)
 * [thoughts on sharing ideas](topic/topic_thoughts.20on.20sharing.20ideas.html) (20 messages, latest: Jan 31 2021 at 03:05)
 
-<hr><p>Last updated: Oct 26 2022 at 00:59 UTC</p>
+<hr><p>Last updated: Oct 27 2022 at 00:58 UTC</p>
