@@ -10,11 +10,11 @@ permalink: /index.html
 
 * [learning: questions](stream/229199-learning:-questions/index.html) (759 topics)
 
-* [theory: category theory](stream/229136-theory:-category-theory/index.html) (319 topics)
+* [theory: category theory](stream/229136-theory:-category-theory/index.html) (320 topics)
 
-* [general](stream/229111-general/index.html) (234 topics)
+* [general](stream/229111-general/index.html) (235 topics)
 
-* [general: events](stream/229141-general:-events/index.html) (143 topics)
+* [general: events](stream/229141-general:-events/index.html) (144 topics)
 
 * [practice: applied ct](stream/229156-practice:-applied-ct/index.html) (138 topics)
 
@@ -28,9 +28,9 @@ permalink: /index.html
 
 * [ACT 2020](stream/243068-ACT-2020/index.html) (61 topics)
 
-* [general: mathematics](stream/266967-general:-mathematics/index.html) (57 topics)
+* [general: positions](stream/245502-general:-positions/index.html) (58 topics)
 
-* [general: positions](stream/245502-general:-positions/index.html) (57 topics)
+* [general: mathematics](stream/266967-general:-mathematics/index.html) (57 topics)
 
 * [practice: thermodynamics](stream/306433-practice:-thermodynamics/index.html) (53 topics)
 
@@ -104,11 +104,11 @@ permalink: /index.html
 
 * [theory: monoids](stream/231815-theory:-monoids/index.html) (8 topics)
 
+* [workshop: Categories for AI](stream/347879-workshop:-Categories-for-AI/index.html) (8 topics)
+
 * [learning: statistics reading group](stream/245528-learning:-statistics-reading-group/index.html) (7 topics)
 
 * [seminar: EM-cats](stream/298571-seminar:-EM-cats/index.html) (7 topics)
-
-* [workshop: Categories for AI](stream/347879-workshop:-Categories-for-AI/index.html) (7 topics)
 
 * [learning: id my structure](stream/311521-learning:-id-my-structure/index.html) (6 topics)
 
@@ -178,4 +178,4 @@ permalink: /index.html
 
 * [theory: alternate presentations](stream/233122-theory:-alternate-presentations/index.html) (1 topic)
 
-<hr><p>Last updated: Oct 27 2022 at 00:58 UTC</p>
+<hr><p>Last updated: Oct 28 2022 at 01:03 UTC</p>

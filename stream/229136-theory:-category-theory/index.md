@@ -9,6 +9,7 @@ permalink: /stream/229136-theory:-category-theory/index.html
 
 ### Topics:
 
+* [multiple vs n-fold categories](topic/topic_multiple.20vs.20n-fold.20categories.html) (1 message, latest: Oct 27 2022 at 07:54)
 * [Kleisli category with products](topic/topic_Kleisli.20category.20with.20products.html) (11 messages, latest: Oct 25 2022 at 12:46)
 * [basis](topic/topic_basis.html) (50 messages, latest: Oct 25 2022 at 12:31)
 * [the (∞, 1)-category of strict ∞-groupoids](topic/topic_the.20(.E2.88.9E.2C.201)-category.20of.20strict.20.E2.88.9E-groupoids.html) (5 messages, latest: Oct 23 2022 at 12:11)
@@ -329,4 +330,4 @@ permalink: /stream/229136-theory:-category-theory/index.html
 * [diagrams for application](topic/topic_diagrams.20for.20application.html) (13 messages, latest: Mar 24 2020 at 06:19)
 * [universal constructions](topic/topic_universal.20constructions.html) (8 messages, latest: Mar 23 2020 at 21:06)
 
-<hr><p>Last updated: Oct 27 2022 at 00:58 UTC</p>
+<hr><p>Last updated: Oct 28 2022 at 01:03 UTC</p>
