@@ -9,7 +9,9 @@ permalink: /stream/229199-learning:-questions/index.html
 
 ### Topics:
 
-* [Cauchy in terms of convergence](topic/topic_Cauchy.20in.20terms.20of.20convergence.html) (13 messages, latest: Oct 27 2022 at 02:58)
+* [Cauchy in terms of convergence](topic/topic_Cauchy.20in.20terms.20of.20convergence.html) (19 messages, latest: Oct 28 2022 at 21:00)
+* [Towards an understanding of pullbacks](topic/topic_Towards.20an.20understanding.20of.20pullbacks.html) (1 message, latest: Oct 28 2022 at 16:40)
+* [Towards an Understanding of Pullbacks](topic/topic_Towards.20an.20Understanding.20of.20Pullbacks.html) (1 message, latest: Oct 28 2022 at 16:31)
 * [HoTT and philosophy](topic/topic_HoTT.20and.20philosophy.html) (10 messages, latest: Oct 25 2022 at 14:06)
 * [2-functors from functors](topic/topic_2-functors.20from.20functors.html) (6 messages, latest: Oct 18 2022 at 18:48)
 * [clarifying understanding of coproducts and disjoint unions](topic/topic_clarifying.20understanding.20of.20coproducts.20and.20disjoint.20unions.html) (4 messages, latest: Oct 18 2022 at 17:32)
@@ -769,4 +771,4 @@ permalink: /stream/229199-learning:-questions/index.html
 * [Algebra (Aluffi) exercises](topic/topic_Algebra.20(Aluffi).20exercises.html) (55 messages, latest: Mar 27 2020 at 23:38)
 * [What is category theory about?](topic/topic_What.20is.20category.20theory.20about.3F.html) (16 messages, latest: Mar 26 2020 at 16:03)
 
-<hr><p>Last updated: Oct 28 2022 at 01:03 UTC</p>
+<hr><p>Last updated: Oct 29 2022 at 00:53 UTC</p>

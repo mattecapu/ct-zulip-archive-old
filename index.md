@@ -8,11 +8,11 @@ permalink: /index.html
 
 ## Streams:
 
-* [learning: questions](stream/229199-learning:-questions/index.html) (759 topics)
+* [learning: questions](stream/229199-learning:-questions/index.html) (761 topics)
 
 * [theory: category theory](stream/229136-theory:-category-theory/index.html) (320 topics)
 
-* [general](stream/229111-general/index.html) (235 topics)
+* [general](stream/229111-general/index.html) (238 topics)
 
 * [general: events](stream/229141-general:-events/index.html) (144 topics)
 
@@ -46,9 +46,9 @@ permalink: /index.html
 
 * [Categorical Probability and Statistics 2020 workshop](stream/238032-Categorical-Probability-and-Statistics-2020-workshop/index.html) (34 topics)
 
-* [practice: our work](stream/274877-practice:-our-work/index.html) (31 topics)
+* [theory: probability](stream/253118-theory:-probability/index.html) (32 topics)
 
-* [theory: probability](stream/253118-theory:-probability/index.html) (31 topics)
+* [practice: our work](stream/274877-practice:-our-work/index.html) (31 topics)
 
 * [learning: recommendations](stream/232161-learning:-recommendations/index.html) (29 topics)
 
@@ -178,4 +178,4 @@ permalink: /index.html
 
 * [theory: alternate presentations](stream/233122-theory:-alternate-presentations/index.html) (1 topic)
 
-<hr><p>Last updated: Oct 28 2022 at 01:03 UTC</p>
+<hr><p>Last updated: Oct 29 2022 at 00:53 UTC</p>
