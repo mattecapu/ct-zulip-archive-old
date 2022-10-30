@@ -8,13 +8,13 @@ permalink: /index.html
 
 ## Streams:
 
-* [learning: questions](stream/229199-learning:-questions/index.html) (761 topics)
+* [learning: questions](stream/229199-learning:-questions/index.html) (762 topics)
 
-* [theory: category theory](stream/229136-theory:-category-theory/index.html) (320 topics)
+* [theory: category theory](stream/229136-theory:-category-theory/index.html) (321 topics)
 
 * [general](stream/229111-general/index.html) (238 topics)
 
-* [general: events](stream/229141-general:-events/index.html) (144 topics)
+* [general: events](stream/229141-general:-events/index.html) (145 topics)
 
 * [practice: applied ct](stream/229156-practice:-applied-ct/index.html) (138 topics)
 
@@ -34,7 +34,7 @@ permalink: /index.html
 
 * [practice: thermodynamics](stream/306433-practice:-thermodynamics/index.html) (53 topics)
 
-* [theory: logic](stream/233104-theory:-logic/index.html) (52 topics)
+* [theory: logic](stream/233104-theory:-logic/index.html) (53 topics)
 
 * [practice: our papers](stream/258900-practice:-our-papers/index.html) (51 topics)
 
@@ -54,7 +54,7 @@ permalink: /index.html
 
 * [general: values](stream/241990-general:-values/index.html) (28 topics)
 
-* [learning: history of ideas](stream/232163-learning:-history-of-ideas/index.html) (26 topics)
+* [learning: history of ideas](stream/232163-learning:-history-of-ideas/index.html) (27 topics)
 
 * [practice: Dialectica](stream/323208-practice:-Dialectica/index.html) (23 topics)
 
@@ -98,13 +98,13 @@ permalink: /index.html
 
 * [theory: concurrency](stream/235484-theory:-concurrency/index.html) (9 topics)
 
+* [workshop: Categories for AI](stream/347879-workshop:-Categories-for-AI/index.html) (9 topics)
+
 * [languages: francais/French](stream/231124-languages:-francais/French/index.html) (8 topics)
 
 * [languages: italiano/Italian](stream/231111-languages:-italiano/Italian/index.html) (8 topics)
 
 * [theory: monoids](stream/231815-theory:-monoids/index.html) (8 topics)
-
-* [workshop: Categories for AI](stream/347879-workshop:-Categories-for-AI/index.html) (8 topics)
 
 * [learning: statistics reading group](stream/245528-learning:-statistics-reading-group/index.html) (7 topics)
 
@@ -178,4 +178,4 @@ permalink: /index.html
 
 * [theory: alternate presentations](stream/233122-theory:-alternate-presentations/index.html) (1 topic)
 
-<hr><p>Last updated: Oct 29 2022 at 00:53 UTC</p>
+<hr><p>Last updated: Oct 30 2022 at 01:05 UTC</p>

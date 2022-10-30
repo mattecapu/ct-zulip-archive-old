@@ -9,6 +9,7 @@ permalink: /stream/233104-theory:-logic/index.html
 
 ### Topics:
 
+* [Dependent universes?](topic/topic_Dependent.20universes.3F.html) (8 messages, latest: Oct 29 2022 at 21:27)
 * [proofs of cut-elimination theorem](topic/topic_proofs.20of.20cut-elimination.20theorem.html) (19 messages, latest: Oct 15 2022 at 13:53)
 * [Kripke frames (logical vs relational algebraic view)](topic/topic_Kripke.20frames.20(logical.20vs.20relational.20algebraic.20view).html) (5 messages, latest: Oct 14 2022 at 14:30)
 * [linear version of Yoneda?](topic/topic_linear.20version.20of.20Yoneda.3F.html) (1 message, latest: Jun 21 2022 at 21:44)
@@ -62,4 +63,4 @@ permalink: /stream/233104-theory:-logic/index.html
 * [Probability as logic](topic/topic_Probability.20as.20logic.html) (63 messages, latest: Apr 15 2020 at 12:33)
 * [stream events](topic/topic_stream.20events.html) (1 message, latest: Apr 10 2020 at 12:32)
 
-<hr><p>Last updated: Oct 29 2022 at 00:53 UTC</p>
+<hr><p>Last updated: Oct 30 2022 at 01:05 UTC</p>
