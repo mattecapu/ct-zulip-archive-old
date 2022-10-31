@@ -8,9 +8,9 @@ permalink: /index.html
 
 ## Streams:
 
-* [learning: questions](stream/229199-learning:-questions/index.html) (762 topics)
+* [learning: questions](stream/229199-learning:-questions/index.html) (764 topics)
 
-* [theory: category theory](stream/229136-theory:-category-theory/index.html) (321 topics)
+* [theory: category theory](stream/229136-theory:-category-theory/index.html) (322 topics)
 
 * [general](stream/229111-general/index.html) (238 topics)
 
@@ -94,11 +94,11 @@ permalink: /index.html
 
 * [practice: economics](stream/231468-practice:-economics/index.html) (10 topics)
 
+* [workshop: Categories for AI](stream/347879-workshop:-Categories-for-AI/index.html) (10 topics)
+
 * [conference: CT20->21](stream/298844-conference:-CT20->21/index.html) (9 topics)
 
 * [theory: concurrency](stream/235484-theory:-concurrency/index.html) (9 topics)
-
-* [workshop: Categories for AI](stream/347879-workshop:-Categories-for-AI/index.html) (9 topics)
 
 * [languages: francais/French](stream/231124-languages:-francais/French/index.html) (8 topics)
 
@@ -178,4 +178,4 @@ permalink: /index.html
 
 * [theory: alternate presentations](stream/233122-theory:-alternate-presentations/index.html) (1 topic)
 
-<hr><p>Last updated: Oct 30 2022 at 01:05 UTC</p>
+<hr><p>Last updated: Oct 31 2022 at 01:06 UTC</p>

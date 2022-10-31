@@ -9,11 +9,13 @@ permalink: /stream/229199-learning:-questions/index.html
 
 ### Topics:
 
+* [Limits from products and equalizsers without choice](topic/topic_Limits.20from.20products.20and.20equalizsers.20without.20choice.html) (7 messages, latest: Oct 30 2022 at 23:20)
+* [HoTT and philosophy](topic/topic_HoTT.20and.20philosophy.html) (11 messages, latest: Oct 30 2022 at 23:06)
+* [Tensor product of convex spaces](topic/topic_Tensor.20product.20of.20convex.20spaces.html) (12 messages, latest: Oct 30 2022 at 20:33)
+* [Piecewise linear functions](topic/topic_Piecewise.20linear.20functions.html) (2 messages, latest: Oct 30 2022 at 20:31)
 * [Towards an understanding of pullbacks](topic/topic_Towards.20an.20understanding.20of.20pullbacks.html) (4 messages, latest: Oct 29 2022 at 23:31)
-* [Tensor product of convex spaces](topic/topic_Tensor.20product.20of.20convex.20spaces.html) (2 messages, latest: Oct 29 2022 at 22:39)
 * [Towards an Understanding of Pullbacks](topic/topic_Towards.20an.20Understanding.20of.20Pullbacks.html) (2 messages, latest: Oct 29 2022 at 19:57)
 * [Cauchy in terms of convergence](topic/topic_Cauchy.20in.20terms.20of.20convergence.html) (19 messages, latest: Oct 28 2022 at 21:00)
-* [HoTT and philosophy](topic/topic_HoTT.20and.20philosophy.html) (10 messages, latest: Oct 25 2022 at 14:06)
 * [2-functors from functors](topic/topic_2-functors.20from.20functors.html) (6 messages, latest: Oct 18 2022 at 18:48)
 * [clarifying understanding of coproducts and disjoint unions](topic/topic_clarifying.20understanding.20of.20coproducts.20and.20disjoint.20unions.html) (4 messages, latest: Oct 18 2022 at 17:32)
 * [pseudomonoid objects](topic/topic_pseudomonoid.20objects.html) (3 messages, latest: Oct 18 2022 at 16:31)
@@ -772,4 +774,4 @@ permalink: /stream/229199-learning:-questions/index.html
 * [Algebra (Aluffi) exercises](topic/topic_Algebra.20(Aluffi).20exercises.html) (55 messages, latest: Mar 27 2020 at 23:38)
 * [What is category theory about?](topic/topic_What.20is.20category.20theory.20about.3F.html) (16 messages, latest: Mar 26 2020 at 16:03)
 
-<hr><p>Last updated: Oct 30 2022 at 01:05 UTC</p>
+<hr><p>Last updated: Oct 31 2022 at 01:06 UTC</p>

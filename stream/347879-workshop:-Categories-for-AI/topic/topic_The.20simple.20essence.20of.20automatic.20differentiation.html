@@ -1,0 +1,38 @@
+---
+layout: archive
+title: Zulip Chat Archive
+permalink: /stream/347879-workshop:-Categories-for-AI/topic/topic_The.20simple.20essence.20of.20automatic.20differentiation.html
+---
+
+<h2>Stream: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/347879-workshop:-Categories-for-AI/index.html">workshop: Categories for AI</a></h2>
+<h3>Topic: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/347879-workshop:-Categories-for-AI/topic/topic_The.20simple.20essence.20of.20automatic.20differentiation.html">The simple essence of automatic differentiation</a></h3>
+
+<hr>
+
+<base href="https://categorytheory.zulipchat.com/">
+
+{% raw %}
+
+<a name="307007272"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/347879-workshop%3A%20Categories%20for%20AI/topic/The%20simple%20essence%20of%20automatic%20differentiation/near/307007272" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Dan Oneață <a href="https://mattecapu.github.io/ct-zulip-archive/stream/347879-workshop:-Categories-for-AI/topic/topic_The.20simple.20essence.20of.20automatic.20differentiation.html#307007272">(Oct 30 2022 at 20:57)</a>:</h4>
+<p>Hello! <span aria-label="wave" class="emoji emoji-1f44b" role="img" title="wave">:wave:</span>  I have a question regarding <a href="https://dl.acm.org/doi/pdf/10.1145/3236765">The Simple Essence of Automatic Differentiation</a> by Conal Elliott. While the paper is not part of the course's curriculum, it is quite related to the topics discussed here, so I hope it's not too off-topic to ask here. To give some context, the paper generalizes automatic differentiation such that when instantiated to a given category <code>k</code> it recovers various flavours of automatic differentiation algorithms (<em>e.g.</em>, setting <code>k</code> to <code>Cont</code> yields reverse-mode automatic differentiation).</p>
+<p>My question is the following: The paper claims that <code>Cont</code> (Section 12) results in fully left-associative computations, but is that the case for <code>Dual</code> (Section 13) as well? The paper seems to suggest that yes:</p>
+<blockquote>
+<p>[W]e can turn the <code>Cont</code> and <code>Dual</code> techniques around to yield category transformers that perform full right- instead of left-association.</p>
+</blockquote>
+<p>But it appears to me that it's not the case, since based on the definition in Figure 10, <code>Dual</code> just reverses the composition of the original computation. For example, if we were given an expression of the form</p>
+<div class="codehilite"><pre><span></span><code>(f . g) . ((h . i) . k)
+</code></pre></div>
+<p>applying the <code>D</code> differentiation functor (corresponding to <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>D</mi><msub><mtext>Dual</mtext><mo lspace="0em" rspace="0em">→</mo></msub></msub></mrow><annotation encoding="application/x-tex">D_{\text{Dual}_{\rightarrow}}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.9334em;vertical-align:-0.2501em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.02778em;">D</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3361em;"><span style="top:-2.55em;margin-left:-0.0278em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight"><span class="mord text mtight"><span class="mord mtight">Dual</span></span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.1191em;"><span style="top:-2.357em;margin-right:0.0714em;"><span class="pstrut" style="height:2.5em;"></span><span class="sizing reset-size3 size1 mtight"><span class="mord mtight"><span class="mrel mtight">→</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.143em;"><span></span></span></span></span></span></span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2501em;"><span></span></span></span></span></span></span></span></span></span> in the paper) we would obtain:</p>
+<div class="codehilite"><pre><span></span><code>D ((f . g) . ((h . i) . k))
+= { definition of composition: D (f . g) = D g . D f }
+(D k . (D i . D h)) . (D g . D f)
+</code></pre></div>
+<p>which is not left-associative.</p>
+<p>What am I missing?</p>
+
+
+
+{% endraw %}
+
+<hr><p>Last updated: Oct 31 2022 at 01:06 UTC</p>
