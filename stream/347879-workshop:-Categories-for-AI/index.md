@@ -9,9 +9,9 @@ permalink: /stream/347879-workshop:-Categories-for-AI/index.html
 
 ### Topics:
 
-* [The simple essence of automatic differentiation](topic/topic_The.20simple.20essence.20of.20automatic.20differentiation.html) (1 message, latest: Oct 30 2022 at 20:57)
+* [The simple essence of automatic differentiation](topic/topic_The.20simple.20essence.20of.20automatic.20differentiation.html) (5 messages, latest: Oct 31 2022 at 22:57)
+* [Week 4: Geometric Deep Learning & Naturality](topic/topic_Week.204.3A.20Geometric.20Deep.20Learning.20.26.20Naturality.html) (4 messages, latest: Oct 31 2022 at 18:08)
 * [Week 3: Categorical Dataflow: Lenses and Optics](topic/topic_Week.203.3A.20Categorical.20Dataflow.3A.20Lenses.20and.20Optics.html) (41 messages, latest: Oct 30 2022 at 19:00)
-* [Week 4: Geometric Deep Learning & Naturality](topic/topic_Week.204.3A.20Geometric.20Deep.20Learning.20.26.20Naturality.html) (1 message, latest: Oct 29 2022 at 21:23)
 * [Week 4 Logistics](topic/topic_Week.204.20Logistics.html) (3 messages, latest: Oct 28 2022 at 11:45)
 * [Coexponential Objects](topic/topic_Coexponential.20Objects.html) (8 messages, latest: Oct 25 2022 at 21:30)
 * [Week 2: Essential building blocks: Categories and Functors](topic/topic_Week.202.3A.20Essential.20building.20blocks.3A.20Categories.20and.20Functors.html) (46 messages, latest: Oct 19 2022 at 15:43)
@@ -20,4 +20,4 @@ permalink: /stream/347879-workshop:-Categories-for-AI/index.html
 * [Welcome!](topic/topic_Welcome!.html) (1 message, latest: Oct 04 2022 at 21:01)
 * [stream events](topic/topic_stream.20events.html) (1 message, latest: Oct 03 2022 at 17:49)
 
-<hr><p>Last updated: Oct 31 2022 at 01:06 UTC</p>
+<hr><p>Last updated: Nov 01 2022 at 01:11 UTC</p>
