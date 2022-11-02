@@ -9,6 +9,7 @@ permalink: /stream/229141-general:-events/index.html
 
 ### Topics:
 
+* [Virtual Double Categories Workshop](topic/topic_Virtual.20Double.20Categories.20Workshop.html) (2 messages, latest: Nov 01 2022 at 22:59)
 * [This Week's Finds seminar](topic/topic_This.20Week's.20Finds.20seminar.html) (98 messages, latest: Oct 31 2022 at 11:20)
 * [New Developments in Tensor Networks and Quantum Computation](topic/topic_New.20Developments.20in.20Tensor.20Networks.20and.20Quantum.20Computation.html) (1 message, latest: Oct 29 2022 at 10:50)
 * [Bénabou Colloquium](topic/topic_B.C3.A9nabou.20Colloquium.html) (1 message, latest: Oct 27 2022 at 10:34)
@@ -155,4 +156,4 @@ permalink: /stream/229141-general:-events/index.html
 * [April 1st: ACT@UCR](topic/topic_April.201st.3A.20ACT.40UCR.html) (3 messages, latest: Mar 26 2020 at 23:58)
 * [Google Sites problem](topic/topic_Google.20Sites.20problem.html) (4 messages, latest: Mar 25 2020 at 04:29)
 
-<hr><p>Last updated: Nov 01 2022 at 01:11 UTC</p>
+<hr><p>Last updated: Nov 02 2022 at 01:03 UTC</p>

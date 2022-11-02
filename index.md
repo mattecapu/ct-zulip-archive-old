@@ -8,13 +8,13 @@ permalink: /index.html
 
 ## Streams:
 
-* [learning: questions](stream/229199-learning:-questions/index.html) (765 topics)
+* [learning: questions](stream/229199-learning:-questions/index.html) (766 topics)
 
 * [theory: category theory](stream/229136-theory:-category-theory/index.html) (322 topics)
 
 * [general](stream/229111-general/index.html) (238 topics)
 
-* [general: events](stream/229141-general:-events/index.html) (145 topics)
+* [general: events](stream/229141-general:-events/index.html) (146 topics)
 
 * [practice: applied ct](stream/229156-practice:-applied-ct/index.html) (138 topics)
 
@@ -46,7 +46,7 @@ permalink: /index.html
 
 * [Categorical Probability and Statistics 2020 workshop](stream/238032-Categorical-Probability-and-Statistics-2020-workshop/index.html) (34 topics)
 
-* [practice: our work](stream/274877-practice:-our-work/index.html) (32 topics)
+* [practice: our work](stream/274877-practice:-our-work/index.html) (33 topics)
 
 * [theory: probability](stream/253118-theory:-probability/index.html) (32 topics)
 
@@ -56,9 +56,9 @@ permalink: /index.html
 
 * [learning: history of ideas](stream/232163-learning:-history-of-ideas/index.html) (27 topics)
 
-* [practice: Dialectica](stream/323208-practice:-Dialectica/index.html) (23 topics)
+* [practice: software](stream/229125-practice:-software/index.html) (24 topics)
 
-* [practice: software](stream/229125-practice:-software/index.html) (23 topics)
+* [practice: Dialectica](stream/323208-practice:-Dialectica/index.html) (23 topics)
 
 * [workshop: Polynomial Functors @ Topos](stream/282140-workshop:-Polynomial-Functors-@-Topos/index.html) (22 topics)
 
@@ -178,4 +178,4 @@ permalink: /index.html
 
 * [theory: alternate presentations](stream/233122-theory:-alternate-presentations/index.html) (1 topic)
 
-<hr><p>Last updated: Nov 01 2022 at 01:11 UTC</p>
+<hr><p>Last updated: Nov 02 2022 at 01:03 UTC</p>
