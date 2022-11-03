@@ -9,9 +9,10 @@ permalink: /stream/274877-practice:-our-work/index.html
 
 ### Topics:
 
+* [Christian Williams](topic/topic_Christian.20Williams.html) (284 messages, latest: Nov 02 2022 at 21:14)
+* [Jean-Baptiste Vienney](topic/topic_Jean-Baptiste.20Vienney.html) (27 messages, latest: Nov 02 2022 at 20:15)
+* [Combinatorial species and dynamics](topic/topic_Combinatorial.20species.20and.20dynamics.html) (6 messages, latest: Nov 02 2022 at 07:05)
 * [John Baez](topic/topic_John.20Baez.html) (842 messages, latest: Nov 01 2022 at 21:43)
-* [Christian Williams](topic/topic_Christian.20Williams.html) (246 messages, latest: Nov 01 2022 at 21:30)
-* [Combinatorial species and dynamics](topic/topic_Combinatorial.20species.20and.20dynamics.html) (5 messages, latest: Nov 01 2022 at 17:13)
 * [Combinatorial Species and Dynamics](topic/topic_Combinatorial.20Species.20and.20Dynamics.html) (7 messages, latest: Oct 31 2022 at 20:04)
 * [Max S. New](topic/topic_Max.20S.2E.20New.html) (4 messages, latest: Oct 24 2022 at 20:27)
 * [PSSL history](topic/topic_PSSL.20history.html) (11 messages, latest: Oct 18 2022 at 23:54)
@@ -22,7 +23,6 @@ permalink: /stream/274877-practice:-our-work/index.html
 * [Dusko Pavlovic](topic/topic_Dusko.20Pavlovic.html) (22 messages, latest: Sep 30 2022 at 21:56)
 * [dusko: computable categories](topic/topic_dusko.3A.20computable.20categories.html) (3 messages, latest: Sep 15 2022 at 05:30)
 * [Jason Parker](topic/topic_Jason.20Parker.html) (2 messages, latest: Sep 13 2022 at 19:38)
-* [Jean-Baptiste Vienney](topic/topic_Jean-Baptiste.20Vienney.html) (26 messages, latest: Aug 30 2022 at 18:03)
 * [Morgan Rogers](topic/topic_Morgan.20Rogers.html) (35 messages, latest: Aug 20 2022 at 14:12)
 * [MonoidMusician (Verity S.)](topic/topic_MonoidMusician.20(Verity.20S.2E).html) (11 messages, latest: Aug 01 2022 at 16:17)
 * [motives](topic/topic_motives.html) (25 messages, latest: Jun 08 2022 at 17:35)
@@ -43,4 +43,4 @@ permalink: /stream/274877-practice:-our-work/index.html
 * [Conor Mc Bride](topic/topic_Conor.20Mc.20Bride.html) (60 messages, latest: Apr 08 2021 at 15:15)
 * [thoughts on sharing ideas](topic/topic_thoughts.20on.20sharing.20ideas.html) (20 messages, latest: Jan 31 2021 at 03:05)
 
-<hr><p>Last updated: Nov 02 2022 at 01:03 UTC</p>
+<hr><p>Last updated: Nov 03 2022 at 00:58 UTC</p>
