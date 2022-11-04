@@ -9,7 +9,7 @@ permalink: /stream/229199-learning:-questions/index.html
 
 ### Topics:
 
-* [Beginner questions](topic/topic_Beginner.20questions.html) (7 messages, latest: Nov 02 2022 at 21:06)
+* [Beginner questions](topic/topic_Beginner.20questions.html) (12 messages, latest: Nov 03 2022 at 23:24)
 * [Associativity of limits = limits commute with limits?](topic/topic_Associativity.20of.20limits.20.3D.20limits.20commute.20with.20limits.3F.html) (5 messages, latest: Nov 01 2022 at 19:36)
 * [Tensor product of convex spaces](topic/topic_Tensor.20product.20of.20convex.20spaces.html) (43 messages, latest: Nov 01 2022 at 18:26)
 * [Yoneda embedding of a cartesian closed category](topic/topic_Yoneda.20embedding.20of.20a.20cartesian.20closed.20category.html) (3 messages, latest: Nov 01 2022 at 17:35)
@@ -777,4 +777,4 @@ permalink: /stream/229199-learning:-questions/index.html
 * [Algebra (Aluffi) exercises](topic/topic_Algebra.20(Aluffi).20exercises.html) (55 messages, latest: Mar 27 2020 at 23:38)
 * [What is category theory about?](topic/topic_What.20is.20category.20theory.20about.3F.html) (16 messages, latest: Mar 26 2020 at 16:03)
 
-<hr><p>Last updated: Nov 03 2022 at 00:58 UTC</p>
+<hr><p>Last updated: Nov 04 2022 at 00:59 UTC</p>

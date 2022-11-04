@@ -33,6 +33,49 @@ permalink: /stream/229125-practice:-software/topic/topic_Automated.20proving.3F.
 
 
 
+<a name="307727628"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229125-practice%3A%20software/topic/Automated%20proving%3F/near/307727628" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Simon Burton <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229125-practice:-software/topic/topic_Automated.20proving.3F.html#307727628">(Nov 03 2022 at 13:25)</a>:</h4>
+<p>I've experimented with using Prover9  (and mace4) to prove category theory statements. You can see some of my mace files <a href="https://github.com/punkdit/pyfinder/tree/master/pyfinder/theories">here</a>. I was aiming to formalize rig categories, but I eventually gave up. It's pretty tricky, mainly because composition is a partial operation. The usual way to get around this is to have an "undefined" object, and this ends up polluting every (or most) predicates...</p>
+
+
+
+<a name="307763153"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229125-practice%3A%20software/topic/Automated%20proving%3F/near/307763153" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Jules Hedges <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229125-practice:-software/topic/topic_Automated.20proving.3F.html#307763153">(Nov 03 2022 at 15:59)</a>:</h4>
+<p>I think the Connexus tool <em>can</em> be used in this way, as a theorem prover for working with finite presentations of categories</p>
+
+
+
+<a name="307800101"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229125-practice%3A%20software/topic/Automated%20proving%3F/near/307800101" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Jacques Carette <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229125-practice:-software/topic/topic_Automated.20proving.3F.html#307800101">(Nov 03 2022 at 17:32)</a>:</h4>
+<p><span class="user-mention" data-user-id="277321">@Simon Burton</span> you do know that <code>agda-categories</code> does have a formalization of rig categories?</p>
+<p>I was definitely afraid that "losing the types" would end up being a nightmare. This is what I learned from <span class="user-mention" data-user-id="276026">@Philip Zucker</span> 's experience <a href="https://www.philipzucker.com/category-theory-in-the-e-automated-theorem-prover/">with E</a> and experiments <a href="https://www.philipzucker.com/notes-on-synthesis-and-equation-proving-for-catlab-jl/">around Catlab</a>.   Christoph Benzmuller's <a href="http://aitp-conference.org/2018/slides/CBDS.pdf">experiments</a> did not fill me with hope either!  But then, this morning, I saw the paper <a href="https://hal.inria.fr/hal-03814635/document">Seventeen Provers under the Hammer</a> which gave me renewed hope.</p>
+
+
+
+<a name="307800996"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229125-practice%3A%20software/topic/Automated%20proving%3F/near/307800996" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Jacques Carette <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229125-practice:-software/topic/topic_Automated.20proving.3F.html#307800996">(Nov 03 2022 at 17:36)</a>:</h4>
+<p><span class="user-mention" data-user-id="275901">@Jules Hedges</span> Thanks - but I'm not really working on presentations of categories, rather I'm trying to prove some equalities in something akin to special dagger rig categories. Specifically whether a model we've constructed satisfies axioms C1-C20 that Selinger et al enumerate on p.3 of <a href="https://arxiv.org/abs/2204.02217">this paper</a>.</p>
+
+
+
+<a name="307810856"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229125-practice%3A%20software/topic/Automated%20proving%3F/near/307810856" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Philip Zucker <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229125-practice:-software/topic/topic_Automated.20proving.3F.html#307810856">(Nov 03 2022 at 18:25)</a>:</h4>
+<p>FYI The line of thinking that was kicked off by those experiments is still progressing. There is a new system in the works <a href="https://github.com/mwillsey/egg-smol">https://github.com/mwillsey/egg-smol</a> (publication in progress, still not really intended for external users quite yet) that can be seen as a much more powerful and performant version of this prototype <a href="https://www.philipzucker.com/egglog/">https://www.philipzucker.com/egglog/</a> in collaboration with some of the egg people at UW. The system is heavily based in the idea of partial functions, datalog, and equational (egraph based) rewriting with sophisticated guard conditions. Proof production is definitely in the roadmap and people are flirting with the question of how to do a sound CAS. I've also been wondering if I should revisit my E/Vampire encodings in light of a year or two of more experience. I think heavily leaning into a Maybe monad style encoding to make everything partial could work, especially with a metaprogramming environment to make it  less burdensome. I know of a group of people attempting to integrate egg1 into lean and another into coq, but I am unaware of anyone trying to do something similar for Agda, which I know is your playground. Would be interested to understand good example problems in rig categories or otherwise if they are digestible by a mere mortal like myself, as we are always seeking more good applications of these systems.</p>
+
+
+
+<a name="307830847"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229125-practice%3A%20software/topic/Automated%20proving%3F/near/307830847" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Jacques Carette <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229125-practice:-software/topic/topic_Automated.20proving.3F.html#307830847">(Nov 03 2022 at 20:18)</a>:</h4>
+<p><span class="user-mention" data-user-id="276026">@Philip Zucker</span> We're in the middle of a paper where we need to see if C1-C20 of Selinger's paper (see link in response to Jules) hold. I think you'll get a good idea of the scope by just reading pages 1-3 of that paper.</p>
+
+
+
+<a name="307833962"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229125-practice%3A%20software/topic/Automated%20proving%3F/near/307833962" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Philip Zucker <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229125-practice:-software/topic/topic_Automated.20proving.3F.html#307833962">(Nov 03 2022 at 20:36)</a>:</h4>
+<p>If I'm reading this correctly, It is a pure group? Do you need n&gt;2 or where n changes?</p>
+
+
+
 {% endraw %}
 
-<hr><p>Last updated: Nov 03 2022 at 00:58 UTC</p>
+<hr><p>Last updated: Nov 04 2022 at 00:59 UTC</p>

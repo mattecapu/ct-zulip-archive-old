@@ -9,7 +9,7 @@ permalink: /stream/229111-general/index.html
 
 ### Topics:
 
-* [Introduce yourself!](topic/topic_Introduce.20yourself!.html) (3 messages, latest: Oct 28 2022 at 17:37)
+* [Introduce yourself!](topic/topic_Introduce.20yourself!.html) (4 messages, latest: Nov 03 2022 at 08:46)
 * [Programming Language Tools for ACT](topic/topic_Programming.20Language.20Tools.20for.20ACT.html) (6 messages, latest: Oct 28 2022 at 16:12)
 * [Quantum PL and verification community](topic/topic_Quantum.20PL.20and.20verification.20community.html) (1 message, latest: Oct 28 2022 at 08:28)
 * [quantum PL and verification community](topic/topic_quantum.20PL.20and.20verification.20community.html) (1 message, latest: Oct 27 2022 at 13:23)
@@ -248,4 +248,4 @@ permalink: /stream/229111-general/index.html
 * [Tools for diagrams](topic/topic_Tools.20for.20diagrams.html) (78 messages, latest: Mar 25 2020 at 17:53)
 * [topic demonstration](topic/topic_topic.20demonstration.html) (2 messages, latest: Mar 23 2020 at 16:57)
 
-<hr><p>Last updated: Nov 03 2022 at 00:58 UTC</p>
+<hr><p>Last updated: Nov 04 2022 at 00:59 UTC</p>
