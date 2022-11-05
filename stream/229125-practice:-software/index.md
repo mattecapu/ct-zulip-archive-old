@@ -9,7 +9,7 @@ permalink: /stream/229125-practice:-software/index.html
 
 ### Topics:
 
-* [Automated proving?](topic/topic_Automated.20proving.3F.html) (10 messages, latest: Nov 03 2022 at 20:36)
+* [Automated proving?](topic/topic_Automated.20proving.3F.html) (13 messages, latest: Nov 04 2022 at 12:24)
 * [✔ limits latex](topic/topic_.E2.9C.94.20limits.20latex.html) (3 messages, latest: Feb 28 2022 at 14:49)
 * [limits latex](topic/topic_limits.20latex.html) (1 message, latest: Feb 27 2022 at 21:36)
 * [tools for diagrams](topic/topic_tools.20for.20diagrams.html) (160 messages, latest: Dec 29 2021 at 17:08)
@@ -34,4 +34,4 @@ permalink: /stream/229125-practice:-software/index.html
 * [Introduction](topic/topic_Introduction.html) (8 messages, latest: Mar 24 2020 at 17:58)
 * [idris-ct](topic/topic_idris-ct.html) (1 message, latest: Mar 24 2020 at 13:24)
 
-<hr><p>Last updated: Nov 04 2022 at 00:59 UTC</p>
+<hr><p>Last updated: Nov 05 2022 at 00:58 UTC</p>
