@@ -9,11 +9,11 @@ permalink: /stream/274877-practice:-our-work/index.html
 
 ### Topics:
 
+* [John Baez](topic/topic_John.20Baez.html) (854 messages, latest: Nov 06 2022 at 17:35)
 * [Christian Williams](topic/topic_Christian.20Williams.html) (319 messages, latest: Nov 04 2022 at 17:45)
 * [Steve Huntsman](topic/topic_Steve.20Huntsman.html) (1 message, latest: Nov 03 2022 at 18:39)
 * [Jean-Baptiste Vienney](topic/topic_Jean-Baptiste.20Vienney.html) (27 messages, latest: Nov 02 2022 at 20:15)
 * [Combinatorial species and dynamics](topic/topic_Combinatorial.20species.20and.20dynamics.html) (6 messages, latest: Nov 02 2022 at 07:05)
-* [John Baez](topic/topic_John.20Baez.html) (842 messages, latest: Nov 01 2022 at 21:43)
 * [Combinatorial Species and Dynamics](topic/topic_Combinatorial.20Species.20and.20Dynamics.html) (7 messages, latest: Oct 31 2022 at 20:04)
 * [Max S. New](topic/topic_Max.20S.2E.20New.html) (4 messages, latest: Oct 24 2022 at 20:27)
 * [PSSL history](topic/topic_PSSL.20history.html) (11 messages, latest: Oct 18 2022 at 23:54)
@@ -44,4 +44,4 @@ permalink: /stream/274877-practice:-our-work/index.html
 * [Conor Mc Bride](topic/topic_Conor.20Mc.20Bride.html) (60 messages, latest: Apr 08 2021 at 15:15)
 * [thoughts on sharing ideas](topic/topic_thoughts.20on.20sharing.20ideas.html) (20 messages, latest: Jan 31 2021 at 03:05)
 
-<hr><p>Last updated: Nov 06 2022 at 00:57 UTC</p>
+<hr><p>Last updated: Nov 07 2022 at 00:55 UTC</p>

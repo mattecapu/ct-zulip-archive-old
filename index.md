@@ -28,9 +28,9 @@ permalink: /index.html
 
 * [ACT 2020](stream/243068-ACT-2020/index.html) (61 topics)
 
-* [general: positions](stream/245502-general:-positions/index.html) (58 topics)
+* [general: mathematics](stream/266967-general:-mathematics/index.html) (58 topics)
 
-* [general: mathematics](stream/266967-general:-mathematics/index.html) (57 topics)
+* [general: positions](stream/245502-general:-positions/index.html) (58 topics)
 
 * [practice: thermodynamics](stream/306433-practice:-thermodynamics/index.html) (53 topics)
 
@@ -90,11 +90,11 @@ permalink: /index.html
 
 * [practice: translation](stream/260000-practice:-translation/index.html) (11 topics)
 
+* [workshop: Categories for AI](stream/347879-workshop:-Categories-for-AI/index.html) (11 topics)
+
 * [practice: ACT wiki](stream/243548-practice:-ACT-wiki/index.html) (10 topics)
 
 * [practice: economics](stream/231468-practice:-economics/index.html) (10 topics)
-
-* [workshop: Categories for AI](stream/347879-workshop:-Categories-for-AI/index.html) (10 topics)
 
 * [conference: CT20->21](stream/298844-conference:-CT20->21/index.html) (9 topics)
 
@@ -178,4 +178,4 @@ permalink: /index.html
 
 * [theory: alternate presentations](stream/233122-theory:-alternate-presentations/index.html) (1 topic)
 
-<hr><p>Last updated: Nov 06 2022 at 00:57 UTC</p>
+<hr><p>Last updated: Nov 07 2022 at 00:55 UTC</p>
