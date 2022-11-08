@@ -8,13 +8,13 @@ permalink: /index.html
 
 ## Streams:
 
-* [learning: questions](stream/229199-learning:-questions/index.html) (767 topics)
+* [learning: questions](stream/229199-learning:-questions/index.html) (768 topics)
 
-* [theory: category theory](stream/229136-theory:-category-theory/index.html) (323 topics)
+* [theory: category theory](stream/229136-theory:-category-theory/index.html) (324 topics)
 
 * [general](stream/229111-general/index.html) (238 topics)
 
-* [general: events](stream/229141-general:-events/index.html) (146 topics)
+* [general: events](stream/229141-general:-events/index.html) (147 topics)
 
 * [practice: applied ct](stream/229156-practice:-applied-ct/index.html) (138 topics)
 
@@ -28,9 +28,9 @@ permalink: /index.html
 
 * [ACT 2020](stream/243068-ACT-2020/index.html) (61 topics)
 
-* [general: mathematics](stream/266967-general:-mathematics/index.html) (58 topics)
+* [general: positions](stream/245502-general:-positions/index.html) (59 topics)
 
-* [general: positions](stream/245502-general:-positions/index.html) (58 topics)
+* [general: mathematics](stream/266967-general:-mathematics/index.html) (58 topics)
 
 * [practice: thermodynamics](stream/306433-practice:-thermodynamics/index.html) (53 topics)
 
@@ -136,6 +136,8 @@ permalink: /index.html
 
 * [expression](stream/247180-expression/index.html) (3 topics)
 
+* [general: terminology](stream/348484-general:-terminology/index.html) (3 topics)
+
 * [process-io](stream/267137-process-io/index.html) (3 topics)
 
 * [theory: combinatorics](stream/229794-theory:-combinatorics/index.html) (3 topics)
@@ -149,8 +151,6 @@ permalink: /index.html
 * [NYC Category Theory](stream/237238-NYC-Category-Theory/index.html) (2 topics)
 
 * [Topos Colloquium](stream/269484-Topos-Colloquium/index.html) (2 topics)
-
-* [general: terminology](stream/348484-general:-terminology/index.html) (2 topics)
 
 * [languages: Nederlands/Dutch](stream/324768-languages:-Nederlands/Dutch/index.html) (2 topics)
 
@@ -178,4 +178,4 @@ permalink: /index.html
 
 * [theory: alternate presentations](stream/233122-theory:-alternate-presentations/index.html) (1 topic)
 
-<hr><p>Last updated: Nov 07 2022 at 00:55 UTC</p>
+<hr><p>Last updated: Nov 08 2022 at 00:57 UTC</p>

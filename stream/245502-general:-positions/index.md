@@ -9,7 +9,8 @@ permalink: /stream/245502-general:-positions/index.html
 
 ### Topics:
 
-* [Probabilistic compilation as functor](topic/topic_Probabilistic.20compilation.20as.20functor.html) (1 message, latest: Oct 28 2022 at 00:21)
+* [Probabilistic compilation as functor](topic/topic_Probabilistic.20compilation.20as.20functor.html) (2 messages, latest: Nov 07 2022 at 22:24)
+* [Faculty positions at Case Western Reserve](topic/topic_Faculty.20positions.20at.20Case.20Western.20Reserve.html) (1 message, latest: Nov 07 2022 at 14:20)
 * [Applying for Master's/PhD in Categories/Algebraic Topology](topic/topic_Applying.20for.20Master's.2FPhD.20in.20Categories.2FAlgebraic.20Topology.html) (1 message, latest: Oct 20 2022 at 10:57)
 * [Gothenburg: four PhD student positions](topic/topic_Gothenburg.3A.20four.20PhD.20student.20positions.html) (3 messages, latest: Oct 18 2022 at 05:52)
 * [BYU is looking to hire a physicist. Deadline 15 Oct!](topic/topic_BYU.20is.20looking.20to.20hire.20a.20physicist.2E.20Deadline.2015.20Oct!.html) (1 message, latest: Oct 11 2022 at 01:54)
@@ -68,4 +69,4 @@ permalink: /stream/245502-general:-positions/index.html
 * [PhD positions in Estonia](topic/topic_PhD.20positions.20in.20Estonia.html) (1 message, latest: Jun 27 2020 at 18:04)
 * [Companies that hire category people](topic/topic_Companies.20that.20hire.20category.20people.html) (2 messages, latest: May 13 2020 at 03:50)
 
-<hr><p>Last updated: Nov 07 2022 at 00:55 UTC</p>
+<hr><p>Last updated: Nov 08 2022 at 00:57 UTC</p>
