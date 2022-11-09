@@ -8,9 +8,9 @@ permalink: /index.html
 
 ## Streams:
 
-* [learning: questions](stream/229199-learning:-questions/index.html) (768 topics)
+* [learning: questions](stream/229199-learning:-questions/index.html) (769 topics)
 
-* [theory: category theory](stream/229136-theory:-category-theory/index.html) (324 topics)
+* [theory: category theory](stream/229136-theory:-category-theory/index.html) (327 topics)
 
 * [general](stream/229111-general/index.html) (238 topics)
 
@@ -88,9 +88,9 @@ permalink: /index.html
 
 * [learning: reading groups](stream/232160-learning:-reading-groups/index.html) (12 topics)
 
-* [practice: translation](stream/260000-practice:-translation/index.html) (11 topics)
+* [workshop: Categories for AI](stream/347879-workshop:-Categories-for-AI/index.html) (12 topics)
 
-* [workshop: Categories for AI](stream/347879-workshop:-Categories-for-AI/index.html) (11 topics)
+* [practice: translation](stream/260000-practice:-translation/index.html) (11 topics)
 
 * [practice: ACT wiki](stream/243548-practice:-ACT-wiki/index.html) (10 topics)
 
@@ -124,6 +124,8 @@ permalink: /index.html
 
 * [languages: portugues](stream/303660-languages:-portugues/index.html) (5 topics)
 
+* [general: terminology](stream/348484-general:-terminology/index.html) (4 topics)
+
 * [languages: espanol/Spanish](stream/231120-languages:-espanol/Spanish/index.html) (4 topics)
 
 * [practice: neuroscience](stream/233925-practice:-neuroscience/index.html) (4 topics)
@@ -135,8 +137,6 @@ permalink: /index.html
 * [Grothendieck](stream/307233-Grothendieck/index.html) (3 topics)
 
 * [expression](stream/247180-expression/index.html) (3 topics)
-
-* [general: terminology](stream/348484-general:-terminology/index.html) (3 topics)
 
 * [process-io](stream/267137-process-io/index.html) (3 topics)
 
@@ -178,4 +178,4 @@ permalink: /index.html
 
 * [theory: alternate presentations](stream/233122-theory:-alternate-presentations/index.html) (1 topic)
 
-<hr><p>Last updated: Nov 08 2022 at 00:57 UTC</p>
+<hr><p>Last updated: Nov 09 2022 at 00:56 UTC</p>

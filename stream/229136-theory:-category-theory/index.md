@@ -9,6 +9,9 @@ permalink: /stream/229136-theory:-category-theory/index.html
 
 ### Topics:
 
+* [Dependent external tensor product](topic/topic_Dependent.20external.20tensor.20product.html) (21 messages, latest: Nov 08 2022 at 18:21)
+* [Left leg is fibration, right leg is opfibration](topic/topic_Left.20leg.20is.20fibration.2C.20right.20leg.20is.20opfibration.html) (2 messages, latest: Nov 08 2022 at 18:18)
+* [left leg is fibration, right leg is opfibration](topic/topic_left.20leg.20is.20fibration.2C.20right.20leg.20is.20opfibration.html) (10 messages, latest: Nov 08 2022 at 12:01)
 * [Indexed adjunctions](topic/topic_Indexed.20adjunctions.html) (5 messages, latest: Nov 07 2022 at 18:31)
 * ["On local adjointness of distributive bicategories"](topic/topic_.22On.20local.20adjointness.20of.20distributive.20bicategories.22.html) (3 messages, latest: Nov 07 2022 at 11:26)
 * [Linear analogues of topos](topic/topic_Linear.20analogues.20of.20topos.html) (16 messages, latest: Nov 01 2022 at 03:27)
@@ -334,4 +337,4 @@ permalink: /stream/229136-theory:-category-theory/index.html
 * [diagrams for application](topic/topic_diagrams.20for.20application.html) (13 messages, latest: Mar 24 2020 at 06:19)
 * [universal constructions](topic/topic_universal.20constructions.html) (8 messages, latest: Mar 23 2020 at 21:06)
 
-<hr><p>Last updated: Nov 08 2022 at 00:57 UTC</p>
+<hr><p>Last updated: Nov 09 2022 at 00:56 UTC</p>

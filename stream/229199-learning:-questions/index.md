@@ -9,6 +9,7 @@ permalink: /stream/229199-learning:-questions/index.html
 
 ### Topics:
 
+* [Understanding Yoneda lemma](topic/topic_Understanding.20Yoneda.20lemma.html) (9 messages, latest: Nov 08 2022 at 20:08)
 * [evolutionary game](topic/topic_evolutionary.20game.html) (10 messages, latest: Nov 08 2022 at 00:22)
 * [HoTT and philosophy](topic/topic_HoTT.20and.20philosophy.html) (32 messages, latest: Nov 07 2022 at 20:24)
 * [Beginner questions](topic/topic_Beginner.20questions.html) (16 messages, latest: Nov 05 2022 at 13:48)
@@ -778,4 +779,4 @@ permalink: /stream/229199-learning:-questions/index.html
 * [Algebra (Aluffi) exercises](topic/topic_Algebra.20(Aluffi).20exercises.html) (55 messages, latest: Mar 27 2020 at 23:38)
 * [What is category theory about?](topic/topic_What.20is.20category.20theory.20about.3F.html) (16 messages, latest: Mar 26 2020 at 16:03)
 
-<hr><p>Last updated: Nov 08 2022 at 00:57 UTC</p>
+<hr><p>Last updated: Nov 09 2022 at 00:56 UTC</p>
