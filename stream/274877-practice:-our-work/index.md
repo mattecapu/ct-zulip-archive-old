@@ -9,6 +9,7 @@ permalink: /stream/274877-practice:-our-work/index.html
 
 ### Topics:
 
+* [Sam Staton](topic/topic_Sam.20Staton.html) (2 messages, latest: Nov 09 2022 at 10:11)
 * [Morgan Rogers](topic/topic_Morgan.20Rogers.html) (38 messages, latest: Nov 08 2022 at 19:57)
 * [Ivan Di Liberti](topic/topic_Ivan.20Di.20Liberti.html) (18 messages, latest: Nov 08 2022 at 18:21)
 * [John Baez](topic/topic_John.20Baez.html) (854 messages, latest: Nov 06 2022 at 17:35)
@@ -44,4 +45,4 @@ permalink: /stream/274877-practice:-our-work/index.html
 * [Conor Mc Bride](topic/topic_Conor.20Mc.20Bride.html) (60 messages, latest: Apr 08 2021 at 15:15)
 * [thoughts on sharing ideas](topic/topic_thoughts.20on.20sharing.20ideas.html) (20 messages, latest: Jan 31 2021 at 03:05)
 
-<hr><p>Last updated: Nov 09 2022 at 00:56 UTC</p>
+<hr><p>Last updated: Nov 10 2022 at 00:58 UTC</p>

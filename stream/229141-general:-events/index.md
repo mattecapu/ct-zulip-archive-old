@@ -9,7 +9,7 @@ permalink: /stream/229141-general:-events/index.html
 
 ### Topics:
 
-* [Logic in Computer Science conference](topic/topic_Logic.20in.20Computer.20Science.20conference.html) (4 messages, latest: Nov 07 2022 at 20:23)
+* [Logic in Computer Science conference](topic/topic_Logic.20in.20Computer.20Science.20conference.html) (9 messages, latest: Nov 09 2022 at 16:35)
 * [Virtual Double Categories Workshop](topic/topic_Virtual.20Double.20Categories.20Workshop.html) (4 messages, latest: Nov 02 2022 at 13:04)
 * [This Week's Finds seminar](topic/topic_This.20Week's.20Finds.20seminar.html) (98 messages, latest: Oct 31 2022 at 11:20)
 * [New Developments in Tensor Networks and Quantum Computation](topic/topic_New.20Developments.20in.20Tensor.20Networks.20and.20Quantum.20Computation.html) (1 message, latest: Oct 29 2022 at 10:50)
@@ -157,4 +157,4 @@ permalink: /stream/229141-general:-events/index.html
 * [April 1st: ACT@UCR](topic/topic_April.201st.3A.20ACT.40UCR.html) (3 messages, latest: Mar 26 2020 at 23:58)
 * [Google Sites problem](topic/topic_Google.20Sites.20problem.html) (4 messages, latest: Mar 25 2020 at 04:29)
 
-<hr><p>Last updated: Nov 09 2022 at 00:56 UTC</p>
+<hr><p>Last updated: Nov 10 2022 at 00:58 UTC</p>
