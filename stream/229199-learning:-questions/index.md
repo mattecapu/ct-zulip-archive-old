@@ -9,8 +9,10 @@ permalink: /stream/229199-learning:-questions/index.html
 
 ### Topics:
 
-* [Closed discrete fibration?](topic/topic_Closed.20discrete.20fibration.3F.html) (3 messages, latest: Nov 09 2022 at 22:27)
-* [Graded bicategory](topic/topic_Graded.20bicategory.html) (2 messages, latest: Nov 09 2022 at 22:11)
+* [dynamical system](topic/topic_dynamical.20system.html) (6 messages, latest: Nov 10 2022 at 22:05)
+* [Grassmann as a precursor of CT](topic/topic_Grassmann.20as.20a.20precursor.20of.20CT.html) (4 messages, latest: Nov 10 2022 at 15:28)
+* [Closed discrete fibration?](topic/topic_Closed.20discrete.20fibration.3F.html) (6 messages, latest: Nov 10 2022 at 15:25)
+* [Graded bicategory](topic/topic_Graded.20bicategory.html) (3 messages, latest: Nov 10 2022 at 10:29)
 * [Understanding Yoneda lemma](topic/topic_Understanding.20Yoneda.20lemma.html) (13 messages, latest: Nov 09 2022 at 17:23)
 * [evolutionary game](topic/topic_evolutionary.20game.html) (10 messages, latest: Nov 08 2022 at 00:22)
 * [HoTT and philosophy](topic/topic_HoTT.20and.20philosophy.html) (32 messages, latest: Nov 07 2022 at 20:24)
@@ -781,4 +783,4 @@ permalink: /stream/229199-learning:-questions/index.html
 * [Algebra (Aluffi) exercises](topic/topic_Algebra.20(Aluffi).20exercises.html) (55 messages, latest: Mar 27 2020 at 23:38)
 * [What is category theory about?](topic/topic_What.20is.20category.20theory.20about.3F.html) (16 messages, latest: Mar 26 2020 at 16:03)
 
-<hr><p>Last updated: Nov 10 2022 at 00:58 UTC</p>
+<hr><p>Last updated: Nov 11 2022 at 00:59 UTC</p>

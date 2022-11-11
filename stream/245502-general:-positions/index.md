@@ -9,6 +9,8 @@ permalink: /stream/245502-general:-positions/index.html
 
 ### Topics:
 
+* [Topos Institute summer research positions](topic/topic_Topos.20Institute.20summer.20research.20positions.html) (9 messages, latest: Nov 10 2022 at 20:05)
+* [Kleisli Databases](topic/topic_Kleisli.20Databases.html) (1 message, latest: Nov 10 2022 at 16:03)
 * [Probabilistic compilation as functor](topic/topic_Probabilistic.20compilation.20as.20functor.html) (2 messages, latest: Nov 07 2022 at 22:24)
 * [Faculty positions at Case Western Reserve](topic/topic_Faculty.20positions.20at.20Case.20Western.20Reserve.html) (1 message, latest: Nov 07 2022 at 14:20)
 * [Applying for Master's/PhD in Categories/Algebraic Topology](topic/topic_Applying.20for.20Master's.2FPhD.20in.20Categories.2FAlgebraic.20Topology.html) (1 message, latest: Oct 20 2022 at 10:57)
@@ -28,7 +30,6 @@ permalink: /stream/245502-general:-positions/index.html
 * [people who have gotten jobs](topic/topic_people.20who.20have.20gotten.20jobs.html) (75 messages, latest: Mar 31 2022 at 15:28)
 * [Infrabayesianism](topic/topic_Infrabayesianism.html) (1 message, latest: Mar 24 2022 at 08:08)
 * [Silvermint](topic/topic_Silvermint.html) (8 messages, latest: Mar 17 2022 at 16:10)
-* [Topos Institute summer research positions](topic/topic_Topos.20Institute.20summer.20research.20positions.html) (8 messages, latest: Mar 05 2022 at 17:30)
 * [Topos Institute is hiring](topic/topic_Topos.20Institute.20is.20hiring.html) (5 messages, latest: Feb 24 2022 at 17:11)
 * [two postdocs in Marseille and Paris](topic/topic_two.20postdocs.20in.20Marseille.20and.20Paris.html) (1 message, latest: Feb 24 2022 at 15:56)
 * [Looking for a partner to join Cavenwell Industrial AI](topic/topic_Looking.20for.20a.20partner.20to.20join.20Cavenwell.20Industrial.20AI.html) (1 message, latest: Jan 15 2022 at 04:22)
@@ -69,4 +70,4 @@ permalink: /stream/245502-general:-positions/index.html
 * [PhD positions in Estonia](topic/topic_PhD.20positions.20in.20Estonia.html) (1 message, latest: Jun 27 2020 at 18:04)
 * [Companies that hire category people](topic/topic_Companies.20that.20hire.20category.20people.html) (2 messages, latest: May 13 2020 at 03:50)
 
-<hr><p>Last updated: Nov 10 2022 at 00:58 UTC</p>
+<hr><p>Last updated: Nov 11 2022 at 00:59 UTC</p>

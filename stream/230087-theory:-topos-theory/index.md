@@ -9,6 +9,7 @@ permalink: /stream/230087-theory:-topos-theory/index.html
 
 ### Topics:
 
+* [Monoidal topos](topic/topic_Monoidal.20topos.html) (6 messages, latest: Nov 10 2022 at 19:00)
 * [Factorization system on points](topic/topic_Factorization.20system.20on.20points.html) (21 messages, latest: Nov 06 2022 at 16:22)
 * [pullback stability with enough points](topic/topic_pullback.20stability.20with.20enough.20points.html) (11 messages, latest: Jun 07 2022 at 11:52)
 * [stacks and other things](topic/topic_stacks.20and.20other.20things.html) (21 messages, latest: May 27 2022 at 15:29)
@@ -88,4 +89,4 @@ permalink: /stream/230087-theory:-topos-theory/index.html
 * [right adjoint to inclusion of sheaves?](topic/topic_right.20adjoint.20to.20inclusion.20of.20sheaves.3F.html) (18 messages, latest: Mar 30 2020 at 09:37)
 * [essential geometric morphism](topic/topic_essential.20geometric.20morphism.html) (2 messages, latest: Mar 27 2020 at 18:56)
 
-<hr><p>Last updated: Nov 10 2022 at 00:58 UTC</p>
+<hr><p>Last updated: Nov 11 2022 at 00:59 UTC</p>

@@ -9,7 +9,7 @@ permalink: /stream/347879-workshop:-Categories-for-AI/index.html
 
 ### Topics:
 
-* [Guest Lecture 1: Neural network layers as parametric spans](topic/topic_Guest.20Lecture.201.3A.20Neural.20network.20layers.20as.20parametric.20spans.html) (1 message, latest: Nov 09 2022 at 16:41)
+* [Guest Lecture 1: Neural network layers as parametric spans](topic/topic_Guest.20Lecture.201.3A.20Neural.20network.20layers.20as.20parametric.20spans.html) (2 messages, latest: Nov 10 2022 at 14:58)
 * [Week 5: Monads](topic/topic_Week.205.3A.20Monads.html) (16 messages, latest: Nov 09 2022 at 12:26)
 * [multigraphs](topic/topic_multigraphs.html) (3 messages, latest: Nov 09 2022 at 11:50)
 * [The simple essence of automatic differentiation](topic/topic_The.20simple.20essence.20of.20automatic.20differentiation.html) (15 messages, latest: Nov 06 2022 at 19:44)
@@ -23,4 +23,4 @@ permalink: /stream/347879-workshop:-Categories-for-AI/index.html
 * [Welcome!](topic/topic_Welcome!.html) (1 message, latest: Oct 04 2022 at 21:01)
 * [stream events](topic/topic_stream.20events.html) (1 message, latest: Oct 03 2022 at 17:49)
 
-<hr><p>Last updated: Nov 10 2022 at 00:58 UTC</p>
+<hr><p>Last updated: Nov 11 2022 at 00:59 UTC</p>

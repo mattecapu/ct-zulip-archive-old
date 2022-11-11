@@ -8,7 +8,7 @@ permalink: /index.html
 
 ## Streams:
 
-* [learning: questions](stream/229199-learning:-questions/index.html) (771 topics)
+* [learning: questions](stream/229199-learning:-questions/index.html) (773 topics)
 
 * [theory: category theory](stream/229136-theory:-category-theory/index.html) (327 topics)
 
@@ -18,7 +18,7 @@ permalink: /index.html
 
 * [practice: applied ct](stream/229156-practice:-applied-ct/index.html) (138 topics)
 
-* [theory: topos theory](stream/230087-theory:-topos-theory/index.html) (78 topics)
+* [theory: topos theory](stream/230087-theory:-topos-theory/index.html) (79 topics)
 
 * [seminar: Topos Colloquium](stream/269484-seminar:-Topos-Colloquium/index.html) (64 topics)
 
@@ -28,13 +28,13 @@ permalink: /index.html
 
 * [ACT 2020](stream/243068-ACT-2020/index.html) (61 topics)
 
-* [general: positions](stream/245502-general:-positions/index.html) (59 topics)
+* [general: positions](stream/245502-general:-positions/index.html) (60 topics)
 
 * [general: mathematics](stream/266967-general:-mathematics/index.html) (58 topics)
 
-* [practice: thermodynamics](stream/306433-practice:-thermodynamics/index.html) (53 topics)
+* [theory: logic](stream/233104-theory:-logic/index.html) (54 topics)
 
-* [theory: logic](stream/233104-theory:-logic/index.html) (53 topics)
+* [practice: thermodynamics](stream/306433-practice:-thermodynamics/index.html) (53 topics)
 
 * [practice: our papers](stream/258900-practice:-our-papers/index.html) (51 topics)
 
@@ -56,7 +56,7 @@ permalink: /index.html
 
 * [learning: history of ideas](stream/232163-learning:-history-of-ideas/index.html) (27 topics)
 
-* [practice: software](stream/229125-practice:-software/index.html) (24 topics)
+* [practice: software](stream/229125-practice:-software/index.html) (25 topics)
 
 * [practice: Dialectica](stream/323208-practice:-Dialectica/index.html) (23 topics)
 
@@ -126,6 +126,8 @@ permalink: /index.html
 
 * [general: terminology](stream/348484-general:-terminology/index.html) (4 topics)
 
+* [general: terminology & notation](stream/348484-general:-terminology-&-notation/index.html) (4 topics)
+
 * [languages: espanol/Spanish](stream/231120-languages:-espanol/Spanish/index.html) (4 topics)
 
 * [practice: neuroscience](stream/233925-practice:-neuroscience/index.html) (4 topics)
@@ -178,4 +180,4 @@ permalink: /index.html
 
 * [theory: alternate presentations](stream/233122-theory:-alternate-presentations/index.html) (1 topic)
 
-<hr><p>Last updated: Nov 10 2022 at 00:58 UTC</p>
+<hr><p>Last updated: Nov 11 2022 at 00:59 UTC</p>

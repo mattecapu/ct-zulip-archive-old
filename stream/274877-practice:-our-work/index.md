@@ -9,6 +9,7 @@ permalink: /stream/274877-practice:-our-work/index.html
 
 ### Topics:
 
+* [Ralph Sarkis](topic/topic_Ralph.20Sarkis.html) (28 messages, latest: Nov 10 2022 at 13:44)
 * [Sam Staton](topic/topic_Sam.20Staton.html) (2 messages, latest: Nov 09 2022 at 10:11)
 * [Morgan Rogers](topic/topic_Morgan.20Rogers.html) (38 messages, latest: Nov 08 2022 at 19:57)
 * [Ivan Di Liberti](topic/topic_Ivan.20Di.20Liberti.html) (18 messages, latest: Nov 08 2022 at 18:21)
@@ -30,7 +31,6 @@ permalink: /stream/274877-practice:-our-work/index.html
 * [MonoidMusician (Verity S.)](topic/topic_MonoidMusician.20(Verity.20S.2E).html) (11 messages, latest: Aug 01 2022 at 16:17)
 * [motives](topic/topic_motives.html) (25 messages, latest: Jun 08 2022 at 17:35)
 * [Mike Shulman](topic/topic_Mike.20Shulman.html) (139 messages, latest: May 11 2022 at 04:17)
-* [Ralph Sarkis](topic/topic_Ralph.20Sarkis.html) (27 messages, latest: May 10 2022 at 20:42)
 * [stream events](topic/topic_stream.20events.html) (7 messages, latest: May 09 2022 at 21:14)
 * [Jon Sterling](topic/topic_Jon.20Sterling.html) (27 messages, latest: May 08 2022 at 21:43)
 * [posina](topic/topic_posina.html) (1 message, latest: Feb 28 2022 at 21:20)
@@ -45,4 +45,4 @@ permalink: /stream/274877-practice:-our-work/index.html
 * [Conor Mc Bride](topic/topic_Conor.20Mc.20Bride.html) (60 messages, latest: Apr 08 2021 at 15:15)
 * [thoughts on sharing ideas](topic/topic_thoughts.20on.20sharing.20ideas.html) (20 messages, latest: Jan 31 2021 at 03:05)
 
-<hr><p>Last updated: Nov 10 2022 at 00:58 UTC</p>
+<hr><p>Last updated: Nov 11 2022 at 00:59 UTC</p>

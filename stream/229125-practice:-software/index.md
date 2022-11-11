@@ -9,6 +9,7 @@ permalink: /stream/229125-practice:-software/index.html
 
 ### Topics:
 
+* [A tool for learning TikZ](topic/topic_A.20tool.20for.20learning.20TikZ.html) (1 message, latest: Nov 10 2022 at 05:40)
 * [Automated proving?](topic/topic_Automated.20proving.3F.html) (13 messages, latest: Nov 04 2022 at 12:24)
 * [✔ limits latex](topic/topic_.E2.9C.94.20limits.20latex.html) (3 messages, latest: Feb 28 2022 at 14:49)
 * [limits latex](topic/topic_limits.20latex.html) (1 message, latest: Feb 27 2022 at 21:36)
@@ -34,4 +35,4 @@ permalink: /stream/229125-practice:-software/index.html
 * [Introduction](topic/topic_Introduction.html) (8 messages, latest: Mar 24 2020 at 17:58)
 * [idris-ct](topic/topic_idris-ct.html) (1 message, latest: Mar 24 2020 at 13:24)
 
-<hr><p>Last updated: Nov 10 2022 at 00:58 UTC</p>
+<hr><p>Last updated: Nov 11 2022 at 00:59 UTC</p>
