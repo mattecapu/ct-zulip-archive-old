@@ -9,12 +9,12 @@ permalink: /stream/274877-practice:-our-work/index.html
 
 ### Topics:
 
+* [Christian Williams](topic/topic_Christian.20Williams.html) (354 messages, latest: Nov 12 2022 at 00:28)
+* [John Baez](topic/topic_John.20Baez.html) (856 messages, latest: Nov 11 2022 at 16:07)
 * [Ralph Sarkis](topic/topic_Ralph.20Sarkis.html) (28 messages, latest: Nov 10 2022 at 13:44)
 * [Sam Staton](topic/topic_Sam.20Staton.html) (2 messages, latest: Nov 09 2022 at 10:11)
 * [Morgan Rogers](topic/topic_Morgan.20Rogers.html) (38 messages, latest: Nov 08 2022 at 19:57)
 * [Ivan Di Liberti](topic/topic_Ivan.20Di.20Liberti.html) (18 messages, latest: Nov 08 2022 at 18:21)
-* [John Baez](topic/topic_John.20Baez.html) (854 messages, latest: Nov 06 2022 at 17:35)
-* [Christian Williams](topic/topic_Christian.20Williams.html) (319 messages, latest: Nov 04 2022 at 17:45)
 * [Steve Huntsman](topic/topic_Steve.20Huntsman.html) (1 message, latest: Nov 03 2022 at 18:39)
 * [Jean-Baptiste Vienney](topic/topic_Jean-Baptiste.20Vienney.html) (27 messages, latest: Nov 02 2022 at 20:15)
 * [Combinatorial species and dynamics](topic/topic_Combinatorial.20species.20and.20dynamics.html) (6 messages, latest: Nov 02 2022 at 07:05)
@@ -45,4 +45,4 @@ permalink: /stream/274877-practice:-our-work/index.html
 * [Conor Mc Bride](topic/topic_Conor.20Mc.20Bride.html) (60 messages, latest: Apr 08 2021 at 15:15)
 * [thoughts on sharing ideas](topic/topic_thoughts.20on.20sharing.20ideas.html) (20 messages, latest: Jan 31 2021 at 03:05)
 
-<hr><p>Last updated: Nov 11 2022 at 00:59 UTC</p>
+<hr><p>Last updated: Nov 12 2022 at 00:57 UTC</p>

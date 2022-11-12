@@ -9,7 +9,7 @@ permalink: /stream/233104-theory:-logic/index.html
 
 ### Topics:
 
-* [Framework for expressing categorical doctrines and logics](topic/topic_Framework.20for.20expressing.20categorical.20doctrines.20and.20logics.html) (6 messages, latest: Nov 10 2022 at 19:19)
+* [Framework for expressing categorical doctrines and logics](topic/topic_Framework.20for.20expressing.20categorical.20doctrines.20and.20logics.html) (8 messages, latest: Nov 11 2022 at 21:04)
 * [linear version of Yoneda?](topic/topic_linear.20version.20of.20Yoneda.3F.html) (13 messages, latest: Nov 08 2022 at 16:12)
 * [Dependent universes?](topic/topic_Dependent.20universes.3F.html) (9 messages, latest: Oct 30 2022 at 17:20)
 * [proofs of cut-elimination theorem](topic/topic_proofs.20of.20cut-elimination.20theorem.html) (19 messages, latest: Oct 15 2022 at 13:53)
@@ -64,4 +64,4 @@ permalink: /stream/233104-theory:-logic/index.html
 * [Probability as logic](topic/topic_Probability.20as.20logic.html) (63 messages, latest: Apr 15 2020 at 12:33)
 * [stream events](topic/topic_stream.20events.html) (1 message, latest: Apr 10 2020 at 12:32)
 
-<hr><p>Last updated: Nov 11 2022 at 00:59 UTC</p>
+<hr><p>Last updated: Nov 12 2022 at 00:57 UTC</p>

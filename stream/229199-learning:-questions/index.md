@@ -9,7 +9,7 @@ permalink: /stream/229199-learning:-questions/index.html
 
 ### Topics:
 
-* [dynamical system](topic/topic_dynamical.20system.html) (6 messages, latest: Nov 10 2022 at 22:05)
+* [dynamical system](topic/topic_dynamical.20system.html) (8 messages, latest: Nov 11 2022 at 04:55)
 * [Grassmann as a precursor of CT](topic/topic_Grassmann.20as.20a.20precursor.20of.20CT.html) (4 messages, latest: Nov 10 2022 at 15:28)
 * [Closed discrete fibration?](topic/topic_Closed.20discrete.20fibration.3F.html) (6 messages, latest: Nov 10 2022 at 15:25)
 * [Graded bicategory](topic/topic_Graded.20bicategory.html) (3 messages, latest: Nov 10 2022 at 10:29)
@@ -783,4 +783,4 @@ permalink: /stream/229199-learning:-questions/index.html
 * [Algebra (Aluffi) exercises](topic/topic_Algebra.20(Aluffi).20exercises.html) (55 messages, latest: Mar 27 2020 at 23:38)
 * [What is category theory about?](topic/topic_What.20is.20category.20theory.20about.3F.html) (16 messages, latest: Mar 26 2020 at 16:03)
 
-<hr><p>Last updated: Nov 11 2022 at 00:59 UTC</p>
+<hr><p>Last updated: Nov 12 2022 at 00:57 UTC</p>
