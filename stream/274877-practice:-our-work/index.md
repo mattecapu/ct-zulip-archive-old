@@ -9,7 +9,7 @@ permalink: /stream/274877-practice:-our-work/index.html
 
 ### Topics:
 
-* [John Baez](topic/topic_John.20Baez.html) (858 messages, latest: Nov 14 2022 at 11:58)
+* [John Baez](topic/topic_John.20Baez.html) (859 messages, latest: Nov 15 2022 at 06:15)
 * [Christian Williams](topic/topic_Christian.20Williams.html) (367 messages, latest: Nov 12 2022 at 19:24)
 * [Ralph Sarkis](topic/topic_Ralph.20Sarkis.html) (28 messages, latest: Nov 10 2022 at 13:44)
 * [Sam Staton](topic/topic_Sam.20Staton.html) (2 messages, latest: Nov 09 2022 at 10:11)
@@ -45,4 +45,4 @@ permalink: /stream/274877-practice:-our-work/index.html
 * [Conor Mc Bride](topic/topic_Conor.20Mc.20Bride.html) (60 messages, latest: Apr 08 2021 at 15:15)
 * [thoughts on sharing ideas](topic/topic_thoughts.20on.20sharing.20ideas.html) (20 messages, latest: Jan 31 2021 at 03:05)
 
-<hr><p>Last updated: Nov 15 2022 at 00:55 UTC</p>
+<hr><p>Last updated: Nov 16 2022 at 00:53 UTC</p>
