@@ -9,6 +9,7 @@ permalink: /stream/347879-workshop:-Categories-for-AI/index.html
 
 ### Topics:
 
+* [Cats4AI Feedback Form](topic/topic_Cats4AI.20Feedback.20Form.html) (1 message, latest: Nov 16 2022 at 15:38)
 * [Guest Lecture 1: Neural network layers as parametric spans](topic/topic_Guest.20Lecture.201.3A.20Neural.20network.20layers.20as.20parametric.20spans.html) (7 messages, latest: Nov 14 2022 at 17:05)
 * [Week 5: Monads](topic/topic_Week.205.3A.20Monads.html) (16 messages, latest: Nov 09 2022 at 12:26)
 * [multigraphs](topic/topic_multigraphs.html) (3 messages, latest: Nov 09 2022 at 11:50)
@@ -23,4 +24,4 @@ permalink: /stream/347879-workshop:-Categories-for-AI/index.html
 * [Welcome!](topic/topic_Welcome!.html) (1 message, latest: Oct 04 2022 at 21:01)
 * [stream events](topic/topic_stream.20events.html) (1 message, latest: Oct 03 2022 at 17:49)
 
-<hr><p>Last updated: Nov 16 2022 at 00:53 UTC</p>
+<hr><p>Last updated: Nov 17 2022 at 00:52 UTC</p>

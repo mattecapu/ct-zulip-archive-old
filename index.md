@@ -50,9 +50,9 @@ permalink: /index.html
 
 * [theory: probability](stream/253118-theory:-probability/index.html) (32 topics)
 
-* [learning: recommendations](stream/232161-learning:-recommendations/index.html) (29 topics)
+* [general: values](stream/241990-general:-values/index.html) (30 topics)
 
-* [general: values](stream/241990-general:-values/index.html) (28 topics)
+* [learning: recommendations](stream/232161-learning:-recommendations/index.html) (29 topics)
 
 * [learning: history of ideas](stream/232163-learning:-history-of-ideas/index.html) (27 topics)
 
@@ -84,9 +84,9 @@ permalink: /index.html
 
 * [working: discrete geometry and entanglement](stream/266854-working:-discrete-geometry-and-entanglement/index.html) (14 topics)
 
-* [general: co/appreciation](stream/271602-general:-co/appreciation/index.html) (13 topics)
+* [workshop: Categories for AI](stream/347879-workshop:-Categories-for-AI/index.html) (14 topics)
 
-* [workshop: Categories for AI](stream/347879-workshop:-Categories-for-AI/index.html) (13 topics)
+* [general: co/appreciation](stream/271602-general:-co/appreciation/index.html) (13 topics)
 
 * [learning: reading groups](stream/232160-learning:-reading-groups/index.html) (12 topics)
 
@@ -106,11 +106,11 @@ permalink: /index.html
 
 * [theory: monoids](stream/231815-theory:-monoids/index.html) (8 topics)
 
+* [learning: id my structure](stream/311521-learning:-id-my-structure/index.html) (7 topics)
+
 * [learning: statistics reading group](stream/245528-learning:-statistics-reading-group/index.html) (7 topics)
 
 * [seminar: EM-cats](stream/298571-seminar:-EM-cats/index.html) (7 topics)
-
-* [learning: id my structure](stream/311521-learning:-id-my-structure/index.html) (6 topics)
 
 * [semiotics and semiosis](stream/229179-semiotics-and-semiosis/index.html) (6 topics)
 
@@ -180,4 +180,4 @@ permalink: /index.html
 
 * [theory: alternate presentations](stream/233122-theory:-alternate-presentations/index.html) (1 topic)
 
-<hr><p>Last updated: Nov 16 2022 at 00:53 UTC</p>
+<hr><p>Last updated: Nov 17 2022 at 00:52 UTC</p>
