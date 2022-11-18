@@ -9,6 +9,7 @@ permalink: /stream/229136-theory:-category-theory/index.html
 
 ### Topics:
 
+* ["Flow" to presheaf categories](topic/topic_.22Flow.22.20to.20presheaf.20categories.html) (7 messages, latest: Nov 17 2022 at 06:50)
 * [Dependent external tensor product](topic/topic_Dependent.20external.20tensor.20product.html) (21 messages, latest: Nov 08 2022 at 18:21)
 * [Left leg is fibration, right leg is opfibration](topic/topic_Left.20leg.20is.20fibration.2C.20right.20leg.20is.20opfibration.html) (2 messages, latest: Nov 08 2022 at 18:18)
 * [left leg is fibration, right leg is opfibration](topic/topic_left.20leg.20is.20fibration.2C.20right.20leg.20is.20opfibration.html) (10 messages, latest: Nov 08 2022 at 12:01)
@@ -337,4 +338,4 @@ permalink: /stream/229136-theory:-category-theory/index.html
 * [diagrams for application](topic/topic_diagrams.20for.20application.html) (13 messages, latest: Mar 24 2020 at 06:19)
 * [universal constructions](topic/topic_universal.20constructions.html) (8 messages, latest: Mar 23 2020 at 21:06)
 
-<hr><p>Last updated: Nov 17 2022 at 00:52 UTC</p>
+<hr><p>Last updated: Nov 18 2022 at 00:57 UTC</p>
