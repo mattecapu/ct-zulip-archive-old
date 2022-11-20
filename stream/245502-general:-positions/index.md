@@ -9,7 +9,7 @@ permalink: /stream/245502-general:-positions/index.html
 
 ### Topics:
 
-* [Topos Institute summer research positions](topic/topic_Topos.20Institute.20summer.20research.20positions.html) (12 messages, latest: Nov 11 2022 at 21:20)
+* [Topos Institute summer research positions](topic/topic_Topos.20Institute.20summer.20research.20positions.html) (15 messages, latest: Nov 19 2022 at 15:48)
 * [Kleisli Databases](topic/topic_Kleisli.20Databases.html) (1 message, latest: Nov 10 2022 at 16:03)
 * [Probabilistic compilation as functor](topic/topic_Probabilistic.20compilation.20as.20functor.html) (2 messages, latest: Nov 07 2022 at 22:24)
 * [Faculty positions at Case Western Reserve](topic/topic_Faculty.20positions.20at.20Case.20Western.20Reserve.html) (1 message, latest: Nov 07 2022 at 14:20)
@@ -70,4 +70,4 @@ permalink: /stream/245502-general:-positions/index.html
 * [PhD positions in Estonia](topic/topic_PhD.20positions.20in.20Estonia.html) (1 message, latest: Jun 27 2020 at 18:04)
 * [Companies that hire category people](topic/topic_Companies.20that.20hire.20category.20people.html) (2 messages, latest: May 13 2020 at 03:50)
 
-<hr><p>Last updated: Nov 19 2022 at 00:55 UTC</p>
+<hr><p>Last updated: Nov 20 2022 at 00:56 UTC</p>
