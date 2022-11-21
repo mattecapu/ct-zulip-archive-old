@@ -9,6 +9,7 @@ permalink: /stream/229199-learning:-questions/index.html
 
 ### Topics:
 
+* [Monads whose algebras are / give rise to monads](topic/topic_Monads.20whose.20algebras.20are.20.2F.20give.20rise.20to.20monads.html) (1 message, latest: Nov 21 2022 at 00:46)
 * [dynamical system](topic/topic_dynamical.20system.html) (10 messages, latest: Nov 18 2022 at 09:36)
 * [Initial algebras as heteromorphisms](topic/topic_Initial.20algebras.20as.20heteromorphisms.html) (11 messages, latest: Nov 15 2022 at 06:20)
 * [Grassmann as a precursor of CT](topic/topic_Grassmann.20as.20a.20precursor.20of.20CT.html) (4 messages, latest: Nov 10 2022 at 15:28)
@@ -784,4 +785,4 @@ permalink: /stream/229199-learning:-questions/index.html
 * [Algebra (Aluffi) exercises](topic/topic_Algebra.20(Aluffi).20exercises.html) (55 messages, latest: Mar 27 2020 at 23:38)
 * [What is category theory about?](topic/topic_What.20is.20category.20theory.20about.3F.html) (16 messages, latest: Mar 26 2020 at 16:03)
 
-<hr><p>Last updated: Nov 20 2022 at 00:56 UTC</p>
+<hr><p>Last updated: Nov 21 2022 at 00:54 UTC</p>
