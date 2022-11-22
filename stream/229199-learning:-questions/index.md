@@ -9,9 +9,10 @@ permalink: /stream/229199-learning:-questions/index.html
 
 ### Topics:
 
-* [Monads whose algebras are / give rise to monads](topic/topic_Monads.20whose.20algebras.20are.20.2F.20give.20rise.20to.20monads.html) (1 message, latest: Nov 21 2022 at 00:46)
+* [Initial algebras as heteromorphisms](topic/topic_Initial.20algebras.20as.20heteromorphisms.html) (12 messages, latest: Nov 22 2022 at 00:12)
+* [Grothendieck topologies](topic/topic_Grothendieck.20topologies.html) (31 messages, latest: Nov 21 2022 at 22:38)
+* [Monads whose algebras are / give rise to monads](topic/topic_Monads.20whose.20algebras.20are.20.2F.20give.20rise.20to.20monads.html) (7 messages, latest: Nov 21 2022 at 21:37)
 * [dynamical system](topic/topic_dynamical.20system.html) (10 messages, latest: Nov 18 2022 at 09:36)
-* [Initial algebras as heteromorphisms](topic/topic_Initial.20algebras.20as.20heteromorphisms.html) (11 messages, latest: Nov 15 2022 at 06:20)
 * [Grassmann as a precursor of CT](topic/topic_Grassmann.20as.20a.20precursor.20of.20CT.html) (4 messages, latest: Nov 10 2022 at 15:28)
 * [Closed discrete fibration?](topic/topic_Closed.20discrete.20fibration.3F.html) (6 messages, latest: Nov 10 2022 at 15:25)
 * [Graded bicategory](topic/topic_Graded.20bicategory.html) (3 messages, latest: Nov 10 2022 at 10:29)
@@ -105,7 +106,6 @@ permalink: /stream/229199-learning:-questions/index.html
 * [Comma Category Topos](topic/topic_Comma.20Category.20Topos.html) (1 message, latest: Jul 08 2022 at 22:29)
 * [Isbell duality](topic/topic_Isbell.20duality.html) (24 messages, latest: Jul 06 2022 at 19:12)
 * [Confusion on the Nature of Isomorphisms in HomSet](topic/topic_Confusion.20on.20the.20Nature.20of.20Isomorphisms.20in.20HomSet.html) (10 messages, latest: Jun 25 2022 at 21:55)
-* [Grothendieck topologies](topic/topic_Grothendieck.20topologies.html) (30 messages, latest: Jun 24 2022 at 23:41)
 * [finding an old paper of Gray](topic/topic_finding.20an.20old.20paper.20of.20Gray.html) (3 messages, latest: Jun 24 2022 at 19:04)
 * [weak/lax fibers of a functor](topic/topic_weak.2Flax.20fibers.20of.20a.20functor.html) (39 messages, latest: Jun 24 2022 at 16:39)
 * [f(x)=x, f'=0](topic/topic_f(x).3Dx.2C.20f'.3D0.html) (16 messages, latest: Jun 21 2022 at 14:19)
@@ -785,4 +785,4 @@ permalink: /stream/229199-learning:-questions/index.html
 * [Algebra (Aluffi) exercises](topic/topic_Algebra.20(Aluffi).20exercises.html) (55 messages, latest: Mar 27 2020 at 23:38)
 * [What is category theory about?](topic/topic_What.20is.20category.20theory.20about.3F.html) (16 messages, latest: Mar 26 2020 at 16:03)
 
-<hr><p>Last updated: Nov 21 2022 at 00:54 UTC</p>
+<hr><p>Last updated: Nov 22 2022 at 00:55 UTC</p>
