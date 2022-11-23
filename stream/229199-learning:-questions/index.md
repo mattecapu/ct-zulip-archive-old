@@ -9,8 +9,9 @@ permalink: /stream/229199-learning:-questions/index.html
 
 ### Topics:
 
-* [Initial algebras as heteromorphisms](topic/topic_Initial.20algebras.20as.20heteromorphisms.html) (12 messages, latest: Nov 22 2022 at 00:12)
-* [Grothendieck topologies](topic/topic_Grothendieck.20topologies.html) (31 messages, latest: Nov 21 2022 at 22:38)
+* [Finitary monadic functor](topic/topic_Finitary.20monadic.20functor.html) (3 messages, latest: Nov 22 2022 at 23:45)
+* [Initial algebras as heteromorphisms](topic/topic_Initial.20algebras.20as.20heteromorphisms.html) (17 messages, latest: Nov 22 2022 at 16:27)
+* [Grothendieck topologies](topic/topic_Grothendieck.20topologies.html) (33 messages, latest: Nov 22 2022 at 13:54)
 * [Monads whose algebras are / give rise to monads](topic/topic_Monads.20whose.20algebras.20are.20.2F.20give.20rise.20to.20monads.html) (7 messages, latest: Nov 21 2022 at 21:37)
 * [dynamical system](topic/topic_dynamical.20system.html) (10 messages, latest: Nov 18 2022 at 09:36)
 * [Grassmann as a precursor of CT](topic/topic_Grassmann.20as.20a.20precursor.20of.20CT.html) (4 messages, latest: Nov 10 2022 at 15:28)
@@ -785,4 +786,4 @@ permalink: /stream/229199-learning:-questions/index.html
 * [Algebra (Aluffi) exercises](topic/topic_Algebra.20(Aluffi).20exercises.html) (55 messages, latest: Mar 27 2020 at 23:38)
 * [What is category theory about?](topic/topic_What.20is.20category.20theory.20about.3F.html) (16 messages, latest: Mar 26 2020 at 16:03)
 
-<hr><p>Last updated: Nov 22 2022 at 00:55 UTC</p>
+<hr><p>Last updated: Nov 23 2022 at 00:46 UTC</p>

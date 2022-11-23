@@ -9,7 +9,7 @@ permalink: /stream/241990-general:-values/index.html
 
 ### Topics:
 
-* [open access](topic/topic_open.20access.html) (16 messages, latest: Nov 21 2022 at 10:23)
+* [open access](topic/topic_open.20access.html) (19 messages, latest: Nov 22 2022 at 19:38)
 * [Topos Institute and FTX](topic/topic_Topos.20Institute.20and.20FTX.html) (2 messages, latest: Nov 20 2022 at 10:13)
 * [Who is category theory for?](topic/topic_Who.20is.20category.20theory.20for.3F.html) (14 messages, latest: Nov 18 2022 at 13:18)
 * [The Responsibility of the Scientist Today](topic/topic_The.20Responsibility.20of.20the.20Scientist.20Today.html) (791 messages, latest: Nov 05 2022 at 01:04)
@@ -41,4 +41,4 @@ permalink: /stream/241990-general:-values/index.html
 * [stream events](topic/topic_stream.20events.html) (6 messages, latest: Jun 03 2020 at 19:22)
 * [ACT2020 tutorial day](topic/topic_ACT2020.20tutorial.20day.html) (1 message, latest: Jun 03 2020 at 18:38)
 
-<hr><p>Last updated: Nov 22 2022 at 00:55 UTC</p>
+<hr><p>Last updated: Nov 23 2022 at 00:46 UTC</p>

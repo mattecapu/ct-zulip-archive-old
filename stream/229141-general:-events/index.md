@@ -9,6 +9,7 @@ permalink: /stream/229141-general:-events/index.html
 
 ### Topics:
 
+* [SYCO 10, Edinburgh](topic/topic_SYCO.2010.2C.20Edinburgh.html) (3 messages, latest: Nov 22 2022 at 17:12)
 * [ItaCa Fest 2022](topic/topic_ItaCa.20Fest.202022.html) (13 messages, latest: Nov 18 2022 at 10:20)
 * [Logic in Computer Science conference](topic/topic_Logic.20in.20Computer.20Science.20conference.html) (51 messages, latest: Nov 17 2022 at 00:12)
 * [This Week's Finds seminar](topic/topic_This.20Week's.20Finds.20seminar.html) (113 messages, latest: Nov 14 2022 at 11:52)
@@ -17,7 +18,6 @@ permalink: /stream/229141-general:-events/index.html
 * [Bénabou Colloquium](topic/topic_B.C3.A9nabou.20Colloquium.html) (1 message, latest: Oct 27 2022 at 10:34)
 * [Octoberfest](topic/topic_Octoberfest.html) (5 messages, latest: Oct 24 2022 at 17:35)
 * [Compositional Structures for Systems Engineering and Design](topic/topic_Compositional.20Structures.20for.20Systems.20Engineering.20and.20Design.html) (1 message, latest: Oct 18 2022 at 17:50)
-* [SYCO 10, Edinburgh](topic/topic_SYCO.2010.2C.20Edinburgh.html) (2 messages, latest: Oct 13 2022 at 09:44)
 * [ACT 2023](topic/topic_ACT.202023.html) (21 messages, latest: Sep 26 2022 at 14:01)
 * [Thorsten Altenkirch 60 celebration](topic/topic_Thorsten.20Altenkirch.2060.20celebration.html) (2 messages, latest: Sep 08 2022 at 12:05)
 * [SYCO 9, Como](topic/topic_SYCO.209.2C.20Como.html) (35 messages, latest: Sep 08 2022 at 09:57)
@@ -157,4 +157,4 @@ permalink: /stream/229141-general:-events/index.html
 * [April 1st: ACT@UCR](topic/topic_April.201st.3A.20ACT.40UCR.html) (3 messages, latest: Mar 26 2020 at 23:58)
 * [Google Sites problem](topic/topic_Google.20Sites.20problem.html) (4 messages, latest: Mar 25 2020 at 04:29)
 
-<hr><p>Last updated: Nov 22 2022 at 00:55 UTC</p>
+<hr><p>Last updated: Nov 23 2022 at 00:46 UTC</p>

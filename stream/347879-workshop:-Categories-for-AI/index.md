@@ -9,7 +9,8 @@ permalink: /stream/347879-workshop:-Categories-for-AI/index.html
 
 ### Topics:
 
-* [Guest Lecture 2:Causal Model Abstraction & Grounding via Cat](topic/topic_Guest.20Lecture.202.3ACausal.20Model.20Abstraction.20.26.20Grounding.20via.20Cat.html) (6 messages, latest: Nov 21 2022 at 20:51)
+* [Guest Lecture 2:Causal Model Abstraction & Grounding via Cat](topic/topic_Guest.20Lecture.202.3ACausal.20Model.20Abstraction.20.26.20Grounding.20via.20Cat.html) (7 messages, latest: Nov 22 2022 at 18:24)
+* [Guest Lecture 3: NLP and Transformers with Category Theory](topic/topic_Guest.20Lecture.203.3A.20NLP.20and.20Transformers.20with.20Category.20Theory.html) (1 message, latest: Nov 22 2022 at 14:21)
 * [Cats4AI Feedback Form](topic/topic_Cats4AI.20Feedback.20Form.html) (1 message, latest: Nov 16 2022 at 15:38)
 * [Guest Lecture 1: Neural network layers as parametric spans](topic/topic_Guest.20Lecture.201.3A.20Neural.20network.20layers.20as.20parametric.20spans.html) (7 messages, latest: Nov 14 2022 at 17:05)
 * [Week 5: Monads](topic/topic_Week.205.3A.20Monads.html) (16 messages, latest: Nov 09 2022 at 12:26)
@@ -25,4 +26,4 @@ permalink: /stream/347879-workshop:-Categories-for-AI/index.html
 * [Welcome!](topic/topic_Welcome!.html) (1 message, latest: Oct 04 2022 at 21:01)
 * [stream events](topic/topic_stream.20events.html) (1 message, latest: Oct 03 2022 at 17:49)
 
-<hr><p>Last updated: Nov 22 2022 at 00:55 UTC</p>
+<hr><p>Last updated: Nov 23 2022 at 00:46 UTC</p>
