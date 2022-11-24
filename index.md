@@ -10,7 +10,7 @@ permalink: /index.html
 
 * [learning: questions](stream/229199-learning:-questions/index.html) (776 topics)
 
-* [theory: category theory](stream/229136-theory:-category-theory/index.html) (329 topics)
+* [theory: category theory](stream/229136-theory:-category-theory/index.html) (330 topics)
 
 * [general](stream/229111-general/index.html) (240 topics)
 
@@ -120,13 +120,13 @@ permalink: /index.html
 
 * [ACT@UMD seminar](stream/229967-ACT@UMD-seminar/index.html) (5 topics)
 
+* [general: terminology & notation](stream/348484-general:-terminology-&-notation/index.html) (5 topics)
+
 * [languages: Deutsch/German](stream/231144-languages:-Deutsch/German/index.html) (5 topics)
 
 * [languages: portugues](stream/303660-languages:-portugues/index.html) (5 topics)
 
 * [general: terminology](stream/348484-general:-terminology/index.html) (4 topics)
-
-* [general: terminology & notation](stream/348484-general:-terminology-&-notation/index.html) (4 topics)
 
 * [languages: espanol/Spanish](stream/231120-languages:-espanol/Spanish/index.html) (4 topics)
 
@@ -180,4 +180,4 @@ permalink: /index.html
 
 * [theory: alternate presentations](stream/233122-theory:-alternate-presentations/index.html) (1 topic)
 
-<hr><p>Last updated: Nov 23 2022 at 00:46 UTC</p>
+<hr><p>Last updated: Nov 24 2022 at 00:53 UTC</p>
