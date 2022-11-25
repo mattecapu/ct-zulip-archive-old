@@ -9,6 +9,7 @@ permalink: /stream/229136-theory:-category-theory/index.html
 
 ### Topics:
 
+* [stream events](topic/topic_stream.20events.html) (7 messages, latest: Nov 24 2022 at 18:58)
 * [Yoneda as a right extension?!](topic/topic_Yoneda.20as.20a.20right.20extension.3F!.html) (1 message, latest: Nov 23 2022 at 16:12)
 * [Pseudomonoidal fibrant double categories](topic/topic_Pseudomonoidal.20fibrant.20double.20categories.html) (3 messages, latest: Nov 21 2022 at 16:28)
 * ["Flow" to presheaf categories](topic/topic_.22Flow.22.20to.20presheaf.20categories.html) (8 messages, latest: Nov 18 2022 at 07:54)
@@ -327,7 +328,6 @@ permalink: /stream/229136-theory:-category-theory/index.html
 * [epi/mono/? classifiers](topic/topic_epi.2Fmono.2F.3F.20classifiers.html) (6 messages, latest: Apr 07 2020 at 07:27)
 * [Homotopy hypothesis](topic/topic_Homotopy.20hypothesis.html) (26 messages, latest: Apr 06 2020 at 15:35)
 * [Feel the Parametricity](topic/topic_Feel.20the.20Parametricity.html) (29 messages, latest: Apr 06 2020 at 14:35)
-* [stream events](topic/topic_stream.20events.html) (6 messages, latest: Apr 06 2020 at 05:32)
 * [code wtfs (WRONG TOPIC, GO TO THE ONE IN #OFF-TOPIC)](topic/topic_code.20wtfs.20(WRONG.20TOPIC.2C.20GO.20TO.20THE.20ONE.20IN.20.23OFF-TOPIC).html) (196 messages, latest: Apr 01 2020 at 02:47)
 * [only slightly higher topoi](topic/topic_only.20slightly.20higher.20topoi.html) (64 messages, latest: Mar 31 2020 at 00:26)
 * [enchilada categories](topic/topic_enchilada.20categories.html) (23 messages, latest: Mar 30 2020 at 14:59)
@@ -340,4 +340,4 @@ permalink: /stream/229136-theory:-category-theory/index.html
 * [diagrams for application](topic/topic_diagrams.20for.20application.html) (13 messages, latest: Mar 24 2020 at 06:19)
 * [universal constructions](topic/topic_universal.20constructions.html) (8 messages, latest: Mar 23 2020 at 21:06)
 
-<hr><p>Last updated: Nov 24 2022 at 00:53 UTC</p>
+<hr><p>Last updated: Nov 25 2022 at 00:48 UTC</p>

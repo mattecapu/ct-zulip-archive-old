@@ -9,8 +9,9 @@ permalink: /stream/274877-practice:-our-work/index.html
 
 ### Topics:
 
+* [John Baez](topic/topic_John.20Baez.html) (872 messages, latest: Nov 24 2022 at 14:16)
+* [Dusko Pavlovic](topic/topic_Dusko.20Pavlovic.html) (24 messages, latest: Nov 24 2022 at 14:00)
 * [Steve Huntsman](topic/topic_Steve.20Huntsman.html) (3 messages, latest: Nov 23 2022 at 14:10)
-* [John Baez](topic/topic_John.20Baez.html) (868 messages, latest: Nov 23 2022 at 01:18)
 * [Paolo Perrone](topic/topic_Paolo.20Perrone.html) (3 messages, latest: Nov 19 2022 at 18:02)
 * [Christian Williams](topic/topic_Christian.20Williams.html) (367 messages, latest: Nov 12 2022 at 19:24)
 * [Ralph Sarkis](topic/topic_Ralph.20Sarkis.html) (28 messages, latest: Nov 10 2022 at 13:44)
@@ -26,7 +27,6 @@ permalink: /stream/274877-practice:-our-work/index.html
 * [Matteo Capucci](topic/topic_Matteo.20Capucci.html) (23 messages, latest: Oct 17 2022 at 15:51)
 * [Lê Thành Dũng (Tito) Nguyễn](topic/topic_L.C3.AA.20Th.C3.A0nh.20D.C5.A9ng.20(Tito).20Nguy.E1.BB.85n.html) (3 messages, latest: Oct 07 2022 at 04:16)
 * [David Roberts](topic/topic_David.20Roberts.html) (54 messages, latest: Oct 05 2022 at 11:21)
-* [Dusko Pavlovic](topic/topic_Dusko.20Pavlovic.html) (22 messages, latest: Sep 30 2022 at 21:56)
 * [dusko: computable categories](topic/topic_dusko.3A.20computable.20categories.html) (3 messages, latest: Sep 15 2022 at 05:30)
 * [Jason Parker](topic/topic_Jason.20Parker.html) (2 messages, latest: Sep 13 2022 at 19:38)
 * [MonoidMusician (Verity S.)](topic/topic_MonoidMusician.20(Verity.20S.2E).html) (11 messages, latest: Aug 01 2022 at 16:17)
@@ -46,4 +46,4 @@ permalink: /stream/274877-practice:-our-work/index.html
 * [Conor Mc Bride](topic/topic_Conor.20Mc.20Bride.html) (60 messages, latest: Apr 08 2021 at 15:15)
 * [thoughts on sharing ideas](topic/topic_thoughts.20on.20sharing.20ideas.html) (20 messages, latest: Jan 31 2021 at 03:05)
 
-<hr><p>Last updated: Nov 24 2022 at 00:53 UTC</p>
+<hr><p>Last updated: Nov 25 2022 at 00:48 UTC</p>
