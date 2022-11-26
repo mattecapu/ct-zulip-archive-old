@@ -9,6 +9,8 @@ permalink: /stream/229199-learning:-questions/index.html
 
 ### Topics:
 
+* [Towards an understanding of pullbacks](topic/topic_Towards.20an.20understanding.20of.20pullbacks.html) (30 messages, latest: Nov 26 2022 at 00:27)
+* [Applying to the Adjoint School](topic/topic_Applying.20to.20the.20Adjoint.20School.html) (8 messages, latest: Nov 25 2022 at 19:29)
 * [pairwise relationships of three things](topic/topic_pairwise.20relationships.20of.20three.20things.html) (9 messages, latest: Nov 24 2022 at 19:02)
 * [Finitary monadic functor](topic/topic_Finitary.20monadic.20functor.html) (5 messages, latest: Nov 24 2022 at 14:09)
 * [Initial algebras as heteromorphisms](topic/topic_Initial.20algebras.20as.20heteromorphisms.html) (18 messages, latest: Nov 23 2022 at 08:58)
@@ -26,7 +28,6 @@ permalink: /stream/229199-learning:-questions/index.html
 * [Tensor product of convex spaces](topic/topic_Tensor.20product.20of.20convex.20spaces.html) (43 messages, latest: Nov 01 2022 at 18:26)
 * [Yoneda embedding of a cartesian closed category](topic/topic_Yoneda.20embedding.20of.20a.20cartesian.20closed.20category.html) (3 messages, latest: Nov 01 2022 at 17:35)
 * [beginner questions](topic/topic_beginner.20questions.html) (678 messages, latest: Nov 01 2022 at 00:18)
-* [Towards an understanding of pullbacks](topic/topic_Towards.20an.20understanding.20of.20pullbacks.html) (5 messages, latest: Oct 31 2022 at 23:00)
 * [Limits from products and equalizsers without choice](topic/topic_Limits.20from.20products.20and.20equalizsers.20without.20choice.html) (11 messages, latest: Oct 31 2022 at 16:48)
 * [Piecewise linear functions](topic/topic_Piecewise.20linear.20functions.html) (6 messages, latest: Oct 31 2022 at 08:26)
 * [Towards an Understanding of Pullbacks](topic/topic_Towards.20an.20Understanding.20of.20Pullbacks.html) (2 messages, latest: Oct 29 2022 at 19:57)
@@ -787,4 +788,4 @@ permalink: /stream/229199-learning:-questions/index.html
 * [Algebra (Aluffi) exercises](topic/topic_Algebra.20(Aluffi).20exercises.html) (55 messages, latest: Mar 27 2020 at 23:38)
 * [What is category theory about?](topic/topic_What.20is.20category.20theory.20about.3F.html) (16 messages, latest: Mar 26 2020 at 16:03)
 
-<hr><p>Last updated: Nov 25 2022 at 00:48 UTC</p>
+<hr><p>Last updated: Nov 26 2022 at 00:43 UTC</p>

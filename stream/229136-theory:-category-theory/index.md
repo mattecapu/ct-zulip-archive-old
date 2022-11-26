@@ -9,8 +9,8 @@ permalink: /stream/229136-theory:-category-theory/index.html
 
 ### Topics:
 
+* [Yoneda as a right extension?!](topic/topic_Yoneda.20as.20a.20right.20extension.3F!.html) (3 messages, latest: Nov 25 2022 at 15:10)
 * [stream events](topic/topic_stream.20events.html) (7 messages, latest: Nov 24 2022 at 18:58)
-* [Yoneda as a right extension?!](topic/topic_Yoneda.20as.20a.20right.20extension.3F!.html) (1 message, latest: Nov 23 2022 at 16:12)
 * [Pseudomonoidal fibrant double categories](topic/topic_Pseudomonoidal.20fibrant.20double.20categories.html) (3 messages, latest: Nov 21 2022 at 16:28)
 * ["Flow" to presheaf categories](topic/topic_.22Flow.22.20to.20presheaf.20categories.html) (8 messages, latest: Nov 18 2022 at 07:54)
 * [Dependent external tensor product](topic/topic_Dependent.20external.20tensor.20product.html) (21 messages, latest: Nov 08 2022 at 18:21)
@@ -340,4 +340,4 @@ permalink: /stream/229136-theory:-category-theory/index.html
 * [diagrams for application](topic/topic_diagrams.20for.20application.html) (13 messages, latest: Mar 24 2020 at 06:19)
 * [universal constructions](topic/topic_universal.20constructions.html) (8 messages, latest: Mar 23 2020 at 21:06)
 
-<hr><p>Last updated: Nov 25 2022 at 00:48 UTC</p>
+<hr><p>Last updated: Nov 26 2022 at 00:43 UTC</p>

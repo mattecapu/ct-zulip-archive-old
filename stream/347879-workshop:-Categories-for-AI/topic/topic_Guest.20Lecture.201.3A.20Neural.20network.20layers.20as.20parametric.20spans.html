@@ -66,6 +66,19 @@ The talk will be live-streamed to <a href="https://youtu.be/83a-MwlDy6s">https:/
 
 
 
+<a name="312199591"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/347879-workshop%3A%20Categories%20for%20AI/topic/Guest%20Lecture%201%3A%20Neural%20network%20layers%20as%20parametric%20spans/near/312199591" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Pietro Vertechi <a href="https://mattecapu.github.io/ct-zulip-archive/stream/347879-workshop:-Categories-for-AI/topic/topic_Guest.20Lecture.201.3A.20Neural.20network.20layers.20as.20parametric.20spans.html#312199591">(Nov 25 2022 at 14:29)</a>:</h4>
+<p><span class="user-mention" data-user-id="276875">@Bruno Gavranovic</span> ,  I'm a bit late to the party, but I realized that this can be a very helpful comparison (thinking of discrete parametric spans as a generalized Einstein summation). Many layers can be implemented that way (well, I'm not sure the second one is  accepted in <code>einsum</code>, but it's a useful notation)</p>
+<div class="codehilite" data-code-language="Python"><pre><span></span><code><span class="n">y</span><span class="p">[</span><span class="n">j</span><span class="p">]</span> <span class="o">+=</span> <span class="n">x</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">*</span> <span class="n">w</span><span class="p">[</span><span class="n">i</span><span class="p">,</span> <span class="n">j</span><span class="p">]</span> <span class="c1"># dense</span>
+<span class="n">y</span><span class="p">[</span><span class="n">j</span><span class="p">,</span> <span class="n">k</span><span class="p">]</span> <span class="o">+=</span> <span class="n">x</span><span class="p">[</span><span class="n">i</span><span class="p">,</span> <span class="n">k</span><span class="o">-</span><span class="n">l</span><span class="p">]</span> <span class="o">*</span> <span class="n">w</span><span class="p">[</span><span class="n">i</span><span class="p">,</span> <span class="n">j</span><span class="p">,</span> <span class="n">l</span><span class="p">]</span> <span class="c1"># convolutional</span>
+</code></pre></div>
+<p>The general discrete parametric span is of the form</p>
+<div class="codehilite" data-code-language="Python"><pre><span></span><code><span class="n">y</span><span class="p">[</span><span class="n">t</span><span class="p">(</span><span class="n">p</span><span class="p">)]</span> <span class="o">+=</span> <span class="n">x</span><span class="p">[</span><span class="n">s</span><span class="p">(</span><span class="n">p</span><span class="p">)]</span> <span class="o">*</span> <span class="n">w</span><span class="p">[</span><span class="n">π</span><span class="p">(</span><span class="n">p</span><span class="p">)]</span>
+</code></pre></div>
+<p>where <code>p</code> lives in some generalize index space $E$.</p>
+
+
+
 {% endraw %}
 
-<hr><p>Last updated: Nov 25 2022 at 00:48 UTC</p>
+<hr><p>Last updated: Nov 26 2022 at 00:43 UTC</p>
