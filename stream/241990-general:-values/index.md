@@ -9,7 +9,7 @@ permalink: /stream/241990-general:-values/index.html
 
 ### Topics:
 
-* [Mathematics for humanity](topic/topic_Mathematics.20for.20humanity.html) (3 messages, latest: Nov 25 2022 at 13:02)
+* [Mathematics for humanity](topic/topic_Mathematics.20for.20humanity.html) (5 messages, latest: Nov 26 2022 at 19:00)
 * [open access](topic/topic_open.20access.html) (21 messages, latest: Nov 23 2022 at 18:41)
 * [Topos Institute and FTX](topic/topic_Topos.20Institute.20and.20FTX.html) (2 messages, latest: Nov 20 2022 at 10:13)
 * [Who is category theory for?](topic/topic_Who.20is.20category.20theory.20for.3F.html) (14 messages, latest: Nov 18 2022 at 13:18)
@@ -42,4 +42,4 @@ permalink: /stream/241990-general:-values/index.html
 * [stream events](topic/topic_stream.20events.html) (6 messages, latest: Jun 03 2020 at 19:22)
 * [ACT2020 tutorial day](topic/topic_ACT2020.20tutorial.20day.html) (1 message, latest: Jun 03 2020 at 18:38)
 
-<hr><p>Last updated: Nov 26 2022 at 00:43 UTC</p>
+<hr><p>Last updated: Nov 27 2022 at 00:52 UTC</p>

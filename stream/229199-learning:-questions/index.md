@@ -9,8 +9,8 @@ permalink: /stream/229199-learning:-questions/index.html
 
 ### Topics:
 
-* [Towards an understanding of pullbacks](topic/topic_Towards.20an.20understanding.20of.20pullbacks.html) (30 messages, latest: Nov 26 2022 at 00:27)
-* [Applying to the Adjoint School](topic/topic_Applying.20to.20the.20Adjoint.20School.html) (8 messages, latest: Nov 25 2022 at 19:29)
+* [Applying to the Adjoint School](topic/topic_Applying.20to.20the.20Adjoint.20School.html) (10 messages, latest: Nov 26 2022 at 22:28)
+* [Towards an understanding of pullbacks](topic/topic_Towards.20an.20understanding.20of.20pullbacks.html) (35 messages, latest: Nov 26 2022 at 12:45)
 * [pairwise relationships of three things](topic/topic_pairwise.20relationships.20of.20three.20things.html) (9 messages, latest: Nov 24 2022 at 19:02)
 * [Finitary monadic functor](topic/topic_Finitary.20monadic.20functor.html) (5 messages, latest: Nov 24 2022 at 14:09)
 * [Initial algebras as heteromorphisms](topic/topic_Initial.20algebras.20as.20heteromorphisms.html) (18 messages, latest: Nov 23 2022 at 08:58)
@@ -788,4 +788,4 @@ permalink: /stream/229199-learning:-questions/index.html
 * [Algebra (Aluffi) exercises](topic/topic_Algebra.20(Aluffi).20exercises.html) (55 messages, latest: Mar 27 2020 at 23:38)
 * [What is category theory about?](topic/topic_What.20is.20category.20theory.20about.3F.html) (16 messages, latest: Mar 26 2020 at 16:03)
 
-<hr><p>Last updated: Nov 26 2022 at 00:43 UTC</p>
+<hr><p>Last updated: Nov 27 2022 at 00:52 UTC</p>
