@@ -9,10 +9,10 @@ permalink: /stream/253118-theory:-probability/index.html
 
 ### Topics:
 
+* [best intro in 2022](topic/topic_best.20intro.20in.202022.html) (15 messages, latest: Nov 27 2022 at 15:03)
 * [Opposites of categories of measurable spaces](topic/topic_Opposites.20of.20categories.20of.20measurable.20spaces.html) (25 messages, latest: Nov 06 2022 at 08:14)
 * [probability vs statistics](topic/topic_probability.20vs.20statistics.html) (2 messages, latest: Oct 24 2022 at 17:06)
 * [Entropy as a Functor](topic/topic_Entropy.20as.20a.20Functor.html) (4 messages, latest: Oct 19 2022 at 21:32)
-* [best intro in 2022](topic/topic_best.20intro.20in.202022.html) (13 messages, latest: Oct 06 2022 at 17:29)
 * ["quasi-knowledge" of an agent as an R-algebra and convex opt](topic/topic_.22quasi-knowledge.22.20of.20an.20agent.20as.20an.20R-algebra.20and.20convex.20opt.html) (14 messages, latest: Sep 16 2022 at 16:03)
 * [textbook/lecture-style discussion of probability cats](topic/topic_textbook.2Flecture-style.20discussion.20of.20probability.20cats.html) (6 messages, latest: Sep 13 2022 at 20:01)
 * [Textbook/lecture-style discussion of probability cats](topic/topic_Textbook.2Flecture-style.20discussion.20of.20probability.20cats.html) (1 message, latest: Sep 11 2022 at 18:46)
@@ -42,4 +42,4 @@ permalink: /stream/253118-theory:-probability/index.html
 * [Finitely additive probability](topic/topic_Finitely.20additive.20probability.html) (1 message, latest: Aug 16 2020 at 00:48)
 * [stream events](topic/topic_stream.20events.html) (2 messages, latest: Aug 16 2020 at 00:31)
 
-<hr><p>Last updated: Nov 27 2022 at 00:52 UTC</p>
+<hr><p>Last updated: Nov 28 2022 at 00:44 UTC</p>

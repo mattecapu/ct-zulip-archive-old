@@ -9,6 +9,8 @@ permalink: /stream/229199-learning:-questions/index.html
 
 ### Topics:
 
+* [category theory and philosophy books](topic/topic_category.20theory.20and.20philosophy.20books.html) (8 messages, latest: Nov 27 2022 at 22:59)
+* [self-reference](topic/topic_self-reference.html) (17 messages, latest: Nov 27 2022 at 15:53)
 * [Applying to the Adjoint School](topic/topic_Applying.20to.20the.20Adjoint.20School.html) (10 messages, latest: Nov 26 2022 at 22:28)
 * [Towards an understanding of pullbacks](topic/topic_Towards.20an.20understanding.20of.20pullbacks.html) (35 messages, latest: Nov 26 2022 at 12:45)
 * [pairwise relationships of three things](topic/topic_pairwise.20relationships.20of.20three.20things.html) (9 messages, latest: Nov 24 2022 at 19:02)
@@ -788,4 +790,4 @@ permalink: /stream/229199-learning:-questions/index.html
 * [Algebra (Aluffi) exercises](topic/topic_Algebra.20(Aluffi).20exercises.html) (55 messages, latest: Mar 27 2020 at 23:38)
 * [What is category theory about?](topic/topic_What.20is.20category.20theory.20about.3F.html) (16 messages, latest: Mar 26 2020 at 16:03)
 
-<hr><p>Last updated: Nov 27 2022 at 00:52 UTC</p>
+<hr><p>Last updated: Nov 28 2022 at 00:44 UTC</p>

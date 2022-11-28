@@ -9,11 +9,11 @@ permalink: /stream/229141-general:-events/index.html
 
 ### Topics:
 
+* [Virtual Double Categories Workshop](topic/topic_Virtual.20Double.20Categories.20Workshop.html) (6 messages, latest: Nov 27 2022 at 17:55)
 * [SYCO 10, Edinburgh](topic/topic_SYCO.2010.2C.20Edinburgh.html) (3 messages, latest: Nov 22 2022 at 17:12)
 * [ItaCa Fest 2022](topic/topic_ItaCa.20Fest.202022.html) (13 messages, latest: Nov 18 2022 at 10:20)
 * [Logic in Computer Science conference](topic/topic_Logic.20in.20Computer.20Science.20conference.html) (51 messages, latest: Nov 17 2022 at 00:12)
 * [This Week's Finds seminar](topic/topic_This.20Week's.20Finds.20seminar.html) (113 messages, latest: Nov 14 2022 at 11:52)
-* [Virtual Double Categories Workshop](topic/topic_Virtual.20Double.20Categories.20Workshop.html) (4 messages, latest: Nov 02 2022 at 13:04)
 * [New Developments in Tensor Networks and Quantum Computation](topic/topic_New.20Developments.20in.20Tensor.20Networks.20and.20Quantum.20Computation.html) (1 message, latest: Oct 29 2022 at 10:50)
 * [Bénabou Colloquium](topic/topic_B.C3.A9nabou.20Colloquium.html) (1 message, latest: Oct 27 2022 at 10:34)
 * [Octoberfest](topic/topic_Octoberfest.html) (5 messages, latest: Oct 24 2022 at 17:35)
@@ -157,4 +157,4 @@ permalink: /stream/229141-general:-events/index.html
 * [April 1st: ACT@UCR](topic/topic_April.201st.3A.20ACT.40UCR.html) (3 messages, latest: Mar 26 2020 at 23:58)
 * [Google Sites problem](topic/topic_Google.20Sites.20problem.html) (4 messages, latest: Mar 25 2020 at 04:29)
 
-<hr><p>Last updated: Nov 27 2022 at 00:52 UTC</p>
+<hr><p>Last updated: Nov 28 2022 at 00:44 UTC</p>
