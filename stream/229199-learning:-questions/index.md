@@ -9,7 +9,8 @@ permalink: /stream/229199-learning:-questions/index.html
 
 ### Topics:
 
-* [category theory and philosophy books](topic/topic_category.20theory.20and.20philosophy.20books.html) (8 messages, latest: Nov 27 2022 at 22:59)
+* [category theory and philosophy books](topic/topic_category.20theory.20and.20philosophy.20books.html) (19 messages, latest: Nov 28 2022 at 22:43)
+* [evolutionary game](topic/topic_evolutionary.20game.html) (13 messages, latest: Nov 28 2022 at 18:36)
 * [self-reference](topic/topic_self-reference.html) (17 messages, latest: Nov 27 2022 at 15:53)
 * [Applying to the Adjoint School](topic/topic_Applying.20to.20the.20Adjoint.20School.html) (10 messages, latest: Nov 26 2022 at 22:28)
 * [Towards an understanding of pullbacks](topic/topic_Towards.20an.20understanding.20of.20pullbacks.html) (35 messages, latest: Nov 26 2022 at 12:45)
@@ -23,7 +24,6 @@ permalink: /stream/229199-learning:-questions/index.html
 * [Closed discrete fibration?](topic/topic_Closed.20discrete.20fibration.3F.html) (6 messages, latest: Nov 10 2022 at 15:25)
 * [Graded bicategory](topic/topic_Graded.20bicategory.html) (3 messages, latest: Nov 10 2022 at 10:29)
 * [Understanding Yoneda lemma](topic/topic_Understanding.20Yoneda.20lemma.html) (13 messages, latest: Nov 09 2022 at 17:23)
-* [evolutionary game](topic/topic_evolutionary.20game.html) (10 messages, latest: Nov 08 2022 at 00:22)
 * [HoTT and philosophy](topic/topic_HoTT.20and.20philosophy.html) (32 messages, latest: Nov 07 2022 at 20:24)
 * [Beginner questions](topic/topic_Beginner.20questions.html) (16 messages, latest: Nov 05 2022 at 13:48)
 * [Associativity of limits = limits commute with limits?](topic/topic_Associativity.20of.20limits.20.3D.20limits.20commute.20with.20limits.3F.html) (5 messages, latest: Nov 01 2022 at 19:36)
@@ -790,4 +790,4 @@ permalink: /stream/229199-learning:-questions/index.html
 * [Algebra (Aluffi) exercises](topic/topic_Algebra.20(Aluffi).20exercises.html) (55 messages, latest: Mar 27 2020 at 23:38)
 * [What is category theory about?](topic/topic_What.20is.20category.20theory.20about.3F.html) (16 messages, latest: Mar 26 2020 at 16:03)
 
-<hr><p>Last updated: Nov 28 2022 at 00:44 UTC</p>
+<hr><p>Last updated: Nov 29 2022 at 00:48 UTC</p>
