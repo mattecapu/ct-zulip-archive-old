@@ -9,7 +9,7 @@ permalink: /stream/266967-general:-mathematics/index.html
 
 ### Topics:
 
-* [catastrophe theory](topic/topic_catastrophe.20theory.html) (18 messages, latest: Nov 29 2022 at 00:41)
+* [catastrophe theory](topic/topic_catastrophe.20theory.html) (19 messages, latest: Nov 29 2022 at 04:43)
 * [Boundary fibration](topic/topic_Boundary.20fibration.html) (1 message, latest: Nov 27 2022 at 23:15)
 * [When is (X,S ⊆ P(X)) -> X a fibration?](topic/topic_When.20is.20(X.2CS.20.E2.8A.86.20P(X)).20-.3E.20X.20a.20fibration.3F.html) (1 message, latest: Oct 08 2022 at 00:48)
 * [Von Neumann Varieties](topic/topic_Von.20Neumann.20Varieties.html) (3 messages, latest: Sep 10 2022 at 18:25)
@@ -69,4 +69,4 @@ permalink: /stream/266967-general:-mathematics/index.html
 * [the 600-cell](topic/topic_the.20600-cell.html) (5 messages, latest: Dec 01 2020 at 16:35)
 * [hermitian matrix over normed division algebra](topic/topic_hermitian.20matrix.20over.20normed.20division.20algebra.html) (8 messages, latest: Sep 28 2020 at 21:19)
 
-<hr><p>Last updated: Nov 29 2022 at 00:48 UTC</p>
+<hr><p>Last updated: Nov 30 2022 at 00:48 UTC</p>

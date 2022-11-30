@@ -8,7 +8,7 @@ permalink: /index.html
 
 ## Streams:
 
-* [learning: questions](stream/229199-learning:-questions/index.html) (780 topics)
+* [learning: questions](stream/229199-learning:-questions/index.html) (781 topics)
 
 * [theory: category theory](stream/229136-theory:-category-theory/index.html) (330 topics)
 
@@ -16,7 +16,7 @@ permalink: /index.html
 
 * [general: events](stream/229141-general:-events/index.html) (147 topics)
 
-* [practice: applied ct](stream/229156-practice:-applied-ct/index.html) (138 topics)
+* [practice: applied ct](stream/229156-practice:-applied-ct/index.html) (139 topics)
 
 * [theory: topos theory](stream/230087-theory:-topos-theory/index.html) (79 topics)
 
@@ -142,6 +142,8 @@ permalink: /index.html
 
 * [process-io](stream/267137-process-io/index.html) (3 topics)
 
+* [seminar: YAMCaTS](stream/275483-seminar:-YAMCaTS/index.html) (3 topics)
+
 * [theory: combinatorics](stream/229794-theory:-combinatorics/index.html) (3 topics)
 
 * [theory: game semantics](stream/233273-theory:-game-semantics/index.html) (3 topics)
@@ -159,8 +161,6 @@ permalink: /index.html
 * [practice: industry](stream/229370-practice:-industry/index.html) (2 topics)
 
 * [practice: public research](stream/332084-practice:-public-research/index.html) (2 topics)
-
-* [seminar: YAMCaTS](stream/275483-seminar:-YAMCaTS/index.html) (2 topics)
 
 * [theory: number theory](stream/298864-theory:-number-theory/index.html) (2 topics)
 
@@ -180,4 +180,4 @@ permalink: /index.html
 
 * [theory: alternate presentations](stream/233122-theory:-alternate-presentations/index.html) (1 topic)
 
-<hr><p>Last updated: Nov 29 2022 at 00:48 UTC</p>
+<hr><p>Last updated: Nov 30 2022 at 00:48 UTC</p>
