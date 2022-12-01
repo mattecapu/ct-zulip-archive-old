@@ -10,7 +10,7 @@ permalink: /index.html
 
 * [learning: questions](stream/229199-learning:-questions/index.html) (781 topics)
 
-* [theory: category theory](stream/229136-theory:-category-theory/index.html) (330 topics)
+* [theory: category theory](stream/229136-theory:-category-theory/index.html) (331 topics)
 
 * [general](stream/229111-general/index.html) (240 topics)
 
@@ -30,7 +30,7 @@ permalink: /index.html
 
 * [general: positions](stream/245502-general:-positions/index.html) (61 topics)
 
-* [general: mathematics](stream/266967-general:-mathematics/index.html) (59 topics)
+* [general: mathematics](stream/266967-general:-mathematics/index.html) (60 topics)
 
 * [theory: logic](stream/233104-theory:-logic/index.html) (54 topics)
 
@@ -180,4 +180,4 @@ permalink: /index.html
 
 * [theory: alternate presentations](stream/233122-theory:-alternate-presentations/index.html) (1 topic)
 
-<hr><p>Last updated: Nov 30 2022 at 00:48 UTC</p>
+<hr><p>Last updated: Dec 01 2022 at 00:54 UTC</p>
