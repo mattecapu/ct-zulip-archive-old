@@ -9,6 +9,7 @@ permalink: /stream/229136-theory:-category-theory/index.html
 
 ### Topics:
 
+* [Freyd-Mitchell for Sheaves of Commutative Monoids](topic/topic_Freyd-Mitchell.20for.20Sheaves.20of.20Commutative.20Monoids.html) (5 messages, latest: Dec 01 2022 at 18:42)
 * [Relative monads](topic/topic_Relative.20monads.html) (3 messages, latest: Nov 30 2022 at 14:44)
 * [Yoneda as a right extension?!](topic/topic_Yoneda.20as.20a.20right.20extension.3F!.html) (3 messages, latest: Nov 25 2022 at 15:10)
 * [stream events](topic/topic_stream.20events.html) (7 messages, latest: Nov 24 2022 at 18:58)
@@ -341,4 +342,4 @@ permalink: /stream/229136-theory:-category-theory/index.html
 * [diagrams for application](topic/topic_diagrams.20for.20application.html) (13 messages, latest: Mar 24 2020 at 06:19)
 * [universal constructions](topic/topic_universal.20constructions.html) (8 messages, latest: Mar 23 2020 at 21:06)
 
-<hr><p>Last updated: Dec 01 2022 at 00:54 UTC</p>
+<hr><p>Last updated: Dec 02 2022 at 00:45 UTC</p>
