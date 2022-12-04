@@ -9,10 +9,11 @@ permalink: /stream/229199-learning:-questions/index.html
 
 ### Topics:
 
+* [Taylor expansion of y'(x-h)](topic/topic_Taylor.20expansion.20of.20y'(x-h).html) (4 messages, latest: Dec 03 2022 at 23:30)
+* [dynamical system](topic/topic_dynamical.20system.html) (70 messages, latest: Dec 03 2022 at 11:06)
+* [evolutionary game](topic/topic_evolutionary.20game.html) (33 messages, latest: Dec 03 2022 at 01:47)
 * [category theory and philosophy books](topic/topic_category.20theory.20and.20philosophy.20books.html) (49 messages, latest: Dec 02 2022 at 22:51)
 * [Initial algebras as heteromorphisms](topic/topic_Initial.20algebras.20as.20heteromorphisms.html) (20 messages, latest: Dec 02 2022 at 19:18)
-* [evolutionary game](topic/topic_evolutionary.20game.html) (32 messages, latest: Dec 02 2022 at 11:37)
-* [dynamical system](topic/topic_dynamical.20system.html) (65 messages, latest: Dec 01 2022 at 21:33)
 * [Are sets accessible categories?](topic/topic_Are.20sets.20accessible.20categories.3F.html) (3 messages, latest: Dec 01 2022 at 16:23)
 * [point-free geometry](topic/topic_point-free.20geometry.html) (3 messages, latest: Nov 30 2022 at 06:40)
 * [self-reference](topic/topic_self-reference.html) (17 messages, latest: Nov 27 2022 at 15:53)
@@ -792,4 +793,4 @@ permalink: /stream/229199-learning:-questions/index.html
 * [Algebra (Aluffi) exercises](topic/topic_Algebra.20(Aluffi).20exercises.html) (55 messages, latest: Mar 27 2020 at 23:38)
 * [What is category theory about?](topic/topic_What.20is.20category.20theory.20about.3F.html) (16 messages, latest: Mar 26 2020 at 16:03)
 
-<hr><p>Last updated: Dec 03 2022 at 00:43 UTC</p>
+<hr><p>Last updated: Dec 04 2022 at 00:45 UTC</p>
