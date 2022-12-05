@@ -9,6 +9,7 @@ permalink: /stream/229136-theory:-category-theory/index.html
 
 ### Topics:
 
+* [Semiadditive representable multicategories](topic/topic_Semiadditive.20representable.20multicategories.html) (8 messages, latest: Dec 04 2022 at 16:38)
 * [Categorical treatment of parametrized theories?](topic/topic_Categorical.20treatment.20of.20parametrized.20theories.3F.html) (63 messages, latest: Dec 03 2022 at 22:32)
 * [Relative monads](topic/topic_Relative.20monads.html) (4 messages, latest: Dec 02 2022 at 19:21)
 * [Freyd-Mitchell for Sheaves of Commutative Monoids](topic/topic_Freyd-Mitchell.20for.20Sheaves.20of.20Commutative.20Monoids.html) (5 messages, latest: Dec 01 2022 at 18:42)
@@ -343,4 +344,4 @@ permalink: /stream/229136-theory:-category-theory/index.html
 * [diagrams for application](topic/topic_diagrams.20for.20application.html) (13 messages, latest: Mar 24 2020 at 06:19)
 * [universal constructions](topic/topic_universal.20constructions.html) (8 messages, latest: Mar 23 2020 at 21:06)
 
-<hr><p>Last updated: Dec 04 2022 at 00:45 UTC</p>
+<hr><p>Last updated: Dec 05 2022 at 00:44 UTC</p>
