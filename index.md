@@ -8,7 +8,7 @@ permalink: /index.html
 
 ## Streams:
 
-* [learning: questions](stream/229199-learning:-questions/index.html) (783 topics)
+* [learning: questions](stream/229199-learning:-questions/index.html) (784 topics)
 
 * [theory: category theory](stream/229136-theory:-category-theory/index.html) (334 topics)
 
@@ -26,11 +26,11 @@ permalink: /index.html
 
 * [conference: ACT 2020](stream/243068-conference:-ACT-2020/index.html) (62 topics)
 
+* [general: positions](stream/245502-general:-positions/index.html) (62 topics)
+
 * [ACT 2020](stream/243068-ACT-2020/index.html) (61 topics)
 
-* [general: positions](stream/245502-general:-positions/index.html) (61 topics)
-
-* [general: mathematics](stream/266967-general:-mathematics/index.html) (60 topics)
+* [general: mathematics](stream/266967-general:-mathematics/index.html) (61 topics)
 
 * [theory: logic](stream/233104-theory:-logic/index.html) (54 topics)
 
@@ -180,4 +180,4 @@ permalink: /index.html
 
 * [theory: alternate presentations](stream/233122-theory:-alternate-presentations/index.html) (1 topic)
 
-<hr><p>Last updated: Dec 05 2022 at 00:44 UTC</p>
+<hr><p>Last updated: Dec 06 2022 at 00:44 UTC</p>

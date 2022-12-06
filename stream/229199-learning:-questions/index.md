@@ -9,8 +9,9 @@ permalink: /stream/229199-learning:-questions/index.html
 
 ### Topics:
 
+* [dependence, posets, and ambiguity](topic/topic_dependence.2C.20posets.2C.20and.20ambiguity.html) (1 message, latest: Dec 05 2022 at 23:43)
+* [category theory and philosophy books](topic/topic_category.20theory.20and.20philosophy.20books.html) (51 messages, latest: Dec 05 2022 at 17:30)
 * [Taylor expansion of y'(x-h)](topic/topic_Taylor.20expansion.20of.20y'(x-h).html) (5 messages, latest: Dec 04 2022 at 12:22)
-* [category theory and philosophy books](topic/topic_category.20theory.20and.20philosophy.20books.html) (50 messages, latest: Dec 04 2022 at 09:22)
 * [dynamical system](topic/topic_dynamical.20system.html) (70 messages, latest: Dec 03 2022 at 11:06)
 * [evolutionary game](topic/topic_evolutionary.20game.html) (33 messages, latest: Dec 03 2022 at 01:47)
 * [Initial algebras as heteromorphisms](topic/topic_Initial.20algebras.20as.20heteromorphisms.html) (20 messages, latest: Dec 02 2022 at 19:18)
@@ -793,4 +794,4 @@ permalink: /stream/229199-learning:-questions/index.html
 * [Algebra (Aluffi) exercises](topic/topic_Algebra.20(Aluffi).20exercises.html) (55 messages, latest: Mar 27 2020 at 23:38)
 * [What is category theory about?](topic/topic_What.20is.20category.20theory.20about.3F.html) (16 messages, latest: Mar 26 2020 at 16:03)
 
-<hr><p>Last updated: Dec 05 2022 at 00:44 UTC</p>
+<hr><p>Last updated: Dec 06 2022 at 00:44 UTC</p>

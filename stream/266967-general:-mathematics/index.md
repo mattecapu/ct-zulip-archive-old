@@ -9,6 +9,7 @@ permalink: /stream/266967-general:-mathematics/index.html
 
 ### Topics:
 
+* [Taylor expansion of y'(x-h)](topic/topic_Taylor.20expansion.20of.20y'(x-h).html) (2 messages, latest: Dec 05 2022 at 10:10)
 * [vertex (operator) algebras](topic/topic_vertex.20(operator).20algebras.html) (28 messages, latest: Dec 04 2022 at 00:18)
 * [catastrophe theory](topic/topic_catastrophe.20theory.html) (20 messages, latest: Dec 01 2022 at 14:25)
 * [Boundary fibration](topic/topic_Boundary.20fibration.html) (1 message, latest: Nov 27 2022 at 23:15)
@@ -70,4 +71,4 @@ permalink: /stream/266967-general:-mathematics/index.html
 * [the 600-cell](topic/topic_the.20600-cell.html) (5 messages, latest: Dec 01 2020 at 16:35)
 * [hermitian matrix over normed division algebra](topic/topic_hermitian.20matrix.20over.20normed.20division.20algebra.html) (8 messages, latest: Sep 28 2020 at 21:19)
 
-<hr><p>Last updated: Dec 05 2022 at 00:44 UTC</p>
+<hr><p>Last updated: Dec 06 2022 at 00:44 UTC</p>

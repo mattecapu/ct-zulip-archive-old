@@ -9,6 +9,7 @@ permalink: /stream/245502-general:-positions/index.html
 
 ### Topics:
 
+* [Rule-based models and open systems at Strathclyde](topic/topic_Rule-based.20models.20and.20open.20systems.20at.20Strathclyde.html) (1 message, latest: Dec 05 2022 at 11:28)
 * [Topos Institute summer research positions](topic/topic_Topos.20Institute.20summer.20research.20positions.html) (26 messages, latest: Nov 24 2022 at 18:27)
 * [10 Funded PhD Studentships at Nottingham 2022](topic/topic_10.20Funded.20PhD.20Studentships.20at.20Nottingham.202022.html) (1 message, latest: Nov 21 2022 at 12:48)
 * [Kleisli Databases](topic/topic_Kleisli.20Databases.html) (1 message, latest: Nov 10 2022 at 16:03)
@@ -71,4 +72,4 @@ permalink: /stream/245502-general:-positions/index.html
 * [PhD positions in Estonia](topic/topic_PhD.20positions.20in.20Estonia.html) (1 message, latest: Jun 27 2020 at 18:04)
 * [Companies that hire category people](topic/topic_Companies.20that.20hire.20category.20people.html) (2 messages, latest: May 13 2020 at 03:50)
 
-<hr><p>Last updated: Dec 05 2022 at 00:44 UTC</p>
+<hr><p>Last updated: Dec 06 2022 at 00:44 UTC</p>
