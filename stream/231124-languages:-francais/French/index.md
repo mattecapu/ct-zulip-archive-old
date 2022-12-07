@@ -9,13 +9,13 @@ permalink: /stream/231124-languages:-francais/French/index.html
 
 ### Topics:
 
+* [nomenclature dans EGA](topic/topic_nomenclature.20dans.20EGA.html) (18 messages, latest: Dec 06 2022 at 20:07)
 * [off topic - Gens de Confiance](topic/topic_off.20topic.20-.20Gens.20de.20Confiance.html) (2 messages, latest: Jul 09 2022 at 16:35)
 * [à Paris](topic/topic_.C3.A0.20Paris.html) (2 messages, latest: Jan 11 2022 at 12:40)
 * [bienvenu!](topic/topic_bienvenu!.html) (29 messages, latest: Jan 20 2021 at 15:37)
 * [stream events](topic/topic_stream.20events.html) (10 messages, latest: Dec 14 2020 at 21:50)
 * [chercheurs en francophonie](topic/topic_chercheurs.20en.20francophonie.html) (5 messages, latest: May 07 2020 at 12:22)
-* [nomenclature dans EGA](topic/topic_nomenclature.20dans.20EGA.html) (13 messages, latest: Apr 13 2020 at 21:45)
 * [chocolatine ou pain au chocolat](topic/topic_chocolatine.20ou.20pain.20au.20chocolat.html) (16 messages, latest: Apr 07 2020 at 12:33)
 * [cosmos étymologie](topic/topic_cosmos.20.C3.A9tymologie.html) (2 messages, latest: Apr 01 2020 at 11:50)
 
-<hr><p>Last updated: Dec 06 2022 at 00:44 UTC</p>
+<hr><p>Last updated: Dec 07 2022 at 00:46 UTC</p>

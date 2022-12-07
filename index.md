@@ -10,7 +10,7 @@ permalink: /index.html
 
 * [learning: questions](stream/229199-learning:-questions/index.html) (784 topics)
 
-* [theory: category theory](stream/229136-theory:-category-theory/index.html) (334 topics)
+* [theory: category theory](stream/229136-theory:-category-theory/index.html) (335 topics)
 
 * [general](stream/229111-general/index.html) (241 topics)
 
@@ -104,9 +104,9 @@ permalink: /index.html
 
 * [languages: italiano/Italian](stream/231111-languages:-italiano/Italian/index.html) (8 topics)
 
-* [theory: monoids](stream/231815-theory:-monoids/index.html) (8 topics)
+* [learning: id my structure](stream/311521-learning:-id-my-structure/index.html) (8 topics)
 
-* [learning: id my structure](stream/311521-learning:-id-my-structure/index.html) (7 topics)
+* [theory: monoids](stream/231815-theory:-monoids/index.html) (8 topics)
 
 * [learning: statistics reading group](stream/245528-learning:-statistics-reading-group/index.html) (7 topics)
 
@@ -180,4 +180,4 @@ permalink: /index.html
 
 * [theory: alternate presentations](stream/233122-theory:-alternate-presentations/index.html) (1 topic)
 
-<hr><p>Last updated: Dec 06 2022 at 00:44 UTC</p>
+<hr><p>Last updated: Dec 07 2022 at 00:46 UTC</p>
