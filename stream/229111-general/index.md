@@ -9,6 +9,7 @@ permalink: /stream/229111-general/index.html
 
 ### Topics:
 
+* [Compositionality](topic/topic_Compositionality.html) (15 messages, latest: Dec 07 2022 at 07:32)
 * [PhD position - biological modelling](topic/topic_PhD.20position.20-.20biological.20modelling.html) (1 message, latest: Dec 02 2022 at 10:06)
 * [mathstodon](topic/topic_mathstodon.html) (27 messages, latest: Nov 21 2022 at 08:38)
 * [Information theoretic commutativity](topic/topic_Information.20theoretic.20commutativity.html) (3 messages, latest: Nov 18 2022 at 06:58)
@@ -16,7 +17,6 @@ permalink: /stream/229111-general/index.html
 * [Programming Language Tools for ACT](topic/topic_Programming.20Language.20Tools.20for.20ACT.html) (6 messages, latest: Oct 28 2022 at 16:12)
 * [Quantum PL and verification community](topic/topic_Quantum.20PL.20and.20verification.20community.html) (1 message, latest: Oct 28 2022 at 08:28)
 * [quantum PL and verification community](topic/topic_quantum.20PL.20and.20verification.20community.html) (1 message, latest: Oct 27 2022 at 13:23)
-* [Compositionality](topic/topic_Compositionality.html) (14 messages, latest: Oct 24 2022 at 11:59)
 * [introduce yourself!](topic/topic_introduce.20yourself!.html) (81 messages, latest: Oct 18 2022 at 19:21)
 * [new streams](topic/topic_new.20streams.html) (98 messages, latest: Oct 06 2022 at 17:16)
 * [nLab](topic/topic_nLab.html) (192 messages, latest: Oct 05 2022 at 16:40)
@@ -251,4 +251,4 @@ permalink: /stream/229111-general/index.html
 * [Tools for diagrams](topic/topic_Tools.20for.20diagrams.html) (78 messages, latest: Mar 25 2020 at 17:53)
 * [topic demonstration](topic/topic_topic.20demonstration.html) (2 messages, latest: Mar 23 2020 at 16:57)
 
-<hr><p>Last updated: Dec 07 2022 at 00:46 UTC</p>
+<hr><p>Last updated: Dec 08 2022 at 00:44 UTC</p>
