@@ -1,0 +1,56 @@
+[
+    {
+        "content": "<p>(<a href=\"https://nforum.ncatlab.org/discussion/9279/cartesian-monoidal-category/?Focus=105331#Comment_105331\">crossposting from the nForum</a>)<br>\nFox's theorem famously states that given a monoidal category, the cofree way to make it into a cartesian one is to take the category of comonoids therein. This gives a right adjoint to the forgetful functor <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"bold\">C</mi><mi mathvariant=\"bold\">a</mi><mi mathvariant=\"bold\">r</mi><mi mathvariant=\"bold\">t</mi><mi mathvariant=\"bold\">M</mi><mi mathvariant=\"bold\">o</mi><mi mathvariant=\"bold\">n</mi><mi mathvariant=\"bold\">C</mi><mi mathvariant=\"bold\">a</mi><mi mathvariant=\"bold\">t</mi><mo>→</mo><mi mathvariant=\"bold\">M</mi><mi mathvariant=\"bold\">o</mi><mi mathvariant=\"bold\">n</mi><mi mathvariant=\"bold\">C</mi><mi mathvariant=\"bold\">a</mi><mi mathvariant=\"bold\">t</mi></mrow><annotation encoding=\"application/x-tex\">\\bf CartMonCat \\to MonCat</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6861em;\"></span><span class=\"mord\"><span class=\"mord mathbf\">CartMonCat</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">→</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mord mathbf\">MonCat</span></span></span></span></span>. What about the left adjoint?</p>",
+        "id": 314696708,
+        "sender_full_name": "Matteo Capucci (he/him)",
+        "timestamp": 1670512087
+    },
+    {
+        "content": "<p>Neil Ghani suggested, very plausibly, that it's the functor freely throwing in diagonals/terminal morphisms, and quotienting hom-sets so that both are natural</p>",
+        "id": 314697027,
+        "sender_full_name": "Matteo Capucci (he/him)",
+        "timestamp": 1670512176
+    },
+    {
+        "content": "<p>That does sound plausible... is there a good reason to believe that there should be a left adjoint in the first place?</p>",
+        "id": 314699243,
+        "sender_full_name": "Morgan Rogers (he/him)",
+        "timestamp": 1670512770
+    },
+    {
+        "content": "<p>(also, this is for monoidal categories and strong monoidal functors, right?)</p>",
+        "id": 314699868,
+        "sender_full_name": "Morgan Rogers (he/him)",
+        "timestamp": 1670512933
+    },
+    {
+        "content": "<p>Well, Fox says so first of all. There's also a paper by Lack (IIRC) about property-like structure which treats these kind of situations.</p>",
+        "id": 314712144,
+        "sender_full_name": "Matteo Capucci (he/him)",
+        "timestamp": 1670516359
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"277473\">Morgan Rogers (he/him)</span> <a href=\"#narrow/stream/229136-theory.3A-category-theory/topic/free.20cartesian.20structure.20over.20a.20monoidal.20category/near/314699868\">said</a>:</p>\n<blockquote>\n<p>(also, this is for monoidal categories and strong monoidal functors, right?)</p>\n</blockquote>\n<p>Fox says strict. I guess weakening to strong wouldn't break the result.</p>",
+        "id": 314712241,
+        "sender_full_name": "Matteo Capucci (he/him)",
+        "timestamp": 1670516390
+    },
+    {
+        "content": "<p>I see, this is a situation where we know the adjoint exists and you're asking if there is a nice presentation of it. Cool!</p>",
+        "id": 314712425,
+        "sender_full_name": "Morgan Rogers (he/him)",
+        "timestamp": 1670516435
+    },
+    {
+        "content": "<p>Exactly :)</p>",
+        "id": 314712795,
+        "sender_full_name": "Matteo Capucci (he/him)",
+        "timestamp": 1670516549
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"275932\">Matteo Capucci (he/him)</span> <a href=\"#narrow/stream/229136-theory.3A-category-theory/topic/free.20cartesian.20structure.20over.20a.20monoidal.20category/near/314697027\">said</a>:</p>\n<blockquote>\n<p>Neil Ghani suggested, very plausibly, that it's the functor freely throwing in diagonals/terminal morphisms, and quotienting hom-sets so that both are natural</p>\n</blockquote>\n<p>This sounds right. It's a general fact that any morphism of algebraic theories <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>T</mi><mo>→</mo><msup><mi>T</mi><mo mathvariant=\"normal\" lspace=\"0em\" rspace=\"0em\">′</mo></msup></mrow><annotation encoding=\"application/x-tex\">T \\to T&#x27;</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.13889em;\">T</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">→</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.7519em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.13889em;\">T</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.7519em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\">′</span></span></span></span></span></span></span></span></span></span></span></span> induces a left-adjoint <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mrow><mi mathvariant=\"normal\">A</mi><mi mathvariant=\"normal\">l</mi><mi mathvariant=\"normal\">g</mi></mrow><mo stretchy=\"false\">(</mo><mi>T</mi><mo stretchy=\"false\">)</mo><mo>→</mo><mrow><mi mathvariant=\"normal\">A</mi><mi mathvariant=\"normal\">l</mi><mi mathvariant=\"normal\">g</mi></mrow><mo stretchy=\"false\">(</mo><msup><mi>T</mi><mo mathvariant=\"normal\" lspace=\"0em\" rspace=\"0em\">′</mo></msup><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">\\mathrm{Alg}(T) \\to \\mathrm{Alg}(T&#x27;)</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord\"><span class=\"mord mathrm\" style=\"margin-right:0.01389em;\">Alg</span></span><span class=\"mopen\">(</span><span class=\"mord mathnormal\" style=\"margin-right:0.13889em;\">T</span><span class=\"mclose\">)</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">→</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1.0019em;vertical-align:-0.25em;\"></span><span class=\"mord\"><span class=\"mord mathrm\" style=\"margin-right:0.01389em;\">Alg</span></span><span class=\"mopen\">(</span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.13889em;\">T</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.7519em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\">′</span></span></span></span></span></span></span></span></span><span class=\"mclose\">)</span></span></span></span> which, informally, freely adds the <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msup><mi>T</mi><mo mathvariant=\"normal\" lspace=\"0em\" rspace=\"0em\">′</mo></msup></mrow><annotation encoding=\"application/x-tex\">T&#x27;</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.7519em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.13889em;\">T</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.7519em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\">′</span></span></span></span></span></span></span></span></span></span></span></span>-structure to a <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>T</mi></mrow><annotation encoding=\"application/x-tex\">T</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.13889em;\">T</span></span></span></span>-algebra. This fact carries over to 2-algebraic theories. The left adjoint will add the structure which is \"missing\": which is the natural comonoid structure on each object.</p>",
+        "id": 314717537,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1670517829
+    }
+]

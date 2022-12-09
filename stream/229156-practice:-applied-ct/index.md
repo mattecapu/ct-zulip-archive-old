@@ -9,7 +9,8 @@ permalink: /stream/229156-practice:-applied-ct/index.html
 
 ### Topics:
 
-* [structured cospans](topic/topic_structured.20cospans.html) (20 messages, latest: Dec 03 2022 at 18:47)
+* [hyperoperators as dynamical systems](topic/topic_hyperoperators.20as.20dynamical.20systems.html) (125 messages, latest: Dec 08 2022 at 21:59)
+* [structured cospans](topic/topic_structured.20cospans.html) (21 messages, latest: Dec 08 2022 at 20:29)
 * [instance functors for monoidal categories](topic/topic_instance.20functors.20for.20monoidal.20categories.html) (14 messages, latest: Oct 10 2022 at 18:52)
 * [web cats](topic/topic_web.20cats.html) (348 messages, latest: Sep 08 2022 at 08:18)
 * [around machine learning](topic/topic_around.20machine.20learning.html) (50 messages, latest: Sep 05 2022 at 02:16)
@@ -108,7 +109,6 @@ permalink: /stream/229156-practice:-applied-ct/index.html
 * [supply in a SMC](topic/topic_supply.20in.20a.20SMC.html) (1 message, latest: Jun 06 2020 at 17:37)
 * [Tonti Diagrams](topic/topic_Tonti.20Diagrams.html) (9 messages, latest: Jun 01 2020 at 22:04)
 * [Resource Theory](topic/topic_Resource.20Theory.html) (4 messages, latest: Jun 01 2020 at 18:50)
-* [hyperoperators as dynamical systems](topic/topic_hyperoperators.20as.20dynamical.20systems.html) (124 messages, latest: Jun 01 2020 at 04:22)
 * [Wellbeing category](topic/topic_Wellbeing.20category.html) (24 messages, latest: May 27 2020 at 16:29)
 * [open source modelling](topic/topic_open.20source.20modelling.html) (108 messages, latest: May 20 2020 at 14:02)
 * [julia and python](topic/topic_julia.20and.20python.html) (26 messages, latest: May 19 2020 at 20:56)
@@ -149,4 +149,4 @@ permalink: /stream/229156-practice:-applied-ct/index.html
 * [AACT2020](topic/topic_AACT2020.html) (1 message, latest: Mar 24 2020 at 00:56)
 * [welcome](topic/topic_welcome.html) (15 messages, latest: Mar 24 2020 at 00:03)
 
-<hr><p>Last updated: Dec 08 2022 at 00:44 UTC</p>
+<hr><p>Last updated: Dec 09 2022 at 00:46 UTC</p>
