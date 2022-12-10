@@ -9,6 +9,7 @@ permalink: /stream/274877-practice:-our-work/index.html
 
 ### Topics:
 
+* [Jason Parker](topic/topic_Jason.20Parker.html) (3 messages, latest: Dec 09 2022 at 18:14)
 * [Jean-Baptiste Vienney](topic/topic_Jean-Baptiste.20Vienney.html) (28 messages, latest: Dec 07 2022 at 06:52)
 * [Steve Huntsman](topic/topic_Steve.20Huntsman.html) (4 messages, latest: Dec 06 2022 at 18:02)
 * [John Baez](topic/topic_John.20Baez.html) (877 messages, latest: Dec 04 2022 at 14:51)
@@ -28,7 +29,6 @@ permalink: /stream/274877-practice:-our-work/index.html
 * [Lê Thành Dũng (Tito) Nguyễn](topic/topic_L.C3.AA.20Th.C3.A0nh.20D.C5.A9ng.20(Tito).20Nguy.E1.BB.85n.html) (3 messages, latest: Oct 07 2022 at 04:16)
 * [David Roberts](topic/topic_David.20Roberts.html) (54 messages, latest: Oct 05 2022 at 11:21)
 * [dusko: computable categories](topic/topic_dusko.3A.20computable.20categories.html) (3 messages, latest: Sep 15 2022 at 05:30)
-* [Jason Parker](topic/topic_Jason.20Parker.html) (2 messages, latest: Sep 13 2022 at 19:38)
 * [MonoidMusician (Verity S.)](topic/topic_MonoidMusician.20(Verity.20S.2E).html) (11 messages, latest: Aug 01 2022 at 16:17)
 * [motives](topic/topic_motives.html) (25 messages, latest: Jun 08 2022 at 17:35)
 * [Mike Shulman](topic/topic_Mike.20Shulman.html) (139 messages, latest: May 11 2022 at 04:17)
@@ -46,4 +46,4 @@ permalink: /stream/274877-practice:-our-work/index.html
 * [Conor Mc Bride](topic/topic_Conor.20Mc.20Bride.html) (60 messages, latest: Apr 08 2021 at 15:15)
 * [thoughts on sharing ideas](topic/topic_thoughts.20on.20sharing.20ideas.html) (20 messages, latest: Jan 31 2021 at 03:05)
 
-<hr><p>Last updated: Dec 09 2022 at 00:46 UTC</p>
+<hr><p>Last updated: Dec 10 2022 at 00:42 UTC</p>
