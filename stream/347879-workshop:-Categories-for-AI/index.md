@@ -9,6 +9,7 @@ permalink: /stream/347879-workshop:-Categories-for-AI/index.html
 
 ### Topics:
 
+* [Guest Lecture 3: Category Theory Inspired by LLMs](topic/topic_Guest.20Lecture.203.3A.20Category.20Theory.20Inspired.20by.20LLMs.html) (2 messages, latest: Dec 12 2022 at 18:37)
 * [Guest Lecture 1: Neural network layers as parametric spans](topic/topic_Guest.20Lecture.201.3A.20Neural.20network.20layers.20as.20parametric.20spans.html) (8 messages, latest: Nov 25 2022 at 14:29)
 * [Guest Lecture 2:Causal Model Abstraction & Grounding via Cat](topic/topic_Guest.20Lecture.202.3ACausal.20Model.20Abstraction.20.26.20Grounding.20via.20Cat.html) (9 messages, latest: Nov 23 2022 at 19:43)
 * [Guest Lecture 3: NLP and Transformers with Category Theory](topic/topic_Guest.20Lecture.203.3A.20NLP.20and.20Transformers.20with.20Category.20Theory.html) (1 message, latest: Nov 22 2022 at 14:21)
@@ -26,4 +27,4 @@ permalink: /stream/347879-workshop:-Categories-for-AI/index.html
 * [Welcome!](topic/topic_Welcome!.html) (1 message, latest: Oct 04 2022 at 21:01)
 * [stream events](topic/topic_stream.20events.html) (1 message, latest: Oct 03 2022 at 17:49)
 
-<hr><p>Last updated: Dec 12 2022 at 00:48 UTC</p>
+<hr><p>Last updated: Dec 13 2022 at 00:48 UTC</p>

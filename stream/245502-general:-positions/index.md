@@ -9,6 +9,7 @@ permalink: /stream/245502-general:-positions/index.html
 
 ### Topics:
 
+* [Topos Institute research software engineer](topic/topic_Topos.20Institute.20research.20software.20engineer.html) (1 message, latest: Dec 12 2022 at 18:38)
 * [Rule-based models and open systems at Strathclyde](topic/topic_Rule-based.20models.20and.20open.20systems.20at.20Strathclyde.html) (1 message, latest: Dec 05 2022 at 11:28)
 * [Topos Institute summer research positions](topic/topic_Topos.20Institute.20summer.20research.20positions.html) (26 messages, latest: Nov 24 2022 at 18:27)
 * [10 Funded PhD Studentships at Nottingham 2022](topic/topic_10.20Funded.20PhD.20Studentships.20at.20Nottingham.202022.html) (1 message, latest: Nov 21 2022 at 12:48)
@@ -72,4 +73,4 @@ permalink: /stream/245502-general:-positions/index.html
 * [PhD positions in Estonia](topic/topic_PhD.20positions.20in.20Estonia.html) (1 message, latest: Jun 27 2020 at 18:04)
 * [Companies that hire category people](topic/topic_Companies.20that.20hire.20category.20people.html) (2 messages, latest: May 13 2020 at 03:50)
 
-<hr><p>Last updated: Dec 12 2022 at 00:48 UTC</p>
+<hr><p>Last updated: Dec 13 2022 at 00:48 UTC</p>

@@ -9,6 +9,7 @@ permalink: /stream/229136-theory:-category-theory/index.html
 
 ### Topics:
 
+* [inverse image](topic/topic_inverse.20image.html) (13 messages, latest: Dec 12 2022 at 22:55)
 * [semistrictification theorem for tetracats?](topic/topic_semistrictification.20theorem.20for.20tetracats.3F.html) (38 messages, latest: Dec 10 2022 at 22:22)
 * [Fib has conjoints, but not companions](topic/topic_Fib.20has.20conjoints.2C.20but.20not.20companions.html) (58 messages, latest: Dec 10 2022 at 18:36)
 * [Fib has conjoints but not companions](topic/topic_Fib.20has.20conjoints.20but.20not.20companions.html) (2 messages, latest: Dec 09 2022 at 00:43)
@@ -348,4 +349,4 @@ permalink: /stream/229136-theory:-category-theory/index.html
 * [diagrams for application](topic/topic_diagrams.20for.20application.html) (13 messages, latest: Mar 24 2020 at 06:19)
 * [universal constructions](topic/topic_universal.20constructions.html) (8 messages, latest: Mar 23 2020 at 21:06)
 
-<hr><p>Last updated: Dec 12 2022 at 00:48 UTC</p>
+<hr><p>Last updated: Dec 13 2022 at 00:48 UTC</p>

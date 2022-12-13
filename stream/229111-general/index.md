@@ -9,6 +9,7 @@ permalink: /stream/229111-general/index.html
 
 ### Topics:
 
+* [Subject-specific CT->industry move advice](topic/topic_Subject-specific.20CT-.3Eindustry.20move.20advice.html) (7 messages, latest: Dec 12 2022 at 22:25)
 * [Ausi CT pics](topic/topic_Ausi.20CT.20pics.html) (9 messages, latest: Dec 11 2022 at 22:02)
 * [Compositionality](topic/topic_Compositionality.html) (15 messages, latest: Dec 07 2022 at 07:32)
 * [PhD position - biological modelling](topic/topic_PhD.20position.20-.20biological.20modelling.html) (1 message, latest: Dec 02 2022 at 10:06)
@@ -252,4 +253,4 @@ permalink: /stream/229111-general/index.html
 * [Tools for diagrams](topic/topic_Tools.20for.20diagrams.html) (78 messages, latest: Mar 25 2020 at 17:53)
 * [topic demonstration](topic/topic_topic.20demonstration.html) (2 messages, latest: Mar 23 2020 at 16:57)
 
-<hr><p>Last updated: Dec 12 2022 at 00:48 UTC</p>
+<hr><p>Last updated: Dec 13 2022 at 00:48 UTC</p>

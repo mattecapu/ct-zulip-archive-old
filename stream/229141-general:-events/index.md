@@ -9,6 +9,8 @@ permalink: /stream/229141-general:-events/index.html
 
 ### Topics:
 
+* [ACT 2023](topic/topic_ACT.202023.html) (27 messages, latest: Dec 12 2022 at 21:34)
+* [Adjoint School 2023](topic/topic_Adjoint.20School.202023.html) (4 messages, latest: Dec 12 2022 at 10:26)
 * [Virtual Double Categories Workshop](topic/topic_Virtual.20Double.20Categories.20Workshop.html) (8 messages, latest: Dec 05 2022 at 13:30)
 * [SYCO 10, Edinburgh](topic/topic_SYCO.2010.2C.20Edinburgh.html) (3 messages, latest: Nov 22 2022 at 17:12)
 * [ItaCa Fest 2022](topic/topic_ItaCa.20Fest.202022.html) (13 messages, latest: Nov 18 2022 at 10:20)
@@ -18,7 +20,6 @@ permalink: /stream/229141-general:-events/index.html
 * [Bénabou Colloquium](topic/topic_B.C3.A9nabou.20Colloquium.html) (1 message, latest: Oct 27 2022 at 10:34)
 * [Octoberfest](topic/topic_Octoberfest.html) (5 messages, latest: Oct 24 2022 at 17:35)
 * [Compositional Structures for Systems Engineering and Design](topic/topic_Compositional.20Structures.20for.20Systems.20Engineering.20and.20Design.html) (1 message, latest: Oct 18 2022 at 17:50)
-* [ACT 2023](topic/topic_ACT.202023.html) (21 messages, latest: Sep 26 2022 at 14:01)
 * [Thorsten Altenkirch 60 celebration](topic/topic_Thorsten.20Altenkirch.2060.20celebration.html) (2 messages, latest: Sep 08 2022 at 12:05)
 * [SYCO 9, Como](topic/topic_SYCO.209.2C.20Como.html) (35 messages, latest: Sep 08 2022 at 09:57)
 * [2023 Joint Mathematical Meeting](topic/topic_2023.20Joint.20Mathematical.20Meeting.html) (31 messages, latest: Aug 31 2022 at 17:46)
@@ -157,4 +158,4 @@ permalink: /stream/229141-general:-events/index.html
 * [April 1st: ACT@UCR](topic/topic_April.201st.3A.20ACT.40UCR.html) (3 messages, latest: Mar 26 2020 at 23:58)
 * [Google Sites problem](topic/topic_Google.20Sites.20problem.html) (4 messages, latest: Mar 25 2020 at 04:29)
 
-<hr><p>Last updated: Dec 12 2022 at 00:48 UTC</p>
+<hr><p>Last updated: Dec 13 2022 at 00:48 UTC</p>

@@ -10,11 +10,11 @@ permalink: /index.html
 
 * [learning: questions](stream/229199-learning:-questions/index.html) (785 topics)
 
-* [theory: category theory](stream/229136-theory:-category-theory/index.html) (338 topics)
+* [theory: category theory](stream/229136-theory:-category-theory/index.html) (339 topics)
 
-* [general](stream/229111-general/index.html) (242 topics)
+* [general](stream/229111-general/index.html) (243 topics)
 
-* [general: events](stream/229141-general:-events/index.html) (147 topics)
+* [general: events](stream/229141-general:-events/index.html) (148 topics)
 
 * [practice: applied ct](stream/229156-practice:-applied-ct/index.html) (139 topics)
 
@@ -24,11 +24,11 @@ permalink: /index.html
 
 * [seminar: Topos Colloquium](stream/269484-seminar:-Topos-Colloquium/index.html) (64 topics)
 
+* [general: positions](stream/245502-general:-positions/index.html) (63 topics)
+
 * [conference: ACT 2020](stream/243068-conference:-ACT-2020/index.html) (62 topics)
 
 * [general: mathematics](stream/266967-general:-mathematics/index.html) (62 topics)
-
-* [general: positions](stream/245502-general:-positions/index.html) (62 topics)
 
 * [ACT 2020](stream/243068-ACT-2020/index.html) (61 topics)
 
@@ -72,9 +72,9 @@ permalink: /index.html
 
 * [theory: physics](stream/251538-theory:-physics/index.html) (17 topics)
 
-* [philosophy](stream/229134-philosophy/index.html) (16 topics)
+* [workshop: Categories for AI](stream/347879-workshop:-Categories-for-AI/index.html) (17 topics)
 
-* [workshop: Categories for AI](stream/347879-workshop:-Categories-for-AI/index.html) (16 topics)
+* [philosophy](stream/229134-philosophy/index.html) (16 topics)
 
 * [ACT@UCR seminar](stream/229966-ACT@UCR-seminar/index.html) (15 topics)
 
@@ -180,4 +180,4 @@ permalink: /index.html
 
 * [theory: alternate presentations](stream/233122-theory:-alternate-presentations/index.html) (1 topic)
 
-<hr><p>Last updated: Dec 12 2022 at 00:48 UTC</p>
+<hr><p>Last updated: Dec 13 2022 at 00:48 UTC</p>
