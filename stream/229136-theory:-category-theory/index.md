@@ -9,12 +9,13 @@ permalink: /stream/229136-theory:-category-theory/index.html
 
 ### Topics:
 
-* [inverse image](topic/topic_inverse.20image.html) (13 messages, latest: Dec 12 2022 at 22:55)
+* [strict localizations](topic/topic_strict.20localizations.html) (2 messages, latest: Dec 14 2022 at 00:20)
+* [inverse image](topic/topic_inverse.20image.html) (35 messages, latest: Dec 13 2022 at 23:22)
+* [free cartesian structure over a monoidal category](topic/topic_free.20cartesian.20structure.20over.20a.20monoidal.20category.html) (13 messages, latest: Dec 13 2022 at 14:05)
 * [semistrictification theorem for tetracats?](topic/topic_semistrictification.20theorem.20for.20tetracats.3F.html) (38 messages, latest: Dec 10 2022 at 22:22)
 * [Fib has conjoints, but not companions](topic/topic_Fib.20has.20conjoints.2C.20but.20not.20companions.html) (58 messages, latest: Dec 10 2022 at 18:36)
 * [Fib has conjoints but not companions](topic/topic_Fib.20has.20conjoints.20but.20not.20companions.html) (2 messages, latest: Dec 09 2022 at 00:43)
 * [Semiadditive representable multicategories](topic/topic_Semiadditive.20representable.20multicategories.html) (54 messages, latest: Dec 08 2022 at 20:39)
-* [free cartesian structure over a monoidal category](topic/topic_free.20cartesian.20structure.20over.20a.20monoidal.20category.html) (9 messages, latest: Dec 08 2022 at 16:43)
 * [Categorical treatment of parametrized theories?](topic/topic_Categorical.20treatment.20of.20parametrized.20theories.3F.html) (70 messages, latest: Dec 06 2022 at 10:41)
 * [✔ Semiadditive representable multicategories](topic/topic_.E2.9C.94.20Semiadditive.20representable.20multicategories.html) (1 message, latest: Dec 06 2022 at 02:05)
 * [Relative monads](topic/topic_Relative.20monads.html) (4 messages, latest: Dec 02 2022 at 19:21)
@@ -349,4 +350,4 @@ permalink: /stream/229136-theory:-category-theory/index.html
 * [diagrams for application](topic/topic_diagrams.20for.20application.html) (13 messages, latest: Mar 24 2020 at 06:19)
 * [universal constructions](topic/topic_universal.20constructions.html) (8 messages, latest: Mar 23 2020 at 21:06)
 
-<hr><p>Last updated: Dec 13 2022 at 00:48 UTC</p>
+<hr><p>Last updated: Dec 14 2022 at 00:47 UTC</p>

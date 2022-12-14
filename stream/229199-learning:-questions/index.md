@@ -9,9 +9,10 @@ permalink: /stream/229199-learning:-questions/index.html
 
 ### Topics:
 
+* [Beginner questions](topic/topic_Beginner.20questions.html) (18 messages, latest: Dec 13 2022 at 19:10)
+* [category theory and philosophy books](topic/topic_category.20theory.20and.20philosophy.20books.html) (52 messages, latest: Dec 13 2022 at 14:30)
 * [presheaf action](topic/topic_presheaf.20action.html) (4 messages, latest: Dec 09 2022 at 09:39)
 * [dependence, posets, and ambiguity](topic/topic_dependence.2C.20posets.2C.20and.20ambiguity.html) (1 message, latest: Dec 05 2022 at 23:43)
-* [category theory and philosophy books](topic/topic_category.20theory.20and.20philosophy.20books.html) (51 messages, latest: Dec 05 2022 at 17:30)
 * [Taylor expansion of y'(x-h)](topic/topic_Taylor.20expansion.20of.20y'(x-h).html) (5 messages, latest: Dec 04 2022 at 12:22)
 * [dynamical system](topic/topic_dynamical.20system.html) (70 messages, latest: Dec 03 2022 at 11:06)
 * [evolutionary game](topic/topic_evolutionary.20game.html) (33 messages, latest: Dec 03 2022 at 01:47)
@@ -30,7 +31,6 @@ permalink: /stream/229199-learning:-questions/index.html
 * [Graded bicategory](topic/topic_Graded.20bicategory.html) (3 messages, latest: Nov 10 2022 at 10:29)
 * [Understanding Yoneda lemma](topic/topic_Understanding.20Yoneda.20lemma.html) (13 messages, latest: Nov 09 2022 at 17:23)
 * [HoTT and philosophy](topic/topic_HoTT.20and.20philosophy.html) (32 messages, latest: Nov 07 2022 at 20:24)
-* [Beginner questions](topic/topic_Beginner.20questions.html) (16 messages, latest: Nov 05 2022 at 13:48)
 * [Associativity of limits = limits commute with limits?](topic/topic_Associativity.20of.20limits.20.3D.20limits.20commute.20with.20limits.3F.html) (5 messages, latest: Nov 01 2022 at 19:36)
 * [Tensor product of convex spaces](topic/topic_Tensor.20product.20of.20convex.20spaces.html) (43 messages, latest: Nov 01 2022 at 18:26)
 * [Yoneda embedding of a cartesian closed category](topic/topic_Yoneda.20embedding.20of.20a.20cartesian.20closed.20category.html) (3 messages, latest: Nov 01 2022 at 17:35)
@@ -795,4 +795,4 @@ permalink: /stream/229199-learning:-questions/index.html
 * [Algebra (Aluffi) exercises](topic/topic_Algebra.20(Aluffi).20exercises.html) (55 messages, latest: Mar 27 2020 at 23:38)
 * [What is category theory about?](topic/topic_What.20is.20category.20theory.20about.3F.html) (16 messages, latest: Mar 26 2020 at 16:03)
 
-<hr><p>Last updated: Dec 13 2022 at 00:48 UTC</p>
+<hr><p>Last updated: Dec 14 2022 at 00:47 UTC</p>
