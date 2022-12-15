@@ -96,9 +96,9 @@ permalink: /index.html
 
 * [practice: economics](stream/231468-practice:-economics/index.html) (10 topics)
 
-* [conference: CT20->21](stream/298844-conference:-CT20->21/index.html) (9 topics)
+* [theory: concurrency](stream/235484-theory:-concurrency/index.html) (10 topics)
 
-* [theory: concurrency](stream/235484-theory:-concurrency/index.html) (9 topics)
+* [conference: CT20->21](stream/298844-conference:-CT20->21/index.html) (9 topics)
 
 * [languages: francais/French](stream/231124-languages:-francais/French/index.html) (8 topics)
 
@@ -180,4 +180,4 @@ permalink: /index.html
 
 * [theory: alternate presentations](stream/233122-theory:-alternate-presentations/index.html) (1 topic)
 
-<hr><p>Last updated: Dec 14 2022 at 00:47 UTC</p>
+<hr><p>Last updated: Dec 15 2022 at 00:47 UTC</p>
