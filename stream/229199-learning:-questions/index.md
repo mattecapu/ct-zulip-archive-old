@@ -9,8 +9,8 @@ permalink: /stream/229199-learning:-questions/index.html
 
 ### Topics:
 
+* [Beginner questions](topic/topic_Beginner.20questions.html) (19 messages, latest: Dec 17 2022 at 14:00)
 * [category theory and philosophy books](topic/topic_category.20theory.20and.20philosophy.20books.html) (54 messages, latest: Dec 16 2022 at 22:06)
-* [Beginner questions](topic/topic_Beginner.20questions.html) (18 messages, latest: Dec 13 2022 at 19:10)
 * [presheaf action](topic/topic_presheaf.20action.html) (4 messages, latest: Dec 09 2022 at 09:39)
 * [dependence, posets, and ambiguity](topic/topic_dependence.2C.20posets.2C.20and.20ambiguity.html) (1 message, latest: Dec 05 2022 at 23:43)
 * [Taylor expansion of y'(x-h)](topic/topic_Taylor.20expansion.20of.20y'(x-h).html) (5 messages, latest: Dec 04 2022 at 12:22)
@@ -795,4 +795,4 @@ permalink: /stream/229199-learning:-questions/index.html
 * [Algebra (Aluffi) exercises](topic/topic_Algebra.20(Aluffi).20exercises.html) (55 messages, latest: Mar 27 2020 at 23:38)
 * [What is category theory about?](topic/topic_What.20is.20category.20theory.20about.3F.html) (16 messages, latest: Mar 26 2020 at 16:03)
 
-<hr><p>Last updated: Dec 17 2022 at 00:42 UTC</p>
+<hr><p>Last updated: Dec 18 2022 at 00:43 UTC</p>
