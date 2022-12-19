@@ -20,9 +20,9 @@ permalink: /index.html
 
 * [theory: topos theory](stream/230087-theory:-topos-theory/index.html) (79 topics)
 
-* [theory: algebraic topology & homological algebra](stream/241590-theory:-algebraic-topology-&-homological-algebra/index.html) (65 topics)
+* [general: positions](stream/245502-general:-positions/index.html) (65 topics)
 
-* [general: positions](stream/245502-general:-positions/index.html) (64 topics)
+* [theory: algebraic topology & homological algebra](stream/241590-theory:-algebraic-topology-&-homological-algebra/index.html) (65 topics)
 
 * [seminar: Topos Colloquium](stream/269484-seminar:-Topos-Colloquium/index.html) (64 topics)
 
@@ -180,4 +180,4 @@ permalink: /index.html
 
 * [theory: alternate presentations](stream/233122-theory:-alternate-presentations/index.html) (1 topic)
 
-<hr><p>Last updated: Dec 18 2022 at 00:43 UTC</p>
+<hr><p>Last updated: Dec 19 2022 at 00:41 UTC</p>
