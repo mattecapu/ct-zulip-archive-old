@@ -9,7 +9,7 @@ permalink: /stream/311521-learning:-id-my-structure/index.html
 
 ### Topics:
 
-* [something between bicategories and double categories](topic/topic_something.20between.20bicategories.20and.20double.20categories.html) (17 messages, latest: Dec 07 2022 at 12:36)
+* [something between bicategories and double categories](topic/topic_something.20between.20bicategories.20and.20double.20categories.html) (18 messages, latest: Dec 19 2022 at 12:08)
 * [quiver with tensors?](topic/topic_quiver.20with.20tensors.3F.html) (6 messages, latest: Nov 17 2022 at 13:52)
 * [unbalanced isomorphism through an adjunction](topic/topic_unbalanced.20isomorphism.20through.20an.20adjunction.html) (2 messages, latest: Oct 03 2022 at 19:19)
 * [categories with the same objects sharing some morphisms](topic/topic_categories.20with.20the.20same.20objects.20sharing.20some.20morphisms.html) (9 messages, latest: Sep 21 2022 at 18:36)
@@ -18,4 +18,4 @@ permalink: /stream/311521-learning:-id-my-structure/index.html
 * [stream events](topic/topic_stream.20events.html) (9 messages, latest: Jan 04 2022 at 22:35)
 * [almost a full subcategory?](topic/topic_almost.20a.20full.20subcategory.3F.html) (15 messages, latest: Jan 04 2022 at 16:42)
 
-<hr><p>Last updated: Dec 19 2022 at 00:41 UTC</p>
+<hr><p>Last updated: Dec 20 2022 at 00:45 UTC</p>

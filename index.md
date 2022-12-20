@@ -12,7 +12,7 @@ permalink: /index.html
 
 * [theory: category theory](stream/229136-theory:-category-theory/index.html) (340 topics)
 
-* [general](stream/229111-general/index.html) (243 topics)
+* [general](stream/229111-general/index.html) (244 topics)
 
 * [general: events](stream/229141-general:-events/index.html) (148 topics)
 
@@ -20,15 +20,15 @@ permalink: /index.html
 
 * [theory: topos theory](stream/230087-theory:-topos-theory/index.html) (79 topics)
 
-* [general: positions](stream/245502-general:-positions/index.html) (65 topics)
+* [theory: algebraic topology & homological algebra](stream/241590-theory:-algebraic-topology-&-homological-algebra/index.html) (66 topics)
 
-* [theory: algebraic topology & homological algebra](stream/241590-theory:-algebraic-topology-&-homological-algebra/index.html) (65 topics)
+* [general: positions](stream/245502-general:-positions/index.html) (65 topics)
 
 * [seminar: Topos Colloquium](stream/269484-seminar:-Topos-Colloquium/index.html) (64 topics)
 
-* [conference: ACT 2020](stream/243068-conference:-ACT-2020/index.html) (62 topics)
+* [general: mathematics](stream/266967-general:-mathematics/index.html) (63 topics)
 
-* [general: mathematics](stream/266967-general:-mathematics/index.html) (62 topics)
+* [conference: ACT 2020](stream/243068-conference:-ACT-2020/index.html) (62 topics)
 
 * [ACT 2020](stream/243068-ACT-2020/index.html) (61 topics)
 
@@ -180,4 +180,4 @@ permalink: /index.html
 
 * [theory: alternate presentations](stream/233122-theory:-alternate-presentations/index.html) (1 topic)
 
-<hr><p>Last updated: Dec 19 2022 at 00:41 UTC</p>
+<hr><p>Last updated: Dec 20 2022 at 00:45 UTC</p>
