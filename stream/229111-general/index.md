@@ -9,7 +9,7 @@ permalink: /stream/229111-general/index.html
 
 ### Topics:
 
-* [Mathstodon](topic/topic_Mathstodon.html) (3 messages, latest: Dec 19 2022 at 22:40)
+* [Mathstodon](topic/topic_Mathstodon.html) (4 messages, latest: Dec 21 2022 at 06:00)
 * [Compositionality](topic/topic_Compositionality.html) (24 messages, latest: Dec 19 2022 at 00:13)
 * [Subject-specific CT->industry move advice](topic/topic_Subject-specific.20CT-.3Eindustry.20move.20advice.html) (7 messages, latest: Dec 12 2022 at 22:25)
 * [Ausi CT pics](topic/topic_Ausi.20CT.20pics.html) (9 messages, latest: Dec 11 2022 at 22:02)
@@ -254,4 +254,4 @@ permalink: /stream/229111-general/index.html
 * [Tools for diagrams](topic/topic_Tools.20for.20diagrams.html) (78 messages, latest: Mar 25 2020 at 17:53)
 * [topic demonstration](topic/topic_topic.20demonstration.html) (2 messages, latest: Mar 23 2020 at 16:57)
 
-<hr><p>Last updated: Dec 21 2022 at 00:41 UTC</p>
+<hr><p>Last updated: Dec 22 2022 at 00:44 UTC</p>

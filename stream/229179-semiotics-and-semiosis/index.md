@@ -16,4 +16,4 @@ permalink: /stream/229179-semiotics-and-semiosis/index.html
 * [higher structure](topic/topic_higher.20structure.html) (4 messages, latest: Mar 26 2020 at 12:56)
 * [stream events](topic/topic_stream.20events.html) (55 messages, latest: Mar 26 2020 at 12:41)
 
-<hr><p>Last updated: Dec 21 2022 at 00:41 UTC</p>
+<hr><p>Last updated: Dec 22 2022 at 00:44 UTC</p>
