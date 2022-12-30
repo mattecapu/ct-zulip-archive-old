@@ -9,6 +9,7 @@ permalink: /stream/229141-general:-events/index.html
 
 ### Topics:
 
+* [Brazilian Meeting in Category](topic/topic_Brazilian.20Meeting.20in.20Category.html) (1 message, latest: Dec 29 2022 at 16:23)
 * [ItaCa Fest 2022](topic/topic_ItaCa.20Fest.202022.html) (14 messages, latest: Dec 21 2022 at 08:33)
 * [Adjoint School 2023](topic/topic_Adjoint.20School.202023.html) (5 messages, latest: Dec 16 2022 at 10:33)
 * [ACT 2023](topic/topic_ACT.202023.html) (27 messages, latest: Dec 12 2022 at 21:34)
@@ -158,4 +159,4 @@ permalink: /stream/229141-general:-events/index.html
 * [April 1st: ACT@UCR](topic/topic_April.201st.3A.20ACT.40UCR.html) (3 messages, latest: Mar 26 2020 at 23:58)
 * [Google Sites problem](topic/topic_Google.20Sites.20problem.html) (4 messages, latest: Mar 25 2020 at 04:29)
 
-<hr><p>Last updated: Dec 29 2022 at 00:45 UTC</p>
+<hr><p>Last updated: Dec 30 2022 at 00:45 UTC</p>
