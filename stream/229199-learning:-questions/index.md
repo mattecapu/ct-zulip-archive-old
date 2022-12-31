@@ -9,13 +9,15 @@ permalink: /stream/229199-learning:-questions/index.html
 
 ### Topics:
 
+* [Beginner questions](topic/topic_Beginner.20questions.html) (21 messages, latest: Dec 30 2022 at 19:44)
+* [Intuition for the 'naturality axiom'](topic/topic_Intuition.20for.20the.20'naturality.20axiom'.html) (7 messages, latest: Dec 30 2022 at 17:31)
+* [Reference regarding Top and related categories](topic/topic_Reference.20regarding.20Top.20and.20related.20categories.html) (1 message, latest: Dec 30 2022 at 15:55)
 * [Axiom of choice](topic/topic_Axiom.20of.20choice.html) (6 messages, latest: Dec 28 2022 at 22:28)
 * [Dynamical systems](topic/topic_Dynamical.20systems.html) (7 messages, latest: Dec 28 2022 at 12:20)
 * [Rel category](topic/topic_Rel.20category.html) (14 messages, latest: Dec 28 2022 at 02:53)
 * [Fully faithful cofunctors](topic/topic_Fully.20faithful.20cofunctors.html) (3 messages, latest: Dec 27 2022 at 11:11)
 * [Applications of the naturality of Yoneda](topic/topic_Applications.20of.20the.20naturality.20of.20Yoneda.html) (7 messages, latest: Dec 26 2022 at 15:20)
 * [Dynamical system](topic/topic_Dynamical.20system.html) (2 messages, latest: Dec 25 2022 at 15:42)
-* [Beginner questions](topic/topic_Beginner.20questions.html) (19 messages, latest: Dec 17 2022 at 14:00)
 * [category theory and philosophy books](topic/topic_category.20theory.20and.20philosophy.20books.html) (54 messages, latest: Dec 16 2022 at 22:06)
 * [presheaf action](topic/topic_presheaf.20action.html) (4 messages, latest: Dec 09 2022 at 09:39)
 * [dependence, posets, and ambiguity](topic/topic_dependence.2C.20posets.2C.20and.20ambiguity.html) (1 message, latest: Dec 05 2022 at 23:43)
@@ -801,4 +803,4 @@ permalink: /stream/229199-learning:-questions/index.html
 * [Algebra (Aluffi) exercises](topic/topic_Algebra.20(Aluffi).20exercises.html) (55 messages, latest: Mar 27 2020 at 23:38)
 * [What is category theory about?](topic/topic_What.20is.20category.20theory.20about.3F.html) (16 messages, latest: Mar 26 2020 at 16:03)
 
-<hr><p>Last updated: Dec 30 2022 at 00:45 UTC</p>
+<hr><p>Last updated: Dec 31 2022 at 00:42 UTC</p>
