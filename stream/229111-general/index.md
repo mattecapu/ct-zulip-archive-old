@@ -9,6 +9,7 @@ permalink: /stream/229111-general/index.html
 
 ### Topics:
 
+* [learning CT](topic/topic_learning.20CT.html) (53 messages, latest: Dec 31 2022 at 23:31)
 * [Mathstodon](topic/topic_Mathstodon.html) (4 messages, latest: Dec 21 2022 at 06:00)
 * [Compositionality](topic/topic_Compositionality.html) (24 messages, latest: Dec 19 2022 at 00:13)
 * [Subject-specific CT->industry move advice](topic/topic_Subject-specific.20CT-.3Eindustry.20move.20advice.html) (7 messages, latest: Dec 12 2022 at 22:25)
@@ -180,7 +181,6 @@ permalink: /stream/229111-general/index.html
 * [Multisets, Monads and Physics](topic/topic_Multisets.2C.20Monads.20and.20Physics.html) (1 message, latest: Jul 15 2020 at 21:31)
 * [Tweet threads on mathematics](topic/topic_Tweet.20threads.20on.20mathematics.html) (3 messages, latest: Jul 15 2020 at 06:16)
 * [Joyal's manuscripts on quasicategories](topic/topic_Joyal's.20manuscripts.20on.20quasicategories.html) (6 messages, latest: Jul 13 2020 at 23:58)
-* [learning CT](topic/topic_learning.20CT.html) (51 messages, latest: Jul 12 2020 at 06:47)
 * [Hamiltonian for Graph Rewriting Systems](topic/topic_Hamiltonian.20for.20Graph.20Rewriting.20Systems.html) (2 messages, latest: Jul 07 2020 at 22:33)
 * [Higher Gauge Theory](topic/topic_Higher.20Gauge.20Theory.html) (1 message, latest: Jul 05 2020 at 10:07)
 * [commutative diagrams in Katex?](topic/topic_commutative.20diagrams.20in.20Katex.3F.html) (4 messages, latest: Jun 24 2020 at 13:05)
@@ -254,4 +254,4 @@ permalink: /stream/229111-general/index.html
 * [Tools for diagrams](topic/topic_Tools.20for.20diagrams.html) (78 messages, latest: Mar 25 2020 at 17:53)
 * [topic demonstration](topic/topic_topic.20demonstration.html) (2 messages, latest: Mar 23 2020 at 16:57)
 
-<hr><p>Last updated: Dec 31 2022 at 00:42 UTC</p>
+<hr><p>Last updated: Jan 01 2023 at 00:52 UTC</p>

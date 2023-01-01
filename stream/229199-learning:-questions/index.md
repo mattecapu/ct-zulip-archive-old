@@ -9,8 +9,8 @@ permalink: /stream/229199-learning:-questions/index.html
 
 ### Topics:
 
+* [Intuition for the 'naturality axiom'](topic/topic_Intuition.20for.20the.20'naturality.20axiom'.html) (17 messages, latest: Dec 31 2022 at 15:22)
 * [Beginner questions](topic/topic_Beginner.20questions.html) (21 messages, latest: Dec 30 2022 at 19:44)
-* [Intuition for the 'naturality axiom'](topic/topic_Intuition.20for.20the.20'naturality.20axiom'.html) (7 messages, latest: Dec 30 2022 at 17:31)
 * [Reference regarding Top and related categories](topic/topic_Reference.20regarding.20Top.20and.20related.20categories.html) (1 message, latest: Dec 30 2022 at 15:55)
 * [Axiom of choice](topic/topic_Axiom.20of.20choice.html) (6 messages, latest: Dec 28 2022 at 22:28)
 * [Dynamical systems](topic/topic_Dynamical.20systems.html) (7 messages, latest: Dec 28 2022 at 12:20)
@@ -803,4 +803,4 @@ permalink: /stream/229199-learning:-questions/index.html
 * [Algebra (Aluffi) exercises](topic/topic_Algebra.20(Aluffi).20exercises.html) (55 messages, latest: Mar 27 2020 at 23:38)
 * [What is category theory about?](topic/topic_What.20is.20category.20theory.20about.3F.html) (16 messages, latest: Mar 26 2020 at 16:03)
 
-<hr><p>Last updated: Dec 31 2022 at 00:42 UTC</p>
+<hr><p>Last updated: Jan 01 2023 at 00:52 UTC</p>
