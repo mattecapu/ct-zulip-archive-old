@@ -9,15 +9,15 @@ permalink: /stream/229111-general/index.html
 
 ### Topics:
 
-* [learning CT](topic/topic_learning.20CT.html) (57 messages, latest: Jan 03 2023 at 17:33)
+* [Introduce yourself!](topic/topic_Introduce.20yourself!.html) (10 messages, latest: Jan 04 2023 at 22:50)
+* [Compositionality](topic/topic_Compositionality.html) (27 messages, latest: Jan 04 2023 at 22:39)
+* [learning CT](topic/topic_learning.20CT.html) (69 messages, latest: Jan 04 2023 at 20:23)
 * [Mathstodon](topic/topic_Mathstodon.html) (4 messages, latest: Dec 21 2022 at 06:00)
-* [Compositionality](topic/topic_Compositionality.html) (24 messages, latest: Dec 19 2022 at 00:13)
 * [Subject-specific CT->industry move advice](topic/topic_Subject-specific.20CT-.3Eindustry.20move.20advice.html) (7 messages, latest: Dec 12 2022 at 22:25)
 * [Ausi CT pics](topic/topic_Ausi.20CT.20pics.html) (9 messages, latest: Dec 11 2022 at 22:02)
 * [PhD position - biological modelling](topic/topic_PhD.20position.20-.20biological.20modelling.html) (1 message, latest: Dec 02 2022 at 10:06)
 * [mathstodon](topic/topic_mathstodon.html) (27 messages, latest: Nov 21 2022 at 08:38)
 * [Information theoretic commutativity](topic/topic_Information.20theoretic.20commutativity.html) (3 messages, latest: Nov 18 2022 at 06:58)
-* [Introduce yourself!](topic/topic_Introduce.20yourself!.html) (9 messages, latest: Nov 15 2022 at 19:57)
 * [Programming Language Tools for ACT](topic/topic_Programming.20Language.20Tools.20for.20ACT.html) (6 messages, latest: Oct 28 2022 at 16:12)
 * [Quantum PL and verification community](topic/topic_Quantum.20PL.20and.20verification.20community.html) (1 message, latest: Oct 28 2022 at 08:28)
 * [quantum PL and verification community](topic/topic_quantum.20PL.20and.20verification.20community.html) (1 message, latest: Oct 27 2022 at 13:23)
@@ -254,4 +254,4 @@ permalink: /stream/229111-general/index.html
 * [Tools for diagrams](topic/topic_Tools.20for.20diagrams.html) (78 messages, latest: Mar 25 2020 at 17:53)
 * [topic demonstration](topic/topic_topic.20demonstration.html) (2 messages, latest: Mar 23 2020 at 16:57)
 
-<hr><p>Last updated: Jan 04 2023 at 00:47 UTC</p>
+<hr><p>Last updated: Jan 05 2023 at 00:46 UTC</p>

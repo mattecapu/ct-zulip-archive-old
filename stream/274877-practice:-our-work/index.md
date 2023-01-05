@@ -9,7 +9,8 @@ permalink: /stream/274877-practice:-our-work/index.html
 
 ### Topics:
 
-* [John Baez](topic/topic_John.20Baez.html) (897 messages, latest: Dec 31 2022 at 10:42)
+* [Mike Shulman](topic/topic_Mike.20Shulman.html) (143 messages, latest: Jan 05 2023 at 00:16)
+* [John Baez](topic/topic_John.20Baez.html) (908 messages, latest: Jan 04 2023 at 22:42)
 * [Jacob S Zelko](topic/topic_Jacob.20S.20Zelko.html) (19 messages, latest: Dec 28 2022 at 22:45)
 * [Jason Parker](topic/topic_Jason.20Parker.html) (3 messages, latest: Dec 09 2022 at 18:14)
 * [Jean-Baptiste Vienney](topic/topic_Jean-Baptiste.20Vienney.html) (28 messages, latest: Dec 07 2022 at 06:52)
@@ -32,7 +33,6 @@ permalink: /stream/274877-practice:-our-work/index.html
 * [dusko: computable categories](topic/topic_dusko.3A.20computable.20categories.html) (3 messages, latest: Sep 15 2022 at 05:30)
 * [MonoidMusician (Verity S.)](topic/topic_MonoidMusician.20(Verity.20S.2E).html) (11 messages, latest: Aug 01 2022 at 16:17)
 * [motives](topic/topic_motives.html) (25 messages, latest: Jun 08 2022 at 17:35)
-* [Mike Shulman](topic/topic_Mike.20Shulman.html) (139 messages, latest: May 11 2022 at 04:17)
 * [stream events](topic/topic_stream.20events.html) (7 messages, latest: May 09 2022 at 21:14)
 * [Jon Sterling](topic/topic_Jon.20Sterling.html) (27 messages, latest: May 08 2022 at 21:43)
 * [posina](topic/topic_posina.html) (1 message, latest: Feb 28 2022 at 21:20)
@@ -47,4 +47,4 @@ permalink: /stream/274877-practice:-our-work/index.html
 * [Conor Mc Bride](topic/topic_Conor.20Mc.20Bride.html) (60 messages, latest: Apr 08 2021 at 15:15)
 * [thoughts on sharing ideas](topic/topic_thoughts.20on.20sharing.20ideas.html) (20 messages, latest: Jan 31 2021 at 03:05)
 
-<hr><p>Last updated: Jan 04 2023 at 00:47 UTC</p>
+<hr><p>Last updated: Jan 05 2023 at 00:46 UTC</p>

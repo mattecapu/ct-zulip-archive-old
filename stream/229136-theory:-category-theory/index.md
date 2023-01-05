@@ -9,8 +9,8 @@ permalink: /stream/229136-theory:-category-theory/index.html
 
 ### Topics:
 
-* [Conjectures on generalized equipments](topic/topic_Conjectures.20on.20generalized.20equipments.html) (111 messages, latest: Jan 04 2023 at 00:00)
-* [Pullbacks and Cartesian monads](topic/topic_Pullbacks.20and.20Cartesian.20monads.html) (3 messages, latest: Jan 03 2023 at 19:12)
+* [Conjectures on generalized equipments](topic/topic_Conjectures.20on.20generalized.20equipments.html) (131 messages, latest: Jan 04 2023 at 16:17)
+* [Pullbacks and Cartesian monads](topic/topic_Pullbacks.20and.20Cartesian.20monads.html) (5 messages, latest: Jan 04 2023 at 13:35)
 * [Reference for Top and related categories](topic/topic_Reference.20for.20Top.20and.20related.20categories.html) (1 message, latest: Dec 30 2022 at 18:03)
 * [inverse image](topic/topic_inverse.20image.html) (67 messages, latest: Dec 16 2022 at 01:37)
 * [strict localizations](topic/topic_strict.20localizations.html) (6 messages, latest: Dec 15 2022 at 15:41)
@@ -353,4 +353,4 @@ permalink: /stream/229136-theory:-category-theory/index.html
 * [diagrams for application](topic/topic_diagrams.20for.20application.html) (13 messages, latest: Mar 24 2020 at 06:19)
 * [universal constructions](topic/topic_universal.20constructions.html) (8 messages, latest: Mar 23 2020 at 21:06)
 
-<hr><p>Last updated: Jan 04 2023 at 00:47 UTC</p>
+<hr><p>Last updated: Jan 05 2023 at 00:46 UTC</p>
