@@ -20,9 +20,9 @@ permalink: /index.html
 
 * [theory: topos theory](stream/230087-theory:-topos-theory/index.html) (79 topics)
 
-* [theory: algebraic topology & homological algebra](stream/241590-theory:-algebraic-topology-&-homological-algebra/index.html) (66 topics)
+* [general: positions](stream/245502-general:-positions/index.html) (66 topics)
 
-* [general: positions](stream/245502-general:-positions/index.html) (65 topics)
+* [theory: algebraic topology & homological algebra](stream/241590-theory:-algebraic-topology-&-homological-algebra/index.html) (66 topics)
 
 * [seminar: Topos Colloquium](stream/269484-seminar:-Topos-Colloquium/index.html) (64 topics)
 
@@ -126,6 +126,8 @@ permalink: /index.html
 
 * [languages: portugues](stream/303660-languages:-portugues/index.html) (5 topics)
 
+* [theory: biology](stream/336415-theory:-biology/index.html) (5 topics)
+
 * [general: terminology](stream/348484-general:-terminology/index.html) (4 topics)
 
 * [languages: espanol/Spanish](stream/231120-languages:-espanol/Spanish/index.html) (4 topics)
@@ -133,8 +135,6 @@ permalink: /index.html
 * [practice: neuroscience](stream/233925-practice:-neuroscience/index.html) (4 topics)
 
 * [practice: pedagogy](stream/295092-practice:-pedagogy/index.html) (4 topics)
-
-* [theory: biology](stream/336415-theory:-biology/index.html) (4 topics)
 
 * [Grothendieck](stream/307233-Grothendieck/index.html) (3 topics)
 
@@ -180,4 +180,4 @@ permalink: /index.html
 
 * [theory: alternate presentations](stream/233122-theory:-alternate-presentations/index.html) (1 topic)
 
-<hr><p>Last updated: Jan 05 2023 at 00:46 UTC</p>
+<hr><p>Last updated: Jan 06 2023 at 00:46 UTC</p>

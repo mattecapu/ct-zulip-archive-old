@@ -9,7 +9,8 @@ permalink: /stream/229136-theory:-category-theory/index.html
 
 ### Topics:
 
-* [Conjectures on generalized equipments](topic/topic_Conjectures.20on.20generalized.20equipments.html) (131 messages, latest: Jan 04 2023 at 16:17)
+* [Conjectures on generalized equipments](topic/topic_Conjectures.20on.20generalized.20equipments.html) (132 messages, latest: Jan 05 2023 at 18:27)
+* [left leg is fibration, right leg is opfibration](topic/topic_left.20leg.20is.20fibration.2C.20right.20leg.20is.20opfibration.html) (12 messages, latest: Jan 05 2023 at 08:51)
 * [Pullbacks and Cartesian monads](topic/topic_Pullbacks.20and.20Cartesian.20monads.html) (5 messages, latest: Jan 04 2023 at 13:35)
 * [Reference for Top and related categories](topic/topic_Reference.20for.20Top.20and.20related.20categories.html) (1 message, latest: Dec 30 2022 at 18:03)
 * [inverse image](topic/topic_inverse.20image.html) (67 messages, latest: Dec 16 2022 at 01:37)
@@ -29,7 +30,6 @@ permalink: /stream/229136-theory:-category-theory/index.html
 * ["Flow" to presheaf categories](topic/topic_.22Flow.22.20to.20presheaf.20categories.html) (8 messages, latest: Nov 18 2022 at 07:54)
 * [Dependent external tensor product](topic/topic_Dependent.20external.20tensor.20product.html) (21 messages, latest: Nov 08 2022 at 18:21)
 * [Left leg is fibration, right leg is opfibration](topic/topic_Left.20leg.20is.20fibration.2C.20right.20leg.20is.20opfibration.html) (2 messages, latest: Nov 08 2022 at 18:18)
-* [left leg is fibration, right leg is opfibration](topic/topic_left.20leg.20is.20fibration.2C.20right.20leg.20is.20opfibration.html) (10 messages, latest: Nov 08 2022 at 12:01)
 * [Indexed adjunctions](topic/topic_Indexed.20adjunctions.html) (5 messages, latest: Nov 07 2022 at 18:31)
 * ["On local adjointness of distributive bicategories"](topic/topic_.22On.20local.20adjointness.20of.20distributive.20bicategories.22.html) (3 messages, latest: Nov 07 2022 at 11:26)
 * [Linear analogues of topos](topic/topic_Linear.20analogues.20of.20topos.html) (16 messages, latest: Nov 01 2022 at 03:27)
@@ -353,4 +353,4 @@ permalink: /stream/229136-theory:-category-theory/index.html
 * [diagrams for application](topic/topic_diagrams.20for.20application.html) (13 messages, latest: Mar 24 2020 at 06:19)
 * [universal constructions](topic/topic_universal.20constructions.html) (8 messages, latest: Mar 23 2020 at 21:06)
 
-<hr><p>Last updated: Jan 05 2023 at 00:46 UTC</p>
+<hr><p>Last updated: Jan 06 2023 at 00:46 UTC</p>

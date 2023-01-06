@@ -9,9 +9,9 @@ permalink: /stream/229111-general/index.html
 
 ### Topics:
 
-* [Introduce yourself!](topic/topic_Introduce.20yourself!.html) (10 messages, latest: Jan 04 2023 at 22:50)
-* [Compositionality](topic/topic_Compositionality.html) (27 messages, latest: Jan 04 2023 at 22:39)
-* [learning CT](topic/topic_learning.20CT.html) (69 messages, latest: Jan 04 2023 at 20:23)
+* [learning CT](topic/topic_learning.20CT.html) (75 messages, latest: Jan 05 2023 at 18:22)
+* [Compositionality](topic/topic_Compositionality.html) (28 messages, latest: Jan 05 2023 at 06:41)
+* [Introduce yourself!](topic/topic_Introduce.20yourself!.html) (12 messages, latest: Jan 05 2023 at 01:43)
 * [Mathstodon](topic/topic_Mathstodon.html) (4 messages, latest: Dec 21 2022 at 06:00)
 * [Subject-specific CT->industry move advice](topic/topic_Subject-specific.20CT-.3Eindustry.20move.20advice.html) (7 messages, latest: Dec 12 2022 at 22:25)
 * [Ausi CT pics](topic/topic_Ausi.20CT.20pics.html) (9 messages, latest: Dec 11 2022 at 22:02)
@@ -254,4 +254,4 @@ permalink: /stream/229111-general/index.html
 * [Tools for diagrams](topic/topic_Tools.20for.20diagrams.html) (78 messages, latest: Mar 25 2020 at 17:53)
 * [topic demonstration](topic/topic_topic.20demonstration.html) (2 messages, latest: Mar 23 2020 at 16:57)
 
-<hr><p>Last updated: Jan 05 2023 at 00:46 UTC</p>
+<hr><p>Last updated: Jan 06 2023 at 00:46 UTC</p>

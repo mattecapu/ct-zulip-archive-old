@@ -9,6 +9,7 @@ permalink: /stream/245502-general:-positions/index.html
 
 ### Topics:
 
+* [Postdoc at the University of Manchester](topic/topic_Postdoc.20at.20the.20University.20of.20Manchester.html) (1 message, latest: Jan 05 2023 at 09:02)
 * [permanent position at Macquarie](topic/topic_permanent.20position.20at.20Macquarie.html) (1 message, latest: Dec 18 2022 at 14:30)
 * [Kleisli databases](topic/topic_Kleisli.20databases.html) (1 message, latest: Dec 13 2022 at 05:12)
 * [Topos Institute research software engineer](topic/topic_Topos.20Institute.20research.20software.20engineer.html) (1 message, latest: Dec 12 2022 at 18:38)
@@ -75,4 +76,4 @@ permalink: /stream/245502-general:-positions/index.html
 * [PhD positions in Estonia](topic/topic_PhD.20positions.20in.20Estonia.html) (1 message, latest: Jun 27 2020 at 18:04)
 * [Companies that hire category people](topic/topic_Companies.20that.20hire.20category.20people.html) (2 messages, latest: May 13 2020 at 03:50)
 
-<hr><p>Last updated: Jan 05 2023 at 00:46 UTC</p>
+<hr><p>Last updated: Jan 06 2023 at 00:46 UTC</p>
