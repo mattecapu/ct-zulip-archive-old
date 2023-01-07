@@ -9,6 +9,7 @@ permalink: /stream/241590-theory:-algebraic-topology-&-homological-algebra/index
 
 ### Topics:
 
+* [cotensor product of Hopf algebroids constructed from BP](topic/topic_cotensor.20product.20of.20Hopf.20algebroids.20constructed.20from.20BP.html) (1 message, latest: Jan 06 2023 at 14:22)
 * [realisation-nerve comonad, nondegenerate cells](topic/topic_realisation-nerve.20comonad.2C.20nondegenerate.20cells.html) (2 messages, latest: Dec 19 2022 at 16:21)
 * [Boundary fibration](topic/topic_Boundary.20fibration.html) (4 messages, latest: Nov 28 2022 at 18:17)
 * [adding degeneracies to semi-simplicial sets](topic/topic_adding.20degeneracies.20to.20semi-simplicial.20sets.html) (19 messages, latest: Sep 19 2022 at 11:30)
@@ -76,4 +77,4 @@ permalink: /stream/241590-theory:-algebraic-topology-&-homological-algebra/index
 * [simplicial sets](topic/topic_simplicial.20sets.html) (1 message, latest: Jul 02 2020 at 11:05)
 * [Secondary algebraic K-theory](topic/topic_Secondary.20algebraic.20K-theory.html) (13 messages, latest: Jun 01 2020 at 16:14)
 
-<hr><p>Last updated: Jan 06 2023 at 00:46 UTC</p>
+<hr><p>Last updated: Jan 07 2023 at 00:44 UTC</p>
