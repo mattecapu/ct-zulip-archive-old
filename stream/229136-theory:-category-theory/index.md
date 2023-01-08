@@ -9,7 +9,9 @@ permalink: /stream/229136-theory:-category-theory/index.html
 
 ### Topics:
 
-* [Conjectures on generalized equipments](topic/topic_Conjectures.20on.20generalized.20equipments.html) (132 messages, latest: Jan 05 2023 at 18:27)
+* [adjunction with icons](topic/topic_adjunction.20with.20icons.html) (5 messages, latest: Jan 08 2023 at 00:01)
+* [pushing fibrations](topic/topic_pushing.20fibrations.html) (13 messages, latest: Jan 07 2023 at 23:57)
+* [Conjectures on generalized equipments](topic/topic_Conjectures.20on.20generalized.20equipments.html) (140 messages, latest: Jan 07 2023 at 18:01)
 * [left leg is fibration, right leg is opfibration](topic/topic_left.20leg.20is.20fibration.2C.20right.20leg.20is.20opfibration.html) (12 messages, latest: Jan 05 2023 at 08:51)
 * [Pullbacks and Cartesian monads](topic/topic_Pullbacks.20and.20Cartesian.20monads.html) (5 messages, latest: Jan 04 2023 at 13:35)
 * [Reference for Top and related categories](topic/topic_Reference.20for.20Top.20and.20related.20categories.html) (1 message, latest: Dec 30 2022 at 18:03)
@@ -48,7 +50,6 @@ permalink: /stream/229136-theory:-category-theory/index.html
 * [morphism of modules over 2-rigs](topic/topic_morphism.20of.20modules.20over.202-rigs.html) (23 messages, latest: Oct 14 2022 at 15:02)
 * [cartesian morphisms as “fibred terminal”](topic/topic_cartesian.20morphisms.20as.20.E2.80.9Cfibred.20terminal.E2.80.9D.html) (35 messages, latest: Oct 14 2022 at 05:52)
 * [internal monoid actions](topic/topic_internal.20monoid.20actions.html) (22 messages, latest: Oct 12 2022 at 20:03)
-* [adjunction with icons](topic/topic_adjunction.20with.20icons.html) (2 messages, latest: Oct 12 2022 at 02:02)
 * [pushing forward a diagram at its “sinks”](topic/topic_pushing.20forward.20a.20diagram.20at.20its.20.E2.80.9Csinks.E2.80.9D.html) (5 messages, latest: Oct 09 2022 at 17:44)
 * [higher operads](topic/topic_higher.20operads.html) (8 messages, latest: Oct 07 2022 at 17:18)
 * [well-founded relations and Yoneda](topic/topic_well-founded.20relations.20and.20Yoneda.html) (5 messages, latest: Oct 04 2022 at 18:21)
@@ -353,4 +354,4 @@ permalink: /stream/229136-theory:-category-theory/index.html
 * [diagrams for application](topic/topic_diagrams.20for.20application.html) (13 messages, latest: Mar 24 2020 at 06:19)
 * [universal constructions](topic/topic_universal.20constructions.html) (8 messages, latest: Mar 23 2020 at 21:06)
 
-<hr><p>Last updated: Jan 07 2023 at 00:44 UTC</p>
+<hr><p>Last updated: Jan 08 2023 at 00:50 UTC</p>
