@@ -9,8 +9,9 @@ permalink: /stream/229136-theory:-category-theory/index.html
 
 ### Topics:
 
-* [adjunction with icons](topic/topic_adjunction.20with.20icons.html) (5 messages, latest: Jan 08 2023 at 00:01)
-* [pushing fibrations](topic/topic_pushing.20fibrations.html) (13 messages, latest: Jan 07 2023 at 23:57)
+* [adjunction with icons](topic/topic_adjunction.20with.20icons.html) (8 messages, latest: Jan 09 2023 at 00:08)
+* [Monads induced by a section/retraction pair](topic/topic_Monads.20induced.20by.20a.20section.2Fretraction.20pair.html) (9 messages, latest: Jan 08 2023 at 22:40)
+* [pushing fibrations](topic/topic_pushing.20fibrations.html) (26 messages, latest: Jan 08 2023 at 07:38)
 * [Conjectures on generalized equipments](topic/topic_Conjectures.20on.20generalized.20equipments.html) (140 messages, latest: Jan 07 2023 at 18:01)
 * [left leg is fibration, right leg is opfibration](topic/topic_left.20leg.20is.20fibration.2C.20right.20leg.20is.20opfibration.html) (12 messages, latest: Jan 05 2023 at 08:51)
 * [Pullbacks and Cartesian monads](topic/topic_Pullbacks.20and.20Cartesian.20monads.html) (5 messages, latest: Jan 04 2023 at 13:35)
@@ -354,4 +355,4 @@ permalink: /stream/229136-theory:-category-theory/index.html
 * [diagrams for application](topic/topic_diagrams.20for.20application.html) (13 messages, latest: Mar 24 2020 at 06:19)
 * [universal constructions](topic/topic_universal.20constructions.html) (8 messages, latest: Mar 23 2020 at 21:06)
 
-<hr><p>Last updated: Jan 08 2023 at 00:50 UTC</p>
+<hr><p>Last updated: Jan 09 2023 at 00:48 UTC</p>

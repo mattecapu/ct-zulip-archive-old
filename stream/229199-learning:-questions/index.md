@@ -9,6 +9,7 @@ permalink: /stream/229199-learning:-questions/index.html
 
 ### Topics:
 
+* [Degeneracies of (not in) simplicial sets](topic/topic_Degeneracies.20of.20(not.20in).20simplicial.20sets.html) (8 messages, latest: Jan 08 2023 at 20:04)
 * [monads with all algebras free](topic/topic_monads.20with.20all.20algebras.20free.html) (10 messages, latest: Jan 08 2023 at 00:10)
 * [Dynamical systems](topic/topic_Dynamical.20systems.html) (21 messages, latest: Jan 07 2023 at 15:49)
 * [Reference regarding Top and related categories](topic/topic_Reference.20regarding.20Top.20and.20related.20categories.html) (12 messages, latest: Jan 05 2023 at 14:57)
@@ -804,4 +805,4 @@ permalink: /stream/229199-learning:-questions/index.html
 * [Algebra (Aluffi) exercises](topic/topic_Algebra.20(Aluffi).20exercises.html) (55 messages, latest: Mar 27 2020 at 23:38)
 * [What is category theory about?](topic/topic_What.20is.20category.20theory.20about.3F.html) (16 messages, latest: Mar 26 2020 at 16:03)
 
-<hr><p>Last updated: Jan 08 2023 at 00:50 UTC</p>
+<hr><p>Last updated: Jan 09 2023 at 00:48 UTC</p>
