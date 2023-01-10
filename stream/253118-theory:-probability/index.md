@@ -9,6 +9,7 @@ permalink: /stream/253118-theory:-probability/index.html
 
 ### Topics:
 
+* ['almost closed'?](topic/topic_'almost.20closed'.3F.html) (6 messages, latest: Jan 09 2023 at 23:06)
 * [best intro in 2022](topic/topic_best.20intro.20in.202022.html) (18 messages, latest: Dec 23 2022 at 12:39)
 * [Bond Theory](topic/topic_Bond.20Theory.html) (1 message, latest: Dec 08 2022 at 22:00)
 * [Opposites of categories of measurable spaces](topic/topic_Opposites.20of.20categories.20of.20measurable.20spaces.html) (25 messages, latest: Nov 06 2022 at 08:14)
@@ -18,7 +19,6 @@ permalink: /stream/253118-theory:-probability/index.html
 * [textbook/lecture-style discussion of probability cats](topic/topic_textbook.2Flecture-style.20discussion.20of.20probability.20cats.html) (6 messages, latest: Sep 13 2022 at 20:01)
 * [Textbook/lecture-style discussion of probability cats](topic/topic_Textbook.2Flecture-style.20discussion.20of.20probability.20cats.html) (1 message, latest: Sep 11 2022 at 18:46)
 * [strengths of the Giry monad](topic/topic_strengths.20of.20the.20Giry.20monad.html) (4 messages, latest: Sep 02 2022 at 08:06)
-* ['almost closed'?](topic/topic_'almost.20closed'.3F.html) (1 message, latest: Aug 29 2022 at 09:20)
 * [unnormalised Markov categories with conditionals](topic/topic_unnormalised.20Markov.20categories.20with.20conditionals.html) (6 messages, latest: Jun 06 2022 at 08:58)
 * [Gaussian mixtures](topic/topic_Gaussian.20mixtures.html) (4 messages, latest: Jun 03 2022 at 07:28)
 * [Gaussian Mixtures](topic/topic_Gaussian.20Mixtures.html) (7 messages, latest: May 20 2022 at 18:47)
@@ -43,4 +43,4 @@ permalink: /stream/253118-theory:-probability/index.html
 * [Finitely additive probability](topic/topic_Finitely.20additive.20probability.html) (1 message, latest: Aug 16 2020 at 00:48)
 * [stream events](topic/topic_stream.20events.html) (2 messages, latest: Aug 16 2020 at 00:31)
 
-<hr><p>Last updated: Jan 09 2023 at 00:48 UTC</p>
+<hr><p>Last updated: Jan 10 2023 at 00:47 UTC</p>
