@@ -14,7 +14,7 @@ permalink: /index.html
 
 * [general](stream/229111-general/index.html) (245 topics)
 
-* [general: events](stream/229141-general:-events/index.html) (149 topics)
+* [general: events](stream/229141-general:-events/index.html) (151 topics)
 
 * [practice: applied ct](stream/229156-practice:-applied-ct/index.html) (139 topics)
 
@@ -32,7 +32,7 @@ permalink: /index.html
 
 * [ACT 2020](stream/243068-ACT-2020/index.html) (61 topics)
 
-* [theory: logic](stream/233104-theory:-logic/index.html) (54 topics)
+* [theory: logic](stream/233104-theory:-logic/index.html) (56 topics)
 
 * [practice: thermodynamics](stream/306433-practice:-thermodynamics/index.html) (53 topics)
 
@@ -180,4 +180,4 @@ permalink: /index.html
 
 * [theory: alternate presentations](stream/233122-theory:-alternate-presentations/index.html) (1 topic)
 
-<hr><p>Last updated: Jan 10 2023 at 00:47 UTC</p>
+<hr><p>Last updated: Jan 11 2023 at 00:45 UTC</p>

@@ -9,6 +9,8 @@ permalink: /stream/229141-general:-events/index.html
 
 ### Topics:
 
+* [HoTT/UF 2023](topic/topic_HoTT.2FUF.202023.html) (1 message, latest: Jan 10 2023 at 16:37)
+* [MFPS 2023](topic/topic_MFPS.202023.html) (1 message, latest: Jan 10 2023 at 12:51)
 * [Brazilian Meeting in Category](topic/topic_Brazilian.20Meeting.20in.20Category.html) (1 message, latest: Dec 29 2022 at 16:23)
 * [ItaCa Fest 2022](topic/topic_ItaCa.20Fest.202022.html) (14 messages, latest: Dec 21 2022 at 08:33)
 * [Adjoint School 2023](topic/topic_Adjoint.20School.202023.html) (5 messages, latest: Dec 16 2022 at 10:33)
@@ -159,4 +161,4 @@ permalink: /stream/229141-general:-events/index.html
 * [April 1st: ACT@UCR](topic/topic_April.201st.3A.20ACT.40UCR.html) (3 messages, latest: Mar 26 2020 at 23:58)
 * [Google Sites problem](topic/topic_Google.20Sites.20problem.html) (4 messages, latest: Mar 25 2020 at 04:29)
 
-<hr><p>Last updated: Jan 10 2023 at 00:47 UTC</p>
+<hr><p>Last updated: Jan 11 2023 at 00:45 UTC</p>

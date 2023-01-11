@@ -9,7 +9,7 @@ permalink: /stream/311521-learning:-id-my-structure/index.html
 
 ### Topics:
 
-* [relatively final functors](topic/topic_relatively.20final.20functors.html) (1 message, latest: Jan 08 2023 at 00:39)
+* [relatively final functors](topic/topic_relatively.20final.20functors.html) (3 messages, latest: Jan 11 2023 at 00:43)
 * [something between bicategories and double categories](topic/topic_something.20between.20bicategories.20and.20double.20categories.html) (18 messages, latest: Dec 19 2022 at 12:08)
 * [quiver with tensors?](topic/topic_quiver.20with.20tensors.3F.html) (6 messages, latest: Nov 17 2022 at 13:52)
 * [unbalanced isomorphism through an adjunction](topic/topic_unbalanced.20isomorphism.20through.20an.20adjunction.html) (2 messages, latest: Oct 03 2022 at 19:19)
@@ -19,4 +19,4 @@ permalink: /stream/311521-learning:-id-my-structure/index.html
 * [stream events](topic/topic_stream.20events.html) (9 messages, latest: Jan 04 2022 at 22:35)
 * [almost a full subcategory?](topic/topic_almost.20a.20full.20subcategory.3F.html) (15 messages, latest: Jan 04 2022 at 16:42)
 
-<hr><p>Last updated: Jan 10 2023 at 00:47 UTC</p>
+<hr><p>Last updated: Jan 11 2023 at 00:45 UTC</p>

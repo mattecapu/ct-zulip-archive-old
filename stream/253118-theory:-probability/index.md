@@ -9,7 +9,7 @@ permalink: /stream/253118-theory:-probability/index.html
 
 ### Topics:
 
-* ['almost closed'?](topic/topic_'almost.20closed'.3F.html) (6 messages, latest: Jan 09 2023 at 23:06)
+* ['almost closed'?](topic/topic_'almost.20closed'.3F.html) (7 messages, latest: Jan 10 2023 at 01:01)
 * [best intro in 2022](topic/topic_best.20intro.20in.202022.html) (18 messages, latest: Dec 23 2022 at 12:39)
 * [Bond Theory](topic/topic_Bond.20Theory.html) (1 message, latest: Dec 08 2022 at 22:00)
 * [Opposites of categories of measurable spaces](topic/topic_Opposites.20of.20categories.20of.20measurable.20spaces.html) (25 messages, latest: Nov 06 2022 at 08:14)
@@ -43,4 +43,4 @@ permalink: /stream/253118-theory:-probability/index.html
 * [Finitely additive probability](topic/topic_Finitely.20additive.20probability.html) (1 message, latest: Aug 16 2020 at 00:48)
 * [stream events](topic/topic_stream.20events.html) (2 messages, latest: Aug 16 2020 at 00:31)
 
-<hr><p>Last updated: Jan 10 2023 at 00:47 UTC</p>
+<hr><p>Last updated: Jan 11 2023 at 00:45 UTC</p>

@@ -9,6 +9,8 @@ permalink: /stream/233104-theory:-logic/index.html
 
 ### Topics:
 
+* [All models of classical logic are posets](topic/topic_All.20models.20of.20classical.20logic.20are.20posets.html) (10 messages, latest: Jan 10 2023 at 21:25)
+* [All Models of Classical Logic are Posets](topic/topic_All.20Models.20of.20Classical.20Logic.20are.20Posets.html) (1 message, latest: Jan 10 2023 at 13:36)
 * [Framework for expressing categorical doctrines and logics](topic/topic_Framework.20for.20expressing.20categorical.20doctrines.20and.20logics.html) (8 messages, latest: Nov 11 2022 at 21:04)
 * [linear version of Yoneda?](topic/topic_linear.20version.20of.20Yoneda.3F.html) (13 messages, latest: Nov 08 2022 at 16:12)
 * [Dependent universes?](topic/topic_Dependent.20universes.3F.html) (9 messages, latest: Oct 30 2022 at 17:20)
@@ -64,4 +66,4 @@ permalink: /stream/233104-theory:-logic/index.html
 * [Probability as logic](topic/topic_Probability.20as.20logic.html) (63 messages, latest: Apr 15 2020 at 12:33)
 * [stream events](topic/topic_stream.20events.html) (1 message, latest: Apr 10 2020 at 12:32)
 
-<hr><p>Last updated: Jan 10 2023 at 00:47 UTC</p>
+<hr><p>Last updated: Jan 11 2023 at 00:45 UTC</p>
