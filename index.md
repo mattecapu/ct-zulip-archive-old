@@ -8,13 +8,13 @@ permalink: /index.html
 
 ## Streams:
 
-* [learning: questions](stream/229199-learning:-questions/index.html) (795 topics)
+* [learning: questions](stream/229199-learning:-questions/index.html) (796 topics)
 
-* [theory: category theory](stream/229136-theory:-category-theory/index.html) (345 topics)
+* [theory: category theory](stream/229136-theory:-category-theory/index.html) (346 topics)
 
 * [general](stream/229111-general/index.html) (245 topics)
 
-* [general: events](stream/229141-general:-events/index.html) (151 topics)
+* [general: events](stream/229141-general:-events/index.html) (152 topics)
 
 * [practice: applied ct](stream/229156-practice:-applied-ct/index.html) (139 topics)
 
@@ -92,6 +92,8 @@ permalink: /index.html
 
 * [practice: translation](stream/260000-practice:-translation/index.html) (11 topics)
 
+* [learning: id my structure](stream/311521-learning:-id-my-structure/index.html) (10 topics)
+
 * [practice: ACT wiki](stream/243548-practice:-ACT-wiki/index.html) (10 topics)
 
 * [practice: economics](stream/231468-practice:-economics/index.html) (10 topics)
@@ -99,8 +101,6 @@ permalink: /index.html
 * [theory: concurrency](stream/235484-theory:-concurrency/index.html) (10 topics)
 
 * [conference: CT20->21](stream/298844-conference:-CT20->21/index.html) (9 topics)
-
-* [learning: id my structure](stream/311521-learning:-id-my-structure/index.html) (9 topics)
 
 * [languages: francais/French](stream/231124-languages:-francais/French/index.html) (8 topics)
 
@@ -180,4 +180,4 @@ permalink: /index.html
 
 * [theory: alternate presentations](stream/233122-theory:-alternate-presentations/index.html) (1 topic)
 
-<hr><p>Last updated: Jan 11 2023 at 00:45 UTC</p>
+<hr><p>Last updated: Jan 12 2023 at 00:47 UTC</p>
