@@ -9,6 +9,9 @@ permalink: /stream/229136-theory:-category-theory/index.html
 
 ### Topics:
 
+* [unbiased 2-categories](topic/topic_unbiased.202-categories.html) (8 messages, latest: Jan 12 2023 at 21:22)
+* [Adjunctions between tri-categories](topic/topic_Adjunctions.20between.20tri-categories.html) (1 message, latest: Jan 12 2023 at 13:28)
+* [or-fibrations](topic/topic_or-fibrations.html) (1 message, latest: Jan 12 2023 at 01:42)
 * [companion as "teleporting"](topic/topic_companion.20as.20.22teleporting.22.html) (4 messages, latest: Jan 11 2023 at 22:10)
 * [Conjectures on generalized equipments](topic/topic_Conjectures.20on.20generalized.20equipments.html) (144 messages, latest: Jan 11 2023 at 19:07)
 * [adjunction with icons](topic/topic_adjunction.20with.20icons.html) (9 messages, latest: Jan 09 2023 at 01:38)
@@ -356,4 +359,4 @@ permalink: /stream/229136-theory:-category-theory/index.html
 * [diagrams for application](topic/topic_diagrams.20for.20application.html) (13 messages, latest: Mar 24 2020 at 06:19)
 * [universal constructions](topic/topic_universal.20constructions.html) (8 messages, latest: Mar 23 2020 at 21:06)
 
-<hr><p>Last updated: Jan 12 2023 at 00:47 UTC</p>
+<hr><p>Last updated: Jan 13 2023 at 00:46 UTC</p>
