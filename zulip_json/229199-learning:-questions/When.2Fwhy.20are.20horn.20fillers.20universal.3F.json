@@ -4,5 +4,113 @@
         "id": 321281313,
         "sender_full_name": "James Deikun",
         "timestamp": 1673654622
+    },
+    {
+        "content": "<p>It comes down to whether, in whatever model you are using, universality is \"algebraic\" or not, in the sense that universal cells in a fibrant object are or are not classified by morphisms from a \"representing\" object.</p>\n<p>When this is the case, you can avoid specifying \"these cells need to be universal in the filler\", just replace the \"representing object of a generic cell\" with the \"representing object of a universal cell\" whenever needed.</p>",
+        "id": 321316638,
+        "sender_full_name": "Amar Hadzihasanovic",
+        "timestamp": 1673685815
+    },
+    {
+        "content": "<p>For example, in quasicategories as a model of <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"false\">(</mo><mi mathvariant=\"normal\">∞</mi><mo separator=\"true\">,</mo><mn>1</mn><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">(\\infty, 1)</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mopen\">(</span><span class=\"mord\">∞</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord\">1</span><span class=\"mclose\">)</span></span></span></span>-categories, <em>every</em> simplex of dimension 2 or higher is \"universal\"/a weakly invertible cell, so universal n-simplices for n &gt; 1 in fibrant objects are just classified by the \"generic\" n-simplex, and you don't need to specify anything.</p>",
+        "id": 321316905,
+        "sender_full_name": "Amar Hadzihasanovic",
+        "timestamp": 1673686000
+    },
+    {
+        "content": "<p>However, if you try to use simplicial sets to model <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"false\">(</mo><mi mathvariant=\"normal\">∞</mi><mo separator=\"true\">,</mo><mi>n</mi><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">(\\infty, n)</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mopen\">(</span><span class=\"mord\">∞</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord mathnormal\">n</span><span class=\"mclose\">)</span></span></span></span>-categories for <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>n</mi><mo>&gt;</mo><mn>1</mn></mrow><annotation encoding=\"application/x-tex\">n &gt; 1</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.5782em;vertical-align:-0.0391em;\"></span><span class=\"mord mathnormal\">n</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">&gt;</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6444em;\"></span><span class=\"mord\">1</span></span></span></span>, then universal cells stop being algebraic; instead, universality is specified itself by lifting properties, different from those of generic cells.<br>\nSo what people do is introduce a \"marking\" of cells that are meant to be universal, and have different lifting conditions depending on the marking.<br>\nThis is how the complicial model of higher categories works, and similarly the comical model based on marked cubical sets.</p>",
+        "id": 321317388,
+        "sender_full_name": "Amar Hadzihasanovic",
+        "timestamp": 1673686283
+    },
+    {
+        "content": "<p>The \"marking\" is what you call \"put in by hand\" universality conditions... I have not seen opetopic models presented in terms of \"marked opetopic sets\" but I think that it would be one way of specifying the same data.</p>",
+        "id": 321317654,
+        "sender_full_name": "Amar Hadzihasanovic",
+        "timestamp": 1673686443
+    },
+    {
+        "content": "<p>AFAIK my own model of higher categories based on diagrammatic sets is the only model of this kind where universal cells are \"algebraic\" in all dimensions.</p>",
+        "id": 321317845,
+        "sender_full_name": "Amar Hadzihasanovic",
+        "timestamp": 1673686557
+    },
+    {
+        "content": "<p>(Of course the marking itself is a way of \"algebraicising\" universality, since the generic shape with a marked top-dimensional cell becomes a representing object for universal cells of that shape and dimension. When I say \"non-algebraic\" I mean \"non-algebraic wrt the pure, unmarked shapes\".)</p>",
+        "id": 321318311,
+        "sender_full_name": "Amar Hadzihasanovic",
+        "timestamp": 1673686861
+    },
+    {
+        "content": "<p>Ah, so basically:</p>\n<ul>\n<li>Horn-filling conditions basically can't distinguish a cell from a cell of the same \"shape\" in the same context, so</li>\n<li>if you need some cells to have a \"universality\" that some cells in an otherwise identical context don't, then</li>\n<li>you need to have some \"shadow cell\" attached to it to identify it, which</li>\n<li>is often abbreviated away by \"marking\" some cells?</li>\n</ul>",
+        "id": 321361783,
+        "sender_full_name": "James Deikun",
+        "timestamp": 1673705024
+    },
+    {
+        "content": "<p>Yeah, that's it: if you already have a “model” of a universal cell in your category, then you can just attach this model; if you don't have such a “model”, then you have to introduce markings (which takes you out of your original shape category and into a category of “marked shapes”).</p>",
+        "id": 321364331,
+        "sender_full_name": "Amar Hadzihasanovic",
+        "timestamp": 1673706146
+    },
+    {
+        "content": "<p>Which is annoying when you're looking for a way to specify some data geometrically since the marking seems somewhat algebraic.  Like, you can't ensure everything that should be marked is, because horn filling conditions are like Horn clauses (heh), \"whenever this conjunction of conditions obtains so does this other one\", you can't say \"if (whenever X obtains Y obtains) then Z obtains\".</p>",
+        "id": 321364748,
+        "sender_full_name": "James Deikun",
+        "timestamp": 1673706343
+    },
+    {
+        "content": "<p>(So you can't say \"whenever a cell always acts like it has a marking, it actually is marked\" as a horn filling condition.)</p>",
+        "id": 321365108,
+        "sender_full_name": "James Deikun",
+        "timestamp": 1673706486
+    },
+    {
+        "content": "<p>Is there any connection between this need for auxiliary shapes and, say, non-fullness of inclusions?  It seems clear that needing auxiliary shapes doesn't imply non-fullness of the inclusion but does the other direction hold?</p>",
+        "id": 321365860,
+        "sender_full_name": "James Deikun",
+        "timestamp": 1673706828
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"438995\">James Deikun</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/When.2Fwhy.20are.20horn.20fillers.20universal.3F/near/321365108\">said</a>:</p>\n<blockquote>\n<p>(So you can't say \"whenever a cell always acts like it has a marking, it actually is marked\" as a horn filling condition.)</p>\n</blockquote>\n<p>Yeah, no, that's an extra property of fibrant objects. In the “complicial set” model these ones are called “saturated”.</p>",
+        "id": 321397953,
+        "sender_full_name": "Amar Hadzihasanovic",
+        "timestamp": 1673722675
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"438995\">James Deikun</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/When.2Fwhy.20are.20horn.20fillers.20universal.3F/near/321365860\">said</a>:</p>\n<blockquote>\n<p>Is there any connection between this need for auxiliary shapes and, say, non-fullness of inclusions?  It seems clear that needing auxiliary shapes doesn't imply non-fullness of the inclusion but does the other direction hold?</p>\n</blockquote>\n<p>You mean whether “every morphism between fibrant objects is a 'functor'”? <br>\nWell, definitely if universal cells are “algebraic”, then they are automatically preserved by every morphism of fibrant objects: if a universal cell <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>x</mi></mrow><annotation encoding=\"application/x-tex\">x</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.4306em;\"></span><span class=\"mord mathnormal\">x</span></span></span></span> of shape <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>S</mi></mrow><annotation encoding=\"application/x-tex\">S</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.05764em;\">S</span></span></span></span> in <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>X</mi></mrow><annotation encoding=\"application/x-tex\">X</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.07847em;\">X</span></span></span></span> fibrant is represented by a morphism <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mover accent=\"true\"><mi>x</mi><mo>~</mo></mover><mo>:</mo><msup><mi>S</mi><mi>U</mi></msup><mo>→</mo><mi>X</mi></mrow><annotation encoding=\"application/x-tex\">\\tilde{x}: S^U \\to X</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6679em;\"></span><span class=\"mord accent\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.6679em;\"><span style=\"top:-3em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"mord mathnormal\">x</span></span><span style=\"top:-3.35em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"accent-body\" style=\"left:-0.2222em;\"><span class=\"mord\">~</span></span></span></span></span></span></span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">:</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.8413em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.05764em;\">S</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.8413em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathnormal mtight\" style=\"margin-right:0.10903em;\">U</span></span></span></span></span></span></span></span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">→</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.07847em;\">X</span></span></span></span>, then a morphism <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>f</mi><mo>:</mo><mi>X</mi><mo>→</mo><mi>Y</mi></mrow><annotation encoding=\"application/x-tex\">f: X \\to Y</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8889em;vertical-align:-0.1944em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.10764em;\">f</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">:</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.07847em;\">X</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">→</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.22222em;\">Y</span></span></span></span> with <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>Y</mi></mrow><annotation encoding=\"application/x-tex\">Y</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.22222em;\">Y</span></span></span></span> fibrant takes <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>x</mi></mrow><annotation encoding=\"application/x-tex\">x</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.4306em;\"></span><span class=\"mord mathnormal\">x</span></span></span></span> to the cell represented by <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mover accent=\"true\"><mi>x</mi><mo>~</mo></mover><mo separator=\"true\">;</mo><mi>f</mi><mo>:</mo><msup><mi>S</mi><mi>U</mi></msup><mo>→</mo><mi>Y</mi></mrow><annotation encoding=\"application/x-tex\">\\tilde{x};f: S^U \\to Y</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8889em;vertical-align:-0.1944em;\"></span><span class=\"mord accent\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.6679em;\"><span style=\"top:-3em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"mord mathnormal\">x</span></span><span style=\"top:-3.35em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"accent-body\" style=\"left:-0.2222em;\"><span class=\"mord\">~</span></span></span></span></span></span></span><span class=\"mpunct\">;</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.10764em;\">f</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">:</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.8413em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.05764em;\">S</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.8413em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathnormal mtight\" style=\"margin-right:0.10903em;\">U</span></span></span></span></span></span></span></span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">→</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.22222em;\">Y</span></span></span></span> which is universal.</p>",
+        "id": 321398508,
+        "sender_full_name": "Amar Hadzihasanovic",
+        "timestamp": 1673722982
+    },
+    {
+        "content": "<p>And then if composites and units are exhibited by universal cells, this should imply that any morphism sends composites to composites and units to units.</p>",
+        "id": 321398767,
+        "sender_full_name": "Amar Hadzihasanovic",
+        "timestamp": 1673723125
+    },
+    {
+        "content": "<p>So yeah, by contraposition if you don't have fullness, then you don't have “algebraic universal cells” and you need markings/auxiliary shapes.</p>",
+        "id": 321398896,
+        "sender_full_name": "Amar Hadzihasanovic",
+        "timestamp": 1673723185
+    },
+    {
+        "content": "<p>I would be very surprised if there were cases in which you don't have “algebraic universality”, yet all morphisms preserve universal cells, but it's not obvious that it is impossible.</p>",
+        "id": 321399062,
+        "sender_full_name": "Amar Hadzihasanovic",
+        "timestamp": 1673723290
+    },
+    {
+        "content": "<p>Of course “not all morphisms preserve universals” may be your intended behaviour, for example in representable multi(bi)categories where generic morphisms are lax (monoidal) functors, and the ones that preserve universals are the strong functors.</p>",
+        "id": 321399150,
+        "sender_full_name": "Amar Hadzihasanovic",
+        "timestamp": 1673723361
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276363\">Amar Hadzihasanovic</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/When.2Fwhy.20are.20horn.20fillers.20universal.3F/near/321399062\">said</a>:</p>\n<blockquote>\n<p>I would be very surprised if there were cases in which you don't have “algebraic universality”, yet all morphisms preserve universal cells, but it's not obvious that it is impossible.</p>\n</blockquote>\n<p>In the case of <a href=\"https://ncatlab.org/nlab/show/virtual%20equipments\">[[virtual equipments]]</a> all the virtual double category functors between them preserve the Cartesian squares for the restrictions (but not the opCartesian squares for the units).  So at least the inclusion of virtual equipments in virtual double categories with units/unit preserving functors is full, and it seems like they are distinguished as the virtual double categories (with units) over 1 by restriction-<em>lifting</em> functors.  Yet I can't see how to describe restriction-lifting functors, or restrictions full stop, by a horn-filling condition without an extra shape for the Cartesian squares.</p>",
+        "id": 321417734,
+        "sender_full_name": "James Deikun",
+        "timestamp": 1673737920
     }
 ]
