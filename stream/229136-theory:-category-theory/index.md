@@ -9,6 +9,7 @@ permalink: /stream/229136-theory:-category-theory/index.html
 
 ### Topics:
 
+* [Lawvere-Tierney topologies](topic/topic_Lawvere-Tierney.20topologies.html) (6 messages, latest: Jan 16 2023 at 20:23)
 * [unbiased 2-categories](topic/topic_unbiased.202-categories.html) (10 messages, latest: Jan 15 2023 at 16:49)
 * [Adjunctions between tri-categories](topic/topic_Adjunctions.20between.20tri-categories.html) (7 messages, latest: Jan 14 2023 at 01:16)
 * [Conjectures on generalized equipments](topic/topic_Conjectures.20on.20generalized.20equipments.html) (145 messages, latest: Jan 13 2023 at 23:48)
@@ -361,4 +362,4 @@ permalink: /stream/229136-theory:-category-theory/index.html
 * [diagrams for application](topic/topic_diagrams.20for.20application.html) (13 messages, latest: Mar 24 2020 at 06:19)
 * [universal constructions](topic/topic_universal.20constructions.html) (8 messages, latest: Mar 23 2020 at 21:06)
 
-<hr><p>Last updated: Jan 16 2023 at 00:45 UTC</p>
+<hr><p>Last updated: Jan 17 2023 at 00:46 UTC</p>
