@@ -9,6 +9,7 @@ permalink: /stream/229136-theory:-category-theory/index.html
 
 ### Topics:
 
+* [taking algebras is the algebra of the taking monad monad](topic/topic_taking.20algebras.20is.20the.20algebra.20of.20the.20taking.20monad.20monad.html) (9 messages, latest: Jan 18 2023 at 15:14)
 * [Lawvere-Tierney topologies](topic/topic_Lawvere-Tierney.20topologies.html) (6 messages, latest: Jan 16 2023 at 20:23)
 * [unbiased 2-categories](topic/topic_unbiased.202-categories.html) (10 messages, latest: Jan 15 2023 at 16:49)
 * [Adjunctions between tri-categories](topic/topic_Adjunctions.20between.20tri-categories.html) (7 messages, latest: Jan 14 2023 at 01:16)
@@ -362,4 +363,4 @@ permalink: /stream/229136-theory:-category-theory/index.html
 * [diagrams for application](topic/topic_diagrams.20for.20application.html) (13 messages, latest: Mar 24 2020 at 06:19)
 * [universal constructions](topic/topic_universal.20constructions.html) (8 messages, latest: Mar 23 2020 at 21:06)
 
-<hr><p>Last updated: Jan 18 2023 at 00:47 UTC</p>
+<hr><p>Last updated: Jan 19 2023 at 00:48 UTC</p>

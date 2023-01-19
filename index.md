@@ -8,9 +8,9 @@ permalink: /index.html
 
 ## Streams:
 
-* [learning: questions](stream/229199-learning:-questions/index.html) (800 topics)
+* [learning: questions](stream/229199-learning:-questions/index.html) (802 topics)
 
-* [theory: category theory](stream/229136-theory:-category-theory/index.html) (352 topics)
+* [theory: category theory](stream/229136-theory:-category-theory/index.html) (353 topics)
 
 * [general](stream/229111-general/index.html) (245 topics)
 
@@ -20,9 +20,9 @@ permalink: /index.html
 
 * [theory: topos theory](stream/230087-theory:-topos-theory/index.html) (79 topics)
 
-* [theory: algebraic topology & homological algebra](stream/241590-theory:-algebraic-topology-&-homological-algebra/index.html) (68 topics)
+* [general: positions](stream/245502-general:-positions/index.html) (68 topics)
 
-* [general: positions](stream/245502-general:-positions/index.html) (67 topics)
+* [theory: algebraic topology & homological algebra](stream/241590-theory:-algebraic-topology-&-homological-algebra/index.html) (68 topics)
 
 * [seminar: Topos Colloquium](stream/269484-seminar:-Topos-Colloquium/index.html) (64 topics)
 
@@ -112,6 +112,8 @@ permalink: /index.html
 
 * [seminar: EM-cats](stream/298571-seminar:-EM-cats/index.html) (7 topics)
 
+* [general: terminology & notation](stream/348484-general:-terminology-&-notation/index.html) (6 topics)
+
 * [semiotics and semiosis](stream/229179-semiotics-and-semiosis/index.html) (6 topics)
 
 * [theory: algebra & CT](stream/230123-theory:-algebra-&-CT/index.html) (6 topics)
@@ -119,8 +121,6 @@ permalink: /index.html
 * [theory: analysis](stream/281848-theory:-analysis/index.html) (6 topics)
 
 * [ACT@UMD seminar](stream/229967-ACT@UMD-seminar/index.html) (5 topics)
-
-* [general: terminology & notation](stream/348484-general:-terminology-&-notation/index.html) (5 topics)
 
 * [languages: Deutsch/German](stream/231144-languages:-Deutsch/German/index.html) (5 topics)
 
@@ -180,4 +180,4 @@ permalink: /index.html
 
 * [theory: alternate presentations](stream/233122-theory:-alternate-presentations/index.html) (1 topic)
 
-<hr><p>Last updated: Jan 18 2023 at 00:47 UTC</p>
+<hr><p>Last updated: Jan 19 2023 at 00:48 UTC</p>
