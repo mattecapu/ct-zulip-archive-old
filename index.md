@@ -8,13 +8,13 @@ permalink: /index.html
 
 ## Streams:
 
-* [learning: questions](stream/229199-learning:-questions/index.html) (802 topics)
+* [learning: questions](stream/229199-learning:-questions/index.html) (803 topics)
 
-* [theory: category theory](stream/229136-theory:-category-theory/index.html) (353 topics)
+* [theory: category theory](stream/229136-theory:-category-theory/index.html) (354 topics)
 
 * [general](stream/229111-general/index.html) (245 topics)
 
-* [general: events](stream/229141-general:-events/index.html) (152 topics)
+* [general: events](stream/229141-general:-events/index.html) (153 topics)
 
 * [practice: applied ct](stream/229156-practice:-applied-ct/index.html) (139 topics)
 
@@ -90,9 +90,9 @@ permalink: /index.html
 
 * [learning: reading groups](stream/232160-learning:-reading-groups/index.html) (12 topics)
 
-* [practice: translation](stream/260000-practice:-translation/index.html) (11 topics)
+* [learning: id my structure](stream/311521-learning:-id-my-structure/index.html) (11 topics)
 
-* [learning: id my structure](stream/311521-learning:-id-my-structure/index.html) (10 topics)
+* [practice: translation](stream/260000-practice:-translation/index.html) (11 topics)
 
 * [practice: ACT wiki](stream/243548-practice:-ACT-wiki/index.html) (10 topics)
 
@@ -180,4 +180,4 @@ permalink: /index.html
 
 * [theory: alternate presentations](stream/233122-theory:-alternate-presentations/index.html) (1 topic)
 
-<hr><p>Last updated: Jan 19 2023 at 00:48 UTC</p>
+<hr><p>Last updated: Jan 20 2023 at 00:47 UTC</p>

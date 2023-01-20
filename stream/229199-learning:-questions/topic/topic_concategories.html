@@ -1,0 +1,155 @@
+---
+layout: archive
+title: Zulip Chat Archive
+permalink: /stream/229199-learning:-questions/topic/topic_concategories.html
+---
+
+<h2>Stream: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/index.html">learning: questions</a></h2>
+<h3>Topic: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/topic_concategories.html">concategories</a></h3>
+
+<hr>
+
+<base href="https://categorytheory.zulipchat.com/">
+
+{% raw %}
+
+<a name="322281057"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/concategories/near/322281057" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Cole Comfort <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/topic_concategories.html#322281057">(Jan 19 2023 at 13:34)</a>:</h4>
+<p>Does anyone have a reference for the notion of concategory mentioned in the following slides:<br>
+<a href="https://www.cl.cam.ac.uk/events/syco/2/slides/levy.pdf">https://www.cl.cam.ac.uk/events/syco/2/slides/levy.pdf</a></p>
+<p>The basic idea is that a concategory is like a polycategory where instead of cutting along a single object; one cuts along the whole list of objects at once or cuts them together by tensoring the domain and codomain lists together.  The notion of morphism act pointwise like in the case of polycategories, which distinguishes them from strict monoidal categories and functors.</p>
+<p>I suspect that this can be formalized in terms of a generalized polycategory arizing from something like the doubly iterated finite list monad, but like I said the literature is rather sparse.</p>
+
+
+
+<a name="322287617"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/concategories/near/322287617" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nathanael Arkor <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/topic_concategories.html#322287617">(Jan 19 2023 at 14:05)</a>:</h4>
+<p>The reason the literature appears sparse is because what Levy calls "concategories" are usually called (coloured/multisorted) <a href="https://ncatlab.org/nlab/show/PROs">[[PROs]]</a> in the literature. However, Levy is making a conceptual distinction between the traditional notion of PRO (as a kind of theory / freely generated monoidal category), and a polycategory-like structure (analogous to the conceptual distinction between an operad and a multicategory).</p>
+
+
+
+<a name="322292662"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/concategories/near/322292662" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Cole Comfort <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/topic_concategories.html#322292662">(Jan 19 2023 at 14:24)</a>:</h4>
+<p>The problem I am running into is trying to define a lax normal functor from a prop to a "2-prop" (displayed props).  But this functor doesn't strictly preserve identities on tensors of generating objects, only on the generating objects themselves.</p>
+<p>Maybe I am just missing a subtlety in the definition of a morphism of props. It is not just a strict monoidal functor, but moreover it has to send n fold tensors of generators in the first category to n fold tensors of corresponding generators in the second category.  So a morphism of props can be defined as a function between colours as function between homs in the obvious way.</p>
+<p>So perhaps the appropriate notion of lax <em>normal</em> functor between 2-props should be more like the corresponding notion for polycategories, as opposed to that for monoidal categories, where one doesn't require that the tensors of identities are sent to tensors of identities (because it is not even a well formed thing to ask for in the polycategory case), only that the identies of generating colours are sent to identities of generating colours.</p>
+
+
+
+<a name="322294679"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/concategories/near/322294679" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Cole Comfort <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/topic_concategories.html#322294679">(Jan 19 2023 at 14:32)</a>:</h4>
+<p>I guess I should just try to work out what the Grothendieck-Benabou correspondence is for PRO(P)s.</p>
+
+
+
+<a name="322302799"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/concategories/near/322302799" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nathanael Arkor <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/topic_concategories.html#322302799">(Jan 19 2023 at 15:04)</a>:</h4>
+<p>By "2-PROP", do you mean a 2-categorical analogue of a PROP? (I haven't come across the terminology "displayed PROP" before.)</p>
+
+
+
+<a name="322305836"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/concategories/near/322305836" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Cole Comfort <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/topic_concategories.html#322305836">(Jan 19 2023 at 15:17)</a>:</h4>
+<p>Yes, by a (multicoloured) 2-PROP, I mean what a symmetric monoidal bicategory is to a symmetric monoidal category. And a displayed PROP would be a lax normal functor from a prop into the strictification of categories and profunctors seen as a 2-PROP with respect to the cartesian product.   And by the Grothendieck-Benabou correspondence I mean the equivalence between the lax functors category out of an indexing PROP <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="script">I</mi></mrow><annotation encoding="application/x-tex"> \mathcal I </annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathcal" style="margin-right:0.07382em;">I</span></span></span></span> into <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="sans-serif">P</mi><mi mathvariant="sans-serif">r</mi><mi mathvariant="sans-serif">o</mi><mi mathvariant="sans-serif">f</mi></mrow><annotation encoding="application/x-tex"> \mathsf{Prof} </annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord"><span class="mord mathsf" style="margin-right:0.06944em;">Prof</span></span></span></span></span> (considered as a PROP) and the slice category of PROPs over <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="script">I</mi></mrow><annotation encoding="application/x-tex"> \mathcal I</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathcal" style="margin-right:0.07382em;">I</span></span></span></span> (all of this stuff preserving the PROP structure of course)</p>
+
+
+
+<a name="322306650"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/concategories/near/322306650" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Cole Comfort <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/topic_concategories.html#322306650">(Jan 19 2023 at 15:20)</a>:</h4>
+<p>I think that this is the correct setting to make this correspondence give you the stricitification theorems for monoidal and symmetric monoidal categories.  Trying to write a paper on this, but these details are insanely tricky.</p>
+
+
+
+<a name="322346475"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/concategories/near/322346475" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/topic_concategories.html#322346475">(Jan 19 2023 at 18:14)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="276092">Nathanael Arkor</span> <a href="#narrow/stream/229199-learning.3A-questions/topic/concategories/near/322287617">said</a>:</p>
+<blockquote>
+<p>However, Levy is making a conceptual distinction between the traditional notion of PRO (as a kind of theory / freely generated monoidal category), and a polycategory-like structure (analogous to the conceptual distinction between an operad and a multicategory).</p>
+</blockquote>
+<p>There's a conceptual distinction between an operad and a multicategory?</p>
+
+
+
+<a name="322352071"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/concategories/near/322352071" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nathanael Arkor <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/topic_concategories.html#322352071">(Jan 19 2023 at 18:40)</a>:</h4>
+<p>I suppose it depends on whom you're asking. The terminology "coloured operad" and "multicategory" refer to the same definition, but have generally been traditionally used in somewhat different contexts, and, as I see it, the "PRO" terminology fits more within the same context as "operad", and Levy's "concategory" terminology fits more within the same context as "multicategory". Perhaps I should have said "historical conceptual distinction": one could very well use the same terminology with each of the different perspectives.</p>
+
+
+
+<a name="322357408"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/concategories/near/322357408" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/topic_concategories.html#322357408">(Jan 19 2023 at 19:07)</a>:</h4>
+<p>I wish that were true, but nowadays it seems to me that lots of people use "operad" in contexts where "multicategory" would make more sense.</p>
+
+
+
+<a name="322357937"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/concategories/near/322357937" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nicolas Blanco <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/topic_concategories.html#322357937">(Jan 19 2023 at 19:10)</a>:</h4>
+<p>I haven't look in details at these, but afair concategories also appeared in Ross Duncan's PhD thesis under the terminology compact polycategories.</p>
+
+
+
+<a name="322369735"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/concategories/near/322369735" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Cole Comfort <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/topic_concategories.html#322369735">(Jan 19 2023 at 20:13)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="276120">Nicolas Blanco</span> <a href="#narrow/stream/229199-learning.3A-questions/topic/concategories/near/322357937">said</a>:</p>
+<blockquote>
+<p>I haven't look in details at these, but afair concategories also appeared in Ross Duncan's PhD thesis under the terminology compact polycategories.</p>
+</blockquote>
+<p>Thank you!  I have read his thesis before, but reading it now, I realize he only requires that the identity be preserved on every object, not on lists of objects, this is exactly the definition I need.</p>
+
+
+
+<a name="322375776"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/concategories/near/322375776" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nicolas Blanco <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/topic_concategories.html#322375776">(Jan 19 2023 at 20:47)</a>:</h4>
+<p>I haven't checked the details so just some rough ideas based on intuition: a representable concategory should be a compact closed category, similarly a representable 2-concategory should be a compact closed bicategory (the notion has been worked out by Mike Stay). Since Prof is a compact closed bicategory (see Mike Stay's paper) you have a 2-concat Prof. Now the only difference between a concat and a regular polycat is the way you compose polymaps. So the Bénabou-Grothendieck correspondence should work in this setting too.</p>
+
+
+
+<a name="322377071"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/concategories/near/322377071" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nathanael Arkor <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/topic_concategories.html#322377071">(Jan 19 2023 at 20:55)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="276120">Nicolas Blanco</span> <a href="#narrow/stream/229199-learning.3A-questions/topic/concategories/near/322357937">said</a>:</p>
+<blockquote>
+<p>I haven't look in details at these, but afair concategories also appeared in Ross Duncan's PhD thesis under the terminology compact polycategories.</p>
+</blockquote>
+<p>My understanding was that Duncan's "compact polycategories" were the same as properads (called "pluricategories" by Kavanagh)?</p>
+
+
+
+<a name="322381809"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/concategories/near/322381809" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Cole Comfort <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/topic_concategories.html#322381809">(Jan 19 2023 at 21:22)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="276120">Nicolas Blanco</span> <a href="#narrow/stream/229199-learning.3A-questions/topic/concategories/near/322375776">said</a>:</p>
+<blockquote>
+<p>I haven't checked the details so just some rough ideas based on intuition: a representable concategory should be a compact closed category, similarly a representable 2-concategory should be a compact closed bicategory (the notion has been worked out by Mike Stay). Since Prof is a compact closed bicategory (see Mike Stay's paper) you have a 2-concat Prof. Now the only difference between a concat and a regular polycat is the way you compose polymaps. So the Bénabou-Grothendieck correspondence should work in this setting too.</p>
+</blockquote>
+<p>Yes this seems to be the case.  Can you think of any non representable concategories?  The distinction of morphisms between concategories and the similarity to polycategories also begs the question if concategories arise as the generalized polycategories for a distributive law of monads</p>
+
+
+
+<a name="322383553"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/concategories/near/322383553" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Cole Comfort <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/topic_concategories.html#322383553">(Jan 19 2023 at 21:33)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="276092">Nathanael Arkor</span> <a href="#narrow/stream/229199-learning.3A-questions/topic/concategories/near/322377071">said</a>:</p>
+<blockquote>
+<p><span class="user-mention silent" data-user-id="276120">Nicolas Blanco</span> <a href="#narrow/stream/229199-learning.3A-questions/topic/concategories/near/322357937">said</a>:</p>
+<blockquote>
+<p>I haven't look in details at these, but afair concategories also appeared in Ross Duncan's PhD thesis under the terminology compact polycategories.</p>
+</blockquote>
+<p>My understanding was that Duncan's "compact polycategories" were the same as properads (called "pluricategories" by Kavanagh)?</p>
+</blockquote>
+<p>The difference appears to be that the data of pluricategories includes an identity morphism for each list of objects, however Duncan only asks for an identity for every object.  Although you can get an identity for each list by tensoring things together, it need be preserved by the appropriate morphisms between pluricategories.</p>
+
+
+
+<a name="322384084"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/concategories/near/322384084" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Cole Comfort <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/topic_concategories.html#322384084">(Jan 19 2023 at 21:36)</a>:</h4>
+<p>And this is a crucial difference if you are concerned with displayed categories because the normal morphisms are totally different.</p>
+
+
+
+<a name="322385096"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/concategories/near/322385096" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nathanael Arkor <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/topic_concategories.html#322385096">(Jan 19 2023 at 21:43)</a>:</h4>
+<p>I hadn't noticed that Kavanagh's pluricategories require an identity for each list. That seems an unusual requirement.</p>
+
+
+
+{% endraw %}
+
+<hr><p>Last updated: Jan 20 2023 at 00:47 UTC</p>

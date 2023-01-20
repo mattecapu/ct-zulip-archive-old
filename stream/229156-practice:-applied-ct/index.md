@@ -9,11 +9,11 @@ permalink: /stream/229156-practice:-applied-ct/index.html
 
 ### Topics:
 
+* [around machine learning](topic/topic_around.20machine.20learning.html) (53 messages, latest: Jan 19 2023 at 22:22)
 * [web cats](topic/topic_web.20cats.html) (349 messages, latest: Jan 17 2023 at 15:32)
 * [hyperoperators as dynamical systems](topic/topic_hyperoperators.20as.20dynamical.20systems.html) (125 messages, latest: Dec 08 2022 at 21:59)
 * [structured cospans](topic/topic_structured.20cospans.html) (21 messages, latest: Dec 08 2022 at 20:29)
 * [instance functors for monoidal categories](topic/topic_instance.20functors.20for.20monoidal.20categories.html) (14 messages, latest: Oct 10 2022 at 18:52)
-* [around machine learning](topic/topic_around.20machine.20learning.html) (50 messages, latest: Sep 05 2022 at 02:16)
 * [security + ct](topic/topic_security.20.2B.20ct.html) (69 messages, latest: Aug 23 2022 at 17:44)
 * [stream events](topic/topic_stream.20events.html) (5 messages, latest: Aug 20 2022 at 09:46)
 * [categorical computability](topic/topic_categorical.20computability.html) (2 messages, latest: Aug 12 2022 at 00:34)
@@ -149,4 +149,4 @@ permalink: /stream/229156-practice:-applied-ct/index.html
 * [AACT2020](topic/topic_AACT2020.html) (1 message, latest: Mar 24 2020 at 00:56)
 * [welcome](topic/topic_welcome.html) (15 messages, latest: Mar 24 2020 at 00:03)
 
-<hr><p>Last updated: Jan 19 2023 at 00:48 UTC</p>
+<hr><p>Last updated: Jan 20 2023 at 00:47 UTC</p>

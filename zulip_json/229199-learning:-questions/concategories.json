@@ -1,0 +1,110 @@
+[
+    {
+        "content": "<p>Does anyone have a reference for the notion of concategory mentioned in the following slides:<br>\n<a href=\"https://www.cl.cam.ac.uk/events/syco/2/slides/levy.pdf\">https://www.cl.cam.ac.uk/events/syco/2/slides/levy.pdf</a></p>\n<p>The basic idea is that a concategory is like a polycategory where instead of cutting along a single object; one cuts along the whole list of objects at once or cuts them together by tensoring the domain and codomain lists together.  The notion of morphism act pointwise like in the case of polycategories, which distinguishes them from strict monoidal categories and functors.</p>\n<p>I suspect that this can be formalized in terms of a generalized polycategory arizing from something like the doubly iterated finite list monad, but like I said the literature is rather sparse.</p>",
+        "id": 322281057,
+        "sender_full_name": "Cole Comfort",
+        "timestamp": 1674135291
+    },
+    {
+        "content": "<p>The reason the literature appears sparse is because what Levy calls \"concategories\" are usually called (coloured/multisorted) <a href=\"https://ncatlab.org/nlab/show/PROs\">[[PROs]]</a> in the literature. However, Levy is making a conceptual distinction between the traditional notion of PRO (as a kind of theory / freely generated monoidal category), and a polycategory-like structure (analogous to the conceptual distinction between an operad and a multicategory).</p>",
+        "id": 322287617,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1674137102
+    },
+    {
+        "content": "<p>The problem I am running into is trying to define a lax normal functor from a prop to a \"2-prop\" (displayed props).  But this functor doesn't strictly preserve identities on tensors of generating objects, only on the generating objects themselves.</p>\n<p>Maybe I am just missing a subtlety in the definition of a morphism of props. It is not just a strict monoidal functor, but moreover it has to send n fold tensors of generators in the first category to n fold tensors of corresponding generators in the second category.  So a morphism of props can be defined as a function between colours as function between homs in the obvious way.</p>\n<p>So perhaps the appropriate notion of lax <em>normal</em> functor between 2-props should be more like the corresponding notion for polycategories, as opposed to that for monoidal categories, where one doesn't require that the tensors of identities are sent to tensors of identities (because it is not even a well formed thing to ask for in the polycategory case), only that the identies of generating colours are sent to identities of generating colours.</p>",
+        "id": 322292662,
+        "sender_full_name": "Cole Comfort",
+        "timestamp": 1674138299
+    },
+    {
+        "content": "<p>I guess I should just try to work out what the Grothendieck-Benabou correspondence is for PRO(P)s.</p>",
+        "id": 322294679,
+        "sender_full_name": "Cole Comfort",
+        "timestamp": 1674138742
+    },
+    {
+        "content": "<p>By \"2-PROP\", do you mean a 2-categorical analogue of a PROP? (I haven't come across the terminology \"displayed PROP\" before.)</p>",
+        "id": 322302799,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1674140666
+    },
+    {
+        "content": "<p>Yes, by a (multicoloured) 2-PROP, I mean what a symmetric monoidal bicategory is to a symmetric monoidal category. And a displayed PROP would be a lax normal functor from a prop into the strictification of categories and profunctors seen as a 2-PROP with respect to the cartesian product.   And by the Grothendieck-Benabou correspondence I mean the equivalence between the lax functors category out of an indexing PROP <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"script\">I</mi></mrow><annotation encoding=\"application/x-tex\"> \\mathcal I </annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathcal\" style=\"margin-right:0.07382em;\">I</span></span></span></span> into <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"sans-serif\">P</mi><mi mathvariant=\"sans-serif\">r</mi><mi mathvariant=\"sans-serif\">o</mi><mi mathvariant=\"sans-serif\">f</mi></mrow><annotation encoding=\"application/x-tex\"> \\mathsf{Prof} </annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6944em;\"></span><span class=\"mord\"><span class=\"mord mathsf\" style=\"margin-right:0.06944em;\">Prof</span></span></span></span></span> (considered as a PROP) and the slice category of PROPs over <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"script\">I</mi></mrow><annotation encoding=\"application/x-tex\"> \\mathcal I</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathcal\" style=\"margin-right:0.07382em;\">I</span></span></span></span> (all of this stuff preserving the PROP structure of course)</p>",
+        "id": 322305836,
+        "sender_full_name": "Cole Comfort",
+        "timestamp": 1674141435
+    },
+    {
+        "content": "<p>I think that this is the correct setting to make this correspondence give you the stricitification theorems for monoidal and symmetric monoidal categories.  Trying to write a paper on this, but these details are insanely tricky.</p>",
+        "id": 322306650,
+        "sender_full_name": "Cole Comfort",
+        "timestamp": 1674141642
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276092\">Nathanael Arkor</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/concategories/near/322287617\">said</a>:</p>\n<blockquote>\n<p>However, Levy is making a conceptual distinction between the traditional notion of PRO (as a kind of theory / freely generated monoidal category), and a polycategory-like structure (analogous to the conceptual distinction between an operad and a multicategory).</p>\n</blockquote>\n<p>There's a conceptual distinction between an operad and a multicategory?</p>",
+        "id": 322346475,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1674152093
+    },
+    {
+        "content": "<p>I suppose it depends on whom you're asking. The terminology \"coloured operad\" and \"multicategory\" refer to the same definition, but have generally been traditionally used in somewhat different contexts, and, as I see it, the \"PRO\" terminology fits more within the same context as \"operad\", and Levy's \"concategory\" terminology fits more within the same context as \"multicategory\". Perhaps I should have said \"historical conceptual distinction\": one could very well use the same terminology with each of the different perspectives.</p>",
+        "id": 322352071,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1674153635
+    },
+    {
+        "content": "<p>I wish that were true, but nowadays it seems to me that lots of people use \"operad\" in contexts where \"multicategory\" would make more sense.</p>",
+        "id": 322357408,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1674155250
+    },
+    {
+        "content": "<p>I haven't look in details at these, but afair concategories also appeared in Ross Duncan's PhD thesis under the terminology compact polycategories.</p>",
+        "id": 322357937,
+        "sender_full_name": "Nicolas Blanco",
+        "timestamp": 1674155411
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276120\">Nicolas Blanco</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/concategories/near/322357937\">said</a>:</p>\n<blockquote>\n<p>I haven't look in details at these, but afair concategories also appeared in Ross Duncan's PhD thesis under the terminology compact polycategories.</p>\n</blockquote>\n<p>Thank you!  I have read his thesis before, but reading it now, I realize he only requires that the identity be preserved on every object, not on lists of objects, this is exactly the definition I need.</p>",
+        "id": 322369735,
+        "sender_full_name": "Cole Comfort",
+        "timestamp": 1674159204
+    },
+    {
+        "content": "<p>I haven't checked the details so just some rough ideas based on intuition: a representable concategory should be a compact closed category, similarly a representable 2-concategory should be a compact closed bicategory (the notion has been worked out by Mike Stay). Since Prof is a compact closed bicategory (see Mike Stay's paper) you have a 2-concat Prof. Now the only difference between a concat and a regular polycat is the way you compose polymaps. So the Bénabou-Grothendieck correspondence should work in this setting too.</p>",
+        "id": 322375776,
+        "sender_full_name": "Nicolas Blanco",
+        "timestamp": 1674161244
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276120\">Nicolas Blanco</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/concategories/near/322357937\">said</a>:</p>\n<blockquote>\n<p>I haven't look in details at these, but afair concategories also appeared in Ross Duncan's PhD thesis under the terminology compact polycategories.</p>\n</blockquote>\n<p>My understanding was that Duncan's \"compact polycategories\" were the same as properads (called \"pluricategories\" by Kavanagh)?</p>",
+        "id": 322377071,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1674161729
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276120\">Nicolas Blanco</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/concategories/near/322375776\">said</a>:</p>\n<blockquote>\n<p>I haven't checked the details so just some rough ideas based on intuition: a representable concategory should be a compact closed category, similarly a representable 2-concategory should be a compact closed bicategory (the notion has been worked out by Mike Stay). Since Prof is a compact closed bicategory (see Mike Stay's paper) you have a 2-concat Prof. Now the only difference between a concat and a regular polycat is the way you compose polymaps. So the Bénabou-Grothendieck correspondence should work in this setting too.</p>\n</blockquote>\n<p>Yes this seems to be the case.  Can you think of any non representable concategories?  The distinction of morphisms between concategories and the similarity to polycategories also begs the question if concategories arise as the generalized polycategories for a distributive law of monads</p>",
+        "id": 322381809,
+        "sender_full_name": "Cole Comfort",
+        "timestamp": 1674163373
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276092\">Nathanael Arkor</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/concategories/near/322377071\">said</a>:</p>\n<blockquote>\n<p><span class=\"user-mention silent\" data-user-id=\"276120\">Nicolas Blanco</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/concategories/near/322357937\">said</a>:</p>\n<blockquote>\n<p>I haven't look in details at these, but afair concategories also appeared in Ross Duncan's PhD thesis under the terminology compact polycategories.</p>\n</blockquote>\n<p>My understanding was that Duncan's \"compact polycategories\" were the same as properads (called \"pluricategories\" by Kavanagh)?</p>\n</blockquote>\n<p>The difference appears to be that the data of pluricategories includes an identity morphism for each list of objects, however Duncan only asks for an identity for every object.  Although you can get an identity for each list by tensoring things together, it need be preserved by the appropriate morphisms between pluricategories.</p>",
+        "id": 322383553,
+        "sender_full_name": "Cole Comfort",
+        "timestamp": 1674163984
+    },
+    {
+        "content": "<p>And this is a crucial difference if you are concerned with displayed categories because the normal morphisms are totally different.</p>",
+        "id": 322384084,
+        "sender_full_name": "Cole Comfort",
+        "timestamp": 1674164216
+    },
+    {
+        "content": "<p>I hadn't noticed that Kavanagh's pluricategories require an identity for each list. That seems an unusual requirement.</p>",
+        "id": 322385096,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1674164621
+    }
+]
