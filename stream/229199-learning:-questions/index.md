@@ -9,7 +9,7 @@ permalink: /stream/229199-learning:-questions/index.html
 
 ### Topics:
 
-* [concategories](topic/topic_concategories.html) (18 messages, latest: Jan 19 2023 at 21:43)
+* [concategories](topic/topic_concategories.html) (25 messages, latest: Jan 20 2023 at 18:45)
 * [Partial map classifiers](topic/topic_Partial.20map.20classifiers.html) (1 message, latest: Jan 18 2023 at 23:05)
 * [Relative cell complexes](topic/topic_Relative.20cell.20complexes.html) (5 messages, latest: Jan 18 2023 at 22:39)
 * [Properties of the pullback of categories](topic/topic_Properties.20of.20the.20pullback.20of.20categories.html) (8 messages, latest: Jan 18 2023 at 15:29)
@@ -813,4 +813,4 @@ permalink: /stream/229199-learning:-questions/index.html
 * [Algebra (Aluffi) exercises](topic/topic_Algebra.20(Aluffi).20exercises.html) (55 messages, latest: Mar 27 2020 at 23:38)
 * [What is category theory about?](topic/topic_What.20is.20category.20theory.20about.3F.html) (16 messages, latest: Mar 26 2020 at 16:03)
 
-<hr><p>Last updated: Jan 20 2023 at 00:47 UTC</p>
+<hr><p>Last updated: Jan 21 2023 at 00:46 UTC</p>

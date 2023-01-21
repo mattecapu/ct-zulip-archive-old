@@ -9,7 +9,7 @@ permalink: /stream/229136-theory:-category-theory/index.html
 
 ### Topics:
 
-* [not all monads are co-KZ](topic/topic_not.20all.20monads.20are.20co-KZ.html) (6 messages, latest: Jan 20 2023 at 00:15)
+* [not all monads are co-KZ](topic/topic_not.20all.20monads.20are.20co-KZ.html) (11 messages, latest: Jan 20 2023 at 11:55)
 * [Conjectures on generalized equipments](topic/topic_Conjectures.20on.20generalized.20equipments.html) (147 messages, latest: Jan 19 2023 at 18:47)
 * [taking algebras is the algebra of the taking monad monad](topic/topic_taking.20algebras.20is.20the.20algebra.20of.20the.20taking.20monad.20monad.html) (10 messages, latest: Jan 19 2023 at 10:59)
 * [Lawvere-Tierney topologies](topic/topic_Lawvere-Tierney.20topologies.html) (6 messages, latest: Jan 16 2023 at 20:23)
@@ -364,4 +364,4 @@ permalink: /stream/229136-theory:-category-theory/index.html
 * [diagrams for application](topic/topic_diagrams.20for.20application.html) (13 messages, latest: Mar 24 2020 at 06:19)
 * [universal constructions](topic/topic_universal.20constructions.html) (8 messages, latest: Mar 23 2020 at 21:06)
 
-<hr><p>Last updated: Jan 20 2023 at 00:47 UTC</p>
+<hr><p>Last updated: Jan 21 2023 at 00:46 UTC</p>
