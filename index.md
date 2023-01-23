@@ -88,9 +88,9 @@ permalink: /index.html
 
 * [general: co/appreciation](stream/271602-general:-co/appreciation/index.html) (13 topics)
 
-* [learning: reading groups](stream/232160-learning:-reading-groups/index.html) (12 topics)
+* [learning: id my structure](stream/311521-learning:-id-my-structure/index.html) (12 topics)
 
-* [learning: id my structure](stream/311521-learning:-id-my-structure/index.html) (11 topics)
+* [learning: reading groups](stream/232160-learning:-reading-groups/index.html) (12 topics)
 
 * [practice: translation](stream/260000-practice:-translation/index.html) (11 topics)
 
@@ -180,4 +180,4 @@ permalink: /index.html
 
 * [theory: alternate presentations](stream/233122-theory:-alternate-presentations/index.html) (1 topic)
 
-<hr><p>Last updated: Jan 22 2023 at 00:48 UTC</p>
+<hr><p>Last updated: Jan 23 2023 at 00:44 UTC</p>

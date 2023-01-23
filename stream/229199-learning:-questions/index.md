@@ -9,7 +9,8 @@ permalink: /stream/229199-learning:-questions/index.html
 
 ### Topics:
 
-* [concategories](topic/topic_concategories.html) (26 messages, latest: Jan 21 2023 at 20:58)
+* [Beginner questions](topic/topic_Beginner.20questions.html) (22 messages, latest: Jan 22 2023 at 07:58)
+* [concategories](topic/topic_concategories.html) (28 messages, latest: Jan 22 2023 at 02:40)
 * [Categorification of consequence relations](topic/topic_Categorification.20of.20consequence.20relations.html) (2 messages, latest: Jan 21 2023 at 17:07)
 * [Partial map classifiers](topic/topic_Partial.20map.20classifiers.html) (1 message, latest: Jan 18 2023 at 23:05)
 * [Relative cell complexes](topic/topic_Relative.20cell.20complexes.html) (5 messages, latest: Jan 18 2023 at 22:39)
@@ -23,7 +24,6 @@ permalink: /stream/229199-learning:-questions/index.html
 * [Dynamical systems](topic/topic_Dynamical.20systems.html) (21 messages, latest: Jan 07 2023 at 15:49)
 * [Reference regarding Top and related categories](topic/topic_Reference.20regarding.20Top.20and.20related.20categories.html) (12 messages, latest: Jan 05 2023 at 14:57)
 * [Intuition for the 'naturality axiom'](topic/topic_Intuition.20for.20the.20'naturality.20axiom'.html) (28 messages, latest: Jan 03 2023 at 11:07)
-* [Beginner questions](topic/topic_Beginner.20questions.html) (21 messages, latest: Dec 30 2022 at 19:44)
 * [Axiom of choice](topic/topic_Axiom.20of.20choice.html) (6 messages, latest: Dec 28 2022 at 22:28)
 * [Rel category](topic/topic_Rel.20category.html) (14 messages, latest: Dec 28 2022 at 02:53)
 * [Fully faithful cofunctors](topic/topic_Fully.20faithful.20cofunctors.html) (3 messages, latest: Dec 27 2022 at 11:11)
@@ -814,4 +814,4 @@ permalink: /stream/229199-learning:-questions/index.html
 * [Algebra (Aluffi) exercises](topic/topic_Algebra.20(Aluffi).20exercises.html) (55 messages, latest: Mar 27 2020 at 23:38)
 * [What is category theory about?](topic/topic_What.20is.20category.20theory.20about.3F.html) (16 messages, latest: Mar 26 2020 at 16:03)
 
-<hr><p>Last updated: Jan 22 2023 at 00:48 UTC</p>
+<hr><p>Last updated: Jan 23 2023 at 00:44 UTC</p>
