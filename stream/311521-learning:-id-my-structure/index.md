@@ -9,7 +9,7 @@ permalink: /stream/311521-learning:-id-my-structure/index.html
 
 ### Topics:
 
-* [some categories of shapes](topic/topic_some.20categories.20of.20shapes.html) (7 messages, latest: Jan 22 2023 at 20:20)
+* [some categories of shapes](topic/topic_some.20categories.20of.20shapes.html) (18 messages, latest: Jan 23 2023 at 17:00)
 * [fibrations in my fibrations](topic/topic_fibrations.20in.20my.20fibrations.html) (12 messages, latest: Jan 22 2023 at 15:06)
 * [relatively final functors](topic/topic_relatively.20final.20functors.html) (4 messages, latest: Jan 12 2023 at 19:28)
 * [Day Convolution for Bicategories](topic/topic_Day.20Convolution.20for.20Bicategories.html) (12 messages, latest: Jan 11 2023 at 18:00)
@@ -22,4 +22,4 @@ permalink: /stream/311521-learning:-id-my-structure/index.html
 * [stream events](topic/topic_stream.20events.html) (9 messages, latest: Jan 04 2022 at 22:35)
 * [almost a full subcategory?](topic/topic_almost.20a.20full.20subcategory.3F.html) (15 messages, latest: Jan 04 2022 at 16:42)
 
-<hr><p>Last updated: Jan 23 2023 at 00:44 UTC</p>
+<hr><p>Last updated: Jan 24 2023 at 00:49 UTC</p>

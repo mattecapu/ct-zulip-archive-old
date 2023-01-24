@@ -112,13 +112,13 @@ permalink: /index.html
 
 * [seminar: EM-cats](stream/298571-seminar:-EM-cats/index.html) (7 topics)
 
+* [theory: analysis](stream/281848-theory:-analysis/index.html) (7 topics)
+
 * [general: terminology & notation](stream/348484-general:-terminology-&-notation/index.html) (6 topics)
 
 * [semiotics and semiosis](stream/229179-semiotics-and-semiosis/index.html) (6 topics)
 
 * [theory: algebra & CT](stream/230123-theory:-algebra-&-CT/index.html) (6 topics)
-
-* [theory: analysis](stream/281848-theory:-analysis/index.html) (6 topics)
 
 * [ACT@UMD seminar](stream/229967-ACT@UMD-seminar/index.html) (5 topics)
 
@@ -180,4 +180,4 @@ permalink: /index.html
 
 * [theory: alternate presentations](stream/233122-theory:-alternate-presentations/index.html) (1 topic)
 
-<hr><p>Last updated: Jan 23 2023 at 00:44 UTC</p>
+<hr><p>Last updated: Jan 24 2023 at 00:49 UTC</p>
