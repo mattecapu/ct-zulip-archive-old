@@ -9,13 +9,13 @@ permalink: /stream/274877-practice:-our-work/index.html
 
 ### Topics:
 
+* [Dusko Pavlovic](topic/topic_Dusko.20Pavlovic.html) (31 messages, latest: Jan 25 2023 at 16:09)
 * [John Baez](topic/topic_John.20Baez.html) (930 messages, latest: Jan 19 2023 at 06:47)
 * [Jean-Baptiste Vienney](topic/topic_Jean-Baptiste.20Vienney.html) (30 messages, latest: Jan 08 2023 at 21:15)
 * [Mike Shulman](topic/topic_Mike.20Shulman.html) (143 messages, latest: Jan 05 2023 at 00:16)
 * [Jacob S Zelko](topic/topic_Jacob.20S.20Zelko.html) (19 messages, latest: Dec 28 2022 at 22:45)
 * [Jason Parker](topic/topic_Jason.20Parker.html) (3 messages, latest: Dec 09 2022 at 18:14)
 * [Steve Huntsman](topic/topic_Steve.20Huntsman.html) (4 messages, latest: Dec 06 2022 at 18:02)
-* [Dusko Pavlovic](topic/topic_Dusko.20Pavlovic.html) (24 messages, latest: Nov 24 2022 at 14:00)
 * [Paolo Perrone](topic/topic_Paolo.20Perrone.html) (3 messages, latest: Nov 19 2022 at 18:02)
 * [Christian Williams](topic/topic_Christian.20Williams.html) (367 messages, latest: Nov 12 2022 at 19:24)
 * [Ralph Sarkis](topic/topic_Ralph.20Sarkis.html) (28 messages, latest: Nov 10 2022 at 13:44)
@@ -47,4 +47,4 @@ permalink: /stream/274877-practice:-our-work/index.html
 * [Conor Mc Bride](topic/topic_Conor.20Mc.20Bride.html) (60 messages, latest: Apr 08 2021 at 15:15)
 * [thoughts on sharing ideas](topic/topic_thoughts.20on.20sharing.20ideas.html) (20 messages, latest: Jan 31 2021 at 03:05)
 
-<hr><p>Last updated: Jan 25 2023 at 00:45 UTC</p>
+<hr><p>Last updated: Jan 26 2023 at 00:45 UTC</p>

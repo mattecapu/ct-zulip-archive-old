@@ -9,8 +9,10 @@ permalink: /stream/229136-theory:-category-theory/index.html
 
 ### Topics:
 
+* [n-fold category of algebras and coalgebras?](topic/topic_n-fold.20category.20of.20algebras.20and.20coalgebras.3F.html) (11 messages, latest: Jan 26 2023 at 00:17)
+* [Conjectures on generalized equipments](topic/topic_Conjectures.20on.20generalized.20equipments.html) (152 messages, latest: Jan 26 2023 at 00:04)
+* [κ-small κ-accessible categories](topic/topic_.CE.BA-small.20.CE.BA-accessible.20categories.html) (5 messages, latest: Jan 25 2023 at 19:39)
 * [not all monads are co-KZ](topic/topic_not.20all.20monads.20are.20co-KZ.html) (14 messages, latest: Jan 23 2023 at 15:01)
-* [Conjectures on generalized equipments](topic/topic_Conjectures.20on.20generalized.20equipments.html) (147 messages, latest: Jan 19 2023 at 18:47)
 * [taking algebras is the algebra of the taking monad monad](topic/topic_taking.20algebras.20is.20the.20algebra.20of.20the.20taking.20monad.20monad.html) (10 messages, latest: Jan 19 2023 at 10:59)
 * [Lawvere-Tierney topologies](topic/topic_Lawvere-Tierney.20topologies.html) (6 messages, latest: Jan 16 2023 at 20:23)
 * [unbiased 2-categories](topic/topic_unbiased.202-categories.html) (10 messages, latest: Jan 15 2023 at 16:49)
@@ -364,4 +366,4 @@ permalink: /stream/229136-theory:-category-theory/index.html
 * [diagrams for application](topic/topic_diagrams.20for.20application.html) (13 messages, latest: Mar 24 2020 at 06:19)
 * [universal constructions](topic/topic_universal.20constructions.html) (8 messages, latest: Mar 23 2020 at 21:06)
 
-<hr><p>Last updated: Jan 25 2023 at 00:45 UTC</p>
+<hr><p>Last updated: Jan 26 2023 at 00:45 UTC</p>

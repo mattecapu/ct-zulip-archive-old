@@ -1,0 +1,111 @@
+---
+layout: archive
+title: Zulip Chat Archive
+permalink: /stream/229136-theory:-category-theory/topic/topic_n-fold.20category.20of.20algebras.20and.20coalgebras.3F.html
+---
+
+<h2>Stream: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/index.html">theory: category theory</a></h2>
+<h3>Topic: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/topic_n-fold.20category.20of.20algebras.20and.20coalgebras.3F.html">n-fold category of algebras and coalgebras?</a></h3>
+
+<hr>
+
+<base href="https://categorytheory.zulipchat.com/">
+
+{% raw %}
+
+<a name="323544091"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/n-fold%20category%20of%20algebras%20and%20coalgebras%3F/near/323544091" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Bruno Gavranovic <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/topic_n-fold.20category.20of.20algebras.20and.20coalgebras.3F.html#323544091">(Jan 25 2023 at 17:31)</a>:</h4>
+<p>Given an endofunctor <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi></mrow><annotation encoding="application/x-tex">F</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.13889em;">F</span></span></span></span>, it's known that we can form a category whose objects are its algebras (and morphisms are algebra homomorphisms), and a category whose objects are its coalgebras (whose morphisms are coalgebra homomorphisms). </p>
+<p>I've recently learned that there is also a notion of a coalgebra-to-algebra morphism (making the appropriate diagram commute) and I'm wondering whether all this data can be organised as some sort of a double, or n-fold category.</p>
+<p>It looks like we want two different types of 0-cells (algebras, and coalgebras), where morphisms between the same types of cells would be homorphisms of algebras and respectively coalgebras. Then also we could have a morphism between different types of 0-cells - which would be the coalgebra-to-algebra morphisms.  (There's also the algebra-to-coalgebra morphism) which follows in a similar way.</p>
+<p>Question: what kind of structure is this? It's not a double category, as I initially suspected. We'd have at least  2 types of 0-cells and three types of 1-cells.</p>
+
+
+
+<a name="323552142"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/n-fold%20category%20of%20algebras%20and%20coalgebras%3F/near/323552142" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nathanael Arkor <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/topic_n-fold.20category.20of.20algebras.20and.20coalgebras.3F.html#323552142">(Jan 25 2023 at 18:08)</a>:</h4>
+<p>Algebras and coalgebras for an endofunctor form a category. Is there any structure you're interested in that is not captured simply by the categorical structure?</p>
+
+
+
+<a name="323552468"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/n-fold%20category%20of%20algebras%20and%20coalgebras%3F/near/323552468" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nathanael Arkor <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/topic_n-fold.20category.20of.20algebras.20and.20coalgebras.3F.html#323552468">(Jan 25 2023 at 18:10)</a>:</h4>
+<p>The objects may be distinguished by being in one of two classes, but the morphisms don't appear to have any interesting properties: their shape is uniquely determined by the class of their domain and codomain. So I think it's misleading to say that there are four kinds of 1-cell, as the kinds should be parameterised by the kind of their (co)domain.</p>
+
+
+
+<a name="323555590"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/n-fold%20category%20of%20algebras%20and%20coalgebras%3F/near/323555590" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/topic_n-fold.20category.20of.20algebras.20and.20coalgebras.3F.html#323555590">(Jan 25 2023 at 18:24)</a>:</h4>
+<p>I think this category sits inside a larger and perhaps more natural-looking category consisting of objects <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>X</mi></mrow><annotation encoding="application/x-tex">X</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.07847em;">X</span></span></span></span> with a <em>relation</em> to <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mi>X</mi></mrow><annotation encoding="application/x-tex">FX</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.07847em;">FX</span></span></span></span>.  Then sometimes the relation is functional and sometimes cofunctional.</p>
+
+
+
+<a name="323572101"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/n-fold%20category%20of%20algebras%20and%20coalgebras%3F/near/323572101" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Bruno Gavranovic <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/topic_n-fold.20category.20of.20algebras.20and.20coalgebras.3F.html#323572101">(Jan 25 2023 at 19:49)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="276092">Nathanael Arkor</span> <a href="#narrow/stream/229136-theory.3A-category-theory/topic/n-fold.20category.20of.20algebras.20and.20coalgebras.3F/near/323552142">said</a>:</p>
+<blockquote>
+<p>Algebras and coalgebras for an endofunctor form a category. Is there any structure you're interested in that is not captured simply by the categorical structure?</p>
+</blockquote>
+<p>They both form individual categories, yes. But the coalgebra-to-algebra morphism isn't a morphism in either one of them.</p>
+
+
+
+<a name="323572143"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/n-fold%20category%20of%20algebras%20and%20coalgebras%3F/near/323572143" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Bruno Gavranovic <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/topic_n-fold.20category.20of.20algebras.20and.20coalgebras.3F.html#323572143">(Jan 25 2023 at 19:49)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="276777">Mike Shulman</span> <a href="#narrow/stream/229136-theory.3A-category-theory/topic/n-fold.20category.20of.20algebras.20and.20coalgebras.3F/near/323555590">said</a>:</p>
+<blockquote>
+<p>I think this category sits inside a larger and perhaps more natural-looking category consisting of objects $X$ with a <em>relation</em> to $FX$.  Then sometimes the relation is functional and sometimes cofunctional.</p>
+</blockquote>
+<p>Hmm, that sounds plausible.</p>
+
+
+
+<a name="323572338"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/n-fold%20category%20of%20algebras%20and%20coalgebras%3F/near/323572338" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Bruno Gavranovic <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/topic_n-fold.20category.20of.20algebras.20and.20coalgebras.3F.html#323572338">(Jan 25 2023 at 19:50)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="276092">Nathanael Arkor</span> <a href="#narrow/stream/229136-theory.3A-category-theory/topic/n-fold.20category.20of.20algebras.20and.20coalgebras.3F/near/323552468">said</a>:</p>
+<blockquote>
+<p>The objects may be distinguished by being in one of two classes, but the morphisms don't appear to have any interesting properties: their shape is uniquely determined by the class of their domain and codomain. So I think it's misleading to say that there are four kinds of 1-cell, as the kinds should be parameterised by the kind of their (co)domain.</p>
+</blockquote>
+<p>I see. You're saying that once I know the type of the domain and codomain, the type of the morphism is fixed, unlike with, say, double categories.</p>
+
+
+
+<a name="323582593"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/n-fold%20category%20of%20algebras%20and%20coalgebras%3F/near/323582593" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nathanael Arkor <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/topic_n-fold.20category.20of.20algebras.20and.20coalgebras.3F.html#323582593">(Jan 25 2023 at 20:53)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="276875">Bruno Gavranovic</span> <a href="#narrow/stream/229136-theory.3A-category-theory/topic/n-fold.20category.20of.20algebras.20and.20coalgebras.3F/near/323572101">said</a>:</p>
+<blockquote>
+<p><span class="user-mention silent" data-user-id="276092">Nathanael Arkor</span> <a href="#narrow/stream/229136-theory.3A-category-theory/topic/n-fold.20category.20of.20algebras.20and.20coalgebras.3F/near/323552142">said</a>:</p>
+<blockquote>
+<p>Algebras and coalgebras for an endofunctor form a category. Is there any structure you're interested in that is not captured simply by the categorical structure?</p>
+</blockquote>
+<p>They both form individual categories, yes. But the coalgebra-to-algebra morphism isn't a morphism in either one of them.</p>
+</blockquote>
+<p>I mean that there is a category whose objects are either algebras or coalgebras, and whose morphisms are the appropriate notion of morphism in each case. But I agree that seeing this category as sitting inside a larger one seems more natural.</p>
+
+
+
+<a name="323605299"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/n-fold%20category%20of%20algebras%20and%20coalgebras%3F/near/323605299" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Bruno Gavranovic <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/topic_n-fold.20category.20of.20algebras.20and.20coalgebras.3F.html#323605299">(Jan 25 2023 at 23:44)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="276777">Mike Shulman</span> <a href="#narrow/stream/229136-theory.3A-category-theory/topic/n-fold.20category.20of.20algebras.20and.20coalgebras.3F/near/323555590">said</a>:</p>
+<blockquote>
+<p>I think this category sits inside a larger and perhaps more natural-looking category consisting of objects $X$ with a <em>relation</em> to $FX$.  Then sometimes the relation is functional and sometimes cofunctional.</p>
+</blockquote>
+<p>One issue with this is that we lose directionality as information available at the type level.</p>
+
+
+
+<a name="323608488"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/n-fold%20category%20of%20algebras%20and%20coalgebras%3F/near/323608488" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> James Deikun <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/topic_n-fold.20category.20of.20algebras.20and.20coalgebras.3F.html#323608488">(Jan 26 2023 at 00:15)</a>:</h4>
+<p>One larger category you might embed this in is the category of dialgebras for all endofunctors on a specific category; in this case the type information would indeed be in the morphisms as there would be a "twisted" type that exchanged the functors and an "untwisted" type that kept them the same.</p>
+
+
+
+<a name="323608710"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/n-fold%20category%20of%20algebras%20and%20coalgebras%3F/near/323608710" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> James Deikun <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/topic_n-fold.20category.20of.20algebras.20and.20coalgebras.3F.html#323608710">(Jan 26 2023 at 00:17)</a>:</h4>
+<p>This might be seen as a <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi mathvariant="double-struck">Z</mi><mn>2</mn></msub></mrow><annotation encoding="application/x-tex">\mathbb{Z}_2</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8389em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathbb">Z</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span>-graded category.</p>
+
+
+
+{% endraw %}
+
+<hr><p>Last updated: Jan 26 2023 at 00:45 UTC</p>

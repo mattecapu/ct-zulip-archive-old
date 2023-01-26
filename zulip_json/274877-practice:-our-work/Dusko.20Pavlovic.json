@@ -142,5 +142,47 @@
         "id": 312021874,
         "sender_full_name": "John Baez",
         "timestamp": 1669298405
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"275920\">John Baez</span> <a href=\"#narrow/stream/274877-practice.3A-our-work/topic/Dusko.20Pavlovic/near/312021304\">said</a>:</p>\n<blockquote>\n<blockquote>\n<p>(Btw, why are you calling them \"cartesian monoidal categories\". Isn't cartesian structure always monoidal? I.e., are ther cartesian non-monoidal categories?)</p>\n</blockquote>\n<p>I'm not sure anyone gave the answer to this that I'd give.  There are two subtly different but roughly equivalent notions: </p>\n<ul>\n<li>a category with finite products</li>\n<li>a monoidal category where the tensor product is the cartesian product and the unit object is terminal</li>\n</ul>\n<p>To get from the former to the latter we have to choose a terminal object and a specific cartesian product for each pair of objects.  We might do this using the axiom of choice, for example.</p>\n<p>The latter is called a <a href=\"https://ncatlab.org/nlab/show/cartesian+monoidal+category\">cartesian monoidal category</a>.</p>\n</blockquote>\n<p>thanks for explaining this, john.</p>\n<p>a couple of people responded this earlier, but differently. they said that the difference between cartesian and cartesian monoidal was that cartesian categories have all finite <em>limits</em>. (back in the 90s, there was precisely one person who used the term in that sense: peter freyd. apparently ptj also adopted it in the elephants, to keep all structures slicewise as they are in toposes. but then the cartesian closed structure is also slicewise and becomes what used to be called locally cartesian closed and all hell breaks loose...)</p>\n<p>now you go back to cartesian = existence of finite products  (a property) and cartesian monoidal = choice of finite product functors (a structure). fair enough. the idea that we should signal whenever we use the AC to pick representatives of a universal construction is something that many of us would subscribe to. </p>\n<p>an equivalence of categories is a functor that is full and faithful and essentially surjective. it is also a pair of adjoint functors where the unit and the counit are invertible. getting from one to the other requires that we choose representatives of the equivalence classes along the essential surjection and prove a lemma. should we distinguish the two notions of equivalence? it might be ok.</p>\n<p>but the thread goes deeper into the sweater.</p>\n<p>in cartesian closed categories, the finite product <em>functors</em> have right adjoints. so the 50 years of books and papers about cartesian closed categories were not about cartesian categories but about cartesian monoidal closed categories. to talk about cartesian closed categories, we should never say \"functor\" only that this and that is representable.</p>\n<p>on the other hand, in cartesian monoidal closed categories, presumably not only the products but also the exponents should be chosen as functors. maclane worked out the coherences for the closed structure and found pairs of non-canonical isomorphisms. very clumsy to carry around. did he even state it as a failure of coherence? but they arise from using universal constructions in different orders.  so if the closure is treated as a property, whenever you encounter the noncoherence, the construction tells you which of the isomorphisms you are using. someone at the time claimed that this was <em>necessary</em> when working with triangulations... </p>\n<p>should we somehow signal that the cartesian monoidal structure in cartesian monoidal closed categories is chosen structure, but that its closure is not cartesian monoidal but only cartesian, since it is treated as a property (representability of some functors)?</p>\n<p>god probably invented math when he was fed up with giving things names. naming things can get risky. that is why the lambda-calculus people say that the world is modulo the alpha-conversion :))</p>",
+        "id": 323459665,
+        "sender_full_name": "dusko",
+        "timestamp": 1674645787
+    },
+    {
+        "content": "<p>For me it's a matter of perspective. 'Cartesian monoidal category' is not telling me something more about a 'Cartesian category', but something more about a 'monoidal category'. Simply put, if I'm working with a monoidal category and you tell me 'oh, actually this is cartesian monoidal' then I know I get natural copy and delete for free on every object.</p>",
+        "id": 323485944,
+        "sender_full_name": "Fabrizio Genovese",
+        "timestamp": 1674653616
+    },
+    {
+        "content": "<p>So, in this sense, I find it like a useful notation for people working heavily with monoidal categories. This is especially important in categorical quantum mechanics, as having copy and delete around is usually taken to signify that whatever you are dealing with behaves classically <span aria-label=\"grinning\" class=\"emoji emoji-1f600\" role=\"img\" title=\"grinning\">:grinning:</span></p>",
+        "id": 323486196,
+        "sender_full_name": "Fabrizio Genovese",
+        "timestamp": 1674653691
+    },
+    {
+        "content": "<p>Along similar lines, I think that it's usually good practice if phrases like \"gobbledygook category\" specify a <em>2-category</em> of such categories. In other words, every such term comes with a canonical notion of functor between them. For cartesian categories, I would think that the canonical notion of functor is just a plain functor; while for cartesian monoidal categories, I would think that you actually want to consider them as monoidal categories, so the relevant functors are strong monoidal functors.</p>",
+        "id": 323493236,
+        "sender_full_name": "Tobias Fritz",
+        "timestamp": 1674655629
+    },
+    {
+        "content": "<blockquote>\n<p>For cartesian categories, I would think that the canonical notion of functor is just a plain functor</p>\n</blockquote>\n<p>The appropriate notion of functor is one that preserves finite products.</p>",
+        "id": 323497008,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1674656489
+    },
+    {
+        "content": "<p>For most kinds of structured category, there are three different kinds of \"appropriate\" morphism between them: lax, colax, and strong/pseudo.  For cartesian categories, the colax morphisms are arbitrary functors (abstractly this is because the monad for cartesian structure is \"colax-idempotent\"), while the lax and strong morphisms are product-preserving functors.</p>",
+        "id": 323500249,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1674657262
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276092\">Nathanael Arkor</span> <a href=\"#narrow/stream/274877-practice.3A-our-work/topic/Dusko.20Pavlovic/near/323497008\">said</a>:</p>\n<blockquote>\n<blockquote>\n<p>For cartesian categories, I would think that the canonical notion of functor is just a plain functor</p>\n</blockquote>\n<p>The appropriate notion of functor is one that preserves finite products.</p>\n</blockquote>\n<p>That's certainly true in many situations, but it seems like an overly restrictive moral provision to me. For example, it already precludes considering functors of the form <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mo>×</mo><mo>−</mo></mrow><annotation encoding=\"application/x-tex\">A \\times -</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.7667em;vertical-align:-0.0833em;\"></span><span class=\"mord mathnormal\">A</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span><span class=\"mbin\">×</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6667em;vertical-align:-0.0833em;\"></span><span class=\"mord\">−</span></span></span></span> as functors between cartesian categories (on sufficiently nontrivial cartesian categories that is).</p>\n<p>But yes, I should weaken my claim a bit and just say that \"cartesian monoidal category\" makes it clear that you consider the category under consideration explicitly as a <em>monoidal</em> category. When you merely say \"cartesian category\", then it doesn't have that connotation; and if somewhere else you use the term \"monoidal category\" to refer to the same category, then I will not assume that the monoidal structure is the cartesian one. In both cases, there are several natural choices of functor, and the terminology can also be used to reflect which one you have in mind.</p>",
+        "id": 323525337,
+        "sender_full_name": "Tobias Fritz",
+        "timestamp": 1674662998
     }
 ]
