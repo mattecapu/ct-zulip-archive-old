@@ -14,7 +14,7 @@ permalink: /index.html
 
 * [general](stream/229111-general/index.html) (245 topics)
 
-* [general: events](stream/229141-general:-events/index.html) (153 topics)
+* [general: events](stream/229141-general:-events/index.html) (154 topics)
 
 * [practice: applied ct](stream/229156-practice:-applied-ct/index.html) (139 topics)
 
@@ -44,7 +44,7 @@ permalink: /index.html
 
 * [seminar: MIT Categories Seminar](stream/229457-seminar:-MIT-Categories-Seminar/index.html) (41 topics)
 
-* [practice: our work](stream/274877-practice:-our-work/index.html) (37 topics)
+* [practice: our work](stream/274877-practice:-our-work/index.html) (38 topics)
 
 * [Categorical Probability and Statistics 2020 workshop](stream/238032-Categorical-Probability-and-Statistics-2020-workshop/index.html) (34 topics)
 
@@ -180,4 +180,4 @@ permalink: /index.html
 
 * [theory: alternate presentations](stream/233122-theory:-alternate-presentations/index.html) (1 topic)
 
-<hr><p>Last updated: Jan 26 2023 at 00:45 UTC</p>
+<hr><p>Last updated: Jan 27 2023 at 00:48 UTC</p>

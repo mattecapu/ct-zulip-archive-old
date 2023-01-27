@@ -9,7 +9,8 @@ permalink: /stream/229136-theory:-category-theory/index.html
 
 ### Topics:
 
-* [n-fold category of algebras and coalgebras?](topic/topic_n-fold.20category.20of.20algebras.20and.20coalgebras.3F.html) (11 messages, latest: Jan 26 2023 at 00:17)
+* [n-fold category of algebras and coalgebras?](topic/topic_n-fold.20category.20of.20algebras.20and.20coalgebras.3F.html) (18 messages, latest: Jan 27 2023 at 00:21)
+* [multiple vs n-fold categories](topic/topic_multiple.20vs.20n-fold.20categories.html) (2 messages, latest: Jan 26 2023 at 00:46)
 * [Conjectures on generalized equipments](topic/topic_Conjectures.20on.20generalized.20equipments.html) (152 messages, latest: Jan 26 2023 at 00:04)
 * [κ-small κ-accessible categories](topic/topic_.CE.BA-small.20.CE.BA-accessible.20categories.html) (5 messages, latest: Jan 25 2023 at 19:39)
 * [not all monads are co-KZ](topic/topic_not.20all.20monads.20are.20co-KZ.html) (14 messages, latest: Jan 23 2023 at 15:01)
@@ -48,7 +49,6 @@ permalink: /stream/229136-theory:-category-theory/index.html
 * ["On local adjointness of distributive bicategories"](topic/topic_.22On.20local.20adjointness.20of.20distributive.20bicategories.22.html) (3 messages, latest: Nov 07 2022 at 11:26)
 * [Linear analogues of topos](topic/topic_Linear.20analogues.20of.20topos.html) (16 messages, latest: Nov 01 2022 at 03:27)
 * [linear analogues of topos](topic/topic_linear.20analogues.20of.20topos.html) (1 message, latest: Oct 29 2022 at 23:57)
-* [multiple vs n-fold categories](topic/topic_multiple.20vs.20n-fold.20categories.html) (1 message, latest: Oct 27 2022 at 07:54)
 * [Kleisli category with products](topic/topic_Kleisli.20category.20with.20products.html) (11 messages, latest: Oct 25 2022 at 12:46)
 * [basis](topic/topic_basis.html) (50 messages, latest: Oct 25 2022 at 12:31)
 * [the (∞, 1)-category of strict ∞-groupoids](topic/topic_the.20(.E2.88.9E.2C.201)-category.20of.20strict.20.E2.88.9E-groupoids.html) (5 messages, latest: Oct 23 2022 at 12:11)
@@ -366,4 +366,4 @@ permalink: /stream/229136-theory:-category-theory/index.html
 * [diagrams for application](topic/topic_diagrams.20for.20application.html) (13 messages, latest: Mar 24 2020 at 06:19)
 * [universal constructions](topic/topic_universal.20constructions.html) (8 messages, latest: Mar 23 2020 at 21:06)
 
-<hr><p>Last updated: Jan 26 2023 at 00:45 UTC</p>
+<hr><p>Last updated: Jan 27 2023 at 00:48 UTC</p>

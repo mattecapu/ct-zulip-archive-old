@@ -9,6 +9,7 @@ permalink: /stream/274877-practice:-our-work/index.html
 
 ### Topics:
 
+* [James Deikun](topic/topic_James.20Deikun.html) (4 messages, latest: Jan 26 2023 at 16:06)
 * [Dusko Pavlovic](topic/topic_Dusko.20Pavlovic.html) (31 messages, latest: Jan 25 2023 at 16:09)
 * [John Baez](topic/topic_John.20Baez.html) (930 messages, latest: Jan 19 2023 at 06:47)
 * [Jean-Baptiste Vienney](topic/topic_Jean-Baptiste.20Vienney.html) (30 messages, latest: Jan 08 2023 at 21:15)
@@ -47,4 +48,4 @@ permalink: /stream/274877-practice:-our-work/index.html
 * [Conor Mc Bride](topic/topic_Conor.20Mc.20Bride.html) (60 messages, latest: Apr 08 2021 at 15:15)
 * [thoughts on sharing ideas](topic/topic_thoughts.20on.20sharing.20ideas.html) (20 messages, latest: Jan 31 2021 at 03:05)
 
-<hr><p>Last updated: Jan 26 2023 at 00:45 UTC</p>
+<hr><p>Last updated: Jan 27 2023 at 00:48 UTC</p>
