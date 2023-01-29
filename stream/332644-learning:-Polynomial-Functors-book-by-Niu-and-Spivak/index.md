@@ -11,4 +11,4 @@ permalink: /stream/332644-learning:-Polynomial-Functors-book-by-Niu-and-Spivak/i
 
 * [stream events](topic/topic_stream.20events.html) (1 message, latest: Jul 26 2022 at 14:27)
 
-<hr><p>Last updated: Jan 28 2023 at 00:46 UTC</p>
+<hr><p>Last updated: Jan 29 2023 at 00:51 UTC</p>
