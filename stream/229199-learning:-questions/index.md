@@ -9,9 +9,9 @@ permalink: /stream/229199-learning:-questions/index.html
 
 ### Topics:
 
+* [✔ Subobject classifier question](topic/topic_.E2.9C.94.20Subobject.20classifier.20question.html) (2 messages, latest: Jan 29 2023 at 09:52)
 * [products and coproducts with string diagrams](topic/topic_products.20and.20coproducts.20with.20string.20diagrams.html) (5 messages, latest: Jan 28 2023 at 22:14)
 * [spans that are pullback cones](topic/topic_spans.20that.20are.20pullback.20cones.html) (4 messages, latest: Jan 28 2023 at 21:13)
-* [✔ Subobject classifier question](topic/topic_.E2.9C.94.20Subobject.20classifier.20question.html) (1 message, latest: Jan 28 2023 at 17:04)
 * [✔ Is the double category of spans closed?](topic/topic_.E2.9C.94.20Is.20the.20double.20category.20of.20spans.20closed.3F.html) (2 messages, latest: Jan 28 2023 at 01:26)
 * [Subobject classifier question](topic/topic_Subobject.20classifier.20question.html) (7 messages, latest: Jan 27 2023 at 23:18)
 * [✔ Definition of Categorical Automaton on Planet Physics.](topic/topic_.E2.9C.94.20Definition.20of.20Categorical.20Automaton.20on.20Planet.20Physics.2E.html) (2 messages, latest: Jan 27 2023 at 20:00)
@@ -822,4 +822,4 @@ permalink: /stream/229199-learning:-questions/index.html
 * [Algebra (Aluffi) exercises](topic/topic_Algebra.20(Aluffi).20exercises.html) (55 messages, latest: Mar 27 2020 at 23:38)
 * [What is category theory about?](topic/topic_What.20is.20category.20theory.20about.3F.html) (16 messages, latest: Mar 26 2020 at 16:03)
 
-<hr><p>Last updated: Jan 29 2023 at 00:51 UTC</p>
+<hr><p>Last updated: Jan 30 2023 at 00:43 UTC</p>

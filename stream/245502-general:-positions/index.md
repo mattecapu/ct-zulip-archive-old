@@ -9,6 +9,7 @@ permalink: /stream/245502-general:-positions/index.html
 
 ### Topics:
 
+* [funded PhD position at Swansea](topic/topic_funded.20PhD.20position.20at.20Swansea.html) (1 message, latest: Jan 29 2023 at 14:13)
 * [Assistant Professorship in Amsterdam](topic/topic_Assistant.20Professorship.20in.20Amsterdam.html) (1 message, latest: Jan 27 2023 at 21:19)
 * [graduate positions at the University of Western Ontario](topic/topic_graduate.20positions.20at.20the.20University.20of.20Western.20Ontario.html) (1 message, latest: Jan 18 2023 at 05:56)
 * [positions at Topos](topic/topic_positions.20at.20Topos.html) (2 messages, latest: Jan 06 2023 at 21:28)
@@ -79,4 +80,4 @@ permalink: /stream/245502-general:-positions/index.html
 * [PhD positions in Estonia](topic/topic_PhD.20positions.20in.20Estonia.html) (1 message, latest: Jun 27 2020 at 18:04)
 * [Companies that hire category people](topic/topic_Companies.20that.20hire.20category.20people.html) (2 messages, latest: May 13 2020 at 03:50)
 
-<hr><p>Last updated: Jan 29 2023 at 00:51 UTC</p>
+<hr><p>Last updated: Jan 30 2023 at 00:43 UTC</p>
