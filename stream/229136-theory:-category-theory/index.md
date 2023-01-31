@@ -9,8 +9,8 @@ permalink: /stream/229136-theory:-category-theory/index.html
 
 ### Topics:
 
-* [Tangent space on a hom-object](topic/topic_Tangent.20space.20on.20a.20hom-object.html) (14 messages, latest: Jan 30 2023 at 00:38)
-* [n-fold category of algebras and coalgebras?](topic/topic_n-fold.20category.20of.20algebras.20and.20coalgebras.3F.html) (23 messages, latest: Jan 29 2023 at 18:10)
+* [Tangent space on a hom-object](topic/topic_Tangent.20space.20on.20a.20hom-object.html) (21 messages, latest: Jan 30 2023 at 20:39)
+* [n-fold category of algebras and coalgebras?](topic/topic_n-fold.20category.20of.20algebras.20and.20coalgebras.3F.html) (31 messages, latest: Jan 30 2023 at 18:20)
 * [Limits in double functor categories](topic/topic_Limits.20in.20double.20functor.20categories.html) (2 messages, latest: Jan 27 2023 at 12:24)
 * [multiple vs n-fold categories](topic/topic_multiple.20vs.20n-fold.20categories.html) (2 messages, latest: Jan 26 2023 at 00:46)
 * [Conjectures on generalized equipments](topic/topic_Conjectures.20on.20generalized.20equipments.html) (152 messages, latest: Jan 26 2023 at 00:04)
@@ -368,4 +368,4 @@ permalink: /stream/229136-theory:-category-theory/index.html
 * [diagrams for application](topic/topic_diagrams.20for.20application.html) (13 messages, latest: Mar 24 2020 at 06:19)
 * [universal constructions](topic/topic_universal.20constructions.html) (8 messages, latest: Mar 23 2020 at 21:06)
 
-<hr><p>Last updated: Jan 30 2023 at 00:43 UTC</p>
+<hr><p>Last updated: Jan 31 2023 at 00:48 UTC</p>
