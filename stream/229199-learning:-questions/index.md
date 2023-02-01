@@ -9,7 +9,7 @@ permalink: /stream/229199-learning:-questions/index.html
 
 ### Topics:
 
-* [products and coproducts with string diagrams](topic/topic_products.20and.20coproducts.20with.20string.20diagrams.html) (10 messages, latest: Jan 30 2023 at 18:52)
+* [products and coproducts with string diagrams](topic/topic_products.20and.20coproducts.20with.20string.20diagrams.html) (13 messages, latest: Jan 31 2023 at 15:19)
 * [pushout of coproducts](topic/topic_pushout.20of.20coproducts.html) (4 messages, latest: Jan 30 2023 at 13:09)
 * [✔ Subobject classifier question](topic/topic_.E2.9C.94.20Subobject.20classifier.20question.html) (2 messages, latest: Jan 29 2023 at 09:52)
 * [spans that are pullback cones](topic/topic_spans.20that.20are.20pullback.20cones.html) (4 messages, latest: Jan 28 2023 at 21:13)
@@ -823,4 +823,4 @@ permalink: /stream/229199-learning:-questions/index.html
 * [Algebra (Aluffi) exercises](topic/topic_Algebra.20(Aluffi).20exercises.html) (55 messages, latest: Mar 27 2020 at 23:38)
 * [What is category theory about?](topic/topic_What.20is.20category.20theory.20about.3F.html) (16 messages, latest: Mar 26 2020 at 16:03)
 
-<hr><p>Last updated: Jan 31 2023 at 00:48 UTC</p>
+<hr><p>Last updated: Feb 01 2023 at 00:55 UTC</p>

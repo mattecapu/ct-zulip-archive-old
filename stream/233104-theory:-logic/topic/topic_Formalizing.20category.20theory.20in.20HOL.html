@@ -45,6 +45,31 @@ There are also lots of papers on formalizing category theory in Coq, Lean or oth
 
 
 
+<a name="324810231"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/233104-theory%3A%20logic/topic/Formalizing%20category%20theory%20in%20HOL/near/324810231" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Patrick Nicodemus <a href="https://mattecapu.github.io/ct-zulip-archive/stream/233104-theory:-logic/topic/topic_Formalizing.20category.20theory.20in.20HOL.html#324810231">(Jan 31 2023 at 01:14)</a>:</h4>
+<p><a href="https://www.isa-afp.org/browser_info/current/AFP/Category3/outline.pdf">https://www.isa-afp.org/browser_info/current/AFP/Category3/outline.pdf</a><br>
+Chapters 9 and 10<br>
+For any category S, the set of all terminal objects  in S are thought of as "elements", I do not know if these behave like urelements or if they can have nontrivial internal structure.<br>
+Fix a distinguished terminal object 1.<br>
+Then we define, for each object X, a map from Hom(1, X) into the set of terminal objects of S, which sends each map a : 1 -&gt; X to the "element" that it picks out. The idea is for a nice enough "category of sets" S, every object can be uniquely recovered from its underlying "set of elements" - the set of terminal objects under this correspondence</p>
+
+
+
+<a name="324831328"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/233104-theory%3A%20logic/topic/Formalizing%20category%20theory%20in%20HOL/near/324831328" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Jason Erbele <a href="https://mattecapu.github.io/ct-zulip-archive/stream/233104-theory:-logic/topic/topic_Formalizing.20category.20theory.20in.20HOL.html#324831328">(Jan 31 2023 at 05:38)</a>:</h4>
+<p>That's a pretty nifty definition of a category of sets.  Using Hom(1, X) in Set to pick out the elements of X is not unusual, so it looks promising just at a glance.  Would it be too much to expect that if T is a terminal object in S, the map from Hom(1, T) to the terminal objects of S would pick out T?  I don't suppose this is necessary, but it probably could be done for convenience.  Ah.  Looks like this is addressed on pp. 62–63 on the pdf you linked, with roughly the conclusion I expected:</p>
+<blockquote>
+<p>The locale assumption <em>stable-img</em> forces t ∈ set t in case t is a terminal object. This is very convenient, as it results in the characterization of terminal objects as identities t for which set t = {t}. However, it is not absolutely necessary to have this.</p>
+</blockquote>
+<p>My first thought on how to make this definition appear more foreign (besides turning it into computer code, but given what stream this conversation is in, maybe that's me) is to take S to be a category with a unique terminal object (not just unique up to isomorphism), like <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mrow><mi mathvariant="normal">S</mi><mi mathvariant="normal">e</mi><mi mathvariant="normal">t</mi></mrow><mrow><mi mathvariant="normal">o</mi><mi mathvariant="normal">p</mi></mrow></msup></mrow><annotation encoding="application/x-tex">\mathrm{Set}^{\mathrm{op}}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.7376em;"></span><span class="mord"><span class="mord"><span class="mord mathrm">Set</span></span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.7376em;"><span style="top:-3.1362em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight"><span class="mord mathrm mtight">op</span></span></span></span></span></span></span></span></span></span></span></span></span>.  Glossing along as best I can on the linked pdf, it seems like that would be the context for a set theory where there is only one element and thus only one non-empty set.  This situation also gets a mention (on p. 75) in the pdf as "the case of a degenerate universe with only a single element."</p>
+<p>The pdf at least indirectly mentions another "perverse" sort of situation that can happen that I didn't think of:</p>
+<blockquote>
+<p>We call a set category <em>replete</em> if there is an object corresponding to every subset of the universe.</p>
+</blockquote>
+<p>So a set category that is not replete would have sets that don't have objects of S to represent them.</p>
+
+
+
 {% endraw %}
 
-<hr><p>Last updated: Jan 31 2023 at 00:48 UTC</p>
+<hr><p>Last updated: Feb 01 2023 at 00:55 UTC</p>
