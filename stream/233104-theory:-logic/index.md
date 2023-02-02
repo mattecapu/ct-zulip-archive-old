@@ -9,7 +9,7 @@ permalink: /stream/233104-theory:-logic/index.html
 
 ### Topics:
 
-* [Formalizing category theory in HOL](topic/topic_Formalizing.20category.20theory.20in.20HOL.html) (7 messages, latest: Jan 31 2023 at 05:38)
+* [Formalizing category theory in HOL](topic/topic_Formalizing.20category.20theory.20in.20HOL.html) (10 messages, latest: Feb 01 2023 at 02:19)
 * [All models of classical logic are posets](topic/topic_All.20models.20of.20classical.20logic.20are.20posets.html) (10 messages, latest: Jan 10 2023 at 21:25)
 * [All Models of Classical Logic are Posets](topic/topic_All.20Models.20of.20Classical.20Logic.20are.20Posets.html) (1 message, latest: Jan 10 2023 at 13:36)
 * [Framework for expressing categorical doctrines and logics](topic/topic_Framework.20for.20expressing.20categorical.20doctrines.20and.20logics.html) (8 messages, latest: Nov 11 2022 at 21:04)
@@ -67,4 +67,4 @@ permalink: /stream/233104-theory:-logic/index.html
 * [Probability as logic](topic/topic_Probability.20as.20logic.html) (63 messages, latest: Apr 15 2020 at 12:33)
 * [stream events](topic/topic_stream.20events.html) (1 message, latest: Apr 10 2020 at 12:32)
 
-<hr><p>Last updated: Feb 01 2023 at 00:55 UTC</p>
+<hr><p>Last updated: Feb 02 2023 at 00:48 UTC</p>

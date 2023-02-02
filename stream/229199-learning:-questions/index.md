@@ -9,6 +9,7 @@ permalink: /stream/229199-learning:-questions/index.html
 
 ### Topics:
 
+* [f(x)=x, f'=0](topic/topic_f(x).3Dx.2C.20f'.3D0.html) (19 messages, latest: Feb 01 2023 at 23:21)
 * [products and coproducts with string diagrams](topic/topic_products.20and.20coproducts.20with.20string.20diagrams.html) (13 messages, latest: Jan 31 2023 at 15:19)
 * [pushout of coproducts](topic/topic_pushout.20of.20coproducts.html) (4 messages, latest: Jan 30 2023 at 13:09)
 * [✔ Subobject classifier question](topic/topic_.E2.9C.94.20Subobject.20classifier.20question.html) (2 messages, latest: Jan 29 2023 at 09:52)
@@ -146,7 +147,6 @@ permalink: /stream/229199-learning:-questions/index.html
 * [Confusion on the Nature of Isomorphisms in HomSet](topic/topic_Confusion.20on.20the.20Nature.20of.20Isomorphisms.20in.20HomSet.html) (10 messages, latest: Jun 25 2022 at 21:55)
 * [finding an old paper of Gray](topic/topic_finding.20an.20old.20paper.20of.20Gray.html) (3 messages, latest: Jun 24 2022 at 19:04)
 * [weak/lax fibers of a functor](topic/topic_weak.2Flax.20fibers.20of.20a.20functor.html) (39 messages, latest: Jun 24 2022 at 16:39)
-* [f(x)=x, f'=0](topic/topic_f(x).3Dx.2C.20f'.3D0.html) (16 messages, latest: Jun 21 2022 at 14:19)
 * [what's a "proper" intuition regarding adjunctions?](topic/topic_what's.20a.20.22proper.22.20intuition.20regarding.20adjunctions.3F.html) (7 messages, latest: Jun 19 2022 at 09:37)
 * [Unknown property of posets](topic/topic_Unknown.20property.20of.20posets.html) (2 messages, latest: Jun 16 2022 at 15:43)
 * [name for globular sets without globular set condition](topic/topic_name.20for.20globular.20sets.20without.20globular.20set.20condition.html) (20 messages, latest: Jun 14 2022 at 08:39)
@@ -823,4 +823,4 @@ permalink: /stream/229199-learning:-questions/index.html
 * [Algebra (Aluffi) exercises](topic/topic_Algebra.20(Aluffi).20exercises.html) (55 messages, latest: Mar 27 2020 at 23:38)
 * [What is category theory about?](topic/topic_What.20is.20category.20theory.20about.3F.html) (16 messages, latest: Mar 26 2020 at 16:03)
 
-<hr><p>Last updated: Feb 01 2023 at 00:55 UTC</p>
+<hr><p>Last updated: Feb 02 2023 at 00:48 UTC</p>

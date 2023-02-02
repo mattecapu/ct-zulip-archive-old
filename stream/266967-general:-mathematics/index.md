@@ -9,6 +9,7 @@ permalink: /stream/266967-general:-mathematics/index.html
 
 ### Topics:
 
+* [alternating maps](topic/topic_alternating.20maps.html) (12 messages, latest: Feb 01 2023 at 22:31)
 * [Are boolean rigs commutative?](topic/topic_Are.20boolean.20rigs.20commutative.3F.html) (63 messages, latest: Jan 25 2023 at 13:57)
 * [Algebra over a ring in two different ways](topic/topic_Algebra.20over.20a.20ring.20in.20two.20different.20ways.html) (36 messages, latest: Dec 12 2022 at 21:17)
 * [Taylor expansion of y'(x-h)](topic/topic_Taylor.20expansion.20of.20y'(x-h).html) (2 messages, latest: Dec 05 2022 at 10:10)
@@ -34,7 +35,6 @@ permalink: /stream/266967-general:-mathematics/index.html
 * [epimorphisms of rings](topic/topic_epimorphisms.20of.20rings.html) (20 messages, latest: Oct 08 2021 at 19:10)
 * [Euler characteristic and entropy](topic/topic_Euler.20characteristic.20and.20entropy.html) (10 messages, latest: Sep 22 2021 at 10:29)
 * [parametrised operations](topic/topic_parametrised.20operations.html) (13 messages, latest: Sep 11 2021 at 13:06)
-* [alternating maps](topic/topic_alternating.20maps.html) (11 messages, latest: Jul 22 2021 at 12:08)
 * [Category Theory and Nonstandard Models of Arithmetic](topic/topic_Category.20Theory.20and.20Nonstandard.20Models.20of.20Arithmetic.html) (1 message, latest: Jul 22 2021 at 11:05)
 * [earring space](topic/topic_earring.20space.html) (23 messages, latest: Jul 15 2021 at 05:49)
 * [New Spaces in Mathematics](topic/topic_New.20Spaces.20in.20Mathematics.html) (1 message, latest: Jun 27 2021 at 20:01)
@@ -73,4 +73,4 @@ permalink: /stream/266967-general:-mathematics/index.html
 * [the 600-cell](topic/topic_the.20600-cell.html) (5 messages, latest: Dec 01 2020 at 16:35)
 * [hermitian matrix over normed division algebra](topic/topic_hermitian.20matrix.20over.20normed.20division.20algebra.html) (8 messages, latest: Sep 28 2020 at 21:19)
 
-<hr><p>Last updated: Feb 01 2023 at 00:55 UTC</p>
+<hr><p>Last updated: Feb 02 2023 at 00:48 UTC</p>

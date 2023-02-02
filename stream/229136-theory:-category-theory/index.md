@@ -9,6 +9,8 @@ permalink: /stream/229136-theory:-category-theory/index.html
 
 ### Topics:
 
+* [A new monad from a strong monad](topic/topic_A.20new.20monad.20from.20a.20strong.20monad.html) (4 messages, latest: Feb 01 2023 at 15:06)
+* [the easiest way to construct an adjunction?](topic/topic_the.20easiest.20way.20to.20construct.20an.20adjunction.3F.html) (7 messages, latest: Feb 01 2023 at 14:37)
 * [Tangent space on a hom-object](topic/topic_Tangent.20space.20on.20a.20hom-object.html) (23 messages, latest: Jan 31 2023 at 21:31)
 * [n-fold category of algebras and coalgebras?](topic/topic_n-fold.20category.20of.20algebras.20and.20coalgebras.3F.html) (31 messages, latest: Jan 30 2023 at 18:20)
 * [Limits in double functor categories](topic/topic_Limits.20in.20double.20functor.20categories.html) (2 messages, latest: Jan 27 2023 at 12:24)
@@ -368,4 +370,4 @@ permalink: /stream/229136-theory:-category-theory/index.html
 * [diagrams for application](topic/topic_diagrams.20for.20application.html) (13 messages, latest: Mar 24 2020 at 06:19)
 * [universal constructions](topic/topic_universal.20constructions.html) (8 messages, latest: Mar 23 2020 at 21:06)
 
-<hr><p>Last updated: Feb 01 2023 at 00:55 UTC</p>
+<hr><p>Last updated: Feb 02 2023 at 00:48 UTC</p>
