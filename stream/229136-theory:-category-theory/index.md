@@ -9,8 +9,9 @@ permalink: /stream/229136-theory:-category-theory/index.html
 
 ### Topics:
 
+* [A new monad from a strong monad](topic/topic_A.20new.20monad.20from.20a.20strong.20monad.html) (26 messages, latest: Feb 04 2023 at 20:35)
+* [Monad composition](topic/topic_Monad.20composition.html) (4 messages, latest: Feb 04 2023 at 19:46)
 * [factorization system from arrows to objects](topic/topic_factorization.20system.20from.20arrows.20to.20objects.html) (5 messages, latest: Feb 03 2023 at 11:35)
-* [A new monad from a strong monad](topic/topic_A.20new.20monad.20from.20a.20strong.20monad.html) (10 messages, latest: Feb 03 2023 at 00:37)
 * [the easiest way to construct an adjunction?](topic/topic_the.20easiest.20way.20to.20construct.20an.20adjunction.3F.html) (9 messages, latest: Feb 02 2023 at 22:55)
 * [Tangent space on a hom-object](topic/topic_Tangent.20space.20on.20a.20hom-object.html) (23 messages, latest: Jan 31 2023 at 21:31)
 * [n-fold category of algebras and coalgebras?](topic/topic_n-fold.20category.20of.20algebras.20and.20coalgebras.3F.html) (31 messages, latest: Jan 30 2023 at 18:20)
@@ -371,4 +372,4 @@ permalink: /stream/229136-theory:-category-theory/index.html
 * [diagrams for application](topic/topic_diagrams.20for.20application.html) (13 messages, latest: Mar 24 2020 at 06:19)
 * [universal constructions](topic/topic_universal.20constructions.html) (8 messages, latest: Mar 23 2020 at 21:06)
 
-<hr><p>Last updated: Feb 04 2023 at 00:44 UTC</p>
+<hr><p>Last updated: Feb 05 2023 at 00:50 UTC</p>
