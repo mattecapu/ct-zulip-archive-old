@@ -1,0 +1,50 @@
+[
+    {
+        "content": "<p>Inspired the <a href=\"https://ncatlab.org/nlab/show/microcosm%20principle\">[[microcosm principle]]</a>, I'd like to know what sort of algebraic structures fit natively inside rig categories, just like (commutative) monoids live inside (symmetric) monoidal categories. So is there a known notion of a rig object inside a rig category?  It looks like one might want to use a different monoidal structures for multiplication addition, which sounds funny to me - do such things actually show up somwhere?</p>",
+        "id": 325975078,
+        "sender_full_name": "Martti Karvonen",
+        "timestamp": 1675610746
+    },
+    {
+        "content": "<p>Great question!  One thing worth looking at is the usual concept of ring defined inside the rig category AbGrp.   Say we have a ring <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>R</mi></mrow><annotation encoding=\"application/x-tex\">R</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.00773em;\">R</span></span></span></span> thought of as an object in AbGrp.   Then addition gives a morphism</p>\n<p><span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>+</mo><mo>:</mo><mi>R</mi><mo>⊕</mo><mi>R</mi><mo>→</mo><mi>R</mi></mrow><annotation encoding=\"application/x-tex\"> + : R \\oplus R \\to R</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6667em;vertical-align:-0.0833em;\"></span><span class=\"mord\">+</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">:</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.7667em;vertical-align:-0.0833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.00773em;\">R</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span><span class=\"mbin\">⊕</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.00773em;\">R</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">→</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.00773em;\">R</span></span></span></span></p>\n<p>while multiplication gives a morphism</p>\n<p><span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>×</mo><mo>:</mo><mi>R</mi><mo>⊗</mo><mi>R</mi><mo>→</mo><mi>R</mi></mrow><annotation encoding=\"application/x-tex\"> \\times : R \\otimes R \\to R</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6667em;vertical-align:-0.0833em;\"></span><span class=\"mord\">×</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">:</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.7667em;vertical-align:-0.0833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.00773em;\">R</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span><span class=\"mbin\">⊗</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.00773em;\">R</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">→</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.00773em;\">R</span></span></span></span></p>",
+        "id": 325993668,
+        "sender_full_name": "John Baez",
+        "timestamp": 1675619560
+    },
+    {
+        "content": "<p>So two different monoidal structures <em>are</em> getting used here, <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>⊕</mo></mrow><annotation encoding=\"application/x-tex\">\\oplus</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6667em;vertical-align:-0.0833em;\"></span><span class=\"mord\">⊕</span></span></span></span> for + and <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>⊗</mo></mrow><annotation encoding=\"application/x-tex\">\\otimes</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6667em;vertical-align:-0.0833em;\"></span><span class=\"mord\">⊗</span></span></span></span> for <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>×</mo></mrow><annotation encoding=\"application/x-tex\">\\times</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6667em;vertical-align:-0.0833em;\"></span><span class=\"mord\">×</span></span></span></span>, in a microcosmic way.</p>",
+        "id": 325993758,
+        "sender_full_name": "John Baez",
+        "timestamp": 1675619604
+    },
+    {
+        "content": "<p>One natural definition is given by Martin Brandenburg <a href=\"https://math.stackexchange.com/a/822294\">here</a>.</p>",
+        "id": 325996288,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1675620824
+    },
+    {
+        "content": "<p>Nice! I was too stuck with the idea that usual rings are internal to Set, instead of being internal to Ab.</p>",
+        "id": 326001116,
+        "sender_full_name": "Martti Karvonen",
+        "timestamp": 1675623548
+    },
+    {
+        "content": "<p>I guess these would also coincide with some kind of lax morphisms from the terminal rig cat to the rig cat in question?</p>",
+        "id": 326003482,
+        "sender_full_name": "Martti Karvonen",
+        "timestamp": 1675624973
+    },
+    {
+        "content": "<p>I don't know... lax rig category maps?  Maybe.</p>",
+        "id": 326010932,
+        "sender_full_name": "John Baez",
+        "timestamp": 1675630501
+    },
+    {
+        "content": "<p>Note that what I said is a bit odd because while you can treat a ring as a rig object in the rig category <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"false\">(</mo><mrow><mi mathvariant=\"sans-serif\">A</mi><mi mathvariant=\"sans-serif\">b</mi><mi mathvariant=\"sans-serif\">G</mi><mi mathvariant=\"sans-serif\">p</mi></mrow><mo separator=\"true\">,</mo><mo>⊕</mo><mo separator=\"true\">,</mo><mo>⊗</mo><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">(\\mathsf{AbGp}, \\oplus, \\otimes)</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mopen\">(</span><span class=\"mord\"><span class=\"mord mathsf\">AbGp</span></span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord\">⊕</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord\">⊗</span><span class=\"mclose\">)</span></span></span></span> you can also more simply treat it as a monoid object in the monoidal category <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"false\">(</mo><mrow><mi mathvariant=\"sans-serif\">A</mi><mi mathvariant=\"sans-serif\">b</mi><mi mathvariant=\"sans-serif\">G</mi><mi mathvariant=\"sans-serif\">p</mi></mrow><mo separator=\"true\">,</mo><mo>⊗</mo><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">(\\mathsf{AbGp}, \\otimes)</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mopen\">(</span><span class=\"mord\"><span class=\"mord mathsf\">AbGp</span></span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord\">⊗</span><span class=\"mclose\">)</span></span></span></span> - you then get the addition, and distributivity of multiplication over addition, \"for free\".</p>",
+        "id": 326011070,
+        "sender_full_name": "John Baez",
+        "timestamp": 1675630629
+    }
+]

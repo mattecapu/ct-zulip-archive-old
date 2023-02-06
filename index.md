@@ -8,7 +8,7 @@ permalink: /index.html
 
 ## Streams:
 
-* [learning: questions](stream/229199-learning:-questions/index.html) (813 topics)
+* [learning: questions](stream/229199-learning:-questions/index.html) (814 topics)
 
 * [theory: category theory](stream/229136-theory:-category-theory/index.html) (362 topics)
 
@@ -22,7 +22,7 @@ permalink: /index.html
 
 * [general: positions](stream/245502-general:-positions/index.html) (70 topics)
 
-* [theory: algebraic topology & homological algebra](stream/241590-theory:-algebraic-topology-&-homological-algebra/index.html) (69 topics)
+* [theory: algebraic topology & homological algebra](stream/241590-theory:-algebraic-topology-&-homological-algebra/index.html) (70 topics)
 
 * [seminar: Topos Colloquium](stream/269484-seminar:-Topos-Colloquium/index.html) (64 topics)
 
@@ -112,13 +112,13 @@ permalink: /index.html
 
 * [seminar: EM-cats](stream/298571-seminar:-EM-cats/index.html) (7 topics)
 
+* [theory: algebra & CT](stream/230123-theory:-algebra-&-CT/index.html) (7 topics)
+
 * [theory: analysis](stream/281848-theory:-analysis/index.html) (7 topics)
 
 * [general: terminology & notation](stream/348484-general:-terminology-&-notation/index.html) (6 topics)
 
 * [semiotics and semiosis](stream/229179-semiotics-and-semiosis/index.html) (6 topics)
-
-* [theory: algebra & CT](stream/230123-theory:-algebra-&-CT/index.html) (6 topics)
 
 * [ACT@UMD seminar](stream/229967-ACT@UMD-seminar/index.html) (5 topics)
 
@@ -180,4 +180,4 @@ permalink: /index.html
 
 * [theory: alternate presentations](stream/233122-theory:-alternate-presentations/index.html) (1 topic)
 
-<hr><p>Last updated: Feb 05 2023 at 00:50 UTC</p>
+<hr><p>Last updated: Feb 06 2023 at 00:44 UTC</p>
