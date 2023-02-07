@@ -9,8 +9,8 @@ permalink: /stream/229199-learning:-questions/index.html
 
 ### Topics:
 
-* [Internal rigs in rig-categories?](topic/topic_Internal.20rigs.20in.20rig-categories.3F.html) (8 messages, latest: Feb 05 2023 at 20:57)
-* [Beginner questions](topic/topic_Beginner.20questions.html) (27 messages, latest: Feb 05 2023 at 17:45)
+* [Beginner questions](topic/topic_Beginner.20questions.html) (31 messages, latest: Feb 06 2023 at 18:13)
+* [Internal rigs in rig-categories?](topic/topic_Internal.20rigs.20in.20rig-categories.3F.html) (16 messages, latest: Feb 06 2023 at 16:45)
 * [f(x)=x, f'=0](topic/topic_f(x).3Dx.2C.20f'.3D0.html) (19 messages, latest: Feb 01 2023 at 23:21)
 * [products and coproducts with string diagrams](topic/topic_products.20and.20coproducts.20with.20string.20diagrams.html) (13 messages, latest: Jan 31 2023 at 15:19)
 * [pushout of coproducts](topic/topic_pushout.20of.20coproducts.html) (4 messages, latest: Jan 30 2023 at 13:09)
@@ -824,4 +824,4 @@ permalink: /stream/229199-learning:-questions/index.html
 * [Algebra (Aluffi) exercises](topic/topic_Algebra.20(Aluffi).20exercises.html) (55 messages, latest: Mar 27 2020 at 23:38)
 * [What is category theory about?](topic/topic_What.20is.20category.20theory.20about.3F.html) (16 messages, latest: Mar 26 2020 at 16:03)
 
-<hr><p>Last updated: Feb 06 2023 at 00:44 UTC</p>
+<hr><p>Last updated: Feb 07 2023 at 00:48 UTC</p>

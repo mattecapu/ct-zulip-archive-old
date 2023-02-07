@@ -9,7 +9,7 @@ permalink: /stream/230123-theory:-algebra-&-CT/index.html
 
 ### Topics:
 
-* [Category of polynomial functions](topic/topic_Category.20of.20polynomial.20functions.html) (11 messages, latest: Feb 05 2023 at 22:25)
+* [Category of polynomial functions](topic/topic_Category.20of.20polynomial.20functions.html) (21 messages, latest: Feb 06 2023 at 22:49)
 * [The category of fields](topic/topic_The.20category.20of.20fields.html) (70 messages, latest: Mar 01 2021 at 22:39)
 * [Finitely generated projective modules](topic/topic_Finitely.20generated.20projective.20modules.html) (16 messages, latest: Sep 11 2020 at 14:32)
 * [Abelian Categories](topic/topic_Abelian.20Categories.html) (12 messages, latest: Apr 06 2020 at 19:22)
@@ -17,4 +17,4 @@ permalink: /stream/230123-theory:-algebra-&-CT/index.html
 * [stream events](topic/topic_stream.20events.html) (3 messages, latest: Apr 06 2020 at 05:46)
 * [Theme?](topic/topic_Theme.3F.html) (2 messages, latest: Apr 06 2020 at 01:13)
 
-<hr><p>Last updated: Feb 06 2023 at 00:44 UTC</p>
+<hr><p>Last updated: Feb 07 2023 at 00:48 UTC</p>

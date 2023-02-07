@@ -9,11 +9,13 @@ permalink: /stream/229141-general:-events/index.html
 
 ### Topics:
 
-* [ACT 2023](topic/topic_ACT.202023.html) (33 messages, latest: Feb 05 2023 at 00:29)
+* [Studying category theory?  Ask questions here!](topic/topic_Studying.20category.20theory.3F.20.20Ask.20questions.20here!.html) (3 messages, latest: Feb 06 2023 at 22:30)
+* [ACT 2023](topic/topic_ACT.202023.html) (37 messages, latest: Feb 06 2023 at 21:57)
+* [SYCO 11](topic/topic_SYCO.2011.html) (1 message, latest: Feb 06 2023 at 15:41)
+* [HoTT 2023](topic/topic_HoTT.202023.html) (2 messages, latest: Feb 06 2023 at 10:09)
 * [CT 2023](topic/topic_CT.202023.html) (5 messages, latest: Feb 03 2023 at 01:33)
 * [FOSDEM 2023](topic/topic_FOSDEM.202023.html) (1 message, latest: Feb 02 2023 at 20:29)
 * [Mathematics for Humanity](topic/topic_Mathematics.20for.20Humanity.html) (3 messages, latest: Jan 26 2023 at 22:24)
-* [HoTT 2023](topic/topic_HoTT.202023.html) (1 message, latest: Jan 19 2023 at 22:08)
 * [HoTT/UF 2023](topic/topic_HoTT.2FUF.202023.html) (1 message, latest: Jan 10 2023 at 16:37)
 * [MFPS 2023](topic/topic_MFPS.202023.html) (1 message, latest: Jan 10 2023 at 12:51)
 * [Brazilian Meeting in Category](topic/topic_Brazilian.20Meeting.20in.20Category.html) (1 message, latest: Dec 29 2022 at 16:23)
@@ -165,4 +167,4 @@ permalink: /stream/229141-general:-events/index.html
 * [April 1st: ACT@UCR](topic/topic_April.201st.3A.20ACT.40UCR.html) (3 messages, latest: Mar 26 2020 at 23:58)
 * [Google Sites problem](topic/topic_Google.20Sites.20problem.html) (4 messages, latest: Mar 25 2020 at 04:29)
 
-<hr><p>Last updated: Feb 06 2023 at 00:44 UTC</p>
+<hr><p>Last updated: Feb 07 2023 at 00:48 UTC</p>

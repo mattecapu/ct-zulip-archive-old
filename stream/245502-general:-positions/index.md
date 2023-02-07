@@ -9,6 +9,7 @@ permalink: /stream/245502-general:-positions/index.html
 
 ### Topics:
 
+* [Topos Institute summer research positions](topic/topic_Topos.20Institute.20summer.20research.20positions.html) (27 messages, latest: Feb 07 2023 at 00:27)
 * [funded PhD position at Swansea](topic/topic_funded.20PhD.20position.20at.20Swansea.html) (1 message, latest: Jan 29 2023 at 14:13)
 * [Assistant Professorship in Amsterdam](topic/topic_Assistant.20Professorship.20in.20Amsterdam.html) (1 message, latest: Jan 27 2023 at 21:19)
 * [graduate positions at the University of Western Ontario](topic/topic_graduate.20positions.20at.20the.20University.20of.20Western.20Ontario.html) (1 message, latest: Jan 18 2023 at 05:56)
@@ -18,7 +19,6 @@ permalink: /stream/245502-general:-positions/index.html
 * [Kleisli databases](topic/topic_Kleisli.20databases.html) (1 message, latest: Dec 13 2022 at 05:12)
 * [Topos Institute research software engineer](topic/topic_Topos.20Institute.20research.20software.20engineer.html) (1 message, latest: Dec 12 2022 at 18:38)
 * [Rule-based models and open systems at Strathclyde](topic/topic_Rule-based.20models.20and.20open.20systems.20at.20Strathclyde.html) (1 message, latest: Dec 05 2022 at 11:28)
-* [Topos Institute summer research positions](topic/topic_Topos.20Institute.20summer.20research.20positions.html) (26 messages, latest: Nov 24 2022 at 18:27)
 * [10 Funded PhD Studentships at Nottingham 2022](topic/topic_10.20Funded.20PhD.20Studentships.20at.20Nottingham.202022.html) (1 message, latest: Nov 21 2022 at 12:48)
 * [Kleisli Databases](topic/topic_Kleisli.20Databases.html) (1 message, latest: Nov 10 2022 at 16:03)
 * [Probabilistic compilation as functor](topic/topic_Probabilistic.20compilation.20as.20functor.html) (2 messages, latest: Nov 07 2022 at 22:24)
@@ -80,4 +80,4 @@ permalink: /stream/245502-general:-positions/index.html
 * [PhD positions in Estonia](topic/topic_PhD.20positions.20in.20Estonia.html) (1 message, latest: Jun 27 2020 at 18:04)
 * [Companies that hire category people](topic/topic_Companies.20that.20hire.20category.20people.html) (2 messages, latest: May 13 2020 at 03:50)
 
-<hr><p>Last updated: Feb 06 2023 at 00:44 UTC</p>
+<hr><p>Last updated: Feb 07 2023 at 00:48 UTC</p>
