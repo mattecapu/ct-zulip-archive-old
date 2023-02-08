@@ -9,8 +9,9 @@ permalink: /stream/229141-general:-events/index.html
 
 ### Topics:
 
+* [Developing new scholarly institutions](topic/topic_Developing.20new.20scholarly.20institutions.html) (4 messages, latest: Feb 07 2023 at 19:46)
+* [ACT 2023](topic/topic_ACT.202023.html) (38 messages, latest: Feb 07 2023 at 06:23)
 * [Studying category theory?  Ask questions here!](topic/topic_Studying.20category.20theory.3F.20.20Ask.20questions.20here!.html) (3 messages, latest: Feb 06 2023 at 22:30)
-* [ACT 2023](topic/topic_ACT.202023.html) (37 messages, latest: Feb 06 2023 at 21:57)
 * [SYCO 11](topic/topic_SYCO.2011.html) (1 message, latest: Feb 06 2023 at 15:41)
 * [HoTT 2023](topic/topic_HoTT.202023.html) (2 messages, latest: Feb 06 2023 at 10:09)
 * [CT 2023](topic/topic_CT.202023.html) (5 messages, latest: Feb 03 2023 at 01:33)
@@ -167,4 +168,4 @@ permalink: /stream/229141-general:-events/index.html
 * [April 1st: ACT@UCR](topic/topic_April.201st.3A.20ACT.40UCR.html) (3 messages, latest: Mar 26 2020 at 23:58)
 * [Google Sites problem](topic/topic_Google.20Sites.20problem.html) (4 messages, latest: Mar 25 2020 at 04:29)
 
-<hr><p>Last updated: Feb 07 2023 at 00:48 UTC</p>
+<hr><p>Last updated: Feb 08 2023 at 00:46 UTC</p>
