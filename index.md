@@ -8,13 +8,13 @@ permalink: /index.html
 
 ## Streams:
 
-* [learning: questions](stream/229199-learning:-questions/index.html) (814 topics)
+* [learning: questions](stream/229199-learning:-questions/index.html) (817 topics)
 
 * [theory: category theory](stream/229136-theory:-category-theory/index.html) (362 topics)
 
 * [general](stream/229111-general/index.html) (245 topics)
 
-* [general: events](stream/229141-general:-events/index.html) (158 topics)
+* [general: events](stream/229141-general:-events/index.html) (159 topics)
 
 * [practice: applied ct](stream/229156-practice:-applied-ct/index.html) (139 topics)
 
@@ -24,9 +24,9 @@ permalink: /index.html
 
 * [general: positions](stream/245502-general:-positions/index.html) (70 topics)
 
-* [seminar: Topos Colloquium](stream/269484-seminar:-Topos-Colloquium/index.html) (64 topics)
+* [general: mathematics](stream/266967-general:-mathematics/index.html) (64 topics)
 
-* [general: mathematics](stream/266967-general:-mathematics/index.html) (63 topics)
+* [seminar: Topos Colloquium](stream/269484-seminar:-Topos-Colloquium/index.html) (64 topics)
 
 * [conference: ACT 2020](stream/243068-conference:-ACT-2020/index.html) (62 topics)
 
@@ -64,13 +64,13 @@ permalink: /index.html
 
 * [conference: ACT22](stream/330541-conference:-ACT22/index.html) (18 topics)
 
+* [theory: physics](stream/251538-theory:-physics/index.html) (18 topics)
+
 * [practice: chemistry](stream/322714-practice:-chemistry/index.html) (17 topics)
 
 * [practice: communication](stream/233322-practice:-communication/index.html) (17 topics)
 
 * [theory: algebraic geometry](stream/231112-theory:-algebraic-geometry/index.html) (17 topics)
-
-* [theory: physics](stream/251538-theory:-physics/index.html) (17 topics)
 
 * [workshop: Categories for AI](stream/347879-workshop:-Categories-for-AI/index.html) (17 topics)
 
@@ -180,4 +180,4 @@ permalink: /index.html
 
 * [theory: alternate presentations](stream/233122-theory:-alternate-presentations/index.html) (1 topic)
 
-<hr><p>Last updated: Feb 08 2023 at 00:46 UTC</p>
+<hr><p>Last updated: Feb 09 2023 at 00:46 UTC</p>

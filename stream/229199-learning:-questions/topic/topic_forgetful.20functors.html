@@ -1,0 +1,183 @@
+---
+layout: archive
+title: Zulip Chat Archive
+permalink: /stream/229199-learning:-questions/topic/topic_forgetful.20functors.html
+---
+
+<h2>Stream: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/index.html">learning: questions</a></h2>
+<h3>Topic: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/topic_forgetful.20functors.html">forgetful functors</a></h3>
+
+<hr>
+
+<base href="https://categorytheory.zulipchat.com/">
+
+{% raw %}
+
+<a name="326691657"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/forgetful%20functors/near/326691657" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Chris Oei <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/topic_forgetful.20functors.html#326691657">(Feb 08 2023 at 21:52)</a>:</h4>
+<p>So my background is in physics / computer science, but I haven't seen much pure math. I'm trying to get a firmer grasp on functors (I think they might be useful in something I'm working on), and so I thought I'd try to construct a <em>very</em> simple functor that operates a category of some <em>very</em> simple sets. My guess is that rather than creating a "forgetful functor", I've created a <a href="https://www.christopheroei.com/s2/c5ad568b6786a2f480307d72539214c9f7b85bc1560a61c7d571e1ed4b1ad318.png">"not (forgetful functor)"</a>, not to be confused with a "(not forgetful) functor". <span aria-label="grinning face with smiling eyes" class="emoji emoji-1f601" role="img" title="grinning face with smiling eyes">:grinning_face_with_smiling_eyes:</span> Anyone know of a tutorial that has examples of this "balls in baskets" variety, or can provide a simple example or two of a forgetful functor? I heard something about a forgetful functor that maps groups onto sets, but that didn't translate into something concrete enough to give me an intuitive sense (it's been nearly 4 decades since I last thought about sets, and I've become rather forgetful).</p>
+<div class="message_inline_image"><a href="https://www.christopheroei.com/s2/c5ad568b6786a2f480307d72539214c9f7b85bc1560a61c7d571e1ed4b1ad318.png" title="&quot;not (forgetful functor)&quot;"><img src="https://uploads.zulipusercontent.net/cdbb00bd1284cfaf6f3c204f08dd15d501538153/68747470733a2f2f7777772e6368726973746f706865726f65692e636f6d2f73322f633561643536386236373836613266343830333037643732353339323134633966376238356263313536306136316337643537316531656434623161643331382e706e67"></a></div>
+
+
+
+<a name="326692190"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/forgetful%20functors/near/326692190" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/topic_forgetful.20functors.html#326692190">(Feb 08 2023 at 21:55)</a>:</h4>
+<p>Every group <em>is</em> a set equipped with a multiplication, inverses etc., and there's a functor</p>
+<p><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mo>:</mo><mrow><mi mathvariant="sans-serif">G</mi><mi mathvariant="sans-serif">r</mi><mi mathvariant="sans-serif">p</mi></mrow><mo>→</mo><mrow><mi mathvariant="sans-serif">S</mi><mi mathvariant="sans-serif">e</mi><mi mathvariant="sans-serif">t</mi></mrow></mrow><annotation encoding="application/x-tex"> F: \mathsf{Grp} \to \mathsf{Set}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.13889em;">F</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">:</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.8889em;vertical-align:-0.1944em;"></span><span class="mord"><span class="mord mathsf">Grp</span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord"><span class="mord mathsf">Set</span></span></span></span></span> </p>
+<p>sending each group to its set.   This is an example of a forgetful functor, since it 'forgets' that our group is a group, and just remembering its set.</p>
+<p>This is the most obvious functor from groups to sets. </p>
+<p>I just hope you were talking about groups in the mathematical sense!</p>
+
+
+
+<a name="326692632"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/forgetful%20functors/near/326692632" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Chris Oei <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/topic_forgetful.20functors.html#326692632">(Feb 08 2023 at 21:58)</a>:</h4>
+<p>Thanks, and I remember the Grp -&gt; Set example from the Cats4AI videos, but my understanding of both groups and sets is sadly deficient, so I'm looking for examples I understand more thoroughly. I had thought that taking a transit map of New York and "forgetting" bus routes while preserving train routes would be a forgetful functor, but I ran into the case above, which seems to violate the structure preserving condition.</p>
+
+
+
+<a name="326693758"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/forgetful%20functors/near/326693758" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/topic_forgetful.20functors.html#326693758">(Feb 08 2023 at 22:05)</a>:</h4>
+<p>I'm sure you can define various functors that describe forgetting bus routes while preserving train routes, but a functor can't make morphisms "disappear" - it has to send morphisms to morphisms.</p>
+
+
+
+<a name="326693977"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/forgetful%20functors/near/326693977" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/topic_forgetful.20functors.html#326693977">(Feb 08 2023 at 22:06)</a>:</h4>
+<p>So you have to do something else.  For example, you could create a category where the objects are maps with bus and train routes, and another category where the objects are maps with just train routes, and a functor from the former category to the latter, which forgets the bus routes.</p>
+
+
+
+<a name="326694040"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/forgetful%20functors/near/326694040" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/topic_forgetful.20functors.html#326694040">(Feb 08 2023 at 22:07)</a>:</h4>
+<p>I am not saying what the morphisms are in these categories; there are various choices.</p>
+
+
+
+<a name="326694153"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/forgetful%20functors/near/326694153" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/topic_forgetful.20functors.html#326694153">(Feb 08 2023 at 22:08)</a>:</h4>
+<p>Then you have to say what the functor does to morphisms, and check the functor axioms.</p>
+
+
+
+<a name="326694229"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/forgetful%20functors/near/326694229" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> David Egolf <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/topic_forgetful.20functors.html#326694229">(Feb 08 2023 at 22:08)</a>:</h4>
+<p>I could be wrong about this, but I think a forgetful functor usually goes from a category where there are more conditions on morphisms to one where there are less. For example, a morphism between groups has to satisfy more conditions than a morphism between sets. So, we can expect there to be <em>more</em> morphisms around in the category a forgetful functor maps to, because we've forgotten about some of the structure that restricts how many can exist.</p>
+
+
+
+<a name="326694311"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/forgetful%20functors/near/326694311" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/topic_forgetful.20functors.html#326694311">(Feb 08 2023 at 22:09)</a>:</h4>
+<p>Right: you can forget <em>properties</em> that the morphisms should have, thus allowing more morphisms.   But you can't forget morphisms!</p>
+
+
+
+<a name="326694856"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/forgetful%20functors/near/326694856" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/topic_forgetful.20functors.html#326694856">(Feb 08 2023 at 22:13)</a>:</h4>
+<p>By the way, <span class="user-mention" data-user-id="587513">@Chris Oei</span>, did you check out this?</p>
+<ul>
+<li><a href="#narrow/stream/229141-general.3A-events/topic/Studying.20category.20theory.3F.20.20Ask.20questions.20here!">Category theory for self-learners</a>.</li>
+</ul>
+<p>It could be helpful: it's a way to ask questions of some of the best explainers of category theory on the planet.</p>
+
+
+
+<a name="326695013"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/forgetful%20functors/near/326695013" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/topic_forgetful.20functors.html#326695013">(Feb 08 2023 at 22:14)</a>:</h4>
+<p>(I'm not trying to get you to stop asking questions here: that's also good!  I just wondered if you're aware of this event.)</p>
+
+
+
+<a name="326696410"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/forgetful%20functors/near/326696410" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Chris Oei <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/topic_forgetful.20functors.html#326696410">(Feb 08 2023 at 22:23)</a>:</h4>
+<p>Yep -- I'm looking forward to that. <span aria-label="grinning face with smiling eyes" class="emoji emoji-1f601" role="img" title="grinning face with smiling eyes">:grinning_face_with_smiling_eyes:</span> </p>
+<p>OK, maybe this is an example for a forgetful functor? It maps a square to a line by collapsing it along one dimension, so instead of morphisms going missing like before they're mapped onto identity morphisms. <a href="https://www.christopheroei.com/s2/f9858ba5e8cb38a8c5faa9c1db836772b88cef12cdbb632d586580a06d74338c.png">https://www.christopheroei.com/s2/f9858ba5e8cb38a8c5faa9c1db836772b88cef12cdbb632d586580a06d74338c.png</a></p>
+<div class="message_inline_image"><a href="https://www.christopheroei.com/s2/f9858ba5e8cb38a8c5faa9c1db836772b88cef12cdbb632d586580a06d74338c.png"><img src="https://uploads.zulipusercontent.net/1f30c52dfa86b14e6b392c39cdc3ecc30f825657/68747470733a2f2f7777772e6368726973746f706865726f65692e636f6d2f73322f663938353862613565386362333861386335666161396331646238333637373262383863656631326364626236333264353836353830613036643734333338632e706e67"></a></div>
+
+
+
+<a name="326698675"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/forgetful%20functors/near/326698675" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/topic_forgetful.20functors.html#326698675">(Feb 08 2023 at 22:37)</a>:</h4>
+<p>There probably is a functor like this!    </p>
+<p>I just want to mention that your pictures are not full pictures of categories.   A category is more than just a graph (a bunch of dots and arrows between dots).   You can compose arrows (=morphisms), etc.  So in your left hand picture, where you have a morphism from the red circle on top to the circle below it and to the right, and then a morphism from that one to the one on the bottom, you have to be able to compose them and get a morphism from the top to the bottom.</p>
+
+
+
+<a name="326698794"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/forgetful%20functors/near/326698794" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/topic_forgetful.20functors.html#326698794">(Feb 08 2023 at 22:38)</a>:</h4>
+<p>Maybe you left out this composite morphism because it would clutter the picture.   I'm just warning you that it must exist... and your functor needs to know what to send it to.</p>
+
+
+
+<a name="326698829"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/forgetful%20functors/near/326698829" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/topic_forgetful.20functors.html#326698829">(Feb 08 2023 at 22:39)</a>:</h4>
+<p>You can deal with this, of course.  I'm not saying it's a fatal problem.</p>
+
+
+
+<a name="326699432"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/forgetful%20functors/near/326699432" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Chris Oei <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/topic_forgetful.20functors.html#326699432">(Feb 08 2023 at 22:43)</a>:</h4>
+<p>Ah, good to know! I heard the morphisms had to be composable, but I didn't realize until now that the result from every composition had to explicitly exist.<br>
+So assuming the collapse-along-a-dimension thing is a structure-preserving functor, I guess something that collapses scale should also be a functor. So, condensing a transit map of every bus station in the entire United States to a map that just shows the bus routes between cities ought to be a functor, right? I'll have to construct the implied routes due to composition, as you mentioned above, though.</p>
+
+
+
+<a name="326700002"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/forgetful%20functors/near/326700002" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/topic_forgetful.20functors.html#326700002">(Feb 08 2023 at 22:47)</a>:</h4>
+<blockquote>
+<p>So, condensing a transit map of every bus station in the entire United States to a map that just shows the bus routes between cities ought to be a functor, right?</p>
+</blockquote>
+<p>You have to make up the categories you're talking about before we can decide if this thing is a functor.   There will be some way to do this... but probably different ways, good for different purposes.</p>
+<blockquote>
+<p>I heard the morphisms had to be composable, but I didn't realize until now that the result from every composition had to explicitly exist.</p>
+</blockquote>
+<p>Yes.   It's probably good to really learn the definition of a category before engaging in these explorations.  Or maybe not: I play music without knowing what chords I'm playing.  <span aria-label="upside down" class="emoji emoji-1f643" role="img" title="upside down">:upside_down:</span></p>
+
+
+
+<a name="326702244"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/forgetful%20functors/near/326702244" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Chris Oei <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/topic_forgetful.20functors.html#326702244">(Feb 08 2023 at 23:03)</a>:</h4>
+<p>I was thinking along the lines of <a href="https://www.christopheroei.com/s2/b7d61b19e6f88d8b4c83da1c46df3baf9b9bd7ba6693b14016f955c100ee1a37.png">https://www.christopheroei.com/s2/b7d61b19e6f88d8b4c83da1c46df3baf9b9bd7ba6693b14016f955c100ee1a37.png</a><br>
+which I guess is a functor only if you assume everything inside the city is fully connected/Uber-able.</p>
+<div class="message_inline_image"><a href="https://www.christopheroei.com/s2/b7d61b19e6f88d8b4c83da1c46df3baf9b9bd7ba6693b14016f955c100ee1a37.png"><img src="https://uploads.zulipusercontent.net/90846b3526ac65109f72d06df5a435fe52b87439/68747470733a2f2f7777772e6368726973746f706865726f65692e636f6d2f73322f623764363162313965366638386438623463383364613163343664663362616639623962643762613636393362313430313666393535633130306565316133372e706e67"></a></div><p>I suppose I should get back to formal definitions, but I think talking through these maybe-functors and seeing which succeed and which fail has helped my understanding immensely. Thanks!</p>
+
+
+
+<a name="326702796"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/forgetful%20functors/near/326702796" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/topic_forgetful.20functors.html#326702796">(Feb 08 2023 at 23:07)</a>:</h4>
+<p>Sure!  If I were you I might try to come up with examples of categories, looking at the definition of category to see which would-be examples are actually examples. You can sort of draw categories - but morphisms need to have composites, which is a bit hard to draw, and composition needs to be associative, and there need to be identity morphisms.</p>
+<p>Once I had a few categories I could play games like "how many functors are there from this category to that one?"</p>
+
+
+
+<a name="326709085"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/forgetful%20functors/near/326709085" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Chris Oei <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/topic_forgetful.20functors.html#326709085">(Feb 09 2023 at 00:03)</a>:</h4>
+<p>Cool! I'll do exactly that. One last thing: this process of filling in implied/missing composites... For the examples I've come up with above (finite number of elements and morphisms), it seems straightforward to write an algorithm/computer program that fills in the composites. I imagine there's probably a term real mathematicians use that describes this, and I'm curious what that term is, assuming there is such a thing.</p>
+
+
+
+<a name="326709746"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/forgetful%20functors/near/326709746" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Jason Erbele <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/topic_forgetful.20functors.html#326709746">(Feb 09 2023 at 00:10)</a>:</h4>
+<p>By the way, when you are drawing up examples of categories, you don't need to have morphisms going both ways between two objects (it may be helpful to think of one-way streets).  There can also be more than one morphism that takes you from one object to another (it may be helpful to think of some leg of a trip where you can choose between bus, train, and walking).  This can make it harder to keep the bookkeeping straight when you look at composite morphisms, but it's good to at least be aware of these <em>non</em>-constraints.</p>
+
+
+
+<a name="326710344"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/forgetful%20functors/near/326710344" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Spencer Breiner <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/topic_forgetful.20functors.html#326710344">(Feb 09 2023 at 00:17)</a>:</h4>
+<p>It's worth noting that there are two (not formally, but actually in practice) kinds of categories.</p>
+<ul>
+<li>"syntactic" categories come from graphs, like the pictures you are drawing. The objects and arrows don't have internal structure, and you explicitly describe the meaning using axioms.</li>
+<li>"semantic" categories are universes of other mathematical structures like graphs, groups, matrices, probability distributions, .... And some kind of relationships between them. Here the objects and arrows do have internal structure, and composition is an explicit computation.</li>
+</ul>
+
+
+
+<a name="326711089"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/forgetful%20functors/near/326711089" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Spencer Breiner <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/topic_forgetful.20functors.html#326711089">(Feb 09 2023 at 00:25)</a>:</h4>
+<p>Usually when people talk about forgetful functors, they are talking about semantic categories. An intuitive example might be "graphs with distances on the edges" and distance-reducing graph maps. This has a forgetful functor to unlabeled graphs.</p>
+
+
+
+{% endraw %}
+
+<hr><p>Last updated: Feb 09 2023 at 00:46 UTC</p>

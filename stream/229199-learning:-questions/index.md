@@ -9,6 +9,10 @@ permalink: /stream/229199-learning:-questions/index.html
 
 ### Topics:
 
+* [forgetful functors](topic/topic_forgetful.20functors.html) (23 messages, latest: Feb 09 2023 at 00:25)
+* [Monads whose algebras are / give rise to monads](topic/topic_Monads.20whose.20algebras.20are.20.2F.20give.20rise.20to.20monads.html) (8 messages, latest: Feb 08 2023 at 23:15)
+* [van kampen](topic/topic_van.20kampen.html) (1 message, latest: Feb 08 2023 at 22:54)
+* [Lobatto quadrature formula from Gauss quadrature](topic/topic_Lobatto.20quadrature.20formula.20from.20Gauss.20quadrature.html) (1 message, latest: Feb 08 2023 at 18:37)
 * [Beginner questions](topic/topic_Beginner.20questions.html) (31 messages, latest: Feb 06 2023 at 18:13)
 * [Internal rigs in rig-categories?](topic/topic_Internal.20rigs.20in.20rig-categories.3F.html) (16 messages, latest: Feb 06 2023 at 16:45)
 * [f(x)=x, f'=0](topic/topic_f(x).3Dx.2C.20f'.3D0.html) (19 messages, latest: Feb 01 2023 at 23:21)
@@ -55,7 +59,6 @@ permalink: /stream/229199-learning:-questions/index.html
 * [pairwise relationships of three things](topic/topic_pairwise.20relationships.20of.20three.20things.html) (9 messages, latest: Nov 24 2022 at 19:02)
 * [Finitary monadic functor](topic/topic_Finitary.20monadic.20functor.html) (5 messages, latest: Nov 24 2022 at 14:09)
 * [Grothendieck topologies](topic/topic_Grothendieck.20topologies.html) (33 messages, latest: Nov 22 2022 at 13:54)
-* [Monads whose algebras are / give rise to monads](topic/topic_Monads.20whose.20algebras.20are.20.2F.20give.20rise.20to.20monads.html) (7 messages, latest: Nov 21 2022 at 21:37)
 * [Grassmann as a precursor of CT](topic/topic_Grassmann.20as.20a.20precursor.20of.20CT.html) (4 messages, latest: Nov 10 2022 at 15:28)
 * [Closed discrete fibration?](topic/topic_Closed.20discrete.20fibration.3F.html) (6 messages, latest: Nov 10 2022 at 15:25)
 * [Graded bicategory](topic/topic_Graded.20bicategory.html) (3 messages, latest: Nov 10 2022 at 10:29)
@@ -824,4 +827,4 @@ permalink: /stream/229199-learning:-questions/index.html
 * [Algebra (Aluffi) exercises](topic/topic_Algebra.20(Aluffi).20exercises.html) (55 messages, latest: Mar 27 2020 at 23:38)
 * [What is category theory about?](topic/topic_What.20is.20category.20theory.20about.3F.html) (16 messages, latest: Mar 26 2020 at 16:03)
 
-<hr><p>Last updated: Feb 08 2023 at 00:46 UTC</p>
+<hr><p>Last updated: Feb 09 2023 at 00:46 UTC</p>

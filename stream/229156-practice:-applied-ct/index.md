@@ -9,6 +9,7 @@ permalink: /stream/229156-practice:-applied-ct/index.html
 
 ### Topics:
 
+* [properties of objects (in context of imaging)](topic/topic_properties.20of.20objects.20(in.20context.20of.20imaging).html) (9 messages, latest: Feb 08 2023 at 19:21)
 * [web cats](topic/topic_web.20cats.html) (354 messages, latest: Jan 30 2023 at 11:02)
 * [around machine learning](topic/topic_around.20machine.20learning.html) (54 messages, latest: Jan 20 2023 at 13:09)
 * [hyperoperators as dynamical systems](topic/topic_hyperoperators.20as.20dynamical.20systems.html) (125 messages, latest: Dec 08 2022 at 21:59)
@@ -30,7 +31,6 @@ permalink: /stream/229156-practice:-applied-ct/index.html
 * [ACT as a field](topic/topic_ACT.20as.20a.20field.html) (279 messages, latest: Jan 30 2022 at 10:27)
 * [spans and images](topic/topic_spans.20and.20images.html) (125 messages, latest: Jan 28 2022 at 16:55)
 * [formalizing ACT](topic/topic_formalizing.20ACT.html) (2 messages, latest: Jan 04 2022 at 13:06)
-* [properties of objects (in context of imaging)](topic/topic_properties.20of.20objects.20(in.20context.20of.20imaging).html) (1 message, latest: Jan 03 2022 at 21:51)
 * [observing structured objects](topic/topic_observing.20structured.20objects.html) (11 messages, latest: Dec 21 2021 at 19:41)
 * [Para construction questions](topic/topic_Para.20construction.20questions.html) (41 messages, latest: Dec 19 2021 at 11:51)
 * [probability and statistics](topic/topic_probability.20and.20statistics.html) (1 message, latest: Nov 17 2021 at 18:49)
@@ -149,4 +149,4 @@ permalink: /stream/229156-practice:-applied-ct/index.html
 * [AACT2020](topic/topic_AACT2020.html) (1 message, latest: Mar 24 2020 at 00:56)
 * [welcome](topic/topic_welcome.html) (15 messages, latest: Mar 24 2020 at 00:03)
 
-<hr><p>Last updated: Feb 08 2023 at 00:46 UTC</p>
+<hr><p>Last updated: Feb 09 2023 at 00:46 UTC</p>

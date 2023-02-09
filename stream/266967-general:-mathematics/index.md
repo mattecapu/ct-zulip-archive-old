@@ -9,6 +9,7 @@ permalink: /stream/266967-general:-mathematics/index.html
 
 ### Topics:
 
+* [final functors into filtered categories](topic/topic_final.20functors.20into.20filtered.20categories.html) (5 messages, latest: Feb 09 2023 at 00:10)
 * [alternating maps](topic/topic_alternating.20maps.html) (12 messages, latest: Feb 01 2023 at 22:31)
 * [Are boolean rigs commutative?](topic/topic_Are.20boolean.20rigs.20commutative.3F.html) (63 messages, latest: Jan 25 2023 at 13:57)
 * [Algebra over a ring in two different ways](topic/topic_Algebra.20over.20a.20ring.20in.20two.20different.20ways.html) (36 messages, latest: Dec 12 2022 at 21:17)
@@ -73,4 +74,4 @@ permalink: /stream/266967-general:-mathematics/index.html
 * [the 600-cell](topic/topic_the.20600-cell.html) (5 messages, latest: Dec 01 2020 at 16:35)
 * [hermitian matrix over normed division algebra](topic/topic_hermitian.20matrix.20over.20normed.20division.20algebra.html) (8 messages, latest: Sep 28 2020 at 21:19)
 
-<hr><p>Last updated: Feb 08 2023 at 00:46 UTC</p>
+<hr><p>Last updated: Feb 09 2023 at 00:46 UTC</p>
