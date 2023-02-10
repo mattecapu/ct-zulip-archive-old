@@ -10,7 +10,7 @@ permalink: /index.html
 
 * [learning: questions](stream/229199-learning:-questions/index.html) (817 topics)
 
-* [theory: category theory](stream/229136-theory:-category-theory/index.html) (362 topics)
+* [theory: category theory](stream/229136-theory:-category-theory/index.html) (363 topics)
 
 * [general](stream/229111-general/index.html) (245 topics)
 
@@ -24,7 +24,7 @@ permalink: /index.html
 
 * [general: positions](stream/245502-general:-positions/index.html) (70 topics)
 
-* [general: mathematics](stream/266967-general:-mathematics/index.html) (64 topics)
+* [general: mathematics](stream/266967-general:-mathematics/index.html) (65 topics)
 
 * [seminar: Topos Colloquium](stream/269484-seminar:-Topos-Colloquium/index.html) (64 topics)
 
@@ -180,4 +180,4 @@ permalink: /index.html
 
 * [theory: alternate presentations](stream/233122-theory:-alternate-presentations/index.html) (1 topic)
 
-<hr><p>Last updated: Feb 09 2023 at 00:46 UTC</p>
+<hr><p>Last updated: Feb 10 2023 at 00:49 UTC</p>

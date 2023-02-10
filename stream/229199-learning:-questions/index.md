@@ -9,7 +9,7 @@ permalink: /stream/229199-learning:-questions/index.html
 
 ### Topics:
 
-* [forgetful functors](topic/topic_forgetful.20functors.html) (23 messages, latest: Feb 09 2023 at 00:25)
+* [forgetful functors](topic/topic_forgetful.20functors.html) (30 messages, latest: Feb 09 2023 at 01:37)
 * [Monads whose algebras are / give rise to monads](topic/topic_Monads.20whose.20algebras.20are.20.2F.20give.20rise.20to.20monads.html) (8 messages, latest: Feb 08 2023 at 23:15)
 * [van kampen](topic/topic_van.20kampen.html) (1 message, latest: Feb 08 2023 at 22:54)
 * [Lobatto quadrature formula from Gauss quadrature](topic/topic_Lobatto.20quadrature.20formula.20from.20Gauss.20quadrature.html) (1 message, latest: Feb 08 2023 at 18:37)
@@ -827,4 +827,4 @@ permalink: /stream/229199-learning:-questions/index.html
 * [Algebra (Aluffi) exercises](topic/topic_Algebra.20(Aluffi).20exercises.html) (55 messages, latest: Mar 27 2020 at 23:38)
 * [What is category theory about?](topic/topic_What.20is.20category.20theory.20about.3F.html) (16 messages, latest: Mar 26 2020 at 16:03)
 
-<hr><p>Last updated: Feb 09 2023 at 00:46 UTC</p>
+<hr><p>Last updated: Feb 10 2023 at 00:49 UTC</p>
