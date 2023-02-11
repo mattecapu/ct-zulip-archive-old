@@ -9,6 +9,7 @@ permalink: /stream/229136-theory:-category-theory/index.html
 
 ### Topics:
 
+* [Question about a subcategory of comma categories](topic/topic_Question.20about.20a.20subcategory.20of.20comma.20categories.html) (6 messages, latest: Feb 10 2023 at 20:55)
 * [Monad composition](topic/topic_Monad.20composition.html) (76 messages, latest: Feb 09 2023 at 23:08)
 * [final functors into filtered categories](topic/topic_final.20functors.20into.20filtered.20categories.html) (6 messages, latest: Feb 09 2023 at 10:51)
 * [Tangent space on a hom-object](topic/topic_Tangent.20space.20on.20a.20hom-object.html) (24 messages, latest: Feb 08 2023 at 00:54)
@@ -373,4 +374,4 @@ permalink: /stream/229136-theory:-category-theory/index.html
 * [diagrams for application](topic/topic_diagrams.20for.20application.html) (13 messages, latest: Mar 24 2020 at 06:19)
 * [universal constructions](topic/topic_universal.20constructions.html) (8 messages, latest: Mar 23 2020 at 21:06)
 
-<hr><p>Last updated: Feb 10 2023 at 00:49 UTC</p>
+<hr><p>Last updated: Feb 11 2023 at 00:42 UTC</p>
