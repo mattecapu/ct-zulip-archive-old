@@ -9,11 +9,11 @@ permalink: /stream/274877-practice:-our-work/index.html
 
 ### Topics:
 
+* [Jean-Baptiste Vienney](topic/topic_Jean-Baptiste.20Vienney.html) (31 messages, latest: Feb 11 2023 at 06:43)
 * [John Baez](topic/topic_John.20Baez.html) (951 messages, latest: Feb 10 2023 at 03:48)
 * [Ben Sprott](topic/topic_Ben.20Sprott.html) (8 messages, latest: Feb 09 2023 at 07:05)
 * [James Deikun](topic/topic_James.20Deikun.html) (4 messages, latest: Jan 26 2023 at 16:06)
 * [Dusko Pavlovic](topic/topic_Dusko.20Pavlovic.html) (31 messages, latest: Jan 25 2023 at 16:09)
-* [Jean-Baptiste Vienney](topic/topic_Jean-Baptiste.20Vienney.html) (30 messages, latest: Jan 08 2023 at 21:15)
 * [Mike Shulman](topic/topic_Mike.20Shulman.html) (143 messages, latest: Jan 05 2023 at 00:16)
 * [Jacob S Zelko](topic/topic_Jacob.20S.20Zelko.html) (19 messages, latest: Dec 28 2022 at 22:45)
 * [Jason Parker](topic/topic_Jason.20Parker.html) (3 messages, latest: Dec 09 2022 at 18:14)
@@ -49,4 +49,4 @@ permalink: /stream/274877-practice:-our-work/index.html
 * [Conor Mc Bride](topic/topic_Conor.20Mc.20Bride.html) (60 messages, latest: Apr 08 2021 at 15:15)
 * [thoughts on sharing ideas](topic/topic_thoughts.20on.20sharing.20ideas.html) (20 messages, latest: Jan 31 2021 at 03:05)
 
-<hr><p>Last updated: Feb 11 2023 at 00:42 UTC</p>
+<hr><p>Last updated: Feb 12 2023 at 00:50 UTC</p>

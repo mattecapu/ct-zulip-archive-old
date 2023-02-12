@@ -9,6 +9,7 @@ permalink: /stream/229111-general/index.html
 
 ### Topics:
 
+* [Directory of Women in Category Theory](topic/topic_Directory.20of.20Women.20in.20Category.20Theory.html) (2 messages, latest: Feb 11 2023 at 21:58)
 * [Introduce yourself!](topic/topic_Introduce.20yourself!.html) (31 messages, latest: Feb 04 2023 at 04:00)
 * [Mathstodon](topic/topic_Mathstodon.html) (7 messages, latest: Jan 24 2023 at 07:22)
 * [Compositionality](topic/topic_Compositionality.html) (37 messages, latest: Jan 14 2023 at 15:46)
@@ -255,4 +256,4 @@ permalink: /stream/229111-general/index.html
 * [Tools for diagrams](topic/topic_Tools.20for.20diagrams.html) (78 messages, latest: Mar 25 2020 at 17:53)
 * [topic demonstration](topic/topic_topic.20demonstration.html) (2 messages, latest: Mar 23 2020 at 16:57)
 
-<hr><p>Last updated: Feb 11 2023 at 00:42 UTC</p>
+<hr><p>Last updated: Feb 12 2023 at 00:50 UTC</p>

@@ -8,11 +8,11 @@ permalink: /index.html
 
 ## Streams:
 
-* [learning: questions](stream/229199-learning:-questions/index.html) (817 topics)
+* [learning: questions](stream/229199-learning:-questions/index.html) (818 topics)
 
-* [theory: category theory](stream/229136-theory:-category-theory/index.html) (364 topics)
+* [theory: category theory](stream/229136-theory:-category-theory/index.html) (365 topics)
 
-* [general](stream/229111-general/index.html) (245 topics)
+* [general](stream/229111-general/index.html) (246 topics)
 
 * [general: events](stream/229141-general:-events/index.html) (159 topics)
 
@@ -88,7 +88,7 @@ permalink: /index.html
 
 * [general: co/appreciation](stream/271602-general:-co/appreciation/index.html) (13 topics)
 
-* [learning: id my structure](stream/311521-learning:-id-my-structure/index.html) (12 topics)
+* [learning: id my structure](stream/311521-learning:-id-my-structure/index.html) (13 topics)
 
 * [learning: reading groups](stream/232160-learning:-reading-groups/index.html) (12 topics)
 
@@ -180,4 +180,4 @@ permalink: /index.html
 
 * [theory: alternate presentations](stream/233122-theory:-alternate-presentations/index.html) (1 topic)
 
-<hr><p>Last updated: Feb 11 2023 at 00:42 UTC</p>
+<hr><p>Last updated: Feb 12 2023 at 00:50 UTC</p>

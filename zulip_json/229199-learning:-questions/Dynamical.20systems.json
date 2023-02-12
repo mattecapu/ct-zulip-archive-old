@@ -136,5 +136,23 @@
         "id": 327172352,
         "sender_full_name": "Spencer Breiner",
         "timestamp": 1676075863
+    },
+    {
+        "content": "<p>A relationship to cofunctors had not occurred to me; thanks for the reference!</p>\n<p>Let me clarify the exact question.  We know how to write Petri nets in prolog, CQL, etc so it's easy to see how their simulations can be formulated as lifting problems for copresheaves (in fact I remember Statebox doing stuff like this; another reference is \"Simulation of Petri nets in Prolog\" by Palshikar).  But I understand that because of the various decidability properties of Petri nets, they can't be chaotic in the same sense as the weather.  So I'm looking for a dynamical system formalism that 1) can be expressed in prolog/cql/lifting problems etc and 2) admits a chaotic system with undecidable long term behavior that 3) would make for a cool demo.  I've been toying around with encoding the Collatz conjecture, for example; its behavior is chaotic enough that no one can prove it always settles, and easy enough to write just using equations, but I don't usually hear it described as a dynamical system.  Examples like this but more 'natural'/'better to demo' are my real ask.</p>",
+        "id": 327290089,
+        "sender_full_name": "Ryan Wisnesky",
+        "timestamp": 1676139158
+    },
+    {
+        "content": "<blockquote>\n<p>But I understand that because of the various decidability properties of Petri nets, they can't be chaotic in the same sense as the weather. </p>\n</blockquote>\n<p>I don't know what you mean by that.    Undecidability and chaos are different things.  </p>\n<p>There are various semantics for Petri nets, but if you want chaos you should pick a semantics that involves differential equations.  Plain Petri nets are not very good for describing differential equations, but \"Petri nets with rates\" are great - this idea is familiar to chemists, I <a href=\"http://math.ucr.edu/home/baez/stoch_stable.pdf\">wrote a book that explains it</a>, and this idea has been <a href=\"https://github.com/AlgebraicJulia/AlgebraicPetri.jl\">programmed into AlgebraicJulia</a>.</p>\n<p>A Petri net with a rates is a Petri net where each transition is equipped with a positive real number called a <strong>rate constant</strong>.   There is a standard way to convert such a thing into a system of first-order nonlinear ODE.</p>\n<p>These ODE are sufficiently general to model the \"rate equations\" in chemistry, including some that exhibit chaos.</p>",
+        "id": 327317286,
+        "sender_full_name": "John Baez",
+        "timestamp": 1676159438
+    },
+    {
+        "content": "<p>that's good advice, and I'm conflating chaos and undecidability as both tend to make for flashy (\"unpredictable\") demos (my goal here); the crux the problem could really be about how to implement ODEs in prolog, which I was hoping to avoid, but I'll take another look, thanks!</p>",
+        "id": 327318069,
+        "sender_full_name": "Ryan Wisnesky",
+        "timestamp": 1676160129
     }
 ]

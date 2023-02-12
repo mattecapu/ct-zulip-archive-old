@@ -1,0 +1,126 @@
+---
+layout: archive
+title: Zulip Chat Archive
+permalink: /stream/229199-learning:-questions/topic/topic_Category.20Theory.20and.20Programming.20-.20what.20are.20functors.20actually.html
+---
+
+<h2>Stream: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/index.html">learning: questions</a></h2>
+<h3>Topic: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/topic_Category.20Theory.20and.20Programming.20-.20what.20are.20functors.20actually.html">Category Theory and Programming - what are functors actually</a></h3>
+
+<hr>
+
+<base href="https://categorytheory.zulipchat.com/">
+
+{% raw %}
+
+<a name="327285414"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/Category%20Theory%20and%20Programming%20-%20what%20are%20functors%20actually/near/327285414" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Davi Sales Barreira <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/topic_Category.20Theory.20and.20Programming.20-.20what.20are.20functors.20actually.html#327285414">(Feb 11 2023 at 17:31)</a>:</h4>
+<p>Hello, everyone. I've studyied Category Theory for a while now, and I've also read books (Bartoz and Brendan Fong) on Category Theory for Programming. I've been trying to "port" the theoretical claims to the Julia programming language. Since Julia is not a pure FP language as Haskell, I have been battling to properly impor the concepts.</p>
+<p>One of my hardships have benn with Functors. In the Julia community, the definition of a functor in Julia is a bit all over the place.<br>
+I think I might have been able to unpack some of my own confusion, and I'd love some feedback to know if I'm moving in the right direction.</p>
+<p>So in programming, our types are the objects and functions are morphisms. In Julia we have types and functions, so this is fine. But what about a value? Lile <code>1</code>? If I understood correctly, a value is isomorphic to a function (morphism) going from the terminal type (object) to type <code>T</code> of fthe value, for example, <code>1</code> is equivalent to <code>1(::Nothing)::Int</code>, where <code>Nothing</code> is a terminal type in Julia.</p>
+<p>Ok, so values are functions and we can compose them with "ordinary" functions which would be the same as applying the function to a value <code>x</code>, e.g. <code>f (x) == f ( x())</code>.</p>
+<p>Now, in Julia we have structs that define new types. For example:</p>
+<div class="codehilite" data-code-language="Julia"><pre><span></span><code><span class="k">struct</span> <span class="kt">MyType</span>
+<span class="w">   </span><span class="n">x</span>
+<span class="k">end</span>
+</code></pre></div>
+<p>I want to define a functor that takes every type and turns them into type <code>MyType</code>. </p>
+<div class="codehilite" data-code-language="Julia"><pre><span></span><code><span class="n">F</span><span class="p">(</span><span class="n">T</span><span class="o">::</span><span class="kt">Type</span><span class="p">)</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">MyType</span>
+<span class="n">F</span><span class="p">(</span><span class="n">f</span><span class="o">::</span><span class="kt">Function</span><span class="p">)</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">a</span><span class="o">::</span><span class="kt">MyType</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="n">F</span><span class="p">(</span><span class="n">f</span><span class="p">(</span><span class="n">a</span><span class="o">.</span><span class="n">x</span><span class="p">))</span>
+</code></pre></div>
+<p>Ok, so my functor acts on types to types, and on functions to functions. And it commutes properly... Yet, <br>
+since values are also functions, I need to define how <code>F(x)</code> works. The simplest idea would be<br>
+<code>F(x) = MyType(x)</code> which creates an instance of type <code>MyType</code>. But this is not right, because<br>
+<code>x</code> is a function from <code>Nothing</code> to  a type <code>T</code>.  So <code>F(x)</code> must also be a function, and moreover, a<br>
+function of type <code>MyType</code> to <code>MyType</code>. So here is how it would be:<br>
+<code>F(x) = a::MyType -&gt; MyType(x)</code>.</p>
+<p>I guess this is all correct now, but a bit useless. I don't want <code>F(x)</code> to be this weird function.<br>
+Here is what I then thought, which I'd like some feedback.</p>
+<p>Since <code>MyType</code> has acutally only field <code>x</code>, this means that every instance of this type is actually<br>
+isomorphic to a function <code>a ::MyType-&gt; MyType(x)</code>. Hence, we can drop all this shinnenigans and just write<br>
+<code>F(x) = MyType(x)</code>...</p>
+<p>Is this correct? Please let me know if any of my understanding is incorrect. Eventhough I've been studying this for a while, things still are convoluted from time to time.</p>
+
+
+
+<a name="327287366"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/Category%20Theory%20and%20Programming%20-%20what%20are%20functors%20actually/near/327287366" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Ryan Wisnesky <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/topic_Category.20Theory.20and.20Programming.20-.20what.20are.20functors.20actually.html#327287366">(Feb 11 2023 at 17:47)</a>:</h4>
+<p>What is the corresponding construction in Haskell?  Is it "existential types"?</p>
+
+
+
+<a name="327288408"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/Category%20Theory%20and%20Programming%20-%20what%20are%20functors%20actually/near/327288408" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Davi Sales Barreira <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/topic_Category.20Theory.20and.20Programming.20-.20what.20are.20functors.20actually.html#327288408">(Feb 11 2023 at 17:57)</a>:</h4>
+<p>I don't actually know :|</p>
+
+
+
+<a name="327290441"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/Category%20Theory%20and%20Programming%20-%20what%20are%20functors%20actually/near/327290441" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Ryan Wisnesky <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/topic_Category.20Theory.20and.20Programming.20-.20what.20are.20functors.20actually.html#327290441">(Feb 11 2023 at 18:15)</a>:</h4>
+<p>I would suggest formulating it in Haskell first, then trying to port that over to Julia, because I think some of the issues you are grappling with are actually type theoretic in nature and already defined/solved in type theory.  In particular, your construction of trying to "hide" arbitrary types behind a fixed type is very reminiscent of existential types, and as such care is required - it's easy to go too far and get unsoundness (see "strong/transulcent sums" for an example of how existential can be taken too far), so I'd definitely suggest a port rather than re-invention.</p>
+
+
+
+<a name="327290854"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/Category%20Theory%20and%20Programming%20-%20what%20are%20functors%20actually/near/327290854" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Davi Sales Barreira <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/topic_Category.20Theory.20and.20Programming.20-.20what.20are.20functors.20actually.html#327290854">(Feb 11 2023 at 18:19)</a>:</h4>
+<p>The thing is that I actually am not proficient in Haskell. When reading Bartoz book, my goal of porting to Julia is exactly in trying to understand things better.</p>
+
+
+
+<a name="327292544"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/Category%20Theory%20and%20Programming%20-%20what%20are%20functors%20actually/near/327292544" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Ryan Wisnesky <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/topic_Category.20Theory.20and.20Programming.20-.20what.20are.20functors.20actually.html#327292544">(Feb 11 2023 at 18:34)</a>:</h4>
+<p>What is your background, btw? I can try to find references on existential types that are appropriate for it (e.g. if you are familiar with locally cartesian closed categories, existential types can be thought of in that context)</p>
+
+
+
+<a name="327292850"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/Category%20Theory%20and%20Programming%20-%20what%20are%20functors%20actually/near/327292850" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Ryan Wisnesky <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/topic_Category.20Theory.20and.20Programming.20-.20what.20are.20functors.20actually.html#327292850">(Feb 11 2023 at 18:37)</a>:</h4>
+<p>a general reference is <a href="https://stackoverflow.com/questions/10753073/whats-the-theoretical-basis-for-existential-types">https://stackoverflow.com/questions/10753073/whats-the-theoretical-basis-for-existential-types</a></p>
+
+
+
+<a name="327293600"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/Category%20Theory%20and%20Programming%20-%20what%20are%20functors%20actually/near/327293600" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Davi Sales Barreira <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/topic_Category.20Theory.20and.20Programming.20-.20what.20are.20functors.20actually.html#327293600">(Feb 11 2023 at 18:45)</a>:</h4>
+<p>Applied Mathematics. I've been studying Category Theory since the beginning of last year.<br>
+Don't know Type Theory. I'm a PhD student, and my thesis is in trying to apply Category Theory.</p>
+
+
+
+<a name="327294644"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/Category%20Theory%20and%20Programming%20-%20what%20are%20functors%20actually/near/327294644" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Ryan Wisnesky <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/topic_Category.20Theory.20and.20Programming.20-.20what.20are.20functors.20actually.html#327294644">(Feb 11 2023 at 18:55)</a>:</h4>
+<p>existential types may be a tough place to start; you're defining a type, MyType, that admits an injection from all types, including itself.  Similar problems are found with universal types, which admit projections to all types, requiring the machinery of locally cartesian closed categories to define.  Perhaps try defining functors for products, co-products, function types, stuff like that first?</p>
+
+
+
+<a name="327294768"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/Category%20Theory%20and%20Programming%20-%20what%20are%20functors%20actually/near/327294768" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Davi Sales Barreira <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/topic_Category.20Theory.20and.20Programming.20-.20what.20are.20functors.20actually.html#327294768">(Feb 11 2023 at 18:57)</a>:</h4>
+<p>Yeah, the whole self-referential thing is a bit overwhealming. I was able to define the other functors already. I was trying to figure this one out now.</p>
+
+
+
+<a name="327294871"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/Category%20Theory%20and%20Programming%20-%20what%20are%20functors%20actually/near/327294871" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> David Egolf <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/topic_Category.20Theory.20and.20Programming.20-.20what.20are.20functors.20actually.html#327294871">(Feb 11 2023 at 18:58)</a>:</h4>
+<p>I don't know if this is relevant to you: <a href="https://algebraicjulia.github.io/Catlab.jl/dev/">https://algebraicjulia.github.io/Catlab.jl/dev/</a></p>
+
+
+
+<a name="327295043"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/Category%20Theory%20and%20Programming%20-%20what%20are%20functors%20actually/near/327295043" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Ryan Wisnesky <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/topic_Category.20Theory.20and.20Programming.20-.20what.20are.20functors.20actually.html#327295043">(Feb 11 2023 at 19:00)</a>:</h4>
+<p>heh, I think I understand.  Yeah, the issue here probably isn't Julia or Haskell, but that existential (and universal) types are hard to define, period.   To understand papers in categorical type theory, this is a good baseline (semantics of STLC in a CCC): <a href="https://www.cl.cam.ac.uk/teaching/1617/L108/catl-notes.pdf">https://www.cl.cam.ac.uk/teaching/1617/L108/catl-notes.pdf</a> .  If you can read that paper, you can tackle the kinds of papers that would tell you how to define your functor (eg <a href="https://dl.acm.org/doi/10.1145/44501.45065">https://dl.acm.org/doi/10.1145/44501.45065</a>)</p>
+
+
+
+<a name="327298790"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/Category%20Theory%20and%20Programming%20-%20what%20are%20functors%20actually/near/327298790" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Davi Sales Barreira <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/topic_Category.20Theory.20and.20Programming.20-.20what.20are.20functors.20actually.html#327298790">(Feb 11 2023 at 19:42)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="277503">David Egolf</span> <a href="#narrow/stream/229199-learning.3A-questions/topic/Category.20Theory.20and.20Programming.20-.20what.20are.20functors.20actually/near/327294871">said</a>:</p>
+<blockquote>
+<p>I don't know if this is relevant to you: <a href="https://algebraicjulia.github.io/Catlab.jl/dev/">https://algebraicjulia.github.io/Catlab.jl/dev/</a></p>
+</blockquote>
+<p>Not really :(</p>
+
+
+
+{% endraw %}
+
+<hr><p>Last updated: Feb 12 2023 at 00:50 UTC</p>

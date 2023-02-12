@@ -160,6 +160,31 @@ permalink: /stream/229199-learning:-questions/topic/topic_Dynamical.20systems.ht
 
 
 
+<a name="327290089"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/Dynamical%20systems/near/327290089" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Ryan Wisnesky <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/topic_Dynamical.20systems.html#327290089">(Feb 11 2023 at 18:12)</a>:</h4>
+<p>A relationship to cofunctors had not occurred to me; thanks for the reference!</p>
+<p>Let me clarify the exact question.  We know how to write Petri nets in prolog, CQL, etc so it's easy to see how their simulations can be formulated as lifting problems for copresheaves (in fact I remember Statebox doing stuff like this; another reference is "Simulation of Petri nets in Prolog" by Palshikar).  But I understand that because of the various decidability properties of Petri nets, they can't be chaotic in the same sense as the weather.  So I'm looking for a dynamical system formalism that 1) can be expressed in prolog/cql/lifting problems etc and 2) admits a chaotic system with undecidable long term behavior that 3) would make for a cool demo.  I've been toying around with encoding the Collatz conjecture, for example; its behavior is chaotic enough that no one can prove it always settles, and easy enough to write just using equations, but I don't usually hear it described as a dynamical system.  Examples like this but more 'natural'/'better to demo' are my real ask.</p>
+
+
+
+<a name="327317286"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/Dynamical%20systems/near/327317286" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/topic_Dynamical.20systems.html#327317286">(Feb 11 2023 at 23:50)</a>:</h4>
+<blockquote>
+<p>But I understand that because of the various decidability properties of Petri nets, they can't be chaotic in the same sense as the weather. </p>
+</blockquote>
+<p>I don't know what you mean by that.    Undecidability and chaos are different things.  </p>
+<p>There are various semantics for Petri nets, but if you want chaos you should pick a semantics that involves differential equations.  Plain Petri nets are not very good for describing differential equations, but "Petri nets with rates" are great - this idea is familiar to chemists, I <a href="http://math.ucr.edu/home/baez/stoch_stable.pdf">wrote a book that explains it</a>, and this idea has been <a href="https://github.com/AlgebraicJulia/AlgebraicPetri.jl">programmed into AlgebraicJulia</a>.</p>
+<p>A Petri net with a rates is a Petri net where each transition is equipped with a positive real number called a <strong>rate constant</strong>.   There is a standard way to convert such a thing into a system of first-order nonlinear ODE.</p>
+<p>These ODE are sufficiently general to model the "rate equations" in chemistry, including some that exhibit chaos.</p>
+
+
+
+<a name="327318069"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/Dynamical%20systems/near/327318069" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Ryan Wisnesky <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/topic_Dynamical.20systems.html#327318069">(Feb 12 2023 at 00:02)</a>:</h4>
+<p>that's good advice, and I'm conflating chaos and undecidability as both tend to make for flashy ("unpredictable") demos (my goal here); the crux the problem could really be about how to implement ODEs in prolog, which I was hoping to avoid, but I'll take another look, thanks!</p>
+
+
+
 {% endraw %}
 
-<hr><p>Last updated: Feb 11 2023 at 00:42 UTC</p>
+<hr><p>Last updated: Feb 12 2023 at 00:50 UTC</p>
