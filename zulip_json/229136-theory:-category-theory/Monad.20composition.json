@@ -454,5 +454,23 @@
         "id": 326933720,
         "sender_full_name": "John Baez",
         "timestamp": 1675984132
+    },
+    {
+        "content": "<p>I may have missed some (a lot of!) posts here, so if this misses the point I apologise in advance. There is a non-empty cyclic list comonad C on the category of sets and functions. The non-emptiness is important for the counit to be well defined. C(X) is non-empty lists of elements of X. The counit takes the head of a list, and the comultiplication takes a lists to it's list of \"sublists\", wrapping around in a cyclic manner. So for example [1,2,3] goes to   [[1,2,3],[2,3,1],[3,1,2]]. This appears in \"When is a container a comonad\" and is credited to Jeremy Gibbons. In particular, the notion of circular list here is not an equivalence class of lists, but a non-empty list which \"loops around\" in terms of the sublist at a given position. The previously proposed equivalence classes up to list rotation seems problematic to me, as  you have lost information. Where is the \"front\" of the list? I can't see how this mathematical description captures an intuitive data structure?</p>",
+        "id": 327404066,
+        "sender_full_name": "Dan Marsden",
+        "timestamp": 1676217464
+    },
+    {
+        "content": "<p>A cycle typically doesn't have a \"front\"...</p>",
+        "id": 327430766,
+        "sender_full_name": "Morgan Rogers (he/him)",
+        "timestamp": 1676232502
+    },
+    {
+        "content": "<p>I agree for a \"topological\" cycle,  there's no meaningful front, but if I understood the context, it was as a data structure. The Gibbons style cyclic  list has a front, or probably \"focus element\" would be a better term, and a notion of next element. The next element operation cycles through the positions in the list. In a conventional list [1,2,3], the remaining list at the second position is [2,3], whereas for a cyclic list it is [2,3,1]. So the cyclic lists can also be through of as a subcomonad of the stream comonad restricted to periodic streams (I think this is obvious). On the other hand, a collection of lists up to rotation doesn't seem in any simple sense to model a natural  data structure, at least as far as I can see, as how would you interact with the \"collection\" of data? It does on the other hand capture cycles in the topological sense you suggest. So it could be that I'm simply muddling up what was being discussed, as I jumped in rather late! Certainly though, the Gibbon's style cyclic list is a natural definition, and it doesn't coincide with that is encoded by rotation equivalence classes of lists.</p>",
+        "id": 327437381,
+        "sender_full_name": "Dan Marsden",
+        "timestamp": 1676237361
     }
 ]
