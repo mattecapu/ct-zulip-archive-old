@@ -9,6 +9,7 @@ permalink: /stream/253118-theory:-probability/index.html
 
 ### Topics:
 
+* [Improper priors](topic/topic_Improper.20priors.html) (21 messages, latest: Feb 13 2023 at 18:38)
 * ['almost closed'?](topic/topic_'almost.20closed'.3F.html) (7 messages, latest: Jan 10 2023 at 01:01)
 * [best intro in 2022](topic/topic_best.20intro.20in.202022.html) (18 messages, latest: Dec 23 2022 at 12:39)
 * [Bond Theory](topic/topic_Bond.20Theory.html) (1 message, latest: Dec 08 2022 at 22:00)
@@ -39,8 +40,7 @@ permalink: /stream/253118-theory:-probability/index.html
 * [What is normalisation?](topic/topic_What.20is.20normalisation.3F.html) (18 messages, latest: Jan 28 2021 at 05:37)
 * [Gromov's functorial probability theory](topic/topic_Gromov's.20functorial.20probability.20theory.html) (8 messages, latest: Nov 17 2020 at 18:27)
 * [Categorical Probability](topic/topic_Categorical.20Probability.html) (8 messages, latest: Nov 06 2020 at 00:22)
-* [Improper priors](topic/topic_Improper.20priors.html) (15 messages, latest: Sep 22 2020 at 10:45)
 * [Finitely additive probability](topic/topic_Finitely.20additive.20probability.html) (1 message, latest: Aug 16 2020 at 00:48)
 * [stream events](topic/topic_stream.20events.html) (2 messages, latest: Aug 16 2020 at 00:31)
 
-<hr><p>Last updated: Feb 13 2023 at 00:49 UTC</p>
+<hr><p>Last updated: Feb 14 2023 at 00:48 UTC</p>
