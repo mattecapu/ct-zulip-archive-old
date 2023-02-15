@@ -484,5 +484,119 @@
         "id": 327671716,
         "sender_full_name": "Ben Sprott",
         "timestamp": 1676334026
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"275973\">Dan Marsden</span> <a href=\"#narrow/stream/229136-theory.3A-category-theory/topic/Monad.20composition/near/327437381\">said</a>:</p>\n<blockquote>\n<p>I agree for a \"topological\" cycle,  there's no meaningful front, but if I understood the context, it was as a data structure. The Gibbons style cyclic  list has a front, or probably \"focus element\" would be a better term, and a notion of next element. ....</p>\n</blockquote>\n<p>Everyone here is trying to get me to give a precise definition of what I mean by cyclic list.   I think your definition is acceptable but I never really liked the idea of having a focus or start element.  I am trying to model real data, so for sure there is a start element.  I am imagining an experiment where someone starts copying down numbers, emphasis on starts.</p>\n<p>I think it's important for the broader math community, especially the great people in this forum, to learn about the work done on containers which is more known in computer science.</p>",
+        "id": 327675787,
+        "sender_full_name": "Ben Sprott",
+        "timestamp": 1676336350
+    },
+    {
+        "content": "<blockquote>\n<p>The definition that one would make in computer science is a finite list where every element points to one other element</p>\n</blockquote>\n<p>What about the list {1,2,3,4,5} with the pointers 1-&gt; 2 -&gt; 1, 3 -&gt; 4 -&gt; 5 -&gt; 3?  {Edit: I meant the list [1,2,3,4,5], not the set]<br>\nOr the list {1,2,3,4} with pointers 1 -&gt; 2 -&gt; 3 -&gt; 4 -&gt; 2? [Edit: ditto here, it is the list [1,2,3,4]}</p>\n<p>I know you mean 1 -&gt; 2 -&gt; 3 -&gt; 4 -&gt; 5 -&gt; 1, but this is not what your definition says, and both of the above are possible. You don't need a totally formal definition at the level of set theory, or whatever, but just saying something like \"a cyclic list is a single-cycle directed graph where the nodes are decorated with elements from a set\" is enough. Does your definition have a specified element in these sense that it's a bona fide list, together with a cyclic ordering? Or there is no starting element? People here might be genuinely misunderstanding what you mean, but also are trying to bring their own understanding to an underspecified construct.</p>",
+        "id": 327677408,
+        "sender_full_name": "David Michael Roberts",
+        "timestamp": 1676337427
+    },
+    {
+        "content": "<p>And, now you say</p>\n<blockquote>\n<p>for sure there is a start element</p>\n</blockquote>\n<p>and this was not what I thought you meant, so I'm in the crowd of people who misunderstood what you were trying to say. I assumed you meant there was no starting element, and only the data of a cycle.</p>",
+        "id": 327677469,
+        "sender_full_name": "David Michael Roberts",
+        "timestamp": 1676337482
+    },
+    {
+        "content": "<p>So not only was the functor not defined, the very definition of cyclic list was underspecified, and people have been proving things about definitions of cyclic lists that may or may not be what you were thinking about.</p>",
+        "id": 327677573,
+        "sender_full_name": "David Michael Roberts",
+        "timestamp": 1676337539
+    },
+    {
+        "content": "<blockquote>\n<p>I am imagining an experiment where someone starts copying down numbers, emphasis on starts.</p>\n</blockquote>\n<p>in this case, why do you need the cyclic business? Is this just a <a href=\"https://en.wikipedia.org/wiki/Stream_(computing)\">stream</a>? Or are you really interested in the <a href=\"https://ncatlab.org/nlab/show/action+monad#AsLoggingEffectInComputerScience\">writer monad</a> ?</p>\n<p>This is why it's important to document your ideas thoroughly and completely, leaving as few details out as possible, keeping enough so someone who doesn't have recourse to ask clarifying questions over time can understand <em>exactly</em> what you mean.</p>",
+        "id": 327677857,
+        "sender_full_name": "David Michael Roberts",
+        "timestamp": 1676337799
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276422\">David Michael Roberts</span> <a href=\"#narrow/stream/229136-theory.3A-category-theory/topic/Monad.20composition/near/327677408\">said</a>:</p>\n<blockquote>\n<p>What about the list {1,2,3,4,5} with the pointers 1-&gt; 2 -&gt; 1, 3 -&gt; 4 -&gt; 5 -&gt; 3?  <br>\nOr the list {1,2,3,4} with pointers 1 -&gt; 2 -&gt; 3 -&gt; 4 -&gt; 2?</p>\n<p>I know you mean 1 -&gt; 2 -&gt; 3 -&gt; 4 -&gt; 5 -&gt; 1, but this is not what your definition says, and both of the above are possible. <br>\n</p>\n</blockquote>\n<p>I think you made a mistake, so correct me if I don't have this right.  You have a \"list\" <br>\nas {1,2,3,4,5}.  This looks like a set because of the curly braces and the fact that everything is unique.  Here is a list [1,2,3,4,5,2,4].  Recall that a list is ordered, so everything in this list is understood to point at the thing next to it.  In your notation that looks like this:</p>\n<p>1-&gt;2-&gt;3-&gt;4-&gt;5-&gt;2-&gt;4</p>\n<p>Notice how everything points to one other thing except for one element, the last one, 4.  To turn this into a cyclic list, we just add one last pointer from the end to the beginning.  This is why I chose the clever definition \"a list where every element points to one other element\", perhaps we want to say \"a list where the last element points to the first element\".</p>",
+        "id": 327679419,
+        "sender_full_name": "Ben Sprott",
+        "timestamp": 1676339294
+    },
+    {
+        "content": "<p><span class=\"user-mention\" data-user-id=\"308261\">@Ben Sprott</span>  Ignore the braces there, that is purely cosmetic. Read it as a list [1,2,3,4,5], with the pointers 1-&gt; 2 -&gt; 1, 3 -&gt; 4 -&gt; 5 -&gt; 3. In this example I have a list and each element is pointed to one other element, which is the definition you gave.</p>",
+        "id": 327680721,
+        "sender_full_name": "David Michael Roberts",
+        "timestamp": 1676340429
+    },
+    {
+        "content": "<p>(deleted)</p>",
+        "id": 327680824,
+        "sender_full_name": "Ben Sprott",
+        "timestamp": 1676340514
+    },
+    {
+        "content": "<blockquote>\n<p>everything in the list is understood to point at the thing next to it</p>\n</blockquote>\n<p>I didn't understand that, as your definition merely said that each element points to one other element. It didn't say that this pointer needed to point to the next element in the list, except the last element.</p>",
+        "id": 327680833,
+        "sender_full_name": "David Michael Roberts",
+        "timestamp": 1676340521
+    },
+    {
+        "content": "<p>(deleted)</p>",
+        "id": 327680880,
+        "sender_full_name": "Ben Sprott",
+        "timestamp": 1676340580
+    },
+    {
+        "content": "<p>You are defining \"cyclic list\", and so you can't say my example of your definition is wrong if you then say oh, that's a \"cyclic list with a tail\". What's a \"cyclic list with a tail\", then?</p>",
+        "id": 327680977,
+        "sender_full_name": "David Michael Roberts",
+        "timestamp": 1676340647
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276422\">David Michael Roberts</span> <a href=\"#narrow/stream/229136-theory.3A-category-theory/topic/Monad.20composition/near/327680721\">said</a>:</p>\n<blockquote>\n<p><span class=\"user-mention silent\" data-user-id=\"308261\">Ben Sprott</span>  Ignore the braces there, that is purely cosmetic. Read it as a list [1,2,3,4,5], with the pointers 1-&gt; 2 -&gt; 1, 3 -&gt; 4 -&gt; 5 -&gt; 3. In this example I have a list and each element is pointed to one other element, which is the definition you gave.</p>\n</blockquote>\n<p>Thank you for your efforts here to get me to define what I am talking about.</p>\n<p>I was being sarcastic when I said clever.  It's not clever and it's wrong, as you are pointing out.  What's wrong with \"cyclic lists where the last \"element\" points at the first \"element\".\"  </p>\n<p>There is a problem with the word element, which we may have to fix.</p>\n<p>I'm sorry but I am having to care for my feverish son.  I will return soon.</p>",
+        "id": 327682106,
+        "sender_full_name": "Ben Sprott",
+        "timestamp": 1676341748
+    },
+    {
+        "content": "<p>I'm very sorry to hear that, I hope he improves soon and has a good sleep.</p>\n<p>There's no problem with the word 'element' here (one might say 'entry', but it's not a problem). Defining a cyclic list </p>\n<blockquote>\n<p>where the last \"element\" points at the first \"element\"</p>\n</blockquote>\n<p>and each element points to the next element in the list is clear, now the issue is whether the given list structure is inherent to the structure, namely the data is a cyclic list is a list, with the understanding that the 'next' element after the last given element is the first element, or if there is <em>no</em> first element. Another way to think about this is that in the API for the cyclic list data structure, you cannot extract a first element. So there are two options:</p>",
+        "id": 327683953,
+        "sender_full_name": "David Michael Roberts",
+        "timestamp": 1676343320
+    },
+    {
+        "content": "<ol>\n<li>List that loops, which is a data structure consisting of a <code>head</code> and a <code>tail</code>, which is the tail in the ordinary sense but the head appended to the end of the list. We probably also want to be able to extract the <code>length</code> of the list. for example, consider the list <code>[1,2,4,3]</code>, and we can get <code>head [1,2,4,3] = 1</code>, but <code>tail [1,2,4,3] = [2,4,3,1]</code>. We do not have that the list is the union of the head and the tail, but we can extract the successor of an element of the list by finding the element in the list (say by examining the head of the tail repeatedly), then extracting the head of the tail after that element. For example the successor of 2 in the list as before is <code>head tail [2,4,3,1]</code>. Note that we can specify the head at any point of the current 'rotation' of the list, in particular, the original way the list is supplied could be saved, and it's head stored. Or else, a counter mod <code>length</code> could keep track of the rotation.</li>\n</ol>",
+        "id": 327683957,
+        "sender_full_name": "David Michael Roberts",
+        "timestamp": 1676343330
+    },
+    {
+        "content": "<p>[The important part of the above data structure is that one really does have a starting element, namely the head of the list at the start, and this is remembered forever. Perhaps my sketch of the implementation is a bit wonky, I hope it is clear. Perhaps you can supply a similar implementation of what you mean.]</p>",
+        "id": 327684205,
+        "sender_full_name": "David Michael Roberts",
+        "timestamp": 1676343556
+    },
+    {
+        "content": "<ol start=\"2\">\n<li>Alternatively, you have a cycle, where you don't remember the head at any point, but just have a pointer to the list, and you can extract the element at the pointer, and can move to the next element in the cycle but when you initialise the literally same list, the position of the pointer is random, so you really can't specify the some starting point. This type of data structure is much harder to implement properly, since mathematically it's more like an equivalence class of lists, that are cyclic permutations of each other.</li>\n</ol>",
+        "id": 327684390,
+        "sender_full_name": "David Michael Roberts",
+        "timestamp": 1676343714
+    },
+    {
+        "content": "<p>I have to eat and run to teach now, but I think we are perhaps getting closer.</p>",
+        "id": 327684451,
+        "sender_full_name": "David Michael Roberts",
+        "timestamp": 1676343729
+    },
+    {
+        "content": "<p>I mean: it is clear that you mean a single cycle, but whether the cycle should have a special chosen element that is the 'first' element, or not, is not yet established. This will be driven by what your intended application needs.</p>",
+        "id": 327685074,
+        "sender_full_name": "David Michael Roberts",
+        "timestamp": 1676344263
+    },
+    {
+        "content": "<p>I guess the question is whether [1,2,3,4] and [2,3,4,1] are the same cyclic list</p>",
+        "id": 327806068,
+        "sender_full_name": "Joshua Meyers",
+        "timestamp": 1676388886
     }
 ]

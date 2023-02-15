@@ -9,13 +9,14 @@ permalink: /stream/229136-theory:-category-theory/index.html
 
 ### Topics:
 
-* [Monad composition](topic/topic_Monad.20composition.html) (81 messages, latest: Feb 14 2023 at 00:20)
-* [2-universal morphisms/biadjoints for cheap](topic/topic_2-universal.20morphisms.2Fbiadjoints.20for.20cheap.html) (3 messages, latest: Feb 13 2023 at 23:20)
-* ["Idempotent" monads](topic/topic_.22Idempotent.22.20monads.html) (4 messages, latest: Feb 13 2023 at 22:57)
+* [2-universal morphisms/biadjoints for cheap](topic/topic_2-universal.20morphisms.2Fbiadjoints.20for.20cheap.html) (10 messages, latest: Feb 14 2023 at 22:57)
+* [coherence for categorical constructions](topic/topic_coherence.20for.20categorical.20constructions.html) (19 messages, latest: Feb 14 2023 at 22:19)
+* [final functors into filtered categories](topic/topic_final.20functors.20into.20filtered.20categories.html) (8 messages, latest: Feb 14 2023 at 17:34)
+* [Monad composition](topic/topic_Monad.20composition.html) (100 messages, latest: Feb 14 2023 at 15:34)
+* ["Idempotent" monads](topic/topic_.22Idempotent.22.20monads.html) (8 messages, latest: Feb 14 2023 at 07:29)
 * [A new monad from a strong monad](topic/topic_A.20new.20monad.20from.20a.20strong.20monad.html) (52 messages, latest: Feb 13 2023 at 20:14)
 * [can one define an adjunction starting from the co/monads?](topic/topic_can.20one.20define.20an.20adjunction.20starting.20from.20the.20co.2Fmonads.3F.html) (9 messages, latest: Feb 13 2023 at 11:14)
 * [Question about a subcategory of comma categories](topic/topic_Question.20about.20a.20subcategory.20of.20comma.20categories.html) (6 messages, latest: Feb 10 2023 at 20:55)
-* [final functors into filtered categories](topic/topic_final.20functors.20into.20filtered.20categories.html) (6 messages, latest: Feb 09 2023 at 10:51)
 * [Tangent space on a hom-object](topic/topic_Tangent.20space.20on.20a.20hom-object.html) (24 messages, latest: Feb 08 2023 at 00:54)
 * [n-fold category of algebras and coalgebras?](topic/topic_n-fold.20category.20of.20algebras.20and.20coalgebras.3F.html) (32 messages, latest: Feb 06 2023 at 09:50)
 * [factorization system from arrows to objects](topic/topic_factorization.20system.20from.20arrows.20to.20objects.html) (5 messages, latest: Feb 03 2023 at 11:35)
@@ -377,4 +378,4 @@ permalink: /stream/229136-theory:-category-theory/index.html
 * [diagrams for application](topic/topic_diagrams.20for.20application.html) (13 messages, latest: Mar 24 2020 at 06:19)
 * [universal constructions](topic/topic_universal.20constructions.html) (8 messages, latest: Mar 23 2020 at 21:06)
 
-<hr><p>Last updated: Feb 14 2023 at 00:48 UTC</p>
+<hr><p>Last updated: Feb 15 2023 at 00:48 UTC</p>
