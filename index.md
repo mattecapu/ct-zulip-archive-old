@@ -24,7 +24,7 @@ permalink: /index.html
 
 * [general: positions](stream/245502-general:-positions/index.html) (70 topics)
 
-* [general: mathematics](stream/266967-general:-mathematics/index.html) (65 topics)
+* [general: mathematics](stream/266967-general:-mathematics/index.html) (66 topics)
 
 * [seminar: Topos Colloquium](stream/269484-seminar:-Topos-Colloquium/index.html) (64 topics)
 
@@ -44,7 +44,7 @@ permalink: /index.html
 
 * [seminar: MIT Categories Seminar](stream/229457-seminar:-MIT-Categories-Seminar/index.html) (41 topics)
 
-* [practice: our work](stream/274877-practice:-our-work/index.html) (39 topics)
+* [practice: our work](stream/274877-practice:-our-work/index.html) (40 topics)
 
 * [Categorical Probability and Statistics 2020 workshop](stream/238032-Categorical-Probability-and-Statistics-2020-workshop/index.html) (34 topics)
 
@@ -82,13 +82,13 @@ permalink: /index.html
 
 * [seminar: ACT@UCR](stream/229966-seminar:-ACT@UCR/index.html) (15 topics)
 
+* [learning: id my structure](stream/311521-learning:-id-my-structure/index.html) (14 topics)
+
 * [practice: programming](stream/229450-practice:-programming/index.html) (14 topics)
 
 * [working: discrete geometry and entanglement](stream/266854-working:-discrete-geometry-and-entanglement/index.html) (14 topics)
 
 * [general: co/appreciation](stream/271602-general:-co/appreciation/index.html) (13 topics)
-
-* [learning: id my structure](stream/311521-learning:-id-my-structure/index.html) (13 topics)
 
 * [learning: reading groups](stream/232160-learning:-reading-groups/index.html) (12 topics)
 
@@ -180,4 +180,4 @@ permalink: /index.html
 
 * [theory: alternate presentations](stream/233122-theory:-alternate-presentations/index.html) (1 topic)
 
-<hr><p>Last updated: Feb 15 2023 at 00:48 UTC</p>
+<hr><p>Last updated: Feb 16 2023 at 00:47 UTC</p>

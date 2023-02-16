@@ -9,6 +9,7 @@ permalink: /stream/311521-learning:-id-my-structure/index.html
 
 ### Topics:
 
+* [category of all small diagrams](topic/topic_category.20of.20all.20small.20diagrams.html) (4 messages, latest: Feb 16 2023 at 00:20)
 * [Poly + "objectwise sections"?](topic/topic_Poly.20.2B.20.22objectwise.20sections.22.3F.html) (2 messages, latest: Feb 11 2023 at 17:13)
 * [some categories of shapes](topic/topic_some.20categories.20of.20shapes.html) (18 messages, latest: Jan 23 2023 at 17:00)
 * [fibrations in my fibrations](topic/topic_fibrations.20in.20my.20fibrations.html) (12 messages, latest: Jan 22 2023 at 15:06)
@@ -23,4 +24,4 @@ permalink: /stream/311521-learning:-id-my-structure/index.html
 * [stream events](topic/topic_stream.20events.html) (9 messages, latest: Jan 04 2022 at 22:35)
 * [almost a full subcategory?](topic/topic_almost.20a.20full.20subcategory.3F.html) (15 messages, latest: Jan 04 2022 at 16:42)
 
-<hr><p>Last updated: Feb 15 2023 at 00:48 UTC</p>
+<hr><p>Last updated: Feb 16 2023 at 00:47 UTC</p>
