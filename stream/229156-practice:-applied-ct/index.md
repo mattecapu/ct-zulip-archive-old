@@ -9,9 +9,9 @@ permalink: /stream/229156-practice:-applied-ct/index.html
 
 ### Topics:
 
+* [around machine learning](topic/topic_around.20machine.20learning.html) (60 messages, latest: Feb 16 2023 at 04:29)
 * [properties of objects (in context of imaging)](topic/topic_properties.20of.20objects.20(in.20context.20of.20imaging).html) (9 messages, latest: Feb 08 2023 at 19:21)
 * [web cats](topic/topic_web.20cats.html) (354 messages, latest: Jan 30 2023 at 11:02)
-* [around machine learning](topic/topic_around.20machine.20learning.html) (54 messages, latest: Jan 20 2023 at 13:09)
 * [hyperoperators as dynamical systems](topic/topic_hyperoperators.20as.20dynamical.20systems.html) (125 messages, latest: Dec 08 2022 at 21:59)
 * [structured cospans](topic/topic_structured.20cospans.html) (21 messages, latest: Dec 08 2022 at 20:29)
 * [instance functors for monoidal categories](topic/topic_instance.20functors.20for.20monoidal.20categories.html) (14 messages, latest: Oct 10 2022 at 18:52)
@@ -149,4 +149,4 @@ permalink: /stream/229156-practice:-applied-ct/index.html
 * [AACT2020](topic/topic_AACT2020.html) (1 message, latest: Mar 24 2020 at 00:56)
 * [welcome](topic/topic_welcome.html) (15 messages, latest: Mar 24 2020 at 00:03)
 
-<hr><p>Last updated: Feb 16 2023 at 00:47 UTC</p>
+<hr><p>Last updated: Feb 17 2023 at 00:53 UTC</p>

@@ -9,10 +9,10 @@ permalink: /stream/229111-general/index.html
 
 ### Topics:
 
+* [Compositionality](topic/topic_Compositionality.html) (40 messages, latest: Feb 16 2023 at 01:46)
 * [Introduce yourself!](topic/topic_Introduce.20yourself!.html) (33 messages, latest: Feb 15 2023 at 23:43)
 * [Directory of Women in Category Theory](topic/topic_Directory.20of.20Women.20in.20Category.20Theory.html) (2 messages, latest: Feb 11 2023 at 21:58)
 * [Mathstodon](topic/topic_Mathstodon.html) (7 messages, latest: Jan 24 2023 at 07:22)
-* [Compositionality](topic/topic_Compositionality.html) (37 messages, latest: Jan 14 2023 at 15:46)
 * [learning dependent type theory](topic/topic_learning.20dependent.20type.20theory.html) (16 messages, latest: Jan 14 2023 at 13:52)
 * [learning CT](topic/topic_learning.20CT.html) (80 messages, latest: Jan 08 2023 at 16:06)
 * [Subject-specific CT->industry move advice](topic/topic_Subject-specific.20CT-.3Eindustry.20move.20advice.html) (7 messages, latest: Dec 12 2022 at 22:25)
@@ -256,4 +256,4 @@ permalink: /stream/229111-general/index.html
 * [Tools for diagrams](topic/topic_Tools.20for.20diagrams.html) (78 messages, latest: Mar 25 2020 at 17:53)
 * [topic demonstration](topic/topic_topic.20demonstration.html) (2 messages, latest: Mar 23 2020 at 16:57)
 
-<hr><p>Last updated: Feb 16 2023 at 00:47 UTC</p>
+<hr><p>Last updated: Feb 17 2023 at 00:53 UTC</p>

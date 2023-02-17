@@ -9,7 +9,7 @@ permalink: /stream/229199-learning:-questions/index.html
 
 ### Topics:
 
-* [monoids and coproducts](topic/topic_monoids.20and.20coproducts.html) (41 messages, latest: Feb 15 2023 at 20:56)
+* [monoids and coproducts](topic/topic_monoids.20and.20coproducts.html) (47 messages, latest: Feb 16 2023 at 20:32)
 * [Dynamical systems](topic/topic_Dynamical.20systems.html) (26 messages, latest: Feb 12 2023 at 00:02)
 * [Category Theory and Programming - what are functors actually](topic/topic_Category.20Theory.20and.20Programming.20-.20what.20are.20functors.20actually.html) (13 messages, latest: Feb 11 2023 at 19:42)
 * [forgetful functors](topic/topic_forgetful.20functors.html) (30 messages, latest: Feb 09 2023 at 01:37)
@@ -829,4 +829,4 @@ permalink: /stream/229199-learning:-questions/index.html
 * [Algebra (Aluffi) exercises](topic/topic_Algebra.20(Aluffi).20exercises.html) (55 messages, latest: Mar 27 2020 at 23:38)
 * [What is category theory about?](topic/topic_What.20is.20category.20theory.20about.3F.html) (16 messages, latest: Mar 26 2020 at 16:03)
 
-<hr><p>Last updated: Feb 16 2023 at 00:47 UTC</p>
+<hr><p>Last updated: Feb 17 2023 at 00:53 UTC</p>

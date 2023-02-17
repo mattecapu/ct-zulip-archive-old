@@ -9,7 +9,7 @@ permalink: /stream/229136-theory:-category-theory/index.html
 
 ### Topics:
 
-* [coherence for categorical constructions](topic/topic_coherence.20for.20categorical.20constructions.html) (23 messages, latest: Feb 15 2023 at 11:50)
+* [coherence for categorical constructions](topic/topic_coherence.20for.20categorical.20constructions.html) (24 messages, latest: Feb 16 2023 at 15:44)
 * [final functors into filtered categories](topic/topic_final.20functors.20into.20filtered.20categories.html) (9 messages, latest: Feb 15 2023 at 07:29)
 * [2-universal morphisms/biadjoints for cheap](topic/topic_2-universal.20morphisms.2Fbiadjoints.20for.20cheap.html) (13 messages, latest: Feb 15 2023 at 01:20)
 * [Monad composition](topic/topic_Monad.20composition.html) (100 messages, latest: Feb 14 2023 at 15:34)
@@ -378,4 +378,4 @@ permalink: /stream/229136-theory:-category-theory/index.html
 * [diagrams for application](topic/topic_diagrams.20for.20application.html) (13 messages, latest: Mar 24 2020 at 06:19)
 * [universal constructions](topic/topic_universal.20constructions.html) (8 messages, latest: Mar 23 2020 at 21:06)
 
-<hr><p>Last updated: Feb 16 2023 at 00:47 UTC</p>
+<hr><p>Last updated: Feb 17 2023 at 00:53 UTC</p>
