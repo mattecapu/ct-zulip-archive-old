@@ -9,6 +9,7 @@ permalink: /stream/266967-general:-mathematics/index.html
 
 ### Topics:
 
+* [Publishing papers](topic/topic_Publishing.20papers.html) (16 messages, latest: Feb 17 2023 at 14:09)
 * [Knots and Yang-Baxter](topic/topic_Knots.20and.20Yang-Baxter.html) (2 messages, latest: Feb 15 2023 at 22:52)
 * [Lobatto quadrature formula from Gauss quadrature](topic/topic_Lobatto.20quadrature.20formula.20from.20Gauss.20quadrature.html) (2 messages, latest: Feb 09 2023 at 10:53)
 * [final functors into filtered categories](topic/topic_final.20functors.20into.20filtered.20categories.html) (5 messages, latest: Feb 09 2023 at 00:10)
@@ -76,4 +77,4 @@ permalink: /stream/266967-general:-mathematics/index.html
 * [the 600-cell](topic/topic_the.20600-cell.html) (5 messages, latest: Dec 01 2020 at 16:35)
 * [hermitian matrix over normed division algebra](topic/topic_hermitian.20matrix.20over.20normed.20division.20algebra.html) (8 messages, latest: Sep 28 2020 at 21:19)
 
-<hr><p>Last updated: Feb 17 2023 at 00:53 UTC</p>
+<hr><p>Last updated: Feb 18 2023 at 00:47 UTC</p>
