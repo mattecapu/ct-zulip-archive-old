@@ -9,9 +9,10 @@ permalink: /stream/229199-learning:-questions/index.html
 
 ### Topics:
 
-* [monoids and coproducts](topic/topic_monoids.20and.20coproducts.html) (51 messages, latest: Feb 17 2023 at 16:49)
+* [evolutionary game](topic/topic_evolutionary.20game.html) (46 messages, latest: Feb 18 2023 at 22:34)
+* [monoids and coproducts](topic/topic_monoids.20and.20coproducts.html) (60 messages, latest: Feb 18 2023 at 20:03)
+* [Dynamical systems](topic/topic_Dynamical.20systems.html) (27 messages, latest: Feb 18 2023 at 06:31)
 * [irreductible/indecomposable arrow](topic/topic_irreductible.2Findecomposable.20arrow.html) (3 messages, latest: Feb 17 2023 at 16:36)
-* [Dynamical systems](topic/topic_Dynamical.20systems.html) (26 messages, latest: Feb 12 2023 at 00:02)
 * [Category Theory and Programming - what are functors actually](topic/topic_Category.20Theory.20and.20Programming.20-.20what.20are.20functors.20actually.html) (13 messages, latest: Feb 11 2023 at 19:42)
 * [forgetful functors](topic/topic_forgetful.20functors.html) (30 messages, latest: Feb 09 2023 at 01:37)
 * [Monads whose algebras are / give rise to monads](topic/topic_Monads.20whose.20algebras.20are.20.2F.20give.20rise.20to.20monads.html) (8 messages, latest: Feb 08 2023 at 23:15)
@@ -52,7 +53,6 @@ permalink: /stream/229199-learning:-questions/index.html
 * [dependence, posets, and ambiguity](topic/topic_dependence.2C.20posets.2C.20and.20ambiguity.html) (1 message, latest: Dec 05 2022 at 23:43)
 * [Taylor expansion of y'(x-h)](topic/topic_Taylor.20expansion.20of.20y'(x-h).html) (5 messages, latest: Dec 04 2022 at 12:22)
 * [dynamical system](topic/topic_dynamical.20system.html) (70 messages, latest: Dec 03 2022 at 11:06)
-* [evolutionary game](topic/topic_evolutionary.20game.html) (33 messages, latest: Dec 03 2022 at 01:47)
 * [Initial algebras as heteromorphisms](topic/topic_Initial.20algebras.20as.20heteromorphisms.html) (20 messages, latest: Dec 02 2022 at 19:18)
 * [Are sets accessible categories?](topic/topic_Are.20sets.20accessible.20categories.3F.html) (3 messages, latest: Dec 01 2022 at 16:23)
 * [point-free geometry](topic/topic_point-free.20geometry.html) (3 messages, latest: Nov 30 2022 at 06:40)
@@ -830,4 +830,4 @@ permalink: /stream/229199-learning:-questions/index.html
 * [Algebra (Aluffi) exercises](topic/topic_Algebra.20(Aluffi).20exercises.html) (55 messages, latest: Mar 27 2020 at 23:38)
 * [What is category theory about?](topic/topic_What.20is.20category.20theory.20about.3F.html) (16 messages, latest: Mar 26 2020 at 16:03)
 
-<hr><p>Last updated: Feb 18 2023 at 00:47 UTC</p>
+<hr><p>Last updated: Feb 19 2023 at 00:49 UTC</p>
