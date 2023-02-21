@@ -8,7 +8,7 @@ permalink: /index.html
 
 ## Streams:
 
-* [learning: questions](stream/229199-learning:-questions/index.html) (820 topics)
+* [learning: questions](stream/229199-learning:-questions/index.html) (821 topics)
 
 * [theory: category theory](stream/229136-theory:-category-theory/index.html) (368 topics)
 
@@ -18,13 +18,13 @@ permalink: /index.html
 
 * [practice: applied ct](stream/229156-practice:-applied-ct/index.html) (139 topics)
 
-* [theory: topos theory](stream/230087-theory:-topos-theory/index.html) (79 topics)
+* [theory: topos theory](stream/230087-theory:-topos-theory/index.html) (80 topics)
 
 * [theory: algebraic topology & homological algebra](stream/241590-theory:-algebraic-topology-&-homological-algebra/index.html) (71 topics)
 
 * [general: positions](stream/245502-general:-positions/index.html) (70 topics)
 
-* [general: mathematics](stream/266967-general:-mathematics/index.html) (67 topics)
+* [general: mathematics](stream/266967-general:-mathematics/index.html) (68 topics)
 
 * [seminar: Topos Colloquium](stream/269484-seminar:-Topos-Colloquium/index.html) (64 topics)
 
@@ -78,11 +78,11 @@ permalink: /index.html
 
 * [ACT@UCR seminar](stream/229966-ACT@UCR-seminar/index.html) (15 topics)
 
+* [learning: id my structure](stream/311521-learning:-id-my-structure/index.html) (15 topics)
+
 * [learning: show and tell](stream/232162-learning:-show-and-tell/index.html) (15 topics)
 
 * [seminar: ACT@UCR](stream/229966-seminar:-ACT@UCR/index.html) (15 topics)
-
-* [learning: id my structure](stream/311521-learning:-id-my-structure/index.html) (14 topics)
 
 * [practice: programming](stream/229450-practice:-programming/index.html) (14 topics)
 
@@ -180,4 +180,4 @@ permalink: /index.html
 
 * [theory: alternate presentations](stream/233122-theory:-alternate-presentations/index.html) (1 topic)
 
-<hr><p>Last updated: Feb 20 2023 at 00:51 UTC</p>
+<hr><p>Last updated: Feb 21 2023 at 00:50 UTC</p>

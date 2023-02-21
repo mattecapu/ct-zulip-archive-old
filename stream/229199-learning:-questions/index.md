@@ -9,7 +9,8 @@ permalink: /stream/229199-learning:-questions/index.html
 
 ### Topics:
 
-* [monoids and coproducts](topic/topic_monoids.20and.20coproducts.html) (67 messages, latest: Feb 20 2023 at 00:14)
+* [monoids and coproducts](topic/topic_monoids.20and.20coproducts.html) (74 messages, latest: Feb 20 2023 at 23:24)
+* [morphisms to products](topic/topic_morphisms.20to.20products.html) (12 messages, latest: Feb 20 2023 at 22:32)
 * [evolutionary game](topic/topic_evolutionary.20game.html) (48 messages, latest: Feb 19 2023 at 22:15)
 * [Dynamical systems](topic/topic_Dynamical.20systems.html) (27 messages, latest: Feb 18 2023 at 06:31)
 * [irreductible/indecomposable arrow](topic/topic_irreductible.2Findecomposable.20arrow.html) (3 messages, latest: Feb 17 2023 at 16:36)
@@ -830,4 +831,4 @@ permalink: /stream/229199-learning:-questions/index.html
 * [Algebra (Aluffi) exercises](topic/topic_Algebra.20(Aluffi).20exercises.html) (55 messages, latest: Mar 27 2020 at 23:38)
 * [What is category theory about?](topic/topic_What.20is.20category.20theory.20about.3F.html) (16 messages, latest: Mar 26 2020 at 16:03)
 
-<hr><p>Last updated: Feb 20 2023 at 00:51 UTC</p>
+<hr><p>Last updated: Feb 21 2023 at 00:50 UTC</p>

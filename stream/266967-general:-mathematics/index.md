@@ -9,6 +9,7 @@ permalink: /stream/266967-general:-mathematics/index.html
 
 ### Topics:
 
+* [evolutionary game](topic/topic_evolutionary.20game.html) (9 messages, latest: Feb 21 2023 at 00:14)
 * [Publishing papers](topic/topic_Publishing.20papers.html) (66 messages, latest: Feb 18 2023 at 21:36)
 * [Knots and Yang-Baxter](topic/topic_Knots.20and.20Yang-Baxter.html) (4 messages, latest: Feb 18 2023 at 18:23)
 * [Lobatto quadrature formula from Gauss quadrature](topic/topic_Lobatto.20quadrature.20formula.20from.20Gauss.20quadrature.html) (2 messages, latest: Feb 09 2023 at 10:53)
@@ -77,4 +78,4 @@ permalink: /stream/266967-general:-mathematics/index.html
 * [the 600-cell](topic/topic_the.20600-cell.html) (5 messages, latest: Dec 01 2020 at 16:35)
 * [hermitian matrix over normed division algebra](topic/topic_hermitian.20matrix.20over.20normed.20division.20algebra.html) (8 messages, latest: Sep 28 2020 at 21:19)
 
-<hr><p>Last updated: Feb 20 2023 at 00:51 UTC</p>
+<hr><p>Last updated: Feb 21 2023 at 00:50 UTC</p>
