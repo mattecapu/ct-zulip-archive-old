@@ -24,7 +24,7 @@ permalink: /index.html
 
 * [general: positions](stream/245502-general:-positions/index.html) (70 topics)
 
-* [general: mathematics](stream/266967-general:-mathematics/index.html) (68 topics)
+* [general: mathematics](stream/266967-general:-mathematics/index.html) (69 topics)
 
 * [seminar: Topos Colloquium](stream/269484-seminar:-Topos-Colloquium/index.html) (64 topics)
 
@@ -32,7 +32,7 @@ permalink: /index.html
 
 * [ACT 2020](stream/243068-ACT-2020/index.html) (61 topics)
 
-* [theory: logic](stream/233104-theory:-logic/index.html) (57 topics)
+* [theory: logic](stream/233104-theory:-logic/index.html) (58 topics)
 
 * [practice: thermodynamics](stream/306433-practice:-thermodynamics/index.html) (53 topics)
 
@@ -138,6 +138,8 @@ permalink: /index.html
 
 * [Grothendieck](stream/307233-Grothendieck/index.html) (3 topics)
 
+* [NYC Category Theory](stream/237238-NYC-Category-Theory/index.html) (3 topics)
+
 * [expression](stream/247180-expression/index.html) (3 topics)
 
 * [process-io](stream/267137-process-io/index.html) (3 topics)
@@ -151,8 +153,6 @@ permalink: /index.html
 * [AMS MRC on applied category theory](stream/322927-AMS-MRC-on-applied-category-theory/index.html) (2 topics)
 
 * [MATHEMATICAL PHILOSOPHY OF BIOLOGY](stream/336415-MATHEMATICAL-PHILOSOPHY-OF-BIOLOGY/index.html) (2 topics)
-
-* [NYC Category Theory](stream/237238-NYC-Category-Theory/index.html) (2 topics)
 
 * [Topos Colloquium](stream/269484-Topos-Colloquium/index.html) (2 topics)
 
@@ -180,4 +180,4 @@ permalink: /index.html
 
 * [theory: alternate presentations](stream/233122-theory:-alternate-presentations/index.html) (1 topic)
 
-<hr><p>Last updated: Feb 21 2023 at 00:50 UTC</p>
+<hr><p>Last updated: Feb 22 2023 at 00:45 UTC</p>
