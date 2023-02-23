@@ -9,6 +9,7 @@ permalink: /stream/258900-practice:-our-papers/index.html
 
 ### Topics:
 
+* [Toposes of Topological Monoid Actions](topic/topic_Toposes.20of.20Topological.20Monoid.20Actions.html) (9 messages, latest: Feb 22 2023 at 21:28)
 * [Towards a Higher-Order Mathematical Operational Semantics](topic/topic_Towards.20a.20Higher-Order.20Mathematical.20Operational.20Semantics.html) (20 messages, latest: Nov 10 2022 at 23:48)
 * [Categorical semantics of compositional RL](topic/topic_Categorical.20semantics.20of.20compositional.20RL.html) (5 messages, latest: Nov 08 2022 at 15:14)
 * [Machine Space I: Weak exponentials and quantification ove...](topic/topic_Machine.20Space.20I.3A.20Weak.20exponentials.20and.20quantification.20ove.2E.2E.2E.html) (3 messages, latest: Oct 01 2022 at 13:18)
@@ -42,7 +43,6 @@ permalink: /stream/258900-practice:-our-papers/index.html
 * [Native Type Theory](topic/topic_Native.20Type.20Theory.html) (153 messages, latest: May 17 2021 at 10:10)
 * [Graphical Calculus for Lagrangian Relations](topic/topic_Graphical.20Calculus.20for.20Lagrangian.20Relations.html) (3 messages, latest: May 14 2021 at 05:29)
 * [pregroups are frobenii are pregroups](topic/topic_pregroups.20are.20frobenii.20are.20pregroups.html) (1 message, latest: May 13 2021 at 07:25)
-* [Toposes of Topological Monoid Actions](topic/topic_Toposes.20of.20Topological.20Monoid.20Actions.html) (4 messages, latest: May 05 2021 at 08:02)
 * [Categories of Nets](topic/topic_Categories.20of.20Nets.html) (9 messages, latest: Apr 04 2021 at 18:02)
 * [Combining Nondeterminism, Probability, and Termination](topic/topic_Combining.20Nondeterminism.2C.20Probability.2C.20and.20Termination.html) (1 message, latest: Apr 01 2021 at 13:43)
 * [Normalization for Cubical Type Theory](topic/topic_Normalization.20for.20Cubical.20Type.20Theory.html) (1 message, latest: Apr 01 2021 at 12:08)
@@ -61,4 +61,4 @@ permalink: /stream/258900-practice:-our-papers/index.html
 * [Functorial semantics for partial theories](topic/topic_Functorial.20semantics.20for.20partial.20theories.html) (30 messages, latest: Nov 29 2020 at 08:46)
 * [Coends of higher arity](topic/topic_Coends.20of.20higher.20arity.html) (3 messages, latest: Sep 26 2020 at 16:28)
 
-<hr><p>Last updated: Feb 22 2023 at 00:45 UTC</p>
+<hr><p>Last updated: Feb 23 2023 at 00:46 UTC</p>
