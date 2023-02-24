@@ -59,6 +59,512 @@ permalink: /stream/229199-learning:-questions/topic/topic_A.20formal.20programmi
 
 
 
+<a name="329658706"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/A%20formal%20programming%20category/near/329658706" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Matteo Capucci (he/him) <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/topic_A.20formal.20programming.20category.html#329658706">(Feb 23 2023 at 08:54)</a>:</h4>
+<p>The question is hugely dependent on the language you're working with and on its semantics, as Dylan pointed out via Bauer</p>
+
+
+
+<a name="329659140"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/A%20formal%20programming%20category/near/329659140" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Matteo Capucci (he/him) <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/topic_A.20formal.20programming.20category.html#329659140">(Feb 23 2023 at 08:56)</a>:</h4>
+<p>At a very superficial level is ok to think of functions in a programming language as encoding functions in <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="bold">S</mi><mi mathvariant="bold">e</mi><mi mathvariant="bold">t</mi></mrow><annotation encoding="application/x-tex">\bf Set</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6861em;"></span><span class="mord"><span class="mord mathbf">Set</span></span></span></span></span>. But as soon as you actually look into it this stops making sense very quickly, because of shared contexts, non-termination and a myriad of other corner cases. I expect a language like Julia to have a pretty involved semantics if you want to be fully rigorous about it.</p>
+
+
+
+<a name="329659452"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/A%20formal%20programming%20category/near/329659452" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Matteo Capucci (he/him) <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/topic_A.20formal.20programming.20category.html#329659452">(Feb 23 2023 at 08:58)</a>:</h4>
+<p>Another very important fact distinguishing actual programming languages from their idealized version in <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="bold">S</mi><mi mathvariant="bold">e</mi><mi mathvariant="bold">t</mi></mrow><annotation encoding="application/x-tex">\bf Set</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6861em;"></span><span class="mord"><span class="mord mathbf">Set</span></span></span></span></span> is extensionality. Two functions with the same extensional beh aviour (computing equal values from equal inputs) might still be wildly different programs. In Set, this difference is not even expressible since functions are just input-output pairs so extensional equality is all you have...</p>
+
+
+
+<a name="329676074"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/A%20formal%20programming%20category/near/329676074" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Morgan Rogers (he/him) <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/topic_A.20formal.20programming.20category.html#329676074">(Feb 23 2023 at 10:14)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="498398">Davi Sales Barreira</span> <a href="#narrow/stream/229199-learning.3A-questions/topic/A.20formal.20programming.20category/near/329453056">said</a>:</p>
+<blockquote>
+<p>I know about Hask, but people say that is not an actual category due to problems such as non-terminating functions. Bartoz claims that this can be (sort of) amended by adding a <em>bottom</em> value that belongs to any type. </p>
+</blockquote>
+<p>It's not a technical problem from a category theory point of view that programs can be non-terminating. A category can have partial functions as morphisms (or even far more exotic things). The problem pointed out in the blog post linked by <span class="user-mention silent" data-user-id="378472">Dylan Braithwaite</span> is that:</p>
+<blockquote>
+<p><code>seq undefined () = undefined</code> and <code>seq (undefined . id) () = ()</code>, therefore we do not have <code>undefined . id = undefined</code>.</p>
+</blockquote>
+<p>I don't know the operational definition of "undefined"; I wonder if someone could explain why it exhibits this behaviour?</p>
+
+
+
+<a name="329678155"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/A%20formal%20programming%20category/near/329678155" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Reid Barton <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/topic_A.20formal.20programming.20category.html#329678155">(Feb 23 2023 at 10:23)</a>:</h4>
+<p>It's more about <code>seq</code>. <code>seq a b</code> is supposed to be undefined if <code>a</code> is, and otherwise return <code>b</code>. In order to make this possible when <code>a</code> is of function type, the function <code>undefined . id = \ x -&gt; undefined</code> must be different from <code>undefined</code>.</p>
+
+
+
+<a name="329678469"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/A%20formal%20programming%20category/near/329678469" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Reid Barton <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/topic_A.20formal.20programming.20category.html#329678469">(Feb 23 2023 at 10:24)</a>:</h4>
+<p>Because <code>seq f b</code> cannot compute <code>f x</code> for all possible <code>x</code>, to see if they are all <code>undefined</code>.</p>
+
+
+
+<a name="329678843"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/A%20formal%20programming%20category/near/329678843" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Reid Barton <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/topic_A.20formal.20programming.20category.html#329678843">(Feb 23 2023 at 10:25)</a>:</h4>
+<p>If <code>seq</code> didn't exist, then the only thing you could do with a function would be to apply it, so you wouldn't be able to distinguish <code>undefined . id</code> and <code>undefined</code>.</p>
+
+
+
+<a name="329678972"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/A%20formal%20programming%20category/near/329678972" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Reid Barton <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/topic_A.20formal.20programming.20category.html#329678972">(Feb 23 2023 at 10:26)</a>:</h4>
+<p>Or in other words, you wouldn't be able to distinguish <code>\ x  -&gt; f x</code> and <code>f</code>.</p>
+
+
+
+<a name="329681422"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/A%20formal%20programming%20category/near/329681422" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Jules Hedges <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/topic_A.20formal.20programming.20category.html#329681422">(Feb 23 2023 at 10:36)</a>:</h4>
+<p>My take on this is more computer scientists should talk to physicists, or even better economists, who every day grapple with what it means for squishy reality to <em>be</em> a mathematical object. To pick a famous example you can happily say that physical space <em>is</em> <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi mathvariant="double-struck">R</mi><mn>3</mn></msup></mrow><annotation encoding="application/x-tex">\mathbb R^3</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8141em;"></span><span class="mord"><span class="mord mathbb">R</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">3</span></span></span></span></span></span></span></span></span></span></span>, and that works totally fine unless you push your scale too big or too small when the model breaks down. So this isn't a constructive answer, but the correct answer to "what category corresponds to [real life thing]" the answer is always "what do you need it for?". You can come up with models of nontermination using domain theory or game semantics or operational semantics or whatever, and that works fine as long as you're fine to ignore some <em>other</em> gnarly features of Haskell</p>
+
+
+
+<a name="329685465"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/A%20formal%20programming%20category/near/329685465" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Reid Barton <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/topic_A.20formal.20programming.20category.html#329685465">(Feb 23 2023 at 10:54)</a>:</h4>
+<p>I agree generally but one difference is that <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi mathvariant="double-struck">R</mi><mn>3</mn></msup></mrow><annotation encoding="application/x-tex">\mathbb{R}^3</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8141em;"></span><span class="mord"><span class="mord mathbb">R</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">3</span></span></span></span></span></span></span></span></span></span></span> definitely is an actual mathematical object, whereas it's not clear what (if anything) "Hask" (or "Prog") is meant to refer to, <em>in addition</em> to the question of how closely it corresponds to the real world.</p>
+
+
+
+<a name="329688357"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/A%20formal%20programming%20category/near/329688357" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Morgan Rogers (he/him) <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/topic_A.20formal.20programming.20category.html#329688357">(Feb 23 2023 at 11:08)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="276480">Reid Barton</span> <a href="#narrow/stream/229199-learning.3A-questions/topic/A.20formal.20programming.20category/near/329678843">said</a>:</p>
+<blockquote>
+<p>If <code>seq</code> didn't exist, then the only thing you could do with a function would be to apply it, so you wouldn't be able to distinguish <code>undefined . id</code> and <code>undefined</code>.</p>
+</blockquote>
+<p>Why does <code>seq</code> exist? <span aria-label="upside down" class="emoji emoji-1f643" role="img" title="upside down">:upside_down:</span></p>
+
+
+
+<a name="329689060"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/A%20formal%20programming%20category/near/329689060" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Jules Hedges <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/topic_A.20formal.20programming.20category.html#329689060">(Feb 23 2023 at 11:11)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="276480">Reid Barton</span> <a href="#narrow/stream/229199-learning.3A-questions/topic/A.20formal.20programming.20category/near/329685465">said</a>:</p>
+<blockquote>
+<p>I agree generally but one difference is that <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi mathvariant="double-struck">R</mi><mn>3</mn></msup></mrow><annotation encoding="application/x-tex">\mathbb{R}^3</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8141em;"></span><span class="mord"><span class="mord mathbb">R</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">3</span></span></span></span></span></span></span></span></span></span></span> definitely is an actual mathematical object, whereas it's not clear what (if anything) "Hask" (or "Prog") is meant to refer to, <em>in addition</em> to the question of how closely it corresponds to the real world.</p>
+</blockquote>
+<p>Mostly commonly when people say "Hask" they are referring to <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="bold">S</mi><mi mathvariant="bold">e</mi><mi mathvariant="bold">t</mi></mrow><annotation encoding="application/x-tex">\mathbf{Set}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6861em;"></span><span class="mord"><span class="mord mathbf">Set</span></span></span></span></span>. Sometimes they're referring to something more like <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="bold">D</mi><mi mathvariant="bold">C</mi><mi mathvariant="bold">P</mi><mi mathvariant="bold">O</mi></mrow><annotation encoding="application/x-tex">\mathbf{DCPO}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6861em;"></span><span class="mord"><span class="mord mathbf">DCPO</span></span></span></span></span></p>
+
+
+
+<a name="329689194"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/A%20formal%20programming%20category/near/329689194" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Reid Barton <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/topic_A.20formal.20programming.20category.html#329689194">(Feb 23 2023 at 11:12)</a>:</h4>
+<p>Okay. That seems confusing to me, and it's certainly not what I would mean by Hask--because I would just call those categories Set, respectively DCPO.</p>
+
+
+
+<a name="329689321"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/A%20formal%20programming%20category/near/329689321" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Reid Barton <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/topic_A.20formal.20programming.20category.html#329689321">(Feb 23 2023 at 11:12)</a>:</h4>
+<p>I suspect that, in practice, people are not referring to anything in particular.</p>
+
+
+
+<a name="329689532"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/A%20formal%20programming%20category/near/329689532" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Jules Hedges <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/topic_A.20formal.20programming.20category.html#329689532">(Feb 23 2023 at 11:13)</a>:</h4>
+<p>It's clearer in a better-behaved language like Agda, where I <em>think</em> the the types and terms literally do form a category</p>
+
+
+
+<a name="329689903"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/A%20formal%20programming%20category/near/329689903" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Morgan Rogers (he/him) <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/topic_A.20formal.20programming.20category.html#329689903">(Feb 23 2023 at 11:15)</a>:</h4>
+<p>How can the problem with <code>seq</code> possibly be resolved by semantics in other categories? Is <code>seq</code> just ignored? And if so, why can't one do the same thing to directly form a category of Hask types?</p>
+
+
+
+<a name="329690308"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/A%20formal%20programming%20category/near/329690308" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Jules Hedges <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/topic_A.20formal.20programming.20category.html#329690308">(Feb 23 2023 at 11:17)</a>:</h4>
+<p>The fact is that function composition in Haskell just isn't associative. You can literally write 3 functions <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo separator="true">,</mo><mi>g</mi><mo separator="true">,</mo><mi>h</mi></mrow><annotation encoding="application/x-tex">f, g, h</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8889em;vertical-align:-0.1944em;"></span><span class="mord mathnormal" style="margin-right:0.10764em;">f</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal" style="margin-right:0.03588em;">g</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal">h</span></span></span></span> such that <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mi>f</mi><mi mathvariant="normal">.</mi><mi>g</mi><mo stretchy="false">)</mo><mi mathvariant="normal">.</mi><mi>h</mi></mrow><annotation encoding="application/x-tex">(f.g).h</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.10764em;">f</span><span class="mord">.</span><span class="mord mathnormal" style="margin-right:0.03588em;">g</span><span class="mclose">)</span><span class="mord">.</span><span class="mord mathnormal">h</span></span></span></span> and <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mi mathvariant="normal">.</mi><mo stretchy="false">(</mo><mi>g</mi><mi mathvariant="normal">.</mi><mi>h</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">f.(g.h)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.10764em;">f</span><span class="mord">.</span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.03588em;">g</span><span class="mord">.</span><span class="mord mathnormal">h</span><span class="mclose">)</span></span></span></span> are observationally distinguishable</p>
+
+
+
+<a name="329690574"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/A%20formal%20programming%20category/near/329690574" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Jules Hedges <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/topic_A.20formal.20programming.20category.html#329690574">(Feb 23 2023 at 11:19)</a>:</h4>
+<p>If you want to pretend that Haskell is a category then you have to ignore language features that cause it to fail, just like how if you want to pretend that the universe is a Euclidean space then you have to ignore physical effects that cause that to fail</p>
+
+
+
+<a name="329691109"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/A%20formal%20programming%20category/near/329691109" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Morgan Rogers (he/him) <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/topic_A.20formal.20programming.20category.html#329691109">(Feb 23 2023 at 11:22)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="275901">Jules Hedges</span> <a href="#narrow/stream/229199-learning.3A-questions/topic/A.20formal.20programming.20category/near/329690308">said</a>:</p>
+<blockquote>
+<p>The fact is that function composition in Haskell just isn't associative. You can literally write 3 functions <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo separator="true">,</mo><mi>g</mi><mo separator="true">,</mo><mi>h</mi></mrow><annotation encoding="application/x-tex">f, g, h</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8889em;vertical-align:-0.1944em;"></span><span class="mord mathnormal" style="margin-right:0.10764em;">f</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal" style="margin-right:0.03588em;">g</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal">h</span></span></span></span> such that <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mi>f</mi><mi mathvariant="normal">.</mi><mi>g</mi><mo stretchy="false">)</mo><mi mathvariant="normal">.</mi><mi>h</mi></mrow><annotation encoding="application/x-tex">(f.g).h</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.10764em;">f</span><span class="mord">.</span><span class="mord mathnormal" style="margin-right:0.03588em;">g</span><span class="mclose">)</span><span class="mord">.</span><span class="mord mathnormal">h</span></span></span></span> and <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mi mathvariant="normal">.</mi><mo stretchy="false">(</mo><mi>g</mi><mi mathvariant="normal">.</mi><mi>h</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">f.(g.h)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.10764em;">f</span><span class="mord">.</span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.03588em;">g</span><span class="mord">.</span><span class="mord mathnormal">h</span><span class="mclose">)</span></span></span></span> are observationally distinguishable</p>
+</blockquote>
+<p>Sounds interesting, what happens?</p>
+
+
+
+<a name="329692275"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/A%20formal%20programming%20category/near/329692275" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Reid Barton <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/topic_A.20formal.20programming.20category.html#329692275">(Feb 23 2023 at 11:27)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="277473">Morgan Rogers (he/him)</span> <a href="#narrow/stream/229199-learning.3A-questions/topic/A.20formal.20programming.20category/near/329688357">said</a>:</p>
+<blockquote>
+<p>Why does <code>seq</code> exist? <span aria-label="upside down" class="emoji emoji-1f643" role="img" title="upside down">:upside_down:</span></p>
+</blockquote>
+<p>I'm not sure how detailed an answer you want, but in short its purpose is to control space usage without having to specialize to specific types. (For specific non-function types you can implement <code>seq</code>, e.g. <code>seq a b = if a == 0 then b else b</code> for <code>a : Integer</code>.)</p>
+
+
+
+<a name="329693234"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/A%20formal%20programming%20category/near/329693234" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Reid Barton <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/topic_A.20formal.20programming.20category.html#329693234">(Feb 23 2023 at 11:31)</a>:</h4>
+<p>I don't think associativity can fail. But presumably it depends on what you mean by "function" and "observationally distinguishable", and I don't have definitions of those.</p>
+
+
+
+<a name="329693690"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/A%20formal%20programming%20category/near/329693690" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Reid Barton <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/topic_A.20formal.20programming.20category.html#329693690">(Feb 23 2023 at 11:33)</a>:</h4>
+<p>For example if the observations include "unsafeCoerce the resulting functions to <code>Ptr</code> and read the heap data structures from C" then I agree that associativity can fail.</p>
+
+
+
+<a name="329693785"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/A%20formal%20programming%20category/near/329693785" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Davi Sales Barreira <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/topic_A.20formal.20programming.20category.html#329693785">(Feb 23 2023 at 11:33)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="275932">Matteo Capucci (he/him)</span> <a href="#narrow/stream/229199-learning.3A-questions/topic/A.20formal.20programming.20category/near/329659452">said</a>:</p>
+<blockquote>
+<p>Another very important fact distinguishing actual programming languages from their idealized version in <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="bold">S</mi><mi mathvariant="bold">e</mi><mi mathvariant="bold">t</mi></mrow><annotation encoding="application/x-tex">\bf Set</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6861em;"></span><span class="mord"><span class="mord mathbf">Set</span></span></span></span></span> is extensionality. Two functions with the same extensional beh aviour (computing equal values from equal inputs) might still be wildly different programs. In Set, this difference is not even expressible since functions are just input-output pairs so extensional equality is all you have...</p>
+</blockquote>
+<p>Agree. Julia is too complex and not functional enough to pacakge as such a simple category as Set. My idea is to indeed consider it as a simplification, as <span class="user-mention" data-user-id="275901">@Jules Hedges</span>  suggested.</p>
+<p>Here is what I wrote:<br>
+"As we’ve pointed out, Julia does not enforce functions to be pure or referentially transparent.<br>
+Julia also does check if two composing functions match input and output types. Thus, this<br>
+is left for us programmers to enforce. If the functions we define follow these theoretical<br>
+assumptions (i.e. our functions are pure, referentially transparent, terminate, and only<br>
+compose with functions that match domain and codomain), then we can assume that we are<br>
+working in the category Prog."</p>
+<p>Yet, I think the above might still not actually true.</p>
+
+
+
+<a name="329694398"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/A%20formal%20programming%20category/near/329694398" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Davi Sales Barreira <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/topic_A.20formal.20programming.20category.html#329694398">(Feb 23 2023 at 11:35)</a>:</h4>
+<p>Here is another take. This one is from Awodey's book.<br>
+<a href="/user_uploads/21317/b0d4_vWcknU4Mh1OC_J44Wta/image.png">image.png</a> <br>
+<a href="/user_uploads/21317/JOJr6nneuiSYqFymEHevxC-t/image.png">image.png</a> </p>
+<div class="message_inline_image"><a href="/user_uploads/21317/b0d4_vWcknU4Mh1OC_J44Wta/image.png" title="image.png"><img src="/user_uploads/21317/b0d4_vWcknU4Mh1OC_J44Wta/image.png"></a></div><div class="message_inline_image"><a href="/user_uploads/21317/JOJr6nneuiSYqFymEHevxC-t/image.png" title="image.png"><img src="/user_uploads/21317/JOJr6nneuiSYqFymEHevxC-t/image.png"></a></div><p>This is the only thing he says on the subject. I was wondering where I could find the more detailed explanation for this.</p>
+
+
+
+<a name="329695514"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/A%20formal%20programming%20category/near/329695514" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Morgan Rogers (he/him) <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/topic_A.20formal.20programming.20category.html#329695514">(Feb 23 2023 at 11:42)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="276480">Reid Barton</span> <a href="#narrow/stream/229199-learning.3A-questions/topic/A.20formal.20programming.20category/near/329678469">said</a>:</p>
+<blockquote>
+<p>Because <code>seq f b</code> cannot compute <code>f x</code> for all possible <code>x</code>, to see if they are all <code>undefined</code>.</p>
+</blockquote>
+<p>It's just occurred to me that this is a strange interpretation. Why should "undefined" for a function type coincide with the function which everywhere takes the value "undefined"? The latter has an explicit definition, after all.</p>
+
+
+
+<a name="329695896"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/A%20formal%20programming%20category/near/329695896" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Reid Barton <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/topic_A.20formal.20programming.20category.html#329695896">(Feb 23 2023 at 11:44)</a>:</h4>
+<p>Well, in any event, they don't coincide in Haskell.</p>
+
+
+
+<a name="329697165"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/A%20formal%20programming%20category/near/329697165" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Morgan Rogers (he/him) <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/topic_A.20formal.20programming.20category.html#329697165">(Feb 23 2023 at 11:49)</a>:</h4>
+<p>I now realise that this is what you were saying in the line preceding what I quoted. But then why should <code>undefined . id = \ x . undefined</code>?</p>
+
+
+
+<a name="329697367"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/A%20formal%20programming%20category/near/329697367" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Reid Barton <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/topic_A.20formal.20programming.20category.html#329697367">(Feb 23 2023 at 11:50)</a>:</h4>
+<p>Because <code>f . g = \x -&gt; f (g x)</code></p>
+
+
+
+<a name="329697615"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/A%20formal%20programming%20category/near/329697615" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Jules Hedges <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/topic_A.20formal.20programming.20category.html#329697615">(Feb 23 2023 at 11:51)</a>:</h4>
+<p>I still don't think that's true. With type annotations your equation is <code>(undefined :: a -&gt; b) . (id :: a -&gt; a) = \(x :: a) . (undefined :: b)</code> which I don't think is true</p>
+
+
+
+<a name="329697799"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/A%20formal%20programming%20category/near/329697799" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Reid Barton <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/topic_A.20formal.20programming.20category.html#329697799">(Feb 23 2023 at 11:52)</a>:</h4>
+<p>It is true</p>
+
+
+
+<a name="329698003"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/A%20formal%20programming%20category/near/329698003" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Jules Hedges <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/topic_A.20formal.20programming.20category.html#329698003">(Feb 23 2023 at 11:53)</a>:</h4>
+<p>Side comment: Lots of fun stuff that became folkloric about ways to make Haskell go wrong are in Oleg's blog. For example you can get up to shenanigans by throwing an exception from a pure function using <code>error</code> (which probably ought to be tagged <code>unsafe</code> but isn't) and catching it using the proper IO exception mechanism: <a href="https://okmij.org/ftp/Haskell/#observe-strictness">https://okmij.org/ftp/Haskell/#observe-strictness</a></p>
+
+
+
+<a name="329698008"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/A%20formal%20programming%20category/near/329698008" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Dylan Braithwaite <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/topic_A.20formal.20programming.20category.html#329698008">(Feb 23 2023 at 11:53)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="498398">Davi Sales Barreira</span> <a href="#narrow/stream/229199-learning.3A-questions/topic/A.20formal.20programming.20category/near/329694398">said</a>:</p>
+<blockquote>
+<p>Here is another take. This one is from Awodey's book.<br>
+<a href="/user_uploads/21317/b0d4_vWcknU4Mh1OC_J44Wta/image.png">image.png</a> <br>
+<a href="/user_uploads/21317/JOJr6nneuiSYqFymEHevxC-t/image.png">image.png</a> </p>
+<p>This is the only thing he says on the subject. I was wondering where I could find the more detailed explanation for this.</p>
+</blockquote>
+<p>The difficulty here is that Awodey’s example is slightly oversimplified. It isn’t always obvious what it should mean to compose two programs by applying one to the other. For example if your morphisms are genuinely just pieces of programming language syntax and you say <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>∘</mo><mi>g</mi></mrow><annotation encoding="application/x-tex">f \circ g</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8889em;vertical-align:-0.1944em;"></span><span class="mord mathnormal" style="margin-right:0.10764em;">f</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">∘</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.625em;vertical-align:-0.1944em;"></span><span class="mord mathnormal" style="margin-right:0.03588em;">g</span></span></span></span> is defined as the function <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>λ</mi><mi>x</mi><mtext> </mtext><mi mathvariant="normal">.</mi><mtext> </mtext><mi>f</mi><mo stretchy="false">(</mo><mi>g</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">\lambda x\ .\ f (g (x))</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal">λ</span><span class="mord mathnormal">x</span><span class="mspace"> </span><span class="mord">.</span><span class="mspace"> </span><span class="mord mathnormal" style="margin-right:0.10764em;">f</span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.03588em;">g</span><span class="mopen">(</span><span class="mord mathnormal">x</span><span class="mclose">))</span></span></span></span>, then you don’t strictly satisfy the identity rule for a category. <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>λ</mi><mi>x</mi><mtext> </mtext><mi mathvariant="normal">.</mi><mtext> </mtext><mi>f</mi><mo stretchy="false">(</mo><mi>i</mi><mi>d</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">\lambda x\ .\ f (id (x))</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal">λ</span><span class="mord mathnormal">x</span><span class="mspace"> </span><span class="mord">.</span><span class="mspace"> </span><span class="mord mathnormal" style="margin-right:0.10764em;">f</span><span class="mopen">(</span><span class="mord mathnormal">i</span><span class="mord mathnormal">d</span><span class="mopen">(</span><span class="mord mathnormal">x</span><span class="mclose">))</span></span></span></span> is not exactly equal as a string of characters to <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi></mrow><annotation encoding="application/x-tex">f</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8889em;vertical-align:-0.1944em;"></span><span class="mord mathnormal" style="margin-right:0.10764em;">f</span></span></span></span>.</p>
+<p>To make this work you need to expand what it means for two morphisms to be equal. Usually this is done by defining types of equivalence like <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>λ</mi><mi>x</mi><mtext> </mtext><mi mathvariant="normal">.</mi><mtext> </mtext><mi>f</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>≅</mo><mi>f</mi></mrow><annotation encoding="application/x-tex">\lambda x \ .\ f (x) \cong f</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal">λ</span><span class="mord mathnormal">x</span><span class="mspace"> </span><span class="mord">.</span><span class="mspace"> </span><span class="mord mathnormal" style="margin-right:0.10764em;">f</span><span class="mopen">(</span><span class="mord mathnormal">x</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">≅</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.8889em;vertical-align:-0.1944em;"></span><span class="mord mathnormal" style="margin-right:0.10764em;">f</span></span></span></span>. This gets you something that would be called a “syntactic category”. But Haskell is such a complicated language that to iron out all of the obstructions like this is a complicated task. And by the time you are done the category you have left might be different to the way that people informally think of <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="bold">H</mi><mi mathvariant="bold">a</mi><mi mathvariant="bold">s</mi><mi mathvariant="bold">k</mi></mrow><annotation encoding="application/x-tex">\mathbf{Hask}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord"><span class="mord mathbf">Hask</span></span></span></span></span>.</p>
+
+
+
+<a name="329699181"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/A%20formal%20programming%20category/near/329699181" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Davi Sales Barreira <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/topic_A.20formal.20programming.20category.html#329699181">(Feb 23 2023 at 11:59)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="378472">Dylan Braithwaite</span> <a href="#narrow/stream/229199-learning.3A-questions/topic/A.20formal.20programming.20category/near/329698008">said</a>:</p>
+<blockquote>
+<p><span class="user-mention silent" data-user-id="498398">Davi Sales Barreira</span> <a href="#narrow/stream/229199-learning.3A-questions/topic/A.20formal.20programming.20category/near/329694398">said</a>:</p>
+<blockquote>
+<p>Here is another take. This one is from Awodey's book.<br>
+<a href="/user_uploads/21317/b0d4_vWcknU4Mh1OC_J44Wta/image.png">image.png</a> <br>
+<a href="/user_uploads/21317/JOJr6nneuiSYqFymEHevxC-t/image.png">image.png</a> </p>
+<p>This is the only thing he says on the subject. I was wondering where I could find the more detailed explanation for this.</p>
+</blockquote>
+<p>The difficulty here is that Awodey’s example is slightly oversimplified. It isn’t always obvious what it should mean to compose two programs by applying one to the other. For example if your morphisms are genuinely just pieces of programming language syntax and you say <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>∘</mo><mi>g</mi></mrow><annotation encoding="application/x-tex">f \circ g</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8889em;vertical-align:-0.1944em;"></span><span class="mord mathnormal" style="margin-right:0.10764em;">f</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">∘</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.625em;vertical-align:-0.1944em;"></span><span class="mord mathnormal" style="margin-right:0.03588em;">g</span></span></span></span> is defined as the function <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>λ</mi><mi>x</mi><mtext> </mtext><mi mathvariant="normal">.</mi><mtext> </mtext><mi>f</mi><mo stretchy="false">(</mo><mi>g</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">\lambda x\ .\ f (g (x))</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal">λ</span><span class="mord mathnormal">x</span><span class="mspace"> </span><span class="mord">.</span><span class="mspace"> </span><span class="mord mathnormal" style="margin-right:0.10764em;">f</span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.03588em;">g</span><span class="mopen">(</span><span class="mord mathnormal">x</span><span class="mclose">))</span></span></span></span>, then you don’t strictly satisfy the identity rule for a category. <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>λ</mi><mi>x</mi><mtext> </mtext><mi mathvariant="normal">.</mi><mtext> </mtext><mi>f</mi><mo stretchy="false">(</mo><mi>i</mi><mi>d</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">\lambda x\ .\ f (id (x))</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal">λ</span><span class="mord mathnormal">x</span><span class="mspace"> </span><span class="mord">.</span><span class="mspace"> </span><span class="mord mathnormal" style="margin-right:0.10764em;">f</span><span class="mopen">(</span><span class="mord mathnormal">i</span><span class="mord mathnormal">d</span><span class="mopen">(</span><span class="mord mathnormal">x</span><span class="mclose">))</span></span></span></span> is not exactly equal as a string of characters to <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi></mrow><annotation encoding="application/x-tex">f</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8889em;vertical-align:-0.1944em;"></span><span class="mord mathnormal" style="margin-right:0.10764em;">f</span></span></span></span>.</p>
+<p>To make this work you need to expand what it means for two morphisms to be equal. Usually this is done by defining types of equivalence like <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>λ</mi><mi>x</mi><mtext> </mtext><mi mathvariant="normal">.</mi><mtext> </mtext><mi>f</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>≅</mo><mi>f</mi></mrow><annotation encoding="application/x-tex">\lambda x \ .\ f (x) \cong f</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal">λ</span><span class="mord mathnormal">x</span><span class="mspace"> </span><span class="mord">.</span><span class="mspace"> </span><span class="mord mathnormal" style="margin-right:0.10764em;">f</span><span class="mopen">(</span><span class="mord mathnormal">x</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">≅</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.8889em;vertical-align:-0.1944em;"></span><span class="mord mathnormal" style="margin-right:0.10764em;">f</span></span></span></span>. This gets you something that would be called a “syntactic category”. But Haskell is such a complicated language that to iron out all of the obstructions like this is a complicated task. And by the time you are done the category you have left might be different to the way that people informally think of <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="bold">H</mi><mi mathvariant="bold">a</mi><mi mathvariant="bold">s</mi><mi mathvariant="bold">k</mi></mrow><annotation encoding="application/x-tex">\mathbf{Hask}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord"><span class="mord mathbf">Hask</span></span></span></span></span>.</p>
+</blockquote>
+<p>Thanks Dylan. I was wondering if there is an encompassing definition somewhere that properly defines this category of programming. I mean, I have no problem in saying that a certain language is not actually a Category due to extra stuff. I actually intend to work with simplifying assumptions such as claimming that two functions that return the same values for the same input are the same.</p>
+
+
+
+<a name="329700013"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/A%20formal%20programming%20category/near/329700013" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Dylan Braithwaite <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/topic_A.20formal.20programming.20category.html#329700013">(Feb 23 2023 at 12:03)</a>:</h4>
+<p>The other bit of that passage was about how once you have a syntactic category, you can take functors on it as giving ‘interpretations’ of your programs in different categories. Although it is hard to make this formal for Haskell or Julia, I think it would be fairly uncontroversial to say that functions you write in Julia under the list of pretty restrictive assumptions you gave correspond to certain morphisms of <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="bold">S</mi><mi mathvariant="bold">e</mi><mi mathvariant="bold">t</mi></mrow><annotation encoding="application/x-tex">\mathbf{Set}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6861em;"></span><span class="mord"><span class="mord mathbf">Set</span></span></span></span></span></p>
+
+
+
+<a name="329700857"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/A%20formal%20programming%20category/near/329700857" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Dylan Braithwaite <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/topic_A.20formal.20programming.20category.html#329700857">(Feb 23 2023 at 12:07)</a>:</h4>
+<p>There isn’t a general ‘programming’ category because there are lots ways for programming languages to work, and they might work in contradictory ways. However if you have a presentation of the types and basic term constructions you care about in your language you can construct a <a href="https://ncatlab.org/nlab/show/syntactic%20category">[[syntactic category]]</a> over that.</p>
+
+
+
+<a name="329701904"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/A%20formal%20programming%20category/near/329701904" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Morgan Rogers (he/him) <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/topic_A.20formal.20programming.20category.html#329701904">(Feb 23 2023 at 12:13)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="276480">Reid Barton</span> <a href="#narrow/stream/229199-learning.3A-questions/topic/A.20formal.20programming.20category/near/329697367">said</a>:</p>
+<blockquote>
+<p>Because <code>f . g = \x -&gt; f (g x)</code></p>
+</blockquote>
+<p>For the unary case, a consistent convention would be <code>f = \x . f(x)</code>, but that isn't universal, as witnessed by <code>undefined</code>. So does Haskell just fail to be a category because the conventions on functions are inconsistent? For instance, if I instead identified any expression involving <code>undefined :: a -&gt; b</code> to also be <code>undefined</code> of the relevant type, would that resolve the issue with <code>seq</code>? (I'm aware that Haskell already has this conflict built in, so this is just a hypothetical)</p>
+
+
+
+<a name="329702689"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/A%20formal%20programming%20category/near/329702689" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Reid Barton <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/topic_A.20formal.20programming.20category.html#329702689">(Feb 23 2023 at 12:17)</a>:</h4>
+<p>I'm not sure I understand the question, but certainly it's an essential aspect of Haskell that <code>fst (3, undefined) = 3</code> and not <code>undefined</code>, no matter what type the <code>undefined</code> is at</p>
+
+
+
+<a name="329703031"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/A%20formal%20programming%20category/near/329703031" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Reid Barton <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/topic_A.20formal.20programming.20category.html#329703031">(Feb 23 2023 at 12:18)</a>:</h4>
+<p>By the way, there are various ways to fix the unit law, for example by making the composition more strict, or restricting morphisms to functions that are already lambdas.</p>
+
+
+
+<a name="329703300"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/A%20formal%20programming%20category/near/329703300" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Jules Hedges <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/topic_A.20formal.20programming.20category.html#329703300">(Feb 23 2023 at 12:20)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="276480">Reid Barton</span> <a href="#narrow/stream/229199-learning.3A-questions/topic/A.20formal.20programming.20category/near/329702689">said</a>:</p>
+<blockquote>
+<p>I'm not sure I understand the question, but certainly it's an essential aspect of Haskell that <code>fst (3, undefined) = 3</code> and not <code>undefined</code>, no matter what type the <code>undefined</code> is at</p>
+</blockquote>
+<p>Slightly more subtly, <code>undefined :: (a, b)</code> and <code>(undefined :: a, undefined :: b)</code> are different, since they are distinguished by the pattern <code>(_, _)</code></p>
+
+
+
+<a name="329704103"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/A%20formal%20programming%20category/near/329704103" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Morgan Rogers (he/him) <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/topic_A.20formal.20programming.20category.html#329704103">(Feb 23 2023 at 12:24)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="276480">Reid Barton</span> <a href="#narrow/stream/229199-learning.3A-questions/topic/A.20formal.20programming.20category/near/329702689">said</a>:</p>
+<blockquote>
+<p>I'm not sure I understand the question, but certainly it's an essential aspect of Haskell that <code>fst (3, undefined) = 3</code> and not <code>undefined</code>, no matter what type the <code>undefined</code> is at</p>
+</blockquote>
+<p>But is <code>snd (3,undefined) = undefined</code> or <code>\x. undefined</code>?</p>
+
+
+
+<a name="329704156"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/A%20formal%20programming%20category/near/329704156" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Reid Barton <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/topic_A.20formal.20programming.20category.html#329704156">(Feb 23 2023 at 12:24)</a>:</h4>
+<p>The former</p>
+
+
+
+<a name="329704662"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/A%20formal%20programming%20category/near/329704662" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Morgan Rogers (he/him) <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/topic_A.20formal.20programming.20category.html#329704662">(Feb 23 2023 at 12:27)</a>:</h4>
+<p>So <code>snd</code> is not treated like a function in Haskell... This discussion is giving me a lot of insight into the ways in which Haskell was not designed categorically!</p>
+
+
+
+<a name="329704735"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/A%20formal%20programming%20category/near/329704735" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Reid Barton <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/topic_A.20formal.20programming.20category.html#329704735">(Feb 23 2023 at 12:27)</a>:</h4>
+<p>Huh? <code>snd</code> is a function</p>
+
+
+
+<a name="329704810"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/A%20formal%20programming%20category/near/329704810" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Reid Barton <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/topic_A.20formal.20programming.20category.html#329704810">(Feb 23 2023 at 12:27)</a>:</h4>
+<p>And it satisfies <code>snd (x, y) = y</code> for all <code>x</code>, <code>y</code>.</p>
+
+
+
+<a name="329705063"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/A%20formal%20programming%20category/near/329705063" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Reid Barton <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/topic_A.20formal.20programming.20category.html#329705063">(Feb 23 2023 at 12:28)</a>:</h4>
+<p>It's just <code>f = \x -&gt; f x</code> that doesn't hold.</p>
+
+
+
+<a name="329705151"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/A%20formal%20programming%20category/near/329705151" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Morgan Rogers (he/him) <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/topic_A.20formal.20programming.20category.html#329705151">(Feb 23 2023 at 12:29)</a>:</h4>
+<p>Then why isn't <code>snd (3,undefined) = \x . snd(3(x),undefined(x)) = \x . undefined</code>? You told me before that this is how composition works</p>
+
+
+
+<a name="329705181"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/A%20formal%20programming%20category/near/329705181" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Reid Barton <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/topic_A.20formal.20programming.20category.html#329705181">(Feb 23 2023 at 12:29)</a>:</h4>
+<p>I am very confused</p>
+
+
+
+<a name="329705204"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/A%20formal%20programming%20category/near/329705204" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Reid Barton <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/topic_A.20formal.20programming.20category.html#329705204">(Feb 23 2023 at 12:29)</a>:</h4>
+<p>What does <code>.</code> mean to you?</p>
+
+
+
+<a name="329705359"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/A%20formal%20programming%20category/near/329705359" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Reid Barton <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/topic_A.20formal.20programming.20category.html#329705359">(Feb 23 2023 at 12:30)</a>:</h4>
+<p>You're using it to mark the body of the lambda right? That's sort of confusing in Haskell because <code>.</code> is the function composition operation</p>
+
+
+
+<a name="329705397"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/A%20formal%20programming%20category/near/329705397" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Morgan Rogers (he/him) <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/topic_A.20formal.20programming.20category.html#329705397">(Feb 23 2023 at 12:30)</a>:</h4>
+<p>Based on what you're writing, I should be writing <code>\x -&gt; f x</code></p>
+
+
+
+<a name="329705530"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/A%20formal%20programming%20category/near/329705530" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Reid Barton <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/topic_A.20formal.20programming.20category.html#329705530">(Feb 23 2023 at 12:31)</a>:</h4>
+<blockquote>
+<p><code>snd (3,undefined) = \x . snd(3(x),undefined(x))</code></p>
+</blockquote>
+<p><code>3</code> is probably an <code>Integer</code> or something and not a function; I don't understand where this equation came from</p>
+
+
+
+<a name="329705560"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/A%20formal%20programming%20category/near/329705560" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Morgan Rogers (he/him) <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/topic_A.20formal.20programming.20category.html#329705560">(Feb 23 2023 at 12:31)</a>:</h4>
+<p>So the distinction is that even though <code>snd</code> is a function, <code>snd (f, g)</code> is not <code>snd . (f, g)</code>?</p>
+
+
+
+<a name="329705579"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/A%20formal%20programming%20category/near/329705579" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Reid Barton <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/topic_A.20formal.20programming.20category.html#329705579">(Feb 23 2023 at 12:31)</a>:</h4>
+<p>Aha</p>
+
+
+
+<a name="329705596"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/A%20formal%20programming%20category/near/329705596" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Reid Barton <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/topic_A.20formal.20programming.20category.html#329705596">(Feb 23 2023 at 12:31)</a>:</h4>
+<p><code>f x</code> means "<code>f</code> applied to <code>x</code>"</p>
+
+
+
+<a name="329705623"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/A%20formal%20programming%20category/near/329705623" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Reid Barton <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/topic_A.20formal.20programming.20category.html#329705623">(Feb 23 2023 at 12:31)</a>:</h4>
+<p>Maybe that is the starting point.</p>
+
+
+
+<a name="329705810"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/A%20formal%20programming%20category/near/329705810" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Reid Barton <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/topic_A.20formal.20programming.20category.html#329705810">(Feb 23 2023 at 12:32)</a>:</h4>
+<p>Composition is <code>.</code>.</p>
+
+
+
+<a name="329705902"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/A%20formal%20programming%20category/near/329705902" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Reid Barton <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/topic_A.20formal.20programming.20category.html#329705902">(Feb 23 2023 at 12:32)</a>:</h4>
+<p><code>(f, g)</code> is an ordered pair, so it wouldn't make sense to compose it with anything anyways.</p>
+
+
+
+<a name="329706176"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/A%20formal%20programming%20category/near/329706176" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Reid Barton <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/topic_A.20formal.20programming.20category.html#329706176">(Feb 23 2023 at 12:34)</a>:</h4>
+<p><code>f x</code> for function application is pretty standard in ML derivatives, so I forgot it might be unfamiliar.</p>
+
+
+
+<a name="329706203"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/A%20formal%20programming%20category/near/329706203" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Morgan Rogers (he/him) <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/topic_A.20formal.20programming.20category.html#329706203">(Feb 23 2023 at 12:34)</a>:</h4>
+<p>I think my confusion is coming from not distinguishing terms from values</p>
+
+
+
+<a name="329706497"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/A%20formal%20programming%20category/near/329706497" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Reid Barton <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/topic_A.20formal.20programming.20category.html#329706497">(Feb 23 2023 at 12:35)</a>:</h4>
+<p>I would suggest not trying to force things into a categorical viewpoint too much. In particular terms/values are not morphisms from the terminal object or anything, they are just terms.</p>
+
+
+
+<a name="329706632"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/A%20formal%20programming%20category/near/329706632" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Jules Hedges <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/topic_A.20formal.20programming.20category.html#329706632">(Feb 23 2023 at 12:36)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="276480">Reid Barton</span> <a href="#narrow/stream/229199-learning.3A-questions/topic/A.20formal.20programming.20category/near/329705063">said</a>:</p>
+<blockquote>
+<p>It's just <code>f = \x -&gt; f x</code> that doesn't hold.</p>
+</blockquote>
+<p>I'm not very surprised to learn this, but I can't think of a context to distinguish them, do you know how to do it?</p>
+
+
+
+<a name="329706721"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/A%20formal%20programming%20category/near/329706721" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Morgan Rogers (he/him) <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/topic_A.20formal.20programming.20category.html#329706721">(Feb 23 2023 at 12:36)</a>:</h4>
+<p>Making the distinction, I could refine what I said previously to taking the convention <code>undefined . f = undefined</code> instead of defining composition universally via the lambda expression seems to fix the problem?</p>
+
+
+
+<a name="329707578"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/A%20formal%20programming%20category/near/329707578" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Reid Barton <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/topic_A.20formal.20programming.20category.html#329707578">(Feb 23 2023 at 12:41)</a>:</h4>
+<p>Yes, you can do this (I think you had better do it for <code>f . undefined</code> too, to get the other unit law as well) and you can even implement it in Haskell... using <code>seq</code>!</p>
+
+
+
+<a name="329707944"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/A%20formal%20programming%20category/near/329707944" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Morgan Rogers (he/him) <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/topic_A.20formal.20programming.20category.html#329707944">(Feb 23 2023 at 12:42)</a>:</h4>
+<p>So to return to the original question, is that the adaptation that allows one to construct categorical semantics for Haskell?</p>
+
+
+
+<a name="329708098"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/A%20formal%20programming%20category/near/329708098" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Jules Hedges <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/topic_A.20formal.20programming.20category.html#329708098">(Feb 23 2023 at 12:43)</a>:</h4>
+<p>Just for fun (making Haskell go wrong is a sort of hobby), you can also break these equations by using the fact that you have multiple undefined values other than <code>undefined</code> that you can observationally distinguish<br>
+<a href="/user_uploads/21317/hjTyx2bc-HvEG41V56AxaoXg/Screenshot-2023-02-23-at-12.42.34-pm.png">Screenshot-2023-02-23-at-12.42.34-pm.png</a></p>
+<div class="message_inline_image"><a href="/user_uploads/21317/hjTyx2bc-HvEG41V56AxaoXg/Screenshot-2023-02-23-at-12.42.34-pm.png" title="Screenshot-2023-02-23-at-12.42.34-pm.png"><img src="/user_uploads/21317/hjTyx2bc-HvEG41V56AxaoXg/Screenshot-2023-02-23-at-12.42.34-pm.png"></a></div>
+
+
+
+<a name="329708342"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/A%20formal%20programming%20category/near/329708342" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Morgan Rogers (he/him) <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/topic_A.20formal.20programming.20category.html#329708342">(Feb 23 2023 at 12:44)</a>:</h4>
+<p>"ohnoes" is a high quality name for an error</p>
+
+
+
+<a name="329708963"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/A%20formal%20programming%20category/near/329708963" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Reid Barton <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/topic_A.20formal.20programming.20category.html#329708963">(Feb 23 2023 at 12:47)</a>:</h4>
+<p>Doing something like this is necessary to fix associativity... but what's <em>really</em> missing is a formal definition in the first place. It will involve some choices (e.g. do I have exceptions in addition to non-termination, and can I tell them apart), and a lot of writing-things-down work.</p>
+
+
+
+<a name="329709287"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/A%20formal%20programming%20category/near/329709287" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Reid Barton <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/topic_A.20formal.20programming.20category.html#329709287">(Feb 23 2023 at 12:48)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="275901">Jules Hedges</span> <a href="#narrow/stream/229199-learning.3A-questions/topic/A.20formal.20programming.20category/near/329706632">said</a>:</p>
+<blockquote>
+<p><span class="user-mention silent" data-user-id="276480">Reid Barton</span> <a href="#narrow/stream/229199-learning.3A-questions/topic/A.20formal.20programming.20category/near/329705063">said</a>:</p>
+<blockquote>
+<p>It's just <code>f = \x -&gt; f x</code> that doesn't hold.</p>
+</blockquote>
+<p>I'm not very surprised to learn this, but I can't think of a context to distinguish them, do you know how to do it?</p>
+</blockquote>
+<p>It's exactly this <code>seq undefined</code> on functions: <code>seq undefined z = undefined</code> but <code>seq (\ x -&gt; undefined x) z = z</code>.</p>
+
+
+
+<a name="329774029"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/A%20formal%20programming%20category/near/329774029" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Xuanrui Qi <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/topic_A.20formal.20programming.20category.html#329774029">(Feb 23 2023 at 17:08)</a>:</h4>
+<p>It is known that many typed lambda calculi form categories this way (called syntactic categories). Well, STLC surely does. But then you have to do weird and dangerous things with <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>β</mi><mi>η</mi></mrow><annotation encoding="application/x-tex">\beta\eta</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8889em;vertical-align:-0.1944em;"></span><span class="mord mathnormal" style="margin-right:0.05278em;">β</span><span class="mord mathnormal" style="margin-right:0.03588em;">η</span></span></span></span>-equivalence.</p>
+
+
+
 {% endraw %}
 
-<hr><p>Last updated: Feb 23 2023 at 00:46 UTC</p>
+<hr><p>Last updated: Feb 24 2023 at 00:47 UTC</p>

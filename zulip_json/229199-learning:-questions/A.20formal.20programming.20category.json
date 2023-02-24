@@ -40,5 +40,419 @@
         "id": 329486265,
         "sender_full_name": "Davi Sales Barreira",
         "timestamp": 1677086591
+    },
+    {
+        "content": "<p>The question is hugely dependent on the language you're working with and on its semantics, as Dylan pointed out via Bauer</p>",
+        "id": 329658706,
+        "sender_full_name": "Matteo Capucci (he/him)",
+        "timestamp": 1677142499
+    },
+    {
+        "content": "<p>At a very superficial level is ok to think of functions in a programming language as encoding functions in <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"bold\">S</mi><mi mathvariant=\"bold\">e</mi><mi mathvariant=\"bold\">t</mi></mrow><annotation encoding=\"application/x-tex\">\\bf Set</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6861em;\"></span><span class=\"mord\"><span class=\"mord mathbf\">Set</span></span></span></span></span>. But as soon as you actually look into it this stops making sense very quickly, because of shared contexts, non-termination and a myriad of other corner cases. I expect a language like Julia to have a pretty involved semantics if you want to be fully rigorous about it.</p>",
+        "id": 329659140,
+        "sender_full_name": "Matteo Capucci (he/him)",
+        "timestamp": 1677142606
+    },
+    {
+        "content": "<p>Another very important fact distinguishing actual programming languages from their idealized version in <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"bold\">S</mi><mi mathvariant=\"bold\">e</mi><mi mathvariant=\"bold\">t</mi></mrow><annotation encoding=\"application/x-tex\">\\bf Set</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6861em;\"></span><span class=\"mord\"><span class=\"mord mathbf\">Set</span></span></span></span></span> is extensionality. Two functions with the same extensional beh aviour (computing equal values from equal inputs) might still be wildly different programs. In Set, this difference is not even expressible since functions are just input-output pairs so extensional equality is all you have...</p>",
+        "id": 329659452,
+        "sender_full_name": "Matteo Capucci (he/him)",
+        "timestamp": 1677142708
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"498398\">Davi Sales Barreira</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/A.20formal.20programming.20category/near/329453056\">said</a>:</p>\n<blockquote>\n<p>I know about Hask, but people say that is not an actual category due to problems such as non-terminating functions. Bartoz claims that this can be (sort of) amended by adding a <em>bottom</em> value that belongs to any type. </p>\n</blockquote>\n<p>It's not a technical problem from a category theory point of view that programs can be non-terminating. A category can have partial functions as morphisms (or even far more exotic things). The problem pointed out in the blog post linked by <span class=\"user-mention silent\" data-user-id=\"378472\">Dylan Braithwaite</span> is that:</p>\n<blockquote>\n<p><code>seq undefined () = undefined</code> and <code>seq (undefined . id) () = ()</code>, therefore we do not have <code>undefined . id = undefined</code>.</p>\n</blockquote>\n<p>I don't know the operational definition of \"undefined\"; I wonder if someone could explain why it exhibits this behaviour?</p>",
+        "id": 329676074,
+        "sender_full_name": "Morgan Rogers (he/him)",
+        "timestamp": 1677147267
+    },
+    {
+        "content": "<p>It's more about <code>seq</code>. <code>seq a b</code> is supposed to be undefined if <code>a</code> is, and otherwise return <code>b</code>. In order to make this possible when <code>a</code> is of function type, the function <code>undefined . id = \\ x -&gt; undefined</code> must be different from <code>undefined</code>.</p>",
+        "id": 329678155,
+        "sender_full_name": "Reid Barton",
+        "timestamp": 1677147801
+    },
+    {
+        "content": "<p>Because <code>seq f b</code> cannot compute <code>f x</code> for all possible <code>x</code>, to see if they are all <code>undefined</code>.</p>",
+        "id": 329678469,
+        "sender_full_name": "Reid Barton",
+        "timestamp": 1677147847
+    },
+    {
+        "content": "<p>If <code>seq</code> didn't exist, then the only thing you could do with a function would be to apply it, so you wouldn't be able to distinguish <code>undefined . id</code> and <code>undefined</code>.</p>",
+        "id": 329678843,
+        "sender_full_name": "Reid Barton",
+        "timestamp": 1677147947
+    },
+    {
+        "content": "<p>Or in other words, you wouldn't be able to distinguish <code>\\ x  -&gt; f x</code> and <code>f</code>.</p>",
+        "id": 329678972,
+        "sender_full_name": "Reid Barton",
+        "timestamp": 1677147966
+    },
+    {
+        "content": "<p>My take on this is more computer scientists should talk to physicists, or even better economists, who every day grapple with what it means for squishy reality to <em>be</em> a mathematical object. To pick a famous example you can happily say that physical space <em>is</em> <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msup><mi mathvariant=\"double-struck\">R</mi><mn>3</mn></msup></mrow><annotation encoding=\"application/x-tex\">\\mathbb R^3</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8141em;\"></span><span class=\"mord\"><span class=\"mord mathbb\">R</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.8141em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">3</span></span></span></span></span></span></span></span></span></span></span>, and that works totally fine unless you push your scale too big or too small when the model breaks down. So this isn't a constructive answer, but the correct answer to \"what category corresponds to [real life thing]\" the answer is always \"what do you need it for?\". You can come up with models of nontermination using domain theory or game semantics or operational semantics or whatever, and that works fine as long as you're fine to ignore some <em>other</em> gnarly features of Haskell</p>",
+        "id": 329681422,
+        "sender_full_name": "Jules Hedges",
+        "timestamp": 1677148567
+    },
+    {
+        "content": "<p>I agree generally but one difference is that <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msup><mi mathvariant=\"double-struck\">R</mi><mn>3</mn></msup></mrow><annotation encoding=\"application/x-tex\">\\mathbb{R}^3</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8141em;\"></span><span class=\"mord\"><span class=\"mord mathbb\">R</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.8141em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">3</span></span></span></span></span></span></span></span></span></span></span> definitely is an actual mathematical object, whereas it's not clear what (if anything) \"Hask\" (or \"Prog\") is meant to refer to, <em>in addition</em> to the question of how closely it corresponds to the real world.</p>",
+        "id": 329685465,
+        "sender_full_name": "Reid Barton",
+        "timestamp": 1677149670
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276480\">Reid Barton</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/A.20formal.20programming.20category/near/329678843\">said</a>:</p>\n<blockquote>\n<p>If <code>seq</code> didn't exist, then the only thing you could do with a function would be to apply it, so you wouldn't be able to distinguish <code>undefined . id</code> and <code>undefined</code>.</p>\n</blockquote>\n<p>Why does <code>seq</code> exist? <span aria-label=\"upside down\" class=\"emoji emoji-1f643\" role=\"img\" title=\"upside down\">:upside_down:</span></p>",
+        "id": 329688357,
+        "sender_full_name": "Morgan Rogers (he/him)",
+        "timestamp": 1677150483
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276480\">Reid Barton</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/A.20formal.20programming.20category/near/329685465\">said</a>:</p>\n<blockquote>\n<p>I agree generally but one difference is that <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msup><mi mathvariant=\"double-struck\">R</mi><mn>3</mn></msup></mrow><annotation encoding=\"application/x-tex\">\\mathbb{R}^3</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8141em;\"></span><span class=\"mord\"><span class=\"mord mathbb\">R</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.8141em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">3</span></span></span></span></span></span></span></span></span></span></span> definitely is an actual mathematical object, whereas it's not clear what (if anything) \"Hask\" (or \"Prog\") is meant to refer to, <em>in addition</em> to the question of how closely it corresponds to the real world.</p>\n</blockquote>\n<p>Mostly commonly when people say \"Hask\" they are referring to <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"bold\">S</mi><mi mathvariant=\"bold\">e</mi><mi mathvariant=\"bold\">t</mi></mrow><annotation encoding=\"application/x-tex\">\\mathbf{Set}</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6861em;\"></span><span class=\"mord\"><span class=\"mord mathbf\">Set</span></span></span></span></span>. Sometimes they're referring to something more like <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"bold\">D</mi><mi mathvariant=\"bold\">C</mi><mi mathvariant=\"bold\">P</mi><mi mathvariant=\"bold\">O</mi></mrow><annotation encoding=\"application/x-tex\">\\mathbf{DCPO}</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6861em;\"></span><span class=\"mord\"><span class=\"mord mathbf\">DCPO</span></span></span></span></span></p>",
+        "id": 329689060,
+        "sender_full_name": "Jules Hedges",
+        "timestamp": 1677150698
+    },
+    {
+        "content": "<p>Okay. That seems confusing to me, and it's certainly not what I would mean by Hask--because I would just call those categories Set, respectively DCPO.</p>",
+        "id": 329689194,
+        "sender_full_name": "Reid Barton",
+        "timestamp": 1677150733
+    },
+    {
+        "content": "<p>I suspect that, in practice, people are not referring to anything in particular.</p>",
+        "id": 329689321,
+        "sender_full_name": "Reid Barton",
+        "timestamp": 1677150771
+    },
+    {
+        "content": "<p>It's clearer in a better-behaved language like Agda, where I <em>think</em> the the types and terms literally do form a category</p>",
+        "id": 329689532,
+        "sender_full_name": "Jules Hedges",
+        "timestamp": 1677150837
+    },
+    {
+        "content": "<p>How can the problem with <code>seq</code> possibly be resolved by semantics in other categories? Is <code>seq</code> just ignored? And if so, why can't one do the same thing to directly form a category of Hask types?</p>",
+        "id": 329689903,
+        "sender_full_name": "Morgan Rogers (he/him)",
+        "timestamp": 1677150951
+    },
+    {
+        "content": "<p>The fact is that function composition in Haskell just isn't associative. You can literally write 3 functions <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>f</mi><mo separator=\"true\">,</mo><mi>g</mi><mo separator=\"true\">,</mo><mi>h</mi></mrow><annotation encoding=\"application/x-tex\">f, g, h</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8889em;vertical-align:-0.1944em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.10764em;\">f</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.03588em;\">g</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord mathnormal\">h</span></span></span></span> such that <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"false\">(</mo><mi>f</mi><mi mathvariant=\"normal\">.</mi><mi>g</mi><mo stretchy=\"false\">)</mo><mi mathvariant=\"normal\">.</mi><mi>h</mi></mrow><annotation encoding=\"application/x-tex\">(f.g).h</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mopen\">(</span><span class=\"mord mathnormal\" style=\"margin-right:0.10764em;\">f</span><span class=\"mord\">.</span><span class=\"mord mathnormal\" style=\"margin-right:0.03588em;\">g</span><span class=\"mclose\">)</span><span class=\"mord\">.</span><span class=\"mord mathnormal\">h</span></span></span></span> and <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>f</mi><mi mathvariant=\"normal\">.</mi><mo stretchy=\"false\">(</mo><mi>g</mi><mi mathvariant=\"normal\">.</mi><mi>h</mi><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">f.(g.h)</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.10764em;\">f</span><span class=\"mord\">.</span><span class=\"mopen\">(</span><span class=\"mord mathnormal\" style=\"margin-right:0.03588em;\">g</span><span class=\"mord\">.</span><span class=\"mord mathnormal\">h</span><span class=\"mclose\">)</span></span></span></span> are observationally distinguishable</p>",
+        "id": 329690308,
+        "sender_full_name": "Jules Hedges",
+        "timestamp": 1677151075
+    },
+    {
+        "content": "<p>If you want to pretend that Haskell is a category then you have to ignore language features that cause it to fail, just like how if you want to pretend that the universe is a Euclidean space then you have to ignore physical effects that cause that to fail</p>",
+        "id": 329690574,
+        "sender_full_name": "Jules Hedges",
+        "timestamp": 1677151164
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"275901\">Jules Hedges</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/A.20formal.20programming.20category/near/329690308\">said</a>:</p>\n<blockquote>\n<p>The fact is that function composition in Haskell just isn't associative. You can literally write 3 functions <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>f</mi><mo separator=\"true\">,</mo><mi>g</mi><mo separator=\"true\">,</mo><mi>h</mi></mrow><annotation encoding=\"application/x-tex\">f, g, h</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8889em;vertical-align:-0.1944em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.10764em;\">f</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.03588em;\">g</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord mathnormal\">h</span></span></span></span> such that <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"false\">(</mo><mi>f</mi><mi mathvariant=\"normal\">.</mi><mi>g</mi><mo stretchy=\"false\">)</mo><mi mathvariant=\"normal\">.</mi><mi>h</mi></mrow><annotation encoding=\"application/x-tex\">(f.g).h</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mopen\">(</span><span class=\"mord mathnormal\" style=\"margin-right:0.10764em;\">f</span><span class=\"mord\">.</span><span class=\"mord mathnormal\" style=\"margin-right:0.03588em;\">g</span><span class=\"mclose\">)</span><span class=\"mord\">.</span><span class=\"mord mathnormal\">h</span></span></span></span> and <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>f</mi><mi mathvariant=\"normal\">.</mi><mo stretchy=\"false\">(</mo><mi>g</mi><mi mathvariant=\"normal\">.</mi><mi>h</mi><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">f.(g.h)</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.10764em;\">f</span><span class=\"mord\">.</span><span class=\"mopen\">(</span><span class=\"mord mathnormal\" style=\"margin-right:0.03588em;\">g</span><span class=\"mord\">.</span><span class=\"mord mathnormal\">h</span><span class=\"mclose\">)</span></span></span></span> are observationally distinguishable</p>\n</blockquote>\n<p>Sounds interesting, what happens?</p>",
+        "id": 329691109,
+        "sender_full_name": "Morgan Rogers (he/him)",
+        "timestamp": 1677151331
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"277473\">Morgan Rogers (he/him)</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/A.20formal.20programming.20category/near/329688357\">said</a>:</p>\n<blockquote>\n<p>Why does <code>seq</code> exist? <span aria-label=\"upside down\" class=\"emoji emoji-1f643\" role=\"img\" title=\"upside down\">:upside_down:</span></p>\n</blockquote>\n<p>I'm not sure how detailed an answer you want, but in short its purpose is to control space usage without having to specialize to specific types. (For specific non-function types you can implement <code>seq</code>, e.g. <code>seq a b = if a == 0 then b else b</code> for <code>a : Integer</code>.)</p>",
+        "id": 329692275,
+        "sender_full_name": "Reid Barton",
+        "timestamp": 1677151651
+    },
+    {
+        "content": "<p>I don't think associativity can fail. But presumably it depends on what you mean by \"function\" and \"observationally distinguishable\", and I don't have definitions of those.</p>",
+        "id": 329693234,
+        "sender_full_name": "Reid Barton",
+        "timestamp": 1677151884
+    },
+    {
+        "content": "<p>For example if the observations include \"unsafeCoerce the resulting functions to <code>Ptr</code> and read the heap data structures from C\" then I agree that associativity can fail.</p>",
+        "id": 329693690,
+        "sender_full_name": "Reid Barton",
+        "timestamp": 1677151985
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"275932\">Matteo Capucci (he/him)</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/A.20formal.20programming.20category/near/329659452\">said</a>:</p>\n<blockquote>\n<p>Another very important fact distinguishing actual programming languages from their idealized version in <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"bold\">S</mi><mi mathvariant=\"bold\">e</mi><mi mathvariant=\"bold\">t</mi></mrow><annotation encoding=\"application/x-tex\">\\bf Set</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6861em;\"></span><span class=\"mord\"><span class=\"mord mathbf\">Set</span></span></span></span></span> is extensionality. Two functions with the same extensional beh aviour (computing equal values from equal inputs) might still be wildly different programs. In Set, this difference is not even expressible since functions are just input-output pairs so extensional equality is all you have...</p>\n</blockquote>\n<p>Agree. Julia is too complex and not functional enough to pacakge as such a simple category as Set. My idea is to indeed consider it as a simplification, as <span class=\"user-mention\" data-user-id=\"275901\">@Jules Hedges</span>  suggested.</p>\n<p>Here is what I wrote:<br>\n\"As we’ve pointed out, Julia does not enforce functions to be pure or referentially transparent.<br>\nJulia also does check if two composing functions match input and output types. Thus, this<br>\nis left for us programmers to enforce. If the functions we define follow these theoretical<br>\nassumptions (i.e. our functions are pure, referentially transparent, terminate, and only<br>\ncompose with functions that match domain and codomain), then we can assume that we are<br>\nworking in the category Prog.\"</p>\n<p>Yet, I think the above might still not actually true.</p>",
+        "id": 329693785,
+        "sender_full_name": "Davi Sales Barreira",
+        "timestamp": 1677152017
+    },
+    {
+        "content": "<p>Here is another take. This one is from Awodey's book.<br>\n<a href=\"/user_uploads/21317/b0d4_vWcknU4Mh1OC_J44Wta/image.png\">image.png</a> <br>\n<a href=\"/user_uploads/21317/JOJr6nneuiSYqFymEHevxC-t/image.png\">image.png</a> </p>\n<div class=\"message_inline_image\"><a href=\"/user_uploads/21317/b0d4_vWcknU4Mh1OC_J44Wta/image.png\" title=\"image.png\"><img src=\"/user_uploads/21317/b0d4_vWcknU4Mh1OC_J44Wta/image.png\"></a></div><div class=\"message_inline_image\"><a href=\"/user_uploads/21317/JOJr6nneuiSYqFymEHevxC-t/image.png\" title=\"image.png\"><img src=\"/user_uploads/21317/JOJr6nneuiSYqFymEHevxC-t/image.png\"></a></div><p>This is the only thing he says on the subject. I was wondering where I could find the more detailed explanation for this.</p>",
+        "id": 329694398,
+        "sender_full_name": "Davi Sales Barreira",
+        "timestamp": 1677152146
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276480\">Reid Barton</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/A.20formal.20programming.20category/near/329678469\">said</a>:</p>\n<blockquote>\n<p>Because <code>seq f b</code> cannot compute <code>f x</code> for all possible <code>x</code>, to see if they are all <code>undefined</code>.</p>\n</blockquote>\n<p>It's just occurred to me that this is a strange interpretation. Why should \"undefined\" for a function type coincide with the function which everywhere takes the value \"undefined\"? The latter has an explicit definition, after all.</p>",
+        "id": 329695514,
+        "sender_full_name": "Morgan Rogers (he/him)",
+        "timestamp": 1677152542
+    },
+    {
+        "content": "<p>Well, in any event, they don't coincide in Haskell.</p>",
+        "id": 329695896,
+        "sender_full_name": "Reid Barton",
+        "timestamp": 1677152666
+    },
+    {
+        "content": "<p>I now realise that this is what you were saying in the line preceding what I quoted. But then why should <code>undefined . id = \\ x . undefined</code>?</p>",
+        "id": 329697165,
+        "sender_full_name": "Morgan Rogers (he/him)",
+        "timestamp": 1677152983
+    },
+    {
+        "content": "<p>Because <code>f . g = \\x -&gt; f (g x)</code></p>",
+        "id": 329697367,
+        "sender_full_name": "Reid Barton",
+        "timestamp": 1677153024
+    },
+    {
+        "content": "<p>I still don't think that's true. With type annotations your equation is <code>(undefined :: a -&gt; b) . (id :: a -&gt; a) = \\(x :: a) . (undefined :: b)</code> which I don't think is true</p>",
+        "id": 329697615,
+        "sender_full_name": "Jules Hedges",
+        "timestamp": 1677153115
+    },
+    {
+        "content": "<p>It is true</p>",
+        "id": 329697799,
+        "sender_full_name": "Reid Barton",
+        "timestamp": 1677153173
+    },
+    {
+        "content": "<p>Side comment: Lots of fun stuff that became folkloric about ways to make Haskell go wrong are in Oleg's blog. For example you can get up to shenanigans by throwing an exception from a pure function using <code>error</code> (which probably ought to be tagged <code>unsafe</code> but isn't) and catching it using the proper IO exception mechanism: <a href=\"https://okmij.org/ftp/Haskell/#observe-strictness\">https://okmij.org/ftp/Haskell/#observe-strictness</a></p>",
+        "id": 329698003,
+        "sender_full_name": "Jules Hedges",
+        "timestamp": 1677153238
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"498398\">Davi Sales Barreira</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/A.20formal.20programming.20category/near/329694398\">said</a>:</p>\n<blockquote>\n<p>Here is another take. This one is from Awodey's book.<br>\n<a href=\"/user_uploads/21317/b0d4_vWcknU4Mh1OC_J44Wta/image.png\">image.png</a> <br>\n<a href=\"/user_uploads/21317/JOJr6nneuiSYqFymEHevxC-t/image.png\">image.png</a> </p>\n<p>This is the only thing he says on the subject. I was wondering where I could find the more detailed explanation for this.</p>\n</blockquote>\n<p>The difficulty here is that Awodey’s example is slightly oversimplified. It isn’t always obvious what it should mean to compose two programs by applying one to the other. For example if your morphisms are genuinely just pieces of programming language syntax and you say <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>f</mi><mo>∘</mo><mi>g</mi></mrow><annotation encoding=\"application/x-tex\">f \\circ g</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8889em;vertical-align:-0.1944em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.10764em;\">f</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span><span class=\"mbin\">∘</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.625em;vertical-align:-0.1944em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.03588em;\">g</span></span></span></span> is defined as the function <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>λ</mi><mi>x</mi><mtext> </mtext><mi mathvariant=\"normal\">.</mi><mtext> </mtext><mi>f</mi><mo stretchy=\"false\">(</mo><mi>g</mi><mo stretchy=\"false\">(</mo><mi>x</mi><mo stretchy=\"false\">)</mo><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">\\lambda x\\ .\\ f (g (x))</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord mathnormal\">λ</span><span class=\"mord mathnormal\">x</span><span class=\"mspace\"> </span><span class=\"mord\">.</span><span class=\"mspace\"> </span><span class=\"mord mathnormal\" style=\"margin-right:0.10764em;\">f</span><span class=\"mopen\">(</span><span class=\"mord mathnormal\" style=\"margin-right:0.03588em;\">g</span><span class=\"mopen\">(</span><span class=\"mord mathnormal\">x</span><span class=\"mclose\">))</span></span></span></span>, then you don’t strictly satisfy the identity rule for a category. <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>λ</mi><mi>x</mi><mtext> </mtext><mi mathvariant=\"normal\">.</mi><mtext> </mtext><mi>f</mi><mo stretchy=\"false\">(</mo><mi>i</mi><mi>d</mi><mo stretchy=\"false\">(</mo><mi>x</mi><mo stretchy=\"false\">)</mo><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">\\lambda x\\ .\\ f (id (x))</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord mathnormal\">λ</span><span class=\"mord mathnormal\">x</span><span class=\"mspace\"> </span><span class=\"mord\">.</span><span class=\"mspace\"> </span><span class=\"mord mathnormal\" style=\"margin-right:0.10764em;\">f</span><span class=\"mopen\">(</span><span class=\"mord mathnormal\">i</span><span class=\"mord mathnormal\">d</span><span class=\"mopen\">(</span><span class=\"mord mathnormal\">x</span><span class=\"mclose\">))</span></span></span></span> is not exactly equal as a string of characters to <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>f</mi></mrow><annotation encoding=\"application/x-tex\">f</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8889em;vertical-align:-0.1944em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.10764em;\">f</span></span></span></span>.</p>\n<p>To make this work you need to expand what it means for two morphisms to be equal. Usually this is done by defining types of equivalence like <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>λ</mi><mi>x</mi><mtext> </mtext><mi mathvariant=\"normal\">.</mi><mtext> </mtext><mi>f</mi><mo stretchy=\"false\">(</mo><mi>x</mi><mo stretchy=\"false\">)</mo><mo>≅</mo><mi>f</mi></mrow><annotation encoding=\"application/x-tex\">\\lambda x \\ .\\ f (x) \\cong f</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord mathnormal\">λ</span><span class=\"mord mathnormal\">x</span><span class=\"mspace\"> </span><span class=\"mord\">.</span><span class=\"mspace\"> </span><span class=\"mord mathnormal\" style=\"margin-right:0.10764em;\">f</span><span class=\"mopen\">(</span><span class=\"mord mathnormal\">x</span><span class=\"mclose\">)</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">≅</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.8889em;vertical-align:-0.1944em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.10764em;\">f</span></span></span></span>. This gets you something that would be called a “syntactic category”. But Haskell is such a complicated language that to iron out all of the obstructions like this is a complicated task. And by the time you are done the category you have left might be different to the way that people informally think of <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"bold\">H</mi><mi mathvariant=\"bold\">a</mi><mi mathvariant=\"bold\">s</mi><mi mathvariant=\"bold\">k</mi></mrow><annotation encoding=\"application/x-tex\">\\mathbf{Hask}</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6944em;\"></span><span class=\"mord\"><span class=\"mord mathbf\">Hask</span></span></span></span></span>.</p>",
+        "id": 329698008,
+        "sender_full_name": "Dylan Braithwaite",
+        "timestamp": 1677153238
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"378472\">Dylan Braithwaite</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/A.20formal.20programming.20category/near/329698008\">said</a>:</p>\n<blockquote>\n<p><span class=\"user-mention silent\" data-user-id=\"498398\">Davi Sales Barreira</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/A.20formal.20programming.20category/near/329694398\">said</a>:</p>\n<blockquote>\n<p>Here is another take. This one is from Awodey's book.<br>\n<a href=\"/user_uploads/21317/b0d4_vWcknU4Mh1OC_J44Wta/image.png\">image.png</a> <br>\n<a href=\"/user_uploads/21317/JOJr6nneuiSYqFymEHevxC-t/image.png\">image.png</a> </p>\n<p>This is the only thing he says on the subject. I was wondering where I could find the more detailed explanation for this.</p>\n</blockquote>\n<p>The difficulty here is that Awodey’s example is slightly oversimplified. It isn’t always obvious what it should mean to compose two programs by applying one to the other. For example if your morphisms are genuinely just pieces of programming language syntax and you say <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>f</mi><mo>∘</mo><mi>g</mi></mrow><annotation encoding=\"application/x-tex\">f \\circ g</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8889em;vertical-align:-0.1944em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.10764em;\">f</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span><span class=\"mbin\">∘</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.625em;vertical-align:-0.1944em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.03588em;\">g</span></span></span></span> is defined as the function <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>λ</mi><mi>x</mi><mtext> </mtext><mi mathvariant=\"normal\">.</mi><mtext> </mtext><mi>f</mi><mo stretchy=\"false\">(</mo><mi>g</mi><mo stretchy=\"false\">(</mo><mi>x</mi><mo stretchy=\"false\">)</mo><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">\\lambda x\\ .\\ f (g (x))</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord mathnormal\">λ</span><span class=\"mord mathnormal\">x</span><span class=\"mspace\"> </span><span class=\"mord\">.</span><span class=\"mspace\"> </span><span class=\"mord mathnormal\" style=\"margin-right:0.10764em;\">f</span><span class=\"mopen\">(</span><span class=\"mord mathnormal\" style=\"margin-right:0.03588em;\">g</span><span class=\"mopen\">(</span><span class=\"mord mathnormal\">x</span><span class=\"mclose\">))</span></span></span></span>, then you don’t strictly satisfy the identity rule for a category. <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>λ</mi><mi>x</mi><mtext> </mtext><mi mathvariant=\"normal\">.</mi><mtext> </mtext><mi>f</mi><mo stretchy=\"false\">(</mo><mi>i</mi><mi>d</mi><mo stretchy=\"false\">(</mo><mi>x</mi><mo stretchy=\"false\">)</mo><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">\\lambda x\\ .\\ f (id (x))</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord mathnormal\">λ</span><span class=\"mord mathnormal\">x</span><span class=\"mspace\"> </span><span class=\"mord\">.</span><span class=\"mspace\"> </span><span class=\"mord mathnormal\" style=\"margin-right:0.10764em;\">f</span><span class=\"mopen\">(</span><span class=\"mord mathnormal\">i</span><span class=\"mord mathnormal\">d</span><span class=\"mopen\">(</span><span class=\"mord mathnormal\">x</span><span class=\"mclose\">))</span></span></span></span> is not exactly equal as a string of characters to <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>f</mi></mrow><annotation encoding=\"application/x-tex\">f</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8889em;vertical-align:-0.1944em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.10764em;\">f</span></span></span></span>.</p>\n<p>To make this work you need to expand what it means for two morphisms to be equal. Usually this is done by defining types of equivalence like <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>λ</mi><mi>x</mi><mtext> </mtext><mi mathvariant=\"normal\">.</mi><mtext> </mtext><mi>f</mi><mo stretchy=\"false\">(</mo><mi>x</mi><mo stretchy=\"false\">)</mo><mo>≅</mo><mi>f</mi></mrow><annotation encoding=\"application/x-tex\">\\lambda x \\ .\\ f (x) \\cong f</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord mathnormal\">λ</span><span class=\"mord mathnormal\">x</span><span class=\"mspace\"> </span><span class=\"mord\">.</span><span class=\"mspace\"> </span><span class=\"mord mathnormal\" style=\"margin-right:0.10764em;\">f</span><span class=\"mopen\">(</span><span class=\"mord mathnormal\">x</span><span class=\"mclose\">)</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">≅</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.8889em;vertical-align:-0.1944em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.10764em;\">f</span></span></span></span>. This gets you something that would be called a “syntactic category”. But Haskell is such a complicated language that to iron out all of the obstructions like this is a complicated task. And by the time you are done the category you have left might be different to the way that people informally think of <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"bold\">H</mi><mi mathvariant=\"bold\">a</mi><mi mathvariant=\"bold\">s</mi><mi mathvariant=\"bold\">k</mi></mrow><annotation encoding=\"application/x-tex\">\\mathbf{Hask}</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6944em;\"></span><span class=\"mord\"><span class=\"mord mathbf\">Hask</span></span></span></span></span>.</p>\n</blockquote>\n<p>Thanks Dylan. I was wondering if there is an encompassing definition somewhere that properly defines this category of programming. I mean, I have no problem in saying that a certain language is not actually a Category due to extra stuff. I actually intend to work with simplifying assumptions such as claimming that two functions that return the same values for the same input are the same.</p>",
+        "id": 329699181,
+        "sender_full_name": "Davi Sales Barreira",
+        "timestamp": 1677153559
+    },
+    {
+        "content": "<p>The other bit of that passage was about how once you have a syntactic category, you can take functors on it as giving ‘interpretations’ of your programs in different categories. Although it is hard to make this formal for Haskell or Julia, I think it would be fairly uncontroversial to say that functions you write in Julia under the list of pretty restrictive assumptions you gave correspond to certain morphisms of <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"bold\">S</mi><mi mathvariant=\"bold\">e</mi><mi mathvariant=\"bold\">t</mi></mrow><annotation encoding=\"application/x-tex\">\\mathbf{Set}</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6861em;\"></span><span class=\"mord\"><span class=\"mord mathbf\">Set</span></span></span></span></span></p>",
+        "id": 329700013,
+        "sender_full_name": "Dylan Braithwaite",
+        "timestamp": 1677153802
+    },
+    {
+        "content": "<p>There isn’t a general ‘programming’ category because there are lots ways for programming languages to work, and they might work in contradictory ways. However if you have a presentation of the types and basic term constructions you care about in your language you can construct a <a href=\"https://ncatlab.org/nlab/show/syntactic%20category\">[[syntactic category]]</a> over that.</p>",
+        "id": 329700857,
+        "sender_full_name": "Dylan Braithwaite",
+        "timestamp": 1677154077
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276480\">Reid Barton</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/A.20formal.20programming.20category/near/329697367\">said</a>:</p>\n<blockquote>\n<p>Because <code>f . g = \\x -&gt; f (g x)</code></p>\n</blockquote>\n<p>For the unary case, a consistent convention would be <code>f = \\x . f(x)</code>, but that isn't universal, as witnessed by <code>undefined</code>. So does Haskell just fail to be a category because the conventions on functions are inconsistent? For instance, if I instead identified any expression involving <code>undefined :: a -&gt; b</code> to also be <code>undefined</code> of the relevant type, would that resolve the issue with <code>seq</code>? (I'm aware that Haskell already has this conflict built in, so this is just a hypothetical)</p>",
+        "id": 329701904,
+        "sender_full_name": "Morgan Rogers (he/him)",
+        "timestamp": 1677154387
+    },
+    {
+        "content": "<p>I'm not sure I understand the question, but certainly it's an essential aspect of Haskell that <code>fst (3, undefined) = 3</code> and not <code>undefined</code>, no matter what type the <code>undefined</code> is at</p>",
+        "id": 329702689,
+        "sender_full_name": "Reid Barton",
+        "timestamp": 1677154636
+    },
+    {
+        "content": "<p>By the way, there are various ways to fix the unit law, for example by making the composition more strict, or restricting morphisms to functions that are already lambdas.</p>",
+        "id": 329703031,
+        "sender_full_name": "Reid Barton",
+        "timestamp": 1677154736
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276480\">Reid Barton</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/A.20formal.20programming.20category/near/329702689\">said</a>:</p>\n<blockquote>\n<p>I'm not sure I understand the question, but certainly it's an essential aspect of Haskell that <code>fst (3, undefined) = 3</code> and not <code>undefined</code>, no matter what type the <code>undefined</code> is at</p>\n</blockquote>\n<p>Slightly more subtly, <code>undefined :: (a, b)</code> and <code>(undefined :: a, undefined :: b)</code> are different, since they are distinguished by the pattern <code>(_, _)</code></p>",
+        "id": 329703300,
+        "sender_full_name": "Jules Hedges",
+        "timestamp": 1677154809
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276480\">Reid Barton</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/A.20formal.20programming.20category/near/329702689\">said</a>:</p>\n<blockquote>\n<p>I'm not sure I understand the question, but certainly it's an essential aspect of Haskell that <code>fst (3, undefined) = 3</code> and not <code>undefined</code>, no matter what type the <code>undefined</code> is at</p>\n</blockquote>\n<p>But is <code>snd (3,undefined) = undefined</code> or <code>\\x. undefined</code>?</p>",
+        "id": 329704103,
+        "sender_full_name": "Morgan Rogers (he/him)",
+        "timestamp": 1677155068
+    },
+    {
+        "content": "<p>The former</p>",
+        "id": 329704156,
+        "sender_full_name": "Reid Barton",
+        "timestamp": 1677155085
+    },
+    {
+        "content": "<p>So <code>snd</code> is not treated like a function in Haskell... This discussion is giving me a lot of insight into the ways in which Haskell was not designed categorically!</p>",
+        "id": 329704662,
+        "sender_full_name": "Morgan Rogers (he/him)",
+        "timestamp": 1677155243
+    },
+    {
+        "content": "<p>Huh? <code>snd</code> is a function</p>",
+        "id": 329704735,
+        "sender_full_name": "Reid Barton",
+        "timestamp": 1677155256
+    },
+    {
+        "content": "<p>And it satisfies <code>snd (x, y) = y</code> for all <code>x</code>, <code>y</code>.</p>",
+        "id": 329704810,
+        "sender_full_name": "Reid Barton",
+        "timestamp": 1677155271
+    },
+    {
+        "content": "<p>It's just <code>f = \\x -&gt; f x</code> that doesn't hold.</p>",
+        "id": 329705063,
+        "sender_full_name": "Reid Barton",
+        "timestamp": 1677155329
+    },
+    {
+        "content": "<p>Then why isn't <code>snd (3,undefined) = \\x . snd(3(x),undefined(x)) = \\x . undefined</code>? You told me before that this is how composition works</p>",
+        "id": 329705151,
+        "sender_full_name": "Morgan Rogers (he/him)",
+        "timestamp": 1677155361
+    },
+    {
+        "content": "<p>I am very confused</p>",
+        "id": 329705181,
+        "sender_full_name": "Reid Barton",
+        "timestamp": 1677155370
+    },
+    {
+        "content": "<p>What does <code>.</code> mean to you?</p>",
+        "id": 329705204,
+        "sender_full_name": "Reid Barton",
+        "timestamp": 1677155378
+    },
+    {
+        "content": "<p>You're using it to mark the body of the lambda right? That's sort of confusing in Haskell because <code>.</code> is the function composition operation</p>",
+        "id": 329705359,
+        "sender_full_name": "Reid Barton",
+        "timestamp": 1677155416
+    },
+    {
+        "content": "<p>Based on what you're writing, I should be writing <code>\\x -&gt; f x</code></p>",
+        "id": 329705397,
+        "sender_full_name": "Morgan Rogers (he/him)",
+        "timestamp": 1677155425
+    },
+    {
+        "content": "<blockquote>\n<p><code>snd (3,undefined) = \\x . snd(3(x),undefined(x))</code></p>\n</blockquote>\n<p><code>3</code> is probably an <code>Integer</code> or something and not a function; I don't understand where this equation came from</p>",
+        "id": 329705530,
+        "sender_full_name": "Reid Barton",
+        "timestamp": 1677155477
+    },
+    {
+        "content": "<p>So the distinction is that even though <code>snd</code> is a function, <code>snd (f, g)</code> is not <code>snd . (f, g)</code>?</p>",
+        "id": 329705560,
+        "sender_full_name": "Morgan Rogers (he/him)",
+        "timestamp": 1677155486
+    },
+    {
+        "content": "<p>Aha</p>",
+        "id": 329705579,
+        "sender_full_name": "Reid Barton",
+        "timestamp": 1677155492
+    },
+    {
+        "content": "<p><code>f x</code> means \"<code>f</code> applied to <code>x</code>\"</p>",
+        "id": 329705596,
+        "sender_full_name": "Reid Barton",
+        "timestamp": 1677155498
+    },
+    {
+        "content": "<p>Maybe that is the starting point.</p>",
+        "id": 329705623,
+        "sender_full_name": "Reid Barton",
+        "timestamp": 1677155505
+    },
+    {
+        "content": "<p>Composition is <code>.</code>.</p>",
+        "id": 329705810,
+        "sender_full_name": "Reid Barton",
+        "timestamp": 1677155544
+    },
+    {
+        "content": "<p><code>(f, g)</code> is an ordered pair, so it wouldn't make sense to compose it with anything anyways.</p>",
+        "id": 329705902,
+        "sender_full_name": "Reid Barton",
+        "timestamp": 1677155578
+    },
+    {
+        "content": "<p><code>f x</code> for function application is pretty standard in ML derivatives, so I forgot it might be unfamiliar.</p>",
+        "id": 329706176,
+        "sender_full_name": "Reid Barton",
+        "timestamp": 1677155653
+    },
+    {
+        "content": "<p>I think my confusion is coming from not distinguishing terms from values</p>",
+        "id": 329706203,
+        "sender_full_name": "Morgan Rogers (he/him)",
+        "timestamp": 1677155663
+    },
+    {
+        "content": "<p>I would suggest not trying to force things into a categorical viewpoint too much. In particular terms/values are not morphisms from the terminal object or anything, they are just terms.</p>",
+        "id": 329706497,
+        "sender_full_name": "Reid Barton",
+        "timestamp": 1677155750
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276480\">Reid Barton</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/A.20formal.20programming.20category/near/329705063\">said</a>:</p>\n<blockquote>\n<p>It's just <code>f = \\x -&gt; f x</code> that doesn't hold.</p>\n</blockquote>\n<p>I'm not very surprised to learn this, but I can't think of a context to distinguish them, do you know how to do it?</p>",
+        "id": 329706632,
+        "sender_full_name": "Jules Hedges",
+        "timestamp": 1677155782
+    },
+    {
+        "content": "<p>Making the distinction, I could refine what I said previously to taking the convention <code>undefined . f = undefined</code> instead of defining composition universally via the lambda expression seems to fix the problem?</p>",
+        "id": 329706721,
+        "sender_full_name": "Morgan Rogers (he/him)",
+        "timestamp": 1677155817
+    },
+    {
+        "content": "<p>Yes, you can do this (I think you had better do it for <code>f . undefined</code> too, to get the other unit law as well) and you can even implement it in Haskell... using <code>seq</code>!</p>",
+        "id": 329707578,
+        "sender_full_name": "Reid Barton",
+        "timestamp": 1677156071
+    },
+    {
+        "content": "<p>So to return to the original question, is that the adaptation that allows one to construct categorical semantics for Haskell?</p>",
+        "id": 329707944,
+        "sender_full_name": "Morgan Rogers (he/him)",
+        "timestamp": 1677156164
+    },
+    {
+        "content": "<p>Just for fun (making Haskell go wrong is a sort of hobby), you can also break these equations by using the fact that you have multiple undefined values other than <code>undefined</code> that you can observationally distinguish<br>\n<a href=\"/user_uploads/21317/hjTyx2bc-HvEG41V56AxaoXg/Screenshot-2023-02-23-at-12.42.34-pm.png\">Screenshot-2023-02-23-at-12.42.34-pm.png</a></p>\n<div class=\"message_inline_image\"><a href=\"/user_uploads/21317/hjTyx2bc-HvEG41V56AxaoXg/Screenshot-2023-02-23-at-12.42.34-pm.png\" title=\"Screenshot-2023-02-23-at-12.42.34-pm.png\"><img src=\"/user_uploads/21317/hjTyx2bc-HvEG41V56AxaoXg/Screenshot-2023-02-23-at-12.42.34-pm.png\"></a></div>",
+        "id": 329708098,
+        "sender_full_name": "Jules Hedges",
+        "timestamp": 1677156209
+    },
+    {
+        "content": "<p>\"ohnoes\" is a high quality name for an error</p>",
+        "id": 329708342,
+        "sender_full_name": "Morgan Rogers (he/him)",
+        "timestamp": 1677156269
+    },
+    {
+        "content": "<p>Doing something like this is necessary to fix associativity... but what's <em>really</em> missing is a formal definition in the first place. It will involve some choices (e.g. do I have exceptions in addition to non-termination, and can I tell them apart), and a lot of writing-things-down work.</p>",
+        "id": 329708963,
+        "sender_full_name": "Reid Barton",
+        "timestamp": 1677156441
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"275901\">Jules Hedges</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/A.20formal.20programming.20category/near/329706632\">said</a>:</p>\n<blockquote>\n<p><span class=\"user-mention silent\" data-user-id=\"276480\">Reid Barton</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/A.20formal.20programming.20category/near/329705063\">said</a>:</p>\n<blockquote>\n<p>It's just <code>f = \\x -&gt; f x</code> that doesn't hold.</p>\n</blockquote>\n<p>I'm not very surprised to learn this, but I can't think of a context to distinguish them, do you know how to do it?</p>\n</blockquote>\n<p>It's exactly this <code>seq undefined</code> on functions: <code>seq undefined z = undefined</code> but <code>seq (\\ x -&gt; undefined x) z = z</code>.</p>",
+        "id": 329709287,
+        "sender_full_name": "Reid Barton",
+        "timestamp": 1677156519
+    },
+    {
+        "content": "<p>It is known that many typed lambda calculi form categories this way (called syntactic categories). Well, STLC surely does. But then you have to do weird and dangerous things with <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>β</mi><mi>η</mi></mrow><annotation encoding=\"application/x-tex\">\\beta\\eta</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8889em;vertical-align:-0.1944em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.05278em;\">β</span><span class=\"mord mathnormal\" style=\"margin-right:0.03588em;\">η</span></span></span></span>-equivalence.</p>",
+        "id": 329774029,
+        "sender_full_name": "Xuanrui Qi",
+        "timestamp": 1677172136
     }
 ]

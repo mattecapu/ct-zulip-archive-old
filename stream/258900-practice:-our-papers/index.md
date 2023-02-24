@@ -9,7 +9,7 @@ permalink: /stream/258900-practice:-our-papers/index.html
 
 ### Topics:
 
-* [Toposes of Topological Monoid Actions](topic/topic_Toposes.20of.20Topological.20Monoid.20Actions.html) (9 messages, latest: Feb 22 2023 at 21:28)
+* [Toposes of Topological Monoid Actions](topic/topic_Toposes.20of.20Topological.20Monoid.20Actions.html) (10 messages, latest: Feb 23 2023 at 10:05)
 * [Towards a Higher-Order Mathematical Operational Semantics](topic/topic_Towards.20a.20Higher-Order.20Mathematical.20Operational.20Semantics.html) (20 messages, latest: Nov 10 2022 at 23:48)
 * [Categorical semantics of compositional RL](topic/topic_Categorical.20semantics.20of.20compositional.20RL.html) (5 messages, latest: Nov 08 2022 at 15:14)
 * [Machine Space I: Weak exponentials and quantification ove...](topic/topic_Machine.20Space.20I.3A.20Weak.20exponentials.20and.20quantification.20ove.2E.2E.2E.html) (3 messages, latest: Oct 01 2022 at 13:18)
@@ -61,4 +61,4 @@ permalink: /stream/258900-practice:-our-papers/index.html
 * [Functorial semantics for partial theories](topic/topic_Functorial.20semantics.20for.20partial.20theories.html) (30 messages, latest: Nov 29 2020 at 08:46)
 * [Coends of higher arity](topic/topic_Coends.20of.20higher.20arity.html) (3 messages, latest: Sep 26 2020 at 16:28)
 
-<hr><p>Last updated: Feb 23 2023 at 00:46 UTC</p>
+<hr><p>Last updated: Feb 24 2023 at 00:47 UTC</p>

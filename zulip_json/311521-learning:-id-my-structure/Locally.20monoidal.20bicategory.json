@@ -1,0 +1,50 @@
+[
+    {
+        "content": "<p>Is there a name for bicategories whose hom-categories have monoidal structures but where this does not extend to the objects? My motivating example is <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"bold\">P</mi><mi mathvariant=\"bold\">r</mi><mi mathvariant=\"bold\">o</mi><mi mathvariant=\"bold\">f</mi></mrow><annotation encoding=\"application/x-tex\">\\mathbf{Prof}</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6944em;\"></span><span class=\"mord\"><span class=\"mord mathbf\" style=\"margin-right:0.10903em;\">Prof</span></span></span></span></span> (actually the subcategory of it spanned by monoidal categories) where the hom categories have monoidal products given by Day convolution, but I don’t think it makes much sense to extend this to profunctors defined on different pairs of categories.</p>",
+        "id": 329714367,
+        "sender_full_name": "Dylan Braithwaite",
+        "timestamp": 1677157847
+    },
+    {
+        "content": "<p>I suppose it’s incorrect to talk about restricting <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"bold\">P</mi><mi mathvariant=\"bold\">r</mi><mi mathvariant=\"bold\">o</mi><mi mathvariant=\"bold\">f</mi></mrow><annotation encoding=\"application/x-tex\">\\mathbf{Prof}</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6944em;\"></span><span class=\"mord\"><span class=\"mord mathbf\" style=\"margin-right:0.10903em;\">Prof</span></span></span></span></span> to monoidal categories when that’s extra structure. Really I mean a version of <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"bold\">P</mi><mi mathvariant=\"bold\">r</mi><mi mathvariant=\"bold\">o</mi><mi mathvariant=\"bold\">f</mi></mrow><annotation encoding=\"application/x-tex\">\\mathbf{Prof}</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6944em;\"></span><span class=\"mord\"><span class=\"mord mathbf\" style=\"margin-right:0.10903em;\">Prof</span></span></span></span></span> whose objects are monoidal categories, but this starts to feel a bit evil because we have to distinguish objects by extra structure on them but this structure doesn’t appear in the 1-cells. This is my reason for this question: is there a good way to study this local monoidal structure more globally?</p>",
+        "id": 329733272,
+        "sender_full_name": "Dylan Braithwaite",
+        "timestamp": 1677162599
+    },
+    {
+        "content": "<p>Explicitly, given monoidal categories A and B, you are interested in the fact that Prof(A, B) ≃ Psh(B x A°) is monoidal, using Day convolution on the monoidal structure of the product category?</p>",
+        "id": 329741952,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1677164490
+    },
+    {
+        "content": "<p>Yeah exactly. I think I’ve kind of rubber-ducked my way into thinking the original structure I was looking for doesn’t make much sense. But I’m still interesting in whether there’s a way to study this local monoidal structure more globally</p>",
+        "id": 329745835,
+        "sender_full_name": "Dylan Braithwaite",
+        "timestamp": 1677165473
+    },
+    {
+        "content": "<p>This situation seems to be quite specific to Prof. It makes use of the fact that presheaves are given by exponentiation, i.e. that Cat(A, PB) ≃ Cat(1, P(B x A°)), which isn't a relationship one would expect to hold very often. Unless you have some other similar examples, I don't see any phenomenon of which this is a particular example. Maybe others do, though.</p>",
+        "id": 329748941,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1677166175
+    },
+    {
+        "content": "<p>The obvious answer is \"a bicategory enriched over monoidal categories\".  But the 2-category of monoidal categories isn't, I think, monoidal in a very useful way to enrich over.  The 2-category of <em>symmetric</em> monoidal categories is (it has a tensor product that categorifies the tensor product of abelian monoids).  But I haven't thought about whether composition of profunctors is a map in this category with respect to the Day convolution monoidal structures for profunctors between symmetric monoidal categories.</p>",
+        "id": 329813009,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1677184311
+    },
+    {
+        "content": "<p>If you just wanted a way to incorporate monoidal structures on objects into Prof, you could look at Prof as a double category, and take the tight morphisms to be monoidal functors.</p>",
+        "id": 329813204,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1677184372
+    },
+    {
+        "content": "<p>Or you could note that a monoidal category is both a monoid and a comonoid <em>in</em> Prof, and restrict to considering only profunctors that are monoid and/or comonoid homomorphisms.</p>",
+        "id": 329813261,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1677184396
+    }
+]
