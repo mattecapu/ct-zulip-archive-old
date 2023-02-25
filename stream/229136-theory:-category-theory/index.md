@@ -9,7 +9,8 @@ permalink: /stream/229136-theory:-category-theory/index.html
 
 ### Topics:
 
-* [Is my category a Kleisli category over C](topic/topic_Is.20my.20category.20a.20Kleisli.20category.20over.20C.html) (7 messages, latest: Feb 23 2023 at 22:56)
+* [Extending a monad from a co-Kleisli category](topic/topic_Extending.20a.20monad.20from.20a.20co-Kleisli.20category.html) (3 messages, latest: Feb 24 2023 at 22:41)
+* [Is my category a Kleisli category over C](topic/topic_Is.20my.20category.20a.20Kleisli.20category.20over.20C.html) (15 messages, latest: Feb 24 2023 at 13:57)
 * [What do you call an object of Joyal's category $$\Theta$$?](topic/topic_What.20do.20you.20call.20an.20object.20of.20Joyal's.20category.20.24.24.5CTheta.24.24.3F.html) (23 messages, latest: Feb 23 2023 at 20:37)
 * [diagrammatic vs applicative composition order](topic/topic_diagrammatic.20vs.20applicative.20composition.20order.html) (16 messages, latest: Feb 23 2023 at 20:36)
 * [A new monad from a strong monad](topic/topic_A.20new.20monad.20from.20a.20strong.20monad.html) (58 messages, latest: Feb 20 2023 at 23:49)
@@ -381,4 +382,4 @@ permalink: /stream/229136-theory:-category-theory/index.html
 * [diagrams for application](topic/topic_diagrams.20for.20application.html) (13 messages, latest: Mar 24 2020 at 06:19)
 * [universal constructions](topic/topic_universal.20constructions.html) (8 messages, latest: Mar 23 2020 at 21:06)
 
-<hr><p>Last updated: Feb 24 2023 at 00:47 UTC</p>
+<hr><p>Last updated: Feb 25 2023 at 00:48 UTC</p>

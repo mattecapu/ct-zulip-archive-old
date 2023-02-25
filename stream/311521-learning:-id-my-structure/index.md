@@ -9,6 +9,7 @@ permalink: /stream/311521-learning:-id-my-structure/index.html
 
 ### Topics:
 
+* [A category of diagrams, but over which shape?](topic/topic_A.20category.20of.20diagrams.2C.20but.20over.20which.20shape.3F.html) (11 messages, latest: Feb 24 2023 at 23:00)
 * [Locally monoidal bicategory](topic/topic_Locally.20monoidal.20bicategory.html) (8 messages, latest: Feb 23 2023 at 20:33)
 * [Reference requests for polynomial monads](topic/topic_Reference.20requests.20for.20polynomial.20monads.html) (1 message, latest: Feb 20 2023 at 08:30)
 * [category of all small diagrams](topic/topic_category.20of.20all.20small.20diagrams.html) (7 messages, latest: Feb 20 2023 at 04:01)
@@ -26,4 +27,4 @@ permalink: /stream/311521-learning:-id-my-structure/index.html
 * [stream events](topic/topic_stream.20events.html) (9 messages, latest: Jan 04 2022 at 22:35)
 * [almost a full subcategory?](topic/topic_almost.20a.20full.20subcategory.3F.html) (15 messages, latest: Jan 04 2022 at 16:42)
 
-<hr><p>Last updated: Feb 24 2023 at 00:47 UTC</p>
+<hr><p>Last updated: Feb 25 2023 at 00:48 UTC</p>

@@ -10,7 +10,7 @@ permalink: /index.html
 
 * [learning: questions](stream/229199-learning:-questions/index.html) (823 topics)
 
-* [theory: category theory](stream/229136-theory:-category-theory/index.html) (371 topics)
+* [theory: category theory](stream/229136-theory:-category-theory/index.html) (372 topics)
 
 * [general](stream/229111-general/index.html) (246 topics)
 
@@ -66,6 +66,8 @@ permalink: /index.html
 
 * [theory: physics](stream/251538-theory:-physics/index.html) (18 topics)
 
+* [learning: id my structure](stream/311521-learning:-id-my-structure/index.html) (17 topics)
+
 * [practice: chemistry](stream/322714-practice:-chemistry/index.html) (17 topics)
 
 * [practice: communication](stream/233322-practice:-communication/index.html) (17 topics)
@@ -73,8 +75,6 @@ permalink: /index.html
 * [theory: algebraic geometry](stream/231112-theory:-algebraic-geometry/index.html) (17 topics)
 
 * [workshop: Categories for AI](stream/347879-workshop:-Categories-for-AI/index.html) (17 topics)
-
-* [learning: id my structure](stream/311521-learning:-id-my-structure/index.html) (16 topics)
 
 * [philosophy](stream/229134-philosophy/index.html) (16 topics)
 
@@ -180,4 +180,4 @@ permalink: /index.html
 
 * [theory: alternate presentations](stream/233122-theory:-alternate-presentations/index.html) (1 topic)
 
-<hr><p>Last updated: Feb 24 2023 at 00:47 UTC</p>
+<hr><p>Last updated: Feb 25 2023 at 00:48 UTC</p>
