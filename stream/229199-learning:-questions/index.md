@@ -9,6 +9,7 @@ permalink: /stream/229199-learning:-questions/index.html
 
 ### Topics:
 
+* [projective objects](topic/topic_projective.20objects.html) (44 messages, latest: Feb 26 2023 at 22:14)
 * [morphisms to products](topic/topic_morphisms.20to.20products.html) (38 messages, latest: Feb 24 2023 at 17:43)
 * [A formal programming category](topic/topic_A.20formal.20programming.20category.html) (78 messages, latest: Feb 24 2023 at 13:51)
 * [why rings need identities](topic/topic_why.20rings.20need.20identities.html) (46 messages, latest: Feb 24 2023 at 05:27)
@@ -833,4 +834,4 @@ permalink: /stream/229199-learning:-questions/index.html
 * [Algebra (Aluffi) exercises](topic/topic_Algebra.20(Aluffi).20exercises.html) (55 messages, latest: Mar 27 2020 at 23:38)
 * [What is category theory about?](topic/topic_What.20is.20category.20theory.20about.3F.html) (16 messages, latest: Mar 26 2020 at 16:03)
 
-<hr><p>Last updated: Feb 26 2023 at 00:54 UTC</p>
+<hr><p>Last updated: Feb 27 2023 at 00:48 UTC</p>

@@ -8,7 +8,7 @@ permalink: /index.html
 
 ## Streams:
 
-* [learning: questions](stream/229199-learning:-questions/index.html) (823 topics)
+* [learning: questions](stream/229199-learning:-questions/index.html) (824 topics)
 
 * [theory: category theory](stream/229136-theory:-category-theory/index.html) (373 topics)
 
@@ -120,13 +120,13 @@ permalink: /index.html
 
 * [semiotics and semiosis](stream/229179-semiotics-and-semiosis/index.html) (6 topics)
 
+* [theory: biology](stream/336415-theory:-biology/index.html) (6 topics)
+
 * [ACT@UMD seminar](stream/229967-ACT@UMD-seminar/index.html) (5 topics)
 
 * [languages: Deutsch/German](stream/231144-languages:-Deutsch/German/index.html) (5 topics)
 
 * [languages: portugues](stream/303660-languages:-portugues/index.html) (5 topics)
-
-* [theory: biology](stream/336415-theory:-biology/index.html) (5 topics)
 
 * [general: terminology](stream/348484-general:-terminology/index.html) (4 topics)
 
@@ -180,4 +180,4 @@ permalink: /index.html
 
 * [theory: alternate presentations](stream/233122-theory:-alternate-presentations/index.html) (1 topic)
 
-<hr><p>Last updated: Feb 26 2023 at 00:54 UTC</p>
+<hr><p>Last updated: Feb 27 2023 at 00:48 UTC</p>

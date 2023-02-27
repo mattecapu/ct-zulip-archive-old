@@ -9,8 +9,8 @@ permalink: /stream/266967-general:-mathematics/index.html
 
 ### Topics:
 
+* [on a remark by rovelli](topic/topic_on.20a.20remark.20by.20rovelli.html) (21 messages, latest: Feb 26 2023 at 17:53)
 * [evolutionary game](topic/topic_evolutionary.20game.html) (21 messages, latest: Feb 24 2023 at 01:50)
-* [on a remark by rovelli](topic/topic_on.20a.20remark.20by.20rovelli.html) (6 messages, latest: Feb 23 2023 at 21:59)
 * [carrying as a 2-cocycle](topic/topic_carrying.20as.20a.202-cocycle.html) (15 messages, latest: Feb 22 2023 at 18:32)
 * [Open problems in SDG?](topic/topic_Open.20problems.20in.20SDG.3F.html) (3 messages, latest: Feb 22 2023 at 18:25)
 * [Publishing papers](topic/topic_Publishing.20papers.html) (66 messages, latest: Feb 18 2023 at 21:36)
@@ -81,4 +81,4 @@ permalink: /stream/266967-general:-mathematics/index.html
 * [the 600-cell](topic/topic_the.20600-cell.html) (5 messages, latest: Dec 01 2020 at 16:35)
 * [hermitian matrix over normed division algebra](topic/topic_hermitian.20matrix.20over.20normed.20division.20algebra.html) (8 messages, latest: Sep 28 2020 at 21:19)
 
-<hr><p>Last updated: Feb 26 2023 at 00:54 UTC</p>
+<hr><p>Last updated: Feb 27 2023 at 00:48 UTC</p>

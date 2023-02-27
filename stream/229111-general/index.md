@@ -9,7 +9,7 @@ permalink: /stream/229111-general/index.html
 
 ### Topics:
 
-* [How to deal with the "hydra problem" in research](topic/topic_How.20to.20deal.20with.20the.20.22hydra.20problem.22.20in.20research.html) (9 messages, latest: Feb 25 2023 at 21:27)
+* [How to deal with the "hydra problem" in research](topic/topic_How.20to.20deal.20with.20the.20.22hydra.20problem.22.20in.20research.html) (12 messages, latest: Feb 26 2023 at 14:29)
 * [Compositionality](topic/topic_Compositionality.html) (42 messages, latest: Feb 17 2023 at 08:17)
 * [Introduce yourself!](topic/topic_Introduce.20yourself!.html) (33 messages, latest: Feb 15 2023 at 23:43)
 * [Directory of Women in Category Theory](topic/topic_Directory.20of.20Women.20in.20Category.20Theory.html) (2 messages, latest: Feb 11 2023 at 21:58)
@@ -257,4 +257,4 @@ permalink: /stream/229111-general/index.html
 * [Tools for diagrams](topic/topic_Tools.20for.20diagrams.html) (78 messages, latest: Mar 25 2020 at 17:53)
 * [topic demonstration](topic/topic_topic.20demonstration.html) (2 messages, latest: Mar 23 2020 at 16:57)
 
-<hr><p>Last updated: Feb 26 2023 at 00:54 UTC</p>
+<hr><p>Last updated: Feb 27 2023 at 00:48 UTC</p>
