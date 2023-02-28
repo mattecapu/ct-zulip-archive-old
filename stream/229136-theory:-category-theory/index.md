@@ -9,6 +9,7 @@ permalink: /stream/229136-theory:-category-theory/index.html
 
 ### Topics:
 
+* ['semibraidings'](topic/topic_'semibraidings'.html) (10 messages, latest: Feb 27 2023 at 14:59)
 * [Kan extension as lax-functorial](topic/topic_Kan.20extension.20as.20lax-functorial.html) (20 messages, latest: Feb 26 2023 at 21:20)
 * [Is my category a Kleisli category over C](topic/topic_Is.20my.20category.20a.20Kleisli.20category.20over.20C.html) (18 messages, latest: Feb 25 2023 at 22:38)
 * [Extending a monad from a co-Kleisli category](topic/topic_Extending.20a.20monad.20from.20a.20co-Kleisli.20category.html) (3 messages, latest: Feb 24 2023 at 22:41)
@@ -140,7 +141,6 @@ permalink: /stream/229136-theory:-category-theory/index.html
 * [monoidal vs commutative monads](topic/topic_monoidal.20vs.20commutative.20monads.html) (1 message, latest: Apr 05 2022 at 21:19)
 * [Monoidal vs Commutative Monads](topic/topic_Monoidal.20vs.20Commutative.20Monads.html) (11 messages, latest: Apr 04 2022 at 18:00)
 * [monoidal closed but not compact closed](topic/topic_monoidal.20closed.20but.20not.20compact.20closed.html) (47 messages, latest: Apr 04 2022 at 06:51)
-* ['semibraidings'](topic/topic_'semibraidings'.html) (6 messages, latest: Mar 26 2022 at 19:54)
 * [Dual Day Convolution?](topic/topic_Dual.20Day.20Convolution.3F.html) (8 messages, latest: Mar 25 2022 at 13:36)
 * [laxer limits](topic/topic_laxer.20limits.html) (13 messages, latest: Mar 24 2022 at 16:38)
 * [literature citation for pentagon in categories with products](topic/topic_literature.20citation.20for.20pentagon.20in.20categories.20with.20products.html) (4 messages, latest: Mar 21 2022 at 13:48)
@@ -383,4 +383,4 @@ permalink: /stream/229136-theory:-category-theory/index.html
 * [diagrams for application](topic/topic_diagrams.20for.20application.html) (13 messages, latest: Mar 24 2020 at 06:19)
 * [universal constructions](topic/topic_universal.20constructions.html) (8 messages, latest: Mar 23 2020 at 21:06)
 
-<hr><p>Last updated: Feb 27 2023 at 00:48 UTC</p>
+<hr><p>Last updated: Feb 28 2023 at 00:50 UTC</p>

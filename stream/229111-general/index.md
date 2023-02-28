@@ -9,6 +9,7 @@ permalink: /stream/229111-general/index.html
 
 ### Topics:
 
+* [Selling CT to the masses without any maths prerequisites](topic/topic_Selling.20CT.20to.20the.20masses.20without.20any.20maths.20prerequisites.html) (3 messages, latest: Feb 27 2023 at 13:41)
 * [How to deal with the "hydra problem" in research](topic/topic_How.20to.20deal.20with.20the.20.22hydra.20problem.22.20in.20research.html) (12 messages, latest: Feb 26 2023 at 14:29)
 * [Compositionality](topic/topic_Compositionality.html) (42 messages, latest: Feb 17 2023 at 08:17)
 * [Introduce yourself!](topic/topic_Introduce.20yourself!.html) (33 messages, latest: Feb 15 2023 at 23:43)
@@ -257,4 +258,4 @@ permalink: /stream/229111-general/index.html
 * [Tools for diagrams](topic/topic_Tools.20for.20diagrams.html) (78 messages, latest: Mar 25 2020 at 17:53)
 * [topic demonstration](topic/topic_topic.20demonstration.html) (2 messages, latest: Mar 23 2020 at 16:57)
 
-<hr><p>Last updated: Feb 27 2023 at 00:48 UTC</p>
+<hr><p>Last updated: Feb 28 2023 at 00:50 UTC</p>
