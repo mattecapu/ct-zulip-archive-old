@@ -8,7 +8,7 @@ permalink: /index.html
 
 ## Streams:
 
-* [learning: questions](stream/229199-learning:-questions/index.html) (824 topics)
+* [learning: questions](stream/229199-learning:-questions/index.html) (825 topics)
 
 * [theory: category theory](stream/229136-theory:-category-theory/index.html) (373 topics)
 
@@ -36,7 +36,7 @@ permalink: /index.html
 
 * [practice: thermodynamics](stream/306433-practice:-thermodynamics/index.html) (53 topics)
 
-* [practice: our papers](stream/258900-practice:-our-papers/index.html) (51 topics)
+* [practice: our papers](stream/258900-practice:-our-papers/index.html) (52 topics)
 
 * [theory: type theory](stream/229952-theory:-type-theory/index.html) (46 topics)
 
@@ -46,9 +46,9 @@ permalink: /index.html
 
 * [practice: our work](stream/274877-practice:-our-work/index.html) (40 topics)
 
-* [Categorical Probability and Statistics 2020 workshop](stream/238032-Categorical-Probability-and-Statistics-2020-workshop/index.html) (34 topics)
+* [theory: probability](stream/253118-theory:-probability/index.html) (35 topics)
 
-* [theory: probability](stream/253118-theory:-probability/index.html) (34 topics)
+* [Categorical Probability and Statistics 2020 workshop](stream/238032-Categorical-Probability-and-Statistics-2020-workshop/index.html) (34 topics)
 
 * [general: values](stream/241990-general:-values/index.html) (32 topics)
 
@@ -106,15 +106,15 @@ permalink: /index.html
 
 * [languages: italiano/Italian](stream/231111-languages:-italiano/Italian/index.html) (8 topics)
 
+* [theory: algebra & CT](stream/230123-theory:-algebra-&-CT/index.html) (8 topics)
+
+* [theory: analysis](stream/281848-theory:-analysis/index.html) (8 topics)
+
 * [theory: monoids](stream/231815-theory:-monoids/index.html) (8 topics)
 
 * [learning: statistics reading group](stream/245528-learning:-statistics-reading-group/index.html) (7 topics)
 
 * [seminar: EM-cats](stream/298571-seminar:-EM-cats/index.html) (7 topics)
-
-* [theory: algebra & CT](stream/230123-theory:-algebra-&-CT/index.html) (7 topics)
-
-* [theory: analysis](stream/281848-theory:-analysis/index.html) (7 topics)
 
 * [general: terminology & notation](stream/348484-general:-terminology-&-notation/index.html) (6 topics)
 
@@ -180,4 +180,4 @@ permalink: /index.html
 
 * [theory: alternate presentations](stream/233122-theory:-alternate-presentations/index.html) (1 topic)
 
-<hr><p>Last updated: Feb 28 2023 at 00:50 UTC</p>
+<hr><p>Last updated: Mar 01 2023 at 00:55 UTC</p>

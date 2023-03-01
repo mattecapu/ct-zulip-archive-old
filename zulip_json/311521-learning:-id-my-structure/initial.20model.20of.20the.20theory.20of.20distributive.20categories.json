@@ -46,5 +46,101 @@
         "id": 338472459,
         "sender_full_name": "John Baez",
         "timestamp": 1677541192
+    },
+    {
+        "content": "<p>Thanks a lot for all the interesting pointers! </p>\n<p>In fact, it now seems called for to clarify the question I wanted to ask: Given an essentially algebraic theory T such that <em>to give a model for T</em> is <em>to give a distributive category</em>, is there a well-known (simple) characterization of its <em>initial</em> model, i.e., the initial object in <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mrow><mi mathvariant=\"normal\">M</mi><mi mathvariant=\"normal\">o</mi><mi mathvariant=\"normal\">d</mi></mrow><mo stretchy=\"false\">(</mo><mi>T</mi><mo stretchy=\"false\">)</mo><mo>=</mo><mrow><mi mathvariant=\"normal\">L</mi><mi mathvariant=\"normal\">e</mi><mi mathvariant=\"normal\">x</mi></mrow><mo stretchy=\"false\">(</mo><mi>T</mi><mo separator=\"true\">,</mo><mrow><mi mathvariant=\"sans-serif\">S</mi><mi mathvariant=\"sans-serif\">e</mi><mi mathvariant=\"sans-serif\">t</mi></mrow><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">\\mathrm{Mod}(\\mathit{T})=\\mathrm{Lex}(\\mathit{T}, \\mathsf{Set})</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord\"><span class=\"mord mathrm\">Mod</span></span><span class=\"mopen\">(</span><span class=\"mord mathit\">T</span><span class=\"mclose\">)</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord\"><span class=\"mord mathrm\">Lex</span></span><span class=\"mopen\">(</span><span class=\"mord mathit\">T</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord\"><span class=\"mord mathsf\">Set</span></span><span class=\"mclose\">)</span></span></span></span> (cf. <a href=\"https://ncatlab.org/nlab/show/essentially+algebraic+theory\">essentially algebraic theory</a>).<br>\nNote, by distributive category, I mean a category with finite products and finite co-products that is distributive, i.e., the canonical map  A × B + A × C → A × (B + C) is invertible. </p>\n<p>As it happens, we are currently working on the project <a href=\"https://github.com/anoma/geb\">geb</a>, which piggybacks on the conjecture that the category we are describing above is equivalent to <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"sans-serif\">F</mi><mi mathvariant=\"sans-serif\">i</mi><mi mathvariant=\"sans-serif\">n</mi><mi mathvariant=\"sans-serif\">S</mi><mi mathvariant=\"sans-serif\">e</mi><mi mathvariant=\"sans-serif\">t</mi></mrow><annotation encoding=\"application/x-tex\">\\mathsf{FinSet}</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6944em;\"></span><span class=\"mord\"><span class=\"mord mathsf\">FinSet</span></span></span></span></span> via the evident functor. The result seems very intuitive, but we have found no references either confirming or denying it. <a href=\"https://agureev.github.io/\">Artem</a> has formalized almost everything in Agda (up to atrocious details <a href=\"https://github.com/anoma/geb/tree/main/geb-agda\">https://github.com/anoma/geb/tree/main/geb-agda</a>). Hence, we were wondering if someone has had an observation akin to the describe one, which we could cite?</p>\n<p>TL;DR; we want the answer to be <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"sans-serif\">F</mi><mi mathvariant=\"sans-serif\">i</mi><mi mathvariant=\"sans-serif\">n</mi><mi mathvariant=\"sans-serif\">S</mi><mi mathvariant=\"sans-serif\">e</mi><mi mathvariant=\"sans-serif\">t</mi></mrow><annotation encoding=\"application/x-tex\">\\mathsf{FinSet}</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6944em;\"></span><span class=\"mord\"><span class=\"mord mathsf\">FinSet</span></span></span></span></span> -- and someone must have had this observation, no?</p>",
+        "id": 338555103,
+        "sender_full_name": "Tobias Heindel",
+        "timestamp": 1677581848
+    },
+    {
+        "content": "<p>Just to check, the morphisms between distributive categories are then meant to be functors that preserve finite coproducts and finite products?</p>",
+        "id": 338555716,
+        "sender_full_name": "Reid Barton",
+        "timestamp": 1677582023
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276480\">Reid Barton</span> <a href=\"#narrow/stream/311521-learning.3A-id-my-structure/topic/initial.20model.20of.20the.20theory.20of.20distributive.20categories/near/338555716\">said</a>:</p>\n<blockquote>\n<p>Just to check, the morphisms between distributive categories are then meant to be functors that preserve finite coproducts and finite products?</p>\n</blockquote>\n<p>yes, as all the structure that the theory T talks about must be prserved <code>on the nose</code></p>",
+        "id": 338558176,
+        "sender_full_name": "Tobias Heindel",
+        "timestamp": 1677582797
+    },
+    {
+        "content": "<p>Oh I missed that you were talking about 1-categorical models.</p>",
+        "id": 338558441,
+        "sender_full_name": "Reid Barton",
+        "timestamp": 1677582873
+    },
+    {
+        "content": "<p>Is that the essential part of your question? It seems pretty easy to prove that any distributive category admits an essentially unique functor from FinSet that preserves finite coproducts and products (in the usual up-to-isomorphism sense). Sketch: Finite-coproduct-preserving functors from FinSet to a category C with finite coproducts are essentially determined by where they send the one point set; in order to also preserve the empty product, they have to set it to the terminal object of C; then we need to check that this thing preservses all binary products, and we can use the distributivity of C to do it.</p>",
+        "id": 338561044,
+        "sender_full_name": "Reid Barton",
+        "timestamp": 1677583684
+    },
+    {
+        "content": "<p>Then there should be some way to deduce that the initial strict model of your T is equivalent to FinSet but I'm not very good at that stuff.</p>",
+        "id": 338561508,
+        "sender_full_name": "Reid Barton",
+        "timestamp": 1677583833
+    },
+    {
+        "content": "<p><span class=\"user-mention\" data-user-id=\"281573\">@Tobias Heindel</span>: that the initial model is FinSet follows from my earlier message. In particular, if you have no base sorts or constants, then you consider the free cartesian category on the empty category, which is just the one-object category <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>1</mn></mrow><annotation encoding=\"application/x-tex\">1</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6444em;\"></span><span class=\"mord\">1</span></span></span></span>, and then the free cocartesian category on <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>1</mn></mrow><annotation encoding=\"application/x-tex\">1</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6444em;\"></span><span class=\"mord\">1</span></span></span></span>, which is FinSet.</p>",
+        "id": 338576064,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1677588029
+    },
+    {
+        "content": "<p>In general, the initial model of \"the theory of X's\" is \"the free X\" (essentially by definition).</p>",
+        "id": 338576278,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1677588068
+    },
+    {
+        "content": "<p>(Note that it is initial amongst distributive categories with <em>chosen</em> products and coproducts, so strictly speaking you may need to take an equivalent subcategory <del>skeleton</del> of FinSet, otherwise it only satisfies the universal property up to equivalence rather than isomorphism.)</p>",
+        "id": 338578060,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1677588521
+    },
+    {
+        "content": "<p>I don't think you want a skeleton, but rather a fluffed-up version of the skeleton with one object for each expression you can write using <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>0</mn></mrow><annotation encoding=\"application/x-tex\">0</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6444em;\"></span><span class=\"mord\">0</span></span></span></span>, <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>1</mn></mrow><annotation encoding=\"application/x-tex\">1</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6444em;\"></span><span class=\"mord\">1</span></span></span></span>, <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>+</mo></mrow><annotation encoding=\"application/x-tex\">+</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6667em;vertical-align:-0.0833em;\"></span><span class=\"mord\">+</span></span></span></span>, <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>×</mo></mrow><annotation encoding=\"application/x-tex\">\\times</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6667em;vertical-align:-0.0833em;\"></span><span class=\"mord\">×</span></span></span></span>.</p>",
+        "id": 338579015,
+        "sender_full_name": "Reid Barton",
+        "timestamp": 1677588751
+    },
+    {
+        "content": "<p>I think this syntax is just simple enough that you could prove by hand (i.e., without appealing to general strictification results) that the strictly initial distributive category also has the \"up to equivalence\" universal property.</p>",
+        "id": 338579990,
+        "sender_full_name": "Reid Barton",
+        "timestamp": 1677589038
+    },
+    {
+        "content": "<p>In particular, it's convenient that the rules for constructing objects don't depend on morphisms at all, and so in particular they don't involve quotienting by any relations.</p>",
+        "id": 338581492,
+        "sender_full_name": "Reid Barton",
+        "timestamp": 1677589444
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"281573\">Tobias Heindel</span> <a href=\"#narrow/stream/311521-learning.3A-id-my-structure/topic/initial.20model.20of.20the.20theory.20of.20distributive.20categories/near/338555103\">said</a>:</p>\n<blockquote>\n<p>TL;DR; we want the answer to be <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"sans-serif\">F</mi><mi mathvariant=\"sans-serif\">i</mi><mi mathvariant=\"sans-serif\">n</mi><mi mathvariant=\"sans-serif\">S</mi><mi mathvariant=\"sans-serif\">e</mi><mi mathvariant=\"sans-serif\">t</mi></mrow><annotation encoding=\"application/x-tex\">\\mathsf{FinSet}</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6944em;\"></span><span class=\"mord\"><span class=\"mord mathsf\">FinSet</span></span></span></span></span> -- and someone must have had this observation, no?</p>\n</blockquote>\n<p>This is <em>not</em> an answer to your question, but it might still be mildly interesting:</p>\n<p>There's a concept more general than 'distributive category' called a <a href=\"https://ncatlab.org/nlab/show/rig%20category\">[[rig category]]</a>: it has symmetric monoidal structures <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>⊗</mo></mrow><annotation encoding=\"application/x-tex\">\\otimes</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6667em;vertical-align:-0.0833em;\"></span><span class=\"mord\">⊗</span></span></span></span> and <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>⊗</mo></mrow><annotation encoding=\"application/x-tex\">\\otimes</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6667em;vertical-align:-0.0833em;\"></span><span class=\"mord\">⊗</span></span></span></span>, with <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>⊗</mo></mrow><annotation encoding=\"application/x-tex\">\\otimes</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6667em;vertical-align:-0.0833em;\"></span><span class=\"mord\">⊗</span></span></span></span> distributing over <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>⊕</mo></mrow><annotation encoding=\"application/x-tex\">\\oplus</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6667em;vertical-align:-0.0833em;\"></span><span class=\"mord\">⊕</span></span></span></span> up to coherent isomorphism, but we <em>don't</em> require that <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>⊗</mo></mrow><annotation encoding=\"application/x-tex\">\\otimes</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6667em;vertical-align:-0.0833em;\"></span><span class=\"mord\">⊗</span></span></span></span> be product or <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>⊕</mo></mrow><annotation encoding=\"application/x-tex\">\\oplus</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6667em;vertical-align:-0.0833em;\"></span><span class=\"mord\">⊕</span></span></span></span> be coproduct.</p>\n<p>A while ago I conjectured that the initial rig category is the <em>groupoid</em> of finite sets and bijections, with the usual <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>×</mo></mrow><annotation encoding=\"application/x-tex\">\\times</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6667em;vertical-align:-0.0833em;\"></span><span class=\"mord\">×</span></span></span></span> of sets as <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>⊗</mo></mrow><annotation encoding=\"application/x-tex\">\\otimes</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6667em;vertical-align:-0.0833em;\"></span><span class=\"mord\">⊗</span></span></span></span> and the usual <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>+</mo></mrow><annotation encoding=\"application/x-tex\">+</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6667em;vertical-align:-0.0833em;\"></span><span class=\"mord\">+</span></span></span></span> of sets as <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>⊗</mo></mrow><annotation encoding=\"application/x-tex\">\\otimes</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6667em;vertical-align:-0.0833em;\"></span><span class=\"mord\">⊗</span></span></span></span>.   (These are <em>not</em> product and coproduct in the <em>groupoid</em> of finite sets.)</p>",
+        "id": 338700993,
+        "sender_full_name": "John Baez",
+        "timestamp": 1677621845
+    },
+    {
+        "content": "<p>This has subsequently been proved, it seems, though the original proof had mistakes.</p>",
+        "id": 338701096,
+        "sender_full_name": "John Baez",
+        "timestamp": 1677621886
+    },
+    {
+        "content": "<p>Since every distributive category is a rig category there should be a map from the initial rig category to the initial distributive category.</p>",
+        "id": 338701206,
+        "sender_full_name": "John Baez",
+        "timestamp": 1677621926
+    },
+    {
+        "content": "<p>And if the initial distributive category is the <em>category</em> of finite sets and <em>functions</em>, then this map should be the obvious one!</p>",
+        "id": 338701400,
+        "sender_full_name": "John Baez",
+        "timestamp": 1677621982
     }
 ]

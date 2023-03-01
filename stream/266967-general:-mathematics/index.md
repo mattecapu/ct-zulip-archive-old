@@ -9,7 +9,8 @@ permalink: /stream/266967-general:-mathematics/index.html
 
 ### Topics:
 
-* [on a remark by rovelli](topic/topic_on.20a.20remark.20by.20rovelli.html) (29 messages, latest: Feb 27 2023 at 22:40)
+* [Barry Mitchell](topic/topic_Barry.20Mitchell.html) (6 messages, latest: Feb 28 2023 at 21:40)
+* [on a remark by rovelli](topic/topic_on.20a.20remark.20by.20rovelli.html) (36 messages, latest: Feb 28 2023 at 21:20)
 * [evolutionary game](topic/topic_evolutionary.20game.html) (21 messages, latest: Feb 24 2023 at 01:50)
 * [carrying as a 2-cocycle](topic/topic_carrying.20as.20a.202-cocycle.html) (15 messages, latest: Feb 22 2023 at 18:32)
 * [Open problems in SDG?](topic/topic_Open.20problems.20in.20SDG.3F.html) (3 messages, latest: Feb 22 2023 at 18:25)
@@ -53,7 +54,6 @@ permalink: /stream/266967-general:-mathematics/index.html
 * [there are no functions of 3 variables](topic/topic_there.20are.20no.20functions.20of.203.20variables.html) (38 messages, latest: Apr 22 2021 at 17:23)
 * [catalan numbers and fibonacci numbers](topic/topic_catalan.20numbers.20and.20fibonacci.20numbers.html) (7 messages, latest: Apr 06 2021 at 15:49)
 * [natural numbers](topic/topic_natural.20numbers.html) (48 messages, latest: Mar 28 2021 at 11:55)
-* [Barry Mitchell](topic/topic_Barry.20Mitchell.html) (5 messages, latest: Mar 25 2021 at 11:33)
 * [Set-free notion of factorization system?](topic/topic_Set-free.20notion.20of.20factorization.20system.3F.html) (22 messages, latest: Mar 17 2021 at 14:51)
 * [doubts about "identity on objects" functors](topic/topic_doubts.20about.20.22identity.20on.20objects.22.20functors.html) (6 messages, latest: Mar 12 2021 at 22:49)
 * [Doubts about "identity on objects" Functors](topic/topic_Doubts.20about.20.22identity.20on.20objects.22.20Functors.html) (79 messages, latest: Mar 11 2021 at 16:08)
@@ -81,4 +81,4 @@ permalink: /stream/266967-general:-mathematics/index.html
 * [the 600-cell](topic/topic_the.20600-cell.html) (5 messages, latest: Dec 01 2020 at 16:35)
 * [hermitian matrix over normed division algebra](topic/topic_hermitian.20matrix.20over.20normed.20division.20algebra.html) (8 messages, latest: Sep 28 2020 at 21:19)
 
-<hr><p>Last updated: Feb 28 2023 at 00:50 UTC</p>
+<hr><p>Last updated: Mar 01 2023 at 00:55 UTC</p>

@@ -466,5 +466,119 @@
         "id": 336487593,
         "sender_full_name": "Bob Atkey",
         "timestamp": 1677246693
+    },
+    {
+        "content": "<p><a href=\"https://arxiv.org/pdf/2010.05167.pdf\">https://arxiv.org/pdf/2010.05167.pdf</a></p>",
+        "id": 338484765,
+        "sender_full_name": "Mike Stay",
+        "timestamp": 1677547787
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"275901\">Jules Hedges</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/A.20formal.20programming.20category/near/329689532\">said</a>:</p>\n<blockquote>\n<p>It's clearer in a better-behaved language like Agda, where I <em>think</em> the the types and terms literally do form a category</p>\n</blockquote>\n<p><a href=\"https://github.com/agda/agda-categories/blob/master/src/Categories/Category/Instance/Sets.agda\">Here</a> is an instance of Agda (as in Agda's types and terms) being a category in Jacques Carette's agda-categories library.</p>",
+        "id": 338607119,
+        "sender_full_name": "Stelios Tsampas",
+        "timestamp": 1677595879
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"275900\">Stelios Tsampas</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/A.20formal.20programming.20category/near/338607119\">said</a>:</p>\n<blockquote>\n<p><span class=\"user-mention silent\" data-user-id=\"275901\">Jules Hedges</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/A.20formal.20programming.20category/near/329689532\">said</a>:</p>\n<blockquote>\n<p>It's clearer in a better-behaved language like Agda, where I <em>think</em> the the types and terms literally do form a category</p>\n</blockquote>\n<p><a href=\"https://github.com/agda/agda-categories/blob/master/src/Categories/Category/Instance/Sets.agda\">Here</a> is an instance of Agda (as in Agda's types and terms) being a category in Jacques Carette's agda-categories library.</p>\n</blockquote>\n<p>Here <code>Set</code> can be made into an internal category, but that doesn't necessarily mean that there is a category of its types and terms, those are two different things</p>",
+        "id": 338618688,
+        "sender_full_name": "Josselin Poiret",
+        "timestamp": 1677598477
+    },
+    {
+        "content": "<p>I'm not sure I follow...</p>",
+        "id": 338621488,
+        "sender_full_name": "Stelios Tsampas",
+        "timestamp": 1677599170
+    },
+    {
+        "content": "<p>Ah, I see. Are you saying that the fact that \"Set o\" (as it appears in line 16) forms a category (with the expected functions as morphisms, identity morphisms etc.) is <em>not</em> the same as Agda's types and terms generally being a category?</p>",
+        "id": 338624723,
+        "sender_full_name": "Stelios Tsampas",
+        "timestamp": 1677599978
+    },
+    {
+        "content": "<p>The interpretation of Agda's <code>Set</code> is the class of all sets. (Otherwise, the interpretation of a <code>Category</code> wouldn't be a category. Let's ignore that we are working without quotients/function extensionality so that we need these setoids.)<br>\nThen, the interpretation of the category <code>Set</code> is the category of sets. But the category that is being talked about here is one whose objects are actual types (as in syntax) of Agda.</p>",
+        "id": 338624941,
+        "sender_full_name": "Reid Barton",
+        "timestamp": 1677600024
+    },
+    {
+        "content": "<p>I'm sorry, what do you mean by <code>Set</code> here? The Agda keyword?</p>",
+        "id": 338627597,
+        "sender_full_name": "Stelios Tsampas",
+        "timestamp": 1677600634
+    },
+    {
+        "content": "<p>Right</p>",
+        "id": 338628059,
+        "sender_full_name": "Reid Barton",
+        "timestamp": 1677600738
+    },
+    {
+        "content": "<p>So this is an abbreviation of <code>Set 0</code>. And it forms a <code>Categories.Category</code>. I accept <code>Categories.Category</code> being a suitable notion of the mathematical \"category\". What is the problem again?</p>",
+        "id": 338630127,
+        "sender_full_name": "Stelios Tsampas",
+        "timestamp": 1677601252
+    },
+    {
+        "content": "<p>The category that was being discussed here is one whose objects and morphisms are given by syntax somehow. In particular, whatever the details of the construction are, it must have only countably many objects and morphisms.</p>",
+        "id": 338630965,
+        "sender_full_name": "Reid Barton",
+        "timestamp": 1677601434
+    },
+    {
+        "content": "<p>basically, you're saying that, with Agda as a metatheory, you can prove that <code>Set</code> is a category, but here the question is about which category could be the semantics for Agda's types and terms</p>",
+        "id": 338631252,
+        "sender_full_name": "Josselin Poiret",
+        "timestamp": 1677601497
+    },
+    {
+        "content": "<p>If we take for granted that there is a category <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"bold\">A</mi><mi mathvariant=\"bold\">g</mi><mi mathvariant=\"bold\">d</mi><mi mathvariant=\"bold\">a</mi></mrow><annotation encoding=\"application/x-tex\">\\mathbf{Agda}</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8889em;vertical-align:-0.1944em;\"></span><span class=\"mord\"><span class=\"mord mathbf\">Agda</span></span></span></span></span> of Agda types and terms, then the construction in Jacques' library can be (kind of) seen as describing an <a href=\"https://ncatlab.org/nlab/show/internal%20category\">[[internal category]]</a> in <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"bold\">A</mi><mi mathvariant=\"bold\">g</mi><mi mathvariant=\"bold\">d</mi><mi mathvariant=\"bold\">a</mi></mrow><annotation encoding=\"application/x-tex\">\\mathbf{Agda}</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8889em;vertical-align:-0.1944em;\"></span><span class=\"mord\"><span class=\"mord mathbf\">Agda</span></span></span></span></span> whose object of objects is <code>Set 0</code></p>",
+        "id": 338632899,
+        "sender_full_name": "Dylan Braithwaite",
+        "timestamp": 1677601865
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"284453\">Josselin Poiret</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/A.20formal.20programming.20category/near/338631252\">said</a>:</p>\n<blockquote>\n<p>basically, you're saying that, with Agda as a metatheory, you can prove that <code>Set</code> is a category, but here the question is about which category could be the semantics for Agda's types and terms</p>\n</blockquote>\n<p><code>Categories.Category</code> <code>Sets l</code> of course!</p>",
+        "id": 338641071,
+        "sender_full_name": "Stelios Tsampas",
+        "timestamp": 1677603700
+    },
+    {
+        "content": "<p>I guess what I am saying only works if I consider type theory a self-contained foundations for math, hence for category theory, which I absolutely do. I feel no need to interpret anything beyond the confines of type theory/Agda itself.</p>",
+        "id": 338642095,
+        "sender_full_name": "Stelios Tsampas",
+        "timestamp": 1677603926
+    },
+    {
+        "content": "<p>But I guess the question implies different foundations, which means I'm wrong.</p>",
+        "id": 338643054,
+        "sender_full_name": "Stelios Tsampas",
+        "timestamp": 1677604153
+    },
+    {
+        "content": "<p>I think there's no problem with that. But when you're  comparing Haskell with Agda, and discussing why it's easier to define a syntactic category for Agda than it is for Haskell (as we were above), then you have to work externally to Agda's type theory. Which means that you have to distinguish between a category and a <code>Categories.Category</code>, and between the syntactic notion of an Agda type and a term <code>X : Set</code> in Agda.</p>",
+        "id": 338643534,
+        "sender_full_name": "Dylan Braithwaite",
+        "timestamp": 1677604281
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"275900\">Stelios Tsampas</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/A.20formal.20programming.20category/near/338642095\">said</a>:</p>\n<blockquote>\n<p>I guess what I am saying only works if I consider type theory a self-contained foundations for math, hence for category theory, which I absolutely do. I feel no need to interpret anything beyond the confines of type theory/Agda itself.</p>\n</blockquote>\n<p>But then <code>Set</code> isn't enough internally for programming language semantics, as the OP talked about. That's the main problem with set-based foundations</p>",
+        "id": 338645072,
+        "sender_full_name": "Josselin Poiret",
+        "timestamp": 1677604696
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"284453\">Josselin Poiret</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/A.20formal.20programming.20category/near/338645072\">said</a>:</p>\n<blockquote>\n<p><span class=\"user-mention silent\" data-user-id=\"275900\">Stelios Tsampas</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/A.20formal.20programming.20category/near/338642095\">said</a>:</p>\n<blockquote>\n<p>I guess what I am saying only works if I consider type theory a self-contained foundations for math, hence for category theory, which I absolutely do. I feel no need to interpret anything beyond the confines of type theory/Agda itself.</p>\n</blockquote>\n<p>But then <code>Set</code> isn't enough internally for programming language semantics, as the OP talked about. That's the main problem with set-based foundations</p>\n</blockquote>\n<p>What is the problem with <code>Set</code>?</p>",
+        "id": 338646610,
+        "sender_full_name": "Stelios Tsampas",
+        "timestamp": 1677605114
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"378472\">Dylan Braithwaite</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/A.20formal.20programming.20category/near/338643534\">said</a>:</p>\n<blockquote>\n<p>I think there's no problem with that. But when you're  comparing Haskell with Agda, and discussing why it's easier to define a syntactic category for Agda than it is for Haskell (as we were above), then you have to work externally to Agda's type theory. Which means that you have to distinguish between a category and a <code>Categories.Category</code>, and between the syntactic notion of an Agda type and a term <code>X : Set</code> in Agda.</p>\n</blockquote>\n<p>Well, maybe the question can be phrased as \"Are there acceptable foundations under which Haskell/Agda form categories\", so I'm not 100% convinced that you <em>have to</em>. But I hear you.</p>",
+        "id": 338646851,
+        "sender_full_name": "Stelios Tsampas",
+        "timestamp": 1677605166
     }
 ]

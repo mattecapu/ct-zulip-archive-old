@@ -9,6 +9,7 @@ permalink: /stream/229136-theory:-category-theory/index.html
 
 ### Topics:
 
+* [2-universal morphisms/biadjoints for cheap](topic/topic_2-universal.20morphisms.2Fbiadjoints.20for.20cheap.html) (14 messages, latest: Feb 28 2023 at 09:23)
 * ['semibraidings'](topic/topic_'semibraidings'.html) (10 messages, latest: Feb 27 2023 at 14:59)
 * [Kan extension as lax-functorial](topic/topic_Kan.20extension.20as.20lax-functorial.html) (20 messages, latest: Feb 26 2023 at 21:20)
 * [Is my category a Kleisli category over C](topic/topic_Is.20my.20category.20a.20Kleisli.20category.20over.20C.html) (18 messages, latest: Feb 25 2023 at 22:38)
@@ -18,7 +19,6 @@ permalink: /stream/229136-theory:-category-theory/index.html
 * [A new monad from a strong monad](topic/topic_A.20new.20monad.20from.20a.20strong.20monad.html) (58 messages, latest: Feb 20 2023 at 23:49)
 * [coherence for categorical constructions](topic/topic_coherence.20for.20categorical.20constructions.html) (31 messages, latest: Feb 20 2023 at 16:59)
 * [final functors into filtered categories](topic/topic_final.20functors.20into.20filtered.20categories.html) (9 messages, latest: Feb 15 2023 at 07:29)
-* [2-universal morphisms/biadjoints for cheap](topic/topic_2-universal.20morphisms.2Fbiadjoints.20for.20cheap.html) (13 messages, latest: Feb 15 2023 at 01:20)
 * [Monad composition](topic/topic_Monad.20composition.html) (100 messages, latest: Feb 14 2023 at 15:34)
 * ["Idempotent" monads](topic/topic_.22Idempotent.22.20monads.html) (8 messages, latest: Feb 14 2023 at 07:29)
 * [can one define an adjunction starting from the co/monads?](topic/topic_can.20one.20define.20an.20adjunction.20starting.20from.20the.20co.2Fmonads.3F.html) (9 messages, latest: Feb 13 2023 at 11:14)
@@ -383,4 +383,4 @@ permalink: /stream/229136-theory:-category-theory/index.html
 * [diagrams for application](topic/topic_diagrams.20for.20application.html) (13 messages, latest: Mar 24 2020 at 06:19)
 * [universal constructions](topic/topic_universal.20constructions.html) (8 messages, latest: Mar 23 2020 at 21:06)
 
-<hr><p>Last updated: Feb 28 2023 at 00:50 UTC</p>
+<hr><p>Last updated: Mar 01 2023 at 00:55 UTC</p>
