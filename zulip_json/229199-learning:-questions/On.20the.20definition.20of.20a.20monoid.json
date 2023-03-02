@@ -1,0 +1,374 @@
+[
+    {
+        "content": "<p>Hello, friends. For quite some time, I've been confused with the seemingly many definitions of a monoid in category theory.<br>\nThe first definition I was introduced to was simply the regular set theoretic definition of <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"false\">(</mo><mi>M</mi><mo separator=\"true\">,</mo><mo>⋅</mo><mo separator=\"true\">,</mo><mi>e</mi><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">(M,\\cdot,e)</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mopen\">(</span><span class=\"mord mathnormal\" style=\"margin-right:0.10903em;\">M</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord\">⋅</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord mathnormal\">e</span><span class=\"mclose\">)</span></span></span></span>. Then, to see this as a category, one would say that set <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>M</mi></mrow><annotation encoding=\"application/x-tex\">M</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.10903em;\">M</span></span></span></span> was the only object, the morphisms would be elements of <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>M</mi></mrow><annotation encoding=\"application/x-tex\">M</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.10903em;\">M</span></span></span></span>, and the composition would be <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>⋅</mo></mrow><annotation encoding=\"application/x-tex\">\\cdot</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.4445em;\"></span><span class=\"mord\">⋅</span></span></span></span>.<br>\n(This definition would seem to imply that  a monoid would be any small category with a single object).</p>\n<p>After reading more, we get to a second definition, where a monoid is an object $M \\in \\text{Set}$,  together with a pair of morphisms<br>\n<span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>μ</mi><mo>:</mo><mi>M</mi><mo>×</mo><mi>M</mi><mo>→</mo><mi>M</mi></mrow><annotation encoding=\"application/x-tex\">\\mu: M \\times M \\to M</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.625em;vertical-align:-0.1944em;\"></span><span class=\"mord mathnormal\">μ</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">:</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.7667em;vertical-align:-0.0833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.10903em;\">M</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span><span class=\"mbin\">×</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.10903em;\">M</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">→</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.10903em;\">M</span></span></span></span> and <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>η</mi><mo>:</mo><mn>1</mn><mo>→</mo><mi>M</mi></mrow><annotation encoding=\"application/x-tex\">\\eta: 1 \\to M</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.625em;vertical-align:-0.1944em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.03588em;\">η</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">:</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6444em;\"></span><span class=\"mord\">1</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">→</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.10903em;\">M</span></span></span></span>, which satisfy a commutative diagram. This diagram encodes the idea of associativity and neutral element. From this idea, we get again a triple <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"false\">(</mo><mi>M</mi><mo separator=\"true\">,</mo><mi>μ</mi><mo separator=\"true\">,</mo><mi>η</mi><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">(M, \\mu, \\eta)</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mopen\">(</span><span class=\"mord mathnormal\" style=\"margin-right:0.10903em;\">M</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord mathnormal\">μ</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.03588em;\">η</span><span class=\"mclose\">)</span></span></span></span>, but now we have avoided talking about elements. Yet, our definition of a monoid is not a category anymore.</p>\n<p>How do we then reconcile these two definitions?</p>",
+        "id": 338893337,
+        "sender_full_name": "Davi Sales Barreira",
+        "timestamp": 1677688528
+    },
+    {
+        "content": "<p>I think this this gap is best filled by thinking of the \"internal\" definition of category:<br>\na category consists of</p>\n<ul>\n<li>a set Ob of \"objects\"</li>\n<li>a set Mor of \"morphisms\"</li>\n<li>functions <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>s</mi><mo separator=\"true\">,</mo><mi>t</mi><mspace></mspace><mspace width=\"0.1111em\"/><mo lspace=\"0em\" rspace=\"0.17em\"></mo><mtext> ⁣</mtext><mo lspace=\"0em\" rspace=\"0em\">:</mo><mspace width=\"0.3333em\"/><mi>M</mi><mi>o</mi><mi>r</mi><mo>→</mo><mi>O</mi><mi>b</mi></mrow><annotation encoding=\"application/x-tex\">s, t \\colon Mor \\to Ob</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8778em;vertical-align:-0.1944em;\"></span><span class=\"mord mathnormal\">s</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord mathnormal\">t</span><span class=\"mspace nobreak\"></span><span class=\"mspace\" style=\"margin-right:0.1111em;\"></span><span class=\"mpunct\"></span><span class=\"mspace\" style=\"margin-right:-0.1667em;\"></span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord\"><span class=\"mrel\">:</span></span><span class=\"mspace\" style=\"margin-right:0.3333em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.10903em;\">M</span><span class=\"mord mathnormal\" style=\"margin-right:0.02778em;\">or</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">→</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6944em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.02778em;\">O</span><span class=\"mord mathnormal\">b</span></span></span></span> assigning to each morphism a \"source object\" and \"target object\" respectively</li>\n<li>a function <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>∘</mo><mspace></mspace><mspace width=\"0.1111em\"/><mo lspace=\"0em\" rspace=\"0.17em\"></mo><mtext> ⁣</mtext><mo lspace=\"0em\" rspace=\"0em\">:</mo><mspace width=\"0.3333em\"/><mi>M</mi><mi>o</mi><mi>r</mi><msub><mo>×</mo><mrow><mi>O</mi><mi>b</mi></mrow></msub><mi>M</mi><mi>o</mi><mi>r</mi><mo>→</mo><mi>M</mi><mi>o</mi><mi>r</mi></mrow><annotation encoding=\"application/x-tex\">\\circ \\colon Mor \\times_{Ob} Mor \\to Mor</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8333em;vertical-align:-0.15em;\"></span><span class=\"mord\">∘</span><span class=\"mspace nobreak\"></span><span class=\"mspace\" style=\"margin-right:0.1111em;\"></span><span class=\"mpunct\"></span><span class=\"mspace\" style=\"margin-right:-0.1667em;\"></span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord\"><span class=\"mrel\">:</span></span><span class=\"mspace\" style=\"margin-right:0.3333em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.10903em;\">M</span><span class=\"mord mathnormal\" style=\"margin-right:0.02778em;\">or</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span><span class=\"mbin\"><span class=\"mbin\">×</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.3361em;\"><span style=\"top:-2.55em;margin-left:0em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mathnormal mtight\" style=\"margin-right:0.02778em;\">O</span><span class=\"mord mathnormal mtight\">b</span></span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.10903em;\">M</span><span class=\"mord mathnormal\" style=\"margin-right:0.02778em;\">or</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">→</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.10903em;\">M</span><span class=\"mord mathnormal\" style=\"margin-right:0.02778em;\">or</span></span></span></span> called \"composition\", where <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>M</mi><mi>o</mi><mi>r</mi><msub><mo>×</mo><mrow><mi>O</mi><mi>b</mi></mrow></msub><mi>M</mi><mi>o</mi><mi>r</mi></mrow><annotation encoding=\"application/x-tex\">Mor \\times_{Ob} Mor</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8333em;vertical-align:-0.15em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.10903em;\">M</span><span class=\"mord mathnormal\" style=\"margin-right:0.02778em;\">or</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span><span class=\"mbin\"><span class=\"mbin\">×</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.3361em;\"><span style=\"top:-2.55em;margin-left:0em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mathnormal mtight\" style=\"margin-right:0.02778em;\">O</span><span class=\"mord mathnormal mtight\">b</span></span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.10903em;\">M</span><span class=\"mord mathnormal\" style=\"margin-right:0.02778em;\">or</span></span></span></span> is the pullback of s and t</li>\n</ul>\n<p>satisfying some relations.</p>",
+        "id": 338895646,
+        "sender_full_name": "Joe Moeller",
+        "timestamp": 1677689068
+    },
+    {
+        "content": "<p>Taking the pullback in the definition of composition means you're only defining the composition operation on pairs of maps which happen to coincide: source of one is target of the other.</p>",
+        "id": 338895938,
+        "sender_full_name": "Joe Moeller",
+        "timestamp": 1677689139
+    },
+    {
+        "content": "<p>Then if you ask what happens when |Ob|=1, you'll see they must always coincide, so composition is just a map <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>∘</mo><mspace></mspace><mspace width=\"0.1111em\"/><mo lspace=\"0em\" rspace=\"0.17em\"></mo><mtext> ⁣</mtext><mo lspace=\"0em\" rspace=\"0em\">:</mo><mspace width=\"0.3333em\"/><mi>M</mi><mi>o</mi><mi>r</mi><mo>×</mo><mi>M</mi><mi>o</mi><mi>r</mi><mo>→</mo><mi>M</mi><mi>o</mi><mi>r</mi></mrow><annotation encoding=\"application/x-tex\">\\circ \\colon Mor \\times Mor \\to Mor</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.7667em;vertical-align:-0.0833em;\"></span><span class=\"mord\">∘</span><span class=\"mspace nobreak\"></span><span class=\"mspace\" style=\"margin-right:0.1111em;\"></span><span class=\"mpunct\"></span><span class=\"mspace\" style=\"margin-right:-0.1667em;\"></span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord\"><span class=\"mrel\">:</span></span><span class=\"mspace\" style=\"margin-right:0.3333em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.10903em;\">M</span><span class=\"mord mathnormal\" style=\"margin-right:0.02778em;\">or</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span><span class=\"mbin\">×</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.10903em;\">M</span><span class=\"mord mathnormal\" style=\"margin-right:0.02778em;\">or</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">→</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.10903em;\">M</span><span class=\"mord mathnormal\" style=\"margin-right:0.02778em;\">or</span></span></span></span>, and this is your <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>μ</mi></mrow><annotation encoding=\"application/x-tex\">\\mu</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.625em;vertical-align:-0.1944em;\"></span><span class=\"mord mathnormal\">μ</span></span></span></span>.</p>",
+        "id": 338896281,
+        "sender_full_name": "Joe Moeller",
+        "timestamp": 1677689213
+    },
+    {
+        "content": "<p>Oh, and I forgot to mention units, but I hope the point is clear.</p>",
+        "id": 338896356,
+        "sender_full_name": "Joe Moeller",
+        "timestamp": 1677689230
+    },
+    {
+        "content": "<p>Thanks for the response, <span class=\"user-mention\" data-user-id=\"275914\">@Joe Moeller</span></p>",
+        "id": 338896778,
+        "sender_full_name": "Davi Sales Barreira",
+        "timestamp": 1677689330
+    },
+    {
+        "content": "<p>BTW, it seems that every locally small category with a single object is a monoid.</p>",
+        "id": 338896897,
+        "sender_full_name": "Davi Sales Barreira",
+        "timestamp": 1677689350
+    },
+    {
+        "content": "<p>I suppose that the other implication is not true, right?</p>",
+        "id": 338896962,
+        "sender_full_name": "Davi Sales Barreira",
+        "timestamp": 1677689362
+    },
+    {
+        "content": "<p>I mean, there are monoids that are not locally small categories with a single object...</p>",
+        "id": 338897016,
+        "sender_full_name": "Davi Sales Barreira",
+        "timestamp": 1677689378
+    },
+    {
+        "content": "<p>I guess this would clarify in part the confusion in my part. Because when I was first presented the notion of a monoid, this idea of a category with a single object and morphisms was stuck as \"this IS what a category that is a monoid looks like\".</p>",
+        "id": 338897415,
+        "sender_full_name": "Davi Sales Barreira",
+        "timestamp": 1677689451
+    },
+    {
+        "content": "<p>They're equivalent. For any monoid, you can make up a one-object category. You described it above. Maybe I don't understand your confusion.</p>",
+        "id": 338898097,
+        "sender_full_name": "Joe Moeller",
+        "timestamp": 1677689580
+    },
+    {
+        "content": "<p>Hmm. So for example, what is the definition of a monad as a single object category?</p>",
+        "id": 338898271,
+        "sender_full_name": "Davi Sales Barreira",
+        "timestamp": 1677689623
+    },
+    {
+        "content": "<p>My confusion stems in part from the fact that a monad seems very distinct from this single object with morphisms.</p>",
+        "id": 338898425,
+        "sender_full_name": "Davi Sales Barreira",
+        "timestamp": 1677689649
+    },
+    {
+        "content": "<p>At least the definitions I saw, they said that a monad was a monoid in the category of endofunctors.</p>",
+        "id": 338898511,
+        "sender_full_name": "Davi Sales Barreira",
+        "timestamp": 1677689668
+    },
+    {
+        "content": "<p>Ah, yeah, the point is being obscured by terminology. I might say \"set monoid\" and \"monoid object\" to separate the two things.</p>",
+        "id": 338898620,
+        "sender_full_name": "Joe Moeller",
+        "timestamp": 1677689697
+    },
+    {
+        "content": "<p>A set monoid is a monoid object in Set. A monad is a monoid object in End(C).</p>",
+        "id": 338898729,
+        "sender_full_name": "Joe Moeller",
+        "timestamp": 1677689721
+    },
+    {
+        "content": "<p>But, can a monad be described as a locally small category with a single object?</p>",
+        "id": 338899064,
+        "sender_full_name": "Davi Sales Barreira",
+        "timestamp": 1677689761
+    },
+    {
+        "content": "<p>I mean, a single object <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>F</mi></mrow><annotation encoding=\"application/x-tex\">F</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.13889em;\">F</span></span></span></span> which is the endofunctor, a natural transformation that is the identity, and some composition...</p>",
+        "id": 338899247,
+        "sender_full_name": "Davi Sales Barreira",
+        "timestamp": 1677689792
+    },
+    {
+        "content": "<p>No, that's a thing that works for set monoids specifically. This gap can be bridged too though.</p>",
+        "id": 338899265,
+        "sender_full_name": "Joe Moeller",
+        "timestamp": 1677689796
+    },
+    {
+        "content": "<p>This is sort of a \"hot take\" but I think the idea that a monoid <strong>is</strong> a category with a single object is more confusing than helpful. Rather, there is a correspondence between monoids and categories with a single object.</p>",
+        "id": 338899452,
+        "sender_full_name": "Reid Barton",
+        "timestamp": 1677689847
+    },
+    {
+        "content": "<p>So, I would reconcile your two definitions by throwing away the first one.</p>",
+        "id": 338899510,
+        "sender_full_name": "Reid Barton",
+        "timestamp": 1677689863
+    },
+    {
+        "content": "<p>So... They are not equivalent, only in for monoids in the Set category?</p>",
+        "id": 338899654,
+        "sender_full_name": "Davi Sales Barreira",
+        "timestamp": 1677689894
+    },
+    {
+        "content": "<p>If the definition of a monoid (set, topological, etc) is NOT equivalent to a category with a single object. Then I agree with <span class=\"user-mention\" data-user-id=\"276480\">@Reid Barton</span></p>",
+        "id": 338899845,
+        "sender_full_name": "Davi Sales Barreira",
+        "timestamp": 1677689948
+    },
+    {
+        "content": "<p>I didn't say that they aren't \"equivalent\". Only that they're not the same thing.</p>",
+        "id": 338899880,
+        "sender_full_name": "Reid Barton",
+        "timestamp": 1677689961
+    },
+    {
+        "content": "<p>So they are equivalent??</p>",
+        "id": 338899938,
+        "sender_full_name": "Davi Sales Barreira",
+        "timestamp": 1677689977
+    },
+    {
+        "content": "<p>I mean, not only set monoids,as <span class=\"user-mention\" data-user-id=\"275914\">@Joe Moeller</span>  pointed out.</p>",
+        "id": 338899989,
+        "sender_full_name": "Davi Sales Barreira",
+        "timestamp": 1677689996
+    },
+    {
+        "content": "<p>Monoid objects in Set are equivalent to one-object categories.</p>",
+        "id": 338900035,
+        "sender_full_name": "Joe Moeller",
+        "timestamp": 1677690003
+    },
+    {
+        "content": "<p>Monoid objects in other monoidal categories <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"false\">(</mo><mi>V</mi><mo separator=\"true\">,</mo><mo>⊗</mo><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">(V, \\otimes)</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mopen\">(</span><span class=\"mord mathnormal\" style=\"margin-right:0.22222em;\">V</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord\">⊗</span><span class=\"mclose\">)</span></span></span></span> are equivalent to one-object <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>V</mi></mrow><annotation encoding=\"application/x-tex\">V</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.22222em;\">V</span></span></span></span>-enriched categories.</p>",
+        "id": 338900263,
+        "sender_full_name": "Joe Moeller",
+        "timestamp": 1677690048
+    },
+    {
+        "content": "<p>When you think of a set monoid as a one-object category the monoid is not the object but the set of endomorphisms on this object, with multiplication given by composition. So if you want to see a monoid internal to a category C as a one-object \"category\" you need form an object in C. That's were enriched categories come in the picture.</p>",
+        "id": 338900381,
+        "sender_full_name": "Nicolas Blanco",
+        "timestamp": 1677690070
+    },
+    {
+        "content": "<p>Yes, Nicolas's point is I think the most common stumbling block for understanding this stuff. The one object of a monoid is nothing at all, or perhaps completely arbitrary. Looking at it from another angle, the one object is the thing which your monoid is the endomorphism monoid of.</p>",
+        "id": 338900967,
+        "sender_full_name": "Joe Moeller",
+        "timestamp": 1677690187
+    },
+    {
+        "content": "<p>Haven't studied enriched categories yet (I'll try to take a look)... A monad is a \"monoid\" in the category of endofunctors. Can one  \"categorify\" this monad such that it becomes a category with a single object <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>F</mi></mrow><annotation encoding=\"application/x-tex\">F</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.13889em;\">F</span></span></span></span> (functor), with natural transformations and morphism and a composition operator between them?</p>",
+        "id": 338901659,
+        "sender_full_name": "Davi Sales Barreira",
+        "timestamp": 1677690355
+    },
+    {
+        "content": "<p>Well it can't become an ordinary category, since then it would be an ordinary monoid (= monoid object of Set).</p>",
+        "id": 338902651,
+        "sender_full_name": "Reid Barton",
+        "timestamp": 1677690589
+    },
+    {
+        "content": "<p>A monad on a category <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>C</mi></mrow><annotation encoding=\"application/x-tex\">C</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.07153em;\">C</span></span></span></span> is a <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"false\">[</mo><mi>C</mi><mo separator=\"true\">,</mo><mi>C</mi><mo stretchy=\"false\">]</mo></mrow><annotation encoding=\"application/x-tex\">[C, C]</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mopen\">[</span><span class=\"mord mathnormal\" style=\"margin-right:0.07153em;\">C</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.07153em;\">C</span><span class=\"mclose\">]</span></span></span></span>-enriched category with one object.</p>",
+        "id": 338902880,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1677690640
+    },
+    {
+        "content": "<p>Though this is not a perspective that one encounters very often.</p>",
+        "id": 338902974,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1677690666
+    },
+    {
+        "content": "<p>Ok, thanks!</p>",
+        "id": 338902998,
+        "sender_full_name": "Davi Sales Barreira",
+        "timestamp": 1677690671
+    },
+    {
+        "content": "<p>This is helping me understand what I was not understanding.</p>",
+        "id": 338903078,
+        "sender_full_name": "Davi Sales Barreira",
+        "timestamp": 1677690692
+    },
+    {
+        "content": "<p>I always tried to see how I could write a monad as an ordinary category with a single object.</p>",
+        "id": 338903160,
+        "sender_full_name": "Davi Sales Barreira",
+        "timestamp": 1677690718
+    },
+    {
+        "content": "<p>It's good to know that such view is limited to Sets and alike. Hence, it makes sense that one cannot do this with monads.</p>",
+        "id": 338903349,
+        "sender_full_name": "Davi Sales Barreira",
+        "timestamp": 1677690748
+    },
+    {
+        "content": "<p>Any suggestions on an easy intro to enriched categories?</p>",
+        "id": 338903594,
+        "sender_full_name": "Davi Sales Barreira",
+        "timestamp": 1677690806
+    },
+    {
+        "content": "<p>In careful writing it would be good to distinguish between \"monoid\" (= monoid object of Set) and \"monoid object\" (= potentially in a different monoidal category), in my view.</p>",
+        "id": 338903613,
+        "sender_full_name": "Reid Barton",
+        "timestamp": 1677690812
+    },
+    {
+        "content": "<p>So a \"monoid\" object, is defined \"universally\" like one defines \"terminal\" or \"initial\" objects or \"products\".</p>",
+        "id": 338904006,
+        "sender_full_name": "Davi Sales Barreira",
+        "timestamp": 1677690900
+    },
+    {
+        "content": "<p>Is this correct?</p>",
+        "id": 338904028,
+        "sender_full_name": "Davi Sales Barreira",
+        "timestamp": 1677690906
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"498398\">Davi Sales Barreira</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/On.20the.20definition.20of.20a.20monoid/near/338903594\">said</a>:</p>\n<blockquote>\n<p>Any suggestions on an easy intro to enriched categories?</p>\n</blockquote>\n<p>Do you already know what a monoidal category is?</p>",
+        "id": 338906779,
+        "sender_full_name": "Reid Barton",
+        "timestamp": 1677691561
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276480\">Reid Barton</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/On.20the.20definition.20of.20a.20monoid/near/338906779\">said</a>:</p>\n<blockquote>\n<p><span class=\"user-mention silent\" data-user-id=\"498398\">Davi Sales Barreira</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/On.20the.20definition.20of.20a.20monoid/near/338903594\">said</a>:</p>\n<blockquote>\n<p>Any suggestions on an easy intro to enriched categories?</p>\n</blockquote>\n<p>Do you already know what a monoidal category is?</p>\n</blockquote>\n<p>Not really.</p>",
+        "id": 338907659,
+        "sender_full_name": "Davi Sales Barreira",
+        "timestamp": 1677691763
+    },
+    {
+        "content": "<p>I mean, I have seen the defintion, with the tensor functor and the pentagram. I think I understood the idea behind it. Like how one wants to say that two sets <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"false\">(</mo><mi>A</mi><mo separator=\"true\">,</mo><mi>B</mi><mo stretchy=\"false\">)</mo><mo>×</mo><mi>C</mi></mrow><annotation encoding=\"application/x-tex\">(A,B) \\times C</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mopen\">(</span><span class=\"mord mathnormal\">A</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.05017em;\">B</span><span class=\"mclose\">)</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span><span class=\"mbin\">×</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.07153em;\">C</span></span></span></span> and <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mo>×</mo><mo stretchy=\"false\">(</mo><mi>B</mi><mo separator=\"true\">,</mo><mi>C</mi><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">A\\times(B,C)</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.7667em;vertical-align:-0.0833em;\"></span><span class=\"mord mathnormal\">A</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span><span class=\"mbin\">×</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mopen\">(</span><span class=\"mord mathnormal\" style=\"margin-right:0.05017em;\">B</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.07153em;\">C</span><span class=\"mclose\">)</span></span></span></span> are equivalent.</p>",
+        "id": 338907947,
+        "sender_full_name": "Davi Sales Barreira",
+        "timestamp": 1677691826
+    },
+    {
+        "content": "<p>Hence, the use of natural transformations to apply this \"soft\" equality between such sets.</p>",
+        "id": 338908023,
+        "sender_full_name": "Davi Sales Barreira",
+        "timestamp": 1677691843
+    },
+    {
+        "content": "<p>But I'm not very versed in the subject.</p>",
+        "id": 338908132,
+        "sender_full_name": "Davi Sales Barreira",
+        "timestamp": 1677691862
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"498398\">Davi Sales Barreira</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/On.20the.20definition.20of.20a.20monoid/near/338904006\">said</a>:</p>\n<blockquote>\n<p>So a \"monoid\" object, is defined \"universally\" like one defines \"terminal\" or \"initial\" objects or \"products\".</p>\n</blockquote>\n<p>Not really universally. When we say that an object is define universally it implies that it is unique (up to unique isomorphism) in a given category. While there are many monoid objects in a given category.</p>",
+        "id": 338913273,
+        "sender_full_name": "Nicolas Blanco",
+        "timestamp": 1677693125
+    },
+    {
+        "content": "<p>Maybe take a look at <a href=\"https://arxiv.org/abs/1803.05316\">Seven Sketches</a>, it covers Preorder-enriched categories.</p>",
+        "id": 338913443,
+        "sender_full_name": "Ralph Sarkis",
+        "timestamp": 1677693170
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276120\">Nicolas Blanco</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/On.20the.20definition.20of.20a.20monoid/near/338913273\">said</a>:</p>\n<blockquote>\n<p><span class=\"user-mention silent\" data-user-id=\"498398\">Davi Sales Barreira</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/On.20the.20definition.20of.20a.20monoid/near/338904006\">said</a>:</p>\n<blockquote>\n<p>So a \"monoid\" object, is defined \"universally\" like one defines \"terminal\" or \"initial\" objects or \"products\".</p>\n</blockquote>\n<p>Not really universally. When we say that an object is define universally it implies that it is unique (up to unique isomorphism) in a given category. While there are many monoid objects in a given category.</p>\n</blockquote>\n<p>Thanks <span class=\"user-mention\" data-user-id=\"276120\">@Nicolas Blanco</span> . I've re-read the definitions, and I see what you are saying.</p>",
+        "id": 338914402,
+        "sender_full_name": "Davi Sales Barreira",
+        "timestamp": 1677693436
+    },
+    {
+        "content": "<p>Thanks, <span class=\"user-mention\" data-user-id=\"284005\">@Ralph Sarkis</span> . I've read Seven Sketches a while ago. I remember that I did not quite understand the whole discussion on preorder enriched-cats. Now that I have more experience, I'll take a look again.</p>",
+        "id": 338914659,
+        "sender_full_name": "Davi Sales Barreira",
+        "timestamp": 1677693488
+    },
+    {
+        "content": "<p>Thanks everyone for all the inputs. Things are starting to click together...<br>\nOne more question. I've seen this other definition of a monoid:</p>\n<p>A monoid is a lax monoidal function from the <strong>trivial</strong> category <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn mathvariant=\"double-struck\">1</mn></mrow><annotation encoding=\"application/x-tex\">\\mathbb 1</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6444em;\"></span><span class=\"mord\">1</span></span></span></span> to a monoidal category.</p>\n<p>Is this equivalent to saying that a monoid is an object in a monoidal category, or is it yet another overloading of the term \"monoid\"?</p>",
+        "id": 338915664,
+        "sender_full_name": "Davi Sales Barreira",
+        "timestamp": 1677693736
+    },
+    {
+        "content": "<p>Yes it is equivalent. Since the initial category as only one object the functor picks an object into your monoidal category. The lax monoidality of the functor gives you the maps that make it an internal monoid.</p>",
+        "id": 338916743,
+        "sender_full_name": "Nicolas Blanco",
+        "timestamp": 1677694003
+    },
+    {
+        "content": "<p>I mean, a functor  <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>M</mi><mo>:</mo><mn mathvariant=\"double-struck\">1</mn><mo>→</mo><mrow><mi mathvariant=\"bold\">S</mi><mi mathvariant=\"bold\">e</mi><mi mathvariant=\"bold\">t</mi></mrow></mrow><annotation encoding=\"application/x-tex\">M: \\mathbb 1 \\to \\mathbf{Set}</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.10903em;\">M</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">:</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6444em;\"></span><span class=\"mord\">1</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">→</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6861em;\"></span><span class=\"mord\"><span class=\"mord mathbf\">Set</span></span></span></span></span>  take the object <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>1</mn></mrow><annotation encoding=\"application/x-tex\">1</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6444em;\"></span><span class=\"mord\">1</span></span></span></span> to a set <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi></mrow><annotation encoding=\"application/x-tex\">A</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\">A</span></span></span></span>, and the identity to the identity...</p>",
+        "id": 338917270,
+        "sender_full_name": "Davi Sales Barreira",
+        "timestamp": 1677694158
+    },
+    {
+        "content": "<p>What else is it to act upon if <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn mathvariant=\"double-struck\">1</mn></mrow><annotation encoding=\"application/x-tex\">\\mathbb 1</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6444em;\"></span><span class=\"mord\">1</span></span></span></span> has only this object and this morphism?</p>",
+        "id": 338917452,
+        "sender_full_name": "Davi Sales Barreira",
+        "timestamp": 1677694203
+    },
+    {
+        "content": "<p>It is not just a functor but a lax monoidal functor meaning that you have natural transformations giving functions <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>M</mi><mo stretchy=\"false\">(</mo><mn>1</mn><mo stretchy=\"false\">)</mo><mo>×</mo><mi>M</mi><mo stretchy=\"false\">(</mo><mn>1</mn><mo stretchy=\"false\">)</mo><mo>→</mo><mi>M</mi><mo stretchy=\"false\">(</mo><mn>1</mn><mo>×</mo><mn>1</mn><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">M(1)\\times M(1) \\to M(1 \\times 1)</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.10903em;\">M</span><span class=\"mopen\">(</span><span class=\"mord\">1</span><span class=\"mclose\">)</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span><span class=\"mbin\">×</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.10903em;\">M</span><span class=\"mopen\">(</span><span class=\"mord\">1</span><span class=\"mclose\">)</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">→</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.10903em;\">M</span><span class=\"mopen\">(</span><span class=\"mord\">1</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span><span class=\"mbin\">×</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord\">1</span><span class=\"mclose\">)</span></span></span></span> and <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>1</mn><mo>→</mo><mi>M</mi><mo stretchy=\"false\">(</mo><mn>1</mn><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">1 \\to M(1)</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6444em;\"></span><span class=\"mord\">1</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">→</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.10903em;\">M</span><span class=\"mopen\">(</span><span class=\"mord\">1</span><span class=\"mclose\">)</span></span></span></span>. But since the initial category as only one object <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>1</mn><mo>×</mo><mn>1</mn><mo>=</mo><mn>1</mn></mrow><annotation encoding=\"application/x-tex\">1\\times 1 = 1</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.7278em;vertical-align:-0.0833em;\"></span><span class=\"mord\">1</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span><span class=\"mbin\">×</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6444em;\"></span><span class=\"mord\">1</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6444em;\"></span><span class=\"mord\">1</span></span></span></span>. So the first function gives you multiplication and the second the unit.</p>",
+        "id": 338921246,
+        "sender_full_name": "Nicolas Blanco",
+        "timestamp": 1677695138
+    },
+    {
+        "content": "<p>Isn't the <a href=\"https://ncatlab.org/nlab/show/terminal+category\">terminal category</a> the one with a single object? On the nlab, \"initial category\" appears to redirect to the \"empty category\" <a href=\"https://ncatlab.org/nlab/show/empty+category\">article</a>.</p>",
+        "id": 338924832,
+        "sender_full_name": "David Egolf",
+        "timestamp": 1677696075
+    },
+    {
+        "content": "<p>yes, the initial category has no objects. the terminal category has one object, and only an identity arrow.</p>",
+        "id": 338925302,
+        "sender_full_name": "Joe Moeller",
+        "timestamp": 1677696199
+    },
+    {
+        "content": "<p>Wait, yes sorry. We should replace every initial by terminal in the discussion <span aria-label=\"speak no evil\" class=\"emoji emoji-1f64a\" role=\"img\" title=\"speak no evil\">:speak_no_evil:</span></p>",
+        "id": 338926394,
+        "sender_full_name": "Nicolas Blanco",
+        "timestamp": 1677696507
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"277503\">David Egolf</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/On.20the.20definition.20of.20a.20monoid/near/338924832\">said</a>:</p>\n<blockquote>\n<p>Isn't the <a href=\"https://ncatlab.org/nlab/show/terminal+category\">terminal category</a> the one with a single object? On the nlab, \"initial category\" appears to redirect to the \"empty category\" <a href=\"https://ncatlab.org/nlab/show/empty+category\">article</a>.</p>\n</blockquote>\n<p>My bad. It was \"trivial\" not initial.</p>",
+        "id": 338928247,
+        "sender_full_name": "Davi Sales Barreira",
+        "timestamp": 1677697013
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"498398\">Davi Sales Barreira</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/On.20the.20definition.20of.20a.20monoid/near/338899654\">said</a>:</p>\n<blockquote>\n<p>So... They are not equivalent, only in for monoids in the Set category?</p>\n</blockquote>\n<p>Part of your confusion was due to this: about 98% of mathematicians mean \"monoid object in the monoidal category (Set,<span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>×</mo></mrow><annotation encoding=\"application/x-tex\">\\times</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6667em;vertical-align:-0.0833em;\"></span><span class=\"mord\">×</span></span></span></span>)\" when they say \"monoid\".  For example that would be the definition on Wikipedia. About 2% of mathematicians, or fewer, mean \"monoid object in any monoidal category\" when they say \"monoid\".   So if you're reading different things, or talking to different people, you need to make sure which definition they're using!</p>",
+        "id": 338961303,
+        "sender_full_name": "John Baez",
+        "timestamp": 1677706515
+    },
+    {
+        "content": "<p>I'm sure you have it cleared up by now, but anyone who says \"a monoid is a one-object category\" is using the <em>first</em> definition of \"monoid\", the one that 95% of mathematicians use.  Anyone who says \"a monad is a monoid in...\" is using the <em>second</em> definition.</p>",
+        "id": 338961757,
+        "sender_full_name": "John Baez",
+        "timestamp": 1677706698
+    }
+]

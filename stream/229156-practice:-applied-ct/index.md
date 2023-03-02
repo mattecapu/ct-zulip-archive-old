@@ -9,7 +9,7 @@ permalink: /stream/229156-practice:-applied-ct/index.html
 
 ### Topics:
 
-* [web cats](topic/topic_web.20cats.html) (356 messages, latest: Feb 24 2023 at 16:15)
+* [web cats](topic/topic_web.20cats.html) (357 messages, latest: Mar 01 2023 at 11:27)
 * [around machine learning](topic/topic_around.20machine.20learning.html) (61 messages, latest: Feb 18 2023 at 13:06)
 * [properties of objects (in context of imaging)](topic/topic_properties.20of.20objects.20(in.20context.20of.20imaging).html) (9 messages, latest: Feb 08 2023 at 19:21)
 * [hyperoperators as dynamical systems](topic/topic_hyperoperators.20as.20dynamical.20systems.html) (125 messages, latest: Dec 08 2022 at 21:59)
@@ -149,4 +149,4 @@ permalink: /stream/229156-practice:-applied-ct/index.html
 * [AACT2020](topic/topic_AACT2020.html) (1 message, latest: Mar 24 2020 at 00:56)
 * [welcome](topic/topic_welcome.html) (15 messages, latest: Mar 24 2020 at 00:03)
 
-<hr><p>Last updated: Mar 01 2023 at 00:55 UTC</p>
+<hr><p>Last updated: Mar 02 2023 at 00:54 UTC</p>
