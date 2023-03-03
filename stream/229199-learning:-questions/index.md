@@ -9,7 +9,8 @@ permalink: /stream/229199-learning:-questions/index.html
 
 ### Topics:
 
-* [On the definition of a monoid](topic/topic_On.20the.20definition.20of.20a.20monoid.html) (62 messages, latest: Mar 01 2023 at 21:38)
+* [Hegel dialectics](topic/topic_Hegel.20dialectics.html) (4 messages, latest: Mar 02 2023 at 19:40)
+* [On the definition of a monoid](topic/topic_On.20the.20definition.20of.20a.20monoid.html) (64 messages, latest: Mar 02 2023 at 06:56)
 * [Hegel Dialectics](topic/topic_Hegel.20Dialectics.html) (80 messages, latest: Mar 01 2023 at 01:43)
 * [projective objects](topic/topic_projective.20objects.html) (56 messages, latest: Feb 28 2023 at 23:49)
 * [Rel category](topic/topic_Rel.20category.html) (27 messages, latest: Feb 28 2023 at 18:52)
@@ -836,4 +837,4 @@ permalink: /stream/229199-learning:-questions/index.html
 * [Algebra (Aluffi) exercises](topic/topic_Algebra.20(Aluffi).20exercises.html) (55 messages, latest: Mar 27 2020 at 23:38)
 * [What is category theory about?](topic/topic_What.20is.20category.20theory.20about.3F.html) (16 messages, latest: Mar 26 2020 at 16:03)
 
-<hr><p>Last updated: Mar 02 2023 at 00:54 UTC</p>
+<hr><p>Last updated: Mar 03 2023 at 02:41 UTC</p>
