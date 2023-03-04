@@ -8,9 +8,9 @@ permalink: /index.html
 
 ## Streams:
 
-* [learning: questions](stream/229199-learning:-questions/index.html) (827 topics)
+* [learning: questions](stream/229199-learning:-questions/index.html) (828 topics)
 
-* [theory: category theory](stream/229136-theory:-category-theory/index.html) (373 topics)
+* [theory: category theory](stream/229136-theory:-category-theory/index.html) (374 topics)
 
 * [general](stream/229111-general/index.html) (249 topics)
 
@@ -62,11 +62,11 @@ permalink: /index.html
 
 * [workshop: Polynomial Functors @ Topos](stream/282140-workshop:-Polynomial-Functors-@-Topos/index.html) (22 topics)
 
+* [theory: physics](stream/251538-theory:-physics/index.html) (19 topics)
+
 * [conference: ACT22](stream/330541-conference:-ACT22/index.html) (18 topics)
 
 * [learning: id my structure](stream/311521-learning:-id-my-structure/index.html) (18 topics)
-
-* [theory: physics](stream/251538-theory:-physics/index.html) (18 topics)
 
 * [practice: chemistry](stream/322714-practice:-chemistry/index.html) (17 topics)
 
@@ -104,11 +104,11 @@ permalink: /index.html
 
 * [languages: francais/French](stream/231124-languages:-francais/French/index.html) (9 topics)
 
+* [theory: analysis](stream/281848-theory:-analysis/index.html) (9 topics)
+
 * [languages: italiano/Italian](stream/231111-languages:-italiano/Italian/index.html) (8 topics)
 
 * [theory: algebra & CT](stream/230123-theory:-algebra-&-CT/index.html) (8 topics)
-
-* [theory: analysis](stream/281848-theory:-analysis/index.html) (8 topics)
 
 * [theory: monoids](stream/231815-theory:-monoids/index.html) (8 topics)
 
@@ -180,4 +180,4 @@ permalink: /index.html
 
 * [theory: alternate presentations](stream/233122-theory:-alternate-presentations/index.html) (1 topic)
 
-<hr><p>Last updated: Mar 03 2023 at 02:41 UTC</p>
+<hr><p>Last updated: Mar 04 2023 at 00:47 UTC</p>

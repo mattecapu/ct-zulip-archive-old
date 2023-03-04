@@ -9,9 +9,9 @@ permalink: /stream/274877-practice:-our-work/index.html
 
 ### Topics:
 
+* [Christian Williams](topic/topic_Christian.20Williams.html) (404 messages, latest: Mar 03 2023 at 05:42)
 * [Morgan Rogers](topic/topic_Morgan.20Rogers.html) (46 messages, latest: Mar 03 2023 at 00:46)
 * [John Baez](topic/topic_John.20Baez.html) (976 messages, latest: Mar 03 2023 at 00:36)
-* [Christian Williams](topic/topic_Christian.20Williams.html) (402 messages, latest: Mar 02 2023 at 21:14)
 * [Jean-Baptiste Vienney](topic/topic_Jean-Baptiste.20Vienney.html) (95 messages, latest: Mar 01 2023 at 23:55)
 * [New Invitation](topic/topic_New.20Invitation.html) (2 messages, latest: Feb 15 2023 at 16:38)
 * [Ben Sprott](topic/topic_Ben.20Sprott.html) (8 messages, latest: Feb 09 2023 at 07:05)
@@ -50,4 +50,4 @@ permalink: /stream/274877-practice:-our-work/index.html
 * [Conor Mc Bride](topic/topic_Conor.20Mc.20Bride.html) (60 messages, latest: Apr 08 2021 at 15:15)
 * [thoughts on sharing ideas](topic/topic_thoughts.20on.20sharing.20ideas.html) (20 messages, latest: Jan 31 2021 at 03:05)
 
-<hr><p>Last updated: Mar 03 2023 at 02:41 UTC</p>
+<hr><p>Last updated: Mar 04 2023 at 00:47 UTC</p>
