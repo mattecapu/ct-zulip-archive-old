@@ -9,7 +9,7 @@ permalink: /stream/229199-learning:-questions/index.html
 
 ### Topics:
 
-* [invertible endofunctors inducing an equivalence relationship](topic/topic_invertible.20endofunctors.20inducing.20an.20equivalence.20relationship.html) (19 messages, latest: Mar 03 2023 at 20:48)
+* [invertible endofunctors inducing an equivalence relationship](topic/topic_invertible.20endofunctors.20inducing.20an.20equivalence.20relationship.html) (32 messages, latest: Mar 04 2023 at 21:30)
 * [Hegel dialectics](topic/topic_Hegel.20dialectics.html) (4 messages, latest: Mar 02 2023 at 19:40)
 * [On the definition of a monoid](topic/topic_On.20the.20definition.20of.20a.20monoid.html) (64 messages, latest: Mar 02 2023 at 06:56)
 * [Hegel Dialectics](topic/topic_Hegel.20Dialectics.html) (80 messages, latest: Mar 01 2023 at 01:43)
@@ -838,4 +838,4 @@ permalink: /stream/229199-learning:-questions/index.html
 * [Algebra (Aluffi) exercises](topic/topic_Algebra.20(Aluffi).20exercises.html) (55 messages, latest: Mar 27 2020 at 23:38)
 * [What is category theory about?](topic/topic_What.20is.20category.20theory.20about.3F.html) (16 messages, latest: Mar 26 2020 at 16:03)
 
-<hr><p>Last updated: Mar 04 2023 at 00:47 UTC</p>
+<hr><p>Last updated: Mar 05 2023 at 00:56 UTC</p>

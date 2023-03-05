@@ -9,7 +9,7 @@ permalink: /stream/251538-theory:-physics/index.html
 
 ### Topics:
 
-* [densely defined operators in quantum mechanics](topic/topic_densely.20defined.20operators.20in.20quantum.20mechanics.html) (2 messages, latest: Mar 04 2023 at 00:38)
+* [densely defined operators in quantum mechanics](topic/topic_densely.20defined.20operators.20in.20quantum.20mechanics.html) (13 messages, latest: Mar 04 2023 at 06:14)
 * [Topological QFT on orbifolds?](topic/topic_Topological.20QFT.20on.20orbifolds.3F.html) (8 messages, latest: Feb 08 2023 at 02:02)
 * [synthetic formulation of qm](topic/topic_synthetic.20formulation.20of.20qm.html) (103 messages, latest: Nov 20 2022 at 02:10)
 * [sheaf-theoretic approach to relativistic physics?](topic/topic_sheaf-theoretic.20approach.20to.20relativistic.20physics.3F.html) (2 messages, latest: Sep 12 2022 at 12:58)
@@ -29,4 +29,4 @@ permalink: /stream/251538-theory:-physics/index.html
 * [CFT and Elliptic Cohomology for Physicists](topic/topic_CFT.20and.20Elliptic.20Cohomology.20for.20Physicists.html) (12 messages, latest: Oct 26 2020 at 15:45)
 * [open systems in classical mechanics](topic/topic_open.20systems.20in.20classical.20mechanics.html) (17 messages, latest: Oct 20 2020 at 00:05)
 
-<hr><p>Last updated: Mar 04 2023 at 00:47 UTC</p>
+<hr><p>Last updated: Mar 05 2023 at 00:56 UTC</p>
