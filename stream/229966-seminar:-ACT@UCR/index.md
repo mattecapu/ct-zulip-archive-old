@@ -25,4 +25,4 @@ permalink: /stream/229966-seminar:-ACT@UCR/index.html
 * [April 1st: John Baez](topic/topic_April.201st.3A.20John.20Baez.html) (383 messages, latest: Apr 04 2020 at 21:03)
 * [April 1st: John Baez video](topic/topic_April.201st.3A.20John.20Baez.20video.html) (1 message, latest: Apr 01 2020 at 19:17)
 
-<hr><p>Last updated: Mar 06 2023 at 00:49 UTC</p>
+<hr><p>Last updated: Mar 08 2023 at 00:50 UTC</p>

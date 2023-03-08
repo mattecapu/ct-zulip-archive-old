@@ -9,6 +9,8 @@ permalink: /stream/347879-workshop:-Categories-for-AI/index.html
 
 ### Topics:
 
+* [David Spivak: Dynamic organizational systems](topic/topic_David.20Spivak.3A.20Dynamic.20organizational.20systems.html) (1 message, latest: Mar 06 2023 at 07:58)
+* [Jules Hedges: Introduction to Categorical Cybernetics](topic/topic_Jules.20Hedges.3A.20Introduction.20to.20Categorical.20Cybernetics.html) (1 message, latest: Mar 06 2023 at 07:55)
 * [Week 4: Geometric Deep Learning & Naturality](topic/topic_Week.204.3A.20Geometric.20Deep.20Learning.20.26.20Naturality.html) (7 messages, latest: Feb 03 2023 at 13:42)
 * [Guest Lecture 3: Category Theory Inspired by LLMs](topic/topic_Guest.20Lecture.203.3A.20Category.20Theory.20Inspired.20by.20LLMs.html) (2 messages, latest: Dec 12 2022 at 18:37)
 * [Guest Lecture 1: Neural network layers as parametric spans](topic/topic_Guest.20Lecture.201.3A.20Neural.20network.20layers.20as.20parametric.20spans.html) (8 messages, latest: Nov 25 2022 at 14:29)
@@ -27,4 +29,4 @@ permalink: /stream/347879-workshop:-Categories-for-AI/index.html
 * [Welcome!](topic/topic_Welcome!.html) (1 message, latest: Oct 04 2022 at 21:01)
 * [stream events](topic/topic_stream.20events.html) (1 message, latest: Oct 03 2022 at 17:49)
 
-<hr><p>Last updated: Mar 06 2023 at 00:49 UTC</p>
+<hr><p>Last updated: Mar 08 2023 at 00:50 UTC</p>

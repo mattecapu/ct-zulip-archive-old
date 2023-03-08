@@ -9,7 +9,7 @@ permalink: /stream/229136-theory:-category-theory/index.html
 
 ### Topics:
 
-* [Constant dependent function](topic/topic_Constant.20dependent.20function.html) (23 messages, latest: Mar 05 2023 at 18:58)
+* [Constant dependent function](topic/topic_Constant.20dependent.20function.html) (41 messages, latest: Mar 07 2023 at 20:47)
 * [2-universal morphisms/biadjoints for cheap](topic/topic_2-universal.20morphisms.2Fbiadjoints.20for.20cheap.html) (14 messages, latest: Feb 28 2023 at 09:23)
 * ['semibraidings'](topic/topic_'semibraidings'.html) (10 messages, latest: Feb 27 2023 at 14:59)
 * [Kan extension as lax-functorial](topic/topic_Kan.20extension.20as.20lax-functorial.html) (20 messages, latest: Feb 26 2023 at 21:20)
@@ -384,4 +384,4 @@ permalink: /stream/229136-theory:-category-theory/index.html
 * [diagrams for application](topic/topic_diagrams.20for.20application.html) (13 messages, latest: Mar 24 2020 at 06:19)
 * [universal constructions](topic/topic_universal.20constructions.html) (8 messages, latest: Mar 23 2020 at 21:06)
 
-<hr><p>Last updated: Mar 06 2023 at 00:49 UTC</p>
+<hr><p>Last updated: Mar 08 2023 at 00:50 UTC</p>

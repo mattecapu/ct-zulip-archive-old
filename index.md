@@ -62,19 +62,19 @@ permalink: /index.html
 
 * [workshop: Polynomial Functors @ Topos](stream/282140-workshop:-Polynomial-Functors-@-Topos/index.html) (22 topics)
 
+* [learning: id my structure](stream/311521-learning:-id-my-structure/index.html) (19 topics)
+
 * [theory: physics](stream/251538-theory:-physics/index.html) (19 topics)
 
-* [conference: ACT22](stream/330541-conference:-ACT22/index.html) (18 topics)
+* [workshop: Categories for AI](stream/347879-workshop:-Categories-for-AI/index.html) (19 topics)
 
-* [learning: id my structure](stream/311521-learning:-id-my-structure/index.html) (18 topics)
+* [conference: ACT22](stream/330541-conference:-ACT22/index.html) (18 topics)
 
 * [practice: chemistry](stream/322714-practice:-chemistry/index.html) (17 topics)
 
 * [practice: communication](stream/233322-practice:-communication/index.html) (17 topics)
 
 * [theory: algebraic geometry](stream/231112-theory:-algebraic-geometry/index.html) (17 topics)
-
-* [workshop: Categories for AI](stream/347879-workshop:-Categories-for-AI/index.html) (17 topics)
 
 * [philosophy](stream/229134-philosophy/index.html) (16 topics)
 
@@ -180,4 +180,4 @@ permalink: /index.html
 
 * [theory: alternate presentations](stream/233122-theory:-alternate-presentations/index.html) (1 topic)
 
-<hr><p>Last updated: Mar 06 2023 at 00:49 UTC</p>
+<hr><p>Last updated: Mar 08 2023 at 00:50 UTC</p>
