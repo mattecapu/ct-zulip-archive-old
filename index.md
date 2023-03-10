@@ -14,7 +14,7 @@ permalink: /index.html
 
 * [general](stream/229111-general/index.html) (249 topics)
 
-* [general: events](stream/229141-general:-events/index.html) (159 topics)
+* [general: events](stream/229141-general:-events/index.html) (160 topics)
 
 * [practice: applied ct](stream/229156-practice:-applied-ct/index.html) (139 topics)
 
@@ -22,9 +22,9 @@ permalink: /index.html
 
 * [general: mathematics](stream/266967-general:-mathematics/index.html) (73 topics)
 
-* [theory: algebraic topology & homological algebra](stream/241590-theory:-algebraic-topology-&-homological-algebra/index.html) (71 topics)
+* [general: positions](stream/245502-general:-positions/index.html) (71 topics)
 
-* [general: positions](stream/245502-general:-positions/index.html) (70 topics)
+* [theory: algebraic topology & homological algebra](stream/241590-theory:-algebraic-topology-&-homological-algebra/index.html) (71 topics)
 
 * [seminar: Topos Colloquium](stream/269484-seminar:-Topos-Colloquium/index.html) (64 topics)
 
@@ -180,4 +180,4 @@ permalink: /index.html
 
 * [theory: alternate presentations](stream/233122-theory:-alternate-presentations/index.html) (1 topic)
 
-<hr><p>Last updated: Mar 09 2023 at 00:49 UTC</p>
+<hr><p>Last updated: Mar 10 2023 at 00:49 UTC</p>
