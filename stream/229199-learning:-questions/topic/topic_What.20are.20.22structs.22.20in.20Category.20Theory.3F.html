@@ -1,0 +1,69 @@
+---
+layout: archive
+title: Zulip Chat Archive
+permalink: /stream/229199-learning:-questions/topic/topic_What.20are.20.22structs.22.20in.20Category.20Theory.3F.html
+---
+
+<h2>Stream: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/index.html">learning: questions</a></h2>
+<h3>Topic: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/topic_What.20are.20.22structs.22.20in.20Category.20Theory.3F.html">What are "structs" in Category Theory?</a></h3>
+
+<hr>
+
+<base href="https://categorytheory.zulipchat.com/">
+
+{% raw %}
+
+<a name="340837194"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/What%20are%20%22structs%22%20in%20Category%20Theory%3F/near/340837194" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Davi Sales Barreira <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/topic_What.20are.20.22structs.22.20in.20Category.20Theory.3F.html#340837194">(Mar 10 2023 at 11:43)</a>:</h4>
+<p>Hello, friends. I'm trying to interpret Category Theory within Julia language. One common construction we have is that of a struct. For example:</p>
+<div class="codehilite" data-code-language="Julia"><pre><span></span><code><span class="k">struct</span> <span class="kt">F</span>
+<span class="w">  </span><span class="n">a</span><span class="o">::</span><span class="kt">Int</span>
+<span class="w">  </span><span class="n">b</span><span class="o">::</span><span class="kt">String</span>
+<span class="k">end</span>
+</code></pre></div>
+<p>I was previously interpreting such structs as a Functor once I've defined an <code>fmap</code> function and overloaded the constructor to send types to the <code>F</code> type, like this:</p>
+<div class="codehilite" data-code-language="Julia"><pre><span></span><code><span class="n">F</span><span class="p">(</span><span class="n">T</span><span class="o">::</span><span class="kt">Type</span><span class="p">)</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">F</span>
+<span class="n">fmap</span><span class="p">(</span><span class="n">f</span><span class="p">,</span><span class="n">A</span><span class="o">::</span><span class="kt">F</span><span class="p">)</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">F</span><span class="p">(</span><span class="n">f</span><span class="p">(</span><span class="n">A</span><span class="o">.</span><span class="n">a</span><span class="p">),</span><span class="n">f</span><span class="p">(</span><span class="n">A</span><span class="o">.</span><span class="n">b</span><span class="p">))</span>
+</code></pre></div>
+<p>Is there other interpretation for what these struct are within Category Theory? I haven't figured out what is the equivalent of a struct in Haskell, perhaps this would clear somethings.</p>
+
+
+
+<a name="340838450"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/What%20are%20%22structs%22%20in%20Category%20Theory%3F/near/340838450" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Ralph Sarkis <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/topic_What.20are.20.22structs.22.20in.20Category.20Theory.3F.html#340838450">(Mar 10 2023 at 11:50)</a>:</h4>
+<p>Maybe a product?</p>
+
+
+
+<a name="340840643"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/What%20are%20%22structs%22%20in%20Category%20Theory%3F/near/340840643" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Davi Sales Barreira <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/topic_What.20are.20.22structs.22.20in.20Category.20Theory.3F.html#340840643">(Mar 10 2023 at 12:00)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="284005">Ralph Sarkis</span> <a href="#narrow/stream/229199-learning.3A-questions/topic/What.20are.20.22structs.22.20in.20Category.20Theory.3F/near/340838450">said</a>:</p>
+<blockquote>
+<p>Maybe a product?</p>
+</blockquote>
+<p>Makes sense... Although it is encapsulating the product within another type (object), which is necessary to dispatch functions. What about the fact that fields are named? Do you see any technicallities on that?</p>
+
+
+
+<a name="340842786"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/What%20are%20%22structs%22%20in%20Category%20Theory%3F/near/340842786" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Ralph Sarkis <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/topic_What.20are.20.22structs.22.20in.20Category.20Theory.3F.html#340842786">(Mar 10 2023 at 12:09)</a>:</h4>
+<p>I think F is the object which is the product of Int and String.</p>
+<p>I don't what to do about names. If you define F' with different names, then F and F' will be the same product, but they are different in the way you use it. Maybe if the possible tokens (a and b are what I call tokens) are described in your category in some way, then you could try something.</p>
+
+
+
+<a name="340882923"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/What%20are%20%22structs%22%20in%20Category%20Theory%3F/near/340882923" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nathanael Arkor <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/topic_What.20are.20.22structs.22.20in.20Category.20Theory.3F.html#340882923">(Mar 10 2023 at 14:51)</a>:</h4>
+<p>You can index the product by the set of field names, though this is equivalent to simply indexing by natural numbers.</p>
+
+
+
+<a name="340913458"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/What%20are%20%22structs%22%20in%20Category%20Theory%3F/near/340913458" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Ryan Wisnesky <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/topic_What.20are.20.22structs.22.20in.20Category.20Theory.3F.html#340913458">(Mar 10 2023 at 16:49)</a>:</h4>
+<p>Via the Curry Howard Lambek Correspondence, <a href="https://en.wikipedia.org/wiki/Curry–Howard_correspondence#Curry–Howard–Lambek_correspondence">https://en.wikipedia.org/wiki/Curry–Howard_correspondence#Curry–Howard–Lambek_correspondence</a>, structs/projections become products, tagged unions/case statements become co-products, lambdas and application become exponentials, and recursive/co-recursive types (typically) become the initial algebras/final co-algebras for polynomial endofunctors.  As usual, for products/coproducts you can have binary ones, or use a set of labels to index the field names.</p>
+
+
+
+{% endraw %}
+
+<hr><p>Last updated: Mar 11 2023 at 00:43 UTC</p>

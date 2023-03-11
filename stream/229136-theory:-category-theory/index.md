@@ -9,8 +9,10 @@ permalink: /stream/229136-theory:-category-theory/index.html
 
 ### Topics:
 
-* [Constant dependent function](topic/topic_Constant.20dependent.20function.html) (71 messages, latest: Mar 09 2023 at 20:36)
-* ["expanded" composition](topic/topic_.22expanded.22.20composition.html) (10 messages, latest: Mar 08 2023 at 12:25)
+* [Wreath products](topic/topic_Wreath.20products.html) (6 messages, latest: Mar 10 2023 at 23:32)
+* [Constant dependent function](topic/topic_Constant.20dependent.20function.html) (102 messages, latest: Mar 10 2023 at 22:26)
+* [distributivity of limits and colimits](topic/topic_distributivity.20of.20limits.20and.20colimits.html) (204 messages, latest: Mar 10 2023 at 17:12)
+* ["expanded" composition](topic/topic_.22expanded.22.20composition.html) (11 messages, latest: Mar 10 2023 at 08:06)
 * [2-universal morphisms/biadjoints for cheap](topic/topic_2-universal.20morphisms.2Fbiadjoints.20for.20cheap.html) (14 messages, latest: Feb 28 2023 at 09:23)
 * ['semibraidings'](topic/topic_'semibraidings'.html) (10 messages, latest: Feb 27 2023 at 14:59)
 * [Kan extension as lax-functorial](topic/topic_Kan.20extension.20as.20lax-functorial.html) (20 messages, latest: Feb 26 2023 at 21:20)
@@ -251,7 +253,6 @@ permalink: /stream/229136-theory:-category-theory/index.html
 * [doctrines](topic/topic_doctrines.html) (87 messages, latest: May 05 2021 at 07:14)
 * [categorifying eigenvalues](topic/topic_categorifying.20eigenvalues.html) (33 messages, latest: May 04 2021 at 15:13)
 * [Categorifying eigenvalues](topic/topic_Categorifying.20eigenvalues.html) (29 messages, latest: May 02 2021 at 22:04)
-* [distributivity of limits and colimits](topic/topic_distributivity.20of.20limits.20and.20colimits.html) (201 messages, latest: Apr 30 2021 at 16:15)
 * [braided monoidal categories as tricategories](topic/topic_braided.20monoidal.20categories.20as.20tricategories.html) (3 messages, latest: Apr 28 2021 at 11:33)
 * [representability of multirepresentable functors](topic/topic_representability.20of.20multirepresentable.20functors.html) (11 messages, latest: Apr 25 2021 at 15:24)
 * [tensor product of EM-algebras](topic/topic_tensor.20product.20of.20EM-algebras.html) (42 messages, latest: Apr 20 2021 at 21:25)
@@ -385,4 +386,4 @@ permalink: /stream/229136-theory:-category-theory/index.html
 * [diagrams for application](topic/topic_diagrams.20for.20application.html) (13 messages, latest: Mar 24 2020 at 06:19)
 * [universal constructions](topic/topic_universal.20constructions.html) (8 messages, latest: Mar 23 2020 at 21:06)
 
-<hr><p>Last updated: Mar 10 2023 at 00:49 UTC</p>
+<hr><p>Last updated: Mar 11 2023 at 00:43 UTC</p>

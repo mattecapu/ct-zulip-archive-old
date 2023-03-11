@@ -9,7 +9,7 @@ permalink: /stream/245502-general:-positions/index.html
 
 ### Topics:
 
-* [Topos Institute positions](topic/topic_Topos.20Institute.20positions.html) (1 message, latest: Mar 09 2023 at 05:44)
+* [Topos Institute positions](topic/topic_Topos.20Institute.20positions.html) (2 messages, latest: Mar 10 2023 at 10:08)
 * [Topos Institute summer research positions](topic/topic_Topos.20Institute.20summer.20research.20positions.html) (27 messages, latest: Feb 07 2023 at 00:27)
 * [funded PhD position at Swansea](topic/topic_funded.20PhD.20position.20at.20Swansea.html) (1 message, latest: Jan 29 2023 at 14:13)
 * [Assistant Professorship in Amsterdam](topic/topic_Assistant.20Professorship.20in.20Amsterdam.html) (1 message, latest: Jan 27 2023 at 21:19)
@@ -81,4 +81,4 @@ permalink: /stream/245502-general:-positions/index.html
 * [PhD positions in Estonia](topic/topic_PhD.20positions.20in.20Estonia.html) (1 message, latest: Jun 27 2020 at 18:04)
 * [Companies that hire category people](topic/topic_Companies.20that.20hire.20category.20people.html) (2 messages, latest: May 13 2020 at 03:50)
 
-<hr><p>Last updated: Mar 10 2023 at 00:49 UTC</p>
+<hr><p>Last updated: Mar 11 2023 at 00:43 UTC</p>
