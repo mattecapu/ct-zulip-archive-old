@@ -9,7 +9,7 @@ permalink: /stream/229199-learning:-questions/index.html
 
 ### Topics:
 
-* [What are "structs" in Category Theory?](topic/topic_What.20are.20.22structs.22.20in.20Category.20Theory.3F.html) (6 messages, latest: Mar 10 2023 at 16:49)
+* [What are "structs" in Category Theory?](topic/topic_What.20are.20.22structs.22.20in.20Category.20Theory.3F.html) (8 messages, latest: Mar 11 2023 at 18:33)
 * [invertible endofunctors inducing an equivalence relationship](topic/topic_invertible.20endofunctors.20inducing.20an.20equivalence.20relationship.html) (45 messages, latest: Mar 05 2023 at 22:38)
 * [complex cobordism theory](topic/topic_complex.20cobordism.20theory.html) (1 message, latest: Mar 05 2023 at 20:39)
 * [Hegel dialectics](topic/topic_Hegel.20dialectics.html) (4 messages, latest: Mar 02 2023 at 19:40)
@@ -840,4 +840,4 @@ permalink: /stream/229199-learning:-questions/index.html
 * [Algebra (Aluffi) exercises](topic/topic_Algebra.20(Aluffi).20exercises.html) (55 messages, latest: Mar 27 2020 at 23:38)
 * [What is category theory about?](topic/topic_What.20is.20category.20theory.20about.3F.html) (16 messages, latest: Mar 26 2020 at 16:03)
 
-<hr><p>Last updated: Mar 11 2023 at 00:43 UTC</p>
+<hr><p>Last updated: Mar 12 2023 at 00:49 UTC</p>
