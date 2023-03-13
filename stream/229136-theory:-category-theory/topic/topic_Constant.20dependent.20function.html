@@ -961,6 +961,28 @@ which came up on google. but i confess that i only looked up the rules for like 
 
 
 
+<a name="341315903"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/Constant%20dependent%20function/near/341315903" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/topic_Constant.20dependent.20function.html#341315903">(Mar 12 2023 at 17:49)</a>:</h4>
+<p>Thanks!  The rules for IITT in that paper seem to be basically a modal type theory with an idempotent monad for which any two elements of a modal type are definitionally equal.  That makes perfect sense in <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">S</mi><mi mathvariant="normal">e</mi><mi mathvariant="normal">t</mi></mrow><annotation encoding="application/x-tex">\rm Set</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord"><span class="mord mathrm">Set</span></span></span></span></span> with the <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mo>−</mo><mn>1</mn><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(-1)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord">−</span><span class="mord">1</span><span class="mclose">)</span></span></span></span>-truncation modality.</p>
+<p>But it requires (as is normal for modal type theories) that the codomain type of an irrelevant function also depends irrelevantly on the argument.  They have some remarks on p6 and p12 about some problems that arise if you want an irrelevant function to belong to a relevant codomain:</p>
+<blockquote>
+<p>This is fine in an erasure semantics, but incompatible with our typed semantics in the presence of large eliminations; we will detail the issues in examples 2.3 and 2.8.</p>
+</blockquote>
+<p>I guess "erasure semantics" refers to something like the ZFC representation that I mentioned earlier.  I haven't completely grokked their Example 2.8, but it seems to argue that with irrelevant functions in relevant codomains and a unit type with an <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>η</mi></mrow><annotation encoding="application/x-tex">\eta</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.625em;vertical-align:-0.1944em;"></span><span class="mord mathnormal" style="margin-right:0.03588em;">η</span></span></span></span>-rule it would be impossible to have decidable (transitive) definitional equality.  This suggests that the prospects for a categorical semantics are also rather dim.</p>
+
+
+
+<a name="341343105"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/Constant%20dependent%20function/near/341343105" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Dylan Braithwaite <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/topic_Constant.20dependent.20function.html#341343105">(Mar 12 2023 at 22:39)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="276777">Mike Shulman</span> <a href="#narrow/stream/229136-theory.3A-category-theory/topic/Constant.20dependent.20function/near/341315903">said</a>:</p>
+<blockquote>
+<p>Thanks!  The rules for IITT in that paper seem to be basically a modal type theory with an idempotent monad for which any two elements of a modal type are definitionally equal.  That makes perfect sense in $\rm Set$ with the $(-1)$-truncation modality.</p>
+<p>But it requires (as is normal for modal type theories) that the codomain type of an irrelevant function also depends irrelevantly on the argument.  They have some remarks on p6 and p12 about some problems that arise if you want an irrelevant function to belong to a relevant codomain:</p>
+</blockquote>
+<p>I guess this paper is describing a sort of proof-irrelevance, whereas the notion in Idris is something more like value-irrelevant terms. Where the former forces equalities between irrelevant elements, the latter is just requiring some kind of parametricity in how irrelevant variables are used. I think the rules for it are based on <a href="https://dl.acm.org/doi/10.1145/3209108.3209189">Bob Atkey's QTT paper</a> (which Sam also mentioned earlier in the thread).</p>
+
+
+
 {% endraw %}
 
-<hr><p>Last updated: Mar 12 2023 at 00:49 UTC</p>
+<hr><p>Last updated: Mar 13 2023 at 00:47 UTC</p>

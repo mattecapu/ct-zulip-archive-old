@@ -9,9 +9,9 @@ permalink: /stream/229136-theory:-category-theory/index.html
 
 ### Topics:
 
-* [minimal and maximal objects](topic/topic_minimal.20and.20maximal.20objects.html) (3 messages, latest: Mar 11 2023 at 23:00)
-* [Constant dependent function](topic/topic_Constant.20dependent.20function.html) (104 messages, latest: Mar 11 2023 at 23:00)
-* [pulling back adjoints](topic/topic_pulling.20back.20adjoints.html) (1 message, latest: Mar 11 2023 at 21:06)
+* [Constant dependent function](topic/topic_Constant.20dependent.20function.html) (106 messages, latest: Mar 12 2023 at 22:39)
+* [pulling back adjoints](topic/topic_pulling.20back.20adjoints.html) (8 messages, latest: Mar 12 2023 at 19:39)
+* [minimal and maximal objects](topic/topic_minimal.20and.20maximal.20objects.html) (13 messages, latest: Mar 12 2023 at 17:06)
 * [Wreath products](topic/topic_Wreath.20products.html) (7 messages, latest: Mar 11 2023 at 02:27)
 * [distributivity of limits and colimits](topic/topic_distributivity.20of.20limits.20and.20colimits.html) (204 messages, latest: Mar 10 2023 at 17:12)
 * ["expanded" composition](topic/topic_.22expanded.22.20composition.html) (11 messages, latest: Mar 10 2023 at 08:06)
@@ -388,4 +388,4 @@ permalink: /stream/229136-theory:-category-theory/index.html
 * [diagrams for application](topic/topic_diagrams.20for.20application.html) (13 messages, latest: Mar 24 2020 at 06:19)
 * [universal constructions](topic/topic_universal.20constructions.html) (8 messages, latest: Mar 23 2020 at 21:06)
 
-<hr><p>Last updated: Mar 12 2023 at 00:49 UTC</p>
+<hr><p>Last updated: Mar 13 2023 at 00:47 UTC</p>
