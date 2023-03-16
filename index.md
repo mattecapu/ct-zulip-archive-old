@@ -8,9 +8,9 @@ permalink: /index.html
 
 ## Streams:
 
-* [learning: questions](stream/229199-learning:-questions/index.html) (831 topics)
+* [learning: questions](stream/229199-learning:-questions/index.html) (832 topics)
 
-* [theory: category theory](stream/229136-theory:-category-theory/index.html) (379 topics)
+* [theory: category theory](stream/229136-theory:-category-theory/index.html) (380 topics)
 
 * [general](stream/229111-general/index.html) (249 topics)
 
@@ -20,7 +20,7 @@ permalink: /index.html
 
 * [theory: topos theory](stream/230087-theory:-topos-theory/index.html) (80 topics)
 
-* [general: mathematics](stream/266967-general:-mathematics/index.html) (74 topics)
+* [general: mathematics](stream/266967-general:-mathematics/index.html) (75 topics)
 
 * [general: positions](stream/245502-general:-positions/index.html) (71 topics)
 
@@ -42,9 +42,9 @@ permalink: /index.html
 
 * [MIT Categories Seminar](stream/229457-MIT-Categories-Seminar/index.html) (41 topics)
 
-* [seminar: MIT Categories Seminar](stream/229457-seminar:-MIT-Categories-Seminar/index.html) (41 topics)
+* [practice: our work](stream/274877-practice:-our-work/index.html) (41 topics)
 
-* [practice: our work](stream/274877-practice:-our-work/index.html) (40 topics)
+* [seminar: MIT Categories Seminar](stream/229457-seminar:-MIT-Categories-Seminar/index.html) (41 topics)
 
 * [theory: probability](stream/253118-theory:-probability/index.html) (35 topics)
 
@@ -180,4 +180,4 @@ permalink: /index.html
 
 * [theory: alternate presentations](stream/233122-theory:-alternate-presentations/index.html) (1 topic)
 
-<hr><p>Last updated: Mar 15 2023 at 00:48 UTC</p>
+<hr><p>Last updated: Mar 16 2023 at 00:49 UTC</p>

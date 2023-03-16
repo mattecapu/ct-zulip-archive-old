@@ -9,6 +9,7 @@ permalink: /stream/229199-learning:-questions/index.html
 
 ### Topics:
 
+* [Do physical units 'structure' sets of numbers?](topic/topic_Do.20physical.20units.20'structure'.20sets.20of.20numbers.3F.html) (2 messages, latest: Mar 16 2023 at 00:03)
 * [euler characteristic for infinite CW complexes](topic/topic_euler.20characteristic.20for.20infinite.20CW.20complexes.html) (5 messages, latest: Mar 14 2023 at 01:11)
 * [What are "structs" in Category Theory?](topic/topic_What.20are.20.22structs.22.20in.20Category.20Theory.3F.html) (8 messages, latest: Mar 11 2023 at 18:33)
 * [invertible endofunctors inducing an equivalence relationship](topic/topic_invertible.20endofunctors.20inducing.20an.20equivalence.20relationship.html) (45 messages, latest: Mar 05 2023 at 22:38)
@@ -841,4 +842,4 @@ permalink: /stream/229199-learning:-questions/index.html
 * [Algebra (Aluffi) exercises](topic/topic_Algebra.20(Aluffi).20exercises.html) (55 messages, latest: Mar 27 2020 at 23:38)
 * [What is category theory about?](topic/topic_What.20is.20category.20theory.20about.3F.html) (16 messages, latest: Mar 26 2020 at 16:03)
 
-<hr><p>Last updated: Mar 15 2023 at 00:48 UTC</p>
+<hr><p>Last updated: Mar 16 2023 at 00:49 UTC</p>
