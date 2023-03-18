@@ -1,0 +1,44 @@
+---
+layout: archive
+title: Zulip Chat Archive
+permalink: /stream/229136-theory:-category-theory/topic/topic_polynomial.20functors.20in.20a.20weak.20setting.html
+---
+
+<h2>Stream: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/index.html">theory: category theory</a></h2>
+<h3>Topic: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/topic_polynomial.20functors.20in.20a.20weak.20setting.html">polynomial functors in a weak setting</a></h3>
+
+<hr>
+
+<base href="https://categorytheory.zulipchat.com/">
+
+{% raw %}
+
+<a name="342686023"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/polynomial%20functors%20in%20a%20weak%20setting/near/342686023" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> David Michael Roberts <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/topic_polynomial.20functors.20in.20a.20weak.20setting.html#342686023">(Mar 18 2023 at 00:07)</a>:</h4>
+<p>I've added a bit recently to the nLab page <a href="https://ncatlab.org/nlab/show/polynomial%20functor">[[polynomial functor]]</a>, namely connecting the naive notion of polynomial endofunctor (given by a literal polynomial), which makes sense in an extensive category with finite products (call these for now fp-extensive categories), and the grown-up version involving dependent product etc. This is so one can talk about the existence of W-types in fp-extensive categories, which makes perfect sense; for example people who work on arithmetic universes want W-types corresponding to indexed lists/free monoids.</p>
+<p>Now the one wrinkle is that everything works except that at one point one needs the dependent product along the copairing map <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>⊔</mo><mi>A</mi><mo>→</mo><mi>A</mi></mrow><annotation encoding="application/x-tex">A \sqcup A\to A</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal">A</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">⊔</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal">A</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal">A</span></span></span></span>, which is the fibred product over <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi></mrow><annotation encoding="application/x-tex">A</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal">A</span></span></span></span>. Thus it seems one needs not just finite products, but finite limits, hence a lextensive category, to link the naive and the sophisticated notions of polynomials. However, it's enough to have a <em>partial</em> right adjoint functor, not the full dependent product, since the actual composite defining a polynomial functor in the general sense only needs the dependent product defined on projection maps (or more generally in the image of the pullback functor that's the first factor of the polynomial endofunctor). And then with this slight tweak, naive polynomial endofunctors really are polynomial endofunctors in the full generality where the former are definable.</p>
+<p>So I was wondering if people had any strong feelings or comments about this level of centipede mathematics.</p>
+
+
+
+<a name="342686190"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/polynomial%20functors%20in%20a%20weak%20setting/near/342686190" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> David Michael Roberts <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/topic_polynomial.20functors.20in.20a.20weak.20setting.html#342686190">(Mar 18 2023 at 00:08)</a>:</h4>
+<p>On the nLab at the moment, it only has the material on the <a href="https://ncatlab.org/nlab/show/polynomial%20functor#ExamplesOnLextensiveCats">lextensive case</a>, but I plan to edit this to work more generally, hence raising a discussion here.</p>
+
+
+
+<a name="342686426"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/polynomial%20functors%20in%20a%20weak%20setting/near/342686426" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> David Michael Roberts <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/topic_polynomial.20functors.20in.20a.20weak.20setting.html#342686426">(Mar 18 2023 at 00:10)</a>:</h4>
+<p>I'm aware that for applications (for instance arithmetic universes) one needs the parametrised case, because of the lack of cartesian closedness, and this is something I will look at next, since it's about passing to slice categories, in which finite products are indeed fibred products, hence one might expect to need lextensivity after all. But, again, one is probably (I have yet to check) only needing products of things in the image of the pullback functor to the slice.</p>
+
+
+
+<a name="342686640"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/polynomial%20functors%20in%20a%20weak%20setting/near/342686640" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> David Michael Roberts <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/topic_polynomial.20functors.20in.20a.20weak.20setting.html#342686640">(Mar 18 2023 at 00:13)</a>:</h4>
+<p>I've never been wholly satisfied about discussions about parametrised list objects, or parametrised NNOs, since they have usually been defined in a very nuts-and-bolts way, which is good to see explicitly, but not usually in a high-level conceptual sense (like: it's a W-type, and remains initial among algebras after base change to an arbitrary object), and when I try to sort this out, I can't quite get things to match up.</p>
+
+
+
+{% endraw %}
+
+<hr><p>Last updated: Mar 18 2023 at 00:45 UTC</p>

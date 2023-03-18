@@ -1,0 +1,98 @@
+---
+layout: archive
+title: Zulip Chat Archive
+permalink: /stream/229199-learning:-questions/topic/topic_Extending.20.22Functors.22.20that.20act.20on.20a.20subset.20of.20Set.html
+---
+
+<h2>Stream: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/index.html">learning: questions</a></h2>
+<h3>Topic: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/topic_Extending.20.22Functors.22.20that.20act.20on.20a.20subset.20of.20Set.html">Extending "Functors" that act on a subset of Set</a></h3>
+
+<hr>
+
+<base href="https://categorytheory.zulipchat.com/">
+
+{% raw %}
+
+<a name="342604006"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/Extending%20%22Functors%22%20that%20act%20on%20a%20subset%20of%20Set/near/342604006" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Davi Sales Barreira <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/topic_Extending.20.22Functors.22.20that.20act.20on.20a.20subset.20of.20Set.html#342604006">(Mar 17 2023 at 16:01)</a>:</h4>
+<p>Hello, friends. I'm trying to translate the concepts of Category Theory to Julia programming. In Julia, we have <code>strcutcs</code> which are containers that can be turned into a functor by defining an <code>fmap</code> on it. We can make structs parametric, e.g.</p>
+<div class="codehilite" data-code-language="Julia"><pre><span></span><code><span class="k">struct</span> <span class="kt">F</span><span class="p">{</span><span class="kt">T</span><span class="p">}</span><span class="w"> </span><span class="k">where</span><span class="w"> </span><span class="kt">T</span>
+<span class="w"> </span><span class="n">a</span><span class="o">::</span><span class="kt">T</span>
+<span class="k">end</span>
+<span class="n">fmap</span><span class="p">(</span><span class="n">f</span><span class="p">,</span><span class="w"> </span><span class="n">A</span><span class="o">::</span><span class="kt">F</span><span class="p">)</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">F</span><span class="p">(</span><span class="n">f</span><span class="p">(</span><span class="n">A</span><span class="o">.</span><span class="n">a</span><span class="p">))</span>
+<span class="n">F</span><span class="p">(</span><span class="n">f</span><span class="o">::</span><span class="kt">Function</span><span class="p">)</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">x</span><span class="o">::</span><span class="kt">F</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="n">fmap</span><span class="p">(</span><span class="n">f</span><span class="p">,</span><span class="n">x</span><span class="p">)</span>
+</code></pre></div>
+<p>Thus, we have defined a functor <code>F</code> that takes types <code>T</code> to <code>F{T}</code>, and the morphism mapping is given by the <code>fmap</code>.<br>
+Now, sometimes we define a struct in which the subtype is fixed:</p>
+<div class="codehilite" data-code-language="Julia"><pre><span></span><code><span class="k">struct</span> <span class="kt">F</span><span class="o">****</span>
+<span class="w"> </span><span class="n">a</span><span class="o">::</span><span class="kt">String</span>
+<span class="k">end</span>
+<span class="n">fmap</span><span class="p">(</span><span class="n">f</span><span class="p">,</span><span class="w"> </span><span class="n">A</span><span class="o">::</span><span class="kt">F</span><span class="p">)</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">F</span><span class="p">(</span><span class="n">f</span><span class="p">(</span><span class="n">A</span><span class="o">.</span><span class="n">a</span><span class="p">))</span>
+</code></pre></div>
+<p>Hence, our <code>F</code> is not a functor in this case, since it is not properly defined for every possible object (type). Is there a canonical extension of this type of "semi"-functor? I mean, if we have a "semi-endofunctor"  $F:\mathbf{Set} \to \mathbf{Set}$ where  it is actually defined only in a subset of $\mathbf{Set}$. Is there a canonical extension for such thing? Is there even a name for this stuff?</p>
+
+
+
+<a name="342608676"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/Extending%20%22Functors%22%20that%20act%20on%20a%20subset%20of%20Set/near/342608676" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Josselin Poiret <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/topic_Extending.20.22Functors.22.20that.20act.20on.20a.20subset.20of.20Set.html#342608676">(Mar 17 2023 at 16:18)</a>:</h4>
+<p>Here <code>F</code> (the second one) is just a type isomorphic to <code>String</code>. You're pretty far from a functor, you've just defined one object in the category. Basically, if <code>F</code> is your functor above (the first definition), you computed <code>F(String)</code></p>
+
+
+
+<a name="342609768"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/Extending%20%22Functors%22%20that%20act%20on%20a%20subset%20of%20Set/near/342609768" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Spencer Breiner <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/topic_Extending.20.22Functors.22.20that.20act.20on.20a.20subset.20of.20Set.html#342609768">(Mar 17 2023 at 16:22)</a>:</h4>
+<p>It's worth noting that you can think of a fixed type as a functor.</p>
+<p>The type itself is most naturally represented as a functor from the terminal category <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi mathvariant="monospace">S</mi><mi mathvariant="monospace">t</mi><mi mathvariant="monospace">r</mi><mi mathvariant="monospace">i</mi><mi mathvariant="monospace">n</mi><mi mathvariant="monospace">g</mi></mrow><mo>:</mo><mrow><mn mathvariant="bold">1</mn><mo>→</mo><mi mathvariant="bold">T</mi><mi mathvariant="bold">y</mi><mi mathvariant="bold">p</mi><mi mathvariant="bold">e</mi></mrow></mrow><annotation encoding="application/x-tex">{\tt String}:{\bf 1\to  Type}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8333em;vertical-align:-0.2222em;"></span><span class="mord"><span class="mord"><span class="mord mathtt">String</span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">:</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.8805em;vertical-align:-0.1944em;"></span><span class="mord"><span class="mord"><span class="mord mathbf">1</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mord mathbf">Type</span></span></span></span></span></span> (rather than a functor <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="bold">T</mi><mi mathvariant="bold">y</mi><mi mathvariant="bold">p</mi><mi mathvariant="bold">e</mi><mo>→</mo><mi mathvariant="bold">T</mi><mi mathvariant="bold">y</mi><mi mathvariant="bold">p</mi><mi mathvariant="bold">e</mi></mrow><annotation encoding="application/x-tex">\bf Type \to Type</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8805em;vertical-align:-0.1944em;"></span><span class="mord"><span class="mord mathbf">Type</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mord mathbf">Type</span></span></span></span></span>).</p>
+<p>But then you can compose with the unique map to get back a "constant" functor <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="bold">T</mi><mi mathvariant="bold">y</mi><mi mathvariant="bold">p</mi><mi mathvariant="bold">e</mi><mo>→</mo><mn mathvariant="bold">1</mn><mo>→</mo><mi mathvariant="bold">T</mi><mi mathvariant="bold">y</mi><mi mathvariant="bold">p</mi><mi mathvariant="bold">e</mi></mrow><annotation encoding="application/x-tex">\bf Type \to 1 \to Type</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8805em;vertical-align:-0.1944em;"></span><span class="mord"><span class="mord mathbf">Type</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mord mathbf">1</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mord mathbf">Type</span></span></span></span></span></p>
+
+
+
+<a name="342610073"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/Extending%20%22Functors%22%20that%20act%20on%20a%20subset%20of%20Set/near/342610073" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Josselin Poiret <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/topic_Extending.20.22Functors.22.20that.20act.20on.20a.20subset.20of.20Set.html#342610073">(Mar 17 2023 at 16:23)</a>:</h4>
+<p>iiuc that composite would be written</p>
+<div class="codehilite" data-code-language="Julia"><pre><span></span><code><span class="k">struct</span> <span class="kt">F</span><span class="p">{</span><span class="kt">T</span><span class="p">}</span><span class="w"> </span><span class="k">where</span><span class="w"> </span><span class="kt">T</span>
+<span class="w"> </span><span class="n">a</span><span class="o">::</span><span class="kt">String</span>
+<span class="k">end</span>
+</code></pre></div>
+<p>although i don't know anything about julia</p>
+
+
+
+<a name="342610187"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/Extending%20%22Functors%22%20that%20act%20on%20a%20subset%20of%20Set/near/342610187" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Spencer Breiner <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/topic_Extending.20.22Functors.22.20that.20act.20on.20a.20subset.20of.20Set.html#342610187">(Mar 17 2023 at 16:24)</a>:</h4>
+<p>That looks right to me</p>
+
+
+
+<a name="342610411"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/Extending%20%22Functors%22%20that%20act%20on%20a%20subset%20of%20Set/near/342610411" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Spencer Breiner <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/topic_Extending.20.22Functors.22.20that.20act.20on.20a.20subset.20of.20Set.html#342610411">(Mar 17 2023 at 16:25)</a>:</h4>
+<p><code>F****</code> would be the functor <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn mathvariant="bold">1</mn><mo>→</mo><mi mathvariant="bold">T</mi><mi mathvariant="bold">y</mi><mi mathvariant="bold">p</mi><mi mathvariant="bold">e</mi></mrow><annotation encoding="application/x-tex">\bf 1\to Type</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8805em;vertical-align:-0.1944em;"></span><span class="mord"><span class="mord mathbf">1</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mord mathbf">Type</span></span></span></span></span>, i.e., just another type.</p>
+
+
+
+<a name="342610744"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/Extending%20%22Functors%22%20that%20act%20on%20a%20subset%20of%20Set/near/342610744" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Ralph Sarkis <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/topic_Extending.20.22Functors.22.20that.20act.20on.20a.20subset.20of.20Set.html#342610744">(Mar 17 2023 at 16:26)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="278008">Spencer Breiner</span> <a href="#narrow/stream/229199-learning.3A-questions/topic/Extending.20.22Functors.22.20that.20act.20on.20a.20subset.20of.20Set/near/342609768">said</a>:</p>
+<blockquote>
+<p>But then you can compose with the unique map to get back a "constant" functor <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="bold">T</mi><mi mathvariant="bold">y</mi><mi mathvariant="bold">p</mi><mi mathvariant="bold">e</mi><mo>→</mo><mn mathvariant="bold">1</mn><mo>→</mo><mi mathvariant="bold">T</mi><mi mathvariant="bold">y</mi><mi mathvariant="bold">p</mi><mi mathvariant="bold">e</mi></mrow><annotation encoding="application/x-tex">\bf Type \to 1 \to Type</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8805em;vertical-align:-0.1944em;"></span><span class="mord"><span class="mord mathbf">Type</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mord mathbf">1</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mord mathbf">Type</span></span></span></span></span></p>
+</blockquote>
+<p>But this sends any functions on strings to the identity function, which I guess is not what Davi is defining. The functor should send any function between strings to itself.</p>
+
+
+
+<a name="342612274"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/Extending%20%22Functors%22%20that%20act%20on%20a%20subset%20of%20Set/near/342612274" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Spencer Breiner <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/topic_Extending.20.22Functors.22.20that.20act.20on.20a.20subset.20of.20Set.html#342612274">(Mar 17 2023 at 16:32)</a>:</h4>
+<p>I like Julia a lot, but I do get frustrated by the lack of types on the functions.</p>
+<p>I suppose what you're describing would be the inclusion of the endomorphism monoid of <code>String</code>, and the implicit typing on says it should accept a string <code>A.a</code> and return a string (the input to <code>F</code>).</p>
+
+
+
+<a name="342612485"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/Extending%20%22Functors%22%20that%20act%20on%20a%20subset%20of%20Set/near/342612485" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Spencer Breiner <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/topic_Extending.20.22Functors.22.20that.20act.20on.20a.20subset.20of.20Set.html#342612485">(Mar 17 2023 at 16:33)</a>:</h4>
+<p>You can still map constantly through the identity function, but you're right that this is not the <code>fmap</code> that Davi defined.</p>
+
+
+
+{% endraw %}
+
+<hr><p>Last updated: Mar 18 2023 at 00:45 UTC</p>

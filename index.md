@@ -8,15 +8,15 @@ permalink: /index.html
 
 ## Streams:
 
-* [learning: questions](stream/229199-learning:-questions/index.html) (832 topics)
+* [learning: questions](stream/229199-learning:-questions/index.html) (833 topics)
 
-* [theory: category theory](stream/229136-theory:-category-theory/index.html) (381 topics)
+* [theory: category theory](stream/229136-theory:-category-theory/index.html) (382 topics)
 
 * [general](stream/229111-general/index.html) (249 topics)
 
-* [general: events](stream/229141-general:-events/index.html) (160 topics)
+* [general: events](stream/229141-general:-events/index.html) (161 topics)
 
-* [practice: applied ct](stream/229156-practice:-applied-ct/index.html) (139 topics)
+* [practice: applied ct](stream/229156-practice:-applied-ct/index.html) (140 topics)
 
 * [theory: topos theory](stream/230087-theory:-topos-theory/index.html) (80 topics)
 
@@ -50,7 +50,7 @@ permalink: /index.html
 
 * [Categorical Probability and Statistics 2020 workshop](stream/238032-Categorical-Probability-and-Statistics-2020-workshop/index.html) (34 topics)
 
-* [general: values](stream/241990-general:-values/index.html) (32 topics)
+* [general: values](stream/241990-general:-values/index.html) (33 topics)
 
 * [learning: recommendations](stream/232161-learning:-recommendations/index.html) (29 topics)
 
@@ -62,7 +62,7 @@ permalink: /index.html
 
 * [workshop: Polynomial Functors @ Topos](stream/282140-workshop:-Polynomial-Functors-@-Topos/index.html) (22 topics)
 
-* [learning: id my structure](stream/311521-learning:-id-my-structure/index.html) (19 topics)
+* [learning: id my structure](stream/311521-learning:-id-my-structure/index.html) (20 topics)
 
 * [theory: physics](stream/251538-theory:-physics/index.html) (19 topics)
 
@@ -180,4 +180,4 @@ permalink: /index.html
 
 * [theory: alternate presentations](stream/233122-theory:-alternate-presentations/index.html) (1 topic)
 
-<hr><p>Last updated: Mar 17 2023 at 00:47 UTC</p>
+<hr><p>Last updated: Mar 18 2023 at 00:45 UTC</p>

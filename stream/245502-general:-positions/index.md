@@ -9,6 +9,7 @@ permalink: /stream/245502-general:-positions/index.html
 
 ### Topics:
 
+* [Research associate in Oxford](topic/topic_Research.20associate.20in.20Oxford.html) (2 messages, latest: Mar 17 2023 at 13:10)
 * [Topos Institute positions](topic/topic_Topos.20Institute.20positions.html) (2 messages, latest: Mar 10 2023 at 10:08)
 * [Topos Institute summer research positions](topic/topic_Topos.20Institute.20summer.20research.20positions.html) (27 messages, latest: Feb 07 2023 at 00:27)
 * [funded PhD position at Swansea](topic/topic_funded.20PhD.20position.20at.20Swansea.html) (1 message, latest: Jan 29 2023 at 14:13)
@@ -70,7 +71,6 @@ permalink: /stream/245502-general:-positions/index.html
 * [Open position for a functional programmer](topic/topic_Open.20position.20for.20a.20functional.20programmer.html) (1 message, latest: Nov 11 2020 at 17:00)
 * [Two P2PModels research jobs in Madrid](topic/topic_Two.20P2PModels.20research.20jobs.20in.20Madrid.html) (1 message, latest: Nov 02 2020 at 18:28)
 * [Sharing successful grant applications](topic/topic_Sharing.20successful.20grant.20applications.html) (3 messages, latest: Sep 01 2020 at 15:01)
-* [Research associate in Oxford](topic/topic_Research.20associate.20in.20Oxford.html) (1 message, latest: Aug 22 2020 at 16:13)
 * [Software Engineer position in Uber's Data Platform](topic/topic_Software.20Engineer.20position.20in.20Uber's.20Data.20Platform.html) (1 message, latest: Aug 14 2020 at 23:00)
 * [ACT industry postdoc in Vienna](topic/topic_ACT.20industry.20postdoc.20in.20Vienna.html) (1 message, latest: Aug 12 2020 at 10:32)
 * [RIKEN](topic/topic_RIKEN.html) (1 message, latest: Jul 20 2020 at 04:17)
@@ -81,4 +81,4 @@ permalink: /stream/245502-general:-positions/index.html
 * [PhD positions in Estonia](topic/topic_PhD.20positions.20in.20Estonia.html) (1 message, latest: Jun 27 2020 at 18:04)
 * [Companies that hire category people](topic/topic_Companies.20that.20hire.20category.20people.html) (2 messages, latest: May 13 2020 at 03:50)
 
-<hr><p>Last updated: Mar 17 2023 at 00:47 UTC</p>
+<hr><p>Last updated: Mar 18 2023 at 00:45 UTC</p>
