@@ -169,6 +169,48 @@ Because the measure can't be negative, you know that you can eliminate the cuts,
 
 
 
+<a name="342960177"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/233104-theory%3A%20logic/topic/proofs%20of%20cut-elimination%20theorem/near/342960177" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> সায়ন্তন রায় <a href="https://mattecapu.github.io/ct-zulip-archive/stream/233104-theory:-logic/topic/topic_proofs.20of.20cut-elimination.20theorem.html#342960177">(Mar 19 2023 at 16:14)</a>:</h4>
+<p>I didn't want to open a new topic just for this question because I think that the answer to this question is probably very simple, which, for some reason I am unable to figure out. The question is: Is there any argument to prove that there is no proof of <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">⊥</mi></mrow><annotation encoding="application/x-tex">\bot</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord">⊥</span></span></span></span> in <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="bold">P</mi><mi mathvariant="bold">L</mi><mi mathvariant="bold">K</mi></mrow><annotation encoding="application/x-tex">\mathbf{PLK}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6861em;"></span><span class="mord"><span class="mord mathbf">PLK</span></span></span></span></span> (the propositional fragment of <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="bold">L</mi><mi mathvariant="bold">K</mi></mrow><annotation encoding="application/x-tex">\mathbf{LK}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6861em;"></span><span class="mord"><span class="mord mathbf">LK</span></span></span></span></span>) without using soundness theorem, completeness theorem, subformula property and/or any consequence of cut-elimination theorem?</p>
+
+
+
+<a name="342962463"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/233104-theory%3A%20logic/topic/proofs%20of%20cut-elimination%20theorem/near/342962463" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Ryan Wisnesky <a href="https://mattecapu.github.io/ct-zulip-archive/stream/233104-theory:-logic/topic/topic_proofs.20of.20cut-elimination.20theorem.html#342962463">(Mar 19 2023 at 16:32)</a>:</h4>
+<p>I only know of three ways to prove that there is no proof of false in any system: strong normalization / cut elimination, or construct an explicit model, or show that if there is no model, some other contradiction follows.  How would you try to do this for some other logic / fragment thereof?</p>
+
+
+
+<a name="342963163"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/233104-theory%3A%20logic/topic/proofs%20of%20cut-elimination%20theorem/near/342963163" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> সায়ন্তন রায় <a href="https://mattecapu.github.io/ct-zulip-archive/stream/233104-theory:-logic/topic/topic_proofs.20of.20cut-elimination.20theorem.html#342963163">(Mar 19 2023 at 16:38)</a>:</h4>
+<p><span class="user-mention" data-user-id="281326">@Ryan Wisnesky</span>  I was hoping to proceed in the following manner: Suppose that there is a proof of <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">⊥</mi></mrow><annotation encoding="application/x-tex">\bot</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord">⊥</span></span></span></span> in <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="bold">P</mi><mi mathvariant="bold">L</mi><mi mathvariant="bold">K</mi></mrow><annotation encoding="application/x-tex">\bf{PLK}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6861em;"></span><span class="mord"><span class="mord"><span class="mord mathbf">PLK</span></span></span></span></span></span>. Consider any such proof of minimal height. Then in the last step before <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">⊥</mi></mrow><annotation encoding="application/x-tex">\bot</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord">⊥</span></span></span></span> only <strong>cut</strong> can be used. I was hoping to somehow contradict the minimality assumption, but could not.</p>
+
+
+
+<a name="342964311"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/233104-theory%3A%20logic/topic/proofs%20of%20cut-elimination%20theorem/near/342964311" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Ryan Wisnesky <a href="https://mattecapu.github.io/ct-zulip-archive/stream/233104-theory:-logic/topic/topic_proofs.20of.20cut-elimination.20theorem.html#342964311">(Mar 19 2023 at 16:49)</a>:</h4>
+<p>Yeah, that definitely sounds like a cut-based approach.  Since your logic is propositional, do you really need the machinery of cut elimination, etc?  Maybe a straight inductive argument would work?  It's usually in dealing with quantifiers where the hard part of strong normalization arguments are.</p>
+
+
+
+<a name="342964540"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/233104-theory%3A%20logic/topic/proofs%20of%20cut-elimination%20theorem/near/342964540" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> সায়ন্তন রায় <a href="https://mattecapu.github.io/ct-zulip-archive/stream/233104-theory:-logic/topic/topic_proofs.20of.20cut-elimination.20theorem.html#342964540">(Mar 19 2023 at 16:51)</a>:</h4>
+<p>Unfortunately, that's precisely where I have been stuck.</p>
+
+
+
+<a name="342965795"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/233104-theory%3A%20logic/topic/proofs%20of%20cut-elimination%20theorem/near/342965795" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> সায়ন্তন রায় <a href="https://mattecapu.github.io/ct-zulip-archive/stream/233104-theory:-logic/topic/topic_proofs.20of.20cut-elimination.20theorem.html#342965795">(Mar 19 2023 at 17:02)</a>:</h4>
+<p>Probably what you are saying is to apply induction on the step number and on the statement that at no step do we get a sequent in which both sides are empty.</p>
+
+
+
+<a name="342974357"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/233104-theory%3A%20logic/topic/proofs%20of%20cut-elimination%20theorem/near/342974357" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Ryan Wisnesky <a href="https://mattecapu.github.io/ct-zulip-archive/stream/233104-theory:-logic/topic/topic_proofs.20of.20cut-elimination.20theorem.html#342974357">(Mar 19 2023 at 18:21)</a>:</h4>
+<p>I'm not sure, but the usual advice when stuck on an inductive proof is to strength the inductive hypothesis or induct on something else, so good luck!</p>
+
+
+
 {% endraw %}
 
-<hr><p>Last updated: Mar 19 2023 at 00:33 UTC</p>
+<hr><p>Last updated: Mar 20 2023 at 00:09 UTC</p>

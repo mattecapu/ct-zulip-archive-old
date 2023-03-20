@@ -112,5 +112,47 @@
         "id": 304203988,
         "sender_full_name": "Ulrik Buchholtz",
         "timestamp": 1665842036
+    },
+    {
+        "content": "<p>I didn't want to open a new topic just for this question because I think that the answer to this question is probably very simple, which, for some reason I am unable to figure out. The question is: Is there any argument to prove that there is no proof of <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"normal\">⊥</mi></mrow><annotation encoding=\"application/x-tex\">\\bot</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6944em;\"></span><span class=\"mord\">⊥</span></span></span></span> in <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"bold\">P</mi><mi mathvariant=\"bold\">L</mi><mi mathvariant=\"bold\">K</mi></mrow><annotation encoding=\"application/x-tex\">\\mathbf{PLK}</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6861em;\"></span><span class=\"mord\"><span class=\"mord mathbf\">PLK</span></span></span></span></span> (the propositional fragment of <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"bold\">L</mi><mi mathvariant=\"bold\">K</mi></mrow><annotation encoding=\"application/x-tex\">\\mathbf{LK}</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6861em;\"></span><span class=\"mord\"><span class=\"mord mathbf\">LK</span></span></span></span></span>) without using soundness theorem, completeness theorem, subformula property and/or any consequence of cut-elimination theorem?</p>",
+        "id": 342960177,
+        "sender_full_name": "সায়ন্তন রায়",
+        "timestamp": 1679242477
+    },
+    {
+        "content": "<p>I only know of three ways to prove that there is no proof of false in any system: strong normalization / cut elimination, or construct an explicit model, or show that if there is no model, some other contradiction follows.  How would you try to do this for some other logic / fragment thereof?</p>",
+        "id": 342962463,
+        "sender_full_name": "Ryan Wisnesky",
+        "timestamp": 1679243535
+    },
+    {
+        "content": "<p><span class=\"user-mention\" data-user-id=\"281326\">@Ryan Wisnesky</span>  I was hoping to proceed in the following manner: Suppose that there is a proof of <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"normal\">⊥</mi></mrow><annotation encoding=\"application/x-tex\">\\bot</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6944em;\"></span><span class=\"mord\">⊥</span></span></span></span> in <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"bold\">P</mi><mi mathvariant=\"bold\">L</mi><mi mathvariant=\"bold\">K</mi></mrow><annotation encoding=\"application/x-tex\">\\bf{PLK}</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6861em;\"></span><span class=\"mord\"><span class=\"mord\"><span class=\"mord mathbf\">PLK</span></span></span></span></span></span>. Consider any such proof of minimal height. Then in the last step before <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"normal\">⊥</mi></mrow><annotation encoding=\"application/x-tex\">\\bot</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6944em;\"></span><span class=\"mord\">⊥</span></span></span></span> only <strong>cut</strong> can be used. I was hoping to somehow contradict the minimality assumption, but could not.</p>",
+        "id": 342963163,
+        "sender_full_name": "সায়ন্তন রায়",
+        "timestamp": 1679243934
+    },
+    {
+        "content": "<p>Yeah, that definitely sounds like a cut-based approach.  Since your logic is propositional, do you really need the machinery of cut elimination, etc?  Maybe a straight inductive argument would work?  It's usually in dealing with quantifiers where the hard part of strong normalization arguments are.</p>",
+        "id": 342964311,
+        "sender_full_name": "Ryan Wisnesky",
+        "timestamp": 1679244594
+    },
+    {
+        "content": "<p>Unfortunately, that's precisely where I have been stuck.</p>",
+        "id": 342964540,
+        "sender_full_name": "সায়ন্তন রায়",
+        "timestamp": 1679244712
+    },
+    {
+        "content": "<p>Probably what you are saying is to apply induction on the step number and on the statement that at no step do we get a sequent in which both sides are empty.</p>",
+        "id": 342965795,
+        "sender_full_name": "সায়ন্তন রায়",
+        "timestamp": 1679245333
+    },
+    {
+        "content": "<p>I'm not sure, but the usual advice when stuck on an inductive proof is to strength the inductive hypothesis or induct on something else, so good luck!</p>",
+        "id": 342974357,
+        "sender_full_name": "Ryan Wisnesky",
+        "timestamp": 1679250069
     }
 ]

@@ -9,6 +9,7 @@ permalink: /stream/233104-theory:-logic/index.html
 
 ### Topics:
 
+* [proofs of cut-elimination theorem](topic/topic_proofs.20of.20cut-elimination.20theorem.html) (26 messages, latest: Mar 19 2023 at 18:21)
 * [Bounded quantification over postulated sets](topic/topic_Bounded.20quantification.20over.20postulated.20sets.html) (1 message, latest: Mar 16 2023 at 23:56)
 * [roots as models](topic/topic_roots.20as.20models.html) (26 messages, latest: Feb 26 2023 at 04:36)
 * [Formalizing category theory in HOL](topic/topic_Formalizing.20category.20theory.20in.20HOL.html) (10 messages, latest: Feb 01 2023 at 02:19)
@@ -17,7 +18,6 @@ permalink: /stream/233104-theory:-logic/index.html
 * [Framework for expressing categorical doctrines and logics](topic/topic_Framework.20for.20expressing.20categorical.20doctrines.20and.20logics.html) (8 messages, latest: Nov 11 2022 at 21:04)
 * [linear version of Yoneda?](topic/topic_linear.20version.20of.20Yoneda.3F.html) (13 messages, latest: Nov 08 2022 at 16:12)
 * [Dependent universes?](topic/topic_Dependent.20universes.3F.html) (9 messages, latest: Oct 30 2022 at 17:20)
-* [proofs of cut-elimination theorem](topic/topic_proofs.20of.20cut-elimination.20theorem.html) (19 messages, latest: Oct 15 2022 at 13:53)
 * [Kripke frames (logical vs relational algebraic view)](topic/topic_Kripke.20frames.20(logical.20vs.20relational.20algebraic.20view).html) (5 messages, latest: Oct 14 2022 at 14:30)
 * [Linear version of Yoneda?](topic/topic_Linear.20version.20of.20Yoneda.3F.html) (2 messages, latest: Jun 20 2022 at 22:03)
 * [double categories and logic](topic/topic_double.20categories.20and.20logic.html) (7 messages, latest: Jun 03 2022 at 08:04)
@@ -69,4 +69,4 @@ permalink: /stream/233104-theory:-logic/index.html
 * [Probability as logic](topic/topic_Probability.20as.20logic.html) (63 messages, latest: Apr 15 2020 at 12:33)
 * [stream events](topic/topic_stream.20events.html) (1 message, latest: Apr 10 2020 at 12:32)
 
-<hr><p>Last updated: Mar 19 2023 at 00:33 UTC</p>
+<hr><p>Last updated: Mar 20 2023 at 00:09 UTC</p>

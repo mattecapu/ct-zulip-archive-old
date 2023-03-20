@@ -9,8 +9,8 @@ permalink: /stream/274877-practice:-our-work/index.html
 
 ### Topics:
 
+* [Evan Patterson](topic/topic_Evan.20Patterson.html) (17 messages, latest: Mar 19 2023 at 23:10)
 * [Morgan Rogers](topic/topic_Morgan.20Rogers.html) (52 messages, latest: Mar 18 2023 at 12:30)
-* [Evan Patterson](topic/topic_Evan.20Patterson.html) (2 messages, latest: Mar 18 2023 at 06:50)
 * [Christoph Dorn](topic/topic_Christoph.20Dorn.html) (2 messages, latest: Mar 16 2023 at 11:25)
 * [Christian Williams](topic/topic_Christian.20Williams.html) (443 messages, latest: Mar 14 2023 at 09:05)
 * [Mike Shulman](topic/topic_Mike.20Shulman.html) (157 messages, latest: Mar 12 2023 at 17:39)
@@ -52,4 +52,4 @@ permalink: /stream/274877-practice:-our-work/index.html
 * [Conor Mc Bride](topic/topic_Conor.20Mc.20Bride.html) (60 messages, latest: Apr 08 2021 at 15:15)
 * [thoughts on sharing ideas](topic/topic_thoughts.20on.20sharing.20ideas.html) (20 messages, latest: Jan 31 2021 at 03:05)
 
-<hr><p>Last updated: Mar 19 2023 at 00:33 UTC</p>
+<hr><p>Last updated: Mar 20 2023 at 00:09 UTC</p>
