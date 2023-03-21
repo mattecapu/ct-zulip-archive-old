@@ -9,7 +9,7 @@ permalink: /stream/229136-theory:-category-theory/index.html
 
 ### Topics:
 
-* [Iterated Plethories](topic/topic_Iterated.20Plethories.html) (1 message, latest: Mar 18 2023 at 17:30)
+* [Iterated Plethories](topic/topic_Iterated.20Plethories.html) (2 messages, latest: Mar 20 2023 at 17:08)
 * [polynomial functors in a weak setting](topic/topic_polynomial.20functors.20in.20a.20weak.20setting.html) (4 messages, latest: Mar 18 2023 at 00:13)
 * [When are two morphisms of polynomials equivalent?](topic/topic_When.20are.20two.20morphisms.20of.20polynomials.20equivalent.3F.html) (5 messages, latest: Mar 16 2023 at 23:29)
 * [Connected elements of the category of elements](topic/topic_Connected.20elements.20of.20the.20category.20of.20elements.html) (9 messages, latest: Mar 16 2023 at 00:47)
@@ -393,4 +393,4 @@ permalink: /stream/229136-theory:-category-theory/index.html
 * [diagrams for application](topic/topic_diagrams.20for.20application.html) (13 messages, latest: Mar 24 2020 at 06:19)
 * [universal constructions](topic/topic_universal.20constructions.html) (8 messages, latest: Mar 23 2020 at 21:06)
 
-<hr><p>Last updated: Mar 20 2023 at 00:30 UTC</p>
+<hr><p>Last updated: Mar 21 2023 at 00:10 UTC</p>

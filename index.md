@@ -70,13 +70,13 @@ permalink: /index.html
 
 * [conference: ACT22](stream/330541-conference:-ACT22/index.html) (18 topics)
 
+* [philosophy](stream/229134-philosophy/index.html) (17 topics)
+
 * [practice: chemistry](stream/322714-practice:-chemistry/index.html) (17 topics)
 
 * [practice: communication](stream/233322-practice:-communication/index.html) (17 topics)
 
 * [theory: algebraic geometry](stream/231112-theory:-algebraic-geometry/index.html) (17 topics)
-
-* [philosophy](stream/229134-philosophy/index.html) (16 topics)
 
 * [ACT@UCR seminar](stream/229966-ACT@UCR-seminar/index.html) (15 topics)
 
@@ -180,4 +180,4 @@ permalink: /index.html
 
 * [theory: alternate presentations](stream/233122-theory:-alternate-presentations/index.html) (1 topic)
 
-<hr><p>Last updated: Mar 20 2023 at 00:30 UTC</p>
+<hr><p>Last updated: Mar 21 2023 at 00:10 UTC</p>
