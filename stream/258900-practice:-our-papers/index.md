@@ -9,6 +9,7 @@ permalink: /stream/258900-practice:-our-papers/index.html
 
 ### Topics:
 
+* [Graded Differential Categories and GDiLL](topic/topic_Graded.20Differential.20Categories.20and.20GDiLL.html) (11 messages, latest: Mar 21 2023 at 05:07)
 * [The formal theory of relative monads](topic/topic_The.20formal.20theory.20of.20relative.20monads.html) (1 message, latest: Feb 28 2023 at 14:21)
 * [Toposes of Topological Monoid Actions](topic/topic_Toposes.20of.20Topological.20Monoid.20Actions.html) (10 messages, latest: Feb 23 2023 at 10:05)
 * [Towards a Higher-Order Mathematical Operational Semantics](topic/topic_Towards.20a.20Higher-Order.20Mathematical.20Operational.20Semantics.html) (20 messages, latest: Nov 10 2022 at 23:48)
@@ -62,4 +63,4 @@ permalink: /stream/258900-practice:-our-papers/index.html
 * [Functorial semantics for partial theories](topic/topic_Functorial.20semantics.20for.20partial.20theories.html) (30 messages, latest: Nov 29 2020 at 08:46)
 * [Coends of higher arity](topic/topic_Coends.20of.20higher.20arity.html) (3 messages, latest: Sep 26 2020 at 16:28)
 
-<hr><p>Last updated: Mar 21 2023 at 00:28 UTC</p>
+<hr><p>Last updated: Mar 22 2023 at 00:08 UTC</p>
