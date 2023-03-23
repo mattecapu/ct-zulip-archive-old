@@ -62,7 +62,7 @@ permalink: /index.html
 
 * [workshop: Polynomial Functors @ Topos](stream/282140-workshop:-Polynomial-Functors-@-Topos/index.html) (22 topics)
 
-* [learning: id my structure](stream/311521-learning:-id-my-structure/index.html) (20 topics)
+* [learning: id my structure](stream/311521-learning:-id-my-structure/index.html) (21 topics)
 
 * [theory: physics](stream/251538-theory:-physics/index.html) (19 topics)
 
@@ -180,4 +180,4 @@ permalink: /index.html
 
 * [theory: alternate presentations](stream/233122-theory:-alternate-presentations/index.html) (1 topic)
 
-<hr><p>Last updated: Mar 22 2023 at 00:28 UTC</p>
+<hr><p>Last updated: Mar 23 2023 at 00:08 UTC</p>
