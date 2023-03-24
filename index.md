@@ -14,13 +14,13 @@ permalink: /index.html
 
 * [general](stream/229111-general/index.html) (249 topics)
 
-* [general: events](stream/229141-general:-events/index.html) (161 topics)
+* [general: events](stream/229141-general:-events/index.html) (162 topics)
 
 * [practice: applied ct](stream/229156-practice:-applied-ct/index.html) (140 topics)
 
 * [theory: topos theory](stream/230087-theory:-topos-theory/index.html) (80 topics)
 
-* [general: mathematics](stream/266967-general:-mathematics/index.html) (75 topics)
+* [general: mathematics](stream/266967-general:-mathematics/index.html) (76 topics)
 
 * [general: positions](stream/245502-general:-positions/index.html) (71 topics)
 
@@ -40,7 +40,7 @@ permalink: /index.html
 
 * [theory: type theory](stream/229952-theory:-type-theory/index.html) (46 topics)
 
-* [practice: our work](stream/274877-practice:-our-work/index.html) (42 topics)
+* [practice: our work](stream/274877-practice:-our-work/index.html) (43 topics)
 
 * [MIT Categories Seminar](stream/229457-MIT-Categories-Seminar/index.html) (41 topics)
 
@@ -180,4 +180,4 @@ permalink: /index.html
 
 * [theory: alternate presentations](stream/233122-theory:-alternate-presentations/index.html) (1 topic)
 
-<hr><p>Last updated: Mar 23 2023 at 00:29 UTC</p>
+<hr><p>Last updated: Mar 24 2023 at 00:09 UTC</p>

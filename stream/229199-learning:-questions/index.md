@@ -9,7 +9,8 @@ permalink: /stream/229199-learning:-questions/index.html
 
 ### Topics:
 
-* [Do physical units 'structure' sets of numbers?](topic/topic_Do.20physical.20units.20'structure'.20sets.20of.20numbers.3F.html) (19 messages, latest: Mar 21 2023 at 22:03)
+* [Do physical units 'structure' sets of numbers?](topic/topic_Do.20physical.20units.20'structure'.20sets.20of.20numbers.3F.html) (23 messages, latest: Mar 23 2023 at 23:20)
+* [A formal programming category](topic/topic_A.20formal.20programming.20category.html) (98 messages, latest: Mar 23 2023 at 20:30)
 * [Continuations and polynomials](topic/topic_Continuations.20and.20polynomials.html) (12 messages, latest: Mar 21 2023 at 16:59)
 * [Extending "Functors" that act on a subset of Set](topic/topic_Extending.20.22Functors.22.20that.20act.20on.20a.20subset.20of.20Set.html) (9 messages, latest: Mar 17 2023 at 16:33)
 * [euler characteristic for infinite CW complexes](topic/topic_euler.20characteristic.20for.20infinite.20CW.20complexes.html) (5 messages, latest: Mar 14 2023 at 01:11)
@@ -21,7 +22,6 @@ permalink: /stream/229199-learning:-questions/index.html
 * [Hegel Dialectics](topic/topic_Hegel.20Dialectics.html) (80 messages, latest: Mar 01 2023 at 01:43)
 * [projective objects](topic/topic_projective.20objects.html) (56 messages, latest: Feb 28 2023 at 23:49)
 * [Rel category](topic/topic_Rel.20category.html) (27 messages, latest: Feb 28 2023 at 18:52)
-* [A formal programming category](topic/topic_A.20formal.20programming.20category.html) (97 messages, latest: Feb 28 2023 at 17:26)
 * [morphisms to products](topic/topic_morphisms.20to.20products.html) (38 messages, latest: Feb 24 2023 at 17:43)
 * [why rings need identities](topic/topic_why.20rings.20need.20identities.html) (46 messages, latest: Feb 24 2023 at 05:27)
 * [Beginner questions](topic/topic_Beginner.20questions.html) (32 messages, latest: Feb 22 2023 at 18:09)
@@ -844,4 +844,4 @@ permalink: /stream/229199-learning:-questions/index.html
 * [Algebra (Aluffi) exercises](topic/topic_Algebra.20(Aluffi).20exercises.html) (55 messages, latest: Mar 27 2020 at 23:38)
 * [What is category theory about?](topic/topic_What.20is.20category.20theory.20about.3F.html) (16 messages, latest: Mar 26 2020 at 16:03)
 
-<hr><p>Last updated: Mar 23 2023 at 00:29 UTC</p>
+<hr><p>Last updated: Mar 24 2023 at 00:09 UTC</p>
