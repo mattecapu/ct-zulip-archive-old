@@ -136,5 +136,89 @@
         "id": 344121325,
         "sender_full_name": "Jacques Carette",
         "timestamp": 1679613652
+    },
+    {
+        "content": "<p>Indeed, just because the velocity is constrained by the confinement of the gas doesn't make that value meaningless; the container could be moving relative to the observer, say.<br>\nI wonder if you can come up with a more clear-cut example of an object which can have some physical dimensions associated to it and not others.</p>",
+        "id": 344191048,
+        "sender_full_name": "Morgan Rogers (he/him)",
+        "timestamp": 1679646836
+    },
+    {
+        "content": "<p><span class=\"user-mention\" data-user-id=\"277473\">@Morgan Rogers (he/him)</span> I can't come up with such an example - but figured that might be a lack of imagination rather than a truism. Or perhaps all 'physical' objects can have all attributes with units, which is what separates them from the concepts that don't have a physical realisation?</p>\n<p>This isn't a philosophy question: I'm writing software for modelling many different things, and I'm trying to create a 'type system' beyond the usual ones (i.e. units and what's usually the topic of 'type theory', both which are already implemented) that uses a fine ontology to decide whether it is meaningful to say that a 'specification has conductance' or that a 'glass of water is a topic from literature' or that 'a gas has a volume'.</p>",
+        "id": 344235672,
+        "sender_full_name": "Jacques Carette",
+        "timestamp": 1679657692
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"296322\">Jacques Carette</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/Do.20physical.20units.20'structure'.20sets.20of.20numbers.3F/near/344235672\">said</a>:</p>\n<blockquote>\n<p><span class=\"user-mention silent\" data-user-id=\"277473\">Morgan Rogers (he/him)</span> I can't come up with such an example - but figured that might be a lack of imagination rather than a truism. Or perhaps all 'physical' objects can have all attributes with units, which is what separates them from the concepts that don't have a physical realisation?</p>\n</blockquote>\n<p>I asked chatGPT about this, and it came up with an interesting example. A metal cube has a naturally defined length, width and height. But a metal sphere has a radius instead... at least it doesn't seem as natural to assign it a length, width or height. It also suggested, in a similar line of thought, that a cotton ball has a clearly defined mass, but measurements of its shape that use units would be less simple.</p>",
+        "id": 344297182,
+        "sender_full_name": "David Egolf",
+        "timestamp": 1679671355
+    },
+    {
+        "content": "<p>I guess part of the question is, do we care if it is (1) simple and natural that an object can be measured using units of a certain kind? Or do we care if (2) there is any way at all that an object can be measured using units of a certain kind, however complex?</p>\n<p>In addition, are we making a distinction between attributes that use the same unit to measure different things (e.g. a sphere has a radius, a cube has a height, but both of these quantities are in units of length)?</p>",
+        "id": 344297892,
+        "sender_full_name": "David Egolf",
+        "timestamp": 1679671487
+    },
+    {
+        "content": "<p>I think it also matters what we consider to be an \"object\" (or a \"physical object\"). A recording of a piece of music has a duration, but no obvious height or width.</p>",
+        "id": 344298767,
+        "sender_full_name": "David Egolf",
+        "timestamp": 1679671650
+    },
+    {
+        "content": "<p>That music example is nice! And you're also right to point out the subtle difference between assigning values in certain units to an object and assigning <em>directly comparable</em> values to objects.</p>",
+        "id": 344306118,
+        "sender_full_name": "Morgan Rogers (he/him)",
+        "timestamp": 1679673212
+    },
+    {
+        "content": "<p>I agree - very nice! Yes, that's exactly the topic I'm thinking about. </p>\n<p>From the point of view of a \"type system\", all I care about is removing obvious 'category errors'. So 'not natural' examples would be allowed, as a first step.</p>\n<p>And yes, I am very much interested in later not allowing length and radius added (unless there's a physical configuration that makes it meaningful). I can come up with an ad hoc way of describing that (using coordinate systems), but it's unsatisfying as it indeed feels 'ad hoc'.</p>\n<p>What is puzzling to me is that such a system of 'quantity types' does not already exist.</p>",
+        "id": 344309141,
+        "sender_full_name": "Jacques Carette",
+        "timestamp": 1679673889
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"296322\">Jacques Carette</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/Do.20physical.20units.20'structure'.20sets.20of.20numbers.3F/near/344309141\">said</a>:</p>\n<blockquote>\n<p>What is puzzling to me is that such a system of 'quantity types' does not already exist.</p>\n</blockquote>\n<p>Has <a href=\"https://drops.dagstuhl.de/opus/volltexte/2015/5154/\">this paper</a> been mentioned?</p>",
+        "id": 344310114,
+        "sender_full_name": "Sam Speight",
+        "timestamp": 1679674083
+    },
+    {
+        "content": "<blockquote>\n<p>What is puzzling to me is that such a system of 'quantity types' does not already exist.</p>\n</blockquote>\n<p>I haven't been completely following the conversation, so I may be missing the point, but type systems that incorporate units of measure do exist. For instance, F# has built in <a href=\"https://learn.microsoft.com/en-us/dotnet/fsharp/language-reference/units-of-measure\">support for units of measure</a>.</p>",
+        "id": 344311133,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1679674327
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"280312\">Sam Speight</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/Do.20physical.20units.20'structure'.20sets.20of.20numbers.3F/near/344310114\">said</a>:</p>\n<blockquote>\n<p><span class=\"user-mention silent\" data-user-id=\"296322\">Jacques Carette</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/Do.20physical.20units.20'structure'.20sets.20of.20numbers.3F/near/344309141\">said</a>:</p>\n<blockquote>\n<p>What is puzzling to me is that such a system of 'quantity types' does not already exist.</p>\n</blockquote>\n<p>Has <a href=\"https://drops.dagstuhl.de/opus/volltexte/2015/5154/\">this paper</a> been mentioned?</p>\n</blockquote>\n<p>There's also this related paper: <a href=\"https://strathprints.strath.ac.uk/76626/\">Type systems for programs respecting dimensions</a></p>",
+        "id": 344323714,
+        "sender_full_name": "Dylan Braithwaite",
+        "timestamp": 1679677428
+    },
+    {
+        "content": "<p><span class=\"user-mention\" data-user-id=\"280312\">@Sam Speight</span> <span class=\"user-mention\" data-user-id=\"276092\">@Nathanael Arkor</span> <span class=\"user-mention\" data-user-id=\"378472\">@Dylan Braithwaite</span> what I mean is  that units are only part of the story. Units has been done in various programming languages for 30 years (none mainstream until the quasi-mainstream F#). Once you actually use your units in real situations, you discover that it is far from sufficient.</p>\n<p>The wikipedia page on SI has the following good examples:</p>\n<blockquote>\n<p>For example, the joule per kelvin (symbol J/K) is the coherent SI unit for two distinct quantities: heat capacity and entropy; another example is the ampere, which is the coherent SI unit for both electric current and magnetomotive force. This is why it is important not to use the unit alone to specify the quantity.</p>\n</blockquote>\n<p>Merely having units will not save you from adding electric current to magnetomotic force. There is a more fundamental set of 'physical quantities'.</p>\n<p>Also: I know the authors of several of those papers quite well; they did pretty math there. Unfortunately, they didn't use the work \"for real\", else they would have realized that what they did was just step 1.  I could add a good dozen more papers on units in CS, none of which cite each other!</p>\n<p>However, this did help me find the <a href=\"https://en.wikipedia.org/wiki/International_System_of_Quantities\">International System of Quantities</a> and a [List of physical quantities] which both seems to be related.</p>",
+        "id": 344332935,
+        "sender_full_name": "Jacques Carette",
+        "timestamp": 1679679740
+    },
+    {
+        "content": "<p>I might be missing the point, but isn’t the distinction you’re making just a case of adding more “units”? i.e. in the example you give, if you really want heat capacity and entropy to be considered incompatible then you could just add new ‘generating units’ for them. It might be that there are quantities derivable from both of heat capacity and entropy that coincide, but then this would just be a case of adding equations to allow this, to the presentation of the group generating your unit system.</p>",
+        "id": 344342466,
+        "sender_full_name": "Dylan Braithwaite",
+        "timestamp": 1679682759
+    },
+    {
+        "content": "<p>I'm definitely not arguing that this is a definitive solution to the problem. Physics seems complicated enough that there could be no complete equational theory of quantities, but I think methods in the above papers could facilitate more than just naive unit checking. </p>\n<p>My understanding is that the MSP guys at least, were talking to people from the NPL a lot when working on this, who certainly do 'for real' things. So I'm sure they would have been considering <em>some</em> real world context on top of the pretty maths</p>",
+        "id": 344348447,
+        "sender_full_name": "Dylan Braithwaite",
+        "timestamp": 1679684668
+    },
+    {
+        "content": "<p>Side-note: I spend August-December 2022 at MSP, and will be spending parts of the coming April there as well. I'll discuss it with them in a couple of weeks!</p>",
+        "id": 344348826,
+        "sender_full_name": "Jacques Carette",
+        "timestamp": 1679684798
     }
 ]

@@ -9,6 +9,7 @@ permalink: /stream/229111-general/index.html
 
 ### Topics:
 
+* [Journal suggestions](topic/topic_Journal.20suggestions.html) (3 messages, latest: Mar 24 2023 at 22:31)
 * [Compositionality](topic/topic_Compositionality.html) (61 messages, latest: Mar 21 2023 at 21:56)
 * [Introduce yourself!](topic/topic_Introduce.20yourself!.html) (37 messages, latest: Mar 02 2023 at 21:38)
 * [HoTT 2023: Deadline Extended](topic/topic_HoTT.202023.3A.20Deadline.20Extended.html) (1 message, latest: Mar 02 2023 at 13:14)
@@ -259,4 +260,4 @@ permalink: /stream/229111-general/index.html
 * [Tools for diagrams](topic/topic_Tools.20for.20diagrams.html) (78 messages, latest: Mar 25 2020 at 17:53)
 * [topic demonstration](topic/topic_topic.20demonstration.html) (2 messages, latest: Mar 23 2020 at 16:57)
 
-<hr><p>Last updated: Mar 24 2023 at 00:28 UTC</p>
+<hr><p>Last updated: Mar 25 2023 at 00:09 UTC</p>

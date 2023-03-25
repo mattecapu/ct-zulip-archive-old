@@ -9,7 +9,7 @@ permalink: /stream/229199-learning:-questions/index.html
 
 ### Topics:
 
-* [Do physical units 'structure' sets of numbers?](topic/topic_Do.20physical.20units.20'structure'.20sets.20of.20numbers.3F.html) (23 messages, latest: Mar 23 2023 at 23:20)
+* [Do physical units 'structure' sets of numbers?](topic/topic_Do.20physical.20units.20'structure'.20sets.20of.20numbers.3F.html) (37 messages, latest: Mar 24 2023 at 19:06)
 * [A formal programming category](topic/topic_A.20formal.20programming.20category.html) (98 messages, latest: Mar 23 2023 at 20:30)
 * [Continuations and polynomials](topic/topic_Continuations.20and.20polynomials.html) (12 messages, latest: Mar 21 2023 at 16:59)
 * [Extending "Functors" that act on a subset of Set](topic/topic_Extending.20.22Functors.22.20that.20act.20on.20a.20subset.20of.20Set.html) (9 messages, latest: Mar 17 2023 at 16:33)
@@ -844,4 +844,4 @@ permalink: /stream/229199-learning:-questions/index.html
 * [Algebra (Aluffi) exercises](topic/topic_Algebra.20(Aluffi).20exercises.html) (55 messages, latest: Mar 27 2020 at 23:38)
 * [What is category theory about?](topic/topic_What.20is.20category.20theory.20about.3F.html) (16 messages, latest: Mar 26 2020 at 16:03)
 
-<hr><p>Last updated: Mar 24 2023 at 00:28 UTC</p>
+<hr><p>Last updated: Mar 25 2023 at 00:09 UTC</p>

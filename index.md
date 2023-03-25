@@ -12,7 +12,7 @@ permalink: /index.html
 
 * [theory: category theory](stream/229136-theory:-category-theory/index.html) (383 topics)
 
-* [general](stream/229111-general/index.html) (249 topics)
+* [general](stream/229111-general/index.html) (250 topics)
 
 * [general: events](stream/229141-general:-events/index.html) (162 topics)
 
@@ -70,7 +70,7 @@ permalink: /index.html
 
 * [conference: ACT22](stream/330541-conference:-ACT22/index.html) (18 topics)
 
-* [philosophy](stream/229134-philosophy/index.html) (17 topics)
+* [philosophy](stream/229134-philosophy/index.html) (18 topics)
 
 * [practice: chemistry](stream/322714-practice:-chemistry/index.html) (17 topics)
 
@@ -180,4 +180,4 @@ permalink: /index.html
 
 * [theory: alternate presentations](stream/233122-theory:-alternate-presentations/index.html) (1 topic)
 
-<hr><p>Last updated: Mar 24 2023 at 00:28 UTC</p>
+<hr><p>Last updated: Mar 25 2023 at 00:09 UTC</p>

@@ -9,7 +9,7 @@ permalink: /stream/266967-general:-mathematics/index.html
 
 ### Topics:
 
-* [polynomial ring](topic/topic_polynomial.20ring.html) (10 messages, latest: Mar 24 2023 at 00:16)
+* [polynomial ring](topic/topic_polynomial.20ring.html) (17 messages, latest: Mar 24 2023 at 23:20)
 * [on a remark by Rovelli](topic/topic_on.20a.20remark.20by.20Rovelli.html) (26 messages, latest: Mar 22 2023 at 16:55)
 * [Rel versus Hilb](topic/topic_Rel.20versus.20Hilb.html) (22 messages, latest: Mar 16 2023 at 23:22)
 * [Finite rigs of characteristic 0](topic/topic_Finite.20rigs.20of.20characteristic.200.html) (32 messages, latest: Mar 16 2023 at 13:35)
@@ -86,4 +86,4 @@ permalink: /stream/266967-general:-mathematics/index.html
 * [the 600-cell](topic/topic_the.20600-cell.html) (5 messages, latest: Dec 01 2020 at 16:35)
 * [hermitian matrix over normed division algebra](topic/topic_hermitian.20matrix.20over.20normed.20division.20algebra.html) (8 messages, latest: Sep 28 2020 at 21:19)
 
-<hr><p>Last updated: Mar 24 2023 at 00:28 UTC</p>
+<hr><p>Last updated: Mar 25 2023 at 00:09 UTC</p>
