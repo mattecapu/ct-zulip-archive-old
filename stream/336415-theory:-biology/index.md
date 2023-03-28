@@ -16,4 +16,4 @@ permalink: /stream/336415-theory:-biology/index.html
 * [stream events](topic/topic_stream.20events.html) (3 messages, latest: Aug 20 2022 at 09:49)
 * [Microlectics, Mathematics, and Life](topic/topic_Microlectics.2C.20Mathematics.2C.20and.20Life.html) (14 messages, latest: Aug 19 2022 at 21:11)
 
-<hr><p>Last updated: Mar 27 2023 at 00:28 UTC</p>
+<hr><p>Last updated: Mar 28 2023 at 00:09 UTC</p>

@@ -9,9 +9,10 @@ permalink: /stream/229199-learning:-questions/index.html
 
 ### Topics:
 
+* [subsets and subgroups](topic/topic_subsets.20and.20subgroups.html) (49 messages, latest: Mar 28 2023 at 00:07)
+* [Do physical units 'structure' sets of numbers?](topic/topic_Do.20physical.20units.20'structure'.20sets.20of.20numbers.3F.html) (62 messages, latest: Mar 27 2023 at 14:34)
+* [Hegel dialectics](topic/topic_Hegel.20dialectics.html) (10 messages, latest: Mar 27 2023 at 08:53)
 * [open system](topic/topic_open.20system.html) (1 message, latest: Mar 26 2023 at 16:34)
-* [Do physical units 'structure' sets of numbers?](topic/topic_Do.20physical.20units.20'structure'.20sets.20of.20numbers.3F.html) (60 messages, latest: Mar 26 2023 at 15:28)
-* [Hegel dialectics](topic/topic_Hegel.20dialectics.html) (9 messages, latest: Mar 26 2023 at 08:02)
 * [A formal programming category](topic/topic_A.20formal.20programming.20category.html) (98 messages, latest: Mar 23 2023 at 20:30)
 * [Continuations and polynomials](topic/topic_Continuations.20and.20polynomials.html) (12 messages, latest: Mar 21 2023 at 16:59)
 * [Extending "Functors" that act on a subset of Set](topic/topic_Extending.20.22Functors.22.20that.20act.20on.20a.20subset.20of.20Set.html) (9 messages, latest: Mar 17 2023 at 16:33)
@@ -140,7 +141,6 @@ permalink: /stream/229199-learning:-questions/index.html
 * [continuous functions as functors?](topic/topic_continuous.20functions.20as.20functors.3F.html) (21 messages, latest: Aug 24 2022 at 23:29)
 * [natural transformation commutativity square](topic/topic_natural.20transformation.20commutativity.20square.html) (3 messages, latest: Aug 24 2022 at 22:44)
 * [n.t. commutativity square](topic/topic_n.2Et.2E.20commutativity.20square.html) (14 messages, latest: Aug 24 2022 at 20:45)
-* [subsets and subgroups](topic/topic_subsets.20and.20subgroups.html) (45 messages, latest: Aug 24 2022 at 01:21)
 * [reference for multi-actegories](topic/topic_reference.20for.20multi-actegories.html) (24 messages, latest: Aug 23 2022 at 22:52)
 * [adjunction puzzle](topic/topic_adjunction.20puzzle.html) (14 messages, latest: Aug 22 2022 at 12:52)
 * [differential forms in synthetic differential geometry](topic/topic_differential.20forms.20in.20synthetic.20differential.20geometry.html) (3 messages, latest: Aug 21 2022 at 16:11)
@@ -845,4 +845,4 @@ permalink: /stream/229199-learning:-questions/index.html
 * [Algebra (Aluffi) exercises](topic/topic_Algebra.20(Aluffi).20exercises.html) (55 messages, latest: Mar 27 2020 at 23:38)
 * [What is category theory about?](topic/topic_What.20is.20category.20theory.20about.3F.html) (16 messages, latest: Mar 26 2020 at 16:03)
 
-<hr><p>Last updated: Mar 27 2023 at 00:28 UTC</p>
+<hr><p>Last updated: Mar 28 2023 at 00:09 UTC</p>
