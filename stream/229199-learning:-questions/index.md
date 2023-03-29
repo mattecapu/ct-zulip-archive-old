@@ -9,7 +9,9 @@ permalink: /stream/229199-learning:-questions/index.html
 
 ### Topics:
 
-* [subsets and subgroups](topic/topic_subsets.20and.20subgroups.html) (49 messages, latest: Mar 28 2023 at 00:07)
+* [small products in model categories](topic/topic_small.20products.20in.20model.20categories.html) (1 message, latest: Mar 28 2023 at 19:21)
+* [an invertibility problem](topic/topic_an.20invertibility.20problem.html) (13 messages, latest: Mar 28 2023 at 18:32)
+* [subsets and subgroups](topic/topic_subsets.20and.20subgroups.html) (58 messages, latest: Mar 28 2023 at 17:37)
 * [Do physical units 'structure' sets of numbers?](topic/topic_Do.20physical.20units.20'structure'.20sets.20of.20numbers.3F.html) (62 messages, latest: Mar 27 2023 at 14:34)
 * [Hegel dialectics](topic/topic_Hegel.20dialectics.html) (10 messages, latest: Mar 27 2023 at 08:53)
 * [open system](topic/topic_open.20system.html) (1 message, latest: Mar 26 2023 at 16:34)
@@ -845,4 +847,4 @@ permalink: /stream/229199-learning:-questions/index.html
 * [Algebra (Aluffi) exercises](topic/topic_Algebra.20(Aluffi).20exercises.html) (55 messages, latest: Mar 27 2020 at 23:38)
 * [What is category theory about?](topic/topic_What.20is.20category.20theory.20about.3F.html) (16 messages, latest: Mar 26 2020 at 16:03)
 
-<hr><p>Last updated: Mar 28 2023 at 00:29 UTC</p>
+<hr><p>Last updated: Mar 29 2023 at 00:09 UTC</p>
