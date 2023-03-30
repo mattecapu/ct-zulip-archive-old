@@ -9,8 +9,10 @@ permalink: /stream/229136-theory:-category-theory/index.html
 
 ### Topics:
 
+* [iterated fibrations](topic/topic_iterated.20fibrations.html) (5 messages, latest: Mar 29 2023 at 20:22)
+* [Constant dependent function](topic/topic_Constant.20dependent.20function.html) (196 messages, latest: Mar 29 2023 at 19:10)
+* [Yoneda structures for fibrations](topic/topic_Yoneda.20structures.20for.20fibrations.html) (7 messages, latest: Mar 29 2023 at 16:03)
 * [h-levels, equalities, and other things](topic/topic_h-levels.2C.20equalities.2C.20and.20other.20things.html) (18 messages, latest: Mar 28 2023 at 13:07)
-* [Constant dependent function](topic/topic_Constant.20dependent.20function.html) (188 messages, latest: Mar 28 2023 at 13:06)
 * [polynomial functors in a weak setting](topic/topic_polynomial.20functors.20in.20a.20weak.20setting.html) (5 messages, latest: Mar 21 2023 at 11:53)
 * [Iterated Plethories](topic/topic_Iterated.20Plethories.html) (6 messages, latest: Mar 21 2023 at 10:56)
 * [When are two morphisms of polynomials equivalent?](topic/topic_When.20are.20two.20morphisms.20of.20polynomials.20equivalent.3F.html) (5 messages, latest: Mar 16 2023 at 23:29)
@@ -394,4 +396,4 @@ permalink: /stream/229136-theory:-category-theory/index.html
 * [diagrams for application](topic/topic_diagrams.20for.20application.html) (13 messages, latest: Mar 24 2020 at 06:19)
 * [universal constructions](topic/topic_universal.20constructions.html) (8 messages, latest: Mar 23 2020 at 21:06)
 
-<hr><p>Last updated: Mar 29 2023 at 00:32 UTC</p>
+<hr><p>Last updated: Mar 30 2023 at 00:09 UTC</p>

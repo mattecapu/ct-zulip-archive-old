@@ -10,7 +10,7 @@ permalink: /index.html
 
 * [learning: questions](stream/229199-learning:-questions/index.html) (837 topics)
 
-* [theory: category theory](stream/229136-theory:-category-theory/index.html) (384 topics)
+* [theory: category theory](stream/229136-theory:-category-theory/index.html) (386 topics)
 
 * [general](stream/229111-general/index.html) (250 topics)
 
@@ -180,4 +180,4 @@ permalink: /index.html
 
 * [theory: alternate presentations](stream/233122-theory:-alternate-presentations/index.html) (1 topic)
 
-<hr><p>Last updated: Mar 29 2023 at 00:32 UTC</p>
+<hr><p>Last updated: Mar 30 2023 at 00:09 UTC</p>

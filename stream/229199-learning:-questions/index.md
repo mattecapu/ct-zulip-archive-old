@@ -9,7 +9,8 @@ permalink: /stream/229199-learning:-questions/index.html
 
 ### Topics:
 
-* [small products in model categories](topic/topic_small.20products.20in.20model.20categories.html) (1 message, latest: Mar 28 2023 at 19:21)
+* [why rings need identities](topic/topic_why.20rings.20need.20identities.html) (49 messages, latest: Mar 29 2023 at 23:34)
+* [small products in model categories](topic/topic_small.20products.20in.20model.20categories.html) (5 messages, latest: Mar 29 2023 at 07:01)
 * [an invertibility problem](topic/topic_an.20invertibility.20problem.html) (13 messages, latest: Mar 28 2023 at 18:32)
 * [subsets and subgroups](topic/topic_subsets.20and.20subgroups.html) (58 messages, latest: Mar 28 2023 at 17:37)
 * [Do physical units 'structure' sets of numbers?](topic/topic_Do.20physical.20units.20'structure'.20sets.20of.20numbers.3F.html) (62 messages, latest: Mar 27 2023 at 14:34)
@@ -27,7 +28,6 @@ permalink: /stream/229199-learning:-questions/index.html
 * [projective objects](topic/topic_projective.20objects.html) (56 messages, latest: Feb 28 2023 at 23:49)
 * [Rel category](topic/topic_Rel.20category.html) (27 messages, latest: Feb 28 2023 at 18:52)
 * [morphisms to products](topic/topic_morphisms.20to.20products.html) (38 messages, latest: Feb 24 2023 at 17:43)
-* [why rings need identities](topic/topic_why.20rings.20need.20identities.html) (46 messages, latest: Feb 24 2023 at 05:27)
 * [Beginner questions](topic/topic_Beginner.20questions.html) (32 messages, latest: Feb 22 2023 at 18:09)
 * [monoids and coproducts](topic/topic_monoids.20and.20coproducts.html) (74 messages, latest: Feb 20 2023 at 23:24)
 * [evolutionary game](topic/topic_evolutionary.20game.html) (48 messages, latest: Feb 19 2023 at 22:15)
@@ -847,4 +847,4 @@ permalink: /stream/229199-learning:-questions/index.html
 * [Algebra (Aluffi) exercises](topic/topic_Algebra.20(Aluffi).20exercises.html) (55 messages, latest: Mar 27 2020 at 23:38)
 * [What is category theory about?](topic/topic_What.20is.20category.20theory.20about.3F.html) (16 messages, latest: Mar 26 2020 at 16:03)
 
-<hr><p>Last updated: Mar 29 2023 at 00:32 UTC</p>
+<hr><p>Last updated: Mar 30 2023 at 00:09 UTC</p>
