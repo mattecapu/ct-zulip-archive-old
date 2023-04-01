@@ -310,6 +310,111 @@ The overall idea is to argue that using more concepts from double category theor
 
 
 
+<a name="345857340"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/274877-practice%3A%20our%20work/topic/Evan%20Patterson/near/345857340" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/274877-practice:-our-work/topic/topic_Evan.20Patterson.html#345857340">(Mar 31 2023 at 07:01)</a>:</h4>
+<p>The proof of the new Proposition 2.1 says that each cartesian object C(Y,X) in Cat is "canonically" a symmetric pseudomonoid for each Y <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>∈</mo></mrow><annotation encoding="application/x-tex">\in</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.5782em;vertical-align:-0.0391em;"></span><span class="mrel">∈</span></span></span></span> C but not does not mention that that for each Y we need to <em>choose</em> a way to make the cartesian category C(Y,X) into a symmetric monoidal category.    Earlier the article says</p>
+<blockquote>
+<p>By making a choice of products, any category with finite products is automatically a symmetric monoidal category in a canonical way.</p>
+</blockquote>
+<p>without saying what it means for A to be canonically B "by making a choice".   "Canonically" is not the most precise term in the big book of math, but usually it connotes that you <em>don't</em> need to make an arbitrary choice.</p>
+
+
+
+<a name="345858313"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/274877-practice%3A%20our%20work/topic/Evan%20Patterson/near/345858313" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/274877-practice:-our-work/topic/topic_Evan.20Patterson.html#345858313">(Mar 31 2023 at 07:06)</a>:</h4>
+<p>The concept of a <a href="https://ncatlab.org/nlab/show/stuff%2C+structure%2C+property#generalization_to_categories_and_higher_categories">property-like structure</a> is relevant here.</p>
+
+
+
+<a name="345864643"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/274877-practice%3A%20our%20work/topic/Evan%20Patterson/near/345864643" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nathanael Arkor <a href="https://mattecapu.github.io/ct-zulip-archive/stream/274877-practice:-our-work/topic/topic_Evan.20Patterson.html#345864643">(Mar 31 2023 at 07:38)</a>:</h4>
+<p>Yes, it should really be "a cartesian object with specified right adjoints" (rather than merely asking that they exist).</p>
+
+
+
+<a name="345974893"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/274877-practice%3A%20our%20work/topic/Evan%20Patterson/near/345974893" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/274877-practice:-our-work/topic/topic_Evan.20Patterson.html#345974893">(Mar 31 2023 at 14:51)</a>:</h4>
+<p>The thing is that these "choices" are not really "choices" from a categorical point of view, since they are unique up to unique isomorphism.  In a foundational theory that understands this, like HoTT/UF, no choice is actually required, for essentially the same reason that no choice is required in a set-theoretic foundation to make "choices" that are literally unique.  So while I agree the situation could be described more clearly, I would argue that this structure <em>is</em> canonical.</p>
+
+
+
+<a name="345974897"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/274877-practice%3A%20our%20work/topic/Evan%20Patterson/near/345974897" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/274877-practice:-our-work/topic/topic_Evan.20Patterson.html#345974897">(Mar 31 2023 at 14:51)</a>:</h4>
+<p>Nathaniel wrote:</p>
+<blockquote>
+<p>Yes, it should really be "a cartesian object with specified right adjoints" (rather than merely asking that they exist).</p>
+</blockquote>
+<p>Right.  But then one can show the 2-category of cartesian objects (with suitably defined morphisms and 2-morphisms) is equivalent to the 2-category of cartesian objects with specified right adjoints (with suitably defined morphisms and 2-morphisms, where the morphisms are compatible with the right adjoints but do not need to preserve the <em>specified</em> right adjoints on the nose).</p>
+
+
+
+<a name="345976033"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/274877-practice%3A%20our%20work/topic/Evan%20Patterson/near/345976033" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/274877-practice:-our-work/topic/topic_Evan.20Patterson.html#345976033">(Mar 31 2023 at 14:55)</a>:</h4>
+<p>It takes a bit of work to state this (as hinted in my parenthetical remarks), but when we're done we've formalized our intuition that the choice of right adjoints to <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>C</mi><mo>→</mo><mi>C</mi><mo>⊗</mo><mi>C</mi></mrow><annotation encoding="application/x-tex">C \to C \otimes C</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.07153em;">C</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.7667em;vertical-align:-0.0833em;"></span><span class="mord mathnormal" style="margin-right:0.07153em;">C</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">⊗</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.07153em;">C</span></span></span></span> and <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>C</mi><mo>→</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">C \to 1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.07153em;">C</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">1</span></span></span></span> "doesn't really matter".</p>
+
+
+
+<a name="346044765"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/274877-practice%3A%20our%20work/topic/Evan%20Patterson/near/346044765" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/274877-practice:-our-work/topic/topic_Evan.20Patterson.html#346044765">(Mar 31 2023 at 19:50)</a>:</h4>
+<p><span class="user-mention" data-user-id="276777">@Mike Shulman</span> wrote:</p>
+<blockquote>
+<p>In a foundational theory that understands this, like HoTT/UF, no choice is actually required, for essentially the same reason that no choice is required in a set-theoretic foundation to make "choices" that are literally unique. So while I agree the situation could be described more clearly, I would argue that this structure is canonical.</p>
+</blockquote>
+<p>Yes, this is a great example of where using better foundations eliminates a lot of hassle.   My previous comment, in case it wasn't obvious, was for category theory founded on traditional set-theoretic foundations (ZFC or whatever).</p>
+
+
+
+<a name="346046790"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/274877-practice%3A%20our%20work/topic/Evan%20Patterson/near/346046790" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/274877-practice:-our-work/topic/topic_Evan.20Patterson.html#346046790">(Mar 31 2023 at 20:03)</a>:</h4>
+<p>I think it's good to work out this problem quite clearly using traditional set-theoretic foundations even if the main result is to push you into the arms of HoTT.</p>
+
+
+
+<a name="346065585"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/274877-practice%3A%20our%20work/topic/Evan%20Patterson/near/346065585" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/274877-practice:-our-work/topic/topic_Evan.20Patterson.html#346065585">(Mar 31 2023 at 22:13)</a>:</h4>
+<p>So, you see, <span class="user-mention" data-user-id="275965">@Evan Patterson</span>, that this is issue, while not incredibly complicated, is still subtle enough that people start talking about different foundations of mathematics!</p>
+
+
+
+<a name="346066538"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/274877-practice%3A%20our%20work/topic/Evan%20Patterson/near/346066538" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/274877-practice:-our-work/topic/topic_Evan.20Patterson.html#346066538">(Mar 31 2023 at 22:20)</a>:</h4>
+<p>The point of using other foundations here is simply to avoid suffering over the issue that a cartesian category can be made into a symmetric monoidal category in many ways, but for any pair of these ways we have a chosen isomorphism between them.  </p>
+<p>If you think of the ways as forming a set, it's a big set.  But if you think of them together with these isomorphisms as forming a groupoid, this groupoid is 'contractible': in other words, it's equivalent to the groupoid with one object and one morphism.  </p>
+<p>So, using better foundations, we say <em>there's just one way</em>.</p>
+
+
+
+<a name="346078924"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/274877-practice%3A%20our%20work/topic/Evan%20Patterson/near/346078924" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Evan Patterson <a href="https://mattecapu.github.io/ct-zulip-archive/stream/274877-practice:-our-work/topic/topic_Evan.20Patterson.html#346078924">(Mar 31 2023 at 23:50)</a>:</h4>
+<p>Thanks. I take your point about the subtleties here. And, even apart from the foundational aspects, I see why it would be jarring to say "make a choice" and then immediately say the construction is "canonical." I tried to revise what I wrote on <a href="https://ncatlab.org/nlab/show/cartesian+object">nLab</a> to avoid this confusion. What do you think?</p>
+
+
+
+<a name="346079171"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/274877-practice%3A%20our%20work/topic/Evan%20Patterson/near/346079171" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Evan Patterson <a href="https://mattecapu.github.io/ct-zulip-archive/stream/274877-practice:-our-work/topic/topic_Evan.20Patterson.html#346079171">(Mar 31 2023 at 23:53)</a>:</h4>
+<p>It's actually annoying enough to make me appreciate why you might want another foundation!</p>
+
+
+
+<a name="346079350"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/274877-practice%3A%20our%20work/topic/Evan%20Patterson/near/346079350" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/274877-practice:-our-work/topic/topic_Evan.20Patterson.html#346079350">(Mar 31 2023 at 23:55)</a>:</h4>
+<p>This looks a lot better!  Getting down into tiny details, I think this phrase could be polished:</p>
+<blockquote>
+<p>a cartesian object in the 2-category of 2-presheaves on C with a choice of right adjoints</p>
+</blockquote>
+<p>since "with a choice of right adjoints" superficially seems to apply to "2-presheaves".  So maybe try this:</p>
+<blockquote>
+<p>a cartesian object with a choice of right adjoints in the 2-category of 2-presheaves on C</p>
+</blockquote>
+
+
+
+<a name="346079797"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/274877-practice%3A%20our%20work/topic/Evan%20Patterson/near/346079797" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/274877-practice:-our-work/topic/topic_Evan.20Patterson.html#346079797">(Apr 01 2023 at 00:00)</a>:</h4>
+<p>Anyway, it's pretty interesting how "applied" category theory can force one to pay attention to such sneaky issues.... at least until one understands them well enough to say "okay, I get it,  I don't need to talk about it!"  <span aria-label="upside down" class="emoji emoji-1f643" role="img" title="upside down">:upside_down:</span></p>
+
+
+
 {% endraw %}
 
-<hr><p>Last updated: Mar 31 2023 at 00:29 UTC</p>
+<hr><p>Last updated: Apr 01 2023 at 00:09 UTC</p>

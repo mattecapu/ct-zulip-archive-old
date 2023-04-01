@@ -9,7 +9,7 @@ permalink: /stream/274877-practice:-our-work/index.html
 
 ### Topics:
 
-* [Evan Patterson](topic/topic_Evan.20Patterson.html) (40 messages, latest: Mar 30 2023 at 03:03)
+* [Evan Patterson](topic/topic_Evan.20Patterson.html) (54 messages, latest: Apr 01 2023 at 00:00)
 * [Jacob S Zelko](topic/topic_Jacob.20S.20Zelko.html) (33 messages, latest: Mar 28 2023 at 16:45)
 * [Jean-Baptiste Vienney](topic/topic_Jean-Baptiste.20Vienney.html) (98 messages, latest: Mar 28 2023 at 05:20)
 * [Christian Williams](topic/topic_Christian.20Williams.html) (450 messages, latest: Mar 27 2023 at 23:38)
@@ -53,4 +53,4 @@ permalink: /stream/274877-practice:-our-work/index.html
 * [Conor Mc Bride](topic/topic_Conor.20Mc.20Bride.html) (60 messages, latest: Apr 08 2021 at 15:15)
 * [thoughts on sharing ideas](topic/topic_thoughts.20on.20sharing.20ideas.html) (20 messages, latest: Jan 31 2021 at 03:05)
 
-<hr><p>Last updated: Mar 31 2023 at 00:29 UTC</p>
+<hr><p>Last updated: Apr 01 2023 at 00:09 UTC</p>
