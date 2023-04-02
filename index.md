@@ -20,7 +20,7 @@ permalink: /index.html
 
 * [theory: topos theory](stream/230087-theory:-topos-theory/index.html) (80 topics)
 
-* [general: mathematics](stream/266967-general:-mathematics/index.html) (76 topics)
+* [general: mathematics](stream/266967-general:-mathematics/index.html) (78 topics)
 
 * [general: positions](stream/245502-general:-positions/index.html) (71 topics)
 
@@ -180,4 +180,4 @@ permalink: /index.html
 
 * [theory: alternate presentations](stream/233122-theory:-alternate-presentations/index.html) (1 topic)
 
-<hr><p>Last updated: Apr 01 2023 at 00:29 UTC</p>
+<hr><p>Last updated: Apr 02 2023 at 00:09 UTC</p>

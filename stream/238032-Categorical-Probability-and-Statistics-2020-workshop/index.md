@@ -44,4 +44,4 @@ permalink: /stream/238032-Categorical-Probability-and-Statistics-2020-workshop/i
 * [signing up](topic/topic_signing.20up.html) (5 messages, latest: Jun 04 2020 at 19:03)
 * [stream events](topic/topic_stream.20events.html) (1 message, latest: May 08 2020 at 18:21)
 
-<hr><p>Last updated: Apr 01 2023 at 00:29 UTC</p>
+<hr><p>Last updated: Apr 02 2023 at 00:09 UTC</p>
