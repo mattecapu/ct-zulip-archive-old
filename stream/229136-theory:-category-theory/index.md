@@ -9,7 +9,7 @@ permalink: /stream/229136-theory:-category-theory/index.html
 
 ### Topics:
 
-* [✔ Left adjoint to quintet construction](topic/topic_.E2.9C.94.20Left.20adjoint.20to.20quintet.20construction.html) (6 messages, latest: Mar 31 2023 at 12:56)
+* [✔ Left adjoint to quintet construction](topic/topic_.E2.9C.94.20Left.20adjoint.20to.20quintet.20construction.html) (9 messages, latest: Apr 02 2023 at 11:18)
 * [iterated fibrations](topic/topic_iterated.20fibrations.html) (5 messages, latest: Mar 29 2023 at 20:22)
 * [Constant dependent function](topic/topic_Constant.20dependent.20function.html) (196 messages, latest: Mar 29 2023 at 19:10)
 * [Yoneda structures for fibrations](topic/topic_Yoneda.20structures.20for.20fibrations.html) (7 messages, latest: Mar 29 2023 at 16:03)
@@ -397,4 +397,4 @@ permalink: /stream/229136-theory:-category-theory/index.html
 * [diagrams for application](topic/topic_diagrams.20for.20application.html) (13 messages, latest: Mar 24 2020 at 06:19)
 * [universal constructions](topic/topic_universal.20constructions.html) (8 messages, latest: Mar 23 2020 at 21:06)
 
-<hr><p>Last updated: Apr 02 2023 at 00:31 UTC</p>
+<hr><p>Last updated: Apr 03 2023 at 00:09 UTC</p>

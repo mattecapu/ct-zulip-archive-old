@@ -9,8 +9,8 @@ permalink: /stream/266967-general:-mathematics/index.html
 
 ### Topics:
 
+* [Fantastic Proofs and How to Make Them](topic/topic_Fantastic.20Proofs.20and.20How.20to.20Make.20Them.html) (41 messages, latest: Apr 02 2023 at 20:42)
 * [the empty set is a subset of other sets](topic/topic_the.20empty.20set.20is.20a.20subset.20of.20other.20sets.html) (63 messages, latest: Apr 01 2023 at 21:10)
-* [Fantastic Proofs and How to Make Them](topic/topic_Fantastic.20Proofs.20and.20How.20to.20Make.20Them.html) (39 messages, latest: Apr 01 2023 at 16:28)
 * [on a remark by Rovelli](topic/topic_on.20a.20remark.20by.20Rovelli.html) (29 messages, latest: Mar 28 2023 at 17:32)
 * [polynomial ring](topic/topic_polynomial.20ring.html) (17 messages, latest: Mar 24 2023 at 23:20)
 * [Rel versus Hilb](topic/topic_Rel.20versus.20Hilb.html) (22 messages, latest: Mar 16 2023 at 23:22)
@@ -88,4 +88,4 @@ permalink: /stream/266967-general:-mathematics/index.html
 * [the 600-cell](topic/topic_the.20600-cell.html) (5 messages, latest: Dec 01 2020 at 16:35)
 * [hermitian matrix over normed division algebra](topic/topic_hermitian.20matrix.20over.20normed.20division.20algebra.html) (8 messages, latest: Sep 28 2020 at 21:19)
 
-<hr><p>Last updated: Apr 02 2023 at 00:31 UTC</p>
+<hr><p>Last updated: Apr 03 2023 at 00:09 UTC</p>

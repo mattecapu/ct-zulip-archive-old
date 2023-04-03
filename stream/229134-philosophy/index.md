@@ -9,8 +9,8 @@ permalink: /stream/229134-philosophy/index.html
 
 ### Topics:
 
+* [Annals of Mathematics and Philosophy](topic/topic_Annals.20of.20Mathematics.20and.20Philosophy.html) (2 messages, latest: Apr 02 2023 at 22:51)
 * [Philosophically-Applied Category Theory](topic/topic_Philosophically-Applied.20Category.20Theory.html) (25 messages, latest: Mar 28 2023 at 15:59)
-* [Annals of Mathematics and Philosophy](topic/topic_Annals.20of.20Mathematics.20and.20Philosophy.html) (1 message, latest: Mar 24 2023 at 16:47)
 * [Duality and Opposites](topic/topic_Duality.20and.20Opposites.html) (3 messages, latest: Dec 04 2021 at 20:14)
 * [Peirce](topic/topic_Peirce.html) (35 messages, latest: Sep 04 2021 at 14:54)
 * [Lawvere and Hegel](topic/topic_Lawvere.20and.20Hegel.html) (58 messages, latest: Aug 08 2021 at 13:38)
@@ -28,4 +28,4 @@ permalink: /stream/229134-philosophy/index.html
 * [history](topic/topic_history.html) (2 messages, latest: Mar 27 2020 at 06:56)
 * [stream events](topic/topic_stream.20events.html) (6 messages, latest: Mar 26 2020 at 20:00)
 
-<hr><p>Last updated: Apr 02 2023 at 00:31 UTC</p>
+<hr><p>Last updated: Apr 03 2023 at 00:09 UTC</p>
