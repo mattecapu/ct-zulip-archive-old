@@ -9,8 +9,9 @@ permalink: /stream/229199-learning:-questions/index.html
 
 ### Topics:
 
+* [Do physical units 'structure' sets of numbers?](topic/topic_Do.20physical.20units.20'structure'.20sets.20of.20numbers.3F.html) (85 messages, latest: Apr 03 2023 at 23:55)
+* [✔ Connected components functor strong monoidal](topic/topic_.E2.9C.94.20Connected.20components.20functor.20strong.20monoidal.html) (2 messages, latest: Apr 03 2023 at 09:10)
 * [Connected components functor strong monoidal](topic/topic_Connected.20components.20functor.20strong.20monoidal.html) (2 messages, latest: Apr 02 2023 at 20:38)
-* [Do physical units 'structure' sets of numbers?](topic/topic_Do.20physical.20units.20'structure'.20sets.20of.20numbers.3F.html) (64 messages, latest: Apr 02 2023 at 19:30)
 * [why rings need identities](topic/topic_why.20rings.20need.20identities.html) (49 messages, latest: Mar 29 2023 at 23:34)
 * [small products in model categories](topic/topic_small.20products.20in.20model.20categories.html) (5 messages, latest: Mar 29 2023 at 07:01)
 * [an invertibility problem](topic/topic_an.20invertibility.20problem.html) (13 messages, latest: Mar 28 2023 at 18:32)
@@ -848,4 +849,4 @@ permalink: /stream/229199-learning:-questions/index.html
 * [Algebra (Aluffi) exercises](topic/topic_Algebra.20(Aluffi).20exercises.html) (55 messages, latest: Mar 27 2020 at 23:38)
 * [What is category theory about?](topic/topic_What.20is.20category.20theory.20about.3F.html) (16 messages, latest: Mar 26 2020 at 16:03)
 
-<hr><p>Last updated: Apr 03 2023 at 00:28 UTC</p>
+<hr><p>Last updated: Apr 04 2023 at 00:09 UTC</p>

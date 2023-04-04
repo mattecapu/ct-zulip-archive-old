@@ -9,6 +9,7 @@ permalink: /stream/230123-theory:-algebra-&-CT/index.html
 
 ### Topics:
 
+* [polynomial functors](topic/topic_polynomial.20functors.html) (1 message, latest: Apr 03 2023 at 09:16)
 * [Group cohomology](topic/topic_Group.20cohomology.html) (4 messages, latest: Feb 28 2023 at 21:47)
 * [Category of polynomial functions](topic/topic_Category.20of.20polynomial.20functions.html) (21 messages, latest: Feb 06 2023 at 22:49)
 * [The category of fields](topic/topic_The.20category.20of.20fields.html) (70 messages, latest: Mar 01 2021 at 22:39)
@@ -18,4 +19,4 @@ permalink: /stream/230123-theory:-algebra-&-CT/index.html
 * [stream events](topic/topic_stream.20events.html) (3 messages, latest: Apr 06 2020 at 05:46)
 * [Theme?](topic/topic_Theme.3F.html) (2 messages, latest: Apr 06 2020 at 01:13)
 
-<hr><p>Last updated: Apr 03 2023 at 00:28 UTC</p>
+<hr><p>Last updated: Apr 04 2023 at 00:09 UTC</p>

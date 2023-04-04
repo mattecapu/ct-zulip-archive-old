@@ -9,13 +9,14 @@ permalink: /stream/274877-practice:-our-work/index.html
 
 ### Topics:
 
+* [John Baez](topic/topic_John.20Baez.html) (1013 messages, latest: Apr 03 2023 at 21:40)
+* [Ralph Sarkis](topic/topic_Ralph.20Sarkis.html) (29 messages, latest: Apr 03 2023 at 08:32)
 * [Morgan Rogers](topic/topic_Morgan.20Rogers.html) (54 messages, latest: Apr 01 2023 at 20:54)
 * [Evan Patterson](topic/topic_Evan.20Patterson.html) (61 messages, latest: Apr 01 2023 at 00:56)
 * [Jacob S Zelko](topic/topic_Jacob.20S.20Zelko.html) (33 messages, latest: Mar 28 2023 at 16:45)
 * [Jean-Baptiste Vienney](topic/topic_Jean-Baptiste.20Vienney.html) (98 messages, latest: Mar 28 2023 at 05:20)
 * [Christian Williams](topic/topic_Christian.20Williams.html) (450 messages, latest: Mar 27 2023 at 23:38)
 * [Jacques Carette](topic/topic_Jacques.20Carette.html) (1 message, latest: Mar 23 2023 at 21:19)
-* [John Baez](topic/topic_John.20Baez.html) (1008 messages, latest: Mar 23 2023 at 02:48)
 * [Lê Thành Dũng (Tito) Nguyễn](topic/topic_L.C3.AA.20Th.C3.A0nh.20D.C5.A9ng.20(Tito).20Nguy.E1.BB.85n.html) (4 messages, latest: Mar 21 2023 at 12:36)
 * [Christoph Dorn](topic/topic_Christoph.20Dorn.html) (2 messages, latest: Mar 16 2023 at 11:25)
 * [Mike Shulman](topic/topic_Mike.20Shulman.html) (157 messages, latest: Mar 12 2023 at 17:39)
@@ -26,7 +27,6 @@ permalink: /stream/274877-practice:-our-work/index.html
 * [Jason Parker](topic/topic_Jason.20Parker.html) (3 messages, latest: Dec 09 2022 at 18:14)
 * [Steve Huntsman](topic/topic_Steve.20Huntsman.html) (4 messages, latest: Dec 06 2022 at 18:02)
 * [Paolo Perrone](topic/topic_Paolo.20Perrone.html) (3 messages, latest: Nov 19 2022 at 18:02)
-* [Ralph Sarkis](topic/topic_Ralph.20Sarkis.html) (28 messages, latest: Nov 10 2022 at 13:44)
 * [Sam Staton](topic/topic_Sam.20Staton.html) (2 messages, latest: Nov 09 2022 at 10:11)
 * [Ivan Di Liberti](topic/topic_Ivan.20Di.20Liberti.html) (18 messages, latest: Nov 08 2022 at 18:21)
 * [Combinatorial species and dynamics](topic/topic_Combinatorial.20species.20and.20dynamics.html) (6 messages, latest: Nov 02 2022 at 07:05)
@@ -53,4 +53,4 @@ permalink: /stream/274877-practice:-our-work/index.html
 * [Conor Mc Bride](topic/topic_Conor.20Mc.20Bride.html) (60 messages, latest: Apr 08 2021 at 15:15)
 * [thoughts on sharing ideas](topic/topic_thoughts.20on.20sharing.20ideas.html) (20 messages, latest: Jan 31 2021 at 03:05)
 
-<hr><p>Last updated: Apr 03 2023 at 00:28 UTC</p>
+<hr><p>Last updated: Apr 04 2023 at 00:09 UTC</p>

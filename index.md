@@ -8,7 +8,7 @@ permalink: /index.html
 
 ## Streams:
 
-* [learning: questions](stream/229199-learning:-questions/index.html) (838 topics)
+* [learning: questions](stream/229199-learning:-questions/index.html) (839 topics)
 
 * [theory: category theory](stream/229136-theory:-category-theory/index.html) (387 topics)
 
@@ -18,9 +18,9 @@ permalink: /index.html
 
 * [practice: applied ct](stream/229156-practice:-applied-ct/index.html) (140 topics)
 
-* [theory: topos theory](stream/230087-theory:-topos-theory/index.html) (80 topics)
+* [general: mathematics](stream/266967-general:-mathematics/index.html) (80 topics)
 
-* [general: mathematics](stream/266967-general:-mathematics/index.html) (78 topics)
+* [theory: topos theory](stream/230087-theory:-topos-theory/index.html) (80 topics)
 
 * [general: positions](stream/245502-general:-positions/index.html) (71 topics)
 
@@ -104,11 +104,11 @@ permalink: /index.html
 
 * [languages: francais/French](stream/231124-languages:-francais/French/index.html) (9 topics)
 
+* [theory: algebra & CT](stream/230123-theory:-algebra-&-CT/index.html) (9 topics)
+
 * [theory: analysis](stream/281848-theory:-analysis/index.html) (9 topics)
 
 * [languages: italiano/Italian](stream/231111-languages:-italiano/Italian/index.html) (8 topics)
-
-* [theory: algebra & CT](stream/230123-theory:-algebra-&-CT/index.html) (8 topics)
 
 * [theory: monoids](stream/231815-theory:-monoids/index.html) (8 topics)
 
@@ -180,4 +180,4 @@ permalink: /index.html
 
 * [theory: alternate presentations](stream/233122-theory:-alternate-presentations/index.html) (1 topic)
 
-<hr><p>Last updated: Apr 03 2023 at 00:28 UTC</p>
+<hr><p>Last updated: Apr 04 2023 at 00:09 UTC</p>
