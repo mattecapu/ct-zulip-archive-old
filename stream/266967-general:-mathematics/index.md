@@ -9,15 +9,15 @@ permalink: /stream/266967-general:-mathematics/index.html
 
 ### Topics:
 
-* [proving things: induction](topic/topic_proving.20things.3A.20induction.html) (15 messages, latest: Apr 03 2023 at 23:47)
+* [proving things: induction](topic/topic_proving.20things.3A.20induction.html) (20 messages, latest: Apr 04 2023 at 21:20)
+* [Fantastic Proofs and How to Make Them](topic/topic_Fantastic.20Proofs.20and.20How.20to.20Make.20Them.html) (62 messages, latest: Apr 04 2023 at 18:25)
+* [evolutionary game](topic/topic_evolutionary.20game.html) (29 messages, latest: Apr 04 2023 at 07:32)
 * [categories.pi-base.org](topic/topic_categories.2Epi-base.2Eorg.html) (1 message, latest: Apr 03 2023 at 23:41)
-* [Fantastic Proofs and How to Make Them](topic/topic_Fantastic.20Proofs.20and.20How.20to.20Make.20Them.html) (60 messages, latest: Apr 03 2023 at 21:11)
 * [the empty set is a subset of other sets](topic/topic_the.20empty.20set.20is.20a.20subset.20of.20other.20sets.html) (63 messages, latest: Apr 01 2023 at 21:10)
 * [on a remark by Rovelli](topic/topic_on.20a.20remark.20by.20Rovelli.html) (29 messages, latest: Mar 28 2023 at 17:32)
 * [polynomial ring](topic/topic_polynomial.20ring.html) (17 messages, latest: Mar 24 2023 at 23:20)
 * [Rel versus Hilb](topic/topic_Rel.20versus.20Hilb.html) (22 messages, latest: Mar 16 2023 at 23:22)
 * [Finite rigs of characteristic 0](topic/topic_Finite.20rigs.20of.20characteristic.200.html) (32 messages, latest: Mar 16 2023 at 13:35)
-* [evolutionary game](topic/topic_evolutionary.20game.html) (23 messages, latest: Mar 13 2023 at 23:27)
 * [spin networks](topic/topic_spin.20networks.html) (5 messages, latest: Mar 06 2023 at 22:42)
 * [on a remark by rovelli](topic/topic_on.20a.20remark.20by.20rovelli.html) (37 messages, latest: Mar 01 2023 at 07:37)
 * [Barry Mitchell](topic/topic_Barry.20Mitchell.html) (6 messages, latest: Feb 28 2023 at 21:40)
@@ -90,4 +90,4 @@ permalink: /stream/266967-general:-mathematics/index.html
 * [the 600-cell](topic/topic_the.20600-cell.html) (5 messages, latest: Dec 01 2020 at 16:35)
 * [hermitian matrix over normed division algebra](topic/topic_hermitian.20matrix.20over.20normed.20division.20algebra.html) (8 messages, latest: Sep 28 2020 at 21:19)
 
-<hr><p>Last updated: Apr 04 2023 at 00:28 UTC</p>
+<hr><p>Last updated: Apr 05 2023 at 00:09 UTC</p>

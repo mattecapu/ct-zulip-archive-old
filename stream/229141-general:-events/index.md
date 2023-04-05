@@ -9,11 +9,11 @@ permalink: /stream/229141-general:-events/index.html
 
 ### Topics:
 
+* [ACT 2023](topic/topic_ACT.202023.html) (59 messages, latest: Apr 04 2023 at 22:08)
 * [Developing new scholarly institutions](topic/topic_Developing.20new.20scholarly.20institutions.html) (142 messages, latest: Mar 29 2023 at 21:39)
 * [SYCO 11](topic/topic_SYCO.2011.html) (3 messages, latest: Mar 24 2023 at 11:05)
 * [Cheng interview](topic/topic_Cheng.20interview.html) (3 messages, latest: Mar 23 2023 at 23:30)
 * [Category Theory study group for the book Joy of Abstraction](topic/topic_Category.20Theory.20study.20group.20for.20the.20book.20Joy.20of.20Abstraction.html) (1 message, latest: Mar 18 2023 at 00:08)
-* [ACT 2023](topic/topic_ACT.202023.html) (56 messages, latest: Mar 15 2023 at 09:51)
 * [Topos Institute events](topic/topic_Topos.20Institute.20events.html) (1 message, latest: Mar 09 2023 at 05:39)
 * [Book club for "The Joy of Abstraction"](topic/topic_Book.20club.20for.20.22The.20Joy.20of.20Abstraction.22.html) (3 messages, latest: Feb 09 2023 at 00:58)
 * [Studying category theory?  Ask questions here!](topic/topic_Studying.20category.20theory.3F.20.20Ask.20questions.20here!.html) (3 messages, latest: Feb 06 2023 at 22:30)
@@ -172,4 +172,4 @@ permalink: /stream/229141-general:-events/index.html
 * [April 1st: ACT@UCR](topic/topic_April.201st.3A.20ACT.40UCR.html) (3 messages, latest: Mar 26 2020 at 23:58)
 * [Google Sites problem](topic/topic_Google.20Sites.20problem.html) (4 messages, latest: Mar 25 2020 at 04:29)
 
-<hr><p>Last updated: Apr 04 2023 at 00:28 UTC</p>
+<hr><p>Last updated: Apr 05 2023 at 00:09 UTC</p>
