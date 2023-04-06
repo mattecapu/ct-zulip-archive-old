@@ -9,7 +9,8 @@ permalink: /stream/266967-general:-mathematics/index.html
 
 ### Topics:
 
-* [proving things: induction](topic/topic_proving.20things.3A.20induction.html) (20 messages, latest: Apr 04 2023 at 21:20)
+* [logical equivalence](topic/topic_logical.20equivalence.html) (33 messages, latest: Apr 05 2023 at 21:03)
+* [proving things: induction](topic/topic_proving.20things.3A.20induction.html) (21 messages, latest: Apr 05 2023 at 20:05)
 * [Fantastic Proofs and How to Make Them](topic/topic_Fantastic.20Proofs.20and.20How.20to.20Make.20Them.html) (62 messages, latest: Apr 04 2023 at 18:25)
 * [evolutionary game](topic/topic_evolutionary.20game.html) (29 messages, latest: Apr 04 2023 at 07:32)
 * [categories.pi-base.org](topic/topic_categories.2Epi-base.2Eorg.html) (1 message, latest: Apr 03 2023 at 23:41)
@@ -90,4 +91,4 @@ permalink: /stream/266967-general:-mathematics/index.html
 * [the 600-cell](topic/topic_the.20600-cell.html) (5 messages, latest: Dec 01 2020 at 16:35)
 * [hermitian matrix over normed division algebra](topic/topic_hermitian.20matrix.20over.20normed.20division.20algebra.html) (8 messages, latest: Sep 28 2020 at 21:19)
 
-<hr><p>Last updated: Apr 05 2023 at 00:26 UTC</p>
+<hr><p>Last updated: Apr 06 2023 at 00:09 UTC</p>

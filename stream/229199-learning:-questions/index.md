@@ -9,6 +9,7 @@ permalink: /stream/229199-learning:-questions/index.html
 
 ### Topics:
 
+* [cylindric algebras & hyperdoctrines](topic/topic_cylindric.20algebras.20.26.20hyperdoctrines.html) (12 messages, latest: Apr 05 2023 at 15:57)
 * [Kock-Lawvere axiom](topic/topic_Kock-Lawvere.20axiom.html) (2 messages, latest: Apr 04 2023 at 18:20)
 * [Do physical units 'structure' sets of numbers?](topic/topic_Do.20physical.20units.20'structure'.20sets.20of.20numbers.3F.html) (88 messages, latest: Apr 04 2023 at 05:02)
 * [✔ Connected components functor strong monoidal](topic/topic_.E2.9C.94.20Connected.20components.20functor.20strong.20monoidal.html) (2 messages, latest: Apr 03 2023 at 09:10)
@@ -850,4 +851,4 @@ permalink: /stream/229199-learning:-questions/index.html
 * [Algebra (Aluffi) exercises](topic/topic_Algebra.20(Aluffi).20exercises.html) (55 messages, latest: Mar 27 2020 at 23:38)
 * [What is category theory about?](topic/topic_What.20is.20category.20theory.20about.3F.html) (16 messages, latest: Mar 26 2020 at 16:03)
 
-<hr><p>Last updated: Apr 05 2023 at 00:26 UTC</p>
+<hr><p>Last updated: Apr 06 2023 at 00:09 UTC</p>
