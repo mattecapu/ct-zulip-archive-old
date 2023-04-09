@@ -8,17 +8,17 @@ permalink: /index.html
 
 ## Streams:
 
-* [learning: questions](stream/229199-learning:-questions/index.html) (841 topics)
+* [learning: questions](stream/229199-learning:-questions/index.html) (842 topics)
 
 * [theory: category theory](stream/229136-theory:-category-theory/index.html) (387 topics)
 
 * [general](stream/229111-general/index.html) (250 topics)
 
-* [general: events](stream/229141-general:-events/index.html) (164 topics)
+* [general: events](stream/229141-general:-events/index.html) (165 topics)
 
 * [practice: applied ct](stream/229156-practice:-applied-ct/index.html) (140 topics)
 
-* [general: mathematics](stream/266967-general:-mathematics/index.html) (81 topics)
+* [general: mathematics](stream/266967-general:-mathematics/index.html) (82 topics)
 
 * [theory: topos theory](stream/230087-theory:-topos-theory/index.html) (80 topics)
 
@@ -180,4 +180,4 @@ permalink: /index.html
 
 * [theory: alternate presentations](stream/233122-theory:-alternate-presentations/index.html) (1 topic)
 
-<hr><p>Last updated: Apr 08 2023 at 00:28 UTC</p>
+<hr><p>Last updated: Apr 09 2023 at 00:09 UTC</p>
