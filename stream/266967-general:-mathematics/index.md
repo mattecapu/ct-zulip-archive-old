@@ -9,6 +9,8 @@ permalink: /stream/266967-general:-mathematics/index.html
 
 ### Topics:
 
+* [Exercises in Deductive Reasoning and Logical Connectives](topic/topic_Exercises.20in.20Deductive.20Reasoning.20and.20Logical.20Connectives.html) (13 messages, latest: Apr 10 2023 at 19:12)
+* [on a remark by Rovelli](topic/topic_on.20a.20remark.20by.20Rovelli.html) (30 messages, latest: Apr 10 2023 at 02:34)
 * [polynomial ring](topic/topic_polynomial.20ring.html) (30 messages, latest: Apr 10 2023 at 00:00)
 * [categories.pi-base.org](topic/topic_categories.2Epi-base.2Eorg.html) (3 messages, latest: Apr 09 2023 at 05:56)
 * [An Exploration on Truth Tables](topic/topic_An.20Exploration.20on.20Truth.20Tables.html) (5 messages, latest: Apr 08 2023 at 00:40)
@@ -17,7 +19,6 @@ permalink: /stream/266967-general:-mathematics/index.html
 * [Fantastic Proofs and How to Make Them](topic/topic_Fantastic.20Proofs.20and.20How.20to.20Make.20Them.html) (62 messages, latest: Apr 04 2023 at 18:25)
 * [evolutionary game](topic/topic_evolutionary.20game.html) (29 messages, latest: Apr 04 2023 at 07:32)
 * [the empty set is a subset of other sets](topic/topic_the.20empty.20set.20is.20a.20subset.20of.20other.20sets.html) (63 messages, latest: Apr 01 2023 at 21:10)
-* [on a remark by Rovelli](topic/topic_on.20a.20remark.20by.20Rovelli.html) (29 messages, latest: Mar 28 2023 at 17:32)
 * [Rel versus Hilb](topic/topic_Rel.20versus.20Hilb.html) (22 messages, latest: Mar 16 2023 at 23:22)
 * [Finite rigs of characteristic 0](topic/topic_Finite.20rigs.20of.20characteristic.200.html) (32 messages, latest: Mar 16 2023 at 13:35)
 * [spin networks](topic/topic_spin.20networks.html) (5 messages, latest: Mar 06 2023 at 22:42)
@@ -92,4 +93,4 @@ permalink: /stream/266967-general:-mathematics/index.html
 * [the 600-cell](topic/topic_the.20600-cell.html) (5 messages, latest: Dec 01 2020 at 16:35)
 * [hermitian matrix over normed division algebra](topic/topic_hermitian.20matrix.20over.20normed.20division.20algebra.html) (8 messages, latest: Sep 28 2020 at 21:19)
 
-<hr><p>Last updated: Apr 10 2023 at 00:28 UTC</p>
+<hr><p>Last updated: Apr 11 2023 at 00:09 UTC</p>
