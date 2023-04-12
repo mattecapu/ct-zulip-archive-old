@@ -1,0 +1,76 @@
+---
+layout: archive
+title: Zulip Chat Archive
+permalink: /stream/229111-general/topic/topic_Presentation.20of.20closed.20monoidal.20categories.html
+---
+
+<h2>Stream: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/index.html">general</a></h2>
+<h3>Topic: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/topic_Presentation.20of.20closed.20monoidal.20categories.html">Presentation of closed monoidal categories</a></h3>
+
+<hr>
+
+<base href="https://categorytheory.zulipchat.com/">
+
+{% raw %}
+
+<a name="348509626"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/Presentation%20of%20closed%20monoidal%20categories/near/348509626" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Fabio Zanasi <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/topic_Presentation.20of.20closed.20monoidal.20categories.html#348509626">(Apr 11 2023 at 16:27)</a>:</h4>
+<p>I'm working on something involving closed monoidal categories, and I wondered if anybody has a pointer on the construction of a free symmetric closed monoidal category (SCMC) starting from a collection of generating objects and morphisms. </p>
+<p>Traditionally, SCMCs are described as SMCs where the tensor has a right adjoint. However, I believe it should be doable to describe this data equivalently by saying that there are eval_{A,B} morphisms for each objects A,B, and Lambda(f) morphisms for each morphism f, satisfying certain equations. I've started working this out myself (in fact, I've used something along these lines fairly recently, in a FSCD2022 paper on rewriting in SCMCs, but I'd like to understand it more systematically). However, I have the impression it should be written somewhere already. Any hint?</p>
+
+
+
+<a name="348510459"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/Presentation%20of%20closed%20monoidal%20categories/near/348510459" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Matteo Capucci (he/him) <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/topic_Presentation.20of.20closed.20monoidal.20categories.html#348510459">(Apr 11 2023 at 16:31)</a>:</h4>
+<p>Sorry for the very dumb comment but can't you use eval and <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>λ</mi></mrow><annotation encoding="application/x-tex">\lambda</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord mathnormal">λ</span></span></span></span> to recover the units and counits of the tensor-hom adjunction? then you're back at the problem of presenting a monoidal category</p>
+
+
+
+<a name="348510498"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/Presentation%20of%20closed%20monoidal%20categories/near/348510498" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/topic_Presentation.20of.20closed.20monoidal.20categories.html#348510498">(Apr 11 2023 at 16:31)</a>:</h4>
+<p>Are you thinking of a linear type theory, something like section 2.10 of <a href="http://mikeshulman.github.io/catlog/catlog.pdf">mikeshulman.github.io/catlog/catlog.pdf</a>?</p>
+
+
+
+<a name="348511782"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/Presentation%20of%20closed%20monoidal%20categories/near/348511782" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Cole Comfort <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/topic_Presentation.20of.20closed.20monoidal.20categories.html#348511782">(Apr 11 2023 at 16:36)</a>:</h4>
+<p>I think what you want is contained in the paper, "Graphical presentations of symmetric monoidal closed theories"</p>
+<p><a href="https://hal.science/hal-00333750/file/smcc.pdf">https://hal.science/hal-00333750/file/smcc.pdf</a></p>
+
+
+
+<a name="348576283"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/Presentation%20of%20closed%20monoidal%20categories/near/348576283" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Fabio Zanasi <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/topic_Presentation.20of.20closed.20monoidal.20categories.html#348576283">(Apr 11 2023 at 22:56)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="276777">Mike Shulman</span> <a href="#narrow/stream/229111-general/topic/Presentation.20of.20closed.20monoidal.20categories/near/348510498">said</a>:</p>
+<blockquote>
+<p>Are you thinking of a linear type theory, something like section 2.10 of <a href="http://mikeshulman.github.io/catlog/catlog.pdf">mikeshulman.github.io/catlog/catlog.pdf</a>?</p>
+</blockquote>
+<p>Mmm I'm thinking of something way more basic than this. Just a presentation by generators and relations.</p>
+
+
+
+<a name="348576886"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/Presentation%20of%20closed%20monoidal%20categories/near/348576886" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Fabio Zanasi <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/topic_Presentation.20of.20closed.20monoidal.20categories.html#348576886">(Apr 11 2023 at 23:01)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="275932">Matteo Capucci (he/him)</span> <a href="#narrow/stream/229111-general/topic/Presentation.20of.20closed.20monoidal.20categories/near/348510459">said</a>:</p>
+<blockquote>
+<p>Sorry for the very dumb comment but can't you use eval and <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>λ</mi></mrow><annotation encoding="application/x-tex">\lambda</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord mathnormal">λ</span></span></span></span> to recover the units and counits of the tensor-hom adjunction? then you're back at the problem of presenting a monoidal category</p>
+</blockquote>
+<p>Basically yes, that's the route I pursued. But I was wondering whether there was an existing reference for this style of presentation, perhaps also operating some simplifcation with respect to a plain translation of the unit/counit conditions.</p>
+<p>The question is related to using string diagrams to reason about free SCMCs. Note for the case of SMCs we can confine ourselves to generating objects as wire labels, but this does not seem possible for SCMCs, because arbitrary objects are not just lists of generators but more complex entities (they mix $\otimes$ with $\multimap$).</p>
+
+
+
+<a name="348577281"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/Presentation%20of%20closed%20monoidal%20categories/near/348577281" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Fabio Zanasi <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/topic_Presentation.20of.20closed.20monoidal.20categories.html#348577281">(Apr 11 2023 at 23:04)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="277391">Cole Comfort</span> <a href="#narrow/stream/229111-general/topic/Presentation.20of.20closed.20monoidal.20categories/near/348511782">said</a>:</p>
+<blockquote>
+<p>I think what you want is contained in the paper, "Graphical presentations of symmetric monoidal closed theories"</p>
+<p><a href="https://hal.science/hal-00333750/file/smcc.pdf">https://hal.science/hal-00333750/file/smcc.pdf</a></p>
+</blockquote>
+<p>This seems very much relevant, thanks. I'm going to study it in more detail.</p>
+
+
+
+{% endraw %}
+
+<hr><p>Last updated: Apr 12 2023 at 00:11 UTC</p>

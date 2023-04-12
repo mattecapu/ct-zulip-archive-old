@@ -9,10 +9,10 @@ permalink: /stream/229141-general:-events/index.html
 
 ### Topics:
 
+* [CATNIP](topic/topic_CATNIP.html) (2 messages, latest: Apr 11 2023 at 16:28)
+* [ACT 2023](topic/topic_ACT.202023.html) (69 messages, latest: Apr 11 2023 at 16:27)
 * [Binary Operation](topic/topic_Binary.20Operation.html) (1 message, latest: Apr 08 2023 at 10:13)
 * [HoTT 2023 Registration is open](topic/topic_HoTT.202023.20Registration.20is.20open.html) (1 message, latest: Apr 07 2023 at 16:29)
-* [CATNIP](topic/topic_CATNIP.html) (1 message, latest: Apr 05 2023 at 22:01)
-* [ACT 2023](topic/topic_ACT.202023.html) (64 messages, latest: Apr 05 2023 at 17:22)
 * [Developing new scholarly institutions](topic/topic_Developing.20new.20scholarly.20institutions.html) (142 messages, latest: Mar 29 2023 at 21:39)
 * [SYCO 11](topic/topic_SYCO.2011.html) (3 messages, latest: Mar 24 2023 at 11:05)
 * [Cheng interview](topic/topic_Cheng.20interview.html) (3 messages, latest: Mar 23 2023 at 23:30)
@@ -175,4 +175,4 @@ permalink: /stream/229141-general:-events/index.html
 * [April 1st: ACT@UCR](topic/topic_April.201st.3A.20ACT.40UCR.html) (3 messages, latest: Mar 26 2020 at 23:58)
 * [Google Sites problem](topic/topic_Google.20Sites.20problem.html) (4 messages, latest: Mar 25 2020 at 04:29)
 
-<hr><p>Last updated: Apr 11 2023 at 00:28 UTC</p>
+<hr><p>Last updated: Apr 12 2023 at 00:11 UTC</p>
