@@ -9,7 +9,7 @@ permalink: /stream/241590-theory:-algebraic-topology-&-homological-algebra/index
 
 ### Topics:
 
-* [computing sheaf cohomology using simplicial homotopy groups](topic/topic_computing.20sheaf.20cohomology.20using.20simplicial.20homotopy.20groups.html) (9 messages, latest: Apr 12 2023 at 19:01)
+* [computing sheaf cohomology using simplicial homotopy groups](topic/topic_computing.20sheaf.20cohomology.20using.20simplicial.20homotopy.20groups.html) (11 messages, latest: Apr 13 2023 at 12:09)
 * [Crossed module cohomology of torus](topic/topic_Crossed.20module.20cohomology.20of.20torus.html) (18 messages, latest: Feb 08 2023 at 03:33)
 * [Orbifolds to manifolds](topic/topic_Orbifolds.20to.20manifolds.html) (1 message, latest: Feb 07 2023 at 04:39)
 * [Lifting a model structure to T-graphs](topic/topic_Lifting.20a.20model.20structure.20to.20T-graphs.html) (3 messages, latest: Jan 30 2023 at 13:59)
@@ -82,4 +82,4 @@ permalink: /stream/241590-theory:-algebraic-topology-&-homological-algebra/index
 * [simplicial sets](topic/topic_simplicial.20sets.html) (1 message, latest: Jul 02 2020 at 11:05)
 * [Secondary algebraic K-theory](topic/topic_Secondary.20algebraic.20K-theory.html) (13 messages, latest: Jun 01 2020 at 16:14)
 
-<hr><p>Last updated: Apr 13 2023 at 00:27 UTC</p>
+<hr><p>Last updated: Apr 14 2023 at 00:09 UTC</p>

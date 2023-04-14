@@ -9,6 +9,7 @@ permalink: /stream/258900-practice:-our-papers/index.html
 
 ### Topics:
 
+* [Pointfree topology and constructive mathematics](topic/topic_Pointfree.20topology.20and.20constructive.20mathematics.html) (1 message, latest: Apr 13 2023 at 11:22)
 * [string diagrams for bot religions](topic/topic_string.20diagrams.20for.20bot.20religions.html) (1 message, latest: Mar 28 2023 at 01:28)
 * [Graded Differential Categories and GDiLL](topic/topic_Graded.20Differential.20Categories.20and.20GDiLL.html) (11 messages, latest: Mar 21 2023 at 05:07)
 * [The formal theory of relative monads](topic/topic_The.20formal.20theory.20of.20relative.20monads.html) (1 message, latest: Feb 28 2023 at 14:21)
@@ -64,4 +65,4 @@ permalink: /stream/258900-practice:-our-papers/index.html
 * [Functorial semantics for partial theories](topic/topic_Functorial.20semantics.20for.20partial.20theories.html) (30 messages, latest: Nov 29 2020 at 08:46)
 * [Coends of higher arity](topic/topic_Coends.20of.20higher.20arity.html) (3 messages, latest: Sep 26 2020 at 16:28)
 
-<hr><p>Last updated: Apr 13 2023 at 00:27 UTC</p>
+<hr><p>Last updated: Apr 14 2023 at 00:09 UTC</p>

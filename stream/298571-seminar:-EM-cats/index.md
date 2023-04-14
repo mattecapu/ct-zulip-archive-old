@@ -17,4 +17,4 @@ permalink: /stream/298571-seminar:-EM-cats/index.html
 * [new channel EM-cats](topic/topic_new.20channel.20EM-cats.html) (1 message, latest: Aug 27 2021 at 21:07)
 * [first EM-cats talk](topic/topic_first.20EM-cats.20talk.html) (1 message, latest: Aug 26 2021 at 03:48)
 
-<hr><p>Last updated: Apr 13 2023 at 00:27 UTC</p>
+<hr><p>Last updated: Apr 14 2023 at 00:09 UTC</p>

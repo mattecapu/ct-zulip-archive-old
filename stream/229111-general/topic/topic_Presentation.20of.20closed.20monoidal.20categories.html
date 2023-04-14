@@ -88,6 +88,40 @@ permalink: /stream/229111-general/topic/topic_Presentation.20of.20closed.20monoi
 
 
 
+<a name="349037245"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/Presentation%20of%20closed%20monoidal%20categories/near/349037245" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Robin Piedeleu <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/topic_Presentation.20of.20closed.20monoidal.20categories.html#349037245">(Apr 13 2023 at 08:34)</a>:</h4>
+<p>I was also going to mention Mike Shulman's work. I think it implies that you can use string diagrams for compact closed categories for smccs too, but not all diagrams you can draw are allowed in that context. An alternative---which seems closer in spirit to what you had in mind---could be to use local constraints like the bubbles and clasp of the <a href="https://arxiv.org/abs/0903.0340">Rosetta Stone paper</a>. Not sure a formal account of that has been fully worked out anywhere, though.</p>
+
+
+
+<a name="349056948"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/Presentation%20of%20closed%20monoidal%20categories/near/349056948" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Cole Comfort <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/topic_Presentation.20of.20closed.20monoidal.20categories.html#349056948">(Apr 13 2023 at 09:43)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="277342">Robin Piedeleu</span> <a href="#narrow/stream/229111-general/topic/Presentation.20of.20closed.20monoidal.20categories/near/349037245">said</a>:</p>
+<blockquote>
+<p>I was also going to mention Mike Shulman's work. I think it implies that you can use string diagrams for compact closed categories for smccs too, but not all diagrams you can draw are allowed in that context.</p>
+</blockquote>
+<p>I wonder if there is a formal way to state this.</p>
+<blockquote>
+<p>An alternative---which seems closer in spirit to what you had in mind---could be to use local constraints like the bubbles and clasp of the <a href="https://arxiv.org/abs/0903.0340">Rosetta Stone paper</a>. Not sure a formal account of that has been fully worked out anywhere, though.</p>
+</blockquote>
+<p>Isn't the bubble and clasp notation formalized by this conservativity result of symmetric monoidal closed categories? The clasp is a way to enforce that the proof net has the correct type to be in the image of the embedding. Perhaps I am missing some nuance?</p>
+<p>Also, Hinze points out that another way to view this clasp and bubble thing is in terms of a right Kan extension, which you might find interesting:<br>
+<a href="https://www.cs.ox.ac.uk/ralf.hinze/Kan.pdf">https://www.cs.ox.ac.uk/ralf.hinze/Kan.pdf</a></p>
+
+
+
+<a name="349148797"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/Presentation%20of%20closed%20monoidal%20categories/near/349148797" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/topic_Presentation.20of.20closed.20monoidal.20categories.html#349148797">(Apr 13 2023 at 15:48)</a>:</h4>
+<p>What my work says directly is that you can use string diagrams for <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>∗</mo></mrow><annotation encoding="application/x-tex">\ast</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4653em;"></span><span class="mord">∗</span></span></span></span>-autonomous categories for smccs too.  The string diagrams for <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>∗</mo></mrow><annotation encoding="application/x-tex">\ast</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4653em;"></span><span class="mord">∗</span></span></span></span>-autonomous categories <em>look</em> like a subset of the ones for compact closed categories, but I don't know of anywhere that this is made precise.  Category-theoretically, I think the question is whether any <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>∗</mo></mrow><annotation encoding="application/x-tex">\ast</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4653em;"></span><span class="mord">∗</span></span></span></span>-autonomous category can be embedded <em>faithfully</em> (certainly not fully) in a compact closed category.  I have asked this question before and no one seems to know the answer.  I don't even know of any technology that could help establish it.</p>
+
+
+
+<a name="349149221"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/Presentation%20of%20closed%20monoidal%20categories/near/349149221" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/topic_Presentation.20of.20closed.20monoidal.20categories.html#349149221">(Apr 13 2023 at 15:50)</a>:</h4>
+<p>I don't immediately see a relationship between the bubble and clasp notation and my embedding theorem.  My embedding is <em>full</em>, so there is no condition required on the string diagrams themselves: any <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>∗</mo></mrow><annotation encoding="application/x-tex">\ast</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4653em;"></span><span class="mord">∗</span></span></span></span>-autonomous string diagram whose domain and codomain are in the image of the embedding is a valid "closed symmetric monoidal string diagram".</p>
+
+
+
 {% endraw %}
 
-<hr><p>Last updated: Apr 13 2023 at 00:27 UTC</p>
+<hr><p>Last updated: Apr 14 2023 at 00:09 UTC</p>
