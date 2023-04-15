@@ -9,6 +9,8 @@ permalink: /stream/229141-general:-events/index.html
 
 ### Topics:
 
+* [Structure meets Power Workshop, CFP](topic/topic_Structure.20meets.20Power.20Workshop.2C.20CFP.html) (3 messages, latest: Apr 14 2023 at 12:20)
+* [ItaCa Fest 2023](topic/topic_ItaCa.20Fest.202023.html) (1 message, latest: Apr 14 2023 at 08:40)
 * [ACT 2023](topic/topic_ACT.202023.html) (71 messages, latest: Apr 13 2023 at 14:17)
 * [CATNIP](topic/topic_CATNIP.html) (5 messages, latest: Apr 13 2023 at 09:00)
 * [Algebra, Categories and Logic in Computing (ACLiC) 2023](topic/topic_Algebra.2C.20Categories.20and.20Logic.20in.20Computing.20(ACLiC).202023.html) (1 message, latest: Apr 12 2023 at 17:42)
@@ -52,7 +54,6 @@ permalink: /stream/229141-general:-events/index.html
 * [Shannon entropy from category theory](topic/topic_Shannon.20entropy.20from.20category.20theory.html) (4 messages, latest: Jun 15 2022 at 04:35)
 * [GReTA seminar](topic/topic_GReTA.20seminar.html) (3 messages, latest: Jun 15 2022 at 04:21)
 * [ICRA 2022 Workshop on Compositional Robotics](topic/topic_ICRA.202022.20Workshop.20on.20Compositional.20Robotics.html) (7 messages, latest: May 28 2022 at 15:39)
-* [Structure meets Power Workshop, CFP](topic/topic_Structure.20meets.20Power.20Workshop.2C.20CFP.html) (2 messages, latest: May 13 2022 at 15:06)
 * [Categorical Semantics of Entropy](topic/topic_Categorical.20Semantics.20of.20Entropy.html) (5 messages, latest: May 12 2022 at 18:39)
 * [CMU HoTT Seminar Online: Shulman](topic/topic_CMU.20HoTT.20Seminar.20Online.3A.20Shulman.html) (6 messages, latest: May 11 2022 at 11:31)
 * [stream events](topic/topic_stream.20events.html) (6 messages, latest: May 09 2022 at 21:14)
@@ -176,4 +177,4 @@ permalink: /stream/229141-general:-events/index.html
 * [April 1st: ACT@UCR](topic/topic_April.201st.3A.20ACT.40UCR.html) (3 messages, latest: Mar 26 2020 at 23:58)
 * [Google Sites problem](topic/topic_Google.20Sites.20problem.html) (4 messages, latest: Mar 25 2020 at 04:29)
 
-<hr><p>Last updated: Apr 14 2023 at 00:27 UTC</p>
+<hr><p>Last updated: Apr 15 2023 at 00:09 UTC</p>

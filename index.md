@@ -14,7 +14,7 @@ permalink: /index.html
 
 * [general](stream/229111-general/index.html) (251 topics)
 
-* [general: events](stream/229141-general:-events/index.html) (166 topics)
+* [general: events](stream/229141-general:-events/index.html) (167 topics)
 
 * [practice: applied ct](stream/229156-practice:-applied-ct/index.html) (140 topics)
 
@@ -180,4 +180,4 @@ permalink: /index.html
 
 * [theory: alternate presentations](stream/233122-theory:-alternate-presentations/index.html) (1 topic)
 
-<hr><p>Last updated: Apr 14 2023 at 00:27 UTC</p>
+<hr><p>Last updated: Apr 15 2023 at 00:09 UTC</p>
