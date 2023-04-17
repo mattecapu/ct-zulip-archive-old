@@ -9,7 +9,7 @@ permalink: /stream/229457-seminar:-MIT-Categories-Seminar/index.html
 
 ### Topics:
 
-* [May 14 - Mike Shulman's talk](topic/topic_May.2014.20-.20Mike.20Shulman's.20talk.html) (91 messages, latest: Apr 16 2023 at 00:28)
+* [May 14 - Mike Shulman's talk](topic/topic_May.2014.20-.20Mike.20Shulman's.20talk.html) (94 messages, latest: Apr 16 2023 at 05:36)
 * [April 2 - Todd Trimble's talk](topic/topic_April.202.20-.20Todd.20Trimble's.20talk.html) (138 messages, latest: Jul 14 2021 at 12:04)
 * [May 21 - Jade Master's talk](topic/topic_May.2021.20-.20Jade.20Master's.20talk.html) (43 messages, latest: Jan 28 2021 at 02:55)
 * [June 11: Paolo Perrone's talk](topic/topic_June.2011.3A.20Paolo.20Perrone's.20talk.html) (14 messages, latest: Jan 14 2021 at 10:30)
@@ -51,4 +51,4 @@ permalink: /stream/229457-seminar:-MIT-Categories-Seminar/index.html
 * [March 26 - David Myers' talk](topic/topic_March.2026.20-.20David.20Myers'.20talk.html) (40 messages, latest: Mar 27 2020 at 18:11)
 * [March 19 - Pilot talk](topic/topic_March.2019.20-.20Pilot.20talk.html) (1 message, latest: Mar 24 2020 at 20:49)
 
-<hr><p>Last updated: Apr 16 2023 at 00:30 UTC</p>
+<hr><p>Last updated: Apr 17 2023 at 00:09 UTC</p>

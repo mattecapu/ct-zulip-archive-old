@@ -8,7 +8,7 @@ permalink: /index.html
 
 ## Streams:
 
-* [learning: questions](stream/229199-learning:-questions/index.html) (843 topics)
+* [learning: questions](stream/229199-learning:-questions/index.html) (845 topics)
 
 * [theory: category theory](stream/229136-theory:-category-theory/index.html) (389 topics)
 
@@ -60,9 +60,9 @@ permalink: /index.html
 
 * [practice: Dialectica](stream/323208-practice:-Dialectica/index.html) (23 topics)
 
-* [workshop: Polynomial Functors @ Topos](stream/282140-workshop:-Polynomial-Functors-@-Topos/index.html) (22 topics)
+* [learning: id my structure](stream/311521-learning:-id-my-structure/index.html) (22 topics)
 
-* [learning: id my structure](stream/311521-learning:-id-my-structure/index.html) (21 topics)
+* [workshop: Polynomial Functors @ Topos](stream/282140-workshop:-Polynomial-Functors-@-Topos/index.html) (22 topics)
 
 * [theory: physics](stream/251538-theory:-physics/index.html) (19 topics)
 
@@ -180,4 +180,4 @@ permalink: /index.html
 
 * [theory: alternate presentations](stream/233122-theory:-alternate-presentations/index.html) (1 topic)
 
-<hr><p>Last updated: Apr 16 2023 at 00:30 UTC</p>
+<hr><p>Last updated: Apr 17 2023 at 00:09 UTC</p>
