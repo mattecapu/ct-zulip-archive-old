@@ -18,7 +18,7 @@ permalink: /index.html
 
 * [practice: applied ct](stream/229156-practice:-applied-ct/index.html) (140 topics)
 
-* [general: mathematics](stream/266967-general:-mathematics/index.html) (84 topics)
+* [general: mathematics](stream/266967-general:-mathematics/index.html) (85 topics)
 
 * [theory: topos theory](stream/230087-theory:-topos-theory/index.html) (80 topics)
 
@@ -40,7 +40,7 @@ permalink: /index.html
 
 * [theory: type theory](stream/229952-theory:-type-theory/index.html) (46 topics)
 
-* [practice: our work](stream/274877-practice:-our-work/index.html) (44 topics)
+* [practice: our work](stream/274877-practice:-our-work/index.html) (45 topics)
 
 * [MIT Categories Seminar](stream/229457-MIT-Categories-Seminar/index.html) (41 topics)
 
@@ -180,4 +180,4 @@ permalink: /index.html
 
 * [theory: alternate presentations](stream/233122-theory:-alternate-presentations/index.html) (1 topic)
 
-<hr><p>Last updated: Apr 18 2023 at 00:27 UTC</p>
+<hr><p>Last updated: Apr 19 2023 at 00:09 UTC</p>
