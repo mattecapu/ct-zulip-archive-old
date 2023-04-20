@@ -9,7 +9,8 @@ permalink: /stream/266967-general:-mathematics/index.html
 
 ### Topics:
 
-* [algebraic sets and affine schemes](topic/topic_algebraic.20sets.20and.20affine.20schemes.html) (65 messages, latest: Apr 18 2023 at 23:40)
+* [Galois connections](topic/topic_Galois.20connections.html) (1 message, latest: Apr 20 2023 at 00:06)
+* [algebraic sets and affine schemes](topic/topic_algebraic.20sets.20and.20affine.20schemes.html) (78 messages, latest: Apr 19 2023 at 18:26)
 * [Fantastic Proofs and How to Make Them](topic/topic_Fantastic.20Proofs.20and.20How.20to.20Make.20Them.html) (71 messages, latest: Apr 16 2023 at 11:10)
 * [order theory terminology](topic/topic_order.20theory.20terminology.html) (15 messages, latest: Apr 14 2023 at 18:26)
 * [Exercises in Deductive Reasoning and Logical Connectives](topic/topic_Exercises.20in.20Deductive.20Reasoning.20and.20Logical.20Connectives.html) (38 messages, latest: Apr 12 2023 at 19:29)
@@ -95,4 +96,4 @@ permalink: /stream/266967-general:-mathematics/index.html
 * [the 600-cell](topic/topic_the.20600-cell.html) (5 messages, latest: Dec 01 2020 at 16:35)
 * [hermitian matrix over normed division algebra](topic/topic_hermitian.20matrix.20over.20normed.20division.20algebra.html) (8 messages, latest: Sep 28 2020 at 21:19)
 
-<hr><p>Last updated: Apr 19 2023 at 00:30 UTC</p>
+<hr><p>Last updated: Apr 20 2023 at 00:09 UTC</p>

@@ -9,6 +9,7 @@ permalink: /stream/229141-general:-events/index.html
 
 ### Topics:
 
+* [SYCO 11](topic/topic_SYCO.2011.html) (4 messages, latest: Apr 19 2023 at 07:33)
 * [ACT 2023](topic/topic_ACT.202023.html) (73 messages, latest: Apr 16 2023 at 17:00)
 * [Binary Operation](topic/topic_Binary.20Operation.html) (3 messages, latest: Apr 16 2023 at 14:01)
 * [Structure meets Power Workshop, CFP](topic/topic_Structure.20meets.20Power.20Workshop.2C.20CFP.html) (3 messages, latest: Apr 14 2023 at 12:20)
@@ -17,7 +18,6 @@ permalink: /stream/229141-general:-events/index.html
 * [Algebra, Categories and Logic in Computing (ACLiC) 2023](topic/topic_Algebra.2C.20Categories.20and.20Logic.20in.20Computing.20(ACLiC).202023.html) (1 message, latest: Apr 12 2023 at 17:42)
 * [HoTT 2023 Registration is open](topic/topic_HoTT.202023.20Registration.20is.20open.html) (1 message, latest: Apr 07 2023 at 16:29)
 * [Developing new scholarly institutions](topic/topic_Developing.20new.20scholarly.20institutions.html) (142 messages, latest: Mar 29 2023 at 21:39)
-* [SYCO 11](topic/topic_SYCO.2011.html) (3 messages, latest: Mar 24 2023 at 11:05)
 * [Cheng interview](topic/topic_Cheng.20interview.html) (3 messages, latest: Mar 23 2023 at 23:30)
 * [Category Theory study group for the book Joy of Abstraction](topic/topic_Category.20Theory.20study.20group.20for.20the.20book.20Joy.20of.20Abstraction.html) (1 message, latest: Mar 18 2023 at 00:08)
 * [Topos Institute events](topic/topic_Topos.20Institute.20events.html) (1 message, latest: Mar 09 2023 at 05:39)
@@ -177,4 +177,4 @@ permalink: /stream/229141-general:-events/index.html
 * [April 1st: ACT@UCR](topic/topic_April.201st.3A.20ACT.40UCR.html) (3 messages, latest: Mar 26 2020 at 23:58)
 * [Google Sites problem](topic/topic_Google.20Sites.20problem.html) (4 messages, latest: Mar 25 2020 at 04:29)
 
-<hr><p>Last updated: Apr 19 2023 at 00:30 UTC</p>
+<hr><p>Last updated: Apr 20 2023 at 00:09 UTC</p>

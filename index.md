@@ -8,7 +8,7 @@ permalink: /index.html
 
 ## Streams:
 
-* [learning: questions](stream/229199-learning:-questions/index.html) (845 topics)
+* [learning: questions](stream/229199-learning:-questions/index.html) (846 topics)
 
 * [theory: category theory](stream/229136-theory:-category-theory/index.html) (390 topics)
 
@@ -18,7 +18,7 @@ permalink: /index.html
 
 * [practice: applied ct](stream/229156-practice:-applied-ct/index.html) (140 topics)
 
-* [general: mathematics](stream/266967-general:-mathematics/index.html) (85 topics)
+* [general: mathematics](stream/266967-general:-mathematics/index.html) (86 topics)
 
 * [theory: topos theory](stream/230087-theory:-topos-theory/index.html) (80 topics)
 
@@ -112,11 +112,11 @@ permalink: /index.html
 
 * [theory: monoids](stream/231815-theory:-monoids/index.html) (8 topics)
 
+* [general: terminology & notation](stream/348484-general:-terminology-&-notation/index.html) (7 topics)
+
 * [learning: statistics reading group](stream/245528-learning:-statistics-reading-group/index.html) (7 topics)
 
 * [seminar: EM-cats](stream/298571-seminar:-EM-cats/index.html) (7 topics)
-
-* [general: terminology & notation](stream/348484-general:-terminology-&-notation/index.html) (6 topics)
 
 * [semiotics and semiosis](stream/229179-semiotics-and-semiosis/index.html) (6 topics)
 
@@ -180,4 +180,4 @@ permalink: /index.html
 
 * [theory: alternate presentations](stream/233122-theory:-alternate-presentations/index.html) (1 topic)
 
-<hr><p>Last updated: Apr 19 2023 at 00:30 UTC</p>
+<hr><p>Last updated: Apr 20 2023 at 00:09 UTC</p>
