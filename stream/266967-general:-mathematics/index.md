@@ -9,7 +9,9 @@ permalink: /stream/266967-general:-mathematics/index.html
 
 ### Topics:
 
-* [Galois connections](topic/topic_Galois.20connections.html) (10 messages, latest: Apr 20 2023 at 00:26)
+* ["higher" SDG via differentiable stacks](topic/topic_.22higher.22.20SDG.20via.20differentiable.20stacks.html) (11 messages, latest: Apr 20 2023 at 17:37)
+* [proving things: induction](topic/topic_proving.20things.3A.20induction.html) (26 messages, latest: Apr 20 2023 at 16:29)
+* [Galois connections](topic/topic_Galois.20connections.html) (13 messages, latest: Apr 20 2023 at 05:12)
 * [algebraic sets and affine schemes](topic/topic_algebraic.20sets.20and.20affine.20schemes.html) (78 messages, latest: Apr 19 2023 at 18:26)
 * [Fantastic Proofs and How to Make Them](topic/topic_Fantastic.20Proofs.20and.20How.20to.20Make.20Them.html) (71 messages, latest: Apr 16 2023 at 11:10)
 * [order theory terminology](topic/topic_order.20theory.20terminology.html) (15 messages, latest: Apr 14 2023 at 18:26)
@@ -18,7 +20,6 @@ permalink: /stream/266967-general:-mathematics/index.html
 * [polynomial ring](topic/topic_polynomial.20ring.html) (30 messages, latest: Apr 10 2023 at 00:00)
 * [categories.pi-base.org](topic/topic_categories.2Epi-base.2Eorg.html) (3 messages, latest: Apr 09 2023 at 05:56)
 * [An Exploration on Truth Tables](topic/topic_An.20Exploration.20on.20Truth.20Tables.html) (5 messages, latest: Apr 08 2023 at 00:40)
-* [proving things: induction](topic/topic_proving.20things.3A.20induction.html) (22 messages, latest: Apr 08 2023 at 00:14)
 * [logical equivalence](topic/topic_logical.20equivalence.html) (33 messages, latest: Apr 05 2023 at 21:03)
 * [evolutionary game](topic/topic_evolutionary.20game.html) (29 messages, latest: Apr 04 2023 at 07:32)
 * [the empty set is a subset of other sets](topic/topic_the.20empty.20set.20is.20a.20subset.20of.20other.20sets.html) (63 messages, latest: Apr 01 2023 at 21:10)
@@ -96,4 +97,4 @@ permalink: /stream/266967-general:-mathematics/index.html
 * [the 600-cell](topic/topic_the.20600-cell.html) (5 messages, latest: Dec 01 2020 at 16:35)
 * [hermitian matrix over normed division algebra](topic/topic_hermitian.20matrix.20over.20normed.20division.20algebra.html) (8 messages, latest: Sep 28 2020 at 21:19)
 
-<hr><p>Last updated: Apr 20 2023 at 00:27 UTC</p>
+<hr><p>Last updated: Apr 21 2023 at 00:09 UTC</p>

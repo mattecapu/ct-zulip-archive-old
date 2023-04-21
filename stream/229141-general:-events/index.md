@@ -9,6 +9,7 @@ permalink: /stream/229141-general:-events/index.html
 
 ### Topics:
 
+* [Workshop on Doctrines and Fibrations 2023](topic/topic_Workshop.20on.20Doctrines.20and.20Fibrations.202023.html) (1 message, latest: Apr 20 2023 at 18:47)
 * [SYCO 11](topic/topic_SYCO.2011.html) (4 messages, latest: Apr 19 2023 at 07:33)
 * [ACT 2023](topic/topic_ACT.202023.html) (73 messages, latest: Apr 16 2023 at 17:00)
 * [Binary Operation](topic/topic_Binary.20Operation.html) (3 messages, latest: Apr 16 2023 at 14:01)
@@ -177,4 +178,4 @@ permalink: /stream/229141-general:-events/index.html
 * [April 1st: ACT@UCR](topic/topic_April.201st.3A.20ACT.40UCR.html) (3 messages, latest: Mar 26 2020 at 23:58)
 * [Google Sites problem](topic/topic_Google.20Sites.20problem.html) (4 messages, latest: Mar 25 2020 at 04:29)
 
-<hr><p>Last updated: Apr 20 2023 at 00:27 UTC</p>
+<hr><p>Last updated: Apr 21 2023 at 00:09 UTC</p>

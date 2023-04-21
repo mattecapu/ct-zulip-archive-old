@@ -29,4 +29,4 @@ permalink: /stream/347879-workshop:-Categories-for-AI/index.html
 * [Welcome!](topic/topic_Welcome!.html) (1 message, latest: Oct 04 2022 at 21:01)
 * [stream events](topic/topic_stream.20events.html) (1 message, latest: Oct 03 2022 at 17:49)
 
-<hr><p>Last updated: Apr 20 2023 at 00:27 UTC</p>
+<hr><p>Last updated: Apr 21 2023 at 00:09 UTC</p>

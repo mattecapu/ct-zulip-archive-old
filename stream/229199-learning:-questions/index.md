@@ -9,9 +9,10 @@ permalink: /stream/229199-learning:-questions/index.html
 
 ### Topics:
 
+* [Partial fibration](topic/topic_Partial.20fibration.html) (6 messages, latest: Apr 20 2023 at 12:07)
+* [Is this well defined?](topic/topic_Is.20this.20well.20defined.3F.html) (18 messages, latest: Apr 20 2023 at 10:59)
 * [equivariant](topic/topic_equivariant.html) (17 messages, latest: Apr 19 2023 at 18:30)
 * [Tannakian categories](topic/topic_Tannakian.20categories.html) (8 messages, latest: Apr 18 2023 at 16:35)
-* [Is this well defined?](topic/topic_Is.20this.20well.20defined.3F.html) (17 messages, latest: Apr 17 2023 at 14:55)
 * [Do physical units 'structure' sets of numbers?](topic/topic_Do.20physical.20units.20'structure'.20sets.20of.20numbers.3F.html) (100 messages, latest: Apr 12 2023 at 18:47)
 * [On the existence of a category of functors](topic/topic_On.20the.20existence.20of.20a.20category.20of.20functors.html) (14 messages, latest: Apr 11 2023 at 15:29)
 * [Order theory question](topic/topic_Order.20theory.20question.html) (5 messages, latest: Apr 08 2023 at 17:33)
@@ -856,4 +857,4 @@ permalink: /stream/229199-learning:-questions/index.html
 * [Algebra (Aluffi) exercises](topic/topic_Algebra.20(Aluffi).20exercises.html) (55 messages, latest: Mar 27 2020 at 23:38)
 * [What is category theory about?](topic/topic_What.20is.20category.20theory.20about.3F.html) (16 messages, latest: Mar 26 2020 at 16:03)
 
-<hr><p>Last updated: Apr 20 2023 at 00:27 UTC</p>
+<hr><p>Last updated: Apr 21 2023 at 00:09 UTC</p>
