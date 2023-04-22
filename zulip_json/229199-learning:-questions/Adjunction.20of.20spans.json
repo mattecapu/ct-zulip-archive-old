@@ -1,0 +1,62 @@
+[
+    {
+        "content": "<p>What's an adjunction in the 2-category of sets, spans and morphisms or spans? Does it correspond to some existing notion?</p>",
+        "id": 351697930,
+        "sender_full_name": "Oscar Cunningham",
+        "timestamp": 1682099791
+    },
+    {
+        "content": "<p>It's a function!!</p>",
+        "id": 351698870,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1682100031
+    },
+    {
+        "content": "<p>This is an instance of a general pattern!   An adjunction in the 2-category of sets, relations and implications between relations is also a function.  An adjunction in the 2-category of categories, profunctors and natural transformations between profunctors is a functor (from one category to the Cauchy completion of the other).</p>\n<p>It's the left adjoint that \"is\" the function or functor here, so sometimes people call left adjoints in bicategories \"maps\".</p>",
+        "id": 351718557,
+        "sender_full_name": "John Baez",
+        "timestamp": 1682106066
+    },
+    {
+        "content": "<p>I'm sure some other people here know a lot more about this pattern than I do.</p>",
+        "id": 351718849,
+        "sender_full_name": "John Baez",
+        "timestamp": 1682106160
+    },
+    {
+        "content": "<p>Thank you Mike!</p>",
+        "id": 351721863,
+        "sender_full_name": "Oscar Cunningham",
+        "timestamp": 1682107213
+    },
+    {
+        "content": "<p>Yes, I'd seen that thing about Cauchy completions before. I always thought it was a bit weird. In the same way that a displayed category is a lax functor into Span, but  a lax <em>normal</em> functor into Prof.</p>",
+        "id": 351722093,
+        "sender_full_name": "Oscar Cunningham",
+        "timestamp": 1682107298
+    },
+    {
+        "content": "<p>So I was hoping that similarly the adjunctions in Span turned out to be less weird than the adjunctions in Prof.</p>",
+        "id": 351722231,
+        "sender_full_name": "Oscar Cunningham",
+        "timestamp": 1682107335
+    },
+    {
+        "content": "<p>Basically the point is that discrete categories are always Cauchy complete.</p>",
+        "id": 351725767,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1682108547
+    },
+    {
+        "content": "<p>The Cauchy completion stuff here seemed weird to me too at first:</p>\n<blockquote>\n<p>An adjunction in the 2-category of categories, profunctors and natural transformations between profunctors is a functor (from one category to the Cauchy completion of the other).</p>\n</blockquote>",
+        "id": 351737843,
+        "sender_full_name": "John Baez",
+        "timestamp": 1682113416
+    },
+    {
+        "content": "<p>But it helped me to realize that presheaves on a category are the same as presheaves on its Cauchy completion, and a profunctor is just a presheaf with extra structure, so it would be extremely optimistic to think that a profunctor can be expected to be \"smart enough\" to know whether it's supposed to be going to some category or to its Cauchy completion.  When you try to take a left adjoint profunctor from C to D and turn it into a functor, it might fail because it's trying to map an object of C to a 'summand' of an object of D, i.e. a nonexistent object that pops into existence when you split idempotents, as you do when taking the Cauchy completion of D.</p>",
+        "id": 351738421,
+        "sender_full_name": "John Baez",
+        "timestamp": 1682113691
+    }
+]

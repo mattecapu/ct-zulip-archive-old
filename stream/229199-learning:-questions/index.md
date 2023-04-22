@@ -9,6 +9,8 @@ permalink: /stream/229199-learning:-questions/index.html
 
 ### Topics:
 
+* [Adjunction of spans](topic/topic_Adjunction.20of.20spans.html) (10 messages, latest: Apr 21 2023 at 21:48)
+* [delooping and linearly distributive categories](topic/topic_delooping.20and.20linearly.20distributive.20categories.html) (3 messages, latest: Apr 21 2023 at 18:59)
 * [Partial fibration](topic/topic_Partial.20fibration.html) (6 messages, latest: Apr 20 2023 at 12:07)
 * [Is this well defined?](topic/topic_Is.20this.20well.20defined.3F.html) (18 messages, latest: Apr 20 2023 at 10:59)
 * [equivariant](topic/topic_equivariant.html) (17 messages, latest: Apr 19 2023 at 18:30)
@@ -857,4 +859,4 @@ permalink: /stream/229199-learning:-questions/index.html
 * [Algebra (Aluffi) exercises](topic/topic_Algebra.20(Aluffi).20exercises.html) (55 messages, latest: Mar 27 2020 at 23:38)
 * [What is category theory about?](topic/topic_What.20is.20category.20theory.20about.3F.html) (16 messages, latest: Mar 26 2020 at 16:03)
 
-<hr><p>Last updated: Apr 21 2023 at 00:29 UTC</p>
+<hr><p>Last updated: Apr 22 2023 at 00:09 UTC</p>
