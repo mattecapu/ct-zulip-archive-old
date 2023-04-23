@@ -9,7 +9,7 @@ permalink: /stream/245502-general:-positions/index.html
 
 ### Topics:
 
-* [Postdoc at LIPN](topic/topic_Postdoc.20at.20LIPN.html) (3 messages, latest: Apr 21 2023 at 21:50)
+* [Postdoc at LIPN](topic/topic_Postdoc.20at.20LIPN.html) (4 messages, latest: Apr 22 2023 at 10:55)
 * [Research associate in Oxford](topic/topic_Research.20associate.20in.20Oxford.html) (2 messages, latest: Mar 17 2023 at 13:10)
 * [Topos Institute positions](topic/topic_Topos.20Institute.20positions.html) (2 messages, latest: Mar 10 2023 at 10:08)
 * [Topos Institute summer research positions](topic/topic_Topos.20Institute.20summer.20research.20positions.html) (27 messages, latest: Feb 07 2023 at 00:27)
@@ -82,4 +82,4 @@ permalink: /stream/245502-general:-positions/index.html
 * [PhD positions in Estonia](topic/topic_PhD.20positions.20in.20Estonia.html) (1 message, latest: Jun 27 2020 at 18:04)
 * [Companies that hire category people](topic/topic_Companies.20that.20hire.20category.20people.html) (2 messages, latest: May 13 2020 at 03:50)
 
-<hr><p>Last updated: Apr 22 2023 at 00:28 UTC</p>
+<hr><p>Last updated: Apr 23 2023 at 00:09 UTC</p>
