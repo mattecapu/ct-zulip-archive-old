@@ -9,7 +9,9 @@ permalink: /stream/229199-learning:-questions/index.html
 
 ### Topics:
 
-* [initial sources as initial objects](topic/topic_initial.20sources.20as.20initial.20objects.html) (10 messages, latest: Apr 23 2023 at 23:42)
+* [initial sources as initial objects](topic/topic_initial.20sources.20as.20initial.20objects.html) (22 messages, latest: Apr 24 2023 at 17:30)
+* [can a unique arrow makes more than one commuting diagram?](topic/topic_can.20a.20unique.20arrow.20makes.20more.20than.20one.20commuting.20diagram.3F.html) (7 messages, latest: Apr 24 2023 at 15:46)
+* [what kind of thing is a Chart between polynomial functors?](topic/topic_what.20kind.20of.20thing.20is.20a.20Chart.20between.20polynomial.20functors.3F.html) (16 messages, latest: Apr 24 2023 at 11:27)
 * [Adjunction of spans](topic/topic_Adjunction.20of.20spans.html) (10 messages, latest: Apr 21 2023 at 21:48)
 * [delooping and linearly distributive categories](topic/topic_delooping.20and.20linearly.20distributive.20categories.html) (3 messages, latest: Apr 21 2023 at 18:59)
 * [Partial fibration](topic/topic_Partial.20fibration.html) (6 messages, latest: Apr 20 2023 at 12:07)
@@ -860,4 +862,4 @@ permalink: /stream/229199-learning:-questions/index.html
 * [Algebra (Aluffi) exercises](topic/topic_Algebra.20(Aluffi).20exercises.html) (55 messages, latest: Mar 27 2020 at 23:38)
 * [What is category theory about?](topic/topic_What.20is.20category.20theory.20about.3F.html) (16 messages, latest: Mar 26 2020 at 16:03)
 
-<hr><p>Last updated: Apr 24 2023 at 00:30 UTC</p>
+<hr><p>Last updated: Apr 25 2023 at 00:09 UTC</p>
