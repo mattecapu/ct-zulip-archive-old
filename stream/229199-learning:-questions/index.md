@@ -9,7 +9,9 @@ permalink: /stream/229199-learning:-questions/index.html
 
 ### Topics:
 
-* [initial sources as initial objects](topic/topic_initial.20sources.20as.20initial.20objects.html) (22 messages, latest: Apr 24 2023 at 17:30)
+* [algebra morphisms parameterised by endofunctor morphisms](topic/topic_algebra.20morphisms.20parameterised.20by.20endofunctor.20morphisms.html) (7 messages, latest: Apr 25 2023 at 21:24)
+* [subsets and subgroups](topic/topic_subsets.20and.20subgroups.html) (61 messages, latest: Apr 25 2023 at 09:38)
+* [initial sources as initial objects](topic/topic_initial.20sources.20as.20initial.20objects.html) (23 messages, latest: Apr 25 2023 at 07:37)
 * [can a unique arrow makes more than one commuting diagram?](topic/topic_can.20a.20unique.20arrow.20makes.20more.20than.20one.20commuting.20diagram.3F.html) (7 messages, latest: Apr 24 2023 at 15:46)
 * [what kind of thing is a Chart between polynomial functors?](topic/topic_what.20kind.20of.20thing.20is.20a.20Chart.20between.20polynomial.20functors.3F.html) (16 messages, latest: Apr 24 2023 at 11:27)
 * [Adjunction of spans](topic/topic_Adjunction.20of.20spans.html) (10 messages, latest: Apr 21 2023 at 21:48)
@@ -28,7 +30,6 @@ permalink: /stream/229199-learning:-questions/index.html
 * [why rings need identities](topic/topic_why.20rings.20need.20identities.html) (49 messages, latest: Mar 29 2023 at 23:34)
 * [small products in model categories](topic/topic_small.20products.20in.20model.20categories.html) (5 messages, latest: Mar 29 2023 at 07:01)
 * [an invertibility problem](topic/topic_an.20invertibility.20problem.html) (13 messages, latest: Mar 28 2023 at 18:32)
-* [subsets and subgroups](topic/topic_subsets.20and.20subgroups.html) (58 messages, latest: Mar 28 2023 at 17:37)
 * [Hegel dialectics](topic/topic_Hegel.20dialectics.html) (10 messages, latest: Mar 27 2023 at 08:53)
 * [open system](topic/topic_open.20system.html) (1 message, latest: Mar 26 2023 at 16:34)
 * [A formal programming category](topic/topic_A.20formal.20programming.20category.html) (98 messages, latest: Mar 23 2023 at 20:30)
@@ -862,4 +863,4 @@ permalink: /stream/229199-learning:-questions/index.html
 * [Algebra (Aluffi) exercises](topic/topic_Algebra.20(Aluffi).20exercises.html) (55 messages, latest: Mar 27 2020 at 23:38)
 * [What is category theory about?](topic/topic_What.20is.20category.20theory.20about.3F.html) (16 messages, latest: Mar 26 2020 at 16:03)
 
-<hr><p>Last updated: Apr 25 2023 at 00:29 UTC</p>
+<hr><p>Last updated: Apr 26 2023 at 00:10 UTC</p>
