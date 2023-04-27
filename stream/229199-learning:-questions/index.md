@@ -9,6 +9,7 @@ permalink: /stream/229199-learning:-questions/index.html
 
 ### Topics:
 
+* [Pushout complements in Cat](topic/topic_Pushout.20complements.20in.20Cat.html) (27 messages, latest: Apr 26 2023 at 21:33)
 * [algebra morphisms parameterised by endofunctor morphisms](topic/topic_algebra.20morphisms.20parameterised.20by.20endofunctor.20morphisms.html) (7 messages, latest: Apr 25 2023 at 21:24)
 * [subsets and subgroups](topic/topic_subsets.20and.20subgroups.html) (61 messages, latest: Apr 25 2023 at 09:38)
 * [initial sources as initial objects](topic/topic_initial.20sources.20as.20initial.20objects.html) (23 messages, latest: Apr 25 2023 at 07:37)
@@ -863,4 +864,4 @@ permalink: /stream/229199-learning:-questions/index.html
 * [Algebra (Aluffi) exercises](topic/topic_Algebra.20(Aluffi).20exercises.html) (55 messages, latest: Mar 27 2020 at 23:38)
 * [What is category theory about?](topic/topic_What.20is.20category.20theory.20about.3F.html) (16 messages, latest: Mar 26 2020 at 16:03)
 
-<hr><p>Last updated: Apr 26 2023 at 00:28 UTC</p>
+<hr><p>Last updated: Apr 27 2023 at 00:10 UTC</p>

@@ -9,7 +9,7 @@ permalink: /stream/229111-general/index.html
 
 ### Topics:
 
-* [Introduce yourself!](topic/topic_Introduce.20yourself!.html) (47 messages, latest: Apr 25 2023 at 17:51)
+* [Introduce yourself!](topic/topic_Introduce.20yourself!.html) (49 messages, latest: Apr 26 2023 at 21:50)
 * [Presentation of closed monoidal categories](topic/topic_Presentation.20of.20closed.20monoidal.20categories.html) (19 messages, latest: Apr 17 2023 at 20:48)
 * [Journal suggestions](topic/topic_Journal.20suggestions.html) (3 messages, latest: Mar 24 2023 at 22:31)
 * [Compositionality](topic/topic_Compositionality.html) (61 messages, latest: Mar 21 2023 at 21:56)
@@ -261,4 +261,4 @@ permalink: /stream/229111-general/index.html
 * [Tools for diagrams](topic/topic_Tools.20for.20diagrams.html) (78 messages, latest: Mar 25 2020 at 17:53)
 * [topic demonstration](topic/topic_topic.20demonstration.html) (2 messages, latest: Mar 23 2020 at 16:57)
 
-<hr><p>Last updated: Apr 26 2023 at 00:28 UTC</p>
+<hr><p>Last updated: Apr 27 2023 at 00:10 UTC</p>

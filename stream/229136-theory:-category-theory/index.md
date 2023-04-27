@@ -9,7 +9,8 @@ permalink: /stream/229136-theory:-category-theory/index.html
 
 ### Topics:
 
-* [From *-autonomous to compact closed](topic/topic_From.20*-autonomous.20to.20compact.20closed.html) (50 messages, latest: Apr 25 2023 at 00:21)
+* [From *-autonomous to compact closed](topic/topic_From.20*-autonomous.20to.20compact.20closed.html) (52 messages, latest: Apr 26 2023 at 20:23)
+* [Approach to whiskering with lax functors](topic/topic_Approach.20to.20whiskering.20with.20lax.20functors.html) (4 messages, latest: Apr 26 2023 at 12:07)
 * [Cartesian 2-category](topic/topic_Cartesian.202-category.html) (5 messages, latest: Apr 11 2023 at 18:53)
 * [Right adjoint to inclusion functor](topic/topic_Right.20adjoint.20to.20inclusion.20functor.html) (28 messages, latest: Apr 10 2023 at 16:18)
 * [✔ Left adjoint to quintet construction](topic/topic_.E2.9C.94.20Left.20adjoint.20to.20quintet.20construction.html) (9 messages, latest: Apr 02 2023 at 11:18)
@@ -400,4 +401,4 @@ permalink: /stream/229136-theory:-category-theory/index.html
 * [diagrams for application](topic/topic_diagrams.20for.20application.html) (13 messages, latest: Mar 24 2020 at 06:19)
 * [universal constructions](topic/topic_universal.20constructions.html) (8 messages, latest: Mar 23 2020 at 21:06)
 
-<hr><p>Last updated: Apr 26 2023 at 00:28 UTC</p>
+<hr><p>Last updated: Apr 27 2023 at 00:10 UTC</p>
