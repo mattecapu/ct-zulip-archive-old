@@ -9,10 +9,11 @@ permalink: /stream/266967-general:-mathematics/index.html
 
 ### Topics:
 
+* [homotopy fibers](topic/topic_homotopy.20fibers.html) (27 messages, latest: Apr 27 2023 at 23:50)
+* [order theory terminology](topic/topic_order.20theory.20terminology.html) (27 messages, latest: Apr 27 2023 at 21:05)
+* [Galois connections](topic/topic_Galois.20connections.html) (31 messages, latest: Apr 27 2023 at 02:00)
 * [A recurring logical schema in mathematics](topic/topic_A.20recurring.20logical.20schema.20in.20mathematics.html) (15 messages, latest: Apr 22 2023 at 20:06)
 * [algebraic sets and affine schemes](topic/topic_algebraic.20sets.20and.20affine.20schemes.html) (82 messages, latest: Apr 22 2023 at 18:08)
-* [Galois connections](topic/topic_Galois.20connections.html) (30 messages, latest: Apr 22 2023 at 11:21)
-* [order theory terminology](topic/topic_order.20theory.20terminology.html) (20 messages, latest: Apr 21 2023 at 19:19)
 * ["higher" SDG via differentiable stacks](topic/topic_.22higher.22.20SDG.20via.20differentiable.20stacks.html) (11 messages, latest: Apr 20 2023 at 17:37)
 * [proving things: induction](topic/topic_proving.20things.3A.20induction.html) (26 messages, latest: Apr 20 2023 at 16:29)
 * [Fantastic Proofs and How to Make Them](topic/topic_Fantastic.20Proofs.20and.20How.20to.20Make.20Them.html) (71 messages, latest: Apr 16 2023 at 11:10)
@@ -98,4 +99,4 @@ permalink: /stream/266967-general:-mathematics/index.html
 * [the 600-cell](topic/topic_the.20600-cell.html) (5 messages, latest: Dec 01 2020 at 16:35)
 * [hermitian matrix over normed division algebra](topic/topic_hermitian.20matrix.20over.20normed.20division.20algebra.html) (8 messages, latest: Sep 28 2020 at 21:19)
 
-<hr><p>Last updated: Apr 27 2023 at 00:30 UTC</p>
+<hr><p>Last updated: Apr 28 2023 at 00:10 UTC</p>
