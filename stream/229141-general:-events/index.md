@@ -9,6 +9,7 @@ permalink: /stream/229141-general:-events/index.html
 
 ### Topics:
 
+* [Reading Lawvere from Colombia](topic/topic_Reading.20Lawvere.20from.20Colombia.html) (1 message, latest: Apr 28 2023 at 21:04)
 * [ItaCa Fest 2023](topic/topic_ItaCa.20Fest.202023.html) (5 messages, latest: Apr 27 2023 at 14:11)
 * [Experiment with kids on quantum picturalism](topic/topic_Experiment.20with.20kids.20on.20quantum.20picturalism.html) (3 messages, latest: Apr 27 2023 at 09:42)
 * [Binary Operation](topic/topic_Binary.20Operation.html) (5 messages, latest: Apr 22 2023 at 12:04)
@@ -179,4 +180,4 @@ permalink: /stream/229141-general:-events/index.html
 * [April 1st: ACT@UCR](topic/topic_April.201st.3A.20ACT.40UCR.html) (3 messages, latest: Mar 26 2020 at 23:58)
 * [Google Sites problem](topic/topic_Google.20Sites.20problem.html) (4 messages, latest: Mar 25 2020 at 04:29)
 
-<hr><p>Last updated: Apr 28 2023 at 00:30 UTC</p>
+<hr><p>Last updated: Apr 29 2023 at 00:10 UTC</p>

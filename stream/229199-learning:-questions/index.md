@@ -9,8 +9,10 @@ permalink: /stream/229199-learning:-questions/index.html
 
 ### Topics:
 
+* [dinatural transformations](topic/topic_dinatural.20transformations.html) (10 messages, latest: Apr 29 2023 at 00:09)
+* [Beginner questions](topic/topic_Beginner.20questions.html) (37 messages, latest: Apr 29 2023 at 00:06)
+* [Object that generate equivalent slice cats](topic/topic_Object.20that.20generate.20equivalent.20slice.20cats.html) (5 messages, latest: Apr 28 2023 at 17:32)
 * [fractional dimensional lie groups?](topic/topic_fractional.20dimensional.20lie.20groups.3F.html) (6 messages, latest: Apr 27 2023 at 21:49)
-* [dinatural transformations](topic/topic_dinatural.20transformations.html) (1 message, latest: Apr 27 2023 at 21:42)
 * [Pushout complements in Cat](topic/topic_Pushout.20complements.20in.20Cat.html) (32 messages, latest: Apr 27 2023 at 15:40)
 * [algebra morphisms parameterised by endofunctor morphisms](topic/topic_algebra.20morphisms.20parameterised.20by.20endofunctor.20morphisms.html) (7 messages, latest: Apr 25 2023 at 21:24)
 * [subsets and subgroups](topic/topic_subsets.20and.20subgroups.html) (61 messages, latest: Apr 25 2023 at 09:38)
@@ -47,7 +49,6 @@ permalink: /stream/229199-learning:-questions/index.html
 * [projective objects](topic/topic_projective.20objects.html) (56 messages, latest: Feb 28 2023 at 23:49)
 * [Rel category](topic/topic_Rel.20category.html) (27 messages, latest: Feb 28 2023 at 18:52)
 * [morphisms to products](topic/topic_morphisms.20to.20products.html) (38 messages, latest: Feb 24 2023 at 17:43)
-* [Beginner questions](topic/topic_Beginner.20questions.html) (32 messages, latest: Feb 22 2023 at 18:09)
 * [monoids and coproducts](topic/topic_monoids.20and.20coproducts.html) (74 messages, latest: Feb 20 2023 at 23:24)
 * [evolutionary game](topic/topic_evolutionary.20game.html) (48 messages, latest: Feb 19 2023 at 22:15)
 * [Dynamical systems](topic/topic_Dynamical.20systems.html) (27 messages, latest: Feb 18 2023 at 06:31)
@@ -866,4 +867,4 @@ permalink: /stream/229199-learning:-questions/index.html
 * [Algebra (Aluffi) exercises](topic/topic_Algebra.20(Aluffi).20exercises.html) (55 messages, latest: Mar 27 2020 at 23:38)
 * [What is category theory about?](topic/topic_What.20is.20category.20theory.20about.3F.html) (16 messages, latest: Mar 26 2020 at 16:03)
 
-<hr><p>Last updated: Apr 28 2023 at 00:30 UTC</p>
+<hr><p>Last updated: Apr 29 2023 at 00:10 UTC</p>
