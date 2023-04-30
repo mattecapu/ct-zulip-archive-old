@@ -9,9 +9,9 @@ permalink: /stream/229156-practice:-applied-ct/index.html
 
 ### Topics:
 
-* [how good is Poly for dynamical systems, really?](topic/topic_how.20good.20is.20Poly.20for.20dynamical.20systems.2C.20really.3F.html) (3 messages, latest: Apr 28 2023 at 15:27)
+* [nashator & friends](topic/topic_nashator.20.26.20friends.html) (11 messages, latest: Apr 29 2023 at 19:54)
+* [how good is Poly for dynamical systems, really?](topic/topic_how.20good.20is.20Poly.20for.20dynamical.20systems.2C.20really.3F.html) (9 messages, latest: Apr 29 2023 at 18:01)
 * [around machine learning](topic/topic_around.20machine.20learning.html) (64 messages, latest: Apr 23 2023 at 17:43)
-* [nashator & friends](topic/topic_nashator.20.26.20friends.html) (10 messages, latest: Apr 22 2023 at 14:52)
 * [Applied Categories and War](topic/topic_Applied.20Categories.20and.20War.html) (1 message, latest: Mar 17 2023 at 18:05)
 * [web cats](topic/topic_web.20cats.html) (357 messages, latest: Mar 01 2023 at 11:27)
 * [properties of objects (in context of imaging)](topic/topic_properties.20of.20objects.20(in.20context.20of.20imaging).html) (9 messages, latest: Feb 08 2023 at 19:21)
@@ -152,4 +152,4 @@ permalink: /stream/229156-practice:-applied-ct/index.html
 * [AACT2020](topic/topic_AACT2020.html) (1 message, latest: Mar 24 2020 at 00:56)
 * [welcome](topic/topic_welcome.html) (15 messages, latest: Mar 24 2020 at 00:03)
 
-<hr><p>Last updated: Apr 29 2023 at 00:28 UTC</p>
+<hr><p>Last updated: Apr 30 2023 at 00:11 UTC</p>

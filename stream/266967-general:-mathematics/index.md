@@ -9,7 +9,7 @@ permalink: /stream/266967-general:-mathematics/index.html
 
 ### Topics:
 
-* [homotopy fibers](topic/topic_homotopy.20fibers.html) (97 messages, latest: Apr 28 2023 at 23:30)
+* [homotopy fibers](topic/topic_homotopy.20fibers.html) (129 messages, latest: Apr 29 2023 at 22:14)
 * [Galois connections](topic/topic_Galois.20connections.html) (32 messages, latest: Apr 28 2023 at 19:28)
 * [order theory terminology](topic/topic_order.20theory.20terminology.html) (30 messages, latest: Apr 28 2023 at 07:45)
 * [A recurring logical schema in mathematics](topic/topic_A.20recurring.20logical.20schema.20in.20mathematics.html) (15 messages, latest: Apr 22 2023 at 20:06)
@@ -99,4 +99,4 @@ permalink: /stream/266967-general:-mathematics/index.html
 * [the 600-cell](topic/topic_the.20600-cell.html) (5 messages, latest: Dec 01 2020 at 16:35)
 * [hermitian matrix over normed division algebra](topic/topic_hermitian.20matrix.20over.20normed.20division.20algebra.html) (8 messages, latest: Sep 28 2020 at 21:19)
 
-<hr><p>Last updated: Apr 29 2023 at 00:28 UTC</p>
+<hr><p>Last updated: Apr 30 2023 at 00:11 UTC</p>

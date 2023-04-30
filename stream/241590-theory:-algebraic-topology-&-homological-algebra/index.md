@@ -9,6 +9,7 @@ permalink: /stream/241590-theory:-algebraic-topology-&-homological-algebra/index
 
 ### Topics:
 
+* [Exponential of k-vector fields](topic/topic_Exponential.20of.20k-vector.20fields.html) (1 message, latest: Apr 29 2023 at 15:08)
 * [computing sheaf cohomology using simplicial homotopy groups](topic/topic_computing.20sheaf.20cohomology.20using.20simplicial.20homotopy.20groups.html) (11 messages, latest: Apr 13 2023 at 12:09)
 * [Crossed module cohomology of torus](topic/topic_Crossed.20module.20cohomology.20of.20torus.html) (18 messages, latest: Feb 08 2023 at 03:33)
 * [Orbifolds to manifolds](topic/topic_Orbifolds.20to.20manifolds.html) (1 message, latest: Feb 07 2023 at 04:39)
@@ -82,4 +83,4 @@ permalink: /stream/241590-theory:-algebraic-topology-&-homological-algebra/index
 * [simplicial sets](topic/topic_simplicial.20sets.html) (1 message, latest: Jul 02 2020 at 11:05)
 * [Secondary algebraic K-theory](topic/topic_Secondary.20algebraic.20K-theory.html) (13 messages, latest: Jun 01 2020 at 16:14)
 
-<hr><p>Last updated: Apr 29 2023 at 00:28 UTC</p>
+<hr><p>Last updated: Apr 30 2023 at 00:11 UTC</p>
