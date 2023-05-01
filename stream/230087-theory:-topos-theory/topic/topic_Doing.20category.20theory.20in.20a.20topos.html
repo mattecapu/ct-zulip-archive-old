@@ -1,0 +1,47 @@
+---
+layout: archive
+title: Zulip Chat Archive
+permalink: /stream/230087-theory:-topos-theory/topic/topic_Doing.20category.20theory.20in.20a.20topos.html
+---
+
+<h2>Stream: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/230087-theory:-topos-theory/index.html">theory: topos theory</a></h2>
+<h3>Topic: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/230087-theory:-topos-theory/topic/topic_Doing.20category.20theory.20in.20a.20topos.html">Doing category theory in a topos</a></h3>
+
+<hr>
+
+<base href="https://categorytheory.zulipchat.com/">
+
+{% raw %}
+
+<a name="354593822"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/230087-theory%3A%20topos%20theory/topic/Doing%20category%20theory%20in%20a%20topos/near/354593822" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Patrick Nicodemus <a href="https://mattecapu.github.io/ct-zulip-archive/stream/230087-theory:-topos-theory/topic/topic_Doing.20category.20theory.20in.20a.20topos.html#354593822">(Apr 30 2023 at 01:46)</a>:</h4>
+<p>Recently researchers have formalized various cool things in Isabelle/HOL, such as schemes <a href="https://arxiv.org/abs/2104.09366">https://arxiv.org/abs/2104.09366</a> and strict omega categories <a href="https://devel.isa-afp.org/entries/StrictOmegaCategories.html">https://devel.isa-afp.org/entries/StrictOmegaCategories.html#</a></p>
+<p>The internal logic of Isabelle is that of a classical topos. Well, it is slightly stronger than that because it has polymorphism, so one can define various endofunctors on this topos, like the endofunctor X -&gt; X^A for some fixed object A. Intuitively I would expect that any construction in topos theory which is parametric in a fixed number of arbitrary objects <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>A</mi><mn>1</mn></msub><mo separator="true">,</mo><mo>…</mo><mo separator="true">,</mo><msub><mi>A</mi><mi>n</mi></msub></mrow><annotation encoding="application/x-tex">A_1,\dots, A_n</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8778em;vertical-align:-0.1944em;"></span><span class="mord"><span class="mord mathnormal">A</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="minner">…</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord"><span class="mord mathnormal">A</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.1514em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">n</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span> could be formalized as an "endofunctor" in Isabelle.</p>
+<p>I would like to ask for resources on doing mathematics internal to a topos. I am familiar with Sheaves in Geometry and Logic and other classic books but I want stuff that scales more realistically than that. In particular I would like to do category theory in Isabelle and I am wondering how topos theorists have generally axiomatized stuff like this.</p>
+<p>I do not want to just do category theory per se but category theory which is actually applicable to the rest of mathematics in this topos, so that results from category theory can be applied to the category of groups, rings, fields, etc. internally in this topos. How would you define something like the category of groups in a topos? How would you say that this has all small limits? Especially, how would you state and prove Yoneda, what is the category of presheaves relative to an internal category, etc. What are weighted colimits?</p>
+<p>One thing you could do is assume additional axioms stating that some fixed object is a model of ZFC in the internal language of topos theory, and then you would have an internal category of sets, groups, etc. and that would presumably take you pretty far. Has this approach been studied? What do you call "topos theory over an internal topos?"</p>
+<p>At the time being I am thinking Jean Benabou's work on category theory internal to a fibration is most relevant.</p>
+
+
+
+<a name="354603174"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/230087-theory%3A%20topos%20theory/topic/Doing%20category%20theory%20in%20a%20topos/near/354603174" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> David Michael Roberts <a href="https://mattecapu.github.io/ct-zulip-archive/stream/230087-theory:-topos-theory/topic/topic_Doing.20category.20theory.20in.20a.20topos.html#354603174">(Apr 30 2023 at 03:42)</a>:</h4>
+<p>Defining the category of models of a finite-product (aka Lawvere) theory like groups, or more generally a finite-limit theory (aka essentially algebraic theory) in a topos is actually rather easy, since it only uses the finite limits that exist in the topos, and so one might as well assume the much more general case. It's when one has a geometric theory, like that of local rings, for instance, that dealing with the internal logic of a topos with all its bells and whistles starts to get interesting.</p>
+
+
+
+<a name="354603395"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/230087-theory%3A%20topos%20theory/topic/Doing%20category%20theory%20in%20a%20topos/near/354603395" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> David Michael Roberts <a href="https://mattecapu.github.io/ct-zulip-archive/stream/230087-theory:-topos-theory/topic/topic_Doing.20category.20theory.20in.20a.20topos.html#354603395">(Apr 30 2023 at 03:44)</a>:</h4>
+<p>If you want to say a given fixed object is a model of ZFC (or, more charitably, a structural version of set theory), you might want to consider Algebraic Set Theory, which works with a pretopos with axioms that give a category of classes, inside which is an object that is V, familiar from traditional set theory, albeit flexible enough to deal with things like IZF and CZF as well.</p>
+
+
+
+<a name="354682083"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/230087-theory%3A%20topos%20theory/topic/Doing%20category%20theory%20in%20a%20topos/near/354682083" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Graham Manuell <a href="https://mattecapu.github.io/ct-zulip-archive/stream/230087-theory:-topos-theory/topic/topic_Doing.20category.20theory.20in.20a.20topos.html#354682083">(Apr 30 2023 at 13:08)</a>:</h4>
+<p>It's not difficult to handle these things constructively, but is question behind the question about how to deal with proper classes in a topos? You might want to look at the nlab page for <a href="https://ncatlab.org/nlab/show/locally%20internal%20category">[[locally internal category]]</a>, as well as Shulman's paper on <a href="https://arxiv.org/abs/1004.3802">stack semantics</a>. The latter also discusses the link to material set theories such as ZFC.</p>
+
+
+
+{% endraw %}
+
+<hr><p>Last updated: May 01 2023 at 00:10 UTC</p>

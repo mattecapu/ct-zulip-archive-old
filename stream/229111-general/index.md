@@ -9,7 +9,8 @@ permalink: /stream/229111-general/index.html
 
 ### Topics:
 
-* [Looking for popular accounts of Yoneda](topic/topic_Looking.20for.20popular.20accounts.20of.20Yoneda.html) (8 messages, latest: Apr 29 2023 at 19:34)
+* [Topos Institute news](topic/topic_Topos.20Institute.20news.html) (23 messages, latest: Apr 30 2023 at 18:54)
+* [Looking for popular accounts of Yoneda](topic/topic_Looking.20for.20popular.20accounts.20of.20Yoneda.html) (9 messages, latest: Apr 30 2023 at 17:11)
 * [Introduce yourself!](topic/topic_Introduce.20yourself!.html) (63 messages, latest: Apr 27 2023 at 23:05)
 * [HoTT 2023: Reduced registration](topic/topic_HoTT.202023.3A.20Reduced.20registration.html) (1 message, latest: Apr 27 2023 at 11:43)
 * [Presentation of closed monoidal categories](topic/topic_Presentation.20of.20closed.20monoidal.20categories.html) (19 messages, latest: Apr 17 2023 at 20:48)
@@ -58,7 +59,6 @@ permalink: /stream/229111-general/index.html
 * [how do YOU use a computer in your research?](topic/topic_how.20do.20YOU.20use.20a.20computer.20in.20your.20research.3F.html) (1 message, latest: Jan 04 2022 at 15:22)
 * [off-topic](topic/topic_off-topic.html) (52 messages, latest: Jan 03 2022 at 17:58)
 * [How do YOU use a computer in your research?](topic/topic_How.20do.20YOU.20use.20a.20computer.20in.20your.20research.3F.html) (21 messages, latest: Dec 07 2021 at 15:05)
-* [Topos Institute news](topic/topic_Topos.20Institute.20news.html) (22 messages, latest: Dec 06 2021 at 13:25)
 * [normalisation by evaluation and sheaves](topic/topic_normalisation.20by.20evaluation.20and.20sheaves.html) (3 messages, latest: Nov 25 2021 at 21:00)
 * [type theory with opposite types paper](topic/topic_type.20theory.20with.20opposite.20types.20paper.html) (1 message, latest: Nov 25 2021 at 01:05)
 * ["Diagonal Yoneda"](topic/topic_.22Diagonal.20Yoneda.22.html) (27 messages, latest: Nov 24 2021 at 19:16)
@@ -263,4 +263,4 @@ permalink: /stream/229111-general/index.html
 * [Tools for diagrams](topic/topic_Tools.20for.20diagrams.html) (78 messages, latest: Mar 25 2020 at 17:53)
 * [topic demonstration](topic/topic_topic.20demonstration.html) (2 messages, latest: Mar 23 2020 at 16:57)
 
-<hr><p>Last updated: Apr 30 2023 at 00:31 UTC</p>
+<hr><p>Last updated: May 01 2023 at 00:10 UTC</p>

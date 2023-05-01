@@ -9,6 +9,7 @@ permalink: /stream/229199-learning:-questions/index.html
 
 ### Topics:
 
+* [References on Continuous Logic and/or Computational trilogy](topic/topic_References.20on.20Continuous.20Logic.20and.2For.20Computational.20trilogy.html) (2 messages, latest: Apr 30 2023 at 06:31)
 * [cancellation for monadic adjunctions](topic/topic_cancellation.20for.20monadic.20adjunctions.html) (4 messages, latest: Apr 29 2023 at 17:36)
 * [dinatural transformations](topic/topic_dinatural.20transformations.html) (11 messages, latest: Apr 29 2023 at 04:50)
 * [Beginner questions](topic/topic_Beginner.20questions.html) (37 messages, latest: Apr 29 2023 at 00:06)
@@ -868,4 +869,4 @@ permalink: /stream/229199-learning:-questions/index.html
 * [Algebra (Aluffi) exercises](topic/topic_Algebra.20(Aluffi).20exercises.html) (55 messages, latest: Mar 27 2020 at 23:38)
 * [What is category theory about?](topic/topic_What.20is.20category.20theory.20about.3F.html) (16 messages, latest: Mar 26 2020 at 16:03)
 
-<hr><p>Last updated: Apr 30 2023 at 00:31 UTC</p>
+<hr><p>Last updated: May 01 2023 at 00:10 UTC</p>
