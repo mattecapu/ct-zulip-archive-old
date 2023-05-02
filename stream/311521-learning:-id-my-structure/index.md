@@ -9,6 +9,7 @@ permalink: /stream/311521-learning:-id-my-structure/index.html
 
 ### Topics:
 
+* [Quotients of (monoidal) functors](topic/topic_Quotients.20of.20(monoidal).20functors.html) (4 messages, latest: May 01 2023 at 21:58)
 * [Systems of objects "orthogonal" to categories](topic/topic_Systems.20of.20objects.20.22orthogonal.22.20to.20categories.html) (3 messages, latest: Apr 17 2023 at 20:53)
 * [empirical formulas](topic/topic_empirical.20formulas.html) (34 messages, latest: Apr 09 2023 at 00:05)
 * [A generalised category of zig-zags](topic/topic_A.20generalised.20category.20of.20zig-zags.html) (10 messages, latest: Mar 23 2023 at 10:17)
@@ -32,4 +33,4 @@ permalink: /stream/311521-learning:-id-my-structure/index.html
 * [stream events](topic/topic_stream.20events.html) (9 messages, latest: Jan 04 2022 at 22:35)
 * [almost a full subcategory?](topic/topic_almost.20a.20full.20subcategory.3F.html) (15 messages, latest: Jan 04 2022 at 16:42)
 
-<hr><p>Last updated: May 01 2023 at 00:30 UTC</p>
+<hr><p>Last updated: May 02 2023 at 00:09 UTC</p>

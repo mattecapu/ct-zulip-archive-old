@@ -9,12 +9,13 @@ permalink: /stream/229199-learning:-questions/index.html
 
 ### Topics:
 
-* [References on Continuous Logic and/or Computational trilogy](topic/topic_References.20on.20Continuous.20Logic.20and.2For.20Computational.20trilogy.html) (2 messages, latest: Apr 30 2023 at 06:31)
+* [isomorphic objects and functors](topic/topic_isomorphic.20objects.20and.20functors.html) (9 messages, latest: May 01 2023 at 23:39)
+* [fractional dimensional lie groups?](topic/topic_fractional.20dimensional.20lie.20groups.3F.html) (8 messages, latest: May 01 2023 at 18:08)
+* [References on Continuous Logic and/or Computational trilogy](topic/topic_References.20on.20Continuous.20Logic.20and.2For.20Computational.20trilogy.html) (3 messages, latest: May 01 2023 at 05:08)
 * [cancellation for monadic adjunctions](topic/topic_cancellation.20for.20monadic.20adjunctions.html) (4 messages, latest: Apr 29 2023 at 17:36)
 * [dinatural transformations](topic/topic_dinatural.20transformations.html) (11 messages, latest: Apr 29 2023 at 04:50)
 * [Beginner questions](topic/topic_Beginner.20questions.html) (37 messages, latest: Apr 29 2023 at 00:06)
 * [Object that generate equivalent slice cats](topic/topic_Object.20that.20generate.20equivalent.20slice.20cats.html) (5 messages, latest: Apr 28 2023 at 17:32)
-* [fractional dimensional lie groups?](topic/topic_fractional.20dimensional.20lie.20groups.3F.html) (6 messages, latest: Apr 27 2023 at 21:49)
 * [Pushout complements in Cat](topic/topic_Pushout.20complements.20in.20Cat.html) (32 messages, latest: Apr 27 2023 at 15:40)
 * [algebra morphisms parameterised by endofunctor morphisms](topic/topic_algebra.20morphisms.20parameterised.20by.20endofunctor.20morphisms.html) (7 messages, latest: Apr 25 2023 at 21:24)
 * [subsets and subgroups](topic/topic_subsets.20and.20subgroups.html) (61 messages, latest: Apr 25 2023 at 09:38)
@@ -869,4 +870,4 @@ permalink: /stream/229199-learning:-questions/index.html
 * [Algebra (Aluffi) exercises](topic/topic_Algebra.20(Aluffi).20exercises.html) (55 messages, latest: Mar 27 2020 at 23:38)
 * [What is category theory about?](topic/topic_What.20is.20category.20theory.20about.3F.html) (16 messages, latest: Mar 26 2020 at 16:03)
 
-<hr><p>Last updated: May 01 2023 at 00:30 UTC</p>
+<hr><p>Last updated: May 02 2023 at 00:09 UTC</p>
