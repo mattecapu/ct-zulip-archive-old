@@ -9,7 +9,7 @@ permalink: /stream/229199-learning:-questions/index.html
 
 ### Topics:
 
-* [isomorphic objects and functors](topic/topic_isomorphic.20objects.20and.20functors.html) (12 messages, latest: May 02 2023 at 00:19)
+* [isomorphic objects and functors](topic/topic_isomorphic.20objects.20and.20functors.html) (17 messages, latest: May 02 2023 at 21:32)
 * [fractional dimensional lie groups?](topic/topic_fractional.20dimensional.20lie.20groups.3F.html) (8 messages, latest: May 01 2023 at 18:08)
 * [References on Continuous Logic and/or Computational trilogy](topic/topic_References.20on.20Continuous.20Logic.20and.2For.20Computational.20trilogy.html) (3 messages, latest: May 01 2023 at 05:08)
 * [cancellation for monadic adjunctions](topic/topic_cancellation.20for.20monadic.20adjunctions.html) (4 messages, latest: Apr 29 2023 at 17:36)
@@ -870,4 +870,4 @@ permalink: /stream/229199-learning:-questions/index.html
 * [Algebra (Aluffi) exercises](topic/topic_Algebra.20(Aluffi).20exercises.html) (55 messages, latest: Mar 27 2020 at 23:38)
 * [What is category theory about?](topic/topic_What.20is.20category.20theory.20about.3F.html) (16 messages, latest: Mar 26 2020 at 16:03)
 
-<hr><p>Last updated: May 02 2023 at 00:28 UTC</p>
+<hr><p>Last updated: May 03 2023 at 00:10 UTC</p>
