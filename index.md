@@ -10,13 +10,13 @@ permalink: /index.html
 
 * [learning: questions](stream/229199-learning:-questions/index.html) (860 topics)
 
-* [theory: category theory](stream/229136-theory:-category-theory/index.html) (391 topics)
+* [theory: category theory](stream/229136-theory:-category-theory/index.html) (392 topics)
 
 * [general](stream/229111-general/index.html) (253 topics)
 
 * [general: events](stream/229141-general:-events/index.html) (170 topics)
 
-* [practice: applied ct](stream/229156-practice:-applied-ct/index.html) (143 topics)
+* [practice: applied ct](stream/229156-practice:-applied-ct/index.html) (144 topics)
 
 * [general: mathematics](stream/266967-general:-mathematics/index.html) (89 topics)
 
@@ -32,7 +32,7 @@ permalink: /index.html
 
 * [ACT 2020](stream/243068-ACT-2020/index.html) (61 topics)
 
-* [theory: logic](stream/233104-theory:-logic/index.html) (59 topics)
+* [theory: logic](stream/233104-theory:-logic/index.html) (60 topics)
 
 * [practice: our papers](stream/258900-practice:-our-papers/index.html) (56 topics)
 
@@ -180,4 +180,4 @@ permalink: /index.html
 
 * [theory: alternate presentations](stream/233122-theory:-alternate-presentations/index.html) (1 topic)
 
-<hr><p>Last updated: May 03 2023 at 00:28 UTC</p>
+<hr><p>Last updated: May 04 2023 at 00:09 UTC</p>

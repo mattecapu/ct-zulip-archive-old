@@ -9,6 +9,7 @@ permalink: /stream/233104-theory:-logic/index.html
 
 ### Topics:
 
+* [Models of FOL using bivaluations](topic/topic_Models.20of.20FOL.20using.20bivaluations.html) (1 message, latest: May 03 2023 at 15:51)
 * [proofs of cut-elimination theorem](topic/topic_proofs.20of.20cut-elimination.20theorem.html) (26 messages, latest: Mar 19 2023 at 18:21)
 * [Bounded quantification over postulated sets](topic/topic_Bounded.20quantification.20over.20postulated.20sets.html) (1 message, latest: Mar 16 2023 at 23:56)
 * [roots as models](topic/topic_roots.20as.20models.html) (26 messages, latest: Feb 26 2023 at 04:36)
@@ -69,4 +70,4 @@ permalink: /stream/233104-theory:-logic/index.html
 * [Probability as logic](topic/topic_Probability.20as.20logic.html) (63 messages, latest: Apr 15 2020 at 12:33)
 * [stream events](topic/topic_stream.20events.html) (1 message, latest: Apr 10 2020 at 12:32)
 
-<hr><p>Last updated: May 03 2023 at 00:28 UTC</p>
+<hr><p>Last updated: May 04 2023 at 00:09 UTC</p>

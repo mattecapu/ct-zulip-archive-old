@@ -108,6 +108,46 @@ permalink: /stream/229156-practice:-applied-ct/topic/topic_how.20good.20is.20Pol
 
 
 
+<a name="355362669"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229156-practice%3A%20applied%20ct/topic/how%20good%20is%20Poly%20for%20dynamical%20systems%2C%20really%3F/near/355362669" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Jules Hedges <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-practice:-applied-ct/topic/topic_how.20good.20is.20Poly.20for.20dynamical.20systems.2C.20really.3F.html#355362669">(May 03 2023 at 08:48)</a>:</h4>
+<p>I don't think this is necessarily always the case, depending on the host language and the structure you're implementing libraries can do just fine, for example AlgebraicJulia seems to do well</p>
+
+
+
+<a name="355362924"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229156-practice%3A%20applied%20ct/topic/how%20good%20is%20Poly%20for%20dynamical%20systems%2C%20really%3F/near/355362924" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Jules Hedges <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-practice:-applied-ct/topic/topic_how.20good.20is.20Poly.20for.20dynamical.20systems.2C.20really.3F.html#355362924">(May 03 2023 at 08:49)</a>:</h4>
+<p>Poly suffers from requiring either dependent types in the host, or rolling your own typechecker for a fragment of dependent type theory, or faking it (which comes with its own downsides)</p>
+
+
+
+<a name="355395198"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229156-practice%3A%20applied%20ct/topic/how%20good%20is%20Poly%20for%20dynamical%20systems%2C%20really%3F/near/355395198" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Fabrizio Genovese <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-practice:-applied-ct/topic/topic_how.20good.20is.20Poly.20for.20dynamical.20systems.2C.20really.3F.html#355395198">(May 03 2023 at 10:49)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="275901">Jules Hedges</span> <a href="#narrow/stream/229156-practice.3A-applied-ct/topic/how.20good.20is.20Poly.20for.20dynamical.20systems.2C.20really.3F/near/355362669">said</a>:</p>
+<blockquote>
+<p>I don't think this is necessarily always the case, depending on the host language and the structure you're implementing libraries can do just fine, for example AlgebraicJulia seems to do well</p>
+</blockquote>
+<p>Well, if you have a DSL embedded in a language with a nice ecosystem, you can clearly leverage on that, but it is not always going to cut it. For instance, syntax highlighting will be missing for your DSL, as will be advanced debugging features.</p>
+
+
+
+<a name="355395831"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229156-practice%3A%20applied%20ct/topic/how%20good%20is%20Poly%20for%20dynamical%20systems%2C%20really%3F/near/355395831" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Fabrizio Genovese <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-practice:-applied-ct/topic/topic_how.20good.20is.20Poly.20for.20dynamical.20systems.2C.20really.3F.html#355395831">(May 03 2023 at 10:51)</a>:</h4>
+<p>And yes, libraries can be fine but they sill have to be packaged in a way so that they can leverage the host language packet manager. Ideally, if Poly allows to represent dynamical systems, I'd like to have libraries of 'already battle-tested' dynamical systems that I can install by just using the host language packet manager from the command line. The alternative would be manually downloading them from this or that repo, which obviously also works, but the point of my comment was exactly that 'also works' may not necessarily mean 'having a nice development experience'.</p>
+
+
+
+<a name="355440723"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229156-practice%3A%20applied%20ct/topic/how%20good%20is%20Poly%20for%20dynamical%20systems%2C%20really%3F/near/355440723" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Henry Story <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-practice:-applied-ct/topic/topic_how.20good.20is.20Poly.20for.20dynamical.20systems.2C.20really.3F.html#355440723">(May 03 2023 at 13:35)</a>:</h4>
+<p>I followed a few of the poly courses,  and I was wondering if that maps well to actor systems? It seems to from afar, because poly allows nodes to have state, contain other nodes and change behavior. And nodes can be named I think and so composed.<br>
+Actor systems such as Erlang or <a href="https://akka.io/">akka</a> are similar to object oriented programming but can work in parallel. Instead of method calls one sends messages from one actor to another. In Akka each actor can change their behavior and spawn children, which can be thought of as contained in the parent actor. In akka actors are named with URLs allowing one to connect actors that were not previously connected.<br>
+I have a thread on actors here <a href="https://twitter.com/bblfish/status/1358103100104572930">https://twitter.com/bblfish/status/1358103100104572930</a></p>
+<div class="inline-preview-twitter"><div class="twitter-tweet"><a href="https://twitter.com/bblfish/status/1358103100104572930"><img class="twitter-avatar" src="https://uploads.zulipusercontent.net/77b199c7e82b7b9c52e9d03926bbf1970d09fe5d/68747470733a2f2f7062732e7477696d672e636f6d2f70726f66696c655f696d616765732f313030343332363736313630383431373238312f486a786a533942585f6e6f726d616c2e6a7067"></a><p>Really great overview of the history of computing and the emergence of the Actor model by Carl Hewitt. "Actor Model of Computation: Scalable Robust Information Systems"
+<a href="https://t.co/zRcLRboJwS">https://arxiv.org/abs/1008.1459</a>
+( @ThePatHayes and <a href="https://twitter.com/v_sassone">@v_sassone</a>'s works are cited)
+"The Actor Model integrated:" <a href="https://t.co/HM1UgmLWNL">https://twitter.com/bblfish/status/1358103100104572930/photo/1</a></p><span>- The 🐠 BblFish (@bblfish)</span><div class="twitter-image"><a href="https://t.co/HM1UgmLWNL"><img src="https://uploads.zulipusercontent.net/f4e77d124215aa7d39b2d147ddd3d0d493683891/68747470733a2f2f7062732e7477696d672e636f6d2f6d656469612f45746a79383665575941494f454c552e706e673a7468756d62"></a></div></div></div>
+
+
+
 {% endraw %}
 
-<hr><p>Last updated: May 03 2023 at 00:28 UTC</p>
+<hr><p>Last updated: May 04 2023 at 00:09 UTC</p>

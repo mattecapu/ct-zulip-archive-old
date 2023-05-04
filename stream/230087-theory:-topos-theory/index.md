@@ -9,7 +9,7 @@ permalink: /stream/230087-theory:-topos-theory/index.html
 
 ### Topics:
 
-* [Doing category theory in a topos](topic/topic_Doing.20category.20theory.20in.20a.20topos.html) (4 messages, latest: Apr 30 2023 at 13:08)
+* [Doing category theory in a topos](topic/topic_Doing.20category.20theory.20in.20a.20topos.html) (5 messages, latest: May 03 2023 at 13:48)
 * [classifying (infinity,1)-topos](topic/topic_classifying.20(infinity.2C1)-topos.html) (2 messages, latest: Apr 28 2023 at 18:36)
 * [Open problems in SDG?](topic/topic_Open.20problems.20in.20SDG.3F.html) (1 message, latest: Feb 20 2023 at 16:50)
 * [Monoidal topos](topic/topic_Monoidal.20topos.html) (6 messages, latest: Nov 10 2022 at 19:00)
@@ -92,4 +92,4 @@ permalink: /stream/230087-theory:-topos-theory/index.html
 * [right adjoint to inclusion of sheaves?](topic/topic_right.20adjoint.20to.20inclusion.20of.20sheaves.3F.html) (18 messages, latest: Mar 30 2020 at 09:37)
 * [essential geometric morphism](topic/topic_essential.20geometric.20morphism.html) (2 messages, latest: Mar 27 2020 at 18:56)
 
-<hr><p>Last updated: May 03 2023 at 00:28 UTC</p>
+<hr><p>Last updated: May 04 2023 at 00:09 UTC</p>
