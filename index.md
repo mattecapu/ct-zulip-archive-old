@@ -8,9 +8,9 @@ permalink: /index.html
 
 ## Streams:
 
-* [learning: questions](stream/229199-learning:-questions/index.html) (860 topics)
+* [learning: questions](stream/229199-learning:-questions/index.html) (864 topics)
 
-* [theory: category theory](stream/229136-theory:-category-theory/index.html) (392 topics)
+* [theory: category theory](stream/229136-theory:-category-theory/index.html) (395 topics)
 
 * [general](stream/229111-general/index.html) (253 topics)
 
@@ -98,13 +98,13 @@ permalink: /index.html
 
 * [practice: economics](stream/231468-practice:-economics/index.html) (10 topics)
 
+* [theory: algebra & CT](stream/230123-theory:-algebra-&-CT/index.html) (10 topics)
+
 * [theory: concurrency](stream/235484-theory:-concurrency/index.html) (10 topics)
 
 * [conference: CT20->21](stream/298844-conference:-CT20->21/index.html) (9 topics)
 
 * [languages: francais/French](stream/231124-languages:-francais/French/index.html) (9 topics)
-
-* [theory: algebra & CT](stream/230123-theory:-algebra-&-CT/index.html) (9 topics)
 
 * [theory: analysis](stream/281848-theory:-analysis/index.html) (9 topics)
 
@@ -180,4 +180,4 @@ permalink: /index.html
 
 * [theory: alternate presentations](stream/233122-theory:-alternate-presentations/index.html) (1 topic)
 
-<hr><p>Last updated: May 04 2023 at 00:30 UTC</p>
+<hr><p>Last updated: May 05 2023 at 00:11 UTC</p>

@@ -106,5 +106,41 @@
         "id": 355440723,
         "sender_full_name": "Henry Story",
         "timestamp": 1683120939
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"275932\">Matteo Capucci (he/him)</span> <a href=\"#narrow/stream/229156-practice.3A-applied-ct/topic/how.20good.20is.20Poly.20for.20dynamical.20systems.2C.20really.3F/near/355269458\">said</a>:</p>\n<blockquote>\n<p>I'll point out this wouldn't be the case if one were working in a programming language which 'compiles' to Poly. Instead, atm one has to manually be the compiler and that impacts the practical appeal of Poly constructions. But this is not specific to Poly, but to every category whose internal language is simple and expressive but different from standard type theory.</p>\n</blockquote>\n<p>Is Poly really that different than standard type theory?  Via things like \"Martin lof categories\" <a href=\"https://core.ac.uk/download/pdf/82087952.pdf\">https://core.ac.uk/download/pdf/82087952.pdf</a> using Poly to me seems a lot like just writing down inductive/coinductive types in e.g. Coq/NuPRL/etc.  In fact Josh Meyers is trying to prove things about Poly in Coq as we speak.  I'm guessing NuPRL will be a lot easier tho</p>",
+        "id": 355806277,
+        "sender_full_name": "Ryan Wisnesky",
+        "timestamp": 1683213049
+    },
+    {
+        "content": "<p>You can definitely interpret MLTT in Poly, but most of the interesting stuff in Poly makes use of the other, 'non-classical' structures (like <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>⊗</mo></mrow><annotation encoding=\"application/x-tex\">\\otimes</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6667em;vertical-align:-0.0833em;\"></span><span class=\"mord\">⊗</span></span></span></span> and <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>∘</mo></mrow><annotation encoding=\"application/x-tex\">\\circ</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.4445em;\"></span><span class=\"mord\">∘</span></span></span></span>). Those would require new syntax to be used with the same ease you use <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"normal\">Σ</mi></mrow><annotation encoding=\"application/x-tex\">\\Sigma</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord\">Σ</span></span></span></span> and <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"normal\">Π</mi></mrow><annotation encoding=\"application/x-tex\">\\Pi</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord\">Π</span></span></span></span>.<br>\nAlso there's the whole thing of the bidirectionality, which is an interesting programming design challenge (as <span class=\"user-mention\" data-user-id=\"275901\">@Jules Hedges</span> knows more than well)</p>",
+        "id": 355862943,
+        "sender_full_name": "Matteo Capucci (he/him)",
+        "timestamp": 1683226664
+    },
+    {
+        "content": "<p>There is a nice \"notation\" mechanism in Coq to extend syntax, for example, you can use it to add monad comprehensions to Coq, which are SQL-like syntax. So now  I'm thinking adding Coq notations for those non-classical operations may be part of the contribution of the Coq development, thanks!</p>",
+        "id": 355864324,
+        "sender_full_name": "Ryan Wisnesky",
+        "timestamp": 1683227087
+    },
+    {
+        "content": "<p>If that works that'd be amazing!</p>",
+        "id": 355865754,
+        "sender_full_name": "Matteo Capucci (he/him)",
+        "timestamp": 1683227573
+    },
+    {
+        "content": "<p>I assume it's not simply syntactic sugar you're talking about</p>",
+        "id": 355865816,
+        "sender_full_name": "Matteo Capucci (he/him)",
+        "timestamp": 1683227591
+    },
+    {
+        "content": "<p>Here's the documentation.   <a href=\"https://coq.github.io/doc/master/refman/user-extensions/syntax-extensions.html\">https://coq.github.io/doc/master/refman/user-extensions/syntax-extensions.html#</a>   Coupled with Coq's tactic language you can get pretty far with meta-programming in Coq, for example using Coq as a front end for verified programming in assembly language <a href=\"http://plv.csail.mit.edu/bedrock/\">http://plv.csail.mit.edu/bedrock/</a> .  Coq notation also was used to improve performance in existing formalizations of category theory in Coq, eg <a href=\"https://arxiv.org/abs/1401.7694\">https://arxiv.org/abs/1401.7694</a></p>",
+        "id": 355899266,
+        "sender_full_name": "Ryan Wisnesky",
+        "timestamp": 1683240750
     }
 ]

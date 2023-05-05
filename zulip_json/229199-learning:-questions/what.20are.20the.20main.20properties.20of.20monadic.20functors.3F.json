@@ -1,0 +1,92 @@
+[
+    {
+        "content": "<p>I guess I have two questions: what are the main (simplest or most important) properties of <a href=\"https://ncatlab.org/nlab/show/monadic+functor#definition\">monadic functors</a> in general, and also monadic functors to <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"sans-serif\">S</mi><mi mathvariant=\"sans-serif\">e</mi><mi mathvariant=\"sans-serif\">t</mi></mrow><annotation encoding=\"application/x-tex\">\\mathsf{Set}</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6944em;\"></span><span class=\"mord\"><span class=\"mord mathsf\">Set</span></span></span></span></span>?</p>",
+        "id": 355880879,
+        "sender_full_name": "John Baez",
+        "timestamp": 1683232731
+    },
+    {
+        "content": "<p>The monadicity theorem is one answer to this question, but I'm more interested in necessary conditions for a functor to be monadic than sufficient ones.</p>",
+        "id": 355881324,
+        "sender_full_name": "John Baez",
+        "timestamp": 1683232905
+    },
+    {
+        "content": "<p>I've just rewritten the nLab article <a href=\"https://ncatlab.org/nlab/show/monadic+functor#basic_properties\">Monadic functors: basic properties</a> to highlight some of the basic properties of monadic functors.  Namely:</p>\n<ul>\n<li>they are <a href=\"https://ncatlab.org/nlab/show/faithful\">[[faithful]]</a></li>\n<li>they are <a href=\"https://ncatlab.org/nlab/show/conservative\">[[conservative]]</a></li>\n<li>they <a href=\"https://ncatlab.org/nlab/show/created+limit\">create all limits</a> that exist in their codomain</li>\n<li>they create all colimits that exist in their codomain and are preserved by the corresponding monad.</li>\n</ul>",
+        "id": 355883731,
+        "sender_full_name": "John Baez",
+        "timestamp": 1683233769
+    },
+    {
+        "content": "<p>They are full on isomorphisms, too - right?</p>",
+        "id": 355883784,
+        "sender_full_name": "John Baez",
+        "timestamp": 1683233787
+    },
+    {
+        "content": "<p>A functor that's <em>strictly</em> monadic, i.e. isomorphic to the category of algebras for a monad, is an isofibration, which generalizes the fact that you can transfer a group structure along a bijection of sets, and that rhymes a bit with being full on isomorphisms. But it's not true that every bijection of groups is an isomorphism, so they aren't full on isos.</p>",
+        "id": 355884112,
+        "sender_full_name": "Kevin Arlin",
+        "timestamp": 1683233908
+    },
+    {
+        "content": "<p>Aargh, what a blunder.  Indeed, I was trying to take \"isofibration\" and weaken it to get something that's true for <em>all</em> monadic functors, not just strictly monadic ones.  But I failed completely.</p>",
+        "id": 355884520,
+        "sender_full_name": "John Baez",
+        "timestamp": 1683234054
+    },
+    {
+        "content": "<p>Isofibrations are weird! Every functor's equivalent to an isofibration, so it doesn't tell you anything about non-strict monadic guys.</p>",
+        "id": 355884615,
+        "sender_full_name": "Kevin Arlin",
+        "timestamp": 1683234103
+    },
+    {
+        "content": "<p>Here's what I was actually trying to say: given a monadic functor <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>U</mi><mo>:</mo><mi>D</mi><mo>→</mo><mi>C</mi></mrow><annotation encoding=\"application/x-tex\">U: D \\to C</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.10903em;\">U</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">:</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.02778em;\">D</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">→</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.07153em;\">C</span></span></span></span> and an isomorphism in <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>C</mi></mrow><annotation encoding=\"application/x-tex\">C</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.07153em;\">C</span></span></span></span>, there is <em>some</em> isomorphism in <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>D</mi></mrow><annotation encoding=\"application/x-tex\">D</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.02778em;\">D</span></span></span></span> that maps to it.    This is weaker than \"full on isomorphisms\".  But now I think this is false, too.</p>",
+        "id": 355884808,
+        "sender_full_name": "John Baez",
+        "timestamp": 1683234175
+    },
+    {
+        "content": "<p>I now think if I finally say the true thing that resembles what I was thinking, I might say <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>U</mi></mrow><annotation encoding=\"application/x-tex\">U</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.10903em;\">U</span></span></span></span> is equivalent to an isofibration.  But this is vacuous, as you point out.</p>",
+        "id": 355885215,
+        "sender_full_name": "John Baez",
+        "timestamp": 1683234325
+    },
+    {
+        "content": "<p>What I was trying to say, all jargon aside, is that given a monad <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>T</mi></mrow><annotation encoding=\"application/x-tex\">T</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.13889em;\">T</span></span></span></span> on <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>C</mi></mrow><annotation encoding=\"application/x-tex\">C</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.07153em;\">C</span></span></span></span> and a <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>T</mi></mrow><annotation encoding=\"application/x-tex\">T</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.13889em;\">T</span></span></span></span>-algebra structure on <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>c</mi><mo>∈</mo><mi>C</mi></mrow><annotation encoding=\"application/x-tex\">c \\in C</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.5782em;vertical-align:-0.0391em;\"></span><span class=\"mord mathnormal\">c</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">∈</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.07153em;\">C</span></span></span></span>, you can transport this <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>T</mi></mrow><annotation encoding=\"application/x-tex\">T</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.13889em;\">T</span></span></span></span>-algebra structure along any isomorphism <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>f</mi><mo>:</mo><mi>c</mi><mo>→</mo><msup><mi>c</mi><mo mathvariant=\"normal\" lspace=\"0em\" rspace=\"0em\">′</mo></msup></mrow><annotation encoding=\"application/x-tex\">f: c \\to c&#x27;</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8889em;vertical-align:-0.1944em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.10764em;\">f</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">:</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.4306em;\"></span><span class=\"mord mathnormal\">c</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">→</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.7519em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\">c</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.7519em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\">′</span></span></span></span></span></span></span></span></span></span></span></span> to get a <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>T</mi></mrow><annotation encoding=\"application/x-tex\">T</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.13889em;\">T</span></span></span></span>-algebra structure on <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msup><mi>c</mi><mo mathvariant=\"normal\" lspace=\"0em\" rspace=\"0em\">′</mo></msup></mrow><annotation encoding=\"application/x-tex\">c&#x27;</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.7519em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\">c</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.7519em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\">′</span></span></span></span></span></span></span></span></span></span></span></span>.  But this just says that the forgetful functor <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>T</mi><mrow><mi mathvariant=\"normal\">A</mi><mi mathvariant=\"normal\">l</mi><mi mathvariant=\"normal\">g</mi></mrow><mo>→</mo><mi>C</mi></mrow><annotation encoding=\"application/x-tex\">T \\mathrm{Alg} \\to C</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8889em;vertical-align:-0.1944em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.13889em;\">T</span><span class=\"mord\"><span class=\"mord mathrm\" style=\"margin-right:0.01389em;\">Alg</span></span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">→</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.07153em;\">C</span></span></span></span> is an isofibration.  And this says that any <em>strict</em> monadic functor is an isofibration.  Apparently it says nothing at all about general monadic functors!</p>",
+        "id": 355888055,
+        "sender_full_name": "John Baez",
+        "timestamp": 1683235541
+    },
+    {
+        "content": "<p>Something I think is less well known about monadic <em>categories</em> over set is that they're exactly the Barr exact (i.e. internal equivalence relations work decently) cocomplete categories that have a \"projective generator\" <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>G</mi></mrow><annotation encoding=\"application/x-tex\">G</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\">G</span></span></span></span>, which is like the free widget on one element in that maps out lift against epimorphisms and  each widget admits an epi from some power of <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>G</mi><mi mathvariant=\"normal\">.</mi></mrow><annotation encoding=\"application/x-tex\">G.</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\">G</span><span class=\"mord\">.</span></span></span></span> Then the functor represented by the <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>G</mi></mrow><annotation encoding=\"application/x-tex\">G</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\">G</span></span></span></span> is monadic.</p>",
+        "id": 355889894,
+        "sender_full_name": "Kevin Arlin",
+        "timestamp": 1683236389
+    },
+    {
+        "content": "<p>...and thus <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>G</mi></mrow><annotation encoding=\"application/x-tex\">G</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\">G</span></span></span></span> really is a free widget on one element!</p>",
+        "id": 355889986,
+        "sender_full_name": "Kevin Arlin",
+        "timestamp": 1683236415
+    },
+    {
+        "content": "<p>Interesting!  Hmm, the nLab doesn't seem to have that yet; apparently it <a href=\"https://ncatlab.org/nlab/show/exact+category#examples\">only says</a> any category monadic over a power of <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"sans-serif\">S</mi><mi mathvariant=\"sans-serif\">e</mi><mi mathvariant=\"sans-serif\">t</mi></mrow><annotation encoding=\"application/x-tex\">\\mathsf{Set}</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6944em;\"></span><span class=\"mord\"><span class=\"mord mathsf\">Set</span></span></span></span></span> is Barr exact.</p>",
+        "id": 355891550,
+        "sender_full_name": "John Baez",
+        "timestamp": 1683237101
+    },
+    {
+        "content": "<p>Yeah, I learned it from this paper of Vitale: <a href=\"http://www.numdam.org/article/CTGDC_1994__35_4_351_0.pdf\">http://www.numdam.org/article/CTGDC_1994__35_4_351_0.pdf</a>. I should add it to nLab sometime. I think you can actually <em>characterize</em> categories monadic over a power of set, which are very general multisorted algebraic theories, by just allowing a small family of projective generators in the characterization for Set.</p>",
+        "id": 355894079,
+        "sender_full_name": "Kevin Arlin",
+        "timestamp": 1683238204
+    },
+    {
+        "content": "<p>Yes, please add it, and that reference...  it's a nice fact!</p>",
+        "id": 355901967,
+        "sender_full_name": "John Baez",
+        "timestamp": 1683242171
+    }
+]
