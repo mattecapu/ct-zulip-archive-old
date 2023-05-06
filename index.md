@@ -12,11 +12,11 @@ permalink: /index.html
 
 * [theory: category theory](stream/229136-theory:-category-theory/index.html) (395 topics)
 
-* [general](stream/229111-general/index.html) (253 topics)
+* [general](stream/229111-general/index.html) (254 topics)
 
 * [general: events](stream/229141-general:-events/index.html) (170 topics)
 
-* [practice: applied ct](stream/229156-practice:-applied-ct/index.html) (144 topics)
+* [practice: applied ct](stream/229156-practice:-applied-ct/index.html) (145 topics)
 
 * [general: mathematics](stream/266967-general:-mathematics/index.html) (89 topics)
 
@@ -180,4 +180,4 @@ permalink: /index.html
 
 * [theory: alternate presentations](stream/233122-theory:-alternate-presentations/index.html) (1 topic)
 
-<hr><p>Last updated: May 05 2023 at 00:30 UTC</p>
+<hr><p>Last updated: May 06 2023 at 00:09 UTC</p>

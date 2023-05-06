@@ -9,9 +9,10 @@ permalink: /stream/229199-learning:-questions/index.html
 
 ### Topics:
 
-* [isomorphic objects and functors](topic/topic_isomorphic.20objects.20and.20functors.html) (47 messages, latest: May 05 2023 at 00:24)
+* [Hegel dialectics](topic/topic_Hegel.20dialectics.html) (12 messages, latest: May 05 2023 at 20:55)
+* [what are the main properties of monadic functors?](topic/topic_what.20are.20the.20main.20properties.20of.20monadic.20functors.3F.html) (22 messages, latest: May 05 2023 at 15:50)
+* [isomorphic objects and functors](topic/topic_isomorphic.20objects.20and.20functors.html) (53 messages, latest: May 05 2023 at 14:24)
 * [Grothendieck construction variants of poset-valued presheaf](topic/topic_Grothendieck.20construction.20variants.20of.20poset-valued.20presheaf.html) (4 messages, latest: May 04 2023 at 23:53)
-* [what are the main properties of monadic functors?](topic/topic_what.20are.20the.20main.20properties.20of.20monadic.20functors.3F.html) (15 messages, latest: May 04 2023 at 23:16)
 * [Do adjoints to projection maps  form a functor?](topic/topic_Do.20adjoints.20to.20projection.20maps.20.20form.20a.20functor.3F.html) (4 messages, latest: May 04 2023 at 18:52)
 * [Exponentials in Comma Categories](topic/topic_Exponentials.20in.20Comma.20Categories.html) (1 message, latest: May 04 2023 at 13:24)
 * [fractional dimensional lie groups?](topic/topic_fractional.20dimensional.20lie.20groups.3F.html) (8 messages, latest: May 01 2023 at 18:08)
@@ -42,7 +43,6 @@ permalink: /stream/229199-learning:-questions/index.html
 * [why rings need identities](topic/topic_why.20rings.20need.20identities.html) (49 messages, latest: Mar 29 2023 at 23:34)
 * [small products in model categories](topic/topic_small.20products.20in.20model.20categories.html) (5 messages, latest: Mar 29 2023 at 07:01)
 * [an invertibility problem](topic/topic_an.20invertibility.20problem.html) (13 messages, latest: Mar 28 2023 at 18:32)
-* [Hegel dialectics](topic/topic_Hegel.20dialectics.html) (10 messages, latest: Mar 27 2023 at 08:53)
 * [open system](topic/topic_open.20system.html) (1 message, latest: Mar 26 2023 at 16:34)
 * [A formal programming category](topic/topic_A.20formal.20programming.20category.html) (98 messages, latest: Mar 23 2023 at 20:30)
 * [Continuations and polynomials](topic/topic_Continuations.20and.20polynomials.html) (12 messages, latest: Mar 21 2023 at 16:59)
@@ -874,4 +874,4 @@ permalink: /stream/229199-learning:-questions/index.html
 * [Algebra (Aluffi) exercises](topic/topic_Algebra.20(Aluffi).20exercises.html) (55 messages, latest: Mar 27 2020 at 23:38)
 * [What is category theory about?](topic/topic_What.20is.20category.20theory.20about.3F.html) (16 messages, latest: Mar 26 2020 at 16:03)
 
-<hr><p>Last updated: May 05 2023 at 00:30 UTC</p>
+<hr><p>Last updated: May 06 2023 at 00:09 UTC</p>
