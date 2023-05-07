@@ -9,8 +9,9 @@ permalink: /stream/229141-general:-events/index.html
 
 ### Topics:
 
+* [ACT 2023](topic/topic_ACT.202023.html) (99 messages, latest: May 06 2023 at 15:36)
+* [Logic in Computer Science conference](topic/topic_Logic.20in.20Computer.20Science.20conference.html) (52 messages, latest: May 06 2023 at 08:46)
 * [SYCO 11](topic/topic_SYCO.2011.html) (6 messages, latest: May 04 2023 at 14:33)
-* [ACT 2023](topic/topic_ACT.202023.html) (89 messages, latest: May 04 2023 at 13:52)
 * [Reading Lawvere from Colombia](topic/topic_Reading.20Lawvere.20from.20Colombia.html) (1 message, latest: Apr 28 2023 at 21:04)
 * [ItaCa Fest 2023](topic/topic_ItaCa.20Fest.202023.html) (5 messages, latest: Apr 27 2023 at 14:11)
 * [Experiment with kids on quantum picturalism](topic/topic_Experiment.20with.20kids.20on.20quantum.20picturalism.html) (3 messages, latest: Apr 27 2023 at 09:42)
@@ -37,7 +38,6 @@ permalink: /stream/229141-general:-events/index.html
 * [Adjoint School 2023](topic/topic_Adjoint.20School.202023.html) (5 messages, latest: Dec 16 2022 at 10:33)
 * [Virtual Double Categories Workshop](topic/topic_Virtual.20Double.20Categories.20Workshop.html) (8 messages, latest: Dec 05 2022 at 13:30)
 * [SYCO 10, Edinburgh](topic/topic_SYCO.2010.2C.20Edinburgh.html) (3 messages, latest: Nov 22 2022 at 17:12)
-* [Logic in Computer Science conference](topic/topic_Logic.20in.20Computer.20Science.20conference.html) (51 messages, latest: Nov 17 2022 at 00:12)
 * [This Week's Finds seminar](topic/topic_This.20Week's.20Finds.20seminar.html) (113 messages, latest: Nov 14 2022 at 11:52)
 * [New Developments in Tensor Networks and Quantum Computation](topic/topic_New.20Developments.20in.20Tensor.20Networks.20and.20Quantum.20Computation.html) (1 message, latest: Oct 29 2022 at 10:50)
 * [Bénabou Colloquium](topic/topic_B.C3.A9nabou.20Colloquium.html) (1 message, latest: Oct 27 2022 at 10:34)
@@ -180,4 +180,4 @@ permalink: /stream/229141-general:-events/index.html
 * [April 1st: ACT@UCR](topic/topic_April.201st.3A.20ACT.40UCR.html) (3 messages, latest: Mar 26 2020 at 23:58)
 * [Google Sites problem](topic/topic_Google.20Sites.20problem.html) (4 messages, latest: Mar 25 2020 at 04:29)
 
-<hr><p>Last updated: May 06 2023 at 00:27 UTC</p>
+<hr><p>Last updated: May 07 2023 at 00:10 UTC</p>

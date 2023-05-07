@@ -8,7 +8,7 @@ permalink: /index.html
 
 ## Streams:
 
-* [learning: questions](stream/229199-learning:-questions/index.html) (864 topics)
+* [learning: questions](stream/229199-learning:-questions/index.html) (865 topics)
 
 * [theory: category theory](stream/229136-theory:-category-theory/index.html) (395 topics)
 
@@ -38,9 +38,9 @@ permalink: /index.html
 
 * [practice: thermodynamics](stream/306433-practice:-thermodynamics/index.html) (53 topics)
 
-* [theory: type theory](stream/229952-theory:-type-theory/index.html) (46 topics)
+* [practice: our work](stream/274877-practice:-our-work/index.html) (46 topics)
 
-* [practice: our work](stream/274877-practice:-our-work/index.html) (45 topics)
+* [theory: type theory](stream/229952-theory:-type-theory/index.html) (46 topics)
 
 * [MIT Categories Seminar](stream/229457-MIT-Categories-Seminar/index.html) (41 topics)
 
@@ -52,13 +52,13 @@ permalink: /index.html
 
 * [general: values](stream/241990-general:-values/index.html) (33 topics)
 
-* [learning: recommendations](stream/232161-learning:-recommendations/index.html) (29 topics)
+* [learning: history of ideas](stream/232163-learning:-history-of-ideas/index.html) (29 topics)
 
-* [learning: history of ideas](stream/232163-learning:-history-of-ideas/index.html) (28 topics)
+* [learning: recommendations](stream/232161-learning:-recommendations/index.html) (29 topics)
 
 * [practice: software](stream/229125-practice:-software/index.html) (25 topics)
 
-* [learning: id my structure](stream/311521-learning:-id-my-structure/index.html) (23 topics)
+* [learning: id my structure](stream/311521-learning:-id-my-structure/index.html) (24 topics)
 
 * [practice: Dialectica](stream/323208-practice:-Dialectica/index.html) (23 topics)
 
@@ -180,4 +180,4 @@ permalink: /index.html
 
 * [theory: alternate presentations](stream/233122-theory:-alternate-presentations/index.html) (1 topic)
 
-<hr><p>Last updated: May 06 2023 at 00:27 UTC</p>
+<hr><p>Last updated: May 07 2023 at 00:10 UTC</p>

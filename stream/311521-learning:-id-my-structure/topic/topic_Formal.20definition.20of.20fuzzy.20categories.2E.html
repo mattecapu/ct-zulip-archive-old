@@ -1,0 +1,90 @@
+---
+layout: archive
+title: Zulip Chat Archive
+permalink: /stream/311521-learning:-id-my-structure/topic/topic_Formal.20definition.20of.20fuzzy.20categories.2E.html
+---
+
+<h2>Stream: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/311521-learning:-id-my-structure/index.html">learning: id my structure</a></h2>
+<h3>Topic: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/311521-learning:-id-my-structure/topic/topic_Formal.20definition.20of.20fuzzy.20categories.2E.html">Formal definition of fuzzy categories.</a></h3>
+
+<hr>
+
+<base href="https://categorytheory.zulipchat.com/">
+
+{% raw %}
+
+<a name="356223951"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/311521-learning%3A%20id%20my%20structure/topic/Formal%20definition%20of%20fuzzy%20categories./near/356223951" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Simonas Tutlys <a href="https://mattecapu.github.io/ct-zulip-archive/stream/311521-learning:-id-my-structure/topic/topic_Formal.20definition.20of.20fuzzy.20categories.2E.html#356223951">(May 06 2023 at 06:57)</a>:</h4>
+<p>In my thinking about how to integrate fuzziness and categories side by side and not study the latter in terms of the former i've been coming up with definitions of fuzzy categories to use as a bacground to figure out what optimizing a commutative diagram (the commutativity of a pair of morphisms would be a number instead of a boolean) would mean.I have a definition but would like some suggestions for improvement and am inquiring wether this construction is already studied somewhere.I was aiming for generality so here goes:</p>
+<p>Let C be a concrete category with U the underlying functor being the underlying set of an object and define a funtor Pair:C-&gt;Set = c -&gt; U(c)xU(c) . An commutativity predicate  is a morphism in the slice category of the image subcategory of Pair over R (the comma category [Pair,1-&gt;R]),the set of real numbers.A fuzzy category then is a concrete category C with a functor COM:C-&gt;[Pair,1-&gt;R].Diagramatically we coul imagine that now commutativity of a diagram is not a boolean but the maximum of all the values of the commutativity predicates for all pairs of arrows.</p>
+
+
+
+<a name="356243089"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/311521-learning%3A%20id%20my%20structure/topic/Formal%20definition%20of%20fuzzy%20categories./near/356243089" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Simonas Tutlys <a href="https://mattecapu.github.io/ct-zulip-archive/stream/311521-learning:-id-my-structure/topic/topic_Formal.20definition.20of.20fuzzy.20categories.2E.html#356243089">(May 06 2023 at 08:49)</a>:</h4>
+<p>Fuzzy functors could be this:</p>
+<p>A fuzzy functor between fuzzy categories fC and fD is a pair (F,f) of a functor between the underlying categories C and D and a natural transformation f of COM functors that agrees on objects with the functor F. f(c)=f:COM_C(c)-&gt;COM_D(F(c))</p>
+
+
+
+<a name="356265885"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/311521-learning%3A%20id%20my%20structure/topic/Formal%20definition%20of%20fuzzy%20categories./near/356265885" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Morgan Rogers (he/him) <a href="https://mattecapu.github.io/ct-zulip-archive/stream/311521-learning:-id-my-structure/topic/topic_Formal.20definition.20of.20fuzzy.20categories.2E.html#356265885">(May 06 2023 at 10:29)</a>:</h4>
+<p>Wouldn't composition also be fuzzy? You might want to consider <a href="https://ncatlab.org/nlab/show/enriched%20category">[[enriched category]]</a> theory, although based on the start of your message you might be trying to avoid this because the most straightforward option is to enrich in (some variant of) fuzzy sets.</p>
+
+
+
+<a name="356280706"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/311521-learning%3A%20id%20my%20structure/topic/Formal%20definition%20of%20fuzzy%20categories./near/356280706" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Simonas Tutlys <a href="https://mattecapu.github.io/ct-zulip-archive/stream/311521-learning:-id-my-structure/topic/topic_Formal.20definition.20of.20fuzzy.20categories.2E.html#356280706">(May 06 2023 at 11:34)</a>:</h4>
+<p>The proposed definition seems more natural for my end goal than enrichment cause the fuzzines depends on the output of a morphism.My goal is formally thinking about for example networks of neural networks or other optimizable models where optimization is based on output and loss functions.for example we have a "hidden" (another thing i'm trying to think about in a more formal way,things in categorical machinery you can't directly percieve/write down analytically,like categories of the states and transitions of an environment an agent can only see a part of.behavioural equivalancce based on categorical semantics of modal logics seems close) morphism of a supervised dataset g:X-Y (set of pairs of desired input-output) and we have some model/morphism that we want to fit to the dataset with the same (co)domain with respect to some loss function on Y like mean squared error l(f(X),g(x)) where X and Y are vector spaces . The thing I'm focusing on is the fuzziness of the equality of outputs of f and g.Maybe I'm not mathematically mature enough to see how to use enriched categories in this case since it looks like  it  adds structure to the homs without any regard to the outputs of the morphisms in them.Or maybe the word 'fuzzy' is misleading in this case.</p>
+
+
+
+<a name="356285324"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/311521-learning%3A%20id%20my%20structure/topic/Formal%20definition%20of%20fuzzy%20categories./near/356285324" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Morgan Rogers (he/him) <a href="https://mattecapu.github.io/ct-zulip-archive/stream/311521-learning:-id-my-structure/topic/topic_Formal.20definition.20of.20fuzzy.20categories.2E.html#356285324">(May 06 2023 at 11:53)</a>:</h4>
+<p>Even though the distance is defined "on the codomain", the loss is a value that's associated to morphisms. The collection of morphisms from <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>X</mi></mrow><annotation encoding="application/x-tex">X</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.07847em;">X</span></span></span></span> to <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>Y</mi></mrow><annotation encoding="application/x-tex">Y</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.22222em;">Y</span></span></span></span> acquires a metric in the way you just described, with distance from <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi></mrow><annotation encoding="application/x-tex">f</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8889em;vertical-align:-0.1944em;"></span><span class="mord mathnormal" style="margin-right:0.10764em;">f</span></span></span></span> to <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>g</mi></mrow><annotation encoding="application/x-tex">g</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.625em;vertical-align:-0.1944em;"></span><span class="mord mathnormal" style="margin-right:0.03588em;">g</span></span></span></span> being your favourite measure of the error (you'll probably need to allow the slight generalization of metric spaces where infinite distances are allowed) - note that there is not a canonical choice here.</p>
+
+
+
+<a name="356293671"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/311521-learning%3A%20id%20my%20structure/topic/Formal%20definition%20of%20fuzzy%20categories./near/356293671" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Simonas Tutlys <a href="https://mattecapu.github.io/ct-zulip-archive/stream/311521-learning:-id-my-structure/topic/topic_Formal.20definition.20of.20fuzzy.20categories.2E.html#356293671">(May 06 2023 at 12:31)</a>:</h4>
+<p>The loss is dependent on the subsets of the data you give it though.for example,i have two morphisms d1,d2 from the terminal object in Set (datapoints) to X or monomorphisms into X seen as subsets and f,g:X-&gt;Y .the value of l(d1 * f,d1 * g) is different to l(d2 * f,d2 * g) in some fuzzy categories baset on Set. Maybe we're talking about different concepts here but I'm not sure - what you're talking about to me looks close to epsilon-commutativity of <a href="https://arxiv.org/abs/1608.05524">this</a> paper where they use enrichment in metric spaces like you suggest.But I don't want a single number assigned to pairs of morphisms but instead a function based on what goes through them.Maybe I'm thinking of something stateful.This exercize is  to try to see if there's some some formal grounding for my code where I just replace strict commutativity based on equality with a loss function.</p>
+
+
+
+<a name="356299971"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/311521-learning%3A%20id%20my%20structure/topic/Formal%20definition%20of%20fuzzy%20categories./near/356299971" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Morgan Rogers (he/him) <a href="https://mattecapu.github.io/ct-zulip-archive/stream/311521-learning:-id-my-structure/topic/topic_Formal.20definition.20of.20fuzzy.20categories.2E.html#356299971">(May 06 2023 at 13:03)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="380933">Simonas Tutlys</span> <a href="#narrow/stream/311521-learning.3A-id-my-structure/topic/Formal.20definition.20of.20fuzzy.20categories.2E/near/356293671">said</a>:</p>
+<blockquote>
+<p>The loss is dependent on the subsets of the data you give it though.for example,i have two morphisms d1,d2 from the terminal object in Set (datapoints) to X or monomorphisms into X seen as subsets and f,g:X-&gt;Y .the value of l(d1 * f,d1 * g) is different to l(d2 * f,d2 * g) in some fuzzy categories baset on Set.</p>
+</blockquote>
+<p>The pair <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mi>f</mi><mo>∘</mo><mi>d</mi><mn>1</mn><mo separator="true">,</mo><mi>g</mi><mo>∘</mo><mi>d</mi><mn>1</mn><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(f \circ d1,g \circ d1)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.10764em;">f</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">∘</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.8889em;vertical-align:-0.1944em;"></span><span class="mord mathnormal">d</span><span class="mord">1</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal" style="margin-right:0.03588em;">g</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">∘</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal">d</span><span class="mord">1</span><span class="mclose">)</span></span></span></span> in your example is distinct from the pair <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mi>f</mi><mo separator="true">,</mo><mi>g</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(f,g)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.10764em;">f</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal" style="margin-right:0.03588em;">g</span><span class="mclose">)</span></span></span></span>, so I don't see/understand the problem?</p>
+
+
+
+<a name="356301309"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/311521-learning%3A%20id%20my%20structure/topic/Formal%20definition%20of%20fuzzy%20categories./near/356301309" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Morgan Rogers (he/him) <a href="https://mattecapu.github.io/ct-zulip-archive/stream/311521-learning:-id-my-structure/topic/topic_Formal.20definition.20of.20fuzzy.20categories.2E.html#356301309">(May 06 2023 at 13:10)</a>:</h4>
+<p>Okay right I see it, one might imagine that composition with morphisms at a distance of 0 apart would not change the values. My suggestion to "enrich in metric spaces" was ambiguous, since what this means depends on what morphisms one chooses for metric spaces; using distance-non-increasing functions rather than distance-preserving functions could work (since the loss over a subset is going to be bounded by the loss over the whole space)?</p>
+
+
+
+<a name="356301453"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/311521-learning%3A%20id%20my%20structure/topic/Formal%20definition%20of%20fuzzy%20categories./near/356301453" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Morgan Rogers (he/him) <a href="https://mattecapu.github.io/ct-zulip-archive/stream/311521-learning:-id-my-structure/topic/topic_Formal.20definition.20of.20fuzzy.20categories.2E.html#356301453">(May 06 2023 at 13:11)</a>:</h4>
+<p>That suggestion could fail depending on the details of how the loss is calculated and/or normalized, though.</p>
+
+
+
+<a name="356305096"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/311521-learning%3A%20id%20my%20structure/topic/Formal%20definition%20of%20fuzzy%20categories./near/356305096" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Simonas Tutlys <a href="https://mattecapu.github.io/ct-zulip-archive/stream/311521-learning:-id-my-structure/topic/topic_Formal.20definition.20of.20fuzzy.20categories.2E.html#356305096">(May 06 2023 at 13:32)</a>:</h4>
+<p>My mistake,didn't catch that the compositions are different from f,g :D I'm thinking of this as a way to plug models together.Good suggestion on non-increasing morphisms,I'll have something to think about.Thank you for the patience :)</p>
+
+
+
+<a name="356306381"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/311521-learning%3A%20id%20my%20structure/topic/Formal%20definition%20of%20fuzzy%20categories./near/356306381" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Morgan Rogers (he/him) <a href="https://mattecapu.github.io/ct-zulip-archive/stream/311521-learning:-id-my-structure/topic/topic_Formal.20definition.20of.20fuzzy.20categories.2E.html#356306381">(May 06 2023 at 13:38)</a>:</h4>
+<p>No problem, it's a wild jungle of definitions out here! Please do come back if what I suggested doesn't work or your want to discuss it more. Sometimes a new definition really is needed (I haven't spent a lot of time analysing your original suggestion!), but it's good to see what's out there so that you can navigate connections with other work later.</p>
+
+
+
+{% endraw %}
+
+<hr><p>Last updated: May 07 2023 at 00:10 UTC</p>
