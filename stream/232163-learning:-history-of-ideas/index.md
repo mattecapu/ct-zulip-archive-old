@@ -9,7 +9,7 @@ permalink: /stream/232163-learning:-history-of-ideas/index.html
 
 ### Topics:
 
-* [Old CT lecture notes](topic/topic_Old.20CT.20lecture.20notes.html) (3 messages, latest: May 06 2023 at 21:50)
+* [Old CT lecture notes](topic/topic_Old.20CT.20lecture.20notes.html) (7 messages, latest: May 07 2023 at 15:35)
 * [✔ What Moore is the Moore of monad algebras?](topic/topic_.E2.9C.94.20What.20Moore.20is.20the.20Moore.20of.20monad.20algebras.3F.html) (6 messages, latest: Jan 25 2023 at 10:30)
 * [Lax functors in Span & their Grothendieck construction](topic/topic_Lax.20functors.20in.20Span.20.26.20their.20Grothendieck.20construction.html) (4 messages, latest: Oct 29 2022 at 11:55)
 * [lax functors in Span & their Grothendieck construction](topic/topic_lax.20functors.20in.20Span.20.26.20their.20Grothendieck.20construction.html) (28 messages, latest: Oct 28 2022 at 21:10)
@@ -39,4 +39,4 @@ permalink: /stream/232163-learning:-history-of-ideas/index.html
 * [All things Feynman](topic/topic_All.20things.20Feynman.html) (2 messages, latest: May 22 2020 at 06:04)
 * [stream events](topic/topic_stream.20events.html) (2 messages, latest: Apr 06 2020 at 18:15)
 
-<hr><p>Last updated: May 07 2023 at 00:30 UTC</p>
+<hr><p>Last updated: May 08 2023 at 00:10 UTC</p>
