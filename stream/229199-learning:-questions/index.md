@@ -9,9 +9,9 @@ permalink: /stream/229199-learning:-questions/index.html
 
 ### Topics:
 
-* [If a trace corresponds to feedback, what is cotrace?](topic/topic_If.20a.20trace.20corresponds.20to.20feedback.2C.20what.20is.20cotrace.3F.html) (25 messages, latest: May 07 2023 at 22:26)
-* [What is a fibration?](topic/topic_What.20is.20a.20fibration.3F.html) (14 messages, latest: May 07 2023 at 20:15)
-* [definition of "path" and principle of equivalence](topic/topic_definition.20of.20.22path.22.20and.20principle.20of.20equivalence.html) (22 messages, latest: May 07 2023 at 16:40)
+* [What is a fibration?](topic/topic_What.20is.20a.20fibration.3F.html) (34 messages, latest: May 08 2023 at 21:53)
+* [If a trace corresponds to feedback, what is cotrace?](topic/topic_If.20a.20trace.20corresponds.20to.20feedback.2C.20what.20is.20cotrace.3F.html) (42 messages, latest: May 08 2023 at 21:34)
+* [definition of "path" and principle of equivalence](topic/topic_definition.20of.20.22path.22.20and.20principle.20of.20equivalence.html) (26 messages, latest: May 08 2023 at 14:49)
 * [Do adjoints to projection maps  form a functor?](topic/topic_Do.20adjoints.20to.20projection.20maps.20.20form.20a.20functor.3F.html) (7 messages, latest: May 06 2023 at 06:01)
 * [Hegel dialectics](topic/topic_Hegel.20dialectics.html) (12 messages, latest: May 05 2023 at 20:55)
 * [what are the main properties of monadic functors?](topic/topic_what.20are.20the.20main.20properties.20of.20monadic.20functors.3F.html) (22 messages, latest: May 05 2023 at 15:50)
@@ -877,4 +877,4 @@ permalink: /stream/229199-learning:-questions/index.html
 * [Algebra (Aluffi) exercises](topic/topic_Algebra.20(Aluffi).20exercises.html) (55 messages, latest: Mar 27 2020 at 23:38)
 * [What is category theory about?](topic/topic_What.20is.20category.20theory.20about.3F.html) (16 messages, latest: Mar 26 2020 at 16:03)
 
-<hr><p>Last updated: May 08 2023 at 00:28 UTC</p>
+<hr><p>Last updated: May 09 2023 at 00:11 UTC</p>

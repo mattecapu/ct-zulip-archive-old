@@ -56,9 +56,9 @@ permalink: /index.html
 
 * [learning: recommendations](stream/232161-learning:-recommendations/index.html) (29 topics)
 
-* [practice: software](stream/229125-practice:-software/index.html) (25 topics)
+* [learning: id my structure](stream/311521-learning:-id-my-structure/index.html) (25 topics)
 
-* [learning: id my structure](stream/311521-learning:-id-my-structure/index.html) (24 topics)
+* [practice: software](stream/229125-practice:-software/index.html) (25 topics)
 
 * [practice: Dialectica](stream/323208-practice:-Dialectica/index.html) (23 topics)
 
@@ -180,4 +180,4 @@ permalink: /index.html
 
 * [theory: alternate presentations](stream/233122-theory:-alternate-presentations/index.html) (1 topic)
 
-<hr><p>Last updated: May 08 2023 at 00:28 UTC</p>
+<hr><p>Last updated: May 09 2023 at 00:11 UTC</p>
