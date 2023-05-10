@@ -9,8 +9,8 @@ permalink: /stream/229111-general/index.html
 
 ### Topics:
 
-* [Category / Type / &c. Theorists in industry](topic/topic_Category.20.2F.20Type.20.2F.20.26c.2E.20Theorists.20in.20industry.html) (8 messages, latest: May 05 2023 at 19:52)
-* [Looking for popular accounts of Yoneda](topic/topic_Looking.20for.20popular.20accounts.20of.20Yoneda.html) (23 messages, latest: May 03 2023 at 17:44)
+* [Looking for popular accounts of Yoneda](topic/topic_Looking.20for.20popular.20accounts.20of.20Yoneda.html) (37 messages, latest: May 09 2023 at 22:30)
+* [Category / Type / &c. Theorists in industry](topic/topic_Category.20.2F.20Type.20.2F.20.26c.2E.20Theorists.20in.20industry.html) (13 messages, latest: May 09 2023 at 20:18)
 * [Topos Institute news](topic/topic_Topos.20Institute.20news.html) (23 messages, latest: Apr 30 2023 at 18:54)
 * [Introduce yourself!](topic/topic_Introduce.20yourself!.html) (63 messages, latest: Apr 27 2023 at 23:05)
 * [HoTT 2023: Reduced registration](topic/topic_HoTT.202023.3A.20Reduced.20registration.html) (1 message, latest: Apr 27 2023 at 11:43)
@@ -264,4 +264,4 @@ permalink: /stream/229111-general/index.html
 * [Tools for diagrams](topic/topic_Tools.20for.20diagrams.html) (78 messages, latest: Mar 25 2020 at 17:53)
 * [topic demonstration](topic/topic_topic.20demonstration.html) (2 messages, latest: Mar 23 2020 at 16:57)
 
-<hr><p>Last updated: May 09 2023 at 00:29 UTC</p>
+<hr><p>Last updated: May 10 2023 at 00:10 UTC</p>

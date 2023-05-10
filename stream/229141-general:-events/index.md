@@ -9,8 +9,11 @@ permalink: /stream/229141-general:-events/index.html
 
 ### Topics:
 
-* [Binary Operation](topic/topic_Binary.20Operation.html) (37 messages, latest: May 08 2023 at 21:44)
-* [ACT 2023](topic/topic_ACT.202023.html) (125 messages, latest: May 08 2023 at 11:20)
+* [Binary Operation](topic/topic_Binary.20Operation.html) (59 messages, latest: May 09 2023 at 21:23)
+* [Symmetric spaces and the tenfold way](topic/topic_Symmetric.20spaces.20and.20the.20tenfold.20way.html) (3 messages, latest: May 09 2023 at 19:39)
+* [ACT 2024](topic/topic_ACT.202024.html) (11 messages, latest: May 09 2023 at 15:06)
+* [CATNIP](topic/topic_CATNIP.html) (6 messages, latest: May 09 2023 at 13:41)
+* [ACT 2023](topic/topic_ACT.202023.html) (126 messages, latest: May 09 2023 at 06:58)
 * [Logic in Computer Science conference](topic/topic_Logic.20in.20Computer.20Science.20conference.html) (52 messages, latest: May 06 2023 at 08:46)
 * [SYCO 11](topic/topic_SYCO.2011.html) (6 messages, latest: May 04 2023 at 14:33)
 * [Reading Lawvere from Colombia](topic/topic_Reading.20Lawvere.20from.20Colombia.html) (1 message, latest: Apr 28 2023 at 21:04)
@@ -18,7 +21,6 @@ permalink: /stream/229141-general:-events/index.html
 * [Experiment with kids on quantum picturalism](topic/topic_Experiment.20with.20kids.20on.20quantum.20picturalism.html) (3 messages, latest: Apr 27 2023 at 09:42)
 * [Workshop on Doctrines and Fibrations 2023](topic/topic_Workshop.20on.20Doctrines.20and.20Fibrations.202023.html) (1 message, latest: Apr 20 2023 at 18:47)
 * [Structure meets Power Workshop, CFP](topic/topic_Structure.20meets.20Power.20Workshop.2C.20CFP.html) (3 messages, latest: Apr 14 2023 at 12:20)
-* [CATNIP](topic/topic_CATNIP.html) (5 messages, latest: Apr 13 2023 at 09:00)
 * [Algebra, Categories and Logic in Computing (ACLiC) 2023](topic/topic_Algebra.2C.20Categories.20and.20Logic.20in.20Computing.20(ACLiC).202023.html) (1 message, latest: Apr 12 2023 at 17:42)
 * [HoTT 2023 Registration is open](topic/topic_HoTT.202023.20Registration.20is.20open.html) (1 message, latest: Apr 07 2023 at 16:29)
 * [Developing new scholarly institutions](topic/topic_Developing.20new.20scholarly.20institutions.html) (142 messages, latest: Mar 29 2023 at 21:39)
@@ -180,4 +182,4 @@ permalink: /stream/229141-general:-events/index.html
 * [April 1st: ACT@UCR](topic/topic_April.201st.3A.20ACT.40UCR.html) (3 messages, latest: Mar 26 2020 at 23:58)
 * [Google Sites problem](topic/topic_Google.20Sites.20problem.html) (4 messages, latest: Mar 25 2020 at 04:29)
 
-<hr><p>Last updated: May 09 2023 at 00:29 UTC</p>
+<hr><p>Last updated: May 10 2023 at 00:10 UTC</p>
