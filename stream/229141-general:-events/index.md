@@ -9,7 +9,7 @@ permalink: /stream/229141-general:-events/index.html
 
 ### Topics:
 
-* [Binary Operation](topic/topic_Binary.20Operation.html) (59 messages, latest: May 09 2023 at 21:23)
+* [Binary Operation](topic/topic_Binary.20Operation.html) (60 messages, latest: May 10 2023 at 00:19)
 * [Symmetric spaces and the tenfold way](topic/topic_Symmetric.20spaces.20and.20the.20tenfold.20way.html) (3 messages, latest: May 09 2023 at 19:39)
 * [ACT 2024](topic/topic_ACT.202024.html) (11 messages, latest: May 09 2023 at 15:06)
 * [CATNIP](topic/topic_CATNIP.html) (6 messages, latest: May 09 2023 at 13:41)
@@ -182,4 +182,4 @@ permalink: /stream/229141-general:-events/index.html
 * [April 1st: ACT@UCR](topic/topic_April.201st.3A.20ACT.40UCR.html) (3 messages, latest: Mar 26 2020 at 23:58)
 * [Google Sites problem](topic/topic_Google.20Sites.20problem.html) (4 messages, latest: Mar 25 2020 at 04:29)
 
-<hr><p>Last updated: May 10 2023 at 00:10 UTC</p>
+<hr><p>Last updated: May 10 2023 at 00:30 UTC</p>
