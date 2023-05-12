@@ -9,6 +9,7 @@ permalink: /stream/229199-learning:-questions/index.html
 
 ### Topics:
 
+* [when is restriction of scalars monadic?](topic/topic_when.20is.20restriction.20of.20scalars.20monadic.3F.html) (22 messages, latest: May 11 2023 at 20:31)
 * [If a trace corresponds to feedback, what is cotrace?](topic/topic_If.20a.20trace.20corresponds.20to.20feedback.2C.20what.20is.20cotrace.3F.html) (45 messages, latest: May 09 2023 at 12:57)
 * [What is a fibration?](topic/topic_What.20is.20a.20fibration.3F.html) (35 messages, latest: May 09 2023 at 00:29)
 * [definition of "path" and principle of equivalence](topic/topic_definition.20of.20.22path.22.20and.20principle.20of.20equivalence.html) (26 messages, latest: May 08 2023 at 14:49)
@@ -877,4 +878,4 @@ permalink: /stream/229199-learning:-questions/index.html
 * [Algebra (Aluffi) exercises](topic/topic_Algebra.20(Aluffi).20exercises.html) (55 messages, latest: Mar 27 2020 at 23:38)
 * [What is category theory about?](topic/topic_What.20is.20category.20theory.20about.3F.html) (16 messages, latest: Mar 26 2020 at 16:03)
 
-<hr><p>Last updated: May 11 2023 at 00:29 UTC</p>
+<hr><p>Last updated: May 12 2023 at 00:09 UTC</p>
