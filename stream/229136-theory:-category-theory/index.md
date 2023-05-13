@@ -9,10 +9,10 @@ permalink: /stream/229136-theory:-category-theory/index.html
 
 ### Topics:
 
+* [unifying *-autonomous and traced categories](topic/topic_unifying.20*-autonomous.20and.20traced.20categories.html) (7 messages, latest: May 12 2023 at 10:49)
 * [Notation for adjoints as an operation](topic/topic_Notation.20for.20adjoints.20as.20an.20operation.html) (39 messages, latest: May 08 2023 at 13:48)
 * [Linear ultrafilters?](topic/topic_Linear.20ultrafilters.3F.html) (2 messages, latest: May 06 2023 at 19:12)
 * ["reflective stability" of categories](topic/topic_.22reflective.20stability.22.20of.20categories.html) (2 messages, latest: May 05 2023 at 18:01)
-* [unifying *-autonomous and traced categories](topic/topic_unifying.20*-autonomous.20and.20traced.20categories.html) (6 messages, latest: May 04 2023 at 19:52)
 * [From *-autonomous to compact closed](topic/topic_From.20*-autonomous.20to.20compact.20closed.html) (55 messages, latest: May 04 2023 at 15:50)
 * [Approach to whiskering with lax functors](topic/topic_Approach.20to.20whiskering.20with.20lax.20functors.html) (4 messages, latest: Apr 26 2023 at 12:07)
 * [Cartesian 2-category](topic/topic_Cartesian.202-category.html) (5 messages, latest: Apr 11 2023 at 18:53)
@@ -405,4 +405,4 @@ permalink: /stream/229136-theory:-category-theory/index.html
 * [diagrams for application](topic/topic_diagrams.20for.20application.html) (13 messages, latest: Mar 24 2020 at 06:19)
 * [universal constructions](topic/topic_universal.20constructions.html) (8 messages, latest: Mar 23 2020 at 21:06)
 
-<hr><p>Last updated: May 12 2023 at 00:29 UTC</p>
+<hr><p>Last updated: May 13 2023 at 00:10 UTC</p>
