@@ -8,7 +8,7 @@ permalink: /index.html
 
 ## Streams:
 
-* [learning: questions](stream/229199-learning:-questions/index.html) (874 topics)
+* [learning: questions](stream/229199-learning:-questions/index.html) (877 topics)
 
 * [theory: category theory](stream/229136-theory:-category-theory/index.html) (395 topics)
 
@@ -46,7 +46,7 @@ permalink: /index.html
 
 * [seminar: MIT Categories Seminar](stream/229457-seminar:-MIT-Categories-Seminar/index.html) (41 topics)
 
-* [theory: probability](stream/253118-theory:-probability/index.html) (35 topics)
+* [theory: probability](stream/253118-theory:-probability/index.html) (36 topics)
 
 * [Categorical Probability and Statistics 2020 workshop](stream/238032-Categorical-Probability-and-Statistics-2020-workshop/index.html) (34 topics)
 
@@ -180,4 +180,4 @@ permalink: /index.html
 
 * [theory: alternate presentations](stream/233122-theory:-alternate-presentations/index.html) (1 topic)
 
-<hr><p>Last updated: May 14 2023 at 00:31 UTC</p>
+<hr><p>Last updated: May 15 2023 at 00:10 UTC</p>
