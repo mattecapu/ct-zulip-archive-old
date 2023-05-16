@@ -9,8 +9,8 @@ permalink: /stream/229199-learning:-questions/index.html
 
 ### Topics:
 
-* [how to recover a commutative ring from its modules](topic/topic_how.20to.20recover.20a.20commutative.20ring.20from.20its.20modules.html) (13 messages, latest: May 15 2023 at 00:19)
-* [Is binary gluing preserved by "localising" a presheaf?](topic/topic_Is.20binary.20gluing.20preserved.20by.20.22localising.22.20a.20presheaf.3F.html) (2 messages, latest: May 14 2023 at 23:40)
+* [Is binary gluing preserved by "localising" a presheaf?](topic/topic_Is.20binary.20gluing.20preserved.20by.20.22localising.22.20a.20presheaf.3F.html) (13 messages, latest: May 15 2023 at 23:41)
+* [how to recover a commutative ring from its modules](topic/topic_how.20to.20recover.20a.20commutative.20ring.20from.20its.20modules.html) (39 messages, latest: May 15 2023 at 15:54)
 * [F-algebras over Pos](topic/topic_F-algebras.20over.20Pos.html) (6 messages, latest: May 14 2023 at 10:44)
 * [✔ when is restriction of scalars monadic?](topic/topic_.E2.9C.94.20when.20is.20restriction.20of.20scalars.20monadic.3F.html) (1 message, latest: May 14 2023 at 00:39)
 * [✔ (co)limits in the covariant Grothendieck construction](topic/topic_.E2.9C.94.20(co)limits.20in.20the.20covariant.20Grothendieck.20construction.html) (7 messages, latest: May 13 2023 at 23:01)
@@ -887,4 +887,4 @@ permalink: /stream/229199-learning:-questions/index.html
 * [Algebra (Aluffi) exercises](topic/topic_Algebra.20(Aluffi).20exercises.html) (55 messages, latest: Mar 27 2020 at 23:38)
 * [What is category theory about?](topic/topic_What.20is.20category.20theory.20about.3F.html) (16 messages, latest: Mar 26 2020 at 16:03)
 
-<hr><p>Last updated: May 15 2023 at 00:29 UTC</p>
+<hr><p>Last updated: May 16 2023 at 00:10 UTC</p>

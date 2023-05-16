@@ -9,6 +9,7 @@ permalink: /stream/258900-practice:-our-papers/index.html
 
 ### Topics:
 
+* [New paper on enriched monad-theory equivalences](topic/topic_New.20paper.20on.20enriched.20monad-theory.20equivalences.html) (1 message, latest: May 15 2023 at 17:54)
 * [Higher-dimensional subdiagram matching](topic/topic_Higher-dimensional.20subdiagram.20matching.html) (1 message, latest: Apr 20 2023 at 07:16)
 * [Pointfree topology and constructive mathematics](topic/topic_Pointfree.20topology.20and.20constructive.20mathematics.html) (1 message, latest: Apr 13 2023 at 11:22)
 * [string diagrams for bot religions](topic/topic_string.20diagrams.20for.20bot.20religions.html) (1 message, latest: Mar 28 2023 at 01:28)
@@ -66,4 +67,4 @@ permalink: /stream/258900-practice:-our-papers/index.html
 * [Functorial semantics for partial theories](topic/topic_Functorial.20semantics.20for.20partial.20theories.html) (30 messages, latest: Nov 29 2020 at 08:46)
 * [Coends of higher arity](topic/topic_Coends.20of.20higher.20arity.html) (3 messages, latest: Sep 26 2020 at 16:28)
 
-<hr><p>Last updated: May 15 2023 at 00:29 UTC</p>
+<hr><p>Last updated: May 16 2023 at 00:10 UTC</p>
