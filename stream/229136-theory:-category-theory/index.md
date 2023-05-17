@@ -9,8 +9,8 @@ permalink: /stream/229136-theory:-category-theory/index.html
 
 ### Topics:
 
+* [introduction to categories as algebraic gadgets](topic/topic_introduction.20to.20categories.20as.20algebraic.20gadgets.html) (11 messages, latest: May 17 2023 at 00:30)
 * [Extending copresheaves along functors](topic/topic_Extending.20copresheaves.20along.20functors.html) (3 messages, latest: May 16 2023 at 23:10)
-* [introduction to categories as algebraic gadgets](topic/topic_introduction.20to.20categories.20as.20algebraic.20gadgets.html) (10 messages, latest: May 16 2023 at 21:02)
 * [Comonadicity of Presheaf Categories](topic/topic_Comonadicity.20of.20Presheaf.20Categories.html) (8 messages, latest: May 16 2023 at 09:14)
 * [Cumulants and Joyal Combinatorial Species](topic/topic_Cumulants.20and.20Joyal.20Combinatorial.20Species.html) (2 messages, latest: May 15 2023 at 15:37)
 * [Linear ultrafilters?](topic/topic_Linear.20ultrafilters.3F.html) (3 messages, latest: May 15 2023 at 15:14)
@@ -409,4 +409,4 @@ permalink: /stream/229136-theory:-category-theory/index.html
 * [diagrams for application](topic/topic_diagrams.20for.20application.html) (13 messages, latest: Mar 24 2020 at 06:19)
 * [universal constructions](topic/topic_universal.20constructions.html) (8 messages, latest: Mar 23 2020 at 21:06)
 
-<hr><p>Last updated: May 17 2023 at 00:11 UTC</p>
+<hr><p>Last updated: May 17 2023 at 00:33 UTC</p>
