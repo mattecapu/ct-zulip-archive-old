@@ -9,7 +9,7 @@ permalink: /stream/235484-theory:-concurrency/index.html
 
 ### Topics:
 
-* [Partial order on NFA up to bisimilarity](topic/topic_Partial.20order.20on.20NFA.20up.20to.20bisimilarity.html) (3 messages, latest: Dec 14 2022 at 18:15)
+* [Partial order on NFA up to bisimilarity](topic/topic_Partial.20order.20on.20NFA.20up.20to.20bisimilarity.html) (4 messages, latest: May 16 2023 at 14:10)
 * [proarrow equipments in concurrency](topic/topic_proarrow.20equipments.20in.20concurrency.html) (114 messages, latest: May 03 2022 at 07:08)
 * [shapes and algebraic structures](topic/topic_shapes.20and.20algebraic.20structures.html) (194 messages, latest: Mar 31 2021 at 23:20)
 * [bisimulation](topic/topic_bisimulation.html) (336 messages, latest: Mar 19 2021 at 05:39)
@@ -20,4 +20,4 @@ permalink: /stream/235484-theory:-concurrency/index.html
 * [compact closed bicategories and the π-calculus](topic/topic_compact.20closed.20bicategories.20and.20the.20.CF.80-calculus.html) (1 message, latest: Apr 22 2020 at 18:46)
 * [stream events](topic/topic_stream.20events.html) (1 message, latest: Apr 22 2020 at 18:45)
 
-<hr><p>Last updated: May 16 2023 at 00:40 UTC</p>
+<hr><p>Last updated: May 17 2023 at 00:11 UTC</p>
