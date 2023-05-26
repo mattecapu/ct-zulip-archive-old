@@ -32,4 +32,4 @@ permalink: /stream/282140-workshop:-Polynomial-Functors-@-Topos/index.html
 * [Richard Garner: "Polynomials in categories with pullbacks" 1](topic/topic_Richard.20Garner.3A.20.22Polynomials.20in.20categories.20with.20pullbacks.22.201.html) (2 messages, latest: Mar 15 2021 at 21:58)
 * [stream events](topic/topic_stream.20events.html) (2 messages, latest: Mar 15 2021 at 14:12)
 
-<hr><p>Last updated: May 26 2023 at 00:11 UTC</p>
+<hr><p>Last updated: May 26 2023 at 00:30 UTC</p>
