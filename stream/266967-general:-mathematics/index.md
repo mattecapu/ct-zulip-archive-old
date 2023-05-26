@@ -9,6 +9,9 @@ permalink: /stream/266967-general:-mathematics/index.html
 
 ### Topics:
 
+* [Analyzing Logic of Statements](topic/topic_Analyzing.20Logic.20of.20Statements.html) (8 messages, latest: May 25 2023 at 22:28)
+* [Simplifying Set Expressions](topic/topic_Simplifying.20Set.20Expressions.html) (20 messages, latest: May 25 2023 at 17:52)
+* [\[Blog\] Exploration of Perfect, Abundant, and Deficient Nums](topic/topic_.5BBlog.5D.20Exploration.20of.20Perfect.2C.20Abundant.2C.20and.20Deficient.20Nums.html) (11 messages, latest: May 20 2023 at 21:46)
 * [homotopy fibers](topic/topic_homotopy.20fibers.html) (167 messages, latest: May 04 2023 at 23:55)
 * [Galois connections](topic/topic_Galois.20connections.html) (32 messages, latest: Apr 28 2023 at 19:28)
 * [order theory terminology](topic/topic_order.20theory.20terminology.html) (30 messages, latest: Apr 28 2023 at 07:45)
@@ -99,4 +102,4 @@ permalink: /stream/266967-general:-mathematics/index.html
 * [the 600-cell](topic/topic_the.20600-cell.html) (5 messages, latest: Dec 01 2020 at 16:35)
 * [hermitian matrix over normed division algebra](topic/topic_hermitian.20matrix.20over.20normed.20division.20algebra.html) (8 messages, latest: Sep 28 2020 at 21:19)
 
-<hr><p>Last updated: May 17 2023 at 00:33 UTC</p>
+<hr><p>Last updated: May 26 2023 at 00:11 UTC</p>

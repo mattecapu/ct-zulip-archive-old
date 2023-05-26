@@ -9,15 +9,16 @@ permalink: /stream/229111-general/index.html
 
 ### Topics:
 
+* [Compositionality](topic/topic_Compositionality.html) (80 messages, latest: May 18 2023 at 06:05)
+* [HoTT 2023: Poster](topic/topic_HoTT.202023.3A.20Poster.html) (1 message, latest: May 17 2023 at 17:23)
+* [Introduce yourself!](topic/topic_Introduce.20yourself!.html) (65 messages, latest: May 17 2023 at 15:26)
 * [HoTT 2023: Programme and last call for registration](topic/topic_HoTT.202023.3A.20Programme.20and.20last.20call.20for.20registration.html) (2 messages, latest: May 11 2023 at 07:50)
 * [Looking for popular accounts of Yoneda](topic/topic_Looking.20for.20popular.20accounts.20of.20Yoneda.html) (63 messages, latest: May 10 2023 at 17:17)
 * [Category / Type / &c. Theorists in industry](topic/topic_Category.20.2F.20Type.20.2F.20.26c.2E.20Theorists.20in.20industry.html) (13 messages, latest: May 09 2023 at 20:18)
 * [Topos Institute news](topic/topic_Topos.20Institute.20news.html) (23 messages, latest: Apr 30 2023 at 18:54)
-* [Introduce yourself!](topic/topic_Introduce.20yourself!.html) (63 messages, latest: Apr 27 2023 at 23:05)
 * [HoTT 2023: Reduced registration](topic/topic_HoTT.202023.3A.20Reduced.20registration.html) (1 message, latest: Apr 27 2023 at 11:43)
 * [Presentation of closed monoidal categories](topic/topic_Presentation.20of.20closed.20monoidal.20categories.html) (19 messages, latest: Apr 17 2023 at 20:48)
 * [Journal suggestions](topic/topic_Journal.20suggestions.html) (3 messages, latest: Mar 24 2023 at 22:31)
-* [Compositionality](topic/topic_Compositionality.html) (61 messages, latest: Mar 21 2023 at 21:56)
 * [HoTT 2023: Deadline Extended](topic/topic_HoTT.202023.3A.20Deadline.20Extended.html) (1 message, latest: Mar 02 2023 at 13:14)
 * [Selling CT to the masses without any maths prerequisites](topic/topic_Selling.20CT.20to.20the.20masses.20without.20any.20maths.20prerequisites.html) (3 messages, latest: Feb 27 2023 at 13:41)
 * [How to deal with the "hydra problem" in research](topic/topic_How.20to.20deal.20with.20the.20.22hydra.20problem.22.20in.20research.html) (12 messages, latest: Feb 26 2023 at 14:29)
@@ -265,4 +266,4 @@ permalink: /stream/229111-general/index.html
 * [Tools for diagrams](topic/topic_Tools.20for.20diagrams.html) (78 messages, latest: Mar 25 2020 at 17:53)
 * [topic demonstration](topic/topic_topic.20demonstration.html) (2 messages, latest: Mar 23 2020 at 16:57)
 
-<hr><p>Last updated: May 17 2023 at 00:33 UTC</p>
+<hr><p>Last updated: May 26 2023 at 00:11 UTC</p>

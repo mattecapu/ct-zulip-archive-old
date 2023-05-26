@@ -9,6 +9,7 @@ permalink: /stream/311521-learning:-id-my-structure/index.html
 
 ### Topics:
 
+* [Not quite a disjoint union](topic/topic_Not.20quite.20a.20disjoint.20union.html) (1 message, latest: May 21 2023 at 06:52)
 * [Formal definition of fuzzy categories.](topic/topic_Formal.20definition.20of.20fuzzy.20categories.2E.html) (12 messages, latest: May 09 2023 at 06:11)
 * [Noncommutative stable ordered valuation algebra?](topic/topic_Noncommutative.20stable.20ordered.20valuation.20algebra.3F.html) (2 messages, latest: May 08 2023 at 05:40)
 * [Quotients of (monoidal) functors](topic/topic_Quotients.20of.20(monoidal).20functors.html) (6 messages, latest: May 02 2023 at 14:24)
@@ -35,4 +36,4 @@ permalink: /stream/311521-learning:-id-my-structure/index.html
 * [stream events](topic/topic_stream.20events.html) (9 messages, latest: Jan 04 2022 at 22:35)
 * [almost a full subcategory?](topic/topic_almost.20a.20full.20subcategory.3F.html) (15 messages, latest: Jan 04 2022 at 16:42)
 
-<hr><p>Last updated: May 17 2023 at 00:33 UTC</p>
+<hr><p>Last updated: May 26 2023 at 00:11 UTC</p>

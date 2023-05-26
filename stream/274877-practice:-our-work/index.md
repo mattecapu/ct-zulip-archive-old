@@ -9,7 +9,8 @@ permalink: /stream/274877-practice:-our-work/index.html
 
 ### Topics:
 
-* [John Baez](topic/topic_John.20Baez.html) (1152 messages, latest: May 14 2023 at 03:16)
+* [John Baez](topic/topic_John.20Baez.html) (1168 messages, latest: May 25 2023 at 15:45)
+* [Steve Huntsman](topic/topic_Steve.20Huntsman.html) (7 messages, latest: May 22 2023 at 14:37)
 * [Simon Willerton](topic/topic_Simon.20Willerton.html) (2 messages, latest: May 06 2023 at 16:21)
 * [David Egolf](topic/topic_David.20Egolf.html) (3 messages, latest: Apr 18 2023 at 20:20)
 * [Jacob S Zelko](topic/topic_Jacob.20S.20Zelko.html) (35 messages, latest: Apr 16 2023 at 03:51)
@@ -28,7 +29,6 @@ permalink: /stream/274877-practice:-our-work/index.html
 * [James Deikun](topic/topic_James.20Deikun.html) (4 messages, latest: Jan 26 2023 at 16:06)
 * [Dusko Pavlovic](topic/topic_Dusko.20Pavlovic.html) (31 messages, latest: Jan 25 2023 at 16:09)
 * [Jason Parker](topic/topic_Jason.20Parker.html) (3 messages, latest: Dec 09 2022 at 18:14)
-* [Steve Huntsman](topic/topic_Steve.20Huntsman.html) (4 messages, latest: Dec 06 2022 at 18:02)
 * [Paolo Perrone](topic/topic_Paolo.20Perrone.html) (3 messages, latest: Nov 19 2022 at 18:02)
 * [Sam Staton](topic/topic_Sam.20Staton.html) (2 messages, latest: Nov 09 2022 at 10:11)
 * [Ivan Di Liberti](topic/topic_Ivan.20Di.20Liberti.html) (18 messages, latest: Nov 08 2022 at 18:21)
@@ -56,4 +56,4 @@ permalink: /stream/274877-practice:-our-work/index.html
 * [Conor Mc Bride](topic/topic_Conor.20Mc.20Bride.html) (60 messages, latest: Apr 08 2021 at 15:15)
 * [thoughts on sharing ideas](topic/topic_thoughts.20on.20sharing.20ideas.html) (20 messages, latest: Jan 31 2021 at 03:05)
 
-<hr><p>Last updated: May 17 2023 at 00:33 UTC</p>
+<hr><p>Last updated: May 26 2023 at 00:11 UTC</p>

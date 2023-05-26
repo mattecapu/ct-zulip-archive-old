@@ -9,9 +9,14 @@ permalink: /stream/229199-learning:-questions/index.html
 
 ### Topics:
 
-* [making a category into an Ab-enriched category](topic/topic_making.20a.20category.20into.20an.20Ab-enriched.20category.html) (18 messages, latest: May 17 2023 at 00:28)
+* [generalizing Wedderburn-Artin](topic/topic_generalizing.20Wedderburn-Artin.html) (63 messages, latest: May 25 2023 at 15:42)
+* [checking my understanding of (co)monoids in monoidal cats?](topic/topic_checking.20my.20understanding.20of.20(co)monoids.20in.20monoidal.20cats.3F.html) (3 messages, latest: May 25 2023 at 11:19)
+* [functors compatible with automorphisms](topic/topic_functors.20compatible.20with.20automorphisms.html) (7 messages, latest: May 23 2023 at 19:31)
+* [how to recover a commutative ring from its modules](topic/topic_how.20to.20recover.20a.20commutative.20ring.20from.20its.20modules.html) (72 messages, latest: May 22 2023 at 22:27)
+* [Terminology for a relationship between arrows](topic/topic_Terminology.20for.20a.20relationship.20between.20arrows.html) (1 message, latest: May 21 2023 at 20:37)
+* [lifting a subset-valued operation](topic/topic_lifting.20a.20subset-valued.20operation.html) (3 messages, latest: May 18 2023 at 02:50)
+* [making a category into an Ab-enriched category](topic/topic_making.20a.20category.20into.20an.20Ab-enriched.20category.html) (25 messages, latest: May 17 2023 at 21:05)
 * [Is binary gluing preserved by "localising" a presheaf?](topic/topic_Is.20binary.20gluing.20preserved.20by.20.22localising.22.20a.20presheaf.3F.html) (15 messages, latest: May 16 2023 at 12:58)
-* [how to recover a commutative ring from its modules](topic/topic_how.20to.20recover.20a.20commutative.20ring.20from.20its.20modules.html) (39 messages, latest: May 15 2023 at 15:54)
 * [F-algebras over Pos](topic/topic_F-algebras.20over.20Pos.html) (6 messages, latest: May 14 2023 at 10:44)
 * [✔ when is restriction of scalars monadic?](topic/topic_.E2.9C.94.20when.20is.20restriction.20of.20scalars.20monadic.3F.html) (1 message, latest: May 14 2023 at 00:39)
 * [✔ (co)limits in the covariant Grothendieck construction](topic/topic_.E2.9C.94.20(co)limits.20in.20the.20covariant.20Grothendieck.20construction.html) (7 messages, latest: May 13 2023 at 23:01)
@@ -888,4 +893,4 @@ permalink: /stream/229199-learning:-questions/index.html
 * [Algebra (Aluffi) exercises](topic/topic_Algebra.20(Aluffi).20exercises.html) (55 messages, latest: Mar 27 2020 at 23:38)
 * [What is category theory about?](topic/topic_What.20is.20category.20theory.20about.3F.html) (16 messages, latest: Mar 26 2020 at 16:03)
 
-<hr><p>Last updated: May 17 2023 at 00:33 UTC</p>
+<hr><p>Last updated: May 26 2023 at 00:11 UTC</p>

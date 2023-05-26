@@ -1,0 +1,140 @@
+[
+    {
+        "content": "<p>When you read the definition of bicategory, it's not too hard to learn how to generalize to a double category --- different data, a span of categories, but all the same coherences: a pseudomonad. </p>\n<p>In the same way, one can read the definition of tricategory and see how to generalize to a triple category --- but I'm having trouble finding a reference. All the Grandis/Pare work is 2-weak, rather than 3-weak. Does anyone know if general triple categories have been defined?</p>",
+        "id": 360314289,
+        "sender_full_name": "Christian Williams",
+        "timestamp": 1684771124
+    },
+    {
+        "content": "<p>It seems like there isn't a reference, which is surprising. Whenever I heard of triple categories in the past, somebody would say \"oh yeah, Grandis/Pare did that.\" But their definition doesn't include tricategories; it's not the actual general concept.</p>",
+        "id": 360321083,
+        "sender_full_name": "Christian Williams",
+        "timestamp": 1684772862
+    },
+    {
+        "content": "<p>The third sentence of this <a href=\"http://www.tac.mta.ca/tac/volumes/30/38/30-38abs.html\">paper</a> attributes the notion of <a href=\"https://ncatlab.org/nlab/show/triple%20category\">[[triple category]]</a> to Ehresmann.</p>",
+        "id": 360328612,
+        "sender_full_name": "Bryce Clarke",
+        "timestamp": 1684774772
+    },
+    {
+        "content": "<p>yes, but that's the strict version, right? I'm looking for the general notion, which includes tricategories.</p>",
+        "id": 360332254,
+        "sender_full_name": "Christian Williams",
+        "timestamp": 1684775671
+    },
+    {
+        "content": "<p>I'm pretty sure Ehresmann recursively defined strict n-tuple categories for all n, but did not study weak double categories, weak triple categories, etc.</p>",
+        "id": 360360304,
+        "sender_full_name": "John Baez",
+        "timestamp": 1684784196
+    },
+    {
+        "content": "<p>If anyone has defined fully general weak triple categories, I don't know about it.</p>",
+        "id": 360360795,
+        "sender_full_name": "John Baez",
+        "timestamp": 1684784359
+    },
+    {
+        "content": "<p>Here is an approach to use <em>strict</em> n-tuple categories to model weak n-categories: <a href=\"https://ncatlab.org/nlab/show/weakly+globular+n-fold+category\">weakly globular n-fold category</a>.  But I don't think this is what Christian wants!</p>",
+        "id": 360360982,
+        "sender_full_name": "John Baez",
+        "timestamp": 1684784413
+    },
+    {
+        "content": "<p>There's also Christoph Dorn's thesis on associative n-categories. I don't know it well but if I understand correctly it contains a definition of weak triple category.</p>",
+        "id": 360366662,
+        "sender_full_name": "Kevin Arlin",
+        "timestamp": 1684786534
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"275899\">Christian Williams</span> <a href=\"#narrow/stream/229136-theory.3A-category-theory/topic/ref.20request.3A.20triple.20categories.20.2F.203-monads/near/360332254\">said</a>:</p>\n<blockquote>\n<p>yes, but that's the strict version, right? I'm looking for the general notion, which includes tricategories.</p>\n</blockquote>\n<p>In Grandis book about Higher dimensional categories he gives the definition of weak and lax multiple categories which afaiu includes tricategories (which are transversally discrete weak triple categories)</p>",
+        "id": 360372460,
+        "sender_full_name": "Matteo Capucci (he/him)",
+        "timestamp": 1684788715
+    },
+    {
+        "content": "<p>Section 6.5</p>",
+        "id": 360372465,
+        "sender_full_name": "Matteo Capucci (he/him)",
+        "timestamp": 1684788719
+    },
+    {
+        "content": "<p>Looking further at the paper <a href=\"http://cahierstgdc.com/wp-content/uploads/2017/11/CTGDC_57_2_Grandis-Pare-I.pdf\">An introduction to multiple categories </a>, Grandis and Paré attribute the weak and lax notions of triple category to their two papers on intercategories.</p>",
+        "id": 360373420,
+        "sender_full_name": "Bryce Clarke",
+        "timestamp": 1684789087
+    },
+    {
+        "content": "<p>Dorn's thesis looks interesting; I'll look into it, thanks.</p>",
+        "id": 360376241,
+        "sender_full_name": "Christian Williams",
+        "timestamp": 1684789961
+    },
+    {
+        "content": "<p>yes, so look at <a href=\"/user_uploads/21317/SeaUpJ_hA6hM_wznef3MAn3z/Marco-Grandis-Higher-Dimensional-Categories.pdf\">Marco-Grandis-Higher-Dimensional-Categories.pdf</a>, section 6.4.3: <br>\n<a href=\"/user_uploads/21317/X_VGActARQShYfG3IjJonUGX/pent-tri.png\">pent-tri.png</a></p>\n<div class=\"message_inline_image\"><a href=\"/user_uploads/21317/X_VGActARQShYfG3IjJonUGX/pent-tri.png\" title=\"pent-tri.png\"><img src=\"/user_uploads/21317/X_VGActARQShYfG3IjJonUGX/pent-tri.png\"></a></div>",
+        "id": 360377526,
+        "sender_full_name": "Christian Williams",
+        "timestamp": 1684790356
+    },
+    {
+        "content": "<p>when Grandis/Pare say \"weak\", they mean <strong>2-weak</strong>: they have associator and unitor 2-<em>isomorphisms</em>, rather than equivalences, which satisfy a <em>strict</em> pentagon identity and triangle identity.</p>",
+        "id": 360377774,
+        "sender_full_name": "Christian Williams",
+        "timestamp": 1684790434
+    },
+    {
+        "content": "<p>In particular, the unitors being isomorphisms rather than equivalences is where it no longer provides an adequate framework for double category theory: double profunctors have a composition which is only unital up to equivalence, and the component isomorphisms of that equivalence are precisely the \"coYoneda\" isomorphisms, e.g. for any profunctor <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>R</mi><mo>:</mo><mi>A</mi><mtext> </mtext><mi mathvariant=\"normal\">∣</mi><mtext> </mtext><mi>B</mi></mrow><annotation encoding=\"application/x-tex\">R:A \\,\\vert\\, B</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.00773em;\">R</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">:</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord mathnormal\">A</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord\">∣</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.05017em;\">B</span></span></span></span> we have <br>\n<span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mo stretchy=\"false\">(</mo><mo>−</mo><mo separator=\"true\">,</mo><mo>−</mo><mo stretchy=\"false\">)</mo><mo>∘</mo><mi>R</mi><mtext>  </mtext><mo>≅</mo><mtext>  </mtext><mi>R</mi><mtext>  </mtext><mo>≅</mo><mtext>  </mtext><mi>R</mi><mo>∘</mo><mi>B</mi><mo stretchy=\"false\">(</mo><mo>−</mo><mo separator=\"true\">,</mo><mo>−</mo><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">A(-,-)\\circ R \\;\\cong\\; R \\;\\cong\\; R\\circ B(-,-)</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord mathnormal\">A</span><span class=\"mopen\">(</span><span class=\"mord\">−</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord\">−</span><span class=\"mclose\">)</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span><span class=\"mbin\">∘</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.00773em;\">R</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">≅</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.00773em;\">R</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">≅</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.00773em;\">R</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span><span class=\"mbin\">∘</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.05017em;\">B</span><span class=\"mopen\">(</span><span class=\"mord\">−</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord\">−</span><span class=\"mclose\">)</span></span></span></span>.</p>",
+        "id": 360378592,
+        "sender_full_name": "Christian Williams",
+        "timestamp": 1684790669
+    },
+    {
+        "content": "<p>So the Yoneda principle, in the foundation of CT, is in the <em>equivalences</em> of a 3-dimensional kind of composition.</p>",
+        "id": 360379010,
+        "sender_full_name": "Christian Williams",
+        "timestamp": 1684790833
+    },
+    {
+        "content": "<p>That's why it's vital to have a clear and powerful visual language, so we can actually understand this stuff. </p>\n<p>The definition of tricategory has been \"known\" for decades --- meaning there are a few dozen people alive who understand the coherences of a few 4-morphisms: <br>\n<a href=\"/user_uploads/21317/MK0sX_JwkG-skXqlivzttaus/triangulator.png\">triangulator.png</a></p>\n<div class=\"message_inline_image\"><a href=\"/user_uploads/21317/MK0sX_JwkG-skXqlivzttaus/triangulator.png\" title=\"triangulator.png\"><img src=\"/user_uploads/21317/MK0sX_JwkG-skXqlivzttaus/triangulator.png\"></a></div>",
+        "id": 360380240,
+        "sender_full_name": "Christian Williams",
+        "timestamp": 1684791346
+    },
+    {
+        "content": "<p>yet in string diagrams, the above \"triangulator\" modification is this invertible \"rewrite rule\": <br>\n<a href=\"/user_uploads/21317/W-8Hf4cj8SnhyF0vDqPzooDZ/tri0.png\">tri0.png</a> <br>\n<a href=\"/user_uploads/21317/BHMrgrHpd-cuZrL9B2z_RK-h/tri1.png\">tri1.png</a></p>\n<div class=\"message_inline_image\"><a href=\"/user_uploads/21317/W-8Hf4cj8SnhyF0vDqPzooDZ/tri0.png\" title=\"tri0.png\"><img src=\"/user_uploads/21317/W-8Hf4cj8SnhyF0vDqPzooDZ/tri0.png\"></a></div><div class=\"message_inline_image\"><a href=\"/user_uploads/21317/BHMrgrHpd-cuZrL9B2z_RK-h/tri1.png\" title=\"tri1.png\"><img src=\"/user_uploads/21317/BHMrgrHpd-cuZrL9B2z_RK-h/tri1.png\"></a></div>",
+        "id": 360380655,
+        "sender_full_name": "Christian Williams",
+        "timestamp": 1684791539
+    },
+    {
+        "content": "<p>it satisfies a simple equation, where sticking it on either side of an associator has a well-defined reduction. <br>\n(will draw it nicely sometime soon)</p>",
+        "id": 360380857,
+        "sender_full_name": "Christian Williams",
+        "timestamp": 1684791607
+    },
+    {
+        "content": "<p>It could be worth emailing Grandis and Paré to ask whether the fully weak version appears in the literature; if it does, I imagine they'd know.</p>",
+        "id": 360380945,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1684791658
+    },
+    {
+        "content": "<p>that's all it is; and drawing it in string diagrams gives the general notion of a 3-monad, of which the canonical case is a triple category.</p>",
+        "id": 360381028,
+        "sender_full_name": "Christian Williams",
+        "timestamp": 1684791685
+    },
+    {
+        "content": "<p>I really believe anyone can grasp these ideas, intuitively and practically, with the right language.</p>",
+        "id": 360382678,
+        "sender_full_name": "Christian Williams",
+        "timestamp": 1684792460
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"275899\">Christian Williams</span> <a href=\"#narrow/stream/229136-theory.3A-category-theory/topic/ref.20request.3A.20triple.20categories.20.2F.203-monads/near/360377774\">said</a>:</p>\n<blockquote>\n<p>when Grandis/Pare say \"weak\", they mean <strong>2-weak</strong>: they have associator and unitor 2-<em>isomorphisms</em>, rather than equivalences, which satisfy a <em>strict</em> pentagon identity and triangle identity.</p>\n</blockquote>\n<p>I see!</p>",
+        "id": 360706820,
+        "sender_full_name": "Matteo Capucci (he/him)",
+        "timestamp": 1684912197
+    }
+]

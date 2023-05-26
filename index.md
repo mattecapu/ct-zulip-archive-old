@@ -8,23 +8,23 @@ permalink: /index.html
 
 ## Streams:
 
-* [learning: questions](stream/229199-learning:-questions/index.html) (878 topics)
+* [learning: questions](stream/229199-learning:-questions/index.html) (883 topics)
 
-* [theory: category theory](stream/229136-theory:-category-theory/index.html) (399 topics)
+* [theory: category theory](stream/229136-theory:-category-theory/index.html) (401 topics)
 
-* [general](stream/229111-general/index.html) (255 topics)
+* [general](stream/229111-general/index.html) (256 topics)
 
 * [general: events](stream/229141-general:-events/index.html) (172 topics)
 
 * [practice: applied ct](stream/229156-practice:-applied-ct/index.html) (145 topics)
 
-* [general: mathematics](stream/266967-general:-mathematics/index.html) (89 topics)
+* [general: mathematics](stream/266967-general:-mathematics/index.html) (92 topics)
 
 * [theory: topos theory](stream/230087-theory:-topos-theory/index.html) (82 topics)
 
-* [theory: algebraic topology & homological algebra](stream/241590-theory:-algebraic-topology-&-homological-algebra/index.html) (73 topics)
+* [general: positions](stream/245502-general:-positions/index.html) (74 topics)
 
-* [general: positions](stream/245502-general:-positions/index.html) (72 topics)
+* [theory: algebraic topology & homological algebra](stream/241590-theory:-algebraic-topology-&-homological-algebra/index.html) (73 topics)
 
 * [seminar: Topos Colloquium](stream/269484-seminar:-Topos-Colloquium/index.html) (64 topics)
 
@@ -32,9 +32,9 @@ permalink: /index.html
 
 * [ACT 2020](stream/243068-ACT-2020/index.html) (61 topics)
 
-* [theory: logic](stream/233104-theory:-logic/index.html) (60 topics)
+* [practice: our papers](stream/258900-practice:-our-papers/index.html) (61 topics)
 
-* [practice: our papers](stream/258900-practice:-our-papers/index.html) (58 topics)
+* [theory: logic](stream/233104-theory:-logic/index.html) (60 topics)
 
 * [practice: thermodynamics](stream/306433-practice:-thermodynamics/index.html) (53 topics)
 
@@ -56,7 +56,7 @@ permalink: /index.html
 
 * [learning: recommendations](stream/232161-learning:-recommendations/index.html) (29 topics)
 
-* [learning: id my structure](stream/311521-learning:-id-my-structure/index.html) (25 topics)
+* [learning: id my structure](stream/311521-learning:-id-my-structure/index.html) (26 topics)
 
 * [practice: software](stream/229125-practice:-software/index.html) (25 topics)
 
@@ -64,9 +64,9 @@ permalink: /index.html
 
 * [workshop: Polynomial Functors @ Topos](stream/282140-workshop:-Polynomial-Functors-@-Topos/index.html) (22 topics)
 
-* [theory: physics](stream/251538-theory:-physics/index.html) (19 topics)
+* [workshop: Categories for AI](stream/347879-workshop:-Categories-for-AI/index.html) (20 topics)
 
-* [workshop: Categories for AI](stream/347879-workshop:-Categories-for-AI/index.html) (19 topics)
+* [theory: physics](stream/251538-theory:-physics/index.html) (19 topics)
 
 * [conference: ACT22](stream/330541-conference:-ACT22/index.html) (18 topics)
 
@@ -90,7 +90,7 @@ permalink: /index.html
 
 * [general: co/appreciation](stream/271602-general:-co/appreciation/index.html) (13 topics)
 
-* [learning: reading groups](stream/232160-learning:-reading-groups/index.html) (12 topics)
+* [learning: reading groups](stream/232160-learning:-reading-groups/index.html) (13 topics)
 
 * [practice: translation](stream/260000-practice:-translation/index.html) (11 topics)
 
@@ -108,15 +108,17 @@ permalink: /index.html
 
 * [theory: analysis](stream/281848-theory:-analysis/index.html) (9 topics)
 
+* [general: terminology & notation](stream/348484-general:-terminology-&-notation/index.html) (8 topics)
+
 * [languages: italiano/Italian](stream/231111-languages:-italiano/Italian/index.html) (8 topics)
 
 * [theory: monoids](stream/231815-theory:-monoids/index.html) (8 topics)
 
-* [general: terminology & notation](stream/348484-general:-terminology-&-notation/index.html) (7 topics)
-
 * [learning: statistics reading group](stream/245528-learning:-statistics-reading-group/index.html) (7 topics)
 
 * [seminar: EM-cats](stream/298571-seminar:-EM-cats/index.html) (7 topics)
+
+* [languages: portugues](stream/303660-languages:-portugues/index.html) (6 topics)
 
 * [semiotics and semiosis](stream/229179-semiotics-and-semiosis/index.html) (6 topics)
 
@@ -125,8 +127,6 @@ permalink: /index.html
 * [ACT@UMD seminar](stream/229967-ACT@UMD-seminar/index.html) (5 topics)
 
 * [languages: Deutsch/German](stream/231144-languages:-Deutsch/German/index.html) (5 topics)
-
-* [languages: portugues](stream/303660-languages:-portugues/index.html) (5 topics)
 
 * [general: terminology](stream/348484-general:-terminology/index.html) (4 topics)
 
@@ -180,4 +180,4 @@ permalink: /index.html
 
 * [theory: alternate presentations](stream/233122-theory:-alternate-presentations/index.html) (1 topic)
 
-<hr><p>Last updated: May 17 2023 at 00:33 UTC</p>
+<hr><p>Last updated: May 26 2023 at 00:11 UTC</p>
