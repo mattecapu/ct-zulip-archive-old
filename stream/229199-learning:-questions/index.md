@@ -9,8 +9,9 @@ permalink: /stream/229199-learning:-questions/index.html
 
 ### Topics:
 
-* [Azumaya algebras](topic/topic_Azumaya.20algebras.html) (49 messages, latest: May 27 2023 at 00:11)
-* [equivalent categories and equivalence relations](topic/topic_equivalent.20categories.20and.20equivalence.20relations.html) (18 messages, latest: May 26 2023 at 23:56)
+* [Azumaya algebras](topic/topic_Azumaya.20algebras.html) (132 messages, latest: May 28 2023 at 00:11)
+* [Horns filling up to some degree](topic/topic_Horns.20filling.20up.20to.20some.20degree.html) (3 messages, latest: May 28 2023 at 00:08)
+* [equivalent categories and equivalence relations](topic/topic_equivalent.20categories.20and.20equivalence.20relations.html) (19 messages, latest: May 27 2023 at 10:51)
 * [generalizing Wedderburn-Artin](topic/topic_generalizing.20Wedderburn-Artin.html) (63 messages, latest: May 25 2023 at 15:42)
 * [checking my understanding of (co)monoids in monoidal cats?](topic/topic_checking.20my.20understanding.20of.20(co)monoids.20in.20monoidal.20cats.3F.html) (3 messages, latest: May 25 2023 at 11:19)
 * [functors compatible with automorphisms](topic/topic_functors.20compatible.20with.20automorphisms.html) (7 messages, latest: May 23 2023 at 19:31)
@@ -895,4 +896,4 @@ permalink: /stream/229199-learning:-questions/index.html
 * [Algebra (Aluffi) exercises](topic/topic_Algebra.20(Aluffi).20exercises.html) (55 messages, latest: Mar 27 2020 at 23:38)
 * [What is category theory about?](topic/topic_What.20is.20category.20theory.20about.3F.html) (16 messages, latest: Mar 26 2020 at 16:03)
 
-<hr><p>Last updated: May 27 2023 at 00:32 UTC</p>
+<hr><p>Last updated: May 28 2023 at 00:11 UTC</p>
