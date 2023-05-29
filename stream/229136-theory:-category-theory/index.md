@@ -9,7 +9,7 @@ permalink: /stream/229136-theory:-category-theory/index.html
 
 ### Topics:
 
-* [The free F-algebra is a T-algebra](topic/topic_The.20free.20F-algebra.20is.20a.20T-algebra.html) (2 messages, latest: May 28 2023 at 00:20)
+* [The free F-algebra is a T-algebra](topic/topic_The.20free.20F-algebra.20is.20a.20T-algebra.html) (5 messages, latest: May 28 2023 at 03:03)
 * [Splitting an idempotent to quotient a monad](topic/topic_Splitting.20an.20idempotent.20to.20quotient.20a.20monad.html) (130 messages, latest: May 25 2023 at 13:06)
 * [ref request: triple categories / 3-monads](topic/topic_ref.20request.3A.20triple.20categories.20.2F.203-monads.html) (23 messages, latest: May 24 2023 at 07:09)
 * [Ref request: monad for boolean algebras](topic/topic_Ref.20request.3A.20monad.20for.20boolean.20algebras.html) (63 messages, latest: May 23 2023 at 03:18)
@@ -412,4 +412,4 @@ permalink: /stream/229136-theory:-category-theory/index.html
 * [diagrams for application](topic/topic_diagrams.20for.20application.html) (13 messages, latest: Mar 24 2020 at 06:19)
 * [universal constructions](topic/topic_universal.20constructions.html) (8 messages, latest: Mar 23 2020 at 21:06)
 
-<hr><p>Last updated: May 28 2023 at 00:31 UTC</p>
+<hr><p>Last updated: May 29 2023 at 00:10 UTC</p>

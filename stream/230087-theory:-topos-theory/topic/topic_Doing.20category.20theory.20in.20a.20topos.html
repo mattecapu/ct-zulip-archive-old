@@ -75,6 +75,45 @@ permalink: /stream/230087-theory:-topos-theory/topic/topic_Doing.20category.20th
 
 
 
+<a name="361781064"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/230087-theory%3A%20topos%20theory/topic/Doing%20category%20theory%20in%20a%20topos/near/361781064" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Patrick Nicodemus <a href="https://mattecapu.github.io/ct-zulip-archive/stream/230087-theory:-topos-theory/topic/topic_Doing.20category.20theory.20in.20a.20topos.html#361781064">(May 28 2023 at 15:57)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="276777">Mike Shulman</span> <a href="#narrow/stream/230087-theory.3A-topos-theory/topic/Doing.20category.20theory.20in.20a.20topos/near/356578372">said</a>:</p>
+<blockquote>
+<p>However, if you want something more like NBG or ZFC+U, then I think the way to go is what I sketched in <a href="http://home.sandiego.edu/~shulman/papers/cambridge-stacksem.pdf">this talk</a>.  I haven't managed to write that up formally yet.</p>
+</blockquote>
+<p>I am interested (in this thread at least) in formalizing category theory in Isabelle/HOL, which is essentially a classical Boolean topos with some additional features like type polymorphism I'm not sure how to describe well categorically. On the other hand it has some painful features which disqualify it from being a topos. There are no empty types and subset comprehension is restricted to predicates which you can prove hold at at least one point.</p>
+<p>I think the most likely bet here is using the notion of universes in a topos. <a href="https://ncatlab.org/nlab/show/universe+in+a+topos">https://ncatlab.org/nlab/show/universe+in+a+topos</a><br>
+ What is the current status of developing large scale mathematics (like category theory) in a topos with a universe? Can this be done in a way that it integrates well with normal topos theory without a universe, or would most of the work have to be done with terms of universe type?</p>
+<p>I think you would want to work, practically speaking, in the family fibration associated to the universe.</p>
+
+
+
+<a name="361788851"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/230087-theory%3A%20topos%20theory/topic/Doing%20category%20theory%20in%20a%20topos/near/361788851" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/230087-theory:-topos-theory/topic/topic_Doing.20category.20theory.20in.20a.20topos.html#361788851">(May 28 2023 at 16:49)</a>:</h4>
+<p>I don't know whether anything like that has been done formally.  It <em>should</em> be straightforward, especially if you work in an internal dependent type theory, but I don't know if it's been written down.</p>
+
+
+
+<a name="361789415"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/230087-theory%3A%20topos%20theory/topic/Doing%20category%20theory%20in%20a%20topos/near/361789415" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Ryan Wisnesky <a href="https://mattecapu.github.io/ct-zulip-archive/stream/230087-theory:-topos-theory/topic/topic_Doing.20category.20theory.20in.20a.20topos.html#361789415">(May 28 2023 at 16:52)</a>:</h4>
+<p>One precise way to do HOL in CoC is here: <a href="https://www.researchgate.net/publication/2641362_The_Calculus_of_Constructions_and_Higher_Order_Logic">https://www.researchgate.net/publication/2641362_The_Calculus_of_Constructions_and_Higher_Order_Logic</a></p>
+
+
+
+<a name="361794850"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/230087-theory%3A%20topos%20theory/topic/Doing%20category%20theory%20in%20a%20topos/near/361794850" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Patrick Nicodemus <a href="https://mattecapu.github.io/ct-zulip-archive/stream/230087-theory:-topos-theory/topic/topic_Doing.20category.20theory.20in.20a.20topos.html#361794850">(May 28 2023 at 17:28)</a>:</h4>
+<p>I think this is an important practical question. Because HOL is a simpler logic than CoC, automation for HOL will likely always be 10-15 years ahead of that of CoC, it seems doubtful to me that the gap will ever close - I am not saying CoC will never have good automation, I'm speaking in purely relative terms. Most researchers at the intersection of formal methods and category theory have been interested in MLTT/CoC but if real, genuine category theory can be done in a faithful elegant way inside HOL in such a way that it's actually applicable to prove general results of topology and algebra, I think it is worth doing. Essentially I am saying, you have a topos, you can assume whatever axioms you want <em>in the internal logic</em>, universes, etc. (but not small cocompleteness!) Somebody asks you "Can you state and prove that the category of small topological spaces is small-cocomplete?" Do we have a good answer? Kevin Buzzard has speculated that the answer is no. Schemes and some stuff on infinity categories have recently been formalized in HOL but I'm not yet convinced that those definitions are "right" in the sense that they actually allow interesting mathematics to accumulate on top of them, i.e. you can hack together a reasonable definition of a presheaf in a weak logic but if you can't state and prove the Yoneda lemma, is there really a point?<br>
+There's also a substantial amount of category theory in Isabelle/HOL formalized inside a type which is axiomatized to satisfy the ZFC axioms, which is definitely expressive enough to do all your math, but you are not really taking advantage of the HOL at that point. How can we do large-scale category theory in a way which actually takes advantage of HOL?</p>
+<p>I wonder how practical it would be (for formalizing) to work in an internal language of dependent type theory inside HOL.</p>
+
+
+
+<a name="361801899"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/230087-theory%3A%20topos%20theory/topic/Doing%20category%20theory%20in%20a%20topos/near/361801899" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/230087-theory:-topos-theory/topic/topic_Doing.20category.20theory.20in.20a.20topos.html#361801899">(May 28 2023 at 18:22)</a>:</h4>
+<p>I'm doubtful that there is a very <em>elegant</em> way to do serious category theory inside HOL, due to the lack of a congenial way to represent families of types.  However, it should certainly be <em>possible</em>.  What is Kevin worried about?  Obviously one needs to assume that the universe is closed under small products and coproducts, but given that there shouldn't be any problem proving small-(co)completeness of small topological spaces or anything similar.</p>
+
+
+
 {% endraw %}
 
-<hr><p>Last updated: May 28 2023 at 00:31 UTC</p>
+<hr><p>Last updated: May 29 2023 at 00:10 UTC</p>
