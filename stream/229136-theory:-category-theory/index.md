@@ -9,6 +9,7 @@ permalink: /stream/229136-theory:-category-theory/index.html
 
 ### Topics:
 
+* [Comonadicity of Presheaf Categories](topic/topic_Comonadicity.20of.20Presheaf.20Categories.html) (10 messages, latest: May 30 2023 at 21:55)
 * [Category of elements vs Grothendieck construction](topic/topic_Category.20of.20elements.20vs.20Grothendieck.20construction.html) (4 messages, latest: May 29 2023 at 17:04)
 * [The free F-algebra is a T-algebra](topic/topic_The.20free.20F-algebra.20is.20a.20T-algebra.html) (5 messages, latest: May 28 2023 at 03:03)
 * [Splitting an idempotent to quotient a monad](topic/topic_Splitting.20an.20idempotent.20to.20quotient.20a.20monad.html) (130 messages, latest: May 25 2023 at 13:06)
@@ -16,7 +17,6 @@ permalink: /stream/229136-theory:-category-theory/index.html
 * [Ref request: monad for boolean algebras](topic/topic_Ref.20request.3A.20monad.20for.20boolean.20algebras.html) (63 messages, latest: May 23 2023 at 03:18)
 * [introduction to categories as algebraic gadgets](topic/topic_introduction.20to.20categories.20as.20algebraic.20gadgets.html) (74 messages, latest: May 21 2023 at 15:58)
 * [Extending copresheaves along functors](topic/topic_Extending.20copresheaves.20along.20functors.html) (5 messages, latest: May 21 2023 at 08:00)
-* [Comonadicity of Presheaf Categories](topic/topic_Comonadicity.20of.20Presheaf.20Categories.html) (9 messages, latest: May 17 2023 at 11:21)
 * [Cumulants and Joyal Combinatorial Species](topic/topic_Cumulants.20and.20Joyal.20Combinatorial.20Species.html) (2 messages, latest: May 15 2023 at 15:37)
 * [Linear ultrafilters?](topic/topic_Linear.20ultrafilters.3F.html) (3 messages, latest: May 15 2023 at 15:14)
 * [unifying *-autonomous and traced categories](topic/topic_unifying.20*-autonomous.20and.20traced.20categories.html) (9 messages, latest: May 15 2023 at 09:15)
@@ -413,4 +413,4 @@ permalink: /stream/229136-theory:-category-theory/index.html
 * [diagrams for application](topic/topic_diagrams.20for.20application.html) (13 messages, latest: Mar 24 2020 at 06:19)
 * [universal constructions](topic/topic_universal.20constructions.html) (8 messages, latest: Mar 23 2020 at 21:06)
 
-<hr><p>Last updated: May 30 2023 at 00:31 UTC</p>
+<hr><p>Last updated: May 31 2023 at 00:10 UTC</p>

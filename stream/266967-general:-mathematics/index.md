@@ -9,9 +9,9 @@ permalink: /stream/266967-general:-mathematics/index.html
 
 ### Topics:
 
-* [Galois and his fatal duel](topic/topic_Galois.20and.20his.20fatal.20duel.html) (4 messages, latest: May 30 2023 at 00:11)
+* [When to contact an author?](topic/topic_When.20to.20contact.20an.20author.3F.html) (14 messages, latest: May 30 2023 at 19:21)
+* [Galois and his fatal duel](topic/topic_Galois.20and.20his.20fatal.20duel.html) (5 messages, latest: May 30 2023 at 19:18)
 * [How to publish incremental progress on larger work](topic/topic_How.20to.20publish.20incremental.20progress.20on.20larger.20work.html) (15 messages, latest: May 30 2023 at 00:08)
-* [When to contact an author?](topic/topic_When.20to.20contact.20an.20author.3F.html) (13 messages, latest: May 29 2023 at 20:49)
 * [book on Brauer theory](topic/topic_book.20on.20Brauer.20theory.html) (2 messages, latest: May 28 2023 at 17:16)
 * [Analyzing Logic of Statements](topic/topic_Analyzing.20Logic.20of.20Statements.html) (8 messages, latest: May 25 2023 at 22:28)
 * [Simplifying Set Expressions](topic/topic_Simplifying.20Set.20Expressions.html) (20 messages, latest: May 25 2023 at 17:52)
@@ -106,4 +106,4 @@ permalink: /stream/266967-general:-mathematics/index.html
 * [the 600-cell](topic/topic_the.20600-cell.html) (5 messages, latest: Dec 01 2020 at 16:35)
 * [hermitian matrix over normed division algebra](topic/topic_hermitian.20matrix.20over.20normed.20division.20algebra.html) (8 messages, latest: Sep 28 2020 at 21:19)
 
-<hr><p>Last updated: May 30 2023 at 00:31 UTC</p>
+<hr><p>Last updated: May 31 2023 at 00:10 UTC</p>
