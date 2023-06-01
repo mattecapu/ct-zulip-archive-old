@@ -9,8 +9,8 @@ permalink: /stream/229199-learning:-questions/index.html
 
 ### Topics:
 
+* [Azumaya algebras](topic/topic_Azumaya.20algebras.html) (228 messages, latest: Jun 01 2023 at 00:33)
 * [✔ Set-toposes are cocomplete?](topic/topic_.E2.9C.94.20Set-toposes.20are.20cocomplete.3F.html) (13 messages, latest: May 31 2023 at 23:44)
-* [Azumaya algebras](topic/topic_Azumaya.20algebras.html) (222 messages, latest: May 31 2023 at 11:20)
 * [equivalent categories and equivalence relations](topic/topic_equivalent.20categories.20and.20equivalence.20relations.html) (23 messages, latest: May 28 2023 at 21:09)
 * [Horns filling up to some degree](topic/topic_Horns.20filling.20up.20to.20some.20degree.html) (6 messages, latest: May 28 2023 at 15:22)
 * [how to argue quotient maps form a natural transformation?](topic/topic_how.20to.20argue.20quotient.20maps.20form.20a.20natural.20transformation.3F.html) (2 messages, latest: May 28 2023 at 04:58)
@@ -898,4 +898,4 @@ permalink: /stream/229199-learning:-questions/index.html
 * [Algebra (Aluffi) exercises](topic/topic_Algebra.20(Aluffi).20exercises.html) (55 messages, latest: Mar 27 2020 at 23:38)
 * [What is category theory about?](topic/topic_What.20is.20category.20theory.20about.3F.html) (16 messages, latest: Mar 26 2020 at 16:03)
 
-<hr><p>Last updated: Jun 01 2023 at 00:11 UTC</p>
+<hr><p>Last updated: Jun 01 2023 at 00:39 UTC</p>
