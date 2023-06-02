@@ -8,7 +8,7 @@ permalink: /index.html
 
 ## Streams:
 
-* [learning: questions](stream/229199-learning:-questions/index.html) (888 topics)
+* [learning: questions](stream/229199-learning:-questions/index.html) (889 topics)
 
 * [theory: category theory](stream/229136-theory:-category-theory/index.html) (403 topics)
 
@@ -32,9 +32,9 @@ permalink: /index.html
 
 * [conference: ACT20](stream/243068-conference:-ACT20/index.html) (62 topics)
 
-* [ACT 2020](stream/243068-ACT-2020/index.html) (61 topics)
+* [practice: our papers](stream/258900-practice:-our-papers/index.html) (62 topics)
 
-* [practice: our papers](stream/258900-practice:-our-papers/index.html) (61 topics)
+* [ACT 2020](stream/243068-ACT-2020/index.html) (61 topics)
 
 * [theory: logic](stream/233104-theory:-logic/index.html) (60 topics)
 
@@ -182,4 +182,4 @@ permalink: /index.html
 
 * [theory: alternate presentations](stream/233122-theory:-alternate-presentations/index.html) (1 topic)
 
-<hr><p>Last updated: Jun 01 2023 at 00:39 UTC</p>
+<hr><p>Last updated: Jun 02 2023 at 00:10 UTC</p>

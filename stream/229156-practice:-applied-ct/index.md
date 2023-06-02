@@ -9,7 +9,7 @@ permalink: /stream/229156-practice:-applied-ct/index.html
 
 ### Topics:
 
-* [Graphical language for closed monoidal categories](topic/topic_Graphical.20language.20for.20closed.20monoidal.20categories.html) (33 messages, latest: May 16 2023 at 17:58)
+* [Graphical language for closed monoidal categories](topic/topic_Graphical.20language.20for.20closed.20monoidal.20categories.html) (34 messages, latest: Jun 01 2023 at 14:44)
 * [how good is Poly for dynamical systems, really?](topic/topic_how.20good.20is.20Poly.20for.20dynamical.20systems.2C.20really.3F.html) (43 messages, latest: May 16 2023 at 15:07)
 * [Cats applied to political science](topic/topic_Cats.20applied.20to.20political.20science.html) (9 messages, latest: May 04 2023 at 18:59)
 * [nashator & friends](topic/topic_nashator.20.26.20friends.html) (16 messages, latest: May 04 2023 at 18:54)
@@ -155,4 +155,4 @@ permalink: /stream/229156-practice:-applied-ct/index.html
 * [AACT2020](topic/topic_AACT2020.html) (1 message, latest: Mar 24 2020 at 00:56)
 * [welcome](topic/topic_welcome.html) (15 messages, latest: Mar 24 2020 at 00:03)
 
-<hr><p>Last updated: Jun 01 2023 at 00:39 UTC</p>
+<hr><p>Last updated: Jun 02 2023 at 00:10 UTC</p>
