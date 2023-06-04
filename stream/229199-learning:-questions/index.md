@@ -9,6 +9,7 @@ permalink: /stream/229199-learning:-questions/index.html
 
 ### Topics:
 
+* [f(x)=x, f'=0](topic/topic_f(x).3Dx.2C.20f'.3D0.html) (20 messages, latest: Jun 03 2023 at 08:18)
 * [when are "derived" operations preserved by a functor?](topic/topic_when.20are.20.22derived.22.20operations.20preserved.20by.20a.20functor.3F.html) (22 messages, latest: Jun 02 2023 at 21:11)
 * [Azumaya algebras](topic/topic_Azumaya.20algebras.html) (323 messages, latest: Jun 02 2023 at 19:15)
 * [✔ Set-toposes are cocomplete?](topic/topic_.E2.9C.94.20Set-toposes.20are.20cocomplete.3F.html) (15 messages, latest: Jun 02 2023 at 10:07)
@@ -91,7 +92,6 @@ permalink: /stream/229199-learning:-questions/index.html
 * [van kampen](topic/topic_van.20kampen.html) (1 message, latest: Feb 08 2023 at 22:54)
 * [Lobatto quadrature formula from Gauss quadrature](topic/topic_Lobatto.20quadrature.20formula.20from.20Gauss.20quadrature.html) (1 message, latest: Feb 08 2023 at 18:37)
 * [Internal rigs in rig-categories?](topic/topic_Internal.20rigs.20in.20rig-categories.3F.html) (16 messages, latest: Feb 06 2023 at 16:45)
-* [f(x)=x, f'=0](topic/topic_f(x).3Dx.2C.20f'.3D0.html) (19 messages, latest: Feb 01 2023 at 23:21)
 * [products and coproducts with string diagrams](topic/topic_products.20and.20coproducts.20with.20string.20diagrams.html) (13 messages, latest: Jan 31 2023 at 15:19)
 * [pushout of coproducts](topic/topic_pushout.20of.20coproducts.html) (4 messages, latest: Jan 30 2023 at 13:09)
 * [✔ Subobject classifier question](topic/topic_.E2.9C.94.20Subobject.20classifier.20question.html) (2 messages, latest: Jan 29 2023 at 09:52)
@@ -899,4 +899,4 @@ permalink: /stream/229199-learning:-questions/index.html
 * [Algebra (Aluffi) exercises](topic/topic_Algebra.20(Aluffi).20exercises.html) (55 messages, latest: Mar 27 2020 at 23:38)
 * [What is category theory about?](topic/topic_What.20is.20category.20theory.20about.3F.html) (16 messages, latest: Mar 26 2020 at 16:03)
 
-<hr><p>Last updated: Jun 03 2023 at 00:31 UTC</p>
+<hr><p>Last updated: Jun 04 2023 at 00:11 UTC</p>

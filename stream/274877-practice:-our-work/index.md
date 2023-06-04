@@ -9,6 +9,7 @@ permalink: /stream/274877-practice:-our-work/index.html
 
 ### Topics:
 
+* [Jean-Baptiste Vienney](topic/topic_Jean-Baptiste.20Vienney.html) (103 messages, latest: Jun 03 2023 at 03:21)
 * [John Baez](topic/topic_John.20Baez.html) (1176 messages, latest: May 31 2023 at 17:55)
 * [Steve Huntsman](topic/topic_Steve.20Huntsman.html) (7 messages, latest: May 22 2023 at 14:37)
 * [Simon Willerton](topic/topic_Simon.20Willerton.html) (2 messages, latest: May 06 2023 at 16:21)
@@ -18,7 +19,6 @@ permalink: /stream/274877-practice:-our-work/index.html
 * [Evan Patterson](topic/topic_Evan.20Patterson.html) (69 messages, latest: Apr 06 2023 at 05:17)
 * [Ralph Sarkis](topic/topic_Ralph.20Sarkis.html) (29 messages, latest: Apr 03 2023 at 08:32)
 * [Morgan Rogers](topic/topic_Morgan.20Rogers.html) (54 messages, latest: Apr 01 2023 at 20:54)
-* [Jean-Baptiste Vienney](topic/topic_Jean-Baptiste.20Vienney.html) (98 messages, latest: Mar 28 2023 at 05:20)
 * [Christian Williams](topic/topic_Christian.20Williams.html) (450 messages, latest: Mar 27 2023 at 23:38)
 * [Jacques Carette](topic/topic_Jacques.20Carette.html) (1 message, latest: Mar 23 2023 at 21:19)
 * [Lê Thành Dũng (Tito) Nguyễn](topic/topic_L.C3.AA.20Th.C3.A0nh.20D.C5.A9ng.20(Tito).20Nguy.E1.BB.85n.html) (4 messages, latest: Mar 21 2023 at 12:36)
@@ -56,4 +56,4 @@ permalink: /stream/274877-practice:-our-work/index.html
 * [Conor Mc Bride](topic/topic_Conor.20Mc.20Bride.html) (60 messages, latest: Apr 08 2021 at 15:15)
 * [thoughts on sharing ideas](topic/topic_thoughts.20on.20sharing.20ideas.html) (20 messages, latest: Jan 31 2021 at 03:05)
 
-<hr><p>Last updated: Jun 03 2023 at 00:31 UTC</p>
+<hr><p>Last updated: Jun 04 2023 at 00:11 UTC</p>
