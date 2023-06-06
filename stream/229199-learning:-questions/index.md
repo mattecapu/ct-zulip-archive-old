@@ -9,8 +9,8 @@ permalink: /stream/229199-learning:-questions/index.html
 
 ### Topics:
 
+* [when are "derived" operations preserved by a functor?](topic/topic_when.20are.20.22derived.22.20operations.20preserved.20by.20a.20functor.3F.html) (28 messages, latest: Jun 05 2023 at 09:11)
 * [Azumaya algebras](topic/topic_Azumaya.20algebras.html) (357 messages, latest: Jun 04 2023 at 21:06)
-* [when are "derived" operations preserved by a functor?](topic/topic_when.20are.20.22derived.22.20operations.20preserved.20by.20a.20functor.3F.html) (25 messages, latest: Jun 04 2023 at 16:51)
 * [f(x)=x, f'=0](topic/topic_f(x).3Dx.2C.20f'.3D0.html) (20 messages, latest: Jun 03 2023 at 08:18)
 * [✔ Set-toposes are cocomplete?](topic/topic_.E2.9C.94.20Set-toposes.20are.20cocomplete.3F.html) (15 messages, latest: Jun 02 2023 at 10:07)
 * [equivalent categories and equivalence relations](topic/topic_equivalent.20categories.20and.20equivalence.20relations.html) (23 messages, latest: May 28 2023 at 21:09)
@@ -899,4 +899,4 @@ permalink: /stream/229199-learning:-questions/index.html
 * [Algebra (Aluffi) exercises](topic/topic_Algebra.20(Aluffi).20exercises.html) (55 messages, latest: Mar 27 2020 at 23:38)
 * [What is category theory about?](topic/topic_What.20is.20category.20theory.20about.3F.html) (16 messages, latest: Mar 26 2020 at 16:03)
 
-<hr><p>Last updated: Jun 05 2023 at 00:34 UTC</p>
+<hr><p>Last updated: Jun 06 2023 at 00:09 UTC</p>

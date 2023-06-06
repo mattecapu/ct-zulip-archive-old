@@ -9,6 +9,7 @@ permalink: /stream/266967-general:-mathematics/index.html
 
 ### Topics:
 
+* [f(x)=x, f'=0](topic/topic_f(x).3Dx.2C.20f'.3D0.html) (2 messages, latest: Jun 05 2023 at 08:53)
 * [R\[Sn\]-R\[Sp\]-bimodules](topic/topic_R.5BSn.5D-R.5BSp.5D-bimodules.html) (60 messages, latest: Jun 03 2023 at 22:51)
 * [When to contact an author?](topic/topic_When.20to.20contact.20an.20author.3F.html) (16 messages, latest: Jun 03 2023 at 10:55)
 * [Galois and his fatal duel](topic/topic_Galois.20and.20his.20fatal.20duel.html) (9 messages, latest: Jun 03 2023 at 08:12)
@@ -107,4 +108,4 @@ permalink: /stream/266967-general:-mathematics/index.html
 * [the 600-cell](topic/topic_the.20600-cell.html) (5 messages, latest: Dec 01 2020 at 16:35)
 * [hermitian matrix over normed division algebra](topic/topic_hermitian.20matrix.20over.20normed.20division.20algebra.html) (8 messages, latest: Sep 28 2020 at 21:19)
 
-<hr><p>Last updated: Jun 05 2023 at 00:34 UTC</p>
+<hr><p>Last updated: Jun 06 2023 at 00:09 UTC</p>

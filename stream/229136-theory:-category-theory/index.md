@@ -9,6 +9,7 @@ permalink: /stream/229136-theory:-category-theory/index.html
 
 ### Topics:
 
+* [copointed endofunctors with this property](topic/topic_copointed.20endofunctors.20with.20this.20property.html) (7 messages, latest: Jun 05 2023 at 16:54)
 * [Comonadicity of Presheaf Categories](topic/topic_Comonadicity.20of.20Presheaf.20Categories.html) (10 messages, latest: May 30 2023 at 21:55)
 * [Category of elements vs Grothendieck construction](topic/topic_Category.20of.20elements.20vs.20Grothendieck.20construction.html) (4 messages, latest: May 29 2023 at 17:04)
 * [The free F-algebra is a T-algebra](topic/topic_The.20free.20F-algebra.20is.20a.20T-algebra.html) (5 messages, latest: May 28 2023 at 03:03)
@@ -413,4 +414,4 @@ permalink: /stream/229136-theory:-category-theory/index.html
 * [diagrams for application](topic/topic_diagrams.20for.20application.html) (13 messages, latest: Mar 24 2020 at 06:19)
 * [universal constructions](topic/topic_universal.20constructions.html) (8 messages, latest: Mar 23 2020 at 21:06)
 
-<hr><p>Last updated: Jun 05 2023 at 00:34 UTC</p>
+<hr><p>Last updated: Jun 06 2023 at 00:09 UTC</p>
