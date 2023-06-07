@@ -9,6 +9,7 @@ permalink: /stream/229199-learning:-questions/index.html
 
 ### Topics:
 
+* [cancellation for monadic adjunctions](topic/topic_cancellation.20for.20monadic.20adjunctions.html) (6 messages, latest: Jun 06 2023 at 10:11)
 * [when are "derived" operations preserved by a functor?](topic/topic_when.20are.20.22derived.22.20operations.20preserved.20by.20a.20functor.3F.html) (28 messages, latest: Jun 05 2023 at 09:11)
 * [Azumaya algebras](topic/topic_Azumaya.20algebras.html) (357 messages, latest: Jun 04 2023 at 21:06)
 * [f(x)=x, f'=0](topic/topic_f(x).3Dx.2C.20f'.3D0.html) (20 messages, latest: Jun 03 2023 at 08:18)
@@ -43,7 +44,6 @@ permalink: /stream/229199-learning:-questions/index.html
 * [Exponentials in Comma Categories](topic/topic_Exponentials.20in.20Comma.20Categories.html) (1 message, latest: May 04 2023 at 13:24)
 * [fractional dimensional lie groups?](topic/topic_fractional.20dimensional.20lie.20groups.3F.html) (8 messages, latest: May 01 2023 at 18:08)
 * [References on Continuous Logic and/or Computational trilogy](topic/topic_References.20on.20Continuous.20Logic.20and.2For.20Computational.20trilogy.html) (3 messages, latest: May 01 2023 at 05:08)
-* [cancellation for monadic adjunctions](topic/topic_cancellation.20for.20monadic.20adjunctions.html) (4 messages, latest: Apr 29 2023 at 17:36)
 * [dinatural transformations](topic/topic_dinatural.20transformations.html) (11 messages, latest: Apr 29 2023 at 04:50)
 * [Beginner questions](topic/topic_Beginner.20questions.html) (37 messages, latest: Apr 29 2023 at 00:06)
 * [Object that generate equivalent slice cats](topic/topic_Object.20that.20generate.20equivalent.20slice.20cats.html) (5 messages, latest: Apr 28 2023 at 17:32)
@@ -899,4 +899,4 @@ permalink: /stream/229199-learning:-questions/index.html
 * [Algebra (Aluffi) exercises](topic/topic_Algebra.20(Aluffi).20exercises.html) (55 messages, latest: Mar 27 2020 at 23:38)
 * [What is category theory about?](topic/topic_What.20is.20category.20theory.20about.3F.html) (16 messages, latest: Mar 26 2020 at 16:03)
 
-<hr><p>Last updated: Jun 06 2023 at 00:34 UTC</p>
+<hr><p>Last updated: Jun 07 2023 at 00:10 UTC</p>

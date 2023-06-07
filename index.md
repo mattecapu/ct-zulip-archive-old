@@ -14,11 +14,11 @@ permalink: /index.html
 
 * [general](stream/229111-general/index.html) (256 topics)
 
-* [general: events](stream/229141-general:-events/index.html) (175 topics)
+* [general: events](stream/229141-general:-events/index.html) (176 topics)
 
 * [practice: applied ct](stream/229156-practice:-applied-ct/index.html) (145 topics)
 
-* [general: mathematics](stream/266967-general:-mathematics/index.html) (98 topics)
+* [general: mathematics](stream/266967-general:-mathematics/index.html) (99 topics)
 
 * [theory: topos theory](stream/230087-theory:-topos-theory/index.html) (82 topics)
 
@@ -182,4 +182,4 @@ permalink: /index.html
 
 * [theory: alternate presentations](stream/233122-theory:-alternate-presentations/index.html) (1 topic)
 
-<hr><p>Last updated: Jun 06 2023 at 00:34 UTC</p>
+<hr><p>Last updated: Jun 07 2023 at 00:10 UTC</p>
