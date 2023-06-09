@@ -9,6 +9,7 @@ permalink: /stream/229156-practice:-applied-ct/index.html
 
 ### Topics:
 
+* [security + ct](topic/topic_security.20.2B.20ct.html) (70 messages, latest: Jun 08 2023 at 14:20)
 * [Graphical language for closed monoidal categories](topic/topic_Graphical.20language.20for.20closed.20monoidal.20categories.html) (34 messages, latest: Jun 01 2023 at 14:44)
 * [how good is Poly for dynamical systems, really?](topic/topic_how.20good.20is.20Poly.20for.20dynamical.20systems.2C.20really.3F.html) (43 messages, latest: May 16 2023 at 15:07)
 * [Cats applied to political science](topic/topic_Cats.20applied.20to.20political.20science.html) (9 messages, latest: May 04 2023 at 18:59)
@@ -21,7 +22,6 @@ permalink: /stream/229156-practice:-applied-ct/index.html
 * [hyperoperators as dynamical systems](topic/topic_hyperoperators.20as.20dynamical.20systems.html) (125 messages, latest: Dec 08 2022 at 21:59)
 * [structured cospans](topic/topic_structured.20cospans.html) (21 messages, latest: Dec 08 2022 at 20:29)
 * [instance functors for monoidal categories](topic/topic_instance.20functors.20for.20monoidal.20categories.html) (14 messages, latest: Oct 10 2022 at 18:52)
-* [security + ct](topic/topic_security.20.2B.20ct.html) (69 messages, latest: Aug 23 2022 at 17:44)
 * [stream events](topic/topic_stream.20events.html) (5 messages, latest: Aug 20 2022 at 09:46)
 * [categorical computability](topic/topic_categorical.20computability.html) (2 messages, latest: Aug 12 2022 at 00:34)
 * [ACT 2022](topic/topic_ACT.202022.html) (3 messages, latest: Jul 09 2022 at 14:59)
@@ -155,4 +155,4 @@ permalink: /stream/229156-practice:-applied-ct/index.html
 * [AACT2020](topic/topic_AACT2020.html) (1 message, latest: Mar 24 2020 at 00:56)
 * [welcome](topic/topic_welcome.html) (15 messages, latest: Mar 24 2020 at 00:03)
 
-<hr><p>Last updated: Jun 08 2023 at 00:34 UTC</p>
+<hr><p>Last updated: Jun 09 2023 at 00:10 UTC</p>

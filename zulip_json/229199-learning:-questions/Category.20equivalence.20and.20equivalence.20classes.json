@@ -1,0 +1,68 @@
+[
+    {
+        "content": "<p>I was thinking about the following:</p>\n<p>Given a category <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi></mrow><annotation encoding=\"application/x-tex\">A</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\">A</span></span></span></span> , if we can construct <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msup><mi>A</mi><mo mathvariant=\"normal\" lspace=\"0em\" rspace=\"0em\">′</mo></msup></mrow><annotation encoding=\"application/x-tex\">A&#x27;</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.7519em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\">A</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.7519em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\">′</span></span></span></span></span></span></span></span></span></span></span></span> the category of equivalence classes in <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi></mrow><annotation encoding=\"application/x-tex\">A</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\">A</span></span></span></span>, using isomorphism as an equivalence relation, then it seems that we have the theorem that two arbitrary categories <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>C</mi></mrow><annotation encoding=\"application/x-tex\">C</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.07153em;\">C</span></span></span></span> and <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>D</mi></mrow><annotation encoding=\"application/x-tex\">D</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.02778em;\">D</span></span></span></span> are equivalent iff <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msup><mi>C</mi><mo mathvariant=\"normal\" lspace=\"0em\" rspace=\"0em\">′</mo></msup></mrow><annotation encoding=\"application/x-tex\">C&#x27;</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.7519em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.07153em;\">C</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.7519em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\">′</span></span></span></span></span></span></span></span></span></span></span></span> is isomorphic to <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msup><mi>D</mi><mo mathvariant=\"normal\" lspace=\"0em\" rspace=\"0em\">′</mo></msup></mrow><annotation encoding=\"application/x-tex\">D&#x27;</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.7519em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.02778em;\">D</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.7519em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\">′</span></span></span></span></span></span></span></span></span></span></span></span>.</p>\n<p>Is this legit?</p>\n<p>I seem to have seen this equivalence class category, but only for preorders, I think.</p>",
+        "id": 364551694,
+        "sender_full_name": "Jencel",
+        "timestamp": 1686228761
+    },
+    {
+        "content": "<p>I think you'll find a counter example pretty quickly when you think about categories as preorders which can have multiple relations between objects, instead of just some yes/no. For example, consider the category with one point and just the identity morphism, and the category with just one point but with one (or more) non-trivial self-isomorphism(s). Then \"the\" functor from the former to the latter will never be full (i.e. it won't be surjective on morphisms), and any functor from the latter to the former will never be faithful (i.e. it won't be injective on morphisms), so they're not equivalent as categories, but their category of equivalence classes are the same: a single point in each.</p>",
+        "id": 364564561,
+        "sender_full_name": "Tim Hosgood",
+        "timestamp": 1686231373
+    },
+    {
+        "content": "<p>related is the notion of a <a href=\"https://ncatlab.org/nlab/show/skeleton\">[[skeleton]]</a> of a category</p>",
+        "id": 364572365,
+        "sender_full_name": "Josselin Poiret",
+        "timestamp": 1686232941
+    },
+    {
+        "content": "<p>Two categories are equivalent iff their skeletons are isomorphic</p>",
+        "id": 364594743,
+        "sender_full_name": "Martti Karvonen",
+        "timestamp": 1686236795
+    },
+    {
+        "content": "<p>That's true in the presence of the axiom of choice. You'll find that quite a bit more difficult to prove otherwise...</p>",
+        "id": 364607293,
+        "sender_full_name": "Jacques Carette",
+        "timestamp": 1686239138
+    },
+    {
+        "content": "<p>I guess the issue is that you can't prove that an arbitrary cat has a skeleton without AC?</p>",
+        "id": 364611824,
+        "sender_full_name": "Martti Karvonen",
+        "timestamp": 1686240081
+    },
+    {
+        "content": "<p>Correct: consider an arbitrarily large indiscrete category. It's contractible. But you still have to \"choose\" an object to contract it to. You can likewise be forced to choose an arbitrarily large number of things.</p>",
+        "id": 364613863,
+        "sender_full_name": "Jacques Carette",
+        "timestamp": 1686240481
+    },
+    {
+        "content": "<p>I think it's just a bit unclear what \"the category of equivalence classes\" was supposed to be here, and trying to construct that more explicitly might be clarifying.</p>",
+        "id": 364619740,
+        "sender_full_name": "Kevin Arlin",
+        "timestamp": 1686241863
+    },
+    {
+        "content": "<p>Yes, it probably can be defined in a ways that work and ones that doesn't.   </p>\n<p>What I had in mind was basically the same concept as that of the skeleton of a category, only instead of taking one object in each isomorphism class to take the whole class.<br>\n<a href=\"/user_uploads/21317/9mNQcm4FnoXRWHcLk9RJW77J/image.png\">image.png</a></p>\n<div class=\"message_inline_image\"><a href=\"/user_uploads/21317/9mNQcm4FnoXRWHcLk9RJW77J/image.png\" title=\"image.png\"><img src=\"/user_uploads/21317/9mNQcm4FnoXRWHcLk9RJW77J/image.png\"></a></div>",
+        "id": 364621495,
+        "sender_full_name": "Jencel",
+        "timestamp": 1686242274
+    },
+    {
+        "content": "<p>Yes, but I'm suggesting you try to spell that all the way out to notice something enlightening. (What are the morphisms between two equivalence classes, and how can you show that the set of morphisms is well-defined if you switch objects representing a class?)</p>",
+        "id": 364626942,
+        "sender_full_name": "Kevin Arlin",
+        "timestamp": 1686243594
+    },
+    {
+        "content": "<p><span class=\"user-mention\" data-user-id=\"296322\">@Jacques Carette</span> that's a bad example, I don't need the axiom of choice to make a single choice, but I guess the point was the end of the sentence that as soon as there are infinitely many isomorphism classes we need some version of AC to deduce that we can collapse them all in a reversible way.</p>",
+        "id": 364653590,
+        "sender_full_name": "Morgan Rogers (he/him)",
+        "timestamp": 1686250830
+    }
+]

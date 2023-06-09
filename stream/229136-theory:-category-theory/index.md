@@ -9,6 +9,7 @@ permalink: /stream/229136-theory:-category-theory/index.html
 
 ### Topics:
 
+* [Dagger compact category from bilinear form](topic/topic_Dagger.20compact.20category.20from.20bilinear.20form.html) (22 messages, latest: Jun 08 2023 at 23:42)
 * [Category of elements vs Grothendieck construction](topic/topic_Category.20of.20elements.20vs.20Grothendieck.20construction.html) (12 messages, latest: Jun 07 2023 at 19:06)
 * [copointed endofunctors with this property](topic/topic_copointed.20endofunctors.20with.20this.20property.html) (11 messages, latest: Jun 07 2023 at 07:28)
 * [Comonadicity of Presheaf Categories](topic/topic_Comonadicity.20of.20Presheaf.20Categories.html) (10 messages, latest: May 30 2023 at 21:55)
@@ -414,4 +415,4 @@ permalink: /stream/229136-theory:-category-theory/index.html
 * [diagrams for application](topic/topic_diagrams.20for.20application.html) (13 messages, latest: Mar 24 2020 at 06:19)
 * [universal constructions](topic/topic_universal.20constructions.html) (8 messages, latest: Mar 23 2020 at 21:06)
 
-<hr><p>Last updated: Jun 08 2023 at 00:34 UTC</p>
+<hr><p>Last updated: Jun 09 2023 at 00:10 UTC</p>
