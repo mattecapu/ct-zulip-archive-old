@@ -9,9 +9,9 @@ permalink: /stream/229111-general/index.html
 
 ### Topics:
 
-* [Compositionality](topic/topic_Compositionality.html) (80 messages, latest: May 18 2023 at 06:05)
+* [Introduce yourself!](topic/topic_Introduce.20yourself!.html) (89 messages, latest: Jun 10 2023 at 00:11)
+* [Compositionality](topic/topic_Compositionality.html) (85 messages, latest: Jun 09 2023 at 15:38)
 * [HoTT 2023: Poster](topic/topic_HoTT.202023.3A.20Poster.html) (1 message, latest: May 17 2023 at 17:23)
-* [Introduce yourself!](topic/topic_Introduce.20yourself!.html) (65 messages, latest: May 17 2023 at 15:26)
 * [HoTT 2023: Programme and last call for registration](topic/topic_HoTT.202023.3A.20Programme.20and.20last.20call.20for.20registration.html) (2 messages, latest: May 11 2023 at 07:50)
 * [Looking for popular accounts of Yoneda](topic/topic_Looking.20for.20popular.20accounts.20of.20Yoneda.html) (63 messages, latest: May 10 2023 at 17:17)
 * [Category / Type / &c. Theorists in industry](topic/topic_Category.20.2F.20Type.20.2F.20.26c.2E.20Theorists.20in.20industry.html) (13 messages, latest: May 09 2023 at 20:18)
@@ -266,4 +266,4 @@ permalink: /stream/229111-general/index.html
 * [Tools for diagrams](topic/topic_Tools.20for.20diagrams.html) (78 messages, latest: Mar 25 2020 at 17:53)
 * [topic demonstration](topic/topic_topic.20demonstration.html) (2 messages, latest: Mar 23 2020 at 16:57)
 
-<hr><p>Last updated: Jun 09 2023 at 00:34 UTC</p>
+<hr><p>Last updated: Jun 10 2023 at 00:12 UTC</p>

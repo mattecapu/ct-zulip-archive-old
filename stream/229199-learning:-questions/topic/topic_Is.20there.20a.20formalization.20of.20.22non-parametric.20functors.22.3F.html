@@ -1,0 +1,45 @@
+---
+layout: archive
+title: Zulip Chat Archive
+permalink: /stream/229199-learning:-questions/topic/topic_Is.20there.20a.20formalization.20of.20.22non-parametric.20functors.22.3F.html
+---
+
+<h2>Stream: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/index.html">learning: questions</a></h2>
+<h3>Topic: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/topic_Is.20there.20a.20formalization.20of.20.22non-parametric.20functors.22.3F.html">Is there a formalization of "non-parametric functors"?</a></h3>
+
+<hr>
+
+<base href="https://categorytheory.zulipchat.com/">
+
+{% raw %}
+
+<a name="364980979"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/Is%20there%20a%20formalization%20of%20%22non-parametric%20functors%22%3F/near/364980979" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Davi Sales Barreira <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/topic_Is.20there.20a.20formalization.20of.20.22non-parametric.20functors.22.3F.html#364980979">(Jun 09 2023 at 22:26)</a>:</h4>
+<p>So, I've been trying to program so of the Category Theory programming concepts taught by Bartosz, but using Julia. One construction got me puzzled. In Haskell, we define functors by defining things like:</p>
+<div class="codehilite" data-code-language="Haskell"><pre><span></span><code><span class="kr">data</span><span class="w"> </span><span class="kt">Maybe</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="ow">=</span><span class="w"> </span><span class="kt">Nothing</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="kt">Just</span><span class="w"> </span><span class="n">a</span>
+<span class="nf">fmap</span><span class="o">...</span>
+</code></pre></div>
+<p>By defining the fmap we get <code>Maybe</code> to be a functor. The thing is, the <code>Maybe</code> functor takes a type <code>T</code> to a type<br>
+<code>Maybe T</code>. Now, in Julia, we can construct this <code>Maybe</code> functor with a parametric struct:</p>
+<div class="codehilite" data-code-language="Julia"><pre><span></span><code><span class="k">struct</span> <span class="kt">Just</span><span class="p">{</span><span class="kt">T</span><span class="p">}</span>
+<span class="w"> </span><span class="n">a</span><span class="o">::</span><span class="kt">T</span>
+<span class="k">end</span>
+<span class="k">struct</span> <span class="kt">Nothing</span><span class="w"> </span><span class="k">end</span>
+<span class="kt">Maybe</span><span class="p">{</span><span class="kt">T</span><span class="p">}</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kt">Union</span><span class="p">{</span><span class="kt">Just</span><span class="p">{</span><span class="kt">T</span><span class="p">},</span><span class="w"> </span><span class="kt">Nothing</span><span class="p">}</span>
+<span class="n">fmap</span><span class="o">...</span>
+</code></pre></div>
+<p>Yet, in Julia there is another possible construction. We can define a "functor-like" thing as the following:</p>
+<div class="codehilite" data-code-language="Julia"><pre><span></span><code><span class="k">struct</span> <span class="kt">F</span>
+<span class="w"> </span><span class="n">a</span>
+<span class="k">end</span>
+<span class="n">fmap</span><span class="p">(</span><span class="n">f</span><span class="o">::</span><span class="kt">Function</span><span class="p">,</span><span class="w"> </span><span class="n">x</span><span class="o">::</span><span class="kt">F</span><span class="p">)</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">F</span><span class="p">(</span><span class="n">f</span><span class="p">(</span><span class="n">x</span><span class="o">.</span><span class="n">a</span><span class="p">))</span>
+</code></pre></div>
+<p>Such construction is actually called "functor" by programmers... But it seems that it is not an actual functor in terms of Category Theory.<br>
+The reason for me saying this is that <code>F</code> takes types (sets) <code>T</code> to <code>F</code> and not to <code>F{T}</code>. Hence, if we think of types as sets, the type <code>F</code> would not be an actual set, as it seems to contain all other types, including itself...</p>
+<p>Is there any formal treatment of such construction? Is this actually a functor and I'm with the wrong interpretation?</p>
+
+
+
+{% endraw %}
+
+<hr><p>Last updated: Jun 10 2023 at 00:12 UTC</p>
