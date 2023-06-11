@@ -9,17 +9,18 @@ permalink: /stream/229199-learning:-questions/index.html
 
 ### Topics:
 
-* [2 limits in 2-categories of diagrams](topic/topic_2.20limits.20in.202-categories.20of.20diagrams.html) (13 messages, latest: Jun 09 2023 at 23:31)
+* [Is there a formalization of "non-parametric functors"?](topic/topic_Is.20there.20a.20formalization.20of.20.22non-parametric.20functors.22.3F.html) (9 messages, latest: Jun 10 2023 at 21:13)
+* [when are "derived" operations preserved by a functor?](topic/topic_when.20are.20.22derived.22.20operations.20preserved.20by.20a.20functor.3F.html) (32 messages, latest: Jun 10 2023 at 18:45)
+* [self-enrichment vs monoidal closed](topic/topic_self-enrichment.20vs.20monoidal.20closed.html) (15 messages, latest: Jun 10 2023 at 16:35)
+* [✔ Category equivalence and equivalence classes](topic/topic_.E2.9C.94.20Category.20equivalence.20and.20equivalence.20classes.html) (2 messages, latest: Jun 10 2023 at 16:34)
+* [2 limits in 2-categories of diagrams](topic/topic_2.20limits.20in.202-categories.20of.20diagrams.html) (23 messages, latest: Jun 10 2023 at 15:32)
 * [2 limits in 2-categories of diagrams,od](topic/topic_2.20limits.20in.202-categories.20of.20diagrams.2Cod.html) (1 message, latest: Jun 09 2023 at 23:16)
-* [Is there a formalization of "non-parametric functors"?](topic/topic_Is.20there.20a.20formalization.20of.20.22non-parametric.20functors.22.3F.html) (1 message, latest: Jun 09 2023 at 22:26)
 * [Connected Category](topic/topic_Connected.20Category.html) (3 messages, latest: Jun 09 2023 at 21:34)
 * [What is the relation between F-Algebras and Free Algebras?](topic/topic_What.20is.20the.20relation.20between.20F-Algebras.20and.20Free.20Algebras.3F.html) (6 messages, latest: Jun 09 2023 at 21:31)
 * [Category equivalence and equivalence classes](topic/topic_Category.20equivalence.20and.20equivalence.20classes.html) (29 messages, latest: Jun 09 2023 at 18:25)
 * [logic inherited by functor categories](topic/topic_logic.20inherited.20by.20functor.20categories.html) (9 messages, latest: Jun 09 2023 at 01:39)
-* [self-enrichment vs monoidal closed](topic/topic_self-enrichment.20vs.20monoidal.20closed.html) (14 messages, latest: Jun 08 2023 at 23:29)
 * [adjoint to decoration](topic/topic_adjoint.20to.20decoration.html) (14 messages, latest: Jun 08 2023 at 18:48)
 * [cancellation for monadic adjunctions](topic/topic_cancellation.20for.20monadic.20adjunctions.html) (6 messages, latest: Jun 06 2023 at 10:11)
-* [when are "derived" operations preserved by a functor?](topic/topic_when.20are.20.22derived.22.20operations.20preserved.20by.20a.20functor.3F.html) (28 messages, latest: Jun 05 2023 at 09:11)
 * [Azumaya algebras](topic/topic_Azumaya.20algebras.html) (357 messages, latest: Jun 04 2023 at 21:06)
 * [f(x)=x, f'=0](topic/topic_f(x).3Dx.2C.20f'.3D0.html) (20 messages, latest: Jun 03 2023 at 08:18)
 * [✔ Set-toposes are cocomplete?](topic/topic_.E2.9C.94.20Set-toposes.20are.20cocomplete.3F.html) (15 messages, latest: Jun 02 2023 at 10:07)
@@ -908,4 +909,4 @@ permalink: /stream/229199-learning:-questions/index.html
 * [Algebra (Aluffi) exercises](topic/topic_Algebra.20(Aluffi).20exercises.html) (55 messages, latest: Mar 27 2020 at 23:38)
 * [What is category theory about?](topic/topic_What.20is.20category.20theory.20about.3F.html) (16 messages, latest: Mar 26 2020 at 16:03)
 
-<hr><p>Last updated: Jun 10 2023 at 00:31 UTC</p>
+<hr><p>Last updated: Jun 11 2023 at 00:11 UTC</p>

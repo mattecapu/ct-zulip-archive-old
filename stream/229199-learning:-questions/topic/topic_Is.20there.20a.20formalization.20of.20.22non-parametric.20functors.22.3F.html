@@ -40,6 +40,73 @@ The reason for me saying this is that <code>F</code> takes types (sets) <code>T<
 
 
 
+<a name="365028995"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/Is%20there%20a%20formalization%20of%20%22non-parametric%20functors%22%3F/near/365028995" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Jencel <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/topic_Is.20there.20a.20formalization.20of.20.22non-parametric.20functors.22.3F.html#365028995">(Jun 10 2023 at 06:26)</a>:</h4>
+<p>Don't know Julia, but this looks like a functor that is parametrized by the type of a.</p>
+
+
+
+<a name="365029105"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/Is%20there%20a%20formalization%20of%20%22non-parametric%20functors%22%3F/near/365029105" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Jencel <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/topic_Is.20there.20a.20formalization.20of.20.22non-parametric.20functors.22.3F.html#365029105">(Jun 10 2023 at 06:26)</a>:</h4>
+<p>In particular it looks like the identity functor i.e. just a box that contains a value.</p>
+
+
+
+<a name="365104051"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/Is%20there%20a%20formalization%20of%20%22non-parametric%20functors%22%3F/near/365104051" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Davi Sales Barreira <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/topic_Is.20there.20a.20formalization.20of.20.22non-parametric.20functors.22.3F.html#365104051">(Jun 10 2023 at 12:11)</a>:</h4>
+<p>It would not be the identity because it actually takes a type <code>T</code> to a type <code>F</code>.</p>
+
+
+
+<a name="365132974"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/Is%20there%20a%20formalization%20of%20%22non-parametric%20functors%22%3F/near/365132974" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Jencel <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/topic_Is.20there.20a.20formalization.20of.20.22non-parametric.20functors.22.3F.html#365132974">(Jun 10 2023 at 14:22)</a>:</h4>
+<p>Don’t understand where this T comes from, to me it looks like it takes an argument of type F (called x)</p>
+
+
+
+<a name="365157405"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/Is%20there%20a%20formalization%20of%20%22non-parametric%20functors%22%3F/near/365157405" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Jencel <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/topic_Is.20there.20a.20formalization.20of.20.22non-parametric.20functors.22.3F.html#365157405">(Jun 10 2023 at 16:28)</a>:</h4>
+<p>Perhaps you mean to say that the type is polymorphic, but it is de facto polymorphic, it is just not annotated as such.</p>
+
+
+
+<a name="365157632"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/Is%20there%20a%20formalization%20of%20%22non-parametric%20functors%22%3F/near/365157632" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Jencel <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/topic_Is.20there.20a.20formalization.20of.20.22non-parametric.20functors.22.3F.html#365157632">(Jun 10 2023 at 16:30)</a>:</h4>
+<blockquote>
+<p>The reason for me saying this is that F takes types (sets) T to F and not to F{T}. Hence, if we think of types as sets, the type F would not be an actual set, as it seems to contain all other types, including itself...</p>
+</blockquote>
+<p>F{T} can also contain itself, you can take T to be F.</p>
+
+
+
+<a name="365187392"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/Is%20there%20a%20formalization%20of%20%22non-parametric%20functors%22%3F/near/365187392" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Jencel <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/topic_Is.20there.20a.20formalization.20of.20.22non-parametric.20functors.22.3F.html#365187392">(Jun 10 2023 at 19:53)</a>:</h4>
+<p>Actually, they are both recursive types, they don’t contain themselves, I think.</p>
+
+
+
+<a name="365196353"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/Is%20there%20a%20formalization%20of%20%22non-parametric%20functors%22%3F/near/365196353" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Davi Sales Barreira <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/topic_Is.20there.20a.20formalization.20of.20.22non-parametric.20functors.22.3F.html#365196353">(Jun 10 2023 at 21:13)</a>:</h4>
+<p>Let me try to clarify my issue. You probably already know how functors are defined in programming, but I'll just recap how I do it in Julia:</p>
+<div class="codehilite" data-code-language="Julia"><pre><span></span><code><span class="k">struct</span> <span class="kt">F</span><span class="p">{</span><span class="kt">T</span><span class="p">}</span>
+<span class="w"> </span><span class="n">a</span><span class="o">::</span><span class="kt">T</span>
+<span class="k">end</span>
+<span class="n">fmap</span><span class="p">(</span><span class="n">f</span><span class="o">::</span><span class="kt">Function</span><span class="p">,</span><span class="w"> </span><span class="n">x</span><span class="o">::</span><span class="kt">F</span><span class="p">)</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">F</span><span class="p">(</span><span class="n">f</span><span class="p">(</span><span class="n">x</span><span class="o">.</span><span class="n">a</span><span class="p">))</span>
+<span class="n">F</span><span class="p">(</span><span class="n">f</span><span class="o">::</span><span class="kt">Function</span><span class="p">)</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">x</span><span class="o">-&gt;</span><span class="w"> </span><span class="n">fmap</span><span class="p">(</span><span class="n">f</span><span class="p">,</span><span class="w"> </span><span class="n">x</span><span class="p">)</span>
+</code></pre></div>
+<p>We can interpret the thing above as a functor <code>F</code>, where an element of type <code>T</code> is taken to an element of type <code>F{T}</code>. For example, an element of type <code>Int</code>  becomes of type <code>F{Int}</code>. This example seems to fit nicely with the notion of an endofunctor acting on the category of sets. We just think of types as sets, hence, type <code>Int</code>  is just the set of integers, and type <code>F{Int}</code> can be thought of as the set of elements <code>(F, i)</code> where <code>i</code> where <code>i</code> are integers. In other words, the sets <code>Int</code> and <code>F{Int}</code> are isomorphic.</p>
+<p>My issue comes with the following definition:</p>
+<div class="codehilite" data-code-language="Julia"><pre><span></span><code><span class="k">struct</span> <span class="kt">F</span>
+<span class="w"> </span><span class="n">a</span>
+<span class="k">end</span>
+<span class="n">fmap</span><span class="p">(</span><span class="n">f</span><span class="o">::</span><span class="kt">Function</span><span class="p">,</span><span class="w"> </span><span class="n">x</span><span class="o">::</span><span class="kt">F</span><span class="p">)</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">F</span><span class="p">(</span><span class="n">f</span><span class="p">(</span><span class="n">x</span><span class="o">.</span><span class="n">a</span><span class="p">))</span>
+<span class="n">F</span><span class="p">(</span><span class="n">f</span><span class="o">::</span><span class="kt">Function</span><span class="p">)</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">x</span><span class="o">-&gt;</span><span class="w"> </span><span class="n">fmap</span><span class="p">(</span><span class="n">f</span><span class="p">,</span><span class="w"> </span><span class="n">x</span><span class="p">)</span>
+</code></pre></div>
+<p>This is very similar, but now this "functor" takes elements of type <code>Int</code> to type <code>F</code>, and not to  <code>F{Int}</code>.  But note that this "functor" also takes elements of type <code>String</code> to the type <code>F</code>... Hence, <code>F</code> is not isomorphic to <code>Int</code>. In fact, <code>F</code> actually is larger than all previous types, since for any <code>x</code> of type <code>T</code> we have a representation in <code>F</code>, which would be <code>(F, x)</code>. <br>
+Thus, what I was thinking was that <code>F</code> is not an endofunctor in Set anymore.</p>
+
+
+
 {% endraw %}
 
-<hr><p>Last updated: Jun 10 2023 at 00:31 UTC</p>
+<hr><p>Last updated: Jun 11 2023 at 00:11 UTC</p>

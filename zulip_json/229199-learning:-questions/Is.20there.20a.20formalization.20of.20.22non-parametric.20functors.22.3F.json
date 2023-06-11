@@ -4,5 +4,53 @@
         "id": 364980979,
         "sender_full_name": "Davi Sales Barreira",
         "timestamp": 1686349619
+    },
+    {
+        "content": "<p>Don't know Julia, but this looks like a functor that is parametrized by the type of a.</p>",
+        "id": 365028995,
+        "sender_full_name": "Jencel",
+        "timestamp": 1686378365
+    },
+    {
+        "content": "<p>In particular it looks like the identity functor i.e. just a box that contains a value.</p>",
+        "id": 365029105,
+        "sender_full_name": "Jencel",
+        "timestamp": 1686378417
+    },
+    {
+        "content": "<p>It would not be the identity because it actually takes a type <code>T</code> to a type <code>F</code>.</p>",
+        "id": 365104051,
+        "sender_full_name": "Davi Sales Barreira",
+        "timestamp": 1686399072
+    },
+    {
+        "content": "<p>Don’t understand where this T comes from, to me it looks like it takes an argument of type F (called x)</p>",
+        "id": 365132974,
+        "sender_full_name": "Jencel",
+        "timestamp": 1686406974
+    },
+    {
+        "content": "<p>Perhaps you mean to say that the type is polymorphic, but it is de facto polymorphic, it is just not annotated as such.</p>",
+        "id": 365157405,
+        "sender_full_name": "Jencel",
+        "timestamp": 1686414535
+    },
+    {
+        "content": "<blockquote>\n<p>The reason for me saying this is that F takes types (sets) T to F and not to F{T}. Hence, if we think of types as sets, the type F would not be an actual set, as it seems to contain all other types, including itself...</p>\n</blockquote>\n<p>F{T} can also contain itself, you can take T to be F.</p>",
+        "id": 365157632,
+        "sender_full_name": "Jencel",
+        "timestamp": 1686414603
+    },
+    {
+        "content": "<p>Actually, they are both recursive types, they don’t contain themselves, I think.</p>",
+        "id": 365187392,
+        "sender_full_name": "Jencel",
+        "timestamp": 1686426789
+    },
+    {
+        "content": "<p>Let me try to clarify my issue. You probably already know how functors are defined in programming, but I'll just recap how I do it in Julia:</p>\n<div class=\"codehilite\" data-code-language=\"Julia\"><pre><span></span><code><span class=\"k\">struct</span> <span class=\"kt\">F</span><span class=\"p\">{</span><span class=\"kt\">T</span><span class=\"p\">}</span>\n<span class=\"w\"> </span><span class=\"n\">a</span><span class=\"o\">::</span><span class=\"kt\">T</span>\n<span class=\"k\">end</span>\n<span class=\"n\">fmap</span><span class=\"p\">(</span><span class=\"n\">f</span><span class=\"o\">::</span><span class=\"kt\">Function</span><span class=\"p\">,</span><span class=\"w\"> </span><span class=\"n\">x</span><span class=\"o\">::</span><span class=\"kt\">F</span><span class=\"p\">)</span><span class=\"w\"> </span><span class=\"o\">=</span><span class=\"w\"> </span><span class=\"n\">F</span><span class=\"p\">(</span><span class=\"n\">f</span><span class=\"p\">(</span><span class=\"n\">x</span><span class=\"o\">.</span><span class=\"n\">a</span><span class=\"p\">))</span>\n<span class=\"n\">F</span><span class=\"p\">(</span><span class=\"n\">f</span><span class=\"o\">::</span><span class=\"kt\">Function</span><span class=\"p\">)</span><span class=\"w\"> </span><span class=\"o\">=</span><span class=\"w\"> </span><span class=\"n\">x</span><span class=\"o\">-&gt;</span><span class=\"w\"> </span><span class=\"n\">fmap</span><span class=\"p\">(</span><span class=\"n\">f</span><span class=\"p\">,</span><span class=\"w\"> </span><span class=\"n\">x</span><span class=\"p\">)</span>\n</code></pre></div>\n<p>We can interpret the thing above as a functor <code>F</code>, where an element of type <code>T</code> is taken to an element of type <code>F{T}</code>. For example, an element of type <code>Int</code>  becomes of type <code>F{Int}</code>. This example seems to fit nicely with the notion of an endofunctor acting on the category of sets. We just think of types as sets, hence, type <code>Int</code>  is just the set of integers, and type <code>F{Int}</code> can be thought of as the set of elements <code>(F, i)</code> where <code>i</code> where <code>i</code> are integers. In other words, the sets <code>Int</code> and <code>F{Int}</code> are isomorphic.</p>\n<p>My issue comes with the following definition:</p>\n<div class=\"codehilite\" data-code-language=\"Julia\"><pre><span></span><code><span class=\"k\">struct</span> <span class=\"kt\">F</span>\n<span class=\"w\"> </span><span class=\"n\">a</span>\n<span class=\"k\">end</span>\n<span class=\"n\">fmap</span><span class=\"p\">(</span><span class=\"n\">f</span><span class=\"o\">::</span><span class=\"kt\">Function</span><span class=\"p\">,</span><span class=\"w\"> </span><span class=\"n\">x</span><span class=\"o\">::</span><span class=\"kt\">F</span><span class=\"p\">)</span><span class=\"w\"> </span><span class=\"o\">=</span><span class=\"w\"> </span><span class=\"n\">F</span><span class=\"p\">(</span><span class=\"n\">f</span><span class=\"p\">(</span><span class=\"n\">x</span><span class=\"o\">.</span><span class=\"n\">a</span><span class=\"p\">))</span>\n<span class=\"n\">F</span><span class=\"p\">(</span><span class=\"n\">f</span><span class=\"o\">::</span><span class=\"kt\">Function</span><span class=\"p\">)</span><span class=\"w\"> </span><span class=\"o\">=</span><span class=\"w\"> </span><span class=\"n\">x</span><span class=\"o\">-&gt;</span><span class=\"w\"> </span><span class=\"n\">fmap</span><span class=\"p\">(</span><span class=\"n\">f</span><span class=\"p\">,</span><span class=\"w\"> </span><span class=\"n\">x</span><span class=\"p\">)</span>\n</code></pre></div>\n<p>This is very similar, but now this \"functor\" takes elements of type <code>Int</code> to type <code>F</code>, and not to  <code>F{Int}</code>.  But note that this \"functor\" also takes elements of type <code>String</code> to the type <code>F</code>... Hence, <code>F</code> is not isomorphic to <code>Int</code>. In fact, <code>F</code> actually is larger than all previous types, since for any <code>x</code> of type <code>T</code> we have a representation in <code>F</code>, which would be <code>(F, x)</code>. <br>\nThus, what I was thinking was that <code>F</code> is not an endofunctor in Set anymore.</p>",
+        "id": 365196353,
+        "sender_full_name": "Davi Sales Barreira",
+        "timestamp": 1686431586
     }
 ]

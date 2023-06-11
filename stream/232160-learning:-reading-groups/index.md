@@ -9,7 +9,7 @@ permalink: /stream/232160-learning:-reading-groups/index.html
 
 ### Topics:
 
-* [Categorical Logic and Type Theory](topic/topic_Categorical.20Logic.20and.20Type.20Theory.html) (24 messages, latest: Jun 08 2023 at 11:14)
+* [Categorical Logic and Type Theory](topic/topic_Categorical.20Logic.20and.20Type.20Theory.html) (26 messages, latest: Jun 10 2023 at 11:27)
 * [general reference text](topic/topic_general.20reference.20text.html) (13 messages, latest: Sep 15 2022 at 16:29)
 * [General reference text](topic/topic_General.20reference.20text.html) (10 messages, latest: Sep 13 2022 at 20:52)
 * [Working group on Differential Cohesive Topos](topic/topic_Working.20group.20on.20Differential.20Cohesive.20Topos.html) (9 messages, latest: Jun 09 2022 at 17:35)
@@ -23,4 +23,4 @@ permalink: /stream/232160-learning:-reading-groups/index.html
 * [A Rosetta Stone](topic/topic_A.20Rosetta.20Stone.html) (88 messages, latest: May 28 2020 at 07:52)
 * [stream events](topic/topic_stream.20events.html) (12 messages, latest: May 18 2020 at 16:27)
 
-<hr><p>Last updated: Jun 10 2023 at 00:31 UTC</p>
+<hr><p>Last updated: Jun 11 2023 at 00:11 UTC</p>
