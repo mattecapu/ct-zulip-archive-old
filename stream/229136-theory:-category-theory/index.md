@@ -9,8 +9,8 @@ permalink: /stream/229136-theory:-category-theory/index.html
 
 ### Topics:
 
+* [How is this "initial object" called?](topic/topic_How.20is.20this.20.22initial.20object.22.20called.3F.html) (4 messages, latest: Jun 11 2023 at 18:16)
 * [Van Kampen colimit wrt a fibration](topic/topic_Van.20Kampen.20colimit.20wrt.20a.20fibration.html) (1 message, latest: Jun 10 2023 at 01:21)
-* [How is this "initial object" called?](topic/topic_How.20is.20this.20.22initial.20object.22.20called.3F.html) (1 message, latest: Jun 09 2023 at 20:03)
 * [taking homs](topic/topic_taking.20homs.html) (4 messages, latest: Jun 09 2023 at 15:56)
 * [Dagger compact category from bilinear form](topic/topic_Dagger.20compact.20category.20from.20bilinear.20form.html) (58 messages, latest: Jun 09 2023 at 08:25)
 * [Category of elements vs Grothendieck construction](topic/topic_Category.20of.20elements.20vs.20Grothendieck.20construction.html) (12 messages, latest: Jun 07 2023 at 19:06)
@@ -418,4 +418,4 @@ permalink: /stream/229136-theory:-category-theory/index.html
 * [diagrams for application](topic/topic_diagrams.20for.20application.html) (13 messages, latest: Mar 24 2020 at 06:19)
 * [universal constructions](topic/topic_universal.20constructions.html) (8 messages, latest: Mar 23 2020 at 21:06)
 
-<hr><p>Last updated: Jun 11 2023 at 00:36 UTC</p>
+<hr><p>Last updated: Jun 12 2023 at 00:10 UTC</p>

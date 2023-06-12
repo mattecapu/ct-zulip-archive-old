@@ -9,14 +9,14 @@ permalink: /stream/229199-learning:-questions/index.html
 
 ### Topics:
 
-* [Is there a formalization of "non-parametric functors"?](topic/topic_Is.20there.20a.20formalization.20of.20.22non-parametric.20functors.22.3F.html) (9 messages, latest: Jun 10 2023 at 21:13)
+* [Is there a formalization of "non-parametric functors"?](topic/topic_Is.20there.20a.20formalization.20of.20.22non-parametric.20functors.22.3F.html) (12 messages, latest: Jun 11 2023 at 22:04)
+* [What is the relation between F-Algebras and Free Algebras?](topic/topic_What.20is.20the.20relation.20between.20F-Algebras.20and.20Free.20Algebras.3F.html) (11 messages, latest: Jun 11 2023 at 17:16)
 * [when are "derived" operations preserved by a functor?](topic/topic_when.20are.20.22derived.22.20operations.20preserved.20by.20a.20functor.3F.html) (32 messages, latest: Jun 10 2023 at 18:45)
 * [self-enrichment vs monoidal closed](topic/topic_self-enrichment.20vs.20monoidal.20closed.html) (15 messages, latest: Jun 10 2023 at 16:35)
 * [✔ Category equivalence and equivalence classes](topic/topic_.E2.9C.94.20Category.20equivalence.20and.20equivalence.20classes.html) (2 messages, latest: Jun 10 2023 at 16:34)
 * [2 limits in 2-categories of diagrams](topic/topic_2.20limits.20in.202-categories.20of.20diagrams.html) (23 messages, latest: Jun 10 2023 at 15:32)
 * [2 limits in 2-categories of diagrams,od](topic/topic_2.20limits.20in.202-categories.20of.20diagrams.2Cod.html) (1 message, latest: Jun 09 2023 at 23:16)
 * [Connected Category](topic/topic_Connected.20Category.html) (3 messages, latest: Jun 09 2023 at 21:34)
-* [What is the relation between F-Algebras and Free Algebras?](topic/topic_What.20is.20the.20relation.20between.20F-Algebras.20and.20Free.20Algebras.3F.html) (6 messages, latest: Jun 09 2023 at 21:31)
 * [Category equivalence and equivalence classes](topic/topic_Category.20equivalence.20and.20equivalence.20classes.html) (29 messages, latest: Jun 09 2023 at 18:25)
 * [logic inherited by functor categories](topic/topic_logic.20inherited.20by.20functor.20categories.html) (9 messages, latest: Jun 09 2023 at 01:39)
 * [adjoint to decoration](topic/topic_adjoint.20to.20decoration.html) (14 messages, latest: Jun 08 2023 at 18:48)
@@ -909,4 +909,4 @@ permalink: /stream/229199-learning:-questions/index.html
 * [Algebra (Aluffi) exercises](topic/topic_Algebra.20(Aluffi).20exercises.html) (55 messages, latest: Mar 27 2020 at 23:38)
 * [What is category theory about?](topic/topic_What.20is.20category.20theory.20about.3F.html) (16 messages, latest: Mar 26 2020 at 16:03)
 
-<hr><p>Last updated: Jun 11 2023 at 00:36 UTC</p>
+<hr><p>Last updated: Jun 12 2023 at 00:10 UTC</p>
