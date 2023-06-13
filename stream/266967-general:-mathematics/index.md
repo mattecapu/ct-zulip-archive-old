@@ -9,8 +9,9 @@ permalink: /stream/266967-general:-mathematics/index.html
 
 ### Topics:
 
-* [quaternions](topic/topic_quaternions.html) (37 messages, latest: Jun 11 2023 at 01:14)
-* [generalizing Wedderburn-Artin](topic/topic_generalizing.20Wedderburn-Artin.html) (1 message, latest: Jun 10 2023 at 23:27)
+* [generalizing Wedderburn-Artin](topic/topic_generalizing.20Wedderburn-Artin.html) (32 messages, latest: Jun 12 2023 at 22:31)
+* [quaternions](topic/topic_quaternions.html) (40 messages, latest: Jun 12 2023 at 18:52)
+* [The closure functor](topic/topic_The.20closure.20functor.html) (11 messages, latest: Jun 12 2023 at 18:46)
 * [Separable algebras and Galois theory](topic/topic_Separable.20algebras.20and.20Galois.20theory.html) (21 messages, latest: Jun 08 2023 at 07:27)
 * [f(x)=x, f'=0](topic/topic_f(x).3Dx.2C.20f'.3D0.html) (2 messages, latest: Jun 05 2023 at 08:53)
 * [R\[Sn\]-R\[Sp\]-bimodules](topic/topic_R.5BSn.5D-R.5BSp.5D-bimodules.html) (60 messages, latest: Jun 03 2023 at 22:51)
@@ -111,4 +112,4 @@ permalink: /stream/266967-general:-mathematics/index.html
 * [the 600-cell](topic/topic_the.20600-cell.html) (5 messages, latest: Dec 01 2020 at 16:35)
 * [hermitian matrix over normed division algebra](topic/topic_hermitian.20matrix.20over.20normed.20division.20algebra.html) (8 messages, latest: Sep 28 2020 at 21:19)
 
-<hr><p>Last updated: Jun 12 2023 at 00:35 UTC</p>
+<hr><p>Last updated: Jun 13 2023 at 00:10 UTC</p>

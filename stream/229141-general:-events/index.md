@@ -9,8 +9,8 @@ permalink: /stream/229141-general:-events/index.html
 
 ### Topics:
 
+* [ACT 2023](topic/topic_ACT.202023.html) (159 messages, latest: Jun 12 2023 at 07:54)
 * [Binary Operation](topic/topic_Binary.20Operation.html) (65 messages, latest: Jun 11 2023 at 07:10)
-* [ACT 2023](topic/topic_ACT.202023.html) (158 messages, latest: Jun 09 2023 at 21:22)
 * [Seminar on Applied Category Theory](topic/topic_Seminar.20on.20Applied.20Category.20Theory.html) (7 messages, latest: Jun 09 2023 at 18:28)
 * [Enriched Categories and Topology](topic/topic_Enriched.20Categories.20and.20Topology.html) (2 messages, latest: Jun 06 2023 at 19:09)
 * [Joy of Abstraction Book Study Group](topic/topic_Joy.20of.20Abstraction.20Book.20Study.20Group.html) (2 messages, latest: Jun 03 2023 at 14:47)
@@ -186,4 +186,4 @@ permalink: /stream/229141-general:-events/index.html
 * [April 1st: ACT@UCR](topic/topic_April.201st.3A.20ACT.40UCR.html) (3 messages, latest: Mar 26 2020 at 23:58)
 * [Google Sites problem](topic/topic_Google.20Sites.20problem.html) (4 messages, latest: Mar 25 2020 at 04:29)
 
-<hr><p>Last updated: Jun 12 2023 at 00:35 UTC</p>
+<hr><p>Last updated: Jun 13 2023 at 00:10 UTC</p>
