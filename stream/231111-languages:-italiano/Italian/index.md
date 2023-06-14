@@ -18,4 +18,4 @@ permalink: /stream/231111-languages:-italiano/Italian/index.html
 * [Dictionary/dizionario](topic/topic_Dictionary.2Fdizionario.html) (172 messages, latest: Jul 21 2020 at 00:21)
 * [stream events](topic/topic_stream.20events.html) (16 messages, latest: Apr 06 2020 at 08:50)
 
-<hr><p>Last updated: Jun 13 2023 at 00:33 UTC</p>
+<hr><p>Last updated: Jun 14 2023 at 00:10 UTC</p>

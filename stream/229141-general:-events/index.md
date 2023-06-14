@@ -9,6 +9,7 @@ permalink: /stream/229141-general:-events/index.html
 
 ### Topics:
 
+* [CATNIP](topic/topic_CATNIP.html) (10 messages, latest: Jun 13 2023 at 22:40)
 * [ACT 2023](topic/topic_ACT.202023.html) (159 messages, latest: Jun 12 2023 at 07:54)
 * [Binary Operation](topic/topic_Binary.20Operation.html) (65 messages, latest: Jun 11 2023 at 07:10)
 * [Seminar on Applied Category Theory](topic/topic_Seminar.20on.20Applied.20Category.20Theory.html) (7 messages, latest: Jun 09 2023 at 18:28)
@@ -18,7 +19,6 @@ permalink: /stream/229141-general:-events/index.html
 * [Reading Lawvere from Colombia](topic/topic_Reading.20Lawvere.20from.20Colombia.html) (2 messages, latest: May 12 2023 at 18:20)
 * [Symmetric spaces and the tenfold way](topic/topic_Symmetric.20spaces.20and.20the.20tenfold.20way.html) (3 messages, latest: May 09 2023 at 19:39)
 * [ACT 2024](topic/topic_ACT.202024.html) (11 messages, latest: May 09 2023 at 15:06)
-* [CATNIP](topic/topic_CATNIP.html) (6 messages, latest: May 09 2023 at 13:41)
 * [Logic in Computer Science conference](topic/topic_Logic.20in.20Computer.20Science.20conference.html) (52 messages, latest: May 06 2023 at 08:46)
 * [SYCO 11](topic/topic_SYCO.2011.html) (6 messages, latest: May 04 2023 at 14:33)
 * [ItaCa Fest 2023](topic/topic_ItaCa.20Fest.202023.html) (5 messages, latest: Apr 27 2023 at 14:11)
@@ -186,4 +186,4 @@ permalink: /stream/229141-general:-events/index.html
 * [April 1st: ACT@UCR](topic/topic_April.201st.3A.20ACT.40UCR.html) (3 messages, latest: Mar 26 2020 at 23:58)
 * [Google Sites problem](topic/topic_Google.20Sites.20problem.html) (4 messages, latest: Mar 25 2020 at 04:29)
 
-<hr><p>Last updated: Jun 13 2023 at 00:33 UTC</p>
+<hr><p>Last updated: Jun 14 2023 at 00:10 UTC</p>
