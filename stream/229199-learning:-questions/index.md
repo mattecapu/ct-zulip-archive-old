@@ -9,6 +9,9 @@ permalink: /stream/229199-learning:-questions/index.html
 
 ### Topics:
 
+* [Kan is to groupoid as sSet is to... what?](topic/topic_Kan.20is.20to.20groupoid.20as.20sSet.20is.20to.2E.2E.2E.20what.3F.html) (18 messages, latest: Jun 14 2023 at 17:14)
+* [✔ 2 limits in 2-categories of diagrams](topic/topic_.E2.9C.94.202.20limits.20in.202-categories.20of.20diagrams.html) (2 messages, latest: Jun 14 2023 at 11:58)
+* [homotopy 2-limits as biadjunctions](topic/topic_homotopy.202-limits.20as.20biadjunctions.html) (1 message, latest: Jun 14 2023 at 11:51)
 * [✔ self-enrichment vs monoidal closed](topic/topic_.E2.9C.94.20self-enrichment.20vs.20monoidal.20closed.html) (1 message, latest: Jun 12 2023 at 19:04)
 * [Is there a formalization of "non-parametric functors"?](topic/topic_Is.20there.20a.20formalization.20of.20.22non-parametric.20functors.22.3F.html) (12 messages, latest: Jun 11 2023 at 22:04)
 * [What is the relation between F-Algebras and Free Algebras?](topic/topic_What.20is.20the.20relation.20between.20F-Algebras.20and.20Free.20Algebras.3F.html) (11 messages, latest: Jun 11 2023 at 17:16)
@@ -910,4 +913,4 @@ permalink: /stream/229199-learning:-questions/index.html
 * [Algebra (Aluffi) exercises](topic/topic_Algebra.20(Aluffi).20exercises.html) (55 messages, latest: Mar 27 2020 at 23:38)
 * [What is category theory about?](topic/topic_What.20is.20category.20theory.20about.3F.html) (16 messages, latest: Mar 26 2020 at 16:03)
 
-<hr><p>Last updated: Jun 14 2023 at 00:33 UTC</p>
+<hr><p>Last updated: Jun 15 2023 at 00:10 UTC</p>
