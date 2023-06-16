@@ -40,9 +40,9 @@ permalink: /index.html
 
 * [practice: thermodynamics](stream/306433-practice:-thermodynamics/index.html) (53 topics)
 
-* [practice: our work](stream/274877-practice:-our-work/index.html) (46 topics)
+* [theory: type theory](stream/229952-theory:-type-theory/index.html) (47 topics)
 
-* [theory: type theory](stream/229952-theory:-type-theory/index.html) (46 topics)
+* [practice: our work](stream/274877-practice:-our-work/index.html) (46 topics)
 
 * [MIT Categories Seminar](stream/229457-MIT-Categories-Seminar/index.html) (41 topics)
 
@@ -182,4 +182,4 @@ permalink: /index.html
 
 * [theory: alternate presentations](stream/233122-theory:-alternate-presentations/index.html) (1 topic)
 
-<hr><p>Last updated: Jun 15 2023 at 00:32 UTC</p>
+<hr><p>Last updated: Jun 16 2023 at 00:10 UTC</p>
