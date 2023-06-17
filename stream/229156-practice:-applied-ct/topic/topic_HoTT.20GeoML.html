@@ -190,6 +190,54 @@ to one  of   <br>
 
 
 
+<a name="366934787"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229156-practice%3A%20applied%20ct/topic/HoTT%20GeoML/near/366934787" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Ryan Wisnesky <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-practice:-applied-ct/topic/topic_HoTT.20GeoML.html#366934787">(Jun 16 2023 at 19:55)</a>:</h4>
+<p>Looks like there is a standard for describing all the ways shapes can overlap, called DE-9IM.  <a href="https://en.wikipedia.org/wiki/DE-9IM">https://en.wikipedia.org/wiki/DE-9IM</a> .  It defines predicates like "touches" and "crosses" and "covers"</p>
+
+
+
+<a name="366935370"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229156-practice%3A%20applied%20ct/topic/HoTT%20GeoML/near/366935370" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-practice:-applied-ct/topic/topic_HoTT.20GeoML.html#366935370">(Jun 16 2023 at 19:59)</a>:</h4>
+<p>By the way, I'm curious to know how homotopy type theory might help here: I don't see it.  For example homotopy type theory has a slick way of defining the circle, but as far as I know the really quick thing to define is the <em>homotopy type</em> of the circle, not the circle as a topological space or the circle as a manifold with a geometry like a Riemannian metric.</p>
+
+
+
+<a name="366935645"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229156-practice%3A%20applied%20ct/topic/HoTT%20GeoML/near/366935645" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-practice:-applied-ct/topic/topic_HoTT.20GeoML.html#366935645">(Jun 16 2023 at 20:00)</a>:</h4>
+<p>Of course you must be able to define the usual round circle in <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi mathvariant="double-struck">R</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">\mathbb{R}^2</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8141em;"></span><span class="mord"><span class="mord mathbb">R</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span></span></span></span> using homotopy type theory, but I'm not seeing how that offers advantages over the usual way of working with it.... at least not in relatively "mundane" applications like GeoML.</p>
+
+
+
+<a name="366938150"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229156-practice%3A%20applied%20ct/topic/HoTT%20GeoML/near/366938150" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Steve Awodey <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-practice:-applied-ct/topic/topic_HoTT.20GeoML.html#366938150">(Jun 16 2023 at 20:15)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="278008">Spencer Breiner</span> <a href="#narrow/stream/229156-practice.3A-applied-ct/topic/HoTT.20GeoML/near/366334368">said</a>:</p>
+<blockquote>
+<p>Looks cool!</p>
+<p>As far as I know, actually extracting computation from a HoTT proof is still intractable. From a <a href="https://homotopytypetheory.org/2022/06/09/the-brunerie-number-is-2/">2022 blog post</a></p>
+<blockquote>
+<p>This result is quite remarkable in that even though it is a constructive proof, it is not at all obvious how to actually compute this n. At the time of writing, we still haven’t managed to extract its value from its definition.<br>
+</p>
+</blockquote>
+</blockquote>
+<p>The big news since a year or so is that HoTT now <em>does</em> compute, using cubical Agda.  <br>
+See:<br>
+<a href="https://homotopytypetheory.org/2022/06/09/the-brunerie-number-is-2/">https://homotopytypetheory.org/2022/06/09/the-brunerie-number-is-2/</a><br>
+It's very impressive!</p>
+
+
+
+<a name="366938856"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229156-practice%3A%20applied%20ct/topic/HoTT%20GeoML/near/366938856" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Steve Awodey <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-practice:-applied-ct/topic/topic_HoTT.20GeoML.html#366938856">(Jun 16 2023 at 20:20)</a>:</h4>
+<p>the 2022 blog post that <span class="user-mention" data-user-id="278008">@Spencer Breiner</span> linked to is quoting from Brunerie's 2016 thesis <em>in order to say that the problem referred to there has now been solved</em>.</p>
+
+
+
+<a name="367013050"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229156-practice%3A%20applied%20ct/topic/HoTT%20GeoML/near/367013050" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Ryan Wisnesky <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-practice:-applied-ct/topic/topic_HoTT.20GeoML.html#367013050">(Jun 16 2023 at 22:21)</a>:</h4>
+<p>I'm not really sure if there will be any interesting information left as a result of this GML to HoTT translation; I don't really know if computing the homotopy type of the EU parliament will be useful for anything more than a cool demo (to, say, the EU parliament).  My interest here is actually about automated deduction: I'm keen to explore 'correct-by-construction' ways of manipulating not just coordinate data but things derived from it (such as topologies or homotopy types).  The realization that GML needs to be checked for consistency was eye-opening, for example.  As another  example people can prove SQL queries equivalent using HoTT (<a href="https://homotopytypetheory.org/2016/09/26/hottsql-proving-query-rewrites-with-univalent-sql-semantics/">https://homotopytypetheory.org/2016/09/26/hottsql-proving-query-rewrites-with-univalent-sql-semantics/</a>) and this kind of trick might work for e.g. GeoSPARQL too, which use primitives based on homotopy type (connectedness and whatnot), in addition to coordinates.  (And don't get me started about trying to use  RDF/OWL for this purpose).</p>
+
+
+
 {% endraw %}
 
-<hr><p>Last updated: Jun 16 2023 at 00:33 UTC</p>
+<hr><p>Last updated: Jun 17 2023 at 00:15 UTC</p>

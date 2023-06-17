@@ -9,6 +9,9 @@ permalink: /stream/229199-learning:-questions/index.html
 
 ### Topics:
 
+* [What is a fibration?](topic/topic_What.20is.20a.20fibration.3F.html) (37 messages, latest: Jun 16 2023 at 23:09)
+* [Do transduscers have a category theory formalism?](topic/topic_Do.20transduscers.20have.20a.20category.20theory.20formalism.3F.html) (1 message, latest: Jun 16 2023 at 20:24)
+* [Are monad liftings evil?](topic/topic_Are.20monad.20liftings.20evil.3F.html) (11 messages, latest: Jun 16 2023 at 17:17)
 * [Kan is to groupoid as sSet is to... what?](topic/topic_Kan.20is.20to.20groupoid.20as.20sSet.20is.20to.2E.2E.2E.20what.3F.html) (18 messages, latest: Jun 14 2023 at 17:14)
 * [✔ 2 limits in 2-categories of diagrams](topic/topic_.E2.9C.94.202.20limits.20in.202-categories.20of.20diagrams.html) (2 messages, latest: Jun 14 2023 at 11:58)
 * [homotopy 2-limits as biadjunctions](topic/topic_homotopy.202-limits.20as.20biadjunctions.html) (1 message, latest: Jun 14 2023 at 11:51)
@@ -48,7 +51,6 @@ permalink: /stream/229199-learning:-questions/index.html
 * [when is restriction of scalars monadic?](topic/topic_when.20is.20restriction.20of.20scalars.20monadic.3F.html) (29 messages, latest: May 12 2023 at 22:49)
 * [The category of monads?](topic/topic_The.20category.20of.20monads.3F.html) (3 messages, latest: May 12 2023 at 07:17)
 * [If a trace corresponds to feedback, what is cotrace?](topic/topic_If.20a.20trace.20corresponds.20to.20feedback.2C.20what.20is.20cotrace.3F.html) (45 messages, latest: May 09 2023 at 12:57)
-* [What is a fibration?](topic/topic_What.20is.20a.20fibration.3F.html) (35 messages, latest: May 09 2023 at 00:29)
 * [definition of "path" and principle of equivalence](topic/topic_definition.20of.20.22path.22.20and.20principle.20of.20equivalence.html) (26 messages, latest: May 08 2023 at 14:49)
 * [Do adjoints to projection maps  form a functor?](topic/topic_Do.20adjoints.20to.20projection.20maps.20.20form.20a.20functor.3F.html) (7 messages, latest: May 06 2023 at 06:01)
 * [Hegel dialectics](topic/topic_Hegel.20dialectics.html) (12 messages, latest: May 05 2023 at 20:55)
@@ -913,4 +915,4 @@ permalink: /stream/229199-learning:-questions/index.html
 * [Algebra (Aluffi) exercises](topic/topic_Algebra.20(Aluffi).20exercises.html) (55 messages, latest: Mar 27 2020 at 23:38)
 * [What is category theory about?](topic/topic_What.20is.20category.20theory.20about.3F.html) (16 messages, latest: Mar 26 2020 at 16:03)
 
-<hr><p>Last updated: Jun 16 2023 at 00:33 UTC</p>
+<hr><p>Last updated: Jun 17 2023 at 00:15 UTC</p>

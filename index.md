@@ -8,7 +8,7 @@ permalink: /index.html
 
 ## Streams:
 
-* [learning: questions](stream/229199-learning:-questions/index.html) (903 topics)
+* [learning: questions](stream/229199-learning:-questions/index.html) (905 topics)
 
 * [theory: category theory](stream/229136-theory:-category-theory/index.html) (410 topics)
 
@@ -182,4 +182,4 @@ permalink: /index.html
 
 * [theory: alternate presentations](stream/233122-theory:-alternate-presentations/index.html) (1 topic)
 
-<hr><p>Last updated: Jun 16 2023 at 00:33 UTC</p>
+<hr><p>Last updated: Jun 17 2023 at 00:15 UTC</p>
