@@ -9,6 +9,8 @@ permalink: /stream/229136-theory:-category-theory/index.html
 
 ### Topics:
 
+* [Regular Hyperdoctrines and Regular Categories](topic/topic_Regular.20Hyperdoctrines.20and.20Regular.20Categories.html) (3 messages, latest: Jun 17 2023 at 18:30)
+* [What do you call an object of Joyal's category $$\Theta$$?](topic/topic_What.20do.20you.20call.20an.20object.20of.20Joyal's.20category.20.24.24.5CTheta.24.24.3F.html) (24 messages, latest: Jun 17 2023 at 04:02)
 * [taking homs](topic/topic_taking.20homs.html) (8 messages, latest: Jun 14 2023 at 15:12)
 * [How is this "initial object" called?](topic/topic_How.20is.20this.20.22initial.20object.22.20called.3F.html) (5 messages, latest: Jun 12 2023 at 17:02)
 * [Local initial object](topic/topic_Local.20initial.20object.html) (1 message, latest: Jun 12 2023 at 16:59)
@@ -53,7 +55,6 @@ permalink: /stream/229136-theory:-category-theory/index.html
 * [Kan extension as lax-functorial](topic/topic_Kan.20extension.20as.20lax-functorial.html) (20 messages, latest: Feb 26 2023 at 21:20)
 * [Is my category a Kleisli category over C](topic/topic_Is.20my.20category.20a.20Kleisli.20category.20over.20C.html) (18 messages, latest: Feb 25 2023 at 22:38)
 * [Extending a monad from a co-Kleisli category](topic/topic_Extending.20a.20monad.20from.20a.20co-Kleisli.20category.html) (3 messages, latest: Feb 24 2023 at 22:41)
-* [What do you call an object of Joyal's category $$\Theta$$?](topic/topic_What.20do.20you.20call.20an.20object.20of.20Joyal's.20category.20.24.24.5CTheta.24.24.3F.html) (23 messages, latest: Feb 23 2023 at 20:37)
 * [diagrammatic vs applicative composition order](topic/topic_diagrammatic.20vs.20applicative.20composition.20order.html) (16 messages, latest: Feb 23 2023 at 20:36)
 * [A new monad from a strong monad](topic/topic_A.20new.20monad.20from.20a.20strong.20monad.html) (58 messages, latest: Feb 20 2023 at 23:49)
 * [coherence for categorical constructions](topic/topic_coherence.20for.20categorical.20constructions.html) (31 messages, latest: Feb 20 2023 at 16:59)
@@ -420,4 +421,4 @@ permalink: /stream/229136-theory:-category-theory/index.html
 * [diagrams for application](topic/topic_diagrams.20for.20application.html) (13 messages, latest: Mar 24 2020 at 06:19)
 * [universal constructions](topic/topic_universal.20constructions.html) (8 messages, latest: Mar 23 2020 at 21:06)
 
-<hr><p>Last updated: Jun 17 2023 at 00:31 UTC</p>
+<hr><p>Last updated: Jun 18 2023 at 00:11 UTC</p>
