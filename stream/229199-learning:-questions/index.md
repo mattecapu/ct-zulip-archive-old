@@ -9,6 +9,7 @@ permalink: /stream/229199-learning:-questions/index.html
 
 ### Topics:
 
+* [Non-commutation of finite limits and non-filtered colimits](topic/topic_Non-commutation.20of.20finite.20limits.20and.20non-filtered.20colimits.html) (5 messages, latest: Jun 18 2023 at 10:55)
 * [terminology for squares with injective pushout gap-maps](topic/topic_terminology.20for.20squares.20with.20injective.20pushout.20gap-maps.html) (3 messages, latest: Jun 17 2023 at 03:30)
 * [What is a fibration?](topic/topic_What.20is.20a.20fibration.3F.html) (37 messages, latest: Jun 16 2023 at 23:09)
 * [Do transduscers have a category theory formalism?](topic/topic_Do.20transduscers.20have.20a.20category.20theory.20formalism.3F.html) (1 message, latest: Jun 16 2023 at 20:24)
@@ -916,4 +917,4 @@ permalink: /stream/229199-learning:-questions/index.html
 * [Algebra (Aluffi) exercises](topic/topic_Algebra.20(Aluffi).20exercises.html) (55 messages, latest: Mar 27 2020 at 23:38)
 * [What is category theory about?](topic/topic_What.20is.20category.20theory.20about.3F.html) (16 messages, latest: Mar 26 2020 at 16:03)
 
-<hr><p>Last updated: Jun 18 2023 at 00:35 UTC</p>
+<hr><p>Last updated: Jun 19 2023 at 00:11 UTC</p>
