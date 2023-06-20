@@ -9,6 +9,8 @@ permalink: /stream/229136-theory:-category-theory/index.html
 
 ### Topics:
 
+* [Comonadicity of Presheaf Categories](topic/topic_Comonadicity.20of.20Presheaf.20Categories.html) (11 messages, latest: Jun 19 2023 at 15:34)
+* [A new monad from a strong monad](topic/topic_A.20new.20monad.20from.20a.20strong.20monad.html) (60 messages, latest: Jun 19 2023 at 01:29)
 * [Regular Hyperdoctrines and Regular Categories](topic/topic_Regular.20Hyperdoctrines.20and.20Regular.20Categories.html) (3 messages, latest: Jun 17 2023 at 18:30)
 * [What do you call an object of Joyal's category $$\Theta$$?](topic/topic_What.20do.20you.20call.20an.20object.20of.20Joyal's.20category.20.24.24.5CTheta.24.24.3F.html) (24 messages, latest: Jun 17 2023 at 04:02)
 * [taking homs](topic/topic_taking.20homs.html) (8 messages, latest: Jun 14 2023 at 15:12)
@@ -19,7 +21,6 @@ permalink: /stream/229136-theory:-category-theory/index.html
 * [Dagger compact category from bilinear form](topic/topic_Dagger.20compact.20category.20from.20bilinear.20form.html) (58 messages, latest: Jun 09 2023 at 08:25)
 * [Category of elements vs Grothendieck construction](topic/topic_Category.20of.20elements.20vs.20Grothendieck.20construction.html) (12 messages, latest: Jun 07 2023 at 19:06)
 * [copointed endofunctors with this property](topic/topic_copointed.20endofunctors.20with.20this.20property.html) (11 messages, latest: Jun 07 2023 at 07:28)
-* [Comonadicity of Presheaf Categories](topic/topic_Comonadicity.20of.20Presheaf.20Categories.html) (10 messages, latest: May 30 2023 at 21:55)
 * [The free F-algebra is a T-algebra](topic/topic_The.20free.20F-algebra.20is.20a.20T-algebra.html) (5 messages, latest: May 28 2023 at 03:03)
 * [Splitting an idempotent to quotient a monad](topic/topic_Splitting.20an.20idempotent.20to.20quotient.20a.20monad.html) (130 messages, latest: May 25 2023 at 13:06)
 * [ref request: triple categories / 3-monads](topic/topic_ref.20request.3A.20triple.20categories.20.2F.203-monads.html) (23 messages, latest: May 24 2023 at 07:09)
@@ -56,7 +57,6 @@ permalink: /stream/229136-theory:-category-theory/index.html
 * [Is my category a Kleisli category over C](topic/topic_Is.20my.20category.20a.20Kleisli.20category.20over.20C.html) (18 messages, latest: Feb 25 2023 at 22:38)
 * [Extending a monad from a co-Kleisli category](topic/topic_Extending.20a.20monad.20from.20a.20co-Kleisli.20category.html) (3 messages, latest: Feb 24 2023 at 22:41)
 * [diagrammatic vs applicative composition order](topic/topic_diagrammatic.20vs.20applicative.20composition.20order.html) (16 messages, latest: Feb 23 2023 at 20:36)
-* [A new monad from a strong monad](topic/topic_A.20new.20monad.20from.20a.20strong.20monad.html) (58 messages, latest: Feb 20 2023 at 23:49)
 * [coherence for categorical constructions](topic/topic_coherence.20for.20categorical.20constructions.html) (31 messages, latest: Feb 20 2023 at 16:59)
 * [final functors into filtered categories](topic/topic_final.20functors.20into.20filtered.20categories.html) (9 messages, latest: Feb 15 2023 at 07:29)
 * [Monad composition](topic/topic_Monad.20composition.html) (100 messages, latest: Feb 14 2023 at 15:34)
@@ -421,4 +421,4 @@ permalink: /stream/229136-theory:-category-theory/index.html
 * [diagrams for application](topic/topic_diagrams.20for.20application.html) (13 messages, latest: Mar 24 2020 at 06:19)
 * [universal constructions](topic/topic_universal.20constructions.html) (8 messages, latest: Mar 23 2020 at 21:06)
 
-<hr><p>Last updated: Jun 19 2023 at 00:34 UTC</p>
+<hr><p>Last updated: Jun 20 2023 at 00:11 UTC</p>

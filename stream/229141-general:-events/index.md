@@ -9,9 +9,9 @@ permalink: /stream/229141-general:-events/index.html
 
 ### Topics:
 
-* [ACT 2024](topic/topic_ACT.202024.html) (14 messages, latest: Jun 17 2023 at 23:10)
+* [ACT 2023](topic/topic_ACT.202023.html) (168 messages, latest: Jun 19 2023 at 21:04)
+* [ACT 2024](topic/topic_ACT.202024.html) (29 messages, latest: Jun 19 2023 at 17:53)
 * [Binary Operation](topic/topic_Binary.20Operation.html) (69 messages, latest: Jun 17 2023 at 16:07)
-* [ACT 2023](topic/topic_ACT.202023.html) (165 messages, latest: Jun 16 2023 at 19:11)
 * [CATNIP](topic/topic_CATNIP.html) (18 messages, latest: Jun 15 2023 at 11:07)
 * [ItaCa Fest 2023](topic/topic_ItaCa.20Fest.202023.html) (6 messages, latest: Jun 14 2023 at 06:59)
 * [Seminar on Applied Category Theory](topic/topic_Seminar.20on.20Applied.20Category.20Theory.html) (7 messages, latest: Jun 09 2023 at 18:28)
@@ -186,4 +186,4 @@ permalink: /stream/229141-general:-events/index.html
 * [April 1st: ACT@UCR](topic/topic_April.201st.3A.20ACT.40UCR.html) (3 messages, latest: Mar 26 2020 at 23:58)
 * [Google Sites problem](topic/topic_Google.20Sites.20problem.html) (4 messages, latest: Mar 25 2020 at 04:29)
 
-<hr><p>Last updated: Jun 19 2023 at 00:34 UTC</p>
+<hr><p>Last updated: Jun 20 2023 at 00:11 UTC</p>
