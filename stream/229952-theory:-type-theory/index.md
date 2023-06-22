@@ -9,6 +9,8 @@ permalink: /stream/229952-theory:-type-theory/index.html
 
 ### Topics:
 
+* [semisimplicial types](topic/topic_semisimplicial.20types.html) (53 messages, latest: Jun 21 2023 at 17:56)
+* [Identity type in lower universe?](topic/topic_Identity.20type.20in.20lower.20universe.3F.html) (2 messages, latest: Jun 21 2023 at 13:22)
 * [Fuzzy Type Theory](topic/topic_Fuzzy.20Type.20Theory.html) (1 message, latest: Jun 15 2023 at 23:57)
 * [2-morphisms as computation](topic/topic_2-morphisms.20as.20computation.html) (14 messages, latest: Mar 08 2023 at 10:39)
 * [relevant/affine monads & theories](topic/topic_relevant.2Faffine.20monads.20.26.20theories.html) (5 messages, latest: Sep 20 2022 at 19:46)
@@ -36,7 +38,6 @@ permalink: /stream/229952-theory:-type-theory/index.html
 * [model of univalence](topic/topic_model.20of.20univalence.html) (48 messages, latest: Jun 28 2021 at 18:10)
 * [presenting categorical semantics](topic/topic_presenting.20categorical.20semantics.html) (3 messages, latest: Jun 27 2021 at 21:10)
 * [Presenting categorical semantics](topic/topic_Presenting.20categorical.20semantics.html) (18 messages, latest: Jun 26 2021 at 15:37)
-* [semisimplicial types](topic/topic_semisimplicial.20types.html) (51 messages, latest: May 19 2021 at 19:47)
 * [Model of univalence](topic/topic_Model.20of.20univalence.html) (97 messages, latest: May 12 2021 at 21:17)
 * [applications of categorical logic](topic/topic_applications.20of.20categorical.20logic.html) (45 messages, latest: May 10 2021 at 23:28)
 * [Semisimplicial types](topic/topic_Semisimplicial.20types.html) (4 messages, latest: May 09 2021 at 22:13)
@@ -57,4 +58,4 @@ permalink: /stream/229952-theory:-type-theory/index.html
 * [stream events](topic/topic_stream.20events.html) (3 messages, latest: Apr 06 2020 at 05:32)
 * [W-types and CFGs](topic/topic_W-types.20and.20CFGs.html) (11 messages, latest: Apr 02 2020 at 16:00)
 
-<hr><p>Last updated: Jun 21 2023 at 00:32 UTC</p>
+<hr><p>Last updated: Jun 22 2023 at 00:10 UTC</p>

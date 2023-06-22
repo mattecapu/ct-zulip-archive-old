@@ -9,6 +9,7 @@ permalink: /stream/258900-practice:-our-papers/index.html
 
 ### Topics:
 
+* [Adjoint functor theorems for lax-idempotent pseudomonads](topic/topic_Adjoint.20functor.20theorems.20for.20lax-idempotent.20pseudomonads.html) (12 messages, latest: Jun 21 2023 at 19:45)
 * [String diagrams for closed monoidal categories](topic/topic_String.20diagrams.20for.20closed.20monoidal.20categories.html) (10 messages, latest: Jun 03 2023 at 07:44)
 * [The representing localic groupoid for a geometric theory](topic/topic_The.20representing.20localic.20groupoid.20for.20a.20geometric.20theory.html) (10 messages, latest: May 31 2023 at 13:49)
 * [Bifibrations of polycategories and classical MLL](topic/topic_Bifibrations.20of.20polycategories.20and.20classical.20MLL.html) (23 messages, latest: May 27 2023 at 09:54)
@@ -72,4 +73,4 @@ permalink: /stream/258900-practice:-our-papers/index.html
 * [Functorial semantics for partial theories](topic/topic_Functorial.20semantics.20for.20partial.20theories.html) (30 messages, latest: Nov 29 2020 at 08:46)
 * [Coends of higher arity](topic/topic_Coends.20of.20higher.20arity.html) (3 messages, latest: Sep 26 2020 at 16:28)
 
-<hr><p>Last updated: Jun 21 2023 at 00:32 UTC</p>
+<hr><p>Last updated: Jun 22 2023 at 00:10 UTC</p>

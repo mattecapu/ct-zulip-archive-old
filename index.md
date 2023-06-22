@@ -8,13 +8,13 @@ permalink: /index.html
 
 ## Streams:
 
-* [learning: questions](stream/229199-learning:-questions/index.html) (908 topics)
+* [learning: questions](stream/229199-learning:-questions/index.html) (910 topics)
 
 * [theory: category theory](stream/229136-theory:-category-theory/index.html) (411 topics)
 
-* [general](stream/229111-general/index.html) (256 topics)
+* [general](stream/229111-general/index.html) (257 topics)
 
-* [general: events](stream/229141-general:-events/index.html) (177 topics)
+* [general: events](stream/229141-general:-events/index.html) (178 topics)
 
 * [practice: applied ct](stream/229156-practice:-applied-ct/index.html) (146 topics)
 
@@ -28,11 +28,11 @@ permalink: /index.html
 
 * [seminar: Topos Colloquium](stream/269484-seminar:-Topos-Colloquium/index.html) (64 topics)
 
+* [practice: our papers](stream/258900-practice:-our-papers/index.html) (63 topics)
+
 * [conference: ACT 2020](stream/243068-conference:-ACT-2020/index.html) (62 topics)
 
 * [conference: ACT20](stream/243068-conference:-ACT20/index.html) (62 topics)
-
-* [practice: our papers](stream/258900-practice:-our-papers/index.html) (62 topics)
 
 * [ACT 2020](stream/243068-ACT-2020/index.html) (61 topics)
 
@@ -40,7 +40,7 @@ permalink: /index.html
 
 * [practice: thermodynamics](stream/306433-practice:-thermodynamics/index.html) (53 topics)
 
-* [theory: type theory](stream/229952-theory:-type-theory/index.html) (47 topics)
+* [theory: type theory](stream/229952-theory:-type-theory/index.html) (48 topics)
 
 * [practice: our work](stream/274877-practice:-our-work/index.html) (46 topics)
 
@@ -182,4 +182,4 @@ permalink: /index.html
 
 * [theory: alternate presentations](stream/233122-theory:-alternate-presentations/index.html) (1 topic)
 
-<hr><p>Last updated: Jun 21 2023 at 00:32 UTC</p>
+<hr><p>Last updated: Jun 22 2023 at 00:10 UTC</p>

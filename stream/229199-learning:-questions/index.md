@@ -9,7 +9,10 @@ permalink: /stream/229199-learning:-questions/index.html
 
 ### Topics:
 
-* [Cauchy complete linear categories](topic/topic_Cauchy.20complete.20linear.20categories.html) (3 messages, latest: Jun 20 2023 at 23:12)
+* [Do transducers have a category theory formalism?](topic/topic_Do.20transducers.20have.20a.20category.20theory.20formalism.3F.html) (3 messages, latest: Jun 21 2023 at 22:27)
+* [Cauchy complete linear categories](topic/topic_Cauchy.20complete.20linear.20categories.html) (8 messages, latest: Jun 21 2023 at 20:32)
+* [adjoint to decoration](topic/topic_adjoint.20to.20decoration.html) (15 messages, latest: Jun 21 2023 at 16:23)
+* [✔ homotopy 2-limits as biadjunctions](topic/topic_.E2.9C.94.20homotopy.202-limits.20as.20biadjunctions.html) (2 messages, latest: Jun 21 2023 at 10:19)
 * [Non-commutation of finite limits and non-filtered colimits](topic/topic_Non-commutation.20of.20finite.20limits.20and.20non-filtered.20colimits.html) (6 messages, latest: Jun 19 2023 at 00:55)
 * [terminology for squares with injective pushout gap-maps](topic/topic_terminology.20for.20squares.20with.20injective.20pushout.20gap-maps.html) (3 messages, latest: Jun 17 2023 at 03:30)
 * [What is a fibration?](topic/topic_What.20is.20a.20fibration.3F.html) (37 messages, latest: Jun 16 2023 at 23:09)
@@ -29,7 +32,6 @@ permalink: /stream/229199-learning:-questions/index.html
 * [Connected Category](topic/topic_Connected.20Category.html) (3 messages, latest: Jun 09 2023 at 21:34)
 * [Category equivalence and equivalence classes](topic/topic_Category.20equivalence.20and.20equivalence.20classes.html) (29 messages, latest: Jun 09 2023 at 18:25)
 * [logic inherited by functor categories](topic/topic_logic.20inherited.20by.20functor.20categories.html) (9 messages, latest: Jun 09 2023 at 01:39)
-* [adjoint to decoration](topic/topic_adjoint.20to.20decoration.html) (14 messages, latest: Jun 08 2023 at 18:48)
 * [cancellation for monadic adjunctions](topic/topic_cancellation.20for.20monadic.20adjunctions.html) (6 messages, latest: Jun 06 2023 at 10:11)
 * [Azumaya algebras](topic/topic_Azumaya.20algebras.html) (357 messages, latest: Jun 04 2023 at 21:06)
 * [f(x)=x, f'=0](topic/topic_f(x).3Dx.2C.20f'.3D0.html) (20 messages, latest: Jun 03 2023 at 08:18)
@@ -918,4 +920,4 @@ permalink: /stream/229199-learning:-questions/index.html
 * [Algebra (Aluffi) exercises](topic/topic_Algebra.20(Aluffi).20exercises.html) (55 messages, latest: Mar 27 2020 at 23:38)
 * [What is category theory about?](topic/topic_What.20is.20category.20theory.20about.3F.html) (16 messages, latest: Mar 26 2020 at 16:03)
 
-<hr><p>Last updated: Jun 21 2023 at 00:32 UTC</p>
+<hr><p>Last updated: Jun 22 2023 at 00:10 UTC</p>
