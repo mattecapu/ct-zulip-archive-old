@@ -9,8 +9,9 @@ permalink: /stream/229199-learning:-questions/index.html
 
 ### Topics:
 
+* [Well Quasi-Orders: a categorial perspective?](topic/topic_Well.20Quasi-Orders.3A.20a.20categorial.20perspective.3F.html) (7 messages, latest: Jun 22 2023 at 16:35)
+* [Cauchy complete linear categories](topic/topic_Cauchy.20complete.20linear.20categories.html) (10 messages, latest: Jun 22 2023 at 14:22)
 * [Do transducers have a category theory formalism?](topic/topic_Do.20transducers.20have.20a.20category.20theory.20formalism.3F.html) (3 messages, latest: Jun 21 2023 at 22:27)
-* [Cauchy complete linear categories](topic/topic_Cauchy.20complete.20linear.20categories.html) (8 messages, latest: Jun 21 2023 at 20:32)
 * [adjoint to decoration](topic/topic_adjoint.20to.20decoration.html) (15 messages, latest: Jun 21 2023 at 16:23)
 * [✔ homotopy 2-limits as biadjunctions](topic/topic_.E2.9C.94.20homotopy.202-limits.20as.20biadjunctions.html) (2 messages, latest: Jun 21 2023 at 10:19)
 * [Non-commutation of finite limits and non-filtered colimits](topic/topic_Non-commutation.20of.20finite.20limits.20and.20non-filtered.20colimits.html) (6 messages, latest: Jun 19 2023 at 00:55)
@@ -920,4 +921,4 @@ permalink: /stream/229199-learning:-questions/index.html
 * [Algebra (Aluffi) exercises](topic/topic_Algebra.20(Aluffi).20exercises.html) (55 messages, latest: Mar 27 2020 at 23:38)
 * [What is category theory about?](topic/topic_What.20is.20category.20theory.20about.3F.html) (16 messages, latest: Mar 26 2020 at 16:03)
 
-<hr><p>Last updated: Jun 22 2023 at 00:33 UTC</p>
+<hr><p>Last updated: Jun 23 2023 at 00:11 UTC</p>

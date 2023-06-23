@@ -316,5 +316,71 @@
         "id": 368320766,
         "sender_full_name": "Mike Shulman",
         "timestamp": 1687370214
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"626201\">finegeometer</span> <a href=\"#narrow/stream/229952-theory.3A-type-theory/topic/semisimplicial.20types/near/368318360\">said</a>:</p>\n<blockquote>\n<p>Do we even know how to <em>postulate</em> semisimplicial types?</p>\n</blockquote>\n<p>Like <span class=\"user-mention\" data-user-id=\"276777\">@Mike Shulman</span>, I also don't think we know how to do this. I made the same experience as you (<span class=\"user-mention\" data-user-id=\"626201\">@finegeometer</span>), namely that specifying directly what one expects leads to the same sort of coherence issues as the attempts to construct such a type.</p>\n<p>One workaround that I've discussed with <span class=\"user-mention\" data-user-id=\"276954\">@Josh Chen</span> a few years ago might be to define a type <code>T</code> such that an element <code>t : T</code> would give rise to a definition of semisimplicial types. That means we \"over-approximate\" the problem of semisimplicial types. Of course, we still want it to be consistent to assume that there's an element of <code>T</code>.</p>\n<p>My (only) suggestion for such a <code>T</code> is the type expressing that <a href=\"https://homotopytypetheory.org/2014/03/03/hott-should-eat-itself/\">HoTT can eat itself</a>. Here's one way how we could define <code>T</code>: First, define the notion of a wild CwF in HoTT. It's a tuple of the usual components, <code>(Con, Sub, Ty, Tm)</code>, together with substitution operations and identity types for the functor equations. However, we don't include truncation conditions or other higher categorical components (aka coherences), which is why I call this thing \"wild\". It's a very ill-behaved definition, basically an <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"normal\">∞</mi></mrow><annotation encoding=\"application/x-tex\">\\infty</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.4306em;\"></span><span class=\"mord\">∞</span></span></span></span>-category with families where almost all of the structure is removed. Usually, we avoid such ill-behaved structures like the plague, but I'd conjecture that it does the job here. The reason is that the internalised syntax, i.e., the initial set-based CwF (implemented e.g. as the <a href=\"https://dl.acm.org/doi/10.1145/2837614.2837638\">Ambrus-Thorsten syntax QIIT</a>) is such a wild CwF, and the universe (\"standard model\") is also a wild CwF, so you can ask whether there's a wild CwF morphism between them. While not a well-behaved notion, it's a finite thing that one can write down in HoTT. That's my suggestion for the type <code>T</code>.</p>\n<p>The next question is, of course, whether an element of <code>T</code> (that you could postulate) gives rise to a definition of semisimplicial types. This probably depends a bit on what exactly we mean by this. I'm pretty sure that it won't give rise to a strict/judgmental (Reedy fibrant) functor <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msubsup><mi mathvariant=\"normal\">Δ</mi><mtext mathvariant=\"sans-serif\">mono</mtext><mtext mathvariant=\"sans-serif\">op</mtext></msubsup><mo>→</mo><msub><mi mathvariant=\"script\">U</mi><mn>1</mn></msub></mrow><annotation encoding=\"application/x-tex\">\\Delta_{\\textsf{mono}}^{\\textsf{op}} \\to \\mathcal U_1</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.9303em;vertical-align:-0.247em;\"></span><span class=\"mord\"><span class=\"mord\">Δ</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.6741em;\"><span style=\"top:-2.453em;margin-left:0em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord text mtight\"><span class=\"mord textsf mtight\">mono</span></span></span></span></span><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord text mtight\"><span class=\"mord textsf mtight\">op</span></span></span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.247em;\"><span></span></span></span></span></span></span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">→</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.8333em;vertical-align:-0.15em;\"></span><span class=\"mord\"><span class=\"mord mathcal\" style=\"margin-right:0.09931em;\">U</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.3011em;\"><span style=\"top:-2.55em;margin-left:-0.0993em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">1</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span></span></span></span>. However, it's somewhat plausible to hope that it gives rise to something that is point-wise the correct thing, in the sense the it gives a function <code>SST : Nat -&gt; U</code>. One would do this by defining each <code>SST n</code> in the syntax-CwF and then transport it to the universe using the wild CwF morphism. But there are many things to be checked and constructed, and <span class=\"user-mention\" data-user-id=\"276954\">@Josh Chen</span> and I discovered that it's really not easy at all - however, I think it gives a plausible strategy....</p>\n<p>Nevertheless, assuming all of this works, a final question is whether <code>T</code> is actually \"too strong\", or whether it might be \"just right\". As we don't have a direct internalisation of the statement \"semisimplicial types can be constructed\", we can't just ask whether <code>T</code> is equivalent to it. But another conjecture is that <a href=\"https://ieeexplore.ieee.org/document/9470667\">semisimplicial types can be constructed iff HoTT eats itself</a>, which could make it reasonable to say that the described type <code>T</code> is <em>exactly</em> the type <code>semisimplicial-types-exist</code> that you were asking for.</p>\n<p>Another line of thought is this:</p>\n<p><span class=\"user-mention silent\" data-user-id=\"626201\">finegeometer</span> <a href=\"#narrow/stream/229952-theory.3A-type-theory/topic/semisimplicial.20types/near/368318360\">said</a>:</p>\n<blockquote>\n<p>we ought to be looking for ways to extend HoTT to make it simple.</p>\n</blockquote>\n<p><a href=\"https://www.cambridge.org/core/journals/mathematical-structures-in-computer-science/article/twolevel-type-theory-and-applications/4914DB4F8E8305DFC68F9CDCA9D0C8D0\">Two-level type theory (2LTT)</a> offers one way of extending HoTT. You can think of it as HoTT plus some syntax for its meta-theory. In this setting, you can essentially define a semisimplicial type to be an infinite tuple <code>(A0, A1, A2, ...)</code>, but it won't be an actual fibrant type in HoTT; instead, it will live at the outer (meta-theoretic) level. However, you can then simply add the axiom that this sort of construction <em>is</em> fibrant (i.e. lives in HoTT). In other words, it's a framework which allows you exactly to formulate postulates for HoTT such as the one you asked about.</p>",
+        "id": 368631537,
+        "sender_full_name": "Nicolai Kraus",
+        "timestamp": 1687452408
+    },
+    {
+        "content": "<blockquote>\n<p>you can then simply add the axiom that this sort of construction is fibrant</p>\n</blockquote>\n<p>By the way, this axiom may seem <em>ad hoc</em>, but it follows from the more natural-seeming axiom that \"exo-nat is cofibrant\".  (It also follows from the stronger axiom that \"exo-nat is fibrant\", but we don't know how to interpret that one in all <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"normal\">∞</mi></mrow><annotation encoding=\"application/x-tex\">\\infty</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.4306em;\"></span><span class=\"mord\">∞</span></span></span></span>-toposes, while <span class=\"user-mention\" data-user-id=\"457512\">@Elif Uskuplu</span> has verified that we can do that for \"exo-nat is cofibrant\".)</p>",
+        "id": 368660047,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1687458618
+    },
+    {
+        "content": "<p>Hmm, perhaps by \"this sort of construction\" you actually meant to refer not just to semisimplicial types but to all the constructions you can do with cofibrant exo-nat?  If so, sorry.</p>",
+        "id": 368660328,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1687458689
+    },
+    {
+        "content": "<p>On the other hand, 2LTT is a pretty big hammer, and it's unclear how practical it is in practice for actually working with semisimplicial types defined in this way, since you get a lot of exo-equalities that you have to manipulate manually.  <span class=\"user-mention\" data-user-id=\"461312\">@Astra Kolomatskaia</span> and I are currently working on a different extension of HoTT that allows the type of semisimplicial types to be defined with a single generalized sort of coinductive definition.</p>",
+        "id": 368662225,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1687459241
+    },
+    {
+        "content": "<p>It should be noted that our WIP has full semantic generality in the sense of having models in any infinity-topos. From what Mike summarised about the 2LTT paper, this should be true in 2LTT as well.</p>",
+        "id": 368716514,
+        "sender_full_name": "Astra Kolomatskaia",
+        "timestamp": 1687477980
+    },
+    {
+        "content": "<p><em>\"Doing SSTs in HoTT\"</em> is sort of an indefinite problem because we probably don't want to be overly specific by what we mean by <em>\"HoTT\"</em>. Saying <em>\"Book HoTT\"</em> seems to be a reasonably precise specification, and my intuition says that you can't do it in that setting, but one possible definition is that it is any type theory that has semantic generality in infinity-topi and has sufficiently many features that we would expect (e.g. univalence and some HITs). In which case, perhaps 2LTT solved this problem some time ago. However, the solution that Mike and I are working on has the advantage that the additional structure added to the theory is incredibly natural for SSTs and is necessary for expressing their universal property.</p>",
+        "id": 368717035,
+        "sender_full_name": "Astra Kolomatskaia",
+        "timestamp": 1687478314
+    },
+    {
+        "content": "<p>I would also like to make the point that it is possible to construct certain specific SSTs in present day Agda:<br>\n<a href=\"https://github.com/FrozenWinters/SSTs/blob/main/ZS.agda\">https://github.com/FrozenWinters/SSTs/blob/main/ZS.agda</a></p>",
+        "id": 368717203,
+        "sender_full_name": "Astra Kolomatskaia",
+        "timestamp": 1687478406
+    },
+    {
+        "content": "<p>This is code that I wrote which constructs the singular SSTs.</p>",
+        "id": 368717243,
+        "sender_full_name": "Astra Kolomatskaia",
+        "timestamp": 1687478424
+    },
+    {
+        "content": "<p>So, in particular, the following was generated by the above Agda code:</p>",
+        "id": 368717487,
+        "sender_full_name": "Astra Kolomatskaia",
+        "timestamp": 1687478552
+    },
+    {
+        "content": "<p><a href=\"/user_uploads/21317/K680SSqOWINkTIZxENs2EJST/Screenshot-2023-06-22-at-8.01.50-PM.png\">Screenshot-2023-06-22-at-8.01.50-PM.png</a></p>\n<div class=\"message_inline_image\"><a href=\"/user_uploads/21317/K680SSqOWINkTIZxENs2EJST/Screenshot-2023-06-22-at-8.01.50-PM.png\" title=\"Screenshot-2023-06-22-at-8.01.50-PM.png\"><img src=\"/user_uploads/21317/K680SSqOWINkTIZxENs2EJST/Screenshot-2023-06-22-at-8.01.50-PM.png\"></a></div>",
+        "id": 368717509,
+        "sender_full_name": "Astra Kolomatskaia",
+        "timestamp": 1687478564
+    },
+    {
+        "content": "<p>In general, see my HoTTEST talk for a preview of the WIP stuff [although a lot has changed since then]:<br>\n<a href=\"https://www.youtube.com/watch?v=fQv2FpeFxew\">https://www.youtube.com/watch?v=fQv2FpeFxew</a></p>\n<div class=\"youtube-video message_inline_image\"><a data-id=\"fQv2FpeFxew\" href=\"https://www.youtube.com/watch?v=fQv2FpeFxew\"><img src=\"https://uploads.zulipusercontent.net/09e88f166360d017f61258409fa29ab33ababd3a/68747470733a2f2f692e7974696d672e636f6d2f76692f66517632467065467865772f64656661756c742e6a7067\"></a></div>",
+        "id": 368717686,
+        "sender_full_name": "Astra Kolomatskaia",
+        "timestamp": 1687478649
     }
 ]

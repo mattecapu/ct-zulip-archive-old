@@ -9,7 +9,7 @@ permalink: /stream/229111-general/index.html
 
 ### Topics:
 
-* [introductions to category theory](topic/topic_introductions.20to.20category.20theory.html) (1 message, latest: Jun 21 2023 at 22:17)
+* [introductions to category theory](topic/topic_introductions.20to.20category.20theory.html) (2 messages, latest: Jun 22 2023 at 03:42)
 * [Introduce yourself!](topic/topic_Introduce.20yourself!.html) (95 messages, latest: Jun 20 2023 at 08:11)
 * [Compositionality](topic/topic_Compositionality.html) (89 messages, latest: Jun 17 2023 at 07:46)
 * [HoTT 2023: Poster](topic/topic_HoTT.202023.3A.20Poster.html) (1 message, latest: May 17 2023 at 17:23)
@@ -267,4 +267,4 @@ permalink: /stream/229111-general/index.html
 * [Tools for diagrams](topic/topic_Tools.20for.20diagrams.html) (78 messages, latest: Mar 25 2020 at 17:53)
 * [topic demonstration](topic/topic_topic.20demonstration.html) (2 messages, latest: Mar 23 2020 at 16:57)
 
-<hr><p>Last updated: Jun 22 2023 at 00:33 UTC</p>
+<hr><p>Last updated: Jun 23 2023 at 00:11 UTC</p>

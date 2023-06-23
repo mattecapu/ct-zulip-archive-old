@@ -9,8 +9,8 @@ permalink: /stream/229952-theory:-type-theory/index.html
 
 ### Topics:
 
-* [semisimplicial types](topic/topic_semisimplicial.20types.html) (53 messages, latest: Jun 21 2023 at 17:56)
-* [Identity type in lower universe?](topic/topic_Identity.20type.20in.20lower.20universe.3F.html) (2 messages, latest: Jun 21 2023 at 13:22)
+* [semisimplicial types](topic/topic_semisimplicial.20types.html) (64 messages, latest: Jun 23 2023 at 00:04)
+* [Identity type in lower universe?](topic/topic_Identity.20type.20in.20lower.20universe.3F.html) (9 messages, latest: Jun 22 2023 at 19:15)
 * [Fuzzy Type Theory](topic/topic_Fuzzy.20Type.20Theory.html) (1 message, latest: Jun 15 2023 at 23:57)
 * [2-morphisms as computation](topic/topic_2-morphisms.20as.20computation.html) (14 messages, latest: Mar 08 2023 at 10:39)
 * [relevant/affine monads & theories](topic/topic_relevant.2Faffine.20monads.20.26.20theories.html) (5 messages, latest: Sep 20 2022 at 19:46)
@@ -58,4 +58,4 @@ permalink: /stream/229952-theory:-type-theory/index.html
 * [stream events](topic/topic_stream.20events.html) (3 messages, latest: Apr 06 2020 at 05:32)
 * [W-types and CFGs](topic/topic_W-types.20and.20CFGs.html) (11 messages, latest: Apr 02 2020 at 16:00)
 
-<hr><p>Last updated: Jun 22 2023 at 00:33 UTC</p>
+<hr><p>Last updated: Jun 23 2023 at 00:11 UTC</p>
