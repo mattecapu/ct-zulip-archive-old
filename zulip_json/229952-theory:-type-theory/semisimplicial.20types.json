@@ -382,5 +382,35 @@
         "id": 368717686,
         "sender_full_name": "Astra Kolomatskaia",
         "timestamp": 1687478649
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276777\">Mike Shulman</span> <a href=\"#narrow/stream/229952-theory.3A-type-theory/topic/semisimplicial.20types/near/368660328\">said</a>:</p>\n<blockquote>\n<p>Hmm, perhaps by \"this sort of construction\" you actually meant to refer not just to semisimplicial types but to all the constructions you can do with cofibrant exo-nat?  If so, sorry.</p>\n</blockquote>\n<p>Well, I was very unspecific <span aria-label=\"smile\" class=\"emoji emoji-1f642\" role=\"img\" title=\"smile\">:smile:</span><br>\nI didn't mean any single precise construction here. I just meant: Say, one has \"something\" (e.g., a classifier for semisimplicial types, or a construction involving meta-theoretic natural numbers) in mind that works in a class of models that one is interested in, but one doesn't know how to talk about it in HoTT. One can then attempt to describe it as a not-necessarily-fibrant type in 2LTT and add the axiom that it is fibrant; this will give an extension of HoTT where one can study that \"thing\". I really see 2LTT as a convenient framework that allows one to formulate assumption or study meta-theoretic statements that aren't (known to be) internalisable in HoTT in any reasonable sense.</p>",
+        "id": 368847806,
+        "sender_full_name": "Nicolai Kraus",
+        "timestamp": 1687517661
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276777\">Mike Shulman</span> <a href=\"#narrow/stream/229952-theory.3A-type-theory/topic/semisimplicial.20types/near/368662225\">said</a>:</p>\n<blockquote>\n<p>On the other hand, 2LTT is a pretty big hammer, and it's unclear how practical it is in practice for actually working with semisimplicial types defined in this way, since you get a lot of exo-equalities that you have to manipulate manually.</p>\n</blockquote>\n<p>I'm not sure I agree with the hammer part, but that might be because I view 2LTT differently. While one <em>can</em> use a concrete instance of 2LTT as a setting to work with semisimplicial types, I don't see this as the primary point of 2LTT (even though this might have been Voevodsky's primary motivation for HTS, I don't know). I rather see 2LTT as a framework in which one can talk about some meta-theoretic statements without leaving the language of type theory. </p>\n<p>For example, if someone presents a new extension of HoTT (let's call it HoTT-E), I can try to understand HoTT-E as (the fibrant fragment of) an instance of 2LTT, where the inner level is HoTT, the outer (exo-) level is some version of MLTT, together with a postulate that a certain construction preserves fibrancy. HoTT-E will probably be more user-friendly and nicer for developing actualy theorems in a proof assistant in practice, because HoTT-E will probably come with judgmental computation rules that the instance of 2LTT doesn't have; however, thanks to a conservativity argument, HoTT-E still corresponds to the concrete instance of 2LTT. This way, I can try to understand what HoTT-E actually does compared to HoTT, and whatever development I know to be possible in the instance of 2LTT will be possible in HoTT-E.</p>\n<p>(It could of cause be that I can't describe HoTT-E as an instance of 2LTT in a non-trivial way that lets me related it to HoTT. But 2LTT is phrased in a very general way, so it's at least possible.)</p>\n<p>So, from the point of view of a user who uses one concrete instance of 2LTT to develop semisimplicial types, I agree that it feels like a pretty big hammer; but conceptually, it's actually a fairly trivial and straightforward thing. Do we know a model of HoTT that is not also a model of (a standard instance of) 2LTT? I'm not aware of any such model, which makes me think that having the exo-structure lying around isn't a strong assumption at all.</p>",
+        "id": 368857523,
+        "sender_full_name": "Nicolai Kraus",
+        "timestamp": 1687519595
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"461312\">Astra Kolomatskaia</span> <a href=\"#narrow/stream/229952-theory.3A-type-theory/topic/semisimplicial.20types/near/368717203\">said</a>:</p>\n<blockquote>\n<p>I would also like to make the point that it is possible to construct certain specific SSTs in present day Agda:<br>\n<a href=\"https://github.com/FrozenWinters/SSTs/blob/main/ZS.agda\">https://github.com/FrozenWinters/SSTs/blob/main/ZS.agda</a></p>\n</blockquote>\n<p>Thanks, this is nice! What does it mean for HoTT? I don't know a specification of Agda that is simple enough for me to understand it, and I found that Agda can do all sorts of stuff that I can't translate to HoTT. (Doesn't Agda have some sort of reflection? Plus the <code>REWRITE</code> pragma. I wouldn't be surprised if Agda could actually eat HoTT.)</p>",
+        "id": 368860964,
+        "sender_full_name": "Nicolai Kraus",
+        "timestamp": 1687520319
+    },
+    {
+        "content": "<blockquote>\n<p>Do we know a model of HoTT that is not also a model of (a standard instance of) 2LTT?</p>\n</blockquote>\n<p>Well, there is the conservativity theorem that every model of HoTT can be embedded in a model of 2LTT.  But probably you are also thinking of the fact that most real-world models of HoTT arise by imposing fibrancy requirements on the objects of some 1-category and thus ought to directly be the inner types in a model of 2LTT.</p>\n<p>By calling 2LTT a big hammer I didn't mean that it significantly restricted the semantic applicability of the results.  Rather I meant that it gives you a whole lot more than just SSTs.  I think this may be the crucial point:</p>\n<blockquote>\n<p>HoTT-E will probably be more user-friendly and nicer for developing actualy theorems in a proof assistant in practice, because HoTT-E will probably come with judgmental computation rules that the instance of 2LTT doesn't have</p>\n</blockquote>\n<p>In the case of SSTs, the question is how to <em>find</em> a \"HoTT-E\" that has this property.  The theory that Astra and I are developing is one candidate.  In general, we can regard the definition of SSTs in 2LTT as a \"specification\" that a putative \"type theory in which one can define SSTs\" ought to satisfy, rather than thinking of 2LTT itself as \"a type theory in which one can define SSTs\".  Does that make sense?</p>",
+        "id": 368944375,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1687535352
+    },
+    {
+        "content": "<p>Yes, that's also what I mean. Looking forward to the theory you're developing when it's completed!</p>",
+        "id": 368953336,
+        "sender_full_name": "Nicolai Kraus",
+        "timestamp": 1687537107
     }
 ]

@@ -20,7 +20,7 @@ permalink: /index.html
 
 * [general: mathematics](stream/266967-general:-mathematics/index.html) (103 topics)
 
-* [theory: topos theory](stream/230087-theory:-topos-theory/index.html) (82 topics)
+* [theory: topos theory](stream/230087-theory:-topos-theory/index.html) (83 topics)
 
 * [general: positions](stream/245502-general:-positions/index.html) (74 topics)
 
@@ -58,7 +58,7 @@ permalink: /index.html
 
 * [learning: recommendations](stream/232161-learning:-recommendations/index.html) (29 topics)
 
-* [learning: id my structure](stream/311521-learning:-id-my-structure/index.html) (27 topics)
+* [learning: id my structure](stream/311521-learning:-id-my-structure/index.html) (28 topics)
 
 * [practice: software](stream/229125-practice:-software/index.html) (25 topics)
 
@@ -182,4 +182,4 @@ permalink: /index.html
 
 * [theory: alternate presentations](stream/233122-theory:-alternate-presentations/index.html) (1 topic)
 
-<hr><p>Last updated: Jun 23 2023 at 00:36 UTC</p>
+<hr><p>Last updated: Jun 24 2023 at 00:12 UTC</p>
