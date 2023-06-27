@@ -9,8 +9,8 @@ permalink: /stream/311521-learning:-id-my-structure/index.html
 
 ### Topics:
 
-* [higher profunctors](topic/topic_higher.20profunctors.html) (21 messages, latest: Jun 24 2023 at 04:19)
-* [Reference requests for polynomial monads](topic/topic_Reference.20requests.20for.20polynomial.20monads.html) (8 messages, latest: Jun 23 2023 at 00:42)
+* [Reference requests for polynomial monads](topic/topic_Reference.20requests.20for.20polynomial.20monads.html) (11 messages, latest: Jun 26 2023 at 17:12)
+* [higher profunctors](topic/topic_higher.20profunctors.html) (23 messages, latest: Jun 26 2023 at 16:54)
 * [Strong monad law](topic/topic_Strong.20monad.20law.html) (3 messages, latest: Jun 22 2023 at 03:04)
 * [Not quite a disjoint union](topic/topic_Not.20quite.20a.20disjoint.20union.html) (1 message, latest: May 21 2023 at 06:52)
 * [Formal definition of fuzzy categories.](topic/topic_Formal.20definition.20of.20fuzzy.20categories.2E.html) (12 messages, latest: May 09 2023 at 06:11)
@@ -38,4 +38,4 @@ permalink: /stream/311521-learning:-id-my-structure/index.html
 * [stream events](topic/topic_stream.20events.html) (9 messages, latest: Jan 04 2022 at 22:35)
 * [almost a full subcategory?](topic/topic_almost.20a.20full.20subcategory.3F.html) (15 messages, latest: Jan 04 2022 at 16:42)
 
-<hr><p>Last updated: Jun 26 2023 at 00:36 UTC</p>
+<hr><p>Last updated: Jun 27 2023 at 00:11 UTC</p>

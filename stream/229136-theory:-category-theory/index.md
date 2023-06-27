@@ -9,6 +9,8 @@ permalink: /stream/229136-theory:-category-theory/index.html
 
 ### Topics:
 
+* ['free fibrations' of subobjects](topic/topic_'free.20fibrations'.20of.20subobjects.html) (5 messages, latest: Jun 26 2023 at 20:11)
+* [Wreath products](topic/topic_Wreath.20products.html) (8 messages, latest: Jun 26 2023 at 14:18)
 * [Comonadicity of Presheaf Categories](topic/topic_Comonadicity.20of.20Presheaf.20Categories.html) (11 messages, latest: Jun 19 2023 at 15:34)
 * [A new monad from a strong monad](topic/topic_A.20new.20monad.20from.20a.20strong.20monad.html) (60 messages, latest: Jun 19 2023 at 01:29)
 * [Regular Hyperdoctrines and Regular Categories](topic/topic_Regular.20Hyperdoctrines.20and.20Regular.20Categories.html) (3 messages, latest: Jun 17 2023 at 18:30)
@@ -48,7 +50,6 @@ permalink: /stream/229136-theory:-category-theory/index.html
 * [higher geometric categories](topic/topic_higher.20geometric.20categories.html) (2 messages, latest: Mar 15 2023 at 15:18)
 * [minimal and maximal objects](topic/topic_minimal.20and.20maximal.20objects.html) (19 messages, latest: Mar 13 2023 at 16:54)
 * [pulling back adjoints](topic/topic_pulling.20back.20adjoints.html) (8 messages, latest: Mar 12 2023 at 19:39)
-* [Wreath products](topic/topic_Wreath.20products.html) (7 messages, latest: Mar 11 2023 at 02:27)
 * [distributivity of limits and colimits](topic/topic_distributivity.20of.20limits.20and.20colimits.html) (204 messages, latest: Mar 10 2023 at 17:12)
 * ["expanded" composition](topic/topic_.22expanded.22.20composition.html) (11 messages, latest: Mar 10 2023 at 08:06)
 * [2-universal morphisms/biadjoints for cheap](topic/topic_2-universal.20morphisms.2Fbiadjoints.20for.20cheap.html) (14 messages, latest: Feb 28 2023 at 09:23)
@@ -421,4 +422,4 @@ permalink: /stream/229136-theory:-category-theory/index.html
 * [diagrams for application](topic/topic_diagrams.20for.20application.html) (13 messages, latest: Mar 24 2020 at 06:19)
 * [universal constructions](topic/topic_universal.20constructions.html) (8 messages, latest: Mar 23 2020 at 21:06)
 
-<hr><p>Last updated: Jun 26 2023 at 00:36 UTC</p>
+<hr><p>Last updated: Jun 27 2023 at 00:11 UTC</p>
