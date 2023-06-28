@@ -9,7 +9,8 @@ permalink: /stream/266967-general:-mathematics/index.html
 
 ### Topics:
 
-* [How to write a research statement properly?](topic/topic_How.20to.20write.20a.20research.20statement.20properly.3F.html) (16 messages, latest: Jun 26 2023 at 23:21)
+* [Embedding Set into Vect](topic/topic_Embedding.20Set.20into.20Vect.html) (3 messages, latest: Jun 27 2023 at 19:14)
+* [How to write a research statement properly?](topic/topic_How.20to.20write.20a.20research.20statement.20properly.3F.html) (22 messages, latest: Jun 27 2023 at 18:52)
 * [Azumaya algebras](topic/topic_Azumaya.20algebras.html) (52 messages, latest: Jun 22 2023 at 22:23)
 * [generalizing Wedderburn-Artin](topic/topic_generalizing.20Wedderburn-Artin.html) (53 messages, latest: Jun 14 2023 at 21:34)
 * [quaternions](topic/topic_quaternions.html) (58 messages, latest: Jun 14 2023 at 05:38)
@@ -114,4 +115,4 @@ permalink: /stream/266967-general:-mathematics/index.html
 * [the 600-cell](topic/topic_the.20600-cell.html) (5 messages, latest: Dec 01 2020 at 16:35)
 * [hermitian matrix over normed division algebra](topic/topic_hermitian.20matrix.20over.20normed.20division.20algebra.html) (8 messages, latest: Sep 28 2020 at 21:19)
 
-<hr><p>Last updated: Jun 27 2023 at 00:36 UTC</p>
+<hr><p>Last updated: Jun 28 2023 at 00:11 UTC</p>

@@ -9,7 +9,8 @@ permalink: /stream/229136-theory:-category-theory/index.html
 
 ### Topics:
 
-* ['free fibrations' of subobjects](topic/topic_'free.20fibrations'.20of.20subobjects.html) (5 messages, latest: Jun 26 2023 at 20:11)
+* [a paper by Borceaux](topic/topic_a.20paper.20by.20Borceaux.html) (8 messages, latest: Jun 27 2023 at 23:42)
+* ['free fibrations' of subobjects](topic/topic_'free.20fibrations'.20of.20subobjects.html) (21 messages, latest: Jun 27 2023 at 16:02)
 * [Wreath products](topic/topic_Wreath.20products.html) (8 messages, latest: Jun 26 2023 at 14:18)
 * [Comonadicity of Presheaf Categories](topic/topic_Comonadicity.20of.20Presheaf.20Categories.html) (11 messages, latest: Jun 19 2023 at 15:34)
 * [A new monad from a strong monad](topic/topic_A.20new.20monad.20from.20a.20strong.20monad.html) (60 messages, latest: Jun 19 2023 at 01:29)
@@ -422,4 +423,4 @@ permalink: /stream/229136-theory:-category-theory/index.html
 * [diagrams for application](topic/topic_diagrams.20for.20application.html) (13 messages, latest: Mar 24 2020 at 06:19)
 * [universal constructions](topic/topic_universal.20constructions.html) (8 messages, latest: Mar 23 2020 at 21:06)
 
-<hr><p>Last updated: Jun 27 2023 at 00:36 UTC</p>
+<hr><p>Last updated: Jun 28 2023 at 00:11 UTC</p>
