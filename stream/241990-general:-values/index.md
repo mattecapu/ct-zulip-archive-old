@@ -9,6 +9,7 @@ permalink: /stream/241990-general:-values/index.html
 
 ### Topics:
 
+* [When to exclude someone's written works or sources](topic/topic_When.20to.20exclude.20someone's.20written.20works.20or.20sources.html) (7 messages, latest: Jun 28 2023 at 23:35)
 * [The Responsibility of the Scientist Today](topic/topic_The.20Responsibility.20of.20the.20Scientist.20Today.html) (804 messages, latest: Mar 28 2023 at 09:17)
 * [Applied Categories and War](topic/topic_Applied.20Categories.20and.20War.html) (16 messages, latest: Mar 17 2023 at 19:41)
 * [Mathematics for humanity](topic/topic_Mathematics.20for.20humanity.html) (16 messages, latest: Dec 24 2022 at 21:39)
@@ -43,4 +44,4 @@ permalink: /stream/241990-general:-values/index.html
 * [stream events](topic/topic_stream.20events.html) (6 messages, latest: Jun 03 2020 at 19:22)
 * [ACT2020 tutorial day](topic/topic_ACT2020.20tutorial.20day.html) (1 message, latest: Jun 03 2020 at 18:38)
 
-<hr><p>Last updated: Jun 28 2023 at 00:37 UTC</p>
+<hr><p>Last updated: Jun 29 2023 at 00:17 UTC</p>

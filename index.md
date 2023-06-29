@@ -8,13 +8,13 @@ permalink: /index.html
 
 ## Streams:
 
-* [learning: questions](stream/229199-learning:-questions/index.html) (911 topics)
+* [learning: questions](stream/229199-learning:-questions/index.html) (912 topics)
 
-* [theory: category theory](stream/229136-theory:-category-theory/index.html) (413 topics)
+* [theory: category theory](stream/229136-theory:-category-theory/index.html) (415 topics)
 
 * [general](stream/229111-general/index.html) (257 topics)
 
-* [general: events](stream/229141-general:-events/index.html) (179 topics)
+* [general: events](stream/229141-general:-events/index.html) (180 topics)
 
 * [practice: applied ct](stream/229156-practice:-applied-ct/index.html) (146 topics)
 
@@ -40,9 +40,9 @@ permalink: /index.html
 
 * [practice: thermodynamics](stream/306433-practice:-thermodynamics/index.html) (53 topics)
 
-* [theory: type theory](stream/229952-theory:-type-theory/index.html) (48 topics)
+* [practice: our work](stream/274877-practice:-our-work/index.html) (48 topics)
 
-* [practice: our work](stream/274877-practice:-our-work/index.html) (47 topics)
+* [theory: type theory](stream/229952-theory:-type-theory/index.html) (48 topics)
 
 * [MIT Categories Seminar](stream/229457-MIT-Categories-Seminar/index.html) (41 topics)
 
@@ -52,13 +52,13 @@ permalink: /index.html
 
 * [Categorical Probability and Statistics 2020 workshop](stream/238032-Categorical-Probability-and-Statistics-2020-workshop/index.html) (34 topics)
 
-* [general: values](stream/241990-general:-values/index.html) (33 topics)
+* [general: values](stream/241990-general:-values/index.html) (34 topics)
 
 * [learning: history of ideas](stream/232163-learning:-history-of-ideas/index.html) (29 topics)
 
-* [learning: recommendations](stream/232161-learning:-recommendations/index.html) (29 topics)
+* [learning: id my structure](stream/311521-learning:-id-my-structure/index.html) (29 topics)
 
-* [learning: id my structure](stream/311521-learning:-id-my-structure/index.html) (28 topics)
+* [learning: recommendations](stream/232161-learning:-recommendations/index.html) (29 topics)
 
 * [practice: software](stream/229125-practice:-software/index.html) (25 topics)
 
@@ -182,4 +182,4 @@ permalink: /index.html
 
 * [theory: alternate presentations](stream/233122-theory:-alternate-presentations/index.html) (1 topic)
 
-<hr><p>Last updated: Jun 28 2023 at 00:37 UTC</p>
+<hr><p>Last updated: Jun 29 2023 at 00:17 UTC</p>
