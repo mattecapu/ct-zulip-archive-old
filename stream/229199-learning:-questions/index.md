@@ -9,6 +9,8 @@ permalink: /stream/229199-learning:-questions/index.html
 
 ### Topics:
 
+* [What does a slice topos classify?](topic/topic_What.20does.20a.20slice.20topos.20classify.3F.html) (1 message, latest: Jun 30 2023 at 00:08)
+* [✔ Category equivalence and equivalence classes](topic/topic_.E2.9C.94.20Category.20equivalence.20and.20equivalence.20classes.html) (3 messages, latest: Jun 29 2023 at 06:30)
 * [Cylinder object model 2-category](topic/topic_Cylinder.20object.20model.202-category.html) (3 messages, latest: Jun 28 2023 at 12:44)
 * [Well Quasi-Orders: a categorial perspective?](topic/topic_Well.20Quasi-Orders.3A.20a.20categorial.20perspective.3F.html) (7 messages, latest: Jun 22 2023 at 16:35)
 * [Cauchy complete linear categories](topic/topic_Cauchy.20complete.20linear.20categories.html) (10 messages, latest: Jun 22 2023 at 14:22)
@@ -28,7 +30,6 @@ permalink: /stream/229199-learning:-questions/index.html
 * [What is the relation between F-Algebras and Free Algebras?](topic/topic_What.20is.20the.20relation.20between.20F-Algebras.20and.20Free.20Algebras.3F.html) (11 messages, latest: Jun 11 2023 at 17:16)
 * [when are "derived" operations preserved by a functor?](topic/topic_when.20are.20.22derived.22.20operations.20preserved.20by.20a.20functor.3F.html) (32 messages, latest: Jun 10 2023 at 18:45)
 * [self-enrichment vs monoidal closed](topic/topic_self-enrichment.20vs.20monoidal.20closed.html) (15 messages, latest: Jun 10 2023 at 16:35)
-* [✔ Category equivalence and equivalence classes](topic/topic_.E2.9C.94.20Category.20equivalence.20and.20equivalence.20classes.html) (2 messages, latest: Jun 10 2023 at 16:34)
 * [2 limits in 2-categories of diagrams](topic/topic_2.20limits.20in.202-categories.20of.20diagrams.html) (23 messages, latest: Jun 10 2023 at 15:32)
 * [2 limits in 2-categories of diagrams,od](topic/topic_2.20limits.20in.202-categories.20of.20diagrams.2Cod.html) (1 message, latest: Jun 09 2023 at 23:16)
 * [Connected Category](topic/topic_Connected.20Category.html) (3 messages, latest: Jun 09 2023 at 21:34)
@@ -922,4 +923,4 @@ permalink: /stream/229199-learning:-questions/index.html
 * [Algebra (Aluffi) exercises](topic/topic_Algebra.20(Aluffi).20exercises.html) (55 messages, latest: Mar 27 2020 at 23:38)
 * [What is category theory about?](topic/topic_What.20is.20category.20theory.20about.3F.html) (16 messages, latest: Mar 26 2020 at 16:03)
 
-<hr><p>Last updated: Jun 29 2023 at 00:36 UTC</p>
+<hr><p>Last updated: Jun 30 2023 at 00:11 UTC</p>

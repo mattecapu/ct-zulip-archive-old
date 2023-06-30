@@ -9,7 +9,7 @@ permalink: /stream/229141-general:-events/index.html
 
 ### Topics:
 
-* [Interdisciplinary Summer School 2023](topic/topic_Interdisciplinary.20Summer.20School.202023.html) (4 messages, latest: Jun 28 2023 at 11:54)
+* [Interdisciplinary Summer School 2023](topic/topic_Interdisciplinary.20Summer.20School.202023.html) (7 messages, latest: Jun 29 2023 at 12:11)
 * [Topos Institute colloquium](topic/topic_Topos.20Institute.20colloquium.html) (2 messages, latest: Jun 24 2023 at 20:54)
 * [ACT 2023](topic/topic_ACT.202023.html) (175 messages, latest: Jun 23 2023 at 19:52)
 * [PSSL108](topic/topic_PSSL108.html) (1 message, latest: Jun 21 2023 at 08:46)
@@ -190,4 +190,4 @@ permalink: /stream/229141-general:-events/index.html
 * [April 1st: ACT@UCR](topic/topic_April.201st.3A.20ACT.40UCR.html) (3 messages, latest: Mar 26 2020 at 23:58)
 * [Google Sites problem](topic/topic_Google.20Sites.20problem.html) (4 messages, latest: Mar 25 2020 at 04:29)
 
-<hr><p>Last updated: Jun 29 2023 at 00:36 UTC</p>
+<hr><p>Last updated: Jun 30 2023 at 00:11 UTC</p>

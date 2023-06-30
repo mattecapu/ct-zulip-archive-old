@@ -58,5 +58,125 @@
         "id": 370455473,
         "sender_full_name": "Cole Comfort",
         "timestamp": 1687963013
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276438\">Fabrizio Genovese</span> <a href=\"#narrow/stream/266967-general.3A-mathematics/topic/Embedding.20Set.20into.20Vect/near/370448832\">said</a>:</p>\n<blockquote>\n<p><span class=\"user-mention silent\" data-user-id=\"275920\">John Baez</span> <a href=\"#narrow/stream/266967-general.3A-mathematics/topic/Embedding.20Set.20into.20Vect/near/370444089\">said</a>:</p>\n<blockquote>\n<p>Strangely the fact that every vector space is free doesn't seem to be crucial here: we are finding all the algebraic structure that a vector space gets from being free on a set,  i.e. being equipped with a basis.  This structure is called \"being a commutative special Frobenius algebra\".   But the fact that <em>every</em> vector space has the <em>property</em> that you can give it a basis doesn't seem so important.</p>\n</blockquote>\n<p>Well then my question just becomes: Can you generalize this to every category whose objects are equipped with a commutative special Frobenius algebra?</p>\n</blockquote>",
+        "id": 370825835,
+        "sender_full_name": "John Baez",
+        "timestamp": 1688052327
+    },
+    {
+        "content": "<p>I think it's not quite that general: some special facts about vector spaces are being used, like duals.   Also, the case of vector spaces over an algebraically closed field, like <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"double-struck\">C</mi></mrow><annotation encoding=\"application/x-tex\">\\mathbb{C}</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6889em;\"></span><span class=\"mord mathbb\">C</span></span></span></span> works a lot more simply than for other fields.   Aurelio Carboni has written a <a href=\"https://core.ac.uk/download/pdf/82075850.pdf\">nice paper</a> trying to generalize the idea a lot, and I'll be talking about this in future blog articles.</p>\n<p>By the way I must have been half-asleep when I wrote the above, because it's not quite right.   A <em>finite-dimensional</em> vector space with a basis gives a commutative special Frobenius algebra.  I found out how to generalize that to infinite sets yesterday, when Theo Johnson-Freyd helped me prove Conjecture 3 in my <a href=\"https://golem.ph.utexas.edu/category/2023/06/grothendieckgaloisbrauer_theor.html\">blog article</a>.</p>\n<p><strong>Conjecture 3</strong>. The category of cocommutative coseparable coalgebras in <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mrow><mi mathvariant=\"sans-serif\">V</mi><mi mathvariant=\"sans-serif\">e</mi><mi mathvariant=\"sans-serif\">c</mi><mi mathvariant=\"sans-serif\">t</mi></mrow><mi mathvariant=\"double-struck\">C</mi></msub></mrow><annotation encoding=\"application/x-tex\">\\mathsf{Vect}_{\\mathbb{C}}</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8444em;vertical-align:-0.15em;\"></span><span class=\"mord\"><span class=\"mord\"><span class=\"mord mathsf\">Vect</span></span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.3322em;\"><span style=\"top:-2.55em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mathbb mtight\">C</span></span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span></span></span></span>, and coalgebra homomorphisms between these, is equivalent to the category of sets and functions.</p>",
+        "id": 370825992,
+        "sender_full_name": "John Baez",
+        "timestamp": 1688052356
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"277391\">Cole Comfort</span> <a href=\"#narrow/stream/266967-general.3A-mathematics/topic/Embedding.20Set.20into.20Vect/near/370455473\">said</a>:</p>\n<blockquote>\n<p>I was under the impression that this correspondence between orthonormal bases and frobenius algebras only works in for finite dimensional Hilbert spaces (where the monoid/comonoid are additionally required to be adjoint to each other). </p>\n</blockquote>",
+        "id": 370829971,
+        "sender_full_name": "John Baez",
+        "timestamp": 1688053007
+    },
+    {
+        "content": "<p>Finite-dimensionality is indeed necessary to get a Frobenius algebra (all Frobenius algebras are finite-dimensional), but a Hilbert space structure is not.   It sounds like you're talking about <span class=\"user-mention\" data-user-id=\"276692\">@Bob Coecke</span>, <span class=\"user-mention\" data-user-id=\"390414\">@Jamie Vicary</span> and <span class=\"user-mention\" data-user-id=\"294557\">@dusko</span> Pavlovic's 2008 paper <a href=\"https://arxiv.org/abs/0810.0812\">A new description of orthogonal bases</a>.  This shows that equipping a finite-dimensional complex Hilbert space with an orthonormal basis is equivalent to making it into a commutative special dagger-Frobenius algebra. </p>\n<p>But my <a href=\"https://golem.ph.utexas.edu/category/2023/06/grothendieckgaloisbrauer_theor.html\">blog article</a> explains a line of work starting with Grothendieck, whose results from 1960-1961 easily imply that equipping a finite-dimensional vector space over any algebraically closed field is equivalent to making it into a commutative special Frobenius algebra!</p>\n<p>I don't know if the newer authors were familiar with this older line of work, which often goes under the name \"The fundamental theorem of Grothendieck's Galois theory\".</p>",
+        "id": 370830113,
+        "sender_full_name": "John Baez",
+        "timestamp": 1688053025
+    },
+    {
+        "content": "<p><strong>The Fundamental Theorem of Grothendieck Galois Theory</strong>. The opposite of the category of commutative separable algebras over a field <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>k</mi></mrow><annotation encoding=\"application/x-tex\">k</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6944em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.03148em;\">k</span></span></span></span> is equivalent to the category continuous actions on finite sets of the absolute Galois group of <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>k</mi></mrow><annotation encoding=\"application/x-tex\">k</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6944em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.03148em;\">k</span></span></span></span>.</p>\n<p>There's a nuance here: a separable algebra is an algebra with the <em>property</em> that there <em>exists</em> some way of making it into a commutative special Frobenius algebra.</p>",
+        "id": 370830315,
+        "sender_full_name": "John Baez",
+        "timestamp": 1688053067
+    },
+    {
+        "content": "<p>My blog article only covers the case where the Galois group is trivial, which happens when <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>k</mi></mrow><annotation encoding=\"application/x-tex\">k</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6944em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.03148em;\">k</span></span></span></span> is 'separably closed'.   To make it less intimdating, for most of the article I only talk about the example of <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"double-struck\">C</mi></mrow><annotation encoding=\"application/x-tex\">\\mathbb{C}</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6889em;\"></span><span class=\"mord mathbb\">C</span></span></span></span>.  But near the end I state and outline the proof of this:</p>\n<p><strong>Theorem</strong>. If a field <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>k</mi></mrow><annotation encoding=\"application/x-tex\">k</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6944em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.03148em;\">k</span></span></span></span> is separably closed, the opposite of the category of commutative separable algebras over <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>k</mi></mrow><annotation encoding=\"application/x-tex\">k</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6944em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.03148em;\">k</span></span></span></span> is equivalent to <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"sans-serif\">F</mi><mi mathvariant=\"sans-serif\">i</mi><mi mathvariant=\"sans-serif\">n</mi><mi mathvariant=\"sans-serif\">S</mi><mi mathvariant=\"sans-serif\">e</mi><mi mathvariant=\"sans-serif\">t</mi></mrow><annotation encoding=\"application/x-tex\">\\mathsf{FinSet}</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6944em;\"></span><span class=\"mord\"><span class=\"mord mathsf\">FinSet</span></span></span></span></span>.</p>",
+        "id": 370832637,
+        "sender_full_name": "John Baez",
+        "timestamp": 1688053471
+    },
+    {
+        "content": "<p>Another way to get Frobenius structures from bases in the context of separable hilbert spaces can be found in this old paper by me and Stefano Gogioso: <a href=\"https://arxiv.org/pdf/1605.04305.pdf\">https://arxiv.org/pdf/1605.04305.pdf</a></p>",
+        "id": 370833655,
+        "sender_full_name": "Fabrizio Genovese",
+        "timestamp": 1688053662
+    },
+    {
+        "content": "<p>The trick is more or less this: You switch to non-standard Hilbert spaces and truncate them up to to some fixed infinite natural number (a finite natural equal to the dimension of the space if you are starting from a finite dimensional one). Then you can show that for each orthonormal basis in a separable space H, you get a weakly unital, weakly special commutative dagger Frobenius algebra in the non-standard counterpart.</p>",
+        "id": 370834462,
+        "sender_full_name": "Fabrizio Genovese",
+        "timestamp": 1688053807
+    },
+    {
+        "content": "<p>I don't think this approach is particularly relevant here, I just wanted to point out that you can do this as well if you are trying to connect frobenius algebras and orthonormal bases in the infinite-dimensional case.</p>",
+        "id": 370834729,
+        "sender_full_name": "Fabrizio Genovese",
+        "timestamp": 1688053858
+    },
+    {
+        "content": "<p>Neat!  I see you tackle infinite-dimensional Hilbert spaces.   When I tackled infinite-dimensional vector spaces in my (now-proved) Conjecture 3, I needed some gadgets called 'coseparable coalgebras', which turn out to have been invented by Richard Gustavus Larsson in 1972.</p>",
+        "id": 370834868,
+        "sender_full_name": "John Baez",
+        "timestamp": 1688053878
+    },
+    {
+        "content": "<p>Bluntly put, our idea here was immensely simple: In defining the frobenius algebra from a basis, at some point you need to take a sum over all the basis vectors. If you have infinitely many, this sum is not part of your hilbert space, because it diverges. So you are missing some pieces (such as the counit), which should nevertheless 'morally exist'.</p>",
+        "id": 370835347,
+        "sender_full_name": "Fabrizio Genovese",
+        "timestamp": 1688053952
+    },
+    {
+        "content": "<p>The idea is that, modulo some details, if you go non-standard, then infinites become just numbers, that sum exists, and you are happy. Lol.</p>",
+        "id": 370835489,
+        "sender_full_name": "Fabrizio Genovese",
+        "timestamp": 1688053978
+    },
+    {
+        "content": "<p>(And yes one then has to prove that everything works as expected etc, which we did). Our main aim here was recovering the pictorial formalism in terms of spiders and string diagrams (à la 'Picturing quantum processes') also for the infinite-dimensional case.</p>",
+        "id": 370836360,
+        "sender_full_name": "Fabrizio Genovese",
+        "timestamp": 1688054175
+    },
+    {
+        "content": "<p>Nice.  The deal with coalgebras is that they allow you to avoid these infinite sums, yet still get the job done.</p>",
+        "id": 370836590,
+        "sender_full_name": "John Baez",
+        "timestamp": 1688054226
+    },
+    {
+        "content": "<p>We also had two follow up papers on this, but as time went by they got more and more closer to quantum field theory and I started understanding things less and less since I'm not a field theorists. So in the end I dropped this line of research</p>",
+        "id": 370836714,
+        "sender_full_name": "Fabrizio Genovese",
+        "timestamp": 1688054252
+    },
+    {
+        "content": "<p>Thanks for this, yes we were aware when writing the paper that it was<br>\nalready known that bases correspond to special commutative Frobenius<br>\nalgebras -- because you told us so, and we thank you for that in the paper!</p>\n<p>However this does not trivialise our results on orthogonal and orthonormal<br>\nbases. The overall situation can be summarised as follows:</p>\n<p>Arbitrary basis --- Commutative special Frobenius algebra<br>\nOrthogonal basis --- Commutative †-Frobenius algebra<br>\nOrthonormal basis --- Commutative special †-Frobenius algebra</p>\n<p>Note that in the orthogonal case, the Frobenius algebra is not special! So<br>\nthe known result does not immediately apply.</p>\n<p>This is a head-scratcher. An orthogonal basis is certainly a basis. So how<br>\nis it possible that the associated Frobenius algebra is not special?</p>\n<p>The answer is that the basis only fixes the comultiplication, as the unique<br>\nmap cloning the basis elements. The choice of the multiplication remains<br>\nfree up to a choice of scalar factor. Given an orthogonal basis which is<br>\nnot orthonormal, different choices of that scalar let you choose if you<br>\nwant the structure to be special Frobenius (and not dagger), or dagger<br>\nFrobenius (and not special.)</p>\n<p>In the case of an orthonormal basis this freedom of choice disappears.</p>",
+        "id": 370837943,
+        "sender_full_name": "Jamie Vicary",
+        "timestamp": 1688054473
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"275920\">John Baez</span> <a href=\"#narrow/stream/266967-general.3A-mathematics/topic/Embedding.20Set.20into.20Vect/near/370836590\">said</a>:</p>\n<blockquote>\n<p>Nice.  The deal with coalgebras is that they allow you to avoid these infinite sums, yet still get the job done.</p>\n</blockquote>\n<p>Yup, I'm reading about it now. In a sense it's the dual approach. You replace counits with an existential requirement as in 'this multiplication must exist', whereas we force them in the picture by making the infinite sums converge</p>",
+        "id": 370838157,
+        "sender_full_name": "Fabrizio Genovese",
+        "timestamp": 1688054506
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"390414\">Jamie Vicary</span> <a href=\"#narrow/stream/266967-general.3A-mathematics/topic/Embedding.20Set.20into.20Vect/near/370837943\">said</a>:</p>\n<blockquote>\n<p>Thanks for this, yes we were aware when writing the paper that it was<br>\nalready known that bases correspond to special commutative Frobenius<br>\nalgebras -- because you told us so, and we thank you for that in the paper!<br>\n</p>\n</blockquote>\n<p>Bwahaha - I'm getting so old and forgetful I forgot I even <em>knew</em> about that back then, much less told you, much less that you thanked me for it.</p>",
+        "id": 370854001,
+        "sender_full_name": "John Baez",
+        "timestamp": 1688057311
+    },
+    {
+        "content": "<blockquote>\n<p>However this does not trivialise our results on orthogonal and orthonormal bases.</p>\n</blockquote>\n<p>No, indeed it does not.  I wasn't trying to say that; sorry if it came across that way.  I'm just finding there to be a strange disconnect between Grothendieck's old work on separable algebras, and the work on topos theory it led to, and the newer thoughts on Frobenius algebras in quantum foundations.     They're both about 'logic', in a general sense, and how topos logic fits inside quantum logic.  But the old work never mentions the word 'quantum', and the newer work doesn't seem to pay much attention to the older work (in part because it's focused on <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"double-struck\">C</mi></mrow><annotation encoding=\"application/x-tex\">\\mathbb{C}</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6889em;\"></span><span class=\"mord mathbb\">C</span></span></span></span> rather than more general fields or commutative rings).   </p>\n<p>I could be wrong, of course - I apparently don't even know what's in <em>your</em> paper, much less all the papers that followed.   <span aria-label=\"rolling eyes\" class=\"emoji emoji-1f644\" role=\"img\" title=\"rolling eyes\">:rolling_eyes:</span>     But I feel there's some realm to be explored, that seems mainly to have gotten incursions from two separate sides.  So I want to write some blog articles about how they fit together.</p>",
+        "id": 370856285,
+        "sender_full_name": "John Baez",
+        "timestamp": 1688057765
+    },
+    {
+        "content": "<p>Now that I think about it, <span class=\"user-mention\" data-user-id=\"390414\">@Jamie Vicary</span>, I probably got interested in special Frobenius algebras from <a href=\"https://arxiv.org/abs/hep-th/9212154\">Fukuma, Hosono and Kawai's 1992 paper on 2d lattice TQFT</a>, which was later polished to mathematical perfection in two papers by <a href=\"https://arxiv.org/abs/math/0602047\">Lauda and Pfeiffer</a>.    The latter discussed strongly separable algebras in 2006, so I think by then I knew pretty well that every commutative special Frobenius algebra over <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"double-struck\">C</mi></mrow><annotation encoding=\"application/x-tex\">\\mathbb{C}</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6889em;\"></span><span class=\"mord mathbb\">C</span></span></span></span> is isomorphic to the algebra of functions on a finite set.    I also remember Aaron telling me that over non-algebraically-complete fields of characteristic  <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>p</mi></mrow><annotation encoding=\"application/x-tex\">p</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.625em;vertical-align:-0.1944em;\"></span><span class=\"mord mathnormal\">p</span></span></span></span> there are semisimple algebras that are not separable.  But at the time I regarded that as a curiosity.  Only recently have I gotten excited about the Fundamental Theorem of Grothendieck Galois Theory, which says that for every field the opposite of the category of commutative separable algebras forms the topos of continuous actions of its Galois group on finite sets!   Back when I told you something about commutative special Frobenius algebras, I had no inkling of this.    So, my attitude towards this subject has completely changed, perhaps blotting out some earlier memories.</p>",
+        "id": 370931580,
+        "sender_full_name": "John Baez",
+        "timestamp": 1688074696
     }
 ]
