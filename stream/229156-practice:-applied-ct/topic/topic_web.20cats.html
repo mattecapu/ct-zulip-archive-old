@@ -2936,6 +2936,45 @@ The major use for RDF is as a language to describe the world, whereas languages 
 
 
 
+<a name="371065156"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229156-practice%3A%20applied%20ct/topic/web%20cats/near/371065156" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Henry Story <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-practice:-applied-ct/topic/topic_web.20cats.html#371065156">(Jun 30 2023 at 09:21)</a>:</h4>
+<p>Sicne 2016  I have been very interested in the no longer maintained library called Quiver because of this very good blog post <br>
+"A Comonad of Graph Decompositions"<br>
+<a href="https://blog.higher-order.com/blog/2016/04/02/a-comonad-of-graph-decompositions/">https://blog.higher-order.com/blog/2016/04/02/a-comonad-of-graph-decompositions/</a><br>
+I had been wondering how that could be used for RDF.<br>
+I was just interested in writing a new Scala RDF library so I followed the term "Inductive Graph representation" from a paper in 2001 to discover that work had been done on inductive RDF graph representations too.<br>
+I wrote links to all the papers in this mathstodon Toot:<br>
+<a href="https://mathstodon.xyz/@bblfish/110628405269892430">https://mathstodon.xyz/@bblfish/110628405269892430</a><br>
+Do people have experience with working with such Graphs?<br>
+<a href="/user_uploads/21317/mnuS4HS3y-_2j0NEewAMgvRv/extend2.png">one of the diagrams of the Comonad blog</a></p>
+<div class="message_inline_image"><a href="/user_uploads/21317/mnuS4HS3y-_2j0NEewAMgvRv/extend2.png" title="one of the diagrams of the Comonad blog"><img src="/user_uploads/21317/mnuS4HS3y-_2j0NEewAMgvRv/extend2.png"></a></div>
+
+
+
+<a name="371068478"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229156-practice%3A%20applied%20ct/topic/web%20cats/near/371068478" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Henry Story <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-practice:-applied-ct/topic/topic_web.20cats.html#371068478">(Jun 30 2023 at 09:31)</a>:</h4>
+<p>At the same time I was also sent out some feelers to see if there was any new type of data structure for RDF I should watch out for. Jos de Roo who has been working on RDF surfaces, a way of adding negation to RDF by introducing Peirce's alpha and beta graphs<br>
+<a href="https://w3c-cg.github.io/rdfsurfaces/">https://w3c-cg.github.io/rdfsurfaces/</a><br>
+suggested I use those. But what is their data structure?</p>
+
+
+
+<a name="371070429"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229156-practice%3A%20applied%20ct/topic/web%20cats/near/371070429" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Henry Story <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-practice:-applied-ct/topic/topic_web.20cats.html#371070429">(Jun 30 2023 at 09:36)</a>:</h4>
+<p>I found that they just published a short paper <br>
+"RDF Surfaces: Computer Says No"<br>
+<a href="https://arxiv.org/pdf/2305.08476.pdf">https://arxiv.org/pdf/2305.08476.pdf</a><br>
+It defines H-graphs</p>
+<blockquote>
+<p>Given the notion of a surface and graffiti, we define an H-graph as the combination of a (typed) surface 𝑆, graffiti 𝐺𝑟, and a graph 𝐻 which is again an H-graph. Each RDF graph is an H-graph on the default positive typed surface. The empty H-graph is regarded as a tautology on a positive-typed surface and a contradiction on a negative-typed surface. By combining and nesting H-graphs any truth-functional statement can be created.<br>
+(see <a href="https://mathstodon.xyz/@bblfish/110631663379274319">https://mathstodon.xyz/@bblfish/110631663379274319</a>)</p>
+</blockquote>
+<p>That made me wonder if this this could be modelled with something like labelled directed simplicial sets. <br>
+Perhaps the apex of a pyramid groups together the graphs at the lower level as being true or false surfaces, and higher order pyramids allow a nesting of these surfaces?</p>
+<p>Anyway I was wondering what a good FP representation of such a structure would be.</p>
+
+
+
 {% endraw %}
 
-<hr><p>Last updated: Jun 30 2023 at 00:35 UTC</p>
+<hr><p>Last updated: Jul 01 2023 at 00:12 UTC</p>

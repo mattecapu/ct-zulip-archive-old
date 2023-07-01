@@ -106,11 +106,11 @@ permalink: /index.html
 
 * [conference: CT20->21](stream/298844-conference:-CT20->21/index.html) (9 topics)
 
+* [general: terminology & notation](stream/348484-general:-terminology-&-notation/index.html) (9 topics)
+
 * [languages: francais/French](stream/231124-languages:-francais/French/index.html) (9 topics)
 
 * [theory: analysis](stream/281848-theory:-analysis/index.html) (9 topics)
-
-* [general: terminology & notation](stream/348484-general:-terminology-&-notation/index.html) (8 topics)
 
 * [languages: italiano/Italian](stream/231111-languages:-italiano/Italian/index.html) (8 topics)
 
@@ -182,4 +182,4 @@ permalink: /index.html
 
 * [theory: alternate presentations](stream/233122-theory:-alternate-presentations/index.html) (1 topic)
 
-<hr><p>Last updated: Jun 30 2023 at 00:35 UTC</p>
+<hr><p>Last updated: Jul 01 2023 at 00:12 UTC</p>

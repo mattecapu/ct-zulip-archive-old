@@ -2140,5 +2140,23 @@
         "id": 338809111,
         "sender_full_name": "Alex Gryzlov",
         "timestamp": 1677670054
+    },
+    {
+        "content": "<p>Sicne 2016  I have been very interested in the no longer maintained library called Quiver because of this very good blog post <br>\n\"A Comonad of Graph Decompositions\"<br>\n<a href=\"https://blog.higher-order.com/blog/2016/04/02/a-comonad-of-graph-decompositions/\">https://blog.higher-order.com/blog/2016/04/02/a-comonad-of-graph-decompositions/</a><br>\nI had been wondering how that could be used for RDF.<br>\nI was just interested in writing a new Scala RDF library so I followed the term \"Inductive Graph representation\" from a paper in 2001 to discover that work had been done on inductive RDF graph representations too.<br>\nI wrote links to all the papers in this mathstodon Toot:<br>\n<a href=\"https://mathstodon.xyz/@bblfish/110628405269892430\">https://mathstodon.xyz/@bblfish/110628405269892430</a><br>\nDo people have experience with working with such Graphs?<br>\n<a href=\"/user_uploads/21317/mnuS4HS3y-_2j0NEewAMgvRv/extend2.png\">one of the diagrams of the Comonad blog</a></p>\n<div class=\"message_inline_image\"><a href=\"/user_uploads/21317/mnuS4HS3y-_2j0NEewAMgvRv/extend2.png\" title=\"one of the diagrams of the Comonad blog\"><img src=\"/user_uploads/21317/mnuS4HS3y-_2j0NEewAMgvRv/extend2.png\"></a></div>",
+        "id": 371065156,
+        "sender_full_name": "Henry Story",
+        "timestamp": 1688116870
+    },
+    {
+        "content": "<p>At the same time I was also sent out some feelers to see if there was any new type of data structure for RDF I should watch out for. Jos de Roo who has been working on RDF surfaces, a way of adding negation to RDF by introducing Peirce's alpha and beta graphs<br>\n<a href=\"https://w3c-cg.github.io/rdfsurfaces/\">https://w3c-cg.github.io/rdfsurfaces/</a><br>\nsuggested I use those. But what is their data structure?</p>",
+        "id": 371068478,
+        "sender_full_name": "Henry Story",
+        "timestamp": 1688117461
+    },
+    {
+        "content": "<p>I found that they just published a short paper <br>\n\"RDF Surfaces: Computer Says No\"<br>\n<a href=\"https://arxiv.org/pdf/2305.08476.pdf\">https://arxiv.org/pdf/2305.08476.pdf</a><br>\nIt defines H-graphs</p>\n<blockquote>\n<p>Given the notion of a surface and graffiti, we define an H-graph as the combination of a (typed) surface 𝑆, graffiti 𝐺𝑟, and a graph 𝐻 which is again an H-graph. Each RDF graph is an H-graph on the default positive typed surface. The empty H-graph is regarded as a tautology on a positive-typed surface and a contradiction on a negative-typed surface. By combining and nesting H-graphs any truth-functional statement can be created.<br>\n(see <a href=\"https://mathstodon.xyz/@bblfish/110631663379274319\">https://mathstodon.xyz/@bblfish/110631663379274319</a>)</p>\n</blockquote>\n<p>That made me wonder if this this could be modelled with something like labelled directed simplicial sets. <br>\nPerhaps the apex of a pyramid groups together the graphs at the lower level as being true or false surfaces, and higher order pyramids allow a nesting of these surfaces?</p>\n<p>Anyway I was wondering what a good FP representation of such a structure would be.</p>",
+        "id": 371070429,
+        "sender_full_name": "Henry Story",
+        "timestamp": 1688117792
     }
 ]

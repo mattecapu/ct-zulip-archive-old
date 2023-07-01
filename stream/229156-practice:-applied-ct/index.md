@@ -9,6 +9,7 @@ permalink: /stream/229156-practice:-applied-ct/index.html
 
 ### Topics:
 
+* [web cats](topic/topic_web.20cats.html) (360 messages, latest: Jun 30 2023 at 09:36)
 * [HoTT GeoML](topic/topic_HoTT.20GeoML.html) (29 messages, latest: Jun 16 2023 at 22:21)
 * [security + ct](topic/topic_security.20.2B.20ct.html) (70 messages, latest: Jun 08 2023 at 14:20)
 * [Graphical language for closed monoidal categories](topic/topic_Graphical.20language.20for.20closed.20monoidal.20categories.html) (34 messages, latest: Jun 01 2023 at 14:44)
@@ -18,7 +19,6 @@ permalink: /stream/229156-practice:-applied-ct/index.html
 * [categories in epidemiology](topic/topic_categories.20in.20epidemiology.html) (1 message, latest: May 03 2023 at 19:40)
 * [around machine learning](topic/topic_around.20machine.20learning.html) (64 messages, latest: Apr 23 2023 at 17:43)
 * [Applied Categories and War](topic/topic_Applied.20Categories.20and.20War.html) (1 message, latest: Mar 17 2023 at 18:05)
-* [web cats](topic/topic_web.20cats.html) (357 messages, latest: Mar 01 2023 at 11:27)
 * [properties of objects (in context of imaging)](topic/topic_properties.20of.20objects.20(in.20context.20of.20imaging).html) (9 messages, latest: Feb 08 2023 at 19:21)
 * [hyperoperators as dynamical systems](topic/topic_hyperoperators.20as.20dynamical.20systems.html) (125 messages, latest: Dec 08 2022 at 21:59)
 * [structured cospans](topic/topic_structured.20cospans.html) (21 messages, latest: Dec 08 2022 at 20:29)
@@ -156,4 +156,4 @@ permalink: /stream/229156-practice:-applied-ct/index.html
 * [AACT2020](topic/topic_AACT2020.html) (1 message, latest: Mar 24 2020 at 00:56)
 * [welcome](topic/topic_welcome.html) (15 messages, latest: Mar 24 2020 at 00:03)
 
-<hr><p>Last updated: Jun 30 2023 at 00:35 UTC</p>
+<hr><p>Last updated: Jul 01 2023 at 00:12 UTC</p>
