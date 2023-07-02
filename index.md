@@ -8,7 +8,7 @@ permalink: /index.html
 
 ## Streams:
 
-* [learning: questions](stream/229199-learning:-questions/index.html) (913 topics)
+* [learning: questions](stream/229199-learning:-questions/index.html) (914 topics)
 
 * [theory: category theory](stream/229136-theory:-category-theory/index.html) (415 topics)
 
@@ -22,7 +22,7 @@ permalink: /index.html
 
 * [theory: topos theory](stream/230087-theory:-topos-theory/index.html) (83 topics)
 
-* [general: positions](stream/245502-general:-positions/index.html) (74 topics)
+* [general: positions](stream/245502-general:-positions/index.html) (75 topics)
 
 * [theory: algebraic topology & homological algebra](stream/241590-theory:-algebraic-topology-&-homological-algebra/index.html) (73 topics)
 
@@ -66,9 +66,9 @@ permalink: /index.html
 
 * [workshop: Polynomial Functors @ Topos](stream/282140-workshop:-Polynomial-Functors-@-Topos/index.html) (22 topics)
 
-* [workshop: Categories for AI](stream/347879-workshop:-Categories-for-AI/index.html) (20 topics)
+* [philosophy](stream/229134-philosophy/index.html) (20 topics)
 
-* [philosophy](stream/229134-philosophy/index.html) (19 topics)
+* [workshop: Categories for AI](stream/347879-workshop:-Categories-for-AI/index.html) (20 topics)
 
 * [theory: physics](stream/251538-theory:-physics/index.html) (19 topics)
 
@@ -182,4 +182,4 @@ permalink: /index.html
 
 * [theory: alternate presentations](stream/233122-theory:-alternate-presentations/index.html) (1 topic)
 
-<hr><p>Last updated: Jul 01 2023 at 00:39 UTC</p>
+<hr><p>Last updated: Jul 02 2023 at 00:12 UTC</p>

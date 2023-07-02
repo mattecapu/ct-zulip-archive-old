@@ -9,7 +9,8 @@ permalink: /stream/245502-general:-positions/index.html
 
 ### Topics:
 
-* [Postdoc at São Paulo - Brazil](topic/topic_Postdoc.20at.20S.C3.A3o.20Paulo.20-.20Brazil.html) (2 messages, latest: May 24 2023 at 08:01)
+* [PhD in Utrecht](topic/topic_PhD.20in.20Utrecht.html) (1 message, latest: Jul 01 2023 at 20:12)
+* [Postdoc at São Paulo - Brazil](topic/topic_Postdoc.20at.20S.C3.A3o.20Paulo.20-.20Brazil.html) (3 messages, latest: Jul 01 2023 at 16:28)
 * [Funded Nottingham PhD Studentship 2023](topic/topic_Funded.20Nottingham.20PhD.20Studentship.202023.html) (1 message, latest: May 23 2023 at 14:39)
 * [people who have gotten jobs](topic/topic_people.20who.20have.20gotten.20jobs.html) (97 messages, latest: May 18 2023 at 02:51)
 * [Postdoc at LIPN](topic/topic_Postdoc.20at.20LIPN.html) (5 messages, latest: Apr 23 2023 at 06:47)
@@ -84,4 +85,4 @@ permalink: /stream/245502-general:-positions/index.html
 * [PhD positions in Estonia](topic/topic_PhD.20positions.20in.20Estonia.html) (1 message, latest: Jun 27 2020 at 18:04)
 * [Companies that hire category people](topic/topic_Companies.20that.20hire.20category.20people.html) (2 messages, latest: May 13 2020 at 03:50)
 
-<hr><p>Last updated: Jul 01 2023 at 00:39 UTC</p>
+<hr><p>Last updated: Jul 02 2023 at 00:12 UTC</p>

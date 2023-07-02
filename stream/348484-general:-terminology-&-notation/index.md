@@ -9,7 +9,7 @@ permalink: /stream/348484-general:-terminology-&-notation/index.html
 
 ### Topics:
 
-* [Functors sending morphisms to isomorphisms](topic/topic_Functors.20sending.20morphisms.20to.20isomorphisms.html) (7 messages, latest: Jun 30 2023 at 23:46)
+* [Functors sending morphisms to isomorphisms](topic/topic_Functors.20sending.20morphisms.20to.20isomorphisms.html) (10 messages, latest: Jul 01 2023 at 14:51)
 * [Counit of an adjunction is "separating"](topic/topic_Counit.20of.20an.20adjunction.20is.20.22separating.22.html) (22 messages, latest: May 22 2023 at 04:05)
 * [acronyms](topic/topic_acronyms.html) (3 messages, latest: Apr 19 2023 at 14:37)
 * [Notation for kan extensions and liftings](topic/topic_Notation.20for.20kan.20extensions.20and.20liftings.html) (7 messages, latest: Jan 18 2023 at 19:00)
@@ -19,4 +19,4 @@ permalink: /stream/348484-general:-terminology-&-notation/index.html
 * [stream events](topic/topic_stream.20events.html) (4 messages, latest: Nov 10 2022 at 12:29)
 * [actions, modules](topic/topic_actions.2C.20modules.html) (51 messages, latest: Oct 10 2022 at 15:34)
 
-<hr><p>Last updated: Jul 01 2023 at 00:39 UTC</p>
+<hr><p>Last updated: Jul 02 2023 at 00:12 UTC</p>
