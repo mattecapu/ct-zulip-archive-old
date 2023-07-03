@@ -9,7 +9,7 @@ permalink: /stream/229136-theory:-category-theory/index.html
 
 ### Topics:
 
-* [a paper by Borceux](topic/topic_a.20paper.20by.20Borceux.html) (2 messages, latest: Jun 28 2023 at 21:20)
+* [a paper by Borceux](topic/topic_a.20paper.20by.20Borceux.html) (3 messages, latest: Jul 02 2023 at 12:26)
 * [Classes in Category Theory](topic/topic_Classes.20in.20Category.20Theory.html) (2 messages, latest: Jun 28 2023 at 19:09)
 * [Comonadicity of Presheaf Categories](topic/topic_Comonadicity.20of.20Presheaf.20Categories.html) (13 messages, latest: Jun 28 2023 at 18:19)
 * [a paper by Borceaux](topic/topic_a.20paper.20by.20Borceaux.html) (8 messages, latest: Jun 27 2023 at 23:42)
@@ -425,4 +425,4 @@ permalink: /stream/229136-theory:-category-theory/index.html
 * [diagrams for application](topic/topic_diagrams.20for.20application.html) (13 messages, latest: Mar 24 2020 at 06:19)
 * [universal constructions](topic/topic_universal.20constructions.html) (8 messages, latest: Mar 23 2020 at 21:06)
 
-<hr><p>Last updated: Jul 02 2023 at 00:38 UTC</p>
+<hr><p>Last updated: Jul 03 2023 at 00:11 UTC</p>
