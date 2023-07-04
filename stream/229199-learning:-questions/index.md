@@ -9,6 +9,7 @@ permalink: /stream/229199-learning:-questions/index.html
 
 ### Topics:
 
+* [Doctrines, adjoints, and all that](topic/topic_Doctrines.2C.20adjoints.2C.20and.20all.20that.html) (3 messages, latest: Jul 03 2023 at 21:11)
 * [any work on dynamical system bifurcations?](topic/topic_any.20work.20on.20dynamical.20system.20bifurcations.3F.html) (3 messages, latest: Jul 02 2023 at 13:31)
 * [What does a slice topos classify?](topic/topic_What.20does.20a.20slice.20topos.20classify.3F.html) (45 messages, latest: Jul 01 2023 at 08:01)
 * [✔ Category equivalence and equivalence classes](topic/topic_.E2.9C.94.20Category.20equivalence.20and.20equivalence.20classes.html) (3 messages, latest: Jun 29 2023 at 06:30)
@@ -924,4 +925,4 @@ permalink: /stream/229199-learning:-questions/index.html
 * [Algebra (Aluffi) exercises](topic/topic_Algebra.20(Aluffi).20exercises.html) (55 messages, latest: Mar 27 2020 at 23:38)
 * [What is category theory about?](topic/topic_What.20is.20category.20theory.20about.3F.html) (16 messages, latest: Mar 26 2020 at 16:03)
 
-<hr><p>Last updated: Jul 03 2023 at 00:36 UTC</p>
+<hr><p>Last updated: Jul 04 2023 at 00:37 UTC</p>
