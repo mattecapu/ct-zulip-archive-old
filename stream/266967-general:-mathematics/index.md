@@ -9,7 +9,7 @@ permalink: /stream/266967-general:-mathematics/index.html
 
 ### Topics:
 
-* [Azumaya algebras](topic/topic_Azumaya.20algebras.html) (53 messages, latest: Jul 03 2023 at 05:26)
+* [Azumaya algebras](topic/topic_Azumaya.20algebras.html) (55 messages, latest: Jul 04 2023 at 14:31)
 * [order theory terminology](topic/topic_order.20theory.20terminology.html) (31 messages, latest: Jul 02 2023 at 10:47)
 * [Galois connections](topic/topic_Galois.20connections.html) (33 messages, latest: Jul 02 2023 at 10:34)
 * [Lawvere](topic/topic_Lawvere.html) (8 messages, latest: Jun 30 2023 at 15:40)
@@ -116,4 +116,4 @@ permalink: /stream/266967-general:-mathematics/index.html
 * [the 600-cell](topic/topic_the.20600-cell.html) (5 messages, latest: Dec 01 2020 at 16:35)
 * [hermitian matrix over normed division algebra](topic/topic_hermitian.20matrix.20over.20normed.20division.20algebra.html) (8 messages, latest: Sep 28 2020 at 21:19)
 
-<hr><p>Last updated: Jul 04 2023 at 00:37 UTC</p>
+<hr><p>Last updated: Jul 05 2023 at 00:12 UTC</p>
