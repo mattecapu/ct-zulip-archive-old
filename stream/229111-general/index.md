@@ -9,7 +9,7 @@ permalink: /stream/229111-general/index.html
 
 ### Topics:
 
-* [(pre)sheaves on homotopy equivalent spaces](topic/topic_(pre)sheaves.20on.20homotopy.20equivalent.20spaces.html) (5 messages, latest: Jul 04 2023 at 14:53)
+* [(pre)sheaves on homotopy equivalent spaces](topic/topic_(pre)sheaves.20on.20homotopy.20equivalent.20spaces.html) (6 messages, latest: Jul 06 2023 at 00:08)
 * [Compositionality](topic/topic_Compositionality.html) (90 messages, latest: Jul 02 2023 at 12:04)
 * [Introduce yourself!](topic/topic_Introduce.20yourself!.html) (99 messages, latest: Jul 02 2023 at 10:56)
 * [Looking for popular accounts of Yoneda](topic/topic_Looking.20for.20popular.20accounts.20of.20Yoneda.html) (73 messages, latest: Jun 30 2023 at 07:11)
@@ -268,4 +268,4 @@ permalink: /stream/229111-general/index.html
 * [Tools for diagrams](topic/topic_Tools.20for.20diagrams.html) (78 messages, latest: Mar 25 2020 at 17:53)
 * [topic demonstration](topic/topic_topic.20demonstration.html) (2 messages, latest: Mar 23 2020 at 16:57)
 
-<hr><p>Last updated: Jul 05 2023 at 00:36 UTC</p>
+<hr><p>Last updated: Jul 06 2023 at 00:13 UTC</p>
