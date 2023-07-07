@@ -9,7 +9,7 @@ permalink: /stream/274877-practice:-our-work/index.html
 
 ### Topics:
 
-* [John Baez](topic/topic_John.20Baez.html) (1221 messages, latest: Jul 05 2023 at 18:33)
+* [John Baez](topic/topic_John.20Baez.html) (1230 messages, latest: Jul 06 2023 at 17:27)
 * [Math 4 Wisdom](topic/topic_Math.204.20Wisdom.html) (1 message, latest: Jun 28 2023 at 03:10)
 * [talk on Poly](topic/topic_talk.20on.20Poly.html) (1 message, latest: Jun 22 2023 at 05:04)
 * [Jean-Baptiste Vienney](topic/topic_Jean-Baptiste.20Vienney.html) (103 messages, latest: Jun 03 2023 at 03:21)
@@ -58,4 +58,4 @@ permalink: /stream/274877-practice:-our-work/index.html
 * [Conor Mc Bride](topic/topic_Conor.20Mc.20Bride.html) (60 messages, latest: Apr 08 2021 at 15:15)
 * [thoughts on sharing ideas](topic/topic_thoughts.20on.20sharing.20ideas.html) (20 messages, latest: Jan 31 2021 at 03:05)
 
-<hr><p>Last updated: Jul 06 2023 at 00:37 UTC</p>
+<hr><p>Last updated: Jul 07 2023 at 00:12 UTC</p>

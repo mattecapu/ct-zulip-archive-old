@@ -9,6 +9,8 @@ permalink: /stream/229136-theory:-category-theory/index.html
 
 ### Topics:
 
+* [promonoidal kan extensions](topic/topic_promonoidal.20kan.20extensions.html) (37 messages, latest: Jul 06 2023 at 20:46)
+* [Unit cells in a virtual double category](topic/topic_Unit.20cells.20in.20a.20virtual.20double.20category.html) (7 messages, latest: Jul 06 2023 at 07:07)
 * [a paper by Borceux](topic/topic_a.20paper.20by.20Borceux.html) (4 messages, latest: Jul 03 2023 at 17:33)
 * [Classes in Category Theory](topic/topic_Classes.20in.20Category.20Theory.html) (2 messages, latest: Jun 28 2023 at 19:09)
 * [Comonadicity of Presheaf Categories](topic/topic_Comonadicity.20of.20Presheaf.20Categories.html) (13 messages, latest: Jun 28 2023 at 18:19)
@@ -425,4 +427,4 @@ permalink: /stream/229136-theory:-category-theory/index.html
 * [diagrams for application](topic/topic_diagrams.20for.20application.html) (13 messages, latest: Mar 24 2020 at 06:19)
 * [universal constructions](topic/topic_universal.20constructions.html) (8 messages, latest: Mar 23 2020 at 21:06)
 
-<hr><p>Last updated: Jul 06 2023 at 00:37 UTC</p>
+<hr><p>Last updated: Jul 07 2023 at 00:12 UTC</p>
