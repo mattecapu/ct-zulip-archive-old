@@ -9,6 +9,7 @@ permalink: /stream/229111-general/index.html
 
 ### Topics:
 
+* [✔ F. William Lawvere](topic/topic_.E2.9C.94.20F.2E.20William.20Lawvere.html) (2 messages, latest: Jul 07 2023 at 15:54)
 * [Introduce yourself!](topic/topic_Introduce.20yourself!.html) (100 messages, latest: Jul 06 2023 at 05:18)
 * [(pre)sheaves on homotopy equivalent spaces](topic/topic_(pre)sheaves.20on.20homotopy.20equivalent.20spaces.html) (6 messages, latest: Jul 06 2023 at 00:08)
 * [Compositionality](topic/topic_Compositionality.html) (90 messages, latest: Jul 02 2023 at 12:04)
@@ -268,4 +269,4 @@ permalink: /stream/229111-general/index.html
 * [Tools for diagrams](topic/topic_Tools.20for.20diagrams.html) (78 messages, latest: Mar 25 2020 at 17:53)
 * [topic demonstration](topic/topic_topic.20demonstration.html) (2 messages, latest: Mar 23 2020 at 16:57)
 
-<hr><p>Last updated: Jul 07 2023 at 00:36 UTC</p>
+<hr><p>Last updated: Jul 08 2023 at 00:11 UTC</p>

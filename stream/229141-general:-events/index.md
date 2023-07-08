@@ -9,6 +9,7 @@ permalink: /stream/229141-general:-events/index.html
 
 ### Topics:
 
+* [Visions in Math: Grothendieck](topic/topic_Visions.20in.20Math.3A.20Grothendieck.html) (4 messages, latest: Jul 07 2023 at 21:28)
 * [Interdisciplinary Summer School 2023](topic/topic_Interdisciplinary.20Summer.20School.202023.html) (9 messages, latest: Jul 04 2023 at 12:54)
 * [Topos Institute colloquium](topic/topic_Topos.20Institute.20colloquium.html) (2 messages, latest: Jun 24 2023 at 20:54)
 * [ACT 2023](topic/topic_ACT.202023.html) (175 messages, latest: Jun 23 2023 at 19:52)
@@ -22,7 +23,6 @@ permalink: /stream/229141-general:-events/index.html
 * [Seminar on Applied Category Theory](topic/topic_Seminar.20on.20Applied.20Category.20Theory.html) (7 messages, latest: Jun 09 2023 at 18:28)
 * [Enriched Categories and Topology](topic/topic_Enriched.20Categories.20and.20Topology.html) (2 messages, latest: Jun 06 2023 at 19:09)
 * [Joy of Abstraction Book Study Group](topic/topic_Joy.20of.20Abstraction.20Book.20Study.20Group.html) (2 messages, latest: Jun 03 2023 at 14:47)
-* [Visions in Math: Grothendieck](topic/topic_Visions.20in.20Math.3A.20Grothendieck.html) (2 messages, latest: May 27 2023 at 16:50)
 * [Reading Lawvere from Colombia](topic/topic_Reading.20Lawvere.20from.20Colombia.html) (2 messages, latest: May 12 2023 at 18:20)
 * [Symmetric spaces and the tenfold way](topic/topic_Symmetric.20spaces.20and.20the.20tenfold.20way.html) (3 messages, latest: May 09 2023 at 19:39)
 * [Logic in Computer Science conference](topic/topic_Logic.20in.20Computer.20Science.20conference.html) (52 messages, latest: May 06 2023 at 08:46)
@@ -190,4 +190,4 @@ permalink: /stream/229141-general:-events/index.html
 * [April 1st: ACT@UCR](topic/topic_April.201st.3A.20ACT.40UCR.html) (3 messages, latest: Mar 26 2020 at 23:58)
 * [Google Sites problem](topic/topic_Google.20Sites.20problem.html) (4 messages, latest: Mar 25 2020 at 04:29)
 
-<hr><p>Last updated: Jul 07 2023 at 00:36 UTC</p>
+<hr><p>Last updated: Jul 08 2023 at 00:11 UTC</p>
