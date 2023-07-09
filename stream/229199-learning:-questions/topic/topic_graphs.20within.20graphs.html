@@ -145,6 +145,33 @@ It is <a href="/user_uploads/21317/vYsZAyUwD7gzc_b-vFEpxC8B/image.png">pictures 
 
 
 
+<a name="373531633"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/graphs%20within%20graphs/near/373531633" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Henry Story <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/topic_graphs.20within.20graphs.html#373531633">(Jul 08 2023 at 17:14)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="277342">Robin Piedeleu</span> <a href="#narrow/stream/229199-learning.3A-questions/topic/graphs.20within.20graphs/near/373108643">said</a>:</p>
+<blockquote>
+<p>... I did not follow this whole thread and am not sure why you need this structure, but you might want to find a copy of the book and check it out.</p>
+</blockquote>
+<p>One very good presentation of RDF in terms of Category Theory from a Graph Theoretician is Benjamin Braatz's  <a href="https://api-depositonce.tu-berlin.de/server/api/core/bitstreams/5f0c5a05-9ef1-455c-8198-88d95e08071a/content">"Formal Modelling and Application of Graph Transformations in the Resource Description Framework"</a>. Graphs there are used as descriptions of the world, with various implication relations between graphs forming a category. But the graphs there are  plain labelled directed multigraphs. </p>
+<p>So we are missing the graphs within graph nodes allowed by RDF. That would also come then with some rules such as if a graph is declared to be True then it implies a graph with only the contents. </p>
+<div class="codehilite" data-code-language="Turtle"><pre><span></span><code><span class="p">{</span> <span class="p">:</span><span class="nt">snow</span> <span class="err">is</span> <span class="p">:</span><span class="nt">White</span> <span class="p">}</span> <span class="kt">a</span> <span class="nn">log</span><span class="p">:</span><span class="nt">Truth</span> <span class="p">.</span>
+</code></pre></div>
+<p>implies </p>
+<div class="codehilite" data-code-language="Turtle"><pre><span></span><code><span class="p">:</span><span class="nt">snow</span> <span class="p">:</span><span class="nt">is</span> <span class="p">:</span><span class="nt">White</span>
+</code></pre></div>
+<p>Thanks for the pointers. to Miguel Mendez's book on Set Operads. I found the notion of a product of two species <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>G</mi><mi mathvariant="normal">.</mi><mi>G</mi><mo stretchy="false">[</mo><mi>V</mi><mo stretchy="false">]</mo></mrow><annotation encoding="application/x-tex">G.G[V]</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal">G</span><span class="mord">.</span><span class="mord mathnormal">G</span><span class="mopen">[</span><span class="mord mathnormal" style="margin-right:0.22222em;">V</span><span class="mclose">]</span></span></span></span>  very interesting.<br>
+And the definition of substitution on p17. (I think they are the same thing?). But for RDF one would need  <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>G</mi><mo stretchy="false">[</mo><mi>V</mi><mo stretchy="false">]</mo><mo>+</mo><mi>G</mi><mi mathvariant="normal">.</mi><mi>G</mi><mo stretchy="false">[</mo><mi>V</mi><mo stretchy="false">]</mo><mo>+</mo><mi>G</mi><mi mathvariant="normal">.</mi><mi>G</mi><mi mathvariant="normal">.</mi><mi>G</mi><mo stretchy="false">[</mo><mi>V</mi><mo stretchy="false">]</mo><mo>+</mo><mi mathvariant="normal">.</mi><mi mathvariant="normal">.</mi><mi mathvariant="normal">.</mi><mi mathvariant="normal">.</mi></mrow><annotation encoding="application/x-tex">G[V] + G.G[V] + G.G.G[V] + .... </annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal">G</span><span class="mopen">[</span><span class="mord mathnormal" style="margin-right:0.22222em;">V</span><span class="mclose">]</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal">G</span><span class="mord">.</span><span class="mord mathnormal">G</span><span class="mopen">[</span><span class="mord mathnormal" style="margin-right:0.22222em;">V</span><span class="mclose">]</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal">G</span><span class="mord">.</span><span class="mord mathnormal">G</span><span class="mord">.</span><span class="mord mathnormal">G</span><span class="mopen">[</span><span class="mord mathnormal" style="margin-right:0.22222em;">V</span><span class="mclose">]</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.1056em;"></span><span class="mord">....</span></span></span></span><br>
+But that structure may require the nesting of graphs at each node to be the same, whereas in RDF some nodes can be named, others can contain literals like numbers or strings, and other nodes can contain graphs, others graphs of graphs, etc....</p>
+<p>That feels like something like labelled directed simplicial sets, where the head of a pyramid connects the graphs below.  <span class="user-mention" data-user-id="390165">@Eric Neumann</span> had some more elaborated thoughts on that that I have.</p>
+<p>As for the nu operator defined on page 24 as  </p>
+<blockquote>
+<p>η : G+(G+) → G+ </p>
+</blockquote>
+<p>that seems more like what is usually called the flatten or <code>mu</code> natural transformation,  of a monad, right?<br>
+I don't see that as being that useful for RDF. The flattening of graphs within graphs does not seem to have that interesting an interpretation in a declarative logic.</p>
+<p>The main interest for graphs within nodes is that it allows contexts for who said what or where information came from to be kept, which is essential when dealing with data on the web.</p>
+
+
+
 {% endraw %}
 
-<hr><p>Last updated: Jul 08 2023 at 00:36 UTC</p>
+<hr><p>Last updated: Jul 09 2023 at 00:13 UTC</p>
