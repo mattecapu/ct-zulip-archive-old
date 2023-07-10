@@ -9,8 +9,8 @@ permalink: /stream/311521-learning:-id-my-structure/index.html
 
 ### Topics:
 
+* [Reference requests for polynomial monads](topic/topic_Reference.20requests.20for.20polynomial.20monads.html) (12 messages, latest: Jul 09 2023 at 14:06)
 * [Double category of presheaves](topic/topic_Double.20category.20of.20presheaves.html) (14 messages, latest: Jul 02 2023 at 19:38)
-* [Reference requests for polynomial monads](topic/topic_Reference.20requests.20for.20polynomial.20monads.html) (11 messages, latest: Jun 26 2023 at 17:12)
 * [higher profunctors](topic/topic_higher.20profunctors.html) (23 messages, latest: Jun 26 2023 at 16:54)
 * [Strong monad law](topic/topic_Strong.20monad.20law.html) (3 messages, latest: Jun 22 2023 at 03:04)
 * [Not quite a disjoint union](topic/topic_Not.20quite.20a.20disjoint.20union.html) (1 message, latest: May 21 2023 at 06:52)
@@ -39,4 +39,4 @@ permalink: /stream/311521-learning:-id-my-structure/index.html
 * [stream events](topic/topic_stream.20events.html) (9 messages, latest: Jan 04 2022 at 22:35)
 * [almost a full subcategory?](topic/topic_almost.20a.20full.20subcategory.3F.html) (15 messages, latest: Jan 04 2022 at 16:42)
 
-<hr><p>Last updated: Jul 09 2023 at 00:41 UTC</p>
+<hr><p>Last updated: Jul 10 2023 at 00:12 UTC</p>
