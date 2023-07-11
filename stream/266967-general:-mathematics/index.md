@@ -9,8 +9,9 @@ permalink: /stream/266967-general:-mathematics/index.html
 
 ### Topics:
 
-* [monoidal categories](topic/topic_monoidal.20categories.html) (29 messages, latest: Jul 09 2023 at 19:17)
-* [Profinite groups](topic/topic_Profinite.20groups.html) (43 messages, latest: Jul 09 2023 at 15:32)
+* [a physical adjunction?](topic/topic_a.20physical.20adjunction.3F.html) (2 messages, latest: Jul 10 2023 at 19:14)
+* [monoidal categories](topic/topic_monoidal.20categories.html) (34 messages, latest: Jul 10 2023 at 18:33)
+* [Profinite groups](topic/topic_Profinite.20groups.html) (60 messages, latest: Jul 10 2023 at 17:12)
 * [Azumaya algebras](topic/topic_Azumaya.20algebras.html) (55 messages, latest: Jul 04 2023 at 14:31)
 * [order theory terminology](topic/topic_order.20theory.20terminology.html) (31 messages, latest: Jul 02 2023 at 10:47)
 * [Galois connections](topic/topic_Galois.20connections.html) (33 messages, latest: Jul 02 2023 at 10:34)
@@ -118,4 +119,4 @@ permalink: /stream/266967-general:-mathematics/index.html
 * [the 600-cell](topic/topic_the.20600-cell.html) (5 messages, latest: Dec 01 2020 at 16:35)
 * [hermitian matrix over normed division algebra](topic/topic_hermitian.20matrix.20over.20normed.20division.20algebra.html) (8 messages, latest: Sep 28 2020 at 21:19)
 
-<hr><p>Last updated: Jul 10 2023 at 00:38 UTC</p>
+<hr><p>Last updated: Jul 11 2023 at 00:12 UTC</p>

@@ -9,14 +9,15 @@ permalink: /stream/232163-learning:-history-of-ideas/index.html
 
 ### Topics:
 
+* [✔ What Moore is the Moore of monad algebras?](topic/topic_.E2.9C.94.20What.20Moore.20is.20the.20Moore.20of.20monad.20algebras.3F.html) (9 messages, latest: Jul 10 2023 at 08:14)
+* [Quality Zero](topic/topic_Quality.20Zero.html) (2 messages, latest: Jul 10 2023 at 04:31)
+* [Zero (origins)](topic/topic_Zero.20(origins).html) (2 messages, latest: Jul 10 2023 at 04:31)
 * [Old CT lecture notes](topic/topic_Old.20CT.20lecture.20notes.html) (7 messages, latest: May 07 2023 at 15:35)
-* [✔ What Moore is the Moore of monad algebras?](topic/topic_.E2.9C.94.20What.20Moore.20is.20the.20Moore.20of.20monad.20algebras.3F.html) (6 messages, latest: Jan 25 2023 at 10:30)
 * [Lax functors in Span & their Grothendieck construction](topic/topic_Lax.20functors.20in.20Span.20.26.20their.20Grothendieck.20construction.html) (4 messages, latest: Oct 29 2022 at 11:55)
 * [lax functors in Span & their Grothendieck construction](topic/topic_lax.20functors.20in.20Span.20.26.20their.20Grothendieck.20construction.html) (28 messages, latest: Oct 28 2022 at 21:10)
 * [✔ opposite categories](topic/topic_.E2.9C.94.20opposite.20categories.html) (5 messages, latest: Sep 14 2022 at 00:55)
 * [history of 2-groups](topic/topic_history.20of.202-groups.html) (2 messages, latest: Aug 29 2022 at 07:12)
 * [History of 2-groups](topic/topic_History.20of.202-groups.html) (1 message, latest: Aug 26 2022 at 13:34)
-* [Zero (origins)](topic/topic_Zero.20(origins).html) (1 message, latest: Feb 27 2022 at 08:43)
 * [Origin of use of the symbol '⊶'](topic/topic_Origin.20of.20use.20of.20the.20symbol.20'.E2.8A.B6'.html) (3 messages, latest: Sep 07 2021 at 13:26)
 * [HIstory of Ideas AMA: John Baez](topic/topic_HIstory.20of.20Ideas.20AMA.3A.20John.20Baez.html) (24 messages, latest: Sep 07 2021 at 12:08)
 * [precursors of category theory](topic/topic_precursors.20of.20category.20theory.html) (12 messages, latest: Jun 01 2021 at 11:42)
@@ -39,4 +40,4 @@ permalink: /stream/232163-learning:-history-of-ideas/index.html
 * [All things Feynman](topic/topic_All.20things.20Feynman.html) (2 messages, latest: May 22 2020 at 06:04)
 * [stream events](topic/topic_stream.20events.html) (2 messages, latest: Apr 06 2020 at 18:15)
 
-<hr><p>Last updated: Jul 10 2023 at 00:38 UTC</p>
+<hr><p>Last updated: Jul 11 2023 at 00:12 UTC</p>
