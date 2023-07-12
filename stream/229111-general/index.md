@@ -9,7 +9,8 @@ permalink: /stream/229111-general/index.html
 
 ### Topics:
 
-* [Looking for popular accounts of Yoneda](topic/topic_Looking.20for.20popular.20accounts.20of.20Yoneda.html) (79 messages, latest: Jul 10 2023 at 21:58)
+* [Looking for popular accounts of Yoneda](topic/topic_Looking.20for.20popular.20accounts.20of.20Yoneda.html) (80 messages, latest: Jul 11 2023 at 19:47)
+* [Unity-respecting Change](topic/topic_Unity-respecting.20Change.html) (1 message, latest: Jul 11 2023 at 05:16)
 * [Introduce yourself!](topic/topic_Introduce.20yourself!.html) (103 messages, latest: Jul 10 2023 at 07:11)
 * [Compositionality](topic/topic_Compositionality.html) (92 messages, latest: Jul 09 2023 at 21:26)
 * [ACT 2023](topic/topic_ACT.202023.html) (1 message, latest: Jul 09 2023 at 13:20)
@@ -271,4 +272,4 @@ permalink: /stream/229111-general/index.html
 * [Tools for diagrams](topic/topic_Tools.20for.20diagrams.html) (78 messages, latest: Mar 25 2020 at 17:53)
 * [topic demonstration](topic/topic_topic.20demonstration.html) (2 messages, latest: Mar 23 2020 at 16:57)
 
-<hr><p>Last updated: Jul 11 2023 at 00:33 UTC</p>
+<hr><p>Last updated: Jul 12 2023 at 00:11 UTC</p>
