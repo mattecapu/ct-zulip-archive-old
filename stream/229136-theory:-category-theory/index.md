@@ -9,6 +9,7 @@ permalink: /stream/229136-theory:-category-theory/index.html
 
 ### Topics:
 
+* [Double category whose vertical category is a 2-category](topic/topic_Double.20category.20whose.20vertical.20category.20is.20a.202-category.html) (1 message, latest: Jul 13 2023 at 00:32)
 * [modules over rig categories](topic/topic_modules.20over.20rig.20categories.html) (12 messages, latest: Jul 11 2023 at 15:35)
 * [promonoidal kan extensions](topic/topic_promonoidal.20kan.20extensions.html) (39 messages, latest: Jul 10 2023 at 16:48)
 * [Unit cells in a virtual double category](topic/topic_Unit.20cells.20in.20a.20virtual.20double.20category.html) (7 messages, latest: Jul 06 2023 at 07:07)
@@ -428,4 +429,4 @@ permalink: /stream/229136-theory:-category-theory/index.html
 * [diagrams for application](topic/topic_diagrams.20for.20application.html) (13 messages, latest: Mar 24 2020 at 06:19)
 * [universal constructions](topic/topic_universal.20constructions.html) (8 messages, latest: Mar 23 2020 at 21:06)
 
-<hr><p>Last updated: Jul 13 2023 at 00:11 UTC</p>
+<hr><p>Last updated: Jul 13 2023 at 00:37 UTC</p>
