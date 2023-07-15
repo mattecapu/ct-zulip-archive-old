@@ -9,6 +9,7 @@ permalink: /stream/229199-learning:-questions/index.html
 
 ### Topics:
 
+* [How to understand this structure in Category Theory?](topic/topic_How.20to.20understand.20this.20structure.20in.20Category.20Theory.3F.html) (5 messages, latest: Jul 14 2023 at 20:12)
 * [Doctrines, adjoints, and all that](topic/topic_Doctrines.2C.20adjoints.2C.20and.20all.20that.html) (12 messages, latest: Jul 12 2023 at 20:32)
 * [graphs within graphs](topic/topic_graphs.20within.20graphs.html) (19 messages, latest: Jul 09 2023 at 12:28)
 * [What does a slice topos classify?](topic/topic_What.20does.20a.20slice.20topos.20classify.3F.html) (50 messages, latest: Jul 07 2023 at 18:50)
@@ -926,4 +927,4 @@ permalink: /stream/229199-learning:-questions/index.html
 * [Algebra (Aluffi) exercises](topic/topic_Algebra.20(Aluffi).20exercises.html) (55 messages, latest: Mar 27 2020 at 23:38)
 * [What is category theory about?](topic/topic_What.20is.20category.20theory.20about.3F.html) (16 messages, latest: Mar 26 2020 at 16:03)
 
-<hr><p>Last updated: Jul 14 2023 at 00:38 UTC</p>
+<hr><p>Last updated: Jul 15 2023 at 00:12 UTC</p>
