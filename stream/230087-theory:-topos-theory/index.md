@@ -9,6 +9,7 @@ permalink: /stream/230087-theory:-topos-theory/index.html
 
 ### Topics:
 
+* [Freely Adjoining A Subobject Classifier](topic/topic_Freely.20Adjoining.20A.20Subobject.20Classifier.html) (25 messages, latest: Jul 15 2023 at 19:38)
 * [subobjects of products](topic/topic_subobjects.20of.20products.html) (10 messages, latest: Jun 23 2023 at 15:39)
 * [Doing category theory in a topos](topic/topic_Doing.20category.20theory.20in.20a.20topos.html) (14 messages, latest: May 28 2023 at 18:22)
 * [classifying (infinity,1)-topos](topic/topic_classifying.20(infinity.2C1)-topos.html) (2 messages, latest: Apr 28 2023 at 18:36)
@@ -93,4 +94,4 @@ permalink: /stream/230087-theory:-topos-theory/index.html
 * [right adjoint to inclusion of sheaves?](topic/topic_right.20adjoint.20to.20inclusion.20of.20sheaves.3F.html) (18 messages, latest: Mar 30 2020 at 09:37)
 * [essential geometric morphism](topic/topic_essential.20geometric.20morphism.html) (2 messages, latest: Mar 27 2020 at 18:56)
 
-<hr><p>Last updated: Jul 15 2023 at 00:37 UTC</p>
+<hr><p>Last updated: Jul 16 2023 at 00:13 UTC</p>

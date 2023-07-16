@@ -18,11 +18,11 @@ permalink: /index.html
 
 * [practice: applied ct](stream/229156-practice:-applied-ct/index.html) (146 topics)
 
-* [general: mathematics](stream/266967-general:-mathematics/index.html) (109 topics)
+* [general: mathematics](stream/266967-general:-mathematics/index.html) (110 topics)
 
-* [theory: topos theory](stream/230087-theory:-topos-theory/index.html) (83 topics)
+* [theory: topos theory](stream/230087-theory:-topos-theory/index.html) (84 topics)
 
-* [general: positions](stream/245502-general:-positions/index.html) (75 topics)
+* [general: positions](stream/245502-general:-positions/index.html) (76 topics)
 
 * [theory: algebraic topology & homological algebra](stream/241590-theory:-algebraic-topology-&-homological-algebra/index.html) (73 topics)
 
@@ -182,4 +182,4 @@ permalink: /index.html
 
 * [theory: alternate presentations](stream/233122-theory:-alternate-presentations/index.html) (1 topic)
 
-<hr><p>Last updated: Jul 15 2023 at 00:37 UTC</p>
+<hr><p>Last updated: Jul 16 2023 at 00:13 UTC</p>

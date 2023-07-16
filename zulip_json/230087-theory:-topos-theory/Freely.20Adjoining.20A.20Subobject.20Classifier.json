@@ -1,0 +1,152 @@
+[
+    {
+        "content": "<p>If I understand correctly, the elementary topoi are algebras for a 2-monad on Cat (enriched in groupoids, for technical reasons). This is basically because an elementary topos is a category with ~bonus structure~ (finite limits, cartesian closed, and a subobject classifier) in much the same way that rings are algebras for a monad on Set, since a ring is a set with ~bonus structure~ (0,1,sums,products).</p>\n<p>Then there is a forgetful functor from elementary topoi to finitely complete cartesian closed categories (forget the subobject classifier), which by abstract nonsense must have a left biadjoint (freely add a subobject classifier).</p>\n<p>Does anyone know if this biadjoint has been studied? For instance, do we know which elementary topoi are free in this sense? I have to imagine the biadjoint is difficult to describe explicitly, which probably makes it quite hard to study. But I'd be excited to be proven wrong</p>",
+        "id": 375432969,
+        "sender_full_name": "Chris Grossack (they/them)",
+        "timestamp": 1689388455
+    },
+    {
+        "content": "<p>Hi!   It's great to see you here!   And now, before I make some comments: in case anyone thinks I'm being tough on Chris, I should mention that they're a grad student at UCR, we're friends, and we joke around a fair amount.   </p>\n<p>I'll just say a bit until the people who actually know topos theory show up.</p>\n<blockquote>\n<p>Then there is a forgetful functor from elementary topoi to finitely complete cartesian closed categories (forget the subobject classifier), which by abstract nonsense must have a left biadjoint (freely add a subobject classifier). </p>\n</blockquote>\n<p>Unless you used some sort of categorified adjoint functor theorem to prove this left biajdoint exists, I'm guessing this \"must\" is of the moral sort, i.e. it <em>should</em> happen, or else <a href=\"/user_uploads/21317/cTnpo0rSwWLxt5QDzI9eQ4XA/i_will_be_sad.jpg\">I will be sad</a>:</p>\n<div class=\"message_inline_image\"><a href=\"/user_uploads/21317/cTnpo0rSwWLxt5QDzI9eQ4XA/i_will_be_sad.jpg\" title=\"I will be sad\"><img src=\"/user_uploads/21317/cTnpo0rSwWLxt5QDzI9eQ4XA/i_will_be_sad.jpg\"></a></div>",
+        "id": 375492641,
+        "sender_full_name": "John Baez",
+        "timestamp": 1689414262
+    },
+    {
+        "content": "<p>Anyway, it's a neat idea.   If you take the finitely complete cartesian closed category of finite sets, <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"sans-serif\">F</mi><mi mathvariant=\"sans-serif\">i</mi><mi mathvariant=\"sans-serif\">n</mi><mi mathvariant=\"sans-serif\">S</mi><mi mathvariant=\"sans-serif\">e</mi><mi mathvariant=\"sans-serif\">t</mi></mrow><annotation encoding=\"application/x-tex\">\\mathsf{FinSet}</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6944em;\"></span><span class=\"mord\"><span class=\"mord mathsf\">FinSet</span></span></span></span></span>, and \"freely throw in a subobject classifier\", what are you expecting to get?</p>",
+        "id": 375492964,
+        "sender_full_name": "John Baez",
+        "timestamp": 1689414347
+    },
+    {
+        "content": "<p>Are you expecting to get <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"sans-serif\">F</mi><mi mathvariant=\"sans-serif\">i</mi><mi mathvariant=\"sans-serif\">n</mi><mi mathvariant=\"sans-serif\">S</mi><mi mathvariant=\"sans-serif\">e</mi><mi mathvariant=\"sans-serif\">t</mi></mrow><annotation encoding=\"application/x-tex\">\\mathsf{FinSet}</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6944em;\"></span><span class=\"mord\"><span class=\"mord mathsf\">FinSet</span></span></span></span></span>, with its usual subobject classifer, or some strange thing with a new subobject classifier?</p>",
+        "id": 375493186,
+        "sender_full_name": "John Baez",
+        "timestamp": 1689414396
+    },
+    {
+        "content": "<p>Another fun example to ponder is the 1-category <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"sans-serif\">C</mi><mi mathvariant=\"sans-serif\">a</mi><mi mathvariant=\"sans-serif\">t</mi></mrow><annotation encoding=\"application/x-tex\">\\mathsf{Cat}</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6944em;\"></span><span class=\"mord\"><span class=\"mord mathsf\">Cat</span></span></span></span></span> of small categories.  This finitely complete and cartesian closed but <a href=\"https://math.stackexchange.com/a/3121774/327909\">has no subobject classifier</a>.  If we try to freely give it a subobject classifier, what happens?</p>\n<p>(Or you could use <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"sans-serif\">F</mi><mi mathvariant=\"sans-serif\">i</mi><mi mathvariant=\"sans-serif\">n</mi><mi mathvariant=\"sans-serif\">C</mi><mi mathvariant=\"sans-serif\">a</mi><mi mathvariant=\"sans-serif\">t</mi></mrow><annotation encoding=\"application/x-tex\">\\mathsf{FinCat}</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6944em;\"></span><span class=\"mord\"><span class=\"mord mathsf\">FinCat</span></span></span></span></span> here.)</p>",
+        "id": 375500420,
+        "sender_full_name": "John Baez",
+        "timestamp": 1689416229
+    },
+    {
+        "content": "<p>I'd expect having a subobject classifier to be property-like structure, since any two choice of s.c. are necessarily isomorphic up to unique iso</p>",
+        "id": 375522093,
+        "sender_full_name": "Matteo Capucci (he/him)",
+        "timestamp": 1689421206
+    },
+    {
+        "content": "<p>Hence if Chris' left biadjoint exists, then applying it to a topos like <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"sans-serif\">F</mi><mi mathvariant=\"sans-serif\">i</mi><mi mathvariant=\"sans-serif\">n</mi><mi mathvariant=\"sans-serif\">S</mi><mi mathvariant=\"sans-serif\">e</mi><mi mathvariant=\"sans-serif\">t</mi></mrow><annotation encoding=\"application/x-tex\">\\sf FinSet</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6944em;\"></span><span class=\"mord\"><span class=\"mord mathsf\">FinSet</span></span></span></span></span> should yield back something equivalent to it</p>",
+        "id": 375522228,
+        "sender_full_name": "Matteo Capucci (he/him)",
+        "timestamp": 1689421246
+    },
+    {
+        "content": "<p>Perhaps!  But one might falsely argue that  since the presheaf category on a category is a way to <a href=\"https://ncatlab.org/nlab/show/freely%20cocomplete\">[[freely cocomplete]]</a> it, and being cocomplete is a property-like structure of a category, taking the category of presheaves on a category that's already cocomplete would give you back an equivalent category.</p>",
+        "id": 375526770,
+        "sender_full_name": "John Baez",
+        "timestamp": 1689422329
+    },
+    {
+        "content": "<p>It doesn't.</p>",
+        "id": 375526881,
+        "sender_full_name": "John Baez",
+        "timestamp": 1689422363
+    },
+    {
+        "content": "<p>The point, I guess, is that property-like structures on categories give pseudomonads on Cat that are <em>laxly</em> idempotent:</p>\n<ul>\n<li>Kelly and Lack, <a href=\"http://www.tac.mta.ca/tac/volumes/1997/n9/3-09abs.html\">On property-like structures</a>.</li>\n</ul>",
+        "id": 375527186,
+        "sender_full_name": "John Baez",
+        "timestamp": 1689422430
+    },
+    {
+        "content": "<p>Right, property-like structure doesn't make the completion idempotent; only mere properties do that.</p>",
+        "id": 375575604,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1689434633
+    },
+    {
+        "content": "<p>Another thing to note is that there isn't really a good notion of \"cartesian closed natural transformation\" that isn't invertible, since cartesian closure involves a mixed-variance operation.  So \"the 2-category of cartesian closed categories\" is probably only a (2,1)-category, and the same for that of elementary toposes.  (Chris mentioned this already, but I wanted to emphasize it.)</p>",
+        "id": 375576026,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1689434731
+    },
+    {
+        "content": "<p>I think the existence of adjoints like this has been studied more in the 1-categorical case, where the categories have structure specified up to equality rather than isomorphism and the morphisms have to preserve them on the nose.  E.g. there is Lambek's theorem that the 1-category of elementary toposes is <a href=\"https://link.springer.com/chapter/10.1007/BFb0066895\">monadic</a> over that of categories.  Perhaps one can apply abstract 2-monad theory nonsense to try to boost this up to the 2-category.</p>",
+        "id": 375576954,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1689434949
+    },
+    {
+        "content": "<p>As you say, I doubt there is any explicit description of the toposes you get.  They might be related to the <a href=\"https://ncatlab.org/nlab/show/free%20topos\">[[free topos]]</a> however.</p>",
+        "id": 375577337,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1689435045
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276777\">Mike Shulman</span> <a href=\"#narrow/stream/230087-theory.3A-topos-theory/topic/Freely.20Adjoining.20A.20Subobject.20Classifier/near/375576954\">said</a>:</p>\n<blockquote>\n<p>I think the existence of adjoints like this has been studied more in the 1-categorical case, where the categories have structure specified up to equality rather than isomorphism and the morphisms have to preserve them on the nose.  E.g. there is Lambek's theorem that the 1-category of elementary toposes is <a href=\"https://link.springer.com/chapter/10.1007/BFb0066895\">monadic</a> over that of categories.  Perhaps one can apply abstract 2-monad theory nonsense to try to boost this up to the 2-category.</p>\n</blockquote>\n<p>Yeah,  I haven't thought super hard about this, but I think if you want everything to be STRICT (there's a fixed <em>choice</em> of limit and the functors preserve this choice on the nose, etc) then elementary topoi should be locally finitely presentable in the Gpd-enriched sense (and maybe even the Cat-enriched sense, if you want to be this strict?). In this case, <span class=\"user-mention\" data-user-id=\"275920\">@John Baez</span>, we have abstract nonsense saying that a (Gpd-enriched) left adjoint MUST exist. It's given by left kan extension just like in the usual case of essentially algebraic theories.</p>",
+        "id": 375578861,
+        "sender_full_name": "Chris Grossack (they/them)",
+        "timestamp": 1689435497
+    },
+    {
+        "content": "<p>This theory is beautiful, and solves lots of problems in 2-category theory.... the issue is that they're problems nobody cares about, because everything is too strict! And there's no getting around this -- we have theorems saying that the \"right\" 2-category of finite limit categories (for instance) is merely accessible, and is NOT LFP. </p>\n<p>Of course, there's lots of theorems saying that this still <em>morally</em> works out, and we can pass from strict things to weak things in a fairly predictable way. See, for instance, Kelly and Blackwell's <em>Two-Dimensional Monad Theory</em></p>",
+        "id": 375579631,
+        "sender_full_name": "Chris Grossack (they/them)",
+        "timestamp": 1689435684
+    },
+    {
+        "content": "<p>All this to say that I haven't worked out the details, but I'm confident that such a biadjoint does exist (in, as Mike emphasizes, the (2,1)-cateory case)</p>",
+        "id": 375579835,
+        "sender_full_name": "Chris Grossack (they/them)",
+        "timestamp": 1689435728
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"275920\">John Baez</span> <a href=\"#narrow/stream/230087-theory.3A-topos-theory/topic/Freely.20Adjoining.20A.20Subobject.20Classifier/near/375492964\">said</a>:</p>\n<blockquote>\n<p>Anyway, it's a neat idea.   If you take the finitely complete cartesian closed category of finite sets, <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"sans-serif\">F</mi><mi mathvariant=\"sans-serif\">i</mi><mi mathvariant=\"sans-serif\">n</mi><mi mathvariant=\"sans-serif\">S</mi><mi mathvariant=\"sans-serif\">e</mi><mi mathvariant=\"sans-serif\">t</mi></mrow><annotation encoding=\"application/x-tex\">\\mathsf{FinSet}</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6944em;\"></span><span class=\"mord\"><span class=\"mord mathsf\">FinSet</span></span></span></span></span>, and \"freely throw in a subobject classifier\", what are you expecting to get?</p>\n</blockquote>\n<p>This is a great question, that I haven't thought about <em>at all</em>.... I might think about it later this afternoon, though, because I'd love to have an answer for you. I'll tell you this, though: It <em>won't</em> get it usual subobject classifier back!</p>\n<p>After all, there are certainly cartesian closed maps from FinSet to a topos that <em>don't</em> preserve the subobject classifier. Such a map would still need to extend to a logical functor from the topos where we've freely adjoint a subobject classifier</p>",
+        "id": 375580636,
+        "sender_full_name": "Chris Grossack (they/them)",
+        "timestamp": 1689435929
+    },
+    {
+        "content": "<p>I think \"morally works out\" is understating the case a bit.  In many cases, the machinery of 2-monad theory allows us to pass very precisely from the \"problems nobody cares about\" to the ones that we do care about.</p>",
+        "id": 375580875,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1689436009
+    },
+    {
+        "content": "<p>I think John knows that, and he's just giving me a hard time bc he's been trying to get me on zulip for three years now :P</p>",
+        "id": 375581027,
+        "sender_full_name": "Chris Grossack (they/them)",
+        "timestamp": 1689436069
+    },
+    {
+        "content": "<p>I just figure it's good to push back a little when someone says something \"must\" be true, to see how good of a reason they can muster.   Plus I wanted to greet you.   <span aria-label=\"upside down\" class=\"emoji emoji-1f643\" role=\"img\" title=\"upside down\">:upside_down:</span></p>",
+        "id": 375581757,
+        "sender_full_name": "John Baez",
+        "timestamp": 1689436334
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"275920\">John Baez</span> <a href=\"#narrow/stream/230087-theory.3A-topos-theory/topic/Freely.20Adjoining.20A.20Subobject.20Classifier/near/375492641\">said</a>:</p>\n<blockquote>\n<p>they're a grad student at UCR</p>\n</blockquote>\n<p>Chris is several people? <span aria-label=\"grinning face with smiling eyes\" class=\"emoji emoji-1f601\" role=\"img\" title=\"grinning face with smiling eyes\">:grinning_face_with_smiling_eyes:</span></p>",
+        "id": 375600790,
+        "sender_full_name": "Leopold Schlicht",
+        "timestamp": 1689442222
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"408864\">Leopold Schlicht</span> <a href=\"#narrow/stream/230087-theory.3A-topos-theory/topic/Freely.20Adjoining.20A.20Subobject.20Classifier/near/375600790\">said</a>:</p>\n<blockquote>\n<p><span class=\"user-mention silent\" data-user-id=\"275920\">John Baez</span> <a href=\"#narrow/stream/230087-theory.3A-topos-theory/topic/Freely.20Adjoining.20A.20Subobject.20Classifier/near/375492641\">said</a>:</p>\n<blockquote>\n<p>they're a grad student at UCR</p>\n</blockquote>\n<p>Chris is several people? <span aria-label=\"grinning face with smiling eyes\" class=\"emoji emoji-1f601\" role=\"img\" title=\"grinning face with smiling eyes\">:grinning_face_with_smiling_eyes:</span></p>\n</blockquote>\n<p>I use they/them pronouns. I'm sure you meant this as a joke, but I'd appreciate it if you respected that</p>",
+        "id": 375614120,
+        "sender_full_name": "Chris Grossack (they/them)",
+        "timestamp": 1689448055
+    },
+    {
+        "content": "<p>Oh, I thought it was just a funny typo! I'm not a native speaker -- didn't mean to offend them!</p>",
+        "id": 375616796,
+        "sender_full_name": "Leopold Schlicht",
+        "timestamp": 1689449424
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"408864\">Leopold Schlicht</span> <a href=\"#narrow/stream/230087-theory.3A-topos-theory/topic/Freely.20Adjoining.20A.20Subobject.20Classifier/near/375616796\">said</a>:</p>\n<blockquote>\n<p>Oh, I thought it was just a funny typo! I'm not a native speaker -- didn't mean to offend them!</p>\n</blockquote>\n<p>No worries! It happens a lot ^_^</p>",
+        "id": 375617684,
+        "sender_full_name": "Chris Grossack (they/them)",
+        "timestamp": 1689449915
+    }
+]

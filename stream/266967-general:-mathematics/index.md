@@ -9,6 +9,7 @@ permalink: /stream/266967-general:-mathematics/index.html
 
 ### Topics:
 
+* ["defective" monoidal categories](topic/topic_.22defective.22.20monoidal.20categories.html) (5 messages, latest: Jul 15 2023 at 14:15)
 * [monoidal categories](topic/topic_monoidal.20categories.html) (40 messages, latest: Jul 11 2023 at 11:29)
 * [a physical adjunction?](topic/topic_a.20physical.20adjunction.3F.html) (4 messages, latest: Jul 11 2023 at 09:18)
 * [Profinite groups](topic/topic_Profinite.20groups.html) (60 messages, latest: Jul 10 2023 at 17:12)
@@ -119,4 +120,4 @@ permalink: /stream/266967-general:-mathematics/index.html
 * [the 600-cell](topic/topic_the.20600-cell.html) (5 messages, latest: Dec 01 2020 at 16:35)
 * [hermitian matrix over normed division algebra](topic/topic_hermitian.20matrix.20over.20normed.20division.20algebra.html) (8 messages, latest: Sep 28 2020 at 21:19)
 
-<hr><p>Last updated: Jul 15 2023 at 00:37 UTC</p>
+<hr><p>Last updated: Jul 16 2023 at 00:13 UTC</p>

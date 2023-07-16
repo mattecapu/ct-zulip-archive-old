@@ -9,8 +9,8 @@ permalink: /stream/229136-theory:-category-theory/index.html
 
 ### Topics:
 
+* ["extensive" monoidal categories](topic/topic_.22extensive.22.20monoidal.20categories.html) (11 messages, latest: Jul 15 2023 at 08:23)
 * [pullback stability of adjunctions](topic/topic_pullback.20stability.20of.20adjunctions.html) (21 messages, latest: Jul 14 2023 at 23:29)
-* ["extensive" monoidal categories](topic/topic_.22extensive.22.20monoidal.20categories.html) (9 messages, latest: Jul 14 2023 at 18:21)
 * [Does every complete 2-category underlie a virtual equipment?](topic/topic_Does.20every.20complete.202-category.20underlie.20a.20virtual.20equipment.3F.html) (13 messages, latest: Jul 14 2023 at 17:47)
 * [✔ Straightening/unstraightening for (∞,1)/1-categories](topic/topic_.E2.9C.94.20Straightening.2Funstraightening.20for.20(.E2.88.9E.2C1).2F1-categories.html) (26 messages, latest: Jul 13 2023 at 19:01)
 * [Double category whose vertical category is a 2-category](topic/topic_Double.20category.20whose.20vertical.20category.20is.20a.202-category.html) (7 messages, latest: Jul 13 2023 at 15:29)
@@ -433,4 +433,4 @@ permalink: /stream/229136-theory:-category-theory/index.html
 * [diagrams for application](topic/topic_diagrams.20for.20application.html) (13 messages, latest: Mar 24 2020 at 06:19)
 * [universal constructions](topic/topic_universal.20constructions.html) (8 messages, latest: Mar 23 2020 at 21:06)
 
-<hr><p>Last updated: Jul 15 2023 at 00:37 UTC</p>
+<hr><p>Last updated: Jul 16 2023 at 00:13 UTC</p>
