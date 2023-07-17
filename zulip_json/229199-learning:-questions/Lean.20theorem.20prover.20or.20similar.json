@@ -1,0 +1,68 @@
+[
+    {
+        "content": "<p>I may try to write statements in category theory in a formal programming language to enforce rigor on my mind. Is there a preferred, go to programming language I could easily use in a browser or install at the command line? I’m considering using Lean theorem prover. Would anyone care to give me a primer in writing some basic statements of category theory in Lean? (Will research it myself now). Thank you!</p>",
+        "id": 375733104,
+        "sender_full_name": "Julius",
+        "timestamp": 1689507107
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"629908\">Julius</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/Lean.20theorem.20prover.20or.20similar/near/375733104\">said</a>:</p>\n<blockquote>\n<p>I may try to write statements in category theory in a formal programming language to enforce rigor on my mind. Is there a preferred, go to programming language I could easily use in a browser or install at the command line? I’m considering using Lean theorem prover. Would anyone care to give me a primer in writing some basic statements of category theory in Lean? (Will research it myself now). Thank you!</p>\n</blockquote>\n<p>All of Coq, Agda and Lean have libraries containing category theory, sometimes multiple. It depends on what your preferred proof assistant is. I'm biased towards agda's cubical library since that's what I'm working on right now, but it might be a bit much learning about cubical just for this. agda-categories is pretty nice and might be the biggest category theory library around</p>",
+        "id": 375734584,
+        "sender_full_name": "Josselin Poiret",
+        "timestamp": 1689507599
+    },
+    {
+        "content": "<p>however, if you want to get used to category theory from the ground up, you could just formalize everything yourself and not rely on a library as well!</p>",
+        "id": 375734718,
+        "sender_full_name": "Josselin Poiret",
+        "timestamp": 1689507640
+    },
+    {
+        "content": "<p><span class=\"user-mention\" data-user-id=\"629908\">@Julius</span> There is a Lean mathematics library called mathlib which contains a category theory library. Here is the entry point. <a href=\"https://leanprover-community.github.io/mathlib_docs/category_theory/category/basic.html\">https://leanprover-community.github.io/mathlib_docs/category_theory/category/basic.html</a></p>\n<p>I use Coq and have contributed to multiple category theory libraries within Coq.<br>\n<a href=\"https://coq.discourse.group/t/survey-of-category-theory-in-coq/371\">https://coq.discourse.group/t/survey-of-category-theory-in-coq/371</a><br>\nThe easiest way to install Coq is here: <a href=\"https://github.com/coq/platform\">https://github.com/coq/platform</a>.<br>\nSoon (within months) the math-comp library will start a category theory sublibrary. Math-comp is the most substantial centralized library of mathematics in Coq. This will be very good.</p>\n<p>Agda would be a very good choice as well.</p>\n<p>Isabelle/HOL has multiple category theory libraries, these can be found at the Archive of Formal Proofs. <a href=\"https://www.isa-afp.org/\">https://www.isa-afp.org/</a>.<br>\nIsabelle/HOL is a simpler logic than Coq, Agda or Lean. The benefit of this is significantly superior automation. The cost is reduced expressiveness, so that trying to do category theory involves some convoluted boilerplate. However, basic Grothendieck-style scheme theory has been formalized in Isabelle/HOL, so it passes the basic stress tests of modern mathematics with large objects. <a href=\"https://www.isa-afp.org/search/?s=category%20theory\">https://www.isa-afp.org/search/?s=category%20theory</a><br>\nThere is already a substantial formalization of category theory in (essentially) first order ZFC, taking place in an axiomatic V type. Not sure whether to regard this as an insane Herculean effort or a proof of practicality. <a href=\"https://www.isa-afp.org/entries/CZH_Foundations.html\">https://www.isa-afp.org/entries/CZH_Foundations.html</a></p>",
+        "id": 375801250,
+        "sender_full_name": "Patrick Nicodemus",
+        "timestamp": 1689525690
+    },
+    {
+        "content": "<p>I would like to draw attention to a recent paper on extensional dependent type theory, which has the expressiveness of intensional dependent type theory (Coq, Agda, Lean) without the drawbacks of having to worry about subtle aspects of equality in type theory (which spawned a small cottage industry called 'HoTT'). The rub is that typing judgements are undecidable, which is somewhat alarming as it can be interpreted as meaning \"there is no algorithm to decide whether a proposed proof is actually a proof.\"<br>\nThe authors give and implement an embedding of extensional dependent type theory into HOL to benefit from the powerful automation of this simpler logic.</p>\n<p><a href=\"https://arxiv.org/pdf/2305.15382.pdf\">https://arxiv.org/pdf/2305.15382.pdf</a></p>",
+        "id": 375803145,
+        "sender_full_name": "Patrick Nicodemus",
+        "timestamp": 1689526407
+    },
+    {
+        "content": "<p><span class=\"user-mention\" data-user-id=\"284453\">@Josselin Poiret</span> I am curious about Agda and have not used it. I am familiar with Coq and the calculus of inductive constructions, can you say anything about what theorem proving looks like in Agda, what features it has on top of the basic type theory and so on?</p>",
+        "id": 375803424,
+        "sender_full_name": "Patrick Nicodemus",
+        "timestamp": 1689526528
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"424412\">Patrick Nicodemus</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/Lean.20theorem.20prover.20or.20similar/near/375803424\">said</a>:</p>\n<blockquote>\n<p><span class=\"user-mention silent\" data-user-id=\"284453\">Josselin Poiret</span> I am curious about Agda and have not used it. I am familiar with Coq and the calculus of inductive constructions, can you say anything about what theorem proving looks like in Agda, what features it has on top of the basic type theory and so on?</p>\n</blockquote>\n<p>theorem proving in Agda is writing down terms in the underlying calculus explicitely, ie. what <code>exact</code> does in Coq. There is tactic support but it's seldom used. The upside is that writing down terms is very pleasant, much more than in Coq imo. You have a very good pattern-matching system similar to Haskell, whereas in Coq you need Equations to do something similar, and less readable than in Agda I might say. The interaction is centered around holes, where you leave out some terms to fill in later interactively, and that's how you iterate on proofs</p>",
+        "id": 375803981,
+        "sender_full_name": "Josselin Poiret",
+        "timestamp": 1689526750
+    },
+    {
+        "content": "<p>i find Agda code to be much more readable than Coq code</p>",
+        "id": 375804007,
+        "sender_full_name": "Josselin Poiret",
+        "timestamp": 1689526762
+    },
+    {
+        "content": "<p>Thank you. I have set up lean, elan, and lake in VS Code (in GitPod), but cannot import category_theory, as it says the module is not found. Is it required to link to the GitHub repo for mathlib in the dependencies .toml file, for the lake init-created package? I would expect mathlib to be included by default? I can also ask on the Lean Zulip.</p>",
+        "id": 375816863,
+        "sender_full_name": "Julius",
+        "timestamp": 1689531971
+    },
+    {
+        "content": "<p>I’ll try this:</p>\n<p>“In your leanpkg.toml add:</p>\n<div class=\"codehilite\"><pre><span></span><code>[dependencies]\nMathLib4 = {git = &quot;https://github.com/leanprover-community/mathlib4&quot;, rev = &quot;&lt;fill_me_in&gt;&quot;}\n</code></pre></div>\n<p>“</p>",
+        "id": 375816958,
+        "sender_full_name": "Julius",
+        "timestamp": 1689532038
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"284453\">Josselin Poiret</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/Lean.20theorem.20prover.20or.20similar/near/375804007\">said</a>:</p>\n<blockquote>\n<p>i find Agda code to be much more readable than Coq code</p>\n</blockquote>\n<p>Yes, Agda code is much more readable than Coq or Lean code.  But Coq and Lean code is much more step-through-able than Agda code.  Personally, I find I can understand a proof better by stepping through it than by just reading the code, so I prefer Coq and Lean when possible.</p>\n<p>(I don't mean to start a flame war; I recognize that other perspectives are valid.  I just wanted to make sure that both perspectives are represented when talking to a newcomer.)</p>",
+        "id": 375830945,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1689538168
+    }
+]
