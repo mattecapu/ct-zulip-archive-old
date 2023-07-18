@@ -9,11 +9,11 @@ permalink: /stream/229111-general/index.html
 
 ### Topics:
 
-* [Introduce yourself!](topic/topic_Introduce.20yourself!.html) (116 messages, latest: Jul 16 2023 at 23:15)
-* [Looking for popular accounts of Yoneda](topic/topic_Looking.20for.20popular.20accounts.20of.20Yoneda.html) (90 messages, latest: Jul 16 2023 at 10:18)
+* [Introduce yourself!](topic/topic_Introduce.20yourself!.html) (118 messages, latest: Jul 17 2023 at 10:13)
+* [Looking for popular accounts of Yoneda](topic/topic_Looking.20for.20popular.20accounts.20of.20Yoneda.html) (92 messages, latest: Jul 17 2023 at 10:07)
+* [Compositionality](topic/topic_Compositionality.html) (93 messages, latest: Jul 17 2023 at 00:58)
 * [Unity-respecting Change](topic/topic_Unity-respecting.20Change.html) (4 messages, latest: Jul 14 2023 at 23:34)
 * [F. William Lawvere](topic/topic_F.2E.20William.20Lawvere.html) (4 messages, latest: Jul 12 2023 at 23:11)
-* [Compositionality](topic/topic_Compositionality.html) (92 messages, latest: Jul 09 2023 at 21:26)
 * [ACT 2023](topic/topic_ACT.202023.html) (1 message, latest: Jul 09 2023 at 13:20)
 * [✔ F. William Lawvere](topic/topic_.E2.9C.94.20F.2E.20William.20Lawvere.html) (2 messages, latest: Jul 07 2023 at 15:54)
 * [(pre)sheaves on homotopy equivalent spaces](topic/topic_(pre)sheaves.20on.20homotopy.20equivalent.20spaces.html) (6 messages, latest: Jul 06 2023 at 00:08)
@@ -272,4 +272,4 @@ permalink: /stream/229111-general/index.html
 * [Tools for diagrams](topic/topic_Tools.20for.20diagrams.html) (78 messages, latest: Mar 25 2020 at 17:53)
 * [topic demonstration](topic/topic_topic.20demonstration.html) (2 messages, latest: Mar 23 2020 at 16:57)
 
-<hr><p>Last updated: Jul 17 2023 at 00:39 UTC</p>
+<hr><p>Last updated: Jul 18 2023 at 00:13 UTC</p>

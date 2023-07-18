@@ -107,6 +107,57 @@ MathLib4 = {git = &quot;https://github.com/leanprover-community/mathlib4&quot;, 
 
 
 
+<a name="376031556"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/Lean%20theorem%20prover%20or%20similar/near/376031556" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Naso <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/topic_Lean.20theorem.20prover.20or.20similar.html#376031556">(Jul 17 2023 at 13:49)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="424412">Patrick Nicodemus</span> <a href="#narrow/stream/229199-learning.3A-questions/topic/Lean.20theorem.20prover.20or.20similar/near/375801250">said</a>:</p>
+<blockquote>
+<p>Isabelle/HOL has multiple category theory libraries, these can be found at the Archive of Formal Proofs. <a href="https://www.isa-afp.org/">https://www.isa-afp.org/</a>.<br>
+Isabelle/HOL is a simpler logic than Coq, Agda or Lean. The benefit of this is significantly superior automation.</p>
+</blockquote>
+<p>Another advantage of Isabelle besides the automation is the Isar structured-proof language, which lets you write proofs in a a way that's very close to ordinary maths. E.g. here is a proof of Cantor's theorem (from the manual)</p>
+<div class="codehilite"><pre><span></span><code>lemma &quot;¬ surj (f :: ′a ⇒ ′a set)&quot;
+proof
+  assume &quot;surj f&quot;
+  hence &quot;∃a. {x. x ∉ f x} = f a&quot; by(auto simp: surj_def)
+  thus &quot;False&quot; by blast
+qed
+</code></pre></div>
+<p>(Note statements following <code>by</code> are usually completed by the automation.)</p>
+<p>I had tried to learn Agda and Lean before but I found it quite laborious to write the tactic-style proofs,  I think because  I don't have a strong background in logic/type theory. But I started learning Isabelle a month ago and am already really productive with it thanks to the Isar language and automation stuff <span aria-label="smile" class="emoji emoji-1f642" role="img" title="smile">:smile:</span> Or maybe Lean/Agda/Coq does have something like Isar that I'm unaware of?</p>
+
+
+
+<a name="376088950"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/Lean%20theorem%20prover%20or%20similar/near/376088950" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/topic_Lean.20theorem.20prover.20or.20similar.html#376088950">(Jul 17 2023 at 16:09)</a>:</h4>
+<p>Lean has, or at least had, a syntax for terms that looked a bit like that.  They may have dropped it.  But to be honest that proof doesn't look much different from a tactic proof to me.  Just substitute "intros" for "assume", "have" for "hence", and remove "thus False by", and it looks like a tactic proof to me.</p>
+
+
+
+<a name="376089442"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/Lean%20theorem%20prover%20or%20similar/near/376089442" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/topic_Lean.20theorem.20prover.20or.20similar.html#376089442">(Jul 17 2023 at 16:11)</a>:</h4>
+<p>Tactics also <em>allow</em> you to reason "backwards", which is sometimes hard to get used to, although I found that once I got used to it it actually matched the way I think about math in my head better than a traditional "forwards" proof.  But you can also reason forwards with tactics just as well.</p>
+
+
+
+<a name="376090265"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/Lean%20theorem%20prover%20or%20similar/near/376090265" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/topic_Lean.20theorem.20prover.20or.20similar.html#376090265">(Jul 17 2023 at 16:12)</a>:</h4>
+<p>Also the automation of modern Lean is fairly impressive.  I haven't used Isabelle/HOL myself (not for anything like this, anyway), but is its automation really still significantly superior?  In principle, I don't see any reason that a dependently-typed proof assistant couldn't have equally good automation when restricted to its "HOL" fragment.</p>
+
+
+
+<a name="376184212"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/Lean%20theorem%20prover%20or%20similar/near/376184212" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Naso <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/topic_Lean.20theorem.20prover.20or.20similar.html#376184212">(Jul 17 2023 at 23:38)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="276777">Mike Shulman</span> <a href="#narrow/stream/229199-learning.3A-questions/topic/Lean.20theorem.20prover.20or.20similar/near/376090265">said</a>:</p>
+<blockquote>
+<p>Also the automation of modern Lean is fairly impressive.  I haven't used Isabelle/HOL myself (not for anything like this, anyway), but is its automation really still significantly superior?  In principle, I don't see any reason that a dependently-typed proof assistant couldn't have equally good automation when restricted to its "HOL" fragment.</p>
+</blockquote>
+<p>By 'modern Lean' do you mean Lean 4? One other reason I've avoided Lean for now is it's going through a major transition from 3 to 4 where AFAIK code written in 4 is largely incompatible with 3 and vice versa. I looked at Lean 4 early last year but found the documentation quite lacking- e.g. the <a href="https://leanprover.github.io/lean4/doc/builtintypes.html">entries on the built-in types</a> were mostly empty. I've just checked again and they're still empty! </p>
+<p>Since I need to actually get stuff down now, not having  reliable documentation is a big deal, and also it means what is possible in principle is not really relevant to me!<br>
+I haven't used the automation features of Lean so I can't compare on that.</p>
+<p>I am definitely looking forward to trying Lean again once it's had its version 4 release and better documentation. <span aria-label="smile" class="emoji emoji-1f642" role="img" title="smile">:smile:</span></p>
+
+
+
 {% endraw %}
 
-<hr><p>Last updated: Jul 17 2023 at 00:39 UTC</p>
+<hr><p>Last updated: Jul 18 2023 at 00:13 UTC</p>

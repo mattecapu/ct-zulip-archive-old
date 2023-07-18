@@ -9,6 +9,8 @@ permalink: /stream/229136-theory:-category-theory/index.html
 
 ### Topics:
 
+* [✔ pullback stability of adjunctions](topic/topic_.E2.9C.94.20pullback.20stability.20of.20adjunctions.html) (3 messages, latest: Jul 17 2023 at 20:00)
+* [A new monad from a strong monad](topic/topic_A.20new.20monad.20from.20a.20strong.20monad.html) (63 messages, latest: Jul 17 2023 at 09:27)
 * ["extensive" monoidal categories](topic/topic_.22extensive.22.20monoidal.20categories.html) (11 messages, latest: Jul 15 2023 at 08:23)
 * [pullback stability of adjunctions](topic/topic_pullback.20stability.20of.20adjunctions.html) (21 messages, latest: Jul 14 2023 at 23:29)
 * [Does every complete 2-category underlie a virtual equipment?](topic/topic_Does.20every.20complete.202-category.20underlie.20a.20virtual.20equipment.3F.html) (13 messages, latest: Jul 14 2023 at 17:47)
@@ -23,7 +25,6 @@ permalink: /stream/229136-theory:-category-theory/index.html
 * [a paper by Borceaux](topic/topic_a.20paper.20by.20Borceaux.html) (8 messages, latest: Jun 27 2023 at 23:42)
 * ['free fibrations' of subobjects](topic/topic_'free.20fibrations'.20of.20subobjects.html) (21 messages, latest: Jun 27 2023 at 16:02)
 * [Wreath products](topic/topic_Wreath.20products.html) (8 messages, latest: Jun 26 2023 at 14:18)
-* [A new monad from a strong monad](topic/topic_A.20new.20monad.20from.20a.20strong.20monad.html) (60 messages, latest: Jun 19 2023 at 01:29)
 * [Regular Hyperdoctrines and Regular Categories](topic/topic_Regular.20Hyperdoctrines.20and.20Regular.20Categories.html) (3 messages, latest: Jun 17 2023 at 18:30)
 * [What do you call an object of Joyal's category $$\Theta$$?](topic/topic_What.20do.20you.20call.20an.20object.20of.20Joyal's.20category.20.24.24.5CTheta.24.24.3F.html) (24 messages, latest: Jun 17 2023 at 04:02)
 * [taking homs](topic/topic_taking.20homs.html) (8 messages, latest: Jun 14 2023 at 15:12)
@@ -433,4 +434,4 @@ permalink: /stream/229136-theory:-category-theory/index.html
 * [diagrams for application](topic/topic_diagrams.20for.20application.html) (13 messages, latest: Mar 24 2020 at 06:19)
 * [universal constructions](topic/topic_universal.20constructions.html) (8 messages, latest: Mar 23 2020 at 21:06)
 
-<hr><p>Last updated: Jul 17 2023 at 00:39 UTC</p>
+<hr><p>Last updated: Jul 18 2023 at 00:13 UTC</p>

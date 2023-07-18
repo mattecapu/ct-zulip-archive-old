@@ -9,7 +9,11 @@ permalink: /stream/229199-learning:-questions/index.html
 
 ### Topics:
 
-* [Lean theorem prover or similar](topic/topic_Lean.20theorem.20prover.20or.20similar.html) (11 messages, latest: Jul 16 2023 at 20:09)
+* [Lean theorem prover or similar](topic/topic_Lean.20theorem.20prover.20or.20similar.html) (16 messages, latest: Jul 17 2023 at 23:38)
+* ["re-strictification" of pseudofunctors](topic/topic_.22re-strictification.22.20of.20pseudofunctors.html) (8 messages, latest: Jul 17 2023 at 20:19)
+* [Horns filling up to some degree](topic/topic_Horns.20filling.20up.20to.20some.20degree.html) (24 messages, latest: Jul 17 2023 at 20:10)
+* [What can morphisms be?](topic/topic_What.20can.20morphisms.20be.3F.html) (2 messages, latest: Jul 17 2023 at 10:11)
+* [Is there a formalization of "non-parametric functors"?](topic/topic_Is.20there.20a.20formalization.20of.20.22non-parametric.20functors.22.3F.html) (13 messages, latest: Jul 17 2023 at 06:11)
 * [logic inherited by functor categories](topic/topic_logic.20inherited.20by.20functor.20categories.html) (17 messages, latest: Jul 15 2023 at 21:27)
 * [How to understand this structure in Category Theory?](topic/topic_How.20to.20understand.20this.20structure.20in.20Category.20Theory.3F.html) (5 messages, latest: Jul 14 2023 at 20:12)
 * [Doctrines, adjoints, and all that](topic/topic_Doctrines.2C.20adjoints.2C.20and.20all.20that.html) (12 messages, latest: Jul 12 2023 at 20:32)
@@ -32,7 +36,6 @@ permalink: /stream/229199-learning:-questions/index.html
 * [✔ 2 limits in 2-categories of diagrams](topic/topic_.E2.9C.94.202.20limits.20in.202-categories.20of.20diagrams.html) (2 messages, latest: Jun 14 2023 at 11:58)
 * [homotopy 2-limits as biadjunctions](topic/topic_homotopy.202-limits.20as.20biadjunctions.html) (1 message, latest: Jun 14 2023 at 11:51)
 * [✔ self-enrichment vs monoidal closed](topic/topic_.E2.9C.94.20self-enrichment.20vs.20monoidal.20closed.html) (1 message, latest: Jun 12 2023 at 19:04)
-* [Is there a formalization of "non-parametric functors"?](topic/topic_Is.20there.20a.20formalization.20of.20.22non-parametric.20functors.22.3F.html) (12 messages, latest: Jun 11 2023 at 22:04)
 * [What is the relation between F-Algebras and Free Algebras?](topic/topic_What.20is.20the.20relation.20between.20F-Algebras.20and.20Free.20Algebras.3F.html) (11 messages, latest: Jun 11 2023 at 17:16)
 * [when are "derived" operations preserved by a functor?](topic/topic_when.20are.20.22derived.22.20operations.20preserved.20by.20a.20functor.3F.html) (32 messages, latest: Jun 10 2023 at 18:45)
 * [self-enrichment vs monoidal closed](topic/topic_self-enrichment.20vs.20monoidal.20closed.html) (15 messages, latest: Jun 10 2023 at 16:35)
@@ -45,7 +48,6 @@ permalink: /stream/229199-learning:-questions/index.html
 * [f(x)=x, f'=0](topic/topic_f(x).3Dx.2C.20f'.3D0.html) (20 messages, latest: Jun 03 2023 at 08:18)
 * [✔ Set-toposes are cocomplete?](topic/topic_.E2.9C.94.20Set-toposes.20are.20cocomplete.3F.html) (15 messages, latest: Jun 02 2023 at 10:07)
 * [equivalent categories and equivalence relations](topic/topic_equivalent.20categories.20and.20equivalence.20relations.html) (23 messages, latest: May 28 2023 at 21:09)
-* [Horns filling up to some degree](topic/topic_Horns.20filling.20up.20to.20some.20degree.html) (6 messages, latest: May 28 2023 at 15:22)
 * [how to argue quotient maps form a natural transformation?](topic/topic_how.20to.20argue.20quotient.20maps.20form.20a.20natural.20transformation.3F.html) (2 messages, latest: May 28 2023 at 04:58)
 * [generalizing Wedderburn-Artin](topic/topic_generalizing.20Wedderburn-Artin.html) (63 messages, latest: May 25 2023 at 15:42)
 * [checking my understanding of (co)monoids in monoidal cats?](topic/topic_checking.20my.20understanding.20of.20(co)monoids.20in.20monoidal.20cats.3F.html) (3 messages, latest: May 25 2023 at 11:19)
@@ -928,4 +930,4 @@ permalink: /stream/229199-learning:-questions/index.html
 * [Algebra (Aluffi) exercises](topic/topic_Algebra.20(Aluffi).20exercises.html) (55 messages, latest: Mar 27 2020 at 23:38)
 * [What is category theory about?](topic/topic_What.20is.20category.20theory.20about.3F.html) (16 messages, latest: Mar 26 2020 at 16:03)
 
-<hr><p>Last updated: Jul 17 2023 at 00:39 UTC</p>
+<hr><p>Last updated: Jul 18 2023 at 00:13 UTC</p>
