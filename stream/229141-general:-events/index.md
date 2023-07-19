@@ -9,6 +9,7 @@ permalink: /stream/229141-general:-events/index.html
 
 ### Topics:
 
+* [QPL < > EthCC roundtable](topic/topic_QPL.20.3C.20.3E.20EthCC.20roundtable.html) (1 message, latest: Jul 18 2023 at 06:19)
 * [ACT 2023](topic/topic_ACT.202023.html) (185 messages, latest: Jul 17 2023 at 09:11)
 * [Interdisciplinary Summer School 2023](topic/topic_Interdisciplinary.20Summer.20School.202023.html) (10 messages, latest: Jul 10 2023 at 20:05)
 * [Visions in Math: Grothendieck](topic/topic_Visions.20in.20Math.3A.20Grothendieck.html) (5 messages, latest: Jul 08 2023 at 06:52)
@@ -190,4 +191,4 @@ permalink: /stream/229141-general:-events/index.html
 * [April 1st: ACT@UCR](topic/topic_April.201st.3A.20ACT.40UCR.html) (3 messages, latest: Mar 26 2020 at 23:58)
 * [Google Sites problem](topic/topic_Google.20Sites.20problem.html) (4 messages, latest: Mar 25 2020 at 04:29)
 
-<hr><p>Last updated: Jul 18 2023 at 00:55 UTC</p>
+<hr><p>Last updated: Jul 19 2023 at 00:12 UTC</p>

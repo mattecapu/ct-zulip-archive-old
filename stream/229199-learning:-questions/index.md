@@ -9,13 +9,16 @@ permalink: /stream/229199-learning:-questions/index.html
 
 ### Topics:
 
-* [Lean theorem prover or similar](topic/topic_Lean.20theorem.20prover.20or.20similar.html) (16 messages, latest: Jul 17 2023 at 23:38)
+* [Reference for algebraic theories](topic/topic_Reference.20for.20algebraic.20theories.html) (9 messages, latest: Jul 18 2023 at 23:52)
+* [Is there a formalization of "non-parametric functors"?](topic/topic_Is.20there.20a.20formalization.20of.20.22non-parametric.20functors.22.3F.html) (19 messages, latest: Jul 18 2023 at 19:38)
+* [Universal property of a terminal object](topic/topic_Universal.20property.20of.20a.20terminal.20object.html) (4 messages, latest: Jul 18 2023 at 19:07)
+* [Synthetic introduction to noncommutative geometry?](topic/topic_Synthetic.20introduction.20to.20noncommutative.20geometry.3F.html) (1 message, latest: Jul 18 2023 at 17:05)
+* [How to understand this structure in Category Theory?](topic/topic_How.20to.20understand.20this.20structure.20in.20Category.20Theory.3F.html) (9 messages, latest: Jul 18 2023 at 16:07)
+* [Lean theorem prover or similar](topic/topic_Lean.20theorem.20prover.20or.20similar.html) (17 messages, latest: Jul 18 2023 at 01:10)
 * ["re-strictification" of pseudofunctors](topic/topic_.22re-strictification.22.20of.20pseudofunctors.html) (8 messages, latest: Jul 17 2023 at 20:19)
 * [Horns filling up to some degree](topic/topic_Horns.20filling.20up.20to.20some.20degree.html) (24 messages, latest: Jul 17 2023 at 20:10)
 * [What can morphisms be?](topic/topic_What.20can.20morphisms.20be.3F.html) (2 messages, latest: Jul 17 2023 at 10:11)
-* [Is there a formalization of "non-parametric functors"?](topic/topic_Is.20there.20a.20formalization.20of.20.22non-parametric.20functors.22.3F.html) (13 messages, latest: Jul 17 2023 at 06:11)
 * [logic inherited by functor categories](topic/topic_logic.20inherited.20by.20functor.20categories.html) (17 messages, latest: Jul 15 2023 at 21:27)
-* [How to understand this structure in Category Theory?](topic/topic_How.20to.20understand.20this.20structure.20in.20Category.20Theory.3F.html) (5 messages, latest: Jul 14 2023 at 20:12)
 * [Doctrines, adjoints, and all that](topic/topic_Doctrines.2C.20adjoints.2C.20and.20all.20that.html) (12 messages, latest: Jul 12 2023 at 20:32)
 * [graphs within graphs](topic/topic_graphs.20within.20graphs.html) (19 messages, latest: Jul 09 2023 at 12:28)
 * [What does a slice topos classify?](topic/topic_What.20does.20a.20slice.20topos.20classify.3F.html) (50 messages, latest: Jul 07 2023 at 18:50)
@@ -930,4 +933,4 @@ permalink: /stream/229199-learning:-questions/index.html
 * [Algebra (Aluffi) exercises](topic/topic_Algebra.20(Aluffi).20exercises.html) (55 messages, latest: Mar 27 2020 at 23:38)
 * [What is category theory about?](topic/topic_What.20is.20category.20theory.20about.3F.html) (16 messages, latest: Mar 26 2020 at 16:03)
 
-<hr><p>Last updated: Jul 18 2023 at 00:55 UTC</p>
+<hr><p>Last updated: Jul 19 2023 at 00:12 UTC</p>

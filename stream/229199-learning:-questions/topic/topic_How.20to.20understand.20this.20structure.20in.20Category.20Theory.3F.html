@@ -53,6 +53,33 @@ permalink: /stream/229199-learning:-questions/topic/topic_How.20to.20understand.
 
 
 
+<a name="376374869"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/How%20to%20understand%20this%20structure%20in%20Category%20Theory%3F/near/376374869" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Davi Sales Barreira <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/topic_How.20to.20understand.20this.20structure.20in.20Category.20Theory.3F.html#376374869">(Jul 18 2023 at 14:39)</a>:</h4>
+<p>Thanks, <span class="user-mention" data-user-id="276777">@Mike Shulman</span> . I've been digging through this, and I got to this conclusion. Good to see that what I was thinking was correct.</p>
+
+
+
+<a name="376375724"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/How%20to%20understand%20this%20structure%20in%20Category%20Theory%3F/near/376375724" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Davi Sales Barreira <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/topic_How.20to.20understand.20this.20structure.20in.20Category.20Theory.3F.html#376375724">(Jul 18 2023 at 14:41)</a>:</h4>
+<p>I'm trying to implement the catamorphism for this strucutre. If I understood correctly, in the $$F_{a,t}$, the <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi></mrow><annotation encoding="application/x-tex">a</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord mathnormal">a</span></span></span></span> is actually a constant functor. I mean, <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mi>m</mi><mi>a</mi><mi>p</mi><mo stretchy="false">(</mo><mi>f</mi><mo separator="true">,</mo><mi>x</mi><mo>:</mo><mo>:</mo><mi>L</mi><mi>e</mi><mi>a</mi><mi>f</mi><mo stretchy="false">)</mo><mo>=</mo><mi>x</mi></mrow><annotation encoding="application/x-tex">fmap(f, x::Leaf) = x</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.10764em;">f</span><span class="mord mathnormal">ma</span><span class="mord mathnormal">p</span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.10764em;">f</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal">x</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">::</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal">L</span><span class="mord mathnormal">e</span><span class="mord mathnormal">a</span><span class="mord mathnormal" style="margin-right:0.10764em;">f</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord mathnormal">x</span></span></span></span>. Right?</p>
+
+
+
+<a name="376376254"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/How%20to%20understand%20this%20structure%20in%20Category%20Theory%3F/near/376376254" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Davi Sales Barreira <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/topic_How.20to.20understand.20this.20structure.20in.20Category.20Theory.3F.html#376376254">(Jul 18 2023 at 14:43)</a>:</h4>
+<p>I mean, if a catamorphism is:</p>
+<div class="codehilite" data-code-language="Haskell"><pre><span></span><code><span class="nf">cata</span><span class="w"> </span><span class="n">alg</span><span class="w"> </span><span class="ow">=</span><span class="w"> </span><span class="n">alg</span><span class="w"> </span><span class="o">.</span><span class="w"> </span><span class="n">fmap</span><span class="w"> </span><span class="p">(</span><span class="n">cata</span><span class="w"> </span><span class="n">alg</span><span class="p">)</span><span class="w"> </span><span class="o">.</span><span class="w"> </span><span class="n">unFix</span>
+</code></pre></div>
+<p>Then I need a base case for <code>cata alg</code> where <code> fmap (cata alg)  Leaf 10</code> is the fixed point... Hence, <code> fmap (cata alg)  Leaf 10</code>  should return <code>Leaf 10</code>... Makes sense?</p>
+
+
+
+<a name="376403224"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/How%20to%20understand%20this%20structure%20in%20Category%20Theory%3F/near/376403224" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/topic_How.20to.20understand.20this.20structure.20in.20Category.20Theory.3F.html#376403224">(Jul 18 2023 at 16:07)</a>:</h4>
+<p>I don't quite understand your notation, but there is no recursion in the case for <code>Leaf</code> if that's what you mean.</p>
+
+
+
 {% endraw %}
 
-<hr><p>Last updated: Jul 18 2023 at 00:55 UTC</p>
+<hr><p>Last updated: Jul 19 2023 at 00:12 UTC</p>

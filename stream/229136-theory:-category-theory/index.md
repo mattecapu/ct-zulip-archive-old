@@ -9,6 +9,7 @@ permalink: /stream/229136-theory:-category-theory/index.html
 
 ### Topics:
 
+* [functors that create limits](topic/topic_functors.20that.20create.20limits.html) (11 messages, latest: Jul 18 2023 at 19:53)
 * [✔ pullback stability of adjunctions](topic/topic_.E2.9C.94.20pullback.20stability.20of.20adjunctions.html) (3 messages, latest: Jul 17 2023 at 20:00)
 * [A new monad from a strong monad](topic/topic_A.20new.20monad.20from.20a.20strong.20monad.html) (63 messages, latest: Jul 17 2023 at 09:27)
 * ["extensive" monoidal categories](topic/topic_.22extensive.22.20monoidal.20categories.html) (11 messages, latest: Jul 15 2023 at 08:23)
@@ -434,4 +435,4 @@ permalink: /stream/229136-theory:-category-theory/index.html
 * [diagrams for application](topic/topic_diagrams.20for.20application.html) (13 messages, latest: Mar 24 2020 at 06:19)
 * [universal constructions](topic/topic_universal.20constructions.html) (8 messages, latest: Mar 23 2020 at 21:06)
 
-<hr><p>Last updated: Jul 18 2023 at 00:55 UTC</p>
+<hr><p>Last updated: Jul 19 2023 at 00:12 UTC</p>

@@ -1,0 +1,56 @@
+[
+    {
+        "content": "<p>I am reading Algebraic Theories by Ademak et al. But they only cover the case where the algebras are functors into Set. Is there a text that covers algebras whose codomain is not Set but something else like Top or Ord?</p>",
+        "id": 376419924,
+        "sender_full_name": "Bernd Losert",
+        "timestamp": 1689699968
+    },
+    {
+        "content": "<p>The topological/ordered part of the category theory is much harder in such cases than the algebraic part, so it doesn't make much sense to think of such a book as being on algebraic theories at all. Most of the time, topological gadgets have a topological functor to the category of set-based gadgets, so the categorical part of the theory becomes a matter of stacking the theory of topological functors on top of the book that you're reading.</p>",
+        "id": 376421216,
+        "sender_full_name": "Kevin Arlin",
+        "timestamp": 1689700248
+    },
+    {
+        "content": "<p>In other words, there is no such book. Maybe that's an opportunity for me to write one because I am compiling a list of results on this subject.</p>",
+        "id": 376438548,
+        "sender_full_name": "Bernd Losert",
+        "timestamp": 1689704364
+    },
+    {
+        "content": "<p>What sort of results are you looking for?</p>",
+        "id": 376441011,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1689705060
+    },
+    {
+        "content": "<p>My research is mostly focused on continuous actions on convergence spaces. Right now I am doing research about continuous partial group actions on convergece spaces, and in particular whether this category has directed colimits. </p>\n<p>I am basically looking for results about what kinds of limits/colimits are preserved/detected/reflected/lifted/created by the different forgetful functors from these kinds of categories.</p>",
+        "id": 376442959,
+        "sender_full_name": "Bernd Losert",
+        "timestamp": 1689705584
+    },
+    {
+        "content": "<p>You may find Todd Trimble's page on <a href=\"https://ncatlab.org/toddtrimble/published/multisorted+Lawvere+theories\">multisorted Lawvere theories</a> useful.</p>",
+        "id": 376444795,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1689706052
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"575698\">Bernd Losert</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/Reference.20for.20algebraic.20theories/near/376419924\">said</a>:</p>\n<blockquote>\n<p>I am reading Algebraic Theories by Ademak et al. But they only cover the case where the algebras are functors into Set. Is there a text that covers algebras whose codomain is not Set but something else like Top or Ord?</p>\n</blockquote>\n<p>I asked <a href=\"https://mathoverflow.net/questions/386981/birkhoffs-hsp-theorem-in-categories-other-than-mathbfset\">a related question on MathOverflow</a> and haven't received an answer, so I think it's safe to assume it's nothing people worked on a lot.</p>",
+        "id": 376487332,
+        "sender_full_name": "Leopold Schlicht",
+        "timestamp": 1689720180
+    },
+    {
+        "content": "<p>Maybe the notion of <a href=\"https://ncatlab.org/nlab/show/enriched+Lawvere+theory#:~:text=symmetric%20monoidal%20category.-,Definition.,the%20representable%20functor%20of%20X%20.\">enriched Lawvere theories</a> would be useful?</p>",
+        "id": 376495610,
+        "sender_full_name": "Jean-Baptiste Vienney",
+        "timestamp": 1689724059
+    },
+    {
+        "content": "<p>You might also be interested in recent work of Yuto Kawase on \"Relative Algebraic Theories\", presented at CT2023. These are algebraic theories defined over a <a href=\"https://ncatlab.org/nlab/show/locally+finitely+presentable+category\">Locally Finitely Presentable</a> category <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"script\">C</mi></mrow><annotation encoding=\"application/x-tex\">\\mathcal{C}</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathcal\" style=\"margin-right:0.05834em;\">C</span></span></span></span> instead of <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"sans-serif\">S</mi><mi mathvariant=\"sans-serif\">e</mi><mi mathvariant=\"sans-serif\">t</mi></mrow><annotation encoding=\"application/x-tex\">\\mathsf{Set}</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6944em;\"></span><span class=\"mord\"><span class=\"mord mathsf\">Set</span></span></span></span></span> (as is classical). In particular, this gives results for ordered algebras (taking <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"script\">C</mi></mrow><annotation encoding=\"application/x-tex\">\\mathcal{C}</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathcal\" style=\"margin-right:0.05834em;\">C</span></span></span></span> to be the category of posets). It doesn't <em>quite</em> do what you want, since <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"sans-serif\">T</mi><mi mathvariant=\"sans-serif\">o</mi><mi mathvariant=\"sans-serif\">p</mi></mrow><annotation encoding=\"application/x-tex\">\\mathsf{Top}</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8889em;vertical-align:-0.1944em;\"></span><span class=\"mord\"><span class=\"mord mathsf\">Top</span></span></span></span></span> is not LFP, but it's still extremely interesting, and Kawase proves an analogue of Birkhoff's HSP theorem in this (very general!) setting.</p>\n<p>You can find the slides <a href=\"https://sites.uclouvain.be/ct2023/supports/1_MONDAY/Kawase.pdf\">here</a> and the full paper <a href=\"https://arxiv.org/abs/2304.04382\">here</a></p>",
+        "id": 376496131,
+        "sender_full_name": "Chris Grossack (they/them)",
+        "timestamp": 1689724333
+    }
+]

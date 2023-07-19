@@ -8,13 +8,13 @@ permalink: /index.html
 
 ## Streams:
 
-* [learning: questions](stream/229199-learning:-questions/index.html) (920 topics)
+* [learning: questions](stream/229199-learning:-questions/index.html) (923 topics)
 
-* [theory: category theory](stream/229136-theory:-category-theory/index.html) (424 topics)
+* [theory: category theory](stream/229136-theory:-category-theory/index.html) (425 topics)
 
 * [general](stream/229111-general/index.html) (262 topics)
 
-* [general: events](stream/229141-general:-events/index.html) (180 topics)
+* [general: events](stream/229141-general:-events/index.html) (181 topics)
 
 * [practice: applied ct](stream/229156-practice:-applied-ct/index.html) (146 topics)
 
@@ -182,4 +182,4 @@ permalink: /index.html
 
 * [theory: alternate presentations](stream/233122-theory:-alternate-presentations/index.html) (1 topic)
 
-<hr><p>Last updated: Jul 18 2023 at 00:55 UTC</p>
+<hr><p>Last updated: Jul 19 2023 at 00:12 UTC</p>
