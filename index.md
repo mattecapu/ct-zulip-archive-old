@@ -10,7 +10,7 @@ permalink: /index.html
 
 * [learning: questions](stream/229199-learning:-questions/index.html) (924 topics)
 
-* [theory: category theory](stream/229136-theory:-category-theory/index.html) (425 topics)
+* [theory: category theory](stream/229136-theory:-category-theory/index.html) (427 topics)
 
 * [general](stream/229111-general/index.html) (262 topics)
 
@@ -20,7 +20,7 @@ permalink: /index.html
 
 * [general: mathematics](stream/266967-general:-mathematics/index.html) (110 topics)
 
-* [theory: topos theory](stream/230087-theory:-topos-theory/index.html) (84 topics)
+* [theory: topos theory](stream/230087-theory:-topos-theory/index.html) (85 topics)
 
 * [general: positions](stream/245502-general:-positions/index.html) (77 topics)
 
@@ -68,9 +68,9 @@ permalink: /index.html
 
 * [philosophy](stream/229134-philosophy/index.html) (20 topics)
 
-* [workshop: Categories for AI](stream/347879-workshop:-Categories-for-AI/index.html) (20 topics)
+* [theory: physics](stream/251538-theory:-physics/index.html) (20 topics)
 
-* [theory: physics](stream/251538-theory:-physics/index.html) (19 topics)
+* [workshop: Categories for AI](stream/347879-workshop:-Categories-for-AI/index.html) (20 topics)
 
 * [conference: ACT22](stream/330541-conference:-ACT22/index.html) (18 topics)
 
@@ -182,4 +182,4 @@ permalink: /index.html
 
 * [theory: alternate presentations](stream/233122-theory:-alternate-presentations/index.html) (1 topic)
 
-<hr><p>Last updated: Jul 20 2023 at 00:34 UTC</p>
+<hr><p>Last updated: Jul 21 2023 at 00:12 UTC</p>

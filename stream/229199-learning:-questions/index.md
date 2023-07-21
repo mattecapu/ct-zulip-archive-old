@@ -9,13 +9,13 @@ permalink: /stream/229199-learning:-questions/index.html
 
 ### Topics:
 
+* [Synthetic introduction to noncommutative geometry?](topic/topic_Synthetic.20introduction.20to.20noncommutative.20geometry.3F.html) (8 messages, latest: Jul 20 2023 at 14:47)
+* [Reference for algebraic theories](topic/topic_Reference.20for.20algebraic.20theories.html) (10 messages, latest: Jul 20 2023 at 04:04)
 * ["re-strictification" of pseudofunctors](topic/topic_.22re-strictification.22.20of.20pseudofunctors.html) (10 messages, latest: Jul 19 2023 at 20:17)
 * [Exact squares with an additional property](topic/topic_Exact.20squares.20with.20an.20additional.20property.html) (1 message, latest: Jul 19 2023 at 17:58)
 * [Lean theorem prover or similar](topic/topic_Lean.20theorem.20prover.20or.20similar.html) (18 messages, latest: Jul 19 2023 at 07:28)
-* [Reference for algebraic theories](topic/topic_Reference.20for.20algebraic.20theories.html) (9 messages, latest: Jul 18 2023 at 23:52)
 * [Is there a formalization of "non-parametric functors"?](topic/topic_Is.20there.20a.20formalization.20of.20.22non-parametric.20functors.22.3F.html) (19 messages, latest: Jul 18 2023 at 19:38)
 * [Universal property of a terminal object](topic/topic_Universal.20property.20of.20a.20terminal.20object.html) (4 messages, latest: Jul 18 2023 at 19:07)
-* [Synthetic introduction to noncommutative geometry?](topic/topic_Synthetic.20introduction.20to.20noncommutative.20geometry.3F.html) (1 message, latest: Jul 18 2023 at 17:05)
 * [How to understand this structure in Category Theory?](topic/topic_How.20to.20understand.20this.20structure.20in.20Category.20Theory.3F.html) (9 messages, latest: Jul 18 2023 at 16:07)
 * [Horns filling up to some degree](topic/topic_Horns.20filling.20up.20to.20some.20degree.html) (24 messages, latest: Jul 17 2023 at 20:10)
 * [What can morphisms be?](topic/topic_What.20can.20morphisms.20be.3F.html) (2 messages, latest: Jul 17 2023 at 10:11)
@@ -934,4 +934,4 @@ permalink: /stream/229199-learning:-questions/index.html
 * [Algebra (Aluffi) exercises](topic/topic_Algebra.20(Aluffi).20exercises.html) (55 messages, latest: Mar 27 2020 at 23:38)
 * [What is category theory about?](topic/topic_What.20is.20category.20theory.20about.3F.html) (16 messages, latest: Mar 26 2020 at 16:03)
 
-<hr><p>Last updated: Jul 20 2023 at 00:34 UTC</p>
+<hr><p>Last updated: Jul 21 2023 at 00:12 UTC</p>
