@@ -9,7 +9,7 @@ permalink: /stream/230087-theory:-topos-theory/index.html
 
 ### Topics:
 
-* [Logical structure associated to toposes](topic/topic_Logical.20structure.20associated.20to.20toposes.html) (3 messages, latest: Jul 20 2023 at 12:35)
+* [Logical structure associated to toposes](topic/topic_Logical.20structure.20associated.20to.20toposes.html) (4 messages, latest: Jul 21 2023 at 12:07)
 * [Freely Adjoining A Subobject Classifier](topic/topic_Freely.20Adjoining.20A.20Subobject.20Classifier.html) (30 messages, latest: Jul 17 2023 at 19:38)
 * [subobjects of products](topic/topic_subobjects.20of.20products.html) (10 messages, latest: Jun 23 2023 at 15:39)
 * [Doing category theory in a topos](topic/topic_Doing.20category.20theory.20in.20a.20topos.html) (14 messages, latest: May 28 2023 at 18:22)
@@ -95,4 +95,4 @@ permalink: /stream/230087-theory:-topos-theory/index.html
 * [right adjoint to inclusion of sheaves?](topic/topic_right.20adjoint.20to.20inclusion.20of.20sheaves.3F.html) (18 messages, latest: Mar 30 2020 at 09:37)
 * [essential geometric morphism](topic/topic_essential.20geometric.20morphism.html) (2 messages, latest: Mar 27 2020 at 18:56)
 
-<hr><p>Last updated: Jul 21 2023 at 00:33 UTC</p>
+<hr><p>Last updated: Jul 22 2023 at 00:11 UTC</p>

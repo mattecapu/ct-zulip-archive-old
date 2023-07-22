@@ -9,6 +9,7 @@ permalink: /stream/274877-practice:-our-work/index.html
 
 ### Topics:
 
+* [David Roberts](topic/topic_David.20Roberts.html) (55 messages, latest: Jul 21 2023 at 09:12)
 * [Andrius Kulikauskas - classifying adjunctions](topic/topic_Andrius.20Kulikauskas.20-.20classifying.20adjunctions.html) (2 messages, latest: Jul 20 2023 at 19:13)
 * [Chris Grossack (they/them)](topic/topic_Chris.20Grossack.20(they.2Fthem).html) (5 messages, latest: Jul 16 2023 at 21:55)
 * [John Baez](topic/topic_John.20Baez.html) (1290 messages, latest: Jul 16 2023 at 15:28)
@@ -42,7 +43,6 @@ permalink: /stream/274877-practice:-our-work/index.html
 * [PSSL history](topic/topic_PSSL.20history.html) (11 messages, latest: Oct 18 2022 at 23:54)
 * [PSSL History](topic/topic_PSSL.20History.html) (4 messages, latest: Oct 17 2022 at 22:34)
 * [Matteo Capucci](topic/topic_Matteo.20Capucci.html) (23 messages, latest: Oct 17 2022 at 15:51)
-* [David Roberts](topic/topic_David.20Roberts.html) (54 messages, latest: Oct 05 2022 at 11:21)
 * [dusko: computable categories](topic/topic_dusko.3A.20computable.20categories.html) (3 messages, latest: Sep 15 2022 at 05:30)
 * [MonoidMusician (Verity S.)](topic/topic_MonoidMusician.20(Verity.20S.2E).html) (11 messages, latest: Aug 01 2022 at 16:17)
 * [motives](topic/topic_motives.html) (25 messages, latest: Jun 08 2022 at 17:35)
@@ -60,4 +60,4 @@ permalink: /stream/274877-practice:-our-work/index.html
 * [Conor Mc Bride](topic/topic_Conor.20Mc.20Bride.html) (60 messages, latest: Apr 08 2021 at 15:15)
 * [thoughts on sharing ideas](topic/topic_thoughts.20on.20sharing.20ideas.html) (20 messages, latest: Jan 31 2021 at 03:05)
 
-<hr><p>Last updated: Jul 21 2023 at 00:33 UTC</p>
+<hr><p>Last updated: Jul 22 2023 at 00:11 UTC</p>

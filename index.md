@@ -10,7 +10,7 @@ permalink: /index.html
 
 * [learning: questions](stream/229199-learning:-questions/index.html) (924 topics)
 
-* [theory: category theory](stream/229136-theory:-category-theory/index.html) (427 topics)
+* [theory: category theory](stream/229136-theory:-category-theory/index.html) (428 topics)
 
 * [general](stream/229111-general/index.html) (262 topics)
 
@@ -60,7 +60,7 @@ permalink: /index.html
 
 * [learning: recommendations](stream/232161-learning:-recommendations/index.html) (29 topics)
 
-* [practice: software](stream/229125-practice:-software/index.html) (25 topics)
+* [practice: software](stream/229125-practice:-software/index.html) (26 topics)
 
 * [practice: Dialectica](stream/323208-practice:-Dialectica/index.html) (23 topics)
 
@@ -182,4 +182,4 @@ permalink: /index.html
 
 * [theory: alternate presentations](stream/233122-theory:-alternate-presentations/index.html) (1 topic)
 
-<hr><p>Last updated: Jul 21 2023 at 00:33 UTC</p>
+<hr><p>Last updated: Jul 22 2023 at 00:11 UTC</p>

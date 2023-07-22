@@ -1,0 +1,67 @@
+---
+layout: archive
+title: Zulip Chat Archive
+permalink: /stream/229125-practice:-software/topic/topic_formalization.20of.20double.20categories.html
+---
+
+<h2>Stream: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229125-practice:-software/index.html">practice: software</a></h2>
+<h3>Topic: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229125-practice:-software/topic/topic_formalization.20of.20double.20categories.html">formalization of double categories</a></h3>
+
+<hr>
+
+<base href="https://categorytheory.zulipchat.com/">
+
+{% raw %}
+
+<a name="377303817"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229125-practice%3A%20software/topic/formalization%20of%20double%20categories/near/377303817" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Jacques Carette <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229125-practice:-software/topic/topic_formalization.20of.20double.20categories.html#377303817">(Jul 21 2023 at 13:36)</a>:</h4>
+<p>I'm looking for formalization (i.e. inside proof assistants) of double categories. I want to contrast them to the one in agda-categories (which is idiosyncratic, but for good reasons).  Googling around doesn't lead anywhere.</p>
+<p>I am particularly very interested in highly universe polymorphic versions (which sadly seems to rule out the 'slick' definitions so dear to category theorists).</p>
+
+
+
+<a name="377378222"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229125-practice%3A%20software/topic/formalization%20of%20double%20categories/near/377378222" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Max New <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229125-practice:-software/topic/topic_formalization.20of.20double.20categories.html#377378222">(Jul 21 2023 at 17:34)</a>:</h4>
+<p>I have a student that defined a "locally thin" version in cubical, i.e., where there is at most one square for any frame. The repo isn't public. It's maximally universe polymorphic, and looking at <code>agda-categories</code> it looks pretty much exactly the same modulo the thinness and we don't use setoids</p>
+
+
+
+<a name="377401772"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229125-practice%3A%20software/topic/formalization%20of%20double%20categories/near/377401772" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Bryce Clarke <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229125-practice:-software/topic/topic_formalization.20of.20double.20categories.html#377401772">(Jul 21 2023 at 19:01)</a>:</h4>
+<p>I know that <a href="http://nicolasbehr.com">Nicolas Behr</a> is looking to formalise double categories in Coq as part of <a href="https://coreact.wiki">CoREACT</a> project he is leading.</p>
+
+
+
+<a name="377412346"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229125-practice%3A%20software/topic/formalization%20of%20double%20categories/near/377412346" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Jacques Carette <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229125-practice:-software/topic/topic_formalization.20of.20double.20categories.html#377412346">(Jul 21 2023 at 19:47)</a>:</h4>
+<p><span class="user-mention" data-user-id="276642">@Max New</span> My main "innovation" there is to say "the heck with lists and natural numbers" and use types as indices, and then make explicit the necessary equivalence proofs (which are mighty obscure over List/Nat). I was wondering if I could indeed claim credit for that observation.</p>
+
+
+
+<a name="377412615"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229125-practice%3A%20software/topic/formalization%20of%20double%20categories/near/377412615" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Jacques Carette <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229125-practice:-software/topic/topic_formalization.20of.20double.20categories.html#377412615">(Jul 21 2023 at 19:48)</a>:</h4>
+<p>Thanks for the pointer <span class="user-mention" data-user-id="276693">@Bryce Clarke</span>  but my feeling is that Coq people don't worry much about universe polymorphism.</p>
+
+
+
+<a name="377417328"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229125-practice%3A%20software/topic/formalization%20of%20double%20categories/near/377417328" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Max New <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229125-practice:-software/topic/topic_formalization.20of.20double.20categories.html#377417328">(Jul 21 2023 at 20:11)</a>:</h4>
+<p>Where do Lists/Nats come in with double categories?</p>
+
+
+
+<a name="377421896"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229125-practice%3A%20software/topic/formalization%20of%20double%20categories/near/377421896" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Jacques Carette <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229125-practice:-software/topic/topic_formalization.20of.20double.20categories.html#377421896">(Jul 21 2023 at 20:34)</a>:</h4>
+<p>D'oh!! I was mixing multi-categories with double categories!!!!</p>
+
+
+
+<a name="377422057"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229125-practice%3A%20software/topic/formalization%20of%20double%20categories/near/377422057" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Jacques Carette <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229125-practice:-software/topic/topic_formalization.20of.20double.20categories.html#377422057">(Jul 21 2023 at 20:35)</a>:</h4>
+<p>With double categories, the issue is that the normal definition uses too much strictness, and we had to insert explicit coherences to make things match up.</p>
+
+
+
+{% endraw %}
+
+<hr><p>Last updated: Jul 22 2023 at 00:11 UTC</p>
