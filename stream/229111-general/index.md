@@ -9,6 +9,7 @@ permalink: /stream/229111-general/index.html
 
 ### Topics:
 
+* [new streams](topic/topic_new.20streams.html) (99 messages, latest: Jul 22 2023 at 14:47)
 * [Unity-respecting Change](topic/topic_Unity-respecting.20Change.html) (5 messages, latest: Jul 19 2023 at 23:10)
 * [Category / Type / &c. Theorists in industry](topic/topic_Category.20.2F.20Type.20.2F.20.26c.2E.20Theorists.20in.20industry.html) (14 messages, latest: Jul 19 2023 at 11:37)
 * [Introduce yourself!](topic/topic_Introduce.20yourself!.html) (118 messages, latest: Jul 17 2023 at 10:13)
@@ -41,7 +42,6 @@ permalink: /stream/229111-general/index.html
 * [Quantum PL and verification community](topic/topic_Quantum.20PL.20and.20verification.20community.html) (1 message, latest: Oct 28 2022 at 08:28)
 * [quantum PL and verification community](topic/topic_quantum.20PL.20and.20verification.20community.html) (1 message, latest: Oct 27 2022 at 13:23)
 * [introduce yourself!](topic/topic_introduce.20yourself!.html) (81 messages, latest: Oct 18 2022 at 19:21)
-* [new streams](topic/topic_new.20streams.html) (98 messages, latest: Oct 06 2022 at 17:16)
 * [nLab](topic/topic_nLab.html) (192 messages, latest: Oct 05 2022 at 16:40)
 * [Gruppenpest](topic/topic_Gruppenpest.html) (2 messages, latest: Sep 02 2022 at 22:36)
 * [category theory in Japan](topic/topic_category.20theory.20in.20Japan.html) (5 messages, latest: Aug 30 2022 at 09:16)
@@ -272,4 +272,4 @@ permalink: /stream/229111-general/index.html
 * [Tools for diagrams](topic/topic_Tools.20for.20diagrams.html) (78 messages, latest: Mar 25 2020 at 17:53)
 * [topic demonstration](topic/topic_topic.20demonstration.html) (2 messages, latest: Mar 23 2020 at 16:57)
 
-<hr><p>Last updated: Jul 22 2023 at 00:33 UTC</p>
+<hr><p>Last updated: Jul 23 2023 at 00:11 UTC</p>

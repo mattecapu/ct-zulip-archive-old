@@ -9,6 +9,7 @@ permalink: /stream/229199-learning:-questions/index.html
 
 ### Topics:
 
+* [What can morphisms be?](topic/topic_What.20can.20morphisms.20be.3F.html) (3 messages, latest: Jul 22 2023 at 04:41)
 * [graphs within graphs](topic/topic_graphs.20within.20graphs.html) (20 messages, latest: Jul 21 2023 at 20:55)
 * [Synthetic introduction to noncommutative geometry?](topic/topic_Synthetic.20introduction.20to.20noncommutative.20geometry.3F.html) (8 messages, latest: Jul 20 2023 at 14:47)
 * [Reference for algebraic theories](topic/topic_Reference.20for.20algebraic.20theories.html) (10 messages, latest: Jul 20 2023 at 04:04)
@@ -19,7 +20,6 @@ permalink: /stream/229199-learning:-questions/index.html
 * [Universal property of a terminal object](topic/topic_Universal.20property.20of.20a.20terminal.20object.html) (4 messages, latest: Jul 18 2023 at 19:07)
 * [How to understand this structure in Category Theory?](topic/topic_How.20to.20understand.20this.20structure.20in.20Category.20Theory.3F.html) (9 messages, latest: Jul 18 2023 at 16:07)
 * [Horns filling up to some degree](topic/topic_Horns.20filling.20up.20to.20some.20degree.html) (24 messages, latest: Jul 17 2023 at 20:10)
-* [What can morphisms be?](topic/topic_What.20can.20morphisms.20be.3F.html) (2 messages, latest: Jul 17 2023 at 10:11)
 * [logic inherited by functor categories](topic/topic_logic.20inherited.20by.20functor.20categories.html) (17 messages, latest: Jul 15 2023 at 21:27)
 * [Doctrines, adjoints, and all that](topic/topic_Doctrines.2C.20adjoints.2C.20and.20all.20that.html) (12 messages, latest: Jul 12 2023 at 20:32)
 * [What does a slice topos classify?](topic/topic_What.20does.20a.20slice.20topos.20classify.3F.html) (50 messages, latest: Jul 07 2023 at 18:50)
@@ -934,4 +934,4 @@ permalink: /stream/229199-learning:-questions/index.html
 * [Algebra (Aluffi) exercises](topic/topic_Algebra.20(Aluffi).20exercises.html) (55 messages, latest: Mar 27 2020 at 23:38)
 * [What is category theory about?](topic/topic_What.20is.20category.20theory.20about.3F.html) (16 messages, latest: Mar 26 2020 at 16:03)
 
-<hr><p>Last updated: Jul 22 2023 at 00:33 UTC</p>
+<hr><p>Last updated: Jul 23 2023 at 00:11 UTC</p>

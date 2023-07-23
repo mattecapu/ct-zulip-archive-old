@@ -10,7 +10,7 @@ permalink: /index.html
 
 * [learning: questions](stream/229199-learning:-questions/index.html) (924 topics)
 
-* [theory: category theory](stream/229136-theory:-category-theory/index.html) (428 topics)
+* [theory: category theory](stream/229136-theory:-category-theory/index.html) (429 topics)
 
 * [general](stream/229111-general/index.html) (262 topics)
 
@@ -42,7 +42,7 @@ permalink: /index.html
 
 * [practice: our work](stream/274877-practice:-our-work/index.html) (50 topics)
 
-* [theory: type theory](stream/229952-theory:-type-theory/index.html) (48 topics)
+* [theory: type theory](stream/229952-theory:-type-theory/index.html) (49 topics)
 
 * [MIT Categories Seminar](stream/229457-MIT-Categories-Seminar/index.html) (41 topics)
 
@@ -120,9 +120,9 @@ permalink: /index.html
 
 * [seminar: EM-cats](stream/298571-seminar:-EM-cats/index.html) (7 topics)
 
-* [languages: portugues](stream/303660-languages:-portugues/index.html) (6 topics)
+* [semiotics and semiosis](stream/229179-semiotics-and-semiosis/index.html) (7 topics)
 
-* [semiotics and semiosis](stream/229179-semiotics-and-semiosis/index.html) (6 topics)
+* [languages: portugues](stream/303660-languages:-portugues/index.html) (6 topics)
 
 * [theory: biology](stream/336415-theory:-biology/index.html) (6 topics)
 
@@ -130,13 +130,13 @@ permalink: /index.html
 
 * [languages: Deutsch/German](stream/231144-languages:-Deutsch/German/index.html) (5 topics)
 
+* [practice: pedagogy](stream/295092-practice:-pedagogy/index.html) (5 topics)
+
 * [general: terminology](stream/348484-general:-terminology/index.html) (4 topics)
 
 * [languages: espanol/Spanish](stream/231120-languages:-espanol/Spanish/index.html) (4 topics)
 
 * [practice: neuroscience](stream/233925-practice:-neuroscience/index.html) (4 topics)
-
-* [practice: pedagogy](stream/295092-practice:-pedagogy/index.html) (4 topics)
 
 * [seminar: YAMCaTS](stream/275483-seminar:-YAMCaTS/index.html) (4 topics)
 
@@ -157,6 +157,8 @@ permalink: /index.html
 * [MATHEMATICAL PHILOSOPHY OF BIOLOGY](stream/336415-MATHEMATICAL-PHILOSOPHY-OF-BIOLOGY/index.html) (2 topics)
 
 * [Topos Colloquium](stream/269484-Topos-Colloquium/index.html) (2 topics)
+
+* [conference: ACT23](stream/397902-conference:-ACT23/index.html) (2 topics)
 
 * [languages: Nederlands/Dutch](stream/324768-languages:-Nederlands/Dutch/index.html) (2 topics)
 
@@ -182,4 +184,4 @@ permalink: /index.html
 
 * [theory: alternate presentations](stream/233122-theory:-alternate-presentations/index.html) (1 topic)
 
-<hr><p>Last updated: Jul 22 2023 at 00:33 UTC</p>
+<hr><p>Last updated: Jul 23 2023 at 00:11 UTC</p>
