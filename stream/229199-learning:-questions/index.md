@@ -9,7 +9,8 @@ permalink: /stream/229199-learning:-questions/index.html
 
 ### Topics:
 
-* [What can morphisms be?](topic/topic_What.20can.20morphisms.20be.3F.html) (3 messages, latest: Jul 22 2023 at 04:41)
+* [What can morphisms be?](topic/topic_What.20can.20morphisms.20be.3F.html) (8 messages, latest: Jul 23 2023 at 19:25)
+* [Preorders and monoidal preorders](topic/topic_Preorders.20and.20monoidal.20preorders.html) (31 messages, latest: Jul 23 2023 at 16:24)
 * [graphs within graphs](topic/topic_graphs.20within.20graphs.html) (20 messages, latest: Jul 21 2023 at 20:55)
 * [Synthetic introduction to noncommutative geometry?](topic/topic_Synthetic.20introduction.20to.20noncommutative.20geometry.3F.html) (8 messages, latest: Jul 20 2023 at 14:47)
 * [Reference for algebraic theories](topic/topic_Reference.20for.20algebraic.20theories.html) (10 messages, latest: Jul 20 2023 at 04:04)
@@ -934,4 +935,4 @@ permalink: /stream/229199-learning:-questions/index.html
 * [Algebra (Aluffi) exercises](topic/topic_Algebra.20(Aluffi).20exercises.html) (55 messages, latest: Mar 27 2020 at 23:38)
 * [What is category theory about?](topic/topic_What.20is.20category.20theory.20about.3F.html) (16 messages, latest: Mar 26 2020 at 16:03)
 
-<hr><p>Last updated: Jul 23 2023 at 00:36 UTC</p>
+<hr><p>Last updated: Jul 24 2023 at 00:12 UTC</p>
