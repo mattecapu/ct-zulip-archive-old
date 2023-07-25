@@ -9,9 +9,9 @@ permalink: /stream/229141-general:-events/index.html
 
 ### Topics:
 
+* [Interdisciplinary Summer School 2023](topic/topic_Interdisciplinary.20Summer.20School.202023.html) (11 messages, latest: Jul 24 2023 at 21:31)
 * [ACT 2023](topic/topic_ACT.202023.html) (187 messages, latest: Jul 22 2023 at 17:08)
 * [QPL < > EthCC roundtable](topic/topic_QPL.20.3C.20.3E.20EthCC.20roundtable.html) (1 message, latest: Jul 18 2023 at 06:19)
-* [Interdisciplinary Summer School 2023](topic/topic_Interdisciplinary.20Summer.20School.202023.html) (10 messages, latest: Jul 10 2023 at 20:05)
 * [Visions in Math: Grothendieck](topic/topic_Visions.20in.20Math.3A.20Grothendieck.html) (5 messages, latest: Jul 08 2023 at 06:52)
 * [Topos Institute colloquium](topic/topic_Topos.20Institute.20colloquium.html) (2 messages, latest: Jun 24 2023 at 20:54)
 * [PSSL108](topic/topic_PSSL108.html) (1 message, latest: Jun 21 2023 at 08:46)
@@ -191,4 +191,4 @@ permalink: /stream/229141-general:-events/index.html
 * [April 1st: ACT@UCR](topic/topic_April.201st.3A.20ACT.40UCR.html) (3 messages, latest: Mar 26 2020 at 23:58)
 * [Google Sites problem](topic/topic_Google.20Sites.20problem.html) (4 messages, latest: Mar 25 2020 at 04:29)
 
-<hr><p>Last updated: Jul 24 2023 at 00:34 UTC</p>
+<hr><p>Last updated: Jul 25 2023 at 00:12 UTC</p>
