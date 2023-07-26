@@ -9,7 +9,7 @@ permalink: /stream/229136-theory:-category-theory/index.html
 
 ### Topics:
 
-* [functors that create limits](topic/topic_functors.20that.20create.20limits.html) (17 messages, latest: Jul 24 2023 at 20:08)
+* [functors that create limits](topic/topic_functors.20that.20create.20limits.html) (18 messages, latest: Jul 25 2023 at 09:11)
 * [✔ Free colored PROP on sets of objects and morphisms](topic/topic_.E2.9C.94.20Free.20colored.20PROP.20on.20sets.20of.20objects.20and.20morphisms.html) (28 messages, latest: Jul 23 2023 at 00:00)
 * [Free colored PROP on sets of objects and morphisms](topic/topic_Free.20colored.20PROP.20on.20sets.20of.20objects.20and.20morphisms.html) (20 messages, latest: Jul 21 2023 at 20:51)
 * [Sheaves and operads/multicategories](topic/topic_Sheaves.20and.20operads.2Fmulticategories.html) (5 messages, latest: Jul 21 2023 at 12:45)
@@ -439,4 +439,4 @@ permalink: /stream/229136-theory:-category-theory/index.html
 * [diagrams for application](topic/topic_diagrams.20for.20application.html) (13 messages, latest: Mar 24 2020 at 06:19)
 * [universal constructions](topic/topic_universal.20constructions.html) (8 messages, latest: Mar 23 2020 at 21:06)
 
-<hr><p>Last updated: Jul 25 2023 at 00:34 UTC</p>
+<hr><p>Last updated: Jul 26 2023 at 00:12 UTC</p>

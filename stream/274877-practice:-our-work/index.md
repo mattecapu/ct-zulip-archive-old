@@ -9,7 +9,7 @@ permalink: /stream/274877-practice:-our-work/index.html
 
 ### Topics:
 
-* [John Baez](topic/topic_John.20Baez.html) (1294 messages, latest: Jul 23 2023 at 09:41)
+* [John Baez](topic/topic_John.20Baez.html) (1298 messages, latest: Jul 25 2023 at 20:38)
 * [David Roberts](topic/topic_David.20Roberts.html) (55 messages, latest: Jul 21 2023 at 09:12)
 * [Andrius Kulikauskas - classifying adjunctions](topic/topic_Andrius.20Kulikauskas.20-.20classifying.20adjunctions.html) (2 messages, latest: Jul 20 2023 at 19:13)
 * [Chris Grossack (they/them)](topic/topic_Chris.20Grossack.20(they.2Fthem).html) (5 messages, latest: Jul 16 2023 at 21:55)
@@ -60,4 +60,4 @@ permalink: /stream/274877-practice:-our-work/index.html
 * [Conor Mc Bride](topic/topic_Conor.20Mc.20Bride.html) (60 messages, latest: Apr 08 2021 at 15:15)
 * [thoughts on sharing ideas](topic/topic_thoughts.20on.20sharing.20ideas.html) (20 messages, latest: Jan 31 2021 at 03:05)
 
-<hr><p>Last updated: Jul 25 2023 at 00:34 UTC</p>
+<hr><p>Last updated: Jul 26 2023 at 00:12 UTC</p>

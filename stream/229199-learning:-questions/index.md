@@ -9,8 +9,8 @@ permalink: /stream/229199-learning:-questions/index.html
 
 ### Topics:
 
+* [Preorders and monoidal preorders](topic/topic_Preorders.20and.20monoidal.20preorders.html) (43 messages, latest: Jul 25 2023 at 15:27)
 * [✔ Why are Pointwise Kan Extensions called that?](topic/topic_.E2.9C.94.20Why.20are.20Pointwise.20Kan.20Extensions.20called.20that.3F.html) (9 messages, latest: Jul 24 2023 at 19:10)
-* [Preorders and monoidal preorders](topic/topic_Preorders.20and.20monoidal.20preorders.html) (41 messages, latest: Jul 24 2023 at 18:35)
 * [Diagram dimensions](topic/topic_Diagram.20dimensions.html) (1 message, latest: Jul 24 2023 at 15:25)
 * [What can morphisms be?](topic/topic_What.20can.20morphisms.20be.3F.html) (8 messages, latest: Jul 23 2023 at 19:25)
 * [graphs within graphs](topic/topic_graphs.20within.20graphs.html) (20 messages, latest: Jul 21 2023 at 20:55)
@@ -937,4 +937,4 @@ permalink: /stream/229199-learning:-questions/index.html
 * [Algebra (Aluffi) exercises](topic/topic_Algebra.20(Aluffi).20exercises.html) (55 messages, latest: Mar 27 2020 at 23:38)
 * [What is category theory about?](topic/topic_What.20is.20category.20theory.20about.3F.html) (16 messages, latest: Mar 26 2020 at 16:03)
 
-<hr><p>Last updated: Jul 25 2023 at 00:34 UTC</p>
+<hr><p>Last updated: Jul 26 2023 at 00:12 UTC</p>
