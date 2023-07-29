@@ -9,8 +9,9 @@ permalink: /stream/229199-learning:-questions/index.html
 
 ### Topics:
 
-* [A formal definition of a commuting diagram](topic/topic_A.20formal.20definition.20of.20a.20commuting.20diagram.html) (60 messages, latest: Jul 27 2023 at 19:05)
-* [natural model](topic/topic_natural.20model.html) (3 messages, latest: Jul 27 2023 at 18:52)
+* [operads and parameterized categories](topic/topic_operads.20and.20parameterized.20categories.html) (1 message, latest: Jul 28 2023 at 20:49)
+* [A formal definition of a commuting diagram](topic/topic_A.20formal.20definition.20of.20a.20commuting.20diagram.html) (78 messages, latest: Jul 28 2023 at 17:57)
+* [natural model](topic/topic_natural.20model.html) (8 messages, latest: Jul 28 2023 at 17:32)
 * [✔ Diagram dimensions](topic/topic_.E2.9C.94.20Diagram.20dimensions.html) (29 messages, latest: Jul 27 2023 at 16:29)
 * [Diagram dimensions](topic/topic_Diagram.20dimensions.html) (8 messages, latest: Jul 26 2023 at 15:54)
 * [Preorders and monoidal preorders](topic/topic_Preorders.20and.20monoidal.20preorders.html) (43 messages, latest: Jul 25 2023 at 15:27)
@@ -940,4 +941,4 @@ permalink: /stream/229199-learning:-questions/index.html
 * [Algebra (Aluffi) exercises](topic/topic_Algebra.20(Aluffi).20exercises.html) (55 messages, latest: Mar 27 2020 at 23:38)
 * [What is category theory about?](topic/topic_What.20is.20category.20theory.20about.3F.html) (16 messages, latest: Mar 26 2020 at 16:03)
 
-<hr><p>Last updated: Jul 28 2023 at 00:34 UTC</p>
+<hr><p>Last updated: Jul 29 2023 at 00:13 UTC</p>

@@ -8,7 +8,7 @@ permalink: /index.html
 
 ## Streams:
 
-* [learning: questions](stream/229199-learning:-questions/index.html) (930 topics)
+* [learning: questions](stream/229199-learning:-questions/index.html) (931 topics)
 
 * [theory: category theory](stream/229136-theory:-category-theory/index.html) (431 topics)
 
@@ -40,9 +40,9 @@ permalink: /index.html
 
 * [practice: thermodynamics](stream/306433-practice:-thermodynamics/index.html) (53 topics)
 
-* [practice: our work](stream/274877-practice:-our-work/index.html) (50 topics)
+* [practice: our work](stream/274877-practice:-our-work/index.html) (51 topics)
 
-* [theory: type theory](stream/229952-theory:-type-theory/index.html) (49 topics)
+* [theory: type theory](stream/229952-theory:-type-theory/index.html) (50 topics)
 
 * [MIT Categories Seminar](stream/229457-MIT-Categories-Seminar/index.html) (41 topics)
 
@@ -116,6 +116,8 @@ permalink: /index.html
 
 * [theory: monoids](stream/231815-theory:-monoids/index.html) (8 topics)
 
+* [conference: ACT23](stream/397902-conference:-ACT23/index.html) (7 topics)
+
 * [learning: statistics reading group](stream/245528-learning:-statistics-reading-group/index.html) (7 topics)
 
 * [seminar: EM-cats](stream/298571-seminar:-EM-cats/index.html) (7 topics)
@@ -158,8 +160,6 @@ permalink: /index.html
 
 * [Topos Colloquium](stream/269484-Topos-Colloquium/index.html) (2 topics)
 
-* [conference: ACT23](stream/397902-conference:-ACT23/index.html) (2 topics)
-
 * [languages: Nederlands/Dutch](stream/324768-languages:-Nederlands/Dutch/index.html) (2 topics)
 
 * [practice: industry](stream/229370-practice:-industry/index.html) (2 topics)
@@ -184,4 +184,4 @@ permalink: /index.html
 
 * [theory: alternate presentations](stream/233122-theory:-alternate-presentations/index.html) (1 topic)
 
-<hr><p>Last updated: Jul 28 2023 at 00:34 UTC</p>
+<hr><p>Last updated: Jul 29 2023 at 00:13 UTC</p>

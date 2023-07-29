@@ -9,7 +9,7 @@ permalink: /stream/229111-general/index.html
 
 ### Topics:
 
-* [Introduce yourself!](topic/topic_Introduce.20yourself!.html) (119 messages, latest: Jul 27 2023 at 23:31)
+* [Introduce yourself!](topic/topic_Introduce.20yourself!.html) (120 messages, latest: Jul 28 2023 at 14:33)
 * [new streams](topic/topic_new.20streams.html) (99 messages, latest: Jul 22 2023 at 14:47)
 * [Unity-respecting Change](topic/topic_Unity-respecting.20Change.html) (5 messages, latest: Jul 19 2023 at 23:10)
 * [Category / Type / &c. Theorists in industry](topic/topic_Category.20.2F.20Type.20.2F.20.26c.2E.20Theorists.20in.20industry.html) (14 messages, latest: Jul 19 2023 at 11:37)
@@ -272,4 +272,4 @@ permalink: /stream/229111-general/index.html
 * [Tools for diagrams](topic/topic_Tools.20for.20diagrams.html) (78 messages, latest: Mar 25 2020 at 17:53)
 * [topic demonstration](topic/topic_topic.20demonstration.html) (2 messages, latest: Mar 23 2020 at 16:57)
 
-<hr><p>Last updated: Jul 28 2023 at 00:34 UTC</p>
+<hr><p>Last updated: Jul 29 2023 at 00:13 UTC</p>

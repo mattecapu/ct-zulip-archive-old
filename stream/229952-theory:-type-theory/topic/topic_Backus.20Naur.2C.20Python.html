@@ -1,0 +1,50 @@
+---
+layout: archive
+title: Zulip Chat Archive
+permalink: /stream/229952-theory:-type-theory/topic/topic_Backus.20Naur.2C.20Python.html
+---
+
+<h2>Stream: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229952-theory:-type-theory/index.html">theory: type theory</a></h2>
+<h3>Topic: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229952-theory:-type-theory/topic/topic_Backus.20Naur.2C.20Python.html">Backus Naur, Python</a></h3>
+
+<hr>
+
+<base href="https://categorytheory.zulipchat.com/">
+
+{% raw %}
+
+<a name="379453963"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229952-theory%3A%20type%20theory/topic/Backus%20Naur%2C%20Python/near/379453963" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nico Beck <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229952-theory:-type-theory/topic/topic_Backus.20Naur.2C.20Python.html#379453963">(Jul 28 2023 at 10:48)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="629908">Julius</span> <a href="#narrow/stream/229952-theory.3A-type-theory/topic/Bacchus.20Naur.2C.20Python/near/377619260">said</a>:</p>
+<blockquote>
+<p>Curious if there’s a dense, pure definition of category theoretic objects as a tight, rigorous language - could be like an extended Bacchus Naur Form description of category theory, axiomatically / as a formal language?</p>
+<p>I’m personally try to make sure I have some basic definitions solidified. Seven Sketches of Compositionality, the book I’m working with, does not provide definitions of sets or logical concepts, beyond “a collection of things”.</p>
+<p>But my early attempt would be something like this (maybe to come, in Python).</p>
+<p>We could take the Python set object as the mathematical concept of a set. To add structure we can define new classes.</p>
+<p>What might a list of definitions look like?</p>
+<p>We probably need products and subsets next?</p>
+<p>Products are tuples in Python.</p>
+<p>A subset is a set, the parent / superset set, and the “subset function” that tests the truth condition “is subset”: so its signature is actually a triple, A, B, f. Right? def subset(A, B): condition = False; for element in B: if element not in A: condition = False; return condition</p>
+<p>I imagine there’s a more pythonic way using a list processing method like a map or filter or something.</p>
+<p>And then? I’ll see what is needed next. I know a relation is actually a subset of a product set. A function is a relation with a certain condition expressed in logical quantifiers, I think? two sets A B, for each b in B, there exists one and only one a in A such that the tuple in the subset of the product set of A and B has b in second place.</p>
+<p>So we skipped over sets and logic, but it doesn’t matter since we already roughly have it in Python. We define a preorder as a binary relation which is reflexive and transitive. Like subsets, perhaps, all concepts can be defined as a signature of objects <em>and</em> functions they have to pass - their conditions?</p>
+</blockquote>
+<p>In a dependently typed language such as FOLDS , which was already mentioned above, the concepts category, object and morphism are primitives and you don't have to ever say "set" in such a language if you don't want to. You can of course add a category "Set" to such a language and axiomatise some of its categorical properties in the spirit of ETCS for example.</p>
+
+
+
+<a name="379456374"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229952-theory%3A%20type%20theory/topic/Backus%20Naur%2C%20Python/near/379456374" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229952-theory:-type-theory/topic/topic_Backus.20Naur.2C.20Python.html#379456374">(Jul 28 2023 at 10:55)</a>:</h4>
+<p>I'm changing the title of this post from "Bacchus Naur" to "Backus Naur" even though I <em>really love</em> the idea that the Roman god of wine and festivity has a computer science concept named after him.</p>
+
+
+
+<a name="379580350"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229952-theory%3A%20type%20theory/topic/Backus%20Naur%2C%20Python/near/379580350" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Ryan Wisnesky <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229952-theory:-type-theory/topic/topic_Backus.20Naur.2C.20Python.html#379580350">(Jul 28 2023 at 17:15)</a>:</h4>
+<p>heh, there's always the "Ballmer peak": <a href="https://xkcd.com/323/">https://xkcd.com/323/</a></p>
+
+
+
+{% endraw %}
+
+<hr><p>Last updated: Jul 29 2023 at 00:13 UTC</p>
