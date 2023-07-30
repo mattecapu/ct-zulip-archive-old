@@ -9,7 +9,7 @@ permalink: /stream/229952-theory:-type-theory/index.html
 
 ### Topics:
 
-* [Backus Naur, Python](topic/topic_Backus.20Naur.2C.20Python.html) (3 messages, latest: Jul 28 2023 at 17:15)
+* [Backus Naur, Python](topic/topic_Backus.20Naur.2C.20Python.html) (4 messages, latest: Jul 29 2023 at 02:05)
 * [Bacchus Naur, Python](topic/topic_Bacchus.20Naur.2C.20Python.html) (4 messages, latest: Jul 22 2023 at 17:54)
 * [semisimplicial types](topic/topic_semisimplicial.20types.html) (69 messages, latest: Jun 23 2023 at 16:18)
 * [Identity type in lower universe?](topic/topic_Identity.20type.20in.20lower.20universe.3F.html) (9 messages, latest: Jun 22 2023 at 19:15)
@@ -60,4 +60,4 @@ permalink: /stream/229952-theory:-type-theory/index.html
 * [stream events](topic/topic_stream.20events.html) (3 messages, latest: Apr 06 2020 at 05:32)
 * [W-types and CFGs](topic/topic_W-types.20and.20CFGs.html) (11 messages, latest: Apr 02 2020 at 16:00)
 
-<hr><p>Last updated: Jul 29 2023 at 00:31 UTC</p>
+<hr><p>Last updated: Jul 30 2023 at 00:11 UTC</p>
