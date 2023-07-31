@@ -9,7 +9,7 @@ permalink: /stream/229199-learning:-questions/index.html
 
 ### Topics:
 
-* [Linear sums in categories](topic/topic_Linear.20sums.20in.20categories.html) (10 messages, latest: Jul 29 2023 at 23:35)
+* [Linear sums in categories](topic/topic_Linear.20sums.20in.20categories.html) (15 messages, latest: Jul 30 2023 at 14:53)
 * [A formal definition of a commuting diagram](topic/topic_A.20formal.20definition.20of.20a.20commuting.20diagram.html) (82 messages, latest: Jul 29 2023 at 06:22)
 * [operads and parameterized categories](topic/topic_operads.20and.20parameterized.20categories.html) (1 message, latest: Jul 28 2023 at 20:49)
 * [natural model](topic/topic_natural.20model.html) (8 messages, latest: Jul 28 2023 at 17:32)
@@ -942,4 +942,4 @@ permalink: /stream/229199-learning:-questions/index.html
 * [Algebra (Aluffi) exercises](topic/topic_Algebra.20(Aluffi).20exercises.html) (55 messages, latest: Mar 27 2020 at 23:38)
 * [What is category theory about?](topic/topic_What.20is.20category.20theory.20about.3F.html) (16 messages, latest: Mar 26 2020 at 16:03)
 
-<hr><p>Last updated: Jul 30 2023 at 00:35 UTC</p>
+<hr><p>Last updated: Jul 31 2023 at 00:12 UTC</p>

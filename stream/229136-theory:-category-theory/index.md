@@ -9,6 +9,7 @@ permalink: /stream/229136-theory:-category-theory/index.html
 
 ### Topics:
 
+* [Dinatural or extranatural transformation, double categories](topic/topic_Dinatural.20or.20extranatural.20transformation.2C.20double.20categories.html) (3 messages, latest: Jul 30 2023 at 00:54)
 * [properties of free categories](topic/topic_properties.20of.20free.20categories.html) (7 messages, latest: Jul 28 2023 at 17:47)
 * [Sheaves and operads/multicategories](topic/topic_Sheaves.20and.20operads.2Fmulticategories.html) (14 messages, latest: Jul 28 2023 at 17:15)
 * [✔ extensive categories in constructive mathematics](topic/topic_.E2.9C.94.20extensive.20categories.20in.20constructive.20mathematics.html) (8 messages, latest: Jul 27 2023 at 14:54)
@@ -441,4 +442,4 @@ permalink: /stream/229136-theory:-category-theory/index.html
 * [diagrams for application](topic/topic_diagrams.20for.20application.html) (13 messages, latest: Mar 24 2020 at 06:19)
 * [universal constructions](topic/topic_universal.20constructions.html) (8 messages, latest: Mar 23 2020 at 21:06)
 
-<hr><p>Last updated: Jul 30 2023 at 00:35 UTC</p>
+<hr><p>Last updated: Jul 31 2023 at 00:12 UTC</p>

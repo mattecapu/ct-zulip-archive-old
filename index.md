@@ -10,9 +10,9 @@ permalink: /index.html
 
 * [learning: questions](stream/229199-learning:-questions/index.html) (932 topics)
 
-* [theory: category theory](stream/229136-theory:-category-theory/index.html) (431 topics)
+* [theory: category theory](stream/229136-theory:-category-theory/index.html) (432 topics)
 
-* [general](stream/229111-general/index.html) (262 topics)
+* [general](stream/229111-general/index.html) (263 topics)
 
 * [general: events](stream/229141-general:-events/index.html) (181 topics)
 
@@ -104,6 +104,8 @@ permalink: /index.html
 
 * [theory: concurrency](stream/235484-theory:-concurrency/index.html) (10 topics)
 
+* [conference: ACT23](stream/397902-conference:-ACT23/index.html) (9 topics)
+
 * [conference: CT20->21](stream/298844-conference:-CT20->21/index.html) (9 topics)
 
 * [general: terminology & notation](stream/348484-general:-terminology-&-notation/index.html) (9 topics)
@@ -111,8 +113,6 @@ permalink: /index.html
 * [languages: francais/French](stream/231124-languages:-francais/French/index.html) (9 topics)
 
 * [theory: analysis](stream/281848-theory:-analysis/index.html) (9 topics)
-
-* [conference: ACT23](stream/397902-conference:-ACT23/index.html) (8 topics)
 
 * [languages: italiano/Italian](stream/231111-languages:-italiano/Italian/index.html) (8 topics)
 
@@ -184,4 +184,4 @@ permalink: /index.html
 
 * [theory: alternate presentations](stream/233122-theory:-alternate-presentations/index.html) (1 topic)
 
-<hr><p>Last updated: Jul 30 2023 at 00:35 UTC</p>
+<hr><p>Last updated: Jul 31 2023 at 00:12 UTC</p>
