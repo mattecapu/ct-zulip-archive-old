@@ -9,7 +9,7 @@ permalink: /stream/229199-learning:-questions/index.html
 
 ### Topics:
 
-* [Diagram dimensions](topic/topic_Diagram.20dimensions.html) (10 messages, latest: Jul 31 2023 at 23:10)
+* [Diagram dimensions](topic/topic_Diagram.20dimensions.html) (11 messages, latest: Aug 01 2023 at 00:30)
 * [What can morphisms be?](topic/topic_What.20can.20morphisms.20be.3F.html) (9 messages, latest: Jul 31 2023 at 21:07)
 * [equivariant](topic/topic_equivariant.html) (18 messages, latest: Jul 31 2023 at 18:32)
 * [Well quasi-orders: a categorial perspective?](topic/topic_Well.20quasi-orders.3A.20a.20categorial.20perspective.3F.html) (1 message, latest: Jul 31 2023 at 17:46)
@@ -943,4 +943,4 @@ permalink: /stream/229199-learning:-questions/index.html
 * [Algebra (Aluffi) exercises](topic/topic_Algebra.20(Aluffi).20exercises.html) (55 messages, latest: Mar 27 2020 at 23:38)
 * [What is category theory about?](topic/topic_What.20is.20category.20theory.20about.3F.html) (16 messages, latest: Mar 26 2020 at 16:03)
 
-<hr><p>Last updated: Aug 01 2023 at 00:13 UTC</p>
+<hr><p>Last updated: Aug 01 2023 at 00:36 UTC</p>
