@@ -9,7 +9,7 @@ permalink: /stream/229450-practice:-programming/index.html
 
 ### Topics:
 
-* [Math notation editing on iOS](topic/topic_Math.20notation.20editing.20on.20iOS.html) (3 messages, latest: Jul 23 2023 at 16:48)
+* [Math notation editing on iOS](topic/topic_Math.20notation.20editing.20on.20iOS.html) (4 messages, latest: Aug 01 2023 at 00:10)
 * [Data Management & Category Theory](topic/topic_Data.20Management.20.26.20Category.20Theory.html) (10 messages, latest: Apr 23 2022 at 17:40)
 * [linkers & loaders](topic/topic_linkers.20.26.20loaders.html) (3 messages, latest: Apr 04 2022 at 03:22)
 * [Linkers & Loaders](topic/topic_Linkers.20.26.20Loaders.html) (1 message, latest: Apr 03 2022 at 12:30)
@@ -25,4 +25,4 @@ permalink: /stream/229450-practice:-programming/index.html
 * [Hask](topic/topic_Hask.html) (141 messages, latest: Apr 01 2020 at 18:14)
 * [other resources](topic/topic_other.20resources.html) (2 messages, latest: Mar 25 2020 at 07:15)
 
-<hr><p>Last updated: Jul 31 2023 at 00:33 UTC</p>
+<hr><p>Last updated: Aug 01 2023 at 00:13 UTC</p>

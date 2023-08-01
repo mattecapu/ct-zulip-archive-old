@@ -8,7 +8,7 @@ permalink: /index.html
 
 ## Streams:
 
-* [learning: questions](stream/229199-learning:-questions/index.html) (932 topics)
+* [learning: questions](stream/229199-learning:-questions/index.html) (933 topics)
 
 * [theory: category theory](stream/229136-theory:-category-theory/index.html) (432 topics)
 
@@ -62,6 +62,8 @@ permalink: /index.html
 
 * [practice: software](stream/229125-practice:-software/index.html) (26 topics)
 
+* [conference: ACT23](stream/397902-conference:-ACT23/index.html) (24 topics)
+
 * [practice: Dialectica](stream/323208-practice:-Dialectica/index.html) (23 topics)
 
 * [workshop: Polynomial Functors @ Topos](stream/282140-workshop:-Polynomial-Functors-@-Topos/index.html) (22 topics)
@@ -72,7 +74,7 @@ permalink: /index.html
 
 * [workshop: Categories for AI](stream/347879-workshop:-Categories-for-AI/index.html) (20 topics)
 
-* [conference: ACT22](stream/330541-conference:-ACT22/index.html) (18 topics)
+* [conference: ACT22](stream/330541-conference:-ACT22/index.html) (19 topics)
 
 * [practice: chemistry](stream/322714-practice:-chemistry/index.html) (17 topics)
 
@@ -103,8 +105,6 @@ permalink: /index.html
 * [theory: algebra & CT](stream/230123-theory:-algebra-&-CT/index.html) (10 topics)
 
 * [theory: concurrency](stream/235484-theory:-concurrency/index.html) (10 topics)
-
-* [conference: ACT23](stream/397902-conference:-ACT23/index.html) (9 topics)
 
 * [conference: CT20->21](stream/298844-conference:-CT20->21/index.html) (9 topics)
 
@@ -184,4 +184,4 @@ permalink: /index.html
 
 * [theory: alternate presentations](stream/233122-theory:-alternate-presentations/index.html) (1 topic)
 
-<hr><p>Last updated: Jul 31 2023 at 00:33 UTC</p>
+<hr><p>Last updated: Aug 01 2023 at 00:13 UTC</p>

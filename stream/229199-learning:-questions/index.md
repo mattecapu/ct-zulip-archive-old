@@ -9,15 +9,17 @@ permalink: /stream/229199-learning:-questions/index.html
 
 ### Topics:
 
-* [Linear sums in categories](topic/topic_Linear.20sums.20in.20categories.html) (15 messages, latest: Jul 30 2023 at 14:53)
+* [Diagram dimensions](topic/topic_Diagram.20dimensions.html) (10 messages, latest: Jul 31 2023 at 23:10)
+* [What can morphisms be?](topic/topic_What.20can.20morphisms.20be.3F.html) (9 messages, latest: Jul 31 2023 at 21:07)
+* [equivariant](topic/topic_equivariant.html) (18 messages, latest: Jul 31 2023 at 18:32)
+* [Well quasi-orders: a categorial perspective?](topic/topic_Well.20quasi-orders.3A.20a.20categorial.20perspective.3F.html) (1 message, latest: Jul 31 2023 at 17:46)
+* [operads and parameterized categories](topic/topic_operads.20and.20parameterized.20categories.html) (11 messages, latest: Jul 31 2023 at 15:12)
+* [Linear sums in categories](topic/topic_Linear.20sums.20in.20categories.html) (16 messages, latest: Jul 31 2023 at 13:02)
 * [A formal definition of a commuting diagram](topic/topic_A.20formal.20definition.20of.20a.20commuting.20diagram.html) (82 messages, latest: Jul 29 2023 at 06:22)
-* [operads and parameterized categories](topic/topic_operads.20and.20parameterized.20categories.html) (1 message, latest: Jul 28 2023 at 20:49)
 * [natural model](topic/topic_natural.20model.html) (8 messages, latest: Jul 28 2023 at 17:32)
 * [✔ Diagram dimensions](topic/topic_.E2.9C.94.20Diagram.20dimensions.html) (29 messages, latest: Jul 27 2023 at 16:29)
-* [Diagram dimensions](topic/topic_Diagram.20dimensions.html) (8 messages, latest: Jul 26 2023 at 15:54)
 * [Preorders and monoidal preorders](topic/topic_Preorders.20and.20monoidal.20preorders.html) (43 messages, latest: Jul 25 2023 at 15:27)
 * [✔ Why are Pointwise Kan Extensions called that?](topic/topic_.E2.9C.94.20Why.20are.20Pointwise.20Kan.20Extensions.20called.20that.3F.html) (9 messages, latest: Jul 24 2023 at 19:10)
-* [What can morphisms be?](topic/topic_What.20can.20morphisms.20be.3F.html) (8 messages, latest: Jul 23 2023 at 19:25)
 * [graphs within graphs](topic/topic_graphs.20within.20graphs.html) (20 messages, latest: Jul 21 2023 at 20:55)
 * [Synthetic introduction to noncommutative geometry?](topic/topic_Synthetic.20introduction.20to.20noncommutative.20geometry.3F.html) (8 messages, latest: Jul 20 2023 at 14:47)
 * [Reference for algebraic theories](topic/topic_Reference.20for.20algebraic.20theories.html) (10 messages, latest: Jul 20 2023 at 04:04)
@@ -100,7 +102,6 @@ permalink: /stream/229199-learning:-questions/index.html
 * [delooping and linearly distributive categories](topic/topic_delooping.20and.20linearly.20distributive.20categories.html) (3 messages, latest: Apr 21 2023 at 18:59)
 * [Partial fibration](topic/topic_Partial.20fibration.html) (6 messages, latest: Apr 20 2023 at 12:07)
 * [Is this well defined?](topic/topic_Is.20this.20well.20defined.3F.html) (18 messages, latest: Apr 20 2023 at 10:59)
-* [equivariant](topic/topic_equivariant.html) (17 messages, latest: Apr 19 2023 at 18:30)
 * [Tannakian categories](topic/topic_Tannakian.20categories.html) (8 messages, latest: Apr 18 2023 at 16:35)
 * [Do physical units 'structure' sets of numbers?](topic/topic_Do.20physical.20units.20'structure'.20sets.20of.20numbers.3F.html) (100 messages, latest: Apr 12 2023 at 18:47)
 * [On the existence of a category of functors](topic/topic_On.20the.20existence.20of.20a.20category.20of.20functors.html) (14 messages, latest: Apr 11 2023 at 15:29)
@@ -942,4 +943,4 @@ permalink: /stream/229199-learning:-questions/index.html
 * [Algebra (Aluffi) exercises](topic/topic_Algebra.20(Aluffi).20exercises.html) (55 messages, latest: Mar 27 2020 at 23:38)
 * [What is category theory about?](topic/topic_What.20is.20category.20theory.20about.3F.html) (16 messages, latest: Mar 26 2020 at 16:03)
 
-<hr><p>Last updated: Jul 31 2023 at 00:33 UTC</p>
+<hr><p>Last updated: Aug 01 2023 at 00:13 UTC</p>
