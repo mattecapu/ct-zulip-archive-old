@@ -10,7 +10,7 @@ permalink: /index.html
 
 * [learning: questions](stream/229199-learning:-questions/index.html) (933 topics)
 
-* [theory: category theory](stream/229136-theory:-category-theory/index.html) (432 topics)
+* [theory: category theory](stream/229136-theory:-category-theory/index.html) (433 topics)
 
 * [general](stream/229111-general/index.html) (263 topics)
 
@@ -56,7 +56,7 @@ permalink: /index.html
 
 * [learning: history of ideas](stream/232163-learning:-history-of-ideas/index.html) (30 topics)
 
-* [learning: id my structure](stream/311521-learning:-id-my-structure/index.html) (29 topics)
+* [learning: id my structure](stream/311521-learning:-id-my-structure/index.html) (30 topics)
 
 * [learning: recommendations](stream/232161-learning:-recommendations/index.html) (29 topics)
 
@@ -184,4 +184,4 @@ permalink: /index.html
 
 * [theory: alternate presentations](stream/233122-theory:-alternate-presentations/index.html) (1 topic)
 
-<hr><p>Last updated: Aug 01 2023 at 12:10 UTC</p>
+<hr><p>Last updated: Aug 02 2023 at 12:11 UTC</p>

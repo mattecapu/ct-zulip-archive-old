@@ -9,6 +9,7 @@ permalink: /stream/311521-learning:-id-my-structure/index.html
 
 ### Topics:
 
+* [Cell in a 2 category](topic/topic_Cell.20in.20a.202.20category.html) (2 messages, latest: Aug 01 2023 at 21:47)
 * [Formal definition of fuzzy categories.](topic/topic_Formal.20definition.20of.20fuzzy.20categories.2E.html) (13 messages, latest: Jul 29 2023 at 17:43)
 * [Reference requests for polynomial monads](topic/topic_Reference.20requests.20for.20polynomial.20monads.html) (12 messages, latest: Jul 09 2023 at 14:06)
 * [Double category of presheaves](topic/topic_Double.20category.20of.20presheaves.html) (14 messages, latest: Jul 02 2023 at 19:38)
@@ -39,4 +40,4 @@ permalink: /stream/311521-learning:-id-my-structure/index.html
 * [stream events](topic/topic_stream.20events.html) (9 messages, latest: Jan 04 2022 at 22:35)
 * [almost a full subcategory?](topic/topic_almost.20a.20full.20subcategory.3F.html) (15 messages, latest: Jan 04 2022 at 16:42)
 
-<hr><p>Last updated: Aug 01 2023 at 12:10 UTC</p>
+<hr><p>Last updated: Aug 02 2023 at 12:11 UTC</p>
