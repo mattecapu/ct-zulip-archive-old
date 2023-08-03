@@ -9,16 +9,16 @@ permalink: /stream/229136-theory:-category-theory/index.html
 
 ### Topics:
 
-* [Sheaves and operads/multicategories](topic/topic_Sheaves.20and.20operads.2Fmulticategories.html) (35 messages, latest: Aug 02 2023 at 03:43)
+* [✔ pullback stability of adjunctions](topic/topic_.E2.9C.94.20pullback.20stability.20of.20adjunctions.html) (4 messages, latest: Aug 03 2023 at 10:53)
+* [Sheaves and operads/multicategories](topic/topic_Sheaves.20and.20operads.2Fmulticategories.html) (36 messages, latest: Aug 03 2023 at 00:50)
+* [Dinatural or extranatural transformation, double categories](topic/topic_Dinatural.20or.20extranatural.20transformation.2C.20double.20categories.html) (6 messages, latest: Aug 02 2023 at 17:44)
 * [Enriched ind completion](topic/topic_Enriched.20ind.20completion.html) (5 messages, latest: Aug 01 2023 at 16:21)
-* [Dinatural or extranatural transformation, double categories](topic/topic_Dinatural.20or.20extranatural.20transformation.2C.20double.20categories.html) (5 messages, latest: Jul 31 2023 at 16:14)
 * [properties of free categories](topic/topic_properties.20of.20free.20categories.html) (7 messages, latest: Jul 28 2023 at 17:47)
 * [✔ extensive categories in constructive mathematics](topic/topic_.E2.9C.94.20extensive.20categories.20in.20constructive.20mathematics.html) (8 messages, latest: Jul 27 2023 at 14:54)
 * [extensive categories in constructive mathematics](topic/topic_extensive.20categories.20in.20constructive.20mathematics.html) (11 messages, latest: Jul 26 2023 at 23:58)
 * [functors that create limits](topic/topic_functors.20that.20create.20limits.html) (18 messages, latest: Jul 25 2023 at 09:11)
 * [✔ Free colored PROP on sets of objects and morphisms](topic/topic_.E2.9C.94.20Free.20colored.20PROP.20on.20sets.20of.20objects.20and.20morphisms.html) (28 messages, latest: Jul 23 2023 at 00:00)
 * [Free colored PROP on sets of objects and morphisms](topic/topic_Free.20colored.20PROP.20on.20sets.20of.20objects.20and.20morphisms.html) (20 messages, latest: Jul 21 2023 at 20:51)
-* [✔ pullback stability of adjunctions](topic/topic_.E2.9C.94.20pullback.20stability.20of.20adjunctions.html) (3 messages, latest: Jul 17 2023 at 20:00)
 * [A new monad from a strong monad](topic/topic_A.20new.20monad.20from.20a.20strong.20monad.html) (63 messages, latest: Jul 17 2023 at 09:27)
 * ["extensive" monoidal categories](topic/topic_.22extensive.22.20monoidal.20categories.html) (11 messages, latest: Jul 15 2023 at 08:23)
 * [pullback stability of adjunctions](topic/topic_pullback.20stability.20of.20adjunctions.html) (21 messages, latest: Jul 14 2023 at 23:29)
@@ -443,4 +443,4 @@ permalink: /stream/229136-theory:-category-theory/index.html
 * [diagrams for application](topic/topic_diagrams.20for.20application.html) (13 messages, latest: Mar 24 2020 at 06:19)
 * [universal constructions](topic/topic_universal.20constructions.html) (8 messages, latest: Mar 23 2020 at 21:06)
 
-<hr><p>Last updated: Aug 02 2023 at 12:11 UTC</p>
+<hr><p>Last updated: Aug 03 2023 at 12:09 UTC</p>
