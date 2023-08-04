@@ -9,6 +9,7 @@ permalink: /stream/229199-learning:-questions/index.html
 
 ### Topics:
 
+* [✔ enriched semicategories](topic/topic_.E2.9C.94.20enriched.20semicategories.html) (10 messages, latest: Aug 03 2023 at 16:37)
 * [Diagram dimensions](topic/topic_Diagram.20dimensions.html) (19 messages, latest: Aug 02 2023 at 12:02)
 * [Is there a formalization of "non-parametric functors"?](topic/topic_Is.20there.20a.20formalization.20of.20.22non-parametric.20functors.22.3F.html) (20 messages, latest: Aug 01 2023 at 08:32)
 * [What can morphisms be?](topic/topic_What.20can.20morphisms.20be.3F.html) (9 messages, latest: Jul 31 2023 at 21:07)
@@ -448,7 +449,6 @@ permalink: /stream/229199-learning:-questions/index.html
 * [simplicial localization](topic/topic_simplicial.20localization.html) (9 messages, latest: Oct 08 2021 at 23:41)
 * [de Rham complex,  Chevalley Eilenberg complex](topic/topic_de.20Rham.20complex.2C.20.20Chevalley.20Eilenberg.20complex.html) (2 messages, latest: Oct 08 2021 at 15:22)
 * [Epi pullback](topic/topic_Epi.20pullback.html) (19 messages, latest: Oct 07 2021 at 10:13)
-* [✔ enriched semicategories](topic/topic_.E2.9C.94.20enriched.20semicategories.html) (9 messages, latest: Oct 06 2021 at 10:57)
 * [monoid-annotated morphisms](topic/topic_monoid-annotated.20morphisms.html) (8 messages, latest: Oct 05 2021 at 10:36)
 * [enriched semicategories](topic/topic_enriched.20semicategories.html) (5 messages, latest: Oct 04 2021 at 23:34)
 * [polynomial functors and powerset](topic/topic_polynomial.20functors.20and.20powerset.html) (25 messages, latest: Oct 01 2021 at 00:29)
@@ -943,4 +943,4 @@ permalink: /stream/229199-learning:-questions/index.html
 * [Algebra (Aluffi) exercises](topic/topic_Algebra.20(Aluffi).20exercises.html) (55 messages, latest: Mar 27 2020 at 23:38)
 * [What is category theory about?](topic/topic_What.20is.20category.20theory.20about.3F.html) (16 messages, latest: Mar 26 2020 at 16:03)
 
-<hr><p>Last updated: Aug 03 2023 at 12:09 UTC</p>
+<hr><p>Last updated: Aug 04 2023 at 12:10 UTC</p>
