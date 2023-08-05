@@ -1,0 +1,68 @@
+[
+    {
+        "content": "<p>Let <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>C</mi></mrow><annotation encoding=\"application/x-tex\">C</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.07153em;\">C</span></span></span></span> and <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>D</mi></mrow><annotation encoding=\"application/x-tex\">D</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.02778em;\">D</span></span></span></span> be monoidal categories and <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>F</mi><mo>:</mo><mi>C</mi><mo>→</mo><mi>D</mi></mrow><annotation encoding=\"application/x-tex\">F:C\\to D</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.13889em;\">F</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">:</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.07153em;\">C</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">→</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.02778em;\">D</span></span></span></span> a lax monoidal functor. I call <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>F</mi></mrow><annotation encoding=\"application/x-tex\">F</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.13889em;\">F</span></span></span></span> exact if the laxity cells for the unit and monoid are \"exact squares\" in the sense of the nlab article.</p>\n<p>Proposition: Let <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi></mrow><annotation encoding=\"application/x-tex\">A</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\">A</span></span></span></span> be a monoidal category and <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>S</mi><mo>:</mo><mi>C</mi><mo>→</mo><mi>A</mi></mrow><annotation encoding=\"application/x-tex\">S:C\\to A</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.05764em;\">S</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">:</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.07153em;\">C</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">→</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\">A</span></span></span></span> a lax monoidal functor. Then the pointwise Kan extension of <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>S</mi></mrow><annotation encoding=\"application/x-tex\">S</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.05764em;\">S</span></span></span></span> along <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>F</mi></mrow><annotation encoding=\"application/x-tex\">F</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.13889em;\">F</span></span></span></span> (in the ordinary 1-categorical sense) is automatically lax monoidal.</p>\n<p>I haven't checked this in detail yet (associativity conditions and so on) but it seems like it is true. Furthermore I suspect some thing similar is true for pseudo double categories. I am going to look into virtual equipments and see if there is a general result here about pseudo T-algebras. <span class=\"user-mention\" data-user-id=\"276777\">@Mike Shulman</span> would you happen to be aware of any results around this?</p>\n<p>also if anyone is familiar with exact squares would it be possible to recommend pointers to the literature? The bibliography only contains one entry.</p>",
+        "id": 381816230,
+        "sender_full_name": "Patrick Nicodemus",
+        "timestamp": 1691151129
+    },
+    {
+        "content": "<p>A good search term is \"algebraic Kan extension\". For instance, Koudenberg has a paper <a href=\"https://arxiv.org/abs/1406.6994\">Algebraic Kan extensions in double categories</a> where he studies when you can lift (pointwise) extensions along forgetful double functors. In the final sections of the draft <a href=\"https://arxiv.org/abs/1511.04070\">A double-dimensional approach to formal category theory</a> he generalises the setting to augmented virtual double categories. (He split out the first sections of that draft into standalone papers, so presumably he also intends to do so with the later sections, but has not done so yet.)</p>",
+        "id": 381822738,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1691152188
+    },
+    {
+        "content": "<p>Two good places to learn about the topic of algebraic Kan extensions are: \"Algebraic Kan extensions along morphisms of internal algebra classifiers\" and \" Free models of T-algebraic theories computed as Kan extensions\".</p>",
+        "id": 381826719,
+        "sender_full_name": "Ivan Di Liberti",
+        "timestamp": 1691152712
+    },
+    {
+        "content": "<p>Thank you both very much!</p>",
+        "id": 381866731,
+        "sender_full_name": "Patrick Nicodemus",
+        "timestamp": 1691158569
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276092\">Nathanael Arkor</span> <a href=\"#narrow/stream/229136-theory.3A-category-theory/topic/Exact.20squares.20and.20monoidal.20cats/near/381822738\">said</a>:</p>\n<blockquote>\n<p>A good search term is \"algebraic Kan extension\". For instance, Koudenberg has a paper <a href=\"https://arxiv.org/abs/1406.6994\">Algebraic Kan extensions in double categories</a> where he studies when you can lift (pointwise) extensions along forgetful double functors. In the final sections of the draft <a href=\"https://arxiv.org/abs/1511.04070\">A double-dimensional approach to formal category theory</a> he generalises the setting to augmented virtual double categories. (He split out the first sections of that draft into standalone papers, so presumably he also intends to do so with the later sections, but has not done so yet.)</p>\n</blockquote>\n<p>I am skimming through the first paper. I am wondering, because he works with double categories and not virtual double categories, do his results technically only apply to small categories, because composition of profunctors may not be defined between large categories? I don't have much experience with virtual double categories so to me it's not trivial what goes through and what does not. But in general size issues are a thing. Ctrl-F \"small\" only appears once in the paper, am I missing something?</p>",
+        "id": 381881811,
+        "sender_full_name": "Patrick Nicodemus",
+        "timestamp": 1691161091
+    },
+    {
+        "content": "<p>Like you could always take a larger universe and say we are talking about profunctors valued in that bigger universe, and then composition is well-defined, but then \"cocomplete\" means something different, because a small-cocomplete category won't have weighted colimits for profunctors valued in a universe of large sets.</p>",
+        "id": 381882501,
+        "sender_full_name": "Patrick Nicodemus",
+        "timestamp": 1691161212
+    },
+    {
+        "content": "<p>In 5.10 he assumes the category M is \"cocomplete\". I don't know if there is an enriched version of the Freyd theorem that small complete categories are posets, but presumably there are not too many small, small-cocomplete V-enriched categories for typical V.</p>",
+        "id": 381890895,
+        "sender_full_name": "Patrick Nicodemus",
+        "timestamp": 1691162630
+    },
+    {
+        "content": "<blockquote>\n<p>do his results technically only apply to small categories, because composition of profunctors may not be defined between large categories</p>\n</blockquote>\n<p>His examples are the double categories of internal categories; and of small enriched categories, yes.</p>",
+        "id": 381896294,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1691163545
+    },
+    {
+        "content": "<p>I haven't read the paper, but it could be that he only needs certain colimits to exist and cocompleteness is just a laziness assumption?</p>",
+        "id": 381920236,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1691168234
+    },
+    {
+        "content": "<p>Yes, I think he probably only needs small colimits, if M is a large category and V is a very large category of large sets / Abelian groups /etc.</p>",
+        "id": 381929742,
+        "sender_full_name": "Patrick Nicodemus",
+        "timestamp": 1691170284
+    },
+    {
+        "content": "<p>I will send him a quick email.</p>",
+        "id": 381931170,
+        "sender_full_name": "Patrick Nicodemus",
+        "timestamp": 1691170598
+    }
+]
