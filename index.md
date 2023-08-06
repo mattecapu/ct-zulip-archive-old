@@ -54,7 +54,7 @@ permalink: /index.html
 
 * [general: values](stream/241990-general:-values/index.html) (34 topics)
 
-* [learning: id my structure](stream/311521-learning:-id-my-structure/index.html) (32 topics)
+* [learning: id my structure](stream/311521-learning:-id-my-structure/index.html) (34 topics)
 
 * [learning: history of ideas](stream/232163-learning:-history-of-ideas/index.html) (30 topics)
 
@@ -184,4 +184,4 @@ permalink: /index.html
 
 * [theory: alternate presentations](stream/233122-theory:-alternate-presentations/index.html) (1 topic)
 
-<hr><p>Last updated: Aug 05 2023 at 12:10 UTC</p>
+<hr><p>Last updated: Aug 06 2023 at 12:09 UTC</p>
