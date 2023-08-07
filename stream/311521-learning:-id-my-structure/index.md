@@ -9,7 +9,7 @@ permalink: /stream/311521-learning:-id-my-structure/index.html
 
 ### Topics:
 
-* [Bimonoidal functor](topic/topic_Bimonoidal.20functor.html) (18 messages, latest: Aug 06 2023 at 11:05)
+* [Bimonoidal functor](topic/topic_Bimonoidal.20functor.html) (38 messages, latest: Aug 07 2023 at 08:25)
 * [Multicategories with restricted composition](topic/topic_Multicategories.20with.20restricted.20composition.html) (8 messages, latest: Aug 06 2023 at 00:38)
 * [horizontal monads on a fibration?](topic/topic_horizontal.20monads.20on.20a.20fibration.3F.html) (1 message, latest: Aug 04 2023 at 14:38)
 * [Cell in a 2 category](topic/topic_Cell.20in.20a.202.20category.html) (5 messages, latest: Aug 03 2023 at 16:29)
@@ -44,4 +44,4 @@ permalink: /stream/311521-learning:-id-my-structure/index.html
 * [stream events](topic/topic_stream.20events.html) (9 messages, latest: Jan 04 2022 at 22:35)
 * [almost a full subcategory?](topic/topic_almost.20a.20full.20subcategory.3F.html) (15 messages, latest: Jan 04 2022 at 16:42)
 
-<hr><p>Last updated: Aug 06 2023 at 12:09 UTC</p>
+<hr><p>Last updated: Aug 07 2023 at 12:12 UTC</p>

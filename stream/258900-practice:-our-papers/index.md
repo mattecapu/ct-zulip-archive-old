@@ -9,6 +9,7 @@ permalink: /stream/258900-practice:-our-papers/index.html
 
 ### Topics:
 
+* [String diagrams for symmetric powers](topic/topic_String.20diagrams.20for.20symmetric.20powers.html) (1 message, latest: Aug 07 2023 at 04:07)
 * [String diagrams for self-confirming beliefs](topic/topic_String.20diagrams.20for.20self-confirming.20beliefs.html) (1 message, latest: Jul 02 2023 at 10:23)
 * [Adjoint functor theorems for lax-idempotent pseudomonads](topic/topic_Adjoint.20functor.20theorems.20for.20lax-idempotent.20pseudomonads.html) (12 messages, latest: Jun 21 2023 at 19:45)
 * [String diagrams for closed monoidal categories](topic/topic_String.20diagrams.20for.20closed.20monoidal.20categories.html) (10 messages, latest: Jun 03 2023 at 07:44)
@@ -74,4 +75,4 @@ permalink: /stream/258900-practice:-our-papers/index.html
 * [Functorial semantics for partial theories](topic/topic_Functorial.20semantics.20for.20partial.20theories.html) (30 messages, latest: Nov 29 2020 at 08:46)
 * [Coends of higher arity](topic/topic_Coends.20of.20higher.20arity.html) (3 messages, latest: Sep 26 2020 at 16:28)
 
-<hr><p>Last updated: Aug 06 2023 at 12:09 UTC</p>
+<hr><p>Last updated: Aug 07 2023 at 12:12 UTC</p>

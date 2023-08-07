@@ -1,0 +1,128 @@
+---
+layout: archive
+title: Zulip Chat Archive
+permalink: /stream/229199-learning:-questions/topic/topic_Riehl.2C.20.E2.80.9CCategory.20Theory.20in.20Context.E2.80.9D.2E.html
+---
+
+<h2>Stream: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/index.html">learning: questions</a></h2>
+<h3>Topic: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/topic_Riehl.2C.20.E2.80.9CCategory.20Theory.20in.20Context.E2.80.9D.2E.html">Riehl, “Category Theory in Context”.</a></h3>
+
+<hr>
+
+<base href="https://categorytheory.zulipchat.com/">
+
+{% raw %}
+
+<a name="382361308"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/Riehl%2C%20%E2%80%9CCategory%20Theory%20in%20Context%E2%80%9D./near/382361308" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Julius <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/topic_Riehl.2C.20.E2.80.9CCategory.20Theory.20in.20Context.E2.80.9D.2E.html#382361308">(Aug 06 2023 at 13:22)</a>:</h4>
+<p>Exercise 1.1.i.</p>
+<p>Consider a morphism f : x → y. Show that if there exists a pair of morphisms g,h: y ⇒ x so that gf = 1x and fh = 1y, then g = h and f is an isomorphism.</p>
+<p>Definition 1.1.9. An isomorphism in a category is a morphism f : X → Y for which there exists a morphism g: Y → X so that gf = 1X and fg = 1Y.</p>
+<ol>
+<li>
+<p>To be an isomorphism, there has to exist a g: Y -&gt; X which composes to form the identity arrow id, both before, and after, the arrow f: X -&gt; Y. Is there an example of an arrow which only produces the identity arrow for one of those directions, like f;g = id_x, but not g;f = id_y ?</p>
+</li>
+<li>
+<p>Evidently, I am supposed to infer that since there is an inverse arrow for both sides, they must be the same arrow. Maybe I can show this through algebraic manipulation, but I wonder if there is some way to know it inherently and immediately, in some way?</p>
+</li>
+</ol>
+<p>f;g = id_x<br>
+h;f = id_y</p>
+<p>f;g;f = f</p>
+<p>h;f;g = id_y;g<br>
+h;id_x=id_y;g<br>
+h = g</p>
+<p>I believe that’s the trick. A simple algebraic manipulation. I’ll just have to think over if there’s an intuitive way to say what it’s saying. I think it’s something to do with the axioms of a category would not permit a concept of left-only or right-only inverse arrow; perhaps due to the associativity of the composition.</p>
+
+
+
+<a name="382363431"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/Riehl%2C%20%E2%80%9CCategory%20Theory%20in%20Context%E2%80%9D./near/382363431" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Julius <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/topic_Riehl.2C.20.E2.80.9CCategory.20Theory.20in.20Context.E2.80.9D.2E.html#382363431">(Aug 06 2023 at 13:31)</a>:</h4>
+<p>(ii) Show that a morphism can have at most one inverse isomorphism.</p>
+<p>Take some morphism f: x -&gt; y.<br>
+Assume it has an inverse arrow, g: y -&gt; x, such that f;g = id_x.<br>
+Assume there is a second inverse arrow, g’: y -&gt; x s.t. f;g’ = id_x.</p>
+<p>An isomorphism is necessarily two-sided.</p>
+<p>So <br>
+f;g = f;g’<br>
+g;f;g = g;f;g’<br>
+id_y;g = id_y;g’<br>
+g=g’</p>
+<p>I mainly need to think over why an inverse is necessarily two-sided, or if it isn’t, it’s just that an isomorphism necessarily is.</p>
+
+
+
+<a name="382363474"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/Riehl%2C%20%E2%80%9CCategory%20Theory%20in%20Context%E2%80%9D./near/382363474" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/topic_Riehl.2C.20.E2.80.9CCategory.20Theory.20in.20Context.E2.80.9D.2E.html#382363474">(Aug 06 2023 at 13:31)</a>:</h4>
+<blockquote>
+<p>Evidently, I am supposed to infer that since there is an inverse arrow for both sides, they must be the same arrow. Maybe I can show this through algebraic manipulation...</p>
+</blockquote>
+<p>Yes, there's a famous little trick for doing this, which people usually learn in group theory, and it looks like you found it.   </p>
+<p>I think of this and similar arguments as "fastest gun in the west" arguments.  If two guys say they're the fastest shooter in town, you settle it with a duel.  </p>
+<p>Suppose g says he's the right inverse of f but h says he's the left inverse of f.  Then you let them fight it out!  You look at</p>
+<p>h f g</p>
+<p>(I'll leave out the the semicolons since they're distracting here.)</p>
+<p>First h makes his move:</p>
+<p>h f g = g</p>
+<p>Then g makes his move:</p>
+<p>h f g = h</p>
+<p>So g and h had to be the same!   </p>
+<p>When two guys claim they're the fastest gun in the west and they're both right, they're probably the same guy.</p>
+
+
+
+<a name="382363863"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/Riehl%2C%20%E2%80%9CCategory%20Theory%20in%20Context%E2%80%9D./near/382363863" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/topic_Riehl.2C.20.E2.80.9CCategory.20Theory.20in.20Context.E2.80.9D.2E.html#382363863">(Aug 06 2023 at 13:33)</a>:</h4>
+<blockquote>
+<p>I mainly need to think over why an inverse is necessarily two-sided, or if it isn’t, it’s just that an isomorphism necessarily is.</p>
+</blockquote>
+<p>There's no reason an inverse is necessarily two-sided.  Find two functions f and g such that f is a left inverse of g but not a right inverse.  Then g will be a right inverse of f but not a left inverse.</p>
+<p>It's just the <em>definition</em> of isomorphism that says it's a morphism with a two-sided inverse.</p>
+
+
+
+<a name="382363921"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/Riehl%2C%20%E2%80%9CCategory%20Theory%20in%20Context%E2%80%9D./near/382363921" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/topic_Riehl.2C.20.E2.80.9CCategory.20Theory.20in.20Context.E2.80.9D.2E.html#382363921">(Aug 06 2023 at 13:33)</a>:</h4>
+<p>All this stuff is very fun to think about.</p>
+
+
+
+<a name="382376672"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/Riehl%2C%20%E2%80%9CCategory%20Theory%20in%20Context%E2%80%9D./near/382376672" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Julius <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/topic_Riehl.2C.20.E2.80.9CCategory.20Theory.20in.20Context.E2.80.9D.2E.html#382376672">(Aug 06 2023 at 14:35)</a>:</h4>
+<p>Thank you very much.</p>
+<p>“””<br>
+Exercise 1.1.iii. For any category C and any object c ∈ C, show that:<br>
+(i) There is a category c/C whose objects are morphisms f : c → x with domain c and in which a morphism from f : c → x to g: c → y is a map h: x → y between the codomains so that the triangle commutes, ie g = hf.<br>
+“””</p>
+<p>I am slightly confused about “show that there is a category that”, because we are guaranteed to be able to “select” the objects of the slice category - all arrows in C of the form f: c -&gt; x, for any x such that there is an arrow from c to x.</p>
+<p>So that part doesn’t require us to prove anything. Right?</p>
+<p>As for the arrows between the objects, I got the impression we are not selecting arrows from the original category C, because there’s no guarantee to be an arrow h: x -&gt; y, for f: c -&gt; x, g: c -&gt; y. It just depends on what arrows the category C has.</p>
+<p>So we do not select pre-existing arrows, we actually just declare the existence of them. For any objects f: c -&gt; x and g: c -&gt; y in the slice category C under c, we state there is an arrow h: x -&gt; y, so that g = f;h.</p>
+<p>Is that correct?</p>
+<p>It seems like there’s nothing to “show”. We can always construct a slice category. Or should I prove that all the axioms of a category (identities, composition, associativity) still hold, under this construction?</p>
+
+
+
+<a name="382377980"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/Riehl%2C%20%E2%80%9CCategory%20Theory%20in%20Context%E2%80%9D./near/382377980" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Morgan Rogers (he/him) <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/topic_Riehl.2C.20.E2.80.9CCategory.20Theory.20in.20Context.E2.80.9D.2E.html#382377980">(Aug 06 2023 at 14:40)</a>:</h4>
+<p>No, the arrows are taken from the original category. Just like a group homomorphism is a function between groups satisfying certain conditions, a morphism in the slice category is a morphism from the original category satisfying a particular condition.</p>
+<p>The exercise is indeed to check the axioms of a category: they have told you what the objects and morphisms should be, but what are the identities? What does composition look like? Is it still associative? After a certain point these checks will become "obvious" enough that you won't need to check them by hand, but exercises like this should help you internalise the definition of a category.</p>
+
+
+
+<a name="382401335"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/Riehl%2C%20%E2%80%9CCategory%20Theory%20in%20Context%E2%80%9D./near/382401335" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/topic_Riehl.2C.20.E2.80.9CCategory.20Theory.20in.20Context.E2.80.9D.2E.html#382401335">(Aug 06 2023 at 16:29)</a>:</h4>
+<p>Note that this exercise is going beyond the basic sort of proof where the book tells you a proposition and you prove it's true.  Here the work involves guessing the proposition and then proving it.  For example: the book is not telling you how composition of morphisms in the slice category works, and until you say what that is, it makes no sense to prove it's associative.</p>
+<p>In the language of modern math, an elementary sort of textbook problem is asking you to verify a <em>property</em>.  Here you are being asked to choose a <em>structure</em>, state the relevant property of that structure, and then prove it.</p>
+
+
+
+<a name="382401920"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/Riehl%2C%20%E2%80%9CCategory%20Theory%20in%20Context%E2%80%9D./near/382401920" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/topic_Riehl.2C.20.E2.80.9CCategory.20Theory.20in.20Context.E2.80.9D.2E.html#382401920">(Aug 06 2023 at 16:32)</a>:</h4>
+<p>Later still you may be asked to choose some 'stuff', then choose some structure on that, and then verify some properties.</p>
+
+
+
+{% endraw %}
+
+<hr><p>Last updated: Aug 07 2023 at 12:12 UTC</p>
