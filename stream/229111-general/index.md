@@ -9,10 +9,10 @@ permalink: /stream/229111-general/index.html
 
 ### Topics:
 
-* [F. William Lawvere](topic/topic_F.2E.20William.20Lawvere.html) (19 messages, latest: Aug 01 2023 at 17:27)
+* [Introduce yourself!](topic/topic_Introduce.20yourself!.html) (121 messages, latest: Aug 08 2023 at 22:04)
+* [F. William Lawvere](topic/topic_F.2E.20William.20Lawvere.html) (20 messages, latest: Aug 08 2023 at 21:50)
 * [Looking for popular accounts of Yoneda](topic/topic_Looking.20for.20popular.20accounts.20of.20Yoneda.html) (94 messages, latest: Jul 31 2023 at 04:55)
 * [LocalCharts](topic/topic_LocalCharts.html) (2 messages, latest: Jul 30 2023 at 19:36)
-* [Introduce yourself!](topic/topic_Introduce.20yourself!.html) (120 messages, latest: Jul 28 2023 at 14:33)
 * [new streams](topic/topic_new.20streams.html) (99 messages, latest: Jul 22 2023 at 14:47)
 * [Unity-respecting Change](topic/topic_Unity-respecting.20Change.html) (5 messages, latest: Jul 19 2023 at 23:10)
 * [Category / Type / &c. Theorists in industry](topic/topic_Category.20.2F.20Type.20.2F.20.26c.2E.20Theorists.20in.20industry.html) (14 messages, latest: Jul 19 2023 at 11:37)
@@ -273,4 +273,4 @@ permalink: /stream/229111-general/index.html
 * [Tools for diagrams](topic/topic_Tools.20for.20diagrams.html) (78 messages, latest: Mar 25 2020 at 17:53)
 * [topic demonstration](topic/topic_topic.20demonstration.html) (2 messages, latest: Mar 23 2020 at 16:57)
 
-<hr><p>Last updated: Aug 08 2023 at 12:08 UTC</p>
+<hr><p>Last updated: Aug 09 2023 at 12:09 UTC</p>
