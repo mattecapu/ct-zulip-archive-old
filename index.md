@@ -8,9 +8,9 @@ permalink: /index.html
 
 ## Streams:
 
-* [learning: questions](stream/229199-learning:-questions/index.html) (935 topics)
+* [learning: questions](stream/229199-learning:-questions/index.html) (936 topics)
 
-* [theory: category theory](stream/229136-theory:-category-theory/index.html) (435 topics)
+* [theory: category theory](stream/229136-theory:-category-theory/index.html) (436 topics)
 
 * [general](stream/229111-general/index.html) (263 topics)
 
@@ -22,7 +22,7 @@ permalink: /index.html
 
 * [theory: topos theory](stream/230087-theory:-topos-theory/index.html) (85 topics)
 
-* [general: positions](stream/245502-general:-positions/index.html) (77 topics)
+* [general: positions](stream/245502-general:-positions/index.html) (78 topics)
 
 * [theory: algebraic topology & homological algebra](stream/241590-theory:-algebraic-topology-&-homological-algebra/index.html) (73 topics)
 
@@ -184,4 +184,4 @@ permalink: /index.html
 
 * [theory: alternate presentations](stream/233122-theory:-alternate-presentations/index.html) (1 topic)
 
-<hr><p>Last updated: Aug 10 2023 at 12:09 UTC</p>
+<hr><p>Last updated: Aug 11 2023 at 12:10 UTC</p>

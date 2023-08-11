@@ -9,7 +9,7 @@ permalink: /stream/229111-general/index.html
 
 ### Topics:
 
-* [Compositionality](topic/topic_Compositionality.html) (96 messages, latest: Aug 10 2023 at 11:20)
+* [Compositionality](topic/topic_Compositionality.html) (97 messages, latest: Aug 10 2023 at 12:23)
 * [Introduce yourself!](topic/topic_Introduce.20yourself!.html) (121 messages, latest: Aug 08 2023 at 22:04)
 * [F. William Lawvere](topic/topic_F.2E.20William.20Lawvere.html) (20 messages, latest: Aug 08 2023 at 21:50)
 * [Looking for popular accounts of Yoneda](topic/topic_Looking.20for.20popular.20accounts.20of.20Yoneda.html) (94 messages, latest: Jul 31 2023 at 04:55)
@@ -273,4 +273,4 @@ permalink: /stream/229111-general/index.html
 * [Tools for diagrams](topic/topic_Tools.20for.20diagrams.html) (78 messages, latest: Mar 25 2020 at 17:53)
 * [topic demonstration](topic/topic_topic.20demonstration.html) (2 messages, latest: Mar 23 2020 at 16:57)
 
-<hr><p>Last updated: Aug 10 2023 at 12:09 UTC</p>
+<hr><p>Last updated: Aug 11 2023 at 12:10 UTC</p>

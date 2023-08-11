@@ -9,6 +9,7 @@ permalink: /stream/229136-theory:-category-theory/index.html
 
 ### Topics:
 
+* [Pointwise Kan extensions for double categories](topic/topic_Pointwise.20Kan.20extensions.20for.20double.20categories.html) (4 messages, latest: Aug 11 2023 at 01:18)
 * [Exact squares and monoidal cats](topic/topic_Exact.20squares.20and.20monoidal.20cats.html) (11 messages, latest: Aug 04 2023 at 17:36)
 * [Infinitary distributive monoidal category](topic/topic_Infinitary.20distributive.20monoidal.20category.html) (8 messages, latest: Aug 04 2023 at 15:55)
 * [✔ pullback stability of adjunctions](topic/topic_.E2.9C.94.20pullback.20stability.20of.20adjunctions.html) (4 messages, latest: Aug 03 2023 at 10:53)
@@ -445,4 +446,4 @@ permalink: /stream/229136-theory:-category-theory/index.html
 * [diagrams for application](topic/topic_diagrams.20for.20application.html) (13 messages, latest: Mar 24 2020 at 06:19)
 * [universal constructions](topic/topic_universal.20constructions.html) (8 messages, latest: Mar 23 2020 at 21:06)
 
-<hr><p>Last updated: Aug 10 2023 at 12:09 UTC</p>
+<hr><p>Last updated: Aug 11 2023 at 12:10 UTC</p>

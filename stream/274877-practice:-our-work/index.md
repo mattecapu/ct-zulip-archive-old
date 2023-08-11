@@ -9,8 +9,9 @@ permalink: /stream/274877-practice:-our-work/index.html
 
 ### Topics:
 
-* [David Roberts](topic/topic_David.20Roberts.html) (67 messages, latest: Aug 10 2023 at 11:18)
-* [John Baez](topic/topic_John.20Baez.html) (1400 messages, latest: Aug 09 2023 at 12:31)
+* [John Baez](topic/topic_John.20Baez.html) (1402 messages, latest: Aug 10 2023 at 19:35)
+* [David Roberts](topic/topic_David.20Roberts.html) (72 messages, latest: Aug 10 2023 at 16:42)
+* [Jason Parker](topic/topic_Jason.20Parker.html) (4 messages, latest: Aug 10 2023 at 16:31)
 * [Jade Master](topic/topic_Jade.20Master.html) (9 messages, latest: Jul 29 2023 at 07:51)
 * [Andrius Kulikauskas - classifying adjunctions](topic/topic_Andrius.20Kulikauskas.20-.20classifying.20adjunctions.html) (2 messages, latest: Jul 20 2023 at 19:13)
 * [Chris Grossack (they/them)](topic/topic_Chris.20Grossack.20(they.2Fthem).html) (5 messages, latest: Jul 16 2023 at 21:55)
@@ -34,7 +35,6 @@ permalink: /stream/274877-practice:-our-work/index.html
 * [Ben Sprott](topic/topic_Ben.20Sprott.html) (8 messages, latest: Feb 09 2023 at 07:05)
 * [James Deikun](topic/topic_James.20Deikun.html) (4 messages, latest: Jan 26 2023 at 16:06)
 * [Dusko Pavlovic](topic/topic_Dusko.20Pavlovic.html) (31 messages, latest: Jan 25 2023 at 16:09)
-* [Jason Parker](topic/topic_Jason.20Parker.html) (3 messages, latest: Dec 09 2022 at 18:14)
 * [Paolo Perrone](topic/topic_Paolo.20Perrone.html) (3 messages, latest: Nov 19 2022 at 18:02)
 * [Sam Staton](topic/topic_Sam.20Staton.html) (2 messages, latest: Nov 09 2022 at 10:11)
 * [Ivan Di Liberti](topic/topic_Ivan.20Di.20Liberti.html) (18 messages, latest: Nov 08 2022 at 18:21)
@@ -61,4 +61,4 @@ permalink: /stream/274877-practice:-our-work/index.html
 * [Conor Mc Bride](topic/topic_Conor.20Mc.20Bride.html) (60 messages, latest: Apr 08 2021 at 15:15)
 * [thoughts on sharing ideas](topic/topic_thoughts.20on.20sharing.20ideas.html) (20 messages, latest: Jan 31 2021 at 03:05)
 
-<hr><p>Last updated: Aug 10 2023 at 12:09 UTC</p>
+<hr><p>Last updated: Aug 11 2023 at 12:10 UTC</p>
