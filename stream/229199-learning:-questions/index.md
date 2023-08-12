@@ -9,8 +9,8 @@ permalink: /stream/229199-learning:-questions/index.html
 
 ### Topics:
 
+* [objects “are” something](topic/topic_objects.20.E2.80.9Care.E2.80.9D.20something.html) (16 messages, latest: Aug 12 2023 at 00:25)
 * [A Category for DSLs?](topic/topic_A.20Category.20for.20DSLs.3F.html) (4 messages, latest: Aug 10 2023 at 20:53)
-* [objects “are” something](topic/topic_objects.20.E2.80.9Care.E2.80.9D.20something.html) (8 messages, latest: Aug 09 2023 at 23:02)
 * [Riehl, “Category Theory in Context”.](topic/topic_Riehl.2C.20.E2.80.9CCategory.20Theory.20in.20Context.E2.80.9D.2E.html) (11 messages, latest: Aug 08 2023 at 10:57)
 * [✔ enriched semicategories](topic/topic_.E2.9C.94.20enriched.20semicategories.html) (10 messages, latest: Aug 03 2023 at 16:37)
 * [Diagram dimensions](topic/topic_Diagram.20dimensions.html) (19 messages, latest: Aug 02 2023 at 12:02)
@@ -946,4 +946,4 @@ permalink: /stream/229199-learning:-questions/index.html
 * [Algebra (Aluffi) exercises](topic/topic_Algebra.20(Aluffi).20exercises.html) (55 messages, latest: Mar 27 2020 at 23:38)
 * [What is category theory about?](topic/topic_What.20is.20category.20theory.20about.3F.html) (16 messages, latest: Mar 26 2020 at 16:03)
 
-<hr><p>Last updated: Aug 11 2023 at 12:10 UTC</p>
+<hr><p>Last updated: Aug 12 2023 at 12:08 UTC</p>

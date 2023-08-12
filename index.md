@@ -22,7 +22,7 @@ permalink: /index.html
 
 * [theory: topos theory](stream/230087-theory:-topos-theory/index.html) (85 topics)
 
-* [general: positions](stream/245502-general:-positions/index.html) (78 topics)
+* [general: positions](stream/245502-general:-positions/index.html) (79 topics)
 
 * [theory: algebraic topology & homological algebra](stream/241590-theory:-algebraic-topology-&-homological-algebra/index.html) (73 topics)
 
@@ -36,7 +36,7 @@ permalink: /index.html
 
 * [ACT 2020](stream/243068-ACT-2020/index.html) (61 topics)
 
-* [theory: logic](stream/233104-theory:-logic/index.html) (60 topics)
+* [theory: logic](stream/233104-theory:-logic/index.html) (61 topics)
 
 * [practice: thermodynamics](stream/306433-practice:-thermodynamics/index.html) (53 topics)
 
@@ -184,4 +184,4 @@ permalink: /index.html
 
 * [theory: alternate presentations](stream/233122-theory:-alternate-presentations/index.html) (1 topic)
 
-<hr><p>Last updated: Aug 11 2023 at 12:10 UTC</p>
+<hr><p>Last updated: Aug 12 2023 at 12:08 UTC</p>
