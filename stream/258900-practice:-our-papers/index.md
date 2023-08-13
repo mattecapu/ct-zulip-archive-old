@@ -9,6 +9,7 @@ permalink: /stream/258900-practice:-our-papers/index.html
 
 ### Topics:
 
+* [Thesis: The Functional Machine Calculus](topic/topic_Thesis.3A.20The.20Functional.20Machine.20Calculus.html) (1 message, latest: Aug 13 2023 at 09:57)
 * [Derived Braids of Decreasing Products and their Categories](topic/topic_Derived.20Braids.20of.20Decreasing.20Products.20and.20their.20Categories.html) (1 message, latest: Aug 08 2023 at 05:16)
 * [String diagrams for symmetric powers](topic/topic_String.20diagrams.20for.20symmetric.20powers.html) (1 message, latest: Aug 07 2023 at 04:07)
 * [String diagrams for self-confirming beliefs](topic/topic_String.20diagrams.20for.20self-confirming.20beliefs.html) (1 message, latest: Jul 02 2023 at 10:23)
@@ -76,4 +77,4 @@ permalink: /stream/258900-practice:-our-papers/index.html
 * [Functorial semantics for partial theories](topic/topic_Functorial.20semantics.20for.20partial.20theories.html) (30 messages, latest: Nov 29 2020 at 08:46)
 * [Coends of higher arity](topic/topic_Coends.20of.20higher.20arity.html) (3 messages, latest: Sep 26 2020 at 16:28)
 
-<hr><p>Last updated: Aug 12 2023 at 12:08 UTC</p>
+<hr><p>Last updated: Aug 13 2023 at 12:08 UTC</p>

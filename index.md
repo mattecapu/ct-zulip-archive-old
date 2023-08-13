@@ -10,7 +10,7 @@ permalink: /index.html
 
 * [learning: questions](stream/229199-learning:-questions/index.html) (936 topics)
 
-* [theory: category theory](stream/229136-theory:-category-theory/index.html) (436 topics)
+* [theory: category theory](stream/229136-theory:-category-theory/index.html) (437 topics)
 
 * [general](stream/229111-general/index.html) (263 topics)
 
@@ -26,7 +26,7 @@ permalink: /index.html
 
 * [theory: algebraic topology & homological algebra](stream/241590-theory:-algebraic-topology-&-homological-algebra/index.html) (73 topics)
 
-* [practice: our papers](stream/258900-practice:-our-papers/index.html) (66 topics)
+* [practice: our papers](stream/258900-practice:-our-papers/index.html) (67 topics)
 
 * [seminar: Topos Colloquium](stream/269484-seminar:-Topos-Colloquium/index.html) (64 topics)
 
@@ -50,13 +50,13 @@ permalink: /index.html
 
 * [theory: probability](stream/253118-theory:-probability/index.html) (36 topics)
 
+* [learning: id my structure](stream/311521-learning:-id-my-structure/index.html) (35 topics)
+
 * [Categorical Probability and Statistics 2020 workshop](stream/238032-Categorical-Probability-and-Statistics-2020-workshop/index.html) (34 topics)
 
 * [general: values](stream/241990-general:-values/index.html) (34 topics)
 
-* [learning: id my structure](stream/311521-learning:-id-my-structure/index.html) (34 topics)
-
-* [learning: history of ideas](stream/232163-learning:-history-of-ideas/index.html) (30 topics)
+* [learning: history of ideas](stream/232163-learning:-history-of-ideas/index.html) (31 topics)
 
 * [learning: recommendations](stream/232161-learning:-recommendations/index.html) (29 topics)
 
@@ -184,4 +184,4 @@ permalink: /index.html
 
 * [theory: alternate presentations](stream/233122-theory:-alternate-presentations/index.html) (1 topic)
 
-<hr><p>Last updated: Aug 12 2023 at 12:08 UTC</p>
+<hr><p>Last updated: Aug 13 2023 at 12:08 UTC</p>

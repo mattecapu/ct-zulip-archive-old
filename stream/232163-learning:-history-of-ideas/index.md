@@ -9,6 +9,7 @@ permalink: /stream/232163-learning:-history-of-ideas/index.html
 
 ### Topics:
 
+* [Etymology of "initial" and "terminal"?](topic/topic_Etymology.20of.20.22initial.22.20and.20.22terminal.22.3F.html) (3 messages, latest: Aug 12 2023 at 16:43)
 * [✔ What Moore is the Moore of monad algebras?](topic/topic_.E2.9C.94.20What.20Moore.20is.20the.20Moore.20of.20monad.20algebras.3F.html) (9 messages, latest: Jul 10 2023 at 08:14)
 * [Quality Zero](topic/topic_Quality.20Zero.html) (2 messages, latest: Jul 10 2023 at 04:31)
 * [Zero (origins)](topic/topic_Zero.20(origins).html) (2 messages, latest: Jul 10 2023 at 04:31)
@@ -40,4 +41,4 @@ permalink: /stream/232163-learning:-history-of-ideas/index.html
 * [All things Feynman](topic/topic_All.20things.20Feynman.html) (2 messages, latest: May 22 2020 at 06:04)
 * [stream events](topic/topic_stream.20events.html) (2 messages, latest: Apr 06 2020 at 18:15)
 
-<hr><p>Last updated: Aug 12 2023 at 12:08 UTC</p>
+<hr><p>Last updated: Aug 13 2023 at 12:08 UTC</p>
