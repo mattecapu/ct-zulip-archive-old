@@ -9,7 +9,8 @@ permalink: /stream/229136-theory:-category-theory/index.html
 
 ### Topics:
 
-* [Every double category is a double colimit in a canonical way](topic/topic_Every.20double.20category.20is.20a.20double.20colimit.20in.20a.20canonical.20way.html) (1 message, latest: Aug 13 2023 at 01:42)
+* [Matrix trace as feedback](topic/topic_Matrix.20trace.20as.20feedback.html) (30 messages, latest: Aug 14 2023 at 04:49)
+* [Every double category is a double colimit in a canonical way](topic/topic_Every.20double.20category.20is.20a.20double.20colimit.20in.20a.20canonical.20way.html) (3 messages, latest: Aug 13 2023 at 23:05)
 * [Pointwise Kan extensions for double categories](topic/topic_Pointwise.20Kan.20extensions.20for.20double.20categories.html) (4 messages, latest: Aug 11 2023 at 01:18)
 * [Exact squares and monoidal cats](topic/topic_Exact.20squares.20and.20monoidal.20cats.html) (11 messages, latest: Aug 04 2023 at 17:36)
 * [Infinitary distributive monoidal category](topic/topic_Infinitary.20distributive.20monoidal.20category.html) (8 messages, latest: Aug 04 2023 at 15:55)
@@ -447,4 +448,4 @@ permalink: /stream/229136-theory:-category-theory/index.html
 * [diagrams for application](topic/topic_diagrams.20for.20application.html) (13 messages, latest: Mar 24 2020 at 06:19)
 * [universal constructions](topic/topic_universal.20constructions.html) (8 messages, latest: Mar 23 2020 at 21:06)
 
-<hr><p>Last updated: Aug 13 2023 at 12:08 UTC</p>
+<hr><p>Last updated: Aug 14 2023 at 12:11 UTC</p>
