@@ -8,9 +8,9 @@ permalink: /index.html
 
 ## Streams:
 
-* [learning: questions](stream/229199-learning:-questions/index.html) (937 topics)
+* [learning: questions](stream/229199-learning:-questions/index.html) (938 topics)
 
-* [theory: category theory](stream/229136-theory:-category-theory/index.html) (438 topics)
+* [theory: category theory](stream/229136-theory:-category-theory/index.html) (439 topics)
 
 * [general](stream/229111-general/index.html) (263 topics)
 
@@ -90,11 +90,11 @@ permalink: /index.html
 
 * [seminar: ACT@UCR](stream/229966-seminar:-ACT@UCR/index.html) (15 topics)
 
+* [learning: reading groups](stream/232160-learning:-reading-groups/index.html) (14 topics)
+
 * [working: discrete geometry and entanglement](stream/266854-working:-discrete-geometry-and-entanglement/index.html) (14 topics)
 
 * [general: co/appreciation](stream/271602-general:-co/appreciation/index.html) (13 topics)
-
-* [learning: reading groups](stream/232160-learning:-reading-groups/index.html) (13 topics)
 
 * [practice: translation](stream/260000-practice:-translation/index.html) (11 topics)
 
@@ -184,4 +184,4 @@ permalink: /index.html
 
 * [theory: alternate presentations](stream/233122-theory:-alternate-presentations/index.html) (1 topic)
 
-<hr><p>Last updated: Aug 14 2023 at 12:11 UTC</p>
+<hr><p>Last updated: Aug 15 2023 at 12:09 UTC</p>

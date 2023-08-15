@@ -9,6 +9,7 @@ permalink: /stream/232160-learning:-reading-groups/index.html
 
 ### Topics:
 
+* [Categorical Systems Theory](topic/topic_Categorical.20Systems.20Theory.html) (2 messages, latest: Aug 15 2023 at 07:36)
 * [Categorical Logic and Type Theory](topic/topic_Categorical.20Logic.20and.20Type.20Theory.html) (27 messages, latest: Jul 23 2023 at 13:58)
 * [general reference text](topic/topic_general.20reference.20text.html) (13 messages, latest: Sep 15 2022 at 16:29)
 * [General reference text](topic/topic_General.20reference.20text.html) (10 messages, latest: Sep 13 2022 at 20:52)
@@ -23,4 +24,4 @@ permalink: /stream/232160-learning:-reading-groups/index.html
 * [A Rosetta Stone](topic/topic_A.20Rosetta.20Stone.html) (88 messages, latest: May 28 2020 at 07:52)
 * [stream events](topic/topic_stream.20events.html) (12 messages, latest: May 18 2020 at 16:27)
 
-<hr><p>Last updated: Aug 14 2023 at 12:11 UTC</p>
+<hr><p>Last updated: Aug 15 2023 at 12:09 UTC</p>

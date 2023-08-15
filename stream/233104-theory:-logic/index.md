@@ -9,7 +9,7 @@ permalink: /stream/233104-theory:-logic/index.html
 
 ### Topics:
 
-* [SupLat as a *-autonomous category](topic/topic_SupLat.20as.20a.20*-autonomous.20category.html) (27 messages, latest: Aug 13 2023 at 18:25)
+* [SupLat as a *-autonomous category](topic/topic_SupLat.20as.20a.20*-autonomous.20category.html) (29 messages, latest: Aug 14 2023 at 13:11)
 * [Models of FOL using bivaluations](topic/topic_Models.20of.20FOL.20using.20bivaluations.html) (1 message, latest: May 03 2023 at 15:51)
 * [proofs of cut-elimination theorem](topic/topic_proofs.20of.20cut-elimination.20theorem.html) (26 messages, latest: Mar 19 2023 at 18:21)
 * [Bounded quantification over postulated sets](topic/topic_Bounded.20quantification.20over.20postulated.20sets.html) (1 message, latest: Mar 16 2023 at 23:56)
@@ -71,4 +71,4 @@ permalink: /stream/233104-theory:-logic/index.html
 * [Probability as logic](topic/topic_Probability.20as.20logic.html) (63 messages, latest: Apr 15 2020 at 12:33)
 * [stream events](topic/topic_stream.20events.html) (1 message, latest: Apr 10 2020 at 12:32)
 
-<hr><p>Last updated: Aug 14 2023 at 12:11 UTC</p>
+<hr><p>Last updated: Aug 15 2023 at 12:09 UTC</p>
