@@ -9,6 +9,7 @@ permalink: /stream/274877-practice:-our-work/index.html
 
 ### Topics:
 
+* [Evan Patterson](topic/topic_Evan.20Patterson.html) (75 messages, latest: Aug 16 2023 at 09:24)
 * [John Baez](topic/topic_John.20Baez.html) (1411 messages, latest: Aug 14 2023 at 17:19)
 * [David Roberts](topic/topic_David.20Roberts.html) (72 messages, latest: Aug 10 2023 at 16:42)
 * [Jason Parker](topic/topic_Jason.20Parker.html) (4 messages, latest: Aug 10 2023 at 16:31)
@@ -23,7 +24,6 @@ permalink: /stream/274877-practice:-our-work/index.html
 * [David Egolf](topic/topic_David.20Egolf.html) (3 messages, latest: Apr 18 2023 at 20:20)
 * [Jacob S Zelko](topic/topic_Jacob.20S.20Zelko.html) (35 messages, latest: Apr 16 2023 at 03:51)
 * [categorical computability book](topic/topic_categorical.20computability.20book.html) (7 messages, latest: Apr 15 2023 at 11:33)
-* [Evan Patterson](topic/topic_Evan.20Patterson.html) (69 messages, latest: Apr 06 2023 at 05:17)
 * [Ralph Sarkis](topic/topic_Ralph.20Sarkis.html) (29 messages, latest: Apr 03 2023 at 08:32)
 * [Morgan Rogers](topic/topic_Morgan.20Rogers.html) (54 messages, latest: Apr 01 2023 at 20:54)
 * [Christian Williams](topic/topic_Christian.20Williams.html) (450 messages, latest: Mar 27 2023 at 23:38)
@@ -61,4 +61,4 @@ permalink: /stream/274877-practice:-our-work/index.html
 * [Conor Mc Bride](topic/topic_Conor.20Mc.20Bride.html) (60 messages, latest: Apr 08 2021 at 15:15)
 * [thoughts on sharing ideas](topic/topic_thoughts.20on.20sharing.20ideas.html) (20 messages, latest: Jan 31 2021 at 03:05)
 
-<hr><p>Last updated: Aug 15 2023 at 12:09 UTC</p>
+<hr><p>Last updated: Aug 16 2023 at 12:09 UTC</p>

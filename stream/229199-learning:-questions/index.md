@@ -9,7 +9,9 @@ permalink: /stream/229199-learning:-questions/index.html
 
 ### Topics:
 
-* ["Naturally occuring" braided monoidal categories](topic/topic_.22Naturally.20occuring.22.20braided.20monoidal.20categories.html) (3 messages, latest: Aug 15 2023 at 11:17)
+* [Morphisms from the monoidal unit](topic/topic_Morphisms.20from.20the.20monoidal.20unit.html) (2 messages, latest: Aug 16 2023 at 08:26)
+* [a ring as a category where the elements are objects](topic/topic_a.20ring.20as.20a.20category.20where.20the.20elements.20are.20objects.html) (5 messages, latest: Aug 15 2023 at 18:38)
+* ["Naturally occuring" braided monoidal categories](topic/topic_.22Naturally.20occuring.22.20braided.20monoidal.20categories.html) (5 messages, latest: Aug 15 2023 at 17:23)
 * [Double negation fibrewise and another modality "on the base"](topic/topic_Double.20negation.20fibrewise.20and.20another.20modality.20.22on.20the.20base.22.html) (5 messages, latest: Aug 14 2023 at 07:52)
 * [objects “are” something](topic/topic_objects.20.E2.80.9Care.E2.80.9D.20something.html) (16 messages, latest: Aug 12 2023 at 00:25)
 * [A Category for DSLs?](topic/topic_A.20Category.20for.20DSLs.3F.html) (4 messages, latest: Aug 10 2023 at 20:53)
@@ -948,4 +950,4 @@ permalink: /stream/229199-learning:-questions/index.html
 * [Algebra (Aluffi) exercises](topic/topic_Algebra.20(Aluffi).20exercises.html) (55 messages, latest: Mar 27 2020 at 23:38)
 * [What is category theory about?](topic/topic_What.20is.20category.20theory.20about.3F.html) (16 messages, latest: Mar 26 2020 at 16:03)
 
-<hr><p>Last updated: Aug 15 2023 at 12:09 UTC</p>
+<hr><p>Last updated: Aug 16 2023 at 12:09 UTC</p>
