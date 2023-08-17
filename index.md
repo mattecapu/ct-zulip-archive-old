@@ -18,7 +18,7 @@ permalink: /index.html
 
 * [practice: applied ct](stream/229156-practice:-applied-ct/index.html) (146 topics)
 
-* [general: mathematics](stream/266967-general:-mathematics/index.html) (110 topics)
+* [general: mathematics](stream/266967-general:-mathematics/index.html) (111 topics)
 
 * [theory: topos theory](stream/230087-theory:-topos-theory/index.html) (85 topics)
 
@@ -42,15 +42,15 @@ permalink: /index.html
 
 * [practice: our work](stream/274877-practice:-our-work/index.html) (51 topics)
 
-* [theory: type theory](stream/229952-theory:-type-theory/index.html) (50 topics)
+* [theory: type theory](stream/229952-theory:-type-theory/index.html) (51 topics)
 
 * [MIT Categories Seminar](stream/229457-MIT-Categories-Seminar/index.html) (41 topics)
 
 * [seminar: MIT Categories Seminar](stream/229457-seminar:-MIT-Categories-Seminar/index.html) (41 topics)
 
-* [theory: probability](stream/253118-theory:-probability/index.html) (36 topics)
+* [learning: id my structure](stream/311521-learning:-id-my-structure/index.html) (36 topics)
 
-* [learning: id my structure](stream/311521-learning:-id-my-structure/index.html) (35 topics)
+* [theory: probability](stream/253118-theory:-probability/index.html) (36 topics)
 
 * [Categorical Probability and Statistics 2020 workshop](stream/238032-Categorical-Probability-and-Statistics-2020-workshop/index.html) (34 topics)
 
@@ -82,9 +82,9 @@ permalink: /index.html
 
 * [theory: algebraic geometry](stream/231112-theory:-algebraic-geometry/index.html) (17 topics)
 
-* [ACT@UCR seminar](stream/229966-ACT@UCR-seminar/index.html) (15 topics)
+* [learning: reading groups](stream/232160-learning:-reading-groups/index.html) (16 topics)
 
-* [learning: reading groups](stream/232160-learning:-reading-groups/index.html) (15 topics)
+* [ACT@UCR seminar](stream/229966-ACT@UCR-seminar/index.html) (15 topics)
 
 * [learning: show and tell](stream/232162-learning:-show-and-tell/index.html) (15 topics)
 
@@ -184,4 +184,4 @@ permalink: /index.html
 
 * [theory: alternate presentations](stream/233122-theory:-alternate-presentations/index.html) (1 topic)
 
-<hr><p>Last updated: Aug 16 2023 at 12:09 UTC</p>
+<hr><p>Last updated: Aug 17 2023 at 12:09 UTC</p>

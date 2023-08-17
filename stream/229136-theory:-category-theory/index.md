@@ -9,6 +9,7 @@ permalink: /stream/229136-theory:-category-theory/index.html
 
 ### Topics:
 
+* [Splitting an idempotent to quotient a monad](topic/topic_Splitting.20an.20idempotent.20to.20quotient.20a.20monad.html) (131 messages, latest: Aug 17 2023 at 11:16)
 * [more about promonoidal Kan extensions](topic/topic_more.20about.20promonoidal.20Kan.20extensions.html) (1 message, latest: Aug 14 2023 at 17:45)
 * [Matrix trace as feedback](topic/topic_Matrix.20trace.20as.20feedback.html) (30 messages, latest: Aug 14 2023 at 04:49)
 * [Every double category is a double colimit in a canonical way](topic/topic_Every.20double.20category.20is.20a.20double.20colimit.20in.20a.20canonical.20way.html) (3 messages, latest: Aug 13 2023 at 23:05)
@@ -51,7 +52,6 @@ permalink: /stream/229136-theory:-category-theory/index.html
 * [Category of elements vs Grothendieck construction](topic/topic_Category.20of.20elements.20vs.20Grothendieck.20construction.html) (12 messages, latest: Jun 07 2023 at 19:06)
 * [copointed endofunctors with this property](topic/topic_copointed.20endofunctors.20with.20this.20property.html) (11 messages, latest: Jun 07 2023 at 07:28)
 * [The free F-algebra is a T-algebra](topic/topic_The.20free.20F-algebra.20is.20a.20T-algebra.html) (5 messages, latest: May 28 2023 at 03:03)
-* [Splitting an idempotent to quotient a monad](topic/topic_Splitting.20an.20idempotent.20to.20quotient.20a.20monad.html) (130 messages, latest: May 25 2023 at 13:06)
 * [ref request: triple categories / 3-monads](topic/topic_ref.20request.3A.20triple.20categories.20.2F.203-monads.html) (23 messages, latest: May 24 2023 at 07:09)
 * [Ref request: monad for boolean algebras](topic/topic_Ref.20request.3A.20monad.20for.20boolean.20algebras.html) (63 messages, latest: May 23 2023 at 03:18)
 * [introduction to categories as algebraic gadgets](topic/topic_introduction.20to.20categories.20as.20algebraic.20gadgets.html) (74 messages, latest: May 21 2023 at 15:58)
@@ -449,4 +449,4 @@ permalink: /stream/229136-theory:-category-theory/index.html
 * [diagrams for application](topic/topic_diagrams.20for.20application.html) (13 messages, latest: Mar 24 2020 at 06:19)
 * [universal constructions](topic/topic_universal.20constructions.html) (8 messages, latest: Mar 23 2020 at 21:06)
 
-<hr><p>Last updated: Aug 16 2023 at 12:09 UTC</p>
+<hr><p>Last updated: Aug 17 2023 at 12:09 UTC</p>
