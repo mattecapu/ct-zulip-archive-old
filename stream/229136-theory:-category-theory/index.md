@@ -9,7 +9,9 @@ permalink: /stream/229136-theory:-category-theory/index.html
 
 ### Topics:
 
-* [Splitting an idempotent to quotient a monad](topic/topic_Splitting.20an.20idempotent.20to.20quotient.20a.20monad.html) (131 messages, latest: Aug 17 2023 at 11:16)
+* [loose exponentials](topic/topic_loose.20exponentials.html) (5 messages, latest: Aug 17 2023 at 22:11)
+* [Splitting an idempotent to quotient a monad](topic/topic_Splitting.20an.20idempotent.20to.20quotient.20a.20monad.html) (170 messages, latest: Aug 17 2023 at 21:40)
+* [Are topological groupoids a topological concrete category?](topic/topic_Are.20topological.20groupoids.20a.20topological.20concrete.20category.3F.html) (1 message, latest: Aug 17 2023 at 18:40)
 * [more about promonoidal Kan extensions](topic/topic_more.20about.20promonoidal.20Kan.20extensions.html) (1 message, latest: Aug 14 2023 at 17:45)
 * [Matrix trace as feedback](topic/topic_Matrix.20trace.20as.20feedback.html) (30 messages, latest: Aug 14 2023 at 04:49)
 * [Every double category is a double colimit in a canonical way](topic/topic_Every.20double.20category.20is.20a.20double.20colimit.20in.20a.20canonical.20way.html) (3 messages, latest: Aug 13 2023 at 23:05)
@@ -449,4 +451,4 @@ permalink: /stream/229136-theory:-category-theory/index.html
 * [diagrams for application](topic/topic_diagrams.20for.20application.html) (13 messages, latest: Mar 24 2020 at 06:19)
 * [universal constructions](topic/topic_universal.20constructions.html) (8 messages, latest: Mar 23 2020 at 21:06)
 
-<hr><p>Last updated: Aug 17 2023 at 12:09 UTC</p>
+<hr><p>Last updated: Aug 18 2023 at 12:09 UTC</p>

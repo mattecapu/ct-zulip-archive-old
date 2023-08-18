@@ -9,6 +9,7 @@ permalink: /stream/253118-theory:-probability/index.html
 
 ### Topics:
 
+* [Stein's Method](topic/topic_Stein's.20Method.html) (1 message, latest: Aug 17 2023 at 17:21)
 * [Gaussian mixtures](topic/topic_Gaussian.20mixtures.html) (5 messages, latest: Aug 04 2023 at 20:21)
 * [Sheaves and probability](topic/topic_Sheaves.20and.20probability.html) (8 messages, latest: May 15 2023 at 23:04)
 * [clean constructions](topic/topic_clean.20constructions.html) (2 messages, latest: Mar 01 2023 at 04:39)
@@ -46,4 +47,4 @@ permalink: /stream/253118-theory:-probability/index.html
 * [Finitely additive probability](topic/topic_Finitely.20additive.20probability.html) (1 message, latest: Aug 16 2020 at 00:48)
 * [stream events](topic/topic_stream.20events.html) (2 messages, latest: Aug 16 2020 at 00:31)
 
-<hr><p>Last updated: Aug 17 2023 at 12:09 UTC</p>
+<hr><p>Last updated: Aug 18 2023 at 12:09 UTC</p>

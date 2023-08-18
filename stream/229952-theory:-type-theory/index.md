@@ -9,7 +9,7 @@ permalink: /stream/229952-theory:-type-theory/index.html
 
 ### Topics:
 
-* [Trying to interpret MLTT in Cat.](topic/topic_Trying.20to.20interpret.20MLTT.20in.20Cat.2E.html) (6 messages, latest: Aug 17 2023 at 08:06)
+* [Trying to interpret MLTT in Cat.](topic/topic_Trying.20to.20interpret.20MLTT.20in.20Cat.2E.html) (7 messages, latest: Aug 17 2023 at 16:41)
 * [Backus Naur, Python](topic/topic_Backus.20Naur.2C.20Python.html) (5 messages, latest: Aug 13 2023 at 16:02)
 * [Bacchus Naur, Python](topic/topic_Bacchus.20Naur.2C.20Python.html) (4 messages, latest: Jul 22 2023 at 17:54)
 * [semisimplicial types](topic/topic_semisimplicial.20types.html) (69 messages, latest: Jun 23 2023 at 16:18)
@@ -61,4 +61,4 @@ permalink: /stream/229952-theory:-type-theory/index.html
 * [stream events](topic/topic_stream.20events.html) (3 messages, latest: Apr 06 2020 at 05:32)
 * [W-types and CFGs](topic/topic_W-types.20and.20CFGs.html) (11 messages, latest: Apr 02 2020 at 16:00)
 
-<hr><p>Last updated: Aug 17 2023 at 12:09 UTC</p>
+<hr><p>Last updated: Aug 18 2023 at 12:09 UTC</p>

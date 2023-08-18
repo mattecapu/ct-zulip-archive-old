@@ -8,9 +8,9 @@ permalink: /index.html
 
 ## Streams:
 
-* [learning: questions](stream/229199-learning:-questions/index.html) (940 topics)
+* [learning: questions](stream/229199-learning:-questions/index.html) (942 topics)
 
-* [theory: category theory](stream/229136-theory:-category-theory/index.html) (439 topics)
+* [theory: category theory](stream/229136-theory:-category-theory/index.html) (441 topics)
 
 * [general](stream/229111-general/index.html) (263 topics)
 
@@ -48,9 +48,9 @@ permalink: /index.html
 
 * [seminar: MIT Categories Seminar](stream/229457-seminar:-MIT-Categories-Seminar/index.html) (41 topics)
 
-* [learning: id my structure](stream/311521-learning:-id-my-structure/index.html) (36 topics)
+* [theory: probability](stream/253118-theory:-probability/index.html) (37 topics)
 
-* [theory: probability](stream/253118-theory:-probability/index.html) (36 topics)
+* [learning: id my structure](stream/311521-learning:-id-my-structure/index.html) (36 topics)
 
 * [Categorical Probability and Statistics 2020 workshop](stream/238032-Categorical-Probability-and-Statistics-2020-workshop/index.html) (34 topics)
 
@@ -184,4 +184,4 @@ permalink: /index.html
 
 * [theory: alternate presentations](stream/233122-theory:-alternate-presentations/index.html) (1 topic)
 
-<hr><p>Last updated: Aug 17 2023 at 12:09 UTC</p>
+<hr><p>Last updated: Aug 18 2023 at 12:09 UTC</p>

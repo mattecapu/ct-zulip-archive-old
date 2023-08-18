@@ -9,7 +9,8 @@ permalink: /stream/274877-practice:-our-work/index.html
 
 ### Topics:
 
-* [Jade Master](topic/topic_Jade.20Master.html) (16 messages, latest: Aug 17 2023 at 09:56)
+* [Jade Master](topic/topic_Jade.20Master.html) (21 messages, latest: Aug 18 2023 at 06:31)
+* [Valeria de Paiva](topic/topic_Valeria.20de.20Paiva.html) (3 messages, latest: Aug 17 2023 at 22:29)
 * [Evan Patterson](topic/topic_Evan.20Patterson.html) (76 messages, latest: Aug 16 2023 at 14:57)
 * [John Baez](topic/topic_John.20Baez.html) (1411 messages, latest: Aug 14 2023 at 17:19)
 * [David Roberts](topic/topic_David.20Roberts.html) (72 messages, latest: Aug 10 2023 at 16:42)
@@ -54,11 +55,10 @@ permalink: /stream/274877-practice:-our-work/index.html
 * [engineering and CT](topic/topic_engineering.20and.20CT.html) (4 messages, latest: Dec 05 2021 at 17:21)
 * [Engineering and CT](topic/topic_Engineering.20and.20CT.html) (1 message, latest: Dec 02 2021 at 10:51)
 * [William Waites](topic/topic_William.20Waites.html) (18 messages, latest: Nov 08 2021 at 18:54)
-* [Valeria de Paiva](topic/topic_Valeria.20de.20Paiva.html) (2 messages, latest: Oct 29 2021 at 21:58)
 * [Daniel Geisler](topic/topic_Daniel.20Geisler.html) (7 messages, latest: Oct 24 2021 at 08:02)
 * [Joe Moeller](topic/topic_Joe.20Moeller.html) (1 message, latest: Sep 08 2021 at 14:14)
 * [Nicolas Blanco](topic/topic_Nicolas.20Blanco.html) (5 messages, latest: Apr 23 2021 at 23:31)
 * [Conor Mc Bride](topic/topic_Conor.20Mc.20Bride.html) (60 messages, latest: Apr 08 2021 at 15:15)
 * [thoughts on sharing ideas](topic/topic_thoughts.20on.20sharing.20ideas.html) (20 messages, latest: Jan 31 2021 at 03:05)
 
-<hr><p>Last updated: Aug 17 2023 at 12:09 UTC</p>
+<hr><p>Last updated: Aug 18 2023 at 12:09 UTC</p>
