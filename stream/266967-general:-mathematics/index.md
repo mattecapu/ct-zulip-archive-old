@@ -9,7 +9,7 @@ permalink: /stream/266967-general:-mathematics/index.html
 
 ### Topics:
 
-* [arbitrary intersections and Set](topic/topic_arbitrary.20intersections.20and.20Set.html) (13 messages, latest: Aug 17 2023 at 22:01)
+* [arbitrary intersections and Set](topic/topic_arbitrary.20intersections.20and.20Set.html) (14 messages, latest: Aug 18 2023 at 15:34)
 * [categories.pi-base.org](topic/topic_categories.2Epi-base.2Eorg.html) (4 messages, latest: Aug 06 2023 at 19:57)
 * ["defective" monoidal categories](topic/topic_.22defective.22.20monoidal.20categories.html) (10 messages, latest: Jul 31 2023 at 23:45)
 * [a physical adjunction?](topic/topic_a.20physical.20adjunction.3F.html) (5 messages, latest: Jul 19 2023 at 11:49)
@@ -121,4 +121,4 @@ permalink: /stream/266967-general:-mathematics/index.html
 * [the 600-cell](topic/topic_the.20600-cell.html) (5 messages, latest: Dec 01 2020 at 16:35)
 * [hermitian matrix over normed division algebra](topic/topic_hermitian.20matrix.20over.20normed.20division.20algebra.html) (8 messages, latest: Sep 28 2020 at 21:19)
 
-<hr><p>Last updated: Aug 18 2023 at 12:09 UTC</p>
+<hr><p>Last updated: Aug 19 2023 at 12:09 UTC</p>

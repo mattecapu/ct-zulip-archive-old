@@ -9,8 +9,9 @@ permalink: /stream/274877-practice:-our-work/index.html
 
 ### Topics:
 
-* [Jade Master](topic/topic_Jade.20Master.html) (21 messages, latest: Aug 18 2023 at 06:31)
-* [Valeria de Paiva](topic/topic_Valeria.20de.20Paiva.html) (3 messages, latest: Aug 17 2023 at 22:29)
+* [Jean-Baptiste Vienney](topic/topic_Jean-Baptiste.20Vienney.html) (130 messages, latest: Aug 19 2023 at 12:04)
+* [Jade Master](topic/topic_Jade.20Master.html) (35 messages, latest: Aug 19 2023 at 07:54)
+* [Valeria de Paiva](topic/topic_Valeria.20de.20Paiva.html) (4 messages, latest: Aug 18 2023 at 13:55)
 * [Evan Patterson](topic/topic_Evan.20Patterson.html) (76 messages, latest: Aug 16 2023 at 14:57)
 * [John Baez](topic/topic_John.20Baez.html) (1411 messages, latest: Aug 14 2023 at 17:19)
 * [David Roberts](topic/topic_David.20Roberts.html) (72 messages, latest: Aug 10 2023 at 16:42)
@@ -19,7 +20,6 @@ permalink: /stream/274877-practice:-our-work/index.html
 * [Chris Grossack (they/them)](topic/topic_Chris.20Grossack.20(they.2Fthem).html) (5 messages, latest: Jul 16 2023 at 21:55)
 * [Math 4 Wisdom](topic/topic_Math.204.20Wisdom.html) (1 message, latest: Jun 28 2023 at 03:10)
 * [talk on Poly](topic/topic_talk.20on.20Poly.html) (1 message, latest: Jun 22 2023 at 05:04)
-* [Jean-Baptiste Vienney](topic/topic_Jean-Baptiste.20Vienney.html) (103 messages, latest: Jun 03 2023 at 03:21)
 * [Steve Huntsman](topic/topic_Steve.20Huntsman.html) (7 messages, latest: May 22 2023 at 14:37)
 * [Simon Willerton](topic/topic_Simon.20Willerton.html) (2 messages, latest: May 06 2023 at 16:21)
 * [David Egolf](topic/topic_David.20Egolf.html) (3 messages, latest: Apr 18 2023 at 20:20)
@@ -61,4 +61,4 @@ permalink: /stream/274877-practice:-our-work/index.html
 * [Conor Mc Bride](topic/topic_Conor.20Mc.20Bride.html) (60 messages, latest: Apr 08 2021 at 15:15)
 * [thoughts on sharing ideas](topic/topic_thoughts.20on.20sharing.20ideas.html) (20 messages, latest: Jan 31 2021 at 03:05)
 
-<hr><p>Last updated: Aug 18 2023 at 12:09 UTC</p>
+<hr><p>Last updated: Aug 19 2023 at 12:09 UTC</p>
