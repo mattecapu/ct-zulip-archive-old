@@ -9,6 +9,7 @@ permalink: /stream/229136-theory:-category-theory/index.html
 
 ### Topics:
 
+* [✔ Are topological groupoids a topological concrete category?](topic/topic_.E2.9C.94.20Are.20topological.20groupoids.20a.20topological.20concrete.20category.3F.html) (3 messages, latest: Aug 20 2023 at 02:17)
 * [loose exponentials](topic/topic_loose.20exponentials.html) (14 messages, latest: Aug 18 2023 at 18:23)
 * [Splitting an idempotent to quotient a monad](topic/topic_Splitting.20an.20idempotent.20to.20quotient.20a.20monad.html) (170 messages, latest: Aug 17 2023 at 21:40)
 * [Are topological groupoids a topological concrete category?](topic/topic_Are.20topological.20groupoids.20a.20topological.20concrete.20category.3F.html) (1 message, latest: Aug 17 2023 at 18:40)
@@ -451,4 +452,4 @@ permalink: /stream/229136-theory:-category-theory/index.html
 * [diagrams for application](topic/topic_diagrams.20for.20application.html) (13 messages, latest: Mar 24 2020 at 06:19)
 * [universal constructions](topic/topic_universal.20constructions.html) (8 messages, latest: Mar 23 2020 at 21:06)
 
-<hr><p>Last updated: Aug 19 2023 at 12:09 UTC</p>
+<hr><p>Last updated: Aug 20 2023 at 12:09 UTC</p>
