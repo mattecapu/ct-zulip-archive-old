@@ -9,8 +9,8 @@ permalink: /stream/311521-learning:-id-my-structure/index.html
 
 ### Topics:
 
+* ["Monoidification" of a category](topic/topic_.22Monoidification.22.20of.20a.20category.html) (12 messages, latest: Aug 21 2023 at 09:23)
 * [Bimonoidal functor](topic/topic_Bimonoidal.20functor.html) (79 messages, latest: Aug 18 2023 at 14:52)
-* ["Monoidification" of a category](topic/topic_.22Monoidification.22.20of.20a.20category.html) (10 messages, latest: Aug 17 2023 at 10:20)
 * ["Weak" cones](topic/topic_.22Weak.22.20cones.html) (7 messages, latest: Aug 13 2023 at 07:38)
 * [Multicategories with restricted composition](topic/topic_Multicategories.20with.20restricted.20composition.html) (8 messages, latest: Aug 06 2023 at 00:38)
 * [horizontal monads on a fibration?](topic/topic_horizontal.20monads.20on.20a.20fibration.3F.html) (1 message, latest: Aug 04 2023 at 14:38)
@@ -46,4 +46,4 @@ permalink: /stream/311521-learning:-id-my-structure/index.html
 * [stream events](topic/topic_stream.20events.html) (9 messages, latest: Jan 04 2022 at 22:35)
 * [almost a full subcategory?](topic/topic_almost.20a.20full.20subcategory.3F.html) (15 messages, latest: Jan 04 2022 at 16:42)
 
-<hr><p>Last updated: Aug 20 2023 at 12:09 UTC</p>
+<hr><p>Last updated: Aug 21 2023 at 12:11 UTC</p>

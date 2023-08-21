@@ -1,0 +1,278 @@
+[
+    {
+        "content": "<p>Given an ordinary category I can endow the hom-sets with the structure of an abelian group and ask if composition is bilinear, or endow them with the structure of pointed sets and ask if composition preserves the point. In these cases, I'm fairly sure that we should get a category enriched over abelian groups or over pointed sets. The structure at play here seems to be that we have an adjunction where the right adjoint <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>V</mi><mo>→</mo><mrow><mi mathvariant=\"sans-serif\">S</mi><mi mathvariant=\"sans-serif\">e</mi><mi mathvariant=\"sans-serif\">t</mi></mrow></mrow><annotation encoding=\"application/x-tex\">V \\to \\mathsf{Set}</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.22222em;\">V</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">→</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6944em;\"></span><span class=\"mord\"><span class=\"mord mathsf\">Set</span></span></span></span></span> is faithful (but not full) and is lax monoidal. Also in both cases I've given, this forgetful functor is actually corepresented by the unit object. Maybe that's important? </p>\n<p>Is there some general result about when we can endow an ordinary category with an enrichment by \"reflecting\" back along a functor like this? If so, could someone point me to where it's written down? I don't think the stuff on nlab about change of enriching category applies here, but I apologize if I'm missing something obvious</p>",
+        "id": 386284143,
+        "sender_full_name": "Brendan Murphy",
+        "timestamp": 1692582280
+    },
+    {
+        "content": "<p>Some of your comments may be distractors as they are just stating things that hold in general. <br>\nEvery monoidal category <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"script\">V</mi></mrow><annotation encoding=\"application/x-tex\">\\mathcal{V}</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathcal\" style=\"margin-right:0.08222em;\">V</span></span></span></span> has a unit object <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>1</mn></mrow><annotation encoding=\"application/x-tex\">1</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6444em;\"></span><span class=\"mord\">1</span></span></span></span>. The Hom functor <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>H</mi><mi>o</mi><mi>m</mi><mo stretchy=\"false\">(</mo><mn>1</mn><mo separator=\"true\">,</mo><mo>−</mo><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">Hom(1,-)</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord mathnormal\">Ho</span><span class=\"mord mathnormal\">m</span><span class=\"mopen\">(</span><span class=\"mord\">1</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord\">−</span><span class=\"mclose\">)</span></span></span></span> is a lax monoidal functor to Sets. In this sense there is always a forgetful functor from V-Cat to Cat. It may lose a lot of information as in the case where we want to view metric spaces as categories enriched over R^{+}\\cup {\\infty}, or very little. <br>\nIt may not always be faithful; It is faithful precisely when 1 is a generator. it need not always have a left adjoint. If it does, it will necessarily send any set X to the coproduct of |X| many copies of the unit object.<br>\nIf 1 is a generator of V then there are good theorems in general about gluing together objects in V out of copies of 1.</p>",
+        "id": 386291223,
+        "sender_full_name": "Patrick Nicodemus",
+        "timestamp": 1692585790
+    },
+    {
+        "content": "<p><a href=\"/user_uploads/21317/4KlW4K1Vmz4GtnhpTA27C93v/image.png\">image.png</a><br>\nWhat I meant by \"good theorems about gluing objects together out of copies of 1\" is that there are adjoint functor theorems concerning generators</p>\n<div class=\"message_inline_image\"><a href=\"/user_uploads/21317/4KlW4K1Vmz4GtnhpTA27C93v/image.png\" title=\"image.png\"><img src=\"/user_uploads/21317/4KlW4K1Vmz4GtnhpTA27C93v/image.png\"></a></div>",
+        "id": 386291499,
+        "sender_full_name": "Patrick Nicodemus",
+        "timestamp": 1692585911
+    },
+    {
+        "content": "<p>this is from Borceux's handbook of categorical algebra.</p>",
+        "id": 386291525,
+        "sender_full_name": "Patrick Nicodemus",
+        "timestamp": 1692585923
+    },
+    {
+        "content": "<p>Thanks for the clarification. Essentially what I'm asking for is conditions that allow me to lift along that forgetful functor V-Cat -&gt; Cat.</p>",
+        "id": 386291670,
+        "sender_full_name": "Brendan Murphy",
+        "timestamp": 1692585981
+    },
+    {
+        "content": "<p>Ah, ok. I understand what you mean then.</p>",
+        "id": 386292076,
+        "sender_full_name": "Patrick Nicodemus",
+        "timestamp": 1692586236
+    },
+    {
+        "content": "<p><a href=\"https://ncatlab.org/nlab/show/commutative+algebraic+theory\">https://ncatlab.org/nlab/show/commutative+algebraic+theory</a></p>\n<p>Perhaps section 3 of this page is relevant to you. It says that if T is a monad on a monoidal category (such as Sets with Cartesian product) and it is a commutative monad, then the category of algebras for that monad inherit a monoidal structure (such as the tensor product or the smash product of pointed sets).</p>\n<p>So, if your monoidal category V is monadic over Sets, and this monoidal structure on V is the one inherited from the monoidal structure, then lifting C to a V-cat is the same as constructing T-algebra structures on each Hom set compatible with the monoidal product of T-algebras.</p>",
+        "id": 386292817,
+        "sender_full_name": "Patrick Nicodemus",
+        "timestamp": 1692586644
+    },
+    {
+        "content": "<p>That is the most immediate generalization of Ab and pointed sets I can think of. Although monadicity is a strong assumption. On the other hand you appear to be exactly looking for cases where it is sensible to talk about V as \"a set equipped with additional structure.\"</p>",
+        "id": 386292916,
+        "sender_full_name": "Patrick Nicodemus",
+        "timestamp": 1692586699
+    },
+    {
+        "content": "<p>ah yeah, that's great!</p>",
+        "id": 386292918,
+        "sender_full_name": "Brendan Murphy",
+        "timestamp": 1692586701
+    },
+    {
+        "content": "<p>yeah yeah i am, the only case I had in mind I didn't mention was dg-categories and Ch(R) is still monadic over Set</p>",
+        "id": 386292956,
+        "sender_full_name": "Brendan Murphy",
+        "timestamp": 1692586721
+    },
+    {
+        "content": "<p>although hm, you won't get the koszul sign rule will you...</p>",
+        "id": 386293185,
+        "sender_full_name": "Brendan Murphy",
+        "timestamp": 1692586884
+    },
+    {
+        "content": "<p>maybe there's a trick where you go <code>Set -&gt; Ab -&gt; R-Mod -&gt; GrR-Mod -&gt; Ch(R-Mod)</code> and introduce the sign rule at the level of graded modules? assuming that the forgetful functor <code>Ch(A) -&gt; GrA</code> is monadic, which I haven't checked</p>",
+        "id": 386293482,
+        "sender_full_name": "Brendan Murphy",
+        "timestamp": 1692587075
+    },
+    {
+        "content": "<p>I don't know much about the Koszul sign rule. There cannot be many symmetry isomorphisms on chain complexes which actually commute with the differentials. Isn't it kind of forced on you?<br>\nBut I agree it's plausible that you might have to work at the level of a different monadic adjunction.</p>",
+        "id": 386293696,
+        "sender_full_name": "Patrick Nicodemus",
+        "timestamp": 1692587213
+    },
+    {
+        "content": "<p>What do you mean by the Koszul rule in simple terms here?</p>",
+        "id": 386293760,
+        "sender_full_name": "Patrick Nicodemus",
+        "timestamp": 1692587251
+    },
+    {
+        "content": "<p>I think you're flipped around, it's the symmetry isomorphism that determines the differentials on various constructions</p>",
+        "id": 386293771,
+        "sender_full_name": "Brendan Murphy",
+        "timestamp": 1692587264
+    },
+    {
+        "content": "<p>And you're worried that the monadicity theorem for Ch(Mod) you're thinking of gives the wrong tensor product on chain complexes?</p>",
+        "id": 386293877,
+        "sender_full_name": "Patrick Nicodemus",
+        "timestamp": 1692587318
+    },
+    {
+        "content": "<p>by the koszul sign rule I mean the symmetry isomorphism on graded modules (or chain complexes) where if a has degree n and b has degree m then σ(a ⊗ b) = (−1)ⁿᵐ b ⊗ a</p>",
+        "id": 386293919,
+        "sender_full_name": "Brendan Murphy",
+        "timestamp": 1692587344
+    },
+    {
+        "content": "<p>yep</p>",
+        "id": 386293922,
+        "sender_full_name": "Brendan Murphy",
+        "timestamp": 1692587347
+    },
+    {
+        "content": "<p>if there's some formal algebraic construction i would expect it to just do σ(a ⊗ b) = b ⊗ a</p>",
+        "id": 386293945,
+        "sender_full_name": "Brendan Murphy",
+        "timestamp": 1692587363
+    },
+    {
+        "content": "<p>And does that commute with the differentials?<br>\nBecause the differentials are part of the object, so they should too be determined at the formal level.</p>",
+        "id": 386293993,
+        "sender_full_name": "Patrick Nicodemus",
+        "timestamp": 1692587393
+    },
+    {
+        "content": "<p>Like, the differential on T(A)\\otimes T(B) should be given by abstract nonsense if Ch(Mod) is a commutative algebraic theory over sets.</p>",
+        "id": 386294094,
+        "sender_full_name": "Patrick Nicodemus",
+        "timestamp": 1692587446
+    },
+    {
+        "content": "<p>Thinking</p>",
+        "id": 386294104,
+        "sender_full_name": "Brendan Murphy",
+        "timestamp": 1692587458
+    },
+    {
+        "content": "<p>so the differential we usually use is <code>d^{C ⊗ D}_k(a  ⊗ b) = d^C_n(a) ⊗ b + (-1)^n a ⊗ d^D_m(b)</code>, where <code>k = n + m</code> and <code>a ∈ Cₙ</code>, <code>b ∈ Dₘ</code></p>",
+        "id": 386294298,
+        "sender_full_name": "Brendan Murphy",
+        "timestamp": 1692587584
+    },
+    {
+        "content": "<p>I'm pretty sure that if you include no signs the result won't satisfy d^2 = 0</p>",
+        "id": 386294412,
+        "sender_full_name": "Brendan Murphy",
+        "timestamp": 1692587648
+    },
+    {
+        "content": "<p>you'll get a term like x + x when it should be x - x</p>",
+        "id": 386294425,
+        "sender_full_name": "Brendan Murphy",
+        "timestamp": 1692587659
+    },
+    {
+        "content": "<p>This also seems true to me.</p>",
+        "id": 386294437,
+        "sender_full_name": "Patrick Nicodemus",
+        "timestamp": 1692587668
+    },
+    {
+        "content": "<p>I'm not sure how this comes from abstract nonsense though</p>",
+        "id": 386294448,
+        "sender_full_name": "Brendan Murphy",
+        "timestamp": 1692587677
+    },
+    {
+        "content": "<p>Maybe I should think through whether Ch(R) -&gt; GrMod(R) is monadic</p>",
+        "id": 386294462,
+        "sender_full_name": "Brendan Murphy",
+        "timestamp": 1692587693
+    },
+    {
+        "content": "<p>so a chain complex is a graded module <code>C</code> equipped with a map <code>d : C -&gt; C[1]</code>, where <code>C[1]</code> has the grading shifted down by <code>1</code></p>",
+        "id": 386294572,
+        "sender_full_name": "Brendan Murphy",
+        "timestamp": 1692587761
+    },
+    {
+        "content": "<p>satisfying the axiom <code>d[1] ∘ d = 0</code></p>",
+        "id": 386294634,
+        "sender_full_name": "Brendan Murphy",
+        "timestamp": 1692587787
+    },
+    {
+        "content": "<p>what would the free chain complex on a graded module <code>M</code> be? I guess my instinct is that we just add a shifted copy of <code>M</code> to itself. <code>F(M) = M (+) M[1]</code>. the differential is then <code>(x, y) |-&gt; (0, x)</code></p>",
+        "id": 386294824,
+        "sender_full_name": "Brendan Murphy",
+        "timestamp": 1692587926
+    },
+    {
+        "content": "<p>Well, I personally have my own theoretical explanation for the Koszul convention.</p>\n<p>I don't wish to appear as though I have a one track mind, but hear me out.<br>\nFirst of all, when you say \"you have it backwards, the symmetry isomorphism determines the choice of differential on the tensor product\" I prefer to disagree. The tensor product of chain complexes is the one that makes Dold-Kan strong monoidal, because it is inherited across that equivalence from the Day convolution of simplicial Abelian groups.<br>\nThe augmented simplex category is a monoidal category, but it is not a symmetric monoidal category.<br>\nHowever,  surprisingly enough, the free Ab-enriched category <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"double-struck\">Z</mi><mo stretchy=\"false\">[</mo><mi mathvariant=\"normal\">Δ</mi><mo stretchy=\"false\">]</mo></mrow><annotation encoding=\"application/x-tex\">\\mathbb{Z}[\\Delta]</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord mathbb\">Z</span><span class=\"mopen\">[</span><span class=\"mord\">Δ</span><span class=\"mclose\">]</span></span></span></span> - which is also a monoidal category - can be equipped with a symmetry isomorphism. It is easy to see that this isomorphism is uniquely determined by the isomorphism (1 + 1) \\cong (1+1).<br>\nBy Yoneda, this passes to a symmetry on the Day convolution monoidal structure of presheaves, which is carried across the Dold-Kan correspondence, and that is how we get the symmetry convention on the tensor product.</p>",
+        "id": 386294871,
+        "sender_full_name": "Patrick Nicodemus",
+        "timestamp": 1692587951
+    },
+    {
+        "content": "<p>lmao</p>",
+        "id": 386294875,
+        "sender_full_name": "Brendan Murphy",
+        "timestamp": 1692587959
+    },
+    {
+        "content": "<p>my theoretical explanation for the symmetry isomorphism is about orientation or signs of permutations</p>",
+        "id": 386294920,
+        "sender_full_name": "Brendan Murphy",
+        "timestamp": 1692588000
+    },
+    {
+        "content": "<p>the matrix representing a swap <code>R^n x R^m -&gt; R^m x R^n</code> has determinant <code>(-1)^nm</code></p>",
+        "id": 386294988,
+        "sender_full_name": "Brendan Murphy",
+        "timestamp": 1692588022
+    },
+    {
+        "content": "<p>It is helpful here to think of a chain complex as a graded module which is a module over <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>R</mi><mo stretchy=\"false\">[</mo><mi>x</mi><mo stretchy=\"false\">]</mo><mi mathvariant=\"normal\">/</mi><mo stretchy=\"false\">(</mo><msup><mi>x</mi><mn>2</mn></msup><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">R[x]/(x^2)</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1.0641em;vertical-align:-0.25em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.00773em;\">R</span><span class=\"mopen\">[</span><span class=\"mord mathnormal\">x</span><span class=\"mclose\">]</span><span class=\"mord\">/</span><span class=\"mopen\">(</span><span class=\"mord\"><span class=\"mord mathnormal\">x</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.8141em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">2</span></span></span></span></span></span></span></span><span class=\"mclose\">)</span></span></span></span> where x is in degree -1 and <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>R</mi></mrow><annotation encoding=\"application/x-tex\">R</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.00773em;\">R</span></span></span></span> is concentrated in degree 0.</p>",
+        "id": 386294994,
+        "sender_full_name": "Patrick Nicodemus",
+        "timestamp": 1692588027
+    },
+    {
+        "content": "<p>I borrowed this helpful insight from Alexander Shmakov.<br>\nOf course, modules over a ring are monadic over Abelian groups, where the monad is <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>R</mi><mo>⊗</mo><mo>−</mo></mrow><annotation encoding=\"application/x-tex\">R\\otimes -</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.7667em;vertical-align:-0.0833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.00773em;\">R</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span><span class=\"mbin\">⊗</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6667em;vertical-align:-0.0833em;\"></span><span class=\"mord\">−</span></span></span></span>; and so I would imagine that graded algebras are monadic over graded rings.</p>",
+        "id": 386295083,
+        "sender_full_name": "Patrick Nicodemus",
+        "timestamp": 1692588092
+    },
+    {
+        "content": "<p>Anyway I think both ways of doing this will be successful. I still think doing this over Sets will give you the correct answer, as the Koszul convention is necessary to get the differential right, and the differential is determined by abstract nonsense.</p>",
+        "id": 386295480,
+        "sender_full_name": "Patrick Nicodemus",
+        "timestamp": 1692588320
+    },
+    {
+        "content": "<p>I wasn't actually intending to talk about anything DG-y in my notes but now I feel like I should work out what we're talking about...</p>",
+        "id": 386295846,
+        "sender_full_name": "Brendan Murphy",
+        "timestamp": 1692588513
+    },
+    {
+        "content": "<p>on the other hand my oral exam is in 46 days and I'm already sidetracked enough already</p>",
+        "id": 386295873,
+        "sender_full_name": "Brendan Murphy",
+        "timestamp": 1692588531
+    },
+    {
+        "content": "<p>I just need to make sure I can get the signs right in front of a blackboard</p>",
+        "id": 386295890,
+        "sender_full_name": "Brendan Murphy",
+        "timestamp": 1692588544
+    },
+    {
+        "content": "<p>I can give you a simple intuitive answer as to where the alternating signs come from \"categorically\". <br>\nThe tensor product of chain complexes is cocontinuous in both arguments. If you take some simple chain complexes like S^n concentrated in a single degree, it's not obvious how to extrapolate the sign convention, but if you care about cocontinuity then T(X)\\otimes T(Y) should be a colimit of copies of T(S^n) and T(S^m). And colimits involve gluing, and gluing in Abelian categories involves taking kernels, and that involves identifying f with <strong>negative</strong> g. <br>\nThat's where the signs come from in my perspective, the gluing/quotienting involved in forming the tensor product.</p>",
+        "id": 386296019,
+        "sender_full_name": "Patrick Nicodemus",
+        "timestamp": 1692588607
+    },
+    {
+        "content": "<p>taking cokernels?</p>",
+        "id": 386296087,
+        "sender_full_name": "Brendan Murphy",
+        "timestamp": 1692588662
+    },
+    {
+        "content": "<p>Yes. Apologies</p>",
+        "id": 386296323,
+        "sender_full_name": "Patrick Nicodemus",
+        "timestamp": 1692588787
+    },
+    {
+        "content": "<p>Actually like. If you just want to take the very simplest example:<br>\n<span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"false\">(</mo><mn>0</mn><mo>→</mo><mi mathvariant=\"double-struck\">Z</mi><mo>→</mo><mi mathvariant=\"double-struck\">Z</mi><mo>→</mo><mn>0</mn><msup><mo stretchy=\"false\">)</mo><mrow><mo>⊗</mo><mn>2</mn></mrow></msup></mrow><annotation encoding=\"application/x-tex\">(0 \\to\\mathbb{Z}\\to\\mathbb{Z}\\to 0) ^{\\otimes 2}</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mopen\">(</span><span class=\"mord\">0</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">→</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6889em;\"></span><span class=\"mord mathbb\">Z</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">→</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6889em;\"></span><span class=\"mord mathbb\">Z</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">→</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1.0641em;vertical-align:-0.25em;\"></span><span class=\"mord\">0</span><span class=\"mclose\"><span class=\"mclose\">)</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.8141em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\">⊗</span><span class=\"mord mtight\">2</span></span></span></span></span></span></span></span></span></span></span></span><br>\nconcentrated in degrees 0 and 1.<br>\nThis already has to have alternating sign conventions to get a well defined tensor product of this guy with itself</p>",
+        "id": 386296675,
+        "sender_full_name": "Patrick Nicodemus",
+        "timestamp": 1692589013
+    },
+    {
+        "content": "<p>Then by cocontinuity this determines it for all chain complexes because <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"false\">(</mo><mn>0</mn><mo>→</mo><mi mathvariant=\"double-struck\">Z</mi><mo>→</mo><mi mathvariant=\"double-struck\">Z</mi><mo>→</mo><mn>0</mn><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">(0\\to\\mathbb{Z}\\to\\mathbb{Z}\\to 0)</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mopen\">(</span><span class=\"mord\">0</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">→</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6889em;\"></span><span class=\"mord mathbb\">Z</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">→</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6889em;\"></span><span class=\"mord mathbb\">Z</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">→</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord\">0</span><span class=\"mclose\">)</span></span></span></span> and its higher tensor powers are dense in Ch(Ab) (in the Ab-enriched sense)</p>",
+        "id": 386296789,
+        "sender_full_name": "Patrick Nicodemus",
+        "timestamp": 1692589088
+    }
+]
