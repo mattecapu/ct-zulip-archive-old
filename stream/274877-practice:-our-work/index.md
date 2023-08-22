@@ -9,12 +9,12 @@ permalink: /stream/274877-practice:-our-work/index.html
 
 ### Topics:
 
+* [John Baez](topic/topic_John.20Baez.html) (1412 messages, latest: Aug 22 2023 at 11:16)
 * [Jade Master](topic/topic_Jade.20Master.html) (43 messages, latest: Aug 21 2023 at 11:14)
 * [Jean-Baptiste Vienney](topic/topic_Jean-Baptiste.20Vienney.html) (149 messages, latest: Aug 19 2023 at 22:12)
 * [Andrius Kulikauskas - classifying adjunctions](topic/topic_Andrius.20Kulikauskas.20-.20classifying.20adjunctions.html) (3 messages, latest: Aug 19 2023 at 22:04)
 * [Valeria de Paiva](topic/topic_Valeria.20de.20Paiva.html) (4 messages, latest: Aug 18 2023 at 13:55)
 * [Evan Patterson](topic/topic_Evan.20Patterson.html) (76 messages, latest: Aug 16 2023 at 14:57)
-* [John Baez](topic/topic_John.20Baez.html) (1411 messages, latest: Aug 14 2023 at 17:19)
 * [David Roberts](topic/topic_David.20Roberts.html) (72 messages, latest: Aug 10 2023 at 16:42)
 * [Jason Parker](topic/topic_Jason.20Parker.html) (4 messages, latest: Aug 10 2023 at 16:31)
 * [Chris Grossack (they/them)](topic/topic_Chris.20Grossack.20(they.2Fthem).html) (5 messages, latest: Jul 16 2023 at 21:55)
@@ -61,4 +61,4 @@ permalink: /stream/274877-practice:-our-work/index.html
 * [Conor Mc Bride](topic/topic_Conor.20Mc.20Bride.html) (60 messages, latest: Apr 08 2021 at 15:15)
 * [thoughts on sharing ideas](topic/topic_thoughts.20on.20sharing.20ideas.html) (20 messages, latest: Jan 31 2021 at 03:05)
 
-<hr><p>Last updated: Aug 21 2023 at 12:11 UTC</p>
+<hr><p>Last updated: Aug 22 2023 at 12:13 UTC</p>

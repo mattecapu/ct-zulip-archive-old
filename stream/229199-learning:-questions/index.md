@@ -9,13 +9,14 @@ permalink: /stream/229199-learning:-questions/index.html
 
 ### Topics:
 
-* [Partial sets and negatives](topic/topic_Partial.20sets.20and.20negatives.html) (6 messages, latest: Aug 19 2023 at 21:26)
+* [Partial sets and negatives](topic/topic_Partial.20sets.20and.20negatives.html) (8 messages, latest: Aug 22 2023 at 09:40)
+* [objects “are” something](topic/topic_objects.20.E2.80.9Care.E2.80.9D.20something.html) (17 messages, latest: Aug 22 2023 at 05:13)
+* [Category equivalence and equivalence classes](topic/topic_Category.20equivalence.20and.20equivalence.20classes.html) (37 messages, latest: Aug 21 2023 at 20:43)
 * [choosing all list objects in a category simulateously](topic/topic_choosing.20all.20list.20objects.20in.20a.20category.20simulateously.html) (14 messages, latest: Aug 17 2023 at 21:30)
 * [Morphisms from the monoidal unit](topic/topic_Morphisms.20from.20the.20monoidal.20unit.html) (9 messages, latest: Aug 16 2023 at 16:18)
 * [a ring as a category where the elements are objects](topic/topic_a.20ring.20as.20a.20category.20where.20the.20elements.20are.20objects.html) (5 messages, latest: Aug 15 2023 at 18:38)
 * ["Naturally occuring" braided monoidal categories](topic/topic_.22Naturally.20occuring.22.20braided.20monoidal.20categories.html) (5 messages, latest: Aug 15 2023 at 17:23)
 * [Double negation fibrewise and another modality "on the base"](topic/topic_Double.20negation.20fibrewise.20and.20another.20modality.20.22on.20the.20base.22.html) (5 messages, latest: Aug 14 2023 at 07:52)
-* [objects “are” something](topic/topic_objects.20.E2.80.9Care.E2.80.9D.20something.html) (16 messages, latest: Aug 12 2023 at 00:25)
 * [A Category for DSLs?](topic/topic_A.20Category.20for.20DSLs.3F.html) (4 messages, latest: Aug 10 2023 at 20:53)
 * [Riehl, “Category Theory in Context”.](topic/topic_Riehl.2C.20.E2.80.9CCategory.20Theory.20in.20Context.E2.80.9D.2E.html) (11 messages, latest: Aug 08 2023 at 10:57)
 * [✔ enriched semicategories](topic/topic_.E2.9C.94.20enriched.20semicategories.html) (10 messages, latest: Aug 03 2023 at 16:37)
@@ -66,7 +67,6 @@ permalink: /stream/229199-learning:-questions/index.html
 * [2 limits in 2-categories of diagrams](topic/topic_2.20limits.20in.202-categories.20of.20diagrams.html) (23 messages, latest: Jun 10 2023 at 15:32)
 * [2 limits in 2-categories of diagrams,od](topic/topic_2.20limits.20in.202-categories.20of.20diagrams.2Cod.html) (1 message, latest: Jun 09 2023 at 23:16)
 * [Connected Category](topic/topic_Connected.20Category.html) (3 messages, latest: Jun 09 2023 at 21:34)
-* [Category equivalence and equivalence classes](topic/topic_Category.20equivalence.20and.20equivalence.20classes.html) (29 messages, latest: Jun 09 2023 at 18:25)
 * [cancellation for monadic adjunctions](topic/topic_cancellation.20for.20monadic.20adjunctions.html) (6 messages, latest: Jun 06 2023 at 10:11)
 * [Azumaya algebras](topic/topic_Azumaya.20algebras.html) (357 messages, latest: Jun 04 2023 at 21:06)
 * [f(x)=x, f'=0](topic/topic_f(x).3Dx.2C.20f'.3D0.html) (20 messages, latest: Jun 03 2023 at 08:18)
@@ -952,4 +952,4 @@ permalink: /stream/229199-learning:-questions/index.html
 * [Algebra (Aluffi) exercises](topic/topic_Algebra.20(Aluffi).20exercises.html) (55 messages, latest: Mar 27 2020 at 23:38)
 * [What is category theory about?](topic/topic_What.20is.20category.20theory.20about.3F.html) (16 messages, latest: Mar 26 2020 at 16:03)
 
-<hr><p>Last updated: Aug 21 2023 at 12:11 UTC</p>
+<hr><p>Last updated: Aug 22 2023 at 12:13 UTC</p>
