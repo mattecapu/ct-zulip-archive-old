@@ -11550,6 +11550,201 @@ Password: cmsa</p>
 
 
 
+<a name="386690412"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/274877-practice%3A%20our%20work/topic/John%20Baez/near/386690412" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/274877-practice:-our-work/topic/topic_John.20Baez.html#386690412">(Aug 22 2023 at 20:51)</a>:</h4>
+<p>I wrote a blog article about the role of the group <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="double-struck">Z</mi><mi mathvariant="normal">/</mi><mn>84</mn></mrow><annotation encoding="application/x-tex">\mathbb{Z}/84</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathbb">Z</span><span class="mord">/84</span></span></span></span> in music theory:</p>
+<ul>
+<li><a href="https://johncarlosbaez.wordpress.com/2023/08/21/modes-part-8/">Modes (part 8)</a>.</li>
+</ul>
+
+
+
+<a name="386700136"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/274877-practice%3A%20our%20work/topic/John%20Baez/near/386700136" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> David Egolf <a href="https://mattecapu.github.io/ct-zulip-archive/stream/274877-practice:-our-work/topic/topic_John.20Baez.html#386700136">(Aug 22 2023 at 21:45)</a>:</h4>
+<p>As someone who plays the piano, I really enjoyed your blog post!<br>
+If I understand correctly, at least part of what you are saying is:<br>
+There are 84 modes in total, which include other scales besides major and natural minor! But we can understand where all these modes come from. In particular, two pieces of data pick out a single mode:</p>
+<ol>
+<li>The tonic of our scale (its first note). There are twelve options here (C, C#, D, D#, ..., B).</li>
+<li>Where in a sequence of 7 rising perfect fifths our tonic should be placed. There are seven options here.</li>
+</ol>
+<p>If I'm understanding this correctly, it's very cool that all these modes can be cleanly organized! It's a lot simpler than the scary Latin names led me to believe.</p>
+<p>For example, we can understand the "C major scale" as being described by these two pieces of data:</p>
+<ol>
+<li>the tonic is a C</li>
+<li>the C should occur second in our sequence of seven rising perfect fifths</li>
+</ol>
+<p>To get the C major scale from this data, we then take all the notes in our perfect fifths sequence and put them in order, with C at the start.</p>
+<p>This makes me wonder: What would happen if we used a different interval instead of perfect fiths to generate our scales? For example, what would we get if we specified a "scale" by (1) a starting note (tonic) and (2) the position of the tonic in a sequence of 7 rising major thirds? </p>
+<p>In this case, because 4 is not relatively prime to 12, I think our scale will be shorter! We would expect to get "full length" scales when generating rising interval sequences where we step up each time by 5, 7, or 11 half steps as 5,7, and 11 are relatively prime to 12. Of course, going up 7 half steps is the same as going up a perfect fifth (the case analyzed in the blog post), but maybe you can get some fun other scales using 5 or 11!</p>
+<p>For example, let's say the tonic is a C, and the C should occur second in our sequence of seven rising perfect fourths: we get G, C, F, B flat, E flat, A flat, D flat. Putting these in order, we get: C, D flat, E flat, F, G, A flat, B flat which has a fun sound to it! I think this is just an A flat major scale where we start at C, so it's not something really new, though. (Although arguably it has a different "feel" than A flat major because you emphasize the C when playing this scale, it's the "home base" of this scale). I suspect this happens in general, because going down 7 half steps is the same as going up 5 half steps, in the sense that you end up on a note with the same name. Indeed, reversing the sequence we obtained above, we get: D flat, A flat, E flat, B flat, F, C, G. So, we get all the same unique notes from going up 7 half steps or going up 5 half steps - we just might have to start at different places. Overall, I suspect going up 5 half steps at a time doesn't generate anything new relative to going up 7 half steps at a time.</p>
+<p>Going up 11 half steps will just give a portion of the chromatic scale, although potentially with a big "jump" between notes. For example, if C is our second note in our 7-note sequence where we go up by 11 half steps each time, we get: C#, C, B, B flat, A, A flat, G. Putting this in order with C at the start, we get: C, C#, G, A flat, A, B flat, B. Again, playing this in order is fun! Played dramatically, it can have a very sharp and anxious sound to it. Upon reflection, I bet one would get essentially the same thing by going up 1 half step each time, because going up 11 half steps is very similar to going down 1 half step.</p>
+
+
+
+<a name="386700907"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/274877-practice%3A%20our%20work/topic/John%20Baez/near/386700907" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> David Michael Roberts <a href="https://mattecapu.github.io/ct-zulip-archive/stream/274877-practice:-our-work/topic/topic_John.20Baez.html#386700907">(Aug 22 2023 at 21:52)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="275920">John Baez</span> <a href="#narrow/stream/274877-practice.3A-our-work/topic/John.20Baez/near/386584444">said</a>:</p>
+<blockquote>
+<p>Here's a draft of my slides:</p>
+<ul>
+<li>Two of my favorite numbers: 8 and 24.  <a href="/user_uploads/21317/Eu2cBKoQP9f90vGXiQojD3VP/8_and_24.pdf">Talk slides</a>.</li>
+</ul>
+<p>If anyone sees problems in these before August 24th, please let me know!</p>
+</blockquote>
+<p>"In 1908, Cartan showed that " Maybe specify which Cartan.</p>
+<p>The slide giving the rationale for the 24 components of the bosonic string field theory seems to be missing the word "transverse"</p>
+<p>"the motion of the string in the 24 directions to the worldsheet"</p>
+
+
+
+<a name="386723162"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/274877-practice%3A%20our%20work/topic/John%20Baez/near/386723162" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Steve Huntsman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/274877-practice:-our-work/topic/topic_John.20Baez.html#386723162">(Aug 23 2023 at 01:02)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="275920">John Baez</span> <a href="#narrow/stream/274877-practice.3A-our-work/topic/John.20Baez/near/386690412">said</a>:</p>
+<blockquote>
+<p>I wrote a blog article about the role of the group <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="double-struck">Z</mi><mi mathvariant="normal">/</mi><mn>84</mn></mrow><annotation encoding="application/x-tex">\mathbb{Z}/84</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathbb">Z</span><span class="mord">/84</span></span></span></span> in music theory:</p>
+<ul>
+<li><a href="https://johncarlosbaez.wordpress.com/2023/08/21/modes-part-8/">Modes (part 8)</a>.</li>
+</ul>
+</blockquote>
+<p>Only other place I’ve ever seen this group is in the table of homotopy groups of spheres. Fifty cents and a six pack on me to anyone who can find a connection between these appearances</p>
+
+
+
+<a name="386768607"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/274877-practice%3A%20our%20work/topic/John%20Baez/near/386768607" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/274877-practice:-our-work/topic/topic_John.20Baez.html#386768607">(Aug 23 2023 at 06:12)</a>:</h4>
+<p>Whoever figures out a serious connection between those two 84s, I'll give a lot more than fifty cents and a six pack!</p>
+
+
+
+<a name="386768707"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/274877-practice%3A%20our%20work/topic/John%20Baez/near/386768707" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/274877-practice:-our-work/topic/topic_John.20Baez.html#386768707">(Aug 23 2023 at 06:14)</a>:</h4>
+<p>Naturally as soon as I saw the 84 here I thought about Hurwitz's theorem: the symmetry group of a genus-g Riemann surface has order at most 84(g-1).  I explain that theorem <a href="http://math.ucr.edu/home/baez/42.html">here</a> - it's connected to a magical property of the regular 42-gon.</p>
+
+
+
+<a name="386768811"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/274877-practice%3A%20our%20work/topic/John%20Baez/near/386768811" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/274877-practice:-our-work/topic/topic_John.20Baez.html#386768811">(Aug 23 2023 at 06:14)</a>:</h4>
+<p>And for genus 3 we actually do get a surface with 168 symmetries, called Klein's quartic curve.</p>
+
+
+
+<a name="386769084"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/274877-practice%3A%20our%20work/topic/John%20Baez/near/386769084" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/274877-practice:-our-work/topic/topic_John.20Baez.html#386769084">(Aug 23 2023 at 06:17)</a>:</h4>
+<p>This 168-element group is <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi mathvariant="normal">P</mi><mi mathvariant="normal">S</mi><mi mathvariant="normal">L</mi></mrow><mo stretchy="false">(</mo><mn>2</mn><mo separator="true">,</mo><mi mathvariant="double-struck">Z</mi><mi mathvariant="normal">/</mi><mn>7</mn><mo stretchy="false">)</mo><mo>≅</mo><mrow><mi mathvariant="normal">G</mi><mi mathvariant="normal">L</mi></mrow><mo stretchy="false">(</mo><mn>3</mn><mo separator="true">,</mo><mi mathvariant="double-struck">Z</mi><mi mathvariant="normal">/</mi><mn>2</mn><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">\mathrm{PSL}(2, \mathbb{Z}/7) \cong \mathrm{GL}(3,\mathbb{Z}/2)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord"><span class="mord mathrm">PSL</span></span><span class="mopen">(</span><span class="mord">2</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathbb">Z</span><span class="mord">/7</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">≅</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord"><span class="mord mathrm">GL</span></span><span class="mopen">(</span><span class="mord">3</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathbb">Z</span><span class="mord">/2</span><span class="mclose">)</span></span></span></span> - there's a whole <a href="https://en.wikipedia.org/wiki/PSL(2,7)">Wikipedia article about it</a>.</p>
+
+
+
+<a name="386769286"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/274877-practice%3A%20our%20work/topic/John%20Baez/near/386769286" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/274877-practice:-our-work/topic/topic_John.20Baez.html#386769286">(Aug 23 2023 at 06:19)</a>:</h4>
+<p>It's the symmetry group of the projective plane over <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="double-struck">Z</mi><mi mathvariant="normal">/</mi><mn>2</mn></mrow><annotation encoding="application/x-tex">\mathbb{Z}/2</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathbb">Z</span><span class="mord">/2</span></span></span></span>, which has 7 elements, mildly reminiscent of the 7 notes in the major scale... but not in any useful way that I can see.</p>
+
+
+
+<a name="386769536"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/274877-practice%3A%20our%20work/topic/John%20Baez/near/386769536" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/274877-practice:-our-work/topic/topic_John.20Baez.html#386769536">(Aug 23 2023 at 06:21)</a>:</h4>
+<p>Meanwhile on my blog article I point out we get a 168-element group acting on the set of modes in all keys if you allow 'inversion' - flipping the mode upside down.   This makes it twice as big as the 84-element group where you rotate the 12-note chromatic scale and rotate the tonic around the 7 notes in your mode.</p>
+
+
+
+<a name="386769567"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/274877-practice%3A%20our%20work/topic/John%20Baez/near/386769567" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/274877-practice:-our-work/topic/topic_John.20Baez.html#386769567">(Aug 23 2023 at 06:21)</a>:</h4>
+<p>Alas, these two 168-element groups are not isomorphic!  <span aria-label="cry" class="emoji emoji-1f622" role="img" title="cry">:cry:</span></p>
+
+
+
+<a name="386769717"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/274877-practice%3A%20our%20work/topic/John%20Baez/near/386769717" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/274877-practice:-our-work/topic/topic_John.20Baez.html#386769717">(Aug 23 2023 at 06:23)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="276422">David Michael Roberts</span> <a href="#narrow/stream/274877-practice.3A-our-work/topic/John.20Baez/near/386700907">said</a>:</p>
+<blockquote>
+<p>"In 1908, Cartan showed that " Maybe specify which Cartan.</p>
+</blockquote>
+<p>Good point.  It's Elie, of course.  I've never really read his book <em>The Theory of Spinors</em>.  </p>
+<blockquote>
+<p>The slide giving the rationale for the 24 components of the bosonic string field theory seems to be missing the word "transverse"</p>
+</blockquote>
+<p>Indeed it is - thanks!</p>
+
+
+
+<a name="386771889"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/274877-practice%3A%20our%20work/topic/John%20Baez/near/386771889" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/274877-practice:-our-work/topic/topic_John.20Baez.html#386771889">(Aug 23 2023 at 06:42)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="277503">David Egolf</span> <a href="#narrow/stream/274877-practice.3A-our-work/topic/John.20Baez/near/386700136">said</a>:</p>
+<blockquote>
+<p>As someone who plays the piano, I really enjoyed your blog post!</p>
+</blockquote>
+<p>Thanks!</p>
+<blockquote>
+<p>If I understand correctly, at least part of what you are saying is:<br>
+There are 84 modes in total, which include other scales besides major and natural minor! But we can understand where all these modes come from. In particular, two pieces of data pick out a single mode:</p>
+<ol>
+<li>The tonic of our scale (its first note). There are twelve options here (C, C#, D, D#, ..., B).</li>
+<li>Where in a sequence of 7 rising perfect fifths our tonic should be placed. There are seven options here.</li>
+</ol>
+</blockquote>
+<p>Yes, that's a nice crisp description.   </p>
+<p>(By the way, there are other modes out there, like melodic and harmonic minor - here we are only talking about what people usually call "modes of the major scale".  But you knew that.)</p>
+
+
+
+<a name="386773531"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/274877-practice%3A%20our%20work/topic/John%20Baez/near/386773531" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/274877-practice:-our-work/topic/topic_John.20Baez.html#386773531">(Aug 23 2023 at 06:52)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="277503">David Egolf</span> <a href="#narrow/stream/274877-practice.3A-our-work/topic/John.20Baez/near/386700136">said</a>:</p>
+<blockquote>
+<p>If I'm understanding this correctly, it's very cool that all these modes can be cleanly organized! It's a lot simpler than the scary Latin names led me to believe.</p>
+</blockquote>
+<p>They're names of Greek tribes, by the way.   But it's not like Ionians sung songs in the Ionian mode, etc.    In fact the system of naming modes is much more recent, and it was only completed in the 1500s, by a guy named Glarean.  For some reason the major and natural minor were the last to get named after Greek tribes!  Glarean called them Ionian and Aeolian.</p>
+<blockquote>
+<p>This makes me wonder: What would happen if we used a different interval instead of perfect fiths to generate our scales? For example, what would we get if we specified a "scale" by (1) a starting note (tonic) and (2) the position of the tonic in a sequence of 7 rising major thirds? </p>
+</blockquote>
+<p>That's an interesting idea!</p>
+<blockquote>
+<p>In this case, because 4 is not relatively prime to 12, I think our scale will be shorter! </p>
+</blockquote>
+<p>Yeah, you'll get a scale with just 3 different notes, like C E Ab.     And it will be a very symmetrical scale, so the tonic doesn't stand out as sounding different from any other note, as it does in the more commonly used modes I was discussing.   The composer Messiaen liked highly symmetrical scales like this: he called them <a href="https://www.youtube.com/watch?v=nCXxV7eDEPc">modes of limited transposition</a>:</p>
+<div class="youtube-video message_inline_image"><a data-id="nCXxV7eDEPc" href="https://www.youtube.com/watch?v=nCXxV7eDEPc"><img src="https://uploads.zulipusercontent.net/310c02a5d676ff46e87591ee0f3856426edd096c/68747470733a2f2f692e7974696d672e636f6d2f76692f6e435878563765444550632f64656661756c742e6a7067"></a></div>
+
+
+
+<a name="386773865"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/274877-practice%3A%20our%20work/topic/John%20Baez/near/386773865" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/274877-practice:-our-work/topic/topic_John.20Baez.html#386773865">(Aug 23 2023 at 06:53)</a>:</h4>
+<p>The most famous one is the 'whole tone scale' where we go up a major second each time.  You may know this from Debussy or that movie cliche where they play eerie music as someone 'goes into a dream'.  The eeriness arises from the high symmetry of this mode - you can't tell what's the tonic.</p>
+
+
+
+<a name="386774330"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/274877-practice%3A%20our%20work/topic/John%20Baez/near/386774330" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/274877-practice:-our-work/topic/topic_John.20Baez.html#386774330">(Aug 23 2023 at 06:56)</a>:</h4>
+<blockquote>
+<p>We would expect to get "full length" scales when generating rising interval sequences where we step up each time by 5, 7, or 11 half steps as 5,7, and 11 are relatively prime to 12. Of course, going up 7 half steps is the same as going up a perfect fifth (the case analyzed in the blog post), but maybe you can get some fun other scales using 5 or 11!</p>
+</blockquote>
+<p>If you're going to allow 11 you should allow 1, 12 is also relatively prime to 1, and going 11 up is the same as going 1 down mod 12.</p>
+
+
+
+<a name="386774450"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/274877-practice%3A%20our%20work/topic/John%20Baez/near/386774450" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/274877-practice:-our-work/topic/topic_John.20Baez.html#386774450">(Aug 23 2023 at 06:56)</a>:</h4>
+<p>Oh, you said that later.</p>
+
+
+
+<a name="386774855"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/274877-practice%3A%20our%20work/topic/John%20Baez/near/386774855" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/274877-practice:-our-work/topic/topic_John.20Baez.html#386774855">(Aug 23 2023 at 06:58)</a>:</h4>
+<p>Similarly, going 5 up is the same as going 7 down mod 12.  So the 7-note modes you get <em>this</em> way are the same as the modes I discussed in my post.  And you said this too!</p>
+
+
+
+<a name="386776581"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/274877-practice%3A%20our%20work/topic/John%20Baez/near/386776581" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/274877-practice:-our-work/topic/topic_John.20Baez.html#386776581">(Aug 23 2023 at 07:08)</a>:</h4>
+<p>I think the scale you invented, the 7-note scale C, C#, G, Ab, A, Bb, B, is the maximally 'dark' 7-note scale.   'Dark' means that the notes are pushed down near the tonic.   This scale is so dark that I haven't seen anyone use it!</p>
+
+
+
+<a name="386777628"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/274877-practice%3A%20our%20work/topic/John%20Baez/near/386777628" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/274877-practice:-our-work/topic/topic_John.20Baez.html#386777628">(Aug 23 2023 at 07:13)</a>:</h4>
+<p>The darkest 7-note scale most people can tolerate is Phrygian.  Locrian is darker but because the 5th is flatted people consider it "unusable".   (They're just wimps of course!)</p>
+
+
+
 {% endraw %}
 
-<hr><p>Last updated: Aug 22 2023 at 12:13 UTC</p>
+<hr><p>Last updated: Aug 23 2023 at 12:10 UTC</p>

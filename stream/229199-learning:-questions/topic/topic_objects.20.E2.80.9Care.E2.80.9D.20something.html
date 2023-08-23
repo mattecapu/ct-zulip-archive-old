@@ -138,6 +138,82 @@ As far as I understand, the data describing an object in a category only has imp
 
 
 
+<a name="386613936"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/objects%20%E2%80%9Care%E2%80%9D%20something/near/386613936" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Josselin Poiret <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/topic_objects.20.E2.80.9Care.E2.80.9D.20something.html#386613936">(Aug 22 2023 at 13:52)</a>:</h4>
+<p>don't you need the category to be cartesian for groups?</p>
+
+
+
+<a name="386617979"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/objects%20%E2%80%9Care%E2%80%9D%20something/near/386617979" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Martti Karvonen <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/topic_objects.20.E2.80.9Care.E2.80.9D.20something.html#386617979">(Aug 22 2023 at 14:07)</a>:</h4>
+<p>You can capture the category of groups either as group objects in Set (a limit notion) or as Hopf algebras in Set (a monoidal notion), perhaps this was meant?</p>
+
+
+
+<a name="386701190"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/objects%20%E2%80%9Care%E2%80%9D%20something/near/386701190" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> David Michael Roberts <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/topic_objects.20.E2.80.9Care.E2.80.9D.20something.html#386701190">(Aug 22 2023 at 21:54)</a>:</h4>
+<p>A cartesian category is monoidal, though...</p>
+
+
+
+<a name="386784289"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/objects%20%E2%80%9Care%E2%80%9D%20something/near/386784289" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Josselin Poiret <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/topic_objects.20.E2.80.9Care.E2.80.9D.20something.html#386784289">(Aug 23 2023 at 07:49)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="276422">David Michael Roberts</span> <a href="#narrow/stream/229199-learning.3A-questions/topic/objects.20.E2.80.9Care.E2.80.9D.20something/near/386701190">said</a>:</p>
+<blockquote>
+<p>A cartesian category is monoidal, though...</p>
+</blockquote>
+<p>it is, but don't you need cartesianness to state that the inverse is actually an inverse? or are duplication and deletion maps preserved by monoidal functors and thus only the walking category needs to be cartesian? it'd help to have a reference on this</p>
+
+
+
+<a name="386786631"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/objects%20%E2%80%9Care%E2%80%9D%20something/near/386786631" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/topic_objects.20.E2.80.9Care.E2.80.9D.20something.html#386786631">(Aug 23 2023 at 08:05)</a>:</h4>
+<p>Monoidal functors send the duplication and deletion morphisms to <em>some</em> morphisms, of course, and these obey the same equations (duplication followed by deleting either argument is the identity).  But the best way to say this is that:</p>
+<ul>
+<li>
+<p>in a cartesian category the duplication and deletion maps make every object into a <a href="https://ncatlab.org/nlab/show/comonoid">[[comonoid]]</a>,</p>
+</li>
+<li>
+<p>in a cartesian category every object becomes a <a href="https://ncatlab.org/nlab/show/comonoid">[[comonoid]]</a> in a unique way,</p>
+</li>
+<li>
+<p>monoidal functors send comonoids to comonoids.</p>
+</li>
+</ul>
+
+
+
+<a name="386786863"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/objects%20%E2%80%9Care%E2%80%9D%20something/near/386786863" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/topic_objects.20.E2.80.9Care.E2.80.9D.20something.html#386786863">(Aug 23 2023 at 08:06)</a>:</h4>
+<p>Also, everything I said would remain true if we replaced "comonoid" by "cocommutative comonoid" and "monoidal" by "symmetric monoidal".</p>
+
+
+
+<a name="386787031"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/objects%20%E2%80%9Care%E2%80%9D%20something/near/386787031" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/topic_objects.20.E2.80.9Care.E2.80.9D.20something.html#386787031">(Aug 23 2023 at 08:07)</a>:</h4>
+<p>All this should be in the nLab under <a href="https://ncatlab.org/nlab/show/cartesian%20monoidal%20category">[[cartesian monoidal category]]</a>.</p>
+<p>But it's not... not quite.</p>
+
+
+
+<a name="386788537"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/objects%20%E2%80%9Care%E2%80%9D%20something/near/386788537" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/topic_objects.20.E2.80.9Care.E2.80.9D.20something.html#386788537">(Aug 23 2023 at 08:17)</a>:</h4>
+<p>I added some more.</p>
+
+
+
+<a name="386788833"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/objects%20%E2%80%9Care%E2%80%9D%20something/near/386788833" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/topic_objects.20.E2.80.9Care.E2.80.9D.20something.html#386788833">(Aug 23 2023 at 08:19)</a>:</h4>
+<p>To repeat what <span class="user-mention" data-user-id="277285">@Martti Karvonen</span> said: while we can define a group object in any cartesian category, we can define a <a href="https://ncatlab.org/nlab/show/Hopf%20object">[[Hopf object]]</a> in any symmetric monoidal category, and this is a very useful generalization.  Just as cartesian monoidal functors send group objects to group objects, symmetric monoidal functors send Hopf objects to Hopf objects.</p>
+
+
+
+<a name="386789172"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/objects%20%E2%80%9Care%E2%80%9D%20something/near/386789172" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/topic_objects.20.E2.80.9Care.E2.80.9D.20something.html#386789172">(Aug 23 2023 at 08:21)</a>:</h4>
+<p>For example the "free vector space on a Set" functor is symmetric monoidal from <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mrow><mi mathvariant="sans-serif">S</mi><mi mathvariant="sans-serif">e</mi><mi mathvariant="sans-serif">t</mi></mrow><mo separator="true">,</mo><mo>×</mo><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(\mathsf{Set}, \times)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord"><span class="mord mathsf">Set</span></span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">×</span><span class="mclose">)</span></span></span></span> to <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mrow><mi mathvariant="sans-serif">V</mi><mi mathvariant="sans-serif">e</mi><mi mathvariant="sans-serif">c</mi><mi mathvariant="sans-serif">t</mi></mrow><mo separator="true">,</mo><mo>⊗</mo><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(\mathsf{Vect}, \otimes)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord"><span class="mord mathsf">Vect</span></span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">⊗</span><span class="mclose">)</span></span></span></span>.   <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mrow><mi mathvariant="sans-serif">S</mi><mi mathvariant="sans-serif">e</mi><mi mathvariant="sans-serif">t</mi></mrow><mo separator="true">,</mo><mo>×</mo><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(\mathsf{Set}, \times)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord"><span class="mord mathsf">Set</span></span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">×</span><span class="mclose">)</span></span></span></span> is cartesian so you can define group objects in <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="sans-serif">S</mi><mi mathvariant="sans-serif">e</mi><mi mathvariant="sans-serif">t</mi></mrow><annotation encoding="application/x-tex">\mathsf{Set}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord"><span class="mord mathsf">Set</span></span></span></span></span>, which are just groups.  <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mrow><mi mathvariant="sans-serif">V</mi><mi mathvariant="sans-serif">e</mi><mi mathvariant="sans-serif">c</mi><mi mathvariant="sans-serif">t</mi></mrow><mo separator="true">,</mo><mo>⊗</mo><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(\mathsf{Vect}, \otimes)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord"><span class="mord mathsf">Vect</span></span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">⊗</span><span class="mclose">)</span></span></span></span> is not cartesian, but since it's symmetric monoidal you can still define Hopf objects in <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="sans-serif">V</mi><mi mathvariant="sans-serif">e</mi><mi mathvariant="sans-serif">c</mi><mi mathvariant="sans-serif">t</mi></mrow><annotation encoding="application/x-tex">\mathsf{Vect}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord"><span class="mord mathsf">Vect</span></span></span></span></span>, which are Hopf algebras.  And the "free vector space functor" sends groups to Hopf algebras!</p>
+
+
+
 {% endraw %}
 
-<hr><p>Last updated: Aug 22 2023 at 12:13 UTC</p>
+<hr><p>Last updated: Aug 23 2023 at 12:10 UTC</p>

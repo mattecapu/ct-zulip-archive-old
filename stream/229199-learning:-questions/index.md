@@ -9,13 +9,13 @@ permalink: /stream/229199-learning:-questions/index.html
 
 ### Topics:
 
+* [Category equivalence and equivalence classes](topic/topic_Category.20equivalence.20and.20equivalence.20classes.html) (59 messages, latest: Aug 23 2023 at 10:46)
+* [objects “are” something](topic/topic_objects.20.E2.80.9Care.E2.80.9D.20something.html) (27 messages, latest: Aug 23 2023 at 08:21)
+* ["Naturally occuring" braided monoidal categories](topic/topic_.22Naturally.20occuring.22.20braided.20monoidal.20categories.html) (6 messages, latest: Aug 22 2023 at 22:09)
 * [Partial sets and negatives](topic/topic_Partial.20sets.20and.20negatives.html) (8 messages, latest: Aug 22 2023 at 09:40)
-* [objects “are” something](topic/topic_objects.20.E2.80.9Care.E2.80.9D.20something.html) (17 messages, latest: Aug 22 2023 at 05:13)
-* [Category equivalence and equivalence classes](topic/topic_Category.20equivalence.20and.20equivalence.20classes.html) (37 messages, latest: Aug 21 2023 at 20:43)
 * [choosing all list objects in a category simulateously](topic/topic_choosing.20all.20list.20objects.20in.20a.20category.20simulateously.html) (14 messages, latest: Aug 17 2023 at 21:30)
 * [Morphisms from the monoidal unit](topic/topic_Morphisms.20from.20the.20monoidal.20unit.html) (9 messages, latest: Aug 16 2023 at 16:18)
 * [a ring as a category where the elements are objects](topic/topic_a.20ring.20as.20a.20category.20where.20the.20elements.20are.20objects.html) (5 messages, latest: Aug 15 2023 at 18:38)
-* ["Naturally occuring" braided monoidal categories](topic/topic_.22Naturally.20occuring.22.20braided.20monoidal.20categories.html) (5 messages, latest: Aug 15 2023 at 17:23)
 * [Double negation fibrewise and another modality "on the base"](topic/topic_Double.20negation.20fibrewise.20and.20another.20modality.20.22on.20the.20base.22.html) (5 messages, latest: Aug 14 2023 at 07:52)
 * [A Category for DSLs?](topic/topic_A.20Category.20for.20DSLs.3F.html) (4 messages, latest: Aug 10 2023 at 20:53)
 * [Riehl, “Category Theory in Context”.](topic/topic_Riehl.2C.20.E2.80.9CCategory.20Theory.20in.20Context.E2.80.9D.2E.html) (11 messages, latest: Aug 08 2023 at 10:57)
@@ -952,4 +952,4 @@ permalink: /stream/229199-learning:-questions/index.html
 * [Algebra (Aluffi) exercises](topic/topic_Algebra.20(Aluffi).20exercises.html) (55 messages, latest: Mar 27 2020 at 23:38)
 * [What is category theory about?](topic/topic_What.20is.20category.20theory.20about.3F.html) (16 messages, latest: Mar 26 2020 at 16:03)
 
-<hr><p>Last updated: Aug 22 2023 at 12:13 UTC</p>
+<hr><p>Last updated: Aug 23 2023 at 12:10 UTC</p>

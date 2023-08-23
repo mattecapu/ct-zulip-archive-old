@@ -9,7 +9,7 @@ permalink: /stream/229156-practice:-applied-ct/index.html
 
 ### Topics:
 
-* [security + ct](topic/topic_security.20.2B.20ct.html) (77 messages, latest: Aug 17 2023 at 22:04)
+* [security + ct](topic/topic_security.20.2B.20ct.html) (78 messages, latest: Aug 23 2023 at 10:26)
 * [web cats](topic/topic_web.20cats.html) (360 messages, latest: Jun 30 2023 at 09:36)
 * [HoTT GeoML](topic/topic_HoTT.20GeoML.html) (29 messages, latest: Jun 16 2023 at 22:21)
 * [Graphical language for closed monoidal categories](topic/topic_Graphical.20language.20for.20closed.20monoidal.20categories.html) (34 messages, latest: Jun 01 2023 at 14:44)
@@ -156,4 +156,4 @@ permalink: /stream/229156-practice:-applied-ct/index.html
 * [AACT2020](topic/topic_AACT2020.html) (1 message, latest: Mar 24 2020 at 00:56)
 * [welcome](topic/topic_welcome.html) (15 messages, latest: Mar 24 2020 at 00:03)
 
-<hr><p>Last updated: Aug 22 2023 at 12:13 UTC</p>
+<hr><p>Last updated: Aug 23 2023 at 12:10 UTC</p>

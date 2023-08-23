@@ -100,5 +100,65 @@
         "id": 386528792,
         "sender_full_name": "Noah Chrein",
         "timestamp": 1692681211
+    },
+    {
+        "content": "<p>don't you need the category to be cartesian for groups?</p>",
+        "id": 386613936,
+        "sender_full_name": "Josselin Poiret",
+        "timestamp": 1692712345
+    },
+    {
+        "content": "<p>You can capture the category of groups either as group objects in Set (a limit notion) or as Hopf algebras in Set (a monoidal notion), perhaps this was meant?</p>",
+        "id": 386617979,
+        "sender_full_name": "Martti Karvonen",
+        "timestamp": 1692713263
+    },
+    {
+        "content": "<p>A cartesian category is monoidal, though...</p>",
+        "id": 386701190,
+        "sender_full_name": "David Michael Roberts",
+        "timestamp": 1692741299
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276422\">David Michael Roberts</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/objects.20.E2.80.9Care.E2.80.9D.20something/near/386701190\">said</a>:</p>\n<blockquote>\n<p>A cartesian category is monoidal, though...</p>\n</blockquote>\n<p>it is, but don't you need cartesianness to state that the inverse is actually an inverse? or are duplication and deletion maps preserved by monoidal functors and thus only the walking category needs to be cartesian? it'd help to have a reference on this</p>",
+        "id": 386784289,
+        "sender_full_name": "Josselin Poiret",
+        "timestamp": 1692776947
+    },
+    {
+        "content": "<p>Monoidal functors send the duplication and deletion morphisms to <em>some</em> morphisms, of course, and these obey the same equations (duplication followed by deleting either argument is the identity).  But the best way to say this is that:</p>\n<ul>\n<li>\n<p>in a cartesian category the duplication and deletion maps make every object into a <a href=\"https://ncatlab.org/nlab/show/comonoid\">[[comonoid]]</a>,</p>\n</li>\n<li>\n<p>in a cartesian category every object becomes a <a href=\"https://ncatlab.org/nlab/show/comonoid\">[[comonoid]]</a> in a unique way,</p>\n</li>\n<li>\n<p>monoidal functors send comonoids to comonoids.</p>\n</li>\n</ul>",
+        "id": 386786631,
+        "sender_full_name": "John Baez",
+        "timestamp": 1692777923
+    },
+    {
+        "content": "<p>Also, everything I said would remain true if we replaced \"comonoid\" by \"cocommutative comonoid\" and \"monoidal\" by \"symmetric monoidal\".</p>",
+        "id": 386786863,
+        "sender_full_name": "John Baez",
+        "timestamp": 1692778008
+    },
+    {
+        "content": "<p>All this should be in the nLab under <a href=\"https://ncatlab.org/nlab/show/cartesian%20monoidal%20category\">[[cartesian monoidal category]]</a>.</p>\n<p>But it's not... not quite.</p>",
+        "id": 386787031,
+        "sender_full_name": "John Baez",
+        "timestamp": 1692778068
+    },
+    {
+        "content": "<p>I added some more.</p>",
+        "id": 386788537,
+        "sender_full_name": "John Baez",
+        "timestamp": 1692778630
+    },
+    {
+        "content": "<p>To repeat what <span class=\"user-mention\" data-user-id=\"277285\">@Martti Karvonen</span> said: while we can define a group object in any cartesian category, we can define a <a href=\"https://ncatlab.org/nlab/show/Hopf%20object\">[[Hopf object]]</a> in any symmetric monoidal category, and this is a very useful generalization.  Just as cartesian monoidal functors send group objects to group objects, symmetric monoidal functors send Hopf objects to Hopf objects.</p>",
+        "id": 386788833,
+        "sender_full_name": "John Baez",
+        "timestamp": 1692778743
+    },
+    {
+        "content": "<p>For example the \"free vector space on a Set\" functor is symmetric monoidal from <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"false\">(</mo><mrow><mi mathvariant=\"sans-serif\">S</mi><mi mathvariant=\"sans-serif\">e</mi><mi mathvariant=\"sans-serif\">t</mi></mrow><mo separator=\"true\">,</mo><mo>×</mo><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">(\\mathsf{Set}, \\times)</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mopen\">(</span><span class=\"mord\"><span class=\"mord mathsf\">Set</span></span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord\">×</span><span class=\"mclose\">)</span></span></span></span> to <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"false\">(</mo><mrow><mi mathvariant=\"sans-serif\">V</mi><mi mathvariant=\"sans-serif\">e</mi><mi mathvariant=\"sans-serif\">c</mi><mi mathvariant=\"sans-serif\">t</mi></mrow><mo separator=\"true\">,</mo><mo>⊗</mo><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">(\\mathsf{Vect}, \\otimes)</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mopen\">(</span><span class=\"mord\"><span class=\"mord mathsf\">Vect</span></span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord\">⊗</span><span class=\"mclose\">)</span></span></span></span>.   <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"false\">(</mo><mrow><mi mathvariant=\"sans-serif\">S</mi><mi mathvariant=\"sans-serif\">e</mi><mi mathvariant=\"sans-serif\">t</mi></mrow><mo separator=\"true\">,</mo><mo>×</mo><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">(\\mathsf{Set}, \\times)</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mopen\">(</span><span class=\"mord\"><span class=\"mord mathsf\">Set</span></span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord\">×</span><span class=\"mclose\">)</span></span></span></span> is cartesian so you can define group objects in <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"sans-serif\">S</mi><mi mathvariant=\"sans-serif\">e</mi><mi mathvariant=\"sans-serif\">t</mi></mrow><annotation encoding=\"application/x-tex\">\\mathsf{Set}</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6944em;\"></span><span class=\"mord\"><span class=\"mord mathsf\">Set</span></span></span></span></span>, which are just groups.  <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"false\">(</mo><mrow><mi mathvariant=\"sans-serif\">V</mi><mi mathvariant=\"sans-serif\">e</mi><mi mathvariant=\"sans-serif\">c</mi><mi mathvariant=\"sans-serif\">t</mi></mrow><mo separator=\"true\">,</mo><mo>⊗</mo><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">(\\mathsf{Vect}, \\otimes)</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mopen\">(</span><span class=\"mord\"><span class=\"mord mathsf\">Vect</span></span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord\">⊗</span><span class=\"mclose\">)</span></span></span></span> is not cartesian, but since it's symmetric monoidal you can still define Hopf objects in <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"sans-serif\">V</mi><mi mathvariant=\"sans-serif\">e</mi><mi mathvariant=\"sans-serif\">c</mi><mi mathvariant=\"sans-serif\">t</mi></mrow><annotation encoding=\"application/x-tex\">\\mathsf{Vect}</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6944em;\"></span><span class=\"mord\"><span class=\"mord mathsf\">Vect</span></span></span></span></span>, which are Hopf algebras.  And the \"free vector space functor\" sends groups to Hopf algebras!</p>",
+        "id": 386789172,
+        "sender_full_name": "John Baez",
+        "timestamp": 1692778884
     }
 ]
