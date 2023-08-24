@@ -1,0 +1,98 @@
+[
+    {
+        "content": "<p>I'm curious about how mathematicians draw commutative diagram, topology diagrams, etc in their papers.<br>\nI'm aware of tikz and tikz-cd, but for complicated diagrams it's time-consuming to draw them in tikz.<br>\nIs there an alternative to tikz that people use? I heard inkscape is a reasonable alternative.</p>",
+        "id": 386954780,
+        "sender_full_name": "Frank Tsai",
+        "timestamp": 1692826964
+    },
+    {
+        "content": "<p>There is <a href=\"https://q.uiver.app\">Quiver</a>.</p>",
+        "id": 386954931,
+        "sender_full_name": "Jean-Baptiste Vienney",
+        "timestamp": 1692827067
+    },
+    {
+        "content": "<p>It's based on tikz though apparently</p>",
+        "id": 386955153,
+        "sender_full_name": "Jean-Baptiste Vienney",
+        "timestamp": 1692827212
+    },
+    {
+        "content": "<p>I'm aware of quiver. My question was more general but I guess I just worded it poorly.</p>\n<p>Say, I want to draw a complicated topological figure, is there an alternative to tikz?</p>",
+        "id": 386955221,
+        "sender_full_name": "Frank Tsai",
+        "timestamp": 1692827265
+    },
+    {
+        "content": "<p>I've used Inkscape once upon a time; it's not bad.  But in my experience stuff drawn that way tends to look \"approximate\" whereas stuff drawn with tikz looks \"exact\" because you say say numerically exactly where you want things.  Then again I mostly draw commutative diagrams, where inexact placement of objects is very noticeable; for more flabby topological pictures maybe it matters less.</p>",
+        "id": 386964222,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1692833526
+    },
+    {
+        "content": "<p>For large commutative diagrams, <a href=\"https://tikzcd.yichuanshen.de/\">tikzcd-editor</a> can save a lot of time.</p>",
+        "id": 386964248,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1692833553
+    },
+    {
+        "content": "<p>I have recently taken to using Penrose, see e.g. <a href=\"https://penrose.cs.cmu.edu/try/?gist=255b467a7218cc5dc6e33dbb1562872c\">this example</a>. It outputs an SVG which you can include in a LaTeX file.</p>",
+        "id": 386964678,
+        "sender_full_name": "Wojciech Nawrocki",
+        "timestamp": 1692833876
+    },
+    {
+        "content": "<p>In case anyone wants a pure text option, I've been using a few custom tikz styles that use the style of tikzcd, but without being constrained to a rectangular grid.  Here's one illustrative example:<br>\n<a href=\"/user_uploads/21317/_f2xv8DqCAurjQFeMZQQd7W6/8e0bd0ce-d684-4f82-81c8-cf1448d31968.jpg\">8e0bd0ce-d684-4f82-81c8-cf1448d31968.jpg</a></p>\n<div class=\"message_inline_image\"><a href=\"/user_uploads/21317/_f2xv8DqCAurjQFeMZQQd7W6/8e0bd0ce-d684-4f82-81c8-cf1448d31968.jpg\" title=\"8e0bd0ce-d684-4f82-81c8-cf1448d31968.jpg\"><img src=\"/user_uploads/21317/_f2xv8DqCAurjQFeMZQQd7W6/8e0bd0ce-d684-4f82-81c8-cf1448d31968.jpg\"></a></div>",
+        "id": 386965211,
+        "sender_full_name": "Niles Johnson",
+        "timestamp": 1692834260
+    },
+    {
+        "content": "<p>this is from the \"advanced\" part of a latex starter repository I made for some students a few years ago:</p>\n<p><a href=\"https://gitlab.com/nilesjohnson/latex_starter/-/tree/master/advanced\">https://gitlab.com/nilesjohnson/latex_starter/-/tree/master/advanced</a></p>\n<p>I've tweaked things a bit more since then, but I haven't bothered to update the repository.  If anyone is interested, any of my recent arxiv posts would have the source, and I'm happy to discuss further.</p>",
+        "id": 386965399,
+        "sender_full_name": "Niles Johnson",
+        "timestamp": 1692834404
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276777\">Mike Shulman</span> <a href=\"#narrow/stream/266967-general.3A-mathematics/topic/How.20to.20draw.20a.20diagram.20in.20LaTeX/near/386964248\">said</a>:</p>\n<blockquote>\n<p>For large commutative diagrams, <a href=\"https://tikzcd.yichuanshen.de/\">tikzcd-editor</a> can save a lot of time.</p>\n</blockquote>\n<p>Out of curiosity, do you suggest tikzcd-editor because you find it does a better job than <a href=\"https://q.uiver.app/\">quiver</a>? (I ask because, if there are shortcomings with <strong>quiver</strong> that are stopping people using it, I'd like to address them.)</p>",
+        "id": 386967683,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1692836301
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276092\">Nathanael Arkor</span> <a href=\"#narrow/stream/266967-general.3A-mathematics/topic/How.20to.20draw.20a.20diagram.20in.20LaTeX/near/386967683\">said</a>:</p>\n<blockquote>\n<p><span class=\"user-mention silent\" data-user-id=\"276777\">Mike Shulman</span> <a href=\"#narrow/stream/266967-general.3A-mathematics/topic/How.20to.20draw.20a.20diagram.20in.20LaTeX/near/386964248\">said</a>:</p>\n<blockquote>\n<p>For large commutative diagrams, <a href=\"https://tikzcd.yichuanshen.de/\">tikzcd-editor</a> can save a lot of time.</p>\n</blockquote>\n<p>Out of curiosity, do you suggest tikzcd-editor because you find it does a better job than <a href=\"https://q.uiver.app/\">quiver</a>? (I ask because, if there are shortcomings with <strong>quiver</strong> that are stopping people using it, I'd like to address them.)</p>\n</blockquote>\n<p>One shortcoming I noticed is there doesn't appear to be a way to get a reflexive arrow (where source = target)?</p>",
+        "id": 386970822,
+        "sender_full_name": "Naso",
+        "timestamp": 1692839204
+    },
+    {
+        "content": "<p>Hmm, I think I just never got around to trying quiver and updating my bookmarks.  On a quick glance, the only feature that's obviously (apparently) missing is loops, as Naso mentioned.  Apparently you have to use a dedicated LaTeX style file too?  That's a trifle annoying but I suppose not too big a deal; it looks like it just defines some tikz styles.</p>",
+        "id": 386971731,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1692839990
+    },
+    {
+        "content": "<p>I've always used xypic to draw commutative diagrams. For small and simple diagrams it's very reasonable to use. For large complex diagrams ... just a bit more patience is needed.</p>",
+        "id": 386971736,
+        "sender_full_name": "David Michael Roberts",
+        "timestamp": 1692839995
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276350\">Naso</span> <a href=\"#narrow/stream/266967-general.3A-mathematics/topic/How.20to.20draw.20a.20diagram.20in.20LaTeX/near/386970822\">said</a>:</p>\n<blockquote>\n<p>One shortcoming I noticed is there doesn't appear to be a way to get a reflexive arrow (where source = target)?</p>\n</blockquote>\n<p>This is the main feature that tikzcd-editor has that <strong>quiver</strong> doesn't, yes. I'd be interested to know if that's what would hold people back from using it.</p>",
+        "id": 387027594,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1692868642
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276777\">Mike Shulman</span> <a href=\"#narrow/stream/266967-general.3A-mathematics/topic/How.20to.20draw.20a.20diagram.20in.20LaTeX/near/386971731\">said</a>:</p>\n<blockquote>\n<p>Apparently you have to use a dedicated LaTeX style file too?  That's a trifle annoying but I suppose not too big a deal; it looks like it just defines some tikz styles.</p>\n</blockquote>\n<p>On this point, the package (which defines some useful TikZ styles) was recently added to CTAN, so it should be possible simply to <code>\\usepackage{quiver}</code> as soon as the package is added to TeXLive :)</p>",
+        "id": 387028966,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1692869021
+    },
+    {
+        "content": "<p>Actually, I just saw that it's already available with TeXLive, so this is possible now.</p>",
+        "id": 387032518,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1692870216
+    }
+]
