@@ -10,7 +10,7 @@ permalink: /index.html
 
 * [learning: questions](stream/229199-learning:-questions/index.html) (942 topics)
 
-* [theory: category theory](stream/229136-theory:-category-theory/index.html) (444 topics)
+* [theory: category theory](stream/229136-theory:-category-theory/index.html) (445 topics)
 
 * [general](stream/229111-general/index.html) (265 topics)
 
@@ -48,9 +48,9 @@ permalink: /index.html
 
 * [seminar: MIT Categories Seminar](stream/229457-seminar:-MIT-Categories-Seminar/index.html) (41 topics)
 
-* [theory: probability](stream/253118-theory:-probability/index.html) (37 topics)
+* [learning: id my structure](stream/311521-learning:-id-my-structure/index.html) (37 topics)
 
-* [learning: id my structure](stream/311521-learning:-id-my-structure/index.html) (36 topics)
+* [theory: probability](stream/253118-theory:-probability/index.html) (37 topics)
 
 * [Categorical Probability and Statistics 2020 workshop](stream/238032-Categorical-Probability-and-Statistics-2020-workshop/index.html) (34 topics)
 
@@ -70,7 +70,7 @@ permalink: /index.html
 
 * [philosophy](stream/229134-philosophy/index.html) (21 topics)
 
-* [theory: physics](stream/251538-theory:-physics/index.html) (20 topics)
+* [theory: physics](stream/251538-theory:-physics/index.html) (21 topics)
 
 * [workshop: Categories for AI](stream/347879-workshop:-Categories-for-AI/index.html) (20 topics)
 
@@ -184,4 +184,4 @@ permalink: /index.html
 
 * [theory: alternate presentations](stream/233122-theory:-alternate-presentations/index.html) (1 topic)
 
-<hr><p>Last updated: Aug 24 2023 at 12:11 UTC</p>
+<hr><p>Last updated: Aug 25 2023 at 12:10 UTC</p>

@@ -9,6 +9,7 @@ permalink: /stream/251538-theory:-physics/index.html
 
 ### Topics:
 
+* [A quick question on QM + SR](topic/topic_A.20quick.20question.20on.20QM.20.2B.20SR.html) (3 messages, latest: Aug 25 2023 at 07:14)
 * [ZX-calculus for category theorists](topic/topic_ZX-calculus.20for.20category.20theorists.html) (26 messages, latest: Jul 23 2023 at 17:34)
 * [densely defined operators in quantum mechanics](topic/topic_densely.20defined.20operators.20in.20quantum.20mechanics.html) (23 messages, latest: Mar 06 2023 at 18:22)
 * [Topological QFT on orbifolds?](topic/topic_Topological.20QFT.20on.20orbifolds.3F.html) (8 messages, latest: Feb 08 2023 at 02:02)
@@ -30,4 +31,4 @@ permalink: /stream/251538-theory:-physics/index.html
 * [CFT and Elliptic Cohomology for Physicists](topic/topic_CFT.20and.20Elliptic.20Cohomology.20for.20Physicists.html) (12 messages, latest: Oct 26 2020 at 15:45)
 * [open systems in classical mechanics](topic/topic_open.20systems.20in.20classical.20mechanics.html) (17 messages, latest: Oct 20 2020 at 00:05)
 
-<hr><p>Last updated: Aug 24 2023 at 12:11 UTC</p>
+<hr><p>Last updated: Aug 25 2023 at 12:10 UTC</p>

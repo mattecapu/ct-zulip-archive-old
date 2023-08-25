@@ -9,6 +9,7 @@ permalink: /stream/229136-theory:-category-theory/index.html
 
 ### Topics:
 
+* [reflecting structure](topic/topic_reflecting.20structure.html) (2 messages, latest: Aug 25 2023 at 10:25)
 * [Splitting an idempotent to quotient a monad](topic/topic_Splitting.20an.20idempotent.20to.20quotient.20a.20monad.html) (193 messages, latest: Aug 24 2023 at 11:52)
 * [Categorical models for abstract symbols](topic/topic_Categorical.20models.20for.20abstract.20symbols.html) (9 messages, latest: Aug 24 2023 at 03:00)
 * [Easily checking that a category is enriched](topic/topic_Easily.20checking.20that.20a.20category.20is.20enriched.html) (47 messages, latest: Aug 21 2023 at 12:23)
@@ -454,4 +455,4 @@ permalink: /stream/229136-theory:-category-theory/index.html
 * [diagrams for application](topic/topic_diagrams.20for.20application.html) (13 messages, latest: Mar 24 2020 at 06:19)
 * [universal constructions](topic/topic_universal.20constructions.html) (8 messages, latest: Mar 23 2020 at 21:06)
 
-<hr><p>Last updated: Aug 24 2023 at 12:11 UTC</p>
+<hr><p>Last updated: Aug 25 2023 at 12:10 UTC</p>
