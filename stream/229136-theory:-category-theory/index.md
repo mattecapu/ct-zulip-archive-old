@@ -9,10 +9,11 @@ permalink: /stream/229136-theory:-category-theory/index.html
 
 ### Topics:
 
-* [Splitting an idempotent to quotient a monad](topic/topic_Splitting.20an.20idempotent.20to.20quotient.20a.20monad.html) (202 messages, latest: Aug 26 2023 at 02:15)
+* [Categorical models for abstract symbols](topic/topic_Categorical.20models.20for.20abstract.20symbols.html) (11 messages, latest: Aug 27 2023 at 02:46)
+* [Fibrations of multicategories](topic/topic_Fibrations.20of.20multicategories.html) (1 message, latest: Aug 26 2023 at 21:57)
+* [Splitting an idempotent to quotient a monad](topic/topic_Splitting.20an.20idempotent.20to.20quotient.20a.20monad.html) (203 messages, latest: Aug 26 2023 at 17:11)
 * [reflecting structure](topic/topic_reflecting.20structure.html) (5 messages, latest: Aug 25 2023 at 20:26)
 * [isocofibrations lifting property](topic/topic_isocofibrations.20lifting.20property.html) (2 messages, latest: Aug 25 2023 at 20:12)
-* [Categorical models for abstract symbols](topic/topic_Categorical.20models.20for.20abstract.20symbols.html) (9 messages, latest: Aug 24 2023 at 03:00)
 * [Easily checking that a category is enriched](topic/topic_Easily.20checking.20that.20a.20category.20is.20enriched.html) (47 messages, latest: Aug 21 2023 at 12:23)
 * [✔ Are topological groupoids a topological concrete category?](topic/topic_.E2.9C.94.20Are.20topological.20groupoids.20a.20topological.20concrete.20category.3F.html) (3 messages, latest: Aug 20 2023 at 02:17)
 * [loose exponentials](topic/topic_loose.20exponentials.html) (14 messages, latest: Aug 18 2023 at 18:23)
@@ -456,4 +457,4 @@ permalink: /stream/229136-theory:-category-theory/index.html
 * [diagrams for application](topic/topic_diagrams.20for.20application.html) (13 messages, latest: Mar 24 2020 at 06:19)
 * [universal constructions](topic/topic_universal.20constructions.html) (8 messages, latest: Mar 23 2020 at 21:06)
 
-<hr><p>Last updated: Aug 26 2023 at 12:09 UTC</p>
+<hr><p>Last updated: Aug 27 2023 at 12:11 UTC</p>
