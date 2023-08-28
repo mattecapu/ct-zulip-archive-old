@@ -9,6 +9,7 @@ permalink: /stream/258900-practice:-our-papers/index.html
 
 ### Topics:
 
+* [Operational Transform via Category Theory](topic/topic_Operational.20Transform.20via.20Category.20Theory.html) (1 message, latest: Aug 28 2023 at 09:12)
 * [Trace models of concurrent valuation algebras](topic/topic_Trace.20models.20of.20concurrent.20valuation.20algebras.html) (1 message, latest: Aug 22 2023 at 04:21)
 * [Thesis: The Functional Machine Calculus](topic/topic_Thesis.3A.20The.20Functional.20Machine.20Calculus.html) (1 message, latest: Aug 13 2023 at 09:57)
 * [Derived Braids of Decreasing Products and their Categories](topic/topic_Derived.20Braids.20of.20Decreasing.20Products.20and.20their.20Categories.html) (1 message, latest: Aug 08 2023 at 05:16)
@@ -78,4 +79,4 @@ permalink: /stream/258900-practice:-our-papers/index.html
 * [Functorial semantics for partial theories](topic/topic_Functorial.20semantics.20for.20partial.20theories.html) (30 messages, latest: Nov 29 2020 at 08:46)
 * [Coends of higher arity](topic/topic_Coends.20of.20higher.20arity.html) (3 messages, latest: Sep 26 2020 at 16:28)
 
-<hr><p>Last updated: Aug 27 2023 at 12:11 UTC</p>
+<hr><p>Last updated: Aug 28 2023 at 12:09 UTC</p>

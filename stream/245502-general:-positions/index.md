@@ -9,6 +9,7 @@ permalink: /stream/245502-general:-positions/index.html
 
 ### Topics:
 
+* [Postdoc positions in Quantum Programming in Edinburgh](topic/topic_Postdoc.20positions.20in.20Quantum.20Programming.20in.20Edinburgh.html) (1 message, latest: Aug 28 2023 at 11:08)
 * [PhD Position in Higher-Order Mathematical Operational S...](topic/topic_PhD.20Position.20in.20Higher-Order.20Mathematical.20Operational.20S.2E.2E.2E.html) (4 messages, latest: Aug 12 2023 at 09:10)
 * [Postdoc position, Logic and Semantics Group in Tallinn](topic/topic_Postdoc.20position.2C.20Logic.20and.20Semantics.20Group.20in.20Tallinn.html) (1 message, latest: Aug 11 2023 at 09:59)
 * [PhD position in Gothenburg](topic/topic_PhD.20position.20in.20Gothenburg.html) (1 message, latest: Jul 17 2023 at 00:06)
@@ -89,4 +90,4 @@ permalink: /stream/245502-general:-positions/index.html
 * [PhD positions in Estonia](topic/topic_PhD.20positions.20in.20Estonia.html) (1 message, latest: Jun 27 2020 at 18:04)
 * [Companies that hire category people](topic/topic_Companies.20that.20hire.20category.20people.html) (2 messages, latest: May 13 2020 at 03:50)
 
-<hr><p>Last updated: Aug 27 2023 at 12:11 UTC</p>
+<hr><p>Last updated: Aug 28 2023 at 12:09 UTC</p>

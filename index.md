@@ -22,11 +22,11 @@ permalink: /index.html
 
 * [theory: topos theory](stream/230087-theory:-topos-theory/index.html) (85 topics)
 
-* [general: positions](stream/245502-general:-positions/index.html) (79 topics)
+* [general: positions](stream/245502-general:-positions/index.html) (80 topics)
 
 * [theory: algebraic topology & homological algebra](stream/241590-theory:-algebraic-topology-&-homological-algebra/index.html) (73 topics)
 
-* [practice: our papers](stream/258900-practice:-our-papers/index.html) (68 topics)
+* [practice: our papers](stream/258900-practice:-our-papers/index.html) (69 topics)
 
 * [seminar: Topos Colloquium](stream/269484-seminar:-Topos-Colloquium/index.html) (64 topics)
 
@@ -48,7 +48,7 @@ permalink: /index.html
 
 * [seminar: MIT Categories Seminar](stream/229457-seminar:-MIT-Categories-Seminar/index.html) (41 topics)
 
-* [learning: id my structure](stream/311521-learning:-id-my-structure/index.html) (37 topics)
+* [learning: id my structure](stream/311521-learning:-id-my-structure/index.html) (38 topics)
 
 * [theory: probability](stream/253118-theory:-probability/index.html) (37 topics)
 
@@ -76,9 +76,9 @@ permalink: /index.html
 
 * [conference: ACT22](stream/330541-conference:-ACT22/index.html) (19 topics)
 
-* [practice: chemistry](stream/322714-practice:-chemistry/index.html) (17 topics)
+* [practice: communication](stream/233322-practice:-communication/index.html) (18 topics)
 
-* [practice: communication](stream/233322-practice:-communication/index.html) (17 topics)
+* [practice: chemistry](stream/322714-practice:-chemistry/index.html) (17 topics)
 
 * [theory: algebraic geometry](stream/231112-theory:-algebraic-geometry/index.html) (17 topics)
 
@@ -98,13 +98,13 @@ permalink: /index.html
 
 * [practice: translation](stream/260000-practice:-translation/index.html) (11 topics)
 
+* [theory: algebra & CT](stream/230123-theory:-algebra-&-CT/index.html) (11 topics)
+
+* [theory: concurrency](stream/235484-theory:-concurrency/index.html) (11 topics)
+
 * [practice: ACT wiki](stream/243548-practice:-ACT-wiki/index.html) (10 topics)
 
 * [practice: economics](stream/231468-practice:-economics/index.html) (10 topics)
-
-* [theory: algebra & CT](stream/230123-theory:-algebra-&-CT/index.html) (10 topics)
-
-* [theory: concurrency](stream/235484-theory:-concurrency/index.html) (10 topics)
 
 * [conference: CT20->21](stream/298844-conference:-CT20->21/index.html) (9 topics)
 
@@ -184,4 +184,4 @@ permalink: /index.html
 
 * [theory: alternate presentations](stream/233122-theory:-alternate-presentations/index.html) (1 topic)
 
-<hr><p>Last updated: Aug 27 2023 at 12:11 UTC</p>
+<hr><p>Last updated: Aug 28 2023 at 12:09 UTC</p>
