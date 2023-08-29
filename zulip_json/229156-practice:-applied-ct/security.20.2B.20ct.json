@@ -466,5 +466,35 @@
         "id": 386810655,
         "sender_full_name": "Henry Story",
         "timestamp": 1692786361
+    },
+    {
+        "content": "<p>I think I worked out what the main logical problem with W3C Verifiable Credentials is in <a href=\"https://github.com/w3c/vc-data-model/issues/1248#issuecomment-1693975080\">this longer comment</a>.<br>\nEssentially they are modelling a verifiable credential wrongly. This does not matter so long as people are only using the VCs syntactically in JSON, but becomes noticeable as soon as the mapping to RDF is made (ie to the positive part of First order logic -  regular logic using <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>∧</mo><mo separator=\"true\">,</mo><mi mathvariant=\"normal\">⊤</mi><mo separator=\"true\">,</mo><mi mathvariant=\"normal\">∃</mi></mrow><annotation encoding=\"application/x-tex\"> \\land , \\top, \\exists </annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8889em;vertical-align:-0.1944em;\"></span><span class=\"mord\">∧</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord\">⊤</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord\">∃</span></span></span></span> . So this is how they model a Credential <br>\n<a href=\"/user_uploads/21317/F7MdjvcTDqw_Q5Aq6lQYqp1Z/image.png\">Current model of a VC</a><br>\nBizarrely the signature is placed in a node, but the graph to be signed is outside,  so one cannot tell what is being signed!<br>\n(The node colors are arbitrary btw - and are just there as reminders of colors used in Figure 6 of the spec). The only things that matter are where the graphs are located: on the default surface or on a surface in a node of the default graph - eg. the green surface here.)</p>\n<div class=\"message_inline_image\"><a href=\"/user_uploads/21317/F7MdjvcTDqw_Q5Aq6lQYqp1Z/image.png\" title=\"Current model of a VC\"><img src=\"/user_uploads/21317/F7MdjvcTDqw_Q5Aq6lQYqp1Z/image.png\"></a></div>",
+        "id": 387834110,
+        "sender_full_name": "Henry Story",
+        "timestamp": 1693298507
+    },
+    {
+        "content": "<p>The graph above is logically equivalent to the following (among many others), where an <code>owl:sameAs</code> relation goes from one arbitrarily chosen node to itself. Many other such graphs could be produced. In any of such graphs it would be impossible to guess what the signatures was a signature of.<br>\n<a href=\"/user_uploads/21317/y9VzRZsKrUjbeTBQYskXE3Ya/image.png\">image.png</a></p>\n<div class=\"message_inline_image\"><a href=\"/user_uploads/21317/y9VzRZsKrUjbeTBQYskXE3Ya/image.png\" title=\"image.png\"><img src=\"/user_uploads/21317/y9VzRZsKrUjbeTBQYskXE3Ya/image.png\"></a></div>",
+        "id": 387834579,
+        "sender_full_name": "Henry Story",
+        "timestamp": 1693298666
+    },
+    {
+        "content": "<p>The answer is obvious and easy: place the objects to be signed inside a node (the square ping surface below) so that the signed graph is closed.<br>\n<a href=\"/user_uploads/21317/baHtF2TSSW2ZfgyI9pWtGIH6/image.png\">image.png</a>. Then all those problems disappear.</p>\n<div class=\"message_inline_image\"><a href=\"/user_uploads/21317/baHtF2TSSW2ZfgyI9pWtGIH6/image.png\" title=\"image.png\"><img src=\"/user_uploads/21317/baHtF2TSSW2ZfgyI9pWtGIH6/image.png\"></a></div>",
+        "id": 387834904,
+        "sender_full_name": "Henry Story",
+        "timestamp": 1693298788
+    },
+    {
+        "content": "<p>You'd think that having shown the problem, adoption of the solution would follow (or at least discussion of other possible ones). But the authors have a view that the charter forced them to produce <a href=\"https://github.com/w3c/vc-data-model/issues/1248#issuecomment-1696207997\">illogical standards</a> even though they can't find text where it is said! <br>\nSigh!</p>",
+        "id": 387835685,
+        "sender_full_name": "Henry Story",
+        "timestamp": 1693299095
+    },
+    {
+        "content": "<p>I can't imagine architects building high rises and pushing mathematics aside as unimportant or just too theoretical. Yet we have this type of people on the web standards groups. My hypothesis is that they came to think that everything is a matter of convention, of majority voting, and then forget that mathematical structures underlie and precede the structures of what they are trying to build and those are not reached by agreement.</p>",
+        "id": 387837299,
+        "sender_full_name": "Henry Story",
+        "timestamp": 1693299665
     }
 ]

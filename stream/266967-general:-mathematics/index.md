@@ -9,8 +9,9 @@ permalink: /stream/266967-general:-mathematics/index.html
 
 ### Topics:
 
-* [etale maps of rings](topic/topic_etale.20maps.20of.20rings.html) (49 messages, latest: Aug 28 2023 at 07:25)
-* [How to draw a diagram in LaTeX](topic/topic_How.20to.20draw.20a.20diagram.20in.20LaTeX.html) (27 messages, latest: Aug 26 2023 at 22:25)
+* [magmas and set actions](topic/topic_magmas.20and.20set.20actions.html) (11 messages, latest: Aug 29 2023 at 08:13)
+* [How to draw a diagram in LaTeX](topic/topic_How.20to.20draw.20a.20diagram.20in.20LaTeX.html) (28 messages, latest: Aug 29 2023 at 08:13)
+* [etale maps of rings](topic/topic_etale.20maps.20of.20rings.html) (51 messages, latest: Aug 28 2023 at 22:39)
 * [arbitrary intersections and Set](topic/topic_arbitrary.20intersections.20and.20Set.html) (14 messages, latest: Aug 18 2023 at 15:34)
 * [categories.pi-base.org](topic/topic_categories.2Epi-base.2Eorg.html) (4 messages, latest: Aug 06 2023 at 19:57)
 * ["defective" monoidal categories](topic/topic_.22defective.22.20monoidal.20categories.html) (10 messages, latest: Jul 31 2023 at 23:45)
@@ -123,4 +124,4 @@ permalink: /stream/266967-general:-mathematics/index.html
 * [the 600-cell](topic/topic_the.20600-cell.html) (5 messages, latest: Dec 01 2020 at 16:35)
 * [hermitian matrix over normed division algebra](topic/topic_hermitian.20matrix.20over.20normed.20division.20algebra.html) (8 messages, latest: Sep 28 2020 at 21:19)
 
-<hr><p>Last updated: Aug 28 2023 at 12:09 UTC</p>
+<hr><p>Last updated: Aug 29 2023 at 12:10 UTC</p>
