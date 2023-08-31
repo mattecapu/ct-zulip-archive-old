@@ -9,8 +9,8 @@ permalink: /stream/233322-practice:-communication/index.html
 
 ### Topics:
 
-* [CT jargon](topic/topic_CT.20jargon.html) (9 messages, latest: Aug 30 2023 at 11:16)
-* [CT representation online](topic/topic_CT.20representation.20online.html) (98 messages, latest: Aug 29 2023 at 23:31)
+* [CT jargon](topic/topic_CT.20jargon.html) (18 messages, latest: Aug 31 2023 at 09:26)
+* [CT representation online](topic/topic_CT.20representation.20online.html) (99 messages, latest: Aug 31 2023 at 06:51)
 * [CT people on Mastodon?](topic/topic_CT.20people.20on.20Mastodon.3F.html) (6 messages, latest: Aug 26 2022 at 13:13)
 * [teaching children](topic/topic_teaching.20children.html) (27 messages, latest: Jul 25 2021 at 12:28)
 * [nickname for this forum](topic/topic_nickname.20for.20this.20forum.html) (7 messages, latest: May 09 2021 at 20:21)
@@ -29,4 +29,4 @@ permalink: /stream/233322-practice:-communication/index.html
 * [going rogue: the personal math website](topic/topic_going.20rogue.3A.20the.20personal.20math.20website.html) (1 message, latest: Apr 21 2020 at 05:12)
 * [Funding the revolution](topic/topic_Funding.20the.20revolution.html) (6 messages, latest: Apr 16 2020 at 16:37)
 
-<hr><p>Last updated: Aug 30 2023 at 12:10 UTC</p>
+<hr><p>Last updated: Aug 31 2023 at 12:10 UTC</p>
