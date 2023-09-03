@@ -1,0 +1,31 @@
+---
+layout: archive
+title: Zulip Chat Archive
+permalink: /stream/266967-general:-mathematics/topic/topic_characters.20of.20finite.20group.20representations.html
+---
+
+<h2>Stream: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/266967-general:-mathematics/index.html">general: mathematics</a></h2>
+<h3>Topic: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/266967-general:-mathematics/topic/topic_characters.20of.20finite.20group.20representations.html">characters of finite group representations</a></h3>
+
+<hr>
+
+<base href="https://categorytheory.zulipchat.com/">
+
+{% raw %}
+
+<a name="388805205"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/266967-general%3A%20mathematics/topic/characters%20of%20finite%20group%20representations/near/388805205" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/266967-general:-mathematics/topic/topic_characters.20of.20finite.20group.20representations.html#388805205">(Sep 03 2023 at 09:45)</a>:</h4>
+<p><span class="user-mention" data-user-id="277611">@Todd Trimble</span> recently told me a slick proof of a cool fact he learned from Charles Rezk on <a href="https://mathoverflow.net/questions/10635/why-are-the-characters-of-the-symmetric-group-integer-valued">MathOverflow</a>.</p>
+<p>First a warmup fact.  Suppose ρ is a representation of a group G on a finite-dimensional complex vector space.   If g ∈ G then tr(ρ(g)) is a finite sum of nth roots of unity, where n is the order of g: that is, the smallest integer n &gt; 0 with 𝑔ⁿ = 1.</p>
+<p>Why?  Well, we have ρ(g)ⁿ  = 1.  You can always diagonalize a complex matrix whose nth power is 1.   (See why?)   So do that.  Then its diagonal entries have to be nth roots of unity.    So tr(ρ(g)) is a sum of nth roots of unity.</p>
+<p>Now for the cool part.  If G is a symmetric group, then tr(ρ(g)) is an integer!   </p>
+<p>This is harder, but still quick.  Let F be the field consisting of all rational linear combinations of nth roots of unity.  If k is relatively prime to n there's an automorphism of F sending each nth root of unity to its kth power.   Applying this automorphism to the entries of our diagonalized matrix ρ(g) we get the matrix ρ(g)ᵏ.</p>
+<p>But for a permutation with gⁿ = 1, gᵏ has the same cycle structure as g whenever k is relatively prime to n.  (Draw some examples).  So gᵏ is conjugate to g.    So ρ(g)ᵏ is conjugate to ρ(g).  But the trace of a matrix doesn't change when you conjugate that matrix by something, so tr(ρ(g)ᵏ) = tr(ρ(g)).</p>
+<p>We've learned that tr(ρ(g)) is a sum of nth roots of unity, but it also doesn't change when we apply the automorphism of F sending any nth root of unity to its kth power, whenever k is relatively prime to n.   By some Galois theory, this forces tr(ρ(g)) to be an integer!  </p>
+<p>(Charles Rezk said this much faster since he assumed you know all the background.  I've tried to minimize the amount of jargon.  But we still need some Galois theory at the end - basically, the only algebraic integers in F invariant under the Galois group of F over ℚ are ordinary integers.  Maybe there's some easy way to see this fact in the special case at hand.)</p>
+
+
+
+{% endraw %}
+
+<hr><p>Last updated: Sep 03 2023 at 12:09 UTC</p>

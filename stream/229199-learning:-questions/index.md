@@ -9,8 +9,9 @@ permalink: /stream/229199-learning:-questions/index.html
 
 ### Topics:
 
+* [A Category for DSLs?](topic/topic_A.20Category.20for.20DSLs.3F.html) (6 messages, latest: Sep 03 2023 at 08:04)
+* [Choosing a vector space basis; choosing a coproduct](topic/topic_Choosing.20a.20vector.20space.20basis.3B.20choosing.20a.20coproduct.html) (13 messages, latest: Sep 02 2023 at 21:59)
 * [Universal property of the reals as a preorder](topic/topic_Universal.20property.20of.20the.20reals.20as.20a.20preorder.html) (20 messages, latest: Sep 01 2023 at 16:45)
-* [A Category for DSLs?](topic/topic_A.20Category.20for.20DSLs.3F.html) (5 messages, latest: Aug 31 2023 at 20:00)
 * [Partial sets and negatives](topic/topic_Partial.20sets.20and.20negatives.html) (9 messages, latest: Aug 29 2023 at 07:48)
 * [objects “are” something](topic/topic_objects.20.E2.80.9Care.E2.80.9D.20something.html) (37 messages, latest: Aug 24 2023 at 07:20)
 * [Category equivalence and equivalence classes](topic/topic_Category.20equivalence.20and.20equivalence.20classes.html) (61 messages, latest: Aug 23 2023 at 18:45)
@@ -953,4 +954,4 @@ permalink: /stream/229199-learning:-questions/index.html
 * [Algebra (Aluffi) exercises](topic/topic_Algebra.20(Aluffi).20exercises.html) (55 messages, latest: Mar 27 2020 at 23:38)
 * [What is category theory about?](topic/topic_What.20is.20category.20theory.20about.3F.html) (16 messages, latest: Mar 26 2020 at 16:03)
 
-<hr><p>Last updated: Sep 02 2023 at 12:09 UTC</p>
+<hr><p>Last updated: Sep 03 2023 at 12:09 UTC</p>

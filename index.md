@@ -8,7 +8,7 @@ permalink: /index.html
 
 ## Streams:
 
-* [learning: questions](stream/229199-learning:-questions/index.html) (943 topics)
+* [learning: questions](stream/229199-learning:-questions/index.html) (944 topics)
 
 * [theory: category theory](stream/229136-theory:-category-theory/index.html) (447 topics)
 
@@ -18,7 +18,7 @@ permalink: /index.html
 
 * [practice: applied ct](stream/229156-practice:-applied-ct/index.html) (146 topics)
 
-* [general: mathematics](stream/266967-general:-mathematics/index.html) (116 topics)
+* [general: mathematics](stream/266967-general:-mathematics/index.html) (117 topics)
 
 * [theory: topos theory](stream/230087-theory:-topos-theory/index.html) (85 topics)
 
@@ -48,7 +48,7 @@ permalink: /index.html
 
 * [seminar: MIT Categories Seminar](stream/229457-seminar:-MIT-Categories-Seminar/index.html) (41 topics)
 
-* [learning: id my structure](stream/311521-learning:-id-my-structure/index.html) (38 topics)
+* [learning: id my structure](stream/311521-learning:-id-my-structure/index.html) (39 topics)
 
 * [theory: probability](stream/253118-theory:-probability/index.html) (37 topics)
 
@@ -184,4 +184,4 @@ permalink: /index.html
 
 * [theory: alternate presentations](stream/233122-theory:-alternate-presentations/index.html) (1 topic)
 
-<hr><p>Last updated: Sep 02 2023 at 12:09 UTC</p>
+<hr><p>Last updated: Sep 03 2023 at 12:09 UTC</p>
