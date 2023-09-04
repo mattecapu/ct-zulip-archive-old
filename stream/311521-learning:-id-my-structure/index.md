@@ -9,7 +9,7 @@ permalink: /stream/311521-learning:-id-my-structure/index.html
 
 ### Topics:
 
-* [The bicategory of Tambara bimodules](topic/topic_The.20bicategory.20of.20Tambara.20bimodules.html) (3 messages, latest: Sep 03 2023 at 09:08)
+* [The bicategory of Tambara bimodules](topic/topic_The.20bicategory.20of.20Tambara.20bimodules.html) (4 messages, latest: Sep 03 2023 at 15:52)
 * [Bicategory of split spans](topic/topic_Bicategory.20of.20split.20spans.html) (16 messages, latest: Aug 28 2023 at 14:37)
 * [logical category](topic/topic_logical.20category.html) (2 messages, latest: Aug 25 2023 at 18:05)
 * ["Monoidification" of a category](topic/topic_.22Monoidification.22.20of.20a.20category.html) (15 messages, latest: Aug 23 2023 at 12:17)
@@ -49,4 +49,4 @@ permalink: /stream/311521-learning:-id-my-structure/index.html
 * [stream events](topic/topic_stream.20events.html) (9 messages, latest: Jan 04 2022 at 22:35)
 * [almost a full subcategory?](topic/topic_almost.20a.20full.20subcategory.3F.html) (15 messages, latest: Jan 04 2022 at 16:42)
 
-<hr><p>Last updated: Sep 03 2023 at 12:09 UTC</p>
+<hr><p>Last updated: Sep 04 2023 at 12:09 UTC</p>
