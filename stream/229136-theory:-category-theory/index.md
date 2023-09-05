@@ -9,7 +9,8 @@ permalink: /stream/229136-theory:-category-theory/index.html
 
 ### Topics:
 
-* [Categorical models for abstract symbols](topic/topic_Categorical.20models.20for.20abstract.20symbols.html) (12 messages, latest: Aug 31 2023 at 19:37)
+* [Categorical models for abstract symbols](topic/topic_Categorical.20models.20for.20abstract.20symbols.html) (22 messages, latest: Sep 05 2023 at 09:31)
+* [Pushout in 2Cat_lx](topic/topic_Pushout.20in.202Cat_lx.html) (1 message, latest: Sep 05 2023 at 08:00)
 * [Fibrations of multicategories](topic/topic_Fibrations.20of.20multicategories.html) (7 messages, latest: Aug 28 2023 at 17:54)
 * [Splitting an idempotent to quotient a monad](topic/topic_Splitting.20an.20idempotent.20to.20quotient.20a.20monad.html) (203 messages, latest: Aug 26 2023 at 17:11)
 * [reflecting structure](topic/topic_reflecting.20structure.html) (5 messages, latest: Aug 25 2023 at 20:26)
@@ -457,4 +458,4 @@ permalink: /stream/229136-theory:-category-theory/index.html
 * [diagrams for application](topic/topic_diagrams.20for.20application.html) (13 messages, latest: Mar 24 2020 at 06:19)
 * [universal constructions](topic/topic_universal.20constructions.html) (8 messages, latest: Mar 23 2020 at 21:06)
 
-<hr><p>Last updated: Sep 04 2023 at 12:09 UTC</p>
+<hr><p>Last updated: Sep 05 2023 at 12:09 UTC</p>

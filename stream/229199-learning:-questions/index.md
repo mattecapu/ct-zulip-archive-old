@@ -9,7 +9,8 @@ permalink: /stream/229199-learning:-questions/index.html
 
 ### Topics:
 
-* [A Category for DSLs?](topic/topic_A.20Category.20for.20DSLs.3F.html) (7 messages, latest: Sep 04 2023 at 11:45)
+* [A Category for DSLs?](topic/topic_A.20Category.20for.20DSLs.3F.html) (20 messages, latest: Sep 05 2023 at 11:43)
+* [graphs within graphs](topic/topic_graphs.20within.20graphs.html) (21 messages, latest: Sep 05 2023 at 10:00)
 * [Choosing a vector space basis; choosing a coproduct](topic/topic_Choosing.20a.20vector.20space.20basis.3B.20choosing.20a.20coproduct.html) (13 messages, latest: Sep 02 2023 at 21:59)
 * [Universal property of the reals as a preorder](topic/topic_Universal.20property.20of.20the.20reals.20as.20a.20preorder.html) (20 messages, latest: Sep 01 2023 at 16:45)
 * [Partial sets and negatives](topic/topic_Partial.20sets.20and.20negatives.html) (9 messages, latest: Aug 29 2023 at 07:48)
@@ -34,7 +35,6 @@ permalink: /stream/229199-learning:-questions/index.html
 * [✔ Diagram dimensions](topic/topic_.E2.9C.94.20Diagram.20dimensions.html) (29 messages, latest: Jul 27 2023 at 16:29)
 * [Preorders and monoidal preorders](topic/topic_Preorders.20and.20monoidal.20preorders.html) (43 messages, latest: Jul 25 2023 at 15:27)
 * [✔ Why are Pointwise Kan Extensions called that?](topic/topic_.E2.9C.94.20Why.20are.20Pointwise.20Kan.20Extensions.20called.20that.3F.html) (9 messages, latest: Jul 24 2023 at 19:10)
-* [graphs within graphs](topic/topic_graphs.20within.20graphs.html) (20 messages, latest: Jul 21 2023 at 20:55)
 * [Synthetic introduction to noncommutative geometry?](topic/topic_Synthetic.20introduction.20to.20noncommutative.20geometry.3F.html) (8 messages, latest: Jul 20 2023 at 14:47)
 * [Reference for algebraic theories](topic/topic_Reference.20for.20algebraic.20theories.html) (10 messages, latest: Jul 20 2023 at 04:04)
 * ["re-strictification" of pseudofunctors](topic/topic_.22re-strictification.22.20of.20pseudofunctors.html) (10 messages, latest: Jul 19 2023 at 20:17)
@@ -954,4 +954,4 @@ permalink: /stream/229199-learning:-questions/index.html
 * [Algebra (Aluffi) exercises](topic/topic_Algebra.20(Aluffi).20exercises.html) (55 messages, latest: Mar 27 2020 at 23:38)
 * [What is category theory about?](topic/topic_What.20is.20category.20theory.20about.3F.html) (16 messages, latest: Mar 26 2020 at 16:03)
 
-<hr><p>Last updated: Sep 04 2023 at 12:09 UTC</p>
+<hr><p>Last updated: Sep 05 2023 at 12:09 UTC</p>
