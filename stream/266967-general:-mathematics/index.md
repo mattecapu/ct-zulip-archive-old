@@ -9,9 +9,9 @@ permalink: /stream/266967-general:-mathematics/index.html
 
 ### Topics:
 
-* [characters of finite group representations](topic/topic_characters.20of.20finite.20group.20representations.html) (34 messages, latest: Sep 05 2023 at 10:32)
+* [characters of finite group representations](topic/topic_characters.20of.20finite.20group.20representations.html) (36 messages, latest: Sep 05 2023 at 20:20)
+* ['computing' in CT](topic/topic_'computing'.20in.20CT.html) (59 messages, latest: Sep 05 2023 at 18:08)
 * [Nakayama's lemma](topic/topic_Nakayama's.20lemma.html) (167 messages, latest: Sep 04 2023 at 20:35)
-* ['computing' in CT](topic/topic_'computing'.20in.20CT.html) (55 messages, latest: Sep 04 2023 at 01:07)
 * [magmas and set actions](topic/topic_magmas.20and.20set.20actions.html) (15 messages, latest: Aug 29 2023 at 21:55)
 * [How to draw a diagram in LaTeX](topic/topic_How.20to.20draw.20a.20diagram.20in.20LaTeX.html) (28 messages, latest: Aug 29 2023 at 08:13)
 * [etale maps of rings](topic/topic_etale.20maps.20of.20rings.html) (51 messages, latest: Aug 28 2023 at 22:39)
@@ -127,4 +127,4 @@ permalink: /stream/266967-general:-mathematics/index.html
 * [the 600-cell](topic/topic_the.20600-cell.html) (5 messages, latest: Dec 01 2020 at 16:35)
 * [hermitian matrix over normed division algebra](topic/topic_hermitian.20matrix.20over.20normed.20division.20algebra.html) (8 messages, latest: Sep 28 2020 at 21:19)
 
-<hr><p>Last updated: Sep 05 2023 at 12:09 UTC</p>
+<hr><p>Last updated: Sep 06 2023 at 12:11 UTC</p>

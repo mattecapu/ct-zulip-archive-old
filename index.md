@@ -48,7 +48,7 @@ permalink: /index.html
 
 * [seminar: MIT Categories Seminar](stream/229457-seminar:-MIT-Categories-Seminar/index.html) (41 topics)
 
-* [learning: id my structure](stream/311521-learning:-id-my-structure/index.html) (39 topics)
+* [learning: id my structure](stream/311521-learning:-id-my-structure/index.html) (40 topics)
 
 * [theory: probability](stream/253118-theory:-probability/index.html) (37 topics)
 
@@ -184,4 +184,4 @@ permalink: /index.html
 
 * [theory: alternate presentations](stream/233122-theory:-alternate-presentations/index.html) (1 topic)
 
-<hr><p>Last updated: Sep 05 2023 at 12:09 UTC</p>
+<hr><p>Last updated: Sep 06 2023 at 12:11 UTC</p>
