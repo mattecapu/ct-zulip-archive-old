@@ -9,10 +9,13 @@ permalink: /stream/229199-learning:-questions/index.html
 
 ### Topics:
 
+* [Choosing a vector space basis; choosing a coproduct](topic/topic_Choosing.20a.20vector.20space.20basis.3B.20choosing.20a.20coproduct.html) (20 messages, latest: Sep 07 2023 at 12:00)
+* [Strict monoidal categories, concretely](topic/topic_Strict.20monoidal.20categories.2C.20concretely.html) (11 messages, latest: Sep 07 2023 at 11:35)
+* [induced automorphisms](topic/topic_induced.20automorphisms.html) (6 messages, latest: Sep 06 2023 at 23:24)
+* [products and coproducts in slice categories](topic/topic_products.20and.20coproducts.20in.20slice.20categories.html) (10 messages, latest: Sep 06 2023 at 19:02)
 * [a ring as a category where the elements are objects](topic/topic_a.20ring.20as.20a.20category.20where.20the.20elements.20are.20objects.html) (6 messages, latest: Sep 06 2023 at 09:17)
 * [A Category for DSLs?](topic/topic_A.20Category.20for.20DSLs.3F.html) (20 messages, latest: Sep 05 2023 at 11:43)
 * [graphs within graphs](topic/topic_graphs.20within.20graphs.html) (21 messages, latest: Sep 05 2023 at 10:00)
-* [Choosing a vector space basis; choosing a coproduct](topic/topic_Choosing.20a.20vector.20space.20basis.3B.20choosing.20a.20coproduct.html) (13 messages, latest: Sep 02 2023 at 21:59)
 * [Universal property of the reals as a preorder](topic/topic_Universal.20property.20of.20the.20reals.20as.20a.20preorder.html) (20 messages, latest: Sep 01 2023 at 16:45)
 * [Partial sets and negatives](topic/topic_Partial.20sets.20and.20negatives.html) (9 messages, latest: Aug 29 2023 at 07:48)
 * [objects “are” something](topic/topic_objects.20.E2.80.9Care.E2.80.9D.20something.html) (37 messages, latest: Aug 24 2023 at 07:20)
@@ -954,4 +957,4 @@ permalink: /stream/229199-learning:-questions/index.html
 * [Algebra (Aluffi) exercises](topic/topic_Algebra.20(Aluffi).20exercises.html) (55 messages, latest: Mar 27 2020 at 23:38)
 * [What is category theory about?](topic/topic_What.20is.20category.20theory.20about.3F.html) (16 messages, latest: Mar 26 2020 at 16:03)
 
-<hr><p>Last updated: Sep 06 2023 at 12:11 UTC</p>
+<hr><p>Last updated: Sep 07 2023 at 12:12 UTC</p>

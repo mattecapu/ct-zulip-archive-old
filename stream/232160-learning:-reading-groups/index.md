@@ -9,6 +9,7 @@ permalink: /stream/232160-learning:-reading-groups/index.html
 
 ### Topics:
 
+* [Cisinski's "Higher Categories and Homotopical Algebra"](topic/topic_Cisinski's.20.22Higher.20Categories.20and.20Homotopical.20Algebra.22.html) (1 message, latest: Sep 06 2023 at 23:25)
 * [Harold Simmons, “An Introduction to Category Theory”](topic/topic_Harold.20Simmons.2C.20.E2.80.9CAn.20Introduction.20to.20Category.20Theory.E2.80.9D.html) (18 messages, latest: Aug 20 2023 at 15:04)
 * [Categorical Logic and Type Theory](topic/topic_Categorical.20Logic.20and.20Type.20Theory.html) (28 messages, latest: Aug 20 2023 at 10:11)
 * [(Intermediate?) Categorical Probability](topic/topic_(Intermediate.3F).20Categorical.20Probability.html) (4 messages, latest: Aug 16 2023 at 20:34)
@@ -26,4 +27,4 @@ permalink: /stream/232160-learning:-reading-groups/index.html
 * [A Rosetta Stone](topic/topic_A.20Rosetta.20Stone.html) (88 messages, latest: May 28 2020 at 07:52)
 * [stream events](topic/topic_stream.20events.html) (12 messages, latest: May 18 2020 at 16:27)
 
-<hr><p>Last updated: Sep 06 2023 at 12:11 UTC</p>
+<hr><p>Last updated: Sep 07 2023 at 12:12 UTC</p>
