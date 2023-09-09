@@ -9,13 +9,14 @@ permalink: /stream/229199-learning:-questions/index.html
 
 ### Topics:
 
+* [graphs within graphs](topic/topic_graphs.20within.20graphs.html) (27 messages, latest: Sep 08 2023 at 22:42)
+* [combining optimization problems](topic/topic_combining.20optimization.20problems.html) (21 messages, latest: Sep 08 2023 at 20:09)
+* [Choosing a vector space basis; choosing a coproduct](topic/topic_Choosing.20a.20vector.20space.20basis.3B.20choosing.20a.20coproduct.html) (30 messages, latest: Sep 08 2023 at 16:35)
 * [Strict monoidal categories, concretely](topic/topic_Strict.20monoidal.20categories.2C.20concretely.html) (17 messages, latest: Sep 08 2023 at 06:19)
-* [Choosing a vector space basis; choosing a coproduct](topic/topic_Choosing.20a.20vector.20space.20basis.3B.20choosing.20a.20coproduct.html) (29 messages, latest: Sep 08 2023 at 04:41)
 * [induced automorphisms](topic/topic_induced.20automorphisms.html) (15 messages, latest: Sep 07 2023 at 18:44)
 * [products and coproducts in slice categories](topic/topic_products.20and.20coproducts.20in.20slice.20categories.html) (11 messages, latest: Sep 07 2023 at 17:01)
 * [a ring as a category where the elements are objects](topic/topic_a.20ring.20as.20a.20category.20where.20the.20elements.20are.20objects.html) (7 messages, latest: Sep 07 2023 at 14:31)
 * [A Category for DSLs?](topic/topic_A.20Category.20for.20DSLs.3F.html) (20 messages, latest: Sep 05 2023 at 11:43)
-* [graphs within graphs](topic/topic_graphs.20within.20graphs.html) (21 messages, latest: Sep 05 2023 at 10:00)
 * [Universal property of the reals as a preorder](topic/topic_Universal.20property.20of.20the.20reals.20as.20a.20preorder.html) (20 messages, latest: Sep 01 2023 at 16:45)
 * [Partial sets and negatives](topic/topic_Partial.20sets.20and.20negatives.html) (9 messages, latest: Aug 29 2023 at 07:48)
 * [objects “are” something](topic/topic_objects.20.E2.80.9Care.E2.80.9D.20something.html) (37 messages, latest: Aug 24 2023 at 07:20)
@@ -385,7 +386,6 @@ permalink: /stream/229199-learning:-questions/index.html
 * [2-category of observable <=](topic/topic_2-category.20of.20observable.20.3C.3D.html) (4 messages, latest: Jan 17 2022 at 08:34)
 * [image subcategories structure](topic/topic_image.20subcategories.20structure.html) (65 messages, latest: Jan 16 2022 at 20:55)
 * [Turing machines](topic/topic_Turing.20machines.html) (4 messages, latest: Jan 16 2022 at 11:32)
-* [combining optimization problems](topic/topic_combining.20optimization.20problems.html) (18 messages, latest: Jan 13 2022 at 16:43)
 * [convex analysis](topic/topic_convex.20analysis.html) (44 messages, latest: Jan 12 2022 at 22:03)
 * [hom is lax monoidal](topic/topic_hom.20is.20lax.20monoidal.html) (7 messages, latest: Jan 12 2022 at 17:05)
 * ["weak pushout" universal among pullbacks](topic/topic_.22weak.20pushout.22.20universal.20among.20pullbacks.html) (20 messages, latest: Jan 11 2022 at 21:44)
@@ -957,4 +957,4 @@ permalink: /stream/229199-learning:-questions/index.html
 * [Algebra (Aluffi) exercises](topic/topic_Algebra.20(Aluffi).20exercises.html) (55 messages, latest: Mar 27 2020 at 23:38)
 * [What is category theory about?](topic/topic_What.20is.20category.20theory.20about.3F.html) (16 messages, latest: Mar 26 2020 at 16:03)
 
-<hr><p>Last updated: Sep 08 2023 at 12:10 UTC</p>
+<hr><p>Last updated: Sep 09 2023 at 12:11 UTC</p>

@@ -9,6 +9,7 @@ permalink: /stream/229136-theory:-category-theory/index.html
 
 ### Topics:
 
+* [counting algebraic structures](topic/topic_counting.20algebraic.20structures.html) (10 messages, latest: Sep 09 2023 at 09:28)
 * [Pushout in 2Cat_lx](topic/topic_Pushout.20in.202Cat_lx.html) (5 messages, latest: Sep 06 2023 at 06:17)
 * [Categorical models for abstract symbols](topic/topic_Categorical.20models.20for.20abstract.20symbols.html) (22 messages, latest: Sep 05 2023 at 09:31)
 * [Fibrations of multicategories](topic/topic_Fibrations.20of.20multicategories.html) (7 messages, latest: Aug 28 2023 at 17:54)
@@ -458,4 +459,4 @@ permalink: /stream/229136-theory:-category-theory/index.html
 * [diagrams for application](topic/topic_diagrams.20for.20application.html) (13 messages, latest: Mar 24 2020 at 06:19)
 * [universal constructions](topic/topic_universal.20constructions.html) (8 messages, latest: Mar 23 2020 at 21:06)
 
-<hr><p>Last updated: Sep 08 2023 at 12:10 UTC</p>
+<hr><p>Last updated: Sep 09 2023 at 12:11 UTC</p>
