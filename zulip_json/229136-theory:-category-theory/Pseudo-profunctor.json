@@ -1,0 +1,20 @@
+[
+    {
+        "content": "<p>Nelson Martins Ferreira has published a definition of a \"pseudocategory\" here - <a href=\"https://arxiv.org/abs/math/0604549\">https://arxiv.org/abs/math/0604549</a><br>\nA pseudocategory is essentially an internal category in a 2-category where associativity and unitality need only hold up to isomorphism.</p>\n<p>I think I need a notion of a pseudo-profunctor between pseudocategories, in other words a modification of this definition<br>\n<a href=\"https://ncatlab.org/nlab/show/internal+profunctor\">https://ncatlab.org/nlab/show/internal+profunctor</a><br>\nwhich is a weakening to make sense in a 2-category with 2-pullbacks.</p>\n<p>And I want to make sure I get the definition right. What I am thinking is:</p>\n<ul>\n<li>I have, both on the left and right, associator and unit isomorphisms that satisfy analogues of the pentagon and triangle identities. So that's four equations.</li>\n<li>I have an \"alternator\" isomorphism which identifies \"left action then right action\" with \"right action then left action\", and this should probably satisfy one coherence law with respect to each of the associators and units, so that's four equations.</li>\n</ul>\n<p>Is there anything I'm missing here?<br>\nClosely related, is there a general framework which would cover this, like a weakening of bimodules to a context where equations only have to hold up to isomorphism, like a tricategory or double category or something?</p>",
+        "id": 390094197,
+        "sender_full_name": "Patrick Nicodemus",
+        "timestamp": 1694317394
+    },
+    {
+        "content": "<p>As an example, given two weak double categories regarded as internal pseudocategories in Cat, I would want a weakened notion of profunctor between weak double categories as an example, as discussed in section 4 here<br>\n<a href=\"https://ncatlab.org/nlab/show/double+profunctor\">https://ncatlab.org/nlab/show/double+profunctor</a> (first bullet point)</p>",
+        "id": 390094421,
+        "sender_full_name": "Patrick Nicodemus",
+        "timestamp": 1694317566
+    },
+    {
+        "content": "<p>I don't recall having seen this written down in the generality of pseudo-bimodules in a tricategory.  There's something related in my paper <a href=\"https://arxiv.org/abs/1301.3191\">Enriched categories as a free cocompletion</a> with Richard Garner, a definition of bimodule/profunctor between enriched bicategories (section 5).  And <span class=\"user-mention\" data-user-id=\"275899\">@Christian Williams</span> is very busy with something else right now, but I know he's been using a special case of pseudo-profunctors between pseudo double categories.</p>\n<p>Both of these have the same constraints and axioms that you mention, except that the mixed associator doesn't need coherence laws relating it to the units.  (I think I was confused about this at some point in between the two papers, but Christian set me straight.)  The point is that in any \"unit+associator context\" such as a monoidal category, bicategory, etc., you only need the unit axioms for the case when the unit is the <em>middle</em> object in a ternary product, and in the bimodule case there are only two ways that can happen, each entirely on one side or the other.</p>",
+        "id": 390096513,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1694319215
+    }
+]

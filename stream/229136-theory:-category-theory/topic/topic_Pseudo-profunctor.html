@@ -1,0 +1,49 @@
+---
+layout: archive
+title: Zulip Chat Archive
+permalink: /stream/229136-theory:-category-theory/topic/topic_Pseudo-profunctor.html
+---
+
+<h2>Stream: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/index.html">theory: category theory</a></h2>
+<h3>Topic: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/topic_Pseudo-profunctor.html">Pseudo-profunctor</a></h3>
+
+<hr>
+
+<base href="https://categorytheory.zulipchat.com/">
+
+{% raw %}
+
+<a name="390094197"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/Pseudo-profunctor/near/390094197" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Patrick Nicodemus <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/topic_Pseudo-profunctor.html#390094197">(Sep 10 2023 at 03:43)</a>:</h4>
+<p>Nelson Martins Ferreira has published a definition of a "pseudocategory" here - <a href="https://arxiv.org/abs/math/0604549">https://arxiv.org/abs/math/0604549</a><br>
+A pseudocategory is essentially an internal category in a 2-category where associativity and unitality need only hold up to isomorphism.</p>
+<p>I think I need a notion of a pseudo-profunctor between pseudocategories, in other words a modification of this definition<br>
+<a href="https://ncatlab.org/nlab/show/internal+profunctor">https://ncatlab.org/nlab/show/internal+profunctor</a><br>
+which is a weakening to make sense in a 2-category with 2-pullbacks.</p>
+<p>And I want to make sure I get the definition right. What I am thinking is:</p>
+<ul>
+<li>I have, both on the left and right, associator and unit isomorphisms that satisfy analogues of the pentagon and triangle identities. So that's four equations.</li>
+<li>I have an "alternator" isomorphism which identifies "left action then right action" with "right action then left action", and this should probably satisfy one coherence law with respect to each of the associators and units, so that's four equations.</li>
+</ul>
+<p>Is there anything I'm missing here?<br>
+Closely related, is there a general framework which would cover this, like a weakening of bimodules to a context where equations only have to hold up to isomorphism, like a tricategory or double category or something?</p>
+
+
+
+<a name="390094421"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/Pseudo-profunctor/near/390094421" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Patrick Nicodemus <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/topic_Pseudo-profunctor.html#390094421">(Sep 10 2023 at 03:46)</a>:</h4>
+<p>As an example, given two weak double categories regarded as internal pseudocategories in Cat, I would want a weakened notion of profunctor between weak double categories as an example, as discussed in section 4 here<br>
+<a href="https://ncatlab.org/nlab/show/double+profunctor">https://ncatlab.org/nlab/show/double+profunctor</a> (first bullet point)</p>
+
+
+
+<a name="390096513"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/Pseudo-profunctor/near/390096513" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/topic_Pseudo-profunctor.html#390096513">(Sep 10 2023 at 04:13)</a>:</h4>
+<p>I don't recall having seen this written down in the generality of pseudo-bimodules in a tricategory.  There's something related in my paper <a href="https://arxiv.org/abs/1301.3191">Enriched categories as a free cocompletion</a> with Richard Garner, a definition of bimodule/profunctor between enriched bicategories (section 5).  And <span class="user-mention" data-user-id="275899">@Christian Williams</span> is very busy with something else right now, but I know he's been using a special case of pseudo-profunctors between pseudo double categories.</p>
+<p>Both of these have the same constraints and axioms that you mention, except that the mixed associator doesn't need coherence laws relating it to the units.  (I think I was confused about this at some point in between the two papers, but Christian set me straight.)  The point is that in any "unit+associator context" such as a monoidal category, bicategory, etc., you only need the unit axioms for the case when the unit is the <em>middle</em> object in a ternary product, and in the bimodule case there are only two ways that can happen, each entirely on one side or the other.</p>
+
+
+
+{% endraw %}
+
+<hr><p>Last updated: Sep 10 2023 at 12:10 UTC</p>
