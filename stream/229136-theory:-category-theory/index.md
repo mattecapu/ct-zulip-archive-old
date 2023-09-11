@@ -9,9 +9,9 @@ permalink: /stream/229136-theory:-category-theory/index.html
 
 ### Topics:
 
+* [Chomsky hierarchy and Categories](topic/topic_Chomsky.20hierarchy.20and.20Categories.html) (19 messages, latest: Sep 11 2023 at 08:49)
+* [counting algebraic structures](topic/topic_counting.20algebraic.20structures.html) (17 messages, latest: Sep 11 2023 at 07:50)
 * [Pseudo-profunctor](topic/topic_Pseudo-profunctor.html) (3 messages, latest: Sep 10 2023 at 04:13)
-* [Chomsky hierarchy and Categories](topic/topic_Chomsky.20hierarchy.20and.20Categories.html) (6 messages, latest: Sep 10 2023 at 00:47)
-* [counting algebraic structures](topic/topic_counting.20algebraic.20structures.html) (13 messages, latest: Sep 09 2023 at 19:10)
 * [Pushout in 2Cat_lx](topic/topic_Pushout.20in.202Cat_lx.html) (5 messages, latest: Sep 06 2023 at 06:17)
 * [Categorical models for abstract symbols](topic/topic_Categorical.20models.20for.20abstract.20symbols.html) (22 messages, latest: Sep 05 2023 at 09:31)
 * [Fibrations of multicategories](topic/topic_Fibrations.20of.20multicategories.html) (7 messages, latest: Aug 28 2023 at 17:54)
@@ -461,4 +461,4 @@ permalink: /stream/229136-theory:-category-theory/index.html
 * [diagrams for application](topic/topic_diagrams.20for.20application.html) (13 messages, latest: Mar 24 2020 at 06:19)
 * [universal constructions](topic/topic_universal.20constructions.html) (8 messages, latest: Mar 23 2020 at 21:06)
 
-<hr><p>Last updated: Sep 10 2023 at 12:10 UTC</p>
+<hr><p>Last updated: Sep 11 2023 at 12:09 UTC</p>

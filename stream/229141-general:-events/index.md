@@ -9,6 +9,7 @@ permalink: /stream/229141-general:-events/index.html
 
 ### Topics:
 
+* [This Week's Finds seminar](topic/topic_This.20Week's.20Finds.20seminar.html) (117 messages, latest: Sep 11 2023 at 10:17)
 * [ICFP 2023](topic/topic_ICFP.202023.html) (1 message, latest: Sep 06 2023 at 23:39)
 * [YaMCATS 32](topic/topic_YaMCATS.2032.html) (2 messages, latest: Sep 02 2023 at 10:12)
 * [Dafny Workshop at POPL 24](topic/topic_Dafny.20Workshop.20at.20POPL.2024.html) (1 message, latest: Aug 30 2023 at 12:37)
@@ -52,7 +53,6 @@ permalink: /stream/229141-general:-events/index.html
 * [Adjoint School 2023](topic/topic_Adjoint.20School.202023.html) (5 messages, latest: Dec 16 2022 at 10:33)
 * [Virtual Double Categories Workshop](topic/topic_Virtual.20Double.20Categories.20Workshop.html) (8 messages, latest: Dec 05 2022 at 13:30)
 * [SYCO 10, Edinburgh](topic/topic_SYCO.2010.2C.20Edinburgh.html) (3 messages, latest: Nov 22 2022 at 17:12)
-* [This Week's Finds seminar](topic/topic_This.20Week's.20Finds.20seminar.html) (113 messages, latest: Nov 14 2022 at 11:52)
 * [New Developments in Tensor Networks and Quantum Computation](topic/topic_New.20Developments.20in.20Tensor.20Networks.20and.20Quantum.20Computation.html) (1 message, latest: Oct 29 2022 at 10:50)
 * [Bénabou Colloquium](topic/topic_B.C3.A9nabou.20Colloquium.html) (1 message, latest: Oct 27 2022 at 10:34)
 * [Octoberfest](topic/topic_Octoberfest.html) (5 messages, latest: Oct 24 2022 at 17:35)
@@ -194,4 +194,4 @@ permalink: /stream/229141-general:-events/index.html
 * [April 1st: ACT@UCR](topic/topic_April.201st.3A.20ACT.40UCR.html) (3 messages, latest: Mar 26 2020 at 23:58)
 * [Google Sites problem](topic/topic_Google.20Sites.20problem.html) (4 messages, latest: Mar 25 2020 at 04:29)
 
-<hr><p>Last updated: Sep 10 2023 at 12:10 UTC</p>
+<hr><p>Last updated: Sep 11 2023 at 12:09 UTC</p>
