@@ -9,7 +9,7 @@ permalink: /stream/229111-general/index.html
 
 ### Topics:
 
-* [Sad News: Henry Story (1967-2023)](topic/topic_Sad.20News.3A.20Henry.20Story.20(1967-2023).html) (2 messages, latest: Sep 11 2023 at 07:39)
+* [Sad News: Henry Story (1967-2023)](topic/topic_Sad.20News.3A.20Henry.20Story.20(1967-2023).html) (4 messages, latest: Sep 11 2023 at 21:38)
 * [Unity-respecting Change](topic/topic_Unity-respecting.20Change.html) (12 messages, latest: Sep 03 2023 at 14:00)
 * [F. William Lawvere](topic/topic_F.2E.20William.20Lawvere.html) (24 messages, latest: Aug 30 2023 at 13:00)
 * [Functorial Semantics](topic/topic_Functorial.20Semantics.html) (2 messages, latest: Aug 22 2023 at 12:54)
@@ -276,4 +276,4 @@ permalink: /stream/229111-general/index.html
 * [Tools for diagrams](topic/topic_Tools.20for.20diagrams.html) (78 messages, latest: Mar 25 2020 at 17:53)
 * [topic demonstration](topic/topic_topic.20demonstration.html) (2 messages, latest: Mar 23 2020 at 16:57)
 
-<hr><p>Last updated: Sep 11 2023 at 12:09 UTC</p>
+<hr><p>Last updated: Sep 12 2023 at 12:10 UTC</p>
