@@ -10,7 +10,7 @@ permalink: /index.html
 
 * [learning: questions](stream/229199-learning:-questions/index.html) (947 topics)
 
-* [theory: category theory](stream/229136-theory:-category-theory/index.html) (451 topics)
+* [theory: category theory](stream/229136-theory:-category-theory/index.html) (452 topics)
 
 * [general](stream/229111-general/index.html) (266 topics)
 
@@ -40,7 +40,7 @@ permalink: /index.html
 
 * [practice: thermodynamics](stream/306433-practice:-thermodynamics/index.html) (53 topics)
 
-* [practice: our work](stream/274877-practice:-our-work/index.html) (51 topics)
+* [practice: our work](stream/274877-practice:-our-work/index.html) (52 topics)
 
 * [theory: type theory](stream/229952-theory:-type-theory/index.html) (51 topics)
 
@@ -66,9 +66,9 @@ permalink: /index.html
 
 * [practice: Dialectica](stream/323208-practice:-Dialectica/index.html) (23 topics)
 
-* [workshop: Polynomial Functors @ Topos](stream/282140-workshop:-Polynomial-Functors-@-Topos/index.html) (22 topics)
+* [philosophy](stream/229134-philosophy/index.html) (22 topics)
 
-* [philosophy](stream/229134-philosophy/index.html) (21 topics)
+* [workshop: Polynomial Functors @ Topos](stream/282140-workshop:-Polynomial-Functors-@-Topos/index.html) (22 topics)
 
 * [theory: physics](stream/251538-theory:-physics/index.html) (21 topics)
 
@@ -184,4 +184,4 @@ permalink: /index.html
 
 * [theory: alternate presentations](stream/233122-theory:-alternate-presentations/index.html) (1 topic)
 
-<hr><p>Last updated: Sep 12 2023 at 12:10 UTC</p>
+<hr><p>Last updated: Sep 13 2023 at 12:09 UTC</p>

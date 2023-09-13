@@ -9,7 +9,7 @@ permalink: /stream/241990-general:-values/index.html
 
 ### Topics:
 
-* [Applied Categories and Capitalism (semi-joke)](topic/topic_Applied.20Categories.20and.20Capitalism.20(semi-joke).html) (1 message, latest: Sep 08 2023 at 05:32)
+* [Applied Categories and Capitalism (semi-joke)](topic/topic_Applied.20Categories.20and.20Capitalism.20(semi-joke).html) (3 messages, latest: Sep 12 2023 at 16:18)
 * [Applied Categories and War](topic/topic_Applied.20Categories.20and.20War.html) (48 messages, latest: Sep 08 2023 at 03:43)
 * [The Responsibility of the Scientist Today](topic/topic_The.20Responsibility.20of.20the.20Scientist.20Today.html) (815 messages, latest: Aug 10 2023 at 09:55)
 * [When to exclude someone's written works or sources](topic/topic_When.20to.20exclude.20someone's.20written.20works.20or.20sources.html) (12 messages, latest: Jun 29 2023 at 23:16)
@@ -45,4 +45,4 @@ permalink: /stream/241990-general:-values/index.html
 * [stream events](topic/topic_stream.20events.html) (6 messages, latest: Jun 03 2020 at 19:22)
 * [ACT2020 tutorial day](topic/topic_ACT2020.20tutorial.20day.html) (1 message, latest: Jun 03 2020 at 18:38)
 
-<hr><p>Last updated: Sep 12 2023 at 12:10 UTC</p>
+<hr><p>Last updated: Sep 13 2023 at 12:09 UTC</p>
