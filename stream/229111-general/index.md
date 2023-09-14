@@ -9,13 +9,13 @@ permalink: /stream/229111-general/index.html
 
 ### Topics:
 
+* [Introduce yourself!](topic/topic_Introduce.20yourself!.html) (123 messages, latest: Sep 14 2023 at 12:01)
 * [Sad News: Henry Story (1967-2023)](topic/topic_Sad.20News.3A.20Henry.20Story.20(1967-2023).html) (4 messages, latest: Sep 11 2023 at 21:38)
 * [Unity-respecting Change](topic/topic_Unity-respecting.20Change.html) (12 messages, latest: Sep 03 2023 at 14:00)
 * [F. William Lawvere](topic/topic_F.2E.20William.20Lawvere.html) (24 messages, latest: Aug 30 2023 at 13:00)
 * [Functorial Semantics](topic/topic_Functorial.20Semantics.html) (2 messages, latest: Aug 22 2023 at 12:54)
 * [Artificial Intelligence](topic/topic_Artificial.20Intelligence.html) (1 message, latest: Aug 20 2023 at 06:30)
 * [Compositionality](topic/topic_Compositionality.html) (97 messages, latest: Aug 10 2023 at 12:23)
-* [Introduce yourself!](topic/topic_Introduce.20yourself!.html) (121 messages, latest: Aug 08 2023 at 22:04)
 * [Looking for popular accounts of Yoneda](topic/topic_Looking.20for.20popular.20accounts.20of.20Yoneda.html) (94 messages, latest: Jul 31 2023 at 04:55)
 * [LocalCharts](topic/topic_LocalCharts.html) (2 messages, latest: Jul 30 2023 at 19:36)
 * [new streams](topic/topic_new.20streams.html) (99 messages, latest: Jul 22 2023 at 14:47)
@@ -276,4 +276,4 @@ permalink: /stream/229111-general/index.html
 * [Tools for diagrams](topic/topic_Tools.20for.20diagrams.html) (78 messages, latest: Mar 25 2020 at 17:53)
 * [topic demonstration](topic/topic_topic.20demonstration.html) (2 messages, latest: Mar 23 2020 at 16:57)
 
-<hr><p>Last updated: Sep 13 2023 at 12:09 UTC</p>
+<hr><p>Last updated: Sep 14 2023 at 12:11 UTC</p>
