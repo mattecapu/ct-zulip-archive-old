@@ -9,6 +9,7 @@ permalink: /stream/303660-languages:-portugues/index.html
 
 ### Topics:
 
+* [seminários](topic/topic_semin.C3.A1rios.html) (1 message, latest: Sep 14 2023 at 12:15)
 * [vagas](topic/topic_vagas.html) (1 message, latest: May 23 2023 at 14:53)
 * [conferencias](topic/topic_conferencias.html) (17 messages, latest: Dec 29 2022 at 16:32)
 * [Encontro Brasil-Portugal em Matemática](topic/topic_Encontro.20Brasil-Portugal.20em.20Matem.C3.A1tica.html) (1 message, latest: Aug 13 2022 at 13:50)
@@ -16,4 +17,4 @@ permalink: /stream/303660-languages:-portugues/index.html
 * [lobby](topic/topic_lobby.html) (2 messages, latest: Dec 13 2021 at 12:16)
 * [stream events](topic/topic_stream.20events.html) (14 messages, latest: Oct 14 2021 at 13:26)
 
-<hr><p>Last updated: Sep 14 2023 at 12:11 UTC</p>
+<hr><p>Last updated: Sep 15 2023 at 12:10 UTC</p>

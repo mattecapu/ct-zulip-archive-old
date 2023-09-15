@@ -9,6 +9,7 @@ permalink: /stream/229141-general:-events/index.html
 
 ### Topics:
 
+* [CT 2024](topic/topic_CT.202024.html) (1 message, latest: Sep 14 2023 at 12:13)
 * [This Week's Finds seminar](topic/topic_This.20Week's.20Finds.20seminar.html) (118 messages, latest: Sep 13 2023 at 08:33)
 * [ICFP 2023](topic/topic_ICFP.202023.html) (1 message, latest: Sep 06 2023 at 23:39)
 * [YaMCATS 32](topic/topic_YaMCATS.2032.html) (2 messages, latest: Sep 02 2023 at 10:12)
@@ -194,4 +195,4 @@ permalink: /stream/229141-general:-events/index.html
 * [April 1st: ACT@UCR](topic/topic_April.201st.3A.20ACT.40UCR.html) (3 messages, latest: Mar 26 2020 at 23:58)
 * [Google Sites problem](topic/topic_Google.20Sites.20problem.html) (4 messages, latest: Mar 25 2020 at 04:29)
 
-<hr><p>Last updated: Sep 14 2023 at 12:11 UTC</p>
+<hr><p>Last updated: Sep 15 2023 at 12:10 UTC</p>

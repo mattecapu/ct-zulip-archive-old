@@ -14,7 +14,7 @@ permalink: /index.html
 
 * [general](stream/229111-general/index.html) (266 topics)
 
-* [general: events](stream/229141-general:-events/index.html) (184 topics)
+* [general: events](stream/229141-general:-events/index.html) (185 topics)
 
 * [practice: applied ct](stream/229156-practice:-applied-ct/index.html) (146 topics)
 
@@ -96,9 +96,9 @@ permalink: /index.html
 
 * [general: co/appreciation](stream/271602-general:-co/appreciation/index.html) (13 topics)
 
-* [practice: translation](stream/260000-practice:-translation/index.html) (11 topics)
+* [theory: algebra & CT](stream/230123-theory:-algebra-&-CT/index.html) (12 topics)
 
-* [theory: algebra & CT](stream/230123-theory:-algebra-&-CT/index.html) (11 topics)
+* [practice: translation](stream/260000-practice:-translation/index.html) (11 topics)
 
 * [theory: concurrency](stream/235484-theory:-concurrency/index.html) (11 topics)
 
@@ -118,21 +118,21 @@ permalink: /index.html
 
 * [theory: monoids](stream/231815-theory:-monoids/index.html) (8 topics)
 
+* [languages: portugues](stream/303660-languages:-portugues/index.html) (7 topics)
+
 * [learning: statistics reading group](stream/245528-learning:-statistics-reading-group/index.html) (7 topics)
 
 * [seminar: EM-cats](stream/298571-seminar:-EM-cats/index.html) (7 topics)
 
 * [semiotics and semiosis](stream/229179-semiotics-and-semiosis/index.html) (7 topics)
 
-* [languages: portugues](stream/303660-languages:-portugues/index.html) (6 topics)
+* [practice: pedagogy](stream/295092-practice:-pedagogy/index.html) (6 topics)
 
 * [theory: biology](stream/336415-theory:-biology/index.html) (6 topics)
 
 * [ACT@UMD seminar](stream/229967-ACT@UMD-seminar/index.html) (5 topics)
 
 * [languages: Deutsch/German](stream/231144-languages:-Deutsch/German/index.html) (5 topics)
-
-* [practice: pedagogy](stream/295092-practice:-pedagogy/index.html) (5 topics)
 
 * [general: terminology](stream/348484-general:-terminology/index.html) (4 topics)
 
@@ -184,4 +184,4 @@ permalink: /index.html
 
 * [theory: alternate presentations](stream/233122-theory:-alternate-presentations/index.html) (1 topic)
 
-<hr><p>Last updated: Sep 14 2023 at 12:11 UTC</p>
+<hr><p>Last updated: Sep 15 2023 at 12:10 UTC</p>
