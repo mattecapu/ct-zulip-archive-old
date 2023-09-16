@@ -9,6 +9,7 @@ permalink: /stream/229199-learning:-questions/index.html
 
 ### Topics:
 
+* [fibred category of quotients](topic/topic_fibred.20category.20of.20quotients.html) (9 messages, latest: Sep 15 2023 at 20:37)
 * [graphs within graphs](topic/topic_graphs.20within.20graphs.html) (27 messages, latest: Sep 08 2023 at 22:42)
 * [combining optimization problems](topic/topic_combining.20optimization.20problems.html) (21 messages, latest: Sep 08 2023 at 20:09)
 * [Choosing a vector space basis; choosing a coproduct](topic/topic_Choosing.20a.20vector.20space.20basis.3B.20choosing.20a.20coproduct.html) (30 messages, latest: Sep 08 2023 at 16:35)
@@ -957,4 +958,4 @@ permalink: /stream/229199-learning:-questions/index.html
 * [Algebra (Aluffi) exercises](topic/topic_Algebra.20(Aluffi).20exercises.html) (55 messages, latest: Mar 27 2020 at 23:38)
 * [What is category theory about?](topic/topic_What.20is.20category.20theory.20about.3F.html) (16 messages, latest: Mar 26 2020 at 16:03)
 
-<hr><p>Last updated: Sep 15 2023 at 12:10 UTC</p>
+<hr><p>Last updated: Sep 16 2023 at 12:10 UTC</p>

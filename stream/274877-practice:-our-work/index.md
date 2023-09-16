@@ -9,7 +9,7 @@ permalink: /stream/274877-practice:-our-work/index.html
 
 ### Topics:
 
-* [John Baez](topic/topic_John.20Baez.html) (1493 messages, latest: Sep 15 2023 at 01:38)
+* [John Baez](topic/topic_John.20Baez.html) (1497 messages, latest: Sep 15 2023 at 17:35)
 * [Jade Master](topic/topic_Jade.20Master.html) (56 messages, latest: Sep 14 2023 at 11:40)
 * [Chris Tapo](topic/topic_Chris.20Tapo.html) (1 message, latest: Sep 12 2023 at 22:32)
 * [Ralph Sarkis](topic/topic_Ralph.20Sarkis.html) (36 messages, latest: Sep 11 2023 at 09:32)
@@ -62,4 +62,4 @@ permalink: /stream/274877-practice:-our-work/index.html
 * [Conor Mc Bride](topic/topic_Conor.20Mc.20Bride.html) (60 messages, latest: Apr 08 2021 at 15:15)
 * [thoughts on sharing ideas](topic/topic_thoughts.20on.20sharing.20ideas.html) (20 messages, latest: Jan 31 2021 at 03:05)
 
-<hr><p>Last updated: Sep 15 2023 at 12:10 UTC</p>
+<hr><p>Last updated: Sep 16 2023 at 12:10 UTC</p>
