@@ -9,6 +9,7 @@ permalink: /stream/274877-practice:-our-work/index.html
 
 ### Topics:
 
+* [David Roberts](topic/topic_David.20Roberts.html) (76 messages, latest: Sep 17 2023 at 11:44)
 * [John Baez](topic/topic_John.20Baez.html) (1497 messages, latest: Sep 15 2023 at 17:35)
 * [Jade Master](topic/topic_Jade.20Master.html) (56 messages, latest: Sep 14 2023 at 11:40)
 * [Chris Tapo](topic/topic_Chris.20Tapo.html) (1 message, latest: Sep 12 2023 at 22:32)
@@ -17,7 +18,6 @@ permalink: /stream/274877-practice:-our-work/index.html
 * [Andrius Kulikauskas - classifying adjunctions](topic/topic_Andrius.20Kulikauskas.20-.20classifying.20adjunctions.html) (3 messages, latest: Aug 19 2023 at 22:04)
 * [Valeria de Paiva](topic/topic_Valeria.20de.20Paiva.html) (4 messages, latest: Aug 18 2023 at 13:55)
 * [Evan Patterson](topic/topic_Evan.20Patterson.html) (76 messages, latest: Aug 16 2023 at 14:57)
-* [David Roberts](topic/topic_David.20Roberts.html) (72 messages, latest: Aug 10 2023 at 16:42)
 * [Jason Parker](topic/topic_Jason.20Parker.html) (4 messages, latest: Aug 10 2023 at 16:31)
 * [Chris Grossack (they/them)](topic/topic_Chris.20Grossack.20(they.2Fthem).html) (5 messages, latest: Jul 16 2023 at 21:55)
 * [Math 4 Wisdom](topic/topic_Math.204.20Wisdom.html) (1 message, latest: Jun 28 2023 at 03:10)
@@ -62,4 +62,4 @@ permalink: /stream/274877-practice:-our-work/index.html
 * [Conor Mc Bride](topic/topic_Conor.20Mc.20Bride.html) (60 messages, latest: Apr 08 2021 at 15:15)
 * [thoughts on sharing ideas](topic/topic_thoughts.20on.20sharing.20ideas.html) (20 messages, latest: Jan 31 2021 at 03:05)
 
-<hr><p>Last updated: Sep 16 2023 at 12:10 UTC</p>
+<hr><p>Last updated: Sep 17 2023 at 12:09 UTC</p>
