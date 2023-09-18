@@ -9,7 +9,7 @@ permalink: /stream/230123-theory:-algebra-&-CT/index.html
 
 ### Topics:
 
-* [Why do bialgebras have monoidal module categories *really*](topic/topic_Why.20do.20bialgebras.20have.20monoidal.20module.20categories.20*really*.html) (33 messages, latest: Sep 14 2023 at 20:39)
+* [Why do bialgebras have monoidal module categories *really*](topic/topic_Why.20do.20bialgebras.20have.20monoidal.20module.20categories.20*really*.html) (50 messages, latest: Sep 18 2023 at 10:38)
 * [Subalgebras of dual Hopf algebra](topic/topic_Subalgebras.20of.20dual.20Hopf.20algebra.html) (41 messages, latest: Aug 30 2023 at 22:46)
 * [Algebraic presentations and traced categories](topic/topic_Algebraic.20presentations.20and.20traced.20categories.html) (28 messages, latest: May 10 2023 at 22:00)
 * [polynomial functors](topic/topic_polynomial.20functors.html) (7 messages, latest: Apr 27 2023 at 19:42)
@@ -22,4 +22,4 @@ permalink: /stream/230123-theory:-algebra-&-CT/index.html
 * [stream events](topic/topic_stream.20events.html) (3 messages, latest: Apr 06 2020 at 05:46)
 * [Theme?](topic/topic_Theme.3F.html) (2 messages, latest: Apr 06 2020 at 01:13)
 
-<hr><p>Last updated: Sep 17 2023 at 12:09 UTC</p>
+<hr><p>Last updated: Sep 18 2023 at 12:10 UTC</p>
