@@ -9,8 +9,9 @@ permalink: /stream/274877-practice:-our-work/index.html
 
 ### Topics:
 
-* [John Baez](topic/topic_John.20Baez.html) (1500 messages, latest: Sep 18 2023 at 11:39)
-* [David Roberts](topic/topic_David.20Roberts.html) (76 messages, latest: Sep 17 2023 at 11:44)
+* [Morgan Rogers](topic/topic_Morgan.20Rogers.html) (56 messages, latest: Sep 19 2023 at 11:16)
+* [David Roberts](topic/topic_David.20Roberts.html) (77 messages, latest: Sep 19 2023 at 04:42)
+* [John Baez](topic/topic_John.20Baez.html) (1505 messages, latest: Sep 18 2023 at 16:53)
 * [Jade Master](topic/topic_Jade.20Master.html) (56 messages, latest: Sep 14 2023 at 11:40)
 * [Chris Tapo](topic/topic_Chris.20Tapo.html) (1 message, latest: Sep 12 2023 at 22:32)
 * [Ralph Sarkis](topic/topic_Ralph.20Sarkis.html) (36 messages, latest: Sep 11 2023 at 09:32)
@@ -27,7 +28,6 @@ permalink: /stream/274877-practice:-our-work/index.html
 * [David Egolf](topic/topic_David.20Egolf.html) (3 messages, latest: Apr 18 2023 at 20:20)
 * [Jacob S Zelko](topic/topic_Jacob.20S.20Zelko.html) (35 messages, latest: Apr 16 2023 at 03:51)
 * [categorical computability book](topic/topic_categorical.20computability.20book.html) (7 messages, latest: Apr 15 2023 at 11:33)
-* [Morgan Rogers](topic/topic_Morgan.20Rogers.html) (54 messages, latest: Apr 01 2023 at 20:54)
 * [Christian Williams](topic/topic_Christian.20Williams.html) (450 messages, latest: Mar 27 2023 at 23:38)
 * [Jacques Carette](topic/topic_Jacques.20Carette.html) (1 message, latest: Mar 23 2023 at 21:19)
 * [Lê Thành Dũng (Tito) Nguyễn](topic/topic_L.C3.AA.20Th.C3.A0nh.20D.C5.A9ng.20(Tito).20Nguy.E1.BB.85n.html) (4 messages, latest: Mar 21 2023 at 12:36)
@@ -62,4 +62,4 @@ permalink: /stream/274877-practice:-our-work/index.html
 * [Conor Mc Bride](topic/topic_Conor.20Mc.20Bride.html) (60 messages, latest: Apr 08 2021 at 15:15)
 * [thoughts on sharing ideas](topic/topic_thoughts.20on.20sharing.20ideas.html) (20 messages, latest: Jan 31 2021 at 03:05)
 
-<hr><p>Last updated: Sep 18 2023 at 12:10 UTC</p>
+<hr><p>Last updated: Sep 19 2023 at 12:11 UTC</p>
