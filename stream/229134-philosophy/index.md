@@ -9,7 +9,7 @@ permalink: /stream/229134-philosophy/index.html
 
 ### Topics:
 
-* [Mathematics = Ontology (Badiou)](topic/topic_Mathematics.20.3D.20Ontology.20(Badiou).html) (13 messages, latest: Sep 17 2023 at 02:06)
+* [Mathematics = Ontology (Badiou)](topic/topic_Mathematics.20.3D.20Ontology.20(Badiou).html) (17 messages, latest: Sep 19 2023 at 17:57)
 * [Wittgenstein's Tractatus](topic/topic_Wittgenstein's.20Tractatus.html) (1 message, latest: Aug 03 2023 at 17:57)
 * [Tensions between local data and global data](topic/topic_Tensions.20between.20local.20data.20and.20global.20data.html) (28 messages, latest: Jul 09 2023 at 00:28)
 * [Lambek on Heraclitus](topic/topic_Lambek.20on.20Heraclitus.html) (2 messages, latest: Jun 12 2023 at 08:08)
@@ -32,4 +32,4 @@ permalink: /stream/229134-philosophy/index.html
 * [history](topic/topic_history.html) (2 messages, latest: Mar 27 2020 at 06:56)
 * [stream events](topic/topic_stream.20events.html) (6 messages, latest: Mar 26 2020 at 20:00)
 
-<hr><p>Last updated: Sep 19 2023 at 12:11 UTC</p>
+<hr><p>Last updated: Sep 20 2023 at 12:09 UTC</p>

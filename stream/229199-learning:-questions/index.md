@@ -9,7 +9,8 @@ permalink: /stream/229199-learning:-questions/index.html
 
 ### Topics:
 
-* [creating or finding beginner research projects](topic/topic_creating.20or.20finding.20beginner.20research.20projects.html) (4 messages, latest: Sep 19 2023 at 07:00)
+* [creating or finding beginner research projects](topic/topic_creating.20or.20finding.20beginner.20research.20projects.html) (11 messages, latest: Sep 19 2023 at 20:13)
+* [Reference for transporting Kan extension across 2-adjunction](topic/topic_Reference.20for.20transporting.20Kan.20extension.20across.202-adjunction.html) (3 messages, latest: Sep 19 2023 at 18:35)
 * [A Category for DSLs?](topic/topic_A.20Category.20for.20DSLs.3F.html) (21 messages, latest: Sep 18 2023 at 17:18)
 * [fibred category of quotients](topic/topic_fibred.20category.20of.20quotients.html) (9 messages, latest: Sep 15 2023 at 20:37)
 * [graphs within graphs](topic/topic_graphs.20within.20graphs.html) (27 messages, latest: Sep 08 2023 at 22:42)
@@ -959,4 +960,4 @@ permalink: /stream/229199-learning:-questions/index.html
 * [Algebra (Aluffi) exercises](topic/topic_Algebra.20(Aluffi).20exercises.html) (55 messages, latest: Mar 27 2020 at 23:38)
 * [What is category theory about?](topic/topic_What.20is.20category.20theory.20about.3F.html) (16 messages, latest: Mar 26 2020 at 16:03)
 
-<hr><p>Last updated: Sep 19 2023 at 12:11 UTC</p>
+<hr><p>Last updated: Sep 20 2023 at 12:09 UTC</p>
