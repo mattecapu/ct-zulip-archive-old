@@ -9,9 +9,9 @@ permalink: /stream/274877-practice:-our-work/index.html
 
 ### Topics:
 
-* [John Baez](topic/topic_John.20Baez.html) (1510 messages, latest: Sep 20 2023 at 11:28)
+* [David Roberts](topic/topic_David.20Roberts.html) (79 messages, latest: Sep 21 2023 at 08:27)
+* [John Baez](topic/topic_John.20Baez.html) (1513 messages, latest: Sep 20 2023 at 17:33)
 * [Morgan Rogers](topic/topic_Morgan.20Rogers.html) (56 messages, latest: Sep 19 2023 at 11:16)
-* [David Roberts](topic/topic_David.20Roberts.html) (77 messages, latest: Sep 19 2023 at 04:42)
 * [Jade Master](topic/topic_Jade.20Master.html) (56 messages, latest: Sep 14 2023 at 11:40)
 * [Chris Tapo](topic/topic_Chris.20Tapo.html) (1 message, latest: Sep 12 2023 at 22:32)
 * [Ralph Sarkis](topic/topic_Ralph.20Sarkis.html) (36 messages, latest: Sep 11 2023 at 09:32)
@@ -62,4 +62,4 @@ permalink: /stream/274877-practice:-our-work/index.html
 * [Conor Mc Bride](topic/topic_Conor.20Mc.20Bride.html) (60 messages, latest: Apr 08 2021 at 15:15)
 * [thoughts on sharing ideas](topic/topic_thoughts.20on.20sharing.20ideas.html) (20 messages, latest: Jan 31 2021 at 03:05)
 
-<hr><p>Last updated: Sep 20 2023 at 12:09 UTC</p>
+<hr><p>Last updated: Sep 21 2023 at 12:11 UTC</p>

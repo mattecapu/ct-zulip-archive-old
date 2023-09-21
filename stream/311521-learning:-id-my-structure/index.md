@@ -9,6 +9,7 @@ permalink: /stream/311521-learning:-id-my-structure/index.html
 
 ### Topics:
 
+* [Formal definition of fuzzy categories.](topic/topic_Formal.20definition.20of.20fuzzy.20categories.2E.html) (15 messages, latest: Sep 20 2023 at 13:37)
 * [The bicategory of Tambara bimodules](topic/topic_The.20bicategory.20of.20Tambara.20bimodules.html) (5 messages, latest: Sep 12 2023 at 09:14)
 * ["weakly Cartesian closed"](topic/topic_.22weakly.20Cartesian.20closed.22.html) (10 messages, latest: Sep 10 2023 at 09:06)
 * [Inner product on an algebra with nice multicategorical prop?](topic/topic_Inner.20product.20on.20an.20algebra.20with.20nice.20multicategorical.20prop.3F.html) (38 messages, latest: Sep 06 2023 at 08:14)
@@ -21,7 +22,6 @@ permalink: /stream/311521-learning:-id-my-structure/index.html
 * [horizontal monads on a fibration?](topic/topic_horizontal.20monads.20on.20a.20fibration.3F.html) (1 message, latest: Aug 04 2023 at 14:38)
 * [Cell in a 2 category](topic/topic_Cell.20in.20a.202.20category.html) (5 messages, latest: Aug 03 2023 at 16:29)
 * [✔ Cell in a 2 category](topic/topic_.E2.9C.94.20Cell.20in.20a.202.20category.html) (7 messages, latest: Aug 03 2023 at 10:26)
-* [Formal definition of fuzzy categories.](topic/topic_Formal.20definition.20of.20fuzzy.20categories.2E.html) (13 messages, latest: Jul 29 2023 at 17:43)
 * [Reference requests for polynomial monads](topic/topic_Reference.20requests.20for.20polynomial.20monads.html) (12 messages, latest: Jul 09 2023 at 14:06)
 * [Double category of presheaves](topic/topic_Double.20category.20of.20presheaves.html) (14 messages, latest: Jul 02 2023 at 19:38)
 * [higher profunctors](topic/topic_higher.20profunctors.html) (23 messages, latest: Jun 26 2023 at 16:54)
@@ -51,4 +51,4 @@ permalink: /stream/311521-learning:-id-my-structure/index.html
 * [stream events](topic/topic_stream.20events.html) (9 messages, latest: Jan 04 2022 at 22:35)
 * [almost a full subcategory?](topic/topic_almost.20a.20full.20subcategory.3F.html) (15 messages, latest: Jan 04 2022 at 16:42)
 
-<hr><p>Last updated: Sep 20 2023 at 12:09 UTC</p>
+<hr><p>Last updated: Sep 21 2023 at 12:11 UTC</p>
