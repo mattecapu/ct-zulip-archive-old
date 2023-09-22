@@ -1,0 +1,38 @@
+[
+    {
+        "content": "<p>I've been thinking a lot about linear categories, meaning Vect-enriched categories where Vect is the category of vector spaces over some field, and I use the 'free vector space on a set' functor</p>\n<p>F: Set <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>→</mo></mrow><annotation encoding=\"application/x-tex\">\\to</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.3669em;\"></span><span class=\"mrel\">→</span></span></span></span> Vect</p>\n<p>to do 'base change', turning Set-enriched categories into Vect-enriched categories by applying F to each homset.</p>",
+        "id": 392494691,
+        "sender_full_name": "John Baez",
+        "timestamp": 1695380756
+    },
+    {
+        "content": "<p>This works well because F is symmetric monoidal from (Set, <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>×</mo></mrow><annotation encoding=\"application/x-tex\">\\times</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6667em;vertical-align:-0.0833em;\"></span><span class=\"mord\">×</span></span></span></span>) to (Vect, <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>⊗</mo></mrow><annotation encoding=\"application/x-tex\">\\otimes</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6667em;vertical-align:-0.0833em;\"></span><span class=\"mord\">⊗</span></span></span></span>).</p>",
+        "id": 392494801,
+        "sender_full_name": "John Baez",
+        "timestamp": 1695380795
+    },
+    {
+        "content": "<p>I'm wondering: what's a good level of generality where we have something like that happening?   </p>\n<p>More precisely, I guess I'm asking for which symmetric monoidal categories V do we have a god-given symmetric monoidal functor F: Set <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>→</mo></mrow><annotation encoding=\"application/x-tex\">\\to</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.3669em;\"></span><span class=\"mrel\">→</span></span></span></span> V?</p>",
+        "id": 392495079,
+        "sender_full_name": "John Baez",
+        "timestamp": 1695380899
+    },
+    {
+        "content": "<p>That's still somewhat vague, I know!   But if I also require that F preserve colimits then I guess it's not so vague.</p>\n<p>In this case, as soon as we know F maps 1 <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>∈</mo></mrow><annotation encoding=\"application/x-tex\">\\in</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.5782em;vertical-align:-0.0391em;\"></span><span class=\"mrel\">∈</span></span></span></span> Set to the unit object of the symmetric monoidal category V, we know what F does to all objects and morphisms in Set.</p>\n<p>And then, for F to be symmetric monoidal, it's sufficient (and necessary?) that the tensor product in V distribute over colimits.</p>",
+        "id": 392495611,
+        "sender_full_name": "John Baez",
+        "timestamp": 1695381100
+    },
+    {
+        "content": "<p>So maybe I'm answering my own question here: if V is symmetric monoidal, has all (small) colimits, and its tensor product distributes over all (small) colimits, then we get a functor</p>\n<p>F: Set <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>→</mo></mrow><annotation encoding=\"application/x-tex\">\\to</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.3669em;\"></span><span class=\"mrel\">→</span></span></span></span> V</p>\n<p>that's symmetric monoidal and preserves (small) colimits.</p>",
+        "id": 392495780,
+        "sender_full_name": "John Baez",
+        "timestamp": 1695381150
+    },
+    {
+        "content": "<p>So V being a Benabou cosmos is sufficient.  But perhaps it's not necessary?   </p>\n<p>Are there interesting examples of symmetric monoidal cocomplete categories where the tensor product distributes over colimits that <em>aren't</em> Benabou cosmoi?   </p>\n<p>(It seems to find examples one must read the technical fine print of the adjoint functor theorem, which seems like the opposite of 'interesting'.)</p>",
+        "id": 392496317,
+        "sender_full_name": "John Baez",
+        "timestamp": 1695381366
+    }
+]

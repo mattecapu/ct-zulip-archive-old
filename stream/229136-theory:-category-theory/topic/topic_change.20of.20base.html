@@ -1,0 +1,63 @@
+---
+layout: archive
+title: Zulip Chat Archive
+permalink: /stream/229136-theory:-category-theory/topic/topic_change.20of.20base.html
+---
+
+<h2>Stream: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/index.html">theory: category theory</a></h2>
+<h3>Topic: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/topic_change.20of.20base.html">change of base</a></h3>
+
+<hr>
+
+<base href="https://categorytheory.zulipchat.com/">
+
+{% raw %}
+
+<a name="392494691"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/change%20of%20base/near/392494691" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/topic_change.20of.20base.html#392494691">(Sep 22 2023 at 11:05)</a>:</h4>
+<p>I've been thinking a lot about linear categories, meaning Vect-enriched categories where Vect is the category of vector spaces over some field, and I use the 'free vector space on a set' functor</p>
+<p>F: Set <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>→</mo></mrow><annotation encoding="application/x-tex">\to</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.3669em;"></span><span class="mrel">→</span></span></span></span> Vect</p>
+<p>to do 'base change', turning Set-enriched categories into Vect-enriched categories by applying F to each homset.</p>
+
+
+
+<a name="392494801"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/change%20of%20base/near/392494801" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/topic_change.20of.20base.html#392494801">(Sep 22 2023 at 11:06)</a>:</h4>
+<p>This works well because F is symmetric monoidal from (Set, <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>×</mo></mrow><annotation encoding="application/x-tex">\times</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6667em;vertical-align:-0.0833em;"></span><span class="mord">×</span></span></span></span>) to (Vect, <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>⊗</mo></mrow><annotation encoding="application/x-tex">\otimes</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6667em;vertical-align:-0.0833em;"></span><span class="mord">⊗</span></span></span></span>).</p>
+
+
+
+<a name="392495079"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/change%20of%20base/near/392495079" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/topic_change.20of.20base.html#392495079">(Sep 22 2023 at 11:08)</a>:</h4>
+<p>I'm wondering: what's a good level of generality where we have something like that happening?   </p>
+<p>More precisely, I guess I'm asking for which symmetric monoidal categories V do we have a god-given symmetric monoidal functor F: Set <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>→</mo></mrow><annotation encoding="application/x-tex">\to</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.3669em;"></span><span class="mrel">→</span></span></span></span> V?</p>
+
+
+
+<a name="392495611"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/change%20of%20base/near/392495611" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/topic_change.20of.20base.html#392495611">(Sep 22 2023 at 11:11)</a>:</h4>
+<p>That's still somewhat vague, I know!   But if I also require that F preserve colimits then I guess it's not so vague.</p>
+<p>In this case, as soon as we know F maps 1 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>∈</mo></mrow><annotation encoding="application/x-tex">\in</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.5782em;vertical-align:-0.0391em;"></span><span class="mrel">∈</span></span></span></span> Set to the unit object of the symmetric monoidal category V, we know what F does to all objects and morphisms in Set.</p>
+<p>And then, for F to be symmetric monoidal, it's sufficient (and necessary?) that the tensor product in V distribute over colimits.</p>
+
+
+
+<a name="392495780"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/change%20of%20base/near/392495780" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/topic_change.20of.20base.html#392495780">(Sep 22 2023 at 11:12)</a>:</h4>
+<p>So maybe I'm answering my own question here: if V is symmetric monoidal, has all (small) colimits, and its tensor product distributes over all (small) colimits, then we get a functor</p>
+<p>F: Set <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>→</mo></mrow><annotation encoding="application/x-tex">\to</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.3669em;"></span><span class="mrel">→</span></span></span></span> V</p>
+<p>that's symmetric monoidal and preserves (small) colimits.</p>
+
+
+
+<a name="392496317"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/change%20of%20base/near/392496317" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/topic_change.20of.20base.html#392496317">(Sep 22 2023 at 11:16)</a>:</h4>
+<p>So V being a Benabou cosmos is sufficient.  But perhaps it's not necessary?   </p>
+<p>Are there interesting examples of symmetric monoidal cocomplete categories where the tensor product distributes over colimits that <em>aren't</em> Benabou cosmoi?   </p>
+<p>(It seems to find examples one must read the technical fine print of the adjoint functor theorem, which seems like the opposite of 'interesting'.)</p>
+
+
+
+{% endraw %}
+
+<hr><p>Last updated: Sep 22 2023 at 12:10 UTC</p>
