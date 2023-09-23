@@ -9,6 +9,7 @@ permalink: /stream/245502-general:-positions/index.html
 
 ### Topics:
 
+* [Faculty positions in Oxford](topic/topic_Faculty.20positions.20in.20Oxford.html) (2 messages, latest: Sep 22 2023 at 18:12)
 * [Postdoc positions in Quantum Programming in Edinburgh](topic/topic_Postdoc.20positions.20in.20Quantum.20Programming.20in.20Edinburgh.html) (1 message, latest: Aug 28 2023 at 11:08)
 * [PhD Position in Higher-Order Mathematical Operational S...](topic/topic_PhD.20Position.20in.20Higher-Order.20Mathematical.20Operational.20S.2E.2E.2E.html) (4 messages, latest: Aug 12 2023 at 09:10)
 * [Postdoc position, Logic and Semantics Group in Tallinn](topic/topic_Postdoc.20position.2C.20Logic.20and.20Semantics.20Group.20in.20Tallinn.html) (1 message, latest: Aug 11 2023 at 09:59)
@@ -39,7 +40,6 @@ permalink: /stream/245502-general:-positions/index.html
 * [Gothenburg: four PhD student positions](topic/topic_Gothenburg.3A.20four.20PhD.20student.20positions.html) (3 messages, latest: Oct 18 2022 at 05:52)
 * [BYU is looking to hire a physicist. Deadline 15 Oct!](topic/topic_BYU.20is.20looking.20to.20hire.20a.20physicist.2E.20Deadline.2015.20Oct!.html) (1 message, latest: Oct 11 2022 at 01:54)
 * [Cambridge faculty position, category-theory friendly](topic/topic_Cambridge.20faculty.20position.2C.20category-theory.20friendly.html) (2 messages, latest: Oct 07 2022 at 17:48)
-* [Faculty positions in Oxford](topic/topic_Faculty.20positions.20in.20Oxford.html) (1 message, latest: Oct 02 2022 at 20:30)
 * [PhD position in Edinburgh](topic/topic_PhD.20position.20in.20Edinburgh.html) (1 message, latest: Jul 16 2022 at 12:28)
 * [funded phd position at Swansea](topic/topic_funded.20phd.20position.20at.20Swansea.html) (1 message, latest: Jul 11 2022 at 06:56)
 * [NIST NRC Postdoc Opportunity](topic/topic_NIST.20NRC.20Postdoc.20Opportunity.html) (6 messages, latest: Jun 21 2022 at 14:07)
@@ -90,4 +90,4 @@ permalink: /stream/245502-general:-positions/index.html
 * [PhD positions in Estonia](topic/topic_PhD.20positions.20in.20Estonia.html) (1 message, latest: Jun 27 2020 at 18:04)
 * [Companies that hire category people](topic/topic_Companies.20that.20hire.20category.20people.html) (2 messages, latest: May 13 2020 at 03:50)
 
-<hr><p>Last updated: Sep 22 2023 at 12:10 UTC</p>
+<hr><p>Last updated: Sep 23 2023 at 12:10 UTC</p>

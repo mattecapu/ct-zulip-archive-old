@@ -1,0 +1,81 @@
+---
+layout: archive
+title: Zulip Chat Archive
+permalink: /stream/229199-learning:-questions/topic/topic_Lambda.20calculus.20and.20Cartesian.20closed.20categories.html
+---
+
+<h2>Stream: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/index.html">learning: questions</a></h2>
+<h3>Topic: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/topic_Lambda.20calculus.20and.20Cartesian.20closed.20categories.html">Lambda calculus and Cartesian closed categories</a></h3>
+
+<hr>
+
+<base href="https://categorytheory.zulipchat.com/">
+
+{% raw %}
+
+<a name="392626191"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/Lambda%20calculus%20and%20Cartesian%20closed%20categories/near/392626191" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nathaniel Virgo <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/topic_Lambda.20calculus.20and.20Cartesian.20closed.20categories.html#392626191">(Sep 23 2023 at 01:13)</a>:</h4>
+<p>I'd like to understand the relationship between the simply typed lambda calculus and Cartesian closed categories. (I have heard that simply typed lambda calculus is the internal language of a Cartesian closed category, but I don't know what that means.) I know this is part of a much bigger family of concepts involving toposes, fibrations and dependent type theory, but I'm hoping I can start small and work up. So I'm hoping to see the connection between lambda calculus and closed Cartesian categories clearly without going on too much of an excursion through those other topics first. Is there an easy way to see it, or a resource that explains it?</p>
+<p>My background is such that I know my way around Cartesian closed categories pretty well and simply typed lambda calculus reasonably well, but I don't have any clear idea of what an internal language is or how it relates to an <a href="https://ncatlab.org/nlab/show/internal%20logic">[[internal logic]]</a>. I don't have much background in logic, and specifically I don't have any prior knowledge of how lambda calculi and logic are related.</p>
+
+
+
+<a name="392627279"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/Lambda%20calculus%20and%20Cartesian%20closed%20categories/near/392627279" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Evan Patterson <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/topic_Lambda.20calculus.20and.20Cartesian.20closed.20categories.html#392627279">(Sep 23 2023 at 01:23)</a>:</h4>
+<p>Roy Crole's book <em>Categories for Types</em> explains the relationship between algebraic theories and cartesian categories, and between simply typed lambda calculus and cartesian closed categories, in a lot of detail. IMO, it's a nice place to start if you want to learn some of the main ideas of categorical logic: functorial semantics, internal languages, and classifying categories.</p>
+
+
+
+<a name="392659622"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/Lambda%20calculus%20and%20Cartesian%20closed%20categories/near/392659622" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Damiano Mazza <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/topic_Lambda.20calculus.20and.20Cartesian.20closed.20categories.html#392659622">(Sep 23 2023 at 08:09)</a>:</h4>
+<p>If you want to have the "full picture", Part D of the Elephant (vol. 2) covers categorical logic quite thoroughly.  In particular, the first chapter (D1) introduces the concepts of internal language and syntactic category in full detail.  That chapter deals only with first-order theories, the <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>λ</mi></mrow><annotation encoding="application/x-tex">\lambda</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord mathnormal">λ</span></span></span></span>-calculus is covered much later in the book (section D4.2, and you don't really need to read everything in between), but I think that once you know how that works, the higher-order case is an expected generalization, and it's not necessarily easier conceptually.  Probably the Elephant is not the best source to use as a first introduction, but for this particular topic I think it's ok (personally, that's how I first learned categorical logic).</p>
+
+
+
+<a name="392659945"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/Lambda%20calculus%20and%20Cartesian%20closed%20categories/near/392659945" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Damiano Mazza <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/topic_Lambda.20calculus.20and.20Cartesian.20closed.20categories.html#392659945">(Sep 23 2023 at 08:13)</a>:</h4>
+<p>Otherwise, if you want to go straight to your question without going through first-order categorical logic, the standard reference is Lambek and Scott's <em>Introduction to higher order categorical logic</em>.  It's available online (just google something like "lambek scott categorical logic"). I never read it but Part I is called "Cartesian closed categories and the <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>λ</mi></mrow><annotation encoding="application/x-tex">\lambda</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord mathnormal">λ</span></span></span></span>-calculus".  Sounds promising <span aria-label="big smile" class="emoji emoji-1f604" role="img" title="big smile">:big_smile:</span></p>
+
+
+
+<a name="392668244"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/Lambda%20calculus%20and%20Cartesian%20closed%20categories/near/392668244" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/topic_Lambda.20calculus.20and.20Cartesian.20closed.20categories.html#392668244">(Sep 23 2023 at 09:25)</a>:</h4>
+<p>You might try my course notes on the lambda calculus and closed categories:</p>
+<ul>
+<li>Classical and quantum computation: <a href="https://math.ucr.edu/home/baez/qg-fall2006/index.html#computation">Fall 2006</a> and <a href="https://math.ucr.edu/home/baez/qg-winter2007/qg-winter2007.html#computation">Winter 2007</a>.</li>
+</ul>
+<p>I was learning this material from Lambek and Scott's book, conversations with <span class="user-mention" data-user-id="276048">@Mike Stay</span> and other sources (listed on these web pages).</p>
+
+
+
+<a name="392668490"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/Lambda%20calculus%20and%20Cartesian%20closed%20categories/near/392668490" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/topic_Lambda.20calculus.20and.20Cartesian.20closed.20categories.html#392668490">(Sep 23 2023 at 09:26)</a>:</h4>
+<p>In these course notes I talk about:</p>
+<ul>
+<li>the lambda calculus and its role in classical computation,</li>
+<li>how quantum computation differs from classical computation,</li>
+<li>the quantum lambda calculus and its role in quantum computation,</li>
+<li>cartesian closed categories and symmetric monoidal closed categories,</li>
+<li>how treating computation as a process makes us "categorify" all the above.</li>
+</ul>
+
+
+
+<a name="392668784"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/Lambda%20calculus%20and%20Cartesian%20closed%20categories/near/392668784" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/topic_Lambda.20calculus.20and.20Cartesian.20closed.20categories.html#392668784">(Sep 23 2023 at 09:29)</a>:</h4>
+<p>We further developed some — but far from all! — of the material in my course notes in this long paper:</p>
+<ul>
+<li>John Baez and Mike Stay, <a href="https://arxiv.org/abs/0903.0340">Physics, topology, logic and computation: a Rosetta Stone</a>.</li>
+</ul>
+
+
+
+<a name="392685942"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/Lambda%20calculus%20and%20Cartesian%20closed%20categories/near/392685942" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nathaniel Virgo <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/topic_Lambda.20calculus.20and.20Cartesian.20closed.20categories.html#392685942">(Sep 23 2023 at 11:46)</a>:</h4>
+<p>That sounds great! I was reading some of that paper earlier today, having realised it might be relevant. I'll check out the other resources as well.</p>
+
+
+
+{% endraw %}
+
+<hr><p>Last updated: Sep 23 2023 at 12:10 UTC</p>

@@ -9,6 +9,7 @@ permalink: /stream/229141-general:-events/index.html
 
 ### Topics:
 
+* [Logic in Computer Science conference](topic/topic_Logic.20in.20Computer.20Science.20conference.html) (53 messages, latest: Sep 22 2023 at 18:09)
 * [Edinburgh Category Theory Seminar](topic/topic_Edinburgh.20Category.20Theory.20Seminar.html) (7 messages, latest: Sep 21 2023 at 08:33)
 * [Seminars at LIPN](topic/topic_Seminars.20at.20LIPN.html) (4 messages, latest: Sep 21 2023 at 07:23)
 * [ItaCa Fest 2024](topic/topic_ItaCa.20Fest.202024.html) (4 messages, latest: Sep 20 2023 at 15:01)
@@ -34,7 +35,6 @@ permalink: /stream/229141-general:-events/index.html
 * [Joy of Abstraction Book Study Group](topic/topic_Joy.20of.20Abstraction.20Book.20Study.20Group.html) (2 messages, latest: Jun 03 2023 at 14:47)
 * [Reading Lawvere from Colombia](topic/topic_Reading.20Lawvere.20from.20Colombia.html) (2 messages, latest: May 12 2023 at 18:20)
 * [Symmetric spaces and the tenfold way](topic/topic_Symmetric.20spaces.20and.20the.20tenfold.20way.html) (3 messages, latest: May 09 2023 at 19:39)
-* [Logic in Computer Science conference](topic/topic_Logic.20in.20Computer.20Science.20conference.html) (52 messages, latest: May 06 2023 at 08:46)
 * [SYCO 11](topic/topic_SYCO.2011.html) (6 messages, latest: May 04 2023 at 14:33)
 * [Experiment with kids on quantum picturalism](topic/topic_Experiment.20with.20kids.20on.20quantum.20picturalism.html) (3 messages, latest: Apr 27 2023 at 09:42)
 * [Workshop on Doctrines and Fibrations 2023](topic/topic_Workshop.20on.20Doctrines.20and.20Fibrations.202023.html) (1 message, latest: Apr 20 2023 at 18:47)
@@ -198,4 +198,4 @@ permalink: /stream/229141-general:-events/index.html
 * [April 1st: ACT@UCR](topic/topic_April.201st.3A.20ACT.40UCR.html) (3 messages, latest: Mar 26 2020 at 23:58)
 * [Google Sites problem](topic/topic_Google.20Sites.20problem.html) (4 messages, latest: Mar 25 2020 at 04:29)
 
-<hr><p>Last updated: Sep 22 2023 at 12:10 UTC</p>
+<hr><p>Last updated: Sep 23 2023 at 12:10 UTC</p>

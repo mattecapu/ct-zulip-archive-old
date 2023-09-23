@@ -9,7 +9,8 @@ permalink: /stream/229136-theory:-category-theory/index.html
 
 ### Topics:
 
-* [change of base](topic/topic_change.20of.20base.html) (6 messages, latest: Sep 22 2023 at 11:16)
+* [Indexed monoidal categories over a semicartesian base](topic/topic_Indexed.20monoidal.20categories.20over.20a.20semicartesian.20base.html) (12 messages, latest: Sep 23 2023 at 04:53)
+* [change of base](topic/topic_change.20of.20base.html) (29 messages, latest: Sep 22 2023 at 23:45)
 * [ri(n)gs laws from laws of exponents](topic/topic_ri(n)gs.20laws.20from.20laws.20of.20exponents.html) (3 messages, latest: Sep 16 2023 at 23:55)
 * [counting algebraic structures](topic/topic_counting.20algebraic.20structures.html) (20 messages, latest: Sep 16 2023 at 13:15)
 * [are Stone spaces free relational beta-modules?](topic/topic_are.20Stone.20spaces.20free.20relational.20beta-modules.3F.html) (23 messages, latest: Sep 15 2023 at 00:19)
@@ -464,4 +465,4 @@ permalink: /stream/229136-theory:-category-theory/index.html
 * [diagrams for application](topic/topic_diagrams.20for.20application.html) (13 messages, latest: Mar 24 2020 at 06:19)
 * [universal constructions](topic/topic_universal.20constructions.html) (8 messages, latest: Mar 23 2020 at 21:06)
 
-<hr><p>Last updated: Sep 22 2023 at 12:10 UTC</p>
+<hr><p>Last updated: Sep 23 2023 at 12:10 UTC</p>
