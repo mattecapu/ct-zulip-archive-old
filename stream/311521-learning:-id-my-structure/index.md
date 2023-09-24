@@ -9,8 +9,8 @@ permalink: /stream/311521-learning:-id-my-structure/index.html
 
 ### Topics:
 
-* [Quasi-Derivations?](topic/topic_Quasi-Derivations.3F.html) (9 messages, latest: Sep 23 2023 at 09:22)
-* [Formal definition of fuzzy categories.](topic/topic_Formal.20definition.20of.20fuzzy.20categories.2E.html) (15 messages, latest: Sep 20 2023 at 13:37)
+* [Formal definition of fuzzy categories.](topic/topic_Formal.20definition.20of.20fuzzy.20categories.2E.html) (16 messages, latest: Sep 24 2023 at 02:15)
+* [Quasi-Derivations?](topic/topic_Quasi-Derivations.3F.html) (11 messages, latest: Sep 23 2023 at 12:32)
 * [The bicategory of Tambara bimodules](topic/topic_The.20bicategory.20of.20Tambara.20bimodules.html) (5 messages, latest: Sep 12 2023 at 09:14)
 * ["weakly Cartesian closed"](topic/topic_.22weakly.20Cartesian.20closed.22.html) (10 messages, latest: Sep 10 2023 at 09:06)
 * [Inner product on an algebra with nice multicategorical prop?](topic/topic_Inner.20product.20on.20an.20algebra.20with.20nice.20multicategorical.20prop.3F.html) (38 messages, latest: Sep 06 2023 at 08:14)
@@ -52,4 +52,4 @@ permalink: /stream/311521-learning:-id-my-structure/index.html
 * [stream events](topic/topic_stream.20events.html) (9 messages, latest: Jan 04 2022 at 22:35)
 * [almost a full subcategory?](topic/topic_almost.20a.20full.20subcategory.3F.html) (15 messages, latest: Jan 04 2022 at 16:42)
 
-<hr><p>Last updated: Sep 23 2023 at 12:10 UTC</p>
+<hr><p>Last updated: Sep 24 2023 at 12:11 UTC</p>
