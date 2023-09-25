@@ -9,6 +9,7 @@ permalink: /stream/245502-general:-positions/index.html
 
 ### Topics:
 
+* [2 year postdoc in Tallinn](topic/topic_2.20year.20postdoc.20in.20Tallinn.html) (2 messages, latest: Sep 25 2023 at 09:51)
 * [Research position at Masaryk University](topic/topic_Research.20position.20at.20Masaryk.20University.html) (1 message, latest: Sep 23 2023 at 16:37)
 * [Faculty positions in Oxford](topic/topic_Faculty.20positions.20in.20Oxford.html) (2 messages, latest: Sep 22 2023 at 18:12)
 * [Postdoc positions in Quantum Programming in Edinburgh](topic/topic_Postdoc.20positions.20in.20Quantum.20Programming.20in.20Edinburgh.html) (1 message, latest: Aug 28 2023 at 11:08)
@@ -91,4 +92,4 @@ permalink: /stream/245502-general:-positions/index.html
 * [PhD positions in Estonia](topic/topic_PhD.20positions.20in.20Estonia.html) (1 message, latest: Jun 27 2020 at 18:04)
 * [Companies that hire category people](topic/topic_Companies.20that.20hire.20category.20people.html) (2 messages, latest: May 13 2020 at 03:50)
 
-<hr><p>Last updated: Sep 24 2023 at 12:11 UTC</p>
+<hr><p>Last updated: Sep 25 2023 at 12:10 UTC</p>

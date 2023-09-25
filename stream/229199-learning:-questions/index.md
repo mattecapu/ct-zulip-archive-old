@@ -9,9 +9,11 @@ permalink: /stream/229199-learning:-questions/index.html
 
 ### Topics:
 
+* [Sheaves and Bundles](topic/topic_Sheaves.20and.20Bundles.html) (10 messages, latest: Sep 25 2023 at 01:02)
+* [Lambda calculus and Cartesian closed categories](topic/topic_Lambda.20calculus.20and.20Cartesian.20closed.20categories.html) (12 messages, latest: Sep 24 2023 at 22:53)
+* [how are monads used?](topic/topic_how.20are.20monads.20used.3F.html) (40 messages, latest: Sep 24 2023 at 22:38)
+* [✔ Sheaf condition as limit condition](topic/topic_.E2.9C.94.20Sheaf.20condition.20as.20limit.20condition.html) (2 messages, latest: Sep 24 2023 at 14:25)
 * [Sheaf condition as limit condition](topic/topic_Sheaf.20condition.20as.20limit.20condition.html) (2 messages, latest: Sep 24 2023 at 10:31)
-* [how are monads used?](topic/topic_how.20are.20monads.20used.3F.html) (38 messages, latest: Sep 24 2023 at 05:22)
-* [Lambda calculus and Cartesian closed categories](topic/topic_Lambda.20calculus.20and.20Cartesian.20closed.20categories.html) (11 messages, latest: Sep 23 2023 at 19:11)
 * [Reference for transporting Kan extension across 2-adjunction](topic/topic_Reference.20for.20transporting.20Kan.20extension.20across.202-adjunction.html) (6 messages, latest: Sep 20 2023 at 17:15)
 * [creating or finding beginner research projects](topic/topic_creating.20or.20finding.20beginner.20research.20projects.html) (11 messages, latest: Sep 19 2023 at 20:13)
 * [A Category for DSLs?](topic/topic_A.20Category.20for.20DSLs.3F.html) (21 messages, latest: Sep 18 2023 at 17:18)
@@ -963,4 +965,4 @@ permalink: /stream/229199-learning:-questions/index.html
 * [Algebra (Aluffi) exercises](topic/topic_Algebra.20(Aluffi).20exercises.html) (55 messages, latest: Mar 27 2020 at 23:38)
 * [What is category theory about?](topic/topic_What.20is.20category.20theory.20about.3F.html) (16 messages, latest: Mar 26 2020 at 16:03)
 
-<hr><p>Last updated: Sep 24 2023 at 12:11 UTC</p>
+<hr><p>Last updated: Sep 25 2023 at 12:10 UTC</p>
