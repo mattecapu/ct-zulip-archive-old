@@ -9,7 +9,7 @@ permalink: /stream/229111-general/index.html
 
 ### Topics:
 
-* [how to learn applied category theory](topic/topic_how.20to.20learn.20applied.20category.20theory.html) (1 message, latest: Sep 26 2023 at 09:54)
+* [how to learn applied category theory](topic/topic_how.20to.20learn.20applied.20category.20theory.html) (7 messages, latest: Sep 27 2023 at 11:58)
 * [Introduce yourself!](topic/topic_Introduce.20yourself!.html) (124 messages, latest: Sep 15 2023 at 05:04)
 * [Sad News: Henry Story (1967-2023)](topic/topic_Sad.20News.3A.20Henry.20Story.20(1967-2023).html) (5 messages, latest: Sep 14 2023 at 17:30)
 * [Unity-respecting Change](topic/topic_Unity-respecting.20Change.html) (12 messages, latest: Sep 03 2023 at 14:00)
@@ -277,4 +277,4 @@ permalink: /stream/229111-general/index.html
 * [Tools for diagrams](topic/topic_Tools.20for.20diagrams.html) (78 messages, latest: Mar 25 2020 at 17:53)
 * [topic demonstration](topic/topic_topic.20demonstration.html) (2 messages, latest: Mar 23 2020 at 16:57)
 
-<hr><p>Last updated: Sep 26 2023 at 12:11 UTC</p>
+<hr><p>Last updated: Sep 27 2023 at 12:10 UTC</p>
