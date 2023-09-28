@@ -9,6 +9,7 @@ permalink: /stream/229136-theory:-category-theory/index.html
 
 ### Topics:
 
+* [Small object argument in a cofibration category?](topic/topic_Small.20object.20argument.20in.20a.20cofibration.20category.3F.html) (1 message, latest: Sep 27 2023 at 22:59)
 * [Pseudocategory of spans internal to a 2-category](topic/topic_Pseudocategory.20of.20spans.20internal.20to.20a.202-category.html) (11 messages, latest: Sep 24 2023 at 06:42)
 * [change of base](topic/topic_change.20of.20base.html) (30 messages, latest: Sep 23 2023 at 16:51)
 * [Indexed monoidal categories over a semicartesian base](topic/topic_Indexed.20monoidal.20categories.20over.20a.20semicartesian.20base.html) (12 messages, latest: Sep 23 2023 at 04:53)
@@ -466,4 +467,4 @@ permalink: /stream/229136-theory:-category-theory/index.html
 * [diagrams for application](topic/topic_diagrams.20for.20application.html) (13 messages, latest: Mar 24 2020 at 06:19)
 * [universal constructions](topic/topic_universal.20constructions.html) (8 messages, latest: Mar 23 2020 at 21:06)
 
-<hr><p>Last updated: Sep 27 2023 at 12:10 UTC</p>
+<hr><p>Last updated: Sep 28 2023 at 12:11 UTC</p>

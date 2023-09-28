@@ -9,7 +9,7 @@ permalink: /stream/229141-general:-events/index.html
 
 ### Topics:
 
-* [This Week's Finds seminar](topic/topic_This.20Week's.20Finds.20seminar.html) (126 messages, latest: Sep 27 2023 at 11:49)
+* [This Week's Finds seminar](topic/topic_This.20Week's.20Finds.20seminar.html) (133 messages, latest: Sep 27 2023 at 20:36)
 * [PROBPROG/LAFI](topic/topic_PROBPROG.2FLAFI.html) (1 message, latest: Sep 26 2023 at 20:36)
 * [Logic in Computer Science conference](topic/topic_Logic.20in.20Computer.20Science.20conference.html) (53 messages, latest: Sep 22 2023 at 18:09)
 * [Edinburgh Category Theory Seminar](topic/topic_Edinburgh.20Category.20Theory.20Seminar.html) (7 messages, latest: Sep 21 2023 at 08:33)
@@ -199,4 +199,4 @@ permalink: /stream/229141-general:-events/index.html
 * [April 1st: ACT@UCR](topic/topic_April.201st.3A.20ACT.40UCR.html) (3 messages, latest: Mar 26 2020 at 23:58)
 * [Google Sites problem](topic/topic_Google.20Sites.20problem.html) (4 messages, latest: Mar 25 2020 at 04:29)
 
-<hr><p>Last updated: Sep 27 2023 at 12:10 UTC</p>
+<hr><p>Last updated: Sep 28 2023 at 12:11 UTC</p>
