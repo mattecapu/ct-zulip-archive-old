@@ -9,9 +9,9 @@ permalink: /stream/229199-learning:-questions/index.html
 
 ### Topics:
 
-* [representable free functors?](topic/topic_representable.20free.20functors.3F.html) (26 messages, latest: Sep 30 2023 at 22:47)
-* [submersion stable under pullback](topic/topic_submersion.20stable.20under.20pullback.html) (2 messages, latest: Sep 30 2023 at 21:16)
-* [Falg as 2limit](topic/topic_Falg.20as.202limit.html) (4 messages, latest: Sep 30 2023 at 18:15)
+* [submersion stable under pullback](topic/topic_submersion.20stable.20under.20pullback.html) (12 messages, latest: Oct 02 2023 at 08:19)
+* [Falg as 2limit](topic/topic_Falg.20as.202limit.html) (5 messages, latest: Oct 02 2023 at 07:03)
+* [representable free functors?](topic/topic_representable.20free.20functors.3F.html) (29 messages, latest: Oct 01 2023 at 22:54)
 * [Some simplicial combinatorics](topic/topic_Some.20simplicial.20combinatorics.html) (8 messages, latest: Sep 29 2023 at 21:32)
 * [✔ Sheaf condition as limit condition](topic/topic_.E2.9C.94.20Sheaf.20condition.20as.20limit.20condition.html) (4 messages, latest: Sep 26 2023 at 03:04)
 * [Sheaves and Bundles](topic/topic_Sheaves.20and.20Bundles.html) (10 messages, latest: Sep 25 2023 at 01:02)
@@ -969,4 +969,4 @@ permalink: /stream/229199-learning:-questions/index.html
 * [Algebra (Aluffi) exercises](topic/topic_Algebra.20(Aluffi).20exercises.html) (55 messages, latest: Mar 27 2020 at 23:38)
 * [What is category theory about?](topic/topic_What.20is.20category.20theory.20about.3F.html) (16 messages, latest: Mar 26 2020 at 16:03)
 
-<hr><p>Last updated: Oct 01 2023 at 12:10 UTC</p>
+<hr><p>Last updated: Oct 02 2023 at 12:10 UTC</p>
